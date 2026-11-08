@@ -3010,7 +3010,7 @@ body.calm .mu-parade, body.calm .mu-jar2, body.calm .mu-fly, body.calm .mu-moon 
 .order.inline .oslot, .order.big .oslot { width: auto; flex: 0 1 auto; }
 
 .answers.l-words { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
-.l-words .opt { flex: 0 0 auto; min-height: 66px; padding: 8px 18px; }
+.l-words .opt { flex: 0 0 auto; min-height: 66px; min-width: 66px; padding: 8px 18px; }
 .alce-tab { margin: 6px auto 0; border-collapse: separate; border-spacing: 0; border-radius: 14px; overflow: hidden; box-shadow: inset 0 0 0 2px #e8a6c9; font-size: clamp(14px, 1.8vw, 18px); background: var(--surface); max-width: 100%; }
 .alce-tab th, .alce-tab td { white-space: nowrap; padding: 6px 10px; border-bottom: 1px solid #f1cfe1; border-right: 1px solid #f1cfe1; text-align: center; color: var(--ink); }
 .alce-tab thead th { background: #fbe3ef; color: #c2185b; font-family: var(--f-display); font-weight: 800; }
@@ -3063,6 +3063,11 @@ body.calm .mu-parade, body.calm .mu-jar2, body.calm .mu-fly, body.calm .mu-moon 
 .so-pw p { margin: 0; font-size: 15px; color: var(--ink); }
 .so-pw .spell .slot, .so-pw .tile-l { min-width: 44px; }
 @media (max-width: 760px) { .so-main { grid-template-columns: 1fr; } .so-grid { width: min(100%, 440px); margin: 0 auto; box-sizing: border-box; } .sp-l { height: 52px; font-size: 27px; } .sp-words { gap: 4px 18px; } }
+
+.alce-foto { font-size: clamp(54px, 9vw, 84px); line-height: 1.1; letter-spacing: .05em; padding: 10px 18px; border-radius: 22px; background: var(--surface-2); box-shadow: inset 0 0 0 3px #f2b8d3; display: inline-block; }
+.alce-lied { display: flex; flex-direction: column; gap: 2px; margin-top: 8px; padding: 10px 16px; border-radius: 18px; background: #fff6fb; box-shadow: inset 0 0 0 2px #f2b8d3; text-align: left; font-size: clamp(15px, 1.9vw, 18px); color: var(--ink-soft); }
+.alce-lied b { color: var(--ink); font-size: 1.15em; }
+.alce-st.yase { box-shadow: inset 0 0 0 2px #f5c518; background: #fffbe6; }
 
 /* ---- style_cm.css ---- */
 
@@ -7735,8 +7740,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '2.44.0';
-  var MAP = {"probe":0,"files":[[7725,"fehler_kern.js"],[8013,null],[8015,"data.js"],[8702,"data_more.js"],[9056,"data_su2.js"],[9277,"data_es.js"],[9616,"data_wissen.js"],[9798,"data_v21.js"],[10422,"data_v24.js"],[10873,"data_v25.js"],[11321,"data_v26.js"],[11420,"data_v29.js"],[11725,"data_v30.js"],[12049,"data_v31.js"],[12349,"data_kunst.js"],[12545,"data_v214.js"],[12648,"data_v216.js"],[12941,"schrift.js"],[13241,"eingabe.js"],[13452,"data_k34m.js"],[13966,"data_k34d.js"],[14299,"data_k34s.js"],[14688,"data_v224.js"],[15556,"data_v225w.js"],[15925,"data_v225k.js"],[16369,"data_herz.js"],[16723,"data_fb226.js"],[16866,"data_tf226.js"],[17073,"data_v227a.js"],[18164,"data_v227b.js"],[19118,"data_h28b.js"],[19158,"data_l28a.js"],[20024,"data_l28b.js"],[21204,"data_schaetz.js"],[21686,"data_party8.js"],[21736,"data_alce.js"],[22396,"data_alce2.js"],[22645,"data_alce3.js"],[22909,"registry.js"],[23422,"app.js"],[24525,"fun.js"],[25105,"fun2.js"],[25421,"atelier.js"],[25795,"kunst225.js"],[25985,"herz.js"],[26349,"reise.js"],[26651,"iglu.js"],[26817,"offline.js"],[26924,"party.js"],[27408,"meine.js"],[27764,"loeffel.js"],[27935,"trend.js"],[28477,"fun228a.js"],[29328,"fun228b.js"],[29989,"kueche.js"],[31028,"stimme.js"],[31083,"klassen.js"],[31232,"freunde_vorab.js"],[31253,"mut.js"],[31673,"schule.js"],[32162,"fussball226.js"],[32484,"schaetzen.js"],[32915,"party8.js"],[33534,"tiere.js"],[33993,"fussball232.js"],[34208,"party8b.js"],[34510,"weg.js"],[34727,"px.js"],[35138,"px_data.js"],[35395,"pxwelt.js"],[35476,"px_abenteuer.js"],[36319,"px_ski.js"],[36961,"px_wurf.js"],[37490,"px_insel.js"],[38691,"px_kicker.js"],[39626,"px_eis.js"],[40612,"px_run.js"],[41827,"px_brk.js"],[42789,"px_pol.js"],[44140,"px_frog.js"],[45400,"px_angel.js"],[46715,"px_golf.js"],[47749,"px_tauch.js"],[49014,"px_hockey.js"],[49970,"px_lab.js"],[51305,"px_plopp.js"],[52511,"cm.js"],[53001,"cmwelt.js"],[53057,"cm_baeck.js"],[53850,"cm_bahn.js"],[54614,"cm_detek.js"],[55331,"cm_markt.js"],[56044,"ff.js"],[56200,"ff_mathe.js"],[58190,"ff_deutsch.js"],[59778,"ff_sach_a.js"],[62027,"ff_sach_b.js"],[64256,"ff_sprachen.js"],[66664,"zm.js"],[67577,"tt.js"],[67790,"data_tagebuch.js"],[67833,"data_hoerspiel.js"],[67992,"leseecke.js"],[68311,"kt.js"],[68614,"alce.js"],[68776,"alce_aufg.js"],[68946,"sicher.js"],[69130,"stil.js"],[69184,"freunde.js"],[69321,"start.js"],[69331,null],[69341,null]]}; // [[Zeile der Markierung, 'datei.js'], …] – trägt build.py ein
+  var VER = '2.45.0';
+  var MAP = {"probe":0,"files":[[7730,"fehler_kern.js"],[8018,null],[8020,"data.js"],[8707,"data_more.js"],[9061,"data_su2.js"],[9282,"data_es.js"],[9621,"data_wissen.js"],[9803,"data_v21.js"],[10427,"data_v24.js"],[10878,"data_v25.js"],[11326,"data_v26.js"],[11425,"data_v29.js"],[11730,"data_v30.js"],[12054,"data_v31.js"],[12354,"data_kunst.js"],[12550,"data_v214.js"],[12653,"data_v216.js"],[12946,"schrift.js"],[13246,"eingabe.js"],[13457,"data_k34m.js"],[13971,"data_k34d.js"],[14304,"data_k34s.js"],[14693,"data_v224.js"],[15561,"data_v225w.js"],[15930,"data_v225k.js"],[16374,"data_herz.js"],[16728,"data_fb226.js"],[16871,"data_tf226.js"],[17078,"data_v227a.js"],[18169,"data_v227b.js"],[19123,"data_h28b.js"],[19163,"data_l28a.js"],[20029,"data_l28b.js"],[21209,"data_schaetz.js"],[21691,"data_party8.js"],[21741,"data_alce.js"],[22401,"data_alce2.js"],[22650,"data_alce3.js"],[23065,"registry.js"],[23578,"app.js"],[24682,"fun.js"],[25262,"fun2.js"],[25578,"atelier.js"],[25952,"kunst225.js"],[26142,"herz.js"],[26506,"reise.js"],[26808,"iglu.js"],[26974,"offline.js"],[27081,"party.js"],[27565,"meine.js"],[27921,"loeffel.js"],[28092,"trend.js"],[28634,"fun228a.js"],[29485,"fun228b.js"],[30146,"kueche.js"],[31185,"stimme.js"],[31240,"klassen.js"],[31389,"freunde_vorab.js"],[31410,"mut.js"],[31830,"schule.js"],[32319,"fussball226.js"],[32641,"schaetzen.js"],[33072,"party8.js"],[33691,"tiere.js"],[34150,"fussball232.js"],[34365,"party8b.js"],[34667,"weg.js"],[34884,"px.js"],[35295,"px_data.js"],[35552,"pxwelt.js"],[35633,"px_abenteuer.js"],[36476,"px_ski.js"],[37118,"px_wurf.js"],[37647,"px_insel.js"],[38848,"px_kicker.js"],[39783,"px_eis.js"],[40769,"px_run.js"],[41984,"px_brk.js"],[42946,"px_pol.js"],[44297,"px_frog.js"],[45557,"px_angel.js"],[46872,"px_golf.js"],[47906,"px_tauch.js"],[49171,"px_hockey.js"],[50127,"px_lab.js"],[51462,"px_plopp.js"],[52668,"cm.js"],[53158,"cmwelt.js"],[53214,"cm_baeck.js"],[54007,"cm_bahn.js"],[54771,"cm_detek.js"],[55488,"cm_markt.js"],[56201,"ff.js"],[56357,"ff_mathe.js"],[58347,"ff_deutsch.js"],[59935,"ff_sach_a.js"],[62184,"ff_sach_b.js"],[64413,"ff_sprachen.js"],[66821,"zm.js"],[67734,"tt.js"],[67947,"data_tagebuch.js"],[67990,"data_hoerspiel.js"],[68149,"leseecke.js"],[68468,"kt.js"],[68771,"alce.js"],[68934,"alce_aufg.js"],[69104,"sicher.js"],[69288,"stil.js"],[69342,"freunde.js"],[69479,"start.js"],[69489,null],[69499,null]]}; // [[Zeile der Markierung, 'datei.js'], …] – trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -22906,6 +22911,157 @@ const ALCE_PLUS3 = {
 };
 ALCE_SES.forEach(s => { const p = ALCE_PLUS3[s.id]; if (!p) return; Object.keys(p).forEach(k => { s[k] = Array.isArray(s[k]) ? s[k].concat(p[k]) : p[k]; }); });
 
+
+
+
+
+
+
+
+
+
+
+
+const ALCE_UNE = [
+  ['La profesora', 'escribe en la pizarra.', ['escriben en la pizarra.', 'son muy simpáticos.']], ['Los alumnos', 'escriben las normas de la clase.', ['escribe las normas de la clase.', 'es muy alta.']],
+  ['La canción', 'es muy divertida.', ['son muy divertidas.', 'escriben en el cuaderno.']], ['Los ejercicios', 'son de la página diez.', ['es de la página diez.', 'está en la mochila.']],
+  ['Mi estuche', 'está en la mesa.', ['están en la mesa.', 'son de colores.']], ['Las tijeras', 'están en el estuche.', ['está en el estuche.', 'es muy simpática.']],
+  ['Mis amigas', 'juegan en el patio.', ['juega en el patio.', 'es de la página diez.']], ['El gimnasio', 'es muy grande.', ['son muy grandes.', 'escriben las normas.']],
+  ['Nosotros', 'comemos en el comedor.', ['come en el comedor.', 'son de colores.']], ['Los libros', 'están en la biblioteca.', ['está en la biblioteca.', 'come un bocadillo.']],
+  ['Yo', 'tengo clase de música los lunes.', ['tiene clase de música los lunes.', 'son de la página ocho.']], ['¿Tú', 'tienes una goma?', ['tiene una goma?', 'tengo una goma?']]
+];
+
+const ALCE_PREG = [
+  ['¿___ te llamas?', 'Cómo', ['Dónde', 'Cuántos'], '🏷️'], ['¿___ vives?', 'Dónde', ['Cuántos', 'Qué'], '🏠'], ['¿___ años tienes?', 'Cuántos', ['Dónde', 'Cómo'], '🎂'],
+  ['¿___ es tu cumpleaños?', 'Cuándo', ['Cuántos', 'Quién'], '📅'], ['¿___ es tu profesora de español?', 'Quién', ['Cuántos', 'Dónde'], '👩‍🏫'], ['¿___ te gusta hacer?', 'Qué', ['Cuántos', 'Quién'], '🎨'],
+  ['¿___ es tu asignatura favorita?', 'Cuál', ['Quién', 'Cuántos'], '📚'], ['¿___ cuesta el cuaderno?', 'Cuánto', ['Quién', 'Dónde'], '💶'], ['¿___ está la biblioteca?', 'Dónde', ['Cuántos', 'Quién'], '🏫'],
+  ['¿___ estás hoy?', 'Cómo', ['Cuántos', 'Quién'], '🙂'], ['¿___ hermanos tienes?', 'Cuántos', ['Cómo', 'Dónde'], '👫'], ['¿___ vamos al gimnasio?', 'Cuándo', ['Cuántos', 'Quién'], '🤸'],
+  ['¿___ es eso?', 'Qué', ['Cuántos', 'Cuándo'], '❓'], ['¿___ juega conmigo?', 'Quién', ['Cuántos', 'Qué'], '🎲']
+];
+
+const ALCE_CANCION = ['¿Qué es esto? ¿Qué es eso?', '¿Quién lo sabe? ¡Yo lo sé!', '¿Dónde vives? ¿Cómo estás?', '¿Cuándo vienes a jugar?', '¿Cuántos años tienes ya?', '¡Preguntando aprendo más!'];
+const ALCE_QW = ['Qué', 'Quién', 'Cómo', 'Dónde', 'Cuándo', 'Cuánto', 'Cuántos', 'Cuál'];
+const alceSinTilde = w => w.normalize('NFD').replace(/[̀-ͯ]/g, '').normalize('NFC');
+
+const ALCE_SUST = [
+  ['el bolígrafo', 'los bolígrafos', '🖊️', 'Kuli'], ['la goma', 'las gomas', '🧽', 'Radiergummi'], ['el lápiz', 'los lápices', '✏️', 'Bleistift'], ['la flor', 'las flores', '🌼', 'Blume'],
+  ['el rotulador', 'los rotuladores', '🖍️', 'Filzstift'], ['el estuche', 'los estuches', '👝', 'Federmäppchen'], ['la silla', 'las sillas', '🪑', 'Stuhl'], ['el papel', 'los papeles', '📄', 'Papier'],
+  ['la regla', 'las reglas', '📏', 'Lineal'], ['el reloj', 'los relojes', '🕒', 'Uhr'], ['el profesor', 'los profesores', '👨‍🏫', 'Lehrer'], ['la ventana', 'las ventanas', '🪟', 'Fenster'],
+  ['el cuaderno', 'los cuadernos', '📓', 'Heft'], ['el ordenador', 'los ordenadores', '💻', 'Computer'], ['la luz', 'las luces', '💡', 'Licht'], ['la canción', 'las canciones', '🎵', 'Lied'],
+  ['el autobús', 'los autobuses', '🚌', 'Bus'], ['el color', 'los colores', '🎨', 'Farbe'], ['la clase', 'las clases', '🏫', 'Klasse'], ['la mochila', 'las mochilas', '🎒', 'Schulranzen'],
+  ['el libro', 'los libros', '📕', 'Buch'], ['el mapa', 'los mapas', '🗺️', 'Landkarte'], ['la puerta', 'las puertas', '🚪', 'Tür'], ['el pez', 'los peces', '🐟', 'Fisch']
+];
+
+const ALCE_GENT = [['estuche', 'm', '👝'], ['noche', 'f', '🌙'], ['flor', 'f', '🌼'], ['rotulador', 'm', '🖍️'], ['lápiz', 'm', '✏️'], ['mapa', 'm', '🗺️'], ['día', 'm', '📅'], ['mano', 'f', '✋'],
+  ['clase', 'f', '🏫'], ['papel', 'm', '📄'], ['luz', 'f', '💡'], ['canción', 'f', '🎵'], ['reloj', 'm', '🕒'], ['árbol', 'm', '🌳'], ['leche', 'f', '🥛'], ['coche', 'm', '🚗'], ['nariz', 'f', '👃'], ['sofá', 'm', '🛋️']];
+
+const ALCE_FOTO = [
+  ['👧😎🏖️', 'Ella está en la playa con gafas de sol.', ['Ella está en la cama.', 'Ella tiene mucho frío.']], ['🌈🙆‍♀️', 'Ella está muy contenta.', ['Ella está muy triste.', 'Ella tiene sueño.']],
+  ['🏖️👨‍👩‍👧‍👦🐕', 'Mi familia está en la playa con el perro.', ['Mi familia está en el colegio.', 'Mi familia come en un restaurante.']], ['🧒💻', 'Él tiene clase de informática.', ['Él tiene clase de música.', 'Él juega al fútbol.']],
+  ['👩‍🏫📝', 'La profesora escribe en la pizarra.', ['La profesora come en el comedor.', 'La profesora nada en la piscina.']], ['🧒🧒⚽', 'Los niños juegan al fútbol en el patio.', ['Los niños leen en la biblioteca.', 'Los niños duermen.']],
+  ['📚🤫', 'Estamos en la biblioteca.', ['Estamos en el gimnasio.', 'Estamos en la piscina.']], ['🍝🍽️', 'Comemos en el comedor.', ['Leemos en la biblioteca.', 'Cantamos en clase de música.']],
+  ['🤸‍♀️', 'Ella hace deporte en el gimnasio.', ['Ella lee un libro.', 'Ella está durmiendo.']], ['🎨🖌️', 'Tenemos clase de plástica.', ['Tenemos clase de matemáticas.', 'Tenemos clase de inglés.']],
+  ['➕➗📐', 'Tenemos clase de matemáticas.', ['Tenemos clase de música.', 'Tenemos clase de inglés.']], ['🎵🎹', 'Tenemos clase de música.', ['Tenemos clase de plástica.', 'Tenemos clase de informática.']],
+  ['🎒✏️📏', 'En la mochila hay un lápiz y una regla.', ['En la mochila hay un perro.', 'En la mochila no hay nada.']], ['🧑‍🦽🧒😄', 'Los amigos se ríen juntos.', ['Los amigos están enfadados.', 'Los amigos están solos.']]
+];
+const ALCE_GENCOLS = [['ms', 'Masculino singular', 'männlich, eins'], ['fs', 'Femenino singular', 'weiblich, eins'], ['mp', 'Masculino plural', 'männlich, mehrere'], ['fp', 'Femenino plural', 'weiblich, mehrere']];
+
+Object.assign(ALCE_SPEC, {
+  une: (ctx, s) => {
+    const [a, b, w] = ctx.draw(s.une && s.une.length >= 3 ? s.une : ALCE_UNE), full = `${a} ${b}`, oir = R.chance(.45);
+    const vis = (oir ? alceListen(full).replace(/<div class="q-word en hint"[^]*$/, '') : '') + `<div class="q-sentence" lang="es">${esc(a)} <span class="q-gap wide">?</span></div>`;
+    return mkChoice({ prompt: oir ? 'Escucha y une.' : 'Une las frases. ¿Qué va con el principio?', visual: vis, answer: b, wrong: w, layout: 'col', listen: oir ? { text: full, lang: ES } : undefined,
+      explain: `«${full}» ${/^(Los|Las|Mis|Nosotros|Nosotras|Ellos|Ellas)\b/.test(a) ? 'Mehrere, also passt das Verb in der Mehrzahl.' : a === 'Yo' || a === '¿Tú' ? 'Das Verb passt zur Person.' : 'Eins, also passt das Verb in der Einzahl.'}`, after: full, afterLang: ES, key: 'alun' + a + b, sayLang: ES });
+  },
+  tilde: (ctx, s) => {
+    const w = ctx.draw(ALCE_QW), p = alceSinTilde(w), L = Array.from(p), i = Array.from(w).findIndex((c, k) => c !== L[k]);
+    if (R.chance(.55)) {
+      const o = (c, k) => ({ html: esc(c), label: k + '·' + c });
+      return mkChoice({ prompt: 'Coloca la tilde. ¿Qué letra la lleva?', visual: `<div class="q-word big" lang="es">¿${esc(p)}?</div><div class="q-text">✍️ Fragewörter haben einen Akzent (la tilde).</div>`, answer: o(L[i], i), wrong: L.map(o).filter((_, k) => k !== i),
+        fixed: true, order: L.map((c, k) => k + '·' + c), layout: 'words', solution: `¿${w}?`, explain: `So schreibt man es: ¿${w}?`, after: w, afterLang: ES, key: 'alti' + w, sayLang: ES });
+    }
+    const vs = L.map((c, k) => /[aeiou]/.test(c) && k !== i ? k : -1).filter(k => k >= 0), j = vs.length ? vs[vs.length - 1] : -1;
+    const acc = { a: 'á', e: 'é', i: 'í', o: 'ó', u: 'ú' }, wr2 = j >= 0 ? L.map((c, k) => k === j ? acc[c] : c).join('') : p + 'é';
+    return mkChoice({ prompt: '¿Cuál está bien escrita?', visual: '<div class="q-text">✍️ Die Fragewörter tragen einen Akzent. Wo sitzt er?</div>', answer: `¿${w}?`, wrong: [`¿${p}?`, `¿${wr2}?`], layout: 'row3',
+      explain: `So schreibt man es: ¿${w}?`, after: w, afterLang: ES, key: 'altw' + w, sayLang: ES });
+  },
+  pregunta: (ctx, s) => {
+    if (R.chance(.3)) {
+      const lines = ALCE_CANCION.map((l, k) => [l, k]).filter(([l]) => ALCE_QW.some(q => l.includes('¿' + q + ' '))), [l, k] = R.pick(lines);
+      const q = ALCE_QW.filter(x => l.includes('¿' + x + ' ')).sort((a, b) => l.indexOf(a) - l.indexOf(b))[0], gapL = l.replace('¿' + q + ' ', '¿___ ');
+      const wr = R.sample(ALCE_QW.filter(x => x !== q && !l.includes(x)), 2);
+      const vis = alceListen(l).replace(/<div class="q-word en hint"[^]*$/, '') + `<div class="alce-lied" lang="es">${ALCE_CANCION.map((x, n) => n === k ? `<b>${esc(gapL).replace('___', '<span class="q-gap">?</span>')}</b>` : `<span>${esc(x)}</span>`).join('')}</div>`;
+      return mkChoice({ prompt: '🎵 Escucha la canción y completa.', visual: vis, answer: q, wrong: wr, layout: 'row3', listen: { text: l, lang: ES }, explain: `«${l}»`, after: l, afterLang: ES, key: 'allc' + l, sayLang: ES });
+    }
+    const [t, a, w, e] = ctx.draw(ALCE_PREG);
+    return mkChoice({ prompt: '¿Qué palabra falta en la pregunta?', visual: bigEmoji(e, 'sm') + alceSent(t), answer: a, wrong: w, layout: 'row3', explain: `«${t.replace('___', a)}» Fragewörter haben einen Akzent.`, after: t.replace('___', a), afterLang: ES, key: 'alpr' + t, sayLang: ES });
+  },
+  genero: (ctx, s) => {
+    if (R.chance(.35)) {
+      const [w, g, e] = ctx.draw(ALCE_GENT), M1 = { html: '<span class="sym">el</span><small>masculina</small>', label: 'masculina' }, F1 = { html: '<span class="sym">la</span><small>femenina</small>', label: 'femenina' };
+      return mkChoice({ prompt: `¿La palabra «${w}» es masculina o femenina?`, visual: bigEmoji(e), answer: g === 'm' ? M1 : F1, wrong: [g === 'm' ? F1 : M1], fixed: true, order: ['masculina', 'femenina'], layout: 'row2',
+        explain: `${g === 'm' ? 'el' : 'la'} ${w}: ${g === 'm' ? 'männlich' : 'weiblich'}. Die Endung verrät es hier nicht, darum das Wort mit el oder la lernen.`, after: `${g === 'm' ? 'el' : 'la'} ${w}`, afterLang: ES, key: 'algm' + w, sayLang: ES });
+    }
+    const it = ctx.draw(ALCE_SUST), pl = R.chance(.5), w = pl ? it[1] : it[0], c = (w.startsWith('el ') ? 'm' : w.startsWith('la ') ? 'f' : w.startsWith('los ') ? 'm' : 'f') + (pl ? 'p' : 's');
+    const o = x => ({ html: `${x[1]}<small>${x[2]}</small>`, label: x[1] }), A = ALCE_GENCOLS.find(x => x[0] === c);
+    return mkChoice({ prompt: '¿En qué columna va?', visual: (pl ? bigEmoji(it[2] + it[2], 'sm') : bigEmoji(it[2], 'sm')) + `<div class="q-word big" lang="es">${esc(w)}</div>`, answer: o(A), wrong: ALCE_GENCOLS.filter(x => x !== A).map(o),
+      fixed: true, order: ALCE_GENCOLS.map(x => x[1]), layout: 'grid2', explain: `«${w}»: ${A[2]} (${w.split(' ')[0]}).`, after: w, afterLang: ES, key: 'algc' + w, sayLang: ES });
+  },
+  plural: (ctx, s) => {
+    const [sg, pl, e, de] = ctx.draw(ALCE_SUST), b = sg.split(' ')[1], P = pl.split(' ')[1], art = pl.split(' ')[0];
+    const wr = R.sample([...new Set([b + 's', b + 'es', b].filter(x => x !== P))], 2);
+    const why = /z$/.test(b) ? 'Endet das Wort auf z, wird daraus -ces.' : /[aeiou]$/.test(alceSinTilde(b)) ? 'Endet das Wort auf einen Vokal, kommt -s dazu.' : 'Endet das Wort auf einen Konsonanten, kommt -es dazu.';
+    return mkChoice({ prompt: '¿Cómo es el plural?', visual: bigEmoji(e, 'sm') + `<div class="q-word big" lang="es">${esc(sg)} → ${art} <span class="q-gap">?</span></div><small class="muted">${esc(de)}</small>`, answer: P, wrong: wr, layout: 'row3',
+      explain: `${why}${alceSinTilde(b) !== b && alceSinTilde(P) === P ? ' Der Akzent fällt in der Mehrzahl weg.' : ''} ${sg} → ${pl}`, after: pl, afterLang: ES, key: 'alpl' + sg, sayLang: ES });
+  },
+  foto: (ctx, s) => {
+    const [e, a, w] = ctx.draw(ALCE_FOTO);
+    return mkChoice({ prompt: 'Observa y elige la frase correcta.', visual: `<div class="alce-foto" aria-hidden="true">${e}</div>`, answer: a, wrong: w, layout: 'col', explain: `«${a}»`, after: a, afterLang: ES, key: 'alfo' + a, sayLang: ES });
+  }
+});
+
+
+ALCE_VSATZ.push(['Mis tías ___ en Francia.', 'estar', 5, '🇫🇷'], ['Vosotros ___ muy contentos.', 'estar', 4, '😄'], ['Nosotras ___ una mascota.', 'tener', 3, '🐹'], ['Mi madre ___ profesora.', 'ser', 2, '👩‍🏫'],
+  ['Vosotros ___ informática los jueves.', 'tener', 4, '💻'], ['Tú ___ dos primos.', 'tener', 1, '👦'], ['Los miércoles yo ___ al baloncesto.', 'jugar', 0, '🏀']);
+const ALCE_PLUS4 = {
+  u1s1: { spec: ['pregunta:2', 'tilde:1'] },
+  u2s1: { spec: ['une:2', 'tilde:2', 'pregunta:2', 'genero:2', 'plural:2', 'foto:2'],
+    voc: [['las Matemáticas', '➗', 'Mathe'], ['la Música', '🎵', 'Musik'], ['la Educación Física', '🤸', 'Sport'], ['el Inglés', '🇬🇧', 'Englisch'], ['las Ciencias', '🔬', 'Sachunterricht'],
+      ['la Informática', '💻', 'Informatik'], ['la biblioteca', '📚', 'Bibliothek'], ['el comedor', '🍽️', 'Speisesaal'], ['el gimnasio', '🏟️', 'Turnhalle'], ['la pizarra', '🧑‍🏫', 'Tafel'], ['el mapa', '🗺️', 'Landkarte'], ['el reloj', '🕒', 'Uhr']],
+    res: [['¿Cuál es tu asignatura favorita?', 'Me encantan las Matemáticas.', ['Me llamo Sara.', 'Vivo en Alemania.']], ['¿Qué te interesa más del colegio?', 'Me interesa mucho la Música.', ['Tengo ocho años.', 'Sí, gracias.']],
+      ['¿Qué deporte prefieres practicar?', 'Prefiero jugar al baloncesto.', ['Es mi profesora.', 'Está en la mesa.']], ['¿Qué día vas al gimnasio?', 'Voy los miércoles.', ['Es muy grande.', 'Me llamo Leo.']]],
+    gap: [['A mí me ___ las Matemáticas.', 'encantan', ['encanta', 'encanto'], 'Mehrere Sachen (las Matemáticas): «me encantan».'], ['Me ___ jugar al baloncesto.', 'gusta', ['gustan', 'gusto'], 'Mit einem Verb (jugar): «me gusta».'],
+      ['¿Qué te ___ más del colegio?', 'interesa', ['interesan', 'intereso'], 'Was interessiert dich: «te interesa».'], ['Nos ___ mucho los recreos.', 'gustan', ['gusta', 'gustamos'], 'Mehrere Sachen: «gustan».']],
+    dial: [[[['Lumi', '¡Hola! Soy Lumi, la mascota de la clase. Me gusta nadar. ¿Qué te gusta hacer a ti?'], ['Sara', '___'], ['Lumi', '¡Qué bien! ¿Y a ti, profe?']], 'A mí me encantan las Matemáticas.', ['Me llamo Lumi.', 'Los miércoles.']],
+      [[['Profe', '¿Cuál es tu asignatura favorita?'], ['Hugo', '___'], ['Profe', '¡A mí también me gusta mucho la música!']], 'Me encanta la Música.', ['Tengo dos hermanos.', 'Estoy en el patio.']]],
+    grupos: [['las personas del colegio', ['la directora', 'la profesora', 'el maestro', 'el alumno', 'la conserje'], 'Pasa el colador: drei gehören zusammen, eins nicht!'],
+      ['los lugares del colegio', ['el gimnasio', 'el comedor', 'el patio', 'la biblioteca', 'el aula'], 'Pasa el colador: drei gehören zusammen, eins nicht!'],
+      ['el material escolar', ['las tijeras', 'la regla', 'el pegamento', 'el rotulador', 'el estuche', 'la mochila'], 'Pasa el colador: drei gehören zusammen, eins nicht!']],
+    separa: ['La profesora escribe en la pizarra.', 'Me encantan las Matemáticas.', '¿Qué te gusta hacer a ti?', 'Los miércoles voy al gimnasio.'] },
+  u2s5: { spec: ['pregunta:1'] },
+  u2s7: { spec: ['genero:2', 'plural:2'] }
+};
+ALCE_SES.forEach(s => { const p = ALCE_PLUS4[s.id]; if (!p) return; Object.keys(p).forEach(k => { if (p[k] == null) return; s[k] = Array.isArray(s[k]) ? s[k].concat(p[k]) : p[k]; }); });
+ALCE_BY.u2s1.sopa.w.push(['patio', '🌳'], ['comedor', '🍽️'], ['regla', '📏'], ['tijeras', '✂️'], ['estuche', '👝']);
+
+
+const ALCE_YASE = { 1: { t: ['conj', 'conj', 'colado', 'signos', 'nacion', 'bandera', 'enie', 'pregunta', 'verbo', 'separa'], pw: ['HOLA', 'AMIGOS', 'ESPAÑA'] },
+  2: { t: ['une', 'tilde', 'pregunta', 'genero', 'plural', 'foto', 'colado', 'conj', 'color', 'separa'], pw: ['CLASE', 'RECREO', 'ESCUELA'] },
+  3: { t: ['separa', 'colado', 'conj', 'verbo', 'color'], pw: ['SUPER', 'FELIZ', 'AMIGOS'] } };
+function alceYaseGen(u) {
+  return ctx => {
+    const ses = ALCE_SES.filter(s => s.u === u), Y = ALCE_YASE[u];
+    if (typeof G !== 'undefined' && G && G.n && G.i === G.n - 1) {
+      const s = R.pick(ses.filter(x => x.sopa && x.sopa.w));
+      const q = s && mkSopa({ words: s.sopa.w, pw: R.pick(Y.pw), n: 4, afterLang: ES, prompt: '🕵️ ¡Resuelve el misterio! Busca las palabras.' });
+      if (q) return q;
+    }
+    const k = R.pick(Y.t), cand = ses.filter(s => alceTypes(s).includes(k)), s = cand.length ? R.pick(cand) : R.pick(ses);
+    return ALCE_SPEC[k](ctx, s);
+  };
+}
+[1, 2, 3].forEach(u => { ALCE_GAMES['alceyase' + u] = { g: 'es-alce', o: 40 + u, t: `Ya sé… Unidad ${u}`, d: `Was kannst du schon? Alles aus Unidad ${u}, am Ende ein Rätsel`, i: '🌟', gen: alceYaseGen(u) }; });
+
 /*@@src registry.js@@*/
 
 
@@ -23423,8 +23579,9 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '2.44.0';
+const APP_VERSION = '2.45.0';
 const CHANGELOG = [
+  { v: "2.45.0", d: "08.11.2026", t: ["Spanisch U2 S1 wie im Heft: Satzanfang und Satzende verbinden, Fragewörter mit Akzent, welches Fragewort passt, ein Lied mit Fragewörtern", "Männlich oder weiblich, Einzahl oder Mehrzahl, Mehrzahl bilden, Bild und passender Satz, Schulfächer und Orte im Colegio", "Neu im Kursweg: „Ya sé…“ für jede Unidad mit Rätsel am Ende"] },
   { v: "2.44.0", d: "08.11.2026", t: ["Spanischkurs wie im Arbeitsheft: Satz ohne Lücken in Wörter trennen und Buchstabensuppe mit Passwort", "Verben im Präsens (ser, estar, tener …): Lücke mit Verb in Klammern, Verbtabelle, Verb im Satz antippen, Lumi hat sich in den Satz geschlichen", "Neu: ¿…? oder ¡…!, Länder und Nationalitäten, Flaggen, Wörter mit ñ, Farben hören und richtig ergänzen, Personen erraten"] },
   { v: "2.43.0", d: "08.11.2026", t: ["Lernwelt für Freunde: alle Welten, Spiele und die Leseecke", "Datenschutz: Alles bleibt nur auf diesem Gerät. Eigene Seite beim ersten Start, Leiste oben auf der Startseite (Tipp darauf zeigt alles wieder), Karte im Elternbereich und Hinweis überall, wo du schreibst, malst oder aufnimmst"] }
 ];
@@ -68692,7 +68849,8 @@ function alceMapHTML(wid) {
   const st = alceStand(), k = alceKopf();
   const btn = (s, j) => { const id = 'alce' + s.id, cl = st.fertig || (!st.vorher && j < st.i) ? 'done' : j === st.i && !st.vorher ? 'now' : 'next';
     return `<button class="alce-st ${cl}" data-act="play" data-g="${id}" data-world="spanisch"><span class="alce-si" aria-hidden="true">${s.i}</span><b>${esc(s.t)}</b><small>Sesión ${s.s}</small>${alceSterne(id)}${cl === 'now' ? '<span class="alce-tag">Gerade dran</span>' : ''}</button>`; };
-  const units = [1, 2, 3].map(u => `<div class="alce-u"><span class="alce-un">Unidad ${u}</span><div class="alce-row">${ALCE_SES.map((s, j) => s.u === u ? btn(s, j) : '').join('')}</div></div>`).join('');
+  const yase = u => GAMES['alceyase' + u] ? `<button class="alce-st next yase" data-act="play" data-g="alceyase${u}" data-world="spanisch"><span class="alce-si" aria-hidden="true">🌟</span><b>Ya sé…</b><small>Unidad ${u} mit Rätsel</small>${alceSterne('alceyase' + u)}</button>` : '';
+  const units = [1, 2, 3].map(u => `<div class="alce-u"><span class="alce-un">Unidad ${u}</span><div class="alce-row">${ALCE_SES.map((s, j) => s.u === u ? btn(s, j) : '').join('')}${yase(u)}</div></div>`).join('');
   const nav = ALCE_BY.nav;
   return `<section class="alce-map" aria-label="Mi curso ALCE">
     <div class="alce-card"><span class="alce-i" aria-hidden="true">${k.s ? k.s.i : '🏆'}</span><div class="alce-t"><small>🌙 Mi curso ALCE · A2 Luna</small><b>${esc(k.h)}</b><span>${esc(k.u)}</span>${k.n ? `<span class="alce-nx">📅 ${esc(k.n)}</span>` : ''}</div>

@@ -1,5 +1,5 @@
-/* Lernwelt – Service Worker 2.44.0 */
-const CACHE = 'lwf-lernwelt-2.44.0';
+/* Lernwelt – Service Worker 2.45.0 */
+const CACHE = 'lwf-lernwelt-2.45.0';
 const FILES = ['index.html', 'manifest.webmanifest', 'icon-180.png', 'icon-192.png', 'icon-512.png'];
 // Immer frisch vom Server laden – manche Server (z. B. Home Assistant /local) lassen Dateien wochenlang zwischenspeichern
 // v2.18: Update nur übernehmen, wenn ALLE Dateien vollständig da sind und index.html wirklich die Lernwelt ist
@@ -15,7 +15,7 @@ self.addEventListener('install', e => {
       if (!r.ok) throw new Error('fehlt: ' + f);
       if (f !== 'index.html') return [f, r];
       // als frische Antwort speichern – Safari lehnt umgeleitete (redirected) Antworten beim Öffnen der App ab
-      return r.text().then(t => { if (t.indexOf('lernwelt-freunde-app') < 0 || t.lastIndexOf('</html>') < 0 || t.indexOf("APP_VERSION = '2.44.0'") < 0) throw new Error('index passt nicht'); return [f, html(t)]; });
+      return r.text().then(t => { if (t.indexOf('lernwelt-freunde-app') < 0 || t.lastIndexOf('</html>') < 0 || t.indexOf("APP_VERSION = '2.45.0'") < 0) throw new Error('index passt nicht'); return [f, html(t)]; });
     })));
   }).then(list => caches.open(CACHE).then(c => Promise.all(list.map(([f, r]) => c.put(f, r))))).then(() => self.skipWaiting()));
 });
@@ -44,7 +44,7 @@ self.addEventListener('fetch', e => {
         if (txt.indexOf('lernwelt-freunde-app') < 0 || txt.lastIndexOf('</html>') < 0) throw new Error('keine Lernwelt');
         const page = () => new Response(txt, { headers: { 'Content-Type': 'text/html; charset=utf-8' } });
         // nur speichern, wenn die Seite zu DIESEM Service Worker passt – eine neue Version speichert ihr eigener SW (mit Notfall-Kopie der alten)
-        if (txt.indexOf("APP_VERSION = '2.44.0'") >= 0) caches.open(CACHE).then(c => c.put('index.html', page()));
+        if (txt.indexOf("APP_VERSION = '2.45.0'") >= 0) caches.open(CACHE).then(c => c.put('index.html', page()));
         return page();
       });
     }).catch(() => caches.match('index.html').then(clean).then(hit => hit || fetch(req).catch(notfall)))));
