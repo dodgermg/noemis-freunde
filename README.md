@@ -10,11 +10,15 @@ Eine Lernwelt fürs iPad für die Grundschule (Klasse 1 bis 4, Niedersachsen): M
 
 Neue Versionen kommen von allein, sobald das iPad beim Start Internet hat.
 
-## Daten
+## Daten: alles bleibt auf dem Gerät
 
-Alles, was das Kind macht (Sterne, Münzen, Tagebuch, Bilder, Aufnahmen), bleibt nur auf diesem iPad. Die App verschickt nichts, hat kein Konto, keine Werbung und lädt nichts von fremden Servern nach. Wie jeder Webserver speichert GitHub beim Abruf der Seite technische Zugriffsdaten.
+Alles, was das Kind macht (Name, Fortschritt, Tagebuch, Bilder, Freundebuch, Aufnahmen), speichert die App nur auf dem eigenen Gerät, im Speicher des Browsers. Die App schickt nichts an einen Server, auch nicht an den, der sie gebaut hat oder hier bereitstellt. Es gibt kein Konto, keine Werbung, keine Statistik und nichts, was von fremden Servern nachgeladen wird.
 
-Im Elternbereich (unten auf der Startseite „Für Eltern“) gibt es eine Sicherung als Datei zum Aufheben und Zurückholen.
+Beim Öffnen lädt der Browser nur die App selbst von GitHub herunter. GitHub sieht dabei wie jeder Webserver technische Verbindungsdaten, aber keine Inhalte aus der App. Wer die App bereitstellt, hat darauf keinen Zugriff.
+
+Die App zeigt das auch selbst an: beim ersten Start, unten auf der Startseite, im Elternbereich und überall, wo das Kind schreibt, malt oder aufnimmt.
+
+Wichtig: Werden die Websitedaten in Safari gelöscht oder wird die App vom Homebildschirm entfernt, sind auch die Daten weg. Im Elternbereich (unten auf der Startseite „Für Eltern“) gibt es deshalb eine Sicherung als Datei zum Aufheben und Zurückholen. Diese Datei verlässt das Gerät nur, wenn ihr sie selbst irgendwo speichert oder teilt.
 
 ## Elternbereich
 

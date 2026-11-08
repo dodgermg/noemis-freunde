@@ -4816,6 +4816,13 @@ mark.ffl-hl { background: #ffe066; color: #1d2440; border-radius: 5px; padding: 
 .lwf-gb { display: flex; align-items: center; justify-content: center; gap: 10px; min-height: 64px; border: 0; border-radius: 18px; background: var(--surface-2); box-shadow: inset 0 0 0 2px var(--line); color: var(--ink); font: inherit; font-weight: 800; font-size: 19px; cursor: pointer; }
 .lwf-gb span { font-size: 30px; }
 .lwf-gb.sel { box-shadow: inset 0 0 0 3px var(--accent, #2C8BC8); background: var(--surface); }
+/* Hinweis: Alles bleibt auf diesem Gerät */
+.pagehead .lwf-lokal { margin: 6px 0 0; font-size: 13px; font-weight: 700; opacity: .95; }
+.foot .lwf-lokal-foot { display: block; margin: 2px auto 6px; max-width: 34em; font-size: 13px; font-weight: 600; color: var(--ink-soft); }
+.lwf-ds { border-left: 6px solid var(--good, #2f9e44); }
+.lwf-ds h3 { margin: 0 0 6px; font-size: 18px; }
+.lwf-ds p { margin: 6px 0; font-size: 15px; line-height: 1.45; }
+.lwf-onb-lokal { font-size: 15px; line-height: 1.45; }
 
 /* ---- style_h28a.css ---- */
 
@@ -7661,7 +7668,7 @@ var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
   var VER = '2.43.0';
-  var MAP = {"probe":0,"files":[[7650,"fehler_kern.js"],[7938,null],[7940,"data.js"],[8627,"data_more.js"],[8981,"data_su2.js"],[9202,"data_es.js"],[9541,"data_wissen.js"],[9723,"data_v21.js"],[10347,"data_v24.js"],[10798,"data_v25.js"],[11246,"data_v26.js"],[11345,"data_v29.js"],[11650,"data_v30.js"],[11974,"data_v31.js"],[12274,"data_kunst.js"],[12470,"data_v214.js"],[12573,"data_v216.js"],[12866,"schrift.js"],[13166,"eingabe.js"],[13377,"data_k34m.js"],[13891,"data_k34d.js"],[14224,"data_k34s.js"],[14613,"data_v224.js"],[15481,"data_v225w.js"],[15850,"data_v225k.js"],[16294,"data_herz.js"],[16648,"data_fb226.js"],[16791,"data_tf226.js"],[16998,"data_v227a.js"],[18089,"data_v227b.js"],[19043,"data_h28b.js"],[19083,"data_l28a.js"],[19949,"data_l28b.js"],[21129,"data_schaetz.js"],[21611,"data_party8.js"],[21661,"data_alce.js"],[22321,"data_alce2.js"],[22570,"registry.js"],[23083,"app.js"],[24185,"fun.js"],[24765,"fun2.js"],[25081,"atelier.js"],[25455,"kunst225.js"],[25645,"herz.js"],[26009,"reise.js"],[26311,"iglu.js"],[26477,"offline.js"],[26584,"party.js"],[27068,"meine.js"],[27424,"loeffel.js"],[27595,"trend.js"],[28137,"fun228a.js"],[28988,"fun228b.js"],[29649,"kueche.js"],[30688,"stimme.js"],[30743,"klassen.js"],[30892,"freunde_vorab.js"],[30913,"mut.js"],[31333,"schule.js"],[31822,"fussball226.js"],[32144,"schaetzen.js"],[32575,"party8.js"],[33194,"tiere.js"],[33653,"fussball232.js"],[33868,"party8b.js"],[34170,"weg.js"],[34387,"px.js"],[34798,"px_data.js"],[35055,"pxwelt.js"],[35136,"px_abenteuer.js"],[35979,"px_ski.js"],[36621,"px_wurf.js"],[37150,"px_insel.js"],[38351,"px_kicker.js"],[39286,"px_eis.js"],[40272,"px_run.js"],[41487,"px_brk.js"],[42449,"px_pol.js"],[43800,"px_frog.js"],[45060,"px_angel.js"],[46375,"px_golf.js"],[47409,"px_tauch.js"],[48674,"px_hockey.js"],[49630,"px_lab.js"],[50965,"px_plopp.js"],[52171,"cm.js"],[52661,"cmwelt.js"],[52717,"cm_baeck.js"],[53510,"cm_bahn.js"],[54274,"cm_detek.js"],[54991,"cm_markt.js"],[55704,"ff.js"],[55860,"ff_mathe.js"],[57850,"ff_deutsch.js"],[59438,"ff_sach_a.js"],[61687,"ff_sach_b.js"],[63916,"ff_sprachen.js"],[66324,"zm.js"],[67237,"tt.js"],[67450,"data_tagebuch.js"],[67493,"data_hoerspiel.js"],[67652,"leseecke.js"],[67971,"kt.js"],[68274,"alce.js"],[68436,"sicher.js"],[68620,"stil.js"],[68674,"freunde.js"],[68756,"start.js"],[68766,null],[68776,null]]}; // [[Zeile der Markierung, 'datei.js'], …] – trägt build.py ein
+  var MAP = {"probe":0,"files":[[7657,"fehler_kern.js"],[7945,null],[7947,"data.js"],[8634,"data_more.js"],[8988,"data_su2.js"],[9209,"data_es.js"],[9548,"data_wissen.js"],[9730,"data_v21.js"],[10354,"data_v24.js"],[10805,"data_v25.js"],[11253,"data_v26.js"],[11352,"data_v29.js"],[11657,"data_v30.js"],[11981,"data_v31.js"],[12281,"data_kunst.js"],[12477,"data_v214.js"],[12580,"data_v216.js"],[12873,"schrift.js"],[13173,"eingabe.js"],[13384,"data_k34m.js"],[13898,"data_k34d.js"],[14231,"data_k34s.js"],[14620,"data_v224.js"],[15488,"data_v225w.js"],[15857,"data_v225k.js"],[16301,"data_herz.js"],[16655,"data_fb226.js"],[16798,"data_tf226.js"],[17005,"data_v227a.js"],[18096,"data_v227b.js"],[19050,"data_h28b.js"],[19090,"data_l28a.js"],[19956,"data_l28b.js"],[21136,"data_schaetz.js"],[21618,"data_party8.js"],[21668,"data_alce.js"],[22328,"data_alce2.js"],[22577,"registry.js"],[23090,"app.js"],[24192,"fun.js"],[24772,"fun2.js"],[25088,"atelier.js"],[25462,"kunst225.js"],[25652,"herz.js"],[26016,"reise.js"],[26318,"iglu.js"],[26484,"offline.js"],[26591,"party.js"],[27075,"meine.js"],[27431,"loeffel.js"],[27602,"trend.js"],[28144,"fun228a.js"],[28995,"fun228b.js"],[29656,"kueche.js"],[30695,"stimme.js"],[30750,"klassen.js"],[30899,"freunde_vorab.js"],[30920,"mut.js"],[31340,"schule.js"],[31829,"fussball226.js"],[32151,"schaetzen.js"],[32582,"party8.js"],[33201,"tiere.js"],[33660,"fussball232.js"],[33875,"party8b.js"],[34177,"weg.js"],[34394,"px.js"],[34805,"px_data.js"],[35062,"pxwelt.js"],[35143,"px_abenteuer.js"],[35986,"px_ski.js"],[36628,"px_wurf.js"],[37157,"px_insel.js"],[38358,"px_kicker.js"],[39293,"px_eis.js"],[40279,"px_run.js"],[41494,"px_brk.js"],[42456,"px_pol.js"],[43807,"px_frog.js"],[45067,"px_angel.js"],[46382,"px_golf.js"],[47416,"px_tauch.js"],[48681,"px_hockey.js"],[49637,"px_lab.js"],[50972,"px_plopp.js"],[52178,"cm.js"],[52668,"cmwelt.js"],[52724,"cm_baeck.js"],[53517,"cm_bahn.js"],[54281,"cm_detek.js"],[54998,"cm_markt.js"],[55711,"ff.js"],[55867,"ff_mathe.js"],[57857,"ff_deutsch.js"],[59445,"ff_sach_a.js"],[61694,"ff_sach_b.js"],[63923,"ff_sprachen.js"],[66331,"zm.js"],[67244,"tt.js"],[67457,"data_tagebuch.js"],[67500,"data_hoerspiel.js"],[67659,"leseecke.js"],[67978,"kt.js"],[68281,"alce.js"],[68443,"sicher.js"],[68627,"stil.js"],[68681,"freunde.js"],[68797,"start.js"],[68807,null],[68817,null]]}; // [[Zeile der Markierung, 'datei.js'], …] – trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -23086,7 +23093,7 @@ const ACCESSORIES = [
 
 const APP_VERSION = '2.43.0';
 const CHANGELOG = [
-  { v: APP_VERSION, d: '', t: ['Lernwelt für Freunde: alle Welten, Spiele und die Leseecke'] }
+  { v: APP_VERSION, d: '', t: ['Lernwelt für Freunde: alle Welten, Spiele und die Leseecke', 'Datenschutz: Alles bleibt nur auf diesem Gerät. Hinweis beim ersten Start, unten auf der Startseite, im Elternbereich und überall, wo du schreibst, malst oder aufnimmst'] }
 ];
 const AVATARS = ['🦊', '🐱', '🐼', '🦄', '🐰', '🐯', '🐸', '🐨', '🐧', '🐶', '🦋', '🐬', '🦁', '🐹', '🐻', '🦒'];
 const FEED = {
@@ -68751,6 +68758,40 @@ var LWF_G = '';
   try { hzParentsHTML = leer; hzPostCard = leer; hzBanner = leer; hzParentsBind = () => { }; } catch (e) { }
   ACT.hzherz = t => { Sound.unlock(); const [x, y] = hzCenter(t); hzBurst(x, y); Sound.sparkle(); };
   ['hzpost', 'hzbriefe', 'hzbday', 'muherzpapa'].forEach(k => { ACT[k] = () => { }; });
+})();
+
+/* ---------- Hinweis: Alles bleibt nur auf diesem Gerät ----------
+   Start, Startseite (unten), Elternbereich und überall, wo das Kind selbst etwas schreibt, malt, aufnimmt oder einträgt. */
+const LWF_LOKAL = '🔒 Wird nur auf diesem Gerät gespeichert und nirgendwohin geschickt.';
+const LWF_PERS = /Kritzeltagebuch|Freundebuch|Meine Seite|Gefühle|Danke-Glas|Mutmach|Kompliment|Das kann ich schon|Galerie|liest vor|Hörbuchpass|Herz-Insel|Mein Heft|Meine Schule|Stundenplan|Atelier/;
+const LWF_DS = `<div class="card lwf-ds"><h3>🔒 Datenschutz: Alles bleibt auf diesem Gerät</h3>
+  <p>Name, Fortschritt, Tagebuch, Bilder, Freundebuch und Aufnahmen speichert die App nur hier, im Speicher des Browsers auf diesem Gerät. Sie schickt nichts an einen Server, auch nicht an den, der die App gebaut hat oder bereitstellt. Es gibt kein Konto, keine Werbung und keine Statistik.</p>
+  <p>Beim Öffnen lädt der Browser nur die App selbst herunter. Dabei geht nichts aus der App zurück.</p>
+  <p><b>Wichtig:</b> Werden die Websitedaten in Safari gelöscht oder wird die App vom Homebildschirm entfernt, sind auch die Daten weg. Darum ab und zu unten eine Sicherung als Datei machen. Diese Datei verlässt das Gerät nur, wenn ihr sie selbst irgendwo speichert oder teilt.</p></div>`;
+function lwfLokalDeko() {
+  try {
+    const h = app.querySelector('header.pagehead'), h1 = h && h.querySelector('h1');
+    if (h1 && !h.querySelector('.lwf-lokal')) {
+      const t = h.textContent || '';
+      if (/Elternbereich/.test(h1.textContent)) {
+        const m = app.querySelector('main.parents');
+        if (m && !m.querySelector('.lwf-ds')) { const n = m.querySelector(':scope > .notice'); if (n) n.insertAdjacentHTML('afterend', LWF_DS); else m.insertAdjacentHTML('afterbegin', LWF_DS); }
+      } else if (LWF_PERS.test(t) && !/Lumis geheimes Tagebuch/.test(t)) {
+        h1.parentElement.insertAdjacentHTML('beforeend', `<p class="lwf-lokal">${LWF_LOKAL}</p>`);
+      }
+    }
+    const f = app.querySelector('footer.foot');
+    if (f && !f.querySelector('.lwf-lokal-foot')) {
+      const d = f.querySelector('.dedic'), html = '<span class="lwf-lokal-foot">🔒 Alles, was du hier machst, bleibt nur auf diesem Gerät. Nichts wird verschickt.</span>';
+      d ? d.insertAdjacentHTML('afterend', html) : f.insertAdjacentHTML('afterbegin', html);
+    }
+    const ob = app.querySelector('.onb [data-act=onbdone]');
+    if (ob && !app.querySelector('.lwf-onb-lokal')) ob.parentElement.insertAdjacentHTML('beforebegin', '<div class="card lwf-onb-lokal">🔒 <b>Alles bleibt auf diesem Gerät.</b> Was du hier spielst, schreibst, malst und aufnimmst, wird nur hier gespeichert und nirgendwohin geschickt.</div>');
+  } catch (e) { }
+}
+(function () {
+  const sv = setView;
+  setView = function () { const r = sv.apply(this, arguments); lwfLokalDeko(); return r; };
 })();
 
 /*@@src start.js@@*/
