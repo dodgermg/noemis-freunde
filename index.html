@@ -4818,11 +4818,24 @@ mark.ffl-hl { background: #ffe066; color: #1d2440; border-radius: 5px; padding: 
 .lwf-gb.sel { box-shadow: inset 0 0 0 3px var(--accent, #2C8BC8); background: var(--surface); }
 /* Hinweis: Alles bleibt auf diesem Gerät */
 .pagehead .lwf-lokal { margin: 6px 0 0; font-size: 13px; font-weight: 700; opacity: .95; }
-.foot .lwf-lokal-foot { display: block; margin: 2px auto 6px; max-width: 34em; font-size: 13px; font-weight: 600; color: var(--ink-soft); }
 .lwf-ds { border-left: 6px solid var(--good, #2f9e44); }
 .lwf-ds h3 { margin: 0 0 6px; font-size: 18px; }
 .lwf-ds p { margin: 6px 0; font-size: 15px; line-height: 1.45; }
 .lwf-onb-lokal { font-size: 15px; line-height: 1.45; }
+/* Erster Start und Leiste auf der Startseite */
+.lwf-punkte { display: grid; gap: 12px; margin: 18px 0; }
+.lwf-pk { display: flex; gap: 14px; align-items: flex-start; background: var(--surface); border-radius: 20px; padding: 16px 18px; box-shadow: 0 2px 0 var(--line), 0 6px 18px rgba(18, 50, 74, .06); }
+.lwf-pk-i { font-size: 34px; line-height: 1; flex: none; }
+.lwf-pk b { display: block; font-family: var(--f-display); font-size: 19px; color: var(--ink); }
+.lwf-pk p { margin: 4px 0 0; font-size: 15px; line-height: 1.45; color: var(--ink-soft); }
+.lwf-intro .lwf-ok { width: 100%; min-height: 64px; font-size: 22px; }
+.lwf-intro .lwf-wieder { text-align: center; font-size: 13px; margin-top: 10px; }
+.lwf-ov .lwf-punkte { margin: 12px 0; }
+.lwf-ov .lwf-pk { box-shadow: inset 0 0 0 2px var(--line); text-align: left; }
+.lwf-bar { display: flex; align-items: center; gap: 10px; width: 100%; margin: 4px 0 12px; padding: 10px 14px; border: 0; border-radius: 16px; background: var(--surface); box-shadow: inset 0 0 0 2px var(--line); color: var(--ink); font: inherit; font-size: 14px; text-align: left; cursor: pointer; }
+.lwf-bar-i { font-size: 20px; flex: none; }
+.lwf-bar-t { flex: 1; line-height: 1.35; }
+.lwf-bar-m { flex: none; font-weight: 800; font-size: 13px; color: var(--sea-2, #1F6FA6); text-decoration: underline; text-underline-offset: 3px; }
 
 /* ---- style_h28a.css ---- */
 
@@ -7668,7 +7681,7 @@ var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
   var VER = '2.43.0';
-  var MAP = {"probe":0,"files":[[7657,"fehler_kern.js"],[7945,null],[7947,"data.js"],[8634,"data_more.js"],[8988,"data_su2.js"],[9209,"data_es.js"],[9548,"data_wissen.js"],[9730,"data_v21.js"],[10354,"data_v24.js"],[10805,"data_v25.js"],[11253,"data_v26.js"],[11352,"data_v29.js"],[11657,"data_v30.js"],[11981,"data_v31.js"],[12281,"data_kunst.js"],[12477,"data_v214.js"],[12580,"data_v216.js"],[12873,"schrift.js"],[13173,"eingabe.js"],[13384,"data_k34m.js"],[13898,"data_k34d.js"],[14231,"data_k34s.js"],[14620,"data_v224.js"],[15488,"data_v225w.js"],[15857,"data_v225k.js"],[16301,"data_herz.js"],[16655,"data_fb226.js"],[16798,"data_tf226.js"],[17005,"data_v227a.js"],[18096,"data_v227b.js"],[19050,"data_h28b.js"],[19090,"data_l28a.js"],[19956,"data_l28b.js"],[21136,"data_schaetz.js"],[21618,"data_party8.js"],[21668,"data_alce.js"],[22328,"data_alce2.js"],[22577,"registry.js"],[23090,"app.js"],[24192,"fun.js"],[24772,"fun2.js"],[25088,"atelier.js"],[25462,"kunst225.js"],[25652,"herz.js"],[26016,"reise.js"],[26318,"iglu.js"],[26484,"offline.js"],[26591,"party.js"],[27075,"meine.js"],[27431,"loeffel.js"],[27602,"trend.js"],[28144,"fun228a.js"],[28995,"fun228b.js"],[29656,"kueche.js"],[30695,"stimme.js"],[30750,"klassen.js"],[30899,"freunde_vorab.js"],[30920,"mut.js"],[31340,"schule.js"],[31829,"fussball226.js"],[32151,"schaetzen.js"],[32582,"party8.js"],[33201,"tiere.js"],[33660,"fussball232.js"],[33875,"party8b.js"],[34177,"weg.js"],[34394,"px.js"],[34805,"px_data.js"],[35062,"pxwelt.js"],[35143,"px_abenteuer.js"],[35986,"px_ski.js"],[36628,"px_wurf.js"],[37157,"px_insel.js"],[38358,"px_kicker.js"],[39293,"px_eis.js"],[40279,"px_run.js"],[41494,"px_brk.js"],[42456,"px_pol.js"],[43807,"px_frog.js"],[45067,"px_angel.js"],[46382,"px_golf.js"],[47416,"px_tauch.js"],[48681,"px_hockey.js"],[49637,"px_lab.js"],[50972,"px_plopp.js"],[52178,"cm.js"],[52668,"cmwelt.js"],[52724,"cm_baeck.js"],[53517,"cm_bahn.js"],[54281,"cm_detek.js"],[54998,"cm_markt.js"],[55711,"ff.js"],[55867,"ff_mathe.js"],[57857,"ff_deutsch.js"],[59445,"ff_sach_a.js"],[61694,"ff_sach_b.js"],[63923,"ff_sprachen.js"],[66331,"zm.js"],[67244,"tt.js"],[67457,"data_tagebuch.js"],[67500,"data_hoerspiel.js"],[67659,"leseecke.js"],[67978,"kt.js"],[68281,"alce.js"],[68443,"sicher.js"],[68627,"stil.js"],[68681,"freunde.js"],[68797,"start.js"],[68807,null],[68817,null]]}; // [[Zeile der Markierung, 'datei.js'], …] – trägt build.py ein
+  var MAP = {"probe":0,"files":[[7670,"fehler_kern.js"],[7958,null],[7960,"data.js"],[8647,"data_more.js"],[9001,"data_su2.js"],[9222,"data_es.js"],[9561,"data_wissen.js"],[9743,"data_v21.js"],[10367,"data_v24.js"],[10818,"data_v25.js"],[11266,"data_v26.js"],[11365,"data_v29.js"],[11670,"data_v30.js"],[11994,"data_v31.js"],[12294,"data_kunst.js"],[12490,"data_v214.js"],[12593,"data_v216.js"],[12886,"schrift.js"],[13186,"eingabe.js"],[13397,"data_k34m.js"],[13911,"data_k34d.js"],[14244,"data_k34s.js"],[14633,"data_v224.js"],[15501,"data_v225w.js"],[15870,"data_v225k.js"],[16314,"data_herz.js"],[16668,"data_fb226.js"],[16811,"data_tf226.js"],[17018,"data_v227a.js"],[18109,"data_v227b.js"],[19063,"data_h28b.js"],[19103,"data_l28a.js"],[19969,"data_l28b.js"],[21149,"data_schaetz.js"],[21631,"data_party8.js"],[21681,"data_alce.js"],[22341,"data_alce2.js"],[22590,"registry.js"],[23103,"app.js"],[24205,"fun.js"],[24785,"fun2.js"],[25101,"atelier.js"],[25475,"kunst225.js"],[25665,"herz.js"],[26029,"reise.js"],[26331,"iglu.js"],[26497,"offline.js"],[26604,"party.js"],[27088,"meine.js"],[27444,"loeffel.js"],[27615,"trend.js"],[28157,"fun228a.js"],[29008,"fun228b.js"],[29669,"kueche.js"],[30708,"stimme.js"],[30763,"klassen.js"],[30912,"freunde_vorab.js"],[30933,"mut.js"],[31353,"schule.js"],[31842,"fussball226.js"],[32164,"schaetzen.js"],[32595,"party8.js"],[33214,"tiere.js"],[33673,"fussball232.js"],[33888,"party8b.js"],[34190,"weg.js"],[34407,"px.js"],[34818,"px_data.js"],[35075,"pxwelt.js"],[35156,"px_abenteuer.js"],[35999,"px_ski.js"],[36641,"px_wurf.js"],[37170,"px_insel.js"],[38371,"px_kicker.js"],[39306,"px_eis.js"],[40292,"px_run.js"],[41507,"px_brk.js"],[42469,"px_pol.js"],[43820,"px_frog.js"],[45080,"px_angel.js"],[46395,"px_golf.js"],[47429,"px_tauch.js"],[48694,"px_hockey.js"],[49650,"px_lab.js"],[50985,"px_plopp.js"],[52191,"cm.js"],[52681,"cmwelt.js"],[52737,"cm_baeck.js"],[53530,"cm_bahn.js"],[54294,"cm_detek.js"],[55011,"cm_markt.js"],[55724,"ff.js"],[55880,"ff_mathe.js"],[57870,"ff_deutsch.js"],[59458,"ff_sach_a.js"],[61707,"ff_sach_b.js"],[63936,"ff_sprachen.js"],[66344,"zm.js"],[67257,"tt.js"],[67470,"data_tagebuch.js"],[67513,"data_hoerspiel.js"],[67672,"leseecke.js"],[67991,"kt.js"],[68294,"alce.js"],[68456,"sicher.js"],[68640,"stil.js"],[68694,"freunde.js"],[68831,"start.js"],[68841,null],[68851,null]]}; // [[Zeile der Markierung, 'datei.js'], …] – trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -23093,7 +23106,7 @@ const ACCESSORIES = [
 
 const APP_VERSION = '2.43.0';
 const CHANGELOG = [
-  { v: APP_VERSION, d: '', t: ['Lernwelt für Freunde: alle Welten, Spiele und die Leseecke', 'Datenschutz: Alles bleibt nur auf diesem Gerät. Hinweis beim ersten Start, unten auf der Startseite, im Elternbereich und überall, wo du schreibst, malst oder aufnimmst'] }
+  { v: APP_VERSION, d: '', t: ['Lernwelt für Freunde: alle Welten, Spiele und die Leseecke', 'Datenschutz: Alles bleibt nur auf diesem Gerät. Eigene Seite beim ersten Start, Leiste oben auf der Startseite (Tipp darauf zeigt alles wieder), Karte im Elternbereich und Hinweis überall, wo du schreibst, malst oder aufnimmst'] }
 ];
 const AVATARS = ['🦊', '🐱', '🐼', '🦄', '🐰', '🐯', '🐸', '🐨', '🐧', '🐶', '🦋', '🐬', '🦁', '🐹', '🐻', '🦒'];
 const FEED = {
@@ -68755,7 +68768,7 @@ var LWF_G = '';
 /* ---------- Ausgeblendet: Post, Geburtstag, Herz-Nachrichten ---------- */
 (function () {
   const leer = () => '';
-  try { hzParentsHTML = leer; hzPostCard = leer; hzBanner = leer; hzParentsBind = () => { }; } catch (e) { }
+  try { hzParentsHTML = leer; hzPostCard = leer; hzBanner = () => (typeof lwfBar === 'function' ? lwfBar() : ''); hzParentsBind = () => { }; } catch (e) { }
   ACT.hzherz = t => { Sound.unlock(); const [x, y] = hzCenter(t); hzBurst(x, y); Sound.sparkle(); };
   ['hzpost', 'hzbriefe', 'hzbday', 'muherzpapa'].forEach(k => { ACT[k] = () => { }; });
 })();
@@ -68780,11 +68793,6 @@ function lwfLokalDeko() {
         h1.parentElement.insertAdjacentHTML('beforeend', `<p class="lwf-lokal">${LWF_LOKAL}</p>`);
       }
     }
-    const f = app.querySelector('footer.foot');
-    if (f && !f.querySelector('.lwf-lokal-foot')) {
-      const d = f.querySelector('.dedic'), html = '<span class="lwf-lokal-foot">🔒 Alles, was du hier machst, bleibt nur auf diesem Gerät. Nichts wird verschickt.</span>';
-      d ? d.insertAdjacentHTML('afterend', html) : f.insertAdjacentHTML('afterbegin', html);
-    }
     const ob = app.querySelector('.onb [data-act=onbdone]');
     if (ob && !app.querySelector('.lwf-onb-lokal')) ob.parentElement.insertAdjacentHTML('beforebegin', '<div class="card lwf-onb-lokal">🔒 <b>Alles bleibt auf diesem Gerät.</b> Was du hier spielst, schreibst, malst und aufnimmst, wird nur hier gespeichert und nirgendwohin geschickt.</div>');
   } catch (e) { }
@@ -68792,6 +68800,32 @@ function lwfLokalDeko() {
 (function () {
   const sv = setView;
   setView = function () { const r = sv.apply(this, arguments); lwfLokalDeko(); return r; };
+})();
+
+/* ---------- Erster Start: Datenschutz kurz und groß, bevor es losgeht ----------
+   Nicht nur in der README: Eltern sehen es einmal groß beim ersten Start (mit „Verstanden“),
+   danach immer oben auf der Startseite als Leiste; ein Tipp darauf zeigt alles wieder. */
+const LWF_PUNKTE = [
+  ['📱', 'Alles bleibt auf diesem Gerät', 'Name, Fortschritt, Tagebuch, Bilder, Freundebuch und Aufnahmen werden nur hier gespeichert.'],
+  ['🚫', 'Nichts wird verschickt', 'Kein Konto, keine Werbung, keine Statistik. Niemand bekommt die Daten, auch nicht der, der die App gemacht hat oder bereitstellt.'],
+  ['💾', 'Sicherung nicht vergessen', 'Werden die Websitedaten gelöscht oder wird die App vom Homebildschirm entfernt, ist alles weg. Im Elternbereich gibt es dafür eine Sicherung als Datei.']];
+const lwfPunkteHTML = () => `<div class="lwf-punkte">${LWF_PUNKTE.map(([i, h, x]) => `<div class="lwf-pk"><span class="lwf-pk-i" aria-hidden="true">${i}</span><div><b>${h}</b><p>${x}</p></div></div>`).join('')}</div>`;
+let LWF_OK = false;
+function lwfDsOk() { if (LWF_OK) return true; try { return localStorage.getItem('lwf-ds-ok') === '1'; } catch (e) { return false; } }
+function lwfBar() { return `<button class="lwf-bar" data-act="lwfds"><span class="lwf-bar-i" aria-hidden="true">🔒</span><span class="lwf-bar-t"><b>Alles bleibt nur auf diesem Gerät.</b> Nichts wird verschickt.</span><span class="lwf-bar-m">Mehr</span></button>`; }
+(function () {
+  const so = showOnboarding;
+  showOnboarding = function () {
+    if (lwfDsOk()) return so.apply(this, arguments);
+    setView(`<div class="wrap onb lwf-intro">
+      <div class="intro">${mascot('wow', '', '')}<div class="bubble" style="margin:0"><h1>Bevor es losgeht</h1><p>Kurz für Mama oder Papa: So geht diese Lernwelt mit euren Daten um.</p></div></div>
+      ${lwfPunkteHTML()}
+      <button class="btn lwf-ok" data-act="lwfdsok">Verstanden 👍</button>
+      <p class="muted lwf-wieder">Diesen Hinweis gibt es jederzeit wieder über die Leiste mit dem 🔒 auf der Startseite.</p>
+    </div>`);
+  };
+  ACT.lwfdsok = () => { LWF_OK = true; try { localStorage.setItem('lwf-ds-ok', '1'); } catch (e) { } Sound.tap && Sound.tap(); showOnboarding(); };
+  ACT.lwfds = () => { try { Sound.tap(); } catch (e) { } overlay(`<div class="lwf-ov"><h2>🔒 Deine Daten bleiben bei dir</h2>${lwfPunkteHTML()}<div class="acts"><button class="btn" data-act="closeov">OK</button></div></div>`); };
 })();
 
 /*@@src start.js@@*/

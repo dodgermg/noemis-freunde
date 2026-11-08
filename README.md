@@ -16,7 +16,7 @@ Alles, was das Kind macht (Name, Fortschritt, Tagebuch, Bilder, Freundebuch, Auf
 
 Beim Öffnen lädt der Browser nur die App selbst von GitHub herunter. GitHub sieht dabei wie jeder Webserver technische Verbindungsdaten, aber keine Inhalte aus der App. Wer die App bereitstellt, hat darauf keinen Zugriff.
 
-Die App zeigt das auch selbst an: beim ersten Start, unten auf der Startseite, im Elternbereich und überall, wo das Kind schreibt, malt oder aufnimmt.
+Die App sagt das auch selbst, damit es niemand überliest: beim ersten Start auf einer eigenen Seite, die man mit „Verstanden“ bestätigt, danach immer als Leiste oben auf der Startseite (ein Tipp darauf zeigt alles wieder), im Elternbereich und überall, wo das Kind schreibt, malt oder aufnimmt.
 
 Wichtig: Werden die Websitedaten in Safari gelöscht oder wird die App vom Homebildschirm entfernt, sind auch die Daten weg. Im Elternbereich (unten auf der Startseite „Für Eltern“) gibt es deshalb eine Sicherung als Datei zum Aufheben und Zurückholen. Diese Datei verlässt das Gerät nur, wenn ihr sie selbst irgendwo speichert oder teilt.
 
