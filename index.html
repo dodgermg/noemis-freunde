@@ -4303,6 +4303,22 @@ button.cmmk-dl { box-shadow: 2px 2px 0 var(--cmk); }
   .cmmk-dc { padding: 8px; }
 }
 
+/* ---- style_es248.css ---- */
+
+.es-cuento { width: min(100%, 680px); margin: 0 auto; padding: 14px 18px; border-radius: 18px; background: var(--surface); box-shadow: inset 0 0 0 2px var(--line-deep); text-align: left; }
+.es-cuento-h { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+.es-cuento-h .em { font-size: 32px; }
+.es-cuento-h b { font-family: var(--f-display); font-size: 20px; flex: 1; }
+.es-cuento p { margin: 0; font-size: clamp(17px, 2.2vw, 21px); line-height: 1.55; color: var(--ink); }
+.listen-btn.sm { padding: 6px 12px; font-size: 14px; min-height: 0; }
+.listen-btn.sm span { font-size: 18px; }
+.es-oye { font-size: clamp(30px, 4.6vw, 44px); letter-spacing: 4px; white-space: nowrap; }
+.es-conj th { font-family: var(--f-display); font-size: 22px; padding: 6px 10px; }
+.es-conj th small { font-family: var(--f-body); font-size: 12px; font-weight: 700; color: var(--ink-soft); margin-left: 6px; }
+.es-conj td:first-child { color: var(--ink-soft); font-weight: 700; text-align: right; }
+.es-cuento-h b { min-width: 0; word-break: normal; overflow-wrap: normal; hyphens: none; }
+@media (max-width: 560px) { .es-cuento-h .listen-btn b { display: none; } .es-cuento-h .listen-btn { padding: 6px 10px; } .es-cuento-h b { font-size: 18px; } }
+
 /* ---- style_fb232.css ---- */
 
 .fb-keeper { transition: transform .42s cubic-bezier(.25, 1.25, .5, 1); }
@@ -7900,8 +7916,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '2.47.0';
-  var MAP = {"probe":0,"files":[[7890,"fehler_kern.js"],[8178,null],[8180,"data.js"],[8867,"data_more.js"],[9221,"data_su2.js"],[9442,"data_es.js"],[9781,"data_wissen.js"],[9963,"data_v21.js"],[10587,"data_v24.js"],[11038,"data_v25.js"],[11486,"data_v26.js"],[11585,"data_v29.js"],[11890,"data_v30.js"],[12214,"data_v31.js"],[12514,"data_kunst.js"],[12710,"data_v214.js"],[12813,"data_v216.js"],[13106,"schrift.js"],[13406,"eingabe.js"],[13617,"data_k34m.js"],[14131,"data_k34d.js"],[14464,"data_k34s.js"],[14853,"data_v224.js"],[15721,"data_v225w.js"],[16090,"data_v225k.js"],[16534,"data_herz.js"],[16888,"data_fb226.js"],[17031,"data_tf226.js"],[17238,"data_v227a.js"],[18329,"data_v227b.js"],[19283,"data_h28b.js"],[19323,"data_l28a.js"],[20189,"data_l28b.js"],[21369,"data_schaetz.js"],[21851,"data_party8.js"],[21901,"data_alce.js"],[22561,"data_alce2.js"],[22810,"data_alce3.js"],[23225,"registry.js"],[23738,"app.js"],[24845,"fun.js"],[25425,"fun2.js"],[25741,"atelier.js"],[26115,"kunst225.js"],[26305,"herz.js"],[26669,"reise.js"],[26971,"iglu.js"],[27137,"offline.js"],[27244,"party.js"],[27728,"meine.js"],[28084,"loeffel.js"],[28255,"trend.js"],[28797,"fun228a.js"],[29648,"fun228b.js"],[30309,"kueche.js"],[31348,"stimme.js"],[31403,"klassen.js"],[31552,"freunde_vorab.js"],[31573,"mut.js"],[31993,"schule.js"],[32482,"fussball226.js"],[32804,"schaetzen.js"],[33235,"party8.js"],[33854,"tiere.js"],[34313,"fussball232.js"],[34528,"party8b.js"],[34830,"weg.js"],[35047,"px.js"],[35458,"px_data.js"],[35715,"pxwelt.js"],[35796,"px_abenteuer.js"],[36639,"px_ski.js"],[37281,"px_wurf.js"],[37810,"px_insel.js"],[39011,"px_kicker.js"],[39946,"px_eis.js"],[40932,"px_run.js"],[42147,"px_brk.js"],[43109,"px_pol.js"],[44460,"px_frog.js"],[45720,"px_angel.js"],[47035,"px_golf.js"],[48069,"px_tauch.js"],[49334,"px_hockey.js"],[50290,"px_lab.js"],[51625,"px_plopp.js"],[52831,"cm.js"],[53321,"cmwelt.js"],[53377,"cm_baeck.js"],[54170,"cm_bahn.js"],[54934,"cm_detek.js"],[55651,"cm_markt.js"],[56364,"ff.js"],[56520,"ff_mathe.js"],[58510,"ff_deutsch.js"],[60098,"ff_sach_a.js"],[62347,"ff_sach_b.js"],[64576,"ff_sprachen.js"],[66984,"zm.js"],[67897,"tt.js"],[68110,"data_tagebuch.js"],[68153,"data_hoerspiel.js"],[68312,"leseecke.js"],[68631,"kt.js"],[68934,"alce.js"],[69097,"alce_aufg.js"],[69267,"formen.js"],[69716,"data_formen.js"],[69957,"data_formen2.js"],[70179,"spielzeit.js"],[70324,"data_faktmeinung.js"],[70443,"sicher.js"],[70627,"stil.js"],[70681,"freunde.js"],[70818,"start.js"],[70828,null],[70838,null]]}; // [[Zeile der Markierung, 'datei.js'], …] – trägt build.py ein
+  var VER = '2.48.0';
+  var MAP = {"probe":0,"files":[[7906,"fehler_kern.js"],[8194,null],[8196,"data.js"],[8883,"data_more.js"],[9237,"data_su2.js"],[9458,"data_es.js"],[9797,"data_wissen.js"],[9979,"data_v21.js"],[10603,"data_v24.js"],[11054,"data_v25.js"],[11502,"data_v26.js"],[11601,"data_v29.js"],[11906,"data_v30.js"],[12230,"data_v31.js"],[12530,"data_kunst.js"],[12726,"data_v214.js"],[12829,"data_v216.js"],[13122,"schrift.js"],[13422,"eingabe.js"],[13633,"data_k34m.js"],[14147,"data_k34d.js"],[14480,"data_k34s.js"],[14869,"data_v224.js"],[15737,"data_v225w.js"],[16106,"data_v225k.js"],[16550,"data_herz.js"],[16904,"data_fb226.js"],[17047,"data_tf226.js"],[17254,"data_v227a.js"],[18345,"data_v227b.js"],[19299,"data_h28b.js"],[19339,"data_l28a.js"],[20205,"data_l28b.js"],[21385,"data_schaetz.js"],[21867,"data_party8.js"],[21917,"data_alce.js"],[22577,"data_alce2.js"],[22826,"data_alce3.js"],[23241,"registry.js"],[23754,"app.js"],[24862,"fun.js"],[25442,"fun2.js"],[25758,"atelier.js"],[26132,"kunst225.js"],[26322,"herz.js"],[26686,"reise.js"],[26988,"iglu.js"],[27154,"offline.js"],[27261,"party.js"],[27745,"meine.js"],[28101,"loeffel.js"],[28272,"trend.js"],[28814,"fun228a.js"],[29665,"fun228b.js"],[30326,"kueche.js"],[31365,"stimme.js"],[31420,"klassen.js"],[31569,"freunde_vorab.js"],[31590,"mut.js"],[32010,"schule.js"],[32499,"fussball226.js"],[32821,"schaetzen.js"],[33252,"party8.js"],[33871,"tiere.js"],[34330,"fussball232.js"],[34545,"party8b.js"],[34847,"weg.js"],[35064,"px.js"],[35475,"px_data.js"],[35732,"pxwelt.js"],[35813,"px_abenteuer.js"],[36656,"px_ski.js"],[37298,"px_wurf.js"],[37827,"px_insel.js"],[39028,"px_kicker.js"],[39963,"px_eis.js"],[40949,"px_run.js"],[42164,"px_brk.js"],[43126,"px_pol.js"],[44477,"px_frog.js"],[45737,"px_angel.js"],[47052,"px_golf.js"],[48086,"px_tauch.js"],[49351,"px_hockey.js"],[50307,"px_lab.js"],[51642,"px_plopp.js"],[52848,"cm.js"],[53338,"cmwelt.js"],[53394,"cm_baeck.js"],[54187,"cm_bahn.js"],[54951,"cm_detek.js"],[55668,"cm_markt.js"],[56381,"ff.js"],[56537,"ff_mathe.js"],[58527,"ff_deutsch.js"],[60115,"ff_sach_a.js"],[62364,"ff_sach_b.js"],[64593,"ff_sprachen.js"],[67001,"zm.js"],[67914,"tt.js"],[68127,"data_tagebuch.js"],[68170,"data_hoerspiel.js"],[68329,"leseecke.js"],[68648,"kt.js"],[68951,"alce.js"],[69114,"alce_aufg.js"],[69284,"formen.js"],[69733,"data_formen.js"],[69974,"data_formen2.js"],[70196,"spielzeit.js"],[70341,"data_faktmeinung.js"],[70460,"data_es248.js"],[70724,"sicher.js"],[70908,"stil.js"],[70962,"freunde.js"],[71099,"start.js"],[71109,null],[71119,null]]}; // [[Zeile der Markierung, 'datei.js'], …] – trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -23739,8 +23755,9 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '2.47.0';
+const APP_VERSION = '2.48.0';
 const CHANGELOG = [
+  { v: "2.48.0", d: "09.11.2026", t: ["Spanisch: rund 200 neue Wörter und sechs neue Themen (Freizeit, Stadt, Natur, Verkehr, Berufe, Tätigkeiten)", "Spanisch: Cuentos cortos zum Lesen und Hören, Dictado, ¿Qué oyes?, Tabla de verbos und Detective de ortografía"] },
   { v: "2.47.0", d: "09.11.2026", t: ["Erst lernen, dann spielen: Pixel-Welt und Comic-Stadt kosten jetzt Münzen, 10 Minuten Spielzeit für 5 Münzen", "Die Uhr läuft nur im Spiel, Aufgaben zählen nicht mit. Höchstens 30 Minuten am Tag, im Elternbereich einstellbar", "Neu unter Herz & Mut: „Fakt oder Meinung?“, damit Kinder wissen: Ein gemeiner Satz ist eine Meinung, nicht die Wahrheit über sie"] },
   { v: "2.46.0", d: "08.11.2026", t: ["Neue Aufgabenformen in allen Fächern: Lückentext mit Wortbank, Zuordnen mit Linien, Sortieren in Spalten, Markieren, Memory, Ankreuztabelle, Uhr stellen, Geld legen, Kreuzworträtsel", "Neu je Fach: Silbenrätsel und Rechtschreibdetektiv (Deutsch), Uhr stellen, Geld legen, Zahlenstrahl (Mathe), Magnet, Schwimmen, Strom, Jahreszeiten, Tiersteckbrief (Sache), Kreuzworträtsel und Uhr auf Englisch und Spanisch", "Die Formen kommen von allein in den Runden vor, wo es passt (z. B. der/die/das sortieren, Rechenmemory, Tiere sortieren, Vokabelmemory)"] },
   { v: "2.45.0", d: "08.11.2026", t: ["Spanisch U2 S1 wie im Heft: Satzanfang und Satzende verbinden, Fragewörter mit Akzent, welches Fragewort passt, ein Lied mit Fragewörtern", "Männlich oder weiblich, Einzahl oder Mehrzahl, Mehrzahl bilden, Bild und passender Satz, Schulfächer und Orte im Colegio", "Neu im Kursweg: „Ya sé…“ für jede Unidad mit Rätsel am Ende"] },
@@ -70439,6 +70456,270 @@ function genFaktMeinung(ctx) {
   if (r < .55) return fmSatz(ctx.draw(FM_WELT)); if (r < .85) return fmSatz(ctx.draw(FM_MENSCH)); return fmSatz(ctx.draw(FM_GEMEIN), true);
 }
 if (typeof GAMES !== 'undefined') GAMES.faktmeinung = { id: 'faktmeinung', g: 'n-herz', w: 'meine', t: 'Fakt oder Meinung?', d: 'Was stimmt wirklich, was findet nur jemand? Stark gegen gemeine Sätze', i: '🔍', gen: genFaktMeinung, nomix: 1, noFx: 1, max: 2, start: [1, 1, 2, 2] };
+
+/*@@src data_es248.js@@*/
+
+
+
+
+
+
+
+
+
+
+
+
+const ES248_TEMAS = {
+  deporte: [['el', 'fútbol', '⚽', 'der Fußball', 1], ['el', 'baloncesto', '🏀', 'der Basketball', 2], ['el', 'tenis', '🎾', 'das Tennis', 1], ['la', 'natación', '🏊', 'das Schwimmen', 2],
+    ['el', 'esquí', '⛷️', 'das Skifahren', 2], ['la', 'portería', '🥅', 'das Tor', 2], ['el', 'patinete', '🛴', 'der Roller', 2], ['el', 'monopatín', '🛹', 'das Skateboard', 3],
+    ['la', 'guitarra', '🎸', 'die Gitarre', 1], ['el', 'piano', '🎹', 'das Klavier', 1], ['el', 'tambor', '🥁', 'die Trommel', 2], ['la', 'trompeta', '🎺', 'die Trompete', 2],
+    ['el', 'violín', '🎻', 'die Geige', 2], ['el', 'dado', '🎲', 'der Würfel', 2], ['el', 'puzle', '🧩', 'das Puzzle', 1], ['la', 'medalla', '🏅', 'die Medaille', 2],
+    ['la', 'copa', '🏆', 'der Pokal', 2], ['el', 'ajedrez', '♟️', 'das Schach', 3], ['la', 'película', '🎬', 'der Film', 2], ['el', 'videojuego', '🎮', 'das Videospiel', 2],
+    ['el', 'globo', '🎈', 'der Luftballon', 1], ['el', 'regalo', '🎁', 'das Geschenk', 1], ['la', 'cámara', '📷', 'die Kamera', 2], ['el', 'yoyó', '🪀', 'das Jojo', 2],
+    ['el', 'patín', '⛸️', 'der Schlittschuh', 3], ['el', 'surf', '🏄', 'das Surfen', 2], ['el', 'kárate', '🥋', 'das Karate', 2], ['la', 'tienda de campaña', '⛺', 'das Zelt', 3]],
+  ciudad: [['el', 'hospital', '🏥', 'das Krankenhaus', 1], ['el', 'colegio', '🏫', 'die Schule', 1], ['la', 'tienda', '🏪', 'der Laden', 1], ['el', 'supermercado', '🛒', 'der Supermarkt', 2],
+    ['el', 'banco', '🏦', 'die Bank', 2], ['la', 'iglesia', '⛪', 'die Kirche', 2], ['el', 'castillo', '🏰', 'die Burg', 1], ['el', 'parque', '🏞️', 'der Park', 1],
+    ['el', 'semáforo', '🚦', 'die Ampel', 2], ['el', 'puente', '🌉', 'die Brücke', 2], ['la', 'fuente', '⛲', 'der Brunnen', 3], ['la', 'farmacia', '💊', 'die Apotheke', 2],
+    ['la', 'panadería', '🥖', 'die Bäckerei', 2], ['el', 'restaurante', '🍽️', 'das Restaurant', 1], ['el', 'cine', '🎦', 'das Kino', 1], ['el', 'museo', '🏛️', 'das Museum', 2],
+    ['el', 'hotel', '🏨', 'das Hotel', 1], ['la', 'estación', '🚉', 'der Bahnhof', 2], ['el', 'aeropuerto', '🛫', 'der Flughafen', 2], ['el', 'puerto', '⚓', 'der Hafen', 2],
+    ['la', 'comisaría', '🚓', 'die Polizeiwache', 3], ['los', 'bomberos', '🚒', 'die Feuerwehr', 2], ['la', 'biblioteca', '📚', 'die Bücherei', 2], ['el', 'buzón', '📮', 'der Briefkasten', 3]],
+  naturaleza: [['el', 'mar', '🌊', 'das Meer', 1], ['la', 'playa', '🏖️', 'der Strand', 1], ['la', 'montaña', '⛰️', 'der Berg', 1], ['el', 'volcán', '🌋', 'der Vulkan', 1],
+    ['el', 'bosque', '🌲', 'der Wald', 2], ['la', 'isla', '🏝️', 'die Insel', 1], ['el', 'desierto', '🏜️', 'die Wüste', 2], ['la', 'hoja', '🍃', 'das Blatt', 2],
+    ['la', 'piedra', '🪨', 'der Stein', 2], ['la', 'concha', '🐚', 'die Muschel', 2], ['el', 'fuego', '🔥', 'das Feuer', 1], ['la', 'hierba', '🌿', 'das Gras', 3],
+    ['el', 'cactus', '🌵', 'der Kaktus', 1], ['la', 'seta', '🍄', 'der Pilz', 2], ['el', 'girasol', '🌻', 'die Sonnenblume', 2], ['la', 'rosa', '🌹', 'die Rose', 1],
+    ['el', 'tulipán', '🌷', 'die Tulpe', 2], ['la', 'palmera', '🌴', 'die Palme', 1], ['el', 'planeta', '🪐', 'der Planet', 2], ['la', 'Tierra', '🌍', 'die Erde', 2],
+    ['el', 'agua', '💧', 'das Wasser', 1]],
+  transporte: [['el', 'camión', '🚚', 'der Lastwagen', 2], ['la', 'moto', '🏍️', 'das Motorrad', 1], ['el', 'taxi', '🚕', 'das Taxi', 1], ['el', 'helicóptero', '🚁', 'der Hubschrauber', 2],
+    ['el', 'cohete', '🚀', 'die Rakete', 2], ['el', 'tractor', '🚜', 'der Traktor', 1], ['la', 'ambulancia', '🚑', 'der Krankenwagen', 2], ['el', 'tranvía', '🚋', 'die Straßenbahn', 3],
+    ['la', 'furgoneta', '🚐', 'der Kleinbus', 3], ['el', 'ferri', '⛴️', 'die Fähre', 2], ['la', 'canoa', '🛶', 'das Kanu', 2], ['el', 'paracaídas', '🪂', 'der Fallschirm', 3],
+    ['el', 'coche', '🚗', 'das Auto', 1], ['el', 'tren', '🚂', 'der Zug', 1], ['el', 'avión', '✈️', 'das Flugzeug', 1], ['el', 'autobús', '🚌', 'der Bus', 1], ['la', 'bicicleta', '🚲', 'das Fahrrad', 1], ['el', 'barco', '⛵', 'das Boot', 1]],
+  profesiones: [['la', 'médica', '👩‍⚕️', 'die Ärztin', 1], ['la', 'maestra', '👩‍🏫', 'die Lehrerin', 1], ['el', 'cocinero', '👨‍🍳', 'der Koch', 1], ['la', 'bombera', '👩‍🚒', 'die Feuerwehrfrau', 2],
+    ['el', 'policía', '👮', 'der Polizist', 1], ['la', 'granjera', '👩‍🌾', 'die Bäuerin', 2], ['el', 'astronauta', '👨‍🚀', 'der Astronaut', 2], ['la', 'piloto', '👩‍✈️', 'die Pilotin', 2],
+    ['el', 'pintor', '👨‍🎨', 'der Maler', 2], ['la', 'cantante', '👩‍🎤', 'die Sängerin', 2], ['el', 'mecánico', '👨‍🔧', 'der Mechaniker', 3], ['la', 'científica', '👩‍🔬', 'die Forscherin', 3],
+    ['el', 'peluquero', '💇‍♂️', 'der Friseur', 3], ['el', 'albañil', '👷', 'der Bauarbeiter', 3], ['la', 'programadora', '👩‍💻', 'die Programmiererin', 3], ['el', 'detective', '🕵️', 'der Detektiv', 2]],
+  acciones: [['', 'correr', '🏃', 'laufen', 1], ['', 'nadar', '🏊', 'schwimmen', 1], ['', 'dormir', '🛌', 'schlafen', 1], ['', 'comer', '🍴', 'essen', 1],
+    ['', 'beber', '🥤', 'trinken', 1], ['', 'leer', '📖', 'lesen', 1], ['', 'escribir', '✍️', 'schreiben', 1], ['', 'cantar', '🎤', 'singen', 1],
+    ['', 'bailar', '💃', 'tanzen', 1], ['', 'pintar', '🎨', 'malen', 1], ['', 'cocinar', '🍳', 'kochen', 2], ['', 'llorar', '😭', 'weinen', 2],
+    ['', 'reír', '😂', 'lachen', 2], ['', 'escalar', '🧗', 'klettern', 3], ['', 'pescar', '🎣', 'angeln', 2], ['', 'hablar', '🗣️', 'sprechen', 1],
+    ['', 'pensar', '🤔', 'denken', 2], ['', 'abrazar', '🤗', 'umarmen', 2], ['', 'saludar', '👋', 'grüßen', 2], ['', 'llamar', '📞', 'anrufen', 2],
+    ['', 'volar', '🕊️', 'fliegen', 2], ['', 'conducir', '🚙', 'fahren', 3], ['', 'estudiar', '📝', 'lernen', 2], ['', 'ducharse', '🚿', 'duschen', 3]]
+};
+
+const ES248_MAS = {
+  animales: [['zorro', '🦊', 'Fuchs', 2], ['lobo', '🐺', 'Wolf', 2], ['ardilla', '🐿️', 'Eichhörnchen', 3], ['erizo', '🦔', 'Igel', 3], ['cebra', '🦓', 'Zebra', 2], ['camello', '🐫', 'Kamel', 2],
+    ['canguro', '🦘', 'Känguru', 2], ['cocodrilo', '🐊', 'Krokodil', 2], ['tiburón', '🦈', 'Hai', 2], ['loro', '🦜', 'Papagei', 2], ['flamenco', '🦩', 'Flamingo', 3], ['murciélago', '🦇', 'Fledermaus', 3],
+    ['hormiga', '🐜', 'Ameise', 2], ['mariquita', '🐞', 'Marienkäfer', 3], ['gusano', '🐛', 'Raupe', 3], ['pollito', '🐥', 'Küken', 2], ['cabra', '🐐', 'Ziege', 2], ['gallo', '🐓', 'Hahn', 2],
+    ['pavo', '🦃', 'Truthahn', 3], ['cisne', '🦢', 'Schwan', 3], ['águila', '🦅', 'Adler', 3], ['lagarto', '🦎', 'Eidechse', 3], ['dinosaurio', '🦕', 'Dinosaurier', 1], ['unicornio', '🦄', 'Einhorn', 1],
+    ['panda', '🐼', 'Panda', 1], ['koala', '🐨', 'Koala', 1], ['hámster', '🐹', 'Hamster', 2]],
+  comida: [['arroz', '🍚', 'Reis', 2], ['sopa', '🍲', 'Suppe', 1], ['ensalada', '🥗', 'Salat', 2], ['pollo', '🍗', 'Hähnchen', 2], ['bocadillo', '🥪', 'belegtes Brötchen', 2], ['hamburguesa', '🍔', 'Hamburger', 1],
+    ['palomitas', '🍿', 'Popcorn', 2], ['caramelo', '🍬', 'Bonbon', 2], ['miel', '🍯', 'Honig', 2], ['zumo', '🧃', 'Saft', 1], ['café', '☕', 'Kaffee', 1], ['aguacate', '🥑', 'Avocado', 3],
+    ['maíz', '🌽', 'Mais', 2], ['pepino', '🥒', 'Gurke', 2], ['coco', '🥥', 'Kokosnuss', 2], ['melocotón', '🍑', 'Pfirsich', 3], ['kiwi', '🥝', 'Kiwi', 1], ['mango', '🥭', 'Mango', 2],
+    ['brócoli', '🥦', 'Brokkoli', 2], ['paella', '🥘', 'Paella', 2], ['cebolla', '🧅', 'Zwiebel', 3], ['ajo', '🧄', 'Knoblauch', 3], ['patatas fritas', '🍟', 'Pommes', 1]],
+  cosas: [['cama', '🛏️', 'Bett', 1], ['silla', '🪑', 'Stuhl', 1], ['sofá', '🛋️', 'Sofa', 1], ['puerta', '🚪', 'Tür', 1], ['ventana', '🪟', 'Fenster', 2], ['bombilla', '💡', 'Glühbirne', 3],
+    ['televisión', '📺', 'Fernseher', 2], ['ordenador', '💻', 'Computer', 2], ['móvil', '📱', 'Handy', 1], ['vela', '🕯️', 'Kerze', 2], ['espejo', '🪞', 'Spiegel', 2], ['bañera', '🛁', 'Badewanne', 3],
+    ['escoba', '🧹', 'Besen', 3], ['jabón', '🧼', 'Seife', 2], ['caja', '📦', 'Kiste', 2], ['carta', '✉️', 'Brief', 2], ['campana', '🔔', 'Glocke', 2], ['martillo', '🔨', 'Hammer', 3], ['bolsa', '🛍️', 'Tüte', 3]],
+  cuerpo: [['corazón', '❤️', 'Herz', 1], ['cerebro', '🧠', 'Gehirn', 3], ['hueso', '🦴', 'Knochen', 2], ['brazo', '💪', 'Arm', 2], ['dedo', '👆', 'Finger', 2], ['lengua', '👅', 'Zunge', 2]],
+  cole: [['cuaderno', '📓', 'Heft', 2], ['mapa', '🗺️', 'Landkarte', 2], ['bolígrafo', '🖊️', 'Kugelschreiber', 3], ['pincel', '🖌️', 'Pinsel', 2], ['papel', '📄', 'Papier', 2], ['ábaco', '🧮', 'Rechenschieber', 3]],
+  tiempo: [['rayo', '⚡', 'Blitz', 2], ['niebla', '🌫️', 'Nebel', 3], ['tornado', '🌪️', 'Wirbelsturm', 3]],
+  emociones: [['enamorado', '😍', 'verliebt', 3], ['nervioso', '😬', 'nervös', 3], ['aburrido', '🥱', 'gelangweilt', 2], ['enfermo', '🤒', 'krank', 2], ['tranquilo', '😌', 'ruhig', 3]]
+};
+(function () {
+  const em = new Set(VOCAB_ES.map(v => v[1])), wd = new Set(VOCAB_ES.map(v => v[0]));
+  const push = (w, e, de, cat, lv) => { if (em.has(e) || wd.has(w) || w.includes(' ')) return; em.add(e); wd.add(w); VOCAB_ES.push([w, e, de, cat, lv]); };
+  Object.entries(ES248_TEMAS).forEach(([cat, L]) => L.forEach(([a, w, e, de, lv]) => push(w, e, de.replace(/^(der|die|das) /, ''), cat, lv)));
+  Object.entries(ES248_MAS).forEach(([cat, L]) => L.forEach(([w, e, de, lv]) => push(w, e, de, cat, lv)));
+})();
+const es248Bank = cat => memo('es248b' + cat, () => ES248_TEMAS[cat].map(([a, w, e, de]) => [(a ? a + ' ' : '') + w, e, de]));
+function genTemaES(cat, kp) { return ctx => genVokabelBild(es248Bank(cat), ES, ctx, kp, TXT_ES); }
+
+
+
+const CUENTOS_ES = [
+  { t: 'Pipo en la playa', e: '🐧', lv: 1, txt: 'Pipo es un pingüino pequeño. Vive en Tenerife con su abuela. Hoy hace sol y Pipo va a la playa. Nada en el mar y come un helado de fresa. Por la tarde está cansado y duerme en la arena.',
+    q: [['¿Dónde vive Pipo?', 'en Tenerife', ['en Alemania', 'en Madrid']], ['¿Qué come Pipo en la playa?', 'un helado de fresa', ['una pizza', 'un bocadillo']], ['¿Qué hace Pipo por la tarde?', 'Duerme en la arena.', ['Juega al fútbol.', 'Va al colegio.']]],
+    vf: [['Pipo vive con su abuela.', 1], ['Hoy llueve mucho.', 0], ['Pipo nada en el mar.', 1], ['Pipo es un pingüino grande.', 0]], cz: ['Hoy hace ⟪sol⟫ y Pipo va a la ⟪playa⟫. Nada en el ⟪mar⟫.', ['nieve', 'montaña']] },
+  { t: 'El partido de fútbol', e: '⚽', lv: 1, txt: 'Hoy es sábado. Carla juega al fútbol con su equipo. Carla es la portera. El otro equipo es muy rápido, pero Carla para muchos balones. Al final, su equipo gana dos a uno. ¡Qué alegría!',
+    q: [['¿Qué día es hoy?', 'el sábado', ['el lunes', 'el domingo']], ['¿Qué hace Carla en el equipo?', 'Es la portera.', ['Es la entrenadora.', 'Mira el partido.']], ['¿Cómo termina el partido?', 'dos a uno', ['uno a uno', 'cero a tres']]],
+    vf: [['Carla juega al baloncesto.', 0], ['El otro equipo es rápido.', 1], ['El equipo de Carla gana.', 1], ['Carla está triste al final.', 0]], cz: ['Carla ⟪juega⟫ al fútbol con su ⟪equipo⟫. Al final, su equipo ⟪gana⟫.', ['pierde', 'come']] },
+  { t: 'El cumpleaños de Mateo', e: '🎂', lv: 1, txt: 'Mañana es el cumpleaños de Mateo. Cumple ocho años. Su mamá hace una tarta de chocolate. Mateo invita a cinco amigos. Juegan en el jardín y abren los regalos. Mateo recibe un libro y una pelota.',
+    q: [['¿Cuántos años cumple Mateo?', 'ocho', ['siete', 'nueve']], ['¿Qué tarta hace su mamá?', 'una tarta de chocolate', ['una tarta de fresa', 'una tarta de queso']], ['¿Qué recibe Mateo?', 'un libro y una pelota', ['una bici y un coche', 'un perro y un gato']]],
+    vf: [['Mateo invita a cinco amigos.', 1], ['Juegan en el colegio.', 0], ['Su papá hace la tarta.', 0], ['Mateo abre regalos.', 1]], cz: ['Su mamá hace una ⟪tarta⟫ de chocolate. Juegan en el ⟪jardín⟫ y abren los ⟪regalos⟫.', ['zapatos', 'mar']] },
+  { t: 'Con la abuela en el mercado', e: '🍓', lv: 1, txt: 'Los sábados, Lucía va al mercado con su abuela. Compran fruta y verdura. La abuela compra tomates, cebollas y un melón. Lucía elige fresas porque son su fruta favorita. Después toman un zumo de naranja en un café.',
+    q: [['¿Con quién va Lucía al mercado?', 'con su abuela', ['con su hermano', 'con su profe']], ['¿Por qué elige Lucía fresas?', 'Son su fruta favorita.', ['Son muy baratas.', 'Son muy grandes.']], ['¿Qué toman después?', 'un zumo de naranja', ['un helado', 'un vaso de leche']]],
+    vf: [['Van al mercado los lunes.', 0], ['La abuela compra un melón.', 1], ['Compran fruta y verdura.', 1], ['Toman un café con leche.', 0]], cz: ['La abuela compra ⟪tomates⟫, cebollas y un ⟪melón⟫. Después toman un ⟪zumo⟫ de naranja.', ['pan', 'gato']] },
+  { t: 'Un día en el colegio', e: '🏫', lv: 1, txt: 'Marta se levanta a las siete. Desayuna leche con galletas. Va al colegio a pie con su hermano. En el recreo juega con sus amigas. Su asignatura favorita es Matemáticas. Por la tarde hace los deberes.',
+    q: [['¿A qué hora se levanta Marta?', 'a las siete', ['a las nueve', 'a las cinco']], ['¿Cómo va al colegio?', 'a pie', ['en coche', 'en tren']], ['¿Qué hace por la tarde?', 'los deberes', ['la cena', 'una fiesta']]],
+    vf: [['Marta desayuna leche con galletas.', 1], ['Su asignatura favorita es Música.', 0], ['En el recreo juega con sus amigas.', 1], ['Va al colegio con su abuela.', 0]], cz: ['Marta ⟪desayuna⟫ leche con galletas. Va al ⟪colegio⟫ a pie. Por la tarde hace los ⟪deberes⟫.', ['bebe', 'parque']] },
+  { t: 'El perro perdido', e: '🐶', lv: 2, txt: 'Hugo tiene un perro que se llama Toby. Un día, Toby se escapa en el parque. Hugo está muy triste y busca a Toby por todas partes. Pregunta al panadero y a la señora del quiosco. Por fin, encuentra a Toby debajo de un banco. Toby está sucio, pero contento.',
+    q: [['¿Cómo se llama el perro?', 'Toby', ['Misi', 'Pipo']], ['¿Cómo está Hugo cuando el perro se escapa?', 'muy triste', ['muy contento', 'muy cansado']], ['¿Dónde encuentra a Toby?', 'debajo de un banco', ['en el colegio', 'encima de un coche']]],
+    vf: [['Toby se escapa en el parque.', 1], ['Hugo pregunta al panadero.', 1], ['Toby está limpio al final.', 0], ['Hugo no busca a Toby.', 0]], cz: ['Hugo está muy ⟪triste⟫ y ⟪busca⟫ a Toby. Por fin, lo encuentra ⟪debajo⟫ de un banco.', ['encima', 'come']] },
+  { t: 'Excursión al Teide', e: '🌋', lv: 2, txt: 'La clase de Sara hace una excursión al Teide. El Teide es un volcán muy alto de Tenerife. Suben en teleférico. Arriba hace frío y mucho viento, así que se ponen la chaqueta. Desde allí ven el mar y otras islas. Sara hace muchas fotos.',
+    q: [['¿Qué es el Teide?', 'un volcán', ['un río', 'un barco']], ['¿Cómo suben?', 'en teleférico', ['en bici', 'a caballo']], ['¿Qué tiempo hace arriba?', 'Hace frío y viento.', ['Hace mucho calor.', 'Llueve mucho.']], ['¿Qué ven desde arriba?', 'el mar y otras islas', ['la ciudad de Madrid', 'un bosque con nieve']]],
+    vf: [['El Teide está en Tenerife.', 1], ['Arriba hace calor.', 0], ['Sara hace muchas fotos.', 1], ['Suben en autobús.', 0]], cz: ['Arriba hace ⟪frío⟫ y mucho ⟪viento⟫, así que se ponen la ⟪chaqueta⟫.', ['calor', 'bañador']] },
+  { t: 'La clase de música', e: '🎸', lv: 2, txt: 'Los martes, Noa tiene clase de música. La profesora toca la guitarra y los niños cantan. Noa quiere aprender a tocar el piano. Su amigo Leo prefiere el tambor porque hace mucho ruido. Al final de la clase, todos bailan juntos.',
+    q: [['¿Qué día tiene Noa clase de música?', 'los martes', ['los viernes', 'los domingos']], ['¿Qué instrumento quiere aprender Noa?', 'el piano', ['el violín', 'la trompeta']], ['¿Por qué le gusta el tambor a Leo?', 'porque hace mucho ruido', ['porque es pequeño', 'porque es azul']]],
+    vf: [['La profesora toca la guitarra.', 1], ['Los niños no cantan.', 0], ['Al final todos bailan.', 1], ['Leo prefiere el piano.', 0]], cz: ['La profesora toca la ⟪guitarra⟫ y los niños ⟪cantan⟫. Al final, todos ⟪bailan⟫ juntos.', ['comen', 'piano']] },
+  { t: 'Nieve en Alemania', e: '⛄', lv: 2, txt: 'Es enero y nieva en Alemania. Pablo y su hermana salen a la calle con gorro, bufanda y guantes. Hacen un muñeco de nieve con una zanahoria como nariz. Después tiran bolas de nieve. Cuando tienen frío, vuelven a casa y beben chocolate caliente.',
+    q: [['¿En qué mes nieva?', 'en enero', ['en julio', 'en mayo']], ['¿Qué usan como nariz del muñeco?', 'una zanahoria', ['un plátano', 'una piedra']], ['¿Qué beben en casa?', 'chocolate caliente', ['zumo frío', 'agua con limón']]],
+    vf: [['Pablo sale con su hermana.', 1], ['Llevan bañador.', 0], ['Tiran bolas de nieve.', 1], ['Beben chocolate frío.', 0]], cz: ['Hacen un muñeco de ⟪nieve⟫ con una ⟪zanahoria⟫ como nariz. Después beben ⟪chocolate⟫ caliente.', ['arena', 'sopa']] },
+  { t: 'El Carnaval de Santa Cruz', e: '🎭', lv: 2, txt: 'En febrero hay Carnaval en Santa Cruz de Tenerife. Las calles están llenas de música y color. Elena se disfraza de mariposa y su primo de pirata. Ven un desfile muy largo con carrozas. Por la noche bailan con toda la familia.',
+    q: [['¿Cuándo es el Carnaval?', 'en febrero', ['en agosto', 'en diciembre']], ['¿De qué se disfraza Elena?', 'de mariposa', ['de pirata', 'de princesa']], ['¿Qué hacen por la noche?', 'Bailan con la familia.', ['Duermen en el coche.', 'Van al colegio.']]],
+    vf: [['Las calles están llenas de música.', 1], ['El primo se disfraza de mariposa.', 0], ['Ven un desfile largo.', 1], ['El Carnaval es en Madrid.', 0]], cz: ['Elena se ⟪disfraza⟫ de mariposa. Ven un ⟪desfile⟫ muy largo. Por la ⟪noche⟫ bailan.', ['mañana', 'come']] },
+  { t: 'El huerto de la escuela', e: '🥕', lv: 2, txt: 'En la escuela de Iván hay un huerto. Los niños plantan semillas de tomate y lechuga. Cada día riegan las plantas con agua. Después de un mes, las plantas están grandes y verdes. En junio recogen los tomates y hacen una ensalada para toda la clase.',
+    q: [['¿Qué plantan los niños?', 'semillas de tomate y lechuga', ['flores y árboles', 'patatas y fresas']], ['¿Qué hacen cada día?', 'Riegan las plantas.', ['Comen tomates.', 'Pintan el huerto.']], ['¿Qué hacen en junio?', 'una ensalada', ['una tarta', 'una sopa']]],
+    vf: [['Hay un huerto en la escuela.', 1], ['Riegan las plantas con leche.', 0], ['Las plantas están verdes.', 1], ['Recogen los tomates en enero.', 0]], cz: ['Cada día ⟪riegan⟫ las plantas con ⟪agua⟫. En junio hacen una ⟪ensalada⟫.', ['leche', 'tarta']] },
+  { t: 'En la biblioteca', e: '📚', lv: 2, txt: 'Los jueves, Alba va a la biblioteca después del colegio. Allí hay muchos libros de animales, de piratas y de dragones. Alba lee un libro sobre pingüinos. Aprende que los pingüinos no vuelan, pero nadan muy rápido. Puede llevar el libro a casa dos semanas.',
+    q: [['¿Cuándo va Alba a la biblioteca?', 'los jueves', ['los lunes', 'los sábados']], ['¿Sobre qué lee Alba?', 'sobre pingüinos', ['sobre dragones', 'sobre caballos']], ['¿Cuánto tiempo puede llevar el libro?', 'dos semanas', ['un día', 'un año']]],
+    vf: [['Los pingüinos vuelan muy alto.', 0], ['Los pingüinos nadan rápido.', 1], ['En la biblioteca hay libros de piratas.', 1], ['Alba va antes del colegio.', 0]], cz: ['Alba ⟪lee⟫ un libro sobre ⟪pingüinos⟫. Aprende que no vuelan, pero ⟪nadan⟫ muy rápido.', ['corren', 'dragones']] }
+];
+function cuentoHTML(c) {
+  return `<div class="es-cuento"><div class="es-cuento-h"><span class="em" aria-hidden="true">${c.e}</span><b>${esc(c.t)}</b><button class="listen-btn sm" data-act="listen" aria-label="Escuchar"><span>🔊</span><b>Escuchar</b></button></div><p lang="es">${esc(c.txt)}</p></div>`;
+}
+function genCuentosES(ctx) {
+  const pool = memo('cues' + ctx.lv, () => CUENTOS_ES.filter(c => c.lv <= ctx.lv)), c = ctx.draw(pool), r = Math.random(), base = { listen: { text: c.txt, lang: ES }, sayLang: ES };
+  if (r < .25) {
+    const rows = R.sample(c.vf, 4).map(([s, w]) => ({ h: esc(s), c: w ? 0 : 1 }));
+    return Object.assign(mkRaster({ prompt: 'Lee el cuento. ¿Verdadero o falso?', visual: cuentoHTML(c), cols: ['✅ <b>verdadero</b>', '❌ <b>falso</b>'], colLabels: ['verdadero', 'falso'], rows, lang: ES,
+      explain: c.vf.filter(x => x[1]).map(x => x[0]).join(' '), key: 'cuvf' + c.t + rows.map(x => x.h).join('|') }), base);
+  }
+  if (r < .45) {
+    const gaps = [], tpl = `<p class="cz-line" lang="es">${esc(c.cz[0]).replace(/⟪([^⟫]+)⟫/g, (_, w) => { gaps.push(w); return '⟪' + (gaps.length - 1) + '⟫'; })}</p>`;
+    return Object.assign(mkCloze({ prompt: 'Lee el cuento y completa.', visual: cuentoHTML(c), tpl, gaps, extra: c.cz[1], lang: ES, explain: c.cz[0].replace(/[⟪⟫]/g, ''), key: 'cucz' + c.t }), base);
+  }
+  const [f, a, w] = ctx.draw(c.q);
+  return Object.assign(mkChoice({ prompt: f, visual: cuentoHTML(c), answer: a, wrong: w, layout: 'col', explain: `«${a}»`, after: f + ' ' + a, afterLang: ES, key: 'cuq' + c.t + f }), base);
+}
+
+
+const ORTO_ES = [
+  ['bicicleta', 'vicicleta', 'bisicleta', '🚲', 'bv'], ['ventana', 'bentana', 'ventanna', '🪟', 'bv'], ['árbol', 'árvol', 'arbol', '🌳', 'bv'], ['nube', 'nuve', 'nubbe', '☁️', 'bv'],
+  ['llave', 'yave', 'lave', '🔑', 'lly'], ['lluvia', 'yuvia', 'llubia', '🌧️', 'lly'], ['caballo', 'cabayo', 'cavallo', '🐴', 'lly'], ['playa', 'plalla', 'plaia', '🏖️', 'lly'],
+  ['cebolla', 'zebolla', 'seboya', '🧅', 'cz'], ['zapato', 'sapato', 'capato', '👞', 'cz'], ['cereza', 'sereza', 'zereza', '🍒', 'cz'], ['cielo', 'zielo', 'sielo', '🌌', 'cz'],
+  ['queso', 'keso', 'cueso', '🧀', 'qu'], ['casa', 'kasa', 'cassa', '🏠', 'qu'], ['bosque', 'bosqe', 'bosce', '🌲', 'qu'], ['quince', 'kince', 'cince', '🔢', 'qu'],
+  ['hoja', 'oja', 'hoha', '🍃', 'h'], ['huevo', 'uevo', 'huebo', '🥚', 'h'], ['helado', 'elado', 'helao', '🍦', 'h'], ['hermano', 'ermano', 'hermanno', '👦', 'h'],
+  ['jirafa', 'girafa', 'jiraffa', '🦒', 'gj'], ['guitarra', 'gitarra', 'guitara', '🎸', 'gj'], ['gente', 'jente', 'guente', '👨‍👩‍👧', 'gj'], ['tortuga', 'tortuja', 'tortugga', '🐢', 'gj'],
+  ['zorro', 'zoro', 'sorro', '🦊', 'rr'], ['ratón', 'raton', 'rratón', '🐭', 'tilde'], ['canción', 'cancion', 'cansión', '🎵', 'tilde'], ['pingüino', 'pinguino', 'pinjüino', '🐧', 'tilde'],
+  ['niño', 'nino', 'ninio', '👦', 'ñ'], ['muñeca', 'muneca', 'munieca', '🪆', 'ñ'], ['montaña', 'montana', 'montanya', '⛰️', 'ñ']
+];
+const ORTO_REGLA = { bv: 'b und v klingen gleich, man muss sich das Wort merken.', lly: 'll und y klingen gleich, man muss sich das Wort merken.', cz: 'Vor e und i schreibt man meistens c, vor a, o, u schreibt man z.',
+  qu: 'Den k Laut vor e und i schreibt man qu, vor a, o, u schreibt man c.', h: 'Das h spricht man auf Spanisch nicht, man schreibt es aber.', gj: 'ge und gi klingen wie je und ji. gue und gui spricht man wie ge und gi im Deutschen.',
+  rr: 'Das stark gerollte r zwischen Vokalen schreibt man rr.', tilde: 'Der Akzent und das ü gehören zum Wort dazu.', 'ñ': 'Das ñ ist ein eigener Buchstabe: ni wie in Champagner.' };
+function genDictadoES(ctx) {
+  if (R.chance(ctx.lv >= 2 ? .5 : .35)) {
+    const pool = memo('dicf' + ctx.lv, () => FRASES_ES.concat(CUENTOS_ES.flatMap(c => c.txt.split(/(?<=\.)\s+/))).filter(s => { const n = s.split(' ').length; return n >= 3 && n <= (ctx.lv >= 2 ? 8 : 5) && !/[¡¿]/.test(s.slice(1)); }));
+    const s = ctx.draw(pool);
+    return Object.assign(mkOrder({ prompt: '¡Escucha! Ordena las palabras como en la frase.', items: s.split(' '), explain: `«${s}»`, key: 'dico' + s, inline: true, lang: ES }),
+      { visual: `<button class="listen-btn" data-act="listen" aria-label="Escuchar"><span>🔊</span><b>Escuchar</b></button>`, listen: { text: s, lang: ES }, say: s, sayLang: ES });
+  }
+  const [w, f1, f2, e, r] = ctx.draw(ORTO_ES);
+  return mkChoice({ prompt: '¡Escucha! ¿Cómo se escribe?', visual: `<button class="listen-btn" data-act="listen" aria-label="Escuchar"><span>🔊</span><b>Escuchar</b></button><div class="q-word en hint" data-hint>${e}</div>`,
+    answer: w, wrong: ctx.lv >= 2 ? [f1, f2] : [f1], layout: ctx.lv >= 2 ? 'row3' : 'row2', listen: { text: w, lang: ES }, explain: `Se escribe «${w}». ${ORTO_REGLA[r]}`, after: w, afterLang: ES, key: 'dicw' + w, say: w, sayLang: ES });
+}
+
+
+const OYE_COSAS = [['manzana', 'manzanas', '🍎', 'f'], ['estrella', 'estrellas', '⭐', 'f'], ['gato', 'gatos', '🐱', 'm'], ['coche', 'coches', '🚗', 'm'], ['pelota', 'pelotas', '⚽', 'f'],
+  ['flor', 'flores', '🌸', 'f'], ['pez', 'peces', '🐟', 'm'], ['libro', 'libros', '📕', 'm'], ['perro', 'perros', '🐶', 'm'], ['fresa', 'fresas', '🍓', 'f']];
+const OYE_DUO = [['un perro', '🐶'], ['un gato', '🐱'], ['una vaca', '🐮'], ['un caballo', '🐴'], ['un pájaro', '🐦'], ['una rana', '🐸'], ['una tortuga', '🐢'], ['un pingüino', '🐧']];
+const OYE_COSA2 = [['una pelota', '⚽'], ['un libro', '📕'], ['una flor', '🌸'], ['un coche', '🚗'], ['una casa', '🏠'], ['un árbol', '🌳'], ['una manzana', '🍎'], ['un sol', '☀️']];
+const OYE_COL = [['rojo', '❤️'], ['azul', '💙'], ['verde', '💚'], ['amarillo', '💛'], ['morado', '💜'], ['naranja', '🧡'], ['negro', '🖤'], ['blanco', '🤍']];
+function genOyeES(ctx) {
+  const t = R.int(0, ctx.lv >= 2 ? 2 : 1), N = ['', 'una', 'dos', 'tres', 'cuatro', 'cinco'];
+  let txt, ok, bad;
+  if (t === 0) {
+    const c = R.pick(OYE_COSAS), n = R.int(1, ctx.lv >= 2 ? 5 : 3), o = R.pick(OYE_COSAS.filter(x => x !== c)), m = n === 1 ? 2 : n + R.pick([-1, 1]);
+    txt = n === 1 ? `Hay ${c[3] === 'f' ? 'una' : 'un'} ${c[0]}.` : `Hay ${N[n]} ${c[1]}.`; ok = c[2].repeat(n); bad = [c[2].repeat(m), o[2].repeat(n)];
+  } else if (t === 1) {
+    const [a, b] = [R.pick(OYE_DUO), R.pick(OYE_COSA2)], a2 = R.pick(OYE_DUO.filter(x => x !== a)), b2 = R.pick(OYE_COSA2.filter(x => x !== b));
+    txt = `Veo ${a[0]} y ${b[0]}.`; ok = a[1] + b[1]; bad = [a2[1] + b[1], a[1] + b2[1]];
+  } else {
+    const c = R.pick(OYE_COL), o = R.pick(OYE_COL.filter(x => x !== c)), n = R.int(2, 3);
+    txt = `Hay ${N[n]} corazones ${c[0] === 'naranja' ? 'naranjas' : c[0] === 'azul' ? 'azules' : c[0] + 's'}.`; ok = c[1].repeat(n); bad = [o[1].repeat(n), c[1].repeat(n === 2 ? 3 : 2)];
+  }
+  const o = x => ({ html: `<span class="em es-oye">${x}</span>`, label: x });
+  return mkChoice({ prompt: '¡Escucha bien! ¿Qué dibujo es?', visual: `<button class="listen-btn" data-act="listen" aria-label="Escuchar"><span>🔊</span><b>Escuchar</b></button><div class="q-word en hint" data-hint>${esc(txt)}</div>`,
+    answer: o(ok), wrong: bad.map(o), layout: 'col', listen: { text: txt, lang: ES }, explain: `«${txt}»`, after: txt, afterLang: ES, key: 'oye' + txt, say: txt, sayLang: ES });
+}
+
+
+const PERS6 = ['yo', 'tú', 'él / ella', 'nosotros', 'vosotros', 'ellos / ellas'];
+const VERBOS248 = VERBOS.concat([
+  ['estudiar', ['estudio', 'estudias', 'estudia', 'estudiamos', 'estudiáis', 'estudian'], 'mucho', 0], ['nadar', ['nado', 'nadas', 'nada', 'nadamos', 'nadáis', 'nadan'], 'en el mar', 0],
+  ['escuchar', ['escucho', 'escuchas', 'escucha', 'escuchamos', 'escucháis', 'escuchan'], 'música', 0], ['correr', ['corro', 'corres', 'corre', 'corremos', 'corréis', 'corren'], 'en el parque', 0],
+  ['aprender', ['aprendo', 'aprendes', 'aprende', 'aprendemos', 'aprendéis', 'aprenden'], 'español', 0], ['abrir', ['abro', 'abres', 'abre', 'abrimos', 'abrís', 'abren'], 'la puerta', 0],
+  ['compartir', ['comparto', 'compartes', 'comparte', 'compartimos', 'compartís', 'comparten'], 'la merienda', 0],
+  ['hacer', ['hago', 'haces', 'hace', 'hacemos', 'hacéis', 'hacen'], 'los deberes', 1], ['querer', ['quiero', 'quieres', 'quiere', 'queremos', 'queréis', 'quieren'], 'un helado', 1],
+  ['poder', ['puedo', 'puedes', 'puede', 'podemos', 'podéis', 'pueden'], 'nadar', 1], ['venir', ['vengo', 'vienes', 'viene', 'venimos', 'venís', 'vienen'], 'a casa', 1],
+  ['ver', ['veo', 'ves', 've', 'vemos', 'veis', 'ven'], 'la tele', 1], ['dormir', ['duermo', 'duermes', 'duerme', 'dormimos', 'dormís', 'duermen'], 'mucho', 1]
+]);
+const ES_END = { ar: ['o', 'as', 'a', 'amos', 'áis', 'an'], er: ['o', 'es', 'e', 'emos', 'éis', 'en'], ir: ['o', 'es', 'e', 'imos', 'ís', 'en'] };
+function genTablaVerbosES(ctx) {
+  const lv = ctx.lv, pool = VERBOS248.filter(v => lv >= 3 ? true : lv === 2 ? !v[3] || ['ser', 'estar', 'tener', 'ir'].includes(v[0]) : !v[3]), v = ctx.draw(pool), r = Math.random();
+  const conj = PERS6.map((p, k) => `${p} ${v[1][k]}`).join(', ');
+  if (r < .15) {
+    const items = [];
+    ['ar', 'er', 'ir'].forEach((e, c) => R.sample(VERBOS248.filter(x => !x[3] && x[0].endsWith(e)), 2).forEach(x => items.push({ h: x[0], c })));
+    return mkSort({ prompt: 'Ordena los verbos: ¿-ar, -er o -ir?', cols: ['<b>-ar</b>', '<b>-er</b>', '<b>-ir</b>'], colLabels: ['-ar', '-er', '-ir'], items, lang: ES, explain: 'Mira el final del verbo: hablar, comer, vivir.', key: 'tvs' + items.map(i => i.h).join('|') });
+  }
+  if (r < .4) {
+    const idx = R.sample([0, 1, 2, 3, 5], 4).sort();
+    return mkMatch({ prompt: `Une: ¿quién? ${v[0]}`, left: idx.map(i => PERS6[i]), right: idx.map(i => v[1][i]), lang: ES, explain: `${v[0]}: ${conj}`, key: 'tvm' + v[0] + idx.join('') });
+  }
+  const n = lv === 1 ? 3 : 4, gi = R.sample([0, 1, 2, 3, 4, 5], n).sort(), gaps = gi.map(i => v[1][i]);
+  const end = v[0].slice(-2), stem = v[0].slice(0, -2), other = ES_END[end === 'ar' ? 'er' : 'ar'];
+  const fremd = R.sample(VERBOS248.filter(x => x !== v && x[3] === v[3]), 2).map((x, j) => x[1][gi[j % gi.length]]);
+  const extra = R.shuffle([...new Set((v[3] ? [] : gi.map(i => stem + other[i])).concat(fremd))].filter(x => !v[1].includes(x))).slice(0, 2);
+  const tpl = `<table class="cz-tab es-conj"><tr><th colspan="2" lang="es">${esc(v[0])} ${v[3] ? '<small>irregular</small>' : ''}</th></tr>${PERS6.map((p, k) => `<tr><td>${p}</td><td>${gi.includes(k) ? '⟪' + gi.indexOf(k) + '⟫' : esc(v[1][k])}</td></tr>`).join('')}</table>`;
+  return mkCloze({ prompt: `Completa la tabla del verbo «${v[0]}».`, tpl, gaps, extra, lang: ES, table: true, explain: `${v[0]}: ${conj}`, key: 'tvc' + v[0] + gi.join('') });
+}
+
+
+function genOrtografiaES(ctx) {
+  const r = Math.random();
+  if (r < .45) {
+    const pick = R.sample(ORTO_ES, 9), bad = new Set(R.sample(pick, R.int(3, 4)));
+    return mkMark({ prompt: 'Detective de ortografía: toca las palabras mal escritas.', grid: true, lang: ES, tokens: pick.map(p => ({ h: esc(bad.has(p) ? (R.chance(.5) ? p[1] : p[2]) : p[0]), ok: bad.has(p) })),
+      explain: `Se escribe: ${[...bad].map(p => p[0]).join(', ')}`, key: 'orm' + pick.map(p => p[0]).join('|') });
+  }
+  if (r < .8) {
+    const grp = {}; LETRAS.forEach(L => { const k = [L[1], L[2]].sort().join('|'); (grp[k] = grp[k] || []).push(L); });
+    const ks = Object.keys(grp).filter(k => grp[k].length >= 4 && !k.includes('–') && new Set(grp[k].map(L => L[1])).size === 2), k = R.pick(ks), cols = k.split('|');
+    const rows = []; const seen = new Set();
+    for (const L of R.shuffle(grp[k])) { const w = L[0] + L[1] + L[3]; if (seen.has(w)) continue; seen.add(w); rows.push({ h: `<span class="em">${L[4]}</span> ${esc(L[0])}<span class="q-gap">?</span>${esc(L[3])}`, c: cols.indexOf(L[1]), w }); if (rows.length === 5) break; }
+    if (new Set(rows.map(x => x.c)).size < 2) return genOrtografiaES(ctx);
+    return mkRaster({ prompt: `¿Qué letra falta: ${cols[0]} o ${cols[1]}?`, cols: cols.map(c => `<b class="sr-big">${c}</b>`), colLabels: cols, rows: rows.map(({ h, c }) => ({ h, c })), lang: ES,
+      explain: rows.map(x => x.w).join(', '), key: 'orr' + rows.map(x => x.w).join('|') });
+  }
+  const [w, f1, f2, e, rg] = ctx.draw(ORTO_ES);
+  return mkChoice({ prompt: '¿Cuál está bien escrita?', visual: bigEmoji(e), answer: w, wrong: [f1, f2], layout: 'row3', explain: `Se escribe «${w}». ${ORTO_REGLA[rg]}`, after: w, afterLang: ES, key: 'orc' + w, say: w, sayLang: ES });
+}
+
+
+(function () {
+  if (typeof GAMES === 'undefined') return;
+  const neu = (id, o) => { GAMES[id] = Object.assign({ id, w: 'spanisch' }, o); };
+  neu('deportees', { g: 'es-vocab', t: 'Tiempo libre y deporte', d: 'Sport, Musik und Spiele auf Spanisch', i: '🏅', gen: genTemaES('deporte', 'dep') });
+  neu('ciudades', { g: 'es-vocab', t: 'En la ciudad', d: 'Orte in der Stadt', i: '🏙️', gen: genTemaES('ciudad', 'ciu') });
+  neu('naturalezaes', { g: 'es-vocab', t: 'La naturaleza', d: 'Meer, Berge, Vulkan und Pflanzen', i: '🌋', gen: genTemaES('naturaleza', 'nat') });
+  neu('transportees', { g: 'es-vocab', t: 'Los transportes', d: 'Womit fahren wir?', i: '🚁', gen: genTemaES('transporte', 'tra') });
+  neu('profesioneses', { g: 'es-vocab', t: 'Las profesiones', d: 'Berufe auf Spanisch', i: '👩‍🚒', gen: genTemaES('profesiones', 'pro') });
+  neu('accioneses', { g: 'es-vocab', t: '¿Qué haces?', d: 'Tätigkeiten: correr, nadar, cantar …', i: '🏃', gen: genTemaES('acciones', 'acc') });
+  neu('oyees', { g: 'es-vocab', t: '¿Qué oyes?', d: 'Hören und das passende Bild finden', i: '👂', gen: genOyeES, max: 2, start: [1, 1, 2, 2] });
+  neu('cuentos', { g: 'es-leer', t: 'Cuentos cortos', d: 'Kurze Geschichten lesen und hören', i: '📗', gen: genCuentosES, max: 2, start: [1, 1, 2, 2] });
+  neu('dictado', { g: 'es-escribir', t: 'Dictado', d: 'Hören, ordnen, richtig schreiben', i: '🎧', gen: genDictadoES, max: 2, start: [1, 1, 2, 2] });
+  neu('ortografia', { g: 'es-escribir', t: 'Detective de ortografía', d: 'b oder v? ll oder y? Fehler finden', i: '🕵️', gen: genOrtografiaES });
+  neu('tablaverbos', { g: 'es-gram', t: 'Tabla de verbos', d: 'yo, tú, él … ganze Verbtabellen', i: '📋', gen: genTablaVerbosES, max: 3, start: [1, 1, 2, 3] });
+  const add = (ids, ...fs) => ids.forEach(id => { const g = GAMES[id]; if (g && g.gen) g.fx = (g.fx || []).concat(fs); });
+  const tema = { deportees: 'deporte', ciudades: 'ciudad', naturalezaes: 'naturaleza', transportees: 'transporte', profesioneses: 'profesiones', accioneses: 'acciones' };
+  Object.entries(tema).forEach(([id, cat]) => add([id], fxMemoBildWort('es', cat), fxMatchDeFremd('es', cat), fxKreuzVoc('es', cat)));
+  add(['verbos'], ctx => genTablaVerbosES(Object.assign({}, ctx, { lv: 2 })));
+  add(['letras', 'tildes'], ctx => { let q; do q = genOrtografiaES(ctx); while (q.kind === 'choice'); return q; });
+
+  const fxGenero = ctx => { const all = Object.values(ES248_TEMAS).flat().filter(x => (x[0] === 'el' || x[0] === 'la') && !x[1].includes(' ') && x[1] !== 'agua'), m = R.sample(all.filter(x => x[0] === 'el'), 3), f = R.sample(all.filter(x => x[0] === 'la'), 3);
+    return mkSort({ prompt: '¿el o la? Ordena las palabras.', cols: ['<b>el</b>', '<b>la</b>'], colLabels: ['el', 'la'], items: m.map(x => ({ h: `${x[2]} ${esc(x[1])}`, c: 0 })).concat(f.map(x => ({ h: `${x[2]} ${esc(x[1])}`, c: 1 }))), lang: ES,
+      explain: m.concat(f).map(x => x[0] + ' ' + x[1]).join(', '), key: 'gen' + m.concat(f).map(x => x[1]).join('|') }); };
+  add(['articulos', 'ununa', 'concordancia'], fxGenero);
+})();
 
 /*@@src sicher.js@@*/
 
