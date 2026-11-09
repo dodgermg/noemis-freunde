@@ -7238,6 +7238,24 @@ body.calm .weg-st .weg-n, body.calm .weg-st .weg-i { animation: none !important;
 :root[data-theme="dark"] .sha-warn { color: #ff8a80; }
 .sha-leak { background: #fde8e6; color: #7a1a12; box-shadow: inset 0 0 0 2px #e5484d; }
 
+/* ---- style_spielzeit.css ---- */
+
+.spz-ic { font-size: 60px; line-height: 1; }
+.spz-box { margin: 0 0 14px; padding: 12px 16px; border-radius: 16px; background: var(--surface); box-shadow: inset 0 0 0 2px var(--gold, #f5b700); font-weight: 600; color: var(--ink); }
+.spz-box.on { box-shadow: inset 0 0 0 2px var(--good, #2f8f46); }
+.spz-tag { display: inline-block; margin-top: 4px; padding: 2px 9px; border-radius: 999px; background: var(--gold-soft, #fff3c4); color: var(--ink); font-style: normal; font-weight: 800; font-size: 13px; white-space: nowrap; }
+.spz-uhr { flex: none; margin: 0 6px; padding: 3px 9px; border-radius: 999px; background: rgba(0, 0, 0, .35); color: #fff; font-weight: 800; font-size: 14px; font-variant-numeric: tabular-nums; white-space: nowrap; pointer-events: none; }
+.cm-top .spz-uhr { background: #fff; color: #1b1b1b; box-shadow: inset 0 0 0 3px #1b1b1b; }
+.spz-uhr.knapp { background: #e0362c; color: #fff; animation: spzPuls 1s ease-in-out infinite; }
+@keyframes spzPuls { 50% { transform: scale(1.08); } }
+@media (prefers-reduced-motion: reduce) { .spz-uhr.knapp { animation: none; } }
+
+.fm-q { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.fm-q .q-emoji { font-size: clamp(48px, 7vw, 72px); }
+.fm-satz { margin: 0; max-width: 640px; padding: 14px 22px; border-radius: 22px; background: var(--surface); box-shadow: inset 0 0 0 3px var(--line-deep); font-family: var(--f-display); font-weight: 800; font-size: clamp(22px, 3.2vw, 32px); line-height: 1.3; text-align: center; color: var(--ink); position: relative; }
+.fm-satz.gemein { box-shadow: inset 0 0 0 3px #e07a5f; background: #fff4f0; }
+.opt small { display: block; font-size: 13px; font-weight: 600; opacity: .75; margin-top: 2px; }
+
 /* ---- style_sz.css ---- */
 
 .sz-main { max-width: 780px; margin-inline: auto; display: grid; gap: 14px; padding-block: 8px 28px; }
@@ -7882,8 +7900,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '2.46.0';
-  var MAP = {"probe":0,"files":[[7872,"fehler_kern.js"],[8160,null],[8162,"data.js"],[8849,"data_more.js"],[9203,"data_su2.js"],[9424,"data_es.js"],[9763,"data_wissen.js"],[9945,"data_v21.js"],[10569,"data_v24.js"],[11020,"data_v25.js"],[11468,"data_v26.js"],[11567,"data_v29.js"],[11872,"data_v30.js"],[12196,"data_v31.js"],[12496,"data_kunst.js"],[12692,"data_v214.js"],[12795,"data_v216.js"],[13088,"schrift.js"],[13388,"eingabe.js"],[13599,"data_k34m.js"],[14113,"data_k34d.js"],[14446,"data_k34s.js"],[14835,"data_v224.js"],[15703,"data_v225w.js"],[16072,"data_v225k.js"],[16516,"data_herz.js"],[16870,"data_fb226.js"],[17013,"data_tf226.js"],[17220,"data_v227a.js"],[18311,"data_v227b.js"],[19265,"data_h28b.js"],[19305,"data_l28a.js"],[20171,"data_l28b.js"],[21351,"data_schaetz.js"],[21833,"data_party8.js"],[21883,"data_alce.js"],[22543,"data_alce2.js"],[22792,"data_alce3.js"],[23207,"registry.js"],[23720,"app.js"],[24825,"fun.js"],[25405,"fun2.js"],[25721,"atelier.js"],[26095,"kunst225.js"],[26285,"herz.js"],[26649,"reise.js"],[26951,"iglu.js"],[27117,"offline.js"],[27224,"party.js"],[27708,"meine.js"],[28064,"loeffel.js"],[28235,"trend.js"],[28777,"fun228a.js"],[29628,"fun228b.js"],[30289,"kueche.js"],[31328,"stimme.js"],[31383,"klassen.js"],[31532,"freunde_vorab.js"],[31553,"mut.js"],[31973,"schule.js"],[32462,"fussball226.js"],[32784,"schaetzen.js"],[33215,"party8.js"],[33834,"tiere.js"],[34293,"fussball232.js"],[34508,"party8b.js"],[34810,"weg.js"],[35027,"px.js"],[35438,"px_data.js"],[35695,"pxwelt.js"],[35776,"px_abenteuer.js"],[36619,"px_ski.js"],[37261,"px_wurf.js"],[37790,"px_insel.js"],[38991,"px_kicker.js"],[39926,"px_eis.js"],[40912,"px_run.js"],[42127,"px_brk.js"],[43089,"px_pol.js"],[44440,"px_frog.js"],[45700,"px_angel.js"],[47015,"px_golf.js"],[48049,"px_tauch.js"],[49314,"px_hockey.js"],[50270,"px_lab.js"],[51605,"px_plopp.js"],[52811,"cm.js"],[53301,"cmwelt.js"],[53357,"cm_baeck.js"],[54150,"cm_bahn.js"],[54914,"cm_detek.js"],[55631,"cm_markt.js"],[56344,"ff.js"],[56500,"ff_mathe.js"],[58490,"ff_deutsch.js"],[60078,"ff_sach_a.js"],[62327,"ff_sach_b.js"],[64556,"ff_sprachen.js"],[66964,"zm.js"],[67877,"tt.js"],[68090,"data_tagebuch.js"],[68133,"data_hoerspiel.js"],[68292,"leseecke.js"],[68611,"kt.js"],[68914,"alce.js"],[69077,"alce_aufg.js"],[69247,"formen.js"],[69696,"data_formen.js"],[69937,"data_formen2.js"],[70159,"sicher.js"],[70343,"stil.js"],[70397,"freunde.js"],[70534,"start.js"],[70544,null],[70554,null]]}; // [[Zeile der Markierung, 'datei.js'], …] – trägt build.py ein
+  var VER = '2.47.0';
+  var MAP = {"probe":0,"files":[[7890,"fehler_kern.js"],[8178,null],[8180,"data.js"],[8867,"data_more.js"],[9221,"data_su2.js"],[9442,"data_es.js"],[9781,"data_wissen.js"],[9963,"data_v21.js"],[10587,"data_v24.js"],[11038,"data_v25.js"],[11486,"data_v26.js"],[11585,"data_v29.js"],[11890,"data_v30.js"],[12214,"data_v31.js"],[12514,"data_kunst.js"],[12710,"data_v214.js"],[12813,"data_v216.js"],[13106,"schrift.js"],[13406,"eingabe.js"],[13617,"data_k34m.js"],[14131,"data_k34d.js"],[14464,"data_k34s.js"],[14853,"data_v224.js"],[15721,"data_v225w.js"],[16090,"data_v225k.js"],[16534,"data_herz.js"],[16888,"data_fb226.js"],[17031,"data_tf226.js"],[17238,"data_v227a.js"],[18329,"data_v227b.js"],[19283,"data_h28b.js"],[19323,"data_l28a.js"],[20189,"data_l28b.js"],[21369,"data_schaetz.js"],[21851,"data_party8.js"],[21901,"data_alce.js"],[22561,"data_alce2.js"],[22810,"data_alce3.js"],[23225,"registry.js"],[23738,"app.js"],[24845,"fun.js"],[25425,"fun2.js"],[25741,"atelier.js"],[26115,"kunst225.js"],[26305,"herz.js"],[26669,"reise.js"],[26971,"iglu.js"],[27137,"offline.js"],[27244,"party.js"],[27728,"meine.js"],[28084,"loeffel.js"],[28255,"trend.js"],[28797,"fun228a.js"],[29648,"fun228b.js"],[30309,"kueche.js"],[31348,"stimme.js"],[31403,"klassen.js"],[31552,"freunde_vorab.js"],[31573,"mut.js"],[31993,"schule.js"],[32482,"fussball226.js"],[32804,"schaetzen.js"],[33235,"party8.js"],[33854,"tiere.js"],[34313,"fussball232.js"],[34528,"party8b.js"],[34830,"weg.js"],[35047,"px.js"],[35458,"px_data.js"],[35715,"pxwelt.js"],[35796,"px_abenteuer.js"],[36639,"px_ski.js"],[37281,"px_wurf.js"],[37810,"px_insel.js"],[39011,"px_kicker.js"],[39946,"px_eis.js"],[40932,"px_run.js"],[42147,"px_brk.js"],[43109,"px_pol.js"],[44460,"px_frog.js"],[45720,"px_angel.js"],[47035,"px_golf.js"],[48069,"px_tauch.js"],[49334,"px_hockey.js"],[50290,"px_lab.js"],[51625,"px_plopp.js"],[52831,"cm.js"],[53321,"cmwelt.js"],[53377,"cm_baeck.js"],[54170,"cm_bahn.js"],[54934,"cm_detek.js"],[55651,"cm_markt.js"],[56364,"ff.js"],[56520,"ff_mathe.js"],[58510,"ff_deutsch.js"],[60098,"ff_sach_a.js"],[62347,"ff_sach_b.js"],[64576,"ff_sprachen.js"],[66984,"zm.js"],[67897,"tt.js"],[68110,"data_tagebuch.js"],[68153,"data_hoerspiel.js"],[68312,"leseecke.js"],[68631,"kt.js"],[68934,"alce.js"],[69097,"alce_aufg.js"],[69267,"formen.js"],[69716,"data_formen.js"],[69957,"data_formen2.js"],[70179,"spielzeit.js"],[70324,"data_faktmeinung.js"],[70443,"sicher.js"],[70627,"stil.js"],[70681,"freunde.js"],[70818,"start.js"],[70828,null],[70838,null]]}; // [[Zeile der Markierung, 'datei.js'], …] – trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -23721,8 +23739,9 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '2.46.0';
+const APP_VERSION = '2.47.0';
 const CHANGELOG = [
+  { v: "2.47.0", d: "09.11.2026", t: ["Erst lernen, dann spielen: Pixel-Welt und Comic-Stadt kosten jetzt Münzen, 10 Minuten Spielzeit für 5 Münzen", "Die Uhr läuft nur im Spiel, Aufgaben zählen nicht mit. Höchstens 30 Minuten am Tag, im Elternbereich einstellbar", "Neu unter Herz & Mut: „Fakt oder Meinung?“, damit Kinder wissen: Ein gemeiner Satz ist eine Meinung, nicht die Wahrheit über sie"] },
   { v: "2.46.0", d: "08.11.2026", t: ["Neue Aufgabenformen in allen Fächern: Lückentext mit Wortbank, Zuordnen mit Linien, Sortieren in Spalten, Markieren, Memory, Ankreuztabelle, Uhr stellen, Geld legen, Kreuzworträtsel", "Neu je Fach: Silbenrätsel und Rechtschreibdetektiv (Deutsch), Uhr stellen, Geld legen, Zahlenstrahl (Mathe), Magnet, Schwimmen, Strom, Jahreszeiten, Tiersteckbrief (Sache), Kreuzworträtsel und Uhr auf Englisch und Spanisch", "Die Formen kommen von allein in den Runden vor, wo es passt (z. B. der/die/das sortieren, Rechenmemory, Tiere sortieren, Vokabelmemory)"] },
   { v: "2.45.0", d: "08.11.2026", t: ["Spanisch U2 S1 wie im Heft: Satzanfang und Satzende verbinden, Fragewörter mit Akzent, welches Fragewort passt, ein Lied mit Fragewörtern", "Männlich oder weiblich, Einzahl oder Mehrzahl, Mehrzahl bilden, Bild und passender Satz, Schulfächer und Orte im Colegio", "Neu im Kursweg: „Ya sé…“ für jede Unidad mit Rätsel am Ende"] },
   { v: "2.44.0", d: "08.11.2026", t: ["Spanischkurs wie im Arbeitsheft: Satz ohne Lücken in Wörter trennen und Buchstabensuppe mit Passwort", "Verben im Präsens (ser, estar, tener …): Lücke mit Verb in Klammern, Verbtabelle, Verb im Satz antippen, Lumi hat sich in den Satz geschlichen", "Neu: ¿…? oder ¡…!, Länder und Nationalitäten, Flaggen, Wörter mit ñ, Farben hören und richtig ergänzen, Personen erraten"] },
@@ -23738,7 +23757,7 @@ const FEED = {
 
 const STORE_KEY = 'lwf-lernwelt-v1';
 function freshState() {
-  return { v: 1, profile: null, settings: { sound: true, speech: true, goal: 3, roundLen: 10, focus: 'su-wasser', kcHints: true, funOn: true, funPrice: 5, funMax: 3, retry: true, autoNext: true, atelierOn: true, fpFlag: true, weg: true, quitHint: true, pxOn: true, cmOn: true, engFrueh: false }, coins: 10, fun: { day: '', count: 0, records: {}, art: {} }, lastBackup: 0, points: 0, stars: 0, stickers: [], trophies: [],
+  return { v: 1, profile: null, settings: { sound: true, speech: true, goal: 3, roundLen: 10, focus: 'su-wasser', kcHints: true, funOn: true, funPrice: 5, funMax: 3, retry: true, autoNext: true, atelierOn: true, fpFlag: true, weg: true, quitHint: true, pxOn: true, cmOn: true, engFrueh: false, spzOn: true, spzPrice: 5, spzMin: 10, spzMax: 30 }, coins: 10, fun: { day: '', count: 0, records: {}, art: {} }, lastBackup: 0, points: 0, stars: 0, stickers: [], trophies: [],
     games: {}, days: {}, streak: { last: null, count: 0 }, worlds: {}, mistakes: [], fixed: 0, acc: '', mascot: 'Lumi', records: { blitz: 0 }, mixDay: '', created: Date.now() };
 }
 var LS_STATUS = 'leer', LS_SAVED = 0;
@@ -24684,6 +24703,7 @@ function showParents(notice = '') {
     ${siSectionHTML()}
     ${offSectionHTML()}
     ${typeof fpParentsHTML === 'function' ? fpParentsHTML() : ''}
+    ${typeof spzParentsHTML === 'function' ? spzParentsHTML() : ''}
     <section class="card"><h2>Spielhalle</h2>
       <p class="muted">Mini-Spiele als Belohnung. Münzen gibt es nur fürs Lernen: 1 Münze pro Stern, +3 für das Tagesziel. Aktuell: 🪙 <b id="coinsP">${S.coins || 0}</b></p>
       ${sw('funOn', set.funOn !== false, 'Spielhalle', 'Mini-Spiele auf der Startseite anzeigen')}
@@ -24874,7 +24894,7 @@ function showArcade(msg = '') {
         <span class="meta"><span class="price">🪙 ${funPrice()}</span>${id !== 'malen' && f.records[id] ? `<small>${g.wins ? 'Siege' : 'Rekord'}: ${f.records[id]}</small>` : ''}</span></span></button>`).join('')}</div>`).join('')}
       ${pqArcadeHTML()}${typeof paArcadeHTML === 'function' ? paArcadeHTML() : ''}
       <section class="card"><h2>So bekommst du Münzen</h2>
-        <ul class="howto"><li>⭐ Für jeden Stern beim Lernen gibt es <b>1 Münze</b>.</li><li>🎯 Tagesziel geschafft: <b>+3 Münzen</b>.</li><li>🎲 Die Bonus-Sterne aus dem Tagesmix zählen auch.</li></ul></section>
+        <ul class="howto"><li>⭐ Für jeden Stern beim Lernen gibt es <b>1 Münze</b>.</li><li>🎯 Tagesziel geschafft: <b>+3 Münzen</b>.</li><li>🎲 Die Bonus-Sterne aus dem Tagesmix zählen auch.</li>${typeof spzOn === 'function' && spzOn() ? `<li>🕹️ Pixel-Welt und Comic-Stadt: <b>${spzMin()} Minuten</b> Spielzeit für ${plural(spzPreis(), 'Münze', 'Münzen')}.</li>` : ''}</ul></section>
     </main>`);
 }
 function funAsk(id) {
@@ -69523,7 +69543,7 @@ function fxTryCloze(Q, gid) {
     }
     const q0 = gf.apply(this, arguments);
     if (r >= FX_PX + FX_P || q0.kind === 'split' || q0.kind === 'sopa' || FX_KINDS.includes(q0.kind)) return q0;
-    const Q = [q0]; for (let i = 0; i < 9; i++) { try { Q.push(gf(gid, lv)); } catch (e) { break; } }
+    const Q = [q0], ctx = ctxFor(gid, lv); for (let i = 0; i < 9; i++) { try { const c = g.gen(ctx); if (!c || !c.prompt) break; Q.push(c); } catch (e) { break; } }
     for (const f of R.shuffle([fxTrySort, fxTryMatch, fxTryCloze])) { let v = null; try { v = f(Q, gid); } catch (e) { v = null; } if (v) { G.used.add(gid + v.key); return v; } }
     return q0;
   };
@@ -70155,6 +70175,270 @@ function fxMatchPluralES(ctx) { const pick = R.sample(FX_ES_PL, 4); return mkMat
 
   add(['farbkreis'], fxSortWarmKalt);
 })();
+
+/*@@src spielzeit.js@@*/
+
+
+
+
+
+
+
+
+
+function spzOn() { return S.settings.spzOn !== false && !window.LW_SZ_AUS; }
+function spzPreis() { return S.settings.spzPrice || 5; }
+function spzMin() { return S.settings.spzMin || 10; }
+function spzMax() { return S.settings.spzMax === 0 ? Infinity : (S.settings.spzMax || 30); }
+function spzS() {
+  if (!isObj(S.spz)) S.spz = { left: 0, used: 0, day: '' };
+  const z = S.spz; if (!(z.left >= 0)) z.left = 0;
+  if (z.day !== dayKey()) { z.day = dayKey(); z.used = 0; }
+  return z;
+}
+const spzFmt = s => s > 60 ? `${Math.ceil(s / 60)} Min.` : `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
+function spzVoll() { return spzS().used >= spzMax() * 60; }
+function spzKannKaufen() { return !spzVoll() && (S.coins || 0) >= spzPreis(); }
+let SPZ_GO = null, SPZ_PAUSE = null;
+
+
+function spzGate(go) {
+  if (!spzOn()) return go();
+  const z = spzS();
+  if (z.left > 0 && !spzVoll()) return go();
+  SPZ_GO = go; spzFrage();
+}
+function spzFrage() {
+  const z = spzS(), coins = S.coins || 0, fehlt = spzPreis() - coins;
+  const kopf = `<div class="spz-ic" aria-hidden="true">⏱️</div>`;
+  if (spzVoll()) {
+    overlay(`${kopf}<h2>Für heute ist genug gespielt</h2><p>Du hast heute schon ${spzMax()} Minuten gespielt. Morgen geht es weiter!</p>
+      ${z.left > 0 ? `<p class="muted">Deine restlichen ${spzFmt(z.left)} bleiben dir erhalten.</p>` : ''}
+      <div class="acts"><button class="btn" data-act="spzlernen">Zur Lernwelt</button></div>`);
+    return;
+  }
+  if (fehlt > 0) {
+    overlay(`${kopf}<h2>Erst lernen, dann spielen</h2><p>${spzMin()} Minuten Spielzeit kosten <b>🪙 ${spzPreis()}</b>. Dir ${fehlt === 1 ? 'fehlt' : 'fehlen'} noch <b>${plural(fehlt, 'Münze', 'Münzen')}</b>.</p>
+      <p class="muted">Jeder Stern beim Lernen bringt eine Münze, das Tagesziel 3 extra.</p>
+      <div class="acts"><button class="btn" data-act="spzmix">🎲 Jetzt lernen</button><button class="btn ghost" data-act="closeov">Später</button></div>`);
+    return;
+  }
+  overlay(`${kopf}<h2>Spielzeit kaufen?</h2><p><b>${spzMin()} Minuten</b> in der Pixel-Welt und Comic-Stadt kosten <b>🪙 ${spzPreis()}</b>. Du hast ${plural(coins, 'Münze', 'Münzen')}.</p>
+    <p class="muted">Die Uhr läuft nur, solange ein Spiel offen ist. Aufgaben im Spiel zählen nicht mit, da kannst du in Ruhe nachdenken.</p>
+    <div class="acts"><button class="btn" data-act="spzkauf">Ja, los! 🪙</button><button class="btn ghost" data-act="closeov">Lieber erst lernen</button></div>`);
+}
+function spzKauf() {
+  if (!spzKannKaufen()) return false;
+  const z = spzS(); S.coins -= spzPreis(); z.left += spzMin() * 60; z.bought = (z.bought || 0) + 1; save();
+  try { Sound.good(); } catch (e) { }
+  return true;
+}
+
+
+function spzAktiv() {
+  return !!((typeof PXR !== 'undefined' && PXR && document.querySelector('.px-root')) || (typeof CMR !== 'undefined' && CMR && document.querySelector('.cm-root')));
+}
+function spzTick() {
+  if (!S || !S.settings || !spzOn() || document.hidden || !spzAktiv()) return;
+  if ((typeof PXASK !== 'undefined' && PXASK) || (typeof CMASK !== 'undefined' && CMASK)) return;
+  if (document.getElementById('overlay')) return;
+  const z = spzS();
+  if (z.left > 0) { z.left--; z.used++; }
+  if (z.left === 60) toast('⏰ Noch 1 Minute Spielzeit');
+  if (z.left % 15 === 0) save();
+  spzUhr();
+  if (z.left <= 0 || spzVoll()) spzAus();
+}
+function spzUhr() {
+  const top = document.querySelector('.px-top, .cm-top'); if (!top) return;
+  let el = top.querySelector('.spz-uhr');
+  if (!spzOn()) { if (el) el.remove(); return; }
+  if (!el) { el = document.createElement('span'); el.className = 'spz-uhr'; el.setAttribute('aria-label', 'Spielzeit'); const t = top.querySelector('.px-title, .cm-title'); if (t) t.after(el); else top.appendChild(el); }
+  const left = spzS().left, txt = `⏱️ ${spzFmt(left)}`;
+  if (el.textContent !== txt) el.textContent = txt;
+  el.classList.toggle('knapp', left <= 60);
+}
+function spzAus() {
+  if (typeof PXR !== 'undefined' && PXR) { SPZ_PAUSE = { run: PXR, was: PXR.paused }; PXR.paused = true; PXR.keys = {}; }
+  save();
+  const voll = spzVoll(), mehr = spzKannKaufen();
+  overlay(`<div class="spz-ic" aria-hidden="true">⏰</div><h2>Die Spielzeit ist um!</h2>
+    <p>${voll ? 'Für heute ist genug gespielt. Morgen geht es weiter!' : 'Jetzt ist wieder Lernzeit. Mit neuen Sternen sammelst du Münzen für die nächste Spielzeit.'}</p>
+    <div class="acts">${mehr ? `<button class="btn ghost" data-act="spzmehr">Noch ${spzMin()} Minuten (🪙 ${spzPreis()})</button>` : ''}<button class="btn" data-act="spzlernen">Zur Lernwelt</button></div>`);
+}
+function spzEnde() {
+  SPZ_PAUSE = null;
+  try { if (typeof pxStop === 'function') pxStop(); } catch (e) { }
+  try { if (typeof cmStop === 'function') cmStop(); } catch (e) { }
+}
+
+
+function spzInfoHTML() {
+  if (!spzOn()) return '';
+  const z = spzS();
+  if (spzVoll()) return `<p class="spz-box">⏱️ Für heute ist die Spielzeit aufgebraucht. Morgen geht es weiter!</p>`;
+  if (z.left > 0) return `<p class="spz-box on">⏱️ Du hast noch <b>${spzFmt(z.left)}</b> Spielzeit.</p>`;
+  return `<p class="spz-box">🪙 Erst lernen, dann spielen: <b>${spzMin()} Minuten</b> kosten <b>${plural(spzPreis(), 'Münze', 'Münzen')}</b>. Du hast ${plural(S.coins || 0, 'Münze', 'Münzen')}.</p>`;
+}
+function spzTagHTML() {
+  if (!spzOn()) return '';
+  const z = spzS();
+  return `<em class="spz-tag">${z.left > 0 && !spzVoll() ? `⏱️ noch ${spzFmt(z.left)}` : `🪙 ${spzPreis()} für ${spzMin()} Min.`}</em>`;
+}
+function spzParentsHTML() {
+  const set = S.settings, seg = (act, vals, cur, lab) => `<div class="seg">${vals.map(k => `<button class="${k === cur ? 'sel' : ''}" data-act="${act}" data-k="${k}">${lab ? lab(k) : k}</button>`).join('')}</div>`;
+  const z = spzS();
+  return `<section class="card"><h2>Pixel-Welt und Comic-Stadt</h2>
+    <p class="muted">Erst lernen, dann spielen: Spielzeit kostet Münzen. Die Uhr läuft nur in den Spielen, Aufgaben darin zählen nicht mit. Heute gespielt: <b>${Math.round(z.used / 60)} Min.</b>, gekauft und noch übrig: <b>${Math.ceil(z.left / 60)} Min.</b></p>
+    <div class="row"><span class="lab">Spielzeit kostet Münzen<small>aus: Pixel-Welt und Comic-Stadt sind frei</small></span><button class="switch ${set.spzOn !== false ? 'on' : ''}" role="switch" aria-checked="${set.spzOn !== false}" aria-label="Spielzeit kostet Münzen" data-act="pspzon"></button></div>
+    <div class="row"><span class="lab">Preis<small>in Münzen</small></span>${seg('pspzprice', [3, 5, 8, 10], spzPreis())}</div>
+    <div class="row"><span class="lab">Minuten pro Kauf</span>${seg('pspzmin', [5, 10, 15, 20], spzMin())}</div>
+    <div class="row"><span class="lab">Höchstens pro Tag<small>Minuten</small></span>${seg('pspzmax', [15, 30, 45, 60, 0], set.spzMax === 0 ? 0 : (set.spzMax || 30), k => k || '∞')}</div>
+  </section>`;
+}
+
+
+(function () {
+  const ein = f => function (...a) { return spzGate(() => f.apply(this, a)); };
+  if (ACT.pxgo) ACT.pxgo = ein(ACT.pxgo);
+  if (ACT.cmgo) ACT.cmgo = ein(ACT.cmgo);
+  if (typeof PX_GAMES !== 'undefined') PX_GAMES.forEach(g => { const x = GAMES['px' + g.id]; if (x && x.open) x.open = ein(x.open); });
+  if (typeof CM_GAMES !== 'undefined') CM_GAMES.forEach(g => { const x = GAMES['cm' + g.id]; if (x && x.open) x.open = ein(x.open); });
+  const nach = (f, sel) => function (...a) { const r = f.apply(this, a); const m = document.querySelector(sel); if (m && !m.querySelector('.spz-box')) m.insertAdjacentHTML('afterbegin', spzInfoHTML()); return r; };
+  const tag = f => function () { const h = f(); return h ? h.replace('</small>', '</small>' + spzTagHTML()) : h; };
+  showPixelWelt = nach(showPixelWelt, '.pxw-main'); showComicStadt = nach(showComicStadt, '.cmw-main');
+  pxHomeCard = tag(pxHomeCard); cmHomeCard = tag(cmHomeCard);
+  Object.assign(ACT, {
+    spzkauf: () => { const go = SPZ_GO; SPZ_GO = null; closeOverlay(); if (spzKauf() && go) go(); },
+    spzmehr: () => { closeOverlay(); if (!spzKauf()) return spzAus(); const P = SPZ_PAUSE; SPZ_PAUSE = null; if (P && P.run && P.run.alive) P.run.paused = P.was; spzUhr(); },
+    spzlernen: () => { SPZ_GO = null; closeOverlay(); spzEnde(); showHome(); },
+    spzmix: () => { SPZ_GO = null; closeOverlay(); spzEnde(); startMix(); },
+    pspzon: t => { S.settings.spzOn = S.settings.spzOn === false; save(); t.classList.toggle('on', S.settings.spzOn); t.setAttribute('aria-checked', S.settings.spzOn); },
+    pspzprice: t => { S.settings.spzPrice = Number(t.dataset.k); save(); t.parentElement.querySelectorAll('button').forEach(b => b.classList.toggle('sel', b === t)); },
+    pspzmin: t => { S.settings.spzMin = Number(t.dataset.k); save(); t.parentElement.querySelectorAll('button').forEach(b => b.classList.toggle('sel', b === t)); },
+    pspzmax: t => { S.settings.spzMax = Number(t.dataset.k); save(); t.parentElement.querySelectorAll('button').forEach(b => b.classList.toggle('sel', b === t)); }
+  });
+  setInterval(() => { try { spzTick(); } catch (e) { } }, 1000);
+})();
+
+/*@@src data_faktmeinung.js@@*/
+
+
+
+
+
+
+
+
+
+
+
+const FM_WELT = [
+  ['Ein Hund hat vier Beine.', '🐕', 'F', 'Das kann man nachzählen. Also ein Fakt.'],
+  ['Die Woche hat sieben Tage.', '📅', 'F', 'Das kann man im Kalender nachprüfen.'],
+  ['Wasser gefriert bei 0 Grad.', '🧊', 'F', 'Das kann man mit dem Thermometer messen.'],
+  ['Bienen machen Honig.', '🐝', 'F', 'Das kann man beim Imker nachschauen.'],
+  ['Ein Jahr hat zwölf Monate.', '🗓️', 'F', 'Das kann man nachzählen.'],
+  ['Pinguine können nicht fliegen.', '🐧', 'F', 'Das kann man im Tierbuch nachlesen und beobachten.'],
+  ['Ein Elefant ist größer als eine Maus.', '🐘', 'F', 'Das kann man messen.'],
+  ['Beim Fußball spielen elf Spieler pro Team auf dem Platz.', '⚽', 'F', 'Das steht in den Fußballregeln.'],
+  ['Die Sonne geht morgens auf.', '🌅', 'F', 'Das kann jeder jeden Tag beobachten.'],
+  ['Ein Dreieck hat drei Ecken.', '🔺', 'F', 'Das kann man nachzählen.'],
+  ['Schnee ist kalt.', '❄️', 'F', 'Das kann man fühlen und messen.'],
+  ['Erdbeeren sind rot.', '🍓', 'F', 'Das kann jeder sehen.'],
+  ['Hunde sind die besten Tiere.', '🐕', 'M', 'Das findet jemand. Andere mögen Katzen oder Pferde lieber.'],
+  ['Erdbeereis schmeckt am besten.', '🍦', 'M', '„Am besten“ ist Geschmackssache. Jeder mag etwas anderes.'],
+  ['Montag ist ein doofer Tag.', '📅', 'M', '„Doof“ ist eine Meinung. Manche freuen sich auf den Montag.'],
+  ['Fußball ist das schönste Spiel der Welt.', '⚽', 'M', '„Am schönsten“ findet jeder etwas anderes.'],
+  ['Spinnen sind eklig.', '🕷️', 'M', 'Manche ekeln sich, andere finden Spinnen spannend.'],
+  ['Blau ist die schönste Farbe.', '🔵', 'M', 'Jeder hat eine andere Lieblingsfarbe.'],
+  ['Regenwetter ist langweilig.', '🌧️', 'M', 'Manche lieben es, in Pfützen zu springen.'],
+  ['Mathe macht am meisten Spaß.', '➗', 'M', 'Das findet jemand. Andere mögen Kunst oder Sport lieber.'],
+  ['Pinguine sind die süßesten Tiere.', '🐧', 'M', '„Süß“ ist eine Meinung. Lumi findet das natürlich auch.'],
+  ['Winter ist besser als Sommer.', '⛄', 'M', '„Besser“ findet jeder anders.'],
+  ['Brokkoli ist lecker.', '🥦', 'M', 'Manche lieben Brokkoli, andere nicht. Geschmackssache.'],
+  ['Zeichentrickfilme sind nur was für Babys.', '📺', 'M', 'Das ist eine Meinung. Viele Große schauen gern Zeichentrick.']
+];
+const FM_MENSCH = [
+  ['Lea hat braune Haare.', '👧', 'F', 'Das kann jeder sehen.'],
+  ['Tom trägt eine Brille.', '👓', 'F', 'Das kann jeder sehen.'],
+  ['Mia ist acht Jahre alt.', '🎂', 'F', 'Das kann man nachrechnen.'],
+  ['Ben hat heute ein rotes Shirt an.', '👕', 'F', 'Das kann jeder sehen.'],
+  ['Emil ist kleiner als sein Papa.', '📏', 'F', 'Das kann man messen.'],
+  ['Sara spricht zwei Sprachen.', '🗣️', 'F', 'Das kann man hören und nachprüfen.'],
+  ['Paul hat im Diktat drei Fehler gemacht.', '📝', 'F', 'Das kann man nachzählen.'],
+  ['Jana hat Sommersprossen.', '🌞', 'F', 'Das kann jeder sehen.'],
+  ['Lea hat komische Haare.', '👧', 'M', '„Komisch“ ist eine Meinung. Lea darf ihre Haare toll finden.'],
+  ['Brillen sehen doof aus.', '👓', 'M', '„Doof“ ist eine Meinung. Viele finden Brillen richtig schick.'],
+  ['Bens Shirt ist hässlich.', '👕', 'M', '„Hässlich“ ist eine Meinung. Ben mag sein Shirt.'],
+  ['Sara redet komisch.', '🗣️', 'M', 'Das ist eine Meinung. Zwei Sprachen zu sprechen ist sogar eine Superkraft.'],
+  ['Paul ist schlecht in Deutsch.', '📝', 'M', 'Drei Fehler sind ein Fakt. „Schlecht“ ist eine Bewertung, also eine Meinung. Und mit Üben wird man besser.'],
+  ['Emil ist der netteste Junge der Klasse.', '😊', 'M', 'Auch nette Sätze sind Meinungen. Die darf man sich gern merken!'],
+  ['Lea ist die beste Freundin der Welt.', '💖', 'M', 'Eine schöne Meinung! Meinungen können auch lieb sein.'],
+  ['Sommersprossen sind wunderschön.', '🌞', 'M', 'Eine liebe Meinung. Ob etwas schön ist, findet jeder selbst.']
+];
+
+const FM_GEMEIN = [
+  ['Du bist doof.', '😠', 'M', 'Das ist eine Meinung, keine Wahrheit über dich. So ein Satz zeigt, wie der andere gerade drauf ist.'],
+  ['Du kannst nicht malen.', '🎨', 'M', 'Eine Meinung. Jeder malt auf seine Art, und Üben macht besser.'],
+  ['Deine Schuhe sind hässlich.', '👟', 'M', 'Eine Meinung. Wenn du deine Schuhe magst, reicht das völlig.'],
+  ['Du bist zu langsam.', '🐢', 'M', '„Zu langsam“ ist eine Bewertung, also eine Meinung. Jeder hat sein eigenes Tempo.'],
+  ['Du bist ein Baby.', '🍼', 'M', 'Eine Meinung, und sie stimmt nicht einmal. Du bist ein Schulkind!'],
+  ['Deine Idee ist blöd.', '💡', 'M', 'Eine Meinung. Andere finden deine Idee vielleicht super.'],
+  ['Du bist ein Verlierer.', '😞', 'M', 'Eine Meinung. Einmal verlieren macht niemanden zum Verlierer.'],
+  ['Du singst schrecklich.', '🎤', 'M', 'Eine Meinung. Singen darf jeder, so wie er Spaß hat.'],
+  ['Du hast eine Brille.', '👓', 'F', 'Das stimmt, das ist ein Fakt. Aber eine Brille ist nichts Schlechtes. Ob jemand Brillen schön findet, ist nur eine Meinung.'],
+  ['Du hast Sommersprossen.', '🌞', 'F', 'Ein Fakt. Ob Sommersprossen schön sind, ist eine Meinung, und das entscheidest du selbst.'],
+  ['Du hast beim Wettrennen verloren.', '🏃', 'F', 'Ein Fakt. Verlieren gehört dazu und sagt nichts darüber, was du wert bist.'],
+  ['Du hast heute eine Zahnlücke.', '😁', 'F', 'Ein Fakt. Zahnlücken sind ganz normal, da wächst ein neuer Zahn.']
+];
+
+const FM_STARK = [
+  ['Ein Kind sagt zu dir: „Du bist doof.“ Was kannst du dir selbst sagen?', '💭', '„Das ist nur seine Meinung. Ich bin okay.“', ['„Er hat recht, ich bin doof.“', '„Jetzt bin ich nichts mehr wert.“'], 'Eine Beleidigung ist eine Meinung. Sie macht dich nicht weniger wert.'],
+  ['Jemand lacht über deine Schuhe. Welcher Gedanke stimmt?', '👟', '„Ich mag meine Schuhe, das reicht.“', ['„Ich muss sie sofort wegwerfen.“', '„Alle finden mich schlimm.“'], 'Was du magst, darfst du mögen. Ein Lachen ist nur eine Meinung.'],
+  ['Was sagt eine Beleidigung über dich?', '🔍', 'Nichts. Sie zeigt, wie der andere gerade drauf ist.', ['Dass sie stimmt.', 'Dass ich schuld bin.'], 'Wer gemein ist, hat oft selbst ein Problem. Es liegt nicht an dir.'],
+  ['Jemand ist immer wieder gemein zu dir. Was ist klug?', '🧑‍🏫', 'Einem Erwachsenen Bescheid sagen, zum Beispiel Mama, Papa oder der Lehrerin.', ['Es für mich behalten und nichts sagen.', 'Zurück beleidigen.'], 'Gemeine Worte sind nicht okay. Erwachsene können helfen, dass es aufhört.'],
+  ['Ist es Petzen, wenn du erzählst, dass dich jemand immer wieder ärgert?', '🤝', 'Nein, das ist Hilfe holen.', ['Ja, das ist verboten.', 'Ja, dann bin ich eine Petze.'], 'Petzen will jemandem schaden. Hilfe holen schützt dich. Das ist mutig und richtig.'],
+  ['Jemand sagt: „Du kannst nicht rechnen.“ Was ist ein starker Gedanke?', '🧮', '„Ich lerne jeden Tag dazu.“', ['„Stimmt, ich bin dumm.“', '„Dann übe ich nie wieder.“'], 'Mit Üben wird man besser. Die Meinung von jemand anderem hält dich nicht auf.'],
+  ['Ein Kind sagt etwas Gemeines. Was kannst du ruhig und deutlich sagen?', '✋', '„Hör auf damit. Das ist nicht okay.“', ['„Du bist selbst doof!“', '„Ja, du hast recht.“'], 'Ruhig Stopp sagen ist stark. Zurück beleidigen macht es meistens schlimmer.'],
+  ['Welche Meinung über dich ist am wichtigsten?', '💗', 'Meine eigene und die von Menschen, die mich lieb haben.', ['Die von dem Kind, das gemein war.', 'Die von allen Kindern auf dem Schulhof.'], 'Hör auf die Menschen, die es gut mit dir meinen.'],
+  ['Die Lehrerin sagt: „Schreib bitte ordentlicher, sonst kann ich es nicht lesen.“ Was ist das?', '🏫', 'Ein Tipp, der mir helfen soll.', ['Eine Beleidigung.', 'Ein Beweis, dass ich schlecht bin.'], 'Nicht jede Kritik ist gemein. Ein Tipp will dir helfen, besser zu werden.'],
+  ['Deine Freundin sagt: „Du bist die beste Torhüterin!“ Was ist das?', '🧤', 'Eine liebe Meinung, die ich mir merken darf.', ['Ein Fakt, den man messen kann.', 'Eine Beleidigung.'], 'Auch nette Sätze sind Meinungen. Sammle sie wie Schätze!'],
+  ['Ein Kind sagt: „Mit deiner Brille siehst du doof aus.“ Was ist hier der Fakt?', '👓', 'Dass ich eine Brille trage.', ['Dass ich doof aussehe.', 'Dass Brillen doof sind.'], 'Die Brille ist ein Fakt. „Doof aussehen“ ist nur eine Meinung.'],
+  ['Du hast ein gemeines Wort gehört und bist traurig. Was hilft?', '🫂', 'Darüber reden und mich trösten lassen.', ['So tun, als wäre nichts.', 'Mir sagen, dass ich es verdient habe.'], 'Traurig sein ist okay. Reden hilft, und niemand verdient gemeine Worte.']
+];
+
+const FM_MERK = [
+  ['Lumi erklärt: Was ist ein Fakt?', '🔍', 'Etwas, das man nachprüfen kann.', ['Etwas, das jemand schön findet.', 'Etwas, das jemand laut sagt.'], 'Einen Fakt kann man zählen, messen, sehen oder nachlesen.'],
+  ['Lumi erklärt: Was ist eine Meinung?', '💭', 'Was jemand denkt oder findet.', ['Etwas, das immer stimmt.', 'Etwas, das man messen kann.'], 'Meinungen sind verschieden. Jeder darf seine haben, aber sie sind nicht die Wahrheit über andere.'],
+  ['Woran erkennst du oft eine Meinung?', '🏷️', 'An Wörtern wie schön, doof, toll, langweilig oder am besten.', ['An Zahlen.', 'An Namen.'], 'Solche Bewertungswörter zeigen: Hier findet jemand etwas.']
+];
+const FM_OPT = [{ html: '🔍 <b>Fakt</b><small>kann man nachprüfen</small>', label: 'Fakt' }, { html: '💭 <b>Meinung</b><small>findet jemand</small>', label: 'Meinung' }];
+function fmSatz(item, gemein) {
+  const [s, e, fm, x] = item, ok = fm === 'F' ? FM_OPT[0] : FM_OPT[1], no = fm === 'F' ? FM_OPT[1] : FM_OPT[0];
+  return Object.assign(mkChoice({ prompt: gemein ? 'Jemand sagt zu dir: Fakt oder Meinung?' : 'Fakt oder Meinung?', visual: `<div class="fm-q">${bigEmoji(e)}<p class="fm-satz${gemein ? ' gemein' : ''}">„${esc(s)}“</p></div>`,
+    answer: ok, wrong: [no], fixed: true, order: ['Fakt', 'Meinung'], explain: x, key: 'fm' + s, say: (gemein ? 'Jemand sagt zu dir: ' : '') + s + ' Fakt oder Meinung?' }), { noMist: true });
+}
+function fmSort(lv) {
+  const P = lv >= 2 ? FM_MENSCH.concat(FM_GEMEIN) : FM_WELT.concat(FM_MENSCH), f = R.sample(P.filter(x => x[2] === 'F'), 3), m = R.sample(P.filter(x => x[2] === 'M'), 3);
+  return Object.assign(mkSort({ prompt: 'Sortiere die Sätze: Fakt oder Meinung?', cols: ['🔍 <b>Fakt</b>', '💭 <b>Meinung</b>'], colLabels: ['Fakt', 'Meinung'],
+    items: f.map(x => ({ h: `${x[1]} ${esc(x[0])}`, c: 0 })).concat(m.map(x => ({ h: `${x[1]} ${esc(x[0])}`, c: 1 }))), explain: 'Fakten kann man nachprüfen. Meinungen erkennst du an Wörtern wie schön, doof oder am besten.', key: 'fms' + f.concat(m).map(x => x[0]).join('|') }), { noMist: true });
+}
+function fmMark(lv) {
+  const P = lv >= 2 ? FM_GEMEIN.concat(FM_MENSCH) : FM_WELT, m = R.sample(P.filter(x => x[2] === 'M'), R.int(2, 3)), f = R.sample(P.filter(x => x[2] === 'F'), 6 - m.length), all = R.shuffle(m.concat(f));
+  return Object.assign(mkMark({ prompt: 'Tippe alle Meinungen an.', grid: true, tokens: all.map(x => ({ h: `${x[1]} ${esc(x[0])}`, ok: x[2] === 'M' })),
+    explain: `Meinungen: ${m.map(x => x[0]).join(' ')}`, key: 'fmm' + all.map(x => x[0]).join('|') }), { noMist: true });
+}
+function genFaktMeinung(ctx) {
+  const lv = ctx.lv || 1, i = G ? G.i : 1;
+  if (i === 0) return Object.assign(suQuestion(R.pick(FM_MERK)), { noMist: true, key: 'fmk' + Math.random() });
+  const r = Math.random();
+  if (i >= 2 && r < .12) return fmSort(lv);
+  if (i >= 2 && r < .22) return fmMark(lv);
+  if (lv >= 2) { if (r < .5) return fmSatz(ctx.draw(FM_GEMEIN), true); if (r < .75) return Object.assign(suQuestion(ctx.draw(FM_STARK)), { noMist: true }); return fmSatz(ctx.draw(FM_MENSCH)); }
+  if (r < .55) return fmSatz(ctx.draw(FM_WELT)); if (r < .85) return fmSatz(ctx.draw(FM_MENSCH)); return fmSatz(ctx.draw(FM_GEMEIN), true);
+}
+if (typeof GAMES !== 'undefined') GAMES.faktmeinung = { id: 'faktmeinung', g: 'n-herz', w: 'meine', t: 'Fakt oder Meinung?', d: 'Was stimmt wirklich, was findet nur jemand? Stark gegen gemeine Sätze', i: '🔍', gen: genFaktMeinung, nomix: 1, noFx: 1, max: 2, start: [1, 1, 2, 2] };
 
 /*@@src sicher.js@@*/
 
