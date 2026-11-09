@@ -4869,6 +4869,148 @@ mark.ffl-hl { background: #ffe066; color: #1d2440; border-radius: 5px; padding: 
   .opt .ffl-pic { font-size: 30px; letter-spacing: 1px; }
 }
 
+/* ---- style_formen.css ---- */
+
+.fx { width: 100%; min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+
+.cz-text { box-sizing: border-box; width: min(100%, 900px); padding: 16px 18px; border-radius: 22px; background: var(--surface); box-shadow: var(--shadow); font-size: clamp(19px, 2.6vw, 25px); line-height: 2.1; color: var(--ink); }
+.cz-line { margin: 0 0 4px; }
+.cz-line.cz-num { font-family: var(--f-display); font-weight: 800; font-size: clamp(24px, 3.4vw, 34px); text-align: center; letter-spacing: .02em; }
+.cz-gap { display: inline-flex; align-items: center; justify-content: center; min-width: 4.2em; min-height: 1.7em; margin: 0 2px; padding: 0 10px; vertical-align: middle; border: 0; border-radius: 10px;
+  background: var(--surface-2); box-shadow: inset 0 0 0 2px var(--line-deep); font: inherit; font-weight: 800; color: #4b2fa6; cursor: pointer; line-height: 1.5; }
+.cz-gap.sel { box-shadow: inset 0 0 0 3px #3b7cf0; background: #e9f1ff; }
+.cz-gap.filled { background: #efe9ff; box-shadow: inset 0 0 0 2px #b9a6f2; }
+.cz-gap.lock { background: #c8f0d8; box-shadow: inset 0 0 0 2px #2bb673; color: #1e7a4b; }
+.cz-gap.bad { background: #ffd2d2; box-shadow: inset 0 0 0 2px #e5484d; color: #c22; animation: soShake .35s; }
+.cz-gap:disabled { cursor: default; opacity: 1; }
+.cz-text.tab { width: auto; }
+.cz-tab { margin: 0 auto; border-collapse: collapse; font-family: var(--f-display); font-weight: 800; font-size: clamp(20px, 2.8vw, 28px); }
+.cz-tab td { padding: 4px 10px; text-align: center; border-bottom: 1px solid var(--line); }
+.cz-bank { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; max-width: 900px; }
+.cz-tile { min-height: 56px; min-width: 64px; padding: 6px 16px; border: 0; border-radius: 16px; background: var(--surface); box-shadow: inset 0 0 0 2px var(--line), 0 4px 0 var(--line-deep);
+  font-family: var(--f-display); font-weight: 800; font-size: clamp(19px, 2.4vw, 24px); color: var(--ink); cursor: pointer; }
+.cz-tile.used { visibility: hidden; }
+.cz-tile:active { transform: translateY(3px); box-shadow: inset 0 0 0 2px var(--line); }
+
+.mt { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px 64px; width: min(100%, 860px); }
+.mt.wide { grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); }
+.mt-col { display: flex; flex-direction: column; gap: 12px; justify-content: space-around; }
+.mt-i { position: relative; display: flex; align-items: center; justify-content: center; gap: 8px; min-height: 64px; padding: 8px 16px; border: 0; border-radius: 18px; background: var(--surface);
+  box-shadow: inset 0 0 0 2px var(--line), 0 4px 0 var(--line-deep); font-family: var(--f-display); font-weight: 800; font-size: clamp(17px, 2.2vw, 22px); color: var(--ink); cursor: pointer; text-align: center; line-height: 1.25; }
+.mt.wide .mt-col:first-child .mt-i { font-size: clamp(15px, 1.9vw, 19px); font-family: var(--f-body); font-weight: 700; justify-content: flex-start; text-align: left; }
+.mt-i .em { font-size: 34px; }
+.mt-dot { position: absolute; top: 50%; width: 16px; height: 16px; margin-top: -8px; border-radius: 50%; background: var(--surface); box-shadow: inset 0 0 0 3px var(--line-deep); }
+.mt-i.l .mt-dot { right: -8px; } .mt-i.r .mt-dot { left: -8px; }
+.mt-i.on { box-shadow: inset 0 0 0 3px var(--mc), 0 4px 0 var(--line-deep); }
+.mt-i.on .mt-dot { background: var(--mc); box-shadow: none; }
+.mt-i.sel { box-shadow: inset 0 0 0 3px #3b7cf0; background: #e9f1ff; }
+.mt-i.lock { background: #effaf3; }
+.mt-i.bad { background: #ffe1e1; animation: soShake .35s; }
+.mt-i:disabled { cursor: default; opacity: 1; color: var(--ink); }
+.mt-lines { position: absolute; left: 0; top: 0; pointer-events: none; overflow: visible; }
+@media (max-width: 560px) { .mt { gap: 10px 34px; } .mt-i { min-height: 56px; padding: 6px 10px; } }
+
+.sr-tray { box-sizing: border-box; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; width: min(100%, 900px); min-height: 72px; padding: 12px; border-radius: 22px; background: var(--surface); box-shadow: var(--shadow); cursor: pointer; }
+.sr-empty { align-self: center; color: var(--ink-soft); font-size: 15px; }
+.sr-cols { display: grid; grid-template-columns: repeat(var(--n), minmax(0, 1fr)); gap: 10px; width: min(100%, 900px); }
+.sr-col { display: flex; flex-direction: column; min-height: 150px; border-radius: 20px; background: var(--surface-2); box-shadow: inset 0 0 0 2px var(--line-deep); cursor: pointer; overflow: hidden; }
+.sr-h { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; min-height: 52px; padding: 8px; background: #efe9ff; color: #3b2a85; text-align: center; font-family: var(--f-display); font-size: clamp(16px, 2vw, 19px); line-height: 1.2; }
+.sr-h .bin { width: 36px; height: 38px; } .sr-h .bin-name { font-size: 13px; font-weight: 800; } .sr-h small { display: none; } .sr-h .sym { font-size: 26px; }
+.sr-big { font-family: var(--f-display); font-size: 26px; }
+.sr-in { display: flex; flex-wrap: wrap; gap: 8px; padding: 10px; align-content: flex-start; flex: 1; }
+.so-k { min-height: 54px; padding: 6px 14px; border: 0; border-radius: 14px; background: var(--surface); box-shadow: inset 0 0 0 2px var(--line), 0 4px 0 var(--line-deep);
+  font-family: var(--f-display); font-weight: 800; font-size: clamp(16px, 2.1vw, 21px); color: var(--ink); cursor: pointer; line-height: 1.25; text-align: left; }
+.so-k.sel { box-shadow: inset 0 0 0 3px #3b7cf0; background: #e9f1ff; transform: translateY(-2px); }
+.so-k.lock { background: #c8f0d8; box-shadow: inset 0 0 0 2px #2bb673; }
+.so-k.bad { background: #ffd2d2; box-shadow: inset 0 0 0 2px #e5484d; animation: soShake .35s; }
+.so-k:disabled { cursor: default; opacity: 1; color: var(--ink); }
+@media (max-width: 640px) { .sr-cols { grid-template-columns: repeat(min(var(--n), 2), minmax(0, 1fr)); } }
+
+.mk-text { box-sizing: border-box; width: min(100%, 900px); padding: 16px 18px; border-radius: 22px; background: var(--surface); box-shadow: var(--shadow); font-size: clamp(21px, 2.9vw, 28px); line-height: 2.1; text-align: center; color: var(--ink); }
+.mk-text.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 104px), 1fr)); gap: 10px; line-height: 1.3; }
+.mk-t { border: 0; padding: 2px 6px; margin: 0 -2px; border-radius: 10px; background: none; font: inherit; font-weight: 700; color: var(--ink); cursor: pointer; }
+.mk-text.grid .mk-t { min-height: 58px; padding: 6px 8px; background: var(--surface-2); box-shadow: inset 0 0 0 2px var(--line); font-family: var(--f-display); font-weight: 800; }
+.mk-t.on { background: #fff06a; box-shadow: inset 0 -6px 0 #f5c518; }
+.mk-text.grid .mk-t.on { background: #fff06a; box-shadow: inset 0 0 0 3px #f5c518; }
+.mk-t.lock { background: #c8f0d8; box-shadow: inset 0 0 0 2px #2bb673; }
+.mk-t.bad { background: #ffd2d2; box-shadow: inset 0 0 0 2px #e5484d; animation: soShake .35s; }
+.mk-t:disabled { cursor: default; opacity: 1; color: var(--ink); }
+
+.me-grid { display: grid; grid-template-columns: repeat(var(--n), minmax(0, 1fr)); gap: 10px; width: min(100%, 720px); }
+.me-c { aspect-ratio: 4 / 3; min-width: 0; border: 0; border-radius: 18px; padding: 6px; background: linear-gradient(135deg, #6b4fbf, #3b7cf0); color: #fff; font-family: var(--f-display); font-weight: 800; font-size: 34px; cursor: pointer; box-shadow: 0 5px 0 #3b2a85; }
+.me-c.open { background: var(--surface); color: var(--ink); box-shadow: inset 0 0 0 3px #b9a6f2, 0 5px 0 var(--line-deep); font-size: clamp(16px, 2.3vw, 22px); line-height: 1.2; }
+.me-c.done { background: #c8f0d8; box-shadow: inset 0 0 0 3px #2bb673; }
+.me-c .em.xl { font-size: clamp(34px, 5vw, 48px); }
+.me-c:disabled { cursor: default; opacity: 1; }
+.me-f { display: flex; align-items: center; justify-content: center; gap: 6px; height: 100%; text-align: center; overflow-wrap: anywhere; }
+@media (max-width: 560px) { .me-grid { grid-template-columns: repeat(min(var(--n), 3), minmax(0, 1fr)); } }
+.fx-sw { display: inline-block; width: 22px; height: 22px; margin-right: 6px; border-radius: 50%; vertical-align: middle; box-shadow: inset 0 0 0 2px rgba(0, 0, 0, .25); }
+
+.ra-wrap { width: min(100%, 900px); overflow-x: auto; border-radius: 20px; background: var(--surface); box-shadow: var(--shadow); }
+.ra { width: 100%; border-collapse: collapse; font-size: clamp(16px, 2.1vw, 21px); }
+.ra th, .ra td { padding: 8px 10px; border-bottom: 1px solid var(--line); text-align: center; }
+.ra thead th { background: #efe9ff; color: #3b2a85; font-family: var(--f-display); font-size: clamp(15px, 1.9vw, 19px); }
+.ra thead th .bin { width: 30px; height: 32px; display: block; margin: 0 auto; } .ra thead th small { display: none; } .ra thead th .sym { font-size: 22px; }
+.ra tbody th { text-align: left; font-weight: 700; color: var(--ink); line-height: 1.3; }
+.ra-x { width: 46px; height: 46px; border: 0; border-radius: 12px; background: var(--surface-2); box-shadow: inset 0 0 0 2px var(--line-deep); font-family: var(--f-display); font-weight: 800; font-size: 26px; color: #4b2fa6; cursor: pointer; }
+.ra-x.on { background: #efe9ff; box-shadow: inset 0 0 0 3px #6b4fbf; }
+.ra tr.lock .ra-x.on { background: #c8f0d8; box-shadow: inset 0 0 0 3px #2bb673; color: #1e7a4b; }
+.ra tr.bad .ra-x.on { background: #ffd2d2; box-shadow: inset 0 0 0 3px #e5484d; color: #c22; animation: soShake .35s; }
+.ra-x:disabled { cursor: default; opacity: 1; }
+
+.uh-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 18px 28px; }
+.uh-clock .clock, .uh-clock svg { width: min(78vw, 280px); height: auto; }
+.uh-ctl { display: flex; flex-direction: column; gap: 14px; }
+.uh-g { display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 10px 14px; border-radius: 18px; background: var(--surface); box-shadow: var(--shadow); }
+.uh-g span { font-weight: 800; font-size: 16px; line-height: 1.2; } .uh-g small { font-weight: 600; color: var(--ink-soft); }
+.uh-g > div { display: flex; gap: 8px; } .uh-b { min-width: 64px; min-height: 56px; font-size: 22px; }
+
+.mz-tisch { box-sizing: border-box; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 8px; width: min(100%, 900px); min-height: 110px; padding: 14px; border-radius: 22px;
+  background: repeating-linear-gradient(45deg, #f3e7d3, #f3e7d3 12px, #efe0c8 12px, #efe0c8 24px); box-shadow: var(--shadow); }
+.mz-purse { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; width: min(100%, 900px); padding: 12px; border-radius: 22px; background: var(--surface-2); box-shadow: inset 0 0 0 2px var(--line); }
+.mz-b { border: 0; background: none; padding: 2px; cursor: pointer; }
+.mz-b:disabled { cursor: default; opacity: .5; }
+.mz { display: inline-flex; align-items: center; justify-content: center; width: 58px; height: 58px; border-radius: 50%; font-family: var(--f-display); font-weight: 800; font-size: 15px; color: #3b2a12; box-shadow: inset 0 0 0 3px rgba(0, 0, 0, .18), 0 3px 0 rgba(0, 0, 0, .18); }
+.mz.kupfer { background: radial-gradient(circle at 35% 35%, #f0b07a, #b8692f); width: 50px; height: 50px; }
+.mz.gold { background: radial-gradient(circle at 35% 35%, #ffe08a, #c9a227); }
+.mz.euro { background: radial-gradient(circle at 50% 50%, #ffe08a 0 42%, #c8ccd2 43%); width: 64px; height: 64px; }
+.mz.schein { width: 92px; height: 52px; border-radius: 8px; background: linear-gradient(135deg, #a8d8b9, #6fb38a); color: #10391f; font-size: 17px; }
+
+.kz-main { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; align-items: flex-start; width: min(100%, 960px); }
+.kz-grid { display: grid; grid-template-columns: repeat(var(--c), 46px); gap: 3px; padding: 10px; border-radius: 18px; background: var(--surface); box-shadow: var(--shadow); max-width: 100%; }
+.kz-n { width: 46px; height: 46px; }
+.kz-c { position: relative; width: 46px; height: 46px; padding: 0; border: 0; border-radius: 6px; background: #fff; box-shadow: inset 0 0 0 2px #6b6f7a; font-family: var(--f-display); font-weight: 800; font-size: 24px; color: var(--ink); cursor: pointer; }
+.kz-c i { position: absolute; left: 3px; top: 1px; font-style: normal; font-size: 11px; font-weight: 800; color: #6b4fbf; }
+.kz-c.cur { background: #e9f1ff; box-shadow: inset 0 0 0 3px #3b7cf0; }
+.kz-c.ok { background: #c8f0d8; box-shadow: inset 0 0 0 2px #2bb673; }
+.kz-c.rev { background: #fff3b0; }
+.kz-c.bad { background: #ffd2d2; box-shadow: inset 0 0 0 2px #e5484d; animation: soShake .35s; }
+.kz-c:disabled { cursor: default; opacity: 1; color: var(--ink); }
+.kz-clues { display: flex; flex-direction: column; gap: 6px; min-width: 200px; flex: 1 1 220px; max-width: 360px; }
+.kz-h { display: flex; align-items: center; gap: 10px; padding: 6px 12px; border: 0; border-radius: 14px; background: var(--surface); box-shadow: inset 0 0 0 2px var(--line); font: inherit; font-size: 17px; text-align: left; color: var(--ink); cursor: pointer; }
+.kz-h b { font-family: var(--f-display); color: #6b4fbf; min-width: 2.4em; } .kz-h span { flex: 1; } .kz-h .em { font-size: 26px; }
+.kz-h.cur { box-shadow: inset 0 0 0 3px #3b7cf0; background: #e9f1ff; } .kz-h.ok { background: #c8f0d8; box-shadow: inset 0 0 0 2px #2bb673; } .kz-h em { font-style: normal; color: #1e7a4b; font-weight: 800; }
+.kz-e { display: flex; flex-direction: column; align-items: center; gap: 8px; width: min(100%, 760px); padding: 12px; border-radius: 20px; background: #fff8d6; box-shadow: inset 0 0 0 2px #f5c518; }
+.kz-ew { font-size: 18px; } .kz-ew b { color: #6b4fbf; font-family: var(--f-display); } .kz-ew .em { font-size: 28px; vertical-align: middle; }
+.kz-e .slot.locked { background: #c8f0d8; }
+@media (max-width: 560px) { .kz-grid { grid-template-columns: repeat(var(--c), 32px); } .kz-c, .kz-n { width: 32px; height: 32px; font-size: 17px; } }
+.cz-silben { display: flex; align-items: center; gap: 6px; }
+.cz-silben .em { font-size: 34px; margin-right: 6px; }
+.cz-silben .cz-gap { min-width: 2.6em; margin: 0 1px; }
+.cz-strahl { display: flex; justify-content: space-between; align-items: flex-start; padding: 18px 0 4px; border-top: 4px solid var(--ink); margin: 22px 4px 4px; }
+.zs-t { position: relative; display: flex; flex-direction: column; align-items: center; flex: 1 1 0; min-width: 0; }
+.zs-t i { position: absolute; top: -30px; width: 3px; height: 22px; background: var(--ink); }
+.zs-t b { font-family: var(--f-display); font-size: clamp(14px, 2.4vw, 24px); line-height: 2; }
+.zs-t .cz-gap { min-width: 2.8em; margin: 0; padding: 0 4px; font-size: clamp(13px, 2.2vw, 22px); }
+.cz-tab.sb td:first-child { text-align: right; font-family: var(--f-body); font-weight: 700; color: var(--ink-soft); }
+.cz-tab.sb td { font-size: clamp(18px, 2.4vw, 22px); }
+.ra-q { display: inline-block; min-width: 1.4em; padding: 0 4px; border-radius: 6px; background: var(--surface-2); box-shadow: inset 0 0 0 2px var(--line-deep); font-weight: 800; }
+.kz-z { font-family: var(--f-display); font-size: 22px; color: var(--ink); }
+@media (max-width: 560px) { .zs-t .cz-gap { min-width: 2.3em; padding: 0 2px; } .cz-text:has(.cz-strahl) { padding: 12px 8px; } }
+.cz-tab.sb tr:first-child td { text-align: center; font-family: var(--f-display); color: var(--ink); }
+.cz-tab.sb .em.xl { font-size: 40px; vertical-align: middle; }
+@media (max-width: 560px) { .kz-clues { display: grid; grid-template-columns: 1fr 1fr; max-width: none; } .kz-h { padding: 4px 8px; } .kz-h b { min-width: 2em; } }
+
 /* ---- style_freunde.css ---- */
 /* Freunde-Version: erster Start „Mädchen oder Junge?“ */
 .lwf-g { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 8px; border-radius: 18px; }
@@ -7740,8 +7882,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '2.45.0';
-  var MAP = {"probe":0,"files":[[7730,"fehler_kern.js"],[8018,null],[8020,"data.js"],[8707,"data_more.js"],[9061,"data_su2.js"],[9282,"data_es.js"],[9621,"data_wissen.js"],[9803,"data_v21.js"],[10427,"data_v24.js"],[10878,"data_v25.js"],[11326,"data_v26.js"],[11425,"data_v29.js"],[11730,"data_v30.js"],[12054,"data_v31.js"],[12354,"data_kunst.js"],[12550,"data_v214.js"],[12653,"data_v216.js"],[12946,"schrift.js"],[13246,"eingabe.js"],[13457,"data_k34m.js"],[13971,"data_k34d.js"],[14304,"data_k34s.js"],[14693,"data_v224.js"],[15561,"data_v225w.js"],[15930,"data_v225k.js"],[16374,"data_herz.js"],[16728,"data_fb226.js"],[16871,"data_tf226.js"],[17078,"data_v227a.js"],[18169,"data_v227b.js"],[19123,"data_h28b.js"],[19163,"data_l28a.js"],[20029,"data_l28b.js"],[21209,"data_schaetz.js"],[21691,"data_party8.js"],[21741,"data_alce.js"],[22401,"data_alce2.js"],[22650,"data_alce3.js"],[23065,"registry.js"],[23578,"app.js"],[24682,"fun.js"],[25262,"fun2.js"],[25578,"atelier.js"],[25952,"kunst225.js"],[26142,"herz.js"],[26506,"reise.js"],[26808,"iglu.js"],[26974,"offline.js"],[27081,"party.js"],[27565,"meine.js"],[27921,"loeffel.js"],[28092,"trend.js"],[28634,"fun228a.js"],[29485,"fun228b.js"],[30146,"kueche.js"],[31185,"stimme.js"],[31240,"klassen.js"],[31389,"freunde_vorab.js"],[31410,"mut.js"],[31830,"schule.js"],[32319,"fussball226.js"],[32641,"schaetzen.js"],[33072,"party8.js"],[33691,"tiere.js"],[34150,"fussball232.js"],[34365,"party8b.js"],[34667,"weg.js"],[34884,"px.js"],[35295,"px_data.js"],[35552,"pxwelt.js"],[35633,"px_abenteuer.js"],[36476,"px_ski.js"],[37118,"px_wurf.js"],[37647,"px_insel.js"],[38848,"px_kicker.js"],[39783,"px_eis.js"],[40769,"px_run.js"],[41984,"px_brk.js"],[42946,"px_pol.js"],[44297,"px_frog.js"],[45557,"px_angel.js"],[46872,"px_golf.js"],[47906,"px_tauch.js"],[49171,"px_hockey.js"],[50127,"px_lab.js"],[51462,"px_plopp.js"],[52668,"cm.js"],[53158,"cmwelt.js"],[53214,"cm_baeck.js"],[54007,"cm_bahn.js"],[54771,"cm_detek.js"],[55488,"cm_markt.js"],[56201,"ff.js"],[56357,"ff_mathe.js"],[58347,"ff_deutsch.js"],[59935,"ff_sach_a.js"],[62184,"ff_sach_b.js"],[64413,"ff_sprachen.js"],[66821,"zm.js"],[67734,"tt.js"],[67947,"data_tagebuch.js"],[67990,"data_hoerspiel.js"],[68149,"leseecke.js"],[68468,"kt.js"],[68771,"alce.js"],[68934,"alce_aufg.js"],[69104,"sicher.js"],[69288,"stil.js"],[69342,"freunde.js"],[69479,"start.js"],[69489,null],[69499,null]]}; // [[Zeile der Markierung, 'datei.js'], …] – trägt build.py ein
+  var VER = '2.46.0';
+  var MAP = {"probe":0,"files":[[7872,"fehler_kern.js"],[8160,null],[8162,"data.js"],[8849,"data_more.js"],[9203,"data_su2.js"],[9424,"data_es.js"],[9763,"data_wissen.js"],[9945,"data_v21.js"],[10569,"data_v24.js"],[11020,"data_v25.js"],[11468,"data_v26.js"],[11567,"data_v29.js"],[11872,"data_v30.js"],[12196,"data_v31.js"],[12496,"data_kunst.js"],[12692,"data_v214.js"],[12795,"data_v216.js"],[13088,"schrift.js"],[13388,"eingabe.js"],[13599,"data_k34m.js"],[14113,"data_k34d.js"],[14446,"data_k34s.js"],[14835,"data_v224.js"],[15703,"data_v225w.js"],[16072,"data_v225k.js"],[16516,"data_herz.js"],[16870,"data_fb226.js"],[17013,"data_tf226.js"],[17220,"data_v227a.js"],[18311,"data_v227b.js"],[19265,"data_h28b.js"],[19305,"data_l28a.js"],[20171,"data_l28b.js"],[21351,"data_schaetz.js"],[21833,"data_party8.js"],[21883,"data_alce.js"],[22543,"data_alce2.js"],[22792,"data_alce3.js"],[23207,"registry.js"],[23720,"app.js"],[24825,"fun.js"],[25405,"fun2.js"],[25721,"atelier.js"],[26095,"kunst225.js"],[26285,"herz.js"],[26649,"reise.js"],[26951,"iglu.js"],[27117,"offline.js"],[27224,"party.js"],[27708,"meine.js"],[28064,"loeffel.js"],[28235,"trend.js"],[28777,"fun228a.js"],[29628,"fun228b.js"],[30289,"kueche.js"],[31328,"stimme.js"],[31383,"klassen.js"],[31532,"freunde_vorab.js"],[31553,"mut.js"],[31973,"schule.js"],[32462,"fussball226.js"],[32784,"schaetzen.js"],[33215,"party8.js"],[33834,"tiere.js"],[34293,"fussball232.js"],[34508,"party8b.js"],[34810,"weg.js"],[35027,"px.js"],[35438,"px_data.js"],[35695,"pxwelt.js"],[35776,"px_abenteuer.js"],[36619,"px_ski.js"],[37261,"px_wurf.js"],[37790,"px_insel.js"],[38991,"px_kicker.js"],[39926,"px_eis.js"],[40912,"px_run.js"],[42127,"px_brk.js"],[43089,"px_pol.js"],[44440,"px_frog.js"],[45700,"px_angel.js"],[47015,"px_golf.js"],[48049,"px_tauch.js"],[49314,"px_hockey.js"],[50270,"px_lab.js"],[51605,"px_plopp.js"],[52811,"cm.js"],[53301,"cmwelt.js"],[53357,"cm_baeck.js"],[54150,"cm_bahn.js"],[54914,"cm_detek.js"],[55631,"cm_markt.js"],[56344,"ff.js"],[56500,"ff_mathe.js"],[58490,"ff_deutsch.js"],[60078,"ff_sach_a.js"],[62327,"ff_sach_b.js"],[64556,"ff_sprachen.js"],[66964,"zm.js"],[67877,"tt.js"],[68090,"data_tagebuch.js"],[68133,"data_hoerspiel.js"],[68292,"leseecke.js"],[68611,"kt.js"],[68914,"alce.js"],[69077,"alce_aufg.js"],[69247,"formen.js"],[69696,"data_formen.js"],[69937,"data_formen2.js"],[70159,"sicher.js"],[70343,"stil.js"],[70397,"freunde.js"],[70534,"start.js"],[70544,null],[70554,null]]}; // [[Zeile der Markierung, 'datei.js'], …] – trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -23579,8 +23721,9 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '2.45.0';
+const APP_VERSION = '2.46.0';
 const CHANGELOG = [
+  { v: "2.46.0", d: "08.11.2026", t: ["Neue Aufgabenformen in allen Fächern: Lückentext mit Wortbank, Zuordnen mit Linien, Sortieren in Spalten, Markieren, Memory, Ankreuztabelle, Uhr stellen, Geld legen, Kreuzworträtsel", "Neu je Fach: Silbenrätsel und Rechtschreibdetektiv (Deutsch), Uhr stellen, Geld legen, Zahlenstrahl (Mathe), Magnet, Schwimmen, Strom, Jahreszeiten, Tiersteckbrief (Sache), Kreuzworträtsel und Uhr auf Englisch und Spanisch", "Die Formen kommen von allein in den Runden vor, wo es passt (z. B. der/die/das sortieren, Rechenmemory, Tiere sortieren, Vokabelmemory)"] },
   { v: "2.45.0", d: "08.11.2026", t: ["Spanisch U2 S1 wie im Heft: Satzanfang und Satzende verbinden, Fragewörter mit Akzent, welches Fragewort passt, ein Lied mit Fragewörtern", "Männlich oder weiblich, Einzahl oder Mehrzahl, Mehrzahl bilden, Bild und passender Satz, Schulfächer und Orte im Colegio", "Neu im Kursweg: „Ya sé…“ für jede Unidad mit Rätsel am Ende"] },
   { v: "2.44.0", d: "08.11.2026", t: ["Spanischkurs wie im Arbeitsheft: Satz ohne Lücken in Wörter trennen und Buchstabensuppe mit Passwort", "Verben im Präsens (ser, estar, tener …): Lücke mit Verb in Klammern, Verbtabelle, Verb im Satz antippen, Lumi hat sich in den Satz geschlichen", "Neu: ¿…? oder ¡…!, Länder und Nationalitäten, Flaggen, Wörter mit ñ, Farben hören und richtig ergänzen, Personen erraten"] },
   { v: "2.43.0", d: "08.11.2026", t: ["Lernwelt für Freunde: alle Welten, Spiele und die Leseecke", "Datenschutz: Alles bleibt nur auf diesem Gerät. Eigene Seite beim ersten Start, Leiste oben auf der Startseite (Tipp darauf zeigt alles wieder), Karte im Elternbereich und Hinweis überall, wo du schreibst, malst oder aufnimmst"] }
@@ -69099,6 +69242,918 @@ ACT.sohint = () => {
     if (G && G.q && G.q.kind === 'sopa' && G.so && G.so.q === G.q && G.so.phase === 2) tilesBind();
     return r;
   };
+})();
+
+/*@@src formen.js@@*/
+
+
+
+
+
+
+
+
+
+
+const FX_COL = ['#6b4fbf', '#2bb673', '#e0457b', '#ff8a1f', '#3b7cf0', '#c2185b'];
+const fxEscT = t => esc(t);
+
+const fxTpl = t => esc(t).replace(/⟪(\d+)⟫/g, '⟪$1⟫');
+function mkCloze(o) {
+  const bank = R.shuffle(o.gaps.concat(o.extra || []).map(String));
+  return { kind: 'cloze', prompt: o.prompt, visual: o.visual || '', tpl: o.tpl, gaps: o.gaps.map(String), bank, lang: o.lang || '', table: !!o.table,
+    explain: o.explain || '', solution: o.solution || o.gaps.join(', '), key: o.key || 'cloze|' + o.gaps.join('|') + o.tpl.length, after: o.after, afterLang: o.afterLang, sayLang: o.sayLang };
+}
+function mkMatch(o) {
+  const idx = R.shuffle(o.right.map((_, i) => i));
+  return { kind: 'match', prompt: o.prompt, visual: o.visual || '', left: o.left.slice(), right: idx.map(i => o.right[i]), sol: o.left.map((_, i) => idx.indexOf(i)), wide: !!o.wide,
+    lang: o.lang || '', explain: o.explain || '', solution: o.solution || o.left.map((l, i) => fxPlain(l) + ' = ' + fxPlain(o.right[i])).join(' · '), key: o.key || 'match|' + o.left.join('|'), after: o.after, afterLang: o.afterLang, sayLang: o.sayLang };
+}
+function mkSort(o) {
+  return { kind: 'sort', prompt: o.prompt, visual: o.visual || '', cols: o.cols.slice(), colLabels: (o.colLabels || o.cols.map(fxPlain)).slice(), items: R.shuffle(o.items.slice()),
+    lang: o.lang || '', explain: o.explain || '', solution: o.solution || o.cols.map((c, k) => fxPlain(c) + ': ' + o.items.filter(it => it.c === k).map(it => fxPlain(it.h)).join(', ')).join(' · '),
+    key: o.key || 'sort|' + o.items.map(it => it.h).sort().join('|'), after: o.after, afterLang: o.afterLang, sayLang: o.sayLang };
+}
+function mkMark(o) {
+  return { kind: 'mark', prompt: o.prompt, visual: o.visual || '', tokens: o.tokens.map(t => ({ h: t.h, ok: t.ok === null ? null : !!t.ok, sp: t.sp !== false })), grid: !!o.grid, count: o.count !== false,
+    lang: o.lang || '', explain: o.explain || '', solution: o.solution || o.tokens.filter(t => t.ok).map(t => fxPlain(t.h)).join(', '), key: o.key || 'mark|' + o.tokens.map(t => t.h).join(''), after: o.after, afterLang: o.afterLang, sayLang: o.sayLang };
+}
+function mkMemo(o) {
+  const cards = R.shuffle(o.pairs.flatMap((p, k) => [{ p: k, s: 0, h: p[0] }, { p: k, s: 1, h: p[1] }]));
+  return { kind: 'memo', prompt: o.prompt, visual: o.visual || '', cards, n: o.pairs.length, lang: o.lang || '', explain: o.explain || '',
+    solution: o.solution || o.pairs.map(p => fxPlain(p[0]) + ' = ' + fxPlain(p[1])).join(' · '), key: o.key || 'memo|' + o.pairs.map(p => p[0]).join('|'), noSol: true, after: o.after, afterLang: o.afterLang, sayLang: o.sayLang };
+}
+function fxPlain(h) { return String(h || '').replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/\s+/g, ' ').trim(); }
+const FX_KINDS = ['cloze', 'match', 'sort', 'mark', 'memo', 'raster', 'uhr', 'geld', 'kreuz'];
+
+
+function fxState(q) {
+  if (G.fx && G.fx.q === q) return G.fx;
+  const T = { q, tries: 0, busy: false, msg: '', sel: null, lock: new Set(), bad: new Set() };
+  if (q.kind === 'cloze') { T.place = q.gaps.map(() => null); T.sel = 0; }
+  if (q.kind === 'match') T.pair = q.left.map(() => null);
+  if (q.kind === 'sort') T.col = q.items.map(() => -1);
+  if (q.kind === 'mark') T.on = new Set();
+  if (q.kind === 'memo') { T.up = []; T.done = new Set(); T.miss = 0; }
+  if (q.kind === 'raster') T.pick = q.rows.map(() => -1);
+  if (q.kind === 'uhr') { T.h = 12; T.m = 0; }
+  if (q.kind === 'geld') T.table = [];
+  if (q.kind === 'kreuz') kzInit(q, T);
+  return (G.fx = T);
+}
+const fxTools = (T, ready) => `<div class="sp-tools"><button class="btn" data-act="fxok"${ready && !T.busy && !G.answered ? '' : ' disabled'}>Fertig ✓</button></div><p class="tl-msg" aria-live="polite">${esc(T.msg)}</p>`;
+
+
+function clozeHTML(q, T) {
+  const used = new Set(T.place.filter(x => x != null));
+  const gap = k => { const p = T.place[k], cls = ['cz-gap', p != null ? 'filled' : '', T.sel === k && p == null ? 'sel' : '', T.lock.has(k) ? 'lock' : '', T.bad.has(k) ? 'bad' : ''].filter(Boolean).join(' ');
+    return `<button class="${cls}" data-act="fxg" data-k="${k}"${G.answered ? ' disabled' : ''}>${p != null ? esc(q.bank[p]) : '&nbsp;'}</button>`; };
+  const body = q.tpl.replace(/⟪(\d+)⟫/g, (_, k) => gap(Number(k)));
+  const bank = `<div class="cz-bank">${q.bank.map((w, i) => `<button class="cz-tile${used.has(i) ? ' used' : ''}" data-act="fxt" data-i="${i}"${used.has(i) || G.answered ? ' disabled' : ''}>${esc(w)}</button>`).join('')}</div>`;
+  return `<div class="fx fx-cloze" id="fx"><div class="cz-text${q.table ? ' tab' : ''}"${q.lang ? ` lang="${q.lang.slice(0, 2)}"` : ''}>${body}</div>${bank}
+    <p class="sp-help">Tippe auf ein Wort, es kommt in die blaue Lücke. Eine Lücke antippen nimmt das Wort wieder heraus.</p>${fxTools(T, T.place.every(x => x != null))}</div>`;
+}
+
+function matchHTML(q, T) {
+  const colOf = i => FX_COL[i % FX_COL.length], rOwner = j => T.pair.indexOf(j);
+  const L = q.left.map((h, i) => { const p = T.pair[i] != null, cls = ['mt-i', 'l', p ? 'on' : '', T.sel && T.sel.s === 'l' && T.sel.i === i ? 'sel' : '', T.lock.has(i) ? 'lock' : '', T.bad.has(i) ? 'bad' : ''].filter(Boolean).join(' ');
+    return `<button class="${cls}" data-act="fxm" data-s="l" data-i="${i}"${p ? ` style="--mc:${colOf(i)}"` : ''}${G.answered ? ' disabled' : ''}>${h}<i class="mt-dot"></i></button>`; }).join('');
+  const Rr = q.right.map((h, j) => { const o = rOwner(j), cls = ['mt-i', 'r', o >= 0 ? 'on' : '', T.sel && T.sel.s === 'r' && T.sel.i === j ? 'sel' : '', o >= 0 && T.lock.has(o) ? 'lock' : '', o >= 0 && T.bad.has(o) ? 'bad' : ''].filter(Boolean).join(' ');
+    return `<button class="${cls}" data-act="fxm" data-s="r" data-i="${j}"${o >= 0 ? ` style="--mc:${colOf(o)}"` : ''}${G.answered ? ' disabled' : ''}><i class="mt-dot"></i>${h}</button>`; }).join('');
+  return `<div class="fx fx-match" id="fx"><div class="mt${q.wide ? ' wide' : ''}"${q.lang ? ` lang="${q.lang.slice(0, 2)}"` : ''}><div class="mt-col">${L}</div><div class="mt-col">${Rr}</div><svg class="mt-lines" aria-hidden="true"></svg></div>
+    <p class="sp-help">Tippe links etwas an und dann rechts das, was dazu passt. Nochmal antippen löst die Linie.</p>${fxTools(T, T.pair.every(x => x != null))}</div>`;
+}
+function fxLines() {
+  const box = document.querySelector('#fx .mt'), svg = box && box.querySelector('.mt-lines'); if (!svg || !G || !G.fx) return;
+  const T = G.fx, b = box.getBoundingClientRect(); let h = '';
+  T.pair.forEach((j, i) => { if (j == null) return;
+    const a = box.querySelector(`.mt-i.l[data-i="${i}"]`), c = box.querySelector(`.mt-i.r[data-i="${j}"]`); if (!a || !c) return;
+    const ra = a.getBoundingClientRect(), rc = c.getBoundingClientRect();
+    const x1 = ra.right - b.left - 4, y1 = ra.top + ra.height / 2 - b.top, x2 = rc.left - b.left + 4, y2 = rc.top + rc.height / 2 - b.top;
+    h += `<line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}" stroke="${T.bad.has(i) ? '#e5484d' : FX_COL[i % FX_COL.length]}" stroke-width="5" stroke-linecap="round"/>`; });
+  svg.setAttribute('viewBox', `0 0 ${b.width} ${b.height}`); svg.setAttribute('width', b.width); svg.setAttribute('height', b.height); svg.innerHTML = h;
+}
+
+function sortHTML(q, T) {
+  const card = (it, i) => `<button class="so-k${T.sel === i ? ' sel' : ''}${T.lock.has(i) ? ' lock' : ''}${T.bad.has(i) ? ' bad' : ''}" data-act="fxk" data-i="${i}"${G.answered || T.lock.has(i) ? ' disabled' : ''}>${it.h}</button>`;
+  const tray = q.items.map((it, i) => T.col[i] < 0 ? card(it, i) : '').join('');
+  const cols = q.cols.map((c, k) => `<div class="sr-col" data-act="fxc" data-c="${k}"><div class="sr-h">${c}</div><div class="sr-in">${q.items.map((it, i) => T.col[i] === k ? card(it, i) : '').join('')}</div></div>`).join('');
+  return `<div class="fx fx-sort" id="fx"${q.lang ? ` lang="${q.lang.slice(0, 2)}"` : ''}><div class="sr-tray" data-act="fxc" data-c="-1">${tray || '<span class="sr-empty">Alle Kärtchen liegen in den Spalten.</span>'}</div>
+    <div class="sr-cols" style="--n:${q.cols.length}">${cols}</div>
+    <p class="sp-help">Tippe ein Kärtchen an und dann die Spalte, in die es gehört.</p>${fxTools(T, T.col.every(c => c >= 0))}</div>`;
+}
+
+function markHTML(q, T) {
+  const n = q.tokens.filter(t => t.ok).length;
+  const toks = q.tokens.map((t, i) => t.ok === null ? `<span class="mk-s">${t.h}</span>${t.sp ? ' ' : ''}` : `<button class="mk-t${T.on.has(i) ? ' on' : ''}${T.lock.has(i) ? ' lock' : ''}${T.bad.has(i) ? ' bad' : ''}" data-act="fxx" data-i="${i}"${G.answered ? ' disabled' : ''}>${t.h}</button>${t.sp && !q.grid ? ' ' : ''}`).join('');
+  return `<div class="fx fx-mark" id="fx"><div class="mk-text${q.grid ? ' grid' : ''}"${q.lang ? ` lang="${q.lang.slice(0, 2)}"` : ''}>${toks}</div>
+    <p class="sp-help">Tippe alle passenden an${q.count ? ` (es sind ${n})` : ''}. Nochmal tippen nimmt die Markierung weg.</p>${fxTools(T, T.on.size > 0)}</div>`;
+}
+
+function memoHTML(q, T) {
+  const cards = q.cards.map((c, i) => { const open = T.up.includes(i) || T.done.has(c.p);
+    return `<button class="me-c${open ? ' open' : ''}${T.done.has(c.p) ? ' done' : ''}" data-act="fxy" data-i="${i}"${open || G.answered ? ' disabled' : ''} aria-label="${open ? esc(fxPlain(c.h)) : 'Karte'}"><span class="me-f">${open ? c.h : '?'}</span></button>`; }).join('');
+  return `<div class="fx fx-memo" id="fx"><div class="me-grid" style="--n:${q.cards.length > 8 ? 4 : q.cards.length > 6 ? 4 : 3}"${q.lang ? ` lang="${q.lang.slice(0, 2)}"` : ''}>${cards}</div>
+    <p class="sp-help">Deck immer zwei Karten auf. Passen sie zusammen, bleiben sie offen. ${T.done.size} von ${q.n} Paaren.</p><p class="tl-msg" aria-live="polite">${esc(T.msg)}</p></div>`;
+}
+function fxHTML(q) {
+  const T = fxState(q);
+  return q.kind === 'cloze' ? clozeHTML(q, T) : q.kind === 'match' ? matchHTML(q, T) : q.kind === 'sort' ? sortHTML(q, T) : q.kind === 'mark' ? markHTML(q, T)
+    : q.kind === 'raster' ? rasterHTML(q, T) : q.kind === 'uhr' ? uhrHTML(q, T) : q.kind === 'geld' ? geldHTML(q, T) : q.kind === 'kreuz' ? kreuzHTML(q, T) : memoHTML(q, T);
+}
+function fxRender() { const el = $('#fx'); if (!el || !G || !G.q) return; el.outerHTML = fxHTML(G.q); if (G.q.kind === 'match') requestAnimationFrame(fxLines); }
+
+
+ACT.fxg = t => { const T = G && G.fx; if (!T || G.answered || T.busy) return; const k = Number(t.dataset.k); if (T.lock.has(k)) return;
+  if (T.place[k] != null) T.place[k] = null; T.sel = k; T.bad.clear(); T.msg = ''; Sound.tap(); fxRender(); };
+ACT.fxt = t => { const T = G && G.fx; if (!T || G.answered || T.busy) return; const i = Number(t.dataset.i); if (T.place.includes(i)) return;
+  let k = T.sel != null && T.place[T.sel] == null ? T.sel : T.place.findIndex(x => x == null); if (k < 0) return;
+  T.place[k] = i; T.bad.clear(); T.msg = ''; const nx = T.place.findIndex((x, j) => x == null && j > k); T.sel = nx >= 0 ? nx : T.place.findIndex(x => x == null);
+  Sound.tap(); fxRender(); };
+ACT.fxm = t => { const T = G && G.fx; if (!T || G.answered || T.busy) return; const s = t.dataset.s, i = Number(t.dataset.i);
+  const li = s === 'l' ? i : T.pair.indexOf(i);
+  if (li >= 0 && T.pair[li] != null && T.lock.has(li)) return;
+  if (li >= 0 && T.pair[li] != null) { T.pair[li] = null; T.sel = null; T.bad.clear(); Sound.tap(); fxRender(); return; }
+  if (T.sel && T.sel.s !== s) { const L = s === 'l' ? i : T.sel.i, Rj = s === 'r' ? i : T.sel.i; T.pair[L] = Rj; T.sel = null; T.bad.clear(); T.msg = ''; Sound.tap(); fxRender(); return; }
+  T.sel = T.sel && T.sel.s === s && T.sel.i === i ? null : { s, i }; Sound.tap(); fxRender(); };
+ACT.fxk = t => { const T = G && G.fx; if (!T || G.answered || T.busy) return; const i = Number(t.dataset.i); if (T.lock.has(i)) return; T.sel = T.sel === i ? null : i; T.msg = ''; Sound.tap(); fxRender(); };
+ACT.fxc = (t, e) => { const T = G && G.fx; if (!T || G.answered || T.busy) return; if (e && e.target.closest('.so-k')) return;
+  if (T.sel == null) { T.msg = 'Tippe zuerst ein Kärtchen an.'; fxRender(); return; }
+  T.col[T.sel] = Number(t.dataset.c); T.sel = null; T.bad.clear(); T.msg = ''; Sound.tap(); fxRender(); };
+ACT.fxx = t => { const T = G && G.fx; if (!T || G.answered || T.busy) return; const i = Number(t.dataset.i); if (T.lock.has(i)) return;
+  T.on.has(i) ? T.on.delete(i) : T.on.add(i); T.bad.clear(); T.msg = ''; Sound.tap(); fxRender(); };
+ACT.fxy = t => { const T = G && G.fx; if (!T || G.answered || T.busy) return; const q = T.q, i = Number(t.dataset.i), c = q.cards[i];
+  if (T.up.includes(i) || T.done.has(c.p) || T.up.length >= 2) return;
+  T.up.push(i); Sound.tap();
+  if (T.up.length === 2) {
+    const [a, b] = T.up.map(k => q.cards[k]);
+    if (a.p === b.p) { T.done.add(a.p); T.up = []; T.msg = '✓ Passt!'; Sound.good();
+      if (T.done.size === q.n) { fxRender(); setTimeout(() => { if (G && G.fx === T && !G.answered) answer(true, T.miss > q.n + 1); }, 450); return; } }
+    else { T.miss++; T.busy = true; T.msg = ''; fxRender(); setTimeout(() => { if (!G || G.fx !== T) return; T.up = []; T.busy = false; fxRender(); }, 950); return; }
+  }
+  fxRender(); };
+ACT.fxok = () => {
+  const T = G && G.fx; if (!T || G.answered || T.busy) return; const q = T.q;
+  let wrong = [], miss = [];
+  if (q.kind === 'cloze') wrong = q.gaps.map((g, k) => T.place[k] == null || q.bank[T.place[k]] !== g ? k : -1).filter(k => k >= 0);
+  if (q.kind === 'match') wrong = q.sol.map((s, i) => T.pair[i] !== s ? i : -1).filter(i => i >= 0);
+  if (q.kind === 'sort') wrong = q.items.map((it, i) => T.col[i] !== it.c ? i : -1).filter(i => i >= 0);
+  if (q.kind === 'mark') { wrong = [...T.on].filter(i => !q.tokens[i].ok); miss = q.tokens.map((t, i) => t.ok && !T.on.has(i) ? i : -1).filter(i => i >= 0); }
+  if (q.kind === 'raster') wrong = q.rows.map((r, i) => T.pick[i] !== r.c ? i : -1).filter(i => i >= 0);
+  if (q.kind === 'uhr' || q.kind === 'geld') return fxCheck1(T);
+  const allIdx = q.kind === 'cloze' ? q.gaps.map((_, k) => k) : q.kind === 'match' ? q.left.map((_, i) => i) : q.kind === 'sort' ? q.items.map((_, i) => i) : q.kind === 'raster' ? q.rows.map((_, i) => i) : [...T.on];
+  if (!wrong.length && !miss.length) { allIdx.forEach(i => T.lock.add(i)); fxRender(); answer(true, T.tries > 0); return; }
+  T.tries++; Sound.bad();
+  if (T.tries === 1 && S.settings.retry !== false && !G.ttProbe) {
+    allIdx.filter(i => !wrong.includes(i)).forEach(i => T.lock.add(i));
+    T.bad = new Set(wrong); T.busy = true;
+    const n = wrong.length;
+    T.msg = q.kind === 'mark' ? (n && miss.length ? `Fast! ${n === 1 ? 'Eine Markierung ist' : n + ' Markierungen sind'} falsch, und es fehlen noch ${miss.length}.` : n ? `Fast! ${n === 1 ? 'Eine Markierung ist' : n + ' Markierungen sind'} falsch.` : `Fast! Es fehlen noch ${miss.length}.`)
+      : `Fast! ${n === 1 ? 'Eins stimmt' : n + ' stimmen'} noch nicht. Die roten kommen zurück.`;
+    fxRender();
+    setTimeout(() => { if (!G || G.fx !== T) return;
+      if (q.kind === 'cloze') wrong.forEach(k => { T.place[k] = null; }); if (q.kind === 'match') wrong.forEach(i => { T.pair[i] = null; });
+      if (q.kind === 'sort') wrong.forEach(i => { T.col[i] = -1; }); if (q.kind === 'mark') wrong.forEach(i => T.on.delete(i)); if (q.kind === 'raster') wrong.forEach(i => { T.pick[i] = -1; });
+      if (q.kind === 'cloze') T.sel = T.place.findIndex(x => x == null);
+      T.bad.clear(); T.busy = false; fxRender(); }, 1200);
+    return;
+  }
+
+  if (q.kind === 'cloze') { const free = q.bank.map((_, i) => i); T.place = q.gaps.map(g => { const i = free.find(j => q.bank[j] === g); free.splice(free.indexOf(i), 1); return i; }); }
+  if (q.kind === 'match') T.pair = q.sol.slice();
+  if (q.kind === 'sort') T.col = q.items.map(it => it.c);
+  if (q.kind === 'mark') T.on = new Set(q.tokens.map((t, i) => t.ok ? i : -1).filter(i => i >= 0));
+  if (q.kind === 'raster') T.pick = q.rows.map(r => r.c);
+  T.bad.clear(); T.lock = new Set(q.kind === 'cloze' ? q.gaps.map((_, k) => k) : q.kind === 'match' ? q.left.map((_, i) => i) : q.kind === 'sort' ? q.items.map((_, i) => i) : q.kind === 'raster' ? q.rows.map((_, i) => i) : [...T.on]);
+  T.msg = ''; fxRender(); answer(false);
+};
+
+
+(function () {
+  const ah = answersHTML;
+  answersHTML = function (q) { if (q && FX_KINDS.includes(q.kind)) return fxHTML(q); return ah.apply(this, arguments); };
+  const rq = renderQuestion;
+  renderQuestion = function () { const r = rq.apply(this, arguments); if (G && G.q && G.q.kind === 'match') requestAnimationFrame(fxLines); return r; };
+  window.addEventListener('resize', () => { if (G && G.q && G.q.kind === 'match') fxLines(); });
+  const pr = prepReplay;
+  prepReplay = function (q) { const c = pr.apply(this, arguments); if (c && c.kind === 'cloze') c.bank = R.shuffle(c.bank); if (c && c.kind === 'memo') c.cards = R.shuffle(c.cards); if (c && c.kind === 'sort') c.items = R.shuffle(c.items); return c; };
+})();
+
+
+
+
+
+
+
+
+
+
+const FX_P = 0.3, FX_PX = 0.25;
+const FX_TXT = {
+  de: { raster: 'Kreuze in jeder Zeile das Richtige an.', sort: 'Sortiere die Kärtchen richtig ein.', match: 'Was gehört zusammen? Verbinde.', memo: 'Memory: Finde die Paare.', cloze: 'Setze die Wörter richtig ein.' },
+  en: { raster: 'Tick the right box in every row.', sort: 'Sort the cards.', match: 'Match the pairs.', memo: 'Memory: find the pairs.', cloze: 'Fill in the gaps.' },
+  es: { raster: 'Marca la casilla correcta en cada fila.', sort: 'Clasifica las tarjetas.', match: 'Une las parejas.', memo: 'Memory: busca las parejas.', cloze: 'Completa con las palabras.' }
+};
+function fxLang(gid) { try { const l = langOf(gid); return FX_TXT[l] ? l : 'de'; } catch (e) { return 'de'; } }
+const fxBad = q => !q || /<svg|<img|<canvas|listen-btn|data-hint|q-word en hint/.test(q.visual || '') || !!q.listen;
+function fxAllowed(gid) {
+  const g = GAMES[gid];
+  return !!(!window.LW_FX_AUS && G && (G.mode === 'game' || G.mode === 'mix') && g && g.gen && !g.ff && !g.noFx && !['tool', 'blitz', 'memory', 'custom'].includes(g.type) && !G.ttProbe);
+}
+function fxVisualText(q) { return fxPlain(String(q.visual || '').replace(/<div class="q-word en hint"[^]*?<\/div>/g, '')); }
+function fxTrySort(Q, gid) {
+  const ch = Q.filter(q => q.kind === 'choice' && !fxBad(q) && q.options.length >= 2 && q.options.length <= 5);
+  const by = {}; ch.forEach(q => { const k = q.options.map(o => o.label).sort().join('|'); (by[k] = by[k] || []).push(q); });
+  const grp = Object.values(by).sort((a, b) => b.length - a.length)[0]; if (!grp || grp.length < 5) return null;
+  const same = new Set(grp.map(q => q.prompt)).size === 1;
+  const it = q => { const v = fxVisualText(q); if (same) return v && v.length <= 48 ? v : ''; const p = q.prompt.length <= 70 ? q.prompt : ''; return v && /[A-Za-zÄÖÜäöüßÁÉÍÓÚáéíóúñ0-9]/.test(v) && v.length <= 48 ? v : p && (p + (v ? ' ' + v : '')).length <= 80 ? (p + (v ? ' ' + v : '')).trim() : ''; };
+  const pick = []; const seen = new Set();
+  for (const q of grp) { const t = it(q); if (!t || seen.has(t)) continue; seen.add(t); pick.push([q, t]); if (pick.length === 6) break; }
+  if (pick.length < 5) return null;
+  const first = pick[0][0], order = first.options.map(o => o.label), html = first.options.map(o => o.html);
+  const items = pick.map(([q, t]) => ({ h: esc(t), c: order.indexOf(q.options.find(o => o.ok).label) }));
+  if (items.some(x => x.c < 0) || new Set(items.map(x => x.c)).size < 2) return null;
+  const L = fxLang(gid);
+  if (html.length <= 3 && items.every(x => fxPlain(x.h).length <= 60) && R.chance(.45) && typeof mkRaster === 'function')
+    return mkRaster({ prompt: FX_TXT[L].raster, visual: same ? `<div class="q-text">${esc(first.prompt)}</div>` : '', cols: html, colLabels: order, rows: items, lang: L === 'de' ? '' : (L === 'es' ? 'es-ES' : 'en-GB'),
+      explain: pick.map(([q, t]) => `${t}: ${q.options.find(o => o.ok).label}`).join(' · '), key: 'fxr|' + gid + '|' + items.map(x => x.h).sort().join('|') });
+  return mkSort({ prompt: FX_TXT[L].sort, visual: same ? `<div class="q-text">${esc(first.prompt)}</div>` : '', cols: html, colLabels: order, items, lang: L === 'de' ? '' : (L === 'es' ? 'es-ES' : 'en-GB'),
+    explain: pick.map(([q, t]) => `${t}: ${q.options.find(o => o.ok).label}`).join(' · '), key: 'fxs|' + gid + '|' + items.map(x => x.h).sort().join('|') });
+}
+function fxTryMatch(Q, gid) {
+  const mm = Q.filter(q => (q.kind === 'choice' || q.kind === 'number') && !fxBad(q) && !(q.kind === 'choice' && q.fixed));
+  if (mm.length < 4) return null;
+  const same = new Set(mm.map(q => q.prompt)).size === 1, L = fxLang(gid);
+  const left = q => { const v = fxVisualText(q); if (same) return v.length && v.length <= 34 ? v : ''; const t = (q.prompt + (v ? ' ' + v : '')).trim(); return t.length <= 90 ? t : ''; };
+  const right = q => q.kind === 'number' ? { h: esc(q.solution), t: String(q.solution) } : (() => { const o = q.options.find(x => x.ok); return { h: o.html, t: o.label }; })();
+  const pick = [], sl = new Set(), sr = new Set();
+  for (const q of mm) { const l = left(q), r = right(q); if (!l || !r.t || r.t.length > 28 || /<svg/.test(r.h) || sl.has(l) || sr.has(r.t)) continue; sl.add(l); sr.add(r.t); pick.push([l, r, q]); if (pick.length === 4) break; }
+  if (pick.length < 4) return null;
+  const lang = L === 'de' ? '' : (L === 'es' ? 'es-ES' : 'en-GB'), vis = same ? `<div class="q-text">${esc(pick[0][2].prompt)}</div>` : '';
+  if (same && pick.every(([l, r]) => l.length <= 22 && r.t.length <= 22) && R.chance(.45))
+    return mkMemo({ prompt: FX_TXT[L].memo, visual: vis, pairs: pick.map(([l, r]) => [esc(l), r.h]), lang, key: 'fxy|' + gid + '|' + pick.map(p => p[0]).join('|') });
+  return mkMatch({ prompt: FX_TXT[L].match, visual: vis, left: pick.map(([l]) => esc(l)), right: pick.map(([, r]) => r.h), wide: !same, lang,
+    explain: pick.map(([l, r]) => `${l} → ${r.t}`).join(' · '), key: 'fxm|' + gid + '|' + pick.map(p => p[0]).join('|') });
+}
+function fxTryCloze(Q, gid) {
+  const gq = Q.filter(q => q.kind === 'choice' && !fxBad(q) && /q-gap/.test(q.visual || '') && typeof q.after === 'string');
+  const pick = [], seen = new Set();
+  for (const q of gq) {
+    const a = q.options.find(o => o.ok).label; if (!a || a.length > 22 || /<|⟪/.test(a) || seen.has(q.after)) continue;
+    const re = new RegExp('(^|[^\\p{L}])' + a.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '(?=$|[^\\p{L}])', 'gu');
+    const m = q.after.match(re); if (!m || m.length !== 1 || q.after.length > 120) continue;
+    seen.add(q.after); pick.push([q, a, re]); if (pick.length === 3) break;
+  }
+  if (pick.length < 3) return null;
+  const answers = pick.map(p => p[1]);
+  const extra = R.sample([...new Set(pick.flatMap(([q]) => q.options.filter(o => !o.ok).map(o => o.label)))].filter(w => w.length <= 22 && !answers.includes(w) && !/</.test(w)), 2);
+  const tpl = pick.map(([q, a, re], k) => `<p class="cz-line">${esc(q.after).replace(new RegExp(re.source, 'u'), (m0, pre) => pre + '⟪' + k + '⟫')}</p>`).join('');
+  if ((tpl.match(/⟪\d⟫/g) || []).length !== 3) return null;
+  const L = fxLang(gid);
+  return mkCloze({ prompt: FX_TXT[L].cloze, tpl, gaps: answers, extra, lang: L === 'de' ? '' : (L === 'es' ? 'es-ES' : 'en-GB'),
+    explain: pick.map(([q]) => q.after).join(' '), after: pick.map(([q]) => q.after).join(' '), afterLang: pick[0][0].afterLang, key: 'fxc|' + gid + '|' + answers.join('|') + pick[0][0].after.length });
+}
+(function () {
+  const gf = genFor;
+  genFor = function (gid, lv) {
+    if (!fxAllowed(gid)) return gf.apply(this, arguments);
+    const g = GAMES[gid], r = Math.random();
+    if (g.fx && g.fx.length && r < FX_PX) {
+      try { const ctx = ctxFor(gid, lv), q = R.pick(g.fx)(ctx); if (q && q.prompt && !G.used.has(gid + q.key)) { G.used.add(gid + q.key); return q; } } catch (e) { try { reportProblem(e, gid); } catch (_) { } }
+    }
+    const q0 = gf.apply(this, arguments);
+    if (r >= FX_PX + FX_P || q0.kind === 'split' || q0.kind === 'sopa' || FX_KINDS.includes(q0.kind)) return q0;
+    const Q = [q0]; for (let i = 0; i < 9; i++) { try { Q.push(gf(gid, lv)); } catch (e) { break; } }
+    for (const f of R.shuffle([fxTrySort, fxTryMatch, fxTryCloze])) { let v = null; try { v = f(Q, gid); } catch (e) { v = null; } if (v) { G.used.add(gid + v.key); return v; } }
+    return q0;
+  };
+})();
+
+
+
+
+
+
+
+
+function mkRaster(o) {
+  return { kind: 'raster', prompt: o.prompt, visual: o.visual || '', cols: o.cols.slice(), colLabels: (o.colLabels || o.cols.map(fxPlain)).slice(), rows: R.shuffle(o.rows.slice()), lang: o.lang || '',
+    explain: o.explain || '', solution: o.solution || o.rows.map(r => fxPlain(r.h) + ': ' + fxPlain(o.cols[r.c])).join(' · '), key: o.key || 'raster|' + o.rows.map(r => r.h).join('|'), after: o.after, afterLang: o.afterLang };
+}
+function rasterHTML(q, T) {
+  const head = `<tr><th></th>${q.cols.map(c => `<th>${c}</th>`).join('')}</tr>`;
+  const body = q.rows.map((r, i) => `<tr class="${T.lock.has(i) ? 'lock' : ''}${T.bad.has(i) ? ' bad' : ''}"><th>${r.h}</th>${q.cols.map((_, k) => `<td><button class="ra-x${T.pick[i] === k ? ' on' : ''}" data-act="fxr" data-i="${i}" data-k="${k}" aria-label="${esc(fxPlain(r.h))}: ${esc(q.colLabels[k])}"${G.answered || T.lock.has(i) ? ' disabled' : ''}>${T.pick[i] === k ? '✕' : ''}</button></td>`).join('')}</tr>`).join('');
+  return `<div class="fx fx-raster" id="fx"><div class="ra-wrap"><table class="ra"${q.lang ? ` lang="${q.lang.slice(0, 2)}"` : ''}><thead>${head}</thead><tbody>${body}</tbody></table></div>
+    <p class="sp-help">Mach in jeder Zeile ein Kreuz in der richtigen Spalte.</p>${fxTools(T, T.pick.every(x => x >= 0))}</div>`;
+}
+ACT.fxr = t => { const T = G && G.fx; if (!T || G.answered || T.busy) return; const i = Number(t.dataset.i), k = Number(t.dataset.k); if (T.lock.has(i)) return;
+  T.pick[i] = T.pick[i] === k ? -1 : k; T.bad.clear(); T.msg = ''; Sound.tap(); fxRender(); };
+
+
+function mkUhr(o) {
+  return { kind: 'uhr', prompt: o.prompt, visual: o.visual || '', h: o.h, m: o.m, step: o.step || 30, lang: o.lang || '', explain: o.explain || '',
+    solution: o.solution || `${o.h}:${String(o.m).padStart(2, '0')}`, key: o.key || 'uhr|' + o.h + ':' + o.m + (o.visual || '').length, after: o.after, afterLang: o.afterLang };
+}
+function uhrHTML(q, T) {
+  const b = (w, d, l) => `<button class="btn ghost uh-b" data-act="fxu" data-w="${w}" data-d="${d}" aria-label="${l}"${G.answered ? ' disabled' : ''}>${d < 0 ? '◀' : '▶'}</button>`;
+  return `<div class="fx fx-uhr" id="fx"><div class="uh-row"><div class="uh-clock">${clockSVG(T.h, T.m)}</div>
+    <div class="uh-ctl"><div class="uh-g"><span>⏱️ kleiner Zeiger<br><small>Stunden</small></span><div>${b('h', -1, 'Stunde zurück')}${b('h', 1, 'Stunde vor')}</div></div>
+      <div class="uh-g"><span>🕐 großer Zeiger<br><small>Minuten</small></span><div>${b('m', -1, 'Minuten zurück')}${b('m', 1, 'Minuten vor')}</div></div></div></div>
+    <p class="sp-help">Stell die Uhr mit den Pfeilen ein. Der große Zeiger springt immer ${q.step} Minuten weiter.</p>${fxTools(T, true)}</div>`;
+}
+ACT.fxu = t => { const T = G && G.fx; if (!T || G.answered || T.busy) return; const q = T.q, d = Number(t.dataset.d);
+  if (t.dataset.w === 'h') T.h = ((T.h - 1 + d) % 12 + 12) % 12 + 1;
+  else { let m = T.m + d * q.step; if (m >= 60) { m -= 60; T.h = T.h % 12 + 1; } if (m < 0) { m += 60; T.h = ((T.h - 2) % 12 + 12) % 12 + 1; } T.m = m; }
+  T.msg = ''; Sound.tap(); fxRender(); };
+
+
+const FX_MZ = [1, 2, 5, 10, 20, 50, 100, 200, 500, 1000, 2000];
+const fxEuro = c => c % 100 === 0 ? `${c / 100} €` : c < 100 ? `${c} ct` : `${Math.floor(c / 100)},${String(c % 100).padStart(2, '0')} €`;
+const fxMzHTML = v => `<span class="mz ${v >= 500 ? 'schein' : v >= 100 ? 'euro' : v >= 10 ? 'gold' : 'kupfer'}">${v >= 100 ? v / 100 + ' €' : v + ' ct'}</span>`;
+function fxGreedy(c, coins) { const out = []; [...coins].sort((a, b) => b - a).forEach(v => { while (c >= v) { out.push(v); c -= v; } }); return out; }
+function mkGeld(o) {
+  const coins = o.coins || FX_MZ.filter(v => v <= Math.max(o.target, 50));
+  return { kind: 'geld', prompt: o.prompt, visual: o.visual || '', target: o.target, coins, wenig: !!o.wenig, lang: o.lang || '', explain: o.explain || `${fxEuro(o.target)} = ${fxGreedy(o.target, coins).map(fxEuro).join(' + ')}`,
+    solution: fxGreedy(o.target, coins).map(fxEuro).join(' + '), key: o.key || 'geld|' + o.target + (o.wenig ? 'w' : ''), after: o.after, afterLang: o.afterLang };
+}
+function geldHTML(q, T) {
+  const purse = q.coins.map(v => `<button class="mz-b" data-act="fxgp" data-v="${v}"${G.answered || T.table.length >= 20 ? ' disabled' : ''}>${fxMzHTML(v)}</button>`).join('');
+  const table = T.table.length ? T.table.map((v, i) => `<button class="mz-b" data-act="fxgt" data-i="${i}"${G.answered ? ' disabled' : ''} aria-label="${fxEuro(v)} wegnehmen">${fxMzHTML(v)}</button>`).join('') : '<span class="sr-empty">Hier liegt noch kein Geld.</span>';
+  return `<div class="fx fx-geld" id="fx"><div class="mz-tisch">${table}</div><div class="mz-purse">${purse}</div>
+    <p class="sp-help">Tippe unten auf Münzen und Scheine, sie kommen auf den Tisch. Auf dem Tisch antippen legt sie zurück.${q.wenig ? ' Nimm so wenige wie möglich!' : ''}</p>${fxTools(T, T.table.length > 0)}</div>`;
+}
+ACT.fxgp = t => { const T = G && G.fx; if (!T || G.answered || T.busy || T.table.length >= 20) return; T.table.push(Number(t.dataset.v)); T.table.sort((a, b) => b - a); T.msg = ''; Sound.tap(); fxRender(); };
+ACT.fxgt = t => { const T = G && G.fx; if (!T || G.answered || T.busy) return; T.table.splice(Number(t.dataset.i), 1); T.msg = ''; Sound.tap(); fxRender(); };
+function fxCheck1(T) {
+  const q = T.q; let ok, hint = '';
+  if (q.kind === 'uhr') { const hOk = T.h % 12 === q.h % 12, mOk = T.m === q.m; ok = hOk && mOk;
+    hint = !mOk && !hOk ? 'Beide Zeiger stimmen noch nicht.' : !mOk ? 'Der große Zeiger (Minuten) stimmt noch nicht.' : 'Der kleine Zeiger (Stunde) stimmt noch nicht.'; }
+  else { const s = T.table.reduce((a, b) => a + b, 0), min = fxGreedy(q.target, q.coins).length; ok = s === q.target && (!q.wenig || T.table.length <= min);
+    hint = s < q.target ? `Das sind ${fxEuro(s)}. Es fehlen noch ${fxEuro(q.target - s)}.` : s > q.target ? `Das sind ${fxEuro(s)}, das ist zu viel.` : 'Der Betrag stimmt, aber es geht mit weniger Münzen.'; }
+  if (ok) { fxRender(); answer(true, T.tries > 0); return; }
+  T.tries++; Sound.bad();
+  if (T.tries === 1 && S.settings.retry !== false && !G.ttProbe) { T.msg = 'Fast! ' + hint; fxRender(); return; }
+  if (q.kind === 'uhr') { T.h = q.h % 12 || 12; T.m = q.m; } else T.table = fxGreedy(q.target, q.coins);
+  T.msg = ''; fxRender(); answer(false);
+}
+
+
+function mkKreuz(o) {
+  const items = o.words.map(([w, clue]) => [sopaUp(w), w, clue]).filter(x => x[0].length >= 3 && x[0].length <= (o.maxLen || 8));
+  const want = Math.min(o.n || 5, items.length);
+  for (let tr = 0; tr < 150; tr++) {
+    const pool = R.shuffle(items).slice(0, 9);
+    const cells = new Map(), dirs = new Map(), placed = [];
+    const at = (r, c, d, k) => d === 'v' ? [r + k, c] : [r, c + k];
+    const put = (u, r, c, d, w, clue) => { Array.from(u).forEach((ch, k) => { const [rr, cc] = at(r, c, d, k), key = rr + ',' + cc; cells.set(key, ch); dirs.set(key, (dirs.get(key) || '') + d); }); placed.push({ u, w, clue, r, c, d }); };
+    const can = (u, r, c, d) => {
+      const L = Array.from(u), [br, bc] = at(r, c, d, -1), [ar, ac] = at(r, c, d, L.length);
+      if (cells.has(br + ',' + bc) || cells.has(ar + ',' + ac)) return false;
+      let cross = 0;
+      for (let k = 0; k < L.length; k++) {
+        const [rr, cc] = at(r, c, d, k), key = rr + ',' + cc, g = cells.get(key);
+        if (g) { if (g !== L[k] || (dirs.get(key) || '').includes(d)) return false; cross++; continue; }
+        const n1 = d === 'v' ? rr + ',' + (cc - 1) : (rr - 1) + ',' + cc, n2 = d === 'v' ? rr + ',' + (cc + 1) : (rr + 1) + ',' + cc;
+        if (cells.has(n1) || cells.has(n2)) return false;
+      }
+      return cross > 0;
+    };
+    put(pool[0][0], 0, 0, 'h', pool[0][1], pool[0][2]);
+    for (const [u, w, clue] of pool.slice(1)) {
+      if (placed.length >= want || placed.some(p => p.u === u)) continue;
+      const cand = [];
+      placed.forEach(p => Array.from(p.u).forEach((ch, k) => { const [pr, pc] = at(p.r, p.c, p.d, k), d = p.d === 'h' ? 'v' : 'h';
+        Array.from(u).forEach((ch2, j) => { if (ch2 !== ch) return; const r = d === 'v' ? pr - j : pr, c = d === 'h' ? pc - j : pc; if (can(u, r, c, d)) cand.push([r, c, d]); }); }));
+      if (cand.length) { const [r, c, d] = R.pick(cand); put(u, r, c, d, w, clue); }
+    }
+    if (placed.length < Math.min(want, 4)) continue;
+    let r0 = 1e9, c0 = 1e9, r1 = -1e9, c1 = -1e9; cells.forEach((_, k) => { const [r, c] = k.split(',').map(Number); r0 = Math.min(r0, r); r1 = Math.max(r1, r); c0 = Math.min(c0, c); c1 = Math.max(c1, c); });
+    const rows = r1 - r0 + 1, cols = c1 - c0 + 1; if (rows > (o.max || 9) || cols > (o.max || 9)) continue;
+    const words = placed.map(p => ({ u: p.u, w: p.w, clue: p.clue, r: p.r - r0, c: p.c - c0, d: p.d }));
+    const starts = [...new Set(words.map(x => x.r * 100 + x.c))].sort((a, b) => a - b);
+    words.forEach(x => { x.n = starts.indexOf(x.r * 100 + x.c) + 1; });
+    words.sort((a, b) => a.n - b.n || (a.d === 'h' ? -1 : 1));
+    return { kind: 'kreuz', prompt: o.prompt || 'Kreuzworträtsel: Tippe einen Hinweis an und leg das Wort.', visual: o.visual || '', rows, cols, words, lang: o.lang || '',
+      explain: o.explain || words.map(x => `${x.n} ${x.d === 'h' ? '→' : '↓'} ${x.w}`).join(' · '), solution: words.map(x => x.w).join(', '), key: o.key || 'kreuz|' + words.map(x => x.u).sort().join('|'), after: o.after, afterLang: o.afterLang };
+  }
+  return null;
+}
+const kzKeys = w => Array.from(w.u).map((_, k) => (w.d === 'v' ? w.r + k : w.r) + ',' + (w.d === 'h' ? w.c + k : w.c));
+function kzInit(q, T) { T.cells = {}; T.solved = new Set(); T.err = q.words.map(() => 0); T.rev = new Set(); T.flash = null; kzSelect(T, 0); }
+function kzLocked(T) { const s = new Set(); T.solved.forEach(i => kzKeys(T.q.words[i]).forEach(k => s.add(k))); return s; }
+function kzSelect(T, i) {
+  const q = T.q, w = q.words[i], lock = kzLocked(T); T.cur = i;
+  const keys = kzKeys(w).filter(k => !lock.has(k)); keys.forEach(k => { delete T.cells[k]; });
+  const need = kzKeys(w).map((k, j) => lock.has(k) ? null : Array.from(w.u)[j]).filter(Boolean);
+  const extra = R.pick('AEIORSTLNM'.split('').filter(x => !need.includes(x)));
+  T.tiles = mixTiles(need.concat(extra), m => m.slice(0, need.length).join('') === need.join('')); T.used = []; T.msg = '';
+}
+function kreuzHTML(q, T) {
+  const cov = {}; q.words.forEach((w, i) => kzKeys(w).forEach(k => { (cov[k] = cov[k] || []).push(i); }));
+  const startN = {}; q.words.forEach(w => { startN[w.r + ',' + w.c] = w.n; });
+  const curK = new Set(T.cur != null ? kzKeys(q.words[T.cur]) : []), lock = kzLocked(T), rev = new Set(); T.rev.forEach(i => kzKeys(q.words[i]).forEach(k => rev.add(k)));
+  let g = '';
+  for (let r = 0; r < q.rows; r++) for (let c = 0; c < q.cols; c++) { const k = r + ',' + c;
+    if (!cov[k]) { g += '<span class="kz-n"></span>'; continue; }
+    const cls = ['kz-c', curK.has(k) ? 'cur' : '', lock.has(k) ? 'ok' : '', rev.has(k) ? 'rev' : '', T.flash && T.flash.includes(k) ? 'bad' : ''].filter(Boolean).join(' ');
+    g += `<button class="${cls}" data-act="kzc" data-k="${k}"${G.answered ? ' disabled' : ''}>${startN[k] ? `<i>${startN[k]}</i>` : ''}${esc(T.cells[k] || '')}</button>`; }
+  const clues = q.words.map((w, i) => `<button class="kz-h${i === T.cur ? ' cur' : ''}${T.solved.has(i) ? ' ok' : ''}" data-act="kzw" data-i="${i}"${G.answered ? ' disabled' : ''}><b>${w.n} ${w.d === 'h' ? '→' : '↓'}</b><span>${w.clue}</span>${T.solved.has(i) ? '<em>✓</em>' : ''}</button>`).join('');
+  let entry = '';
+  if (T.cur != null && !T.solved.has(T.cur) && !G.answered) {
+    const w = q.words[T.cur];
+    const slots = kzKeys(w).map(k => `<span class="slot${T.cells[k] ? ' filled' : ''}${lock.has(k) ? ' locked' : ''}">${esc(T.cells[k] || '')}</span>`).join('');
+    entry = `<div class="kz-e"><div class="kz-ew"><b>${w.n} ${w.d === 'h' ? '→' : '↓'}</b> ${w.clue}</div><div class="spell"><div class="slots">${slots}</div>
+      <div class="tiles">${T.tiles.map((ch, i) => `<button class="tile-l${T.used.includes(i) ? ' used' : ''}" data-act="kzt" data-i="${i}"${T.used.includes(i) ? ' disabled' : ''}>${esc(ch)}</button>`).join('')}</div></div>
+      <div class="sp-tools"><button class="btn ghost sm" data-act="kzb"${T.used.length ? '' : ' disabled'}>⌫ Zurück</button></div></div>`;
+  }
+  return `<div class="fx fx-kreuz" id="fx"><div class="kz-main"><div class="kz-grid" style="--c:${q.cols}"${q.lang ? ` lang="${q.lang.slice(0, 2)}"` : ''}>${g}</div><div class="kz-clues">${clues}</div></div>${entry}
+    <p class="tl-msg" aria-live="polite">${esc(T.msg)}</p></div>`;
+}
+ACT.kzw = t => { const T = G && G.fx; if (!T || G.answered || T.busy) return; const i = Number(t.dataset.i); if (T.solved.has(i)) return; kzSelect(T, i); Sound.tap(); fxRender(); };
+ACT.kzc = t => { const T = G && G.fx; if (!T || G.answered || T.busy) return; const k = t.dataset.k;
+  const ws = T.q.words.map((w, i) => kzKeys(w).includes(k) && !T.solved.has(i) ? i : -1).filter(i => i >= 0); if (!ws.length) return;
+  const i = ws.includes(T.cur) && ws.length > 1 ? ws[(ws.indexOf(T.cur) + 1) % ws.length] : ws.includes(T.cur) ? T.cur : ws[0];
+  if (i !== T.cur) kzSelect(T, i); Sound.tap(); fxRender(); };
+ACT.kzb = () => { const T = G && G.fx; if (!T || G.answered || T.busy || !T.used.length) return; const lock = kzLocked(T), ks = kzKeys(T.q.words[T.cur]).filter(k => !lock.has(k) && T.cells[k]);
+  delete T.cells[ks[ks.length - 1]]; T.used.pop(); Sound.tap(); fxRender(); };
+ACT.kzt = t => {
+  const T = G && G.fx; if (!T || G.answered || T.busy) return; const i = Number(t.dataset.i); if (T.used.includes(i)) return;
+  const q = T.q, w = q.words[T.cur], lock = kzLocked(T), keys = kzKeys(w), k = keys.find(x => !lock.has(x) && !T.cells[x]); if (!k) return;
+  T.cells[k] = T.tiles[i]; T.used.push(i); Sound.tap();
+  if (keys.every(x => T.cells[x])) {
+    const ok = keys.map(x => T.cells[x]).join('') === w.u;
+    if (ok) { T.solved.add(T.cur); Sound.good(); T.msg = `✓ ${w.w}`; if (S.settings.speech && q.lang) Speech.say(w.w, q.lang); }
+    else { T.err[T.cur]++; Sound.bad();
+      if (T.err[T.cur] >= 2) { Array.from(w.u).forEach((ch, j) => { T.cells[keys[j]] = ch; }); T.solved.add(T.cur); T.rev.add(T.cur); T.msg = `So heißt das Wort: ${w.w}`; }
+      else { T.flash = keys.filter(x => !lock.has(x)); T.busy = true; T.msg = 'Fast! Das Wort stimmt noch nicht. Probier es nochmal.'; fxRender();
+        setTimeout(() => { if (!G || G.fx !== T) return; T.flash = null; T.busy = false; kzSelect(T, T.cur); T.msg = 'Fast! Das Wort stimmt noch nicht. Probier es nochmal.'; fxRender(); }, 1000); return; } }
+    if (T.solved.size === q.words.length) { T.cur = null; fxRender(); setTimeout(() => { if (G && G.fx === T && !G.answered) answer(T.rev.size === 0, T.err.some(e => e > 0)); }, 500); return; }
+    const nx = q.words.findIndex((_, j) => !T.solved.has(j) && j > T.cur), nn = nx >= 0 ? nx : q.words.findIndex((_, j) => !T.solved.has(j)); kzSelect(T, nn); T.msg = ok ? `✓ ${w.w}` : T.msg;
+  }
+  fxRender();
+};
+
+/*@@src data_formen.js@@*/
+
+
+
+
+
+
+
+
+
+
+
+
+const FX_TS = [
+  'Der kleine_A Hund_N spielt_V im Garten_N.', 'Die Katze_N trinkt_V kalte_A Milch_N.', 'Das Kind_N malt_V ein buntes_A Bild_N.', 'Der Vogel_N baut_V ein Nest_N.',
+  'Im Herbst_N fallen_V bunte_A Blätter_N.', 'Die Sonne_N scheint_V hell_A.', 'Oma_N backt_V einen leckeren_A Kuchen_N.', 'Der Igel_N sucht_V Futter_N.',
+  'Die Kinder_N spielen_V auf der Wiese_N.', 'Der Pinguin_N schwimmt_V schnell_A.', 'Mein Bruder_N liest_V ein spannendes_A Buch_N.', 'Das Wasser_N ist_V kalt_A.',
+  'Die Möwe_N fliegt_V über das Meer_N.', 'Der Bäcker_N verkauft_V frisches_A Brot_N.', 'Papa_N kocht_V heute leckere_A Nudeln_N.', 'Die Kuh_N steht_V auf der grünen_A Weide_N.',
+  'Lena_N trägt_V eine warme_A Mütze_N.', 'Der Wind_N weht_V stark_A.', 'Wir bauen_V eine riesige_A Sandburg_N.', 'Der Clown_N lacht_V laut_A.',
+  'Die Maus_N frisst_V gelben_A Käse_N.', 'Ben_N fährt_V mit dem roten_A Fahrrad_N.', 'Der Frosch_N springt_V in den Teich_N.', 'Die Lehrerin_N erklärt_V die schwere_A Aufgabe_N.',
+  'Das Baby_N schläft_V ruhig_A.', 'Der Hase_N hoppelt_V über das Feld_N.', 'Die Blumen_N blühen_V im Frühling_N.', 'Der Zug_N fährt_V pünktlich_A ab.'
+];
+const FX_WA = { N: ['Nomen', 'Namenwörter'], V: ['Verben', 'Tunwörter'], A: ['Adjektive', 'Wiewörter'] };
+function fxTok(s) { return s.split(' ').map(w => { const m = w.match(/^(.+?)_([NVA])([.,!?]*)$/); return m ? { w: m[1] + m[3], t: m[2] } : { w, t: '' }; }); }
+function fxMarkWortart(want) {
+  return ctx => {
+    const t = want || R.pick(['N', 'N', 'V', 'A']);
+    const bank = FX_TS.filter(s => s.includes('_' + t)), s1 = ctx.draw(bank); let s2 = R.pick(bank.filter(x => x !== s1));
+    const toks = fxTok(s1).concat(fxTok(s2));
+    return mkMark({ prompt: `Tippe alle ${FX_WA[t][0]} an (${FX_WA[t][1]}).`, tokens: toks.map(x => ({ h: esc(x.w), ok: x.t === t })), key: 'fxwa' + t + s1 + s2,
+      explain: `${FX_WA[t][0]}: ${toks.filter(x => x.t === t).map(x => x.w.replace(/[.,!?]/g, '')).join(', ')}` });
+  };
+}
+function fxMarkGross(ctx) {
+  const s = ctx.draw(FX_TS), toks = fxTok(s);
+  return mkMark({ prompt: 'Welche Wörter schreibt man groß? Tippe sie an.', visual: '<div class="q-text">✏️ Hier ist alles klein geschrieben.</div>',
+    tokens: toks.map((x, i) => ({ h: esc(x.w.charAt(0).toLowerCase() + x.w.slice(1)), ok: x.t === 'N' || i === 0 })), key: 'fxgr' + s,
+    explain: `Groß schreibt man den Satzanfang und alle Nomen: ${s.replace(/_[NVA]/g, '')}` });
+}
+function fxSplitDE(ctx) {
+  const s = ctx.draw(FX_TS).replace(/_[NVA]/g, '');
+  return mkSplit({ sentence: s, prompt: 'Trenne die Wörterschlange in Wörter.', visual: '<div class="q-text">🐍 Wo hört ein Wort auf?</div>', explain: `So heißt der Satz: ${s}`, key: 'fxsd' + s });
+}
+
+const FX_LT = [
+  { t: 'Im Herbst ⟪fallen⟫ bunte Blätter von den Bäumen. Der Wind ⟪weht⟫ kräftig. Die Kinder ⟪sammeln⟫ Kastanien im Park.', x: ['schwimmen', 'lacht'] },
+  { t: 'Am Morgen ⟪klingelt⟫ der Wecker. Lena ⟪putzt⟫ sich die Zähne. Dann ⟪packt⟫ sie ihren Ranzen.', x: ['schläft', 'malen'] },
+  { t: 'Der Igel ⟪sucht⟫ im Laub nach Futter. Er ⟪frisst⟫ gern Käfer und Würmer. Im Winter ⟪schläft⟫ er in einem Nest.', x: ['fliegt', 'liest'] },
+  { t: 'Am Strand ⟪baut⟫ Paul eine Sandburg. Die Möwen ⟪kreischen⟫ laut. Mama ⟪liest⟫ ein Buch unter dem Sonnenschirm.', x: ['backt', 'regnet'] },
+  { t: 'In der Pause ⟪spielen⟫ die Kinder Fangen. Ben ⟪isst⟫ sein Pausenbrot. Mia ⟪trinkt⟫ Wasser aus ihrer Flasche.', x: ['schreibt', 'fahren'] },
+  { t: 'Die Katze ⟪schleicht⟫ durch den Garten. Plötzlich ⟪springt⟫ sie auf die Mauer. Dort ⟪putzt⟫ sie ihr Fell.', x: ['bellt', 'kocht'] },
+  { t: 'Oma ⟪backt⟫ einen Kuchen. Sie ⟪braucht⟫ Mehl, Eier und Zucker. Der Kuchen ⟪duftet⟫ herrlich.', x: ['singt', 'regnet'] },
+  { t: 'Unser Hund ⟪heißt⟫ Bello. Er ⟪bellt⟫, wenn es klingelt. Am liebsten ⟪spielt⟫ er mit seinem Ball.', x: ['miaut', 'schreibt'] },
+  { t: 'Im ⟪Wald⟫ wachsen viele Bäume. Ein ⟪Reh⟫ frisst Gras auf der Lichtung. Ein ⟪Specht⟫ klopft an den Baumstamm.', x: ['Meer', 'Auto'] },
+  { t: 'Auf dem ⟪Bauernhof⟫ leben viele Tiere. Die ⟪Kuh⟫ gibt Milch. Das ⟪Huhn⟫ legt Eier.', x: ['Schule', 'Fisch'] },
+  { t: 'Im Sommer ist es ⟪warm⟫. Wir gehen ins ⟪Freibad⟫ und essen ein großes ⟪Eis⟫.', x: ['Schnee', 'kalt'] },
+  { t: 'Draußen ist es ⟪kalt⟫. Der Schnee ist ganz ⟪weiß⟫. Die Kinder ziehen ihre ⟪warmen⟫ Jacken an.', x: ['heiß', 'grünen'] }
+];
+function fxClozeDE(ctx) {
+  const L = ctx.draw(FX_LT), gaps = []; const tpl = esc(L.t).replace(/⟪([^⟫]+)⟫/g, (_, w) => { gaps.push(w); return '⟪' + (gaps.length - 1) + '⟫'; });
+  return mkCloze({ prompt: 'Lückentext: Setze die Wörter richtig ein.', tpl: `<p class="cz-line">${tpl}</p>`, gaps, extra: L.x, explain: L.t.replace(/[⟪⟫]/g, ''), key: 'fxlt' + L.t.slice(0, 30) });
+}
+const FX_UML = /[äöüßÄÖÜ]/;
+function fxDeNouns() { return memo('fxden', () => VOCAB.filter(v => !FX_UML.test(v[2]) && /^[A-Za-z]{3,8}$/.test(v[2]))); }
+function fxSopaDE(ctx) {
+  const by = {}; fxDeNouns().forEach(v => (by[v[3]] = by[v[3]] || []).push(v));
+  const cat = R.pick(Object.keys(by).filter(k => by[k].length >= 6)), pool = by[cat].map(v => [v[2], v[1]]);
+  return mkSopa({ words: pool, pw: R.pick(['SONNE', 'SCHULE', 'FERIEN', 'FREUND', 'LESEN', 'SPIEL']), n: 4, prompt: 'Wörtersuche: Finde die vier Wörter.' }) || fxMemoBildWort('de')(ctx);
+}
+function fxSortArtikel(ctx) {
+  const pool = STECKBRIEF.filter(a => /^(der|die|das) /.test(a[0]));
+  let pick; for (let t = 0; t < 20; t++) { pick = R.sample(pool, 6); if (new Set(pick.map(a => a[0].split(' ')[0])).size >= 2) break; }
+  const cols = ['der', 'die', 'das'];
+  return mkSort({ prompt: 'Der, die oder das? Sortiere die Tiere.', cols: cols.map(c => `<b class="sr-big">${c}</b>`), colLabels: cols,
+    items: pick.map(a => ({ h: `${a[1]} ${esc(a[0].split(' ').slice(1).join(' '))}`, c: cols.indexOf(a[0].split(' ')[0]) })), key: 'fxar' + pick.map(a => a[0]).join('|'),
+    explain: pick.map(a => a[0]).join(', ') });
+}
+
+const FX_REIHE = ['', 'Einerreihe', 'Zweierreihe', 'Dreierreihe', 'Viererreihe', 'Fünferreihe', 'Sechserreihe', 'Siebenerreihe', 'Achterreihe', 'Neunerreihe', 'Zehnerreihe'];
+function fxMarkZahlen(kind) {
+  return ctx => {
+    const k = klasse(); let P;
+    const reihe = n => [`r${n}`, x => x % n === 0, `Tippe alle Zahlen aus der ${FX_REIHE[n]} an.`, n * 10];
+    if (kind === 'reihe') P = reihe(k <= 2 ? R.pick([2, 5, 10]) : R.pick([3, 4, 6, 7, 8, 9]));
+    else if (kind === 'gerade') P = ['g', x => x % 2 === 0, 'Tippe alle geraden Zahlen an.', k === 1 ? 20 : 100];
+    else { const lim = k === 1 ? 10 : k === 2 ? 50 : 500; P = ['gr', x => x > lim, `Tippe alle Zahlen an, die größer als ${lim} sind.`, lim * 2]; }
+    const [id, f, txt, max] = P, nums = new Set(); let ok = 0;
+    for (let t = 0; t < 400 && nums.size < 12; t++) { const n = R.int(1, max); if (nums.has(n)) continue; const y = f(n); if (y && ok >= 6) continue; if (!y && nums.size - ok >= 8) continue; nums.add(n); if (y) ok++; }
+    if (ok < 3) { for (let n = 1; n <= max && ok < 3; n++) if (f(n) && !nums.has(n)) { nums.add(n); ok++; } }
+    const arr = [...nums].sort((a, b) => a - b);
+    return mkMark({ prompt: txt, tokens: arr.map(n => ({ h: String(n), ok: f(n) })), grid: true, key: 'fxmz' + id + arr.join(','), explain: `Richtig sind: ${arr.filter(f).join(', ')}` });
+  };
+}
+function fxClozeReihe(ctx) {
+  const k = klasse(), step = k === 1 ? R.pick([1, 2, 2, 3]) : k === 2 ? R.pick([2, 3, 5, 10, 4]) : R.pick([25, 50, 100, 20, 15]), down = R.chance(.3);
+  const start = down ? R.int(step * 7, k === 1 ? 20 : k === 2 ? 100 : 1000) : R.int(0, k === 1 ? 6 : k === 2 ? 30 : 300);
+  const seq = Array.from({ length: 7 }, (_, i) => down ? start - i * step : start + i * step); if (seq.some(n => n < 0)) return fxClozeReihe(ctx);
+  const gi = R.sample([2, 3, 4, 5, 6], 2).sort((a, b) => a - b), gaps = gi.map(i => seq[i]);
+  const extra = [...new Set([gaps[0] + (down ? -1 : 1), gaps[1] + step + 1, gaps[0] - 1])].filter(x => x >= 0 && !seq.includes(x)).slice(0, 2);
+  const tpl = `<p class="cz-line cz-num">${seq.map((n, i) => gi.includes(i) ? '⟪' + gi.indexOf(i) + '⟫' : n).join(', ')}</p>`;
+  return mkCloze({ prompt: 'Setze die Zahlenreihe fort: Welche Zahlen fehlen?', tpl, gaps, extra, explain: `Immer ${down ? 'minus' : 'plus'} ${step}: ${seq.join(', ')}`, key: 'fxzr' + seq.join(',') });
+}
+function fxClozeMal(ctx) {
+  const k = klasse(), n = k <= 2 ? R.pick([2, 5, 10, 3, 4]) : R.pick([3, 4, 6, 7, 8, 9]), rows = R.sample([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 6).sort((a, b) => a - b);
+  const gi = R.sample(rows, 3), gaps = [];
+  const tr = rows.map(r => `<tr><td>${r} · ${n}</td><td>=</td><td>${gi.includes(r) ? (gaps.push(r * n), '⟪' + (gaps.length - 1) + '⟫') : r * n}</td></tr>`).join('');
+  const extra = [...new Set([gaps[0] + 1, gaps[1] + n, gaps[2] - 1].filter(x => x > 0 && !rows.some(r => r * n === x)))].slice(0, 2);
+  return mkCloze({ prompt: `Fülle die Tabelle aus: die ${FX_REIHE[n]}.`, tpl: `<table class="cz-tab">${tr}</table>`, table: true, gaps, extra, explain: rows.map(r => `${r} · ${n} = ${r * n}`).join(', '), key: 'fxmt' + n + rows.join(',') });
+}
+function fxMemoRechnen(op) {
+  return ctx => {
+    const k = klasse(), pairs = [], res = new Set(), N = k <= 2 ? 4 : 5;
+    for (let t = 0; t < 200 && pairs.length < N; t++) {
+      let a, b, r, s;
+      if (op === '+') { const m = k === 1 ? 20 : k === 2 ? 100 : 1000; a = R.int(1, m / 2); b = R.int(1, m - a); r = a + b; s = `${a} + ${b}`; if (k >= 2 && R.chance(.5)) { a = R.int(1, 9) * (k === 2 ? 10 : 100); b = R.int(1, 9) * (k === 2 ? 1 : 10); r = a + b; s = `${a} + ${b}`; } }
+      else if (op === '-') { const m = k === 1 ? 20 : k === 2 ? 100 : 1000; a = R.int(m / 4, m); b = R.int(1, a); r = a - b; s = `${a} − ${b}`; }
+      else if (op === '*') { a = R.int(2, 10); b = R.int(2, 10); r = a * b; s = `${a} · ${b}`; }
+      else { b = R.int(2, 10); r = R.int(2, 10); a = b * r; s = `${a} : ${b}`; }
+      if (res.has(r) || r < 0) continue; res.add(r); pairs.push([s, String(r)]);
+    }
+    return mkMemo({ prompt: 'Rechenmemory: Finde Aufgabe und Ergebnis.', pairs, key: 'fxrm' + op + pairs.map(p => p[0]).join('|') });
+  };
+}
+function fxMemoFreunde(ctx) {
+  const k = klasse(), Z = k === 1 ? 10 : 100, st = k === 1 ? 1 : 10, xs = R.sample(Array.from({ length: Z / st - 1 }, (_, i) => (i + 1) * st).filter(x => x * 2 !== Z), 8);
+  const pairs = []; const used = new Set(); for (const x of xs) { if (used.has(x) || used.has(Z - x)) continue; used.add(x); used.add(Z - x); pairs.push([String(x), String(Z - x)]); if (pairs.length === 4) break; }
+  return mkMemo({ prompt: `Zahlenfreunde: Welche zwei Zahlen ergeben zusammen ${Z}?`, pairs, key: 'fxzf' + pairs.map(p => p[0]).join('|') });
+}
+function fxSortErgebnis(op) {
+  return ctx => {
+    const k = klasse(), lim = k === 1 ? 10 : k === 2 ? 50 : 500, items = [], seen = new Set();
+    for (let c = 0; c < 3; c++) for (let t = 0, got = 0; t < 300 && got < 2; t++) {
+      let a, b, r;
+      if (op === '+') { a = R.int(1, lim); b = R.int(0, lim); r = a + b; } else { a = R.int(1, lim * 2); b = R.int(0, a); r = a - b; }
+      if (c === 1) { if (op === '+') { a = R.int(1, lim - 1); b = lim - a; r = lim; } else { a = R.int(lim + 1, lim * 2); b = a - lim; r = lim; } }
+      const cc = r < lim ? 0 : r === lim ? 1 : 2, s = op === '+' ? `${a} + ${b}` : `${a} − ${b}`;
+      if (cc !== c || seen.has(s)) continue; seen.add(s); items.push({ h: s, c: cc, r }); got++;
+    }
+    return mkSort({ prompt: 'Rechne im Kopf und sortiere nach dem Ergebnis.', cols: [`weniger als ${lim}`, `genau ${lim}`, `mehr als ${lim}`].map(x => `<b>${x}</b>`), items,
+      key: 'fxse' + op + items.map(i => i.h).join('|'), explain: items.map(i => `${i.h} = ${i.r}`).join(', ') });
+  };
+}
+function fxSortGerade(ctx) {
+  const max = klasse() === 1 ? 20 : 100, ns = R.sample(Array.from({ length: max }, (_, i) => i + 1), 6);
+  if (new Set(ns.map(n => n % 2)).size < 2) ns[0] = ns[1] % 2 ? ns[1] + 1 : ns[1] - 1 || 3;
+  return mkSort({ prompt: 'Gerade oder ungerade? Sortiere die Zahlen.', cols: ['<b>gerade</b>', '<b>ungerade</b>'], items: [...new Set(ns)].map(n => ({ h: String(n), c: n % 2 })), key: 'fxsg' + ns.join(','),
+    explain: 'Gerade Zahlen enden auf 0, 2, 4, 6 oder 8.' });
+}
+
+function fxTierItem(a) { return `${a[1]} ${esc(a[0].replace(/^(der|die|das) /, ''))}`; }
+function fxSortTiergruppe(ctx) {
+  const by = {}; STECKBRIEF.forEach(a => (by[a[2]] = by[a[2]] || []).push(a));
+  const gs = R.sample(Object.keys(by).filter(g => by[g].length >= 3), R.chance(.5) ? 3 : 2), items = [];
+  gs.forEach((g, c) => R.sample(by[g], gs.length === 3 ? 2 : 3).forEach(a => items.push({ h: fxTierItem(a), c })));
+  return mkSort({ prompt: 'Zu welcher Tiergruppe gehört das Tier?', cols: gs.map(g => `<b>${esc(g)}</b>`), items, key: 'fxtg' + items.map(i => i.h).join('|'),
+    explain: items.map(i => `${fxPlain(i.h)}: ${gs[i.c]}`).join(', ') });
+}
+function fxSortFutter(ctx) {
+  const F = ['Pflanzenfresser', 'Fleischfresser', 'Allesfresser'], pool = STECKBRIEF.filter(a => F.includes(a[3])), items = [];
+  F.forEach((f, c) => R.sample(pool.filter(a => a[3] === f), 2).forEach(a => items.push({ h: fxTierItem(a), c })));
+  return mkSort({ prompt: 'Was frisst das Tier? Sortiere.', cols: F.map(f => `<b>${f}</b>`), items, key: 'fxtf' + items.map(i => i.h).join('|'), explain: items.map(i => `${fxPlain(i.h)}: ${F[i.c]}`).join(', ') });
+}
+function fxMarkEier(ctx) {
+  const pool = STECKBRIEF.filter(a => a[6] === true || a[6] === false), yes = R.sample(pool.filter(a => a[6]), R.int(3, 5)), no = R.sample(pool.filter(a => !a[6]), 9 - yes.length);
+  const all = R.shuffle(yes.concat(no));
+  return mkMark({ prompt: 'Tippe alle Tiere an, die Eier legen.', tokens: all.map(a => ({ h: fxTierItem(a), ok: !!a[6] })), grid: true, key: 'fxei' + all.map(a => a[0]).join('|'),
+    explain: `Eier legen: ${yes.map(a => a[0]).join(', ')}` });
+}
+function fxMemoTier(ctx) {
+  const pick = R.sample(STECKBRIEF.filter(a => a[0].length <= 16), 5);
+  return mkMemo({ prompt: 'Tiermemory: Finde Bild und Namen.', pairs: pick.map(a => [`<span class="em xl">${a[1]}</span>`, esc(a[0])]), key: 'fxtm' + pick.map(a => a[0]).join('|') });
+}
+
+const FX_ENCAT = { clothes: 'kleidung', kitchen: 'essen', familyen: 'familie', bodyen: 'koerper', home: 'dinge', classroom: 'schule' };
+const FX_ESCAT = { ropa: 'ropa', casa: 'cosas', familiaes: 'familia', colees: 'cole', cocina: 'comida', emociones: 'emociones', tiempo: 'tiempo' };
+function fxVoc(lang, cat) { const P = lang === 'es' ? VOCAB_ES : VOCAB; const lv = 3; const pool = P.filter(v => v[4] <= lv && (!cat || v[3] === cat)); const u = {}; pool.forEach(v => { if (!u[v[1]]) u[v[1]] = v; }); return Object.values(u); }
+function fxMemoBildWort(lang, cat) {
+  return ctx => {
+    const pool = fxVoc(lang, cat).filter(v => v[0].length <= 12), pick = R.sample(pool.length >= 5 ? pool : fxVoc(lang), 5);
+    const L = lang === 'es' ? 'es-ES' : lang === 'en' ? 'en-GB' : '', w = v => lang === 'de' ? v[2] : v[0];
+    return mkMemo({ prompt: lang === 'es' ? 'Memory: busca el dibujo y la palabra.' : lang === 'en' ? 'Memory: Finde Bild und englisches Wort.' : 'Memory: Finde Bild und Wort.',
+      pairs: pick.map(v => [`<span class="em xl">${v[1]}</span>`, esc(w(v))]), lang: L, key: 'fxvm' + lang + pick.map(w).join('|') });
+  };
+}
+function fxMatchDeFremd(lang, cat) {
+  return ctx => {
+    const pool = fxVoc(lang, cat), pick = R.sample(pool.length >= 4 ? pool : fxVoc(lang), 4);
+    return mkMatch({ prompt: lang === 'es' ? 'Une: alemán y español.' : 'Verbinde Deutsch und Englisch.', left: pick.map(v => esc(v[2])), right: pick.map(v => esc(v[0])), lang: lang === 'es' ? 'es-ES' : 'en-GB',
+      explain: pick.map(v => `${v[2]} = ${v[0]}`).join(' · '), key: 'fxdf' + lang + pick.map(v => v[0]).join('|') });
+  };
+}
+function fxSopaFremd(lang, cat) {
+  return ctx => {
+    const pool = fxVoc(lang, cat).filter(v => /^[a-zñáéíóú]{3,8}$/i.test(v[0])), p = pool.length >= 6 ? pool : fxVoc(lang).filter(v => /^[a-zñáéíóú]{3,8}$/i.test(v[0]));
+    return mkSopa({ words: p.map(v => [v[0], v[1]]), pw: lang === 'es' ? R.pick(['HOLA', 'AMIGO', 'FIESTA', 'GRACIAS']) : R.pick(['HELLO', 'HAPPY', 'SCHOOL', 'FRIEND']), n: 4, afterLang: lang === 'es' ? 'es-ES' : 'en-GB',
+      prompt: lang === 'es' ? 'Sopa de letras: busca las palabras.' : 'Word search: Finde die vier Wörter.' }) || fxMemoBildWort(lang, cat)(ctx);
+  };
+}
+
+const FX_MISCH = [['Rot + Gelb', 'Orange'], ['Blau + Gelb', 'Grün'], ['Rot + Blau', 'Lila'], ['Rot + Weiß', 'Rosa'], ['Schwarz + Weiß', 'Grau'], ['Blau + Weiß', 'Hellblau'], ['Gelb + Weiß', 'Hellgelb']];
+const FX_FARBE = { Rot: '#e5484d', Gelb: '#f5c518', Blau: '#3b7cf0', Orange: '#ff8a1f', Grün: '#2bb673', Lila: '#8e4ec6', Rosa: '#ff8fc7', Grau: '#9aa5b1', Hellblau: '#9cc8ff', Hellgelb: '#fff1a6', Türkis: '#19b5b5', Weiß: '#ffffff', Schwarz: '#222222', Braun: '#8b5a2b' };
+const fxSw = f => `<span class="fx-sw" style="background:${FX_FARBE[f] || '#ccc'}"></span>${esc(f)}`;
+function fxMemoMischen(ctx) {
+  const pick = R.sample(FX_MISCH, 4);
+  return mkMemo({ prompt: 'Farben mischen: Was kommt heraus?', pairs: pick.map(([a, b]) => [esc(a), fxSw(b)]), key: 'fxfm' + pick.map(p => p[0]).join('|') });
+}
+function fxSortWarmKalt(ctx) {
+  const W = ['Rot', 'Orange', 'Gelb', 'Rosa', 'Braun'], K = ['Blau', 'Türkis', 'Hellblau', 'Lila', 'Grün'];
+  const items = R.sample(W, 3).map(f => ({ h: fxSw(f), c: 0 })).concat(R.sample(K, 3).map(f => ({ h: fxSw(f), c: 1 })));
+  return mkSort({ prompt: 'Warme oder kalte Farbe? Sortiere.', cols: ['<b>☀️ warm</b>', '<b>❄️ kalt</b>'], items, key: 'fxwk' + items.map(i => i.h).join('|'),
+    explain: 'Warm wirken Farben wie Feuer und Sonne (Rot, Orange, Gelb), kalt wie Wasser und Eis (Blau, Türkis).' });
+}
+
+
+(function () {
+  const add = (ids, ...fs) => ids.forEach(id => { const g = GAMES[id]; if (g && g.gen) g.fx = (g.fx || []).concat(fs); });
+
+  add(['wortart', 'wortarten34'], fxMarkWortart());
+  add(['nomen'], fxMarkWortart('N'), fxSortArtikel); add(['verben', 'praedikat'], fxMarkWortart('V')); add(['adjektive', 'steigern'], fxMarkWortart('A'));
+  add(['artikel'], fxSortArtikel); add(['gross'], fxMarkGross);
+  add(['satzgrenzen', 'satzbau', 'lesen'], fxSplitDE); add(['luecke', 'lesen', 'lesen34', 'verben'], fxClozeDE);
+  add(['spellde', 'anlaut', 'abc'], fxSopaDE, fxMemoBildWort('de'));
+
+  add(['plus'], fxMemoRechnen('+'), fxSortErgebnis('+'), fxClozeReihe); add(['minus'], fxMemoRechnen('-'), fxSortErgebnis('-'));
+  add(['mal', 'malreihen', 'grossereihen'], fxMemoRechnen('*'), fxClozeMal, fxMarkZahlen('reihe')); add(['geteilt'], fxMemoRechnen(':'));
+  add(['gerade'], fxMarkZahlen('gerade'), fxSortGerade); add(['reihe', 'nachbarn', 'zahlenstrahl'], fxClozeReihe);
+  add(['hundertertafel', 'vergleich'], fxMarkZahlen('gross')); add(['teiler'], fxMarkZahlen('reihe')); add(['zerlegen', 'ergaenzen'], fxMemoFreunde);
+
+  add(['tiere', 'steckbrief', 'haustiere', 'bauernhof', 'voegel', 'lebensraum', 'anpassung', 'eistiere'], fxSortTiergruppe, fxSortFutter, fxMarkEier, fxMemoTier);
+
+  Object.keys(GAMES).forEach(id => { const g = GAMES[id]; if (!g || g.w !== 'englisch' || !g.gen) return;
+    if (['bildwort', 'uebersetzen', 'spellen', 'farben', 'clothes', 'home', 'kitchen', 'familyen', 'bodyen', 'classroom'].includes(id)) add([id], fxMemoBildWort('en', FX_ENCAT[id]), fxMatchDeFremd('en', FX_ENCAT[id]), fxSopaFremd('en', FX_ENCAT[id])); });
+
+  ['palabras', 'traducir', 'ropa', 'casa', 'familiaes', 'colees', 'cocina', 'emociones', 'tiempo', 'colores'].forEach(id => add([id], fxMemoBildWort('es', FX_ESCAT[id]), fxMatchDeFremd('es', FX_ESCAT[id]), fxSopaFremd('es', FX_ESCAT[id])));
+
+  if (typeof ALCE_SES !== 'undefined') ALCE_SES.forEach(s => { const vs = (s.voc || []).filter(v => v[0].length <= 18); if (vs.length < 5) return;
+    add(['alce' + s.id], ctx => { const pick = R.sample(vs, 5); return mkMemo({ prompt: 'Memory: busca el dibujo y la palabra.', pairs: pick.map(v => [`<span class="em xl">${v[1]}</span>`, esc(v[0])]), lang: 'es-ES', key: 'fxam' + pick.map(v => v[0]).join('|') }); }); });
+
+  add(['farbmischen', 'farbkreis'], fxMemoMischen); add(['warmkalt', 'farbkontraste'], fxSortWarmKalt);
+})();
+
+/*@@src data_formen2.js@@*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+function fxSilbenRaetsel(ctx) {
+  const pool = SILBEN.filter(s => s[2].includes('-') && s[2].split('-').length <= 3 && s[0].length <= 10), pick = R.sample(pool, 3), gaps = [];
+  const tpl = pick.map(s => `<p class="cz-line cz-silben"><span class="em" aria-hidden="true">${s[1]}</span> ${s[2].split('-').map(sy => { gaps.push(sy); return '⟪' + (gaps.length - 1) + '⟫'; }).join('')}</p>`).join('');
+  const extra = R.sample(SILBEN.filter(s => !pick.includes(s) && s[2].includes('-')).flatMap(s => s[2].split('-')).filter(sy => !gaps.includes(sy)), 2);
+  return mkCloze({ prompt: 'Silbenrätsel: Bau die Wörter aus den Silben.', tpl, gaps, extra, explain: pick.map(s => `${s[0]}: ${s[2].split('-').join(' · ')}`).join(', '), key: 'fxsr' + pick.map(s => s[0]).join('|') });
+}
+const FX_FEHLER = [['Fahrrad', 'Fahrad'], ['Schule', 'Schuhle'], ['Katze', 'Kaze'], ['Vogel', 'Fogel'], ['Hund', 'Hunt'], ['Wasser', 'Waser'], ['Mutter', 'Muter'], ['Sonne', 'Sone'], ['Hexe', 'Hekse'],
+  ['Kuchen', 'Kuhchen'], ['Zahn', 'Zan'], ['Schiff', 'Schif'], ['Brief', 'Brif'], ['Biene', 'Bine'], ['Uhr', 'Ur'], ['Stuhl', 'Stul'], ['Bäcker', 'Bäker'], ['Blätter', 'Bletter'], ['Ball', 'Bal'],
+  ['Pferd', 'Pfert'], ['Kind', 'Kint'], ['Zug', 'Zuk'], ['Vater', 'Fater'], ['Spiel', 'Spil'], ['Schnee', 'Schne'], ['Fenster', 'Fänster'], ['Apfel', 'Apfl'], ['Tier', 'Tir'], ['Mäuse', 'Meuse'],
+  ['Straße', 'Strase'], ['Fuß', 'Fus'], ['Lehrer', 'Lerer'], ['Tisch', 'Tich'], ['Zimmer', 'Zimer'], ['Löffel', 'Löfel'], ['Wald', 'Walt'], ['Zwerg', 'Zwerk'], ['Ziege', 'Zige'], ['Telefon', 'Telefohn']];
+function fxFehlerWoerter(ctx) {
+  const pick = R.sample(FX_FEHLER, 10), bad = new Set(R.sample(pick, R.int(3, 4)));
+  return mkMark({ prompt: 'Rechtschreibdetektiv: Tippe alle falsch geschriebenen Wörter an.', grid: true, tokens: pick.map(p => ({ h: esc(bad.has(p) ? p[1] : p[0]), ok: bad.has(p) })),
+    explain: `Richtig heißt es: ${[...bad].map(p => p[0]).join(', ')}`, key: 'fxfw' + pick.map(p => p[0]).join('|') });
+}
+const FX_REIM = [['Haus', 'Maus'], ['Hund', 'bunt'], ['Katze', 'Tatze'], ['Baum', 'Traum'], ['Hose', 'Rose'], ['Kuchen', 'suchen'], ['Fisch', 'Tisch'], ['Sonne', 'Tonne'], ['Hand', 'Sand'],
+  ['Bein', 'Stein'], ['Schnecke', 'Hecke'], ['Igel', 'Spiegel'], ['Nase', 'Hase'], ['Kanne', 'Tanne'], ['Mond', 'wohnt'], ['Wal', 'Saal'], ['Ball', 'Stall'], ['Bett', 'nett']];
+function fxReimMemo(ctx) { const pick = R.sample(FX_REIM, 5); return mkMemo({ prompt: 'Reimmemory: Finde die Wörter, die sich reimen.', pairs: pick.map(p => [esc(p[0]), esc(p[1])]), key: 'fxrr' + pick.map(p => p[0]).join('|') }); }
+const FX_MEHRZ = [['der Hund', 'die Hunde'], ['das Haus', 'die Häuser'], ['die Maus', 'die Mäuse'], ['der Baum', 'die Bäume'], ['das Kind', 'die Kinder'], ['der Apfel', 'die Äpfel'],
+  ['die Blume', 'die Blumen'], ['das Buch', 'die Bücher'], ['der Vogel', 'die Vögel'], ['die Katze', 'die Katzen'], ['der Stuhl', 'die Stühle'], ['das Auto', 'die Autos'], ['die Hand', 'die Hände'], ['der Fuß', 'die Füße']];
+function fxMehrzahlMatch(ctx) { const pick = R.sample(FX_MEHRZ, 4); return mkMatch({ prompt: 'Einzahl und Mehrzahl: Verbinde.', left: pick.map(p => esc(p[0])), right: pick.map(p => esc(p[1])), explain: pick.map(p => `${p[0]} → ${p[1]}`).join(' · '), key: 'fxmz' + pick.map(p => p[0]).join('|') }); }
+function fxEmojiEinmal(P) { return memo('fxee' + (P === VOCAB ? 'en' : 'es'), () => { const n = {}; P.forEach(v => { n[v[1]] = (n[v[1]] || new Set()).add(v[2]); }); return new Set(Object.keys(n).filter(e => n[e].size === 1)); }); }
+function fxKreuzDE(ctx) {
+  const one = fxEmojiEinmal(VOCAB), pool = fxDeNouns().filter(v => one.has(v[1])), q = mkKreuz({ words: R.shuffle(pool).slice(0, 30).map(v => [v[2], `<span class="em">${v[1]}</span>`]), n: 5, prompt: 'Kreuzworträtsel: Tippe einen Hinweis an und leg das Wort.' });
+  return q || fxSilbenRaetsel(ctx);
+}
+function fxRasterWortart(ctx) {
+  const seen = new Set(), rows = [];
+  for (const s of R.shuffle(FX_TS)) { for (const x of fxTok(s)) { const w = x.w.replace(/[.,!?]/g, ''); if (!x.t || seen.has(w) || rows.filter(r => r.c === 'NVA'.indexOf(x.t)).length >= 2) continue; seen.add(w); rows.push({ h: esc(w), c: 'NVA'.indexOf(x.t) }); } if (rows.length >= 6) break; }
+  return mkRaster({ prompt: 'Nomen, Verb oder Adjektiv? Kreuze an.', cols: ['<b>Nomen</b>', '<b>Verb</b>', '<b>Adjektiv</b>'], colLabels: ['Nomen', 'Verb', 'Adjektiv'], rows: rows.slice(0, 6), key: 'fxrw' + rows.map(r => r.h).join('|') });
+}
+
+const FX_ZW = ['zwölf', 'eins', 'zwei', 'drei', 'vier', 'fünf', 'sechs', 'sieben', 'acht', 'neun', 'zehn', 'elf', 'zwölf'];
+function fxUhrText(h, m) {
+  const n = x => FX_ZW[x % 12 === 0 ? 12 : x % 12];
+  if (m === 0) return `${h === 1 ? 'ein' : n(h)} Uhr`; if (m === 30) return `halb ${n(h + 1)}`; if (m === 15) return `Viertel nach ${n(h)}`; if (m === 45) return `Viertel vor ${n(h + 1)}`;
+  if (m === 5 || m === 10) return `${m === 5 ? 'fünf' : 'zehn'} nach ${n(h)}`; if (m === 50 || m === 55) return `${m === 55 ? 'fünf' : 'zehn'} vor ${n(h + 1)}`; return '';
+}
+function fxUhrStellen(ctx) {
+  const k = klasse(), h = R.int(1, 12), m = k === 1 ? R.pick([0, 0, 30]) : k === 2 ? R.pick([0, 15, 30, 45]) : R.pick([0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55]);
+  const t = fxUhrText(h, m), dig = k >= 3 && (R.chance(.5) || !t);
+  const shown = dig ? `${(h + (R.chance(.5) ? 12 : 0)) % 24 || 12}:${String(m).padStart(2, '0')} Uhr` : t;
+  return mkUhr({ prompt: 'Stell die Uhr auf diese Zeit:', visual: `<div class="q-word big">${dig ? '⏰ ' : ''}${esc(shown)}</div>`, h, m, step: k === 1 ? 30 : k === 2 ? 15 : 5,
+    explain: `${shown}: kleiner Zeiger auf ${h}${m ? ' (etwas weiter)' : ''}, großer Zeiger auf ${m === 0 ? '12' : m / 5}.`, key: 'fxuh' + h + ':' + m + dig });
+}
+const FX_DINGE = [[['🍎', 'Ein Apfel'], ['🥨', 'Eine Brezel'], ['✏️', 'Ein Stift'], ['🧃', 'Ein Saft'], ['🎈', 'Ein Luftballon'], ['🍦', 'Ein Eis'], ['🍌', 'Eine Banane'], ['🥛', 'Eine Milch']],
+  [['📕', 'Ein Buch'], ['🧸', 'Ein Teddy'], ['⚽', 'Ein Ball'], ['🚗', 'Ein Spielzeugauto'], ['🧩', 'Ein Puzzle'], ['🎨', 'Ein Malkasten'], ['🪁', 'Ein Drachen']],
+  [['🎒', 'Ein Schulranzen'], ['🛴', 'Ein Roller'], ['⛸️', 'Ein Paar Schlittschuhe'], ['🎧', 'Ein Kopfhörer'], ['⛺', 'Ein Zelt'], ['🎲', 'Ein großes Spiel']]];
+function fxGeldLegen(ctx) {
+  const k = klasse(); let target;
+  if (k === 1) target = R.chance(.5) ? R.int(1, 20) * 100 : R.int(1, 19) * 5; else if (k === 2) target = R.chance(.5) ? R.int(1, 4) * 100 + R.pick([0, 5, 10, 20, 25, 50, 75, 80, 95]) : R.int(5, 30) * 100 + R.pick([0, 50, 90, 95]);
+  else target = R.chance(.4) ? R.int(1, 4) * 100 + R.int(0, 99) : R.chance(.5) ? R.int(5, 30) * 100 + R.pick([0, 49, 50, 90, 99]) : R.int(30, 90) * 100 + R.pick([0, 50, 95, 99]);
+  const wenig = k >= 3 && R.chance(.4), d = R.pick(FX_DINGE[target < 500 ? 0 : target <= 3000 ? 1 : 2]);
+  return mkGeld({ prompt: wenig ? `Lege ${fxEuro(target)} mit so wenigen Münzen und Scheinen wie möglich.` : `Lege genau ${fxEuro(target)} hin.`, target, wenig,
+    visual: `<div class="q-text"><span class="em xl">${d[0]}</span> ${d[1]} kostet <b>${fxEuro(target)}</b>.</div>`, coins: FX_MZ.filter(v => v <= Math.max(target, 50)), key: 'fxgl' + target + wenig });
+}
+function fxZahlenstrahl(ctx) {
+  const k = klasse(), step = k === 1 ? R.pick([1, 2]) : k === 2 ? R.pick([5, 10, 2]) : k === 3 ? R.pick([50, 100, 25, 10]) : R.pick([100, 250, 500, 1000]);
+  const max = k === 1 ? 20 : k === 2 ? 100 : k === 3 ? 1000 : 10000, start = step * R.int(0, Math.floor((max - 8 * step) / step)), ticks = Array.from({ length: 9 }, (_, i) => start + i * step);
+  const gi = R.sample([1, 2, 3, 4, 5, 6, 7], 3).sort((a, b) => a - b), gaps = gi.map(i => ticks[i]), d = step >= 10 ? 10 : 1;
+  const extra = R.shuffle([...new Set([gaps[0] + d, ticks[8] + step, gaps[1] - d, gaps[2] + d])].filter(x => x >= 0 && !ticks.includes(x))).slice(0, 2);
+  const tpl = `<div class="cz-strahl">${ticks.map((n, i) => `<span class="zs-t"><i></i><b>${gi.includes(i) ? '⟪' + gi.indexOf(i) + '⟫' : n}</b></span>`).join('')}</div>`;
+  return mkCloze({ prompt: 'Zahlenstrahl: Welche Zahlen fehlen?', tpl, gaps: gaps.map(String), extra: extra.map(String), explain: `Von Strich zu Strich immer ${step} weiter: ${ticks.join(', ')}`, key: 'fxzs' + ticks.join(',') });
+}
+function fxRasterVergleich(ctx) {
+  const k = klasse(), max = k === 1 ? 20 : k === 2 ? 100 : 1000, rows = [], seen = new Set();
+  for (let i = 0, tr = 0; rows.length < 6 && tr < 200; tr++) {
+    let a = R.int(1, max), b = R.int(1, max), ha = String(a);
+    if (i === 0) b = a; if (i === 1 && k >= 2) { const x = R.int(1, Math.floor(a / 2) || 1); if (x < a) ha = `${a - x} + ${x}`; }
+    if (i === 2) b = a + R.pick([-10, -1, 1, 10].filter(d => a + d > 0 && a + d <= max));
+    const h = `${ha} <span class="ra-q">?</span> ${b}`; if (seen.has(h)) continue; seen.add(h); i++;
+    rows.push({ h, c: a < b ? 0 : a === b ? 1 : 2 });
+  }
+  return mkRaster({ prompt: 'Größer, kleiner oder gleich? Kreuze an.', cols: ['<b class="sr-big">&lt;</b>', '<b class="sr-big">=</b>', '<b class="sr-big">&gt;</b>'], colLabels: ['<', '=', '>'], rows, key: 'fxrv' + rows.map(r => r.h).join('|'),
+    explain: '< heißt kleiner als, > heißt größer als. Die Spitze zeigt immer zur kleineren Zahl.' });
+}
+const FX_ZAHLWORT = [[1, 'eins'], [2, 'zwei'], [3, 'drei'], [4, 'vier'], [6, 'sechs'], [7, 'sieben'], [8, 'acht'], [9, 'neun'], [10, 'zehn'], [11, 'elf'], [20, 'zwanzig'], [40, 'vierzig'], [60, 'sechzig'], [70, 'siebzig'], [80, 'achtzig'], [90, 'neunzig'], [100, 'hundert']];
+function fxKreuzZahl(lang) {
+  return ctx => {
+    const L = lang === 'en' ? [[1, 'one'], [2, 'two'], [3, 'three'], [4, 'four'], [5, 'five'], [6, 'six'], [7, 'seven'], [8, 'eight'], [9, 'nine'], [10, 'ten'], [11, 'eleven'], [12, 'twelve'], [13, 'thirteen'], [14, 'fourteen'], [15, 'fifteen'], [16, 'sixteen'], [18, 'eighteen'], [19, 'nineteen'], [20, 'twenty']]
+      : lang === 'es' ? [[1, 'uno'], [2, 'dos'], [3, 'tres'], [4, 'cuatro'], [5, 'cinco'], [6, 'seis'], [7, 'siete'], [8, 'ocho'], [9, 'nueve'], [10, 'diez'], [11, 'once'], [12, 'doce'], [13, 'trece'], [14, 'catorce'], [15, 'quince'], [20, 'veinte'], [30, 'treinta'], [40, 'cuarenta']] : FX_ZAHLWORT;
+    const q = mkKreuz({ words: L.map(([n, w]) => [w, `<b class="kz-z">${n}</b>`]), n: 5, lang: lang === 'en' ? 'en-GB' : lang === 'es' ? 'es-ES' : '', prompt: lang === 'es' ? 'Crucigrama: escribe los números con letras.' : lang === 'en' ? 'Crossword: Schreib die Zahlen auf Englisch.' : 'Kreuzworträtsel: Schreib die Zahlen als Wort.' });
+    return q || fxMemoRechnen('+')(ctx);
+  };
+}
+
+
+const FX_SACH = {
+  aggregat: [['fest', 'flüssig', 'gasförmig'], [['🧊 Eis', 0], ['💧 Wasser', 1], ['♨️ Wasserdampf', 2], ['🪨 Stein', 0], ['🥛 Milch', 1], ['🎈 Luft im Ballon', 2], ['🍯 Honig', 1], ['🪵 Holz', 0], ['🧃 Saft', 1], ['💨 Luft', 2], ['🫧 Blasen im Sprudel', 2], ['🫒 Öl', 1], ['🔩 Schraube', 0], ['🧱 Ziegel', 0]], 'Tippe alles an, was fest ist.'],
+  magnet: [['zieht der Magnet an', 'zieht er nicht an'], [['📎 Büroklammer', 0], ['🔩 Eisennagel', 0], ['🗝️ Eisenschlüssel', 0], ['🥫 Blechdose', 0], ['🪙 Centmünze', 0], ['🥄 Plastiklöffel', 1], ['🪵 Holzstück', 1], ['🧻 Papier', 1], ['🍷 Glas', 1], ['🧽 Schwamm', 1], ['🧸 Teddy', 1], ['🧲 Stahlkugel', 0]], 'Tippe alles an, was der Magnet anzieht.'],
+  material: [['Holz', 'Metall', 'Glas', 'Kunststoff'], [['✏️ Bleistift', 0], ['🥢 Holzlöffel', 0], ['🔑 Schlüssel', 1], ['🔩 Nagel', 1], ['🍳 Pfanne', 1], ['🪟 Fensterscheibe', 2], ['🔮 Murmel', 2], ['🥛 Trinkglas', 2], ['🛍️ Plastiktüte', 3], ['🪥 Zahnbürste', 3], ['🥤 Joghurtbecher', 3], ['🪵 Baumstamm', 0]], 'Tippe alles an, was aus Holz ist.'],
+  schwimmt: [['schwimmt', 'geht unter'], [['🍾 Korken', 0], ['🪵 Holzstück', 0], ['🍎 Apfel', 0], ['🧊 Eiswürfel', 0], ['🏓 Tischtennisball', 0], ['🦆 Gummiente', 0], ['🪨 Stein', 1], ['🪙 Münze', 1], ['🗝️ Schlüssel', 1], ['🔮 Murmel', 1], ['🔩 Nagel', 1], ['🥄 Metalllöffel', 1]], 'Tippe alles an, was im Wasser schwimmt.'],
+  strom: [['leitet Strom', 'leitet keinen Strom'], [['🔌 Kupferdraht', 0], ['📎 Büroklammer', 0], ['✨ Alufolie', 0], ['🔩 Nagel', 0], ['🗝️ Schlüssel', 0], ['🪵 Holz', 1], ['🛍️ Plastik', 1], ['🧤 Gummi', 1], ['🧻 Papier', 1], ['🍷 Glas', 1], ['🧶 Wolle', 1]], 'Tippe alles an, was den Strom leitet.'],
+  ernaehrung: [['oft essen', 'nur selten'], [['🍎 Apfel', 0], ['🥕 Möhre', 0], ['🍞 Vollkornbrot', 0], ['🥦 Brokkoli', 0], ['💧 Wasser', 0], ['🍌 Banane', 0], ['🍬 Bonbons', 1], ['🍟 Pommes', 1], ['🍫 Schokolade', 1], ['🥤 Limo', 1], ['🍰 Torte', 1], ['🍭 Lutscher', 1]], 'Tippe alles an, was du oft essen darfst.'],
+  baum: [['Laubbaum', 'Nadelbaum'], [['🌳 Eiche', 0], ['🌳 Buche', 0], ['🍁 Ahorn', 0], ['🌳 Linde', 0], ['🌳 Birke', 0], ['🌰 Kastanie', 0], ['🌲 Tanne', 1], ['🌲 Fichte', 1], ['🌲 Kiefer', 1], ['🌲 Lärche', 1], ['🌲 Eibe', 1]], 'Tippe alle Laubbäume an.'],
+  jahreszeit: [['Frühling', 'Sommer', 'Herbst', 'Winter'], [['🌷 Tulpen blühen', 0], ['🐣 Ostern', 0], ['🐝 Bienen fliegen aus', 0], ['🏊 Freibad', 1], ['🍓 Erdbeeren ernten', 1], ['🍦 Eis essen am Strand', 1], ['🍂 Blätter fallen', 2], ['🌰 Kastanien sammeln', 2], ['🪁 Drachen steigen lassen', 2], ['⛄ Schneemann bauen', 3], ['🎄 Weihnachten', 3], ['🛷 Schlitten fahren', 3]], 'Tippe alles an, was im Frühling passt.']
+};
+function fxSach(key) {
+  return ctx => {
+    const [cols, items, mtxt] = FX_SACH[key], nc = cols.length, per = nc === 2 ? 3 : 2, pick = [];
+    cols.forEach((_, c) => R.sample(items.filter(x => x[1] === c), per).forEach(x => pick.push({ h: esc(x[0]), c })));
+    const r = Math.random(), ex = pick.map(p => `${fxPlain(p.h)}: ${cols[p.c]}`).join(', ');
+    if (r < .3 && nc <= 3) return mkRaster({ prompt: 'Kreuze in jeder Zeile das Richtige an.', cols: cols.map(c => `<b>${esc(c)}</b>`), colLabels: cols, rows: pick, explain: ex, key: 'fxsa' + key + pick.map(p => p.h).join('|') });
+    if (r < .55) { const all = R.shuffle(R.sample(items.filter(x => x[1] === 0), 4).concat(R.sample(items.filter(x => x[1] !== 0), 5)));
+      return mkMark({ prompt: mtxt, grid: true, tokens: all.map(x => ({ h: esc(x[0]), ok: x[1] === 0 })), explain: `Richtig: ${all.filter(x => x[1] === 0).map(x => x[0]).join(', ')}`, key: 'fxsm' + key + all.map(x => x[0]).join('|') }); }
+    return mkSort({ prompt: 'Sortiere die Kärtchen richtig ein.', cols: cols.map(c => `<b>${esc(c)}</b>`), colLabels: cols, items: pick, explain: ex, key: 'fxss' + key + pick.map(p => p.h).join('|') });
+  };
+}
+const FX_PAARE = {
+  sinne: ['Welcher Sinn gehört zu welchem Körperteil?', [['👁️ Auge', 'sehen'], ['👂 Ohr', 'hören'], ['👃 Nase', 'riechen'], ['👅 Zunge', 'schmecken'], ['✋ Haut', 'fühlen']]],
+  jungtier: ['Wie heißt das Tierkind?', [['🐄 Kuh', 'Kalb'], ['🐴 Pferd', 'Fohlen'], ['🐑 Schaf', 'Lamm'], ['🐶 Hund', 'Welpe'], ['🐔 Huhn', 'Küken'], ['🐷 Schwein', 'Ferkel'], ['🐐 Ziege', 'Zicklein'], ['🦌 Reh', 'Kitz']]],
+  wohnung: ['Wo wohnt das Tier?', [['🐝 Biene', 'Bienenstock'], ['🐦 Vogel', 'Nest'], ['🦊 Fuchs', 'Bau'], ['🐴 Pferd', 'Stall'], ['🕷️ Spinne', 'Netz'], ['🐻 Bär', 'Höhle'], ['🐿️ Eichhörnchen', 'Kobel'], ['🐶 Hund', 'Hundehütte']]],
+  beruf: ['Was braucht man für den Beruf?', [['👩‍🚒 Feuerwehrfrau', 'Schlauch'], ['👨‍🍳 Koch', 'Kochlöffel'], ['👩‍⚕️ Ärztin', 'Stethoskop'], ['👨‍🌾 Landwirt', 'Traktor'], ['💇 Friseurin', 'Schere'], ['👷 Bauarbeiter', 'Bagger'], ['👩‍🏫 Lehrerin', 'Tafel'], ['🧑‍✈️ Pilotin', 'Flugzeug']]]
+};
+function fxPaare(key) {
+  return ctx => { const [t, P] = FX_PAARE[key], pick = R.sample(P, Math.min(P.length, 5)).slice(0, R.chance(.5) ? 4 : 5);
+    if (R.chance(.4)) return mkMemo({ prompt: `Memory: ${t}`, pairs: pick.map(p => [esc(p[0]), esc(p[1])]), key: 'fxpm' + key + pick.map(p => p[0]).join('|') });
+    return mkMatch({ prompt: `${t} Verbinde.`, left: pick.map(p => esc(p[0])), right: pick.map(p => esc(p[1])), explain: pick.map(p => `${p[0]} → ${p[1]}`).join(' · '), key: 'fxpa' + key + pick.map(p => p[0]).join('|') }); };
+}
+function fxSteckbrief(ctx) {
+  const a = R.pick(STECKBRIEF.filter(x => x[3] && x[4] != null && x[5] && typeof x[6] === 'boolean'));
+  const F = [['Tiergruppe', a[2], ['Säugetier', 'Vogel', 'Fisch', 'Reptil', 'Insekt']], ['Futter', a[3], ['Pflanzenfresser', 'Fleischfresser', 'Allesfresser']], ['Beine', String(a[4]), ['0', '2', '4', '6', '8']],
+    ['Körper', a[5], ['Fell', 'Federn', 'Schuppen', 'glatte Haut']], ['Eier legen', a[6] ? 'ja' : 'nein', ['ja', 'nein']]];
+  const use = R.sample(F, 3), gaps = use.map(f => f[1]);
+  const extra = R.sample(use.flatMap(f => f[2].filter(x => x !== f[1])).filter(x => !gaps.includes(x)), 2);
+  const tpl = `<table class="cz-tab sb"><tr><td colspan="2"><span class="em xl">${a[1]}</span> <b>${esc(a[0])}</b></td></tr>${use.map((f, k) => `<tr><td>${f[0]}:</td><td>⟪${k}⟫</td></tr>`).join('')}</table>`;
+  return mkCloze({ prompt: 'Steckbrief: Fülle die Lücken aus.', tpl, gaps, extra, table: true, explain: use.map(f => `${f[0]}: ${f[1]}`).join(', '), key: 'fxsb' + a[0] + use.map(f => f[0]).join('') });
+}
+
+const FX_EN_ZAHL = ['twelve', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve'];
+function fxUhrEN(ctx) {
+  const h = R.int(1, 12), m = R.pick([0, 0, 30, 15, 45]), n = x => FX_EN_ZAHL[x % 12 === 0 ? 12 : x % 12];
+  const t = m === 0 ? `${n(h)} o'clock` : m === 30 ? `half past ${n(h)}` : m === 15 ? `quarter past ${n(h)}` : `quarter to ${n(h + 1)}`;
+  return mkUhr({ prompt: 'Set the clock:', visual: `<div class="q-word big" lang="en">It's ${esc(t)}.</div>`, h, m, step: 15, lang: 'en-GB', after: `It's ${t}.`, afterLang: 'en-GB', key: 'fxue' + h + ':' + m,
+    explain: `${t}: half past = halb (30 Minuten nach), quarter past = Viertel nach, quarter to = Viertel vor.` });
+}
+const FX_AAN = [['apple', 'an'], ['banana', 'a'], ['egg', 'an'], ['dog', 'a'], ['orange', 'an'], ['umbrella', 'an'], ['cat', 'a'], ['elephant', 'an'], ['ice cream', 'an'], ['house', 'a'], ['owl', 'an'], ['ball', 'a'], ['island', 'an'], ['book', 'a'], ['ant', 'an'], ['pencil', 'a']];
+function fxRasterAAn(ctx) { const n = R.int(2, 4), pick = R.sample(FX_AAN.filter(p => p[1] === 'a'), n).concat(R.sample(FX_AAN.filter(p => p[1] === 'an'), 6 - n));
+  return mkRaster({ prompt: 'a or an? Tick the box.', cols: ['<b class="sr-big">a</b>', '<b class="sr-big">an</b>'], colLabels: ['a', 'an'], rows: pick.map(p => ({ h: esc(p[0]), c: p[1] === 'a' ? 0 : 1 })), lang: 'en-GB',
+    explain: '«an» vor einem Vokal-Laut (a, e, i, o, u): an apple, an egg. Sonst «a»: a dog.', key: 'fxaa' + pick.map(p => p[0]).join('|') }); }
+const FX_EN_PL = [['cat', 'cats'], ['mouse', 'mice'], ['child', 'children'], ['box', 'boxes'], ['baby', 'babies'], ['foot', 'feet'], ['man', 'men'], ['tooth', 'teeth'], ['bus', 'buses'], ['woman', 'women'], ['dog', 'dogs'], ['fox', 'foxes']];
+function fxMatchPluralEN(ctx) { const pick = R.sample(FX_EN_PL, 4); return mkMatch({ prompt: 'One and many: Match the pairs.', left: pick.map(p => 'one ' + esc(p[0])), right: pick.map(p => 'two ' + esc(p[1])), lang: 'en-GB', explain: pick.map(p => `${p[0]} → ${p[1]}`).join(' · '), key: 'fxpl' + pick.map(p => p[0]).join('|') }); }
+const FX_ENCATN = { tiere: 'animals', essen: 'food', kleidung: 'clothes', koerper: 'body', schule: 'school', familie: 'family', dinge: 'things' };
+function fxSortEN(ctx) {
+  const cats = R.sample(['tiere', 'essen', 'kleidung', 'koerper'], 2), items = [];
+  cats.forEach((c, k) => R.sample(fxVoc('en', c), 3).forEach(v => items.push({ h: `${v[1]} ${esc(v[0])}`, c: k })));
+  return mkSort({ prompt: 'Sort the words.', cols: cats.map(c => `<b>${FX_ENCATN[c]}</b>`), colLabels: cats.map(c => FX_ENCATN[c]), items, lang: 'en-GB', key: 'fxse' + items.map(i => i.h).join('|') });
+}
+function fxKreuzVoc(lang, cat, de) {
+  return ctx => {
+    const one = fxEmojiEinmal(lang === 'es' ? VOCAB_ES : VOCAB), okW = v => /^[a-zñáéíóú]{3,8}$/i.test(v[0]) && (de || one.has(v[1])), pool = fxVoc(lang, cat).filter(okW), p = pool.length >= 8 ? pool : fxVoc(lang).filter(okW);
+    const q = mkKreuz({ words: R.shuffle(p).slice(0, 30).map(v => [v[0], de ? esc(v[2]) : `<span class="em">${v[1]}</span>`]), n: 5, lang: lang === 'es' ? 'es-ES' : 'en-GB',
+      prompt: lang === 'es' ? 'Crucigrama: toca una pista y escribe la palabra.' : 'Crossword: Tippe einen Hinweis an und leg das englische Wort.' });
+    return q || fxMemoBildWort(lang, cat)(ctx);
+  };
+}
+
+function fxUhrES(ctx) {
+  const h = R.int(1, 12), m = R.pick([0, 0, 30, 15]), t = alceUhr(h, m);
+  return mkUhr({ prompt: 'Pon el reloj:', visual: `<div class="q-word big" lang="es">${esc(t)}</div>`, h, m, step: 15, lang: 'es-ES', after: t, afterLang: 'es-ES', key: 'fxus' + h + ':' + m,
+    explain: 'y media = halb (30 Minuten nach), y cuarto = Viertel nach, en punto = genau.' });
+}
+function fxRasterSerEstar(ctx) {
+  const pool = ALCE_VSATZ.filter(x => ['ser', 'estar', 'tener'].includes(x[1])), pick = []; const seen = new Set();
+  for (const x of R.shuffle(pool)) { if (pick.filter(p => p[1] === x[1]).length >= 2 || seen.has(x[0])) continue; seen.add(x[0]); pick.push(x); if (pick.length === 6) break; }
+  return mkRaster({ prompt: '¿Ser, estar o tener? Marca el verbo que falta.', cols: ['<b>ser</b>', '<b>estar</b>', '<b>tener</b>'], colLabels: ['ser', 'estar', 'tener'], lang: 'es-ES',
+    rows: pick.map(x => ({ h: esc(x[0]).replace('___', '<span class="ra-q">___</span>'), c: ['ser', 'estar', 'tener'].indexOf(x[1]) })),
+    explain: pick.map(x => x[0].replace('___', ALCE_VB[x[1]][x[2]])).join(' '), key: 'fxst' + pick.map(x => x[0]).join('|') });
+}
+function fxKreuzAlce(s) {
+  return ctx => { const vs = (s.voc || []).map(v => [v[0].replace(/^(el|la|los|las) /, ''), v[1]]).filter(v => /^[a-zñáéíóú]{3,8}$/i.test(v[0]));
+    const q = vs.length >= 6 && mkKreuz({ words: vs.map(v => [v[0], `<span class="em">${v[1]}</span>`]), n: 5, lang: 'es-ES', prompt: 'Crucigrama: toca una pista y escribe la palabra.' });
+    return q || ALCE_SPEC.separa(ctx, s); };
+}
+
+const FX_ES_PL = [['el gato', 'los gatos'], ['la casa', 'las casas'], ['el perro', 'los perros'], ['la flor', 'las flores'], ['el lápiz', 'los lápices'], ['la mesa', 'las mesas'], ['el árbol', 'los árboles'], ['el libro', 'los libros'], ['la niña', 'las niñas'], ['el pez', 'los peces']];
+function fxMatchPluralES(ctx) { const pick = R.sample(FX_ES_PL, 4); return mkMatch({ prompt: 'Uno y muchos: une las parejas.', left: pick.map(p => esc(p[0])), right: pick.map(p => esc(p[1])), lang: 'es-ES', explain: pick.map(p => `${p[0]} → ${p[1]}`).join(' · '), key: 'fxpe' + pick.map(p => p[0]).join('|') }); }
+
+(function () {
+  const add = (ids, ...fs) => ids.forEach(id => { const g = GAMES[id]; if (g && g.gen) g.fx = (g.fx || []).concat(fs); });
+
+  add(['silben', 'silbenbau', 'trennen', 'silbenkette'], fxSilbenRaetsel);
+  add(['fehlerwort', 'merkwoerter', 'doppelt', 'iewort', 'dehnungsh', 'verlaengern', 'ssz', 'cktz'], fxFehlerWoerter);
+  add(['reim', 'reimdichter'], fxReimMemo); add(['mehrzahl', 'nomen'], fxMehrzahlMatch);
+  add(['spellde', 'anlaut', 'abc', 'gross'], fxKreuzDE); add(['wortart', 'wortarten34'], fxRasterWortart);
+
+  add(['uhr', 'uhrworte', 'zeitspanne'], fxUhrStellen); add(['geld', 'einkaufen', 'geldrechnen', 'muenzen', 'wechselgeld'], fxGeldLegen);
+  add(['zahlenstrahl', 'nachbarn', 'reihe', 'hundertertafel', 'tausend'], fxZahlenstrahl); add(['vergleich', 'rechenvergleich', 'ordnen'], fxRasterVergleich);
+  add(['zahlwort'], fxKreuzZahl('de'));
+
+  add(['aggregat', 'wasser', 'schneeeis'], fxSach('aggregat')); add(['magnet'], fxSach('magnet')); add(['material', 'technik'], fxSach('material'));
+  add(['wasser', 'experimente', 'meer'], fxSach('schwimmt')); add(['strom', 'stromkreis'], fxSach('strom')); add(['ernaehrung', 'zaehne', 'kornbrot'], fxSach('ernaehrung'));
+  add(['baum', 'wald', 'natur'], fxSach('baum')); add(['jahreslauf', 'kalender', 'wetterkleid'], fxSach('jahreszeit'));
+  add(['sinne', 'koerper', 'koerperteile'], fxPaare('sinne')); add(['bauernhof', 'haustiere', 'tiere'], fxPaare('jungtier')); add(['wald', 'tiere', 'lebensraum', 'wiese'], fxPaare('wohnung'));
+  add(['gemeinde', 'miteinander', 'berufe'], fxPaare('beruf')); add(['steckbrief', 'tiere', 'voegel'], fxSteckbrief);
+
+  ['bildwort', 'spellen', 'clothes', 'kitchen', 'home', 'bodyen', 'familyen'].forEach(id => add([id], fxKreuzVoc('en', FX_ENCAT[id])));
+  add(['uebersetzen'], fxKreuzVoc('en', null, true)); add(['timeen'], fxUhrEN); add(['aanen'], fxRasterAAn); add(['pluralen'], fxMatchPluralEN);
+  add(['bildwort', 'uebersetzen', 'hoer'], fxSortEN); add(['zahlen'], fxKreuzZahl('en'));
+
+  ['palabras', 'traducir', 'ropa', 'casa', 'cocina', 'familiaes', 'colees'].forEach(id => add([id], fxKreuzVoc('es', FX_ESCAT[id])));
+  add(['hora'], fxUhrES); add(['serestar', 'verbos'], fxRasterSerEstar); add(['numeros'], fxKreuzZahl('es')); add(['plural'], fxMatchPluralES);
+  if (typeof ALCE_SES !== 'undefined') ALCE_SES.forEach(s => { add(['alce' + s.id], fxKreuzAlce(s)); });
+  ['alceu1s1', 'alceu1s5', 'alceu2s1'].forEach(id => add([id], fxRasterSerEstar)); add(['alceu2s3'], fxUhrES);
+
+  add(['farbkreis'], fxSortWarmKalt);
 })();
 
 /*@@src sicher.js@@*/
