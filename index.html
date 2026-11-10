@@ -7149,6 +7149,112 @@ body.calm .weg-st .weg-n, body.calm .weg-st .weg-i { animation: none !important;
 .pxski-q.oops .pxski-qt b { color: #2f8f46; font-size: 1.15em; }
 @media (max-width: 500px) { .pxski-q { top: 6px; padding: 5px 9px 7px; } .pxski-ch { gap: 7px; margin-top: 5px; } .pxski-ch span { padding: 2px 7px 3px 3px; min-width: 2.6em; } .pxski-say { width: 40px; height: 34px; } }
 
+/* ---- style_px_stadion.css ---- */
+
+.fz-ctl { position: absolute; inset: auto 0 0 0; height: 0; pointer-events: none; z-index: 3; }
+.fz-ctl > * { pointer-events: auto; }
+.fz-pad { position: absolute; bottom: 14px; left: 14px; right: 14px; display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; pointer-events: none; }
+.fz-pad > * { pointer-events: auto; }
+.fz-pad .px-joy { position: relative; left: auto; bottom: auto; flex: none; }
+.fz-bts { display: flex; align-items: flex-end; gap: 12px; }
+.fz-pad .px-b { display: flex; flex-direction: column; align-items: center; justify-content: center; line-height: 1; gap: 2px; }
+.fz-pad .px-b i { font-style: normal; font-size: 28px; }
+.fz-pad .px-b.big i { font-size: 38px; }
+.fz-pad .px-b small { font: 900 11px/1 var(--f-body, system-ui), sans-serif; letter-spacing: .04em; }
+.fz-pad .fz-b1 { width: 76px; height: 76px; }
+.fz-pad .fz-b1.off { visibility: hidden; }
+.fz-pad.wait .fz-b2 { opacity: .45; }
+.fz-pl { position: absolute; left: 0; bottom: calc(100% + 6px); font: 900 13px/1 var(--f-body, system-ui), sans-serif; color: #fff; background: var(--fzc, #3b7cf0); padding: 4px 8px; box-shadow: 0 0 0 3px rgba(11, 16, 38, .6); }
+.fz-ctl.duo .fz-pad { right: auto; justify-content: flex-start; }
+.fz-ctl.duo .fz-pad.p1 { left: auto; right: 14px; flex-direction: row-reverse; }
+.fz-ctl.duo .fz-pad.p1 .fz-bts { flex-direction: row-reverse; }
+.fz-ctl.duo .fz-pad.p1 .fz-pl { left: auto; right: 0; }
+.fz-ctl.duo .fz-pad .px-b.big { background: color-mix(in srgb, var(--fzc, #3b7cf0) 70%, transparent); }
+.px-topfit .fz-pad { bottom: 18px; }
+.px-topfit .fz-pad .px-b { background: #2b3566; }
+.px-topfit .fz-pad .px-b.big { background: #3b7cf0; }
+.px-topfit .fz-ctl.duo .fz-pad .px-b.big { background: var(--fzc, #3b7cf0); }
+@media (max-width: 500px) {
+  .fz-pad { left: 10px; right: 10px; bottom: 10px; gap: 8px; }
+  .fz-bts { gap: 8px; }
+  .fz-pad .fz-b1 { width: 64px; height: 64px; }
+  .fz-pad .px-b i { font-size: 22px; } .fz-pad .px-b.big i { font-size: 30px; }
+}
+@media (max-height: 460px) and (orientation: landscape) {
+  .fz-pad { bottom: 8px; } .fz-pad .px-joy { width: 112px; height: 112px; }
+  .fz-pad .fz-b1 { width: 60px; height: 60px; } .fz-pad .px-b.big { width: 80px; height: 80px; }
+}
+.fz-hs b, .fz-ht { font-variant-numeric: tabular-nums; }
+.fz-hs { margin-right: 8px; } .fz-sup { margin-right: 6px; }
+
+
+.fz-panel { width: min(640px, 100%); }
+.fz-panel h2 { margin: 0 0 8px; }
+.fz-sub { color: #4a5578; font-size: 15px; margin: 6px 0; }
+.fz-help { font-size: 14px; color: #4a5578; margin: 12px 0 0; line-height: 1.45; }
+.fz-mh { display: flex; align-items: center; gap: 14px; text-align: left; margin-bottom: 10px; }
+.fz-mh img { width: 150px; height: auto; image-rendering: pixelated; flex: none; }
+.fz-mh h2 { margin: 0; }
+.fz-mh p { margin: 4px 0 0; }
+.fz-modes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 10px 0; }
+.fz-modes.two { grid-template-columns: repeat(2, 1fr); }
+.fz-mode { display: flex; flex-direction: column; align-items: center; gap: 3px; padding: 12px 8px; border: 0; background: #fff; color: #1d2440; cursor: pointer; box-shadow: inset 0 0 0 3px #1d2440, 4px 4px 0 #1d2440; font: inherit; }
+.fz-mode i { font-style: normal; font-size: 30px; line-height: 1.1; }
+.fz-mode b { font-size: 16px; }
+.fz-mode small { font-size: 12.5px; color: #4a5578; line-height: 1.25; }
+.fz-mode:active { transform: translate(2px, 2px); box-shadow: inset 0 0 0 3px #1d2440, 2px 2px 0 #1d2440; }
+.fz-opt { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 8px 0; text-align: left; }
+.fz-opt > span { font-weight: 800; font-size: 14px; min-width: 7.5em; }
+.fz-stats { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; margin: 10px 0 0; }
+.fz-stats span { display: flex; flex-direction: column; align-items: center; background: #fff; padding: 6px 10px; box-shadow: inset 0 0 0 2px #1d2440; min-width: 62px; }
+.fz-stats small { font-size: 11.5px; color: #4a5578; } .fz-stats b { font-size: 18px; }
+.fz-teams { display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; margin: 10px 0; }
+.fz-tm { display: grid; grid-template-columns: auto 1fr; grid-template-rows: auto auto; column-gap: 10px; align-items: center; text-align: left; padding: 8px 10px; border: 0; background: #fff; cursor: pointer; box-shadow: inset 0 0 0 3px var(--tc), 3px 3px 0 #1d2440; font: inherit; color: #1d2440; }
+.fz-tm i { font-style: normal; font-size: 28px; grid-row: span 2; }
+.fz-tm b { font-size: 15px; }
+.fz-st { font-size: 11px; letter-spacing: 1px; color: #e0a800; }
+.fz-ed .fz-prev { width: 288px; max-width: 100%; height: auto; image-rendering: pixelated; display: block; margin: 0 auto 8px; background: #3fae4f; box-shadow: inset 0 0 0 3px #1d2440; }
+.fz-in { display: flex; align-items: center; gap: 10px; text-align: left; margin: 8px 0; }
+.fz-in span { font-weight: 800; font-size: 14px; min-width: 7.5em; }
+.fz-in input, .fz-pls input { font: 700 16px/1.2 inherit; padding: 8px 10px; border: 0; box-shadow: inset 0 0 0 3px #1d2440; background: #fff; color: #1d2440; min-width: 0; }
+.fz-in input { flex: 1; }
+.fz-sws { display: flex; flex-wrap: wrap; gap: 6px; }
+.fz-sw { width: 34px; height: 34px; border: 0; background: var(--sc); box-shadow: inset 0 0 0 3px #1d2440; cursor: pointer; }
+.fz-sw.on { box-shadow: inset 0 0 0 3px #1d2440, 0 0 0 3px #ffd84a, 0 0 0 6px #1d2440; }
+.fz-pls { display: grid; gap: 6px; margin: 10px 0 0; }
+.fz-pls label { display: grid; grid-template-columns: 9.5em 1fr 4.2em; gap: 8px; align-items: center; text-align: left; }
+.fz-pls span { font-size: 13.5px; font-weight: 700; }
+.fz-tabw { overflow-x: auto; margin: 8px 0; }
+.fz-tab { width: 100%; border-collapse: collapse; font-size: 14px; background: #fff; box-shadow: inset 0 0 0 2px #1d2440; }
+.fz-tab th, .fz-tab td { padding: 5px 6px; text-align: center; font-variant-numeric: tabular-nums; }
+.fz-tab th { background: #1d2440; color: #fff; font-size: 12.5px; }
+.fz-tab .l { text-align: left; white-space: nowrap; }
+.fz-tab tr.fz-me td { background: #fff3c4; font-weight: 800; }
+.fz-tab tbody tr + tr td { border-top: 1px solid #dfe6f2; }
+.fz-res { display: flex; flex-direction: column; gap: 3px; font-size: 13.5px; margin: 6px 0; background: #fff; padding: 8px 10px; box-shadow: inset 0 0 0 2px #1d2440; text-align: left; }
+.fz-path { list-style: none; padding: 0; margin: 10px 0; display: grid; gap: 6px; }
+.fz-path li { display: flex; justify-content: space-between; gap: 10px; padding: 8px 12px; background: #fff; box-shadow: inset 0 0 0 2px #b9c6dc; text-align: left; }
+.fz-path li.now { box-shadow: inset 0 0 0 3px #1d2440; background: #fff3c4; }
+.fz-path li.ok { opacity: .7; }
+#pxOv.fz-low { place-items: end center; background: transparent; padding-bottom: 10px; }
+#pxOv.fz-low .fz-cele { max-height: 58%; }
+.fz-cele .fz-tabw { max-height: 150px; overflow: auto; }
+@media (max-width: 560px) {
+  .fz-modes { grid-template-columns: repeat(2, 1fr); }
+  .fz-teams { grid-template-columns: 1fr; }
+  .fz-mh img { width: 110px; }
+  .fz-pls label { grid-template-columns: 1fr 3.6em; }
+  .fz-pls label span { grid-column: span 2; }
+  .fz-tab { font-size: 12.5px; } .fz-tab th, .fz-tab td { padding: 4px 3px; }
+}
+
+@media (max-width: 700px) and (orientation: portrait) {
+  .fz-ctl.duo .fz-pad { left: 10px; right: 10px; }
+  .fz-ctl.duo .fz-pad.p0 { justify-content: flex-start; }
+  .fz-ctl.duo .fz-pad.p1 { bottom: 190px; justify-content: flex-start; }
+  .fz-ctl.duo .fz-pad.p1 .fz-pl { left: auto; right: 0; }
+}
+
 /* ---- style_px_tauch.css ---- */
 
 .pxtau-msg { position: absolute; z-index: 3; left: 50%; bottom: 16px; width: max-content; max-width: min(92%, calc(100% - 330px), 640px); box-sizing: border-box; padding: 7px 14px 8px; display: flex; align-items: center; gap: 10px;
@@ -7916,6 +8022,27 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 .zm-demo .zm-mb { min-width: 54px; height: 40px; font-size: 20px; }
 @media (max-width: 420px) { .zm-mb { min-width: 54px; height: 44px; font-size: 21px; padding: 0 7px; } .zm-mrow { gap: 4px; padding-top: 4px; } }
 
+/* ---- style_zufall250.css ---- */
+
+.zuf-btn { display: inline-flex; align-items: center; gap: 8px; margin-left: auto; padding: 8px 16px 8px 12px; border: 0; border-radius: 999px; background: var(--gold, #ffd84a); color: var(--ink, #1d2440); font: 800 16px/1 var(--f-display, inherit), sans-serif; cursor: pointer; box-shadow: 0 4px 0 var(--gold-deep, #e0a800); align-self: center; }
+.zuf-btn:active { transform: translateY(3px); box-shadow: 0 1px 0 var(--gold-deep, #e0a800); }
+.zuf-d { font-size: 22px; display: inline-block; }
+.zuf-btn:hover .zuf-d { animation: zufWackel .5s ease-in-out; }
+@keyframes zufWackel { 0%, 100% { transform: rotate(0); } 30% { transform: rotate(-18deg); } 70% { transform: rotate(14deg); } }
+.zuf { text-align: center; }
+.zuf-slot { display: flex; flex-direction: column; align-items: center; gap: 6px; margin: 14px auto 8px; padding: 18px 14px; max-width: 360px; min-height: 196px; border-radius: 22px; background: var(--card, #fff); box-shadow: inset 0 0 0 3px var(--line, #dfe6f2); }
+.zuf-slot.rolling { filter: saturate(.6); }
+.zuf-slot.rolling .zuf-i { animation: zufHopp .12s linear infinite alternate; }
+.zuf-slot.done { box-shadow: inset 0 0 0 4px var(--gold, #ffd84a), 0 8px 24px rgba(224, 168, 0, .25); animation: zufPop .35s ease-out; }
+@keyframes zufHopp { from { transform: translateY(0); } to { transform: translateY(-6px); } }
+@keyframes zufPop { 0% { transform: scale(.94); } 60% { transform: scale(1.04); } 100% { transform: scale(1); } }
+.zuf-w { font-weight: 800; font-size: 14px; padding: 4px 12px; border-radius: 999px; background: color-mix(in srgb, var(--w) 18%, transparent); color: var(--ink, #1d2440); }
+.zuf-i { font-size: 54px; line-height: 1.1; }
+.zuf-t { font-size: 22px; }
+.zuf-s { color: var(--ink-soft, #4a5578); font-size: 15px; }
+@media (max-width: 520px) { .section-title { flex-wrap: wrap; } .zuf-btn { order: 3; margin-left: 0; } }
+@media (prefers-reduced-motion: reduce) { .zuf-slot.rolling .zuf-i, .zuf-slot.done, .zuf-btn:hover .zuf-d { animation: none; } }
+
 </style>
 </head>
 <body>
@@ -7934,8 +8061,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '2.49.0';
-  var MAP = {"probe":0,"files":[[7924,"fehler_kern.js"],[8212,null],[8214,"data.js"],[8901,"data_more.js"],[9255,"data_su2.js"],[9476,"data_es.js"],[9815,"data_wissen.js"],[9997,"data_v21.js"],[10621,"data_v24.js"],[11072,"data_v25.js"],[11520,"data_v26.js"],[11619,"data_v29.js"],[11924,"data_v30.js"],[12248,"data_v31.js"],[12548,"data_kunst.js"],[12744,"data_v214.js"],[12847,"data_v216.js"],[13140,"schrift.js"],[13440,"eingabe.js"],[13651,"data_k34m.js"],[14165,"data_k34d.js"],[14498,"data_k34s.js"],[14887,"data_v224.js"],[15755,"data_v225w.js"],[16124,"data_v225k.js"],[16568,"data_herz.js"],[16922,"data_fb226.js"],[17065,"data_tf226.js"],[17272,"data_v227a.js"],[18363,"data_v227b.js"],[19317,"data_h28b.js"],[19357,"data_l28a.js"],[20223,"data_l28b.js"],[21403,"data_schaetz.js"],[21885,"data_party8.js"],[21935,"data_alce.js"],[22595,"data_alce2.js"],[22844,"data_alce3.js"],[23259,"registry.js"],[23772,"app.js"],[24881,"fun.js"],[25461,"fun2.js"],[25777,"atelier.js"],[26151,"kunst225.js"],[26341,"herz.js"],[26705,"reise.js"],[27007,"iglu.js"],[27173,"offline.js"],[27280,"party.js"],[27764,"meine.js"],[28120,"loeffel.js"],[28291,"trend.js"],[28833,"fun228a.js"],[29684,"fun228b.js"],[30345,"kueche.js"],[31384,"stimme.js"],[31439,"klassen.js"],[31588,"freunde_vorab.js"],[31609,"mut.js"],[32029,"schule.js"],[32518,"fussball226.js"],[32840,"schaetzen.js"],[33271,"party8.js"],[33890,"tiere.js"],[34349,"fussball232.js"],[34564,"party8b.js"],[34866,"weg.js"],[35083,"px.js"],[35494,"px_data.js"],[35751,"pxwelt.js"],[35832,"px_abenteuer.js"],[36675,"px_ski.js"],[37317,"px_wurf.js"],[37846,"px_insel.js"],[39047,"px_kicker.js"],[39982,"px_eis.js"],[40968,"px_run.js"],[42183,"px_brk.js"],[43145,"px_pol.js"],[44496,"px_frog.js"],[45756,"px_angel.js"],[47071,"px_golf.js"],[48105,"px_tauch.js"],[49370,"px_hockey.js"],[50326,"px_lab.js"],[51661,"px_plopp.js"],[52867,"cm.js"],[53357,"cmwelt.js"],[53413,"cm_baeck.js"],[54206,"cm_bahn.js"],[54970,"cm_detek.js"],[55687,"cm_markt.js"],[56400,"ff.js"],[56556,"ff_mathe.js"],[58546,"ff_deutsch.js"],[60134,"ff_sach_a.js"],[62383,"ff_sach_b.js"],[64612,"ff_sprachen.js"],[67020,"zm.js"],[67933,"tt.js"],[68146,"data_tagebuch.js"],[68189,"data_hoerspiel.js"],[68348,"leseecke.js"],[68667,"kt.js"],[68970,"alce.js"],[69133,"alce_aufg.js"],[69303,"formen.js"],[69752,"data_formen.js"],[69993,"data_formen2.js"],[70215,"spielzeit.js"],[70360,"data_faktmeinung.js"],[70479,"data_es248.js"],[70743,"data_en249.js"],[70977,"data_wissen249.js"],[71317,"data_kunst249.js"],[71563,"sicher.js"],[71747,"stil.js"],[71801,"freunde.js"],[71938,"start.js"],[71948,null],[71958,null]]}; // [[Zeile der Markierung, 'datei.js'], …] – trägt build.py ein
+  var VER = '2.50.0';
+  var MAP = {"probe":0,"files":[[8051,"fehler_kern.js"],[8339,null],[8341,"data.js"],[9028,"data_more.js"],[9382,"data_su2.js"],[9603,"data_es.js"],[9942,"data_wissen.js"],[10124,"data_v21.js"],[10748,"data_v24.js"],[11199,"data_v25.js"],[11647,"data_v26.js"],[11746,"data_v29.js"],[12051,"data_v30.js"],[12375,"data_v31.js"],[12675,"data_kunst.js"],[12871,"data_v214.js"],[12974,"data_v216.js"],[13267,"schrift.js"],[13567,"eingabe.js"],[13778,"data_k34m.js"],[14292,"data_k34d.js"],[14625,"data_k34s.js"],[15014,"data_v224.js"],[15882,"data_v225w.js"],[16251,"data_v225k.js"],[16695,"data_herz.js"],[17049,"data_fb226.js"],[17192,"data_tf226.js"],[17399,"data_v227a.js"],[18490,"data_v227b.js"],[19444,"data_h28b.js"],[19484,"data_l28a.js"],[20350,"data_l28b.js"],[21530,"data_schaetz.js"],[22012,"data_party8.js"],[22062,"data_alce.js"],[22722,"data_alce2.js"],[22971,"data_alce3.js"],[23386,"registry.js"],[23899,"app.js"],[25009,"fun.js"],[25589,"fun2.js"],[25905,"atelier.js"],[26279,"kunst225.js"],[26469,"herz.js"],[26833,"reise.js"],[27135,"iglu.js"],[27301,"offline.js"],[27408,"party.js"],[27892,"meine.js"],[28248,"loeffel.js"],[28419,"trend.js"],[28961,"fun228a.js"],[29812,"fun228b.js"],[30473,"kueche.js"],[31512,"stimme.js"],[31567,"klassen.js"],[31716,"freunde_vorab.js"],[31737,"mut.js"],[32157,"schule.js"],[32646,"fussball226.js"],[32968,"schaetzen.js"],[33399,"party8.js"],[34018,"tiere.js"],[34477,"fussball232.js"],[34692,"party8b.js"],[34994,"weg.js"],[35211,"px.js"],[35622,"px_data.js"],[35879,"pxwelt.js"],[35960,"px_abenteuer.js"],[36803,"px_ski.js"],[37445,"px_wurf.js"],[37974,"px_insel.js"],[39175,"px_kicker.js"],[40110,"px_eis.js"],[41096,"px_run.js"],[42311,"px_brk.js"],[43273,"px_pol.js"],[44624,"px_frog.js"],[45884,"px_angel.js"],[47199,"px_golf.js"],[48233,"px_tauch.js"],[49498,"px_hockey.js"],[50454,"px_lab.js"],[51789,"px_plopp.js"],[52995,"px_stadion.js"],[54499,"cm.js"],[54989,"cmwelt.js"],[55045,"cm_baeck.js"],[55838,"cm_bahn.js"],[56602,"cm_detek.js"],[57319,"cm_markt.js"],[58032,"ff.js"],[58188,"ff_mathe.js"],[60178,"ff_deutsch.js"],[61766,"ff_sach_a.js"],[64015,"ff_sach_b.js"],[66244,"ff_sprachen.js"],[68652,"zm.js"],[69565,"tt.js"],[69778,"data_tagebuch.js"],[69821,"data_hoerspiel.js"],[69980,"leseecke.js"],[70299,"kt.js"],[70602,"alce.js"],[70765,"alce_aufg.js"],[70935,"formen.js"],[71384,"data_formen.js"],[71625,"data_formen2.js"],[71847,"spielzeit.js"],[71992,"data_faktmeinung.js"],[72111,"data_es248.js"],[72375,"data_en249.js"],[72609,"data_wissen249.js"],[72949,"data_kunst249.js"],[73195,"data_fussball250.js"],[73319,"zufall250.js"],[73365,"sicher.js"],[73549,"stil.js"],[73603,"freunde.js"],[73740,"start.js"],[73750,null],[73760,null]]}; // [[Zeile der Markierung, 'datei.js'], …] – trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -23773,8 +23900,9 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '2.49.0';
+const APP_VERSION = '2.50.0';
 const CHANGELOG = [
+  { v: "2.50.0", d: "10.11.2026", t: ["Neues Pixelspiel: Lumis Fußballstadion mit eigenem Team, Liga, Pokal, Elfmeterschießen und Zu zweit an einem Gerät", "Allgemeinwissen: neue Gruppe Fußballwissen mit Regeln, Stadion, Fußball rechnen und Fußballwörtern auf Englisch und Spanisch", "Startseite: neuer Knopf Zufallsaufgabe, Lumi würfelt ein Spiel aus allen Lernwelten"] },
   { v: "2.49.0", d: "09.11.2026", t: ["Englisch: 15 neue Wortfelder, neue Satzübungen und englische Geschichten zum Lesen und Hören", "Allgemeinwissen: Forscherfragen & Experimente mit 16 Themen, dazu Kanaren, Europa, Olympia, Römer und Piraten", "Kunst: neue Gruppe Musik mit Noten und Instrumenten, Schatten raten, Spiegelbild, Muster, Farbtöne und mehr"] },
   { v: "2.48.0", d: "09.11.2026", t: ["Spanisch: rund 200 neue Wörter und sechs neue Themen (Freizeit, Stadt, Natur, Verkehr, Berufe, Tätigkeiten)", "Spanisch: Cuentos cortos zum Lesen und Hören, Dictado, ¿Qué oyes?, Tabla de verbos und Detective de ortografía"] },
   { v: "2.47.0", d: "09.11.2026", t: ["Erst lernen, dann spielen: Pixel-Welt und Comic-Stadt kosten jetzt Münzen, 10 Minuten Spielzeit für 5 Münzen", "Die Uhr läuft nur im Spiel, Aufgaben zählen nicht mit. Höchstens 30 Minuten am Tag, im Elternbereich einstellbar", "Neu unter Herz & Mut: „Fakt oder Meinung?“, damit Kinder wissen: Ein gemeiner Satz ist eine Meinung, nicht die Wahrheit über sie"] },
@@ -24121,7 +24249,7 @@ function showHome() {
       ${typeof homeHint === 'function' ? safeCard(homeHint) : ''}
       ${typeof ttHomeCard === 'function' ? safeCard(ttHomeCard) : ''}
       ${typeof wegCard === 'function' ? safeCard(wegCard) : ''}
-      <div class="section-title"><h2>Wähle eine Lernwelt</h2><span>${klVisCount()} Spiele für ${klName(klasse())}</span></div>
+      <div class="section-title"><h2>Wähle eine Lernwelt</h2>${typeof zufBtn === 'function' ? zufBtn() : ''}<span>${klVisCount()} Spiele für ${klName(klasse())}</span></div>
       <div class="worlds">${WORLDS.map(w => { const pr = worldProgress(w.id); return `<button class="tile" data-world="${w.id}" data-act="world" data-w="${w.id}" data-top="1">
         <div class="tx"><h3>${w.name.replace('Allgemeinwissen', 'Allgemein&shy;wissen').replace('Sachunterricht', 'Sach&shy;unterricht')}</h3><span class="tag">${w.tag}</span><span class="prog">${pr.max ? `<span class="pbar"><i style="width:${Math.round(pr.got / pr.max * 100)}%"></i></span><span class="tnum">${pr.got}/${pr.max} ⭐</span>` : `<span class="tnum">ab ${klName(Math.min(...gamesOfWorld(w.id).map(klMin)))}</span>`}</span></div>
         <div class="art">${ART[w.id]}</div></button>`; }).join('')}</div>
@@ -52864,6 +52992,1510 @@ pxReg({ id: 'flug', t: 'Lumis Ballonflug', d: 'Flattere durch die Lücken – un
   start: () => pxFluStart(),
   prog: () => { const s = pxS().flug; if (!isObj(s) || !s.runs) return ''; return `Bestwert ${s.best | 0} m${s.stars ? ' · ' + '★'.repeat(s.stars) : ''}`; } });
 
+/*@@src px_stadion.js@@*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const FZ = { L: 520, D: 196, TOP: 60, YS: .6, KT: .9, MX: 44, GY0: 76, GY1: 120, GH: 17, GD: 14, PA: 66, PY0: 40, PY1: 156, GA: 22, AY0: 62, AY1: 134, SPOT: 46, CR: 34 };
+const FZ_PADX = 80, FZ_BW = FZ.L + 2 * FZ.MX + 2 * FZ_PADX;
+const FZ_LEN = [['kurz', 'Kurz', 75], ['normal', 'Normal', 120], ['lang', 'Lang', 180]];
+const FZ_FARBEN = [['#3b7cf0', 'Blau'], ['#ef4b4b', 'Rot'], ['#ffd84a', 'Gelb'], ['#2fae4f', 'Grün'], ['#ff8a2e', 'Orange'], ['#8a5cf6', 'Lila'], ['#ff6fae', 'Pink'], ['#22c1c3', 'Türkis'], ['#f4f6fb', 'Weiß'], ['#2a2f45', 'Schwarz']];
+const FZ_MUSTER = [['plain', 'Einfarbig'], ['streifen', 'Streifen'], ['ringel', 'Ringel'], ['haelfte', 'Hälften']];
+const FZ_POS = ['🧤 Tor', '🛡️ Abwehr', '🛡️ Abwehr', '⚡ Sturm', '⚡ Sturm'];
+const FZ_NR = [1, 3, 5, 9, 11];
+const FZ_TEAMS = [
+  { id: 'fuchs', n: 'FUCHS FLITZER', k: 'FUX', e: '🦊', a: 'fuchs', c: '#ff8a2e', s: '#f4f6fb', pat: 'plain', st: 1, p: ['RUBI', 'FLINK', 'FUCHSI', 'FELIX', 'FIBI'] },
+  { id: 'hase', n: 'HOPPEL HASEN', k: 'HOP', e: '🐰', a: 'hase', c: '#ff6fae', s: '#f4f6fb', pat: 'ringel', st: 2, p: ['MÖHRE', 'HOPS', 'LOLA', 'MUMMEL', 'BOMMEL'] },
+  { id: 'frosch', n: 'GRÜNE FRÖSCHE', k: 'FRO', e: '🐸', a: 'frosch', c: '#2fae4f', s: '#ffd84a', pat: 'plain', st: 3, p: ['QUAKI', 'PLATSCH', 'TEICHI', 'HÜPF', 'GLIBBI'] },
+  { id: 'igel', n: 'STACHEL IGEL', k: 'IGL', e: '🦔', a: 'igel', c: '#ffd84a', s: '#2a2f45', pat: 'streifen', st: 4, p: ['PIKS', 'STACHI', 'KUGEL', 'BORSTI', 'IGOR'] },
+  { id: 'wasch', n: 'WASCHBÄR BANDE', k: 'WSB', e: '🦝', a: 'wasch', c: '#2a2f45', s: '#9aa7b8', pat: 'haelfte', st: 5, p: ['MASKE', 'RINGO', 'NACHTI', 'SCHLAU', 'BANDIT'] },
+  { id: 'eule', n: 'EULEN ELF', k: 'EUL', e: '🦉', a: 'eule', c: '#8a5cf6', s: '#f4f6fb', pat: 'plain', st: 6, p: ['UHU', 'KAUZI', 'FEDER', 'SCHUHU', 'WEISE'] },
+  { id: 'baer', n: 'BRUMMBÄREN', k: 'BÄR', e: '🐻', a: 'baer', c: '#ef4b4b', s: '#f4f6fb', pat: 'streifen', st: 7, p: ['BRUMM', 'HONIG', 'TAPSI', 'BÄRBEL', 'PETZ'] }
+];
+const FZ_ANI = {
+  peng: { f: '#2b3566', l: '#4a5aa0', m: '#ffffff', h: '#2b3566' }, lumi: { f: '#3b7cf0', l: '#8fd0ff', m: '#ffffff', h: '#2149b0' },
+  fuchs: { f: '#ff7a3d', l: '#ffab7a', m: '#ffffff', h: '#c4481a' }, hase: { f: '#e6e9f2', l: '#ffffff', m: '#ffffff', h: '#b9c2d6' },
+  frosch: { f: '#5cc85c', l: '#9be59b', m: '#d9f5c0', h: '#2f8f46' }, igel: { f: '#7a4f2c', l: '#a9713f', m: '#f2d3a8', h: '#5a3a20' },
+  wasch: { f: '#9aa7b8', l: '#c9d3e6', m: '#f4f6fb', h: '#5d6878' }, eule: { f: '#a9713f', l: '#d29a6a', m: '#f2d3a8', h: '#6b4425' },
+  baer: { f: '#8b5a2b', l: '#b07a45', m: '#d9a874', h: '#5e3b1b' }
+};
+const FZ_RUNDEN = ['Viertelfinale', 'Halbfinale', 'Finale'];
+
+const FZ_RB = [{ v: 1.18, e: .65, s: 1.1, g: 1.4, r: 1.2 }, { v: 1.12, e: .72, s: 1.07, g: 1.25, r: 1.15 }, { v: 1.06, e: .85, s: 1.04, g: 1.1, r: 1.08 }, { v: 1.02, e: .95, s: 1.02, g: 1.04, r: 1.02 },
+  { v: 1, e: 1, s: 1, g: 1, r: 1 }, { v: .93, e: 1.25, s: .95, g: .9, r: .92 }, { v: .86, e: 1.5, s: .9, g: .78, r: .85 }];
+const FZ_RB0 = FZ_RB[4];
+const FZ_DIG = ['111101101101111', '010110010010111', '111001111100111', '111001111001111', '101101111001001', '111100111001111', '111100111101111', '111001001001001', '111101111101111', '111101111001111'];
+let FZG = null;
+
+
+const fzCl = (v, a, b) => v < a ? a : v > b ? b : v;
+const fzD = (a, b) => Math.hypot(a.x - b.x, a.y - b.y);
+function fzRGB(h) { const n = parseInt(String(h).slice(1), 16); return [n >> 16 & 255, n >> 8 & 255, n & 255]; }
+function fzShade(h, f) { return '#' + fzRGB(h).map(v => Math.round(fzCl(f < 0 ? v * (1 + f) : v + (255 - v) * f, 0, 255)).toString(16).padStart(2, '0')).join(''); }
+function fzNear(a, b, lim) { const x = fzRGB(a), y = fzRGB(b); return Math.hypot(x[0] - y[0], x[1] - y[1], x[2] - y[2]) < (lim || 110); }
+function fzClean(s, max) { return String(s || '').toUpperCase().replace(/[^A-ZÄÖÜ0-9 ]/g, '').replace(/\s+/g, ' ').trim().slice(0, max); }
+function fzNice(s) { return String(s || '').toLowerCase().replace(/(^|[\s])(\S)/g, (m, a, b) => a + b.toUpperCase()); }
+function fzKindName() { return fzClean((S.profile && S.profile.name) || '', 8) || 'MIKA'; }
+function fzShort(n) { return (fzClean(n, 14).replace(/ /g, '') + 'XXX').slice(0, 3); }
+function fzCoarse() { try { return matchMedia('(pointer: coarse)').matches; } catch (e) { return false; } }
+function fzDefTeam() { return { n: 'LUMIS BLITZE', c: '#3b7cf0', s: '#f4f6fb', pat: 'plain', p: [['PINO', 1], ['FLOCKE', 4], ['KIKI', 5], [fzKindName(), 7], ['LUMI', 10]] }; }
+function fzS() {
+  const P = pxS(); if (!isObj(P.fz)) P.fz = {};
+  const z = P.fz, d = fzDefTeam(), cols = FZ_FARBEN.map(f => f[0]);
+  if (!isObj(z.team)) z.team = d;
+  const t = z.team;
+  t.n = fzClean(t.n, 14) || d.n;
+  if (!cols.includes(t.c)) t.c = d.c;
+  if (!cols.includes(t.s)) t.s = d.s;
+  if (!FZ_MUSTER.some(m => m[0] === t.pat)) t.pat = 'plain';
+  if (!Array.isArray(t.p) || t.p.length !== 5) t.p = d.p;
+  t.p = t.p.map((x, i) => [fzClean(Array.isArray(x) ? x[0] : '', 8) || d.p[i][0], fzCl(Number(Array.isArray(x) ? x[1] : 0) | 0, 1, 99) || d.p[i][1]]);
+  if (!isObj(z.st)) z.st = {};
+  ['sp', 's', 'u', 'n', 'tf', 'tg', 'meister', 'pokal', 'elf', 'duo', 'saison'].forEach(k => { z.st[k] = z.st[k] | 0; });
+  if (!FZ_LEN.some(l => l[0] === z.len)) z.len = 'normal';
+  if (!PX_FACH.some(f => f[0] === z.fach)) z.fach = 'mix';
+  if (z.liga && !(isObj(z.liga) && Array.isArray(z.liga.teams) && Array.isArray(z.liga.fx) && isObj(z.liga.tab))) z.liga = null;
+  if (z.pokal && !(isObj(z.pokal) && Array.isArray(z.pokal.opp))) z.pokal = null;
+  return z;
+}
+function fzOwnDef() { const t = fzS().team; return { id: 'own', own: true, n: t.n, k: fzShort(t.n), e: '🐧', a: 'peng', c: t.c, s: t.s, pat: t.pat, st: 4, p: t.p.map(x => x[0]), nr: t.p.map(x => x[1]) }; }
+function fzDef(id) { if (id === 'own') return fzOwnDef(); const d = FZ_TEAMS.find(t => t.id === id) || FZ_TEAMS[0]; return Object.assign({ nr: FZ_NR }, d); }
+function fzKit(c, s, pat) { return { c, s, pat }; }
+function fzKits(d0, d1) {
+  const k0 = fzKit(d0.c, d0.s, d0.pat);
+  let k1 = fzKit(d1.c, d1.s, d1.pat);
+  if (fzNear(k0.c, k1.c)) {
+    k1 = fzKit(d1.s, d1.c, 'plain');
+    if (fzNear(k0.c, k1.c)) k1 = fzKit('#f4f6fb', d1.c, 'plain');
+    if (fzNear(k0.c, k1.c)) k1 = fzKit('#2a2f45', '#ffd84a', 'plain');
+  }
+  const GK = ['#ffd84a', '#2fae4f', '#9aa7b8', '#ff6fae', '#22c1c3', '#2a2f45', '#ff8a2e'];
+  k0.gk = GK.find(x => !fzNear(x, k0.c) && !fzNear(x, k1.c)) || '#9aa7b8';
+  k1.gk = GK.find(x => !fzNear(x, k0.c) && !fzNear(x, k1.c) && !fzNear(x, k0.gk)) || '#2a2f45';
+  return [k0, k1];
+}
+function fzLook(d, kit, k) {
+  const gk = k === 0;
+  return { a: d.own ? (k === 4 ? 'lumi' : 'peng') : d.a, c: gk ? kit.gk : kit.c, s: gk ? fzShade(kit.gk, -.4) : kit.s, pat: gk ? 'plain' : kit.pat, gk, cap: k === 4, nr: (d.nr || FZ_NR)[k] };
+}
+function fzAI(s) {
+  const f = (fzCl(s, 1, 7) - 1) / 6, l = (a, b) => a + (b - a) * f;
+  return { v: l(56, 74), drib: l(.8, .92), steal: l(.75, .3), err: l(18, 7), range: l(85, 125), shot: l(165, 228), think: l(.7, .32), pass: l(.45, .8),
+    gkV: l(44, 64), gkR: l(.34, .18), gkSave: l(.78, .93), supSave: l(.36, .6), slide: s >= 3 ? l(0, 1.1) : 0, read: l(.22, .46), miss: l(.17, .06) };
+}
+
+
+const FZ_SPR = new Map();
+function fzLookKey(L) { return [L.a, L.c, L.s, L.pat, L.gk ? 1 : 0, L.cap ? 1 : 0, L.nr | 0].join('~'); }
+function fzSprite(L, pose, fr, flip) {
+  const key = fzLookKey(L) + '|' + pose + (fr | 0) + (flip ? 'f' : '');
+  let c = FZ_SPR.get(key); if (c) return c;
+  if (flip) { const o = fzSprite(L, pose, fr, false), [f, g] = pxCanvas(o.width, o.height); g.translate(o.width, 0); g.scale(-1, 1); g.drawImage(o, 0, 0); c = f; }
+  else { const [cv, g] = pxCanvas(24, 28); if (pose === 'l' || pose === 'd') fzLying(g, L, pose); else if (pose === 'v' || pose === 'b' || pose === 'vj') fzFront(g, L, pose); else fzSide(g, L, pose, fr | 0); c = cv; }
+  if (FZ_SPR.size > 1200) FZ_SPR.clear();
+  FZ_SPR.set(key, c); return c;
+}
+function fzShirt(g, L, x, y, w, h) {
+  const c = L.c, s = L.s;
+  pxRect(g, x, y, w, h, c);
+  if (L.pat === 'streifen') for (let i = 1; i < w; i += 3) pxRect(g, x + i, y, 1, h, s);
+  else if (L.pat === 'ringel') for (let j = 1; j < h; j += 2) pxRect(g, x, y + j, w, 1, s);
+  else if (L.pat === 'haelfte') pxRect(g, x + Math.floor(w / 2), y, Math.ceil(w / 2), h, s);
+  pxRect(g, x, y + h - 1, w, 1, fzShade(L.pat === 'ringel' && h % 2 === 0 ? s : c, -.3));
+}
+function fzDigits(g, n, x, y, col) {
+  const s = String(n | 0), w = s.length * 4 - 1; let cx = x - Math.floor(w / 2);
+  for (const ch of s) { const b = FZ_DIG[Number(ch)] || FZ_DIG[0]; for (let i = 0; i < 15; i++) if (b[i] === '1') pxRect(g, cx + i % 3, y + Math.floor(i / 3), 1, 1, col); cx += 4; }
+}
+
+function fzHead(g, L, x, y, view) {
+  const a = L.a, A = FZ_ANI[a] || FZ_ANI.peng, K = PXC.k, f = A.f, m = A.m, side = view === 's';
+  const earR = (ex, ey, w, h, inner) => { pxRect(g, ex - 1, ey - 1, w + 2, h + 2, K); pxRect(g, ex, ey, w, h, f); if (inner) pxRect(g, ex + (w > 2 ? 1 : 0), ey + 1, Math.max(1, w - (w > 2 ? 2 : 1)), Math.max(1, h - 2), inner); };
+  const earT = (x0, x1, top, base) => { pxTri(g, x0 - 1, base + 1, (x0 + x1) / 2, top - 1, x1 + 1, base + 1, K); pxTri(g, x0, base, (x0 + x1) / 2, top, x1, base, f); };
+  const earO = (ex, ey) => { pxEll(g, ex - 1, ey - 1, 6, 6, K); pxEll(g, ex, ey, 4, 4, f); pxRect(g, ex + 1, ey + 1, 2, 2, m); };
+
+  if (a === 'hase') { if (side) { earR(x + 2, y - 5, 2, 6, '#ffb3cf'); earR(x + 5, y - 6, 2, 7, '#ffb3cf'); } else { earR(x + 1, y - 5, 2, 6, '#ffb3cf'); earR(x + 7, y - 5, 2, 6, '#ffb3cf'); } }
+  else if (a === 'fuchs') { if (side) { earT(x + 1, x + 4, y - 4, y + 1); earT(x + 4, x + 7, y - 4, y + 1); } else { earT(x - 1, x + 3, y - 4, y + 2); earT(x + 6, x + 10, y - 4, y + 2); } }
+  else if (a === 'eule') { if (side) { earT(x + 1, x + 3, y - 3, y + 1); earT(x + 5, x + 7, y - 3, y + 1); } else { earT(x, x + 2, y - 3, y + 1); earT(x + 7, x + 9, y - 3, y + 1); } }
+  else if (a === 'wasch' || a === 'baer') { if (side) { earO(x + 1, y - 2); earO(x + 5, y - 3); } else { earO(x - 1, y - 2); earO(x + 7, y - 2); } }
+  else if (a === 'igel') { for (let i = 0; i < 5; i++) { const sx = side ? x - 2 + i * 2 : x - 1 + i * 2.6; pxTri(g, sx - 1, y + 3, sx + 1, y - 4, sx + 4, y + 3, K); pxTri(g, sx, y + 3, sx + 1, y - 2, sx + 3, y + 3, PXC.N); } }
+
+  pxEll(g, x - 1, y - 1, 12, 11, K); pxEll(g, x, y, 10, 9, f);
+  pxEll(g, x + 1, y + 1, 4, 2, A.l);
+  if (a === 'frosch') { const bump = (bx) => { pxEll(g, bx - 1, y - 4, 6, 6, K); pxEll(g, bx, y - 3, 4, 4, view === 'b' ? f : '#ffffff'); if (view !== 'b') pxRect(g, bx + (side ? 2 : 1), y - 2, 2, 2, K); }; if (side) bump(x + 5); else { bump(x); bump(x + 6); } }
+  if (view === 'b') { if (a === 'peng' || a === 'lumi') pxRect(g, x + 3, y + 7, 4, 1, A.l); return; }
+  const eye = (ex, ey) => { pxRect(g, ex, ey, 2, 2, K); pxRect(g, ex, ey, 1, 1, '#ffffff'); };
+  if (side) {
+    if (a === 'peng' || a === 'lumi') { pxEll(g, x + 4, y + 2, 6, 6, m); eye(x + 6, y + 3); pxRect(g, x + 5, y + 6, 1, 1, PXC.p); pxRect(g, x + 9, y + 4, 4, 3, K); pxRect(g, x + 10, y + 5, 2, 1, PXC.o); }
+    else if (a === 'fuchs') { pxEll(g, x + 4, y + 4, 6, 5, m); pxRect(g, x + 8, y + 4, 4, 3, K); pxRect(g, x + 9, y + 5, 2, 1, m); pxRect(g, x + 11, y + 4, 1, 2, K); eye(x + 6, y + 2); }
+    else if (a === 'hase') { pxEll(g, x + 5, y + 4, 5, 4, m); pxRect(g, x + 9, y + 5, 1, 1, '#ff8fc2'); eye(x + 6, y + 2); pxRect(g, x + 5, y + 6, 1, 1, PXC.p); }
+    else if (a === 'frosch') { pxRect(g, x + 4, y + 6, 6, 1, PXC.H); pxRect(g, x + 6, y + 4, 1, 1, PXC.H); pxEll(g, x + 3, y + 7, 6, 2, m); }
+    else if (a === 'igel') { pxEll(g, x + 4, y + 2, 7, 7, m); pxRect(g, x + 10, y + 4, 2, 3, K); pxRect(g, x + 10, y + 5, 1, 1, m); pxRect(g, x + 11, y + 4, 1, 1, K); pxRect(g, x + 7, y + 3, 1, 2, K); }
+    else if (a === 'wasch') { pxRect(g, x + 4, y + 2, 6, 3, K); pxRect(g, x + 7, y + 3, 1, 1, '#ffffff'); pxEll(g, x + 5, y + 5, 6, 3, m); pxRect(g, x + 10, y + 5, 2, 1, K); }
+    else if (a === 'eule') { pxEll(g, x + 3, y + 1, 7, 7, m); pxEll(g, x + 5, y + 2, 4, 4, '#ffffff'); pxRect(g, x + 6, y + 3, 2, 2, K); pxRect(g, x + 9, y + 5, 2, 2, K); pxRect(g, x + 9, y + 5, 1, 1, PXC.y); }
+    else if (a === 'baer') { pxEll(g, x + 5, y + 4, 6, 4, m); pxRect(g, x + 10, y + 4, 2, 2, K); eye(x + 6, y + 2); }
+  } else {
+    if (a === 'peng' || a === 'lumi') { pxEll(g, x + 1, y + 2, 8, 7, m); eye(x + 2, y + 3); eye(x + 6, y + 3); pxRect(g, x + 4, y + 5, 2, 2, PXC.o); pxRect(g, x + 4, y + 6, 2, 1, PXC.O); }
+    else if (a === 'fuchs') { pxEll(g, x + 2, y + 4, 6, 5, m); eye(x + 2, y + 2); eye(x + 6, y + 2); pxRect(g, x + 4, y + 5, 2, 1, K); }
+    else if (a === 'hase') { pxEll(g, x + 2, y + 4, 6, 4, m); eye(x + 2, y + 2); eye(x + 6, y + 2); pxRect(g, x + 4, y + 5, 2, 1, '#ff8fc2'); }
+    else if (a === 'frosch') { pxRect(g, x + 1, y + 6, 8, 1, PXC.H); pxRect(g, x + 1, y + 5, 1, 1, PXC.H); pxRect(g, x + 8, y + 5, 1, 1, PXC.H); }
+    else if (a === 'igel') { pxEll(g, x + 1, y + 2, 8, 7, m); eye(x + 2, y + 3); eye(x + 6, y + 3); pxRect(g, x + 4, y + 6, 2, 1, K); }
+    else if (a === 'wasch') { pxRect(g, x + 1, y + 2, 8, 3, K); pxRect(g, x + 2, y + 3, 1, 1, '#ffffff'); pxRect(g, x + 7, y + 3, 1, 1, '#ffffff'); pxEll(g, x + 2, y + 5, 6, 4, m); pxRect(g, x + 4, y + 5, 2, 1, K); }
+    else if (a === 'eule') { pxEll(g, x + 1, y + 1, 8, 7, m); pxEll(g, x + 1, y + 2, 4, 4, '#ffffff'); pxEll(g, x + 5, y + 2, 4, 4, '#ffffff'); pxRect(g, x + 2, y + 3, 2, 2, K); pxRect(g, x + 6, y + 3, 2, 2, K); pxRect(g, x + 4, y + 6, 2, 2, PXC.y); }
+    else if (a === 'baer') { pxEll(g, x + 2, y + 4, 6, 4, m); eye(x + 2, y + 2); eye(x + 6, y + 2); pxRect(g, x + 4, y + 4, 2, 2, K); }
+  }
+}
+function fzLegV(g, x, y0, y1, col) { pxRect(g, x - 1, y0, 4, y1 - y0 + 1, PXC.k); pxRect(g, x, y0, 2, y1 - y0, col); }
+function fzBoot(g, x, y) { pxRect(g, x - 1, y - 1, 5, 4, PXC.k); pxRect(g, x, y, 3, 2, '#1d2440'); pxRect(g, x, y, 1, 1, '#4a5578'); }
+function fzSide(g, L, pose, fr) {
+  const K = PXC.k, A = FZ_ANI[L.a] || FZ_ANI.peng, c = L.c, cd = fzShade(c, -.3), hand = L.gk ? '#f4f6fb' : A.h;
+  const bob = (pose === 'r' && fr % 2 === 1) || (pose === 'i' && fr === 1) ? 1 : 0, lift = pose === 'j' ? -2 : 0;
+  const bx = 8, by = 14 + bob + lift, ly = by + 8;
+
+  if (pose === 'r' && fr % 4 === 0) { fzLegV(g, 8, ly, 23, cd); fzBoot(g, 6, 23); fzLegV(g, 13, ly, 25, c); fzBoot(g, 13, 25); }
+  else if (pose === 'r' && fr % 4 === 2) { fzLegV(g, 12, ly, 25, cd); fzBoot(g, 12, 25); fzLegV(g, 9, ly, 23, c); fzBoot(g, 7, 23); }
+  else if (pose === 'k') { fzLegV(g, 10, ly, 25, cd); fzBoot(g, 10, 25); pxRect(g, 12, ly - 1, 7, 4, K); pxRect(g, 13, ly, 5, 2, c); pxRect(g, 18, ly - 1, 4, 4, K); pxRect(g, 18, ly, 3, 2, '#1d2440'); }
+  else if (pose === 'j') { fzLegV(g, 9, ly, 24, cd); fzLegV(g, 12, ly, 24, c); fzBoot(g, 8, 24); fzBoot(g, 12, 24); }
+  else { fzLegV(g, 9, ly, 25, cd); fzLegV(g, 12, ly, 25, c); fzBoot(g, 9, 25); fzBoot(g, 12, 25); }
+
+  if (pose === 'j') { pxRect(g, bx - 2, by - 6, 4, 8, K); pxRect(g, bx - 1, by - 5, 2, 5, cd); pxRect(g, bx - 1, by - 6, 2, 1, hand); }
+  else { pxRect(g, bx - 2, by, 3, 7, K); pxRect(g, bx - 1, by + 1, 2, 4, cd); pxRect(g, bx - 1, by + 5, 2, 1, hand); }
+
+  pxRect(g, bx - 1, by - 1, 10, 10, K);
+  fzShirt(g, L, bx, by, 8, 6);
+  pxRect(g, bx, by + 6, 8, 2, L.s); pxRect(g, bx, by + 7, 8, 1, fzShade(L.s, -.3));
+  if (L.a === 'lumi') { pxRect(g, bx, by, 8, 2, PXC.y); pxRect(g, bx + 1, by + 2, 2, 2, PXC.Y); }
+
+  if (pose === 'j') { pxRect(g, bx + 5, by - 6, 4, 8, K); pxRect(g, bx + 6, by - 5, 2, 5, c); pxRect(g, bx + 6, by - 6, 2, 1, hand); if (L.cap) pxRect(g, bx + 6, by - 3, 2, 1, PXC.y); }
+  else if (pose === 'h') { pxRect(g, bx + 5, by + 1, 7, 4, K); pxRect(g, bx + 6, by + 2, 4, 2, c); pxRect(g, bx + 10, by + 2, 1, 2, hand); }
+  else { const sw = pose === 'r' ? [1, 0, -1, 0][fr % 4] : 0; pxRect(g, bx + 5 + sw, by, 4, 7, K); pxRect(g, bx + 6 + sw, by + 1, 2, 3, c); pxRect(g, bx + 6 + sw, by + 4, 2, 2, hand); if (L.cap) pxRect(g, bx + 6 + sw, by + 2, 2, 1, PXC.y); }
+  fzHead(g, L, 7, 4 + bob + lift, 's');
+}
+function fzFront(g, L, pose) {
+  const K = PXC.k, A = FZ_ANI[L.a] || FZ_ANI.peng, c = L.c, cd = fzShade(c, -.3), hand = L.gk ? '#f4f6fb' : A.h, back = pose === 'b';
+  const up = pose === 'vj' ? -3 : 0, bx = 8, by = 14 + up, ly = by + 8;
+  fzLegV(g, 9, ly, 25 + up, back ? cd : c); fzLegV(g, 13, ly, 25 + up, back ? cd : c); fzBoot(g, 8, 25 + up); fzBoot(g, 13, 25 + up);
+  if (L.gk && !back) {
+    const ay = pose === 'vj' ? by - 5 : by + 1;
+    pxRect(g, bx - 5, ay, 6, 4, K); pxRect(g, bx - 4, ay + 1, 4, 2, c); pxRect(g, bx - 5, ay, 2, 4, K); pxRect(g, bx - 5, ay + 1, 2, 2, hand);
+    pxRect(g, bx + 7, ay, 6, 4, K); pxRect(g, bx + 8, ay + 1, 4, 2, c); pxRect(g, bx + 11, ay + 1, 2, 2, hand);
+  } else { pxRect(g, bx - 3, by, 4, 7, K); pxRect(g, bx - 2, by + 1, 2, 4, c); pxRect(g, bx - 2, by + 5, 2, 1, hand); pxRect(g, bx + 7, by, 4, 7, K); pxRect(g, bx + 8, by + 1, 2, 4, c); pxRect(g, bx + 8, by + 5, 2, 1, hand); }
+  pxRect(g, bx - 1, by - 1, 10, 10, K);
+  fzShirt(g, L, bx, by, 8, 6);
+  pxRect(g, bx, by + 6, 8, 2, L.s); pxRect(g, bx, by + 7, 8, 1, fzShade(L.s, -.3));
+  if (back) { if (L.pat !== 'plain') pxRect(g, bx + 1, by + 1, 7, 5, L.c); fzDigits(g, L.nr || 0, bx + 4, by + 1, fzNear(L.c, '#ffffff', 200) || fzNear(L.c, '#ffd84a', 120) ? '#1d2440' : '#ffffff'); }
+  if (L.a === 'lumi') { pxRect(g, bx, by, 8, 2, PXC.y); if (!back) pxRect(g, bx + 5, by + 2, 2, 2, PXC.Y); }
+  fzHead(g, L, 7, 4 + up, back ? 'b' : 'v');
+}
+function fzLying(g, L, pose) {
+  const K = PXC.k, A = FZ_ANI[L.a] || FZ_ANI.peng, c = L.c, cd = fzShade(c, -.3), hand = L.gk ? '#f4f6fb' : A.h;
+  if (pose === 'l') {
+    pxRect(g, 9, 19, 9, 8, K); fzShirt(g, L, 10, 20, 6, 6); pxRect(g, 15, 20, 2, 6, L.s);
+    pxRect(g, 16, 20, 6, 3, K); pxRect(g, 17, 21, 4, 1, c); pxRect(g, 16, 23, 6, 3, K); pxRect(g, 17, 24, 4, 1, cd);
+    pxRect(g, 21, 20, 3, 6, K); pxRect(g, 21, 21, 2, 1, '#1d2440'); pxRect(g, 21, 24, 2, 1, '#1d2440');
+    fzHead(g, L, 0, 18, 's');
+  } else {
+    pxRect(g, 0, 21, 5, 3, K); pxRect(g, 0, 22, 4, 1, '#1d2440'); pxRect(g, 3, 20, 4, 5, K); pxRect(g, 4, 21, 2, 3, c);
+    pxRect(g, 6, 19, 8, 8, K); fzShirt(g, L, 7, 20, 6, 6); pxRect(g, 6, 20, 1, 6, L.s);
+    fzHead(g, L, 11, 18, 's');
+    pxRect(g, 11, 15, 13, 4, K); pxRect(g, 12, 16, 8, 2, c); pxRect(g, 20, 15, 4, 4, K); pxRect(g, 20, 16, 3, 2, hand);
+  }
+}
+
+function fzFanSpr(shirt, fur, up) {
+  const key = 'fan|' + shirt + fur + (up ? 1 : 0); let c = FZ_SPR.get(key); if (c) return c;
+  let g; [c, g] = pxCanvas(7, 10); const K = PXC.k;
+  if (up) { pxRect(g, 0, 1, 1, 5, K); pxRect(g, 6, 1, 1, 5, K); pxRect(g, 0, 0, 1, 1, fur); pxRect(g, 6, 0, 1, 1, fur); }
+  pxRect(g, 0, 6, 7, 4, K); pxRect(g, 1, 7, 5, 3, shirt);
+  pxEll(g, 1, 1, 5, 6, K); pxEll(g, 2, 2, 3, 4, fur); pxRect(g, 2, 3, 1, 1, K); pxRect(g, 4, 3, 1, 1, K);
+  FZ_SPR.set(key, c); return c;
+}
+
+function fzCupSpr() {
+  let c = FZ_SPR.get('cup'); if (c) return c; let g; [c, g] = pxCanvas(15, 17); const K = PXC.k, Y = PXC.y, D = PXC.Y;
+  pxRect(g, 0, 1, 15, 3, K); pxRect(g, 0, 2, 3, 6, K); pxRect(g, 12, 2, 3, 6, K); pxRect(g, 1, 3, 1, 4, Y); pxRect(g, 13, 3, 1, 4, Y);
+  pxEll(g, 2, 0, 11, 11, K); pxEll(g, 3, 1, 9, 9, Y); pxRect(g, 3, 0, 9, 4, K); pxRect(g, 3, 1, 9, 3, Y); pxRect(g, 5, 2, 2, 5, '#fff3c4');
+  pxRect(g, 5, 10, 5, 3, K); pxRect(g, 6, 10, 3, 2, D); pxRect(g, 3, 13, 9, 4, K); pxRect(g, 4, 14, 7, 2, D); pxRect(g, 4, 14, 7, 1, Y);
+  FZ_SPR.set('cup', c); return c;
+}
+function fzSchaleSpr() {
+  let c = FZ_SPR.get('schale'); if (c) return c; let g; [c, g] = pxCanvas(18, 12); const K = PXC.k;
+  pxEll(g, 0, 0, 18, 12, K); pxEll(g, 1, 1, 16, 10, '#dfe9f5'); pxEll(g, 4, 3, 10, 6, '#b9cbe2'); pxEll(g, 6, 4, 6, 4, '#ffd84a'); pxRect(g, 3, 2, 3, 1, '#ffffff');
+  FZ_SPR.set('schale', c); return c;
+}
+PXGEN.fzicon = () => {
+  const [c, g] = pxCanvas(28, 28), L = { a: 'lumi', c: '#3b7cf0', s: '#f4f6fb', pat: 'plain', gk: false, cap: true, nr: 10 };
+  g.drawImage(fzSprite(L, 'k', 0, false), -2, 0); g.drawImage(pxSpr('ball'), 21, 19); return c;
+};
+
+
+function fzStart() {
+  fzS();
+  const run = pxView({ id: 'stadion', title: 'Lumis Fußballstadion', H: 192, pad: 'none', portrait: 'top', ratio: .62, minW: 240 });
+  const Z = FZG = { run, state: 'menu', t: 0, cam: 220, T: null, H: [null, null], ps: [], ball: null, msg: null, shake: 0, cheer: [0, 0], net: [0, 0], btns: [], auto: !!window.LW_FZ_AUTO, bg: null, bgKey: '', idle: 0, idleMax: 0, oob: 0 };
+  Z.ctl = document.createElement('div'); Z.ctl.className = 'fz-ctl'; run.stage.appendChild(Z.ctl);
+  fzKeys(Z);
+  run.onTap = (x, y, ph) => { if (Z.state === 'pens') fzPensTap(Z, x, y, ph); };
+  pxLoop(run, dt => fzUpdate(Z, dt), g => fzDraw(Z, g));
+  fzMenu(Z);
+}
+function fzHuman(team) { return { team, joy: { x: 0, y: 0, on: false }, t: { a: false, b: false }, k: { l: false, r: false, u: false, d: false, a: false, b: false }, hit: { a: false, b: false }, aWas: true, bWas: true, charge: 0, charging: false, fullT: 0, lab: '' }; }
+function fzInDir(H) {
+  let x = 0, y = 0;
+  if (H.joy.on && Math.hypot(H.joy.x, H.joy.y) > .18) { x = H.joy.x; y = H.joy.y; }
+  else { x = (H.k.r ? 1 : 0) - (H.k.l ? 1 : 0); y = (H.k.d ? 1 : 0) - (H.k.u ? 1 : 0); }
+  const m = Math.hypot(x, y); if (m > 1) { x /= m; y /= m; }
+  return [x, y, Math.min(1, m)];
+}
+function fzPads(Z, n) {
+  const T = Z.T;
+  Z.ctl.className = 'fz-ctl' + (n === 2 ? ' duo' : '');
+  if (!n) { Z.ctl.innerHTML = ''; return; }
+  Z.ctl.innerHTML = Array.from({ length: n }, (_, h) => `<div class="fz-pad p${h}" style="--fzc:${T ? T[h].kit.c : '#3b7cf0'}">${n === 2 ? `<span class="fz-pl">Spieler ${h + 1}</span>` : ''}
+    <div class="px-joy fz-joy"><span class="px-joyk"></span></div>
+    <div class="fz-bts"><button class="px-b fz-b1" data-k="a" aria-label="Pass oder Wechsel"><i>➡️</i><small>PASS</small></button><button class="px-b big fz-b2" data-k="b" aria-label="Schuss oder Grätsche"><i>⚽</i><small>SCHUSS</small></button></div></div>`).join('');
+  Z.ctl.querySelectorAll('.fz-pad').forEach((pad, h) => fzBindPad(Z, pad, h));
+}
+function fzBindPad(Z, pad, h) {
+  const H = Z.H[h]; if (!H) return;
+  pad.querySelectorAll('.px-b').forEach(b => {
+    const k = b.dataset.k;
+    const on = e => { e.preventDefault(); try { b.setPointerCapture(e.pointerId); } catch (x) { } b.classList.add('on'); H.t[k] = true; H.hit[k] = true; Sound.unlock(); };
+    const off = () => { b.classList.remove('on'); H.t[k] = false; };
+    b.addEventListener('pointerdown', on); b.addEventListener('pointerup', off); b.addEventListener('pointercancel', off); b.addEventListener('lostpointercapture', off);
+    b.addEventListener('contextmenu', e => e.preventDefault());
+  });
+  const J = pad.querySelector('.fz-joy'), knob = J.firstElementChild; let pid = null, cx = 0, cy = 0;
+  const set = (x, y) => { const r = J.clientWidth / 2 || 60, dx = x - cx, dy = y - cy, l = Math.hypot(dx, dy), m = Math.min(1, l / (r * .8)), nx = l ? dx / l * m : 0, ny = l ? dy / l * m : 0; H.joy.x = nx; H.joy.y = ny; knob.style.transform = `translate(${nx * r * .55}px, ${ny * r * .55}px)`; };
+  J.addEventListener('pointerdown', e => { e.preventDefault(); pid = e.pointerId; try { J.setPointerCapture(pid); } catch (x) { } const rc = J.getBoundingClientRect(); cx = rc.left + rc.width / 2; cy = rc.top + rc.height / 2; H.joy.on = true; set(e.clientX, e.clientY); Sound.unlock(); });
+  J.addEventListener('pointermove', e => { if (e.pointerId === pid) set(e.clientX, e.clientY); });
+  const up = e => { if (e.pointerId !== pid) return; pid = null; H.joy.on = false; H.joy.x = H.joy.y = 0; knob.style.transform = ''; };
+  J.addEventListener('pointerup', up); J.addEventListener('pointercancel', up);
+}
+
+function fzPadLabels(Z) {
+  for (let h = 0; h < 2; h++) {
+    const H = Z.H[h]; if (!H) continue;
+    let lab;
+    if (Z.state === 'pens') { const P = Z.pens; lab = P && P.who === h ? (P.role === 'keep' ? 'k' : 's') : 'w'; }
+    else { const T = Z.T[H.team], p = T && T.ctrl; lab = p && Z.ball && Z.ball.owner === p ? 'b' : 'n'; }
+    if (lab === H.lab) continue; H.lab = lab;
+    const pad = Z.ctl.querySelector('.fz-pad.p' + h); if (!pad) continue;
+    const L = { b: [['➡️', 'PASS'], ['⚽', 'SCHUSS']], n: [['🔄', 'WECHSEL'], ['🦵', 'GRÄTSCHE']], s: [['', ''], ['⚽', 'SCHUSS']], k: [['', ''], ['🧤', 'SPRINGEN']], w: [['', ''], ['⏳', 'WARTEN']] }[lab];
+    const [b1, b2] = [pad.querySelector('.fz-b1'), pad.querySelector('.fz-b2')];
+    b1.innerHTML = `<i>${L[0][0]}</i><small>${L[0][1]}</small>`; b1.classList.toggle('off', !L[0][1]);
+    b2.innerHTML = `<i>${L[1][0]}</i><small>${L[1][1]}</small>`; pad.classList.toggle('wait', lab === 'w');
+  }
+}
+function fzKeys(Z) {
+  const run = Z.run;
+  const map = e => {
+    const duo = !!(Z.H[1]), c = e.code, k = e.key;
+    const P1 = { KeyA: 'l', KeyD: 'r', KeyW: 'u', KeyS: 'd', Space: 'b', KeyQ: 'a' }, P2 = { ArrowLeft: 'l', ArrowRight: 'r', ArrowUp: 'u', ArrowDown: 'd', Enter: 'b', NumpadEnter: 'b', Period: 'a', ShiftRight: 'a', KeyM: 'a' };
+    if (P1[c]) return [0, P1[c]];
+    if (P2[c]) return [duo ? 1 : 0, P2[c]];
+    if (!duo && (c === 'KeyX' || c === 'ShiftLeft' || k === 'x' || k === 'X')) return [0, 'a'];
+    return null;
+  };
+  const kd = e => {
+    if (!run.alive || PXASK) return;
+    const tg = e.target && e.target.tagName; if (tg === 'INPUT' || tg === 'TEXTAREA') return;
+    const m = map(e); if (!m) return;
+    const ov = $('#pxOv');
+    if (ov && !ov.hidden) {
+      if ((m[1] === 'b' || m[1] === 'a') && !e.repeat && (e.code === 'Space' || e.code === 'Enter' || e.code === 'NumpadEnter')) { const f = document.activeElement, btn = f && f.classList && f.classList.contains('px-btn') ? f : ov.querySelector('.px-btn.pri'); if (btn) { e.preventDefault(); btn.click(); } }
+      return;
+    }
+    const H = Z.H[m[0]]; if (!H) return;
+    if (!H.k[m[1]] && (m[1] === 'a' || m[1] === 'b')) H.hit[m[1]] = true;
+    H.k[m[1]] = true; e.preventDefault();
+  };
+  const ku = e => { const m = map(e); if (!m) return; const H = Z.H[m[0]]; if (H) H.k[m[1]] = false; };
+  document.addEventListener('keydown', kd); document.addEventListener('keyup', ku);
+  run.off.push(() => { document.removeEventListener('keydown', kd); document.removeEventListener('keyup', ku); });
+}
+
+
+function fzPanel(Z, html, btns, o = {}) {
+  Z.btns = btns || [];
+  const ov = pxOvShow(Z.run, `<div class="px-panel fz-panel ${o.cls || ''}" role="dialog" aria-label="${esc(o.label || 'Lumis Fußballstadion')}">${html}${Z.btns.length ? `<div class="px-btns">${Z.btns.map((b, i) => `<button class="px-btn ${b[2] ? 'pri' : ''}" data-act="fzbtn" data-i="${i}">${esc(b[0])}</button>`).join('')}</div>` : ''}</div>`);
+  if (ov) { ov.classList.toggle('fz-low', !!o.low); ov.scrollTop = 0; }
+  if (o.live) Z.run.paused = false;
+  return ov;
+}
+function fzPanelHide(Z) { const ov = $('#pxOv'); if (ov) ov.classList.remove('fz-low'); pxOvHide(Z.run); }
+function fzTeamPic(d, kit, n) {
+  const [c, g] = pxCanvas(16 * n + 10, 28); kit = kit || fzKits(d, FZ_TEAMS[0])[0];
+  for (let k = n - 1; k >= 0; k--) { const idx = n === 5 ? k : [4, 3, 0][k] | 0; g.drawImage(fzSprite(fzLook(d, kit, idx), 'i', 0, false), k * 16 - 2, 0); }
+  return pxSprURLc(c, 3);
+}
+function pxSprURLc(s, sc) { const [c, g] = pxCanvas(s.width * sc, s.height * sc); g.imageSmoothingEnabled = false; g.drawImage(s, 0, 0, c.width, c.height); return c.toDataURL('image/png'); }
+function fzDots(st) { return `<span class="fz-st" aria-label="Stärke ${st} von 7">${'●'.repeat(st)}${'○'.repeat(7 - st)}</span>`; }
+
+
+function fzMenu(Z) {
+  Z.state = 'menu'; Z.T = null; Z.H = [null, null]; Z.pens = null; Z.msg = null; fzPads(Z, 0); pxHud('');
+  const z = fzS(), st = z.st, t = z.team, lg = z.liga, pk = z.pokal, own = fzOwnDef();
+  const mode = (m, e, t1, d) => `<button class="fz-mode" data-act="fzmode" data-m="${m}"><i>${e}</i><b>${esc(t1)}</b><small>${esc(d)}</small></button>`;
+  const lgTxt = lg ? `Spieltag ${Math.min(7, lg.day + 1)} von 7 · Platz ${fzLigaPlatz(lg)}` : '8 Teams, 7 Spieltage, Tabelle';
+  const pkTxt = pk ? `${FZ_RUNDEN[pk.r]} gegen ${fzNice(fzDef(pk.opp[pk.r]).n)}` : 'Viertelfinale, Halbfinale, Finale';
+  const touch = fzCoarse();
+  fzPanel(Z, `<div class="fz-mh"><img src="${fzTeamPic(own, null, 5)}" alt="" draggable="false"><div><h2>Lumis Fußballstadion</h2><p><b>${esc(fzNice(t.n))}</b>${st.meister ? ` · 🏆 ${st.meister}× Meister` : ''}${st.pokal ? ` · 🥇 ${st.pokal}× Pokal` : ''}</p></div></div>
+    <div class="fz-modes">${mode('freund', '⚽', 'Freundschaftsspiel', 'Gegner aussuchen und los')}${mode('liga', '📋', 'Liga', lgTxt)}${mode('pokal', '🏆', 'Pokal', pkTxt)}
+      ${mode('elf', '🎯', 'Elfmeterschießen', '5 Schüsse für jedes Team')}${mode('duo', '👫', 'Zu zweit', 'Zwei Kinder an einem Gerät')}${mode('team', '👕', 'Mein Team', 'Name, Trikot und Spieler')}</div>
+    <div class="fz-opt"><span>Spielzeit</span>${FZ_LEN.map(l => `<button class="pxw-chip ${l[0] === z.len ? 'on' : ''}" data-act="fzlen" data-v="${l[0]}">${l[1]}</button>`).join('')}</div>
+    <div class="fz-opt"><span>Trainerfragen</span>${PX_FACH.map(f => `<button class="pxw-chip ${f[0] === z.fach ? 'on' : ''}" data-act="fzfach" data-v="${f[0]}">${f[2]} ${f[1]}</button>`).join('')}</div>
+    ${st.sp ? `<div class="fz-stats"><span><small>Spiele</small><b>${st.sp}</b></span><span><small>Siege</small><b>${st.s}</b></span><span><small>Tore</small><b>${st.tf}</b></span><span><small>Meister</small><b>${st.meister}</b></span><span><small>Pokal</small><b>${st.pokal}</b></span></div>` : ''}
+    <p class="fz-help">${touch ? '🕹️ laufen · ⚽ halten = fester Schuss · ➡️ PASS. Ohne Ball: 🦵 Grätsche, 🔄 Spieler wechseln.' : 'Pfeiltasten laufen · Leertaste halten = Schuss · X = Pass. Ohne Ball: Leertaste = Grätsche, X = Spieler wechseln.'}<br>📣 Vor jedem Anstoß kommt eine Trainerfrage. Richtig = ⚡ <b>Superschuss</b>!</p>`, [], { cls: 'fz-menu', label: 'Lumis Fußballstadion' });
+}
+function fzPick(Z, title, cb, sub) {
+  Z.pickCb = cb;
+  fzPanel(Z, `<h2>${esc(title)}</h2>${sub ? `<p class="fz-sub">${esc(sub)}</p>` : ''}<div class="fz-teams">${FZ_TEAMS.map(t => `<button class="fz-tm" data-act="fzopp" data-id="${t.id}" style="--tc:${t.c}"><i>${t.e}</i><b>${esc(fzNice(t.n))}</b>${fzDots(t.st)}</button>`).join('')}</div>`, [['Zurück', () => fzMenu(Z)]], { cls: 'fz-pick' });
+}
+function fzDuoWas(Z, id) {
+  fzPanel(Z, `<h2>Zu zweit</h2><p class="fz-sub">Spieler 1 spielt mit ${esc(fzNice(fzS().team.n))}, Spieler 2 mit ${esc(fzNice(fzDef(id).n))}. Was wollt ihr spielen?</p>
+    <div class="fz-modes two"><button class="fz-mode" data-act="fzduo" data-v="spiel" data-id="${id}"><i>⚽</i><b>Spiel</b><small>Spieler 1 links, Spieler 2 rechts</small></button><button class="fz-mode" data-act="fzduo" data-v="elf" data-id="${id}"><i>🎯</i><b>Elfmeterschießen</b><small>abwechselnd schießen und halten</small></button></div>
+    <p class="fz-help">Tipp: Am besten das Gerät quer halten. Jedes Kind hat einen Joystick und zwei Knöpfe.</p>`, [['Zurück', () => fzMenu(Z)]]);
+}
+
+function fzTeamEd(Z) {
+  const t = fzS().team; Z.ed = JSON.parse(JSON.stringify(t));
+  const sw = w => FZ_FARBEN.map(([c, n]) => `<button class="fz-sw" data-act="fzcol" data-w="${w}" data-v="${c}" style="--sc:${c}" aria-label="${n}" title="${n}"></button>`).join('');
+  fzPanel(Z, `<h2>Mein Team</h2><canvas class="fz-prev" id="fzPrev" width="96" height="30" aria-label="So sieht dein Team aus"></canvas>
+    <label class="fz-in"><span>Teamname</span><input id="fzName" maxlength="14" autocomplete="off" autocapitalize="characters" spellcheck="false" value="${esc(fzNice(Z.ed.n))}"></label>
+    <div class="fz-opt"><span>Trikot</span><div class="fz-sws" data-w="c">${sw('c')}</div></div>
+    <div class="fz-opt"><span>Hose und Muster</span><div class="fz-sws" data-w="s">${sw('s')}</div></div>
+    <div class="fz-opt"><span>Muster</span>${FZ_MUSTER.map(m => `<button class="pxw-chip" data-act="fzpat" data-v="${m[0]}">${m[1]}</button>`).join('')}</div>
+    <div class="fz-pls">${Z.ed.p.map((x, i) => `<label><span>${FZ_POS[i]}${i === 4 ? ' · Kapitänin' : ''}</span><input class="fz-pn" data-i="${i}" maxlength="8" autocomplete="off" spellcheck="false" value="${esc(fzNice(x[0]))}"><input class="fz-nr" data-i="${i}" type="number" inputmode="numeric" min="1" max="99" value="${x[1]}" aria-label="Rückennummer"></label>`).join('')}</div>
+    <p class="fz-help">Namen nur mit Buchstaben, höchstens 8 Zeichen. Die Kapitänin trägt die gelbe Binde.</p>`,
+    [['Speichern ✓', () => fzTeamSave(Z), true], ['Zurück', () => fzMenu(Z)]], { cls: 'fz-ed', label: 'Mein Team' });
+  fzEdRefresh(Z);
+  const ov = $('#pxOv'); if (ov) ov.querySelectorAll('input').forEach(i => i.addEventListener('input', () => { fzEdRead(Z); fzEdRefresh(Z, true); }));
+}
+function fzEdRead(Z) {
+  const e = Z.ed; if (!e) return;
+  const n = $('#fzName'); if (n) e.n = fzClean(n.value, 14) || e.n;
+  document.querySelectorAll('.fz-pn').forEach(i => { const k = Number(i.dataset.i); e.p[k][0] = fzClean(i.value, 8) || e.p[k][0]; });
+  document.querySelectorAll('.fz-nr').forEach(i => { const k = Number(i.dataset.i), v = fzCl(parseInt(i.value, 10) || 0, 0, 99); if (v) e.p[k][1] = v; });
+}
+function fzEdRefresh(Z, quiet) {
+  const e = Z.ed; if (!e) return;
+  document.querySelectorAll('.fz-sw').forEach(b => b.classList.toggle('on', e[b.dataset.w] === b.dataset.v));
+  document.querySelectorAll('[data-act="fzpat"]').forEach(b => b.classList.toggle('on', b.dataset.v === e.pat));
+  const cv = $('#fzPrev'); if (!cv) return;
+  const d = { own: true, a: 'peng', c: e.c, s: e.s, pat: e.pat, nr: e.p.map(x => x[1]) }, kit = fzKits(d, FZ_TEAMS[0])[0], g = cv.getContext('2d');
+  g.imageSmoothingEnabled = false; g.clearRect(0, 0, cv.width, cv.height);
+  for (let k = 0; k < 5; k++) g.drawImage(fzSprite(fzLook(d, kit, k), k === 4 ? 'b' : 'i', 0, false), 4 + k * 18, 1);
+}
+function fzTeamSave(Z) {
+  fzEdRead(Z); const z = fzS(); z.team = Z.ed; Z.ed = null; fzS(); save(); Z.bgKey = '';
+  toast('Dein Team ist gespeichert! 👕'); fzMenu(Z);
+}
+
+
+function fzTeam(Z, i, d, kit) {
+  const T = { i, d, kit, dir: i ? -1 : 1, goalX: i ? FZ.L : 0, oppX: i ? 0 : FZ.L, sup: false, ctrl: null, ctrlLock: 0, chaser: null, hum: null, k: d.k || fzShort(d.n) };
+  T.ai = fzAI(d.own || Z.duo ? 4 : d.st);
+  if (d.own || Z.duo) { T.ai.gkSave = .9; T.ai.gkR = .17; T.ai.gkV = 64; }
+  T.ps = [0, 1, 2, 3, 4].map(k => ({ T, team: i, k, role: k === 0 ? 'gk' : k < 3 ? 'd' : 'a', lane: k === 0 ? 0 : k % 2 ? -1 : 1, name: (d.p || [])[k] || '', nr: (d.nr || FZ_NR)[k], look: fzLook(d, kit, k),
+    x: 0, y: 0, vx: 0, vy: 0, dx: T.dir, dy: 0, fx: T.dir, z: 0, vz: 0, walk: 0, kickT: 0, stun: 0, down: 0, noTouch: 0, stealT: 0, hold: 0, reT: 0, dec: 0, slide: 0, slideCd: 0, cheer: 0, hasT: 0, wait: 0, dive: false, rush: false, seen: -1, tried: -1 }));
+  return T;
+}
+function fzSetup(Z, d0, d1, duo) {
+  Z.duo = !!duo;
+  const kits = fzKits(d0, d1);
+  Z.T = [fzTeam(Z, 0, d0, kits[0]), fzTeam(Z, 1, d1, kits[1])];
+  Z.ps = Z.T[0].ps.concat(Z.T[1].ps);
+  Z.H = [fzHuman(0), duo ? fzHuman(1) : null];
+  if (!Z.auto) { Z.T[0].hum = Z.H[0]; Z.T[1].hum = Z.H[1]; }
+  Z.ball = { x: FZ.L / 2, y: FZ.D / 2, z: 0, vx: 0, vy: 0, vz: 0, owner: null, last: null, sup: false, roll: 0, kid: 0 };
+  Z.run.parts = []; Z.msg = null; Z.shake = 0; Z.cheer = [0, 0]; Z.net = [0, 0]; Z.inNet = -1; Z.set = null; Z.pens = null;
+  fzPads(Z, duo ? 2 : 1);
+}
+
+function fzMatch(Z, o) {
+  fzPanelHide(Z);
+  const z = fzS();
+  Z.mode = o.mode; Z.after = o.after || null; Z.oppId = o.opp; Z.cup = !!o.cup;
+  fzSetup(Z, fzOwnDef(), fzDef(o.opp), o.duo);
+  Z.HALF = Z.HALF0 || (FZ_LEN.find(l => l[0] === z.len) || FZ_LEN[1])[2];
+  Z.half = 1; Z.time = Z.HALF; Z.score = [0, 0]; Z.goals = []; Z.shots = [0, 0]; Z.saves = [0, 0]; Z.askN = 0; Z.okN = 0; Z.idle = 0;
+  Z.cam = FZ.L / 2 + FZ.MX - Z.run.W / 2;
+  fzKickoff(Z, 0);
+}
+function fzPlace(Z, kt) {
+  const L = FZ.L, mid = FZ.D / 2, b = Z.ball;
+  for (const T of Z.T) for (const p of T.ps) {
+    const X = rel => T.goalX + T.dir * rel;
+    let x, y;
+    if (p.role === 'gk') { x = X(8); y = mid; }
+    else if (p.role === 'd') { x = X(L * .2); y = mid + p.lane * 44; }
+    else { x = X(L * .4); y = mid + p.lane * 42; }
+    if (T.i === kt && p.k === 3) { x = X(L / 2 - 7); y = mid; }
+    if (T.i === kt && p.k === 4) { x = X(L / 2 - 26); y = mid + 30; }
+    Object.assign(p, { x, y, vx: 0, vy: 0, z: 0, vz: 0, dx: T.dir, dy: 0, fx: T.dir, kickT: 0, stun: 0, down: 0, noTouch: 0, stealT: 0, hold: 0, cheer: 0, hasT: 0, slide: 0, slideCd: 0, wait: 0, dive: false, rush: false, reT: 0, dec: .6 });
+  }
+  b.x = L / 2; b.y = mid; b.z = b.vx = b.vy = b.vz = 0; b.sup = false; b.owner = Z.T[kt].ps[3]; b.last = b.owner; Z.inNet = -1; Z.set = null;
+  for (const T of Z.T) { T.ctrl = T.ps[3]; T.ctrlLock = 0; T.chaser = null; }
+  for (const H of Z.H) if (H) { H.charging = false; H.charge = 0; H.aWas = H.bWas = true; H.hit.a = H.hit.b = false; }
+}
+function fzKickoff(Z, team) {
+  fzPlace(Z, team); Z.kickTeam = team; Z.state = 'pre'; Z.msg = null;
+  pxAfter(Z.run, 380, () => fzAskQ(Z, team, () => {
+    Z.state = 'ready'; Z.stateT = 1.1;
+    const T = Z.T[team];
+    fzMsg(Z, 'ANSTOSS!', '#ffffff', 1.1, 3, Z.half === 1 && Z.score[0] + Z.score[1] === 0 ? 'LOS GEHTS!' : fzNice(T.d.n).toUpperCase() + ' HAT DEN BALL');
+  }));
+}
+
+function fzAskQ(Z, team, done) {
+  const hi = Z.duo ? team : 0, H = Z.H[hi];
+  if (Z.auto || !H || !Z.T[hi].hum) { done(); return; }
+  const T = Z.T[hi], had = T.sup; Z.askN++;
+  pxAsk(Z.run, pxTask(fzS().fach), ok => {
+    if (ok) { T.sup = true; Z.okN++; pxBurst(Z.run, Z.run.W / 2, 150, ['#ffd84a', '#fff3c4', '#ffffff'], 16, { v: 70, up: 50, life: .8, g: 120 }); }
+    done();
+    if (ok && Z.msg) Z.msg.sub = had ? 'SUPERSCHUSS IST NOCH BEREIT!' : 'SUPERSCHUSS BEREIT!';
+  }, { title: '📣 Trainerfrage' + (Z.duo ? ` für Spieler ${hi + 1}` : ''), sub: had ? 'Dein ⚡ Superschuss wartet schon. Zeig, was du kannst!' : 'Richtig = ⚡ Superschuss!' });
+}
+function fzMsg(Z, t, col, life, sc, sub) { Z.msg = { t, col, life, max: life, sc: sc || 3, sub: sub || '' }; }
+function fzMin(Z) { return Math.min(45, Math.floor((Z.HALF - Z.time) / Z.HALF * 45) + 1) + (Z.half === 2 ? 45 : 0); }
+function fzRb(Z, i) {
+  if (Z.duo || i === 0 || Z.auto) return FZ_RB0;
+  const d = Z.score[0] - Z.score[1];
+  return FZ_RB[d >= 5 ? 0 : d >= 3 ? 1 : d === 2 ? 2 : d === 1 ? 3 : d === 0 ? 4 : d === -1 ? 5 : 6];
+}
+function fzWhistle(n) { for (let i = 0; i < n; i++) { const t0 = i * .34; pxSfx.t(2300, t0, .05, 'square', .03); pxSfx.t(2650, t0 + .05, .05, 'square', .03); pxSfx.t(2480, t0 + .1, n > 1 && i < n - 1 ? .16 : .38, 'triangle', .07); } }
+
+
+function fzUpdate(Z, dt) {
+  const run = Z.run; Z.t += dt; pxPartsStep(run, dt);
+  if (!Z.T) { Z.cam = (FZ.L + 2 * FZ.MX - run.W) / 2 + Math.sin(Z.t * .18) * 150; return; }
+  if (Z.state === 'pens') { fzPensUpdate(Z, dt); fzPadLabels(Z); return; }
+  if (Z.shake > 0) Z.shake = Math.max(0, Z.shake - dt);
+  for (let i = 0; i < 2; i++) { Z.cheer[i] = Math.max(0, Z.cheer[i] - dt); Z.net[i] = Math.max(0, Z.net[i] - dt); }
+  if (Z.msg && (Z.msg.life -= dt) <= 0) Z.msg = null;
+  for (const p of Z.ps) {
+    p.kickT = Math.max(0, p.kickT - dt); p.stun = Math.max(0, p.stun - dt); p.down = Math.max(0, p.down - dt); p.noTouch = Math.max(0, p.noTouch - dt);
+    p.cheer = Math.max(0, p.cheer - dt); p.slideCd = Math.max(0, p.slideCd - dt); p.wait = Math.max(0, p.wait - dt);
+    if (p.slide > 0 && (p.slide -= dt) <= 0) { p.slide = 0; p.down = .22; p.stun = Math.max(p.stun, .22); }
+    if (p.z > 0 || p.vz) { p.vz -= 520 * dt; p.z += p.vz * dt; if (p.z <= 0) { p.z = 0; p.vz = 0; } }
+  }
+  const st = Z.state;
+  if (st === 'play') {
+    const ts0 = Math.ceil(Z.time); Z.time -= dt;
+    if (Z.time > 0 && Z.time <= 5 && Math.ceil(Z.time) !== ts0) pxSfx.tick();
+    if (Z.time <= 0) { Z.time = 0; fzHalfOver(Z); }
+    else fzStep(Z, dt, true);
+  } else if (st === 'set') {
+    Z.set.t -= dt; fzStep(Z, dt, false); if (Z.set && Z.set.t <= 0) fzSetGo(Z);
+  } else if (st === 'goal' || st === 'over') {
+    Z.stateT -= dt; fzCelebrate(Z, dt); fzMove(Z, dt); fzBall(Z, dt, true);
+    if (Z.stateT <= 0) { if (st === 'goal') fzKickoff(Z, 1 - Z.lastScorer); else fzFinish(Z); }
+  } else if (st === 'ready') {
+    Z.stateT -= dt; fzBall(Z, dt, true);
+    if (Z.stateT <= 0) {
+      Z.state = 'play'; fzWhistle(1);
+      for (const H of Z.H) if (H) { H.aWas = H.bWas = true; H.hit.a = H.hit.b = false; }
+      for (const p of Z.ps) if (p.team !== Z.kickTeam && p.role !== 'gk') p.noTouch = .7;
+      const T = Z.T[Z.kickTeam], k = Z.ball.owner;
+      if (!T.hum && k && k.T === T) fzPass(Z, k, T.ps[4], 'pass');
+    }
+  } else if (st === 'cele') fzCeleStep(Z, dt);
+  fzCam(Z, dt); fzHudDom(Z); fzPadLabels(Z);
+}
+function fzStep(Z, dt, live) {
+  if (live) for (const H of Z.H) if (H && Z.T[H.team].hum === H) { fzCtrlPick(Z, H, dt); fzHumanIn(Z, H, dt); }
+  fzChasers(Z);
+  for (const p of Z.ps) {
+    if (live && p.T.hum && p === p.T.ctrl) continue;
+    if (Z.state === 'set' && p === Z.set.taker) { p.vx *= .8; p.vy *= .8; continue; }
+    if (p.slide > 0) continue;
+    if (p.role === 'gk') fzGK(Z, p, dt);
+    else if (Z.ball.owner === p) fzCarrier(Z, p, dt);
+    else fzOff(Z, p, dt);
+  }
+  fzMove(Z, dt);
+  if (live) { fzBall(Z, dt, false); fzFx(Z, dt); fzWatch(Z, dt); }
+}
+function fzHalfOver(Z) {
+  for (const H of Z.H) if (H) { H.charging = false; H.charge = 0; }
+  if (Z.half === 1) {
+    Z.state = 'half'; fzWhistle(2); fzMsg(Z, 'HALBZEIT', '#ffffff', 3, 3);
+    const [a, b] = Z.score, T = Z.T;
+    const tip = Z.duo ? 'Kurz durchatmen, gleich geht es weiter!' : a > b ? 'Super, ihr führt! Weiter so! 💪' : a === b ? 'Alles offen. Jetzt geht es los! 💪' : 'Noch eine ganze Halbzeit. Ihr schafft das! 💪';
+    pxAfter(Z.run, 1200, () => fzPanel(Z, `<h2>Halbzeit!</h2><div class="px-bigt">${T[0].d.e} ${a} : ${b} ${T[1].d.e}</div><p>${tip}</p><p class="fz-sub">Tipp: Halte ⚽ gedrückt. Je voller der Balken, desto fester der Schuss.</p>`,
+      [['2. Halbzeit ▶', () => { Z.half = 2; Z.time = Z.HALF; fzKickoff(Z, 1); }, true]]));
+  } else {
+    Z.state = 'over'; Z.stateT = 2.3; fzWhistle(3); fzMsg(Z, 'ABPFIFF!', '#ffffff', 2.3, 3);
+    const [a, b] = Z.score, w = a > b ? 0 : a < b ? 1 : -1;
+    if (w >= 0) { Z.cheer[w] = 3; Z.T[w].ps.forEach(p => { p.cheer = 2.3; }); }
+    if (w === 0 || (Z.duo && w >= 0)) fzConfetti(Z, 40, Z.T[w]);
+  }
+}
+
+
+function fzCtrlPick(Z, H, dt) {
+  const T = Z.T[H.team], b = Z.ball;
+  if (b.owner && b.owner.T === T && b.owner.role !== 'gk') { if (T.ctrl !== b.owner) { T.ctrl = b.owner; T.ctrlLock = .3; } return; }
+  if (H.charging) return;
+  if (!T.ctrl || T.ctrl.role === 'gk') T.ctrl = T.ps[3];
+  if ((T.ctrlLock -= dt) > 0) return;
+  const px = b.x + b.vx * .25, py = b.y + b.vy * .25, cur = T.ctrl;
+  let best = null, bd = 1e9;
+  for (const p of T.ps) { if (p.role === 'gk' || p.stun > 0 || p.slide > 0) continue; const d = Math.hypot(p.x - px, p.y - py); if (d < bd) { bd = d; best = p; } }
+  if (best && best !== cur && bd + 18 < Math.hypot(cur.x - px, cur.y - py)) { T.ctrl = best; T.ctrlLock = .5; }
+}
+function fzSwitch(Z, T) {
+  const b = Z.ball; let best = null, bd = 1e9;
+  for (const p of T.ps) { if (p.role === 'gk' || p === T.ctrl || p.stun > 0) continue; const d = Math.hypot(p.x - b.x, p.y - b.y); if (d < bd) { bd = d; best = p; } }
+  if (best) { T.ctrl = best; T.ctrlLock = 1; pxSfx.tick(); }
+}
+function fzHumanIn(Z, H, dt) {
+  const T = Z.T[H.team], p = T.ctrl, b = Z.ball; if (!p) return;
+  const [ix, iy, m] = fzInDir(H);
+  const A = !!(H.t.a || H.k.a), B = !!(H.t.b || H.k.b), aP = (A && !H.aWas) || H.hit.a, bP = (B && !H.bWas) || H.hit.b; H.aWas = A; H.bWas = B; H.hit.a = H.hit.b = false;
+  const has = b.owner === p;
+  if (p.slide > 0 || p.stun > 0) { H.charging = false; H.charge = 0; return; }
+  if (has) {
+    if (aP && !H.charging) { fzHumanPass(Z, H, p); return; }
+    if (B) { if (!H.charging) { H.charging = true; H.charge = 0; H.fullT = 0; } H.charge = Math.min(1, H.charge + dt / .8); if (H.charge >= 1) H.fullT += dt; }
+    else if (bP && !H.charging) { fzHumanShoot(Z, H, p, .3); return; }
+    if (H.charging && (!B || H.fullT > .5)) { const pw = H.charge; H.charging = false; H.charge = 0; H.fullT = 0; fzHumanShoot(Z, H, p, pw); return; }
+  } else {
+    H.charging = false; H.charge = 0;
+    if (aP) { fzSwitch(Z, T); return; }
+    if (bP && p.slideCd <= 0) { fzSlideStart(Z, p, m > .2 ? ix : p.dx, m > .2 ? iy : p.dy); return; }
+  }
+  const vmax = 82 * (H.charging ? .78 : 1) * (has ? .95 : 1), a = Math.min(1, dt * (m > .1 ? 14 : 9));
+  p.vx += (ix * vmax - p.vx) * a; p.vy += (iy * vmax - p.vy) * a;
+  if (m > .15) { p.dx = ix / m; p.dy = iy / m; if (Math.abs(ix) > .2) p.fx = ix > 0 ? 1 : -1; }
+  else if (!has && Math.hypot(p.vx, p.vy) < 10) p.fx = b.x >= p.x ? 1 : -1;
+}
+function fzHumanPass(Z, H, p) {
+  const [ix, iy, m] = fzInDir(H);
+  let to = m > .3 ? fzPassDir(Z, p, ix, iy) : null;
+  if (!to) to = fzPassDir(Z, p, p.dx, p.dy) || fzBestMate(Z, p, false);
+  if (to) { fzPass(Z, p, to, 'pass'); p.T.ctrl = to; p.T.ctrlLock = .55; }
+  else fzKick(Z, p, m > .3 ? ix : p.dx, m > .3 ? iy : p.dy, 120, 0);
+}
+function fzHumanShoot(Z, H, p, pw) {
+  const T = p.T, b = Z.ball, dir = T.dir, [ix, iy, m] = fzInDir(H);
+  let dx = m > .2 ? ix : p.dx, dy = m > .2 ? iy : p.dy;
+  const tx = T.oppX + dir * 6 - b.x, fwd = dx * dir;
+  if (fwd > .25 && Math.abs(tx) < 300) {
+    const aimY = fzCl(b.y + (Math.abs(dx) > .1 ? dy / Math.abs(dx) : 0) * Math.abs(tx), FZ.GY0 + 4, FZ.GY1 - 4), tyv = aimY - b.y, tl = Math.hypot(tx, tyv) || 1, w = .6;
+    dx = dx * (1 - w) + tx / tl * w; dy = dy * (1 - w) + tyv / tl * w;
+  } else if (pw < .5) { const to = fzPassDir(Z, p, dx, dy); if (to) { fzPass(Z, p, to, 'pass'); T.ctrl = to; T.ctrlLock = .55; return; } }
+  const l = Math.hypot(dx, dy) || 1; dx /= l; dy /= l;
+  const sp = 110 + 190 * pw;
+  if (T.sup && dx * dir > .3) {
+    T.sup = false; fzKick(Z, p, dx, dy, Math.max(sp, 260) * 1.3, 24); b.sup = true; Z.shake = .35; pxSfx.boom();
+    pxBurst(Z.run, fzSX(Z, b.x, b.y), fzSY(b.y) - 3, ['#ffd84a', '#fff3c4', '#ff9d2e', '#ffffff'], 18, { v: 80, up: 20, life: .5, g: 40 });
+    fzMsg(Z, 'SUPERSCHUSS!', '#ffd84a', 1, 2);
+  } else fzKick(Z, p, dx, dy, sp, 10 + pw * 46);
+  Z.shots[T.i]++;
+}
+function fzSlideStart(Z, p, dx, dy) {
+  const l = Math.hypot(dx, dy); if (l < .1) { dx = p.fx; dy = 0; } else { dx /= l; dy /= l; }
+  p.slide = .36; p.slideCd = 1.2; p.vx = dx * 140; p.vy = dy * 140; p.dx = dx; p.dy = dy; if (Math.abs(dx) > .2) p.fx = dx > 0 ? 1 : -1;
+  pxSfx.step(); fzDust(Z, p, 6);
+}
+
+
+function fzSteer(p, tx, ty, v, dt, acc) {
+  const dx = tx - p.x, dy = ty - p.y, d = Math.hypot(dx, dy), sp = d < 1.5 ? 0 : Math.min(v, d * 4);
+  const tvx = d ? dx / d * sp : 0, tvy = d ? dy / d * sp : 0, a = Math.min(1, dt * (acc || 8));
+  p.vx += (tvx - p.vx) * a; p.vy += (tvy - p.vy) * a;
+  if (d > 3) { p.dx = dx / d; p.dy = dy / d; if (Math.abs(dx) > 2) p.fx = dx > 0 ? 1 : -1; }
+}
+function fzFace(Z, p) { if (Math.hypot(p.vx, p.vy) < 12) p.fx = Z.ball.x >= p.x ? 1 : -1; }
+function fzChasers(Z) {
+  const b = Z.ball, px = b.x + b.vx * .2, py = b.y + b.vy * .2;
+  for (const T of Z.T) {
+    if ((b.owner && b.owner.T === T) || (Z.state === 'set')) { T.chaser = null; continue; }
+    let best = null, bd = 1e9;
+    for (const p of T.ps) { if (p.role === 'gk' || p.stun > 0) continue; const d = Math.hypot(p.x - px, p.y - py); if (d < bd) { bd = d; best = p; } }
+    if (T.chaser && T.chaser !== best && T.chaser.stun <= 0 && T.chaser.role !== 'gk' && Math.hypot(T.chaser.x - px, T.chaser.y - py) < bd + 10) best = T.chaser;
+    const hc = T.hum ? T.ctrl : null;
+    T.chaser = hc ? (best !== hc && !b.owner && (Math.hypot(hc.x - px, hc.y - py) > 60 || Z.idle > 2.5) ? best : null) : best;
+  }
+}
+function fzCarrier(Z, p, dt) {
+  const T = p.T, b = Z.ball, ai = T.ai, rb = fzRb(Z, T.i), dir = T.dir, gx = T.oppX, mid = FZ.D / 2;
+  if (p.stun > 0) { p.vx *= .9; p.vy *= .9; return; }
+  p.hasT += dt; p.dec -= dt;
+  let ty = mid + Math.sin(Z.t * 1.2 + p.k * 2) * 30, pen = null, pd = 1e9;
+  for (const q of Z.T[1 - T.i].ps) { const d = fzD(q, p), ahead = (q.x - p.x) * dir; if (ahead > -6 && d < 32 && d < pd) { pd = d; pen = q; } }
+  if (pen) ty = p.y + (p.y >= pen.y ? 34 : -34);
+  fzSteer(p, gx, fzCl(ty, 18, FZ.D - 18), ai.v * ai.drib * rb.v, dt, 6);
+  if (p.dec > 0) return;
+  p.dec = ai.think * (.7 + Math.random() * .6);
+  const dg = Math.hypot(gx - p.x, mid - p.y), ang = Math.abs(mid - p.y) / (Math.abs(gx - p.x) + 1);
+  if (dg < ai.range * rb.r && ang < 1.3) return fzShootAI(Z, p);
+  const mate = fzBestMate(Z, p, true);
+  if (pen && pd < 20 && mate && Math.random() < ai.pass) return fzPass(Z, p, mate, 'pass');
+  if (p.hasT > 3.2) { if (dg < ai.range * 1.4) return fzShootAI(Z, p); if (mate) return fzPass(Z, p, mate, 'pass'); }
+  if (mate && mate.score > 40 && Math.random() < .2) return fzPass(Z, p, mate, 'pass');
+}
+function fzOff(Z, p, dt) {
+  const T = p.T, b = Z.ball, ai = T.ai, rb = fzRb(Z, T.i), dir = T.dir, mid = FZ.D / 2, o = b.owner, L = FZ.L;
+  if (p.stun > 0) { p.vx *= .9; p.vy *= .9; return; }
+  if (p.wait > 0 && !o && Z.state === 'play') { fzSteer(p, b.x + b.vx * .15, b.y + b.vy * .15, ai.v * 1.05, dt, 8); return; }
+  if (T.chaser === p && Z.state === 'play') {
+    fzSteer(p, b.x + b.vx * .2, b.y + b.vy * .2, ai.v * rb.v * (o ? 1 : 1.05), dt, 7);
+    if (o && o.T !== T && o.role !== 'gk' && fzD(p, o) < 16 && p.slideCd <= 0 && ai.slide && Math.random() < dt * ai.slide) fzSlideStart(Z, p, o.x - p.x, o.y - p.y);
+    return;
+  }
+  const S = Z.state === 'set' ? Z.set : null, own = (o && o.T === T) || (S && S.team === T.i);
+  const bx = S ? S.x : b.x, by = S ? S.y : b.y, bRel = (bx - T.goalX) * dir, X = rel => T.goalX + dir * rel;
+  let tx, ty;
+  if (S && S.kind === 'ecke' && S.team === T.i && p.role === 'a') { tx = X(L - 34 - (p.lane > 0 ? 10 : 0)); ty = mid + p.lane * 16; }
+  else if (S && S.kind === 'ecke' && S.team !== T.i && p.role === 'd') { tx = X(14 + (p.lane > 0 ? 8 : 0)); ty = mid + p.lane * 18; }
+  else if (p.role === 'd') {
+    tx = X(own ? fzCl(bRel - 80, 60, L * .55) : fzCl(bRel * .55, 36, L * .42)); ty = mid + p.lane * 40 + (by - mid) * .35;
+    if (!own) {
+      let mk = null, md = 1e9;
+      for (const q of Z.T[1 - T.i].ps) { if (q.role !== 'a') continue; const qr = (q.x - T.goalX) * dir; if (qr > L * .6) continue; const d = Math.abs(q.y - (mid + p.lane * 40)); if (d < md) { md = d; mk = q; } }
+      if (mk && (mk.x - T.goalX) * dir < bRel + 40) { tx = mk.x - dir * 12; ty = mk.y + (mid - mk.y) * .2; }
+    }
+  } else {
+    tx = X(own ? fzCl(bRel + 60, L * .35, L - 44) : fzCl(bRel + 30, L * .36, L * .62)); ty = mid + p.lane * 46 + (by - mid) * .25;
+    if (own && o && fzD(p, o) < 40) ty += (p.y >= o.y ? 1 : -1) * 22;
+  }
+  fzSteer(p, fzCl(tx, 16, L - 16), fzCl(ty, 12, FZ.D - 12), ai.v * .85, dt, 6); fzFace(Z, p);
+}
+function fzSegD(o, a, c) { const vx = c.x - a.x, vy = c.y - a.y, l2 = vx * vx + vy * vy || 1, t = fzCl(((o.x - a.x) * vx + (o.y - a.y) * vy) / l2, 0, 1); return Math.hypot(a.x + vx * t - o.x, a.y + vy * t - o.y); }
+function fzBestMate(Z, p, fwdOnly) {
+  const T = p.T, opp = Z.T[1 - T.i].ps, b = Z.ball; let best = null, bs = -1e9;
+  for (const m of T.ps) {
+    if (m === p || m.role === 'gk' || m.stun > 0) continue;
+    const d = fzD(m, p); if (d < 22 || d > 190) continue;
+    const fwd = (m.x - p.x) * T.dir; if (fwdOnly && fwd < -10) continue;
+    let open = 1e9, lane = 1e9; for (const o of opp) { open = Math.min(open, fzD(o, m)); lane = Math.min(lane, fzSegD(o, b, m)); }
+    if (lane < 9) continue;
+    const s = Math.min(open, 50) + fwd * .35 - d * .08 + Math.min(lane, 30) * .3;
+    if (s > bs) { bs = s; best = m; }
+  }
+  if (best) best.score = bs;
+  return best;
+}
+function fzPassDir(Z, p, ix, iy) {
+  const l = Math.hypot(ix, iy) || 1; ix /= l; iy /= l; let best = null, bs = -1e9;
+  for (const m of p.T.ps) { if (m === p || m.role === 'gk') continue; const dx = m.x - p.x, dy = m.y - p.y, d = Math.hypot(dx, dy) || 1, cos = (dx * ix + dy * iy) / d; if (cos < .55 || d > 220) continue; const s = cos * 2 - d / 200; if (s > bs) { bs = s; best = m; } }
+  return best;
+}
+function fzPass(Z, p, to, kind) {
+  const b = Z.ball; if (!to) return;
+  const tx = to.x + to.vx * .4 + to.T.dir * 5, ty = to.y + to.vy * .4, d = Math.hypot(tx - b.x, ty - b.y), lob = kind === 'lob' || kind === 'throw' || d > 125;
+  fzKick(Z, p, tx - b.x, ty - b.y, fzCl((lob ? 62 : 70) + d * (lob ? .9 : 1.12), 92, lob ? 178 : 200), lob ? Math.min(90, 34 + d * .3) : 0);
+  to.wait = .7;
+}
+function fzKick(Z, p, dx, dy, speed, vz) {
+  const b = Z.ball, d = Math.hypot(dx, dy) || 1;
+  b.owner = null; b.last = p; b.kid++; b.vx = dx / d * speed; b.vy = dy / d * speed; b.vz = vz || 0; if (vz) b.z = Math.max(b.z, 1);
+  p.noTouch = .28; p.kickT = .24; p.hasT = 0; p.dx = dx / d; p.dy = dy / d; if (Math.abs(dx) > 1) p.fx = dx > 0 ? 1 : -1;
+  pxSfx.kick(); fzDust(Z, p, speed > 200 ? 8 : 4);
+}
+function fzShootAI(Z, p) {
+  const T = p.T, b = Z.ball, ai = T.ai, rb = fzRb(Z, T.i), gk = Z.T[1 - T.i].ps[0], mid = (FZ.GY0 + FZ.GY1) / 2;
+  let ty = gk.y > mid ? FZ.GY0 + 7 : FZ.GY1 - 7;
+  if (Math.random() < .35) ty = FZ.GY0 + 6 + Math.random() * (FZ.GY1 - FZ.GY0 - 12);
+  ty += (Math.random() * 2 - 1) * ai.err * rb.e;
+  const tx = T.oppX + T.dir * 6;
+  fzKick(Z, p, tx - b.x, ty - b.y, ai.shot * rb.s * (.9 + Math.random() * .15), 8 + Math.random() * 30);
+  Z.shots[T.i]++;
+}
+
+function fzGK(Z, p, dt) {
+  const T = p.T, b = Z.ball, ai = T.ai, rb = fzRb(Z, T.i), mid = (FZ.GY0 + FZ.GY1) / 2, lineX = T.goalX, dir = T.dir;
+  p.fx = dir;
+  if (b.owner === p) { p.vx *= .8; p.vy *= .8; p.dive = false; if (Z.state === 'play' && (p.hold -= dt) <= 0) fzGKThrow(Z, p); return; }
+  if (p.stun > 0) { p.vx *= .9; p.vy *= .9; return; }
+  const spd = ai.gkV * rb.g, react = ai.gkR / rb.g;
+  const toward = Z.state === 'play' && !b.owner && b.last !== p && b.vx * dir < -45 && Math.abs(b.x - lineX) < 200;
+  if (toward && p.seen !== b.kid) { p.seen = b.kid; p.reT = react * (.8 + Math.random() * .4); p.dive = false; }
+  if (!toward) p.dive = false;
+  const gdx = b.x - lineX, gdy = b.y - mid, gd = Math.hypot(gdx, gdy) || 1, out = fzCl(20 - gd * .06, 6, 18);
+  let tx = lineX + gdx / gd * out, ty = mid + gdy / gd * out * 1.1, v = spd;
+  if ((tx - lineX) * dir < 4) tx = lineX + dir * 4;
+  p.rush = false;
+  if (toward && (p.reT -= dt) <= 0) {
+    const gx = lineX + dir * 6, t = (gx - b.x) / b.vx;
+    ty = t > 0 ? b.y + b.vy * Math.min(t, 1.5) : b.y; tx = gx; v = spd * 2.6; p.dive = Math.abs(ty - p.y) > 5;
+  } else if (!toward && Z.state === 'play') {
+    const slow = Math.hypot(b.vx, b.vy) < 75, near = Math.abs(b.x - lineX) < 44 && b.y > FZ.PY0 + 10 && b.y < FZ.PY1 - 10;
+    if (!b.owner && slow && near) { tx = b.x; ty = b.y; p.rush = true; }
+    else if (b.owner && b.owner.T !== T && Math.abs(b.owner.x - lineX) < 54 && Math.abs(b.owner.y - mid) < 40) { tx = lineX + dir * Math.min(22, Math.abs(b.owner.x - lineX) * .45); ty = b.owner.y; }
+  }
+  if (!p.rush) ty = fzCl(ty, FZ.GY0 - 4, FZ.GY1 + 4);
+  fzSteer(p, tx, ty, v, dt, p.dive ? 16 : 9); p.fx = dir;
+}
+function fzSave(Z, p, sp, sup) {
+  const ai = p.T.ai, rb = fzRb(Z, p.team);
+  if (sup) return fzCl(ai.supSave * rb.g, .1, .7);
+  if (sp < 95) return .97;
+  return fzCl((ai.gkSave - (sp - 150) / 900) * rb.g, .2, .95);
+}
+function fzGKThrow(Z, p) {
+  const T = p.T, b = Z.ball, opp = Z.T[1 - T.i].ps, dir = T.dir;
+  let best = null, bs = -1e9;
+  for (const m of T.ps) { if (m === p || m.stun > 0) continue; const s = Math.min(...opp.map(o => fzD(o, m))) + (m.x - p.x) * dir * .25 - Math.abs(m.y - FZ.D / 2) * .05; if (s > bs) { bs = s; best = m; } }
+  if (!best || (best.x - b.x) * dir < 30) { fzKick(Z, p, dir, (Math.random() * 2 - 1) * .5, 150, 70); }
+  else fzPass(Z, p, best, fzD(best, p) > 110 ? 'lob' : 'throw');
+  b.z = 8; p.noTouch = .8; p.kickT = .3;
+}
+function fzCelebrate(Z, dt) {
+  for (const p of Z.ps) { if (p.cheer > 0 && p.z === 0 && p.stun <= 0) p.vz = 95 + Math.random() * 30; p.vx *= .9; p.vy *= .9; }
+}
+
+function fzMove(Z, dt) {
+  const P = Z.ps, o = Z.ball.owner, S = Z.state === 'set' ? Z.set : null;
+  for (const p of P) {
+    if (p.slide > 0) { const f = Math.exp(-dt * 2.4); p.vx *= f; p.vy *= f; } else if (p.down > 0) { p.vx *= .85; p.vy *= .85; }
+    p.x += p.vx * dt; p.y += p.vy * dt; p.walk += Math.hypot(p.vx, p.vy) * dt;
+  }
+  for (let i = 0; i < P.length; i++) for (let j = i + 1; j < P.length; j++) {
+    const a = P[i], c = P[j], dx = c.x - a.x, dy = c.y - a.y, d = Math.hypot(dx, dy);
+    if (d < 8 && d > .01) { const push = (8 - d) / 2, nx = dx / d, ny = dy / d; a.x -= nx * push; a.y -= ny * push; c.x += nx * push; c.y += ny * push; }
+  }
+  const keep = (cx, cy, r, team) => { for (const p of P) { if (p.team === team || p.role === 'gk') continue; const dx = p.x - cx, dy = p.y - cy, d = Math.hypot(dx, dy) || .01; if (d < r) { const nd = Math.min(r, d + 70 * dt); p.x = cx + dx / d * nd; p.y = cy + dy / d * nd; } } };
+  if (o && o.role === 'gk') keep(o.x, o.y, 24, o.team);
+  if (S) keep(S.x, S.y, 26, S.team);
+  for (const p of P) {
+    if (S && p === S.taker) continue;
+    if (p.role === 'gk') { const T = p.T; p.x = T.i === 0 ? fzCl(p.x, -2, FZ.PA - 4) : fzCl(p.x, FZ.L - FZ.PA + 4, FZ.L + 2); p.y = fzCl(p.y, FZ.PY0, FZ.PY1); }
+    else { p.x = fzCl(p.x, -3, FZ.L + 3); p.y = fzCl(p.y, -3, FZ.D + 3); }
+  }
+}
+
+function fzBall(Z, dt, noGoal) {
+  const b = Z.ball;
+  if (b.owner) {
+    const p = b.owner;
+    if (p.role === 'gk') { b.x = p.x + p.fx * 6; b.y = p.y + 1; b.z = 5; b.vx = b.vy = b.vz = 0; return; }
+    if (Z.state === 'set') return;
+    const sp = Math.hypot(p.vx, p.vy), ahead = 5.5 + Math.min(2.5, sp / 30) * (.6 + .4 * Math.sin(Z.t * 15));
+    const tx = p.x + p.dx * ahead, ty = p.y + p.dy * ahead * .85 + 1, k = Math.min(1, dt * 16);
+    b.vx = (tx - b.x) * k / dt; b.vy = (ty - b.y) * k / dt; b.z = 0; b.vz = 0;
+  }
+  const sp = Math.hypot(b.vx, b.vy), n = Math.max(1, Math.ceil(sp * dt / 2.5)), h = dt / n;
+  for (let i = 0; i < n; i++) { const ox = b.x; b.x += b.vx * h; b.y += b.vy * h; fzGoalPhys(Z, b, ox); }
+  if (b.owner) { if (fzD(b, b.owner) > 16) b.owner = null; }
+  else {
+    const f = Math.exp(-dt * (b.z > .5 ? .35 : 1.1)); b.vx *= f; b.vy *= f;
+    if (b.z > 0 || b.vz) { b.vz -= 430 * dt; b.z += b.vz * dt; if (b.z <= 0) { b.z = 0; b.vz = b.vz < -45 ? -b.vz * .45 : 0; } }
+    if (b.sup && sp < 120) b.sup = false;
+  }
+  b.roll += sp * dt;
+  if (!noGoal && Z.state === 'play') { fzTouch(Z, dt); if (Z.state === 'play') fzLines(Z); }
+  if (!isFinite(b.x) || !isFinite(b.y) || b.x < -FZ.GD - 8 || b.x > FZ.L + FZ.GD + 8 || b.y < -30 || b.y > FZ.D + 30) {
+    Z.oob++; b.x = fzCl(isFinite(b.x) ? b.x : FZ.L / 2, 4, FZ.L - 4); b.y = fzCl(isFinite(b.y) ? b.y : FZ.D / 2, 4, FZ.D - 4); b.vx = b.vy = 0; b.owner = null;
+  }
+}
+function fzGoalPhys(Z, b, ox) {
+  const r = 2.5;
+  for (let s = 0; s < 2; s++) {
+    const lx = s ? FZ.L : 0, sg = s ? -1 : 1, rel = (b.x - lx) * sg, orel = (ox - lx) * sg;
+    if (b.z < FZ.GH && Math.abs(rel) < 6) for (const py of [FZ.GY0, FZ.GY1]) {
+      const dx = b.x - lx, dy = b.y - py, d = Math.hypot(dx, dy);
+      if (d < r + 1.2 && d > .001) {
+        const nx = dx / d, ny = dy / d; b.x = lx + nx * (r + 1.2); b.y = py + ny * (r + 1.2);
+        const vn = b.vx * nx + b.vy * ny;
+        if (vn < 0) { b.vx -= 1.7 * vn * nx; b.vy -= 1.7 * vn * ny; if (-vn > 60) { pxSfx.tick(); Z.net[s] = .25; if (Z.state === 'play') fzMsg(Z, 'PFOSTEN!', '#ffffff', .8, 2); } }
+      }
+    }
+    if (rel > 0 && Z.inNet !== s) continue;
+    const mouth = b.y > FZ.GY0 && b.y < FZ.GY1;
+    if (Z.inNet !== s && orel >= 0 && rel < 0 && mouth && Math.abs(b.z - FZ.GH) < 2.5 && !b.owner) {
+      b.x = lx + sg; b.vx = -b.vx * .55; b.vz = Math.abs(b.vz) * .5 + 20; pxSfx.tick(); Z.net[s] = .3; if (Z.state === 'play') fzMsg(Z, 'LATTE!', '#ffffff', .8, 2); continue;
+    }
+    if (Z.inNet === s || (orel >= 0 && rel < 0 && mouth && b.z < FZ.GH)) {
+      Z.inNet = s;
+      if (b.y < FZ.GY0 + r) { b.y = FZ.GY0 + r; b.vy = Math.abs(b.vy) * .3; }
+      if (b.y > FZ.GY1 - r) { b.y = FZ.GY1 - r; b.vy = -Math.abs(b.vy) * .3; }
+      if (rel < -FZ.GD + r) { b.x = lx - sg * (FZ.GD - r); b.vx = sg * Math.abs(b.vx) * .15; Z.net[s] = Math.max(Z.net[s], .6); }
+      if (b.z > FZ.GH - 4) { b.z = FZ.GH - 4; b.vz = -Math.abs(b.vz) * .3; }
+    }
+  }
+}
+
+function fzLines(Z) {
+  const b = Z.ball, L = FZ.L, D = FZ.D;
+  if (Z.inNet >= 0) { if ((Z.inNet === 0 && b.x < -2.5) || (Z.inNet === 1 && b.x > L + 2.5)) fzGoal(Z, Z.inNet === 0 ? 1 : 0); return; }
+  const lt = b.last ? b.last.team : 0;
+  if (b.y < -3 || b.y > D + 3) return fzSetStart(Z, 'einwurf', 1 - lt, fzCl(b.x, 8, L - 8), b.y < 0 ? -2 : D + 2);
+  if (b.x < -3) return lt === 0 ? fzSetStart(Z, 'ecke', 1, 0, b.y < D / 2 ? 0 : D) : fzSetStart(Z, 'abstoss', 0);
+  if (b.x > L + 3) return lt === 1 ? fzSetStart(Z, 'ecke', 0, L, b.y < D / 2 ? 0 : D) : fzSetStart(Z, 'abstoss', 1);
+}
+function fzSetStart(Z, kind, team, x, y) {
+  const T = Z.T[team], b = Z.ball, mid = FZ.D / 2;
+  b.owner = null; b.vx = b.vy = b.vz = 0; b.z = 0; b.sup = false; Z.inNet = -1;
+  let taker = null;
+  if (kind === 'abstoss') { taker = T.ps[0]; b.x = T.goalX + T.dir * 14; b.y = mid; taker.x = b.x - T.dir * 6; taker.y = mid; }
+  else {
+    b.x = x; b.y = y;
+    let bd = 1e9; for (const p of T.ps) { if (p.role === 'gk') continue; const d = Math.hypot(p.x - x, p.y - y) + (p.stun > 0 ? 50 : 0); if (d < bd) { bd = d; taker = p; } }
+    if (kind === 'einwurf') { taker.x = x; taker.y = y < mid ? -5 : FZ.D + 5; }
+    else { taker.x = x + (x < FZ.L / 2 ? -4 : 4); taker.y = y < mid ? -4 : FZ.D + 4; }
+  }
+  taker.vx = taker.vy = 0; taker.stun = 0; taker.down = 0; taker.slide = 0; taker.dx = fzCl((FZ.L / 2 - taker.x) / 100, -1, 1); taker.dy = taker.y < mid ? 1 : -1; taker.fx = taker.dx >= 0 ? 1 : -1;
+  Z.state = 'set'; Z.set = { kind, team, x: b.x, y: b.y, taker, t: kind === 'ecke' ? 1.4 : kind === 'abstoss' ? 1.1 : .9 };
+  if (T.hum) { T.ctrl = taker.role === 'gk' ? T.ps[3] : taker; T.ctrlLock = .6; }
+  for (const H of Z.H) if (H) { H.charging = false; H.charge = 0; }
+  fzWhistle(1);
+  fzMsg(Z, { einwurf: 'EINWURF', ecke: 'ECKE', abstoss: 'ABSTOSS' }[kind], '#ffffff', 1, 2, fzNice(T.d.n).toUpperCase());
+}
+function fzSetGo(Z) {
+  const s = Z.set, T = Z.T[s.team], tk = s.taker, b = Z.ball;
+  Z.state = 'play'; Z.set = null; b.owner = null;
+  if (s.kind === 'ecke') {
+    let best = null, bd = 1e9; const tx = T.oppX - T.dir * 38, ty = FZ.D / 2;
+    for (const p of T.ps) { if (p === tk || p.role === 'gk') continue; const d = Math.hypot(p.x - tx, p.y - ty); if (d < bd) { bd = d; best = p; } }
+    const ax = best ? best.x : tx, ay = best ? best.y : ty, d = Math.hypot(ax - b.x, ay - b.y);
+    fzKick(Z, tk, ax - b.x, ay - b.y, fzCl(75 + d * .95, 110, 185), 85); if (best) best.wait = .9;
+  } else {
+    let to = null; const H = T.hum;
+    if (H) { const [ix, iy, m] = fzInDir(H); if (m > .3) to = fzPassDir(Z, tk, ix, iy); }
+    to = to || fzBestMate(Z, tk, false) || T.ps.filter(p => p !== tk && p.role !== 'gk').sort((a, c) => fzD(a, tk) - fzD(c, tk))[0];
+    fzPass(Z, tk, to, s.kind === 'abstoss' ? 'lob' : 'throw');
+    if (H && to) { T.ctrl = to; T.ctrlLock = .5; }
+  }
+  tk.noTouch = tk.role === 'gk' ? .9 : .5;
+  for (const H of Z.H) if (H) { H.aWas = H.bWas = true; H.hit.a = H.hit.b = false; }
+}
+
+function fzTake(Z, p) { const b = Z.ball; b.owner = p; b.last = p; b.vz = 0; b.z = 0; p.hasT = 0; p.dec = p.T.ai.think * .6; p.stealT = 0; p.wait = 0; }
+function fzTouch(Z, dt) {
+  const b = Z.ball, sp = Math.hypot(b.vx, b.vy);
+  for (const p of Z.ps) {
+    if (p.slide <= 0) continue;
+    const fx = p.x + p.dx * 6, fy = p.y + p.dy * 4;
+    if (b.z < 6 && Math.hypot(b.x - fx, b.y - fy) < 10 && !(b.owner && (b.owner.T === p.T || b.owner.role === 'gk'))) {
+      const o = b.owner;
+      if (o) { o.stun = .7; o.down = .7; o.hasT = 0; o.noTouch = .5; for (const H of Z.H) if (H && Z.T[H.team].ctrl === o) { H.charging = false; H.charge = 0; } }
+      b.owner = null; b.last = p; b.kid++; b.vx = p.dx * 90 + p.vx * .25; b.vy = p.dy * 90 + p.vy * .25; b.vz = 20; p.noTouch = .12;
+      pxSfx.pop();
+      if (o && (p.T.i === 0 || Z.duo)) fzMsg(Z, R.pick(['TOLLE GRÄTSCHE!', 'BALL ERKÄMPFT!', 'STARK!']), '#8fd0ff', .8, 2);
+    }
+    for (const q of Z.ps) if (q.T !== p.T && q.role !== 'gk' && q.down <= 0 && q !== b.owner && Math.hypot(q.x - fx, q.y - fy) < 7) { q.stun = .45; q.down = .45; }
+  }
+  if (b.owner) {
+    const o = b.owner; if (o.role === 'gk') return;
+    for (const p of Z.ps) {
+      if (p.T === o.T || p.stun > 0 || p.noTouch > 0 || p.slide > 0) continue;
+      const d = Math.hypot(b.x - p.x, b.y - p.y), reach = p.role === 'gk' ? 9 : 8.5;
+      if (d < reach) {
+        p.stealT += dt;
+        const humanP = p.T.hum && p === p.T.ctrl, need = humanP ? .16 : p.role === 'gk' ? .12 : p.T.hum ? .3 : p.T.ai.steal / fzRb(Z, p.team).v;
+        if (p.stealT >= need) { fzSteal(Z, p, o); return; }
+      } else p.stealT = Math.max(0, p.stealT - dt);
+    }
+    return;
+  }
+  let best = null, bd = 1e9;
+  for (const p of Z.ps) {
+    if (p.noTouch > 0 || p.stun > 0 || p.slide > 0) continue;
+    const gk = p.role === 'gk'; if (b.z > (gk ? 22 : 8)) continue;
+    const d = Math.hypot(b.x - (p.x + (gk ? 0 : p.dx * 3)), b.y - (p.y + 1)), reach = gk ? (p.dive ? 13 : 9.5) : 7;
+    if (d < reach && d < bd) { bd = d; best = p; }
+  }
+  if (!best) return;
+  const p = best, opp = b.last && b.last.T !== p.T;
+  if (p.role === 'gk') {
+    if (opp && p.tried !== b.kid) { p.tried = b.kid; if (Math.random() >= fzSave(Z, p, sp, b.sup)) { p.noTouch = .55; p.vz = 50; if (b.sup) pxBurst(Z.run, fzSX(Z, b.x, b.y), fzSY(b.y) - 4, ['#ffd84a', '#ffffff'], 8, { v: 60, up: 10, life: .4, g: 30 }); return; } }
+    const good = p.team === 0 || Z.duo;
+    if (sp <= 160 || !opp) { fzTake(Z, p); p.hold = .9; b.sup = false; pxSfx.pop(); if (opp) { Z.saves[p.team]++; fzMsg(Z, good ? R.pick(['GEHALTEN!', 'SUPER PARADE!']) : R.pick(['FAST!', 'KNAPP!', 'GUTER SCHUSS!']), '#ffd84a', .9, 2); } }
+    else { b.vx = -b.vx * .4; b.vy = b.vy * .3 + (Math.random() * 2 - 1) * 80; b.vz = 45; b.last = p; b.kid++; p.noTouch = .35; b.sup = false; Z.saves[p.team]++; pxSfx.kick(); fzMsg(Z, good ? 'PARADE!' : 'ABGEWEHRT!', '#ffffff', .8, 2); }
+    return;
+  }
+  if (b.sup && opp) { p.noTouch = .6; pxBurst(Z.run, fzSX(Z, b.x, b.y), fzSY(b.y) - 4, ['#ffd84a', '#ffffff'], 8, { v: 60, up: 10, life: .4, g: 30 }); return; }
+  if (sp < 180 || (!opp && sp < 240)) fzTake(Z, p);
+  else { const nx = b.x - p.x, ny = b.y - p.y, nl = Math.hypot(nx, ny) || 1; b.vx = nx / nl * sp * .42 + b.vx * .15; b.vy = ny / nl * sp * .42 + b.vy * .15; b.last = p; b.kid++; p.noTouch = .22; b.sup = false; pxSfx.kick(); }
+}
+function fzSteal(Z, p, o) {
+  fzTake(Z, p); if (p.role === 'gk') p.hold = .9;
+  o.stun = p.T.hum ? .6 : .4; o.hasT = 0; o.noTouch = .5; o.stealT = 0;
+  const dx = o.x - p.x, dy = o.y - p.y, d = Math.hypot(dx, dy) || 1; o.vx = dx / d * 70; o.vy = dy / d * 70; o.vz = 90;
+  for (const H of Z.H) if (H && Z.T[H.team].ctrl === o) { H.charging = false; H.charge = 0; }
+  pxSfx.pop();
+  pxBurst(Z.run, fzSX(Z, o.x, o.y), fzSY(o.y) - 20, ['#ffd84a', '#ffffff'], 6, { v: 40, up: 30, life: .45, g: 90 });
+  if ((p.T.i === 0 || Z.duo) && p.T.hum && p === p.T.ctrl && Math.random() < .6) fzMsg(Z, R.pick(['BALL ERKÄMPFT!', 'STARK!', 'SUPER!']), '#8fd0ff', .8, 2);
+}
+function fzGoal(Z, team) {
+  const b = Z.ball, own = !!(b.last && b.last.team !== team), scorer = own ? null : b.last, T = Z.T[team], good = team === 0 || Z.duo;
+  Z.score[team]++; Z.state = 'goal'; Z.stateT = 2.8; Z.lastScorer = team;
+  for (const H of Z.H) if (H) { H.charging = false; H.charge = 0; }
+  Z.goals.push({ team, min: fzMin(Z), name: scorer ? scorer.name : '', own, sup: b.sup });
+  Z.net[team === 0 ? 1 : 0] = 1.2; Z.cheer[team] = 3.4; Z.shake = good ? .5 : .25; b.sup = false;
+  for (const p of T.ps) p.cheer = 2.5;
+  const col = good ? '#ffd84a' : fzNear(T.kit.c, '#2a2f45', 90) ? '#ffffff' : T.kit.c;
+  fzMsg(Z, own ? 'EIGENTOR' : 'TOR!', col, 2.6, own ? 3 : 5, own ? 'KANN JEDEM MAL PASSIEREN!' : good ? (scorer && scorer.name ? scorer.name + ' TRIFFT!' : 'WAS FÜR EIN TOR!') : 'FÜR ' + T.d.n + ' · WEITER GEHTS!');
+  if (good) { pxSfx.win(); fzConfetti(Z, 60, T); } else { pxSfx.pop(); fzConfetti(Z, 18, T); }
+  const gx = fzSX(Z, team === 0 ? FZ.L + 4 : -4, FZ.D / 2), gy = fzSY(FZ.D / 2) - 8;
+  pxBurst(Z.run, gx, gy, [T.kit.c, '#ffffff', '#ffd84a'], 26, { v: 110, up: 50, life: .9, g: 120 });
+}
+function fzConfetti(Z, n, T) {
+  const run = Z.run, cols = T ? [T.kit.c, T.kit.s, '#ffd84a', '#ffffff', '#ff8fc2', '#8fd0ff'] : ['#ffd84a', '#ef4b4b', '#5cc85c', '#8fd0ff', '#ff8fc2', '#ffffff'];
+  for (let i = 0; i < n; i++) pxBurst(run, Math.random() * run.W, -4 - Math.random() * 20, cols, 1, { v: 20, up: -25, life: 2.6 + Math.random(), g: 28, s: Math.random() < .5 ? 2 : 1 });
+}
+function fzDust(Z, p, n) { pxBurst(Z.run, fzSX(Z, p.x, p.y), fzSY(p.y) - 1, ['#d8f5d0', '#ffffff', '#a8dca0'], n, { v: 26, up: 14, life: .35, g: 60 }); }
+function fzFx(Z, dt) {
+  const b = Z.ball, run = Z.run;
+  if (b.sup && !b.owner) pxBurst(run, fzSX(Z, b.x, b.y), fzSY(b.y) - 3 - b.z, ['#ffd84a', '#fff3c4', '#ff9d2e', '#ffffff'], 3, { v: 16, up: 0, life: .45, g: 0 });
+  for (const p of Z.ps) if (p.slide > 0 && Math.random() < dt * 30) fzDust(Z, p, 1);
+  for (const T of Z.T) { const c = T.ctrl; if (T.sup && T.hum && c && Math.random() < dt * 9) pxBurst(run, fzSX(Z, c.x, c.y) + (Math.random() * 16 - 8), fzSY(c.y) - Math.random() * 20, ['#ffd84a', '#fff3c4'], 1, { v: 8, up: 18, life: .5, g: -10 }); }
+  if (b.x > FZ.L * .8 && Z.cheer[0] < .3) Z.cheer[0] = .3;
+  if (b.x < FZ.L * .2 && Z.cheer[1] < .3) Z.cheer[1] = .3;
+}
+
+function fzWatch(Z, dt) {
+  const b = Z.ball;
+  if (!b.owner && Math.hypot(b.vx, b.vy) < 6) { Z.idle += dt; Z.idleMax = Math.max(Z.idleMax, Z.idle); } else Z.idle = 0;
+  if (Z.idle > 2.5) { let best = null, bd = 1e9; for (const p of Z.ps) { if (p.role === 'gk' || p.stun > 0 || (p.T.hum && p === p.T.ctrl)) continue; const d = fzD(p, b); if (d < bd) { bd = d; best = p; } } if (best) best.T.chaser = best; }
+}
+
+
+function fzK(y) { return FZ.KT + (1 - FZ.KT) * fzCl(y / FZ.D, -.3, 1.25); }
+function fzSX(Z, x, y) { const W = Z.run.W; return W / 2 + (x + FZ.MX - Z.cam - W / 2) * fzK(y); }
+function fzSY(y) { return FZ.TOP + y * FZ.YS; }
+function fzCam(Z, dt) {
+  const W = Z.run.W, BW = FZ.L + 2 * FZ.MX, b = Z.ball, old = Z.cam;
+  let tx = (Z.state === 'set' && Z.set ? Z.set.x : b.x + b.vx * .25) + FZ.MX - W / 2;
+  tx = BW <= W ? (BW - W) / 2 : fzCl(tx, 0, BW - W);
+  Z.cam += (tx - Z.cam) * Math.min(1, dt * 4);
+  const dc = Z.cam - old; if (dc && Z.run.parts) for (const p of Z.run.parts) p.x -= dc;
+}
+function fzWrap(t, max) { const out = []; let line = ''; for (const w of String(t).split(' ')) { const n = line ? line + ' ' + w : w; if (pxTextW(n) > max && line) { out.push(line); line = w; } else line = n; } if (line) out.push(line); return out; }
+function fzTextO(g, t, x, y, col, sc, oc) {
+  const o = Math.max(1, sc >> 1);
+  for (let dy = -1; dy <= 1; dy++) for (let dx = -1; dx <= 1; dx++) if (dx || dy) pxText(g, t, x + dx * o, y + dy * o, oc, sc, 'c');
+  pxText(g, t, x, y + o, oc, sc, 'c'); pxText(g, t, x, y, col, sc, 'c');
+}
+const FZ_ADS = ['LUMI LIMO', 'FISCHBRÖTCHEN', 'EISKALT', 'TOOOR!', 'KOKOSSAFT', 'SCHNEEFLOCKE TV', 'PINGU POST', 'BLITZ BROT'];
+function fzAds(g, y, start) {
+  let ax = 0, ai = start;
+  pxRect(g, 0, y, FZ_BW, 9, '#141a3a');
+  while (ax < FZ_BW) { const t = FZ_ADS[ai % FZ_ADS.length], w = pxTextW(t) + 14, col = ['#ef4b4b', '#3b7cf0', '#ffd84a', '#2fae4f', '#8a5cf6', '#ff8a2e'][ai % 6]; pxRect(g, ax + 1, y + 1, w - 2, 7, col); pxText(g, t, ax + w / 2, y + 1, fzNear(col, '#ffd84a', 120) ? '#1d2440' : '#ffffff', 1, 'c'); ax += w; ai++; }
+}
+function fzFanCols(Z) {
+  const T = Z.T, own = fzS().team.c;
+  return T ? [T[0].kit.c, T[1].kit.c] : [own, '#ff8a2e'];
+}
+function fzPaintBg(Z) {
+  const H = Z.run.H, BW = FZ_BW;
+  if (!Z.bg) [Z.bg, Z.bgg] = pxCanvas(BW, H);
+  const g = Z.bgg, X = x => Math.round(x + FZ.MX + FZ_PADX), Y = y => Math.round(fzSY(y)), rnd = pxRnd(2501), bandY = FZ.TOP - 12;
+  pxRect(g, 0, 0, BW, H, '#0b1026');
+  pxRect(g, 0, 0, BW, 5, '#141a3a'); pxRect(g, 0, 5, BW, 1, '#3a4a80');
+  for (let y = 6; y < bandY - 1; y += 4) pxRect(g, 0, y, BW, 2, (y >> 2) % 2 ? '#26305c' : '#2b3566');
+  for (let x = 0; x < BW; x += 64) pxRect(g, x, 6, 3, bandY - 7, '#1d2440');
+  const cx = X(FZ.L / 2); pxRect(g, cx - 31, 7, 62, 15, '#1d2440'); pxRect(g, cx - 29, 9, 58, 11, '#3f86ee'); pxRect(g, cx - 29, 9, 58, 2, '#8fd0ff'); pxText(g, 'STADION', cx, 12, '#ffffff', 1, 'c');
+  for (const fx of [X(-30), X(FZ.L + 30)]) { pxRect(g, fx - 1, 0, 3, bandY, '#5d6878'); pxRect(g, fx - 10, 0, 21, 6, '#3a4250'); for (let i = 0; i < 4; i++) pxRect(g, fx - 9 + i * 5, 1, 3, 4, '#fff3c4'); }
+  fzAds(g, bandY, 0);
+  pxRect(g, 0, bandY + 9, BW, FZ.TOP - bandY - 9, '#2a7a3c');
+  for (let x = 0; x < BW; x++) { const wx = x - FZ.MX - FZ_PADX, stripe = Math.floor((wx + 2080) / 32) % 2; pxRect(g, x, FZ.TOP - 3, 1, H - FZ.TOP + 3, stripe ? '#3fae4f' : '#37a046'); }
+  for (let i = 0; i < 1500; i++) pxRect(g, Math.floor(rnd() * BW), FZ.TOP + Math.floor(rnd() * (H - FZ.TOP)), 1, 1, rnd() < .5 ? '#46b857' : '#329a41');
+  const W1 = '#eaf7ec', hl = (x0, x1, y) => pxRect(g, X(x0), Y(y), X(x1) - X(x0) + 1, 1, W1), vl = (x, ya, yb) => pxRect(g, X(x), Y(ya), 1, Y(yb) - Y(ya) + 1, W1);
+  const arc = (ax, ay, r, from, to) => { let last = null; for (let a = from; a <= to + 1e-6; a += Math.PI / 48) { const pt = [X(ax + Math.cos(a) * r), Math.round(fzSY(ay + Math.sin(a) * r))]; if (last) pxLine(g, last[0], last[1], pt[0], pt[1], W1); last = pt; } };
+  hl(0, FZ.L, 0); hl(0, FZ.L, FZ.D); vl(0, 0, FZ.D); vl(FZ.L, 0, FZ.D); vl(FZ.L / 2, 0, FZ.D);
+  arc(FZ.L / 2, FZ.D / 2, FZ.CR, 0, Math.PI * 2); pxRect(g, X(FZ.L / 2) - 1, Y(FZ.D / 2), 3, 1, W1);
+  for (const s of [0, 1]) {
+    const gx = s ? FZ.L : 0, sg = s ? -1 : 1, x1 = gx + sg * FZ.PA, x2 = gx + sg * FZ.GA, lo = v => Math.min(gx, v), hi = v => Math.max(gx, v);
+    hl(lo(x1), hi(x1), FZ.PY0); hl(lo(x1), hi(x1), FZ.PY1); vl(x1, FZ.PY0, FZ.PY1);
+    hl(lo(x2), hi(x2), FZ.AY0); hl(lo(x2), hi(x2), FZ.AY1); vl(x2, FZ.AY0, FZ.AY1);
+    const spx = gx + sg * FZ.SPOT; pxRect(g, X(spx) - 1, Y(FZ.D / 2), 2, 1, W1);
+    const a0 = Math.acos((FZ.PA - FZ.SPOT) / 30); if (s === 0) arc(spx, FZ.D / 2, 30, -a0, a0); else arc(spx, FZ.D / 2, 30, Math.PI - a0, Math.PI + a0);
+    arc(gx, 0, 6, s ? Math.PI / 2 : 0, s ? Math.PI : Math.PI / 2); arc(gx, FZ.D, 6, s ? Math.PI : -Math.PI / 2, s ? Math.PI * 1.5 : 0);
+  }
+  for (const [fx, fy] of [[0, 0], [FZ.L, 0], [0, FZ.D], [FZ.L, FZ.D]]) { pxRect(g, X(fx), Y(fy) - 8, 1, 8, '#ffffff'); pxRect(g, X(fx) + 1, Y(fy) - 8, 4, 3, '#ef4b4b'); }
+  const nb = Y(FZ.D) + 4; fzAds(g, nb, 3); pxRect(g, 0, nb + 9, BW, H - nb - 9, '#0b1026');
+
+  const [c0, c1] = fzFanCols(Z), furs = Object.values(FZ_ANI).map(a => a.f), F = [];
+  for (let row = 0; row < 4; row++) {
+    const top = 8 + row * 9;
+    for (let x = 2 + (row % 2) * 4; x < BW - 8; x += 8 + Math.floor(rnd() * 2)) {
+      if (row < 2 && Math.abs(x + 3 - cx) < 34) continue;
+      if (rnd() < .08) continue;
+      const home = x < cx, r = rnd(), team = r < .72 ? (home ? 0 : 1) : r < .86 ? (home ? 1 : 0) : 2;
+      F.push({ x, y: top, team, c: team === 0 ? c0 : team === 1 ? c1 : R.pick(['#ffd84a', '#ffffff', '#8fd0ff', '#ff8fc2']), fur: furs[Math.floor(rnd() * furs.length)], ph: rnd() * 6.28 });
+    }
+  }
+  Z.fans = F;
+}
+function fzDrawField(Z, g) {
+  const run = Z.run, W = run.W, H = run.H, bg = Z.bg, cam = Z.cam, nb = Math.round(fzSY(FZ.D)) + 4;
+
+  g.drawImage(bg, FZ_PADX + cam, 0, W, FZ.TOP - 3, 0, 0, W, FZ.TOP - 3);
+  for (let r = FZ.TOP - 3; r < nb; r++) { const k = fzK((r + .5 - FZ.TOP) / FZ.YS), w = W / k; g.drawImage(bg, FZ_PADX + cam + W / 2 - w / 2, r, w, 1, 0, r, W, 1); }
+  g.drawImage(bg, FZ_PADX + cam, nb, W, H - nb, 0, nb, W, H - nb);
+}
+function fzDrawFans(Z, g) {
+  const W = Z.run.W, ks = 1, x0 = FZ_PADX + Z.cam + W / 2;
+  for (const f of Z.fans || []) {
+    const sx = W / 2 + (f.x - x0) * ks; if (sx < -8 || sx > W + 1) continue;
+    const ch = f.team < 2 && Z.cheer[f.team] > 0, up = ch && Math.sin(Z.t * 8 + f.ph) > -.2, jy = ch ? -Math.round(Math.abs(Math.sin(Z.t * 9 + f.ph)) * 3) : 0;
+    g.drawImage(fzFanSpr(f.c, f.fur, up), Math.round(sx), f.y + jy);
+  }
+}
+function fzGoalDraw(Z, g, s, front) {
+  const lx = s ? FZ.L : 0, sg = s ? -1 : 1, bx = lx - sg * (FZ.GD + (Z.net ? Z.net[s] : 0) * 3), y0 = FZ.GY0, y1 = FZ.GY1, GH = FZ.GH, hb = FZ.GH - 5;
+  const P = (x, y, z) => [fzSX(Z, x, y), fzSY(y) - z], L = (a, c, col) => pxLine(g, a[0], a[1], c[0], c[1], col);
+  if (Math.max(P(lx, y1, 0)[0], P(bx, y1, 0)[0]) < -4 || Math.min(P(lx, y0, 0)[0], P(bx, y0, 0)[0]) > Z.run.W + 4) return;
+  const net = 'rgba(235,242,255,.45)', post = '#ffffff', postD = '#b9c6dc';
+  if (!front) {
+    for (let i = 0; i <= 6; i++) { const y = y0 + (y1 - y0) * i / 6; L(P(bx, y, 0), P(bx, y, hb), net); L(P(lx, y, GH), P(bx, y, hb), net); }
+    for (let j = 1; j <= 3; j++) { const z = hb * j / 3; L(P(bx, y0, z), P(bx, y1, z), net); }
+    for (let i = 1; i <= 3; i++) { const x = lx + (bx - lx) * i / 3, z = GH + (hb - GH) * i / 3; L(P(x, y0, 0), P(x, y0, z), net); }
+    L(P(lx, y0, GH), P(bx, y0, hb), postD); L(P(bx, y0, 0), P(bx, y0, hb), postD); L(P(bx, y1, 0), P(bx, y1, hb), postD); L(P(bx, y0, hb), P(bx, y1, hb), postD);
+    const a = P(lx, y0, 0), c = P(lx, y0, GH); pxRect(g, Math.round(a[0]) - 1, Math.round(c[1]), 2, Math.round(a[1] - c[1]) + 1, post);
+  } else {
+    for (let i = 1; i <= 3; i++) { const x = lx + (bx - lx) * i / 3, z = GH + (hb - GH) * i / 3; L(P(x, y1, 0), P(x, y1, z), net); }
+    L(P(lx, y1, GH), P(bx, y1, hb), postD);
+    const a = P(lx, y1, 0), c = P(lx, y1, GH), d = P(lx, y0, GH);
+    pxRect(g, Math.round(a[0]) - 1, Math.round(c[1]), 2, Math.round(a[1] - c[1]) + 1, post);
+    L(c, d, post); L([c[0], c[1] + 1], [d[0], d[1] + 1], postD);
+  }
+}
+function fzRingSpr(col) {
+  const key = 'ring' + col; let c = FZ_SPR.get(key); if (c) return c; let g; [c, g] = pxCanvas(18, 7);
+  for (let j = 0; j < 7; j++) { const [l, r] = pxEllRow(0, 0, 18, 7, j); if (r <= l) continue; if (j === 0 || j === 6) pxRect(g, l, j, r - l, 1, col); else { pxRect(g, l, j, 2, 1, col); pxRect(g, r - 2, j, 2, 1, col); } }
+  FZ_SPR.set(key, c); return c;
+}
+function fzPose(Z, p) {
+  if (p.slide > 0 || p.down > 0) return ['l', 0];
+  if (p.role === 'gk' && p.dive) return ['d', 0];
+  if (p.kickT > 0) return ['k', 0];
+  if (p.cheer > 0 || (Z.state === 'set' && Z.set && Z.set.kind === 'einwurf' && p === Z.set.taker)) return ['j', 0];
+  if (p.role === 'gk' && Z.ball.owner === p) return ['h', 0];
+  if (Math.hypot(p.vx, p.vy) > 12) return ['r', Math.floor(p.walk / 6) % 4];
+  return ['i', Math.floor(Z.t * 1.5 + p.k) % 3 === 0 ? 1 : 0];
+}
+function fzDrawP(Z, g, p) {
+  const sx = fzSX(Z, p.x, p.y), sy = fzSY(p.y); if (sx < -30 || sx > Z.run.W + 30) return;
+  const [pose, fr] = fzPose(Z, p), flip = pose === 'l' && p.slide > 0 ? p.dx < 0 : p.fx < 0;
+  g.drawImage(fzSprite(p.look, pose, fr, flip), Math.round(sx - 12), Math.round(sy - 27 - p.z));
+  if (Z.state === 'cele' && p.T.i === 0 && p.k === 4) { const t = Z.celeK === 'meister' ? fzSchaleSpr() : fzCupSpr(); g.drawImage(t, Math.round(sx - t.width / 2), Math.round(sy - 27 - p.z - t.height + 2)); }
+}
+function fzDrawBall(Z, g) {
+  const b = Z.ball; if (Z.state === 'cele') return;
+  const sx = fzSX(Z, b.x, b.y), sy = fzSY(b.y), fr = Math.floor(b.roll / 5) % 2;
+  pxDraw(g, b.sup && typeof PXGEN.pxkickball === 'function' ? 'pxkickball_a_' + fr : fr ? 'ball2' : 'ball', sx - 3, sy - 5 - b.z);
+}
+function fzDrawMarks(Z, g) {
+  const W = Z.run.W;
+  for (const H of Z.H) {
+    if (!H || Z.T[H.team].hum !== H) continue;
+    const p = Z.T[H.team].ctrl; if (!p) continue;
+    const col = H.team === 0 ? '#ffd84a' : '#3fd1c8', sx = fzSX(Z, p.x, p.y), top = fzSY(p.y) - 27 - p.z;
+    if (sx < 2 || sx > W - 2) { const ay = fzCl(top + 14, 70, 170); if (sx < 2) pxTri(g, 1, ay, 7, ay - 5, 7, ay + 5, col); else pxTri(g, W - 2, ay, W - 8, ay - 5, W - 8, ay + 5, col); continue; }
+    if (H.charging) { const f = H.charge; pxRect(g, sx - 10, top - 6, 20, 5, '#1d2440'); pxRect(g, sx - 9, top - 5, Math.round(18 * f), 3, f > .85 ? '#ef4b4b' : f > .5 ? '#ff9d2e' : '#ffd84a'); }
+    else pxTri(g, sx - 3, top - 5, sx, top - 1, sx + 3, top - 5, col);
+    if (p.name) pxText(g, (Z.duo ? (H.team + 1) + ' ' : '') + p.name, sx, top - 14, '#ffffff', 1, 'c', '#1d2440');
+  }
+}
+function fzBolt(g, x, y) { pxRect(g, x + 2, y, 2, 2, PXC.y); pxRect(g, x + 1, y + 2, 2, 2, PXC.y); pxRect(g, x, y + 4, 4, 1, PXC.y); pxRect(g, x + 2, y + 5, 2, 1, PXC.y); pxRect(g, x + 1, y + 6, 2, 1, PXC.y); }
+function fzDrawBoard(Z, g) {
+  const T = Z.T, t = `${T[0].k} ${Z.score[0]}:${Z.score[1]} ${T[1].k}`, tw = pxTextW(t), m = fzMin(Z) + "'", mw = pxTextW(m), w = tw + mw + 22 + (T[0].sup || T[1].sup ? 8 : 0), x = 3, y = 3;
+  pxRect(g, x, y, w, 11, '#05081a'); pxRect(g, x, y + 11, w, 1, '#3a4250');
+  pxRect(g, x + 2, y + 2, 3, 7, T[0].kit.c); pxText(g, t, x + 7, y + 2, '#ffffff', 1);
+  pxRect(g, x + 8 + tw, y + 2, 3, 7, T[1].kit.c); pxText(g, m, x + 14 + tw, y + 2, '#ffd84a', 1);
+  if (T[0].sup || T[1].sup) fzBolt(g, x + 17 + tw + mw, y + 2);
+}
+function fzDrawRadar(Z, g) {
+  const W = Z.run.W; if (W < 200) return;
+  const rw = 58, rh = 24, x0 = W - rw - 3, y0 = 3, fx = x => x0 + 1 + x / FZ.L * (rw - 2), fy = y => y0 + 1 + y / FZ.D * (rh - 2);
+  pxRect(g, x0 - 1, y0 - 1, rw + 2, rh + 2, '#05081a'); pxRect(g, x0, y0, rw, rh, '#1f6234');
+  pxRect(g, Math.round(fx(FZ.L / 2)), y0, 1, rh, '#5cc85c'); pxRect(g, x0, Math.round(fy(FZ.GY0)), 1, Math.round(fy(FZ.GY1) - fy(FZ.GY0)), '#ffffff'); pxRect(g, x0 + rw - 1, Math.round(fy(FZ.GY0)), 1, Math.round(fy(FZ.GY1) - fy(FZ.GY0)), '#ffffff');
+  const v0 = Z.cam - FZ.MX, v1 = v0 + W; g.fillStyle = 'rgba(255,255,255,.18)'; g.fillRect(Math.round(fx(fzCl(v0, 0, FZ.L))), y0, Math.max(1, Math.round(fx(fzCl(v1, 0, FZ.L)) - fx(fzCl(v0, 0, FZ.L)))), rh);
+  for (const p of Z.ps) { const c = p.T.kit.c; pxRect(g, Math.round(fx(p.x)) - 1, Math.round(fy(p.y)) - 1, 3, 3, '#05081a'); pxRect(g, Math.round(fx(p.x)), Math.round(fy(p.y)), 2, 2, p.T.hum && p === p.T.ctrl ? '#ffffff' : c); }
+  const b = Z.ball; pxRect(g, Math.round(fx(fzCl(b.x, 0, FZ.L))), Math.round(fy(fzCl(b.y, 0, FZ.D))), 2, 2, Math.floor(Z.t * 4) % 2 ? '#ffd84a' : '#ffffff');
+}
+function fzDrawMsg(Z, g) {
+  const m = Z.msg; if (!m) return; const W = Z.run.W;
+  const a = Math.min(1, (m.max - m.life) * 8); let s = m.sc; while (s > 1 && pxTextW(m.t, s) > W - 12) s--;
+  const y = m.y != null ? m.y : Math.round(72 - s * 3.5 + (1 - a) * 6);
+  fzTextO(g, m.t, W / 2, y, m.col, s, '#1d2440');
+  if (m.sub) fzWrap(m.sub, W - 12).forEach((l, i) => fzTextO(g, l, W / 2, y + s * 7 + 6 + i * 10, '#ffffff', 1, '#1d2440'));
+}
+function fzHudDom(Z) {
+  const T = Z.T; if (!T || Z.state === 'menu') return;
+  const key = Z.score.join(':') + fzMin(Z) + T[0].sup + T[1].sup + Z.state;
+  if (key === Z.hudKey) return; Z.hudKey = key;
+  pxHud(`${T[0].sup || T[1].sup ? '<span class="fz-sup">⚡</span>' : ''}<span class="fz-hs">${esc(T[0].d.e)} <b>${Z.score[0]}:${Z.score[1]}</b> ${esc(T[1].d.e)}</span><span class="fz-ht">${Z.state === 'pens' ? '🎯' : '⏱ ' + fzMin(Z) + '’'}</span>`);
+}
+function fzDraw(Z, g) {
+  if (Z.state === 'pens' && Z.pens) { fzPensDraw(Z, g); return; }
+  const run = Z.run, key = Z.T ? Z.T[0].kit.c + Z.T[1].kit.c : 'menu' + fzS().team.c;
+  if (!Z.bg || Z.bgKey !== key) { Z.bgKey = key; fzPaintBg(Z); }
+  g.save(); if (Z.shake > 0) g.translate(Math.round((Math.random() * 2 - 1) * Z.shake * 6), Math.round((Math.random() * 2 - 1) * Z.shake * 4));
+  fzDrawField(Z, g); fzDrawFans(Z, g);
+  fzGoalDraw(Z, g, 0, false); fzGoalDraw(Z, g, 1, false);
+  if (Z.T) {
+    g.fillStyle = 'rgba(10,40,20,.35)';
+    for (const p of Z.ps) { const sx = fzSX(Z, p.x, p.y), sy = fzSY(p.y); if (sx > -20 && sx < run.W + 20) pxEll(g, sx - 6, sy - 2, 12, 4); }
+    for (const H of Z.H) if (H && Z.T[H.team].hum === H && Z.state !== 'cele') { const p = Z.T[H.team].ctrl; if (p) g.drawImage(fzRingSpr(H.team === 0 ? '#ffd84a' : '#3fd1c8'), Math.round(fzSX(Z, p.x, p.y) - 9), Math.round(fzSY(p.y) - 4)); }
+    const b = Z.ball;
+    if (Z.state !== 'cele') { g.fillStyle = 'rgba(10,40,20,.4)'; pxEll(g, fzSX(Z, b.x, b.y) - 3, fzSY(b.y) - 1, 6, 3); }
+    const E = Z.ps.slice().sort((a, c) => a.y - c.y); let bi = E.findIndex(p => p.y > b.y + .5); if (bi < 0) bi = E.length; E.splice(bi, 0, null);
+    for (const p of E) { if (p) fzDrawP(Z, g, p); else fzDrawBall(Z, g); }
+  }
+  fzGoalDraw(Z, g, 0, true); fzGoalDraw(Z, g, 1, true);
+  pxPartsDraw(g, run);
+  if (Z.T && Z.state !== 'cele') fzDrawMarks(Z, g);
+  g.restore();
+  if (Z.T && Z.state !== 'cele') { fzDrawBoard(Z, g); fzDrawRadar(Z, g); }
+  fzDrawMsg(Z, g);
+}
+
+
+function fzFinish(Z) {
+  const [a, b] = Z.score, T = Z.T;
+  Z.state = 'end';
+  if (Z.cup && a === b && !Z.pensDone) {
+    fzPanel(Z, `<h2>Unentschieden!</h2><div class="px-bigt">${T[0].d.e} ${a} : ${b} ${T[1].d.e}</div><p>Im Pokal muss es einen Sieger geben. Jetzt entscheidet das <b>Elfmeterschießen</b>!</p>`,
+      [['Zum Elfmeterschießen 🎯', () => fzPensStart(Z, { inMatch: true, done: (w, sc) => { Z.pensDone = { w, sc }; fzFinish(Z); } }), true]]);
+    return;
+  }
+  const z = fzS(), st = z.st, pens = Z.pensDone, w = a > b ? 0 : a < b ? 1 : pens ? pens.w : -1;
+  if (Z.duo) st.duo++; else { st.sp++; st.tf += a; st.tg += b; if (w === 0) st.s++; else if (w === 1) st.n++; else st.u++; }
+  const q = Z.askN ? Z.okN / Z.askN : 0;
+  let stars = w === 0 ? 2 : 1; if (a >= 3 || q >= .75) stars++; if (w === 0 && a - b >= 3) stars++; stars = fzCl(stars, 1, 3);
+  const pts = Z.duo ? 12 + (a + b) * 2 : a * 5 + (w === 0 ? 15 : w === -1 ? 8 : 4) + Z.okN * 2, coins = !Z.duo && w === 0 ? 1 : 0;
+  pxReward(pts, coins); save();
+  const res = { a, b, w, pens: pens ? pens.sc : null }; Z.pensDone = null; Z.lastRes = res;
+  const nm = (S.profile && S.profile.name) || '';
+  const goals = side => Z.goals.filter(x => x.team === side).map(x => `${x.own ? 'Eigentor' : esc(fzNice(x.name))} ${x.min}’`).join(', ');
+  let title, say;
+  if (Z.duo) { title = w === -1 ? 'Unentschieden! 🤝' : `Spieler ${w + 1} gewinnt! 🏆`; say = 'Toll gespielt, ihr zwei! Gebt euch die Hand. 🤝'; }
+  else {
+    title = w === 0 ? 'Gewonnen! 🏆' : w === -1 ? 'Unentschieden! 🤝' : b - a === 1 || pens ? 'Ganz knapp!' : 'Gut gekämpft!';
+    say = w === 0 ? `Dein Team jubelt. Toll gespielt${nm ? ', ' + esc(nm) : ''}! 🎉` : w === -1 ? 'Beide Teams waren richtig stark. Super gekämpft! 💪' : 'Heute hatte der Gegner Glück. Beim nächsten Mal klappt es! 💪';
+  }
+  const lines = [say], g0 = goals(0), g1 = goals(1);
+  if (g0 || g1) lines.push(`⚽ ${g0 ? `<b>${esc(T[0].k)}</b> ${g0}` : ''}${g0 && g1 ? ' · ' : ''}${g1 ? `<b>${esc(T[1].k)}</b> ${g1}` : ''}`);
+  if (pens) lines.push(`🎯 Elfmeterschießen ${pens.sc[0]} : ${pens.sc[1]}`);
+  if (!Z.duo && Z.askN) lines.push(`📣 Trainerfragen: <b>${Z.okN} von ${Z.askN}</b> richtig`);
+  lines.push(`+${pts} Punkte${coins ? ' · +1 🪙' : ''}`);
+  let btns;
+  if (Z.after) btns = [['Weiter ▶', () => Z.after(res), true]];
+  else if (Z.duo) btns = [['🔁 Nochmal', () => fzMatch(Z, { mode: 'duo', opp: Z.oppId, duo: true }), true], ['Menü', () => fzMenu(Z)]];
+  else btns = [['🔁 Nochmal', () => fzMatch(Z, { mode: 'freund', opp: Z.oppId }), true], ['Anderer Gegner', () => fzPick(Z, 'Gegner aussuchen', id => fzMatch(Z, { mode: 'freund', opp: id }))], ['Menü', () => fzMenu(Z)]];
+  const sts = Z.duo ? '' : `<div class="px-stars" aria-label="${stars} von 3 Sternen">${[0, 1, 2].map(i => `<span class="${i < stars ? 'on' : ''}">★</span>`).join('')}</div>`;
+  fzPanel(Z, `<h2>${title}</h2><div class="px-bigt">${T[0].d.e} ${a} : ${b} ${T[1].d.e}</div>${sts}${lines.map(l => `<p>${l}</p>`).join('')}`, btns, { cls: 'fz-end' });
+  if (w === 0 && !Z.duo) pxSfx.win();
+}
+
+function fzCele(Z, kind, html) {
+  const T = Z.T; if (!T) return fzMenu(Z);
+  Z.state = 'cele'; Z.celeK = kind; const mid = FZ.D / 2;
+  T[0].ps.forEach((p, i) => Object.assign(p, { x: FZ.L / 2 - 40 + i * 20, y: mid + 2, vx: 0, vy: 0, fx: 1, dx: 1, cheer: 99, z: 0, slide: 0, down: 0, stun: 0, dive: false, kickT: 0 }));
+  T[1].ps.forEach((p, i) => Object.assign(p, { x: FZ.L / 2 - 110 + (i % 2 ? 230 : 0) + i * 6, y: mid - 70 + i * 9, vx: 0, vy: 0, cheer: 0, slide: 0, down: 0, stun: 0, dive: false, kickT: 0 }));
+  Object.assign(Z.ball, { x: FZ.L / 2, y: mid, vx: 0, vy: 0, z: 0, owner: null });
+  fzMsg(Z, kind === 'pokal' ? 'POKALSIEGER!' : 'MEISTER!', '#ffd84a', 1e6, 4, fzS().team.n); Z.msg.y = 14; fzPads(Z, 0);
+  fzConfetti(Z, 80, T[0]); pxSfx.win();
+  fzPanel(Z, html, [['Weiter ▶', () => fzMenu(Z), true]], { low: true, live: true, cls: 'fz-cele' });
+}
+function fzCeleStep(Z, dt) {
+  for (const p of Z.T[0].ps) if (p.z === 0 && Math.random() < dt * 2.5) p.vz = 90 + Math.random() * 40;
+  if (Math.random() < dt * 6) fzConfetti(Z, 3, Z.T[0]);
+  Z.cheer[0] = 1;
+}
+
+
+function fzLigaNew() {
+  const ids = ['own', ...FZ_TEAMS.map(t => t.id)], n = ids.length, rot = ids.slice(1), fx = [];
+  for (let r = 0; r < n - 1; r++) { const arr = [ids[0], ...rot], day = []; for (let i = 0; i < n / 2; i++) day.push([arr[i], arr[n - 1 - i]]); fx.push(day); rot.unshift(rot.pop()); }
+  const tab = {}; ids.forEach(id => { tab[id] = [0, 0, 0, 0, 0, 0, 0]; });
+  return { teams: ids, fx: R.shuffle(fx), day: 0, tab, last: null };
+}
+function fzLigaRec(lg, a, b, ga, gb) {
+  const A = lg.tab[a], B = lg.tab[b]; A[0]++; B[0]++; A[4] += ga; A[5] += gb; B[4] += gb; B[5] += ga;
+  if (ga > gb) { A[1]++; B[3]++; A[6] += 3; } else if (ga < gb) { B[1]++; A[3]++; B[6] += 3; } else { A[2]++; B[2]++; A[6]++; B[6]++; }
+}
+function fzLigaSort(lg) { return lg.teams.slice().sort((x, y) => { const A = lg.tab[x], B = lg.tab[y]; return B[6] - A[6] || (B[4] - B[5]) - (A[4] - A[5]) || B[4] - A[4] || (x === 'own' ? -1 : y === 'own' ? 1 : x.localeCompare(y)); }); }
+function fzLigaPlatz(lg) { return fzLigaSort(lg).indexOf('own') + 1; }
+function fzSimGoals(sa, sb) { const lam = fzCl(1.35 + (sa - sb) * .17, .3, 3.2); let k = 0, p = Math.exp(-lam), s = p; const u = Math.random(); while (u > s && k < 9) { k++; p *= lam / k; s += p; } return k; }
+function fzTName(id) { const d = fzDef(id); return `${d.e} ${esc(fzNice(d.n))}`; }
+function fzLigaTab(lg) {
+  return `<div class="fz-tabw"><table class="fz-tab"><thead><tr><th>#</th><th class="l">Team</th><th>Sp</th><th>S</th><th>U</th><th>N</th><th>Tore</th><th>Pkt</th></tr></thead><tbody>${fzLigaSort(lg).map((id, i) => { const t = lg.tab[id]; return `<tr class="${id === 'own' ? 'fz-me' : ''}"><td>${i + 1}</td><td class="l">${fzTName(id)}</td><td>${t[0]}</td><td>${t[1]}</td><td>${t[2]}</td><td>${t[3]}</td><td>${t[4]}:${t[5]}</td><td><b>${t[6]}</b></td></tr>`; }).join('')}</tbody></table></div>`;
+}
+function fzLiga(Z) {
+  const z = fzS(); if (!z.liga) { z.liga = fzLigaNew(); z.st.saison++; save(); }
+  const lg = z.liga; if (lg.day >= 7) return fzLigaEnde(Z);
+  const m = lg.fx[lg.day].find(p => p.includes('own')), opp = m[0] === 'own' ? m[1] : m[0], d = fzDef(opp);
+  const last = lg.last ? `<div class="fz-res"><b>Ergebnisse vom ${lg.day}. Spieltag</b>${lg.last.map(r => `<span>${fzTName(r[0])} <b>${r[2]}:${r[3]}</b> ${fzTName(r[1])}</span>`).join('')}</div>` : '';
+  fzPanel(Z, `<h2>📋 Liga · Spieltag ${lg.day + 1} von 7</h2>${last}${fzLigaTab(lg)}<p class="fz-sub">Nächstes Spiel: <b>${esc(fzNice(z.team.n))}</b> gegen <b>${fzTName(opp)}</b> ${fzDots(d.st)}</p>`,
+    [['Anpfiff ▶', () => fzMatch(Z, { mode: 'liga', opp, after: r => fzLigaNach(Z, opp, r) }), true], ['Neue Saison', () => fzLigaReset(Z)], ['Menü', () => fzMenu(Z)]], { cls: 'fz-liga' });
+}
+function fzLigaReset(Z) {
+  fzPanel(Z, '<h2>Neue Saison?</h2><p>Die Tabelle fängt dann wieder bei null an.</p>', [['Ja, neu starten', () => { const z = fzS(); z.liga = null; save(); fzLiga(Z); }, true], ['Nein, zurück', () => fzLiga(Z)]]);
+}
+function fzLigaNach(Z, opp, r) {
+  const z = fzS(), lg = z.liga; if (!lg) return fzMenu(Z);
+  const day = lg.fx[lg.day], last = [];
+  for (const [a, b] of day) {
+    let ga, gb;
+    if (a === 'own' || b === 'own') { const own = a === 'own'; ga = own ? r.a : r.b; gb = own ? r.b : r.a; }
+    else { ga = fzSimGoals(fzDef(a).st, fzDef(b).st); gb = fzSimGoals(fzDef(b).st, fzDef(a).st); }
+    fzLigaRec(lg, a, b, ga, gb); last.push([a, b, ga, gb]);
+  }
+  lg.last = last; lg.day++; save();
+  if (lg.day >= 7) fzLigaEnde(Z); else fzLiga(Z);
+}
+function fzLigaEnde(Z) {
+  const z = fzS(), lg = z.liga, pl = fzLigaPlatz(lg), tab = fzLigaTab(lg);
+  z.liga = null;
+  if (pl === 1) { z.st.meister++; pxReward(40, 2); save(); return fzCele(Z, 'meister', `<h2>🏆 Meister!</h2><p><b>${esc(fzNice(z.team.n))}</b> steht ganz oben in der Tabelle. Was für eine Saison! 🎉</p><p class="fz-sub">+40 Punkte · +2 🪙</p>`); }
+  save();
+  const say = pl <= 3 ? `Platz ${pl}! Ein richtig starker Platz ganz oben. 🥈` : `Platz ${pl}. Nächste Saison greift ihr wieder an! 💪`;
+  fzPanel(Z, `<h2>Saison vorbei!</h2><p>${say}</p>${tab}`, [['Neue Saison ▶', () => fzLiga(Z), true], ['Menü', () => fzMenu(Z)]], { cls: 'fz-liga' });
+}
+
+
+function fzPokalNew() { return { r: 0, opp: R.sample(FZ_TEAMS, 3).sort((a, b) => a.st - b.st).map(t => t.id) }; }
+function fzPokal(Z) {
+  const z = fzS(); if (!z.pokal) { z.pokal = fzPokalNew(); save(); }
+  const pk = z.pokal, opp = pk.opp[pk.r];
+  const path = FZ_RUNDEN.map((t, i) => `<li class="${i < pk.r ? 'ok' : i === pk.r ? 'now' : ''}"><b>${t}</b><span>${i < pk.r ? '✅ ' : ''}${fzTName(pk.opp[i])}</span></li>`).join('');
+  fzPanel(Z, `<h2>🏆 Pokal</h2><ol class="fz-path">${path}</ol><p class="fz-sub">Im Pokal muss es einen Sieger geben. Bei Unentschieden entscheidet ein Elfmeterschießen.</p>`,
+    [[`${FZ_RUNDEN[pk.r]}: Anpfiff ▶`, () => fzMatch(Z, { mode: 'pokal', opp, cup: true, after: r => fzPokalNach(Z, r) }), true], ['Menü', () => fzMenu(Z)]], { cls: 'fz-pokal' });
+}
+function fzPokalNach(Z, r) {
+  const z = fzS(), pk = z.pokal; if (!pk) return fzMenu(Z);
+  if (r.w === 0) {
+    pk.r++;
+    if (pk.r >= 3) { z.pokal = null; z.st.pokal++; pxReward(40, 2); save(); return fzCele(Z, 'pokal', `<h2>🥇 Pokalsieger!</h2><p><b>${esc(fzNice(z.team.n))}</b> hat das Finale gewonnen. Lumi hält den Pokal hoch! 🎉</p><p class="fz-sub">+40 Punkte · +2 🪙</p>`); }
+    save(); return fzPokal(Z);
+  }
+  const rd = FZ_RUNDEN[pk.r]; z.pokal = null; save();
+  fzPanel(Z, `<h2>Leider ausgeschieden</h2><p>Im ${rd} war heute Schluss. Das war trotzdem ein toller Pokallauf! 💪</p>`, [['Neuer Pokal ▶', () => fzPokal(Z), true], ['Menü', () => fzMenu(Z)]]);
+}
+
+
+function fzPensStart(Z, o) {
+  fzPanelHide(Z);
+  if (!o.inMatch) { Z.mode = o.duo ? 'duo' : 'elf'; Z.oppId = o.opp; Z.after = null; Z.cup = false; fzSetup(Z, fzOwnDef(), fzDef(o.opp), o.duo); Z.score = [0, 0]; Z.goals = []; Z.askN = 0; Z.okN = 0; Z.half = 1; Z.HALF = 60; Z.time = 60; }
+  const P = Z.pens = { n: [0, 0], g: [0, 0], hist: [[], []], turn: 0, phase: 'intro', t: 1.6, sd: false, ax: 0, ay: .45, pw: 0, charging: false, kd: 0, keeperPick: null, res: '', fly: 0, run: 0, gkX: 0, gkY: 0, sup: false, inMatch: !!o.inMatch, done: o.done || null, order: [4, 3, 1, 2, 0], who: -1, role: '', hs: false, hk: false };
+  Z.state = 'pens'; Z.run.parts = [];
+  for (const H of Z.H) if (H) { H.aWas = H.bWas = true; H.hit.a = H.hit.b = false; H.charging = false; H.lab = ''; }
+  fzMsg(Z, 'ELFMETERSCHIESSEN', '#ffd84a', 1.6, 2, '5 SCHÜSSE FÜR JEDES TEAM');
+  if (!Z.auto && !Z.duo && Z.H[0]) {
+    P.phase = 'ask';
+    pxAfter(Z.run, 300, () => { Z.askN++; pxAsk(Z.run, pxTask(fzS().fach), ok => { if (ok) { P.sup = true; Z.okN++; } P.phase = 'intro'; P.t = 1.2; if (ok) fzMsg(Z, 'SUPERSCHUSS BEREIT!', '#ffd84a', 1.2, 2, 'DEIN ERSTER ELFMETER IST UNHALTBAR'); }, { title: '📣 Trainerfrage', sub: 'Richtig = ⚡ Superschuss beim ersten Elfmeter!' }); });
+  }
+}
+function fzPensNext(Z) {
+  const P = Z.pens, sT = P.turn, kT = 1 - sT;
+  P.shooter = Z.T[sT].ps[P.order[P.n[sT] % 5]]; P.keeper = Z.T[kT].ps[0];
+  Object.assign(P, { ax: 0, ay: .45, pw: 0, charging: false, kd: 0, keeperPick: null, res: '', fly: 0, run: 0, gkX: 0, gkY: 0 });
+  P.hs = !!Z.T[sT].hum; P.hk = !!Z.T[kT].hum;
+  if (P.hk && P.hs) { P.phase = 'keep2'; P.who = kT; P.role = 'keep'; P.t = 5; fzMsg(Z, `SPIELER ${kT + 1} HÄLT`, '#3fd1c8', 1.6, 2, `SPIELER ${sT + 1}: NICHT HINSCHAUEN!`); }
+  else if (P.hk) { P.phase = 'keep'; P.who = kT; P.role = 'keep'; P.t = 2.4; }
+  else if (P.hs) { P.phase = 'aim'; P.who = sT; P.role = 'shoot'; P.t = 0; }
+  else { P.phase = 'airun'; P.who = -1; P.role = ''; P.t = .8; }
+  for (const H of Z.H) if (H) { H.aWas = H.bWas = true; H.hit.a = H.hit.b = false; }
+}
+function fzPensUpdate(Z, dt) {
+  const P = Z.pens; if (!P) return;
+  for (let i = 0; i < 2; i++) Z.cheer[i] = Math.max(0, Z.cheer[i] - dt);
+  if (Z.msg && (Z.msg.life -= dt) <= 0) Z.msg = null;
+  const H = P.who >= 0 ? Z.H[P.who] : null, inp = H ? fzInDir(H) : [0, 0, 0], B = H ? !!(H.t.b || H.k.b) : false, bP = H ? (B && !H.bWas) || H.hit.b : false;
+  if (H) { H.bWas = B; H.hit.a = H.hit.b = false; }
+  if (P.phase === 'intro') { if ((P.t -= dt) <= 0) fzPensNext(Z); }
+  else if (P.phase === 'keep' || P.phase === 'keep2') {
+    if (inp[2] > .5) { P.keeperPick = Math.abs(inp[0]) > .45 ? Math.sign(inp[0]) : 0; if (P.phase === 'keep') P.t = Math.min(P.t, .6); }
+    if (bP && P.keeperPick == null) { P.keeperPick = 0; if (P.phase === 'keep') P.t = Math.min(P.t, .6); }
+    P.t -= dt;
+    if (P.phase === 'keep2') { if (P.keeperPick != null || P.t <= 0) { if (P.keeperPick == null) P.keeperPick = 0; P.phase = 'aim'; P.who = P.turn; P.role = 'shoot'; fzMsg(Z, `SPIELER ${P.turn + 1} SCHIESST`, '#ffd84a', 1.2, 2, 'DER TORWART HAT GEWÄHLT'); for (const h of Z.H) if (h) { h.bWas = true; h.hit.b = false; } } }
+    else if (P.t <= 0) { fzPensAI(Z); P.phase = 'run'; P.t = .5; }
+  } else if (P.phase === 'aim') {
+    P.ax = fzCl(P.ax + inp[0] * dt * 1.4, -1.15, 1.15); P.ay = fzCl(P.ay - inp[1] * dt * 1.2, 0, 1.15);
+    if (B) { if (!P.charging) { P.charging = true; P.pw = 0; } P.pw = Math.min(1, P.pw + dt); }
+    else if (P.charging) { P.charging = false; P.phase = 'run'; P.t = .5; }
+  } else if (P.phase === 'airun') { if ((P.t -= dt) <= 0) { fzPensAI(Z); P.phase = 'run'; P.t = .5; } }
+  else if (P.phase === 'run') { P.run = fzCl(1 - P.t / .5, 0, 1); if ((P.t -= dt) <= 0) fzPensKick(Z); }
+  else if (P.phase === 'fly') {
+    P.fly = Math.min(1, P.fly + dt / .42);
+    P.gkX += (P.kd * 44 - P.gkX) * Math.min(1, dt * 9); P.gkY += ((P.sy > .55 ? 10 : 3) - P.gkY) * Math.min(1, dt * 9);
+    if (P.fly >= 1) fzPensResult(Z);
+  } else if (P.phase === 'res') { if ((P.t -= dt) <= 0) fzPensAfter(Z); }
+}
+function fzPensTap(Z, x, y, ph) {
+  const P = Z.pens; if (!P || ph !== 'down') return;
+  const G = fzPG(Z);
+  if (P.phase === 'aim' && P.hs && x > G.gl - 30 && x < G.gr + 30 && y > G.gt - 24 && y < G.gb + 14) { P.ax = fzCl((x - G.cx) / 56, -1.15, 1.15); P.ay = fzCl((G.gb - 2 - y) / 36, 0, 1.15); }
+  else if ((P.phase === 'keep' || P.phase === 'keep2') && P.hk && y > G.gt - 30 && y < G.gb + 40) { P.keeperPick = x < G.cx - 20 ? -1 : x > G.cx + 20 ? 1 : 0; if (P.phase === 'keep') P.t = Math.min(P.t, .6); }
+}
+function fzPensAI(Z) {
+  const P = Z.pens, ai = Z.T[P.turn].ai, zn = R.pick([-1, -1, 0, 1, 1]);
+  P.ax = zn === 0 ? Math.random() * .4 - .2 : zn * (.45 + Math.random() * .42); P.ay = .12 + Math.random() * .7; P.pw = .5 + Math.random() * .35;
+  if (Math.random() < ai.miss) { if (Math.random() < .5) P.ay = 1.12; else P.ax = (P.ax < 0 ? -1 : 1) * 1.12; }
+}
+function fzPensKick(Z) {
+  const P = Z.pens, zone = v => v < -.33 ? -1 : v > .33 ? 1 : 0, pw = P.pw;
+  let x = P.ax, y = P.ay;
+  if (pw > .9) { y += (pw - .9) * 5; x += (Math.random() * 2 - 1) * .12; }
+  P.sx = x; P.sy = y;
+  if (P.hk) P.kd = P.keeperPick == null ? 0 : P.keeperPick;
+  else { const ai = Z.T[1 - P.turn].ai; P.kd = Math.random() < ai.read ? zone(x) : R.pick([-1, 0, 1]); }
+  const supNow = P.sup && P.turn === 0 && !Z.duo; if (supNow) P.sup = false;
+  let res;
+  if (Math.abs(x) > 1.04 || y > 1.04) res = 'miss';
+  else if (Math.abs(x) > .95 || y > .95) res = 'post';
+  else if (supNow) res = 'goal';
+  else if (pw < .28) res = P.kd === zone(x) || P.kd === 0 ? 'save' : 'goal';
+  else if (P.kd === zone(x)) { const hard = Math.abs(x) > .7 && y > .6; res = Math.random() < (hard ? .35 : .78) * (pw > .8 ? .8 : 1) ? 'save' : 'goal'; }
+  else res = 'goal';
+  P.res = res; P.supNow = supNow; P.phase = 'fly'; P.fly = 0; P.charging = false;
+  pxSfx.kick(); if (supNow) { pxSfx.boom(); fzMsg(Z, 'SUPERSCHUSS!', '#ffd84a', .8, 2); }
+}
+function fzPensResult(Z) {
+  const P = Z.pens, t = P.turn, goal = P.res === 'goal', good = Z.duo || (t === 0 ? goal : !goal);
+  P.hist[t].push(goal); P.g[t] += goal ? 1 : 0; P.n[t]++; P.phase = 'res'; P.t = 1.7;
+  const txt = { goal: 'TOR!', save: 'GEHALTEN!', miss: 'DANEBEN!', post: 'PFOSTEN!' }[P.res];
+  fzMsg(Z, txt, goal ? (Z.duo || t === 0 ? '#ffd84a' : '#ffffff') : good ? '#8fd0ff' : '#ffffff', 1.6, 4, P.shooter && goal ? P.shooter.name + ' TRIFFT' : '');
+  if (goal) Z.cheer[t] = 2; else Z.cheer[1 - t] = 2;
+  if (good) { pxSfx.win(); fzConfetti(Z, 30, Z.T[goal ? t : 1 - t]); } else pxSfx.pop();
+}
+function fzPensOver(P) {
+  const [a, b] = P.g, [na, nb] = P.n;
+  if (!P.sd) { if (a > b + (5 - nb) || b > a + (5 - na)) return true; if (na === 5 && nb === 5) { if (a !== b) return true; P.sd = true; } return false; }
+  return na === nb && a !== b;
+}
+function fzPensAfter(Z) {
+  const P = Z.pens;
+  if (!fzPensOver(P)) { P.turn = P.n[0] > P.n[1] ? 1 : 0; return fzPensNext(Z); }
+  const w = P.g[0] > P.g[1] ? 0 : 1, sc = P.g.slice();
+  P.phase = 'done';
+  if (P.done) return P.done(w, sc);
+  const z = fzS(), T = Z.T, pts = Z.duo ? 10 : 6 + sc[0] * 3 + (w === 0 ? 10 : 0), coins = !Z.duo && w === 0 ? 1 : 0;
+  if (Z.duo) z.st.duo++; else if (w === 0) z.st.elf++;
+  pxReward(pts, coins); save();
+  const title = Z.duo ? `Spieler ${w + 1} gewinnt! 🏆` : w === 0 ? 'Gewonnen! 🎯' : 'Ganz knapp!';
+  const say = Z.duo ? 'Was für ein Elfmeterschießen! Gebt euch die Hand. 🤝' : w === 0 ? 'Nerven wie Drahtseile! Super geschossen und gehalten. 🎉' : 'Beim Elfmeterschießen gehört auch Glück dazu. Nächstes Mal! 💪';
+  fzPanel(Z, `<h2>${title}</h2><div class="px-bigt">${T[0].d.e} ${sc[0]} : ${sc[1]} ${T[1].d.e}</div><p>${say}</p><p>+${pts} Punkte${coins ? ' · +1 🪙' : ''}</p>`,
+    [['🔁 Nochmal', () => fzPensStart(Z, { opp: Z.oppId, duo: Z.duo }), true], ['Menü', () => fzMenu(Z)]], { cls: 'fz-end' });
+}
+function fzPG(Z) { const W = Z.run.W, cx = Math.round(W / 2); return { cx, gl: cx - 60, gr: cx + 60, gt: 86, gb: 126, spotY: 170 }; }
+function fzPT(G, x, y) { return [G.cx + x * 56, G.gb - 2 - y * 36]; }
+function fzPaintPensBg(Z) {
+  const W = Z.run.W, H = Z.run.H, G = fzPG(Z); if (!Z.pbg) Z.pbg = pxCanvas(W, H)[0]; Z.pbg.width = W; Z.pbg.height = H; Z.pbgKey = Z.bgKey;
+  const g = Z.pbg.getContext('2d'); g.imageSmoothingEnabled = false;
+  pxRect(g, 0, 0, W, H, '#0b1026'); pxRect(g, 0, 0, W, 5, '#141a3a'); pxRect(g, 0, 5, W, 1, '#3a4a80');
+  for (let y = 6; y < 60; y += 4) pxRect(g, 0, y, W, 2, (y >> 2) % 2 ? '#26305c' : '#2b3566');
+  const ad = pxCanvas(W, 9); fzAds(ad[1], 0, 2); g.drawImage(ad[0], 0, 61);
+  for (let k = 0; k < 14; k++) { const ya = 70 + (H - 70) * Math.pow(k / 14, 1.5), yb = 70 + (H - 70) * Math.pow((k + 1) / 14, 1.5); pxRect(g, 0, Math.round(ya), W, Math.ceil(yb - ya) + 1, k % 2 ? '#3fae4f' : '#37a046'); }
+  const rnd = pxRnd(77); for (let i = 0; i < 500; i++) pxRect(g, Math.floor(rnd() * W), 70 + Math.floor(rnd() * (H - 70)), 1, 1, rnd() < .5 ? '#46b857' : '#329a41');
+  const Wl = '#eaf7ec';
+  pxRect(g, 0, G.gb, W, 1, Wl);
+  pxLine(g, G.cx - 86, G.gb, G.cx - 100, G.gb + 16, Wl); pxLine(g, G.cx + 86, G.gb, G.cx + 100, G.gb + 16, Wl); pxRect(g, G.cx - 100, G.gb + 16, 201, 1, Wl);
+  pxLine(g, G.cx - 170, G.gb, G.cx - 230, H, Wl); pxLine(g, G.cx + 170, G.gb, G.cx + 230, H, Wl);
+  pxRect(g, G.cx - 2, G.spotY + 2, 5, 2, Wl);
+  const [c0, c1] = fzFanCols(Z), furs = Object.values(FZ_ANI).map(a => a.f), F = [];
+  for (let row = 0; row < 5; row++) for (let x = 1 + (row % 2) * 4; x < W - 7; x += 8 + Math.floor(rnd() * 2)) { if (rnd() < .07) continue; const team = x < G.cx ? (rnd() < .75 ? 0 : 1) : (rnd() < .75 ? 1 : 0); F.push({ x, y: 7 + row * 10, team, c: team ? c1 : c0, fur: furs[Math.floor(rnd() * furs.length)], ph: rnd() * 6.28 }); }
+  Z.pfans = F;
+}
+function fzPensGoal(Z, g, G, bulge) {
+  const net = 'rgba(235,242,255,.4)', b = bulge ? 3 : 0, il = G.gl + 9, ir = G.gr - 9, it = G.gt + 6 - b, ib = G.gb - 5;
+  g.fillStyle = 'rgba(5,8,26,.35)'; g.fillRect(G.gl, G.gt, G.gr - G.gl, G.gb - G.gt);
+  for (let x = il; x <= ir; x += 6) pxLine(g, x, it, x, ib, net);
+  for (let y = it; y <= ib; y += 5) pxLine(g, il, y, ir, y, net);
+  for (let i = 0; i <= 4; i++) { const yy = G.gt + (G.gb - G.gt) * i / 4, yi = it + (ib - it) * i / 4; pxLine(g, G.gl, yy, il, yi, net); pxLine(g, G.gr, yy, ir, yi, net); }
+  for (let i = 0; i <= 8; i++) { const xx = G.gl + (G.gr - G.gl) * i / 8, xi = il + (ir - il) * i / 8; pxLine(g, xx, G.gt, xi, it, net); }
+  pxRect(g, G.gl - 2, G.gt - 2, G.gr - G.gl + 4, 3, '#ffffff'); pxRect(g, G.gl - 2, G.gt - 2, 3, G.gb - G.gt + 3, '#ffffff'); pxRect(g, G.gr - 1, G.gt - 2, 3, G.gb - G.gt + 3, '#ffffff');
+  pxRect(g, G.gl + 1, G.gt + 1, G.gr - G.gl - 2, 1, '#b9c6dc'); pxRect(g, G.gl + 1, G.gt + 1, 1, G.gb - G.gt - 1, '#b9c6dc');
+}
+function fzPensDraw(Z, g) {
+  const run = Z.run, W = run.W, H = run.H, P = Z.pens, G = fzPG(Z), T = Z.T;
+  if (!Z.pbg || Z.pbg.width !== W || Z.pbgKey !== Z.bgKey) fzPaintPensBg(Z);
+  g.drawImage(Z.pbg, 0, 0);
+  for (const f of Z.pfans || []) { const ch = Z.cheer[f.team] > 0, jy = ch ? -Math.round(Math.abs(Math.sin(Z.t * 9 + f.ph)) * 3) : 0; g.drawImage(fzFanSpr(f.c, f.fur, ch && Math.sin(Z.t * 7 + f.ph) > 0), f.x, f.y + jy); }
+  fzPensGoal(Z, g, G, P.phase === 'res' && P.res === 'goal');
+  const showZones = (P.phase === 'keep' || P.phase === 'keep2') && P.hk;
+  if (showZones) for (let zz = -1; zz <= 1; zz++) { const x0 = zz < 0 ? G.gl : zz > 0 ? G.cx + 20 : G.cx - 20, x1 = zz < 0 ? G.cx - 20 : zz > 0 ? G.gr : G.cx + 20, on = P.phase === 'keep' && P.keeperPick === zz; g.fillStyle = on ? 'rgba(255,216,74,.45)' : 'rgba(255,255,255,.12)'; g.fillRect(x0 + 1, G.gt + 1, x1 - x0 - 2, G.gb - G.gt - 2); }
+  const kp = P.keeper || T[1 - P.turn].ps[0], gx = G.cx + Math.round(P.gkX), gy = G.gb - Math.round(P.gkY);
+  const after = P.phase === 'fly' || P.phase === 'res', pose = after && P.kd ? 'd' : after && P.sy > .6 ? 'vj' : 'v';
+  g.drawImage(fzSprite(kp.look, pose, 0, pose === 'd' && P.kd < 0), gx - 12, gy - 27);
+
+  const [tx, ty] = fzPT(G, fzCl(P.sx || 0, -1.3, 1.3), fzCl(P.sy || 0, 0, 1.3)), sx0 = G.cx, sy0 = G.spotY;
+  let bx = sx0, by = sy0, bs = 2, show = true;
+  if (P.phase === 'fly') { const e = 1 - Math.pow(1 - P.fly, 2); let ex = tx, ey = ty; if (P.res === 'save') { ex = gx + P.kd * 10; ey = Math.min(ty, gy - 14); } bx = sx0 + (ex - sx0) * e; by = sy0 + (ey - sy0) * e - Math.sin(e * Math.PI) * 10; bs = 2 - e; }
+  else if (P.phase === 'res') { const e = 1 - P.t / 1.7; bs = 1; if (P.res === 'goal') { bx = tx; by = Math.min(G.gb - 4, ty + e * 30); } else if (P.res === 'save') { bx = gx + P.kd * 10 + (P.kd || 1) * e * 50; by = gy - 14 + e * 40; } else if (P.res === 'post') { bx = tx - Math.sign(P.sx || 1) * e * 40; by = ty + e * 50; } else show = false; }
+  if (show) { const sp = pxSpr(P.supNow && typeof PXGEN.pxkickball === 'function' ? 'pxkickball_a_0' : 'ball'); g.fillStyle = 'rgba(10,40,20,.35)'; if (bs > 1.2) pxEll(g, sx0 - 6, sy0 + 2, 12, 4); g.drawImage(sp, Math.round(bx - 3 * bs), Math.round(by - 6 * bs), Math.round(6 * bs), Math.round(6 * bs)); }
+
+  const sh = P.shooter || T[P.turn].ps[4], run2 = P.phase === 'run' ? P.run : after ? 1 : 0, shx = G.cx - 58 + Math.round(run2 * 34), shy = H + 2 - Math.round(run2 * 6);
+  g.drawImage(fzSprite(sh.look, 'b', 0, false), shx, shy - 56, 48, 56);
+
+  if (P.phase === 'aim' && P.hs) {
+    const [cx, cy] = fzPT(G, P.ax, P.ay), c = Math.floor(Z.t * 6) % 2 ? '#ffd84a' : '#ffffff';
+    pxRect(g, cx - 5, cy, 4, 1, c); pxRect(g, cx + 2, cy, 4, 1, c); pxRect(g, cx, cy - 5, 1, 4, c); pxRect(g, cx, cy + 2, 1, 4, c); pxRect(g, cx - 1, cy - 1, 3, 3, '#1d2440'); pxRect(g, cx, cy, 1, 1, c);
+    const bx0 = G.gr + 14, bh = 60, by0 = G.gt;
+    pxRect(g, bx0 - 1, by0 - 1, 9, bh + 2, '#1d2440'); pxRect(g, bx0, by0, 7, Math.round(bh * .1), '#ef4b4b'); pxRect(g, bx0, by0 + Math.round(bh * .1), 7, Math.round(bh * .62), '#2fae4f'); pxRect(g, bx0, by0 + Math.round(bh * .72), 7, bh - Math.round(bh * .72), '#9aa7b8');
+    if (P.charging) { const yy = by0 + bh - Math.round(bh * P.pw); pxRect(g, bx0 - 3, yy - 1, 13, 3, '#ffffff'); }
+  }
+
+  pxRect(g, 2, 2, 98, 21, '#05081a'); pxRect(g, 2, 23, 98, 1, '#3a4250');
+  for (let t = 0; t < 2; t++) {
+    const y = 4 + t * 9, x = 4; pxRect(g, x, y, 3, 7, T[t].kit.c); pxText(g, T[t].k, x + 5, y, P.turn === t && P.phase !== 'done' ? '#ffd84a' : '#ffffff', 1);
+    const hs = P.hist[t], n = Math.max(5, hs.length);
+    for (let i = 0; i < Math.min(n, 9); i++) { const v = hs[n > 9 ? i + n - 9 : i]; pxRect(g, x + 26 + i * 6, y + 1, 5, 5, v === true ? '#5cc85c' : v === false ? '#ef4b4b' : '#3a4250'); }
+    pxText(g, String(P.g[t]), x + 89, y, '#ffd84a', 1);
+  }
+
+  let hint = '';
+  if (P.phase === 'aim' && P.hs) hint = P.charging ? 'LOSLASSEN = SCHUSS!' : 'ZIELEN, DANN SCHUSS HALTEN';
+  else if (P.phase === 'keep' && P.hk) hint = 'SPRING! LINKS, MITTE ODER RECHTS';
+  else if (P.phase === 'keep2') hint = `SPIELER ${P.who + 1}: WOHIN SPRINGST DU?`;
+  if (hint) { const ls = fzWrap(hint, W - 120), bw = Math.max(...ls.map(l => pxTextW(l))) + 10, hx = Math.round(Math.max(W / 2, 104 + bw / 2 + 2)); g.fillStyle = 'rgba(5,8,26,.85)'; g.fillRect(Math.round(hx - bw / 2), 30, bw, ls.length * 10 + 5); ls.forEach((l, i) => pxText(g, l, hx, 33 + i * 10, '#ffffff', 1, 'c')); }
+  pxPartsDraw(g, run);
+  fzDrawMsg(Z, g);
+}
+
+
+Object.assign(ACT, {
+  fzbtn: t => { const Z = FZG; if (!Z) return; const b = (Z.btns || [])[Number(t.dataset.i)]; if (!b) return; Sound.tap(); fzPanelHide(Z); b[1](); },
+  fzmode: t => {
+    const Z = FZG; if (!Z) return; Sound.tap(); const m = t.dataset.m;
+    if (m === 'freund') fzPick(Z, 'Gegner aussuchen', id => fzMatch(Z, { mode: 'freund', opp: id }), 'Je mehr Punkte, desto stärker ist das Team.');
+    else if (m === 'liga') fzLiga(Z);
+    else if (m === 'pokal') fzPokal(Z);
+    else if (m === 'elf') fzPick(Z, 'Elfmeterschießen gegen …', id => fzPensStart(Z, { opp: id }));
+    else if (m === 'duo') fzPick(Z, 'Spieler 2: Welches Team?', id => fzDuoWas(Z, id), `Spieler 1 spielt mit ${fzNice(fzS().team.n)}.`);
+    else if (m === 'team') fzTeamEd(Z);
+  },
+  fzopp: t => { const Z = FZG; if (!Z || !Z.pickCb) return; Sound.tap(); const cb = Z.pickCb; Z.pickCb = null; cb(t.dataset.id); },
+  fzduo: t => { const Z = FZG; if (!Z) return; Sound.tap(); const id = t.dataset.id; if (t.dataset.v === 'elf') fzPensStart(Z, { opp: id, duo: true }); else fzMatch(Z, { mode: 'duo', opp: id, duo: true }); },
+  fzlen: t => { const z = fzS(); z.len = t.dataset.v; save(); Sound.tap(); document.querySelectorAll('[data-act="fzlen"]').forEach(b => b.classList.toggle('on', b === t)); },
+  fzfach: t => { const z = fzS(); z.fach = t.dataset.v; save(); Sound.tap(); document.querySelectorAll('[data-act="fzfach"]').forEach(b => b.classList.toggle('on', b === t)); },
+  fzcol: t => { const Z = FZG; if (!Z || !Z.ed) return; fzEdRead(Z); Z.ed[t.dataset.w] = t.dataset.v; Sound.tap(); fzEdRefresh(Z); },
+  fzpat: t => { const Z = FZG; if (!Z || !Z.ed) return; fzEdRead(Z); Z.ed.pat = t.dataset.v; Sound.tap(); fzEdRefresh(Z); }
+});
+
+
+if (!PX_FACH.some(f => f[0] === 'fussball')) PX_FACH.push(['fussball', 'Fußball', '⚽']);
+PXT.fussball = () => {
+  const bank = [].concat(typeof FZ_REGELN !== 'undefined' ? FZ_REGELN : [], typeof FZ_WELT !== 'undefined' ? FZ_WELT : [], typeof FB_KIDS !== 'undefined' ? FB_KIDS : []);
+  const q = R.pick(bank); return { q: q[0], e: q[1], opts: R.shuffle([q[2], ...q[3]]), a: q[2], say: q[0], kind: 'fussball' };
+};
+pxReg({
+  id: 'stadion', t: 'Lumis Fußballstadion', d: 'Eigenes Team, Liga, Pokal und Elfmeter, auch zu zweit', e: '🏟️', i: 'fzicon', tag: 'Sport', o: 3.5,
+  start: () => fzStart(),
+  prog: () => { const z = isObj(pxS().fz) ? pxS().fz : null, st = z && z.st; return st && st.sp ? `${st.s | 0} ${(st.s | 0) === 1 ? 'Sieg' : 'Siege'}${st.meister ? ' · ' + st.meister + '× Meister' : ''}${st.pokal ? ' · ' + st.pokal + '× Pokal' : ''}` : ''; }
+});
+if (typeof PX_NEW !== 'undefined') { PX_NEW.stadion = 'Neu'; delete PX_NEW.abenteuer; }
+
 /*@@src cm.js@@*/
 
 
@@ -71559,6 +73191,176 @@ const K_PAPIER = [
   neu('kfilm', { g: 'k-technik', t: 'Foto & Trickfilm', d: 'Daumenkino, Stop Motion und Zoom', i: '🎬', gen: genSU(K_FILM) });
   neu('kpapier', { g: 'k-technik', t: 'Papierkunst', d: 'Origami, Scherenschnitt und Collage', i: '✂️', gen: genSU(K_PAPIER) });
 })();
+
+/*@@src data_fussball250.js@@*/
+
+
+
+
+
+
+
+
+const FZ_REGELN = [
+  ['Wie viele Spielerinnen hat ein Profiteam gleichzeitig auf dem Platz?', '⚽', '11, mit Torhüterin', ['7, ohne Torhüterin', '15'], 'Elf gegen elf: zehn Feldspielerinnen und eine Torhüterin.'],
+  ['Wie lange dauert ein Profispiel, ohne die Pause?', '⏱️', '2 mal 45 Minuten', ['2 mal 20 Minuten', '3 Stunden'], 'Dazu kommen 15 Minuten Halbzeitpause und oft ein paar Minuten Nachspielzeit.'],
+  ['Der Ball rollt bei den Profis über die Seitenlinie. Wie geht es weiter?', '🙌', 'mit einem Einwurf', ['mit einem Elfmeter', 'mit einem Kopfstand'], 'Beim Einwurf hält man den Ball mit beiden Händen und wirft ihn über den Kopf.'],
+  ['Was gilt beim Einwurf?', '🦶', 'Beide Füße bleiben auf dem Boden.', ['Man darf dabei hochspringen.', 'Man wirft mit nur einer Hand.'], 'Die Füße stehen auf oder hinter der Seitenlinie und berühren den Boden.'],
+  ['Eine Verteidigerin spielt den Ball über die eigene Torlinie ins Aus. Was gibt es?', '🚩', 'eine Ecke für den Gegner', ['einen Einwurf', 'ein Tor für den Gegner'], 'Der Eckstoß wird an der Eckfahne ausgeführt.'],
+  ['Ein Stürmer schießt am Tor vorbei ins Aus. Wie geht es weiter?', '🥅', 'mit einem Abstoß', ['mit einer Ecke', 'mit einem Elfmeter'], 'Beim Abstoß spielt das verteidigende Team den Ball aus dem eigenen Strafraum.'],
+  ['Wann zählt ein Tor?', '✅', 'wenn der Ball ganz über der Torlinie ist', ['wenn der Ball die Linie nur berührt', 'wenn der Ball das Netz von außen trifft'], 'Der ganze Ball muss hinter der Linie sein.'],
+  ['Wie weit ist der Elfmeterpunkt vom Tor entfernt?', '🎯', '11 Meter', ['5 Meter', '30 Meter'], 'Darum heißt er Elfmeter.'],
+  ['Was zeigt die Gelbe Karte?', '🟨', 'eine Verwarnung', ['ein Tor', 'die Halbzeit'], 'Wer in einem Spiel zwei Gelbe Karten bekommt, muss vom Platz.'],
+  ['Was passiert nach einer Roten Karte?', '🟥', 'Der Spieler muss vom Platz.', ['Das Spiel ist sofort vorbei.', 'Es gibt ein Eis für alle.'], 'Das Team spielt dann mit einem Spieler weniger weiter.'],
+  ['Wer darf den Ball mit den Händen fangen?', '🧤', 'die Torhüterin im eigenen Strafraum', ['alle Spielerinnen', 'nur die Kapitänin'], 'Außerhalb des Strafraums darf auch die Torhüterin nicht mit der Hand spielen.'],
+  ['Ein Verteidiger spielt den Ball im eigenen Strafraum absichtlich mit der Hand. Was gibt es?', '✋', 'einen Elfmeter', ['einen Einwurf', 'eine Ecke'], 'Absichtliches Handspiel im eigenen Strafraum wird mit Elfmeter bestraft.'],
+  ['Wie weit müssen die Gegner bei einem Freistoß vom Ball weg sein?', '🧱', '9,15 Meter', ['1 Meter', '50 Meter'], 'Die Gegner stellen sich oft nebeneinander als Mauer auf.'],
+  ['Was macht die Assistentin an der Seitenlinie?', '🚩', 'Sie zeigt mit der Fahne Abseits und Aus an.', ['Sie verkauft Bratwurst.', 'Sie schießt die Ecken.'], 'Früher nannte man sie Linienrichterin.'],
+  ['Was heißt Abseits, ganz einfach erklärt?', '🙅', 'Ein Stürmer wartet beim Pass schon hinter der Abwehr.', ['Ein Spieler sitzt auf der Bank.', 'Der Ball liegt im Netz.'], 'Beim Pass müssen noch zwei Gegner, meist die Torhüterin und eine Abwehrspielerin, gleich weit oder näher am Tor sein.'],
+  ['Kann man aus einem Einwurf direkt ein Tor werfen?', '🤔', 'Nein, so ein Tor zählt nicht.', ['Ja, das zählt doppelt.', 'Ja, aber nur am Sonntag.'], 'Nach einem Einwurf muss erst jemand anderes den Ball berühren.'],
+  ['Kann man aus einer Ecke direkt ein Tor schießen?', '🌀', 'Ja, das zählt.', ['Nein, nie.', 'Nur mit dem Kopf.'], 'So ein Tor heißt „Olympisches Tor“.'],
+  ['Wer macht nach einem Tor den Anstoß?', '🔄', 'das Team, das das Tor bekommen hat', ['das Team, das getroffen hat', 'immer der Schiedsrichter'], 'Der Anstoß ist immer am Mittelpunkt.'],
+  ['Im Pokal steht es auch nach der Verlängerung unentschieden. Was passiert?', '🎯', 'ein Elfmeterschießen', ['Beide Teams scheiden aus.', 'Man spielt bis morgen weiter.'], 'Zuerst schießen beide Teams fünfmal abwechselnd.'],
+  ['Wie lange dauert eine Verlängerung?', '⏱️', '2 mal 15 Minuten', ['2 mal 45 Minuten', '1 Minute'], 'Eine Verlängerung gibt es zum Beispiel im Pokal.'],
+  ['Wie oft darf ein Profiteam in einem Spiel auswechseln?', '🔁', 'bis zu fünfmal', ['gar nicht', 'so oft es will'], 'Fünf Spielerinnen oder Spieler dürfen neu ins Spiel kommen.'],
+  ['Was bekommt ein Spieler, der beim Torjubel sein Trikot auszieht?', '👕', 'eine Gelbe Karte', ['einen Pokal', 'eine Rote Karte'], 'Das steht so in den Fußballregeln.'],
+  ['Was ist die Nachspielzeit?', '⌛', 'Verlorene Zeit wird am Ende dazugegeben.', ['Das Spiel beginnt später.', 'Alle spielen am nächsten Tag weiter.'], 'Zum Beispiel für Verletzungen, Tore und Auswechslungen.'],
+  ['Wer passt im Spiel auf die Regeln auf?', '🧑‍⚖️', 'der Schiedsrichter oder die Schiedsrichterin', ['der Platzwart', 'der Stadionsprecher'], 'Mit der Pfeife wird das Spiel unterbrochen und wieder angepfiffen.'],
+  ['Wer trägt die Binde am Arm?', '💪', 'die Kapitänin oder der Kapitän', ['die Torhüterin', 'der Trainer'], 'Die Kapitänin führt das Team aufs Feld und spricht mit dem Schiedsrichter.'],
+  ['Wie heißt es, wenn eine Person in einem Spiel drei Tore schießt?', '🎩', 'ein Hattrick', ['ein Dreirad', 'ein Dreisprung'], 'Das Wort kommt aus dem Englischen.'],
+  ['Eine Gegnerin liegt verletzt am Boden. Was ist fair?', '🤕', 'den Ball ins Aus spielen', ['schnell ein Tor schießen', 'die Gegnerin auslachen'], 'Danach gibt das andere Team den Ball meistens zurück.'],
+  ['Wie heißt ein Tor, das jemand aus Versehen ins eigene Tor schießt?', '😅', 'ein Eigentor', ['ein Wundertor', 'ein Rückwärtstor'], 'Das kann jedem mal passieren. Kopf hoch!']
+];
+const FZ_WELT = [
+  ['Wie breit ist ein großes Fußballtor?', '🥅', '7,32 Meter', ['2 Meter', '20 Meter'], 'Es ist 2,44 Meter hoch.'],
+  ['Wie hoch ist ein großes Fußballtor?', '📏', '2,44 Meter', ['1 Meter', '5 Meter'], 'Das ist höher als die meisten Erwachsenen.'],
+  ['Wie lang ist ein großes Fußballfeld ungefähr?', '🏟️', 'etwa 105 Meter', ['etwa 10 Meter', 'etwa 1 Kilometer'], 'Es ist ungefähr 68 Meter breit.'],
+  ['Wie oft gibt es eine Fußballweltmeisterschaft?', '🌍', 'alle 4 Jahre', ['jedes Jahr', 'alle 100 Jahre'], 'Das gilt für die Frauen und für die Männer.'],
+  ['In welchen Ländern fand die Weltmeisterschaft der Männer 2026 statt?', '🗺️', 'in den USA, Kanada und Mexiko', ['in Deutschland und Spanien', 'in Japan'], 'Zum ersten Mal spielten 48 Teams mit.'],
+  ['Wie oft wurden die deutschen Fußballfrauen Weltmeisterinnen?', '🏆', '2 mal', ['10 mal', 'noch nie'], 'Das war 2003 und 2007.'],
+  ['Wie oft gewannen die deutschen Fußballfrauen die Europameisterschaft?', '🇪🇺', '8 mal', ['1 mal', 'noch nie'], 'So oft hat das in Europa kein anderes Team geschafft.'],
+  ['Aus welchem Land stammen die heutigen Fußballregeln?', '🇬🇧', 'aus England', ['aus Brasilien', 'aus Japan'], 'Dort schrieb man 1863 die ersten gemeinsamen Regeln auf.'],
+  ['Wie schwer ist ein Profifußball ungefähr?', '⚖️', 'etwa 430 Gramm', ['etwa 5 Kilogramm', 'etwa 10 Gramm'], 'Das ist ungefähr so schwer wie zwei Äpfel und eine Banane.'],
+  ['Warum hat ein Fußballrasen helle und dunkle Streifen?', '🌱', 'weil er in Bahnen gemäht wird', ['weil er angemalt ist', 'weil dort Wolken Schatten machen'], 'Das Gras wird in verschiedene Richtungen gedrückt, darum sieht es hell oder dunkel aus.'],
+  ['Was ist ein Derby?', '🏙️', 'ein Spiel von zwei Teams aus derselben Stadt oder Gegend', ['ein Pferd', 'ein Fußballschuh'], 'Bei einem Derby ist die Stimmung besonders laut.'],
+  ['Wo sitzen die Zuschauer im Stadion?', '🪑', 'auf der Tribüne', ['in der Kabine', 'im Tor'], 'In vielen Stadien gibt es auch Stehplätze.'],
+  ['Wo ziehen sich die Spielerinnen vor dem Spiel um?', '👕', 'in der Kabine', ['auf der Tribüne', 'im Mittelkreis'], 'Dort bespricht die Trainerin auch die Taktik.'],
+  ['Warum haben Fußballschuhe Stollen?', '👟', 'damit man auf dem Rasen nicht ausrutscht', ['damit sie lauter klappern', 'damit der Ball kleben bleibt'], 'Die Stollen greifen in den Boden.'],
+  ['Wie heißt die höchste Liga der Männer in Deutschland?', '🇩🇪', 'die Bundesliga', ['die Weltliga', 'die Sandkastenliga'], 'Dort spielen 18 Teams.'],
+  ['Wie viele Punkte bekommt ein Team in der Liga für einen Sieg?', '3️⃣', '3 Punkte', ['1 Punkt', '10 Punkte'], 'Für ein Unentschieden gibt es 1 Punkt, für eine Niederlage 0 Punkte.'],
+  ['Was ist eine Tabelle im Fußball?', '📋', 'eine Liste, welches Team wie viele Punkte hat', ['ein Tisch für die Trainer', 'ein Stundenplan'], 'Wer am Ende der Saison oben steht, ist Meister.'],
+  ['Was ist der Videobeweis im Fußball?', '📺', 'Eine Szene wird noch einmal am Bildschirm angeschaut.', ['Die Spieler schauen einen Film.', 'Das Spiel wird im Fernsehen gezeigt.'], 'So sollen falsche Entscheidungen seltener werden.'],
+  ['Was macht die Torlinientechnik?', '🔔', 'Sie meldet, ob der Ball ganz im Tor war.', ['Sie malt die Linien neu.', 'Sie zählt die Zuschauer.'], 'Die Uhr des Schiedsrichters zeigt dann sofort „Tor“ an.'],
+  ['Was hilft einem Team im Stadion besonders?', '📣', 'laute Fans, die es anfeuern', ['ein leeres Stadion', 'ein zugeschlossenes Tor'], 'Man spricht dann vom „zwölften Mann“ oder der „zwölften Frau“.']
+];
+
+const FZ_WOERTER = [
+  ['das Tor (der Treffer)', '🥅', 'goal', 'el gol'], ['der Ball', '⚽', 'ball', 'el balón'], ['die Torhüterin', '🧤', 'goalkeeper', 'la portera'],
+  ['der Schiedsrichter', '🧑‍⚖️', 'referee', 'el árbitro'], ['die Mannschaft', '👥', 'team', 'el equipo'], ['das Trikot', '👕', 'shirt', 'la camiseta'],
+  ['der Elfmeter', '🎯', 'penalty', 'el penalti'], ['die Ecke', '🚩', 'corner', 'el córner'], ['das Spielfeld', '🏟️', 'pitch', 'el campo'],
+  ['der Fußballschuh', '👟', 'football boot', 'la bota'], ['der Trainer', '📋', 'coach', 'el entrenador'], ['die Fans', '📣', 'fans', 'los aficionados'],
+  ['schießen', '💥', 'to shoot', 'chutar'], ['der Pass', '➡️', 'pass', 'el pase'], ['gewinnen', '🎉', 'to win', 'ganar'],
+  ['das Spiel', '🗓️', 'match', 'el partido'], ['der Pokal', '🏆', 'cup', 'la copa'], ['die Halbzeit', '⏸️', 'half time', 'el descanso']
+];
+function genFzWoerter(ctx) {
+  const w = ctx.draw(FZ_WOERTER), es = R.chance(.5), i = es ? 3 : 2, lang = es ? 'es-ES' : 'en-GB';
+  const wrong = R.sample(FZ_WOERTER.filter(x => x !== w), 2).map(x => x[i]);
+  return mkChoice({ prompt: `Was heißt „${w[0]}“ auf ${es ? 'Spanisch' : 'Englisch'}?`, visual: bigEmoji(w[1]), answer: w[i], wrong, layout: 'col', after: w[i], afterLang: lang,
+    explain: es ? `Auf Englisch heißt es „${w[2]}“.` : `Auf Spanisch heißt es „${w[3]}“.`, key: 'fzw|' + w[0] + '|' + i });
+}
+
+function genFzMathe(ctx) {
+  const k = klasse(), typ = R.pick(k <= 1 ? ['punkte', 'zeit', 'spieler', 'elf'] : k === 2 ? ['punkte', 'punkte', 'zeit', 'spieler', 'diff', 'elf'] : ['punkte', 'punkte', 'zeit', 'diff', 'elf', 'stadion', 'spieler']);
+  let prompt, r, explain, vis = '⚽';
+  if (typ === 'punkte') {
+    const s = k <= 1 ? R.int(1, 2) : k === 2 ? R.int(1, 5) : R.int(4, 14), u = k <= 1 ? R.int(0, 2) : k === 2 ? R.int(0, 4) : R.int(1, 9);
+    r = 3 * s + u; vis = '📋';
+    prompt = `Für einen Sieg gibt es 3 Punkte, für ein Unentschieden 1 Punkt. Lumis Team hat ${s} ${s === 1 ? 'Sieg' : 'Siege'} und ${u} Unentschieden. Wie viele Punkte sind das?`;
+    explain = `${s} mal 3 Punkte sind ${3 * s}. Dazu ${u} ${u === 1 ? 'Punkt' : 'Punkte'}: zusammen ${r}.`;
+  } else if (typ === 'zeit') {
+    vis = '⏱️';
+    if (k <= 1) { const h = R.pick([5, 10]); r = 2 * h; prompt = `Ein Kinderspiel hat 2 Halbzeiten mit je ${h} Minuten. Wie lange wird gespielt?`; explain = `${h} plus ${h} sind ${r} Minuten.`; }
+    else if (k === 2) { const h = R.pick([15, 20, 25, 30, 45]); r = 2 * h; prompt = `Ein Spiel hat 2 Halbzeiten mit je ${h} Minuten. Wie viele Minuten wird gespielt?`; explain = `2 mal ${h} sind ${r} Minuten.`; }
+    else { const n = R.int(1, 7), extra = R.chance(.5); r = extra ? 90 + n : 120; prompt = extra ? `Ein Profispiel dauert 2 mal 45 Minuten. Dazu kommen ${n} Minuten Nachspielzeit. Wie lange dauert das Spiel?` : 'Ein Pokalspiel dauert 2 mal 45 Minuten und geht in die Verlängerung mit 2 mal 15 Minuten. Wie viele Minuten sind das?'; explain = extra ? `90 plus ${n} sind ${r} Minuten.` : '90 plus 30 sind 120 Minuten.'; }
+  } else if (typ === 'spieler') {
+    vis = '👥';
+    if (k <= 1) { const n = R.pick([3, 4, 5]); r = 2 * n; prompt = `Es spielen ${n} gegen ${n}. Wie viele Kinder sind auf dem Feld?`; explain = `${n} plus ${n} sind ${r}.`; }
+    else { const bank = R.int(3, 9); r = 22 + bank * 2; prompt = `Es spielen 11 gegen 11. Jedes Team hat außerdem ${bank} Spielerinnen auf der Bank. Wie viele sind es zusammen?`; explain = `Auf dem Feld 22, auf den Bänken 2 mal ${bank} = ${bank * 2}. Zusammen ${r}.`; }
+  } else if (typ === 'diff') {
+    vis = '🥅';
+    const b = k === 2 ? R.int(1, 9) : R.int(8, 40), a = b + R.int(1, k === 2 ? 9 : 25); r = a - b;
+    prompt = `Ein Team hat ${a} Tore geschossen und ${b} Tore bekommen. Wie viele Tore hat es mehr geschossen als bekommen?`;
+    explain = `${a} minus ${b} sind ${r}. Das nennt man Tordifferenz.`;
+  } else if (typ === 'elf') {
+    vis = '🎯';
+    const n = 5, a = R.int(k <= 1 ? 2 : 1, 5); r = n - a;
+    prompt = `Beim Elfmeterschießen schießt Lumis Team ${n} mal. ${a} ${a === 1 ? 'Schuss geht' : 'Schüsse gehen'} ins Tor. Wie viele Schüsse gehen nicht ins Tor?`;
+    explain = `${n} minus ${a} sind ${r}.`;
+  } else {
+    vis = '🏟️';
+    const blocks = R.int(2, k >= 4 ? 9 : 6), per = R.pick(k >= 4 ? [250, 500, 1000, 1500] : [100, 200, 300, 500]); r = blocks * per;
+    prompt = `Eine Tribüne hat ${blocks} Blöcke mit je ${fmtN(per)} Plätzen. Wie viele Plätze sind das?`;
+    explain = `${blocks} mal ${fmtN(per)} sind ${fmtN(r)}.`;
+  }
+  const step = r >= 200 ? (r >= 2000 ? 500 : 100) : 1;
+  const wrong = [...new Set([r + step, r - step, r + 2 * step, r + 3 * step, r - 2 * step].filter(x => x >= 0 && x !== r))].slice(0, 2);
+  return mkChoice({ prompt, visual: bigEmoji(vis), answer: fmtN(r), wrong: wrong.map(fmtN), layout: 'row3', explain, key: 'fzm|' + prompt });
+}
+(function () {
+  if (typeof GAMES === 'undefined') return;
+  if (typeof GROUPS !== 'undefined' && !GROUPS['w-fussball']) GROUPS['w-fussball'] = { w: 'wissen', t: 'Fußballwissen' };
+  const neu = (id, o) => { if (!GAMES[id]) GAMES[id] = Object.assign({ id, w: 'wissen' }, o); };
+  neu('fzregeln', { g: 'w-fussball', t: 'Fußballregeln', d: 'Einwurf, Ecke, Elfmeter und Karten', i: '🟨', gen: genSU(FZ_REGELN) });
+  neu('fzwelt', { g: 'w-fussball', t: 'Stadion & Fußballwelt', d: 'Tore, Rasen, Weltmeisterschaft', i: '🏟️', gen: genSU(FZ_WELT) });
+  neu('fzmathe', { g: 'w-fussball', t: 'Fußball rechnen', d: 'Punkte in der Tabelle und Spielzeit', i: '📋', gen: genFzMathe });
+  neu('fzwoerter', { g: 'w-fussball', t: 'Fußballwörter', d: 'Tor, Ball und Torhüterin auf Englisch und Spanisch', i: '🗣️', gen: genFzWoerter });
+})();
+
+/*@@src zufall250.js@@*/
+
+
+
+
+
+const ZUF_W = { mathe: '➕', deutsch: '📚', englisch: '🇬🇧', spanisch: '🇪🇸', sach: '🔬', wissen: '🌍', kunst: '🎨' };
+function zufPool() {
+  return Object.keys(GAMES).filter(id => { const g = GAMES[id]; return g && g.w !== 'meine' && ZUF_W[g.w] && (g.gen || g.type === 'custom' || g.type === 'memory') && g.type !== 'tool' && g.type !== 'blitz' && klStatus(id) === 'ok'; });
+}
+function zufPick(not) {
+  const pool = zufPool(); if (!pool.length) return null;
+  const ws = [...new Set(pool.map(id => GAMES[id].w))], w = R.pick(ws), inW = pool.filter(id => GAMES[id].w === w && id !== not);
+  return R.pick(inW.length ? inW : pool);
+}
+function zufBtn() { return `<button class="zuf-btn" data-act="zufall" aria-label="Zufallsaufgabe würfeln"><span class="zuf-d" aria-hidden="true">🎲</span>Zufallsaufgabe</button>`; }
+function zufCard(id) {
+  const g = GAMES[id], w = WORLDS.find(x => x.id === g.w);
+  return `<span class="zuf-w" style="--w:var(--${g.w}, #3b7cf0)">${ZUF_W[g.w] || '⭐'} ${esc(w ? w.name : '')}</span><span class="zuf-i" aria-hidden="true">${g.i || '⭐'}</span><b class="zuf-t">${esc(g.t)}</b><small class="zuf-s">${esc(g.d || '')}</small>`;
+}
+let ZUF = null;
+function zufStart(rest) {
+  const final = zufPick(ZUF && ZUF.id); if (!final) { toast('Für deine Klasse gibt es gerade keine passenden Spiele.'); return; }
+  ZUF = { id: final, rest: rest == null ? 2 : rest, tok: {} };
+  const tok = ZUF.tok;
+  overlay(`<div class="zuf" aria-live="polite"><h2>🎲 Zufallsaufgabe</h2><p class="muted">Lumi würfelt ein Spiel für ${esc(klName(klasse()))} aus allen Lernwelten.</p>
+    <div class="zuf-slot rolling" id="zufSlot">${zufCard(final)}</div>
+    <div class="acts"><button class="btn" data-act="zufgo" disabled>Los geht's ▶</button><button class="btn ghost" data-act="zufneu" ${ZUF.rest > 0 ? '' : 'disabled'} disabled>🎲 Nochmal würfeln${ZUF.rest > 0 ? ` (${ZUF.rest})` : ''}</button><button class="btn ghost" data-act="closeov">Abbrechen</button></div></div>`);
+  const pool = zufPool(); let n = 0; const N = 11;
+  const tick = () => {
+    if (ZUF === null || ZUF.tok !== tok || !document.getElementById('zufSlot')) return;
+    const slot = document.getElementById('zufSlot');
+    if (n < N) { slot.innerHTML = zufCard(R.pick(pool)); try { Sound.tap(); } catch (e) { } n++; setTimeout(tick, 60 + n * n * 2); return; }
+    slot.innerHTML = zufCard(final); slot.classList.remove('rolling'); slot.classList.add('done');
+    try { Sound.sparkle(); } catch (e) { }
+    const go = document.querySelector('[data-act="zufgo"]'), neu = document.querySelector('[data-act="zufneu"]');
+    if (go) { go.disabled = false; go.focus(); } if (neu && ZUF.rest > 0) neu.disabled = false;
+  };
+  if (window.LW_ZUF_SOFORT) { n = N; tick(); } else setTimeout(tick, 60);
+}
+Object.assign(ACT, {
+  zufall: () => { Sound.unlock(); ZUF = null; zufStart(2); },
+  zufneu: () => { if (!ZUF || ZUF.rest <= 0) return; zufStart(ZUF.rest - 1); },
+  zufgo: () => { if (!ZUF) return; const id = ZUF.id; ZUF = null; closeOverlay(); S.zufN = (S.zufN | 0) + 1; save(); startGame(id); }
+});
 
 /*@@src sicher.js@@*/
 
