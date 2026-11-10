@@ -32,6 +32,7 @@ img { max-width: 100%; }
   --spanisch: #D63C8C; --spanisch-deep: #9E2264; --spanisch-soft: #FCE0EF;
   --wissen: #0E98AC; --wissen-deep: #086C7A; --wissen-soft: #D2F0F4;
   --kunst: #3069D6; --kunst-deep: #1C4BA6; --kunst-soft: #DEE8FB;
+  --werte: #4F8F1C; --werte-deep: #346610; --werte-soft: #E3F2D3;
   --meine: #A943C9; --lwf-deep: #7A2B95; --lwf-soft: #F3E1FA;
   --herz: #E2457A; --herz-deep: #A82A56; --herz-soft: #FDE3EC;
   --blau: #2F6FE0; --blau-deep: #1C4AA8; --blau-soft: #DCE8FD;
@@ -57,6 +58,7 @@ img { max-width: 100%; }
     --spanisch: #E8559E; --spanisch-deep: #8E1D5C; --spanisch-soft: #3D1D2F;
     --wissen: #1FB2C6; --wissen-deep: #08606C; --wissen-soft: #11343A;
     --kunst: #4F86EA; --kunst-deep: #1D4797; --kunst-soft: #182B4D;
+    --werte: #6DAE38; --werte-deep: #3A6A16; --werte-soft: #1E3313;
     --meine: #C066E0; --lwf-deep: #6E2390; --lwf-soft: #33203F;
     --herz: #F0648F; --herz-deep: #8C2047; --herz-soft: #3F1E2B;
     --blau: #5A8FF0; --blau-deep: #1B3F8A; --blau-soft: #1B2A47;
@@ -79,6 +81,7 @@ img { max-width: 100%; }
   --spanisch: #E8559E; --spanisch-deep: #8E1D5C; --spanisch-soft: #3D1D2F;
   --wissen: #1FB2C6; --wissen-deep: #08606C; --wissen-soft: #11343A;
   --kunst: #4F86EA; --kunst-deep: #1D4797; --kunst-soft: #182B4D;
+  --werte: #6DAE38; --werte-deep: #3A6A16; --werte-soft: #1E3313;
   --meine: #C066E0; --lwf-deep: #6E2390; --lwf-soft: #33203F;
   --herz: #F0648F; --herz-deep: #8C2047; --herz-soft: #3F1E2B;
   --blau: #5A8FF0; --blau-deep: #1B3F8A; --blau-soft: #1B2A47;
@@ -110,6 +113,8 @@ p { margin: 0; }
 [data-world="spanisch"] { --w: var(--spanisch); --w-deep: var(--spanisch-deep); --w-soft: var(--spanisch-soft); }
 [data-world="wissen"] { --w: var(--wissen); --w-deep: var(--wissen-deep); --w-soft: var(--wissen-soft); }
 [data-world="kunst"] { --w: var(--kunst); --w-deep: var(--kunst-deep); --w-soft: var(--kunst-soft); }
+[data-world="werte"] { --w: var(--werte); --w-deep: var(--werte-deep); --w-soft: var(--werte-soft); }
+.q-sentence .fall-hl { color: var(--w-deep); text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: 5px; }
 [data-world="meine"] { --w: var(--meine); --w-deep: var(--lwf-deep); --w-soft: var(--lwf-soft); }
 
 
@@ -8061,8 +8066,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '2.51.0';
-  var MAP = {"probe":0,"files":[[8051,"fehler_kern.js"],[8339,null],[8341,"data.js"],[9028,"data_more.js"],[9382,"data_su2.js"],[9603,"data_es.js"],[9942,"data_wissen.js"],[10124,"data_v21.js"],[10748,"data_v24.js"],[11199,"data_v25.js"],[11647,"data_v26.js"],[11746,"data_v29.js"],[12051,"data_v30.js"],[12375,"data_v31.js"],[12675,"data_kunst.js"],[12871,"data_v214.js"],[12974,"data_v216.js"],[13267,"schrift.js"],[13567,"eingabe.js"],[13778,"data_k34m.js"],[14292,"data_k34d.js"],[14625,"data_k34s.js"],[15014,"data_v224.js"],[15882,"data_v225w.js"],[16251,"data_v225k.js"],[16695,"data_herz.js"],[17049,"data_fb226.js"],[17192,"data_tf226.js"],[17399,"data_v227a.js"],[18490,"data_v227b.js"],[19444,"data_h28b.js"],[19484,"data_l28a.js"],[20350,"data_l28b.js"],[21530,"data_schaetz.js"],[22012,"data_party8.js"],[22062,"data_alce.js"],[22722,"data_alce2.js"],[22971,"data_alce3.js"],[23386,"registry.js"],[23899,"app.js"],[25010,"fun.js"],[25590,"fun2.js"],[25906,"atelier.js"],[26280,"kunst225.js"],[26470,"herz.js"],[26834,"reise.js"],[27136,"iglu.js"],[27302,"offline.js"],[27409,"party.js"],[27893,"meine.js"],[28249,"loeffel.js"],[28420,"trend.js"],[28962,"fun228a.js"],[29813,"fun228b.js"],[30474,"kueche.js"],[31513,"stimme.js"],[31568,"klassen.js"],[31717,"freunde_vorab.js"],[31738,"mut.js"],[32158,"schule.js"],[32647,"fussball226.js"],[32969,"schaetzen.js"],[33400,"party8.js"],[34019,"tiere.js"],[34478,"fussball232.js"],[34693,"party8b.js"],[34995,"weg.js"],[35212,"px.js"],[35623,"px_data.js"],[35880,"pxwelt.js"],[35961,"px_abenteuer.js"],[36762,"px_abenteuer2.js"],[37511,"px_ski.js"],[38153,"px_wurf.js"],[38682,"px_insel.js"],[39883,"px_kicker.js"],[40818,"px_eis.js"],[41804,"px_run.js"],[43019,"px_brk.js"],[43981,"px_pol.js"],[45332,"px_frog.js"],[46592,"px_angel.js"],[47907,"px_golf.js"],[48941,"px_tauch.js"],[50206,"px_hockey.js"],[51162,"px_lab.js"],[52497,"px_plopp.js"],[53703,"px_stadion.js"],[55207,"cm.js"],[55697,"cmwelt.js"],[55753,"cm_baeck.js"],[56546,"cm_bahn.js"],[57310,"cm_detek.js"],[58027,"cm_markt.js"],[58740,"ff.js"],[58896,"ff_mathe.js"],[60886,"ff_deutsch.js"],[62474,"ff_sach_a.js"],[64723,"ff_sach_b.js"],[66952,"ff_sprachen.js"],[69360,"zm.js"],[70273,"tt.js"],[70486,"data_tagebuch.js"],[70529,"data_hoerspiel.js"],[70688,"leseecke.js"],[71007,"kt.js"],[71310,"alce.js"],[71473,"alce_aufg.js"],[71643,"formen.js"],[72092,"data_formen.js"],[72333,"data_formen2.js"],[72555,"spielzeit.js"],[72700,"data_faktmeinung.js"],[72819,"data_es248.js"],[73083,"data_en249.js"],[73317,"data_wissen249.js"],[73657,"data_kunst249.js"],[73903,"data_fussball250.js"],[74027,"zufall250.js"],[74073,"sicher.js"],[74257,"stil.js"],[74311,"freunde.js"],[74448,"start.js"],[74458,null],[74468,null]]}; // [[Zeile der Markierung, 'datei.js'], …] – trägt build.py ein
+  var VER = '2.52.0';
+  var MAP = {"probe":0,"files":[[8056,"fehler_kern.js"],[8344,null],[8346,"data.js"],[9033,"data_more.js"],[9387,"data_su2.js"],[9608,"data_es.js"],[9947,"data_wissen.js"],[10129,"data_v21.js"],[10753,"data_v24.js"],[11204,"data_v25.js"],[11652,"data_v26.js"],[11751,"data_v29.js"],[12056,"data_v30.js"],[12380,"data_v31.js"],[12680,"data_kunst.js"],[12876,"data_v214.js"],[12979,"data_v216.js"],[13272,"schrift.js"],[13572,"eingabe.js"],[13783,"data_k34m.js"],[14297,"data_k34d.js"],[14630,"data_k34s.js"],[15019,"data_v224.js"],[15887,"data_v225w.js"],[16256,"data_v225k.js"],[16700,"data_herz.js"],[17054,"data_fb226.js"],[17197,"data_tf226.js"],[17404,"data_v227a.js"],[18495,"data_v227b.js"],[19449,"data_h28b.js"],[19489,"data_l28a.js"],[20355,"data_l28b.js"],[21535,"data_schaetz.js"],[22017,"data_party8.js"],[22067,"data_alce.js"],[22727,"data_alce2.js"],[22976,"data_alce3.js"],[23391,"registry.js"],[23905,"app.js"],[25020,"fun.js"],[25600,"fun2.js"],[25916,"atelier.js"],[26290,"kunst225.js"],[26480,"herz.js"],[26844,"reise.js"],[27146,"iglu.js"],[27312,"offline.js"],[27419,"party.js"],[27903,"meine.js"],[28259,"loeffel.js"],[28430,"trend.js"],[28972,"fun228a.js"],[29823,"fun228b.js"],[30484,"kueche.js"],[31523,"stimme.js"],[31578,"klassen.js"],[31727,"freunde_vorab.js"],[31748,"mut.js"],[32168,"schule.js"],[32657,"fussball226.js"],[32979,"schaetzen.js"],[33410,"party8.js"],[34029,"tiere.js"],[34488,"fussball232.js"],[34703,"party8b.js"],[35005,"weg.js"],[35222,"px.js"],[35633,"px_data.js"],[35890,"pxwelt.js"],[35971,"px_abenteuer.js"],[36772,"px_abenteuer2.js"],[37521,"px_ski.js"],[38163,"px_wurf.js"],[38692,"px_insel.js"],[39893,"px_kicker.js"],[40828,"px_eis.js"],[41814,"px_run.js"],[43029,"px_brk.js"],[43991,"px_pol.js"],[45342,"px_frog.js"],[46602,"px_angel.js"],[47917,"px_golf.js"],[48951,"px_tauch.js"],[50216,"px_hockey.js"],[51172,"px_lab.js"],[52507,"px_plopp.js"],[53713,"px_stadion.js"],[55217,"cm.js"],[55707,"cmwelt.js"],[55763,"cm_baeck.js"],[56556,"cm_bahn.js"],[57320,"cm_detek.js"],[58037,"cm_markt.js"],[58750,"ff.js"],[58906,"ff_mathe.js"],[60896,"ff_deutsch.js"],[62484,"ff_sach_a.js"],[64733,"ff_sach_b.js"],[66962,"ff_sprachen.js"],[69370,"zm.js"],[70283,"tt.js"],[70496,"data_tagebuch.js"],[70539,"data_hoerspiel.js"],[70698,"leseecke.js"],[71017,"kt.js"],[71320,"alce.js"],[71483,"alce_aufg.js"],[71653,"formen.js"],[72102,"data_formen.js"],[72343,"data_formen2.js"],[72565,"spielzeit.js"],[72710,"data_faktmeinung.js"],[72829,"data_es248.js"],[73093,"data_en249.js"],[73327,"data_wissen249.js"],[73667,"data_kunst249.js"],[73913,"data_fussball250.js"],[74037,"data_werte252.js"],[74280,"data_lesen252.js"],[74341,"data_k34_252.js"],[74427,"zufall250.js"],[74473,"sicher.js"],[74657,"stil.js"],[74711,"freunde.js"],[74848,"start.js"],[74858,null],[74868,null]]}; // [[Zeile der Markierung, 'datei.js'], …] – trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -23395,7 +23400,8 @@ const WORLDS = [
   { id: 'spanisch', name: 'Español', tag: 'Spanisch lesen, schreiben & hören', lang: 'es' },
   { id: 'sach', name: 'Sachunterricht', tag: 'Wasser, Wetter, Tiere, Pflanzen, Körper, Technik & mehr' },
   { id: 'wissen', name: 'Allgemeinwissen', tag: 'Länder, Erfindungen, Sport, Umwelt & mehr' },
-  { id: 'kunst', name: 'Kunst', tag: 'Malen, Farben, Künstler, Techniken & Musik' }
+  { id: 'kunst', name: 'Kunst', tag: 'Malen, Farben, Künstler, Techniken & Musik' },
+  { id: 'werte', name: 'Werte & Normen', tag: 'Gefühle, Miteinander, Fairness, Religionen & Nachdenken' }
 ];
 const GROUPS = {
   'm-rechnen': { w: 'mathe', t: 'Rechnen' }, 'm-zahlen': { w: 'mathe', t: 'Zahlen verstehen' }, 'm-groessen': { w: 'mathe', t: 'Uhr, Geld & Größen' }, 'm-geo': { w: 'mathe', t: 'Formen & Raum' }, 'm-daten': { w: 'mathe', t: 'Daten & Zufall' }, 'm-sach': { w: 'mathe', t: 'Sachaufgaben' },
@@ -23900,8 +23906,9 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '2.51.0';
+const APP_VERSION = '2.52.0';
 const CHANGELOG = [
+  { v: "2.52.0", d: "10.11.2026", t: ["Neue Welt Werte & Normen mit 11 Spielen (Gefühle, Regeln, Fairness, Kinderrechte, Religionen, Feste, Philosophieren)", "Lesetexte mit vier Fragen zum selben Text, dazu für Klasse 3 und 4: Die vier Fälle, Adjektive steigern, Zahlenfolgen und Zahlenrätsel"] },
   { v: "2.51.0", d: "10.11.2026", t: ["Lumis Pixel-Abenteuer: vier neue Welten mit je 6 Leveln (Dschungel, Wüste, Wolkenhimmel, Fußballstadt)", "Neu: Lianen zum Schaukeln, Wackelsteine, Aufwind und Rasensprenger, neue Gegner und für jede Welt ein eigener Hut für Lumi"] },
   { v: "2.50.0", d: "10.11.2026", t: ["Neues Pixelspiel: Lumis Fußballstadion mit eigenem Team, Liga, Pokal, Elfmeterschießen und Zu zweit an einem Gerät", "Allgemeinwissen: neue Gruppe Fußballwissen mit Regeln, Stadion, Fußball rechnen und Fußballwörtern auf Englisch und Spanisch", "Startseite: neuer Knopf Zufallsaufgabe, Lumi würfelt ein Spiel aus allen Lernwelten"] },
   { v: "2.49.0", d: "09.11.2026", t: ["Englisch: 15 neue Wortfelder, neue Satzübungen und englische Geschichten zum Lesen und Hören", "Allgemeinwissen: Forscherfragen & Experimente mit 16 Themen, dazu Kanaren, Europa, Olympia, Römer und Piraten", "Kunst: neue Gruppe Musik mit Noten und Instrumenten, Schatten raten, Spiegelbild, Muster, Farbtöne und mehr"] },
@@ -24137,7 +24144,10 @@ const ART = {
     <path d="M24 30 l12 6 M126 30 l-12 6 M20 62 h13 M130 62 h-13 M75 0 v6" stroke="var(--on-color)" stroke-width="5" stroke-linecap="round"/></svg>`,
   kunst: `<svg viewBox="0 0 150 120"><path d="M70 12 C112 10 146 36 140 70 C136 92 112 96 100 86 C90 78 78 84 82 96 C86 108 70 114 56 110 C24 102 6 78 12 52 C18 28 40 13 70 12 Z" class="a-card"/>
     <circle cx="96" cy="64" r="9" class="a-soft"/><circle cx="40" cy="44" r="10" fill="#E53935"/><circle cx="66" cy="32" r="10" fill="#FDD835"/><circle cx="96" cy="34" r="10" fill="#1E63D6"/><circle cx="120" cy="52" r="9" fill="#43A047"/><circle cx="34" cy="74" r="9" fill="#8E24AA"/><circle cx="58" cy="90" r="8" fill="#FB8C00"/>
-    <g transform="rotate(-38 112 96)"><rect x="106" y="60" width="12" height="48" rx="5" fill="#8D5A3B"/><rect x="105" y="54" width="14" height="10" rx="2" fill="#B0BEC5"/><path d="M106 54 Q112 30 118 54 Z" fill="#E53935"/></g></svg>`
+    <g transform="rotate(-38 112 96)"><rect x="106" y="60" width="12" height="48" rx="5" fill="#8D5A3B"/><rect x="105" y="54" width="14" height="10" rx="2" fill="#B0BEC5"/><path d="M106 54 Q112 30 118 54 Z" fill="#E53935"/></g></svg>`,
+  werte: `<svg viewBox="0 0 150 120"><path d="M75 110 C30 82 8 60 12 36 C16 14 44 6 60 20 C66 25 71 31 75 38 C79 31 84 25 90 20 C106 6 134 14 138 36 C142 60 120 82 75 110 Z" class="a-card"/>
+    <path d="M75 30 V84 M46 44 H104" stroke="var(--w-deep)" stroke-width="5" stroke-linecap="round" fill="none"/><path d="M46 44 L34 68 M46 44 L58 68 M104 44 L92 68 M104 44 L116 68" stroke="var(--w-deep)" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M32 68 Q46 82 60 68 Z M90 68 Q104 82 118 68 Z" class="a-soft2"/><rect x="61" y="82" width="28" height="8" rx="4" class="a-ink"/><circle cx="75" cy="28" r="6" class="a-soft2"/></svg>`
 };
 const cardBackSVG = `<svg viewBox="0 0 24 24"><path d="${STAR_D}" fill="currentColor" style="color:var(--on-color)"/></svg>`;
 const giHTML = g => g.txt ? `<b class="gi-t ${g.txt === 2 ? 'sm' : ''}">${g.i}</b>` : g.i;
@@ -27139,7 +27149,7 @@ Object.assign(ACT, {
 
 
 function misWeek(d = new Date()) { const t = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate())), day = t.getUTCDay() || 7; t.setUTCDate(t.getUTCDate() + 4 - day); const y = t.getUTCFullYear(), w = Math.ceil(((t - Date.UTC(y, 0, 1)) / 86400000 + 1) / 7); return `${y}-W${String(w).padStart(2, '0')}`; }
-const MIS_WELT = { mathe: ['🧮', 'Mathe'], deutsch: ['📖', 'Deutsch'], sach: ['🌱', 'Sachunterricht'], englisch: ['🇬🇧', 'Englisch'], spanisch: ['🇪🇸', 'Español'], wissen: ['💡', 'Allgemeinwissen'], kunst: ['🎨', 'Kunst'] };
+const MIS_WELT = { mathe: ['🧮', 'Mathe'], deutsch: ['📖', 'Deutsch'], sach: ['🌱', 'Sachunterricht'], englisch: ['🇬🇧', 'Englisch'], spanisch: ['🇪🇸', 'Español'], wissen: ['💡', 'Allgemeinwissen'], kunst: ['🎨', 'Kunst'], werte: ['🤝', 'Werte & Normen'] };
 const MIS_ALLG = [
   ['runden', '🎮', [6, 8, 10], g => `Spiele ${g} Runden`],
   ['s3', '⭐', [2, 3, 4], g => `Hol ${g}-mal 3 Sterne`],
@@ -74024,13 +74034,403 @@ function genFzMathe(ctx) {
   neu('fzwoerter', { g: 'w-fussball', t: 'Fußballwörter', d: 'Tor, Ball und Torhüterin auf Englisch und Spanisch', i: '🗣️', gen: genFzWoerter });
 })();
 
+/*@@src data_werte252.js@@*/
+
+
+
+
+
+
+
+
+const WN_GEFUEHLE = [
+  ['Lena hat ihr Kuscheltier verloren. Wie fühlt sie sich wohl?', '😢', 'traurig', ['stolz', 'gelangweilt'], 'Wenn wir etwas verlieren, das wir lieb haben, sind wir traurig. Trösten hilft.'],
+  ['Ben hat zum ersten Mal ohne Stützräder Fahrrad fahren geschafft. Wie fühlt er sich?', '🚲', 'stolz', ['wütend', 'ängstlich'], 'Stolz fühlen wir, wenn wir etwas Schweres geschafft haben.'],
+  ['Mia wird im Spiel immer wieder geschubst. Wie fühlt sie sich wohl?', '😠', 'wütend', ['fröhlich', 'müde'], 'Wut ist ein starkes Gefühl. Es ist gut, dann laut „Stopp!“ zu sagen.'],
+  ['Es donnert laut, und Tom ist allein im Zimmer. Wie fühlt er sich wohl?', '⛈️', 'ängstlich', ['stolz', 'neidisch'], 'Angst warnt uns vor Gefahr. Bei Angst hilft es, zu jemandem zu gehen.'],
+  ['Morgen hat Ella Geburtstag. Sie kann kaum schlafen. Wie fühlt sie sich?', '🎂', 'aufgeregt und voller Vorfreude', ['traurig und allein', 'wütend'], 'Vorfreude kribbelt im Bauch. Das ist ein schönes Gefühl.'],
+  ['Paul hat aus Versehen die Vase umgestoßen. Wie fühlt er sich wohl?', '🏺', 'Es ist ihm unangenehm.', ['Er ist stolz darauf.', 'Er ist gelangweilt.'], 'Wenn uns etwas leidtut, hilft es, es zuzugeben und sich zu entschuldigen.'],
+  ['Alle haben ein neues Spiel, nur Jonas nicht. Welches Gefühl kann das sein?', '🎮', 'Neid', ['Stolz', 'Freude'], 'Neid ist ein normales Gefühl. Man kann darüber reden, statt gemein zu werden.'],
+  ['Woran kannst du merken, dass jemand traurig ist?', '🥺', 'Er weint oder schaut nach unten.', ['Er lacht laut.', 'Er hüpft vor Freude.'], 'Gesicht und Körper zeigen oft, wie es uns geht.'],
+  ['Woran kannst du merken, dass jemand wütend ist?', '😤', 'Er ballt die Fäuste und hat ein rotes Gesicht.', ['Er lächelt und summt.', 'Er gähnt.'], 'Bei Wut wird der Körper ganz angespannt.'],
+  ['Was hilft, wenn du sehr wütend bist?', '🌬️', 'Tief durchatmen und bis zehn zählen', ['Etwas kaputt machen', 'Jemanden hauen'], 'Wut ist erlaubt. Hauen und Kaputtmachen sind es nicht.'],
+  ['Was kannst du tun, wenn eine Freundin traurig ist?', '🤗', 'Sie fragen, was los ist, und zuhören', ['Sie auslachen', 'Weggehen und nichts sagen'], 'Zuhören ist oft das beste Geschenk.'],
+  ['Darf man als Junge oder Mädchen weinen?', '💧', 'Ja, alle dürfen weinen.', ['Nur Mädchen', 'Nur Babys'], 'Weinen hilft, wenn wir traurig sind. Das gilt für alle Menschen.'],
+  ['Sind Gefühle wie Angst oder Wut schlecht?', '🎭', 'Nein, alle Gefühle sind wichtig.', ['Ja, man darf sie nie haben.', 'Nur bei Erwachsenen'], 'Jedes Gefühl hat eine Aufgabe. Wichtig ist, was wir dann tun.'],
+  ['Lina darf beim Theaterstück die Hauptrolle spielen. Vorher zittern ihre Knie. Was fühlt sie?', '🎤', 'Lampenfieber', ['Langeweile', 'Hunger'], 'Lampenfieber ist eine Mischung aus Angst und Aufregung. Es vergeht meist schnell.'],
+  ['Wo im Körper spüren viele Menschen Angst?', '🫀', 'Das Herz klopft schneller.', ['Die Haare werden länger.', 'Die Füße werden warm und weich.'], 'Bei Angst klopft das Herz schnell, und der Bauch kribbelt oft.'],
+  ['Max ist nach einem Streit wieder mit Ali versöhnt. Wie fühlt er sich jetzt?', '🤝', 'erleichtert', ['eifersüchtig', 'beleidigt'], 'Wenn ein Streit vorbei ist, fällt uns oft ein Stein vom Herzen.'],
+  ['Wie heißt das Gefühl, wenn du jemanden vermisst, der weit weg ist?', '💌', 'Sehnsucht', ['Schadenfreude', 'Langeweile'], 'Bei Sehnsucht helfen ein Anruf, ein Brief oder ein Foto.'],
+  ['Wie nennt man es, wenn man sich freut, weil einem anderen etwas Schlimmes passiert?', '😏', 'Schadenfreude', ['Mitgefühl', 'Hilfsbereitschaft'], 'Schadenfreude tut dem anderen weh. Mitgefühl ist viel schöner.']
+];
+const WN_ICH = [
+  ['Was macht dich einzigartig?', '🫆', 'Dein Fingerabdruck gibt es nur einmal.', ['Alle Menschen sind genau gleich.', 'Nur deine Schuhgröße'], 'Kein Mensch auf der Welt hat denselben Fingerabdruck wie du.'],
+  ['Was ist eine Stärke?', '💪', 'Etwas, das du gut kannst', ['Etwas, das du nie machst', 'Ein Muskel im Bein'], 'Stärken können ganz verschieden sein: gut zuhören, malen, rechnen oder trösten.'],
+  ['Welcher Satz zeigt eine Stärke?', '🌟', '„Ich kann gut trösten.“', ['„Ich mag keine Erbsen.“', '„Ich bin acht Jahre alt.“'], 'Trösten können ist eine tolle Stärke.'],
+  ['Du hast in einem Diktat viele Fehler gemacht. Was ist ein guter Gedanke?', '📝', '„Aus Fehlern lerne ich. Ich übe weiter.“', ['„Ich kann gar nichts.“', '„Ich höre auf zu lernen.“'], 'Fehler gehören zum Lernen. Jeder Profi hat mal klein angefangen.'],
+  ['Was bedeutet: „Ich mag mich so, wie ich bin“?', '🪞', 'Ich finde mich gut, auch mit Schwächen.', ['Ich bin besser als alle anderen.', 'Ich will ein anderer Mensch sein.'], 'Jeder hat Stärken und Schwächen. Beides gehört zu dir.'],
+  ['Wer kann dir helfen, wenn du ein Problem hast?', '🧑‍🏫', 'Eltern, Lehrerinnen und Lehrer oder Freunde', ['Niemand, das musst du allein schaffen.', 'Nur der Fernseher'], 'Hilfe holen ist mutig und klug.'],
+  ['Was gehört zu deiner Persönlichkeit?', '🧩', 'Was du magst, was du kannst und wie du bist', ['Nur deine Haarfarbe', 'Nur dein Name'], 'Deine Persönlichkeit ist alles, was dich ausmacht.'],
+  ['Was ist ein Wunsch für die Zukunft?', '🔮', '„Später möchte ich Tierärztin werden.“', ['„Gestern war ich im Zoo.“', '„Heute ist Montag.“'], 'Ein Wunsch für die Zukunft zeigt nach vorne.'],
+  ['Woran merkst du, dass du müde bist?', '🥱', 'Du gähnst und kannst dich schlecht konzentrieren.', ['Du hast große Lust zu rennen.', 'Du bekommst Durst auf Saft.'], 'Dein Körper sagt dir, was er braucht. Gut, wenn du auf ihn hörst.'],
+  ['Was bedeutet „Nein“ sagen dürfen?', '✋', 'Du darfst sagen, wenn dir etwas nicht gefällt.', ['Du musst immer alles mitmachen.', 'Nein sagen ist verboten.'], 'Dein Körper gehört dir. Wenn sich etwas falsch anfühlt, darfst du Nein sagen.'],
+  ['Was ist ein gutes Geheimnis?', '🎁', 'Eine Überraschung für Mamas Geburtstag', ['Etwas, das dir Bauchweh macht', 'Etwas, wovor du Angst hast'], 'Ein Geheimnis, das dir Angst oder Bauchweh macht, darfst du immer einem Erwachsenen erzählen, dem du vertraust.'],
+  ['Was hilft dir, mutig zu sein?', '🦁', 'Ein Schritt nach dem anderen und jemand, der dir Mut macht', ['Gar nichts ausprobieren', 'Die Augen ganz fest zuhalten'], 'Mut heißt nicht, keine Angst zu haben. Mut heißt, es trotzdem zu versuchen.'],
+  ['Was macht ein Vorbild aus?', '🏅', 'Es zeigt dir, wie man sich gut verhält.', ['Es ist immer berühmt.', 'Es hat das teuerste Auto.'], 'Vorbilder können auch die Oma, der Trainer oder eine Freundin sein.'],
+  ['Was ist ein guter Weg, wenn du etwas nicht gleich kannst?', '🧗', 'Üben und dir Zeit lassen', ['Sofort aufgeben', 'Die anderen auslachen'], 'Das Gehirn wächst beim Üben. Wirklich!']
+];
+
+const WN_REGELN = [
+  ['Warum gibt es Regeln?', '📜', 'Damit alle gut zusammenleben können', ['Damit Kinder sich langweilen', 'Damit Erwachsene immer recht haben'], 'Regeln schützen uns und machen das Zusammenleben fair.'],
+  ['Welche Regel hilft in einem Gesprächskreis?', '🗣️', 'Wer spricht, wird nicht unterbrochen.', ['Alle reden gleichzeitig.', 'Der Lauteste gewinnt.'], 'So kann jeder seine Meinung sagen, und alle hören zu.'],
+  ['Welche Regel gilt im Straßenverkehr für alle?', '🚦', 'Bei Rot bleibt man stehen.', ['Bei Rot läuft man schnell.', 'Ampeln sind nur für Autos.'], 'Verkehrsregeln schützen Leben.'],
+  ['Was ist eine Klassenregel?', '🏫', 'Wir gehen freundlich miteinander um.', ['Wir werfen mit Radiergummis.', 'Wir räumen nie auf.'], 'Viele Klassen schreiben ihre Regeln gemeinsam auf ein Plakat.'],
+  ['Was passiert, wenn es beim Fußball keine Regeln gibt?', '⚽', 'Es gibt Streit, und das Spiel macht keinen Spaß.', ['Das Spiel wird fairer.', 'Alle gewinnen.'], 'Darum gibt es einen Schiedsrichter, der auf die Regeln achtet.'],
+  ['Wer darf in einer Familie Regeln mitbestimmen?', '👨‍👩‍👧', 'Am besten reden alle gemeinsam darüber.', ['Nur das Haustier', 'Niemand'], 'Wenn alle mitreden dürfen, halten sich alle lieber an die Regeln.'],
+  ['Was ist ein Gesetz?', '⚖️', 'Eine Regel, die für alle im Land gilt', ['Ein Spiel auf dem Schulhof', 'Ein Lied in der Kirche'], 'Gesetze werden in Deutschland vom Parlament beschlossen.'],
+  ['Was bedeutet „Höflichkeit“?', '🎩', 'Bitte und Danke sagen und freundlich sein', ['Andere anrempeln', 'Immer als Erster drängeln'], 'Höfliche Wörter sind kleine Zauberwörter im Alltag.'],
+  ['Wie begrüßt man sich in Deutschland oft?', '👋', 'Man sagt Hallo oder gibt sich die Hand.', ['Man dreht sich weg.', 'Man pfeift laut.'], 'In anderen Ländern verbeugt man sich oder gibt Wangenküsschen. Begrüßungen sind verschieden.'],
+  ['Was ist bei einer Abstimmung in der Klasse fair?', '🙋', 'Jedes Kind hat eine Stimme.', ['Die Großen haben zwei Stimmen.', 'Nur Freunde dürfen abstimmen.'], 'So funktioniert Demokratie: Jede Stimme zählt gleich viel.'],
+  ['Die Mehrheit hat entschieden, Völkerball zu spielen. Du wolltest Fangen. Was ist fair?', '🏐', 'Diesmal mitmachen, nächstes Mal ist Fangen dran', ['Beleidigt das Spiel stören', 'Allen den Ball wegnehmen'], 'Mehrheitsentscheidungen gelten. Beim nächsten Mal kann es anders ausgehen.'],
+  ['Was ist ein Klassenrat?', '🪑', 'Eine Runde, in der die Klasse Probleme bespricht und löst', ['Ein Stuhl für die Lehrerin', 'Ein Rätsel im Mathebuch'], 'Im Klassenrat lernen Kinder, gemeinsam Lösungen zu finden.'],
+  ['Welche Regel gilt in der Bücherei?', '📚', 'Leise sein, damit andere lesen können', ['Laut Musik hören', 'Bücher bemalen'], 'Rücksicht nehmen ist eine wichtige Regel überall.'],
+  ['Wofür gibt es Regeln beim Essen am Tisch?', '🍽️', 'Damit alle gemütlich zusammen essen können', ['Damit das Essen kalt wird', 'Damit niemand satt wird'], 'In jeder Familie und jedem Land sind die Tischregeln ein bisschen anders.']
+];
+const WN_STREIT = [
+  ['Was ist der erste Schritt, wenn zwei sich streiten?', '🛑', 'Erst mal Stopp sagen und ruhig werden', ['Noch lauter schreien', 'Sofort hauen'], 'Mit Wut im Bauch findet man schwer eine Lösung. Erst beruhigen, dann reden.'],
+  ['Welcher Satz hilft beim Streiten?', '💬', '„Ich bin sauer, weil du mein Bild zerknittert hast.“', ['„Du bist so blöd!“', '„Mit dir rede ich nie wieder!“'], 'Wenn du sagst, wie es dir geht, kann der andere dich besser verstehen.'],
+  ['Was macht ein Streitschlichter?', '🕊️', 'Er hilft zwei Kindern, selbst eine Lösung zu finden.', ['Er bestimmt, wer bestraft wird.', 'Er streitet mit.'], 'Streitschlichter hören beiden Seiten gut zu.'],
+  ['Wie kann ein Streit gut enden?', '🤝', 'Beide finden zusammen eine Lösung.', ['Einer gewinnt, einer weint.', 'Keiner redet mehr.'], 'Eine gute Lösung ist eine, mit der beide leben können.'],
+  ['Zwei Kinder wollen dasselbe Buch lesen. Welche Lösung ist fair?', '📖', 'Abwechselnd lesen oder zusammen lesen', ['Das Buch zerreißen', 'Wer stärker ist, bekommt es'], 'Es gibt fast immer eine Lösung, bei der niemand verliert.'],
+  ['Wie entschuldigt man sich richtig?', '🙏', 'Man sagt ehrlich, was einem leidtut, und meint es so.', ['Man sagt schnell Sorry und lacht.', 'Man sagt gar nichts.'], 'Eine echte Entschuldigung kommt von Herzen.'],
+  ['Was bedeutet „sich in jemanden hineinversetzen“?', '🔄', 'Überlegen, wie es dem anderen gerade geht', ['In seine Schuhe steigen', 'Ihm etwas wegnehmen'], 'Wer sich in andere hineinversetzt, kann Streit oft schneller lösen.'],
+  ['Jemand ärgert dich jeden Tag. Was kannst du tun?', '🧑‍🏫', 'Einem Erwachsenen davon erzählen', ['Es heimlich aushalten', 'Zurück ärgern'], 'Hilfe holen ist kein Petzen. Es ist mutig.'],
+  ['Was ist der Unterschied zwischen Petzen und Hilfe holen?', '🚨', 'Hilfe holen schützt jemanden, Petzen will jemandem schaden.', ['Es gibt keinen Unterschied.', 'Petzen ist immer gut.'], 'Wenn jemand in Not ist, ist Hilfe holen richtig.'],
+  ['Was heißt „Kompromiss“?', '⚖️', 'Beide geben ein bisschen nach.', ['Einer bekommt alles.', 'Man streitet für immer.'], 'Bei einem Kompromiss treffen sich beide in der Mitte.'],
+  ['Was hilft, wenn man nach einem Streit nicht weiß, wie man sich versöhnt?', '✉️', 'Ein kleines Friedensbriefchen oder ein Bild', ['Den anderen auslachen', 'So tun, als wäre er Luft'], 'Kleine Zeichen helfen beim Versöhnen.'],
+  ['Wann sollte man einen Streit sofort von Erwachsenen beenden lassen?', '⚠️', 'Wenn jemand verletzt wird', ['Wenn man Hunger hat', 'Nie'], 'Wenn es gefährlich wird, holen wir sofort Hilfe.'],
+  ['Was ist „Mobbing“?', '🚫', 'Wenn jemand immer wieder absichtlich gequält oder ausgeschlossen wird', ['Ein lustiges Spiel', 'Ein Wort für Pausenbrot'], 'Bei Mobbing muss man helfen und Erwachsenen Bescheid sagen.'],
+  ['Was können Zuschauer bei Mobbing tun?', '🦸', 'Zu dem Kind halten und Hilfe holen', ['Mitlachen', 'Ein Video machen'], 'Wer hilft, statt zuzuschauen, ist ein echter Held.']
+];
+
+
+const WN_FAIR = [
+  ['Alle bekommen gleich viel Kuchen.', 1], ['Wer zuerst kommt, nimmt sich alle Kekse.', 0], ['Beim Spiel gelten für alle dieselben Regeln.', 1], ['Ein Kind darf immer bestimmen.', 0],
+  ['Wer krank war, bekommt Hilfe beim Nachholen.', 1], ['Jemand wird nicht mitspielen gelassen, weil er neu ist.', 0], ['Man wechselt sich auf der Schaukel ab.', 1], ['Einer mogelt beim Memory.', 0],
+  ['Der Kleinste darf beim Werfen näher ran.', 1], ['Ein Kind bekommt Ärger, obwohl es nichts gemacht hat.', 0], ['Alle dürfen ihre Meinung sagen.', 1], ['Nur Jungen dürfen Fußball spielen.', 0],
+  ['Man teilt sein Pausenbrot mit jemandem, der keins hat.', 1], ['Jemand nimmt sich heimlich das größte Stück.', 0], ['Beim Aufräumen helfen alle mit.', 1], ['Einer muss immer allein den Müll rausbringen.', 0],
+  ['Bei einem Rennen starten alle an derselben Linie.', 1], ['Ein Kind wird ausgelacht, weil es eine Brille trägt.', 0], ['Der Schiedsrichter pfeift für beide Teams gleich.', 1], ['Jemand bekommt keine Einladung, weil er arm ist.', 0]
+];
+function genWnFair(ctx) {
+  if (Math.random() < .5) {
+    const items = R.sample(WN_FAIR.filter(x => x[1]), 3).concat(R.sample(WN_FAIR.filter(x => !x[1]), 3)).map(x => ({ h: esc(x[0]), c: x[1] ? 0 : 1 }));
+    return mkSort({ prompt: 'Fair oder unfair? Sortiere!', cols: ['<b>fair 👍</b>', '<b>unfair 👎</b>'], colLabels: ['fair', 'unfair'], items: R.shuffle(items), explain: 'Fair ist, wenn alle gleich gut behandelt werden und niemand benachteiligt wird.', key: 'wnf' + items.map(i => i.h).join('|') });
+  }
+  const x = ctx.draw(WN_FAIR);
+  return mkChoice({ prompt: 'Ist das fair oder unfair?', visual: `<div class="q-word">${esc(x[0])}</div>`, answer: x[1] ? 'fair 👍' : 'unfair 👎', wrong: [x[1] ? 'unfair 👎' : 'fair 👍'], explain: x[1] ? 'Hier wird niemand benachteiligt.' : 'Hier wird jemand ungerecht behandelt.', key: 'wnf1' + x[0], say: x[0] });
+}
+const WN_EHRLICH = [
+  ['Was ist eine Lüge?', '🤥', 'Wenn man absichtlich etwas Falsches sagt', ['Wenn man sich irrt', 'Wenn man ein Märchen vorliest'], 'Wer sich irrt, lügt nicht. Lügen heißt, absichtlich die Unwahrheit zu sagen.'],
+  ['Warum ist Ehrlichkeit wichtig?', '💎', 'Damit andere uns vertrauen können', ['Damit man mehr Süßigkeiten bekommt', 'Das ist gar nicht wichtig.'], 'Vertrauen ist wie ein zartes Pflänzchen. Lügen machen es kaputt.'],
+  ['Du hast die Lieblingstasse von Papa zerbrochen. Was ist ehrlich?', '☕', 'Es Papa sagen und dich entschuldigen', ['Die Scherben verstecken', 'Sagen, die Katze war es'], 'Fehler zugeben ist mutig. Meist ist der Ärger dann viel kleiner.'],
+  ['Was ist ein Versprechen?', '🤙', 'Wenn man sagt: Das mache ich ganz sicher.', ['Ein Wort, das man vergisst', 'Ein Spiel mit Würfeln'], 'Versprechen sollte man halten. Darum verspricht man nur, was man schaffen kann.'],
+  ['Deine Freundin zeigt dir stolz ihr Bild. Dir gefällt es nicht so. Was ist ehrlich und freundlich?', '🖼️', '„Die Farben gefallen mir. Erzähl mal, was du gemalt hast!“', ['„Das ist hässlich!“', '„Das ist das schönste Bild der Welt!“, obwohl du es nicht findest'], 'Man kann ehrlich sein und trotzdem freundlich bleiben.'],
+  ['Was ist Vertrauen?', '🫂', 'Wenn man sich auf jemanden verlassen kann', ['Wenn man jemandem nichts glaubt', 'Wenn man alleine spielt'], 'Vertrauen wächst, wenn man ehrlich ist und Versprechen hält.'],
+  ['Jemand hat einen Geldbeutel verloren. Was tust du?', '👛', 'Ihn abgeben, zum Beispiel im Fundbüro', ['Ihn behalten', 'Ihn wegwerfen'], 'Was einem anderen gehört, gibt man zurück.'],
+  ['Was bedeutet „gerecht“?', '⚖️', 'Jeder bekommt, was ihm zusteht.', ['Der Stärkste bekommt alles.', 'Alle gehen leer aus.'], 'Gerecht ist manchmal: alle gleich viel. Manchmal: jeder das, was er braucht.'],
+  ['Lisa braucht eine Brille, um die Tafel zu sehen. Ist es gerecht, dass nur sie eine Brille bekommt?', '👓', 'Ja, sie braucht sie ja.', ['Nein, alle müssen eine Brille bekommen.', 'Nein, niemand darf eine Brille haben.'], 'Gerecht heißt nicht immer gleich. Jeder bekommt, was er braucht.'],
+  ['Was ist Verantwortung?', '🧺', 'Sich um etwas kümmern und dafür sorgen', ['Alles den anderen überlassen', 'Weglaufen'], 'Du trägst zum Beispiel Verantwortung, wenn du ein Haustier fütterst.'],
+  ['Was ist Hilfsbereitschaft?', '🤲', 'Anderen helfen, wenn sie Hilfe brauchen', ['Nur an sich denken', 'Andere ärgern'], 'Hilfsbereite Menschen machen die Welt ein Stück wärmer.'],
+  ['Du siehst, wie ein Kind beim Test abschreibt. Was ist eine gute Idee?', '📄', 'Nicht mitmachen und bei dir selbst bleiben', ['Auch abschreiben', 'Laut lachen'], 'Du bist für dein eigenes Handeln verantwortlich.'],
+  ['Was heißt „Wer A sagt, muss auch B sagen“?', '🔤', 'Wenn man etwas anfängt, muss man es zu Ende bringen.', ['Man muss das Alphabet aufsagen.', 'Man darf nur zwei Buchstaben sagen.'], 'Das ist ein Sprichwort über Verantwortung.'],
+  ['Was ist Dankbarkeit?', '🙏', 'Sich freuen und Danke sagen für etwas Gutes', ['Immer mehr haben wollen', 'Sich ärgern'], 'Dankbare Menschen sind oft glücklicher.']
+];
+
+const WN_RECHTE = [
+  ['Haben Kinder eigene Rechte?', '🧒', 'Ja, alle Kinder auf der Welt haben Rechte.', ['Nein, nur Erwachsene', 'Nur Kinder mit Handy'], 'Die Kinderrechte wurden 1989 von den Vereinten Nationen beschlossen.'],
+  ['Welches ist ein Kinderrecht?', '🏫', 'Das Recht, zur Schule zu gehen', ['Das Recht auf ein eigenes Auto', 'Das Recht, nie Zähne zu putzen'], 'Jedes Kind hat ein Recht auf Bildung.'],
+  ['Welches ist ein Kinderrecht?', '🧸', 'Das Recht auf Spiel und Freizeit', ['Das Recht auf jeden Tag Eis', 'Das Recht, nie ins Bett zu gehen'], 'Spielen ist für Kinder so wichtig, dass es ein eigenes Recht ist.'],
+  ['Welches ist ein Kinderrecht?', '🛡️', 'Das Recht auf Schutz vor Gewalt', ['Das Recht, andere zu hauen', 'Das Recht auf Süßigkeiten'], 'Niemand darf Kinder schlagen oder ihnen wehtun.'],
+  ['Welches ist ein Kinderrecht?', '🗣️', 'Das Recht, seine Meinung zu sagen', ['Das Recht, immer recht zu haben', 'Das Recht, andere zu beschimpfen'], 'Kinder dürfen mitreden, wenn es um sie geht.'],
+  ['Welches ist ein Kinderrecht?', '🩺', 'Das Recht auf Gesundheit und einen Arzt', ['Das Recht auf Pommes zum Frühstück', 'Das Recht, nie zu duschen'], 'Kranke Kinder sollen Hilfe bekommen, egal wo sie wohnen.'],
+  ['Welches ist ein Kinderrecht?', '🪪', 'Das Recht auf einen Namen', ['Das Recht auf drei Haustiere', 'Das Recht auf ein Schloss'], 'Jedes Kind wird nach der Geburt mit Namen angemeldet.'],
+  ['Wann ist der Weltkindertag in Deutschland?', '🎈', 'am 20. September', ['am 24. Dezember', 'am 1. Januar'], 'An diesem Tag wird an die Rechte der Kinder erinnert.'],
+  ['Was bedeutet „Gleichberechtigung“?', '🟰', 'Alle haben die gleichen Rechte.', ['Alle sehen gleich aus.', 'Alle müssen das Gleiche essen.'], 'Mädchen und Jungen, Frauen und Männer haben die gleichen Rechte.'],
+  ['Was ist ein Vorurteil?', '🏷️', 'Wenn man über jemanden urteilt, ohne ihn zu kennen', ['Ein Urteil vom Gericht', 'Ein Lob für gute Noten'], 'Vorurteile verschwinden oft, wenn man sich kennenlernt.'],
+  ['Welcher Satz ist ein Vorurteil?', '🙅', '„Mädchen können nicht Fußball spielen.“', ['„Lea spielt gern Fußball.“', '„Fußball ist ein Ballspiel.“'], 'Ob jemand gut Fußball spielt, hat nichts mit Junge oder Mädchen zu tun.'],
+  ['Was bedeutet „Toleranz“?', '🌈', 'Andere so akzeptieren, wie sie sind', ['Nur die eigene Meinung gelten lassen', 'Alle auslachen, die anders sind'], 'Toleranz heißt: Du darfst anders sein als ich, und das ist in Ordnung.'],
+  ['In deiner Klasse sind Kinder aus vielen Ländern. Was ist das Tolle daran?', '🌍', 'Man lernt neue Sprachen, Spiele und Essen kennen.', ['Gar nichts', 'Alle müssen gleich sein.'], 'Vielfalt macht das Leben bunter.'],
+  ['Ein Kind sitzt im Rollstuhl. Was ist richtig?', '♿', 'Es kann vieles mitmachen. Man fragt, ob es Hilfe möchte.', ['Es darf nie mitspielen.', 'Man schiebt es einfach ohne zu fragen.'], 'Fragen ist immer besser als einfach machen.'],
+  ['Was bedeutet „Inklusion“?', '🧩', 'Alle Kinder lernen und spielen zusammen.', ['Nur schnelle Kinder spielen mit.', 'Kinder werden aussortiert.'], 'Bei Inklusion gehört jeder dazu.'],
+  ['Wie viele Kinder sollen die Kinderrechte schützen?', '🧑‍🤝‍🧑', 'alle Kinder der Welt', ['nur Kinder in Deutschland', 'nur Kinder mit guten Noten'], 'Die Kinderrechte gelten für jedes Kind, egal woher es kommt.']
+];
+
+
+const WN_REL = [['Christentum', 'Kirche', 'Bibel', '✝️'], ['Islam', 'Moschee', 'Koran', '☪️'], ['Judentum', 'Synagoge', 'Tora', '✡️'], ['Buddhismus', 'Tempel', 'Lehrreden Buddhas', '☸️'], ['Hinduismus', 'Tempel', 'Veden', '🕉️']];
+const WN_RELQ = [
+  ['Wie heißt das Gotteshaus der Christen?', '⛪', 'die Kirche', ['die Moschee', 'die Synagoge'], 'In der Kirche feiern Christen Gottesdienst.'],
+  ['Wie heißt das Gotteshaus der Muslime?', '🕌', 'die Moschee', ['die Kirche', 'der Tempel'], 'Vom Minarett der Moschee wird zum Gebet gerufen.'],
+  ['Wie heißt das Gotteshaus der Juden?', '🕍', 'die Synagoge', ['die Moschee', 'die Kirche'], 'In der Synagoge wird aus der Tora gelesen.'],
+  ['Wie heißt das heilige Buch der Christen?', '📖', 'die Bibel', ['der Koran', 'die Tora'], 'Die Bibel hat ein Altes und ein Neues Testament.'],
+  ['Wie heißt das heilige Buch der Muslime?', '📗', 'der Koran', ['die Bibel', 'die Veden'], 'Der Koran ist auf Arabisch geschrieben.'],
+  ['Wie heißt die heilige Schrift der Juden?', '📜', 'die Tora', ['der Koran', 'die Bibel'], 'Die Tora wird als Schriftrolle in der Synagoge aufbewahrt.'],
+  ['Welches Zeichen gehört zum Christentum?', '✝️', 'das Kreuz', ['der Halbmond', 'der Davidstern'], 'Das Kreuz erinnert an Jesus.'],
+  ['Welches Zeichen gehört zum Judentum?', '✡️', 'der Davidstern', ['das Kreuz', 'das Rad'], 'Der Davidstern ist auch auf der Flagge Israels.'],
+  ['Welches Zeichen gehört zum Islam?', '☪️', 'Halbmond und Stern', ['das Kreuz', 'das Om'], 'Halbmond und Stern sieht man oft auf Moscheen.'],
+  ['Wer war Jesus für die Christen?', '🕊️', 'Gottes Sohn', ['ein König aus Ägypten', 'ein Ritter'], 'Christen glauben, dass Jesus Gottes Sohn ist.'],
+  ['Wer ist für Muslime der wichtigste Prophet?', '🌙', 'Mohammed', ['Moses', 'Buddha'], 'Muslime glauben, dass Mohammed den Koran von Gott empfangen hat.'],
+  ['Wie heißt der Ruhetag der Juden?', '🕯️', 'der Sabbat', ['der Sonntag', 'der Freitag'], 'Der Sabbat beginnt am Freitagabend und endet am Samstagabend.'],
+  ['Woran glauben Christen, Juden und Muslime gemeinsam?', '☝️', 'an einen einzigen Gott', ['an viele Götter', 'an gar nichts'], 'Diese drei Religionen nennt man auch abrahamitische Religionen.'],
+  ['Wer war Buddha?', '🧘', 'ein weiser Mann, der über das Glück nachdachte', ['ein Fußballspieler', 'ein Pharao'], 'Buddha lebte vor etwa 2500 Jahren in Indien.'],
+  ['Wo wird ein Hindu oft beten?', '🛕', 'im Tempel oder am Hausaltar', ['in der Bücherei', 'im Schwimmbad'], 'Viele Hindus haben zu Hause einen kleinen Altar.'],
+  ['Was ist wichtig, wenn Menschen verschiedene Religionen haben?', '🤝', 'Respekt voreinander', ['Streit, wer recht hat', 'Sich gegenseitig auslachen'], 'Man darf glauben, was man möchte, oder auch gar nicht glauben.'],
+  ['Dürfen Menschen in Deutschland ihre Religion frei wählen?', '🗽', 'Ja, das nennt man Religionsfreiheit.', ['Nein, alle müssen dasselbe glauben.', 'Nur am Wochenende'], 'Religionsfreiheit steht im Grundgesetz.'],
+  ['Was ist ein Gebet?', '🙏', 'Ein Gespräch mit Gott', ['Ein Rezept', 'Ein Sportspiel'], 'Menschen beten aus Dank, Sorge oder Bitte.']
+];
+function genWnReligion(ctx) {
+  if (ctx.lv >= 2 && Math.random() < .4) {
+    const rel = R.sample(WN_REL.slice(0, 3), 3), items = [];
+    rel.forEach((r, c) => { items.push({ h: esc(r[1]), c }); items.push({ h: esc(r[2]), c }); });
+    return mkSort({ prompt: 'Was gehört zu welcher Religion? Sortiere!', cols: rel.map(r => `<b>${r[3]} ${r[0]}</b>`), colLabels: rel.map(r => r[0]), items: R.shuffle(items), explain: rel.map(r => `${r[0]}: ${r[1]} und ${r[2]}`).join(', '), key: 'wnr' + items.map(i => i.h).join('|') });
+  }
+  return suQuestion(ctx.draw(WN_RELQ));
+}
+const WN_FESTE = [
+  ['Was feiern Christen an Weihnachten?', '🎄', 'die Geburt von Jesus', ['das neue Jahr', 'den Frühling'], 'Weihnachten ist am 24. bis 26. Dezember.'],
+  ['Was feiern Christen an Ostern?', '🐣', 'dass Jesus auferstanden ist', ['die Geburt von Jesus', 'den Herbst'], 'Ostern ist das wichtigste Fest der Christen.'],
+  ['Was feiern Muslime am Ende des Fastenmonats Ramadan?', '🌙', 'das Zuckerfest', ['Weihnachten', 'Chanukka'], 'Beim Zuckerfest gibt es Süßigkeiten, Geschenke und Besuche bei der Familie.'],
+  ['Was machen viele Muslime im Ramadan tagsüber?', '🍽️', 'Sie fasten und essen erst nach Sonnenuntergang.', ['Sie essen nur Süßes.', 'Sie schlafen den ganzen Tag.'], 'Kinder, Kranke und Schwangere müssen nicht fasten.'],
+  ['Welches jüdische Fest heißt Lichterfest und dauert acht Tage?', '🕎', 'Chanukka', ['Ostern', 'Diwali'], 'An jedem Abend wird eine Kerze mehr am Leuchter angezündet.'],
+  ['Woran erinnert das jüdische Fest Pessach?', '🫓', 'an den Auszug aus Ägypten', ['an die Geburt von Jesus', 'an das Ende des Ramadan'], 'An Pessach isst man ungesäuertes Brot, die Matze.'],
+  ['Welches Lichterfest feiern Hindus mit Lämpchen und Feuerwerk?', '🪔', 'Diwali', ['Pfingsten', 'Chanukka'], 'Diwali feiert den Sieg des Lichts über die Dunkelheit.'],
+  ['Wie heißt das bunte Frühlingsfest der Hindus, bei dem man sich mit Farbpulver bewirft?', '🎨', 'Holi', ['Halloween', 'Karneval'], 'Bei Holi sind am Ende alle kunterbunt.'],
+  ['Was feiern Christen an Sankt Martin?', '🏮', 'Einen Mann, der seinen Mantel mit einem Bettler teilte', ['Das Ende der Ferien', 'Den ersten Schnee'], 'Mit Laternen ziehen Kinder am 11. November durch die Straßen.'],
+  ['Wofür steht der Adventskranz?', '🕯️', 'Er zählt die vier Sonntage vor Weihnachten.', ['Er zählt die Tage bis Ostern.', 'Er ist eine Krone für Könige.'], 'Jeden Advent wird eine Kerze mehr angezündet.'],
+  ['Was feiern Christen an Pfingsten?', '🔥', 'dass der Heilige Geist zu den Jüngern kam', ['den Geburtstag der Oma', 'den Sommeranfang'], 'Pfingsten ist 50 Tage nach Ostern.'],
+  ['Wann ist das Opferfest?', '🐑', 'Es ist das höchste Fest im Islam.', ['Es ist ein christliches Fest im Winter.', 'Es ist ein Sportfest.'], 'Beim Opferfest teilen Familien Essen mit armen Menschen.'],
+  ['Was ist Erntedank?', '🌾', 'Ein Fest, bei dem man für die Ernte dankt', ['Ein Fest für Autos', 'Ein Fest am Strand'], 'Erntedank wird im Herbst gefeiert.'],
+  ['Welches Fest feiern Buddhisten zu Ehren Buddhas?', '🪷', 'Vesakh', ['Ostern', 'Pessach'], 'An Vesakh erinnern sich Buddhisten an Buddhas Geburt und Erleuchtung.'],
+  ['Was haben viele Feste in verschiedenen Religionen gemeinsam?', '🎉', 'Familie, Essen und Lichter', ['Sie sind alle am gleichen Tag.', 'Sie sind alle im Sommer.'], 'Feste bringen Menschen zusammen, egal in welcher Religion.'],
+  ['Was ist Silvester?', '🎆', 'Der letzte Tag im Jahr', ['Der erste Schultag', 'Ein Fest im Mai'], 'Um Mitternacht beginnt das neue Jahr.']
+];
+
+const WN_NATUR = [
+  ['Ihr bekommt einen Hund. Wer kümmert sich um ihn?', '🐶', 'Alle in der Familie helfen mit.', ['Der Hund kümmert sich allein.', 'Niemand'], 'Ein Haustier braucht jeden Tag Futter, Wasser, Bewegung und Liebe.'],
+  ['Was braucht ein Kaninchen?', '🐰', 'Viel Platz, Heu und einen Freund', ['Einen kleinen Käfig und Schokolade', 'Fernsehen'], 'Kaninchen sind gern zu zweit und brauchen Auslauf.'],
+  ['Du findest einen Vogel mit verletztem Flügel. Was tust du?', '🐦', 'Einen Erwachsenen holen, der hilft', ['Ihn mit nach Hause nehmen und behalten', 'Ihn liegen lassen und weitergehen'], 'Es gibt Tierärzte und Auffangstationen für Wildtiere.'],
+  ['Warum soll man im Wald keinen Müll liegen lassen?', '🌲', 'Tiere können sich verletzen oder Müll fressen.', ['Damit der Wald schöner aussieht', 'Der Müll löst sich sofort auf.'], 'Eine Plastikflasche braucht Hunderte Jahre, bis sie zerfällt.'],
+  ['Was bedeutet „nachhaltig“?', '♻️', 'So leben, dass auch später noch genug für alle da ist', ['Möglichst viel kaufen', 'Alles wegwerfen'], 'Nachhaltig ist zum Beispiel: reparieren statt wegwerfen.'],
+  ['Was kannst du für die Umwelt tun?', '🚲', 'Kurze Wege zu Fuß oder mit dem Rad', ['Immer mit dem Auto fahren', 'Das Licht anlassen'], 'Jeder kleine Schritt hilft der Erde.'],
+  ['Ist es in Ordnung, Tiere zu quälen?', '🐾', 'Nein, Tiere haben Gefühle und Schmerzen.', ['Ja, wenn es lustig ist', 'Nur kleine Tiere'], 'Tierschutz steht sogar im Gesetz.'],
+  ['Was ist ein Tierheim?', '🏠', 'Ein Ort für Tiere, die ein neues Zuhause suchen', ['Ein Zoo für Löwen', 'Ein Hotel für Menschen'], 'Im Tierheim warten viele Tiere auf eine liebe Familie.'],
+  ['Woher kommt unser Essen?', '🥕', 'Von Bauern, Feldern und Tieren', ['Aus dem Kühlschrank allein', 'Aus der Steckdose'], 'Wer weiß, wie viel Arbeit im Essen steckt, wirft weniger weg.'],
+  ['Was kannst du tun, damit weniger Essen weggeworfen wird?', '🍎', 'Nur so viel nehmen, wie du essen kannst', ['Immer den Teller vollladen', 'Brot in den Müll werfen'], 'In Deutschland landet viel Essen im Müll. Das muss nicht sein.'],
+  ['Was ist wichtig für die Zukunft der Erde?', '🌍', 'Dass wir Wasser, Luft und Natur schützen', ['Dass es mehr Müll gibt', 'Dass alle Bäume gefällt werden'], 'Die Erde ist unser einziges Zuhause.'],
+  ['Wie wollen Menschen in der Zukunft gut zusammenleben?', '🕊️', 'In Frieden und mit Respekt', ['Mit viel Streit', 'Jeder für sich allein'], 'Frieden beginnt im Kleinen, zum Beispiel auf dem Schulhof.'],
+  ['Wem gehört die Natur?', '🌳', 'Sie ist für alle da, auch für Tiere und Pflanzen.', ['Nur den Menschen', 'Nur reichen Leuten'], 'Darum müssen wir sie gemeinsam schützen.'],
+  ['Was bedeutet „Fairer Handel“?', '🍫', 'Bauern bekommen einen gerechten Lohn für ihre Ernte.', ['Alles ist besonders billig.', 'Man tauscht Sammelkarten.'], 'Ein Siegel auf Schokolade oder Bananen zeigt das an.']
+];
+
+
+const WN_DENKFR = [
+  ['Was ist Glück?', 1], ['Wie viele Beine hat eine Spinne?', 0], ['Warum gibt es mich?', 1], ['Wie hoch ist der Brocken?', 0], ['Was ist ein guter Freund?', 1], ['Wann ist Weihnachten?', 0],
+  ['Können Tiere denken?', 1], ['Wie heißt die Hauptstadt von Frankreich?', 0], ['Ist es immer schlimm zu lügen?', 1], ['Wie viel ist 7 mal 8?', 0], ['Was ist Zeit?', 1], ['Aus was besteht Wasser?', 0],
+  ['Was ist gerecht?', 1], ['Wie schnell fliegt ein Flugzeug?', 0], ['Wo war ich, bevor ich geboren wurde?', 1], ['Wer hat das Telefon erfunden?', 0], ['Was ist schön?', 1], ['Wie viele Tage hat eine Woche?', 0]
+];
+function genWnDenken(ctx) {
+  if (Math.random() < .45) {
+    const items = R.sample(WN_DENKFR.filter(x => x[1]), 3).concat(R.sample(WN_DENKFR.filter(x => !x[1]), 3)).map(x => ({ h: esc(x[0]), c: x[1] ? 0 : 1 }));
+    return mkSort({ prompt: 'Zum Nachdenken oder zum Nachschauen? Sortiere die Fragen!', cols: ['<b>🤔 Nachdenken</b>', '<b>🔎 Nachschauen</b>'], colLabels: ['Nachdenken', 'Nachschauen'], items: R.shuffle(items), explain: 'Manche Fragen kann man im Lexikon nachschlagen. Über andere Fragen kann man lange nachdenken und reden, und es gibt viele Antworten.', key: 'wnd' + items.map(i => i.h).join('|') });
+  }
+  return suQuestion(ctx.draw(WN_DENKQ));
+}
+const WN_DENKQ = [
+  ['Was macht man beim Philosophieren?', '🤔', 'Man denkt gemeinsam über große Fragen nach.', ['Man rechnet Aufgaben.', 'Man malt Bilder aus.'], 'Philosophie heißt übersetzt „Liebe zur Weisheit“.'],
+  ['Was ist bei einem Philosophiergespräch wichtig?', '👂', 'Jede Meinung darf gesagt und begründet werden.', ['Nur die Lehrerin hat recht.', 'Wer anders denkt, wird ausgelacht.'], 'Beim Philosophieren gibt es oft kein Richtig oder Falsch.'],
+  ['Was bedeutet „eine Meinung begründen“?', '💡', 'Sagen, warum man etwas denkt', ['Nur laut rufen', 'Einfach nicken'], 'Mit einem „weil“ wird aus einer Meinung ein Argument.'],
+  ['Welcher Satz ist eine Begründung?', '🗨️', '„Ich finde Hunde toll, weil sie treu sind.“', ['„Hunde.“', '„Ich weiß nicht.“'], 'Das Wort „weil“ zeigt eine Begründung an.'],
+  ['Wer war Sokrates?', '🏛️', 'Ein Philosoph aus dem alten Griechenland, der viele Fragen stellte', ['Ein Fußballtrainer', 'Ein Pharao aus Ägypten'], 'Sokrates sagte: „Ich weiß, dass ich nichts weiß.“'],
+  ['Was ist ein Gedankenexperiment?', '🧠', 'Man stellt sich etwas vor und überlegt, was dann wäre.', ['Ein Versuch mit Feuer', 'Ein Experiment mit Wasser'], 'Zum Beispiel: Was wäre, wenn alle Menschen gleich aussehen würden?'],
+  ['Was bedeutet „staunen“?', '😮', 'Sich über etwas wundern und neugierig sein', ['Sich langweilen', 'Etwas kaputt machen'], 'Philosophie beginnt mit dem Staunen, sagen viele Philosophen.'],
+  ['Kann man Freundschaft sehen oder anfassen?', '💞', 'Nein, aber man kann sie spüren.', ['Ja, sie ist rot und rund.', 'Ja, man kann sie kaufen.'], 'Viele wichtige Dinge im Leben kann man nicht anfassen.'],
+  ['Was ist der Unterschied zwischen Traum und Wirklichkeit?', '💭', 'Ein Traum passiert nur im Kopf, die Wirklichkeit erleben alle.', ['Es gibt keinen.', 'Träume sind immer wahr.'], 'Manchmal fühlen sich Träume aber ganz echt an.'],
+  ['Was brauchen Menschen zum Glücklichsein, ohne dass man es kaufen kann?', '❤️', 'Freunde, Familie und Liebe', ['Ein großes Auto', 'Viele Spielsachen'], 'Viele Menschen sagen: Das Wichtigste kann man nicht kaufen.'],
+  ['Was bedeutet „Weisheit“?', '🦉', 'Viel verstehen und kluge Entscheidungen treffen', ['Weiße Haare haben', 'Viele Wörter auswendig wissen'], 'Die Eule gilt als Zeichen für Weisheit.'],
+  ['Wie kann man herausfinden, ob etwas wahr ist?', '🔎', 'Genau hinschauen, nachfragen und prüfen', ['Einfach alles glauben', 'Nur auf das Bauchgefühl hören'], 'Gute Denker prüfen, bevor sie etwas glauben.']
+];
+(() => {
+  Object.assign(GROUPS, {
+    'wn-ich': { w: 'werte', t: 'Ich & meine Gefühle' }, 'wn-miteinander': { w: 'werte', t: 'Miteinander & Regeln' }, 'wn-fair': { w: 'werte', t: 'Fair & ehrlich' },
+    'wn-vielfalt': { w: 'werte', t: 'Kinderrechte & Vielfalt' }, 'wn-religion': { w: 'werte', t: 'Religionen & Feste' }, 'wn-zukunft': { w: 'werte', t: 'Natur & Zukunft' }, 'wn-denken': { w: 'werte', t: 'Nachdenken & Staunen' }
+  });
+  const neu = (id, o) => { if (!GAMES[id]) GAMES[id] = Object.assign({ id, w: 'werte' }, o); };
+  neu('wngefuehle', { g: 'wn-ich', t: 'Gefühle erkennen', d: 'froh, traurig, wütend oder stolz?', i: '😊', gen: genSU(WN_GEFUEHLE) });
+  neu('wnich', { g: 'wn-ich', t: 'Ich bin einzigartig', d: 'Stärken, Mut und Nein sagen', i: '🌟', gen: genSU(WN_ICH) });
+  neu('wnregeln', { g: 'wn-miteinander', t: 'Regeln im Miteinander', d: 'Warum gibt es Regeln?', i: '📜', gen: genSU(WN_REGELN) });
+  neu('wnstreit', { g: 'wn-miteinander', t: 'Streit lösen', d: 'Stopp sagen, reden, versöhnen', i: '🕊️', gen: genSU(WN_STREIT) });
+  neu('wnfair', { g: 'wn-fair', t: 'Fair oder unfair?', d: 'Was ist gerecht?', i: '⚖️', gen: genWnFair });
+  neu('wnehrlich', { g: 'wn-fair', t: 'Ehrlich & verlässlich', d: 'Lügen, Versprechen und Vertrauen', i: '💎', gen: genSU(WN_EHRLICH) });
+  neu('wnrechte', { g: 'wn-vielfalt', t: 'Kinderrechte & Vielfalt', d: 'Alle verschieden, alle gleich wichtig', i: '🧒', gen: genSU(WN_RECHTE), kl: 2 });
+  neu('wnreligion', { g: 'wn-religion', t: 'Religionen der Welt', d: 'Kirche, Moschee, Synagoge und Tempel', i: '🕌', gen: genWnReligion, max: 2, start: [1, 1, 2, 2], kl: 2 });
+  neu('wnfeste', { g: 'wn-religion', t: 'Feste der Religionen', d: 'Weihnachten, Zuckerfest, Chanukka und Diwali', i: '🕎', gen: genSU(WN_FESTE) });
+  neu('wnnatur', { g: 'wn-zukunft', t: 'Tiere & Natur schützen', d: 'Verantwortung für Tiere und die Erde', i: '🌍', gen: genSU(WN_NATUR) });
+  neu('wndenken', { g: 'wn-denken', t: 'Philosophieren', d: 'Große Fragen und kluge Gedanken', i: '🤔', gen: genWnDenken, kl: 2 });
+})();
+
+/*@@src data_lesen252.js@@*/
+
+
+
+
+
+
+const LESETEXTE = [
+  { lv: 1, t: 'Das neue Trikot', x: 'Mila hat Geburtstag. Von Oma bekommt sie ein Paket. Darin ist ein blaues Trikot mit der Nummer 9. Mila jubelt laut. Sie zieht das Trikot sofort an und läuft in den Garten. Dort schießt sie den Ball ins Tor. „Tor für die Nummer 9!“, ruft Papa. Am Abend will Mila das Trikot gar nicht mehr ausziehen. Sie schläft sogar darin.',
+    q: [['Von wem bekommt Mila das Paket?', 'von Oma', ['von Papa', 'von ihrer Freundin']], ['Welche Farbe hat das Trikot?', 'blau', ['rot', 'grün']], ['Wie fühlt sich Mila über das Geschenk?', 'Sie freut sich sehr.', ['Sie ist enttäuscht.', 'Es ist ihr egal.']], ['Was macht Mila am Abend?', 'Sie schläft im Trikot.', ['Sie gibt das Trikot zurück.', 'Sie wäscht das Trikot.']]] },
+  { lv: 1, t: 'Der Igel im Garten', x: 'Im Herbst sieht Jonas einen Igel im Garten. Der Igel ist klein und dünn. Er sucht unter den Blättern nach Käfern und Würmern. Mama sagt: „Igel brauchen jetzt viel Futter. Bald halten sie Winterschlaf.“ Jonas baut mit Mama einen Haufen aus Laub und Ästen. Dort kann sich der Igel verstecken. Am nächsten Morgen ist der Igel in dem Haufen verschwunden.',
+    q: [['Wann sieht Jonas den Igel?', 'im Herbst', ['im Sommer', 'im Frühling']], ['Was frisst der Igel?', 'Käfer und Würmer', ['Äpfel und Brot', 'Gras und Blumen']], ['Warum braucht der Igel viel Futter?', 'Weil er bald Winterschlaf hält', ['Weil er bald Geburtstag hat', 'Weil er schwimmen will']], ['Was baut Jonas mit Mama?', 'einen Haufen aus Laub und Ästen', ['ein Vogelhaus', 'einen Schneemann']]] },
+  { lv: 1, t: 'Pinguine', x: 'Pinguine sind Vögel, aber sie können nicht fliegen. Dafür sind sie super Schwimmer. Mit ihren Flügeln paddeln sie schnell durch das Wasser. Pinguine fressen Fische und kleine Krebse. Die meisten Pinguine leben im Süden der Erde, wo es kalt ist. Ein dickes Fett unter der Haut und dichte Federn halten sie warm. An Land watscheln sie oder rutschen auf dem Bauch über das Eis.',
+    q: [['Was können Pinguine nicht?', 'fliegen', ['schwimmen', 'laufen']], ['Wozu brauchen Pinguine ihre Flügel?', 'zum Paddeln im Wasser', ['zum Fliegen', 'zum Graben']], ['Was hält Pinguine warm?', 'Fett und dichte Federn', ['eine Mütze', 'ein Feuer']], ['Was bedeutet „watscheln“?', 'wackelig gehen', ['schnell fliegen', 'laut singen']]] },
+  { lv: 1, t: 'Am Strand', x: 'In den Ferien fährt Ella mit ihrer Familie an die Nordsee. Am Morgen ist das Wasser weg. Man kann weit hinaus auf den Meeresboden laufen. Das nennt man Ebbe. Ella findet Muscheln und einen kleinen Krebs. Am Nachmittag kommt das Wasser zurück. Jetzt ist Flut. Ella baut eine Sandburg. Doch die Wellen kommen immer näher und machen die Burg kaputt. Ella lacht. Morgen baut sie eine neue.',
+    q: [['Wohin fährt Ella in den Ferien?', 'an die Nordsee', ['in die Berge', 'in eine große Stadt']], ['Wie heißt es, wenn das Wasser weg ist?', 'Ebbe', ['Flut', 'Welle']], ['Was findet Ella am Morgen?', 'Muscheln und einen Krebs', ['einen Schatz', 'einen Fußball']], ['Warum geht die Sandburg kaputt?', 'Weil die Flut kommt', ['Weil Ella darauf springt', 'Weil ein Hund darüber läuft']]] },
+  { lv: 1, t: 'Lumi lernt Rad fahren', x: 'Lumi, der kleine Pinguin, möchte Fahrrad fahren lernen. Das erste Mal kippt er sofort um. Das zweite Mal fährt er zwei Meter und fällt in eine Pfütze. Lumi ist nass und ein bisschen traurig. Seine Freundin Pia sagt: „Versuch es noch einmal. Ich halte dich fest.“ Pia hält den Sattel. Lumi tritt in die Pedale. Plötzlich merkt er, dass Pia schon losgelassen hat. Lumi fährt ganz allein!',
+    q: [['Was möchte Lumi lernen?', 'Fahrrad fahren', ['schwimmen', 'Ski fahren']], ['Wohin fällt Lumi beim zweiten Mal?', 'in eine Pfütze', ['in den Schnee', 'ins Gras']], ['Wie hilft Pia?', 'Sie hält den Sattel fest.', ['Sie fährt für Lumi.', 'Sie lacht ihn aus.']], ['Was lernt man aus der Geschichte?', 'Nicht aufgeben lohnt sich.', ['Fahrrad fahren ist gefährlich.', 'Pinguine können nicht Rad fahren.']]] },
+  { lv: 1, t: 'Der Apfelbaum', x: 'Im Frühling blüht der Apfelbaum. Die Blüten sind weiß und rosa. Bienen fliegen von Blüte zu Blüte und sammeln Nektar. Dabei tragen sie Blütenstaub weiter. Nur so können Äpfel wachsen. Im Sommer sind die Äpfel klein und grün. Im Herbst sind sie groß und rot. Dann pflücken Opa und Tim die Äpfel. Aus einigen Äpfeln backt Oma einen leckeren Kuchen.',
+    q: [['Welche Farbe haben die Blüten?', 'weiß und rosa', ['gelb und blau', 'lila']], ['Warum sind Bienen wichtig für den Apfelbaum?', 'Sie tragen Blütenstaub weiter, damit Äpfel wachsen.', ['Sie fressen die Äpfel.', 'Sie gießen den Baum.']], ['Wann sind die Äpfel reif?', 'im Herbst', ['im Frühling', 'im Winter']], ['Welche Überschrift passt auch?', 'Ein Jahr mit dem Apfelbaum', ['Der Ausflug in den Zoo', 'Bienen machen Musik']]] },
+  { lv: 1, t: 'Der verlorene Turnbeutel', x: 'Nach dem Sportunterricht findet Ben seinen Turnbeutel nicht. Er sucht in der Umkleide und auf dem Flur. Der Beutel ist weg. Ben wird ganz unruhig, denn darin sind seine neuen Turnschuhe. Da kommt der Hausmeister. Er hält einen grünen Beutel hoch. „Gehört der dir? Er lag auf dem Schulhof.“ Ben strahlt. „Danke!“, sagt er. Ab jetzt schreibt er seinen Namen auf den Beutel.',
+    q: [['Was sucht Ben?', 'seinen Turnbeutel', ['seine Brotdose', 'seine Jacke']], ['Was ist in dem Beutel?', 'neue Turnschuhe', ['ein Buch', 'ein Pausenbrot']], ['Wo hatte der Hausmeister den Beutel gefunden?', 'auf dem Schulhof', ['in der Turnhalle', 'im Klassenzimmer']], ['Warum schreibt Ben jetzt seinen Namen auf den Beutel?', 'Damit man weiß, wem er gehört', ['Weil es schöner aussieht', 'Weil der Lehrer es verboten hat']]] },
+  { lv: 1, t: 'Schnee!', x: 'Als Noah aufwacht, ist draußen alles weiß. Es hat die ganze Nacht geschneit. Noah zieht schnell seine dicke Jacke, die Mütze und die Handschuhe an. Mit seiner Schwester baut er einen Schneemann. Er bekommt eine Möhre als Nase und zwei Steine als Augen. Danach machen sie eine Schneeballschlacht. Mit roten Wangen und kalten Füßen gehen sie ins Haus. Dort gibt es warmen Kakao.',
+    q: [['Warum ist draußen alles weiß?', 'Es hat in der Nacht geschneit.', ['Jemand hat alles angemalt.', 'Es ist Nebel.']], ['Was ist die Nase des Schneemanns?', 'eine Möhre', ['ein Stein', 'ein Ast']], ['Mit wem baut Noah den Schneemann?', 'mit seiner Schwester', ['mit Papa', 'allein']], ['Was trinken die Kinder am Ende?', 'warmen Kakao', ['kalten Saft', 'Wasser']]] },
+  { lv: 1, t: 'Der Fußballplatz', x: 'Jeden Mittwoch hat Lea Fußballtraining. Zuerst laufen alle Kinder drei Runden um den Platz. Dann üben sie Pässe. Lea schießt den Ball genau zu Emil. Zum Schluss gibt es ein kleines Spiel. Lea steht im Tor. Sie hält zwei Schüsse und springt dabei durch den Matsch. Ihre Hose ist ganz braun. Die Trainerin sagt: „Super gehalten, Lea!“ Lea ist sehr stolz.',
+    q: [['Wann hat Lea Training?', 'jeden Mittwoch', ['jeden Sonntag', 'jeden Freitag']], ['Was machen die Kinder zuerst?', 'Sie laufen drei Runden.', ['Sie spielen sofort.', 'Sie trinken etwas.']], ['Warum ist Leas Hose braun?', 'Sie ist durch den Matsch gesprungen.', ['Sie hat sie braun angemalt.', 'Die Hose war schon immer braun.']], ['Welche Aufgabe hat Lea im Spiel?', 'Sie ist Torhüterin.', ['Sie ist Schiedsrichterin.', 'Sie schaut zu.']]] },
+  { lv: 1, t: 'Die Kresse', x: 'In der Schule säen die Kinder Kresse. Jedes Kind bekommt einen kleinen Teller mit Watte. Die Watte wird nass gemacht. Dann streuen die Kinder die Samen darauf. Die Teller stehen am Fenster in der Sonne. Jeden Tag gießen die Kinder ein bisschen Wasser dazu. Schon nach drei Tagen sind kleine grüne Pflanzen zu sehen. Nach einer Woche wird geerntet. Die Kresse schmeckt lecker auf einem Butterbrot.',
+    q: [['Worauf streuen die Kinder die Samen?', 'auf nasse Watte', ['auf trockenen Sand', 'auf einen Stein']], ['Wo stehen die Teller?', 'am Fenster in der Sonne', ['im dunklen Schrank', 'im Kühlschrank']], ['Was braucht die Kresse zum Wachsen?', 'Wasser und Licht', ['Saft und Dunkelheit', 'nur Luft']], ['Was passiert nach einer Woche?', 'Die Kresse wird geerntet.', ['Die Samen werden gesät.', 'Die Kresse wird weggeworfen.']]] },
+  { lv: 2, t: 'Die Erfindung der Brille', x: 'Vor sehr langer Zeit hatten Menschen, die schlecht sahen, ein großes Problem. Wer nicht mehr gut lesen konnte, war auf die Hilfe anderer angewiesen. Vor ungefähr 750 Jahren entdeckten Menschen in Italien, dass geschliffenes Glas Buchstaben größer erscheinen lässt. Sie setzten zwei solcher Gläser in einen Rahmen aus Holz oder Knochen. So entstand die erste Brille. Bügel für die Ohren gab es damals noch nicht. Man musste die Brille mit der Hand vor die Augen halten oder auf die Nase klemmen. Erst viel später kamen die Bügel dazu. Heute tragen in Deutschland mehr als die Hälfte aller Erwachsenen eine Brille. Es gibt sie in allen Farben und Formen, und für den Sport gibt es sogar Brillen, die nicht zerbrechen.',
+    q: [['Wo wurde die erste Brille erfunden?', 'in Italien', ['in Deutschland', 'in China']], ['Was entdeckten die Menschen damals?', 'Geschliffenes Glas macht Buchstaben größer.', ['Glas kann man essen.', 'Holz ist durchsichtig.']], ['Was fehlte den ersten Brillen?', 'die Bügel für die Ohren', ['das Glas', 'der Rahmen']], ['Was bedeutet „auf die Hilfe anderer angewiesen“?', 'Man brauchte andere, die halfen.', ['Man half anderen gern.', 'Man wollte keine Hilfe.']]] },
+  { lv: 2, t: 'Das Turnier', x: 'Die Mannschaft der Grundschule am Deich hatte noch nie ein Turnier gewonnen. In diesem Jahr war alles anders. Im ersten Spiel siegten sie knapp mit 1:0. Im zweiten Spiel gab es ein Unentschieden. Dann kam das Halbfinale gegen die Schule vom Hafen, die als beste Mannschaft galt. Nach fünf Minuten lagen sie schon 0:2 zurück. In der Pause sagte Trainerin Frau Behrens nur einen Satz: „Spielt zusammen, nicht jeder für sich.“ Danach passten sich die Kinder den Ball viel öfter zu. Sie holten Tor um Tor auf und gewannen am Ende 3:2. Das Finale verloren sie zwar, aber die silbernen Medaillen hängen jetzt stolz im Flur der Schule.',
+    q: [['Wie endete das erste Spiel?', '1:0 gewonnen', ['0:2 verloren', 'unentschieden']], ['Was riet die Trainerin in der Pause?', 'Zusammenspielen statt allein', ['Schneller laufen', 'Lauter jubeln']], ['Warum konnte die Mannschaft das Halbfinale noch gewinnen?', 'Weil sie besser zusammenspielte', ['Weil der Gegner nach Hause ging', 'Weil es geregnet hat']], ['Welchen Platz erreichte die Mannschaft?', 'den zweiten Platz', ['den ersten Platz', 'den letzten Platz']]] },
+  { lv: 2, t: 'Wie der Honig entsteht', x: 'Eine Honigbiene fliegt an einem Tag zu Hunderten von Blüten. Mit ihrem Rüssel saugt sie den süßen Nektar auf und sammelt ihn in ihrem Honigmagen. Zurück im Bienenstock gibt sie den Nektar an andere Bienen weiter. Diese geben ihn wieder weiter, und jedes Mal kommen wichtige Stoffe aus dem Bienenkörper dazu. Dann wird der Nektar in kleine sechseckige Waben gefüllt. Die Bienen fächeln mit ihren Flügeln Luft darüber, bis das meiste Wasser verdunstet ist. Zum Schluss verschließen sie die Waben mit einem Deckel aus Wachs. Für ein einziges Glas Honig müssen die Bienen eines Volkes zusammen so weit fliegen, als würden sie mehrmals um die ganze Erde reisen.',
+    q: [['Womit saugt die Biene den Nektar auf?', 'mit ihrem Rüssel', ['mit den Beinen', 'mit den Flügeln']], ['Welche Form haben die Waben?', 'sechseckig', ['rund', 'dreieckig']], ['Warum fächeln die Bienen mit den Flügeln?', 'Damit das Wasser verdunstet', ['Damit ihnen nicht kalt ist', 'Damit sie schneller fliegen']], ['Was zeigt der letzte Satz?', 'Für Honig müssen Bienen sehr viel arbeiten.', ['Bienen reisen gern um die Welt.', 'Honig kommt aus anderen Ländern.']]] },
+  { lv: 2, t: 'Der Leuchtturmwärter', x: 'Früher wohnte in jedem Leuchtturm ein Leuchtturmwärter. Sein Leben war einsam und anstrengend. Jeden Abend stieg er die vielen Stufen hinauf und zündete die Lampe an. Die ganze Nacht musste er wach bleiben, Öl nachfüllen und die Glasscheiben putzen, denn das Licht durfte niemals ausgehen. Bei Sturm und Nebel war seine Arbeit besonders wichtig. Dann verließen sich die Kapitäne der Schiffe ganz auf das Licht, um nicht auf Sandbänke oder Felsen zu fahren. Heute arbeiten die Leuchttürme automatisch. Computer schalten das Licht ein und aus. Viele alte Leuchttürme sind zu Museen geworden, und manche kann man sogar besteigen und von oben weit über das Meer schauen.',
+    q: [['Was musste der Wärter jede Nacht tun?', 'wach bleiben und die Lampe pflegen', ['das Schiff steuern', 'Fische fangen']], ['Wann war seine Arbeit besonders wichtig?', 'bei Sturm und Nebel', ['bei Sonnenschein', 'am Mittag']], ['Warum durfte das Licht niemals ausgehen?', 'Sonst konnten Schiffe auf Felsen fahren.', ['Sonst war es im Turm zu kalt.', 'Sonst konnte der Wärter nicht lesen.']], ['Was ist heute anders?', 'Die Leuchttürme arbeiten automatisch.', ['Es gibt keine Schiffe mehr.', 'Der Wärter wohnt jetzt unten.']]] },
+  { lv: 2, t: 'Ein Tag ohne Strom', x: 'Als Paula am Samstagmorgen das Licht einschalten wollte, blieb es dunkel. Auch der Kühlschrank brummte nicht mehr. „Stromausfall im ganzen Viertel“, sagte Papa nach einem Blick aus dem Fenster. Zuerst fand Paula das spannend. Doch dann merkte sie, wie viel ohne Strom nicht funktionierte: kein warmer Toast, kein Radio und kein Aufladen des Tablets. Mama holte Kerzen und das alte Brettspiel vom Dachboden. Zum Mittagessen gab es Brot, Käse und Obst. Am Nachmittag spielte die ganze Familie zusammen und lachte viel. Als am Abend plötzlich alle Lampen wieder angingen, sagte Paula etwas überrascht: „Eigentlich war das ein richtig schöner Tag.“',
+    q: [['Woran merkte Paula zuerst den Stromausfall?', 'Das Licht ging nicht an.', ['Das Telefon klingelte.', 'Es wurde heiß.']], ['Was holte Mama vom Dachboden?', 'Kerzen und ein Brettspiel', ['einen Fernseher', 'einen Föhn']], ['Warum gab es mittags Brot statt Toast?', 'Der Toaster funktionierte ohne Strom nicht.', ['Paula mag keinen Toast.', 'Der Toast war alle.']], ['Wie fand Paula den Tag am Ende?', 'schön', ['langweilig', 'schrecklich']]] },
+  { lv: 2, t: 'Die Reise der Störche', x: 'Im Frühling kommen die Störche nach Niedersachsen zurück. Viele von ihnen haben den Winter in Afrika verbracht, mehr als 5000 Kilometer entfernt. Für die lange Reise nutzen sie warme Luft, die vom Boden aufsteigt. Darin kreisen sie ohne Flügelschlag immer höher und gleiten dann weiter. Über das offene Meer fliegen Störche nicht gern, weil dort keine warme Luft aufsteigt. Deshalb nehmen viele den Umweg über Spanien oder über die Türkei. Zurück in ihrem Dorf bauen sie ihr altes Nest auf einem Dach oder einem Mast wieder aus. Ein Storchennest kann so schwer werden wie ein kleines Auto. Bis zum Sommer schlüpfen dort die Jungen, und im Herbst beginnt die große Reise von vorn.',
+    q: [['Wo verbringen viele Störche den Winter?', 'in Afrika', ['in Niedersachsen', 'am Nordpol']], ['Was nutzen Störche für ihren Flug?', 'aufsteigende warme Luft', ['starken Regen', 'Schiffe']], ['Warum fliegen Störche nicht gern über das Meer?', 'Dort steigt keine warme Luft auf.', ['Sie haben Angst vor Fischen.', 'Das Meer ist zu laut.']], ['Was bedeutet „gleiten“?', 'ohne Flügelschlag durch die Luft fliegen', ['schnell mit den Flügeln schlagen', 'auf dem Boden laufen']]] },
+  { lv: 2, t: 'Der Streit um den Kicker', x: 'In der Pause gab es jeden Tag Ärger am Tischkicker. Die Kinder aus der vierten Klasse waren immer zuerst da und gaben ihn nicht mehr her. Die Jüngeren standen daneben und warteten vergeblich. Eines Tages sprach Yusuf aus der dritten Klasse das Problem im Klassenrat an. Gemeinsam überlegten die Kinder eine Lösung. Sie schrieben einen Plan: Jede Klasse bekommt einen festen Tag am Kicker, und ein Spiel dauert nur bis fünf Tore. Der Plan wurde an die Wand gehängt. Am Anfang murrten einige Große. Doch schon nach einer Woche merkten alle, dass es so viel friedlicher war. Und weil jetzt mehr Kinder spielen konnten, wurden auch die Jüngeren richtig gut.',
+    q: [['Wer blockierte den Kicker?', 'die Kinder aus der vierten Klasse', ['die Lehrer', 'die Erstklässler']], ['Wo sprach Yusuf das Problem an?', 'im Klassenrat', ['beim Elternabend', 'im Sportunterricht']], ['Welche Regel steht im Plan?', 'Ein Spiel dauert bis fünf Tore.', ['Nur Große dürfen spielen.', 'Der Kicker wird abgebaut.']], ['Was bedeutet „vergeblich warten“?', 'warten, ohne dass es etwas bringt', ['sehr gerne warten', 'gar nicht warten']]] },
+  { lv: 2, t: 'Wie kommt das Wasser in den Wasserhahn?', x: 'Wenn du den Wasserhahn aufdrehst, kommt sofort sauberes Wasser heraus. Dahinter steckt ein langer Weg. In Niedersachsen stammt das meiste Trinkwasser aus dem Grundwasser. Das ist Regenwasser, das langsam durch viele Schichten aus Sand und Kies im Boden gesickert ist. Dabei wird es auf natürliche Weise gereinigt. Pumpen holen das Grundwasser aus großer Tiefe nach oben. Im Wasserwerk wird es noch einmal gefiltert und genau geprüft. Danach fließt es durch ein riesiges Netz aus Rohren unter den Straßen bis in jedes Haus. Trinkwasser ist eines der am besten kontrollierten Lebensmittel in Deutschland. Trotzdem sollten wir sparsam damit umgehen, denn sauberes Wasser ist kostbar.',
+    q: [['Woher kommt in Niedersachsen das meiste Trinkwasser?', 'aus dem Grundwasser', ['aus dem Meer', 'aus Flaschen']], ['Wodurch wird das Regenwasser im Boden gereinigt?', 'durch Schichten aus Sand und Kies', ['durch Seife', 'durch Feuer']], ['Was passiert im Wasserwerk?', 'Das Wasser wird gefiltert und geprüft.', ['Das Wasser wird gefärbt.', 'Das Wasser wird gekocht und weggeschüttet.']], ['Was bedeutet „kostbar“?', 'sehr wertvoll', ['sehr billig', 'sehr laut']]] }
+];
+const LESETEXTE_LV = { 1: [], 2: [] };
+LESETEXTE.forEach((T, i) => LESETEXTE_LV[T.lv].push(i));
+function genLesetext(ctx) {
+
+  const lv = ctx.lv >= 2 ? 2 : 1, rund = typeof G !== 'undefined' && G && G.mode === 'game' && G.id === 'lesetext';
+  let ti, qi, nr = 0;
+  if (rund) {
+    const slot = Math.floor(G.i / 4); G.lesetexte = G.lesetexte || {};
+    if (G.lesetexte[slot] == null) G.lesetexte[slot] = ctx.draw(LESETEXTE_LV[lv]);
+    ti = G.lesetexte[slot]; qi = G.i % 4; nr = qi + 1;
+  } else { ti = R.pick(LESETEXTE_LV[lv]); qi = R.int(0, 3); }
+  const T = LESETEXTE[ti], [q, a, w] = T.q[qi];
+  return mkChoice({ prompt: nr ? `Frage ${nr} von 4: ${q}` : q, visual: `<div class="q-text ld long"><b>${esc(T.t)}</b><br>${esc(T.x)}</div>`, answer: a, wrong: w, layout: 'col',
+    explain: 'Lies noch einmal genau nach. Die Antwort steht im Text oder lässt sich daraus schließen.', key: 'lt' + ti + '-' + qi, say: (nr <= 1 ? T.t + '. ' + T.x + ' ' : '') + q });
+}
+
+/*@@src data_k34_252.js@@*/
+
+
+
+
+
+
+const FALL_N = ['Nominativ', 'Genitiv', 'Dativ', 'Akkusativ'], FALL_Q = ['Wer oder was?', 'Wessen?', 'Wem?', 'Wen oder was?'];
+
+const FAELLE = [
+  ['Der [Hund] bellt laut.', 0], ['[Meine Oma] backt einen Kuchen.', 0], ['Heute scheint [die Sonne].', 0], ['[Das Kind] spielt im Sand.', 0], ['Im Teich schwimmt [eine Ente].', 0], ['[Der Ball] rollt ins Tor.', 0],
+  ['Das ist das Fahrrad [meines Bruders].', 1], ['Die Farbe [des Autos] ist rot.', 1], ['Der Schwanz [der Katze] ist lang.', 1], ['Das Dach [des Hauses] ist undicht.', 1], ['Die Blätter [des Baumes] werden gelb.', 1], ['Der Name [des Hundes] ist Bello.', 1],
+  ['Ich gebe [dem Lehrer] das Heft.', 2], ['Paul hilft [seiner Mutter].', 2], ['Das Buch gehört [dem Mädchen].', 2], ['Wir schenken [unserem Opa] ein Bild.', 2], ['Lena winkt [ihrer Freundin].', 2], ['Der Arzt hilft [dem Kind].', 2],
+  ['Lena sucht [ihren Schlüssel].', 3], ['Ich esse [einen Apfel].', 3], ['Wir besuchen [den Zoo].', 3], ['Tim liest [ein Buch].', 3], ['Die Katze fängt [eine Maus].', 3], ['Mama kauft [das Brot].', 3]
+];
+function genFaelle(ctx) {
+  const [s, f] = ctx.draw(FAELLE), wg = s.match(/\[(.*?)\]/)[1], satz = s.replace(/\[(.*?)\]/, (_, w) => `<b class="fall-hl">${esc(w)}</b>`);
+  const frage = s.replace(/\[(.*?)\]/, FALL_Q[f].replace(' oder was', '').replace('?', '').toLowerCase()).replace(/^./, c => c.toUpperCase());
+  const vis = `<div class="q-sentence">${satz.replace(/^([^<]*)/, m => esc(m)).replace(/(<\/b>)([^<]*)$/, (_, b, r) => b + esc(r))}</div>`;
+  const tip = `Frage: ${FALL_Q[f]} „${wg}“ steht im ${FALL_N[f]}.`;
+  if (ctx.lv === 1 || R.chance(.4)) return mkChoice({ prompt: 'Mit welcher Frage findest du das fett gedruckte Wort?', visual: vis, answer: FALL_Q[f], wrong: FALL_Q.filter((_, k) => k !== f), fixed: true, order: FALL_Q, layout: 'grid2', explain: tip, key: 'fq' + s, say: s.replace(/[[\]]/g, '') });
+  return mkChoice({ prompt: 'In welchem Fall steht das fett gedruckte Wort?', visual: vis, answer: FALL_N[f], wrong: FALL_N.filter((_, k) => k !== f), fixed: true, order: FALL_N, layout: 'grid2', explain: tip, key: 'fn' + s, say: s.replace(/[[\]]/g, '') });
+}
+
+
+const ADJ_ST = [
+  ['groß', 'größer', 'am größten', ['großer', 'am großesten']], ['klein', 'kleiner', 'am kleinsten', ['kleinerer', 'am kleinesten']], ['schnell', 'schneller', 'am schnellsten', ['schnellerer', 'am schnellesten']],
+  ['gut', 'besser', 'am besten', ['guter', 'am gutesten']], ['viel', 'mehr', 'am meisten', ['vieler', 'am vielsten']], ['gern', 'lieber', 'am liebsten', ['gerner', 'am gernsten']],
+  ['hoch', 'höher', 'am höchsten', ['hocher', 'am hochsten']], ['nah', 'näher', 'am nächsten', ['naher', 'am nahsten']], ['alt', 'älter', 'am ältesten', ['alter', 'am altesten']],
+  ['jung', 'jünger', 'am jüngsten', ['junger', 'am jungsten']], ['warm', 'wärmer', 'am wärmsten', ['warmer', 'am warmsten']], ['kalt', 'kälter', 'am kältesten', ['kalter', 'am kaltsten']],
+  ['lang', 'länger', 'am längsten', ['langer', 'am langsten']], ['kurz', 'kürzer', 'am kürzesten', ['kurzer', 'am kurzsten']], ['stark', 'stärker', 'am stärksten', ['starker', 'am starksten']],
+  ['dunkel', 'dunkler', 'am dunkelsten', ['dunkeler', 'am dunklesten']], ['teuer', 'teurer', 'am teuersten', ['teuerer', 'am teursten']], ['laut', 'lauter', 'am lautesten', ['lautner', 'am lautsten']],
+  ['klug', 'klüger', 'am klügsten', ['kluger', 'am klugsten']], ['weit', 'weiter', 'am weitesten', ['weiterer', 'am weitsten']], ['leicht', 'leichter', 'am leichtesten', ['leichterer', 'am leichtsten']]
+];
+const ADJ_STUFE = ['Grundstufe', 'Vergleichsstufe', 'Höchststufe'];
+
+const ADJ_SAETZE = [
+  ['Ein Elefant ist ___ als eine Maus.', 'schwerer', ['schwer', 'am schwersten']], ['Der Gepard ist das ___ Landtier der Welt.', 'schnellste', ['schneller', 'schnell']],
+  ['Im Winter ist es ___ als im Sommer.', 'kälter', ['kalter', 'am kältesten']], ['Mein Opa ist ___ als mein Papa.', 'älter', ['alter', 'alt']],
+  ['Ein Kilo Federn ist genauso ___ wie ein Kilo Steine.', 'schwer', ['schwerer', 'am schwersten']], ['Der Brocken ist ___ als der Deich.', 'höher', ['hocher', 'hoch']],
+  ['Von allen Kindern rennt Ella ___.', 'am schnellsten', ['schneller', 'schnell']], ['Ich esse Erdbeeren ___ als Bananen.', 'lieber', ['gerner', 'gern']],
+  ['Heute ist es genauso ___ wie gestern.', 'warm', ['wärmer', 'am wärmsten']], ['Die Nacht ist ___ als der Tag.', 'dunkler', ['dunkeler', 'dunkel']]
+];
+function genAdjSteigern(ctx) {
+  const t = R.int(0, ctx.lv === 1 ? 1 : 3);
+  if (t === 0) { const a = ctx.draw(ADJ_ST); return mkChoice({ prompt: `Steigere das Adjektiv: ${a[0]}, …`, visual: `<div class="q-word big">${esc(a[0])} → ?</div>`, answer: a[1], wrong: [a[3][0], a[2]], explain: `${a[0]}, ${a[1]}, ${a[2]}`, key: 'as1' + a[0], say: a[0] }); }
+  if (t === 1) { const a = ctx.draw(ADJ_ST); return mkChoice({ prompt: `Wie heißt die Höchststufe von „${a[0]}“?`, visual: `<div class="q-word big">${esc(a[0])}, ${esc(a[1])}, …</div>`, answer: a[2], wrong: [a[3][1], a[1]], explain: `${a[0]}, ${a[1]}, ${a[2]}`, key: 'as2' + a[0], say: a[0] + ', ' + a[1] }); }
+  if (t === 2) { const a = ctx.draw(ADJ_ST), k = R.int(0, 2), w = a[k]; return mkChoice({ prompt: `Welche Stufe ist „${w}“?`, visual: `<div class="q-word big">${esc(w)}</div>`, answer: ADJ_STUFE[k], wrong: ADJ_STUFE.filter((_, i) => i !== k), fixed: true, order: ADJ_STUFE, explain: `${a[0]} ist die Grundstufe, ${a[1]} die Vergleichsstufe und ${a[2]} die Höchststufe.`, key: 'as3' + w, say: w }); }
+  const [s, a, w] = ctx.draw(ADJ_SAETZE);
+  return mkChoice({ prompt: 'Welches Wort passt in die Lücke?', visual: `<div class="q-sentence">${esc(s).replace('___', '<span class="q-gap">&nbsp;</span>')}</div>`, answer: a, wrong: w, explain: s.replace('___', a), key: 'as4' + s, say: s.replace('___', '…') });
+}
+
+function genZahlenfolge(ctx) {
+  const lv = ctx.lv; let seq, rule;
+  const t = R.int(0, lv === 1 ? 2 : 5);
+  if (t <= 1) { const d = R.pick([2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 15, 25]), up = t === 0, a = up ? R.int(1, 60) : R.int(5 * d + 10, 150); seq = [0, 1, 2, 3, 4, 5].map(k => a + (up ? 1 : -1) * k * d); rule = `immer ${up ? 'plus' : 'minus'} ${d}`; }
+  else if (t === 2) { const p = R.int(3, 9), q = R.int(1, p - 1), a = R.int(2, 40); seq = [a]; for (let k = 1; k < 6; k++) seq.push(seq[k - 1] + (k % 2 ? p : -q)); rule = `abwechselnd plus ${p} und minus ${q}`; }
+  else if (t === 3) { const a = R.int(1, 6); seq = [0, 1, 2, 3, 4, 5].map(k => a * 2 ** k); rule = 'immer das Doppelte'; }
+  else if (t === 4) { const a = R.int(1, 30); seq = [a]; for (let k = 1; k < 6; k++) seq.push(seq[k - 1] + k); rule = 'erst plus 1, dann plus 2, dann plus 3 und so weiter'; }
+  else { const d = R.pick([25, 50, 75, 125, 250]), a = R.pick([100, 200, 250, 500]); seq = [0, 1, 2, 3, 4, 5].map(k => a + k * d); rule = `immer plus ${d}`; }
+  const ans = seq[5], diff = Math.abs(seq[5] - seq[4]) || 1, wrong = [...new Set([ans + diff, ans - diff, seq[4] + (seq[4] - seq[3]) + (t === 2 ? 0 : 1), ans + 10].filter(x => x !== ans && x >= 0))].slice(0, 3);
+  return mkChoice({ prompt: 'Wie geht die Zahlenfolge weiter?', visual: `<div class="q-word big">${seq.slice(0, 5).map(fmtN).join(', ')}, ?</div>`, answer: fmtN(ans), wrong: wrong.map(fmtN), layout: 'grid2', explain: `Die Regel heißt: ${rule}. Darum kommt ${fmtN(ans)}.`, key: 'zf' + seq.join(','), say: seq.slice(0, 5).join(', ') });
+}
+
+function genZahlraetsel(ctx) {
+  const lv = ctx.lv, x = lv === 1 ? R.int(4, 60) : R.int(6, 120); let txt, steps;
+  const op1 = [
+    () => { const a = R.int(8, 45); return [`Wenn ich ${a} dazuzähle, erhalte ich ${x + a}.`, `${x + a} minus ${a}`]; },
+    () => { const a = R.int(3, Math.min(30, x - 1)); return [`Wenn ich ${a} abziehe, erhalte ich ${x - a}.`, `${x - a} plus ${a}`]; },
+    () => { const a = R.int(2, 9); return [`Wenn ich sie mit ${a} malnehme, erhalte ich ${x * a}.`, `${x * a} geteilt durch ${a}`]; },
+    () => { const a = R.int(2, 9), y = x * a; return [`Wenn ich die Zahl ${y} durch meine Zahl teile, erhalte ich ${a}.`, `${y} geteilt durch ${a}`]; }
+  ];
+  if (lv === 1 || R.chance(.35)) { const [t, s] = R.pick(x <= 12 ? op1 : op1.slice(0, 2))(); txt = t; steps = `Rechne rückwärts: ${s} ist ${x}.`; }
+  else { const a = R.int(2, 5), b = R.int(3, 25), plus = R.chance(.5), r = plus ? x * a + b : x * a - b; txt = `Ich nehme meine Zahl mal ${a} und ${plus ? 'zähle ' + b + ' dazu' : 'ziehe ' + b + ' ab'}. Dann erhalte ich ${r}.`; steps = `Rechne rückwärts: ${r} ${plus ? 'minus' : 'plus'} ${b} ist ${x * a}, und ${x * a} geteilt durch ${a} ist ${x}.`; }
+  const w = [...new Set([x + 1, x - 1, x + 10, x * 2, x + 2].filter(v => v > 0 && v !== x))].slice(0, 3);
+  return mkChoice({ prompt: 'Ich denke mir eine Zahl. Welche ist es?', visual: `<div class="q-text">🤔 ${esc(txt)}</div>`, answer: String(x), wrong: w.map(String), layout: 'grid2', explain: steps, key: 'zr' + txt, say: 'Ich denke mir eine Zahl. ' + txt });
+}
+(() => {
+  const neu = (id, o) => { if (!GAMES[id]) GAMES[id] = Object.assign({ id }, o); };
+  neu('lesetext', { g: 'd-lesen', w: 'deutsch', t: 'Lesetexte mit Fragen', d: 'Ein Text, vier Fragen', i: '📖', gen: genLesetext, max: 2, start: [1, 1, 2, 2], n: 8 });
+  neu('faelle', { g: 'd-grammatik', w: 'deutsch', t: 'Die vier Fälle', d: 'Wer? Wessen? Wem? Wen?', i: '🔍', gen: genFaelle, max: 2, start: [1, 1, 1, 2], kl: 3 });
+  neu('adjsteigern', { g: 'd-grammatik', w: 'deutsch', t: 'Adjektive steigern', d: 'groß, größer, am größten', i: '📈', gen: genAdjSteigern, max: 2, start: [1, 1, 1, 2], kl: 3 });
+  neu('zahlenfolge', { g: 'm-zahlen', w: 'mathe', t: 'Zahlenfolgen', d: 'Finde die Regel!', i: '🔢', gen: genZahlenfolge, max: 2, start: [1, 1, 1, 2], kl: 3 });
+  neu('zahlraetsel', { g: 'm-rechnen', w: 'mathe', t: 'Zahlenrätsel', d: 'Ich denke mir eine Zahl …', i: '🤔', gen: genZahlraetsel, max: 2, start: [1, 1, 1, 2], kl: 3 });
+})();
+
 /*@@src zufall250.js@@*/
 
 
 
 
 
-const ZUF_W = { mathe: '➕', deutsch: '📚', englisch: '🇬🇧', spanisch: '🇪🇸', sach: '🔬', wissen: '🌍', kunst: '🎨' };
+const ZUF_W = { mathe: '➕', deutsch: '📚', englisch: '🇬🇧', spanisch: '🇪🇸', sach: '🔬', wissen: '🌍', kunst: '🎨', werte: '🤝' };
 function zufPool() {
   return Object.keys(GAMES).filter(id => { const g = GAMES[id]; return g && g.w !== 'meine' && ZUF_W[g.w] && (g.gen || g.type === 'custom' || g.type === 'memory') && g.type !== 'tool' && g.type !== 'blitz' && klStatus(id) === 'ok'; });
 }
