@@ -8061,8 +8061,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '2.50.0';
-  var MAP = {"probe":0,"files":[[8051,"fehler_kern.js"],[8339,null],[8341,"data.js"],[9028,"data_more.js"],[9382,"data_su2.js"],[9603,"data_es.js"],[9942,"data_wissen.js"],[10124,"data_v21.js"],[10748,"data_v24.js"],[11199,"data_v25.js"],[11647,"data_v26.js"],[11746,"data_v29.js"],[12051,"data_v30.js"],[12375,"data_v31.js"],[12675,"data_kunst.js"],[12871,"data_v214.js"],[12974,"data_v216.js"],[13267,"schrift.js"],[13567,"eingabe.js"],[13778,"data_k34m.js"],[14292,"data_k34d.js"],[14625,"data_k34s.js"],[15014,"data_v224.js"],[15882,"data_v225w.js"],[16251,"data_v225k.js"],[16695,"data_herz.js"],[17049,"data_fb226.js"],[17192,"data_tf226.js"],[17399,"data_v227a.js"],[18490,"data_v227b.js"],[19444,"data_h28b.js"],[19484,"data_l28a.js"],[20350,"data_l28b.js"],[21530,"data_schaetz.js"],[22012,"data_party8.js"],[22062,"data_alce.js"],[22722,"data_alce2.js"],[22971,"data_alce3.js"],[23386,"registry.js"],[23899,"app.js"],[25009,"fun.js"],[25589,"fun2.js"],[25905,"atelier.js"],[26279,"kunst225.js"],[26469,"herz.js"],[26833,"reise.js"],[27135,"iglu.js"],[27301,"offline.js"],[27408,"party.js"],[27892,"meine.js"],[28248,"loeffel.js"],[28419,"trend.js"],[28961,"fun228a.js"],[29812,"fun228b.js"],[30473,"kueche.js"],[31512,"stimme.js"],[31567,"klassen.js"],[31716,"freunde_vorab.js"],[31737,"mut.js"],[32157,"schule.js"],[32646,"fussball226.js"],[32968,"schaetzen.js"],[33399,"party8.js"],[34018,"tiere.js"],[34477,"fussball232.js"],[34692,"party8b.js"],[34994,"weg.js"],[35211,"px.js"],[35622,"px_data.js"],[35879,"pxwelt.js"],[35960,"px_abenteuer.js"],[36803,"px_ski.js"],[37445,"px_wurf.js"],[37974,"px_insel.js"],[39175,"px_kicker.js"],[40110,"px_eis.js"],[41096,"px_run.js"],[42311,"px_brk.js"],[43273,"px_pol.js"],[44624,"px_frog.js"],[45884,"px_angel.js"],[47199,"px_golf.js"],[48233,"px_tauch.js"],[49498,"px_hockey.js"],[50454,"px_lab.js"],[51789,"px_plopp.js"],[52995,"px_stadion.js"],[54499,"cm.js"],[54989,"cmwelt.js"],[55045,"cm_baeck.js"],[55838,"cm_bahn.js"],[56602,"cm_detek.js"],[57319,"cm_markt.js"],[58032,"ff.js"],[58188,"ff_mathe.js"],[60178,"ff_deutsch.js"],[61766,"ff_sach_a.js"],[64015,"ff_sach_b.js"],[66244,"ff_sprachen.js"],[68652,"zm.js"],[69565,"tt.js"],[69778,"data_tagebuch.js"],[69821,"data_hoerspiel.js"],[69980,"leseecke.js"],[70299,"kt.js"],[70602,"alce.js"],[70765,"alce_aufg.js"],[70935,"formen.js"],[71384,"data_formen.js"],[71625,"data_formen2.js"],[71847,"spielzeit.js"],[71992,"data_faktmeinung.js"],[72111,"data_es248.js"],[72375,"data_en249.js"],[72609,"data_wissen249.js"],[72949,"data_kunst249.js"],[73195,"data_fussball250.js"],[73319,"zufall250.js"],[73365,"sicher.js"],[73549,"stil.js"],[73603,"freunde.js"],[73740,"start.js"],[73750,null],[73760,null]]}; // [[Zeile der Markierung, 'datei.js'], …] – trägt build.py ein
+  var VER = '2.51.0';
+  var MAP = {"probe":0,"files":[[8051,"fehler_kern.js"],[8339,null],[8341,"data.js"],[9028,"data_more.js"],[9382,"data_su2.js"],[9603,"data_es.js"],[9942,"data_wissen.js"],[10124,"data_v21.js"],[10748,"data_v24.js"],[11199,"data_v25.js"],[11647,"data_v26.js"],[11746,"data_v29.js"],[12051,"data_v30.js"],[12375,"data_v31.js"],[12675,"data_kunst.js"],[12871,"data_v214.js"],[12974,"data_v216.js"],[13267,"schrift.js"],[13567,"eingabe.js"],[13778,"data_k34m.js"],[14292,"data_k34d.js"],[14625,"data_k34s.js"],[15014,"data_v224.js"],[15882,"data_v225w.js"],[16251,"data_v225k.js"],[16695,"data_herz.js"],[17049,"data_fb226.js"],[17192,"data_tf226.js"],[17399,"data_v227a.js"],[18490,"data_v227b.js"],[19444,"data_h28b.js"],[19484,"data_l28a.js"],[20350,"data_l28b.js"],[21530,"data_schaetz.js"],[22012,"data_party8.js"],[22062,"data_alce.js"],[22722,"data_alce2.js"],[22971,"data_alce3.js"],[23386,"registry.js"],[23899,"app.js"],[25010,"fun.js"],[25590,"fun2.js"],[25906,"atelier.js"],[26280,"kunst225.js"],[26470,"herz.js"],[26834,"reise.js"],[27136,"iglu.js"],[27302,"offline.js"],[27409,"party.js"],[27893,"meine.js"],[28249,"loeffel.js"],[28420,"trend.js"],[28962,"fun228a.js"],[29813,"fun228b.js"],[30474,"kueche.js"],[31513,"stimme.js"],[31568,"klassen.js"],[31717,"freunde_vorab.js"],[31738,"mut.js"],[32158,"schule.js"],[32647,"fussball226.js"],[32969,"schaetzen.js"],[33400,"party8.js"],[34019,"tiere.js"],[34478,"fussball232.js"],[34693,"party8b.js"],[34995,"weg.js"],[35212,"px.js"],[35623,"px_data.js"],[35880,"pxwelt.js"],[35961,"px_abenteuer.js"],[36762,"px_abenteuer2.js"],[37511,"px_ski.js"],[38153,"px_wurf.js"],[38682,"px_insel.js"],[39883,"px_kicker.js"],[40818,"px_eis.js"],[41804,"px_run.js"],[43019,"px_brk.js"],[43981,"px_pol.js"],[45332,"px_frog.js"],[46592,"px_angel.js"],[47907,"px_golf.js"],[48941,"px_tauch.js"],[50206,"px_hockey.js"],[51162,"px_lab.js"],[52497,"px_plopp.js"],[53703,"px_stadion.js"],[55207,"cm.js"],[55697,"cmwelt.js"],[55753,"cm_baeck.js"],[56546,"cm_bahn.js"],[57310,"cm_detek.js"],[58027,"cm_markt.js"],[58740,"ff.js"],[58896,"ff_mathe.js"],[60886,"ff_deutsch.js"],[62474,"ff_sach_a.js"],[64723,"ff_sach_b.js"],[66952,"ff_sprachen.js"],[69360,"zm.js"],[70273,"tt.js"],[70486,"data_tagebuch.js"],[70529,"data_hoerspiel.js"],[70688,"leseecke.js"],[71007,"kt.js"],[71310,"alce.js"],[71473,"alce_aufg.js"],[71643,"formen.js"],[72092,"data_formen.js"],[72333,"data_formen2.js"],[72555,"spielzeit.js"],[72700,"data_faktmeinung.js"],[72819,"data_es248.js"],[73083,"data_en249.js"],[73317,"data_wissen249.js"],[73657,"data_kunst249.js"],[73903,"data_fussball250.js"],[74027,"zufall250.js"],[74073,"sicher.js"],[74257,"stil.js"],[74311,"freunde.js"],[74448,"start.js"],[74458,null],[74468,null]]}; // [[Zeile der Markierung, 'datei.js'], …] – trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -23900,8 +23900,9 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '2.50.0';
+const APP_VERSION = '2.51.0';
 const CHANGELOG = [
+  { v: "2.51.0", d: "10.11.2026", t: ["Lumis Pixel-Abenteuer: vier neue Welten mit je 6 Leveln (Dschungel, Wüste, Wolkenhimmel, Fußballstadt)", "Neu: Lianen zum Schaukeln, Wackelsteine, Aufwind und Rasensprenger, neue Gegner und für jede Welt ein eigener Hut für Lumi"] },
   { v: "2.50.0", d: "10.11.2026", t: ["Neues Pixelspiel: Lumis Fußballstadion mit eigenem Team, Liga, Pokal, Elfmeterschießen und Zu zweit an einem Gerät", "Allgemeinwissen: neue Gruppe Fußballwissen mit Regeln, Stadion, Fußball rechnen und Fußballwörtern auf Englisch und Spanisch", "Startseite: neuer Knopf Zufallsaufgabe, Lumi würfelt ein Spiel aus allen Lernwelten"] },
   { v: "2.49.0", d: "09.11.2026", t: ["Englisch: 15 neue Wortfelder, neue Satzübungen und englische Geschichten zum Lesen und Hören", "Allgemeinwissen: Forscherfragen & Experimente mit 16 Themen, dazu Kanaren, Europa, Olympia, Römer und Piraten", "Kunst: neue Gruppe Musik mit Noten und Instrumenten, Schatten raten, Spiegelbild, Muster, Farbtöne und mehr"] },
   { v: "2.48.0", d: "09.11.2026", t: ["Spanisch: rund 200 neue Wörter und sechs neue Themen (Freizeit, Stadt, Natur, Verkehr, Berufe, Tätigkeiten)", "Spanisch: Cuentos cortos zum Lesen und Hören, Dictado, ¿Qué oyes?, Tabla de verbos und Detective de ortografía"] },
@@ -35962,6 +35963,7 @@ Object.assign(ACT, {
 
 
 
+
 const PXA_LEVELS = [
   { n: "Schneestrand", th: "tag", wd: 1, m: [
     "                                                                                                               #",
@@ -36173,6 +36175,7 @@ function pxAHoehlenLayer(H) {
 
 function pxABuild(i) {
   const D = PXA_LEVELS[i], h = D.m.length, w = D.m[0].length, grid = D.m.map(r => r.split(''));
+  const W2b = PXA_W2[D.th];
   const A = { i, D, w, h, grid, ents: [], fish: 0, fishMax: 0, stars: new Set(), hearts: 3, solved: 0, t: 0, phase: 'play', cam: 0, shake: 0, msgT: 2.6, deaths: 0 };
   const E = (o) => { A.ents.push(o); return o; };
   let sid = 0;
@@ -36183,10 +36186,12 @@ function pxABuild(i) {
     else if (c === 'o') { E({ k: 'fisch', x: px, y: py - 8, ph: x * .7 }); A.fishMax++; clear(); }
     else if (c === '*') { E({ k: 'stern', x: px, y: py - 8, id: sid++ }); clear(); }
     else if (c === 'H') { E({ k: 'herz', x: px, y: py - 8 }); clear(); }
-    else if (c === 'C') { E({ k: 'krabbe', x: px, y: py, dir: -1, w: 14, h: 10 }); clear(); }
+    else if (c === 'C') { E({ k: 'krabbe', x: px, y: py, dir: -1, w: 14, h: 10, sp: (W2b && W2b.small) || 'krabbe' }); clear(); }
     else if (c === 'R') { E({ k: 'werfer', x: px, y: py, cd: 1.2 }); clear(); }
-    else if (c === 'E') { E({ k: 'eidechse', x: px, y: py, dir: -1, w: 16, h: 8, wait: 0 }); clear(); }
-    else if (c === 'B') { E({ k: 'moewe', x0: px, x: px, y0: py - 8, y: py - 8, ph: x * .9, dir: 1, h: 10 }); clear(); }
+    else if (c === 'E') { E({ k: 'eidechse', x: px, y: py, y0: py, vy: 0, dir: -1, w: 16, h: 8, wait: 0, sp: (W2b && W2b.walker) || 'eidechse', hop: !!(W2b && W2b.walker === 'affe') }); clear(); }
+    else if (c === 'B') { E({ k: 'moewe', x0: px, x: px, y0: py - 8, y: py - 8, ph: x * .9, dir: 1, h: 10, sp: (W2b && W2b.flyer) || 'moewe' }); clear(); }
+    else if (c === 'L') { E({ k: 'liane', ax: px, ay: y * PXA_T + 2, len: 4 * PXA_T + 6, ang: 0, av: 0, ph: x * .7 }); clear(); }
+    else if (c === 'Z') { E({ k: 'wackel', tx: x, ty: y, st: 0, t: 0, fy: 0 }); }
     else if (c === 'W') { E({ k: 'duese', tx: x, ty: y, ph: (x * .37) % 3.2 }); }
     else if (c === 'K') { E({ k: 'fahne', x: px, y: py, up: false }); clear(); }
     else if (c === 'F') { E({ k: 'iglu', x: px, y: py }); clear(); }
@@ -36206,9 +36211,10 @@ function pxABuild(i) {
     const W2 = PXA_W2[D.th];
     if (W2 && (c === '#' || c === 'I')) {
       if (D.th === 'lava' && y <= 2) { pxDraw(g, 'k2_fels_' + (x % 2), X, Y); if (y + 1 < h && grid[y + 1][x] !== '#') pxDraw(g, 'glutdecke_a_0', X, Y + 16); }
+      else if (W2.ceil && y <= 2) pxDraw(g, 'k2_' + W2.ceil + '_' + (x % 2), X, Y);
       else pxDraw(g, 'k2_' + W2.gr + (up === '#' || up === 'I' ? '_' : 'o_') + ((x * 7 + y) % 3), X, Y);
     } else if (W2 && c === '^') pxDraw(g, 'k2_' + W2.haz + '_0', X, Y);
-    else if (W2 && c === 'W') pxDraw(g, 'k2_duese_0', X, Y);
+    else if (W2 && c === 'W') pxDraw(g, 'k2_' + (W2.jet || 'duese') + '_0', X, Y);
     else if (c === '#') {
       if (cave && y <= 2) { pxDraw(g, 'kachel_schnee_' + (x % 3), X, Y); if (y + 1 < h && grid[y + 1][x] !== '#') pxDraw(g, 'zapfdecke_a_0', X, Y + 16); }
       else pxDraw(g, (up === '#' || up === 'I' ? 'kachel_schnee_' : 'kachel_schneeo_') + ((x * 7 + y) % 3), X, Y);
@@ -36221,7 +36227,7 @@ function pxABuild(i) {
   return A;
 }
 function pxATile(A, tx, ty) { if (tx < 0 || tx >= A.w) return '#'; if (ty < 0) return ' '; if (ty >= A.h) return ' '; return A.grid[ty][tx]; }
-const pxASolid = c => c === '#' || c === 'I' || c === 'Q' || c === 'q' || c === 'T' || c === 'J' || c === 'W';
+const pxASolid = c => c === '#' || c === 'I' || c === 'Q' || c === 'q' || c === 'T' || c === 'J' || c === 'W' || c === 'Z';
 
 
 function pxAMoveX(A, p, onHit) {
@@ -36259,12 +36265,13 @@ function pxAPlay(i) {
   const p = () => A.p;
   const hurt = (from) => {
     const P = A.p; if (P.inv > 0 || A.phase !== 'play') return;
+    P.vine = null; P.vineCd = .5;
     A.hearts--; P.inv = 1.6; P.vy = -220; P.vx = (from != null ? Math.sign(P.x - from) || -P.dir : -P.dir) * 150; P.on = false; A.shake = .25; pxSfx.hurt();
     pxBurst(run, P.x, P.y - 8, ['#ef4b4b', '#ffffff'], 10);
     if (A.hearts <= 0) { A.deaths++; A.msg = 'Puh! Nochmal ab der Fahne.'; A.msgT = 2; pxAfter(run, 500, () => respawn(true)); }
   };
   const respawn = (full) => {
-    const P = A.p; P.x = A.cp.x; P.y = A.cp.y; P.vx = P.vy = 0; P.inv = 1.5; P.plat = null; if (full || A.hearts <= 0) A.hearts = 3;
+    const P = A.p; P.x = A.cp.x; P.y = A.cp.y; P.vx = P.vy = 0; P.inv = 1.5; P.plat = null; P.vine = null; if (full || A.hearts <= 0) A.hearts = 3;
     A.cam = Math.max(0, P.x - run.W * .4); pxBurst(run, P.x, P.y - 8, ['#ffffff', '#8fd0ff'], 14);
   };
   const ask = (title, sub, ok, bad) => { pxAsk(run, pxTask(), r => { if (r) { A.solved++; ok(); } else if (bad) bad(); }, { title, sub }); };
@@ -36293,16 +36300,19 @@ function pxAPlay(i) {
     const wl = pxAWorldLv(pxAW(i)), world = first && i === wl[wl.length - 1], wn = pxAW(i), nextW = i + 1 < PXA_LEVELS.length && pxAW(i + 1) !== wn;
     if (world) pxReward(100, 3);
     pxAfter(run, 1100, () => pxEnd(run, {
-      title: world ? `Welt ${wn} geschafft!` : 'Level geschafft!', big: world ? (wn === 1 ? '🏆🐧' : '🏆🌋') : '🎉', stars: [ns, 3],
-      lines: [`🐟 ${A.fish} von ${A.fishMax} Fischen`, `🔒 ${A.solved} Rätsel gelöst`, world ? (wn === 1 ? 'Du hast die ganze Eisberg-Insel erkundet! Jetzt wartet Welt 2: die Vulkan-Insel! 🌴' : 'Du hast die ganze Vulkan-Insel erkundet! Welt 3 kommt bald.') : newStars ? `⭐ ${newStars} neue Sterne – +${newStars + (first ? 1 : 0)} Münzen` : (first ? '+1 Münze' : '')].filter(Boolean),
-      btns: [nextW ? ['Zur Vulkan-Insel ▶', () => pxAMap(i + 1), true] : i + 1 < PXA_LEVELS.length ? ['Weiter ▶', () => pxAPlay(i + 1), true] : ['Zur Karte', () => pxAMap(i), true], ['Nochmal', () => pxAPlay(i)], ['Karte', () => pxAMap(i)]]
+      title: world ? `Welt ${wn} geschafft!` : 'Level geschafft!', big: world ? '🏆' + ((PXA_WELTEN[wn] && PXA_WELTEN[wn].e) || '⭐') : '🎉', stars: [ns, 3],
+      lines: [`🐟 ${A.fish} von ${A.fishMax} Fischen`, `🔒 ${A.solved} Rätsel gelöst`, world ? (PXA_WELTEN[wn + 1] ? `Du hast Welt ${wn} geschafft! Jetzt wartet Welt ${wn + 1}: ${PXA_WELTEN[wn + 1].d}! ${PXA_WELTEN[wn + 1].e}` : 'Du hast alle sechs Welten geschafft! Lumi ist jetzt Abenteuer-Meisterin! 🏆') : newStars ? `⭐ ${newStars} neue Sterne – +${newStars + (first ? 1 : 0)} Münzen` : (first ? '+1 Münze' : '')].filter(Boolean),
+      btns: [nextW ? [`Zu Welt ${wn + 1} ▶`, () => pxAMap(i + 1), true] : i + 1 < PXA_LEVELS.length ? ['Weiter ▶', () => pxAPlay(i + 1), true] : ['Zur Karte', () => pxAMap(i), true], ['Nochmal', () => pxAPlay(i)], ['Karte', () => pxAMap(i)]]
     }));
   };
   run.onResize = () => { };
   if (i === pxAFirst(2)) { A.msg = '¡HOLA! VULKAN-INSEL!'; A.msgT = 3; }
+  else if (pxAW(i) >= 3 && i === pxAFirst(pxAW(i)) && PXA_WELTEN[pxAW(i)]) { A.msg = 'WILLKOMMEN: ' + PXA_WELTEN[pxAW(i)].n + '!'; A.msgT = 3; }
   pxLoop(run, dt => {
     A.t += dt;
-    if (!A.dHint && A.ents.some(e => e.k === 'duese' && Math.abs(e.tx * PXA_T + 8 - A.p.x) < 60)) { A.dHint = 1; A.msg = 'DAMPF TRÄGT DICH HOCH!'; A.msgT = 2.6; } const P = A.p; if (A.msgT > 0) A.msgT -= dt; if (A.shake > 0) A.shake -= dt;
+    if (!A.dHint && A.ents.some(e => e.k === 'duese' && Math.abs(e.tx * PXA_T + 8 - A.p.x) < 60)) { A.dHint = 1; A.msg = W2 && W2.jet === 'windrad' ? 'DER WIND TRÄGT DICH HOCH!' : W2 && W2.jet === 'sprenger' ? 'DAS WASSER TRÄGT DICH HOCH!' : 'DAMPF TRÄGT DICH HOCH!'; A.msgT = 2.6; }
+    if (!A.lHint && A.ents.some(e => e.k === 'liane' && Math.abs(e.ax - A.p.x) < 70)) { A.lHint = 1; A.msg = 'SPRING AN DIE LIANE!'; A.msgT = 2.6; }
+    if (!A.zHint && A.ents.some(e => e.k === 'wackel' && Math.abs(e.tx * PXA_T - A.p.x) < 60)) { A.zHint = 1; A.msg = 'VORSICHT, WACKELSTEINE!'; A.msgT = 2.6; } const P = A.p; if (A.msgT > 0) A.msgT -= dt; if (A.shake > 0) A.shake -= dt;
 
     A.ents.forEach(e => {
       if (e.k !== 'steg') return;
@@ -36310,10 +36320,13 @@ function pxAPlay(i) {
       e.dx = nx - e.x; e.dy = ny - e.y; e.x = nx; e.y = ny;
       if (P.plat === e) { P.x += e.dx; P.y += e.dy; pxAMoveX(A, P); }
     });
+    pxALianen(run, A, dt);
+    pxAWackel(run, A, dt);
 
+    if (!P.vine) {
     const ice = P.on && P.ground === 'I' && !W2, locked = P.lock > 0 || A.phase !== 'play';
     const ax = locked ? (A.phase === 'ende' ? 1 : 0) : ((run.keys.r || run.joy.x > .3) ? 1 : 0) - ((run.keys.l || run.joy.x < -.3) ? 1 : 0);
-    const acc = P.on ? (ice ? 300 : 900) : 620, fr = P.on ? (ice ? 70 : 1100) : 140, maxv = A.phase === 'ende' ? 40 : ice ? 112 : PXA_MAXV;
+    const acc = P.on ? (ice ? 300 : 900) : 620, fr = P.on ? (ice ? 70 : 1100) : 140, maxv = A.phase === 'ende' ? 40 : ice ? 112 : P.fling > 0 ? 140 : PXA_MAXV; if (P.fling > 0) P.fling -= dt;
     if (ax) { P.vx += ax * acc * dt; P.dir = ax; } else { const sg = Math.sign(P.vx); P.vx -= sg * Math.min(Math.abs(P.vx), fr * dt); }
     P.vx = Math.max(-maxv, Math.min(maxv, P.vx));
     if (pxKeyHit(run, 'u') && !locked) P.jb = .14; else P.jb -= dt;
@@ -36335,6 +36348,7 @@ function pxAPlay(i) {
     if (P.sq > 0) P.sq -= dt;
 
     if (P.on && P.ground === 'J') { const f = A.ents.find(e => e.k === 'feder' && e.tx === P.gx); if (f) f.sq = .25; P.vy = -PXA_SPRING; P.on = false; P.boost = .6; pxSfx.spring(); }
+    }
     A.ents.forEach(e => { if (e.k === 'feder' && e.sq > 0) e.sq -= dt; if (e.k === 'kiste' && e.bump > 0) e.bump -= dt; if (e.k === 'tor' && e.cd > 0) e.cd -= dt; });
 
     A.ents.forEach(e => {
@@ -36343,7 +36357,8 @@ function pxAPlay(i) {
       const cx = e.tx * PXA_T + 8, top = e.ty * PXA_T;
       if (e.on && Math.abs(P.x - cx) < 10 && P.y <= top + 1 && P.y > top - 96 && P.vy > -420) { P.vy = -470; P.on = false; P.plat = null; P.boost = .5; if (!e.puff) { pxSfx.spring(); e.puff = 1; } }
       if (!e.on) e.puff = 0;
-      if (e.on && Math.random() < .5) run.parts.push({ x: cx - 5 + Math.random() * 10, y: top - 2, vx: (Math.random() - .5) * 14, vy: -90 - Math.random() * 60, life: .9, col: Math.random() < .5 ? '#ffffff' : '#dfe9f5', s: 2, g: 0 });
+      const jc = W2 && W2.jet === 'sprenger' ? ['#8fd0ff', '#3f86ee'] : W2 && W2.jet === 'windrad' ? ['#ffffff', '#cfe5ff'] : ['#ffffff', '#dfe9f5'];
+      if (e.on && Math.random() < .5) run.parts.push({ x: cx - 5 + Math.random() * 10, y: top - 2, vx: (Math.random() - .5) * 14, vy: -90 - Math.random() * 60, life: .9, col: Math.random() < .5 ? jc[0] : jc[1], s: 2, g: 0 });
       else if (e.warn && Math.random() < .2) run.parts.push({ x: cx - 3 + Math.random() * 6, y: top - 1, vx: 0, vy: -30, life: .4, col: '#dfe9f5', s: 1, g: 0 });
     });
 
@@ -36352,7 +36367,7 @@ function pxAPlay(i) {
     for (let tx = Math.floor(l / PXA_T); tx <= Math.floor(r / PXA_T); tx++) { const ty = Math.floor((P.y - 3) / PXA_T); if (pxATile(A, tx, ty) === '^' && P.y - 3 > ty * PXA_T + 7) hurt(tx * PXA_T + 8); }
     const below = pxATile(A, Math.floor(P.x / PXA_T), Math.floor((P.y - 4) / PXA_T));
     if (below === '~' || P.y > A.h * PXA_T + 30) {
-      if (A.phase === 'play') { pxBurst(run, P.x, A.h * PXA_T - 32, hot ? ['#ffd84a', '#ff9d2e', '#ff6a2a'] : ['#bfe4ff', '#ffffff', '#3f86e8'], 16, { v: 70, up: 80 }); pxSfx.pop(); A.hearts--; A.msg = A.hearts > 0 ? (hot ? 'Autsch, heiß! Zurück zur Fahne.' : 'Platsch! Zurück zur Fahne.') : 'Puh! Nochmal ab der Fahne.'; A.msgT = 1.8; respawn(A.hearts <= 0); }
+      if (A.phase === 'play') { pxBurst(run, P.x, A.h * PXA_T - 32, hot ? ['#ffd84a', '#ff9d2e', '#ff6a2a'] : W2 && W2.wat === 'treibsand' ? ['#dcb874', '#c9a25a', '#ffffff'] : W2 && W2.wat === 'himmel' ? ['#ffffff', '#dce8ff'] : ['#bfe4ff', '#ffffff', '#3f86e8'], 16, { v: 70, up: 80 }); pxSfx.pop(); A.hearts--; A.msg = A.hearts > 0 ? (hot ? 'Autsch, heiß! Zurück zur Fahne.' : (W2 && W2.fall) || 'Platsch! Zurück zur Fahne.') : 'Puh! Nochmal ab der Fahne.'; A.msgT = 1.8; respawn(A.hearts <= 0); }
     }
 
     A.ents.forEach(e => {
@@ -36378,6 +36393,7 @@ function pxAPlay(i) {
       } else if (e.k === 'eidechse') {
         if (e.dead) { e.vy += 600 * dt; e.y += e.vy * dt; e.x += e.vx * dt; if (e.y > A.h * PXA_T + 40) e.gone = true; return; }
         if (e.wait > 0) e.wait -= dt; else { e.x += e.dir * 40 * dt; if (Math.random() < .004) e.wait = .6 + Math.random() * .6; }
+        if (e.hop) { e.hj = (e.hj || 1) - dt; if (e.hj <= 0 && e.y >= e.y0) { e.vy = -200; e.hj = 1.2 + Math.random(); } e.vy += 600 * dt; e.y = Math.min(e.y0, e.y + e.vy * dt); if (e.y >= e.y0) e.vy = 0; }
         const ahead = Math.floor((e.x + e.dir * 9) / PXA_T), ty = Math.floor((e.y - 4) / PXA_T);
         if (pxASolid(pxATile(A, ahead, ty)) || !(pxASolid(pxATile(A, ahead, ty + 1)) || pxATile(A, ahead, ty + 1) === '=')) e.dir *= -1;
         if (Math.abs(dx) < 11 && P.y > e.y - 10 && P.y - P.h < e.y) {
@@ -36393,7 +36409,7 @@ function pxAPlay(i) {
         }
       } else if (e.k === 'werfer') {
         e.cd -= dt;
-        if (e.cd <= 0 && P.x < e.x && e.x - P.x < run.W * .9 && A.phase === 'play') { e.cd = 3.6; A.ents.push({ k: 'kugel', x: e.x, y: e.y, vx: -62, vy: 0, h: 10, rot: 0, sp: W2 ? 'kokos' : 'kugel' }); }
+        if (e.cd <= 0 && P.x < e.x && e.x - P.x < run.W * .9 && A.phase === 'play') { e.cd = 3.6; A.ents.push({ k: 'kugel', x: e.x, y: e.y, vx: -62, vy: 0, h: 10, rot: 0, sp: W2 ? (W2.ball || 'kokos') : 'kugel' }); }
       } else if (e.k === 'kugel') {
         e.vy = Math.min(e.vy + 700 * dt, 300); e.x += e.vx * dt; e.y += e.vy * dt; e.rot += dt * 12;
         const ty = Math.floor(e.y / PXA_T), tx = Math.floor(e.x / PXA_T), c = pxATile(A, tx, ty);
@@ -36409,7 +36425,7 @@ function pxAPlay(i) {
       } else if (e.k === 'tor') {
         if (e.open && e.lift < 48) { e.lift = Math.min(48, e.lift + 90 * dt); if (e.lift >= 48) for (let k = 0; k < 3; k++) if (e.ty - k >= 0) A.grid[e.ty - k][e.tx] = ' '; }
       } else if (e.k === 'truhe') {
-        if (!e.open && Math.abs(dx) < 14 && Math.abs(P.y - e.y) < 12) { e.open = true; A.fish += 10; A.fishMax += 10; pxSfx.win(); pxBurst(run, e.x, e.y - 12, ['#ffd84a', '#fff3c4', '#ffffff', '#8fd0ff'], 40, { v: 110, up: 60 }); A.msg = W2 ? 'Der Schatz der Vulkan-Insel! +10 Fische' : 'Der Schatz der Eisberg-Insel! +10 Fische'; A.msgT = 2.5; }
+        if (!e.open && Math.abs(dx) < 14 && Math.abs(P.y - e.y) < 12) { e.open = true; A.fish += 10; A.fishMax += 10; pxSfx.win(); pxBurst(run, e.x, e.y - 12, ['#ffd84a', '#fff3c4', '#ffffff', '#8fd0ff'], 40, { v: 110, up: 60 }); A.msg = W2 && W2.schatz ? W2.schatz : W2 ? 'Der Schatz der Vulkan-Insel! +10 Fische' : 'Der Schatz der Eisberg-Insel! +10 Fische'; A.msgT = 2.5; }
       } else if (e.k === 'iglu') {
         if (A.phase === 'play' && dx > -10 && dx < 30 && P.y > e.y - 30) done();
         if (A.phase === 'ende' && P.x > e.x + 2) { A.p.hide = true; }
@@ -36456,8 +36472,8 @@ function pxADraw(run, A, g) {
   const wf = Math.floor(A.t * 3) % 2;
   for (let tx = Math.floor(cam / PXA_T); tx <= Math.floor((cam + W) / PXA_T); tx++) for (let ty = 0; ty < A.h; ty++) {
     if (pxATile(A, tx, ty) !== '~') continue;
-    const wt = W2 ? (W2.wat === 'glut' ? 'k2_glutsee_' : 'k2_meer_') : 'kachel_wasser_';
-    if (pxATile(A, tx, ty - 1) !== '~') pxDraw(g, wt + ((wf + tx) % 2), tx * PXA_T - cam, ty * PXA_T); else pxRect(g, tx * PXA_T - cam, ty * PXA_T, 16, 16, W2 ? (W2.wat === 'glut' ? '#c42e14' : '#1f8fb8') : '#2c63c9');
+    const WT = W2 ? (PXA_WAT[W2.wat] || PXA_WAT.meer) : ['kachel_wasser_', '#2c63c9']; if (!WT[0]) continue;
+    if (pxATile(A, tx, ty - 1) !== '~') pxDraw(g, WT[0] + ((wf + tx) % 2), tx * PXA_T - cam, ty * PXA_T); else pxRect(g, tx * PXA_T - cam, ty * PXA_T, 16, 16, WT[1]);
   }
 
   A.ents.forEach(e => {
@@ -36466,17 +36482,19 @@ function pxADraw(run, A, g) {
     if (e.k === 'fisch') pxDraw(g, 'fisch', ex - 5, e.y - 4 + Math.round(Math.sin(A.t * 3 + e.ph) * 1.5));
     else if (e.k === 'stern') { pxDraw(g, 'stern', ex - 5, e.y - 5 + Math.round(Math.sin(A.t * 2.5) * 2)); if (Math.floor(A.t * 4) % 4 === 0) pxDraw(g, 'funkel_a_' + (Math.floor(A.t * 8) % 4), ex + 3, e.y - 9); }
     else if (e.k === 'herz') pxDraw(g, 'herz', ex - 4, e.y - 4 + Math.round(Math.sin(A.t * 3) * 1.5));
-    else if (e.k === 'krabbe') { if (e.dead) { g.save(); g.translate(Math.round(ex), Math.round(e.y)); g.scale(1, -1); pxDraw(g, 'krabbe_a_0', -8, 0); g.restore(); } else pxDraw(g, 'krabbe_a_' + (Math.floor(A.t * 6) % 2), ex - 8, e.y - 12, e.dir > 0); }
+    else if (e.k === 'krabbe') { const sp = e.sp || 'krabbe', S2 = pxSpr(sp + '_a_0'); if (e.dead) { g.save(); g.translate(Math.round(ex), Math.round(e.y)); g.scale(1, -1); pxDraw(g, sp + '_a_0', -Math.floor(S2.width / 2), 0); g.restore(); } else pxDraw(g, sp + '_a_' + (Math.floor(A.t * 6) % 2), ex - Math.floor(S2.width / 2), e.y - S2.height, e.dir > 0); }
     else if (e.k === 'kugel') pxDraw(g, (e.sp || 'kugel') + '_a_' + (Math.floor(e.rot) % 4), ex - 5, e.y - 10);
-    else if (e.k === 'eidechse') { if (e.dead) { g.save(); g.translate(Math.round(ex), Math.round(e.y)); g.scale(1, -1); pxDraw(g, 'eidechse_a_0', -10, 0); g.restore(); } else pxDraw(g, 'eidechse_a_' + (e.wait > 0 ? 0 : Math.floor(A.t * 8) % 2), ex - 10, e.y - 10, e.dir > 0); }
-    else if (e.k === 'moewe') pxDraw(g, 'moewe_a_' + (e.dead ? 0 : Math.floor(A.t * 5 + e.ph) % 2), ex - 10, e.y - 7, e.dir < 0);
-    else if (e.k === 'duese') { const x = e.tx * PXA_T - cam, top = e.ty * PXA_T; if (e.on) { const hh = 80; g.globalAlpha = .55; for (let k = 0; k < hh; k += 6) { const w = 8 + (k / hh) * 10 + Math.sin(A.t * 20 + k) * 2; pxRect(g, x + 8 - w / 2, top - k - 6, w, 6, k % 12 ? '#ffffff' : '#dfe9f5'); } g.globalAlpha = 1; } pxDraw(g, 'k2_duese_' + (e.on || e.warn ? 1 : 0), x, top); }
+    else if (e.k === 'eidechse') { const sp = e.sp || 'eidechse', S2 = pxSpr(sp + '_a_0'); if (e.dead) { g.save(); g.translate(Math.round(ex), Math.round(e.y)); g.scale(1, -1); pxDraw(g, sp + '_a_0', -Math.floor(S2.width / 2), 0); g.restore(); } else pxDraw(g, sp + '_a_' + (e.wait > 0 ? 0 : Math.floor(A.t * 8) % 2), ex - Math.floor(S2.width / 2), e.y - S2.height, e.dir > 0); }
+    else if (e.k === 'moewe') pxDraw(g, (e.sp || 'moewe') + '_a_' + (e.dead ? 0 : Math.floor(A.t * 5 + e.ph) % 2), ex - 10, e.y - 7, e.dir < 0);
+    else if (e.k === 'liane') pxADrawLiane(g, A, e, cam);
+    else if (e.k === 'wackel') { if (e.st < 2 || e.fy < 140) { const sh = e.st === 1 ? Math.round(Math.sin(A.t * 60)) : 0; if (e.st === 2) g.globalAlpha = Math.max(0, 1 - e.fy / 140); pxDraw(g, 'k2_wackel_0', e.tx * PXA_T - cam + sh, e.ty * PXA_T + Math.round(e.fy)); g.globalAlpha = 1; } }
+    else if (e.k === 'duese') { const x = e.tx * PXA_T - cam, top = e.ty * PXA_T; if (e.on) { const hh = 80; g.globalAlpha = .55; for (let k = 0; k < hh; k += 6) { const w = 8 + (k / hh) * 10 + Math.sin(A.t * 20 + k) * 2; pxRect(g, x + 8 - w / 2, top - k - 6, w, 6, k % 12 ? '#ffffff' : '#dfe9f5'); } g.globalAlpha = 1; } pxDraw(g, 'k2_' + ((W2 && W2.jet) || 'duese') + '_' + (e.on || e.warn ? 1 : 0), x, top); }
     else if (e.k === 'fahne') pxDraw(g, 'fahne_a_' + (e.up ? 1 : 0), ex - 4, e.y - 32);
-    else if (e.k === 'iglu') { if (W2) pxDraw(g, 'huette', ex - 22, e.y - 34); else pxDraw(g, 'iglu', ex - 20, e.y - 28); }
-    else if (e.k === 'truhe') pxDraw(g, 'truhe_a_' + (e.open ? 1 : 0), ex - 10, e.y - 16);
+    else if (e.k === 'iglu') { if (W2 && W2.end) { const S2 = pxSpr(W2.end); pxDraw(g, W2.end, ex - Math.floor(S2.width / 2), e.y - S2.height); } else if (W2) pxDraw(g, 'huette', ex - 22, e.y - 34); else pxDraw(g, 'iglu', ex - 20, e.y - 28); }
+    else if (e.k === 'truhe') { if (W2 && W2.truhe === 'pokalgross') pxDraw(g, 'pokalgross_a_' + (e.open ? Math.floor(A.t * 4) % 2 : 0), ex - 11, e.y - 26 - (e.open ? 4 : 0)); else pxDraw(g, 'truhe_a_' + (e.open ? 1 : 0), ex - 10, e.y - 16); }
     else if (e.k === 'feder') pxDraw(g, 'kachel_feder_' + (e.sq > 0 ? 1 : 0), e.tx * PXA_T - cam, e.ty * PXA_T);
     else if (e.k === 'kiste') pxDraw(g, e.used ? 'kachel_kisteleer_0' : 'kachel_kiste_' + (Math.floor(A.t * 2) % 2), e.tx * PXA_T - cam, e.ty * PXA_T - (e.bump > 0 ? Math.round(Math.sin(e.bump * 15) * 3) : 0));
-    else if (e.k === 'steg') { pxDraw(g, 'kachel_holz_0', ex, e.y); pxDraw(g, 'kachel_holz_0', ex + 16, e.y); pxDraw(g, 'kachel_holz_0', ex + 32, e.y); }
+    else if (e.k === 'steg') { const ps = (W2 && W2.plat) || 'kachel_holz_0'; pxDraw(g, ps, ex, e.y); pxDraw(g, ps, ex + 16, e.y); pxDraw(g, ps, ex + 32, e.y); }
     else if (e.k === 'tor') {
       const x = e.tx * PXA_T - cam, top = e.top * PXA_T + Math.round(e.lift);
       if (e.lift < 48) { g.save(); g.beginPath(); g.rect(x - 2, e.top * PXA_T - 4, 20, 52); g.clip(); for (let k = 0; k < 3; k++) pxDraw(g, 'kachel_tor_' + (k === 1 ? 1 : 0), x, top + k * PXA_T); g.restore(); }
@@ -36487,12 +36505,13 @@ function pxADraw(run, A, g) {
 
   if (!P.hide && !(P.inv > 0 && Math.floor(P.inv * 12) % 2)) {
     let pose = 'i', fr = Math.floor(A.t * 1.4) % 3 === 0 && (A.t % .7) < .12 ? 1 : 0;
-    if (!P.on) pose = P.vy < 0 ? 'j' : 'f';
+    if (P.vine) pose = 'c';
+    else if (!P.on) pose = P.vy < 0 ? 'j' : 'f';
     else if (P.sq > 0) pose = 'l';
     else if (Math.abs(P.vx) > 8) { pose = 'w'; fr = Math.floor(P.anim) % 4; }
     if (P.inv > 1.3) pose = 'h';
     pxDraw(g, `lumi_${pose}_${fr}`, P.x - 10 - cam, P.y - 20, P.dir < 0);
-    if (W2) pxAHat(g, pose, fr, P.x - 10 - cam, P.y - 20, P.dir < 0);
+    if (W2) pxAHat2(g, pose, fr, P.x - 10 - cam, P.y - 20, P.dir < 0, W2.hat);
   }
   pxPartsDraw(g, run, cam, 0);
   g.restore();
@@ -36509,70 +36528,9 @@ function pxADraw(run, A, g) {
 
 const PXA_NODES = [[40, 150], [78, 122], [112, 146], [148, 112], [184, 132], [214, 92]];
 const PXA_NODES2 = [[38, 152], [74, 130], [112, 150], [148, 132], [172, 104], [196, 70]];
-function pxAMap(sel) {
-  const run = pxView({ id: 'advkarte', title: 'Lumis Pixel-Abenteuer', pad: 'none', portrait: 'top', H: 192 });
-  const S0 = pxAS();
-  const firstOpen = w => { const l = pxAWorldLv(w), f = l.find(i => !S0.lv[i]); return f == null ? l[l.length - 1] : f; };
-  let cur = sel != null ? sel : (pxAOpen(pxAFirst(2)) && !S0.lv[PXA_LEVELS.length - 1] && Object.keys(S0.lv).some(k => pxAW(Number(k)) === 2) ? firstOpen(2) : firstOpen(1));
-  if (!pxAOpen(cur)) cur = firstOpen(1);
-  const wd = pxAW(cur), LV = pxAWorldLv(wd), base = LV[0], NODES = wd === 2 ? PXA_NODES2 : PXA_NODES, w2open = pxAOpen(pxAFirst(2));
-  let t = 0, go = -1;
-  const ox = () => Math.round((run.W - 256) / 2);
-  const tz = { x: 34, y: 44 };
-  run.onTap = (x, y, ph) => {
-    if (ph !== 'down' || go >= 0) return;
-    if (Math.abs(x - tz.x) < 30 && Math.abs(y - tz.y) < 26) {
-      if (wd === 1 && !w2open) { pxSfx.bad(); toast('Welt 2 öffnet sich, wenn du Level 1-6 geschafft hast!'); return; }
-      pxSfx.ok(); go = 99; pxAfter(run, 300, () => pxAMap(wd === 1 ? firstOpen(2) : firstOpen(1))); return;
-    }
-    const o = ox(); const k = NODES.findIndex(([nx, ny]) => Math.hypot(x - (nx + o), y - ny) < 15);
-    if (k < 0) return; const i = base + k;
-    if (!pxAOpen(i)) { pxSfx.bad(); toast('Erst das Level davor schaffen!'); return; }
-    cur = i; go = i; pxSfx.ok(); pxAfter(run, 450, () => pxAPlay(i));
-  };
-  pxLoop(run, dt => {
-    t += dt;
-    if (go < 0) { if (pxKeyHit(run, 'r') && cur < LV[LV.length - 1] && pxAOpen(cur + 1)) { cur++; pxSfx.step(); } if (pxKeyHit(run, 'l') && cur > base) { cur--; pxSfx.step(); } if (pxKeyHit(run, 'u') || pxKeyHit(run, 'a')) { go = cur; pxSfx.ok(); pxAfter(run, 350, () => pxAPlay(cur)); } }
-    pxHud(`<span>★ ${pxAStars(wd)}/${LV.length * 3}</span>`);
-  }, g => {
-    const W = run.W, H = run.H, o = ox();
-    pxRect(g, 0, 0, W, H, wd === 2 ? '#1f8fb8' : '#2c63c9');
-    for (let y = 0; y < H; y += 8) for (let x = ((y / 8) % 2) * 10 - ((t * 6) % 20); x < W; x += 20) pxRect(g, x, y + 3, 6, 1, wd === 2 ? '#3ab6d8' : '#3f86e8');
 
-    const wx = tz.x;
-    if (wd === 1) {
-      if (w2open) { pxEll(g, wx - 24, 32, 48, 18, '#e9c27a'); pxEll(g, wx - 18, 30, 36, 12, '#5cc85c'); pxTri(g, wx - 10, 36, wx, 20, wx + 10, 36, '#7d6a72'); pxRect(g, wx - 2, 20, 4, 3, '#ffffff'); pxEll(g, wx - 3, 12 - Math.round(Math.sin(t * 2) * 2), 7, 5, '#ffffff'); pxText(g, 'WELT 2', wx, 52, '#ffffff', 1, 'c', '#1d2440'); pxText(g, '▶ LOS!', wx, 61, '#ffd84a', 1, 'c', '#1d2440'); if (Math.floor(t * 2) % 2) pxDraw(g, 'funkel_a_' + (Math.floor(t * 8) % 4), wx + 18, 24); }
-      else { pxEll(g, wx - 24, 30, 48, 18, '#5d78b8'); pxEll(g, wx - 12, 24, 22, 12, '#8fa4d8'); pxText(g, 'WELT 2', wx, 52, '#dfe9f5', 1, 'c', '#1d2440'); pxText(g, 'NACH 1-6', wx, 61, '#ffd84a', 1, 'c', '#1d2440'); }
-    } else { pxEll(g, wx - 22, 32, 44, 16, PXC.k); pxEll(g, wx - 21, 33, 42, 14, '#ffffff'); pxDraw(g, 'tanne', wx - 10, 14); pxText(g, '◀ WELT 1', wx, 52, '#ffffff', 1, 'c', '#1d2440'); }
-    if (wd === 1) {
-      pxEll(g, o + 6, 66, 246, 126, PXC.k); pxEll(g, o + 8, 68, 242, 120, '#dfe9f5'); pxEll(g, o + 14, 70, 230, 108, '#ffffff');
-      [[24, 120], [60, 160], [100, 104], [138, 160], [170, 150], [240, 120], [128, 130]].forEach(([x, y]) => pxDraw(g, 'tanne', o + x - 10, y - 30));
-      pxDraw(g, 'fahne_a_1', o + 226, 64);
-      pxText(g, 'WELT 1: EISBERG-INSEL', W / 2, 6, '#ffd84a', 1, 'c', '#1d2440');
-    } else {
-      pxEll(g, o + 4, 64, 250, 128, PXC.k); pxEll(g, o + 6, 66, 246, 122, '#e9c27a'); pxEll(g, o + 16, 72, 226, 104, '#5cc85c'); pxEll(g, o + 30, 80, 190, 80, '#3fae55');
-
-      const vx = o + 196, vb = 96; pxTri(g, vx - 46, vb, vx, 40, vx + 46, vb, PXC.k); pxTri(g, vx - 44, vb, vx, 42, vx + 44, vb, '#7d6a72'); pxTri(g, vx - 13, 54, vx, 42, vx + 13, 54, '#ffffff'); pxRect(g, vx - 5, 41, 10, 2, '#5a4a52');
-      for (let k = 0; k < 4; k++) pxEll(g, vx - 6 + k * 3 + Math.round(Math.sin(t + k) * 2), 32 - k * 7 - ((t * 6) % 7), 12 - k * 2, 8 - k, '#ffffff');
-      [[20, 128], [60, 168], [96, 110], [132, 172], [236, 132], [228, 160], [150, 160]].forEach(([x, y]) => pxDraw(g, 'palme', o + x - 16, y - 44));
-      pxText(g, 'WELT 2: VULKAN-INSEL', W / 2, 6, '#ffd84a', 1, 'c', '#1d2440');
-    }
-
-    for (let k = 0; k + 1 < NODES.length; k++) { const [x0, y0] = NODES[k], [x1, y1] = NODES[k + 1]; for (let q = 1; q < 8; q++) { const x = x0 + (x1 - x0) * q / 8, y = y0 + (y1 - y0) * q / 8; pxRect(g, o + x - 1, y - 1, 3, 3, S0.lv[base + k] ? '#5cc85c' : '#9aa7b8'); } }
-    NODES.forEach(([x, y], k) => {
-      const i = base + k, open = pxAOpen(i), dn = !!S0.lv[i];
-      pxEll(g, o + x - 11, y - 8, 22, 16, PXC.k); pxEll(g, o + x - 10, y - 7, 20, 14, dn ? '#5cc85c' : open ? (wd === 2 ? '#ff9d2e' : '#3b7cf0') : '#5d6878'); pxEll(g, o + x - 8, y - 6, 16, 6, dn ? '#8fe08f' : open ? (wd === 2 ? '#ffd08a' : '#8fc3ff') : '#9aa7b8');
-      pxText(g, open ? String(k + 1) : '?', o + x, y - 3, '#ffffff', 1, 'c', PXC.k);
-      const st = (S0.lv[i] && S0.lv[i].s) | 0; for (let q = 0; q < 3; q++) pxText(g, '★', o + x - 9 + q * 7, y + 10, q < st ? '#ffd84a' : '#5d6878', 1, 'l');
-    });
-    const [lx, ly] = NODES[cur - base]; pxDraw(g, go >= 0 ? 'lumi_c_0' : 'lumi_i_' + (Math.floor(t * 2) % 3 === 0 ? 1 : 0), o + lx - 10, ly - 26 - Math.abs(Math.round(Math.sin(t * 4) * 2)));
-    if (wd === 2) pxAHat(g, go >= 0 ? 'c' : 'i', go >= 0 ? 0 : (Math.floor(t * 2) % 3 === 0 ? 1 : 0), o + lx - 10, ly - 26 - Math.abs(Math.round(Math.sin(t * 4) * 2)), false);
-    const nm = PXA_LEVELS[cur].n, w = pxTextW(nm) + 12; pxRect(g, W / 2 - w / 2, H - 18, w, 14, '#1d2440'); pxText(g, nm, W / 2, H - 15, '#ffffff', 1, 'c');
-    pxText(g, 'TIPPE AUF EIN LEVEL', W / 2, 16, '#dfe9f5', 1, 'c', '#1d2440');
-  });
-}
 pxReg({ id: 'abenteuer', t: 'Lumis Pixel-Abenteuer', d: 'Hüpfen, Fische sammeln, Rätsel-Tore knacken', e: '🐧', i: 'lumi_j_0', tag: 'Abenteuer', o: 1,
-  start: () => pxAMap(), prog: () => { const L = pxAS().lv, n1 = pxAWorldLv(1).filter(i => L[i]).length, n2 = pxAWorldLv(2).filter(i => L[i]).length; return pxAOpen(pxAFirst(2)) ? `Welt 2 Vulkan-Insel: ${n2} von 6 · ${pxAStars()}/36 ★` : n1 ? `Welt 1: ${n1} von 6 · dann die Vulkan-Insel 🌋` : 'Welt 1 Eisberg-Insel, Welt 2 Vulkan-Insel'; } });
+  start: () => pxAMap(), prog: () => { const L = pxAS().lv, NW = Math.max(...PXA_LEVELS.map(l => l.wd || 1)); let w = 1; for (let k = NW; k >= 1; k--) if (pxAOpen(pxAFirst(k))) { w = k; break; } const n = pxAWorldLv(w).filter(i => L[i]).length; return `Welt ${w} von ${NW}: ${n} von 6 · ${pxAStars()}/${PXA_LEVELS.length * 3} ★`; } });
 
 
 const PXA_W2 = {
@@ -36758,6 +36716,7 @@ function pxAVulkan(g, cx, base, w, h, col, snow, steam) {
 }
 function pxABg2(g, run, A, cam) {
   const W = run.W, H = run.H, th = A.D.th;
+  if (PXA_W2[th] && PXA_W2[th].wd >= 3) return pxABg3(g, run, A, cam);
   if (th === 'lava') {
     const L = pxALayer('glut', H, 384, (q, w, h, r) => {
       for (let x = 0; x < w; x += 2) { const t = 20 + Math.sin(x / 26) * 10 + r() * 6, b = h - 34 - Math.sin(x / 40 + 1) * 14 - r() * 6; pxRect(q, x, 0, 2, t, '#12060c'); pxRect(q, x, b, 2, h - b, '#12060c'); }
@@ -36799,6 +36758,755 @@ function pxABg2(g, run, A, cam) {
     pxAPara(g, run, C, cam + A.t * 3, .2, H - 64);
   }
 }
+
+/*@@src px_abenteuer2.js@@*/
+
+
+
+
+
+
+
+
+const PXA_WX = {
+  3: { walker: 'affe', flyer: 'papagei', small: 'froschlein', ball: 'kokos', end: 'baumhaus', plat: 'k2_holz2o_0', jet: 'duese', hat: 'safari', truhe: 'truhe', fall: 'Platsch! Zurück zur Fahne.', schatz: 'Der Schatz des Dschungels! +10 Fische' },
+  4: { walker: 'skorpion', flyer: 'falke', small: 'kaefer', ball: 'felsball', end: 'zelt', plat: 'k2_ziegelo_0', jet: 'duese', hat: 'sonne', truhe: 'truhe', fall: 'Hui, Treibsand! Zurück zur Fahne.', schatz: 'Der Schatz der Pyramide! +10 Fische' },
+  5: { walker: 'wolkenschaf', flyer: 'vogel', small: 'schaefchen', ball: 'hagel', end: 'wolkenschloss', plat: 'k2_wolkeo_0', jet: 'windrad', hat: 'brille', truhe: 'truhe', fall: 'Huch! Durch die Wolken gefallen. Zurück zur Fahne.', schatz: 'Der Schatz über den Wolken! +10 Fische' },
+  6: { walker: 'hund', flyer: 'taube', small: 'rollball', ball: 'fussball', end: 'stadiontor', plat: 'k2_dacho_0', jet: 'sprenger', hat: 'stirnband', truhe: 'pokalgross', fall: 'Platsch! Zurück zur Fahne.', schatz: 'Der Pokal! Lumi hat das große Finale gewonnen! +10 Fische' }
+};
+const PXA_THEMES3 = {
+  urwald: [3, { gr: 'erde', haz: 'dornen', wat: 'fluss', t: 'urwaldbaum', s: 'farn' }, ['#2f8f6f', '#3fa27c', '#5cb88f', '#86cfa8', '#bfe8cf']],
+  schlucht: [3, { gr: 'erde', haz: 'dornen', wat: 'fluss', t: 'bambus', s: 'farn' }, ['#2c7aa8', '#3f8fb8', '#5aa6c8', '#86c2da', '#c4e2ea']],
+  wasserfall: [3, { gr: 'stein', haz: 'dornen', wat: 'fluss', t: 'urwaldbaum', s: 'blume' }, ['#2f86c8', '#46a0d8', '#66b8e4', '#8fd0ee', '#c4ecf8']],
+  kronen: [3, { gr: 'holz2', haz: 'dornen', wat: 'fluss', t: 'urwaldbaum', s: 'blume' }, ['#3f9be8', '#5cb0ef', '#86c8f4', '#b4def8', '#e4f4d8']],
+  sumpf: [3, { gr: 'erde', haz: 'schnapp', wat: 'sumpf', t: 'bambus', s: 'pilz' }, ['#0c1a1a', '#122626', '#183232', '#1e3e3a', '#264a40']],
+  tempel: [3, { gr: 'ruine', haz: 'schnapp', wat: 'fluss', t: 'urwaldbaum', s: 'statue' }, ['#5a7f4a', '#6f9a5a', '#8ab470', '#a8cc8a', '#d4ecb0']],
+  duene: [4, { gr: 'sand', haz: 'kaktus', wat: 'treibsand', t: 'kaktusgross', s: 'wstein' }, ['#3f8fe8', '#5aa6ee', '#7fbef4', '#b0d8f8', '#f4e6c0']],
+  oase: [4, { gr: 'sand', haz: 'kaktus', wat: 'meer', t: 'palme', s: 'kamel' }, ['#46a0e8', '#62b4ee', '#86c8f4', '#b4def8', '#f8ecc8']],
+  canyon: [4, { gr: 'canyon', haz: 'kaktus', wat: 'treibsand', t: 'kaktusgross', s: 'wstein' }, ['#e8823f', '#f0a05a', '#f4bc78', '#f8d49a', '#fce8c0']],
+  wuestennacht: [4, { gr: 'sand', haz: 'kaktus', wat: 'treibsand', t: 'kaktusgross', s: 'kamel' }, ['#0a0e2a', '#121a40', '#1c2654', '#283468', '#3a4478']],
+  pyramide: [4, { gr: 'ziegel', haz: 'speer', wat: 'treibsand', t: 'fackel', s: 'vase', ceil: 'ziegel' }, ['#1a120a', '#22180e', '#2a1e12', '#322416', '#3a2a1a']],
+  kammer: [4, { gr: 'ziegel', haz: 'speer', wat: 'treibsand', t: 'fackel', s: 'gold', ceil: 'ziegel' }, ['#1e140a', '#28190c', '#321f0e', '#3c2510', '#462c14']],
+  wolken: [5, { gr: 'wolke', haz: 'blitz', wat: 'himmel', t: 'ballon', s: 'regenbogen' }, ['#3f86ee', '#5a9cf3', '#7db4f7', '#a6cdfb', '#cfe5ff']],
+  regenbogen: [5, { gr: 'wolke', haz: 'blitz', wat: 'himmel', t: 'regenbogen', s: 'ballon' }, ['#4a8ff0', '#66a4f4', '#8ab8f6', '#b0d0fa', '#dcecff']],
+  windig: [5, { gr: 'wolke', haz: 'blitz', wat: 'himmel', t: 'windrad', s: 'ballon' }, ['#5a9ad8', '#72acde', '#8cc0e6', '#acd4ee', '#d4ecf8']],
+  gewitter: [5, { gr: 'wolke', haz: 'blitz', wat: 'himmel', t: 'windrad', s: 'regenbogen' }, ['#1c2038', '#262c4a', '#30385c', '#3c466c', '#4a567c']],
+  morgenrot: [5, { gr: 'wolke', haz: 'blitz', wat: 'himmel', t: 'ballon', s: 'regenbogen' }, ['#3d3486', '#7a4a98', '#d26c8c', '#ff9a6e', '#ffd08a']],
+  schloss: [5, { gr: 'wstein2', haz: 'blitz', wat: 'himmel', t: 'turm', s: 'regenbogen' }, ['#6a5acd', '#8a7ae0', '#aa9af0', '#cabcf8', '#ece4ff']],
+  bolzplatz: [6, { gr: 'rasen', haz: 'huetchen', wat: 'pfuetze', t: 'baumstadt', s: 'tor' }, ['#3f86ee', '#5a9cf3', '#7db4f7', '#a6cdfb', '#cfe5ff']],
+  park: [6, { gr: 'rasen', haz: 'huetchen', wat: 'pfuetze', t: 'baumstadt', s: 'bank' }, ['#4a96e8', '#64aaee', '#86c0f2', '#acd6f6', '#d8ecf8']],
+  daecher: [6, { gr: 'dach', haz: 'huetchen', wat: 'himmel', t: 'schornstein', s: 'antenne' }, ['#3b2a6e', '#6a3b8f', '#b04f8f', '#ef7a6a', '#ffb36b']],
+  fanmeile: [6, { gr: 'pflaster', haz: 'huetchen', wat: 'brunnen', t: 'laterne', s: 'fahnen' }, ['#3f86ee', '#5a9cf3', '#7db4f7', '#a6cdfb', '#cfe5ff']],
+  flutlicht: [6, { gr: 'rasen', haz: 'huetchen', wat: 'pfuetze', t: 'flutlicht', s: 'tor' }, ['#070b1f', '#0c1430', '#121d44', '#18275a', '#1f3270']],
+  finale: [6, { gr: 'rasen', haz: 'huetchen', wat: 'pfuetze', t: 'flutlicht', s: 'fahnen' }, ['#0e1a44', '#16245a', '#203070', '#2c3e86', '#3a4e9a']]
+};
+Object.keys(PXA_THEMES3).forEach(th => { const [wd, cfg, sky] = PXA_THEMES3[th]; PXA_W2[th] = Object.assign({ wd }, PXA_WX[wd], cfg); PXA_THEME[th] = { sky, name: th }; });
+const PXA_WAT = { meer: ['k2_meer_', '#1f8fb8'], glut: ['k2_glutsee_', '#c42e14'], fluss: ['k2_fluss_', '#2a8f9f'], sumpf: ['k2_sumpf_', '#2e4a26'], treibsand: ['k2_treibsand_', '#c9a25a'], pfuetze: ['k2_pfuetze_', '#2f6fd0'], brunnen: ['k2_pfuetze_', '#2f6fd0'], himmel: [null, null] };
+
+
+const PXA_K3 = {
+  erde: (g, v, top, r) => { pxA3fill(g, r, '#5a3a22', ['#4a2e1a', '#6b4528', '#3e2614']); if (top) { pxRect(g, 0, 0, 16, 5, '#3f9a3f'); pxRect(g, 0, 0, 16, 1, '#7ad06a'); for (let x = 0; x < 16; x += 3) pxRect(g, x + (v % 2), 5, 2, 1 + ((x + v) % 3), '#2f7a32'); pxRect(g, 2 + v * 4, 1, 3, 2, '#5cb85c'); } },
+  stein: (g, v, top, r) => { pxA3fill(g, r, '#6f7f8f', ['#5f6f7f', '#8090a0', '#55636f']); pxRect(g, 0, 8 + (v % 2), 16, 1, '#55636f'); if (top) { pxRect(g, 0, 0, 16, 4, '#4f9a5a'); pxRect(g, 0, 0, 16, 1, '#8ad08a'); for (let x = 1; x < 16; x += 4) pxRect(g, x, 4, 2, 2, '#3f7a4a'); } },
+  holz2: (g, v, top, r) => { pxRect(g, 0, 0, 16, 16, '#a9713f'); for (let y = 3; y < 16; y += 5) pxRect(g, 0, y, 16, 1, '#7a4a28'); pxRect(g, (v * 5) % 12 + 2, 0, 1, 16, '#8a5a30'); pxRect(g, 3, 6, 1, 1, '#4a2e1a'); pxRect(g, 12, 11, 1, 1, '#4a2e1a'); if (top) { pxRect(g, 0, 0, 16, 3, '#c48a52'); pxRect(g, 0, 0, 16, 1, '#e0b070'); pxRect(g, 2, 1, 1, 1, '#5d6878'); pxRect(g, 13, 1, 1, 1, '#5d6878'); } },
+  ruine: (g, v, top, r) => { pxRect(g, 0, 0, 16, 16, '#8a8a6a'); pxRect(g, 0, 7, 16, 1, '#5f5f48'); pxRect(g, 0, 15, 16, 1, '#5f5f48'); pxRect(g, v % 2 ? 4 : 10, 0, 1, 7, '#5f5f48'); pxRect(g, v % 2 ? 11 : 3, 8, 1, 7, '#5f5f48'); for (let i = 0; i < 5; i++) pxRect(g, Math.floor(r() * 14), Math.floor(r() * 14), 2, 1, '#a4a482'); if (top) { pxRect(g, 0, 0, 16, 3, '#4f8f4a'); pxRect(g, 0, 0, 16, 1, '#7ac96c'); pxRect(g, 3 + v * 3, 3, 2, 3, '#3f7a3a'); } },
+  canyon: (g, v, top, r) => { pxRect(g, 0, 0, 16, 16, '#c4643a'); pxRect(g, 0, 5 + (v % 2), 16, 2, '#a85030'); pxRect(g, 0, 11, 16, 2, '#d87a48'); for (let i = 0; i < 6; i++) pxRect(g, Math.floor(r() * 15), Math.floor(r() * 15), 2, 1, '#b05a32'); if (top) { pxRect(g, 0, 0, 16, 3, '#e8955f'); pxRect(g, 0, 0, 16, 1, '#f8c08a'); } },
+  ziegel: (g, v, top, r) => { pxRect(g, 0, 0, 16, 16, '#d9b26a'); pxRect(g, 0, 7, 16, 1, '#a8823e'); pxRect(g, 0, 15, 16, 1, '#a8823e'); pxRect(g, v % 2 ? 5 : 11, 0, 1, 7, '#a8823e'); pxRect(g, v % 2 ? 12 : 3, 8, 1, 7, '#a8823e'); pxRect(g, 1, 1, 4, 1, '#ecca88'); if (top) { pxRect(g, 0, 0, 16, 2, '#f0d494'); pxRect(g, 0, 2, 16, 1, '#b8904a'); } },
+  wolke: (g, v, top, r) => { pxRect(g, 0, 0, 16, 16, '#eef4ff'); for (let i = 0; i < 5; i++) pxEll(g, Math.floor(r() * 12), 4 + Math.floor(r() * 10), 6, 4, '#dce8ff'); pxRect(g, 0, 15, 16, 1, '#c8d8f4'); if (top) { pxRect(g, 0, 0, 16, 4, 'rgba(0,0,0,0)'); g.clearRect(0, 0, 16, 4); pxEll(g, -2, 0, 10, 8, '#ffffff'); pxEll(g, 6, 1, 12, 8, '#ffffff'); pxRect(g, 0, 4, 16, 2, '#ffffff'); pxRect(g, 2, 1, 3, 1, '#ffffff'); } },
+  wstein2: (g, v, top, r) => { pxRect(g, 0, 0, 16, 16, '#e6e2ff'); pxRect(g, 0, 7, 16, 1, '#b8b0e8'); pxRect(g, 0, 15, 16, 1, '#b8b0e8'); pxRect(g, v % 2 ? 6 : 10, 0, 1, 7, '#b8b0e8'); pxRect(g, v % 2 ? 2 : 12, 8, 1, 7, '#b8b0e8'); if (top) { pxRect(g, 0, 0, 16, 3, '#ffd84a'); pxRect(g, 0, 0, 16, 1, '#fff3c4'); pxRect(g, 0, 3, 16, 1, '#e0a800'); } },
+  rasen: (g, v, top, r) => { pxA3fill(g, r, '#6b4425', ['#5a3820', '#7a5030', '#4e301a']); if (top) { pxRect(g, 0, 0, 16, 6, v % 2 ? '#4fb84f' : '#5cc85c'); pxRect(g, 0, 0, 16, 1, '#9be38f'); pxRect(g, 0, 6, 16, 1, '#2f8f46'); for (let x = 0; x < 16; x += 4) pxRect(g, x + 1, 1, 1, 2, '#3fa04a'); } },
+  dach: (g, v, top, r) => { pxRect(g, 0, 0, 16, 16, '#c4482e'); for (let y = 2; y < 16; y += 5) { pxRect(g, 0, y, 16, 1, '#8a2e1c'); for (let x = (y % 2) * 4; x < 16; x += 8) pxRect(g, x, y - 2, 1, 3, '#8a2e1c'); } pxRect(g, 2, 4, 3, 1, '#e0684a'); if (top) { pxRect(g, 0, 0, 16, 3, '#6b4425'); pxRect(g, 0, 0, 16, 1, '#a9713f'); } },
+  pflaster: (g, v, top, r) => { pxRect(g, 0, 0, 16, 16, '#8a8f9a'); for (let y = 0; y < 16; y += 4) for (let x = (y / 4 % 2) * 2; x < 16; x += 4) { pxRect(g, x, y, 3, 3, '#a4a9b4'); pxRect(g, x, y, 3, 1, '#b8bcc6'); } if (top) { pxRect(g, 0, 0, 16, 3, '#c8ccd4'); pxRect(g, 0, 3, 16, 1, '#5d6878'); } },
+  wackel: (g, v) => { pxRect(g, 0, 0, 16, 16, '#d9b26a'); pxRect(g, 0, 0, 16, 2, '#f0d494'); pxRect(g, 0, 15, 16, 1, '#a8823e'); pxLine(g, 3, 2, 6, 7, '#8a6a30'); pxLine(g, 6, 7, 5, 12, '#8a6a30'); pxLine(g, 11, 3, 10, 9, '#8a6a30'); pxRect(g, 0, 0, 1, 16, '#a8823e'); pxRect(g, 15, 0, 1, 16, '#a8823e'); },
+  schnapp: (g) => { const K = PXC.k; for (let i = 0; i < 2; i++) { const x = 1 + i * 8; pxRect(g, x + 3, 9, 1, 7, '#2f8f46'); pxEll(g, x - 1, 3, 9, 8, K); pxEll(g, x, 4, 7, 6, '#ef4b4b'); pxRect(g, x + 1, 7, 5, 1, K); for (let k = 0; k < 3; k++) { pxRect(g, x + 1 + k * 2, 6, 1, 1, '#ffffff'); pxRect(g, x + 2 + k * 2, 8, 1, 1, '#ffffff'); } pxRect(g, x + 1, 4, 2, 1, '#ff8fa0'); pxRect(g, x + 4, 12, 3, 2, '#3fae55'); } },
+  speer: (g) => { pxRect(g, 0, 14, 16, 2, '#6b4425'); for (let i = 0; i < 4; i++) { const x = 1 + i * 4; pxTri(g, x - 1, 15, x + 1, 5, x + 3, 15, PXC.k); pxTri(g, x, 15, x + 1, 7, x + 2, 15, '#e0a800'); pxRect(g, x + 1, 8, 1, 3, '#fff3c4'); } },
+  blitz: (g) => { const K = PXC.k; pxEll(g, 0, 4, 16, 9, K); pxEll(g, 1, 5, 14, 7, '#5d6878'); pxEll(g, 3, 3, 8, 6, K); pxEll(g, 4, 4, 6, 4, '#7a8698'); pxTri(g, 6, 11, 9, 11, 5, 16, K); pxTri(g, 7, 11, 8, 11, 6, 15, '#ffd84a'); pxRect(g, 4, 7, 1, 1, '#ffffff'); pxRect(g, 10, 7, 1, 1, '#ffffff'); },
+  huetchen: (g) => { const K = PXC.k; for (let i = 0; i < 2; i++) { const x = i * 8; pxTri(g, x, 15, x + 4, 4, x + 8, 15, K); pxTri(g, x + 1, 15, x + 4, 6, x + 7, 15, '#ff8a2e'); pxRect(g, x + 2, 10, 5, 2, '#ffffff'); pxRect(g, x, 14, 8, 2, K); pxRect(g, x + 1, 14, 6, 1, '#d9661a'); } },
+  fluss: (g, v) => { pxRect(g, 0, 0, 16, 16, '#2a8f9f'); pxRect(g, 0, 0, 16, 4, '#4ab8c4'); for (let x = 0; x < 16; x++) pxRect(g, x, Math.round(1.5 + Math.sin((x + v * 4) / 16 * Math.PI * 2) * 1.5), 1, 1, '#c8f4f0'); pxRect(g, (v * 6) % 13, 9, 3, 1, '#4ab8c4'); },
+  sumpf: (g, v) => { pxRect(g, 0, 0, 16, 16, '#2e4a26'); pxRect(g, 0, 0, 16, 4, '#4a6a32'); for (let x = 0; x < 16; x++) pxRect(g, x, Math.round(2 + Math.sin((x + v * 3) / 16 * Math.PI * 2)), 1, 1, '#7a9a4a'); pxEll(g, 3 + v * 6, 6, 4, 3, '#5a7a3a'); pxRect(g, 11 - v * 5, 10, 2, 2, '#6a8a42'); },
+  treibsand: (g, v) => { pxRect(g, 0, 0, 16, 16, '#c9a25a'); pxRect(g, 0, 0, 16, 3, '#dcb874'); for (let a = 0; a < 6.3; a += .5) { const rr = 2 + a * .7; pxRect(g, Math.round(8 + Math.cos(a + v * 1.5) * rr * .9), Math.round(8 + Math.sin(a + v * 1.5) * rr * .5), 1, 1, '#a8823e'); } },
+  pfuetze: (g, v) => { pxRect(g, 0, 0, 16, 16, '#2f6fd0'); pxRect(g, 0, 0, 16, 4, '#5a9cf3'); for (let x = 0; x < 16; x++) pxRect(g, x, Math.round(1.5 + Math.sin((x + v * 4) / 16 * Math.PI * 2) * 1.2), 1, 1, '#dcecff'); },
+  windrad: (g, v) => { pxRect(g, 0, 0, 16, 16, '#dce8ff'); pxRect(g, 0, 0, 16, 3, '#5d6878'); pxRect(g, 1, 1, 14, 1, '#9aa7b8'); for (let x = 2; x < 15; x += 3) pxRect(g, x, 3, 1, 4, '#5d6878'); pxRect(g, 6, 4, 4, 4, v ? '#3fd1c8' : '#9aa7b8'); },
+  sprenger: (g, v) => { pxA3fill(g, pxRnd(5), '#6b4425', ['#5a3820', '#7a5030']); pxRect(g, 0, 0, 16, 5, '#5cc85c'); pxRect(g, 0, 0, 16, 1, '#9be38f'); pxRect(g, 5, 0, 6, 4, PXC.k); pxRect(g, 6, 1, 4, 2, v ? '#3f86ee' : '#2fae4f'); pxRect(g, 7, 0, 2, 1, '#ffd84a'); }
+};
+function pxA3fill(g, r, base, dots) { pxRect(g, 0, 0, 16, 16, base); for (let i = 0; i < 12; i++) pxRect(g, Math.floor(r() * 15), Math.floor(r() * 15), 2, 1, dots[i % dots.length]); }
+(function () {
+  const k2o = PXGEN.k2;
+  PXGEN.k2 = (art, v) => {
+    const top = /o$/.test(art) && PXA_K3[art.slice(0, -1)], key = top ? art.slice(0, -1) : art;
+    if (!PXA_K3[key]) return k2o(art, v);
+    const [c, g] = pxCanvas(16, 16); PXA_K3[key](g, v | 0, !!top, pxRnd(key.length * 53 + (v | 0) * 11 + 7)); return c;
+  };
+})();
+
+
+Object.assign(PXGEN, {
+  affe: (v, fr) => { const [c, g] = pxCanvas(20, 16), K = PXC.k, b = '#8a5a30', l = '#e0b080';
+    pxRect(g, 1, 4 + fr, 3, 6, K); pxRect(g, 2, 5 + fr, 1, 4, b); pxRect(g, 0, 3 + fr, 3, 2, K);
+    pxEll(g, 3, 5, 12, 9, K); pxEll(g, 4, 6, 10, 7, b); pxEll(g, 6, 8, 6, 4, l);
+    pxEll(g, 11, 0, 9, 9, K); pxEll(g, 12, 1, 7, 7, b); pxEll(g, 14, 3, 5, 5, l); pxRect(g, 15, 3, 1, 1, K); pxRect(g, 17, 3, 1, 1, K); pxRect(g, 16, 6, 2, 1, '#a0522d'); pxRect(g, 11, 2, 2, 3, K); pxRect(g, 11, 3, 1, 1, l);
+    const s = fr ? 2 : 0; pxRect(g, 5 + s, 13, 3, 3, K); pxRect(g, 11 - s, 13, 3, 3, K); pxRect(g, 6 + s, 13, 1, 2, b); pxRect(g, 12 - s, 13, 1, 2, b); return c; },
+  papagei: (v, fr) => { const [c, g] = pxCanvas(20, 14), K = PXC.k;
+    pxEll(g, 5, 4, 11, 7, K); pxEll(g, 6, 5, 9, 5, '#ef4b4b'); pxRect(g, 0, 7, 7, 3, K); pxRect(g, 1, 8, 5, 1, '#3b7cf0'); pxRect(g, 13, 2, 6, 6, K); pxRect(g, 14, 3, 4, 4, '#ef4b4b'); pxRect(g, 16, 4, 1, 1, K); pxRect(g, 18, 5, 2, 3, K); pxRect(g, 18, 5, 1, 2, '#fff3c4');
+    if (fr) { pxTri(g, 6, 6, 10, 0, 13, 6, K); pxTri(g, 7, 6, 10, 2, 12, 6, '#ffd84a'); } else { pxTri(g, 6, 8, 9, 14, 13, 8, K); pxTri(g, 7, 8, 9, 12, 12, 8, '#3b7cf0'); } return c; },
+  froschlein: (v, fr) => { const [c, g] = pxCanvas(16, 12), K = PXC.k, y = fr ? 0 : 1;
+    pxEll(g, 1, 3 + y, 14, 9 - y, K); pxEll(g, 2, 4 + y, 12, 7 - y, '#5cc85c'); pxEll(g, 2, 1 + y, 5, 5, K); pxEll(g, 9, 1 + y, 5, 5, K); pxRect(g, 3, 2 + y, 3, 3, '#ffffff'); pxRect(g, 10, 2 + y, 3, 3, '#ffffff'); pxRect(g, 4, 3 + y, 1, 1, K); pxRect(g, 11, 3 + y, 1, 1, K); pxRect(g, 5, 8, 6, 1, '#2f8f46'); pxEll(g, 4, 8 + y, 8, 3, '#d9f5c0'); return c; },
+  skorpion: (v, fr) => { const [c, g] = pxCanvas(22, 14), K = PXC.k, b = '#d9661a', d = '#a84a10';
+    pxEll(g, 4, 7, 12, 6, K); pxEll(g, 5, 8, 10, 4, b); [6, 9, 12].forEach(x => pxRect(g, x, 8, 1, 4, d));
+    for (let i = 0; i < 4; i++) { const x = 1 + i * 2, y = 8 - i * 2; pxRect(g, x - 1, y - 1, 4, 4, K); pxRect(g, x, y, 2, 2, b); } pxRect(g, 6, 0, 3, 3, K); pxRect(g, 7, 1, 1, 1, '#ffd84a');
+    pxRect(g, 15, 6, 4, 4, K); pxRect(g, 16, 7, 2, 2, b); pxRect(g, 18, 4 + (fr ? 0 : 1), 4, 3, K); pxRect(g, 19, 5 + (fr ? 0 : 1), 2, 1, b); pxRect(g, 14, 8, 1, 1, K);
+    const s = fr ? 1 : 0; for (let i = 0; i < 3; i++) pxRect(g, 6 + i * 3 + s, 12, 1, 2, K); return c; },
+  falke: (v, fr) => { const [c, g] = pxCanvas(22, 14), K = PXC.k;
+    pxEll(g, 5, 5, 12, 6, K); pxEll(g, 6, 6, 10, 4, '#a9713f'); pxRect(g, 15, 4, 5, 5, K); pxRect(g, 16, 5, 3, 3, '#d29a6a'); pxRect(g, 17, 5, 1, 1, K); pxRect(g, 19, 6, 2, 2, K); pxRect(g, 19, 6, 1, 1, '#ffd84a'); pxRect(g, 1, 7, 6, 3, K); pxRect(g, 2, 8, 4, 1, '#6b4425');
+    if (fr) { pxTri(g, 6, 6, 11, 0, 15, 6, K); pxTri(g, 7, 6, 11, 2, 14, 6, '#6b4425'); } else { pxTri(g, 6, 8, 10, 14, 15, 8, K); pxTri(g, 7, 8, 10, 12, 14, 8, '#6b4425'); } return c; },
+  kaefer: (v, fr) => { const [c, g] = pxCanvas(16, 12), K = PXC.k;
+    pxEll(g, 2, 2, 12, 9, K); pxEll(g, 3, 3, 10, 7, '#2a7fc0'); pxRect(g, 8, 3, 1, 7, '#1a5a90'); pxRect(g, 5, 4, 2, 1, '#8fd0ff'); pxRect(g, 12, 4, 4, 4, K); pxRect(g, 13, 5, 2, 2, '#1d2440');
+    const s = fr ? 1 : 0; pxRect(g, 3 + s, 10, 1, 2, K); pxRect(g, 7 - s, 10, 1, 2, K); pxRect(g, 11 + s, 10, 1, 2, K); return c; },
+  wolkenschaf: (v, fr) => { const [c, g] = pxCanvas(22, 16), K = PXC.k;
+    [[2, 3], [7, 1], [12, 3], [4, 7], [10, 7]].forEach(([x, y]) => pxEll(g, x - 1, y - 1, 10, 9, K)); [[2, 3], [7, 1], [12, 3], [4, 7], [10, 7]].forEach(([x, y]) => pxEll(g, x, y, 8, 7, '#ffffff'));
+    pxEll(g, 14, 5, 8, 7, K); pxEll(g, 15, 6, 6, 5, '#5d6878'); pxRect(g, 17, 7, 1, 1, '#ffffff'); pxRect(g, 19, 7, 1, 1, '#ffffff'); pxRect(g, 18, 9, 1, 1, '#ff8fc2');
+    const s = fr ? 1 : 0; pxRect(g, 5 + s, 13, 2, 3, K); pxRect(g, 13 - s, 13, 2, 3, K); return c; },
+  schaefchen: (v, fr) => { const [c, g] = pxCanvas(16, 12), K = PXC.k;
+    [[1, 2], [5, 0], [8, 2], [3, 5]].forEach(([x, y]) => pxEll(g, x - 1, y - 1, 8, 7, K)); [[1, 2], [5, 0], [8, 2], [3, 5]].forEach(([x, y]) => pxEll(g, x, y, 6, 5, '#ffffff'));
+    pxEll(g, 10, 4, 6, 6, K); pxEll(g, 11, 5, 4, 4, '#5d6878'); pxRect(g, 12, 6, 1, 1, '#ffffff'); pxRect(g, 14, 6, 1, 1, '#ffffff'); const s = fr ? 1 : 0; pxRect(g, 4 + s, 10, 2, 2, K); pxRect(g, 9 - s, 10, 2, 2, K); return c; },
+  vogel: (v, fr) => { const [c, g] = pxCanvas(20, 14), K = PXC.k;
+    pxEll(g, 5, 5, 11, 7, K); pxEll(g, 6, 6, 9, 5, '#3fa2f0'); pxEll(g, 8, 8, 6, 3, '#ffd0a0'); pxRect(g, 14, 4, 5, 5, K); pxRect(g, 15, 5, 3, 3, '#3fa2f0'); pxRect(g, 16, 5, 1, 1, K); pxRect(g, 18, 6, 2, 1, PXC.o); pxRect(g, 2, 7, 4, 3, K); pxRect(g, 3, 8, 2, 1, '#2149b0');
+    if (fr) { pxTri(g, 6, 7, 10, 0, 13, 7, K); pxTri(g, 7, 7, 10, 2, 12, 7, '#2a7fd0'); } else { pxTri(g, 6, 8, 9, 14, 13, 8, K); pxTri(g, 7, 8, 9, 12, 12, 8, '#2a7fd0'); } return c; },
+  hund: (v, fr) => { const [c, g] = pxCanvas(22, 16), K = PXC.k, b = '#c48a52', w = '#fff3e0';
+    pxRect(g, 0, 4 + fr, 4, 2, K); pxRect(g, 1, 4 + fr, 2, 1, b);
+    pxEll(g, 3, 5, 14, 8, K); pxEll(g, 4, 6, 12, 6, b); pxEll(g, 7, 9, 6, 3, w);
+    pxEll(g, 13, 1, 9, 9, K); pxEll(g, 14, 2, 7, 7, b); pxEll(g, 17, 5, 5, 4, w); pxRect(g, 20, 5, 2, 2, K); pxRect(g, 17, 3, 1, 1, K); pxRect(g, 13, 1, 3, 6, K); pxRect(g, 14, 2, 1, 4, '#8a5a30'); pxRect(g, 18, 9, 2, 1, '#ef4b4b');
+    pxRect(g, 13, 10, 4, 2, '#ef4b4b'); pxRect(g, 15, 11, 1, 1, PXC.y);
+    const s = fr ? 2 : 0; pxRect(g, 5 + s, 12, 3, 4, K); pxRect(g, 12 - s, 12, 3, 4, K); pxRect(g, 6 + s, 12, 1, 3, b); pxRect(g, 13 - s, 12, 1, 3, b); return c; },
+  taube: (v, fr) => { const [c, g] = pxCanvas(20, 14), K = PXC.k;
+    pxEll(g, 5, 5, 11, 7, K); pxEll(g, 6, 6, 9, 5, '#9aa7b8'); pxRect(g, 13, 4, 6, 6, K); pxRect(g, 14, 5, 4, 4, '#7a8698'); pxRect(g, 14, 8, 4, 1, '#3fae88'); pxRect(g, 16, 5, 1, 1, '#ef4b4b'); pxRect(g, 19, 6, 1, 1, '#ffb0a0'); pxRect(g, 2, 7, 4, 3, K); pxRect(g, 3, 8, 2, 1, '#5d6878');
+    if (fr) { pxTri(g, 6, 7, 10, 0, 13, 7, K); pxTri(g, 7, 7, 10, 2, 12, 7, '#b9c2d0'); } else { pxTri(g, 6, 8, 9, 14, 13, 8, K); pxTri(g, 7, 8, 9, 12, 12, 8, '#b9c2d0'); } return c; },
+  rollball: (v, fr) => { const [c, g] = pxCanvas(12, 12), K = PXC.k; pxEll(g, 0, 0, 12, 12, K); pxEll(g, 1, 1, 10, 10, '#ffffff'); const o = fr ? 1 : 0; pxRect(g, 4 + o, 4, 3, 3, K); pxRect(g, 1, 2 + o, 2, 2, K); pxRect(g, 8, 1 + o, 2, 2, K); pxRect(g, 2, 8 - o, 2, 2, K); pxRect(g, 8 - o, 8, 2, 2, K); return c; },
+  felsball: (v, fr) => { const [c, g] = pxCanvas(10, 10); g.translate(5, 5); g.rotate(fr * Math.PI / 2); g.translate(-5, -5); pxEll(g, 0, 0, 10, 10, PXC.k); pxEll(g, 1, 1, 8, 8, '#b8904a'); pxRect(g, 3, 3, 2, 1, '#8a6a30'); pxRect(g, 5, 6, 2, 1, '#8a6a30'); pxRect(g, 2, 2, 2, 1, '#e0c080'); return c; },
+  hagel: (v, fr) => { const [c, g] = pxCanvas(10, 10); g.translate(5, 5); g.rotate(fr * Math.PI / 2); g.translate(-5, -5); pxEll(g, 0, 0, 10, 10, PXC.k); pxEll(g, 1, 1, 8, 8, '#cfe5ff'); pxRect(g, 3, 2, 2, 2, '#ffffff'); pxRect(g, 6, 6, 1, 1, '#8fb8e8'); return c; },
+  fussball: (v, fr) => { const [c, g] = pxCanvas(10, 10); g.translate(5, 5); g.rotate(fr * Math.PI / 2); g.translate(-5, -5); pxEll(g, 0, 0, 10, 10, PXC.k); pxEll(g, 1, 1, 8, 8, '#ffffff'); pxRect(g, 4, 3, 2, 3, PXC.k); pxRect(g, 1, 4, 1, 2, PXC.k); pxRect(g, 8, 4, 1, 2, PXC.k); pxRect(g, 4, 8, 2, 1, PXC.k); pxRect(g, 4, 1, 2, 1, PXC.k); return c; }
+});
+
+Object.assign(PXGEN, {
+  urwaldbaum: () => { const [c, g] = pxCanvas(36, 48), K = PXC.k;
+    pxRect(g, 14, 20, 9, 28, K); pxRect(g, 15, 20, 7, 28, '#6b4425'); pxRect(g, 16, 22, 2, 24, '#8a5a30'); pxRect(g, 10, 44, 17, 4, K); pxRect(g, 11, 44, 15, 3, '#6b4425');
+    [[0, 6, 18, 14], [16, 2, 20, 16], [6, 0, 20, 12], [2, 14, 14, 10], [20, 14, 16, 10]].forEach(([x, y, w, h]) => pxEll(g, x - 1, y - 1, w + 2, h + 2, K));
+    [[0, 6, 18, 14], [16, 2, 20, 16], [6, 0, 20, 12], [2, 14, 14, 10], [20, 14, 16, 10]].forEach(([x, y, w, h], i) => { pxEll(g, x, y, w, h, i % 2 ? '#1f7a3a' : '#2f9a4a'); pxEll(g, x + 3, y + 2, w / 2, h / 3, '#5cc85c'); });
+    [[6, 18, 14], [27, 20, 12], [12, 22, 10]].forEach(([x, y, l]) => { for (let k = 0; k < l; k++) pxRect(g, x + Math.round(Math.sin(k / 3)), y + k, 1, 1, '#2f8f46'); pxRect(g, x - 1, y + l, 3, 2, '#5cc85c'); }); return c; },
+  bambus: () => { const [c, g] = pxCanvas(22, 44), K = PXC.k;
+    [[3, 4], [9, 0], [15, 6]].forEach(([x, y]) => { pxRect(g, x - 1, y, 5, 44 - y, K); pxRect(g, x, y, 3, 44 - y, '#7ab84a'); pxRect(g, x, y, 1, 44 - y, '#a8d86a'); for (let k = y + 6; k < 44; k += 8) pxRect(g, x - 1, k, 5, 1, K); pxRect(g, x + 3, y + 8, 4, 2, '#5cb84a'); pxRect(g, x - 4, y + 14, 4, 2, '#5cb84a'); }); return c; },
+  pilz: (v, fr) => { const [c, g] = pxCanvas(18, 14), K = PXC.k;
+    [[1, 4, 8, '#ff8fc2'], [8, 1, 10, '#8fd0ff']].forEach(([x, y, w, col]) => { pxRect(g, x + w / 2 - 1, y + 4, 3, 14 - y - 4, K); pxRect(g, x + w / 2, y + 4, 1, 14 - y - 4, '#fff3e0'); pxEll(g, x - 1, y - 1, w + 2, 7, K); pxEll(g, x, y, w, 5, col); pxRect(g, x + 2, y + 1, 2, 1, '#ffffff'); }); return c; },
+  statue: () => { const [c, g] = pxCanvas(22, 28), K = PXC.k, s = '#9a9a7a', d = '#6f6f55';
+    pxRect(g, 2, 22, 18, 6, K); pxRect(g, 3, 23, 16, 4, d); pxEll(g, 2, 2, 18, 20, K); pxEll(g, 3, 3, 16, 18, s); pxRect(g, 6, 8, 3, 3, K); pxRect(g, 13, 8, 3, 3, K); pxRect(g, 7, 9, 1, 1, '#3fd1c8'); pxRect(g, 14, 9, 1, 1, '#3fd1c8'); pxEll(g, 7, 13, 8, 5, d); pxRect(g, 8, 15, 6, 1, K); pxRect(g, 0, 8, 3, 5, K); pxRect(g, 19, 8, 3, 5, K); pxRect(g, 5, 2, 12, 2, '#4f8f4a'); return c; },
+  kaktusgross: () => { const [c, g] = pxCanvas(22, 36), K = PXC.k, gr = '#3a944a', l = '#6cc96c';
+    pxRect(g, 8, 2, 7, 34, K); pxRect(g, 9, 3, 5, 33, gr); pxRect(g, 10, 3, 1, 33, l); pxRect(g, 2, 14, 7, 4, K); pxRect(g, 2, 6, 5, 11, K); pxRect(g, 3, 7, 3, 10, gr); pxRect(g, 3, 15, 6, 2, gr);
+    pxRect(g, 14, 18, 6, 4, K); pxRect(g, 16, 9, 5, 12, K); pxRect(g, 17, 10, 3, 11, gr); pxRect(g, 14, 19, 5, 2, gr); pxRect(g, 10, 0, 3, 3, '#ff8fc2'); return c; },
+  wstein: () => { const [c, g] = pxCanvas(18, 10), K = PXC.k; pxEll(g, 0, 1, 18, 10, K); pxEll(g, 1, 2, 16, 8, '#c4643a'); pxEll(g, 3, 3, 7, 3, '#e0905a'); return c; },
+  kamel: (v, fr) => { const [c, g] = pxCanvas(30, 26), K = PXC.k, b = '#d9a86a', d = '#b8844a';
+    pxEll(g, 5, 7, 20, 11, K); pxEll(g, 6, 8, 18, 9, b); pxEll(g, 9, 3, 7, 8, K); pxEll(g, 10, 4, 5, 6, b); pxEll(g, 16, 4, 7, 7, K); pxEll(g, 17, 5, 5, 5, b);
+    pxRect(g, 23, 4, 4, 9, K); pxRect(g, 24, 5, 2, 8, b); pxRect(g, 23, 1, 7, 5, K); pxRect(g, 24, 2, 5, 3, b); pxRect(g, 27, 2, 1, 1, K);
+    [7, 11, 18, 22].forEach(x => { pxRect(g, x - 1, 16, 4, 10, K); pxRect(g, x, 16, 2, 9, d); }); pxRect(g, 8, 9, 12, 2, '#ef4b4b'); pxRect(g, 10, 11, 8, 1, '#ffd84a'); return c; },
+  fackel: (v, fr) => { const [c, g] = pxCanvas(10, 26), K = PXC.k; pxRect(g, 3, 10, 4, 16, K); pxRect(g, 4, 10, 2, 16, '#6b4425'); pxRect(g, 2, 9, 6, 3, K); pxRect(g, 3, 10, 4, 1, '#a9713f');
+    const f = 0; pxEll(g, 1, 0 + f, 8, 10 - f, '#ff6a2a'); pxEll(g, 3, 3 + f, 4, 6 - f, '#ffd84a'); pxRect(g, 4, 6, 2, 2, '#fff3c4'); return c; },
+  vase: () => { const [c, g] = pxCanvas(14, 16), K = PXC.k; pxEll(g, 1, 4, 12, 12, K); pxEll(g, 2, 5, 10, 10, '#c4643a'); pxRect(g, 4, 0, 6, 6, K); pxRect(g, 5, 1, 4, 5, '#c4643a'); pxRect(g, 2, 9, 10, 2, '#1d2440'); pxRect(g, 3, 10, 8, 1, '#ffd84a'); return c; },
+  gold: () => { const [c, g] = pxCanvas(20, 12), K = PXC.k; [[0, 6, 10], [6, 3, 12], [11, 6, 9]].forEach(([x, y, w]) => { pxEll(g, x, y, w, 12 - y + 4, K); pxEll(g, x + 1, y + 1, w - 2, 12 - y + 2, '#ffd84a'); }); [[4, 7], [10, 5], [15, 8], [8, 9]].forEach(([x, y]) => pxRect(g, x, y, 2, 1, '#fff3c4')); pxRect(g, 9, 2, 3, 3, '#ef4b4b'); return c; },
+  ballon: () => { const [c, g] = pxCanvas(26, 40), K = PXC.k; pxEll(g, 1, 0, 24, 26, K); pxEll(g, 2, 1, 22, 24, '#ef4b4b'); pxRect(g, 8, 1, 4, 24, '#ffd84a'); pxRect(g, 15, 1, 3, 24, '#ffffff'); pxEll(g, 2, 1, 22, 24, 'rgba(0,0,0,0)');
+    pxLine(g, 6, 24, 9, 32, K); pxLine(g, 19, 24, 16, 32, K); pxRect(g, 8, 32, 10, 8, K); pxRect(g, 9, 33, 8, 6, '#a9713f'); pxRect(g, 9, 34, 8, 1, '#8a5a30'); return c; },
+  regenbogen: () => { const [c, g] = pxCanvas(36, 20), cols = ['#ef4b4b', '#ff9d2e', '#ffd84a', '#5cc85c', '#3b7cf0', '#8a5cf6'];
+    cols.forEach((col, i) => { for (let a = 0; a <= Math.PI; a += .03) { const r = 17 - i * 2; pxRect(g, Math.round(18 + Math.cos(a) * r) - 1, Math.round(19 - Math.sin(a) * r), 2, 2, col); } }); pxEll(g, 0, 14, 10, 6, '#ffffff'); pxEll(g, 26, 14, 10, 6, '#ffffff'); return c; },
+  windrad: (v, fr) => { const [c, g] = pxCanvas(28, 44), K = PXC.k; pxTri(g, 10, 44, 14, 14, 18, 44, K); pxTri(g, 11, 44, 14, 16, 17, 44, '#f4f6fb'); pxRect(g, 12, 32, 4, 6, '#9aa7b8');
+    const a0 = .4; for (let k = 0; k < 4; k++) { const a = a0 + k * Math.PI / 2; for (let r = 2; r < 13; r++) pxRect(g, Math.round(14 + Math.cos(a) * r) - 1, Math.round(14 + Math.sin(a) * r) - 1, 3, 2, r < 4 ? K : '#ffffff'); } pxRect(g, 12, 12, 4, 4, K); pxRect(g, 13, 13, 2, 2, '#ef4b4b'); return c; },
+  turm: () => { const [c, g] = pxCanvas(22, 44), K = PXC.k; pxRect(g, 3, 12, 16, 32, K); pxRect(g, 4, 13, 14, 31, '#e6e2ff'); for (let y = 18; y < 44; y += 7) pxRect(g, 4, y, 14, 1, '#b8b0e8'); pxRect(g, 8, 20, 6, 8, K); pxRect(g, 9, 21, 4, 6, '#8fd0ff');
+    pxTri(g, 1, 13, 11, 0, 21, 13, K); pxTri(g, 3, 12, 11, 2, 19, 12, '#8a5cf6'); pxRect(g, 10, 0, 1, 3, K); pxRect(g, 11, 0, 4, 2, '#ffd84a'); return c; },
+  baumstadt: () => { const [c, g] = pxCanvas(28, 40), K = PXC.k; pxRect(g, 12, 22, 5, 18, K); pxRect(g, 13, 22, 3, 18, '#8a5a30'); pxEll(g, 1, 0, 26, 26, K); pxEll(g, 2, 1, 24, 24, '#3fae55'); pxEll(g, 5, 3, 12, 9, '#6cc96c'); pxEll(g, 14, 12, 9, 8, '#2f8f46'); return c; },
+  tor: () => { const [c, g] = pxCanvas(28, 20), K = PXC.k; pxRect(g, 1, 0, 26, 3, K); pxRect(g, 2, 1, 24, 1, '#ffffff'); pxRect(g, 1, 0, 3, 20, K); pxRect(g, 2, 1, 1, 19, '#ffffff'); pxRect(g, 24, 0, 3, 20, K); pxRect(g, 25, 1, 1, 19, '#ffffff');
+    for (let x = 6; x < 24; x += 4) pxRect(g, x, 3, 1, 17, '#dfe9f5'); for (let y = 6; y < 20; y += 4) pxRect(g, 3, y, 21, 1, '#dfe9f5'); return c; },
+  bank: () => { const [c, g] = pxCanvas(24, 14), K = PXC.k; pxRect(g, 0, 0, 24, 6, K); pxRect(g, 1, 1, 22, 1, '#a9713f'); pxRect(g, 1, 3, 22, 1, '#a9713f'); pxRect(g, 0, 7, 24, 3, K); pxRect(g, 1, 8, 22, 1, '#c48a52'); pxRect(g, 2, 10, 2, 4, K); pxRect(g, 20, 10, 2, 4, K); return c; },
+  schornstein: () => { const [c, g] = pxCanvas(14, 24), K = PXC.k; pxRect(g, 1, 4, 12, 20, K); pxRect(g, 2, 5, 10, 19, '#a84a2e'); for (let y = 8; y < 24; y += 5) pxRect(g, 2, y, 10, 1, '#7a2e1c'); pxRect(g, 0, 2, 14, 4, K); pxRect(g, 1, 3, 12, 2, '#5d6878');
+    const t = 1; for (let i = 0; i < 3; i++) pxEll(g, 4 + i * 2 + Math.round(Math.sin(t + i)), -6 - i * 4 + 6, 5, 4, '#dfe9f5'); return c; },
+  antenne: () => { const [c, g] = pxCanvas(16, 24), K = PXC.k; pxRect(g, 7, 4, 2, 20, K); pxRect(g, 1, 6, 14, 2, K); pxRect(g, 3, 11, 10, 2, K); pxRect(g, 5, 16, 6, 2, K); pxRect(g, 6, 0, 4, 4, K); pxRect(g, 7, 1, 2, 2, '#ef4b4b'); return c; },
+  laterne: () => { const [c, g] = pxCanvas(12, 36), K = PXC.k; pxRect(g, 5, 8, 2, 28, K); pxRect(g, 3, 32, 6, 4, K); pxRect(g, 1, 2, 10, 8, K); pxRect(g, 2, 3, 8, 6, '#fff3c4'); pxRect(g, 3, 0, 6, 3, K); return c; },
+  fahnen: () => { const [c, g] = pxCanvas(28, 26), K = PXC.k; [[2, '#3b7cf0'], [12, '#ef4b4b'], [22, '#ffd84a']].forEach(([x, col], i) => { pxRect(g, x, 2 + i % 2 * 3, 2, 24 - i % 2 * 3, K); pxTri(g, x + 2, 2 + i % 2 * 3, x + 10, 6 + i % 2 * 3, x + 2, 11 + i % 2 * 3, col); }); return c; },
+  flutlicht: () => { const [c, g] = pxCanvas(20, 48), K = PXC.k; pxRect(g, 8, 10, 4, 38, K); pxRect(g, 9, 10, 2, 38, '#9aa7b8'); pxRect(g, 0, 0, 20, 10, K); for (let y = 1; y < 9; y += 4) for (let x = 1; x < 19; x += 5) pxRect(g, x, y, 4, 3, '#fff3c4'); return c; },
+
+  baumhaus: () => { const [c, g] = pxCanvas(48, 44), K = PXC.k;
+    pxRect(g, 20, 20, 8, 24, K); pxRect(g, 21, 20, 6, 24, '#6b4425'); pxEll(g, 0, 0, 48, 20, K); pxEll(g, 1, 1, 46, 18, '#2f9a4a'); pxEll(g, 6, 2, 16, 8, '#5cc85c');
+    pxRect(g, 8, 12, 32, 18, K); pxRect(g, 9, 13, 30, 16, '#c48a52'); for (let y = 16; y < 29; y += 4) pxRect(g, 9, y, 30, 1, '#8a5a30'); pxRect(g, 20, 19, 8, 10, K); pxRect(g, 21, 20, 6, 9, '#4a2e1a'); pxRect(g, 11, 16, 6, 5, K); pxRect(g, 12, 17, 4, 3, '#bfe4ff');
+    pxTri(g, 4, 13, 24, 4, 44, 13, K); pxTri(g, 6, 12, 24, 6, 42, 12, '#a9713f'); for (let y = 30; y < 44; y += 3) pxRect(g, 30, y, 6, 1, '#a9713f'); pxRect(g, 30, 30, 1, 14, '#6b4425'); pxRect(g, 35, 30, 1, 14, '#6b4425'); return c; },
+  zelt: () => { const [c, g] = pxCanvas(48, 32), K = PXC.k; pxTri(g, 0, 32, 24, 2, 48, 32, K); pxTri(g, 3, 31, 24, 5, 45, 31, '#f4f6fb'); for (let i = 0; i < 4; i++) pxTri(g, 8 + i * 9, 31, 24, 6, 12 + i * 9, 31, '#ef4b4b');
+    pxTri(g, 17, 32, 24, 16, 31, 32, K); pxTri(g, 19, 31, 24, 19, 29, 31, '#4a2e1a'); pxRect(g, 23, 0, 2, 6, K); pxRect(g, 25, 0, 6, 3, '#ffd84a'); return c; },
+  wolkenschloss: () => { const [c, g] = pxCanvas(52, 46), K = PXC.k;
+    [[2, 8], [38, 8]].forEach(([x, y]) => { pxRect(g, x, y, 12, 30, K); pxRect(g, x + 1, y + 1, 10, 29, '#e6e2ff'); pxTri(g, x - 1, y + 1, x + 6, y - 8, x + 13, y + 1, K); pxTri(g, x + 1, y, x + 6, y - 6, x + 11, y, '#8a5cf6'); });
+    pxRect(g, 12, 16, 28, 22, K); pxRect(g, 13, 17, 26, 21, '#f0ecff'); for (let x = 12; x < 40; x += 6) pxRect(g, x, 12, 4, 5, K); pxRect(g, 21, 24, 10, 14, K); pxRect(g, 22, 25, 8, 13, '#ffd84a'); pxRect(g, 25, 25, 2, 13, '#e0a800');
+    for (let i = 0; i < 6; i++) pxEll(g, i * 9 - 2, 36, 14, 10, '#ffffff'); return c; },
+  stadiontor: () => { const [c, g] = pxCanvas(52, 40), K = PXC.k; pxRect(g, 0, 10, 52, 30, K); pxRect(g, 1, 11, 50, 29, '#5d6878'); for (let y = 14; y < 40; y += 5) pxRect(g, 1, y, 50, 1, '#4a5568');
+    pxRect(g, 16, 20, 20, 20, K); pxEll(g, 16, 13, 20, 14, K); pxRect(g, 18, 22, 16, 18, '#1d2440'); pxEll(g, 18, 15, 16, 12, '#1d2440'); pxRect(g, 3, 13, 10, 6, '#3b7cf0'); pxRect(g, 39, 13, 10, 6, '#ef4b4b');
+    pxRect(g, 0, 6, 52, 5, K); pxRect(g, 1, 7, 50, 3, '#ffd84a'); pxText(g, 'TOR', 26, 7, '#1d2440', 1, 'c'); [4, 24, 46].forEach((x, i) => { pxRect(g, x, 0, 1, 7, K); pxRect(g, x + 1, 0, 5, 3, ['#ef4b4b', '#3b7cf0', '#5cc85c'][i]); }); return c; },
+  pokalgross: (v, fr) => { const [c, g] = pxCanvas(22, 26), K = PXC.k, Y = PXC.y, D = PXC.Y;
+    pxRect(g, 0, 2, 22, 4, K); pxRect(g, 0, 3, 4, 8, K); pxRect(g, 18, 3, 4, 8, K); pxRect(g, 1, 4, 2, 6, Y); pxRect(g, 19, 4, 2, 6, Y);
+    pxEll(g, 3, 0, 16, 16, K); pxEll(g, 4, 1, 14, 14, Y); pxRect(g, 4, 0, 14, 6, K); pxRect(g, 4, 1, 14, 5, Y); pxRect(g, 7, 2, 3, 8, '#fff3c4');
+    pxRect(g, 8, 15, 6, 4, K); pxRect(g, 9, 15, 4, 3, D); pxRect(g, 4, 19, 14, 7, K); pxRect(g, 5, 20, 12, 5, D); pxRect(g, 5, 20, 12, 1, Y); pxRect(g, 8, 22, 6, 2, '#1d2440');
+    if (fr) { pxRect(g, 2, 0, 1, 1, '#ffffff'); pxRect(g, 19, 13, 1, 1, '#ffffff'); } return c; }
+});
+
+
+function pxABg3(g, run, A, cam) {
+  const W = run.W, H = run.H, th = A.D.th, wd = PXA_W2[th].wd, t = A.t;
+  const sonne = (x, y, r, a, b) => { pxEll(g, x - r, y - r, r * 2, r * 2, a); pxEll(g, x - r + 3, y - r + 3, r * 2 - 6, r * 2 - 6, b); };
+  if (wd === 3) {
+    if (th === 'sumpf') { for (let i = 0; i < 40; i++) { const x = ((i * 53 - cam * .1) % W + W) % W, y = (i * 37) % 90; pxRect(g, x, y, 1, 1, i % 3 ? '#8fa4d8' : '#ffffff'); } pxEll(g, W - 50, 10, 18, 18, '#fff3c4'); }
+    if (th === 'kronen') pxPara(g, run, 'wolken', cam + t * 6, .08, 6, 60);
+    const far = pxALayer('dsch0' + (th === 'sumpf' ? 'n' : ''), 120, 360, (q, w, h, r) => { for (let i = 0; i < 14; i++) { const x = r() * w, y = 10 + r() * 50, s = 26 + r() * 24; pxEll(q, x, y, s, s * .8, th === 'sumpf' ? '#14302a' : '#2f7a5a'); pxRect(q, x + s / 2 - 2, y + s * .6, 4, h, th === 'sumpf' ? '#10261f' : '#2a6a4f'); } });
+    pxAPara(g, run, far, cam, .12, H - 140);
+    if (th === 'wasserfall') { const fx = ((180 - cam * .2) % (W + 200) + W + 200) % (W + 200) - 100; pxRect(g, fx - 30, 10, 60, H - 60, '#5a6a7a'); pxRect(g, fx - 18, 0, 36, H - 50, '#8fd0ff'); for (let y = 0; y < H - 50; y += 6) pxRect(g, fx - 18 + ((y * 7 + Math.floor(t * 30)) % 30), (y + Math.floor(t * 60)) % (H - 50), 6, 3, '#ffffff'); pxEll(g, fx - 40, H - 62, 80, 18, '#dff4ff'); }
+    if (th === 'tempel') { const tx = ((240 - cam * .15) % (W + 300) + W + 300) % (W + 300) - 150; for (let k = 0; k < 5; k++) pxRect(g, tx - 60 + k * 10, H - 120 + k * 14, 120 - k * 20, 14, k % 2 ? '#7a7a5a' : '#8a8a6a'); pxRect(g, tx - 10, H - 140, 20, 20, '#6a6a4a'); pxRect(g, tx - 4, H - 134, 8, 14, '#2a2a1a'); }
+    const near = pxALayer('dsch1' + (th === 'sumpf' ? 'n' : ''), 100, 300, (q, w, h, r) => { for (let i = 0; i < 9; i++) { const x = r() * w, y = 8 + r() * 30, s = 30 + r() * 20; pxRect(q, x + s / 2 - 3, y + s / 2, 6, h, th === 'sumpf' ? '#0c1a16' : '#24543a'); pxEll(q, x, y, s, s * .7, th === 'sumpf' ? '#163a2c' : '#1f6a3a'); pxEll(q, x + 6, y + 3, s * .5, s * .3, th === 'sumpf' ? '#1e4a36' : '#2f8f4a'); for (let k = 0; k < 3; k++) { const vx = x + 6 + k * 9; for (let yy = y + s * .5; yy < y + s * .5 + 26 + k * 6; yy += 2) pxRect(q, vx + Math.round(Math.sin(yy / 6)), yy, 1, 2, '#2f8f46'); } } });
+    pxAPara(g, run, near, cam, .3, H - 116);
+    if (th === 'sumpf') { for (let i = 0; i < 14; i++) { const x = ((i * 89 - cam * .5 + Math.sin(t + i) * 20) % (W + 20) + W + 20) % (W + 20) - 10, y = 40 + ((i * 41) % 90) + Math.sin(t * 2 + i) * 6; if (Math.sin(t * 3 + i * 1.7) > -.2) { pxRect(g, x, y, 2, 2, '#fff36a'); pxRect(g, x - 1, y, 1, 1, '#c8e84a'); } } g.globalAlpha = .25; pxRect(g, 0, 0, W, H, '#0b1026'); g.globalAlpha = 1; }
+    return;
+  }
+  if (wd === 4) {
+    if (th === 'pyramide' || th === 'kammer') {
+      const L = pxALayer('pyrin' + th, H, 256, (q, w, h, r) => { pxRect(q, 0, 0, w, h, th === 'kammer' ? '#3a2a14' : '#2e2212'); for (let y = 0; y < h; y += 10) for (let x = (y / 10 % 2) * 16; x < w; x += 32) { pxRect(q, x, y, 31, 9, th === 'kammer' ? '#4a3618' : '#3a2c18'); pxRect(q, x, y, 31, 1, '#52401f'); }
+        const c2 = '#8a6a30';
+        for (let i = 0; i < 6; i++) { const x = 16 + i * 40, y = 40 + (i % 2) * 30, k = i % 3;
+          if (k === 0) { pxEll(q, x, y, 14, 7, c2); pxEll(q, x + 2, y + 1, 10, 5, th === 'kammer' ? '#4a3618' : '#3a2c18'); pxRect(q, x + 6, y + 2, 3, 3, c2); pxRect(q, x + 4, y + 7, 2, 4, c2); }
+          else if (k === 1) { pxTri(q, x, y + 6, x + 6, y, x + 12, y + 6, c2); pxRect(q, x + 10, y - 2, 4, 4, c2); pxRect(q, x + 3, y + 6, 1, 4, c2); pxRect(q, x + 8, y + 6, 1, 4, c2); }
+          else for (let w = 0; w < 3; w++) for (let s2 = 0; s2 < 12; s2 += 2) pxRect(q, x + s2, y + w * 4 + (s2 % 4 ? 1 : 0), 2, 1, c2); } });
+      pxAPara(g, run, L, cam, .4, 0);
+      for (let i = 0; i < 4; i++) { const x = ((i * 120 + 40 - cam * .4) % (W + 60) + W + 60) % (W + 60) - 30, fl = Math.sin(t * 9 + i) > 0; pxRect(g, x, 60, 3, 12, '#6b4425'); pxEll(g, x - 3, 50 + (fl ? 0 : 1), 9, 10, '#ff6a2a'); pxEll(g, x - 1, 54, 5, 6, '#ffd84a'); g.globalAlpha = .12; pxEll(g, x - 30, 30, 62, 60, '#ffb02e'); g.globalAlpha = 1; }
+      if (th === 'kammer') for (let i = 0; i < 8; i++) { const x = ((i * 47 - cam * .5) % W + W) % W, y = 20 + (i * 29) % 60; if (Math.sin(t * 4 + i) > .6) pxRect(g, x, y, 2, 2, '#fff3c4'); }
+      return;
+    }
+    if (th === 'wuestennacht') { for (let i = 0; i < 70; i++) { const x = ((i * 53 - cam * .05) % W + W) % W, y = (i * 37) % 100; pxRect(g, x, y, 1, 1, Math.sin(t * 2 + i) > .3 ? '#ffffff' : '#8fa4d8'); } pxEll(g, W - 46, 14, 16, 16, '#fff3c4'); pxEll(g, W - 41, 13, 13, 14, '#0a0e2a'); }
+    else sonne(W * .75 - cam * .02, 34, 14, '#ffd84a', '#fff3c4');
+    const night = th === 'wuestennacht';
+    const P = pxALayer('pyr' + (night ? 'n' : ''), 110, 420, (q, w, h) => { [[90, 60], [180, 90], [300, 50]].forEach(([x, s]) => { pxTri(q, x - s, h, x, h - s, x + s, h, night ? '#2a3050' : th === 'canyon' ? '#c4743a' : '#d9b26a'); pxTri(q, x, h, x, h - s, x + s, h, night ? '#20263f' : th === 'canyon' ? '#a85a2a' : '#b8904a'); }); });
+    if (th !== 'canyon') pxAPara(g, run, P, cam, .08, H - 140);
+    else { const M = pxALayer('mesa', 110, 360, (q, w, h, r) => { for (let x = 0; x < w; x += 2) { const tt = 30 + Math.round(Math.abs(Math.sin(x / 50)) * 30 + (Math.sin(x / 9) > .7 ? 10 : 0)); pxRect(q, x, tt, 2, h - tt, '#b85a32'); pxRect(q, x, tt, 2, 2, '#e08a55'); } }); pxAPara(g, run, M, cam, .12, H - 130); }
+    for (let k = 0; k < 2; k++) { const D = pxALayer('duene' + k + (night ? 'n' : ''), 60, 320, (q, w, h) => { for (let x = 0; x < w; x++) { const y = 20 + Math.sin(x / w * Math.PI * 2 * (k + 1) + k) * 10 + Math.sin(x / w * Math.PI * 6) * 4; pxRect(q, x, y, 1, h - y, night ? (k ? '#3a3a52' : '#2c2c44') : (k ? '#e9c27a' : '#dcb46a')); pxRect(q, x, y, 1, 1, night ? '#4a4a66' : '#f3d494'); } }); pxAPara(g, run, D, cam, .2 + k * .15, H - 90 + k * 18); }
+    if (th === 'oase') { const O = pxALayer('oasenpalmen', 70, 300, (q, w, h) => { pxEll(q, 30, h - 16, 140, 20, '#3f9ad0'); [[50, 10], [90, 4], [140, 12], [230, 8]].forEach(([x, y]) => { pxRect(q, x, y + 8, 2, h - y - 16, '#6b4425'); [[-9, 0], [6, 0], [-6, -3], [4, -4], [-1, -5]].forEach(([dx, dy]) => pxRect(q, x + dx, y + 8 + dy, 8, 2, '#2f8f46')); }); }); pxAPara(g, run, O, cam, .32, H - 92); }
+    return;
+  }
+  if (wd === 5) {
+    if (th === 'morgenrot') sonne(W * .3 - cam * .02, H - 70, 22, '#ffd84a', '#fff3c4');
+    if (th === 'regenbogen') { const cx = ((W * .6 - cam * .03) % (W + 300) + W + 300) % (W + 300) - 150, cols = ['#ef4b4b', '#ff9d2e', '#ffd84a', '#5cc85c', '#3b7cf0', '#8a5cf6']; g.globalAlpha = .7; cols.forEach((col, i) => { const r = 110 - i * 6; for (let a = .15; a <= Math.PI - .15; a += .012) pxRect(g, Math.round(cx + Math.cos(a) * r), Math.round(H - 30 - Math.sin(a) * r), 2, 6, col); }); g.globalAlpha = 1; }
+    const dark = th === 'gewitter';
+    for (let k = 0; k < 3; k++) { const C = pxALayer('himmel' + k + (dark ? 'd' : th === 'morgenrot' ? 'r' : ''), 70, 320, (q, w, h, r) => { for (let i = 0; i < 6 + k * 2; i++) { const x = r() * w, y = 10 + r() * 40, s = 30 + r() * 30; pxEll(q, x, y, s, s * .5, dark ? ['#4a5068', '#3c4258', '#30364a'][k] : th === 'morgenrot' ? ['#ffc0b0', '#ffd8c8', '#fff0e8'][k] : ['#e8f2ff', '#f4f8ff', '#ffffff'][k]); pxEll(q, x + s * .2, y - s * .15, s * .5, s * .4, dark ? '#565c76' : '#ffffff'); } }); pxAPara(g, run, C, cam + t * (4 + k * 3), .1 + k * .15, H - 160 + k * 40); }
+    if (th === 'windig') for (let i = 0; i < 6; i++) { const x = ((i * 71 + t * 60 - cam * .3) % (W + 40) + W + 40) % (W + 40) - 20, y = 30 + (i * 23) % 100; pxRect(g, x, y, 14, 1, '#ffffff'); pxRect(g, x + 4, y + 3, 10, 1, '#dce8ff'); }
+    if (th === 'schloss') { const sx = ((200 - cam * .1) % (W + 300) + W + 300) % (W + 300) - 150; for (let k = 0; k < 3; k++) { const x = sx + k * 40 - 40, h2 = 50 + (k === 1 ? 30 : 0); pxRect(g, x, H - 60 - h2, 22, h2, '#cbc2f4'); pxTri(g, x - 3, H - 60 - h2, x + 11, H - 80 - h2, x + 25, H - 60 - h2, '#9a86e8'); } pxEll(g, sx - 70, H - 70, 180, 30, '#ffffff'); }
+    if (dark && (t % 5) < .12) { g.globalAlpha = .5; pxRect(g, 0, 0, W, H, '#ffffff'); g.globalAlpha = 1; const bx = (Math.floor(t / 5) * 97) % W; pxLine(g, bx, 0, bx + 8, 30, '#ffd84a'); pxLine(g, bx + 8, 30, bx - 2, 46, '#ffd84a'); pxLine(g, bx - 2, 46, bx + 10, 80, '#ffd84a'); }
+    return;
+  }
+
+  const night = th === 'flutlicht' || th === 'finale';
+  if (night) { for (let i = 0; i < 40; i++) { const x = ((i * 53 - cam * .05) % W + W) % W, y = (i * 37) % 70; pxRect(g, x, y, 1, 1, '#c8d4f0'); } }
+  else if (th !== 'daecher') pxPara(g, run, 'wolken', cam + t * 6, .08, 6, 60);
+  if (th === 'daecher') sonne(W * .7 - cam * .02, H - 96, 18, '#ffd84a', '#fff3c4');
+  if (th === 'finale' || th === 'flutlicht') {
+    const St = pxALayer('stadionbg' + th, 110, 400, (q, w, h, r) => { pxRect(q, 0, 40, w, h - 40, '#1d2440'); for (let y = 46; y < h - 10; y += 6) for (let x = 2; x < w; x += 4) pxRect(q, x, y, 2, 2, R.pick(['#ef4b4b', '#3b7cf0', '#ffd84a', '#ffffff', '#5cc85c'])); pxRect(q, 0, 36, w, 6, '#3a4250'); [40, 200, 360].forEach(x => { pxRect(q, x, 0, 4, 40, '#9aa7b8'); pxRect(q, x - 10, 0, 24, 8, '#fff3c4'); }); });
+    pxAPara(g, run, St, cam, .15, H - 150);
+    g.globalAlpha = .08; for (const x0 of [W * .2, W * .8]) pxTri(g, x0 - cam * .15 % W, 0, x0 - 80, H, x0 + 80, H, '#fff3c4'); g.globalAlpha = 1;
+    if (th === 'finale' && Math.random() < .4) pxRect(g, Math.random() * W, 20 + Math.random() * 30, 2, 2, R.pick(['#ffd84a', '#ffffff', '#ef4b4b', '#3b7cf0']));
+    return;
+  }
+  pxPara(g, run, 'stadt', cam, .12, H - 120, 80);
+  if (th === 'daecher') { g.globalAlpha = .25; pxRect(g, 0, 0, W, H, '#6a3b8f'); g.globalAlpha = 1; }
+  if (th === 'park' || th === 'bolzplatz') { const T = pxALayer('parkbaeume', 60, 300, (q, w, h, r) => { for (let i = 0; i < 10; i++) { const x = r() * w, s = 18 + r() * 14; pxRect(q, x + s / 2 - 1, h - 20, 3, 20, '#5a3a22'); pxEll(q, x, h - 20 - s * .8, s, s * .9, i % 2 ? '#3fae55' : '#2f8f46'); } }); pxAPara(g, run, T, cam, .3, H - 84); }
+  if (th === 'bolzplatz') { for (let x = -((cam * .45) % 8); x < W; x += 8) pxRect(g, x, H - 52, 1, 22, '#5d6878'); pxRect(g, 0, H - 52, W, 1, '#5d6878'); pxRect(g, 0, H - 41, W, 1, '#5d6878'); }
+  if (th === 'fanmeile') { for (let i = 0; i < 8; i++) { const x = ((i * 61 - cam * .3) % (W + 20) + W + 20) % (W + 20) - 10, y = 40 + Math.sin(t * 1.5 + i) * 6 + (i * 13) % 20; pxRect(g, x, y + 8, 1, 14, '#5d6878'); pxEll(g, x - 4, y, 9, 10, ['#ef4b4b', '#3b7cf0', '#ffd84a', '#5cc85c'][i % 4]); } }
+}
+
+function pxAHat2(g, pose, fr, x, y, flip, style) {
+  if (!style || style === 'sonne') return pxAHat(g, pose, fr, x, y, flip);
+  let bx = 3, by = 3, bw = 13;
+  if (pose === 'j') { bx = 4; bw = 11; by = 1; } else if (pose === 'f') by = 2; else if (pose === 'l') { bx = 2; bw = 15; by = 6; } else if (pose === 'c') by = 1;
+  if (pose === 'w' && (fr === 1 || fr === 3)) by += 1; if (pose === 'i' && fr === 2) by += 1;
+  let hx = bx + Math.round(bw / 2) - 6; const hy = by - 3; if (flip) hx = 20 - hx - 13;
+  x = Math.round(x) + hx; y = Math.round(y) + hy; const K = PXC.k;
+  if (style === 'safari') { pxRect(g, x, y + 3, 13, 2, K); pxRect(g, x + 1, y + 3, 11, 1, '#c8b070'); pxEll(g, x + 2, y - 2, 9, 7, K); pxEll(g, x + 3, y - 1, 7, 5, '#d8c080'); pxRect(g, x + 3, y + 2, 7, 1, '#6b8a3a'); }
+  else if (style === 'brille') { pxRect(g, x + 1, y + 1, 11, 3, K); pxRect(g, x + 2, y + 2, 9, 1, '#8a5a30'); pxEll(g, x + 2, y - 1, 4, 4, K); pxEll(g, x + 7, y - 1, 4, 4, K); pxRect(g, x + 3, y, 2, 2, '#8fd0ff'); pxRect(g, x + 8, y, 2, 2, '#8fd0ff'); }
+  else if (style === 'stirnband') { pxRect(g, x + 1, y + 3, 11, 3, K); pxRect(g, x + 2, y + 4, 9, 1, '#ef4b4b'); pxRect(g, (flip ? x + 11 : x), y + 4, 2, 4, K); pxRect(g, (flip ? x + 11 : x), y + 5, 1, 2, '#ef4b4b'); }
+}
+
+const PXA_WELTEN = [null,
+  { n: 'EISBERG-INSEL', d: 'die Eisberg-Insel', e: '🐧', see: '#2c63c9', welle: '#3f86e8' },
+  { n: 'VULKAN-INSEL', d: 'die Vulkan-Insel', e: '🌋', see: '#1f8fb8', welle: '#3ab6d8' },
+  { n: 'DSCHUNGEL', d: 'der Dschungel', e: '🐒', see: '#1f7aa0', welle: '#3a9cc0', nodes: [[36, 150], [74, 128], [110, 152], [150, 128], [186, 146], [214, 104]] },
+  { n: 'WÜSTE', d: 'die Wüste', e: '🐪', see: '#2f86c8', welle: '#4aa2dc', nodes: [[40, 152], [80, 132], [116, 156], [152, 134], [178, 108], [210, 84]] },
+  { n: 'WOLKENHIMMEL', d: 'der Wolkenhimmel', e: '☁️', see: '#5a9cf3', welle: '#8fc3ff', nodes: [[38, 148], [76, 126], [112, 146], [146, 120], [180, 136], [212, 96]] },
+  { n: 'FUSSBALLSTADT', d: 'die Fußballstadt', e: '⚽', see: '#2c63c9', welle: '#3f86e8', nodes: [[38, 152], [76, 134], [112, 154], [146, 130], [180, 150], [210, 104]] }
+];
+function pxAMapArt(g, W, o, wd, t) {
+  if (wd === 3) { pxEll(g, o + 4, 64, 250, 128, PXC.k); pxEll(g, o + 6, 66, 246, 122, '#e9c27a'); pxEll(g, o + 14, 70, 230, 110, '#2f8f46'); pxEll(g, o + 30, 78, 200, 86, '#3fae55');
+    for (let x = 30; x < 230; x += 4) pxRect(g, o + x, 112 + Math.round(Math.sin(x / 20) * 8), 4, 3, '#3a9cc0');
+    [[24, 128], [56, 168], [94, 112], [136, 168], [168, 112], [236, 136], [200, 168]].forEach(([x, y]) => pxDraw(g, 'urwaldbaum', o + x - 18, y - 48));
+    pxDraw(g, 'statue', o + 200, 60); }
+  else if (wd === 4) { pxEll(g, o + 4, 64, 250, 128, PXC.k); pxEll(g, o + 6, 66, 246, 122, '#e9c27a'); pxEll(g, o + 20, 74, 220, 100, '#f3d494');
+    [[180, 96, 40], [214, 104, 26], [120, 92, 22]].forEach(([x, y, s]) => { pxTri(g, o + x - s, y, o + x, y - s, o + x + s, y, PXC.k); pxTri(g, o + x - s + 2, y - 1, o + x, y - s + 2, o + x + s - 2, y - 1, '#d9b26a'); pxTri(g, o + x, y - 1, o + x, y - s + 2, o + x + s - 2, y - 1, '#b8904a'); });
+    pxEll(g, o + 50, 120, 40, 14, '#3f9ad0'); pxDraw(g, 'palme', o + 44, 86); pxDraw(g, 'kaktusgross', o + 150, 136); pxDraw(g, 'kamel', o + 90, 150); }
+  else if (wd === 5) { for (let i = 0; i < 5; i++) pxEll(g, (i * 70 + t * 4) % (W + 60) - 30, 20 + i * 9, 40, 14, '#ffffff');
+    pxEll(g, o + 4, 70, 250, 116, '#dce8ff'); [[0, 80, 90, 70], [60, 64, 120, 80], [150, 74, 104, 74], [30, 120, 200, 64]].forEach(([x, y, w, h]) => pxEll(g, o + x, y, w, h, '#ffffff'));
+    pxDraw(g, 'wolkenschloss', o + 190, 50); pxDraw(g, 'regenbogen', o + 80, 72); pxDraw(g, 'ballon', o + 22 + Math.round(Math.sin(t) * 3), 76); }
+  else if (wd === 6) { pxEll(g, o + 4, 64, 250, 128, PXC.k); pxEll(g, o + 6, 66, 246, 122, '#8a8f9a'); pxEll(g, o + 16, 72, 226, 106, '#5cc85c');
+    for (let x = 20; x < 240; x += 26) { const h = 14 + (x * 7) % 18; pxRect(g, o + x, 96 - h, 18, h, '#c8ccd4'); for (let yy = 98 - h; yy < 94; yy += 5) pxRect(g, o + x + 3, yy, 3, 2, '#ffd84a'); }
+    pxEll(g, o + 170, 80, 70, 30, PXC.k); pxEll(g, o + 172, 82, 66, 26, '#5d6878'); pxEll(g, o + 182, 88, 46, 14, '#5cc85c'); pxRect(g, o + 204, 88, 1, 14, '#ffffff'); }
+}
+
+
+function pxAMap(sel) {
+  const run = pxView({ id: 'advkarte', title: 'Lumis Pixel-Abenteuer', pad: 'none', portrait: 'top', H: 192 });
+  const S0 = pxAS(), NW = Math.max(...PXA_LEVELS.map(l => l.wd || 1));
+  const firstOpen = w => { const l = pxAWorldLv(w), f = l.find(i => !S0.lv[i]); return f == null ? l[l.length - 1] : f; };
+  const wOpen = w => w >= 1 && w <= NW && pxAOpen(pxAFirst(w));
+  let cur = sel;
+  if (cur == null) { let w = 1; for (let k = NW; k >= 1; k--) if (wOpen(k)) { w = k; break; } cur = firstOpen(w); }
+  if (!pxAOpen(cur)) cur = firstOpen(1);
+  const wd = pxAW(cur), LV = pxAWorldLv(wd), base = LV[0], WI = PXA_WELTEN[wd] || PXA_WELTEN[1];
+  const NODES = wd === 1 ? PXA_NODES : wd === 2 ? PXA_NODES2 : WI.nodes;
+  let t = 0, go = -1;
+  const ox = () => Math.round((run.W - 256) / 2);
+  const goWorld = w => { if (!wOpen(w)) { pxSfx.bad(); toast(`Welt ${w} öffnet sich, wenn du Level ${w - 1}-6 geschafft hast!`); return; } pxSfx.ok(); go = 99; pxAfter(run, 300, () => pxAMap(firstOpen(w))); };
+  run.onTap = (x, y, ph) => {
+    if (ph !== 'down' || go >= 0) return;
+    if (y < 62 && x < 52 && wd > 1) return goWorld(wd - 1);
+    if (y < 62 && x > run.W - 52 && wd < NW) return goWorld(wd + 1);
+    const o = ox(), k = NODES.findIndex(([nx, ny]) => Math.hypot(x - (nx + o), y - ny) < 15);
+    if (k < 0) return; const i = base + k;
+    if (!pxAOpen(i)) { pxSfx.bad(); toast('Erst das Level davor schaffen!'); return; }
+    cur = i; go = i; pxSfx.ok(); pxAfter(run, 450, () => pxAPlay(i));
+  };
+  pxLoop(run, dt => {
+    t += dt;
+    if (go < 0) {
+      if (pxKeyHit(run, 'r')) { if (cur < LV[LV.length - 1] && pxAOpen(cur + 1)) { cur++; pxSfx.step(); } else if (cur === LV[LV.length - 1] && wd < NW) goWorld(wd + 1); }
+      if (pxKeyHit(run, 'l')) { if (cur > base) { cur--; pxSfx.step(); } else if (wd > 1) goWorld(wd - 1); }
+      if (pxKeyHit(run, 'u') || pxKeyHit(run, 'a')) { go = cur; pxSfx.ok(); pxAfter(run, 350, () => pxAPlay(cur)); }
+    }
+    pxHud(`<span>★ ${pxAStars(wd)}/${LV.length * 3}</span>`);
+  }, g => {
+    const W = run.W, H = run.H, o = ox();
+    pxRect(g, 0, 0, W, H, WI.see || '#2c63c9');
+    if (wd !== 5) for (let y = 0; y < H; y += 8) for (let x = ((y / 8) % 2) * 10 - ((t * 6) % 20); x < W; x += 20) pxRect(g, x, y + 3, 6, 1, WI.welle || '#3f86e8');
+    if (wd === 1) {
+      pxEll(g, o + 6, 66, 246, 126, PXC.k); pxEll(g, o + 8, 68, 242, 120, '#dfe9f5'); pxEll(g, o + 14, 70, 230, 108, '#ffffff');
+      [[24, 120], [60, 160], [100, 104], [138, 160], [170, 150], [240, 120], [128, 130]].forEach(([x, y]) => pxDraw(g, 'tanne', o + x - 10, y - 30));
+      pxDraw(g, 'fahne_a_1', o + 226, 64);
+    } else if (wd === 2) {
+      pxEll(g, o + 4, 64, 250, 128, PXC.k); pxEll(g, o + 6, 66, 246, 122, '#e9c27a'); pxEll(g, o + 16, 72, 226, 104, '#5cc85c'); pxEll(g, o + 30, 80, 190, 80, '#3fae55');
+      const vx = o + 196, vb = 96; pxTri(g, vx - 46, vb, vx, 40, vx + 46, vb, PXC.k); pxTri(g, vx - 44, vb, vx, 42, vx + 44, vb, '#7d6a72'); pxTri(g, vx - 13, 54, vx, 42, vx + 13, 54, '#ffffff'); pxRect(g, vx - 5, 41, 10, 2, '#5a4a52');
+      for (let k = 0; k < 4; k++) pxEll(g, vx - 6 + k * 3 + Math.round(Math.sin(t + k) * 2), 32 - k * 7 - ((t * 6) % 7), 12 - k * 2, 8 - k, '#ffffff');
+      [[20, 128], [60, 168], [96, 110], [132, 172], [236, 132], [228, 160], [150, 160]].forEach(([x, y]) => pxDraw(g, 'palme', o + x - 16, y - 44));
+    } else pxAMapArt(g, W, o, wd, t);
+    pxText(g, `WELT ${wd}: ${WI.n}`, W / 2, 6, '#ffd84a', 1, 'c', '#1d2440');
+    pxText(g, 'TIPPE AUF EIN LEVEL', W / 2, 16, '#dfe9f5', 1, 'c', '#1d2440');
+
+    const arrow = (x, txt, sub, open) => { const w = Math.max(pxTextW(txt), pxTextW(sub)) + 8; pxRect(g, x - w / 2, 30, w, 25, PXC.k); pxRect(g, x - w / 2 + 1, 31, w - 2, 23, open ? '#2149b0' : '#5d6878'); pxText(g, txt, x, 33, '#ffffff', 1, 'c'); pxText(g, sub, x, 45, open ? '#ffd84a' : '#dfe9f5', 1, 'c'); };
+    if (wd > 1) arrow(26, '◀ WELT ' + (wd - 1), 'ZURÜCK', true);
+    if (wd < NW) { const op = wOpen(wd + 1); arrow(W - 26, 'WELT ' + (wd + 1) + ' ▶', op ? 'LOS!' : 'NACH ' + wd + '-6', op); if (op && Math.floor(t * 2) % 2) pxDraw(g, 'funkel_a_' + (Math.floor(t * 8) % 4), W - 12, 24); }
+    for (let k = 0; k + 1 < NODES.length; k++) { const [x0, y0] = NODES[k], [x1, y1] = NODES[k + 1]; for (let q = 1; q < 8; q++) { const x = x0 + (x1 - x0) * q / 8, y = y0 + (y1 - y0) * q / 8; pxRect(g, o + x - 1, y - 1, 3, 3, S0.lv[base + k] ? '#5cc85c' : '#9aa7b8'); } }
+    const oc = ['#3b7cf0', '#3b7cf0', '#ff9d2e', '#2f8f46', '#d9661a', '#8a5cf6', '#ef4b4b'][wd] || '#3b7cf0';
+    NODES.forEach(([x, y], k) => {
+      const i = base + k, open = pxAOpen(i), dn = !!S0.lv[i];
+      pxEll(g, o + x - 11, y - 8, 22, 16, PXC.k); pxEll(g, o + x - 10, y - 7, 20, 14, dn ? '#5cc85c' : open ? oc : '#5d6878'); pxEll(g, o + x - 8, y - 6, 16, 6, dn ? '#8fe08f' : open ? '#ffffff55' : '#9aa7b8');
+      pxText(g, open ? String(k + 1) : '?', o + x, y - 3, '#ffffff', 1, 'c', PXC.k);
+      const st = (S0.lv[i] && S0.lv[i].s) | 0; for (let q = 0; q < 3; q++) pxText(g, '★', o + x - 9 + q * 7, y + 10, q < st ? '#ffd84a' : '#5d6878', 1, 'l');
+    });
+    const [lx, ly] = NODES[cur - base], pose = go >= 0 ? 'c' : 'i', fr = go >= 0 ? 0 : (Math.floor(t * 2) % 3 === 0 ? 1 : 0), yy = ly - 26 - Math.abs(Math.round(Math.sin(t * 4) * 2));
+    pxDraw(g, `lumi_${pose}_${fr}`, o + lx - 10, yy);
+    if (wd >= 2) pxAHat2(g, pose, fr, o + lx - 10, yy, false, (PXA_WX[wd] && PXA_WX[wd].hat) || 'sonne');
+    const nm = PXA_LEVELS[cur].n, w = pxTextW(nm) + 12; pxRect(g, W / 2 - w / 2, H - 18, w, 14, '#1d2440'); pxText(g, nm, W / 2, H - 15, '#ffffff', 1, 'c');
+  });
+}
+
+
+function pxASegD(px, py, ax, ay, bx, by) { const vx = bx - ax, vy = by - ay, l2 = vx * vx + vy * vy || 1, t = Math.max(0, Math.min(1, ((px - ax) * vx + (py - ay) * vy) / l2)); return Math.hypot(ax + vx * t - px, ay + vy * t - py); }
+function pxALianen(run, A, dt) {
+  const P = A.p; if (P.vineCd > 0) P.vineCd -= dt;
+  for (const e of A.ents) if (e.k === 'liane' && P.vine !== e) e.ang += (Math.sin(A.t * 1.4 + e.ph) * .18 - e.ang) * Math.min(1, dt * 2);
+  if (P.vine) {
+    const e = P.vine, ax = (run.keys.r || run.joy.x > .3 ? 1 : 0) - (run.keys.l || run.joy.x < -.3 ? 1 : 0);
+
+    e.av += (-(PXA_GRAV * .75 / e.len) * Math.sin(e.ang) + ax * 1.5) * dt; e.av *= 1 - .2 * dt;
+    if (Math.abs(e.ang) < .25 && Math.abs(e.av) < 2.9) e.av += (e.av >= 0 ? 1 : -1) * 7 * dt;
+    e.ang += e.av * dt;
+    if (e.ang > 1.25) { e.ang = 1.25; e.av = Math.min(0, e.av); } else if (e.ang < -1.25) { e.ang = -1.25; e.av = Math.max(0, e.av); }
+    P.x = e.ax + Math.sin(e.ang) * e.len; P.y = e.ay + Math.cos(e.ang) * e.len + 13; P.dir = ax || (e.av >= 0 ? 1 : -1);
+    P.on = false; P.plat = null;
+    if (pxKeyHit(run, 'u') && A.phase === 'play') {
+      const tv = e.av * e.len;
+      P.vx = Math.max(-140, Math.min(140, Math.cos(e.ang) * tv)); if (ax) P.vx = ax * Math.max(125, ax * P.vx); else if (Math.abs(P.vx) < 80) P.vx = P.dir * 80;
+      P.vy = Math.min(0, -Math.sin(e.ang) * tv * .3) - 250; P.fling = .75; P.boost = .3;
+      P.vineLast = e; P.vine = null; P.vineCd = .45; pxSfx.jump();
+    } else { P.vx = 0; P.vy = 0; }
+    return;
+  }
+  if (P.on || A.phase !== 'play') return;
+  for (const e of A.ents) {
+    if (e.k !== 'liane' || (P.vineCd > 0 && e === P.vineLast)) continue;
+    const ex = e.ax + Math.sin(e.ang) * e.len, ey = e.ay + Math.cos(e.ang) * e.len, mx = e.ax + Math.sin(e.ang) * e.len * .3, my = e.ay + Math.cos(e.ang) * e.len * .3;
+    if (Math.min(pxASegD(P.x, P.y - 5, mx, my, ex, ey), pxASegD(P.x, P.y - 14, mx, my, ex, ey)) < 18 || (Math.abs(P.x - ex) < 22 && P.y - 16 < ey + 14 && P.y > ey - 6)) { /* großzügig, damit Kinder die Liane gut erwischen */ P.vine = e; e.av = Math.max(-2.2, Math.min(2.2, (P.vx * Math.cos(e.ang) - P.vy * Math.sin(e.ang)) / e.len)); P.vx = P.vy = 0; pxSfx.pop(); break; }
+  }
+}
+function pxADrawLiane(g, A, e, cam) {
+  const x0 = e.ax - cam, y0 = e.ay, ex = x0 + Math.sin(e.ang) * e.len, ey = y0 + Math.cos(e.ang) * e.len;
+  for (let k = 0; k <= e.len; k += 2) { const f = k / e.len, x = x0 + (ex - x0) * f, y = y0 + (ey - y0) * f; pxRect(g, x - 1, y, 3, 2, PXC.k); }
+  for (let k = 0; k <= e.len; k += 2) { const f = k / e.len, x = x0 + (ex - x0) * f, y = y0 + (ey - y0) * f; pxRect(g, x, y, 1, 2, '#3fae55'); if (k % 12 === 6) { pxRect(g, x + (k % 24 ? 1 : -4), y, 4, 2, PXC.k); pxRect(g, x + (k % 24 ? 1 : -3), y, 2, 1, '#7ad06a'); } }
+  pxEll(g, x0 - 9, y0 - 7, 18, 10, PXC.k); pxEll(g, x0 - 8, y0 - 6, 16, 8, '#2f8f46'); pxEll(g, x0 - 5, y0 - 5, 9, 4, '#5cc85c');
+  pxEll(g, ex - 3, ey - 2, 6, 5, '#2f8f46');
+}
+
+function pxAWackel(run, A, dt) {
+  const P = A.p;
+  for (const e of A.ents) {
+    if (e.k !== 'wackel') continue;
+    const cx = e.tx * PXA_T + 8;
+    if (e.st === 0) { if (P.on && P.ground === 'Z' && Math.abs(P.x - cx) < 13 && Math.abs(P.y - e.ty * PXA_T) < 2) { e.st = 1; e.t = .55; } }
+    else if (e.st === 1) { if ((e.t -= dt) <= 0) { e.st = 2; e.t = 3.2; e.fy = 0; A.grid[e.ty][e.tx] = ' '; pxSfx.step(); pxBurst(run, cx, e.ty * PXA_T + 4, ['#d9b26a', '#f0d494'], 6, { v: 30, up: 10, life: .4 }); } }
+    else { e.fy += dt * 160; if ((e.t -= dt) <= 0) { const over = Math.abs(P.x - cx) < 14 && P.y > e.ty * PXA_T && P.y - P.h < (e.ty + 1) * PXA_T; if (over) e.t = .3; else { e.st = 0; e.fy = 0; A.grid[e.ty][e.tx] = 'Z'; } } }
+  }
+}
+if (typeof PX_NEW !== 'undefined') PX_NEW.abenteuer = 'Neu: 4 Welten';
+
+
+PXA_LEVELS.push(
+  { n: "Urwaldpfad", th: "urwald", wd: 3, m: [
+    "                                                                                                                                                                       #",
+    "                                L                                                             L     L                      L                                           #",
+    "                                                                                                                                                                       #",
+    "                                *                                                                                                                                      #",
+    "              B                ooo                        *                                                               ooo                           *              #",
+    "                                                                   Q        Q                                                                                          #",
+    "                                                         ==                                     ooo                                                    ==              #",
+    "                                                      ==                                                                                            ==                 #",
+    "  Poozs    ooo         t                oo      T oo        K   oo       oo         H                       oo   K                 oo    oo E                    F     #",
+    "#############################         ###############      ################################               ##############         ##################      ###############",
+    "#############################~~~~~~~~~###############~~~~~~################################~~~~~~~~~~~~~~~##############~~~~~~~~~##################~~~~~~###############",
+    "#############################~~~~~~~~~###############~~~~~~################################~~~~~~~~~~~~~~~##############~~~~~~~~~##################~~~~~~###############"
+  ] },
+  { n: "Lianenschlucht", th: "schlucht", wd: 3, m: [
+    "                                                                                                                                                                           #",
+    "                  L                              L     L                                                                          L              L                         #",
+    "                                                                                                                                                                           #",
+    "                                                                                                                                  *              *                         #",
+    "                 ooo                                                                                 o o                 *       ooo            ooo                        #",
+    "                                                                              Q                                                                                            #",
+    "                                                   ooo                                                                  ==                                                 #",
+    "                                                                                                                     ==                                                    #",
+    "  Poozt                   oo    oo C                           oo   K      oo          T oo    H             K               t            oo             oo          F     #",
+    "########   ####         ######################               #########################################J#############      #####         ######         #####################",
+    "########~~~####~~~~~~~~~######################~~~~~~~~~~~~~~~#######################################################~~~~~~#####~~~~~~~~~######~~~~~~~~~#####################",
+    "########~~~####~~~~~~~~~######################~~~~~~~~~~~~~~~#######################################################~~~~~~#####~~~~~~~~~######~~~~~~~~~#####################"
+  ] },
+  { n: "Wasserfall", th: "wasserfall", wd: 3, m: [
+    "                                                                                                                                                                                   #",
+    "                            L                                                     L                                                                                                #",
+    "                                                                                                                                                                                   #",
+    "                            *                                                                                                                                  o                   #",
+    "                           ooo                                        *          ooo                         *      B                                          ##                  #",
+    "                                                     Q                                                                                                       oo##                  #",
+    "             ooo                                                     ==                                     ==                                               ####                  #",
+    "             #####                                                ==                                     ==                                                  ####                  #",
+    "  Poozt      #####                  oo      T oo  oo       K                              oo     H               ooo       K    oo E         t     T oo    ######            F     #",
+    "#########################         ###############################      ########         ################      ######################################################################",
+    "#########################~~~~~~~~~###############################~~~~~~########~~~~~~~~~################~~~~~~######################################################################",
+    "#########################~~~~~~~~~###############################~~~~~~########~~~~~~~~~################~~~~~~######################################################################"
+  ] },
+  { n: "Baumkronen", th: "kronen", wd: 3, m: [
+    "                                                                                                                                                                                #",
+    "                        L                                                     L     L                     *                     *                     L                         #",
+    "                                                                                                                                                                                #",
+    "                        *                                                                                                                                                       #",
+    "                       ooo                         B            o o                                      o o                   o o                   ooo                        #",
+    "            Q                                                                                                      oo                                                           #",
+    "                                                                                ooo                                                                                             #",
+    "                                                                                                                 M                                                              #",
+    "  Poozt  oo                     oo      T oo    ooo       K                                 oo     H                     K                T oo                oo          F     #",
+    "#####################         ###################################J#########               ################J#####        ########J##################         #####################",
+    "#####################~~~~~~~~~#############################################~~~~~~~~~~~~~~~######################~~~~~~~~###########################~~~~~~~~~#####################",
+    "#####################~~~~~~~~~#############################################~~~~~~~~~~~~~~~######################~~~~~~~~###########################~~~~~~~~~#####################"
+  ] },
+  { n: "Glühwürmchensumpf", th: "sumpf", wd: 3, m: [
+    "                                                                                                                                                                            #",
+    "                         L                                                 L     L                           *                                                              #",
+    "                                                                                                                                                                            #",
+    "                                                                                                                                                                            #",
+    "           o o          ooo                         B                                             *         o o                      *                                      #",
+    "                                                                                                                       Q                                                    #",
+    "                                                                             ooo                 ==                                 ==                                      #",
+    "                                                                                              ==                                 ==                                         #",
+    "  Poozs                          oo      T oo    ooo          K                          oo           H             oo       K          oo E   C    oo E   E          F     #",
+    "############J#########         ###########################   ###########               ######      ##########J##################      #######################################",
+    "######################~~~~~~~~~###########################~~~###########~~~~~~~~~~~~~~~######~~~~~~#############################~~~~~~#######################################",
+    "######################~~~~~~~~~###########################~~~###########~~~~~~~~~~~~~~~######~~~~~~#############################~~~~~~#######################################"
+  ] },
+  { n: "Verlorener Tempel", th: "tempel", wd: 3, m: [
+    "                                                                                                                                                                                       #",
+    "                       L                                       *                             *                                                 L                                       #",
+    "                                                                                                                                                                                       #",
+    "                                                                                                                                               *                                       #",
+    "                      ooo                                     o o                           o o                                               ooo                                      #",
+    "           oo                                                                                                                                                 oo                       #",
+    "                                                                                                                 ooo                                                                   #",
+    "         M                                                                                                       #####                                      M                          #",
+    "  Pooz                         oo         T oo   oo C   E             K    oo E   C                   H          #####    K    oo E   C                oo              X         F     #",
+    "########        ####         ##################################J#############################J###########   ################################         ######        #####################",
+    "########~~~~~~~~####~~~~~~~~~############################################################################~~~################################~~~~~~~~~######~~~~~~~~#####################",
+    "########~~~~~~~~####~~~~~~~~~############################################################################~~~################################~~~~~~~~~######~~~~~~~~#####################"
+  ] },
+  { n: "Dünenmeer", th: "duene", wd: 4, m: [
+    "                                                                                                                                                                            #",
+    "                                                                                                            *                                        *                      #",
+    "                                                                                                                                                                            #",
+    "                                                                                                           o                                        o                       #",
+    "                                                                                                           ##                                       ##                      #",
+    "            Q             *                                           oo              Q                  oo##               Q                     oo##                      #",
+    "                                                                                                         ####                                     ####                      #",
+    "                       o o o o                                        ZZ                                 ####                                     ####                      #",
+    "  Poozt  oo         t            oo    oo E          T oo  K       ZZ    ZZ   oo   oo         H        ######     K      oo        oo E         ######                F     #",
+    "###################### ZZZ ZZZ ###################################          #################################################################################################",
+    "######################~~~~~~~~~###################################~~~~~~~~~~#################################################################################################",
+    "######################~~~~~~~~~###################################~~~~~~~~~~#################################################################################################"
+  ] },
+  { n: "Kamel-Oase", th: "oase", wd: 4, m: [
+    "                                                                                                                                                                            #",
+    "                                                                                                                                                                            #",
+    "                                                                                                                                                                            #",
+    "                                                                                                                                                                            #",
+    "           o o                            B                                                                            o o                                                  #",
+    "                         *                          Q                     *                    oo                                                  *                        #",
+    "                                                                                                                                                                            #",
+    "                      o o o o                                          o o o o                 ZZ                                               o o o o                     #",
+    "  Poozt                         oo     ooo       oo       K      T oo            oo     H   ZZ    ZZ   oo   K                    t   oo C                 oo          F     #",
+    "############J######## ZZZ ZZZ ######################################## ZZZ ZZZ ############          ###################J###################### ZZZ ZZZ #####################",
+    "#####################~~~~~~~~~########################################~~~~~~~~~############~~~~~~~~~~##########################################~~~~~~~~~#####################",
+    "#####################~~~~~~~~~########################################~~~~~~~~~############~~~~~~~~~~##########################################~~~~~~~~~#####################"
+  ] },
+  { n: "Skorpionschlucht", th: "canyon", wd: 4, m: [
+    "                                                                                                                                                                                       #",
+    "                                                                                                                      *                         *                                      #",
+    "                                                                                                                                                                                       #",
+    "                                                                                                                                                                                       #",
+    "                                                                                                                     o o                       o o                                     #",
+    "            oo                   *                                            Q        Q              oo                                                  oo                           #",
+    "                                                                                                                                                          ==   ==                      #",
+    "            ZZ                o o o o                                                                 ZZ                                                                               #",
+    "  Poozt  ZZ    ZZ   oo                  oo      T oo   oo E       K     t  oo       oo         H   ZZ    ZZ   oo             K      T oo                            R            F     #",
+    "########          ########### ZZZ ZZZ ############################################################          ##########J#########################J#######################################",
+    "########~~~~~~~~~~###########~~~~~~~~~############################################################~~~~~~~~~~############################################################################",
+    "########~~~~~~~~~~###########~~~~~~~~~############################################################~~~~~~~~~~############################################################################"
+  ] },
+  { n: "Sternennacht", th: "wuestennacht", wd: 4, m: [
+    "                                                                                                                                                                             #",
+    "                                                                                 *                                      *                                                    #",
+    "                                                                                                                                                                             #",
+    "                                                                                                                       o                                                     #",
+    "                                            *                                   o o                                    ##                                                    #",
+    "                                                                 oo                                   Q              oo##                                 Q                  #",
+    "             ooo                           ==                    ==   ==                                             ####                                                    #",
+    "             #####       o o o o        ==                                                                           ####                                                    #",
+    "  Pooz       #####                 oo            T oo  K                   R              H     s  oo         t    ######     K      T oo   oo E   E   oo              F     #",
+    "######################## ZZZ ZZZ ######      ####################################J############################################################################################",
+    "########################~~~~~~~~~######~~~~~~#################################################################################################################################",
+    "########################~~~~~~~~~######~~~~~~#################################################################################################################################"
+  ] },
+  { n: "In der Pyramide", th: "pyramide", wd: 4, m: [
+    "                                                                                                                                                                                        #",
+    "                                    *                                                                                                                                                   #",
+    "                                                                                                                                                                                        #",
+    "                                                                                                                                                                                        #",
+    "                                   o o                                                                                         B                                    B                   #",
+    "            Q        *                             *                   Q                 oo              Q                                                                              #",
+    "                                                                                                                     oo                                                                 #",
+    "                  o o o o                       o o o o                                  ZZ                          ==                                                                 #",
+    "  Poozt  oo                 oo               t            oo     s  oo       K     t  ZZ    ZZ   oo   oo         H          ooo       K      T oo   oo E   E     ooo              F     #",
+    "################# ZZZ ZZZ ##########J########## ZZZ ZZZ #############################          #####################     ################################################################",
+    "#################~~~~~~~~~#####################~~~~~~~~~#############################~~~~~~~~~~#####################~~~~~################################################################",
+    "#################~~~~~~~~~#####################~~~~~~~~~#############################~~~~~~~~~~#####################~~~~~################################################################"
+  ] },
+  { n: "Schatzkammer", th: "kammer", wd: 4, m: [
+    "                                                                                                                                                                                       #",
+    "                                                             *                                                            *                                                            #",
+    "                                                                                                                                                                                       #",
+    "                                                            o                                                            o                                                             #",
+    "                                               B            ##                                                           ##                                                            #",
+    "            Q                                             oo##                 Q                       *               oo##            Q                                               #",
+    "                                                          ####                                                         ####                                    oo                      #",
+    "                  o o o o                                 ####                                      o o o o            ####                                    ==                      #",
+    "  Poozs  oo                 oo      T oo    ooo         ######     K     t  oo          T oo    H             oo     ######     K   oo           oo E   E              X         F     #",
+    "################# ZZZ ZZZ ######################################################################### ZZZ ZZZ ##################################################     #####################",
+    "#################~~~~~~~~~#########################################################################~~~~~~~~~##################################################~~~~~#####################",
+    "#################~~~~~~~~~#########################################################################~~~~~~~~~##################################################~~~~~#####################"
+  ] },
+  { n: "Wolkenwiese", th: "wolken", wd: 5, m: [
+    "                                                                                                                                                   *                             #",
+    "                                                                                                                                     *                                           #",
+    "                                                       *                                                                                                                         #",
+    "                               oo                                                                                                                oo                              #",
+    "                               ####                  ooo                                                                            o o          ####                            #",
+    "                                                    #####                                Q        Q                                                                              #",
+    "                                                    #####      o   o   o                                                                                                         #",
+    "                                                    #####          ##                                                                                                            #",
+    "  Poozt   oo E         s                  oo     V  #####      ##  ##  ##     K       oo       oo         H          T oo  K                                oo             F     #",
+    "############################W#      ############    #########  ##  ##  ##  ###################################################   ####J########W#      ############################",
+    "##############################~~~~~~############~~~~#########~~##~~##~~##~~###################################################~~~###############~~~~~~############################",
+    "##############################~~~~~~############~~~~#########~~##~~##~~##~~###################################################~~~###############~~~~~~############################"
+  ] },
+  { n: "Regenbogenbrücke", th: "regenbogen", wd: 5, m: [
+    "                                                                                                                                                                                    #",
+    "                                                                                                                   *                                                                #",
+    "                                                                  *                                                                                            *                    #",
+    "                           oo                                                                                     o                                                                 #",
+    "               ooo         ####                                 ooo                                               ##                                         ooo                    #",
+    "              #####                                            #####                                            oo##                                        #####                   #",
+    "              #####                                            #####          o   o   o                         ####                oo                      #####                   #",
+    "              #####                                            #####              ##                            ####                                        #####                   #",
+    "  Poozt    V  #####                   oo       oo E         V  #####   K      ##  ##  ##        T oo    H     ######     K          ^^      oo C         V  #####             F     #",
+    "##########    ##########W#      ###########################    #############  ##  ##  ##  ##############################################################    #########################",
+    "##########~~~~############~~~~~~###########################~~~~#############~~##~~##~~##~~##############################################################~~~~#########################",
+    "##########~~~~############~~~~~~###########################~~~~#############~~##~~##~~##~~##############################################################~~~~#########################"
+  ] },
+  { n: "Windmühlenwolken", th: "windig", wd: 5, m: [
+    "                          *                                                                                                                                                   #",
+    "                                                                                                                                                                              #",
+    "                                                                                                 *            *                                                               #",
+    "                        oo                                                                                                                       oo                           #",
+    "           o o          ####                          B                                        ooo          ooo                                  ####                         #",
+    "                                                                    Q        Q                #####        #####                                                              #",
+    "                                                                                              #####        #####                                                              #",
+    "                                                                                              #####        #####                                                              #",
+    "  Poozt                            oo      T oo    ooo       K   oo       oo         H     V  #####     V  #####   K    oo E          T oo                  oo          F     #",
+    "############J########W#      #############################################################    #########    ###################################W#      #########################",
+    "#######################~~~~~~#############################################################~~~~#########~~~~#####################################~~~~~~#########################",
+    "#######################~~~~~~#############################################################~~~~#########~~~~#####################################~~~~~~#########################"
+  ] },
+  { n: "Gewitterwolken", th: "gewitter", wd: 5, m: [
+    "                             *                                                                                                                                                       #",
+    "                                                                                                          *                             *                                            #",
+    "                                                                                                                                                                                     #",
+    "                           oo                                                         o                  o                                                                           #",
+    "               ooo         ####                                                       ##                 ##               B            o o                                           #",
+    "              #####                                       Q                         oo##               oo##                                                    Q                     #",
+    "              #####                                                                 ####               ####                                                                          #",
+    "              #####                                                                 ####               ####                                                                          #",
+    "  Poozt    V  #####                   oo    oo E   C   oo       K      T oo       ######       H     ######       t    ooo       K                T oo      oo                 F     #",
+    "##########    ##########W#      ########################################################################################################J#############################################",
+    "##########~~~~############~~~~~~######################################################################################################################################################",
+    "##########~~~~############~~~~~~######################################################################################################################################################"
+  ] },
+  { n: "Sonnenaufgang", th: "morgenrot", wd: 5, m: [
+    "                        *                                                                                                                                               #",
+    "                                                                                        *                                                                               #",
+    "                                                                                                                                   *                                    #",
+    "                      oo                                                               o                        o                                                       #",
+    "                      ####                                                             ##                       ##               ooo               o o                  #",
+    "           oo                                        Q        Q                      oo##                     oo##              #####                                   #",
+    "                                                                                     ####                     ####              #####                                   #",
+    "         M                                                                           ####                     ####              #####                                   #",
+    "  Poozt                          oo    oo E   C   oo       oo       K      T oo    ######       H           ######     K     V  #####      T oo                   F     #",
+    "########        ###W#      ########################################################################   ######################    ####################J####################",
+    "########~~~~~~~~#####~~~~~~########################################################################~~~######################~~~~#########################################",
+    "########~~~~~~~~#####~~~~~~########################################################################~~~######################~~~~#########################################"
+  ] },
+  { n: "Wolkenschloss", th: "schloss", wd: 5, m: [
+    "                                  *                                                                                                                                                    #",
+    "                                                                                              *                                                                                        #",
+    "                                                                                                                                                               *                       #",
+    "                                oo                                                                                                                                                     #",
+    "                                ####                                                         o o                      o o                                    ooo                       #",
+    "                                                                                                              Q                      Q                      #####                      #",
+    "            o   o   o                                                oo                                                                                     #####                      #",
+    "                ##                                                   ==                                                                                     #####                      #",
+    "  Poozt     ##  ##  ##                     oo    oo E   E      T oo       K      T oo                  H   oo                 K   oo        oo E   E     V  #####      X         F     #",
+    "##########  ##  ##  ##  #####W#      ###############################     #####################J########################J################################    ############################",
+    "##########~~##~~##~~##~~#######~~~~~~###############################~~~~~###############################################################################~~~~############################",
+    "##########~~##~~##~~##~~#######~~~~~~###############################~~~~~###############################################################################~~~~############################"
+  ] },
+  { n: "Bolzplatz", th: "bolzplatz", wd: 6, m: [
+    "                                                                                            *                                                                  #",
+    "                                                                                                                     *                                         #",
+    "                                                                                                                                                               #",
+    "                                                                                          oo                        o                                          #",
+    "                                o o          B          *                                 ####                      ##                                         #",
+    "            oo                                                                                                    oo##             Q        Q                  #",
+    "            ==   ==                                    ==                                                         ####                                         #",
+    "                                                    ==                                                            ####                                         #",
+    "  Poozt               R    t              ooo             K     t     T oo       H                   oo   K     ######       t  oo       oo              F     #",
+    "#################################J#################      ##################   #########W#      #################################################################",
+    "###################################################~~~~~~##################~~~###########~~~~~~#################################################################",
+    "###################################################~~~~~~##################~~~###########~~~~~~#################################################################"
+  ] },
+  { n: "Stadtpark", th: "park", wd: 6, m: [
+    "                                                                                                  *                        *                                                      #",
+    "                                                   *                                                                                                                              #",
+    "                                                                                                                                                                                  #",
+    "               o                                  o                                             oo                       oo                                                       #",
+    "               ##       o o                       ##              B                             ####                     ####                                                     #",
+    "             oo##                               oo##                                                                                        Q           oo                        #",
+    "             ####                               ####                                                                                                    ==   ==                   #",
+    "             ####                               ####                                                                                                                              #",
+    "  Pooz     ######                  T oo       ######     K     ooo        oo E         H                   oo   K                   oo   oo                       R         F     #",
+    "#########################J###################################################################W#      #################W#      #####################################################",
+    "###############################################################################################~~~~~~###################~~~~~~#####################################################",
+    "###############################################################################################~~~~~~###################~~~~~~#####################################################"
+  ] },
+  { n: "Über den Dächern", th: "daecher", wd: 6, m: [
+    "                                                                                                                                                                             #",
+    "                                               *                                                                  *                                       *                  #",
+    "                                                                                                                                                                             #",
+    "                                                                                                                 o                                       o                   #",
+    "                        o o                   o o                                                                ##                                      ##                  #",
+    "                                                                                                               oo##              oo                    oo##                  #",
+    "             ooo                                                                                               ####                                    ####                  #",
+    "             #####                                                                                             ####            M                       ####                  #",
+    "  Poozt      #####               oo C                 K          T oo       oo C         H      T oo    s    ######     K               oo E         ######            F     #",
+    "#########################J#####################J##############################################################################        ########################################",
+    "##############################################################################################################################~~~~~~~~########################################",
+    "##############################################################################################################################~~~~~~~~########################################"
+  ] },
+  { n: "Fanmeile", th: "fanmeile", wd: 6, m: [
+    "                                                                                                                                                                                 #",
+    "                                            *                                          *                                                                                         #",
+    "                                                                                                                                                                                 #",
+    "               o                           o                                          o                                                                                          #",
+    "               ##            o o           ##                                         ##                                                                          *              #",
+    "             oo##                        oo##        Q                 Q            oo##                                                                                         #",
+    "             ####                        ####                                       ####                                             ooo                         ==              #",
+    "             ####                        ####                                       ####                                             #####                    ==                 #",
+    "  Pooz     ######       t              ######     oo       K        oo            ######       H      T oo    t   oo E   E   K       #####         oo C   E                F     #",
+    "##############################J##############################################################################################################################      ###############",
+    "#############################################################################################################################################################~~~~~~###############",
+    "#############################################################################################################################################################~~~~~~###############"
+  ] },
+  { n: "Flutlicht", th: "flutlicht", wd: 6, m: [
+    "                                                                                                                                                             #",
+    "                                                          *                                                                                                  #",
+    "                                                                                                                                                             #",
+    "                                                                                                                                                             #",
+    "                     o o               B                 o o                                           *   o o                      *   o o                  #",
+    "                                                 Q                                                                                                           #",
+    "            ooo                                                                                       ==                           ==                        #",
+    "                                                                                                   ==                           ==                           #",
+    "  Poozt     ^^^                t    ooo       oo                 K      T oo   oo C   E     H                      K      T oo                         F     #",
+    "######################J###################################J#######################################      ####J##################      ####J####################",
+    "##################################################################################################~~~~~~#######################~~~~~~#########################",
+    "##################################################################################################~~~~~~#######################~~~~~~#########################"
+  ] },
+  { n: "Das große Finale", th: "finale", wd: 6, m: [
+    "                                   *                                                                                                                                                  #",
+    "                     *                                                                                                                                      *                         #",
+    "                                                                                                                                                                                      #",
+    "                                 oo                                                                                                                                                   #",
+    "                    o o          ####                                         o o                                                     B                    o o                        #",
+    "            Q                                                     Q                                       oo                                                                          #",
+    "                                                                                                                                                                                      #",
+    "                                                                                                        M                                                                             #",
+    "  Poozt  oo                                 oo           T oo  oo       K              oo E   E     H              T oo  K         ooo        oo E   E                X         F     #",
+    "#####################J########W#      #########################################J#######################        #############################################J##########################",
+    "################################~~~~~~#################################################################~~~~~~~~########################################################################",
+    "################################~~~~~~#################################################################~~~~~~~~########################################################################"
+  ] }
+);
 
 /*@@src px_ski.js@@*/
 
