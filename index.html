@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="generator" content="lernwelt-freunde-app">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-TehIqsaoSHyLyfI6Zugad2bprdTHyMLNe8YUaImH3CM=' 'sha256-UmfDbYD80/OQXEAvoos5r3w8/BxGKLFut8wfJVVJUMs=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-0tB+/TeZwMHLACxKQpbXCPbQdNzDFw6rED0yc5tLENA=' 'sha256-WJ8yATbwpMvxw61XST2ccVHqwkMZ1zyPUEul6AE79gg=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -8079,6 +8079,24 @@ body.calm .weg-st .weg-n, body.calm .weg-st .weg-i { animation: none !important;
 .fo-hin { text-align: center; margin-top: 12px; }
 @media (max-width: 760px) { .fo-seite { grid-template-columns: 1fr; gap: 14px; padding: 14px; } }
 
+/* ---- style_wdh.css ---- */
+
+.wdh-card { display: flex; align-items: center; gap: 14px; width: 100%; text-align: left; margin: 10px 0 4px; border: 0; cursor: pointer; font: inherit; color: #fff; background: linear-gradient(120deg, #2a6bd6, #173f8a); box-shadow: 0 6px 0 #102c61; }
+.wdh-card:active { transform: translateY(3px); box-shadow: 0 3px 0 #102c61; }
+.wdh-ci { font-size: 44px; line-height: 1; }
+.wdh-ct { display: flex; flex-direction: column; gap: 2px; min-width: 0; flex: 1; }
+.wdh-ct small { font-size: 13px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; opacity: .9; }
+.wdh-ct b { font-size: 20px; line-height: 1.2; }
+.wdh-ct span { font-size: 15px; opacity: .95; }
+.wdh-cn { font-weight: 900; font-size: 18px; background: rgba(255, 255, 255, .2); border-radius: 999px; padding: 8px 14px; }
+@media (max-width: 480px) { .wdh-ci { font-size: 36px; } .wdh-ct b { font-size: 18px; } .wdh-ct span { font-size: 14px; } }
+
+.denk-wrap { display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center; padding: 22px 18px; border-radius: 22px; background: var(--surface); border: 3px dashed var(--line-deep); border-radius: var(--r-lg); }
+.denk-i { font-size: 52px; line-height: 1; }
+.denk-wrap b { font-size: 24px; }
+.denk-wrap p { margin: 0 0 6px; font-size: 17px; max-width: 30ch; }
+.denk-wrap .btn { min-width: 220px; }
+
 /* ---- style_zm.css ---- */
 
 .zm, .zm-mini {
@@ -8356,8 +8374,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '2.62.0';
-  var MAP = {"probe":0,"files":[[8346,"fehler_kern.js"],[8634,null],[8636,"data.js"],[9329,"data_more.js"],[9683,"data_su2.js"],[9904,"data_es.js"],[10243,"data_wissen.js"],[10425,"data_v21.js"],[11049,"data_v24.js"],[11500,"data_v25.js"],[11948,"data_v26.js"],[12047,"data_v29.js"],[12352,"data_v30.js"],[12676,"data_v31.js"],[12976,"data_kunst.js"],[13172,"data_v214.js"],[13275,"data_v216.js"],[13568,"schrift.js"],[13868,"eingabe.js"],[14079,"data_k34m.js"],[14597,"data_k34d.js"],[14930,"data_k34s.js"],[15319,"data_v224.js"],[16187,"data_v225w.js"],[16556,"data_v225k.js"],[17000,"data_herz.js"],[17354,"data_fb226.js"],[17497,"data_tf226.js"],[17704,"data_v227a.js"],[18795,"data_v227b.js"],[19749,"data_h28b.js"],[19789,"data_l28a.js"],[20655,"data_l28b.js"],[21835,"data_schaetz.js"],[22317,"data_party8.js"],[22367,"data_alce.js"],[23027,"data_alce2.js"],[23276,"data_alce3.js"],[23691,"registry.js"],[24205,"app.js"],[25339,"fun.js"],[25919,"fun2.js"],[26235,"atelier.js"],[26609,"kunst225.js"],[26799,"herz.js"],[27163,"reise.js"],[27465,"iglu.js"],[27631,"offline.js"],[27738,"party.js"],[28222,"meine.js"],[28578,"loeffel.js"],[28749,"trend.js"],[29291,"fun228a.js"],[30142,"fun228b.js"],[30803,"kueche.js"],[31842,"stimme.js"],[31897,"klassen.js"],[32046,"freunde_vorab.js"],[32067,"mut.js"],[32489,"schule.js"],[32978,"fussball226.js"],[33300,"schaetzen.js"],[33731,"party8.js"],[34350,"tiere.js"],[34809,"fussball232.js"],[35024,"party8b.js"],[35326,"weg.js"],[35543,"px.js"],[35954,"px_data.js"],[36211,"pxwelt.js"],[36292,"px_abenteuer.js"],[37093,"px_abenteuer2.js"],[37842,"px_ski.js"],[38484,"px_wurf.js"],[39013,"px_insel.js"],[40214,"px_kicker.js"],[41149,"px_eis.js"],[42135,"px_run.js"],[43350,"px_brk.js"],[44312,"px_pol.js"],[45663,"px_frog.js"],[46923,"px_angel.js"],[48238,"px_golf.js"],[49272,"px_tauch.js"],[50537,"px_hockey.js"],[51493,"px_lab.js"],[52828,"px_plopp.js"],[54034,"px_stadion.js"],[55538,"px_training.js"],[55907,"cm.js"],[56397,"cmwelt.js"],[56453,"cm_baeck.js"],[57246,"cm_bahn.js"],[58010,"cm_detek.js"],[58727,"cm_markt.js"],[59440,"ff.js"],[59597,"ff_mathe.js"],[61587,"ff_deutsch.js"],[63175,"ff_sach_a.js"],[65424,"ff_sach_b.js"],[67653,"ff_sprachen.js"],[70061,"zm.js"],[70974,"tt.js"],[71187,"data_tagebuch.js"],[71230,"data_hoerspiel.js"],[71389,"leseecke.js"],[71708,"kt.js"],[72011,"comicbuch.js"],[72289,"alce.js"],[72452,"alce_aufg.js"],[72622,"formen.js"],[73073,"data_formen.js"],[73314,"data_formen2.js"],[73536,"spielzeit.js"],[73681,"data_faktmeinung.js"],[73800,"data_es248.js"],[74064,"data_en249.js"],[74298,"data_wissen249.js"],[74638,"data_kunst249.js"],[74884,"data_fussball250.js"],[75008,"data_werte252.js"],[75251,"data_lesen252.js"],[75312,"data_k34_252.js"],[75398,"art254.js"],[75516,"data_werte255.js"],[75641,"data_lesen255.js"],[75777,"forscher255.js"],[75925,"zufall250.js"],[75971,"stufe259.js"],[75980,"advent.js"],[76243,"lumi_live.js"],[76359,"sicher.js"],[76543,"stil.js"],[76597,"freunde.js"],[76734,"start.js"],[76744,null],[76754,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '2.63.0';
+  var MAP = {"probe":0,"files":[[8364,"fehler_kern.js"],[8652,null],[8654,"data.js"],[9349,"data_more.js"],[9703,"data_su2.js"],[9924,"data_es.js"],[10263,"data_wissen.js"],[10445,"data_v21.js"],[11069,"data_v24.js"],[11520,"data_v25.js"],[11968,"data_v26.js"],[12067,"data_v29.js"],[12372,"data_v30.js"],[12696,"data_v31.js"],[12996,"data_kunst.js"],[13192,"data_v214.js"],[13295,"data_v216.js"],[13588,"schrift.js"],[13888,"eingabe.js"],[14099,"data_k34m.js"],[14617,"data_k34d.js"],[14950,"data_k34s.js"],[15339,"data_v224.js"],[16207,"data_v225w.js"],[16576,"data_v225k.js"],[17020,"data_herz.js"],[17374,"data_fb226.js"],[17517,"data_tf226.js"],[17724,"data_v227a.js"],[18815,"data_v227b.js"],[19769,"data_h28b.js"],[19809,"data_l28a.js"],[20675,"data_l28b.js"],[21855,"data_schaetz.js"],[22337,"data_party8.js"],[22387,"data_alce.js"],[23047,"data_alce2.js"],[23296,"data_alce3.js"],[23711,"registry.js"],[24225,"app.js"],[25365,"fun.js"],[25945,"fun2.js"],[26261,"atelier.js"],[26635,"kunst225.js"],[26825,"herz.js"],[27189,"reise.js"],[27491,"iglu.js"],[27657,"offline.js"],[27764,"party.js"],[28248,"meine.js"],[28604,"loeffel.js"],[28775,"trend.js"],[29317,"fun228a.js"],[30168,"fun228b.js"],[30829,"kueche.js"],[31868,"stimme.js"],[31923,"klassen.js"],[32072,"freunde_vorab.js"],[32093,"mut.js"],[32515,"schule.js"],[33004,"fussball226.js"],[33326,"schaetzen.js"],[33757,"party8.js"],[34376,"tiere.js"],[34835,"fussball232.js"],[35050,"party8b.js"],[35352,"weg.js"],[35572,"px.js"],[35983,"px_data.js"],[36240,"pxwelt.js"],[36321,"px_abenteuer.js"],[37122,"px_abenteuer2.js"],[37871,"px_ski.js"],[38513,"px_wurf.js"],[39042,"px_insel.js"],[40243,"px_kicker.js"],[41178,"px_eis.js"],[42164,"px_run.js"],[43379,"px_brk.js"],[44341,"px_pol.js"],[45692,"px_frog.js"],[46952,"px_angel.js"],[48267,"px_golf.js"],[49301,"px_tauch.js"],[50566,"px_hockey.js"],[51522,"px_lab.js"],[52857,"px_plopp.js"],[54063,"px_stadion.js"],[55567,"px_training.js"],[55936,"cm.js"],[56426,"cmwelt.js"],[56482,"cm_baeck.js"],[57275,"cm_bahn.js"],[58039,"cm_detek.js"],[58756,"cm_markt.js"],[59469,"ff.js"],[59626,"ff_mathe.js"],[61616,"ff_deutsch.js"],[63204,"ff_sach_a.js"],[65453,"ff_sach_b.js"],[67682,"ff_sprachen.js"],[70090,"zm.js"],[71003,"tt.js"],[71216,"data_tagebuch.js"],[71259,"data_hoerspiel.js"],[71418,"leseecke.js"],[71737,"kt.js"],[72040,"comicbuch.js"],[72318,"alce.js"],[72481,"alce_aufg.js"],[72651,"formen.js"],[73102,"data_formen.js"],[73343,"data_formen2.js"],[73565,"spielzeit.js"],[73710,"data_faktmeinung.js"],[73829,"data_es248.js"],[74093,"data_en249.js"],[74327,"data_wissen249.js"],[74667,"data_kunst249.js"],[74913,"data_fussball250.js"],[75037,"data_werte252.js"],[75280,"data_lesen252.js"],[75341,"data_k34_252.js"],[75427,"art254.js"],[75545,"data_werte255.js"],[75670,"data_lesen255.js"],[75806,"forscher255.js"],[75954,"zufall250.js"],[76000,"stufe259.js"],[76009,"advent.js"],[76272,"wdh.js"],[76370,"denk.js"],[76407,"lumi_live.js"],[76523,"sicher.js"],[76707,"stil.js"],[76761,"freunde.js"],[76898,"start.js"],[76908,null],[76918,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -9291,7 +9309,9 @@ let SU_LV = 1;
 const suWrong = w => (w.length > 2 && SU_LV < 2) ? R.sample(w, 2) : w;
 function suQuestion(item) {
   const [q, e, a, w0, x, isSvg] = item, w = suWrong(w0);
-  return mkChoice({ prompt: q, visual: isSvg ? `<div class="q-sign">${e}</div>` : bigEmoji(e), answer: a, wrong: w, layout: (a.length > 16 || w.some(s => s.length > 16)) ? 'col' : 'auto', explain: x, key: 'su' + q + a, say: q });
+  const o = mkChoice({ prompt: q, visual: isSvg ? `<div class="q-sign">${e}</div>` : bigEmoji(e), answer: a, wrong: w, layout: (a.length > 16 || w.some(s => s.length > 16)) ? 'col' : 'auto', explain: x, key: 'su' + q + a, say: q });
+  o.wf = 1;
+  return o;
 }
 const genSU = bank => ctx => suQuestion(ctx.draw(bank));
 
@@ -24206,8 +24226,9 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '2.62.0';
+const APP_VERSION = '2.63.0';
 const CHANGELOG = [
+  { v: "2.63.0", d: "11.11.2026", t: ["Neu: Wiederholen mit Abstand. Was im Fehler-Trainer richtig gelöst wurde, kommt nach 1 Tag, nach 3 Tagen und nach 7 Tagen noch einmal. So bleibt es im Kopf", "Ist etwas dran, zeigt die Startseite die blaue Karte „Weißt du es noch?“. Neuer Pokal „Gedächtnis-Profi“ für 10 sicher gelernte Aufgaben", "Neu: Erst denken, dann sehen. Beim Wiederholen und in Stufe 2 der Wissensspiele sind die Antworten bei manchen Fragen zuerst verdeckt"] },
   { v: "2.62.0", d: "11.11.2026", t: ["Jetzt sind auch Wissen, Werte & Normen, Kunst & Musik und die Spiele rund um Fußball, Freundschaft und Mut kniffliger: 1.595 Fragen haben neue falsche Antworten, die auch stimmen könnten", "99 weitere Spiele haben eine Stufe 2 mit vier Antworten. Wer drei Sterne schafft, bekommt beim nächsten Mal die schwerere Runde"] },
   { v: "2.61.0", d: "11.11.2026", t: ["Sachunterricht für Klasse 3 und 4 wird kniffliger: weitere 946 Fragen haben neue falsche Antworten, die auch stimmen könnten", "18 weitere Spiele haben eine Stufe 2 mit vier Antworten. Die Fordern-Spiele zeigen bei Wissensfragen jetzt vier Antworten"] },
   { v: "2.60.0", d: "11.11.2026", t: ["Neu: der Adventskalender. Vom 1. bis 24. Dezember wartet jeden Tag ein Türchen: drei Aufgaben, dann eine Überraschung und ein neues Teil für das Winterbild", "Verpasste Türchen lassen sich bis zum 6. Januar nachholen. Eltern können den Kalender im Elternbereich ausschalten oder alle Türchen vorab ansehen", "Neues Spiel in Mathe: Winter-Rechnen mit Rechengeschichten für Klasse 1 bis 4", "Behoben: In „Geheimwörter schreiben“ standen manchmal fremde Zeichen in den Buchstaben-Kacheln"] },
@@ -24571,6 +24592,7 @@ function showHome() {
     <main class="wrap home2" style="padding-block:6px 0">
       ${safeCard(hzBanner)}
       ${typeof advHomeCard === 'function' ? safeCard(advHomeCard) : ''}
+      ${typeof wdhHomeCard === 'function' ? safeCard(wdhHomeCard) : ''}
       ${typeof homeHint === 'function' ? safeCard(homeHint) : ''}
       ${typeof ttHomeCard === 'function' ? safeCard(ttHomeCard) : ''}
       ${typeof wegCard === 'function' ? safeCard(wegCard) : ''}
@@ -24757,7 +24779,7 @@ function prepReplay(q) {
 }
 function nextQuestion() {
   if (G.i >= G.n) return finishRound();
-  if (G.mode === 'trainer') { const it = G.queue[G.i]; G.qg = it.g; G.q = it.q; }
+  if (G.mode === 'trainer' || G.mode === 'wdh') { const it = G.queue[G.i]; G.qg = it.g; G.q = it.q; }
   else if (G.mode === 'mix') { G.qg = pickMixGame(); G.q = genFor(G.qg); }
   else if (G.mode === 'tt') { G.qg = ttNext(); G.q = genFor(G.qg); }
   else if (G.mode === 'advent') { G.qg = G.i === 0 && GAMES.winterrechnen ? 'winterrechnen' : pickMixGame(); G.q = genFor(G.qg); }
@@ -24784,13 +24806,13 @@ function renderQuestion() {
   const q = G.q, wid = GAMES[G.qg].w;
   const canSay = S.settings.speech && Speech.ok;
   const isFF = !!(GAMES[G.qg] && GAMES[G.qg].ff && typeof ffTagHTML === 'function');
-  const tag = G.mode === 'tt' && isFF ? ffTagHTML(q) : G.mode === 'mix' || G.mode === 'trainer' || G.mode === 'tt' || G.mode === 'advent' ? `<span class="q-from" data-world="${wid}">${giHTML(GAMES[G.qg])} ${GAMES[G.qg].t}</span>` : isFF ? ffTagHTML(q) : klVorTag(G.id);
+  const tag = G.mode === 'tt' && isFF ? ffTagHTML(q) : G.mode === 'mix' || G.mode === 'trainer' || G.mode === 'wdh' || G.mode === 'tt' || G.mode === 'advent' ? `<span class="q-from" data-world="${wid}">${giHTML(GAMES[G.qg])} ${GAMES[G.qg].t}</span>` : isFF ? ffTagHTML(q) : klVorTag(G.id);
   const split = q.kind === 'choice' || q.kind === 'number';
   setView(`<div class="game ${Speech.ok ? '' : 'no-speech'}" id="gameRoot" ${langOf(G.qg) === 'es' ? 'lang="es"' : ''}>${gameBar()}
     <main class="wrap stage ${split ? 'split' : ''} ${q.kind === 'trace' ? 'tracing' : ''}">
       <section class="q-card">${tag}<div class="q-prompt"><p>${esc(q.prompt)}</p>${canSay ? '<button class="say-btn" data-act="say" aria-label="Vorlesen">🔊</button>' : ''}</div>
         ${q.visual ? `<div class="q-visual">${q.visual}</div>` : ''}${isFF && !G.ttProbe && typeof ffHelpBtnHTML === 'function' ? ffHelpBtnHTML(q) : ''}</section>
-      ${answersHTML(q)}
+      ${typeof denkFuer === 'function' && denkFuer(q) ? denkHTML() : answersHTML(q)}
     </main></div>`, wid);
   if (q.kind === 'trace') skTraceInit(q);
   if (q.kind === 'spell' || q.kind === 'order') tilesBind();
@@ -24805,7 +24827,7 @@ function award(ok, second) {
 function noteMistake(ok) {
   const k = G.qg + '|' + G.q.key;
   const idx = S.mistakes.findIndex(m => m.g + '|' + m.q.key === k);
-  if (ok) { if (idx >= 0 && G.mode === 'trainer') { S.mistakes.splice(idx, 1); S.fixed = (S.fixed || 0) + 1; } return; }
+  if (ok) { if (idx >= 0 && G.mode === 'trainer') { const m = S.mistakes.splice(idx, 1)[0]; S.fixed = (S.fixed || 0) + 1; try { if (typeof wdhAdd === 'function') wdhAdd(m.g, m.q); } catch (e) { } } return; }
   if (idx >= 0) S.mistakes[idx].t = Date.now();
   else { S.mistakes.push({ g: G.qg, q: G.q, t: Date.now() }); if (S.mistakes.length > 40) S.mistakes.sort((a, b) => b.t - a.t).length = 40; }
 }
@@ -24813,7 +24835,8 @@ function answer(ok, second = false) {
   if (G.answered) return;
   G.answered = true; clearTimeout(G.autoT);
   const bonus = award(ok, second);
-  if (!G.q.noMist) noteMistake(ok && !second);
+  if (G.mode === 'wdh' && typeof wdhAntwort === 'function') wdhAntwort(ok && !second);
+  else if (!G.q.noMist) noteMistake(ok && !second);
   if (GAMES[G.qg] && GAMES[G.qg].ff && typeof ffAfterAnswer === 'function') ffAfterAnswer(ok && !second);
   save();
   ok ? Sound.good() : Sound.bad();
@@ -25065,7 +25088,7 @@ function showResult(r) {
   const head = mode === 'blitz' ? (r.blitz.record ? 'Neuer Rekord!' : 'Zeit ist um!') : r.stars === 3 ? (isMem || G.ok === G.n ? 'Perfekt!' : 'Super gemacht!') : r.stars === 2 ? 'Gut gemacht!' : 'Geschafft!';
   const sub = mode === 'blitz' ? `${plural(r.blitz.count, 'Aufgabe', 'Aufgaben')} in 60 Sekunden richtig${r.blitz.prev && !r.blitz.record ? ` · Rekord: ${r.blitz.prev}` : ''}` : isMem && G.custom ? esc(G.resText || `${plural(G.ok, 'Aufgabe', 'Aufgaben')} geschafft`) : isMem ? `Alle 6 Paare in ${r.memoryMoves} Zügen gefunden` : `${G.ok + (G.half || 0)} von ${G.n} richtig${G.half ? ` (${G.half} im zweiten Versuch)` : ''}`;
   const L = levelInfo(S.points), toNext = 5 - (S.stars % 5);
-  const againAct = mode === 'mix' ? 'mix' : mode === 'trainer' ? 'trainer' : mode === 'tt' ? 'ttagain' : 'again';
+  const againAct = mode === 'mix' ? 'mix' : mode === 'trainer' ? 'trainer' : mode === 'wdh' ? 'wdh' : mode === 'tt' ? 'ttagain' : 'again';
   const backBtnHTML = mode === 'tt' ? '<button class="btn ghost" data-act="ttpage">Zum Test-Training</button>' : wid && !G.weg && !r.weg ? `<button class="btn ghost" data-act="world" data-w="${wid}">Andere Spiele</button>` : `<button class="btn ghost" data-act="home">Zur Startseite</button>`;
   setView(`<div class="result">${mascot(r.stars >= 2 ? 'wow' : 'happy')}
     <h1>${head}</h1><div class="big-stars">${[0, 1, 2].map(i => starSVG(i < r.stars)).join('')}</div>
@@ -25081,13 +25104,14 @@ function showResult(r) {
     ${!r.newStickers.length && S.stickers.length < STICKERS.length ? `<p class="muted">Noch ${plural(toNext, 'Stern', 'Sterne')} bis zum nächsten Sticker.</p>` : ''}
     ${r.lvMsg === 'down' ? '<p class="muted">Nächstes Mal wird es ein bisschen leichter.</p>' : ''}
     ${mode === 'trainer' ? `<p class="muted">${S.mistakes.length ? `Noch ${plural(S.mistakes.length, 'Aufgabe', 'Aufgaben')} im Fehler-Trainer.` : 'Der Fehler-Trainer ist leer, alles geübt! 🎉'}</p>` : ''}
+    ${mode === 'wdh' && typeof wdhResultHTML === 'function' ? safeCard(wdhResultHTML) : ''}
     ${(r.newMis || []).map(m => `<div class="reward"><span class="big">🎯</span><div><b>Mission geschafft!</b><span>${esc(m.t)}, hol dir die Belohnung bei den Wochen-Missionen.</span></div></div>`).join('')}
     ${r.newSq ? `<div class="reward sq-rw"><span class="big sq-press">${sqSVG(r.newSq[2])}</span><div><b>Neues Sammel-Squishy: ${esc(r.newSq[1])}!</b><span>Es wohnt jetzt in deinem Squishy-Regal. Drück drauf!</span></div></div>` : ''}
     ${r.newStory ? `<div class="reward"><span class="big">📖</span><div><b>Neuer Lese-Schlüssel 🔑 für Lumis Abenteuer!</b><span>Auf der Startseite wartet das nächste Kapitel.</span></div></div>` : ''}
     ${r.weg && typeof wegResultHTML === 'function' ? wegResultHTML(r.weg) : ''}
     ${mode === 'tt' && typeof ttResultHTML === 'function' ? safeCard(ttResultHTML) : ''}
     ${hzPS(r)}
-    <div class="res-actions">${r.weg && typeof wegResultBtn === 'function' ? wegResultBtn(r.weg) : ''}${mode === 'trainer' && !S.mistakes.length ? '' : `<button class="btn ${r.weg ? 'ghost' : ''}" data-act="${againAct}">Nochmal spielen</button>`}${backBtnHTML}</div>
+    <div class="res-actions">${r.weg && typeof wegResultBtn === 'function' ? wegResultBtn(r.weg) : ''}${(mode === 'trainer' && !S.mistakes.length) || (mode === 'wdh' && !(typeof wdhFaellig === 'function' && wdhFaellig().length)) ? '' : `<button class="btn ${r.weg ? 'ghost' : ''}" data-act="${againAct}">${mode === 'wdh' ? 'Weiter wiederholen' : 'Nochmal spielen'}</button>`}${backBtnHTML}</div>
   </div>`, wid || (mode === 'mix' ? null : null));
   if (r.newSq) sqBindAll();
   if (r.stars >= 2 || r.newStickers.length || r.levelUp) { confetti(); Sound.win(); if (r.newStickers.length) setTimeout(() => Sound.sparkle(), 700); }
@@ -25197,6 +25221,8 @@ function showParents(notice = '') {
     ${offSectionHTML()}
     ${typeof fpParentsHTML === 'function' ? fpParentsHTML() : ''}
     ${typeof spzParentsHTML === 'function' ? spzParentsHTML() : ''}
+    ${typeof wdhParentsHTML === 'function' ? wdhParentsHTML() : ''}
+    ${typeof denkParentsHTML === 'function' ? denkParentsHTML() : ''}
     ${typeof advParentsHTML === 'function' ? advParentsHTML() : ''}
     <section class="card"><h2>Spielhalle</h2>
       <p class="muted">Mini-Spiele als Belohnung. Münzen gibt es nur fürs Lernen: 1 Münze pro Stern, +3 für das Tagesziel. Aktuell: 🪙 <b id="coinsP">${S.coins || 0}</b></p>
@@ -35355,13 +35381,14 @@ function wegSrc(i, dn, st0, noTrainer) {
     for (let k = 0; k < 2; k++) { const w = ['mathe', 'deutsch'][(dn + k) % 2]; if (wegPool(g => g.w === w).length) return 'w:' + w; }
     return 'alle';
   }
+  if (!noTrainer && typeof wdhFaellig === 'function' && wdhFaellig().length >= 3) return 'wdh';
   if (!noTrainer && S.mistakes.length >= 3) return 'trainer';
   const w0 = st0 && st0.g && GAMES[st0.g] ? GAMES[st0.g].w : '';
   for (let k = 0; k < WEG_ROT2.length; k++) { const w = WEG_ROT2[(dn + k) % WEG_ROT2.length]; if (w !== w0 && wegPool(g => g.w === w).length) return 'w:' + w; }
   return 'alle';
 }
 function wegMk(src, avoid) {
-  if (src === 'trainer') return { k: 'trainer', src, done: 0, sw: 0 };
+  if (src === 'trainer' || src === 'wdh') return { k: src, src, done: 0, sw: 0 };
   let g = wegPick(wegSrcPool(src), avoid); if (!g) { src = 'alle'; g = wegPick(wegSrcPool(src), avoid); }
   return { k: 'g', g, src, done: 0, sw: 0 };
 }
@@ -35378,12 +35405,13 @@ function wegS() {
 
   W.st.forEach((x, i) => {
     if (x.done) return;
-    if (x.k === 'trainer' && !S.mistakes.length) Object.assign(x, wegMk(wegSrc(1, dn, W.st[0], true), W.st.map(y => y.g).filter(Boolean)));
-    else if (x.k !== 'trainer' && !wegOkGame(x.g)) Object.assign(x, wegMk(x.src || wegSrc(i, dn, W.st[0], true), W.st.map(y => y.g).filter(Boolean)));
+    if ((x.k === 'trainer' && !S.mistakes.length) || (x.k === 'wdh' && !(typeof wdhFaellig === 'function' && wdhFaellig().length))) Object.assign(x, wegMk(wegSrc(1, dn, W.st[0], true), W.st.map(y => y.g).filter(Boolean)));
+    else if (x.k !== 'trainer' && x.k !== 'wdh' && !wegOkGame(x.g)) Object.assign(x, wegMk(x.src || wegSrc(i, dn, W.st[0], true), W.st.map(y => y.g).filter(Boolean)));
   });
   return W;
 }
 function wegInfo(x) {
+  if (x.k === 'wdh') return { i: '🧠', t: 'Weißt du es noch?', sub: `${plural(typeof wdhFaellig === 'function' ? wdhFaellig().length : 0, 'Aufgabe', 'Aufgaben')} von früher`, w: '' };
   if (x.k === 'trainer') return { i: '🔁', t: 'Fehler-Trainer', sub: `${plural(S.mistakes.length, 'Aufgabe', 'Aufgaben')} üben`, w: '' };
   const g = GAMES[x.g]; if (!g) return { i: '⭐', t: 'Lernspiel', sub: '', w: '' };
   return { i: giHTML(g), t: g.t, sub: worldById(g.w).name, w: g.w };
@@ -35409,7 +35437,8 @@ function wegCard() {
 function wegStart(i) {
   const W = wegS(), x = W.st[i]; if (!x) return;
   Sound.unlock();
-  if (x.k === 'trainer') { if (!S.mistakes.length) { wegS(); showHome(); return; } startTrainer(); }
+  if (x.k === 'wdh') { if (!(typeof wdhFaellig === 'function' && wdhFaellig().length)) { wegS(); showHome(); return; } startWdh(); }
+  else if (x.k === 'trainer') { if (!S.mistakes.length) { wegS(); showHome(); return; } startTrainer(); }
   else { if (!GAMES[x.g]) { showHome(); return; } startGame(x.g); }
   if (G) G.weg = i + 1;
 }
@@ -35417,7 +35446,7 @@ function wegStart(i) {
 function wegRound() {
   if (!G || S.settings.weg === false) return null;
   const W = wegS(); let hit = -1;
-  W.st.forEach((x, i) => { if (hit < 0 && !x.done && ((x.k === 'g' && G.id === x.g && (G.mode === 'game' || G.mode === 'memory')) || (x.k === 'trainer' && G.mode === 'trainer'))) hit = i; });
+  W.st.forEach((x, i) => { if (hit < 0 && !x.done && ((x.k === 'g' && G.id === x.g && (G.mode === 'game' || G.mode === 'memory')) || (x.k === 'trainer' && G.mode === 'trainer') || (x.k === 'wdh' && G.mode === 'wdh'))) hit = i; });
   if (hit < 0) return null;
   W.st[hit].done = 1;
   return { i: hit, all: W.st.every(x => x.done) };
@@ -35455,7 +35484,7 @@ function quitAsk() {
   const acts = (a, b) => `<div class="acts"><button class="btn" data-act="closeov">${a}</button><button class="btn ghost" data-act="quityes">${b}</button></div>`;
   if (!G || S.settings.quitHint === false) return overlay(`${mascot('oops')}<h2>Spiel beenden?</h2><p class="muted">Die Punkte aus dieser Runde zählen dann nicht.</p>${acts('Weiterspielen', 'Beenden')}`);
   const station = G.weg ? `<p class="qh-weg">👣 Danach ist Station ${G.weg} von ${esc(gen(M()))} Tagesweg geschafft.</p>` : '';
-  const counted = !G.custom && (G.mode === 'game' || G.mode === 'mix' || G.mode === 'trainer') && G.n > 0;
+  const counted = !G.custom && (G.mode === 'game' || G.mode === 'mix' || G.mode === 'trainer' || G.mode === 'wdh') && G.n > 0;
   if (counted) {
     const done = Math.min(G.n, G.i + (G.answered ? 1 : 0)), left = G.n - done;
     if (done === 0) return ACT.quityes();
@@ -76238,6 +76267,141 @@ function advParentsHTML() {
   const quitAlt = ACT.quityes;
   ACT.quityes = function () { if (G && G.mode === 'advent') { stopTimers(); G = null; return showAdvent(); } return quitAlt.apply(this, arguments); };
   if (typeof TROPHIES !== 'undefined') TROPHIES.push({ id: 'adventsstern', e: '🌟', t: 'Adventsstern', d: 'Alle 24 Türchen im Adventskalender geöffnet', c: s => !!(s.advent && isObj(s.advent.o) && Object.keys(s.advent.o).length >= 24) });
+})();
+
+/*@@src wdh.js@@*/
+
+
+
+
+
+
+
+
+const WDH_TAGE = [1, 3, 7], WDH_MAX = 60;
+function wdhOn() { return S.settings.wdh !== false; }
+const wdhKey = (g, q) => g + '|' + (q && q.key);
+const wdhIn = n => dayKey(addDays(new Date(), n));
+function wdhS() {
+  if (!isObj(S.wdh)) S.wdh = { l: [], fest: 0 };
+  const W = S.wdh;
+  if (!Array.isArray(W.l)) W.l = [];
+  W.l = W.l.filter(x => isObj(x) && isObj(x.q) && GAMES[x.g] && typeof x.d === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(x.d));
+  W.l.forEach(x => { x.s = Math.min(2, Math.max(0, x.s | 0)); });
+  if (W.l.length > WDH_MAX) W.l.length = WDH_MAX;
+  W.fest = Math.max(0, W.fest | 0);
+  return W;
+}
+
+function wdhFaellig() {
+  if (!wdhOn()) return [];
+  const t = dayKey();
+  return wdhS().l.filter(x => x.d <= t).sort((a, b) => a.d < b.d ? -1 : a.d > b.d ? 1 : 0);
+}
+
+function wdhAdd(g, q) {
+  if (!wdhOn() || !GAMES[g] || !isObj(q) || q.noMist) return;
+  const W = wdhS(), k = wdhKey(g, q), alt = W.l.find(x => wdhKey(x.g, x.q) === k);
+  if (alt) { alt.s = 0; alt.d = wdhIn(1); return; }
+  if (W.l.length >= WDH_MAX) {
+    let i = 0; W.l.forEach((x, j) => { if (x.s > W.l[i].s || (x.s === W.l[i].s && x.d > W.l[i].d)) i = j; }); W.l.splice(i, 1);
+  }
+  W.l.push({ g, q: JSON.parse(JSON.stringify(q)), s: 0, d: wdhIn(1) });
+}
+
+function wdhAntwort(ok) {
+  const W = wdhS(), it = G.queue[G.i], r = G.wdhR = G.wdhR || { weiter: 0, fest: 0, neu: 0 };
+  if (!it) return;
+  const k = wdhKey(it.g, it.q), i = W.l.findIndex(x => wdhKey(x.g, x.q) === k);
+  if (i < 0) return;
+  const x = W.l[i];
+  if (!ok) { x.s = 0; x.d = wdhIn(1); r.neu++; return; }
+  if (x.s >= 2) { W.l.splice(i, 1); W.fest++; r.fest++; return; }
+  x.s++; x.d = wdhIn(WDH_TAGE[x.s]); r.weiter++;
+}
+function startWdh() {
+  Sound.unlock();
+  const due = wdhFaellig();
+  if (!due.length) {
+    overlay(`${mascot('wow')}<h2>Heute ist nichts dran!</h2><p class="muted">Alle Aufgaben von früher hast du schon wiederholt. Super!</p><div class="acts"><button class="btn" data-act="closeov">Okay</button></div>`);
+    return;
+  }
+  const queue = R.shuffle(due.slice(0, Math.min(S.settings.roundLen || 10, due.length))).map(m => ({ g: m.g, q: prepReplay(m.q) }));
+  G = newG('wdh', 'wdh', { g: { t: 'Weißt du es noch?', w: null }, n: queue.length, queue, back: null });
+  nextQuestion();
+}
+
+function wdhHomeCard() {
+  const n = wdhFaellig().length; if (!n) return '';
+  if (S.settings.weg !== false && typeof wegS === 'function' && wegS().st.some(x => x && x.k === 'wdh' && !x.done)) return '';
+  return `<button class="card wdh-card" data-act="wdh"><span class="wdh-ci" aria-hidden="true">🧠</span>
+    <span class="wdh-ct"><small>Weißt du es noch?</small><b>${plural(n, 'Aufgabe', 'Aufgaben')} von früher</b><span>Die hast du schon geübt. Mal sehen, ob ${n === 1 ? 'sie noch sitzt' : 'sie noch sitzen'}!</span></span>
+    <span class="wdh-cn" aria-hidden="true">▶</span></button>`;
+}
+function wdhResultHTML() {
+  const r = (G && G.wdhR) || {}, t = [];
+  if (r.weiter) t.push(`${plural(r.weiter, 'Aufgabe kommt', 'Aufgaben kommen')} in ein paar Tagen noch einmal.`);
+  if (r.neu) t.push(`${plural(r.neu, 'Aufgabe üben', 'Aufgaben üben')} wir morgen noch einmal.`);
+  const rest = wdhFaellig().length;
+  if (rest) t.push(`Heute ${rest === 1 ? 'wartet' : 'warten'} noch ${plural(rest, 'Aufgabe', 'Aufgaben')}.`);
+  return (r.fest ? `<div class="reward"><span class="big">🧠</span><div><b>${plural(r.fest, 'Aufgabe sitzt', 'Aufgaben sitzen')} jetzt sicher!</b><span>Dreimal mit Abstand gewusst. Das bleibt im Kopf.</span></div></div>` : '')
+    + (t.length ? `<p class="muted">${t.join(' ')}</p>` : '');
+}
+function wdhParentsHTML() {
+  const an = wdhOn(), W = wdhS(), due = wdhFaellig().length, c = [0, 1, 2].map(s => W.l.filter(x => x.s === s).length);
+  return `<section class="card"><h2>Wiederholen mit Abstand</h2>
+    <p class="muted">Was im Fehler-Trainer richtig gelöst wurde, kommt nach 1 Tag, nach 3 Tagen und nach 7 Tagen noch einmal. Wer es dreimal weiß, hat es sicher gelernt. Ein Fehler setzt die Aufgabe wieder auf morgen. Ist etwas dran, zeigt die Startseite die Karte „Weißt du es noch?“ oder der Tagesweg eine Station dafür.</p>
+    <p class="muted">Stand: <b>${W.l.length}</b> unterwegs (${c[0]} vor der 1. Runde, ${c[1]} vor der 2., ${c[2]} vor der 3.) · <b>${due}</b> heute dran · <b>${W.fest}</b> sicher gelernt.</p>
+    <div class="row"><span class="lab">Wiederholen mit Abstand<small>aus: geübte Fehler kommen nicht wieder</small></span><button class="switch ${an ? 'on' : ''}" role="switch" aria-checked="${an}" aria-label="Wiederholen mit Abstand" data-act="wdhsw"></button></div>
+    <div class="row"><span class="lab">Liste leeren<small>${plural(W.l.length, 'Aufgabe', 'Aufgaben')} unterwegs</small></span><button class="btn sm ghost" data-act="wdhleer">Leeren</button></div>
+  </section>`;
+}
+
+
+(() => {
+  Object.assign(ACT, {
+    wdh: () => startWdh(),
+    wdhsw: () => { S.settings.wdh = !wdhOn(); save(); showParents(wdhOn() ? 'Wiederholen mit Abstand ist an.' : 'Wiederholen mit Abstand ist aus.'); },
+    wdhleer: () => { wdhS().l = []; save(); showParents('Wiederhol-Liste geleert.'); }
+  });
+  if (typeof TROPHIES !== 'undefined') TROPHIES.push({ id: 'gedaechtnis', e: '🧠', t: 'Gedächtnis-Profi', d: '10 Aufgaben nach 1, 3 und 7 Tagen sicher gewusst', c: s => isObj(s.wdh) && (s.wdh.fest | 0) >= 10 });
+})();
+
+/*@@src denk.js@@*/
+
+
+
+
+
+
+
+
+function denkOn() { return S.settings.denk !== false; }
+
+const DENK_OFFEN = /NICHT|nicht\?|Was stimmt|Was passt|Was ist richtig|Welcher Satz|Welches ist|Welche Aussage|Welche Ich-Botschaft|Welches Kompliment|Welche[rs]? [^?]*(passt|stimmt|richtig)/;
+function denkFuer(q) {
+  if (!G || !q || q.kind !== 'choice' || !q.wf || q.listen || !denkOn()) return false;
+  if (DENK_OFFEN.test(q.prompt || '')) return false;
+  if (G.mode === 'wdh') return true;
+  return G.mode === 'game' && (G.lv | 0) >= 2 && G.i % 3 === 1;
+}
+function denkHTML() {
+  return `<div class="denk-wrap" id="denkWrap"><span class="denk-i" aria-hidden="true">🤔</span><b>Erst denken!</b>
+    <p>Was ist deine Antwort? Überlege kurz. Dann schau, ob sie dabei ist.</p>
+    <button class="btn" data-act="denkzeig">Antworten zeigen</button></div>`;
+}
+function denkParentsHTML() {
+  const an = denkOn();
+  return `<section class="card"><h2>Erst denken, dann sehen</h2>
+    <p class="muted">Bei manchen Wissensfragen sind die Antworten zuerst verdeckt: beim Wiederholen mit Abstand und in Stufe 2 bei jeder dritten Frage. So erinnert sich das Kind selbst, statt die Antwort nur wiederzuerkennen. Ein Tipp zeigt die Antworten, es gibt keinen Zeitdruck.</p>
+    <div class="row"><span class="lab">Erst denken, dann sehen<small>aus: Antworten sind immer sofort zu sehen</small></span><button class="switch ${an ? 'on' : ''}" role="switch" aria-checked="${an}" aria-label="Erst denken, dann sehen" data-act="denksw"></button></div>
+  </section>`;
+}
+(() => {
+  Object.assign(ACT, {
+    denkzeig: () => { const w = document.getElementById('denkWrap'); if (!w || !G || !G.q || G.answered) return; Sound.tap(); w.outerHTML = answersHTML(G.q); },
+    denksw: t => { S.settings.denk = !denkOn(); save(); t.classList.toggle('on', denkOn()); t.setAttribute('aria-checked', denkOn()); }
+  });
 })();
 
 /*@@src lumi_live.js@@*/
