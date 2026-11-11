@@ -29,3 +29,7 @@ Spanisch: Der Kurs „Mi curso ALCE“ (A2) läuft dienstags von allein mit. Wer
 ## Dateien
 
 Die ganze App steckt in `index.html`. Dazu gehören `sw.js` (damit sie ohne Internet läuft), `manifest.webmanifest` und die Symbole für den Homebildschirm.
+
+## Urheber
+
+© 2026 Martin Gl. Alle Rechte vorbehalten. Für meine Tochter erdacht und gebaut, mit ihren Freunden geteilt.
