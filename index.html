@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="generator" content="lernwelt-freunde-app">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-qoJFV201dO258m5XhYbCSLe/DQpLbtGEf/3eoxwZFog=' 'sha256-QN7WEk7hiMtM5HzGOEBh8Gi7vJMZfyOv4QrD1ts+XQM=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-znhuYT+gqZAHThP9eb9aRH2pcM5ZeUJnjgHGubtuSbU=' 'sha256-dkr5RgjTQpdleS3ce/L+c+9TSNVacN1wzvBWUaVnuHU=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -2967,6 +2967,93 @@ body.calm .mu-parade, body.calm .mu-jar2, body.calm .mu-fly, body.calm .mu-moon 
 .off-flug summary { font-weight: 800; cursor: pointer; }
 .off-flug ol { margin: 8px 0; padding-left: 22px; display: grid; gap: 6px; }
 .off-flug p { margin: 4px 0 0; }
+
+/* ---- style_advent.css ---- */
+
+.adv-card { display: flex; align-items: center; gap: 14px; width: 100%; text-align: left; margin: 10px 0 4px; border: 0; cursor: pointer; font: inherit; color: #fff; background: linear-gradient(120deg, #b3262e, #7d1219); box-shadow: 0 6px 0 #5a0c11; position: relative; overflow: hidden; }
+.adv-card::after { content: '❄ ❄ ❄'; position: absolute; right: 70px; top: 4px; font-size: 13px; letter-spacing: 18px; opacity: .35; }
+.adv-card:active { transform: translateY(3px); box-shadow: 0 3px 0 #5a0c11; }
+.adv-ci { font-size: 44px; line-height: 1; }
+.adv-ct { display: flex; flex-direction: column; gap: 2px; min-width: 0; flex: 1; }
+.adv-ct small { font-size: 13px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; opacity: .85; }
+.adv-ct b { font-size: 20px; line-height: 1.2; }
+.adv-ct span { font-size: 15px; opacity: .92; }
+.adv-cn { font-weight: 900; font-size: 18px; background: rgba(255, 255, 255, .18); border-radius: 999px; padding: 6px 12px; white-space: nowrap; }
+.adv-card.ready .adv-ci { animation: advWackel 1.8s ease-in-out infinite; }
+@keyframes advWackel { 0%, 60%, 100% { transform: rotate(0); } 70% { transform: rotate(-9deg); } 80% { transform: rotate(9deg); } 90% { transform: rotate(-5deg); } }
+
+.adv-main { padding-block: 14px 40px; }
+.adv-vor { background: #fff6d6; border: 2px dashed #e0b23c; color: #5a4300; border-radius: 16px; padding: 10px 14px; font-weight: 700; margin: 0 0 12px; }
+.adv-picbox { border-radius: 24px; overflow: hidden; box-shadow: var(--shadow); border: 4px solid #fff; background: #0d1b3d; line-height: 0; max-width: 860px; margin: 0 auto; }
+.adv-pic { display: block; width: 100%; height: auto; }
+.adv-fw { font: 900 26px/1 inherit; font-family: inherit; fill: #b3262e; paint-order: stroke; stroke: #fff; stroke-width: 5px; stroke-linejoin: round; }
+.adv-info { text-align: center; font-weight: 800; font-size: 17px; margin: 14px 0 10px; color: var(--ink, #1d2b4a); }
+.adv-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 10px; max-width: 860px; margin: 0 auto; }
+.adv-door { position: relative; aspect-ratio: 1 / 1; min-height: 56px; border: 0; border-radius: 16px; font: inherit; cursor: pointer; color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; box-shadow: 0 5px 0 rgba(0, 0, 0, .28); padding: 0; }
+.adv-door b { font-size: clamp(20px, 4.2vw, 34px); font-weight: 900; text-shadow: 0 2px 0 rgba(0, 0, 0, .25); }
+.adv-door.adv-c0 { background: #b3262e; } .adv-door.adv-c1 { background: #1f7a4d; } .adv-door.adv-c2 { background: #2456a6; } .adv-door.adv-c3 { background: #b9770a; }
+.adv-door::before { content: ''; position: absolute; inset: 5px; border: 2px dashed rgba(255, 255, 255, .45); border-radius: 11px; pointer-events: none; }
+.adv-door.adv-zu { opacity: .5; }
+.adv-door.adv-da { box-shadow: 0 5px 0 rgba(0, 0, 0, .28), 0 0 0 4px #ffd23f; }
+.adv-door.adv-heute { animation: advPuls 1.6s ease-in-out infinite; }
+@keyframes advPuls { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.06); } }
+.adv-door.adv-auf { background: #fffaf0; color: #5a3b25; box-shadow: inset 0 0 0 3px #e8d7b8, 0 3px 0 rgba(0, 0, 0, .12); }
+.adv-door.adv-auf::before { display: none; }
+.adv-door.adv-auf small { position: absolute; left: 7px; top: 5px; font-size: 13px; font-weight: 900; color: #a8875a; }
+.adv-de { font-size: clamp(24px, 5vw, 40px); line-height: 1; }
+.adv-door.adv-gross.adv-zu, .adv-door.adv-gross.adv-da { background: linear-gradient(135deg, #d9a400, #b3262e); }
+.adv-door:active { transform: translateY(3px); }
+.adv-pop { animation: advPop .7s cubic-bezier(.3, 1.6, .5, 1); }
+@keyframes advPop { 0% { transform: scale(.4) rotate(-12deg); } 100% { transform: scale(1) rotate(0); } }
+
+.adv-neu { animation: advNeu 1.4s ease-out; }
+@keyframes advNeu { 0% { opacity: 0; } 40% { opacity: 1; filter: drop-shadow(0 0 14px #ffe9a8); } 100% { filter: none; } }
+.adv-fu { animation: advFunkel 2.6s ease-in-out infinite; }
+@keyframes advFunkel { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
+.adv-bl { animation: advBlink 1.8s ease-in-out infinite; }
+@keyframes advBlink { 0%, 100% { opacity: 1; } 50% { opacity: .45; } }
+.adv-fl { animation: advFall 7s linear infinite; }
+@keyframes advFall { 0% { transform: translateY(-40px); } 100% { transform: translateY(460px); } }
+.adv-ra { animation: advRauch 3.2s ease-in-out infinite; }
+@keyframes advRauch { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+.adv-au { animation: advAurora 6s ease-in-out infinite; }
+.adv-au2 { animation-delay: -3s; }
+@keyframes advAurora { 0%, 100% { opacity: .14; } 50% { opacity: .34; } }
+.adv-gl { animation: advBlink 2.4s ease-in-out infinite; }
+body.calm .adv-fu, body.calm .adv-bl, body.calm .adv-fl, body.calm .adv-ra, body.calm .adv-au, body.calm .adv-gl, body.calm .adv-door.adv-heute, body.calm .adv-card.ready .adv-ci, body.calm .adv-neu, body.calm .adv-pop, body.calm .adv-fl1 { animation: none; }
+@media (prefers-reduced-motion: reduce) { .adv-fu, .adv-bl, .adv-fl, .adv-ra, .adv-au, .adv-gl, .adv-door.adv-heute, .adv-card.ready .adv-ci, .adv-neu, .adv-pop, .adv-fl1 { animation: none; } }
+
+.adv-gift { background: #fffaf0; border: 3px solid #e8d7b8; border-radius: 20px; padding: 14px 16px; margin: 14px auto 8px; max-width: 620px; text-align: left; }
+.adv-gh { display: flex; align-items: center; gap: 10px; font-size: 18px; margin-bottom: 6px; color: #7d1219; }
+.adv-gh span { font-size: 26px; }
+.adv-gh b { flex: 1; }
+.adv-gift p { margin: 0; font-size: 19px; line-height: 1.45; color: #2a2a35; }
+.adv-loes { margin-top: 10px; }
+.adv-la { margin-top: 10px !important; font-weight: 900; color: #1f7a4d !important; }
+.adv-teil { text-align: center; font-size: 16px; margin: 8px 0 12px; color: var(--ink, #1d2b4a); }
+.adv-ov { text-align: center; }
+.adv-ov h2 { margin: 6px 0; }
+.adv-ov .robbi { width: 110px; height: auto; }
+.adv-ov .acts { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; margin-top: 12px; }
+
+.adv-res .adv-tor { position: relative; width: 132px; height: 132px; margin: 18px auto 6px; border-radius: 22px; background: #fffaf0; box-shadow: inset 0 0 0 4px #e8d7b8; perspective: 500px; }
+.adv-res .adv-in { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 70px; }
+.adv-res .adv-fl1 { position: absolute; inset: 0; border-radius: 22px; display: flex; align-items: center; justify-content: center; color: #fff; font-size: 54px; transform-origin: left center; animation: advTuer 1.3s .35s ease-in forwards; box-shadow: 0 5px 0 rgba(0, 0, 0, .25); }
+.adv-res .adv-tor.adv-c0 .adv-fl1 { background: #b3262e; } .adv-res .adv-tor.adv-c1 .adv-fl1 { background: #1f7a4d; } .adv-res .adv-tor.adv-c2 .adv-fl1 { background: #2456a6; } .adv-res .adv-tor.adv-c3 .adv-fl1 { background: #b9770a; }
+@keyframes advTuer { 0% { transform: rotateY(0); opacity: 1; } 100% { transform: rotateY(-105deg); opacity: .0; } }
+body.calm .adv-res .adv-fl1 { display: none; }
+@media (max-width: 560px) { .adv-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; } .adv-ct b { font-size: 18px; } .adv-ci { font-size: 36px; } .adv-card::after { display: none; } .adv-gift p { font-size: 17px; } }
+
+@media (min-width: 900px) and (orientation: landscape) {
+  .adv-main { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); column-gap: 20px; align-items: start; }
+  .adv-vor { grid-column: 1 / -1; }
+  .adv-picbox { grid-column: 1; grid-row: 2; max-width: none; margin: 0; }
+  .adv-info { grid-column: 1; grid-row: 3; }
+  .adv-grid { grid-column: 2; grid-row: 2 / span 2; max-width: none; margin: 0; gap: 9px; }
+  .adv-door b { font-size: 26px; }
+  .adv-de { font-size: 32px; }
+  .adv-door.adv-auf small { font-size: 11px; left: 5px; top: 3px; }
+}
 
 /* ---- style_alce.css ---- */
 
@@ -8269,8 +8356,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '2.59.0';
-  var MAP = {"probe":0,"files":[[8259,"fehler_kern.js"],[8547,null],[8549,"data.js"],[9242,"data_more.js"],[9596,"data_su2.js"],[9817,"data_es.js"],[10156,"data_wissen.js"],[10338,"data_v21.js"],[10962,"data_v24.js"],[11413,"data_v25.js"],[11861,"data_v26.js"],[11960,"data_v29.js"],[12265,"data_v30.js"],[12589,"data_v31.js"],[12889,"data_kunst.js"],[13085,"data_v214.js"],[13188,"data_v216.js"],[13481,"schrift.js"],[13781,"eingabe.js"],[13992,"data_k34m.js"],[14510,"data_k34d.js"],[14843,"data_k34s.js"],[15232,"data_v224.js"],[16100,"data_v225w.js"],[16469,"data_v225k.js"],[16913,"data_herz.js"],[17267,"data_fb226.js"],[17410,"data_tf226.js"],[17617,"data_v227a.js"],[18708,"data_v227b.js"],[19662,"data_h28b.js"],[19702,"data_l28a.js"],[20568,"data_l28b.js"],[21748,"data_schaetz.js"],[22230,"data_party8.js"],[22280,"data_alce.js"],[22940,"data_alce2.js"],[23189,"data_alce3.js"],[23604,"registry.js"],[24118,"app.js"],[25245,"fun.js"],[25825,"fun2.js"],[26141,"atelier.js"],[26515,"kunst225.js"],[26705,"herz.js"],[27069,"reise.js"],[27371,"iglu.js"],[27537,"offline.js"],[27644,"party.js"],[28128,"meine.js"],[28484,"loeffel.js"],[28655,"trend.js"],[29197,"fun228a.js"],[30048,"fun228b.js"],[30709,"kueche.js"],[31748,"stimme.js"],[31803,"klassen.js"],[31952,"freunde_vorab.js"],[31973,"mut.js"],[32395,"schule.js"],[32884,"fussball226.js"],[33206,"schaetzen.js"],[33637,"party8.js"],[34256,"tiere.js"],[34715,"fussball232.js"],[34930,"party8b.js"],[35232,"weg.js"],[35449,"px.js"],[35860,"px_data.js"],[36117,"pxwelt.js"],[36198,"px_abenteuer.js"],[36999,"px_abenteuer2.js"],[37748,"px_ski.js"],[38390,"px_wurf.js"],[38919,"px_insel.js"],[40120,"px_kicker.js"],[41055,"px_eis.js"],[42041,"px_run.js"],[43256,"px_brk.js"],[44218,"px_pol.js"],[45569,"px_frog.js"],[46829,"px_angel.js"],[48144,"px_golf.js"],[49178,"px_tauch.js"],[50443,"px_hockey.js"],[51399,"px_lab.js"],[52734,"px_plopp.js"],[53940,"px_stadion.js"],[55444,"px_training.js"],[55813,"cm.js"],[56303,"cmwelt.js"],[56359,"cm_baeck.js"],[57152,"cm_bahn.js"],[57916,"cm_detek.js"],[58633,"cm_markt.js"],[59346,"ff.js"],[59502,"ff_mathe.js"],[61492,"ff_deutsch.js"],[63080,"ff_sach_a.js"],[65329,"ff_sach_b.js"],[67558,"ff_sprachen.js"],[69966,"zm.js"],[70879,"tt.js"],[71092,"data_tagebuch.js"],[71135,"data_hoerspiel.js"],[71294,"leseecke.js"],[71613,"kt.js"],[71916,"comicbuch.js"],[72194,"alce.js"],[72357,"alce_aufg.js"],[72527,"formen.js"],[72978,"data_formen.js"],[73219,"data_formen2.js"],[73441,"spielzeit.js"],[73586,"data_faktmeinung.js"],[73705,"data_es248.js"],[73969,"data_en249.js"],[74203,"data_wissen249.js"],[74543,"data_kunst249.js"],[74789,"data_fussball250.js"],[74913,"data_werte252.js"],[75156,"data_lesen252.js"],[75217,"data_k34_252.js"],[75303,"art254.js"],[75421,"data_werte255.js"],[75546,"data_lesen255.js"],[75682,"forscher255.js"],[75830,"zufall250.js"],[75876,"stufe259.js"],[75884,"lumi_live.js"],[76000,"sicher.js"],[76184,"stil.js"],[76238,"freunde.js"],[76375,"start.js"],[76385,null],[76395,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '2.60.0';
+  var MAP = {"probe":0,"files":[[8346,"fehler_kern.js"],[8634,null],[8636,"data.js"],[9329,"data_more.js"],[9683,"data_su2.js"],[9904,"data_es.js"],[10243,"data_wissen.js"],[10425,"data_v21.js"],[11049,"data_v24.js"],[11500,"data_v25.js"],[11948,"data_v26.js"],[12047,"data_v29.js"],[12352,"data_v30.js"],[12676,"data_v31.js"],[12976,"data_kunst.js"],[13172,"data_v214.js"],[13275,"data_v216.js"],[13568,"schrift.js"],[13868,"eingabe.js"],[14079,"data_k34m.js"],[14597,"data_k34d.js"],[14930,"data_k34s.js"],[15319,"data_v224.js"],[16187,"data_v225w.js"],[16556,"data_v225k.js"],[17000,"data_herz.js"],[17354,"data_fb226.js"],[17497,"data_tf226.js"],[17704,"data_v227a.js"],[18795,"data_v227b.js"],[19749,"data_h28b.js"],[19789,"data_l28a.js"],[20655,"data_l28b.js"],[21835,"data_schaetz.js"],[22317,"data_party8.js"],[22367,"data_alce.js"],[23027,"data_alce2.js"],[23276,"data_alce3.js"],[23691,"registry.js"],[24205,"app.js"],[25337,"fun.js"],[25917,"fun2.js"],[26233,"atelier.js"],[26607,"kunst225.js"],[26797,"herz.js"],[27161,"reise.js"],[27463,"iglu.js"],[27629,"offline.js"],[27736,"party.js"],[28220,"meine.js"],[28576,"loeffel.js"],[28747,"trend.js"],[29289,"fun228a.js"],[30140,"fun228b.js"],[30801,"kueche.js"],[31840,"stimme.js"],[31895,"klassen.js"],[32044,"freunde_vorab.js"],[32065,"mut.js"],[32487,"schule.js"],[32976,"fussball226.js"],[33298,"schaetzen.js"],[33729,"party8.js"],[34348,"tiere.js"],[34807,"fussball232.js"],[35022,"party8b.js"],[35324,"weg.js"],[35541,"px.js"],[35952,"px_data.js"],[36209,"pxwelt.js"],[36290,"px_abenteuer.js"],[37091,"px_abenteuer2.js"],[37840,"px_ski.js"],[38482,"px_wurf.js"],[39011,"px_insel.js"],[40212,"px_kicker.js"],[41147,"px_eis.js"],[42133,"px_run.js"],[43348,"px_brk.js"],[44310,"px_pol.js"],[45661,"px_frog.js"],[46921,"px_angel.js"],[48236,"px_golf.js"],[49270,"px_tauch.js"],[50535,"px_hockey.js"],[51491,"px_lab.js"],[52826,"px_plopp.js"],[54032,"px_stadion.js"],[55536,"px_training.js"],[55905,"cm.js"],[56395,"cmwelt.js"],[56451,"cm_baeck.js"],[57244,"cm_bahn.js"],[58008,"cm_detek.js"],[58725,"cm_markt.js"],[59438,"ff.js"],[59594,"ff_mathe.js"],[61584,"ff_deutsch.js"],[63172,"ff_sach_a.js"],[65421,"ff_sach_b.js"],[67650,"ff_sprachen.js"],[70058,"zm.js"],[70971,"tt.js"],[71184,"data_tagebuch.js"],[71227,"data_hoerspiel.js"],[71386,"leseecke.js"],[71705,"kt.js"],[72008,"comicbuch.js"],[72286,"alce.js"],[72449,"alce_aufg.js"],[72619,"formen.js"],[73070,"data_formen.js"],[73311,"data_formen2.js"],[73533,"spielzeit.js"],[73678,"data_faktmeinung.js"],[73797,"data_es248.js"],[74061,"data_en249.js"],[74295,"data_wissen249.js"],[74635,"data_kunst249.js"],[74881,"data_fussball250.js"],[75005,"data_werte252.js"],[75248,"data_lesen252.js"],[75309,"data_k34_252.js"],[75395,"art254.js"],[75513,"data_werte255.js"],[75638,"data_lesen255.js"],[75774,"forscher255.js"],[75922,"zufall250.js"],[75968,"stufe259.js"],[75976,"advent.js"],[76239,"lumi_live.js"],[76355,"sicher.js"],[76539,"stil.js"],[76593,"freunde.js"],[76730,"start.js"],[76740,null],[76750,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -24119,8 +24206,9 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '2.59.0';
+const APP_VERSION = '2.60.0';
 const CHANGELOG = [
+  { v: "2.60.0", d: "11.11.2026", t: ["Neu: der Adventskalender. Vom 1. bis 24. Dezember wartet jeden Tag ein Türchen: drei Aufgaben, dann eine Überraschung und ein neues Teil für das Winterbild", "Verpasste Türchen lassen sich bis zum 6. Januar nachholen. Eltern können den Kalender im Elternbereich ausschalten oder alle Türchen vorab ansehen", "Neues Spiel in Mathe: Winter-Rechnen mit Rechengeschichten für Klasse 1 bis 4", "Behoben: In „Geheimwörter schreiben“ standen manchmal fremde Zeichen in den Buchstaben-Kacheln"] },
   { v: "2.59.0", d: "11.11.2026", t: ["Sachunterricht wird kniffliger: In 62 Spielen sind die falschen Antworten neu geschrieben. Sie könnten jetzt auch stimmen, Raten hilft nicht mehr", "Schwerer mit der Stufe: Auf Stufe 1 gibt es drei Antworten, ab Stufe 2 sind es vier"] },
   { v: "2.58.1", d: "11.11.2026", t: ["Gleicher Stand wie die große Lernwelt. In dieser Version gibt es hier nichts Neues zu sehen"] },
   { v: "2.58.0", d: "10.11.2026", t: ["Gleicher Stand wie die große Lernwelt. In dieser Version gibt es hier nichts Neues zu sehen"] },
@@ -24480,6 +24568,7 @@ function showHome() {
     </header>
     <main class="wrap home2" style="padding-block:6px 0">
       ${safeCard(hzBanner)}
+      ${typeof advHomeCard === 'function' ? safeCard(advHomeCard) : ''}
       ${typeof homeHint === 'function' ? safeCard(homeHint) : ''}
       ${typeof ttHomeCard === 'function' ? safeCard(ttHomeCard) : ''}
       ${typeof wegCard === 'function' ? safeCard(wegCard) : ''}
@@ -24669,6 +24758,7 @@ function nextQuestion() {
   if (G.mode === 'trainer') { const it = G.queue[G.i]; G.qg = it.g; G.q = it.q; }
   else if (G.mode === 'mix') { G.qg = pickMixGame(); G.q = genFor(G.qg); }
   else if (G.mode === 'tt') { G.qg = ttNext(); G.q = genFor(G.qg); }
+  else if (G.mode === 'advent') { G.qg = G.i === 0 && GAMES.winterrechnen ? 'winterrechnen' : pickMixGame(); G.q = genFor(G.qg); }
   else { G.qg = G.id; G.q = genFor(G.id, G.lv); }
   G.answered = false; G.typed = ''; G.pos = 0; G.miss = 0; G.tl = null; G.col = null; G.tried = false; G.clearNext = false;
   renderQuestion();
@@ -24692,7 +24782,7 @@ function renderQuestion() {
   const q = G.q, wid = GAMES[G.qg].w;
   const canSay = S.settings.speech && Speech.ok;
   const isFF = !!(GAMES[G.qg] && GAMES[G.qg].ff && typeof ffTagHTML === 'function');
-  const tag = G.mode === 'tt' && isFF ? ffTagHTML(q) : G.mode === 'mix' || G.mode === 'trainer' || G.mode === 'tt' ? `<span class="q-from" data-world="${wid}">${giHTML(GAMES[G.qg])} ${GAMES[G.qg].t}</span>` : isFF ? ffTagHTML(q) : klVorTag(G.id);
+  const tag = G.mode === 'tt' && isFF ? ffTagHTML(q) : G.mode === 'mix' || G.mode === 'trainer' || G.mode === 'tt' || G.mode === 'advent' ? `<span class="q-from" data-world="${wid}">${giHTML(GAMES[G.qg])} ${GAMES[G.qg].t}</span>` : isFF ? ffTagHTML(q) : klVorTag(G.id);
   const split = q.kind === 'choice' || q.kind === 'number';
   setView(`<div class="game ${Speech.ok ? '' : 'no-speech'}" id="gameRoot" ${langOf(G.qg) === 'es' ? 'lang="es"' : ''}>${gameBar()}
     <main class="wrap stage ${split ? 'split' : ''} ${q.kind === 'trace' ? 'tracing' : ''}">
@@ -24968,6 +25058,7 @@ function finishRound(extra = {}) {
 }
 function showResult(r) {
   const mode = G.mode, isMem = mode === 'memory';
+  if (mode === 'advent' && typeof advResult === 'function') return advResult(r);
   const wid = G.g.w || null;
   const head = mode === 'blitz' ? (r.blitz.record ? 'Neuer Rekord!' : 'Zeit ist um!') : r.stars === 3 ? (isMem || G.ok === G.n ? 'Perfekt!' : 'Super gemacht!') : r.stars === 2 ? 'Gut gemacht!' : 'Geschafft!';
   const sub = mode === 'blitz' ? `${plural(r.blitz.count, 'Aufgabe', 'Aufgaben')} in 60 Sekunden richtig${r.blitz.prev && !r.blitz.record ? ` · Rekord: ${r.blitz.prev}` : ''}` : isMem && G.custom ? esc(G.resText || `${plural(G.ok, 'Aufgabe', 'Aufgaben')} geschafft`) : isMem ? `Alle 6 Paare in ${r.memoryMoves} Zügen gefunden` : `${G.ok + (G.half || 0)} von ${G.n} richtig${G.half ? ` (${G.half} im zweiten Versuch)` : ''}`;
@@ -25104,6 +25195,7 @@ function showParents(notice = '') {
     ${offSectionHTML()}
     ${typeof fpParentsHTML === 'function' ? fpParentsHTML() : ''}
     ${typeof spzParentsHTML === 'function' ? spzParentsHTML() : ''}
+    ${typeof advParentsHTML === 'function' ? advParentsHTML() : ''}
     <section class="card"><h2>Spielhalle</h2>
       <p class="muted">Mini-Spiele als Belohnung. Münzen gibt es nur fürs Lernen: 1 Münze pro Stern, +3 für das Tagesziel. Aktuell: 🪙 <b id="coinsP">${S.coins || 0}</b></p>
       ${sw('funOn', set.funOn !== false, 'Spielhalle', 'Mini-Spiele auf der Startseite anzeigen')}
@@ -75880,6 +75972,269 @@ Object.assign(ACT, {
 
 const SU_STUFE2 = ['bauernhof', 'baum', 'eistiere', 'ernaehrung', 'erstehilfe', 'fahrrad', 'familienleben', 'feuer', 'frueher', 'gemeinde', 'gewitter', 'haustiere', 'herkunft', 'himmel', 'jahreslauf', 'kalender', 'karte', 'koerper', 'kornbrot', 'licht', 'magnet', 'medien', 'meer', 'miteinander', 'natur', 'niedersachsen', 'organe', 'pinguin', 'schall', 'schlafgut', 'schneeeis', 'sinne', 'spurensuche', 'strom', 'technik', 'teich', 'tiere', 'tierewinter', 'verkehr', 'voegel', 'wasser', 'wasseralltag', 'weltall', 'wetterkleid', 'wiese', 'wind', 'wolken', 'zaehne'];
 SU_STUFE2.forEach(id => { const g = GAMES[id]; if (g && !g.max && !g.type && g.gen) g.max = 2; });
+
+/*@@src advent.js@@*/
+
+
+
+
+
+
+
+
+
+const ADV_ORDER = [7, 18, 3, 22, 11, 1, 15, 24, 9, 5, 20, 13, 2, 17, 8, 23, 12, 6, 19, 4, 14, 21, 10, 16];
+const ADV_ART = { w: ['💡', 'Wusstest du?'], j: ['😄', 'Witz des Tages'], r: ['🧩', 'Rätsel'], m: ['🤸', 'Mach mit!'], s: ['🌍', 'Sprach-Türchen'], f: ['⭐', 'Geschafft!'] };
+
+const ADV = {
+  1: { e: '🌙', n: 'Der Mond geht auf', k: 'w', x: 'Advent kommt aus dem Lateinischen und heißt Ankunft. Früher malten Kinder 24 Kreidestriche an die Tür. Jeden Tag durften sie einen wegwischen.' },
+  2: { e: '✨', n: 'Die Sterne funkeln', k: 'j', x: 'Was sagt der große Schneemann zum kleinen Schneemann? „Komisch. Riechst du auch die ganze Zeit Möhren?“' },
+  3: { e: '🕯️', n: 'Im Haus geht das Licht an', k: 'm', x: 'Licht-Minute: Macht heute Abend zusammen eine Kerze oder eine kleine Lampe an und alles andere aus. Dann erzählt jeder das Schönste von seinem Tag.' },
+  4: { e: '⛄', n: 'Ein Schneemann steht im Garten', k: 'r', x: 'Ich habe eine Möhre im Gesicht und einen Hut auf dem Kopf. Wenn die Sonne lange scheint, werde ich immer kleiner. Wer bin ich?', a: 'der Schneemann' },
+  5: { e: '🐧', n: '{M} kommt zu Besuch', k: 'w', x: 'Kaiserpinguine brüten mitten im eisigen Winter. Der Papa hält das Ei etwa zwei Monate lang auf seinen Füßen warm und frisst in dieser Zeit nichts.' },
+  6: { e: '👢', n: 'Ein Stiefel steht vor der Tür', k: 'w', x: 'Heute ist Nikolaustag. Der echte Nikolaus lebte vor etwa 1700 Jahren in der Stadt Myra. Das liegt in der heutigen Türkei. Er soll armen Menschen heimlich geholfen haben. Darum steckt heute eine Überraschung im Stiefel.' },
+  7: { e: '🛷', n: 'Der Schlitten steht bereit', k: 'm', x: 'Schlitten-Turnen: Setz dich auf den Boden und heb die Füße an. Lenke deinen Schlitten zehnmal nach links und zehnmal nach rechts. Schaffst du es, ohne umzukippen?' },
+  8: { e: '🐦', n: 'Ein Vogelhaus mit Gast', k: 'w', x: 'Eine Blaumeise wiegt nur so viel wie vier Stück Würfelzucker. In einer kalten Winternacht verbraucht sie viel Kraft, um warm zu bleiben. Darum frisst sie am Tag fast ohne Pause.' },
+  9: { e: '💡', n: 'Eine Lichterkette am Dach', k: 's', x: 'Frohe Weihnachten heißt auf Spanisch ¡Feliz Navidad! In Spanien bringen die Heiligen Drei Könige die Geschenke. Sie heißen los Reyes Magos und kommen erst am 6. Januar.' },
+  10: { e: '🏮', n: 'Eine Laterne leuchtet am Weg', k: 'r', x: 'Ich habe ein Licht im Bauch und hänge an einem Stab. Wenn es dunkel wird, trägst du mich spazieren. Was bin ich?', a: 'die Laterne' },
+  11: { e: '❄️', n: 'Es fängt an zu schneien', k: 'w', x: 'Unter der Lupe hat jeder Schneekristall sechs Ecken oder sechs Arme. Und trotzdem sieht keiner genau so aus wie ein anderer.' },
+  12: { e: '🎁', n: 'Geschenke liegen unter dem Baum', k: 'm', x: 'Halbzeit! Heute bist du ein Wichtel: Mach jemandem heimlich eine Freude. Deck den Tisch, mal ein Bild oder leg einen lieben Zettel aufs Kissen.' },
+  13: { e: '🧊', n: 'Ein Iglu am Hügel', k: 'w', x: 'In einem Iglu kann es wärmer als 0 Grad sein, auch wenn draußen minus 30 Grad sind. Im Schnee steckt viel Luft. Sie hält die Wärme fest wie eine dicke Decke.' },
+  14: { e: '⛸️', n: 'Eislaufen auf dem Teich', k: 'm', x: 'Pinguin-Rennen: Klemm ein Kissen zwischen die Knie und watschle einmal quer durchs Zimmer. Wer das Kissen verliert, fängt von vorne an.' },
+  15: { e: '🍪', n: 'Aus dem Schornstein steigt Rauch', k: 'w', x: 'Zimt ist die Rinde von einem Baum. Sie wird abgeschält und getrocknet. Dabei rollt sie sich von selbst zu einer Stange ein.' },
+  16: { e: '🦌', n: 'Ein Reh schaut vorbei', k: 'r', x: 'Ich bin braun und scheu und habe vier dünne Beine. Im Winter scharre ich den Schnee weg, um Futter zu finden. Wer bin ich?', a: 'das Reh' },
+  17: { e: '⚽', n: 'Ein Tor und ein Ball im Schnee', k: 'm', x: 'Socken-Fußball: Roll ein Paar Socken zu einem Ball. Wie oft kannst du ihn mit dem Fuß hochhalten? Merk dir deinen Rekord und fordere jemanden heraus.' },
+  18: { e: '🎀', n: 'Ein Kranz hängt an der Tür', k: 's', x: 'Der Schneemann heißt auf Englisch snowman und die Schneeflocke snowflake. Frohe Weihnachten heißt Merry Christmas!' },
+  19: { e: '🔴', n: 'Bunte Kugeln am Baum', k: 'j', x: 'Was hängt am Tannenbaum und macht Muh? Eine Kuh-gel!' },
+  20: { e: '🎄', n: 'Die Lichter am Baum gehen an', k: 'w', x: 'Die ersten Lichter am Weihnachtsbaum waren echte Kerzen. Elektrische Lichterketten gibt es erst seit gut 140 Jahren.' },
+  21: { e: '🎅', n: '{M} bekommt eine rote Mütze', k: 'm', x: 'Drei nette Sätze: Sag heute drei Menschen etwas Nettes. Zum Beispiel: „Schön, dass du da bist.“ Zähl mit, ob du alle drei schaffst.' },
+  22: { e: '🌠', n: 'Eine Sternschnuppe fliegt vorbei', k: 'w', x: 'Eine Sternschnuppe ist kein Stern. Es ist ein Staubkorn aus dem Weltall, oft kleiner als eine Erbse. Es verglüht in der Luft und leuchtet dabei hell auf.' },
+  23: { e: '🌌', n: 'Polarlicht am Himmel', k: 'w', x: 'Polarlichter entstehen, wenn winzige Teilchen von der Sonne auf die Luft der Erde treffen. Am besten sieht man sie weit im Norden, zum Beispiel in Norwegen.' },
+  24: { e: '⭐', n: 'Der große Stern leuchtet', k: 'f', x: 'Frohe Weihnachten! Du hast alle 24 Türchen geöffnet, und dein Winterbild ist fertig. {M} wünscht dir und deiner Familie ein wunderschönes Fest.' }
+};
+let ADV_VOR = null;
+
+
+function advPhase(d = new Date()) {
+  const m = d.getMonth() + 1, t = d.getDate(), y = d.getFullYear();
+  if (m === 11 && t >= 24) return { ph: 'vor', y, tag: 0, bis: 31 - t };
+  if (m === 12 && t <= 24) return { ph: 'zeit', y, tag: t };
+  if (m === 12) return { ph: 'nach', y, tag: 24 };
+  if (m === 1 && t <= 6) return { ph: 'nach', y: y - 1, tag: 24 };
+  return null;
+}
+const advOn = () => !(S.settings && S.settings.advent === false);
+function advS() {
+  const p = advPhase();
+  let a = S.advent; if (!isObj(a)) a = S.advent = { y: p ? p.y : new Date().getFullYear(), o: {} };
+  if (!isObj(a.o)) a.o = {};
+  if (p && a.y !== p.y) { a.y = p.y; a.o = {}; }
+  Object.keys(a.o).forEach(k => { const n = parseInt(k, 10); if (!(n >= 1 && n <= 24) || String(n) !== k) delete a.o[k]; });
+  return a;
+}
+const advOffen = () => ADV_VOR ? ADV_VOR.o : advS().o;
+const advTag = () => ADV_VOR ? 24 : ((advPhase() || {}).tag || 0);
+const advTxt = s => String(s).replace(/\{M\}/g, typeof M === 'function' ? M() : 'Lumi');
+
+
+function advStern(cx, cy, R1, r1) { let p = ''; for (let i = 0; i < 10; i++) { const r = i % 2 ? r1 : R1, a = Math.PI * i / 5 - Math.PI / 2; p += (i ? ' ' : '') + (cx + r * Math.cos(a)).toFixed(1) + ',' + (cy + r * Math.sin(a)).toFixed(1); } return p; }
+function advPingu(x, y, s) {
+  return `<g transform="translate(${x} ${y}) scale(${s})"><ellipse cx="-9" cy="27" rx="7" ry="3" fill="#f5a623"/><ellipse cx="9" cy="27" rx="7" ry="3" fill="#f5a623"/>
+    <ellipse cx="-19" cy="4" rx="5" ry="14" fill="#1b2743" transform="rotate(14 -19 4)"/><ellipse cx="19" cy="4" rx="5" ry="14" fill="#1b2743" transform="rotate(-14 19 4)"/>
+    <ellipse cx="0" cy="0" rx="20" ry="27" fill="#22304f"/><ellipse cx="0" cy="6" rx="13" ry="19" fill="#fff"/>
+    <circle cx="-7" cy="-12" r="4.2" fill="#fff"/><circle cx="7" cy="-12" r="4.2" fill="#fff"/><circle cx="-6.4" cy="-11.6" r="2.1" fill="#10182c"/><circle cx="7.6" cy="-11.6" r="2.1" fill="#10182c"/>
+    <path d="M-4.5 -5 H4.5 L0 1.5Z" fill="#f5a623"/></g>`;
+}
+function advBild(o, neu) {
+  const on = d => !!o[d], g = (d, html) => on(d) ? `<g class="adv-t adv-t${d}${neu === d ? ' adv-neu' : ''}">${html}</g>` : '';
+  const sterne = [[40, 40], [95, 120], [150, 30], [210, 85], [270, 45], [330, 110], [385, 28], [455, 70], [520, 35], [575, 105], [610, 20], [735, 40], [770, 110], [30, 170], [300, 160], [560, 165], [745, 180], [470, 120]];
+  const flocken = Array.from({ length: 28 }, (_, i) => [(i * 137) % 800, (i * 71) % 430, 2 + i % 3 * .7, (i * .41) % 6]);
+  const kette = [[122, 250], [140, 238], [158, 225], [176, 213], [194, 200], [216, 200], [234, 213], [252, 225], [270, 238], [288, 250]], kf = ['#ff5d6c', '#ffd23f', '#5ec8ff', '#7be07b'];
+  const kugeln = [[432, 213, '#e23d4f'], [468, 211, '#f2b233'], [414, 266, '#3c8ee0'], [452, 260, '#e23d4f'], [488, 268, '#f2b233'], [398, 324, '#f2b233'], [438, 316, '#3c8ee0'], [478, 324, '#e23d4f'], [508, 320, '#9b59d0']];
+  const lichter = [[441, 188], [461, 200], [424, 240], [451, 234], [477, 246], [408, 296], [434, 289], [464, 298], [494, 300], [384, 332], [520, 334], [450, 215]];
+  const fertig = on(24);
+  return `<svg class="adv-pic${fertig ? ' fertig' : ''}" viewBox="0 0 800 450" role="img" aria-label="Dein Winterbild mit ${Object.keys(o).length} von 24 Teilen">
+    <defs><linearGradient id="advSky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0d1b3d"/><stop offset=".7" stop-color="#23427a"/><stop offset="1" stop-color="#3b5fa0"/></linearGradient>
+      <radialGradient id="advGlow"><stop offset="0" stop-color="#ffe9a8" stop-opacity=".85"/><stop offset="1" stop-color="#ffe9a8" stop-opacity="0"/></radialGradient></defs>
+    <rect width="800" height="450" fill="url(#advSky)"/>
+    ${g(23, '<path class="adv-au" d="M0 120 Q200 40 400 110 T800 80 V140 Q600 170 400 150 T0 170Z" fill="#5ee6a8" opacity=".24"/><path class="adv-au adv-au2" d="M0 90 Q250 30 480 80 T800 50 V95 Q560 130 400 110 T0 130Z" fill="#b48cff" opacity=".2"/>')}
+    ${g(2, sterne.map(([x, y], i) => `<circle class="adv-fu" style="animation-delay:${(i * .37 % 3).toFixed(2)}s" cx="${x}" cy="${y}" r="${1.6 + i % 3 * .6}" fill="#fff"/>`).join(''))}
+    ${g(1, '<circle cx="670" cy="80" r="62" fill="url(#advGlow)" opacity=".55"/><circle cx="670" cy="80" r="34" fill="#fff6d1"/><circle cx="658" cy="70" r="7" fill="#efe3b4"/><circle cx="682" cy="90" r="5" fill="#efe3b4"/><circle cx="676" cy="64" r="3.5" fill="#efe3b4"/>')}
+    ${g(22, `<path d="M150 52 L236 92" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".75"/><path d="M185 68 L236 92" stroke="#fff" stroke-width="5" stroke-linecap="round"/><polygon points="${advStern(240, 94, 9, 4)}" fill="#fff6d1"/>`)}
+    <path d="M0 300 Q120 250 260 290 T520 280 T800 270 V450 H0Z" fill="#c9d9f2"/>
+    ${[[18, 292, 1], [338, 288, .9], [362, 292, 1.1], [772, 276, 1]].map(([x, y, s]) => `<path d="M${x} ${y - 46 * s} L${x - 15 * s} ${y} H${x + 15 * s}Z" fill="#2c5b4b"/><path d="M${x} ${y - 46 * s} L${x - 6 * s} ${y - 27 * s} H${x + 6 * s}Z" fill="#fff" opacity=".8"/>`).join('')}
+    ${g(16, '<g stroke="#7d5232" stroke-width="2.4" stroke-linecap="round"><path d="M581 273 V287 M586 274 V288 M596 274 V288 M601 273 V287"/></g><ellipse cx="591" cy="268" rx="14" ry="8" fill="#9b6a43"/><path d="M600 266 L606 252" stroke="#9b6a43" stroke-width="6" stroke-linecap="round"/><ellipse cx="608" cy="250" rx="6" ry="4.6" fill="#9b6a43"/><path d="M604 246 L601 240 M608 245 L609 238" stroke="#7d5232" stroke-width="1.8" stroke-linecap="round"/><circle cx="610" cy="249" r="1.1" fill="#2a1a10"/><ellipse cx="577" cy="266" rx="3" ry="2.4" fill="#fff"/>')}
+    ${g(13, '<path d="M655 320 A45 42 0 0 1 745 320Z" fill="#e3edff" stroke="#b7c9ea" stroke-width="2"/><path d="M662 300 H738 M672 286 H728 M680 320 V300 M700 300 V286 M720 320 V300 M690 286 V279 M710 286 V279" stroke="#b7c9ea" stroke-width="1.6" fill="none"/><path d="M690 320 V306 A10 10 0 0 1 710 306 V320Z" fill="#53688f"/>')}
+    <path d="M0 345 Q200 310 420 340 T800 330 V450 H0Z" fill="#eef4ff"/>
+    <ellipse cx="650" cy="405" rx="105" ry="26" fill="#a9c8ee"/><ellipse cx="632" cy="399" rx="60" ry="9" fill="#c4dbf5" opacity=".7"/>
+    ${g(14, `<path d="M585 404 q28 -13 56 -1 t58 3 M600 414 q40 -8 80 3" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round" opacity=".9"/>${advPingu(700, 388, .55)}<path d="M690 389 h20" stroke="#ffd23f" stroke-width="4" stroke-linecap="round"/>`)}
+    <rect x="245" y="200" width="18" height="34" fill="#5a3327"/><rect x="242" y="196" width="24" height="7" rx="3" fill="#fff"/>
+    ${g(15, '<circle class="adv-ra" cx="254" cy="184" r="8" fill="#fff" opacity=".55"/><circle class="adv-ra" style="animation-delay:.8s" cx="263" cy="167" r="10" fill="#fff" opacity=".45"/><circle class="adv-ra" style="animation-delay:1.6s" cx="256" cy="147" r="12" fill="#fff" opacity=".35"/>')}
+    <rect x="130" y="250" width="150" height="88" fill="#7a4b3a"/><polygon points="115,254 205,190 295,254" fill="#5a3327"/><path d="M111 256 L205 185 L299 256 L286 258 L205 201 L124 258Z" fill="#fff"/>
+    <rect x="145" y="272" width="32" height="28" rx="2" fill="#2b3350"/><rect x="235" y="272" width="32" height="28" rx="2" fill="#2b3350"/>
+    ${g(3, '<circle cx="161" cy="286" r="34" fill="url(#advGlow)" opacity=".6"/><circle cx="251" cy="286" r="34" fill="url(#advGlow)" opacity=".6"/><rect x="145" y="272" width="32" height="28" rx="2" fill="#ffd978"/><rect x="235" y="272" width="32" height="28" rx="2" fill="#ffd978"/><path d="M158 300 v-9 M158 291 q-3 -4 0 -8 q3 4 0 8" stroke="#e8792b" stroke-width="2" fill="#ffb347"/>')}
+    <path d="M161 272 V300 M145 286 H177 M251 272 V300 M235 286 H267" stroke="#5a3327" stroke-width="2.4"/>
+    <rect x="193" y="292" width="30" height="46" rx="3" fill="#4a2a20"/><circle cx="218" cy="317" r="2" fill="#f2b233"/>
+    ${g(9, `<path d="M118 252 L205 192 L292 252" stroke="#2b2b3a" stroke-width="1.4" fill="none"/>${kette.map(([x, y], i) => `<circle class="adv-bl" style="animation-delay:${(i % 4 * .3).toFixed(1)}s" cx="${x}" cy="${y + 3}" r="4" fill="${kf[i % 4]}"/>`).join('')}`)}
+    ${g(18, '<circle cx="208" cy="306" r="8.5" fill="none" stroke="#2f8a57" stroke-width="5.5"/><circle cx="203" cy="300" r="1.6" fill="#e23d4f"/><circle cx="214" cy="309" r="1.6" fill="#e23d4f"/><path d="M208 312 l-5 7 M208 312 l5 7" stroke="#e23d4f" stroke-width="2.6" stroke-linecap="round"/>')}
+    ${g(6, '<circle cx="236" cy="312" r="4.5" fill="#f28c28"/><path d="M241 313 v-9 q4 -4 6 1" stroke="#e23d4f" stroke-width="2.4" fill="none" stroke-linecap="round"/><rect x="231" y="316" width="11" height="20" fill="#c0392b"/><rect x="231" y="330" width="20" height="9" rx="4" fill="#c0392b"/><rect x="229" y="313" width="15" height="6" rx="3" fill="#fff"/>')}
+    ${g(8, '<rect x="58" y="262" width="5" height="82" fill="#6b4a35"/><rect x="44" y="238" width="34" height="26" fill="#b9774a"/><polygon points="38,241 61,221 84,241" fill="#7a3b2a"/><path d="M36 242 L61 218 L86 242 L80 243 L61 226 L42 243Z" fill="#fff"/><circle cx="61" cy="251" r="5" fill="#3a2418"/><rect x="40" y="264" width="42" height="3" fill="#7a3b2a"/><ellipse cx="84" cy="257" rx="7" ry="5.5" fill="#6b4a35"/><ellipse cx="86" cy="259" rx="4.4" ry="3.6" fill="#e2603b"/><circle cx="88" cy="254" r="1" fill="#111"/><path d="M91 256 l4 1 l-4 1.6Z" fill="#f5a623"/>')}
+    <rect x="442" y="335" width="16" height="22" fill="#5a3b25"/><polygon points="450,150 400,225 500,225" fill="#1f6b45"/><polygon points="450,195 385,282 515,282" fill="#1f6b45"/><polygon points="450,245 370,342 530,342" fill="#1f6b45"/>
+    <path d="M450 150 L436 172 Q450 166 464 172Z M402 222 q14 -8 26 0 M476 222 q12 -8 22 0 M388 279 q16 -9 30 0 M482 279 q16 -9 30 0 M374 339 q20 -10 38 0 M488 339 q20 -10 38 0" fill="#fff" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+    ${g(19, kugeln.map(([x, y, c]) => `<circle cx="${x}" cy="${y}" r="6.5" fill="${c}"/><circle cx="${x - 2}" cy="${y - 2}" r="1.8" fill="#fff" opacity=".8"/>`).join(''))}
+    ${g(20, lichter.map(([x, y], i) => `<circle cx="${x}" cy="${y}" r="9" fill="url(#advGlow)"/><circle class="adv-bl" style="animation-delay:${(i % 3 * .4).toFixed(1)}s" cx="${x}" cy="${y}" r="3.4" fill="#fff3b0"/>`).join(''))}
+    ${g(24, `<circle class="adv-gl" cx="450" cy="140" r="70" fill="url(#advGlow)"/><polygon points="${advStern(450, 140, 22, 9.5)}" fill="#ffd23f" stroke="#f2a900" stroke-width="1.5"/>`)}
+    ${g(12, '<rect x="403" y="334" width="27" height="22" fill="#e23d4f"/><path d="M416.500 334 V356 M403 344 H430" stroke="#ffd23f" stroke-width="3"/><rect x="472" y="338" width="23" height="18" fill="#3c8ee0"/><path d="M483.500 338 V356" stroke="#fff" stroke-width="3"/><rect x="436" y="344" width="19" height="14" fill="#f2b233"/><path d="M445.500 344 V358" stroke="#e23d4f" stroke-width="2.6"/>')}
+    ${g(4, '<path d="M303 357 L286 344 M333 357 L350 343" stroke="#6b4a35" stroke-width="2.6" stroke-linecap="round"/><circle cx="318" cy="388" r="21" fill="#fff" stroke="#c9d9f2" stroke-width="1.6"/><circle cx="318" cy="358" r="15.500" fill="#fff" stroke="#c9d9f2" stroke-width="1.6"/><circle cx="318" cy="335" r="11.500" fill="#fff" stroke="#c9d9f2" stroke-width="1.6"/><path d="M305 345 q13 6 26 0" stroke="#e23d4f" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M326 347 v12" stroke="#e23d4f" stroke-width="5" stroke-linecap="round"/><rect x="309" y="314" width="18" height="12" fill="#2b2b3a"/><rect x="303" y="324" width="30" height="4" rx="2" fill="#2b2b3a"/><circle cx="314" cy="333" r="1.5" fill="#222"/><circle cx="322" cy="333" r="1.5" fill="#222"/><path d="M318 336 L331 339 L318 341Z" fill="#f08a24"/><circle cx="318" cy="354" r="1.6" fill="#222"/><circle cx="318" cy="362" r="1.6" fill="#222"/><circle cx="318" cy="384" r="1.6" fill="#222"/>')}
+    ${g(10, '<circle cx="382" cy="374" r="26" fill="url(#advGlow)" opacity=".8"/><rect x="380" y="382" width="4" height="34" fill="#2b2b3a"/><rect x="372" y="364" width="20" height="20" rx="3" fill="#2b2b3a"/><rect x="375" y="367" width="14" height="14" rx="2" fill="#ffd978"/><path d="M370 364 L382 356 L394 364Z" fill="#2b2b3a"/>')}
+    ${g(7, '<path d="M38 418 H104 Q116 418 113 406" stroke="#7a4b3a" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M52 418 V404 M92 418 V404" stroke="#7a4b3a" stroke-width="3.4"/><rect x="44" y="398" width="58" height="7" rx="3" fill="#c0392b"/><path d="M113 406 q14 -6 22 4" stroke="#a9794f" stroke-width="1.6" fill="none"/>')}
+    ${g(17, '<path d="M152 430 V398 H206 V430 M152 398 L164 408 V430 M206 398 L194 408 V430 M164 408 H194" stroke="#6b7a99" stroke-width="2.4" fill="none" stroke-linejoin="round"/><path d="M158 404 V430 M170 408 V430 M182 408 V430 M194 414 H164 M194 422 H164" stroke="#9fb0cf" stroke-width="1" fill="none"/><circle cx="232" cy="424" r="9" fill="#fff" stroke="#2b2b3a" stroke-width="1.6"/><polygon points="232,419 236.500,422.500 234.800,427.500 229.200,427.500 227.500,422.500" fill="#2b2b3a"/>')}
+    ${g(5, advPingu(520, 353, 1) + (on(21) ? '' : '<path d="M506 340 q14 9 28 0" stroke="#3c8ee0" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M529 342 v11" stroke="#3c8ee0" stroke-width="5" stroke-linecap="round"/>'))}
+    ${on(5) ? g(21, '<path d="M506 340 q14 9 28 0" stroke="#3c8ee0" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M529 342 v11" stroke="#3c8ee0" stroke-width="5" stroke-linecap="round"/><path d="M505 331 Q512 302 538 306 Q528 314 535 331Z" fill="#e23d4f"/><rect x="502" y="327" width="36" height="8" rx="4" fill="#fff"/><circle cx="539" cy="306" r="5" fill="#fff"/>') : g(21, '<path d="M300 318 Q307 292 333 296 Q323 303 330 318Z" fill="#e23d4f"/><circle cx="334" cy="296" r="4.5" fill="#fff"/>')}
+    ${g(11, flocken.map(([x, y, r, dl]) => `<circle class="adv-fl" style="animation-delay:-${dl.toFixed(2)}s;animation-duration:${(5 + r * 1.4).toFixed(1)}s" cx="${x}" cy="${y}" r="${r.toFixed(1)}" fill="#fff" opacity=".9"/>`).join(''))}
+    ${fertig ? '<text class="adv-fw" x="400" y="441" text-anchor="middle">Frohe Weihnachten!</text>' : ''}
+  </svg>`;
+}
+
+
+function advHomeCard() {
+  if (!advOn()) return ''; const p = advPhase(); if (!p) return '';
+  const o = advS().o, n = Object.keys(o).length;
+  let t, s, ready = false;
+  if (p.ph === 'vor') { t = 'Bald geht es los!'; s = `Noch ${p.bis === 1 ? 'einmal' : p.bis + '-mal'} schlafen, dann öffnet sich das erste Türchen.`; }
+  else {
+    let frei = 0; for (let d = 1; d <= p.tag; d++) if (!o[d]) frei++;
+    if (p.ph === 'zeit') {
+      const heute = !o[p.tag]; ready = frei > 0;
+      t = heute ? `Türchen ${p.tag} wartet auf dich!` : frei ? `Noch ${frei} Türchen zum Nachholen` : 'Heute schon geöffnet ✓';
+      s = heute ? (frei > 1 ? `Und ${frei - 1} Türchen zum Nachholen.` : 'Drei Aufgaben, dann springt es auf.') : frei ? `${n} von 24 sind offen.` : p.tag < 24 ? `Morgen kommt Türchen ${p.tag + 1}.` : 'Dein Winterbild ist fertig. Frohe Weihnachten!';
+    } else { ready = frei > 0; t = frei ? `Noch ${frei} Türchen zum Nachholen` : 'Dein Winterbild ist fertig'; s = frei ? 'Bis zum 6. Januar kannst du sie noch öffnen.' : 'Schau es dir noch einmal an.'; }
+  }
+  return `<button class="card adv-card${ready ? ' ready' : ''}" data-act="advopen"><span class="adv-ci" aria-hidden="true">🎄</span><span class="adv-ct"><small>Adventskalender</small><b>${esc(t)}</b><span>${esc(s)}</span></span>${p.ph === 'vor' ? '' : `<span class="adv-cn tnum">${n}/24</span>`}</button>`;
+}
+
+
+function showAdvent(neu) {
+  stopTimers(); G = null;
+  const p = ADV_VOR ? { ph: 'zeit', tag: 24 } : advPhase();
+  if (!p || (!ADV_VOR && !advOn())) return showHome();
+  const o = advOffen(), n = Object.keys(o).length, tag = p.tag;
+  let frei = 0; for (let d = 1; d <= tag; d++) if (!o[d]) frei++;
+  const info = p.ph === 'vor' ? `Am 1. Dezember öffnet sich das erste Türchen. Noch ${p.bis === 1 ? 'einmal' : p.bis + '-mal'} schlafen!`
+    : n === 24 ? 'Alle Türchen sind offen. Tippe auf ein Türchen, um die Überraschung noch einmal zu lesen.'
+    : frei ? `Tippe auf ein leuchtendes Türchen. ${frei === 1 ? 'Eins wartet' : frei + ' warten'} auf dich.` : `Für heute ist alles offen. Morgen kommt Türchen ${Math.min(24, tag + 1)}.`;
+  const door = d => { const A = ADV[d], auf = !!o[d], da = !auf && d <= tag;
+    return `<button class="adv-door adv-c${d % 4}${auf ? ' adv-auf' : da ? ' adv-da' : ' adv-zu'}${d === tag && da ? ' adv-heute' : ''}${d === 24 ? ' adv-gross' : ''}${neu === d ? ' adv-pop' : ''}" data-act="advdoor" data-d="${d}" aria-label="Türchen ${d}${auf ? ', offen: ' + esc(advTxt(A.n)) : da ? ', bereit zum Öffnen' : ', noch zu'}">${auf ? `<span class="adv-de" aria-hidden="true">${A.e}</span><small>${d}</small>` : `<b>${d}</b>`}</button>`; };
+  setView(`<header class="pagehead adv-head" style="--w:#b3262e;--w-deep:#7d1219"><div class="wrap">${backBtn(ADV_VOR ? 'advvorend' : 'home')}<div><h1>🎄 Adventskalender</h1><p>${n} von 24 Türchen offen · Dein Winterbild wächst mit</p></div></div></header>
+    <main class="wrap adv-main">
+      ${ADV_VOR ? '<p class="adv-vor">👀 Vorschau für Eltern: Hier gehen alle Türchen ohne Aufgaben auf. Nichts davon wird gespeichert.</p>' : ''}
+      <div class="adv-picbox">${advBild(o, neu)}</div>
+      <p class="adv-info">${esc(info)}</p>
+      <div class="adv-grid">${ADV_ORDER.map(door).join('')}</div>
+    </main>`);
+}
+function advKarte(d, alt) {
+  const A = ADV[d], [ie, it] = ADV_ART[A.k];
+  return `<div class="adv-gift"><div class="adv-gh"><span aria-hidden="true">${ie}</span><b>${it}</b>${S.settings.speech && Speech.ok ? `<button class="say-btn" data-act="advsay" data-d="${d}" aria-label="Vorlesen">🔊</button>` : ''}</div>
+    <p>${esc(advTxt(A.x))}</p>${A.a ? `<button class="btn ghost adv-loes" data-act="advloes" data-d="${d}">Lösung zeigen</button>` : ''}</div>
+    <p class="adv-teil"><span aria-hidden="true">${A.e}</span> ${alt ? 'In deinem Winterbild' : 'Neu in deinem Winterbild'}: <b>${esc(advTxt(A.n))}</b></p>`;
+}
+function advZeige(d) { overlay(`<div class="adv-ov"><h2>Türchen ${d}</h2>${advKarte(d, !ADV_VOR)}<div class="acts"><button class="btn" data-act="closeov">Schön!</button></div></div>`); }
+function advMuenzen(d) { return d === 24 ? 10 : d === 6 ? 5 : 2; }
+function advAufmachen(d) {
+  const a = advS(); if (a.o[d]) return 0;
+  a.o[d] = dayKey(); const c = advMuenzen(d); S.coins = (S.coins || 0) + c;
+  return c;
+}
+function advResult(r) {
+  const d = G.adv, c = advAufmachen(d), neuT = checkTrophies({ mode: 'advent' }); save();
+  const A = ADV[d], alle = Object.keys(advS().o).length === 24;
+  setView(`<div class="result adv-res">
+    <div class="adv-tor adv-c${d % 4}" aria-hidden="true"><span class="adv-in">${A.e}</span><span class="adv-fl1"><b>${d}</b></span></div>
+    <h1>Türchen ${d} ist offen!</h1><div class="big-stars">${[0, 1, 2].map(i => starSVG(i < r.stars)).join('')}</div>
+    <div class="pills"><span class="pill gold">+${G.pts} Punkte</span><span class="pill">+${plural(r.stars, 'Stern', 'Sterne')}</span><span class="pill gold">🪙 +${r.coins + c} Münzen</span></div>
+    ${advKarte(d)}
+    ${alle ? '<div class="reward"><span class="big">🌟</span><div><b>Alle 24 Türchen geschafft!</b><span>Dein Winterbild leuchtet jetzt komplett.</span></div></div>' : ''}
+    ${r.levelUp ? `<div class="reward"><span class="big">🎉</span><div><b>Level ${r.levelUp}!</b><span>Du bist aufgestiegen.</span></div></div>` : ''}
+    ${(r.newStickers || []).map(s => `<div class="reward new-sticker"><span class="big">${s}</span><div><b>Neuer Sticker!</b><span>Er klebt jetzt in deinem Album.</span></div></div>`).join('')}
+    ${[...(r.newTrophies || []), ...neuT].map(t => `<div class="reward"><span class="big">${t.e}</span><div><b>Pokal: ${t.t}</b><span>${t.d}</span></div></div>`).join('')}
+    ${r.goalNow ? `<div class="reward"><span class="big">🎯</span><div><b>Tagesziel geschafft!</b><span>${esc(advTxt('{M}'))} ist mächtig stolz auf dich.</span></div></div>` : ''}
+    <div class="res-actions"><button class="btn" data-act="advbild" data-d="${d}">Mein Winterbild ansehen</button><button class="btn ghost" data-act="home">Zur Startseite</button></div>
+  </div>`);
+  confetti(); Sound.win(); setTimeout(() => { try { Sound.sparkle(); } catch (e) { } }, 700);
+}
+
+
+function advGenRechnen(ctx) {
+  const lv = Math.max(1, Math.min(4, ctx.lv || 1)), I = (a, b) => R.int(a, b), N = (e, prompt, answer, explain, unit) => mkNumber({ prompt, visual: bigEmoji(e), answer, explain, unit, key: 'advr' + prompt });
+  const t = R.int(0, 4);
+  if (lv === 1) {
+    if (t === 0) { const a = I(3, 9), b = I(2, 9); return N('👢', `Im Stiefel liegen ${a} Nüsse und ${b} Mandarinen. Wie viele Sachen liegen im Stiefel?`, a + b, `${a} + ${b} = ${a + b}`); }
+    if (t === 1) { const a = I(8, 20), b = I(2, 7); return N('🍪', `Auf dem Teller liegen ${a} Plätzchen. Du isst ${b} davon. Wie viele bleiben übrig?`, a - b, `${a} − ${b} = ${a - b}`); }
+    if (t === 2) { const a = I(4, 10), b = I(3, 10); return N('🎄', `Am Baum hängen ${a} rote und ${b} goldene Kugeln. Wie viele Kugeln hängen am Baum?`, a + b, `${a} + ${b} = ${a + b}`); }
+    if (t === 3) { const a = I(1, 3); return N('🕯️', `Am Adventskranz stecken 4 Kerzen. ${a === 1 ? 'Eine brennt' : a + ' brennen'} schon. Wie viele brennen noch nicht?`, 4 - a, `4 − ${a} = ${4 - a}`); }
+    const a = I(6, 14), b = I(2, 5); return N('⛄', `${a} Kinder bauen einen Schneemann. ${b} Kinder kommen dazu. Wie viele Kinder sind es jetzt?`, a + b, `${a} + ${b} = ${a + b}`);
+  }
+  if (lv === 2) {
+    if (t === 0) { const a = I(3, 21); return N('🎁', `Der Adventskalender hat 24 Türchen. ${a} sind schon offen. Wie viele Türchen sind noch zu?`, 24 - a, `24 − ${a} = ${24 - a}`); }
+    if (t === 1) { const a = I(2, 5), b = R.pick([2, 5, 10, 3, 4]); return N('🍪', `Oma backt ${a} Bleche Plätzchen. Auf jedem Blech liegen ${b} Stück. Wie viele Plätzchen sind das?`, a * b, `${a} · ${b} = ${a * b}`); }
+    if (t === 2) { const a = I(45, 98), b = I(12, 38); return N('🌲', `Beim Händler stehen ${a} Tannen. ${b} werden verkauft. Wie viele Tannen stehen noch da?`, a - b, `${a} − ${b} = ${a - b}`); }
+    if (t === 3) { const b = R.pick([2, 3, 4, 5]), k = I(2, 8); return N('⛄', `${b * k} Kinder bauen Schneemänner. Immer ${b} Kinder bauen zusammen einen. Wie viele Schneemänner entstehen?`, k, `${b * k} : ${b} = ${k}`); }
+    const a = I(24, 55), b = I(18, 40); return N('💡', `Eine Lichterkette hat ${a} Lichter, eine zweite hat ${b}. Wie viele Lichter leuchten zusammen?`, a + b, `${a} + ${b} = ${a + b}`);
+  }
+  if (lv === 3) {
+    if (t === 0) { const a = I(2, 4), b = I(3, 9); return N('☕', `Auf dem Weihnachtsmarkt kostet ein Kinderpunsch ${a} €. Ihr kauft ${b} Becher. Wie viel Euro kostet das?`, a * b, `${b} · ${a} € = ${a * b} €`, '€'); }
+    if (t === 1) { const b = R.pick([6, 7, 8, 9]), k = I(6, 12); return N('🍪', `Die Bäckerei backt ${b * k} Plätzchen und packt immer ${b} in eine Tüte. Wie viele Tüten werden voll?`, k, `${b * k} : ${b} = ${k}`); }
+    if (t === 2) { const a = I(320, 900), b = I(120, a - 60); return N('⭐', `Die Schule will ${a} Sterne basteln. ${b} hängen schon. Wie viele Sterne fehlen noch?`, a - b, `${a} − ${b} = ${a - b}`); }
+    if (t === 3) { const n = I(2, 5), p = I(4, 9), a = n * p + I(5, 30); return N('🎁', `Du hast ${a} € gespart. Du kaufst ${n} Geschenke für je ${p} €. Wie viel Euro bleiben übrig?`, a - n * p, `${n} · ${p} € = ${n * p} €, ${a} € − ${n * p} € = ${a - n * p} €`, '€'); }
+    const a = I(6, 12) * 10, b = I(3, 8); return N('🛷', `Der Rodelhang ist ${a} Meter lang. Du fährst ${b}-mal hinunter. Wie viele Meter rodelst du insgesamt?`, a * b, `${b} · ${a} m = ${a * b} m`, 'm');
+  }
+  if (t === 0) { const b = R.pick([6, 7, 8, 9]), a = b * I(20, 45) + I(1, b - 1); return N('🍪', `Für das Schulfest werden ${a} Plätzchen gebacken. Sie werden gerecht auf ${b} Klassen verteilt. Wie viele Plätzchen bleiben übrig?`, a % b, `${a} : ${b} = ${Math.floor(a / b)} Rest ${a % b}`); }
+  if (t === 1) { const p = I(18, 35), n = I(12, 40); return N('🌲', `Ein Tannenbaum kostet ${p} €. Der Händler verkauft am Samstag ${n} Bäume. Wie viel Euro nimmt er ein?`, p * n, `${n} · ${p} € = ${p * n} €`, '€'); }
+  if (t === 2) { const a = I(1200, 4800), b = I(1500, 4900); return N('🎡', `Auf dem Weihnachtsmarkt waren am Samstag ${fmtN(a)} Besucher und am Sonntag ${fmtN(b)}. Wie viele Besucher waren es zusammen?`, a + b, `${fmtN(a)} + ${fmtN(b)} = ${fmtN(a + b)}`); }
+  if (t === 3) { const a = I(4, 9) * 20, n = I(6, 12), k = I(15, 60); return N('💡', `Eine Lichterkette hat ${a} Lichter. Die Stadt hängt ${n} Ketten auf. ${k} Lichter sind kaputt. Wie viele Lichter leuchten?`, a * n - k, `${n} · ${a} = ${a * n}, ${a * n} − ${k} = ${a * n - k}`); }
+  const d = R.pick([15, 16, 17, 18, 19, 20, 22, 23]); return N('📅', `Bis Heiligabend sind es noch ${d} Tage. Wie viele volle Wochen sind das?`, Math.floor(d / 7), `${d} : 7 = ${Math.floor(d / 7)} Rest ${d % 7}. Eine Woche hat 7 Tage.`);
+}
+
+
+function advParentsHTML() {
+  const an = advOn(), p = advPhase(), n = Object.keys(advS().o).length;
+  return `<section class="card"><h2>Adventskalender</h2>
+    <p class="muted">Vom 1. bis 24. Dezember gibt es jeden Tag ein Türchen: drei Aufgaben, dann eine kleine Überraschung und ein neues Teil für das Winterbild. Verpasste Türchen lassen sich bis zum 6. Januar nachholen. ${p && p.ph !== 'vor' ? `Stand: <b>${n} von 24</b> offen.` : 'Ab dem 24. November zählt die Startseite die Tage herunter.'}</p>
+    <div class="row"><span class="lab">Adventskalender zeigen<small>aus: keine Karte auf der Startseite</small></span><button class="switch ${an ? 'on' : ''}" role="switch" aria-checked="${an}" aria-label="Adventskalender zeigen" data-act="advsw"></button></div>
+    <div class="row"><span class="lab">Vorschau<small>alle 24 Türchen ansehen, nichts wird gespeichert</small></span><button class="btn ghost sm" data-act="advvor">🎄 Ansehen</button></div>
+  </section>`;
+}
+
+
+(() => {
+  if (typeof GAMES !== 'undefined' && !GAMES.winterrechnen) GAMES.winterrechnen = { id: 'winterrechnen', w: 'mathe', g: 'm-sach', t: 'Winter-Rechnen', d: 'Rechengeschichten aus dem Advent', i: '⛄', gen: advGenRechnen, max: 4, start: [1, 2, 3, 4], klv: [1, 2, 3, 4] };
+  Object.assign(ACT, {
+    advopen: () => { Sound.unlock(); Sound.tap(); ADV_VOR = null; showAdvent(); },
+    advdoor: t => {
+      const d = parseInt(t.dataset.d, 10); if (!ADV[d]) return;
+      const o = advOffen(), tag = advTag();
+      if (o[d]) { Sound.tap(); return advZeige(d); }
+      if (d > tag) { Sound.tap(); return toast(`Türchen ${d} öffnet sich am ${d}. Dezember.`); }
+      if (ADV_VOR) { ADV_VOR.o[d] = 'vorschau'; Sound.good(); showAdvent(d); return advZeige(d); }
+      Sound.tap();
+      overlay(`<div class="adv-ov">${mascot('wow')}<h2>Türchen ${d}</h2><p>Löse drei Aufgaben, dann springt das Türchen auf!</p><div class="acts"><button class="btn" data-act="advgo" data-d="${d}">Los geht’s ▶</button><button class="btn ghost" data-act="closeov">Später</button></div></div>`);
+    },
+    advgo: t => {
+      const d = parseInt(t.dataset.d, 10); closeOverlay(); if (!ADV[d] || d > advTag() || advS().o[d]) return showAdvent();
+      Sound.unlock(); G = newG('advent', 'advent', { g: { t: 'Adventskalender', w: null }, n: 3, back: null, adv: d }); nextQuestion();
+    },
+    advbild: t => showAdvent(parseInt(t.dataset.d, 10) || 0),
+    advsay: t => { const A = ADV[parseInt(t.dataset.d, 10)]; if (A) Speech.say(advTxt(A.x), 'de-DE', t); },
+    advloes: t => { const A = ADV[parseInt(t.dataset.d, 10)]; if (!A || !A.a) return; Sound.good(); const p = document.createElement('p'); p.className = 'adv-la'; p.textContent = 'Lösung: ' + A.a; t.replaceWith(p); },
+    advsw: t => { S.settings.advent = !advOn(); save(); t.classList.toggle('on', advOn()); t.setAttribute('aria-checked', advOn()); },
+    advvor: () => { ADV_VOR = { o: {} }; showAdvent(); },
+    advvorend: () => { ADV_VOR = null; showParents(); }
+  });
+  const quitAlt = ACT.quityes;
+  ACT.quityes = function () { if (G && G.mode === 'advent') { stopTimers(); G = null; return showAdvent(); } return quitAlt.apply(this, arguments); };
+  if (typeof TROPHIES !== 'undefined') TROPHIES.push({ id: 'adventsstern', e: '🌟', t: 'Adventsstern', d: 'Alle 24 Türchen im Adventskalender geöffnet', c: s => !!(s.advent && isObj(s.advent.o) && Object.keys(s.advent.o).length >= 24) });
+})();
 
 /*@@src lumi_live.js@@*/
 
