@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="generator" content="lernwelt-freunde-app">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-0tB+/TeZwMHLACxKQpbXCPbQdNzDFw6rED0yc5tLENA=' 'sha256-WJ8yATbwpMvxw61XST2ccVHqwkMZ1zyPUEul6AE79gg=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-yvsWrPAkX+c4uU2ly1kVvaIgH4u8DFk8aWqDtj960qA=' 'sha256-Ur/KkzS99QkWzwyQL6Dpf3ZYLY6yjb+70gq4i6Evojg=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -3162,6 +3162,32 @@ body.calm .adv-res .adv-fl1 { display: none; }
 .alce-lied b { color: var(--ink); font-size: 1.15em; }
 .alce-st.yase { box-shadow: inset 0 0 0 2px #f5c518; background: #fffbe6; }
 
+/* ---- style_antwort.css ---- */
+
+.pan-card { display: flex; align-items: center; gap: 14px; width: 100%; text-align: left; margin: 10px 0 4px; border: 0; cursor: pointer; font: inherit; color: #fff; background: linear-gradient(120deg, #d6336c, #a61e4d); box-shadow: 0 6px 0 #7a1238; }
+.pan-card:active { transform: translateY(3px); box-shadow: 0 3px 0 #7a1238; }
+.pan-ci { font-size: 44px; line-height: 1; animation: panHuepf 1.6s ease-in-out infinite; }
+@keyframes panHuepf { 0%, 60%, 100% { transform: translateY(0); } 75% { transform: translateY(-7px); } 88% { transform: translateY(0); } }
+body.calm .pan-ci { animation: none; }
+@media (prefers-reduced-motion: reduce) { .pan-ci { animation: none; } }
+.pan-ct { display: flex; flex-direction: column; gap: 2px; min-width: 0; flex: 1; }
+.pan-ct small { font-size: 13px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; opacity: .9; }
+.pan-ct b { font-size: 20px; line-height: 1.2; }
+.pan-ct span { font-size: 15px; opacity: .97; overflow-wrap: anywhere; }
+.pan-cn { font-weight: 900; font-size: 16px; background: rgba(255, 255, 255, .22); border-radius: 999px; padding: 8px 14px; white-space: nowrap; }
+.pan-chat, .pan-ovl { display: flex; flex-direction: column; gap: 10px; }
+.pan-ovl { max-height: 46vh; overflow-y: auto; margin: 6px 0 4px; text-align: left; }
+.pan-b { max-width: 86%; padding: 10px 14px; border-radius: 18px; background: var(--surface); border: 2px solid var(--line); }
+.pan-b p { margin: 0; font-size: 18px; line-height: 1.35; overflow-wrap: anywhere; }
+.pan-b b { display: block; font-size: 13px; letter-spacing: .03em; text-transform: uppercase; color: #a61e4d; margin-bottom: 2px; }
+.pan-b small { display: block; margin-top: 4px; font-size: 12px; opacity: .7; }
+.pan-papa { align-self: flex-start; border-color: #f3b6cb; background: #fff0f5; color: #3b1222; border-bottom-left-radius: 6px; }
+.pan-ich { align-self: flex-end; border-bottom-right-radius: 6px; }
+.pan-ovl .pan-b { max-width: 100%; align-self: stretch; }
+.mu-nchip { position: relative; }
+.pan-dot { position: absolute; top: -3px; right: -3px; width: 14px; height: 14px; border-radius: 50%; background: #e03131; border: 2px solid #fff; }
+@media (max-width: 480px) { .pan-ci { font-size: 36px; } .pan-ct b { font-size: 18px; } .pan-cn { padding: 6px 10px; font-size: 14px; } }
+
 /* ---- style_art254.css ---- */
 
 .gf-big { display: flex; justify-content: center; }
@@ -5384,6 +5410,41 @@ mark.ffl-hl { background: #ffe066; color: #1d2440; border-radius: 5px; padding: 
 .h28b-luside .h28b-msg { min-height: 3.9em; }
 @media (max-width: 480px) { .h28b-lupl { grid-template-columns: 1fr; gap: 4px; } .h28b-bar { gap: 6px; } .h28b-bar .btn.sm { padding: 0 11px; font-size: 15px; } .h28b-info { font-size: 15px; } .h28b-msg { font-size: 15px; } .h28b-pickbtn { width: 150px; } .h28b-lup { padding: 4px 8px; } .h28b-lup small { font-size: 13px; } }
 @media (prefers-reduced-motion: reduce) { .h28b-die.ready, .h28b-lupc.can, .h28b-exit span, .h28b-wait { animation: none; } }
+
+/* ---- style_ka.css ---- */
+
+.ka-entry { display: flex; align-items: center; gap: 14px; width: 100%; text-align: left; margin: 0 0 34px; border: 2px dashed var(--line-deep); cursor: pointer; font: inherit; color: inherit; background: var(--surface); }
+.topics + .ka-entry { margin-top: -18px; }
+.ka-ei { font-size: 40px; line-height: 1; }
+.ka-et { display: flex; flex-direction: column; gap: 2px; min-width: 0; flex: 1; }
+.ka-et b { font-size: 20px; }
+.ka-et span { font-size: 15px; opacity: .85; }
+.ka-page { display: grid; gap: 16px; padding-bottom: 40px; }
+.ka-say { display: flex; align-items: center; gap: 14px; }
+.ka-say .mascot, .ka-say svg { flex: 0 0 auto; width: 84px; height: auto; }
+.ka-say p { margin: 0; font-size: 18px; line-height: 1.45; }
+.ka-chips { display: flex; flex-wrap: wrap; gap: 10px; margin: 6px 0 12px; }
+.ka-chip { font: inherit; font-weight: 700; font-size: 17px; min-height: 48px; padding: 8px 14px; border-radius: 999px; border: 3px solid var(--line); background: var(--surface); color: inherit; cursor: pointer; opacity: .7; }
+.ka-chip.sel { border-color: var(--w, #2a6bd6); background: var(--w-soft, #e7f0ff); opacity: 1; }
+.ka-chip.sel::after { content: ' ✓'; font-weight: 900; }
+.ka-h2 { margin-top: 18px; }
+.ka-seg { max-width: 300px; }
+.ka-res .ka-box { text-align: left; margin: 14px auto 0; max-width: 720px; width: 100%; }
+.ka-themen { display: grid; gap: 8px; }
+.ka-themen > div { display: flex; justify-content: space-between; gap: 12px; font-size: 17px; }
+.ka-fl { display: grid; gap: 12px; }
+.ka-f { display: flex; gap: 12px; align-items: flex-start; padding: 12px; border-radius: 16px; border: 2px solid var(--line); background: var(--surface); }
+.ka-fn { flex: 0 0 30px; height: 30px; border-radius: 50%; background: var(--bad-soft, #ffe3e3); color: var(--bad-deep, #a51d1d); font-weight: 900; display: grid; place-items: center; }
+.ka-f > div { min-width: 0; flex: 1; }
+.ka-fp { margin: 0 0 6px; font-weight: 700; font-size: 17px; }
+.ka-fv { max-height: 170px; overflow: auto; margin: 0 0 6px; font-size: 15px; zoom: .7; }
+.ka-fs { margin: 0; font-size: 17px; }
+.ka-fs b { color: var(--ok-deep, #1a7f37); }
+.ka-fe { margin: 4px 0 0; font-size: 15px; opacity: .85; }
+@media (max-width: 480px) { .ka-say { flex-direction: column; text-align: center; } .ka-ei { font-size: 32px; } }
+.tt-btns .tt-big-btn:nth-child(3) { grid-column: 1 / -1; }
+.ka-page .acts { margin-top: 16px; }
+.ka-page #kahin { margin: 12px 0 0; }
 
 /* ---- style_kt.css ---- */
 
@@ -8374,8 +8435,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '2.63.0';
-  var MAP = {"probe":0,"files":[[8364,"fehler_kern.js"],[8652,null],[8654,"data.js"],[9349,"data_more.js"],[9703,"data_su2.js"],[9924,"data_es.js"],[10263,"data_wissen.js"],[10445,"data_v21.js"],[11069,"data_v24.js"],[11520,"data_v25.js"],[11968,"data_v26.js"],[12067,"data_v29.js"],[12372,"data_v30.js"],[12696,"data_v31.js"],[12996,"data_kunst.js"],[13192,"data_v214.js"],[13295,"data_v216.js"],[13588,"schrift.js"],[13888,"eingabe.js"],[14099,"data_k34m.js"],[14617,"data_k34d.js"],[14950,"data_k34s.js"],[15339,"data_v224.js"],[16207,"data_v225w.js"],[16576,"data_v225k.js"],[17020,"data_herz.js"],[17374,"data_fb226.js"],[17517,"data_tf226.js"],[17724,"data_v227a.js"],[18815,"data_v227b.js"],[19769,"data_h28b.js"],[19809,"data_l28a.js"],[20675,"data_l28b.js"],[21855,"data_schaetz.js"],[22337,"data_party8.js"],[22387,"data_alce.js"],[23047,"data_alce2.js"],[23296,"data_alce3.js"],[23711,"registry.js"],[24225,"app.js"],[25365,"fun.js"],[25945,"fun2.js"],[26261,"atelier.js"],[26635,"kunst225.js"],[26825,"herz.js"],[27189,"reise.js"],[27491,"iglu.js"],[27657,"offline.js"],[27764,"party.js"],[28248,"meine.js"],[28604,"loeffel.js"],[28775,"trend.js"],[29317,"fun228a.js"],[30168,"fun228b.js"],[30829,"kueche.js"],[31868,"stimme.js"],[31923,"klassen.js"],[32072,"freunde_vorab.js"],[32093,"mut.js"],[32515,"schule.js"],[33004,"fussball226.js"],[33326,"schaetzen.js"],[33757,"party8.js"],[34376,"tiere.js"],[34835,"fussball232.js"],[35050,"party8b.js"],[35352,"weg.js"],[35572,"px.js"],[35983,"px_data.js"],[36240,"pxwelt.js"],[36321,"px_abenteuer.js"],[37122,"px_abenteuer2.js"],[37871,"px_ski.js"],[38513,"px_wurf.js"],[39042,"px_insel.js"],[40243,"px_kicker.js"],[41178,"px_eis.js"],[42164,"px_run.js"],[43379,"px_brk.js"],[44341,"px_pol.js"],[45692,"px_frog.js"],[46952,"px_angel.js"],[48267,"px_golf.js"],[49301,"px_tauch.js"],[50566,"px_hockey.js"],[51522,"px_lab.js"],[52857,"px_plopp.js"],[54063,"px_stadion.js"],[55567,"px_training.js"],[55936,"cm.js"],[56426,"cmwelt.js"],[56482,"cm_baeck.js"],[57275,"cm_bahn.js"],[58039,"cm_detek.js"],[58756,"cm_markt.js"],[59469,"ff.js"],[59626,"ff_mathe.js"],[61616,"ff_deutsch.js"],[63204,"ff_sach_a.js"],[65453,"ff_sach_b.js"],[67682,"ff_sprachen.js"],[70090,"zm.js"],[71003,"tt.js"],[71216,"data_tagebuch.js"],[71259,"data_hoerspiel.js"],[71418,"leseecke.js"],[71737,"kt.js"],[72040,"comicbuch.js"],[72318,"alce.js"],[72481,"alce_aufg.js"],[72651,"formen.js"],[73102,"data_formen.js"],[73343,"data_formen2.js"],[73565,"spielzeit.js"],[73710,"data_faktmeinung.js"],[73829,"data_es248.js"],[74093,"data_en249.js"],[74327,"data_wissen249.js"],[74667,"data_kunst249.js"],[74913,"data_fussball250.js"],[75037,"data_werte252.js"],[75280,"data_lesen252.js"],[75341,"data_k34_252.js"],[75427,"art254.js"],[75545,"data_werte255.js"],[75670,"data_lesen255.js"],[75806,"forscher255.js"],[75954,"zufall250.js"],[76000,"stufe259.js"],[76009,"advent.js"],[76272,"wdh.js"],[76370,"denk.js"],[76407,"lumi_live.js"],[76523,"sicher.js"],[76707,"stil.js"],[76761,"freunde.js"],[76898,"start.js"],[76908,null],[76918,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '2.64.0';
+  var MAP = {"probe":0,"files":[[8425,"fehler_kern.js"],[8713,null],[8715,"data.js"],[9410,"data_more.js"],[9764,"data_su2.js"],[9985,"data_es.js"],[10324,"data_wissen.js"],[10506,"data_v21.js"],[11130,"data_v24.js"],[11581,"data_v25.js"],[12029,"data_v26.js"],[12128,"data_v29.js"],[12433,"data_v30.js"],[12757,"data_v31.js"],[13057,"data_kunst.js"],[13253,"data_v214.js"],[13356,"data_v216.js"],[13649,"schrift.js"],[13949,"eingabe.js"],[14160,"data_k34m.js"],[14678,"data_k34d.js"],[15011,"data_k34s.js"],[15400,"data_v224.js"],[16268,"data_v225w.js"],[16637,"data_v225k.js"],[17081,"data_herz.js"],[17435,"data_fb226.js"],[17578,"data_tf226.js"],[17785,"data_v227a.js"],[18876,"data_v227b.js"],[19830,"data_h28b.js"],[19870,"data_l28a.js"],[20736,"data_l28b.js"],[21916,"data_schaetz.js"],[22398,"data_party8.js"],[22448,"data_alce.js"],[23108,"data_alce2.js"],[23357,"data_alce3.js"],[23772,"registry.js"],[24286,"app.js"],[25432,"fun.js"],[26012,"fun2.js"],[26328,"atelier.js"],[26702,"kunst225.js"],[26892,"herz.js"],[27256,"reise.js"],[27558,"iglu.js"],[27724,"offline.js"],[27831,"party.js"],[28315,"meine.js"],[28671,"loeffel.js"],[28842,"trend.js"],[29384,"fun228a.js"],[30235,"fun228b.js"],[30896,"kueche.js"],[31935,"stimme.js"],[31990,"klassen.js"],[32139,"freunde_vorab.js"],[32160,"mut.js"],[32582,"schule.js"],[33071,"fussball226.js"],[33393,"schaetzen.js"],[33824,"party8.js"],[34443,"tiere.js"],[34902,"fussball232.js"],[35117,"party8b.js"],[35419,"weg.js"],[35639,"px.js"],[36050,"px_data.js"],[36307,"pxwelt.js"],[36388,"px_abenteuer.js"],[37189,"px_abenteuer2.js"],[37938,"px_ski.js"],[38580,"px_wurf.js"],[39109,"px_insel.js"],[40310,"px_kicker.js"],[41245,"px_eis.js"],[42231,"px_run.js"],[43446,"px_brk.js"],[44408,"px_pol.js"],[45759,"px_frog.js"],[47019,"px_angel.js"],[48334,"px_golf.js"],[49368,"px_tauch.js"],[50633,"px_hockey.js"],[51589,"px_lab.js"],[52924,"px_plopp.js"],[54130,"px_stadion.js"],[55634,"px_training.js"],[56003,"cm.js"],[56493,"cmwelt.js"],[56549,"cm_baeck.js"],[57342,"cm_bahn.js"],[58106,"cm_detek.js"],[58823,"cm_markt.js"],[59536,"ff.js"],[59693,"ff_mathe.js"],[61683,"ff_deutsch.js"],[63271,"ff_sach_a.js"],[65520,"ff_sach_b.js"],[67749,"ff_sprachen.js"],[70157,"zm.js"],[71070,"tt.js"],[71283,"data_tagebuch.js"],[71326,"data_hoerspiel.js"],[71485,"leseecke.js"],[71804,"kt.js"],[72107,"comicbuch.js"],[72385,"alce.js"],[72548,"alce_aufg.js"],[72718,"formen.js"],[73169,"data_formen.js"],[73410,"data_formen2.js"],[73632,"spielzeit.js"],[73777,"data_faktmeinung.js"],[73896,"data_es248.js"],[74160,"data_en249.js"],[74394,"data_wissen249.js"],[74734,"data_kunst249.js"],[74980,"data_fussball250.js"],[75104,"data_werte252.js"],[75347,"data_lesen252.js"],[75408,"data_k34_252.js"],[75494,"art254.js"],[75612,"data_werte255.js"],[75737,"data_lesen255.js"],[75873,"forscher255.js"],[76021,"zufall250.js"],[76067,"stufe259.js"],[76076,"advent.js"],[76339,"wdh.js"],[76437,"denk.js"],[76474,"klassenarbeit.js"],[76607,"lumi_live.js"],[76723,"sicher.js"],[76907,"stil.js"],[76961,"freunde.js"],[77098,"start.js"],[77108,null],[77118,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -24226,8 +24287,9 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '2.63.0';
+const APP_VERSION = '2.64.0';
 const CHANGELOG = [
+  { v: "2.64.0", d: "11.11.2026", t: ["Neu: die Probearbeit. In Mathe, Deutsch, Sachunterricht, Englisch und Spanisch steht sie unter den Themen. Themen und Länge wählen, alles ohne Hilfe lösen. Was richtig war, steht erst am Ende", "Danach kommt die Berichtigung: die falschen Aufgaben noch einmal, jetzt mit Erklärung. Neuer Pokal „Gut vorbereitet“ für 5 Probearbeiten"] },
   { v: "2.63.0", d: "11.11.2026", t: ["Neu: Wiederholen mit Abstand. Was im Fehler-Trainer richtig gelöst wurde, kommt nach 1 Tag, nach 3 Tagen und nach 7 Tagen noch einmal. So bleibt es im Kopf", "Ist etwas dran, zeigt die Startseite die blaue Karte „Weißt du es noch?“. Neuer Pokal „Gedächtnis-Profi“ für 10 sicher gelernte Aufgaben", "Neu: Erst denken, dann sehen. Beim Wiederholen und in Stufe 2 der Wissensspiele sind die Antworten bei manchen Fragen zuerst verdeckt"] },
   { v: "2.62.0", d: "11.11.2026", t: ["Jetzt sind auch Wissen, Werte & Normen, Kunst & Musik und die Spiele rund um Fußball, Freundschaft und Mut kniffliger: 1.595 Fragen haben neue falsche Antworten, die auch stimmen könnten", "99 weitere Spiele haben eine Stufe 2 mit vier Antworten. Wer drei Sterne schafft, bekommt beim nächsten Mal die schwerere Runde"] },
   { v: "2.61.0", d: "11.11.2026", t: ["Sachunterricht für Klasse 3 und 4 wird kniffliger: weitere 946 Fragen haben neue falsche Antworten, die auch stimmen könnten", "18 weitere Spiele haben eine Stufe 2 mit vier Antworten. Die Fordern-Spiele zeigen bei Wissensfragen jetzt vier Antworten"] },
@@ -24592,6 +24654,7 @@ function showHome() {
     <main class="wrap home2" style="padding-block:6px 0">
       ${safeCard(hzBanner)}
       ${typeof advHomeCard === 'function' ? safeCard(advHomeCard) : ''}
+      ${typeof panHomeCard === 'function' ? safeCard(panHomeCard) : ''}
       ${typeof wdhHomeCard === 'function' ? safeCard(wdhHomeCard) : ''}
       ${typeof homeHint === 'function' ? safeCard(homeHint) : ''}
       ${typeof ttHomeCard === 'function' ? safeCard(ttHomeCard) : ''}
@@ -24666,7 +24729,7 @@ function showWorld(wid, top) {
       <div><h1>${w.name}</h1><p>${w.tag}</p></div><div class="art">${ART[wid]}</div></div></header>
     <main class="wrap">${okN || vor.length ? klWorldBar(okN, 0) : klEmptyWorld(wid)}
       ${groups.length || vor.length ? `<h2 class="tp-h">Wähle ein Thema</h2>` : ''}
-      <div class="topics">${typeof ffTileHTML === 'function' ? ffTileHTML(wid) : ''}${groups.map(gr => topicTile(gr, okOf(gr), wid)).join('')}${vor.length ? topicTile('vor:' + wid, vor, wid) : ''}</div></main>`, wid);
+      <div class="topics">${typeof ffTileHTML === 'function' ? ffTileHTML(wid) : ''}${groups.map(gr => topicTile(gr, okOf(gr), wid)).join('')}${vor.length ? topicTile('vor:' + wid, vor, wid) : ''}</div>${typeof kaWorldBtn === 'function' ? kaWorldBtn(wid) : ''}</main>`, wid);
 }
 
 const normQ = s => String(s).toLowerCase().replace(/ß/g, 'ss').replace(/ae/g, 'a').replace(/oe/g, 'o').replace(/ue/g, 'u').normalize('NFD').replace(/[\u0300-\u036f]/g, '');
@@ -24782,6 +24845,7 @@ function nextQuestion() {
   if (G.mode === 'trainer' || G.mode === 'wdh') { const it = G.queue[G.i]; G.qg = it.g; G.q = it.q; }
   else if (G.mode === 'mix') { G.qg = pickMixGame(); G.q = genFor(G.qg); }
   else if (G.mode === 'tt') { G.qg = ttNext(); G.q = genFor(G.qg); }
+  else if (G.mode === 'ka') { const k = kaNext(); G.qg = k.id; G.q = k.q; }
   else if (G.mode === 'advent') { G.qg = G.i === 0 && GAMES.winterrechnen ? 'winterrechnen' : pickMixGame(); G.q = genFor(G.qg); }
   else { G.qg = G.id; G.q = genFor(G.id, G.lv); }
   G.answered = false; G.typed = ''; G.pos = 0; G.miss = 0; G.tl = null; G.col = null; G.tried = false; G.clearNext = false;
@@ -24790,7 +24854,7 @@ function nextQuestion() {
 function gameBar(right) {
   return `<header class="wrap gamebar"><button class="icon-btn" data-act="quit" aria-label="Spiel beenden">✕</button>
     <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="${G.n}" aria-valuenow="${G.i}"><i style="width:${G.i / G.n * 100}%"></i><span class="tnum">${Math.min(G.i + 1, G.n)} / ${G.n}</span></div>
-    <span class="round-pts tnum" id="rpts">${right || '⭐ ' + G.pts}</span></header>`;
+    <span class="round-pts tnum" id="rpts">${right || (G.arbeit ? '📝' : '⭐ ' + G.pts)}</span></header>`;
 }
 function answersHTML(q) {
   if (q.kind === 'choice') return `<div class="answers l-${q.layout}">${q.options.map((o, i) => `<button class="opt" data-act="opt" data-i="${i}">${o.html}</button>`).join('')}</div>`;
@@ -24806,7 +24870,7 @@ function renderQuestion() {
   const q = G.q, wid = GAMES[G.qg].w;
   const canSay = S.settings.speech && Speech.ok;
   const isFF = !!(GAMES[G.qg] && GAMES[G.qg].ff && typeof ffTagHTML === 'function');
-  const tag = G.mode === 'tt' && isFF ? ffTagHTML(q) : G.mode === 'mix' || G.mode === 'trainer' || G.mode === 'wdh' || G.mode === 'tt' || G.mode === 'advent' ? `<span class="q-from" data-world="${wid}">${giHTML(GAMES[G.qg])} ${GAMES[G.qg].t}</span>` : isFF ? ffTagHTML(q) : klVorTag(G.id);
+  const tag = G.mode === 'tt' && isFF ? ffTagHTML(q) : G.mode === 'mix' || G.mode === 'trainer' || G.mode === 'wdh' || G.mode === 'tt' || G.mode === 'ka' || G.mode === 'advent' ? `<span class="q-from" data-world="${wid}">${giHTML(GAMES[G.qg])} ${GAMES[G.qg].t}</span>` : isFF ? ffTagHTML(q) : klVorTag(G.id);
   const split = q.kind === 'choice' || q.kind === 'number';
   setView(`<div class="game ${Speech.ok ? '' : 'no-speech'}" id="gameRoot" ${langOf(G.qg) === 'es' ? 'lang="es"' : ''}>${gameBar()}
     <main class="wrap stage ${split ? 'split' : ''} ${q.kind === 'trace' ? 'tracing' : ''}">
@@ -24839,6 +24903,7 @@ function answer(ok, second = false) {
   else if (!G.q.noMist) noteMistake(ok && !second);
   if (GAMES[G.qg] && GAMES[G.qg].ff && typeof ffAfterAnswer === 'function') ffAfterAnswer(ok && !second);
   save();
+  if (G.arbeit && typeof kaAntwort === 'function') return kaAntwort(ok && !second);
   ok ? Sound.good() : Sound.bad();
   const root = $('#gameRoot'); if (root) root.classList.add('answered');
   const rp = $('#rpts'); if (rp) { rp.textContent = `⭐ ${G.pts}`; if (ok) { rp.classList.remove('burst'); void rp.offsetWidth; rp.classList.add('burst'); } }
@@ -25084,6 +25149,7 @@ function finishRound(extra = {}) {
 function showResult(r) {
   const mode = G.mode, isMem = mode === 'memory';
   if (mode === 'advent' && typeof advResult === 'function') return advResult(r);
+  if (mode === 'ka' && typeof kaResult === 'function') return kaResult(r);
   const wid = G.g.w || null;
   const head = mode === 'blitz' ? (r.blitz.record ? 'Neuer Rekord!' : 'Zeit ist um!') : r.stars === 3 ? (isMem || G.ok === G.n ? 'Perfekt!' : 'Super gemacht!') : r.stars === 2 ? 'Gut gemacht!' : 'Geschafft!';
   const sub = mode === 'blitz' ? `${plural(r.blitz.count, 'Aufgabe', 'Aufgaben')} in 60 Sekunden richtig${r.blitz.prev && !r.blitz.record ? ` · Rekord: ${r.blitz.prev}` : ''}` : isMem && G.custom ? esc(G.resText || `${plural(G.ok, 'Aufgabe', 'Aufgaben')} geschafft`) : isMem ? `Alle 6 Paare in ${r.memoryMoves} Zügen gefunden` : `${G.ok + (G.half || 0)} von ${G.n} richtig${G.half ? ` (${G.half} im zweiten Versuch)` : ''}`;
@@ -25221,6 +25287,7 @@ function showParents(notice = '') {
     ${offSectionHTML()}
     ${typeof fpParentsHTML === 'function' ? fpParentsHTML() : ''}
     ${typeof spzParentsHTML === 'function' ? spzParentsHTML() : ''}
+    ${typeof kaParentsHTML === 'function' ? kaParentsHTML() : ''}
     ${typeof wdhParentsHTML === 'function' ? wdhParentsHTML() : ''}
     ${typeof denkParentsHTML === 'function' ? denkParentsHTML() : ''}
     ${typeof advParentsHTML === 'function' ? advParentsHTML() : ''}
@@ -35484,7 +35551,7 @@ function quitAsk() {
   const acts = (a, b) => `<div class="acts"><button class="btn" data-act="closeov">${a}</button><button class="btn ghost" data-act="quityes">${b}</button></div>`;
   if (!G || S.settings.quitHint === false) return overlay(`${mascot('oops')}<h2>Spiel beenden?</h2><p class="muted">Die Punkte aus dieser Runde zählen dann nicht.</p>${acts('Weiterspielen', 'Beenden')}`);
   const station = G.weg ? `<p class="qh-weg">👣 Danach ist Station ${G.weg} von ${esc(gen(M()))} Tagesweg geschafft.</p>` : '';
-  const counted = !G.custom && (G.mode === 'game' || G.mode === 'mix' || G.mode === 'trainer' || G.mode === 'wdh') && G.n > 0;
+  const counted = !G.custom && (G.mode === 'game' || G.mode === 'mix' || G.mode === 'trainer' || G.mode === 'wdh' || G.mode === 'ka') && G.n > 0;
   if (counted) {
     const done = Math.min(G.n, G.i + (G.answered ? 1 : 0)), left = G.n - done;
     if (done === 0) return ACT.quityes();
@@ -71123,7 +71190,7 @@ function showTT(id) {
       ${ttDots(T)}
       <div class="tt-btns">
         ${n >= 0 ? `<button class="tt-big-btn" data-act="ttgo" data-id="${T.id}" data-k="${n === 0 ? 'w' : 't'}"><span>▶</span><b>${n === 0 ? 'Kurz aufwärmen' : 'Tages-Training'}</b><small>${n === 0 ? '5 Aufgaben' : `${S.settings.roundLen || 10} Aufgaben · ${ttDoneToday(T) ? 'heute schon geschafft ✓' : 'heute noch offen'}`}</small></button>
-        <button class="tt-big-btn probe ${n === 1 ? 'rec' : ''}" data-act="ttgo" data-id="${T.id}" data-k="p"><span>🎯</span><b>Generalprobe</b><small>12 Aufgaben ohne Hilfe, wie im echten Test${n === 1 ? ' · heute empfohlen!' : ''}</small></button>` : ''}
+        <button class="tt-big-btn probe ${n === 1 ? 'rec' : ''}" data-act="ttgo" data-id="${T.id}" data-k="p"><span>🎯</span><b>Generalprobe</b><small>12 Aufgaben ohne Hilfe, wie im echten Test${n === 1 ? ' · heute empfohlen!' : ''}</small></button>${typeof kaStart === 'function' ? `<button class="tt-big-btn probe" data-act="kago" data-tt="${T.id}"><span>📝</span><b>Probearbeit</b><small>15 Aufgaben, die Lösung gibt es erst am Ende</small></button>` : ''}` : ''}
       </div>
       ${lastP ? `<p class="muted tt-lastp">Letzte Generalprobe (${ttDate(lastP.d).toLocaleDateString('de-DE', { weekday: 'short', day: 'numeric', month: 'numeric' })}): ${lastP.ok} von ${lastP.n} richtig</p>` : ''}
       <h2 class="tt-h2">Das kommt im Test dran</h2>
@@ -76402,6 +76469,139 @@ function denkParentsHTML() {
     denkzeig: () => { const w = document.getElementById('denkWrap'); if (!w || !G || !G.q || G.answered) return; Sound.tap(); w.outerHTML = answersHTML(G.q); },
     denksw: t => { S.settings.denk = !denkOn(); save(); t.classList.toggle('on', denkOn()); t.setAttribute('aria-checked', denkOn()); }
   });
+})();
+
+/*@@src klassenarbeit.js@@*/
+
+
+
+
+
+
+
+
+const KA_WELTEN = ['mathe', 'deutsch', 'sach', 'englisch', 'spanisch'], KA_LEN = [10, 15, 20];
+var KA_W = '', KA_GR = [], KA_N = 15, KA_LETZT = null;
+function kaS() {
+  if (!isObj(S.ka)) S.ka = {};
+  const K = S.ka;
+  K.l = (Array.isArray(K.l) ? K.l : []).filter(x => isObj(x) && typeof x.t === 'number' && typeof x.w === 'string' && typeof x.n === 'number' && typeof x.ok === 'number').slice(-20);
+  return K;
+}
+const kaOkGame = id => { const g = GAMES[id]; return !!(g && g.gen && !g.type && !g.ff && !g.fo && !g.nomix && klStatus(id) === 'ok'); };
+const kaGames = gr => gamesOfGroup(gr).filter(kaOkGame);
+const kaGroups = w => Object.keys(GROUPS).filter(gr => GROUPS[gr].w === w && kaGames(gr).length);
+const kaNoteAn = () => S.settings.kaNote === true && klasse() >= 3;
+
+const kaNote = r => r >= .92 ? 1 : r >= .81 ? 2 : r >= .67 ? 3 : r >= .5 ? 4 : r >= .3 ? 5 : 6;
+function kaWorldBtn(w) {
+  if (!KA_WELTEN.includes(w) || !kaGroups(w).length) return '';
+  return `<button class="card ka-entry" data-act="kaopen" data-w="${w}" data-world="${w}"><span class="ka-ei" aria-hidden="true">📝</span>
+    <span class="ka-et"><b>Probearbeit</b><span>Üben wie in der Schule: ohne Hilfe, die Lösung gibt es am Ende.</span></span><span class="go" aria-hidden="true">›</span></button>`;
+}
+function showKa(w) {
+  stopTimers(); G = null;
+  if (!KA_WELTEN.includes(w)) return showHome();
+  const grs = kaGroups(w); if (!grs.length) return showWorld(w, true);
+  if (KA_W !== w) { KA_W = w; KA_GR = grs.slice(); }
+  KA_GR = KA_GR.filter(gr => grs.includes(gr));
+  const W = worldById(w), alt = kaS().l.filter(x => x.w === w).slice(-4).reverse();
+  setView(`<header class="pagehead"><div class="wrap">${backBtn('world', `data-w="${w}"`)}<div><h1>📝 Probearbeit</h1><p>${esc(W.name)} · üben wie in der Schule</p></div></div></header>
+    <main class="wrap ka-page">
+      <section class="card ka-say">${mascot('happy')}<p>In einer Probearbeit löst du alle Aufgaben <b>ohne Hilfe</b>. Was richtig war, siehst du erst am Ende. Danach machen wir zusammen die Berichtigung.</p></section>
+      <section class="card"><h2>Welche Themen kommen dran?</h2>
+        <div class="ka-chips">${grs.map(gr => `<button class="ka-chip ${KA_GR.includes(gr) ? 'sel' : ''}" data-act="kagr" data-gr="${gr}" aria-pressed="${KA_GR.includes(gr)}"><span aria-hidden="true">${groupIcon(gr)}</span> ${esc(GROUPS[gr].t)}</button>`).join('')}</div>
+        <div class="pp-btns"><button class="btn sm ghost" data-act="kaalle" data-v="1">Alle</button><button class="btn sm ghost" data-act="kaalle" data-v="0">Keins</button></div>
+        <h2 class="ka-h2">Wie viele Aufgaben?</h2>
+        <div class="seg ka-seg">${KA_LEN.map(n => `<button class="${KA_N === n ? 'sel' : ''}" data-act="kalen" data-n="${n}">${n}</button>`).join('')}</div>
+        <div class="acts"><button class="btn" data-act="kago" ${KA_GR.length ? '' : 'disabled'}>Probearbeit starten ▶</button></div>
+        <p class="muted" id="kahin">${KA_GR.length ? `${plural(KA_GR.length, 'Thema', 'Themen')} gewählt. Nimm dir Zeit, es gibt keinen Zeitdruck.` : 'Wähle mindestens ein Thema.'}</p></section>
+      ${alt.length ? `<section class="card"><h2>Deine letzten Probearbeiten</h2><div class="mu-dlist">${alt.map(x => `<div><span>📝 ${x.ok} von ${x.n} Punkten${kaNoteAn() ? ` · ungefähr Note ${kaNote(x.ok / x.n)}` : ''}</span><small>${new Date(x.t).toLocaleDateString('de-DE', { weekday: 'short', day: 'numeric', month: 'short' })}</small></div>`).join('')}</div></section>` : ''}
+    </main>`, w);
+}
+
+function kaQueue(lists, n) {
+  const L = lists.map(l => R.shuffle(l.slice())).filter(l => l.length), pos = L.map(() => 0), out = [];
+  if (!L.length) return out;
+  const order = R.shuffle(L.map((_, i) => i));
+  for (let k = 0; out.length < n; k++) { const i = order[k % order.length]; out.push(L[i][pos[i]++ % L[i].length]); }
+  return R.shuffle(out);
+}
+function kaStart(lists, n, w, titel) {
+  const q = kaQueue(lists, n); if (!q.length) return toast('Dafür gibt es gerade keine Aufgaben.');
+  Sound.unlock();
+  G = newG('ka', 'ka', { g: { t: titel || 'Probearbeit', w: null }, n: q.length, back: null, kaQ: q, kaLog: [], kaW: w, kaT0: Date.now(), arbeit: true, ttProbe: true });
+  nextQuestion();
+}
+
+function kaNext() {
+  const id = G.kaQ[G.i]; let q = genFor(id);
+  for (let k = 0; k < 6 && q && q.kind === 'trace'; k++) q = genFor(id);
+  return { id, q };
+}
+
+function kaAntwort(ok) {
+  G.kaLog.push({ g: G.qg, q: G.q, ok: !!ok });
+  Sound.tap(); G.i++; nextQuestion();
+}
+function kaResult(r) {
+  const log = G.kaLog || [], n = log.length, ok = log.filter(x => x.ok).length, falsch = log.filter(x => !x.ok), w = G.kaW;
+  const sek = Math.max(1, Math.round((Date.now() - (G.kaT0 || Date.now())) / 1000)), min = Math.max(1, Math.round(sek / 60));
+  const perGr = {}; log.forEach(x => { const gr = GAMES[x.g].g; (perGr[gr] = perGr[gr] || [0, 0])[1]++; if (x.ok) perGr[gr][0]++; });
+  if (!G.kaSaved) { G.kaSaved = 1; const K = kaS(); K.l.push({ t: Date.now(), w: w || '', n, ok, sek, gr: Object.keys(perGr) }); K.l = K.l.slice(-20); save(); }
+  KA_LETZT = falsch.map(x => ({ g: x.g, q: x.q }));
+  const ratio = n ? ok / n : 0, head = ratio >= .9 ? 'Spitze!' : ratio >= .7 ? 'Gut gemacht!' : ratio >= .5 ? 'Geschafft!' : 'Geschafft! Jetzt wissen wir, was wir üben.';
+  const ampel = a => a >= .8 ? '🟢' : a >= .5 ? '🟡' : '🔴';
+  setView(`<div class="result ka-res">${mascot(ratio >= .7 ? 'wow' : 'happy')}
+    <h1>${head}</h1><div class="big-stars">${[0, 1, 2].map(i => starSVG(i < r.stars)).join('')}</div>
+    <p class="res-score">${ok} von ${n} Punkten</p>
+    <div class="pills"><span class="pill">⏱️ ${min === 1 ? '1 Minute' : min + ' Minuten'}</span><span class="pill gold">+${G.pts} Punkte</span><span class="pill gold">🪙 +${r.coins} ${r.coins === 1 ? 'Münze' : 'Münzen'}</span>${kaNoteAn() ? `<span class="pill">ungefähr Note ${kaNote(ratio)}</span>` : ''}</div>
+    ${r.levelUp ? `<div class="reward"><span class="big">${levelInfo(S.points).title[1]}</span><div><b>Level ${r.levelUp}!</b><span>Du bist jetzt ${levelInfo(S.points).title[0]}.</span></div></div>` : ''}
+    ${r.newStickers.map(s => `<div class="reward new-sticker"><span class="big">${s}</span><div><b>Neuer Sticker!</b><span>Er klebt jetzt in deinem Album.</span></div></div>`).join('')}
+    ${r.newTrophies.map(t => `<div class="reward"><span class="big">${t.e}</span><div><b>Pokal: ${t.t}</b><span>${t.d}</span></div></div>`).join('')}
+    ${r.goalNow ? `<div class="reward"><span class="big">🎯</span><div><b>Tagesziel geschafft!</b><span>${esc(M())} ist mächtig stolz auf dich.</span></div></div>` : ''}
+    <section class="card ka-box"><h2>So lief es in den Themen</h2><div class="ka-themen">${Object.entries(perGr).map(([gr, [a, b]]) => `<div><span>${ampel(a / b)} ${esc((GROUPS[gr] || {}).t || 'Thema')}</span><b class="tnum">${a} von ${b}</b></div>`).join('')}</div></section>
+    ${falsch.length ? `<section class="card ka-box"><h2>Das üben wir noch einmal</h2>
+      <div class="ka-fl">${falsch.map((x, i) => `<div class="ka-f"><span class="ka-fn">${i + 1}</span><div><p class="ka-fp">${esc(x.q.prompt || '')}</p>${x.q.visual ? `<div class="ka-fv">${x.q.visual}</div>` : ''}${x.q.noSol ? '' : `<p class="ka-fs">Richtig: <b>${esc(x.q.solution || '')}</b></p>`}${x.q.explain ? `<p class="ka-fe">${esc(x.q.explain)}</p>` : ''}</div></div>`).join('')}</div></section>`
+      : '<p class="muted">Alles richtig. Da gibt es nichts zu berichtigen! 🎉</p>'}
+    <div class="res-actions">${falsch.length ? `<button class="btn" data-act="kaber">✏️ Berichtigung (${plural(falsch.length, 'Aufgabe', 'Aufgaben')})</button>` : ''}${w ? `<button class="btn ${falsch.length ? 'ghost' : ''}" data-act="kaopen" data-w="${w}">Noch eine Probearbeit</button>` : ''}<button class="btn ghost" data-act="home">Zur Startseite</button></div>
+  </div>`, w || null);
+  if (ratio >= .7 || r.newStickers.length || r.levelUp) { confetti(); Sound.win(); }
+}
+
+function kaBerichtigung() {
+  const L = (KA_LETZT || []).filter(x => GAMES[x.g] && isObj(x.q)); if (!L.length) return showHome();
+  Sound.unlock();
+  const queue = L.slice(0, 20).map(m => ({ g: m.g, q: prepReplay(m.q) }));
+  G = newG('trainer', 'trainer', { g: { t: 'Berichtigung', w: null }, n: queue.length, queue, back: null });
+  KA_LETZT = null; nextQuestion();
+}
+function kaParentsHTML() {
+  const K = kaS(), last = K.l.slice(-6).reverse(), an = S.settings.kaNote === true;
+  return `<section class="card"><h2>📝 Probearbeit</h2>
+    <p class="muted">Der Klassenarbeits-Trainer: In Mathe, Deutsch, Sachunterricht, Englisch und Spanisch steht unter den Themen „Probearbeit“. ${esc(S.profile.name)} wählt Themen und Länge, löst alles ohne Hilfe und sieht das Ergebnis erst am Ende. Danach kommt die Berichtigung. Für einen festen Termin gibt es weiterhin das Test-Training mit Countdown.</p>
+    <div class="row"><span class="lab">Ungefähre Note zeigen<small>erst ab Klasse 3 · 92 % = 1, 81 % = 2, 67 % = 3, 50 % = 4, 30 % = 5. Jede Schule rechnet etwas anders.</small></span><button class="switch ${an ? 'on' : ''}" role="switch" aria-checked="${an}" aria-label="Ungefähre Note zeigen" data-act="kanote"></button></div>
+    ${last.length ? `<div class="hz-sent pp-list">${last.map(x => `<div><span>📝 ${esc((worldById(x.w) || {}).name || 'Probearbeit')}: ${x.ok} von ${x.n}<small class="pp-tag">${new Date(x.t).toLocaleDateString('de-DE', { weekday: 'short', day: 'numeric', month: 'short' })} · ${Math.max(1, Math.round((x.sek || 60) / 60))} Min.</small></span></div>`).join('')}</div>` : '<p class="muted">Noch keine Probearbeit geschrieben.</p>'}
+  </section>`;
+}
+
+
+(() => {
+  Object.assign(ACT, {
+    kaopen: t => { Sound.unlock(); const w = t.dataset.w; if (KA_W !== w) KA_W = ''; showKa(w); },
+    kagr: t => { const gr = t.dataset.gr, i = KA_GR.indexOf(gr); if (i >= 0) KA_GR.splice(i, 1); else KA_GR.push(gr); Sound.tap(); showKa(KA_W); },
+    kaalle: t => { KA_GR = t.dataset.v === '1' ? kaGroups(KA_W) : []; showKa(KA_W); },
+    kalen: t => { KA_N = KA_LEN.includes(Number(t.dataset.n)) ? Number(t.dataset.n) : 15; showKa(KA_W); },
+    kago: t => {
+      const tid = t && t.dataset && t.dataset.tt;
+      if (tid && typeof ttGet === 'function') { const T = ttGet(tid); if (!T) return showHome(); const ids = ttGames(T).filter(id => !GAMES[id].type && !GAMES[id].ff && !GAMES[id].nomix); return kaStart(ids.map(id => [id]), 15, KA_WELTEN.includes(T.w) ? T.w : '', 'Probearbeit: ' + T.t); }
+      if (!KA_GR.length) return;
+      kaStart(KA_GR.map(kaGames), KA_N, KA_W);
+    },
+    kaber: () => kaBerichtigung(),
+    kanote: t => { S.settings.kaNote = !(S.settings.kaNote === true); save(); t.classList.toggle('on', S.settings.kaNote); t.setAttribute('aria-checked', S.settings.kaNote); }
+  });
+  if (typeof TROPHIES !== 'undefined') TROPHIES.push({ id: 'probearbeit', e: '📝', t: 'Gut vorbereitet', d: '5 Probearbeiten geschrieben', c: s => isObj(s.ka) && Array.isArray(s.ka.l) && s.ka.l.length >= 5 });
 })();
 
 /*@@src lumi_live.js@@*/
