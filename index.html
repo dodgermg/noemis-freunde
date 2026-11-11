@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-jl7DLj0JBaMAloXT3qF1jnfg8e0zwgKWF50ZJAnUJy0=' 'sha256-cE0JLi5xBl3YKKZO/fPUhQrNwm4Fhi+XDcR7pbfT6js=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-k0sw2/uAgEHX7FKi77+bDV5S/WEOzCGf807VIpREqWk=' 'sha256-rAbNj74QPyD/+AF721BA+6qGeO522o8Bmazzj3X1ynA=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -6243,7 +6243,7 @@ body.calm .weg-st .weg-n, body.calm .weg-st .weg-i { animation: none !important;
 @media (max-width: 820px) { .nn { grid-template-columns: minmax(0, 470px); } }
 
 .sz { width: 100%; }
-.sz-main { display: grid; grid-template-columns: minmax(0, 430px) minmax(0, 340px); gap: 18px; align-items: start; justify-content: center; }
+.szs-main { display: grid; grid-template-columns: minmax(0, 430px) minmax(0, 340px); gap: 18px; align-items: start; justify-content: center; }
 .sz-g { display: grid; grid-template-columns: 30px repeat(var(--n), minmax(0, 1fr)); gap: 4px; padding: 10px; border-radius: 20px; background: var(--surface); box-shadow: var(--shadow); }
 .sz-h { display: flex; align-items: center; justify-content: center; min-height: 28px; border-radius: 8px; font-family: var(--f-display); font-weight: 800; font-size: 17px; color: var(--ink-soft); }
 .sz-h.sel { background: var(--orb); color: #12324A; }
@@ -6263,10 +6263,87 @@ body.calm .weg-st .weg-n, body.calm .weg-st .weg-i { animation: none !important;
 .sz-k:disabled { opacity: .55; cursor: default; }
 .sz-dig { width: 100%; }
 .sz-wahl { display: flex; flex-direction: column; align-items: center; gap: 14px; padding: 12px 0; }
-@media (max-width: 820px) { .sz-main { grid-template-columns: minmax(0, 430px); } }
+@media (max-width: 820px) { .szs-main { grid-template-columns: minmax(0, 430px); } }
 @media (prefers-reduced-motion: reduce) { .sz-c.neu { animation: none; } }
 .e7-msg { margin: 0; min-height: 1.4em; text-align: center; font-weight: 700; font-size: 16px; line-height: 1.4; color: var(--ink-soft); max-width: 640px; }
 .nn-left { gap: 9px; padding-right: 8px; }
+
+/* ---- style_neu268.css ---- */
+
+.ls-page, .ab-page { display: grid; gap: 16px; padding-bottom: 40px; }
+.ls-bar { display: flex; height: 14px; border-radius: 999px; overflow: hidden; background: var(--surface-2); box-shadow: inset 0 0 0 1px var(--line); min-width: 90px; }
+.ls-bar i { display: block; min-width: 4px; }
+.ls-bar .gruen { background: #2bb673; } .ls-bar .gelb { background: #f2c230; } .ls-bar .rot { background: #e25555; } .ls-bar .neu { background: #cfdde5; }
+.ls-sum { margin: 8px 0 0; font-weight: 800; }
+.ls-leg { font-size: 14px; line-height: 1.5; }
+.ls-n { font-size: 14px; margin-left: 4px; }
+.ls-gr { border-top: 1px solid var(--line); padding: 10px 0; }
+.ls-gr summary { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(90px, 1fr); gap: 6px 14px; align-items: center; cursor: pointer; list-style: none; min-height: 48px; }
+.ls-gr summary::-webkit-details-marker { display: none; }
+.ls-gr summary small { grid-column: 1 / -1; color: var(--ink-soft); font-size: 14px; }
+.ls-t { font-weight: 800; font-size: 18px; }
+.ls-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 6px 14px; padding: 8px 0 4px; }
+.ls-g { display: flex; gap: 8px; align-items: flex-start; font-weight: 700; font-size: 15px; }
+.ls-g small { display: block; font-weight: 500; font-size: 13px; color: var(--ink-soft); }
+
+.ab-vor { overflow-x: auto; }
+.ab-print { background: #FFFFFF; color: #000000; border-radius: 12px; box-shadow: var(--shadow); padding: 28px 30px; max-width: 800px; margin: 0 auto; font-size: 16px; line-height: 1.4; }
+.ab-kopf { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; flex-wrap: wrap; border-bottom: 2px solid #000000; padding-bottom: 8px; margin-bottom: 14px; }
+.ab-kopf b { display: block; font-family: var(--f-display); font-size: 24px; } .ab-kopf span { font-size: 14px; }
+.ab-name { display: flex; gap: 18px; } .ab-name i { display: inline-block; width: 130px; border-bottom: 1px solid #000000; }
+.ab-liste { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 26px; }
+.ab-a { display: flex; gap: 10px; break-inside: avoid; page-break-inside: avoid; min-width: 0; }
+.ab-nr { flex: 0 0 28px; height: 28px; border-radius: 50%; border: 2px solid #000000; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 14px; }
+.ab-in { min-width: 0; flex: 1; }
+.ab-f { margin: 2px 0 6px; font-weight: 700; }
+.ab-v { margin: 4px 0 8px; color: #000000; max-width: 100%; overflow: hidden; }
+.ab-v .q-emoji { font-size: 40px; margin: 0; line-height: 1.1; filter: none; }
+.ab-v .q-word, .ab-v .q-sentence, .ab-v .q-text { font-size: 17px; color: #000000; background: none; box-shadow: none; padding: 0; margin: 0; text-align: left; }
+.ab-v svg { max-width: 220px; max-height: 170px; height: auto; }
+.ab-v * { animation: none !important; }
+.ab-opts { list-style: none; margin: 0; padding: 0; display: grid; gap: 5px; }
+.ab-opts li { display: flex; gap: 8px; align-items: flex-start; }
+.ab-box { flex: 0 0 16px; height: 16px; margin-top: 3px; border: 2px solid #000000; border-radius: 3px; }
+.ab-ant { margin: 8px 0 0; } .ab-hin { margin: 0 0 6px; font-size: 14px; }
+.ab-blank { display: inline-block; width: 110px; border-bottom: 1px solid #000000; height: 22px; vertical-align: bottom; } .ab-blank.lang { width: 100%; }
+.ab-mix { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 4px; } .ab-mix b { border: 1px solid #000000; border-radius: 6px; padding: 2px 8px; font-weight: 700; }
+.ab-fuss { margin: 18px 0 0; font-size: 11px; color: #555555; text-align: right; }
+.ab-los { margin-top: 26px; padding-top: 18px; border-top: 2px dashed #999999; break-before: page; page-break-before: always; }
+.ab-ll { margin: 0; padding-left: 24px; columns: 2; column-gap: 30px; } .ab-ll li { margin: 0 0 4px; break-inside: avoid; }
+#abDruck { display: none; }
+@media (max-width: 640px) { .ab-liste { grid-template-columns: minmax(0, 1fr); } .ab-print { padding: 18px 16px; } }
+@media print {
+  html.ab-drucken body > *:not(#abDruck) { display: none !important; }
+  html.ab-drucken #abDruck { display: block !important; position: static; max-width: none; margin: 0; padding: 0; border-radius: 0; box-shadow: none; }
+  html.ab-drucken #abDruck, html.ab-drucken #abDruck * { visibility: visible !important; }
+  html.ab-drucken #abDruck .ab-liste { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  html.ab-drucken #abDruck .ab-los { border-top: 0; margin-top: 0; padding-top: 0; }
+  html.ab-drucken, html.ab-drucken body { background: #FFFFFF !important; }
+}
+
+.lpw { width: 100%; }
+.lp-main { display: grid; grid-template-columns: minmax(0, 400px) minmax(0, 380px); gap: 18px; align-items: start; justify-content: center; }
+.lp-g { display: grid; grid-template-columns: repeat(var(--n), minmax(0, 1fr)); gap: 4px; padding: 10px; border-radius: 20px; background: var(--surface); box-shadow: var(--shadow); }
+.lp-c { position: relative; aspect-ratio: 1; min-width: 0; display: flex; align-items: center; justify-content: center; border-radius: 10px; background: #dff1fa; box-shadow: inset 0 0 0 2px #b9dcec; font-size: clamp(20px, 5.4vw, 34px); line-height: 1; }
+.lp-c.rock { background: #cfd8dd; box-shadow: inset 0 0 0 2px #aab6bd; }
+.lp-c.goal { background: #fff1c2; box-shadow: inset 0 0 0 2px #e0b400; }
+.lp-c.spur { background: #c5e6f5; }
+.lp-c.lumi { background: #ffffff; box-shadow: inset 0 0 0 3px #2c8bc8; }
+.lp-c.crash { background: #ffe1e1; box-shadow: inset 0 0 0 3px #e25555; }
+.lp-pf { position: absolute; right: 2px; top: 1px; font-style: normal; font-weight: 900; font-size: clamp(12px, 2.8vw, 17px); color: #12324A; background: #ffd34d; border-radius: 6px; padding: 0 3px; line-height: 1.25; }
+.lp-side { display: flex; flex-direction: column; gap: 10px; }
+.lp-h { margin: 0; font-weight: 800; font-size: 16px; color: var(--ink); }
+.lp-prog { display: flex; flex-wrap: wrap; gap: 6px; padding: 8px; border-radius: 14px; background: var(--surface); box-shadow: inset 0 0 0 2px var(--line); min-height: 60px; }
+.lp-s { width: 44px; height: 44px; padding: 0; border: 0; border-radius: 10px; background: var(--surface-2); box-shadow: inset 0 0 0 2px var(--line); display: inline-flex; align-items: center; justify-content: center; font-family: var(--f-display); font-weight: 800; font-size: 20px; color: #12324A; }
+.lp-s.on { background: #cfe3ff; box-shadow: inset 0 0 0 2px #3b7cf0; cursor: pointer; }
+.lp-s.now { background: #ffd34d; box-shadow: inset 0 0 0 3px #d99a00; }
+.lp-s:disabled { opacity: 1; cursor: default; }
+.lp-cmds { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); gap: 6px; }
+.lp-k { min-height: 60px; padding: 4px 2px; border: 0; border-radius: 12px; background: var(--surface); box-shadow: inset 0 -3px 0 var(--line-deep), inset 0 0 0 2px var(--line); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; color: var(--ink); cursor: pointer; }
+.lp-k b { font-family: var(--f-display); font-size: 22px; line-height: 1; } .lp-k small { font-size: 12px; font-weight: 700; line-height: 1.1; }
+.lp-k:disabled { opacity: .5; cursor: default; }
+@media (max-width: 820px) { .lp-main { grid-template-columns: minmax(0, 400px); } }
+@media print { html.ab-drucken #abDruck, html.ab-drucken #abDruck * { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
 
 /* ---- style_pa.css ---- */
 
@@ -8526,8 +8603,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '2.67.0';
-  var MAP = {"probe":0,"files":[[8516,"fehler_kern.js"],[8804,null],[8806,"data.js"],[9501,"data_more.js"],[9858,"data_su2.js"],[10085,"data_es.js"],[10427,"data_wissen.js"],[10626,"data_v21.js"],[11309,"data_v24.js"],[11795,"data_v25.js"],[12276,"data_v26.js"],[12375,"data_v29.js"],[12680,"data_v30.js"],[13009,"data_v31.js"],[13315,"data_kunst.js"],[13511,"data_v214.js"],[13614,"data_v216.js"],[13907,"schrift.js"],[14207,"eingabe.js"],[14418,"data_k34m.js"],[14936,"data_k34d.js"],[15290,"data_k34s.js"],[15744,"data_v224.js"],[16617,"data_v225w.js"],[16986,"data_v225k.js"],[17430,"data_herz.js"],[17784,"data_fb226.js"],[17927,"data_tf226.js"],[18134,"data_v227a.js"],[19225,"data_v227b.js"],[20179,"data_h28b.js"],[20219,"data_l28a.js"],[21085,"data_l28b.js"],[22265,"data_schaetz.js"],[22747,"data_party8.js"],[22797,"data_alce.js"],[23457,"data_alce2.js"],[23706,"data_alce3.js"],[24121,"registry.js"],[24635,"app.js"],[25788,"fun.js"],[26368,"fun2.js"],[26684,"atelier.js"],[27058,"kunst225.js"],[27248,"herz.js"],[27612,"reise.js"],[27914,"iglu.js"],[28080,"offline.js"],[28187,"party.js"],[28671,"meine.js"],[29027,"loeffel.js"],[29198,"trend.js"],[29740,"fun228a.js"],[30591,"fun228b.js"],[31252,"kueche.js"],[32291,"stimme.js"],[32346,"klassen.js"],[32495,"freunde_vorab.js"],[32516,"mut.js"],[32938,"schule.js"],[33427,"fussball226.js"],[33749,"schaetzen.js"],[34180,"party8.js"],[34799,"tiere.js"],[35258,"fussball232.js"],[35473,"party8b.js"],[35775,"weg.js"],[35995,"px.js"],[36406,"px_data.js"],[36663,"pxwelt.js"],[36744,"px_abenteuer.js"],[37545,"px_abenteuer2.js"],[38294,"px_ski.js"],[38936,"px_wurf.js"],[39465,"px_insel.js"],[40666,"px_kicker.js"],[41601,"px_eis.js"],[42587,"px_run.js"],[43802,"px_brk.js"],[44764,"px_pol.js"],[46115,"px_frog.js"],[47375,"px_angel.js"],[48690,"px_golf.js"],[49724,"px_tauch.js"],[50989,"px_hockey.js"],[51945,"px_lab.js"],[53280,"px_plopp.js"],[54486,"px_stadion.js"],[55990,"px_training.js"],[56359,"cm.js"],[56849,"cmwelt.js"],[56905,"cm_baeck.js"],[57698,"cm_bahn.js"],[58462,"cm_detek.js"],[59179,"cm_markt.js"],[59892,"ff.js"],[60049,"ff_mathe.js"],[62039,"ff_deutsch.js"],[63627,"ff_sach_a.js"],[65876,"ff_sach_b.js"],[68105,"ff_sprachen.js"],[70513,"zm.js"],[71426,"tt.js"],[71639,"data_tagebuch.js"],[71682,"data_hoerspiel.js"],[71841,"leseecke.js"],[72160,"kt.js"],[72463,"comicbuch.js"],[72741,"alce.js"],[72904,"alce_aufg.js"],[73074,"formen.js"],[73525,"data_formen.js"],[73766,"data_formen2.js"],[73988,"spielzeit.js"],[74133,"data_faktmeinung.js"],[74252,"data_es248.js"],[74516,"data_en249.js"],[74755,"data_wissen249.js"],[75186,"data_kunst249.js"],[75469,"data_fussball250.js"],[75593,"data_werte252.js"],[75846,"data_lesen252.js"],[75907,"data_k34_252.js"],[75993,"art254.js"],[76111,"data_werte255.js"],[76249,"data_lesen255.js"],[76385,"forscher255.js"],[76533,"zufall250.js"],[76579,"stufe259.js"],[76589,"advent.js"],[76852,"wdh.js"],[76950,"denk.js"],[76987,"data_viaje265.js"],[77130,"klassenarbeit.js"],[77263,"quizduell.js"],[77386,"neu267.js"],[77651,"lumi_live.js"],[77767,"sicher.js"],[77951,"stil.js"],[78005,"freunde.js"],[78142,"start.js"],[78152,null],[78162,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '2.68.0';
+  var MAP = {"probe":0,"files":[[8593,"fehler_kern.js"],[8881,null],[8883,"data.js"],[9578,"data_more.js"],[9935,"data_su2.js"],[10162,"data_es.js"],[10504,"data_wissen.js"],[10703,"data_v21.js"],[11386,"data_v24.js"],[11872,"data_v25.js"],[12353,"data_v26.js"],[12452,"data_v29.js"],[12757,"data_v30.js"],[13086,"data_v31.js"],[13392,"data_kunst.js"],[13588,"data_v214.js"],[13691,"data_v216.js"],[13984,"schrift.js"],[14284,"eingabe.js"],[14495,"data_k34m.js"],[15013,"data_k34d.js"],[15367,"data_k34s.js"],[15821,"data_v224.js"],[16694,"data_v225w.js"],[17063,"data_v225k.js"],[17507,"data_herz.js"],[17861,"data_fb226.js"],[18004,"data_tf226.js"],[18211,"data_v227a.js"],[19302,"data_v227b.js"],[20256,"data_h28b.js"],[20296,"data_l28a.js"],[21162,"data_l28b.js"],[22342,"data_schaetz.js"],[22824,"data_party8.js"],[22874,"data_alce.js"],[23534,"data_alce2.js"],[23783,"data_alce3.js"],[24198,"registry.js"],[24712,"app.js"],[25868,"fun.js"],[26448,"fun2.js"],[26764,"atelier.js"],[27138,"kunst225.js"],[27328,"herz.js"],[27692,"reise.js"],[27994,"iglu.js"],[28160,"offline.js"],[28267,"party.js"],[28751,"meine.js"],[29107,"loeffel.js"],[29278,"trend.js"],[29820,"fun228a.js"],[30671,"fun228b.js"],[31332,"kueche.js"],[32371,"stimme.js"],[32426,"klassen.js"],[32575,"freunde_vorab.js"],[32596,"mut.js"],[33018,"schule.js"],[33507,"fussball226.js"],[33829,"schaetzen.js"],[34260,"party8.js"],[34879,"tiere.js"],[35338,"fussball232.js"],[35553,"party8b.js"],[35855,"weg.js"],[36075,"px.js"],[36486,"px_data.js"],[36743,"pxwelt.js"],[36824,"px_abenteuer.js"],[37625,"px_abenteuer2.js"],[38374,"px_ski.js"],[39016,"px_wurf.js"],[39545,"px_insel.js"],[40746,"px_kicker.js"],[41681,"px_eis.js"],[42667,"px_run.js"],[43882,"px_brk.js"],[44844,"px_pol.js"],[46195,"px_frog.js"],[47455,"px_angel.js"],[48770,"px_golf.js"],[49804,"px_tauch.js"],[51069,"px_hockey.js"],[52025,"px_lab.js"],[53360,"px_plopp.js"],[54566,"px_stadion.js"],[56070,"px_training.js"],[56439,"cm.js"],[56929,"cmwelt.js"],[56985,"cm_baeck.js"],[57778,"cm_bahn.js"],[58542,"cm_detek.js"],[59259,"cm_markt.js"],[59972,"ff.js"],[60129,"ff_mathe.js"],[62119,"ff_deutsch.js"],[63707,"ff_sach_a.js"],[65956,"ff_sach_b.js"],[68185,"ff_sprachen.js"],[70593,"zm.js"],[71506,"tt.js"],[71719,"data_tagebuch.js"],[71762,"data_hoerspiel.js"],[71921,"leseecke.js"],[72240,"kt.js"],[72543,"comicbuch.js"],[72821,"alce.js"],[72984,"alce_aufg.js"],[73154,"formen.js"],[73605,"data_formen.js"],[73846,"data_formen2.js"],[74068,"spielzeit.js"],[74213,"data_faktmeinung.js"],[74332,"data_es248.js"],[74596,"data_en249.js"],[74835,"data_wissen249.js"],[75266,"data_kunst249.js"],[75549,"data_fussball250.js"],[75673,"data_werte252.js"],[75926,"data_lesen252.js"],[75987,"data_k34_252.js"],[76073,"art254.js"],[76191,"data_werte255.js"],[76329,"data_lesen255.js"],[76465,"forscher255.js"],[76613,"zufall250.js"],[76659,"stufe259.js"],[76669,"advent.js"],[76932,"wdh.js"],[77030,"denk.js"],[77067,"data_viaje265.js"],[77210,"klassenarbeit.js"],[77343,"quizduell.js"],[77466,"neu267.js"],[77731,"prog.js"],[77836,"lernstand.js"],[77903,"blatt.js"],[78005,"lumi_live.js"],[78121,"sicher.js"],[78305,"stil.js"],[78359,"freunde.js"],[78496,"start.js"],[78506,null],[78516,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -24636,9 +24713,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '2.67.0';
+const APP_VERSION = '2.68.0';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "2.68.0", d: "11.11.2026", t: ["Neu im Elternbereich: Lernstand. Eine Ampel zeigt für jede Welt und jedes Thema, was sitzt, was läuft und was noch wackelt. Aus den wackligen Spielen lässt sich direkt eine Übungsrunde starten", "Neu im Elternbereich: Arbeitsblatt drucken. Aus Themen oder aus den offenen Fehlern entsteht ein Blatt zum Ausdrucken, auf Wunsch mit Lösungsseite", "Neues Spiel in Mathe bei „Formen & Raum“: Lumi programmieren. Befehle in ein Programm legen und Lumi zum Fisch steuern, auf Stufe 3 mit Wiederholungen"] },
   { v: "2.67.0", d: "11.11.2026", t: ["Neu: Logik-Bilder bei „Rätsel & Denk-Spiele“. Kästchen nach Zahlen ausmalen, bis ein Bild entsteht. 60 Bilder in drei Größen", "Neu: Schatzsuche in Mathe bei „Formen & Raum“. Buchstabe und Zahl wählen und bei Feldern wie B4 graben. Dazu das Schatz-Duell gegen Lumi oder zu zweit, auch bei den Party-Spielen", "Neu: Wörter raten in Deutsch, Englisch und Spanisch. Bei jedem falschen Buchstaben platzt ein Luftballon", "Neu: Wörtersuche als eigenes Spiel in Deutsch, Englisch und Spanisch, mit größeren Gittern auf Stufe 2 und 3", "Sprachwelten: 164 neue Aufgaben für 20 Grammatik-, Lese- und Rechtschreibspiele, darunter vier neue Lesetexte"] },
   { v: "2.66.0", d: "11.11.2026", t: ["184 neue Aufgaben für 52 Spiele, die bisher weniger als 15 verschiedene Aufgaben hatten. Jetzt hat jedes Wissensspiel mindestens 15 Fragen", "Neu dabei: drei Lesetexte (einer auf Englisch, zwei auf Spanisch), sechs Kreisläufe wie der Wasserkreislauf, fünf Bildergeschichten, sechs spanische Rätsel, neue Tagesabläufe, Fragewörter, Vergangenheitsformen, Sätze zum Bauen und Tiere der Kontinente", "Unten auf der Startseite und im Elternbereich steht jetzt, von wem die Lernwelt ist"] },
   { v: "2.65.0", d: "11.11.2026", t: ["Neu: das Quiz-Duell. Zu zweit an einem Gerät, immer abwechselnd. Jede Person bekommt Fragen für ihre Klasse, darum ist es auch gegen Große fair. Zu finden bei den Party-Spielen", "Neu in Spanisch: Reise-Spanisch mit sechs Spielen für Flughafen, Hotel, Restaurant, Strand, Einkaufen und Hilfe holen. In Stufe 2 Sätze bauen und im Gespräch antworten", "225 neue Fragen für 50 kleine Spiele: Jedes Wissensspiel hat jetzt mindestens 15 verschiedene Fragen. Dazu 199 kniffligere Fragen zu Spanien, den Kanaren, Großbritannien und Redewendungen", "Neuer Pokal „Duell-Profi“ für 5 Quiz-Duelle"] },
@@ -25178,7 +25256,7 @@ function pickMixGame() {
   const ws = WORLDS.map(x => x.id).filter(w => pool.some(id => GAMES[id].w === w)), w = R.pick(ws);
   return R.pick(pool.filter(id => GAMES[id].w === w));
 }
-function startMix() { Sound.unlock(); G = newG('mix', 'mix', { g: { t: 'Tagesmix', w: null }, n: 10, back: null }); nextQuestion(); }
+function startMix() { Sound.unlock(); if (typeof lsAus === 'function') lsAus(); G = newG('mix', 'mix', { g: { t: 'Tagesmix', w: null }, n: 10, back: null }); nextQuestion(); }
 function startTrainer() {
   Sound.unlock();
   if (!S.mistakes.length) { overlay(`${mascot('wow')}<h2>Keine offenen Fehler!</h2><p class="muted">Alles, was du falsch hattest, hast du schon geübt. Super!</p><div class="acts"><button class="btn" data-act="closeov">Okay</button></div>`); return; }
@@ -25196,7 +25274,7 @@ function prepReplay(q) {
 function nextQuestion() {
   if (G.i >= G.n) return G.mode === 'duell' && typeof qdEnde === 'function' ? qdEnde() : finishRound();
   if (G.mode === 'trainer' || G.mode === 'wdh') { const it = G.queue[G.i]; G.qg = it.g; G.q = it.q; }
-  else if (G.mode === 'mix') { G.qg = pickMixGame(); G.q = genFor(G.qg); }
+  else if (G.mode === 'mix') { G.qg = G.pool && G.pool.length ? G.pool[G.i % G.pool.length] : pickMixGame(); G.q = genFor(G.qg); }
   else if (G.mode === 'tt') { G.qg = ttNext(); G.q = genFor(G.qg); }
   else if (G.mode === 'ka') { const k = kaNext(); G.qg = k.id; G.q = k.q; }
   else if (G.mode === 'duell') { const k = qdNext(); G.qg = k.id; G.q = k.q; }
@@ -25509,7 +25587,7 @@ function showResult(r) {
   const head = mode === 'blitz' ? (r.blitz.record ? 'Neuer Rekord!' : 'Zeit ist um!') : r.stars === 3 ? (isMem || G.ok === G.n ? 'Perfekt!' : 'Super gemacht!') : r.stars === 2 ? 'Gut gemacht!' : 'Geschafft!';
   const sub = mode === 'blitz' ? `${plural(r.blitz.count, 'Aufgabe', 'Aufgaben')} in 60 Sekunden richtig${r.blitz.prev && !r.blitz.record ? ` · Rekord: ${r.blitz.prev}` : ''}` : isMem && G.custom ? esc(G.resText || `${plural(G.ok, 'Aufgabe', 'Aufgaben')} geschafft`) : isMem ? `Alle 6 Paare in ${r.memoryMoves} Zügen gefunden` : `${G.ok + (G.half || 0)} von ${G.n} richtig${G.half ? ` (${G.half} im zweiten Versuch)` : ''}`;
   const L = levelInfo(S.points), toNext = 5 - (S.stars % 5);
-  const againAct = mode === 'mix' ? 'mix' : mode === 'trainer' ? 'trainer' : mode === 'wdh' ? 'wdh' : mode === 'tt' ? 'ttagain' : 'again';
+  const againAct = mode === 'mix' ? (typeof lsAgain === 'function' && lsAgain() ? 'lsagain' : 'mix') : mode === 'trainer' ? 'trainer' : mode === 'wdh' ? 'wdh' : mode === 'tt' ? 'ttagain' : 'again';
   const backBtnHTML = mode === 'tt' ? '<button class="btn ghost" data-act="ttpage">Zum Test-Training</button>' : wid && !G.weg && !r.weg ? `<button class="btn ghost" data-act="world" data-w="${wid}">Andere Spiele</button>` : `<button class="btn ghost" data-act="home">Zur Startseite</button>`;
   setView(`<div class="result">${mascot(r.stars >= 2 ? 'wow' : 'happy')}
     <h1>${head}</h1><div class="big-stars">${[0, 1, 2].map(i => starSVG(i < r.stars)).join('')}</div>
@@ -25642,6 +25720,8 @@ function showParents(notice = '') {
     ${offSectionHTML()}
     ${typeof fpParentsHTML === 'function' ? fpParentsHTML() : ''}
     ${typeof spzParentsHTML === 'function' ? spzParentsHTML() : ''}
+    ${typeof lsParentsHTML === 'function' ? lsParentsHTML() : ''}
+    ${typeof abParentsHTML === 'function' ? abParentsHTML() : ''}
     ${typeof kaParentsHTML === 'function' ? kaParentsHTML() : ''}
     ${typeof wdhParentsHTML === 'function' ? wdhParentsHTML() : ''}
     ${typeof denkParentsHTML === 'function' ? denkParentsHTML() : ''}
@@ -77575,7 +77655,7 @@ function e7SchatzHTML(q) {
   const info = T.mode === 'lumi' ? `<span>🙂 Du: 💎 ${T.p[0]}</span><span>🐧 Lumi: 💎 ${T.p[1]}</span>`
     : T.mode === 'zwei' ? `<span>💎 ${T.found} von ${q.t.length}</span><span>👉 Kind ${T.turn + 1} ist dran</span>` : `<span>💎 ${T.found} von ${q.t.length}</span><span>⛏️ noch ${T.left}</span>`;
   const row = (arr, act, cur) => `<div class="sz-row">${arr.map((l, k) => `<button class="sz-k${cur === k ? ' sel' : ''}" data-act="${act}" data-k="${k}"${lock ? ' disabled' : ''}>${l}</button>`).join('')}</div>`;
-  return `<div class="sz" id="sz"><div class="sz-main"><div class="sz-g" style="--n:${n}">${h}</div><div class="sz-side"><div class="sz-info">${info}</div>
+  return `<div class="sz" id="sz"><div class="szs-main"><div class="sz-g" style="--n:${n}">${h}</div><div class="sz-side"><div class="sz-info">${info}</div>
     ${row(Array.from(E7_ABC.slice(0, n)), 'szl', T.selC)}${row(Array.from({ length: n }, (_, k) => k + 1), 'szn', T.selR)}
     <button class="btn sz-dig" data-act="szdig"${sel && !lock ? '' : ' disabled'}>⛏️ ${sel ? 'Bei ' + E7_ABC[T.selC] + (T.selR + 1) + ' graben' : 'Erst Buchstabe und Zahl wählen'}</button>
     <p class="e7-msg" aria-live="polite">${esc(T.msg || 'Die Zahl in einem Feld zeigt, wie viele Schritte es bis zum nächsten Schatz sind. Schräg zählt nicht.')}</p></div></div></div>`;
@@ -77647,6 +77727,280 @@ ACT.szdig = () => {
 function e7PartyTile() {
   return `<button class="card pa-g" data-act="play" data-g="schatzduell"><span class="pa-ge" aria-hidden="true">⛏️</span><div><h3>Schatz-Duell <em class="pa-new">NEU</em></h3><p>Abwechselnd Felder wie B4 ansagen und graben. Zusammen findet ihr alle Schätze.</p><small>2 Kinder · 5 bis 10 Minuten</small></div></button>`;
 }
+
+/*@@src prog.js@@*/
+
+
+
+
+
+
+const LP_D = [[0, -1], [1, 0], [0, 1], [-1, 0]], LP_PF = ['↑', '→', '↓', '←'];
+const LP_CMD = { U: ['⬆️', 'hoch'], R: ['➡️', 'rechts'], D: ['⬇️', 'runter'], L: ['⬅️', 'links'], F: ['🐾', 'vor'], l: ['↩️', 'links drehen'], r: ['↪️', 'rechts drehen'], F2: ['2×', '2 mal vor'], F3: ['3×', '3 mal vor'] };
+const LP_SETS = { abs: ['U', 'R', 'D', 'L'], rel: ['F', 'l', 'r'], loop: ['F', 'F2', 'F3', 'l', 'r'] };
+const LP_ABS = { U: 0, R: 1, D: 2, L: 3 };
+const lpMs = () => (typeof window !== 'undefined' && window.LW_FX_AUS ? 20 : 430);
+
+function lpSchritte(c) { return c in LP_ABS ? [['d', LP_ABS[c]], ['m']] : c === 'F' ? [['m']] : c === 'F2' ? [['m'], ['m']] : c === 'F3' ? [['m'], ['m'], ['m']] : c === 'l' ? [['t', 3]] : [['t', 1]]; }
+function lpTu(q, p, st) {
+  if (st[0] === 'd') return { x: p.x, y: p.y, d: st[1] };
+  if (st[0] === 't') return { x: p.x, y: p.y, d: (p.d + st[1]) % 4 };
+  const x = p.x + LP_D[p.d][0], y = p.y + LP_D[p.d][1];
+  return x < 0 || y < 0 || x >= q.n || y >= q.n || q.rocks.includes(y * q.n + x) ? null : { x, y, d: p.d };
+}
+
+function lpSolve(q, cmds) {
+  const key = p => p.x + ',' + p.y + ',' + p.d, start = { x: q.s[0], y: q.s[1], d: q.s[2] }, seen = new Set([key(start)]); let lage = [[start, []]];
+  for (let tiefe = 0; tiefe < 14 && lage.length; tiefe++) {
+    const neu = [];
+    for (const [p, weg] of lage) for (const c of cmds) {
+      let a = p, ziel = false;
+      for (const st of lpSchritte(c)) { a = lpTu(q, a, st); if (!a) break; if (a.y * q.n + a.x === q.z) { ziel = true; break; } }
+      if (!a) continue;
+      if (ziel) return weg.concat(c);
+      if (!seen.has(key(a))) { seen.add(key(a)); neu.push([a, weg.concat(c)]); }
+    }
+    lage = neu;
+  }
+  return null;
+}
+function lpGen(ctx) {
+  const lv = Math.min(3, (ctx && ctx.lv) || 1), mode = ['abs', 'rel', 'loop'][lv - 1], n = lv === 1 ? 5 : 6, cells = Array.from({ length: n * n }, (_, i) => i);
+  const txt = { abs: 'Bring Lumi zum Fisch. Lege die Pfeile in der richtigen Reihenfolge und drücke Start.', rel: 'Programmiere Lumi mit „vor“ und „drehen“. Der kleine Pfeil zeigt, wohin Lumi schaut.', loop: 'Programmiere Lumi mit wenigen Befehlen. „3×“ heißt: dreimal vor.' }[mode];
+  for (let t = 0; t < 300; t++) {
+    const pick = R.sample(cells, (lv === 1 ? 4 : lv === 2 ? 6 : 5) + 2), s = pick[0], z = pick[1];
+    const q = { kind: 'prog', mode, n, rocks: pick.slice(2), s: [s % n, Math.floor(s / n), lv === 1 ? 0 : R.int(0, 3)], z };
+    const sol = lpSolve(q, LP_SETS[mode]); if (!sol) continue;
+    if (mode === 'abs' && (sol.length < 4 || sol.length > 7)) continue;
+    if (mode === 'rel' && (sol.length < 5 || sol.length > 9)) continue;
+    if (mode === 'loop') { const ohne = lpSolve(q, LP_SETS.rel); if (sol.length < 4 || sol.length > 7 || !ohne || ohne.length < sol.length + 2) continue; }
+    return Object.assign(q, { sol, slots: sol.length + (mode === 'loop' ? 1 : 2), cmds: LP_SETS[mode], prompt: txt, visual: '', explain: '', solution: '', noSol: true, noMist: true, key: 'lp' + mode + s + '.' + z + '.' + q.rocks.join('.'), secondTxt: 'Geschafft!' });
+  }
+  const q = { kind: 'prog', mode: 'abs', n: 5, rocks: [7], s: [0, 4, 0], z: 2 }; q.sol = lpSolve(q, LP_SETS.abs);
+  return Object.assign(q, { slots: q.sol.length + 2, cmds: LP_SETS.abs, prompt: txt, visual: '', explain: '', solution: '', noSol: true, noMist: true, key: 'lpfest', secondTxt: 'Geschafft!' });
+}
+function lpState(q) {
+  if (!G.lp || G.lp.q !== q) G.lp = { q, prog: [], p: { x: q.s[0], y: q.s[1], d: q.s[2] }, spur: new Set(), run: 0, now: -1, fails: 0, crash: 0, zeig: 0, done: 0, msg: '' };
+  return G.lp;
+}
+function lpHTML(q) {
+  const T = lpState(q), n = q.n, lock = !!(T.run || T.done || G.answered); let h = '';
+  for (let i = 0; i < n * n; i++) {
+    const hier = T.p.y * n + T.p.x === i, cls = ['lp-c', q.rocks.includes(i) ? 'rock' : '', i === q.z ? 'goal' : '', T.spur.has(i) ? 'spur' : '', hier ? 'lumi' : '', hier && T.crash ? 'crash' : ''].filter(Boolean).join(' ');
+    h += `<span class="${cls}">${hier ? `🐧${q.mode === 'abs' ? '' : `<i class="lp-pf d${T.p.d}">${LP_PF[T.p.d]}</i>`}` : q.rocks.includes(i) ? '🪨' : i === q.z ? '🐟' : ''}</span>`;
+  }
+  const chips = Array.from({ length: q.slots }, (_, i) => { const c = T.prog[i]; return c ? `<button class="lp-s on${T.now === i ? ' now' : ''}" data-act="lpdel" data-i="${i}" aria-label="${LP_CMD[c][1]} entfernen"${lock ? ' disabled' : ''}>${LP_CMD[c][0]}</button>` : `<span class="lp-s"></span>`; }).join('');
+  const cmds = q.cmds.map(c => `<button class="lp-k" data-act="lpadd" data-c="${c}"${lock || T.prog.length >= q.slots ? ' disabled' : ''}><b>${LP_CMD[c][0]}</b><small>${LP_CMD[c][1]}</small></button>`).join('');
+  return `<div class="lpw" id="lp"><div class="lp-main"><div class="lp-g" style="--n:${n}">${h}</div>
+    <div class="lp-side"><p class="lp-h">Dein Programm (höchstens ${q.slots} Befehle):</p><div class="lp-prog">${chips}</div><div class="lp-cmds">${cmds}</div>
+    <div class="sp-tools"><button class="btn" data-act="lprun"${lock || !T.prog.length ? ' disabled' : ''}>▶️ Start</button><button class="btn ghost sm" data-act="lpclr"${lock || !T.prog.length ? ' disabled' : ''}>Alles löschen</button>${T.fails >= 2 && !T.done ? `<button class="btn ghost sm" data-act="lpsol"${lock ? ' disabled' : ''}>Lösung zeigen</button>` : ''}</div>
+    <p class="e7-msg" aria-live="polite">${esc(T.msg || 'Tippe auf einen Befehl im Programm, um ihn wieder zu entfernen.')}</p></div></div></div>`;
+}
+function lpDraw(q) { const el = $('#lp'); if (el) el.outerHTML = lpHTML(q); }
+function lpLauf(q, T) {
+  const plan = []; T.prog.forEach((c, i) => lpSchritte(c).forEach(st => plan.push([i, st])));
+  const start = { x: q.s[0], y: q.s[1], d: q.s[2] }, lebt = () => G && G.q === q && !G.answered;
+  T.run = 1; T.p = start; T.spur = new Set(); T.crash = 0; T.msg = T.zeig ? 'So kommt Lumi zum Fisch:' : 'Lumi läuft los …'; let k = 0;
+  const zurueck = txt => { T.fails++; T.msg = txt; lpDraw(q); setTimeout(() => { if (!lebt()) return; T.p = start; T.spur = new Set(); T.crash = 0; T.now = -1; T.run = 0; lpDraw(q); }, lpMs() * 2 + 200); };
+  const tick = () => {
+    if (!lebt()) return;
+    if (k >= plan.length) return zurueck('Lumi ist noch nicht beim Fisch. Ändere dein Programm und versuch es noch einmal.');
+    const [i, st] = plan[k++]; T.now = i; const a = lpTu(q, T.p, st);
+    if (!a) { T.crash = 1; Sound.bad(); return zurueck('Autsch, hier geht es nicht weiter. Ändere dein Programm und versuch es noch einmal.'); }
+    if (st[0] === 'm') { T.spur.add(T.p.y * q.n + T.p.x); Sound.tap(); }
+    T.p = a;
+    if (a.y * q.n + a.x === q.z) {
+      T.done = 1; T.run = 0; T.msg = 'Lumi hat den Fisch!'; lpDraw(q);
+      if (T.zeig) { q.explain = 'So kommt Lumi zum Fisch. Beim nächsten Mal schaffst du es selbst.'; return answer(false); }
+      q.explain = T.prog.length <= q.sol.length ? `Dein Programm hat ${plural(T.prog.length, 'Befehl', 'Befehle')}. Kürzer geht es nicht!` : `Dein Programm hat ${T.prog.length} Befehle. Es geht sogar mit ${q.sol.length}.`;
+      return answer(true, T.fails > 0);
+    }
+    lpDraw(q); setTimeout(tick, lpMs());
+  };
+  lpDraw(q); setTimeout(tick, lpMs());
+}
+const lpDa = () => G && !G.answered && G.q && G.q.kind === 'prog';
+Object.assign(ACT, {
+  lpadd: t => { if (!lpDa()) return; const q = G.q, T = lpState(q); if (T.run || T.done || T.prog.length >= q.slots || !q.cmds.includes(t.dataset.c)) return; T.prog.push(t.dataset.c); T.msg = ''; Sound.tap(); lpDraw(q); },
+  lpdel: t => { if (!lpDa()) return; const q = G.q, T = lpState(q); if (T.run || T.done) return; T.prog.splice(Number(t.dataset.i), 1); T.msg = ''; Sound.tap(); lpDraw(q); },
+  lpclr: () => { if (!lpDa()) return; const q = G.q, T = lpState(q); if (T.run || T.done) return; T.prog = []; T.msg = ''; lpDraw(q); },
+  lprun: () => { if (!lpDa()) return; const q = G.q, T = lpState(q); if (T.run || T.done || !T.prog.length) return; lpLauf(q, T); },
+  lpsol: () => { if (!lpDa()) return; const q = G.q, T = lpState(q); if (T.run || T.done) return; T.zeig = 1; T.prog = q.sol.slice(); lpLauf(q, T); }
+});
+(() => {
+  const ah = answersHTML;
+  answersHTML = function (q) { if (q && q.kind === 'prog') return lpHTML(q); return ah.apply(this, arguments); };
+  GAMES.lumiprog = { id: 'lumiprog', w: 'mathe', g: 'm-geo', t: 'Lumi programmieren', d: 'Befehle legen und Lumi zum Fisch steuern', i: '🤖', gen: lpGen, max: 3, start: [1, 1, 2, 2], n: 5, nomix: 1 };
+})();
+
+/*@@src lernstand.js@@*/
+
+
+
+
+
+
+let LS_W = '', LS_RUN = null;
+const LS_TXT = { gruen: ['🟢', 'sitzt', 'sitzen'], gelb: ['🟡', 'läuft', 'laufen'], rot: ['🔴', 'wackelt', 'wackeln'], neu: ['⚪', 'neu', 'neu'] };
+const lsGames = gr => gamesOfGroup(gr).filter(id => { const g = GAMES[id]; return !!(g && g.gen && !g.type && !g.ff && !g.fo && klStatus(id) === 'ok'); });
+const lsGroups = w => Object.keys(GROUPS).filter(gr => GROUPS[gr].w === w && lsGames(gr).length);
+const lsOffen = id => S.mistakes.filter(m => m.g === id).length;
+function lsStat(id) {
+  const g = S.games[id], n = g ? (g.ok || 0) + (g.bad || 0) : 0;
+  if (!n) return 'neu';
+  const offen = lsOffen(id), qu = g.ok / n;
+  if (offen >= 2 || (n >= 6 && qu < .65)) return 'rot';
+  if (n >= 8 && qu >= .85 && !offen) return 'gruen';
+  return 'gelb';
+}
+function lsZahl(ids) { const z = { gruen: 0, gelb: 0, rot: 0, neu: 0 }; ids.forEach(id => { z[lsStat(id)]++; }); return z; }
+const lsWelt = w => [].concat(...lsGroups(w).map(lsGames));
+const lsRot = w => (w ? lsWelt(w) : [].concat(...WORLDS.map(x => lsWelt(x.id)))).filter(id => lsStat(id) === 'rot');
+const lsBar = z => `<span class="ls-bar" aria-hidden="true">${['gruen', 'gelb', 'rot', 'neu'].map(k => z[k] ? `<i class="${k}" style="flex:${z[k]}"></i>` : '').join('')}</span>`;
+const lsSatz = z => ['gruen', 'gelb', 'rot', 'neu'].filter(k => z[k]).map(k => `${z[k]} ${LS_TXT[k][z[k] === 1 ? 1 : 2]}`).join(' · ');
+function showLernstand(w) {
+  stopTimers(); G = null;
+  const welten = WORLDS.filter(x => lsGroups(x.id).length);
+  if (w && welten.some(x => x.id === w)) LS_W = w;
+  if (!welten.some(x => x.id === LS_W)) LS_W = (welten[0] || {}).id || '';
+  const grs = lsGroups(LS_W), rot = lsRot(LS_W), rotAlle = lsRot(''), ges = lsZahl([].concat(...welten.map(x => lsWelt(x.id))));
+  setView(`<header class="pagehead"><div class="wrap">${backBtn('lsback')}<div><h1>📊 Lernstand</h1><p>${esc(S.profile.name)} · Klasse ${klasse()}</p></div></div></header>
+    <main class="wrap ls-page">
+      <section class="card"><h2>Alle Welten zusammen</h2>${lsBar(ges)}<p class="ls-sum">${lsSatz(ges) || 'Noch nichts geübt.'}</p>
+        <p class="muted ls-leg">🟢 <b>sitzt</b>: mindestens 8 Aufgaben, 85 % richtig, kein offener Fehler · 🟡 <b>läuft</b>: geübt, aber noch nicht sicher · 🔴 <b>wackelt</b>: weniger als 65 % richtig oder mindestens 2 offene Fehler · ⚪ <b>neu</b>: noch nie gespielt. Gezählt werden nur Spiele, die zu Klasse ${klasse()} passen.</p>
+        ${rotAlle.length ? `<div class="acts"><button class="btn" data-act="lsgo" data-w="">🔴 Alles Wacklige üben (${plural(rotAlle.length, 'Spiel', 'Spiele')})</button></div>` : ''}</section>
+      <section class="card"><h2>Welt wählen</h2>
+        <div class="ka-chips">${welten.map(x => { const r = lsRot(x.id).length; return `<button class="ka-chip ${x.id === LS_W ? 'sel' : ''}" data-act="lsw" data-w="${x.id}" aria-pressed="${x.id === LS_W}">${esc(x.name)}${r ? ` <span class="ls-n">🔴 ${r}</span>` : ''}</button>`; }).join('')}</div>
+        ${grs.map(gr => { const ids = lsGames(gr), z = lsZahl(ids); return `<details class="ls-gr"${z.rot ? ' open' : ''}><summary><span class="ls-t"><span aria-hidden="true">${groupIcon(gr)}</span> ${esc(GROUPS[gr].t)}</span>${lsBar(z)}<small>${lsSatz(z)}</small></summary>
+          <div class="ls-list">${ids.map(id => { const st = lsStat(id), g = S.games[id], n = g ? (g.ok || 0) + (g.bad || 0) : 0, o = lsOffen(id); return `<div class="ls-g"><span aria-hidden="true">${LS_TXT[st][0]}</span><span>${esc(GAMES[id].t)}<small>${n ? `${g.ok} von ${n} richtig${o ? ' · ' + plural(o, 'offener Fehler', 'offene Fehler') : ''}` : 'noch nicht gespielt'}</small></span></div>`; }).join('')}</div></details>`; }).join('')}
+        ${rot.length ? `<div class="acts"><button class="btn" data-act="lsgo" data-w="${LS_W}">🔴 Wackliges in ${esc(worldById(LS_W).name)} üben (${plural(rot.length, 'Spiel', 'Spiele')})</button></div>` : '<p class="muted">In dieser Welt wackelt gerade nichts.</p>'}</section>
+    </main>`, LS_W);
+}
+function lsStart(w) {
+  const ids = R.shuffle(lsRot(w).filter(id => !GAMES[id].nomix));
+  if (!ids.length) return toast('Hier wackelt gerade nichts.');
+  Sound.unlock(); LS_RUN = { w };
+  G = newG('mix', 'mix', { g: { t: 'Wackliges üben', w: null }, n: Math.min(S.settings.roundLen || 10, Math.max(6, ids.length * 2)), back: null, pool: ids });
+  nextQuestion();
+}
+function lsAus() { LS_RUN = null; }
+const lsAgain = () => !!LS_RUN;
+function lsParentsHTML() {
+  const z = lsZahl([].concat(...WORLDS.map(x => lsWelt(x.id))));
+  return `<section class="card"><h2>📊 Lernstand</h2>
+    <p class="muted">Zeigt für jede Welt und jedes Thema, was sitzt, was läuft und was noch wackelt. Aus den wackligen Spielen lässt sich direkt eine Übungsrunde starten.</p>
+    ${lsBar(z)}<p class="ls-sum">${lsSatz(z) || 'Noch nichts geübt.'}</p>
+    <div class="acts"><button class="btn" data-act="lsopen">Lernstand öffnen</button></div></section>`;
+}
+Object.assign(ACT, {
+  lsopen: () => showLernstand(),
+  lsback: () => showParents(),
+  lsw: t => showLernstand(t.dataset.w),
+  lsgo: t => lsStart(t.dataset.w || ''),
+  lsagain: () => (LS_RUN ? lsStart(LS_RUN.w) : startMix())
+});
+
+/*@@src blatt.js@@*/
+
+
+
+
+
+const AB = { w: '', gr: [], n: 12, src: 'thema', los: true, q: [], t: '' };
+const AB_LEN = [8, 12, 16];
+const abArtOk = q => !!q && ['choice', 'number', 'spell', 'order'].includes(q.kind) && !q.listen && !/<button|<audio|data-act=/.test(q.visual || '') && (q.kind !== 'choice' || q.options.length <= 5);
+const abWelten = () => WORLDS.filter(w => kaGroups(w.id).length);
+const abFehler = () => S.mistakes.filter(m => GAMES[m.g] && abArtOk(m.q));
+function abMake() {
+  const out = [], seen = new Set(), alt = G;
+  if (AB.src === 'fehler') {
+    R.shuffle(abFehler()).slice(0, AB.n).forEach(m => out.push({ g: m.g, q: prepReplay(m.q) }));
+    AB.t = 'Aus meinen Fehlern';
+  } else {
+    const ids = R.shuffle([].concat(...AB.gr.map(kaGames)));
+    if (!ids.length) return [];
+    G = newG('game', ids[0], {});
+    try {
+      for (let k = 0; out.length < AB.n && k < AB.n * 8; k++) {
+        const id = ids[k % ids.length]; let q = null;
+        try { q = genFor(id); } catch (e) { q = null; }
+        if (!abArtOk(q) || seen.has(id + '|' + q.key)) continue;
+        seen.add(id + '|' + q.key); out.push({ g: id, q });
+      }
+    } finally { G = alt; }
+    AB.t = `${worldById(AB.w).name}: ${AB.gr.map(gr => GROUPS[gr].t).join(', ')}`;
+  }
+  return out;
+}
+const abText = h => String(h).replace(/<[^>]+>/g, ' ').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/\s+/g, ' ').trim();
+function abLoesung(q) {
+  if (q.kind === 'choice') { const o = q.options.find(x => x.ok); return o ? (o.label || abText(o.html)) : String(q.solution || ''); }
+  if (q.kind === 'number') return String(q.answer) + (q.unit ? ' ' + q.unit : '');
+  if (q.kind === 'spell') return q.word;
+  if (q.kind === 'order') return q.items.join(q.inline ? ' ' : ' → ');
+  return String(q.solution || '');
+}
+function abAufgabe(it, i) {
+  const q = it.q; let a = '';
+  if (q.kind === 'choice') a = `<ul class="ab-opts">${q.options.map(o => `<li><span class="ab-box"></span><span>${o.html}</span></li>`).join('')}</ul>`;
+  else if (q.kind === 'number') a = `<p class="ab-ant">Antwort: <span class="ab-blank"></span>${q.unit ? ' ' + esc(q.unit) : ''}</p>`;
+  else if (q.kind === 'spell') a = `<p class="ab-mix">${R.shuffle(Array.from(q.word).filter(c => c !== ' ')).map(c => `<b>${esc(c)}</b>`).join('')}</p><p class="ab-ant"><span class="ab-blank lang"></span></p>`;
+  else if (q.inline) a = `<p class="ab-mix">${R.shuffle(q.items.slice()).map(c => `<b>${esc(c)}</b>`).join('')}</p><p class="ab-ant"><span class="ab-blank lang"></span></p>`;
+  else a = `<p class="ab-hin">Schreibe die Zahlen 1 bis ${q.items.length} in die Kästchen.</p><ul class="ab-opts">${R.shuffle(q.items.slice()).map(c => `<li><span class="ab-box"></span><span>${esc(c)}</span></li>`).join('')}</ul>`;
+  return `<li class="ab-a"><div class="ab-nr">${i + 1}</div><div class="ab-in"><p class="ab-f">${esc(q.prompt)}</p>${q.visual ? `<div class="ab-v">${q.visual}</div>` : ''}${a}</div></li>`;
+}
+function abBlattHTML() {
+  if (!AB.q.length) return '';
+  const datum = new Date().toLocaleDateString('de-DE', { day: 'numeric', month: 'long', year: 'numeric' });
+  return `<div class="ab-print" id="abBlatt"><div class="ab-kopf"><div><b>Arbeitsblatt</b><span>${esc(AB.t)}</span></div><div class="ab-name"><span>Name: <i></i></span><span>Datum: <i></i></span></div></div>
+    <ol class="ab-liste">${AB.q.map(abAufgabe).join('')}</ol>
+    <p class="ab-fuss">${esc(typeof APP_COPY === 'string' ? APP_COPY : '')} · erstellt am ${datum}</p>
+    ${AB.los ? `<div class="ab-los"><div class="ab-kopf"><div><b>Lösungen</b><span>${esc(AB.t)}</span></div></div><ol class="ab-ll">${AB.q.map(it => `<li>${esc(abLoesung(it.q))}</li>`).join('')}</ol></div>` : ''}</div>`;
+}
+function showBlatt() {
+  stopTimers(); G = null;
+  const welten = abWelten(), nF = abFehler().length;
+  if (!welten.some(w => w.id === AB.w)) { AB.w = (welten[0] || {}).id || ''; AB.gr = []; }
+  const grs = AB.w ? kaGroups(AB.w) : []; AB.gr = AB.gr.filter(gr => grs.includes(gr));
+  if (AB.src === 'fehler' && !nF) AB.src = 'thema';
+  const kann = AB.src === 'fehler' ? nF > 0 : AB.gr.length > 0;
+  setView(`<header class="pagehead"><div class="wrap">${backBtn('lsback')}<div><h1>🖨️ Arbeitsblatt</h1><p>Zum Ausdrucken und Üben mit dem Stift</p></div></div></header>
+    <main class="wrap ab-page">
+      <section class="card ab-wahl"><h2>Woraus soll das Blatt bestehen?</h2>
+        <div class="seg ka-seg"><button class="${AB.src === 'thema' ? 'sel' : ''}" data-act="absrc" data-s="thema">Themen</button><button class="${AB.src === 'fehler' ? 'sel' : ''}" data-act="absrc" data-s="fehler"${nF ? '' : ' disabled'}>Offene Fehler (${nF})</button></div>
+        ${AB.src === 'thema' ? `<h2 class="ka-h2">Welt</h2><div class="ka-chips">${welten.map(w => `<button class="ka-chip ${w.id === AB.w ? 'sel' : ''}" data-act="abw" data-w="${w.id}" aria-pressed="${w.id === AB.w}">${esc(w.name)}</button>`).join('')}</div>
+        <h2 class="ka-h2">Themen</h2><div class="ka-chips">${grs.map(gr => `<button class="ka-chip ${AB.gr.includes(gr) ? 'sel' : ''}" data-act="abgr" data-gr="${gr}" aria-pressed="${AB.gr.includes(gr)}"><span aria-hidden="true">${groupIcon(gr)}</span> ${esc(GROUPS[gr].t)}</button>`).join('')}</div>` : `<p class="muted">Das Blatt nimmt bis zu ${AB.n} Aufgaben, die ${esc(S.profile.name)} zuletzt falsch hatte.</p>`}
+        <h2 class="ka-h2">Wie viele Aufgaben?</h2><div class="seg ka-seg">${AB_LEN.map(n => `<button class="${AB.n === n ? 'sel' : ''}" data-act="abn" data-n="${n}">${n}</button>`).join('')}</div>
+        <div class="row"><span class="lab">Lösungsblatt dazu<small>kommt beim Drucken auf eine eigene Seite</small></span><button class="switch ${AB.los ? 'on' : ''}" role="switch" aria-checked="${AB.los}" aria-label="Lösungsblatt dazu" data-act="ablos"></button></div>
+        <div class="acts"><button class="btn" data-act="abgo"${kann ? '' : ' disabled'}>${AB.q.length ? '🔄 Andere Aufgaben' : 'Arbeitsblatt erstellen'}</button>${AB.q.length ? '<button class="btn" data-act="abprint">🖨️ Drucken</button>' : ''}</div>
+        <p class="muted">Hör-Aufgaben und Spiele mit eigenen Formen (zum Beispiel Schreibschrift oder Logik-Bilder) lassen sich nicht drucken und werden übersprungen.</p></section>
+      ${AB.q.length ? `<section class="ab-vor"><p class="muted">Vorschau:</p>${abBlattHTML()}</section>` : ''}
+    </main>`, AB.w);
+}
+function abDruck() {
+  const b = document.getElementById('abBlatt'); if (!b) return;
+  let d = document.getElementById('abDruck'); if (d) d.remove();
+  d = b.cloneNode(true); d.id = 'abDruck'; document.body.appendChild(d); document.documentElement.classList.add('ab-drucken');
+  const weg = () => { document.documentElement.classList.remove('ab-drucken'); const x = document.getElementById('abDruck'); if (x) x.remove(); window.removeEventListener('afterprint', weg); };
+  window.addEventListener('afterprint', weg);
+  try { window.print(); } catch (e) { weg(); toast('Drucken klappt auf diesem Gerät leider nicht.'); }
+  setTimeout(() => { if (!window.matchMedia || !window.matchMedia('print').matches) weg(); }, 60000);
+}
+function abParentsHTML() {
+  return `<section class="card"><h2>🖨️ Arbeitsblatt drucken</h2>
+    <p class="muted">Aus einem Thema oder aus den offenen Fehlern ein Blatt zum Ausdrucken machen, auf Wunsch mit Lösungsseite. Gut zum Üben mit dem Stift vor einer Klassenarbeit.</p>
+    <div class="acts"><button class="btn" data-act="abopen">Arbeitsblatt erstellen</button></div></section>`;
+}
+Object.assign(ACT, {
+  abopen: () => { AB.q = []; showBlatt(); },
+  absrc: t => { AB.src = t.dataset.s === 'fehler' ? 'fehler' : 'thema'; AB.q = []; showBlatt(); },
+  abw: t => { AB.w = t.dataset.w; AB.gr = []; AB.q = []; showBlatt(); },
+  abgr: t => { const gr = t.dataset.gr; AB.gr = AB.gr.includes(gr) ? AB.gr.filter(x => x !== gr) : AB.gr.concat(gr); AB.q = []; showBlatt(); },
+  abn: t => { AB.n = Number(t.dataset.n) || 12; AB.q = []; showBlatt(); },
+  ablos: () => { AB.los = !AB.los; showBlatt(); },
+  abgo: () => { AB.q = abMake(); if (!AB.q.length) toast('Dazu gibt es keine druckbaren Aufgaben. Wähle ein anderes Thema.'); showBlatt(); if (AB.q.length) { const v = document.querySelector('.ab-vor'); if (v && v.scrollIntoView) v.scrollIntoView({ block: 'start' }); } },
+  abprint: () => abDruck()
+});
 
 /*@@src lumi_live.js@@*/
 
