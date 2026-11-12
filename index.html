@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-1FGz1ReCHwq+zmrjpHBlT+kWx9WWwZYrqNn8KXak8iw=' 'sha256-0SFl5fEkeGv0kbiNOrj7Iq62H9MXXxy7JmXIncgmX4s=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-cn73iyh3M7306Irm8lwn0IQ1T1ioDuyI4EsDU+vV85Q=' 'sha256-xwq1UfTpYy5ID0zEYC11XLb/ECihuEkjaEI834zAFas=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -6522,6 +6522,41 @@ body.calm .dop-c.neu, body.calm .ks-c.nein { animation: none; }
 .pps-yaml[rows="1"] { height: 46px; min-height: 0; resize: none; }
 .pps-sl { margin: 14px 0 0; font-size: 14px; font-weight: 700; opacity: .8; }
 
+.n6-sa { text-align: left; display: grid; gap: 8px; font-size: 19px; line-height: 1.4; }
+.n6-sa p { margin: 0; }
+.n6-fr { font-weight: 800; }
+.n6-re { font-weight: 800; font-size: 22px; padding: 8px 12px; border-radius: 12px; background: var(--surface-2); justify-self: start; }
+.n6-ta { width: 100%; box-sizing: border-box; font: inherit; font-size: 16px; line-height: 1.4; resize: vertical; margin-top: 10px; }
+.wz-card { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; margin-bottom: 18px; padding-top: 14px; padding-bottom: 14px; }
+.wz-card.da { border: 3px solid #2F9E6E; }
+.wz-t { display: grid; gap: 2px; }
+.wz-t b { font-size: 19px; } .wz-t span { font-size: 15px; opacity: .9; }
+.wz-tage { display: flex; gap: 6px; }
+.wz-tage span { width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; font-weight: 800; font-size: 14px; background: var(--surface-2); border: 2px solid var(--line-deep); }
+.wz-tage span.an { background: #2F9E6E; border-color: #2F9E6E; color: #fff; }
+.wz-tage span.heute { box-shadow: 0 0 0 3px var(--gold, #f0b429); }
+.wz-zwei { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 8px 0 12px; }
+.wz-sp { display: grid; gap: 2px; padding: 10px 12px; border-radius: 12px; background: var(--surface-2); }
+.wf { position: absolute; inset: 0; display: flex; flex-wrap: wrap; gap: 16px 28px; align-items: center; align-content: center; justify-content: center; padding: 12px; box-sizing: border-box; overflow-y: auto; touch-action: pan-y; background: linear-gradient(#FFF6E0, #FFE3B0); }
+.wf-links { display: grid; gap: 14px; justify-items: center; max-width: 440px; }
+.wf-reihe { display: flex; gap: 10px; }
+.wf-reihe.leer { opacity: .35; }
+.wf-w { width: clamp(52px, 15vw, 72px); height: clamp(52px, 15vw, 72px); padding: 8px; border-radius: 14px; border: 3px solid #33475B; background: #fff; display: grid; grid-template-columns: repeat(3, 1fr); grid-template-rows: repeat(3, 1fr); gap: 2px; cursor: pointer; box-shadow: 0 4px 0 #33475B; }
+.wf-w i { border-radius: 50%; }
+.wf-w i.p { background: #33475B; }
+.wf-w.halt { background: #F9D56E; transform: translateY(3px); box-shadow: 0 1px 0 #33475B; }
+.wf-w:disabled { cursor: default; }
+.wf-hin { margin: 0; font-size: 15px; text-align: center; color: #33475B; }
+.wf-frage { display: grid; gap: 12px; justify-items: center; text-align: center; padding: 14px 16px; border-radius: 16px; background: #fff; border: 3px solid #33475B; color: #1F2D3A; font-size: 18px; }
+.wf-opts { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+.wf-opts .btn { min-width: 64px; font-size: 22px; }
+.wf-kat { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; width: min(100%, 380px); }
+.wf-k { font: inherit; text-align: left; cursor: pointer; display: grid; grid-template-columns: 1fr auto; gap: 0 8px; align-items: center; padding: 8px 12px; border-radius: 12px; background: #fff; border: 2px solid #33475B; color: #1F2D3A; }
+.wf-k small { grid-column: 1; font-size: 12px; opacity: .75; } .wf-k span { grid-column: 2; grid-row: 1 / 3; font-size: 22px; font-weight: 800; }
+.wf-k:disabled { cursor: default; opacity: .55; } .wf-k.fertig { opacity: 1; background: #DFF3E4; border-color: #2F9E6E; }
+.wf-bonus { grid-column: 1 / -1; text-align: center; font-size: 15px; color: #33475B; }
+@media (max-width: 480px) { .wz-zwei { grid-template-columns: 1fr; } .n6-sa { font-size: 17px; } }
+
 /* ---- style_pa.css ---- */
 
 .pa { min-height: 100vh; }
@@ -8780,8 +8815,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '2.75.0';
-  var MAP = {"probe":0,"files":[[8770,"fehler_kern.js"],[9058,null],[9060,"data.js"],[9755,"data_more.js"],[10112,"data_su2.js"],[10339,"data_es.js"],[10681,"data_wissen.js"],[10880,"data_v21.js"],[11563,"data_v24.js"],[12049,"data_v25.js"],[12530,"data_v26.js"],[12629,"data_v29.js"],[12934,"data_v30.js"],[13264,"data_v31.js"],[13570,"data_kunst.js"],[13766,"data_v214.js"],[13869,"data_v216.js"],[14162,"schrift.js"],[14462,"eingabe.js"],[14673,"data_k34m.js"],[15191,"data_k34d.js"],[15545,"data_k34s.js"],[15999,"data_v224.js"],[16872,"data_v225w.js"],[17241,"data_v225k.js"],[17685,"data_herz.js"],[18039,"data_fb226.js"],[18182,"data_tf226.js"],[18389,"data_v227a.js"],[19480,"data_v227b.js"],[20434,"data_h28b.js"],[20474,"data_l28a.js"],[21340,"data_l28b.js"],[22520,"data_schaetz.js"],[23002,"data_party8.js"],[23052,"data_alce.js"],[23712,"data_alce2.js"],[23961,"data_alce3.js"],[24376,"registry.js"],[24890,"app.js"],[26061,"fun.js"],[26641,"fun2.js"],[26957,"atelier.js"],[27331,"kunst225.js"],[27521,"herz.js"],[27885,"reise.js"],[28187,"iglu.js"],[28353,"offline.js"],[28460,"party.js"],[28944,"meine.js"],[29300,"loeffel.js"],[29471,"trend.js"],[30013,"fun228a.js"],[30864,"fun228b.js"],[31525,"kueche.js"],[32564,"stimme.js"],[32619,"klassen.js"],[32768,"freunde_vorab.js"],[32789,"mut.js"],[33211,"schule.js"],[33700,"fussball226.js"],[34022,"schaetzen.js"],[34453,"party8.js"],[35072,"tiere.js"],[35531,"fussball232.js"],[35746,"party8b.js"],[36048,"weg.js"],[36269,"px.js"],[36680,"px_data.js"],[36937,"pxwelt.js"],[37018,"px_abenteuer.js"],[37819,"px_abenteuer2.js"],[38568,"px_ski.js"],[39210,"px_wurf.js"],[39739,"px_insel.js"],[40940,"px_kicker.js"],[41875,"px_eis.js"],[42861,"px_run.js"],[44076,"px_brk.js"],[45038,"px_pol.js"],[46389,"px_frog.js"],[47649,"px_angel.js"],[48964,"px_golf.js"],[49998,"px_tauch.js"],[51263,"px_hockey.js"],[52219,"px_lab.js"],[53554,"px_plopp.js"],[54760,"px_stadion.js"],[56264,"px_training.js"],[56633,"cm.js"],[57123,"cmwelt.js"],[57179,"cm_baeck.js"],[57972,"cm_bahn.js"],[58736,"cm_detek.js"],[59453,"cm_markt.js"],[60166,"ff.js"],[60323,"ff_mathe.js"],[62313,"ff_deutsch.js"],[63901,"ff_sach_a.js"],[66150,"ff_sach_b.js"],[68379,"ff_sprachen.js"],[70787,"zm.js"],[71700,"tt.js"],[71913,"data_tagebuch.js"],[71956,"data_hoerspiel.js"],[72115,"leseecke.js"],[72434,"kt.js"],[72737,"comicbuch.js"],[73015,"alce.js"],[73178,"alce_aufg.js"],[73348,"formen.js"],[73799,"data_formen.js"],[74040,"data_formen2.js"],[74262,"spielzeit.js"],[74407,"data_faktmeinung.js"],[74526,"data_es248.js"],[74790,"data_en249.js"],[75029,"data_wissen249.js"],[75460,"data_kunst249.js"],[75743,"data_fussball250.js"],[75867,"data_werte252.js"],[76120,"data_lesen252.js"],[76181,"data_k34_252.js"],[76267,"art254.js"],[76385,"data_werte255.js"],[76523,"data_lesen255.js"],[76659,"forscher255.js"],[76807,"zufall250.js"],[76853,"stufe259.js"],[76863,"advent.js"],[77126,"wdh.js"],[77224,"denk.js"],[77261,"data_viaje265.js"],[77404,"klassenarbeit.js"],[77537,"quizduell.js"],[77660,"neu267.js"],[77925,"prog.js"],[78030,"lernstand.js"],[78097,"blatt.js"],[78199,"data_es271.js"],[78313,"plus269.js"],[78407,"schach.js"],[78634,"schachtaktik.js"],[78805,"fun270.js"],[78968,"data_neu274.js"],[79177,"plus272.js"],[79231,"spiele274.js"],[79354,"kasten.js"],[79458,"erklaer.js"],[79571,"apa.js"],[79652,"lumi_live.js"],[79768,"sicher.js"],[79952,"stil.js"],[80006,"freunde.js"],[80143,"start.js"],[80153,null],[80163,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '2.76.0';
+  var MAP = {"probe":0,"files":[[8805,"fehler_kern.js"],[9093,null],[9095,"data.js"],[9790,"data_more.js"],[10147,"data_su2.js"],[10374,"data_es.js"],[10716,"data_wissen.js"],[10915,"data_v21.js"],[11598,"data_v24.js"],[12084,"data_v25.js"],[12565,"data_v26.js"],[12664,"data_v29.js"],[12969,"data_v30.js"],[13299,"data_v31.js"],[13605,"data_kunst.js"],[13801,"data_v214.js"],[13904,"data_v216.js"],[14197,"schrift.js"],[14497,"eingabe.js"],[14708,"data_k34m.js"],[15226,"data_k34d.js"],[15580,"data_k34s.js"],[16034,"data_v224.js"],[16907,"data_v225w.js"],[17276,"data_v225k.js"],[17720,"data_herz.js"],[18074,"data_fb226.js"],[18217,"data_tf226.js"],[18424,"data_v227a.js"],[19515,"data_v227b.js"],[20469,"data_h28b.js"],[20509,"data_l28a.js"],[21375,"data_l28b.js"],[22555,"data_schaetz.js"],[23037,"data_party8.js"],[23087,"data_alce.js"],[23747,"data_alce2.js"],[23996,"data_alce3.js"],[24411,"registry.js"],[24925,"app.js"],[26102,"fun.js"],[26682,"fun2.js"],[26998,"atelier.js"],[27372,"kunst225.js"],[27562,"herz.js"],[27926,"reise.js"],[28228,"iglu.js"],[28394,"offline.js"],[28501,"party.js"],[28985,"meine.js"],[29341,"loeffel.js"],[29512,"trend.js"],[30054,"fun228a.js"],[30905,"fun228b.js"],[31566,"kueche.js"],[32605,"stimme.js"],[32660,"klassen.js"],[32809,"freunde_vorab.js"],[32830,"mut.js"],[33252,"schule.js"],[33741,"fussball226.js"],[34063,"schaetzen.js"],[34494,"party8.js"],[35113,"tiere.js"],[35572,"fussball232.js"],[35787,"party8b.js"],[36089,"weg.js"],[36310,"px.js"],[36721,"px_data.js"],[36978,"pxwelt.js"],[37059,"px_abenteuer.js"],[37860,"px_abenteuer2.js"],[38609,"px_ski.js"],[39251,"px_wurf.js"],[39780,"px_insel.js"],[40981,"px_kicker.js"],[41916,"px_eis.js"],[42902,"px_run.js"],[44117,"px_brk.js"],[45079,"px_pol.js"],[46430,"px_frog.js"],[47690,"px_angel.js"],[49005,"px_golf.js"],[50039,"px_tauch.js"],[51304,"px_hockey.js"],[52260,"px_lab.js"],[53595,"px_plopp.js"],[54801,"px_stadion.js"],[56305,"px_training.js"],[56674,"cm.js"],[57164,"cmwelt.js"],[57220,"cm_baeck.js"],[58013,"cm_bahn.js"],[58777,"cm_detek.js"],[59494,"cm_markt.js"],[60207,"ff.js"],[60364,"ff_mathe.js"],[62354,"ff_deutsch.js"],[63942,"ff_sach_a.js"],[66191,"ff_sach_b.js"],[68420,"ff_sprachen.js"],[70828,"zm.js"],[71741,"tt.js"],[71954,"data_tagebuch.js"],[71997,"data_hoerspiel.js"],[72156,"leseecke.js"],[72475,"kt.js"],[72778,"comicbuch.js"],[73056,"alce.js"],[73219,"alce_aufg.js"],[73389,"formen.js"],[73840,"data_formen.js"],[74081,"data_formen2.js"],[74303,"spielzeit.js"],[74448,"data_faktmeinung.js"],[74567,"data_es248.js"],[74831,"data_en249.js"],[75070,"data_wissen249.js"],[75501,"data_kunst249.js"],[75784,"data_fussball250.js"],[75908,"data_werte252.js"],[76161,"data_lesen252.js"],[76222,"data_k34_252.js"],[76308,"art254.js"],[76426,"data_werte255.js"],[76564,"data_lesen255.js"],[76700,"forscher255.js"],[76848,"zufall250.js"],[76894,"stufe259.js"],[76904,"advent.js"],[77167,"wdh.js"],[77265,"denk.js"],[77302,"data_viaje265.js"],[77445,"klassenarbeit.js"],[77578,"quizduell.js"],[77701,"neu267.js"],[77966,"prog.js"],[78071,"lernstand.js"],[78138,"blatt.js"],[78240,"data_es271.js"],[78354,"plus269.js"],[78448,"schach.js"],[78675,"schachtaktik.js"],[78846,"fun270.js"],[79009,"data_neu274.js"],[79218,"plus272.js"],[79272,"spiele274.js"],[79395,"kasten.js"],[79499,"erklaer.js"],[79612,"apa.js"],[79693,"neu276.js"],[79834,"spiele276.js"],[79884,"lumi_live.js"],[80000,"sicher.js"],[80184,"stil.js"],[80238,"freunde.js"],[80375,"start.js"],[80385,null],[80395,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -24891,9 +24926,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '2.75.0';
+const APP_VERSION = '2.76.0';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "2.76.0", d: "12.11.2026", t: ["Vokabelkasten: eigene Karten aus dem Unterricht (Elternbereich) und Hör-Aufgaben", "Mathe, neu: Sachaufgaben in Schritten für Klasse 3 und 4. Rechnung wählen, ausrechnen, Antwortsatz finden", "Kisten schieben: acht weitere Level. Spielhalle, neu: Würfel-Meister mit Rechen-Bonus", "Neu: Wochenziel auf der Startseite und Wochenbericht im Elternbereich", "Englisch: Christmas & winter und At the airport mit vier Antworten ab Stufe 2"] },
   { v: "2.75.0", d: "12.11.2026", t: ["Technische Pflege, keine neuen Inhalte in dieser Version"] },
   { v: "2.74.0", d: "12.11.2026", t: ["Mathe, drei neue Spiele: Bruchteile, Messen & Ablesen (Thermometer, Messbecher, Waage) und Winkel-Detektiv", "Deutsch, drei neue Spiele: Bindewörter, Wo oder wohin? und Der x-Laut", "Rätsel & Denk-Spiele: Kisten schieben mit 16 Leveln. Spielhalle: Fisch-Verdoppler"] },
   { v: "2.73.0", d: "12.11.2026", t: ["Korrektur in Mathe, Überschlagen: Die richtige Antwort stand auf Stufe 1 fast immer an zweiter Stelle. Jetzt wechselt die Stelle"] },
@@ -25270,6 +25306,7 @@ function showHome() {
     <main class="wrap home2" style="padding-block:6px 0">
       ${safeCard(hzBanner)}
       ${typeof apaHomeCard === 'function' ? safeCard(apaHomeCard) : ''}
+      ${typeof wzHomeCard === 'function' ? safeCard(wzHomeCard) : ''}
       ${typeof advHomeCard === 'function' ? safeCard(advHomeCard) : ''}
       ${typeof panHomeCard === 'function' ? safeCard(panHomeCard) : ''}
       ${typeof wdhHomeCard === 'function' ? safeCard(wdhHomeCard) : ''}
@@ -25748,6 +25785,7 @@ function finishRound(extra = {}) {
   const tk = dayKey(), wasBelow = (S.days[tk] || 0) < S.settings.goal;
   S.days[tk] = (S.days[tk] || 0) + 1;
   const goalNow = wasBelow && S.days[tk] >= S.settings.goal;
+  if (typeof wzRunde === 'function') { try { G.wzNeu = wzRunde(G); } catch (e) { G.wzNeu = false; } }
   const bdx = typeof bdIsToday === 'function' && bdIsToday() ? 2 : 1;
   const coins = (stars + bonusStars + (goalNow ? 3 : 0)) * bdx; S.coins = (S.coins || 0) + coins;
   const y = dayKey(addDays(new Date(), -1));
@@ -25784,6 +25822,7 @@ function showResult(r) {
     <p class="res-score">${sub}</p>
     ${typeof huLine === 'function' ? safeCard(huLine) : ''}
     ${G.apaR && typeof apaResultHTML === 'function' ? apaResultHTML(G.apaR) : ''}
+    ${G.wzNeu ? '<div class="apa-erg ok"><span aria-hidden="true">🎯</span><span><b>Wochenziel geschafft!</b> Dafür gibt es 5 Münzen extra.</span></div>' : ''}
     <div class="pills"><span class="pill gold">+${G.pts} Punkte</span><span class="pill">+${plural(r.stars, 'Stern', 'Sterne')}</span><span class="pill gold">🪙 +${r.coins} ${r.coins === 1 ? 'Münze' : 'Münzen'}</span>${r.bonusStars ? `<span class="pill gold">🎲 Tagesbonus +${r.bonusStars} ⭐</span>` : ''}${typeof bdIsToday === 'function' && bdIsToday() ? '<span class="pill gold">🎂 Geburtstag: doppelte Münzen</span>' : ''}
       ${r.lvMsg === 'up' ? `<span class="pill">⬆ Stufe ${gstate(G.id).lv} freigeschaltet${klOf(G.id, gstate(G.id).lv) > klasse() ? ' · ⭐ Vorsprung' : ''}</span>` : r.lvMsg === 'top' ? `<span class="pill">🏁 Höchste Stufe für ${klName(klasse())} geschafft</span>` : ''}</div>
     ${r.levelUp ? `<div class="reward"><span class="big">${L.title[1]}</span><div><b>Level ${r.levelUp}!</b><span>Du bist jetzt ${L.title[0]}.</span></div></div>` : ''}
@@ -25912,7 +25951,9 @@ function showParents(notice = '') {
     ${typeof fpParentsHTML === 'function' ? fpParentsHTML() : ''}
     ${typeof spzParentsHTML === 'function' ? spzParentsHTML() : ''}
     ${typeof lsParentsHTML === 'function' ? lsParentsHTML() : ''}
+    ${typeof wzParentsHTML === 'function' ? wzParentsHTML() : ''}
     ${typeof apaParentsHTML === 'function' ? apaParentsHTML() : ''}
+    ${typeof vkParentsHTML === 'function' ? vkParentsHTML() : ''}
     ${typeof ekParentsHTML === 'function' ? ekParentsHTML() : ''}
     ${typeof abParentsHTML === 'function' ? abParentsHTML() : ''}
     ${typeof kaParentsHTML === 'function' ? kaParentsHTML() : ''}
@@ -79649,6 +79690,197 @@ Object.assign(ACT, {
   apago: t => { const x = apaS().l.find(a => a.id === t.dataset.id); if (!x || !apaSpielOk(x.g)) return showHome(); Sound.unlock(); Sound.tap(); startGame(x.g); }
 });
 
+/*@@src neu276.js@@*/
+
+
+
+
+
+
+
+
+
+const N6_XMAS = ['sandcastle', 'cake', 'garden', 'rabbit', 'T-shirt', 'sleeping', 'reading', 'sandwiches', 'cooking', 'ice cream', 'carrot', 'Tree', 'Snowman', 'boot', 'cards', 'homework', 'weather'];
+const N6_AIR = ["At ten o'clock.", "Yes, it's mine.", 'About five hours.', 'Window, please.', 'To Tenerife.', 'Apple juice, please.', "It's 12A.", 'About five hours.', 'No, my family lives here.', 'Go straight on and turn left.', "It's 12A.", 'Here you are.'];
+[['christmasen', q => N6_XMAS[G27B_XMAS_GAP.findIndex(r => 'xg' + r[0] === q.key)]], ['airporten', q => N6_AIR[G27B_AIR_DLG.findIndex(r => 'ad' + r[0] === q.key)]]].forEach(([id, f]) => {
+  const g = GAMES[id]; if (!g || !g.gen || typeof p2Vier !== 'function') return;
+  P2[id] = f; const alt = g.gen; g.gen = ctx => p2Vier(id, alt(ctx), ctx);
+  if (!g.max) { g.max = 2; g.start = [1, 1, 2, 2]; }
+});
+
+
+function vkEigen(l) { const k = vkS(l); return Array.isArray(k.eig) ? k.eig : (k.eig = []); }
+function vkEigParse(text) {
+  const out = [], da = new Set();
+  String(text).split(/\r?\n/).forEach(z => {
+    const m = z.replace(/^\s*\d+[.)]\s*/, '').split(/\s*(?:=|;|\t| - )\s*/);
+    if (m.length < 2) return; const w = panLeer(m[0]).slice(0, 40), de = panLeer(m.slice(1).join(' ')).slice(0, 60);
+    if (!w || !de || da.has(w.toLowerCase()) || out.length >= 300) return; da.add(w.toLowerCase()); out.push([w, de]);
+  });
+  return out;
+}
+const panLeer = s => String(s).replace(/[\u0000-\u001f\u007f]/g, ' ').replace(/\s+/g, ' ').trim();
+Object.keys(VK_L).forEach(l => {
+  const basis = VK_L[l].voc;
+  VK_L[l].voc = () => { const e = vkEigen(l); if (!e.length) return basis(); const eig = new Set(e.map(x => x[0])); return e.map(x => [x[0], '📝', x[1], 'eigene', 0]).concat(basis().filter(v => !eig.has(v[0]))); };
+});
+const vkHoerOk = () => !!(S.settings.speech && typeof Speech !== 'undefined' && Speech.ok && S.settings.vkHoer !== false);
+const vkFrage0 = vkFrage;
+vkFrage = function (l, v, form) {
+  if (form !== 1 || !vkHoerOk() || !R.chance(.5)) return vkFrage0(l, v, form);
+  const L = VK_L[l], [w, , de] = v, voc = L.voc(), frei = x => x[0] !== w && x[2] !== de, dis = R.shuffle(voc.filter(x => frei(x) && x[3] === v[3])).concat(R.shuffle(voc.filter(x => frei(x) && x[3] !== v[3]))).slice(0, 3);
+  return mkChoice({ prompt: 'Hör genau zu. Was heißt das auf Deutsch?', visual: '<button class="listen-btn" data-act="listen" aria-label="Anhören"><span>🔊</span></button>', answer: de, wrong: dis.map(x => x[2]), layout: 'col', listen: { text: w, lang: L.lang }, explain: `${w} = ${de}`, key: 'vk' + l + 'h' + w, after: w, afterLang: L.lang });
+};
+var VK_EL = 'es';
+function vkParentsHTML() {
+  const l = VK_EL, e = vkEigen(l), z = vkZahl(l), an = S.settings.vkHoer !== false;
+  return `<section class="card" id="vkBox"><h2>🗂️ Vokabelkasten: eigene Karten</h2>
+    <p class="muted">Trag hier die Wörter ein, die gerade im Unterricht dran sind: ein Paar pro Zeile, erst das fremde Wort, dann ein Gleichheitszeichen, dann das deutsche. Eigene Karten kommen im Kasten zuerst dran. Löschst du eine Zeile, verschwindet die Karte aus dem Kasten.</p>
+    <div class="seg">${Object.keys(VK_L).map(k => `<button class="${k === l ? 'sel' : ''}" data-act="vkeigl" data-l="${k}">${VK_L[k].name}</button>`).join('')}</div>
+    <textarea id="vkeig" class="input n6-ta" rows="6" spellcheck="false" autocapitalize="off" placeholder="${l === 'es' ? 'el cuaderno = das Heft&#10;la goma = der Radiergummi' : 'the ruler = das Lineal&#10;the rubber = der Radiergummi'}" aria-label="Eigene Karten">${esc(e.map(x => x[0] + ' = ' + x[1]).join('\n'))}</textarea>
+    <div class="acts"><button class="btn sm" data-act="vkeigsave">Speichern</button></div>
+    <p class="muted" id="vkeigst">${plural(e.length, 'eigene Karte', 'eigene Karten')} · im Kasten liegen ${z.alle - z.neu} von ${z.alle} Karten, heute ${z.faellig === 1 ? 'ist 1' : 'sind ' + z.faellig} dran.</p>
+    <div class="row"><span class="lab">Hör-Aufgaben im Kasten<small>Lumi spricht das Wort, das Kind wählt die Bedeutung. Nur wenn das Vorlesen eingeschaltet ist.</small></span><button class="switch ${an ? 'on' : ''}" role="switch" aria-checked="${an}" aria-label="Hör-Aufgaben im Kasten" data-act="vkhoer"></button></div></section>`;
+}
+function vkBoxNeu(msg) { const b = document.getElementById('vkBox'); if (b) b.outerHTML = vkParentsHTML(); if (msg) { const s = document.getElementById('vkeigst'); if (s) s.textContent = msg; } }
+Object.assign(ACT, {
+  vkeigl: t => { VK_EL = t.dataset.l; vkBoxNeu(); },
+  vkeigsave: () => { const a = document.getElementById('vkeig'); if (!a) return; const neu = vkEigParse(a.value), zeilen = a.value.split(/\r?\n/).filter(z => z.trim()).length; vkS(VK_EL).eig = neu; save();
+    vkBoxNeu(`Gespeichert: ${plural(neu.length, 'eigene Karte', 'eigene Karten')}.${zeilen > neu.length ? ` ${plural(zeilen - neu.length, 'Zeile', 'Zeilen')} konnte ich nicht lesen (kein Gleichheitszeichen oder doppelt).` : ''} Neue Karten kommen in der nächsten Kasten-Runde zuerst.`); },
+  vkhoer: t => { S.settings.vkHoer = S.settings.vkHoer === false; save(); t.classList.toggle('on', S.settings.vkHoer !== false); t.setAttribute('aria-checked', S.settings.vkHoer !== false); }
+});
+
+
+const N6_NAMEN = ['Mia', 'Tom', 'Lena', 'Jonas', 'Emma', 'Ben', 'Lumi'];
+
+const N6_TPL = [
+  { lv: 1, f: () => { const n = R.pick(N6_NAMEN), a = R.int(2, 6), b = R.int(2, 8), c = R.int(3, 15), r = a * b + c; return { text: `${n} kauft ${a} Hefte. Ein Heft kostet ${b} €. Dazu kommt ein Füller für ${c} €.`, frage: `Wie viel bezahlt ${n} zusammen?`, expr: `${a} · ${b} + ${c}`, falsch: [[`${a} + ${b} + ${c}`, a + b + c], [`${a} · ${b} − ${c}`, a * b - c], [`${a} · ${c} + ${b}`, a * c + b], [`${a} · (${b} + ${c})`, a * (b + c)]], weg: `${a} · ${b} = ${a * b}, dann ${a * b} + ${c} = ${r}`, res: r, einh: '€', satz: `${n} bezahlt zusammen ${r} €.`, fs: [`Die Hefte kosten zusammen ${r} €.`, `Ein Heft kostet ${r} €.`] }; } },
+  { lv: 1, f: () => { const n = R.pick(N6_NAMEN), a = R.int(2, 5), b = R.int(2, 6), c = R.pick([20, 30, 50]), r = c - a * b; return { text: `${n} hat ${c} €. ${n} kauft ${a} Bälle. Ein Ball kostet ${b} €.`, frage: `Wie viel Geld hat ${n} danach noch?`, expr: `${c} − ${a} · ${b}`, falsch: [[`${c} − ${a} − ${b}`, c - a - b], [`${c} + ${a} · ${b}`, c + a * b], [`${c} − ${a} + ${b}`, c - a + b], [`(${c} − ${a}) · ${b}`, (c - a) * b]], weg: `${a} · ${b} = ${a * b}, dann ${c} − ${a * b} = ${r}`, res: r, einh: '€', satz: `${n} hat danach noch ${r} €.`, fs: [`Die Bälle kosten zusammen ${r} €.`, `Ein Ball kostet ${r} €.`] }; } },
+  { lv: 1, f: () => { const a = R.int(18, 40), b = R.int(3, 12), c = R.int(2, 14), r = a - b + c; return { text: `Im Bus sitzen ${a} Kinder. An der Haltestelle steigen ${b} Kinder aus und ${c} Kinder ein.`, frage: 'Wie viele Kinder sitzen jetzt im Bus?', expr: `${a} − ${b} + ${c}`, falsch: [[`${a} + ${b} + ${c}`, a + b + c], [`${a} − ${b} − ${c}`, a - b - c], [`${a} + ${b} − ${c}`, a + b - c], [`${b} + ${c}`, b + c]], weg: `${a} − ${b} = ${a - b}, dann ${a - b} + ${c} = ${r}`, res: r, einh: 'Kinder', satz: `Jetzt sitzen ${r} Kinder im Bus.`, fs: [`An der Haltestelle steigen ${r} Kinder aus.`, `Im Bus sind noch ${r} Plätze frei.`] }; } },
+  { lv: 1, f: () => { const n = R.pick(N6_NAMEN), a = R.int(3, 6), b = R.int(4, 8), c = R.int(5, 20), r = a * b + c; return { text: `${n} hat ${a} Tüten mit je ${b} Stickern. Von Oma kommen noch ${c} Sticker dazu.`, frage: `Wie viele Sticker hat ${n} jetzt?`, expr: `${a} · ${b} + ${c}`, falsch: [[`${a} + ${b} + ${c}`, a + b + c], [`${a} · ${b} − ${c}`, a * b - c], [`${a} · (${b} + ${c})`, a * (b + c)], [`${b} + ${c}`, b + c]], weg: `${a} · ${b} = ${a * b}, dann ${a * b} + ${c} = ${r}`, res: r, einh: 'Sticker', satz: `${n} hat jetzt ${r} Sticker.`, fs: [`In einer Tüte sind ${r} Sticker.`, `Oma schenkt ${n} ${r} Sticker.`] }; } },
+  { lv: 1, f: () => { const n = R.pick(N6_NAMEN), a = R.int(2, 5), b = R.int(10, 40), c = R.int(3, 8), r = b + a * c; return { text: `${n} hat schon ${b} € gespart. Jede Woche kommen ${a} € dazu.`, frage: `Wie viel Geld hat ${n} nach ${c} Wochen?`, expr: `${b} + ${a} · ${c}`, falsch: [[`(${b} + ${a}) · ${c}`, (b + a) * c], [`${b} + ${a} + ${c}`, b + a + c], [`${b} · ${a} + ${c}`, b * a + c], [`${a} · ${c}`, a * c]], weg: `${a} · ${c} = ${a * c}, dann ${b} + ${a * c} = ${r}`, res: r, einh: '€', satz: `Nach ${c} Wochen hat ${n} ${r} €.`, fs: [`In ${c} Wochen kommen ${r} € dazu.`, `${n} spart jede Woche ${r} €.`] }; } },
+  { lv: 1, f: () => { const a = R.int(6, 12), b = R.int(3, 7), c = R.int(10, Math.min(30, a * b - 4)), r = a * b - c; return { text: `Die Hühner legen jeden Tag ${a} Eier. Nach ${b} Tagen werden ${c} Eier verkauft.`, frage: 'Wie viele Eier bleiben übrig?', expr: `${a} · ${b} − ${c}`, falsch: [[`${a} + ${b} − ${c}`, a + b - c], [`${a} · ${b} + ${c}`, a * b + c], [`${a} · ${c} − ${b}`, a * c - b], [`${c} − ${a}`, c - a]], weg: `${a} · ${b} = ${a * b}, dann ${a * b} − ${c} = ${r}`, res: r, einh: 'Eier', satz: `Es bleiben ${r} Eier übrig.`, fs: [`Es werden ${r} Eier verkauft.`, `Die Hühner legen an einem Tag ${r} Eier.`] }; } },
+  { lv: 2, f: () => { const a = R.int(10, 25) * 10, b = R.int(5, 20) * 10, c = a + b + R.int(4, 30) * 10, r = c - a - b; return { text: `Die Fahrt zur Oma ist ${c} km lang. Vor der Pause fährt die Familie ${a} km, nach der Pause ${b} km.`, frage: 'Wie viele Kilometer fehlen dann noch?', expr: `${c} − (${a} + ${b})`, falsch: [[`${c} − ${a} + ${b}`, c - a + b], [`${c} + ${a} + ${b}`, c + a + b], [`${a} + ${b}`, a + b], [`${c} − ${b} + ${a}`, c - b + a]], weg: `${a} + ${b} = ${a + b}, dann ${c} − ${a + b} = ${r}`, res: r, einh: 'km', satz: `Es fehlen noch ${r} km.`, fs: [`Die Familie ist schon ${r} km gefahren.`, `Die Fahrt ist ${r} km lang.`] }; } },
+  { lv: 2, f: () => { const c = R.pick([4, 5, 6]), ges = c * R.int(8, 11), a = R.int(Math.max(16, ges - 29), Math.min(29, ges - 16)), b = ges - a, r = ges / c; return { text: `In der Klasse 4a sind ${a} Kinder, in der 4b sind ${b} Kinder. Für den Ausflug bilden alle zusammen ${c} gleich große Gruppen.`, frage: 'Wie viele Kinder sind in einer Gruppe?', expr: `(${a} + ${b}) : ${c}`, falsch: [[`${a} + ${b} − ${c}`, a + b - c], [`(${a} + ${b}) · ${c}`, (a + b) * c], [`${a} + ${b} + ${c}`, a + b + c], [`${a} − ${b}`, a - b]], weg: `${a} + ${b} = ${ges}, dann ${ges} : ${c} = ${r}`, res: r, einh: 'Kinder', satz: `In jeder Gruppe sind ${r} Kinder.`, fs: [`Zusammen fahren ${r} Kinder mit.`, `Es gibt ${r} Gruppen.`] }; } },
+  { lv: 2, f: () => { const a = R.pick([3, 4, 5, 6]), b = R.int(2, 5), c = a * R.int(2, 4), r = b * c / a; return { text: `${a} Kinder teilen sich ${b} Tüten Bonbons gerecht. In jeder Tüte sind ${c} Bonbons.`, frage: 'Wie viele Bonbons bekommt jedes Kind?', expr: `${b} · ${c} : ${a}`, falsch: [[`${b} · ${c} − ${a}`, b * c - a], [`${b} · ${c} · ${a}`, b * c * a], [`${b} + ${c} + ${a}`, b + c + a], [`${c} − ${a}`, c - a]], weg: `${b} · ${c} = ${b * c}, dann ${b * c} : ${a} = ${r}`, res: r, einh: 'Bonbons', satz: `Jedes Kind bekommt ${r} Bonbons.`, fs: [`Zusammen sind es ${r} Bonbons.`, `In jeder Tüte sind ${r} Bonbons.`] }; } },
+  { lv: 2, f: () => { const a = R.int(2, 3), e = R.int(8, 15), k = R.int(2, 4), f = R.int(4, 7), r = a * e + k * f; return { text: `Im Zoo kostet der Eintritt für Erwachsene ${e} € und für Kinder ${f} €. Familie Kaya kommt mit ${a} Erwachsenen und ${k} Kindern.`, frage: 'Wie viel bezahlt die Familie zusammen?', expr: `${a} · ${e} + ${k} · ${f}`, falsch: [[`(${a} + ${k}) · (${e} + ${f})`, (a + k) * (e + f)], [`${a} · ${e} − ${k} · ${f}`, a * e - k * f], [`${a} + ${e} + ${k} + ${f}`, a + e + k + f], [`${a} · ${f} + ${k} · ${e}`, a * f + k * e]], weg: `${a} · ${e} = ${a * e} und ${k} · ${f} = ${k * f}, dann ${a * e} + ${k * f} = ${r}`, res: r, einh: '€', satz: `Die Familie bezahlt zusammen ${r} €.`, fs: [`Die Erwachsenen bezahlen zusammen ${r} €.`, `Der Eintritt für ein Kind kostet ${r} €.`] }; } }
+];
+function n6Aufgabe(lv) { for (let i = 0; i < 20; i++) { const t = R.pick(N6_TPL.filter(x => x.lv <= lv && (lv < 2 || x.lv === 2 || R.chance(.3)))).f(); t.falsch = R.shuffle(t.falsch.filter((x, j, alle) => x[1] !== t.res && x[0] !== t.expr && alle.findIndex(y => y[0] === x[0]) === j)).slice(0, 3).map(x => x[0]); if (t.falsch.length === 3 && t.res > 0) return t; } return N6_TPL[0].f(); }
+const n6Text = (t, mehr = '') => `<div class="n6-sa"><p>${esc(t.text)}</p><p class="n6-fr">${esc(t.frage)}</p>${mehr}</div>`;
+function n6Schritt(t, s) {
+  if (s === 0) return mkChoice({ prompt: 'Schritt 1: Welche Rechnung passt zur Aufgabe?', visual: n6Text(t), answer: t.expr, wrong: t.falsch, layout: 'col', explain: `Es passt ${t.expr}. Der Rechenweg: ${t.weg}.`, key: 'ss0' + t.text });
+  if (s === 1) return mkNumber({ prompt: 'Schritt 2: Rechne aus.', visual: n6Text(t, `<p class="n6-re">${esc(t.expr)} = ?</p>`), answer: t.res, unit: t.einh, explain: `${t.weg}.`, key: 'ss1' + t.text });
+  return mkChoice({ prompt: 'Schritt 3: Welcher Antwortsatz passt zur Frage?', visual: n6Text(t, `<p class="n6-re">${esc(t.expr)} = ${t.res}</p>`), answer: t.satz, wrong: t.fs, layout: 'col', explain: `Gefragt war: ${t.frage} Darauf antwortet nur: ${t.satz}`, key: 'ss2' + t.text });
+}
+function genSachSchritte(ctx) {
+  const lv = (ctx && ctx.lv) || 1;
+  if (!(typeof G !== 'undefined' && G && G.mode === 'game' && G.id === 'sachschritte')) return n6Schritt(n6Aufgabe(lv), 1);
+  const A = G.ssA || (G.ssA = []), k = Math.floor(G.i / 3);
+  return n6Schritt(A[k] || (A[k] = n6Aufgabe(lv)), G.i % 3);
+}
+GAMES.sachschritte = { id: 'sachschritte', w: 'mathe', g: 'm-sach', t: 'Sachaufgaben in Schritten', d: 'Rechnung finden, ausrechnen, Antwortsatz: Schritt für Schritt', i: '🪜', gen: genSachSchritte, max: 2, start: [1, 1, 1, 2], klv: [3, 4], n: 9 };
+if (typeof EK !== 'undefined') EK.sachschritte = { t: 'Sachaufgaben lösen', e: ['Lies die Aufgabe genau. Was ist *gegeben*, was ist *gefragt*?', 'Suche die *Rechnung*. Oft brauchst du zwei Schritte: erst das eine ausrechnen, dann damit weiterrechnen.', 'Schreib einen *Antwortsatz*, der genau auf die Frage antwortet.'], b: 'Frage: Wie viel bezahlt Mia? · Rechnung: 3 · 4 + 5 = 17 · Antwort: Mia bezahlt 17 €.' };
+
+
+function wzS() { if (!isObj(S.wz)) S.wz = {}; const w = S.wz; if (!isObj(w.d)) w.d = {}; if (typeof w.ziel !== 'number') w.ziel = 5; return w; }
+function wzWoche(zurueck = 0) { const h = new Date(), mo = addDays(h, -((h.getDay() + 6) % 7) - 7 * zurueck); return [0, 1, 2, 3, 4, 5, 6].map(i => dayKey(addDays(mo, i))); }
+const wzLerntage = tage => tage.filter(k => (S.days[k] || 0) > 0).length;
+
+function wzRunde(g) {
+  const w = wzS(), k = dayKey(), d = w.d[k] || (w.d[k] = { ok: 0, bad: 0, g: {} });
+  d.ok += g.ok | 0; d.bad += g.bad | 0;
+  Object.keys(g.tally || {}).forEach(id => { const t = g.tally[id], x = d.g[id] || (d.g[id] = [0, 0, 0]); x[0] += t.ok | 0; x[1] += t.bad | 0; x[2]++; });
+  const alt = dayKey(addDays(new Date(), -42)); Object.keys(w.d).forEach(x => { if (x < alt) delete w.d[x]; });
+  const wo = wzWoche(0);
+  if (w.ziel > 0 && wzLerntage(wo) >= w.ziel && w.bel !== wo[0]) { w.bel = wo[0]; S.coins = (S.coins || 0) + 5; return true; }
+  return false;
+}
+function wzHomeCard() {
+  const w = wzS(); if (!w.ziel) return '';
+  const wo = wzWoche(0), n = wzLerntage(wo), heute = dayKey(), da = n >= w.ziel;
+  return `<section class="card wz-card${da ? ' da' : ''}"><div class="wz-t"><b>🎯 Wochenziel</b><span>${da ? `Geschafft! ${n} Lerntage in dieser Woche. 🎉` : `${n} von ${w.ziel} Lerntagen. ${w.ziel - n === 1 ? 'Noch ein Tag' : `Noch ${w.ziel - n} Tage`}, dann gibt es 5 Münzen.`}</span></div>
+    <div class="wz-tage" aria-hidden="true">${wo.map((k, i) => `<span class="${S.days[k] ? 'an' : ''}${k === heute ? ' heute' : ''}">${'MDMDFSS'[i]}</span>`).join('')}</div></section>`;
+}
+function wzSumme(tage) {
+  const w = wzS(), s = { tage: wzLerntage(tage), runden: 0, ok: 0, bad: 0, g: {} };
+  tage.forEach(k => { s.runden += S.days[k] || 0; const d = w.d[k]; if (!d) return; s.ok += d.ok; s.bad += d.bad; Object.keys(d.g).forEach(id => { const x = s.g[id] || (s.g[id] = [0, 0, 0]); d.g[id].forEach((v, i) => { x[i] += v; }); }); });
+  return s;
+}
+function wzBericht() {
+  const a = wzSumme(wzWoche(0)), b = wzSumme(wzWoche(1)), quote = s => (s.ok + s.bad ? Math.round(s.ok / (s.ok + s.bad) * 100) + ' %' : 'keine Daten'), name = id => (GAMES[id] ? GAMES[id].t : id);
+  const spiele = Object.keys(a.g).filter(id => GAMES[id]), viel = spiele.slice().sort((x, y) => a.g[y][2] - a.g[x][2]).slice(0, 3), q = id => a.g[id][0] / Math.max(1, a.g[id][0] + a.g[id][1]);
+  const gut = spiele.filter(id => a.g[id][0] + a.g[id][1] >= 8 && q(id) >= .85).sort((x, y) => q(y) - q(x)).slice(0, 3), ueben = spiele.filter(id => a.g[id][0] + a.g[id][1] >= 6 && q(id) < .65).sort((x, y) => q(x) - q(y)).slice(0, 3);
+  const vk = typeof vkZahl === 'function' ? Object.keys(VK_L).map(l => { const z = vkZahl(l); return z.alle - z.neu ? `${VK_L[l].name}: ${z.alle - z.neu} Karten im Kasten, ${z.f[6]} sicher gelernt, heute ${z.faellig} dran` : ''; }).filter(Boolean) : [];
+  const auf = typeof apaS === 'function' ? apaS().l : [], wo = wzWoche(0), erl = auf.filter(x => x.f && dayKey(new Date(x.f)) >= wo[0]).length, offen = auf.filter(x => !x.f).length;
+  return { a, b, quote, viel: viel.map(id => `${name(id)} (${plural(a.g[id][2], 'Runde', 'Runden')})`), gut: gut.map(id => `${name(id)} (${Math.round(q(id) * 100)} %)`), ueben: ueben.map(id => `${name(id)} (${Math.round(q(id) * 100)} %)`), vk, erl, offen };
+}
+function wzBerichtText() {
+  const B = wzBericht(), z = (t, s) => `${t}: ${s.tage} von 7 Lerntagen, ${plural(s.runden, 'Runde', 'Runden')}, richtig: ${B.quote(s)}`;
+  return [`Wochenbericht ${S.profile.name}, Woche ab ${wzWoche(0)[0].split('-').reverse().join('.')}`, z('Diese Woche', B.a), z('Letzte Woche', B.b), B.viel.length ? 'Am meisten geübt: ' + B.viel.join(', ') : '', B.gut.length ? 'Das lief gut: ' + B.gut.join(', ') : '', B.ueben.length ? 'Üben lohnt sich: ' + B.ueben.join(', ') : '',
+    B.vk.length ? 'Vokabelkasten: ' + B.vk.join(' · ') : '', B.erl || B.offen ? `Aufgaben: ${B.erl} erledigt, ${B.offen} offen` : ''].filter(Boolean).join('\n');
+}
+function wzParentsHTML() {
+  const w = wzS(), B = wzBericht(), sp = (t, s) => `<div class="wz-sp"><b>${t}</b><span>${s.tage} von 7 Lerntagen</span><span>${plural(s.runden, 'Runde', 'Runden')}</span><span>richtig: ${B.quote(s)}</span></div>`, li = (t, l) => (l.length ? `<p><b>${t}</b> ${l.map(esc).join(' · ')}</p>` : '');
+  return `<section class="card" id="wzBox"><h2>📊 Wochenbericht</h2>
+    <div class="wz-zwei">${sp('Diese Woche', B.a)}${sp('Letzte Woche', B.b)}</div>
+    ${li('Am meisten geübt:', B.viel)}${li('Das lief gut:', B.gut)}${li('Üben lohnt sich:', B.ueben)}${li('Vokabelkasten:', B.vk)}${B.erl || B.offen ? `<p><b>Aufgaben:</b> ${B.erl} erledigt, ${B.offen} offen</p>` : ''}
+    <p class="muted">Die Woche geht von Montag bis Sonntag. Lerntage und Runden gibt es auch rückwirkend. Richtig und falsch pro Spiel zählt die App erst seit Version 2.76 mit, die erste volle Auswertung steht also nach einer Woche da.</p>
+    <div class="row"><span class="lab">Wochenziel<small>So viele Lerntage pro Woche. Dafür gibt es einmal 5 Münzen und eine Karte auf der Startseite.</small></span><select class="input select" id="wzziel" aria-label="Wochenziel">${[0, 3, 4, 5, 6, 7].map(n => `<option value="${n}"${w.ziel === n ? ' selected' : ''}>${n ? n + ' Lerntage' : 'kein Wochenziel'}</option>`).join('')}</select></div>
+    <div class="acts"><button class="btn sm ghost" data-act="wzcopy">📋 Bericht als Text kopieren</button></div></section>`;
+}
+document.addEventListener('change', e => { if (e.target && e.target.id === 'wzziel') { wzS().ziel = Number(e.target.value) || 0; save(); toast(wzS().ziel ? `Wochenziel: ${wzS().ziel} Lerntage` : 'Wochenziel ausgeschaltet'); } });
+ACT.wzcopy = async () => { const t = wzBerichtText(); let ok = false; try { await navigator.clipboard.writeText(t); ok = true; } catch (e) { } toast(ok ? 'Bericht kopiert ✓' : 'Kopieren hat nicht geklappt.'); };
+
+/*@@src spiele276.js@@*/
+
+
+
+
+KS_LV.push(
+  { m: ['#######', '# @ ###', '# $# ##', '##  . #', '# .$  #', '#     #', '#######'], opt: 22 },
+  { m: ['#######', '#     #', '# $.  #', '#  $ ##', '# .##@#', '#     #', '#######'], opt: 22 },
+  { m: ['#######', '#     #', '# $#  #', '#  #  #', '#  #  #', '# $ .+#', '#######'], opt: 26 },
+  { m: ['########', '#    ###', '# .  $ #', '#.     #', '#@# $  #', '#   #  #', '########'], opt: 26 },
+  { m: ['########', '#      #', '# #$$  #', '#.   # #', '#.    ##', '# #   @#', '########'], opt: 27 },
+  { m: ['#######', '#  +  #', '# $.  #', '#   $ #', '# $## #', '#  .  #', '#######'], opt: 26 },
+  { m: ['#######', '#     #', '# $.$ #', '# #   #', '## $  #', '# +.  #', '#######'], opt: 26 },
+  { m: ['#######', '# #   #', '# $ $ #', '#.  . #', '##  $ #', '#   + #', '#######'], opt: 27 });
+
+FUN_GAMES.wuerfel = { c: 'knobel', t: 'Würfel-Meister', d: 'Fünf Würfel, acht Runden. Rechne deine Punkte selbst aus und hol dir den Rechen-Bonus.', i: '🎲' };
+FUN_IMPL.wuerfel = function (stage) {
+  const sum = a => a.reduce((x, y) => x + y, 0), AUGEN = { 1: [4], 2: [0, 8], 3: [0, 4, 8], 4: [0, 2, 6, 8], 5: [0, 2, 4, 6, 8], 6: [0, 2, 3, 5, 6, 8] };
+  const KAT = [1, 2, 3, 4, 5, 6].map(n => ({ id: 'z' + n, t: ['Einser', 'Zweier', 'Dreier', 'Vierer', 'Fünfer', 'Sechser'][n - 1], h: `nur die ${n}er zählen`, z: w => w.filter(x => x === n) }))
+    .concat([{ id: 'pasch', t: 'Dreierpasch', h: 'drei gleiche: alle Würfel zählen', z: w => ([1, 2, 3, 4, 5, 6].some(n => w.filter(x => x === n).length >= 3) ? w : []) }, { id: 'alles', t: 'Alles zählt', h: 'alle Würfel zusammen', z: w => w }]);
+  let w = [1, 2, 3, 4, 5], halt = [0, 0, 0, 0, 0], wurf = 0, done = {}, punkte = 0, bonus = 0, frage = null;
+  const wuerfel = (v, i) => `<button class="wf-w${halt[i] ? ' halt' : ''}" data-i="${i}" aria-label="Würfel ${i + 1}: ${v}${halt[i] ? ', behalten' : ''}"${wurf && wurf < 3 && !frage ? '' : ' disabled'}>${[0, 1, 2, 3, 4, 5, 6, 7, 8].map(k => `<i${AUGEN[v].includes(k) ? ' class="p"' : ''}></i>`).join('')}</button>`;
+  const draw = () => {
+    const runde = Math.min(KAT.length, Object.keys(done).length + 1); FUN.score = punkte; funHud(`Runde ${runde} von ${KAT.length} · Punkte: ${punkte}`);
+    stage.innerHTML = `<div class="wf"><div class="wf-links"><div class="wf-reihe${wurf ? '' : ' leer'}">${w.map(wuerfel).join('')}</div>
+        ${frage ? `<div class="wf-frage"><b>${frage.fertig ? esc(frage.msg) : `Wie viele Punkte gibt das bei „${frage.k.t}“?`}</b>${frage.fertig ? '<button class="btn" data-w="weiter">Weiter ›</button>' : `<div class="wf-opts">${frage.opts.map(o => `<button class="btn ghost" data-a="${o}">${o}</button>`).join('')}</div>`}</div>`
+        : `<button class="btn" data-w="rollen"${wurf >= 3 ? ' disabled' : ''}>🎲 ${wurf ? `Noch einmal würfeln (${3 - wurf} übrig)` : 'Würfeln'}</button><p class="wf-hin">${wurf ? (wurf < 3 ? 'Tippe die Würfel an, die du behalten willst. Oder wähle ein Feld.' : 'Wähle jetzt ein Feld für diese Würfel.') : 'Du darfst in jeder Runde dreimal würfeln.'}</p>`}</div>
+      <div class="wf-kat">${KAT.map(k => `<button class="wf-k${done[k.id] !== undefined ? ' fertig' : ''}" data-k="${k.id}"${done[k.id] !== undefined || !wurf || frage ? ' disabled' : ''}><b>${k.t}</b><small>${k.h}</small><span>${done[k.id] !== undefined ? done[k.id] : ''}</span></button>`).join('')}
+        <div class="wf-bonus">Rechen-Bonus: <b>${bonus}</b></div></div></div>`;
+  };
+  const rollen = () => { if (wurf >= 3 || frage || !FUN) return; w = w.map((x, i) => (halt[i] && wurf ? x : R.int(1, 6))); wurf++; Sound.tap(); draw(); };
+  const waehlen = id => {
+    const k = KAT.find(x => x.id === id); if (!k || !wurf || done[id] !== undefined || frage) return;
+    const z = k.z(w), p = sum(z), o = new Set([p]); for (const c of R.shuffle([p + 1, p - 1, p + 2, p - 2, sum(w), p + 5, p + 3, 0, p + 10])) { if (c >= 0 && c <= 40) o.add(c); if (o.size === 4) break; }
+    frage = { k, p, z, opts: [...o].sort((a, b) => a - b) }; draw();
+  };
+  const antwort = v => {
+    if (!frage || frage.fertig) return; const ok = v === frage.p, weg = frage.z.length ? frage.z.join(' + ') + ' = ' + frage.p : 'Kein Würfel zählt, das sind 0';
+    done[frage.k.id] = frage.p; punkte += frage.p + (ok ? 2 : 0); if (ok) { bonus += 2; Sound.good(); } else Sound.bad();
+    frage.fertig = true; frage.msg = ok ? `Richtig gerechnet! ${frage.p} Punkte und 2 Punkte Rechen-Bonus.` : `Rechne nach: ${weg}. Die ${plural(frage.p, 'Punkt', 'Punkte')} bekommst du trotzdem.`; draw();
+  };
+  const weiter = () => { if (!frage || !frage.fertig) return; frage = null; wurf = 0; halt = [0, 0, 0, 0, 0]; if (Object.keys(done).length >= KAT.length) { FUN.score = punkte; FUN.note = `davon ${bonus} Rechen-Bonus`; return funEnd(); } draw(); };
+  stage.addEventListener('click', e => {
+    if (!FUN) return; const t = e.target.closest('button'); if (!t || t.disabled) return;
+    if (t.dataset.i !== undefined) { halt[+t.dataset.i] = halt[+t.dataset.i] ? 0 : 1; Sound.tap(); draw(); } else if (t.dataset.w === 'rollen') rollen(); else if (t.dataset.w === 'weiter') weiter(); else if (t.dataset.k) waehlen(t.dataset.k); else if (t.dataset.a !== undefined) antwort(+t.dataset.a);
+  });
+  FUN.dbg = { setz: a => { w = a.slice(); wurf = Math.max(1, wurf); draw(); }, stand: () => ({ w: w.slice(), halt: halt.slice(), wurf, punkte, bonus, done: Object.assign({}, done), frage: frage ? { p: frage.p, opts: frage.opts, fertig: !!frage.fertig } : null }), rollen, waehlen, antwort, weiter };
+  draw();
+};
+
 /*@@src lumi_live.js@@*/
 
 
@@ -80142,7 +80374,7 @@ function lwfBar() { return `<button class="lwf-bar" data-act="lwfds"><span class
 
 /*@@src start.js@@*/
 
-try { if (typeof ppsStart === 'function' && ppsStart()) { /* v2.75: Papa schreibt */ } else if (S.profile) showHome(); else showOnboarding(); }
+try { if (typeof ppsStart === 'function' && ppsStart()) { /* v2.75: eigene Startseite */ } else if (S.profile) showHome(); else showOnboarding(); }
 catch (e) {
 
   try { LWF.fromError('fehler', e); } catch (_) { }
