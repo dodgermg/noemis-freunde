@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-k0sw2/uAgEHX7FKi77+bDV5S/WEOzCGf807VIpREqWk=' 'sha256-rAbNj74QPyD/+AF721BA+6qGeO522o8Bmazzj3X1ynA=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-YbR33p5/M30dL2Ydifcn34/xlFlypnZjzUxWvrJR2U4=' 'sha256-WkuI2i5kIW+VFTEmT6dgiiUTlhE3emzV8ptWEIqC0GU=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -6345,6 +6345,36 @@ body.calm .weg-st .weg-n, body.calm .weg-st .weg-i { animation: none !important;
 @media (max-width: 820px) { .lp-main { grid-template-columns: minmax(0, 400px); } }
 @media print { html.ab-drucken #abDruck, html.ab-drucken #abDruck * { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
 
+/* ---- style_neu269.css ---- */
+
+.sx-kopf { flex: 1; text-align: center; font-family: var(--f-display); font-weight: 800; font-size: 20px; color: var(--ink); padding-right: 48px; }
+.sx-wahl { display: grid; gap: 16px; padding-bottom: 40px; }
+.sx-arten { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.sx-art { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 14px 10px; border: 3px solid var(--line); border-radius: 18px; background: var(--surface); color: var(--ink); font: inherit; text-align: center; cursor: pointer; }
+.sx-art.sel { border-color: var(--sea); background: var(--surface-2); }
+.sx-art b { font-family: var(--f-display); font-size: 18px; } .sx-art small { font-size: 14px; color: var(--ink-soft); line-height: 1.3; }
+.sx-fig { font-size: 44px; line-height: 1; color: var(--ink); }
+.sx-main { display: grid; grid-template-columns: minmax(0, min(560px, calc(100vh - 150px))) minmax(0, 320px); gap: 18px; align-items: start; justify-content: center; padding-top: 8px; }
+.sx-brett { display: grid; grid-template-columns: repeat(var(--n), minmax(0, 1fr)); border-radius: 14px; overflow: hidden; box-shadow: var(--shadow), 0 0 0 4px #4d7f9c; }
+.sx-q { position: relative; aspect-ratio: 1; min-width: 0; padding: 0; border: 0; border-radius: 0; display: flex; align-items: center; justify-content: center; cursor: pointer; }
+.sx-q.he { background: #eaf3f8; } .sx-q.du { background: #8db9d2; }
+.sx-q.last { box-shadow: inset 0 0 0 4px rgba(255, 196, 0, .75); }
+.sx-q.sel { background: #ffd34d; }
+.sx-q.tipp { box-shadow: inset 0 0 0 5px #2bb673; }
+.sx-q.schach { background: #f28b8b; }
+.sx-q.ziel::after { content: ''; width: 28%; height: 28%; border-radius: 50%; background: rgba(18, 50, 74, .38); }
+.sx-q.schlag::after { content: ''; position: absolute; inset: 6%; border-radius: 50%; border: 5px solid rgba(214, 60, 60, .75); }
+.sx-q:disabled { cursor: default; opacity: 1; }
+.sx-p { font-size: calc(min(560px, 100vw - 32px, 100vh - 150px) / var(--n) * .74); line-height: 1; font-family: "Segoe UI Symbol", "Apple Symbols", "Noto Sans Symbols 2", "DejaVu Sans", sans-serif; }
+.sx-p.w { color: #ffffff; text-shadow: 0 0 2px #12324A, 1px 0 0 #12324A, -1px 0 0 #12324A, 0 1px 0 #12324A, 0 -1px 0 #12324A, 0 2px 3px rgba(0, 0, 0, .35); }
+.sx-p.s { color: #1b2a38; text-shadow: 0 0 2px #ffffff, 0 2px 3px rgba(0, 0, 0, .25); }
+.sx-r, .sx-l { position: absolute; font-style: normal; font-weight: 800; font-size: 11px; color: #12324A; opacity: .6; pointer-events: none; }
+.sx-r { left: 3px; top: 2px; } .sx-l { right: 3px; bottom: 1px; }
+.sx-side { display: flex; flex-direction: column; gap: 12px; }
+.sx-st { margin: 0; padding: 12px 14px; border-radius: 14px; background: var(--surface); box-shadow: var(--shadow); font-weight: 800; font-size: 18px; line-height: 1.35; color: var(--ink); }
+.sx-st.ende { background: #fff1c2; color: #12324A; }
+@media (max-width: 820px) { .sx-main { grid-template-columns: minmax(0, min(560px, calc(100vh - 150px))); } .sx-arten { grid-template-columns: minmax(0, 1fr); } .sx-art { flex-direction: row; text-align: left; gap: 12px; } .sx-art small { flex: 1; } }
+
 /* ---- style_pa.css ---- */
 
 .pa { min-height: 100vh; }
@@ -8603,8 +8633,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '2.68.0';
-  var MAP = {"probe":0,"files":[[8593,"fehler_kern.js"],[8881,null],[8883,"data.js"],[9578,"data_more.js"],[9935,"data_su2.js"],[10162,"data_es.js"],[10504,"data_wissen.js"],[10703,"data_v21.js"],[11386,"data_v24.js"],[11872,"data_v25.js"],[12353,"data_v26.js"],[12452,"data_v29.js"],[12757,"data_v30.js"],[13086,"data_v31.js"],[13392,"data_kunst.js"],[13588,"data_v214.js"],[13691,"data_v216.js"],[13984,"schrift.js"],[14284,"eingabe.js"],[14495,"data_k34m.js"],[15013,"data_k34d.js"],[15367,"data_k34s.js"],[15821,"data_v224.js"],[16694,"data_v225w.js"],[17063,"data_v225k.js"],[17507,"data_herz.js"],[17861,"data_fb226.js"],[18004,"data_tf226.js"],[18211,"data_v227a.js"],[19302,"data_v227b.js"],[20256,"data_h28b.js"],[20296,"data_l28a.js"],[21162,"data_l28b.js"],[22342,"data_schaetz.js"],[22824,"data_party8.js"],[22874,"data_alce.js"],[23534,"data_alce2.js"],[23783,"data_alce3.js"],[24198,"registry.js"],[24712,"app.js"],[25868,"fun.js"],[26448,"fun2.js"],[26764,"atelier.js"],[27138,"kunst225.js"],[27328,"herz.js"],[27692,"reise.js"],[27994,"iglu.js"],[28160,"offline.js"],[28267,"party.js"],[28751,"meine.js"],[29107,"loeffel.js"],[29278,"trend.js"],[29820,"fun228a.js"],[30671,"fun228b.js"],[31332,"kueche.js"],[32371,"stimme.js"],[32426,"klassen.js"],[32575,"freunde_vorab.js"],[32596,"mut.js"],[33018,"schule.js"],[33507,"fussball226.js"],[33829,"schaetzen.js"],[34260,"party8.js"],[34879,"tiere.js"],[35338,"fussball232.js"],[35553,"party8b.js"],[35855,"weg.js"],[36075,"px.js"],[36486,"px_data.js"],[36743,"pxwelt.js"],[36824,"px_abenteuer.js"],[37625,"px_abenteuer2.js"],[38374,"px_ski.js"],[39016,"px_wurf.js"],[39545,"px_insel.js"],[40746,"px_kicker.js"],[41681,"px_eis.js"],[42667,"px_run.js"],[43882,"px_brk.js"],[44844,"px_pol.js"],[46195,"px_frog.js"],[47455,"px_angel.js"],[48770,"px_golf.js"],[49804,"px_tauch.js"],[51069,"px_hockey.js"],[52025,"px_lab.js"],[53360,"px_plopp.js"],[54566,"px_stadion.js"],[56070,"px_training.js"],[56439,"cm.js"],[56929,"cmwelt.js"],[56985,"cm_baeck.js"],[57778,"cm_bahn.js"],[58542,"cm_detek.js"],[59259,"cm_markt.js"],[59972,"ff.js"],[60129,"ff_mathe.js"],[62119,"ff_deutsch.js"],[63707,"ff_sach_a.js"],[65956,"ff_sach_b.js"],[68185,"ff_sprachen.js"],[70593,"zm.js"],[71506,"tt.js"],[71719,"data_tagebuch.js"],[71762,"data_hoerspiel.js"],[71921,"leseecke.js"],[72240,"kt.js"],[72543,"comicbuch.js"],[72821,"alce.js"],[72984,"alce_aufg.js"],[73154,"formen.js"],[73605,"data_formen.js"],[73846,"data_formen2.js"],[74068,"spielzeit.js"],[74213,"data_faktmeinung.js"],[74332,"data_es248.js"],[74596,"data_en249.js"],[74835,"data_wissen249.js"],[75266,"data_kunst249.js"],[75549,"data_fussball250.js"],[75673,"data_werte252.js"],[75926,"data_lesen252.js"],[75987,"data_k34_252.js"],[76073,"art254.js"],[76191,"data_werte255.js"],[76329,"data_lesen255.js"],[76465,"forscher255.js"],[76613,"zufall250.js"],[76659,"stufe259.js"],[76669,"advent.js"],[76932,"wdh.js"],[77030,"denk.js"],[77067,"data_viaje265.js"],[77210,"klassenarbeit.js"],[77343,"quizduell.js"],[77466,"neu267.js"],[77731,"prog.js"],[77836,"lernstand.js"],[77903,"blatt.js"],[78005,"lumi_live.js"],[78121,"sicher.js"],[78305,"stil.js"],[78359,"freunde.js"],[78496,"start.js"],[78506,null],[78516,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '2.69.0';
+  var MAP = {"probe":0,"files":[[8623,"fehler_kern.js"],[8911,null],[8913,"data.js"],[9608,"data_more.js"],[9965,"data_su2.js"],[10192,"data_es.js"],[10534,"data_wissen.js"],[10733,"data_v21.js"],[11416,"data_v24.js"],[11902,"data_v25.js"],[12383,"data_v26.js"],[12482,"data_v29.js"],[12787,"data_v30.js"],[13116,"data_v31.js"],[13422,"data_kunst.js"],[13618,"data_v214.js"],[13721,"data_v216.js"],[14014,"schrift.js"],[14314,"eingabe.js"],[14525,"data_k34m.js"],[15043,"data_k34d.js"],[15397,"data_k34s.js"],[15851,"data_v224.js"],[16724,"data_v225w.js"],[17093,"data_v225k.js"],[17537,"data_herz.js"],[17891,"data_fb226.js"],[18034,"data_tf226.js"],[18241,"data_v227a.js"],[19332,"data_v227b.js"],[20286,"data_h28b.js"],[20326,"data_l28a.js"],[21192,"data_l28b.js"],[22372,"data_schaetz.js"],[22854,"data_party8.js"],[22904,"data_alce.js"],[23564,"data_alce2.js"],[23813,"data_alce3.js"],[24228,"registry.js"],[24742,"app.js"],[25899,"fun.js"],[26479,"fun2.js"],[26795,"atelier.js"],[27169,"kunst225.js"],[27359,"herz.js"],[27723,"reise.js"],[28025,"iglu.js"],[28191,"offline.js"],[28298,"party.js"],[28782,"meine.js"],[29138,"loeffel.js"],[29309,"trend.js"],[29851,"fun228a.js"],[30702,"fun228b.js"],[31363,"kueche.js"],[32402,"stimme.js"],[32457,"klassen.js"],[32606,"freunde_vorab.js"],[32627,"mut.js"],[33049,"schule.js"],[33538,"fussball226.js"],[33860,"schaetzen.js"],[34291,"party8.js"],[34910,"tiere.js"],[35369,"fussball232.js"],[35584,"party8b.js"],[35886,"weg.js"],[36106,"px.js"],[36517,"px_data.js"],[36774,"pxwelt.js"],[36855,"px_abenteuer.js"],[37656,"px_abenteuer2.js"],[38405,"px_ski.js"],[39047,"px_wurf.js"],[39576,"px_insel.js"],[40777,"px_kicker.js"],[41712,"px_eis.js"],[42698,"px_run.js"],[43913,"px_brk.js"],[44875,"px_pol.js"],[46226,"px_frog.js"],[47486,"px_angel.js"],[48801,"px_golf.js"],[49835,"px_tauch.js"],[51100,"px_hockey.js"],[52056,"px_lab.js"],[53391,"px_plopp.js"],[54597,"px_stadion.js"],[56101,"px_training.js"],[56470,"cm.js"],[56960,"cmwelt.js"],[57016,"cm_baeck.js"],[57809,"cm_bahn.js"],[58573,"cm_detek.js"],[59290,"cm_markt.js"],[60003,"ff.js"],[60160,"ff_mathe.js"],[62150,"ff_deutsch.js"],[63738,"ff_sach_a.js"],[65987,"ff_sach_b.js"],[68216,"ff_sprachen.js"],[70624,"zm.js"],[71537,"tt.js"],[71750,"data_tagebuch.js"],[71793,"data_hoerspiel.js"],[71952,"leseecke.js"],[72271,"kt.js"],[72574,"comicbuch.js"],[72852,"alce.js"],[73015,"alce_aufg.js"],[73185,"formen.js"],[73636,"data_formen.js"],[73877,"data_formen2.js"],[74099,"spielzeit.js"],[74244,"data_faktmeinung.js"],[74363,"data_es248.js"],[74627,"data_en249.js"],[74866,"data_wissen249.js"],[75297,"data_kunst249.js"],[75580,"data_fussball250.js"],[75704,"data_werte252.js"],[75957,"data_lesen252.js"],[76018,"data_k34_252.js"],[76104,"art254.js"],[76222,"data_werte255.js"],[76360,"data_lesen255.js"],[76496,"forscher255.js"],[76644,"zufall250.js"],[76690,"stufe259.js"],[76700,"advent.js"],[76963,"wdh.js"],[77061,"denk.js"],[77098,"data_viaje265.js"],[77241,"klassenarbeit.js"],[77374,"quizduell.js"],[77497,"neu267.js"],[77762,"prog.js"],[77867,"lernstand.js"],[77934,"blatt.js"],[78036,"plus269.js"],[78130,"schach.js"],[78357,"lumi_live.js"],[78473,"sicher.js"],[78657,"stil.js"],[78711,"freunde.js"],[78848,"start.js"],[78858,null],[78868,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -10312,9 +10342,9 @@ const TILDES = [
   ['autobús', 'autobus', 'autóbus', '🚌'], ['tiburón', 'tiburon', 'tíburon', '🦈']
 ];
 function genTildesES(ctx) {
-  const [c, w1, w2, e] = ctx.draw(TILDES);
+  const [c, w1, w2, e, w3] = ctx.draw(TILDES);
   const extra = c === 'pingüino' ? ' La diéresis (ü) hace que la u suene.' : '';
-  return mkChoice({ prompt: '¿Cuál está bien escrita?', visual: bigEmoji(e), answer: c, wrong: [w1, w2], layout: 'row3',
+  return mkChoice({ prompt: '¿Cuál está bien escrita?', visual: bigEmoji(e), answer: c, wrong: [w1, w2, w3].filter(Boolean), layout: 'row3',
     explain: `Se escribe «${c}», con tilde en la sílaba fuerte.${extra}`, after: c, afterLang: ES, key: 'est' + c, say: c, sayLang: ES });
 }
 
@@ -10367,7 +10397,7 @@ function genVerbosES(ctx) {
   const pers = lv === 1 ? PERSONAS.filter(p => p[1] <= 2) : PERSONAS;
   const v = R.pick(verbs), [subj, i] = R.pick(pers);
   const form = v[1][i];
-  const wrong = R.sample([...new Set(v[1].filter(f => f !== form))], 2);
+  const wrong = R.sample([...new Set(v[1].filter(f => f !== form))], SU_LV >= 2 ? 3 : 2);
   const sent = `${subj} ___ ${v[2]}.`;
   const conj = ['yo', 'tú', 'él/ella', 'nosotros', 'vosotros', 'ellos'].map((p, k) => `${p} ${v[1][k]}`).join(', ');
   return mkChoice({ prompt: `Completa con el verbo «${v[0]}»:`, visual: `<div class="q-sentence">${esc(sent).replace('___', '<span class="q-gap wide">?</span>')}</div>`,
@@ -10423,7 +10453,7 @@ function genDiasES(ctx) {
   if (R.chance(.7)) {
     const useM = R.chance(.45), list = useM ? MESES_ES : DIAS_ES, i = R.int(0, list.length - 1), after = R.chance(.6);
     const j = (i + (after ? 1 : -1) + list.length) % list.length;
-    const wrong = R.sample(list.filter((_, k) => k !== j && k !== i), 2);
+    const wrong = R.sample(list.filter((_, k) => k !== j && k !== i), SU_LV >= 2 ? 3 : 2);
     const q = `¿Qué ${useM ? 'mes' : 'día'} viene ${after ? 'después' : 'antes'} ${useM ? 'de' : 'del'} ${list[i]}?`;
     return mkChoice({ prompt: q, visual: bigEmoji(useM ? '🗓️' : '📅', 'sm'), answer: list[j], wrong, layout: 'col',
       explain: `${after ? 'Después' : 'Antes'} ${useM ? 'de' : 'del'} ${list[i]} viene ${useM ? '' : 'el '}${list[j]}.`, after: list[j], afterLang: ES, key: `esdm${useM}${i}${after}`, sayLang: ES });
@@ -11515,8 +11545,8 @@ const SILBENTRENNUNG = [['Ap-fel', 'A-pfel', 'Apf-el', '🍎'], ['Blu-me', 'Bl-u
   ['Pin-gu-in', 'Ping-u-in', 'Pi-ngu-in', '🐧'], ['Ba-na-ne', 'Ban-a-ne', 'Ba-nan-e', '🍌'], ['Scho-ko-la-de', 'Schok-o-la-de', 'Sch-o-ko-la-de', '🍫'], ['Te-le-fon', 'Tel-e-fon', 'Te-lef-on', '☎️'],
   ['Kin-der', 'Ki-nder', 'Kind-er', '🧒'], ['Re-gen-bo-gen', 'Reg-en-bo-gen', 'Re-ge-nbo-gen', '🌈'], ['Ha-se', 'Has-e', 'H-ase', '🐰'], ['Schu-le', 'Schul-e', 'Sch-ule', '🏫']];
 function genTrennen(ctx) {
-  const [a, w1, w2, e] = ctx.draw(SILBENTRENNUNG);
-  return mkChoice({ prompt: 'Wie trennt man das Wort richtig?', visual: bigEmoji(e) + `<div class="q-word">${esc(a.replace(/-/g, ''))}</div>`, answer: a, wrong: [w1, w2], layout: 'row3',
+  const [a, w1, w2, e, w3] = ctx.draw(SILBENTRENNUNG);
+  return mkChoice({ prompt: 'Wie trennt man das Wort richtig?', visual: bigEmoji(e) + `<div class="q-word">${esc(a.replace(/-/g, ''))}</div>`, answer: a, wrong: [w1, w2, w3].filter(Boolean), layout: 'row3',
     explain: `Richtig: ${a}. Sprich langsam und klatsche die Silben mit.${/ck|ch|sch/.test(a) ? ' ck, ch und sch bleiben zusammen.' : ''}`, key: 'st' + a, say: a.replace(/-/g, '') });
 }
 const OBERBEGRIFFE = [[['Apfel', 'Birne', 'Kirsche'], 'Obst'], [['Möhre', 'Gurke', 'Paprika'], 'Gemüse'], [['Hammer', 'Säge', 'Zange'], 'Werkzeug'], [['Rose', 'Tulpe', 'Sonnenblume'], 'Blumen'],
@@ -12658,12 +12688,12 @@ const ZEIT_W = [['gehe', 'ging'], ['laufe', 'lief'], ['spiele', 'spielte'], ['si
   ['finde', 'fand'], ['gebe', 'gab'], ['nehme', 'nahm'], ['helfe', 'half'], ['tanze', 'tanzte'], ['backe', 'backte'], ['koche', 'kochte'], ['habe', 'hatte'], ['denke', 'dachte']];
 function genZeitformen(ctx) {
   const [pr, pa] = ctx.draw(ZEIT_W), stem = pr.replace(/e$/, '');
-  const fake = pa.endsWith('te') && pa !== 'hatte' && pa !== 'dachte' ? 'ge' + stem + 't' : stem + 'te';
+  const fake = pa.endsWith('te') && pa !== 'hatte' && pa !== 'dachte' ? 'ge' + stem + 't' : stem + 'te', fake2 = SU_LV >= 2 ? (fake === stem + 'te' ? 'ge' + stem + 't' : stem + 'te') : '';
   if (ctx.lv >= 2 && R.chance(.5)) {
-    return mkChoice({ prompt: 'Und umgekehrt: Was sagst du heute?', visual: `<div class="q-text">Gestern: ich <b>${esc(pa)}</b><br>Heute: ich <span class="q-gap wide">?</span></div>`, answer: pr, wrong: [pa, fake].filter(x => x !== pr), layout: 'row3',
+    return mkChoice({ prompt: 'Und umgekehrt: Was sagst du heute?', visual: `<div class="q-text">Gestern: ich <b>${esc(pa)}</b><br>Heute: ich <span class="q-gap wide">?</span></div>`, answer: pr, wrong: [...new Set([pa, fake, fake2])].filter(x => x && x !== pr), layout: 'row3',
       explain: `Gestern: ich ${pa}, heute: ich ${pr}.`, key: 'zfr' + pr });
   }
-  return mkChoice({ prompt: 'Was ist gestern passiert? Setz das richtige Wort ein.', visual: `<div class="q-text">Heute: ich <b>${esc(pr)}</b><br>Gestern: ich <span class="q-gap wide">?</span></div>`, answer: pa, wrong: [pr, fake].filter(x => x !== pa), layout: 'row3',
+  return mkChoice({ prompt: 'Was ist gestern passiert? Setz das richtige Wort ein.', visual: `<div class="q-text">Heute: ich <b>${esc(pr)}</b><br>Gestern: ich <span class="q-gap wide">?</span></div>`, answer: pa, wrong: [...new Set([pr, fake, fake2])].filter(x => x && x !== pa), layout: 'row3',
     explain: `Heute: ich ${pr}, gestern: ich ${pa}.${fake === stem + 'te' ? ` „${fake}“ gibt es nicht, das Wort ändert sich.` : ''}`, key: 'zf' + pr });
 }
 const STEIG_W = [['groß', 'größer', 'am größten', '🦒'], ['klein', 'kleiner', 'am kleinsten', '🐭'], ['schnell', 'schneller', 'am schnellsten', '🐆'], ['langsam', 'langsamer', 'am langsamsten', '🐢'], ['alt', 'älter', 'am ältesten', '👴'],
@@ -12675,7 +12705,7 @@ function genSteigern(ctx) {
   const ans = askSup ? s : c;
   const wrong = askSup ? [`am ${b}sten`, `am ${b}esten`, `am ${c}sten`, c].filter(x => x !== s) : [`${b}er`, `${b}erer`, `am ${c}`].filter(x => x !== c);
   const row = [b, askSup ? c : '?', askSup ? '?' : s].map(x => x === '?' ? '<span class="q-gap wide">?</span>' : `<span>${esc(x)}</span>`).join('<i>→</i>');
-  return mkChoice({ prompt: askSup ? 'Steigern: Was ist die höchste Stufe?' : 'Steigern: Was kommt in die Mitte?', visual: bigEmoji(e, 'sm') + `<div class="q-text steig">${row}</div>`, answer: ans, wrong: R.sample([...new Set(wrong)], 2), layout: 'row3',
+  return mkChoice({ prompt: askSup ? 'Steigern: Was ist die höchste Stufe?' : 'Steigern: Was kommt in die Mitte?', visual: bigEmoji(e, 'sm') + `<div class="q-text steig">${row}</div>`, answer: ans, wrong: R.sample([...new Set(wrong)], SU_LV >= 2 ? 3 : 2), layout: 'row3',
     explain: `${b}, ${c}, ${s}.${['gut', 'viel', 'hoch'].includes(b) ? ' Dieses Wort ändert sich beim Steigern ganz besonders.' : ''}`, key: 'st' + b + (askSup ? 's' : 'c') });
 }
 
@@ -24713,9 +24743,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '2.68.0';
+const APP_VERSION = '2.69.0';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "2.69.0", d: "11.11.2026", t: ["Deutsch und Spanisch: 22 Spiele zeigen ab Stufe 2 vier Antworten statt drei. Dafür haben 435 Aufgaben eine dritte falsche Antwort bekommen, die zum Thema passt. Stufe 1 bleibt bei drei Antworten", "Neu bei „Rätsel & Denk-Spiele“: Schach gegen Lumi. Drei Spielarten (Bauernrennen, Mini-Schach und echtes Schach), gegen Lumi in zwei Stärken oder zu zweit. Mit allen Regeln, Tipp-Knopf und „Zug zurück“"] },
   { v: "2.68.0", d: "11.11.2026", t: ["Neu im Elternbereich: Lernstand. Eine Ampel zeigt für jede Welt und jedes Thema, was sitzt, was läuft und was noch wackelt. Aus den wackligen Spielen lässt sich direkt eine Übungsrunde starten", "Neu im Elternbereich: Arbeitsblatt drucken. Aus Themen oder aus den offenen Fehlern entsteht ein Blatt zum Ausdrucken, auf Wunsch mit Lösungsseite", "Neues Spiel in Mathe bei „Formen & Raum“: Lumi programmieren. Befehle in ein Programm legen und Lumi zum Fisch steuern, auf Stufe 3 mit Wiederholungen"] },
   { v: "2.67.0", d: "11.11.2026", t: ["Neu: Logik-Bilder bei „Rätsel & Denk-Spiele“. Kästchen nach Zahlen ausmalen, bis ein Bild entsteht. 60 Bilder in drei Größen", "Neu: Schatzsuche in Mathe bei „Formen & Raum“. Buchstabe und Zahl wählen und bei Feldern wie B4 graben. Dazu das Schatz-Duell gegen Lumi oder zu zweit, auch bei den Party-Spielen", "Neu: Wörter raten in Deutsch, Englisch und Spanisch. Bei jedem falschen Buchstaben platzt ein Luftballon", "Neu: Wörtersuche als eigenes Spiel in Deutsch, Englisch und Spanisch, mit größeren Gittern auf Stufe 2 und 3", "Sprachwelten: 164 neue Aufgaben für 20 Grammatik-, Lese- und Rechtschreibspiele, darunter vier neue Lesetexte"] },
   { v: "2.66.0", d: "11.11.2026", t: ["184 neue Aufgaben für 52 Spiele, die bisher weniger als 15 verschiedene Aufgaben hatten. Jetzt hat jedes Wissensspiel mindestens 15 Fragen", "Neu dabei: drei Lesetexte (einer auf Englisch, zwei auf Spanisch), sechs Kreisläufe wie der Wasserkreislauf, fünf Bildergeschichten, sechs spanische Rätsel, neue Tagesabläufe, Fragewörter, Vergangenheitsformen, Sätze zum Bauen und Tiere der Kontinente", "Unten auf der Startseite und im Elternbereich steht jetzt, von wem die Lernwelt ist"] },
@@ -78001,6 +78032,327 @@ Object.assign(ACT, {
   abgo: () => { AB.q = abMake(); if (!AB.q.length) toast('Dazu gibt es keine druckbaren Aufgaben. Wähle ein anderes Thema.'); showBlatt(); if (AB.q.length) { const v = document.querySelector('.ab-vor'); if (v && v.scrollIntoView) v.scrollIntoView({ block: 'start' }); } },
   abprint: () => abDruck()
 });
+
+/*@@src plus269.js@@*/
+
+
+
+
+
+
+
+const P9_W3 = {
+  MEHRZAHL: { Hunde: 'Hunden', Katzen: 'Katzer', 'Häuser': 'Hausen', 'Bäume': 'Bäumer', Kinder: 'Kinden', 'Bücher': 'Bucher', 'Äpfel': 'Äpfels', 'Mäuse': 'Mausen', 'Bälle': 'Balle', Blumen: 'Blumer', Autos: 'Autose', 'Vögel': 'Vögels', Fische: 'Fischer',
+    Eier: 'Eiers', 'Hände': 'Händer', 'Gläser': 'Gläse', 'Kühe': 'Küher', 'Zähne': 'Zähner', 'Stühle': 'Stühler', Kuchen: 'Küchen', Frauen: 'Frauer', 'Männer': 'Männe', Schafe: 'Schafer', Busse: 'Büsse', 'Züge': 'Züger', Sterne: 'Sterner' },
+  GRUNDF_W: { lief: 'läuft', ging: 'geht', rannte: 'rennt', sang: 'singt', 'aß': 'isst', 'schläft': 'schlief', liest: 'las', 'fährt': 'fuhr', sah: 'sieht', nahm: 'nimmt', gibt: 'gab', half: 'hilft', trank: 'trinkt', schrieb: 'schreibt',
+    'Bäume': 'Bäumen', 'Häuser': 'Häusern', 'Mäuse': 'Mäusen', Kinder: 'Kindern', 'Bücher': 'Büchern', 'Hände': 'Händen', 'Äpfel': 'Apfels', 'Vögel': 'Vögeln', 'Blätter': 'Blättern', 'größer': 'am größten', 'älter': 'am ältesten', besser: 'am besten', 'am kältesten': 'kälter' },
+  FEHLERWORT: { Fahrrad: 'Fahrrat', 'plötzlich': 'plötslich', ziemlich: 'ziemlig', Fehler: 'Fehla', Gefahr: 'Gefahhr', vielleicht: 'villeicht', Geschenk: 'Geschenck', 'Mädchen': 'Mädschen', Fenster: 'Fenßter', Hexe: 'Hexxe', Spiegel: 'Spiegl', Stiefel: 'Stiefl',
+    Zahl: 'Zahll', Geburtstag: 'Gebuhrtstag', 'Fußball': 'Fußbal', Ferien: 'Färien', Familie: 'Fammilie', Weihnachten: 'Weihnachden', Schwimmbad: 'Schwimmbaad', Pferd: 'Pfärd', Eltern: 'Elltern', Nummer: 'Nuhmer', Zucker: 'Zugger', 'nämlich': 'nämmlich',
+    endlich: 'endlisch', sechzehn: 'sechzen', Flugzeug: 'Flugzoig', 'Bäcker': 'Bäcka', Bibliothek: 'Bibliothäk', Rhabarber: 'Rharbarber', interessant: 'interesant', 'Eichhörnchen': 'Eichhörnchn' },
+  SILBENTRENNUNG: { 'Ap-fel': 'Apfe-l', 'Blu-me': 'B-lume', 'Fens-ter': 'Fenst-er', 'Zu-cker': 'Z-ucker', 'Ta-sche': 'T-asche', 'Kat-ze': 'K-atze', 'Son-ne': 'S-onne', 'Was-ser': 'W-asser', 'Ku-chen': 'K-uchen', 'Gar-ten': 'G-arten', 'Lam-pe': 'L-ampe',
+    'Hun-de': 'H-unde', 'Fla-sche': 'Fl-asche', 'Bü-cher': 'B-ücher', 'Pin-gu-in': 'Pin-gui-n', 'Ba-na-ne': 'B-ana-ne', 'Scho-ko-la-de': 'Scho-kol-a-de', 'Te-le-fon': 'Te-le-fo-n', 'Kin-der': 'K-inder', 'Re-gen-bo-gen': 'Re-gen-bog-en', 'Ha-se': 'Ha-s-e', 'Schu-le': 'Sc-hule' },
+  TILDES: { 'árbol': 'árból', 'ratón': 'rátón', 'café': 'cáfé', 'sofá': 'sófá', 'lápiz': 'lápíz', 'avión': 'avíon', 'camión': 'camíon', 'corazón': 'córazon', 'plátano': 'platanó', 'pájaro': 'pajaró', 'música': 'musicá', 'teléfono': 'télefono', 'fútbol': 'fútból',
+    'limón': 'límón', 'melón': 'mélón', 'jabón': 'jábón', 'león': 'léón', 'pingüino': 'pingüíno', 'cámara': 'camará', 'murciélago': 'múrcielago', 'autobús': 'aútobus', 'tiburón': 'tibúron' },
+  DOPPELVOKAL: { Meer: 'Mär', mehr: 'mehhr', Boot: 'Bood', Haare: 'Haahre', Zoo: 'Zoh', Paar: 'Paahr', See: 'Sehe', Schnee: 'Schnä', Tee: 'Thee', leer: 'lär', Lehrer: 'Lehrrer', Moos: 'Mooß', Waage: 'Waahge', Fee: 'Feeh', Beeren: 'Bähren', Saal: 'Saahl', Idee: 'Iedee',
+    Klee: 'Kleeh', Beet: 'Beeht', Kaffee: 'Kafee', Aal: 'Aahl', Uhr: 'Uhhr', Jahr: 'Jahhr', Stuhl: 'Stuhhl', Zahl: 'Zahhl', fahren: 'fahrren' },
+  LESERAETSEL: { 'der Tisch': 'das Regal', 'die Banane': 'die Birne', 'die Uhr': 'die Waage', 'der Schnee': 'der Hagel', 'das Buch': 'der Tisch', 'der Pinguin': 'die Amsel', 'die Biene': 'die Ameise', 'das Loch': 'der Sandhaufen', 'der Regenbogen': 'der Sonnenuntergang',
+    'der Nagel': 'der Löffel', 'der Kamm': 'die Zahnbürste', 'der Ball': 'der Würfel', 'der Igel': 'der Maulwurf', 'der Mond': 'der Stern', 'das Windrad': 'der Hubschrauber', 'die Flasche': 'die Schüssel', 'das Fahrrad': 'das Skateboard', 'der Bleistift': 'die Kreide',
+    'das Eis': 'die Schokolade', 'der Tintenfisch': 'der Krebs', 'der Elefant': 'das Flusspferd', 'die Sonne': 'die Kerze', 'der Schuh': 'der Schal', 'der Spiegel': 'die Uhr', 'das Klavier': 'die Flöte' },
+  WORTFELDER: { 'flüstern': 'brüllen', schreien: 'tuscheln', murmeln: 'rufen', antworten: 'flüstern', schlendern: 'sausen', rennen: 'trödeln', schleichen: 'trampeln', 'hüpfen': 'schleichen', krabbeln: 'stolzieren', beobachten: 'zwinkern', blinzeln: 'spähen', 'spähen': 'anstarren',
+    schlingen: 'nippen', knabbern: 'mampfen', naschen: 'schmatzen', kichern: 'grölen', schmunzeln: 'wiehern', schluchzen: 'schniefen', wimmern: 'heulen', 'dösen': 'gähnen', schnarchen: 'träumen', schleudern: 'fangen', riesig: 'klein', winzig: 'groß' },
+  ADIVINANZAS: { 'la pera': 'la uva', 'el plátano': 'la piña', 'el reloj': 'el lápiz', 'el murciélago': 'el gato', 'el ajo': 'el tenedor', 'el aguacate': 'el pepino', 'la cebolla': 'la patata', 'el anillo': 'la rueda', 'el té': 'el zumo', 'la oscuridad': 'el mar', 'la lengua': 'la nube',
+    'la mesa': 'el caballo', 'el sol': 'la lámpara', 'el libro': 'la flor', 'el pingüino': 'la vaca', 'la lluvia': 'la nieve', 'la bicicleta': 'la moto' },
+  PASADO_ES: { 'comí': 'comió', fuiste: 'fuimos', 'marcó': 'marqué', vimos: 'vieron', vinieron: 'vinimos', 'nadé': 'nadó', 'comió': 'comí', hice: 'hizo', cantasteis: 'cantaron', hizo: 'hice', 'llamé': 'llamó', viajamos: 'viajáis', jugamos: 'jugaron', 'leyó': 'leí', comiste: 'comió', 'dormí': 'durmió', fueron: 'fuimos' },
+  SINONIMOS_ES: { contento: 'cansado', bonito: 'sucio', grande: 'estrecho', 'rápido': 'pesado', empezar: 'perder', hablar: 'escuchar', mirar: 'tocar', coche: 'avión', alumno: 'médico', delgado: 'bajo', listo: 'fuerte', asustado: 'contento', regalo: 'trabajo', caminar: 'sentarse',
+    cansado: 'rápido', 'fácil': 'caro', terminar: 'buscar', casa: 'escuela' },
+  PLURAL_ES: { 'el perro': 'los perroes', 'la flor': 'las floras', 'el pez': 'las peces', 'el lápiz': 'las lápices', 'el león': 'las leones', 'el ratón': 'las ratones', 'la luz': 'los luces', 'el árbol': 'los árbolos', 'el camión': 'las camiones', 'el autobús': 'las autobuses',
+    'la nariz': 'los narices', 'el reloj': 'los relojos', 'el rey': 'los reyos', 'la mano': 'las manas', 'el sofá': 'las sofás', 'el tren': 'los trenos', 'el corazón': 'las corazones', 'la casa': 'las casos', 'el bebé': 'los bebeses', 'el jabón': 'las jabones', 'la silla': 'las sillos',
+    'el pastel': 'los pastelos', 'el doctor': 'los doctoros', 'la ciudad': 'las ciudadas', 'el gato': 'los gatas', 'la naranja': 'las naranjos', 'el pingüino': 'los pingüinas' },
+  DIMINUTIVOS: { perro: 'perrocito', casa: 'casacita', gato: 'gatocito', abuela: 'abuelacita', 'pájaro': 'pajarcito', 'árbol': 'arbolcito', pez: 'pecito', coche: 'cocheito', mesa: 'mesacita', libro: 'librocito', taza: 'tazacita', 'camión': 'camiónito', mano: 'manocita', oso: 'osocito',
+    pato: 'patocito', silla: 'sillacita', cuchara: 'cucharacita', hermano: 'hermanocito' },
+  B24_TRABA: { trigo: 'maíz', clavito: 'cuadro', rabo: 'collar', coco: 'plátano', cuentos: 'libros', desenladrillador: 'albañil', 'pagué': 'bebí', Pecas: 'Pérez', ferrocarril: 'bicicleta', planchas: 'camisas', paquetito: 'sobre', juncos: 'hojas', hipo: 'frío', dicho: 'secreto', 'ñame': 'fruta', 'maraña': 'cama', cipreses: 'sillas' },
+  LESEN_DE: { 'Welche Farbe hat Bellos Fell?': 'grau', 'Wohin gehen Lea und Bello jeden Morgen?': 'an den Strand', 'Was ist Toms Lieblingsfach?': 'Musik', 'Mit wem spielt Tom Fußball?': 'mit seinem Hund', 'Was nimmt Emma mit?': 'den Sonnenschirm', 'Welche Farbe hat Emmas Eimer?': 'grün',
+    'Wo versteckt das Eichhörnchen die Nüsse?': 'im Schnee', 'Wann sucht es seine Vorräte wieder?': 'im Herbst', 'Wie lange backt der Kuchen?': '60 Minuten', 'Mit wem backt Paula?': 'mit Papa', 'Wozu ist das Licht da?': 'damit die Fische wach bleiben', 'Wann dreht sich das Licht?': 'morgens',
+    'Warum bleibt Ben zu Hause?': 'Er hat verschlafen.', 'Was kocht Mama?': 'warme Milch', 'Was ist die Nase des Schneemanns?': 'ein Knopf', 'Wer setzt dem Schneemann den Hut auf?': 'Papa', 'Was schlüpft aus den Froscheiern?': 'Molche', 'Wo legen Frösche ihre Eier ab?': 'im Gras',
+    'Was hat Sankt Martin geteilt?': 'seinen Hut', 'Was haben die Kinder dabei?': 'Fahnen', 'Wie viele Bücher darf Lukas mitnehmen?': 'zwei', 'Wie lange darf er die Bücher behalten?': 'eine Woche', 'Warum freuen sich Gärtner über Regenwürmer?': 'Sie vertreiben die Schnecken.',
+    'Was frisst der Regenwurm?': 'kleine Käfer', 'Wo wohnt Oma Carmen?': 'in Frankreich', 'Was essen die beiden zusammen?': 'Eis mit Sahne', 'Wie ist das Wetter?': 'windig und trocken', 'Was zieht Finn an?': 'Turnschuhe', 'Was passiert mit dem warmen Wasser?': 'Es versickert im Boden.', 'Was entsteht oben am Himmel?': 'Blitze' },
+  LESEN34: { 'Woraus ist die Kugelbake gebaut?': 'aus Eisen', 'Wofür war die Kugelbake früher wichtig?': 'Sie war ein Lager für Fische.', 'Warum brauchen die Schiffe sie heute nicht mehr?': 'Sie fahren nur noch am Tag.', 'Wo kann man die Kugelbake außerdem sehen?': 'auf der Flagge von Hamburg',
+    'Wie hieß Idas Pony?': 'Sternchen', 'Wie fühlte sich Ida am Anfang beim Ausreiten?': 'Sie war sehr müde.', 'Warum haben die Kinder wenig geschlafen?': 'Sie hatten Heimweh.', 'Was für ein Text ist das?': 'ein Märchen', 'Wovon lebt der Igel im Winterschlaf?': 'von gesammelten Nüssen',
+    'Was passiert im Winterschlaf mit seinem Herzschlag?': 'Er wird lauter.', 'Was weiß man über den Grund für die Erfindung?': 'Er hatte es seinem Bruder versprochen.', 'Wann wacht der Igel meistens auf?': 'im Januar', 'Was sollte man einem Igel nie geben?': 'Regenwürmer', 'Von wem hatte Lumi den Schal?': 'von seinem Opa', 'Wie kam der Schal zu Rina?': 'Lumi hat ihn dort vergessen.', 'Warum lächelte Lumi am Ende?': 'Er hatte einen neuen Schal gekauft.',
+    'Wie oft am Tag kommt die Flut?': 'viermal', 'Warum ist das Watt für Zugvögel so wichtig?': 'Sie ruhen sich dort vom Schwimmen aus.', 'Seit wann gehört das Wattenmeer zum Weltnaturerbe?': 'seit 1999', 'Welcher Satz passt am besten zum ganzen Text?': 'Das Watt ist ein großer Sandkasten.',
+    'Was fehlte der Laufmaschine noch?': 'ein Lenker', 'Wie kam man mit der Laufmaschine vorwärts?': 'Man kurbelte mit den Händen.', 'Was hat ein Laufrad heute mit der Draisine gemeinsam?': 'Es hat eine Kette.', 'Warum war Mats wütend?': 'Er hatte sich wehgetan.',
+    'Was macht Emma auf dem Schulhof?': 'Sie spielt als Torfrau mit.', 'Was fragt Emma als Erstes?': 'was passiert ist', 'Wie lösen Mats und Lina den Streit?': 'Mats bekommt einen neuen Ball.', 'Wo leben fast alle Pinguine?': 'in Asien im Gebirge', 'Welche Pinguinart ist die größte?': 'der Felsenpinguin',
+    'Wer brütet beim Kaiserpinguin das Ei aus?': 'ein anderer Vogel', 'Was schützt Pinguine vor der Kälte?': 'dicke Wolle wie bei Schafen', 'An welchem Tag ist Markt?': 'am Freitag', 'Was darf Emil tragen?': 'den Käse', 'Was bekommt Emil am Käsestand?': 'ein Glas Honig',
+    'Was kaufen Oma und Emil zuletzt?': 'ein Stück Käse', 'In welchem Baum bauen sie das Baumhaus?': 'in einer Tanne', 'Was macht Jonas beim Bauen?': 'Er streicht die Wände.', 'Wie kommen die Kinder ins Baumhaus?': 'über eine Kletterwand', 'Welches Tier hören sie in der Nacht?': 'einen Hund',
+    'Womit saugt die Biene den Nektar auf?': 'mit ihren Flügeln', 'Warum fächeln die Bienen mit den Flügeln?': 'damit die Blüten schneller wachsen', 'Wofür brauchen die Bienen den Honig?': 'als Geschenk für die Königin', 'Womit wird eine volle Wabe verschlossen?': 'mit einem Tropfen Honig',
+    'Was verlangt Leon von den Kindern?': 'auf einen Baum zu klettern', 'Warum springt Karim nicht?': 'Er hat sich den Fuß verletzt.', 'Wie reagiert Frieda?': 'Sie holt die Lehrerin.', 'Was meint die Mutter am Ende?': 'Mutproben sind immer gut.' },
+  LEER_ES: { '¿De qué color es Misi?': 'gris', '¿Qué le gusta hacer a Misi?': 'jugar con agua', '¿Cómo va Pablo al colegio?': 'a pie', '¿A qué hora empieza su clase?': 'a las once', '¿Qué hace Carmen en la playa?': 'juega al fútbol', '¿Cuándo va la familia a la playa?': 'en primavera',
+    '¿Cuántos años cumple Diego?': 'siete', '¿Qué le regala su abuela?': 'un reloj', '¿Dónde dejan los niños sus zapatos?': 'en la puerta', '¿Quién trae los regalos?': 'Papá Noel', '¿Dónde pone Sara el diente?': 'en un vaso', '¿Qué le deja el Ratoncito Pérez?': 'una carta',
+    '¿Qué coge Martín de la nevera?': 'zumo y galletas', '¿Qué hace antes de comer?': 'hace los deberes', '¿De qué color es el paraguas de Ana?': 'verde', '¿Dónde salta Ana?': 'en la piscina', '¿Qué hacen las abejas con el néctar?': 'queso', '¿Dónde viven las abejas?': 'en un nido',
+    '¿Con quién habla Hugo español?': 'con su perro', '¿De dónde es su familia?': 'de Portugal', '¿Qué plantan Elena y su abuelo?': 'una patata', '¿Cuándo sale la planta?': 'después de un mes', '¿Qué tiempo hace?': 'hace mucho calor', '¿Qué hace Leo?': 'juega al fútbol' },
+  LEER34_ES: { '¿Con quién construye ⟦N⟧ un castillo?': 'con su hermana', '¿Qué es el Teide?': 'un museo', '¿Qué ven desde arriba?': 'un barco', '¿Qué comen por la noche?': 'arroz con pollo', '¿Por qué se reían de él?': 'porque caminaba despacio', '¿Qué pasó un día?': 'Se rompió el hielo.',
+    '¿Cuál fue su idea?': 'construir una casa', '¿Qué aprendemos del cuento?': 'Es mejor estar solo.', '¿Cuándo juega Lucía el partido?': 'el viernes por la tarde', '¿Qué número lleva en la camiseta?': 'el cinco', '¿Cuántos goles marca Lucía?': 'cuatro', '¿Qué beben después del partido?': 'té con miel',
+    '¿De dónde llega la carta?': 'de Barcelona', '¿Dónde duerme el gato Pipo?': 'dentro del armario', '¿Cuándo viene la abuela a Alemania?': 'en octubre', '¿Qué dibuja Marta?': 'un árbol de Navidad' }
+};
+const P9_IDS = ['mehrzahl', 'grundform', 'fehlerwort', 'trennen', 'tildes', 'doppelvokal', 'leseraetsel', 'wortfeld', 'lesen', 'lesen34', 'leer', 'leer34es', 'adivinanzas', 'pasadoes', 'sinonimoses', 'plural', 'diminutivos', 'trabalenguas', 'steigern', 'zeitformen', 'verbos', 'dias'];
+
+function p9Stufe(q, ctx) {
+  if (!q || q.kind !== 'choice' || q.fixed) return q;
+  const falsch = q.options.filter(o => !o.ok);
+  if (q.options.length !== 4 || falsch.length !== 3) return q;
+  if (((ctx && ctx.lv) || 1) < 2) { const raus = R.pick(falsch); q.options = q.options.filter(o => o !== raus); }
+  else if (q.layout === 'row3') q.layout = q.options.some(o => String(o.label).length > 14) ? 'col' : 'auto';
+  return q;
+}
+(() => {
+  const put = (rows, map, key, arr) => rows.forEach(r => { const w = map[key(r)], a = arr(r); if (w && Array.isArray(a) && a.length === 2 && !a.includes(w)) a.push(w); });
+  put(MEHRZAHL, P9_W3.MEHRZAHL, r => r[1], r => r[2]);
+  put(GRUNDF_W, P9_W3.GRUNDF_W, r => r[0], r => r[2]);
+  put(FEHLERWORT, P9_W3.FEHLERWORT, r => r[0], r => r[1]);
+  put(DOPPELVOKAL, P9_W3.DOPPELVOKAL, r => r[1], r => r[2]);
+  put(LESERAETSEL, P9_W3.LESERAETSEL, r => r[1], r => r[2]);
+  put(WORTFELDER, P9_W3.WORTFELDER, r => r[2], r => r[3]);
+  put(ADIVINANZAS, P9_W3.ADIVINANZAS, r => r[1], r => r[3]);
+  put(PASADO_ES, P9_W3.PASADO_ES, r => r[1], r => r[2]);
+  put(SINONIMOS_ES, P9_W3.SINONIMOS_ES, r => r[0], r => r[2]);
+  put(PLURAL_ES, P9_W3.PLURAL_ES, r => r[0], r => r[2]);
+  put(DIMINUTIVOS, P9_W3.DIMINUTIVOS, r => r[0], r => r[2]);
+  put(B24_TRABA, P9_W3.B24_TRABA, r => r[1], r => r[2]);
+  put(LESEN_DE_FLAT, P9_W3.LESEN_DE, r => r[1], r => r[3]);
+  put(LEER_ES_FLAT, P9_W3.LEER_ES, r => r[1], r => r[3]);
+  LESEN34.forEach(T => put(T.q, P9_W3.LESEN34, r => r[0], r => r[2]));
+  LEER34_ES.forEach(T => put(T.q, P9_W3.LEER34_ES, r => r[0], r => r[2]));
+  SILBENTRENNUNG.forEach(r => { if (P9_W3.SILBENTRENNUNG[r[0]]) r[4] = P9_W3.SILBENTRENNUNG[r[0]]; });
+  TILDES.forEach(r => { if (P9_W3.TILDES[r[0]]) r[4] = P9_W3.TILDES[r[0]]; });
+  P9_IDS.forEach(id => { const g = GAMES[id]; if (!g || !g.gen || g.type) return; const gen0 = g.gen; if (!g.max) { g.max = 2; if (!g.start) g.start = [1, 1, 2, 2]; } g.gen = ctx => p9Stufe(gen0(ctx), ctx); });
+})();
+
+/*@@src schach.js@@*/
+
+
+
+
+
+
+
+
+const SX_N = [[1, 2], [2, 1], [2, -1], [1, -2], [-1, -2], [-2, -1], [-2, 1], [-1, 2]], SX_K = [[1, 0], [1, 1], [0, 1], [-1, 1], [-1, 0], [-1, -1], [0, -1], [1, -1]];
+const SX_WERT = { p: 1, n: 3, b: 3, r: 5, q: 9, k: 0 }, SX_BILD = { k: '♚', q: '♛', r: '♜', b: '♝', n: '♞', p: '♟' }, SX_NAME = { k: 'König', q: 'Dame', r: 'Turm', b: 'Läufer', n: 'Springer', p: 'Bauer' };
+const SX_ART = { bauern: ['Bauernrennen', '♟', 'Nur Bauern. Wer zuerst die andere Seite erreicht, gewinnt.'], mini: ['Mini-Schach', '♞', 'Kleines Brett ohne Läufer. Ideal zum Üben von Schach und Matt.'], voll: ['Echtes Schach', '♚', 'Das ganze Spiel auf 8 × 8 Feldern mit allen Regeln.'] };
+const sxW = p => p !== '' && p === p.toUpperCase();
+
+function sxNew(v) {
+  const n = v === 'voll' ? 8 : 6, b = Array(n * n).fill(''), hinten = v === 'voll' ? 'rnbqkbnr' : v === 'mini' ? 'rnqknr' : '';
+  for (let x = 0; x < n; x++) { if (hinten) { b[x] = hinten[x]; b[(n - 1) * n + x] = hinten[x].toUpperCase(); } b[n + x] = 'p'; b[(n - 2) * n + x] = 'P'; }
+  return { v, n, b, w: true, ep: -1, cas: v === 'voll' ? 'KQkq' : '' };
+}
+function sxFen(fen) {
+  const [pl, zug, cas, ep] = fen.split(' '), b = [];
+  pl.split('/').forEach(r => Array.from(r).forEach(c => { if (/\d/.test(c)) for (let k = 0; k < Number(c); k++) b.push(''); else b.push(c); }));
+  return { v: 'voll', n: 8, b, w: zug !== 'b', ep: ep && ep !== '-' ? (8 - Number(ep[1])) * 8 + 'abcdefgh'.indexOf(ep[0]) : -1, cas: cas && cas !== '-' ? cas : '' };
+}
+
+function sxAtt(S, sq, vonW) {
+  const n = S.n, b = S.b, x = sq % n, y = Math.floor(sq / n), eig = c => c !== '' && sxW(c) === vonW;
+  const auf = (dx, dy) => { const a = x + dx, c = y + dy; return a < 0 || c < 0 || a >= n || c >= n ? null : b[c * n + a]; };
+  const py = vonW ? 1 : -1;
+  for (const dx of [-1, 1]) { const p = auf(dx, py); if (p && eig(p) && p.toLowerCase() === 'p') return true; }
+  for (const [dx, dy] of SX_N) { const p = auf(dx, dy); if (p && eig(p) && p.toLowerCase() === 'n') return true; }
+  for (const [dx, dy] of SX_K) {
+    const k = auf(dx, dy); if (k && eig(k) && k.toLowerCase() === 'k') return true;
+    for (let s = 1; s < n; s++) { const p = auf(dx * s, dy * s); if (p === null) break; if (p === '') continue; if (eig(p)) { const t = p.toLowerCase(); if (t === 'q' || (t === 'r' && (dx === 0 || dy === 0)) || (t === 'b' && dx !== 0 && dy !== 0)) return true; } break; }
+  }
+  return false;
+}
+const sxKoenig = (S, w) => S.b.indexOf(w ? 'K' : 'k');
+const sxImSchach = (S, w) => { const k = sxKoenig(S, w); return k >= 0 && sxAtt(S, k, !w); };
+function sxPseudo(S) {
+  const n = S.n, b = S.b, w = S.w, out = [];
+  for (let f = 0; f < n * n; f++) {
+    const p = b[f]; if (p === '' || sxW(p) !== w) continue;
+    const t = p.toLowerCase(), x = f % n, y = Math.floor(f / n);
+    const feld = (dx, dy) => { const a = x + dx, c = y + dy; return a < 0 || c < 0 || a >= n || c >= n ? -1 : c * n + a; };
+    if (t === 'p') {
+      const d = w ? -1 : 1, ende = w ? 0 : n - 1, start = w ? n - 2 : 1, add = to => out.push(S.v !== 'bauern' && Math.floor(to / n) === ende ? { f, t: to, p: w ? 'Q' : 'q' } : { f, t: to });
+      const v1 = feld(0, d);
+      if (v1 >= 0 && b[v1] === '') { add(v1); const v2 = feld(0, 2 * d); if (S.v === 'voll' && y === start && v2 >= 0 && b[v2] === '') out.push({ f, t: v2 }); }
+      for (const dx of [-1, 1]) { const to = feld(dx, d); if (to < 0) continue; if (b[to] !== '' && sxW(b[to]) !== w) add(to); else if (to === S.ep && S.ep >= 0) out.push({ f, t: to, ep: true }); }
+    } else if (t === 'n' || t === 'k') {
+      for (const [dx, dy] of (t === 'n' ? SX_N : SX_K)) { const to = feld(dx, dy); if (to >= 0 && (b[to] === '' || sxW(b[to]) !== w)) out.push({ f, t: to }); }
+      if (t === 'k' && S.cas) {
+        const r = w ? 56 : 0, K = w ? 'K' : 'k', Q = w ? 'Q' : 'q';
+        if (f === r + 4 && !sxAtt(S, f, !w)) {
+          if (S.cas.includes(K) && b[r + 5] === '' && b[r + 6] === '' && b[r + 7] === (w ? 'R' : 'r') && !sxAtt(S, r + 5, !w) && !sxAtt(S, r + 6, !w)) out.push({ f, t: r + 6, cas: 'K' });
+          if (S.cas.includes(Q) && b[r + 3] === '' && b[r + 2] === '' && b[r + 1] === '' && b[r] === (w ? 'R' : 'r') && !sxAtt(S, r + 3, !w) && !sxAtt(S, r + 2, !w)) out.push({ f, t: r + 2, cas: 'Q' });
+        }
+      }
+    } else {
+      for (const [dx, dy] of SX_K) {
+        if ((t === 'r' && dx !== 0 && dy !== 0) || (t === 'b' && (dx === 0 || dy === 0))) continue;
+        for (let s = 1; s < n; s++) { const to = feld(dx * s, dy * s); if (to < 0) break; if (b[to] === '') { out.push({ f, t: to }); continue; } if (sxW(b[to]) !== w) out.push({ f, t: to }); break; }
+      }
+    }
+  }
+  return out;
+}
+function sxMake(S, m) {
+  const n = S.n, b = S.b.slice(), p = b[m.f], w = S.w; let ep = -1, cas = S.cas;
+  b[m.t] = m.p || p; b[m.f] = '';
+  if (m.ep) b[m.t + (w ? n : -n)] = '';
+  if (p.toLowerCase() === 'p' && Math.abs(m.t - m.f) === 2 * n) ep = (m.f + m.t) / 2;
+  if (m.cas) { const r = Math.floor(m.f / n) * n; if (m.cas === 'K') { b[r + 5] = b[r + 7]; b[r + 7] = ''; } else { b[r + 3] = b[r]; b[r] = ''; } }
+  if (cas) {
+    if (p === 'K') cas = cas.replace(/[KQ]/g, ''); if (p === 'k') cas = cas.replace(/[kq]/g, '');
+    for (const sq of [m.f, m.t]) { if (sq === 63) cas = cas.replace('K', ''); if (sq === 56) cas = cas.replace('Q', ''); if (sq === 7) cas = cas.replace('k', ''); if (sq === 0) cas = cas.replace('q', ''); }
+  }
+  return { v: S.v, n, b, w: !w, ep, cas };
+}
+function sxLegal(S) {
+  const ms = sxPseudo(S); if (S.v === 'bauern') return ms;
+  return ms.filter(m => !sxImSchach(sxMake(S, m), S.w));
+}
+function sxPerft(S, d) { if (d === 0) return 1; let z = 0; for (const m of sxLegal(S)) z += sxPerft(sxMake(S, m), d - 1); return z; }
+
+function sxEnde(S, plies) {
+  const b = S.b, n = S.n;
+  if (S.v === 'bauern') {
+    if (b.slice(0, n).includes('P')) return { art: 'ziel', sieger: 'w' };
+    if (b.slice(n * (n - 1)).includes('p')) return { art: 'ziel', sieger: 's' };
+    if (!b.includes('P')) return { art: 'leer', sieger: 's' }; if (!b.includes('p')) return { art: 'leer', sieger: 'w' };
+    if (!sxPseudo(S).length) return { art: 'fest', sieger: S.w ? 's' : 'w' };
+    return null;
+  }
+  if (!sxLegal(S).length) return sxImSchach(S, S.w) ? { art: 'matt', sieger: S.w ? 's' : 'w' } : { art: 'patt', sieger: '' };
+  if (b.every(p => p === '' || p.toLowerCase() === 'k')) return { art: 'nurkoenige', sieger: '' };
+  if (plies >= 240) return { art: 'lang', sieger: '' };
+  return null;
+}
+
+function sxWert(S) {
+  const n = S.n; let v = 0;
+  S.b.forEach((p, i) => { if (p === '') return; const t = p.toLowerCase(), y = Math.floor(i / n), x = i % n, w = sxW(p); let s = SX_WERT[t] * 100;
+    if (t === 'p') s += (w ? n - 1 - y : y) * (S.v === 'bauern' ? 14 : 6); else if (t !== 'k') s += 6 - Math.round(Math.abs(x - (n - 1) / 2) + Math.abs(y - (n - 1) / 2)) * 2;
+    v += w ? s : -s; });
+  return v;
+}
+function sxSuche(S, tiefe, a, b, plies) {
+  const e = sxEnde(S, plies);
+  if (e) return e.sieger === 'w' ? 99000 + tiefe : e.sieger === 's' ? -99000 - tiefe : 0;
+  if (tiefe === 0) return sxWert(S);
+  const ms = sxLegal(S);
+  if (S.w) { let best = -1e9; for (const m of ms) { best = Math.max(best, sxSuche(sxMake(S, m), tiefe - 1, a, b, plies + 1)); a = Math.max(a, best); if (a >= b) break; } return best; }
+  let best = 1e9; for (const m of ms) { best = Math.min(best, sxSuche(sxMake(S, m), tiefe - 1, a, b, plies + 1)); b = Math.min(b, best); if (a >= b) break; } return best;
+}
+function sxBester(S, tiefe, plies, patzer) {
+  const ms = R.shuffle(sxLegal(S)); if (!ms.length) return null;
+  if (patzer && R.chance(patzer)) return ms[0];
+  let best = null, bw = 0;
+  for (const m of ms) { const w = sxSuche(sxMake(S, m), tiefe - 1, -1e9, 1e9, plies + 1) * (S.w ? 1 : -1); if (!best || w > bw) { best = m; bw = w; } }
+  return best;
+}
+
+
+let SX = null;
+const sxFeldName = (S, i) => 'abcdefgh'[i % S.n] + (S.n - Math.floor(i / S.n));
+function sxStart(g0) {
+  SX = { g: g0, phase: 'wahl', v: (S.sx && S.sx.v) || 'bauern', geg: (S.sx && S.sx.geg) || 'locker', st: null, hist: [], sel: -1, ziele: [], last: null, tipp: null, ende: null, busy: 0, msg: '', timer: 0 };
+  g0.cleanup = () => { if (SX) { clearTimeout(SX.timer); SX = null; } };
+  sxDraw();
+}
+function sxLos() {
+  S.sx = { v: SX.v, geg: SX.geg, n: (S.sx && S.sx.n) || 0, sieg: (S.sx && S.sx.sieg) || 0 }; save();
+  Object.assign(SX, { phase: 'spiel', st: sxNew(SX.v), hist: [], sel: -1, ziele: [], last: null, tipp: null, ende: null, busy: 0, msg: '' });
+  sxDraw();
+}
+function sxStatus() {
+  const st = SX.st, zwei = SX.geg === 'zwei', e = SX.ende;
+  if (e) {
+    if (e.art === 'patt') return 'Patt: Niemand kann mehr ziehen, aber kein König steht im Schach. Unentschieden.';
+    if (e.art === 'nurkoenige') return 'Nur noch die Könige sind übrig. Unentschieden.';
+    if (e.art === 'lang') return 'Die Partie hat sehr lange gedauert. Unentschieden.';
+    const wer = zwei ? (e.sieger === 'w' ? 'Weiß' : 'Schwarz') + ' hat gewonnen' : e.sieger === 'w' ? 'Du hast gewonnen' : 'Lumi hat diesmal gewonnen';
+    return (e.art === 'matt' ? 'Schachmatt! ' : e.art === 'ziel' ? 'Ein Bauer ist am Ziel! ' : e.art === 'leer' ? 'Alle Bauern sind geschlagen. ' : 'Kein Zug mehr möglich. ') + wer + (e.sieger === 'w' || zwei ? '. 🎉' : '.');
+  }
+  if (SX.busy) return 'Lumi überlegt …';
+  const schach = st.v !== 'bauern' && sxImSchach(st, st.w);
+  return (schach ? 'Schach! Der König ist bedroht. ' : '') + (zwei ? (st.w ? 'Weiß ist dran.' : 'Schwarz ist dran.') : 'Du bist dran. Du spielst Weiß.');
+}
+function sxDraw() {
+  if (!SX) return;
+  if (SX.phase === 'wahl') {
+    return setView(`<div class="game sx-game" id="sxRoot"><header class="wrap gamebar"><button class="icon-btn" data-act="quit" aria-label="Spiel beenden">✕</button><div class="sx-kopf">Schach gegen Lumi</div></header>
+      <main class="wrap sx-wahl"><section class="card"><h2>Was möchtest du spielen?</h2>
+        <div class="sx-arten">${Object.keys(SX_ART).map(k => `<button class="sx-art ${SX.v === k ? 'sel' : ''}" data-act="sxart" data-v="${k}" aria-pressed="${SX.v === k}"><span class="sx-fig" aria-hidden="true">${SX_ART[k][1]}︎</span><b>${SX_ART[k][0]}</b><small>${SX_ART[k][2]}</small></button>`).join('')}</div>
+        <h2 class="ka-h2">Gegen wen?</h2>
+        <div class="seg ka-seg">${[['locker', '🐧 Lumi, locker'], ['stark', '🐧 Lumi, stark'], ['zwei', '👫 Zu zweit']].map(([k, t]) => `<button class="${SX.geg === k ? 'sel' : ''}" data-act="sxgeg" data-g="${k}">${t}</button>`).join('')}</div>
+        <div class="acts"><button class="btn" data-act="sxlos">Los geht's</button></div>
+        <p class="muted">Tippe eine Figur an: Die Punkte zeigen, wohin sie ziehen darf. Weiß beginnt. ${S.sx && S.sx.n ? `Bisher ${plural(S.sx.n, 'Partie', 'Partien')} gegen Lumi, davon ${S.sx.sieg || 0} gewonnen.` : ''}</p></section></main></div>`, 'meine');
+  }
+  const st = SX.st, n = st.n, kW = sxKoenig(st, true), kS = sxKoenig(st, false), schachFeld = st.v !== 'bauern' && sxImSchach(st, st.w) ? (st.w ? kW : kS) : -1; let h = '';
+  for (let i = 0; i < n * n; i++) {
+    const p = st.b[i], x = i % n, y = Math.floor(i / n), ziel = SX.ziele.find(m => m.t === i);
+    const cls = ['sx-q', (x + y) % 2 ? 'du' : 'he', SX.sel === i ? 'sel' : '', ziel ? (p !== '' || ziel.ep ? 'schlag' : 'ziel') : '', SX.last && (SX.last.f === i || SX.last.t === i) ? 'last' : '', SX.tipp && (SX.tipp.f === i || SX.tipp.t === i) ? 'tipp' : '', schachFeld === i ? 'schach' : ''].filter(Boolean).join(' ');
+    h += `<button class="${cls}" data-act="sxq" data-i="${i}" aria-label="${sxFeldName(st, i)}${p ? ', ' + (sxW(p) ? 'weiß: ' : 'schwarz: ') + SX_NAME[p.toLowerCase()] : ''}"${SX.ende || SX.busy ? ' disabled' : ''}>${p ? `<span class="sx-p ${sxW(p) ? 'w' : 's'}">${SX_BILD[p.toLowerCase()]}︎</span>` : ''}${x === 0 ? `<i class="sx-r">${n - y}</i>` : ''}${y === n - 1 ? `<i class="sx-l">${'abcdefgh'[x]}</i>` : ''}</button>`;
+  }
+  const zwei = SX.geg === 'zwei';
+  setView(`<div class="game sx-game" id="sxRoot"><header class="wrap gamebar"><button class="icon-btn" data-act="quit" aria-label="Spiel beenden">✕</button><div class="sx-kopf">${SX_ART[SX.v][0]} · ${zwei ? 'zu zweit' : 'gegen Lumi'}</div></header>
+    <main class="wrap sx-main"><div class="sx-brett" style="--n:${n}">${h}</div>
+      <div class="sx-side"><p class="sx-st${SX.ende ? ' ende' : ''}" aria-live="polite">${esc(sxStatus())}</p>
+        ${SX.ende ? `<div class="sp-tools"><button class="btn" data-act="sxfertig">Fertig</button><button class="btn ghost" data-act="sxneu">Noch eine Partie</button></div>`
+          : `<div class="sp-tools"><button class="btn ghost sm" data-act="sxtipp"${SX.busy ? ' disabled' : ''}>💡 Tipp</button><button class="btn ghost sm" data-act="sxzurueck"${SX.busy || !SX.hist.length ? ' disabled' : ''}>↩️ Zug zurück</button><button class="btn ghost sm" data-act="sxneu">Neu wählen</button></div>`}
+        <p class="e7-msg" aria-live="polite">${esc(SX.msg || (SX.v === 'bauern' ? 'Bauern ziehen ein Feld geradeaus und schlagen schräg nach vorn.' : ''))}</p></div></main></div>`, 'meine');
+}
+function sxZug(m) {
+  const st = SX.st, p = st.b[m.f], schlag = st.b[m.t] !== '' || m.ep;
+  SX.hist.push({ st, last: SX.last }); SX.st = sxMake(st, m); SX.last = m; SX.sel = -1; SX.ziele = []; SX.tipp = null;
+  SX.msg = m.cas ? 'Rochade: König und Turm tauschen die Seiten.' : m.ep ? 'Im Vorbeigehen geschlagen (en passant).' : m.p ? 'Der Bauer wird zur Dame!' : '';
+  schlag ? Sound.good() : Sound.tap();
+  SX.ende = sxEnde(SX.st, SX.hist.length);
+  if (SX.ende) { if (SX.geg !== 'zwei') { S.sx.n = (S.sx.n || 0) + 1; if (SX.ende.sieger === 'w') S.sx.sieg = (S.sx.sieg || 0) + 1; save(); } if (SX.ende.sieger === 'w' || SX.geg === 'zwei') { try { confetti(60); Sound.win(); } catch (e) { } } }
+  return p;
+}
+function sxLumi() {
+  if (!SX || SX.ende || SX.geg === 'zwei' || SX.st.w) return;
+  SX.busy = 1; sxDraw();
+  const mein = SX;
+  SX.timer = setTimeout(() => {
+    if (SX !== mein || !SX.busy) return;
+    const stark = SX.geg === 'stark', m = sxBester(SX.st, stark ? (SX.v === 'voll' ? 2 : 3) : 1, SX.hist.length, stark ? 0 : .3);
+    SX.busy = 0; if (m) { const von = sxFeldName(SX.st, m.f), nach = sxFeldName(SX.st, m.t), fig = SX_NAME[SX.st.b[m.f].toLowerCase()]; sxZug(m); if (!SX.msg) SX.msg = `Lumi zieht: ${fig} von ${von} nach ${nach}.`; }
+    sxDraw();
+  }, typeof window !== 'undefined' && window.LW_FX_AUS ? 30 : 650);
+}
+Object.assign(ACT, {
+  sxart: t => { if (!SX) return; SX.v = t.dataset.v; sxDraw(); },
+  sxgeg: t => { if (!SX) return; SX.geg = t.dataset.g; sxDraw(); },
+  sxlos: () => { if (SX) sxLos(); },
+  sxneu: () => { if (!SX) return; clearTimeout(SX.timer); SX.phase = 'wahl'; SX.busy = 0; SX.ende = null; sxDraw(); },
+  sxq: t => {
+    if (!SX || SX.phase !== 'spiel' || SX.ende || SX.busy) return;
+    const i = Number(t.dataset.i), st = SX.st, zug = SX.ziele.find(m => m.t === i);
+    if (SX.sel >= 0 && zug) { sxZug(zug); sxDraw(); return sxLumi(); }
+    const p = st.b[i];
+    if (p !== '' && sxW(p) === st.w && (SX.geg === 'zwei' || st.w)) { SX.sel = i; SX.ziele = sxLegal(st).filter(m => m.f === i); SX.tipp = null; SX.msg = SX.ziele.length ? '' : `${SX_NAME[p.toLowerCase()] === 'Dame' ? 'Diese Dame' : 'Diese Figur'} kann gerade nicht ziehen.`; Sound.tap(); }
+    else { SX.sel = -1; SX.ziele = []; }
+    sxDraw();
+  },
+  sxtipp: () => {
+    if (!SX || SX.phase !== 'spiel' || SX.ende || SX.busy) return;
+    const m = sxBester(SX.st, SX.v === 'voll' ? 2 : 3, SX.hist.length, 0); if (!m) return;
+    SX.tipp = m; SX.sel = -1; SX.ziele = []; SX.msg = `Tipp: ${SX_NAME[SX.st.b[m.f].toLowerCase()]} von ${sxFeldName(SX.st, m.f)} nach ${sxFeldName(SX.st, m.t)}.`; sxDraw();
+  },
+  sxzurueck: () => {
+    if (!SX || SX.phase !== 'spiel' || SX.busy || !SX.hist.length) return;
+    let h = SX.hist.pop(); if (SX.geg !== 'zwei' && !h.st.w && SX.hist.length) h = SX.hist.pop();
+    SX.st = h.st; SX.last = h.last; SX.sel = -1; SX.ziele = []; SX.tipp = null; SX.ende = null; SX.msg = 'Zug zurückgenommen.'; sxDraw();
+  },
+  sxfertig: () => {
+    if (!SX || !SX.ende) return;
+    const e = SX.ende, zwei = SX.geg === 'zwei', sieg = e.sieger === 'w' || zwei;
+    customFinish(sieg ? 1 : 0, sieg ? 0 : 1, sieg ? 3 : e.sieger === '' ? 2 : 1);
+  }
+});
+GAMES.schachlumi = { id: 'schachlumi', w: 'meine', g: 'n-raetsel', t: 'Schach gegen Lumi', d: 'Bauernrennen, Mini-Schach und echtes Schach', i: '♞', type: 'custom', run: g0 => sxStart(g0) };
 
 /*@@src lumi_live.js@@*/
 
