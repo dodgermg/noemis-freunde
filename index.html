@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-X9gbcKYeyD7qfjMbC1/YjheyXNCANNg3vgb+eqGCNLI=' 'sha256-9spKaVwbwe2Hi4nWl9h42ngJzP+YavEZKF1RZeHnaww=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-ALVxrdEKzfYLNHo/GNFkaFE01DAp3Y8nU2+d2dkBEU4=' 'sha256-36aQVuv+26zQozCDW7frU3M4yOG0Qr3fruvK0cwt2RA=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -6382,6 +6382,46 @@ body.calm .weg-st .weg-n, body.calm .weg-st .weg-i { animation: none !important;
 .vcell.last { outline: 3px solid #12324A; outline-offset: -3px; }
 #pzstop { margin-top: 8px; }
 
+/* ---- style_neu271.css ---- */
+
+.e1-sprech { background: var(--surface-2, rgba(0, 0, 0, .05)); border-radius: 18px 18px 18px 4px; padding: 12px 18px; display: inline-block; }
+.vk-entry { margin-bottom: 12px; }
+.vk-entry + .ka-entry { margin-top: 0; }
+.vk-de { font-size: 26px; font-weight: 800; text-align: center; margin-top: 4px; }
+.vk-wort { font-size: clamp(30px, 7vw, 44px); font-weight: 800; }
+.vk { display: grid; gap: 18px; padding-bottom: 40px; }
+.vk-heute { display: flex; align-items: center; gap: 18px; }
+.vk-heute p { font-size: 20px; margin: 0 0 12px; }
+.vk-hi { font-size: 58px; line-height: 1; }
+.vk-faecher { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; align-items: end; }
+.vk-fach { font: inherit; color: inherit; cursor: pointer; display: grid; gap: 2px; justify-items: center; padding: 12px 4px 10px; border-radius: 14px; background: var(--surface); border: 2px solid var(--line-deep); border-top-width: 10px; }
+.vk-fach.f1 { border-top-color: #d9534f; } .vk-fach.f2 { border-top-color: #e8873a; } .vk-fach.f3 { border-top-color: #e0b930; } .vk-fach.f4 { border-top-color: #7fb840; } .vk-fach.f5 { border-top-color: #2f9e6e; }
+.vk-fach:disabled { opacity: .55; cursor: default; }
+.vk-fach b { font-size: 15px; }
+.vk-fach small { font-size: 12px; opacity: .8; text-align: center; }
+.vk-n { font-size: 30px; font-weight: 800; line-height: 1.1; }
+.vk-rest { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+.vk-rest button { font: inherit; cursor: pointer; border: 0; }
+.vk-rest button:disabled { opacity: .6; cursor: default; }
+.vk-info p { margin: 6px 0; }
+.vk-liste { max-height: 46vh; overflow: auto; display: grid; gap: 4px; text-align: left; }
+.vk-liste > div { display: grid; grid-template-columns: 1fr 1fr auto; gap: 8px; align-items: baseline; padding: 6px 8px; border-radius: 10px; background: var(--surface-2, rgba(0, 0, 0, .05)); }
+.vk-liste small { opacity: .75; white-space: nowrap; }
+.ek { display: grid; gap: 12px; text-align: left; }
+.ek-kopf { display: flex; align-items: center; gap: 12px; }
+.ek-kopf > span { font-size: 44px; line-height: 1; }
+.ek-kopf small { text-transform: uppercase; letter-spacing: .08em; font-size: 12px; opacity: .7; font-weight: 700; }
+.ek-kopf h2 { margin: 0; }
+.ek-l { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; }
+.ek-l li { padding: 9px 12px; border-radius: 12px; background: var(--surface-2, rgba(0, 0, 0, .05)); font-size: 17px; line-height: 1.35; }
+.ek-l b { color: var(--accent-deep, inherit); }
+.ek-b { border: 2px dashed var(--line-deep); border-radius: 12px; padding: 9px 12px; display: grid; gap: 3px; font-size: 17px; }
+.ek-b small { text-transform: uppercase; letter-spacing: .08em; font-size: 12px; opacity: .7; font-weight: 700; }
+.ek-hin { font-size: 14px; margin: 0; }
+.ek-btn { flex: none; font-size: 20px; }
+.ek-link { font: inherit; font-size: 15px; font-weight: 700; cursor: pointer; margin-top: 6px; padding: 6px 12px; border-radius: 999px; border: 2px solid var(--line-deep); background: var(--surface); color: inherit; }
+@media (max-width: 480px) { .vk-faecher { gap: 6px; } .vk-fach b { font-size: 13px; } .vk-n { font-size: 24px; } .vk-heute { flex-direction: column; text-align: center; } }
+
 /* ---- style_pa.css ---- */
 
 .pa { min-height: 100vh; }
@@ -8640,8 +8680,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '2.70.0';
-  var MAP = {"probe":0,"files":[[8630,"fehler_kern.js"],[8918,null],[8920,"data.js"],[9615,"data_more.js"],[9972,"data_su2.js"],[10199,"data_es.js"],[10541,"data_wissen.js"],[10740,"data_v21.js"],[11423,"data_v24.js"],[11909,"data_v25.js"],[12390,"data_v26.js"],[12489,"data_v29.js"],[12794,"data_v30.js"],[13123,"data_v31.js"],[13429,"data_kunst.js"],[13625,"data_v214.js"],[13728,"data_v216.js"],[14021,"schrift.js"],[14321,"eingabe.js"],[14532,"data_k34m.js"],[15050,"data_k34d.js"],[15404,"data_k34s.js"],[15858,"data_v224.js"],[16731,"data_v225w.js"],[17100,"data_v225k.js"],[17544,"data_herz.js"],[17898,"data_fb226.js"],[18041,"data_tf226.js"],[18248,"data_v227a.js"],[19339,"data_v227b.js"],[20293,"data_h28b.js"],[20333,"data_l28a.js"],[21199,"data_l28b.js"],[22379,"data_schaetz.js"],[22861,"data_party8.js"],[22911,"data_alce.js"],[23571,"data_alce2.js"],[23820,"data_alce3.js"],[24235,"registry.js"],[24749,"app.js"],[25907,"fun.js"],[26487,"fun2.js"],[26803,"atelier.js"],[27177,"kunst225.js"],[27367,"herz.js"],[27731,"reise.js"],[28033,"iglu.js"],[28199,"offline.js"],[28306,"party.js"],[28790,"meine.js"],[29146,"loeffel.js"],[29317,"trend.js"],[29859,"fun228a.js"],[30710,"fun228b.js"],[31371,"kueche.js"],[32410,"stimme.js"],[32465,"klassen.js"],[32614,"freunde_vorab.js"],[32635,"mut.js"],[33057,"schule.js"],[33546,"fussball226.js"],[33868,"schaetzen.js"],[34299,"party8.js"],[34918,"tiere.js"],[35377,"fussball232.js"],[35592,"party8b.js"],[35894,"weg.js"],[36114,"px.js"],[36525,"px_data.js"],[36782,"pxwelt.js"],[36863,"px_abenteuer.js"],[37664,"px_abenteuer2.js"],[38413,"px_ski.js"],[39055,"px_wurf.js"],[39584,"px_insel.js"],[40785,"px_kicker.js"],[41720,"px_eis.js"],[42706,"px_run.js"],[43921,"px_brk.js"],[44883,"px_pol.js"],[46234,"px_frog.js"],[47494,"px_angel.js"],[48809,"px_golf.js"],[49843,"px_tauch.js"],[51108,"px_hockey.js"],[52064,"px_lab.js"],[53399,"px_plopp.js"],[54605,"px_stadion.js"],[56109,"px_training.js"],[56478,"cm.js"],[56968,"cmwelt.js"],[57024,"cm_baeck.js"],[57817,"cm_bahn.js"],[58581,"cm_detek.js"],[59298,"cm_markt.js"],[60011,"ff.js"],[60168,"ff_mathe.js"],[62158,"ff_deutsch.js"],[63746,"ff_sach_a.js"],[65995,"ff_sach_b.js"],[68224,"ff_sprachen.js"],[70632,"zm.js"],[71545,"tt.js"],[71758,"data_tagebuch.js"],[71801,"data_hoerspiel.js"],[71960,"leseecke.js"],[72279,"kt.js"],[72582,"comicbuch.js"],[72860,"alce.js"],[73023,"alce_aufg.js"],[73193,"formen.js"],[73644,"data_formen.js"],[73885,"data_formen2.js"],[74107,"spielzeit.js"],[74252,"data_faktmeinung.js"],[74371,"data_es248.js"],[74635,"data_en249.js"],[74874,"data_wissen249.js"],[75305,"data_kunst249.js"],[75588,"data_fussball250.js"],[75712,"data_werte252.js"],[75965,"data_lesen252.js"],[76026,"data_k34_252.js"],[76112,"art254.js"],[76230,"data_werte255.js"],[76368,"data_lesen255.js"],[76504,"forscher255.js"],[76652,"zufall250.js"],[76698,"stufe259.js"],[76708,"advent.js"],[76971,"wdh.js"],[77069,"denk.js"],[77106,"data_viaje265.js"],[77249,"klassenarbeit.js"],[77382,"quizduell.js"],[77505,"neu267.js"],[77770,"prog.js"],[77875,"lernstand.js"],[77942,"blatt.js"],[78044,"plus269.js"],[78138,"schach.js"],[78365,"schachtaktik.js"],[78536,"fun270.js"],[78699,"lumi_live.js"],[78815,"sicher.js"],[78999,"stil.js"],[79053,"freunde.js"],[79190,"start.js"],[79200,null],[79210,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '2.71.0';
+  var MAP = {"probe":0,"files":[[8670,"fehler_kern.js"],[8958,null],[8960,"data.js"],[9655,"data_more.js"],[10012,"data_su2.js"],[10239,"data_es.js"],[10581,"data_wissen.js"],[10780,"data_v21.js"],[11463,"data_v24.js"],[11949,"data_v25.js"],[12430,"data_v26.js"],[12529,"data_v29.js"],[12834,"data_v30.js"],[13163,"data_v31.js"],[13469,"data_kunst.js"],[13665,"data_v214.js"],[13768,"data_v216.js"],[14061,"schrift.js"],[14361,"eingabe.js"],[14572,"data_k34m.js"],[15090,"data_k34d.js"],[15444,"data_k34s.js"],[15898,"data_v224.js"],[16771,"data_v225w.js"],[17140,"data_v225k.js"],[17584,"data_herz.js"],[17938,"data_fb226.js"],[18081,"data_tf226.js"],[18288,"data_v227a.js"],[19379,"data_v227b.js"],[20333,"data_h28b.js"],[20373,"data_l28a.js"],[21239,"data_l28b.js"],[22419,"data_schaetz.js"],[22901,"data_party8.js"],[22951,"data_alce.js"],[23611,"data_alce2.js"],[23860,"data_alce3.js"],[24275,"registry.js"],[24789,"app.js"],[25952,"fun.js"],[26532,"fun2.js"],[26848,"atelier.js"],[27222,"kunst225.js"],[27412,"herz.js"],[27776,"reise.js"],[28078,"iglu.js"],[28244,"offline.js"],[28351,"party.js"],[28835,"meine.js"],[29191,"loeffel.js"],[29362,"trend.js"],[29904,"fun228a.js"],[30755,"fun228b.js"],[31416,"kueche.js"],[32455,"stimme.js"],[32510,"klassen.js"],[32659,"freunde_vorab.js"],[32680,"mut.js"],[33102,"schule.js"],[33591,"fussball226.js"],[33913,"schaetzen.js"],[34344,"party8.js"],[34963,"tiere.js"],[35422,"fussball232.js"],[35637,"party8b.js"],[35939,"weg.js"],[36160,"px.js"],[36571,"px_data.js"],[36828,"pxwelt.js"],[36909,"px_abenteuer.js"],[37710,"px_abenteuer2.js"],[38459,"px_ski.js"],[39101,"px_wurf.js"],[39630,"px_insel.js"],[40831,"px_kicker.js"],[41766,"px_eis.js"],[42752,"px_run.js"],[43967,"px_brk.js"],[44929,"px_pol.js"],[46280,"px_frog.js"],[47540,"px_angel.js"],[48855,"px_golf.js"],[49889,"px_tauch.js"],[51154,"px_hockey.js"],[52110,"px_lab.js"],[53445,"px_plopp.js"],[54651,"px_stadion.js"],[56155,"px_training.js"],[56524,"cm.js"],[57014,"cmwelt.js"],[57070,"cm_baeck.js"],[57863,"cm_bahn.js"],[58627,"cm_detek.js"],[59344,"cm_markt.js"],[60057,"ff.js"],[60214,"ff_mathe.js"],[62204,"ff_deutsch.js"],[63792,"ff_sach_a.js"],[66041,"ff_sach_b.js"],[68270,"ff_sprachen.js"],[70678,"zm.js"],[71591,"tt.js"],[71804,"data_tagebuch.js"],[71847,"data_hoerspiel.js"],[72006,"leseecke.js"],[72325,"kt.js"],[72628,"comicbuch.js"],[72906,"alce.js"],[73069,"alce_aufg.js"],[73239,"formen.js"],[73690,"data_formen.js"],[73931,"data_formen2.js"],[74153,"spielzeit.js"],[74298,"data_faktmeinung.js"],[74417,"data_es248.js"],[74681,"data_en249.js"],[74920,"data_wissen249.js"],[75351,"data_kunst249.js"],[75634,"data_fussball250.js"],[75758,"data_werte252.js"],[76011,"data_lesen252.js"],[76072,"data_k34_252.js"],[76158,"art254.js"],[76276,"data_werte255.js"],[76414,"data_lesen255.js"],[76550,"forscher255.js"],[76698,"zufall250.js"],[76744,"stufe259.js"],[76754,"advent.js"],[77017,"wdh.js"],[77115,"denk.js"],[77152,"data_viaje265.js"],[77295,"klassenarbeit.js"],[77428,"quizduell.js"],[77551,"neu267.js"],[77816,"prog.js"],[77921,"lernstand.js"],[77988,"blatt.js"],[78090,"data_es271.js"],[78204,"plus269.js"],[78298,"schach.js"],[78525,"schachtaktik.js"],[78696,"fun270.js"],[78859,"kasten.js"],[78963,"erklaer.js"],[79070,"lumi_live.js"],[79186,"sicher.js"],[79370,"stil.js"],[79424,"freunde.js"],[79561,"start.js"],[79571,null],[79581,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -24750,9 +24790,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '2.70.0';
+const APP_VERSION = '2.71.0';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "2.71.0", d: "12.11.2026", t: ["Spanisch: sieben neue Grammatik-Spiele (Mi, tu, su · Tener · Voy a… · Me levanto · Más o menos · Hay o está, muy o mucho · En clase) und „Diálogos“ mit 24 kleinen Gesprächen", "Neu: der Vokabelkasten für Spanisch und Englisch. Ein Karteikasten mit fünf Fächern, in dem jede Vokabel nach 1, 2, 4, 8 und 16 Tagen wiederkommt", "Neu: Erklärkarten zu 60 Themen. Die Regel in wenigen Sätzen vor der ersten Runde, später oben im Spiel bei der Glühbirne"] },
   { v: "2.70.0", d: "12.11.2026", t: ["Neu bei „Rätsel & Denk-Spiele“: Schach-Taktik mit 165 Aufgaben. Gabeln finden, Matt in 1 und Matt in 2", "Spielhalle: Pinguin-Memory mit drei Runden und Serien-Bonus, Schiebe-Puzzle mit zweiter Stufe (16 Felder), Vier gewinnt mit der neuen Stufe „Profi“, Fisch-Schnapper mit Fang-Serie"] },
   { v: "2.69.0", d: "11.11.2026", t: ["Deutsch und Spanisch: 22 Spiele zeigen ab Stufe 2 vier Antworten statt drei. Dafür haben 435 Aufgaben eine dritte falsche Antwort bekommen, die zum Thema passt. Stufe 1 bleibt bei drei Antworten", "Neu bei „Rätsel & Denk-Spiele“: Schach gegen Lumi. Drei Spielarten (Bauernrennen, Mini-Schach und echtes Schach), gegen Lumi in zwei Stärken oder zu zweit. Mit allen Regeln, Tipp-Knopf und „Zug zurück“"] },
   { v: "2.68.0", d: "11.11.2026", t: ["Neu im Elternbereich: Lernstand. Eine Ampel zeigt für jede Welt und jedes Thema, was sitzt, was läuft und was noch wackelt. Aus den wackligen Spielen lässt sich direkt eine Übungsrunde starten", "Neu im Elternbereich: Arbeitsblatt drucken. Aus Themen oder aus den offenen Fehlern entsteht ein Blatt zum Ausdrucken, auf Wunsch mit Lösungsseite", "Neues Spiel in Mathe bei „Formen & Raum“: Lumi programmieren. Befehle in ein Programm legen und Lumi zum Fisch steuern, auf Stufe 3 mit Wiederholungen"] },
@@ -25199,7 +25240,7 @@ function showWorld(wid, top) {
       <div><h1>${w.name}</h1><p>${w.tag}</p></div><div class="art">${ART[wid]}</div></div></header>
     <main class="wrap">${okN || vor.length ? klWorldBar(okN, 0) : klEmptyWorld(wid)}
       ${groups.length || vor.length ? `<h2 class="tp-h">Wähle ein Thema</h2>` : ''}
-      <div class="topics">${typeof ffTileHTML === 'function' ? ffTileHTML(wid) : ''}${groups.map(gr => topicTile(gr, okOf(gr), wid)).join('')}${vor.length ? topicTile('vor:' + wid, vor, wid) : ''}</div>${typeof kaWorldBtn === 'function' ? kaWorldBtn(wid) : ''}</main>`, wid);
+      <div class="topics">${typeof ffTileHTML === 'function' ? ffTileHTML(wid) : ''}${groups.map(gr => topicTile(gr, okOf(gr), wid)).join('')}${vor.length ? topicTile('vor:' + wid, vor, wid) : ''}</div>${typeof vkWorldBtn === 'function' ? vkWorldBtn(wid) : ''}${typeof kaWorldBtn === 'function' ? kaWorldBtn(wid) : ''}</main>`, wid);
 }
 
 const normQ = s => String(s).toLowerCase().replace(/ß/g, 'ss').replace(/ae/g, 'a').replace(/oe/g, 'o').replace(/ue/g, 'u').normalize('NFD').replace(/[\u0300-\u036f]/g, '');
@@ -25265,6 +25306,7 @@ function genFor(gid, lv) {
 }
 function startGame(id) {
   Sound.unlock();
+  if (typeof ekVor === 'function' && ekVor(id)) return;
   const g = GAMES[id];
   if (g.type === 'blitz') return startBlitz();
   if (g.type === 'tool') return g.open ? g.open() : showLoeffelTool();
@@ -25324,7 +25366,7 @@ function nextQuestion() {
 }
 function gameBar(right) {
   return `<header class="wrap gamebar"><button class="icon-btn" data-act="quit" aria-label="Spiel beenden">✕</button>
-    <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="${G.n}" aria-valuenow="${G.i}"><i style="width:${G.i / G.n * 100}%"></i><span class="tnum">${Math.min(G.i + 1, G.n)} / ${G.n}</span></div>
+    <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="${G.n}" aria-valuenow="${G.i}"><i style="width:${G.i / G.n * 100}%"></i><span class="tnum">${Math.min(G.i + 1, G.n)} / ${G.n}</span></div>${typeof ekBtn === 'function' ? ekBtn() : ''}
     <span class="round-pts tnum" id="rpts">${right || (G.arbeit ? '📝' : G.mode === 'duell' && typeof qdStand === 'function' ? qdStand() : '⭐ ' + G.pts)}</span></header>`;
 }
 function answersHTML(q) {
@@ -25373,6 +25415,8 @@ function answer(ok, second = false) {
   if (G.mode === 'wdh' && typeof wdhAntwort === 'function') wdhAntwort(ok && !second);
   else if (!G.q.noMist) noteMistake(ok && !second);
   if (GAMES[G.qg] && GAMES[G.qg].ff && typeof ffAfterAnswer === 'function') ffAfterAnswer(ok && !second);
+  if (G.q.vk && typeof vkAntwort === 'function') vkAntwort(G.q.vk, ok && !second);
+  if (!ok && typeof ekNach === 'function') ekNach();
   save();
   if (G.arbeit && typeof kaAntwort === 'function') return kaAntwort(ok && !second);
   ok ? Sound.good() : Sound.bad();
@@ -25760,6 +25804,7 @@ function showParents(notice = '') {
     ${typeof fpParentsHTML === 'function' ? fpParentsHTML() : ''}
     ${typeof spzParentsHTML === 'function' ? spzParentsHTML() : ''}
     ${typeof lsParentsHTML === 'function' ? lsParentsHTML() : ''}
+    ${typeof ekParentsHTML === 'function' ? ekParentsHTML() : ''}
     ${typeof abParentsHTML === 'function' ? abParentsHTML() : ''}
     ${typeof kaParentsHTML === 'function' ? kaParentsHTML() : ''}
     ${typeof wdhParentsHTML === 'function' ? wdhParentsHTML() : ''}
@@ -35982,7 +36027,8 @@ function wegStart(i) {
   if (x.k === 'wdh') { if (!(typeof wdhFaellig === 'function' && wdhFaellig().length)) { wegS(); showHome(); return; } startWdh(); }
   else if (x.k === 'trainer') { if (!S.mistakes.length) { wegS(); showHome(); return; } startTrainer(); }
   else { if (!GAMES[x.g]) { showHome(); return; } startGame(x.g); }
-  if (G) G.weg = i + 1;
+  if (typeof EK_OFFEN !== 'undefined' && EK_OFFEN && EK_OFFEN.id === x.g) EK_OFFEN.nach.push(g => { g.weg = i + 1; });
+  else if (G) G.weg = i + 1;
 }
 
 function wegRound() {
@@ -78041,6 +78087,120 @@ Object.assign(ACT, {
   abprint: () => abDruck()
 });
 
+/*@@src data_es271.js@@*/
+
+
+
+
+
+
+const E1 = {
+  esposesivos: { t: 'Mi, tu, su', d: 'Wem gehört es? Mi, tu, su, nuestro und este, esta', i: '🎒', q: '¿Qué palabra falta?',
+    regel: a => /^est/i.test(a) ? 'este (männlich), esta (weiblich), estos, estas = dieser, diese. Das Wort richtet sich nach dem Nomen.' : 'mi = mein, tu = dein, su = sein oder ihr, nuestro und nuestra = unser. Bei mehreren Dingen kommt ein s dazu: mis, tus, sus.',
+    rows: [['(yo) ___ perro se llama Toby.', 'Mi', ['Mis', 'Tu', 'Su'], 'Mein Hund heißt Toby.'], ['(yo) ___ amigos juegan al fútbol.', 'Mis', ['Mi', 'Tus', 'Su'], 'Meine Freunde spielen Fußball.'], ['(tú) ¿Dónde está ___ mochila?', 'tu', ['tus', 'mi', 'sus'], 'Wo ist dein Rucksack?'],
+      ['(tú) ___ zapatos son nuevos.', 'Tus', ['Tu', 'Mis', 'Su'], 'Deine Schuhe sind neu.'], ['(ella) ___ hermano tiene diez años.', 'Su', ['Sus', 'Mi', 'Tu'], 'Ihr Bruder ist zehn Jahre alt.'], ['(él) ___ padres son de Tenerife.', 'Sus', ['Su', 'Mis', 'Tus'], 'Seine Eltern sind aus Teneriffa.'],
+      ['(nosotros) ___ casa es grande.', 'Nuestra', ['Nuestro', 'Nuestras', 'Su'], 'Unser Haus ist groß.'], ['(nosotros) ___ colegio está cerca.', 'Nuestro', ['Nuestra', 'Nuestros', 'Mi'], 'Unsere Schule ist in der Nähe.'], ['(yo) ___ abuela vive en España.', 'Mi', ['Mis', 'Su', 'Tu'], 'Meine Oma wohnt in Spanien.'],
+      ['(tú) ¿Cómo se llama ___ gato?', 'tu', ['tus', 'mis', 'su'], 'Wie heißt deine Katze?'], ['(ellos) ___ perro es muy grande.', 'Su', ['Sus', 'Nuestro', 'Mi'], 'Ihr Hund ist sehr groß.'], ['(yo) ___ libros están en la mesa.', 'Mis', ['Mi', 'Tu', 'Sus'], 'Meine Bücher liegen auf dem Tisch.'],
+      ['(nosotras) ___ amigas vienen hoy.', 'Nuestras', ['Nuestra', 'Nuestros', 'Sus'], 'Unsere Freundinnen kommen heute.'], ['(ella) ___ ojos son azules.', 'Sus', ['Su', 'Mis', 'Tu'], 'Ihre Augen sind blau.'], ['(tú) ___ bicicleta es roja.', 'Tu', ['Tus', 'Mi', 'Sus'], 'Dein Fahrrad ist rot.'],
+      ['(nosotros) ___ primos viven en Madrid.', 'Nuestros', ['Nuestro', 'Nuestras', 'Mis'], 'Unsere Cousins wohnen in Madrid.'], ['___ libro es interesante.', 'Este', ['Esta', 'Estos', 'Estas'], 'Dieses Buch ist interessant.'], ['___ casa es bonita.', 'Esta', ['Este', 'Estas', 'Estos'], 'Dieses Haus ist schön.'],
+      ['___ zapatos son de Pablo.', 'Estos', ['Este', 'Estas', 'Esta'], 'Diese Schuhe gehören Pablo.'], ['___ flores son para mamá.', 'Estas', ['Esta', 'Estos', 'Este'], 'Diese Blumen sind für Mama.']] },
+  estener: { t: 'Tener', d: 'Tengo, tienes, tiene: haben, Alter, Hunger und müssen', i: '🙋', q: '¿Qué forma de «tener» falta?',
+    regel: () => 'tener: tengo, tienes, tiene, tenemos, tenéis, tienen. Alter, Hunger, Durst, Kälte und Angst „hat“ man auf Spanisch: tengo frío. Tener que heißt müssen.',
+    rows: [['Yo ___ ocho años.', 'tengo', ['tienes', 'tiene', 'tenemos'], 'Ich bin acht Jahre alt.'], ['¿Cuántos años ___ tú?', 'tienes', ['tengo', 'tiene', 'tienen'], 'Wie alt bist du?'], ['Mi hermana ___ un gato.', 'tiene', ['tienes', 'tengo', 'tienen'], 'Meine Schwester hat eine Katze.'],
+      ['Nosotros ___ hambre.', 'tenemos', ['tienen', 'tengo', 'tenéis'], 'Wir haben Hunger.'], ['Mis abuelos ___ un jardín.', 'tienen', ['tiene', 'tenemos', 'tienes'], 'Meine Großeltern haben einen Garten.'], ['¿Vosotros ___ deberes?', 'tenéis', ['tienen', 'tenemos', 'tienes'], 'Habt ihr Hausaufgaben?'],
+      ['Yo ___ frío.', 'tengo', ['estoy', 'soy', 'tiene'], 'Mir ist kalt.'], ['Lucía ___ sed.', 'tiene', ['está', 'es', 'tengo'], 'Lucía hat Durst.'], ['El bebé ___ sueño.', 'tiene', ['está', 'es', 'tienen'], 'Das Baby ist müde.'],
+      ['Yo ___ que hacer los deberes.', 'tengo', ['tienes', 'tiene', 'tenemos'], 'Ich muss die Hausaufgaben machen.'], ['Tú ___ que lavarte las manos.', 'tienes', ['tengo', 'tiene', 'tenéis'], 'Du musst dir die Hände waschen.'], ['Nosotros ___ que ir al colegio.', 'tenemos', ['tienen', 'tengo', 'tiene'], 'Wir müssen in die Schule gehen.'],
+      ['Pablo ___ miedo de la tormenta.', 'tiene', ['está', 'es', 'tengo'], 'Pablo hat Angst vor dem Gewitter.'], ['¿Tú ___ calor?', 'tienes', ['estás', 'eres', 'tiene'], 'Ist dir warm?'], ['Mis amigos ___ muchos juguetes.', 'tienen', ['tiene', 'tenemos', 'tenéis'], 'Meine Freunde haben viele Spielsachen.'],
+      ['Yo no ___ hermanos.', 'tengo', ['tienes', 'tiene', 'tienen'], 'Ich habe keine Geschwister.'], ['Mi perro ___ cuatro patas.', 'tiene', ['tienen', 'tienes', 'tengo'], 'Mein Hund hat vier Pfoten.'], ['Marta y yo ___ diez euros.', 'tenemos', ['tienen', 'tengo', 'tenéis'], 'Marta und ich haben zehn Euro.']] },
+  esvoya: { t: 'Voy a…', d: 'Was bald passiert: ir a und die Grundform', i: '🔮', q: '¿Qué palabra falta?',
+    regel: () => 'ir a + Grundform sagt, was bald passiert: voy, vas, va, vamos, vais, van + a + Infinitiv. Das Verb danach bleibt in der Grundform.',
+    rows: [['Mañana yo ___ a jugar al fútbol.', 'voy', ['vas', 'va', 'vamos'], 'Morgen werde ich Fußball spielen.'], ['¿Tú ___ a venir a mi fiesta?', 'vas', ['voy', 'va', 'van'], 'Kommst du zu meiner Party?'], ['Mi madre ___ a cocinar paella.', 'va', ['vas', 'voy', 'van'], 'Meine Mutter wird Paella kochen.'],
+      ['Nosotros ___ a viajar a Tenerife.', 'vamos', ['van', 'voy', 'vais'], 'Wir werden nach Teneriffa reisen.'], ['Mis primos ___ a nadar en la piscina.', 'van', ['va', 'vamos', 'vas'], 'Meine Cousins werden im Schwimmbad schwimmen.'], ['¿Vosotros ___ a ver una película?', 'vais', ['van', 'vamos', 'vas'], 'Werdet ihr einen Film sehen?'],
+      ['Esta tarde yo voy a ___ un libro.', 'leer', ['leo', 'leí', 'leyendo'], 'Heute Nachmittag werde ich ein Buch lesen.'], ['El sábado vamos a ___ a los abuelos.', 'visitar', ['visitamos', 'visito', 'visitando'], 'Am Samstag besuchen wir die Großeltern.'], ['Luego voy a ___ los deberes.', 'hacer', ['hago', 'hice', 'haciendo'], 'Später mache ich die Hausaufgaben.'],
+      ['Lucía va a ___ un helado.', 'comer', ['come', 'comió', 'comiendo'], 'Lucía wird ein Eis essen.'], ['Mañana va a ___ todo el día.', 'llover', ['llueve', 'llovió', 'lloviendo'], 'Morgen wird es den ganzen Tag regnen.'], ['Yo ___ a dormir pronto.', 'voy', ['va', 'vas', 'van'], 'Ich gehe bald schlafen.'],
+      ['Papá ___ a comprar pan.', 'va', ['voy', 'vas', 'vamos'], 'Papa wird Brot kaufen.'], ['Los niños ___ a cantar.', 'van', ['va', 'vais', 'vamos'], 'Die Kinder werden singen.'], ['Tú ___ a aprender mucho.', 'vas', ['voy', 'va', 'vais'], 'Du wirst viel lernen.'],
+      ['Ana y yo ___ a bailar.', 'vamos', ['van', 'voy', 'vais'], 'Ana und ich werden tanzen.'], ['¿Qué vas a ___ mañana?', 'hacer', ['haces', 'hiciste', 'haciendo'], 'Was wirst du morgen machen?'], ['En verano voy a ___ en el mar.', 'nadar', ['nado', 'nadé', 'nadando'], 'Im Sommer werde ich im Meer schwimmen.']] },
+  esreflexivos: { t: 'Me levanto', d: 'Me, te, se: Verben für den Tagesablauf', i: '⏰', q: '¿Qué palabra falta?',
+    regel: () => 'Bei Verben wie levantarse steht davor me, te, se, nos, os, se: yo me levanto, tú te levantas, él se levanta, nosotros nos levantamos.',
+    rows: [['Yo ___ levanto a las siete.', 'me', ['te', 'se', 'nos'], 'Ich stehe um sieben auf.'], ['Tú ___ lavas las manos.', 'te', ['me', 'se', 'os'], 'Du wäschst dir die Hände.'], ['Mi hermano ___ ducha por la mañana.', 'se', ['me', 'te', 'nos'], 'Mein Bruder duscht morgens.'],
+      ['Nosotros ___ acostamos a las nueve.', 'nos', ['os', 'se', 'me'], 'Wir gehen um neun ins Bett.'], ['¿Vosotros ___ llamáis Ana y Luis?', 'os', ['nos', 'se', 'te'], 'Heißt ihr Ana und Luis?'], ['Los niños ___ visten solos.', 'se', ['nos', 'os', 'me'], 'Die Kinder ziehen sich allein an.'],
+      ['Yo ___ llamo Lumi.', 'me', ['te', 'se', 'nos'], 'Ich heiße Lumi.'], ['¿Cómo ___ llamas?', 'te', ['me', 'se', 'os'], 'Wie heißt du?'], ['Ella ___ peina delante del espejo.', 'se', ['me', 'te', 'nos'], 'Sie kämmt sich vor dem Spiegel.'],
+      ['Yo ___ cepillo los dientes.', 'me', ['se', 'te', 'os'], 'Ich putze mir die Zähne.'], ['Nosotras ___ ponemos el abrigo.', 'nos', ['se', 'os', 'me'], 'Wir ziehen den Mantel an.'], ['El gato ___ lava con la lengua.', 'se', ['te', 'me', 'nos'], 'Die Katze wäscht sich mit der Zunge.'],
+      ['Tú ___ despiertas temprano.', 'te', ['se', 'me', 'os'], 'Du wachst früh auf.'], ['Mis padres ___ levantan a las seis.', 'se', ['nos', 'os', 'te'], 'Meine Eltern stehen um sechs auf.'], ['Yo me ___ a las ocho. (acostar)', 'acuesto', ['acuestas', 'acuesta', 'acostar'], 'Ich gehe um acht ins Bett.'],
+      ['Tú te ___ los dientes. (cepillar)', 'cepillas', ['cepillo', 'cepilla', 'cepillar'], 'Du putzt dir die Zähne.'], ['Ella se ___ Marta. (llamar)', 'llama', ['llamo', 'llamas', 'llamar'], 'Sie heißt Marta.'], ['Nosotros nos ___ las manos. (lavar)', 'lavamos', ['lavan', 'lavo', 'lavar'], 'Wir waschen uns die Hände.']] },
+  escomparar: { t: 'Más o menos', d: 'Vergleichen: más que, menos que, tan como', i: '⚖️', q: '¿Qué palabra falta?',
+    regel: () => 'más … que = mehr oder …er als · menos … que = weniger als · tan … como = so … wie. Besonders: bueno wird zu mejor, malo wird zu peor.',
+    rows: [['El elefante es ___ grande que el ratón.', 'más', ['menos', 'tan', 'muy'], 'Der Elefant ist größer als die Maus.'], ['El caracol es ___ rápido que el caballo.', 'menos', ['más', 'muy', 'mucho'], 'Die Schnecke ist weniger schnell als das Pferd.'], ['Un avión es más rápido ___ un coche.', 'que', ['como', 'de', 'y'], 'Ein Flugzeug ist schneller als ein Auto.'],
+      ['Mi hermano es ___ alto como yo.', 'tan', ['más', 'menos', 'muy'], 'Mein Bruder ist so groß wie ich.'], ['Soy tan alta ___ mi madre.', 'como', ['que', 'de', 'más'], 'Ich bin so groß wie meine Mutter.'], ['El verano es ___ caluroso que el invierno.', 'más', ['menos', 'tan', 'mucho'], 'Der Sommer ist wärmer als der Winter.'],
+      ['Una hormiga es ___ pesada que un perro.', 'menos', ['más', 'tan', 'muy'], 'Eine Ameise ist weniger schwer als ein Hund.'], ['El Teide es ___ alto que mi casa.', 'más', ['menos', 'tan', 'muy'], 'Der Teide ist höher als mein Haus.'], ['Este helado es ___ que el otro. (bueno)', 'mejor', ['más bueno', 'bien', 'bueno'], 'Dieses Eis ist besser als das andere.'],
+      ['Hoy el tiempo es ___ que ayer. (malo)', 'peor', ['más malo', 'mal', 'malo'], 'Heute ist das Wetter schlechter als gestern.'], ['El tren es más largo ___ el autobús.', 'que', ['como', 'de', 'tan'], 'Der Zug ist länger als der Bus.'], ['El gato es ___ pequeño que el tigre.', 'más', ['menos', 'tan', 'mucho'], 'Die Katze ist kleiner als der Tiger.'],
+      ['En invierno hace ___ calor que en verano.', 'menos', ['más', 'tan', 'muy'], 'Im Winter ist es weniger warm als im Sommer.'], ['Lumi nada ___ rápido como un pez.', 'tan', ['más', 'menos', 'mucho'], 'Lumi schwimmt so schnell wie ein Fisch.'], ['Las matemáticas son tan divertidas ___ el fútbol.', 'como', ['que', 'de', 'y'], 'Mathe macht so viel Spaß wie Fußball.'],
+      ['Un coche es ___ caro que una bicicleta.', 'más', ['menos', 'tan', 'muy'], 'Ein Auto ist teurer als ein Fahrrad.'], ['La tortuga es ___ lenta que el conejo.', 'más', ['menos', 'tan', 'mucho'], 'Die Schildkröte ist langsamer als das Kaninchen.'], ['Mi mochila es menos pesada ___ la tuya.', 'que', ['como', 'de', 'tan'], 'Mein Rucksack ist weniger schwer als deiner.']] },
+  eshaymuy: { t: 'Hay o está, muy o mucho', d: 'Zwei typische Stolperstellen', i: '🧐', q: '¿Qué palabra falta?',
+    regel: a => /^(hay|est)/i.test(a) ? 'hay = es gibt (etwas Unbestimmtes: un parque, muchos niños) · está und están = befindet sich (etwas Bestimmtes: el colegio, mis abuelos).' : 'muy steht vor Eigenschaften: muy grande, muy rápido. mucho gehört zu Nomen und Verben und passt sich an: mucho frío, mucha hambre, muchos niños.',
+    rows: [['En mi clase ___ veinte niños.', 'hay', ['está', 'están', 'es'], 'In meiner Klasse gibt es zwanzig Kinder.'], ['El colegio ___ cerca de mi casa.', 'está', ['hay', 'están', 'son'], 'Die Schule ist in der Nähe von meinem Haus.'], ['¿Dónde ___ los lápices?', 'están', ['hay', 'está', 'son'], 'Wo sind die Stifte?'],
+      ['En la nevera ___ leche.', 'hay', ['está', 'están', 'son'], 'Im Kühlschrank gibt es Milch.'], ['¿___ un parque por aquí?', 'Hay', ['Está', 'Es', 'Están'], 'Gibt es hier einen Park?'], ['Madrid ___ en España.', 'está', ['hay', 'están', 'son'], 'Madrid liegt in Spanien.'],
+      ['En el zoo ___ muchos animales.', 'hay', ['está', 'están', 'son'], 'Im Zoo gibt es viele Tiere.'], ['Mis abuelos ___ en Tenerife.', 'están', ['hay', 'está', 'es'], 'Meine Großeltern sind auf Teneriffa.'], ['El pingüino es ___ simpático.', 'muy', ['mucho', 'mucha', 'muchos'], 'Der Pinguin ist sehr nett.'],
+      ['Tengo ___ hambre.', 'mucha', ['muy', 'mucho', 'muchos'], 'Ich habe großen Hunger.'], ['Hace ___ frío.', 'mucho', ['muy', 'mucha', 'muchos'], 'Es ist sehr kalt.'], ['Corro ___ rápido.', 'muy', ['mucho', 'mucha', 'muchas'], 'Ich laufe sehr schnell.'],
+      ['Hay ___ niños en el patio.', 'muchos', ['muy', 'mucho', 'muchas'], 'Auf dem Schulhof sind viele Kinder.'], ['Me gusta ___ el chocolate.', 'mucho', ['muy', 'mucha', 'muchos'], 'Ich mag Schokolade sehr.'], ['La sopa está ___ caliente.', 'muy', ['mucho', 'mucha', 'muchos'], 'Die Suppe ist sehr heiß.'],
+      ['Tengo ___ amigas.', 'muchas', ['muchos', 'mucha', 'muy'], 'Ich habe viele Freundinnen.'], ['Estoy ___ contenta.', 'muy', ['mucho', 'mucha', 'muchas'], 'Ich bin sehr froh.'], ['Hoy hay ___ gente en la playa.', 'mucha', ['mucho', 'muy', 'muchos'], 'Heute sind viele Leute am Strand.']] },
+  esenclase: { t: 'En clase', d: 'Aufforderungen verstehen und selbst bilden', i: '🧑‍🏫', q: '¿Qué forma falta?',
+    regel: () => 'Die Befehlsform für „du“ sieht meist aus wie die Form für él und ella: abre, escucha, lee. Besonders sind ven, haz und pon.',
+    rows: [['___ el libro, por favor. (abrir)', 'Abre', ['Abres', 'Abrir', 'Abro'], 'Öffne bitte das Buch.'], ['___ la ventana. (cerrar)', 'Cierra', ['Cierras', 'Cerrar', 'Cierro'], 'Schließe das Fenster.'], ['___ la canción. (escuchar)', 'Escucha', ['Escuchas', 'Escuchar', 'Escucho'], 'Hör dir das Lied an.'],
+      ['___ la frase. (leer)', 'Lee', ['Lees', 'Leer', 'Leo'], 'Lies den Satz.'], ['___ más alto. (hablar)', 'Habla', ['Hablas', 'Hablar', 'Hablo'], 'Sprich lauter.'], ['___ aquí. (venir)', 'Ven', ['Vienes', 'Venir', 'Vengo'], 'Komm her.'],
+      ['___ los deberes. (hacer)', 'Haz', ['Haces', 'Hacer', 'Hago'], 'Mach die Hausaufgaben.'], ['___ la mesa. (poner)', 'Pon', ['Pones', 'Poner', 'Pongo'], 'Deck den Tisch.'],
+      ['Abre el libro.', 'Öffne das Buch.', ['Schließe das Buch.', 'Lies das Buch.', 'Hol das Buch.'], ''], ['Cierra la puerta.', 'Schließe die Tür.', ['Öffne die Tür.', 'Klopf an die Tür.', 'Geh zur Tür.'], ''], ['Escucha.', 'Hör zu.', ['Sprich.', 'Schreib.', 'Schau her.'], ''],
+      ['Siéntate.', 'Setz dich.', ['Steh auf.', 'Komm her.', 'Sei leise.'], ''], ['Levántate.', 'Steh auf.', ['Setz dich.', 'Leg dich hin.', 'Dreh dich um.'], ''], ['Escribe tu nombre.', 'Schreib deinen Namen.', ['Sag deinen Namen.', 'Lies deinen Namen.', 'Mal deinen Namen aus.'], ''],
+      ['Levanta la mano.', 'Heb die Hand.', ['Wasch dir die Hände.', 'Gib mir die Hand.', 'Nimm die Hand runter.'], ''], ['Repite, por favor.', 'Wiederhole bitte.', ['Antworte bitte.', 'Warte bitte.', 'Hilf mir bitte.'], ''], ['Ven aquí.', 'Komm her.', ['Geh weg.', 'Bleib dort.', 'Schau dorthin.'], ''],
+      ['Mira la pizarra.', 'Schau an die Tafel.', ['Geh an die Tafel.', 'Wisch die Tafel.', 'Schreib an die Tafel.'], ''], ['Habla más despacio.', 'Sprich langsamer.', ['Sprich lauter.', 'Sprich schneller.', 'Sprich leiser.'], ''], ['Silencio, por favor.', 'Ruhe bitte.', ['Schneller bitte.', 'Danke schön.', 'Noch einmal bitte.'], '']] }
+};
+
+const E1_DIALOGOS = [
+  ['¡Buenos días! ¿Qué tal?', 'Muy bien, gracias. ¿Y tú?', ['Tengo ocho años.', 'Es un perro.', 'Hasta mañana.'], 'Guten Morgen! Wie geht es? · Sehr gut, danke. Und dir?'],
+  ['¿Cómo te llamas?', 'Me llamo Lumi.', ['Estoy bien.', 'Soy de Alemania.', 'Tengo un gato.'], 'Wie heißt du? · Ich heiße Lumi.'],
+  ['¿Cuántos años tienes?', 'Tengo ocho años.', ['Me llamo Ana.', 'Son las ocho.', 'Vivo en Cuxhaven.'], 'Wie alt bist du? · Ich bin acht Jahre alt.'],
+  ['¿De dónde eres?', 'Soy de Alemania.', ['Estoy en casa.', 'Voy al colegio.', 'Tengo frío.'], 'Woher kommst du? · Ich komme aus Deutschland.'],
+  ['¿Dónde vives?', 'Vivo en Cuxhaven.', ['Soy alemana.', 'Vengo en avión.', 'Me gusta el mar.'], 'Wo wohnst du? · Ich wohne in Cuxhaven.'],
+  ['¿Qué te gusta hacer?', 'Me gusta jugar al fútbol.', ['Me duele la cabeza.', 'Me llamo Pablo.', 'Hace sol.'], 'Was machst du gern? · Ich spiele gern Fußball.'],
+  ['¿Quieres jugar conmigo?', '¡Sí, claro!', ['De nada.', 'Buenas noches.', 'Son las dos.'], 'Willst du mit mir spielen? · Ja, klar!'],
+  ['¿Qué hora es?', 'Son las tres.', ['Es lunes.', 'Tengo tres.', 'Hace frío.'], 'Wie spät ist es? · Es ist drei Uhr.'],
+  ['¿Qué tiempo hace hoy?', 'Hace sol y calor.', ['Son las diez.', 'Estoy cansada.', 'Es mi hermano.'], 'Wie ist das Wetter heute? · Es ist sonnig und warm.'],
+  ['Gracias por el regalo.', 'De nada.', ['Por favor.', 'Lo siento.', 'Hasta luego.'], 'Danke für das Geschenk. · Gern geschehen.'],
+  ['¡Ay, perdona!', 'No pasa nada.', ['Muchas gracias.', 'Buen provecho.', 'Feliz cumpleaños.'], 'Oh, entschuldige! · Macht nichts.'],
+  ['¿Tienes hermanos?', 'Sí, tengo una hermana.', ['Sí, me gusta.', 'Sí, soy yo.', 'Sí, hace sol.'], 'Hast du Geschwister? · Ja, ich habe eine Schwester.'],
+  ['¿Cuál es tu color favorito?', 'Mi color favorito es el azul.', ['Mi animal favorito es el gato.', 'Es muy grande.', 'Tengo dos.'], 'Was ist deine Lieblingsfarbe? · Meine Lieblingsfarbe ist Blau.'],
+  ['¿Qué quieres beber?', 'Un zumo de naranja, por favor.', ['Una pizza, por favor.', 'A las cinco.', 'En la cocina.'], 'Was möchtest du trinken? · Einen Orangensaft, bitte.'],
+  ['¡Feliz cumpleaños!', '¡Muchas gracias!', ['¡Lo siento!', '¡Buen viaje!', '¡Hasta mañana!'], 'Alles Gute zum Geburtstag! · Vielen Dank!'],
+  ['¡Buen provecho!', '¡Gracias, igualmente!', ['¡Feliz Navidad!', '¡Hasta mañana!', '¡Perdón!'], 'Guten Appetit! · Danke, gleichfalls!'],
+  ['¿Me prestas un lápiz?', 'Sí, toma.', ['Sí, me llamo.', 'No, son las dos.', 'Sí, hace frío.'], 'Leihst du mir einen Stift? · Ja, hier.'],
+  ['¿Cómo se dice «Hund» en español?', 'Se dice «perro».', ['Se llama Toby.', 'Es marrón.', 'Tiene cuatro patas.'], 'Wie sagt man „Hund“ auf Spanisch? · Man sagt „perro“.'],
+  ['¿Estás cansada?', 'Sí, tengo sueño.', ['Sí, tengo ocho años.', 'Sí, soy alemana.', 'Sí, me llamo Ana.'], 'Bist du müde? · Ja, ich bin schläfrig.'],
+  ['Hasta mañana.', '¡Adiós, hasta mañana!', ['¡Hola, buenos días!', '¡Mucho gusto!', '¡Bienvenido!'], 'Bis morgen. · Tschüss, bis morgen!'],
+  ['¿Puedo ir al baño?', 'Sí, claro, ve.', ['Sí, es azul.', 'No, es martes.', 'Sí, tengo dos.'], 'Darf ich auf die Toilette? · Ja, klar, geh.'],
+  ['¿Qué desayunas?', 'Pan con mermelada y leche.', ['A las siete y media.', 'En la cocina.', 'Con mi hermano.'], 'Was frühstückst du? · Brot mit Marmelade und Milch.'],
+  ['¿Cuándo es tu cumpleaños?', 'Es en noviembre.', ['Tengo ocho años.', 'Es una fiesta.', 'Son las cuatro.'], 'Wann hast du Geburtstag? · Im November.'],
+  ['¿Te gusta el helado?', 'Sí, me gusta mucho.', ['Sí, tengo mucho.', 'Sí, soy helado.', 'Sí, está lejos.'], 'Magst du Eis? · Ja, sehr gern.']
+];
+function e1Gen(id) {
+  const B = E1[id];
+  return ctx => {
+    const lv = (ctx && ctx.lv) || 1, [s, a, w, de] = ctx.draw(B.rows), luecke = s.includes('___'), full = luecke ? s.replace('___', a) : s, klar = full.replace(/^\([^)]*\)\s*/, '').replace(/\s*\([^)]*\)$/, '');
+    if (!luecke) return mkChoice({ prompt: '¿Qué significa? Was sollst du tun?', visual: `<div class="q-sentence" lang="es">${esc(s)}</div>`, answer: a, wrong: suWrong(w), layout: 'col', explain: `${s} = ${a}`, key: 'e1' + id + s, say: s, sayLang: ES, after: s, afterLang: ES });
+    if (lv >= 2 && R.chance(.3) && klar.split(' ').length >= 4 && klar.split(' ').length <= 7) return mkOrder({ prompt: 'Ordena la frase.', items: klar.split(' '), inline: true, lang: 'es', explain: `${klar}${de ? ' = ' + de : ''}`, key: 'e1o' + id + s });
+    return mkChoice({ prompt: B.q, visual: `<div class="q-sentence" lang="es">${esc(s).replace('___', '<span class="q-gap wide">?</span>')}</div>`, answer: a, wrong: suWrong(w), layout: SU_LV >= 2 ? (w.concat(a).some(x => x.length > 9) ? 'col' : 'auto') : 'row3',
+      explain: `${klar}${de ? ' = ' + de : ''} ${B.regel(a)}`, key: 'e1' + id + s, after: klar, afterLang: ES, sayLang: ES });
+  };
+}
+function e1Dialogo(ctx) {
+  const [l, a, w, de] = ctx.draw(E1_DIALOGOS);
+  return mkChoice({ prompt: 'Jemand sagt das zu dir. Was antwortest du?', visual: `<div class="q-sentence e1-sprech" lang="es">💬 ${esc(l)}</div>`, answer: a, wrong: suWrong(w), layout: 'col', explain: de, key: 'e1d' + l, say: l, sayLang: ES, after: `${l} ${a}`, afterLang: ES });
+}
+(() => {
+  let o = 60;
+  Object.keys(E1).forEach(id => { GAMES[id] = { id, w: 'spanisch', g: 'es-gram', t: E1[id].t, d: E1[id].d, i: E1[id].i, gen: e1Gen(id), max: 2, start: [1, 1, 2, 2], o: o++ }; });
+  GAMES.esdialogos = { id: 'esdialogos', w: 'spanisch', g: 'es-vocab', t: 'Diálogos', d: 'Kleine Gespräche: Was antwortest du?', i: '💬', gen: e1Dialogo, max: 2, start: [1, 1, 2, 2], o: 60 };
+})();
+
 /*@@src plus269.js@@*/
 
 
@@ -78695,6 +78855,217 @@ FUN_IMPL.memory = funMemory2; FUN_IMPL.schiebe = funSchiebe2; FUN_IMPL.vier = fu
 FUN_GAMES.memory.d = 'Drei Runden, jede mit mehr Karten. Wer Paare in Serie findet, bekommt Extrapunkte.';
 FUN_GAMES.schiebe.d = 'Schieb die Teile, bis das Bild stimmt. Danach wartet ein Bild mit 16 Teilen.';
 FUN_GAMES.fische.d = 'Schnapp die Fische, aber nicht die Krabben! Ab fünf Fischen in Serie zählt jeder doppelt.';
+
+/*@@src kasten.js@@*/
+
+
+
+
+
+
+const VK_TAGE = [0, 1, 2, 4, 8, 16, 30], VK_NEU = 5;
+const VK_L = {
+  es: { voc: () => VOCAB_ES, name: 'Spanisch', lang: 'es-ES', w: 'spanisch', id: 'vkes', auf: 'auf Spanisch' },
+  en: { voc: () => VOCAB, name: 'Englisch', lang: 'en-GB', w: 'englisch', id: 'vken', auf: 'auf Englisch' }
+};
+const vkTag = () => { const d = new Date(); return Math.floor((d.getTime() - d.getTimezoneOffset() * 6e4) / 864e5) + (window.LW_VK_PLUS || 0); };
+function vkS(l) { S.vk = S.vk || {}; return S.vk[l] = S.vk[l] || { w: {} }; }
+const vkForm = b => b <= 1 ? 0 : b === 2 ? 1 : b === 3 ? 2 : 3;
+function vkZahl(l) {
+  const st = vkS(l).w, t = vkTag(), f = [0, 0, 0, 0, 0, 0, 0]; let faellig = 0, n = 0;
+  VK_L[l].voc().forEach(v => { const c = st[v[0]]; if (!c) return; n++; f[c[0]]++; if (c[1] <= t) faellig++; });
+  return { f, faellig, neu: VK_L[l].voc().length - n, alle: VK_L[l].voc().length };
+}
+
+function vkReihe(l, n) {
+  const st = vkS(l).w, t = vkTag(), voc = VK_L[l].voc();
+  const q = R.shuffle(voc.filter(v => st[v[0]] && st[v[0]][1] <= t).sort((a, b) => st[a[0]][1] - st[b[0]][1]).slice(0, n)).map(v => ({ v, form: vkForm(st[v[0]][0]) }));
+  voc.filter(v => !st[v[0]]).sort((a, b) => a[4] - b[4]).slice(0, Math.max(0, Math.min(VK_NEU, n - q.length))).forEach(v => q.push({ v, form: 0, neu: 1 }));
+  if (!q.length) voc.filter(v => st[v[0]]).sort((a, b) => st[a[0]][1] - st[b[0]][1]).slice(0, Math.min(n, 6)).forEach(v => q.push({ v, form: vkForm(st[v[0]][0]), nochmal: 1 }));
+  return { q, zus: [] };
+}
+
+function vkFrage(l, v, form) {
+  const L = VK_L[l], [w, em, de] = v, voc = L.voc(), frei = x => x[0] !== w && x[2] !== de;
+  const dis = R.shuffle(voc.filter(x => frei(x) && x[3] === v[3])).concat(R.shuffle(voc.filter(x => frei(x) && x[3] !== v[3]))).slice(0, form === 0 ? 2 : 3);
+  if (form === 3 && /^[a-záéíóúñü]{3,10}$/.test(w)) { const q = mkSpell({ prompt: `Schreibe ${L.auf}: ${de}`, visual: bigEmoji(em), word: w, lang: L.lang, explain: `${w} = ${de}` }); q.after = w; q.afterLang = L.lang; return q; }
+  if (form === 1) return mkChoice({ prompt: 'Was heißt das auf Deutsch?', visual: `<div class="q-sentence vk-wort" lang="${l}">${esc(w)}</div>`, answer: de, wrong: dis.map(x => x[2]), layout: 'col', explain: `${w} = ${de}`, key: 'vk' + l + '1' + w, say: w, sayLang: L.lang });
+  return mkChoice({ prompt: `Wie heißt das ${L.auf}?`, visual: form === 0 ? `${bigEmoji(em)}<div class="vk-de">${esc(de)}</div>` : `<div class="q-sentence vk-wort">${esc(de)}</div>`, answer: w, wrong: dis.map(x => x[0]), layout: 'col', explain: `${w} = ${de}`, key: 'vk' + l + (form ? 2 : 0) + w, after: w, afterLang: L.lang });
+}
+function vkGen(l) {
+  return () => {
+    const L = VK_L[l];
+    if (!(typeof G !== 'undefined' && G && G.mode === 'game' && G.id === L.id)) return vkFrage(l, R.pick(L.voc().filter(x => x[4] <= 2)), R.pick([0, 1]));
+    if (!G.vkR) G.vkR = vkReihe(l, G.n);
+    const V = G.vkR; let k = V.q[G.i];
+    if (!k) {
+      const pool = V.q.filter(x => x.falsch).concat(V.q.filter(x => !x.falsch));
+      let src = pool.find(x => !V.zus.includes(x.v[0])); if (!src) { V.zus = []; src = pool[0]; }
+      V.zus.push(src.v[0]); k = { v: src.v, form: src.form === 1 ? 2 : 1, nochmal: 1, von: src };
+    }
+    const q = vkFrage(l, k.v, k.form); q.vk = { l, w: k.v[0], nochmal: k.nochmal, k: k.von || k }; q.noMist = 1;
+    if (k.neu) q.prompt = '✨ Neue Karte! ' + q.prompt;
+    return q;
+  };
+}
+
+function vkAntwort(vk, ok) {
+  const L = VK_L[vk.l]; if (!L || !G || G.mode !== 'game' || G.id !== L.id) return;
+  const st = vkS(vk.l).w, c = st[vk.w], t = vkTag(), alt = c ? c[0] : 0; let txt;
+  if (vk.k) vk.k.falsch = !ok;
+  if (!ok) { st[vk.w] = [1, t + 1]; txt = alt > 1 ? 'Die Karte geht zurück in Fach 1 und kommt morgen wieder.' : 'Die Karte liegt in Fach 1 und kommt morgen wieder.'; }
+  else if (vk.nochmal) txt = 'Gut gemerkt!';
+  else {
+    const b = Math.min(6, alt + 1); st[vk.w] = [b, t + VK_TAGE[b]];
+    txt = alt === 6 ? 'Immer noch sicher. Stark!' : b === 6 ? 'Sicher gelernt! Die Karte bekommt einen Stern.' : alt === 0 ? 'Die neue Karte liegt jetzt in Fach 1 und kommt morgen wieder.' : `Die Karte wandert in Fach ${b} und kommt in ${VK_TAGE[b]} Tagen wieder.`;
+  }
+  G.q.explain = (G.q.explain ? G.q.explain + ' · ' : '') + '🗂️ ' + txt;
+}
+function vkWorldBtn(w) {
+  const l = Object.keys(VK_L).find(k => VK_L[k].w === w); if (!l || klStatus(VK_L[l].id) === 'aus') return '';
+  const z = vkZahl(l);
+  return `<button class="card ka-entry vk-entry" data-act="vkopen" data-l="${l}" data-world="${w}"><span class="ka-ei" aria-hidden="true">🗂️</span>
+    <span class="ka-et"><b>Vokabelkasten</b><span>${z.faellig ? `Heute ${z.faellig === 1 ? 'ist 1 Karte' : 'sind ' + z.faellig + ' Karten'} dran.` : 'Fünf Fächer: Jede Vokabel kommt wieder, kurz bevor du sie vergisst.'}</span></span><span class="go" aria-hidden="true">›</span></button>`;
+}
+function showKasten(l) {
+  const L = VK_L[l], z = vkZahl(l), drin = z.alle - z.neu;
+  const heute = z.faellig ? `Heute ${z.faellig === 1 ? 'ist <b>1 Karte</b>' : `sind <b>${z.faellig} Karten</b>`} dran.${z.neu && z.faellig < 10 ? ' Dazu kommen ein paar neue.' : ''}` : z.neu ? `Heute ist keine alte Karte dran. Du lernst <b>${Math.min(VK_NEU, z.neu)} neue Karten</b> kennen.` : 'Heute ist keine Karte dran. Du kannst trotzdem ein paar Karten üben.';
+  setView(`<header class="pagehead"><div class="wrap">${backBtn('world', `data-w="${L.w}" data-top="1"`)}
+      <div><h1>Vokabelkasten</h1><p>${L.name}: ${drin} von ${z.alle} Karten im Kasten</p></div><div class="art">${ART[L.w] || ''}</div></div></header>
+    <main class="wrap vk">
+      <section class="card vk-heute"><div class="vk-hi" aria-hidden="true">🗂️</div><div><p>${heute}</p><button class="btn" data-act="vklos" data-l="${l}">Karten üben ›</button></div></section>
+      <div class="vk-faecher">${[1, 2, 3, 4, 5].map(b => `<button class="vk-fach f${b}" data-act="vkfach" data-l="${l}" data-b="${b}"${z.f[b] ? '' : ' disabled'}><b>Fach ${b}</b><span class="vk-n tnum">${z.f[b]}</span><small>${b === 1 ? 'jeden Tag' : `alle ${VK_TAGE[b]} Tage`}</small></button>`).join('')}</div>
+      <div class="vk-rest"><button class="pill gold" data-act="vkfach" data-l="${l}" data-b="6"${z.f[6] ? '' : ' disabled'}>⭐ Sicher gelernt: ${z.f[6]}</button><span class="pill">✨ Noch neu: ${z.neu}</span></div>
+      <section class="card vk-info"><h2>So geht der Kasten</h2>
+        <p>Jede Vokabel ist eine Karte. Neue Karten kommen in Fach 1.</p>
+        <p>✅ Richtig: Die Karte wandert ein Fach weiter und kommt später wieder.</p>
+        <p>↩️ Falsch: Die Karte geht zurück in Fach 1. Das ist nicht schlimm, so merkst du sie dir am besten.</p>
+        <p>Nach Fach 5 hast du das Wort sicher gelernt. Tippe auf ein Fach und schau, welche Karten darin liegen.</p></section>
+    </main>`, L.w);
+}
+Object.assign(ACT, {
+  vkopen: t => { Sound.tap(); showKasten(t.dataset.l); },
+  vklos: t => { closeOverlay(); startGame(VK_L[t.dataset.l].id); },
+  vkfach: t => {
+    const l = t.dataset.l, b = +t.dataset.b, st = vkS(l).w, tg = vkTag(), ws = VK_L[l].voc().filter(v => st[v[0]] && st[v[0]][0] === b);
+    Sound.tap();
+    overlay(`<h2>${b === 6 ? '⭐ Sicher gelernt' : 'Fach ' + b}</h2><p class="muted">${plural(ws.length, 'Karte', 'Karten')}</p>
+      <div class="vk-liste">${ws.map(v => `<div><span>${v[1]} <b lang="${l}">${esc(v[0])}</b></span><span>${esc(v[2])}</span><small>${st[v[0]][1] <= tg ? 'heute' : st[v[0]][1] - tg === 1 ? 'morgen' : 'in ' + (st[v[0]][1] - tg) + ' Tagen'}</small></div>`).join('')}</div>
+      <div class="acts"><button class="btn" data-act="closeov">Schließen</button></div>`);
+  }
+});
+(() => {
+  const d = 'Dein Karteikasten mit fünf Fächern. Jede Vokabel kommt wieder, kurz bevor du sie vergisst.';
+  GAMES.vkes = { id: 'vkes', w: 'spanisch', g: 'es-vocab', t: 'Vokabelkasten Spanisch', d, i: '🗂️', gen: vkGen('es'), nomix: 1, o: -50 };
+  GAMES.vken = { id: 'vken', w: 'englisch', g: 'e-words', t: 'Vokabelkasten Englisch', d, i: '🗂️', gen: vkGen('en'), nomix: 1, o: -50 };
+})();
+
+/*@@src erklaer.js@@*/
+
+
+
+
+
+const EK = {
+
+  dasdass: { t: 'das oder dass?', e: ['Kannst du *dieses*, *jenes* oder *welches* einsetzen? Dann schreibst du *das* mit einem s.', 'Geht das nicht? Dann schreibst du *dass*.', 'Vor *dass* steht ein Komma.'], b: 'Ich sehe das Haus, das (welches) dort steht. · Ich weiß, dass du kommst.' },
+  artikel: { t: 'Der, die, das', e: ['Jedes Nomen hat einen Begleiter: *der*, *die* oder *das*.', 'In der Mehrzahl heißt es immer *die*.', 'Lerne den Begleiter am besten gleich mit dem Wort.'], b: 'der Hund, die Katze, das Pferd · die Hunde, die Pferde' },
+  mehrzahl: { t: 'Einzahl und Mehrzahl', e: ['Einzahl heißt: eins. Mehrzahl heißt: viele.', 'In der Mehrzahl ändert sich oft das Wortende: -e, -en, -er oder -s.', 'Manchmal wird aus a, o, u ein *ä, ö, ü*.'], b: 'der Ball → die Bälle · das Kind → die Kinder · das Auto → die Autos' },
+  zeitformen: { t: 'Heute und gestern', e: ['*Gegenwart* (Präsens): Es passiert jetzt.', '*Vergangenheit* (Präteritum): Es ist schon vorbei.', 'Signalwörter helfen dir: heute, jetzt · gestern, früher.'], b: 'Heute spiele ich. · Gestern spielte ich.' },
+  perfekt: { t: 'Perfekt: haben oder sein?', e: ['Das Perfekt hat zwei Teile: *haben* oder *sein* und ein Wort mit ge-.', 'Bewegst du dich von einem Ort zum anderen, nimmst du *sein*: gehen, laufen, fahren, fliegen.', 'Bei fast allen anderen Verben nimmst du *haben*.'], b: 'Ich bin gelaufen. · Ich habe gelacht.' },
+  steigern: { t: 'Adjektive steigern', e: ['Grundstufe: schnell', 'Höherstufe mit -er: schneller *als*', 'Höchststufe: *am* schnellsten', 'Besondere Wörter: gut, besser, am besten · viel, mehr, am meisten'], b: 'Der Hase ist schneller als der Igel.' },
+  wortart: { t: 'Wortarten', e: ['*Nomen* (Namenwörter): Dinge, Lebewesen, Gefühle. Du schreibst sie groß.', '*Verben* (Tunwörter): Was tut jemand?', '*Adjektive* (Wiewörter): Wie ist etwas?'], b: 'Der kleine Hund bellt. → Hund ist das Nomen, klein das Adjektiv, bellt das Verb.' },
+  gross: { t: 'Groß oder klein?', e: ['Groß schreibst du Satzanfänge, Nomen und Namen.', 'Nomen-Probe: Passt *der, die* oder *das* davor?', 'Wörter mit -ung, -heit, -keit, -nis sind immer Nomen.'], b: 'die Freiheit, der Lauf · laufen, schön' },
+  trennen: { t: 'Silbentrennung', e: ['Sprich das Wort langsam und klatsche die Silben.', 'Bei zwei Mitlauten kommt der letzte in die neue Zeile.', '*ck*, *ch* und *sch* bleiben zusammen. Ein einzelner Buchstabe bleibt nie allein.'], b: 'Was-ser · Kat-ze · Zu-cker · Ta-sche' },
+  iewort: { t: 'i oder ie?', e: ['Klingt das i *lang*, schreibst du meistens *ie*.', 'Klingt das i *kurz*, schreibst du *i*.', 'Ein paar Merkwörter haben ein langes i ohne e: Tiger, Igel, dir, mir, wir.'], b: 'Wiese, Biene, lieb · Kind, Schiff, Mitte' },
+  doppelt: { t: 'Doppelte Mitlaute', e: ['Nach einem *kurzen* Selbstlaut kommt oft ein doppelter Mitlaut.', 'Nach einem *langen* Selbstlaut steht nur einer.', 'Sprich das Wort laut: Hörst du, ob der Selbstlaut kurz oder lang ist?'], b: 'Schiff, Sonne, rennen · Schal, Hose, Rabe' },
+  cktz: { t: 'ck und tz', e: ['Nach einem *kurzen* Selbstlaut schreibst du *ck* und *tz*.', 'Nach einem langen Selbstlaut, nach ei, au, eu und nach l, m, n, r schreibst du nur *k* und *z*.', 'Merksatz: Nach l, n, r, das merke ja, steht nie tz und nie ck.'], b: 'Jacke, Katze · Haken, Bank, Herz, Pilz' },
+  ssz: { t: 's, ss oder ß?', e: ['Nach einem *kurzen* Selbstlaut: *ss*', 'Nach einem *langen* Selbstlaut und nach ei, au, eu, ie: *ß*', 'Summt das s wie eine Biene, schreibst du ein einfaches *s*.'], b: 'Fluss, Tasse · Fuß, Straße, heiß · Rose, lesen' },
+  verlaengern: { t: 'Verlängern', e: ['Am Wortende klingen b, d, g wie p, t, k.', 'Verlängere das Wort. Dann hörst du den richtigen Buchstaben.', 'Nomen: Mehrzahl bilden. Adjektive: steigern. Verben: Grundform suchen.'], b: 'Hund → Hunde · gelb → gelber · er fragt → fragen' },
+  ableiten: { t: 'Ableiten', e: ['ä oder e? äu oder eu?', 'Suche ein verwandtes Wort mit *a* oder *au*.', 'Gibt es eins, schreibst du ä oder äu. Sonst schreibst du e oder eu.'], b: 'Bäume kommt von Baum · Hände kommt von Hand · Leute, heute' },
+  dehnungsh: { t: 'Mit oder ohne h?', e: ['Das Dehnungs-h macht den Selbstlaut lang. Du hörst es nicht.', 'Es steht nur vor *l, m, n, r*.', 'Aber nicht immer: Diese Wörter musst du dir merken.'], b: 'fahren, Zahl, nehmen, Lohn · Tal, Schule, hören' },
+  woertlich: { t: 'Wörtliche Rede', e: ['Was jemand sagt, steht in Anführungszeichen: unten auf, oben zu.', 'Steht der Begleitsatz *vorn*, kommt ein Doppelpunkt.', 'Steht er *hinten*, kommt nach den Anführungszeichen ein Komma.'], b: 'Mia ruft: „Ich komme!“ · „Ich komme!“, ruft Mia.' },
+  satzarten: { t: 'Satzarten', e: ['*Aussagesatz*: Er erzählt etwas. Am Ende steht ein Punkt.', '*Fragesatz*: Er fragt etwas. Am Ende steht ein Fragezeichen.', '*Aufforderung und Ausruf*: Am Ende steht ein Ausrufezeichen.'], b: 'Lumi schwimmt. · Schwimmt Lumi? · Schwimm los!' },
+  satzglieder: { t: 'Satzglieder', e: ['*Subjekt*: Wer oder was tut etwas?', '*Prädikat*: Was tut jemand? Das ist das Verb.', 'Umstellprobe: Was beim Umstellen zusammenbleibt, ist ein Satzglied.'], b: 'Der Hund | bellt | im Garten. → Im Garten | bellt | der Hund.' },
+  faelle: { t: 'Die vier Fälle', e: ['*Nominativ*: Wer oder was?', '*Genitiv*: Wessen?', '*Dativ*: Wem?', '*Akkusativ*: Wen oder was?'], b: 'Der Hund bellt. · das Fell des Hundes · Ich gebe dem Hund Futter. · Ich sehe den Hund.' },
+  kommaprofi: { t: 'Das Komma', e: ['Bei Aufzählungen steht ein Komma. Vor *und* und *oder* steht keins.', 'Vor *weil, dass, wenn, als, obwohl* steht ein Komma.'], b: 'Ich kaufe Äpfel, Birnen und Nüsse. · Ich bleibe drin, weil es regnet.' },
+
+  mal: { t: 'Einmaleins', e: ['Malnehmen heißt: mehrmals die gleiche Zahl plus rechnen.', 'Tauschaufgaben haben das gleiche Ergebnis.', 'Kernaufgaben helfen: mal 1, mal 2, mal 5, mal 10. Von dort gehst du einen Schritt weiter.'], b: '4 · 6 = 6 + 6 + 6 + 6 = 24 · 6 · 7 = 5 · 7 + 7 = 42' },
+  schriftlich: { t: 'Schriftlich rechnen', e: ['Schreibe die Zahlen genau untereinander: Einer unter Einer, Zehner unter Zehner.', 'Rechne von *rechts nach links*. Beginne bei den Einern.', 'Sind es 10 oder mehr, schreibst du den Übertrag klein in die nächste Spalte.'], b: '347 + 285: 7 + 5 = 12. Schreibe 2, merke 1.' },
+  restdiv: { t: 'Teilen mit Rest', e: ['Nicht jede Zahl lässt sich glatt teilen.', 'Suche die größte Malaufgabe, die noch passt.', 'Was übrig bleibt, ist der *Rest*. Er ist immer kleiner als die Zahl, durch die du teilst.'], b: '17 : 5 = 3 Rest 2, denn 3 · 5 = 15 und 15 + 2 = 17' },
+  punktstrich: { t: 'Punkt vor Strich', e: ['Mal und Geteilt sind Punktrechnung. Plus und Minus sind Strichrechnung.', 'Punktrechnung kommt *zuerst*.', 'Klammern kommen noch davor.'], b: '3 + 4 · 5 = 3 + 20 = 23 · (3 + 4) · 5 = 35' },
+  runden: { t: 'Runden', e: ['Schau auf die Ziffer *rechts* neben der Stelle, auf die du rundest.', 'Bei 0, 1, 2, 3, 4 rundest du ab.', 'Bei 5, 6, 7, 8, 9 rundest du auf.'], b: '347 auf Zehner gerundet: 350 · 342 auf Zehner gerundet: 340' },
+  ueberschlag: { t: 'Überschlagen', e: ['Runde die Zahlen zuerst. Dann rechnest du im Kopf.', 'So weißt du schnell, wie groß das Ergebnis ungefähr ist.', 'Damit prüfst du auch, ob ein Ergebnis stimmen kann.'], b: '398 + 203 ist ungefähr 400 + 200 = 600' },
+  stellen: { t: 'Hunderter, Zehner, Einer', e: ['Jede Ziffer hat ihren Platz: H, Z, E.', 'Der Platz bestimmt, wie viel die Ziffer wert ist.', '10 Einer sind 1 Zehner. 10 Zehner sind 1 Hunderter.'], b: '352 = 3 H + 5 Z + 2 E = 300 + 50 + 2' },
+  uhr: { t: 'Uhr lesen', e: ['Der kleine Zeiger zeigt die Stunde, der große die Minuten.', 'Von Zahl zu Zahl braucht der große Zeiger 5 Minuten.', 'Am Nachmittag zählst du weiter: 1 Uhr mittags ist 13 Uhr.'], b: 'Großer Zeiger auf der 6: halb · auf der 3: Viertel nach · auf der 9: Viertel vor' },
+  umrechnen: { t: 'Größen umrechnen', e: ['Längen: 1 m = 100 cm · 1 km = 1000 m · 1 cm = 10 mm', 'Gewichte: 1 kg = 1000 g · 1 t = 1000 kg', 'Zeit und Geld: 1 h = 60 min · 1 min = 60 s · 1 € = 100 ct'], b: '2 m 35 cm = 235 cm · 1500 g = 1 kg 500 g' },
+  flaeche: { t: 'Fläche und Umfang', e: ['Der *Umfang* ist der Weg einmal außen herum. Du zählst alle Seiten zusammen.', 'Die *Fläche* ist das, was innen liegt. Du zählst die Kästchen.', 'Beim Rechteck gilt: Fläche = Länge mal Breite.'], b: 'Rechteck mit 4 cm und 3 cm: Umfang 4 + 3 + 4 + 3 = 14 cm, Fläche 4 · 3 = 12 Kästchen' },
+  symmetrie: { t: 'Symmetrie', e: ['Eine Figur ist symmetrisch, wenn beide Hälften gleich aussehen, nur gespiegelt.', 'Die Linie in der Mitte heißt *Spiegelachse*.', 'Falt-Probe: Liegen beide Hälften genau aufeinander?'], b: 'Ein Schmetterling und der Buchstabe A sind symmetrisch.' },
+  teiler: { t: 'Teiler und Vielfache', e: ['Ein *Teiler* teilt eine Zahl ohne Rest.', 'Die *Vielfachen* einer Zahl sind ihre Malreihe.', 'Gerade Zahlen kannst du durch 2 teilen. Zahlen mit 0 oder 5 am Ende kannst du durch 5 teilen.'], b: 'Teiler von 12: 1, 2, 3, 4, 6, 12 · Vielfache von 4: 4, 8, 12, 16' },
+  roemisch: { t: 'Römische Zahlen', e: ['I = 1 · V = 5 · X = 10 · L = 50 · C = 100', 'Steht das kleinere Zeichen *rechts*, zählst du es dazu.', 'Steht es *links*, ziehst du es ab.'], b: 'VI = 6 · IV = 4 · XII = 12 · IX = 9' },
+
+  aanen: { t: 'a or an?', e: ['Beginnt das nächste Wort mit einem Mitlaut-Klang, sagst du *a*.', 'Beginnt es mit einem Selbstlaut-Klang (a, e, i, o, u), sagst du *an*.', 'Es zählt, was du hörst, nicht was du schreibst.'], b: 'a dog, a cat · an apple, an egg · an hour' },
+  pluralen: { t: 'One cat, two cats', e: ['Für die Mehrzahl hängst du meistens ein *-s* an.', 'Nach s, x, ch, sh kommt *-es*.', 'Ein paar Wörter sind besonders: man → men, child → children, mouse → mice, foot → feet.'], b: 'one dog, two dogs · one box, two boxes' },
+  presenten: { t: 'He plays, I play', e: ['Bei *he, she, it* bekommt das Verb ein *-s*.', 'Bei I, you, we, they bleibt es ohne s.', 'Merksatz: He, she, it, das s muss mit.'], b: 'I play football. · She plays football.' },
+  havegot: { t: 'Have got', e: ['have got heißt haben oder besitzen.', 'I, you, we, they *have got* · he, she, it *has got*', 'Nein-Sätze: haven’t got und hasn’t got'], b: 'I have got a dog. · She has got a cat.' },
+  thereis: { t: 'There is, there are', e: ['*there is* = es gibt (ein Ding)', '*there are* = es gibt (mehrere Dinge)'], b: 'There is a book. · There are two books.' },
+  doingen: { t: 'What are you doing?', e: ['Was gerade jetzt passiert: am, is oder are und das Verb mit *-ing*.', 'I *am* · he, she, it *is* · you, we, they *are*'], b: 'I am reading. · She is singing. · They are playing.' },
+  pronounen: { t: 'He, she, it, they', e: ['*he* = er (Junge, Mann) · *she* = sie (Mädchen, Frau)', '*it* = es (Dinge und Tiere) · *they* = sie (mehrere)'], b: 'Tom → he · Anna → she · the ball → it · Tom and Anna → they' },
+  questionen: { t: 'Question words', e: ['What = was · Where = wo · Who = wer', 'When = wann · Why = warum · How = wie', 'Vorsicht: *Who* heißt wer und *where* heißt wo.'], b: 'Where is my bag? · Who is that?' },
+
+  articulos: { t: 'El, la, los, las', e: ['*el* = der (männlich) · *la* = die (weiblich)', 'In der Mehrzahl: *los* und *las*', 'Wörter auf -o sind meist männlich, Wörter auf -a meist weiblich.'], b: 'el perro, los perros · la casa, las casas' },
+  ununa: { t: 'Un, una, unos, unas', e: ['*un* = ein (männlich) · *una* = eine (weiblich)', '*unos* und *unas* = einige, ein paar'], b: 'un libro, una mesa · unos libros, unas mesas' },
+  plural: { t: 'El plural', e: ['Endet das Wort auf einen Selbstlaut, kommt *-s* dazu.', 'Endet es auf einen Mitlaut, kommt *-es* dazu.', 'Aus z wird c: lápiz → lápices.'], b: 'gato → gatos · flor → flores' },
+  serestar: { t: 'Ser o estar', e: ['Beide heißen „sein“.', '*ser*: was etwas ist und bleibt. Name, Herkunft, Beruf, Eigenschaft.', '*estar*: wo etwas ist und wie es jemandem gerade geht.'], b: 'Soy Lumi. Soy de Alemania. · Estoy en casa. Estoy cansada.' },
+  concordancia: { t: 'Rojo o roja', e: ['Das Adjektiv passt sich dem Nomen an.', 'Männlich: *-o* · weiblich: *-a* · Mehrzahl: ein s dazu', 'Es steht meistens *hinter* dem Nomen.'], b: 'el coche rojo · la casa roja · los coches rojos' },
+  gustar: { t: 'Me gusta', e: ['*me gusta* = ich mag (ein Ding oder etwas tun)', '*me gustan* = ich mag (mehrere Dinge)', 'te gusta = du magst · le gusta = er oder sie mag'], b: 'Me gusta el helado. · Me gustan los gatos.' },
+  verbos: { t: 'Verbos', e: ['Die Endung zeigt, wer etwas tut. Darum fällt yo, tú, él oft weg.', 'Verben auf -ar: hablo, hablas, habla, hablamos, habláis, hablan', 'Verben auf -er und -ir: como, comes, come, comemos, coméis, comen'], b: 'Hablo español. = Ich spreche Spanisch.' },
+  pasadoes: { t: 'El pasado', e: ['Was gestern passiert ist, steht in der Vergangenheit.', 'Verben auf -ar: hablé, hablaste, habló', 'Verben auf -er und -ir: comí, comiste, comió', 'Besonders: fui = ich ging oder ich war · hice = ich machte'], b: 'Ayer jugué al fútbol. = Gestern habe ich Fußball gespielt.' },
+  preguntas: { t: 'Preguntas', e: ['¿Qué? = was · ¿Quién? = wer · ¿Dónde? = wo', '¿Cuándo? = wann · ¿Cómo? = wie · ¿Por qué? = warum · ¿Cuánto? = wie viel', 'Fragen beginnen mit ¿ und enden mit ?. Fragewörter tragen einen Akzent.'], b: '¿Dónde vives? · ¿Cómo te llamas?' },
+  tildes: { t: 'Tildes', e: ['Der Akzent (tilde) zeigt, welche Silbe du betonst.', 'Wörter auf Selbstlaut, n oder s betonst du auf der vorletzten Silbe. Alle anderen auf der letzten.', 'Hält sich ein Wort nicht daran, bekommt es einen Akzent.'], b: 'casa, comen · papel, reloj · café, árbol, música' },
+  donde: { t: '¿Dónde está?', e: ['en = in, auf · sobre = auf · debajo de = unter', 'delante de = vor · detrás de = hinter', 'al lado de = neben · entre = zwischen'], b: 'El gato está debajo de la mesa.' },
+  esposesivos: { t: 'Mi, tu, su', e: ['*mi* = mein · *tu* = dein · *su* = sein oder ihr', 'Bei mehreren Dingen kommt ein s dazu: mis, tus, sus.', '*nuestro, nuestra* = unser. Das Wort passt sich dem Nomen an.', '*este, esta* = dieser, diese · in der Mehrzahl estos, estas'], b: 'mi perro, mis perros · nuestra casa · este libro, esta casa' },
+  estener: { t: 'Tener', e: ['tengo, tienes, tiene, tenemos, tenéis, tienen', 'Alter, Hunger, Durst, Kälte und Angst „hat“ man auf Spanisch.', '*tener que* und die Grundform heißt müssen.'], b: 'Tengo ocho años. · Tengo frío. · Tengo que estudiar.' },
+  esvoya: { t: 'Voy a…', e: ['So sagst du, was bald passiert: *ir a* und die Grundform.', 'voy, vas, va, vamos, vais, van', 'Das zweite Verb bleibt in der Grundform.'], b: 'Voy a jugar. = Ich werde spielen. · Vamos a comer.' },
+  esreflexivos: { t: 'Me levanto', e: ['Manche Verben brauchen ein kleines Wort davor: me, te, se, nos, os, se.', 'yo *me* levanto · tú *te* levantas · él *se* levanta', 'nosotros *nos* levantamos · vosotros *os* levantáis · ellos *se* levantan'], b: 'Me llamo Lumi. · ¿Cómo te llamas?' },
+  escomparar: { t: 'Más o menos', e: ['*más … que* = mehr als', '*menos … que* = weniger als', '*tan … como* = so … wie', 'Besonders: mejor = besser · peor = schlechter'], b: 'Soy más alta que tú. · Soy tan alta como tú.' },
+  eshaymuy: { t: 'Hay o está, muy o mucho', e: ['*hay* = es gibt (irgendetwas: un parque, muchos niños)', '*está, están* = befindet sich (etwas Bestimmtes: el colegio, mis abuelos)', '*muy* steht vor Eigenschaften: muy grande', '*mucho* gehört zu Nomen und Verben: mucho frío, mucha hambre, muchos niños'], b: 'Hay un parque. El parque está cerca. · Es muy grande. Hay muchos niños.' },
+  esenclase: { t: 'En clase', e: ['Die Befehlsform für „du“ sieht meist aus wie die Form für él und ella.', 'abrir → abre · escuchar → escucha · leer → lee', 'Besondere Formen: ven (komm), haz (mach), pon (leg oder stell)'], b: '¡Abre el libro! · ¡Ven aquí!' },
+  vkes: { t: 'So geht der Vokabelkasten', e: ['Jede Vokabel ist eine Karte. Neue Karten kommen in Fach 1.', '*Richtig*: Die Karte wandert ein Fach weiter und kommt später wieder.', '*Falsch*: Die Karte geht zurück in Fach 1.', 'Fach 1 kommt jeden Tag, Fach 5 erst nach 16 Tagen. Danach hast du das Wort sicher gelernt.'], b: '' }
+};
+EK.vken = EK.vkes;
+let EK_OFFEN = null;
+const ekAn = () => !S.settings || S.settings.erklaer !== false;
+
+function ekVor(id) {
+  if (!EK[id] || !ekAn() || (window.LW_SZ_AUS && !window.LW_EK_TEST)) return false;
+  S.ek = S.ek || {}; if (S.ek[id]) return false;
+  S.ek[id] = 1; save(); EK_OFFEN = { id, nach: [] }; ekZeige(id, true); return true;
+}
+const ekFett = s => esc(s).replace(/\*([^*]+)\*/g, '<b>$1</b>');
+function ekZeige(id, start) {
+  const k = EK[id]; if (!k) return;
+  overlay(`<div class="ek"><div class="ek-kopf"><span aria-hidden="true">💡</span><div><small>Erklärkarte</small><h2>${esc(k.t)}</h2></div></div>
+    <ul class="ek-l">${k.e.map(x => `<li>${ekFett(x)}</li>`).join('')}</ul>
+    ${k.b ? `<div class="ek-b"><small>Beispiel</small>${k.b.split(' · ').map(x => `<span>${esc(x)}</span>`).join('')}</div>` : ''}</div>
+    <div class="acts">${start ? `<button class="btn" data-act="ekgo" data-id="${id}" id="ekGo">Los geht’s ›</button>` : '<button class="btn" data-act="closeov">Weiter</button>'}</div>
+    ${start ? '<p class="muted ek-hin">Die Karte findest du später oben im Spiel bei der Glühbirne.</p>' : ''}`);
+}
+const ekSpiel = () => (typeof G !== 'undefined' && G && !G.arbeit && !G.custom && !['ka', 'duell'].includes(G.mode) && EK[G.qg] ? G.qg : null);
+function ekBtn() { return ekSpiel() ? '<button class="icon-btn ek-btn" data-act="ekinfo" aria-label="Erklärkarte ansehen">💡</button>' : ''; }
+
+function ekNach() { if (ekSpiel() && G.q) G.q.explainHTML = (G.q.explainHTML || '') + '<button class="ek-link" data-act="ekinfo">💡 Erklärkarte ansehen</button>'; }
+function ekParentsHTML() {
+  const an = ekAn(), n = Object.keys(EK).length - 2;
+  return `<section class="card"><h2>💡 Erklärkarten</h2>
+    <p class="muted">Zu ${n} wichtigen Themen in Deutsch, Mathe, Englisch und Spanisch gibt es eine Karte mit der Regel in drei Sätzen und einem Beispiel. Sie erscheint einmal vor der ersten Runde. Danach steht sie oben im Spiel bei der Glühbirne bereit.</p>
+    <div class="row"><span class="lab">Erklärkarte vor der ersten Runde zeigen<small>Die Glühbirne im Spiel bleibt in jedem Fall.</small></span><button class="switch ${an ? 'on' : ''}" role="switch" aria-checked="${an}" aria-label="Erklärkarte vor der ersten Runde zeigen" data-act="ekschalter"></button></div></section>`;
+}
+Object.assign(ACT, {
+  ekgo: t => { const o = EK_OFFEN; EK_OFFEN = null; closeOverlay(); startGame(t.dataset.id); if (o && o.id === t.dataset.id && G) o.nach.forEach(f => f(G)); },
+  ekinfo: () => { const id = ekSpiel(); if (id) { Sound.tap(); if (G.autoT) clearTimeout(G.autoT); ekZeige(id, false); } },
+  ekschalter: t => { S.settings.erklaer = !ekAn(); save(); t.classList.toggle('on', ekAn()); t.setAttribute('aria-checked', ekAn()); }
+});
 
 /*@@src lumi_live.js@@*/
 
