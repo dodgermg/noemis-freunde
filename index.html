@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-jRtnhIZ1lhD9DX0fUF0/vbVpxD6uauDzd51/X2cWmsw=' 'sha256-aw3nrkme+2kJnsA/DWKl9VkLMnK1hCJ/tNRM4O5+zRg=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-DySXdwL3F57LhjhYKSiu2bfCzhb3e2Nbwy3eV6brFkU=' 'sha256-zDbynlAjHTyxF+/McoM87whnaKjiowHUnKqUPJ77sVY=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -6457,6 +6457,55 @@ body.calm .gb-post { animation: none; }
 @media (prefers-reduced-motion: reduce) { .gb-post { animation: none; } }
 @media (max-width: 600px) { .gb-post { right: auto; left: 58px; top: 240px; } }
 
+/* ---- style_neu274.css ---- */
+
+.n4-vis { display: flex; justify-content: center; align-items: center; gap: 18px; flex-wrap: wrap; margin: 6px 0; }
+.n4-vis figure { margin: 0; display: grid; justify-items: center; gap: 2px; }
+.n4-vis figcaption { font-size: 15px; font-weight: 700; opacity: .8; }
+.n4-svg { display: block; max-width: 100%; height: auto; }
+.opt .n4-svg { margin: 0 auto; }
+.n4-fr { display: inline-flex; flex-direction: column; align-items: center; line-height: 1.05; vertical-align: middle; font-weight: 800; margin: 0 .12em; }
+.n4-fr b { border-bottom: .12em solid currentColor; padding: 0 .28em .04em; font-weight: 800; }
+.n4-fr i { font-style: normal; padding: .04em .28em 0; }
+.n4-vis > .n4-fr { font-size: 46px; }
+.n4-gl { display: flex; align-items: center; justify-content: center; gap: .3em; flex-wrap: wrap; }
+
+.ks-main { display: grid; grid-template-columns: minmax(0, 1fr) 260px; gap: 22px; align-items: start; padding-bottom: 30px; }
+.ks-brett { display: grid; grid-template-columns: repeat(var(--w), 1fr); gap: 3px; width: min(100%, calc((100vh - 150px) * var(--w) / var(--h))); max-width: 560px; margin: 0 auto; padding: 6px; border-radius: 16px; background: #3F5A73; touch-action: none; user-select: none; -webkit-user-select: none; }
+.ks-c { aspect-ratio: 1; border: 0; padding: 0; margin: 0; border-radius: 8px; background: #EAF6FF; display: grid; place-items: center; font-size: clamp(20px, 5.2vw, 44px); line-height: 1; font-family: inherit; color: inherit; }
+.ks-c.wand { background: #6C8AA6; box-shadow: inset 0 -5px 0 rgba(0, 0, 0, .18), inset 0 3px 0 rgba(255, 255, 255, .22); }
+.ks-c.ziel { background: #CDEBFF; box-shadow: inset 0 0 0 3px #58B7E8; }
+.ks-c.drauf { background: #BFEBC8; box-shadow: inset 0 0 0 4px #2F9E6E; }
+.ks-fisch { opacity: .55; font-size: .78em; }
+.ks-lumi.l { display: inline-block; transform: scaleX(-1); }
+.ks-c.nein { animation: ksnein .28s; }
+@keyframes ksnein { 0%, 100% { transform: none; } 30% { transform: translateX(-4px); } 70% { transform: translateX(4px); } }
+.ks-seite { display: grid; gap: 14px; justify-items: center; }
+.ks-info { margin: 0; font-size: 18px; text-align: center; }
+.ks-pad { display: grid; grid-template-areas: ". o ." "l . r" ". u ."; gap: 8px; justify-content: center; }
+.ks-pad .btn { width: 64px; height: 60px; padding: 0; font-size: 24px; }
+.ks-o { grid-area: o; } .ks-l { grid-area: l; } .ks-r { grid-area: r; } .ks-u { grid-area: u; }
+.ks-wahl { display: grid; grid-template-columns: repeat(auto-fill, minmax(84px, 1fr)); gap: 10px; margin: 14px 0; }
+.ks-lv { font: inherit; color: inherit; cursor: pointer; display: grid; gap: 2px; justify-items: center; padding: 10px 4px; border-radius: 14px; background: var(--surface-2); border: 2px solid var(--line-deep); box-shadow: 0 4px 0 var(--line-deep); }
+.ks-lv b { font-size: 24px; } .ks-lv span { font-size: 13px; min-height: 18px; }
+.ks-lv.ok { border-color: #2F9E6E; }
+.ks-lv:disabled { opacity: .5; cursor: default; box-shadow: none; }
+.ks-erg { text-align: center; }
+@media (max-width: 760px) { .ks-main { grid-template-columns: 1fr; } .ks-brett { width: min(100%, calc((100vh - 400px) * var(--w) / var(--h))); min-width: 240px; } .ks-pad .btn { width: 58px; height: 52px; } }
+
+.fun-stage > .dop { position: absolute; inset: 0; display: flex; flex-wrap: wrap; gap: 14px 28px; align-items: center; align-content: center; justify-content: center; padding: 12px; box-sizing: border-box; overflow-y: auto; touch-action: pan-y; background: linear-gradient(#E6F4FF, #CFE8FA); }
+.dop-b { flex: none; display: grid; grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(4, 1fr); gap: 8px; width: min(90vw, 56vh, 460px); height: min(90vw, 56vh, 460px); box-sizing: border-box; padding: 10px; border-radius: 18px; background: #3F5A73; touch-action: none; user-select: none; -webkit-user-select: none; }
+.dop-c { border-radius: 12px; background: #5B7893; display: grid; place-items: center; font-weight: 800; font-size: clamp(20px, 5.4vw, 40px); color: #1F2D3A; }
+.dop-c.v { background: #EAF6FF; }
+.dop-c.v4 { background: #CDEBFF; } .dop-c.v8 { background: #A7DBFA; } .dop-c.v16 { background: #7CC8F2; } .dop-c.v32 { background: #58B7E8; color: #fff; } .dop-c.v64 { background: #2F86C9; color: #fff; }
+.dop-c.v128 { background: #F9D56E; } .dop-c.v256 { background: #F6A531; } .dop-c.v512 { background: #EF7B45; color: #fff; } .dop-c.v1024 { background: #E5484D; color: #fff; font-size: clamp(16px, 4.2vw, 32px); } .dop-c.v2048 { background: #8E44AD; color: #fff; font-size: clamp(16px, 4.2vw, 32px); }
+.dop-c.neu { animation: vdneu .18s ease-out; }
+@keyframes vdneu { from { transform: scale(.4); } to { transform: none; } }
+.dop-s { display: grid; gap: 12px; justify-items: center; max-width: 250px; text-align: center; }
+.dop-s p { margin: 0; font-size: 15px; }
+@media (max-height: 700px) and (max-width: 600px) { .dop-s p { display: none; } }
+body.calm .dop-c.neu, body.calm .ks-c.nein { animation: none; }
+
 /* ---- style_pa.css ---- */
 
 .pa { min-height: 100vh; }
@@ -8715,8 +8764,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '2.73.0';
-  var MAP = {"probe":0,"files":[[8705,"fehler_kern.js"],[8993,null],[8995,"data.js"],[9690,"data_more.js"],[10047,"data_su2.js"],[10274,"data_es.js"],[10616,"data_wissen.js"],[10815,"data_v21.js"],[11498,"data_v24.js"],[11984,"data_v25.js"],[12465,"data_v26.js"],[12564,"data_v29.js"],[12869,"data_v30.js"],[13199,"data_v31.js"],[13505,"data_kunst.js"],[13701,"data_v214.js"],[13804,"data_v216.js"],[14097,"schrift.js"],[14397,"eingabe.js"],[14608,"data_k34m.js"],[15126,"data_k34d.js"],[15480,"data_k34s.js"],[15934,"data_v224.js"],[16807,"data_v225w.js"],[17176,"data_v225k.js"],[17620,"data_herz.js"],[17974,"data_fb226.js"],[18117,"data_tf226.js"],[18324,"data_v227a.js"],[19415,"data_v227b.js"],[20369,"data_h28b.js"],[20409,"data_l28a.js"],[21275,"data_l28b.js"],[22455,"data_schaetz.js"],[22937,"data_party8.js"],[22987,"data_alce.js"],[23647,"data_alce2.js"],[23896,"data_alce3.js"],[24311,"registry.js"],[24825,"app.js"],[25994,"fun.js"],[26574,"fun2.js"],[26890,"atelier.js"],[27264,"kunst225.js"],[27454,"herz.js"],[27818,"reise.js"],[28120,"iglu.js"],[28286,"offline.js"],[28393,"party.js"],[28877,"meine.js"],[29233,"loeffel.js"],[29404,"trend.js"],[29946,"fun228a.js"],[30797,"fun228b.js"],[31458,"kueche.js"],[32497,"stimme.js"],[32552,"klassen.js"],[32701,"freunde_vorab.js"],[32722,"mut.js"],[33144,"schule.js"],[33633,"fussball226.js"],[33955,"schaetzen.js"],[34386,"party8.js"],[35005,"tiere.js"],[35464,"fussball232.js"],[35679,"party8b.js"],[35981,"weg.js"],[36202,"px.js"],[36613,"px_data.js"],[36870,"pxwelt.js"],[36951,"px_abenteuer.js"],[37752,"px_abenteuer2.js"],[38501,"px_ski.js"],[39143,"px_wurf.js"],[39672,"px_insel.js"],[40873,"px_kicker.js"],[41808,"px_eis.js"],[42794,"px_run.js"],[44009,"px_brk.js"],[44971,"px_pol.js"],[46322,"px_frog.js"],[47582,"px_angel.js"],[48897,"px_golf.js"],[49931,"px_tauch.js"],[51196,"px_hockey.js"],[52152,"px_lab.js"],[53487,"px_plopp.js"],[54693,"px_stadion.js"],[56197,"px_training.js"],[56566,"cm.js"],[57056,"cmwelt.js"],[57112,"cm_baeck.js"],[57905,"cm_bahn.js"],[58669,"cm_detek.js"],[59386,"cm_markt.js"],[60099,"ff.js"],[60256,"ff_mathe.js"],[62246,"ff_deutsch.js"],[63834,"ff_sach_a.js"],[66083,"ff_sach_b.js"],[68312,"ff_sprachen.js"],[70720,"zm.js"],[71633,"tt.js"],[71846,"data_tagebuch.js"],[71889,"data_hoerspiel.js"],[72048,"leseecke.js"],[72367,"kt.js"],[72670,"comicbuch.js"],[72948,"alce.js"],[73111,"alce_aufg.js"],[73281,"formen.js"],[73732,"data_formen.js"],[73973,"data_formen2.js"],[74195,"spielzeit.js"],[74340,"data_faktmeinung.js"],[74459,"data_es248.js"],[74723,"data_en249.js"],[74962,"data_wissen249.js"],[75393,"data_kunst249.js"],[75676,"data_fussball250.js"],[75800,"data_werte252.js"],[76053,"data_lesen252.js"],[76114,"data_k34_252.js"],[76200,"art254.js"],[76318,"data_werte255.js"],[76456,"data_lesen255.js"],[76592,"forscher255.js"],[76740,"zufall250.js"],[76786,"stufe259.js"],[76796,"advent.js"],[77059,"wdh.js"],[77157,"denk.js"],[77194,"data_viaje265.js"],[77337,"klassenarbeit.js"],[77470,"quizduell.js"],[77593,"neu267.js"],[77858,"prog.js"],[77963,"lernstand.js"],[78030,"blatt.js"],[78132,"data_es271.js"],[78246,"plus269.js"],[78340,"schach.js"],[78567,"schachtaktik.js"],[78738,"fun270.js"],[78901,"plus272.js"],[78955,"kasten.js"],[79059,"erklaer.js"],[79166,"apa.js"],[79247,"lumi_live.js"],[79363,"sicher.js"],[79547,"stil.js"],[79601,"freunde.js"],[79738,"start.js"],[79748,null],[79758,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '2.74.0';
+  var MAP = {"probe":0,"files":[[8754,"fehler_kern.js"],[9042,null],[9044,"data.js"],[9739,"data_more.js"],[10096,"data_su2.js"],[10323,"data_es.js"],[10665,"data_wissen.js"],[10864,"data_v21.js"],[11547,"data_v24.js"],[12033,"data_v25.js"],[12514,"data_v26.js"],[12613,"data_v29.js"],[12918,"data_v30.js"],[13248,"data_v31.js"],[13554,"data_kunst.js"],[13750,"data_v214.js"],[13853,"data_v216.js"],[14146,"schrift.js"],[14446,"eingabe.js"],[14657,"data_k34m.js"],[15175,"data_k34d.js"],[15529,"data_k34s.js"],[15983,"data_v224.js"],[16856,"data_v225w.js"],[17225,"data_v225k.js"],[17669,"data_herz.js"],[18023,"data_fb226.js"],[18166,"data_tf226.js"],[18373,"data_v227a.js"],[19464,"data_v227b.js"],[20418,"data_h28b.js"],[20458,"data_l28a.js"],[21324,"data_l28b.js"],[22504,"data_schaetz.js"],[22986,"data_party8.js"],[23036,"data_alce.js"],[23696,"data_alce2.js"],[23945,"data_alce3.js"],[24360,"registry.js"],[24874,"app.js"],[26044,"fun.js"],[26624,"fun2.js"],[26940,"atelier.js"],[27314,"kunst225.js"],[27504,"herz.js"],[27868,"reise.js"],[28170,"iglu.js"],[28336,"offline.js"],[28443,"party.js"],[28927,"meine.js"],[29283,"loeffel.js"],[29454,"trend.js"],[29996,"fun228a.js"],[30847,"fun228b.js"],[31508,"kueche.js"],[32547,"stimme.js"],[32602,"klassen.js"],[32751,"freunde_vorab.js"],[32772,"mut.js"],[33194,"schule.js"],[33683,"fussball226.js"],[34005,"schaetzen.js"],[34436,"party8.js"],[35055,"tiere.js"],[35514,"fussball232.js"],[35729,"party8b.js"],[36031,"weg.js"],[36252,"px.js"],[36663,"px_data.js"],[36920,"pxwelt.js"],[37001,"px_abenteuer.js"],[37802,"px_abenteuer2.js"],[38551,"px_ski.js"],[39193,"px_wurf.js"],[39722,"px_insel.js"],[40923,"px_kicker.js"],[41858,"px_eis.js"],[42844,"px_run.js"],[44059,"px_brk.js"],[45021,"px_pol.js"],[46372,"px_frog.js"],[47632,"px_angel.js"],[48947,"px_golf.js"],[49981,"px_tauch.js"],[51246,"px_hockey.js"],[52202,"px_lab.js"],[53537,"px_plopp.js"],[54743,"px_stadion.js"],[56247,"px_training.js"],[56616,"cm.js"],[57106,"cmwelt.js"],[57162,"cm_baeck.js"],[57955,"cm_bahn.js"],[58719,"cm_detek.js"],[59436,"cm_markt.js"],[60149,"ff.js"],[60306,"ff_mathe.js"],[62296,"ff_deutsch.js"],[63884,"ff_sach_a.js"],[66133,"ff_sach_b.js"],[68362,"ff_sprachen.js"],[70770,"zm.js"],[71683,"tt.js"],[71896,"data_tagebuch.js"],[71939,"data_hoerspiel.js"],[72098,"leseecke.js"],[72417,"kt.js"],[72720,"comicbuch.js"],[72998,"alce.js"],[73161,"alce_aufg.js"],[73331,"formen.js"],[73782,"data_formen.js"],[74023,"data_formen2.js"],[74245,"spielzeit.js"],[74390,"data_faktmeinung.js"],[74509,"data_es248.js"],[74773,"data_en249.js"],[75012,"data_wissen249.js"],[75443,"data_kunst249.js"],[75726,"data_fussball250.js"],[75850,"data_werte252.js"],[76103,"data_lesen252.js"],[76164,"data_k34_252.js"],[76250,"art254.js"],[76368,"data_werte255.js"],[76506,"data_lesen255.js"],[76642,"forscher255.js"],[76790,"zufall250.js"],[76836,"stufe259.js"],[76846,"advent.js"],[77109,"wdh.js"],[77207,"denk.js"],[77244,"data_viaje265.js"],[77387,"klassenarbeit.js"],[77520,"quizduell.js"],[77643,"neu267.js"],[77908,"prog.js"],[78013,"lernstand.js"],[78080,"blatt.js"],[78182,"data_es271.js"],[78296,"plus269.js"],[78390,"schach.js"],[78617,"schachtaktik.js"],[78788,"fun270.js"],[78951,"data_neu274.js"],[79160,"plus272.js"],[79214,"spiele274.js"],[79337,"kasten.js"],[79441,"erklaer.js"],[79554,"apa.js"],[79635,"lumi_live.js"],[79751,"sicher.js"],[79935,"stil.js"],[79989,"freunde.js"],[80126,"start.js"],[80136,null],[80146,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -24826,9 +24875,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '2.73.0';
+const APP_VERSION = '2.74.0';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "2.74.0", d: "12.11.2026", t: ["Mathe, drei neue Spiele: Bruchteile, Messen & Ablesen (Thermometer, Messbecher, Waage) und Winkel-Detektiv", "Deutsch, drei neue Spiele: Bindewörter, Wo oder wohin? und Der x-Laut", "Rätsel & Denk-Spiele: Kisten schieben mit 16 Leveln. Spielhalle: Fisch-Verdoppler"] },
   { v: "2.73.0", d: "12.11.2026", t: ["Korrektur in Mathe, Überschlagen: Die richtige Antwort stand auf Stufe 1 fast immer an zweiter Stelle. Jetzt wechselt die Stelle"] },
   { v: "2.72.0", d: "12.11.2026", t: ["Englisch: 13 Spiele haben ab Stufe 2 vier Antworten statt drei, zum Beispiel Say it!, Question words, Have got, Reading und Short stories", "Neu im Elternbereich: Aufgaben für dein Kind. Eltern stellen ein Spiel als Aufgabe, sie steht dann oben auf der Startseite. Alles bleibt auf dem Gerät"] },
   { v: "2.71.0", d: "12.11.2026", t: ["Spanisch: sieben neue Grammatik-Spiele (Mi, tu, su · Tener · Voy a… · Me levanto · Más o menos · Hay o está, muy o mucho · En clase) und „Diálogos“ mit 24 kleinen Gesprächen", "Neu: der Vokabelkasten für Spanisch und Englisch. Ein Karteikasten mit fünf Fächern, in dem jede Vokabel nach 1, 2, 4, 8 und 16 Tagen wiederkommt", "Neu: Erklärkarten zu 60 Themen. Die Regel in wenigen Sätzen vor der ersten Runde, später oben im Spiel bei der Glühbirne"] },
@@ -78898,6 +78948,215 @@ FUN_GAMES.memory.d = 'Drei Runden, jede mit mehr Karten. Wer Paare in Serie find
 FUN_GAMES.schiebe.d = 'Schieb die Teile, bis das Bild stimmt. Danach wartet ein Bild mit 16 Teilen.';
 FUN_GAMES.fische.d = 'Schnapp die Fische, aber nicht die Krabben! Ab fünf Fischen in Serie zählt jeder doppelt.';
 
+/*@@src data_neu274.js@@*/
+
+
+
+
+
+
+const N4_F = '#F6A531', N4_L = '#FFFFFF', N4_S = '#33475B', N4_R = '#E5484D', N4_W = '#58B7E8';
+const n4Fr = (k, n) => `<span class="n4-fr"><b>${k}</b><i>${n}</i></span>`, n4FrO = (k, n) => ({ html: n4Fr(k, n), label: `${k}/${n}` });
+
+function n4Kreis(n, k, s = 120) {
+  const r = 54, c = 60, p = a => `${(c + r * Math.cos(a)).toFixed(1)} ${(c + r * Math.sin(a)).toFixed(1)}`;
+  let h = `<svg class="n4-svg" viewBox="0 0 120 120" width="${s}" height="${s}" aria-hidden="true">`;
+  if (n === 1) h += `<circle cx="60" cy="60" r="${r}" fill="${k ? N4_F : N4_L}" stroke="${N4_S}" stroke-width="3"/>`;
+  else for (let i = 0; i < n; i++) { const a0 = i / n * 2 * Math.PI - Math.PI / 2, a1 = (i + 1) / n * 2 * Math.PI - Math.PI / 2; h += `<path d="M${c} ${c} L${p(a0)} A${r} ${r} 0 0 1 ${p(a1)} Z" fill="${i < k ? N4_F : N4_L}" stroke="${N4_S}" stroke-width="3" stroke-linejoin="round"/>`; }
+  return h + '</svg>';
+}
+function n4Balken(n, k, s = 120) {
+  const w = 132 / n; let h = `<svg class="n4-svg" viewBox="0 0 140 60" width="${s * 1.25}" height="${s * 1.25 * 60 / 140}" aria-hidden="true">`;
+  for (let i = 0; i < n; i++) h += `<rect x="${(4 + i * w).toFixed(1)}" y="8" width="${w.toFixed(1)}" height="44" fill="${i < k ? N4_F : N4_L}" stroke="${N4_S}" stroke-width="3"/>`;
+  return h + '</svg>';
+}
+const n4Bild = (art, n, k, s) => (art ? n4Balken(n, k, s) : n4Kreis(n, k, s));
+function n4Thermo(v, fein, w = 132) {
+  const lo = -10, hi = 40, Y = t => 212 - (t - lo) / (hi - lo) * 190;
+  let h = `<svg class="n4-svg" viewBox="0 0 100 250" width="${w}" height="${w * 2.5}" aria-hidden="true"><rect x="38" y="12" width="16" height="210" rx="8" fill="#fff" stroke="${N4_S}" stroke-width="3"/><circle cx="46" cy="230" r="15" fill="${N4_R}" stroke="${N4_S}" stroke-width="3"/><rect x="42" y="${Y(v).toFixed(1)}" width="8" height="${(224 - Y(v)).toFixed(1)}" fill="${N4_R}"/>`;
+  for (let t = lo; t <= hi; t++) { const big = t % 10 === 0, mid = t % 5 === 0; if (!mid && !fein) continue; h += `<line x1="58" y1="${Y(t).toFixed(1)}" x2="${big ? 74 : mid ? 68 : 63}" y2="${Y(t).toFixed(1)}" stroke="${N4_S}" stroke-width="${big ? 2.5 : 1.4}"/>${big ? `<text x="78" y="${(Y(t) + 4).toFixed(1)}" font-size="11" font-weight="700" fill="${N4_S}">${t}</text>` : ''}`; }
+  return h + `<text x="8" y="22" font-size="13" font-weight="700" fill="${N4_S}">°C</text></svg>`;
+}
+function n4Becher(v, w = 190) {
+  const Y = t => 182 - t / 1000 * 150;
+  let h = `<svg class="n4-svg" viewBox="0 0 160 200" width="${w}" height="${w * 1.25}" aria-hidden="true"><rect x="46" y="${Y(v).toFixed(1)}" width="84" height="${(184 - Y(v)).toFixed(1)}" fill="${N4_W}"/><path d="M44 16 V186 H132 V16" fill="none" stroke="${N4_S}" stroke-width="4" stroke-linejoin="round"/>`;
+  for (let t = 50; t <= 1000; t += 50) { const big = t % 100 === 0; h += `<line x1="46" y1="${Y(t)}" x2="${big ? 66 : 56}" y2="${Y(t)}" stroke="${N4_S}" stroke-width="${big ? 2.2 : 1.3}"/>${t % 200 === 0 ? `<text x="40" y="${Y(t) + 4}" font-size="10.5" font-weight="700" text-anchor="end" fill="${N4_S}">${t}</text>` : ''}`; }
+  return h + `<text x="88" y="12" font-size="11" font-weight="700" text-anchor="middle" fill="${N4_S}">ml</text></svg>`;
+}
+function n4Waage(v, max, w = 220) {
+  const c = 90, r = 70, A = t => (-225 + t / max * 270) * Math.PI / 180, P = (t, l) => `${(c + l * Math.cos(A(t))).toFixed(1)} ${(c + l * Math.sin(A(t))).toFixed(1)}`, kg = max > 1000, st = kg ? 100 : 50, big = kg ? 1000 : 100;
+  let zahlen = '', h = `<svg class="n4-svg" viewBox="0 0 180 180" width="${w}" height="${w}" aria-hidden="true"><circle cx="${c}" cy="${c}" r="84" fill="#fff" stroke="${N4_S}" stroke-width="4"/>`;
+  for (let t = 0; t <= max; t += st) { const g = t % big === 0, m = !g && t % (big / 2) === 0; h += `<path d="M${P(t, r)} L${P(t, r - (g ? 13 : m ? 9 : 5))}" stroke="${N4_S}" stroke-width="${g ? 2.4 : 1.3}"/>`; if (g && (kg || t % 200 === 0)) { const [x, y] = P(t, r - 25).split(' '); zahlen += `<text x="${x}" y="${(+y + 4).toFixed(1)}" font-size="${kg ? 13 : 10.5}" font-weight="700" text-anchor="middle" fill="${N4_S}" stroke="#fff" stroke-width="3" paint-order="stroke">${kg ? t / 1000 : t}</text>`; } }
+  return h + `<path d="M${c} ${c} L${P(v, r - 16)}" stroke="${N4_R}" stroke-width="4" stroke-linecap="round"/>${zahlen}<circle cx="${c}" cy="${c}" r="6" fill="${N4_S}"/><text x="${c}" y="150" font-size="13" font-weight="700" text-anchor="middle" fill="${N4_S}">${kg ? 'kg' : 'g'}</text></svg>`;
+}
+function n4Winkel(deg, rot, s = 130) {
+  const c = 70, L = 56, a0 = rot * Math.PI / 180, a1 = (rot - deg) * Math.PI / 180, P = (a, l) => `${(c + l * Math.cos(a)).toFixed(1)} ${(c + l * Math.sin(a)).toFixed(1)}`;
+  return `<svg class="n4-svg" viewBox="0 0 140 140" width="${s}" height="${s}" aria-hidden="true"><path d="M${P(a0, 20)} A20 20 0 0 0 ${P(a1, 20)}" fill="none" stroke="${N4_F}" stroke-width="4"/><path d="M${P(a0, L)} L${c} ${c} L${P(a1, L)}" fill="none" stroke="${N4_S}" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="${c}" cy="${c}" r="4" fill="${N4_S}"/></svg>`;
+}
+function n4Uhr(h, s = 120) {
+  const c = 60, a = (h % 12) * 30 * Math.PI / 180 - Math.PI / 2; let t = '';
+  for (let i = 0; i < 12; i++) { const b = i * 30 * Math.PI / 180; t += `<line x1="${(c + 46 * Math.cos(b)).toFixed(1)}" y1="${(c + 46 * Math.sin(b)).toFixed(1)}" x2="${(c + 52 * Math.cos(b)).toFixed(1)}" y2="${(c + 52 * Math.sin(b)).toFixed(1)}" stroke="${N4_S}" stroke-width="${i % 3 ? 1.5 : 3}"/>`; }
+  return `<svg class="n4-svg" viewBox="0 0 120 120" width="${s}" height="${s}" aria-hidden="true"><circle cx="60" cy="60" r="55" fill="#fff" stroke="${N4_S}" stroke-width="4"/>${t}<line x1="60" y1="60" x2="60" y2="18" stroke="${N4_S}" stroke-width="3.5" stroke-linecap="round"/><line x1="60" y1="60" x2="${(c + 30 * Math.cos(a)).toFixed(1)}" y2="${(c + 30 * Math.sin(a)).toFixed(1)}" stroke="${N4_R}" stroke-width="5" stroke-linecap="round"/><circle cx="60" cy="60" r="4" fill="${N4_S}"/></svg>`;
+}
+const n4Vis = h => `<div class="n4-vis">${h}</div>`;
+
+
+const N4_NAME = { '1/2': 'die Hälfte', '1/4': 'ein Viertel', '3/4': 'drei Viertel', '1/3': 'ein Drittel', '2/3': 'zwei Drittel' };
+const N4_EINH = [['Liter', 'ml', 1000], ['Kilogramm', 'g', 1000], ['Stunde', 'Minuten', 60], ['Kilometer', 'm', 1000], ['Meter', 'cm', 100], ['Euro', 'Cent', 100]];
+function genBruchteile(ctx) {
+  const lv = (ctx && ctx.lv) || 1, art = R.chance(.4) ? 1 : 0, r = Math.random();
+  if (lv <= 1) {
+    if (r < .4) { const [n, k, a] = R.pick([[2, 1, 'die Hälfte'], [4, 1, 'ein Viertel'], [4, 3, 'drei Viertel'], [4, 2, 'die Hälfte'], [2, 2, 'das Ganze'], [4, 4, 'das Ganze']]), all = ['die Hälfte', 'ein Viertel', 'drei Viertel', 'das Ganze'];
+      return mkChoice({ prompt: 'Welcher Teil ist orange?', visual: n4Vis(n4Bild(art, n, k, 150)), answer: a, wrong: all.filter(x => x !== a), fixed: true, order: all, layout: 'grid2', explain: `${k} von ${n} gleich großen Teilen ${k === 1 ? 'ist' : 'sind'} orange: Das ist ${a}.${n === 4 && k === 2 ? ' Zwei Viertel sind genauso viel wie die Hälfte.' : ''}`, key: 'bt1' + art + n + k }); }
+    if (r < .7) { const ziel = R.pick([[2, 1, 'die Hälfte'], [4, 1, 'ein Viertel'], [4, 3, 'drei Viertel']]), o = (n, k, l) => ({ html: n4Bild(art, n, k, 96), label: l });
+      return mkChoice({ prompt: `Welches Bild zeigt ${ziel[2]}?`, visual: '', answer: o(ziel[0], ziel[1], ziel[2]), wrong: [[2, 1, 'die Hälfte'], [4, 1, 'ein Viertel'], [4, 3, 'drei Viertel'], [4, 4, 'das Ganze']].filter(x => x[2] !== ziel[2]).map(x => o(...x)), layout: 'grid2', explain: `${ziel[2][0].toUpperCase() + ziel[2].slice(1)}: ${ziel[1]} von ${ziel[0]} gleich großen Teilen.`, key: 'bt1b' + art + ziel[2] }); }
+    const n = R.int(2, 10) * 2;
+    return mkNumber({ prompt: 'Teile gerecht in zwei gleiche Teile.', visual: `<div class="q-statement">Die Hälfte von ${n} ist …</div>`, answer: n / 2, explain: `${n} geteilt durch 2 ist ${n / 2}. Probe: ${n / 2} + ${n / 2} = ${n}.`, key: 'bt1h' + n });
+  }
+  if (lv === 2) {
+    const n = R.pick([2, 3, 4, 5, 6, 8]), k = R.int(1, n - 1), gleich = (a, b) => a[0] * b[1] === b[0] * a[1];
+    if (r < .35) { const w = [[n - k, n], [k, n + 1], [k + 1, n + 1], [1, n], [n - 1, n], [k, n + 2]].filter(x => x[0] > 0 && x[0] < x[1] && !gleich(x, [k, n])).filter((x, i, a) => a.findIndex(y => y[0] === x[0] && y[1] === x[1]) === i).slice(0, 3);
+      return mkChoice({ prompt: 'Welcher Bruch ist orange gefärbt?', visual: n4Vis(n4Bild(art, n, k, 150)), answer: n4FrO(k, n), wrong: w.map(x => n4FrO(...x)), layout: 'row4', explain: `Das Ganze hat ${n} gleich große Teile, ${k} ${k === 1 ? 'ist' : 'sind'} orange: ${k}/${n}. Unten steht, in wie viele Teile geteilt wurde. Oben steht, wie viele gemeint sind.`, key: 'bt2' + art + n + k }); }
+    if (r < .6) { const w = [[n, n - k], [n + 1, k], [n, k + 1], [n, k - 1], [n + 2, k]].map(x => [x[1], x[0]]).filter(x => x[0] > 0 && x[0] < x[1] && x[1] <= 10 && !gleich(x, [k, n])).filter((x, i, a) => a.findIndex(y => y[0] === x[0] && y[1] === x[1]) === i).slice(0, 3), o = x => ({ html: n4Bild(art, x[1], x[0], 96), label: `${x[0]}/${x[1]}` });
+      return mkChoice({ prompt: 'Welches Bild passt zu diesem Bruch?', visual: n4Vis(n4Fr(k, n)), answer: o([k, n]), wrong: w.map(o), layout: 'grid2', explain: `${k}/${n} heißt: in ${n} gleiche Teile teilen und ${k} davon färben.`, key: 'bt2b' + art + n + k }); }
+    if (r < .88) { const m = R.pick([2, 3, 4, 5, 10]), q = R.int(2, 10), wort = { 2: 'Die Hälfte', 3: 'Ein Drittel', 4: 'Ein Viertel', 5: 'Ein Fünftel', 10: 'Ein Zehntel' }[m];
+      return mkNumber({ prompt: 'Rechne den Bruchteil aus.', visual: `<div class="q-statement">${wort} von ${m * q} ist …</div>`, answer: q, explain: `${wort} heißt: durch ${m} teilen. ${m * q} : ${m} = ${q}.`, key: 'bt2n' + m + q }); }
+    const wort = { 2: 'Halbe', 3: 'Drittel', 4: 'Viertel', 5: 'Fünftel', 6: 'Sechstel', 8: 'Achtel' }[n];
+    return mkNumber({ prompt: 'Denk an eine Pizza.', visual: `<div class="q-statement">Wie viele ${wort} sind ein Ganzes?</div>`, answer: n, explain: `${n} ${wort} sind ein Ganzes. Darum steht bei ${wort}n unten die ${n}.`, key: 'bt2g' + n });
+  }
+  if (r < .34) { const [name, kl, basis] = R.pick(N4_EINH), [k, n] = R.pick([[1, 2], [1, 4], [3, 4]]), a = basis * k / n, w = [basis / 4, basis / 2, basis * 3 / 4, basis / 5, basis / 10].filter(x => x !== a).slice(0, 3), f = x => `${x} ${kl}`;
+    return mkChoice({ prompt: 'Wie viel ist das?', visual: `<div class="q-statement n4-gl">${n4Fr(k, n)} ${name} = ?</div>`, answer: f(a), wrong: w.map(f), layout: 'grid2', explain: `1 ${name} hat ${basis} ${kl}. ${basis} : ${n} = ${basis / n}${k > 1 ? `, und ${k} · ${basis / n} = ${a}` : ''}. Also ${k}/${n} ${name} = ${a} ${kl}.`, key: 'bt3e' + name + k + n }); }
+  if (r < .62) { const n = R.pick([3, 4, 5, 6]), k = R.int(2, n - 1), q = R.int(2, 9);
+    return mkNumber({ prompt: 'Erst teilen, dann malnehmen.', visual: `<div class="q-statement n4-gl">${n4Fr(k, n)} von ${n * q} = ?</div>`, answer: k * q, explain: `Ein Teil: ${n * q} : ${n} = ${q}. Davon ${k} Teile: ${k} · ${q} = ${k * q}.`, key: 'bt3n' + n + k + q }); }
+  if (r < .82) { const [a, b] = R.pick([[[1, 2], [1, 4]], [[1, 3], [1, 2]], [[1, 4], [1, 8]], [[2, 5], [3, 5]], [[3, 4], [1, 4]], [[1, 3], [1, 6]], [[5, 8], [3, 8]], [[2, 3], [1, 3]], [[3, 4], [1, 2]], [[1, 2], [1, 8]]]), gr = a[0] * b[1] > b[0] * a[1] ? a : b, kl = gr === a ? b : a, o = x => ({ html: `${n4Bild(art, x[1], x[0], 84)}${n4Fr(x[0], x[1])}`, label: `${x[0]}/${x[1]}` }), ord = R.shuffle([a, b]).map(x => `${x[0]}/${x[1]}`);
+    return mkChoice({ prompt: 'Welcher Bruch ist größer?', visual: '', answer: o(gr), wrong: [o(kl)], fixed: true, order: ord, layout: 'row2', explain: gr[1] === kl[1] ? `Beide haben gleich große Teile (${gr[1]}tel). ${gr[0]} Teile sind mehr als ${kl[0]}.` : gr[0] === kl[0] ? `Je größer die Zahl unten, desto kleiner die Teile. Darum ist ${gr[0]}/${gr[1]} größer als ${kl[0]}/${kl[1]}.` : `Schau auf die Bilder: ${gr[0]}/${gr[1]} ist mehr als ${kl[0]}/${kl[1]}.`, key: 'bt3v' + ord.join() }); }
+  const [k, n, f] = R.pick([[1, 2, 2], [1, 2, 3], [1, 2, 4], [1, 4, 2], [3, 4, 2], [1, 3, 2]]), w = [[1, 4], [2, 3], [3, 4], [1, 3], [1, 2], [3, 8], [5, 6]].filter(x => x[0] * n !== k * x[1]).slice(0, 3);
+  return mkChoice({ prompt: 'Welcher Bruch ist genauso groß?', visual: n4Vis(`${n4Bild(art, n, k, 110)}${n4Fr(k, n)}`), answer: n4FrO(k * f, n * f), wrong: R.shuffle(w).map(x => n4FrO(...x)), layout: 'row4', explain: `${k}/${n} und ${k * f}/${n * f} sind gleich groß. Die Teile sind nur ${f === 2 ? 'halb' : 'kleiner und dafür mehr'}${f === 2 ? ' so groß und dafür doppelt so viele' : ''}.`, key: 'bt3g' + k + n + f });
+}
+
+
+function genAblesen(ctx) {
+  const lv = (ctx && ctx.lv) || 1, r = Math.random(), opt = (a, ds, f, ok = x => true) => { const w = []; for (const d of R.shuffle(ds)) { const x = a + d; if (x !== a && ok(x) && !w.includes(x)) w.push(x); if (w.length === 3) break; } return { answer: f(a), wrong: w.map(f), fixed: true, order: [a].concat(w).sort((x, y) => x - y).map(f) }; };
+  const grad = x => `${x < 0 ? '−' + -x : x} °C`, ml = x => `${x} ml`, gr = x => `${x} g`, kg = x => (x < 1000 ? `${x} g` : x % 1000 ? `${Math.floor(x / 1000)} kg ${x % 1000} g` : `${x / 1000} kg`);
+  if (lv <= 1) {
+    if (r < .55) { const v = R.int(0, 7) * 5; return mkChoice(Object.assign({ prompt: 'Wie warm ist es? Lies das Thermometer ab.', visual: n4Vis(n4Thermo(v, false)), layout: 'grid2', explain: `Die rote Säule endet bei ${v}. Es sind ${v} Grad Celsius.`, key: 'ab1t' + v }, opt(v, [-10, -5, 5, 10], grad, x => x >= -10 && x <= 40))); }
+    const v = R.int(1, 9) * 100; return mkChoice(Object.assign({ prompt: 'Wie viel Wasser ist im Messbecher?', visual: n4Vis(n4Becher(v)), layout: 'grid2', explain: `Das Wasser steht beim Strich für ${v} ml. Jeder lange Strich sind 100 ml.`, key: 'ab1b' + v }, opt(v, [-200, -100, 100, 200], ml, x => x > 0 && x <= 1000)));
+  }
+  if (lv === 2) {
+    if (r < .3) { const v = R.pick([R.int(-9, -1), R.int(1, 38), R.int(11, 29)]); return mkChoice(Object.assign({ prompt: 'Lies das Thermometer genau ab.', visual: n4Vis(n4Thermo(v, true)), layout: 'grid2', explain: v < 0 ? `Die Säule endet ${v === -1 ? 'einen kleinen Strich' : -v + ' kleine Striche'} unter der 0: minus ${-v} Grad. Unter 0 Grad friert es.` : `Jeder kleine Strich ist 1 Grad. Die Säule endet bei ${v} Grad.`, key: 'ab2t' + v }, opt(v, v < 0 ? [-2, -1, 1, 2, -2 * v] : [-2, -1, 1, 2, 5, -5], grad, x => x >= -10 && x <= 40))); }
+    if (r < .55) { const v = R.int(1, 19) * 50; return mkChoice(Object.assign({ prompt: 'Wie viel Wasser ist im Messbecher?', visual: n4Vis(n4Becher(v)), layout: 'grid2', explain: `Jeder kurze Strich sind 50 ml, jeder lange 100 ml. Das Wasser steht bei ${v} ml.`, key: 'ab2b' + v }, opt(v, [-100, -50, 50, 100], ml, x => x > 0 && x <= 1000))); }
+    if (r < .8) { const v = R.int(1, 19) * 50; return mkChoice(Object.assign({ prompt: 'Was zeigt die Küchenwaage?', visual: n4Vis(n4Waage(v, 1000)), layout: 'grid2', explain: `Jeder kleine Strich sind 50 g. Der Zeiger steht bei ${v} g.`, key: 'ab2w' + v }, opt(v, [-100, -50, 50, 100], gr, x => x > 0 && x <= 1000))); }
+    const a = R.int(2, 14), d = R.int(3, 14);
+    return mkNumber({ prompt: 'Um wie viel Grad ist es wärmer geworden?', visual: n4Vis(`<figure>${n4Thermo(a, true, 112)}<figcaption>morgens</figcaption></figure><figure>${n4Thermo(a + d, true, 112)}<figcaption>mittags</figcaption></figure>`), answer: d, unit: 'Grad', explain: `Morgens ${a} Grad, mittags ${a + d} Grad. ${a + d} − ${a} = ${d}.`, key: 'ab2d' + a + '.' + d });
+  }
+  if (r < .3) { const a = -R.int(1, 8), b = R.int(1, 12);
+    return mkNumber({ prompt: 'Um wie viel Grad ist es wärmer geworden?', visual: n4Vis(`<figure>${n4Thermo(a, true, 112)}<figcaption>nachts</figcaption></figure><figure>${n4Thermo(b, true, 112)}<figcaption>mittags</figcaption></figure>`), answer: b - a, unit: 'Grad', explain: `Von minus ${-a} bis 0 ${a === -1 ? 'ist es 1' : 'sind es ' + -a} Grad, von 0 bis ${b} noch einmal ${b}. Zusammen ${-a} + ${b} = ${b - a} Grad.`, key: 'ab3d' + a + '.' + b }); }
+  if (r < .55) { const v = R.int(2, 18) * 50; return mkNumber({ prompt: 'Wie viel Milliliter fehlen bis zu einem Liter?', visual: n4Vis(n4Becher(v)), answer: 1000 - v, unit: 'ml', explain: `Im Becher sind ${v} ml. 1 Liter sind 1000 ml. 1000 − ${v} = ${1000 - v}.`, key: 'ab3f' + v }); }
+  if (r < .8) { const v = R.int(3, 48) * 100; return mkChoice(Object.assign({ prompt: 'Was zeigt die Waage?', visual: n4Vis(n4Waage(v, 5000)), layout: 'grid2', explain: `Die Zahlen sind Kilogramm. Zwischen zwei Zahlen liegen zehn kleine Striche, jeder ist 100 g. Der Zeiger steht bei ${kg(v)}.`, key: 'ab3w' + v }, opt(v, [-1000, -200, -100, 100, 200, 1000], kg, x => x > 0 && x <= 5000))); }
+  const a = R.int(2, 14) * 50, b = R.int(2, 14) * 50;
+  return mkNumber({ prompt: 'Wie viel Wasser ist das zusammen?', visual: n4Vis(n4Becher(a, 132) + n4Becher(b, 132)), answer: a + b, unit: 'ml', explain: `${a} ml + ${b} ml = ${a + b} ml.${a + b >= 1000 ? ` Das ${a + b === 1000 ? 'ist genau' : 'ist mehr als'} 1 Liter.` : ''}`, key: 'ab3s' + a + '.' + b });
+}
+
+
+const N4_FIG = [['25,25 115,25 115,115 25,115', 4, 'Quadrat'], ['15,40 125,40 125,100 15,100', 4, 'Rechteck'], ['25,115 25,30 115,115', 1, 'Dreieck mit einem rechten Winkel'], ['70,22 122,112 18,112', 0, 'Dreieck mit drei gleichen Seiten'],
+  ['25,110 25,40 85,40 118,110', 2, 'Trapez'], ['70,14 106,70 70,126 34,70', 0, 'Raute'], ['70,18 115,44 115,96 70,122 25,96 25,44', 0, 'Sechseck'], ['40,40 125,40 100,100 15,100', 0, 'Parallelogramm']];
+const N4_WFAKT1 = [['Mit welchem Werkzeug prüfst du einen rechten Winkel?', 'Geodreieck', ['Zirkel', 'Maßband', 'Thermometer']], ['Welcher Buchstabe hat einen rechten Winkel?', 'L', ['O', 'S', 'V']], ['Wo findest du einen rechten Winkel?', 'an der Ecke eines Buches', ['an einem Ball', 'an einem Ei', 'an einer Münze']],
+  ['Wie viele rechte Winkel hat ein Blatt Papier?', '4', ['2', '3', '6']], ['Wie sieht ein rechter Winkel aus?', 'wie die Ecke eines Quadrats', ['wie eine Pizzaspitze', 'wie eine gerade Linie', 'wie ein Kreis']]];
+const N4_WFAKT2 = [['Wie viel Grad hat ein rechter Winkel?', '90 Grad', ['45 Grad', '100 Grad', '180 Grad']], ['Ein spitzer Winkel ist …', 'kleiner als ein rechter Winkel', ['größer als ein rechter Winkel', 'genau ein rechter Winkel', 'eine gerade Linie']],
+  ['Ein stumpfer Winkel ist …', 'größer als ein rechter Winkel', ['kleiner als ein rechter Winkel', 'genau ein rechter Winkel', 'kleiner als ein spitzer Winkel']], ['Wie sieht ein gestreckter Winkel aus?', 'wie eine gerade Linie', ['wie die Ecke eines Blattes', 'wie eine Pizzaspitze', 'wie ein Kreis']],
+  ['Wie viele rechte Winkel passen in einen gestreckten Winkel?', '2', ['1', '3', '4']], ['Wie viel Grad hat ein gestreckter Winkel?', '180 Grad', ['90 Grad', '100 Grad', '360 Grad']], ['Wie viel Grad hat eine ganze Drehung im Kreis?', '360 Grad', ['90 Grad', '180 Grad', '100 Grad']]];
+const N4_WART = ['spitzer Winkel', 'rechter Winkel', 'stumpfer Winkel', 'gestreckter Winkel'], n4WArt = g => (g < 90 ? 0 : g === 90 ? 1 : g < 180 ? 2 : 3);
+const N4_WERKL = ['Ein spitzer Winkel ist kleiner als ein rechter Winkel.', 'Ein rechter Winkel sieht aus wie die Ecke eines Blattes. Er hat 90 Grad.', 'Ein stumpfer Winkel ist größer als ein rechter Winkel, aber noch keine gerade Linie.', 'Ein gestreckter Winkel ist eine gerade Linie. Er hat 180 Grad.'];
+function genWinkel(ctx) {
+  const lv = (ctx && ctx.lv) || 1, r = Math.random(), rot = R.int(0, 23) * 15, uhrW = h => { const g = (h % 12) * 30; return g > 180 ? 360 - g : g; };
+  if (lv <= 1) {
+    if (r < .35) { const g = R.pick([90, 90, 90, 45, 60, 120, 135]), J = 'Ja', N = 'Nein';
+      return mkChoice({ prompt: 'Ist das ein rechter Winkel?', visual: n4Vis(n4Winkel(g, rot, 150)), answer: g === 90 ? J : N, wrong: [g === 90 ? N : J], fixed: true, order: [J, N], layout: 'row2', explain: g === 90 ? 'Ja. Die Ecke eines Blattes passt genau hinein.' : `Nein. Dieser Winkel ist ${g < 90 ? 'kleiner' : 'größer'} als die Ecke eines Blattes.`, key: 'wi1' + g + '.' + rot }); }
+    if (r < .65) { const [p, n, name] = ctx.draw(N4_FIG);
+      return mkChoice({ prompt: 'Wie viele rechte Winkel hat die Figur?', visual: n4Vis(`<svg class="n4-svg" viewBox="0 0 140 140" width="150" height="150" aria-hidden="true"><polygon points="${p}" fill="${N4_F}" fill-opacity=".35" stroke="${N4_S}" stroke-width="4" stroke-linejoin="round"/></svg>`), answer: String(n), wrong: ['0', '1', '2', '4'].filter(x => x !== String(n)), fixed: true, order: ['0', '1', '2', '4'], layout: 'row4', explain: `Das ${name} hat ${n === 0 ? 'keinen rechten Winkel' : n === 1 ? 'einen rechten Winkel' : n + ' rechte Winkel'}. Prüfe jede Ecke mit der Ecke eines Blattes.`, key: 'wi1f' + name }); }
+    if (r < .82) { const h = R.pick([3, 9]), o = x => ({ html: n4Uhr(x, 88), label: `${x} Uhr` });
+      return mkChoice({ prompt: 'Auf welcher Uhr bilden die Zeiger einen rechten Winkel?', visual: '', answer: o(h), wrong: R.sample([1, 2, 4, 5, 6, 7, 8, 10, 11], 3).map(o), layout: 'grid2', explain: `Um ${h} Uhr zeigt der große Zeiger nach oben und der kleine genau zur Seite. Das ist ein rechter Winkel.`, key: 'wi1u' + h }); }
+    const [q, a, w] = ctx.draw(N4_WFAKT1); return mkChoice({ prompt: q, visual: '', answer: a, wrong: w, layout: a.length > 6 ? 'col' : 'row4', explain: `Richtig ist: ${a}.`, key: 'wi1q' + q });
+  }
+  if (r < .4) { const g = R.pick([30, 45, 60, 70, 90, 90, 110, 120, 135, 150, 180]), k = n4WArt(g);
+    return mkChoice({ prompt: 'Was für ein Winkel ist das?', visual: n4Vis(n4Winkel(g, rot, 150)), answer: N4_WART[k], wrong: N4_WART.filter((_, i) => i !== k), fixed: true, order: N4_WART, layout: 'grid2', explain: N4_WERKL[k], key: 'wi2' + g + '.' + rot }); }
+  if (r < .62) { const h = R.int(1, 11), k = n4WArt(uhrW(h));
+    return mkChoice({ prompt: `Es ist ${h} Uhr. Welchen Winkel bilden die Zeiger?`, visual: n4Vis(n4Uhr(h, 150)), answer: N4_WART[k], wrong: N4_WART.filter((_, i) => i !== k), fixed: true, order: N4_WART, layout: 'grid2', explain: `Um ${h} Uhr: ${N4_WERKL[k]}`, key: 'wi2u' + h }); }
+  if (r < .82) { const a = R.pick([30, 45, 60, 75, 90]), b = a + R.pick([30, 45, 60]), o = (g, t) => ({ html: n4Winkel(g, R.int(0, 23) * 15, 110), label: t }), ord = R.shuffle(['A', 'B']), gross = ord[0] === 'A';
+    return mkChoice({ prompt: 'Welcher Winkel ist größer?', visual: '', answer: o(b, gross ? 'A' : 'B'), wrong: [o(a, gross ? 'B' : 'A')], fixed: true, order: ['A', 'B'], layout: 'row2', explain: 'Je weiter die beiden Schenkel auseinandergehen, desto größer ist der Winkel. Wie lang die Striche sind, ist egal.', key: 'wi2v' + a + '.' + b + ord[0] }); }
+  const [q, a, w] = ctx.draw(N4_WFAKT2); return mkChoice({ prompt: q, visual: '', answer: a, wrong: w, layout: a.length > 9 ? 'col' : 'grid2', explain: `Richtig ist: ${a}.`, key: 'wi2q' + q });
+}
+
+
+
+const N4_BIND = [
+  ['Ich nehme einen Schirm mit, ___ es regnet.', 'weil', ['aber', 'oder', 'dass'], 1], ['Lumi mag Fisch ___ Krabben.', 'und', ['weil', 'dass', 'denn'], 1], ['Möchtest du Saft ___ Wasser?', 'oder', ['denn', 'weil', 'dass'], 1],
+  ['Ich bin müde, ___ ich will noch lesen.', 'aber', ['oder', 'weil', 'dass'], 1], ['Wir gehen nicht raus, ___ es stürmt.', 'denn', ['aber', 'oder', 'dass'], 1], ['Er ist klein, ___ er ist sehr stark.', 'aber', ['weil', 'dass', 'oder'], 1],
+  ['Wir bleiben drinnen ___ spielen ein Spiel.', 'und', ['dass', 'weil', 'wenn'], 1], ['Das Eis schmilzt, ___ es warm ist.', 'weil', ['aber', 'oder', 'dass'], 1], ['Nimm die Jacke ___ den Pullover, beides passt nicht in den Rucksack.', 'oder', ['denn', 'weil', 'dass'], 1],
+  ['Ich kann nicht kommen, ___ ich bin krank.', 'denn', ['dass', 'oder', 'wenn'], 1], ['Mia lacht, ___ der Clown stolpert.', 'weil', ['aber', 'oder', 'dass'], 1], ['Ich mag Äpfel, ___ Birnen mag ich nicht.', 'aber', ['weil', 'dass', 'wenn'], 1],
+  ['Ich weiß, ___ du mein Freund bist.', 'dass', ['weil', 'oder', 'denn'], 0], ['Ich freue mich, ___ du kommst.', 'dass', ['oder', 'aber', 'denn'], 0], ['___ es schneit, bauen wir einen Schneemann.', 'Wenn', ['Dass', 'Oder', 'Aber'], 0],
+  ['Ruf mich an, ___ du Hilfe brauchst.', 'wenn', ['dass', 'aber', 'oder'], 0], ['___ ich klein war, hatte ich ein Dreirad.', 'Als', ['Wenn', 'Dass', 'Oder'], 0], ['Sie geht zum Training, ___ sie müde ist.', 'obwohl', ['denn', 'dass', 'oder'], 0],
+  ['Ich übe jeden Tag, ___ ich besser werde.', 'damit', ['denn', 'oder', 'aber'], 0], ['Wasch dir die Hände, ___ du isst.', 'bevor', ['dass', 'oder', 'aber'], 0], ['___ wir gegessen haben, räumen wir den Tisch ab.', 'Nachdem', ['Dass', 'Oder', 'Aber'], 0],
+  ['Ich hoffe, ___ morgen die Sonne scheint.', 'dass', ['denn', 'aber', 'oder'], 0], ['Pass auf, ___ du nicht ausrutschst.', 'dass', ['denn', 'aber', 'oder'], 0], ['___ es dunkel wird, gehen die Laternen an.', 'Wenn', ['Dass', 'Aber', 'Denn'], 0],
+  ['Der Hund bellt, ___ jemand klingelt.', 'wenn', ['dass', 'oder', 'aber'], 0], ['Tom rennt schnell, ___ er den Bus erreicht.', 'damit', ['aber', 'oder', 'denn'], 0]];
+const N4_BREGEL = { und: '„und“ verbindet, was zusammengehört.', oder: '„oder“ zeigt eine Auswahl.', aber: '„aber“ zeigt einen Gegensatz. Davor steht ein Komma.', denn: '„denn“ nennt den Grund. Danach geht der Satz ganz normal weiter. Davor steht ein Komma.',
+  weil: '„weil“ nennt den Grund. Das Verb wandert ans Ende. Davor steht ein Komma.', dass: '„dass“ steht oft nach wissen, hoffen, sich freuen oder aufpassen. Das Verb steht am Ende.', wenn: '„wenn“ nennt eine Bedingung oder etwas, das immer wieder passiert.',
+  als: '„als“ nimmst du für etwas, das früher einmal war. „wenn“ passt hier nicht.', obwohl: '„obwohl“ zeigt: Es passiert trotzdem.', damit: '„damit“ nennt das Ziel.', bevor: '„bevor“ sagt, was vorher passiert.', nachdem: '„nachdem“ sagt, was danach passiert.' };
+const N4_BSATZ = ['Ich bleibe zu Hause, weil es regnet.', 'Lumi freut sich, weil die Sonne scheint.', 'Ich weiß, dass du das schaffst.', 'Wir essen Eis, wenn es warm ist.', 'Mia übt viel, damit sie besser wird.', 'Er geht raus, obwohl es schneit.', 'Ich hoffe, dass du bald kommst.', 'Wir spielen draußen, bis es dunkel wird.'];
+function genBindewort(ctx) {
+  const lv = (ctx && ctx.lv) || 1;
+  if (lv >= 2 && R.chance(.25)) { const s = ctx.draw(N4_BSATZ); return mkOrder({ prompt: 'Baue den Satz. Achte darauf, wo das Verb steht.', items: s.split(' '), inline: true, explain: `${s} Nach dem Bindewort wandert das Verb ans Ende.`, key: 'bwo' + s }); }
+  const [s, a, w] = ctx.draw(lv >= 2 ? N4_BIND : memo('n4bind1', () => N4_BIND.filter(x => x[3]))), voll = s.replace('___', a);
+  return mkChoice({ prompt: 'Welches Bindewort passt?', visual: `<div class="q-sentence">${esc(s).replace('___', '<span class="q-gap wide">?</span>')}</div>`, answer: a, wrong: lv >= 2 ? w : R.sample(w, 2), layout: lv >= 2 ? 'grid2' : 'row3', explain: `${voll} ${N4_BREGEL[a.toLowerCase()]}`, key: 'bw' + s, after: voll });
+}
+
+
+
+const N4_WO = [
+  ['Die Katze sitzt auf ___ Stuhl.', 'dem', ['den', 'der', 'das'], 'wo'], ['Die Katze springt auf ___ Stuhl.', 'den', ['dem', 'der', 'das'], 'wohin'], ['Das Buch liegt auf ___ Tisch.', 'dem', ['den', 'die', 'das'], 'wo'], ['Ich lege das Buch auf ___ Tisch.', 'den', ['dem', 'die', 'das'], 'wohin'],
+  ['Lumi schwimmt in ___ Meer.', 'dem', ['das', 'den', 'die'], 'wo'], ['Lumi springt in ___ Meer.', 'das', ['dem', 'den', 'der'], 'wohin'], ['Die Kinder lernen in ___ Schule.', 'der', ['die', 'den', 'das'], 'wo'], ['Die Kinder gehen in ___ Schule.', 'die', ['der', 'den', 'dem'], 'wohin'],
+  ['Der Ball liegt unter ___ Bank.', 'der', ['die', 'den', 'dem'], 'wo'], ['Der Ball rollt unter ___ Bank.', 'die', ['der', 'den', 'dem'], 'wohin'], ['Das Bild hängt an ___ Wand.', 'der', ['die', 'den', 'das'], 'wo'], ['Ich hänge das Bild an ___ Wand.', 'die', ['der', 'dem', 'den'], 'wohin'],
+  ['Der Hund liegt vor ___ Tür.', 'der', ['die', 'den', 'dem'], 'wo'], ['Der Hund läuft vor ___ Tür.', 'die', ['der', 'dem', 'den'], 'wohin'], ['Die Schuhe stehen neben ___ Bett.', 'dem', ['das', 'den', 'die'], 'wo'], ['Ich stelle die Schuhe neben ___ Bett.', 'das', ['dem', 'den', 'der'], 'wohin'],
+  ['Der Vogel sitzt auf ___ Dach.', 'dem', ['das', 'den', 'die'], 'wo'], ['Der Vogel fliegt auf ___ Dach.', 'das', ['dem', 'den', 'der'], 'wohin'], ['Wir spielen in ___ Garten.', 'dem', ['den', 'der', 'das'], 'wo'], ['Wir gehen in ___ Garten.', 'den', ['dem', 'der', 'das'], 'wohin'],
+  ['Die Lampe hängt über ___ Tisch.', 'dem', ['den', 'der', 'das'], 'wo'], ['Ich hänge die Lampe über ___ Tisch.', 'den', ['dem', 'der', 'das'], 'wohin'], ['Die Maus sitzt hinter ___ Schrank.', 'dem', ['den', 'der', 'das'], 'wo'], ['Die Maus läuft hinter ___ Schrank.', 'den', ['dem', 'der', 'das'], 'wohin'],
+  ['Das Auto steht zwischen ___ Bäumen.', 'den', ['die', 'dem', 'der'], 'wo'], ['Das Auto fährt zwischen ___ Bäume.', 'die', ['den', 'dem', 'der'], 'wohin']];
+const N4_WO2 = [['Wir gehen ___ Kino.', 'ins', ['im', 'am', 'ans'], 'wohin'], ['Wir sind ___ Kino.', 'im', ['ins', 'ans', 'in den'], 'wo'], ['Das Bild hängt ___ Fenster.', 'am', ['ans', 'ins', 'in den'], 'wo'], ['Ich gehe ___ Fenster.', 'ans', ['am', 'im', 'in dem'], 'wohin'],
+  ['Die Milch steht ___ Kühlschrank.', 'im', ['ins', 'in den', 'ans'], 'wo'], ['Stell die Milch ___ Kühlschrank.', 'in den', ['im', 'ins', 'am'], 'wohin'], ['Wir fahren ___ Meer.', 'ans', ['am', 'im', 'in dem'], 'wohin'], ['Wir sitzen ___ Meer.', 'am', ['ans', 'ins', 'in den'], 'wo']];
+const n4WoErkl = (voll, t) => `${voll} Frage: ${t === 'wo' ? 'Wo? Etwas bleibt an seinem Platz. Dann heißt es dem, der, dem und in der Mehrzahl den.' : 'Wohin? Etwas bewegt sich zu einem Ziel. Dann heißt es den, die, das und in der Mehrzahl die.'}`;
+function genWoWohin(ctx) {
+  const lv = (ctx && ctx.lv) || 1;
+  if (lv <= 1 && R.chance(.45)) { const [s, a, , t] = ctx.draw(N4_WO), voll = s.replace('___', a), A = 'Wo?', B = 'Wohin?';
+    return mkChoice({ prompt: 'Welche Frage passt zu dem Satz?', visual: `<div class="q-sentence">${esc(voll)}</div>`, answer: t === 'wo' ? A : B, wrong: [t === 'wo' ? B : A], fixed: true, order: [A, B], layout: 'row2', explain: n4WoErkl(voll, t), key: 'wof' + s }); }
+  const [s, a, w, t] = lv >= 2 && R.chance(.3) ? ctx.draw(N4_WO2) : ctx.draw(N4_WO), voll = s.replace('___', a);
+  return mkChoice({ prompt: 'Wo oder wohin? Welches Wort fehlt?', visual: `<div class="q-sentence">${esc(s).replace('___', '<span class="q-gap wide">?</span>')}</div>`, answer: a, wrong: lv >= 2 ? w : R.sample(w, 2), layout: lv >= 2 ? 'grid2' : 'row3',
+    explain: n4WoErkl(voll, t) + (/^(ins|im|am|ans)$/.test(a) ? ` ${{ ins: 'ins = in das', im: 'im = in dem', am: 'am = an dem', ans: 'ans = an das' }[a]}.` : ''), key: 'wo' + s, after: voll });
+}
+
+
+
+const N4_X = [['Fuchs', '🦊', 'chs'], ['Dachs', '🦡', 'chs'], ['Lachs', '🐟', 'chs'], ['wachsen', '🌱', 'chs'], ['sechs', '6️⃣', 'chs'], ['Wachs', '🕯️', 'chs'], ['Ochse', '🐂', 'chs'], ['Büchse', '🥫', 'chs'], ['wechseln', '🔄', 'chs'], ['Eidechse', '🦎', 'chs'], ['Achse', '🛞', 'chs'],
+  ['Hexe', '🧙‍♀️', 'x'], ['Taxi', '🚕', 'x'], ['Axt', '🪓', 'x'], ['boxen', '🥊', 'x'], ['Text', '📄', 'x'], ['Lexikon', '📚', 'x'], ['Nixe', '🧜‍♀️', 'x'], ['Saxofon', '🎷', 'x'], ['mixen', '🥣', 'x'], ['Praxis', '🏥', 'x'],
+  ['Keks', '🍪', 'ks'], ['links', '⬅️', 'ks'],
+  ['Klecks', '🖌️', 'cks', 'Klecks kommt von klecksen und kleckern, darum ck.'], ['Tricks', '🎩', 'cks', 'Tricks ist die Mehrzahl von Trick, darum ck und s.'], ['Knacks', '💥', 'cks', 'Knacks kommt von knacken, darum ck und s.'],
+  ['unterwegs', '🚶', 'gs', 'unterwegs kommt von Weg, darum g und s.'], ['mittags', '🕛', 'gs', 'mittags kommt von Mittag, darum g und s.'], ['sonntags', '📅', 'gs', 'sonntags kommt von Sonntag, darum g und s.']];
+function genXLaut(ctx) {
+  const lv = (ctx && ctx.lv) || 1, [w, e, t, hilfe] = ctx.draw(lv >= 2 ? N4_X : memo('n4x1', () => N4_X.filter(x => ['chs', 'x', 'ks'].includes(x[2])))), i = w.toLowerCase().lastIndexOf(t);
+  const erkl = hilfe || `${w} schreibt man mit ${t}. Den x-Laut hörst du immer gleich. Wörter mit ${t} musst du dir merken.`, alle = lv >= 2 ? ['chs', 'x', 'ks', 'cks', 'gs'] : ['chs', 'x', 'ks'];
+  if (lv >= 2 && R.chance(.45)) { const var_ = alle.filter(x => x !== t).map(x => w.slice(0, i) + x + w.slice(i + t.length));
+    return mkChoice({ prompt: 'Welches Wort ist richtig geschrieben?', visual: bigEmoji(e, 'sm'), answer: w, wrong: R.sample(var_, 3), layout: 'grid2', explain: erkl, key: 'xr' + w, after: w, say: w }); }
+  const opts = lv >= 2 ? [t].concat(R.sample(alle.filter(x => x !== t), 3)) : alle;
+  return mkChoice({ prompt: 'Wie schreibt man den x-Laut in diesem Wort?', visual: bigEmoji(e, 'sm') + `<div class="q-word">${gapWord(w, i, t.length)}</div>`, answer: t, wrong: opts.filter(x => x !== t), fixed: true, order: alle.filter(x => opts.includes(x)), layout: lv >= 2 ? 'row4' : 'row3', explain: erkl, key: 'x' + w, after: w, say: w });
+}
+
+Object.assign(GAMES, {
+  bruchteile: { id: 'bruchteile', w: 'mathe', g: 'm-zahlen', t: 'Bruchteile', d: 'Die Hälfte, ein Viertel, drei Viertel: Teile vom Ganzen', i: '🍕', gen: genBruchteile, max: 3, start: [1, 1, 2, 3], klv: [2, 3, 4] },
+  ablesen: { id: 'ablesen', w: 'mathe', g: 'm-groessen', t: 'Messen & Ablesen', d: 'Thermometer, Messbecher und Waage richtig ablesen', i: '🌡️', gen: genAblesen, max: 3, start: [1, 1, 2, 3], klv: [2, 3, 4] },
+  winkel: { id: 'winkel', w: 'mathe', g: 'm-geo', t: 'Winkel-Detektiv', d: 'Rechte, spitze und stumpfe Winkel erkennen', i: '📐', gen: genWinkel, max: 2, start: [1, 1, 1, 2], klv: [3, 4] },
+  bindewort: { id: 'bindewort', w: 'deutsch', g: 'd-grammatik', t: 'Bindewörter', d: 'und, aber, weil, dass, wenn: Sätze verbinden', i: '🔗', gen: genBindewort, max: 2, start: [1, 1, 1, 2], klv: [3, 4] },
+  wowohin: { id: 'wowohin', w: 'deutsch', g: 'd-grammatik', t: 'Wo oder wohin?', d: 'auf dem Tisch oder auf den Tisch?', i: '📍', gen: genWoWohin, max: 2, start: [1, 1, 1, 2], klv: [3, 4] },
+  xlaut: { id: 'xlaut', w: 'deutsch', g: 'd-tricks', t: 'Der x-Laut', d: 'Fuchs, Hexe, Keks: chs, x oder ks?', i: 'x', txt: 1, gen: genXLaut, max: 2, start: [1, 1, 1, 2], klv: [3, 4] }
+});
+
 /*@@src plus272.js@@*/
 
 
@@ -78951,6 +79210,129 @@ function p2Vier(id, q, ctx) {
     if (!g.max) { g.max = 2; g.start = [1, 1, 2, 2]; }
   });
 })();
+
+/*@@src spiele274.js@@*/
+
+
+
+
+
+
+
+const KS_LV = [
+  { m: ['######', '#@   #', '#  $ #', '# .  #', '#    #', '######'], opt: 6 },
+  { m: ['######', '#    #', '#  #.#', '#  $ #', '#   @#', '######'], opt: 7 },
+  { m: ['######', '##@  #', '#  # #', '#  $ #', '# .  #', '######'], opt: 12 },
+  { m: ['######', '#    #', '# +  #', '# $  #', '# #  #', '######'], opt: 13 },
+  { m: ['#######', '#  #  #', '# $   #', '#  . @#', '#   $.#', '#######'], opt: 14 },
+  { m: ['#######', '# $  .#', '#  $  #', '#   @ #', '#.    #', '#######'], opt: 15 },
+  { m: ['#######', '#  .  #', '#     #', '#@ #$ #', '# . $ #', '#######'], opt: 15 },
+  { m: ['#######', '#     #', '#$  $ #', '#.    #', '#  # ##', '#.  @ #', '#######'], opt: 20 },
+  { m: ['#######', '#    ##', '#     #', '# $ $ #', '#  .# #', '#@  .##', '#######'], opt: 20 },
+  { m: ['#######', '#     #', '#     #', '# $.. #', '##  $ #', '#@  # #', '#######'], opt: 21 },
+  { m: ['#######', '#  . .#', '# $ # #', '# # $ #', '#  #  #', '#    @#', '#######'], opt: 31 },
+  { m: ['#######', '# #@  #', '# $ # #', '# #.$ #', '#  .# #', '#     #', '#######'], opt: 31 },
+  { m: ['########', '#      #', '# $$   #', '#      #', '#     .#', '#@. .$ #', '########'], opt: 25 },
+  { m: ['########', '#    # #', '#   $#.#', '##  .  #', '# $    #', '#@$   .#', '########'], opt: 26 },
+  { m: ['#######', '# ..$ #', '# #@  #', '#  #$ #', '#  $  #', '#  .  #', '#######'], opt: 30 },
+  { m: ['#######', '#  #  #', '# .$$ #', '#  #  #', '#.# $@#', '# .   #', '#######'], opt: 32 }];
+let KS = null;
+function ksS() { if (!S.ks || typeof S.ks !== 'object') S.ks = { best: {} }; if (!S.ks.best) S.ks.best = {}; return S.ks; }
+const ksFrei = i => i === 0 || !!ksS().best[i - 1] || !!ksS().best[i];
+function ksKey(e) { const d = { ArrowLeft: [-1, 0], ArrowRight: [1, 0], ArrowUp: [0, -1], ArrowDown: [0, 1] }[e.key]; if (d && KS && KS.i >= 0) { e.preventDefault(); ksZug(d[0], d[1]); } }
+function ksStart(g0) {
+  KS = { g: g0, i: -1, gel: 0, st: 1 };
+  document.addEventListener('keydown', ksKey);
+  g0.cleanup = () => { document.removeEventListener('keydown', ksKey); KS = null; };
+  ksWahl();
+}
+function ksKopf(t) { return `<header class="wrap gamebar"><button class="icon-btn" data-act="quit" aria-label="Spiel beenden">✕</button><div class="sx-kopf">${t}</div></header>`; }
+function ksWahl() {
+  if (!KS) return; KS.i = -1; const B = ksS().best;
+  setView(`<div class="game ks-game">${ksKopf('Kisten schieben')}<main class="wrap"><section class="card"><h2>Wähle ein Level</h2>
+    <p class="muted">Lumi schiebt jede Kiste 📦 auf einen Fisch 🐟. Schieben geht, ziehen geht nicht. Überleg also, bevor du eine Kiste in die Ecke schiebst!</p>
+    <div class="ks-wahl">${KS_LV.map((l, i) => `<button class="ks-lv${B[i] ? ' ok' : ''}" data-act="kslv" data-i="${i}"${ksFrei(i) ? '' : ' disabled'} aria-label="Level ${i + 1}${B[i] ? ', ' + plural(B[i], 'Stern', 'Sterne') : ksFrei(i) ? '' : ', noch gesperrt'}"><b>${i + 1}</b><span>${B[i] ? '⭐'.repeat(B[i]) : ksFrei(i) ? '&nbsp;' : '🔒'}</span></button>`).join('')}</div>
+    ${KS.gel ? '<div class="acts"><button class="btn" data-act="ksfertig">Fertig</button></div>' : ''}</section></main></div>`, 'meine');
+}
+function ksLade(i) {
+  const m = KS_LV[i].m, w = m[0].length;
+  Object.assign(KS, { i, w, h: m.length, wall: new Set(), ziel: new Set(), box: new Set(), zuege: 0, hist: [], fertig: false, schau: 'r' });
+  m.forEach((r, y) => Array.from(r).forEach((c, x) => { const k = y * w + x; if (c === '#') KS.wall.add(k); if ('.*+'.includes(c)) KS.ziel.add(k); if ('$*'.includes(c)) KS.box.add(k); if ('@+'.includes(c)) KS.p = k; }));
+  ksDraw();
+}
+function ksZug(dx, dy) {
+  if (!KS || KS.i < 0 || KS.fertig) return;
+  const w = KS.w, n = KS.p + dy * w + dx; if (dx) KS.schau = dx < 0 ? 'l' : 'r';
+  if (KS.wall.has(n)) return;
+  let b = -1; if (KS.box.has(n)) { b = n + dy * w + dx; if (KS.wall.has(b) || KS.box.has(b)) { const el = document.querySelector(`.ks-c[data-k="${n}"]`); if (el) { el.classList.remove('nein'); void el.offsetWidth; el.classList.add('nein'); } return; } }
+  KS.hist.push([KS.p, b >= 0 ? n : -1, b]); if (b >= 0) { KS.box.delete(n); KS.box.add(b); Sound.quick ? Sound.quick() : Sound.tap(); } else Sound.tap();
+  KS.p = n; KS.zuege++;
+  if ([...KS.box].every(k => KS.ziel.has(k))) {
+    const opt = KS_LV[KS.i].opt, st = KS.zuege <= Math.ceil(opt * 1.25) ? 3 : KS.zuege <= opt * 2 ? 2 : 1, B = ksS().best;
+    KS.fertig = true; KS.st = st; KS.gel++; B[KS.i] = Math.max(B[KS.i] || 0, st); save(); Sound.win(); confetti(40);
+  }
+  ksDraw();
+}
+function ksDraw() {
+  if (!KS || KS.i < 0) return; const { w, h } = KS, L = KS_LV[KS.i]; let z = '';
+  for (let k = 0; k < w * h; k++) {
+    const wand = KS.wall.has(k), box = KS.box.has(k), ziel = KS.ziel.has(k), ich = KS.p === k;
+    z += wand ? '<i class="ks-c wand"></i>' : `<button class="ks-c${ziel ? ' ziel' : ''}${box ? ' box' : ''}${box && ziel ? ' drauf' : ''}${ich ? ' ich' : ''}" data-act="kstip" data-k="${k}" aria-label="${ich ? 'Lumi' : box ? (ziel ? 'Kiste auf einem Fisch' : 'Kiste') : ziel ? 'Fisch' : 'frei'}">${ich ? `<span class="ks-lumi ${KS.schau}">🐧</span>` : box ? '📦' : ziel ? '<span class="ks-fisch">🐟</span>' : ''}</button>`;
+  }
+  const rest = [...KS.box].filter(k => !KS.ziel.has(k)).length;
+  setView(`<div class="game ks-game">${ksKopf(`Kisten schieben · Level ${KS.i + 1}`)}<main class="wrap ks-main">
+    <div class="ks-brett" id="ksBrett" style="--w:${w};--h:${h}">${z}</div>
+    <div class="ks-seite">${KS.fertig ? `<section class="card ks-erg"><h2>Geschafft! ${'⭐'.repeat(KS.st)}</h2><p>Du hast ${plural(KS.zuege, 'Zug', 'Züge')} gebraucht. Die kürzeste Lösung hat ${L.opt} Züge.</p>
+        <div class="acts">${KS.i + 1 < KS_LV.length ? '<button class="btn" data-act="ksnext">Nächstes Level ›</button>' : ''}<button class="btn ghost" data-act="kswahl">Alle Level</button><button class="btn ghost" data-act="ksfertig">Fertig</button></div></section>`
+      : `<p class="ks-info"><b>Züge: ${KS.zuege}</b> · noch ${plural(rest, 'Kiste', 'Kisten')}</p>
+        <div class="ks-pad"><button class="btn ks-o" data-act="kspf" data-d="0,-1" aria-label="nach oben">▲</button><button class="btn ks-l" data-act="kspf" data-d="-1,0" aria-label="nach links">◀</button><button class="btn ks-r" data-act="kspf" data-d="1,0" aria-label="nach rechts">▶</button><button class="btn ks-u" data-act="kspf" data-d="0,1" aria-label="nach unten">▼</button></div>
+        <div class="acts"><button class="btn ghost sm" data-act="ksundo"${KS.hist.length ? '' : ' disabled'}>↩ Zurück</button><button class="btn ghost sm" data-act="ksneu">🔄 Neu</button><button class="btn ghost sm" data-act="kswahl">Alle Level</button></div>`}</div></main></div>`, 'meine');
+  const br = document.getElementById('ksBrett'); let s0 = null;
+  if (br) { br.addEventListener('pointerdown', e => { s0 = [e.clientX, e.clientY]; });
+    br.addEventListener('pointerup', e => { if (!s0) return; const dx = e.clientX - s0[0], dy = e.clientY - s0[1]; s0 = null; if (Math.max(Math.abs(dx), Math.abs(dy)) < 28) return; KS.wisch = Date.now(); Math.abs(dx) > Math.abs(dy) ? ksZug(dx > 0 ? 1 : -1, 0) : ksZug(0, dy > 0 ? 1 : -1); }); }
+}
+Object.assign(ACT, {
+  kslv: t => { if (KS && ksFrei(+t.dataset.i)) { Sound.tap(); ksLade(+t.dataset.i); } },
+  kspf: t => { const [x, y] = t.dataset.d.split(',').map(Number); ksZug(x, y); },
+  kstip: t => { if (!KS || Date.now() - (KS.wisch || 0) < 350) return; const k = +t.dataset.k, w = KS.w, px = KS.p % w, py = (KS.p - px) / w, x = k % w, y = (k - x) / w; if (x === px && y !== py) ksZug(0, y > py ? 1 : -1); else if (y === py && x !== px) ksZug(x > px ? 1 : -1, 0); },
+  ksundo: () => { if (!KS || !KS.hist.length || KS.fertig) return; const [p, von, nach] = KS.hist.pop(); if (nach >= 0) { KS.box.delete(nach); KS.box.add(von); } KS.p = p; KS.zuege--; Sound.tap(); ksDraw(); },
+  ksneu: () => { if (KS && KS.i >= 0) ksLade(KS.i); },
+  ksnext: () => { if (KS && KS.i + 1 < KS_LV.length) ksLade(KS.i + 1); },
+  kswahl: () => ksWahl(),
+  ksfertig: () => { if (KS) customFinish(Math.max(1, KS.gel), 0, KS.st || 1); }
+});
+GAMES.kistenschieben = { id: 'kistenschieben', w: 'meine', g: 'n-raetsel', t: 'Kisten schieben', d: 'Schiebe alle Kisten auf die Fische. 16 Level zum Vorausdenken', i: '📦', type: 'custom', run: g0 => ksStart(g0), nomix: 1 };
+
+
+FUN_GAMES.doppel = { c: 'knobel', t: 'Fisch-Verdoppler', d: 'Schiebe gleiche Zahlen zusammen: 2 und 2 wird 4, 4 und 4 wird 8. Schaffst du die 256?', i: '🔢' };
+FUN_IMPL.doppel = function (stage) {
+  const N = 4; let g = Array(N * N).fill(0), punkte = 0, aus = false, s0 = null, neuK = -1, gefeiert = 0;
+  const leer = () => g.map((v, i) => (v ? -1 : i)).filter(i => i >= 0), neu = () => { const l = leer(); if (l.length) { neuK = R.pick(l); g[neuK] = R.chance(.9) ? 2 : 4; } };
+  const reihe = r => { const a = r.filter(v => v), out = []; let p = 0; for (let i = 0; i < a.length; i++) { if (a[i] === a[i + 1]) { out.push(a[i] * 2); p += a[i] * 2; i++; } else out.push(a[i]); } while (out.length < N) out.push(0); return [out, p]; };
+  const idx = (d, r, k) => (d === 'l' ? r * N + k : d === 'r' ? r * N + N - 1 - k : d === 'o' ? k * N + r : (N - 1 - k) * N + r);
+  const kann = () => leer().length > 0 || g.some((v, i) => (i % N < N - 1 && v === g[i + 1]) || (i < N * (N - 1) && v === g[i + N]));
+  const max = () => Math.max(...g);
+  const ende = () => { if (aus) return; aus = true; FUN.score = punkte; FUN.note = `größte Zahl: ${max()}`; funEnd(); };
+  const draw = () => { const b = $('#vdb'); if (!b) return; b.innerHTML = g.map((v, i) => `<div class="dop-c${v ? ' v v' + Math.min(v, 2048) : ''}${i === neuK ? ' neu' : ''}">${v || ''}</div>`).join(''); FUN.score = punkte; funHud(`Punkte: ${punkte} · Größte Zahl: ${max()}`); };
+  const zug = d => {
+    if (aus || !FUN) return; let ch = false, gew = 0;
+    for (let r = 0; r < N; r++) { const alt = [0, 1, 2, 3].map(k => g[idx(d, r, k)]), [nr, p] = reihe(alt); nr.forEach((v, k) => { if (alt[k] !== v) ch = true; g[idx(d, r, k)] = v; }); gew += p; }
+    if (!ch) return; punkte += gew; gew ? Sound.good() : Sound.tap(); neu(); draw();
+    const m = max(); if (m >= 128 && m > gefeiert) { gefeiert = m; toast(`Stark, du hast die ${m} geschafft!`); if (m >= 256) confetti(30); }
+    if (!kann()) setTimeout(() => { if (FUN) ende(); }, window.LW_FX_AUS ? 10 : 900);
+  };
+  const taste = e => { const d = { ArrowLeft: 'l', ArrowRight: 'r', ArrowUp: 'o', ArrowDown: 'u' }[e.key]; if (d) { e.preventDefault(); zug(d); } };
+  document.addEventListener('keydown', taste); FUN.cleanup = () => document.removeEventListener('keydown', taste);
+  stage.innerHTML = `<div class="dop"><div class="dop-b" id="vdb"></div><div class="dop-s"><p>Wische über das Feld oder nimm die Pfeile. Gleiche Zahlen verschmelzen und verdoppeln sich.</p>
+    <div class="ks-pad"><button class="btn ks-o" data-d="o" aria-label="nach oben">▲</button><button class="btn ks-l" data-d="l" aria-label="nach links">◀</button><button class="btn ks-r" data-d="r" aria-label="nach rechts">▶</button><button class="btn ks-u" data-d="u" aria-label="nach unten">▼</button></div>
+    <button class="btn ghost sm" id="vdstop">Hier aufhören</button></div></div>`;
+  stage.querySelector('.ks-pad').addEventListener('click', e => { const b = e.target.closest('[data-d]'); if (b) zug(b.dataset.d); });
+  $('#vdstop').addEventListener('click', () => { if (FUN) ende(); });
+  const b = $('#vdb'); b.addEventListener('pointerdown', e => { s0 = [e.clientX, e.clientY]; });
+  b.addEventListener('pointerup', e => { if (!s0) return; const dx = e.clientX - s0[0], dy = e.clientY - s0[1]; s0 = null; if (Math.max(Math.abs(dx), Math.abs(dy)) < 24) return; zug(Math.abs(dx) > Math.abs(dy) ? (dx > 0 ? 'r' : 'l') : (dy > 0 ? 'u' : 'o')); });
+  FUN.dbg = { feld: () => g.slice(), setz: a => { g = a.slice(); neuK = -1; draw(); }, zug, punkte: () => punkte };
+  neu(); neu(); draw();
+};
 
 /*@@src kasten.js@@*/
 
@@ -79127,6 +79509,12 @@ const EK = {
   escomparar: { t: 'Más o menos', e: ['*más … que* = mehr als', '*menos … que* = weniger als', '*tan … como* = so … wie', 'Besonders: mejor = besser · peor = schlechter'], b: 'Soy más alta que tú. · Soy tan alta como tú.' },
   eshaymuy: { t: 'Hay o está, muy o mucho', e: ['*hay* = es gibt (irgendetwas: un parque, muchos niños)', '*está, están* = befindet sich (etwas Bestimmtes: el colegio, mis abuelos)', '*muy* steht vor Eigenschaften: muy grande', '*mucho* gehört zu Nomen und Verben: mucho frío, mucha hambre, muchos niños'], b: 'Hay un parque. El parque está cerca. · Es muy grande. Hay muchos niños.' },
   esenclase: { t: 'En clase', e: ['Die Befehlsform für „du“ sieht meist aus wie die Form für él und ella.', 'abrir → abre · escuchar → escucha · leer → lee', 'Besondere Formen: ven (komm), haz (mach), pon (leg oder stell)'], b: '¡Abre el libro! · ¡Ven aquí!' },
+  bruchteile: { t: 'Bruchteile', e: ['Teilst du ein Ganzes in *gleich große* Teile, bekommst du Bruchteile.', 'Die Zahl *unten* sagt, in wie viele Teile geteilt wurde.', 'Die Zahl *oben* sagt, wie viele Teile gemeint sind.', 'Zwei Halbe, drei Drittel oder vier Viertel sind wieder ein Ganzes.'], b: '1/2 = die Hälfte · 1/4 = ein Viertel · 3/4 = drei Viertel' },
+  ablesen: { t: 'Messen und Ablesen', e: ['Schau zuerst, welche Zahlen an den *langen* Strichen stehen.', 'Zähle dann, wie viele *kleine* Striche dazwischen liegen. So weißt du, wie viel ein kleiner Strich wert ist.', 'Beim Thermometer liegt unter der Null der Frost: minus 1, minus 2 und so weiter.'], b: 'Zwischen 0 und 10 liegen zehn Striche: Jeder ist 1 Grad. · 1 Liter = 1000 ml · 1 kg = 1000 g' },
+  winkel: { t: 'Winkel', e: ['Ein *rechter Winkel* sieht aus wie die Ecke eines Blattes. Er hat 90 Grad.', 'Ein *spitzer Winkel* ist kleiner, ein *stumpfer Winkel* ist größer als ein rechter.', 'Ein *gestreckter Winkel* ist eine gerade Linie.', 'Wie lang die Striche sind, ist egal. Es zählt nur, wie weit sie auseinandergehen.'], b: 'Um 3 Uhr bilden die Zeiger einen rechten Winkel. · Um 6 Uhr einen gestreckten.' },
+  bindewort: { t: 'Bindewörter', e: ['Bindewörter verbinden Wörter und Sätze: *und, oder, aber, denn*.', 'Nach *weil, dass, wenn, als, obwohl, damit* wandert das Verb ans Ende.', 'Vor diesen Wörtern und vor *aber* und *denn* steht ein Komma. Vor *und* und *oder* steht keins.'], b: 'Ich bleibe drin, weil es regnet. · Ich bleibe drin, denn es regnet.' },
+  wowohin: { t: 'Wo oder wohin?', e: ['Frag bei auf, in, an, unter, über, vor, hinter, neben, zwischen immer: *Wo?* oder *Wohin?*', '*Wo?* Etwas bleibt an seinem Platz: dem, der, dem.', '*Wohin?* Etwas bewegt sich zu einem Ziel: den, die, das.', 'Kurzformen: im = in dem · ins = in das · am = an dem · ans = an das'], b: 'Die Katze sitzt auf dem Stuhl. · Die Katze springt auf den Stuhl.' },
+  xlaut: { t: 'Der x-Laut', e: ['Den x-Laut hörst du immer gleich. Geschrieben wird er verschieden.', 'Am häufigsten: *chs* und *x*. Diese Wörter musst du dir merken.', 'Bei *cks* und *gs* hilft das verwandte Wort: Trick, Tricks · Weg, unterwegs.'], b: 'Fuchs, sechs, wachsen · Hexe, Taxi, Text · Keks, links' },
   vkes: { t: 'So geht der Vokabelkasten', e: ['Jede Vokabel ist eine Karte. Neue Karten kommen in Fach 1.', '*Richtig*: Die Karte wandert ein Fach weiter und kommt später wieder.', '*Falsch*: Die Karte geht zurück in Fach 1.', 'Fach 1 kommt jeden Tag, Fach 5 erst nach 16 Tagen. Danach hast du das Wort sicher gelernt.'], b: '' }
 };
 EK.vken = EK.vkes;
