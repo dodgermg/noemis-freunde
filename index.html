@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-YbR33p5/M30dL2Ydifcn34/xlFlypnZjzUxWvrJR2U4=' 'sha256-WkuI2i5kIW+VFTEmT6dgiiUTlhE3emzV8ptWEIqC0GU=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-X9gbcKYeyD7qfjMbC1/YjheyXNCANNg3vgb+eqGCNLI=' 'sha256-9spKaVwbwe2Hi4nWl9h42ngJzP+YavEZKF1RZeHnaww=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -6375,6 +6375,13 @@ body.calm .weg-st .weg-n, body.calm .weg-st .weg-i { animation: none !important;
 .sx-st.ende { background: #fff1c2; color: #12324A; }
 @media (max-width: 820px) { .sx-main { grid-template-columns: minmax(0, min(560px, calc(100vh - 150px))); } .sx-arten { grid-template-columns: minmax(0, 1fr); } .sx-art { flex-direction: row; text-align: left; gap: 12px; } .sx-art small { flex: 1; } }
 
+.st-pkt { font-weight: 800; font-size: 17px; color: var(--ink); align-self: center; }
+
+.fmem[data-c="5"] { grid-template-columns: repeat(5, var(--cs, 80px)); }
+.pz-board.n4 .pz-t { width: 25%; height: 25%; left: calc(var(--c, 0) * 25%); top: calc(var(--r, 0) * 25%); }
+.vcell.last { outline: 3px solid #12324A; outline-offset: -3px; }
+#pzstop { margin-top: 8px; }
+
 /* ---- style_pa.css ---- */
 
 .pa { min-height: 100vh; }
@@ -8633,8 +8640,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '2.69.0';
-  var MAP = {"probe":0,"files":[[8623,"fehler_kern.js"],[8911,null],[8913,"data.js"],[9608,"data_more.js"],[9965,"data_su2.js"],[10192,"data_es.js"],[10534,"data_wissen.js"],[10733,"data_v21.js"],[11416,"data_v24.js"],[11902,"data_v25.js"],[12383,"data_v26.js"],[12482,"data_v29.js"],[12787,"data_v30.js"],[13116,"data_v31.js"],[13422,"data_kunst.js"],[13618,"data_v214.js"],[13721,"data_v216.js"],[14014,"schrift.js"],[14314,"eingabe.js"],[14525,"data_k34m.js"],[15043,"data_k34d.js"],[15397,"data_k34s.js"],[15851,"data_v224.js"],[16724,"data_v225w.js"],[17093,"data_v225k.js"],[17537,"data_herz.js"],[17891,"data_fb226.js"],[18034,"data_tf226.js"],[18241,"data_v227a.js"],[19332,"data_v227b.js"],[20286,"data_h28b.js"],[20326,"data_l28a.js"],[21192,"data_l28b.js"],[22372,"data_schaetz.js"],[22854,"data_party8.js"],[22904,"data_alce.js"],[23564,"data_alce2.js"],[23813,"data_alce3.js"],[24228,"registry.js"],[24742,"app.js"],[25899,"fun.js"],[26479,"fun2.js"],[26795,"atelier.js"],[27169,"kunst225.js"],[27359,"herz.js"],[27723,"reise.js"],[28025,"iglu.js"],[28191,"offline.js"],[28298,"party.js"],[28782,"meine.js"],[29138,"loeffel.js"],[29309,"trend.js"],[29851,"fun228a.js"],[30702,"fun228b.js"],[31363,"kueche.js"],[32402,"stimme.js"],[32457,"klassen.js"],[32606,"freunde_vorab.js"],[32627,"mut.js"],[33049,"schule.js"],[33538,"fussball226.js"],[33860,"schaetzen.js"],[34291,"party8.js"],[34910,"tiere.js"],[35369,"fussball232.js"],[35584,"party8b.js"],[35886,"weg.js"],[36106,"px.js"],[36517,"px_data.js"],[36774,"pxwelt.js"],[36855,"px_abenteuer.js"],[37656,"px_abenteuer2.js"],[38405,"px_ski.js"],[39047,"px_wurf.js"],[39576,"px_insel.js"],[40777,"px_kicker.js"],[41712,"px_eis.js"],[42698,"px_run.js"],[43913,"px_brk.js"],[44875,"px_pol.js"],[46226,"px_frog.js"],[47486,"px_angel.js"],[48801,"px_golf.js"],[49835,"px_tauch.js"],[51100,"px_hockey.js"],[52056,"px_lab.js"],[53391,"px_plopp.js"],[54597,"px_stadion.js"],[56101,"px_training.js"],[56470,"cm.js"],[56960,"cmwelt.js"],[57016,"cm_baeck.js"],[57809,"cm_bahn.js"],[58573,"cm_detek.js"],[59290,"cm_markt.js"],[60003,"ff.js"],[60160,"ff_mathe.js"],[62150,"ff_deutsch.js"],[63738,"ff_sach_a.js"],[65987,"ff_sach_b.js"],[68216,"ff_sprachen.js"],[70624,"zm.js"],[71537,"tt.js"],[71750,"data_tagebuch.js"],[71793,"data_hoerspiel.js"],[71952,"leseecke.js"],[72271,"kt.js"],[72574,"comicbuch.js"],[72852,"alce.js"],[73015,"alce_aufg.js"],[73185,"formen.js"],[73636,"data_formen.js"],[73877,"data_formen2.js"],[74099,"spielzeit.js"],[74244,"data_faktmeinung.js"],[74363,"data_es248.js"],[74627,"data_en249.js"],[74866,"data_wissen249.js"],[75297,"data_kunst249.js"],[75580,"data_fussball250.js"],[75704,"data_werte252.js"],[75957,"data_lesen252.js"],[76018,"data_k34_252.js"],[76104,"art254.js"],[76222,"data_werte255.js"],[76360,"data_lesen255.js"],[76496,"forscher255.js"],[76644,"zufall250.js"],[76690,"stufe259.js"],[76700,"advent.js"],[76963,"wdh.js"],[77061,"denk.js"],[77098,"data_viaje265.js"],[77241,"klassenarbeit.js"],[77374,"quizduell.js"],[77497,"neu267.js"],[77762,"prog.js"],[77867,"lernstand.js"],[77934,"blatt.js"],[78036,"plus269.js"],[78130,"schach.js"],[78357,"lumi_live.js"],[78473,"sicher.js"],[78657,"stil.js"],[78711,"freunde.js"],[78848,"start.js"],[78858,null],[78868,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '2.70.0';
+  var MAP = {"probe":0,"files":[[8630,"fehler_kern.js"],[8918,null],[8920,"data.js"],[9615,"data_more.js"],[9972,"data_su2.js"],[10199,"data_es.js"],[10541,"data_wissen.js"],[10740,"data_v21.js"],[11423,"data_v24.js"],[11909,"data_v25.js"],[12390,"data_v26.js"],[12489,"data_v29.js"],[12794,"data_v30.js"],[13123,"data_v31.js"],[13429,"data_kunst.js"],[13625,"data_v214.js"],[13728,"data_v216.js"],[14021,"schrift.js"],[14321,"eingabe.js"],[14532,"data_k34m.js"],[15050,"data_k34d.js"],[15404,"data_k34s.js"],[15858,"data_v224.js"],[16731,"data_v225w.js"],[17100,"data_v225k.js"],[17544,"data_herz.js"],[17898,"data_fb226.js"],[18041,"data_tf226.js"],[18248,"data_v227a.js"],[19339,"data_v227b.js"],[20293,"data_h28b.js"],[20333,"data_l28a.js"],[21199,"data_l28b.js"],[22379,"data_schaetz.js"],[22861,"data_party8.js"],[22911,"data_alce.js"],[23571,"data_alce2.js"],[23820,"data_alce3.js"],[24235,"registry.js"],[24749,"app.js"],[25907,"fun.js"],[26487,"fun2.js"],[26803,"atelier.js"],[27177,"kunst225.js"],[27367,"herz.js"],[27731,"reise.js"],[28033,"iglu.js"],[28199,"offline.js"],[28306,"party.js"],[28790,"meine.js"],[29146,"loeffel.js"],[29317,"trend.js"],[29859,"fun228a.js"],[30710,"fun228b.js"],[31371,"kueche.js"],[32410,"stimme.js"],[32465,"klassen.js"],[32614,"freunde_vorab.js"],[32635,"mut.js"],[33057,"schule.js"],[33546,"fussball226.js"],[33868,"schaetzen.js"],[34299,"party8.js"],[34918,"tiere.js"],[35377,"fussball232.js"],[35592,"party8b.js"],[35894,"weg.js"],[36114,"px.js"],[36525,"px_data.js"],[36782,"pxwelt.js"],[36863,"px_abenteuer.js"],[37664,"px_abenteuer2.js"],[38413,"px_ski.js"],[39055,"px_wurf.js"],[39584,"px_insel.js"],[40785,"px_kicker.js"],[41720,"px_eis.js"],[42706,"px_run.js"],[43921,"px_brk.js"],[44883,"px_pol.js"],[46234,"px_frog.js"],[47494,"px_angel.js"],[48809,"px_golf.js"],[49843,"px_tauch.js"],[51108,"px_hockey.js"],[52064,"px_lab.js"],[53399,"px_plopp.js"],[54605,"px_stadion.js"],[56109,"px_training.js"],[56478,"cm.js"],[56968,"cmwelt.js"],[57024,"cm_baeck.js"],[57817,"cm_bahn.js"],[58581,"cm_detek.js"],[59298,"cm_markt.js"],[60011,"ff.js"],[60168,"ff_mathe.js"],[62158,"ff_deutsch.js"],[63746,"ff_sach_a.js"],[65995,"ff_sach_b.js"],[68224,"ff_sprachen.js"],[70632,"zm.js"],[71545,"tt.js"],[71758,"data_tagebuch.js"],[71801,"data_hoerspiel.js"],[71960,"leseecke.js"],[72279,"kt.js"],[72582,"comicbuch.js"],[72860,"alce.js"],[73023,"alce_aufg.js"],[73193,"formen.js"],[73644,"data_formen.js"],[73885,"data_formen2.js"],[74107,"spielzeit.js"],[74252,"data_faktmeinung.js"],[74371,"data_es248.js"],[74635,"data_en249.js"],[74874,"data_wissen249.js"],[75305,"data_kunst249.js"],[75588,"data_fussball250.js"],[75712,"data_werte252.js"],[75965,"data_lesen252.js"],[76026,"data_k34_252.js"],[76112,"art254.js"],[76230,"data_werte255.js"],[76368,"data_lesen255.js"],[76504,"forscher255.js"],[76652,"zufall250.js"],[76698,"stufe259.js"],[76708,"advent.js"],[76971,"wdh.js"],[77069,"denk.js"],[77106,"data_viaje265.js"],[77249,"klassenarbeit.js"],[77382,"quizduell.js"],[77505,"neu267.js"],[77770,"prog.js"],[77875,"lernstand.js"],[77942,"blatt.js"],[78044,"plus269.js"],[78138,"schach.js"],[78365,"schachtaktik.js"],[78536,"fun270.js"],[78699,"lumi_live.js"],[78815,"sicher.js"],[78999,"stil.js"],[79053,"freunde.js"],[79190,"start.js"],[79200,null],[79210,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -24743,9 +24750,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '2.69.0';
+const APP_VERSION = '2.70.0';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "2.70.0", d: "12.11.2026", t: ["Neu bei „Rätsel & Denk-Spiele“: Schach-Taktik mit 165 Aufgaben. Gabeln finden, Matt in 1 und Matt in 2", "Spielhalle: Pinguin-Memory mit drei Runden und Serien-Bonus, Schiebe-Puzzle mit zweiter Stufe (16 Felder), Vier gewinnt mit der neuen Stufe „Profi“, Fisch-Schnapper mit Fang-Serie"] },
   { v: "2.69.0", d: "11.11.2026", t: ["Deutsch und Spanisch: 22 Spiele zeigen ab Stufe 2 vier Antworten statt drei. Dafür haben 435 Aufgaben eine dritte falsche Antwort bekommen, die zum Thema passt. Stufe 1 bleibt bei drei Antworten", "Neu bei „Rätsel & Denk-Spiele“: Schach gegen Lumi. Drei Spielarten (Bauernrennen, Mini-Schach und echtes Schach), gegen Lumi in zwei Stärken oder zu zweit. Mit allen Regeln, Tipp-Knopf und „Zug zurück“"] },
   { v: "2.68.0", d: "11.11.2026", t: ["Neu im Elternbereich: Lernstand. Eine Ampel zeigt für jede Welt und jedes Thema, was sitzt, was läuft und was noch wackelt. Aus den wackligen Spielen lässt sich direkt eine Übungsrunde starten", "Neu im Elternbereich: Arbeitsblatt drucken. Aus Themen oder aus den offenen Fehlern entsteht ein Blatt zum Ausdrucken, auf Wunsch mit Lösungsseite", "Neues Spiel in Mathe bei „Formen & Raum“: Lumi programmieren. Befehle in ein Programm legen und Lumi zum Fisch steuern, auf Stufe 3 mit Wiederholungen"] },
   { v: "2.67.0", d: "11.11.2026", t: ["Neu: Logik-Bilder bei „Rätsel & Denk-Spiele“. Kästchen nach Zahlen ausmalen, bis ein Bild entsteht. 60 Bilder in drei Größen", "Neu: Schatzsuche in Mathe bei „Formen & Raum“. Buchstabe und Zahl wählen und bei Feldern wie B4 graben. Dazu das Schatz-Duell gegen Lumi oder zu zweit, auch bei den Party-Spielen", "Neu: Wörter raten in Deutsch, Englisch und Spanisch. Bei jedem falschen Buchstaben platzt ein Luftballon", "Neu: Wörtersuche als eigenes Spiel in Deutsch, Englisch und Spanisch, mit größeren Gittern auf Stufe 2 und 3", "Sprachwelten: 164 neue Aufgaben für 20 Grammatik-, Lese- und Rechtschreibspiele, darunter vier neue Lesetexte"] },
@@ -78353,6 +78361,340 @@ Object.assign(ACT, {
   }
 });
 GAMES.schachlumi = { id: 'schachlumi', w: 'meine', g: 'n-raetsel', t: 'Schach gegen Lumi', d: 'Bauernrennen, Mini-Schach und echtes Schach', i: '♞', type: 'custom', run: g0 => sxStart(g0) };
+
+/*@@src schachtaktik.js@@*/
+
+
+
+
+
+
+
+function stGabelZiele(S2, sq) {
+  const n = S2.n, fig = S2.b[sq], wert = SX_WERT[fig.toLowerCase()], ziele = [];
+  if (sxAtt(S2, sq, false)) return [];
+  for (let i = 0; i < n * n; i++) {
+    const p = S2.b[i]; if (p === '' || sxW(p) || p === 'p') continue;
+    const allein = { v: S2.v, n, b: S2.b.map((x, k) => (k === sq || k === i ? x : (x !== '' && sxW(x) ? '' : x))), w: true, ep: -1, cas: '' };
+    if (!sxAtt(allein, i, true)) continue;
+    if (p === 'k' || SX_WERT[p] > wert || !sxAtt(S2, i, false)) ziele.push(i);
+  }
+  return ziele.length >= 2 ? ziele : [];
+}
+const stGabel = (S, m) => { const t = S.b[m.f].toLowerCase(); if (t === 'k' || S.b[m.t] !== '') return []; return stGabelZiele(sxMake(S, m), m.t); };
+const stIstMatt = S2 => { const e = sxEnde(S2, 0); return !!e && e.art === 'matt'; };
+const stMatt1 = S => sxLegal(S).filter(m => stIstMatt(sxMake(S, m)));
+
+function stMatt2(S) {
+  return sxLegal(S).filter(m => { const A = sxMake(S, m), antw = sxLegal(A); if (!antw.length) return false; return antw.every(r => stMatt1(sxMake(A, r)).length > 0); });
+}
+function stFenOut(S) {
+  let s = ''; for (let y = 0; y < 8; y++) { let leer = 0; for (let x = 0; x < 8; x++) { const p = S.b[y * 8 + x]; if (p === '') leer++; else { if (leer) { s += leer; leer = 0; } s += p; } } if (leer) s += leer; if (y < 7) s += '/'; }
+  return s + ' w - -';
+}
+
+const ST_DATA = {
+  gabel: [
+    'K7/7k/1Q6/6r1/5p2/8/2b5/8', '8/8/3K4/7Q/8/1pk5/8/4br2', '8/4K3/1q3r2/2N5/1k6/8/8/8', '8/7n/3r4/8/Q5K1/8/8/5k2',
+    '8/8/7r/3N4/2k5/6K1/8/3r4', '8/r1N5/4Kp2/8/7k/2q5/8/8', '4r3/4q3/8/1K6/5k1N/8/8/8', '2Q5/8/6pk/3b4/r7/7K/8/8',
+    '7K/8/1k6/2N3r1/8/8/3r4/8', '3K4/3p4/8/5b2/8/1R6/8/5k1n', '2b2k2/8/8/3R4/2K1p3/7n/8/8', '4q3/7k/8/8/6N1/5K2/8/2r5',
+    '8/1rN3k1/8/6r1/8/7K/8/8', '5N2/8/8/N5q1/3k4/8/4p1r1/K7', '3K4/8/7r/8/1r6/8/1k3N2/8', 'r7/6Q1/8/2K5/5p2/3k4/8/1b6',
+    '6K1/8/7r/8/r3N3/1k6/8/8', '2n5/2r4k/8/8/5K2/8/3Q4/8', '8/8/8/K3N3/8/8/3r3r/2k5', '8/2n5/1k3r2/8/8/6K1/6Q1/8',
+    '8/2N3k1/8/2K5/5b2/8/1P2p1r1/8', '2r5/2k2n2/K7/8/8/8/8/4Q3', '8/1k6/2r5/1q6/7p/8/1NN5/1K6', '8/3K2N1/k7/4r3/7q/p7/8/6N1',
+    '1N6/r7/8/8/1k6/7K/5q2/8', '2q5/8/8/6K1/4r3/8/4k3/5N2', '1r6/8/K7/1p6/8/6n1/3B4/k7', '8/r7/r2k4/8/8/2N2K2/8/8',
+    '4N1k1/8/8/2p3q1/8/2N5/3r4/7K', '3b4/4k1p1/8/8/2Q5/8/3K4/1r6', '6b1/1pk3r1/8/2K5/8/8/8/2Q5', '8/p5K1/q7/8/1k6/r7/8/N1N5',
+    'n7/8/2kr4/7Q/1K6/8/8/8', '2K4b/4R3/8/5p1k/8/8/8/3n4', '4k3/1r6/8/8/5Q2/1n6/K7/8', '8/6K1/8/8/Q7/8/8/1k2r2n',
+    '2r5/8/8/8/2k1K1N1/8/8/5r2', '8/3K1k2/7Q/5r2/8/8/8/3n4', '2K5/8/8/5r2/8/k7/4N3/7r', '8/5b2/2r2k2/2p5/K7/6Q1/8/8',
+    'r7/4k1N1/8/8/8/6r1/1K6/8', '8/8/8/8/8/4r3/kN3r2/2K5', 'K1n5/b7/7p/8/6R1/8/8/2k5', '8/pr4N1/8/2k5/3q4/N5K1/8/8',
+    '6N1/5b2/3P4/1K6/p5r1/8/3k4/8', '8/8/8/1n1p3B/8/3K4/7k/5r2', '3n4/8/5K2/2q3N1/8/2kp2p1/8/8', '4K3/8/3q3N/8/8/4k3/8/2r5',
+    '8/8/8/6r1/6r1/5K1k/8/3N4', '8/8/8/5kN1/4N3/4K3/rp6/3q4', '3K4/8/3N4/8/r2k3r/8/8/8', '8/4k3/4N3/1r1q4/2p5/8/8/5K2',
+    '8/8/6k1/n7/8/2K4Q/r7/8', 'q7/8/8/8/3K4/8/k3N3/1r6', '6r1/2k5/8/2r5/1N6/8/4K3/8', '2n5/7K/8/2r3k1/8/3Q4/8/8',
+    '1Q6/8/5b2/6rp/2K5/8/8/2k5', '6r1/6n1/8/7Q/4K3/8/6k1/8', '8/6q1/4p3/4N3/8/4K3/8/1Nr1k3', '8/8/2KN4/8/8/6r1/r4k2/8'
+  ],
+  matt1: [
+    '8/6p1/6K1/2Q5/4N3/8/4p3/5k2', '8/8/7K/1N6/1p6/7Q/7p/7k', '6k1/2R4p/8/1K1R4/8/8/8/8', '8/8/5p2/2N5/2Q2K2/k7/7p/8',
+    '8/8/6R1/3R4/8/8/8/K6k', '2k5/6R1/8/8/4R3/8/8/1K6', '8/8/8/1Q6/p1K5/N3p3/8/k7', '8/6Q1/K7/8/R7/8/7k/8',
+    '2K5/6R1/8/8/8/5R2/8/7k', '5R2/5KQ1/8/8/7k/8/8/8', '5k2/3R4/8/8/R7/8/8/2K5', '8/2K5/2Q5/k5N1/p5p1/8/8/8',
+    '7K/8/5R2/8/8/8/6Q1/4k3', '8/8/8/8/7Q/K7/4R3/3k4', '8/8/8/8/8/3RK3/5Q2/7k', '8/8/3p4/8/5p2/2K5/1Q6/3k4',
+    '8/8/8/1R6/8/k7/6R1/K7', '7k/3Q4/8/5N2/8/1p2K3/6p1/8', '8/8/6R1/8/p4K2/7k/2R5/8', '8/8/8/8/8/8/7Q/k1K5',
+    '8/p7/kp1NQ3/8/7K/8/8/8', '7K/8/8/8/2R5/8/4R3/k7', '8/8/8/8/2p1R3/8/5R2/3K3k', '7k/4N3/8/2p4K/8/5p2/7R/8',
+    '8/8/8/8/5R2/1K6/1Q6/3k4', 'k7/6K1/1R6/4p3/8/8/7R/8', '8/8/8/8/6p1/3p4/5K2/4QN1k', '8/8/k7/8/8/2Q3K1/1R6/8',
+    '8/8/1R6/8/3K4/k7/8/3R4', '8/8/8/4pK1k/4R3/5R2/8/8', '8/8/8/8/3Q4/7k/8/1K4R1', '2R5/K7/8/8/8/4p3/3R4/6k1',
+    '1R6/8/4R1p1/8/k2K4/8/8/8', '8/8/8/8/2R5/K7/2R5/1k6', '8/8/6Q1/8/8/K7/8/k7', 'k7/4p3/8/1R6/7K/3R4/8/8',
+    '3R4/8/k1p5/8/1R6/6K1/8/8', '8/8/7p/k1K5/2p1N3/8/3R4/8', '8/8/8/8/5p2/2K4p/3Q4/k7', '8/8/8/8/2p5/8/5Qnk/3B1K2',
+    '8/p7/2K5/8/8/2Q5/N3p3/3k4', '4Q3/8/8/8/8/6K1/3R4/1k6', 'K7/8/8/1R6/8/k7/5Q2/8', '7k/8/8/8/4R3/6R1/5K2/8',
+    '8/K7/8/4R3/1Q6/8/8/k7', '8/7p/8/8/5NQ1/3p4/1K6/7k', '8/8/4Q3/8/6R1/8/K6k/8', '3K1k2/2R5/8/p7/8/8/8/4R3',
+    '8/k7/8/5K2/6R1/8/8/1Q6', '2k5/4K3/8/8/3R4/1Q6/8/8', '8/8/8/8/8/K7/6Q1/1k6', '3k4/2R3R1/3K4/8/7p/8/8/8',
+    '8/1R6/5R2/2K5/8/8/k7/8', '2K5/k7/6R1/8/8/6R1/8/8', '3K4/2R1p3/8/8/8/8/5R2/7k', '8/8/8/7p/2Q5/1K2p3/8/1k6',
+    '5k2/8/p5Q1/4N3/8/K7/4p3/8', '1K6/8/7p/8/4N3/8/4Q2p/7k', '7k/R7/8/6K1/5R2/8/8/8', '6n1/8/8/8/1p6/8/2BK1Q2/7k'
+  ],
+  matt2: [
+    '8/8/8/8/8/7K/7Q/5k2', '8/8/8/5R1K/Q7/8/8/7k', '6k1/8/8/2R5/7R/8/8/4K3', '8/8/R5R1/n5K1/8/8/8/k7',
+    '8/8/4Q3/8/K6k/3p4/3R4/8', '8/k7/4R3/8/4R3/5K2/8/8', '8/4R3/1R6/k7/6K1/8/8/8', '8/8/p7/8/5K2/4Q3/7P/7k',
+    '7k/8/3R4/8/1K6/8/8/5Q2', '8/6p1/8/8/1Q1K4/8/8/k7', '8/6Q1/8/8/7B/4p3/4K2k/8', '5k2/2R5/8/8/2p5/4R3/7K/8',
+    '2K3k1/8/5R2/R7/8/8/8/8', '8/3K4/8/Q7/8/8/p7/k4B2', '8/8/5R2/k7/8/8/8/2RK4', '8/8/4K3/7k/Q7/8/8/8',
+    '7Q/8/8/8/8/3KP3/p7/1k6', '8/8/1Q6/8/P1K5/p7/8/k7', '8/5R2/6K1/R7/8/8/8/7k', '8/8/8/8/2K4k/5R2/4Q3/8',
+    '8/8/8/8/6pK/8/3Q4/6k1', '8/8/8/8/8/1p2Q3/k7/3R2K1', '6N1/8/6K1/8/8/p7/5Q2/k7', '8/8/8/4R3/1K6/8/R6p/1k6',
+    '5k2/8/6K1/8/3pQ3/8/8/8', '5k2/8/8/8/8/4K1R1/2R5/8', '8/8/8/4R3/7k/2Q4p/8/1K6', '8/3K4/8/6Q1/8/8/1p6/6Bk',
+    '8/k7/4Q3/N7/2p5/8/7K/8', '6K1/6p1/8/8/8/8/5QN1/3k4', '8/8/2R1Q3/7K/8/8/8/k7', '5R2/7K/8/8/8/3R4/8/6k1',
+    'K7/8/7k/8/2p1B3/8/4Q3/8', '8/8/8/8/2R5/2pK4/3R4/k7', '6R1/3p4/8/3K4/1R6/7k/8/8', '8/5p2/5K2/2Q5/k7/8/B7/8',
+    '5k2/3Q4/7p/8/4BK2/8/8/8', '1k6/2R5/8/8/8/8/3R4/3K4', '8/4K3/7k/8/8/8/8/6Q1', '8/8/8/7Q/3K2N1/2p5/8/6k1',
+    'k7/8/8/K7/2Q5/8/8/8', 'k7/4K3/8/1Q2p3/B7/8/8/8', '8/2p5/k7/8/1Q6/3K4/8/7B', '8/8/8/2BQ4/k2p4/3K4/8/8',
+    '8/8/8/3K4/6RQ/8/8/5k2'
+  ]
+};
+
+
+const ST_ART = { gabel: ['Gabeln', '🍴', 'Finde den Zug, der zwei Figuren gleichzeitig angreift.'], matt1: ['Matt in 1', '♚', 'Ein einziger Zug setzt den schwarzen König matt.'], matt2: ['Matt in 2', '♛', 'Zwei Züge bis zum Matt. Schwarz wehrt sich dazwischen.'] };
+const ST_N = 5;
+let ST = null;
+function stStart(g0) {
+  ST = { g: g0, phase: 'wahl', art: (S.st && S.st.art) || 'gabel', i: 0, ok: 0, bad: 0, fehlerGes: 0, liste: [], st: null, st0: null, sel: -1, ziele: [], last: null, mark: [], schritt: 1, fehler: 0, fertig: 0, geloest: 0, busy: 0, msg: '', timer: 0 };
+  g0.cleanup = () => { if (ST) { clearTimeout(ST.timer); ST = null; } };
+  stDraw();
+}
+function stLos() {
+  S.st = { art: ST.art }; save();
+  Object.assign(ST, { phase: 'spiel', i: 0, ok: 0, bad: 0, fehlerGes: 0, liste: R.sample(ST_DATA[ST.art], ST_N) });
+  stLaden();
+}
+function stLaden() {
+  const st = sxFen(ST.liste[ST.i] + ' w - -');
+  Object.assign(ST, { st, st0: st, sel: -1, ziele: [], last: null, mark: [], schritt: 1, fehler: 0, fertig: 0, geloest: 0, busy: 0, msg: '' });
+  stDraw();
+}
+const stAuftrag = () => ST.art === 'gabel' ? 'Weiß ist am Zug. Finde die Gabel: Greife mit einem Zug zwei Figuren an.' : ST.art === 'matt1' ? 'Weiß ist am Zug. Setze den schwarzen König mit einem Zug matt.' : ST.schritt === 1 ? 'Weiß ist am Zug. Matt in 2: Finde den ersten Zug.' : 'Jetzt der zweite Zug: Setze matt!';
+function stDraw() {
+  if (!ST) return;
+  if (ST.phase === 'wahl') {
+    return setView(`<div class="game sx-game" id="stRoot"><header class="wrap gamebar"><button class="icon-btn" data-act="quit" aria-label="Spiel beenden">✕</button><div class="sx-kopf">Schach-Taktik</div></header>
+      <main class="wrap sx-wahl"><section class="card"><h2>Was möchtest du üben?</h2>
+        <div class="sx-arten">${Object.keys(ST_ART).map(k => `<button class="sx-art ${ST.art === k ? 'sel' : ''}" data-act="stwahl" data-v="${k}" aria-pressed="${ST.art === k}"><span class="sx-fig" aria-hidden="true">${ST_ART[k][1]}︎</span><b>${ST_ART[k][0]}</b><small>${ST_ART[k][2]}</small></button>`).join('')}</div>
+        <div class="acts"><button class="btn" data-act="stlos">Los geht's</button></div>
+        <p class="muted">Eine Runde hat ${ST_N} Aufgaben. Du spielst immer Weiß. Eine Gabel ist ein Zug, nach dem eine Figur zwei gegnerische Figuren gleichzeitig angreift und selbst nicht geschlagen werden kann.</p></section></main></div>`, 'meine');
+  }
+  const st = ST.st, n = 8, schachFeld = sxImSchach(st, st.w) ? sxKoenig(st, st.w) : -1; let h = '';
+  for (let i = 0; i < 64; i++) {
+    const p = st.b[i], x = i % n, y = i >> 3, ziel = ST.ziele.find(m => m.t === i);
+    const cls = ['sx-q', (x + y) % 2 ? 'du' : 'he', ST.sel === i ? 'sel' : '', ziel ? (p !== '' ? 'schlag' : 'ziel') : '', ST.last && (ST.last.f === i || ST.last.t === i) ? 'last' : '', ST.mark.includes(i) ? 'tipp' : '', schachFeld === i ? 'schach' : ''].filter(Boolean).join(' ');
+    h += `<button class="${cls}" data-act="stq" data-i="${i}" aria-label="${sxFeldName(st, i)}${p ? ', ' + (sxW(p) ? 'weiß: ' : 'schwarz: ') + SX_NAME[p.toLowerCase()] : ''}"${ST.fertig || ST.busy ? ' disabled' : ''}>${p ? `<span class="sx-p ${sxW(p) ? 'w' : 's'}">${SX_BILD[p.toLowerCase()]}︎</span>` : ''}${x === 0 ? `<i class="sx-r">${8 - y}</i>` : ''}${y === 7 ? `<i class="sx-l">${'abcdefgh'[x]}</i>` : ''}</button>`;
+  }
+  setView(`<div class="game sx-game" id="stRoot"><header class="wrap gamebar"><button class="icon-btn" data-act="quit" aria-label="Spiel beenden">✕</button><div class="sx-kopf">${ST_ART[ST.art][0]} · Aufgabe ${ST.i + 1} von ${ST_N}</div></header>
+    <main class="wrap sx-main"><div class="sx-brett" style="--n:8">${h}</div>
+      <div class="sx-side"><p class="sx-st${ST.fertig ? ' ende' : ''}" aria-live="polite">${esc(ST.fertig ? (ST.geloest ? 'Gelöst! 🎉' : 'Das war die Lösung.') : stAuftrag())}</p>
+        ${ST.fertig ? `<div class="sp-tools"><button class="btn" data-act="stweiter">${ST.i + 1 < ST_N ? 'Nächste Aufgabe' : 'Fertig'}</button></div>`
+          : `<div class="sp-tools">${ST.fehler >= 2 ? `<button class="btn ghost sm" data-act="stsol"${ST.busy ? ' disabled' : ''}>Lösung zeigen</button>` : ''}<span class="st-pkt">✅ ${ST.ok} · ❌ ${ST.bad}</span></div>`}
+        <p class="e7-msg" aria-live="polite">${esc(ST.msg)}</p></div></main></div>`, 'meine');
+}
+const stNamen = (S0, felder) => { const a = felder.map(i => SX_NAME[S0.b[i].toLowerCase()]); return a.length > 1 ? a.slice(0, -1).join(', ') + ' und ' + a[a.length - 1] : a[0]; };
+function stFertig(geloest) { ST.fertig = 1; ST.geloest = geloest ? 1 : 0; if (geloest && !ST.zeig) ST.ok++; else ST.bad++; if (geloest) { try { Sound.good(); } catch (e) { } } stDraw(); }
+function stFalsch(txt) { ST.fehler++; ST.fehlerGes++; ST.sel = -1; ST.ziele = []; ST.msg = txt; Sound.bad(); stDraw(); }
+function stZiehen(m) {
+  const vor = ST.st, nach = sxMake(vor, m);
+  if (ST.art === 'gabel') {
+    const z = stGabel(vor, m); if (!z.length) return stFalsch('Das ist noch keine Gabel. Suche einen Zug, der zwei Figuren gleichzeitig angreift und bei dem deine Figur sicher steht.');
+    ST.st = nach; ST.last = m; ST.sel = -1; ST.ziele = []; ST.mark = z; ST.msg = `Gabel! ${SX_NAME[nach.b[m.t].toLowerCase()]} greift ${stNamen(nach, z)} gleichzeitig an. Eine der Figuren geht verloren.`; return stFertig(true);
+  }
+  if (ST.art === 'matt1' || ST.schritt === 2) {
+    if (!stIstMatt(nach)) return stFalsch(sxImSchach(nach, false) ? 'Das ist Schach, aber noch kein Matt. Der König kann entkommen oder die Figur wird geschlagen.' : 'Das ist kein Matt. Der König muss im Schach stehen und darf nicht mehr entkommen können.');
+    ST.st = nach; ST.last = m; ST.sel = -1; ST.ziele = []; ST.msg = 'Schachmatt! Der König steht im Schach und kann nirgends mehr hin.'; return stFertig(true);
+  }
+  const antw = sxLegal(nach);
+  if (stIstMatt(nach)) { ST.st = nach; ST.last = m; ST.msg = 'Schachmatt, sogar schon mit dem ersten Zug!'; return stFertig(true); }
+  if (!antw.length || !antw.every(r => stMatt1(sxMake(nach, r)).length > 0)) return stFalsch(!antw.length ? 'Vorsicht, das wäre Patt: Schwarz könnte nicht mehr ziehen, steht aber nicht im Schach.' : 'Danach kann Schwarz noch entkommen. Suche einen Zug, der dem König alle Auswege nimmt.');
+  ST.st = nach; ST.last = m; ST.sel = -1; ST.ziele = []; ST.busy = 1; ST.msg = 'Guter erster Zug! Schwarz zieht …'; Sound.tap(); stDraw();
+  const mein = ST;
+  ST.timer = setTimeout(() => { if (ST !== mein) return; const r = R.pick(antw); ST.st = sxMake(nach, r); ST.last = r; ST.st1 = ST.st; ST.schritt = 2; ST.busy = 0; ST.msg = `Schwarz zieht: ${SX_NAME[nach.b[r.f].toLowerCase()]} von ${sxFeldName(nach, r.f)} nach ${sxFeldName(nach, r.t)}.`; stDraw(); }, typeof window !== 'undefined' && window.LW_FX_AUS ? 30 : 800);
+}
+function stLoesung() {
+  const S0 = ST.st, zug = ST.art === 'gabel' ? sxLegal(S0).find(m => stGabel(S0, m).length) : ST.art === 'matt1' || ST.schritt === 2 ? stMatt1(S0)[0] : stMatt2(S0)[0];
+  if (!zug) return;
+  ST.zeig = 1; ST.sel = -1; ST.ziele = []; ST.mark = [zug.f, zug.t];
+  ST.msg = `Lösung: ${SX_NAME[S0.b[zug.f].toLowerCase()]} von ${sxFeldName(S0, zug.f)} nach ${sxFeldName(S0, zug.t)}.` + (ST.art === 'matt2' && ST.schritt === 1 ? ' Danach setzt Weiß im nächsten Zug matt.' : '');
+  stFertig(false);
+}
+Object.assign(ACT, {
+  stwahl: t => { if (!ST) return; ST.art = t.dataset.v; stDraw(); },
+  stlos: () => { if (ST) stLos(); },
+  stq: t => {
+    if (!ST || ST.phase !== 'spiel' || ST.fertig || ST.busy) return;
+    const i = Number(t.dataset.i), st = ST.st, zug = ST.ziele.find(m => m.t === i);
+    if (ST.sel >= 0 && zug) return stZiehen(zug);
+    const p = st.b[i];
+    if (p !== '' && sxW(p)) { ST.sel = i; ST.ziele = sxLegal(st).filter(m => m.f === i); ST.msg = ST.ziele.length ? '' : 'Diese Figur kann gerade nicht ziehen.'; Sound.tap(); } else { ST.sel = -1; ST.ziele = []; }
+    stDraw();
+  },
+  stsol: () => { if (ST && ST.phase === 'spiel' && !ST.fertig && !ST.busy) stLoesung(); },
+  stweiter: () => {
+    if (!ST || !ST.fertig) return; ST.zeig = 0;
+    if (ST.i + 1 < ST_N) { ST.i++; return stLaden(); }
+    customFinish(ST.ok, ST.bad, ST.bad === 0 && ST.fehlerGes <= 1 ? 3 : ST.ok >= 3 ? 2 : 1);
+  }
+});
+GAMES.schachtaktik = { id: 'schachtaktik', w: 'meine', g: 'n-raetsel', t: 'Schach-Taktik', d: 'Gabeln finden, Matt in 1 und Matt in 2', i: '♛', type: 'custom', run: g0 => stStart(g0) };
+
+/*@@src fun270.js@@*/
+
+
+
+
+
+
+
+function funMemory2(stage) {
+  const ALLE = ['🐟', '🐳', '🦭', '🐙', '🦀', '🐠', '❄️', '🐻‍❄️', '🦑', '⛄', '🧊', '🐡', '🦈', '🐚', '⭐'], RUNDEN = [[4, 3], [4, 4], [5, 4]];
+  let runde = 0, total = 0, zuege = 0, serie = 0, beste = 0;
+  const fit = () => { const g = stage.firstChild; if (!g) return; const [c, r] = RUNDEN[runde], b = stage.getBoundingClientRect(); g.style.setProperty('--cs', Math.max(46, Math.floor(Math.min((b.width - 28 - (c - 1) * 10) / c, (b.height - 28 - (r - 1) * 10) / r, 150))) + 'px'); };
+  window.addEventListener('resize', fit); FUN.cleanup = () => window.removeEventListener('resize', fit);
+  const hud = () => { FUN.score = total; FUN.note = `${runde + 1} von 3 Runden`; funHud(`Runde ${runde + 1} von 3 · Punkte: ${total}${serie >= 2 ? ` · Serie ${serie}` : ''}`); };
+  function start() {
+    const [c, r] = RUNDEN[runde], sym = R.sample(ALLE, c * r / 2), cards = R.shuffle(sym.concat(sym)); let open = [], found = 0, lock = true, rz = 0;
+    stage.innerHTML = `<div class="fmem" data-c="${c}">${cards.map((e, i) => `<button class="fm-card" data-i="${i}" aria-label="Karte ${i + 1}"><span class="fm-face fm-back">🐧</span><span class="fm-face fm-front">${e}</span></button>`).join('')}</div>`;
+    const btns = [...stage.firstChild.children]; fit(); hud();
+    btns.forEach(b => b.classList.add('open'));
+    FUN.timeouts.push(setTimeout(() => { btns.forEach(b => b.classList.remove('open')); lock = false; }, 1300 + runde * 500));
+    btns.forEach((b, i) => b.addEventListener('click', () => {
+      if (lock || !FUN || b.classList.contains('open') || b.classList.contains('done')) return;
+      b.classList.add('open'); Sound.tap(); open.push(i);
+      if (open.length < 2) return;
+      zuege++; rz++; const [a, c2] = open; open = [];
+      if (cards[a] === cards[c2]) {
+        found++; serie++; beste = Math.max(beste, serie); total += 10 + Math.min(4, serie - 1) * 5; hud();
+        FUN.timeouts.push(setTimeout(() => { btns[a].classList.add('done'); btns[c2].classList.add('done'); Sound.good(); }, 250));
+        if (found === sym.length) {
+          total += Math.max(0, sym.length * 2 - rz) * 4; hud();
+          FUN.timeouts.push(setTimeout(() => {
+            if (!FUN) return;
+            if (runde < RUNDEN.length - 1) { runde++; start(); }
+            else { FUN.score = total; FUN.note = `drei Runden in ${zuege} Zügen, längste Serie ${beste}`; funEnd(); }
+          }, 1100));
+        }
+      } else { serie = 0; hud(); lock = true; FUN.timeouts.push(setTimeout(() => { btns[a].classList.remove('open'); btns[c2].classList.remove('open'); lock = false; }, 900)); }
+    }));
+  }
+  start();
+}
+function funSchiebe2(stage) {
+  const f = funToday(); let stufe = 0, punkte = 0, zuegeGes = 0, vorher = '';
+  const fit = () => { const board = $('#pzb'); if (!board) return; const r = stage.getBoundingClientRect(), wide = r.width > r.height * 1.1, side = wide ? Math.min(220, r.width * .25) : 0, top = wide ? 0 : 130;
+    const bw = Math.floor(Math.max(200, Math.min(r.width - side - 100, (r.height - top - 96) * 300 / 240))); board.style.width = bw + 'px'; stage.firstChild.classList.toggle('tall', !wide); };
+  window.addEventListener('resize', fit); FUN.cleanup = () => window.removeEventListener('resize', fit);
+  function start() {
+    const N = stufe ? 4 : 3, last = N * N - 1, tiles = Array.from({ length: N * N }, (_, i) => i), bilder = Object.keys(MAL_BILDER).filter(k => k !== vorher), pic = R.pick(bilder), inner = malInner(pic, (f.art || {})[pic]); vorher = pic;
+    const nbr = p => [p - N, p + N, p % N ? p - 1 : -1, p % N < N - 1 ? p + 1 : -1].filter(q => q >= 0 && q < N * N);
+    let empty = last, prev = -1, moves = 0, done = false; const mischen = stufe ? 44 : 140;
+    for (let k = 0; k < 400 && (k < mischen || tiles.every((t, i) => t === i)); k++) { const q = R.pick(nbr(empty).filter(z => z !== prev)); [tiles[empty], tiles[q]] = [tiles[q], tiles[empty]]; prev = empty; empty = q; }
+    const tw = 300 / N, th = 240 / N;
+    stage.innerHTML = `<div class="pz"><div class="pz-side"><div class="pz-prev"><svg viewBox="0 0 300 240">${inner}</svg></div><p>${stufe ? 'Stufe 2: 4 mal 4 Teile.' : 'So soll es aussehen.'}</p>${stufe ? '<button class="btn ghost sm" id="pzstop">Hier aufhören</button>' : ''}</div>
+      <div class="pz-board n${N}" id="pzb">${tiles.filter(t => t !== last).map(t => `<button class="pz-t" data-t="${t}" aria-label="Teil ${t + 1}"><svg viewBox="${(t % N) * tw} ${Math.floor(t / N) * th} ${tw} ${th}" preserveAspectRatio="none">${inner}</svg><i>${t + 1}</i></button>`).join('')}</div></div>`;
+    const board = $('#pzb');
+    const place = () => tiles.forEach((t, p) => { if (t === last) return; const el = board.querySelector(`[data-t="${t}"]`); el.style.setProperty('--c', p % N); el.style.setProperty('--r', Math.floor(p / N)); });
+    fit(); place();
+    FUN.dbg = { tiles, n: N, fast: () => { for (let i = 0; i < N * N; i++) tiles[i] = i; tiles[last] = last - 1; tiles[last - 1] = last; empty = last - 1; place(); } };
+    const hud = () => { FUN.score = punkte; funHud(`${stufe ? 'Stufe 2 · ' : ''}Züge: ${moves}${punkte ? ` · Punkte: ${punkte}` : ''}`); }; hud();
+    const ende = () => { FUN.score = punkte; FUN.note = stufe && done ? `beide Stufen in ${zuegeGes} Zügen` : `erste Stufe in ${zuegeGes} Zügen`; funEnd(); };
+    const stop = $('#pzstop'); if (stop) stop.addEventListener('click', () => { if (FUN && !done) ende(); });
+    board.addEventListener('click', e => {
+      const b = e.target.closest('.pz-t'); if (!b || done || !FUN) return;
+      const p = tiles.indexOf(Number(b.dataset.t)); if (!nbr(empty).includes(p)) { Sound.tap(); b.classList.remove('nope'); void b.offsetWidth; b.classList.add('nope'); return; }
+      [tiles[empty], tiles[p]] = [tiles[p], tiles[empty]]; empty = p; moves++; hud(); Sound.quick(); place();
+      if (tiles.every((t, i) => t === i)) {
+        done = true; zuegeGes += moves; punkte += stufe ? Math.max(40, 260 - moves * 2) : Math.max(10, 150 - moves); Sound.good();
+        board.insertAdjacentHTML('beforeend', `<div class="pz-full"><svg viewBox="0 0 300 240">${inner}</svg></div>`);
+        FUN.timeouts.push(setTimeout(() => { if (!FUN) return; if (!stufe) { stufe = 1; start(); } else ende(); }, 1500));
+      }
+    });
+  }
+  start();
+}
+function funVier2(stage) {
+  const C = 7, RW = 6, b = Array.from({ length: C }, () => []), DIRS = [[1, 0], [0, 1], [1, 1], [1, -1]], ORD = [3, 2, 4, 1, 5, 0, 6];
+  const f = funToday(), lv = Math.max(0, Math.min(4, f.vierLv || 0)), P = [{ win: .6, block: .3, safe: .3, rand: .7 }, { win: .75, block: .5, safe: .5, rand: .5 }, { win: .85, block: .7, safe: .75, rand: .35 }, { win: 1, block: .9, safe: 1, rand: .25 }, { win: 1, block: 1, safe: 1, rand: 0 }][lv];
+  let turn = 1, over = false, letzte = null;
+  stage.innerHTML = `<div class="vier"><p class="vier-msg" id="vmsg">Du spielst <b class="vd p1"></b>, tippe auf eine Spalte!</p><p class="vier-lv">${esc(M())} spielt Stufe ${'★'.repeat(lv + 1)}${'☆'.repeat(4 - lv)}${lv === 4 ? ' · Profi' : ''}</p>
+    <div class="vier-board" id="vb">${Array.from({ length: C }, (_, c) => `<button class="vcol" data-c="${c}" aria-label="Spalte ${c + 1}">${Array.from({ length: RW }, (_, r) => `<span class="vcell" data-r="${RW - 1 - r}"></span>`).join('')}</button>`).join('')}</div></div>`;
+  const msg = h => { const m = $('#vmsg'); if (m) m.innerHTML = h; };
+  const cell = (c, r) => stage.querySelector(`.vcol[data-c="${c}"] .vcell[data-r="${r}"]`);
+  const at = (c, r) => (b[c] && b[c][r]) || 0;
+  const FENSTER = []; for (let c = 0; c < C; c++) for (let r = 0; r < RW; r++) for (const [dx, dy] of DIRS) { const four = [0, 1, 2, 3].map(k => [c + dx * k, r + dy * k]); if (four.every(([x, y]) => x >= 0 && x < C && y >= 0 && y < RW)) FENSTER.push(four); }
+  function wins(p) { for (const four of FENSTER) if (four.every(([x, y]) => at(x, y) === p)) return four; return null; }
+  function canWin(p) { for (let c = 0; c < C; c++) { if (b[c].length >= RW) continue; b[c].push(p); const w = wins(p); b[c].pop(); if (w) return c; } return -1; }
+
+  function wert() { let s = 0; for (const four of FENSTER) { let n1 = 0, n2 = 0; for (const [x, y] of four) { const v = at(x, y); if (v === 1) n1++; else if (v === 2) n2++; } if (!n1) s += [0, 1, 4, 20, 0][n2]; else if (!n2) s -= [0, 1, 4, 24, 0][n1]; } return s; }
+  function denke(p, d, a, be) {
+    if (wins(2)) return 1000 + d; if (wins(1)) return -1000 - d;
+    const frei = ORD.filter(c => b[c].length < RW); if (!frei.length) return 0; if (d === 0) return wert();
+    if (p === 2) { let v = -1e9; for (const c of frei) { b[c].push(2); v = Math.max(v, denke(1, d - 1, a, be)); b[c].pop(); a = Math.max(a, v); if (a >= be) break; } return v; }
+    let v = 1e9; for (const c of frei) { b[c].push(1); v = Math.min(v, denke(2, d - 1, a, be)); b[c].pop(); be = Math.min(be, v); if (a >= be) break; } return v;
+  }
+  function profi() { let bc = -1, bv = -1e9; for (const c of ORD.filter(k => b[k].length < RW)) { b[c].push(2); const v = denke(1, 4, -1e9, 1e9) + Math.random() * .5; b[c].pop(); if (v > bv) { bv = v; bc = c; } } return bc; }
+  function aiMove() {
+    if (lv === 4) return profi();
+    const free = [...Array(C).keys()].filter(c => b[c].length < RW);
+    let c = canWin(2); if (c >= 0 && Math.random() < P.win) return c;
+    c = canWin(1); if (c >= 0 && Math.random() < P.block) return c;
+    const safe = Math.random() < P.safe ? free.filter(k => { b[k].push(2); const bad = canWin(1) >= 0; b[k].pop(); return !bad; }) : free, pool = safe.length ? safe : free;
+    if (Math.random() < P.rand) return R.pick(pool);
+    let best = pool[0], bs = -1e9;
+    pool.forEach(k => {
+      const r = b[k].length; let sc = 3 - Math.abs(3 - k);
+      DIRS.forEach(([dx, dy]) => [1, -1].forEach(sg => { let n = 1; while (at(k + dx * n * sg, r + dy * n * sg) === 2) { sc += 2; n++; } n = 1; while (at(k + dx * n * sg, r + dy * n * sg) === 1) { sc += 1; n++; } }));
+      sc += Math.random() * 1.5; if (sc > bs) { bs = sc; best = k; }
+    });
+    return best;
+  }
+  function drop(c, p) {
+    if (b[c].length >= RW) return false;
+    b[c].push(p); const r = b[c].length - 1, el = cell(c, r);
+    if (letzte) letzte.classList.remove('last'); letzte = el;
+    el.style.setProperty('--fall', RW - r); el.classList.add('p' + p, 'drop', 'last'); Sound.tap(); return true;
+  }
+  function check(p) {
+    const w = wins(p);
+    if (w) { over = true; w.forEach(([c, r]) => cell(c, r).classList.add('win')); FUN.result = p === 1 ? 'win' : 'lose'; f.vierLv = Math.max(0, Math.min(4, lv + (p === 1 ? 1 : -1))); save(); msg(p === 1 ? 'Vier in einer Reihe, du hast gewonnen! 🎉' : `${esc(M())} hat vier in einer Reihe.`); FUN.timeouts.push(setTimeout(() => funEnd(), 1800)); return true; }
+    if (b.every(col => col.length >= RW)) { over = true; FUN.result = 'draw'; msg('Alles voll, unentschieden!'); FUN.timeouts.push(setTimeout(() => funEnd(), 1400)); return true; }
+    return false;
+  }
+  FUN.dbg = { b, lv, ai: aiMove, wins, canWin };
+  $('#vb').addEventListener('click', e => {
+    const col = e.target.closest('.vcol'); if (!col || over || turn !== 1 || !FUN) return;
+    if (!drop(Number(col.dataset.c), 1)) { Sound.bad(); return; }
+    if (check(1)) return;
+    turn = 2; msg(`${esc(M())} überlegt …`);
+    FUN.timeouts.push(setTimeout(() => { if (!FUN || over) return; drop(aiMove(), 2); if (!check(2)) { turn = 1; msg('Du bist dran!'); } }, 750));
+  });
+}
+function funFische2(stage) {
+  stage.innerHTML = `<div class="holes">${Array.from({ length: 9 }, (_, i) => `<button class="hole" data-h="${i}" aria-label="Eisloch"><span class="who"></span></button>`).join('')}</div>`;
+  const holes = [...stage.querySelectorAll('.hole')], state = holes.map(() => null);
+  const fit = () => { const r = stage.getBoundingClientRect(), hs = Math.max(60, Math.floor(Math.min(r.width - 64, r.height - 64) / 3)); stage.firstChild.style.setProperty('--hs', hs + 'px'); };
+  fit(); window.addEventListener('resize', fit); FUN.cleanup = () => window.removeEventListener('resize', fit);
+  let score = 0, serie = 0, beste = 0, t0 = Date.now();
+  const zeig = () => { FUN.score = score; FUN.note = beste >= 5 ? `längste Fang-Serie: ${beste}` : ''; funHud(`Punkte: ${score}${serie >= 5 ? ' · Serie ×2 🔥' : serie >= 2 ? ` · Serie ${serie}` : ''}`); };
+  holes.forEach((h, i) => h.addEventListener('pointerdown', e => {
+    e.preventDefault(); const s = state[i]; if (!s || s.hit) return; s.hit = true;
+    if (s.kind === 'krabbe') { score = Math.max(0, score - 1); serie = 0; Sound.bad(); h.classList.add('pinch'); }
+    else { serie++; beste = Math.max(beste, serie); score += (s.kind === 'gold' ? 3 : 1) * (serie >= 5 ? 2 : 1); s.kind === 'gold' || serie === 5 ? Sound.good() : Sound.quick(); h.classList.add('got'); }
+    zeig(); FUN.timeouts.push(setTimeout(() => hide(i), 220));
+  }));
+  function hide(i) { if (!state[i]) return; clearTimeout(state[i].to); state[i] = null; holes[i].classList.remove('up', 'got', 'pinch'); }
+  function pop() {
+    if (!FUN || !FUN.alive) return;
+    const el = (Date.now() - t0) / 1000, free = state.map((s, i) => s ? -1 : i).filter(i => i >= 0);
+    if (free.length) {
+      const i = R.pick(free), r = Math.random(), kind = r < .12 ? 'gold' : r < .32 ? 'krabbe' : 'fisch';
+      holes[i].querySelector('.who').textContent = kind === 'gold' ? '🐠' : kind === 'krabbe' ? '🦀' : '🐟';
+      holes[i].classList.add('up'); state[i] = { kind, hit: false, to: setTimeout(() => hide(i), Math.max(650, 1300 - el * 16)) };
+    }
+    FUN.timeouts.push(setTimeout(pop, Math.max(380, 820 - el * 12)));
+  }
+  FUN.dbg = { state, holes };
+  pop(); funCountdown(FUN_GAMES.fische.time);
+}
+FUN_IMPL.memory = funMemory2; FUN_IMPL.schiebe = funSchiebe2; FUN_IMPL.vier = funVier2; FUN_IMPL.fische = funFische2;
+FUN_GAMES.memory.d = 'Drei Runden, jede mit mehr Karten. Wer Paare in Serie findet, bekommt Extrapunkte.';
+FUN_GAMES.schiebe.d = 'Schieb die Teile, bis das Bild stimmt. Danach wartet ein Bild mit 16 Teilen.';
+FUN_GAMES.fische.d = 'Schnapp die Fische, aber nicht die Krabben! Ab fünf Fischen in Serie zählt jeder doppelt.';
 
 /*@@src lumi_live.js@@*/
 
