@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-4WXIQuvTXT0be3zLakJfGV+X3Ob6Di34oCfm++CQ67I=' 'sha256-IR58xulKlfKJLvlzr3GI1anM0/tO30YZngDUw6bYdKE=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-P0OYeFm2a+zv3OUlcXu6yZm8enSH0YVSoA1sl9ptNtk=' 'sha256-xbiDh7YZxpnnOBz+cKDRmP/ygHItQHPV8DWwqqSD0J4=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -6624,6 +6624,105 @@ button.mau-k:disabled { cursor: default; }
 .mau-wahl div { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; } .mau-wahl .rot { color: #B3261E; }
 .mau-hand { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; padding-top: 10px; margin-top: auto; }
 
+/* ---- style_neu278.css ---- */
+
+.gtr .card { text-align: center; }
+.gtr-wort h2 { font-size: clamp(30px, 6vw, 46px); margin: 8px 0 12px; }
+.gtr-team { text-align: center; font-size: 18px; }
+.gtr-feld { border: 3px solid var(--pc); }
+.gtr-in { font-size: 26px; text-align: center; margin: 12px auto; max-width: 420px; display: block; width: 100%; box-sizing: border-box; }
+.gtr-gs { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; margin: 14px 0; }
+.gtr-g { font: inherit; color: inherit; cursor: pointer; display: grid; gap: 6px; align-content: start; padding: 10px; border-radius: 16px; background: var(--surface-2); border: 3px solid var(--line); text-align: left; }
+.gtr-g.treffer { border-color: #E0A400; background: #FFF6D6; color: #1F2D3A; }
+.gtr-g.sel { outline: 4px solid #2F6FB3; outline-offset: 2px; }
+.gtr-m { display: grid; grid-template-columns: auto auto 1fr; gap: 6px; align-items: baseline; border-left: 5px solid var(--pc); padding-left: 8px; }
+.gtr-m i { font-style: normal; } .gtr-m em { font-style: normal; font-weight: 800; font-size: 19px; text-align: right; overflow-wrap: anywhere; }
+.gtr-st { font-weight: 800; color: #8A5A00; }
+
+.sdu { position: absolute; inset: 0; display: flex; flex-direction: column; gap: 10px; padding: 10px 12px 14px; box-sizing: border-box; overflow-y: auto; background: linear-gradient(#CDEBFA, #8FD0EE); color: #12324A; }
+.sdu-start, .sdu-end { margin: auto; max-width: 560px; background: #fff; border-radius: 18px; padding: 16px 18px; text-align: center; box-shadow: 0 6px 20px rgba(18, 50, 74, .18); }
+.sdu-start p { text-align: left; }
+.sdu-pk { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; font-size: 14px; }
+.sdu-pk span { padding: 3px 8px; border-radius: 10px; background: rgba(255, 255, 255, .75); border: 2px solid transparent; }
+.sdu-pk span.du { border-color: #1E7A52; } .sdu-pk span.lumi { border-color: #C85F00; }
+.sdu-reihe { background: rgba(255, 255, 255, .8); border-radius: 16px; padding: 8px 10px; display: grid; gap: 6px; border: 3px solid transparent; }
+.sdu-reihe.dran { border-color: #F2A33C; }
+.sdu-wer { font-size: 15px; }
+.sdu-zs { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.sdu-z { display: inline-flex; align-items: center; gap: 4px; padding: 3px 9px; border-radius: 12px; background: #fff; border: 2px solid #9CC9E3; font-size: 22px; }
+.sdu-z b { font-size: 17px; } .sdu-z.leer { opacity: .45; } .sdu-z.hai { border-color: #D64545; }
+.sdu-stapel { display: inline-flex; align-items: center; gap: 10px; }
+.sdu-mitte { display: flex; gap: 12px; align-items: center; justify-content: center; flex: 1; min-height: 150px; }
+.sdu-p { font: inherit; color: inherit; width: clamp(84px, 22vw, 120px); aspect-ratio: 3 / 4; border-radius: 16px; border: 3px solid #12324A; background: #fff; display: grid; place-items: center; position: relative; box-shadow: 4px 4px 0 #2F6FB3, 8px 8px 0 #8FBCE6; cursor: pointer; padding: 6px; }
+.sdu-p > small { position: absolute; top: -10px; right: -10px; font-weight: 800; font-size: 13px; min-width: 26px; padding: 2px 6px; border-radius: 12px; background: #12324A; color: #fff; box-sizing: border-box; }
+.sdu-p.frei { outline: 4px solid #F9D56E; } .sdu-p:disabled { cursor: default; opacity: .8; }
+.sdu-s { display: grid; justify-items: center; line-height: 1.1; }
+.sdu-s b { font-size: clamp(34px, 8vw, 50px); } .sdu-s small { font-size: 12px; font-weight: 700; }
+.sdu-s.gold b { filter: drop-shadow(0 0 6px #F2C200); } .sdu-s.gold small { color: #8A5A00; }
+.sdu-s.hai small { color: #B3261E; }
+.sdu-s.klein b { font-size: 26px; } .sdu-s.klein small { display: none; }
+.sdu-last { width: clamp(70px, 18vw, 100px); display: grid; place-items: center; opacity: .7; }
+.sdu-wahl { background: #fff; border-radius: 18px; padding: 10px; text-align: center; box-shadow: 0 6px 18px rgba(18, 50, 74, .2); }
+.sdu-wahl p { margin: 0 0 8px; } .sdu-wahl > div { display: flex; gap: 10px; justify-content: center; }
+.sdu-w { font: inherit; color: inherit; cursor: pointer; display: grid; gap: 4px; justify-items: center; padding: 10px 14px; border-radius: 14px; border: 3px solid #2F6FB3; background: #EAF4FB; min-width: 100px; }
+.sdu-w em { font-style: normal; font-weight: 700; font-size: 14px; }
+.sdu-msg { margin: 0; text-align: center; font-weight: 700; min-height: 2.4em; }
+.sdu-t { margin: 10px auto; border-collapse: collapse; font-size: 16px; }
+.sdu-t th, .sdu-t td { padding: 5px 10px; border-bottom: 1px solid #CFE3EF; text-align: center; } .sdu-t td:first-child, .sdu-t th:first-child { text-align: left; }
+.sdu-t td.pk { background: #FFF2C2; font-weight: 800; } .sdu-t tfoot td { border-bottom: 0; font-size: 18px; }
+
+.ins { display: grid; gap: 10px; }
+.ins-top { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.ins-coins { font-size: 20px; padding: 4px 12px; border-radius: 12px; background: var(--surface-2); border: 2px solid var(--line); margin-right: auto; }
+.ins-modes, .ins-lager { display: flex; gap: 6px; overflow-x: auto; padding-bottom: 4px; }
+.ins-mode, .ins-l { font: inherit; color: inherit; cursor: pointer; flex: 0 0 auto; display: inline-flex; gap: 6px; align-items: center; padding: 6px 10px; border-radius: 12px; border: 2px solid var(--line-deep); background: var(--surface-2); font-size: 14px; }
+.ins-mode span, .ins-l span { font-size: 20px; } .ins-l b { background: var(--line); border-radius: 8px; padding: 0 6px; }
+.ins-mode.an, .ins-l.an { border-color: #2F6FB3; box-shadow: 0 0 0 2px #2F6FB3 inset; }
+.ins-msg { margin: 0; min-height: 1.4em; font-weight: 700; }
+.ins-map { display: grid; grid-template-columns: repeat(var(--w), 1fr); gap: 2px; width: min(100%, 760px); margin: 0 auto; border-radius: 14px; overflow: hidden; background: #3E8FCF; touch-action: manipulation; }
+.ins-c { aspect-ratio: 1; border: 0; padding: 0; display: grid; place-items: center; font-size: clamp(18px, 5vw, 40px); cursor: pointer; line-height: 1; }
+.ins-c.g-w { background: #4FA3E0; } .ins-c.g-s { background: #F3DDA0; } .ins-c.g-g { background: #8ACB6A; } .ins-c.g-p { background: #C9A27A; background-image: radial-gradient(circle at 30% 40%, #B48A62 2px, transparent 3px), radial-gradient(circle at 70% 70%, #B48A62 2px, transparent 3px); }
+.ins-c:focus-visible { outline: 3px solid #1F2D3A; outline-offset: -3px; }
+.ins-t { display: inline-block; animation: insWipp 3s ease-in-out infinite; }
+@keyframes insWipp { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-3px); } }
+@media (prefers-reduced-motion: reduce) { .ins-t { animation: none; } }
+.ins-kat { display: flex; gap: 6px; flex-wrap: wrap; margin: 8px 0; }
+.ins-kat button { font: inherit; color: inherit; cursor: pointer; padding: 5px 10px; border-radius: 10px; border: 2px solid var(--line-deep); background: var(--surface-2); }
+.ins-kat button.an { border-color: #2F6FB3; box-shadow: 0 0 0 2px #2F6FB3 inset; }
+.ins-shop { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 8px; max-height: 50vh; overflow-y: auto; }
+.ins-ware { font: inherit; color: inherit; cursor: pointer; display: grid; justify-items: center; gap: 2px; padding: 8px; border-radius: 12px; border: 2px solid var(--line-deep); background: var(--surface-2); }
+.ins-ware span { font-size: 32px; } .ins-ware small { font-size: 13px; } .ins-ware:disabled { opacity: .45; cursor: default; }
+.ins-auf { list-style: none; padding: 0; display: grid; gap: 6px; text-align: left; }
+.ins-auf li { display: grid; grid-template-columns: auto 1fr auto; gap: 8px; align-items: center; padding: 6px 8px; border-radius: 10px; background: var(--surface-2); }
+.ins-auf li.ok { opacity: .7; }
+
+.l8-blitz { position: relative; min-height: 96px; display: grid; place-items: center; }
+.l8-blitz span { font-size: clamp(34px, 7vw, 54px); font-weight: 800; letter-spacing: .02em; animation: l8weg .15s linear var(--ms) forwards; }
+.l8-blitz.satz span { font-size: clamp(20px, 4vw, 28px); font-weight: 700; text-align: center; padding: 0 10px; }
+@keyframes l8weg { to { opacity: 0; visibility: hidden; } }
+.l8-nochmal { display: none; position: absolute; font: inherit; cursor: pointer; padding: 6px 12px; border-radius: 12px; border: 2px solid var(--line-deep); background: var(--surface-2); color: inherit; }
+.l8-blitz.weg .l8-nochmal { display: inline-block; }
+.stage:has(.l8-blitz:not(.weg)) .answers { visibility: hidden; }
+.lf-how { text-align: left; display: grid; gap: 4px; }
+.lf-texte { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px; margin: 12px 0; }
+.lf-t { font: inherit; color: inherit; cursor: pointer; display: grid; gap: 2px; text-align: left; padding: 10px 12px; border-radius: 14px; border: 2px solid var(--line-deep); background: var(--surface-2); }
+.lf-t small { opacity: .75; }
+.lf-kopf { display: flex; gap: 10px; align-items: center; justify-content: center; flex-wrap: wrap; margin-bottom: 10px; }
+.lf-uhr { font-size: 34px; font-weight: 800; min-width: 64px; text-align: center; padding: 4px 10px; border-radius: 14px; background: var(--surface-2); border: 3px solid var(--line-deep); }
+.lf-uhr.bald { border-color: #D64545; color: #B3261E; }
+.lf-stopp { margin: 0; font-size: 19px; text-align: center; }
+.lf-text { font-size: clamp(21px, 3.4vw, 27px); line-height: 1.75; text-align: left; margin: 0; }
+.lf-w { border-radius: 6px; padding: 0 2px; }
+.lf-text.laeuft .lf-w, .lf-text.wahl .lf-w { cursor: pointer; }
+.lf-text.wahl .lf-w { box-shadow: inset 0 -3px 0 #9CC9E3; }
+.lf-w.falsch { background: #FFD9D6; color: #8E1B12; text-decoration: underline wavy #D64545; }
+.lf-erg { text-align: center; }
+.lf-zahl { display: grid; justify-items: center; margin: 6px 0 10px; } .lf-zahl b { font-size: 64px; line-height: 1; } .lf-zahl span { font-weight: 700; }
+.lf-graph { width: 100%; max-width: 420px; height: auto; display: block; margin: 6px 0; }
+.lf-graph .ax { stroke: var(--line-deep); stroke-width: 1; } .lf-graph .ln { fill: none; stroke: #2F6FB3; stroke-width: 2; } .lf-graph .pt { fill: #2F6FB3; stroke: var(--surface, #fff); stroke-width: 2; }
+.lf-graph .lb { font-size: 12px; font-weight: 700; fill: currentColor; }
+.lf-liste { margin: 6px 0 0; padding-left: 18px; }
+
 /* ---- style_pa.css ---- */
 
 .pa { min-height: 100vh; }
@@ -8882,8 +8981,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '2.77.1';
-  var MAP = {"probe":0,"files":[[8872,"fehler_kern.js"],[9160,null],[9162,"data.js"],[9857,"data_more.js"],[10214,"data_su2.js"],[10441,"data_es.js"],[10783,"data_wissen.js"],[10982,"data_v21.js"],[11665,"data_v24.js"],[12151,"data_v25.js"],[12632,"data_v26.js"],[12731,"data_v29.js"],[13036,"data_v30.js"],[13366,"data_v31.js"],[13672,"data_kunst.js"],[13868,"data_v214.js"],[13971,"data_v216.js"],[14264,"schrift.js"],[14564,"eingabe.js"],[14775,"data_k34m.js"],[15293,"data_k34d.js"],[15647,"data_k34s.js"],[16101,"data_v224.js"],[16974,"data_v225w.js"],[17343,"data_v225k.js"],[17787,"data_herz.js"],[18141,"data_fb226.js"],[18284,"data_tf226.js"],[18491,"data_v227a.js"],[19582,"data_v227b.js"],[20536,"data_h28b.js"],[20576,"data_l28a.js"],[21442,"data_l28b.js"],[22622,"data_schaetz.js"],[23104,"data_party8.js"],[23154,"data_alce.js"],[23814,"data_alce2.js"],[24063,"data_alce3.js"],[24478,"registry.js"],[24992,"app.js"],[26172,"fun.js"],[26752,"fun2.js"],[27068,"atelier.js"],[27442,"kunst225.js"],[27632,"herz.js"],[27996,"reise.js"],[28298,"iglu.js"],[28464,"offline.js"],[28571,"party.js"],[29055,"meine.js"],[29411,"loeffel.js"],[29582,"trend.js"],[30124,"fun228a.js"],[30975,"fun228b.js"],[31636,"kueche.js"],[32675,"stimme.js"],[32730,"klassen.js"],[32879,"freunde_vorab.js"],[32900,"mut.js"],[33322,"schule.js"],[33811,"fussball226.js"],[34133,"schaetzen.js"],[34564,"party8.js"],[35183,"tiere.js"],[35642,"fussball232.js"],[35857,"party8b.js"],[36159,"weg.js"],[36380,"px.js"],[36791,"px_data.js"],[37048,"pxwelt.js"],[37129,"px_abenteuer.js"],[37930,"px_abenteuer2.js"],[38679,"px_ski.js"],[39321,"px_wurf.js"],[39850,"px_insel.js"],[41051,"px_kicker.js"],[41986,"px_eis.js"],[42972,"px_run.js"],[44187,"px_brk.js"],[45149,"px_pol.js"],[46500,"px_frog.js"],[47760,"px_angel.js"],[49075,"px_golf.js"],[50109,"px_tauch.js"],[51374,"px_hockey.js"],[52330,"px_lab.js"],[53665,"px_plopp.js"],[54871,"px_stadion.js"],[56375,"px_training.js"],[56744,"cm.js"],[57234,"cmwelt.js"],[57290,"cm_baeck.js"],[58083,"cm_bahn.js"],[58847,"cm_detek.js"],[59564,"cm_markt.js"],[60277,"ff.js"],[60434,"ff_mathe.js"],[62424,"ff_deutsch.js"],[64012,"ff_sach_a.js"],[66261,"ff_sach_b.js"],[68490,"ff_sprachen.js"],[70898,"zm.js"],[71811,"tt.js"],[72024,"data_tagebuch.js"],[72067,"data_hoerspiel.js"],[72226,"leseecke.js"],[72545,"kt.js"],[72848,"comicbuch.js"],[73126,"alce.js"],[73289,"alce_aufg.js"],[73459,"formen.js"],[73910,"data_formen.js"],[74151,"data_formen2.js"],[74373,"spielzeit.js"],[74518,"data_faktmeinung.js"],[74637,"data_es248.js"],[74901,"data_en249.js"],[75140,"data_wissen249.js"],[75571,"data_kunst249.js"],[75854,"data_fussball250.js"],[75978,"data_werte252.js"],[76231,"data_lesen252.js"],[76292,"data_k34_252.js"],[76378,"art254.js"],[76496,"data_werte255.js"],[76634,"data_lesen255.js"],[76770,"forscher255.js"],[76918,"zufall250.js"],[76964,"stufe259.js"],[76974,"advent.js"],[77237,"wdh.js"],[77335,"denk.js"],[77372,"data_viaje265.js"],[77515,"klassenarbeit.js"],[77648,"quizduell.js"],[77771,"neu267.js"],[78036,"prog.js"],[78141,"lernstand.js"],[78208,"blatt.js"],[78310,"data_es271.js"],[78424,"plus269.js"],[78518,"schach.js"],[78745,"schachtaktik.js"],[78916,"fun270.js"],[79079,"data_neu274.js"],[79288,"plus272.js"],[79342,"spiele274.js"],[79465,"kasten.js"],[79569,"erklaer.js"],[79682,"apa.js"],[79763,"neu276.js"],[79904,"spiele276.js"],[79954,"neu277.js"],[80132,"spiele277.js"],[80387,"lumi_live.js"],[80503,"sicher.js"],[80687,"stil.js"],[80741,"freunde.js"],[80878,"start.js"],[80888,null],[80898,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '2.78.0';
+  var MAP = {"probe":0,"files":[[8971,"fehler_kern.js"],[9259,null],[9261,"data.js"],[9956,"data_more.js"],[10313,"data_su2.js"],[10540,"data_es.js"],[10882,"data_wissen.js"],[11081,"data_v21.js"],[11764,"data_v24.js"],[12250,"data_v25.js"],[12731,"data_v26.js"],[12830,"data_v29.js"],[13135,"data_v30.js"],[13465,"data_v31.js"],[13771,"data_kunst.js"],[13967,"data_v214.js"],[14070,"data_v216.js"],[14363,"schrift.js"],[14663,"eingabe.js"],[14874,"data_k34m.js"],[15392,"data_k34d.js"],[15746,"data_k34s.js"],[16200,"data_v224.js"],[17073,"data_v225w.js"],[17442,"data_v225k.js"],[17886,"data_herz.js"],[18240,"data_fb226.js"],[18383,"data_tf226.js"],[18590,"data_v227a.js"],[19681,"data_v227b.js"],[20635,"data_h28b.js"],[20675,"data_l28a.js"],[21541,"data_l28b.js"],[22721,"data_schaetz.js"],[23203,"data_party8.js"],[23253,"data_alce.js"],[23913,"data_alce2.js"],[24162,"data_alce3.js"],[24577,"registry.js"],[25091,"app.js"],[26273,"fun.js"],[26853,"fun2.js"],[27169,"atelier.js"],[27543,"kunst225.js"],[27733,"herz.js"],[28097,"reise.js"],[28399,"iglu.js"],[28565,"offline.js"],[28672,"party.js"],[29156,"meine.js"],[29512,"loeffel.js"],[29683,"trend.js"],[30225,"fun228a.js"],[31076,"fun228b.js"],[31737,"kueche.js"],[32776,"stimme.js"],[32831,"klassen.js"],[32980,"freunde_vorab.js"],[33001,"mut.js"],[33423,"schule.js"],[33912,"fussball226.js"],[34234,"schaetzen.js"],[34665,"party8.js"],[35284,"tiere.js"],[35743,"fussball232.js"],[35958,"party8b.js"],[36260,"weg.js"],[36481,"px.js"],[36892,"px_data.js"],[37149,"pxwelt.js"],[37230,"px_abenteuer.js"],[38031,"px_abenteuer2.js"],[38780,"px_ski.js"],[39422,"px_wurf.js"],[39951,"px_insel.js"],[41152,"px_kicker.js"],[42087,"px_eis.js"],[43073,"px_run.js"],[44288,"px_brk.js"],[45250,"px_pol.js"],[46601,"px_frog.js"],[47861,"px_angel.js"],[49176,"px_golf.js"],[50210,"px_tauch.js"],[51475,"px_hockey.js"],[52431,"px_lab.js"],[53766,"px_plopp.js"],[54972,"px_stadion.js"],[56476,"px_training.js"],[56845,"cm.js"],[57335,"cmwelt.js"],[57391,"cm_baeck.js"],[58184,"cm_bahn.js"],[58948,"cm_detek.js"],[59665,"cm_markt.js"],[60378,"ff.js"],[60535,"ff_mathe.js"],[62525,"ff_deutsch.js"],[64113,"ff_sach_a.js"],[66362,"ff_sach_b.js"],[68591,"ff_sprachen.js"],[70999,"zm.js"],[71912,"tt.js"],[72125,"data_tagebuch.js"],[72168,"data_hoerspiel.js"],[72327,"leseecke.js"],[72646,"kt.js"],[72949,"comicbuch.js"],[73227,"alce.js"],[73390,"alce_aufg.js"],[73560,"formen.js"],[74011,"data_formen.js"],[74252,"data_formen2.js"],[74474,"spielzeit.js"],[74619,"data_faktmeinung.js"],[74738,"data_es248.js"],[75002,"data_en249.js"],[75241,"data_wissen249.js"],[75672,"data_kunst249.js"],[75955,"data_fussball250.js"],[76079,"data_werte252.js"],[76332,"data_lesen252.js"],[76393,"data_k34_252.js"],[76479,"art254.js"],[76597,"data_werte255.js"],[76735,"data_lesen255.js"],[76871,"forscher255.js"],[77019,"zufall250.js"],[77065,"stufe259.js"],[77075,"advent.js"],[77338,"wdh.js"],[77436,"denk.js"],[77473,"data_viaje265.js"],[77616,"klassenarbeit.js"],[77749,"quizduell.js"],[77872,"neu267.js"],[78137,"prog.js"],[78242,"lernstand.js"],[78309,"blatt.js"],[78411,"data_es271.js"],[78525,"plus269.js"],[78619,"schach.js"],[78846,"schachtaktik.js"],[79017,"fun270.js"],[79180,"data_neu274.js"],[79389,"plus272.js"],[79443,"spiele274.js"],[79566,"kasten.js"],[79670,"erklaer.js"],[79783,"apa.js"],[79864,"neu276.js"],[80005,"spiele276.js"],[80055,"neu277.js"],[80233,"spiele277.js"],[80488,"lernen278.js"],[80748,"spiele278.js"],[81091,"lumi_live.js"],[81207,"sicher.js"],[81391,"stil.js"],[81445,"freunde.js"],[81582,"start.js"],[81592,null],[81602,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -24993,9 +25092,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '2.77.1';
+const APP_VERSION = '2.78.0';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "2.78.0", d: "12.11.2026", t: ["Neues Partyspiel Gedanken-Treffer: Wer denkt dasselbe?", "Spielhalle: Sammel-Duell gegen Lumi", "Neu: Meine Pinguin-Insel. Mit den Münzen aus dem Lernen eine eigene Insel bauen", "Lesen: Blitzlesen, Satz-Blitz und Vorlese-Minute mit Wörtern pro Minute", "Mathe: Teilen in Schritten (halbschriftlich)", "Sachunterricht: Ist das echt? KI, Fakes und sicher im Netz"] },
   { v: "2.77.1", d: "12.11.2026", t: ["Technische Pflege, keine neuen Inhalte in dieser Version"] },
   { v: "2.77.0", d: "12.11.2026", t: ["Neu in der Rätsel-Ecke: Mühle gegen Lumi in drei Stärken, mit Regeln direkt beim Spiel", "Neu in der Spielhalle: Mau-Mau gegen Lumi mit 32 Karten", "59 neue Erklärkarten für Mathe und Deutsch, jetzt 126 Themen", "Spanischkurs: Stufe 2 mit vier statt drei Antworten"] },
   { v: "2.76.1", d: "12.11.2026", t: ["Technische Pflege, keine neuen Inhalte in dieser Version"] },
@@ -26022,6 +26122,7 @@ function showParents(notice = '') {
     ${typeof spzParentsHTML === 'function' ? spzParentsHTML() : ''}
     ${typeof lsParentsHTML === 'function' ? lsParentsHTML() : ''}
     ${typeof wzParentsHTML === 'function' ? wzParentsHTML() : ''}
+    ${typeof lfParentsHTML === 'function' ? lfParentsHTML() : ''}
     ${typeof apaParentsHTML === 'function' ? apaParentsHTML() : ''}
     ${typeof vkParentsHTML === 'function' ? vkParentsHTML() : ''}
     ${typeof ekParentsHTML === 'function' ? ekParentsHTML() : ''}
@@ -35151,9 +35252,9 @@ PA_GM.stirnraten.unit = 'Begriff'; PA_GM.stirnraten.units = 'Begriffe';
 
 
 function paBdayBtn() {
-  return `<button class="pa-bdbtn" data-act="pahub"><span aria-hidden="true">🎉</span><div><b>Party-Spiele für dich und deine Freundinnen</b><small>20 Spiele für bis zu 8 Kinder, Pantomime, Stopptanz, Glücksrad, Team-Elfmeter …</small></div><span class="go" aria-hidden="true">›</span></button>`;
+  return `<button class="pa-bdbtn" data-act="pahub"><span aria-hidden="true">🎉</span><div><b>Party-Spiele für dich und deine Freundinnen</b><small>${PA_G.length} Spiele für bis zu 8 Kinder, Pantomime, Stopptanz, Glücksrad, Team-Elfmeter …</small></div><span class="go" aria-hidden="true">›</span></button>`;
 }
-const paArcadeHTML = () => `<button class="card album-link pa-card" data-act="pahub"><span class="hz-env" aria-hidden="true">🎈</span><div><h3>Party-Spiele</h3><p>20 Spiele für 2 bis 8 Kinder an einem iPad</p></div><span class="go" aria-hidden="true">›</span></button>`;
+const paArcadeHTML = () => `<button class="card album-link pa-card" data-act="pahub"><span class="hz-env" aria-hidden="true">🎈</span><div><h3>Party-Spiele</h3><p>${PA_G.length} Spiele für 2 bis 8 Kinder an einem iPad</p></div><span class="go" aria-hidden="true">›</span></button>`;
 
 Object.assign(ACT, {
   pahub: () => { Sound.unlock(); closeOverlay(); showPaHub(); },
@@ -80383,6 +80484,609 @@ FUN_IMPL.maumau = function (stage) {
     passt, spiel, wuensch, zieh, weiter, lumi };
   neu(); draw();
 };
+
+/*@@src lernen278.js@@*/
+
+const l8W = g => (typeof GROUPS !== 'undefined' && GROUPS[g] ? GROUPS[g].w : undefined);
+
+
+const L8_W1 = [['Haus', 'Maus', 'Laus', 'Hase'], ['Hose', 'Rose', 'Dose', 'Nase'], ['Hund', 'Mund', 'rund', 'Hand'], ['Ball', 'Fall', 'Wall', 'Stall'],
+  ['Tisch', 'Fisch', 'Tasche', 'frisch'], ['Kind', 'Wind', 'Rind', 'Kinn'], ['Hand', 'Sand', 'Land', 'Band'], ['Bein', 'Beil', 'Biene', 'Bier'],
+  ['Kuh', 'Schuh', 'Kugel', 'Kuss'], ['Hut', 'Mut', 'gut', 'Hund'], ['Bett', 'Brett', 'fett', 'nett'], ['Mond', 'Mund', 'Mops', 'Mohn'],
+  ['Igel', 'Iglu', 'Insel', 'Esel'], ['Ente', 'Ernte', 'Ende', 'Enkel'], ['Rad', 'Rat', 'Bad', 'Rand'], ['Buch', 'Bauch', 'Bach', 'Busch'],
+  ['Zahn', 'Hahn', 'Kahn', 'Zahl'], ['Fee', 'See', 'Tee', 'Klee'], ['Ohr', 'Rohr', 'Ohren', 'Uhr'], ['Eis', 'Reis', 'Kreis', 'Eisen'],
+  ['Nest', 'Rest', 'Fest', 'Test'], ['Katze', 'Tatze', 'Kasse', 'Kette'], ['Tanne', 'Kanne', 'Wanne', 'Panne'], ['Wolke', 'Wolle', 'Wolf', 'Welle'],
+  ['Mütze', 'Pfütze', 'Mutter', 'Mitte'], ['Blume', 'Bluse', 'Blase', 'Beule'], ['Puppe', 'Suppe', 'Pumpe', 'Puppen'], ['Lampe', 'Lampen', 'Lappen', 'Rampe'],
+  ['Bus', 'Bus­se', 'Bild', 'Bus­fahrer'].map(w => w.replace(/­/g, '')), ['Baum', 'Raum', 'Saum', 'Bäume'], ['Vogel', 'Kegel', 'Nagel', 'Vögel'], ['Maus', 'Mais', 'Mauer', 'Mäuse']];
+const L8_W2 = [['Schrank', 'Schranke', 'Schraube', 'Schrauben'], ['Bäckerei', 'Bücherei', 'Brauerei', 'Bäckerin'], ['Geburtstag', 'Geburtsort', 'Gebirge', 'Geburt'],
+  ['Fahrrad', 'Fahrbahn', 'Fahrkarte', 'Fahrplan'], ['Feuerwehr', 'Feuerwerk', 'Feuerwehren', 'Feuerzeug'], ['Spielplatz', 'Spielplätze', 'Spielplan', 'Spielzeug'],
+  ['Schwimmbad', 'Schwimmbrille', 'Schwimmflügel', 'Schwimmer'], ['Wasserfall', 'Wasserball', 'Wasserhahn', 'Wasserglas'], ['Leuchtturm', 'Kirchturm', 'Leuchtstab', 'Wachturm'],
+  ['Erdbeere', 'Erdbeeren', 'Erdkugel', 'Brombeere'], ['Hausaufgabe', 'Hausaufgaben', 'Hausmeister', 'Haustür'], ['Winterjacke', 'Winterjacken', 'Wintermütze', 'Sommerjacke'],
+  ['Kindergarten', 'Kindergärten', 'Kinderwagen', 'Gemüsegarten'], ['Briefkasten', 'Briefmarke', 'Brieftaube', 'Briefkästen'], ['Taschenlampe', 'Taschenmesser', 'Tischlampe', 'Taschengeld'],
+  ['Sonnenblume', 'Sonnenbrille', 'Sonnenblumen', 'Sommerblume'], ['Fußballtor', 'Fußballer', 'Fußballtore', 'Handballtor'], ['Zahnbürste', 'Zahnbürsten', 'Haarbürste', 'Zahnpasta'],
+  ['Regenbogen', 'Regenmantel', 'Regentropfen', 'Ellenbogen'], ['Schmetterling', 'Schmetterlinge', 'Schmetterball', 'Schneeflocke'], ['Schneemann', 'Schneeball', 'Schneemänner', 'Schneemaus'],
+  ['Eichhörnchen', 'Eichhörnchens', 'Einhörnchen', 'Eichenholz'], ['Bilderbuch', 'Bilderbücher', 'Bilderrahmen', 'Kinderbuch'], ['Gartenzaun', 'Gartentür', 'Gartenhaus', 'Bauzaun']];
+function l8Blitz(text, ms, satz) {
+  return `<div class="l8-blitz${satz ? ' satz' : ''}" style="--ms:${ms}ms"><span>${esc(text)}</span><button class="l8-nochmal" data-act="l8zeig">👀 Nochmal zeigen</button></div>`;
+}
+document.addEventListener('animationend', e => { if (e.animationName === 'l8weg') { const b = e.target.closest && e.target.closest('.l8-blitz'); if (b) b.classList.add('weg'); } });
+ACT.l8zeig = t => {
+  const b = t.closest('.l8-blitz'), sp = b && b.querySelector('span'); if (!sp) return;
+  b.classList.remove('weg'); const neu = sp.cloneNode(true); sp.replaceWith(neu); if (typeof G !== 'undefined' && G) G.l8n = (G.l8n || 0) + 1;
+};
+function genBlitzlesen(ctx) {
+  const lv = (ctx && ctx.lv) || 1, pool = lv === 1 ? L8_W1 : lv === 2 ? L8_W2 : L8_W1.concat(L8_W2);
+  const g = ctx && ctx.draw ? ctx.draw(pool) : R.pick(pool), w = R.pick(g), ms = [0, 1200, 900, 550][lv] || 900;
+  return mkChoice({ prompt: 'Schau genau hin! Welches Wort hast du gesehen?', visual: l8Blitz(w, ms), answer: w, wrong: g.filter(x => x !== w), layout: 'grid2',
+    explain: `Das Wort war „${w}“. Lies beim Blitzlesen das ganze Wort auf einen Blick, nicht Buchstabe für Buchstabe.`, key: 'bl' + lv + w });
+}
+
+
+const L8_S = {
+  1: ['Die {Katze|Tatze|Kasse|Kette} schläft auf dem Sofa.', 'Der {Hund|Mund|Hut|Bund} bellt laut.', 'Im Garten blüht eine {Rose|Hose|Dose|Nase}.',
+    'Der Ball liegt unter dem {Tisch|Fisch|Tusch|Tasche}.', 'Opa liest ein {Buch|Bauch|Bach|Busch}.', 'Lumi rutscht auf dem {Eis|Reis|Kreis|Eisen}.',
+    'Am Himmel steht der {Mond|Mund|Mops|Mohn}.', 'Die {Kuh|Uhr|Kugel|Kuss} steht auf der Weide.', 'Tom baut eine {Burg|Berg|Bürger|Bug} aus Sand.',
+    'Der Igel schläft im {Laub|Laus|Lauch|Lamm}.', 'Heute gibt es {Suppe|Puppe|Pumpe|Schuppe} zum Mittag.', 'Mia trinkt warmen {Tee|See|Klee|Zeh}.',
+    'Das Boot fährt über den {See|Tee|Fee|Klee}.', 'Ella malt eine {Wolke|Wolle|Welle|Wolfe}.'],
+  2: ['Nach der Schule {spielt|spült|spannt|spielen} Mia Fußball.', 'Ben {fährt|führt|färbt|fehlt} mit dem Rad zur Schule.', 'Die Möwe sitzt {auf|aus|an|auch} dem Dach.',
+    'Am Strand {sammeln|sammelt|summen|sammelten} wir Muscheln.', 'Im Winter {bauen|kauen|tauen|bauten} die Kinder einen Schneemann.', 'Lea {liest|legt|lässt|lest} ein spannendes Buch.',
+    'Der Zug {kommt|kämmt|kam|kommen} pünktlich am Bahnhof an.', 'Die Kinder {lachen|machen|wachen|lachten} über den Clown.', 'Finn {schreibt|schreit|schrieb|schreibst} einen Brief an Oma.',
+    'Wir {gehen|sehen|drehen|gehe} heute ins Schwimmbad.', 'Das Schiff {fährt|führt|fehlt|fährst} über die Nordsee.', 'Ella hat {ihren|ihrem|ihnen|ihre} Schal vergessen.'],
+  3: ['Weil es regnet, {nimmt|nennt|nahm|nehmt} Tom einen Schirm mit.', 'Der Leuchtturm {zeigt|zieht|zeigte|zeugt} den Schiffen den Weg.', 'Nach dem Essen {räumen|reimen|räumten|rühmen} wir den Tisch ab.',
+    'Die Feuerwehr {kommt|kam|kann|kämmt} mit Blaulicht und Sirene.', 'Obwohl es kalt war, {spielten|spülten|spalten|spielen} wir draußen.', 'Im Herbst {fallen|fällen|füllen|fielen} die Blätter von den Bäumen.',
+    'Mein Bruder {hat|hält|hatte|hast} sein Zimmer aufgeräumt.', 'Am Wochenende {besuchen|versuchen|besuchten|besuche} wir unsere Großeltern.', 'Die Klasse {plant|pflanzt|planscht|planten} einen Ausflug in den Zoo.',
+    'Das Eichhörnchen {versteckt|verdeckt|verschluckt|versteckte} Nüsse im Garten.', 'Der Bäcker {backt|packt|backte|bückt} jeden Morgen frische Brötchen.', 'Die Seehunde {liegen|lügen|legen|lagen} faul auf der Sandbank.']
+};
+function genSatzBlitz(ctx) {
+  const lv = Math.min(3, (ctx && ctx.lv) || 1), s = ctx && ctx.draw ? ctx.draw(L8_S[lv]) : R.pick(L8_S[lv]);
+  const m = s.match(/\{([^}]+)\}/), alle = m[1].split('|').map(a => s.replace(m[0], a)), ms = [0, 2400, 2800, 3200][lv];
+  return mkChoice({ prompt: 'Lies den Satz schnell. Welcher Satz war es?', visual: l8Blitz(alle[0], ms, true), answer: alle[0], wrong: alle.slice(1), layout: 'col',
+    explain: `Richtig ist: „${alle[0]}“ Achte beim schnellen Lesen trotzdem auf jedes Wort.`, key: 'sb' + lv + alle[0] });
+}
+
+
+let LF = null;
+function lfS() { if (!isObj(S.lf)) S.lf = {}; if (!Array.isArray(S.lf.h)) S.lf.h = []; S.lf.h = S.lf.h.filter(x => isObj(x) && typeof x.w === 'number'); return S.lf; }
+function lfTexte() {
+  const P = [], add = (arr, k) => (arr || []).forEach(x => { if (isObj(x) && typeof x.x === 'string' && x.t) { const n = x.x.split(/\s+/).filter(Boolean).length; if (n >= 35 && n <= 260) P.push({ id: k(x) + ':' + x.t, t: x.t, x: x.x, k: k(x), n }); } });
+  add(typeof LESETEXTE !== 'undefined' ? LESETEXTE : [], x => x.lv === 1 ? 2 : 3);
+  add(typeof LESETEXTE255 !== 'undefined' ? LESETEXTE255 : [], x => x.lv === 1 ? 2 : 3);
+  add(typeof LESEN34 !== 'undefined' ? LESEN34 : [], x => x.lv === 1 ? 3 : 4);
+  const seen = new Set(); return P.filter(x => !seen.has(x.id) && seen.add(x.id));
+}
+function lfStart(g0) {
+  LF = { g: g0, iv: null, runden: 0 };
+  g0.cleanup = () => { if (LF && LF.iv) clearInterval(LF.iv); try { speechSynthesis.cancel(); } catch (e) { } LF = null; };
+  lfWahl();
+}
+function lfWahl(neu) {
+  if (!LF) return; if (LF.iv) { clearInterval(LF.iv); LF.iv = null; }
+  const kl = (S.profile && S.profile.klasse) || 2, alle = lfTexte(), h = lfS().h, gelesen = new Set(h.map(x => x.id));
+  if (!LF.vor || neu) {
+    const pass = alle.filter(x => x.k === kl), rest = pass.length >= 4 ? pass : alle.filter(x => Math.abs(x.k - kl) <= 1);
+    LF.vor = R.shuffle(rest.filter(x => !gelesen.has(x.id))).concat(R.shuffle(rest.filter(x => gelesen.has(x.id)))).slice(0, 4);
+  }
+  const letzte = h.slice(-3).reverse();
+  setView(`<div class="game lf-game">${ksKopf('📖 Vorlese-Minute')}<main class="wrap"><section class="card">
+    <h2>Lies eine Minute lang laut vor</h2>
+    <ol class="lf-how"><li>Such dir einen Text aus und hol einen Erwachsenen dazu.</li><li>Tippe auf <b>Start</b> und lies laut und deutlich. Nicht hetzen, gut betont ist besser als schnell!</li>
+      <li>Der Erwachsene tippt Wörter an, bei denen du dich verlesen hast.</li><li>Nach einer Minute tippst du auf das letzte Wort, das du gelesen hast.</li></ol>
+    <div class="lf-texte">${LF.vor.map(x => `<button class="lf-t" data-act="lftext" data-id="${esc(x.id)}"><b>${esc(x.t)}</b><small>${x.n} Wörter${gelesen.has(x.id) ? ' · schon gelesen' : ''}</small></button>`).join('')}</div>
+    <div class="acts"><button class="btn ghost sm" data-act="lfandere">🔀 Andere Texte</button>${LF.runden ? '<button class="btn sm" data-act="lffertig">Fertig</button>' : ''}</div>
+    ${letzte.length ? `<p class="muted">Zuletzt: ${letzte.map(x => `${esc(x.t)} <b>${x.w}</b> Wörter pro Minute`).join(' · ')}</p>` : ''}</section></main></div>`, 'deutsch');
+}
+function lfLesen(id) {
+  if (!LF) return; const T = lfTexte().find(x => x.id === id); if (!T) return lfWahl();
+  if (LF.iv) clearInterval(LF.iv);
+  Object.assign(LF, { T, w: T.x.split(/\s+/).filter(Boolean), f: new Set(), t0: 0, sek: 0, phase: 'bereit', ende: -1, iv: null });
+  lfDraw();
+}
+function lfDraw() {
+  if (!LF || !LF.T) return; const P = LF.phase, rest = Math.max(0, 60 - Math.floor(LF.sek));
+  const kopf = P === 'bereit' ? `<button class="btn big" data-act="lflos">▶️ Start</button>${typeof Speech !== 'undefined' && Speech.ok ? '<button class="btn ghost" data-act="lfvor">🔊 Erst Lumi zuhören</button>' : ''}`
+    : P === 'liest' ? `<span class="lf-uhr${rest <= 10 ? ' bald' : ''}" id="lfUhr" aria-live="off">${rest}</span><button class="btn" data-act="lfgeschafft">Fertig gelesen ✓</button>`
+    : '<p class="lf-stopp">⏰ Stopp! Tippe auf das <b>letzte Wort</b>, das du gelesen hast.</p>';
+  setView(`<div class="game lf-game">${ksKopf('📖 ' + esc(LF.T.t))}<main class="wrap"><section class="card lf-karte">
+    <div class="lf-kopf">${kopf}</div>
+    <p class="lf-text${P === 'liest' ? ' laeuft' : ''}${P === 'ende' ? ' wahl' : ''}">${LF.w.map((w, i) => `<span class="lf-w${LF.f.has(i) ? ' falsch' : ''}" data-act="lfw" data-i="${i}">${esc(w)}</span>`).join(' ')}</p>
+    ${P === 'liest' ? '<p class="muted">Erwachsene: Tippt ein Wort an, wenn es falsch gelesen wurde. Nochmal tippen nimmt es zurück.</p>' : ''}
+    ${P === 'bereit' ? '<div class="acts"><button class="btn ghost sm" data-act="lfzurueck">‹ Anderer Text</button></div>' : ''}</section></main></div>`, 'deutsch');
+}
+function lfTick() {
+  if (!LF || LF.phase !== 'liest') return;
+  LF.sek = (Date.now() - LF.t0) / 1000; const el = document.getElementById('lfUhr'), rest = Math.max(0, 60 - Math.floor(LF.sek));
+  if (el) { el.textContent = rest; el.classList.toggle('bald', rest <= 10); }
+  if (LF.sek >= 60) { clearInterval(LF.iv); LF.iv = null; LF.sek = 60; LF.phase = 'ende'; Sound.quick ? Sound.quick() : Sound.tap(); lfDraw(); }
+}
+function lfAuswerten(ende) {
+  const n = ende + 1, f = [...LF.f].filter(i => i <= ende).length, sek = Math.max(10, Math.min(60, LF.sek)), w = Math.round(Math.max(0, n - f) * 60 / sek);
+  const st = lfS(), vorher = st.h.filter(x => x.id === LF.T.id), best = st.h.length ? Math.max(...st.h.map(x => x.w)) : 0;
+  st.h.push({ d: dayKey(), id: LF.T.id, t: LF.T.t, w, f, s: Math.round(sek), n }); st.h = st.h.slice(-100); LF.runden++; save();
+  const v = vorher.length ? vorher[vorher.length - 1].w : null;
+  const lob = v !== null ? (w > v ? `Beim letzten Mal waren es ${v}. Du bist <b>${w - v} Wörter schneller</b> geworden! 🚀` : w === v ? `Genauso viele wie beim letzten Mal (${v}). Stark!` : `Beim letzten Mal waren es ${v}. Lies den Text ruhig noch einmal, dann wird es flüssiger.`)
+    : w > best && best ? `Neuer Rekord! Dein bisher bestes Ergebnis waren ${best}. 🏆` : 'Lies denselben Text noch einmal. Beim zweiten Mal geht es meistens flüssiger!';
+  Sound.win(); if (typeof confetti === 'function' && (v === null || w > v)) confetti(60);
+  setView(`<div class="game lf-game">${ksKopf('📖 Vorlese-Minute')}<main class="wrap"><section class="card lf-erg">
+    <div class="lf-zahl"><b>${w}</b><span>Wörter pro Minute</span></div>
+    <p>${n} Wörter in ${Math.round(sek)} Sekunden${f ? `, davon ${plural(f, 'Wort', 'Wörter')} verlesen` : ', ohne Verleser'}.</p><p>${lob}</p>
+    <div class="acts"><button class="btn" data-act="lfnochmal">🔁 Den gleichen Text nochmal</button><button class="btn ghost" data-act="lfzurueck">📄 Anderer Text</button><button class="btn ghost" data-act="lffertig">Fertig</button></div></section></main></div>`, 'deutsch');
+}
+Object.assign(ACT, {
+  lftext: t => lfLesen(t.dataset.id),
+  lfandere: () => lfWahl(true),
+  lfzurueck: () => lfWahl(),
+  lfnochmal: () => { if (LF && LF.T) lfLesen(LF.T.id); },
+  lfvor: t => { if (LF && LF.T && Speech.ok) Speech.say(LF.T.x, 'de-DE', t); },
+  lflos: () => { if (!LF || LF.phase !== 'bereit') return; try { speechSynthesis.cancel(); } catch (e) { } LF.phase = 'liest'; LF.t0 = Date.now(); LF.sek = 0; LF.iv = setInterval(lfTick, 250); Sound.tap(); lfDraw(); },
+  lfgeschafft: () => { if (!LF || LF.phase !== 'liest') return; clearInterval(LF.iv); LF.iv = null; LF.sek = (Date.now() - LF.t0) / 1000; lfAuswerten(LF.w.length - 1); },
+  lfw: t => {
+    if (!LF) return; const i = +t.dataset.i;
+    if (LF.phase === 'liest') { if (LF.f.has(i)) LF.f.delete(i); else LF.f.add(i); t.classList.toggle('falsch', LF.f.has(i)); }
+    else if (LF.phase === 'ende') lfAuswerten(i);
+  },
+  lffertig: () => { if (LF && LF.g && typeof G !== 'undefined' && G === LF.g) customFinish(Math.max(1, LF.runden), 0, LF.runden >= 2 ? 3 : 2); }
+});
+
+function lfParentsHTML() {
+  const h = lfS().h; if (!h.length) return '';
+  const z = h.slice(-20), max = Math.max(40, ...z.map(x => x.w)), W = 300, H = 110, dx = z.length > 1 ? (W - 30) / (z.length - 1) : 0;
+  const pt = z.map((x, i) => [20 + i * dx, H - 14 - (x.w / max) * (H - 30)]);
+  return `<section class="card"><h2>📖 Vorlese-Minute</h2><p class="muted">Richtig gelesene Wörter pro Minute, die letzten ${z.length} Male. Am meisten hilft es, denselben Text zwei- oder dreimal zu lesen.</p>
+    <svg class="lf-graph" viewBox="0 0 ${W} ${H}" role="img" aria-label="Verlauf der Wörter pro Minute"><line x1="16" y1="${H - 14}" x2="${W - 6}" y2="${H - 14}" class="ax"/>
+      ${pt.length > 1 ? `<polyline points="${pt.map(p => p.map(v => v.toFixed(1)).join(',')).join(' ')}" class="ln"/>` : ''}${pt.map((p, i) => `<circle cx="${p[0].toFixed(1)}" cy="${p[1].toFixed(1)}" r="4" class="pt"><title>${z[i].d}: ${z[i].w}</title></circle>`).join('')}
+      <text x="${(pt[pt.length - 1][0] - 4).toFixed(1)}" y="${(pt[pt.length - 1][1] - 8).toFixed(1)}" class="lb" text-anchor="end">${z[z.length - 1].w}</text></svg>
+    <ul class="lf-liste">${h.slice(-5).reverse().map(x => `<li>${x.d.split('-').reverse().join('.')} · ${esc(x.t)} · <b>${x.w}</b> pro Minute${x.f ? ` · ${x.f} verlesen` : ''}</li>`).join('')}</ul></section>`;
+}
+
+
+function l8Teil(lv) {
+  for (let v = 0; v < 200; v++) {
+    const d = R.int(lv === 3 ? 3 : 2, 9);
+    let q, r = 0;
+    if (lv === 1) { q = R.int(11, 49); if (d * q > 99) continue; }
+    else if (lv === 2) { q = R.int(21, 199); if (d * q < 100 || d * q > 999) continue; }
+    else { q = R.int(12, 99); r = R.int(1, d - 1); if (d * q + r > 999) continue; }
+    if (q % 10 === 0) continue;
+    const qp = lv === 2 ? [Math.floor(q / 100) * 100, Math.floor(q % 100 / 10) * 10, q % 10].filter(x => x) : [Math.floor(q / 10) * 10, q % 10];
+    const n = d * q + r, np = qp.map(x => x * d); np[np.length - 1] += r;
+    return { n, d, q, r, np, qp };
+  }
+  return { n: 84, d: 4, q: 21, r: 0, np: [80, 4], qp: [20, 1] };
+}
+function l8Gueltig(A, parts) { return parts.every((p, i) => p > 0 && (i === parts.length - 1 && A.r ? true : p % A.d === 0)) && (!A.r || parts.slice(0, -1).every(p => p % A.d === 0)); }
+function l8Schritt(A, s) {
+  const { n, d, q, r, np, qp } = A, L = np.length - 1, lab = p => p.join(' + '), key = 'ts' + n + ':' + d + ':' + s;
+  const vis = mathLine([`${n}`, ':', `${d}`, '=', '?']);
+  if (s === 0) {
+    const kand = [], add = p => { const l = lab(p); if (p.every(x => x > 0) && l !== lab(np) && !kand.some(k => k === l) && !l8Gueltig(A, p)) kand.push(l); };
+    add(String(n).split('').map((z, i, a) => +z * Math.pow(10, a.length - 1 - i)).filter(x => x));
+    add([np[0] - 10].concat(np.slice(1, -1), [np[L] + 10])); add([np[0] + 10].concat(np.slice(1, -1), [np[L] - 10]));
+    for (let a = Math.floor(n / 10) * 10; a >= 10 && kand.length < 6; a -= 10) add([a, n - a]);
+    [1, -1, 2, -2, 3, -3, 4, -4].forEach(k => { if (kand.length < 3) add([np[0] + k].concat(np.slice(1, -1), [np[L] - k])); });
+    return mkChoice({ prompt: `Teile ${n} : ${d} halbschriftlich. Wie zerlegst du ${n} am besten?`, visual: vis, answer: lab(np), wrong: R.shuffle(kand).slice(0, 3), layout: 'grid2', key,
+      explain: `${n} = ${lab(np)}. ${r ? `${np.slice(0, -1).join(' und ')} ${L > 1 ? 'lassen' : 'lässt'} sich glatt durch ${d} teilen, im letzten Teil steckt der Rest.` : `Jeder Teil lässt sich glatt durch ${d} teilen.`}` });
+  }
+  const erg = np.map(p => Math.floor(p / d)), lab1 = e => e.map((x, i) => i === L && r ? `${x} Rest ${r}` : `${x}`).join(' und ');
+  if (s === 1) {
+    const w = [], add = e => { const l = lab1(e); if (l !== lab1(erg) && !w.includes(l)) w.push(l); };
+    add([erg[0] / 10].concat(erg.slice(1))); add(erg.slice(0, -1).concat([np[L]])); add([erg[0] + 1].concat(erg.slice(1))); add([erg[0]].concat(erg.slice(1, -1), [erg[L] + 1]));
+    return mkChoice({ prompt: `Rechne die Teilaufgaben: ${np.map(p => `${p} : ${d}`).join(', ')}`, visual: mathLine([`${n}`, '=', lab(np)]), answer: lab1(erg), wrong: w.slice(0, 3), layout: 'grid2', key,
+      explain: np.map((p, i) => `${p} : ${d} = ${erg[i]}${i === L && r ? ` Rest ${r}` : ''}`).join(', ') + '.' });
+  }
+  const zus = `${erg.join(' + ')} = ${q}`;
+  if (!r) return mkNumber({ prompt: `Zähl die Teilergebnisse zusammen. Was ist ${n} : ${d}?`, visual: vis, answer: q, key, explain: `${zus}, also ${n} : ${d} = ${q}. Probe: ${q} · ${d} = ${n}.` });
+  return mkChoice({ prompt: `Zähl die Teilergebnisse zusammen. Was ist ${n} : ${d}?`, visual: vis, answer: `${q} Rest ${r}`, wrong: [`${q}`, `${q - 1} Rest ${r + d}`, `${q + 1} Rest ${r}`], layout: 'grid2', key,
+    explain: `${zus}, der Rest bleibt ${r}. Also ${n} : ${d} = ${q} Rest ${r}. Der Rest muss immer kleiner als ${d} sein. Probe: ${q} · ${d} + ${r} = ${n}.` });
+}
+function genTeilenSchritte(ctx) {
+  const lv = (ctx && ctx.lv) || 1;
+  if (!(typeof G !== 'undefined' && G && G.mode === 'game' && G.id === 'teilenschritte')) return l8Schritt(l8Teil(lv), 2);
+  const A = G.tsA || (G.tsA = []), k = Math.floor(G.i / 3);
+  return l8Schritt(A[k] || (A[k] = l8Teil(lv)), G.i % 3);
+}
+
+
+const L8_KI = [
+  [1, 'c', 'Ein Bild zeigt einen Hai, der durch eine Einkaufsstraße schwimmt. Was ist das wahrscheinlich?', 'Ein erfundenes oder verändertes Bild', ['Ein echtes Foto von heute', 'Ein Foto aus der Zeitung, also stimmt es'], 'Mit Computerprogrammen und KI kann man Bilder erfinden oder verändern. Wenn etwas ganz unglaublich aussieht, frag nach, woher das Bild kommt.'],
+  [1, 't', 'Ein KI-Programm kann Bilder malen, die es in echt nie gegeben hat.', 'Stimmt', [], 'Eine KI kann auf Befehl neue Bilder erzeugen, zum Beispiel einen Pinguin auf dem Mond. Das Bild sieht echt aus, ist aber erfunden.'],
+  [1, 't', 'Was ein Chatbot schreibt, stimmt immer.', 'Stimmt nicht', [], 'Eine KI kann sich irren und klingt dabei trotzdem ganz sicher. Wichtige Dinge prüfst du in einem Buch oder fragst einen Erwachsenen.'],
+  [1, 'c', 'Was ist künstliche Intelligenz, kurz KI?', 'Ein Computerprogramm, das aus sehr vielen Beispielen gelernt hat', ['Ein Roboter mit echten Gefühlen', 'Ein Mensch, der im Computer wohnt'], 'Eine KI hat aus riesig vielen Texten oder Bildern Muster gelernt. Sie denkt und fühlt aber nicht wie ein Mensch.'],
+  [1, 'c', 'Ein Sprachassistent antwortet dir freundlich. Was ist er?', 'Ein Computerprogramm', ['Ein echter Freund', 'Ein Mensch im Lautsprecher'], 'Sprachassistenten sind Programme. Sie klingen nett, sind aber keine Freunde. Persönliche Dinge erzählst du lieber Menschen, denen du vertraust.'],
+  [1, 'c', 'Ein Spiel fragt nach deiner Adresse. Was machst du?', 'Nichts eingeben und einen Erwachsenen fragen', ['Die Adresse eintippen', 'Die Adresse einer Freundin eintippen'], 'Adresse, Telefonnummer und Schule sind persönliche Daten. Die gibst du im Internet nur mit deinen Eltern zusammen ein.'],
+  [1, 'c', 'Welches Passwort ist am sichersten?', 'Pinguin!Regen7Mond', ['1234', 'passwort'], 'Ein gutes Passwort ist lang und mischt Wörter, Zahlen und Zeichen. Dein Name oder 1234 sind viel zu leicht zu erraten.'],
+  [1, 't', 'Mein Passwort verrate ich meiner besten Freundin.', 'Stimmt nicht', [], 'Passwörter kennen nur du und deine Eltern. Auch beste Freunde könnten es aus Versehen weitersagen.'],
+  [1, 'c', 'Jemand, den du nicht kennst, schreibt dir: „Schick mir ein Foto von dir!“ Was tust du?', 'Nicht antworten und sofort einem Erwachsenen zeigen', ['Ein Foto schicken', 'Ein Foto von einer Freundin schicken'], 'Fremden schickst du keine Fotos. Zeig so eine Nachricht immer deinen Eltern oder einer Lehrerin. Du bekommst dafür keinen Ärger.'],
+  [1, 'c', 'Eine Nachricht sagt: „Schick das an 10 Leute, sonst passiert etwas Schlimmes!“ Was ist das?', 'Ein Kettenbrief, der Angst machen will', ['Eine wichtige Warnung', 'Eine Nachricht von der Polizei'], 'Kettenbriefe sind ausgedacht. Es passiert nichts, wenn du sie nicht weiterschickst. Zeig sie deinen Eltern und lösch sie.'],
+  [1, 't', 'Fotos von anderen Kindern darf ich einfach ins Internet stellen.', 'Stimmt nicht', [], 'Jeder darf selbst bestimmen, wo Fotos von ihm landen. Darum fragst du immer vorher, und bei Kindern auch die Eltern.'],
+  [1, 'c', 'In einem Spiel steht: „Kauf jetzt 500 Edelsteine!“ Was bedeutet das meistens?', 'Das kostet echtes Geld', ['Das ist ein Geschenk', 'Das ist immer kostenlos'], 'Solche Käufe im Spiel heißen In-App-Käufe. Sie kosten echtes Geld. Frag immer vorher deine Eltern.'],
+  [1, 'c', 'Woran erkennst du Werbung in einem Video?', 'Am Hinweis „Werbung“ oder „Anzeige“', ['Werbung ist immer lustig', 'Gar nicht, Werbung ist im Internet verboten'], 'Werbung muss gekennzeichnet sein. Achte auf Wörter wie Werbung, Anzeige oder gesponsert.'],
+  [1, 'c', 'Du liest im Internet: „Pinguine können fliegen!“ Wie prüfst du das?', 'In einem Sachbuch nachschauen oder einen Erwachsenen fragen', ['Es steht im Internet, also stimmt es', 'Es zehnmal weiterschicken'], 'Im Internet kann jeder etwas schreiben. Prüf es an einer zweiten Stelle, die du kennst. Pinguine können übrigens nicht fliegen, aber toll schwimmen.'],
+  [1, 'c', 'Wem darfst du dein Passwort sagen?', 'Meinen Eltern', ['Allen Freunden', 'Jedem, der im Chat danach fragt'], 'Wer im Chat nach deinem Passwort fragt, will meistens nichts Gutes. Nur deine Eltern dürfen es kennen.'],
+  [1, 't', 'Ein Bild kann echt aussehen und trotzdem erfunden sein.', 'Stimmt', [], 'KI-Bilder und bearbeitete Fotos sehen oft täuschend echt aus. Darum ist Nachfragen klug.'],
+  [1, 'c', 'Im Internet hast du etwas gesehen, das dir Angst macht. Was hilft?', 'Mit Mama, Papa oder einer Lehrerin darüber reden', ['Es geheim halten', 'Es noch zehnmal anschauen'], 'Du bist nicht schuld, wenn du etwas Gruseliges siehst. Erzähl es einem Erwachsenen, dann geht es dir schneller besser.'],
+  [1, 't', 'Eine KI hat Gefühle wie ein Mensch.', 'Stimmt nicht', [], 'Eine KI kann freundliche Sätze schreiben, sie fühlt dabei aber nichts. Sie rechnet aus, welche Wörter gut passen.'],
+  [1, 'c', 'Was bedeutet „Fake“?', 'Etwas ist gefälscht oder erfunden', ['Etwas ist besonders wahr', 'Etwas ist ganz neu'], 'Fake kommt aus dem Englischen und heißt gefälscht. Fake-Nachrichten sind ausgedachte Nachrichten, die echt wirken sollen.'],
+  [1, 'c', 'Deine Augen sind müde vom Tablet. Was hilft?', 'Eine Pause machen und in die Ferne schauen', ['Noch näher an den Bildschirm gehen', 'Heller stellen und weiterspielen'], 'Pausen tun Augen und Kopf gut. Schau aus dem Fenster in die Ferne und beweg dich ein bisschen.'],
+  [2, 'c', 'Ein Video zeigt einen berühmten Sportler, der sagt: „Kauft diese Schuhe!“ Seine Stimme klingt komisch. Was kann das sein?', 'Ein mit KI gefälschtes Video', ['Auf jeden Fall echt', 'Eine Live-Übertragung'], 'Mit KI kann man Gesichter und Stimmen nachmachen. So ein gefälschtes Video heißt Deepfake. Bei Werbung mit Berühmten ist Vorsicht klug.'],
+  [2, 't', 'Eine KI kann die Stimme eines Menschen nachmachen.', 'Stimmt', [], 'Aus kurzen Aufnahmen kann eine KI eine Stimme nachbauen. Darum glaubst du am Telefon nicht alles, nur weil eine Stimme bekannt klingt.'],
+  [2, 'c', 'Ein Spiel ist kostenlos. Wie verdienen die Macher trotzdem Geld?', 'Mit Werbung und Käufen im Spiel', ['Gar nicht', 'Jedes Spiel bezahlt der Staat'], 'Kostenlose Spiele verdienen oft mit Werbung und In-App-Käufen. Manche sind extra so gebaut, dass man immer weiterspielen will.'],
+  [2, 'c', 'Was gehört zu deinen persönlichen Daten?', 'Name, Adresse und Telefonnummer', ['Das Wetter von heute', 'Die Hauptstadt von Deutschland'], 'Persönliche Daten verraten, wer du bist und wo man dich findet. Mit ihnen gehst du vorsichtig um.'],
+  [2, 'c', 'Ein Chatbot gibt dir die Lösung für die Hausaufgabe. Was ist klug?', 'Selbst nachdenken und die Antwort prüfen', ['Einfach abschreiben', 'Nie wieder selbst rechnen'], 'Lernen klappt nur, wenn dein Kopf arbeitet. Eine KI kann außerdem Fehler machen. Nutze sie höchstens zum Nachfragen und prüfe alles.'],
+  [2, 't', 'Was ich ins Internet stelle, kann ich immer ganz sicher wieder löschen.', 'Stimmt nicht', [], 'Andere können Bilder und Texte speichern oder weiterschicken, bevor du sie löschst. Darum erst denken, dann posten.'],
+  [2, 'c', 'Eine App will deine Kamera und dein Mikrofon benutzen. Was tust du?', 'Erst mit den Eltern besprechen', ['Immer „Erlauben“ tippen', 'Das Tablet für immer ausschalten'], 'Apps sollen nur bekommen, was sie wirklich brauchen. Ob das passt, entscheidest du zusammen mit deinen Eltern.'],
+  [2, 'c', 'Woher weiß eine KI so viel?', 'Sie hat aus sehr vielen Texten und Bildern gelernt', ['Sie kann zaubern', 'Sie liest Gedanken'], 'Eine KI wurde mit riesigen Mengen an Texten und Bildern trainiert. Was darin falsch war, kann sie auch falsch gelernt haben.'],
+  [2, 'c', 'Eine Nachricht: „Du hast ein Tablet gewonnen! Klick hier!“ Was ist das wahrscheinlich?', 'Eine Falle, um an Daten oder Geld zu kommen', ['Ein echter Gewinn', 'Eine Nachricht von der Schule'], 'Bei Gewinnspielen, bei denen du gar nicht mitgemacht hast, ist fast immer ein Trick dahinter. Nicht klicken, Eltern zeigen.'],
+  [2, 'c', 'Was ist ein Influencer?', 'Jemand, der im Internet Videos macht und oft Werbung zeigt', ['Ein Computervirus', 'Eine Krankheit'], 'Influencer haben viele Zuschauer. Oft bekommen sie Geld dafür, dass sie Sachen zeigen. Das ist dann Werbung.'],
+  [2, 't', 'Wer im Internet mit mir chattet, ist immer das Kind, das er zu sein sagt.', 'Stimmt nicht', [], 'Im Internet kann sich jeder als jemand anderes ausgeben. Darum triffst du dich nie allein mit Leuten aus dem Internet.'],
+  [2, 'c', 'Woran kann man ein KI-Bild manchmal erkennen?', 'An komischen Händen, Schrift oder Schatten', ['Es ist immer schwarz-weiß', 'Es hat immer einen goldenen Rahmen'], 'Oft stimmen bei KI-Bildern Finger, Buchstaben oder Schatten nicht. Aber Achtung: Gute KI-Bilder sieht man nicht immer an.'],
+  [2, 'c', 'Jemand schickt ein gemeines Foto von einem anderen Kind herum. Was ist richtig?', 'Nicht weiterschicken und einem Erwachsenen Bescheid sagen', ['Weiterschicken, weil es lustig ist', 'Einen gemeinen Kommentar schreiben'], 'Wer gemeine Sachen weiterschickt, macht mit. Hilf lieber, indem du es einem Erwachsenen sagst.'],
+  [2, 'c', 'Was ist Cybermobbing?', 'Wenn jemand im Internet immer wieder fertiggemacht wird', ['Ein Computerspiel', 'Ein neues Handy'], 'Cybermobbing tut genauso weh wie Mobbing auf dem Schulhof. Hol dir Hilfe bei Erwachsenen, wenn es dir oder anderen passiert.'],
+  [2, 't', 'Nicht alles, was viele Leute teilen, ist wahr.', 'Stimmt', [], 'Auch falsche Nachrichten werden oft geteilt, weil sie aufregend klingen. Viele Klicks sind kein Beweis.'],
+  [2, 'c', 'Was macht ein Algorithmus in einer Video-App?', 'Er sucht aus, welche Videos du als Nächstes siehst', ['Er putzt den Bildschirm', 'Er lädt den Akku'], 'Der Algorithmus ist ein Rechenverfahren. Er zeigt dir mehr von dem, was du lange anschaust, damit du in der App bleibst.'],
+  [2, 't', 'Eine Suchmaschine zeigt mir nur richtige Antworten.', 'Stimmt nicht', [], 'Eine Suchmaschine findet Seiten, sie prüft aber nicht, ob alles darauf stimmt. Vergleiche lieber mehrere gute Seiten.'],
+  [2, 'c', 'Du brauchst ein Bild von einem Delfin für dein Plakat. Was ist gut?', 'Ein Bild aus einer Kinder-Seite nehmen und dazuschreiben, woher es ist', ['Irgendein Bild nehmen und sagen, ich hätte es gemalt', 'Ein Foto von einem fremden Kind nehmen'], 'Wer ein Bild gemacht hat, dem gehört es. Schreib die Quelle dazu oder mal selbst!']
+];
+function genIstDasEcht(ctx) {
+  const lv = (ctx && ctx.lv) || 1, pool = L8_KI.filter(x => x[0] <= lv), z = ctx && ctx.draw ? ctx.draw(pool) : R.pick(pool);
+  if (z[1] === 't') return mkChoice({ prompt: z[2], answer: z[3], wrong: [z[3] === 'Stimmt' ? 'Stimmt nicht' : 'Stimmt'], fixed: true, order: ['Stimmt', 'Stimmt nicht'], layout: 'row2', explain: z[5], key: 'ki' + z[2] });
+  return mkChoice({ prompt: z[2], answer: z[3], wrong: z[4], layout: 'col', explain: z[5], key: 'ki' + z[2] });
+}
+
+
+GAMES.blitzlesen = { id: 'blitzlesen', w: l8W('d-lesen'), g: 'd-lesen', t: 'Blitzlesen', d: 'Ein Wort blitzt kurz auf: Welches war es?', i: '⚡', gen: genBlitzlesen, max: 3, start: [1, 1, 2, 3], klv: [2, 3, 4] };
+GAMES.satzblitz = { id: 'satzblitz', w: l8W('d-lesen'), g: 'd-lesen', t: 'Satz-Blitz', d: 'Ein ganzer Satz blitzt auf: Welcher war es genau?', i: '💨', gen: genSatzBlitz, max: 3, start: [1, 1, 2, 3], klv: [2, 3, 4] };
+GAMES.vorleseminute = { id: 'vorleseminute', w: l8W('d-lesen'), g: 'd-lesen', t: 'Vorlese-Minute', d: 'Eine Minute laut vorlesen: Wie viele Wörter schaffst du?', i: '⏱️', type: 'custom', run: g0 => lfStart(g0), nomix: 1 };
+GAMES.teilenschritte = { id: 'teilenschritte', w: l8W('m-rechnen'), g: 'm-rechnen', t: 'Teilen in Schritten', d: 'Halbschriftlich: zerlegen, teilen, zusammenzählen', i: '🪜', gen: genTeilenSchritte, max: 3, start: [1, 1, 1, 2], klv: [3, 4, 4], n: 9 };
+GAMES.istdasecht = { id: 'istdasecht', w: l8W('su-ich'), g: 'su-ich', t: 'Ist das echt?', d: 'KI-Bilder, Fakes, Passwörter und sicher im Netz', i: '🤖', gen: genIstDasEcht, max: 2, start: [1, 1, 2, 2], klv: [2, 3] };
+if (typeof EK !== 'undefined') Object.assign(EK, {
+  blitzlesen: { t: 'Blitzlesen', e: ['Gute Leser erkennen viele Wörter auf einen *Blick*, ohne Buchstabe für Buchstabe zu lesen.', 'Schau auf die Mitte des Wortes und merk dir seine *Form*.', 'Achtung: Ähnliche Wörter unterscheiden sich oft nur in einem Buchstaben.'], b: ['Haus, Maus, Laus: nur der erste Buchstabe ist anders'] },
+  satzblitz: { t: 'Satz-Blitz', e: ['Lies den ganzen Satz in einem Zug.', 'Merk dir, *wer* etwas tut und *was* passiert.', 'Die falschen Sätze sehen fast gleich aus. Oft ist nur ein Wort anders.'], b: ['Die Katze schläft auf dem Sofa.', 'Die Tatze schläft auf dem Sofa. Das ergibt keinen Sinn!'] },
+  teilenschritte: { t: 'Halbschriftlich teilen', e: ['*Zerlege* die Zahl in Teile, die du leicht durch die Teilerzahl teilen kannst. Fang mit einem großen Zehner- oder Hunderterteil an.', 'Teile jeden Teil einzeln.', 'Zähl die Teilergebnisse *zusammen*. Ein Rest muss immer kleiner als die Teilerzahl sein.'], b: ['84 : 4 = ?', '84 = 80 + 4', '80 : 4 = 20 und 4 : 4 = 1', '20 + 1 = 21'] },
+  istdasecht: { t: 'Ist das echt?', e: ['Bilder, Videos und Stimmen kann man mit *KI* erfinden oder fälschen.', 'Prüf Überraschendes an einer *zweiten Stelle* oder frag einen Erwachsenen.', '*Persönliches* wie Adresse, Passwort und Fotos gibst du nicht an Fremde.'], b: ['Ein Hai in der Einkaufsstraße? Wahrscheinlich ein erfundenes Bild.'] }
+});
+
+/*@@src spiele278.js@@*/
+
+
+
+const GTR_W = ['Etwas Gelbes', 'Ein Tier, das im Meer lebt', 'Ein Obst', 'Ein Gemüse', 'Etwas für den Strand', 'Ein Tier auf dem Bauernhof', 'Etwas Kaltes',
+  'Etwas, das fliegen kann', 'Ein Spielzeug', 'Etwas in der Schultasche', 'Ein Getränk', 'Etwas für den Winter', 'Ein Tier mit Streifen', 'Etwas Rundes',
+  'Eine Farbe', 'Ein Fahrzeug', 'Etwas in der Küche', 'Ein Beruf', 'Ein Geburtstagsgeschenk', 'Eine Sportart', 'Ein Tier im Zoo', 'Etwas Süßes',
+  'Etwas, das leuchtet', 'Ein Musikinstrument', 'Etwas im Badezimmer', 'Etwas Nasses', 'Etwas auf einer Pizza', 'Ein Wochentag', 'Etwas am Himmel',
+  'Etwas Grünes', 'Etwas Rotes', 'Eine Märchenfigur', 'Etwas im Garten', 'Ein Insekt', 'Ein Vogel', 'Etwas, das laut ist', 'Ein Tier, das springt',
+  'Etwas aus Holz', 'Etwas zum Frühstück', 'Etwas auf dem Spielplatz', 'Etwas an Weihnachten', 'Etwas an Ostern', 'Ein Tier, das nachts wach ist',
+  'Etwas im Kinderzimmer', 'Etwas zum Malen', 'Etwas im Sommer', 'Etwas im Schnee', 'Ein Reimwort auf Haus', 'Ein Reimwort auf Hose',
+  'Etwas am Meer', 'Ein Tier mit acht Beinen', 'Etwas in den Ferien', 'Ein Tier mit langem Schwanz', 'Etwas Weiches', 'Etwas Hartes', 'Eine Eissorte',
+  'Ein Kuchen', 'Etwas auf dem Fußballplatz', 'Etwas mit Rädern', 'Ein Körperteil', 'Etwas für den Kopf', 'Etwas für die Füße', 'Ein Tier in Afrika',
+  'Etwas Gruseliges', 'Eine Superkraft', 'Ein Haustier', 'Etwas im Supermarkt', 'Ein Mittagessen', 'Ein englisches Wort', 'Ein spanisches Wort',
+  'Eine Zahl von 1 bis 10', 'Etwas in der Federtasche', 'Ein Schulfach', 'Ein Tier, das schwimmt', 'Etwas aus Glas', 'Etwas, das stinkt',
+  'Etwas ganz Kleines', 'Etwas Riesiges', 'Ein Spiel für draußen', 'Ein Wetter', 'Eine Jahreszeit', 'Eine Blume', 'Ein Baum', 'Etwas, das brummt',
+  'Etwas ganz Schnelles', 'Etwas ganz Langsames', 'Ein Tier, das Eier legt', 'Ein Dinosaurier', 'Etwas mit Knöpfen', 'Etwas in einer Höhle',
+  'Etwas im Wald', 'Etwas auf dem Bauernhof', 'Etwas im Kühlschrank', 'Etwas zum Schlafen', 'Etwas mit Flügeln', 'Etwas auf einer Party',
+  'Ein Tier mit Fell', 'Etwas Rosa', 'Etwas Blaues', 'Etwas für den Regen'];
+function gtrKey(s) {
+  return normQ(String(s)).replace(/[^a-z0-9 ]/g, ' ').replace(/\s+/g, ' ').trim().replace(/^(der|die|das|ein|eine|einen|den|dem|el|la|los|las|the|a) /, '').replace(/ /g, '');
+}
+function gtrLev(a, b) {
+  const d = Array.from({ length: a.length + 1 }, (_, i) => [i]); for (let j = 1; j <= b.length; j++) d[0][j] = j;
+  for (let i = 1; i <= a.length; i++) for (let j = 1; j <= b.length; j++) d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+  return d[a.length][b.length];
+}
+
+function gtrGleich(a, b) {
+  const x = gtrKey(a), y = gtrKey(b); if (!x || !y) return false; if (x === y) return true;
+  const st = w => w.length > 4 ? w.replace(/(en|er|e|n|s)$/, '') : w;
+  if (st(x) === st(y)) return true;
+  const [k, l] = x.length <= y.length ? [x, y] : [y, x];
+  if (k.length >= 3 && l.indexOf(k) === 0 && l.length - k.length <= 2) return true;
+  return k.length >= 5 && gtrLev(x, y) <= 1;
+}
+function gtrGruppen(ant) {
+  const up = ant.map((_, i) => i), f = i => up[i] === i ? i : (up[i] = f(up[i]));
+  ant.forEach((a, i) => ant.forEach((b, j) => { if (j > i && a && b && gtrGleich(a, b)) up[f(j)] = f(i); }));
+  const m = {}; ant.forEach((a, i) => { if (!a) return; const r = f(i); (m[r] = m[r] || []).push(i); });
+  return Object.values(m).sort((p, q) => q.length - p.length || p[0] - q[0]);
+}
+function paGedanken() {
+  PA.gt = { w: R.shuffle(GTR_W.slice()).slice(0, PA.o.r || 5), r: 0, tr: 0, ant: [], grp: [], sel: -1 };
+  gtrRunde();
+}
+function gtrRunde() {
+  const T = PA.gt;
+  if (T.r >= T.w.length) return paEnd(`Zusammen hattet ihr <b>${T.tr} Gedanken-Treffer</b> in ${plural(T.w.length, 'Runde', 'Runden')}. ${T.tr >= PA.pl.length * T.w.length / 2 ? 'Ihr denkt ja fast gleich! 🧠✨' : 'Beim nächsten Mal denkt ihr noch mehr gleich!'}`);
+  T.ant = PA.pl.map(() => ''); T.sel = -1;
+  paView(`<main class="wrap gtr"><section class="card gtr-wort"><small>Runde ${T.r + 1} von ${T.w.length}</small><h2>${esc(T.w[T.r])}</h2>
+    <p>Lest es laut vor. Dann schreibt jedes Kind heimlich das <b>Erste</b> auf, was ihm dazu einfällt. Wer dasselbe denkt, bekommt einen Stern ⭐.</p>
+    <button class="btn big" data-act="gtrlos">Los geht’s ›</button></section><p class="gtr-team">Gedanken-Treffer bisher: <b>${T.tr}</b></p></main>`);
+  paYay();
+}
+function gtrEingabe(i) { paHand(i, '', 'Die anderen schauen weg! 🙈', () => gtrFeld(i)); }
+function gtrFeld(i) {
+  const T = PA.gt, p = paP(i); T.i = i;
+  paView(`<main class="wrap gtr"><section class="card gtr-feld" style="--pc:${p.c}"><small>${esc(T.w[T.r])}</small><h2>${p.a} ${esc(p.n)}, was fällt dir ein?</h2>
+    <input id="gtrIn" class="input gtr-in" maxlength="24" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="done" aria-label="Dein Wort">
+    <button class="btn big" data-act="gtrok">Fertig ✓</button><p class="muted">Ein Wort reicht. Wie man es schreibt, ist egal.</p></section></main>`);
+  const el = $('#gtrIn'); if (el) { try { el.focus(); } catch (e) { } el.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); gtrOk(); } }); }
+}
+function gtrOk() {
+  const T = PA && PA.gt, el = $('#gtrIn'); if (!T || !el) return;
+  const v = el.value.replace(/\s+/g, ' ').trim().slice(0, 24); if (!v) { toast('Schreib ein Wort auf.'); return; }
+  T.ant[T.i] = v; paTone(660, 0, .1, 'triangle', .15);
+  if (T.i + 1 < PA.pl.length) return gtrEingabe(T.i + 1);
+  T.grp = gtrGruppen(T.ant); gtrZeige();
+}
+function gtrZeige() {
+  const T = PA.gt, tr = T.grp.filter(g => g.length > 1);
+  paView(`<main class="wrap gtr"><section class="card"><small>Runde ${T.r + 1} · ${esc(T.w[T.r])}</small>
+    <h2>${tr.length ? `${tr.reduce((s, g) => s + g.length, 0)} Kinder haben gleich gedacht! 🎉` : 'Diesmal hat jeder etwas anderes gedacht.'}</h2>
+    <div class="gtr-gs">${T.grp.map((g, k) => `<button class="gtr-g${g.length > 1 ? ' treffer' : ''}${T.sel === k ? ' sel' : ''}" data-act="gtrgrp" data-k="${k}">${g.map(i => { const p = PA.pl[i]; return `<span class="gtr-m" style="--pc:${p.c}"><i>${p.a}</i><b>${esc(p.n)}</b><em>${esc(T.ant[i])}</em></span>`; }).join('')}${g.length > 1 ? '<span class="gtr-st">Treffer! ⭐</span>' : ''}</button>`).join('')}</div>
+    <p class="muted">Meint ihr eigentlich dasselbe? Tippt zwei Karten nacheinander an, dann zählen sie zusammen.</p>
+    <div class="acts"><button class="btn big" data-act="gtrweiter">${T.r + 1 < T.w.length ? 'Nächste Runde ›' : 'Zum Ergebnis ›'}</button>${T.zus ? '<button class="btn ghost" data-act="gtrneu">Wieder trennen</button>' : ''}</div></section></main>`);
+  if (tr.length) paYay();
+}
+Object.assign(ACT, {
+  gtrlos: () => { if (PA && PA.gt) gtrEingabe(0); },
+  gtrok: () => gtrOk(),
+  gtrgrp: t => {
+    const T = PA && PA.gt; if (!T) return; const k = +t.dataset.k;
+    if (T.sel < 0 || T.sel === k) { T.sel = T.sel === k ? -1 : k; return gtrZeige(); }
+    const a = T.grp[T.sel], b = T.grp[k]; T.grp = T.grp.filter((_, j) => j !== k && j !== T.sel); T.grp.unshift(a.concat(b).sort((x, y) => x - y));
+    T.sel = -1; T.zus = 1; gtrZeige();
+  },
+  gtrneu: () => { const T = PA && PA.gt; if (!T) return; T.grp = gtrGruppen(T.ant); T.sel = -1; T.zus = 0; gtrZeige(); },
+  gtrweiter: () => {
+    const T = PA && PA.gt; if (!T) return;
+    T.grp.forEach(g => { if (g.length > 1) { g.forEach(i => { PA.pl[i].p++; }); T.tr += g.length; } });
+    T.r++; T.zus = 0; gtrRunde();
+  }
+});
+PA_G.push({ id: 'gedanken', e: '💭', t: 'Gedanken-Treffer', d: 'Denkt ihr dasselbe?', min: 2, max: 8, dur: '10 Min.', neu: 1, run: () => paGedanken(),
+  how: ['Ein Begriff erscheint, zum Beispiel „Etwas Gelbes“. Lest ihn laut vor.', 'Das iPad wandert reihum. Jedes Kind schreibt heimlich das <b>Erste</b> auf, was ihm einfällt. Die anderen schauen weg!', 'Dann wird aufgedeckt: Wer dasselbe geschrieben hat, bekommt einen Stern ⭐. Ihr spielt zusammen, es geht darum, möglichst oft gleich zu denken.'],
+  opts: [{ k: 'r', t: 'Runden', v: [5, 8, 10], l: ['5', '8', '10'], d: 5 }] });
+PA_GM.gedanken = PA_G[PA_G.length - 1];
+GAMES.pagedanken = { id: 'pagedanken', w: 'meine', g: 'n-party', o: 10, t: 'Gedanken-Treffer', d: 'Gleich denken! 2 bis 8 Kinder', i: '💭', type: 'tool', open: () => showPaIntro('gedanken') };
+
+
+FUN_GAMES.sammelduell = { c: 'knobel', t: 'Sammel-Duell', d: 'Zieh Karten, sammle Meerestier-Familien und schick die Haie zu {M}!', i: '🦀', wins: 1 };
+FUN_IMPL.sammelduell = function (stage) {
+  const FAM = [['🐟', 'Fische', 1], ['🦀', 'Krabben', 2], ['🐙', 'Kraken', 3], ['🐢', 'Schildkröten', 4], ['🐚', 'Muscheln', 5]];
+  const n = M(), wert = s => s[0] === 'g' ? 2 : s[0] === 'f' ? 1 : 0, fam = s => +s[1];
+  const later = (fn, ms) => FUN.timeouts.push(setTimeout(() => { if (FUN && FUN.id === 'sammelduell' && !ende) fn(); }, window.LW_SZ_AUS ? 30 : ms));
+  let modus = -1, piles = [[], []], coll = [[], []], dran = 0, offen = null, ende = false, msg = '', zuletzt = null, wert0 = null;
+  const zahl = (w, f) => coll[w].reduce((s, x) => s + (x !== 'h' && fam(x) === f ? wert(x) : 0), 0);
+  const haie = w => coll[w].filter(x => x === 'h').length;
+  const sideHTML = (s, cls = '') => s === 'h' ? `<span class="sdu-s hai ${cls}"><b>🦈</b><small>Hai</small></span>`
+    : `<span class="sdu-s ${s[0] === 'g' ? 'gold' : ''} ${cls}"><b>${FAM[fam(s)][0]}</b><small>${s[0] === 'g' ? 'Gold ×2' : FAM[fam(s)][1]}</small></span>`;
+  function deal() {
+    for (let v = 0; v < 60; v++) {
+      const S0 = []; FAM.forEach((_, f) => { for (let k = 0; k < 12; k++) S0.push('f' + f); S0.push('g' + f); }); for (let k = 0; k < 7; k++) S0.push('h');
+      const s = R.shuffle(S0), cards = []; for (let k = 0; k < 72; k += 2) cards.push({ s: [s[k], s[k + 1]], up: R.int(0, 1) });
+      if (cards.some(c => c.s[0] === 'h' && c.s[1] === 'h')) continue;
+      piles = [cards.slice(0, 18), cards.slice(18)]; return;
+    }
+  }
+  const top = p => piles[p].length ? piles[p][piles[p].length - 1] : null;
+  function pot(w) {
+    let v = 0; FAM.forEach((F, f) => { const d = zahl(w, f) - zahl(1 - w, f); v += F[2] * Math.tanh(d / 2); });
+    const h = haie(w) - haie(1 - w); return v - (h > 0 ? 2 : h < 0 ? -2 : 0);
+  }
+  function probe(w, s) { const z = s === 'h' ? 1 - w : w; coll[z].push(s); const v = pot(w); coll[z].pop(); return v; }
+  function sammlungHTML(w) {
+    const wer = w ? n : 'Du', zeigen = modus === 0;
+    const inhalt = zeigen ? FAM.map((F, f) => `<span class="sdu-z${zahl(w, f) ? '' : ' leer'}" title="${F[1]}">${F[0]}<b>${zahl(w, f)}</b></span>`).join('') + `<span class="sdu-z hai${haie(w) ? '' : ' leer'}">🦈<b>${haie(w)}</b></span>`
+      : `<span class="sdu-stapel">${coll[w].length ? sideHTML(coll[w][coll[w].length - 1], 'klein') : '<i>noch leer</i>'}<b>${plural(coll[w].length, 'Karte', 'Karten')}</b></span><span class="muted">Merk dir, was ${w ? n : 'du'} hat${w ? '' : 'st'}!</span>`;
+    return `<div class="sdu-reihe${dran === w && !ende ? ' dran' : ''}"><b class="sdu-wer">${wer}</b><div class="sdu-zs">${inhalt}</div></div>`;
+  }
+  function draw() {
+    funHud(`Stapel: ${piles[0].length} · ${piles[1].length}`);
+    if (modus < 0) {
+      stage.innerHTML = `<div class="sdu"><div class="sdu-start"><h2>Sammel-Duell gegen ${esc(n)}</h2>
+        <p>Zieh eine Karte von einem der zwei Stapel. Jede Karte hat <b>zwei Seiten</b>. Du behältst eine: Meerestiere kommen in <b>deine</b> Sammlung, ein Hai 🦈 geht zu <b>${esc(n)}</b>.</p>
+        <p>Am Ende bekommt bei jeder Tier-Familie, wer mehr davon hat, den Pokal mit ihren Sternen. Goldene Karten zählen doppelt. Wer mehr Haie hat, verliert seinen kleinsten Pokal.</p>
+        <div class="sdu-pk">${FAM.map(F => `<span>${F[0]} ${'⭐'.repeat(F[2])}</span>`).join('')}</div>
+        <div class="acts"><button class="btn" data-w="m0">Leicht: Zahlen sehen</button><button class="btn ghost" data-w="m1">Profi: alles merken</button></div></div></div>`;
+      return;
+    }
+    const ich = dran === 0 && !ende && !offen;
+    const stapel = p => { const t = top(p); return `<button class="sdu-p${ich && t ? ' frei' : ''}" data-p="${p}" ${ich && t ? '' : 'disabled'} aria-label="${p ? 'Rechter' : 'Linker'} Stapel, ${piles[p].length} Karten${t ? ', oben ' + (t.s[t.up] === 'h' ? 'Hai' : FAM[fam(t.s[t.up])][1]) : ''}">${t ? sideHTML(t.s[t.up]) : '<i>leer</i>'}<small>${piles[p].length}</small></button>`; };
+    const wahl = offen ? `<div class="sdu-wahl"><p>Die Karte hat zwei Seiten. <b>Welche nimmst du?</b></p><div>${offen.c.s.map((s, k) => `<button class="sdu-w" data-k="${k}">${sideHTML(s)}<em>${s === 'h' ? `Hai zu ${esc(n)}` : 'zu dir'}</em></button>`).join('')}</div></div>` : '';
+    const pokale = modus === 0 ? `<div class="sdu-pk">${FAM.map((F, f) => { const a = zahl(0, f), b = zahl(1, f); return `<span class="${a > b ? 'du' : b > a ? 'lumi' : ''}">${F[0]} ${'⭐'.repeat(F[2])}</span>`; }).join('')}</div>` : '';
+    stage.innerHTML = `<div class="sdu">${sammlungHTML(1)}<div class="sdu-mitte">${stapel(0)}${wahl || (zuletzt ? `<div class="sdu-last">${sideHTML(zuletzt)}</div>` : '<div class="sdu-last"></div>')}${stapel(1)}</div>
+      <p class="sdu-msg" aria-live="polite">${esc(msg)}</p>${pokale}${sammlungHTML(0)}</div>`;
+  }
+  function weiter() {
+    if (!piles[0].length || !piles[1].length) return wertung();
+    dran = 1 - dran; draw(); if (dran === 1) later(lumi, 1200);
+  }
+  function gib(w, s) { if (s === 'h') coll[1 - w].push('h'); else coll[w].push(s); zuletzt = s; }
+  function ziehe(p) {
+    if (ende || dran !== 0 || offen || !top(p)) return;
+    offen = { c: piles[p].pop() }; msg = 'Umgedreht! Welche Seite nimmst du?'; Sound.tap(); draw();
+  }
+  function waehle(k) {
+    if (!offen || ende || dran !== 0) return; const s = offen.c.s[k]; offen = null; gib(0, s);
+    msg = s === 'h' ? `Du schickst ${n} einen Hai! 🦈` : `Du nimmst ${s[0] === 'g' ? 'eine goldene Karte ' : ''}${FAM[fam(s)][0]} ${FAM[fam(s)][1]}.`;
+    Sound.good(); weiter();
+  }
+  function lumi() {
+    if (ende || dran !== 1) return;
+    const leicht = modus === 0 && R.chance(.35);
+    const ps = [0, 1].filter(p => top(p)).map(p => ({ p, v: Math.max(...top(p).s.map(s => probe(1, s))) * .4 + probe(1, top(p).s[top(p).up]) + (leicht ? Math.random() * 3 : 0) })).sort((a, b) => b.v - a.v);
+    const p = ps[0].p, c = piles[p].pop(), k = leicht && R.chance(.5) ? R.int(0, 1) : (probe(1, c.s[0]) >= probe(1, c.s[1]) ? 0 : 1), s = c.s[k];
+    gib(1, s);
+    msg = `${n} zieht vom ${p ? 'rechten' : 'linken'} Stapel und ` + (s === 'h' ? 'schickt dir einen Hai! 🦈' : `nimmt ${s[0] === 'g' ? 'eine goldene Karte ' : ''}${FAM[fam(s)][0]} ${FAM[fam(s)][1]}.`) + ' Du bist dran.';
+    if (s === 'h') Sound.bad(); else Sound.tap();
+    weiter();
+  }
+  function wertung() {
+    ende = true; dran = -1;
+    const pk = [[], []], zeilen = FAM.map((F, f) => { const a = zahl(0, f), b = zahl(1, f), w = a > b ? 0 : b > a ? 1 : -1; if (w >= 0) pk[w].push(F[2]); return [F, a, b, w]; });
+    const ha = haie(0), hb = haie(1), los = ha > hb ? 0 : hb > ha ? 1 : -1; let weg = 0;
+    if (los >= 0 && pk[los].length) { weg = Math.min(...pk[los]); pk[los].splice(pk[los].indexOf(weg), 1); }
+    const s0 = pk[0].reduce((a, b) => a + b, 0), s1 = pk[1].reduce((a, b) => a + b, 0), sieg = s0 >= s1;
+    FUN.result = sieg ? 'win' : 'lose';
+    wert0 = { s0, s1 };
+    stage.innerHTML = `<div class="sdu"><div class="sdu-end"><h2>${sieg ? (s0 === s1 ? 'Gleichstand! Dann gewinnt die Jüngere, also du! 🏆' : 'Du hast gewonnen! 🏆') : `${esc(n)} hat gewonnen.`}</h2>
+      <table class="sdu-t"><thead><tr><th>Familie</th><th>Du</th><th>${esc(n)}</th></tr></thead><tbody>
+      ${zeilen.map(([F, a, b, w]) => `<tr><td>${F[0]} ${F[1]} <small>${'⭐'.repeat(F[2])}</small></td><td class="${w === 0 ? 'pk' : ''}">${a}${w === 0 ? ' 🏆' : ''}</td><td class="${w === 1 ? 'pk' : ''}">${b}${w === 1 ? ' 🏆' : ''}</td></tr>`).join('')}
+      <tr><td>🦈 Haie</td><td>${ha}</td><td>${hb}</td></tr></tbody>
+      <tfoot><tr><td>Sterne</td><td><b>${s0}</b></td><td><b>${s1}</b></td></tr></tfoot></table>
+      <p>${los < 0 ? 'Gleich viele Haie: Niemand verliert einen Pokal.' : `${los ? n + ' hat' : 'Du hast'} mehr Haie und ${weg ? `verlier${los ? 't' : 'st'} den Pokal mit ${plural(weg, 'Stern', 'Sternen')}.` : `hat${los ? '' : 'test'} aber keinen Pokal zu verlieren.`}`}</p>
+      <div class="acts"><button class="btn" data-w="fertig">Fertig</button></div></div></div>`;
+    if (sieg) Sound.win(); else Sound.bad();
+  }
+  function start(m) { modus = m; deal(); coll = [[], []]; dran = 0; offen = null; ende = false; zuletzt = null; msg = 'Du fängst an. Tippe auf einen Stapel.'; draw(); }
+  stage.addEventListener('click', e => {
+    if (!FUN || FUN.id !== 'sammelduell') return; const t = e.target.closest('button'); if (!t || t.disabled) return;
+    if (t.dataset.w === 'm0' || t.dataset.w === 'm1') start(+t.dataset.w[1]);
+    else if (t.dataset.w === 'fertig') funEnd();
+    else if (t.dataset.p !== undefined) ziehe(+t.dataset.p);
+    else if (t.dataset.k !== undefined) waehle(+t.dataset.k);
+  });
+  FUN.dbg = { stand: () => ({ modus, piles: piles.map(p => p.map(c => ({ s: c.s.slice(), up: c.up }))), coll: coll.map(c => c.slice()), dran, offen: offen ? offen.c.s.slice() : null, ende, msg, wert: wert0 }),
+    setz: o => { if (o.piles) piles = o.piles.map(p => p.map(c => ({ s: c.s.slice(), up: c.up || 0 }))); if (o.coll) coll = o.coll.map(c => c.slice()); if (o.dran !== undefined) dran = o.dran; offen = null; draw(); },
+    start, ziehe, waehle, lumi, wertung };
+  draw();
+};
+
+
+const INS_W = 10, INS_H = 7;
+const INS_KARTE = ['wwwwwwwwww', 'wwssssssww', 'wsgggggssw', 'wsggggggsw', 'wsgggggssw', 'wwssssssww', 'wwwwwwwwww'].join('');
+const INS_KAT = [['natur', '🌳 Natur'], ['haus', '🏠 Häuser'], ['spass', '🎡 Spaß'], ['tier', '🐧 Tiere'], ['wasser', '⛵ Wasser']];
+
+const INS_DING = {
+  baum: ['🌳', 'Baum', 3, 'l', 'natur'], tanne: ['🌲', 'Tanne', 3, 'l', 'natur'], palme: ['🌴', 'Palme', 4, 'l', 'natur'], blume: ['🌷', 'Tulpe', 1, 'l', 'natur'],
+  sonnenblume: ['🌻', 'Sonnenblume', 1, 'l', 'natur'], pilz: ['🍄', 'Pilz', 2, 'l', 'natur'], kaktus: ['🌵', 'Kaktus', 3, 'l', 'natur'], stein: ['🪨', 'Stein', 1, 'l', 'natur'],
+  zelt: ['⛺', 'Zelt', 4, 'l', 'haus'], huette: ['🛖', 'Hütte', 6, 'l', 'haus'], haus: ['🏠', 'Haus', 8, 'l', 'haus'], hausgarten: ['🏡', 'Haus mit Garten', 10, 'l', 'haus'],
+  laden: ['🏪', 'Laden', 12, 'l', 'haus'], turm: ['🗼', 'Turm', 12, 'l', 'haus'], schule: ['🏫', 'Schule', 15, 'l', 'haus'], burg: ['🏰', 'Burg', 20, 'l', 'haus'],
+  bank: ['🪑', 'Bank', 2, 'l', 'spass'], laterne: ['🏮', 'Laterne', 2, 'l', 'spass'], schneemann: ['⛄', 'Schneemann', 3, 'l', 'spass'], fussballtor: ['🥅', 'Fußballtor', 5, 'l', 'spass'],
+  rutsche: ['🛝', 'Rutsche', 6, 'l', 'spass'], brunnen: ['⛲', 'Brunnen', 8, 'l', 'spass'], karussell: ['🎠', 'Karussell', 10, 'l', 'spass'], riesenrad: ['🎡', 'Riesenrad', 15, 'l', 'spass'],
+  pinguin: ['🐧', 'Pinguin', 4, 'a', 'tier'], robbe: ['🦭', 'Robbe', 5, 'a', 'tier'], vogel: ['🐦', 'Vogel', 2, 'l', 'tier'], krabbe: ['🦀', 'Krabbe', 2, 'a', 'tier'],
+  hund: ['🐕', 'Hund', 4, 'l', 'tier'], katze: ['🐈', 'Katze', 4, 'l', 'tier'], hase: ['🐇', 'Hase', 3, 'l', 'tier'], schildkroete: ['🐢', 'Schildkröte', 3, 'a', 'tier'],
+  kuh: ['🐄', 'Kuh', 5, 'l', 'tier'], pferd: ['🐎', 'Pferd', 6, 'l', 'tier'],
+  ente: ['🦆', 'Ente', 2, 'a', 'wasser'], fisch: ['🐟', 'Fisch', 2, 'w', 'wasser'], boot: ['⛵', 'Segelboot', 6, 'w', 'wasser'], delfin: ['🐬', 'Delfin', 8, 'w', 'wasser'],
+  wal: ['🐳', 'Wal', 10, 'w', 'wasser'], schiff: ['🚢', 'Schiff', 12, 'w', 'wasser']
+};
+const INS_HAUS = ['zelt', 'huette', 'haus', 'hausgarten', 'laden', 'schule', 'burg', 'turm'];
+const INS_TIER = ['pinguin', 'robbe', 'vogel', 'krabbe', 'hund', 'katze', 'hase', 'schildkroete', 'kuh', 'pferd', 'ente', 'fisch', 'delfin', 'wal'];
+const INS_BODEN = { weg: ['🟫', 'Weg legen', 1], land: ['🏖️', 'Land aufschütten', 5], gras: ['🌱', 'Gras säen', 1], raeumen: ['🧺', 'Wegräumen', 0] };
+let INS_M = 'bauen', INS_SEL = '';
+function insS() {
+  if (!isObj(S.insel)) S.insel = {};
+  const s = S.insel;
+  if (typeof s.b !== 'string' || s.b.length !== INS_W * INS_H || /[^wsgp]/.test(s.b)) { s.b = INS_KARTE; s.o = []; s.lag = { baum: 2, haus: 1, pinguin: 1, blume: 3 }; s.q = {}; }
+  if (!Array.isArray(s.o) || s.o.length !== INS_W * INS_H) s.o = new Array(INS_W * INS_H).fill('');
+  s.o = s.o.map(x => typeof x === 'string' && INS_DING[x] ? x : '');
+  if (!isObj(s.lag)) s.lag = {}; Object.keys(s.lag).forEach(k => { if (!INS_DING[k] || !(s.lag[k] > 0)) delete s.lag[k]; else s.lag[k] = Math.floor(s.lag[k]); });
+  if (!isObj(s.q)) s.q = {};
+  if (typeof s.land0 !== 'number') s.land0 = insLand(s.b);
+  return s;
+}
+const insLand = b => b.split('').filter(c => c !== 'w').length;
+const insNb = i => { const x = i % INS_W, y = Math.floor(i / INS_W), r = []; if (x > 0) r.push(i - 1); if (x < INS_W - 1) r.push(i + 1); if (y > 0) r.push(i - INS_W); if (y < INS_H - 1) r.push(i + INS_W); return r; };
+const insZahl = (s, ids) => s.o.filter(x => ids.includes(x)).length;
+function insVerbunden(s) {
+  const haus = s.o.map((x, i) => INS_HAUS.includes(x) ? i : -1).filter(i => i >= 0);
+  for (const h of haus) {
+    const start = insNb(h).filter(j => s.b[j] === 'p'), seen = new Set(start), st = start.slice();
+    while (st.length) { const j = st.pop(); insNb(j).forEach(k => { if (s.b[k] === 'p' && !seen.has(k)) { seen.add(k); st.push(k); } }); }
+    if (haus.some(h2 => h2 !== h && insNb(h2).some(j => seen.has(j)))) return true;
+  }
+  return false;
+}
+const INS_Q = [
+  ['baeume', '🌳 Pflanze 3 Bäume (Baum, Tanne oder Palme)', 3, s => insZahl(s, ['baum', 'tanne', 'palme']) >= 3],
+  ['hausweg', '🏠 Bau ein Haus und leg einen Weg direkt daneben', 3, s => s.o.some((x, i) => INS_HAUS.includes(x) && insNb(i).some(j => s.b[j] === 'p'))],
+  ['verbinde', '🛤️ Verbinde zwei Häuser mit einem Weg', 5, s => insVerbunden(s)],
+  ['tiere', '🐾 5 Tiere wohnen auf deiner Insel', 4, s => insZahl(s, INS_TIER) >= 5],
+  ['boot', '⛵ Ein Boot oder Schiff schwimmt im Wasser', 2, s => insZahl(s, ['boot', 'schiff']) >= 1],
+  ['groesser', '🏖️ Mach die Insel größer: 5 neue Landfelder', 5, s => insLand(s.b) >= s.land0 + 5],
+  ['tore', '⚽ Ein Fußballplatz: 2 Fußballtore', 3, s => insZahl(s, ['fussballtor']) >= 2],
+  ['garten', '🌷 Ein Blumengarten mit 5 Blumen', 3, s => insZahl(s, ['blume', 'sonnenblume']) >= 5],
+  ['strand', '🐧 Ein Pinguin oder eine Robbe liegt am Sandstrand', 2, s => s.o.some((x, i) => (x === 'pinguin' || x === 'robbe') && s.b[i] === 's')],
+  ['gross', '🏝️ 20 Dinge stehen auf deiner Insel', 8, s => s.o.filter(Boolean).length >= 20]
+];
+function insQuests() {
+  const s = insS(); let neu = [];
+  INS_Q.forEach(([id, t, m, f]) => { if (!s.q[id] && f(s)) { s.q[id] = Date.now(); S.coins = (S.coins || 0) + m; neu.push(`${t.replace(/^\S+ /, '')}: +${m} 🪙`); } });
+  if (neu.length) { save(); Sound.win(); if (typeof confetti === 'function') confetti(60); }
+  return neu;
+}
+function insPasst(s, i, id) {
+  const w = INS_DING[id][3], g = s.b[i];
+  if (g === 'p') return 'Auf dem Weg ist kein Platz. Stell es daneben.';
+  if (w === 'l' && g === 'w') return `${INS_DING[id][1]} braucht Land.`;
+  if (w === 'w' && g !== 'w') return `${INS_DING[id][1]} braucht Wasser.`;
+  return '';
+}
+function showInsel(msg = '') {
+  const s = insS(), c = S.coins || 0, fertig = Object.keys(s.q).length;
+  const lag = Object.keys(s.lag).filter(k => s.lag[k] > 0);
+  if (INS_SEL && !s.lag[INS_SEL]) INS_SEL = '';
+  const boden = { w: 'Wasser', s: 'Sand', g: 'Gras', p: 'Weg' };
+  setView(`<div class="game ins-game"><header class="wrap gamebar"><button class="icon-btn" data-act="insraus" aria-label="Zurück">✕</button><div class="sx-kopf">🏝️ Meine Pinguin-Insel</div></header>
+    <main class="wrap ins">
+      <div class="ins-top"><span class="ins-coins" aria-label="${c} Münzen">🪙 <b>${c}</b></span><button class="btn sm" data-act="insladen">🛒 Laden</button><button class="btn sm ghost" data-act="insauf">✅ Aufträge ${fertig}/${INS_Q.length}</button></div>
+      <div class="ins-modes" role="group" aria-label="Werkzeug">${[['bauen', '🏗️', 'Bauen']].concat(Object.entries(INS_BODEN).map(([k, v]) => [k, v[0], v[1] + (v[2] ? ` (${v[2]} 🪙)` : '')])).map(([k, e, t]) => `<button class="ins-mode${INS_M === k ? ' an' : ''}" data-act="insmode" data-m="${k}" aria-pressed="${INS_M === k}"><span>${e}</span>${t}</button>`).join('')}</div>
+      ${INS_M === 'bauen' ? `<div class="ins-lager">${lag.length ? lag.map(k => `<button class="ins-l${INS_SEL === k ? ' an' : ''}" data-act="inssel" data-id="${k}" aria-pressed="${INS_SEL === k}"><span>${INS_DING[k][0]}</span>${INS_DING[k][1]}<b>${s.lag[k]}</b></button>`).join('') : '<p class="muted">Dein Lager ist leer. Kauf im Laden etwas ein! 🛒</p>'}</div>` : ''}
+      <p class="ins-msg" aria-live="polite">${esc(msg || (INS_M === 'bauen' ? (INS_SEL ? `Tippe auf ein Feld, um ${INS_DING[INS_SEL][1]} hinzustellen.` : 'Wähle unten aus deinem Lager, was du bauen möchtest.') : INS_M === 'raeumen' ? 'Tippe auf etwas, es kommt zurück in dein Lager.' : INS_M === 'land' ? 'Tippe auf Wasser direkt am Ufer.' : INS_M === 'weg' ? 'Tippe auf freies Gras oder Sand.' : 'Tippe auf Sand, dann wächst dort Gras.'))}</p>
+      <div class="ins-map" style="--w:${INS_W}">${s.b.split('').map((g, i) => { const o = s.o[i], d = o && INS_DING[o];
+        return `<button class="ins-c g-${g}" data-act="instip" data-i="${i}" aria-label="Feld ${i % INS_W + 1}, ${Math.floor(i / INS_W) + 1}: ${boden[g]}${d ? ', ' + d[1] : ''}">${d ? `<span class="${INS_TIER.includes(o) ? 'ins-t' : ''}">${d[0]}</span>` : ''}</button>`; }).join('')}</div>
+    </main></div>`, 'meine');
+}
+function insTip(i) {
+  const s = insS(); if (!(i >= 0 && i < s.b.length)) return;
+  const g = s.b[i], o = s.o[i], c = S.coins || 0; let msg = '';
+  if (INS_M === 'bauen') {
+    if (!INS_SEL) return showInsel(o ? `Das ist ${INS_DING[o][1]}. Zum Wegräumen wähle „Wegräumen“.` : 'Wähle zuerst aus deinem Lager, was du bauen möchtest.');
+    if (o) return showInsel(`Hier steht schon ${INS_DING[o][1]}.`);
+    const nein = insPasst(s, i, INS_SEL); if (nein) { Sound.bad(); return showInsel(nein); }
+    s.o[i] = INS_SEL; s.lag[INS_SEL]--; msg = `${INS_DING[INS_SEL][1]} steht jetzt auf deiner Insel!`; if (!s.lag[INS_SEL]) { delete s.lag[INS_SEL]; INS_SEL = ''; } Sound.tap();
+  } else if (INS_M === 'raeumen') {
+    if (o) { s.lag[o] = (s.lag[o] || 0) + 1; s.o[i] = ''; msg = `${INS_DING[o][1]} ist zurück im Lager.`; }
+    else if (g === 'p') { s.b = s.b.slice(0, i) + 'g' + s.b.slice(i + 1); msg = 'Der Weg ist weg, hier wächst wieder Gras.'; }
+    else return showInsel('Hier gibt es nichts wegzuräumen.');
+    Sound.tap();
+  } else {
+    const [, name, preis] = INS_BODEN[INS_M];
+    if (c < preis) { Sound.bad(); return showInsel(`Dafür brauchst du ${plural(preis, 'Münze', 'Münzen')}. Lerne ein bisschen, dann bekommst du neue! 💪`); }
+    if (INS_M === 'weg') { if (g === 'w' || g === 'p') return showInsel(g === 'p' ? 'Hier ist schon ein Weg.' : 'Ein Weg braucht Land.'); if (o) return showInsel('Hier steht etwas. Räum es zuerst weg.'); s.b = s.b.slice(0, i) + 'p' + s.b.slice(i + 1); msg = 'Ein Stück Weg mehr!'; }
+    else if (INS_M === 'land') { if (g !== 'w') return showInsel('Das ist schon Land.'); if (o) return showInsel('Hier schwimmt etwas. Räum es zuerst weg.'); if (!insNb(i).some(j => s.b[j] !== 'w')) return showInsel('Land kannst du nur direkt am Ufer aufschütten.'); s.b = s.b.slice(0, i) + 's' + s.b.slice(i + 1); msg = 'Neues Land! Deine Insel wächst.'; }
+    else if (INS_M === 'gras') { if (g !== 's') return showInsel(g === 'g' ? 'Hier ist schon Gras.' : 'Gras wächst nur auf Sand.'); s.b = s.b.slice(0, i) + 'g' + s.b.slice(i + 1); msg = 'Hier wächst jetzt Gras.'; }
+    S.coins = c - preis; Sound.tap();
+  }
+  save(); const q = insQuests(); showInsel(q.length ? '🎉 Auftrag geschafft! ' + q.join(' · ') : msg);
+}
+function insLaden(kat) {
+  const s = insS(), c = S.coins || 0; kat = kat || insLaden.k || 'natur'; insLaden.k = kat;
+  overlay(`<h2>🛒 Insel-Laden</h2><p class="muted">Du hast <b>${c} 🪙</b>. Gekauftes kommt in dein Lager.</p>
+    <div class="ins-kat">${INS_KAT.map(([k, t]) => `<button class="${k === kat ? 'an' : ''}" data-act="inskat" data-k="${k}">${t}</button>`).join('')}</div>
+    <div class="ins-shop">${Object.keys(INS_DING).filter(k => INS_DING[k][4] === kat).map(k => { const d = INS_DING[k]; return `<button class="ins-ware" data-act="inskauf" data-id="${k}" ${c < d[2] ? 'disabled' : ''}><span>${d[0]}</span><b>${d[1]}</b><small>${d[2]} 🪙${s.lag[k] ? ` · ${s.lag[k]} im Lager` : ''}</small></button>`; }).join('')}</div>
+    <div class="acts"><button class="btn" data-act="insfertig">Fertig</button></div>`);
+}
+function insAuftraege() {
+  const s = insS();
+  overlay(`<h2>✅ Insel-Aufträge</h2><ul class="ins-auf">${INS_Q.map(([id, t, m]) => `<li class="${s.q[id] ? 'ok' : ''}"><span>${s.q[id] ? '✅' : '⬜'}</span>${esc(t)}<b>+${m} 🪙</b></li>`).join('')}</ul>
+    <div class="acts"><button class="btn" data-act="insfertig">Fertig</button></div>`);
+}
+Object.assign(ACT, {
+  instip: t => insTip(+t.dataset.i),
+  insmode: t => { INS_M = t.dataset.m; Sound.tap(); showInsel(); },
+  inssel: t => { INS_SEL = INS_SEL === t.dataset.id ? '' : t.dataset.id; Sound.tap(); showInsel(); },
+  insladen: () => insLaden(),
+  inskat: t => insLaden(t.dataset.k),
+  inskauf: t => {
+    const id = t.dataset.id, d = INS_DING[id], s = insS(); if (!d) return;
+    if ((S.coins || 0) < d[2]) { Sound.bad(); return insLaden(); }
+    S.coins -= d[2]; s.lag[id] = (s.lag[id] || 0) + 1; INS_M = 'bauen'; INS_SEL = id; save(); Sound.good(); insLaden();
+  },
+  insauf: () => insAuftraege(),
+  insfertig: () => { closeOverlay(); showInsel(); },
+  insraus: () => { closeOverlay(); showWorld('meine'); }
+});
+if (typeof GROUPS !== 'undefined') GROUPS['n-insel'] = { w: 'meine', t: 'Meine Insel' };
+if (typeof GROUP_ICON !== 'undefined') GROUP_ICON['n-insel'] = '🏝️';
+GAMES.insel = { id: 'insel', w: 'meine', g: 'n-insel', t: 'Meine Pinguin-Insel', d: 'Mit deinen Münzen eine eigene Insel bauen, Aufträge lösen', i: '🏝️', type: 'tool', open: () => { INS_M = 'bauen'; showInsel(); } };
 
 /*@@src lumi_live.js@@*/
 
