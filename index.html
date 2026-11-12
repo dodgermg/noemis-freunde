@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-ALVxrdEKzfYLNHo/GNFkaFE01DAp3Y8nU2+d2dkBEU4=' 'sha256-36aQVuv+26zQozCDW7frU3M4yOG0Qr3fruvK0cwt2RA=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-JwyII1hbxbKMylybXb/U8y9rltJDWFdChXhdQqw1eTw=' 'sha256-kHYWkxilTL6Wt7wZz0YO0Ja1/al9IDYDopsJjevOU68=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -6422,6 +6422,35 @@ body.calm .weg-st .weg-n, body.calm .weg-st .weg-i { animation: none !important;
 .ek-link { font: inherit; font-size: 15px; font-weight: 700; cursor: pointer; margin-top: 6px; padding: 6px 12px; border-radius: 999px; border: 2px solid var(--line-deep); background: var(--surface); color: inherit; }
 @media (max-width: 480px) { .vk-faecher { gap: 6px; } .vk-fach b { font-size: 13px; } .vk-n { font-size: 24px; } .vk-heute { flex-direction: column; text-align: center; } }
 
+/* ---- style_neu272.css ---- */
+
+.apa-card { display: grid; gap: 12px; border: 3px solid var(--gold, #f0b429); margin-bottom: 18px; }
+.apa-kopf { display: flex; align-items: center; gap: 12px; }
+.apa-kopf > span { font-size: 38px; line-height: 1; }
+.apa-kopf b { font-size: 22px; display: block; }
+.apa-kopf small { font-size: 15px; opacity: .85; }
+.apa-liste { display: grid; gap: 10px; }
+.apa-auf { font: inherit; color: inherit; text-align: left; cursor: pointer; display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 16px; background: var(--surface-2); border: 2px solid var(--line-deep); box-shadow: 0 4px 0 var(--line-deep); }
+.apa-auf:active { transform: translateY(2px); box-shadow: 0 2px 0 var(--line-deep); }
+.apa-i { font-size: 34px; line-height: 1; flex: none; }
+.apa-t { display: grid; gap: 2px; min-width: 0; flex: 1; }
+.apa-t b { font-size: 19px; }
+.apa-t small { font-size: 14px; opacity: .85; }
+.apa-bis.eilig { font-weight: 800; color: var(--bad, #c0392b); }
+.apa-note { font-size: 15px; font-style: italic; }
+.apa-go { flex: none; width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: var(--sea, #2f86c9); color: var(--on-color, #fff); font-size: 18px; }
+.apa-mehr { margin: 0; text-align: center; }
+.apa-erg { display: flex; gap: 10px; align-items: center; text-align: left; margin: 10px auto; padding: 10px 14px; border-radius: 14px; background: var(--surface-2); border: 2px solid var(--line-deep); max-width: 520px; }
+.apa-erg.ok { border-color: var(--good, #2f9e6e); }
+.apa-erg > span:first-child { font-size: 28px; }
+.apa-form { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 14px; margin: 12px 0; }
+.apa-form label { display: grid; gap: 4px; font-size: 14px; font-weight: 700; min-width: 0; }
+.apa-form .breit { grid-column: 1 / -1; }
+.apa-form .input { width: 100%; min-width: 0; }
+.apa-h { font-size: 17px; margin: 16px 0 6px; }
+.apa-del { flex: none; }
+@media (max-width: 480px) { .apa-form { grid-template-columns: 1fr; } .apa-kopf b { font-size: 19px; } }
+
 /* ---- style_pa.css ---- */
 
 .pa { min-height: 100vh; }
@@ -8680,8 +8709,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '2.71.0';
-  var MAP = {"probe":0,"files":[[8670,"fehler_kern.js"],[8958,null],[8960,"data.js"],[9655,"data_more.js"],[10012,"data_su2.js"],[10239,"data_es.js"],[10581,"data_wissen.js"],[10780,"data_v21.js"],[11463,"data_v24.js"],[11949,"data_v25.js"],[12430,"data_v26.js"],[12529,"data_v29.js"],[12834,"data_v30.js"],[13163,"data_v31.js"],[13469,"data_kunst.js"],[13665,"data_v214.js"],[13768,"data_v216.js"],[14061,"schrift.js"],[14361,"eingabe.js"],[14572,"data_k34m.js"],[15090,"data_k34d.js"],[15444,"data_k34s.js"],[15898,"data_v224.js"],[16771,"data_v225w.js"],[17140,"data_v225k.js"],[17584,"data_herz.js"],[17938,"data_fb226.js"],[18081,"data_tf226.js"],[18288,"data_v227a.js"],[19379,"data_v227b.js"],[20333,"data_h28b.js"],[20373,"data_l28a.js"],[21239,"data_l28b.js"],[22419,"data_schaetz.js"],[22901,"data_party8.js"],[22951,"data_alce.js"],[23611,"data_alce2.js"],[23860,"data_alce3.js"],[24275,"registry.js"],[24789,"app.js"],[25952,"fun.js"],[26532,"fun2.js"],[26848,"atelier.js"],[27222,"kunst225.js"],[27412,"herz.js"],[27776,"reise.js"],[28078,"iglu.js"],[28244,"offline.js"],[28351,"party.js"],[28835,"meine.js"],[29191,"loeffel.js"],[29362,"trend.js"],[29904,"fun228a.js"],[30755,"fun228b.js"],[31416,"kueche.js"],[32455,"stimme.js"],[32510,"klassen.js"],[32659,"freunde_vorab.js"],[32680,"mut.js"],[33102,"schule.js"],[33591,"fussball226.js"],[33913,"schaetzen.js"],[34344,"party8.js"],[34963,"tiere.js"],[35422,"fussball232.js"],[35637,"party8b.js"],[35939,"weg.js"],[36160,"px.js"],[36571,"px_data.js"],[36828,"pxwelt.js"],[36909,"px_abenteuer.js"],[37710,"px_abenteuer2.js"],[38459,"px_ski.js"],[39101,"px_wurf.js"],[39630,"px_insel.js"],[40831,"px_kicker.js"],[41766,"px_eis.js"],[42752,"px_run.js"],[43967,"px_brk.js"],[44929,"px_pol.js"],[46280,"px_frog.js"],[47540,"px_angel.js"],[48855,"px_golf.js"],[49889,"px_tauch.js"],[51154,"px_hockey.js"],[52110,"px_lab.js"],[53445,"px_plopp.js"],[54651,"px_stadion.js"],[56155,"px_training.js"],[56524,"cm.js"],[57014,"cmwelt.js"],[57070,"cm_baeck.js"],[57863,"cm_bahn.js"],[58627,"cm_detek.js"],[59344,"cm_markt.js"],[60057,"ff.js"],[60214,"ff_mathe.js"],[62204,"ff_deutsch.js"],[63792,"ff_sach_a.js"],[66041,"ff_sach_b.js"],[68270,"ff_sprachen.js"],[70678,"zm.js"],[71591,"tt.js"],[71804,"data_tagebuch.js"],[71847,"data_hoerspiel.js"],[72006,"leseecke.js"],[72325,"kt.js"],[72628,"comicbuch.js"],[72906,"alce.js"],[73069,"alce_aufg.js"],[73239,"formen.js"],[73690,"data_formen.js"],[73931,"data_formen2.js"],[74153,"spielzeit.js"],[74298,"data_faktmeinung.js"],[74417,"data_es248.js"],[74681,"data_en249.js"],[74920,"data_wissen249.js"],[75351,"data_kunst249.js"],[75634,"data_fussball250.js"],[75758,"data_werte252.js"],[76011,"data_lesen252.js"],[76072,"data_k34_252.js"],[76158,"art254.js"],[76276,"data_werte255.js"],[76414,"data_lesen255.js"],[76550,"forscher255.js"],[76698,"zufall250.js"],[76744,"stufe259.js"],[76754,"advent.js"],[77017,"wdh.js"],[77115,"denk.js"],[77152,"data_viaje265.js"],[77295,"klassenarbeit.js"],[77428,"quizduell.js"],[77551,"neu267.js"],[77816,"prog.js"],[77921,"lernstand.js"],[77988,"blatt.js"],[78090,"data_es271.js"],[78204,"plus269.js"],[78298,"schach.js"],[78525,"schachtaktik.js"],[78696,"fun270.js"],[78859,"kasten.js"],[78963,"erklaer.js"],[79070,"lumi_live.js"],[79186,"sicher.js"],[79370,"stil.js"],[79424,"freunde.js"],[79561,"start.js"],[79571,null],[79581,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '2.72.0';
+  var MAP = {"probe":0,"files":[[8699,"fehler_kern.js"],[8987,null],[8989,"data.js"],[9684,"data_more.js"],[10041,"data_su2.js"],[10268,"data_es.js"],[10610,"data_wissen.js"],[10809,"data_v21.js"],[11492,"data_v24.js"],[11978,"data_v25.js"],[12459,"data_v26.js"],[12558,"data_v29.js"],[12863,"data_v30.js"],[13192,"data_v31.js"],[13498,"data_kunst.js"],[13694,"data_v214.js"],[13797,"data_v216.js"],[14090,"schrift.js"],[14390,"eingabe.js"],[14601,"data_k34m.js"],[15119,"data_k34d.js"],[15473,"data_k34s.js"],[15927,"data_v224.js"],[16800,"data_v225w.js"],[17169,"data_v225k.js"],[17613,"data_herz.js"],[17967,"data_fb226.js"],[18110,"data_tf226.js"],[18317,"data_v227a.js"],[19408,"data_v227b.js"],[20362,"data_h28b.js"],[20402,"data_l28a.js"],[21268,"data_l28b.js"],[22448,"data_schaetz.js"],[22930,"data_party8.js"],[22980,"data_alce.js"],[23640,"data_alce2.js"],[23889,"data_alce3.js"],[24304,"registry.js"],[24818,"app.js"],[25986,"fun.js"],[26566,"fun2.js"],[26882,"atelier.js"],[27256,"kunst225.js"],[27446,"herz.js"],[27810,"reise.js"],[28112,"iglu.js"],[28278,"offline.js"],[28385,"party.js"],[28869,"meine.js"],[29225,"loeffel.js"],[29396,"trend.js"],[29938,"fun228a.js"],[30789,"fun228b.js"],[31450,"kueche.js"],[32489,"stimme.js"],[32544,"klassen.js"],[32693,"freunde_vorab.js"],[32714,"mut.js"],[33136,"schule.js"],[33625,"fussball226.js"],[33947,"schaetzen.js"],[34378,"party8.js"],[34997,"tiere.js"],[35456,"fussball232.js"],[35671,"party8b.js"],[35973,"weg.js"],[36194,"px.js"],[36605,"px_data.js"],[36862,"pxwelt.js"],[36943,"px_abenteuer.js"],[37744,"px_abenteuer2.js"],[38493,"px_ski.js"],[39135,"px_wurf.js"],[39664,"px_insel.js"],[40865,"px_kicker.js"],[41800,"px_eis.js"],[42786,"px_run.js"],[44001,"px_brk.js"],[44963,"px_pol.js"],[46314,"px_frog.js"],[47574,"px_angel.js"],[48889,"px_golf.js"],[49923,"px_tauch.js"],[51188,"px_hockey.js"],[52144,"px_lab.js"],[53479,"px_plopp.js"],[54685,"px_stadion.js"],[56189,"px_training.js"],[56558,"cm.js"],[57048,"cmwelt.js"],[57104,"cm_baeck.js"],[57897,"cm_bahn.js"],[58661,"cm_detek.js"],[59378,"cm_markt.js"],[60091,"ff.js"],[60248,"ff_mathe.js"],[62238,"ff_deutsch.js"],[63826,"ff_sach_a.js"],[66075,"ff_sach_b.js"],[68304,"ff_sprachen.js"],[70712,"zm.js"],[71625,"tt.js"],[71838,"data_tagebuch.js"],[71881,"data_hoerspiel.js"],[72040,"leseecke.js"],[72359,"kt.js"],[72662,"comicbuch.js"],[72940,"alce.js"],[73103,"alce_aufg.js"],[73273,"formen.js"],[73724,"data_formen.js"],[73965,"data_formen2.js"],[74187,"spielzeit.js"],[74332,"data_faktmeinung.js"],[74451,"data_es248.js"],[74715,"data_en249.js"],[74954,"data_wissen249.js"],[75385,"data_kunst249.js"],[75668,"data_fussball250.js"],[75792,"data_werte252.js"],[76045,"data_lesen252.js"],[76106,"data_k34_252.js"],[76192,"art254.js"],[76310,"data_werte255.js"],[76448,"data_lesen255.js"],[76584,"forscher255.js"],[76732,"zufall250.js"],[76778,"stufe259.js"],[76788,"advent.js"],[77051,"wdh.js"],[77149,"denk.js"],[77186,"data_viaje265.js"],[77329,"klassenarbeit.js"],[77462,"quizduell.js"],[77585,"neu267.js"],[77850,"prog.js"],[77955,"lernstand.js"],[78022,"blatt.js"],[78124,"data_es271.js"],[78238,"plus269.js"],[78332,"schach.js"],[78559,"schachtaktik.js"],[78730,"fun270.js"],[78893,"plus272.js"],[78947,"kasten.js"],[79051,"erklaer.js"],[79158,"apa.js"],[79239,"lumi_live.js"],[79355,"sicher.js"],[79539,"stil.js"],[79593,"freunde.js"],[79730,"start.js"],[79740,null],[79750,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -24790,9 +24819,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '2.71.0';
+const APP_VERSION = '2.72.0';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "2.72.0", d: "12.11.2026", t: ["Englisch: 13 Spiele haben ab Stufe 2 vier Antworten statt drei, zum Beispiel Say it!, Question words, Have got, Reading und Short stories", "Neu im Elternbereich: Aufgaben für dein Kind. Eltern stellen ein Spiel als Aufgabe, sie steht dann oben auf der Startseite. Alles bleibt auf dem Gerät"] },
   { v: "2.71.0", d: "12.11.2026", t: ["Spanisch: sieben neue Grammatik-Spiele (Mi, tu, su · Tener · Voy a… · Me levanto · Más o menos · Hay o está, muy o mucho · En clase) und „Diálogos“ mit 24 kleinen Gesprächen", "Neu: der Vokabelkasten für Spanisch und Englisch. Ein Karteikasten mit fünf Fächern, in dem jede Vokabel nach 1, 2, 4, 8 und 16 Tagen wiederkommt", "Neu: Erklärkarten zu 60 Themen. Die Regel in wenigen Sätzen vor der ersten Runde, später oben im Spiel bei der Glühbirne"] },
   { v: "2.70.0", d: "12.11.2026", t: ["Neu bei „Rätsel & Denk-Spiele“: Schach-Taktik mit 165 Aufgaben. Gabeln finden, Matt in 1 und Matt in 2", "Spielhalle: Pinguin-Memory mit drei Runden und Serien-Bonus, Schiebe-Puzzle mit zweiter Stufe (16 Felder), Vier gewinnt mit der neuen Stufe „Profi“, Fisch-Schnapper mit Fang-Serie"] },
   { v: "2.69.0", d: "11.11.2026", t: ["Deutsch und Spanisch: 22 Spiele zeigen ab Stufe 2 vier Antworten statt drei. Dafür haben 435 Aufgaben eine dritte falsche Antwort bekommen, die zum Thema passt. Stufe 1 bleibt bei drei Antworten", "Neu bei „Rätsel & Denk-Spiele“: Schach gegen Lumi. Drei Spielarten (Bauernrennen, Mini-Schach und echtes Schach), gegen Lumi in zwei Stärken oder zu zweit. Mit allen Regeln, Tipp-Knopf und „Zug zurück“"] },
@@ -25164,6 +25194,7 @@ function showHome() {
     </header>
     <main class="wrap home2" style="padding-block:6px 0">
       ${safeCard(hzBanner)}
+      ${typeof apaHomeCard === 'function' ? safeCard(apaHomeCard) : ''}
       ${typeof advHomeCard === 'function' ? safeCard(advHomeCard) : ''}
       ${typeof panHomeCard === 'function' ? safeCard(panHomeCard) : ''}
       ${typeof wdhHomeCard === 'function' ? safeCard(wdhHomeCard) : ''}
@@ -25638,6 +25669,7 @@ function finishRound(extra = {}) {
       else if (ratio <= .5 && st.lv > 1) { st.lv--; lvMsg = 'down'; }
     }
   }
+  if ((mode === 'game' || mode === 'memory') && typeof apaRunde === 'function') { try { G.apaR = apaRunde(G.id, ratio); } catch (e) { G.apaR = null; } }
   const tk = dayKey(), wasBelow = (S.days[tk] || 0) < S.settings.goal;
   S.days[tk] = (S.days[tk] || 0) + 1;
   const goalNow = wasBelow && S.days[tk] >= S.settings.goal;
@@ -25676,6 +25708,7 @@ function showResult(r) {
     <h1>${head}</h1><div class="big-stars">${[0, 1, 2].map(i => starSVG(i < r.stars)).join('')}</div>
     <p class="res-score">${sub}</p>
     ${typeof huLine === 'function' ? safeCard(huLine) : ''}
+    ${G.apaR && typeof apaResultHTML === 'function' ? apaResultHTML(G.apaR) : ''}
     <div class="pills"><span class="pill gold">+${G.pts} Punkte</span><span class="pill">+${plural(r.stars, 'Stern', 'Sterne')}</span><span class="pill gold">🪙 +${r.coins} ${r.coins === 1 ? 'Münze' : 'Münzen'}</span>${r.bonusStars ? `<span class="pill gold">🎲 Tagesbonus +${r.bonusStars} ⭐</span>` : ''}${typeof bdIsToday === 'function' && bdIsToday() ? '<span class="pill gold">🎂 Geburtstag: doppelte Münzen</span>' : ''}
       ${r.lvMsg === 'up' ? `<span class="pill">⬆ Stufe ${gstate(G.id).lv} freigeschaltet${klOf(G.id, gstate(G.id).lv) > klasse() ? ' · ⭐ Vorsprung' : ''}</span>` : r.lvMsg === 'top' ? `<span class="pill">🏁 Höchste Stufe für ${klName(klasse())} geschafft</span>` : ''}</div>
     ${r.levelUp ? `<div class="reward"><span class="big">${L.title[1]}</span><div><b>Level ${r.levelUp}!</b><span>Du bist jetzt ${L.title[0]}.</span></div></div>` : ''}
@@ -25804,6 +25837,7 @@ function showParents(notice = '') {
     ${typeof fpParentsHTML === 'function' ? fpParentsHTML() : ''}
     ${typeof spzParentsHTML === 'function' ? spzParentsHTML() : ''}
     ${typeof lsParentsHTML === 'function' ? lsParentsHTML() : ''}
+    ${typeof apaParentsHTML === 'function' ? apaParentsHTML() : ''}
     ${typeof ekParentsHTML === 'function' ? ekParentsHTML() : ''}
     ${typeof abParentsHTML === 'function' ? abParentsHTML() : ''}
     ${typeof kaParentsHTML === 'function' ? kaParentsHTML() : ''}
@@ -78856,6 +78890,60 @@ FUN_GAMES.memory.d = 'Drei Runden, jede mit mehr Karten. Wer Paare in Serie find
 FUN_GAMES.schiebe.d = 'Schieb die Teile, bis das Bild stimmt. Danach wartet ein Bild mit 16 Teilen.';
 FUN_GAMES.fische.d = 'Schnapp die Fische, aber nicht die Krabben! Ab fünf Fischen in Serie zählt jeder doppelt.';
 
+/*@@src plus272.js@@*/
+
+
+
+
+
+
+
+const P2_PHRASEN = ['Goodbye!', 'Hello!', 'What colour is it?', 'I’m eight years old.', 'How old are you?', 'My name is …', 'What’s your name?', 'I’m fine, thank you.', 'Goodbye!', 'Thank you!', 'Sorry!', 'Happy birthday!', 'Good morning!', 'Good night!',
+  'I have got a pizza.', 'What colour is my ball?', 'I like apples.', 'What’s your name?', 'Where is my ball?', 'How old are you?', 'I like dogs.', 'Where is Germany?', 'It is a blue ball.'];
+const P2_PRESENT = ['playes', 'am like', 'swimms', 'drinkes', 'gos', 'brushing', 'watching', 'liveing', 'barkes', 'playing', "isn't", 'am not', 'doing', 'playes', 'singes', 'Is', 'workes', 'haves', 'drinkes', 'speakes', 'gos', 'runing', 'raines', 'reades'];
+const P2_READ = [['a dog', 'go to the beach', 'nine', 'on Saturdays'], ["Tom's sister", 'English', 'hide and seek', "at four o'clock"], ['eight', 'an apple pie', 'a red scooter', 'They play football.'], ['their aunt', 'drinking water', 'because they are loud', 'pizza']];
+const P2_QW = ['When', 'Who', 'When', 'Why', 'When', 'Who', 'Where', 'When', 'Why', 'When', 'When', 'Why', 'Why', 'How', 'Why', 'Where', 'Why', 'Why', 'Why', 'When', 'Where', 'Why'];
+const P2_STORY = { 'What is the dog called?': 'Rex', 'What colour is Max?': 'brown and black', 'Where does Max sleep?': "in Tom's bed", 'How old is Lily?': 'seven', 'What cake does her mum make?': 'a carrot cake', 'What does Lily get?': 'a red kite',
+  'What is the weather like?': 'It is windy.', 'What do they build?': 'a boat', 'What do they look for?': 'crabs', 'When does Mia go to school?': "at nine o'clock", 'What is her favourite subject?': 'English', 'What does Mia play in the garden?': 'hide and seek',
+  'What is the teddy called?': 'Teddy', 'Where does Emma look first?': 'in the cupboard', 'Where is Benny?': 'in the cupboard', 'What is Big Ben?': 'a big wheel', 'What do they do in the afternoon?': 'They go on a big red bus.', 'What do they eat in the evening?': 'sandwiches',
+  'Where does Pip live?': 'in a zoo', 'What can Pip do very well?': 'sing', 'What does Pip eat?': 'ice cream', 'What is Jack?': 'a black cat', 'What do they say at the doors?': 'Merry Christmas!', 'How many sweets has Zoe got?': 'thirty' };
+const p2Ok = q => q.options.find(o => o.ok).label, p2Hat = (q, x) => q.options.some(o => o.label === x);
+
+const P2 = {
+  phrasen: q => { const i = PHRASEN.findIndex(r => 'ph' + r[0] === q.key); return P2_PHRASEN[i]; },
+  tage: q => { const a = p2Ok(q), l = [DAYS_EN, MONTHS_EN, SEASONS_EN].find(x => x.includes(a)); return l ? R.shuffle(l.filter(x => !p2Hat(q, x) && !q.prompt.includes(x)))[0] : null; },
+  where: q => { const m = /the (\w+)$/.exec(p2Ok(q)); return m ? `behind the ${m[1]}` : null; },
+  presenten: q => { const a = p2Ok(q), i = PRESENT_EN.findIndex(r => r[1] === a && q.visual.includes(esc(r[0]))); return P2_PRESENT[i]; },
+  readen: q => { const m = /^rden(\d)(\d)$/.exec(q.key); return m && P2_READ[m[1]] ? P2_READ[m[1]][m[2]] : null; },
+  numbers100: q => {
+    const a = p2Ok(q), wort = !/^\d+$/.test(a), n = wort ? +(/>(\d+)</.exec(q.visual) || [])[1] : +a; if (!n) return null;
+    const c = R.shuffle([n - 11, n - 10, n - 1, n + 1, n + 10, n + 11]).filter(m => m >= 20 && m <= 99).map(m => wort ? enNum(m) : String(m)).filter(x => !p2Hat(q, x));
+    return c[0];
+  },
+  likeen: q => { const m = /^(I|She|He) (like|likes|don't like|doesn't like) (.+)\.$/.exec(p2Ok(q)); return m ? ['like', 'likes', "don't like", "doesn't like"].map(v => `${m[1]} ${v} ${m[3]}.`).find(x => !p2Hat(q, x)) : null; },
+  havegot: q => { const m = /^(.+) (has|have) got (an?) (.+)\.$/.exec(p2Ok(q)); return m ? `${m[1]} ${m[2] === 'has' ? 'have' : 'has'} got ${m[3] === 'a' ? 'an' : 'a'} ${m[4]}.` : null; },
+  thereis: q => { const a = p2Ok(q), rest = s => s.replace(/^There (is|are) /, ''), o = q.options.find(x => !x.ok && rest(x.label) !== rest(a)); return o ? o.label.replace(/^There (is|are) /, (_, v) => `There ${v === 'is' ? 'are' : 'is'} `) : null; },
+  doingen: q => (/^ing/.test(q.key) ? p2Ok(q).slice(0, -1) : null),
+  questionen: q => { const i = EN_QW.findIndex(r => 'qw' + r[0] === q.key); return P2_QW[i]; },
+  rhymesen: q => { const a = p2Ok(q), w = (/“(\w+)”/.exec(q.prompt) || [])[1] || '', end = s => s.slice(-2); return R.shuffle(EN_RHYME.flat().filter(x => !p2Hat(q, x) && x !== w && end(x) !== end(a) && end(x) !== end(w)))[0]; },
+  storiesen: q => P2_STORY[q.prompt]
+};
+function p2Vier(id, q, ctx) {
+  if (!q || q.kind !== 'choice' || q.fixed || q.options.length !== 3 || ((ctx && ctx.lv) || 1) < 2) return q;
+  let x = null; try { x = P2[id](q); } catch (e) { x = null; }
+  if (x == null || x === '' || p2Hat(q, x)) return q;
+  q.options.splice(R.int(0, q.options.length), 0, { html: esc(x), label: String(x), ok: false });
+  if (q.layout === 'row3') q.layout = q.options.some(o => String(o.label).length > 14) ? 'col' : 'auto';
+  return q;
+}
+(() => {
+  Object.keys(P2).forEach(id => {
+    const g = GAMES[id]; if (!g || !g.gen) return;
+    const alt = g.gen; g.gen = ctx => p2Vier(id, alt(ctx), ctx);
+    if (!g.max) { g.max = 2; g.start = [1, 1, 2, 2]; }
+  });
+})();
+
 /*@@src kasten.js@@*/
 
 
@@ -79065,6 +79153,87 @@ Object.assign(ACT, {
   ekgo: t => { const o = EK_OFFEN; EK_OFFEN = null; closeOverlay(); startGame(t.dataset.id); if (o && o.id === t.dataset.id && G) o.nach.forEach(f => f(G)); },
   ekinfo: () => { const id = ekSpiel(); if (id) { Sound.tap(); if (G.autoT) clearTimeout(G.autoT); ekZeige(id, false); } },
   ekschalter: t => { S.settings.erklaer = !ekAn(); save(); t.classList.toggle('on', ekAn()); t.setAttribute('aria-checked', ekAn()); }
+});
+
+/*@@src apa.js@@*/
+
+
+
+
+
+
+
+const APA_T = { titel: 'Aufgaben von deinen Eltern', eine: 'Aufgabe von deinen Eltern', kopf: 'Aufgaben für dein Kind' };
+const APA_F = { w: '', gr: '', g: '', n: 1, bis: '', note: '' };
+function apaS() { S.apa = S.apa || { l: [], nr: 0 }; if (!Array.isArray(S.apa.l)) S.apa.l = []; return S.apa; }
+const apaOffen = () => apaS().l.filter(x => !x.f && GAMES[x.g] && klStatus(x.g) !== 'aus');
+const apaFertig = () => apaS().l.filter(x => x.f).sort((a, b) => b.f - a.f);
+const apaSpielOk = id => { const g = GAMES[id]; return !!(g && !g.ff && !g.fo && g.type !== 'tool' && g.type !== 'blitz' && (g.gen || g.type === 'custom' || g.type === 'memory') && klStatus(id) !== 'aus'); };
+function apaBis(x) {
+  if (!x.bis) return '';
+  const h = dayKey(); if (x.bis < h) return 'noch offen'; if (x.bis === h) return 'bis heute'; if (x.bis === dayKey(addDays(new Date(), 1))) return 'bis morgen';
+  const [y, m, d] = x.bis.split('-').map(Number); return 'bis ' + new Date(y, m - 1, d).toLocaleDateString('de-DE', { weekday: 'long' });
+}
+
+function apaHomeCard() {
+  const l = apaOffen(); if (!l.length) return '';
+  return `<section class="card apa-card"><div class="apa-kopf"><span aria-hidden="true">📋</span><div><b>${esc(APA_T.titel)}</b><small>${l.length === 1 ? 'Eine Aufgabe wartet auf dich.' : l.length + ' Aufgaben warten auf dich.'}</small></div></div>
+    <div class="apa-liste">${l.slice(0, 4).map(x => { const g = GAMES[x.g], w = worldById(g.w), b = apaBis(x); return `<button class="apa-auf" data-act="apago" data-id="${x.id}" data-world="${g.w}">
+      <span class="apa-i" aria-hidden="true">${g.i || '🎯'}</span><span class="apa-t"><b>${esc(g.t)}</b><small>${esc(w ? w.name : '')} · ${x.n === 1 ? '1 Runde' : `Runde ${Math.min(x.d + 1, x.n)} von ${x.n}`}${b ? ` · <span class="apa-bis${b === 'noch offen' || b === 'bis heute' ? ' eilig' : ''}">${b}</span>` : ''}</small>${x.note ? `<span class="apa-note">💬 ${esc(x.note)}</span>` : ''}</span>
+      <span class="apa-go" aria-hidden="true">▶</span></button>`; }).join('')}</div>${l.length > 4 ? `<p class="muted apa-mehr">und noch ${l.length - 4} weitere</p>` : ''}</section>`;
+}
+
+function apaRunde(id, ratio) {
+  const x = apaOffen().find(a => a.g === id); if (!x) return null;
+  if (!(G && G.custom) && ratio < .6) return { x, zaehlt: false };
+  x.d = (x.d || 0) + 1; x.erg = [G.ok, G.n];
+  if (x.d >= x.n) { x.f = Date.now(); S.coins = (S.coins || 0) + 3; const fertig = apaFertig(); if (fertig.length > 12) { const weg = new Set(fertig.slice(12).map(a => a.id)); S.apa.l = S.apa.l.filter(a => !weg.has(a.id)); } return { x, zaehlt: true, fertig: true }; }
+  return { x, zaehlt: true };
+}
+function apaResultHTML(r) {
+  if (!r || !r.x) return '';
+  const rest = apaOffen().length;
+  if (r.fertig) return `<div class="apa-erg ok"><span aria-hidden="true">✅</span><span><b>${esc(APA_T.eine)} geschafft!</b> Dafür gibt es 3 Münzen extra.${rest ? ` Es ${rest === 1 ? 'wartet noch 1 Aufgabe' : `warten noch ${rest} Aufgaben`}.` : ' Alle Aufgaben sind erledigt.'}</span></div>`;
+  if (r.zaehlt) return `<div class="apa-erg"><span aria-hidden="true">📋</span><span><b>${esc(APA_T.eine)}:</b> Runde ${r.x.d} von ${r.x.n} ist geschafft. Noch ${r.x.n - r.x.d === 1 ? 'eine Runde' : (r.x.n - r.x.d) + ' Runden'}!</span></div>`;
+  return `<div class="apa-erg"><span aria-hidden="true">📋</span><span><b>${esc(APA_T.eine)}:</b> Diese Runde zählt noch nicht. Schaffst du mindestens 6 von 10? Versuch es gleich noch einmal.</span></div>`;
+}
+
+function apaParentsHTML() {
+  const F = APA_F, ws = WORLDS.filter(w => gamesOfWorld(w.id).some(apaSpielOk));
+  if (!ws.some(w => w.id === F.w)) F.w = ws.length ? ws[0].id : '';
+  const grs = Object.keys(GROUPS).filter(gr => GROUPS[gr].w === F.w && gamesOfGroup(gr).some(apaSpielOk));
+  if (!grs.includes(F.gr)) F.gr = grs[0] || '';
+  const gs = F.gr ? gamesOfGroup(F.gr).filter(apaSpielOk) : [];
+  if (!gs.includes(F.g)) F.g = gs[0] || '';
+  const offen = apaS().l.filter(x => !x.f), fertig = apaFertig().slice(0, 8), opt = (v, t, cur) => `<option value="${esc(String(v))}"${String(v) === String(cur) ? ' selected' : ''}>${esc(t)}</option>`;
+  const tag = n => dayKey(addDays(new Date(), n));
+  return `<section class="card" id="apaBox"><h2>📋 ${esc(APA_T.kopf)}</h2>
+    <p class="muted">Hier stellst du ${esc(S.profile.name)} ein Spiel als Aufgabe, zum Beispiel das Thema der nächsten Klassenarbeit. Die Aufgabe steht dann ganz oben auf der Startseite. Eine Runde zählt ab 6 von 10 richtigen Antworten, für jede erledigte Aufgabe gibt es 3 Münzen extra. Alles bleibt auf diesem Gerät.</p>
+    <div class="apa-form">
+      <label>Welt<select class="input select" data-apa="w">${ws.map(w => opt(w.id, w.name, F.w)).join('')}</select></label>
+      <label>Thema<select class="input select" data-apa="gr">${grs.map(gr => opt(gr, GROUPS[gr].t, F.gr)).join('')}</select></label>
+      <label class="breit">Spiel<select class="input select" data-apa="g">${gs.map(id => opt(id, GAMES[id].t + (klStatus(id) === 'vor' ? ' (Vorsprung)' : ''), F.g)).join('')}</select></label>
+      <label>Runden<select class="input select" data-apa="n">${[1, 2, 3].map(n => opt(n, n === 1 ? '1 Runde' : n + ' Runden', F.n)).join('')}</select></label>
+      <label>Bis wann<select class="input select" data-apa="bis">${opt('', 'ohne Datum', F.bis)}${opt(tag(0), 'heute', F.bis)}${opt(tag(1), 'morgen', F.bis)}${opt(tag(3), 'in 3 Tagen', F.bis)}${opt(tag(7), 'in einer Woche', F.bis)}</select></label>
+      <label class="breit">Notiz (freiwillig)<input class="input" data-apa="note" maxlength="60" placeholder="z. B. Für die Arbeit am Freitag" value="${esc(F.note)}"></label>
+    </div>
+    <div class="acts"><button class="btn" data-act="apaneu"${F.g ? '' : ' disabled'}>Aufgabe stellen</button></div>
+    ${offen.length ? `<h3 class="apa-h">Offen</h3><div class="hz-sent pp-list">${offen.map(x => { const g = GAMES[x.g]; return `<div><span>${g ? (g.i || '') + ' ' + esc(g.t) : 'Spiel nicht mehr vorhanden'}<small class="pp-tag">${x.d || 0} von ${x.n} ${x.n === 1 ? 'Runde' : 'Runden'}${apaBis(x) ? ' · ' + apaBis(x) : ''}${x.note ? ' · „' + esc(x.note) + '“' : ''}</small></span><button class="icon-btn apa-del" data-act="apadel" data-id="${x.id}" aria-label="Aufgabe löschen">🗑️</button></div>`; }).join('')}</div>` : '<p class="muted">Gerade ist keine Aufgabe offen.</p>'}
+    ${fertig.length ? `<h3 class="apa-h">Erledigt</h3><div class="hz-sent pp-list">${fertig.map(x => { const g = GAMES[x.g]; return `<div><span>✅ ${g ? esc(g.t) : 'Spiel'}<small class="pp-tag">${new Date(x.f).toLocaleDateString('de-DE', { weekday: 'short', day: 'numeric', month: 'short' })} · ${x.n === 1 ? '1 Runde' : x.n + ' Runden'}${x.erg ? ` · zuletzt ${x.erg[0]} von ${x.erg[1]} richtig` : ''}</small></span></div>`; }).join('')}</div>` : ''}
+  </section>`;
+}
+function apaNeuZeichnen() { const b = document.getElementById('apaBox'); if (b) b.outerHTML = apaParentsHTML(); }
+document.addEventListener('change', e => { const t = e.target, k = t && t.dataset ? t.dataset.apa : null; if (!k) return; APA_F[k] = k === 'n' ? Number(t.value) : t.value; if (k === 'w' || k === 'gr') apaNeuZeichnen(); });
+document.addEventListener('input', e => { const t = e.target; if (t && t.dataset && t.dataset.apa === 'note') APA_F.note = t.value; });
+Object.assign(ACT, {
+  apaneu: () => {
+    const F = APA_F; if (!apaSpielOk(F.g)) return;
+    const A = apaS(); A.nr = (A.nr || 0) + 1;
+    A.l.push({ id: 'a' + A.nr, g: F.g, n: Math.max(1, Math.min(3, F.n | 0)), d: 0, bis: F.bis || '', note: String(F.note || '').trim().slice(0, 60), t: Date.now() });
+    F.note = ''; save(); toast('Aufgabe gestellt: ' + GAMES[F.g].t); apaNeuZeichnen();
+  },
+  apadel: t => { const A = apaS(); A.l = A.l.filter(x => x.id !== t.dataset.id); save(); apaNeuZeichnen(); },
+  apago: t => { const x = apaS().l.find(a => a.id === t.dataset.id); if (!x || !apaSpielOk(x.g)) return showHome(); Sound.unlock(); Sound.tap(); startGame(x.g); }
 });
 
 /*@@src lumi_live.js@@*/
