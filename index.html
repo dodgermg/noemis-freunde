@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-0mWivvJlzJ1QYLhNEZ2MqX8cAMhjPvpGRxuiJsWJuF8=' 'sha256-gOSlig52R83ECNKU6uN4r1pC+j3m6XW1B8ZALKKooH4=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-Xk8mdUzMSesJ3dlEyhCn91bPL6EoKrPBzFdKyvA4uvI=' 'sha256-QFVjtBwRxHf3sGYfLwdDO2lxltPmnVv41j0dCPZ8cGY=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -4497,6 +4497,78 @@ button.cq-cell:active { transform: scale(.99); }
 }
 @media print { .cq-hp { break-inside: avoid; } .cq-svg { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
 
+/* ---- style_design281.css ---- */
+
+.ds-karte-w { margin: 4px 0 14px; }
+.ds-karte { width: 100%; height: auto; display: block; border-radius: 22px; box-shadow: var(--shadow); }
+.ds-hoch { display: none; }
+@media (max-width: 600px) { .ds-breit { display: none; } .ds-hoch { display: block; } }
+.ds-insel { cursor: pointer; transition: transform .2s; transform-box: fill-box; transform-origin: center; }
+.ds-insel:hover .ds-plakette, .ds-insel:focus-visible .ds-plakette { filter: brightness(1.12); }
+.ds-insel:active { transform: scale(.96); }
+.ds-schatten { fill: rgba(10, 60, 100, .22); }
+.ds-sand { fill: #F2DDA9; }
+.ds-gras { fill: #86C96A; stroke: #6DB356; stroke-width: 2; }
+.ds-plakette { stroke: #FFFFFF; stroke-width: 3; filter: drop-shadow(0 2px 2px rgba(0,0,0,.18)); }
+.ds-glanz { fill: rgba(255,255,255,.28); }
+.ds-emo { pointer-events: none; }
+.ds-il { font: 800 15px var(--f-display, system-ui); fill: #FFFFFF; paint-order: stroke; stroke: rgba(10, 50, 80, .55); stroke-width: 4px; pointer-events: none; }
+.ds-hoch .ds-il { font-size: 13px; }
+.ds-pb { fill: rgba(255,255,255,.45); } .ds-pf { fill: #FFD43B; }
+.ds-flagge { cursor: pointer; animation: ds-wehen 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: left bottom; }
+@keyframes ds-wehen { 50% { rotate: -6deg; } }
+.ds-wl { fill: none; stroke: rgba(255,255,255,.5); stroke-width: 2; animation: ds-wl 5s ease-in-out infinite; }
+@keyframes ds-wl { 50% { translate: 18px 0; opacity: .5; } }
+.ds-wolken { animation: ds-wolken 50s linear infinite alternate; } @keyframes ds-wolken { to { translate: 140px 0; } }
+.ds-tipp { margin: 6px 4px 0; font-size: 13px; color: var(--ink-soft); }
+.ds-tog { margin-left: 8px; border: 2px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 14px; padding: 4px 10px; font-weight: 700; font-size: 13px; min-height: 32px; }
+.pagehead .wrap { position: relative; z-index: 1; }
+.ds-kopf { position: absolute; right: 140px; bottom: 16px; width: min(46%, 340px); height: 84px; opacity: .22; pointer-events: none; }
+.ds-huegel { position: absolute; left: 0; right: 0; bottom: -1px; width: 100%; height: 22px; fill: var(--bg); opacity: .9; pointer-events: none; }
+@media (max-width: 600px) { .ds-kopf { right: 92px; width: 52%; height: 60px; bottom: 14px; } }
+.game#gameRoot { position: relative; }
+.game#gameRoot > .stage, .game#gameRoot > header { position: relative; z-index: 1; }
+.ds-boden { position: fixed; left: 0; right: 0; bottom: 0; height: 16vh; min-height: 70px; z-index: 0; pointer-events: none; color: var(--w, #2E86AB); }
+.ds-boden svg { width: 100%; height: 100%; display: block; }
+.ds-h1 { fill: var(--w-soft, #DDEFF8); opacity: .75; } .ds-h2 { fill: var(--w, #2E86AB); opacity: .14; }
+.ds-bd { fill: var(--w, #2E86AB); opacity: .14; } .ds-bs { color: var(--w, #2E86AB); opacity: .14; }
+.ds-bz { font: 800 46px var(--f-display, system-ui); fill: var(--w, #2E86AB); opacity: .13; }
+.q-card { border-top: 5px solid var(--w, var(--sea)); }
+.q-emoji { position: relative; isolation: isolate; }
+.q-emoji::before { content: ""; position: absolute; left: 50%; top: 50%; width: 1.5em; height: 1.5em; translate: -50% -50%; border-radius: 50%; background: radial-gradient(circle, var(--w-soft, #FFF3C4) 0%, transparent 70%); z-index: -1; }
+.opt { transition: transform .12s, box-shadow .12s, border-color .12s; }
+.opt:not(:disabled):active { transform: translateY(3px); box-shadow: 0 3px 0 var(--line-deep); }
+.ds-stern { position: fixed; z-index: 70; font-size: 22px; pointer-events: none; animation: ds-flug .9s cubic-bezier(.5, -.4, .7, 1) forwards; }
+@keyframes ds-flug { 0% { transform: translate(0, 0) scale(.6); opacity: 0; } 15% { opacity: 1; transform: translate(0, -24px) scale(1.2); } 100% { transform: translate(var(--dx), var(--dy)) scale(.5); opacity: .2; } }
+.ds-serie { font-family: var(--f-display); font-weight: 800; font-size: 18px; color: #E8590C; margin-right: 4px; }
+.ds-serie.neu { animation: ds-serie .6s cubic-bezier(.3, 1.8, .5, 1); } @keyframes ds-serie { from { transform: scale(1.8); } }
+.greet .robbi-btn { animation: ds-wipp 3.4s ease-in-out infinite; transform-origin: bottom center; }
+@keyframes ds-wipp { 0%, 100% { rotate: 0deg; } 25% { rotate: -2.5deg; } 75% { rotate: 2.5deg; translate: 0 -2px; } }
+@media (prefers-reduced-motion: reduce) { .ds-karte *, .greet .robbi-btn, .ds-flagge, .ds-stern { animation: none !important; } }
+
+
+.p8-tipp { font-size: 17px; margin: 8px 0 10px; text-align: center; }
+.p8-mal, .p8-zeig, .p8-zl, .p8-ec { display: grid; justify-items: center; gap: 10px; text-align: center; }
+.p8-leinwand { border-radius: 0 0 14px 14px; border: 3px solid var(--line-deep); touch-action: none; background: #FFF; }
+.p8-rest { border: 3px solid var(--line-deep); border-bottom: 0; border-radius: 14px 14px 0 0; opacity: .85; margin-bottom: -10px; }
+.p8-werkzeug { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; align-items: center; }
+.p8-f { width: 38px; height: 38px; border-radius: 50%; border: 3px solid #FFF; box-shadow: 0 0 0 2px var(--line-deep); }
+.p8-f.sel { box-shadow: 0 0 0 4px var(--ink); }
+.p8-monster img { width: min(420px, 90vw); border-radius: 16px; border: 4px solid var(--line-deep); background: #FFF; animation: p8-auf .8s cubic-bezier(.2, 1.4, .5, 1) both; transform-origin: top; }
+@keyframes p8-auf { from { transform: scaleY(.1); } }
+.p8-galerie { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 10px; } .p8-galerie img { width: 120px; border-radius: 10px; border: 2px solid var(--line); background: #FFF; }
+.p8-zl-k { width: min(560px, 100%); }
+.p8-zl-zahl { font: 900 clamp(80px, 18vw, 140px)/1 var(--f-display); color: var(--sea, #2E86AB); }
+.p8-zl-naechst { font-size: 20px; }
+.p8-zl-reihe { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; } .p8-zl-reihe span { width: 18px; height: 18px; border-radius: 50%; background: var(--line); } .p8-zl-reihe span.ja { background: #FFD43B; box-shadow: 0 0 8px #FFD43B; }
+.p8-zl-kn { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+.p8-trommel { width: min(240px, 60vw); aspect-ratio: 1; border-radius: 50%; border: 8px solid #8B5A2B; background: radial-gradient(circle at 40% 35%, #FFF8E1, #F1D9A8); font-size: 90px; display: grid; place-items: center; box-shadow: 0 10px 0 #6D4422; touch-action: manipulation; }
+.p8-trommel:disabled { opacity: .7; } .p8-trommel.schlag { animation: p8-schlag .18s ease; } @keyframes p8-schlag { 50% { transform: scale(.92); box-shadow: 0 4px 0 #6D4422; } }
+.p8-ec-punkte { display: flex; gap: 8px; } .p8-ec-punkte i { width: 16px; height: 16px; border-radius: 50%; background: var(--line); } .p8-ec-punkte i.ja { background: #E8590C; }
+.g8-panel { background: linear-gradient(#FFFFFF, #F3F6FF); }
+.g8-k { background: linear-gradient(#1A237E, #070B24) !important; }
+.g8-bw { background: radial-gradient(#283593, #070B24) !important; }
+
 /* ---- style_es248.css ---- */
 
 .es-cuento { width: min(100%, 680px); margin: 0 auto; padding: 14px 18px; border-radius: 18px; background: var(--surface); box-shadow: inset 0 0 0 2px var(--line-deep); text-align: left; }
@@ -6858,6 +6930,18 @@ button.mau-k:disabled { cursor: default; }
 .ts-bw .ts-bild { width: 140px; height: 98px; }
 .ts-es { font-style: italic; font-weight: 700; color: var(--spanisch-deep, #8A3B12); }
 
+
+.ab-strahl { transform-box: fill-box; transform-origin: left center; animation: ab-strahl 4s ease-in-out infinite; } @keyframes ab-strahl { 50% { rotate: -18deg; } }
+.ab-schaukel { transform-box: fill-box; transform-origin: center bottom; animation: ab-schaukel 3.2s ease-in-out infinite; } @keyframes ab-schaukel { 50% { rotate: 3deg; translate: 0 2px; } }
+.ab-glanz { animation: ab-glanz 2.2s ease-in-out infinite; } @keyframes ab-glanz { 50% { filter: brightness(1.25); } }
+.ab-fahr { animation: ab-fahr 1.2s ease-in-out infinite; } @keyframes ab-fahr { 50% { translate: 0 -1.5px; } }
+.ab-biene { animation: ab-biene 3s ease-in-out infinite; } @keyframes ab-biene { 33% { translate: -14px -6px; } 66% { translate: 10px 4px; } }
+.ab-num { display: flex; align-items: center; justify-content: center; gap: 10px; margin: 6px 0 12px; }
+.ab-nd { min-width: 140px; padding: 10px 18px; border-radius: 16px; border: 3px solid var(--w, #2E86AB); background: var(--surface); font: 800 32px var(--f-display, system-ui); text-align: center; font-variant-numeric: tabular-nums; }
+.ab-nd.ok { border-color: var(--good); background: var(--good-soft); }
+.ab-unit { font-weight: 800; font-size: 22px; }
+.ab-pad { width: min(320px, 100%); margin: 0 auto; }
+
 /* ---- style_pa.css ---- */
 
 .pa { min-height: 100vh; }
@@ -9116,8 +9200,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '2.80.0';
-  var MAP = {"probe":0,"files":[[9106,"fehler_kern.js"],[9394,null],[9396,"data.js"],[10091,"data_more.js"],[10448,"data_su2.js"],[10675,"data_es.js"],[11017,"data_wissen.js"],[11216,"data_v21.js"],[11899,"data_v24.js"],[12385,"data_v25.js"],[12866,"data_v26.js"],[12965,"data_v29.js"],[13270,"data_v30.js"],[13600,"data_v31.js"],[13906,"data_kunst.js"],[14102,"data_v214.js"],[14205,"data_v216.js"],[14498,"schrift.js"],[14798,"eingabe.js"],[15009,"data_k34m.js"],[15527,"data_k34d.js"],[15881,"data_k34s.js"],[16335,"data_v224.js"],[17208,"data_v225w.js"],[17577,"data_v225k.js"],[18021,"data_herz.js"],[18375,"data_fb226.js"],[18518,"data_tf226.js"],[18725,"data_v227a.js"],[19816,"data_v227b.js"],[20770,"data_h28b.js"],[20810,"data_l28a.js"],[21676,"data_l28b.js"],[22856,"data_schaetz.js"],[23338,"data_party8.js"],[23388,"data_alce.js"],[24048,"data_alce2.js"],[24297,"data_alce3.js"],[24712,"registry.js"],[25226,"app.js"],[26411,"fun.js"],[26991,"fun2.js"],[27307,"atelier.js"],[27681,"kunst225.js"],[27871,"herz.js"],[28235,"reise.js"],[28537,"iglu.js"],[28703,"offline.js"],[28810,"party.js"],[29294,"meine.js"],[29650,"loeffel.js"],[29821,"trend.js"],[30363,"fun228a.js"],[31214,"fun228b.js"],[31875,"kueche.js"],[32914,"stimme.js"],[32969,"klassen.js"],[33118,"freunde_vorab.js"],[33139,"mut.js"],[33561,"schule.js"],[34050,"fussball226.js"],[34372,"schaetzen.js"],[34803,"party8.js"],[35422,"tiere.js"],[35881,"fussball232.js"],[36096,"party8b.js"],[36398,"weg.js"],[36619,"px.js"],[37030,"px_data.js"],[37287,"pxwelt.js"],[37368,"px_abenteuer.js"],[38169,"px_abenteuer2.js"],[38918,"px_ski.js"],[39560,"px_wurf.js"],[40089,"px_insel.js"],[41290,"px_kicker.js"],[42225,"px_eis.js"],[43211,"px_run.js"],[44426,"px_brk.js"],[45388,"px_pol.js"],[46739,"px_frog.js"],[47999,"px_angel.js"],[49314,"px_golf.js"],[50348,"px_tauch.js"],[51613,"px_hockey.js"],[52569,"px_lab.js"],[53904,"px_plopp.js"],[55110,"px_stadion.js"],[56614,"px_training.js"],[56983,"cm.js"],[57473,"cmwelt.js"],[57529,"cm_baeck.js"],[58322,"cm_bahn.js"],[59086,"cm_detek.js"],[59803,"cm_markt.js"],[60516,"ff.js"],[60673,"ff_mathe.js"],[62663,"ff_deutsch.js"],[64251,"ff_sach_a.js"],[66500,"ff_sach_b.js"],[68729,"ff_sprachen.js"],[71137,"zm.js"],[72050,"tt.js"],[72263,"data_tagebuch.js"],[72306,"data_hoerspiel.js"],[72465,"leseecke.js"],[72784,"kt.js"],[73087,"comicbuch.js"],[73365,"alce.js"],[73528,"alce_aufg.js"],[73698,"formen.js"],[74149,"data_formen.js"],[74390,"data_formen2.js"],[74612,"spielzeit.js"],[74757,"data_faktmeinung.js"],[74876,"data_es248.js"],[75140,"data_en249.js"],[75379,"data_wissen249.js"],[75810,"data_kunst249.js"],[76093,"data_fussball250.js"],[76217,"data_werte252.js"],[76470,"data_lesen252.js"],[76531,"data_k34_252.js"],[76617,"art254.js"],[76735,"data_werte255.js"],[76873,"data_lesen255.js"],[77009,"forscher255.js"],[77157,"zufall250.js"],[77203,"stufe259.js"],[77213,"advent.js"],[77476,"wdh.js"],[77574,"denk.js"],[77611,"data_viaje265.js"],[77754,"klassenarbeit.js"],[77887,"quizduell.js"],[78010,"neu267.js"],[78275,"prog.js"],[78380,"lernstand.js"],[78447,"blatt.js"],[78549,"data_es271.js"],[78663,"plus269.js"],[78757,"schach.js"],[78984,"schachtaktik.js"],[79155,"fun270.js"],[79318,"data_neu274.js"],[79527,"plus272.js"],[79581,"spiele274.js"],[79704,"kasten.js"],[79808,"erklaer.js"],[79921,"apa.js"],[80002,"neu276.js"],[80143,"spiele276.js"],[80193,"neu277.js"],[80371,"spiele277.js"],[80626,"lernen278.js"],[80886,"spiele278.js"],[81229,"lernen279.js"],[81554,"lernen279b.js"],[81952,"spanisch280.js"],[82244,"grafik280.js"],[82615,"tiefsee280.js"],[82893,"abenteuer280.js"],[83049,"lumi_live.js"],[83165,"sicher.js"],[83349,"stil.js"],[83403,"freunde.js"],[83540,"start.js"],[83550,null],[83560,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '2.81.0';
+  var MAP = {"probe":0,"files":[[9190,"fehler_kern.js"],[9478,null],[9480,"data.js"],[10175,"data_more.js"],[10532,"data_su2.js"],[10759,"data_es.js"],[11101,"data_wissen.js"],[11300,"data_v21.js"],[11983,"data_v24.js"],[12469,"data_v25.js"],[12950,"data_v26.js"],[13049,"data_v29.js"],[13354,"data_v30.js"],[13684,"data_v31.js"],[13990,"data_kunst.js"],[14186,"data_v214.js"],[14289,"data_v216.js"],[14582,"schrift.js"],[14882,"eingabe.js"],[15093,"data_k34m.js"],[15611,"data_k34d.js"],[15965,"data_k34s.js"],[16419,"data_v224.js"],[17292,"data_v225w.js"],[17661,"data_v225k.js"],[18105,"data_herz.js"],[18459,"data_fb226.js"],[18602,"data_tf226.js"],[18809,"data_v227a.js"],[19900,"data_v227b.js"],[20854,"data_h28b.js"],[20894,"data_l28a.js"],[21760,"data_l28b.js"],[22940,"data_schaetz.js"],[23422,"data_party8.js"],[23472,"data_alce.js"],[24132,"data_alce2.js"],[24381,"data_alce3.js"],[24796,"registry.js"],[25310,"app.js"],[26496,"fun.js"],[27076,"fun2.js"],[27392,"atelier.js"],[27766,"kunst225.js"],[27956,"herz.js"],[28320,"reise.js"],[28622,"iglu.js"],[28788,"offline.js"],[28895,"party.js"],[29379,"meine.js"],[29735,"loeffel.js"],[29906,"trend.js"],[30448,"fun228a.js"],[31299,"fun228b.js"],[31960,"kueche.js"],[32999,"stimme.js"],[33054,"klassen.js"],[33203,"freunde_vorab.js"],[33224,"mut.js"],[33646,"schule.js"],[34135,"fussball226.js"],[34457,"schaetzen.js"],[34888,"party8.js"],[35507,"tiere.js"],[35966,"fussball232.js"],[36181,"party8b.js"],[36483,"weg.js"],[36704,"px.js"],[37115,"px_data.js"],[37372,"pxwelt.js"],[37453,"px_abenteuer.js"],[38254,"px_abenteuer2.js"],[39003,"px_ski.js"],[39645,"px_wurf.js"],[40174,"px_insel.js"],[41375,"px_kicker.js"],[42310,"px_eis.js"],[43296,"px_run.js"],[44511,"px_brk.js"],[45473,"px_pol.js"],[46824,"px_frog.js"],[48084,"px_angel.js"],[49399,"px_golf.js"],[50433,"px_tauch.js"],[51698,"px_hockey.js"],[52654,"px_lab.js"],[53989,"px_plopp.js"],[55195,"px_stadion.js"],[56699,"px_training.js"],[57068,"cm.js"],[57558,"cmwelt.js"],[57614,"cm_baeck.js"],[58407,"cm_bahn.js"],[59171,"cm_detek.js"],[59888,"cm_markt.js"],[60601,"ff.js"],[60758,"ff_mathe.js"],[62748,"ff_deutsch.js"],[64336,"ff_sach_a.js"],[66585,"ff_sach_b.js"],[68814,"ff_sprachen.js"],[71222,"zm.js"],[72135,"tt.js"],[72348,"data_tagebuch.js"],[72391,"data_hoerspiel.js"],[72550,"leseecke.js"],[72869,"kt.js"],[73172,"comicbuch.js"],[73450,"alce.js"],[73613,"alce_aufg.js"],[73783,"formen.js"],[74234,"data_formen.js"],[74475,"data_formen2.js"],[74697,"spielzeit.js"],[74842,"data_faktmeinung.js"],[74961,"data_es248.js"],[75225,"data_en249.js"],[75464,"data_wissen249.js"],[75895,"data_kunst249.js"],[76178,"data_fussball250.js"],[76302,"data_werte252.js"],[76555,"data_lesen252.js"],[76616,"data_k34_252.js"],[76702,"art254.js"],[76820,"data_werte255.js"],[76958,"data_lesen255.js"],[77094,"forscher255.js"],[77242,"zufall250.js"],[77288,"stufe259.js"],[77298,"advent.js"],[77561,"wdh.js"],[77659,"denk.js"],[77696,"data_viaje265.js"],[77839,"klassenarbeit.js"],[77972,"quizduell.js"],[78095,"neu267.js"],[78360,"prog.js"],[78465,"lernstand.js"],[78532,"blatt.js"],[78634,"data_es271.js"],[78748,"plus269.js"],[78842,"schach.js"],[79069,"schachtaktik.js"],[79240,"fun270.js"],[79403,"data_neu274.js"],[79612,"plus272.js"],[79666,"spiele274.js"],[79789,"kasten.js"],[79893,"erklaer.js"],[80006,"apa.js"],[80087,"neu276.js"],[80228,"spiele276.js"],[80278,"neu277.js"],[80456,"spiele277.js"],[80711,"lernen278.js"],[80971,"spiele278.js"],[81314,"lernen279.js"],[81639,"lernen279b.js"],[82037,"spanisch280.js"],[82329,"mehr281.js"],[82475,"grafik280.js"],[82846,"tiefsee280.js"],[83124,"abenteuer280.js"],[83336,"abenteuer281.js"],[83448,"design281.js"],[83580,"party281.js"],[83711,"grafik281.js"],[83928,"lumi_live.js"],[84044,"sicher.js"],[84228,"stil.js"],[84282,"freunde.js"],[84419,"start.js"],[84429,null],[84439,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -25227,9 +25311,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '2.80.0';
+const APP_VERSION = '2.81.0';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "2.81.0", d: "13.11.2026", t: ["Neues Design: Inselkarte der Lernwelten", "Vier neue Lern-Abenteuer: Schatzinsel, Bücherburg, London, Forscherreise", "Spielhalle: Sternenreise und Polarlicht-Ritt", "Party: Knick-Monster, Zusammen bis 20, Klatsch-Echo", "Viele neue Aufgaben in allen Fächern"] },
   { v: "2.80.0", d: "13.11.2026", t: ["Spanisch: Geschichten hören, Zeiten, Gespräche, Schreiben", "Neues Lern-Abenteuer: Aventura en Tenerife", "Spielhalle: Inselsprung, Insel-Rallye und Tiefsee-Expedition"] },
   { v: "2.79.1", d: "13.11.2026", t: ["Aufgaben noch genauer den Klassen zugeordnet", "Englisch-Karten und Feste jetzt ab Klasse 3"] },
   { v: "2.79.0", d: "12.11.2026", t: ["17 neue Lernspiele nach den Lehrplänen in Niedersachsen", "Mathe: Blitzblick, Tabellen-Profi, Rechen-Detektiv, Malkreuz, große Zahlen schriftlich, Kopfgeometrie, Daten-Profi", "Deutsch: Zuhören, Lesestrategien, Schreibwerkstatt, Fabel und Sage, Sprachforscher, Plattdeutsch und Fremdwörter", "Sachunterricht: Arbeit und fairer Handel, Feuer und Rost, Quellen der Geschichte", "Englisch: Cards, Signs & Festivals"] },
@@ -82241,6 +82326,152 @@ if (typeof EK !== 'undefined') Object.assign(EK, {
   esescribe: { t: 'Escribe tú', e: ['*B* und *v* klingen gleich, *ll* und *y* auch. Das *h* hört man nicht.', 'Fragen beginnen mit *¿*, Ausrufe mit *¡*.', 'Mit *y*, *pero*, *porque*, *cuando* und *después* verbindest du Sätze.'], b: ['¿Quieres jugar conmigo? · ¡Qué bonito!'] }
 });
 
+/*@@src mehr281.js@@*/
+
+const m8Push = (bank, rows) => { if (Array.isArray(bank)) rows.forEach(r => { if (!bank.some(b => b[0] === r[0])) bank.push(r); }); };
+
+
+const M8_GROESSEN = [
+  ['Wie lang ist ein Bleistift ungefähr?', '✏️', '18 cm', ['18 m', '2 cm']], ['Wie groß ist ein Kind in der zweiten Klasse ungefähr?', '🧒', '130 cm', ['13 cm', '13 m']],
+  ['Wie lang ist ein Schulbus ungefähr?', '🚌', '12 m', ['12 cm', '120 m']], ['Wie hoch ist eine Zimmertür ungefähr?', '🚪', '2 m', ['20 m', '20 cm']],
+  ['Wie lange dauert eine Schulstunde?', '🏫', '45 Minuten', ['4 Minuten', '450 Minuten']], ['Wie lange dauert ein Fußballspiel der Profis ohne Pause?', '🥅', '90 Minuten', ['9 Minuten', '900 Minuten']],
+  ['Wie breit ist ein Schulheft ungefähr?', '📒', '21 cm', ['21 m', '2 cm']], ['Wie lang ist ein Bett ungefähr?', '🛏️', '2 m', ['20 m', '20 cm']],
+  ['Wie lange brauchen Nudeln im Topf, bis sie gar sind?', '🍝', '10 Minuten', ['100 Minuten', '1000 Minuten']], ['Wie hoch hängt ein Basketballkorb ungefähr?', '🏀', '3 m', ['30 m', '30 cm']],
+  ['Wie lang ist eine Banane ungefähr?', '🍌', '20 cm', ['2 m', '2 cm']], ['Wie lange dauert die große Pause ungefähr?', '🛝', '20 Minuten', ['2 Minuten', '200 Minuten']],
+  ['Wie schwer ist ein Apfel ungefähr?', '🍎', '150 g', ['150 kg', '15 kg']], ['Wie viel Wasser passt in eine Badewanne ungefähr?', '🛁', '150 Liter', ['150 Milliliter', '15000 Liter']],
+  ['Wie weit ist es von Hamburg nach Berlin ungefähr?', '🛣️', '290 km', ['290 m', '29 m']], ['Wie schwer ist ein großer Hund ungefähr?', '🐕', '30 kg', ['30 g', '300 kg']]
+];
+m8Push(typeof GROESSEN_SCHAETZ !== 'undefined' ? GROESSEN_SCHAETZ : null, M8_GROESSEN);
+m8Push(typeof GS_K2 !== 'undefined' ? GS_K2 : null, M8_GROESSEN.filter(x => /^\d+ (cm|m|Minuten)$/.test(x[2])));
+
+
+const M8_WA = [['Der *Hund* bellt laut.', 'Nomen', 1], ['Der Hund *bellt* laut.', 'Verb', 1], ['Der Hund bellt *laut*.', 'Adjektiv', 1], ['*Der* Hund bellt laut.', 'Artikel', 1],
+  ['*Ihr* singt ein Lied.', 'Pronomen', 1], ['Ihr *singt* ein Lied.', 'Verb', 1], ['Ihr singt *ein* Lied.', 'Artikel', 1], ['Ihr singt ein *Lied*.', 'Nomen', 1],
+  ['Die Suppe ist *salzig*.', 'Adjektiv', 1], ['*Du* malst einen Drachen.', 'Pronomen', 1], ['Du malst einen *Drachen*.', 'Nomen', 1], ['Die Sonne *scheint* hell.', 'Verb', 1],
+  ['Die Sonne scheint *hell*.', 'Adjektiv', 1], ['*Sie* liest ein Buch.', 'Pronomen', 1]];
+m8Push(typeof WA34 !== 'undefined' ? WA34 : null, M8_WA);
+if (typeof WA_POOL !== 'undefined' && WA_POOL[1] !== WA34) m8Push(WA_POOL[1], M8_WA);
+
+
+if (typeof SENTENCES_EN !== 'undefined') ['My sister likes cats.', 'We play football after school.', 'The dog is in the garden.', 'She is wearing a blue hat.', 'There are three apples on the table.',
+  'My favourite colour is green.', 'He can ride a horse.', 'Do you like pizza?', 'It is cold and windy today.', 'I brush my teeth every morning.', 'The bird is sitting on the roof.', 'Let us go to the park.']
+  .forEach(s => { if (!SENTENCES_EN.includes(s)) SENTENCES_EN.push(s); });
+
+
+m8Push(typeof ADIVINANZAS !== 'undefined' ? ADIVINANZAS : null, [
+  ['Tiene dientes y no come, tiene cabeza y no es hombre.', 'el ajo', '🧄', ['la cebolla', 'el peine', 'la zanahoria']],
+  ['Vuela sin alas, silba sin boca, empuja sin manos y nadie lo toca.', 'el viento', '🌬️', ['el pájaro', 'la lluvia', 'el avión']],
+  ['Tengo agujas y no sé coser, tengo números y no sé leer.', 'el reloj', '⏰', ['el libro', 'el calendario', 'la radio']],
+  ['Camina despacio, lleva su casa encima y deja un camino brillante.', 'el caracol', '🐌', ['la tortuga', 'la mariquita', 'la hormiga']],
+  ['Soy redonda como un queso y salgo de noche en el cielo.', 'la luna', '🌙', ['el sol', 'la estrella', 'la nube']],
+  ['Tengo hojas y no soy árbol, tengo lomo y no soy caballo.', 'el libro', '📖', ['la mesa', 'la planta', 'la silla']],
+  ['Siempre está en la boca, nunca se la come y siempre está mojada.', 'la lengua', '👅', ['la cuchara', 'la galleta', 'el diente']],
+  ['Cuanto más lavo, más sucia está.', 'el agua', '💧', ['el jabón', 'la toalla', 'la esponja']]
+]);
+if (typeof S8_LO !== 'undefined') [['¿Tienes la llave? Sí, ⟪⟫ tengo.', 'la', 'la llave'], ['¿Ves los pájaros? Sí, ⟪⟫ veo.', 'los', 'los pájaros'], ['¿Compras las fresas? Sí, ⟪⟫ compro.', 'las', 'las fresas'],
+  ['¿Lees el cuento? Sí, ⟪⟫ leo.', 'lo', 'el cuento'], ['¿Ayudas a tu madre? Sí, ⟪⟫ ayudo.', 'la', 'tu madre'], ['¿Invitas a tus primos? Sí, ⟪⟫ invito.', 'los', 'tus primos'],
+  ['¿Buscas tus zapatillas? Sí, ⟪⟫ busco.', 'las', 'tus zapatillas'], ['¿Comes el bocadillo? Sí, ⟪⟫ como.', 'lo', 'el bocadillo']].forEach(r => { if (!S8_LO.some(x => x[0] === r[0])) S8_LO.push(r); });
+if (typeof S8_CONV !== 'undefined') S8_CONV.push(
+  { t: 'En la farmacia', i: '💊', l: [['Farmacéutica', 'Hola, ¿qué necesitas?'], ['Tú', 'Tengo tos. ¿Tiene algo para la tos?'], ['Farmacéutica', 'Sí, este jarabe. Toma una cucharada por la noche.'], ['Tú', '¿Cuánto cuesta?'], ['Farmacéutica', 'Cuatro euros.']],
+    g: [1, ['Me gusta mucho el fútbol.', 'Son las tres y media.', 'Tengo un gato negro.']], c: [['¿Qué le pasa?', 'tiene tos', ['le duele un pie', 'tiene hambre']], ['¿Cuándo toma el jarabe?', 'por la noche', ['por la mañana', 'al mediodía']]] },
+  { t: 'En el restaurante', i: '🍽️', l: [['Camarero', '¿Qué vas a tomar?'], ['Tú', 'Quiero una tortilla de patatas, por favor.'], ['Camarero', '¿Y para beber?'], ['Tú', 'Un zumo de naranja.'], ['Camarero', 'Muy bien, ahora mismo.']],
+    g: [3, ['Hasta mañana, profe.', 'Me llamo Leo.', 'Hace mucho frío.']], c: [['¿Qué come?', 'una tortilla de patatas', ['una pizza', 'una paella']], ['¿Qué bebe?', 'un zumo de naranja', ['agua', 'leche']]] },
+  { t: 'En el parque', i: '🛝', l: [['Niña', '¿Puedo jugar con vosotros?'], ['Tú', '¡Claro! Estamos jugando al escondite.'], ['Niña', '¡Genial! ¿Quién busca?'], ['Tú', 'Busca Pablo. ¡Corre, escóndete!']],
+    g: [1, ['No, gracias, ya he comido.', 'Mi casa es azul.', 'Son las nueve.']], c: [['¿A qué juegan?', 'al escondite', ['al fútbol', 'a las cartas']], ['¿Quién busca?', 'Pablo', ['la niña', 'la profe']]] },
+  { t: 'En clase de deporte', i: '🏀', l: [['Profe', 'Hoy jugamos al baloncesto.'], ['Tú', '¡Qué bien! ¿Dónde está el balón?'], ['Profe', 'En la caja azul, al lado de la puerta.'], ['Tú', 'Vale, ya lo tengo.']],
+    g: [1, ['Tengo hambre, ¿qué hay de comer?', 'Buenas noches.', 'Mi color favorito es el rosa.']], c: [['¿A qué juegan hoy?', 'al baloncesto', ['al fútbol', 'al tenis']], ['¿Dónde está el balón?', 'en la caja azul', ['en la mochila', 'debajo de la mesa']]] },
+  { t: 'En la playa', i: '🏖️', l: [['Mamá', '¿Te pones crema? Hace mucho sol.'], ['Tú', 'Sí, ¿me ayudas con la espalda?'], ['Mamá', 'Claro. Y no olvides la gorra.'], ['Tú', 'Vale. ¿Puedo bañarme ya?'], ['Mamá', 'Sí, pero cerca de la orilla.']],
+    g: [1, ['No, gracias, no tengo sed.', 'Hoy es lunes.', 'Me gusta el invierno.']], c: [['¿Qué no debe olvidar?', 'la gorra', ['las gafas', 'la toalla']], ['¿Dónde puede bañarse?', 'cerca de la orilla', ['en la piscina', 'muy lejos']]] },
+  { t: 'Un perrito nuevo', i: '🐶', l: [['Abuelo', '¡Mira! Tenemos un perrito nuevo.'], ['Tú', '¡Qué bonito! ¿Cómo se llama?'], ['Abuelo', 'Todavía no tiene nombre. ¿Tienes una idea?'], ['Tú', '¡Se puede llamar Coco!'], ['Abuelo', '¡Perfecto, Coco!']],
+    g: [1, ['Tengo dos hermanos.', 'Son las ocho.', 'Me duele la tripa.']], c: [['¿Qué tiene el abuelo?', 'un perrito nuevo', ['un gato', 'un pájaro']], ['¿Cómo se llama el perro?', 'Coco', ['Toto', 'Luna']]] }
+);
+
+
+const M8_SU = {
+  SU_KOERPER: [
+    ['Wie viele Knochen hat ein Erwachsener ungefähr?', '🦴', 'etwa 200', ['etwa 20', 'etwa 2000', 'etwa 50'], 'Ein Erwachsener hat 206 Knochen. Ein Baby hat sogar noch mehr, weil einige später zusammenwachsen.'],
+    ['Was pumpt das Blut durch deinen Körper?', '❤️', 'das Herz', ['die Lunge', 'der Magen', 'die Leber'], 'Das Herz ist ein starker Muskel und schlägt etwa 100 000 Mal am Tag.'],
+    ['Womit atmest du?', '🫁', 'mit der Lunge', ['mit dem Herzen', 'mit dem Magen', 'mit den Nieren'], 'In der Lunge kommt der Sauerstoff aus der Luft ins Blut.'],
+    ['Warum wäschst du dir vor dem Essen die Hände?', '🧼', 'damit keine Krankheitskeime in den Mund kommen', ['damit die Hände schneller wachsen', 'damit das Essen besser schmeckt', 'damit die Hände wärmer werden'], 'Seife und Wasser spülen Keime weg. Wasch die Hände mindestens 20 Sekunden lang.'],
+    ['Wie viel Schlaf braucht ein Kind in deinem Alter ungefähr?', '😴', '10 Stunden', ['3 Stunden', '5 Stunden', '20 Stunden'], 'Kinder im Grundschulalter brauchen etwa 9 bis 11 Stunden Schlaf.'],
+    ['Was passiert mit deinem Herzschlag, wenn du schnell rennst?', '🏃', 'Er wird schneller.', ['Er bleibt stehen.', 'Er wird langsamer.', 'Er hört kurz auf.'], 'Die Muskeln brauchen beim Rennen mehr Sauerstoff, also pumpt das Herz schneller.'],
+    ['Was schützt dein Gehirn?', '🧠', 'der Schädel', ['die Rippen', 'das Becken', 'die Wirbelsäule'], 'Der Schädel ist wie ein harter Helm aus Knochen. Beim Radfahren hilft zusätzlich ein Fahrradhelm.']],
+  SU_VERKEHR: [
+    ['Was bedeutet ein grünes Männchen an der Fußgängerampel?', '🚥', 'Du darfst gehen, schau trotzdem nach links und rechts.', ['Du musst stehen bleiben.', 'Du musst rennen.', 'Die Ampel ist kaputt.'], 'Auch bei Grün schauen: Manche Autos biegen ab.'],
+    ['Wo gehst du, wenn es keinen Gehweg gibt?', '🚶', 'am linken Straßenrand, den Autos entgegen', ['in der Mitte der Straße', 'am rechten Rand mit dem Rücken zu den Autos', 'auf dem Grünstreifen in der Mitte'], 'So siehst du die Autos kommen, und sie sehen dich.'],
+    ['Warum trägst du im Dunkeln helle Kleidung oder Reflektoren?', '🦺', 'damit Autofahrer dich früh sehen', ['damit dir wärmer ist', 'damit du schneller bist', 'damit die Straßenlampen angehen'], 'Reflektoren leuchten im Scheinwerferlicht, schon von weit weg.'],
+    ['Wo ist der sicherste Platz für Kinder im Auto?', '🚗', 'hinten im Kindersitz', ['vorne ohne Gurt', 'im Kofferraum', 'auf dem Schoß der Eltern'], 'Kinder fahren im Kindersitz, bis sie etwa 12 Jahre alt oder 150 cm groß sind.'],
+    ['Was tust du, bevor du zwischen parkenden Autos auf die Straße gehst?', '🅿️', 'An der Sichtlinie stehen bleiben und schauen', ['Schnell loslaufen', 'Die Augen zumachen', 'Rückwärts gehen'], 'Zwischen parkenden Autos sehen dich Autofahrer schlecht. Such dir besser eine freie Stelle.'],
+    ['Was bedeutet ein blaues rundes Schild mit einem Fahrrad?', '🚲', 'Hier ist ein Radweg.', ['Fahrräder verboten', 'Fahrradladen', 'Fahrradparkplatz'], 'Blaue runde Schilder sind Gebote: Radfahrer müssen diesen Weg benutzen.'],
+    ['Wo wartest du auf den Schulbus?', '🚌', 'mit Abstand zur Bordsteinkante', ['direkt an der Bordsteinkante', 'auf der Straße', 'hinter dem Bus'], 'Ein Bus schwenkt beim Halten aus. Bleib hinter der Linie oder mit großem Abstand stehen.']],
+  SU_NATUR: [
+    ['Was braucht eine Pflanze zum Wachsen?', '🌱', 'Licht, Wasser und Erde mit Nährstoffen', ['nur Dunkelheit', 'nur Zucker', 'nur Wind'], 'Mit Licht stellen Pflanzen in ihren Blättern Nahrung her.'],
+    ['Welcher Teil der Pflanze nimmt Wasser aus dem Boden auf?', '🪴', 'die Wurzel', ['die Blüte', 'das Blatt', 'die Frucht'], 'Die Wurzel hält die Pflanze fest und saugt Wasser auf.'],
+    ['Was geben Pflanzen an die Luft ab, das wir zum Atmen brauchen?', '🍃', 'Sauerstoff', ['Rauch', 'Staub', 'Salz'], 'Pflanzen nehmen Kohlenstoffdioxid auf und geben Sauerstoff ab.'],
+    ['Wie heißt die Jahreszeit, in der viele Bäume ihre Blätter verlieren?', '🍂', 'Herbst', ['Frühling', 'Sommer', 'Ostern'], 'Im Herbst ziehen Bäume Nährstoffe aus den Blättern zurück, dann fallen die Blätter ab.'],
+    ['Welche Pflanze ist giftig und darf nicht gegessen werden?', '☠️', 'der Fingerhut', ['die Karotte', 'der Apfel', 'die Erdbeere'], 'Fingerhut ist sehr giftig. Iss nie Pflanzen, die du nicht sicher kennst.'],
+    ['Woraus wächst eine neue Sonnenblume?', '🌻', 'aus einem Samen', ['aus einem Stein', 'aus einer Feder', 'aus einer Muschel'], 'In den Kernen der Sonnenblume stecken die Samen.'],
+    ['Was machen Bienen an den Blüten?', '🐝', 'Sie sammeln Nektar und tragen Blütenstaub weiter.', ['Sie fressen die Blätter.', 'Sie bauen Nester in den Blüten.', 'Sie machen die Blüten kaputt.'], 'So bestäuben Bienen die Blüten, und es wachsen Früchte.']],
+  SU_MEER: [
+    ['Warum ist Meerwasser salzig?', '🌊', 'Flüsse bringen gelöste Salze aus dem Gestein ins Meer.', ['Fische geben Salz ab.', 'Menschen schütten Salz hinein.', 'Der Regen ist salzig.'], 'Das Wasser verdunstet, das Salz bleibt im Meer zurück.'],
+    ['Wie oft am Tag gibt es an der Nordsee Ebbe?', '⏱️', 'etwa zweimal', ['einmal im Monat', 'zehnmal', 'nie'], 'Ebbe und Flut wechseln sich ungefähr alle sechs Stunden ab.'],
+    ['Was ist ein Schweinswal?', '🐬', 'ein kleiner Wal, der in der Nordsee lebt', ['ein Fisch mit Rüssel', 'ein Schiff', 'ein Krebs'], 'Schweinswale sind kleine Zahnwale. Man sieht sie manchmal von der Küste aus.'],
+    ['Wozu baut man Buhnen ins Meer am Strand?', '🪨', 'Sie schützen den Strand davor, weggespült zu werden.', ['Damit Schiffe anlegen können.', 'Damit man darauf grillen kann.', 'Als Rennbahn für Krabben.'], 'Buhnen bremsen die Strömung, so bleibt der Sand liegen.'],
+    ['Was tust du, wenn du einen jungen Seehund allein am Strand siehst?', '🦭', 'Abstand halten und Bescheid sagen', ['Ihn streicheln', 'Ihn ins Wasser tragen', 'Ihn füttern'], 'Oft kommt die Mutter zurück. Ruf die Seehundstation oder die Polizei an.'],
+    ['Woraus besteht ein Sandstrand?', '🏝️', 'aus winzigen Stücken von Gestein und Muscheln', ['aus Zucker', 'aus Salzkörnern', 'aus Schnee'], 'Wellen zerreiben Steine und Muscheln über sehr lange Zeit zu Sand.'],
+    ['Was ist eine Sturmflut?', '🌪️', 'sehr hohes Wasser, weil der Sturm es an die Küste drückt', ['ein Wind ohne Wasser', 'ein Regen im Sommer', 'eine Welle im Schwimmbad'], 'Deshalb gibt es Deiche, die das Land schützen.']],
+  SU_WELTALL: [
+    ['Welcher Planet ist der größte?', '🪐', 'Jupiter', ['Mars', 'Merkur', 'die Erde'], 'In den Jupiter würde die Erde über tausend Mal hineinpassen.'],
+    ['Warum gibt es Tag und Nacht?', '🌗', 'Die Erde dreht sich um sich selbst.', ['Die Sonne geht aus.', 'Der Mond schiebt sich vor die Sonne.', 'Die Wolken werden dunkel.'], 'Eine Drehung dauert etwa 24 Stunden.'],
+    ['Wie lange braucht die Erde für eine Runde um die Sonne?', '☀️', 'ein Jahr', ['einen Tag', 'einen Monat', 'eine Woche'], 'Genau sind es 365 Tage und ein paar Stunden. Deshalb gibt es Schaltjahre.'],
+    ['Welcher Planet heißt der rote Planet?', '🔴', 'Mars', ['Venus', 'Saturn', 'Neptun'], 'Der Mars ist rot, weil sein Boden viel Rost enthält.'],
+    ['Was ist ein Stern wie die Sonne?', '⭐', 'eine riesige leuchtende Kugel aus heißem Gas', ['ein Stein, der Licht spiegelt', 'eine Lampe im All', 'ein Planet aus Eis'], 'Die Sterne am Nachthimmel sind auch Sonnen, nur sehr weit weg.'],
+    ['Wer war der erste Mensch auf dem Mond?', '🧑‍🚀', 'Neil Armstrong', ['Christoph Kolumbus', 'Albert Einstein', 'Juri Gagarin'], 'Er betrat den Mond 1969. Juri Gagarin war der erste Mensch im Weltall.'],
+    ['Welcher Planet hat die auffälligsten Ringe?', '💫', 'Saturn', ['Mars', 'Venus', 'Merkur'], 'Saturns Ringe bestehen aus unzähligen Brocken aus Eis und Gestein.']],
+  SU_ERNAEHRUNG: [
+    ['Welches Getränk löscht den Durst am besten?', '💧', 'Wasser', ['Limonade', 'Cola', 'Eistee'], 'Wasser hat keinen Zucker und löscht den Durst am besten.'],
+    ['Wie viele Portionen Obst und Gemüse sollst du am Tag essen?', '🥕', 'etwa fünf', ['keine', 'eine pro Woche', 'zwanzig'], 'Eine Portion passt ungefähr in deine Hand.'],
+    ['Was gibt dir lange Energie für die Schule?', '🥣', 'Vollkornbrot oder Haferflocken', ['Gummibärchen', 'Limonade', 'Chips'], 'Vollkorn macht lange satt, Zucker nur kurz.'],
+    ['Worin steckt viel Kalzium für starke Knochen?', '🥛', 'in Milch und Käse', ['in Gummibärchen', 'in Limonade', 'in Pommes'], 'Kalzium baut Knochen und Zähne auf.'],
+    ['Was ist ein gesundes Pausenbrot?', '🥪', 'Vollkornbrot mit Käse und Gurke', ['Schokoriegel und Cola', 'nur Chips', 'Kuchen mit Sahne'], 'Dazu passen Wasser und ein Stück Obst.'],
+    ['Warum soll man nicht zu viel Zucker essen?', '🍬', 'Er schadet den Zähnen und macht nicht lange satt.', ['Er macht blaue Haare.', 'Er macht die Augen schlecht.', 'Er ist verboten.'], 'Süßes ist ab und zu in Ordnung, am besten nach dem Essen.'],
+    ['Was bedeutet „Vollkorn“?', '🌾', 'Das ganze Korn mit Schale steckt im Mehl.', ['Das Brot ist besonders voll.', 'Es sind Rosinen drin.', 'Es ist nur weißes Mehl.'], 'In der Schale stecken viele Vitamine und Ballaststoffe.']],
+  SU_JAHRESLAUF: [
+    ['Wann blühen Schneeglöckchen?', '🌼', 'am Ende des Winters', ['im Hochsommer', 'im Herbst', 'nur an Weihnachten'], 'Schneeglöckchen gehören zu den ersten Blumen im Jahr.'],
+    ['Was machen Zugvögel wie Störche im Herbst?', '🕊️', 'Sie fliegen in den warmen Süden.', ['Sie halten Winterschlaf.', 'Sie graben sich ein.', 'Sie bauen Iglus.'], 'Im Frühling kommen sie zurück und bauen ihre Nester.'],
+    ['Was macht ein Igel im Winter?', '🦔', 'Winterschlaf', ['Er fliegt in den Süden.', 'Er sammelt Schnee.', 'Er wechselt die Farbe.'], 'Im Herbst frisst er sich ein dickes Fettpolster an.'],
+    ['In welchem Monat beginnt der Sommer?', '🌞', 'im Juni', ['im Januar', 'im Oktober', 'im März'], 'Der Sommer beginnt am 21. Juni, dem längsten Tag des Jahres.'],
+    ['Wann sind die Tage am kürzesten?', '🌑', 'im Winter', ['im Sommer', 'im Frühling', 'im Herbst'], 'Um den 21. Dezember ist der kürzeste Tag des Jahres.'],
+    ['Was ernten Bauern im Sommer auf den Feldern?', '🌾', 'Getreide wie Weizen', ['Schneebälle', 'Weihnachtsbäume', 'Tulpenzwiebeln'], 'Mähdrescher schneiden das Getreide und dreschen die Körner heraus.'],
+    ['Warum färben sich Blätter im Herbst bunt?', '🍁', 'Der Baum zieht den grünen Farbstoff zurück.', ['Jemand malt sie an.', 'Der Regen färbt sie.', 'Die Sonne verbrennt sie.'], 'Dann sieht man das Gelb und Rot, das vorher vom Grün verdeckt war.']],
+  SU_WIND: [
+    ['Woran erkennst du, aus welcher Richtung der Wind weht?', '🚩', 'an einer Fahne oder einem Windsack', ['an einer Uhr', 'am Thermometer', 'an einer Pfütze'], 'Die Fahne zeigt immer vom Wind weg.'],
+    ['Was ist Luft?', '💨', 'ein Gemisch aus unsichtbaren Gasen', ['nichts', 'Wasser', 'ganz feiner Staub'], 'Luft nimmt Platz ein. Das merkst du, wenn du einen Luftballon aufbläst.'],
+    ['Wozu nutzen Windräder den Wind?', '🌬️', 'um Strom zu erzeugen', ['um Wolken zu machen', 'um Vögel zu vertreiben', 'um Regen zu bringen'], 'Der Wind dreht die Flügel, ein Generator macht daraus Strom.'],
+    ['Warum steigt ein Heißluftballon nach oben?', '🎈', 'Warme Luft ist leichter als kalte Luft.', ['Weil er mit Wasser gefüllt ist.', 'Weil Vögel ihn ziehen.', 'Weil er Flügel hat.'], 'Der Brenner erwärmt die Luft im Ballon.'],
+    ['Wie heißt ein sehr starker Wind?', '🌀', 'Sturm', ['Brise', 'Nebel', 'Tau'], 'Bei Sturm bleibst du am besten im Haus und gehst nicht in den Wald.'],
+    ['Was passiert mit einem Segelboot ohne Wind?', '⛵', 'Es bleibt fast stehen.', ['Es fliegt.', 'Es fährt schneller.', 'Es taucht.'], 'Segelboote werden vom Wind angetrieben.'],
+    ['Welches Gerät misst, wie stark der Wind weht?', '📏', 'ein Windmesser', ['ein Thermometer', 'eine Waage', 'ein Mikroskop'], 'Kleine Schalen drehen sich: Je schneller, desto stärker der Wind.']],
+  SU_TIERE: [
+    ['Welches Tier ist ein Säugetier?', '🐄', 'die Kuh', ['das Huhn', 'der Frosch', 'die Forelle'], 'Säugetiere säugen ihre Jungen mit Milch.'],
+    ['Welches Tier legt Eier?', '🐔', 'das Huhn', ['die Katze', 'das Pferd', 'der Hund'], 'Vögel, Fische, Reptilien und viele Insekten legen Eier.'],
+    ['Was frisst ein Pflanzenfresser?', '🐇', 'Gras, Blätter und Gemüse', ['nur Fleisch', 'nur Fische', 'Steine'], 'Kaninchen, Kühe und Pferde sind Pflanzenfresser.'],
+    ['Wie atmet ein Fisch unter Wasser?', '🐟', 'mit Kiemen', ['mit einer Lunge an der Oberfläche', 'durch die Flossen', 'gar nicht'], 'Die Kiemen holen den Sauerstoff aus dem Wasser.'],
+    ['Welches Tier ist ein Insekt?', '🐞', 'der Marienkäfer', ['die Spinne', 'die Schnecke', 'der Regenwurm'], 'Insekten haben sechs Beine. Spinnen haben acht.'],
+    ['Was ist ein Raubtier?', '🦊', 'ein Tier, das andere Tiere jagt', ['ein Tier, das stiehlt', 'ein Tier, das nur Gras frisst', 'ein Tier im Zoo'], 'Fuchs, Wolf und Luchs sind Raubtiere.'],
+    ['Wie nennt man ein junges Pferd?', '🐴', 'Fohlen', ['Kalb', 'Ferkel', 'Lamm'], 'Fohlen können kurz nach der Geburt schon stehen.']],
+  SU_PINGUIN: [
+    ['Auf welcher Hälfte der Erde leben fast alle Pinguine?', '🌍', 'auf der Südhalbkugel', ['auf der Nordhalbkugel', 'am Nordpol', 'überall gleich verteilt'], 'Am Nordpol gibt es keine Pinguine, dort leben Eisbären.'],
+    ['Welcher ist der größte Pinguin?', '👑', 'der Kaiserpinguin', ['der Zwergpinguin', 'der Felsenpinguin', 'der Brillenpinguin'], 'Kaiserpinguine werden über einen Meter groß.'],
+    ['Wie halten sich Kaiserpinguine im Sturm warm?', '🥶', 'Sie kuscheln sich dicht zusammen.', ['Sie machen ein Feuer.', 'Sie fliegen weg.', 'Sie graben Höhlen in den Sand.'], 'Abwechselnd darf jeder in die warme Mitte.'],
+    ['Was frisst ein Pinguin?', '🦐', 'Fische, Krill und Tintenfische', ['Gras und Moos', 'Nüsse', 'Brot'], 'Krill sind kleine Krebse, die in riesigen Schwärmen leben.'],
+    ['Wie lange kann ein Kaiserpinguin tauchen?', '⏳', 'über 20 Minuten', ['10 Sekunden', 'einen Tag', 'eine Woche'], 'Kaiserpinguine tauchen sogar über 500 Meter tief.'],
+    ['Wer wärmt beim Kaiserpinguin das Ei?', '🥚', 'der Vater', ['die Mutter', 'die Großeltern', 'niemand'], 'Der Vater hält das Ei auf seinen Füßen warm, die Mutter jagt im Meer.'],
+    ['Warum können Pinguine nicht fliegen?', '🪽', 'Ihre Flügel sind zu Flossen zum Schwimmen geworden.', ['Weil sie zu müde sind.', 'Weil sie Angst vor der Höhe haben.', 'Weil sie keine Federn haben.'], 'Unter Wasser „fliegen“ sie dafür blitzschnell.']]
+};
+const M8_BANKEN = { SU_KOERPER: typeof SU_KOERPER !== 'undefined' ? SU_KOERPER : null, SU_VERKEHR: typeof SU_VERKEHR !== 'undefined' ? SU_VERKEHR : null, SU_NATUR: typeof SU_NATUR !== 'undefined' ? SU_NATUR : null, SU_MEER: typeof SU_MEER !== 'undefined' ? SU_MEER : null, SU_WELTALL: typeof SU_WELTALL !== 'undefined' ? SU_WELTALL : null, SU_ERNAEHRUNG: typeof SU_ERNAEHRUNG !== 'undefined' ? SU_ERNAEHRUNG : null, SU_JAHRESLAUF: typeof SU_JAHRESLAUF !== 'undefined' ? SU_JAHRESLAUF : null, SU_WIND: typeof SU_WIND !== 'undefined' ? SU_WIND : null, SU_TIERE: typeof SU_TIERE !== 'undefined' ? SU_TIERE : null, SU_PINGUIN: typeof SU_PINGUIN !== 'undefined' ? SU_PINGUIN : null };   /* ohne eval, wegen der Sicherheitsregeln (CSP) */
+Object.entries(M8_SU).forEach(([name, rows]) => m8Push(M8_BANKEN[name], rows));
+
 /*@@src grafik280.js@@*/
 
 
@@ -82901,49 +83132,49 @@ const AB_ST = [
   { id: 'teide', t: 'El Teide', de: 'Teide', i: '🌋', npc: 'Elena, la guía', hallo: '¡Has llegado al Teide, la montaña más alta de España! Es la última prueba.', hde: 'Du bist am Teide, dem höchsten Berg Spaniens! Das ist die letzte Prüfung.', g: ['estiempos', 'kanaren', 'verbos', 'eslola'], lv: 2, xy: [190, 185], tag: 'nacht' }
 ];
 const AB_LOB = ['¡Muy bien!', '¡Genial!', '¡Perfecto!', '¡Eso es!', '¡Fenomenal!'];
-let ABT = null;
-function abS() { if (!S.abt || typeof S.abt !== 'object') S.abt = { hecho: [] }; if (!Array.isArray(S.abt.hecho)) S.abt.hecho = []; return S.abt; }
-const abFrei = () => { const h = abS().hecho; let k = 0; while (k < AB_ST.length && h[k]) k++; return Math.min(k, AB_ST.length - 1); };
-const abFertig = () => AB_ST.every((_, k) => abS().hecho[k]);
-function abStart(g0) { ABT = { g: g0, st: -1, n: 0, ok: 0, bad: 0, q: null, tries: 0 }; g0.cleanup = () => { try { speechSynthesis.cancel(); } catch (e) { } ABT = null; }; abKarte(); }
 
+
+
+const ABV = {};
+let ABT = null;
+const abCfg = () => ABV[(ABT && ABT.adv) || 'aventura'];
+function abS(id) {
+  id = id || (ABT && ABT.adv) || 'aventura';
+  if (id === 'aventura') { if (!S.abt || typeof S.abt !== 'object') S.abt = { hecho: [] }; if (!Array.isArray(S.abt.hecho)) S.abt.hecho = []; return S.abt; }
+  if (!S.abenteuer || typeof S.abenteuer !== 'object') S.abenteuer = {};
+  const o = S.abenteuer[id] = S.abenteuer[id] && Array.isArray(S.abenteuer[id].hecho) ? S.abenteuer[id] : { hecho: [] }; return o;
+}
+const abFrei = () => { const st = abCfg().st, h = abS().hecho; let k = 0; while (k < st.length && h[k]) k++; return Math.min(k, st.length - 1); };
+const abFertig = () => abCfg().st.every((_, k) => abS().hecho[k]);
+function abStart(g0, id) { ABT = { adv: id || 'aventura', g: g0, st: -1, n: 0, ok: 0, bad: 0, q: null, tries: 0 }; g0.cleanup = () => { try { speechSynthesis.cancel(); } catch (e) { } ABT = null; }; abKarte(); }
+const abLang = () => abCfg().lang || 'de-DE';
+const abMiniLumi = () => `<g><ellipse cx="14" cy="18" rx="11" ry="15" fill="#1F2A44"/><ellipse cx="16" cy="20" rx="7" ry="11" fill="#FFF"/><rect x="4" y="9" width="21" height="4" rx="2" fill="#E0453A"/><circle cx="17" cy="9" r="2.4" fill="#FFF"/><circle cx="18" cy="9" r="1.2" fill="#111"/><path d="M21 10 l 7 2 l -7 2 z" fill="#F59E0B"/><ellipse cx="10" cy="33" rx="4" ry="2" fill="#F59E0B"/><ellipse cx="18" cy="33" rx="4" ry="2" fill="#F59E0B"/></g>`;
 function abInselSVG() {
-  const h = abS().hecho, frei = abFrei(), done = abFertig();
-  const weg = AB_ST.map(s => s.xy.join(',')).join(' ');
-  const marken = AB_ST.map((s, k) => { const offen = k <= frei || h[k], akt = k === frei && !done;
+  const C = abCfg(), st = C.st, h = abS().hecho, frei = abFrei(), done = abFertig();
+  const weg = st.map(s => s.xy.join(',')).join(' ');
+  const marken = st.map((s, k) => { const offen = k <= frei || h[k], akt = k === frei && !done;
     return `<g class="ab-m ${offen ? 'offen' : 'zu'} ${akt ? 'akt' : ''} ${h[k] ? 'hecho' : ''}" data-ab="st" data-k="${k}" role="button" tabindex="0" aria-label="${esc(s.t)}${offen ? '' : ', noch gesperrt'}">
       ${akt ? `<circle cx="${s.xy[0]}" cy="${s.xy[1]}" r="24" class="ab-puls"/>` : ''}<circle cx="${s.xy[0]}" cy="${s.xy[1]}" r="18" class="ab-mk"/><text x="${s.xy[0]}" y="${s.xy[1] + 6}" text-anchor="middle" class="ab-mi">${offen ? s.i : '🔒'}</text>
       ${h[k] ? `<text x="${s.xy[0] + 14}" y="${s.xy[1] - 12}" class="ab-ok">✓</text>` : ''}<text x="${s.xy[0]}" y="${s.xy[1] + 34}" text-anchor="middle" class="ab-ml">${esc(s.t)}</text></g>`; }).join('');
-  const lumi = AB_ST[done ? AB_ST.length - 1 : frei].xy;
-  return `<svg class="ab-karte" viewBox="0 0 400 360" role="img" aria-label="Karte von Teneriffa mit sechs Stationen">
-    <defs><linearGradient id="abMeer" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7FD3F5"/><stop offset="1" stop-color="#1F7FB8"/></linearGradient>
-      <radialGradient id="abLand" cx=".5" cy=".45" r=".6"><stop offset="0" stop-color="#C9B27A"/><stop offset=".55" stop-color="#8DB36B"/><stop offset="1" stop-color="#5E9A57"/></radialGradient>
-      <linearGradient id="abBerg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A57B5B"/><stop offset="1" stop-color="#6D4C3D"/></linearGradient></defs>
-    <rect width="400" height="360" fill="url(#abMeer)"/>
-    <g class="ab-wellen">${[40, 110, 300, 330].map((y, k) => `<path d="M${-40 + k * 30} ${y} q 15 -6 30 0 t 30 0 t 30 0" class="ab-wl" style="animation-delay:${k * .7}s"/>`).join('')}</g>
-    <path d="M40 150 C 70 70, 150 40, 230 50 C 300 58, 360 80, 372 120 C 380 150, 350 210, 330 250 C 300 310, 240 335, 200 320 C 150 300, 120 260, 80 230 C 50 210, 30 185, 40 150 Z" fill="#E8D5A3"/>
-    <path d="M52 152 C 80 80, 152 54, 228 62 C 296 70, 350 92, 360 124 C 366 150, 340 205, 320 244 C 292 300, 238 322, 202 308 C 156 290, 126 252, 88 222 C 60 202, 44 180, 52 152 Z" fill="url(#abLand)"/>
-    <path d="M150 210 L 190 140 L 200 132 L 212 140 L 250 210 Z" fill="url(#abBerg)"/><path d="M182 154 L 190 140 L 200 132 L 212 140 L 218 152 L 206 148 L 200 154 L 192 148 Z" fill="#FFFFFF"/>
-    <g fill="#3E7A50">${[[100, 120], [118, 105], [90, 140], [300, 130], [315, 150], [130, 250], [260, 270]].map(([a, b]) => `<circle cx="${a}" cy="${b}" r="7"/>`).join('')}</g>
-    <polyline points="${weg}" class="ab-weg"/>
-    ${marken}
-    <g class="ab-lumi" transform="translate(${lumi[0] - 14} ${lumi[1] - 52})">${abMiniLumi()}</g>
-  </svg>`;
+  const lumi = st[done ? st.length - 1 : frei].xy;
+  return `<svg class="ab-karte" viewBox="0 0 400 360" role="img" aria-label="${esc(C.kartenLabel || 'Abenteuer-Karte')}">${C.karte()}
+    <polyline points="${weg}" class="ab-weg"/>${marken}
+    <g class="ab-lumi" transform="translate(${lumi[0] - 14} ${lumi[1] - 52})">${abMiniLumi()}</g></svg>`;
 }
-const abMiniLumi = () => `<g><ellipse cx="14" cy="18" rx="11" ry="15" fill="#1F2A44"/><ellipse cx="16" cy="20" rx="7" ry="11" fill="#FFF"/><rect x="4" y="9" width="21" height="4" rx="2" fill="#E0453A"/><circle cx="17" cy="9" r="2.4" fill="#FFF"/><circle cx="18" cy="9" r="1.2" fill="#111"/><path d="M21 10 l 7 2 l -7 2 z" fill="#F59E0B"/><ellipse cx="10" cy="33" rx="4" ry="2" fill="#F59E0B"/><ellipse cx="18" cy="33" rx="4" ry="2" fill="#F59E0B"/></g>`;
 function abKarte() {
-  if (!ABT) return; ABT.st = -1; const h = abS().hecho, n = h.filter(Boolean).length;
-  setView(`<div class="game ab-game" data-world="spanisch">${ksKopf('🧭 Aventura en Tenerife')}<main class="wrap" id="ab">
-    <section class="card ab-kopf"><p>${abFertig() ? '¡Misión cumplida! Du hast alle sechs Stempel. Jede Station kannst du nochmal besuchen.' : 'Reise mit Lumi über Teneriffa. Bei jeder Station warten drei Aufgaben auf Spanisch. Danach gibt es einen Stempel und der Weg geht weiter.'}</p></section>
+  if (!ABT) return; ABT.st = -1; const C = abCfg(), h = abS().hecho, n = C.st.filter((_, k) => h[k]).length;
+  setView(`<div class="game ab-game" data-world="${C.w}">${ksKopf(`${C.icon} ${esc(C.t)}`)}<main class="wrap" id="ab">
+    <section class="card ab-kopf"><p>${abFertig() ? C.introFertig : C.intro}</p></section>
     <section class="card ab-kw">${abInselSVG()}</section>
-    <section class="card"><h3>🛂 Mi pasaporte: ${n} von ${AB_ST.length} Stempeln</h3><div class="ab-pass">${AB_ST.map((s, k) => `<div class="ab-sello ${h[k] ? 'ja' : ''}"><span>${h[k] ? s.i : '·'}</span><small>${esc(s.t)}</small></div>`).join('')}</div></section></main></div>`);
+    <section class="card"><h3>${C.pass}: ${n} von ${C.st.length} Stempeln</h3><div class="ab-pass">${C.st.map((s, k) => `<div class="ab-sello ${h[k] ? 'ja' : ''}"><span>${h[k] ? s.i : '·'}</span><small>${esc(s.t)}</small></div>`).join('')}</div></section></main></div>`);
   abBind();
 }
 function abBind() {
   const root = $('#ab'); if (!root) return;
   const go = el => { const k = +el.dataset.k, h = abS().hecho; if (k <= abFrei() || h[k]) abStation(k); else { toast('Diese Station ist noch gesperrt. Schaff erst die vorherige!'); Sound.bad(); } };
   root.addEventListener('click', e => { const el = e.target.closest('[data-ab]'); if (!el) return; const a = el.dataset.ab;
-    if (a === 'st') go(el); else if (a === 'opt') abAntwort(+el.dataset.i); else if (a === 'weiter') abNaechste(); else if (a === 'karte') abKarte(); else if (a === 'hoer') abHoeren(); else if (a === 'fertig') abAbschluss(); });
+    if (a === 'st') go(el); else if (a === 'opt') abAntwort(+el.dataset.i); else if (a === 'weiter') abNaechste(); else if (a === 'karte') abKarte(); else if (a === 'hoer') abHoeren(); else if (a === 'fertig') abAbschluss();
+    else if (a === 'nz') abZiffer(el.dataset.d); else if (a === 'ndel') abZiffer(null); else if (a === 'nok') abZahlOk(); });
   root.addEventListener('keydown', e => { if ((e.key === 'Enter' || e.key === ' ') && e.target.matches('[data-ab="st"]')) { e.preventDefault(); go(e.target); } });
 }
 
@@ -82960,9 +83191,35 @@ function abHimmel(tag) {
 const abPerson = (x, y, haut, shirt, haar, extra) => `<g transform="translate(${x} ${y})" class="ab-npc"><ellipse cx="0" cy="62" rx="18" ry="4" fill="rgba(0,0,0,.2)"/><rect x="-6" y="40" width="5" height="22" rx="2" fill="#2E3A59"/><rect x="2" y="40" width="5" height="22" rx="2" fill="#2E3A59"/>
   <path d="M-14 42 Q -15 14 0 12 Q 15 14 14 42 Z" fill="${shirt}"/><circle cx="0" cy="2" r="12" fill="${haut}"/><path d="M-12 0 Q -12 -14 0 -13 Q 12 -14 12 0 Q 6 -7 -12 0 Z" fill="${haar}"/>
   <circle cx="-4" cy="2" r="1.4" fill="#222"/><circle cx="4" cy="2" r="1.4" fill="#222"/><path d="M-4 7 Q 0 10 4 7" stroke="#222" stroke-width="1.2" fill="none"/>${extra || ''}</g>`;
+const AS = {
+  see: (y = 150) => `<rect y="${y}" width="400" height="${220 - y}" fill="url(#abSee)"/><g class="ab-welle"><path d="M-40 ${y + 6} q 20 -6 40 0 t 40 0 t 40 0 t 40 0 t 40 0 t 40 0 t 40 0 t 40 0 t 40 0 t 40 0 t 40 0 t 40 0" stroke="rgba(255,255,255,.6)" stroke-width="2" fill="none"/></g>`,
+  boden: (c, y = 160) => `<rect y="${y}" width="400" height="${220 - y}" fill="${c}"/>`,
+  huegel: (c, y = 150) => `<path d="M0 ${y} Q 100 ${y - 26} 200 ${y - 6} T 400 ${y - 10} V 220 H 0 Z" fill="${c}"/>`,
+  haus: (x, y, w, h, wand, dach) => `<g transform="translate(${x} ${y})"><rect width="${w}" height="${h}" fill="${wand}"/><path d="M-4 0 L ${w / 2} ${-h * .32} L ${w + 4} 0 Z" fill="${dach}"/><rect x="${w * .15}" y="${h * .22}" width="${w * .22}" height="${h * .2}" fill="#5D7FA3"/><rect x="${w * .63}" y="${h * .22}" width="${w * .22}" height="${h * .2}" fill="#5D7FA3"/><rect x="${w * .4}" y="${h * .55}" width="${w * .2}" height="${h * .45}" fill="#6D4C41"/></g>`,
+  baum: (x, y, s, c) => `<g transform="translate(${x} ${y})"><rect x="${-s * .08}" y="0" width="${s * .16}" height="${s * .7}" fill="#6B4A32"/><circle cx="0" cy="${-s * .05}" r="${s * .45}" fill="${c || '#3D7A49'}"/><circle cx="${-s * .25}" cy="${s * .12}" r="${s * .3}" fill="${c || '#3D7A49'}"/><circle cx="${s * .27}" cy="${s * .1}" r="${s * .32}" fill="${c || '#3D7A49'}"/></g>`,
+  tanne: (x, y, s, c) => `<g transform="translate(${x} ${y})"><rect x="${-s * .06}" y="${s * .2}" width="${s * .12}" height="${s * .3}" fill="#5B4636"/><path d="M0 ${-s * .8} L ${s * .38} ${s * .22} L ${-s * .38} ${s * .22} Z" fill="${c || '#2E5E3A'}"/></g>`,
+  palme: (x, y, s) => `<g transform="translate(${x} ${y})"><path d="M0 0 Q ${s * .12} ${-s * .5} ${s * .06} ${-s}" stroke="#8B5A2B" stroke-width="${s * .07}" fill="none" stroke-linecap="round"/>${[-1.4, -.7, 0, .7, 1.4].map(a => `<path d="M${s * .06} ${-s} q ${Math.sin(a) * s * .3} ${-s * .15} ${Math.sin(a) * s * .5} ${s * .15 + Math.abs(a) * s * .1}" stroke="#3FA55E" stroke-width="${s * .07}" fill="none" stroke-linecap="round"/>`).join('')}</g>`,
+  berg: (x, base, w, h, c, schnee) => `<path d="M${x - w / 2} ${base} L ${x} ${base - h} L ${x + w / 2} ${base} Z" fill="${c}"/>${schnee ? `<path d="M${x - w * .12} ${base - h * .76} L ${x} ${base - h} L ${x + w * .12} ${base - h * .76} L ${x + w * .04} ${base - h * .8} L ${x} ${base - h * .74} L ${x - w * .05} ${base - h * .8} Z" fill="#FFF"/>` : ''}`,
+  leuchtturm: (x, y) => `<g transform="translate(${x} ${y})"><path d="M-12 0 L -8 -80 L 8 -80 L 12 0 Z" fill="#FFF"/><path d="M-10.6 -26 L -9.6 -40 L 9.6 -40 L 10.6 -26 Z M -9 -54 L -8.4 -66 L 8.4 -66 L 9 -54 Z" fill="#E0453A"/><rect x="-10" y="-94" width="20" height="14" fill="#F4D03F"/><path d="M-12 -94 L 0 -106 L 12 -94 Z" fill="#B3261E"/><g class="ab-strahl"><path d="M10 -88 L 70 -104 L 70 -72 Z" fill="rgba(255,240,150,.45)"/></g></g>`,
+  schiff: (x, y, s = 1, c = '#8B5A2B') => `<g transform="translate(${x} ${y}) scale(${s})" class="ab-schaukel"><path d="M-50 0 L 50 0 L 38 20 L -38 20 Z" fill="${c}"/><rect x="-2" y="-70" width="4" height="70" fill="#5B4636"/><path d="M2 -66 L 40 -12 L 2 -12 Z" fill="#FFF"/><path d="M-2 -60 L -34 -14 L -2 -14 Z" fill="#F3F0E8"/><path d="M2 -70 l 16 5 l -16 5 z" fill="#E0453A"/></g>`,
+  burg: (x, y, c = '#B9B2A6') => `<g transform="translate(${x} ${y})"><rect x="-70" y="-60" width="140" height="60" fill="${c}"/><rect x="-90" y="-100" width="36" height="100" fill="${c}"/><rect x="54" y="-100" width="36" height="100" fill="${c}"/>${[-90, -78, -66, 54, 66, 78].map(v => `<rect x="${v}" y="-110" width="8" height="10" fill="${c}"/>`).join('')}${[-70, -50, -30, -10, 10, 30, 50].map(v => `<rect x="${v}" y="-68" width="10" height="8" fill="${c}"/>`).join('')}<path d="M-16 0 V -30 A 16 16 0 0 1 16 -30 V 0 Z" fill="#5B4636"/><rect x="-80" y="-80" width="10" height="16" fill="#3E4A5C"/><rect x="66" y="-80" width="10" height="16" fill="#3E4A5C"/><path d="M-72 -100 L -72 -124 L -56 -118 L -72 -112" fill="#E0453A"/></g>`,
+  drache: (x, y, c = '#4CAF50') => `<g transform="translate(${x} ${y})" class="ab-npc"><path d="M-40 0 Q -60 -10 -70 4" stroke="${c}" stroke-width="8" fill="none" stroke-linecap="round"/><ellipse cx="-10" cy="-14" rx="34" ry="20" fill="${c}"/><path d="M-20 -30 L -34 -58 L -6 -36 Z" fill="#8BC34A"/><circle cx="22" cy="-34" r="16" fill="${c}"/><circle cx="28" cy="-38" r="4" fill="#FFF"/><circle cx="29" cy="-38" r="2" fill="#111"/><path d="M34 -30 q 6 2 0 6" stroke="#2E7D32" stroke-width="2" fill="none"/><path d="M14 -48 l -2 -10 l 8 6 z M 24 -50 l 2 -10 l 5 9 z" fill="#FFC107"/><rect x="-26" y="2" width="8" height="10" rx="3" fill="${c}"/><rect x="0" y="2" width="8" height="10" rx="3" fill="${c}"/></g>`,
+  papagei: (x, y) => `<g transform="translate(${x} ${y})" class="ab-npc"><path d="M0 0 Q -4 18 -10 30 L 2 26 Z" fill="#1E88E5"/><ellipse cx="0" cy="-10" rx="10" ry="16" fill="#E53935"/><circle cx="4" cy="-26" r="9" fill="#E53935"/><path d="M11 -27 q 7 2 2 8 q -2 -4 -6 -4 z" fill="#FDD835"/><circle cx="6" cy="-28" r="2" fill="#111"/><path d="M-8 -14 q -10 8 -4 18" stroke="#43A047" stroke-width="5" fill="none"/></g>`,
+  regal: (x, y, w, h) => `<g transform="translate(${x} ${y})"><rect width="${w}" height="${h}" fill="#7A4E2D"/>${[0, 1, 2].map(r => `<rect x="4" y="${4 + r * (h - 8) / 3}" width="${w - 8}" height="${(h - 8) / 3 - 4}" fill="#5B3A22"/>${Array.from({ length: Math.floor((w - 8) / 9) }, (_, i) => `<rect x="${6 + i * 9}" y="${8 + r * (h - 8) / 3}" width="7" height="${(h - 8) / 3 - 10}" fill="${['#E0453A', '#2E86AB', '#F4D03F', '#3BB273', '#9B5DE5', '#F28C28'][(i + r) % 6]}"/>`).join('')}`).join('')}</g>`,
+  truhe: (x, y) => `<g transform="translate(${x} ${y})" class="ab-glanz"><rect x="-26" y="-22" width="52" height="22" fill="#8B5A2B"/><path d="M-26 -22 Q 0 -44 26 -22 Z" fill="#A0522D"/><rect x="-26" y="-24" width="52" height="5" fill="#F4D03F"/><rect x="-4" y="-18" width="8" height="10" fill="#F4D03F"/><circle cx="-14" cy="-30" r="4" fill="#FFE082"/><circle cx="10" cy="-33" r="5" fill="#FFE082"/></g>`,
+  bigben: (x, y) => `<g transform="translate(${x} ${y})"><rect x="-14" y="-130" width="28" height="130" fill="#C8A465"/><rect x="-18" y="-112" width="36" height="34" fill="#B08A4E"/><circle cx="0" cy="-95" r="13" fill="#FFF8E1"/><path d="M0 -95 L 0 -104 M 0 -95 L 7 -95" stroke="#333" stroke-width="2"/><path d="M-14 -130 L 0 -160 L 14 -130 Z" fill="#5D6D7E"/></g>`,
+  bus: (x, y) => `<g transform="translate(${x} ${y})" class="ab-fahr"><rect x="-60" y="-70" width="120" height="66" rx="8" fill="#D62828"/><rect x="-52" y="-62" width="104" height="18" fill="#BDE7FF"/><rect x="-52" y="-36" width="104" height="18" fill="#BDE7FF"/><circle cx="-34" cy="-2" r="10" fill="#222"/><circle cx="34" cy="-2" r="10" fill="#222"/><rect x="-60" y="-44" width="120" height="4" fill="#FFF"/></g>`,
+  bruecke: (y) => `<g><rect x="0" y="${y}" width="400" height="10" fill="#5D6D7E"/><rect x="90" y="${y - 90}" width="30" height="100" fill="#8D99AE"/><rect x="280" y="${y - 90}" width="30" height="100" fill="#8D99AE"/><path d="M90 ${y - 90} L 105 ${y - 110} L 120 ${y - 90} Z M 280 ${y - 90} L 295 ${y - 110} L 310 ${y - 90} Z" fill="#5D6D7E"/><path d="M0 ${y - 40} Q 105 ${y - 100} 200 ${y - 30} Q 295 ${y - 100} 400 ${y - 40}" stroke="#2E86AB" stroke-width="3" fill="none"/></g>`,
+  stern: (x, y, r = 3) => `<circle cx="${x}" cy="${y}" r="${r}" fill="#FFF" class="ab-stern"/>`,
+  person: (...a) => abPerson(...a)
+};
 function abSzene(k) {
-  const s = AB_ST[k], see = `<rect y="150" width="400" height="70" fill="url(#abSee)"/><g class="ab-welle"><path d="M-40 156 q 20 -6 40 0 t 40 0 t 40 0 t 40 0 t 40 0 t 40 0 t 40 0 t 40 0 t 40 0 t 40 0 t 40 0 t 40 0" stroke="rgba(255,255,255,.6)" stroke-width="2" fill="none"/></g>`;
-  const lumi = `<g transform="translate(70 128) scale(1.6)" class="ab-lumi2">${abMiniLumi()}</g>`;
+  const s = abCfg().st[k], lumi = `<g transform="translate(70 128) scale(1.6)" class="ab-lumi2">${abMiniLumi()}</g>`;
+  const mitte = typeof s.szene === 'function' ? s.szene() : abSzeneES(s);
+  return `<svg class="ab-szene" viewBox="0 0 400 220" role="img" aria-label="${esc(s.t)}">${abHimmel(s.tag)}${mitte}${lumi}</svg>`;
+}
+function abSzeneES(s) {
+  const  see = `<rect y="150" width="400" height="70" fill="url(#abSee)"/><g class="ab-welle"><path d="M-40 156 q 20 -6 40 0 t 40 0 t 40 0 t 40 0 t 40 0 t 40 0 t 40 0 t 40 0 t 40 0 t 40 0 t 40 0 t 40 0" stroke="rgba(255,255,255,.6)" stroke-width="2" fill="none"/></g>`;
   let mitte = '';
   if (s.id === 'aero') mitte = `${see}<rect y="168" width="400" height="52" fill="#8C8C8C"/><g fill="#FFF">${[20, 80, 140, 200, 260, 320].map(x => `<rect x="${x}" y="192" width="34" height="4"/>`).join('')}</g>
     <rect x="300" y="90" width="18" height="78" fill="#D9D9D9"/><rect x="292" y="80" width="34" height="18" rx="4" fill="#5DADE2"/>
@@ -82980,71 +83237,693 @@ function abSzene(k) {
   else mitte = `<path d="M60 190 L 170 70 L 200 58 L 230 72 L 340 190 Z" fill="#8D6E63"/><path d="M152 92 L 170 70 L 200 58 L 230 72 L 246 90 L 224 86 L 200 96 L 180 86 Z" fill="#FFF"/><rect y="186" width="400" height="34" fill="#6D5A4E"/>
     <line x1="20" y1="180" x2="196" y2="66" stroke="#333" stroke-width="1.5"/><g class="ab-bahn"><rect x="-10" y="0" width="20" height="14" rx="3" fill="#E0453A"/><rect x="-6" y="3" width="12" height="5" fill="#BDE7FF"/><line x1="0" y1="0" x2="0" y2="-6" stroke="#333"/></g>
     ${abPerson(260, 124, '#D9A57B', '#2E86AB', '#4A3428', '<path d="M-14 -10 h 28 l -4 -6 h -20 Z" fill="#E67E22"/>')}`;
-  return `<svg class="ab-szene" viewBox="0 0 400 220" role="img" aria-label="${esc(s.t)}">${abHimmel(s.tag)}${mitte}${lumi}</svg>`;
+  return mitte;
 }
 
 function abFrage(k) {
-  const s = AB_ST[k];
-  for (let t = 0; t < 24; t++) {
+  const s = abCfg().st[k], grenze = typeof klasse === 'function' ? klasse() + (typeof klVorOn === 'function' && klVorOn() ? 1 : 0) : 9;
+  for (let t = 0; t < 30; t++) {
     const id = s.g[(ABT.n + t) % s.g.length]; if (!GAMES[id] || !GAMES[id].gen) continue;
-    const lv = Math.min(s.lv, typeof lvCap === 'function' ? lvCap(id) : s.lv, GAMES[id].max || 1);
+    if (t < 16 && typeof klMin === 'function' && klMin(id) > grenze) continue;   /* erst Spiele passend zur Klasse */
+    const lv = Math.max(1, Math.min(s.lv, typeof lvCap === 'function' ? lvCap(id) : s.lv, GAMES[id].max || 1));
     let q = null; try { q = genFor(id, lv); } catch (e) { q = null; }
-    if (q && q.kind === 'choice' && q.options && q.options.length >= 2 && q.options.length <= 4 && q.options.filter(o => o.ok).length === 1 && String(q.prompt).length < 160) { q.abGame = id; return q; }
+    if (!q || String(q.prompt).length >= 160) continue;
+    if (q.kind === 'choice' && q.options && q.options.length >= 2 && q.options.length <= 4 && q.options.filter(o => o.ok).length === 1) { q.abGame = id; return q; }
+    if (q.kind === 'number' && Number.isFinite(q.answer) && q.answer >= 0 && q.answer < 100000) { q.abGame = id; return q; }
   }
   return null;
 }
 function abStation(k) {
-  if (!ABT) return; ABT.st = k; ABT.n = 0; ABT.ok = 0; ABT.bad = 0; const s = AB_ST[k];
-  setView(`<div class="game ab-game" data-world="spanisch">${ksKopf(`${s.i} ${esc(s.t)}`)}<main class="wrap ab-station" id="ab">
-    <section class="card ab-sz">${abSzene(k)}<div class="ab-bubble" lang="es"><b>${esc(s.npc)}:</b> <span id="abSag">${esc(s.hallo)}</span><small id="abSagDe">${esc(s.hde)}</small></div></section>
+  if (!ABT) return; ABT.st = k; ABT.n = 0; ABT.ok = 0; ABT.bad = 0; const C = abCfg(), s = C.st[k];
+  setView(`<div class="game ab-game" data-world="${C.w}">${ksKopf(`${s.i} ${esc(s.t)}`)}<main class="wrap ab-station" id="ab">
+    <section class="card ab-sz">${abSzene(k)}<div class="ab-bubble" ${C.lang === 'es-ES' ? 'lang="es"' : C.lang === 'en-GB' ? 'lang="en"' : ''}><b>${esc(s.npc)}:</b> <span id="abSag">${esc(s.hallo)}</span><small id="abSagDe">${esc(s.hde || '')}</small></div></section>
     <section class="card ab-auf" id="abAuf"></section></main></div>`);
   abBind(); abSprich(s.hallo); abZeigen();
 }
-function abSprich(t) { if (typeof Speech !== 'undefined' && S.settings.speech && Speech.ok) Speech.say(t, ES); }
+function abSprich(t) { if (typeof Speech !== 'undefined' && S.settings.speech && Speech.ok) Speech.say(t, abLang()); }
 function abZeigen() {
   if (!ABT) return; const q = abFrage(ABT.st), el = $('#abAuf'); if (!el) return;
   if (!q) { el.innerHTML = '<p>Hier fehlen gerade Aufgaben. Versuch eine andere Station.</p><button class="btn" data-ab="karte">Zur Karte</button>'; return; }
-  ABT.q = q; ABT.tries = 0; G.q = q;
+  ABT.q = q; ABT.tries = 0; ABT.zahl = ''; G.q = q;
   const hoer = (q.listen || q.say) && typeof Speech !== 'undefined' && Speech.ok ? '<button class="btn ghost sm" data-ab="hoer">🔊 Anhören</button>' : '';
+  const antw = q.kind === 'number' ? `<div class="ab-num"><div class="ab-nd" id="abNd" aria-live="polite">?</div>${q.unit ? `<span class="ab-unit">${esc(q.unit)}</span>` : ''}</div>
+      <div class="numpad ab-pad">${[1, 2, 3, 4, 5, 6, 7, 8, 9].map(d => `<button data-ab="nz" data-d="${d}">${d}</button>`).join('')}<button class="del" data-ab="ndel" aria-label="Löschen">⌫</button><button data-ab="nz" data-d="0">0</button><button class="ok" data-ab="nok" aria-label="Fertig">✓</button></div>`
+    : `<div class="ab-opts ${q.options.some(o => o.label.length > 18) ? 'lang' : ''}">${q.options.map((o, i) => `<button class="opt" data-ab="opt" data-i="${i}">${o.html}</button>`).join('')}</div>`;
   el.innerHTML = `<div class="ab-fort">${[0, 1, 2].map(i => `<span class="${i < ABT.n ? 'ja' : i === ABT.n ? 'jetzt' : ''}"></span>`).join('')}<b>Aufgabe ${ABT.n + 1} von 3</b>${hoer}</div>
-    <h2 class="ab-prompt">${esc(q.prompt)}</h2>${q.visual ? `<div class="ab-vis">${q.visual}</div>` : ''}
-    <div class="ab-opts ${q.options.some(o => o.label.length > 18) ? 'lang' : ''}">${q.options.map((o, i) => `<button class="opt" data-ab="opt" data-i="${i}">${o.html}</button>`).join('')}</div><p class="ab-fb" id="abFb" aria-live="polite"></p>`;
+    <h2 class="ab-prompt">${esc(q.prompt)}</h2>${q.visual ? `<div class="ab-vis">${q.visual}</div>` : ''}${antw}<p class="ab-fb" id="abFb" aria-live="polite"></p>`;
 }
-function abHoeren() { const q = ABT && ABT.q; if (!q) return; if (q.listen) Speech.say(q.listen.text, q.listen.lang || ES); else Speech.say(q.say || q.prompt, q.sayLang || ES); }
-function abAntwort(i) {
-  if (!ABT || !ABT.q || ABT.q.done) return; const q = ABT.q, o = q.options[i], btn = document.querySelectorAll('.ab-opts .opt')[i], fb = $('#abFb');
-  if (!o || !btn || btn.disabled) return;
-  if (o.ok) {
-    q.done = true; btn.classList.add('is-right'); document.querySelectorAll('.ab-opts .opt').forEach(b => b.disabled = true);
+function abHoeren() { const q = ABT && ABT.q; if (!q) return; if (q.listen) Speech.say(q.listen.text, q.listen.lang || abLang()); else Speech.say(q.say || q.prompt, q.sayLang || (typeof sayLangOf === 'function' && q.abGame ? sayLangOf(q.abGame) : abLang())); }
+function abZiffer(d) {
+  if (!ABT || !ABT.q || ABT.q.done) return; Sound.tap();
+  ABT.zahl = d == null ? ABT.zahl.slice(0, -1) : (ABT.zahl + d).replace(/^0+(?=\d)/, '').slice(0, 6);
+  const el = $('#abNd'); if (el) el.textContent = ABT.zahl || '?';
+}
+function abZahlOk() { if (!ABT || !ABT.q || ABT.q.done || !ABT.zahl) return; abRichtigFalsch(+ABT.zahl === ABT.q.answer, null); if (!ABT.q.done) { ABT.zahl = ''; const el = $('#abNd'); if (el) el.textContent = '?'; } }
+function abAntwort(i) { if (!ABT || !ABT.q || ABT.q.done) return; const o = ABT.q.options[i], btn = document.querySelectorAll('.ab-opts .opt')[i]; if (!o || !btn || btn.disabled) return; abRichtigFalsch(o.ok, btn); }
+function abRichtigFalsch(ok, btn) {
+  const C = abCfg(), q = ABT.q, fb = $('#abFb');
+  if (ok) {
+    q.done = true; if (btn) btn.classList.add('is-right'); document.querySelectorAll('.ab-opts .opt, .ab-pad button').forEach(b => b.disabled = true);
+    const nd = $('#abNd'); if (nd) nd.classList.add('ok');
     if (ABT.tries === 0) ABT.ok++; else ABT.bad++;
-    const lob = R.pick(AB_LOB); fb.innerHTML = `<b>${lob}</b> ${q.explain ? esc(q.explain) : ''}`; $('#abSag').textContent = lob; $('#abSagDe').textContent = ''; abSprich(lob); Sound.good();
+    const lob = R.pick(C.lob); fb.innerHTML = `<b>${esc(lob)}</b> ${q.explain ? esc(q.explain) : ''}`; $('#abSag').textContent = lob; $('#abSagDe').textContent = ''; abSprich(lob); Sound.good();
     fb.insertAdjacentHTML('afterend', `<button class="btn ab-next" data-ab="weiter">${ABT.n >= 2 ? 'Stempel holen! 🛂' : 'Weiter'}</button>`);
   } else {
-    ABT.tries++; btn.classList.add('is-wrong'); btn.disabled = true; Sound.bad();
-    $('#abSag').textContent = 'Casi… inténtalo otra vez.'; $('#abSagDe').textContent = 'Fast! Versuch es nochmal.';
+    ABT.tries++; if (btn) { btn.classList.add('is-wrong'); btn.disabled = true; } Sound.bad();
+    $('#abSag').textContent = C.casi[0]; $('#abSagDe').textContent = C.casi[1] || '';
+    if (ABT.tries >= 3 && q.kind === 'number') { q.done = true; ABT.bad++; fb.textContent = `Die Lösung ist ${q.solution || q.answer}. ${q.explain || ''}`; fb.insertAdjacentHTML('afterend', `<button class="btn ab-next" data-ab="weiter">${ABT.n >= 2 ? 'Stempel holen! 🛂' : 'Weiter'}</button>`); return; }
     fb.textContent = ABT.tries >= 2 && q.explain ? q.explain : 'Lies die Frage nochmal genau.';
   }
 }
 function abNaechste() {
   if (!ABT) return; ABT.n++;
   if (ABT.n < 3) { abZeigen(); return; }
-  const k = ABT.st, h = abS().hecho, neu = !h[k]; h[k] = true; save();
-  const s = AB_ST[k], letzte = abFertig() && neu;
-  $('#abAuf').innerHTML = `<div class="ab-stempel"><div class="ab-st-bild">${s.i}</div><h2>${letzte ? '¡Misión cumplida!' : '¡Sello conseguido!'}</h2>
-    <p>${letzte ? 'Du hast alle sechs Stationen geschafft und Teneriffa auf Spanisch erkundet. Felicidades!' : neu && k + 1 < AB_ST.length ? `Neuer Stempel im Pass. Der Weg zu „${esc(AB_ST[k + 1].t)}“ ist jetzt frei!` : 'Du hast die Station nochmal geschafft.'}</p>
+  const C = abCfg(), k = ABT.st, h = abS().hecho, neu = !h[k]; h[k] = true; save();
+  const s = C.st[k], letzte = abFertig() && neu;
+  $('#abAuf').innerHTML = `<div class="ab-stempel"><div class="ab-st-bild">${s.i}</div><h2>${letzte ? C.fertigTitel : C.stempelTitel}</h2>
+    <p>${letzte ? C.fertigText : neu && k + 1 < C.st.length ? `Neuer Stempel im Pass. Der Weg zu „${esc(C.st[k + 1].t)}“ ist jetzt frei!` : 'Du hast die Station nochmal geschafft.'}</p>
     <button class="btn" data-ab="fertig">Weiter</button></div>`;
-  $('#abSag').textContent = letzte ? '¡Enhorabuena! ¡Lo has conseguido!' : '¡Toma tu sello! ¡Hasta pronto!'; $('#abSagDe').textContent = letzte ? 'Herzlichen Glückwunsch, du hast es geschafft!' : 'Hier ist dein Stempel. Bis bald!';
-  abSprich($('#abSag').textContent); if (letzte && typeof confetti === 'function') confetti(); Sound.win();
+  const [t1, t2] = letzte ? C.finale : C.abschied;
+  $('#abSag').textContent = t1; $('#abSagDe').textContent = t2 || '';
+  abSprich(t1); if (letzte && typeof confetti === 'function') confetti(); Sound.win();
 }
 function abAbschluss() { if (!ABT) return; const ok = ABT.ok, bad = ABT.bad; customFinish(ok, bad, bad === 0 ? 3 : bad === 1 ? 2 : 1); }
 
-
-if (typeof GROUPS !== 'undefined' && !GROUPS['es-aventura']) {   /* direkt nach „Mi curso ALCE“ einsortieren, ALCE bleibt vorne */
-  const ks = Object.keys(GROUPS), ab = ks.findIndex(k => GROUPS[k].w === 'spanisch'), rest = ab < 0 ? [] : ks.slice(ab + 1).map(k => [k, GROUPS[k]]);
-  rest.forEach(([k]) => delete GROUPS[k]); GROUPS['es-aventura'] = { w: 'spanisch', t: '¡Aventura!' }; rest.forEach(([k, v]) => { GROUPS[k] = v; });
+function abReg(C) {
+  ABV[C.id] = C;
+  if (typeof GROUPS !== 'undefined' && !GROUPS[C.g]) {
+    const ks = Object.keys(GROUPS), ab = ks.findIndex(k => GROUPS[k].w === C.w), rest = ab < 0 ? [] : ks.slice(ab + 1).map(k => [k, GROUPS[k]]);
+    rest.forEach(([k]) => delete GROUPS[k]); GROUPS[C.g] = { w: C.w, t: C.grT }; rest.forEach(([k, v]) => { GROUPS[k] = v; });
+  }
+  if (typeof GROUP_ICON !== 'undefined') GROUP_ICON[C.g] = C.icon;
+  GAMES[C.id] = { id: C.id, w: C.w, g: C.g, t: C.t, d: C.d, i: C.icon, type: 'custom', run: g0 => abStart(g0, C.id), nomix: true };
 }
-if (typeof GROUP_ICON !== 'undefined') GROUP_ICON['es-aventura'] = '🧭';
-GAMES.aventura = { id: 'aventura', w: 'spanisch', g: 'es-aventura', t: 'Aventura en Tenerife', d: 'Mit Lumi über die Insel reisen, Spanisch-Aufgaben öffnen den Weg', i: '🧭', type: 'custom', run: abStart, nomix: true };
+abReg({ id: 'aventura', w: 'spanisch', g: 'es-aventura', grT: '¡Aventura!', icon: '🧭', t: 'Aventura en Tenerife', d: 'Mit Lumi über die Insel reisen, Spanisch-Aufgaben öffnen den Weg', lang: ES, st: AB_ST,
+  kartenLabel: 'Karte von Teneriffa mit sechs Stationen', karte: () => `    <defs><linearGradient id="abMeer" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7FD3F5"/><stop offset="1" stop-color="#1F7FB8"/></linearGradient>
+      <radialGradient id="abLand" cx=".5" cy=".45" r=".6"><stop offset="0" stop-color="#C9B27A"/><stop offset=".55" stop-color="#8DB36B"/><stop offset="1" stop-color="#5E9A57"/></radialGradient>
+      <linearGradient id="abBerg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A57B5B"/><stop offset="1" stop-color="#6D4C3D"/></linearGradient></defs>
+    <rect width="400" height="360" fill="url(#abMeer)"/>
+    <g class="ab-wellen">${[40, 110, 300, 330].map((y, k) => `<path d="M${-40 + k * 30} ${y} q 15 -6 30 0 t 30 0 t 30 0" class="ab-wl" style="animation-delay:${k * .7}s"/>`).join('')}</g>
+    <path d="M40 150 C 70 70, 150 40, 230 50 C 300 58, 360 80, 372 120 C 380 150, 350 210, 330 250 C 300 310, 240 335, 200 320 C 150 300, 120 260, 80 230 C 50 210, 30 185, 40 150 Z" fill="#E8D5A3"/>
+    <path d="M52 152 C 80 80, 152 54, 228 62 C 296 70, 350 92, 360 124 C 366 150, 340 205, 320 244 C 292 300, 238 322, 202 308 C 156 290, 126 252, 88 222 C 60 202, 44 180, 52 152 Z" fill="url(#abLand)"/>
+    <path d="M150 210 L 190 140 L 200 132 L 212 140 L 250 210 Z" fill="url(#abBerg)"/><path d="M182 154 L 190 140 L 200 132 L 212 140 L 218 152 L 206 148 L 200 154 L 192 148 Z" fill="#FFFFFF"/>
+    <g fill="#3E7A50">${[[100, 120], [118, 105], [90, 140], [300, 130], [315, 150], [130, 250], [260, 270]].map(([a, b]) => `<circle cx="${a}" cy="${b}" r="7"/>`).join('')}</g>`,
+  intro: 'Reise mit Lumi über Teneriffa. Bei jeder Station warten drei Aufgaben auf Spanisch. Danach gibt es einen Stempel und der Weg geht weiter.',
+  introFertig: '¡Misión cumplida! Du hast alle sechs Stempel. Jede Station kannst du nochmal besuchen.', pass: '🛂 Mi pasaporte', lob: AB_LOB, casi: ['Casi… inténtalo otra vez.', 'Fast! Versuch es nochmal.'],
+  stempelTitel: '¡Sello conseguido!', fertigTitel: '¡Misión cumplida!', fertigText: 'Du hast alle sechs Stationen geschafft und Teneriffa auf Spanisch erkundet. Felicidades!',
+  abschied: ['¡Toma tu sello! ¡Hasta pronto!', 'Hier ist dein Stempel. Bis bald!'], finale: ['¡Enhorabuena! ¡Lo has conseguido!', 'Herzlichen Glückwunsch, du hast es geschafft!'] });
+
+/*@@src abenteuer281.js@@*/
+
+const ab8Karte = (meer, inhalt) => `<defs><linearGradient id="ab8M" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${meer[0]}"/><stop offset="1" stop-color="${meer[1]}"/></linearGradient></defs><rect width="400" height="360" fill="url(#ab8M)"/>${inhalt}`;
+const ab8Wellen = ys => `<g class="ab-wellen">${ys.map((y, k) => `<path d="M${-40 + k * 40} ${y} q 15 -6 30 0 t 30 0 t 30 0" class="ab-wl" style="animation-delay:${k * .6}s"/>`).join('')}</g>`;
+const AB_LOB_DE = ['Super!', 'Klasse!', 'Genau richtig!', 'Toll gemacht!', 'Spitze!'];
+const AB_LOB_EN = ['Well done!', 'Great!', 'Super!', 'Perfect!', 'Brilliant!'];
+
+
+abReg({ id: 'schatzinsel', w: 'mathe', g: 'm-abenteuer', grT: 'Abenteuer', icon: '🏴‍☠️', t: 'Die Schatzinsel', d: 'Mit Kapitänin Pia zur Schatzkammer: Rechnen öffnet den Weg', lang: 'de-DE',
+  kartenLabel: 'Schatzkarte mit sechs Stationen', pass: '🗺️ Meine Schatzkarte', lob: AB_LOB_DE, casi: ['Fast! Rechne nochmal nach.', ''],
+  intro: 'Kapitänin Pia hat eine alte Schatzkarte gefunden. Bei jeder Station wartet eine Rechenprüfung mit drei Aufgaben. Wer alle schafft, findet den Schatz!',
+  introFertig: 'Du hast den Schatz gefunden! Jede Station kannst du nochmal besuchen.', stempelTitel: 'Station geschafft!', fertigTitel: 'Der Schatz gehört dir!',
+  fertigText: 'Du hast alle sechs Rechenprüfungen bestanden und die Schatzkammer geöffnet. Ahoi, Rechenprofi!', abschied: ['Weiter so, auf zur nächsten Station!', ''], finale: ['Hurra, der Schatz ist gefunden!', ''],
+  karte: () => ab8Karte(['#5BC0EB', '#1B6CA8'], `${ab8Wellen([40, 90, 310, 340])}
+    <path d="M60 170 C 60 90, 160 50, 240 60 C 330 70, 360 120, 350 190 C 340 270, 260 320, 180 310 C 100 300, 60 250, 60 170 Z" fill="#F2D49B"/>
+    <path d="M78 172 C 80 104, 166 70, 238 78 C 318 88, 340 128, 332 190 C 322 258, 254 296, 182 290 C 112 282, 76 238, 78 172 Z" fill="#7FB069"/>
+    <path d="M150 170 L 175 120 L 200 170 Z" fill="#8D6E63"/><path d="M230 230 l 30 -40 l 30 40 z" fill="#795548"/>
+    ${[[110, 140], [120, 200], [300, 150], [260, 120], [150, 260]].map(([a, b]) => `<circle cx="${a}" cy="${b}" r="9" fill="#2E7D32"/>`).join('')}
+    <path d="M272 286 l 8 -8 m -8 0 l 8 8" stroke="#B3261E" stroke-width="4"/>`),
+  st: [
+    { id: 'hafen', t: 'Der Hafen', i: '⚓', npc: 'Kapitänin Pia', hallo: 'Ahoi! Bevor wir lossegeln, zählen wir unsere Vorräte. Hilfst du mir?', g: ['plus', 'minus', 'zehnerweg', 'zerlegen'], lv: 1, xy: [200, 300], tag: 'dia',
+      szene: () => `${AS.see(140)}<rect x="0" y="150" width="210" height="70" fill="#8D6E63"/>${[20, 60, 100, 140, 180].map(x => `<rect x="${x}" y="150" width="6" height="70" fill="#6D4C41"/>`).join('')}${AS.schiff(300, 150, 1)}${AS.person(160, 88, '#E0B28F', '#1F3B73', '#3B2A20', '<path d="M-16 -10 L 0 -24 L 16 -10 Z" fill="#111"/><circle cx="0" cy="-16" r="2" fill="#FFF"/>')}${AS.papagei(186, 112)}` },
+    { id: 'turm', t: 'Der Leuchtturm', i: '🗼', npc: 'Wärter Fiete', hallo: 'Moin! Mein Leuchtturm zählt die Schiffe. Weißt du, welche Zahl wohin gehört?', g: ['zahlenstrahl', 'nachbarn', 'vergleich', 'zahlwort'], lv: 1, xy: [330, 215], tag: 'abend',
+      szene: () => `${AS.see(160)}<path d="M200 170 Q 300 120 400 150 V 220 H 200 Z" fill="#9E8A6E"/>${AS.leuchtturm(320, 152)}${AS.person(240, 108, '#EBC8A8', '#E0453A', '#BBB', '<rect x="-10" y="-14" width="20" height="5" rx="2" fill="#1B2440"/>')}` },
+    { id: 'markt', t: 'Der Piratenmarkt', i: '💰', npc: 'Händler Kalle', hallo: 'Willkommen am Markt! Bei mir zahlt man mit Talern. Rechnest du richtig?', g: ['geld', 'einkaufen', 'wechselgeld', 'muenzen'], lv: 1, xy: [300, 110], tag: 'dia',
+      szene: () => `${AS.boden('#D7C29E', 160)}${[0, 1].map(j => `<g transform="translate(${170 + j * 110} 92)"><rect x="0" y="30" width="90" height="40" fill="#8B5A2B"/><path d="M-6 30 L 96 30 L 88 8 L 2 8 Z" fill="${['#C0392B', '#2E86AB'][j]}"/>${[0, 1, 2, 3].map(i => `<circle cx="${14 + i * 20}" cy="44" r="7" fill="#F4D03F" class="ab-glanz"/>`).join('')}</g>`).join('')}${AS.person(230, 96, '#C98B5E', '#6C3483', '#2B1B12', '<path d="M-14 -10 q 14 -14 28 0 z" fill="#E67E22"/>')}` },
+    { id: 'dschungel', t: 'Der Dschungel', i: '🌴', npc: 'Papagei Kiki', hallo: 'Krah! Im Dschungel verstecken sich Formen und Muster. Findest du sie?', g: ['formen', 'symmetrie', 'muster', 'lage'], lv: 1, xy: [180, 80], tag: 'nebel',
+      szene: () => `${AS.boden('#3E7A44', 160)}${[40, 130, 330, 380].map((x, j) => AS.palme(x, 170, 120 + (j % 2) * 20)).join('')}${[90, 260, 300].map(x => AS.baum(x, 120, 60, '#2E6B3A')).join('')}<g class="ab-nebel"><ellipse cx="200" cy="160" rx="200" ry="16" fill="#FFF" opacity=".25"/></g>${AS.papagei(240, 140)}` },
+    { id: 'hoehle', t: 'Die Uhrenhöhle', i: '🕯️', npc: 'Fledermaus Flatter', hallo: 'Psst, hier tickt es überall. Kannst du die Uhren lesen?', g: ['uhr', 'uhrworte', 'kalenderblatt'], lv: 1, xy: [95, 165], tag: 'nacht',
+      szene: () => `<rect width="400" height="220" fill="#2B2238"/><path d="M0 0 H 400 V 60 Q 300 30 200 70 Q 100 30 0 60 Z" fill="#3D3150"/><rect y="170" width="400" height="50" fill="#3D3150"/>${[120, 200, 290].map((x, j) => `<g transform="translate(${x} ${110 + j * 8})"><circle r="${22 - j * 3}" fill="#F7E7B4" stroke="#8B5A2B" stroke-width="4"/><path d="M0 0 L 0 ${-14 + j * 2} M 0 0 L ${10 - j * 2} 0" stroke="#333" stroke-width="2"/></g>`).join('')}<g transform="translate(300 60)" class="ab-npc"><path d="M-24 0 q 12 -14 24 0 q 12 -14 24 0 l -24 12 z" fill="#5D4E75"/><circle cx="0" cy="2" r="7" fill="#5D4E75"/><circle cx="-2" cy="1" r="1.5" fill="#FFF"/><circle cx="2" cy="1" r="1.5" fill="#FFF"/></g>` },
+    { id: 'schatz', t: 'Die Schatzkammer', i: '💎', npc: 'Kapitänin Pia', hallo: 'Da ist sie, die Schatzkammer! Das Schloss öffnet sich nur mit den richtigen Ergebnissen.', g: ['mal', 'geteilt', 'rechengeschichte', 'sach'], lv: 2, xy: [140, 250], tag: 'abend',
+      szene: () => `${AS.boden('#E8C987', 160)}${AS.palme(360, 170, 130)}${AS.truhe(230, 172)}${AS.person(160, 110, '#E0B28F', '#1F3B73', '#3B2A20', '<path d="M-16 -10 L 0 -24 L 16 -10 Z" fill="#111"/>')}${AS.papagei(186, 134)}` }
+  ] });
+
+
+abReg({ id: 'buecherburg', w: 'deutsch', g: 'd-abenteuer', grT: 'Abenteuer', icon: '🏰', t: 'Die Bücherburg', d: 'Mit Ritterin Klara durch die Burg der Wörter bis in den Thronsaal', lang: 'de-DE',
+  kartenLabel: 'Karte der Bücherburg mit sechs Stationen', pass: '📜 Meine Burgurkunde', lob: AB_LOB_DE, casi: ['Fast! Versuch es nochmal.', ''],
+  intro: 'In der Bücherburg sind die Wörter durcheinandergeraten. Löse bei jeder Station drei Aufgaben, dann bekommst du ein Siegel und darfst weiter.',
+  introFertig: 'Du hast alle Siegel und gehörst jetzt zur Bücherburg! Jede Station kannst du nochmal besuchen.', stempelTitel: 'Siegel bekommen!', fertigTitel: 'Willkommen im Thronsaal!',
+  fertigText: 'Du hast alle sechs Prüfungen geschafft. Die Königin ernennt dich zum Wortprofi der Bücherburg!', abschied: ['Hier ist dein Siegel. Weiter geht es!', ''], finale: ['Hoch lebe der neue Wortprofi!', ''],
+  karte: () => ab8Karte(['#9CD08F', '#5E9A57'], `<path d="M0 260 Q 120 220 200 250 T 400 230 V 270 Q 280 290 200 280 T 0 300 Z" fill="#5DADE2"/>
+    ${[[40, 60], [70, 100], [360, 80], [340, 300], [40, 320], [110, 320]].map(([a, b]) => `<circle cx="${a}" cy="${b}" r="14" fill="#3E7A44"/>`).join('')}
+    <g transform="translate(200 175) scale(.9)"><rect x="-80" y="-60" width="160" height="70" fill="#C9C2B6"/><rect x="-100" y="-100" width="40" height="110" fill="#B9B2A6"/><rect x="60" y="-100" width="40" height="110" fill="#B9B2A6"/><rect x="-24" y="-120" width="48" height="60" fill="#B9B2A6"/><path d="M-30 -120 L 0 -150 L 30 -120 Z M -106 -100 L -80 -126 L -54 -100 Z M 54 -100 L 80 -126 L 106 -100 Z" fill="#C0392B"/></g>
+    <path d="M190 280 h 20 v -20 h -20 z" fill="#8B5A2B"/>`),
+  st: [
+    { id: 'tor', t: 'Das Burgtor', i: '🚪', npc: 'Wache Bodo', hallo: 'Halt! Wer in die Burg will, muss Silben klatschen und Reime finden.', g: ['silben', 'reim', 'anlaut', 'silbenkette'], lv: 1, xy: [200, 300], tag: 'dia',
+      szene: () => `${AS.boden('#8DB36B', 170)}${AS.burg(260, 172)}${AS.person(150, 110, '#EBC8A8', '#5D6D7E', '#6D4C41', '<rect x="-12" y="-16" width="24" height="10" rx="3" fill="#9AA5B1"/><rect x="16" y="-10" width="3" height="60" fill="#7A6A5A"/>')}` },
+    { id: 'stube', t: 'Die Schreibstube', i: '✒️', npc: 'Schreiber Fritz', hallo: 'In meiner Schreibstube muss jedes Wort richtig geschrieben sein. Hilfst du mir?', g: ['gross', 'doppelt', 'iewort', 'luecke'], lv: 1, xy: [90, 240], tag: 'abend',
+      szene: () => `<rect width="400" height="220" fill="#E8D8BE"/><rect y="170" width="400" height="50" fill="#8B6B4A"/><rect x="40" y="40" width="70" height="60" fill="#87CEEB" stroke="#7A5A3A" stroke-width="6"/>${AS.regal(260, 50, 110, 120)}<rect x="150" y="140" width="110" height="10" fill="#7A4E2D"/><path d="M200 140 l 20 -30" stroke="#333" stroke-width="2"/>${AS.person(210, 96, '#EBC8A8', '#2E86AB', '#BBB')}` },
+    { id: 'bib', t: 'Die Bibliothek', i: '📚', npc: 'Eule Ottilie', hallo: 'Huhu! Hier wohnen tausend Geschichten. Lies genau, dann findest du die Antworten.', g: ['lesen', 'sinn', 'leseraetsel', 'lesebild'], lv: 1, xy: [110, 120], tag: 'abend',
+      szene: () => `<rect width="400" height="220" fill="#F3E5C8"/><rect y="180" width="400" height="40" fill="#8B6B4A"/>${AS.regal(20, 40, 120, 140)}${AS.regal(260, 40, 120, 140)}<g transform="translate(200 130)" class="ab-npc"><ellipse cx="0" cy="0" rx="22" ry="28" fill="#8D6E63"/><circle cx="-8" cy="-10" r="8" fill="#FFF"/><circle cx="8" cy="-10" r="8" fill="#FFF"/><circle cx="-8" cy="-10" r="4" fill="#111"/><circle cx="8" cy="-10" r="4" fill="#111"/><path d="M-3 -2 l 3 6 l 3 -6 z" fill="#F59E0B"/><path d="M-22 -24 l 8 8 M 22 -24 l -8 8" stroke="#6D4C41" stroke-width="4"/><rect x="-14" y="28" width="28" height="5" fill="#6D4C41"/></g>` },
+    { id: 'wturm', t: 'Der Wörterturm', i: '🗼', npc: 'Turmwächterin Lu', hallo: 'Auf jeder Etage meines Turms wohnt eine andere Wortart. Kennst du sie?', g: ['nomen', 'verben', 'artikel', 'wortart'], lv: 1, xy: [200, 60], tag: 'dia',
+      szene: () => `${AS.boden('#8DB36B', 175)}<g transform="translate(270 178)"><rect x="-30" y="-150" width="60" height="150" fill="#B9B2A6"/>${[-130, -90, -50].map(y => `<rect x="-10" y="${y}" width="20" height="22" rx="10" fill="#3E4A5C"/>`).join('')}<path d="M-38 -150 L 0 -190 L 38 -150 Z" fill="#2E86AB"/></g>${AS.person(170, 112, '#C98B5E', '#3BB273', '#2B1B12')}` },
+    { id: 'drache', t: 'Die Drachenhöhle', i: '🐉', npc: 'Drache Funki', hallo: 'Rrraaah! Keine Angst, ich bin ein lieber Drache. Ich mag nur Sätze, die stimmen.', g: ['satzzeichen', 'fragewoerter', 'praedikat', 'gegenteil'], lv: 1, xy: [310, 140], tag: 'nacht',
+      szene: () => `<rect y="150" width="400" height="70" fill="#4E4038"/><path d="M180 220 Q 180 70 300 70 Q 400 70 400 160 V 220 Z" fill="#3A302B"/><ellipse cx="300" cy="200" rx="80" ry="12" fill="#2A221E"/>${AS.drache(290, 180)}${[40, 80, 120].map((x, j) => AS.stern(x, 30 + j * 14, 2)).join('')}` },
+    { id: 'thron', t: 'Der Thronsaal', i: '👑', npc: 'Königin Lina', hallo: 'Willkommen in meinem Thronsaal! Die letzte Prüfung ist die schwerste.', g: ['mehrzahl', 'oberbegriff', 'wortfeld', 'adjektive'], lv: 2, xy: [290, 230], tag: 'abend',
+      szene: () => `<rect width="400" height="220" fill="#7B2D3F"/><rect y="170" width="400" height="50" fill="#5A1F2D"/><rect x="170" y="60" width="60" height="160" fill="#C0392B"/>${[60, 340].map(x => `<rect x="${x - 10}" y="30" width="20" height="150" fill="#D4AC0D"/>`).join('')}<g transform="translate(270 100)"><rect x="-26" y="0" width="52" height="70" rx="6" fill="#D4AC0D"/><rect x="-20" y="30" width="40" height="40" fill="#8E44AD"/></g>${AS.person(270, 98, '#EBC8A8', '#8E44AD', '#E6B800', '<path d="M-10 -14 l 4 -8 l 4 6 l 4 -6 l 4 6 l 4 -6 v 8 z" fill="#F4D03F"/>')}` }
+  ] });
+
+
+abReg({ id: 'london', w: 'englisch', g: 'e-abenteuer', grT: 'Adventure', icon: '🎡', t: 'Lumi in London', d: 'Big Ben, Markt, Park und Tower Bridge: Englisch öffnet den Weg', lang: 'en-GB',
+  kartenLabel: 'Map of London with six stops', pass: '🎫 My London ticket', lob: AB_LOB_EN, casi: ['Almost! Try again.', 'Fast! Versuch es nochmal.'],
+  intro: 'Lumi besucht London. An jeder Station gibt es drei Aufgaben auf Englisch, dann einen Stempel auf dem Ticket und weiter geht die Reise.',
+  introFertig: 'Du hast ganz London gesehen! Jede Station kannst du nochmal besuchen.', stempelTitel: 'Stamp collected!', fertigTitel: 'You did it!',
+  fertigText: 'Du hast alle sechs Stationen in London geschafft. Well done, London explorer!', abschied: ['Here is your stamp. See you soon!', 'Hier ist dein Stempel. Bis bald!'], finale: ['Hooray! You are a London explorer!', 'Hurra, du kennst dich in London aus!'],
+  karte: () => ab8Karte(['#C8E6C9', '#A5D6A7'], `<path d="M-10 200 C 60 160, 120 240, 200 200 S 330 150, 410 190 L 410 230 C 330 190, 260 250, 200 240 S 60 200, -10 240 Z" fill="#5DADE2"/>
+    ${[[60, 80, 60, 40], [300, 90, 70, 46], [120, 290, 70, 40]].map(([x, y, w, h]) => `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="18" fill="#81C784"/>`).join('')}
+    ${[[200, 90], [240, 300], [330, 300], [40, 160]].map(([x, y]) => `<g transform="translate(${x} ${y})"><rect x="-14" y="-14" width="28" height="22" fill="#D7CCC8"/><rect x="-10" y="-10" width="6" height="6" fill="#90A4AE"/><rect x="4" y="-10" width="6" height="6" fill="#90A4AE"/></g>`).join('')}
+    <path d="M240 205 h 60" stroke="#5D6D7E" stroke-width="6"/>`),
+  st: [
+    { id: 'airport', t: 'The airport', i: '✈️', npc: 'Captain Sam', hallo: 'Hello Lumi! Welcome to London! Can you answer three questions?', hde: 'Hallo Lumi! Willkommen in London! Kannst du drei Fragen beantworten?', g: ['airporten', 'phrasen', 'zahlen', 'farben'], lv: 1, xy: [60, 300], tag: 'dia',
+      szene: () => `${AS.boden('#9E9E9E', 165)}${[20, 90, 160, 230, 300].map(x => `<rect x="${x}" y="190" width="40" height="4" fill="#FFF"/>`).join('')}<g class="ab-flieger"><path d="M0 0 L 60 -4 L 70 0 L 60 4 Z" fill="#FFF"/><path d="M28 0 L 18 -18 L 26 -18 L 40 0 Z" fill="#1E88E5"/><path d="M28 0 L 18 18 L 26 18 L 40 0 Z" fill="#1565C0"/></g>${AS.person(250, 108, '#C98B5E', '#1F3B73', '#2B1B12', '<rect x="-12" y="-14" width="24" height="5" rx="2" fill="#1B2440"/>')}` },
+    { id: 'bigben', t: 'Big Ben', i: '🕰️', npc: 'Mr Clock', hallo: 'Ding dong! I am the clock man. What time is it? Let us find out!', hde: 'Ding dong! Ich bin der Uhrenmann. Wie spät ist es? Finden wir es heraus!', g: ['timeen', 'tage', 'numbers100', 'uebersetzen'], lv: 1, xy: [150, 175], tag: 'abend',
+      szene: () => `${AS.see(176)}<rect y="160" width="400" height="16" fill="#8D99AE"/>${AS.bigben(290, 162)}<rect x="320" y="110" width="80" height="52" fill="#C8A465"/>${AS.person(200, 100, '#EBC8A8', '#2C3E50', '#555', '<rect x="-10" y="-22" width="20" height="12" fill="#111"/><rect x="-14" y="-12" width="28" height="3" fill="#111"/>')}` },
+    { id: 'market', t: 'The market', i: '🍎', npc: 'Mrs Apple', hallo: 'Good morning! Fresh fruit and vegetables! What do you like?', hde: 'Guten Morgen! Frisches Obst und Gemüse! Was magst du?', g: ['fooden', 'fruiten', 'likeen', 'kitchen'], lv: 1, xy: [210, 70], tag: 'dia',
+      szene: () => `${AS.boden('#BCAAA4', 160)}${[0, 1, 2].map(j => `<g transform="translate(${130 + j * 90} 92)"><rect x="0" y="30" width="80" height="44" fill="#6D4C41"/><path d="M-6 30 L 86 30 L 80 10 L 0 10 Z" fill="${['#2E7D32', '#C62828', '#1565C0'][j]}"/>${[0, 1, 2, 3, 4, 5].map(i => `<circle cx="${10 + (i % 3) * 22}" cy="${44 + Math.floor(i / 3) * 14}" r="7" fill="${['#E53935', '#FDD835', '#43A047', '#FB8C00', '#8E24AA', '#E53935'][(i + j) % 6]}"/>`).join('')}</g>`).join('')}${AS.person(220, 96, '#EBC8A8', '#FFF', '#C0392B', '<rect x="-14" y="26" width="28" height="16" fill="#C62828"/>')}` },
+    { id: 'park', t: 'The park', i: '🌳', npc: 'Ranger Ruby', hallo: 'Hi there! Look at all the animals in the park. Can you name them?', hde: 'Hallo! Schau dir die Tiere im Park an. Kennst du ihre Namen?', g: ['zooen', 'natureen', 'actionsen', 'canen'], lv: 1, xy: [330, 110], tag: 'dia',
+      szene: () => `${AS.huegel('#66BB6A', 150)}${AS.baum(320, 110, 70)}${AS.baum(40, 120, 60, '#43A047')}<ellipse cx="160" cy="185" rx="60" ry="14" fill="#64B5F6"/><g transform="translate(150 180)"><ellipse cx="0" cy="0" rx="10" ry="6" fill="#FFF"/><circle cx="8" cy="-6" r="4" fill="#FFF"/><path d="M12 -6 l 4 1 l -4 1 z" fill="#F59E0B"/></g>${AS.person(260, 108, '#8D5524', '#2E7D32', '#1B1B1B', '<path d="M-14 -10 h 28 l -4 -8 h -20 z" fill="#795548"/>')}` },
+    { id: 'bus', t: 'The red bus', i: '🚌', npc: 'Driver Dan', hallo: 'All aboard! Where do you want to go? Listen carefully!', hde: 'Alle einsteigen! Wohin möchtest du? Hör gut zu!', g: ['transporten', 'where', 'clothes', 'weatheren'], lv: 1, xy: [300, 250], tag: 'abend',
+      szene: () => `${AS.boden('#757575', 170)}<rect y="166" width="400" height="6" fill="#BDBDBD"/>${[30, 110, 330].map((x, j) => `<rect x="${x}" y="${70 + j * 10}" width="60" height="${100 - j * 10}" fill="${['#D7CCC8', '#BCAAA4', '#D7CCC8'][j]}"/>`).join('')}${AS.bus(260, 182)}${AS.person(170, 112, '#EBC8A8', '#455A64', '#6D4C41', '<rect x="-12" y="-14" width="24" height="5" rx="2" fill="#B71C1C"/>')}` },
+    { id: 'bridge', t: 'Tower Bridge', i: '🌉', npc: 'Queen Fan Flo', hallo: 'Hooray, you made it to Tower Bridge! This is your last test. Good luck!', hde: 'Hurra, du bist an der Tower Bridge! Das ist die letzte Prüfung. Viel Glück!', g: ['familyen', 'feelings', 'questionen', 'havegot'], lv: 2, xy: [270, 205], tag: 'nacht',
+      szene: () => `${AS.see(170)}${AS.bruecke(160)}${[30, 70, 340, 380].map((x, j) => AS.stern(x, 20 + j * 9, 2)).join('')}${AS.person(200, 92, '#EBC8A8', '#7E57C2', '#F4D03F', '<path d="M-10 -14 l 4 -8 l 4 6 l 4 -6 l 4 6 l 4 -6 v 8 z" fill="#F4D03F"/>')}` }
+  ] });
+
+
+abReg({ id: 'forscherreise', w: 'sach', g: 'su-abenteuer', grT: 'Abenteuer', icon: '🔍', t: 'Forscherreise', d: 'Vom Wattenmeer bis zur Sternwarte: Forschen öffnet den Weg', lang: 'de-DE',
+  kartenLabel: 'Karte von Niedersachsen mit sechs Forscherstationen', pass: '🔬 Mein Forscherausweis', lob: AB_LOB_DE, casi: ['Fast! Schau nochmal genau hin.', ''],
+  intro: 'Forscherin Fiete reist mit dir durch Niedersachsen: Wattenmeer, Heide, Bauernhof, Wald, Stadt und Sternwarte. Bei jeder Station gibt es drei Forscherfragen.',
+  introFertig: 'Du hast alle Forscherstationen geschafft! Jede Station kannst du nochmal besuchen.', stempelTitel: 'Forscherstempel bekommen!', fertigTitel: 'Forscherreise geschafft!',
+  fertigText: 'Alle sechs Stationen sind geschafft. Fiete überreicht dir den goldenen Forscherausweis!', abschied: ['Prima geforscht! Auf zur nächsten Station.', ''], finale: ['Hurra, Forschungsreise geschafft!', ''],
+  karte: () => ab8Karte(['#7FD3F5', '#3FA9DC'], `${ab8Wellen([20, 50])}
+    <path d="M0 80 C 60 70, 120 90, 180 74 S 300 60, 400 78 V 360 H 0 Z" fill="#A5D6A7"/>
+    <path d="M0 80 C 60 70, 120 90, 180 74 S 300 60, 400 78 V 96 C 300 80, 200 100, 120 92 S 40 96, 0 100 Z" fill="#D7C29E"/>
+    <path d="M140 140 q 60 -20 110 10 q -40 30 -110 -10 z" fill="#C5A3D9"/>
+    <path d="M150 330 L 190 270 L 215 300 L 240 260 L 290 330 Z" fill="#6D8B5C"/>
+    <path d="M60 330 C 80 260, 130 210, 120 120" stroke="#5DADE2" stroke-width="5" fill="none"/>
+    ${[[300, 230], [320, 245], [285, 250]].map(([a, b]) => `<rect x="${a}" y="${b}" width="14" height="12" fill="#BCAAA4"/>`).join('')}`),
+  st: [
+    { id: 'watt', t: 'Das Wattenmeer', i: '🦭', npc: 'Forscherin Fiete', hallo: 'Moin! Bei Ebbe kann man hier auf dem Meeresboden laufen. Was lebt im Watt?', g: ['lebensraum', 'voegel', 'wasser', 'tiere'], lv: 1, xy: [200, 100], tag: 'dia',
+      szene: () => `<rect y="140" width="400" height="80" fill="#B9A585"/><path d="M0 140 Q 100 132 200 142 T 400 136 V 150 H 0 Z" fill="#7FD3F5" opacity=".7"/>${[60, 110, 330].map(x => `<path d="M${x} 180 q 6 -8 12 0 q 6 -8 12 0" stroke="#8D7B5E" stroke-width="3" fill="none"/>`).join('')}<g transform="translate(300 150)"><ellipse cx="0" cy="0" rx="28" ry="12" fill="#9E9E9E"/><circle cx="24" cy="-6" r="9" fill="#9E9E9E"/><circle cx="27" cy="-8" r="1.6" fill="#111"/></g>${AS.person(220, 100, '#EBC8A8', '#F4D03F', '#C0392B', '<rect x="-14" y="40" width="28" height="10" fill="#2E7D32"/>')}` },
+    { id: 'heide', t: 'Die Heide', i: '🐝', npc: 'Imker Hinnerk', hallo: 'Hier blüht die Heide, und meine Bienen sammeln Nektar. Was weißt du über Insekten und Pflanzen?', g: ['insekt', 'wiese', 'pflanze', 'natur'], lv: 1, xy: [190, 170], tag: 'dia',
+      szene: () => `${AS.huegel('#B07CC6', 160)}${Array.from({ length: 14 }, (_, k) => `<circle cx="${20 + k * 28}" cy="${172 + (k % 3) * 8}" r="6" fill="${['#D7A1F9', '#C17FE0', '#E1B8F7'][k % 3]}"/>`).join('')}<g transform="translate(320 120)"><rect x="-16" y="0" width="32" height="40" fill="#F4D03F"/><rect x="-16" y="12" width="32" height="4" fill="#C79B00"/><rect x="-16" y="24" width="32" height="4" fill="#C79B00"/></g>${[[280, 90], [300, 80], [340, 96]].map(([x, y], k) => `<g class="ab-biene" style="animation-delay:${k * .5}s"><ellipse cx="${x}" cy="${y}" rx="5" ry="3.4" fill="#F4D03F"/><path d="M${x - 1} ${y - 3} v 6" stroke="#222" stroke-width="1.4"/></g>`).join('')}${AS.person(220, 104, '#E0B28F', '#FFF', '#7A5A3A', '<rect x="-14" y="-16" width="28" height="12" rx="6" fill="#EEE"/>')}` },
+    { id: 'hof', t: 'Der Bauernhof', i: '🐄', npc: 'Bäuerin Grete', hallo: 'Willkommen auf meinem Hof! Woher kommen eigentlich Milch, Eier und Brot?', g: ['bauernhof', 'herkunft', 'haustiere', 'essteile'], lv: 1, xy: [320, 150], tag: 'dia',
+      szene: () => `${AS.huegel('#8BC34A', 160)}<g transform="translate(300 160)"><rect x="-50" y="-60" width="100" height="60" fill="#C0392B"/><path d="M-58 -60 L 0 -100 L 58 -60 Z" fill="#8B2E22"/><rect x="-14" y="-34" width="28" height="34" fill="#FFF" opacity=".8"/></g><g transform="translate(140 175)"><ellipse cx="0" cy="0" rx="26" ry="14" fill="#FFF"/><circle cx="-8" cy="-4" r="6" fill="#222"/><circle cx="10" cy="4" r="5" fill="#222"/><ellipse cx="26" cy="-8" rx="10" ry="8" fill="#FFF"/><rect x="-18" y="10" width="5" height="12" fill="#FFF"/><rect x="12" y="10" width="5" height="12" fill="#FFF"/></g>${AS.person(220, 104, '#EBC8A8', '#2E86AB', '#E6B800', '<rect x="-16" y="-14" width="32" height="5" fill="#C79B00"/>')}` },
+    { id: 'stadt', t: 'Die Stadt', i: '🚦', npc: 'Polizistin Jule', hallo: 'In der Stadt ist viel los. Kennst du die Verkehrsregeln und weißt, wohin der Müll gehört?', g: ['verkehrszeichen', 'verkehr', 'muell', 'miteinander'], lv: 1, xy: [330, 250], tag: 'abend',
+      szene: () => `${AS.boden('#757575', 170)}${[[20, 90, 70, 80], [100, 70, 60, 100], [320, 80, 70, 90]].map(([x, y, w, h]) => `<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="#BCAAA4"/>${Array.from({ length: 6 }, (_, i) => `<rect x="${x + 8 + (i % 2) * (w / 2)}" y="${y + 10 + Math.floor(i / 2) * 22}" width="${w / 2 - 16}" height="12" fill="#FFE082"/>`).join('')}`).join('')}${[0, 1, 2, 3, 4].map(i => `<rect x="${170 + i * 14}" y="176" width="9" height="40" fill="#FFF"/>`).join('')}<g transform="translate(270 110)"><rect x="-3" y="0" width="6" height="60" fill="#444"/><rect x="-9" y="-30" width="18" height="34" rx="4" fill="#222"/><circle cx="0" cy="-22" r="4" fill="#E53935"/><circle cx="0" cy="-12" r="4" fill="#555"/><circle cx="0" cy="-2" r="4" fill="#555"/></g>${AS.person(200, 110, '#C98B5E', '#1F3B73', '#2B1B12', '<rect x="-12" y="-16" width="24" height="7" rx="2" fill="#1F3B73"/>')}` },
+    { id: 'wald', t: 'Der Harzwald', i: '🌲', npc: 'Försterin Hanna', hallo: 'Psst, im Wald sind viele Tiere unterwegs. Erkennst du ihre Spuren?', g: ['baum', 'spurensuche', 'tierewinter', 'jahreslauf'], lv: 1, xy: [215, 295], tag: 'nebel',
+      szene: () => `${AS.boden('#4E7D45', 165)}${[30, 80, 130, 290, 340, 380].map((x, j) => AS.tanne(x, 140 + (j % 2) * 10, 90 + (j % 3) * 10, ['#2E5E3A', '#24502F', '#3D7A49'][j % 3])).join('')}<g class="ab-nebel"><ellipse cx="200" cy="150" rx="210" ry="18" fill="#FFF" opacity=".3"/></g><g transform="translate(320 180)"><ellipse cx="0" cy="0" rx="20" ry="11" fill="#8D6E63"/><circle cx="18" cy="-8" r="8" fill="#8D6E63"/><path d="M14 -16 l -4 -10 m 8 10 l 4 -10" stroke="#5D4037" stroke-width="2"/></g>${AS.person(210, 104, '#EBC8A8', '#2E7D32', '#6D4C41', '<path d="M-14 -10 h 28 l -4 -8 h -20 z" fill="#2E7D32"/>')}` },
+    { id: 'stern', t: 'Die Sternwarte', i: '🔭', npc: 'Astronom Ole', hallo: 'Willkommen in der Sternwarte! Hier beobachten wir Wetter, Licht und Himmel.', g: ['wolken', 'wetterstation', 'licht', 'wind'], lv: 1, xy: [85, 240], tag: 'nacht',
+      szene: () => `${AS.huegel('#3B4A6B', 175)}<g transform="translate(290 168)"><rect x="-40" y="-40" width="80" height="40" fill="#ECEFF1"/><path d="M-44 -40 A 44 40 0 0 1 44 -40 Z" fill="#CFD8DC"/><path d="M0 -60 L 40 -96" stroke="#90A4AE" stroke-width="10" stroke-linecap="round"/></g>${[30, 60, 110, 150, 200, 340, 370].map((x, j) => AS.stern(x, 20 + (j * 23) % 70, 1.5 + (j % 2))).join('')}<circle cx="80" cy="50" r="14" fill="#F1F5FF"/>${AS.person(190, 112, '#EBC8A8', '#5E35B1', '#BBB')}` }
+  ] });
+
+/*@@src design281.js@@*/
+
+const DS_EMO = { meine: '⚽', mathe: '🔢', deutsch: '📖', englisch: '🎡', spanisch: '🌋', sach: '🔬', wissen: '🌍', kunst: '🎨', werte: '⚖️' };
+const DS_ADV = { mathe: 'schatzinsel', deutsch: 'buecherburg', englisch: 'london', spanisch: 'aventura', sach: 'forscherreise' };
+const dsFx = () => !(typeof window !== 'undefined' && window.LW_FX_AUS) && !(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches);
+const dsKarteAn = () => !(S.settings && S.settings.dsKarte === false);
+function dsBlob(x, y, rx, ry, seed, grow) {
+  const P = []; for (let k = 0; k < 24; k++) { const t = k / 24 * Math.PI * 2, f = 1 + .1 * Math.sin(3 * t + seed) + .06 * Math.sin(5 * t + seed * 2.3); P.push([x + Math.cos(t) * (rx + grow) * f, y + Math.sin(t) * (ry + grow) * f]); }
+  let d = `M${P[0][0].toFixed(1)} ${P[0][1].toFixed(1)}`; for (let k = 0; k < P.length; k++) { const a = P[k], b = P[(k + 1) % P.length]; d += ` Q ${a[0].toFixed(1)} ${a[1].toFixed(1)} ${((a[0] + b[0]) / 2).toFixed(1)} ${((a[1] + b[1]) / 2).toFixed(1)}`; } return d + ' Z';
+}
+function dsInsel(w, x, y, rx, ry, klein) {
+  const pr = typeof worldProgress === 'function' ? worldProgress(w.id) : { got: 0, max: 0 }, pct = pr.max ? Math.round(pr.got / pr.max * 100) : 0;
+  const name = String(w.name).replace(/&shy;/g, ''), adv = DS_ADV[w.id] && GAMES[DS_ADV[w.id]] ? DS_ADV[w.id] : null, fs = klein ? 24 : 30, seed = w.id.length * 1.7 + w.id.charCodeAt(0) / 20, br = ry * .78;
+  const baum = (bx, by, s) => `<g transform="translate(${bx} ${by})"><rect x="-1.2" y="-${s * .7}" width="2.4" height="${s * .7}" fill="#7A5230"/><circle cx="0" cy="-${s * .8}" r="${s * .38}" fill="#2F8F4E"/><circle cx="${s * .25}" cy="-${s * .65}" r="${s * .28}" fill="#3FA55E"/></g>`;
+  return `<g class="ds-insel" data-act="world" data-w="${w.id}" data-top="1" role="button" tabindex="0" aria-label="${esc(name)}">
+    <ellipse cx="${x}" cy="${y + ry * .6}" rx="${rx * 1.05}" ry="${ry * .5}" class="ds-schatten"/>
+    <path d="${dsBlob(x, y, rx, ry, seed, 7)}" class="ds-sand"/><path d="${dsBlob(x, y - 2, rx, ry, seed, 0)}" class="ds-gras"/>
+    <ellipse cx="${x - rx * .35}" cy="${y - ry * .45}" rx="${rx * .32}" ry="${ry * .2}" class="ds-glanz"/>
+    ${baum(x - rx * .72, y + ry * .25, klein ? 14 : 18)}${baum(x + rx * .7, y + ry * .1, klein ? 12 : 15)}
+    <circle cx="${x}" cy="${y - 4}" r="${br}" style="fill:var(--${w.id})" class="ds-plakette"/>
+    <text x="${x}" y="${y - 4 + fs * .34}" text-anchor="middle" class="ds-emo" style="font-size:${fs}px">${DS_EMO[w.id] || '⭐'}</text>
+    <text x="${x}" y="${y + ry + (klein ? 20 : 24)}" text-anchor="middle" class="ds-il">${esc(name)}</text>
+    <rect x="${x - 26}" y="${y + ry + (klein ? 26 : 31)}" width="52" height="5" rx="2.5" class="ds-pb"/><rect x="${x - 26}" y="${y + ry + (klein ? 26 : 31)}" width="${Math.max(2, 52 * pct / 100)}" height="5" rx="2.5" class="ds-pf"/>
+    ${adv ? `<g class="ds-flagge" data-act="play" data-g="${adv}" role="button" aria-label="Abenteuer: ${esc(GAMES[adv].t)}"><rect x="${x + rx * .5}" y="${y - ry - 22}" width="2.5" height="28" fill="#5B4636"/><path d="M${x + rx * .5 + 2.5} ${y - ry - 22} l 18 5 l -18 6 z" fill="#E0453A"/><circle cx="${x + rx * .5 + 9}" cy="${y - ry - 14}" r="12" fill="transparent"/></g>` : ''}</g>`;
+}
+function dsBoot(pfad) {
+  return `<g class="ds-boot"><g><path d="M-18 0 L 18 0 L 12 9 L -12 9 Z" fill="#8B5A2B"/><rect x="-1" y="-26" width="2" height="26" fill="#5B4636"/><path d="M1 -24 L 16 -6 L 1 -6 Z" fill="#FFF"/>
+    <g transform="translate(-12 -16) scale(.55)"><ellipse cx="14" cy="18" rx="11" ry="15" fill="#1F2A44"/><ellipse cx="16" cy="20" rx="7" ry="11" fill="#FFF"/><rect x="4" y="9" width="21" height="4" rx="2" fill="#E0453A"/><circle cx="17" cy="9" r="2.4" fill="#FFF"/><circle cx="18" cy="9" r="1.2" fill="#111"/><path d="M21 10 l 7 2 l -7 2 z" fill="#F59E0B"/></g>
+    <animateMotion dur="38s" repeatCount="indefinite" rotate="0" path="${pfad}"/></g></g>`;
+}
+function dsKarte() {
+  if (typeof WORLDS === 'undefined') return '';
+  const W = WORLDS, oben = [0, 1, 3, 5, 7], unten = [2, 4, 6, 8];
+  const breit = W.map((w, k) => { const o = oben.indexOf(k), u = unten.indexOf(k); return o >= 0 ? [w, 80 + o * 180, 92] : u >= 0 ? [w, 170 + u * 180, 210] : null; }).filter(Boolean);
+  const hoch = W.map((w, k) => [w, 70 + (k % 3) * 130, 74 + Math.floor(k / 3) * 140]);
+  const meer = id => `<defs><linearGradient id="${id}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8FDCF7"/><stop offset="1" stop-color="#2A93CF"/></linearGradient></defs>`;
+  const wellen = (n, w, h) => Array.from({ length: n }, (_, k) => `<path d="M${(k * 137) % w} ${30 + (k * 71) % (h - 40)} q 12 -5 24 0 t 24 0" class="ds-wl" style="animation-delay:${(k % 5) * .8}s"/>`).join('');
+  return `<section class="ds-karte-w" aria-label="Inselkarte der Lernwelten">
+    <svg class="ds-karte ds-breit" viewBox="0 0 900 290" role="img">${meer('dsM1')}<rect width="900" height="290" rx="22" fill="url(#dsM1)"/>${wellen(16, 900, 290)}
+      <g class="ds-wolken"><ellipse cx="120" cy="26" rx="44" ry="11" fill="#FFF" opacity=".75"/><ellipse cx="620" cy="22" rx="56" ry="12" fill="#FFF" opacity=".7"/></g>
+      ${dsBoot('M -40 155 C 200 120, 400 190, 600 150 S 860 130, 940 160')}${breit.map(([w, x, y]) => dsInsel(w, x, y, 62, 32)).join('')}</svg>
+    <svg class="ds-karte ds-hoch" viewBox="0 0 400 460" role="img">${meer('dsM2')}<rect width="400" height="460" rx="22" fill="url(#dsM2)"/>${wellen(12, 400, 460)}
+      ${dsBoot('M -40 140 C 120 120, 260 170, 440 140')}${hoch.map(([w, x, y]) => dsInsel(w, x, y, 50, 27, true)).join('')}</svg>
+    <p class="ds-tipp">Tippe auf eine Insel. Die rote Fahne startet das Abenteuer der Insel.</p></section>`;
+}
+
+if (typeof showHome === 'function') {
+  const dsHome0 = showHome;
+  showHome = function () {
+    const r = dsHome0.apply(this, arguments);
+    try {
+      const t = document.querySelector('.home2 .section-title'), ws = document.querySelector('.home2 .worlds');
+      if (t && ws && !document.querySelector('.ds-karte-w')) {
+        t.insertAdjacentHTML('beforeend', `<button class="ds-tog" data-act="dskarte" aria-pressed="${dsKarteAn()}">${dsKarteAn() ? '▦ Nur Kacheln' : '🗺️ Inselkarte'}</button>`);
+        if (dsKarteAn()) ws.insertAdjacentHTML('beforebegin', dsKarte());
+      }
+    } catch (e) { }
+    return r;
+  };
+}
+if (typeof ACT !== 'undefined') Object.assign(ACT, { dskarte: () => { S.settings.dsKarte = !dsKarteAn(); save(); showHome(); } });
+
+const DS_SZ = {
+  meine: `<rect x="40" y="40" width="70" height="40" fill="none" stroke="#FFF" stroke-width="3"/><path d="M40 40 l 10 -8 h 50 l 10 8" fill="none" stroke="#FFF" stroke-width="2"/><circle cx="160" cy="70" r="11" fill="#FFF"/><path d="M230 60 c -10 -14 -30 0 0 22 c 30 -22 10 -36 0 -22 z" fill="#FFF"/>`,
+  mathe: `<rect x="30" y="50" width="28" height="28" rx="5" fill="#FFF"/><rect x="66" y="36" width="28" height="42" rx="5" fill="#FFF"/><path d="M120 78 L 150 30 L 180 78 Z" fill="#FFF"/><circle cx="220" cy="60" r="18" fill="none" stroke="#FFF" stroke-width="4"/><path d="M262 50 h 22 m -11 -11 v 22 M 300 64 h 22" stroke="#FFF" stroke-width="5" stroke-linecap="round"/>`,
+  deutsch: `<path d="M40 78 V 40 H 60 V 48 H 70 V 40 H 90 V 48 H 100 V 40 H 120 V 78 Z" fill="#FFF"/><path d="M150 78 q 30 -14 60 0 V 40 q -30 -14 -60 0 Z M 210 78 q 30 -14 60 0 V 40 q -30 -14 -60 0 Z" fill="#FFF"/><text x="300" y="72" font-size="34" font-weight="800" fill="#FFF">Aa</text>`,
+  englisch: `<rect x="40" y="20" width="16" height="58" fill="#FFF"/><path d="M36 20 L 48 2 L 60 20 Z" fill="#FFF"/><circle cx="48" cy="34" r="5" fill="none" stroke="#FFF" stroke-width="2"/><circle cx="130" cy="48" r="30" fill="none" stroke="#FFF" stroke-width="4"/>${[0, 1, 2, 3, 4, 5].map(k => `<line x1="130" y1="48" x2="${130 + Math.cos(k) * 30}" y2="${48 + Math.sin(k) * 30}" stroke="#FFF" stroke-width="2"/>`).join('')}<rect x="190" y="50" width="90" height="28" rx="4" fill="#FFF"/><rect x="190" y="36" width="90" height="16" rx="4" fill="#FFF"/>`,
+  spanisch: `<path d="M40 78 L 110 18 L 180 78 Z" fill="#FFF"/><path d="M96 30 L 110 18 L 124 30 L 116 28 L 110 34 L 104 28 Z" fill="rgba(0,0,0,.18)"/><path d="M230 78 q 4 -40 2 -54" stroke="#FFF" stroke-width="5" fill="none"/>${[-1.2, -.5, .3, 1].map(a => `<path d="M232 24 q ${Math.sin(a) * 18} -8 ${Math.sin(a) * 30} 10" stroke="#FFF" stroke-width="5" fill="none" stroke-linecap="round"/>`).join('')}`,
+  sach: `<path d="M40 78 L 60 30 L 80 78 Z M 70 78 L 92 22 L 114 78 Z" fill="#FFF"/><rect x="150" y="24" width="14" height="54" fill="#FFF"/><path d="M146 24 L 157 10 L 168 24 Z" fill="#FFF"/><circle cx="240" cy="48" r="20" fill="none" stroke="#FFF" stroke-width="5"/><path d="M254 62 L 276 84" stroke="#FFF" stroke-width="7" stroke-linecap="round"/>`,
+  wissen: `<circle cx="80" cy="48" r="28" fill="none" stroke="#FFF" stroke-width="4"/><path d="M52 48 h 56 M 80 20 c -18 18 -18 38 0 56 c 18 -18 18 -38 0 -56" fill="none" stroke="#FFF" stroke-width="3"/><path d="M180 78 L 180 40 q 12 -26 24 0 L 204 78 Z" fill="#FFF"/><path d="M174 70 l -10 10 h 14 z M 210 70 l 10 10 h -14 z" fill="#FFF"/><circle cx="270" cy="30" r="6" fill="#FFF"/>`,
+  kunst: `<path d="M40 60 c 0 -30 60 -40 80 -10 c 10 16 -10 14 -10 26 c 0 16 -70 20 -70 -16 z" fill="#FFF"/>${[[66, 44], [86, 40], [100, 52]].map(([x, y]) => `<circle cx="${x}" cy="${y}" r="5" fill="rgba(0,0,0,.18)"/>`).join('')}<rect x="160" y="20" width="10" height="58" rx="3" fill="#FFF" transform="rotate(20 165 50)"/><rect x="200" y="20" width="10" height="58" rx="3" fill="#FFF" transform="rotate(-10 205 50)"/>`,
+  werte: `<path d="M60 36 c -14 -18 -40 0 0 34 c 40 -34 14 -52 0 -34 z" fill="#FFF"/><path d="M160 24 v 54 M 130 30 h 60" stroke="#FFF" stroke-width="4"/><path d="M130 30 l -12 24 h 24 z M 190 30 l -12 24 h 24 z" fill="#FFF"/><circle cx="250" cy="44" r="10" fill="#FFF"/><circle cx="276" cy="44" r="10" fill="#FFF"/><path d="M236 78 q 14 -26 28 0 M 262 78 q 14 -26 28 0" fill="#FFF"/>`
+};
+if (typeof showWorld === 'function') {
+  const dsWelt0 = showWorld;
+  showWorld = function (wid) {
+    const r = dsWelt0.apply(this, arguments);
+    try { const h = document.querySelector('.pagehead'); if (h && DS_SZ[wid] && !h.querySelector('.ds-kopf')) h.insertAdjacentHTML('beforeend', `<svg class="ds-kopf" viewBox="0 0 340 84" preserveAspectRatio="xMaxYMax meet" aria-hidden="true">${DS_SZ[wid]}</svg><svg class="ds-huegel" viewBox="0 0 1200 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40 V 22 C 150 4, 300 34, 460 18 S 760 2, 900 20 S 1100 34, 1200 16 V 40 Z"/></svg>`); } catch (e) { }
+    return r;
+  };
+}
+
+const DS_BODEN = { mathe: 'zahl', deutsch: 'buch', englisch: 'stadt', spanisch: 'meer', sach: 'wald', wissen: 'welt', kunst: 'farbe', werte: 'herz', meine: 'herz' };
+function dsBodenSVG(wid) {
+  const art = DS_BODEN[wid] || 'meer', deko = {
+    zahl: `<text x="120" y="70" class="ds-bz">3</text><text x="980" y="64" class="ds-bz">+</text><text x="1080" y="78" class="ds-bz">7</text>`,
+    buch: `<path d="M1000 90 q 30 -12 60 0 V 56 q -30 -12 -60 0 Z" class="ds-bd"/><path d="M100 92 V 60 H 116 V 66 H 126 V 60 H 142 V 92 Z" class="ds-bd"/>`,
+    stadt: `<rect x="980" y="40" width="14" height="60" class="ds-bd"/><path d="M976 40 l 11 -16 l 11 16 z" class="ds-bd"/><rect x="1010" y="64" width="60" height="36" rx="4" class="ds-bd"/>`,
+    meer: `<path d="M1040 100 L 1080 50 L 1120 100 Z" class="ds-bd"/><path d="M120 100 q 3 -30 1 -40" stroke="currentColor" stroke-width="5" fill="none" class="ds-bs"/>`,
+    wald: `<path d="M1000 100 L 1020 52 L 1040 100 Z M 1040 100 L 1064 44 L 1088 100 Z" class="ds-bd"/><circle cx="130" cy="74" r="20" class="ds-bd"/>`,
+    welt: `<circle cx="1060" cy="70" r="24" class="ds-bd"/><path d="M120 100 V 70 q 10 -20 20 0 V 100 Z" class="ds-bd"/>`,
+    farbe: `<circle cx="1040" cy="76" r="14" class="ds-bd"/><circle cx="1070" cy="70" r="10" class="ds-bd"/><rect x="120" y="50" width="10" height="50" rx="3" class="ds-bd"/>`,
+    herz: `<path d="M1060 70 c -10 -14 -30 0 0 24 c 30 -24 10 -38 0 -24 z" class="ds-bd"/><circle cx="130" cy="80" r="10" class="ds-bd"/>`
+  }[art];
+  return `<div class="ds-boden" aria-hidden="true"><svg viewBox="0 0 1200 110" preserveAspectRatio="xMidYMax slice"><path d="M0 110 V 74 C 200 52, 360 92, 600 70 S 1000 50, 1200 72 V 110 Z" class="ds-h1"/><path d="M0 110 V 90 C 260 76, 520 104, 760 88 S 1080 82, 1200 92 V 110 Z" class="ds-h2"/>${deko}</svg></div>`;
+}
+if (typeof renderQuestion === 'function') {
+  const dsFrage0 = renderQuestion;
+  renderQuestion = function () {
+    const r = dsFrage0.apply(this, arguments);
+    try { const root = document.getElementById('gameRoot'), wid = G && GAMES[G.qg] && GAMES[G.qg].w; if (root && wid && !root.querySelector('.ds-boden')) root.insertAdjacentHTML('beforeend', dsBodenSVG(wid)); } catch (e) { }
+    return r;
+  };
+}
+
+let DS_LETZT = null;
+document.addEventListener('pointerdown', e => { const b = e.target.closest && e.target.closest('.opt, .numpad button, .colpad button, .tile-l, .otile'); if (b) DS_LETZT = b.getBoundingClientRect(); }, true);
+function dsSterne(n) {
+  const ziel = document.getElementById('rpts'); if (!ziel || !dsFx()) return;
+  const z = ziel.getBoundingClientRect(), q = DS_LETZT || { left: innerWidth / 2 - 20, top: innerHeight / 2, width: 40, height: 40 };
+  for (let i = 0; i < n; i++) {
+    const s = document.createElement('span'); s.className = 'ds-stern'; s.textContent = '⭐';
+    const x0 = q.left + q.width / 2 + (Math.random() - .5) * q.width * .6, y0 = q.top + q.height / 2 + (Math.random() - .5) * 20;
+    s.style.left = x0 + 'px'; s.style.top = y0 + 'px'; s.style.setProperty('--dx', (z.left + z.width / 2 - x0) + 'px'); s.style.setProperty('--dy', (z.top + z.height / 2 - y0) + 'px'); s.style.animationDelay = (i * 60) + 'ms';
+    document.body.appendChild(s); setTimeout(() => s.remove(), 1100 + i * 60);
+  }
+}
+if (typeof answer === 'function') {
+  const dsAntwort0 = answer;
+  answer = function (ok, second) {
+    const vorher = G && G.answered, r = dsAntwort0.apply(this, arguments);
+    try {
+      if (!vorher && G && ok && !G.arbeit) {
+        dsSterne(second ? 2 : 5);
+        const rp = document.getElementById('rpts');
+        if (rp && G.streak >= 3 && !second) { let f = document.querySelector('.ds-serie'); if (!f) { rp.insertAdjacentHTML('beforebegin', '<span class="ds-serie" aria-live="polite"></span>'); f = document.querySelector('.ds-serie'); } f.textContent = `🔥 ${G.streak}`; f.classList.remove('neu'); void f.offsetWidth; f.classList.add('neu'); }
+      }
+    } catch (e) { }
+    return r;
+  };
+}
+
+/*@@src party281.js@@*/
+
+const P8_FARBEN = ['#1F2A44', '#E0453A', '#2E86AB', '#3BB273', '#F4B400', '#9B5DE5', '#F28C28', '#8D6E63'];
+const P8_TEILE = [['Kopf', 'Mal einen Kopf. Er darf verrückt sein: mit Hörnern, drei Augen oder Antennen!'], ['Bauch', 'Mal den Bauch und die Arme. Unten guckt noch ein Stück vom Kopf heraus, schließ daran an.'], ['Beine', 'Mal die Beine und Füße. Oben siehst du ein Stück vom Bauch.']];
+const p8Root = () => document.getElementById('paRoot');
+
+
+function paKnick() {
+  const n = PA.pl.length, m = PA.o.m || 1;
+  PA.kn = { m, bild: 0, teil: 0, maler: 0, can: [], fertig: [] };
+  p8KnickNaechster();
+}
+function p8KnickNaechster() {
+  const K = PA.kn;
+  if (K.teil >= 3) return p8KnickZeigen();
+  const wer = K.maler % PA.pl.length;
+  paHand(wer, `Gib das iPad an ${esc(PA.pl[wer].n)}`, `Du malst ${K.teil === 0 ? 'den' : 'die'} <b>${P8_TEILE[K.teil][0]}</b> von Monster ${K.bild + 1}. Die anderen schauen weg!`, () => p8KnickMalen(wer), 'Ich male! ✏️');
+}
+function p8KnickMalen(wer) {
+  const K = PA.kn, t = K.teil, [name, tipp] = P8_TEILE[t];
+  paView(`<main class="wrap p8-mal"><p class="p8-tipp"><b>${esc(PA.pl[wer].n)}: ${name}</b> · ${tipp}</p>
+    ${t > 0 ? '<canvas class="p8-rest" id="p8Rest" aria-hidden="true"></canvas>' : ''}<canvas class="p8-leinwand" id="p8C" aria-label="Malfläche"></canvas>
+    <div class="p8-werkzeug">${P8_FARBEN.map((c, i) => `<button class="p8-f ${i === 0 ? 'sel' : ''}" data-c="${c}" style="background:${c}" aria-label="Farbe"></button>`).join('')}
+      <button class="btn ghost sm" id="p8Dick">✏️ dünn</button><button class="btn ghost sm" id="p8Weg">🧽 Alles weg</button></div>
+    <button class="btn big" id="p8Fertig">Fertig ✓</button></main>`, { title: `✏️ Knick-Monster ${K.bild + 1}` });
+  const c = $('#p8C'), cs = getComputedStyle(c.parentElement), w = Math.min(560, Math.floor(c.parentElement.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight) - 8)), h = Math.round(w * (w < 480 ? .62 : .48)), d = Math.min(2, devicePixelRatio || 1);
+  c.width = w * d; c.height = h * d; c.style.width = w + 'px'; c.style.height = h + 'px';
+  const x = c.getContext('2d'); x.scale(d, d); x.fillStyle = '#FFFFFF'; x.fillRect(0, 0, w, h); x.lineCap = 'round'; x.lineJoin = 'round';
+  if (t > 0) {   /* nur ein Streifen vom Teil davor ist zu sehen */
+    const r = $('#p8Rest'), vor = K.can[t - 1], sh = 18; r.width = w * d; r.height = sh * d; r.style.width = w + 'px'; r.style.height = sh + 'px';
+    r.getContext('2d').drawImage(vor, 0, vor.height - sh * d, vor.width, sh * d, 0, 0, w * d, sh * d);
+  }
+  let farbe = P8_FARBEN[0], dicke = 5, malt = false, lx = 0, ly = 0;
+  const pos = e => { const b = c.getBoundingClientRect(); return [e.clientX - b.left, e.clientY - b.top]; };
+  c.addEventListener('pointerdown', e => { e.preventDefault(); malt = true; [lx, ly] = pos(e); x.fillStyle = farbe; x.beginPath(); x.arc(lx, ly, dicke / 2, 0, 7); x.fill(); c.setPointerCapture(e.pointerId); });
+  c.addEventListener('pointermove', e => { if (!malt) return; const [nx, ny] = pos(e); x.strokeStyle = farbe; x.lineWidth = dicke; x.beginPath(); x.moveTo(lx, ly); x.lineTo(nx, ny); x.stroke(); lx = nx; ly = ny; });
+  const halt = () => { malt = false; }; c.addEventListener('pointerup', halt); c.addEventListener('pointercancel', halt);
+  document.querySelectorAll('.p8-f').forEach(b => b.addEventListener('click', () => { farbe = b.dataset.c; document.querySelectorAll('.p8-f').forEach(o => o.classList.toggle('sel', o === b)); }));
+  $('#p8Dick').addEventListener('click', e => { dicke = dicke === 5 ? 12 : 5; e.currentTarget.textContent = dicke === 5 ? '✏️ dünn' : '🖌️ dick'; });
+  $('#p8Weg').addEventListener('click', () => { x.fillStyle = '#FFFFFF'; x.fillRect(0, 0, w, h); });
+  $('#p8Fertig').addEventListener('click', () => { K.can[t] = c; PA.pl[wer].p++; K.teil++; K.maler++; Sound.tap(); p8KnickNaechster(); });
+}
+function p8KnickZeigen() {
+  const K = PA.kn, can = K.can, w = can[0].width, gesamt = document.createElement('canvas');
+  gesamt.width = w; gesamt.height = can.reduce((s, c) => s + c.height, 0); const g = gesamt.getContext('2d'); let y = 0; can.forEach(c => { g.drawImage(c, 0, y); y += c.height; });
+  K.fertig.push(gesamt.toDataURL('image/png')); K.bild++;
+  paView(`<main class="wrap p8-zeig"><h2>Aufklappen! Monster ${K.bild} ist fertig 🎉</h2><div class="p8-monster"><img src="${K.fertig[K.fertig.length - 1]}" alt="Euer Knick-Monster"></div>
+    <p class="muted">Gebt ihm zusammen einen Namen! Was kann euer Monster besonders gut?</p><button class="btn big" id="p8Weiter">${K.bild < K.m ? 'Nächstes Monster ›' : 'Alle Monster ansehen ›'}</button></main>`, { title: '✏️ Knick-Monster' });
+  paYay(); if (typeof confetti === 'function') confetti(60);
+  $('#p8Weiter').addEventListener('click', () => {
+    if (K.bild < K.m) { K.teil = 0; K.can = []; p8KnickNaechster(); return; }
+    paEnd(`Ihr habt zusammen <b>${plural(K.m, 'Monster', 'Monster')}</b> gemalt.<span class="p8-galerie">${K.fertig.map(src => `<img src="${src}" alt="Monster">`).join('')}</span>`);
+  });
+}
+
+
+const P8_ZW = { de: ['eins', 'zwei', 'drei', 'vier', 'fünf', 'sechs', 'sieben', 'acht', 'neun', 'zehn', 'elf', 'zwölf', 'dreizehn', 'vierzehn', 'fünfzehn', 'sechzehn', 'siebzehn', 'achtzehn', 'neunzehn', 'zwanzig'],
+  en: ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen', 'eighteen', 'nineteen', 'twenty'],
+  es: ['uno', 'dos', 'tres', 'cuatro', 'cinco', 'seis', 'siete', 'ocho', 'nueve', 'diez', 'once', 'doce', 'trece', 'catorce', 'quince', 'dieciséis', 'diecisiete', 'dieciocho', 'diecinueve', 'veinte'] };
+function paZaehlen() { PA.zl = { ziel: PA.o.z || 10, spr: PA.o.s || 'de', n: 0, best: 0, versuche: 1 }; p8ZaehlenView(); }
+function p8ZaehlenView() {
+  const Z = PA.zl, wort = Z.n < Z.ziel ? P8_ZW[Z.spr][Z.n] : '';
+  paView(`<main class="wrap p8-zl"><section class="card p8-zl-k"><p class="muted">Ziel: zusammen bis <b>${Z.ziel}</b>${Z.spr === 'de' ? '' : Z.spr === 'en' ? ' auf Englisch' : ' auf Spanisch'} · Versuch ${Z.versuche} · Rekord ${Z.best}</p>
+    <div class="p8-zl-zahl" id="p8Zahl">${Z.n}</div><p class="p8-zl-naechst">Als Nächstes: <b>${Z.n + 1}${wort ? ` · ${esc(wort)}` : ''}</b></p>
+    <div class="p8-zl-reihe">${Array.from({ length: Z.ziel }, (_, i) => `<span class="${i < Z.n ? 'ja' : ''}"></span>`).join('')}</div></section>
+    <div class="p8-zl-kn"><button class="btn big" id="p8Plus">+1 Zahl gesagt</button><button class="btn ghost big" id="p8Gleich">😮 Gleichzeitig! Von vorn</button></div></main>`, { title: '🔢 Zusammen bis ' + Z.ziel });
+  $('#p8Plus').addEventListener('click', () => {
+    Z.n++; Z.best = Math.max(Z.best, Z.n); paBeep(600 + Z.n * 30);
+    if (Z.n >= Z.ziel) { PA.pl.forEach(p => p.p++); return paEnd(`Geschafft! Ihr habt zusammen bis <b>${Z.ziel}</b> gezählt, ohne dass zwei gleichzeitig gesprochen haben. Ihr habt dafür ${plural(Z.versuche, 'Versuch', 'Versuche')} gebraucht.`); }
+    p8ZaehlenView();
+  });
+  $('#p8Gleich').addEventListener('click', () => { Z.n = 0; Z.versuche++; paBoo(); p8ZaehlenView(); });
+}
+
+
+const P8_RH = [[2, 2, 2], [2, 2, 4], [1, 1, 2, 2], [2, 1, 1, 2], [1, 1, 1, 1, 2], [2, 1, 1, 1, 1], [1, 2, 1, 2], [1, 1, 2, 1, 1], [2, 2, 1, 1, 2], [1, 1, 1, 2, 1, 1]];
+function paEcho() { PA.ec = { r: 0, runden: PA.pl.length * (PA.o.r || 2), wer: 0, tries: 0, tap: [] }; p8EchoNaechster(); }
+function p8EchoNaechster() {
+  const E = PA.ec;
+  if (E.r >= E.runden) return paEnd(`Ihr habt zusammen <b>${PA.pl.reduce((s, p) => s + p.p, 0)} Rhythmen</b> nachgeklatscht. Was für ein Orchester! 🥁`);
+  E.wer = E.r % PA.pl.length; E.tries = 0; E.muster = P8_RH[Math.min(P8_RH.length - 1, Math.floor(E.r / PA.pl.length) * 3 + R.int(0, 2))];
+  paHand(E.wer, `${esc(PA.pl[E.wer].n)} ist dran`, 'Hör dir den Rhythmus an und schau auf die Trommel. Dann tippst du ihn genau so nach.', () => p8EchoSpiel(), 'Los! 🥁');
+}
+function p8EchoSpiel() {
+  const E = PA.ec; E.tap = [];
+  paView(`<main class="wrap p8-ec"><p class="p8-tipp" id="p8Hinweis">Hör gut zu …</p><button class="p8-trommel" id="p8T" disabled aria-label="Trommel"><span>🥁</span></button>
+    <div class="p8-ec-punkte" id="p8Pk">${E.muster.map(() => '<i></i>').join('')}<i></i></div><button class="btn ghost" id="p8Nochmal" disabled>🔁 Nochmal anhören</button></main>`, { title: `👏 Klatsch-Echo · ${esc(PA.pl[E.wer].n)}` });
+  const vorspielen = () => {
+    const t = $('#p8T'), nb = $('#p8Nochmal'); t.disabled = true; nb.disabled = true; $('#p8Hinweis').textContent = 'Hör gut zu …'; let z = 0;
+    const takt = .26, schl = [0]; E.muster.forEach(v => schl.push(schl[schl.length - 1] + v * takt));
+    schl.forEach((s, i) => { paTone(i === 0 ? 523 : 392, s, .12, 'triangle', .25); setTimeout(() => { if (!$('#p8T')) return; t.classList.remove('schlag'); void t.offsetWidth; t.classList.add('schlag'); }, s * 1000); });
+    setTimeout(() => { if (!$('#p8T')) return; t.disabled = false; nb.disabled = false; $('#p8Hinweis').textContent = `Jetzt du! Tippe ${schl.length} Mal auf die Trommel.`; E.tap = []; p8EchoPunkte(); }, (schl[schl.length - 1] + .5) * 1000);
+    E.schl = schl;
+  };
+  $('#p8T').addEventListener('pointerdown', e => {
+    e.preventDefault(); const t = e.currentTarget; if (t.disabled) return;
+    E.tap.push(performance.now()); paTone(440, 0, .1, 'triangle', .22); t.classList.remove('schlag'); void t.offsetWidth; t.classList.add('schlag'); p8EchoPunkte();
+    if (E.tap.length >= E.schl.length) { t.disabled = true; setTimeout(p8EchoPruefen, 300); }
+  });
+  $('#p8Nochmal').addEventListener('click', vorspielen);
+  setTimeout(vorspielen, 500);
+}
+function p8EchoPunkte() { const E = PA.ec; document.querySelectorAll('#p8Pk i').forEach((el, i) => el.classList.toggle('ja', i < E.tap.length)); }
+function p8EchoPruefen() {
+  const E = PA.ec, soll = E.schl.slice(1).map((s, i) => s - E.schl[i]), ist = E.tap.slice(1).map((s, i) => (s - E.tap[i]) / 1000);
+  const fakt = ist.reduce((a, b) => a + b, 0) / soll.reduce((a, b) => a + b, 0), ok = soll.every((v, i) => Math.abs(ist[i] / fakt - v) <= Math.max(.12, v * .38));
+  if (ok) { PA.pl[E.wer].p++; paYay(); E.r++; paView(`<main class="wrap p8-ec"><h2>Genau so! 🎉</h2><p>${esc(PA.pl[E.wer].n)} hat den Rhythmus nachgetrommelt. Alle klatschen ihn jetzt noch einmal zusammen!</p><button class="btn big" id="p8W">Weiter ›</button></main>`, { title: '👏 Klatsch-Echo' }); }
+  else if (E.tries === 0) { E.tries++; paBoo(); paView(`<main class="wrap p8-ec"><h2>Fast!</h2><p>Der Rhythmus war ein bisschen anders. Hör ihn dir noch einmal an und versuch es ein zweites Mal.</p><button class="btn big" id="p8W">Nochmal 🥁</button></main>`, { title: '👏 Klatsch-Echo' }); $('#p8W').addEventListener('click', p8EchoSpiel); return; }
+  else { E.r++; paView(`<main class="wrap p8-ec"><h2>Schwierig, der war!</h2><p>Klatscht ihn alle zusammen mit, dann geht es weiter.</p><button class="btn big" id="p8W">Weiter ›</button></main>`, { title: '👏 Klatsch-Echo' }); }
+  $('#p8W').addEventListener('click', p8EchoNaechster);
+}
+
+
+PA_G.push({ id: 'knickbild', e: '✏️', t: 'Knick-Monster', d: 'Jeder malt ein Stück, keiner sieht alles', min: 2, max: 8, dur: '10 Min.', neu: 1, run: () => paKnick(),
+  how: ['Ihr malt zusammen ein Monster, aber jedes Kind malt nur ein Teil: Kopf, Bauch oder Beine.', 'Wer malt, sieht vom Teil davor nur einen schmalen Streifen. Die anderen schauen weg!', 'Am Ende wird aufgeklappt, und ihr seht euer verrücktes Monster. Jedes Kind, das mitgemalt hat, bekommt einen Stern ⭐.'],
+  opts: [{ k: 'm', t: 'Monster', v: [1, 2, 3], l: ['1', '2', '3'], d: 2 }] });
+PA_GM.knickbild = PA_G[PA_G.length - 1];
+PA_G.push({ id: 'zaehlen', e: '🔢', t: 'Zusammen bis 20', d: 'Durcheinander zählen, aber nie gleichzeitig', min: 3, max: 8, dur: '5 bis 10 Min.', neu: 1, run: () => paZaehlen(),
+  how: ['Setzt euch in einen Kreis und schaut auf den Boden.', 'Ihr zählt zusammen: Irgendwer sagt „eins“, irgendwer „zwei“ und so weiter. Es gibt keine Reihenfolge!', 'Sagen zwei Kinder gleichzeitig eine Zahl, fangt ihr von vorn an. Ein Kind tippt auf dem iPad mit. Schafft ihr es zusammen bis zum Ziel?'],
+  opts: [{ k: 'z', t: 'Ziel', v: [10, 15, 20], l: ['10', '15', '20'], d: 10 }, { k: 's', t: 'Sprache', v: ['de', 'en', 'es'], l: ['Deutsch', 'English', 'Español'], d: 'de' }] });
+PA_GM.zaehlen = PA_G[PA_G.length - 1];
+PA_G.push({ id: 'echo', e: '👏', t: 'Klatsch-Echo', d: 'Rhythmus hören und nachtrommeln', min: 2, max: 8, dur: '10 Min.', neu: 1, run: () => paEcho(),
+  how: ['Lumi trommelt einen Rhythmus vor. Hört genau hin und schaut auf die Trommel.', 'Das Kind, das dran ist, tippt den Rhythmus auf der Trommel nach. Tempo egal, Hauptsache der Rhythmus stimmt.', 'Danach klatschen alle den Rhythmus zusammen. Die Rhythmen werden mit der Zeit länger!'],
+  opts: [{ k: 'r', t: 'Runden pro Kind', v: [1, 2, 3], l: ['1', '2', '3'], d: 2 }] });
+PA_GM.echo = PA_G[PA_G.length - 1];
+Object.assign(GAMES, {
+  paknickbild: { id: 'paknickbild', w: 'meine', g: 'n-party', o: 11, t: 'Knick-Monster', d: 'Zusammen malen, keiner sieht alles. 2 bis 8 Kinder', i: '✏️', type: 'tool', open: () => showPaIntro('knickbild') },
+  pazaehlen: { id: 'pazaehlen', w: 'meine', g: 'n-party', o: 12, t: 'Zusammen bis 20', d: 'Gemeinsam zählen, nie gleichzeitig. 3 bis 8 Kinder', i: '🔢', type: 'tool', open: () => showPaIntro('zaehlen') },
+  paecho: { id: 'paecho', w: 'meine', g: 'n-party', o: 13, t: 'Klatsch-Echo', d: 'Rhythmen nachtrommeln. 2 bis 8 Kinder', i: '👏', type: 'tool', open: () => showPaIntro('echo') }
+});
+
+/*@@src grafik281.js@@*/
+
+
+const G8_PLANETEN = [
+  { id: 'sonne', de: 'Sonne', en: 'Sun', es: 'el Sol', r: 210, x: 260, y: 1400, c: ['#FFF3B0', '#FFB300', '#F57C00'], f: 'Die Sonne ist ein Stern. Sie ist so riesig, dass die Erde über eine Million Mal hineinpassen würde.' },
+  { id: 'merkur', de: 'Merkur', en: 'Mercury', es: 'Mercurio', r: 34, x: 820, y: 1100, c: ['#D7CCC8', '#A1887F', '#5D4037'], f: 'Der Merkur ist der kleinste Planet und der Sonne am nächsten. Ein Jahr dauert dort nur 88 Tage.' },
+  { id: 'venus', de: 'Venus', en: 'Venus', es: 'Venus', r: 56, x: 1250, y: 1650, c: ['#FFF8E1', '#FFD54F', '#E0A800'], f: 'Die Venus ist der heißeste Planet, weil ihre dicke Lufthülle die Wärme festhält. Am Himmel sieht man sie als hellen Abendstern.' },
+  { id: 'erde', de: 'Erde', en: 'Earth', es: 'la Tierra', r: 62, x: 1800, y: 1250, c: ['#90CAF9', '#1E88E5', '#0D47A1'], erde: 1, f: 'Unsere Erde ist der einzige Planet, von dem wir wissen, dass es dort Leben gibt. Über zwei Drittel sind mit Wasser bedeckt.' },
+  { id: 'mond', de: 'Mond', en: 'Moon', es: 'la Luna', r: 22, x: 1935, y: 1120, c: ['#F5F5F5', '#BDBDBD', '#757575'], f: 'Der Mond kreist um die Erde. 1969 sind zum ersten Mal Menschen auf dem Mond gelandet.' },
+  { id: 'mars', de: 'Mars', en: 'Mars', es: 'Marte', r: 44, x: 2450, y: 1600, c: ['#FFAB91', '#E64A19', '#8D2A0B'], f: 'Der Mars ist der rote Planet. Sein Boden enthält viel Rost. Dort steht der höchste Vulkan im ganzen Sonnensystem.' },
+  { id: 'jupiter', de: 'Jupiter', en: 'Jupiter', es: 'Júpiter', r: 150, x: 3500, y: 1250, c: ['#FFE0B2', '#D7A16B', '#8D5B2E'], baender: 1, f: 'Der Jupiter ist der größte Planet. Sein großer roter Fleck ist ein Sturm, der größer ist als die ganze Erde.' },
+  { id: 'saturn', de: 'Saturn', en: 'Saturn', es: 'Saturno', r: 120, x: 4500, y: 1700, c: ['#FFF3C4', '#E6C77A', '#A67C2E'], ring: 1, f: 'Saturns Ringe bestehen aus Eis und Gestein. Saturn ist so leicht, dass er in einer riesigen Badewanne schwimmen würde.' },
+  { id: 'uranus', de: 'Uranus', en: 'Uranus', es: 'Urano', r: 80, x: 5300, y: 1150, c: ['#E0F7FA', '#4DD0E1', '#00838F'], f: 'Uranus ist türkis und eiskalt. Er rollt sozusagen auf der Seite liegend um die Sonne.' },
+  { id: 'neptun', de: 'Neptun', en: 'Neptune', es: 'Neptuno', r: 76, x: 6000, y: 1600, c: ['#BBDEFB', '#3F51B5', '#1A237E'], f: 'Neptun ist der äußerste Planet. Dort wehen die schnellsten Winde im ganzen Sonnensystem.' }
+];
+const G8_WW = 6400, G8_WH = 2800;
+function g8S() { if (!S.planeten || typeof S.planeten !== 'object') S.planeten = { found: {} }; if (!S.planeten.found) S.planeten.found = {}; return S.planeten; }
+function g8Planet(x, P, px, py, r, t) {
+  if (P.id === 'sonne') { const gl = x.createRadialGradient(px, py, r * .6, px, py, r * 2.2); gl.addColorStop(0, 'rgba(255,200,80,.55)'); gl.addColorStop(1, 'rgba(255,160,40,0)'); x.fillStyle = gl; x.beginPath(); x.arc(px, py, r * 2.2, 0, 7); x.fill(); }
+  if (P.ring) { x.save(); x.translate(px, py); x.rotate(-.35); x.strokeStyle = 'rgba(230,210,160,.55)'; x.lineWidth = r * .22; x.beginPath(); x.ellipse(0, 0, r * 1.9, r * .5, 0, Math.PI, 2 * Math.PI); x.stroke(); x.restore(); }
+  const g = x.createRadialGradient(px - r * .35, py - r * .35, r * .1, px, py, r); g.addColorStop(0, P.c[0]); g.addColorStop(.55, P.c[1]); g.addColorStop(1, P.c[2]);
+  x.fillStyle = g; x.beginPath(); x.arc(px, py, r, 0, 7); x.fill();
+  x.save(); x.beginPath(); x.arc(px, py, r, 0, 7); x.clip();
+  if (P.baender) { [-.5, -.15, .2, .5].forEach((b, k) => { x.fillStyle = k % 2 ? 'rgba(140,90,50,.35)' : 'rgba(255,240,220,.3)'; x.fillRect(px - r, py + b * r, r * 2, r * .14); }); x.fillStyle = 'rgba(200,70,40,.8)'; x.beginPath(); x.ellipse(px + r * .3, py + r * .32, r * .18, r * .1, 0, 0, 7); x.fill(); }
+  if (P.erde) { x.fillStyle = '#4CAF50'; [[-.3, -.2, .35, .25], [.3, .15, .3, .35], [-.1, .45, .25, .12]].forEach(([a, b, w, h]) => { x.beginPath(); x.ellipse(px + a * r + Math.sin(t * .1) * r * .05, py + b * r, w * r, h * r, .4, 0, 7); x.fill(); }); x.fillStyle = 'rgba(255,255,255,.55)'; x.beginPath(); x.ellipse(px, py - r * .9, r * .5, r * .14, 0, 0, 7); x.fill(); }
+  if (P.id === 'mond' || P.id === 'merkur' || P.id === 'mars') { x.fillStyle = 'rgba(0,0,0,.18)'; [[.3, -.2, .18], [-.35, .25, .14], [.1, .45, .1], [-.2, -.4, .09]].forEach(([a, b, s]) => { x.beginPath(); x.arc(px + a * r, py + b * r, s * r, 0, 7); x.fill(); }); }
+  if (P.id === 'sonne') { x.globalCompositeOperation = 'lighter'; for (let k = 0; k < 5; k++) { x.fillStyle = 'rgba(255,230,120,.12)'; x.beginPath(); x.arc(px + Math.sin(t * .7 + k) * r * .5, py + Math.cos(t * .5 + k * 2) * r * .5, r * .3, 0, 7); x.fill(); } x.globalCompositeOperation = 'source-over'; }
+  x.restore();
+  if (P.erde || P.id === 'venus' || P.id === 'neptun') { x.strokeStyle = P.erde ? 'rgba(130,200,255,.5)' : 'rgba(255,255,255,.25)'; x.lineWidth = r * .08; x.beginPath(); x.arc(px, py, r * 1.04, 0, 7); x.stroke(); }
+  if (P.ring) { x.save(); x.translate(px, py); x.rotate(-.35); x.strokeStyle = 'rgba(240,220,170,.75)'; x.lineWidth = r * .22; x.beginPath(); x.ellipse(0, 0, r * 1.9, r * .5, 0, 0, Math.PI); x.stroke(); x.restore(); }
+}
+function g8Rakete(x, px, py, a, s, schub, t) {
+  x.save(); x.translate(px, py); x.rotate(a + Math.PI / 2);
+  if (schub) { x.globalCompositeOperation = 'lighter'; const fl = s * (.55 + Math.random() * .25), g = x.createLinearGradient(0, s * .45, 0, s * .45 + fl); g.addColorStop(0, 'rgba(255,240,180,1)'); g.addColorStop(.4, 'rgba(255,150,40,.9)'); g.addColorStop(1, 'rgba(255,60,20,0)'); x.fillStyle = g; x.beginPath(); x.moveTo(-s * .16, s * .45); x.quadraticCurveTo(0, s * .45 + fl * 1.3, s * .16, s * .45); x.fill(); x.globalCompositeOperation = 'source-over'; }
+  x.fillStyle = '#E0453A'; x.beginPath(); x.moveTo(-s * .2, s * .2); x.lineTo(-s * .38, s * .52); x.lineTo(-s * .16, s * .44); x.fill(); x.beginPath(); x.moveTo(s * .2, s * .2); x.lineTo(s * .38, s * .52); x.lineTo(s * .16, s * .44); x.fill();
+  const g = x.createLinearGradient(-s * .22, 0, s * .22, 0); g.addColorStop(0, '#CFD8DC'); g.addColorStop(.45, '#FFFFFF'); g.addColorStop(1, '#B0BEC5');
+  x.fillStyle = g; x.beginPath(); x.moveTo(0, -s * .58); x.quadraticCurveTo(s * .28, -s * .2, s * .2, s * .46); x.lineTo(-s * .2, s * .46); x.quadraticCurveTo(-s * .28, -s * .2, 0, -s * .58); x.fill();
+  x.fillStyle = '#E0453A'; x.beginPath(); x.moveTo(0, -s * .58); x.quadraticCurveTo(s * .16, -s * .42, s * .2, -s * .3); x.lineTo(-s * .2, -s * .3); x.quadraticCurveTo(-s * .16, -s * .42, 0, -s * .58); x.fill();
+  x.fillStyle = '#90CAF9'; x.beginPath(); x.arc(0, -s * .08, s * .14, 0, 7); x.fill(); x.strokeStyle = '#78909C'; x.lineWidth = s * .04; x.stroke();
+  x.fillStyle = '#1F2A44'; x.beginPath(); x.arc(0, -s * .06, s * .09, 0, 7); x.fill(); x.fillStyle = '#FFF'; x.beginPath(); x.arc(s * .03, -s * .08, s * .025, 0, 7); x.fill(); x.fillStyle = '#F59E0B'; x.beginPath(); x.moveTo(s * .06, -s * .05); x.lineTo(s * .12, -s * .03); x.lineTo(s * .06, -s * .01); x.fill();
+  x.restore();
+}
+function g8Sternenreise(stage) {
+  const { c, x, W, H } = grCanvas(stage, 1.5), parts = grParts(), B = g8S(), S0 = Math.max(46, Math.min(62, H * .08)), TANK = 100;
+  const erde = G8_PLANETEN.find(p => p.id === 'erde'), L = { x: erde.x + 160, y: erde.y - 40, vx: 0, vy: 0, a: -Math.PI / 2 };
+  let cam = { x: 0, y: 0 }, tank = TANK, ziel = null, paused = true, over = false, neu = 0, besucht = 0, sterne = 0, tAll = 0, hinweis = 6, schub = false, wack = 0;
+  const keys = { l: 0, r: 0, u: 0, d: 0 }, station = { x: erde.x + 150, y: erde.y - 150 };
+  const himmel = [1, .5, .25].map((f, k) => Array.from({ length: 70 - k * 15 }, () => [Math.random() * W, Math.random() * H, (k === 0 ? 1.6 : k === 1 ? 1.1 : .7) * (.6 + Math.random() * .6), f]));
+  const sammel = Array.from({ length: 70 }, () => ({ x: 400 + Math.random() * (G8_WW - 600), y: 300 + Math.random() * (G8_WH - 600), got: false, p: Math.random() * 6 }));
+  const mars = G8_PLANETEN.find(p => p.id === 'mars'), jup = G8_PLANETEN.find(p => p.id === 'jupiter');
+  const brocken = Array.from({ length: 70 }, () => ({ x: mars.x + 250 + Math.random() * (jup.x - mars.x - 500), y: 250 + Math.random() * (G8_WH - 500), r: 10 + Math.random() * 22, rot: Math.random() * 6, vr: (Math.random() - .5) * .8, form: Array.from({ length: 7 }, () => .75 + Math.random() * .35) }));
+  sammel.forEach(s => { G8_PLANETEN.forEach(P => { const d = Math.hypot(s.x - P.x, s.y - P.y); if (d < P.r + 60) { s.y -= P.r + 80; } }); });
+  const [neb, nx] = grOff(W * 2, H * 2); (() => { [['rgba(120,60,200,.18)', .3, .3], ['rgba(40,140,220,.16)', .8, .6], ['rgba(220,60,140,.12)', .5, .9]].forEach(([col, fx, fy]) => { const g = nx.createRadialGradient(W * 2 * fx, H * 2 * fy, 10, W * 2 * fx, H * 2 * fy, H * .9); g.addColorStop(0, col); g.addColorStop(1, 'rgba(0,0,0,0)'); nx.fillStyle = g; nx.fillRect(0, 0, W * 2, H * 2); }); })();
+  const nach = e => { const r = c.getBoundingClientRect(); ziel = [e.clientX - r.left + cam.x, e.clientY - r.top + cam.y]; };
+  c.addEventListener('pointerdown', e => { e.preventDefault(); if (!paused) nach(e); }); c.addEventListener('pointermove', e => { if (ziel && !paused) nach(e); });
+  const los = () => { ziel = null; }; c.addEventListener('pointerup', los); c.addEventListener('pointercancel', los);
+  FUN.cleanup = grKeys({ ArrowLeft: d => keys.l = d ? 1 : 0, ArrowRight: d => keys.r = d ? 1 : 0, ArrowUp: d => keys.u = d ? 1 : 0, ArrowDown: d => keys.d = d ? 1 : 0 });
+  const ov = document.createElement('div'); ov.className = 'ts-ov'; stage.appendChild(ov);
+  const bild = P => { const cv = document.createElement('canvas'), d = Math.min(2, devicePixelRatio || 1); cv.width = 120 * d; cv.height = 84 * d; cv.className = 'ts-bild'; const k = cv.getContext('2d'); k.scale(d, d); g8Planet(k, P, 60, 42, P.ring ? 22 : 30, 0); return cv; };
+  function buch(start) {
+    ov.innerHTML = `<div class="ts-panel g8-panel"><h2>🚀 Sternenreise</h2><p>${start ? 'Flieg mit Lumi durch unser Sonnensystem. Tippe und halte, wohin die Rakete fliegen soll. Neuen Treibstoff gibt es an der Raumstation bei der Erde.' : ''}</p>
+      <h3>🪐 Mein Planetenbuch: ${Object.keys(B.found).length} von ${G8_PLANETEN.length}</h3><div class="ts-buch"></div>${start ? '<button class="btn" data-g8="los">Abheben!</button>' : ''}</div>`;
+    const b = ov.querySelector('.ts-buch'); G8_PLANETEN.forEach(P => { const d = document.createElement('div'), hat = !!B.found[P.id]; d.className = 'ts-k g8-k' + (hat ? '' : ' zu'); d.appendChild(bild(P)); d.insertAdjacentHTML('beforeend', `<b>${hat ? esc(P.de) : '???'}</b><small>${hat ? esc(P.en + ' · ' + P.es) : ''}</small>`); b.appendChild(d); });
+    ov.style.display = 'flex';
+  }
+  function karte(P) {
+    paused = true; ziel = null;
+    ov.innerHTML = `<div class="ts-panel ts-neu g8-panel"><p class="ts-tag">Neu entdeckt!</p><div class="ts-bw g8-bw"></div><h2>${esc(P.de)}</h2><p class="ts-es">🇬🇧 ${esc(P.en)} · 🇪🇸 ${esc(P.es)}</p><p>${esc(P.f)}</p><button class="btn" data-g8="weiter">Weiterfliegen</button></div>`;
+    ov.querySelector('.g8-bw').appendChild(bild(P)); ov.style.display = 'flex'; Sound.win();
+  }
+  ov.addEventListener('click', e => { const b = e.target.closest('[data-g8]'); if (!b) return; ov.style.display = 'none'; ov.innerHTML = ''; paused = false; Sound.tap(); });
+  buch(true);
+  function ende() { over = true; paused = true; FUN.score = neu * 20 + besucht * 5 + sterne * 2; FUN.note = `${besucht} Himmelskörper besucht, ${neu} neu im Planetenbuch, ${sterne} Sterne`; save(); FUN.timeouts.push(setTimeout(() => funEnd(), 1200)); }
+  funLoop((dt, now) => {
+    dt = Math.max(0, dt || 0); tAll += dt;
+    if (!paused && !over) {
+      let ax = 0, ay = 0;
+      if (ziel) { const dx = ziel[0] - L.x, dy = ziel[1] - L.y, d = Math.hypot(dx, dy); if (d > 14) { ax = dx / d; ay = dy / d; } }
+      ax += keys.r - keys.l; ay += keys.d - keys.u; const m = Math.hypot(ax, ay); if (m > 1) { ax /= m; ay /= m; }
+      schub = (ax || ay) && tank > 0; if (schub) { L.vx += ax * 520 * dt; L.vy += ay * 520 * dt; L.a = Math.atan2(L.vy, L.vx); }
+      const sp = Math.hypot(L.vx, L.vy), MX = 420; if (sp > MX) { L.vx *= MX / sp; L.vy *= MX / sp; }
+      L.vx *= Math.pow(.6, dt); L.vy *= Math.pow(.6, dt); L.x = Math.max(40, Math.min(G8_WW - 40, L.x + L.vx * dt)); L.y = Math.max(40, Math.min(G8_WH - 40, L.y + L.vy * dt));
+      for (const P of G8_PLANETEN) { const d = Math.hypot(L.x - P.x, L.y - P.y), min = P.r + S0 * .45; if (d < min) { const nx2 = (L.x - P.x) / d, ny2 = (L.y - P.y) / d; L.x = P.x + nx2 * min; L.y = P.y + ny2 * min; const vn = L.vx * nx2 + L.vy * ny2; if (vn < 0) { L.vx -= vn * nx2 * 1.6; L.vy -= vn * ny2 * 1.6; } } }
+      tank -= dt * (schub ? 3.2 : .5);
+      if (Math.hypot(L.x - station.x, L.y - station.y) < 150) tank = Math.min(TANK, tank + 40 * dt);
+      if (tank <= 0) { tank = 0; ende(); }
+      if (schub && Math.random() < .7) parts.add(1, () => ({ x: L.x - Math.cos(L.a) * S0 * .5, y: L.y - Math.sin(L.a) * S0 * .5, vx: -Math.cos(L.a) * 120 + (Math.random() - .5) * 40, vy: -Math.sin(L.a) * 120 + (Math.random() - .5) * 40, life: .5, max: .5, r: 2 + Math.random() * 2, c: '#FFB74D', glow: true }));
+      for (const P of G8_PLANETEN) if (!P._besucht && Math.hypot(L.x - P.x, L.y - P.y) < P.r + 140) { P._besucht = true; besucht++; if (!B.found[P.id]) { B.found[P.id] = 1; neu++; save(); karte(P); break; } }
+      for (const s of sammel) if (!s.got && Math.hypot(s.x - L.x, s.y - L.y) < 40) { s.got = true; sterne++; Sound.quick(); parts.add(10, i => ({ x: s.x, y: s.y, vx: Math.cos(i * .6) * 90, vy: Math.sin(i * .6) * 90, life: .5, max: .5, r: 2.5, c: '#FFE066', glow: true })); }
+      for (const b of brocken) if (Math.hypot(b.x - L.x, b.y - L.y) < b.r + S0 * .3) { const d = Math.hypot(L.x - b.x, L.y - b.y) || 1; L.vx = (L.x - b.x) / d * 220; L.vy = (L.y - b.y) / d * 220; tank = Math.max(0, tank - 4); wack = .35; Sound.bad(); }
+      hinweis = Math.max(0, hinweis - dt);
+      funHud(`⛽ ${Math.ceil(tank)} % · 🪐 ${Object.keys(B.found).length}/${G8_PLANETEN.length} · ⭐ ${sterne}`);
+    }
+    brocken.forEach(b => { b.rot += b.vr * dt; }); parts.step(dt); wack = Math.max(0, wack - dt);
+    cam.x = grLerp(cam.x, Math.max(0, Math.min(G8_WW - W, L.x - W / 2)), Math.min(1, dt * 4)); cam.y = grLerp(cam.y, Math.max(0, Math.min(G8_WH - H, L.y - H / 2)), Math.min(1, dt * 4));
+    const sx = wack ? (Math.random() - .5) * 8 : 0;
+    const bg = x.createLinearGradient(0, 0, W, H); bg.addColorStop(0, '#070B24'); bg.addColorStop(1, '#141038'); x.fillStyle = bg; x.fillRect(0, 0, W, H);
+    const no = (v, m) => ((v % m) + m) % m; x.drawImage(neb, -no(cam.x * .1, W), -no(cam.y * .1, H));
+    himmel.forEach(lay => lay.forEach(([hx, hy, r, f], k) => { x.globalAlpha = .55 + .45 * Math.sin(tAll * 2 + k); x.fillStyle = '#FFF'; x.beginPath(); x.arc(no(hx - cam.x * f, W), no(hy - cam.y * f, H), r, 0, 7); x.fill(); })); x.globalAlpha = 1;
+    x.save(); x.translate(-cam.x + sx, -cam.y);
+    x.strokeStyle = 'rgba(255,255,255,.06)'; x.lineWidth = 2; const sonne = G8_PLANETEN[0];
+    G8_PLANETEN.slice(1).forEach(P => { if (P.id === 'mond') return; x.beginPath(); x.arc(sonne.x, sonne.y, Math.hypot(P.x - sonne.x, P.y - sonne.y), -1.2, 1.2); x.stroke(); });
+    G8_PLANETEN.forEach(P => { if (P.x + P.r * 2.3 < cam.x || P.x - P.r * 2.3 > cam.x + W || P.y + P.r * 2.3 < cam.y || P.y - P.r * 2.3 > cam.y + H) return; g8Planet(x, P, P.x, P.y, P.r, tAll);
+      if (!B.found[P.id] && !paused) { x.fillStyle = 'rgba(255,255,255,.85)'; x.font = '800 18px system-ui'; x.textAlign = 'center'; x.fillText('?', P.x, P.y - P.r - 14); } });
+    x.save(); x.translate(station.x, station.y); x.rotate(tAll * .3); x.fillStyle = '#B0BEC5'; x.fillRect(-36, -5, 72, 10); x.fillStyle = '#42A5F5'; x.fillRect(-56, -14, 20, 28); x.fillRect(36, -14, 20, 28); x.fillStyle = '#ECEFF1'; x.beginPath(); x.arc(0, 0, 13, 0, 7); x.fill(); x.restore();
+    x.fillStyle = 'rgba(160,230,255,.08)'; x.beginPath(); x.arc(station.x, station.y, 150, 0, 7); x.fill();
+    x.fillStyle = '#90CAF9'; x.font = '700 12px system-ui'; x.textAlign = 'center'; x.fillText('⛽ Raumstation', station.x, station.y + 36);
+    for (const s of sammel) { if (s.got || s.x < cam.x - 30 || s.x > cam.x + W + 30 || s.y < cam.y - 30 || s.y > cam.y + H + 30) continue; const b = 1 + Math.sin(tAll * 3 + s.p) * .15;
+      const gl = x.createRadialGradient(s.x, s.y, 1, s.x, s.y, 18); gl.addColorStop(0, 'rgba(255,230,100,.8)'); gl.addColorStop(1, 'rgba(255,230,100,0)'); x.fillStyle = gl; x.beginPath(); x.arc(s.x, s.y, 18, 0, 7); x.fill();
+      x.fillStyle = '#FFD43B'; x.beginPath(); for (let k = 0; k < 10; k++) { const r = (k % 2 ? 4 : 10) * b, a = k * Math.PI / 5 - Math.PI / 2 + tAll; x.lineTo(s.x + Math.cos(a) * r, s.y + Math.sin(a) * r); } x.fill(); }
+    for (const b of brocken) { if (b.x < cam.x - 50 || b.x > cam.x + W + 50 || b.y < cam.y - 50 || b.y > cam.y + H + 50) continue; x.save(); x.translate(b.x, b.y); x.rotate(b.rot);
+      const g = x.createRadialGradient(-b.r * .3, -b.r * .3, 1, 0, 0, b.r); g.addColorStop(0, '#A1887F'); g.addColorStop(1, '#4E342E'); x.fillStyle = g; x.beginPath(); b.form.forEach((f, k) => { const a = k / b.form.length * Math.PI * 2; x.lineTo(Math.cos(a) * b.r * f, Math.sin(a) * b.r * f); }); x.fill(); x.restore(); }
+    parts.draw(x, 0, 0); g8Rakete(x, L.x, L.y, L.a, S0, schub && !paused, tAll);
+    x.restore();
+    const bw = Math.min(180, W * .35); x.fillStyle = 'rgba(255,255,255,.18)'; x.fillRect(12, 12, bw, 12); x.fillStyle = tank / TANK < .25 ? '#FF6B6B' : '#FFD54F'; x.fillRect(12, 12, bw * tank / TANK, 12);
+    x.fillStyle = '#FFF'; x.font = '700 11px system-ui'; x.textAlign = 'left'; x.fillText('Treibstoff', 16, 22);
+    if (!paused && tank / TANK < .25 && Math.floor(tAll * 2) % 2 === 0) { x.textAlign = 'center'; x.font = `800 ${Math.round(Math.min(20, W / 22))}px ui-rounded, system-ui`; x.fillStyle = '#FFE3E3'; x.fillText('Wenig Treibstoff! Zurück zur Raumstation bei der Erde', W / 2, 52); }
+    else if (!paused && hinweis > 0) { x.textAlign = 'center'; x.font = `700 ${Math.round(Math.min(18, W / 24))}px ui-rounded, system-ui`; x.fillStyle = 'rgba(255,255,255,.9)'; x.fillText('Tippe und halte, wohin die Rakete fliegen soll', W / 2, 52); }
+  });
+  funHud('⛽ 100 %');
+  FUN.dbg = { L, get tank() { return tank; }, set tank(v) { tank = v; }, get paused() { return paused; }, weiter: () => { ov.style.display = 'none'; ov.innerHTML = ''; paused = false; }, get sterne() { return sterne; } };
+}
+
+
+function g8Polarlicht(stage) {
+  const { c, x, W, H } = grCanvas(stage, 1.5), parts = grParts(), S = Math.max(40, Math.min(56, H * .085));
+  const boden = wx => wx * .32 + Math.sin(wx / 260) * 70 + Math.sin(wx / 97 + 1.3) * 22 + Math.sin(wx / 610) * 110;
+  const steig = wx => (boden(wx + 2) - boden(wx - 2)) / 4;
+  const P = { x: 200, y: boden(200), v: 260, vy: 0, vx: 0, luft: false, rot: 0, dreh: 0, halten: false, sturz: 0 };
+  let started = false, over = false, leben = 3, fische = 0, saltos = 0, punkte = 0, tAll = 0, msg = '', msgT = 0, neben = [];
+  const fischListe = [], felsen = [];
+  for (let wx = 700; wx < 200000; wx += 260 + Math.random() * 380) { if (wx > 1500 && Math.random() < .3) felsen.push({ x: wx }); else fischListe.push({ x: wx, h: 50 + Math.random() * 110, got: false }); }
+  const sterne = Array.from({ length: 80 }, () => [Math.random() * W, Math.random() * H * .6, Math.random() * 1.5 + .4, Math.random() * 6]);
+  const [berg, bx] = grOff(W * 2, H); (() => { [['#2A3A66', .55, .32], ['#1E2B4F', .7, .22]].forEach(([col, base, amp], k) => { bx.fillStyle = col; bx.beginPath(); bx.moveTo(0, H); for (let xx = 0; xx <= W * 2; xx += 30) bx.lineTo(xx, H * base - Math.abs(Math.sin(xx / (180 + k * 70))) * H * amp - Math.sin(xx / 53) * 8); bx.lineTo(W * 2, H); bx.fill();
+    bx.fillStyle = 'rgba(255,255,255,.18)'; for (let xx = 0; xx < W * 2; xx += 30) { const yy = H * base - Math.abs(Math.sin(xx / (180 + k * 70))) * H * amp; if (Math.abs(Math.sin(xx / (180 + k * 70))) > .85) { bx.beginPath(); bx.arc(xx, yy + 6, 6, 0, 7); bx.fill(); } } }); })();
+  const druck = e => { if (e) e.preventDefault(); if (over) return; if (!started) { started = true; return; } P.halten = true; if (!P.luft && !P.sturz) { const a = Math.atan(steig(P.x)); P.vx = Math.cos(a) * P.v; P.vy = Math.sin(a) * P.v - Math.max(560, H * 1.05); P.luft = true; P.rot = a; Sound.tap(); } };
+  const lass = () => { P.halten = false; };
+  c.addEventListener('pointerdown', druck); c.addEventListener('pointerup', lass); c.addEventListener('pointercancel', lass);
+  FUN.cleanup = grKeys({ ' ': d => d ? druck() : lass(), ArrowUp: d => d ? druck() : lass() });
+  const zeige = (t, s = 1.4) => { msg = t; msgT = s; };
+  funLoop((dt, now) => {
+    dt = Math.max(0, dt || 0); tAll += dt;
+    if (started && !over) {
+      if (P.sturz > 0) { P.sturz -= dt; P.x += P.v * .3 * dt; P.y = boden(P.x); P.rot += dt * 8; if (P.sturz <= 0) { P.rot = Math.atan(steig(P.x)); P.v = 220; } }
+      else if (!P.luft) {
+        const a = Math.atan(steig(P.x)); P.v = Math.max(150, Math.min(820, P.v + (Math.sin(a) * 900 - 40 - P.v * .08) * dt)); P.rot = a;
+        const nx = P.x + Math.cos(a) * P.v * dt, ballist = P.y + Math.sin(a) * P.v * dt + 900 * dt * dt, ny = boden(nx);
+        if (ny > ballist + 3 && P.v > 380) { P.luft = true; P.vx = Math.cos(a) * P.v; P.vy = Math.sin(a) * P.v; } else { P.x = nx; P.y = ny; }
+        if (Math.random() < .5) parts.add(1, () => ({ x: P.x - S * .3, y: P.y, vx: -P.v * .2, vy: -40 - Math.random() * 60, g: 300, life: .5, max: .5, r: 2 + Math.random() * 2, c: 'rgba(255,255,255,.9)' }));
+      } else {
+        P.vy += 1500 * dt; P.x += P.vx * dt; P.y += P.vy * dt;
+        if (P.halten) { P.rot -= dt * 6.2; P.dreh += dt * 6.2; }
+        else { const ziel = Math.atan(steig(P.x)), d = ((ziel - P.rot) % (2 * Math.PI) + 3 * Math.PI) % (2 * Math.PI) - Math.PI; P.rot += d * Math.min(1, dt * 3.5); }   /* ohne Drücken richtet sich der Schlitten langsam aus */
+        if (P.y >= boden(P.x)) {
+          const a = Math.atan(steig(P.x)), diff = Math.abs(((P.rot - a) % (2 * Math.PI) + 3 * Math.PI) % (2 * Math.PI) - Math.PI);
+          P.y = boden(P.x); P.luft = false;
+          if (diff < 1) {
+            const n = Math.floor((P.dreh + .8) / (2 * Math.PI));
+            if (n > 0) { saltos += n; punkte += n * 20; zeige(n === 1 ? 'Salto! +20' : `${n} Saltos! +${n * 20}`); Sound.win(); parts.add(20, i => ({ x: P.x, y: P.y - S * .5, vx: Math.cos(i * .32) * 160, vy: Math.sin(i * .32) * 160, life: .7, max: .7, r: 3, c: i % 2 ? '#7CFFB2' : '#C792FF', glow: true })); }
+            P.v = Math.max(P.v, Math.hypot(P.vx, P.vy) * .9); P.rot = a;
+          } else { leben--; P.sturz = 1.1; P.v = 120; Sound.bad(); zeige('Hoppla, Bauchlandung!'); parts.add(24, () => ({ x: P.x, y: P.y, vx: (Math.random() - .5) * 300, vy: -Math.random() * 260, g: 600, life: .9, max: .9, r: 3, c: '#FFF' })); }
+          P.dreh = 0;
+          if (leben <= 0) { over = true; FUN.score = Math.floor(P.x / 100) + fische * 5 + punkte; FUN.note = `${Math.floor(P.x / 100)} m weit, ${fische} Fische, ${saltos} Saltos`; FUN.timeouts.push(setTimeout(() => funEnd(), 1300)); }
+        }
+      }
+      for (const f of fischListe) { if (f.got || Math.abs(f.x - P.x) > 40) continue; const fy = boden(f.x) - f.h; if (Math.abs(fy - (P.y - S * .5)) < S * .8) { f.got = true; fische++; Sound.quick(); parts.add(10, i => ({ x: f.x, y: fy, vx: Math.cos(i * .6) * 100, vy: Math.sin(i * .6) * 100, life: .5, max: .5, r: 2.5, c: '#9BE7FF', glow: true })); } }
+      for (const fe of felsen) { if (fe.hit || P.sturz > 0 || Math.abs(fe.x - P.x) > S * .45) continue; if (!P.luft || P.y > boden(fe.x) - S * .5) { fe.hit = true; leben--; P.sturz = 1.1; P.v = 120; Sound.bad(); zeige('Autsch, ein Stein!'); if (leben <= 0) { over = true; FUN.score = Math.floor(P.x / 100) + fische * 5 + punkte; FUN.note = `${Math.floor(P.x / 100)} m weit, ${fische} Fische, ${saltos} Saltos`; FUN.timeouts.push(setTimeout(() => funEnd(), 1300)); } } }
+      funHud(`🐟 ${fische} · 🤸 ${saltos} · ${'❤️'.repeat(Math.max(0, leben))} · ${Math.floor(P.x / 100)} m`);
+    }
+    parts.step(dt); msgT = Math.max(0, msgT - dt);
+    const camX = P.x - W * .32, camY = P.y - H * .55;
+
+    const sky = x.createLinearGradient(0, 0, 0, H); sky.addColorStop(0, '#050A1E'); sky.addColorStop(.6, '#12204A'); sky.addColorStop(1, '#2B3F73'); x.fillStyle = sky; x.fillRect(0, 0, W, H);
+    sterne.forEach(([sx, sy, r, p]) => { x.globalAlpha = .4 + .6 * Math.abs(Math.sin(tAll + p)); x.fillStyle = '#FFF'; x.beginPath(); x.arc(sx, sy, r, 0, 7); x.fill(); }); x.globalAlpha = 1;
+    x.save(); x.globalCompositeOperation = 'lighter';
+    [['rgba(80,255,160,', 0, .16], ['rgba(170,110,255,', 2, .12], ['rgba(60,220,255,', 4, .1]].forEach(([col, ph, al]) => {
+      for (let k = 0; k < 3; k++) { x.beginPath(); for (let xx = -20; xx <= W + 20; xx += 20) { const yy = H * (.18 + k * .05) + Math.sin(xx / 140 + tAll * .6 + ph + k) * H * .06 + Math.sin(xx / 47 + tAll * 1.3) * 6; xx === -20 ? x.moveTo(xx, yy) : x.lineTo(xx, yy); }
+        const g = x.createLinearGradient(0, H * .05, 0, H * .45); g.addColorStop(0, col + '0)'); g.addColorStop(.5, col + al + ')'); g.addColorStop(1, col + '0)'); x.strokeStyle = g; x.lineWidth = H * .12; x.stroke(); } });
+    x.restore();
+    x.fillStyle = '#F1F5FF'; x.beginPath(); x.arc(W * .82, H * .14, H * .045, 0, 7); x.fill(); x.fillStyle = '#12204A'; x.beginPath(); x.arc(W * .82 + H * .02, H * .13, H * .04, 0, 7); x.fill();
+    const bo = ((camX * .15) % berg.width + berg.width) % berg.width; x.drawImage(berg, -bo, 0); x.drawImage(berg, berg.width - bo, 0);
+
+    x.save(); x.translate(-camX, -camY);
+    const g = x.createLinearGradient(0, camY + H * .3, 0, camY + H); g.addColorStop(0, '#F4F8FF'); g.addColorStop(1, '#B8C9EE'); x.fillStyle = g;
+    x.beginPath(); x.moveTo(camX - 20, camY + H + 50); for (let wx = camX - 20; wx <= camX + W + 20; wx += 12) x.lineTo(wx, boden(wx)); x.lineTo(camX + W + 20, camY + H + 50); x.fill();
+    x.strokeStyle = 'rgba(120,150,210,.45)'; x.lineWidth = 3; x.beginPath(); for (let wx = camX - 20; wx <= camX + W + 20; wx += 12) wx === camX - 20 ? x.moveTo(wx, boden(wx) + 2) : x.lineTo(wx, boden(wx) + 2); x.stroke();
+    for (let wx = Math.floor(camX / 170) * 170; wx < camX + W + 100; wx += 170) { const ty = boden(wx) + 4, h = 46 + (wx * 7 % 30); x.fillStyle = '#1B2A4A'; x.beginPath(); x.moveTo(wx - h * .3, ty); x.lineTo(wx, ty - h); x.lineTo(wx + h * .3, ty); x.fill(); x.fillStyle = 'rgba(255,255,255,.7)'; x.beginPath(); x.moveTo(wx - h * .12, ty - h * .6); x.lineTo(wx, ty - h); x.lineTo(wx + h * .12, ty - h * .6); x.fill(); }
+    for (const fe of felsen) { if (fe.x < camX - 40 || fe.x > camX + W + 40) continue; const fy = boden(fe.x); const gr = x.createLinearGradient(0, fy - S * .5, 0, fy); gr.addColorStop(0, '#8C96A8'); gr.addColorStop(1, '#4B5468'); x.fillStyle = gr; x.beginPath(); x.moveTo(fe.x - S * .45, fy + 3); x.lineTo(fe.x - S * .3, fy - S * .4); x.lineTo(fe.x + S * .1, fy - S * .55); x.lineTo(fe.x + S * .45, fy + 3); x.fill(); x.fillStyle = 'rgba(255,255,255,.8)'; x.fillRect(fe.x - S * .25, fy - S * .45, S * .3, 4); }
+    for (const f of fischListe) { if (f.got || f.x < camX - 40 || f.x > camX + W + 40) continue; const fy = boden(f.x) - f.h + Math.sin(tAll * 3 + f.x) * 4;
+      const gl = x.createRadialGradient(f.x, fy, 1, f.x, fy, 22); gl.addColorStop(0, 'rgba(160,230,255,.7)'); gl.addColorStop(1, 'rgba(160,230,255,0)'); x.fillStyle = gl; x.beginPath(); x.arc(f.x, fy, 22, 0, 7); x.fill();
+      x.fillStyle = '#4FB3E8'; x.beginPath(); x.ellipse(f.x, fy, 12, 7, 0, 0, 7); x.fill(); x.beginPath(); x.moveTo(f.x - 9, fy); x.lineTo(f.x - 18, fy - 7); x.lineTo(f.x - 18, fy + 7); x.fill(); }
+
+    x.save(); x.translate(P.x, P.y); x.rotate(P.rot);
+    x.fillStyle = 'rgba(0,0,0,.18)'; if (!P.luft) { x.beginPath(); x.ellipse(0, 2, S * .55, S * .08, 0, 0, 7); x.fill(); }
+    x.strokeStyle = '#8B5A2B'; x.lineWidth = 4; x.lineCap = 'round'; x.beginPath(); x.moveTo(-S * .5, -2); x.lineTo(S * .45, -2); x.quadraticCurveTo(S * .62, -2, S * .6, -S * .16); x.stroke();
+    x.fillStyle = '#C0392B'; x.fillRect(-S * .45, -S * .16, S * .82, S * .1); x.strokeStyle = '#6D4422'; x.lineWidth = 3; [-S * .3, S * .2].forEach(v => { x.beginPath(); x.moveTo(v, -2); x.lineTo(v, -S * .08); x.stroke(); });
+    grLumi(x, -S * .02, -S * .14, S * .9, { phase: tAll * 3, flap: P.luft ? Math.sin(tAll * 12) * .8 - .3 : .3 });
+    x.restore();
+    parts.draw(x, 0, 0);
+    x.restore();
+    if (msgT > 0) { x.globalAlpha = Math.min(1, msgT); x.fillStyle = '#FFF'; x.strokeStyle = 'rgba(0,0,0,.35)'; x.lineWidth = 4; x.textAlign = 'center'; x.font = `800 ${Math.round(Math.min(32, W / 14))}px ui-rounded, system-ui`; x.strokeText(msg, W / 2, H * .3); x.fillText(msg, W / 2, H * .3); x.globalAlpha = 1; }
+    if (!started) {
+      x.fillStyle = 'rgba(5,10,30,.6)'; x.fillRect(0, H * .16, W, H * .32); x.fillStyle = '#FFFFFF'; x.textAlign = 'center';
+      x.font = `800 ${Math.round(Math.min(30, W / 15))}px ui-rounded, system-ui, sans-serif`; x.fillText('Polarlicht-Ritt', W / 2, H * .25);
+      x.font = `600 ${Math.round(Math.min(17, W / 27))}px ui-rounded, system-ui, sans-serif`;
+      x.fillText('Tippen = springen. In der Luft gedrückt halten = Salto!', W / 2, H * .32); x.fillText('Lande mit den Kufen auf dem Schnee, sonst gibt es eine Bauchlandung.', W / 2, H * .37); x.fillText('Tippe zum Start', W / 2, H * .43);
+    }
+  });
+  funHud('🐟 0 · ❤️❤️❤️');
+  FUN.dbg = { P, get leben() { return leben; }, get saltos() { return saltos; }, druck, lass, start: () => { started = true; }, boden };
+}
+if (typeof FUN_GAMES !== 'undefined') Object.assign(FUN_GAMES, {
+  sternenreise: { c: 'abenteuer', t: 'Sternenreise', d: 'Mit der Rakete durchs Sonnensystem, 10 Himmelskörper fürs Planetenbuch', i: '🚀' },
+  polarlicht: { c: 'abenteuer', t: 'Polarlicht-Ritt', d: 'Schlittenfahrt unterm Nordlicht, mit Sprüngen und Saltos', i: '🛷' }
+});
+if (typeof FUN_IMPL !== 'undefined') Object.assign(FUN_IMPL, { sternenreise: g8Sternenreise, polarlicht: g8Polarlicht });
 
 /*@@src lumi_live.js@@*/
 
