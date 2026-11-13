@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-P0OYeFm2a+zv3OUlcXu6yZm8enSH0YVSoA1sl9ptNtk=' 'sha256-xbiDh7YZxpnnOBz+cKDRmP/ygHItQHPV8DWwqqSD0J4=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-M7Pgxvp+N0gKjBJgYhyV75zxcka3a9bgjScEJi0fyh4=' 'sha256-bOlVp921JVJHpaoCQPowbplt2Zhex4/fd6Dj8LZrkrY=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -6702,6 +6702,7 @@ button.mau-k:disabled { cursor: default; }
 @keyframes l8weg { to { opacity: 0; visibility: hidden; } }
 .l8-nochmal { display: none; position: absolute; font: inherit; cursor: pointer; padding: 6px 12px; border-radius: 12px; border: 2px solid var(--line-deep); background: var(--surface-2); color: inherit; }
 .l8-blitz.weg .l8-nochmal { display: inline-block; }
+.l8-blitz.weg > span { visibility: hidden; }
 .stage:has(.l8-blitz:not(.weg)) .answers { visibility: hidden; }
 .lf-how { text-align: left; display: grid; gap: 4px; }
 .lf-texte { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px; margin: 12px 0; }
@@ -6722,6 +6723,66 @@ button.mau-k:disabled { cursor: default; }
 .lf-graph .ax { stroke: var(--line-deep); stroke-width: 1; } .lf-graph .ln { fill: none; stroke: #2F6FB3; stroke-width: 2; } .lf-graph .pt { fill: #2F6FB3; stroke: var(--surface, #fff); stroke-width: 2; }
 .lf-graph .lb { font-size: 12px; font-weight: 700; fill: currentColor; }
 .lf-liste { margin: 6px 0 0; padding-left: 18px; }
+
+
+.l9-feld { width: min(100%, 300px); height: auto; display: block; }
+.l9-feld.gross { width: min(100%, 300px); }
+.l9-z { fill: var(--surface, #fff); stroke: #8FA9B8; stroke-width: 1.2; }
+.l9-r { fill: #D64545; } .l9-b { fill: #2F6FB3; }
+.l9-bb { min-height: 120px; }
+.l9-hoer { display: grid; gap: 10px; justify-items: center; text-align: center; }
+.l9-hoer p { margin: 0; }
+.l9-ls p { margin: 8px 0 0; } .l9-ls strong { display: inline-block; margin-top: 2px; }
+.l9-abs { display: inline-block; font-size: 12px; font-weight: 700; padding: 1px 7px; margin-right: 6px; border-radius: 6px; background: var(--surface-2, #EEF3F6); border: 1px solid var(--line, #D9E2E5); }
+.l9-gap { display: inline-block; padding: 1px 8px; border-radius: 6px; border: 2px dashed #2F6FB3; font-style: normal; font-weight: 700; color: #2F6FB3; }
+.l9-titel { font-size: clamp(22px, 4vw, 30px); font-weight: 800; text-align: center; padding: 14px; }
+.l9-brief { text-align: left; line-height: 1.6; }
+.l9-tab { border-collapse: collapse; margin: 0 auto; font-size: clamp(16px, 3vw, 22px); font-variant-numeric: tabular-nums; }
+.l9-tab th, .l9-tab td { border: 2px solid var(--line-deep, #9FB3BF); padding: 6px 12px; text-align: center; }
+.l9-tab th { background: var(--surface-2, #EEF3F6); text-align: left; }
+
+
+.lp-kreuz { border-collapse: collapse; margin: 0 auto; font-size: clamp(18px, 3.4vw, 24px); font-variant-numeric: tabular-nums; font-weight: 700; }
+.lp-kreuz th, .lp-kreuz td { border: 2px solid var(--line-deep); padding: 8px 14px; text-align: center; min-width: 2.6em; }
+.lp-kreuz th { background: var(--surface-2); color: var(--mathe-deep); }
+.lp-kreuz tr:first-child th:first-child { color: var(--ink-soft); }
+.lp-bau { display: grid; gap: 8px; justify-items: center; }
+.lp-bau small { color: var(--ink-soft); font-weight: 600; text-align: center; max-width: 34ch; }
+.lp-bau table { border-collapse: collapse; }
+.lp-bau td { width: 54px; height: 54px; border: 3px solid var(--line-deep); text-align: center; font-size: 26px; font-weight: 800; background: var(--surface-2); color: var(--ink); }
+.lp-wf { width: min(100%, 210px); height: auto; display: block; margin: 0 auto; }
+.lp-wf polygon { stroke: var(--ink); stroke-width: 2; stroke-linejoin: round; }
+.lp-wf .o { fill: #FFFFFF; } .lp-wf .v { fill: #EEF3F6; } .lp-wf .r { fill: #D3DEE5; }
+.lp-wf .z { font: 800 22px var(--f-display); fill: #12324A; text-anchor: middle; }
+.lp-wf .l { font: 700 11px var(--f-body); fill: var(--ink-soft); text-anchor: middle; }
+.lp-wf .l.s { text-anchor: start; }
+.lp-wf { width: min(100%, 230px); }
+.lp-netz { width: min(100%, 300px); height: auto; display: block; margin: 0 auto; }
+.lp-netz rect { fill: var(--mathe-soft); stroke: var(--mathe-deep); stroke-width: 1.6; }
+.lp-band { width: min(100%, 320px); height: auto; display: block; margin: 0 auto; }
+.lp-fig { fill: var(--mathe); stroke: var(--mathe-deep); stroke-width: 1; }
+.lp-fig.b { fill: var(--sach); stroke: var(--sach-deep); }
+.lp-band .l { font: 800 10px var(--f-body); fill: var(--ink); }
+.lp-dia { width: min(100%, 320px); height: auto; display: block; margin: 0 auto; }
+.lp-dia .ax { stroke: var(--ink); stroke-width: 1.5; }
+.lp-dia .gr { stroke: var(--line); stroke-width: 1; }
+.lp-dia .t { font: 700 10px var(--f-body); fill: var(--ink); }
+.lp-dia .s1 { fill: var(--mathe); } .lp-dia .s2 { fill: var(--sach); }
+.lp-baum { width: min(100%, 340px); height: auto; display: block; margin: 0 auto; }
+.lp-baum .ax { stroke: var(--ink-soft); stroke-width: 1.4; }
+.lp-baum .t { font: 700 12px var(--f-body); fill: var(--ink); }
+.lp-baum .pt { fill: var(--ink); }
+.lp-comic { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; max-width: 520px; margin: 0 auto; }
+.lp-comic > div { border: 3px solid var(--ink); border-radius: 10px; padding: 12px 8px; background: var(--surface); font-weight: 600; font-size: clamp(14px, 2.6vw, 17px); line-height: 1.35; min-height: 92px; }
+.lp-comic i { display: block; margin-top: 4px; color: var(--ink-soft); }
+.lp-ged p { margin: 0 0 10px; } .lp-ged p:last-child { margin: 0; }
+.lp-karte { font-family: var(--f-body); border-style: dashed; }
+@media (max-width: 480px) {
+  .colgrid { --cw: min(46px, calc((100vw - 112px) / var(--n))); }
+  .col-c, .col-r { font-size: min(28px, calc(var(--cw) * .66)); }
+  .lp-comic { grid-template-columns: 1fr; }
+  .lp-comic > div { min-height: 0; }
+}
 
 /* ---- style_pa.css ---- */
 
@@ -8981,8 +9042,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '2.78.0';
-  var MAP = {"probe":0,"files":[[8971,"fehler_kern.js"],[9259,null],[9261,"data.js"],[9956,"data_more.js"],[10313,"data_su2.js"],[10540,"data_es.js"],[10882,"data_wissen.js"],[11081,"data_v21.js"],[11764,"data_v24.js"],[12250,"data_v25.js"],[12731,"data_v26.js"],[12830,"data_v29.js"],[13135,"data_v30.js"],[13465,"data_v31.js"],[13771,"data_kunst.js"],[13967,"data_v214.js"],[14070,"data_v216.js"],[14363,"schrift.js"],[14663,"eingabe.js"],[14874,"data_k34m.js"],[15392,"data_k34d.js"],[15746,"data_k34s.js"],[16200,"data_v224.js"],[17073,"data_v225w.js"],[17442,"data_v225k.js"],[17886,"data_herz.js"],[18240,"data_fb226.js"],[18383,"data_tf226.js"],[18590,"data_v227a.js"],[19681,"data_v227b.js"],[20635,"data_h28b.js"],[20675,"data_l28a.js"],[21541,"data_l28b.js"],[22721,"data_schaetz.js"],[23203,"data_party8.js"],[23253,"data_alce.js"],[23913,"data_alce2.js"],[24162,"data_alce3.js"],[24577,"registry.js"],[25091,"app.js"],[26273,"fun.js"],[26853,"fun2.js"],[27169,"atelier.js"],[27543,"kunst225.js"],[27733,"herz.js"],[28097,"reise.js"],[28399,"iglu.js"],[28565,"offline.js"],[28672,"party.js"],[29156,"meine.js"],[29512,"loeffel.js"],[29683,"trend.js"],[30225,"fun228a.js"],[31076,"fun228b.js"],[31737,"kueche.js"],[32776,"stimme.js"],[32831,"klassen.js"],[32980,"freunde_vorab.js"],[33001,"mut.js"],[33423,"schule.js"],[33912,"fussball226.js"],[34234,"schaetzen.js"],[34665,"party8.js"],[35284,"tiere.js"],[35743,"fussball232.js"],[35958,"party8b.js"],[36260,"weg.js"],[36481,"px.js"],[36892,"px_data.js"],[37149,"pxwelt.js"],[37230,"px_abenteuer.js"],[38031,"px_abenteuer2.js"],[38780,"px_ski.js"],[39422,"px_wurf.js"],[39951,"px_insel.js"],[41152,"px_kicker.js"],[42087,"px_eis.js"],[43073,"px_run.js"],[44288,"px_brk.js"],[45250,"px_pol.js"],[46601,"px_frog.js"],[47861,"px_angel.js"],[49176,"px_golf.js"],[50210,"px_tauch.js"],[51475,"px_hockey.js"],[52431,"px_lab.js"],[53766,"px_plopp.js"],[54972,"px_stadion.js"],[56476,"px_training.js"],[56845,"cm.js"],[57335,"cmwelt.js"],[57391,"cm_baeck.js"],[58184,"cm_bahn.js"],[58948,"cm_detek.js"],[59665,"cm_markt.js"],[60378,"ff.js"],[60535,"ff_mathe.js"],[62525,"ff_deutsch.js"],[64113,"ff_sach_a.js"],[66362,"ff_sach_b.js"],[68591,"ff_sprachen.js"],[70999,"zm.js"],[71912,"tt.js"],[72125,"data_tagebuch.js"],[72168,"data_hoerspiel.js"],[72327,"leseecke.js"],[72646,"kt.js"],[72949,"comicbuch.js"],[73227,"alce.js"],[73390,"alce_aufg.js"],[73560,"formen.js"],[74011,"data_formen.js"],[74252,"data_formen2.js"],[74474,"spielzeit.js"],[74619,"data_faktmeinung.js"],[74738,"data_es248.js"],[75002,"data_en249.js"],[75241,"data_wissen249.js"],[75672,"data_kunst249.js"],[75955,"data_fussball250.js"],[76079,"data_werte252.js"],[76332,"data_lesen252.js"],[76393,"data_k34_252.js"],[76479,"art254.js"],[76597,"data_werte255.js"],[76735,"data_lesen255.js"],[76871,"forscher255.js"],[77019,"zufall250.js"],[77065,"stufe259.js"],[77075,"advent.js"],[77338,"wdh.js"],[77436,"denk.js"],[77473,"data_viaje265.js"],[77616,"klassenarbeit.js"],[77749,"quizduell.js"],[77872,"neu267.js"],[78137,"prog.js"],[78242,"lernstand.js"],[78309,"blatt.js"],[78411,"data_es271.js"],[78525,"plus269.js"],[78619,"schach.js"],[78846,"schachtaktik.js"],[79017,"fun270.js"],[79180,"data_neu274.js"],[79389,"plus272.js"],[79443,"spiele274.js"],[79566,"kasten.js"],[79670,"erklaer.js"],[79783,"apa.js"],[79864,"neu276.js"],[80005,"spiele276.js"],[80055,"neu277.js"],[80233,"spiele277.js"],[80488,"lernen278.js"],[80748,"spiele278.js"],[81091,"lumi_live.js"],[81207,"sicher.js"],[81391,"stil.js"],[81445,"freunde.js"],[81582,"start.js"],[81592,null],[81602,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '2.79.0';
+  var MAP = {"probe":0,"files":[[9032,"fehler_kern.js"],[9320,null],[9322,"data.js"],[10017,"data_more.js"],[10374,"data_su2.js"],[10601,"data_es.js"],[10943,"data_wissen.js"],[11142,"data_v21.js"],[11825,"data_v24.js"],[12311,"data_v25.js"],[12792,"data_v26.js"],[12891,"data_v29.js"],[13196,"data_v30.js"],[13526,"data_v31.js"],[13832,"data_kunst.js"],[14028,"data_v214.js"],[14131,"data_v216.js"],[14424,"schrift.js"],[14724,"eingabe.js"],[14935,"data_k34m.js"],[15453,"data_k34d.js"],[15807,"data_k34s.js"],[16261,"data_v224.js"],[17134,"data_v225w.js"],[17503,"data_v225k.js"],[17947,"data_herz.js"],[18301,"data_fb226.js"],[18444,"data_tf226.js"],[18651,"data_v227a.js"],[19742,"data_v227b.js"],[20696,"data_h28b.js"],[20736,"data_l28a.js"],[21602,"data_l28b.js"],[22782,"data_schaetz.js"],[23264,"data_party8.js"],[23314,"data_alce.js"],[23974,"data_alce2.js"],[24223,"data_alce3.js"],[24638,"registry.js"],[25152,"app.js"],[26335,"fun.js"],[26915,"fun2.js"],[27231,"atelier.js"],[27605,"kunst225.js"],[27795,"herz.js"],[28159,"reise.js"],[28461,"iglu.js"],[28627,"offline.js"],[28734,"party.js"],[29218,"meine.js"],[29574,"loeffel.js"],[29745,"trend.js"],[30287,"fun228a.js"],[31138,"fun228b.js"],[31799,"kueche.js"],[32838,"stimme.js"],[32893,"klassen.js"],[33042,"freunde_vorab.js"],[33063,"mut.js"],[33485,"schule.js"],[33974,"fussball226.js"],[34296,"schaetzen.js"],[34727,"party8.js"],[35346,"tiere.js"],[35805,"fussball232.js"],[36020,"party8b.js"],[36322,"weg.js"],[36543,"px.js"],[36954,"px_data.js"],[37211,"pxwelt.js"],[37292,"px_abenteuer.js"],[38093,"px_abenteuer2.js"],[38842,"px_ski.js"],[39484,"px_wurf.js"],[40013,"px_insel.js"],[41214,"px_kicker.js"],[42149,"px_eis.js"],[43135,"px_run.js"],[44350,"px_brk.js"],[45312,"px_pol.js"],[46663,"px_frog.js"],[47923,"px_angel.js"],[49238,"px_golf.js"],[50272,"px_tauch.js"],[51537,"px_hockey.js"],[52493,"px_lab.js"],[53828,"px_plopp.js"],[55034,"px_stadion.js"],[56538,"px_training.js"],[56907,"cm.js"],[57397,"cmwelt.js"],[57453,"cm_baeck.js"],[58246,"cm_bahn.js"],[59010,"cm_detek.js"],[59727,"cm_markt.js"],[60440,"ff.js"],[60597,"ff_mathe.js"],[62587,"ff_deutsch.js"],[64175,"ff_sach_a.js"],[66424,"ff_sach_b.js"],[68653,"ff_sprachen.js"],[71061,"zm.js"],[71974,"tt.js"],[72187,"data_tagebuch.js"],[72230,"data_hoerspiel.js"],[72389,"leseecke.js"],[72708,"kt.js"],[73011,"comicbuch.js"],[73289,"alce.js"],[73452,"alce_aufg.js"],[73622,"formen.js"],[74073,"data_formen.js"],[74314,"data_formen2.js"],[74536,"spielzeit.js"],[74681,"data_faktmeinung.js"],[74800,"data_es248.js"],[75064,"data_en249.js"],[75303,"data_wissen249.js"],[75734,"data_kunst249.js"],[76017,"data_fussball250.js"],[76141,"data_werte252.js"],[76394,"data_lesen252.js"],[76455,"data_k34_252.js"],[76541,"art254.js"],[76659,"data_werte255.js"],[76797,"data_lesen255.js"],[76933,"forscher255.js"],[77081,"zufall250.js"],[77127,"stufe259.js"],[77137,"advent.js"],[77400,"wdh.js"],[77498,"denk.js"],[77535,"data_viaje265.js"],[77678,"klassenarbeit.js"],[77811,"quizduell.js"],[77934,"neu267.js"],[78199,"prog.js"],[78304,"lernstand.js"],[78371,"blatt.js"],[78473,"data_es271.js"],[78587,"plus269.js"],[78681,"schach.js"],[78908,"schachtaktik.js"],[79079,"fun270.js"],[79242,"data_neu274.js"],[79451,"plus272.js"],[79505,"spiele274.js"],[79628,"kasten.js"],[79732,"erklaer.js"],[79845,"apa.js"],[79926,"neu276.js"],[80067,"spiele276.js"],[80117,"neu277.js"],[80295,"spiele277.js"],[80550,"lernen278.js"],[80810,"spiele278.js"],[81153,"lernen279.js"],[81478,"lernen279b.js"],[81873,"lumi_live.js"],[81989,"sicher.js"],[82173,"stil.js"],[82227,"freunde.js"],[82364,"start.js"],[82374,null],[82384,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -14828,7 +14889,7 @@ function colExplain(nums, op) {
 }
 function columnHTML(q) {
   if (!G.col || G.col.q !== q) G.col = { q, res: Array(q.cols).fill(''), carry: Array(q.cols).fill(''), act: q.cols - 1, sel: 'res', locked: Array(q.cols).fill(false), bad: Array(q.cols).fill(false), tries: 0, msg: '' };
-  const C = G.col, names = ['E', 'Z', 'H', 'T'];
+  const C = G.col, names = ['E', 'Z', 'H', 'T', 'ZT', 'HT'];
   const head = `<div class="col-row col-head"><span class="col-op"></span>${Array.from({ length: q.cols }, (_, i) => `<span class="col-c">${names[q.cols - 1 - i] || ''}</span>`).join('')}</div>`;
   const rows = q.nums.map((n, k) => `<div class="col-row"><span class="col-op">${k === q.nums.length - 1 ? q.op : ''}</span>${colDigits(n, q.cols).map(d => `<span class="col-c">${d}</span>`).join('')}</div>`).join('');
   const carry = `<div class="col-row col-carry"><span class="col-op"></span>${C.carry.map((d, i) => `<button class="col-k ${C.sel === 'carry' && C.act === i ? 'act' : ''}" data-act="colsel" data-w="carry" data-i="${i}" aria-label="Merkzahl ${names[q.cols - 1 - i] || ''}">${d}</button>`).join('')}</div>`;
@@ -25092,9 +25153,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '2.78.0';
+const APP_VERSION = '2.79.0';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "2.79.0", d: "12.11.2026", t: ["17 neue Lernspiele nach den Lehrplänen in Niedersachsen", "Mathe: Blitzblick, Tabellen-Profi, Rechen-Detektiv, Malkreuz, große Zahlen schriftlich, Kopfgeometrie, Daten-Profi", "Deutsch: Zuhören, Lesestrategien, Schreibwerkstatt, Fabel und Sage, Sprachforscher, Plattdeutsch und Fremdwörter", "Sachunterricht: Arbeit und fairer Handel, Feuer und Rost, Quellen der Geschichte", "Englisch: Cards, Signs & Festivals"] },
   { v: "2.78.0", d: "12.11.2026", t: ["Neues Partyspiel Gedanken-Treffer: Wer denkt dasselbe?", "Spielhalle: Sammel-Duell gegen Lumi", "Neu: Meine Pinguin-Insel. Mit den Münzen aus dem Lernen eine eigene Insel bauen", "Lesen: Blitzlesen, Satz-Blitz und Vorlese-Minute mit Wörtern pro Minute", "Mathe: Teilen in Schritten (halbschriftlich)", "Sachunterricht: Ist das echt? KI, Fakes und sicher im Netz"] },
   { v: "2.77.1", d: "12.11.2026", t: ["Technische Pflege, keine neuen Inhalte in dieser Version"] },
   { v: "2.77.0", d: "12.11.2026", t: ["Neu in der Rätsel-Ecke: Mühle gegen Lumi in drei Stärken, mit Regeln direkt beim Spiel", "Neu in der Spielhalle: Mau-Mau gegen Lumi mit 32 Karten", "59 neue Erklärkarten für Mathe und Deutsch, jetzt 126 Themen", "Spanischkurs: Stufe 2 mit vier statt drei Antworten"] },
@@ -25706,7 +25768,7 @@ function renderQuestion() {
     </main></div>`, wid);
   if (q.kind === 'trace') skTraceInit(q);
   if (q.kind === 'spell' || q.kind === 'order') tilesBind();
-  if (q.listen) Speech.say(q.listen.text, q.listen.lang, document.querySelector('[data-act="listen"]'));
+  if (q.listen && !q.listen.still) Speech.say(q.listen.text, q.listen.lang, document.querySelector('[data-act="listen"]'));
 }
 function award(ok, second) {
   const t = G.tally[G.qg] = G.tally[G.qg] || { ok: 0, bad: 0 };
@@ -81087,6 +81149,726 @@ Object.assign(ACT, {
 if (typeof GROUPS !== 'undefined') GROUPS['n-insel'] = { w: 'meine', t: 'Meine Insel' };
 if (typeof GROUP_ICON !== 'undefined') GROUP_ICON['n-insel'] = '🏝️';
 GAMES.insel = { id: 'insel', w: 'meine', g: 'n-insel', t: 'Meine Pinguin-Insel', d: 'Mit deinen Münzen eine eigene Insel bauen, Aufträge lösen', i: '🏝️', type: 'tool', open: () => { INS_M = 'bauen'; showInsel(); } };
+
+/*@@src lernen279.js@@*/
+
+const l9W = g => (typeof GROUPS !== 'undefined' && GROUPS[g] ? GROUPS[g].w : undefined);
+const l9Rund = id => typeof G !== 'undefined' && G && G.mode === 'game' && G.id === id;
+
+
+function l9Feld(n, gross) {
+  const sp = gross ? 10 : 10, zeilen = gross ? 10 : 2, d = 22, gap = 6, w = sp * d + gap + 8, h = zeilen * d + (gross ? gap : 0) + 8;
+  let s = '';
+  for (let r = 0; r < zeilen; r++) for (let c = 0; c < sp; c++) {
+    const i = r * sp + c, x = 4 + c * d + (c >= 5 ? gap : 0), y = 4 + r * d + (gross && r >= 5 ? gap : 0);
+    s += `<rect x="${x}" y="${y}" width="${d - 2}" height="${d - 2}" rx="3" class="l9-z"/>`;
+    if (i < n) s += `<circle cx="${x + d / 2 - 1}" cy="${y + d / 2 - 1}" r="${d / 2 - 4}" class="${c < 5 ? 'l9-r' : 'l9-b'}"/>`;
+  }
+  return `<svg class="l9-feld${gross ? ' gross' : ''}" viewBox="0 0 ${w} ${h}" role="img" aria-label="Punktefeld">${s}</svg>`;
+}
+function l9BlitzFeld(n, gross, ms) {
+  return `<div class="l8-blitz l9-bb" style="--ms:${ms}ms"><span>${l9Feld(n, gross)}</span><button class="l8-nochmal" data-act="l8zeig">👀 Nochmal zeigen</button></div>`;
+}
+function genBlitzblick(ctx) {
+  const lv = (ctx && ctx.lv) || 1, gross = lv > 1, n = lv === 1 ? R.int(6, 20) : R.int(23, 97);
+  const frageRest = lv === 3 && R.chance(.5), soll = frageRest ? 100 - n : n;
+  const kand = [soll + 1, soll - 1, soll + 10, soll - 10, soll + 5, soll - 5, soll + 2, soll - 2].filter(x => x > 0 && x <= (gross ? 100 : 20) && x !== soll);
+  const wrong = [...new Set(kand)].slice(0, 3);
+  const z = Math.floor(n / 10), e = n % 10;
+  return mkChoice({ prompt: frageRest ? 'Schau genau hin! Wie viele Punkte fehlen bis 100?' : 'Schau genau hin! Wie viele Punkte sind es?', visual: l9BlitzFeld(n, gross, [0, 1500, 2000, 2000][lv]),
+    answer: String(soll), wrong: wrong.map(String), layout: 'grid2', key: 'bb' + lv + ':' + n + (frageRest ? 'r' : ''),
+    explain: gross ? `${z} volle Zehnerreihen und ${e} einzelne Punkte: ${n}.${frageRest ? ` Bis 100 fehlen ${100 - n}.` : ''} Zähl nicht einzeln, sondern in Zehnern und Fünfern.`
+      : `${n > 10 ? `Oben 10, unten ${n - 10}` : `${n} Punkte in einer Reihe`}: ${n}. Die Fünfer helfen: rot ist immer fünf.` });
+}
+
+
+function l9Hoer(ti) {
+  const T = LESETEXTE[ti], kann = typeof Speech !== 'undefined' && Speech.ok;
+  return kann ? `<div class="l9-hoer"><button class="listen-btn" data-act="listen" aria-label="Geschichte anhören"><span>🎧</span><b>Geschichte anhören</b></button><p>„${esc(T.t)}“. Hör gut zu, der Text wird nicht angezeigt.</p></div>`
+    : `<div class="l9-hoer"><p class="muted">Dieses Gerät kann nicht vorlesen. Lass dir die Geschichte von einem Erwachsenen vorlesen, oder lies sie selbst:</p><div class="q-text ld long"><b>${esc(T.t)}</b><br>${esc(T.x)}</div></div>`;
+}
+function genZuhoeren(ctx) {
+  const lv = (ctx && ctx.lv) >= 2 ? 2 : 1, pool = LESETEXTE.map((t, i) => i).filter(i => (LESETEXTE[i].lv || 1) === lv && Array.isArray(LESETEXTE[i].q) && LESETEXTE[i].q.length >= 3);
+  let ti, qi, nr = 0;
+  if (l9Rund('zuhoeren')) {
+    const slot = Math.floor(G.i / 3); G.l9h = G.l9h || {};
+    if (G.l9h[slot] == null) G.l9h[slot] = ctx && ctx.draw ? ctx.draw(pool) : R.pick(pool);
+    ti = G.l9h[slot]; qi = G.i % 3; nr = qi + 1;
+  } else { ti = R.pick(pool); qi = R.int(0, 2); nr = 1; }
+  const T = LESETEXTE[ti], [q, a, w] = T.q[qi];
+  return mkChoice({ prompt: `Frage ${nr} von 3: ${q}`, visual: l9Hoer(ti), answer: a, wrong: w, layout: 'col', key: 'zh' + ti + '-' + qi,
+    listen: { text: T.t + '. ' + T.x, lang: 'de-DE', still: nr > 1 },
+    explain: 'Hör dir die Geschichte ruhig noch einmal an. Achte darauf, wer etwas tut, wo es passiert und wie es ausgeht.' });
+}
+
+
+const L9_LS = [
+  { t: 'Seehunde im Wattenmeer', vor: ['Wie Seehunde an unserer Küste leben', ['Wie man ein Boot baut', 'Wo Pinguine brüten']],
+    a: [['Wo Seehunde leben', 'Seehunde leben in der Nordsee, auch vor Cuxhaven. Bei Ebbe liegen sie gern auf Sandbänken. Dort ruhen sie sich aus und wärmen sich in der Sonne.'],
+      ['Was Seehunde fressen', 'Seehunde fressen vor allem Fische, zum Beispiel Heringe und Plattfische. Mit ihren langen Barthaaren spüren sie, wenn sich ein Fisch im Wasser bewegt.'],
+      ['Junge Seehunde', 'Im Sommer kommen die Jungen zur Welt. Sie können gleich schwimmen. Liegt ein Junges allein am Strand, wartet die Mutter oft im Wasser. Halte Abstand und fass es nicht an.']],
+    x: 'Seehunde im Zoo', wo: ['In welchem Absatz steht, was du tun sollst, wenn du einen jungen Seehund findest?', 2], sw: [1, 'Barthaaren', ['vor', 'allem', 'zum']],
+    sum: ['Seehunde leben im Wattenmeer, fressen Fische und bekommen im Sommer ihre Jungen.', ['Seehunde liegen bei Ebbe gern auf Sandbänken.', 'Seehunde leben im Wald und fressen Nüsse.']] },
+  { t: 'Der Leuchtturm', vor: ['Wie ein Leuchtturm den Schiffen hilft', ['Wie man einen Turm aus Sand baut', 'Warum Glühwürmchen leuchten']],
+    a: [['Wozu es Leuchttürme gibt', 'Leuchttürme stehen an Küsten und auf Inseln. Ihr Licht zeigt den Schiffen in der Nacht, wo Land ist und wo es gefährlich wird.'],
+      ['Jeder Turm blinkt anders', 'Jeder Leuchtturm hat seine eigene Kennung. Er blinkt in einem bestimmten Takt oder in einer bestimmten Farbe. So wissen die Seeleute, welchen Turm sie gerade sehen.'],
+      ['Leuchttürme heute', 'Früher wohnte ein Leuchtturmwärter im Turm und kümmerte sich um das Licht. Heute schaltet sich das Licht meistens von selbst ein. Trotzdem sind Leuchttürme noch wichtig.']],
+    x: 'Der höchste Turm der Welt', wo: ['In welchem Absatz erfährst du, wie die Seeleute die Türme auseinanderhalten?', 1], sw: [1, 'Kennung', ['bestimmten', 'gerade', 'welchen']],
+    sum: ['Leuchttürme zeigen Schiffen nachts den Weg. Jeder blinkt anders, und heute geht das Licht meist von selbst an.', ['Früher wohnte ein Wärter im Leuchtturm.', 'Leuchttürme stehen mitten in der Stadt und zeigen die Uhrzeit.']] },
+  { t: 'Der Igel im Winter', vor: ['Wie der Igel durch den Winter kommt', ['Wie man einen Schneemann baut', 'Was Igel im Sommer spielen']],
+    a: [['Futter für den Winter', 'Im Herbst frisst der Igel besonders viel. Er sucht Käfer, Würmer und Schnecken. So legt er sich eine dicke Fettschicht an.'],
+      ['Ein Nest aus Laub', 'Wenn es kalt wird, baut sich der Igel ein Nest aus Blättern. Oft liegt es unter einer Hecke oder in einem Laubhaufen.'],
+      ['Der lange Winterschlaf', 'Im Nest rollt sich der Igel zusammen und schläft bis zum Frühling. Sein Herz schlägt dann ganz langsam. Darum soll man einen schlafenden Igel nicht wecken.']],
+    x: 'Igel als Haustier', wo: ['In welchem Absatz steht, warum man einen schlafenden Igel nicht wecken soll?', 2], sw: [0, 'Fettschicht', ['besonders', 'sucht', 'So']],
+    sum: ['Der Igel frisst sich im Herbst satt, baut ein Nest aus Laub und hält Winterschlaf.', ['Der Igel frisst Käfer, Würmer und Schnecken.', 'Der Igel zieht im Winter in den Süden.']] },
+  { t: 'Der Teide auf Teneriffa', vor: ['Was es über den großen Berg auf Teneriffa zu wissen gibt', ['Wie man eine Paella kocht', 'Warum das Meer salzig ist']],
+    a: [['Ein Vulkan auf einer Insel', 'Auf der Insel Teneriffa steht der Teide. Er ist ein Vulkan und mit 3715 Metern der höchste Berg Spaniens.'],
+      ['Schnee unter der Sonne', 'Obwohl auf Teneriffa fast immer die Sonne scheint, liegt auf dem Gipfel im Winter manchmal Schnee. Je höher man kommt, desto kälter wird es.'],
+      ['Mit der Seilbahn nach oben', 'Eine Seilbahn bringt die Besucher fast bis zur Spitze. Ganz nach oben darf man nur mit einer Erlaubnis wandern. An klaren Tagen sieht man von oben andere Kanarische Inseln.']],
+    x: 'Fische im Atlantik', wo: ['In welchem Absatz erfährst du, wie man auf den Berg kommt?', 2], sw: [1, 'Schnee', ['Obwohl', 'fast', 'manchmal']],
+    sum: ['Der Teide ist ein Vulkan auf Teneriffa und der höchste Berg Spaniens. Oben kann Schnee liegen, und eine Seilbahn fährt hinauf.', ['Der Teide ist 3715 Meter hoch.', 'Der Teide ist ein flacher Strand mit vielen Palmen.']] },
+  { t: 'Wie Papier entsteht', vor: ['Wie aus Holz Papier wird', ['Wie man mit Wasserfarben malt', 'Warum Bäume Blätter verlieren']],
+    a: [['Holz wird zu Brei', 'Papier wird meistens aus Holz gemacht. In der Fabrik wird das Holz zerkleinert und mit Wasser zu einem Brei vermischt.'],
+      ['Vom Brei zum Blatt', 'Der Brei wird dünn auf ein Sieb gegeben. Das Wasser läuft ab, und die Fasern bleiben liegen. Große Walzen pressen und trocknen die Papierbahn.'],
+      ['Altpapier hilft', 'Aus Altpapier kann man wieder neues Papier machen. Dafür müssen weniger Bäume gefällt werden. Darum gehört Papier in die blaue Tonne.']],
+    x: 'Bücher aus aller Welt', wo: ['In welchem Absatz steht, warum Altpapier wichtig ist?', 2], sw: [1, 'Sieb', ['dünn', 'und', 'Große']],
+    sum: ['Papier wird aus Holz und Wasser hergestellt, und aus Altpapier kann man neues Papier machen.', ['Große Walzen pressen das Papier.', 'Papier wächst an Bäumen und wird nur gepflückt.']] },
+  { t: 'Das Bienenvolk', vor: ['Wie Bienen zusammenleben und arbeiten', ['Wie man Honig auf ein Brot streicht', 'Warum Wespen gefährlich sind']],
+    a: [['Viele Bienen, ein Volk', 'Honigbienen leben in einem Bienenvolk. Im Sommer gehören bis zu 50 000 Bienen dazu: eine Königin, viele Arbeiterinnen und einige Drohnen.'],
+      ['Fleißige Arbeiterinnen', 'Die Arbeiterinnen sammeln Nektar und Blütenstaub. Aus dem Nektar machen sie Honig. Außerdem putzen sie den Stock und füttern die Larven.'],
+      ['Bienen helfen den Pflanzen', 'Fliegt eine Biene von Blüte zu Blüte, trägt sie Blütenstaub mit. So werden die Blüten bestäubt, und es können Früchte wachsen, zum Beispiel Äpfel und Kirschen.']],
+    x: 'Bienen im Winterschlaf', wo: ['In welchem Absatz steht, wer alles zu einem Bienenvolk gehört?', 0], sw: [2, 'bestäubt', ['Fliegt', 'mit', 'So']],
+    sum: ['Bienen leben in großen Völkern, die Arbeiterinnen machen Honig, und beim Sammeln bestäuben sie die Blüten.', ['Die Arbeiterinnen putzen den Stock.', 'Bienen leben allein und machen Marmelade.']] },
+  { t: 'Der Fahrradhelm', vor: ['Warum ein Helm wichtig ist und wie er richtig sitzt', ['Wie man ein Fahrrad bemalt', 'Wer das Fahrrad erfunden hat']],
+    a: [['Warum ein Helm schützt', 'Bei einem Sturz kann der Kopf hart aufschlagen. Ein Helm fängt den Stoß ab und schützt so den Kopf.'],
+      ['Der Helm muss passen', 'Der Helm soll gerade auf dem Kopf sitzen und die Stirn bedecken. Die Riemen werden so eingestellt, dass höchstens zwei Finger unter das Kinn passen.'],
+      ['Wann man einen neuen braucht', 'Nach einem Sturz sollte man den Helm austauschen, auch wenn man keinen Schaden sieht. Außerdem wird das Material mit den Jahren spröde.']],
+    x: 'Der schnellste Radfahrer', wo: ['In welchem Absatz steht, wie der Helm richtig sitzt?', 1], sw: [2, 'austauschen', ['auch', 'Außerdem', 'mit']],
+    sum: ['Ein Helm schützt den Kopf, muss gut sitzen und nach einem Sturz ersetzt werden.', ['Die Riemen werden unter dem Kinn eingestellt.', 'Ein Helm ist nur zum Schmücken da.']] },
+  { t: 'Ebbe und Flut', vor: ['Warum das Wasser an der Nordsee kommt und geht', ['Wie Fische schlafen', 'Wie man eine Sandburg baut']],
+    a: [['Das Wasser kommt und geht', 'An der Nordsee steigt und sinkt das Wasser zweimal am Tag. Ist das Wasser weg, nennt man das Ebbe. Kommt es zurück, heißt es Flut.'],
+      ['Der Mond zieht am Wasser', 'Ebbe und Flut entstehen vor allem durch den Mond. Er zieht mit seiner Anziehungskraft am Wasser der Meere.'],
+      ['Vorsicht im Watt', 'Bei Ebbe kann man im Watt wandern. Doch die Flut kommt schnell zurück. Darum geht man nur mit einer Wattführerin oder einem Wattführer weit hinaus.']],
+    x: 'Schiffe im Hafen', wo: ['In welchem Absatz erfährst du, warum es Ebbe und Flut gibt?', 1], sw: [1, 'Mond', ['durch', 'seiner', 'Er']],
+    sum: ['An der Nordsee kommt und geht das Wasser zweimal am Tag, weil der Mond daran zieht. Im Watt muss man darum vorsichtig sein.', ['Bei Ebbe kann man im Watt wandern.', 'Die Flut kommt nur einmal im Jahr.']] }
+];
+function l9Text(T, ohne) {
+  return `<div class="q-text ld long l9-ls"><b>${esc(T.t)}</b>${T.a.map(([h, x], i) => `<p><span class="l9-abs">Absatz ${i + 1}</span>${i === ohne ? '<em class="l9-gap">Zwischenüberschrift?</em>' : `<strong>${esc(h)}</strong>`}<br>${esc(x)}</p>`).join('')}</div>`;
+}
+function l9LsAufgabe(T, k, nr) {
+  const pre = nr ? `${nr} von 4: ` : '';
+  if (k === 0) return mkChoice({ prompt: `${pre}Vor dem Lesen: Die Überschrift heißt „${T.t}“. Was erfährst du wohl in diesem Text?`, visual: `<div class="l9-titel">📄 ${esc(T.t)}</div>`,
+    answer: T.vor[0], wrong: T.vor[1], layout: 'col', key: 'ls0' + T.t, explain: 'Die Überschrift verrät oft schon, worum es geht. Wer vorher überlegt, liest gezielter.' });
+  if (k === 1) {
+    const i = (T.t.length + (nr || 0)) % 3;
+    return mkChoice({ prompt: `${pre}Welche Zwischenüberschrift passt zu Absatz ${i + 1}?`, visual: l9Text(T, i), answer: T.a[i][0], wrong: T.a.filter((_, j) => j !== i).map(a => a[0]).concat([T.x]), layout: 'col',
+      key: 'ls1' + T.t + i, explain: `Eine Zwischenüberschrift sagt in wenigen Worten, worum es im Absatz geht. In Absatz ${i + 1} geht es um: ${T.a[i][0]}.` });
+  }
+  if (k === 2) {
+    if (R.chance(.5)) return mkChoice({ prompt: `${pre}Suchendes Lesen: ${T.wo[0]}`, visual: l9Text(T), answer: `Absatz ${T.wo[1] + 1}`, wrong: [0, 1, 2].filter(j => j !== T.wo[1]).map(j => `Absatz ${j + 1}`),
+      fixed: true, order: ['Absatz 1', 'Absatz 2', 'Absatz 3'], layout: 'row3', key: 'ls2' + T.t, explain: 'Du musst nicht alles noch einmal lesen. Die Zwischenüberschriften zeigen dir, wo du suchen musst.' });
+    const [i, w, f] = T.sw;
+    return mkChoice({ prompt: `${pre}Schlüsselwörter sind die wichtigsten Wörter. Welches Wort ist in Absatz ${i + 1} am wichtigsten?`, visual: l9Text(T), answer: w, wrong: f, layout: 'grid2', key: 'ls3' + T.t,
+      explain: `„${w}“ trägt die wichtigste Information. Wörter wie „${f[0]}“ oder „${f[1]}“ braucht man für den Satz, sie verraten aber nichts über das Thema.` });
+  }
+  return mkChoice({ prompt: `${pre}Nach dem Lesen: Welcher Satz fasst den ganzen Text am besten zusammen?`, visual: l9Text(T), answer: T.sum[0], wrong: T.sum[1], layout: 'col', key: 'ls4' + T.t,
+    explain: 'Eine gute Zusammenfassung nennt das Wichtigste aus allen Absätzen. Ein Satz, der nur eine Kleinigkeit nennt, reicht nicht.' });
+}
+function genLesestrategie(ctx) {
+  if (!l9Rund('lesestrategie')) return l9LsAufgabe(R.pick(L9_LS), R.int(0, 3), 0);
+  const slot = Math.floor(G.i / 4); G.l9ls = G.l9ls || {};
+  if (G.l9ls[slot] == null) G.l9ls[slot] = ctx && ctx.draw ? ctx.draw(L9_LS.map((_, i) => i)) : R.int(0, L9_LS.length - 1);
+  return l9LsAufgabe(L9_LS[G.l9ls[slot]], G.i % 4, G.i % 4 + 1);
+}
+
+
+const L9_EINL = [
+  { zu: 'zu meinem Geburtstag', wann: 'am Samstag, dem 14. Juni, um 15 Uhr', wo: 'bei mir zu Hause in der Hafenstraße 3', an: 'Liebe Mia', von: 'Dein Ben' },
+  { zu: 'zu einem Laternenfest', wann: 'am Freitag, dem 7. November, um 17 Uhr', wo: 'auf dem Schulhof', an: 'Lieber Opa', von: 'Deine Mia' },
+  { zu: 'zu einer Pyjama-Party', wann: 'am Samstag, dem 22. März, um 18 Uhr', wo: 'bei uns im Gartenhaus', an: 'Lieber Finn', von: 'Deine Lea' },
+  { zu: 'zu unserem Sommerfest', wann: 'am Sonntag, dem 6. Juli, um 11 Uhr', wo: 'im Garten vom Kindergarten', an: 'Liebe Oma', von: 'Deine Ella' },
+  { zu: 'zu einem Fußballturnier', wann: 'am Mittwoch, dem 3. September, um 14 Uhr', wo: 'auf dem Sportplatz am Deich', an: 'Lieber Tom', von: 'Dein Jonas' }
+];
+const L9_STECK = [
+  ['einen Tier-Steckbrief', ['Name des Tieres', 'Größe und Gewicht', 'Was es frisst', 'Wo es lebt'], ['Was ich gestern gegessen habe', 'Mein Lieblingslied', 'Wie spät es ist']],
+  ['einen Steckbrief über mich', ['Mein Name', 'Mein Alter', 'Meine Hobbys', 'Mein Lieblingsessen'], ['Das Wetter in Spanien', 'Die Hauptstadt von Frankreich', 'Wie ein Igel überwintert']],
+  ['einen Buchtipp', ['Titel des Buches', 'Wer es geschrieben hat', 'Worum es geht', 'Warum es mir gefällt'], ['Meine Schuhgröße', 'Das Datum von morgen', 'Wie viele Zähne ich habe']],
+  ['ein Rezept', ['Zutaten', 'Mengenangaben', 'Arbeitsschritte', 'Wie lange es dauert'], ['Mein Lieblingstier', 'Der Name meiner Lehrerin', 'Die Farbe meines Fahrrads']]
+];
+const L9_ORDNEN = [
+  ['Kakao kochen', ['Milch in einen Topf gießen', 'Kakaopulver einrühren', 'Langsam warm machen und rühren', 'In eine Tasse füllen']],
+  ['Kresse säen', ['Watte auf einen Teller legen', 'Die Watte gut anfeuchten', 'Kressesamen darauf streuen', 'Ein paar Tage warten und gießen']],
+  ['Zähne putzen', ['Zahnpasta auf die Bürste geben', 'Kauflächen, außen und innen putzen', 'Den Mund ausspülen', 'Die Zahnbürste abspülen']],
+  ['Einen Brief schreiben', ['Ort und Datum', 'Anrede', 'Text', 'Gruß und Name']],
+  ['Ein Butterbrot machen', ['Eine Scheibe Brot nehmen', 'Butter darauf streichen', 'Käse darauf legen', 'Das Brot in die Brotdose packen']],
+  ['Eine Pflanze umtopfen', ['Einen größeren Topf mit Erde füllen', 'Die Pflanze vorsichtig herausnehmen', 'Sie in den neuen Topf setzen', 'Die Pflanze gießen']]
+];
+const L9_ERSETZ = [['Mia', 'Sie'], ['Ben', 'Er'], ['Das Baby', 'Es'], ['Oma', 'Sie'], ['Der Hund', 'Er'], ['Die Katze', 'Sie'], ['Lumi', 'Er'], ['Das Pferd', 'Es']];
+const L9_ERS_S = ['{A} geht in den Garten. {A} pflückt Äpfel.', '{A} hat Hunger. {A} möchte ein Brot.', '{A} ist müde. {A} legt sich hin.', '{A} spielt im Sand. {A} baut eine Burg.'];
+const L9_VERB = [
+  ['„Psst, das Baby schläft“, ___ Mama.', 'flüsterte', ['brüllte', 'jubelte', 'schimpfte']],
+  ['„Tor! Tor! Tor!“, ___ die Kinder.', 'jubelten', ['flüsterten', 'murmelten', 'seufzten']],
+  ['„Hilfe, ich stecke fest!“, ___ der Junge laut.', 'rief', ['flüsterte', 'gähnte', 'murmelte']],
+  ['„Schon wieder Regen“, ___ Opa traurig.', 'seufzte', ['jubelte', 'kicherte', 'brüllte']],
+  ['„Das hast du toll gemacht!“, ___ die Lehrerin.', 'lobte', ['schimpfte', 'gähnte', 'stotterte']],
+  ['„Wer hat meinen Kuchen gegessen?“, ___ Papa streng.', 'fragte', ['kicherte', 'flüsterte', 'sang']],
+  ['Der Hund ___ schnell über die Wiese.', 'rannte', ['schlich', 'kroch', 'schlief']],
+  ['Die Katze ___ leise an den Vogel heran.', 'schlich', ['rannte', 'trampelte', 'hüpfte']],
+  ['Das Eis ist sehr ___. Ich brauche eine Mütze.', 'kalt', ['heiß', 'laut', 'bunt']],
+  ['Der Elefant ist ___. Er wiegt so viel wie ein Auto.', 'riesig', ['winzig', 'leise', 'flink']]
+];
+const L9_VERB2 = [
+  ['Es regnet.', 'Wir bleiben drinnen.', 'Weil es regnet, bleiben wir drinnen.', ['Obwohl es regnet, bleiben wir drinnen.', 'Damit es regnet, bleiben wir drinnen.', 'Bevor es regnet, bleiben wir drinnen.']],
+  ['Ich habe Hunger.', 'Ich esse einen Apfel.', 'Weil ich Hunger habe, esse ich einen Apfel.', ['Obwohl ich Hunger habe, esse ich einen Apfel.', 'Damit ich Hunger habe, esse ich einen Apfel.', 'Wenn ich einen Apfel esse, habe ich Hunger.']],
+  ['Es ist kalt.', 'Wir spielen trotzdem draußen.', 'Obwohl es kalt ist, spielen wir draußen.', ['Weil es kalt ist, spielen wir draußen.', 'Damit es kalt ist, spielen wir draußen.', 'Nachdem es kalt ist, spielen wir draußen.']],
+  ['Ich übe jeden Tag.', 'Ich will das Lied gut spielen.', 'Ich übe jeden Tag, damit ich das Lied gut spielen kann.', ['Ich übe jeden Tag, obwohl ich das Lied gut spielen will.', 'Ich übe jeden Tag, bevor ich das Lied spielen will.', 'Ich übe jeden Tag, aber ich will das Lied nicht spielen.']],
+  ['Wir essen zu Mittag.', 'Danach gehen wir schwimmen.', 'Nachdem wir zu Mittag gegessen haben, gehen wir schwimmen.', ['Obwohl wir zu Mittag essen, gehen wir schwimmen.', 'Weil wir schwimmen, essen wir zu Mittag.', 'Damit wir zu Mittag essen, gehen wir schwimmen.']],
+  ['Der Bus ist weg.', 'Wir laufen zur Schule.', 'Der Bus ist weg, deshalb laufen wir zur Schule.', ['Der Bus ist weg, obwohl wir zur Schule laufen.', 'Der Bus ist weg, damit wir zur Schule laufen.', 'Der Bus ist weg, weil wir zur Schule laufen.']]
+];
+const L9_TEIL = [['Es war ein sonniger Samstag im Juli.', 'Einleitung'], ['Ich wohne mit meiner Familie in einem kleinen Haus am Deich.', 'Einleitung'], ['Eines Morgens wollten wir zum Strand fahren.', 'Einleitung'],
+  ['Plötzlich hörten wir ein lautes Krachen.', 'Hauptteil'], ['Auf einmal war der Ball im Teich verschwunden.', 'Hauptteil'], ['Wir suchten überall, aber der Hund war weg.', 'Hauptteil'], ['Da kam ein großer Hund um die Ecke gerannt.', 'Hauptteil'],
+  ['Am Ende waren alle müde, aber glücklich.', 'Schluss'], ['Seitdem passe ich besser auf meine Sachen auf.', 'Schluss'], ['Das war der schönste Tag in den Ferien.', 'Schluss']];
+const L9_GENAU = [['Der Hund bellt.', 'Der kleine braune Hund bellt laut am Zaun.'], ['Ich habe ein Bild gemalt.', 'Ich habe ein buntes Bild von unserem Leuchtturm gemalt.'],
+  ['Das Essen war gut.', 'Die Spaghetti mit Tomatensoße waren lecker.'], ['Wir waren draußen.', 'Wir haben im Garten Fangen gespielt.'], ['Es war schön.', 'Am Strand haben wir Muscheln gesammelt und gelacht.'],
+  ['Der Vogel fliegt.', 'Die weiße Möwe fliegt kreischend über den Hafen.']];
+function genSchreibwerkstatt(ctx) {
+  const lv = (ctx && ctx.lv) || 1, i = l9Rund('schreibwerkstatt') ? G.i : R.int(0, 99), typ = (lv === 1 ? ['einl', 'steck', 'ordnen', 'ersetz', 'verb'] : ['verbind', 'teil', 'genau', 'verb', 'ordnen', 'einl'])[i % (lv === 1 ? 5 : 6)];
+  if (typ === 'einl') {
+    const E = R.pick(L9_EINL), weg = R.pick(['was', 'wann', 'wo', 'von']);
+    const satz = weg === 'was' ? `ich lade dich ${E.wann} herzlich ein.` : weg === 'wann' ? `ich lade dich ${E.zu} ein.` : `ich lade dich ${E.wann} ${E.zu} ein.`;
+    const txt = `${E.an},\n${satz}${weg === 'wo' ? '' : ` Wir feiern ${E.wo}.`} Ich freue mich auf dich!${weg === 'von' ? '' : `\n${E.von}`}`;
+    const L = { was: 'Was gefeiert wird', wann: 'Wann die Feier ist', wo: 'Wo die Feier ist', von: 'Wer einlädt' };
+    return mkChoice({ prompt: 'In einer Einladung muss stehen: was, wann, wo und wer einlädt. Was fehlt hier?', visual: `<div class="q-text l9-brief">${esc(txt).replace(/\n/g, '<br>')}</div>`,
+      answer: L[weg], wrong: Object.keys(L).filter(k => k !== weg).map(k => L[k]), layout: 'grid2', key: 'sw-e' + E.zu + weg,
+      explain: `Es fehlt: ${L[weg].toLowerCase()}. Ohne diese Angabe weiß niemand Bescheid.` });
+  }
+  if (typ === 'steck') {
+    const [art, ja, nein] = R.pick(L9_STECK), n = R.pick(nein);
+    return mkChoice({ prompt: `Was gehört nicht in ${art}?`, answer: n, wrong: R.sample(ja, 3), layout: 'col', key: 'sw-s' + art + n,
+      explain: `In ${art} gehört nur, was zum Thema passt: ${ja.join(', ')}.` });
+  }
+  if (typ === 'ordnen') {
+    const [t, schritte] = R.pick(L9_ORDNEN);
+    return mkOrder({ prompt: `Anleitung „${t}“: Bring die Schritte in die richtige Reihenfolge.`, items: schritte, key: 'sw-o' + t, explain: 'In einer Anleitung steht jeder Schritt an seinem Platz, sonst klappt es nicht.' });
+  }
+  if (typ === 'ersetz') {
+    const [a, p] = R.pick(L9_ERSETZ), s = R.pick(L9_ERS_S).replace(/\{A\}/g, a), zweiter = s.split('. ')[1];
+    const opts = ['Er', 'Sie', 'Es', 'Wir'];
+    return mkChoice({ prompt: 'Das gleiche Wort zweimal klingt langweilig. Welches Wort kann das zweite ersetzen?', visual: `<div class="q-text">${esc(s.split('. ')[0])}. <u>${esc(a)}</u>${esc(zweiter.slice(a.length))}</div>`,
+      answer: p, wrong: opts.filter(o => o !== p), fixed: true, order: opts, layout: 'row4', key: 'sw-r' + a + s,
+      explain: `${s.split('. ')[0]}. ${p}${zweiter.slice(a.length)} Ein Fürwort ersetzt das Nomen, so wird der Text abwechslungsreicher.` });
+  }
+  if (typ === 'verb') {
+    const [s, a, w] = R.pick(L9_VERB);
+    return mkChoice({ prompt: 'Welches Wort passt am besten?', visual: `<div class="q-text">${esc(s).replace('___', '<span class="q-gap">?</span>')}</div>`, answer: a, wrong: w, layout: 'grid2', key: 'sw-v' + s,
+      explain: `„${s.replace('___', a)}“ Ein treffendes Wort macht den Text lebendig und genau.` });
+  }
+  if (typ === 'verbind') {
+    const [s1, s2, a, w] = R.pick(L9_VERB2);
+    return mkChoice({ prompt: 'Verbinde die beiden Sätze. Welcher Satz passt?', visual: `<div class="q-text">${esc(s1)} ${esc(s2)}</div>`, answer: a, wrong: w.slice(0, 3), layout: 'col', key: 'sw-b' + a,
+      explain: 'Weil sagt den Grund, obwohl einen Gegensatz, damit das Ziel, nachdem die Reihenfolge. Nur ein Satz sagt dasselbe wie die zwei Sätze.' });
+  }
+  if (typ === 'teil') {
+    const [s, a] = R.pick(L9_TEIL), opts = ['Einleitung', 'Hauptteil', 'Schluss'];
+    return mkChoice({ prompt: 'Wohin gehört dieser Satz in einer Erzählung?', visual: `<div class="q-text">${esc(s)}</div>`, answer: a, wrong: opts.filter(o => o !== a), fixed: true, order: opts, layout: 'row3', key: 'sw-t' + s,
+      explain: 'Die Einleitung sagt, wer, wann und wo. Im Hauptteil passiert das Spannende. Der Schluss erzählt, wie es ausgeht.' });
+  }
+  const [kurz, lang] = R.pick(L9_GENAU), andere = R.pick(L9_GENAU.filter(x => x[0] !== kurz));
+  return mkChoice({ prompt: 'Welcher Satz ist genauer und lebendiger?', answer: lang, wrong: [kurz, andere[0]], layout: 'col', key: 'sw-g' + lang,
+    explain: 'Genaue Wörter verraten mehr: welcher, wie, wo. So kann sich der Leser alles besser vorstellen.' });
+}
+
+
+const L9_TAB = [['Hefte', 'Preis', ' €', 1, 4, 1], ['Eintrittskarten', 'Preis', ' €', 3, 8, 1], ['Brötchen', 'Preis', ' ct', 30, 60, 10], ['Packungen Saft', 'Liter', ' l', 1, 2, 1],
+  ['Minuten', 'Weg', ' m', 40, 90, 10], ['Personen', 'Mehl', ' g', 50, 150, 25], ['Tage', 'Seiten', ' Seiten', 5, 12, 1], ['Kisten', 'Flaschen', ' Flaschen', 6, 12, 6]];
+function genTabellen(ctx) {
+  const lv = (ctx && ctx.lv) || 1, pool = lv === 1 ? L9_TAB.filter(t => t[2] !== ' g' && t[2] !== ' m') : L9_TAB, [ding, groesse, ein, lo, hi, st] = R.pick(pool);
+  const u = lo + st * R.int(0, Math.floor((hi - lo) / st)), sp = lv === 1 ? [1, 2, 3, 4, 5] : lv === 2 ? [1, 2, 4, 5, 10] : [2, 3, 4, 6, 10];
+  let frage, bekannt;
+  if (lv === 1) { frage = R.pick([3, 4, 5]); bekannt = sp.filter(x => x !== frage && x <= frage).slice(-2); if (!bekannt.includes(1)) bekannt.unshift(1); }
+  else if (lv === 2) { frage = R.pick([1, 5, 10]); bekannt = frage === 1 ? [2, 4] : [1, 2, 4].slice(R.int(0, 1), 3); }
+  else { frage = R.pick([3, 6, 10]); bekannt = frage === 3 ? [2, 4] : frage === 6 ? [4, 10] : [4, 6]; }
+  const zeig = sp.filter(x => bekannt.includes(x) || x === frage), wert = n => n * u;
+  const tab = `<table class="l9-tab"><tr><th>${esc(ding)}</th>${zeig.map(n => `<td>${n}</td>`).join('')}</tr><tr><th>${esc(groesse)}</th>${zeig.map(n => `<td>${n === frage ? '<span class="q-gap">?</span>' : wert(n) + esc(ein)}</td>`).join('')}</tr></table>`;
+  const eins = bekannt.includes(1) ? '' : ` Erst für 1 ausrechnen: ${bekannt[0]} → ${wert(bekannt[0])}${ein}, also 1 → ${u}${ein}.`;
+  return mkNumber({ prompt: `Ergänze die Tabelle: Was gehört an die Stelle mit dem Fragezeichen?${lv === 1 ? '' : ' Alles verändert sich gleichmäßig.'}`, visual: tab, answer: wert(frage), unit: ein.trim(), key: 'tb' + lv + ding + u + frage,
+    explain: frage === 1 ? `${bekannt[0]} → ${wert(bekannt[0])}${ein}. Für 1 teilst du durch ${bekannt[0]}: ${wert(bekannt[0])} : ${bekannt[0]} = ${u}${ein}.`
+      : `Zu 1 gehören ${u}${ein}.${eins} Zu ${frage} gehören ${frage} · ${u} = ${wert(frage)}${ein}.` });
+}
+
+
+const L9_F = { ok: 'Alles richtig', ue: 'Übertrag vergessen', um: 'Einer falsch herum abgezogen', dreh: 'Zehner und Einer vertauscht', null: 'Null vergessen', ee: 'Einmaleins verrechnet' };
+function l9Stellen(a, b, op) {
+  const da = String(a).split('').reverse().map(Number), db = String(b).split('').reverse().map(Number), n = Math.max(da.length, db.length); let r = '';
+  for (let i = 0; i < n; i++) { const x = da[i] || 0, y = db[i] || 0; r = (op === '+' ? (x + y) % 10 : Math.abs(x - y)) + r; }
+  return +r;
+}
+function l9Fehler(lv) {
+  for (let v = 0; v < 200; v++) {
+    if (lv <= 2 && R.chance(lv === 1 ? 1 : .6)) {
+      const plus = R.chance(.5), gr = lv === 1 ? [11, 89] : [101, 899];
+      let a = R.int(gr[0], gr[1]), b = R.int(lv === 1 ? 11 : 101, lv === 1 ? 79 : 599); if (!plus && b > a) [a, b] = [b, a]; if (!plus && a === b) continue;
+      const rich = plus ? a + b : a - b; if (lv === 1 && (rich > 100 || rich < 10)) continue; if (lv === 2 && rich > 999) continue;
+      const fT = plus ? 'ue' : 'um', fW = l9Stellen(a, b, plus ? '+' : '-'), dreh = rich >= 10 && rich < 100 ? +String(rich).split('').reverse().join('') : null;
+      const modelle = [['ok', rich], [fT, fW]]; if (dreh !== null && lv === 1) modelle.push(['dreh', dreh]);
+      const [typ, erg] = R.pick(modelle); const werte = modelle.map(m => m[1]);
+      if (typ !== 'ok' && (erg === rich || werte.filter(x => x === erg).length > 1)) continue;
+      const opts = lv === 1 ? ['ok', fT, 'dreh'] : ['ok', 'ue', 'um'];
+      return { a, b, op: plus ? '+' : '−', rich, erg, typ, opts };
+    }
+    const a = R.int(3, 9), b = R.int(3, 9);
+    if (lv === 3) {
+      const x = R.int(12, 89), y = R.int(2, 9) * 10, rich = x * y, nul = x * (y / 10), ee = rich + R.pick([-10, 10]) * (R.chance(.5) ? 1 : 2);
+      const modelle = [['ok', rich], ['null', nul], ['ee', ee]], [typ, erg] = R.pick(modelle);
+      return { a: x, b: y, op: '·', rich, erg, typ, opts: ['ok', 'null', 'ee'] };
+    }
+    const rich = a * b, ee = rich + R.pick([-1, 1]) * R.pick([a, b]); if (ee === rich || ee <= 0) continue;
+    const [typ, erg] = R.pick([['ok', rich], ['ee', ee]]);
+    return { a, b, op: '·', rich, erg, typ, opts: ['ok', 'ee'] };
+  }
+  return { a: 47, b: 28, op: '+', rich: 75, erg: 65, typ: 'ue', opts: ['ok', 'ue', 'dreh'] };
+}
+function l9KopfOderSchrift(lv) {
+  const kopf = R.chance(.5);
+  if (kopf) {
+    const k = R.pick(lv >= 3 ? [() => [R.int(2, 9) * 1000, R.int(1, 9) * 1000, '+'], () => [R.int(3, 9) * 1000, R.int(1, 2) * 1000, '−'], () => [R.int(2, 9) * 100, R.int(2, 9), '·'], () => [R.int(2, 9) * 1000 - 1, 1, '+'], () => [25, 4, '·']]
+      : [() => [R.int(2, 9) * 100, R.int(1, 9) * 100, '+'], () => [R.int(3, 9) * 100, R.int(1, 2) * 100, '−'], () => [999, 1, '+'], () => [R.int(2, 9) * 10, R.int(2, 9), '·'], () => [500, 250, '+']])();
+    return mkChoice({ prompt: 'Rechnest du das besser im Kopf oder schriftlich?', visual: mathLine([`${k[0]}`, k[2], `${k[1]}`]), answer: 'Im Kopf', wrong: ['Schriftlich'], fixed: true, order: ['Im Kopf', 'Schriftlich'], layout: 'row2',
+      key: 'ks' + k[0] + k[2] + k[1], explain: 'Runde Zahlen oder ganz kleine Schritte rechnest du schnell im Kopf. Schriftlich wäre hier viel zu umständlich.' });
+  }
+  const d = lv >= 3 ? 4 : 3, rnd = () => R.int(10 ** (d - 1) + 1, 10 ** d - 1);
+  const krumm = n => !/[05]/.test(String(n));
+  for (let v = 0; v < 80; v++) {
+    const plus = R.chance(.6), a = rnd(), b = plus ? rnd() : R.int(10 ** (d - 1), a - 1); if (b <= 0 || !krumm(a) || !krumm(b)) continue;
+    if (plus && l9Stellen(a, b, '+') === a + b) continue; if (!plus && l9Stellen(a, b, '-') === a - b) continue;
+    return mkChoice({ prompt: 'Rechnest du das besser im Kopf oder schriftlich?', visual: mathLine([`${a}`, plus ? '+' : '−', `${b}`]), answer: 'Schriftlich', wrong: ['Im Kopf'], fixed: true, order: ['Im Kopf', 'Schriftlich'], layout: 'row2',
+      key: 'ks' + a + (plus ? '+' : '-') + b, explain: 'Krumme, große Zahlen mit vielen Überträgen rechnest du sicherer schriftlich. Vorher kurz überschlagen!' });
+  }
+  return mkChoice({ prompt: 'Rechnest du das besser im Kopf oder schriftlich?', visual: mathLine(['4867', '+', '2959']), answer: 'Schriftlich', wrong: ['Im Kopf'], fixed: true, order: ['Im Kopf', 'Schriftlich'], layout: 'row2', key: 'ks4867', explain: 'Krumme, große Zahlen rechnest du sicherer schriftlich.' });
+}
+function genRechenDetektiv(ctx) {
+  const lv = (ctx && ctx.lv) || 1;
+  if (lv >= 2 && R.chance(.35)) return l9KopfOderSchrift(lv);
+  const F = l9Fehler(lv), labels = F.opts.map(k => L9_F[k]);
+  const warum = { ok: `${F.a} ${F.op} ${F.b} = ${F.rich}. Lumi hat richtig gerechnet!`, ue: `Richtig ist ${F.rich}. Lumi hat beim Zusammenzählen den Übertrag in die nächste Stelle vergessen.`,
+    um: `Richtig ist ${F.rich}. Lumi hat bei einer Stelle einfach die kleinere von der größeren Ziffer abgezogen, statt zu entbündeln.`, dreh: `Richtig ist ${F.rich}. Lumi hat die Ziffern vertauscht: ${F.erg} statt ${F.rich}.`,
+    null: `Richtig ist ${F.rich}. Bei ${F.a} · ${F.b} rechnest du ${F.a} · ${F.b / 10} = ${F.a * F.b / 10} und hängst eine Null an.`, ee: `Richtig ist ${F.rich}. Lumi hat sich beim Einmaleins verrechnet.` }[F.typ];
+  return mkChoice({ prompt: `Rechen-Detektiv: Lumi rechnet ${F.a} ${F.op} ${F.b} = ${F.erg}. Was stimmt?`, visual: mathLine([`${F.a}`, F.op, `${F.b}`, '=', `${F.erg}`]), answer: L9_F[F.typ], wrong: labels.filter(l => l !== L9_F[F.typ]),
+    fixed: true, order: labels, layout: 'col', key: 'rd' + F.a + F.op + F.b + '=' + F.erg, explain: warum + ' Tipp: Mit Überschlag oder Umkehraufgabe findest du Fehler schnell.' });
+}
+
+
+Object.assign(GAMES, {
+  blitzblick: { id: 'blitzblick', w: l9W('m-zahlen'), g: 'm-zahlen', t: 'Blitzblick', d: 'Punkte im Zwanziger- und Hunderterfeld auf einen Blick erkennen', i: '👁️', gen: genBlitzblick, max: 3, start: [1, 1, 2, 3], klv: [1, 2, 2] },
+  zuhoeren: { id: 'zuhoeren', w: l9W('d-lesen'), g: 'd-lesen', t: 'Zuhören & verstehen', d: 'Lumi liest eine Geschichte vor, dann kommen Fragen', i: '🎧', gen: genZuhoeren, max: 2, start: [1, 1, 2, 2], klv: [2, 3], n: 6, nomix: 1 },
+  lesestrategie: { id: 'lesestrategie', w: l9W('d-lesen'), g: 'd-lesen', t: 'Lesestrategien', d: 'Überschrift, Zwischenüberschrift, Schlüsselwort, Zusammenfassung', i: '🔦', gen: genLesestrategie, max: 1, start: [1, 1, 1, 1], klv: [3], n: 8 },
+  schreibwerkstatt: { id: 'schreibwerkstatt', w: l9W('d-schreiben'), g: 'd-schreiben', t: 'Schreibwerkstatt', d: 'Einladung, Anleitung, treffende Wörter, Sätze verbinden', i: '📝', gen: genSchreibwerkstatt, max: 2, start: [1, 1, 2, 2], klv: [2, 3] },
+  tabellen: { id: 'tabellen', w: l9W('m-sach'), g: 'm-sach', t: 'Tabellen-Profi', d: 'Menge und Preis, Weg und Zeit: Tabellen ergänzen', i: '📋', gen: genTabellen, max: 3, start: [1, 1, 2, 3], klv: [2, 3, 4] },
+  rechendetektiv: { id: 'rechendetektiv', w: l9W('m-rechnen'), g: 'm-rechnen', t: 'Rechen-Detektiv', d: 'Fehler in Lumis Rechnungen finden, Kopf oder schriftlich?', i: '🔍', gen: genRechenDetektiv, max: 3, start: [1, 1, 2, 3], klv: [2, 3, 4] }
+});
+if (typeof EK !== 'undefined') Object.assign(EK, {
+  blitzblick: { t: 'Blitzblick', e: ['Zähl nicht jeden Punkt einzeln. Schau auf die *Fünfer* und *Zehner*.', 'Fünf rote und fünf blaue Punkte sind eine volle Zehnerreihe.', 'Im Hunderterfeld zählst du erst die vollen Reihen, dann den Rest.'], b: ['Eine volle Reihe und drei Punkte: 13', 'Vier volle Reihen und sieben Punkte: 47'] },
+  zuhoeren: { t: 'Gut zuhören', e: ['Hör die ganze Geschichte in Ruhe an.', 'Achte auf *wer*, *wo*, *wann* und *was passiert*.', 'Du darfst die Geschichte so oft anhören, wie du willst.'], b: ['Wer? Mats · Wo? beim Frühstück · Was? Der Zahn steckt im Brötchen.'] },
+  lesestrategie: { t: 'Lesestrategien', e: ['*Vor dem Lesen*: Überschrift lesen und überlegen, worum es geht.', '*Beim Lesen*: Zwischenüberschriften und Schlüsselwörter zeigen das Wichtigste.', '*Nach dem Lesen*: in einem Satz zusammenfassen.'], b: ['Überschrift „Der Igel im Winter“: Es geht wohl darum, wie der Igel den Winter übersteht.'] },
+  schreibwerkstatt: { t: 'Gute Texte schreiben', e: ['Eine *Einladung* sagt was, wann, wo und wer einlädt.', 'Ersetze Wiederholungen durch *Fürwörter* oder andere Wörter.', 'Treffende Verben wie flüstern, rufen oder jubeln machen Texte lebendig.'], b: ['Mia geht in den Garten. *Sie* pflückt Äpfel.'] },
+  tabellen: { t: 'Tabellen ergänzen', e: ['Rechne zuerst aus, was zu *1* gehört.', 'Dann nimmst du mal: Doppelt so viele kosten doppelt so viel.', 'Prüfe: Passt deine Zahl zu den anderen in der Tabelle?'], b: ['2 Hefte kosten 6 €, also 1 Heft 3 €', '5 Hefte kosten 5 · 3 € = 15 €'] },
+  rechendetektiv: { t: 'Rechenfehler finden', e: ['Typische Fehler: *Übertrag vergessen*, beim Minus falsch herum abgezogen, Ziffern vertauscht, Null vergessen.', 'Mach den *Überschlag*: Passt das Ergebnis ungefähr?', 'Mach die *Umkehraufgabe*: Kommt wieder die Startzahl heraus?'], b: ['47 + 28 = 65? Überschlag 50 + 30 = 80. Das kann nicht stimmen.'] }
+});
+
+/*@@src lernen279b.js@@*/
+
+const lpW = g => (typeof GROUPS !== 'undefined' && GROUPS[g] ? GROUPS[g].w : undefined);
+
+function lpFrage(rows, ctx, pre, extra) {
+  const lv = (ctx && ctx.lv) || 1, pool = rows.filter(r => r[0] <= lv), r = ctx && ctx.draw ? ctx.draw(pool) : R.pick(pool);
+  const lang = [r[2]].concat(r[3]).some(x => String(x).length > 22);
+  const o = { prompt: r[1], answer: r[2], wrong: r[3], explain: r[4] || '', visual: r[5] || '', layout: lang ? 'col' : r[6] ? (r[6].length <= 2 ? 'row2' : r[6].length === 3 ? 'row3' : 'grid2') : 'auto', key: pre + r[1] + '|' + r[2] };
+  if (r[6]) { o.fixed = true; o.order = r[6]; }
+  return mkChoice(Object.assign(o, extra || {}));
+}
+const lpTyp = (id, typen) => typen[(typeof G !== 'undefined' && G && G.mode === 'game' && G.id === id ? G.i : R.int(0, 99)) % typen.length];
+
+
+
+function genSchriftGross(ctx) {
+  const lv = (ctx && ctx.lv) || 1, plus = R.chance(.55);
+  for (let v = 0; v < 100; v++) {
+    let nums;
+    if (plus) { const d = lv === 1 ? 4 : R.int(5, 6), k = lv === 2 && R.chance(.4) ? 3 : 2; nums = Array.from({ length: k }, () => R.int(10 ** (d - 1), 10 ** d / (k + 1))); }
+    else { const d = lv === 1 ? 4 : R.int(5, 6), a = R.int(10 ** (d - 1) * 3, 10 ** d - 1); nums = [a, R.int(10 ** (d - 2), a - 10 ** (d - 2))]; }
+    const ans = plus ? nums.reduce((s, x) => s + x, 0) : nums[0] - nums[1];
+    if (ans > 999999 || ans <= 0) continue;
+    return mkColumn({ prompt: `Rechne schriftlich: ${nums.join(plus ? ' + ' : ' − ')}`, nums, op: plus ? '+' : '−', key: 'sg' + nums.join(plus ? '+' : '-'),
+      explain: `Rechne Stelle für Stelle von rechts: Einer, Zehner, Hunderter, Tausender und so weiter. ${plus ? 'Überträge schreibst du klein in die nächste Spalte.' : 'Reicht eine Ziffer nicht, entbündelst du von der nächsten Stelle.'} Ergebnis: ${ans}. Überschlag hilft beim Prüfen.` });
+  }
+  return mkColumn({ prompt: 'Rechne schriftlich: 4867 + 2959', nums: [4867, 2959], op: '+', key: 'sg4867', explain: 'Ergebnis: 7826.' });
+}
+
+function lpKreuz(zeilen, spalten, fehlt) {
+  return `<table class="lp-kreuz"><tr><th>·</th>${spalten.map(s => `<th>${s}</th>`).join('')}</tr>${zeilen.map((z, i) => `<tr><th>${z}</th>${spalten.map((s, j) => `<td>${fehlt && fehlt[0] === i && fehlt[1] === j ? '<span class="q-gap">?</span>' : z * s}</td>`).join('')}</tr>`).join('')}</table>`;
+}
+function genMalkreuz(ctx) {
+  const lv = (ctx && ctx.lv) || 1, a = R.int(12, 49), b = lv === 1 ? R.int(3, 9) : R.int(12, 29);
+  const zer = n => n >= 10 ? [Math.floor(n / 10) * 10, n % 10].filter(x => x) : [n], sp = zer(a), ze = zer(b);
+  if (sp.length < 2) return genMalkreuz(ctx);
+  const teile = ze.flatMap(z => sp.map(s => z * s)), summe = a * b, i = typeof G !== 'undefined' && G && G.id === 'malkreuz' ? G.i : R.int(0, 9);
+  if (i % 2 === 0) {
+    const f = [R.int(0, ze.length - 1), R.int(0, sp.length - 1)], zv = ze[f[0]], sv = sp[f[1]];
+    return mkNumber({ prompt: `Malkreuz für ${a} · ${b}: Welche Zahl gehört in das Feld mit dem Fragezeichen?`, visual: lpKreuz(ze, sp, f), answer: zv * sv, key: 'mk' + a + 'x' + b + f,
+      explain: `Im Feld steht ${zv} · ${sv} = ${zv * sv}.` });
+  }
+  return mkNumber({ prompt: `Zähl alle Teilergebnisse im Malkreuz zusammen. Was ist ${a} · ${b}?`, visual: lpKreuz(ze, sp), answer: summe, key: 'mk' + a + 'x' + b + 's',
+    explain: `${teile.join(' + ')} = ${summe}. Das Malkreuz zerlegt beide Zahlen in Zehner und Einer.` });
+}
+
+const LP_VIER = [
+  [1, 'Ist jedes Quadrat auch ein Rechteck?', 'Ja', ['Nein'], 'Ein Quadrat hat vier rechte Winkel wie jedes Rechteck. Dazu sind alle Seiten gleich lang. Darum ist jedes Quadrat ein besonderes Rechteck.', '', ['Ja', 'Nein']],
+  [1, 'Ist jedes Rechteck auch ein Quadrat?', 'Nein', ['Ja'], 'Ein Rechteck darf zwei lange und zwei kurze Seiten haben. Nur wenn alle vier Seiten gleich lang sind, ist es ein Quadrat.', '', ['Ja', 'Nein']],
+  [1, 'Ist jedes Rechteck ein Viereck?', 'Ja', ['Nein'], 'Ein Rechteck hat vier Ecken und vier Seiten, also ist es ein Viereck.', '', ['Ja', 'Nein']],
+  [1, 'Welche Figur hat vier gleich lange Seiten und vier rechte Winkel?', 'Quadrat', ['Dreieck', 'Kreis', 'Fünfeck'], 'Das ist das Quadrat.'],
+  [1, 'Wie viele rechte Winkel hat ein Rechteck?', '4', ['1', '2', '3'], 'An jeder der vier Ecken ist ein rechter Winkel.'],
+  [2, 'Welche Seiten sind bei jedem Rechteck gleich lang?', 'die gegenüberliegenden Seiten', ['die nebeneinanderliegenden Seiten', 'gar keine Seiten', 'nur die beiden oberen Ecken'], 'Gegenüberliegende Seiten sind gleich lang und parallel.'],
+  [2, 'Ein Viereck hat vier gleich lange Seiten, aber keine rechten Winkel. Ist es ein Quadrat?', 'Nein', ['Ja'], 'Ohne rechte Winkel ist es kein Quadrat. Dieses Viereck heißt Raute.', '', ['Ja', 'Nein']],
+  [2, 'Welche Linien stehen bei einem Rechteck an jeder Ecke senkrecht zueinander?', 'die beiden Seiten, die sich an der Ecke treffen', ['die beiden gegenüberliegenden Seiten', 'keine Linien'], 'An jeder Ecke treffen sich zwei Seiten im rechten Winkel, sie stehen senkrecht zueinander.']
+];
+function lpBauplan(lv) {
+  const n = lv === 1 ? 2 : 3, h = Array.from({ length: n * n }, () => R.int(lv === 1 ? 1 : 0, lv === 1 ? 3 : 4)); if (h.every(x => !x)) h[0] = 2;
+  const vis = `<div class="lp-bau"><small>Bauplan von oben: Die Zahl sagt, wie viele Würfel übereinander stehen.</small><table>${Array.from({ length: n }, (_, r) => `<tr>${h.slice(r * n, r * n + n).map(x => `<td>${x}</td>`).join('')}</tr>`).join('')}</table></div>`;
+  if (R.chance(.7)) return mkNumber({ prompt: 'Wie viele Würfel brauchst du für dieses Gebäude?', visual: vis, answer: h.reduce((a, b) => a + b, 0), key: 'bp' + h.join(''), explain: `Du zählst alle Zahlen zusammen: ${h.join(' + ')} = ${h.reduce((a, b) => a + b, 0)}.` });
+  return mkNumber({ prompt: 'Wie viele Würfel hoch ist der höchste Turm?', visual: vis, answer: Math.max(...h), key: 'bph' + h.join(''), explain: `Die größte Zahl im Bauplan ist ${Math.max(...h)}.` });
+}
+function lpWuerfelBild(t, f, r) {
+  return `<svg class="lp-wf" viewBox="0 0 178 150" role="img" aria-label="Würfel: oben ${t}, vorne ${f}, rechts ${r}"><polygon points="20,50 55,18 128,18 93,50" class="o"/><polygon points="20,50 93,50 93,130 20,130" class="v"/><polygon points="93,50 128,18 128,98 93,130" class="r"/>
+    <text x="74" y="42" class="z">${t}</text><text x="56" y="98" class="z">${f}</text><text x="110" y="82" class="z">${r}</text><text x="56" y="146" class="l">vorne</text><text x="134" y="78" class="l s">rechts</text><text x="134" y="30" class="l s">oben</text></svg>`;
+}
+function lpWuerfel(lv) {
+  let t, f, r; do { t = R.int(1, 6); f = R.int(1, 6); r = R.int(1, 6); } while (new Set([t, f, r, 7 - t, 7 - f, 7 - r]).size < 6);
+  const vis = lpWuerfelBild(t, f, r);
+  if (lv === 1 || R.chance(.3)) {
+    const w = R.pick([['unten', 7 - t, `oben ${t}`], ['hinten', 7 - f, `vorne ${f}`], ['links', 7 - r, `rechts ${r}`]]);
+    return mkNumber({ prompt: `Bei einem Spielwürfel ergeben gegenüberliegende Seiten zusammen 7. Welche Zahl ist ${w[0]}?`, visual: vis, answer: w[1], key: 'wk' + t + f + r + w[0], explain: `Gegenüber von ${w[2]} liegt ${w[1]}, denn ${7 - w[1]} + ${w[1]} = 7.` });
+  }
+  const k = R.pick([['nach rechts', 7 - r, 'Die linke Seite kommt nach oben. Links liegt gegenüber von rechts'], ['nach links', r, 'Die rechte Seite kommt nach oben'], ['nach vorne zu dir', 7 - f, 'Die hintere Seite kommt nach oben. Hinten liegt gegenüber von vorne'], ['nach hinten', f, 'Die vordere Seite kommt nach oben']]);
+  return mkNumber({ prompt: `Du kippst den Würfel einmal ${k[0]}. Welche Zahl ist dann oben?`, visual: vis, answer: k[1], key: 'wk' + t + f + r + k[0], explain: `${k[2]}: ${k[1]}.` });
+}
+function lpNetz() {
+  const a = 2, b = 3, c = 1, u = 16, typ = R.pick(['ok', 'ok2', 'gleich', 'gross', 'fehlt']), W = [b, c, b, c], x0 = [0, b, b + c, 2 * b + c].map(x => x * u + 6), y0 = c * u + 6;
+  let s = W.map((w, i) => `<rect x="${x0[i]}" y="${y0}" width="${w * u}" height="${a * u}"/>`).join('');
+  const deckel = (i, oben, hoch = c) => `<rect x="${x0[i]}" y="${oben ? y0 - hoch * u : y0 + a * u}" width="${W[i] * u}" height="${hoch * u}"/>`;
+  if (typ === 'ok') s += deckel(0, true) + deckel(0, false); else if (typ === 'ok2') s += deckel(0, true) + deckel(2, false);
+  else if (typ === 'gleich') s += deckel(0, true) + deckel(2, true); else if (typ === 'gross') s += deckel(0, true, a) + deckel(2, false); else s += deckel(0, true);
+  const vis = `<svg class="lp-netz" viewBox="0 0 ${(2 * b + 2 * c) * u + 12} ${(a + 2 * c + (typ === 'gross' ? a - c : 0)) * u + 12}" role="img" aria-label="Netz eines Quaders"><g transform="translate(0,${typ === 'gross' ? (a - c) * u : 0})">${s}</g></svg>`;
+  const ja = typ === 'ok' || typ === 'ok2', warum = { ok: 'Vier Seitenflächen bilden den Mantel, ein Deckel oben, ein Boden unten. Das passt.', ok2: 'Deckel und Boden dürfen an verschiedenen Seitenflächen hängen, solange einer oben und einer unten ist.', gleich: 'Beide Deckel hängen oben. Beim Falten liegen sie übereinander, unten bleibt ein Loch.', gross: 'Ein Deckel ist zu groß. Er passt nicht auf die Öffnung.', fehlt: 'Es sind nur fünf Flächen. Ein Quader braucht sechs.' }[typ];
+  return mkChoice({ prompt: 'Kann man aus diesem Netz einen Quader falten?', visual: vis, answer: ja ? 'Ja' : 'Nein', wrong: [ja ? 'Nein' : 'Ja'], fixed: true, order: ['Ja', 'Nein'], layout: 'row2', key: 'qn' + typ + R.int(0, 2), explain: warum });
+}
+const LP_FORM = 'M0 0 H16 V5 H6 V9 H13 V14 H6 V24 H0 Z';
+function lpBewegung() {
+  const art = R.pick(['verschoben', 'gespiegelt', 'gedreht']), band = R.chance(.5) && art !== 'gedreht';
+  const fig = (x, t) => `<path d="${LP_FORM}" transform="translate(${x},8) ${t}" class="lp-fig"/>`;
+  if (band) {
+    const s = [0, 1, 2, 3].map(i => fig(8 + i * 34 + (art === 'gespiegelt' && i % 2 ? 16 : 0), art === 'gespiegelt' && i % 2 ? 'scale(-1,1)' : '')).join('');
+    return mkChoice({ prompt: 'Wie entsteht dieses Bandornament?', visual: `<svg class="lp-band" viewBox="0 0 150 40" role="img" aria-label="Bandornament">${s}</svg>`, answer: art === 'verschoben' ? 'Die Figur wird immer verschoben.' : 'Die Figur wird abwechselnd gespiegelt.',
+      wrong: [art === 'verschoben' ? 'Die Figur wird abwechselnd gespiegelt.' : 'Die Figur wird immer verschoben.', 'Die Figur wird immer weiter gedreht.'], layout: 'col', key: 'bo' + art, explain: art === 'verschoben' ? 'Jede Figur sieht genau gleich aus, sie rückt nur ein Stück weiter.' : 'Jede zweite Figur ist das Spiegelbild der ersten, wie an einer Spiegelachse.' });
+  }
+  const t = art === 'verschoben' ? '' : art === 'gespiegelt' ? 'translate(16,0) scale(-1,1)' : 'rotate(90 8 12)';
+  return mkChoice({ prompt: 'Aus Figur A wird Figur B. Was ist passiert?', visual: `<svg class="lp-band" viewBox="0 0 110 44" role="img" aria-label="Figur A und Figur B">${fig(12, '')}<text x="14" y="42" class="l">A</text><g transform="translate(70,0)"><path d="${LP_FORM}" transform="translate(0,8) ${t}" class="lp-fig b"/></g><text x="74" y="42" class="l">B</text></svg>`,
+    answer: art, wrong: ['verschoben', 'gespiegelt', 'gedreht'].filter(x => x !== art), fixed: true, order: ['verschoben', 'gespiegelt', 'gedreht'], layout: 'row3', key: 'bw' + art,
+    explain: { verschoben: 'B sieht genau aus wie A, nur an einer anderen Stelle.', gespiegelt: 'B ist das Spiegelbild von A: links und rechts sind vertauscht.', gedreht: 'B ist A, nur um eine Vierteldrehung gedreht.' }[art] });
+}
+function genKopfgeometrie(ctx) {
+  const lv = (ctx && ctx.lv) || 1, t = lpTyp('kopfgeometrie', ['vier', 'bau', 'wuerfel', 'netz', 'bewegung']);
+  if (t === 'vier') return lpFrage(LP_VIER, ctx, 'hv');
+  if (t === 'bau') return lpBauplan(lv);
+  if (t === 'wuerfel') return lpWuerfel(lv);
+  if (t === 'netz') return lpNetz();
+  return lpBewegung();
+}
+
+function lpSaeulen(a, b, start, na, nb) {
+  const H = 110, sk = v => (v - start) / ((Math.max(a, b) - start) * 1.15) * (H - 20), ach = [start, Math.round((start + Math.max(a, b)) / 2), Math.max(a, b)];
+  return `<svg class="lp-dia" viewBox="0 0 190 ${H + 26}" role="img" aria-label="Säulendiagramm ${na} ${a}, ${nb} ${b}"><line x1="34" y1="6" x2="34" y2="${H}" class="ax"/><line x1="34" y1="${H}" x2="186" y2="${H}" class="ax"/>
+    ${ach.map(v => `<text x="30" y="${H - sk(v) + 4}" class="t" text-anchor="end">${v}</text><line x1="31" x2="186" y1="${H - sk(v)}" y2="${H - sk(v)}" class="gr"/>`).join('')}
+    <rect x="55" y="${H - sk(a)}" width="44" height="${sk(a)}" class="s1"/><rect x="122" y="${H - sk(b)}" width="44" height="${sk(b)}" class="s2"/><text x="77" y="${H + 16}" class="t" text-anchor="middle">${na}</text><text x="144" y="${H + 16}" class="t" text-anchor="middle">${nb}</text></svg>`;
+}
+function lpBaum(A, B) {
+  const H = 34 + B[1].length * A[1].length * 22, oben = 10, sx = 64, lx = 190;
+  let s = '', y = oben;
+  A[1].forEach((x, i) => { const ya = oben + (i * B[1].length + (B[1].length - 1) / 2) * 22 + 8; s += `<line x1="16" y1="${H / 2}" x2="${sx - 4}" y2="${ya}" class="ax"/><text x="${sx}" y="${ya + 4}" class="t">${esc(x)}</text>`;
+    B[1].forEach((z, j) => { const yb = oben + (i * B[1].length + j) * 22 + 8; s += `<line x1="${sx + 68}" y1="${ya}" x2="${lx - 4}" y2="${yb}" class="ax"/><text x="${lx}" y="${yb + 4}" class="t">${esc(z)}</text>`; }); });
+  return `<svg class="lp-baum" viewBox="0 0 252 ${H}" role="img" aria-label="Baumdiagramm"><circle cx="12" cy="${H / 2}" r="4" class="pt"/>${s}</svg>`;
+}
+const LP_KOMB = [[['T-Shirts', ['rot', 'blau', 'gelb', 'grün']], ['Hosen', ['Jeans', 'kurz', 'Rock']]], [['Eissorten', ['Erdbeere', 'Schoko', 'Vanille', 'Zitrone']], ['Behälter', ['Waffel', 'Becher']]],
+  [['Brote', ['Käse', 'Wurst', 'Gurke']], ['Getränke', ['Saft', 'Milch', 'Wasser']]], [['Mützen', ['gestreift', 'gepunktet', 'einfarbig']], ['Schals', ['rot', 'blau']]]];
+function genDatenProfi(ctx) {
+  const lv = (ctx && ctx.lv) || 1, t = lpTyp('datenprofi', ['dia', 'zufall', 'baum']);
+  if (t === 'dia') {
+    const start = R.pick([40, 50, 60, 80]), a = start + R.int(2, 4), b = a + R.int(3, 6), na = 'Klasse A', nb = 'Klasse B', vis = lpSaeulen(a, b, start, na, nb);
+    if (lv === 1 || R.chance(.5)) return mkChoice({ prompt: `So viele Stimmen bekam jede Klasse. Die Säule von B sieht viel größer aus. Hat B wirklich viel mehr Stimmen als A?`, visual: vis,
+      answer: `Nein, nur ${b - a} mehr. Die Achse beginnt erst bei ${start}.`, wrong: [`Ja, B hat ungefähr dreimal so viele Stimmen.`, `Ja, B hat doppelt so viele Stimmen.`], layout: 'col', key: 'di' + start + a + b,
+      explain: `A hat ${a}, B hat ${b} Stimmen. Weil die Achse nicht bei 0 beginnt, sehen kleine Unterschiede riesig aus. Schau immer auf die Zahlen an der Achse.` });
+    return mkNumber({ prompt: 'Lies an der Achse ab: Wie viele Stimmen hat B mehr als A?', visual: vis, answer: b - a, key: 'dn' + start + a + b, explain: `B hat ${b}, A hat ${a}. ${b} − ${a} = ${b - a}.` });
+  }
+  if (t === 'zufall') {
+    const f = R.pick([() => { const n = R.pick([30, 60, 120]); return ['Du würfelst ' + n + ' Mal mit einem Spielwürfel. Wie oft kommt ungefähr eine 6?', n / 6, n, `Jede Zahl hat die gleiche Chance, eine von sechs. ${n} : 6 = ${n / 6}.`]; },
+      () => { const n = R.pick([20, 40, 100]); return ['Du wirfst eine Münze ' + n + ' Mal. Wie oft kommt ungefähr Kopf?', n / 2, n, `Kopf und Zahl haben die gleiche Chance. ${n} : 2 = ${n / 2}.`]; },
+      () => { const k = R.int(1, 3), n = R.pick([40, 80]); return [`Ein Glücksrad hat 4 gleich große Felder, ${k} davon ${k === 1 ? 'ist' : 'sind'} rot. Du drehst ${n} Mal. Wie oft landest du ungefähr auf Rot?`, n * k / 4, n, `${k} von 4 Feldern sind rot. ${n} : 4 · ${k} = ${n * k / 4}.`]; }])();
+    const w = [...new Set([f[2], f[1] * 2, Math.round(f[1] / 2), f[1] * 3].filter(x => x > 0 && Math.abs(x - f[1]) >= Math.max(3, f[1] * .45)))].slice(0, 3);
+    return mkChoice({ prompt: f[0], answer: String(f[1]), wrong: w.map(String), layout: 'grid2', key: 'zf' + f[0], explain: f[3] + ' Beim echten Ausprobieren kommt es nur ungefähr so oft, mal etwas mehr, mal etwas weniger.' });
+  }
+  const [A, B] = R.pick(LP_KOMB), a = A[1].slice(0, lv === 1 ? R.int(2, 3) : R.int(3, 4)), b2 = B[1].slice(0, R.int(2, B[1].length));
+  return mkNumber({ prompt: `Du hast ${a.length} ${A[0]} und ${b2.length} ${B[0]}. Wie viele verschiedene Möglichkeiten gibt es? Das Baumdiagramm hilft.`, visual: lpBaum([A[0], a], [B[0], b2]), answer: a.length * b2.length,
+    key: 'bd' + A[0] + a.length + b2.length, explain: `${a.length} ${A[0]} und ${b2.length} ${B[0]}: ${a.length} · ${b2.length} = ${a.length * b2.length}. Von jedem ersten Ast gehen gleich viele Zweige ab. Im Baumdiagramm zählst du die Enden.` });
+}
+
+
+const LP_TEXTE = [
+  ['Fabel', 'Ein Fuchs sah hoch im Baum einen Raben mit einem Stück Käse. „Wie schön du bist!“, rief der Fuchs. „Sing mir doch etwas vor!“ Stolz öffnete der Rabe den Schnabel, und der Käse fiel hinunter. Lehre: Trau nicht jedem, der dir schmeichelt.'],
+  ['Fabel', 'Den ganzen Sommer trug die Ameise Körner in ihr Nest. Die Grille lachte nur und spielte Geige. Als der Winter kam, hatte die Grille Hunger und klopfte bei der Ameise an. Lehre: Wer rechtzeitig vorsorgt, muss später nicht hungern.'],
+  ['Sage', 'An der Küste erzählt man sich bis heute vom Seeräuber Klaus Störtebeker. Er soll seinen Schatz irgendwo vergraben haben. Gefunden hat ihn bis heute niemand, und ob es ihn wirklich gibt, weiß keiner.'],
+  ['Sage', 'Auf dem Brocken im Harz sollen sich in der Walpurgisnacht die Hexen treffen und um ein Feuer tanzen. So erzählen es die Menschen dort seit vielen hundert Jahren.'],
+  ['Märchen', 'Es war einmal ein armer Fischer, der fing einen goldenen Fisch. „Lass mich frei, dann erfülle ich dir drei Wünsche“, sprach der Fisch. Und wenn sie nicht gestorben sind, dann leben sie noch heute.'],
+  ['Märchen', 'Es war einmal eine Prinzessin, die konnte nicht lachen. Der König versprach demjenigen das halbe Königreich, der sie zum Lachen bringt. Da kam ein Junge mit einer goldenen Gans.'],
+  ['Sachtext', 'Der Rabe ist ein großer, schwarzer Vogel. Er wird bis zu 65 Zentimeter groß und frisst fast alles: Insekten, Früchte und Aas. Raben gelten als sehr klug.'],
+  ['Gedicht', 'Der Wind ist laut,\nhat Wolken geklaut.\nDer Himmel ist blau,\ndie Möwe schreit: Schau!']
+];
+const LP_COMIC = '<div class="lp-comic"><div><b>Lumi:</b> „Schau mal, ein Fisch!“</div><div><b>Möwe:</b> „Meiner!“ <i>schnapp</i></div><div><b>Lumi:</b> „Hey! Na warte!“</div></div>';
+const LP_GEDICHT = 'Der Wind ist laut,\nhat Wolken geklaut.\nDer Himmel ist blau,\ndie Möwe schreit: Schau!\n\nAm Abend am Meer\nrauscht es hin und her.\nDer Leuchtturm wacht\ndie ganze Nacht.';
+const lpGedichtHTML = () => `<div class="q-text lp-ged">${LP_GEDICHT.split('\n\n').map(s => `<p>${esc(s).replace(/\n/g, '<br>')}</p>`).join('')}</div>`;
+const LP_BEGRIFFE = [
+  [1, 'Wie viele Strophen hat das Gedicht?', '2', ['1', '4', '8'], 'Eine Strophe ist ein Abschnitt aus mehreren Versen. Hier gibt es zwei Abschnitte.', 'G'],
+  [1, 'Wie viele Verse hat eine Strophe?', '4', ['2', '3', '8'], 'Ein Vers ist eine Zeile im Gedicht. Jede Strophe hat vier Zeilen.', 'G'],
+  [1, 'Welches Wort reimt sich auf „laut“?', 'geklaut', ['Wolken', 'Wind', 'Himmel'], 'Laut und geklaut klingen am Ende gleich.', 'G'],
+  [1, 'Welches Wort reimt sich auf „Nacht“?', 'wacht', ['Meer', 'Abend', 'Leuchtturm'], 'Nacht und wacht klingen am Ende gleich.', 'G'],
+  [1, 'Welches Wort reimt sich auf „Meer“?', 'her', ['Abend', 'Wind', 'blau'], 'Meer und her klingen am Ende gleich.', 'G'],
+  [1, 'Was ist ein Vers?', 'eine Zeile in einem Gedicht', ['ein ganzes Buch', 'ein Bild im Comic', 'ein Satzzeichen'], 'Jede Zeile in einem Gedicht heißt Vers.'],
+  [1, 'Was ist eine Strophe?', 'ein Abschnitt aus mehreren Versen', ['ein einzelnes Wort', 'die Überschrift', 'der Name des Dichters'], 'Mehrere Verse bilden zusammen eine Strophe. Zwischen den Strophen ist eine Leerzeile.'],
+  [2, 'Was ist eine Figur in einer Geschichte?', 'eine Person oder ein Tier, das in der Geschichte vorkommt', ['eine Zeichnung im Mathebuch', 'der Ort, an dem alles spielt'], 'Figuren handeln in der Geschichte, zum Beispiel Fuchs und Rabe in der Fabel.'],
+  [2, 'Was ist die Handlung einer Geschichte?', 'das, was in der Geschichte passiert', ['das Bild auf dem Umschlag', 'die Anzahl der Seiten'], 'Die Handlung ist alles, was nacheinander geschieht: Anfang, Mitte und Ende.'],
+  [2, 'Was ist ein Dialog?', 'ein Gespräch zwischen Figuren', ['ein Gedicht mit Reimen', 'eine Liste von Wörtern'], 'Im Dialog sprechen Figuren miteinander. Man erkennt ihn an den Redezeichen.'],
+  [2, '„Ich rannte, so schnell ich konnte.“ Wer erzählt hier?', 'eine Ich-Erzählerin oder ein Ich-Erzähler', ['ein Erzähler, der nicht mitspielt', 'niemand'], 'Wer „ich“ sagt und selbst dabei ist, erzählt in der Ich-Form.'],
+  [2, 'Woran erkennst du eine Fabel?', 'Tiere sprechen wie Menschen, und am Ende steht eine Lehre.', ['Sie beginnt immer mit „Es war einmal“.', 'Sie hat Strophen und Reime.'], 'Fabeln sind kurz, Tiere handeln wie Menschen, und die Lehre zeigt, was man daraus lernen kann.'],
+  [2, 'Woran erkennst du eine Sage?', 'Sie spielt an einem echten Ort, aber es passiert etwas Unglaubliches.', ['Tiere sprechen, und am Ende steht eine Lehre.', 'Sie hat Sprechblasen.'], 'Sagen erzählt man sich seit langer Zeit über echte Orte und Menschen. Ob sie stimmen, weiß niemand genau.'],
+  [2, 'Woran erkennst du einen Comic?', 'Bilder erzählen die Geschichte, die Figuren sprechen in Sprechblasen.', ['Er hat Strophen und Reime.', 'Er erklärt Sachen wie ein Lexikon.'], 'Im Comic gehören Bild und Text zusammen. Geräusche stehen oft direkt im Bild.']
+];
+function genTextwissen(ctx) {
+  const lv = (ctx && ctx.lv) || 1, t = lpTyp('textwissen', ['sorte', 'begriff', 'sorte', 'begriff']), arten = ['Fabel', 'Sage', 'Märchen', 'Gedicht', 'Sachtext', 'Comic'];
+  if (t === 'sorte') {
+    const comic = R.chance(.15), [art, txt] = comic ? ['Comic', ''] : R.pick(LP_TEXTE), w = R.sample(arten.filter(a => a !== art), 3);
+    return mkChoice({ prompt: 'Was für ein Text ist das?', visual: comic ? LP_COMIC : `<div class="q-text">${esc(txt).replace(/\n/g, '<br>')}</div>`, answer: art, wrong: w, layout: 'grid2', key: 'tw' + art + (txt || '').slice(0, 20),
+      explain: { Fabel: 'Tiere sprechen wie Menschen, am Ende steht eine Lehre: eine Fabel.', Sage: 'Ein echter Ort, aber etwas Unglaubliches, von dem man sich erzählt: eine Sage.', Märchen: '„Es war einmal“, Zauber und ein gutes Ende: ein Märchen.', Gedicht: 'Verse, Reime und Strophen: ein Gedicht.', Sachtext: 'Er erklärt Tatsachen: ein Sachtext.', Comic: 'Bilder und Sprechblasen erzählen die Geschichte: ein Comic.' }[art] });
+  }
+  const pool = LP_BEGRIFFE.filter(r => r[0] <= lv), r = ctx && ctx.draw ? ctx.draw(pool) : R.pick(pool);
+  return mkChoice({ prompt: r[1], visual: r[5] === 'G' ? lpGedichtHTML() : '', answer: r[2], wrong: r[3], layout: [r[2]].concat(r[3]).some(x => x.length > 22) ? 'col' : 'grid2', key: 'tb' + r[1], explain: r[4] || '' });
+}
+
+const LP_DUSIE = [
+  ['Du fragst die Schulleiterin, wo die Turnhalle ist.', 'Können Sie mir sagen, wo die Turnhalle ist?', 'Kannst du mir sagen, wo die Turnhalle ist?'],
+  ['Du fragst deinen Freund Ben, ob er mitspielt.', 'Spielst du mit?', 'Spielen Sie mit?'],
+  ['Du bedankst dich bei der Verkäuferin in der Bäckerei.', 'Danke, Ihnen auch einen schönen Tag!', 'Danke, dir auch einen schönen Tag!'],
+  ['Du sprichst mit deiner Oma.', 'Oma, kommst du morgen zu Besuch?', 'Oma, kommen Sie morgen zu Besuch?'],
+  ['Du fragst einen Polizisten nach der Uhrzeit.', 'Entschuldigen Sie, wissen Sie, wie spät es ist?', 'Entschuldige, weißt du, wie spät es ist?'],
+  ['Du fragst ein Kind auf dem Spielplatz nach seinem Namen.', 'Wie heißt du?', 'Wie heißen Sie?'],
+  ['Ein fremder Mann im Bus hat seinen Schal verloren.', 'Entschuldigung, Sie haben Ihren Schal verloren!', 'Hey, du hast deinen Schal verloren!'],
+  ['Du schreibst an deine Lehrerin, Frau Meyer.', 'Liebe Frau Meyer, könnten Sie mir das Blatt noch einmal geben?', 'Liebe Frau Meyer, könntest du mir das Blatt noch einmal geben?']
+];
+const LP_ABSICHT = [['„Kauft jetzt den neuen Super-Roller, nur heute billiger!“', 'werben'], ['„Achtung, der Boden ist nass!“', 'warnen'], ['„Kannst du mir bitte den Kleber geben?“', 'bitten'],
+  ['„Der Zug nach Hamburg fährt heute von Gleis 3.“', 'informieren'], ['„Es tut mir leid, dass ich dich geschubst habe.“', 'sich entschuldigen'], ['„Das hast du super gemalt!“', 'loben'],
+  ['„Vorsicht, die Herdplatte ist heiß!“', 'warnen'], ['„Morgen fällt der Sport aus.“', 'informieren'], ['„Probier unser neues Eis, es schmeckt nach Sommer!“', 'werben'], ['„Würdest du mir beim Tragen helfen?“', 'bitten']];
+const LP_SPRACHE = [
+  [1, 'Welcher Satz klingt nach gesprochener Sprache?', 'Ähm, also, ich hab da so’n Ding gesehen.', ['Ich habe dort einen merkwürdigen Gegenstand gesehen.', 'Sehr geehrte Damen und Herren, hiermit lade ich Sie ein.'], 'Beim Sprechen sagen wir oft „ähm“ und kürzen Wörter ab. Geschrieben formulieren wir vollständiger.'],
+  [1, 'Welcher Satz passt eher in einen geschriebenen Brief?', 'Liebe Oma, vielen Dank für das schöne Geschenk.', ['Na, Oma, danke, ne?', 'Ey, voll cool, das Ding!'], 'In Briefen schreiben wir vollständige, freundliche Sätze.'],
+  [1, 'Was kannst du beim Sprechen zeigen, aber nicht beim Schreiben?', 'Stimme, Lautstärke und Gesicht', ['Satzzeichen', 'Großbuchstaben'], 'Beim Schreiben helfen dafür Satzzeichen wie das Ausrufezeichen.'],
+  [1, 'Groß oder klein? „Beim (s)chwimmen habe ich Wasser geschluckt.“', 'groß: beim Schwimmen', ['klein: beim schwimmen'], 'Beim heißt bei dem. Ein versteckter Begleiter macht das Verb zum Nomen.', '', ['groß: beim Schwimmen', 'klein: beim schwimmen']],
+  [1, 'Groß oder klein? „Wir (s)chwimmen im See.“', 'klein: wir schwimmen', ['groß: wir Schwimmen'], 'Hier ist schwimmen ein Verb, es steht kein Begleiter davor.', '', ['groß: wir Schwimmen', 'klein: wir schwimmen']],
+  [1, 'Groß oder klein? „Das (l)esen macht mir Spaß.“', 'groß: das Lesen', ['klein: das lesen'], 'Vor Lesen steht der Begleiter „das“. Artikelprobe: Nomen schreibt man groß.', '', ['groß: das Lesen', 'klein: das lesen']],
+  [1, 'Groß oder klein? „Ich mag die (r)ote Jacke.“', 'klein: die rote Jacke', ['groß: die Rote Jacke'], 'Rot beschreibt die Jacke, es ist ein Adjektiv. Das Nomen ist Jacke.', '', ['groß: die Rote Jacke', 'klein: die rote Jacke']],
+  [1, 'Mit welcher Probe prüfst du, ob „Freude“ ein Nomen ist?', 'Ich setze einen Begleiter davor: die Freude.', ['Ich klatsche die Silben.', 'Ich zähle die Buchstaben.'], 'Artikelprobe: Passt der, die oder das davor, ist es ein Nomen.'],
+  [1, 'Mehrzahlprobe: Bei welchem Wortpaar ist das erste Wort ein Nomen?', 'Baum, Bäume', ['schnell, schneller', 'laufen, lief'], 'Nomen haben meistens eine Einzahl und eine Mehrzahl.'],
+  [2, 'Welcher Teil ist der Nebensatz? „Ich bleibe drinnen, weil es regnet.“', 'weil es regnet', ['Ich bleibe drinnen', 'Ich bleibe'], 'Der Nebensatz beginnt hier mit „weil“. Allein ergibt er keinen ganzen Satz.'],
+  [2, 'Welcher Teil ist der Nebensatz? „Wenn die Sonne scheint, gehen wir zum Strand.“', 'Wenn die Sonne scheint', ['gehen wir zum Strand', 'zum Strand'], 'Der Nebensatz beginnt mit „wenn“, das gebeugte Verb „scheint“ steht am Ende.'],
+  [2, 'Welcher Teil ist der Hauptsatz? „Lea freut sich, dass Oma kommt.“', 'Lea freut sich', ['dass Oma kommt', 'Oma kommt'], 'Der Hauptsatz kann allein stehen. „dass Oma kommt“ ist der Nebensatz.'],
+  [2, 'Welcher Teil ist der Nebensatz? „Obwohl ich müde bin, lese ich weiter.“', 'Obwohl ich müde bin', ['lese ich weiter', 'ich weiter'], 'Nebensätze beginnen oft mit Bindewörtern wie obwohl, weil, wenn, dass.'],
+  [2, 'Wo steht das gebeugte Verb im Nebensatz? „…, weil es heute regnet.“', 'am Ende', ['an zweiter Stelle', 'ganz vorne'], 'Im Nebensatz steht das gebeugte Verb am Ende: weil es heute regnet.', '', ['ganz vorne', 'an zweiter Stelle', 'am Ende']],
+  [2, 'Wo steht das gebeugte Verb im Aussagesatz? „Wir gehen heute schwimmen.“', 'an zweiter Stelle', ['am Ende', 'ganz vorne'], 'Im Hauptsatz steht das gebeugte Verb an zweiter Stelle: Wir (1) gehen (2) …', '', ['ganz vorne', 'an zweiter Stelle', 'am Ende']]
+];
+function genSprachforscher(ctx) {
+  const lv = (ctx && ctx.lv) || 1, t = lpTyp('sprachforscher', ['dusie', 'absicht', 'sprache', 'sprache']);
+  if (t === 'dusie') {
+    const [lage, ja, nein] = R.pick(LP_DUSIE);
+    return mkChoice({ prompt: `${lage} ${/schreibst/.test(lage) ? 'Was schreibst du?' : 'Was sagst du?'}`, answer: ja, wrong: [nein], layout: 'col', key: 'ds' + lage, explain: 'Erwachsene, die du nicht gut kennst, siezt du: Sie, Ihnen. Familie, Freunde und Kinder duzt du.' });
+  }
+  if (t === 'absicht') {
+    const [s, a] = R.pick(LP_ABSICHT), alle = ['informieren', 'bitten', 'werben', 'warnen', 'sich entschuldigen', 'loben'];
+    return mkChoice({ prompt: 'Was will die Person mit diesem Satz?', visual: `<div class="q-text">${esc(s)}</div>`, answer: a, wrong: R.sample(alle.filter(x => x !== a), 3), layout: 'grid2', key: 'sa' + s,
+      explain: `Hier will jemand ${a}. Wer weiß, was jemand will, versteht auch besser, wie es gemeint ist.` });
+  }
+  return lpFrage(LP_SPRACHE, ctx, 'sp');
+}
+
+const LP_PLATT = [['Huus', 'Haus'], ['Water', 'Wasser'], ['Appel', 'Apfel'], ['Schipp', 'Schiff'], ['lütt', 'klein'], ['Deern', 'Mädchen'], ['Jung', 'Junge'], ['snacken', 'sprechen'],
+  ['Büx', 'Hose'], ['Kopp', 'Kopf'], ['Been', 'Bein'], ['Melk', 'Milch'], ['Botter', 'Butter'], ['Brood', 'Brot'], ['Peerd', 'Pferd'], ['Koh', 'Kuh'], ['Kark', 'Kirche']];
+const LP_FREMD = [['Spaghetti', 'Italienisch'], ['Pizza', 'Italienisch'], ['Cappuccino', 'Italienisch'], ['Restaurant', 'Französisch'], ['Garage', 'Französisch'], ['Croissant', 'Französisch'],
+  ['Computer', 'Englisch'], ['Jeans', 'Englisch'], ['Baby', 'Englisch'], ['Siesta', 'Spanisch'], ['Fiesta', 'Spanisch'], ['Paella', 'Spanisch']];
+const LP_SCHREIB = [['Restaurant', ['Restorant', 'Restaurang', 'Resturant']], ['Theater', ['Teater', 'Theata', 'Tiater']], ['Rhythmus', ['Rütmus', 'Rhytmus', 'Rythmus']], ['Computer', ['Kompjuter', 'Computa', 'Kommputer']],
+  ['Garage', ['Garasche', 'Garahsche', 'Garaje']], ['Clown', ['Klaun', 'Clawn', 'Klown']], ['telefonieren', ['telefoniren', 'telefonihren', 'telefonieeren']], ['reparieren', ['repariren', 'reparihren', 'reparieeren']], ['Maschine', ['Maschiene', 'Maschihne', 'Machine']]];
+const LP_ABK = [['z. B.', 'zum Beispiel'], ['usw.', 'und so weiter'], ['Nr.', 'Nummer'], ['Str.', 'Straße'], ['ca.', 'circa, also ungefähr'], ['bzw.', 'beziehungsweise'], ['Std.', 'Stunde'],
+  ['Min.', 'Minute'], ['u. a.', 'unter anderem'], ['Hbf', 'Hauptbahnhof'], ['PS', 'Nachtrag am Ende eines Briefes'], ['Mo.', 'Montag'], ['km', 'Kilometer']];
+const LP_LAND = [
+  [1, 'Was bedeutet „Moin“ in Norddeutschland?', 'Hallo, zu jeder Tageszeit', ['nur Guten Morgen', 'Tschüss'], 'Moin sagt man in Norddeutschland morgens, mittags und abends.'],
+  [1, 'Was ist Plattdeutsch?', 'eine Regionalsprache aus Norddeutschland', ['ein Dialekt aus Bayern', 'eine Geheimsprache von Piraten'], 'Plattdeutsch, auch Niederdeutsch, wird vor allem in Norddeutschland gesprochen, zum Beispiel an der Küste und auf dem Land.'],
+  [1, 'Womit sprechen Menschen in der Gebärdensprache?', 'mit Händen, Gesicht und Körper', ['nur mit der Stimme', 'mit Pfeiftönen'], 'Die Deutsche Gebärdensprache ist eine eigene Sprache mit eigener Grammatik.'],
+  [1, 'Ein Kind spricht zu Hause Deutsch und Spanisch. Wie nennt man das?', 'zweisprachig', ['einsprachig', 'plattdeutsch'], 'Wer mit zwei Sprachen aufwächst, ist zweisprachig. Das ist eine tolle Stärke.'],
+  [2, 'In welcher Gegend Niedersachsens spricht man Saterfriesisch?', 'im Saterland', ['im Harz', 'in Göttingen'], 'Saterfriesisch wird nur noch von wenigen Menschen im Saterland gesprochen, im Landkreis Cloppenburg.'],
+  [2, 'Wer nutzt die Deutsche Gebärdensprache vor allem?', 'gehörlose Menschen', ['Babys, die noch nicht laufen können', 'Pilotinnen im Flugzeug'], 'Gehörlose und schwerhörige Menschen und alle, die mit ihnen sprechen.']
+];
+function genSprachenland(ctx) {
+  const lv = (ctx && ctx.lv) || 1, t = lpTyp('sprachenland', ['platt', 'fremd', 'abk', 'land', 'schreib']);
+  if (t === 'platt') {
+    const [p, d] = R.pick(LP_PLATT), w = R.sample(LP_PLATT.filter(x => x[0] !== p), 3).map(x => x[1]);
+    return mkChoice({ prompt: `Was heißt das plattdeutsche Wort „${p}“?`, answer: d, wrong: w, layout: 'grid2', key: 'pl' + p, explain: `„${p}“ heißt ${d}. Viele plattdeutsche Wörter ähneln dem Englischen: Water, Appel, Schipp.` });
+  }
+  if (t === 'fremd') {
+    const [w, s] = R.pick(LP_FREMD);
+    return mkChoice({ prompt: `Aus welcher Sprache kommt das Wort „${w}“?`, answer: s, wrong: ['Italienisch', 'Französisch', 'Englisch', 'Spanisch'].filter(x => x !== s), fixed: true, order: ['Englisch', 'Französisch', 'Italienisch', 'Spanisch'], layout: 'grid2', key: 'fw' + w,
+      explain: `„${w}“ kommt aus dem ${s}en. Fremdwörter behalten oft ihre fremde Schreibung.` });
+  }
+  if (t === 'schreib') {
+    const [w, f] = R.pick(LP_SCHREIB);
+    return mkChoice({ prompt: 'Welches Fremdwort ist richtig geschrieben?', answer: w, wrong: f, layout: 'grid2', key: 'fs' + w, explain: `Richtig ist „${w}“. Fremdwörter muss man sich oft merken.${/ieren$/.test(w) ? ' Verben mit -ieren schreibt man immer mit ie.' : ''}` });
+  }
+  if (t === 'abk') {
+    const [k, l] = R.pick(LP_ABK), w = R.sample(LP_ABK.filter(x => x[0] !== k), 3).map(x => x[1]);
+    return mkChoice({ prompt: `Was bedeutet die Abkürzung „${k}“?`, answer: l, wrong: w, layout: 'col', key: 'ab' + k, explain: `„${k}“ steht für ${l}. Abkürzungen sparen Platz beim Schreiben.` });
+  }
+  return lpFrage(LP_LAND, ctx, 'sl');
+}
+
+
+const LP_ARBEIT = [
+  [1, 'Ein Friseur schneidet Haare. Was für eine Arbeit ist das?', 'eine Dienstleistung', ['etwas herstellen', 'ein Ehrenamt'], 'Bei einer Dienstleistung hilft jemand anderen Menschen, ohne ein Ding herzustellen.', '', ['etwas herstellen', 'eine Dienstleistung', 'ein Ehrenamt']],
+  [1, 'In einer Fabrik werden Fahrräder gebaut. Was für eine Arbeit ist das?', 'etwas herstellen', ['eine Dienstleistung', 'ein Ehrenamt'], 'Hier entsteht ein Ding: Das nennt man Produktion.', '', ['etwas herstellen', 'eine Dienstleistung', 'ein Ehrenamt']],
+  [1, 'Eine Frau hilft jeden Samstag ohne Lohn bei der Essensausgabe für arme Menschen. Was ist das?', 'ein Ehrenamt', ['etwas herstellen', 'eine Dienstleistung'], 'Wer freiwillig und ohne Lohn hilft, hat ein Ehrenamt.', '', ['etwas herstellen', 'eine Dienstleistung', 'ein Ehrenamt']],
+  [1, 'Eine Busfahrerin bringt Kinder zur Schule. Was für eine Arbeit ist das?', 'eine Dienstleistung', ['etwas herstellen', 'ein Ehrenamt'], 'Sie stellt nichts her, sie fährt Menschen: eine Dienstleistung.', '', ['etwas herstellen', 'eine Dienstleistung', 'ein Ehrenamt']],
+  [1, 'Was bekommen Menschen meistens für ihre Arbeit?', 'Lohn oder Gehalt', ['Hausaufgaben', 'Zeugnisse'], 'Mit dem Geld bezahlen sie Miete, Essen und alles andere.'],
+  [2, 'Was bedeutet es, wenn jemand arbeitslos ist?', 'Er möchte arbeiten, hat aber gerade keine Arbeitsstelle.', ['Er hat gerade Urlaub.', 'Er ist schon in Rente.'], 'Arbeitslose suchen eine neue Stelle und bekommen in der Zeit Unterstützung.'],
+  [1, 'Was bedeutet „fair gehandelt“?', 'Die Menschen, die es anbauen oder herstellen, bekommen einen gerechten Lohn.', ['Die Ware ist besonders billig.', 'Die Ware kommt immer aus Deutschland.'], 'Fairer Handel sorgt dafür, dass zum Beispiel Kakaobauern von ihrer Arbeit leben können.'],
+  [1, 'Woher kommen die Kakaobohnen für Schokolade vor allem?', 'aus warmen Ländern, zum Beispiel in Westafrika', ['von Apfelbäumen in Deutschland', 'aus der Nordsee'], 'Kakaobäume wachsen nur dort, wo es das ganze Jahr warm und feucht ist.'],
+  [2, 'Warum kostet fair gehandelte Schokolade oft etwas mehr?', 'Weil die Bauern mehr Geld für ihren Kakao bekommen', ['Weil sie mehr Zucker enthält', 'Weil sie größer verpackt ist'], 'Der etwas höhere Preis kommt bei den Menschen an, die den Kakao anbauen.'],
+  [1, 'Was hilft der Umwelt beim Einkaufen?', 'eine Stofftasche mitnehmen', ['jedes Mal eine neue Plastiktüte nehmen', 'alles doppelt verpacken lassen'], 'Wer Taschen öfter benutzt, spart Müll.'],
+  [1, 'Was ist ein Vorurteil?', 'eine Meinung über jemanden, bevor man ihn kennt', ['eine Note in der Schule', 'ein Urteil vor Gericht'], 'Vorurteile sind oft falsch. Lern Menschen erst kennen, bevor du urteilst.'],
+  [1, '„Mädchen können nicht Fußball spielen.“ Was ist das?', 'ein Vorurteil', ['eine Tatsache', 'eine Spielregel'], 'Mädchen und Jungen können genauso gut Fußball spielen.'],
+  [1, 'Ein neues Kind spricht noch wenig Deutsch. Was ist fair?', 'Es freundlich einladen und langsam erklären', ['Es auslachen', 'Es nicht mitspielen lassen'], 'Jeder fängt mal neu an. Mit Geduld und Gesten klappt Verstehen.'],
+  [2, 'Was bedeutet Migration?', 'Menschen ziehen in ein anderes Land, um dort zu leben', ['Menschen fahren für eine Woche in den Urlaub', 'Vögel bauen ein Nest'], 'Viele Familien in Deutschland haben Vorfahren aus anderen Ländern.'],
+  [2, 'Warum ziehen Menschen in ein anderes Land?', 'zum Beispiel wegen Arbeit, Familie oder weil in ihrer Heimat Krieg ist', ['nur weil ihnen langweilig ist', 'weil man das alle zwei Jahre muss'], 'Es gibt viele Gründe. Manche Menschen müssen fliehen, um in Sicherheit zu sein.'],
+  [1, 'Dürfen Jungen und Mädchen jeden Beruf lernen?', 'Ja', ['Nein'], 'Ob Pilotin oder Erzieher: Jeder Beruf steht allen offen.', '', ['Ja', 'Nein']],
+  [1, 'Wer sollte in der Familie im Haushalt helfen?', 'alle, so gut sie können', ['nur die Mama', 'nur die Kinder'], 'Wenn alle mithelfen, bleibt mehr Zeit für schöne Dinge.']
+];
+const LP_FEUER = [
+  [1, 'Was braucht ein Feuer zum Brennen?', 'Brennstoff, Sauerstoff und Wärme', ['nur Wasser', 'Sand und Steine'], 'Fehlt eins davon, geht das Feuer aus.'],
+  [1, 'Du stülpst ein Glas über eine brennende Kerze. Was passiert?', 'Die Flamme geht nach kurzer Zeit aus.', ['Die Flamme wird immer größer.', 'Nichts, die Kerze brennt weiter.'], 'Unter dem Glas fehlt bald frische Luft mit Sauerstoff.'],
+  [1, 'Warum löscht Wasser ein Lagerfeuer?', 'Es kühlt das Feuer ab.', ['Es macht das Holz trockener.', 'Es bringt mehr Sauerstoff.'], 'Ohne genug Wärme kann das Holz nicht weiterbrennen.'],
+  [2, 'Warum darf man brennendes Fett nie mit Wasser löschen?', 'Das Wasser verdampft schlagartig und schleudert brennendes Fett heraus.', ['Weil Wasser dafür zu teuer ist', 'Weil das Fett dann gefriert'], 'Bei einem Fettbrand sofort einen Erwachsenen holen. Er legt einen Deckel drauf und schaltet den Herd aus. Brennt es weiter: Notruf 112.'],
+  [1, 'Was bleibt übrig, wenn Holz verbrannt ist?', 'Asche', ['neues Holz', 'Eis'], 'Beim Verbrennen entstehen Wärme, Licht, Rauch und Asche.'],
+  [1, 'Was ist Rost?', 'Eisen, das mit Wasser und Luft reagiert hat', ['eine Farbe, die man aufmalt', 'ein Pilz auf dem Metall'], 'Rost ist rotbraun und bröselig. Das Eisen wird dabei langsam zerstört.'],
+  [1, 'Wo rostet ein Fahrrad am schnellsten?', 'draußen im Regen', ['trocken im Keller', 'im Wohnzimmer'], 'Rost braucht Wasser und Luft.'],
+  [1, 'Was schützt Eisen vor Rost?', 'Farbe, Lack oder Öl', ['Salzwasser', 'Regen'], 'Die Schicht hält Wasser und Luft vom Eisen fern.'],
+  [2, 'Warum rosten Autos und Schiffe an der Küste besonders schnell?', 'Salzige Luft und Salzwasser beschleunigen das Rosten.', ['Weil es an der Küste kälter ist', 'Weil dort weniger Sonne scheint'], 'Salz macht Rost schneller. Darum werden Schiffe oft gestrichen.'],
+  [2, 'Rostet ein Ring aus Gold?', 'Nein, Gold rostet nicht.', ['Ja, sehr schnell', 'Nur im Winter'], 'Rost entsteht nur bei Eisen. Gold bleibt glänzend.'],
+  [1, 'Was ist Bionik?', 'Menschen lernen von der Natur und bauen Erfindungen danach.', ['eine Sportart im Wasser', 'ein anderes Wort für Biologieunterricht'], 'Bionik verbindet Biologie und Technik.'],
+  [1, 'Die Klette hält mit winzigen Haken am Fell fest. Welche Erfindung ist danach entstanden?', 'der Klettverschluss', ['der Reißverschluss', 'der Druckknopf'], 'Ein Ingenieur sah die Kletten an seinem Hund und baute das Prinzip nach.'],
+  [2, 'Wassertropfen perlen vom Lotusblatt ab und nehmen Schmutz mit. Wofür nutzt man das?', 'für Farben und Oberflächen, die sauber bleiben', ['für Schuhe, die besonders laut sind', 'für Brot, das länger hält'], 'Das heißt Lotus-Effekt.'],
+  [1, 'Welches Tier war ein Vorbild für Flugzeuge?', 'der Vogel', ['der Regenwurm', 'die Schnecke'], 'Flügelform und Gleitflug haben sich die Erfinder bei Vögeln abgeschaut.'],
+  [2, 'Fledermäuse finden sich im Dunkeln mit Echos zurecht. Welche Technik ähnelt dem?', 'das Echolot auf Schiffen', ['die Taschenlampe', 'das Fernglas'], 'Das Echolot schickt Töne ins Wasser und misst, wann das Echo zurückkommt.'],
+  [1, 'Welche Nummer wählst du, wenn es brennt?', '112', ['110', '115', '911'], '112 ist der Notruf für Feuerwehr und Rettungsdienst. Die 110 ist die Polizei.'],
+  [1, 'Was ist sicher im Umgang mit Feuer?', 'Kerzen nur zusammen mit einem Erwachsenen anzünden', ['allein mit Streichhölzern spielen', 'eine Kerze brennen lassen und aus dem Zimmer gehen'], 'Feuer kann sich schnell ausbreiten. Darum nie allein damit spielen und Kerzen nie unbeaufsichtigt lassen.'],
+  [1, 'Was brennt gut?', 'trockenes Holz', ['ein Stein', 'Wasser', 'eine Glasflasche'], 'Holz ist ein Brennstoff. Steine, Wasser und Glas brennen nicht.'],
+  [1, 'Wovon haben sich Menschen die Schwimmflossen abgeschaut?', 'von den Füßen von Enten und Fröschen', ['von Vogelfedern', 'von Schneckenhäusern'], 'Die Schwimmhäute zwischen den Zehen schieben viel Wasser weg. So schwimmt man schneller.']
+];
+const LP_Q4 = ['Bildquelle', 'Sachquelle', 'Textquelle', 'mündliche Quelle'];
+const LP_QUELLEN = [
+  [1, 'Woher wissen wir, wie Menschen früher gelebt haben?', 'aus Quellen wie alten Fotos, Gegenständen und Texten', ['nur aus Märchen', 'aus dem Wetterbericht'], 'Quellen sind Spuren aus der Vergangenheit.'],
+  [1, 'Ein altes Foto von Oma als Kind ist eine …', 'Bildquelle', ['Sachquelle', 'Textquelle', 'mündliche Quelle'], 'Fotos, Gemälde und Zeichnungen sind Bildquellen.', '', LP_Q4],
+  [1, 'Ein alter Schulranzen aus Leder ist eine …', 'Sachquelle', ['Bildquelle', 'Textquelle', 'mündliche Quelle'], 'Gegenstände aus früherer Zeit sind Sachquellen.', '', LP_Q4],
+  [1, 'Ein Tagebuch aus dem Jahr 1950 ist eine …', 'Textquelle', ['Bildquelle', 'Sachquelle', 'mündliche Quelle'], 'Alles Geschriebene ist eine Textquelle.', '', LP_Q4],
+  [1, 'Opa erzählt, wie er als Kind ohne Fernseher gespielt hat. Das ist eine …', 'mündliche Quelle', ['Bildquelle', 'Sachquelle', 'Textquelle'], 'Erzählungen von Menschen, die es selbst erlebt haben, sind mündliche Quellen.', '', LP_Q4],
+  [2, 'Eine alte Münze aus dem Garten ist eine …', 'Sachquelle', ['Bildquelle', 'Textquelle', 'mündliche Quelle'], 'Die Münze ist ein Gegenstand, also eine Sachquelle.', '', LP_Q4],
+  [2, 'Ein Gemälde einer Burg aus dem Mittelalter ist eine …', 'Bildquelle', ['Sachquelle', 'Textquelle', 'mündliche Quelle'], 'Gemälde sind Bildquellen.', '', LP_Q4],
+  [1, 'Wie nennt man Menschen, die erzählen, was sie früher selbst erlebt haben?', 'Zeitzeugen', ['Zeitreisende', 'Zeitansager'], 'Zeitzeugen waren selbst dabei.'],
+  [1, 'Tatsache oder Erfindung? „Ritter trugen Rüstungen aus Metall.“', 'Tatsache', ['Erfindung'], 'Das zeigen echte Rüstungen in Museen.', '', ['Tatsache', 'Erfindung']],
+  [1, 'Tatsache oder Erfindung? „Ritter konnten Feuer spucken.“', 'Erfindung', ['Tatsache'], 'Das kommt nur in Geschichten vor.', '', ['Tatsache', 'Erfindung']],
+  [1, 'Tatsache oder Erfindung? „Steinzeitmenschen ritten auf Dinosauriern.“', 'Erfindung', ['Tatsache'], 'Die Dinosaurier waren schon viele Millionen Jahre ausgestorben, als es Menschen gab.', '', ['Tatsache', 'Erfindung']],
+  [2, 'Tatsache oder Erfindung? „Die Wikinger hatten Hörner an ihren Helmen.“', 'Erfindung', ['Tatsache'], 'Das ist ein bekannter Irrtum. Echte Wikingerhelme hatten keine Hörner. Die Hörner haben sich Künstler viel später ausgedacht.', '', ['Tatsache', 'Erfindung']],
+  [2, 'Tatsache oder Erfindung? „Die Römer bauten Straßen aus Stein.“', 'Tatsache', ['Erfindung'], 'Reste römischer Straßen gibt es noch heute.', '', ['Tatsache', 'Erfindung']],
+  [1, 'Warum darf man im Museum alte Dinge oft nicht anfassen?', 'damit sie nicht kaputtgehen und lange erhalten bleiben', ['weil sie sonst verschwinden', 'weil sie heiß sind'], 'Viele Quellen sind sehr empfindlich und einmalig.'],
+  [1, 'Was zeigt eine Zeitleiste?', 'Ereignisse in der Reihenfolge, in der sie passiert sind', ['die Uhrzeit von heute', 'den Stundenplan'], 'Auf der Zeitleiste stehen ältere Ereignisse weiter links.'],
+  [1, 'Ein alter Brief von Uropa ist eine …', 'Textquelle', ['Bildquelle', 'Sachquelle', 'mündliche Quelle'], 'Briefe sind geschrieben, also Textquellen.', '', LP_Q4],
+  [1, 'Eine Steinaxt aus der Steinzeit ist eine …', 'Sachquelle', ['Bildquelle', 'Textquelle', 'mündliche Quelle'], 'Werkzeuge sind Gegenstände, also Sachquellen.', '', LP_Q4],
+  [1, 'Tatsache oder Erfindung? „Als Oma ein Kind war, gab es noch kein Internet.“', 'Tatsache', ['Erfindung'], 'Das Internet gibt es für alle erst seit etwa 30 Jahren. Frag Oma oder Opa doch einmal, wie sie früher Dinge herausgefunden haben.', '', ['Tatsache', 'Erfindung']],
+  [1, 'Wo kannst du alte Quellen anschauen?', 'im Museum oder im Archiv', ['im Supermarkt', 'im Schwimmbad'], 'Museen und Archive bewahren alte Dinge, Bilder und Texte auf.']
+];
+function genArbeitWelt(ctx) { return lpFrage(LP_ARBEIT, ctx, 'aw'); }
+function genFeuerRost(ctx) { return lpFrage(LP_FEUER, ctx, 'fr'); }
+function genQuellen(ctx) { return lpFrage(LP_QUELLEN, ctx, 'qu'); }
+
+
+const LP_KARTEN = [
+  ['Dear Tom,\nplease come to my birthday party on Saturday at 3 o’clock. We meet at the park. Please bring your football!\nLove, Emma', [['When is the party?', 'on Saturday at 3 o’clock', ['on Sunday at 5 o’clock', 'on Monday morning']], ['Where is the party?', 'at the park', ['at the beach', 'at school']], ['What should Tom bring?', 'his football', ['a cake', 'his swimming things']], ['Whose birthday is it?', 'Emma’s', ['Tom’s', 'Grandpa’s']]]],
+  ['Happy Birthday, Grandpa!\nYou are 70 today. Have a lovely day!\nLove, Lily', [['How old is Grandpa?', '70', ['17', '7']], ['Who wrote the card?', 'Lily', ['Grandpa', 'Emma']]]],
+  ['Hi Max,\nthank you for the great book! I read it every evening.\nSee you soon,\nBen', [['Why does Ben write?', 'to say thank you for a book', ['to invite Max to a party', 'to say sorry']], ['When does Ben read the book?', 'every evening', ['every morning', 'never']]]],
+  ['Merry Christmas and a Happy New Year!\nLove from the Smith family', [['What is this card for?', 'Christmas and New Year', ['Easter', 'a birthday']], ['Who sends the card?', 'the Smith family', ['Santa', 'the teacher']]]],
+  ['Pool party!\nSunday, 2 o’clock\nPlease bring your swimming things and a towel.\nSam', [['What kind of party is it?', 'a pool party', ['a fancy dress party', 'a tea party']], ['What should you bring?', 'swimming things and a towel', ['a football', 'a present for Sam’s dog']]]]
+];
+const LP_KULTUR = [
+  [1, 'When is Valentine’s Day?', 'on 14 February', ['on 31 October', 'on 25 December', 'on 1 May'], 'Am 14. Februar schenken sich viele Menschen Karten, Blumen oder Schokolade.'],
+  [1, 'What do people often give on Valentine’s Day?', 'cards, flowers or chocolates', ['Easter eggs', 'pumpkins'], 'Valentine’s Day ist der Tag der Liebe und Freundschaft.'],
+  [1, 'Thanksgiving is a big holiday in …', 'the USA', ['Spain', 'Germany', 'Italy'], 'Thanksgiving ist ein großes Familienfest in den USA, im November. Auch Kanada feiert es.'],
+  [1, 'What do many families eat on Thanksgiving?', 'turkey', ['sushi', 'paella', 'pizza'], 'Traditionell gibt es Truthahn, auf Englisch turkey.'],
+  [2, 'On Thanksgiving, people say thank you for …', 'the good things in their life', ['their homework', 'the rain'], 'Thanksgiving heißt Danksagung.'],
+  [1, 'Bonfire Night in Great Britain is on …', '5 November', ['14 February', '1 April', '25 December'], 'Am 5. November gibt es in Großbritannien Feuerwerk und große Feuer.'],
+  [1, 'On Pancake Day people eat …', 'pancakes', ['ice cream', 'soup', 'fish'], 'Pancake Day ist der Dienstag vor der Fastenzeit, wie bei uns Fasching.'],
+  [2, 'St Patrick’s Day is a festival from …', 'Ireland', ['Spain', 'Germany', 'France'], 'Am 17. März tragen viele Menschen Grün.'],
+  [1, 'A sign says: “Please take off your shoes.” What does it mean in German?', 'Bitte zieh die Schuhe aus.', ['Bitte zieh die Schuhe an.', 'Hier gibt es Schuhe zu kaufen.'], 'take off = ausziehen.'],
+  [1, 'A sign says: “Wet paint!” What does it mean?', 'Frisch gestrichen!', ['Nasses Wetter!', 'Bitte malen!'], 'paint = Farbe. Die Farbe ist noch nass.'],
+  [1, 'A sign says: “No dogs allowed.” What does it mean?', 'Hunde sind hier nicht erlaubt.', ['Hier gibt es Hunde.', 'Hunde bitte füttern.'], 'allowed = erlaubt.'],
+  [2, 'A sign says: “Keep off the grass.” What does it mean?', 'Bitte den Rasen nicht betreten.', ['Bitte den Rasen gießen.', 'Hier wächst kein Gras.'], 'keep off = wegbleiben.'],
+  [2, 'A sign in a shop says: “Closed on Sundays.” What does it mean?', 'Sonntags geschlossen.', ['Sonntags geöffnet.', 'Nur sonntags billiger.'], 'closed = geschlossen.'],
+  [2, 'Your English friend says: “Throw the dice and move your counter.” What should you do?', 'würfeln und die Spielfigur ziehen', ['die Karten mischen', 'eine Runde aussetzen'], 'dice = Würfel, counter = Spielfigur.'],
+  [1, 'Your friend says: “Can I have some water, please?” What does she want?', 'Sie möchte Wasser.', ['Sie möchte schwimmen.', 'Sie möchte einen Apfel.'], 'some water = etwas Wasser.']
+];
+function genEnglischKultur(ctx) {
+  if (lpTyp('englischkultur', ['karte', 'kultur']) === 'kultur') return lpFrage(LP_KULTUR, ctx, 'ek', { sayLang: 'en-GB' });
+  const [txt, fr] = R.pick(LP_KARTEN), [q, a, w] = R.pick(fr);
+  return mkChoice({ prompt: `Read the card: ${q}`, visual: `<div class="q-text lp-karte" lang="en">${esc(txt).replace(/\n/g, '<br>')}</div>`, answer: a, wrong: w, layout: 'col', key: 'kt' + q + a,
+    explain: 'Lies die Karte noch einmal genau. Einladungen sagen: when, where, what to bring.', say: q, sayLang: 'en-GB' });
+}
+
+
+Object.assign(GAMES, {
+  schriftgross: { id: 'schriftgross', w: lpW('m-rechnen'), g: 'm-rechnen', t: 'Schriftlich mit großen Zahlen', d: 'Plus und minus untereinander bis 1 Million', i: '🧮', gen: genSchriftGross, max: 2, start: [1, 1, 1, 1], klv: [4, 4] },
+  malkreuz: { id: 'malkreuz', w: lpW('m-rechnen'), g: 'm-rechnen', t: 'Malkreuz', d: '23 · 14 in Zehner und Einer zerlegen', i: '✖️', gen: genMalkreuz, max: 2, start: [1, 1, 1, 2], klv: [3, 4] },
+  kopfgeometrie: { id: 'kopfgeometrie', w: lpW('m-geo'), g: 'm-geo', t: 'Kopfgeometrie', d: 'Würfel kippen, Quadernetze, Baupläne, Haus der Vierecke, Bandornamente', i: '🧊', gen: genKopfgeometrie, max: 2, start: [1, 1, 1, 2], klv: [3, 4] },
+  datenprofi: { id: 'datenprofi', w: lpW('m-daten'), g: 'm-daten', t: 'Daten-Profi', d: 'Diagramme kritisch lesen, Zufall vorhersagen, Baumdiagramme', i: '📊', gen: genDatenProfi, max: 2, start: [1, 1, 1, 2], klv: [3, 4] },
+  textwissen: { id: 'textwissen', w: lpW('d-lesen'), g: 'd-lesen', t: 'Fabel, Sage & Co.', d: 'Textsorten erkennen, Vers, Strophe, Figur und Dialog', i: '📜', gen: genTextwissen, max: 2, start: [1, 1, 1, 2], klv: [3, 4] },
+  sprachforscher: { id: 'sprachforscher', w: lpW('d-grammatik'), g: 'd-grammatik', t: 'Sprachforscher', d: 'Du oder Sie, was will jemand sagen, Proben, Haupt- und Nebensatz', i: '🔬', gen: genSprachforscher, max: 2, start: [1, 1, 1, 2], klv: [2, 4] },
+  sprachenland: { id: 'sprachenland', w: lpW('d-woerter'), g: 'd-woerter', t: 'Platt, Fremdwörter & Abkürzungen', d: 'Moin! Plattdeutsch, Wörter aus anderen Sprachen, z. B. und usw.', i: '🗺️', gen: genSprachenland, max: 2, start: [1, 1, 2, 2], klv: [2, 3] },
+  arbeitwelt: { id: 'arbeitwelt', w: lpW('su-gesell'), g: 'su-gesell', t: 'Arbeit, Handel & Vielfalt', d: 'Berufe, fairer Handel, Vorurteile und Zusammenleben', i: '🤝', gen: genArbeitWelt, max: 2, start: [1, 1, 1, 2], klv: [3, 4] },
+  feuerrost: { id: 'feuerrost', w: lpW('su-forschen'), g: 'su-forschen', t: 'Feuer, Rost & Bionik', d: 'Was braucht Feuer? Wie entsteht Rost? Erfindungen nach der Natur', i: '🔥', gen: genFeuerRost, max: 2, start: [1, 1, 1, 2], klv: [3, 4] },
+  quellen: { id: 'quellen', w: lpW('su-zeit'), g: 'su-zeit', t: 'Spuren der Vergangenheit', d: 'Bild-, Sach-, Text- und mündliche Quellen, Tatsache oder Erfindung', i: '🏺', gen: genQuellen, max: 2, start: [1, 1, 1, 2], klv: [3, 4] },
+  englischkultur: { id: 'englischkultur', w: lpW('e-read'), g: 'e-read', t: 'Cards, Signs & Festivals', d: 'Einladungen lesen, Schilder verstehen, Valentine’s Day, Thanksgiving', i: '💌', gen: genEnglischKultur, max: 2, start: [1, 1, 2, 2], klv: [2, 3] }
+});
+if (typeof EK !== 'undefined') Object.assign(EK, {
+  schriftgross: { t: 'Schriftlich mit großen Zahlen', e: ['Schreib die Zahlen *stellengerecht* untereinander: Einer unter Einer.', 'Rechne von *rechts nach links*, Stelle für Stelle.', 'Überträge kommen klein in die nächste Spalte. Prüfe mit einem *Überschlag*.'], b: ['48 673 + 25 948 ≈ 49 000 + 26 000 = 75 000', 'genau: 74 621'] },
+  malkreuz: { t: 'Das Malkreuz', e: ['Zerlege beide Zahlen in *Zehner und Einer*.', 'Rechne jedes Feld im Kreuz einzeln aus.', 'Zähl am Ende *alle Felder zusammen*.'], b: ['23 · 14: 20 · 10 = 200, 3 · 10 = 30, 20 · 4 = 80, 3 · 4 = 12', '200 + 30 + 80 + 12 = 322'] },
+  kopfgeometrie: { t: 'Kopfgeometrie', e: ['Beim Spielwürfel ergeben gegenüberliegende Seiten zusammen *7*.', 'Ein Quadernetz hat *6 Flächen*: vier im Mantel, einen Deckel oben, einen Boden unten.', '*Verschieben*: Die Figur rückt weiter. *Spiegeln*: links und rechts tauschen. *Drehen*: Die Figur kippt zur Seite.'], b: ['Oben 2, dann ist unten 5.'] },
+  datenprofi: { t: 'Daten kritisch lesen', e: ['Schau zuerst auf die *Achse*: Beginnt sie bei 0?', 'Beim Zufall kommt jedes Ergebnis *ungefähr* so oft, wie seine Chance ist.', 'Im *Baumdiagramm* zählst du die Enden: das sind alle Möglichkeiten.'], b: ['60 Mal würfeln: ungefähr 10 Mal die 6', '3 T-Shirts und 2 Hosen: 3 · 2 = 6'] },
+  textwissen: { t: 'Textsorten und Begriffe', e: ['*Fabel*: Tiere sprechen, am Ende eine Lehre. *Sage*: echter Ort, unglaubliches Ereignis. *Märchen*: Es war einmal …', 'Ein *Vers* ist eine Zeile im Gedicht, eine *Strophe* ein Abschnitt aus mehreren Versen.', '*Figuren* handeln, die *Handlung* ist, was passiert, ein *Dialog* ist ein Gespräch.'], b: ['Fuchs und Rabe mit Lehre: eine Fabel'] },
+  sprachforscher: { t: 'Sprache untersuchen', e: ['Fremde Erwachsene *siezt* du, Familie und Freunde *duzt* du.', 'Mit Sätzen wollen wir etwas: informieren, bitten, warnen, werben.', 'Im *Nebensatz* steht das gebeugte Verb am Ende, im Hauptsatz an zweiter Stelle.'], b: ['Ich bleibe drinnen, *weil es regnet*.'] },
+  sprachenland: { t: 'Sprachen um uns herum', e: ['*Plattdeutsch* ist die Regionalsprache Norddeutschlands: Moin, lütt, snacken.', '*Fremdwörter* kommen aus anderen Sprachen und behalten oft ihre Schreibung.', '*Abkürzungen* sparen Platz: z. B., usw., Nr.'], b: ['Huus = Haus · Restaurant kommt aus dem Französischen'] },
+  arbeitwelt: { t: 'Arbeit und Zusammenleben', e: ['*Herstellen*, *Dienstleistung* oder *Ehrenamt*: Es gibt verschiedene Arten von Arbeit.', '*Fairer Handel* bedeutet gerechten Lohn für die Menschen, die etwas anbauen oder herstellen.', 'Ein *Vorurteil* ist eine Meinung über jemanden, bevor man ihn kennt.'], b: ['Friseur: Dienstleistung · Fahrradfabrik: herstellen'] },
+  feuerrost: { t: 'Feuer, Rost und Bionik', e: ['Feuer braucht *Brennstoff, Sauerstoff und Wärme*.', '*Rost* entsteht, wenn Eisen mit Wasser und Luft reagiert.', '*Bionik*: Erfindungen nach Vorbildern aus der Natur.'], b: ['Klette → Klettverschluss'] },
+  quellen: { t: 'Quellen der Geschichte', e: ['*Bildquelle*: Foto, Gemälde. *Sachquelle*: Gegenstand. *Textquelle*: Geschriebenes. *Mündliche Quelle*: Erzählung.', '*Zeitzeugen* waren selbst dabei.', 'Prüfe: Ist es eine *Tatsache* oder eine *Erfindung*?'], b: ['Opas alter Schulranzen ist eine Sachquelle.'] },
+  englischkultur: { t: 'Cards, signs and festivals', e: ['In an invitation look for *when*, *where* and *what to bring*.', 'Signs are short: closed = geschlossen, allowed = erlaubt.', 'Valentine’s Day 14 February, Bonfire Night 5 November, Thanksgiving in November.'], b: ['Please take off your shoes. = Bitte zieh die Schuhe aus.'] }
+});
 
 /*@@src lumi_live.js@@*/
 
