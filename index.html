@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-Xk8mdUzMSesJ3dlEyhCn91bPL6EoKrPBzFdKyvA4uvI=' 'sha256-QFVjtBwRxHf3sGYfLwdDO2lxltPmnVv41j0dCPZ8cGY=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-pnwrmYfR2q9PyZSA6rLjq4cU4Yf19mNdEk+vV0QP2LQ=' 'sha256-uQ1h3+qJmcoiiJP5ynOq25gX/6/a5/CBjCJriuDIdtA=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -9200,8 +9200,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '2.81.0';
-  var MAP = {"probe":0,"files":[[9190,"fehler_kern.js"],[9478,null],[9480,"data.js"],[10175,"data_more.js"],[10532,"data_su2.js"],[10759,"data_es.js"],[11101,"data_wissen.js"],[11300,"data_v21.js"],[11983,"data_v24.js"],[12469,"data_v25.js"],[12950,"data_v26.js"],[13049,"data_v29.js"],[13354,"data_v30.js"],[13684,"data_v31.js"],[13990,"data_kunst.js"],[14186,"data_v214.js"],[14289,"data_v216.js"],[14582,"schrift.js"],[14882,"eingabe.js"],[15093,"data_k34m.js"],[15611,"data_k34d.js"],[15965,"data_k34s.js"],[16419,"data_v224.js"],[17292,"data_v225w.js"],[17661,"data_v225k.js"],[18105,"data_herz.js"],[18459,"data_fb226.js"],[18602,"data_tf226.js"],[18809,"data_v227a.js"],[19900,"data_v227b.js"],[20854,"data_h28b.js"],[20894,"data_l28a.js"],[21760,"data_l28b.js"],[22940,"data_schaetz.js"],[23422,"data_party8.js"],[23472,"data_alce.js"],[24132,"data_alce2.js"],[24381,"data_alce3.js"],[24796,"registry.js"],[25310,"app.js"],[26496,"fun.js"],[27076,"fun2.js"],[27392,"atelier.js"],[27766,"kunst225.js"],[27956,"herz.js"],[28320,"reise.js"],[28622,"iglu.js"],[28788,"offline.js"],[28895,"party.js"],[29379,"meine.js"],[29735,"loeffel.js"],[29906,"trend.js"],[30448,"fun228a.js"],[31299,"fun228b.js"],[31960,"kueche.js"],[32999,"stimme.js"],[33054,"klassen.js"],[33203,"freunde_vorab.js"],[33224,"mut.js"],[33646,"schule.js"],[34135,"fussball226.js"],[34457,"schaetzen.js"],[34888,"party8.js"],[35507,"tiere.js"],[35966,"fussball232.js"],[36181,"party8b.js"],[36483,"weg.js"],[36704,"px.js"],[37115,"px_data.js"],[37372,"pxwelt.js"],[37453,"px_abenteuer.js"],[38254,"px_abenteuer2.js"],[39003,"px_ski.js"],[39645,"px_wurf.js"],[40174,"px_insel.js"],[41375,"px_kicker.js"],[42310,"px_eis.js"],[43296,"px_run.js"],[44511,"px_brk.js"],[45473,"px_pol.js"],[46824,"px_frog.js"],[48084,"px_angel.js"],[49399,"px_golf.js"],[50433,"px_tauch.js"],[51698,"px_hockey.js"],[52654,"px_lab.js"],[53989,"px_plopp.js"],[55195,"px_stadion.js"],[56699,"px_training.js"],[57068,"cm.js"],[57558,"cmwelt.js"],[57614,"cm_baeck.js"],[58407,"cm_bahn.js"],[59171,"cm_detek.js"],[59888,"cm_markt.js"],[60601,"ff.js"],[60758,"ff_mathe.js"],[62748,"ff_deutsch.js"],[64336,"ff_sach_a.js"],[66585,"ff_sach_b.js"],[68814,"ff_sprachen.js"],[71222,"zm.js"],[72135,"tt.js"],[72348,"data_tagebuch.js"],[72391,"data_hoerspiel.js"],[72550,"leseecke.js"],[72869,"kt.js"],[73172,"comicbuch.js"],[73450,"alce.js"],[73613,"alce_aufg.js"],[73783,"formen.js"],[74234,"data_formen.js"],[74475,"data_formen2.js"],[74697,"spielzeit.js"],[74842,"data_faktmeinung.js"],[74961,"data_es248.js"],[75225,"data_en249.js"],[75464,"data_wissen249.js"],[75895,"data_kunst249.js"],[76178,"data_fussball250.js"],[76302,"data_werte252.js"],[76555,"data_lesen252.js"],[76616,"data_k34_252.js"],[76702,"art254.js"],[76820,"data_werte255.js"],[76958,"data_lesen255.js"],[77094,"forscher255.js"],[77242,"zufall250.js"],[77288,"stufe259.js"],[77298,"advent.js"],[77561,"wdh.js"],[77659,"denk.js"],[77696,"data_viaje265.js"],[77839,"klassenarbeit.js"],[77972,"quizduell.js"],[78095,"neu267.js"],[78360,"prog.js"],[78465,"lernstand.js"],[78532,"blatt.js"],[78634,"data_es271.js"],[78748,"plus269.js"],[78842,"schach.js"],[79069,"schachtaktik.js"],[79240,"fun270.js"],[79403,"data_neu274.js"],[79612,"plus272.js"],[79666,"spiele274.js"],[79789,"kasten.js"],[79893,"erklaer.js"],[80006,"apa.js"],[80087,"neu276.js"],[80228,"spiele276.js"],[80278,"neu277.js"],[80456,"spiele277.js"],[80711,"lernen278.js"],[80971,"spiele278.js"],[81314,"lernen279.js"],[81639,"lernen279b.js"],[82037,"spanisch280.js"],[82329,"mehr281.js"],[82475,"grafik280.js"],[82846,"tiefsee280.js"],[83124,"abenteuer280.js"],[83336,"abenteuer281.js"],[83448,"design281.js"],[83580,"party281.js"],[83711,"grafik281.js"],[83928,"lumi_live.js"],[84044,"sicher.js"],[84228,"stil.js"],[84282,"freunde.js"],[84419,"start.js"],[84429,null],[84439,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '2.81.1';
+  var MAP = {"probe":0,"files":[[9190,"fehler_kern.js"],[9478,null],[9480,"data.js"],[10183,"data_more.js"],[10540,"data_su2.js"],[10767,"data_es.js"],[11109,"data_wissen.js"],[11310,"data_v21.js"],[11993,"data_v24.js"],[12480,"data_v25.js"],[12961,"data_v26.js"],[13060,"data_v29.js"],[13365,"data_v30.js"],[13695,"data_v31.js"],[14001,"data_kunst.js"],[14197,"data_v214.js"],[14300,"data_v216.js"],[14593,"schrift.js"],[14893,"eingabe.js"],[15104,"data_k34m.js"],[15622,"data_k34d.js"],[15976,"data_k34s.js"],[16430,"data_v224.js"],[17303,"data_v225w.js"],[17672,"data_v225k.js"],[18116,"data_herz.js"],[18470,"data_fb226.js"],[18613,"data_tf226.js"],[18820,"data_v227a.js"],[19911,"data_v227b.js"],[20865,"data_h28b.js"],[20905,"data_l28a.js"],[21771,"data_l28b.js"],[22951,"data_schaetz.js"],[23433,"data_party8.js"],[23483,"data_alce.js"],[24143,"data_alce2.js"],[24392,"data_alce3.js"],[24807,"registry.js"],[25321,"app.js"],[26509,"fun.js"],[27089,"fun2.js"],[27405,"atelier.js"],[27779,"kunst225.js"],[27969,"herz.js"],[28333,"reise.js"],[28635,"iglu.js"],[28801,"offline.js"],[28908,"party.js"],[29392,"meine.js"],[29748,"loeffel.js"],[29919,"trend.js"],[30461,"fun228a.js"],[31312,"fun228b.js"],[31973,"kueche.js"],[33012,"stimme.js"],[33067,"klassen.js"],[33216,"freunde_vorab.js"],[33237,"mut.js"],[33659,"schule.js"],[34148,"fussball226.js"],[34470,"schaetzen.js"],[34901,"party8.js"],[35520,"tiere.js"],[35979,"fussball232.js"],[36194,"party8b.js"],[36496,"weg.js"],[36717,"px.js"],[37128,"px_data.js"],[37385,"pxwelt.js"],[37466,"px_abenteuer.js"],[38267,"px_abenteuer2.js"],[39016,"px_ski.js"],[39658,"px_wurf.js"],[40187,"px_insel.js"],[41388,"px_kicker.js"],[42323,"px_eis.js"],[43309,"px_run.js"],[44524,"px_brk.js"],[45486,"px_pol.js"],[46837,"px_frog.js"],[48097,"px_angel.js"],[49412,"px_golf.js"],[50446,"px_tauch.js"],[51711,"px_hockey.js"],[52667,"px_lab.js"],[54002,"px_plopp.js"],[55208,"px_stadion.js"],[56712,"px_training.js"],[57081,"cm.js"],[57571,"cmwelt.js"],[57627,"cm_baeck.js"],[58420,"cm_bahn.js"],[59184,"cm_detek.js"],[59901,"cm_markt.js"],[60614,"ff.js"],[60771,"ff_mathe.js"],[62761,"ff_deutsch.js"],[64349,"ff_sach_a.js"],[66598,"ff_sach_b.js"],[68827,"ff_sprachen.js"],[71235,"zm.js"],[72148,"tt.js"],[72361,"data_tagebuch.js"],[72404,"data_hoerspiel.js"],[72563,"leseecke.js"],[72882,"kt.js"],[73185,"comicbuch.js"],[73463,"alce.js"],[73626,"alce_aufg.js"],[73796,"formen.js"],[74247,"data_formen.js"],[74488,"data_formen2.js"],[74710,"spielzeit.js"],[74855,"data_faktmeinung.js"],[74974,"data_es248.js"],[75238,"data_en249.js"],[75477,"data_wissen249.js"],[75908,"data_kunst249.js"],[76191,"data_fussball250.js"],[76315,"data_werte252.js"],[76568,"data_lesen252.js"],[76629,"data_k34_252.js"],[76715,"art254.js"],[76833,"data_werte255.js"],[76971,"data_lesen255.js"],[77107,"forscher255.js"],[77255,"zufall250.js"],[77301,"stufe259.js"],[77311,"advent.js"],[77574,"wdh.js"],[77672,"denk.js"],[77709,"data_viaje265.js"],[77852,"klassenarbeit.js"],[77985,"quizduell.js"],[78108,"neu267.js"],[78373,"prog.js"],[78478,"lernstand.js"],[78545,"blatt.js"],[78647,"data_es271.js"],[78761,"plus269.js"],[78855,"schach.js"],[79082,"schachtaktik.js"],[79253,"fun270.js"],[79416,"data_neu274.js"],[79625,"plus272.js"],[79679,"spiele274.js"],[79802,"kasten.js"],[79906,"erklaer.js"],[80019,"apa.js"],[80100,"neu276.js"],[80241,"spiele276.js"],[80291,"neu277.js"],[80469,"spiele277.js"],[80724,"lernen278.js"],[80984,"spiele278.js"],[81327,"lernen279.js"],[81652,"lernen279b.js"],[82050,"spanisch280.js"],[82342,"mehr281.js"],[82488,"grafik280.js"],[82859,"tiefsee280.js"],[83137,"abenteuer280.js"],[83349,"abenteuer281.js"],[83461,"design281.js"],[83593,"party281.js"],[83724,"grafik281.js"],[83941,"lumi_live.js"],[84057,"sicher.js"],[84241,"stil.js"],[84295,"freunde.js"],[84432,"start.js"],[84442,null],[84452,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -9495,6 +9495,14 @@ const R = {
 const fmtN = n => typeof n === 'number' && Math.abs(n) >= 10000 ? String(n).replace(/\B(?=(\d{3})+(?!\d))/g, '.') : String(n);
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 
+const explFix = s => String(s == null ? '' : s)
+  .replace(/([.?!])([“»’']?), ([„«¿¡]?)([a-zäöüáéíóúñA-ZÄÖÜÁÉÍÓÚÑ])/g, (m, p, q, o, c, i, all) => {
+    const vor = all.slice(Math.max(0, i - 5), i + 1);
+    if (/(^|[\s(])(z\. ?B|usw|bzw|etc|Nr|ca|St|Str|u\. ?a)\.$/.test(vor) || /\d\.$/.test(vor) || /\.\.\.$/.test(vor)) return m;
+    if (q && !o && c === c.toLowerCase()) return m;
+    return p + q + ' ' + o + (o ? c : c.toUpperCase()); })
+  .replace(/([.?!][“»])\. /g, '$1 ').replace(/([.?!][“»])\.$/, '$1');
+
 const cleanName = (s, max = 24) => String(s == null ? '' : s).replace(/[<>&"'`\\]/g, '').replace(/\s+/g, ' ').trim().slice(0, max);
 
 
@@ -9706,7 +9714,7 @@ function genSach(ctx) {
     T.push(() => { const b = R.int(2, 9); return [`Eine Spinne hat 8 Beine. Wie viele Beine haben ${b} Spinnen zusammen?`, '🕷️', 8 * b, `${b} · 8 = ${8 * b}`]; });
   } else {
     T.push(() => { const b = R.int(2, 5), c = R.int(2, 6), a = b * c + R.int(1, 10); return [`${n} hat ${a} €. ${n} kauft ${b} Hefte zu je ${c} €. Wie viel Geld bleibt übrig?`, '📒', a - b * c, `${b} · ${c} € = ${b * c} €, dann ${a} € − ${b * c} € = ${a - b * c} €`]; });
-    T.push(() => { const c = R.int(3, 6), g = R.int(3, 6), tot = c * g, a = R.int(Math.ceil(tot / 3), tot - 2), b = tot - a; return [`In der Klasse sind ${a} Mädchen und ${b} Jungen. Sie bilden Gruppen mit je ${c} Kindern. Wie viele Gruppen gibt es?`, '🏫', g, `${a} + ${b} = ${tot}, dann ${tot} : ${c} = ${g}`]; });
+    T.push(() => { const c = R.int(3, 6), g = R.int(3, 6), tot = c * g, a = R.int(Math.ceil(tot * .4), Math.floor(tot * .6)), b = tot - a; return [`In der Klasse sind ${a} Mädchen und ${b} Jungen. Sie bilden Gruppen mit je ${c} Kindern. Wie viele Gruppen gibt es?`, '🏫', g, `${a} + ${b} = ${tot}, dann ${tot} : ${c} = ${g}`]; });
     T.push(() => { const a = R.int(3, 9), b = R.int(2, 6), c = R.int(2, 9); return [`Im Regal stehen ${b} Reihen mit je ${a} Büchern. Dazu kommen noch ${c} Bücher. Wie viele Bücher sind es?`, '📚', a * b + c, `${b} · ${a} = ${a * b}, dann ${a * b} + ${c} = ${a * b + c}`]; });
     T.push(() => { const p = R.int(2, 5), k = R.int(3, 8); return [`${k} Kinder fahren in den Zoo. Der Eintritt kostet ${p} € pro Kind. Wie viel kostet es für alle zusammen?`, '🦒', p * k, `${k} · ${p} € = ${p * k} €`]; });
     T.push(() => { const a = R.int(150, 600), b = R.int(50, a - 50); return [`Ein Schiff hat ${a} Gäste an Bord. Im Hafen steigen ${b} Gäste aus. Wie viele Gäste sind noch an Bord?`, '🚢', a - b, `${a} − ${b} = ${a - b}`]; });
@@ -10243,7 +10251,7 @@ function genStellen(ctx) {
   const n = R.int(101, 999), h = Math.floor(n / 100), z = Math.floor(n / 10) % 10, e = n % 10;
   const t = R.int(0, 2);
   if (t === 0) { const which = R.pick([['Hunderter', h], ['Zehner', z], ['Einer', e]]);
-    return mkNumber({ prompt: `Wie viele ${which[0]} hat die Zahl ${n}?`, visual: `<div class="q-num">${n}</div>`, answer: which[1], explain: `${n} = ${h} H + ${z} Z + ${e} E`, key: 'pvq' + n + which[0] }); }
+    return mkNumber({ prompt: `Welche Ziffer steht in der Zahl ${n} an der Stelle der ${which[0]}?`, visual: `<div class="q-num">${n}</div>`, answer: which[1], explain: `${n} = ${h} H + ${z} Z + ${e} E`, key: 'pvq' + n + which[0] }); }
   return mkNumber({ prompt: 'Welche Zahl steht in der Stellenwerttafel?', visual: `<table class="pvt"><tr><th>H</th><th>Z</th><th>E</th></tr><tr><td>${h}</td><td>${z}</td><td>${e}</td></tr></table>`, answer: n, explain: `${h} Hunderter + ${z} Zehner + ${e} Einer = ${n}`, key: 'pvt' + n });
 }
 
@@ -11112,21 +11120,23 @@ const LAENDER = [
   ['🇦🇷', 'Argentinien', 'Buenos Aires', 3], ['🇨🇴', 'Kolumbien', 'Bogotá', 3], ['🇨🇱', 'Chile', 'Santiago de Chile', 3], ['🇵🇪', 'Peru', 'Lima', 3], ['🇮🇳', 'Indien', 'Neu-Delhi', 3],
   ['🇦🇺', 'Australien', 'Canberra', 3], ['🇪🇬', 'Ägypten', 'Kairo', 3], ['🇰🇪', 'Kenia', 'Nairobi', 3], ['🇺🇦', 'Ukraine', 'Kyjiw (Kiew)', 3]
 ];
-const CAP_NOTE = { 'Türkei': 'Viele denken an Istanbul, die Hauptstadt ist aber Ankara.', 'Australien': 'Nicht Sydney, die Hauptstadt ist Canberra.', 'Kanada': 'Nicht Toronto, die Hauptstadt ist Ottawa.', 'Schweiz': 'Bern ist die Bundesstadt der Schweiz.', 'Brasilien': 'Nicht Rio, die Hauptstadt heißt Brasília.' };
+const CAP_NOTE = { 'Türkei': 'Viele denken an Istanbul, die Hauptstadt ist aber Ankara.', 'Australien': 'Nicht Sydney, die Hauptstadt ist Canberra.', 'Kanada': 'Nicht Toronto, die Hauptstadt ist Ottawa.', 'Schweiz': 'Die Schweizer nennen Bern ihre Bundesstadt.', 'Brasilien': 'Nicht Rio, die Hauptstadt heißt Brasília.' };
+const LAND_ART = { Schweiz: ['der Schweiz', 'zur Schweiz', 'in der Schweiz'], 'Türkei': ['der Türkei', 'zur Türkei', 'in der Türkei'], Ukraine: ['der Ukraine', 'zur Ukraine', 'in der Ukraine'], Niederlande: ['der Niederlande', 'zu den Niederlanden', 'in den Niederlanden'], USA: ['der USA', 'zu den USA', 'in den USA'] };
+const landGen = n => LAND_ART[n] ? LAND_ART[n][0] : 'von ' + n, landZu = n => LAND_ART[n] ? LAND_ART[n][1] : 'zu ' + n, landIn = n => LAND_ART[n] ? LAND_ART[n][2] : 'in ' + n;
 function landPool(lv) { return memo('land' + lv, () => LAENDER.filter(l => l[3] <= lv)); }
 function genFlaggen(ctx) {
   const l = ctx.draw(landPool(ctx.lv));
   const others = R.sample(LAENDER.filter(x => x !== l && x[3] <= ctx.lv + 1), 3);
-  if (R.chance(.65)) return mkChoice({ prompt: 'Zu welchem Land gehört diese Flagge?', visual: bigEmoji(l[0]), answer: l[1], wrong: others.map(x => x[1]), layout: 'grid2', explain: `Das ist die Flagge von ${l[1]}.`, key: 'fl' + l[1] });
+  if (R.chance(.65)) return mkChoice({ prompt: 'Zu welchem Land gehört diese Flagge?', visual: bigEmoji(l[0]), answer: l[1], wrong: others.map(x => x[1]), layout: 'grid2', explain: `Das ist die Flagge ${landGen(l[1])}.`, key: 'fl' + l[1] });
   const o = x => ({ html: `<span class="em xl">${x[0]}</span>`, label: x[1] });
-  return mkChoice({ prompt: `Welche Flagge gehört zu ${l[1]}?`, visual: `<div class="q-word big">${esc(l[1])}</div>`, answer: o(l), wrong: others.map(o), layout: 'grid2emoji', explain: `So sieht die Flagge von ${l[1]} aus: ${l[0]}`, solution: l[1], key: 'flr' + l[1] });
+  return mkChoice({ prompt: `Welche Flagge gehört ${landZu(l[1])}?`, visual: `<div class="q-word big">${esc(l[1])}</div>`, answer: o(l), wrong: others.map(o), layout: 'grid2emoji', explain: `So sieht die Flagge ${landGen(l[1])} aus: ${l[0]}`, solution: l[1], key: 'flr' + l[1] });
 }
 function genHauptstadt(ctx) {
   const l = ctx.draw(landPool(ctx.lv));
   const others = R.sample(LAENDER.filter(x => x !== l && x[3] <= ctx.lv + 1), 3);
   const note = CAP_NOTE[l[1]] ? ' ' + CAP_NOTE[l[1]] : '';
-  if (R.chance(.7)) return mkChoice({ prompt: `Wie heißt die Hauptstadt von ${l[1]}?`, visual: bigEmoji(l[0], 'sm'), answer: l[2], wrong: others.map(x => x[2]), layout: 'grid2', explain: `${l[2]} ist die Hauptstadt von ${l[1]}.${note}`, key: 'hs' + l[1] });
-  return mkChoice({ prompt: `${l[2]} ist die Hauptstadt von …`, visual: bigEmoji('🏙️', 'sm'), answer: l[1], wrong: others.map(x => x[1]), layout: 'grid2', explain: `${l[2]} liegt in ${l[1]} ${l[0]}.${note}`, key: 'hsr' + l[1] });
+  if (R.chance(.7)) return mkChoice({ prompt: `Wie heißt die Hauptstadt ${landGen(l[1])}?`, visual: bigEmoji(l[0], 'sm'), answer: l[2], wrong: others.map(x => x[2]), layout: 'grid2', explain: `${l[2]} ist die Hauptstadt ${landGen(l[1])}.${note}`, key: 'hs' + l[1] });
+  return mkChoice({ prompt: `${l[2]} ist die Hauptstadt von …`, visual: bigEmoji('🏙️', 'sm'), answer: l[1], wrong: others.map(x => x[1]), layout: 'grid2', explain: `${l[2]} liegt ${landIn(l[1])} ${l[0]}.${note}`, key: 'hsr' + l[1] });
 }
 const W_DEUTSCHLAND = [
   ['Wie viele Bundesländer hat Deutschland?', '🗺️', '16', ['12', '14', '18'], 'Zum Beispiel Niedersachsen, Bayern und Hamburg.'],
@@ -11217,7 +11227,7 @@ const W_FESTE = [
   ['Was feiern wir am 11. November mit Laternen?', '🏮', 'Sankt Martin', ['Nikolaus', 'Erntedank', 'Halloween'], 'Sankt Martin hat seinen Mantel mit einem armen Mann geteilt.'],
   ['Was hat Sankt Martin geteilt?', '🧥', 'seinen Mantel', ['sein Brot', 'sein Pferd', 'sein Geld'], 'Er teilte ihn mit einem frierenden Bettler.'],
   ['Wann kommt der Nikolaus?', '🎅', 'am 6. Dezember', ['am 24. Dezember', 'am 11. November', 'am 1. Dezember'], 'Am Abend davor stellen Kinder ihre Stiefel vor die Tür.'],
-  ['Wie viele Kerzen hat ein Adventskranz?', '🕯️', '4', ['3', '6', '24'], 'Jeden Adventssonntag wird eine Kerze mehr angezündet.'],
+  ['Wie viele Kerzen hat ein Adventskranz?', '🕯️', '4', ['3', '6', '24'], 'An jedem Adventssonntag wird eine Kerze mehr angezündet.'],
   ['Was versteckt man zu Ostern?', '🗓️', 'bunte Eier', ['kleine Geschenke im Stiefel', 'bunte Laternen', 'Nüsse im Adventskalender'], 'Am Ostersonntag werden sie gesucht.'],
   ['Wann ist Silvester?', '🎆', 'am 31. Dezember', ['am 1. Januar', 'am 24. Dezember', 'am 6. Januar'], 'Um Mitternacht beginnt das neue Jahr.'],
   ['Wann verkleiden sich viele Menschen bunt?', '🎭', 'an Karneval oder Fasching', ['an Sankt Martin im November', 'am Erntedankfest', 'am ersten Advent'], 'Im Rheinland heißt es Karneval, in Süddeutschland oft Fasching.'],
@@ -11624,7 +11634,7 @@ const SU_TECHNIK = [
   ['Womit zersägt man Holz?', '🧰', 'mit einer Säge', ['mit einem Hobel', 'mit einer Feile', 'mit einer Zange'], 'Die Zähne der Säge schneiden das Holz.'],
   ['Womit dreht man eine Schraube hinein?', '🧰', 'mit einem Schraubendreher', ['mit einem Gabelschlüssel', 'mit einer Kneifzange', 'mit einem Stemmeisen'], 'Man sagt auch Schraubenzieher.'],
   ['Womit glättet man eine raue Holzkante?', '🪵', 'mit einer Feile oder Schleifpapier', ['mit einer Säge oder einem Messer', 'mit einem Hammer und Nägeln', 'mit einer Zange oder Pinzette'], 'So bekommt man keine Splitter.'],
-  ['Auf einer Wippe sitzt ein schweres und ein leichtes Kind. Wer geht nach unten?', '⚖️', 'das schwerere Kind', ['das leichtere Kind', 'keins von beiden', 'immer das Kind links'], 'Die Wippe ist ein Hebel.'],
+  ['Auf einer Wippe sitzen ein schweres und ein leichtes Kind. Wer geht nach unten?', '⚖️', 'das schwerere Kind', ['das leichtere Kind', 'keins von beiden', 'immer das Kind links'], 'Die Wippe ist ein Hebel.'],
   ['Wo muss das schwerere Kind sitzen, damit die Wippe gerade ist?', '🧒', 'näher zur Mitte', ['ganz außen', 'genau in der Mitte', 'weiter nach hinten'], 'So gleicht es das Gewicht aus.'],
   ['Was zeigt eine Waage an?', '⚖️', 'wie schwer etwas ist', ['wie lang etwas ist', 'wie warm etwas ist', 'wie voll etwas ist'], 'Mit einer Waage misst man das Gewicht.'],
   ['Warum rollt ein Ball, aber ein Würfel nicht?', '⚽', 'Der Ball ist rund und hat keine Ecken.', ['Der Ball ist viel leichter als der Würfel.', 'Der Ball ist mit Luft gefüllt.', 'Der Würfel ist aus härterem Material.'], 'Runde Dinge rollen, eckige kippen.'],
@@ -11663,7 +11673,7 @@ function genKarte(ctx) {
   const t = R.int(0, 2);
   if (t === 0) { const n = cells.filter(c => c && c[0] === '🌳').length; return mkNumber({ prompt: 'Wie viele Bäume siehst du auf der Karte?', visual: map, answer: n, explain: `Auf der Karte sind ${n} Bäume.`, key: 'kb' + cells.map(c => c ? c[0] : '-').join('') }); }
   if (t === 1) { const p = R.pick(places), o = x => ({ html: `<span class="em">${x[0]}</span>`, label: x[1] });
-    return mkChoice({ prompt: `Welches Zeichen steht in der Legende für ${p[1].replace('mein', 'dein')}?`, visual: map, answer: o(p), wrong: R.sample(places.filter(x => x !== p), 3).map(o), layout: 'row4', explain: `${cap(p[1])} hat das Zeichen ${p[0]}.`, key: 'kl' + p[0] + cells.map(c => c ? c[0] : '-').join('') }); }
+    return mkChoice({ prompt: `Welches Zeichen steht in der Legende für ${p[1].replace('mein', 'dein').replace(/^der /, 'den ')}?`, visual: map, answer: o(p), wrong: R.sample(places.filter(x => x !== p), 3).map(o), layout: 'row4', explain: `${cap(p[1])} hat das Zeichen ${p[0]}.`, key: 'kl' + p[0] + cells.map(c => c ? c[0] : '-').join('') }); }
   const cand = [];
   cells.forEach((c, i) => { if (!c || c[0] === '🌳') return; const r = Math.floor(i / 4), k = i % 4;
     [['rechts neben', r, k + 1], ['links neben', r, k - 1], ['über', r - 1, k], ['unter', r + 1, k]].forEach(([rel, rr, kk]) => { if (rr >= 0 && rr < 4 && kk >= 0 && kk < 4) { const n = cells[rr * 4 + kk]; if (n && n[0] !== '🌳') cand.push([c, rel, n]); } }); });
@@ -11737,7 +11747,7 @@ const KONT = ['Australien', 'Asien', 'Südamerika', 'Nordamerika', 'Afrika', 'An
 function genTiereKont(ctx) {
   const [t, e, k] = ctx.draw(TIERE_KONT);
   return mkChoice({ prompt: `Auf welchem Kontinent ist ${t} zu Hause?`, visual: bigEmoji(e), answer: k, wrong: R.sample(KONT.filter(x => x !== k && !(k.startsWith('Arktis') && x === 'Antarktis') && !(k === 'Antarktis' && x.startsWith('Arktis'))), 2), layout: 'row3',
-    explain: `${cap(t)} ist in ${k} zu Hause.${k === 'Antarktis' || k.startsWith('Arktis') ? ' Eisbären und Pinguine treffen sich nie, sie leben an entgegengesetzten Enden der Erde.' : ''}`, key: 'tk' + t });
+    explain: `${cap(t)} ist ${/^A(nt)?arktis/.test(k) ? 'in der' : 'in'} ${k} zu Hause.${k === 'Antarktis' || k.startsWith('Arktis') ? ' Eisbären und Pinguine treffen sich nie, sie leben an entgegengesetzten Enden der Erde.' : ''}`, key: 'tk' + t });
 }
 const W_ERFINDUNGEN = [
   ['Wer erfand den Buchdruck mit beweglichen Buchstaben?', '📖', 'Johannes Gutenberg', ['Martin Luther', 'Leonardo da Vinci', 'Albrecht Dürer'], 'Um 1450 in Mainz, danach gab es viel mehr Bücher.'],
@@ -11971,7 +11981,7 @@ const SU_PINGUIN = [
   ['Wie heißt ein Pinguin-Baby?', '🐧', 'Küken', ['Welpe', 'Kalb', 'Kitz'], 'Pinguin-Küken haben am Anfang ein flauschiges graues Federkleid.'],
   ['Was machen Kaiserpinguine bei Schneesturm?', '🌨️', 'Sie kuscheln sich eng zusammen.', ['Sie graben sich einzeln in den Schnee ein.', 'Sie springen ins Meer und tauchen ab.', 'Sie laufen dem Sturm davon.'], 'Dabei wechseln sie sich ab: Mal steht einer innen im Warmen, mal außen.'],
   ['Wie kommen Pinguine auf dem Eis manchmal besonders schnell voran?', '🧊', 'Sie rutschen auf dem Bauch.', ['Sie hüpfen mit beiden Füßen.', 'Sie schlagen mit den Flügeln und rennen.', 'Sie rollen sich seitwärts.'], 'Mit den Füßen und Flossen schieben sie sich dabei an.'],
-  ['Wozu ist der schwarze Rücken und der weiße Bauch gut?', '🐧', 'zur Tarnung im Wasser', ['zum Schutz vor Sonnenbrand', 'damit sie sich gegenseitig erkennen', 'damit das Wasser besser abperlt'], 'Von oben sieht der dunkle Rücken aus wie das tiefe Meer, von unten der helle Bauch wie der helle Himmel.'],
+  ['Wozu sind der schwarze Rücken und der weiße Bauch gut?', '🐧', 'zur Tarnung im Wasser', ['zum Schutz vor Sonnenbrand', 'damit sie sich gegenseitig erkennen', 'damit das Wasser besser abperlt'], 'Von oben sieht der dunkle Rücken aus wie das tiefe Meer, von unten der helle Bauch wie der helle Himmel.'],
   ['Welcher Pinguin lebt sogar am Äquator?', '☀️', 'der Galápagos-Pinguin', ['der Kaiserpinguin', 'der Adeliepinguin', 'der Königspinguin'], 'Die Galápagos-Inseln gehören zu Ecuador.'],
   ['Welche Pinguine leben an der Küste von Afrika?', '🌍', 'Brillenpinguine', ['Kaiserpinguine', 'Königspinguine', 'Adeliepinguine'], 'Sie leben in Südafrika und Namibia.'],
   ['Wie lange kann ein Kaiserpinguin tauchen?', '⏱️', 'länger als 20 Minuten', ['höchstens 1 Minute', 'etwa 5 Minuten', 'länger als 2 Stunden'], 'Er kann dabei über 500 Meter tief tauchen.'],
@@ -12021,13 +12031,14 @@ function genEinkaufen(ctx) {
     if (R.chance(.4)) return mkNumber({ prompt: 'Wie viel kostet beides zusammen?', visual: vis.replace('<span class="pay">💶 20 €</span>', ''), answer: sum, unit: '€', explain: `${a[2]} € + ${b[2]} € = ${sum} €`, key: 'ek2s' + a[1] + b[1] });
     return mkNumber({ prompt: 'Du kaufst beides und bezahlst mit 20 €. Wie viel Euro bekommst du zurück?', visual: vis, answer: 20 - sum, unit: '€', explain: `${a[2]} € + ${b[2]} € = ${sum} €. 20 € − ${sum} € = ${20 - sum} €`, key: 'ek2' + a[1] + b[1] });
   }
-  const [e, n] = R.pick(LADEN.slice(0, 10)), pay = R.pick([500, 1000]), price = R.int(11, pay / 10 - 2) * 10, back = pay - price;
+  const pay = R.pick([500, 1000]), [e, n, art] = R.pick(pay === 500 ? [['🧃', 'Saft', 'Der'], ['🍦', 'Eis', 'Das'], ['📒', 'Heft', 'Das'], ['🍫', 'Schokolade', 'Die'], ['🥖', 'Brot', 'Das'], ['🥨', 'Brezel', 'Die']]
+    : [['🧦', 'Paar Socken', 'Das'], ['📕', 'Buch', 'Das'], ['🧸', 'Teddy', 'Der'], ['🖍️', 'Stiftebox', 'Die'], ['⚽', 'Ball', 'Der'], ['🪁', 'Drachen', 'Der']]), price = (pay === 500 ? R.int(11, 39) : R.int(51, 98)) * 10, back = pay - price;
   const wrong = new Set([back + 100, back - 10, back + 10, back - 100].filter(x => x > 0 && x !== back));
-  return mkChoice({ prompt: `${n} kostet ${euro(price)}. Du bezahlst mit ${euro(pay)}. Wie viel bekommst du zurück?`, visual: `<div class="shop">${tagHTML(e, n, euro(price))}<span class="pay">💶 ${euro(pay)}</span></div>`,
+  return mkChoice({ prompt: `${art} ${n} kostet ${euro(price)}. Du bezahlst mit ${euro(pay)}. Wie viel bekommst du zurück?`, visual: `<div class="shop">${tagHTML(e, n, euro(price))}<span class="pay">💶 ${euro(pay)}</span></div>`,
     answer: euro(back), wrong: R.sample([...wrong], 3).map(euro), layout: 'grid2', explain: `${euro(pay)} − ${euro(price)} = ${euro(back)}. Tipp: Rechne erst bis zum nächsten vollen Euro.`, key: 'ek3' + price + pay });
 }
 
-const DAUER_ANLASS = [['🏊', 'Der Schwimmkurs'], ['🎬', 'Der Film'], ['⚽', 'Das Fußballtraining'], ['🎂', 'Der Kindergeburtstag'], ['🚌', 'Die Busfahrt'], ['📚', 'Die Hausaufgaben'], ['🎹', 'Die Klavierstunde'], ['🎨', 'Der Malkurs']];
+const DAUER_ANLASS = [['🏊', 'Der Schwimmkurs'], ['🎬', 'Der Film'], ['⚽', 'Das Fußballtraining'], ['🎂', 'Der Kindergeburtstag'], ['🚌', 'Die Busfahrt'], ['📚', 'Die Hausaufgabenzeit'], ['🎹', 'Die Klavierstunde'], ['🎨', 'Der Malkurs']];
 const hhmm = (h, m) => `${h}:${String(m).padStart(2, '0')} Uhr`;
 function genDauer(ctx) {
   const lv = ctx.lv, [e, a] = R.pick(DAUER_ANLASS);
@@ -12272,7 +12283,7 @@ const SU_MAGNET = [
 function genMagnet(ctx) {
   if (R.chance(.6)) {
     const [n, e, yes, why] = ctx.draw(MAGNET_DINGE), Y = { html: '<span class="sym">🧲</span><small>Ja, wird angezogen</small>', label: 'Ja' }, N = { html: '<span class="sym">🚫</span><small>Nein</small>', label: 'Nein' };
-    return mkChoice({ prompt: `Zieht ein Magnet ${n} an?`, visual: bigEmoji(e), answer: yes ? Y : N, wrong: [yes ? N : Y], fixed: true, order: ['Ja', 'Nein'], layout: 'row2', explain: why, key: 'mg' + n });
+    return mkChoice({ prompt: `Zieht ein Magnet ${n.replace(/^ein (Holzklotz|Kieselstein|Teddy|Apfel)/, 'einen $1')} an?`, visual: bigEmoji(e), answer: yes ? Y : N, wrong: [yes ? N : Y], fixed: true, order: ['Ja', 'Nein'], layout: 'row2', explain: why, key: 'mg' + n });
   }
   return suQuestion(ctx.draw(SU_MAGNET));
 }
@@ -12452,12 +12463,12 @@ function genKnobeln(ctx) {
   }
   if (t === 1) {
     const d = R.int(0, 6), off = R.pick([[1, 'morgen'], [2, 'übermorgen'], [-1, 'gestern'], [-2, 'vorgestern'], [7, 'in einer Woche']]), ans = TAGE_DE[(d + off[0] + 14) % 7];
-    return mkChoice({ prompt: `Heute ist ${TAGE_DE[d]}. Welcher Tag ist ${off[1]}?`, visual: bigEmoji('📅', 'sm'), answer: ans, wrong: R.sample(TAGE_DE.filter(x => x !== ans), 3), layout: 'grid2', explain: `${off[1][0].toUpperCase() + off[1].slice(1)} ist ${ans}.`, key: 'kn1' + d + off[1] });
+    return mkChoice({ prompt: `Heute ist ${TAGE_DE[d]}. Welcher Tag ${off[0] < 0 ? 'war' : 'ist'} ${off[1]}?`, visual: bigEmoji('📅', 'sm'), answer: ans, wrong: R.sample(TAGE_DE.filter(x => x !== ans), 3), layout: 'grid2', explain: `${off[1][0].toUpperCase() + off[1].slice(1)} ${off[0] < 0 ? 'war' : 'ist'} ${ans}.`, key: 'kn1' + d + off[1] });
   }
   if (t === 2) { const n = R.pick(KN_NAMEN), a = R.int(2, 6), b = R.int(2, 6); return mkNumber({ prompt: `${n} steht in einer Schlange an ${a}. Stelle von vorne und an ${b}. Stelle von hinten. Wie viele Kinder stehen in der Schlange?`, visual: bigEmoji('🧍🧍🧍', 'multi'), answer: a + b - 1, explain: `${a} + ${b} = ${a + b}. ${n} wurde dabei doppelt gezählt, also ${a + b - 1} Kinder.`, key: 'kn2' + a + b }); }
   if (t === 3) { const n = R.int(5, 9), k = R.int(2, n - 1); return mkNumber({ prompt: `Ein Zug hat ${n} Wagen. Du sitzt im ${k}. Wagen von vorne. Der wievielte Wagen ist das von hinten?`, visual: bigEmoji('🚂🚃🚃🚃', 'multi'), answer: n - k + 1, explain: `${n} − ${k} + 1 = ${n - k + 1}`, key: 'kn3' + n + k }); }
   const h = R.int(1, 6), k = R.int(1, 4);
-  return mkNumber({ prompt: `Auf dem Hof sind ${h} Hühner und ${k} ${k === 1 ? 'Kuh' : 'Kühe'}. Wie viele Beine sind es zusammen?`, visual: bigEmoji('🐔🐄', 'multi'), answer: h * 2 + k * 4, explain: `Hühner: ${h} · 2 = ${h * 2}. Kühe: ${k} · 4 = ${k * 4}. Zusammen ${h * 2 + k * 4}.`, key: 'kn4' + h + k });
+  return mkNumber({ prompt: `Auf dem Hof sind ${h} ${h === 1 ? 'Huhn' : 'Hühner'} und ${k} ${k === 1 ? 'Kuh' : 'Kühe'}. Wie viele Beine sind es zusammen?`, visual: bigEmoji('🐔🐄', 'multi'), answer: h * 2 + k * 4, explain: `Hühner: ${h} · 2 = ${h * 2}. Kühe: ${k} · 4 = ${k * 4}. Zusammen ${h * 2 + k * 4}.`, key: 'kn4' + h + k });
 }
 const W_RF_MEHR = [['Ein Tag hat 24 Stunden.', true, 'Tag und Nacht zusammen.'], ['Wale sind Fische.', false, 'Wale sind Säugetiere. Sie atmen mit einer Lunge.'], ['Der Mond ist größer als die Erde.', false, 'Die Erde ist fast viermal so breit wie der Mond.'],
   ['Bienen machen Honig.', true, 'Aus dem Nektar der Blüten.'], ['Pinguine sind Vögel.', true, 'Sie können zwar nicht fliegen, aber sie haben Federn.'], ['Tomaten wachsen unter der Erde.', false, 'Tomaten wachsen an einer Pflanze über der Erde. Kartoffeln wachsen unter der Erde.'],
@@ -12485,7 +12496,7 @@ function genDiagram(D) {
       explain: `Nummer ${n} ist ${nom}. ${why}`, key: D.id + 'w' + nums.join('') + n });
     const opts = R.sample(nums.filter(x => x !== n), 3).concat([n]).map(String);
     return mkChoice({ prompt: `${D.name}: Welche Nummer zeigt ${akk}?`, visual: diagSVG(D, nums, 0), answer: String(n), wrong: opts.filter(x => x !== String(n)), fixed: true, layout: 'row4',
-      explain: `${cap(nom)} hat die Nummer ${n}. ${why}`, key: D.id + 'n' + nums.join('') + n });
+      explain: `Die Nummer ${n} zeigt ${akk}. ${why}`, key: D.id + 'n' + nums.join('') + n });
   };
 }
 const PETALS = [0, 60, 120, 180, 240, 300].map(a => `<ellipse cx="120" cy="40" rx="11" ry="18" transform="rotate(${a} 120 58)" class="dg-petal"/>`).join('');
@@ -13141,12 +13152,12 @@ const RG_PLUS = [
   ['🐟', (n, p, a, b) => `Lumi fängt am Morgen ${a} Fische und am Abend ${b} Fische. Wie viele Fische sind es zusammen?`, 'Fische'],
   ['🐚', (n, p, a, b) => `Am Strand sammelt ${n} ${a} Muscheln, Oma findet ${b}. Wie viele Muscheln haben sie zusammen?`, 'Muscheln'],
   ['🚌', (n, p, a, b) => `Im Bus sitzen ${a} Kinder. An der Haltestelle steigen ${b} Kinder ein. Wie viele Kinder sitzen jetzt im Bus?`, 'Kinder'],
-  ['📚', (n, p, a, b) => `${n} hat ${a} Bücher. Zum Geburtstag bekommt ${p} ${b} neue. Wie viele Bücher hat ${p} jetzt?`, 'Bücher'],
+  ['📚', (n, p, a, b) => `In der Schulbücherei stehen ${a} Bücher. Es kommen ${b} neue dazu. Wie viele Bücher sind es jetzt?`, 'Bücher'],
   ['🎈', (n, p, a, b) => `Für das Fest werden ${a} rote und ${b} blaue Luftballons aufgeblasen. Wie viele Ballons sind es?`, 'Ballons'],
   ['🌻', (n, p, a, b) => `Im Garten blühen ${a} Sonnenblumen. ${n} pflanzt ${b} weitere. Wie viele sind es nun?`, 'Blumen']];
 const RG_MINUS = [
   ['🐦', (n, p, a, b) => `Auf dem Baum sitzen ${a} Vögel. ${b} fliegen weg. Wie viele Vögel sitzen noch auf dem Baum?`, 'Vögel'],
-  ['🍪', (n, p, a, b) => `Auf dem Teller liegen ${a} Kekse. ${n} isst ${b} davon. Wie viele Kekse liegen noch auf dem Teller?`, 'Kekse'],
+  ['🍪', (n, p, a, b) => `In der Bäckerei liegen ${a} Kekse im Regal. ${b} werden verkauft. Wie viele Kekse liegen noch im Regal?`, 'Kekse'],
   ['🚌', (n, p, a, b) => `Im Bus sitzen ${a} Kinder. An der Schule steigen ${b} aus. Wie viele bleiben im Bus?`, 'Kinder'],
   ['📖', (n, p, a, b) => `Ein Buch hat ${a} Seiten. ${n} hat schon ${b} Seiten gelesen. Wie viele Seiten fehlen noch?`, 'Seiten'],
   ['💶', (n, p, a, b) => `${n} hat ${a} Euro gespart. ${p.charAt(0).toUpperCase() + p.slice(1)} kauft ein Spiel für ${b} Euro. Wie viel Geld bleibt übrig?`, 'Euro'],
@@ -13193,7 +13204,7 @@ function genWaage(ctx) {
   }
   const m = R.int(2, 3);
   return mkNumber({ prompt: `1 ${a1} wiegt so viel wie ${cnt(k, b1, bN)}. 1 ${b1} wiegt so viel wie ${cnt(m, c1, cN)}. Wie viele ${cN} wiegen so viel wie 1 ${a1}?`, visual: waageHTML(A, many(B, k)) + waageHTML(B, many(C, m)), answer: k * m,
-    explain: `1 ${a1} = ${k} ${bN}, und jede davon wiegt ${m} ${cN}: ${k} · ${m} = ${k * m}.`, key: 'wg3' + A + k + m });
+    explain: `1 ${a1} wiegt so viel wie ${k} ${bN}. 1 ${b1} wiegt so viel wie ${m} ${cN}. Also: ${k} · ${m} = ${k * m}.`, key: 'wg3' + A + k + m });
 }
 
 
@@ -13413,7 +13424,7 @@ function genRestDiv(ctx) {
   const ans = f(q, r), cand = [r + 1 < d ? f(q, r + 1) : null, q >= 2 ? f(q - 1, r + d) : null, f(q + 1, r), r >= 1 ? f(q, r - 1) : f(q, 1), f(q + 1, 0), q >= 2 ? f(q - 1, r) : null, f(q + 2, r)];
   const wrong = [...new Set(cand.filter(x => x && x !== ans))].slice(0, 3);
   return mkChoice({ prompt: 'Teilen mit Rest: Wie viel ist das?', visual: mathLine([`${n}`, ':', `${d}`, '=', '?']), answer: ans, wrong, layout: 'grid2',
-    explain: `${q} · ${d} = ${q * d}${r ? `, bis ${n} fehlen noch ${r}. Also ${q} Rest ${r}.` : '. Es bleibt kein Rest.'} Der Rest muss immer kleiner sein als ${d}.`, key: 'rd' + n + ':' + d });
+    explain: `${q} · ${d} = ${q * d}${r ? `, bis ${n} ${r === 1 ? 'fehlt' : 'fehlen'} noch ${r}. Also ${q} Rest ${r}.` : '. Es bleibt kein Rest.'} Der Rest muss immer kleiner sein als ${d}.`, key: 'rd' + n + ':' + d });
 }
 function genZehnerMal(ctx) {
   const lv = ctx.lv, a = R.int(2, 9);
@@ -13560,11 +13571,11 @@ function genGrundform(ctx) {
   const typ = /^[A-ZÄÖÜ]/.test(gf) ? 'Nomen stehen im Wörterbuch in der Einzahl.' : /en$|ern$/.test(gf) ? 'Verben stehen im Wörterbuch in der Grundform (Wir-Form): wir laufen → laufen.' : 'Adjektive stehen im Wörterbuch in der Grundstufe.';
   return mkChoice({ prompt: `Unter welchem Wort findest du „${form}“ im Wörterbuch?`, visual: bigEmoji('📖', 'sm') + `<div class="q-word">${esc(form)}</div>`, answer: gf, wrong, layout: 'row3', explain: `„${form}“ findest du unter „${gf}“. ${typ}`, key: 'gf' + form });
 }
-const SUBJ_W = [[['Der Hund', 'bellt', 'laut'], 0, 'bellt'], [['Meine Oma', 'backt', 'einen Kuchen'], 0, 'backt'], [['Heute', 'spielt', '⟦N⟧', 'Fußball'], 2, 'spielt'], [['Die Kinder', 'singen', 'ein Lied'], 0, 'singen'],
-  [['Im Garten', 'blühen', 'die Tulpen'], 2, 'blühen'], [['Der Pinguin', 'fängt', 'einen Fisch'], 0, 'fängt'], [['Morgen', 'fährt', 'Papa', 'nach Hamburg'], 2, 'fährt'], [['Die Sonne', 'scheint', 'hell'], 0, 'scheint'],
-  [['Am Strand', 'sammeln', 'wir', 'Muscheln'], 2, 'sammeln'], [['Lumi', 'schwimmt', 'im Meer'], 0, 'schwimmt'], [['Gestern', 'besuchte', 'uns', 'die Oma'], 3, 'besuchte uns'],
-  [['Das Schiff', 'fährt', 'in den Hafen'], 0, 'fährt'], [['Nach der Schule', 'essen', 'die Kinder', 'Nudeln'], 2, 'essen'], [['Der Wind', 'weht', 'stark'], 0, 'weht'],
-  [['Der Torwart', 'hält', 'den Ball'], 0, 'hält'], [['Im Zoo', 'schlafen', 'die Löwen'], 2, 'schlafen'], [['Am Abend', 'liest', 'Mama', 'eine Geschichte'], 2, 'liest'], [['Die Möwen', 'kreischen', 'laut'], 0, 'kreischen']];
+const SUBJ_W = [[['Der Hund', 'bellt', 'laut'], 0, 'bellt'], [['Meine Oma', 'backt', 'einen Kuchen'], 0, 'backt'], [['Heute', 'spielt', '⟦N⟧', 'Fußball'], 2, 'spielt'], [['Die Kinder', 'singen', 'ein Lied'], 0, 'singt'],
+  [['Im Garten', 'blühen', 'die Tulpen'], 2, 'blüht'], [['Der Pinguin', 'fängt', 'einen Fisch'], 0, 'fängt'], [['Morgen', 'fährt', 'Papa', 'nach Hamburg'], 2, 'fährt'], [['Die Sonne', 'scheint', 'hell'], 0, 'scheint'],
+  [['Am Strand', 'sammeln', 'wir', 'Muscheln'], 2, 'sammelt'], [['Lumi', 'schwimmt', 'im Meer'], 0, 'schwimmt'], [['Gestern', 'besuchte', 'uns', 'die Oma'], 3, 'besuchte uns'],
+  [['Das Schiff', 'fährt', 'in den Hafen'], 0, 'fährt'], [['Nach der Schule', 'essen', 'die Kinder', 'Nudeln'], 2, 'isst'], [['Der Wind', 'weht', 'stark'], 0, 'weht'],
+  [['Der Torwart', 'hält', 'den Ball'], 0, 'hält'], [['Im Zoo', 'schlafen', 'die Löwen'], 2, 'schläft'], [['Am Abend', 'liest', 'Mama', 'eine Geschichte'], 2, 'liest'], [['Die Möwen', 'kreischen', 'laut'], 0, 'kreischt']];
 function genSubjekt(ctx) {
   const [parts, si, verb] = ctx.draw(SUBJ_W), sub = parts[si];
   const o = x => ({ html: esc(x), label: x });
@@ -14150,7 +14161,7 @@ const TECHNIKEN = [
   ['Eine schnelle Vorzeichnung mit Bleistift nennt man …', '✏️', 'Skizze', ['Skulptur', 'Stempel', 'Schablone'], 'In einer Skizze probierst du aus, wie das Bild werden soll.'],
   ['Worauf stellen Malerinnen und Maler ihr Bild beim Malen?', '🖼️', 'auf eine Staffelei', ['auf eine Palette', 'auf einen Sockel', 'auf ein Stativ'], 'Die Staffelei hält das Bild schräg und fest.'],
   ['Bei welcher Technik verlaufen die Farben weich ineinander, weil viel Wasser im Spiel ist?', '🌊', 'Aquarell', ['Mosaik', 'Kratzbild', 'Collage'], 'Aquarellfarben sind durchsichtig und wässrig.'],
-  ['Woraus macht man Pappmaché?', '📰', 'aus Zeitungspapier und Kleister', ['aus Sägespänen und Holzleim', 'aus Tonerde und viel Wasser', 'aus Stoffresten und Wachs'], 'Damit kann man Masken, Schüsseln und Figuren bauen.'],
+  ['Woraus macht man Pappmaschee?', '📰', 'aus Zeitungspapier und Kleister', ['aus Sägespänen und Holzleim', 'aus Tonerde und viel Wasser', 'aus Stoffresten und Wachs'], 'Damit kann man Masken, Schüsseln und Figuren bauen.'],
   ['Eine Figur aus Stein, Holz oder Metall, um die man herumgehen kann, heißt …', '🗿', 'Skulptur', ['Skizze', 'Collage', 'Mosaik'], 'Skulpturen sind dreidimensional, man sieht sie von allen Seiten.']];
 
 
@@ -14432,7 +14443,7 @@ function genFussballTabelle(ctx) {
   if (t === 3) return mkNumber({ prompt: `Wie viele Punkte hat ${x.n}?`, visual: fbTabelle(rows, x.n), answer: x.p, explain: `${x.s} Siege · 3 = ${x.s * 3} Punkte, ${x.u} Unentschieden · 1 = ${x.u} Punkte. Zusammen ${x.p} Punkte.`, key: 'fbt3' + x.n + x.s + x.u });
   if (t === 4) return mkNumber({ prompt: `Wie viele Punkte Vorsprung hat Platz 1 vor Platz 2?`, visual: fbTabelle(rows), answer: rows[0].p - rows[1].p, explain: `${rows[0].p} − ${rows[1].p} = ${rows[0].p - rows[1].p} Punkte.`, key: 'fbt4' + rows[0].p + rows[1].p });
   if (t === 5) { const d = x.tp - x.tm;
-    return mkChoice({ prompt: `Wie ist das Torverhältnis von ${x.n}? (Geschossene minus kassierte Tore)`, visual: fbTabelle(rows), answer: (d > 0 ? '+' : '') + d, wrong: [...new Set([d + 2, d - 2, -d, d + 1].filter(v => v !== d))].slice(0, 3).map(v => (v > 0 ? '+' : '') + v), layout: 'row4', explain: `${x.tp} − ${x.tm} = ${d}`, key: 'fbt5' + x.n + x.tp + x.tm }); }
+    return mkChoice({ prompt: `Wie groß ist die Tordifferenz von ${x.n}? (Geschossene minus kassierte Tore)`, visual: fbTabelle(rows), answer: (d > 0 ? '+' : '') + d, wrong: [...new Set([d + 2, d - 2, -d, d + 1].filter(v => v !== d))].slice(0, 3).map(v => (v > 0 ? '+' : '') + v), layout: 'row4', explain: `${x.tp} − ${x.tm} = ${d}`, key: 'fbt5' + x.n + x.tp + x.tm }); }
   const s = R.int(1, 5), u = R.int(0, 4);
   return mkNumber({ prompt: `Eine Mannschaft hat ${plural(s, 'Sieg', 'Siege')} und ${plural(u, 'Unentschieden', 'Unentschieden')}. Wie viele Punkte hat sie?`, visual: bigEmoji('🏆', 'sm'), answer: s * 3 + u, explain: `${s} · 3 + ${u} · 1 = ${s * 3 + u} Punkte`, key: 'fbt6' + s + u });
 }
@@ -14471,9 +14482,9 @@ const FREUND = [
   ['Welcher Satz ist eine Ich-Botschaft?', '💬', '„Ich bin traurig, wenn du mich nicht mitspielen lässt.“', ['„Du lässt mich nie mitspielen, du bist so gemein!“', '„Ich finde, du bist eine richtig schlechte Freundin.“', '„Alle sagen, dass du immer andere ausschließt.“'], 'Mit Ich-Botschaften sagst du, wie es dir geht, ohne den anderen zu beschimpfen.'],
   ['Du hast aus Versehen das Bild deiner Freundin kaputt gemacht. Was machst du?', '🖍️', 'Entschuldigung sagen und helfen, es zu reparieren', ['So tun, als wäre nichts, und hoffen, dass es keiner merkt', 'Sagen, dass das Bild sowieso nicht so schön war', 'Schnell ein eigenes Bild malen und es ihr hinlegen'], 'Fehler passieren jedem. Eine ehrliche Entschuldigung macht vieles wieder gut.'],
   ['Was ist ein gutes Geheimnis?', '🤫', 'eine Überraschung zum Geburtstag', ['etwas, das dir Angst macht', 'etwas, das dir Bauchweh macht', 'etwas, das du nie sagen darfst'], 'Gute Geheimnisse machen Freude und werden bald gelüftet.'],
-  ['Ein Geheimnis macht dir Angst oder Bauchweh. Was solltest du tun?', '🫶', 'Es einem Erwachsenen erzählen, dem du vertraust', ['Es für mich behalten, weil ich es versprochen habe', 'Es nur meinem Kuscheltier erzählen', 'Abwarten, ob das Gefühl von selbst weggeht'], 'Schlechte Geheimnisse darfst du immer weitererzählen, das ist kein Petzen, sondern Hilfe holen.'],
+  ['Ein Geheimnis macht dir Angst oder Bauchweh. Was solltest du tun?', '🫶', 'Es einem Erwachsenen erzählen, dem du vertraust', ['Es für dich behalten, weil du es versprochen hast', 'Es nur deinem Kuscheltier erzählen', 'Abwarten, ob das Gefühl von selbst weggeht'], 'Schlechte Geheimnisse darfst du immer weitererzählen, das ist kein Petzen, sondern Hilfe holen.'],
   ['Jemand will, dass du etwas tust, das du nicht willst. Was darfst du sagen?', '✋', 'Laut und deutlich „Nein!“', ['Leise „Na gut, einmal“', '„Vielleicht später“', '„Wenn du unbedingt willst“'], 'Dein Nein ist wichtig. Wenn es nicht aufhört, hol dir Hilfe bei einem Erwachsenen.'],
-  ['Zwei Kinder lachen über ein anderes Kind. Was ist mutig und fair?', '🦁', 'Zu dem Kind halten und Hilfe holen, wenn es nicht aufhört', ['Schnell weggehen und so tun, als hätte ich nichts gesehen', 'Dem Kind später sagen, es soll sich nichts daraus machen', 'Abwarten, ob die beiden von selbst damit aufhören'], 'Wer zu anderen hält, ist ein echter Freund oder eine echte Freundin.'],
+  ['Zwei Kinder lachen über ein anderes Kind. Was ist mutig und fair?', '🦁', 'Zu dem Kind halten und Hilfe holen, wenn es nicht aufhört', ['Schnell weggehen und so tun, als hättest du nichts gesehen', 'Dem Kind später sagen, es soll sich nichts daraus machen', 'Abwarten, ob die beiden von selbst damit aufhören'], 'Wer zu anderen hält, ist ein echter Freund oder eine echte Freundin.'],
   ['Deine Mannschaft hat verloren. Was ist fair?', '🤝', 'Den anderen gratulieren', ['Sagen, dass der Schiedsrichter schuld war', 'Schnell und wortlos vom Platz gehen', 'Sagen, dass die anderen nur Glück hatten'], 'Fair verlieren ist eine echte Stärke, nächstes Mal klappt es vielleicht.'],
   ['Was macht eine gute Freundin oder einen guten Freund aus?', '💛', 'Sie hören zu und helfen dir.', ['Sie geben dir immer recht.', 'Sie spielen nur mit dir allein.', 'Sie mögen genau dasselbe wie du.'], 'Gute Freunde sind für einander da, in fröhlichen und traurigen Zeiten.'],
   ['Darf man mit mehreren Kindern gleichzeitig befreundet sein?', '👭', 'Ja, natürlich!', ['Nein, nur mit einem Kind', 'Ja, aber nur mit zweien', 'Nur, wenn alle sich kennen'], 'Je mehr Freunde, desto bunter. Niemand muss sich entscheiden.'],
@@ -15122,8 +15133,8 @@ function genKernaufgaben(ctx) {
     [2, 4, `2 · ${x} = ${2 * x}, das Doppelte ist ${4 * x}`], [4, 8, `4 · ${x} = ${4 * x}, das Doppelte ist ${8 * x}`]][t];
   const [k, a, how] = K;
   if (R.chance(.7)) return mkNumber({ prompt: 'Die Kernaufgabe hilft dir. Wie viel ist die neue Aufgabe?', visual: k4Line(`Kernaufgabe: <b>${k} · ${x} = ${k * x}</b>`) + mathLine([`${a}`, '·', `${x}`, '=', '?']), answer: a * x, explain: `${how}: ${a} · ${x} = ${a * x}.`, key: 'ka' + k + a + x });
-  const right = `${k} · ${x}`, wrong = [...new Set([[a + 1, x], [a, x + 1], [a + 2, x + 1], [a, x + 2]].map(([p, q]) => `${p} · ${q}`))].filter(w => w !== right && w !== `${a} · ${x}`);
-  return mkChoice({ prompt: `Welche leichte Kernaufgabe hilft dir bei ${a} · ${x}?`, visual: mathLine([`${a}`, '·', `${x}`]), answer: right, wrong: wrong.slice(0, 3), explain: `${how}. Kernaufgaben sind die Aufgaben mit 1, 2, 5 und 10.`, key: 'kc' + k + a + x });
+  const right = `${k} · ${x}`, wrong = [...new Set([[a + 1, x + 1], [a + 2, x + 1], [a + 1, x + 2], [a + 3, x + 2]].map(([p, q]) => `${p} · ${q}`))].filter(w => w !== right && w !== `${a} · ${x}`);
+  return mkChoice({ prompt: `Welche leichtere Aufgabe hilft dir bei ${a} · ${x}?`, visual: mathLine([`${a}`, '·', `${x}`]), answer: right, wrong: wrong.slice(0, 3), explain: `${how}. ${k === 4 ? 'Verdoppeln hilft: Aus der 4er-Aufgabe wird die 8er-Aufgabe.' : 'Kernaufgaben sind die Aufgaben mit 1, 2, 5 und 10.'}`, key: 'kc' + k + a + x });
 }
 
 function rsSVG(start, jumps, ops, ask) {
@@ -15173,7 +15184,7 @@ function genLaengen(ctx) {
     return mkNumber({ prompt: `Wie viele Zentimeter fehlen bis zu einem Meter?`, visual: mathLine([`${c} cm`, '+', '?', '=', '1 m']), answer: 100 - c, unit: 'cm', explain: `1 m = 100 cm. 100 − ${c} = ${100 - c}.`, key: 'lgf' + c });
   }
   const x0 = lv === 1 ? 0 : R.int(1, 4), len = R.int(lv === 1 ? 3 : 3, 15 - x0 - (lv === 1 ? 0 : 1));
-  return mkNumber({ prompt: lv === 1 ? `${name} liegt am Lineal. Wie lang ist das Ding?` : `${name} liegt nicht bei der 0! Wie lang ist das Ding?`, visual: lgSVG(x0, len, kind), answer: len, unit: 'cm',
+  return mkNumber({ prompt: lv === 1 ? `${name} liegt am Lineal. Wie viele Zentimeter sind das?` : `${name} liegt nicht bei der 0! Wie viele Zentimeter sind das?`, visual: lgSVG(x0, len, kind), answer: len, unit: 'cm',
     explain: x0 ? `Es geht von ${x0} cm bis ${x0 + len} cm: ${x0 + len} − ${x0} = ${len} cm.` : `Es beginnt bei 0 und endet bei ${len}. Also ${len} cm.`, key: 'lg' + x0 + len + kind });
 }
 
@@ -15231,7 +15242,7 @@ function genRunden(ctx) {
   if (R.chance(.25)) {
     const t = R.int(lv === 1 ? 11 : 2, lv === 1 ? 98 : 9) * st, ok = t - st / 2 + R.int(0, st - 1);
     const wr = [t - st / 2 - R.int(1, st / 2 - 1 || 1), t + st / 2 + R.int(0, st / 2 - 1), t + st].filter(x => Math.round(x / st) * st !== t);
-    return mkChoice({ prompt: `Welche Zahl wird auf ${t} gerundet?`, visual: `<div class="q-num">≈ ${t}</div>`, answer: String(ok), wrong: wr.slice(0, 3).map(String), explain: `Auf ${t} rundet man alle Zahlen von ${t - st / 2} bis ${t + st / 2 - 1}. ${ok} gehört dazu.`, key: 'rub' + t + ok });
+    return mkChoice({ prompt: `Du rundest auf ${lv === 1 ? 'Zehner' : 'Hunderter'}. Welche Zahl wird zu ${t}?`, visual: `<div class="q-num">≈ ${t}</div>`, answer: String(ok), wrong: wr.slice(0, 3).map(String), explain: `Beim Runden auf ${lv === 1 ? 'Zehner' : 'Hunderter'} werden alle Zahlen von ${t - st / 2} bis ${t + st / 2 - 1} zu ${t}. ${ok} gehört dazu.`, key: 'rub' + t + ok });
   }
   return mkNumber({ prompt: `Runde auf ${lv === 1 ? 'Zehner' : 'Hunderter'}.`, visual: mathLine([`${n}`, '≈', '?']), answer: ans,
     explain: `Schau auf die ${lv === 1 ? 'Einer' : 'Zehner'}: ${look}. ${look >= 5 ? 'Bei 5, 6, 7, 8, 9 wird aufgerundet' : 'Bei 0, 1, 2, 3, 4 wird abgerundet'}, also ${ans}.`, key: 'ru' + lv + n });
@@ -15287,12 +15298,12 @@ function genZeitspanne(ctx) {
     const s = R.int(8, 18) * 60 + R.pick([0, 10, 15, 20, 30, 40, 45, 50]), d = R.pick([35, 40, 45, 50, 55, 65, 70, 75, 80, 85, 90, 100, 105, 110, 120]), e = s + d, w = R.pick(ZS_TUN);
     if (t === 0) return mkNumber({ prompt: `${w} beginnt um ${hm(s)} und endet um ${hm(e)}. Wie viele Minuten dauert das?`, visual: bigEmoji('⏱️', 'sm'), answer: d, unit: 'min', explain: `Von ${hm(s)} bis ${hm(e)}: ${d >= 60 ? `${Math.floor(d / 60)} h ${d % 60} min = ` : ''}${d} Minuten. Tipp: Rechne erst bis zur vollen Stunde.`, key: 'zs1a' + s + d });
     const wr = [e + 10, e - 10, e + 60, s + d % 60].filter(x => x !== e).slice(0, 3);
-    return mkChoice({ prompt: `${w} beginnt um ${hm(s)} und dauert ${d >= 60 ? `${Math.floor(d / 60)} h ${d % 60 ? d % 60 + ' min' : ''}`.trim() : d + ' Minuten'}. Wann ist es zu Ende?`, visual: clockSVG(Math.floor(s / 60) % 12, s % 60), answer: hm(e), wrong: wr.map(hm), layout: 'grid2', explain: `${hm(s)} + ${d} min = ${hm(e)}.`, key: 'zs1b' + s + d });
+    return mkChoice({ prompt: `${w} beginnt um ${hm(s)} und dauert ${d >= 60 ? `${Math.floor(d / 60)} h ${d % 60 ? d % 60 + ' min' : ''}`.trim() : d + ' Minuten'}. Wann ist Schluss?`, visual: clockSVG(Math.floor(s / 60) % 12, s % 60), answer: hm(e), wrong: wr.map(hm), layout: 'grid2', explain: `${hm(s)} + ${d} min = ${hm(e)}.`, key: 'zs1b' + s + d });
   }
   if (t === 0) { const a = R.int(1, 4), b = R.int(5, 55); return mkNumber({ prompt: 'Wie viele Sekunden sind das?', visual: mathLine([`${a} min ${b} s`, '=', '?', 's']), answer: a * 60 + b, unit: 's', explain: `1 min = 60 s. ${a > 1 ? `${a} min = ${a * 60} s, ` : ''}dazu ${b} s: ${a * 60 + b} s.`, key: 'zs2a' + a + b }); }
   if (t === 1) { const a = R.int(1, 5), b = R.pick([5, 10, 15, 20, 30, 40, 45, 50]); return mkNumber({ prompt: 'Wie viele Minuten sind das?', visual: mathLine([`${a} h ${b} min`, '=', '?', 'min']), answer: a * 60 + b, unit: 'min', explain: `1 h = 60 min. ${a > 1 ? `${a} h = ${a * 60} min, ` : ''}dazu ${b} min: ${a * 60 + b} min.`, key: 'zs2b' + a + b }); }
   const s = 22 * 60 + R.pick([30, 40, 45, 50]), d = R.pick([50, 65, 75, 90, 95]), e = s + d;
-  return mkNumber({ prompt: `Der Nachtzug fährt um ${hm(s)} ab und kommt um ${hm(e)} an. Wie viele Minuten fährt er?`, visual: bigEmoji('🚆', 'sm'), answer: d, unit: 'min', explain: `Bis Mitternacht (0:00 Uhr) sind es ${24 * 60 - s} Minuten, danach noch ${e - 24 * 60}: zusammen ${d} Minuten.`, key: 'zs2c' + s + d });
+  return mkNumber({ prompt: `Der Nachtzug fährt um ${hm(s)} ab und kommt um ${hm(e)} an. Wie viele Minuten fährt er?`, visual: bigEmoji('🚆', 'sm'), answer: d, unit: 'min', explain: e > 24 * 60 ? `Bis Mitternacht (0:00 Uhr) sind es ${24 * 60 - s} Minuten, danach noch ${e - 24 * 60}: zusammen ${d} Minuten.` : e === 24 * 60 ? `Von ${hm(s)} bis Mitternacht sind es ${d} Minuten.` : `Bis 23:00 Uhr sind es ${23 * 60 - s} Minuten, danach noch ${e - 23 * 60}: zusammen ${d} Minuten.`, key: 'zs2c' + s + d });
 }
 
 const GR_DINGE = [['ein Buch', 749], ['einen Malblock', 285], ['einen Fußball', 1299], ['ein Squishy', 499], ['eine Brezel', 95], ['ein Eis', 180], ['einen Füller', 899], ['eine Kinokarte', 750], ['einen Comic', 450], ['einen Ball', 375], ['einen Saft', 129], ['ein Heft', 65]];
@@ -15319,7 +15330,7 @@ const DG_SETS = [
   { t: 'Verkaufte Eiskugeln am Strand', c: [['🍓', 'Erdbeere'], ['🍫', 'Schoko'], ['🍋', 'Zitrone'], ['🍦', 'Vanille']], u: 'Kugeln' },
   { t: 'Gelesene Bücher im Lese-Wettbewerb', c: [['3a', 'Klasse 3a'], ['3b', 'Klasse 3b'], ['4a', 'Klasse 4a'], ['4b', 'Klasse 4b']], u: 'Bücher' },
   { t: 'Gezählte Vögel am Deich', c: [['🪶', 'Möwen'], ['🦆', 'Enten'], ['🐦', 'Spatzen'], ['🦢', 'Gänse']], u: 'Vögel' },
-  { t: 'Besucher im Tierpark am Wochenende', c: [['Fr', 'Freitag'], ['Sa', 'Samstag'], ['So', 'Sonntag']], u: 'Besucher' }];
+  { t: 'Besucher im Tierpark', c: [['Fr', 'Freitag'], ['Sa', 'Samstag'], ['So', 'Sonntag']], u: 'Besucher' }];
 function dgSVG(set, vals, step) {
   const top = Math.ceil(Math.max(...vals) / step + .5) * step, W = 340, H = 240, L = 44, B = 184, T = 14, ph = B - T, y = v => B - v / top * ph;
   const bw = 40, gap = (W - L - 10) / vals.length;
@@ -15337,7 +15348,7 @@ function genDiagramm(ctx) {
   const o = i => ({ html: `<span class="em">${set.c[i][0]}</span>${esc(set.c[i][1])}`, label: set.c[i][1] });
   if (t === 0) { const i = R.int(0, n - 1); return mkNumber({ prompt: `Wie viele ${set.u} sind es bei „${set.c[i][1]}“?`, visual: vis, answer: vals[i], explain: `Lies an der Skala ab: Ein Kästchen sind ${step}. Die Säule geht bis ${vals[i]}.`, key: 'dg0' + set.t + vals.join() + i }); }
   if (t === 1) return mkChoice({ prompt: 'Wo ist die Säule am höchsten?', visual: vis, answer: o(ix), wrong: [...Array(n).keys()].filter(i => i !== ix).map(o), layout: n === 4 ? 'grid2' : 'row3', explain: `${set.c[ix][1]} hat mit ${vals[ix]} am meisten.`, key: 'dg1' + set.t + vals.join() });
-  if (t === 2) return mkNumber({ prompt: `Wie viele ${set.u} mehr hat „${set.c[ix][1]}“ als „${set.c[im][1]}“?`, visual: vis, answer: vals[ix] - vals[im], explain: `${vals[ix]} − ${vals[im]} = ${vals[ix] - vals[im]}.`, key: 'dg2' + set.t + vals.join() });
+  if (t === 2) return mkNumber({ prompt: `Wie viele ${set.u} mehr sind es bei „${set.c[ix][1]}“ als bei „${set.c[im][1]}“?`, visual: vis, answer: vals[ix] - vals[im], explain: `${vals[ix]} − ${vals[im]} = ${vals[ix] - vals[im]}.`, key: 'dg2' + set.t + vals.join() });
   return mkNumber({ prompt: `Wie viele ${set.u} sind es zusammen?`, visual: vis, answer: vals.reduce((a, b) => a + b, 0), explain: `${vals.join(' + ')} = ${vals.reduce((a, b) => a + b, 0)}.`, key: 'dg3' + set.t + vals.join() });
 }
 
@@ -15350,7 +15361,7 @@ const KP_SVG = {
   'Pyramide': '<path d="M20 82 L80 82 L60 12 Z" class="k4-f1"/><path d="M80 82 L100 64 L60 12 Z" class="k4-f3"/><path d="M20 82 L40 64 L100 64 M40 64 L60 12" class="k4-hid" fill="none"/>'
 };
 const kpSVG = k => `<svg class="k4-svg kp" viewBox="0 0 120 100" role="img" aria-label="${k}">${KP_SVG[k]}</svg>`;
-const KP_ALLTAG = [['🥫', 'eine Dose', 'Zylinder'], ['⚽', 'ein Fußball', 'Kugel'], ['📦', 'ein Paket', 'Quader'], ['🎲', 'ein Spielwürfel', 'Würfel'], ['🍦', 'eine Eiswaffel', 'Kegel'], ['🍊', 'eine Orange', 'Kugel'], ['🥛', 'eine Milchtüte', 'Quader'], ['🕯️', 'eine dicke Kerze', 'Zylinder'], ['🥳', 'ein Partyhut', 'Kegel'], ['🏜️', 'die Pyramiden in Ägypten', 'Pyramide'], ['🧊', 'ein Eiswürfel', 'Würfel'], ['🧱', 'ein Ziegelstein', 'Quader']];
+const KP_ALLTAG = [['🥫', 'eine Dose', 'Zylinder'], ['⚽', 'ein Fußball', 'Kugel'], ['📦', 'ein Paket', 'Quader'], ['🎲', 'ein Spielwürfel', 'Würfel'], ['🍦', 'eine Eiswaffel', 'Kegel'], ['🍊', 'eine Orange', 'Kugel'], ['🥛', 'eine Milchtüte', 'Quader'], ['🕯️', 'eine dicke Kerze', 'Zylinder'], ['🥳', 'ein Partyhut', 'Kegel'], ['🏜️', 'das Grabmal eines Pharaos in Ägypten', 'Pyramide'], ['🧊', 'ein Eiswürfel', 'Würfel'], ['🧱', 'ein Ziegelstein', 'Quader']];
 const KP_ZAHL = { 'Würfel': [8, 12, 6], 'Quader': [8, 12, 6], 'Pyramide': [5, 8, 5] };
 function genKoerper(ctx) {
   const t = R.int(0, 3), names = Object.keys(KP_SVG);
@@ -15471,7 +15482,7 @@ function genSachGross(ctx) {
     if (t === 2) { const r = R.int(4, 9), s = R.int(6, 12); return mkNumber({ prompt: `Im Kino gibt es ${r} Reihen mit je ${s} Plätzen. Wie viele Plätze gibt es insgesamt?`, visual: bigEmoji('🎬', 'sm'), answer: r * s, explain: `${r} · ${s} = ${r * s}.`, key: 'sg1c' + r + s }); }
     if (t === 3) { const d = R.int(3, 8), q = R.int(12, 32), tot = d * q; return mkNumber({ prompt: `${tot} Muscheln werden gerecht in ${d} Eimer verteilt. Wie viele kommen in jeden Eimer?`, visual: bigEmoji('🐚', 'sm'), answer: q, explain: `${tot} : ${d} = ${q}.`, key: 'sg1d' + tot + d }); }
     if (t === 4) { const a = R.int(320, 680), b = R.int(120, 999 - a); return mkNumber({ prompt: `Am Samstag kamen ${a} Gäste ins Schwimmbad, am Sonntag ${b}. Wie viele Gäste waren es am Wochenende?`, visual: bigEmoji('🏊', 'sm'), answer: a + b, explain: `${a} + ${b} = ${a + b}.`, key: 'sg1e' + a + b }); }
-    const g = R.int(3, 8) * 100, e = R.int(3, 9) * 10, k = R.int(2, 4); return mkNumber({ prompt: `${n} packt für den Ausflug: Der Rucksack wiegt ${g} g, dazu kommen ${k} Trinkflaschen mit je ${e} g. Wie viel Gramm sind das zusammen?`, visual: bigEmoji('🎒', 'sm'), answer: g + e * k, unit: 'g', explain: `${k} · ${e} g = ${e * k} g. ${g} g + ${e * k} g = ${g + e * k} g.`, key: 'sg1f' + g + e + k });
+    const g = R.int(3, 8) * 100, e = R.int(3, 9) * 10, k = R.int(2, 4); return mkNumber({ prompt: `${n} packt für den Ausflug: Der Rucksack wiegt ${g} g, dazu kommen ${k} Müsliriegel mit je ${e} g. Wie viel Gramm sind das zusammen?`, visual: bigEmoji('🎒', 'sm'), answer: g + e * k, unit: 'g', explain: `${k} · ${e} g = ${e * k} g. ${g} g + ${e * k} g = ${g + e * k} g.`, key: 'sg1f' + g + e + k });
   }
   if (t === 0) { const w = R.int(8, 14), p = R.int(48, 86); return mkNumber({ prompt: `Ein ICE hat ${w} Wagen mit je ${p} Sitzplätzen. Wie viele Sitzplätze sind das?`, visual: bigEmoji('🚄', 'sm'), answer: w * p, explain: `${w} · ${p} = ${w * p}. Tipp: ${w} · ${p} = ${w} · ${Math.floor(p / 10) * 10} + ${w} · ${p % 10}.`, key: 'sg2a' + w + p }); }
   if (t === 1) { const s = R.int(41, 57) * 1000, b = R.int(28, 40) * 1000 + R.int(1, 9) * 100; return mkNumber({ prompt: `Das Fußballstadion hat ${dotN(s)} Plätze. ${dotN(b)} Karten sind verkauft. Wie viele Plätze sind noch frei?`, visual: bigEmoji('🏟️', 'sm'), answer: s - b, explain: `${dotN(s)} − ${dotN(b)} = ${dotN(s - b)}.`, key: 'sg2b' + s + b }); }
@@ -16297,7 +16308,7 @@ const WEATHER_EN = [['sunny', '☀️', 'sonnig'], ['rainy', '🌧️', 'regneri
   ['hot', '🥵', 'heiß'], ['cold', '🥶', 'kalt'], ['spring', '🌷', 'Frühling'], ['summer', '🏖️', 'Sommer'], ['autumn', '🍂', 'Herbst'], ['winter', '☃️', 'Winter'], ['rainbow', '🌈', 'Regenbogen'], ['umbrella', '☂️', 'Regenschirm']];
 function genWeatherEN(ctx) {
   if (R.chance(.3)) { const w = R.pick(WEATHER_EN.slice(0, 7)), s = `It's ${w[0]}.`, wrong = R.sample(WEATHER_EN.slice(0, 7).filter(x => x !== w), 3); const o = x => ({ html: `<span class="em xl">${x[1]}</span>`, label: x[0] });
-    return mkChoice({ prompt: `What's the weather like? Lies: „${s}“, welches Bild passt?`, visual: `<div class="q-word en big">${s}</div>`, answer: o(w), wrong: wrong.map(o), layout: 'grid2emoji', explain: `${s} = Es ist ${w[2]}.`, key: 'wen' + w[0], say: s, sayLang: 'en-GB' }); }
+    return mkChoice({ prompt: `What's the weather like? Lies: „${s}“ Welches Bild passt?`, visual: `<div class="q-word en big">${s}</div>`, answer: o(w), wrong: wrong.map(o), layout: 'grid2emoji', explain: `${s} = Es ist ${w[2]}.`, key: 'wen' + w[0], say: s, sayLang: 'en-GB' }); }
   return genVokabelBild(WEATHER_EN, 'en-GB', ctx, 'wen', TXT_EN);
 }
 const BODY_EN = [['head', 'Kopf'], ['hair', 'Haare'], ['face', 'Gesicht'], ['eye', 'Auge'], ['ear', 'Ohr'], ['nose', 'Nase'], ['mouth', 'Mund'], ['neck', 'Hals'], ['shoulder', 'Schulter'], ['arm', 'Arm'],
@@ -16399,7 +16410,7 @@ const SINONIMOS_ES = [['contento', 'feliz', ['triste', 'enfadado']], ['bonito', 
   ['cansado', 'agotado', ['despierto', 'alegre']], ['fácil', 'sencillo', ['difícil', 'largo']], ['terminar', 'acabar', ['empezar', 'abrir']], ['casa', 'hogar', ['calle', 'jardín']]];
 function genSinonimosES(ctx) {
   const [w, a, wr] = ctx.draw(SINONIMOS_ES);
-  return mkChoice({ prompt: `¿Qué palabra significa casi lo mismo que «${w}»?`, visual: `<div class="q-word big">${w}</div>`, answer: a, wrong: wr, layout: 'row3', explain: `«${w}» y «${a}» son sinónimos: significan casi lo mismo.`, key: 'sin' + w, say: `${w}, ${a}`, sayLang: 'es-ES' });
+  return mkChoice({ prompt: `¿Qué palabra significa casi lo mismo que «${w}»?`, visual: `<div class="q-word big">${w}</div>`, answer: a, wrong: wr, layout: 'row3', explain: `«${w}» ${/^h?i/i.test(a) ? 'e' : 'y'} «${a}» son sinónimos: significan casi lo mismo.`, key: 'sin' + w, say: `${w}, ${a}`, sayLang: 'es-ES' });
 }
 const LEER34_ES = [
   { t: 'Un día en Tenerife', x: 'En verano, ⟦N⟧ viaja con su familia a Tenerife. El primer día van a la playa. El agua del mar es azul y está calentita. ⟦N⟧ construye un castillo de arena con su primo Pablo. Por la tarde suben en coche al Teide, el volcán más alto de España. Desde arriba ven las nubes debajo de ellos. ¡Parece un mar blanco! Por la noche comen papas arrugadas con mojo. A ⟦N⟧ le encantan.',
@@ -17077,7 +17088,7 @@ const B24_SCHLAF = [
   ['Was hilft am Tag dabei, abends gut einzuschlafen?', '💤', 'viel Bewegung an der frischen Luft', ['ein langer Schlaf am späten Nachmittag', 'viel Zeit vor dem Bildschirm', 'ein spätes, großes Abendessen'], 'Toben, Rad fahren oder Fußball spielen machen angenehm müde.'],
   ['Was ist besser für einen guten Schlaf?', '⏰', 'jeden Tag ungefähr zur gleichen Zeit ins Bett gehen', ['jeden Tag zu einer ganz anderen Zeit ins Bett gehen', 'am Wochenende den Schlaf der Woche nachholen', 'erst ins Bett gehen, wenn die Augen zufallen'], 'Der Körper gewöhnt sich an feste Zeiten und wird von allein müde.'],
   ['Womit verbringen Menschen ungefähr ein Drittel ihres Lebens?', '🕐', 'mit Schlafen', ['mit Essen', 'mit Arbeiten', 'mit Lernen'], 'Wer jede Nacht 8 Stunden schläft, schläft ein Drittel des Tages.'],
-  ['Warum hält man manchmal ein Kuscheltier beim Einschlafen?', '🧸', 'Es gibt ein sicheres, gemütliches Gefühl.', ['Es hält das Bett die ganze Nacht warm.', 'Es sorgt dafür, dass man schneller wächst.', 'Es hält alle Träume aus dem Kopf fern.'], 'Viele Kinder und sogar Erwachsene, schlafen mit etwas Kuscheligem besser ein.']];
+  ['Warum hält man manchmal ein Kuscheltier beim Einschlafen?', '🧸', 'Es gibt ein sicheres, gemütliches Gefühl.', ['Es hält das Bett die ganze Nacht warm.', 'Es sorgt dafür, dass man schneller wächst.', 'Es hält alle Träume aus dem Kopf fern.'], 'Viele Kinder und sogar Erwachsene schlafen mit etwas Kuscheligem besser ein.']];
 
 
 const B24_SPUREN = [
@@ -19457,7 +19468,7 @@ function g27aDaten3(ctx) {
   const t = R.int(0, 3), i = R.int(0, 3), j = (i + R.int(1, 3)) % 4, keyTxt = `Ein Symbol steht für ${K} ${B.what}${half ? `, ein halbes für ${K / 2}` : ''}.`;
   if (t === 1) {
     const [a, b] = vals[i] > vals[j] ? [i, j] : [j, i];
-    return mkNumber({ prompt: `Wie viele ${B.what} mehr hat „${rows[a]}“ als „${rows[b]}“?`, visual: vis, answer: vals[a] - vals[b], explain: `${keyTxt} ${rows[a]}: ${vals[a]}, ${rows[b]}: ${vals[b]}. ${vals[a]} − ${vals[b]} = ${vals[a] - vals[b]}.`, key: 'bd3d' + a + b + sig });
+    return mkNumber({ prompt: `Wie viele ${B.what} mehr sind es bei „${rows[a]}“ als bei „${rows[b]}“?`, visual: vis, answer: vals[a] - vals[b], explain: `${keyTxt} ${rows[a]}: ${vals[a]}, ${rows[b]}: ${vals[b]}. ${vals[a]} − ${vals[b]} = ${vals[a] - vals[b]}.`, key: 'bd3d' + a + b + sig });
   }
   if (t === 2) { const sum = vals.reduce((a, b) => a + b, 0); return mkNumber({ prompt: B.sumQ, visual: vis, answer: sum, explain: `${keyTxt} ${vals.join(' + ')} = ${sum}.`, key: 'bd3s' + sig }); }
   if (t === 3) {
@@ -20573,7 +20584,7 @@ const G27B_XMAS = [
   ['Was zeigt eine Weihnachtskrippe?', '🌟', 'die Geburt von Jesus im Stall mit Maria, Josef und den Hirten', ['den Nikolaus, der mit seinem Sack durch den Schnee stapft', 'die Heiligen Drei Könige auf dem Weg durch die Wüste', 'die Engel, die über der Stadt Jerusalem singen'], 'Oft stehen auch Ochs und Esel und die Heiligen Drei Könige dabei.'],
   ['Was feiern Christen an Weihnachten?', '⛪', 'die Geburt von Jesus', ['die Auferstehung von Jesus', 'die Taufe von Jesus', 'den Namenstag des Nikolaus'], 'Darum heißt der Tag auf Englisch „Christmas“ und auf Spanisch „Navidad“, Geburt.'],
   ['In welcher Stadt wurde Jesus nach der Bibel geboren?', '⭐', 'in Betlehem', ['in Nazaret', 'in Jerusalem', 'in Rom'], 'Betlehem liegt im Westjordanland, nicht weit von Jerusalem.'],
-  ['Wo ist es in Kanada, Finnland oder Russland an Weihnachten meistens?', '🗺️', 'sehr kalt, oft mit viel Schnee', ['mild, meistens mit viel Regen', 'warm, fast wie im Frühling', 'trocken, mit viel Sonne'], 'Diese Länder liegen weit im Norden. Auf der Südhalbkugel ist es dagegen warm.'],
+  ['Wie ist das Wetter in Kanada, Finnland oder Russland an Weihnachten meistens?', '🗺️', 'sehr kalt, oft mit viel Schnee', ['mild, meistens mit viel Regen', 'warm, fast wie im Frühling', 'trocken, mit viel Sonne'], 'Diese Länder liegen weit im Norden. Auf der Südhalbkugel ist es dagegen warm.'],
   ['Was ist an Weihnachten in Brasilien und Argentinien anders als bei uns?', '🗺️', 'Es ist Sommer, manche feiern sogar mit Feuerwerk und Grillen.', ['Es ist Herbst, und die Bäume verlieren gerade ihre bunten Blätter.', 'Es wird erst im Januar gefeiert, weil die Ferien später sind.', 'Es gibt keinen Baum, weil dort keine Tannen wachsen dürfen.'], 'Beide Länder liegen auf der Südhalbkugel.'],
   ['Wie heißt der Weihnachtsmann in Frankreich?', '🇫🇷', 'Père Noël', ['Sinterklaas', 'Papá Noel', 'Babbo Natale'], '„Père Noël“ heißt „Vater Weihnachten“. Auf Spanisch sagt man „Papá Noel“.'],
   ['Welcher Kuchen sieht in Frankreich an Weihnachten aus wie ein kleiner Baumstamm?', '🇫🇷', 'die Bûche de Noël', ['die Tarte Tatin', 'das Éclair', 'die Galette des Rois'], 'Die Biskuitrolle wird mit Schokoladencreme bestrichen, damit sie aussieht wie Baumrinde.'],
@@ -23009,9 +23020,9 @@ const SZ_FRAGEN = [
   { id: 'kaiserpinguin-tauchtiefe', k: 'pinguin', e: '🌊', lv: 2, q: 'Wie viele Meter tief kann ein Kaiserpinguin höchstens tauchen?', u: 'Meter', a: 550,
     how: ['Die Kugelbake in Cuxhaven ist etwa 30 Meter hoch.', 'Ein Kaiserpinguin taucht so tief, wie fast 18 Kugelbaken übereinander hoch wären.', '18 × 30 = 540, also ungefähr 550 Meter.'],
     vgl: 'So tief, dass es dort unten fast stockdunkel ist!', fakt: 'Der Rekord liegt bei 564 Metern.', src: 'https://en.wikipedia.org/wiki/Emperor_penguin' },
-  { id: 'kaiserpinguin-tauchzeit', k: 'pinguin', e: '⏱️', lv: 2, q: 'Wie viele Minuten kann ein Kaiserpinguin höchstens unter Wasser bleiben?', u: 'Minuten', a: 22,
-    how: ['Du kannst vielleicht 30 Sekunden lang die Luft anhalten.', 'Kaiserpinguine sind Tauch-Profis und schaffen über 40-mal so lange.', '40 × 30 Sekunden = 1.200 Sekunden = 20 Minuten, sogar etwas mehr.'],
-    vgl: 'So lange wie eine halbe Fußball-Halbzeit!', fakt: 'Beim Tauchen schlägt sein Herz ganz langsam, damit er Sauerstoff spart.', src: 'https://en.wikipedia.org/wiki/Emperor_penguin' },
+  { id: 'kaiserpinguin-tauchzeit', k: 'pinguin', e: '⏱️', lv: 2, q: 'Wie viele Minuten kann ein Kaiserpinguin höchstens unter Wasser bleiben?', u: 'Minuten', a: 32,
+    how: ['Du kannst vielleicht 30 Sekunden lang die Luft anhalten.', 'Kaiserpinguine sind Tauch-Profis und schaffen über 60-mal so lange.', '60 × 30 Sekunden = 1.800 Sekunden = 30 Minuten, sogar etwas mehr.'],
+    vgl: 'Länger als eine große Pause in der Schule!', fakt: 'Der längste gemessene Tauchgang dauerte gut 32 Minuten. Meistens tauchen Kaiserpinguine nur wenige Minuten. Dabei schlägt ihr Herz ganz langsam, damit sie Sauerstoff sparen.', src: 'https://en.wikipedia.org/wiki/Emperor_penguin' },
   { id: 'kaiserpinguin-marsch', k: 'pinguin', e: '🚶', lv: 2, q: 'Wie viele Kilometer laufen Kaiserpinguine ungefähr über das Eis vom Meer bis zu ihrer Brutkolonie?', u: 'Kilometer', a: 80,
     how: ['Ein Pinguin watschelt langsam: etwa 2 Kilometer in einer Stunde.', 'Über mehrere Tage verteilt läuft er insgesamt ungefähr 40 Stunden.', '40 × 2 = 80 Kilometer.'],
     vgl: 'Fast so weit wie von Cuxhaven bis Bremen!', fakt: 'Je nach Kolonie ist der Weg 50 bis 120 Kilometer lang.', src: 'https://en.wikipedia.org/wiki/Emperor_penguin' },
@@ -25311,9 +25322,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '2.81.0';
+const APP_VERSION = '2.81.1';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "2.81.1", d: "13.11.2026", t: ["Große Kontrolle aller Aufgaben und Antworten", "Sachunterricht: 44 doppelte Fragen durch neue ersetzt", "Fehler und mehrdeutige Aufgaben behoben, Grammatik und Satzzeichen geglättet"] },
   { v: "2.81.0", d: "13.11.2026", t: ["Neues Design: Inselkarte der Lernwelten", "Vier neue Lern-Abenteuer: Schatzinsel, Bücherburg, London, Forscherreise", "Spielhalle: Sternenreise und Polarlicht-Ritt", "Party: Knick-Monster, Zusammen bis 20, Klatsch-Echo", "Viele neue Aufgaben in allen Fächern"] },
   { v: "2.80.0", d: "13.11.2026", t: ["Spanisch: Geschichten hören, Zeiten, Gespräche, Schreiben", "Neues Lern-Abenteuer: Aventura en Tenerife", "Spielhalle: Inselsprung, Insel-Rallye und Tiefsee-Expedition"] },
   { v: "2.79.1", d: "13.11.2026", t: ["Aufgaben noch genauer den Klassen zugeordnet", "Englisch-Karten und Feste jetzt ab Klasse 3"] },
@@ -25837,6 +25849,7 @@ function genFor(gid, lv) {
     let c = null; try { c = GAMES[gid].gen(ctx); } catch (e) { reportProblem(e, gid); }
     if (c && c.prompt) { q = c; if (!G.used.has(gid + q.key)) break; }
   }
+  if (q && q.explain) q.explain = explFix(q.explain);
   if (!q) q = genPlus(ctxFor('plus', 1));
   G.used.add(gid + q.key); return q;
 }
@@ -25964,7 +25977,7 @@ function answer(ok, second = false) {
   const sheet = document.createElement('div');
   sheet.className = 'sheet ' + (ok ? 'ok' : 'bad'); sheet.setAttribute('role', 'status');
   sheet.innerHTML = `<div class="wrap">${mascot(ok ? 'happy' : 'oops')}<div class="txt"><strong>${ok && second ? (q.secondTxt || F.second) : hzPraise(F, ok)}</strong>${bonus ? `<span class="bonus">${F.streak(G.streak)} +${bonus}</span>` : ''}
-    <p>${ok || q.noSol ? '' : `${F.right}: <b>${esc(q.solution)}</b>. `}${esc(q.explain)}</p>${q.explainHTML || ''}${typeof fpFlagHTML === 'function' ? fpFlagHTML() : ''}</div>
+    <p>${ok || q.noSol ? '' : `${F.right}: <b>${esc(q.solution)}</b>. `}${esc(explFix(q.explain))}</p>${q.explainHTML || ''}${typeof fpFlagHTML === 'function' ? fpFlagHTML() : ''}</div>
     <button class="btn" data-act="next" id="nextBtn">${last ? F.res : F.next} ›</button></div>`;
   document.body.appendChild(sheet);
   sheet.addEventListener('click', e => { if (!e.target.closest('button')) goNext(); });
@@ -32936,7 +32949,7 @@ const COCINA_ES = [['la cuchara', '🥄', 'der Löffel'], ['el cuchillo', '🔪'
   ['el cocinero', '🧑‍🍳', 'der Koch'], ['la cebolla', '🧅', 'die Zwiebel'], ['el ajo', '🧄', 'der Knoblauch'], ['las gambas', '🦐', 'die Krabben'], ['la paella', '🥘', 'die Paella']];
 const KITCHEN_EN = [['spoon', '🥄', 'der Löffel'], ['knife', '🔪', 'das Messer'], ['fork', '🍴', 'die Gabel'], ['plate', '🍽️', 'der Teller'], ['cup', '☕', 'die Tasse'], ['pan', '🍳', 'die Pfanne'],
   ['pot', '🍲', 'der Kochtopf'], ['bowl', '🥣', 'die Schüssel'], ['salt', '🧂', 'das Salz'], ['butter', '🧈', 'die Butter'], ['honey', '🍯', 'der Honig'], ['rice', '🍚', 'der Reis'],
-  ['pancakes', '🥞', 'die Pfannkuchen'], ['salad', '🥗', 'der Salat'], ['sandwich', '🥪', 'das Sandwich'], ['cupcake', '🧁', 'der Muffin'], ['cook', '🧑‍🍳', 'der Koch / die Köchin'], ['onion', '🧅', 'die Zwiebel'], ['garlic', '🧄', 'der Knoblauch'], ['prawns', '🦐', 'die Krabben']];
+  ['pancakes', '🥞', 'die Pfannkuchen'], ['salad', '🥗', 'der Salat'], ['sandwich', '🥪', 'das Sandwich'], ['muffin', '🧁', 'der Muffin'], ['cook', '🧑‍🍳', 'der Koch / die Köchin'], ['onion', '🧅', 'die Zwiebel'], ['garlic', '🧄', 'der Knoblauch'], ['prawns', '🦐', 'die Krabben']];
 function genCocinaES(ctx) { return genVokabelBild(COCINA_ES, ES, ctx, 'coc', TXT_ES); }
 function genKitchenEN(ctx) { return genVokabelBild(KITCHEN_EN, 'en-GB', ctx, 'kit', TXT_EN); }
 
@@ -61431,7 +61444,7 @@ const ffM = (() => {
           if (t === 0) return H(C(ctx, { prompt: 'Welche Zahl ist das?', visual: T(`<b>${h}</b> Hunderter, <b>${z}</b> Zehner, <b>${e}</b> Einer`, 'ffm-c'), answer: String(n), wrong: SH([h * 10 + (z || e), z0 ? h * 100 + e * 10 : h * 100 + z, h * 1000 + z * 10 + e, n + 100]).map(String),
             explain: `${h} H, ${z} Z, ${e} E = ${n}. Die 0 hält den Platz frei.`, key: 'sn0' + n }), 'Schreib jede Ziffer in ihre Spalte. Ist eine Stelle leer, schreibst du 0.', blankPlace(3) + cap('H = Hunderter, Z = Zehner, E = Einer'));
           const m = find(() => I(101, 999), x => new Set(digs(x)).size === 3) || 482, p = I(0, 2), nm = ['Einer', 'Zehner', 'Hunderter'][p];
-          if (t === 1) return H(N({ prompt: `Wie viele ${nm} hat die Zahl ${m}?`, visual: `<div class="q-num ffm-num">${m}</div>`, answer: dig(m, p), explain: `${m} = ${dig(m, 2)} H, ${dig(m, 1)} Z, ${dig(m, 0)} E. Also ${dig(m, p)} ${nm}.`, key: 'sn1' + m + p }),
+          if (t === 1) return H(N({ prompt: `Welche Ziffer steht in der Zahl ${m} an der Stelle der ${nm}?`, visual: `<div class="q-num ffm-num">${m}</div>`, answer: dig(m, p), explain: `${m} = ${dig(m, 2)} H, ${dig(m, 1)} Z, ${dig(m, 0)} E. Also ${dig(m, p)} ${nm}.`, key: 'sn1' + m + p }),
             'Schreib die Zahl in die Stellenwerttafel.', ffPlace(m));
           return H(N({ prompt: 'Welche Zahl steht in der Stellenwerttafel?', visual: ffPlace(n, 3), answer: n, explain: `${h} Hunderter, ${z} Zehner, ${e} Einer = ${n}.`, key: 'sn2' + n }),
             'Lies die Ziffern von links nach rechts. Eine leere Stelle ist 0.', chips([`${h} H = ${h * 100}`, `${z} Z = ${z * 10}`, `${e} E = ${e}`]));
@@ -65099,7 +65112,7 @@ const ffSaInfo = { v: '2.36.0', groups: {} };
         `Folge der gestrichelten Linie von der leuchtenden Nummer ${n}.`);
     }
     const w = R.sample(nums.filter(x => x !== n), nW(ctx)).map(String);
-    return help(mkChoice({ prompt: `${D.name}: Welche Nummer zeigt ${akk}?`, visual: diagSVG(D, nums, 0), answer: String(n), wrong: w, fixed: true, layout: w.length === 2 ? 'row3' : 'row4', explain: `${cap(nom)} hat die Nummer ${n}. ${why}`, key: pre + 'n' + nums.join('') + n }), why);
+    return help(mkChoice({ prompt: `${D.name}: Welche Nummer zeigt ${akk}?`, visual: diagSVG(D, nums, 0), answer: String(n), wrong: w, fixed: true, layout: w.length === 2 ? 'row3' : 'row4', explain: `Die Nummer ${n} zeigt ${akk}. ${why}`, key: pre + 'n' + nums.join('') + n }), why);
   };
   const T_HAUS3 = [
     ['Was braucht ein Kaninchen jeden Tag am meisten?', '🐰', 'Heu und frisches Wasser', ['Brot und frische Milch', 'Körner und Nüsse im Napf', 'Möhren und Salatblätter'], 'Heu ist gut für die Verdauung und nutzt die Zähne ab.', 'Kaninchen sind Pflanzenfresser.'],
@@ -69568,11 +69581,11 @@ ffAdd('e-talk', {
       } },
       { t: 'Short answers profi', tip: 'Antworte mit der richtigen Person (he, she, it, we, they) und dem Wort vom Fragenanfang.', gen: ctx => {
         const [q, e, p, a] = ctx.draw(ffLSHORT3), yes = R.chance(.5), right = ffLshort(p, a, yes);
-        const ps = p === 'I' ? ['he', 'she'] : p === 'we' ? ['they'] : p === 'they' ? ['we', 'he'] : p === 'he' ? ['she', 'it'] : p === 'she' ? ['he', 'it'] : ['he', 'she'];
+        const ps = p === 'I' ? ['he', 'she'] : p === 'we' ? ['they'] : p === 'they' ? ['we', 'he'] : p === 'he' ? ['she', 'it'] : p === 'she' ? ['he', 'it'] : ['they', 'we'];
         const altP = R.pick(ps), altA = R.pick(ffLAUX[p].filter(x => x !== a && !(a === 'am' && x === 'is')));
         const auxFor = (pp, aa) => { const L = ffLAUX[pp]; const k = ffLAUX[p].indexOf(aa); return L[k] || aa; };
         const wrong = [...new Set([ffLshort(altP, auxFor(altP, a), yes), ffLshort(p, altA, yes)].filter(x => x !== right))];
-        return ffLe({ prompt: q, visual: `<div class="ffl-scene"><span>${e}</span><span>${yes ? '👍' : '👎'}</span></div>`, answer: right, wrong, layout: 'col', say: q, explain: `${q}, ${right}`, after: right, key: `s3${q}${yes}`,
+        return ffLe({ prompt: q, visual: `<div class="ffl-scene"><span>${e}</span><span>${yes ? '👍' : '👎'}</span></div>`, answer: right, wrong, layout: 'col', say: q, explain: `${q} ${right}`, after: right, key: `s3${q}${yes}`,
           hint: 'Wer ist gemeint? (my mum → she, my brother → he, the cat → it, my friends → they) Und welches Wort steht am Anfang der Frage?' });
       } },
       { t: 'Who am I?', tip: 'Lies jeden Satz. Die Lösung muss zu ALLEN Sätzen passen.', gen: ctx => {
@@ -69908,7 +69921,7 @@ ffAdd('es-vocab', {
       } },
       { t: 'Sinónimos', tip: 'Los sinónimos son palabras que significan lo mismo o casi lo mismo: contento = alegre.', gen: ctx => {
         const [w, s, f, de] = ctx.draw(ffLSIN3);
-        return ffLs({ prompt: `¿Qué palabra significa lo mismo que «${w}»?`, visual: ffLw(w, 'big en'), answer: s, wrong: f, layout: 'row3', explain: `«${w}» y «${s}» son sinónimos. (DE: ${de})`, key: 'si' + w,
+        return ffLs({ prompt: `¿Qué palabra significa lo mismo que «${w}»?`, visual: ffLw(w, 'big en'), answer: s, wrong: f, layout: 'row3', explain: `«${w}» ${/^h?i/i.test(s) ? 'e' : 'y'} «${s}» son sinónimos. (DE: ${de})`, key: 'si' + w,
           hint: 'Busca la palabra que podrías usar en lugar de la otra sin cambiar el sentido.', hintHTML: ffLde(`${w} = ${de}`) });
       } },
       { t: 'Contrarios', tip: 'Los antónimos (contrarios) significan lo opuesto: abrir ↔ cerrar, lleno ↔ vacío.', gen: ctx => {
@@ -69980,7 +69993,7 @@ ffAdd('es-vocab', {
     ],
     3: [
       { t: '¿Cuál no es de la familia?', tip: 'Que dos palabras se parezcan no significa que sean de la misma familia: pan y pantalón no lo son.', gen: ctx => {
-        const [r, fam, tr] = ctx.draw(ffLFAMW), three = fam.length >= 3 ? R.sample(fam, 3) : fam.concat([r]), odd = R.pick(tr);
+        const [r, fam, tr] = ctx.draw(ffLFAMW), three = fam.length >= 3 ? R.sample(fam, 3) : fam.slice(), odd = R.pick(tr);
         return ffLs({ prompt: `¿Qué palabra NO es de la familia de «${r}»?`, visual: ffLw(r, 'big en'), answer: odd, wrong: three, layout: 'grid2', explain: `«${odd}» se parece, pero no tiene nada que ver con «${r}». Familia: ${fam.join(', ')}.`, key: 'nf' + r + odd,
           hint: `Pregúntate: ¿tiene que ver con «${r}»?` });
       } },
@@ -75263,7 +75276,7 @@ const EN249 = {
     ['taxi', '🚕', 'das Taxi', 1], ['lorry', '🚚', 'der Lastwagen', 3], ['tractor', '🚜', 'der Traktor', 2], ['helicopter', '🚁', 'der Hubschrauber', 2], ['rocket', '🚀', 'die Rakete', 2], ['motorbike', '🏍️', 'das Motorrad', 2],
     ['ambulance', '🚑', 'der Krankenwagen', 3], ['fire engine', '🚒', 'das Feuerwehrauto', 2], ['police car', '🚓', 'das Polizeiauto', 2], ['tram', '🚋', 'die Straßenbahn', 3], ['scooter', '🛴', 'der Roller', 2]],
   jobs: [['doctor', '🧑‍⚕️', 'der Arzt, die Ärztin', 1], ['teacher', '🧑‍🏫', 'der Lehrer, die Lehrerin', 1], ['cook', '🧑‍🍳', 'der Koch, die Köchin', 1], ['farmer', '🧑‍🌾', 'der Bauer, die Bäuerin', 1],
-    ['firefighter', '🧑‍🚒', 'die Feuerwehrleute', 2], ['police officer', '👮', 'der Polizist, die Polizistin', 2], ['pilot', '🧑‍✈️', 'der Pilot, die Pilotin', 1], ['astronaut', '🧑‍🚀', 'der Astronaut', 2],
+    ['firefighter', '🧑‍🚒', 'die Feuerwehrfrau', 2], ['police officer', '👮', 'der Polizist, die Polizistin', 2], ['pilot', '🧑‍✈️', 'der Pilot, die Pilotin', 1], ['astronaut', '🧑‍🚀', 'der Astronaut', 2],
     ['artist', '🧑‍🎨', 'der Künstler, die Künstlerin', 2], ['singer', '🧑‍🎤', 'der Sänger, die Sängerin', 1], ['mechanic', '🧑‍🔧', 'der Mechaniker', 3], ['scientist', '🧑‍🔬', 'der Forscher, die Forscherin', 3],
     ['builder', '👷', 'der Bauarbeiter', 2], ['detective', '🕵️', 'der Detektiv', 2], ['hairdresser', '💇', 'der Friseur, die Friseurin', 3]],
   nature: [['tree', '🌳', 'der Baum', 1], ['flower', '🌸', 'die Blume', 1], ['leaf', '🍃', 'das Blatt', 2], ['mountain', '⛰️', 'der Berg', 2], ['sea', '🌊', 'das Meer', 1], ['sun', '☀️', 'die Sonne', 1],
@@ -75274,7 +75287,7 @@ const EN249 = {
     ['castle', '🏰', 'das Schloss', 2], ['monster', '👾', 'das Monster', 1], ['mask', '🎭', 'die Maske', 2], ['black cat', '🐈‍⬛', 'die schwarze Katze', 2]],
   easter: [['egg', '🥚', 'das Ei', 1], ['Easter bunny', '🐰', 'der Osterhase', 1], ['chick', '🐥', 'das Küken', 1], ['basket', '🧺', 'der Korb', 2], ['tulip', '🌷', 'die Tulpe', 2], ['butterfly', '🦋', 'der Schmetterling', 1],
     ['lamb', '🐑', 'das Lamm', 2], ['chocolate', '🍫', 'die Schokolade', 1], ['sun', '☀️', 'die Sonne', 1], ['bee', '🐝', 'die Biene', 1], ['ladybird', '🐞', 'der Marienkäfer', 2], ['daisy', '🌼', 'das Gänseblümchen', 3],
-    ['umbrella', '☂️', 'der Regenschirm', 2], ['nest', '🐣', 'das Nest mit Küken', 3]],
+    ['umbrella', '☂️', 'der Regenschirm', 2], ['nest', '🐣', 'das Nest', 3]],
   actions: [['run', '🏃', 'laufen', 1], ['swim', '🏊', 'schwimmen', 1], ['dance', '💃', 'tanzen', 1], ['sing', '🎤', 'singen', 1], ['read', '📖', 'lesen', 1], ['write', '✍️', 'schreiben', 1],
     ['sleep', '😴', 'schlafen', 1], ['eat', '🍽️', 'essen', 1], ['drink', '🥤', 'trinken', 1], ['cook', '🍳', 'kochen', 2], ['paint', '🎨', 'malen', 1], ['climb', '🧗', 'klettern', 2],
     ['ride a bike', '🚴', 'Rad fahren', 2], ['laugh', '😂', 'lachen', 2], ['cry', '😭', 'weinen', 2], ['think', '🤔', 'denken', 2], ['wave', '👋', 'winken', 2], ['clap', '👏', 'klatschen', 2], ['listen', '👂', 'zuhören', 2], ['look', '👀', 'schauen', 2]],
@@ -75854,7 +75867,7 @@ const W_KINDERERFINDER = [
   ['Welches Sportgerät baute George Nissen als Jugendlicher?', '🤸', 'das Trampolin', ['das Skateboard', 'den Tretroller', 'das Sprungbrett'], 'Er schaute Trapezkünstlern zu, die ins Netz sprangen.'],
   ['Was sollten Kinder tun, wenn sie eine Erfindungsidee haben?', '💡', 'aufschreiben, aufmalen und ausprobieren', ['warten, bis sie erwachsen sind', 'die Idee lieber für sich behalten', 'nur daran denken, das reicht'], 'Viele Erfindungen beginnen mit einer einfachen Frage.'],
   ['Was ist ein Erfinder?', '🧑‍🔬', 'jemand, der etwas Neues ausdenkt und baut', ['jemand, der verlorene Sachen wiederfindet', 'jemand, der alte Dinge sammelt und zeigt', 'jemand, der fremde Länder entdeckt'], 'Erfinden heißt: ein Problem lösen.'],
-  ['Wofür gibt es einen Wettbewerb für junge Forscher in Deutschland?', '🏆', 'für eigene Experimente und Erfindungen von Kindern und Jugendlichen', ['für die besten Noten in Mathematik und Deutsch in jeder Klasse', 'für das Auswendiglernen von möglichst vielen Fachwörtern', 'für das schnellste Lösen von Rechenaufgaben am Computer'], 'Er heißt Jugend forscht, für Jüngere gibt es Schüler experimentieren.'],
+  ['Wofür gibt es einen Wettbewerb für junge Forscher in Deutschland?', '🏆', 'für eigene Experimente und Erfindungen von Kindern und Jugendlichen', ['für die besten Noten in Mathematik und Deutsch in jeder Klasse', 'für das Auswendiglernen von möglichst vielen Fachwörtern', 'für das schnellste Lösen von Rechenaufgaben am Computer'], 'Er heißt Jugend forscht, für Jüngere gibt es Jugend forscht junior.'],
   ['Welche Erfindung von Johannes Gutenberg veränderte die Welt?', '📚', 'der Buchdruck mit beweglichen Buchstaben', ['die Dampfmaschine mit Kolben und Kessel', 'das Fernrohr mit geschliffenen Linsen', 'die Uhr mit Zahnrädern und Pendel'], 'Bücher wurden dadurch viel billiger.'],
   ['Wer erfand das Laufrad, den Vorläufer des Fahrrads?', '🚲', 'Karl Drais', ['Carl Benz', 'Gottlieb Daimler', 'Otto Lilienthal'], 'Das war 1817 in Mannheim.'],
   ['Wer baute mit 19 Jahren eine Rechenmaschine für seinen Vater?', '🧮', 'Blaise Pascal', ['Isaac Newton', 'Galileo Galilei', 'Leonardo da Vinci'], 'Seine Maschine hieß Pascaline. Sie konnte addieren und subtrahieren.'],
@@ -75975,7 +75988,7 @@ const M_KOMP = [
   ['Wer komponierte Der Karneval der Tiere?', '🦁', 'Camille Saint-Saëns', ['Ludwig van Beethoven', 'Georg Friedrich Händel', 'Johannes Brahms'], 'Darin kommen Löwe, Schwan, Elefant und Schildkröten vor.'],
   ['In welchem musikalischen Märchen spielt jedes Tier ein eigenes Instrument?', '🐺', 'Peter und der Wolf', ['Hänsel und Gretel', 'Die Zauberflöte', 'Der Nussknacker'], 'Sergej Prokofjew schrieb es. Der Vogel ist die Querflöte, der Wolf sind die Hörner.'],
   ['Welcher Komponist spielte wunderbar Orgel und lebte in Leipzig?', '⛪', 'Johann Sebastian Bach', ['Wolfgang Amadeus Mozart', 'Antonio Vivaldi', 'Peter Tschaikowski'], 'Bach schrieb über tausend Musikstücke.'],
-  ['Welche berühmte Pianistin und Komponistin war früher auf dem 100 Mark Schein?', '👩', 'Clara Schumann', ['Fanny Hensel', 'Hildegard von Bingen', 'Nannerl Mozart'], 'Sie gab schon als Kind Konzerte in ganz Europa.'],
+  ['Welche berühmte Pianistin und Komponistin war früher auf dem 100-D-Mark-Schein?', '👩', 'Clara Schumann', ['Fanny Hensel', 'Hildegard von Bingen', 'Nannerl Mozart'], 'Sie gab schon als Kind Konzerte in ganz Europa.'],
   ['Wer schrieb die Wassermusik für einen König auf einem Schiff?', '🚣', 'Georg Friedrich Händel', ['Joseph Haydn', 'Peter Tschaikowski', 'Antonio Vivaldi'], 'Die Musik wurde auf der Themse in London gespielt.'],
   ['Von wem stammt die Melodie der deutschen Nationalhymne?', '🇩🇪', 'Joseph Haydn', ['Johann Sebastian Bach', 'Ludwig van Beethoven', 'Wolfgang Amadeus Mozart'], 'Haydn schrieb sie ursprünglich für den Kaiser in Österreich.'],
   ['Welches Musikstück beschreibt einen Fluss von der Quelle bis zur Stadt?', '🏞️', 'Die Moldau von Bedřich Smetana', ['Schwanensee von Peter Tschaikowski', 'Die vier Jahreszeiten von Vivaldi', 'Die Wassermusik von Händel'], 'Man hört das Wasser erst plätschern, dann rauschen.'],
@@ -76002,7 +76015,7 @@ const M_TANZ = [
   ['Welcher Tanz gehört zum Karneval in Brasilien?', '🎉', 'Samba', ['Polka', 'Tango', 'Flamenco'], 'Beim Karneval in Rio tanzen tausende Menschen Samba.'], ['Was tragen Ballerinas oft an den Füßen?', '🩰', 'Spitzenschuhe', ['Stepschuhe', 'Turnschuhe', 'Holzschuhe'], 'Damit können sie auf den Zehenspitzen tanzen.'],
   ['Aus welchem Land kommt der Tango?', '🌹', 'Argentinien', ['Spanien', 'Brasilien', 'Kuba'], 'Er wurde in Buenos Aires berühmt.'], ['Bei welchem Tanz schlagen Männer in Bayern auf Schuhe und Lederhosen?', '👞', 'Schuhplattler', ['Polonaise', 'Sirtaki', 'Flamenco'], 'Es klatscht und patscht im Takt.'],
   ['Woher kommt der Sirtaki?', '🏛️', 'aus Griechenland', ['aus Italien', 'aus Spanien', 'aus der Türkei'], 'Er wird erst langsam und dann immer schneller.'], ['Was ist typisch für irischen Stepptanz?', '☘️', 'Die Arme bleiben still, die Füße sind sehr schnell.', ['Die Füße bleiben still, die Arme sind sehr schnell.', 'Alle tanzen barfuß und ganz langsam im Kreis.', 'Man dreht sich zu zweit im Dreivierteltakt.'], 'Mit harten Schuhen klingt der Tanz wie Trommeln.'],
-  ['Von welchen Inseln kommt der Hula Tanz?', '🌺', 'Hawaii', ['Kanaren', 'Balearen', 'Island'], 'Mit den Händen erzählt man beim Hula eine Geschichte.'], ['Wie heißt der Tanz, bei dem alle in einer langen Schlange durch den Raum tanzen?', '🐍', 'Polonaise', ['Walzer', 'Polka', 'Breakdance'], 'Auf Partys tanzt man sie oft zum Spaß.'],
+  ['Von welchen Inseln kommt der Hula-Tanz?', '🌺', 'Hawaii', ['Kanaren', 'Balearen', 'Island'], 'Mit den Händen erzählt man beim Hula eine Geschichte.'], ['Wie heißt der Tanz, bei dem alle in einer langen Schlange durch den Raum tanzen?', '🐍', 'Polonaise', ['Walzer', 'Polka', 'Breakdance'], 'Auf Partys tanzt man sie oft zum Spaß.'],
   ['Bei welchem Tanz dreht man sich auf dem Kopf oder dem Rücken?', '🕺', 'Breakdance', ['Walzer', 'Polka', 'Menuett'], 'Breakdance entstand auf den Straßen von New York.'],
   ['Wie heißt die Folge von Schritten, die man sich für einen Tanz ausdenkt?', '📝', 'Choreografie', ['Melodie', 'Sinfonie', 'Partitur'], 'Eine Choreografin oder ein Choreograf erfindet die Bewegungen.'],
   ['Womit klappern Tänzerinnen beim Flamenco oft?', '💃', 'mit Kastagnetten', ['mit Rasseln', 'mit Triangeln', 'mit Schellenringen'], 'Kastagnetten sind zwei kleine Holzschalen, die man aneinanderschlägt.'],
@@ -76120,7 +76133,7 @@ const K_COMIC = [
 const K_FILM = [
   ['Wie funktioniert ein Daumenkino?', '📚', 'Viele Bilder werden schnell hintereinander gezeigt und sehen bewegt aus.', ['Ein kleiner Motor dreht die Seiten von selbst.', 'Die Bilder sind mit besonderer Tinte gemalt, die sich bewegt.', 'Ein einziges Bild wird ganz schnell hin und her geschoben.'], 'Unser Auge kann die Einzelbilder dann nicht mehr trennen.'],
   ['Wie viele Bilder zeigt ein Kinofilm ungefähr in einer Sekunde?', '🎞️', '24', ['2', '12', '240'], 'So wirkt die Bewegung flüssig.'],
-  ['Was ist Stop Motion?', '🧸', 'Figuren werden Stück für Stück bewegt und jedes Mal fotografiert.', ['Ein Film wird immer angehalten, wenn es spannend wird.', 'Ein Film läuft rückwärts und dabei ganz ohne Ton.', 'Schauspieler bewegen sich besonders langsam vor der Kamera.'], 'So entstehen Knetfiguren Filme.'],
+  ['Was ist Stop Motion?', '🧸', 'Figuren werden Stück für Stück bewegt und jedes Mal fotografiert.', ['Ein Film wird immer angehalten, wenn es spannend wird.', 'Ein Film läuft rückwärts und dabei ganz ohne Ton.', 'Schauspieler bewegen sich besonders langsam vor der Kamera.'], 'So entstehen Filme mit Knetfiguren.'],
   ['Was ist eine Lochkamera?', '📦', 'eine dunkle Kiste mit kleinem Loch, die ein Bild auf den Kopf stellt', ['eine Kamera, die nur durch ein Schlüsselloch fotografiert', 'eine Kamera, die Löcher in das Foto stanzt', 'eine Kiste mit Spiegeln, die Bilder bunt macht'], 'So funktionierten die allerersten Kameras.'],
   ['Wer leitet die Dreharbeiten bei einem Film?', '🎬', 'der Regisseur oder die Regisseurin', ['der Kameramann oder die Kamerafrau', 'der Hauptdarsteller oder die Hauptdarstellerin', 'der Tontechniker oder die Tontechnikerin'], 'Die Regie sagt den Schauspielern, was sie tun sollen.'],
   ['Was steht in einem Drehbuch?', '📜', 'was gesagt wird und was passiert', ['wer im Kino wo sitzt', 'wie viel der Film kostet', 'welche Kinos den Film zeigen'], 'Es ist der Plan für den ganzen Film.'],
@@ -76478,7 +76491,7 @@ const WN_FESTE = [
   ['Welches Lichterfest feiern Hindus mit Lämpchen und Feuerwerk?', '🗓️', 'Diwali', ['Holi', 'Chanukka', 'Vesakh'], 'Diwali feiert den Sieg des Lichts über die Dunkelheit.'],
   ['Wie heißt das bunte Frühlingsfest der Hindus, bei dem man sich mit Farbpulver bewirft?', '🎨', 'Holi', ['Diwali', 'Vesakh', 'Songkran'], 'Bei Holi sind am Ende alle kunterbunt.'],
   ['Was feiern Christen an Sankt Martin?', '🏮', 'Einen Mann, der seinen Mantel mit einem Bettler teilte', ['Einen König, der allen Kindern Laternen schenkte', 'Einen Bischof, der heimlich Geschenke brachte', 'Einen Hirten, der dem Stern nach Betlehem folgte'], 'Mit Laternen ziehen Kinder am 11. November durch die Straßen.'],
-  ['Wofür steht der Adventskranz?', '🕯️', 'Er zählt die vier Sonntage vor Weihnachten.', ['Er zählt die vier Wochen bis Ostern.', 'Er zählt die Tage bis zum Nikolaus.', 'Er zählt die Tage bis Silvester.'], 'Jeden Advent wird eine Kerze mehr angezündet.'],
+  ['Wofür steht der Adventskranz?', '🕯️', 'Er zählt die vier Sonntage vor Weihnachten.', ['Er zählt die vier Wochen bis Ostern.', 'Er zählt die Tage bis zum Nikolaus.', 'Er zählt die Tage bis Silvester.'], 'An jedem Adventssonntag wird eine Kerze mehr angezündet.'],
   ['Was feiern Christen an Pfingsten?', '🔥', 'dass der Heilige Geist zu den Jüngern kam', ['dass Jesus in den Himmel aufgefahren ist', 'dass Jesus im Stall geboren wurde', 'dass Jesus von den Toten auferstand'], 'Pfingsten ist 50 Tage nach Ostern.'],
   ['Was ist das Opferfest?', '🐑', 'Es ist das höchste Fest im Islam.', ['Es ist das Fest am Ende des Ramadan.', 'Es ist das jüdische Neujahrsfest.', 'Es ist ein Lichterfest der Hindus.'], 'Beim Opferfest teilen Familien Essen mit armen Menschen.'],
   ['Was ist Erntedank?', '🌾', 'Ein Fest, bei dem man für die Ernte dankt', ['Ein Fest, bei dem man für das neue Jahr dankt', 'Ein Fest, bei dem man die Saat aussät', 'Ein Fest zum Beginn der Sommerferien'], 'Erntedank wird im Herbst gefeiert.'],
@@ -76872,7 +76885,7 @@ const WN_GLUECK = [
   ['Lena bekommt 20 Geschenke, aber niemand spielt mit ihr. Was fehlt ihr?', '🎁', 'Menschen, die Zeit für sie haben', ['ein noch größeres Geschenk', 'mehr Platz für die Sachen', 'ein Geschenk, das sie sich wünschte'], 'Zeit mit lieben Menschen macht glücklicher als viele Dinge.'],
   ['Was ist ein kleines Glück im Alltag?', '🌞', 'ein warmer Sonnenstrahl im Gesicht', ['ein Lottogewinn von einer Million', 'ein neues Handy zum Geburtstag', 'ein Schloss mit hundert Zimmern'], 'Kleine Glücksmomente gibt es jeden Tag. Man muss sie nur bemerken.'],
   ['Macht es glücklich, immer mehr zu haben?', '📦', 'Nein, man gewöhnt sich schnell daran.', ['Ja, je mehr man hat, desto besser.', 'Ja, aber nur bei neuem Spielzeug.', 'Nein, Besitz macht immer traurig.'], 'Forscher sagen: Erlebnisse machen länger froh als Sachen.'],
-  ['Was hilft, wenn du einen schlechten Tag hattest?', '🌧️', 'an drei schöne Dinge von heute denken', ['an alles denken, was heute blöd war', 'mit niemandem mehr darüber reden', 'den Ärger an anderen auslassen'], 'Das Gehirn kann man üben, das Gute zu sehen.'],
+  ['Was hilft, wenn du einen schlechten Tag hattest?', '🌧️', 'an drei schöne Dinge von heute denken', ['an alles denken, was heute blöd war', 'mit niemandem mehr darüber reden', 'den Ärger an anderen auslassen'], 'Das Gehirn kann üben, das Gute zu sehen.'],
   ['Was bedeutet „zufrieden sein“?', '😌', 'froh sein mit dem, was man hat', ['immer das Neueste haben wollen', 'besser sein als alle anderen', 'nie mehr etwas ändern wollen'], 'Zufriedenheit ist ein ruhiges, warmes Glück.'],
   ['Kann man glücklich sein, auch wenn man mal traurig war?', '🌈', 'Ja, beide Gefühle gehören zum Leben.', ['Nein, dann ist man nie mehr froh.', 'Nein, Glück kommt nur einmal.', 'Ja, aber nur, wenn man es vergisst.'], 'Nach Regen kommt Sonne, auch bei den Gefühlen.'],
   ['Was macht viele Menschen glücklich?', '🤝', 'anderen eine Freude machen', ['andere neidisch machen', 'mehr haben als andere', 'immer recht behalten'], 'Glück wird größer, wenn man es teilt.'],
@@ -76934,7 +76947,7 @@ const WN_NETZ = [
   ['Ist alles wahr, was im Internet steht?', '🔎', 'Nein, man muss es prüfen.', ['Ja, sonst stünde es nicht da.', 'Ja, wenn ein Bild dabei ist.', 'Ja, wenn es viele geteilt haben.'], 'Auch Bilder und Videos können gefälscht sein.'],
   ['Was ist Cybermobbing?', '📵', 'jemanden im Netz immer wieder fertigmachen', ['ein einzelner Streit zwischen zwei Freunden im Chat', 'ein gefährlicher Virus auf dem Computer', 'ein Trick, mit dem man Passwörter stiehlt'], 'Hilfe holen ist richtig und wichtig. Niemand muss das allein aushalten.'],
   ['Wie schreibst du fair in einem Chat?', '✍️', 'so freundlich wie im echten Leben', ['so frech, wie ich mich sonst nie traue', 'in Großbuchstaben, damit es alle sehen', 'mit vielen Smileys, dann ist alles erlaubt'], 'Am anderen Ende sitzt ein echter Mensch mit Gefühlen.'],
-  ['Du siehst ein Video, das dir Angst macht. Was hilft?', '😨', 'ausschalten und mit jemandem darüber reden', ['es heimlich immer wieder anschauen', 'es an die ganze Klasse schicken', 'es für mich behalten und abwarten'], 'Du bist nicht schuld, wenn dir so etwas begegnet. Reden hilft.'],
+  ['Du siehst ein Video, das dir Angst macht. Was hilft?', '😨', 'ausschalten und mit jemandem darüber reden', ['es heimlich immer wieder anschauen', 'es an die ganze Klasse schicken', 'es für dich behalten und abwarten'], 'Du bist nicht schuld, wenn dir so etwas begegnet. Reden hilft.'],
   ['Was ist ein sicheres Passwort?', '🔑', 'ein langes mit Buchstaben und Zahlen', ['dein Vorname und dein Geburtstag', 'ein kurzes Wort, das jeder kennt', 'dasselbe wie bei allen Spielen'], 'Ein Passwort verrät man niemandem, außer den Eltern.'],
   ['Wie lange sollte man am Tag höchstens am Bildschirm sein?', '⏰', 'so lange, wie mit den Eltern abgemacht', ['so lange, bis die Augen zufallen', 'so lange, wie der Akku hält', 'so lange, wie die Freunde online sind'], 'Draußen spielen, Freunde treffen und schlafen sind genauso wichtig.'],
   ['Jemand, den du nur aus einem Spiel kennst, will dich treffen. Was tust du?', '🎮', 'Nicht zusagen und es meinen Eltern erzählen', ['Allein hingehen und es geheim halten', 'Eine Freundin für mich hinschicken', 'Zusagen, aber zu spät kommen'], 'Im Netz kann sich jeder als jemand anderes ausgeben.'],
@@ -77169,9 +77182,9 @@ const FORSCHER = [
   { id: 'tagnacht', t: 'Warum gibt es Tag und Nacht?', e: '🌍', s: [
     ['Die Erde ist eine Kugel', 'Die Sonne scheint immer. Sie kann aber nur eine Hälfte der Erdkugel anstrahlen. Auf dieser Seite ist Tag. Die andere Hälfte liegt im Schatten. Dort ist Nacht.', 'tagnacht'],
     ['Die Erde dreht sich', 'Die Erde dreht sich wie ein Kreisel um sich selbst. Für eine Drehung braucht sie 24 Stunden. So wandert jeder Ort einmal ins Licht und einmal in den Schatten. Die Sonne geht also gar nicht unter. Wir drehen uns von ihr weg.', 'tagnacht'],
-    ['Woanders ist es jetzt Nacht', 'Wenn du frühstückst, gehen Kinder in Australien gerade ins Bett. Darum gibt es auf der Erde verschiedene Uhrzeiten. Auf Teneriffa ist es zum Beispiel immer eine Stunde früher als in Cuxhaven.', ['nacht', 'haus', 'baum']]],
+    ['Woanders ist es jetzt Nacht', 'Wenn du frühstückst, ist es in Neuseeland schon Abend, und die Kinder dort gehen bald ins Bett. Darum gibt es auf der Erde verschiedene Uhrzeiten. Auf Teneriffa ist es zum Beispiel immer eine Stunde früher als in Cuxhaven.', ['nacht', 'haus', 'baum']]],
     q: [['Wie viel von der Erde kann die Sonne gleichzeitig anstrahlen?', 'eine Hälfte', ['die ganze Erde', 'ein Viertel', 'nur einen Punkt'], 'Die andere Hälfte liegt im Schatten.'], ['Wie lange braucht die Erde für eine Drehung um sich selbst?', '24 Stunden', ['12 Stunden', '7 Tage', '12 Monate'], 'Das ist genau ein Tag mit seiner Nacht.'],
-      ['Geht die Sonne wirklich unter?', 'Nein, wir drehen uns von ihr weg.', ['Ja, sie versinkt hinter dem Meer.', 'Ja, sie wandert um die Erde herum.', 'Nein, Wolken verdecken sie nur.'], 'Es sieht nur so aus, weil sich die Erde dreht.'], ['Was machen Kinder in Australien, wenn du frühstückst?', 'Sie gehen ins Bett.', ['Sie frühstücken auch.', 'Sie stehen gerade auf.', 'Sie essen zu Mittag.'], 'Australien liegt auf der anderen Seite der Erde.'],
+      ['Geht die Sonne wirklich unter?', 'Nein, wir drehen uns von ihr weg.', ['Ja, sie versinkt hinter dem Meer.', 'Ja, sie wandert um die Erde herum.', 'Nein, Wolken verdecken sie nur.'], 'Es sieht nur so aus, weil sich die Erde dreht.'], ['Was machen Kinder in Neuseeland, wenn du frühstückst?', 'Sie essen Abendbrot und gehen bald ins Bett.', ['Sie frühstücken auch.', 'Sie stehen gerade auf.', 'Sie essen zu Mittag.'], 'Neuseeland liegt fast genau auf der anderen Seite der Erde. Dort ist es dann schon Abend.'],
       ['Wie spät ist es auf Teneriffa, wenn es in Cuxhaven 10 Uhr ist?', '9 Uhr', ['11 Uhr', '10 Uhr', '8 Uhr'], 'Auf den Kanarischen Inseln ist es eine Stunde früher.']] },
   { id: 'strom', t: 'Wie kommt der Strom in die Steckdose?', e: '🔌', s: [
     ['Strom wird gemacht', 'Strom entsteht im Kraftwerk. In einem Windrad dreht der Wind die Flügel. Die Drehung treibt einen Generator an. Das ist eine Maschine, die aus Bewegung Strom macht. Auch Sonne und Wasser können Strom erzeugen.', 'strom'],
@@ -79525,7 +79538,7 @@ function genWinkel(ctx) {
     if (r < .35) { const g = R.pick([90, 90, 90, 45, 60, 120, 135]), J = 'Ja', N = 'Nein';
       return mkChoice({ prompt: 'Ist das ein rechter Winkel?', visual: n4Vis(n4Winkel(g, rot, 150)), answer: g === 90 ? J : N, wrong: [g === 90 ? N : J], fixed: true, order: [J, N], layout: 'row2', explain: g === 90 ? 'Ja. Die Ecke eines Blattes passt genau hinein.' : `Nein. Dieser Winkel ist ${g < 90 ? 'kleiner' : 'größer'} als die Ecke eines Blattes.`, key: 'wi1' + g + '.' + rot }); }
     if (r < .65) { const [p, n, name] = ctx.draw(N4_FIG);
-      return mkChoice({ prompt: 'Wie viele rechte Winkel hat die Figur?', visual: n4Vis(`<svg class="n4-svg" viewBox="0 0 140 140" width="150" height="150" aria-hidden="true"><polygon points="${p}" fill="${N4_F}" fill-opacity=".35" stroke="${N4_S}" stroke-width="4" stroke-linejoin="round"/></svg>`), answer: String(n), wrong: ['0', '1', '2', '4'].filter(x => x !== String(n)), fixed: true, order: ['0', '1', '2', '4'], layout: 'row4', explain: `Das ${name} hat ${n === 0 ? 'keinen rechten Winkel' : n === 1 ? 'einen rechten Winkel' : n + ' rechte Winkel'}. Prüfe jede Ecke mit der Ecke eines Blattes.`, key: 'wi1f' + name }); }
+      return mkChoice({ prompt: 'Wie viele rechte Winkel hat die Figur?', visual: n4Vis(`<svg class="n4-svg" viewBox="0 0 140 140" width="150" height="150" aria-hidden="true"><polygon points="${p}" fill="${N4_F}" fill-opacity=".35" stroke="${N4_S}" stroke-width="4" stroke-linejoin="round"/></svg>`), answer: String(n), wrong: ['0', '1', '2', '4'].filter(x => x !== String(n)), fixed: true, order: ['0', '1', '2', '4'], layout: 'row4', explain: /rechten Winkel/.test(name) ? 'Dieses Dreieck hat genau einen rechten Winkel, unten links. Prüfe jede Ecke mit der Ecke eines Blattes.' : `Das ${name} hat ${n === 0 ? 'keinen rechten Winkel' : n === 1 ? 'einen rechten Winkel' : n + ' rechte Winkel'}. Prüfe jede Ecke mit der Ecke eines Blattes.`, key: 'wi1f' + name }); }
     if (r < .82) { const h = R.pick([3, 9]), o = x => ({ html: n4Uhr(x, 88), label: `${x} Uhr` });
       return mkChoice({ prompt: 'Auf welcher Uhr bilden die Zeiger einen rechten Winkel?', visual: '', answer: o(h), wrong: R.sample([1, 2, 4, 5, 6, 7, 8, 10, 11], 3).map(o), layout: 'grid2', explain: `Um ${h} Uhr zeigt der große Zeiger nach oben und der kleine genau zur Seite. Das ist ein rechter Winkel.`, key: 'wi1u' + h }); }
     const [q, a, w] = ctx.draw(N4_WFAKT1); return mkChoice({ prompt: q, visual: '', answer: a, wrong: w, layout: a.length > 6 ? 'col' : 'row4', explain: `Richtig ist: ${a}.`, key: 'wi1q' + q });
@@ -81338,7 +81351,7 @@ function genBlitzblick(ctx) {
   const z = Math.floor(n / 10), e = n % 10;
   return mkChoice({ prompt: frageRest ? 'Schau genau hin! Wie viele Punkte fehlen bis 100?' : 'Schau genau hin! Wie viele Punkte sind es?', visual: l9BlitzFeld(n, gross, [0, 1500, 2000, 2000][lv]),
     answer: String(soll), wrong: wrong.map(String), layout: 'grid2', key: 'bb' + lv + ':' + n + (frageRest ? 'r' : ''),
-    explain: gross ? `${z} volle Zehnerreihen und ${e} einzelne Punkte: ${n}.${frageRest ? ` Bis 100 fehlen ${100 - n}.` : ''} Zähl nicht einzeln, sondern in Zehnern und Fünfern.`
+    explain: gross ? `${z} volle ${z === 1 ? 'Zehnerreihe' : 'Zehnerreihen'} und ${e === 1 ? '1 einzelner Punkt' : e + ' einzelne Punkte'}: ${n}.${frageRest ? ` Bis 100 fehlen ${100 - n}.` : ''} Zähl nicht einzeln, sondern in Zehnern und Fünfern.`
       : `${n > 10 ? `Oben 10, unten ${n - 10}` : `${n} Punkte in einer Reihe`}: ${n}. Die Fünfer helfen: rot ist immer fünf.` });
 }
 
@@ -81464,7 +81477,7 @@ const L9_ORDNEN = [
   ['Ein Butterbrot machen', ['Eine Scheibe Brot nehmen', 'Butter darauf streichen', 'Käse darauf legen', 'Das Brot in die Brotdose packen']],
   ['Eine Pflanze umtopfen', ['Einen größeren Topf mit Erde füllen', 'Die Pflanze vorsichtig herausnehmen', 'Sie in den neuen Topf setzen', 'Die Pflanze gießen']]
 ];
-const L9_ERSETZ = [['Mia', 'Sie'], ['Ben', 'Er'], ['Das Baby', 'Es'], ['Oma', 'Sie'], ['Der Hund', 'Er'], ['Die Katze', 'Sie'], ['Lumi', 'Er'], ['Das Pferd', 'Es']];
+const L9_ERSETZ = [['Mia', 'Sie'], ['Ben', 'Er'], ['Das Kind', 'Es'], ['Oma', 'Sie'], ['Der Junge', 'Er'], ['Die Lehrerin', 'Sie'], ['Lumi', 'Er'], ['Das Mädchen', 'Es'], ['Opa', 'Er']];
 const L9_ERS_S = ['{A} geht in den Garten. {A} pflückt Äpfel.', '{A} hat Hunger. {A} möchte ein Brot.', '{A} ist müde. {A} legt sich hin.', '{A} spielt im Sand. {A} baut eine Burg.'];
 const L9_VERB = [
   ['„Psst, das Baby schläft“, ___ Mama.', 'flüsterte', ['brüllte', 'jubelte', 'schimpfte']],
@@ -81522,7 +81535,7 @@ function genSchreibwerkstatt(ctx) {
   if (typ === 'verb') {
     const [s, a, w] = R.pick(L9_VERB);
     return mkChoice({ prompt: 'Welches Wort passt am besten?', visual: `<div class="q-text">${esc(s).replace('___', '<span class="q-gap">?</span>')}</div>`, answer: a, wrong: w, layout: 'grid2', key: 'sw-v' + s,
-      explain: `„${s.replace('___', a)}“ Ein treffendes Wort macht den Text lebendig und genau.` });
+      explain: `${s.replace('___', a)} Ein treffendes Wort macht den Text lebendig und genau.` });
   }
   if (typ === 'verbind') {
     const [s1, s2, a, w] = R.pick(L9_VERB2);
@@ -81554,7 +81567,7 @@ function genTabellen(ctx) {
   const eins = bekannt.includes(1) ? '' : ` Erst für 1 ausrechnen: ${bekannt[0]} → ${wert(bekannt[0])}${ein}, also 1 → ${u}${ein}.`;
   return mkNumber({ prompt: `Ergänze die Tabelle: Was gehört an die Stelle mit dem Fragezeichen?${lv === 1 ? '' : ' Alles verändert sich gleichmäßig.'}`, visual: tab, answer: wert(frage), unit: ein.trim(), key: 'tb' + lv + ding + u + frage,
     explain: frage === 1 ? `${bekannt[0]} → ${wert(bekannt[0])}${ein}. Für 1 teilst du durch ${bekannt[0]}: ${wert(bekannt[0])} : ${bekannt[0]} = ${u}${ein}.`
-      : `Zu 1 gehören ${u}${ein}.${eins} Zu ${frage} gehören ${frage} · ${u} = ${wert(frage)}${ein}.` });
+      : `Zu 1 ${u === 1 ? 'gehört' : 'gehören'} ${u}${ein}.${eins} Zu ${frage} gehören ${frage} · ${u} = ${wert(frage)}${ein}.` });
 }
 
 
@@ -81772,7 +81785,7 @@ function genDatenProfi(ctx) {
   if (t === 'zufall') {
     const f = R.pick([() => { const n = R.pick([30, 60, 120]); return ['Du würfelst ' + n + ' Mal mit einem Spielwürfel. Wie oft kommt ungefähr eine 6?', n / 6, n, `Jede Zahl hat die gleiche Chance, eine von sechs. ${n} : 6 = ${n / 6}.`]; },
       () => { const n = R.pick([20, 40, 100]); return ['Du wirfst eine Münze ' + n + ' Mal. Wie oft kommt ungefähr Kopf?', n / 2, n, `Kopf und Zahl haben die gleiche Chance. ${n} : 2 = ${n / 2}.`]; },
-      () => { const k = R.int(1, 3), n = R.pick([40, 80]); return [`Ein Glücksrad hat 4 gleich große Felder, ${k} davon ${k === 1 ? 'ist' : 'sind'} rot. Du drehst ${n} Mal. Wie oft landest du ungefähr auf Rot?`, n * k / 4, n, `${k} von 4 Feldern sind rot. ${n} : 4 · ${k} = ${n * k / 4}.`]; }])();
+      () => { const k = R.int(1, 3), n = R.pick([40, 80]); return [`Ein Glücksrad hat 4 gleich große Felder, ${k} davon ${k === 1 ? 'ist' : 'sind'} rot. Du drehst ${n} Mal. Wie oft landest du ungefähr auf Rot?`, n * k / 4, n, `${k} von 4 Feldern ${k === 1 ? 'ist' : 'sind'} rot. ${n} : 4 · ${k} = ${n * k / 4}.`]; }])();
     const w = [...new Set([f[2], f[1] * 2, Math.round(f[1] / 2), f[1] * 3].filter(x => x > 0 && Math.abs(x - f[1]) >= Math.max(3, f[1] * .45)))].slice(0, 3);
     return mkChoice({ prompt: f[0], answer: String(f[1]), wrong: w.map(String), layout: 'grid2', key: 'zf' + f[0], explain: f[3] + ' Beim echten Ausprobieren kommt es nur ungefähr so oft, mal etwas mehr, mal etwas weniger.' });
   }
@@ -81888,7 +81901,7 @@ const LP_LAND = [
 function genSprachenland(ctx) {
   const lv = (ctx && ctx.lv) || 1, t = lpTyp('sprachenland', ['platt', 'fremd', 'abk', 'land', 'schreib']);
   if (t === 'platt') {
-    const [p, d] = R.pick(LP_PLATT), w = R.sample(LP_PLATT.filter(x => x[0] !== p), 3).map(x => x[1]);
+    const [p, d] = R.pick(LP_PLATT), w = { klein: ['groß', 'laut', 'schnell'], sprechen: ['schlafen', 'laufen', 'essen'] }[d] || R.sample(LP_PLATT.filter(x => x[0] !== p && /^[A-ZÄÖÜ]/.test(x[1])), 3).map(x => x[1]);
     return mkChoice({ prompt: `Was heißt das plattdeutsche Wort „${p}“?`, answer: d, wrong: w, layout: 'grid2', key: 'pl' + p, explain: `„${p}“ heißt ${d}. Viele plattdeutsche Wörter ähneln dem Englischen: Water, Appel, Schipp.` });
   }
   if (t === 'fremd') {
@@ -82278,7 +82291,7 @@ const S8_POSTAL = [
 ];
 const S8_CONECT = [
   ['Me gusta el chocolate, ⟪⟫ no me gusta el café.', 'pero', ['porque', 'y']], ['No voy al parque ⟪⟫ está lloviendo.', 'porque', ['pero', 'cuando']],
-  ['Primero me lavo los dientes y ⟪⟫ me pongo el pijama.', 'después', ['porque', 'pero']], ['⟪⟫ hace sol, vamos a la playa.', 'Cuando', ['Pero', 'Porque']],
+  ['Primero me lavo los dientes y ⟪⟫ me pongo el pijama.', 'después', ['porque', 'pero']], ['⟪⟫ hace sol, vamos a la playa.', 'Cuando', ['Pero', 'Para']],
   ['Tengo un perro ⟪⟫ dos gatos.', 'y', ['pero', 'porque']], ['Estoy cansada ⟪⟫ he jugado mucho al fútbol.', 'porque', ['pero', 'cuando']],
   ['Quiero ir a la piscina, ⟪⟫ no tengo bañador.', 'pero', ['y', 'cuando']], ['⟪⟫ llego a casa, siempre meriendo.', 'Cuando', ['Pero', 'Y']]];
 const S8_PARTES = [['Querida abuela:', 'Estoy en Tenerife con mis padres.', 'Ayer vimos delfines desde el barco.', 'Un abrazo muy fuerte,', 'Sofía'],
@@ -82389,85 +82402,85 @@ if (typeof S8_CONV !== 'undefined') S8_CONV.push(
 
 const M8_SU = {
   SU_KOERPER: [
-    ['Wie viele Knochen hat ein Erwachsener ungefähr?', '🦴', 'etwa 200', ['etwa 20', 'etwa 2000', 'etwa 50'], 'Ein Erwachsener hat 206 Knochen. Ein Baby hat sogar noch mehr, weil einige später zusammenwachsen.'],
-    ['Was pumpt das Blut durch deinen Körper?', '❤️', 'das Herz', ['die Lunge', 'der Magen', 'die Leber'], 'Das Herz ist ein starker Muskel und schlägt etwa 100 000 Mal am Tag.'],
-    ['Womit atmest du?', '🫁', 'mit der Lunge', ['mit dem Herzen', 'mit dem Magen', 'mit den Nieren'], 'In der Lunge kommt der Sauerstoff aus der Luft ins Blut.'],
-    ['Warum wäschst du dir vor dem Essen die Hände?', '🧼', 'damit keine Krankheitskeime in den Mund kommen', ['damit die Hände schneller wachsen', 'damit das Essen besser schmeckt', 'damit die Hände wärmer werden'], 'Seife und Wasser spülen Keime weg. Wasch die Hände mindestens 20 Sekunden lang.'],
+    ['Welcher ist der längste Knochen in deinem Körper?', '🦴', 'der Oberschenkelknochen', ['der Daumenknochen', 'die Rippe', 'das Schlüsselbein'], 'Der Oberschenkelknochen ist der längste und stärkste Knochen.'],
+    ['Was bewegt deine Knochen?', '💪', 'die Muskeln', ['die Haare', 'die Zähne', 'die Fingernägel'], 'Muskeln ziehen sich zusammen und bewegen so Arme und Beine. Du hast über 600 Muskeln.'],
+    ['Was ist das größte Organ deines Körpers?', '🖐️', 'die Haut', ['das Herz', 'der Magen', 'die Zunge'], 'Die Haut schützt dich vor Schmutz, Keimen und Sonne.'],
+    ['Warum schwitzt du, wenn dir heiß ist?', '💦', 'Der Schweiß kühlt die Haut.', ['Damit du schneller rennst.', 'Damit die Haut sauber wird.', 'Damit du Durst bekommst.'], 'Wenn der Schweiß verdunstet, kühlt er den Körper ab. Darum nach dem Sport viel trinken.'],
     ['Wie viel Schlaf braucht ein Kind in deinem Alter ungefähr?', '😴', '10 Stunden', ['3 Stunden', '5 Stunden', '20 Stunden'], 'Kinder im Grundschulalter brauchen etwa 9 bis 11 Stunden Schlaf.'],
     ['Was passiert mit deinem Herzschlag, wenn du schnell rennst?', '🏃', 'Er wird schneller.', ['Er bleibt stehen.', 'Er wird langsamer.', 'Er hört kurz auf.'], 'Die Muskeln brauchen beim Rennen mehr Sauerstoff, also pumpt das Herz schneller.'],
-    ['Was schützt dein Gehirn?', '🧠', 'der Schädel', ['die Rippen', 'das Becken', 'die Wirbelsäule'], 'Der Schädel ist wie ein harter Helm aus Knochen. Beim Radfahren hilft zusätzlich ein Fahrradhelm.']],
+    ['Was passiert mit einem Milchzahn, wenn der neue Zahn kommt?', '🦷', 'Er wird locker und fällt aus.', ['Er wird größer.', 'Er bleibt für immer.', 'Er wird blau.'], 'Der bleibende Zahn schiebt von unten nach. Erwachsene haben bis zu 32 Zähne.']],
   SU_VERKEHR: [
     ['Was bedeutet ein grünes Männchen an der Fußgängerampel?', '🚥', 'Du darfst gehen, schau trotzdem nach links und rechts.', ['Du musst stehen bleiben.', 'Du musst rennen.', 'Die Ampel ist kaputt.'], 'Auch bei Grün schauen: Manche Autos biegen ab.'],
-    ['Wo gehst du, wenn es keinen Gehweg gibt?', '🚶', 'am linken Straßenrand, den Autos entgegen', ['in der Mitte der Straße', 'am rechten Rand mit dem Rücken zu den Autos', 'auf dem Grünstreifen in der Mitte'], 'So siehst du die Autos kommen, und sie sehen dich.'],
-    ['Warum trägst du im Dunkeln helle Kleidung oder Reflektoren?', '🦺', 'damit Autofahrer dich früh sehen', ['damit dir wärmer ist', 'damit du schneller bist', 'damit die Straßenlampen angehen'], 'Reflektoren leuchten im Scheinwerferlicht, schon von weit weg.'],
-    ['Wo ist der sicherste Platz für Kinder im Auto?', '🚗', 'hinten im Kindersitz', ['vorne ohne Gurt', 'im Kofferraum', 'auf dem Schoß der Eltern'], 'Kinder fahren im Kindersitz, bis sie etwa 12 Jahre alt oder 150 cm groß sind.'],
+    ['Was musst du tun, bevor du mit dem Fahrrad abbiegst?', '🚴', 'umschauen und Handzeichen geben', ['klingeln und schneller fahren', 'die Augen schließen', 'absteigen und winken'], 'Mit dem ausgestreckten Arm zeigst du allen, wohin du fahren willst.'],
+    ['Was machst du im Bus während der Fahrt?', '🚌', 'sitzen bleiben oder dich gut festhalten', ['durch den Gang rennen', 'auf dem Sitz stehen', 'an der Tür lehnen'], 'Wenn der Bus bremst, kannst du sonst leicht hinfallen.'],
+    ['Ein Ball rollt auf die Straße. Was tust du?', '⚽', 'am Bordstein anhalten und erst schauen', ['sofort hinterherrennen', 'laut rufen und loslaufen', 'die Augen zumachen und rennen'], 'Kein Ball ist so wichtig wie du. Erst wenn die Straße frei ist, holst du ihn.'],
     ['Was tust du, bevor du zwischen parkenden Autos auf die Straße gehst?', '🅿️', 'An der Sichtlinie stehen bleiben und schauen', ['Schnell loslaufen', 'Die Augen zumachen', 'Rückwärts gehen'], 'Zwischen parkenden Autos sehen dich Autofahrer schlecht. Such dir besser eine freie Stelle.'],
     ['Was bedeutet ein blaues rundes Schild mit einem Fahrrad?', '🚲', 'Hier ist ein Radweg.', ['Fahrräder verboten', 'Fahrradladen', 'Fahrradparkplatz'], 'Blaue runde Schilder sind Gebote: Radfahrer müssen diesen Weg benutzen.'],
     ['Wo wartest du auf den Schulbus?', '🚌', 'mit Abstand zur Bordsteinkante', ['direkt an der Bordsteinkante', 'auf der Straße', 'hinter dem Bus'], 'Ein Bus schwenkt beim Halten aus. Bleib hinter der Linie oder mit großem Abstand stehen.']],
   SU_NATUR: [
-    ['Was braucht eine Pflanze zum Wachsen?', '🌱', 'Licht, Wasser und Erde mit Nährstoffen', ['nur Dunkelheit', 'nur Zucker', 'nur Wind'], 'Mit Licht stellen Pflanzen in ihren Blättern Nahrung her.'],
-    ['Welcher Teil der Pflanze nimmt Wasser aus dem Boden auf?', '🪴', 'die Wurzel', ['die Blüte', 'das Blatt', 'die Frucht'], 'Die Wurzel hält die Pflanze fest und saugt Wasser auf.'],
+    ['Was wird aus einer Blüte am Apfelbaum?', '🌸', 'ein Apfel', ['ein Blatt', 'ein Ast', 'eine Wurzel'], 'Wenn die Blüte bestäubt wurde, wächst aus ihr die Frucht mit den Kernen.'],
+    ['Woran erkennst du das Alter eines gefällten Baumes?', '🪵', 'an den Jahresringen im Stamm', ['an der Zahl der Blätter', 'an der Farbe der Rinde', 'an der Länge der Äste'], 'Jedes Jahr wächst ein neuer Ring dazu.'],
     ['Was geben Pflanzen an die Luft ab, das wir zum Atmen brauchen?', '🍃', 'Sauerstoff', ['Rauch', 'Staub', 'Salz'], 'Pflanzen nehmen Kohlenstoffdioxid auf und geben Sauerstoff ab.'],
     ['Wie heißt die Jahreszeit, in der viele Bäume ihre Blätter verlieren?', '🍂', 'Herbst', ['Frühling', 'Sommer', 'Ostern'], 'Im Herbst ziehen Bäume Nährstoffe aus den Blättern zurück, dann fallen die Blätter ab.'],
     ['Welche Pflanze ist giftig und darf nicht gegessen werden?', '☠️', 'der Fingerhut', ['die Karotte', 'der Apfel', 'die Erdbeere'], 'Fingerhut ist sehr giftig. Iss nie Pflanzen, die du nicht sicher kennst.'],
-    ['Woraus wächst eine neue Sonnenblume?', '🌻', 'aus einem Samen', ['aus einem Stein', 'aus einer Feder', 'aus einer Muschel'], 'In den Kernen der Sonnenblume stecken die Samen.'],
-    ['Was machen Bienen an den Blüten?', '🐝', 'Sie sammeln Nektar und tragen Blütenstaub weiter.', ['Sie fressen die Blätter.', 'Sie bauen Nester in den Blüten.', 'Sie machen die Blüten kaputt.'], 'So bestäuben Bienen die Blüten, und es wachsen Früchte.']],
+    ['Welcher Teil der Pflanze trägt Blätter und Blüten nach oben zum Licht?', '🌿', 'der Stängel', ['die Wurzel', 'der Samen', 'die Frucht'], 'Durch den Stängel wandert auch das Wasser von der Wurzel zu den Blättern.'],
+    ['Welche Früchte wachsen an einer Buche?', '🌳', 'Bucheckern', ['Eicheln', 'Kastanien', 'Tannenzapfen'], 'Bucheckern sind kleine dreikantige Nüsse. Eichhörnchen und Wildschweine fressen sie gern.']],
   SU_MEER: [
     ['Warum ist Meerwasser salzig?', '🌊', 'Flüsse bringen gelöste Salze aus dem Gestein ins Meer.', ['Fische geben Salz ab.', 'Menschen schütten Salz hinein.', 'Der Regen ist salzig.'], 'Das Wasser verdunstet, das Salz bleibt im Meer zurück.'],
-    ['Wie oft am Tag gibt es an der Nordsee Ebbe?', '⏱️', 'etwa zweimal', ['einmal im Monat', 'zehnmal', 'nie'], 'Ebbe und Flut wechseln sich ungefähr alle sechs Stunden ab.'],
+    ['Wie heißt der Streifen aus Muscheln und Algen, den die Flut am Strand liegen lässt?', '🐚', 'Spülsaum', ['Deichkrone', 'Priel', 'Sandbank'], 'Im Spülsaum findest du Muscheln, Seetang und manchmal sogar Bernstein.'],
     ['Was ist ein Schweinswal?', '🐬', 'ein kleiner Wal, der in der Nordsee lebt', ['ein Fisch mit Rüssel', 'ein Schiff', 'ein Krebs'], 'Schweinswale sind kleine Zahnwale. Man sieht sie manchmal von der Küste aus.'],
     ['Wozu baut man Buhnen ins Meer am Strand?', '🪨', 'Sie schützen den Strand davor, weggespült zu werden.', ['Damit Schiffe anlegen können.', 'Damit man darauf grillen kann.', 'Als Rennbahn für Krabben.'], 'Buhnen bremsen die Strömung, so bleibt der Sand liegen.'],
     ['Was tust du, wenn du einen jungen Seehund allein am Strand siehst?', '🦭', 'Abstand halten und Bescheid sagen', ['Ihn streicheln', 'Ihn ins Wasser tragen', 'Ihn füttern'], 'Oft kommt die Mutter zurück. Ruf die Seehundstation oder die Polizei an.'],
-    ['Woraus besteht ein Sandstrand?', '🏝️', 'aus winzigen Stücken von Gestein und Muscheln', ['aus Zucker', 'aus Salzkörnern', 'aus Schnee'], 'Wellen zerreiben Steine und Muscheln über sehr lange Zeit zu Sand.'],
-    ['Was ist eine Sturmflut?', '🌪️', 'sehr hohes Wasser, weil der Sturm es an die Küste drückt', ['ein Wind ohne Wasser', 'ein Regen im Sommer', 'eine Welle im Schwimmbad'], 'Deshalb gibt es Deiche, die das Land schützen.']],
+    ['Was macht ein Krabbenkutter?', '🚢', 'Er fängt Nordseekrabben mit Netzen.', ['Er bringt Urlauber zu den Inseln.', 'Er zieht große Schiffe in den Hafen.', 'Er sucht nach Schätzen.'], 'Die Netze hängen an langen Auslegern rechts und links am Schiff.'],
+    ['Warum kann man Meerwasser nicht trinken?', '🚱', 'Es ist zu salzig und macht noch durstiger.', ['Es ist zu kalt.', 'Es ist zu blau.', 'Es schmeckt zu süß.'], 'Der Körper braucht dann noch mehr Wasser, um das Salz wieder loszuwerden.']],
   SU_WELTALL: [
-    ['Welcher Planet ist der größte?', '🪐', 'Jupiter', ['Mars', 'Merkur', 'die Erde'], 'In den Jupiter würde die Erde über tausend Mal hineinpassen.'],
-    ['Warum gibt es Tag und Nacht?', '🌗', 'Die Erde dreht sich um sich selbst.', ['Die Sonne geht aus.', 'Der Mond schiebt sich vor die Sonne.', 'Die Wolken werden dunkel.'], 'Eine Drehung dauert etwa 24 Stunden.'],
-    ['Wie lange braucht die Erde für eine Runde um die Sonne?', '☀️', 'ein Jahr', ['einen Tag', 'einen Monat', 'eine Woche'], 'Genau sind es 365 Tage und ein paar Stunden. Deshalb gibt es Schaltjahre.'],
-    ['Welcher Planet heißt der rote Planet?', '🔴', 'Mars', ['Venus', 'Saturn', 'Neptun'], 'Der Mars ist rot, weil sein Boden viel Rost enthält.'],
+    ['Warum sehen wir vom Mond manchmal nur eine Sichel?', '🌙', 'Die Sonne beleuchtet nur eine Hälfte, und wir sehen davon nur einen Teil.', ['Ein Stück vom Mond bricht ab.', 'Wolken verdecken den Rest.', 'Der Mond schrumpft und wächst.'], 'Das nennt man Mondphasen: Neumond, Halbmond und Vollmond.'],
+    ['Was ist ein Komet?', '☄️', 'ein Brocken aus Eis und Staub mit einem leuchtenden Schweif', ['ein Stern, der herunterfällt', 'ein kleiner Mond der Erde', 'ein Raumschiff'], 'Kommt ein Komet der Sonne nahe, verdampft Eis und bildet den Schweif.'],
+    ['Womit kann man Sterne und Planeten viel größer sehen?', '🔭', 'mit einem Teleskop', ['mit einem Mikroskop', 'mit einer Lupe', 'mit einer Taschenlampe'], 'Große Teleskope stehen in Sternwarten, oft hoch oben auf Bergen.'],
+    ['Warum schweben Astronauten in der Raumstation?', '🧑‍🚀', 'Dort fühlt sich alles schwerelos an.', ['Sie tragen Luftballons.', 'Sie haben Flügel am Anzug.', 'In der Station bläst starker Wind.'], 'Die Raumstation fällt ständig um die Erde herum. Darum schwebt alles, was nicht befestigt ist.'],
     ['Was ist ein Stern wie die Sonne?', '⭐', 'eine riesige leuchtende Kugel aus heißem Gas', ['ein Stein, der Licht spiegelt', 'eine Lampe im All', 'ein Planet aus Eis'], 'Die Sterne am Nachthimmel sind auch Sonnen, nur sehr weit weg.'],
-    ['Wer war der erste Mensch auf dem Mond?', '🧑‍🚀', 'Neil Armstrong', ['Christoph Kolumbus', 'Albert Einstein', 'Juri Gagarin'], 'Er betrat den Mond 1969. Juri Gagarin war der erste Mensch im Weltall.'],
-    ['Welcher Planet hat die auffälligsten Ringe?', '💫', 'Saturn', ['Mars', 'Venus', 'Merkur'], 'Saturns Ringe bestehen aus unzähligen Brocken aus Eis und Gestein.']],
+    ['Wie viele Monde hat die Erde?', '🌕', 'einen', ['keinen', 'zwei', 'acht'], 'Andere Planeten haben viel mehr: Der Saturn hat über hundert Monde.'],
+    ['Was passiert bei einer Sonnenfinsternis?', '🌑', 'Der Mond schiebt sich vor die Sonne.', ['Die Sonne geht aus.', 'Die Erde bleibt stehen.', 'Eine Wolke verdeckt die Sonne.'], 'Schau nie ohne Schutzbrille in die Sonne, auch nicht bei einer Finsternis.']],
   SU_ERNAEHRUNG: [
-    ['Welches Getränk löscht den Durst am besten?', '💧', 'Wasser', ['Limonade', 'Cola', 'Eistee'], 'Wasser hat keinen Zucker und löscht den Durst am besten.'],
-    ['Wie viele Portionen Obst und Gemüse sollst du am Tag essen?', '🥕', 'etwa fünf', ['keine', 'eine pro Woche', 'zwanzig'], 'Eine Portion passt ungefähr in deine Hand.'],
+    ['Warum soll man beim Essen gut kauen?', '😋', 'Dann kann der Magen das Essen leichter verdauen.', ['Damit das Essen kälter wird.', 'Damit man schneller fertig ist.', 'Damit die Zähne länger werden.'], 'Die Verdauung beginnt schon im Mund, dort mischt sich Speichel unter das Essen.'],
+    ['Welches Lebensmittel wächst auf dem Feld?', '🥔', 'Kartoffeln', ['Käse', 'Eier', 'Honig'], 'Kartoffeln wachsen unter der Erde. Käse wird aus Milch gemacht, Eier legen Hühner, Honig machen Bienen.'],
     ['Was gibt dir lange Energie für die Schule?', '🥣', 'Vollkornbrot oder Haferflocken', ['Gummibärchen', 'Limonade', 'Chips'], 'Vollkorn macht lange satt, Zucker nur kurz.'],
-    ['Worin steckt viel Kalzium für starke Knochen?', '🥛', 'in Milch und Käse', ['in Gummibärchen', 'in Limonade', 'in Pommes'], 'Kalzium baut Knochen und Zähne auf.'],
-    ['Was ist ein gesundes Pausenbrot?', '🥪', 'Vollkornbrot mit Käse und Gurke', ['Schokoriegel und Cola', 'nur Chips', 'Kuchen mit Sahne'], 'Dazu passen Wasser und ein Stück Obst.'],
+    ['Woraus wird Brot gebacken?', '🍞', 'aus Mehl, Wasser, Salz und Hefe oder Sauerteig', ['aus Milch und Zucker', 'aus Kartoffeln und Öl', 'aus Reis und Eiern'], 'Das Mehl wird aus Getreidekörnern gemahlen.'],
+    ['Welches Obst wächst auch bei uns in Deutschland?', '🍏', 'Äpfel', ['Bananen', 'Mangos', 'Ananas'], 'Bananen, Mangos und Ananas brauchen viel Wärme und kommen aus fernen Ländern.'],
     ['Warum soll man nicht zu viel Zucker essen?', '🍬', 'Er schadet den Zähnen und macht nicht lange satt.', ['Er macht blaue Haare.', 'Er macht die Augen schlecht.', 'Er ist verboten.'], 'Süßes ist ab und zu in Ordnung, am besten nach dem Essen.'],
     ['Was bedeutet „Vollkorn“?', '🌾', 'Das ganze Korn mit Schale steckt im Mehl.', ['Das Brot ist besonders voll.', 'Es sind Rosinen drin.', 'Es ist nur weißes Mehl.'], 'In der Schale stecken viele Vitamine und Ballaststoffe.']],
   SU_JAHRESLAUF: [
-    ['Wann blühen Schneeglöckchen?', '🌼', 'am Ende des Winters', ['im Hochsommer', 'im Herbst', 'nur an Weihnachten'], 'Schneeglöckchen gehören zu den ersten Blumen im Jahr.'],
-    ['Was machen Zugvögel wie Störche im Herbst?', '🕊️', 'Sie fliegen in den warmen Süden.', ['Sie halten Winterschlaf.', 'Sie graben sich ein.', 'Sie bauen Iglus.'], 'Im Frühling kommen sie zurück und bauen ihre Nester.'],
-    ['Was macht ein Igel im Winter?', '🦔', 'Winterschlaf', ['Er fliegt in den Süden.', 'Er sammelt Schnee.', 'Er wechselt die Farbe.'], 'Im Herbst frisst er sich ein dickes Fettpolster an.'],
+    ['Wie viele Jahreszeiten gibt es bei uns?', '🗓️', 'vier', ['zwei', 'sechs', 'zwölf'], 'Frühling, Sommer, Herbst und Winter.'],
+    ['In welcher Jahreszeit schlüpfen die meisten Vogelküken?', '🐣', 'im Frühling', ['im Herbst', 'im Winter', 'an Silvester'], 'Dann gibt es viele Insekten als Futter für die Küken.'],
+    ['Was ist Tau?', '💧', 'kleine Wassertropfen auf Gras und Blättern am Morgen', ['gefrorener Regen', 'Nebel in den Bergen', 'Blütenstaub auf dem Boden'], 'In kühlen Nächten wird Wasserdampf aus der Luft zu Tropfen. Ist es noch kälter, entsteht Reif.'],
     ['In welchem Monat beginnt der Sommer?', '🌞', 'im Juni', ['im Januar', 'im Oktober', 'im März'], 'Der Sommer beginnt am 21. Juni, dem längsten Tag des Jahres.'],
-    ['Wann sind die Tage am kürzesten?', '🌑', 'im Winter', ['im Sommer', 'im Frühling', 'im Herbst'], 'Um den 21. Dezember ist der kürzeste Tag des Jahres.'],
+    ['Welches Obst kannst du im Herbst ernten?', '🍎', 'Äpfel, Birnen und Pflaumen', ['Erdbeeren und Kirschen', 'Bananen und Orangen', 'Ananas und Mangos'], 'Erdbeeren und Kirschen sind schon im Frühsommer reif.'],
     ['Was ernten Bauern im Sommer auf den Feldern?', '🌾', 'Getreide wie Weizen', ['Schneebälle', 'Weihnachtsbäume', 'Tulpenzwiebeln'], 'Mähdrescher schneiden das Getreide und dreschen die Körner heraus.'],
     ['Warum färben sich Blätter im Herbst bunt?', '🍁', 'Der Baum zieht den grünen Farbstoff zurück.', ['Jemand malt sie an.', 'Der Regen färbt sie.', 'Die Sonne verbrennt sie.'], 'Dann sieht man das Gelb und Rot, das vorher vom Grün verdeckt war.']],
   SU_WIND: [
-    ['Woran erkennst du, aus welcher Richtung der Wind weht?', '🚩', 'an einer Fahne oder einem Windsack', ['an einer Uhr', 'am Thermometer', 'an einer Pfütze'], 'Die Fahne zeigt immer vom Wind weg.'],
+    ['Was zeigt ein Windsack am Flugplatz?', '🎏', 'aus welcher Richtung und wie stark der Wind weht', ['wie warm es ist', 'wie spät es ist', 'ob es bald regnet'], 'Hängt der Windsack schlaff herunter, weht kaum Wind. Steht er gerade, weht es kräftig.'],
     ['Was ist Luft?', '💨', 'ein Gemisch aus unsichtbaren Gasen', ['nichts', 'Wasser', 'ganz feiner Staub'], 'Luft nimmt Platz ein. Das merkst du, wenn du einen Luftballon aufbläst.'],
-    ['Wozu nutzen Windräder den Wind?', '🌬️', 'um Strom zu erzeugen', ['um Wolken zu machen', 'um Vögel zu vertreiben', 'um Regen zu bringen'], 'Der Wind dreht die Flügel, ein Generator macht daraus Strom.'],
+    ['Warum fliegt ein Löwenzahnsamen so weit?', '🌬️', 'Sein kleiner Schirm lässt ihn im Wind schweben.', ['Er hat einen Motor.', 'Vögel tragen ihn immer.', 'Er ist schwer wie ein Stein.'], 'So verbreitet der Wind die Samen der Pusteblume.'],
     ['Warum steigt ein Heißluftballon nach oben?', '🎈', 'Warme Luft ist leichter als kalte Luft.', ['Weil er mit Wasser gefüllt ist.', 'Weil Vögel ihn ziehen.', 'Weil er Flügel hat.'], 'Der Brenner erwärmt die Luft im Ballon.'],
-    ['Wie heißt ein sehr starker Wind?', '🌀', 'Sturm', ['Brise', 'Nebel', 'Tau'], 'Bei Sturm bleibst du am besten im Haus und gehst nicht in den Wald.'],
-    ['Was passiert mit einem Segelboot ohne Wind?', '⛵', 'Es bleibt fast stehen.', ['Es fliegt.', 'Es fährt schneller.', 'Es taucht.'], 'Segelboote werden vom Wind angetrieben.'],
-    ['Welches Gerät misst, wie stark der Wind weht?', '📏', 'ein Windmesser', ['ein Thermometer', 'eine Waage', 'ein Mikroskop'], 'Kleine Schalen drehen sich: Je schneller, desto stärker der Wind.']],
+    ['Was braucht eine Kerze, damit sie brennt?', '🕯️', 'Luft', ['Wasser', 'Sand', 'Dunkelheit'], 'Stülpst du ein Glas über die Kerze, geht die Flamme bald aus: Der Sauerstoff in der Luft ist verbraucht.'],
+    ['Wie nennt man einen leichten, angenehmen Wind?', '🍃', 'Brise', ['Orkan', 'Flaute', 'Sturm'], 'An der Küste weht oft eine frische Brise vom Meer.'],
+    ['Was ist eine Böe?', '💨', 'ein kurzer, kräftiger Windstoß', ['ein ganz leiser Wind', 'ein Regenschauer', 'eine Nebelwolke'], 'Bei Böen musst du deinen Regenschirm gut festhalten.']],
   SU_TIERE: [
-    ['Welches Tier ist ein Säugetier?', '🐄', 'die Kuh', ['das Huhn', 'der Frosch', 'die Forelle'], 'Säugetiere säugen ihre Jungen mit Milch.'],
+    ['Welches Tier ist ein Reptil?', '🦎', 'die Eidechse', ['der Frosch', 'die Maus', 'die Amsel'], 'Reptilien haben eine trockene Haut mit Schuppen. Frösche sind Amphibien.'],
     ['Welches Tier legt Eier?', '🐔', 'das Huhn', ['die Katze', 'das Pferd', 'der Hund'], 'Vögel, Fische, Reptilien und viele Insekten legen Eier.'],
     ['Was frisst ein Pflanzenfresser?', '🐇', 'Gras, Blätter und Gemüse', ['nur Fleisch', 'nur Fische', 'Steine'], 'Kaninchen, Kühe und Pferde sind Pflanzenfresser.'],
-    ['Wie atmet ein Fisch unter Wasser?', '🐟', 'mit Kiemen', ['mit einer Lunge an der Oberfläche', 'durch die Flossen', 'gar nicht'], 'Die Kiemen holen den Sauerstoff aus dem Wasser.'],
+    ['Welches Tier ist nachts wach und schläft am Tag?', '🦉', 'die Eule', ['das Huhn', 'das Eichhörnchen', 'die Biene'], 'Eulen sehen und hören im Dunkeln besonders gut.'],
     ['Welches Tier ist ein Insekt?', '🐞', 'der Marienkäfer', ['die Spinne', 'die Schnecke', 'der Regenwurm'], 'Insekten haben sechs Beine. Spinnen haben acht.'],
     ['Was ist ein Raubtier?', '🦊', 'ein Tier, das andere Tiere jagt', ['ein Tier, das stiehlt', 'ein Tier, das nur Gras frisst', 'ein Tier im Zoo'], 'Fuchs, Wolf und Luchs sind Raubtiere.'],
-    ['Wie nennt man ein junges Pferd?', '🐴', 'Fohlen', ['Kalb', 'Ferkel', 'Lamm'], 'Fohlen können kurz nach der Geburt schon stehen.']],
+    ['Was ist ein Allesfresser?', '🐻', 'ein Tier, das Pflanzen und Fleisch frisst', ['ein Tier, das nur Gras frisst', 'ein Tier, das nie satt wird', 'ein Tier, das nur Fische frisst'], 'Bären, Wildschweine und auch wir Menschen sind Allesfresser.']],
   SU_PINGUIN: [
-    ['Auf welcher Hälfte der Erde leben fast alle Pinguine?', '🌍', 'auf der Südhalbkugel', ['auf der Nordhalbkugel', 'am Nordpol', 'überall gleich verteilt'], 'Am Nordpol gibt es keine Pinguine, dort leben Eisbären.'],
-    ['Welcher ist der größte Pinguin?', '👑', 'der Kaiserpinguin', ['der Zwergpinguin', 'der Felsenpinguin', 'der Brillenpinguin'], 'Kaiserpinguine werden über einen Meter groß.'],
-    ['Wie halten sich Kaiserpinguine im Sturm warm?', '🥶', 'Sie kuscheln sich dicht zusammen.', ['Sie machen ein Feuer.', 'Sie fliegen weg.', 'Sie graben Höhlen in den Sand.'], 'Abwechselnd darf jeder in die warme Mitte.'],
-    ['Was frisst ein Pinguin?', '🦐', 'Fische, Krill und Tintenfische', ['Gras und Moos', 'Nüsse', 'Brot'], 'Krill sind kleine Krebse, die in riesigen Schwärmen leben.'],
-    ['Wie lange kann ein Kaiserpinguin tauchen?', '⏳', 'über 20 Minuten', ['10 Sekunden', 'einen Tag', 'eine Woche'], 'Kaiserpinguine tauchen sogar über 500 Meter tief.'],
-    ['Wer wärmt beim Kaiserpinguin das Ei?', '🥚', 'der Vater', ['die Mutter', 'die Großeltern', 'niemand'], 'Der Vater hält das Ei auf seinen Füßen warm, die Mutter jagt im Meer.'],
-    ['Warum können Pinguine nicht fliegen?', '🪽', 'Ihre Flügel sind zu Flossen zum Schwimmen geworden.', ['Weil sie zu müde sind.', 'Weil sie Angst vor der Höhe haben.', 'Weil sie keine Federn haben.'], 'Unter Wasser „fliegen“ sie dafür blitzschnell.']]
+    ['Wie viele Eier legt ein Kaiserpinguin im Jahr?', '🥚', 'eines', ['fünf', 'zehn', 'zwanzig'], 'Darum passen die Eltern auf ihr einziges Ei besonders gut auf.'],
+    ['Wie nennt man eine große Gruppe von Pinguinen an Land?', '🐧', 'Kolonie', ['Rudel', 'Schwarm', 'Herde'], 'In einer Kolonie brüten oft viele tausend Pinguine dicht nebeneinander.'],
+    ['Woran erkennen Pinguin-Eltern ihr Küken in der großen Kolonie?', '🔊', 'an seiner Stimme', ['an seiner Farbe', 'an einem Namensschild', 'an seiner Größe'], 'Jedes Küken hat einen eigenen Ruf, den die Eltern unter Tausenden heraushören.'],
+    ['Wie schnell kann ein Eselspinguin schwimmen?', '💨', 'etwa 35 km/h', ['etwa 3 km/h', 'etwa 100 km/h', 'etwa 300 km/h'], 'Damit ist er der schnellste Pinguin im Wasser, schneller als die meisten Radfahrer.'],
+    ['Was passiert einmal im Jahr mit den Federn der Pinguine?', '🪶', 'Sie fallen aus, und neue wachsen nach.', ['Sie werden bunt.', 'Sie werden zu Fell.', 'Sie werden immer länger.'], 'Das heißt Mauser. In dieser Zeit bleiben Pinguine an Land, weil sie noch nicht wasserdicht sind.'],
+    ['Welcher Feind jagt Pinguine im Meer?', '🦭', 'der Seeleopard', ['der Eisbär', 'der Tiger', 'der Adler'], 'Seeleoparden sind große Robben. Eisbären leben am Nordpol und treffen nie auf Pinguine.'],
+    ['Woraus bauen Adeliepinguine ihr Nest?', '🪨', 'aus kleinen Steinen', ['aus Schnee', 'aus Seetang', 'aus Federn'], 'Steinchen sind dort so begehrt, dass Pinguine sie sich manchmal gegenseitig stibitzen.']]
 };
 const M8_BANKEN = { SU_KOERPER: typeof SU_KOERPER !== 'undefined' ? SU_KOERPER : null, SU_VERKEHR: typeof SU_VERKEHR !== 'undefined' ? SU_VERKEHR : null, SU_NATUR: typeof SU_NATUR !== 'undefined' ? SU_NATUR : null, SU_MEER: typeof SU_MEER !== 'undefined' ? SU_MEER : null, SU_WELTALL: typeof SU_WELTALL !== 'undefined' ? SU_WELTALL : null, SU_ERNAEHRUNG: typeof SU_ERNAEHRUNG !== 'undefined' ? SU_ERNAEHRUNG : null, SU_JAHRESLAUF: typeof SU_JAHRESLAUF !== 'undefined' ? SU_JAHRESLAUF : null, SU_WIND: typeof SU_WIND !== 'undefined' ? SU_WIND : null, SU_TIERE: typeof SU_TIERE !== 'undefined' ? SU_TIERE : null, SU_PINGUIN: typeof SU_PINGUIN !== 'undefined' ? SU_PINGUIN : null };   /* ohne eval, wegen der Sicherheitsregeln (CSP) */
 Object.entries(M8_SU).forEach(([name, rows]) => m8Push(M8_BANKEN[name], rows));
@@ -83286,7 +83299,7 @@ function abRichtigFalsch(ok, btn) {
     q.done = true; if (btn) btn.classList.add('is-right'); document.querySelectorAll('.ab-opts .opt, .ab-pad button').forEach(b => b.disabled = true);
     const nd = $('#abNd'); if (nd) nd.classList.add('ok');
     if (ABT.tries === 0) ABT.ok++; else ABT.bad++;
-    const lob = R.pick(C.lob); fb.innerHTML = `<b>${esc(lob)}</b> ${q.explain ? esc(q.explain) : ''}`; $('#abSag').textContent = lob; $('#abSagDe').textContent = ''; abSprich(lob); Sound.good();
+    const lob = R.pick(C.lob); fb.innerHTML = `<b>${esc(lob)}</b> ${q.explain ? esc(explFix(q.explain)) : ''}`; $('#abSag').textContent = lob; $('#abSagDe').textContent = ''; abSprich(lob); Sound.good();
     fb.insertAdjacentHTML('afterend', `<button class="btn ab-next" data-ab="weiter">${ABT.n >= 2 ? 'Stempel holen! 🛂' : 'Weiter'}</button>`);
   } else {
     ABT.tries++; if (btn) { btn.classList.add('is-wrong'); btn.disabled = true; } Sound.bad();
