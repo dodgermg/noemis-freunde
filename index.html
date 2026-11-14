@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-MsTdgF/3HsfMIAh05nABJiIcddNKll4aMyBkyLmzxDM=' 'sha256-Yzr3o6/mHFaJ0WcT5UrDz5garU4Y/7mOYJVWunO4/z0=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-N48aD755saCs2oPHnsrxal8kDDQGLr5KhSy2eKl2rPU=' 'sha256-/SVkfpvsbZrCvIFOAzYy67XHi3crVO7MrrFQnnXCGwo=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -9201,8 +9201,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '2.86.0';
-  var MAP = {"probe":0,"files":[[9191,"fehler_kern.js"],[9479,null],[9481,"data.js"],[10196,"data_more.js"],[10568,"data_su2.js"],[10795,"data_es.js"],[11163,"data_wissen.js"],[11364,"data_v21.js"],[12049,"data_v24.js"],[12537,"data_v25.js"],[13018,"data_v26.js"],[13117,"data_v29.js"],[13425,"data_v30.js"],[13756,"data_v31.js"],[14062,"data_kunst.js"],[14258,"data_v214.js"],[14361,"data_v216.js"],[14654,"schrift.js"],[14954,"eingabe.js"],[15165,"data_k34m.js"],[15683,"data_k34d.js"],[16037,"data_k34s.js"],[16491,"data_v224.js"],[17364,"data_v225w.js"],[17733,"data_v225k.js"],[18177,"data_herz.js"],[18531,"data_fb226.js"],[18674,"data_tf226.js"],[18881,"data_v227a.js"],[19972,"data_v227b.js"],[20926,"data_h28b.js"],[20966,"data_l28a.js"],[21832,"data_l28b.js"],[23012,"data_schaetz.js"],[23494,"data_party8.js"],[23544,"data_alce.js"],[24215,"data_alce2.js"],[24464,"data_alce3.js"],[24879,"registry.js"],[25393,"app.js"],[26586,"fun.js"],[27166,"fun2.js"],[27482,"atelier.js"],[27856,"kunst225.js"],[28046,"herz.js"],[28410,"reise.js"],[28712,"iglu.js"],[28878,"offline.js"],[28985,"party.js"],[29469,"meine.js"],[29825,"loeffel.js"],[29996,"trend.js"],[30538,"fun228a.js"],[31389,"fun228b.js"],[32050,"kueche.js"],[33089,"stimme.js"],[33144,"klassen.js"],[33293,"freunde_vorab.js"],[33314,"mut.js"],[33736,"schule.js"],[34225,"fussball226.js"],[34547,"schaetzen.js"],[34978,"party8.js"],[35597,"tiere.js"],[36056,"fussball232.js"],[36271,"party8b.js"],[36573,"weg.js"],[36794,"px.js"],[37205,"px_data.js"],[37462,"pxwelt.js"],[37543,"px_abenteuer.js"],[38351,"px_abenteuer2.js"],[39103,"px_abenteuer3.js"],[39487,"px_ski.js"],[40129,"px_wurf.js"],[40658,"px_insel.js"],[41859,"px_kicker.js"],[42794,"px_eis.js"],[43780,"px_run.js"],[44995,"px_brk.js"],[45957,"px_pol.js"],[47308,"px_frog.js"],[48568,"px_angel.js"],[49883,"px_golf.js"],[50917,"px_tauch.js"],[52182,"px_hockey.js"],[53138,"px_lab.js"],[54473,"px_plopp.js"],[55679,"px_stadion.js"],[57183,"px_training.js"],[57552,"cm.js"],[58042,"cmwelt.js"],[58098,"cm_baeck.js"],[58891,"cm_bahn.js"],[59655,"cm_detek.js"],[60372,"cm_markt.js"],[61085,"ff.js"],[61242,"ff_mathe.js"],[63232,"ff_deutsch.js"],[64820,"ff_sach_a.js"],[67069,"ff_sach_b.js"],[69298,"ff_sprachen.js"],[71706,"zm.js"],[72619,"tt.js"],[72832,"data_tagebuch.js"],[72875,"data_hoerspiel.js"],[73034,"leseecke.js"],[73353,"kt.js"],[73656,"comicbuch.js"],[73934,"alce.js"],[74097,"alce_aufg.js"],[74267,"formen.js"],[74718,"data_formen.js"],[74959,"data_formen2.js"],[75181,"spielzeit.js"],[75326,"data_faktmeinung.js"],[75445,"data_es248.js"],[75709,"data_en249.js"],[75948,"data_wissen249.js"],[76379,"data_kunst249.js"],[76662,"data_fussball250.js"],[76786,"data_werte252.js"],[77039,"data_lesen252.js"],[77100,"data_k34_252.js"],[77186,"art254.js"],[77304,"data_werte255.js"],[77442,"data_lesen255.js"],[77578,"forscher255.js"],[77726,"zufall250.js"],[77772,"stufe259.js"],[77782,"advent.js"],[78045,"wdh.js"],[78143,"denk.js"],[78180,"data_viaje265.js"],[78323,"klassenarbeit.js"],[78456,"quizduell.js"],[78579,"neu267.js"],[78844,"prog.js"],[78949,"lernstand.js"],[79016,"blatt.js"],[79118,"data_es271.js"],[79232,"plus269.js"],[79326,"schach.js"],[79558,"schachtaktik.js"],[79810,"fun270.js"],[79973,"data_neu274.js"],[80182,"plus272.js"],[80236,"spiele274.js"],[80359,"kasten.js"],[80463,"erklaer.js"],[80576,"apa.js"],[80657,"neu276.js"],[80798,"spiele276.js"],[80848,"neu277.js"],[81026,"spiele277.js"],[81281,"lernen278.js"],[81541,"spiele278.js"],[81884,"lernen279.js"],[82209,"lernen279b.js"],[82607,"spanisch280.js"],[82899,"spanisch283.js"],[83132,"mehr281.js"],[83278,"grafik280.js"],[83649,"tiefsee280.js"],[83927,"abenteuer280.js"],[84139,"abenteuer281.js"],[84251,"design281.js"],[84383,"party281.js"],[84514,"grafik281.js"],[84731,"lumi_live.js"],[84847,"sicher.js"],[85031,"stil.js"],[85085,"freunde.js"],[85222,"start.js"],[85232,null],[85242,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '2.87.0';
+  var MAP = {"probe":0,"files":[[9191,"fehler_kern.js"],[9479,null],[9481,"data.js"],[10196,"data_more.js"],[10568,"data_su2.js"],[10795,"data_es.js"],[11163,"data_wissen.js"],[11364,"data_v21.js"],[12049,"data_v24.js"],[12537,"data_v25.js"],[13018,"data_v26.js"],[13117,"data_v29.js"],[13425,"data_v30.js"],[13756,"data_v31.js"],[14062,"data_kunst.js"],[14258,"data_v214.js"],[14361,"data_v216.js"],[14654,"schrift.js"],[14954,"eingabe.js"],[15165,"data_k34m.js"],[15683,"data_k34d.js"],[16037,"data_k34s.js"],[16491,"data_v224.js"],[17364,"data_v225w.js"],[17733,"data_v225k.js"],[18177,"data_herz.js"],[18531,"data_fb226.js"],[18674,"data_tf226.js"],[18881,"data_v227a.js"],[19972,"data_v227b.js"],[20926,"data_h28b.js"],[20966,"data_l28a.js"],[21832,"data_l28b.js"],[23012,"data_schaetz.js"],[23494,"data_party8.js"],[23544,"data_alce.js"],[24215,"data_alce2.js"],[24464,"data_alce3.js"],[24879,"registry.js"],[25393,"app.js"],[26587,"fun.js"],[27167,"fun2.js"],[27483,"atelier.js"],[27857,"kunst225.js"],[28047,"herz.js"],[28411,"reise.js"],[28713,"iglu.js"],[28879,"offline.js"],[28986,"party.js"],[29470,"meine.js"],[29826,"loeffel.js"],[29997,"trend.js"],[30539,"fun228a.js"],[31390,"fun228b.js"],[32051,"kueche.js"],[33090,"stimme.js"],[33145,"klassen.js"],[33294,"freunde_vorab.js"],[33315,"mut.js"],[33737,"schule.js"],[34226,"fussball226.js"],[34548,"schaetzen.js"],[34979,"party8.js"],[35598,"tiere.js"],[36057,"fussball232.js"],[36272,"party8b.js"],[36574,"weg.js"],[36795,"px.js"],[37206,"px_data.js"],[37463,"pxwelt.js"],[37544,"px_abenteuer.js"],[38352,"px_abenteuer2.js"],[39104,"px_abenteuer3.js"],[39488,"px_ski.js"],[40130,"px_wurf.js"],[40659,"px_insel.js"],[41860,"px_kicker.js"],[42795,"px_eis.js"],[43781,"px_run.js"],[44996,"px_brk.js"],[45958,"px_pol.js"],[47309,"px_frog.js"],[48569,"px_angel.js"],[49884,"px_golf.js"],[50918,"px_tauch.js"],[52183,"px_hockey.js"],[53139,"px_lab.js"],[54474,"px_plopp.js"],[55680,"px_stadion.js"],[57184,"px_training.js"],[57553,"cm.js"],[58043,"cmwelt.js"],[58099,"cm_baeck.js"],[58892,"cm_bahn.js"],[59656,"cm_detek.js"],[60373,"cm_markt.js"],[61086,"ff.js"],[61243,"ff_mathe.js"],[63233,"ff_deutsch.js"],[64821,"ff_sach_a.js"],[67070,"ff_sach_b.js"],[69299,"ff_sprachen.js"],[71707,"zm.js"],[72620,"tt.js"],[72833,"data_tagebuch.js"],[72876,"data_hoerspiel.js"],[73035,"leseecke.js"],[73354,"kt.js"],[73657,"comicbuch.js"],[73935,"alce.js"],[74098,"alce_aufg.js"],[74268,"formen.js"],[74719,"data_formen.js"],[74960,"data_formen2.js"],[75182,"spielzeit.js"],[75327,"data_faktmeinung.js"],[75446,"data_es248.js"],[75710,"data_en249.js"],[75949,"data_wissen249.js"],[76380,"data_kunst249.js"],[76663,"data_fussball250.js"],[76787,"data_werte252.js"],[77040,"data_lesen252.js"],[77101,"data_k34_252.js"],[77187,"art254.js"],[77305,"data_werte255.js"],[77443,"data_lesen255.js"],[77579,"forscher255.js"],[77727,"zufall250.js"],[77773,"stufe259.js"],[77783,"advent.js"],[78046,"wdh.js"],[78144,"denk.js"],[78181,"data_viaje265.js"],[78324,"klassenarbeit.js"],[78457,"quizduell.js"],[78580,"neu267.js"],[78845,"prog.js"],[78950,"lernstand.js"],[79017,"blatt.js"],[79119,"data_es271.js"],[79233,"plus269.js"],[79327,"schach.js"],[79559,"schachtaktik.js"],[79811,"fun270.js"],[79974,"data_neu274.js"],[80183,"plus272.js"],[80237,"spiele274.js"],[80360,"kasten.js"],[80464,"erklaer.js"],[80577,"apa.js"],[80658,"neu276.js"],[80799,"spiele276.js"],[80849,"neu277.js"],[81027,"spiele277.js"],[81282,"lernen278.js"],[81542,"spiele278.js"],[81885,"lernen279.js"],[82210,"lernen279b.js"],[82608,"spanisch280.js"],[82900,"spanisch283.js"],[83133,"mehr281.js"],[83279,"grafik280.js"],[83650,"tiefsee280.js"],[83928,"abenteuer280.js"],[84140,"abenteuer281.js"],[84252,"design281.js"],[84384,"party281.js"],[84515,"grafik281.js"],[84732,"lumi_live.js"],[84848,"sicher.js"],[85032,"stil.js"],[85086,"zurueck287.js"],[85128,"freunde.js"],[85265,"start.js"],[85275,null],[85285,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -25394,9 +25394,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '2.86.0';
+const APP_VERSION = '2.87.0';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "2.87.0", d: "14.11.2026", t: ["Zurück-Geste: Wischen vom Bildschirmrand und die Zurück-Taste führen innerhalb der App eine Ebene zurück, statt die vorherige Website zu zeigen", "Auf der Startseite verlässt erst zweimal Zurück kurz hintereinander die App"] },
   { v: "2.86.0", d: "14.11.2026", t: ["Sachunterricht und Wissen: Weitere 16 Fragen haben glaubhafte statt alberner falscher Antworten", "Spanisch: „Welches Wort passt nicht?“ ist in einer weiteren Einheit nicht mehr am Artikel zu erraten"] },
   { v: "2.85.0", d: "14.11.2026", t: ["Sachunterricht und Wissen: Bei 90 Fragen sind die falschen Antworten jetzt glaubhaft und ähnlich lang wie die richtige", "Englisch: Falsche Antworten aus derselben Wortgruppe, Nachbarzahlen und Verwechsler, 16 neue Gegenteil-Paare"] },
   { v: "2.84.0", d: "14.11.2026", t: ["Spanisch: Falsche Antworten sind in vielen Spielen schwerer zu erraten (gleiche Wortgruppe, gleiche Wortart, Nachbarzahlen, gleiche Satzart)", "Spanisch: 12 neue Gegenteil-Paare"] },
@@ -85081,6 +85082,48 @@ function lwStrichStart() {
   } catch (e) { }
 }
 if (document.body) lwStrichStart(); else document.addEventListener('DOMContentLoaded', lwStrichStart);
+
+/*@@src zurueck287.js@@*/
+
+
+
+
+
+
+
+const ZR_MAX = 4;
+const ZR = { d: 0, t: 0, an: true };
+const zrSichtbar = el => !!el && !el.disabled && el.getClientRects().length > 0;
+const zrDaheim = () => !!document.querySelector('#app main.home2');
+function zrFuellen(e) {
+  if (!ZR.an || (e && e.isTrusted === false)) return;
+  try { while (ZR.d < ZR_MAX) { history.pushState({ lw: ZR.d + 1 }, ''); ZR.d++; } } catch (e) { ZR.an = false; }
+}
+
+function zrZurueck() {
+  const ov = document.getElementById('overlay');
+  if (ov) {
+    const b = [...ov.querySelectorAll('[data-act="closeov"], button[aria-label^="Zurück"]')].find(zrSichtbar); if (b) b.click(); return true;
+  }
+  const k = [...document.querySelectorAll('button[aria-label^="Zurück"], button[aria-label="Spiel beenden"], button[aria-label="Beenden"], .px-x, .cm-x')].filter(zrSichtbar);
+  if (k.length) { k[k.length - 1].click(); return true; }
+  if (zrDaheim()) return false;
+  const h = [...document.querySelectorAll('[data-act="home"]')].find(zrSichtbar); if (h) h.click();
+  return true;
+}
+window.addEventListener('popstate', e => {
+  const n = e.state && typeof e.state.lw === 'number' ? e.state.lw : 0, alt = ZR.d; ZR.d = n;
+  if (!ZR.an || n >= alt) return;
+  let drin = true; try { drin = zrZurueck(); } catch (err) { }
+  if (drin) return;
+  const jetzt = Date.now();
+  if (jetzt - ZR.t < 2500) { try { history.go(-(ZR.d + 1)); } catch (err) { } return; }
+  ZR.t = jetzt; toast('Noch einmal zurück, um die Lernwelt zu verlassen.');
+});
+try { ZR.d = history.state && typeof history.state.lw === 'number' ? history.state.lw : 0; } catch (e) { ZR.an = false; }
+
+
+['click', 'keydown'].forEach(ev => window.addEventListener(ev, zrFuellen, true));
 
 /*@@src freunde.js@@*/
 /* ================================================================
