@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-nRaZcf5vF3+lxpx8QcvM1z9sr8DRMGuBuiisNF/LmWQ=' 'sha256-TiSHt2xbTLbitajq+Ds+2ooIQkEKVuMYbXR3/ZzwAYc=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-boW1wbzAZJz/8aEaN3nHzNC8cv69JavlM6IH9ix+pwQ=' 'sha256-5rRdaCiK1/53JLdtDoniXDeGKGDR28Eri1/Jl4MNnyg=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -6427,6 +6427,7 @@ body.calm .weg-st .weg-n, body.calm .weg-st .weg-i { animation: none !important;
 
 .sx-kopf { flex: 1; text-align: center; font-family: var(--f-display); font-weight: 800; font-size: 20px; color: var(--ink); padding-right: 48px; }
 .sx-wahl { display: grid; gap: 16px; padding-bottom: 40px; }
+.sx-wahl .ka-seg { max-width: 100%; flex-wrap: wrap; }
 .sx-arten { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
 .sx-art { display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 14px 10px; border: 3px solid var(--line); border-radius: 18px; background: var(--surface); color: var(--ink); font: inherit; text-align: center; cursor: pointer; }
 .sx-art.sel { border-color: var(--sea); background: var(--surface-2); }
@@ -6451,7 +6452,7 @@ body.calm .weg-st .weg-n, body.calm .weg-st .weg-i { animation: none !important;
 .sx-side { display: flex; flex-direction: column; gap: 12px; }
 .sx-st { margin: 0; padding: 12px 14px; border-radius: 14px; background: var(--surface); box-shadow: var(--shadow); font-weight: 800; font-size: 18px; line-height: 1.35; color: var(--ink); }
 .sx-st.ende { background: #fff1c2; color: #12324A; }
-@media (max-width: 820px) { .sx-main { grid-template-columns: minmax(0, min(560px, calc(100vh - 150px))); } .sx-arten { grid-template-columns: minmax(0, 1fr); } .sx-art { flex-direction: row; text-align: left; gap: 12px; } .sx-art small { flex: 1; } }
+@media (max-width: 820px) { .sx-main { grid-template-columns: minmax(0, min(560px, calc(100vh - 150px))); } .sx-arten { grid-template-columns: minmax(0, 1fr); } .sx-art { flex-direction: row; text-align: left; gap: 12px; } .sx-art small { flex: 1 1 0; min-width: 44%; } }
 
 .st-pkt { font-weight: 800; font-size: 17px; color: var(--ink); align-self: center; }
 
@@ -9200,8 +9201,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '2.82.0';
-  var MAP = {"probe":0,"files":[[9190,"fehler_kern.js"],[9478,null],[9480,"data.js"],[10183,"data_more.js"],[10540,"data_su2.js"],[10767,"data_es.js"],[11109,"data_wissen.js"],[11310,"data_v21.js"],[11993,"data_v24.js"],[12480,"data_v25.js"],[12961,"data_v26.js"],[13060,"data_v29.js"],[13365,"data_v30.js"],[13695,"data_v31.js"],[14001,"data_kunst.js"],[14197,"data_v214.js"],[14300,"data_v216.js"],[14593,"schrift.js"],[14893,"eingabe.js"],[15104,"data_k34m.js"],[15622,"data_k34d.js"],[15976,"data_k34s.js"],[16430,"data_v224.js"],[17303,"data_v225w.js"],[17672,"data_v225k.js"],[18116,"data_herz.js"],[18470,"data_fb226.js"],[18613,"data_tf226.js"],[18820,"data_v227a.js"],[19911,"data_v227b.js"],[20865,"data_h28b.js"],[20905,"data_l28a.js"],[21771,"data_l28b.js"],[22951,"data_schaetz.js"],[23433,"data_party8.js"],[23483,"data_alce.js"],[24143,"data_alce2.js"],[24392,"data_alce3.js"],[24807,"registry.js"],[25321,"app.js"],[26510,"fun.js"],[27090,"fun2.js"],[27406,"atelier.js"],[27780,"kunst225.js"],[27970,"herz.js"],[28334,"reise.js"],[28636,"iglu.js"],[28802,"offline.js"],[28909,"party.js"],[29393,"meine.js"],[29749,"loeffel.js"],[29920,"trend.js"],[30462,"fun228a.js"],[31313,"fun228b.js"],[31974,"kueche.js"],[33013,"stimme.js"],[33068,"klassen.js"],[33217,"freunde_vorab.js"],[33238,"mut.js"],[33660,"schule.js"],[34149,"fussball226.js"],[34471,"schaetzen.js"],[34902,"party8.js"],[35521,"tiere.js"],[35980,"fussball232.js"],[36195,"party8b.js"],[36497,"weg.js"],[36718,"px.js"],[37129,"px_data.js"],[37386,"pxwelt.js"],[37467,"px_abenteuer.js"],[38275,"px_abenteuer2.js"],[39027,"px_abenteuer3.js"],[39411,"px_ski.js"],[40053,"px_wurf.js"],[40582,"px_insel.js"],[41783,"px_kicker.js"],[42718,"px_eis.js"],[43704,"px_run.js"],[44919,"px_brk.js"],[45881,"px_pol.js"],[47232,"px_frog.js"],[48492,"px_angel.js"],[49807,"px_golf.js"],[50841,"px_tauch.js"],[52106,"px_hockey.js"],[53062,"px_lab.js"],[54397,"px_plopp.js"],[55603,"px_stadion.js"],[57107,"px_training.js"],[57476,"cm.js"],[57966,"cmwelt.js"],[58022,"cm_baeck.js"],[58815,"cm_bahn.js"],[59579,"cm_detek.js"],[60296,"cm_markt.js"],[61009,"ff.js"],[61166,"ff_mathe.js"],[63156,"ff_deutsch.js"],[64744,"ff_sach_a.js"],[66993,"ff_sach_b.js"],[69222,"ff_sprachen.js"],[71630,"zm.js"],[72543,"tt.js"],[72756,"data_tagebuch.js"],[72799,"data_hoerspiel.js"],[72958,"leseecke.js"],[73277,"kt.js"],[73580,"comicbuch.js"],[73858,"alce.js"],[74021,"alce_aufg.js"],[74191,"formen.js"],[74642,"data_formen.js"],[74883,"data_formen2.js"],[75105,"spielzeit.js"],[75250,"data_faktmeinung.js"],[75369,"data_es248.js"],[75633,"data_en249.js"],[75872,"data_wissen249.js"],[76303,"data_kunst249.js"],[76586,"data_fussball250.js"],[76710,"data_werte252.js"],[76963,"data_lesen252.js"],[77024,"data_k34_252.js"],[77110,"art254.js"],[77228,"data_werte255.js"],[77366,"data_lesen255.js"],[77502,"forscher255.js"],[77650,"zufall250.js"],[77696,"stufe259.js"],[77706,"advent.js"],[77969,"wdh.js"],[78067,"denk.js"],[78104,"data_viaje265.js"],[78247,"klassenarbeit.js"],[78380,"quizduell.js"],[78503,"neu267.js"],[78768,"prog.js"],[78873,"lernstand.js"],[78940,"blatt.js"],[79042,"data_es271.js"],[79156,"plus269.js"],[79250,"schach.js"],[79477,"schachtaktik.js"],[79648,"fun270.js"],[79811,"data_neu274.js"],[80020,"plus272.js"],[80074,"spiele274.js"],[80197,"kasten.js"],[80301,"erklaer.js"],[80414,"apa.js"],[80495,"neu276.js"],[80636,"spiele276.js"],[80686,"neu277.js"],[80864,"spiele277.js"],[81119,"lernen278.js"],[81379,"spiele278.js"],[81722,"lernen279.js"],[82047,"lernen279b.js"],[82445,"spanisch280.js"],[82737,"mehr281.js"],[82883,"grafik280.js"],[83254,"tiefsee280.js"],[83532,"abenteuer280.js"],[83744,"abenteuer281.js"],[83856,"design281.js"],[83988,"party281.js"],[84119,"grafik281.js"],[84336,"lumi_live.js"],[84452,"sicher.js"],[84636,"stil.js"],[84690,"freunde.js"],[84827,"start.js"],[84837,null],[84847,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '2.83.0';
+  var MAP = {"probe":0,"files":[[9191,"fehler_kern.js"],[9479,null],[9481,"data.js"],[10185,"data_more.js"],[10548,"data_su2.js"],[10775,"data_es.js"],[11117,"data_wissen.js"],[11318,"data_v21.js"],[12003,"data_v24.js"],[12491,"data_v25.js"],[12972,"data_v26.js"],[13071,"data_v29.js"],[13379,"data_v30.js"],[13710,"data_v31.js"],[14016,"data_kunst.js"],[14212,"data_v214.js"],[14315,"data_v216.js"],[14608,"schrift.js"],[14908,"eingabe.js"],[15119,"data_k34m.js"],[15637,"data_k34d.js"],[15991,"data_k34s.js"],[16445,"data_v224.js"],[17318,"data_v225w.js"],[17687,"data_v225k.js"],[18131,"data_herz.js"],[18485,"data_fb226.js"],[18628,"data_tf226.js"],[18835,"data_v227a.js"],[19926,"data_v227b.js"],[20880,"data_h28b.js"],[20920,"data_l28a.js"],[21786,"data_l28b.js"],[22966,"data_schaetz.js"],[23448,"data_party8.js"],[23498,"data_alce.js"],[24158,"data_alce2.js"],[24407,"data_alce3.js"],[24822,"registry.js"],[25336,"app.js"],[26526,"fun.js"],[27106,"fun2.js"],[27422,"atelier.js"],[27796,"kunst225.js"],[27986,"herz.js"],[28350,"reise.js"],[28652,"iglu.js"],[28818,"offline.js"],[28925,"party.js"],[29409,"meine.js"],[29765,"loeffel.js"],[29936,"trend.js"],[30478,"fun228a.js"],[31329,"fun228b.js"],[31990,"kueche.js"],[33029,"stimme.js"],[33084,"klassen.js"],[33233,"freunde_vorab.js"],[33254,"mut.js"],[33676,"schule.js"],[34165,"fussball226.js"],[34487,"schaetzen.js"],[34918,"party8.js"],[35537,"tiere.js"],[35996,"fussball232.js"],[36211,"party8b.js"],[36513,"weg.js"],[36734,"px.js"],[37145,"px_data.js"],[37402,"pxwelt.js"],[37483,"px_abenteuer.js"],[38291,"px_abenteuer2.js"],[39043,"px_abenteuer3.js"],[39427,"px_ski.js"],[40069,"px_wurf.js"],[40598,"px_insel.js"],[41799,"px_kicker.js"],[42734,"px_eis.js"],[43720,"px_run.js"],[44935,"px_brk.js"],[45897,"px_pol.js"],[47248,"px_frog.js"],[48508,"px_angel.js"],[49823,"px_golf.js"],[50857,"px_tauch.js"],[52122,"px_hockey.js"],[53078,"px_lab.js"],[54413,"px_plopp.js"],[55619,"px_stadion.js"],[57123,"px_training.js"],[57492,"cm.js"],[57982,"cmwelt.js"],[58038,"cm_baeck.js"],[58831,"cm_bahn.js"],[59595,"cm_detek.js"],[60312,"cm_markt.js"],[61025,"ff.js"],[61182,"ff_mathe.js"],[63172,"ff_deutsch.js"],[64760,"ff_sach_a.js"],[67009,"ff_sach_b.js"],[69238,"ff_sprachen.js"],[71646,"zm.js"],[72559,"tt.js"],[72772,"data_tagebuch.js"],[72815,"data_hoerspiel.js"],[72974,"leseecke.js"],[73293,"kt.js"],[73596,"comicbuch.js"],[73874,"alce.js"],[74037,"alce_aufg.js"],[74207,"formen.js"],[74658,"data_formen.js"],[74899,"data_formen2.js"],[75121,"spielzeit.js"],[75266,"data_faktmeinung.js"],[75385,"data_es248.js"],[75649,"data_en249.js"],[75888,"data_wissen249.js"],[76319,"data_kunst249.js"],[76602,"data_fussball250.js"],[76726,"data_werte252.js"],[76979,"data_lesen252.js"],[77040,"data_k34_252.js"],[77126,"art254.js"],[77244,"data_werte255.js"],[77382,"data_lesen255.js"],[77518,"forscher255.js"],[77666,"zufall250.js"],[77712,"stufe259.js"],[77722,"advent.js"],[77985,"wdh.js"],[78083,"denk.js"],[78120,"data_viaje265.js"],[78263,"klassenarbeit.js"],[78396,"quizduell.js"],[78519,"neu267.js"],[78784,"prog.js"],[78889,"lernstand.js"],[78956,"blatt.js"],[79058,"data_es271.js"],[79172,"plus269.js"],[79266,"schach.js"],[79498,"schachtaktik.js"],[79750,"fun270.js"],[79913,"data_neu274.js"],[80122,"plus272.js"],[80176,"spiele274.js"],[80299,"kasten.js"],[80403,"erklaer.js"],[80516,"apa.js"],[80597,"neu276.js"],[80738,"spiele276.js"],[80788,"neu277.js"],[80966,"spiele277.js"],[81221,"lernen278.js"],[81481,"spiele278.js"],[81824,"lernen279.js"],[82149,"lernen279b.js"],[82547,"spanisch280.js"],[82839,"spanisch283.js"],[83072,"mehr281.js"],[83218,"grafik280.js"],[83589,"tiefsee280.js"],[83867,"abenteuer280.js"],[84079,"abenteuer281.js"],[84191,"design281.js"],[84323,"party281.js"],[84454,"grafik281.js"],[84671,"lumi_live.js"],[84787,"sicher.js"],[84971,"stil.js"],[85025,"freunde.js"],[85162,"start.js"],[85172,null],[85182,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -9842,7 +9843,8 @@ function genReim(ctx) {
   const pair = ctx.draw(REIME);
   const flip = R.chance(.5);
   const [w, e, a, ae] = flip ? [pair[2], pair[3], pair[0], pair[1]] : pair;
-  const others = R.sample(REIME.filter(p => p !== pair), 3).map(p => R.chance(.5) ? [p[0], p[1]] : [p[2], p[3]]);
+  const endet = (x, y) => x.slice(-3).toLowerCase() === y.slice(-3).toLowerCase(), nah = x => (x[0][0] === a[0] ? 2 : 0) + (x[0].slice(-1) === a.slice(-1) ? 2 : 0) + (Math.abs(x[0].length - a.length) <= 1 ? 1 : 0);
+  const others = REIME.filter(p => p !== pair).flatMap(p => [[p[0], p[1]], [p[2], p[3]]]).filter(x => !endet(x[0], a) && !endet(x[0], w)).map(x => [x, nah(x) + Math.random()]).sort((x, y) => y[1] - x[1]).slice(0, 6).map(x => x[0]); others.splice(0, others.length, ...R.sample(others, Math.min(3, others.length)));
   const o = (t, em) => ({ html: `<span class="em">${em}</span>${esc(t)}`, label: t });
   return mkChoice({ prompt: `Was reimt sich auf „${w}“?`, visual: bigEmoji(e) + `<div class="q-word">${esc(w)}</div>`, answer: o(a, ae), wrong: others.map(x => o(x[0], x[1])),
     layout: 'grid2', explain: `${w}, ${a}. Das klingt am Ende gleich!`, key: 'reim' + w, say: `Was reimt sich auf ${w}?`, after: `${w}, ${a}` });
@@ -10425,10 +10427,16 @@ function genVerben(ctx) {
 }
 const GEGENTEILE_DE = [['groß', 'klein'], ['schnell', 'langsam'], ['heiß', 'kalt'], ['Tag', 'Nacht'], ['öffnen', 'schließen'], ['oben', 'unten'], ['fröhlich', 'traurig'], ['voll', 'leer'],
   ['sauber', 'schmutzig'], ['viel', 'wenig'], ['hell', 'dunkel'], ['laut', 'leise'], ['innen', 'außen'], ['leicht', 'schwer'], ['lang', 'kurz'], ['hart', 'weich'], ['nass', 'trocken'],
-  ['nah', 'fern'], ['lachen', 'weinen'], ['gewinnen', 'verlieren'], ['Anfang', 'Ende'], ['vorne', 'hinten'], ['früh', 'spät'], ['stark', 'schwach'], ['jung', 'alt'], ['arm', 'reich'], ['billig', 'teuer'], ['ja', 'nein']];
+  ['nah', 'fern'], ['lachen', 'weinen'], ['gewinnen', 'verlieren'], ['Anfang', 'Ende'], ['vorne', 'hinten'], ['früh', 'spät'], ['stark', 'schwach'], ['jung', 'alt'], ['arm', 'reich'], ['billig', 'teuer'], ['ja', 'nein'],
+  ['Sommer', 'Winter'], ['Freund', 'Feind'], ['Frage', 'Antwort'], ['Glück', 'Pech'], ['Morgen', 'Abend'], ['kommen', 'gehen'], ['geben', 'nehmen'], ['fragen', 'antworten'], ['suchen', 'finden'],
+  ['kaufen', 'verkaufen'], ['dick', 'dünn'], ['süß', 'sauer'], ['richtig', 'falsch'], ['gesund', 'krank'], ['mutig', 'ängstlich'], ['immer', 'nie'], ['links', 'rechts']];
+
+const GT_KLEIN = ['oben', 'unten', 'innen', 'außen', 'vorne', 'hinten', 'ja', 'nein', 'viel', 'wenig', 'früh', 'spät', 'immer', 'nie', 'links', 'rechts'];
 function genGegenteil(ctx) {
   const pair = ctx.draw(GEGENTEILE_DE), flip = R.chance(.5), [w, a] = flip ? [pair[1], pair[0]] : pair;
-  const wrong = R.sample(GEGENTEILE_DE.filter(p => p !== pair), 3).map(p => R.pick(p));
+  const art = x => /^[A-ZÄÖÜ]/.test(x) ? 'n' : GT_KLEIN.includes(x) ? 'p' : x !== 'trocken' && /(en|eln|ern)$/.test(x) ? 'v' : 'a';
+  const alle = R.shuffle(GEGENTEILE_DE.filter(p => p !== pair).flatMap(p => p).filter(x => x !== w && x !== a)), gleich = alle.filter(x => art(x) === art(a));
+  const wrong = [...new Set(gleich.length >= 3 ? gleich : alle)].slice(0, 3);
   return mkChoice({ prompt: `Was ist das Gegenteil von „${w}“?`, visual: `<div class="q-word big">${esc(w)}</div>`, answer: a, wrong, layout: 'grid2', explain: `${w} ↔ ${a}`, key: 'gt' + w, say: `Das Gegenteil von ${w}` });
 }
 const ABC_POOL = memo('abc', () => [...new Set([...ARTIKEL.map(a => a[1]), ...SPELL_DE.map(s => s[0]), ...SILBEN.map(s => s[0])])]);
@@ -11492,6 +11500,7 @@ const VERLAENGERN = [
   ['Ban', 'k', 'g', 'Bänke', '🪑'], ['Schran', 'k', 'g', 'Schränke', '🗄️'], ['kran', 'k', 'g', 'kranke', '🤒']
 ];
 function genVerlaengern(ctx) {
+  if (d83Stufe2(ctx)) return d83Detektiv(ctx, 'verlaengern', VERLAENGERN);
   const [p, a, b, l, e] = ctx.draw(VERLAENGERN), w = p + a;
   return mkChoice({ prompt: `Hörst du ${a} oder ${b}? Verlängere das Wort!`, visual: bigEmoji(e) + `<div class="q-word">${esc(p)}<span class="q-gap">?</span></div>`, answer: a, wrong: [b], layout: 'row2',
     solution: w, explain: `Verlängern hilft: ${w} → ${l}. Jetzt hörst du das ${a}.`, after: `${w}, ${l}`, key: 'vl' + w, say: w });
@@ -11503,6 +11512,7 @@ const ABLEITEN = [
   ['B', 'e', 'ä', 'tt', '', '🛏️'], ['F', 'e', 'ä', 'ld', '', '🌾'], ['W', 'e', 'ä', 'lt', '', '🌍'], ['Br', 'e', 'ä', 'tt', '', '🪵'], ['N', 'e', 'ä', 'st', '', '🪺'], ['Z', 'e', 'ä', 'lt', '', '⛺']
 ];
 function genAbleiten(ctx) {
+  if (d83Stufe2(ctx)) return d83Detektiv(ctx, 'ableiten', ABLEITEN);
   const [p, a, b, s, base, e] = ctx.draw(ABLEITEN), w = p + a + s;
   const ex = base ? `${w} kommt von „${base}“, darum ${a.toLowerCase()}.` : `Es gibt kein verwandtes Wort mit ${a.toLowerCase().includes('e') && a.length === 2 ? 'au' : 'a'}, darum ${a.toLowerCase()}.`;
   return mkChoice({ prompt: `${a.toLowerCase().length === 2 ? 'äu oder eu' : 'ä oder e'}? Suche ein verwandtes Wort!`, visual: bigEmoji(e) + `<div class="q-word">${esc(p)}<span class="q-gap">?</span>${esc(s)}</div>`, answer: a, wrong: [b], layout: 'row2',
@@ -11554,7 +11564,7 @@ const PRAEDIKAT = [['Der Hund bellt laut.', 'bellt'], ['Lena malt ein Bild.', 'm
 function genPraedikat(ctx) {
   const [s, v] = ctx.draw(PRAEDIKAT);
   const words = s.replace(/[.!?]/g, '').split(' ').filter(w => w !== v && !['der', 'die', 'das', 'dem', 'den', 'im', 'ein', 'eine', 'einen', 'ans', 'über'].includes(w.toLowerCase()));
-  return mkChoice({ prompt: 'Welches Wort ist das Prädikat (das Verb) im Satz?', visual: `<div class="q-sentence">${esc(s)}</div>`, answer: v, wrong: R.sample(words, Math.min(3, words.length)),
+  return mkChoice({ prompt: 'Welches Wort ist das Prädikat (das Verb) im Satz?', visual: `<div class="q-sentence">${esc(s)}</div>`, answer: v, wrong: d83PraedFalsch(s, v, words),
     explain: `„${v}“ sagt, was passiert oder was jemand tut. Das ist das Prädikat.`, key: 'pr' + s, say: s });
 }
 const TEXTSORTEN = [
@@ -12153,6 +12163,7 @@ function genWortfeld(ctx) {
 const FV = [['V', 'ogel', '🐦'], ['V', 'ater', '👨'], ['v', 'ier', '4️⃣'], ['v', 'iel', '🍬'], ['v', 'oll', '🥛'], ['v', 'or', '⏩'], ['V', 'eilchen', '💜'], ['v', 'orne', '⬆️'], ['v', 'ergessen', '🤔'], ['v', 'erlieren', '🔍'],
   ['V', 'ogelnest', '🪺'], ['v', 'on', '➡️'], ['F', 'isch', '🐟'], ['F', 'enster', '🪟'], ['F', 'eder', '🪶'], ['F', 'rosch', '🐸'], ['F', 'ahrrad', '🚲'], ['F', 'erien', '🏖️'], ['f', 'allen', '🍂'], ['f', 'ünf', '5️⃣'], ['F', 'euer', '🔥'], ['F', 'ilm', '🎬'], ['f', 'inden', '🔎'], ['F', 'uß', '🦶']];
 function genFV(ctx) {
+  if (d83Stufe2(ctx)) return d83Detektiv(ctx, 'fv', FV);
   const [l, r, e] = ctx.draw(FV), w = l + r, up = l === l.toUpperCase(), opts = up ? ['F', 'V'] : ['f', 'v'];
   return mkChoice({ prompt: 'F oder V?', visual: bigEmoji(e) + `<div class="q-word"><span class="q-gap">?</span>${esc(r)}</div>`, answer: l, wrong: opts.filter(x => x !== l), fixed: true, order: opts, layout: 'row2',
     explain: l.toLowerCase() === 'v' ? `„${w}“ mit V, ein Merkwort! Das musst du dir merken.` : `„${w}“ schreibt man mit F.`, after: w, key: 'fv' + w, say: w });
@@ -13215,6 +13226,7 @@ const IE_W = [['Biene', '🐝', 'ie'], ['Brief', '✉️', 'ie'], ['Fliege', '�
   ['Tiger', '🐯', 'x'], ['Igel', '🦔', 'x'], ['Kino', '🎬', 'x'], ['Biber', '🦫', 'x'], ['Krokodil', '🐊', 'x'], ['Lineal', '📏', 'x'], ['Mandarine', '🍊', 'x']];
 function gapWord(w, i, len) { return `${esc(w.slice(0, i))}<span class="q-gap">?</span>${esc(w.slice(i + len))}`; }
 function genIeWort(ctx) {
+  if (d83Stufe2(ctx)) return d83Detektiv(ctx, 'iewort', IE_W);
   const [w, e, t] = ctx.draw(IE_W), i = t === 'ie' ? w.indexOf('ie') : w.search(/i/i), len = t === 'ie' ? 2 : 1, cap = i === 0;
   const opts = cap ? ['I', 'Ie'] : ['i', 'ie'], ans = t === 'ie' ? opts[1] : opts[0];
   const ex = t === 'ie' ? `${w}: Das i klingt lang, darum schreibt man ie.` : t === 'i' ? `${w}: Das i klingt kurz, darum nur i.` : `${w} ist ein Merkwort: Das i klingt lang, aber man schreibt nur i (wie Tiger, Igel, Kino, Biber, Krokodil).`;
@@ -13227,6 +13239,7 @@ const DOPPEL_W = [['Ball', 'Bal', '⚽'], ['Kamm', 'Kam', '🪮'], ['Puppe', 'Pu
   ['Tanne', 'Tane', '🌲'], ['Kette', 'Kete', '⛓️'], ['Hose', 'Hosse', '👖'], ['Blume', 'Blumme', '🌸'], ['Hut', 'Hutt', '👒'], ['Brot', 'Brott', '🍞'], ['Tomate', 'Tommate', '🍅'], ['Banane', 'Bananne', '🍌'],
   ['Rakete', 'Rakette', '🚀'], ['Name', 'Namme', '📛'], ['Sofa', 'Soffa', '🛋️'], ['Igel', 'Iggel', '🦔'], ['Pirat', 'Pirrat', '🏴‍☠️'], ['Schal', 'Schaal', '🧣']];
 function genDoppelt(ctx) {
+  if (d83Stufe2(ctx)) return d83Detektiv(ctx, 'doppelt', DOPPEL_W);
   const [w, f, e] = ctx.draw(DOPPEL_W), dbl = w.length > f.length;
   let i = 0; while (i < f.length && w[i] === f[i]) i++;
   const c = (dbl ? w : f)[i];
@@ -13238,6 +13251,7 @@ const CKTZ_W = [['Zu#er', 'ck', '🍬'], ['De#e', 'ck', '🛌'], ['So#e', 'ck', 
   ['Ka#e', 'tz', '🐱'], ['Mü#e', 'tz', '🧢'], ['Bli#', 'tz', '⚡'], ['Pfü#e', 'tz', '💦'], ['Spa#', 'tz', '🐦'], ['Ne#', 'tz', '🥅'], ['Ta#e', 'tz', '🐾'], ['Hi#e', 'tz', '🥵'], ['Pla#', 'tz', '🏟️'], ['Wi#', 'tz', '😂'], ['Sa#', 'tz', '📝'],
   ['Pil#', 'z', '🍄'], ['Her#', 'z', '❤️'], ['Ker#e', 'z', '🕯️'], ['Sal#', 'z', '🧂'], ['Hol#', 'z', '🪵'], ['Bre#el', 'z', '🥨'], ['Wei#en', 'z', '🌾'], ['Schnau#e', 'z', '🐶'], ['Pflan#e', 'z', '🪴'], ['Ar#t', 'z', '🩺']];
 function genCkTz(ctx) {
+  if (d83Stufe2(ctx)) return d83Detektiv(ctx, 'cktz', CKTZ_W);
   const [g, a, e] = ctx.draw(CKTZ_W), w = g.replace('#', a), i = g.indexOf('#'), pair = a === 'ck' || a === 'k' ? ['k', 'ck'] : ['z', 'tz'];
   const before = g[i - 1], kurz = a === 'ck' || a === 'tz';
   const ex = kurz ? `${w}: Nach dem kurzen ${before} schreibt man ${a}.` : /[lnr]/.test(before) ? `${w}: Nach l, n, r, das merke ja, steht nie tz und nie ck!` : `${w}: Nach einem langen Selbstlaut oder ei, au, eu schreibt man nur ${a}.`;
@@ -13557,6 +13571,7 @@ const DEHN_W = [['Zahl', 'Zal', '🔢'], ['Uhr', 'Ur', '⏰'], ['Kuh', 'Ku', '�
   ['Stuhl', 'Stul', '🪑'], ['Kohle', 'Kole', '⚫'], ['Höhle', 'Höle', '🕳️'], ['Bahn', 'Ban', '🚆'], ['Jahr', 'Jar', '📅'], ['Möhre', 'Möre', '🥕'], ['Floh', 'Flo', '🦟'], ['Reh', 'Re', '🦌'], ['Schuh', 'Schu', '👟'], ['fahren', 'faren', '🚗'], ['wohnen', 'wonen', '🏠'],
   ['Name', 'Nahme', '📛'], ['Hose', 'Hohse', '👖'], ['Tor', 'Tohr', '🥅'], ['Brot', 'Broht', '🍞'], ['Schere', 'Schehre', '✂️'], ['Rose', 'Rohse', '🌹'], ['Hut', 'Huht', '👒'], ['Blume', 'Bluhme', '🌸'], ['Tal', 'Tahl', '🏞️'], ['Ofen', 'Ohfen', '🔥']];
 function genDehnungsH(ctx) {
+  if (d83Stufe2(ctx)) return d83Detektiv(ctx, 'dehnungsh', DEHN_W);
   const [w, f, e] = ctx.draw(DEHN_W), withH = w.length > f.length;
   return mkChoice({ prompt: 'Mit oder ohne h? Welches Wort ist richtig geschrieben?', visual: bigEmoji(e), answer: w, wrong: [f], layout: 'row2',
     explain: withH ? `${w} schreibt man mit h. Das h macht den Selbstlaut davor lang, man hört es nicht. Solche Merkwörter muss man üben.` : `${w} schreibt man ohne h, obwohl der Selbstlaut lang klingt.`, after: w, key: 'dh' + w, say: '' });
@@ -24903,19 +24918,19 @@ const GAMES = {
   grundform: { g: 'd-schreiben', t: 'Im Wörterbuch suchen', d: 'lief → laufen, Bäume → Baum', i: '📖', gen: genGrundform, kc: 'v' },
   abc: { g: 'd-schreiben', t: 'ABC-Ordnung', d: 'Wörter nach dem Alphabet', i: 'ABC', txt: 2, gen: genABC, max: 2, start: [1, 1, 2, 2] },
   trennen: { g: 'd-schreiben', t: 'Silbentrennung', d: 'Wo trennt man das Wort?', i: '✂️', gen: genTrennen },
-  iewort: { g: 'd-tricks', t: 'i oder ie?', d: 'Lang oder kurz gesprochen', i: 'ie', txt: 2, gen: genIeWort },
+  iewort: { g: 'd-tricks', t: 'i oder ie?', d: 'Lang oder kurz gesprochen', i: 'ie', txt: 2, gen: genIeWort, max: 2, start: [1, 1, 2, 2] },
   spst: { g: 'd-tricks', t: 'Sp oder St?', d: 'Ich höre „schp“, ich schreibe Sp', i: 'Sp', txt: 2, gen: genSpSt, max: 2, start: [1, 1, 2, 2], kc: '2' },
   eiie: { g: 'd-tricks', t: 'ei oder ie?', d: 'Biene, Bein, schreiben, schrieb', i: 'ei', txt: 2, gen: genEiIe, max: 2, start: [1, 1, 2, 2], kc: '2' },
-  doppelt: { g: 'd-tricks', t: 'Doppelte Mitlaute', d: 'Ball, Kamm, Puppe', i: 'll', txt: 2, gen: genDoppelt },
-  cktz: { g: 'd-tricks', t: 'ck oder k? tz oder z?', d: 'Nach kurzem Selbstlaut', i: 'ck', txt: 2, gen: genCkTz },
+  doppelt: { g: 'd-tricks', t: 'Doppelte Mitlaute', d: 'Ball, Kamm, Puppe', i: 'll', txt: 2, gen: genDoppelt, max: 2, start: [1, 1, 2, 2] },
+  cktz: { g: 'd-tricks', t: 'ck oder k? tz oder z?', d: 'Nach kurzem Selbstlaut', i: 'ck', txt: 2, gen: genCkTz, max: 2, start: [1, 1, 2, 2] },
   nachsilben: { g: 'd-tricks', t: '-ung, -heit, -keit, -nis', d: 'Nomen erkennen und groß schreiben', i: 'Aa', txt: 2, gen: genNachsilben, kc: 'v' },
-  dehnungsh: { g: 'd-tricks', t: 'Mit oder ohne h?', d: 'Zahl, Uhr, Kuh, Merkwörter', i: 'h', txt: 1, gen: genDehnungsH },
+  dehnungsh: { g: 'd-tricks', t: 'Mit oder ohne h?', d: 'Zahl, Uhr, Kuh, Merkwörter', i: 'h', txt: 1, gen: genDehnungsH, max: 2, start: [1, 1, 2, 2] },
   ssz: { g: 'd-tricks', t: 's, ss oder ß?', d: 'Kurz oder lang gesprochen', i: 'ß', txt: 1, gen: genSSZ },
-  verlaengern: { g: 'd-tricks', t: 'Verlängern', d: 'Hund mit d oder t?', i: '🔍', gen: genVerlaengern },
-  ableiten: { g: 'd-tricks', t: 'Ableiten', d: 'ä oder e? äu oder eu?', i: 'äu', txt: 2, gen: genAbleiten },
+  verlaengern: { g: 'd-tricks', t: 'Verlängern', d: 'Hund mit d oder t?', i: '🔍', gen: genVerlaengern, max: 2, start: [1, 1, 2, 2] },
+  ableiten: { g: 'd-tricks', t: 'Ableiten', d: 'ä oder e? äu oder eu?', i: 'äu', txt: 2, gen: genAbleiten, max: 2, start: [1, 1, 2, 2] },
   vorsilben: { g: 'd-tricks', t: 'ver- und vor-', d: 'Vorsilben immer mit V', i: 'V', txt: 1, gen: genVorsilben },
   wortfamilie: { g: 'd-tricks', t: 'Wortfamilien', d: 'Wörter mit gleichem Stamm', i: '🌳', gen: genWortfamilie },
-  fv: { g: 'd-tricks', t: 'F oder V?', d: 'Merkwörter mit V', i: 'V', txt: 1, gen: genFV },
+  fv: { g: 'd-tricks', t: 'F oder V?', d: 'Merkwörter mit V', i: 'V', txt: 1, gen: genFV, max: 2, start: [1, 1, 2, 2] },
   lesen: { g: 'd-lesen', t: 'Lesen & Verstehen', d: 'Kurze Texte, kluge Fragen', i: '📚', gen: genLesen },
   lesedetektiv: { g: 'd-lesen', t: 'Lese-Detektiv', d: 'Stimmt das? Steht das im Text?', i: '🕵️', gen: genLesedetektiv, kc: 'v' },
   satzbau: { g: 'd-lesen', t: 'Satz-Baumeister', d: 'Wörter in die richtige Reihenfolge', i: '🏗️', gen: genSatzbau },
@@ -25322,9 +25337,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '2.82.0';
+const APP_VERSION = '2.83.0';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "2.83.0", d: "14.11.2026", t: ["Schach-Taktik: zwei neue Übungsarten (Figur gewinnen, Spieß und Fesselung) mit 121 Aufgaben, dazu die neue Stärke „Lumi, Profi“", "Spanisch: vier neue Spiele (beschreiben, este/ese/aquel, kleine Wörter, Befehlsform)", "Deutsch: Rechtschreib-Detektiv als zweite Stufe in sieben Spielen, falsche Antworten sind schwerer zu erraten"] },
   { v: "2.82.0", d: "14.11.2026", t: ["Lumis Pixel-Abenteuer: zwei neue Welten mit zwölf Leveln (Weltraum und Zuckerland)", "Neu: Extra-Kräfte aus den Fragekisten, ein Endgegner am Ende jeder Welt, Fließbänder und Medaillen"] },
   { v: "2.81.1", d: "13.11.2026", t: ["Große Kontrolle aller Aufgaben und Antworten", "Sachunterricht: 44 doppelte Fragen durch neue ersetzt", "Fehler und mehrdeutige Aufgaben behoben, Grammatik und Satzzeichen geglättet"] },
   { v: "2.81.0", d: "13.11.2026", t: ["Neues Design: Inselkarte der Lernwelten", "Vier neue Lern-Abenteuer: Schatzinsel, Bücherburg, London, Forscherreise", "Spielhalle: Sternenreise und Polarlicht-Ritt", "Party: Knick-Monster, Zusammen bis 20, Klatsch-Echo", "Viele neue Aufgaben in allen Fächern"] },
@@ -79360,6 +79376,7 @@ function sxSuche(S, tiefe, a, b, plies) {
   if (e) return e.sieger === 'w' ? 99000 + tiefe : e.sieger === 's' ? -99000 - tiefe : 0;
   if (tiefe === 0) return sxWert(S);
   const ms = sxLegal(S);
+  if (tiefe > 1) ms.sort((p, q) => (S.b[q.t] !== '') - (S.b[p.t] !== ''));
   if (S.w) { let best = -1e9; for (const m of ms) { best = Math.max(best, sxSuche(sxMake(S, m), tiefe - 1, a, b, plies + 1)); a = Math.max(a, best); if (a >= b) break; } return best; }
   let best = 1e9; for (const m of ms) { best = Math.min(best, sxSuche(sxMake(S, m), tiefe - 1, a, b, plies + 1)); b = Math.min(b, best); if (a >= b) break; } return best;
 }
@@ -79367,7 +79384,10 @@ function sxBester(S, tiefe, plies, patzer) {
   const ms = R.shuffle(sxLegal(S)); if (!ms.length) return null;
   if (patzer && R.chance(patzer)) return ms[0];
   let best = null, bw = 0;
-  for (const m of ms) { const w = sxSuche(sxMake(S, m), tiefe - 1, -1e9, 1e9, plies + 1) * (S.w ? 1 : -1); if (!best || w > bw) { best = m; bw = w; } }
+  for (const m of ms) {
+    const roh = S.w ? sxSuche(sxMake(S, m), tiefe - 1, best ? bw : -1e9, 1e9, plies + 1) : sxSuche(sxMake(S, m), tiefe - 1, -1e9, best ? -bw : 1e9, plies + 1), w = roh * (S.w ? 1 : -1);
+    if (!best || w > bw) { best = m; bw = w; }
+  }
   return best;
 }
 
@@ -79404,7 +79424,7 @@ function sxDraw() {
       <main class="wrap sx-wahl"><section class="card"><h2>Was möchtest du spielen?</h2>
         <div class="sx-arten">${Object.keys(SX_ART).map(k => `<button class="sx-art ${SX.v === k ? 'sel' : ''}" data-act="sxart" data-v="${k}" aria-pressed="${SX.v === k}"><span class="sx-fig" aria-hidden="true">${SX_ART[k][1]}︎</span><b>${SX_ART[k][0]}</b><small>${SX_ART[k][2]}</small></button>`).join('')}</div>
         <h2 class="ka-h2">Gegen wen?</h2>
-        <div class="seg ka-seg">${[['locker', '🐧 Lumi, locker'], ['stark', '🐧 Lumi, stark'], ['zwei', '👫 Zu zweit']].map(([k, t]) => `<button class="${SX.geg === k ? 'sel' : ''}" data-act="sxgeg" data-g="${k}">${t}</button>`).join('')}</div>
+        <div class="seg ka-seg">${[['locker', '🐧 Lumi, locker'], ['stark', '🐧 Lumi, stark'], ['profi', '🐧 Lumi, Profi'], ['zwei', '👫 Zu zweit']].map(([k, t]) => `<button class="${SX.geg === k ? 'sel' : ''}" data-act="sxgeg" data-g="${k}">${t}</button>`).join('')}</div>
         <div class="acts"><button class="btn" data-act="sxlos">Los geht's</button></div>
         <p class="muted">Tippe eine Figur an: Die Punkte zeigen, wohin sie ziehen darf. Weiß beginnt. ${S.sx && S.sx.n ? `Bisher ${plural(S.sx.n, 'Partie', 'Partien')} gegen Lumi, davon ${S.sx.sieg || 0} gewonnen.` : ''}</p></section></main></div>`, 'meine');
   }
@@ -79437,7 +79457,8 @@ function sxLumi() {
   const mein = SX;
   SX.timer = setTimeout(() => {
     if (SX !== mein || !SX.busy) return;
-    const stark = SX.geg === 'stark', m = sxBester(SX.st, stark ? (SX.v === 'voll' ? 2 : 3) : 1, SX.hist.length, stark ? 0 : .3);
+    const stark = SX.geg === 'stark', profi = SX.geg === 'profi';
+    const m = sxBester(SX.st, profi ? (SX.v === 'voll' ? 3 : SX.v === 'mini' ? 5 : 6) : stark ? (SX.v === 'voll' ? 2 : 3) : 1, SX.hist.length, stark || profi ? 0 : .3);
     SX.busy = 0; if (m) { const von = sxFeldName(SX.st, m.f), nach = sxFeldName(SX.st, m.t), fig = SX_NAME[SX.st.b[m.f].toLowerCase()]; sxZug(m); if (!SX.msg) SX.msg = `Lumi zieht: ${fig} von ${von} nach ${nach}.`; }
     sxDraw();
   }, typeof window !== 'undefined' && window.LW_FX_AUS ? 30 : 650);
@@ -79482,6 +79503,7 @@ GAMES.schachlumi = { id: 'schachlumi', w: 'meine', g: 'n-raetsel', t: 'Schach ge
 
 
 
+
 function stGabelZiele(S2, sq) {
   const n = S2.n, fig = S2.b[sq], wert = SX_WERT[fig.toLowerCase()], ziele = [];
   if (sxAtt(S2, sq, false)) return [];
@@ -79500,6 +79522,29 @@ const stMatt1 = S => sxLegal(S).filter(m => stIstMatt(sxMake(S, m)));
 function stMatt2(S) {
   return sxLegal(S).filter(m => { const A = sxMake(S, m), antw = sxLegal(A); if (!antw.length) return false; return antw.every(r => stMatt1(sxMake(A, r)).length > 0); });
 }
+
+function stGewinn(S0, m) {
+  const z = S0.b[m.t]; if (z === '') return 0;
+  const A = sxMake(S0, m);
+  return SX_WERT[z.toLowerCase()] - (sxAtt(A, m.t, false) ? SX_WERT[A.b[m.t].toLowerCase()] : 0);
+}
+
+function stSpiess(S0, m) {
+  const t = S0.b[m.f].toLowerCase(); if (!'brq'.includes(t) || S0.b[m.t] !== '') return null;
+  const A = sxMake(S0, m), n = A.n; if (sxAtt(A, m.t, false)) return null;
+  const dia = [[1, 1], [1, -1], [-1, 1], [-1, -1]], ger = [[1, 0], [-1, 0], [0, 1], [0, -1]], dirs = t === 'b' ? dia : t === 'r' ? ger : dia.concat(ger);
+  for (const [dx, dy] of dirs) {
+    let x = (m.t % n) + dx, y = Math.floor(m.t / n) + dy, a = -1;
+    for (; x >= 0 && y >= 0 && x < n && y < n; x += dx, y += dy) {
+      const i = y * n + x, p = A.b[i]; if (p === '') continue;
+      if (sxW(p) || p === 'p') break;
+      if (a < 0) { a = i; continue; }
+      return { a, b: i };
+    }
+  }
+  return null;
+}
+const stDer = t => (t === 'q' ? 'die ' : 'der ') + SX_NAME[t], stDen = t => (t === 'q' ? 'die ' : 'den ') + SX_NAME[t], stGross = s => s.charAt(0).toUpperCase() + s.slice(1);
 function stFenOut(S) {
   let s = ''; for (let y = 0; y < 8; y++) { let leer = 0; for (let x = 0; x < 8; x++) { const p = S.b[y * 8 + x]; if (p === '') leer++; else { if (leer) { s += leer; leer = 0; } s += p; } } if (leer) s += leer; if (y < 7) s += '/'; }
   return s + ' w - -';
@@ -79553,11 +79598,52 @@ const ST_DATA = {
     '5k2/3Q4/7p/8/4BK2/8/8/8', '1k6/2R5/8/8/8/8/3R4/3K4', '8/4K3/7k/8/8/8/8/6Q1', '8/8/8/7Q/3K2N1/2p5/8/6k1',
     'k7/8/8/K7/2Q5/8/8/8', 'k7/4K3/8/1Q2p3/B7/8/8/8', '8/2p5/k7/8/1Q6/3K4/8/7B', '8/8/8/2BQ4/k2p4/3K4/8/8',
     '8/8/8/3K4/6RQ/8/8/5k2'
+  ],
+
+  gewinn: [
+    '1k6/8/8/p7/1b2R3/6p1/2K1n3/8', '8/5p2/2K5/r2nR3/8/8/3B4/7k', '8/1R6/2p5/2k3K1/1n6/8/1r6/B7', '3K4/8/5n1k/4Q1p1/2r1b3/8/5P2/8',
+    'K7/2ppk3/8/8/8/5n2/5Rb1/8', '8/r7/8/8/1k6/1p6/7K/b5Q1', '3k4/8/6r1/p4Kb1/8/7N/8/8', '8/5K2/8/8/k7/2P1p3/5nQb/1r6',
+    '5Rb1/8/P6p/8/8/8/2K2nk1/8', '8/3p4/5r2/6Q1/K7/1P4n1/7k/7b', '8/8/k3pN2/3b3r/8/K1p1B3/8/8', '8/8/8/4nR2/7p/1pN2bk1/8/4K3',
+    '3k4/p7/1n4Q1/1K2p3/8/8/2r5/8', 'k7/7p/8/1n1R4/3b1K1p/8/8/8', '8/8/8/k3p3/8/5p2/6n1/b5RK', '8/7p/r6k/1K6/8/7B/8/n4R2',
+    '8/8/8/8/8/kpN5/b5K1/3r4', '5Q1b/8/8/1P6/8/2p1kn2/4r3/7K', '8/4p3/3p4/K7/2B5/3r4/n7/k7', '5k2/7K/3r4/3bQ3/2p5/8/8/8',
+    '1b5K/8/2N5/3p1k2/8/1p6/7n/7R', '3K3k/8/5p2/4bR1n/8/7P/8/8', '8/8/8/7p/2r3k1/5n2/4B1K1/8', '8/NR6/7p/5K2/3p1b2/8/2k5/1n6',
+    'k7/p2n4/K7/1B2p3/8/3r4/8/8', '8/8/8/2N5/8/1r1bK2p/7k/8', '6R1/3r4/5K1p/5B2/8/3n4/5k2/8', '5K2/2k5/4p3/5n2/8/8/r7/1B6',
+    '5K2/8/8/kp6/4N3/2r3bp/8/8', '8/p7/4r2k/5Q2/5n2/6p1/8/7K', '8/4K3/4P3/p7/4br2/1n2Q3/1k6/8', '8/4r3/3B4/p2pn3/8/8/8/2K1k3',
+    '4K3/2B5/7k/8/p7/2Rn2r1/8/8', '8/8/8/1b3r2/3N1p2/5K2/8/k7', '8/3p4/7k/6n1/5p2/8/6Rb/5K2', '1K6/8/7p/8/2n5/3B3k/2r5/8',
+    '8/2N4p/r3b3/4K3/pk6/8/8/8', '8/8/8/4pr2/8/7B/5k2/K4n2', '8/1n5r/8/8/R3Bp2/8/2K5/4k3', '8/6k1/3p3p/8/8/5b2/5R1n/2K5',
+    '4B3/k5p1/2r3n1/8/8/8/8/5K2', '6K1/p7/8/8/5p2/2R3n1/k1b5/8', '8/p7/k7/2n1R1pK/8/4b3/8/8', '6k1/5b2/K7/6N1/2p5/7r/8/8',
+    '3kb2Q/6n1/4r3/6P1/8/p7/8/K7', '4nR2/1p3b2/8/8/5k2/7P/8/6K1', '4B3/8/4p3/1nk4r/4K3/p7/8/8', '2K5/1p4n1/8/8/8/2P5/8/krb3Q1',
+    'k2n4/4Kbp1/8/8/1p6/5R2/8/8', '8/3r4/2K2k2/8/5p2/3b4/1N6/8', '8/5Q2/8/2r3p1/1K4p1/4kn2/8/8', '8/3R2n1/P7/5p2/2K5/2b5/8/5k2',
+    '2r5/8/K1p5/n2b4/4k3/8/7P/3Q4', 'k1b1r3/1p6/3N4/3K4/8/8/8/8', '3k4/8/2P5/2p2K2/8/1Rn5/1b6/8', '2K5/8/8/6p1/4Q2b/7k/8/1r6',
+    '8/8/3K4/6p1/2p5/5n1Q/1k6/5r2', '1k6/8/2p5/8/1p6/4N3/3K4/3b1r2', '2r5/1Q2n3/8/4p1k1/8/4p3/8/4K3', '8/8/p7/8/b2Rn3/k4p1K/8/8'
+  ],
+  spiess: [
+    '8/8/4KQ2/8/4k3/6p1/2b5/7r', '8/K7/1B6/8/8/2r4n/1k6/8', 'R7/7b/2n3p1/8/8/8/3K4/7k', '2qk4/K7/8/8/4p3/8/5R2/7b',
+    '8/7B/K7/4b3/8/8/6r1/7k', '8/6n1/8/5k1q/3K4/8/2R5/8', '7R/8/8/8/K4bn1/2p5/8/4k3', '4R3/n7/8/5P2/3k4/K7/8/3q4',
+    '7k/3K4/5r2/2B5/8/8/8/5n2', '8/6K1/1Q6/3k1p2/r7/8/8/3b4', '8/5Rp1/8/8/3b4/5K2/8/3k3n', '8/4p3/8/7b/7n/R7/8/2k2K2',
+    'k7/2K5/5p2/8/8/8/1b5r/1Q6', '3n2k1/8/8/8/1pb5/8/3K4/R7', '1q5r/8/5k2/8/8/8/K2B4/8', '7n/7r/8/8/1K2k3/8/8/6Q1',
+    '6K1/p3R3/8/8/k2b4/8/8/7n', '3K4/Q7/6r1/8/8/3k4/8/1n6', '3KR3/8/8/8/6k1/6q1/7r/8', '8/8/4k2K/4r3/6r1/p7/8/5B2',
+    '1K3R2/8/7k/r7/8/8/7n/8', '3r4/2k1K3/8/8/8/2B1n3/8/8', '8/8/q7/2n3K1/k7/8/8/4R3', '3q4/4r3/8/8/8/1K3p2/RB5k/8',
+    '8/7n/8/8/2p5/6R1/1k2b3/7K', '6K1/8/8/5R2/7B/1k1r1p2/8/1q6', '5K2/p7/3Q4/8/8/2k4r/3b4/8', '1B6/8/8/8/8/p3r3/5r2/K2k4',
+    'n7/8/8/6B1/3k4/8/1r6/7K', '6R1/5p2/1b6/8/8/7K/8/1kn5', '4Q3/8/8/2k5/8/5p2/K7/2r3b1', '8/8/8/6R1/5n2/5b1p/3K4/k7',
+    '5n2/8/8/5p2/1R6/3b3k/8/7K', 'r7/8/3p3R/2q2k2/8/1K6/8/3B4', '2K5/6k1/5r2/2B5/8/8/6n1/8', '8/p1k5/8/8/2b2n2/K7/8/R7',
+    'Q7/8/4r3/2n5/6k1/8/6K1/8', '7q/4n3/8/8/K6k/8/5R2/8', '4R3/8/8/8/1k6/4PK2/nq6/8', '6r1/r7/1k6/4B3/5Kp1/8/8/8',
+    '8/1B6/4k3/p7/7r/7r/8/K7', '8/8/B7/7k/7n/5r2/K7/8', '4q3/r7/1k3B1p/8/8/8/1P4K1/8', '8/7B/4r3/3k4/7K/8/6b1/8',
+    '6kq/8/8/4n3/R7/8/8/2K5', 'k7/1r2p1r1/8/8/B7/8/K7/8', '8/8/1B6/7b/8/8/1k1K4/r7', '8/4B3/8/8/2b2k2/6r1/3K4/8',
+    '8/8/5B2/1K4Pp/8/6k1/q6r/8', '8/8/5Q2/3k4/4r3/1K6/8/7n', '8/8/8/3B4/2p3r1/7r/2K1k3/8', 'k7/6R1/8/8/2K5/p7/7b/7n',
+    '8/8/8/2b5/K7/3r4/6B1/1k6', '8/8/k3p3/b6Q/K7/3r4/8/8', '8/k7/6bn/2K5/8/1p6/3R4/8', '7K/4kq2/8/5r2/8/2R5/8/8',
+    '8/8/6k1/8/1K6/3r4/B4n2/8', '8/5K2/8/1B6/4rp2/2k5/6r1/8', '8/4Q3/2k5/4K3/n7/2r5/8/8', '3q4/4r2p/8/2R5/4k3/8/8/2B1K3',
+    '2B5/8/7K/4n3/2k5/8/8/5r2'
   ]
 };
 
 
-const ST_ART = { gabel: ['Gabeln', '🍴', 'Finde den Zug, der zwei Figuren gleichzeitig angreift.'], matt1: ['Matt in 1', '♚', 'Ein einziger Zug setzt den schwarzen König matt.'], matt2: ['Matt in 2', '♛', 'Zwei Züge bis zum Matt. Schwarz wehrt sich dazwischen.'] };
+const ST_ART = { gabel: ['Gabeln', '🍴', 'Finde den Zug, der zwei Figuren gleichzeitig angreift.'], matt1: ['Matt in 1', '♚', 'Ein einziger Zug setzt den schwarzen König matt.'], gewinn: ['Figur gewinnen', '🎯', 'Eine schwarze Figur ist nicht gedeckt. Finde sie und schlage sie.'], spiess: ['Spieß und Fesselung', '📌', 'Zwei Figuren stehen auf einer Linie. Greife beide auf einmal an.'], matt2: ['Matt in 2', '♛', 'Zwei Züge bis zum Matt. Schwarz wehrt sich dazwischen.'] };
+const ST_HILFE = { gabel: 'Eine Gabel ist ein Zug, nach dem eine Figur zwei gegnerische Figuren gleichzeitig angreift und selbst nicht geschlagen werden kann.',
+  matt1: 'Matt heißt: Der König steht im Schach, kann nirgends mehr hin und niemand kann ihm helfen.',
+  gewinn: 'Gedeckt heißt: Eine andere Figur passt auf. Schlägst du eine gedeckte Figur, wird deine Figur danach selbst geschlagen. Schau also vor jedem Schlagen: Passt jemand auf?',
+  spiess: 'Läufer, Turm und Dame schauen weit. Stehen zwei Figuren auf einer Linie hintereinander, kann die vordere oft nicht weg, ohne dass die hintere verloren geht. Muss die wertvollere Figur vorn wegziehen, heißt das Spieß. Darf die vordere nicht weg, weil dahinter etwas Wertvolles steht, heißt das Fesselung.',
+  matt2: 'Dein erster Zug nimmt dem König alle Auswege. Egal, was Schwarz dann zieht: Dein zweiter Zug setzt matt.' };
 const ST_N = 5;
 let ST = null;
 function stStart(g0) {
@@ -79575,7 +79661,7 @@ function stLaden() {
   Object.assign(ST, { st, st0: st, sel: -1, ziele: [], last: null, mark: [], schritt: 1, fehler: 0, fertig: 0, geloest: 0, busy: 0, msg: '' });
   stDraw();
 }
-const stAuftrag = () => ST.art === 'gabel' ? 'Weiß ist am Zug. Finde die Gabel: Greife mit einem Zug zwei Figuren an.' : ST.art === 'matt1' ? 'Weiß ist am Zug. Setze den schwarzen König mit einem Zug matt.' : ST.schritt === 1 ? 'Weiß ist am Zug. Matt in 2: Finde den ersten Zug.' : 'Jetzt der zweite Zug: Setze matt!';
+const stAuftrag = () => ST.art === 'gabel' ? 'Weiß ist am Zug. Finde die Gabel: Greife mit einem Zug zwei Figuren an.' : ST.art === 'gewinn' ? 'Weiß ist am Zug. Eine schwarze Figur ist nicht gedeckt. Schlage sie, ohne selbst etwas zu verlieren.' : ST.art === 'spiess' ? 'Weiß ist am Zug. Zwei schwarze Figuren stehen auf einer Linie. Greife sie mit Läufer, Turm oder Dame so an, dass eine verloren geht.' : ST.art === 'matt1' ? 'Weiß ist am Zug. Setze den schwarzen König mit einem Zug matt.' : ST.schritt === 1 ? 'Weiß ist am Zug. Matt in 2: Finde den ersten Zug.' : 'Jetzt der zweite Zug: Setze matt!';
 function stDraw() {
   if (!ST) return;
   if (ST.phase === 'wahl') {
@@ -79583,7 +79669,7 @@ function stDraw() {
       <main class="wrap sx-wahl"><section class="card"><h2>Was möchtest du üben?</h2>
         <div class="sx-arten">${Object.keys(ST_ART).map(k => `<button class="sx-art ${ST.art === k ? 'sel' : ''}" data-act="stwahl" data-v="${k}" aria-pressed="${ST.art === k}"><span class="sx-fig" aria-hidden="true">${ST_ART[k][1]}︎</span><b>${ST_ART[k][0]}</b><small>${ST_ART[k][2]}</small></button>`).join('')}</div>
         <div class="acts"><button class="btn" data-act="stlos">Los geht's</button></div>
-        <p class="muted">Eine Runde hat ${ST_N} Aufgaben. Du spielst immer Weiß. Eine Gabel ist ein Zug, nach dem eine Figur zwei gegnerische Figuren gleichzeitig angreift und selbst nicht geschlagen werden kann.</p></section></main></div>`, 'meine');
+        <p class="muted">Eine Runde hat ${ST_N} Aufgaben. Du spielst immer Weiß. ${ST_HILFE[ST.art]}</p></section></main></div>`, 'meine');
   }
   const st = ST.st, n = 8, schachFeld = sxImSchach(st, st.w) ? sxKoenig(st, st.w) : -1; let h = '';
   for (let i = 0; i < 64; i++) {
@@ -79607,6 +79693,22 @@ function stZiehen(m) {
     const z = stGabel(vor, m); if (!z.length) return stFalsch('Das ist noch keine Gabel. Suche einen Zug, der zwei Figuren gleichzeitig angreift und bei dem deine Figur sicher steht.');
     ST.st = nach; ST.last = m; ST.sel = -1; ST.ziele = []; ST.mark = z; ST.msg = `Gabel! ${SX_NAME[nach.b[m.t].toLowerCase()]} greift ${stNamen(nach, z)} gleichzeitig an. Eine der Figuren geht verloren.`; return stFertig(true);
   }
+  if (ST.art === 'gewinn') {
+    const ziel = vor.b[m.t], gw = stGewinn(vor, m);
+    if (ziel === '') return stFalsch('Hier kannst du eine Figur schlagen, auf die niemand aufpasst. Suche sie!');
+    if (gw <= 0) return stFalsch(`Vorsicht: ${stGross(stDer(ziel))} ist gedeckt. Deine Figur würde danach selbst geschlagen.`);
+    const sicher = !sxAtt(nach, m.t, false);
+    ST.st = nach; ST.last = m; ST.sel = -1; ST.ziele = []; ST.mark = [m.t]; ST.msg = sicher ? `Gewonnen! Auf ${stDen(ziel)} hat niemand aufgepasst. Deine Figur steht jetzt sicher.` : `Gewonnen! ${stGross(stDer(ziel))} war mehr wert als deine Figur. Der Tausch lohnt sich.`; return stFertig(true);
+  }
+  if (ST.art === 'spiess') {
+    const z = stSpiess(vor, m); if (!z) return stFalsch(vor.b[m.t] !== '' ? 'Schlagen hilft hier nicht. Suche einen Zug, nach dem zwei schwarze Figuren auf einer Linie vor deiner Figur stehen.' : 'Das ist es noch nicht. Stelle Läufer, Turm oder Dame so, dass zwei schwarze Figuren auf einer Linie hintereinander stehen, und achte darauf, dass deine Figur sicher steht.');
+    const a = nach.b[z.a], b = nach.b[z.b], va = a === 'k' ? 99 : SX_WERT[a], vb = b === 'k' ? 99 : SX_WERT[b];
+    ST.st = nach; ST.last = m; ST.sel = -1; ST.ziele = []; ST.mark = [z.a, z.b];
+    ST.msg = a === 'k' ? `Spieß! Der König steht im Schach und muss wegziehen. Danach kannst du ${stDen(b)} dahinter schlagen.`
+      : b === 'k' ? `Fesselung! ${stGross(stDer(a))} darf nicht wegziehen, weil sonst der König im Schach stünde. So geht ${a === 'q' ? 'sie' : 'er'} verloren.`
+      : va >= vb ? `Spieß! Zieht ${stDer(a)} weg, schlägst du ${stDen(b)} dahinter.` : `Fesselung! Zieht ${stDer(a)} weg, verliert Schwarz ${stDen(b)} dahinter.`;
+    return stFertig(true);
+  }
   if (ST.art === 'matt1' || ST.schritt === 2) {
     if (!stIstMatt(nach)) return stFalsch(sxImSchach(nach, false) ? 'Das ist Schach, aber noch kein Matt. Der König kann entkommen oder die Figur wird geschlagen.' : 'Das ist kein Matt. Der König muss im Schach stehen und darf nicht mehr entkommen können.');
     ST.st = nach; ST.last = m; ST.sel = -1; ST.ziele = []; ST.msg = 'Schachmatt! Der König steht im Schach und kann nirgends mehr hin.'; return stFertig(true);
@@ -79619,7 +79721,7 @@ function stZiehen(m) {
   ST.timer = setTimeout(() => { if (ST !== mein) return; const r = R.pick(antw); ST.st = sxMake(nach, r); ST.last = r; ST.st1 = ST.st; ST.schritt = 2; ST.busy = 0; ST.msg = `Schwarz zieht: ${SX_NAME[nach.b[r.f].toLowerCase()]} von ${sxFeldName(nach, r.f)} nach ${sxFeldName(nach, r.t)}.`; stDraw(); }, typeof window !== 'undefined' && window.LW_FX_AUS ? 30 : 800);
 }
 function stLoesung() {
-  const S0 = ST.st, zug = ST.art === 'gabel' ? sxLegal(S0).find(m => stGabel(S0, m).length) : ST.art === 'matt1' || ST.schritt === 2 ? stMatt1(S0)[0] : stMatt2(S0)[0];
+  const S0 = ST.st, zug = ST.art === 'gabel' ? sxLegal(S0).find(m => stGabel(S0, m).length) : ST.art === 'gewinn' ? sxLegal(S0).find(m => stGewinn(S0, m) > 0) : ST.art === 'spiess' ? sxLegal(S0).find(m => stSpiess(S0, m)) : ST.art === 'matt1' || ST.schritt === 2 ? stMatt1(S0)[0] : stMatt2(S0)[0];
   if (!zug) return;
   ST.zeig = 1; ST.sel = -1; ST.ziele = []; ST.mark = [zug.f, zug.t];
   ST.msg = `Lösung: ${SX_NAME[S0.b[zug.f].toLowerCase()]} von ${sxFeldName(S0, zug.f)} nach ${sxFeldName(S0, zug.t)}.` + (ST.art === 'matt2' && ST.schritt === 1 ? ' Danach setzt Weiß im nächsten Zug matt.' : '');
@@ -79643,7 +79745,7 @@ Object.assign(ACT, {
     customFinish(ST.ok, ST.bad, ST.bad === 0 && ST.fehlerGes <= 1 ? 3 : ST.ok >= 3 ? 2 : 1);
   }
 });
-GAMES.schachtaktik = { id: 'schachtaktik', w: 'meine', g: 'n-raetsel', t: 'Schach-Taktik', d: 'Gabeln finden, Matt in 1 und Matt in 2', i: '♛', type: 'custom', run: g0 => stStart(g0) };
+GAMES.schachtaktik = { id: 'schachtaktik', w: 'meine', g: 'n-raetsel', t: 'Schach-Taktik', d: 'Gabeln, Figuren gewinnen, Spieß und Matt', i: '♛', type: 'custom', run: g0 => stStart(g0) };
 
 /*@@src fun270.js@@*/
 
@@ -82733,6 +82835,239 @@ if (typeof EK !== 'undefined') Object.assign(EK, {
   esconversa: { t: 'Conversaciones', e: ['Lies oder hör das ganze Gespräch.', 'Was hat die andere Person gerade gefragt? Deine Antwort muss genau dazu passen.', 'Fremde Erwachsene sprichst du höflich an: *Perdone*, *¿Me avisa?*'], b: ['¿A qué hora quedamos? A las cinco.'] },
   esescribe: { t: 'Escribe tú', e: ['*B* und *v* klingen gleich, *ll* und *y* auch. Das *h* hört man nicht.', 'Fragen beginnen mit *¿*, Ausrufe mit *¡*.', 'Mit *y*, *pero*, *porque*, *cuando* und *después* verbindest du Sätze.'], b: ['¿Quieres jugar conmigo? · ¡Qué bonito!'] }
 });
+
+/*@@src spanisch283.js@@*/
+
+
+const s9Typ = (id, typen) => typen[(s8Rund(id) ? G.i : R.int(0, 99)) % typen.length];
+const s9Wahl = (r, pre, frage) => mkChoice({ prompt: frage || '¿Qué palabra falta?', visual: s8Satz(r[1]), answer: r[2], wrong: r[3], layout: [r[2]].concat(r[3]).some(x => x.length > 12) ? 'col' : r[3].length === 2 ? 'row3' : 'grid2', key: pre + r[1],
+  explain: r[4], after: r[1].replace('⟪⟫', r[2]), afterLang: ES });
+
+
+const S9_DESC = [
+  ['Es muy grande y gris. Tiene una trompa larga y las orejas enormes.', 'el elefante', ['el ratón', 'la jirafa', 'el caballo'], 'Groß, grau, langer Rüssel und riesige Ohren: der Elefant.'],
+  ['Es pequeño, blanco y negro. No puede volar, pero nada muy bien.', 'el pingüino', ['el oso polar', 'la gaviota', 'el delfín'], 'Klein, schwarz und weiß, kann nicht fliegen, schwimmt aber sehr gut: der Pinguin.'],
+  ['Es alta y amarilla con manchas. Tiene el cuello muy largo.', 'la jirafa', ['la cebra', 'el león', 'el camello'], 'Groß, gelb mit Flecken und sehr langem Hals: die Giraffe.'],
+  ['Es redonda y de color naranja. Tiene mucho zumo y vitamina C.', 'la naranja', ['la zanahoria', 'el plátano', 'la manzana'], 'Rund, orange, viel Saft: die Orange. Die Karotte ist auch orange, aber nicht rund.'],
+  ['Es largo y amarillo. A los monos les gusta mucho.', 'el plátano', ['el limón', 'el maíz', 'el queso'], 'Lang und gelb, Affen mögen sie sehr: die Banane.'],
+  ['Es una persona mayor con el pelo blanco. Es la madre de mi madre.', 'mi abuela', ['mi tía', 'mi prima', 'mi hermana'], 'Die Mutter meiner Mutter ist meine Großmutter: mi abuela.'],
+  ['Es rápido y tiene cuatro ruedas. Papá lo conduce.', 'el coche', ['la bici', 'el barco', 'el tren'], 'Schnell, vier Räder, Papa fährt es: das Auto. Das Fahrrad hat nur zwei Räder.'],
+  ['Es frío, dulce y de muchos sabores. En verano se derrite rápido.', 'el helado', ['la sopa', 'el pan', 'el chocolate caliente'], 'Kalt, süß, viele Sorten und schmilzt im Sommer schnell: das Eis.'],
+  ['Es muy alto y tiene nieve arriba. Está en Tenerife.', 'el Teide', ['el mar', 'el desierto', 'el río'], 'Sehr hoch, oben Schnee, auf Teneriffa: der Teide.'],
+  ['Es pequeña, tiene ocho patas y teje una telaraña.', 'la araña', ['la hormiga', 'la abeja', 'la mariposa'], 'Klein, acht Beine, baut ein Netz: die Spinne. Insekten haben nur sechs Beine.'],
+  ['Es verde y salta mucho. Vive cerca del agua y dice «croac».', 'la rana', ['el pez', 'el pato', 'la tortuga'], 'Grün, springt viel, lebt am Wasser: der Frosch.'],
+  ['Es blanda y cómoda. La usas para dormir y pones la cabeza encima.', 'la almohada', ['la silla', 'la mesa', 'la lámpara'], 'Weich und bequem, du legst den Kopf darauf: das Kopfkissen.']
+];
+const S9_ADJ = [
+  [1, 'Mi hermano es alto, pero mi hermana es ⟪⟫.', 'baja', ['bajo', 'alta'], 'Das Gegenteil von alto ist bajo. Zu „hermana“ passt die Form mit -a: baja.'],
+  [1, 'El elefante es grande y el ratón es ⟪⟫.', 'pequeño', ['pequeña', 'pequeños'], 'Grande ↔ pequeño. „El ratón“ ist männlich, also pequeño.'],
+  [1, 'La tortuga es lenta, pero la liebre es ⟪⟫.', 'rápida', ['rápido', 'lenta'], 'Lenta ↔ rápida. „La liebre“ ist weiblich, also rápida.'],
+  [1, 'Mi mochila es nueva, pero mis zapatos son ⟪⟫.', 'viejos', ['viejo', 'nuevas'], 'Nueva ↔ vieja. „Zapatos“ ist männlich und Mehrzahl: viejos.'],
+  [1, 'En verano hace calor y en invierno hace ⟪⟫.', 'frío', ['fría', 'fríos'], 'Calor ↔ frío. Man sagt: hace frío.'],
+  [1, 'Ana tiene el pelo largo y Luis tiene el pelo ⟪⟫.', 'corto', ['corta', 'bajo'], 'Largo ↔ corto. Für Haare sagt man corto, nicht bajo.'],
+  [1, 'Las manos están sucias. Después de lavarlas están ⟪⟫.', 'limpias', ['limpios', 'limpia'], 'Sucias ↔ limpias. „Las manos“ ist weiblich und Mehrzahl.'],
+  [2, 'Mi abuelo tiene los ojos ⟪⟫ y lleva gafas.', 'azules', ['azul', 'azulas'], 'Azul hat keine eigene weibliche Form. In der Mehrzahl kommt -es dazu: ojos azules.'],
+  [2, 'Carla es muy ⟪⟫: siempre ayuda a sus amigos.', 'amable', ['amabla', 'tímida'], 'Amable (freundlich) endet auf -e und bleibt für Mädchen und Jungen gleich.'],
+  [2, 'Pablo no habla mucho en clase. Es un poco ⟪⟫.', 'tímido', ['hablador', 'tímida'], 'Wer wenig spricht, ist tímido (schüchtern). Hablador heißt gesprächig.'],
+  [2, 'Mis primas son muy ⟪⟫: cuentan chistes todo el día.', 'divertidas', ['divertidos', 'aburridas'], 'Wer Witze erzählt, ist divertido. „Mis primas“: weiblich und Mehrzahl, also divertidas.'],
+  [2, 'Este ejercicio no es difícil, es muy ⟪⟫.', 'fácil', ['fácila', 'duro'], 'Difícil ↔ fácil. Fácil bleibt für männlich und weiblich gleich.'],
+  [2, 'La sopa está demasiado ⟪⟫. ¡Cuidado, quema!', 'caliente', ['calienta', 'fría'], 'Caliente (heiß) endet auf -e und bleibt gleich: la sopa caliente, el té caliente.'],
+  [2, 'Lumi es un pingüino ⟪⟫: no tiene miedo de nada.', 'valiente', ['valienta', 'miedoso'], 'Valiente heißt mutig und bleibt für alle gleich. Miedoso ist das Gegenteil.']
+];
+const S9_CONTR = [['alto', 'bajo'], ['largo', 'corto'], ['rápido', 'lento'], ['nuevo', 'viejo'], ['limpio', 'sucio'], ['fuerte', 'débil'], ['fácil', 'difícil'], ['alegre', 'triste'], ['lleno', 'vacío'], ['caro', 'barato'], ['abierto', 'cerrado'], ['divertido', 'aburrido']];
+function genEsComoEs(ctx) {
+  const lv = (ctx && ctx.lv) || 1, typ = s9Typ('escomoes', lv === 1 ? ['desc', 'adj', 'par', 'adj'] : ['adj', 'desc', 'adj', 'par']);
+  if (typ === 'desc') {
+    const r = ctx.draw(S9_DESC);
+    return mkChoice({ prompt: '¿Qué es? Lee la descripción.', visual: s8Satz(r[0]), answer: r[1], wrong: r[2], layout: 'grid2', key: 's9d' + r[1], explain: r[3], say: r[0], sayLang: ES, after: r[1], afterLang: ES });
+  }
+  if (typ === 'par') {
+    const p = R.sample(S9_CONTR, lv === 1 ? 4 : 5);
+    return mkMatch({ prompt: 'Une los contrarios.', left: p.map(x => x[0]), right: p.map(x => x[1]), lang: ES, key: 's9p' + p.map(x => x[0]).join(), explain: 'Gegenteile: ' + p.map(x => x[0] + ' ↔ ' + x[1]).join(', ') + '.' });
+  }
+  return s9Wahl(ctx.draw(S9_ADJ.filter(r => r[0] <= lv)), 's9a');
+}
+
+
+const S9_DEMO = [
+  [1, '⟪⟫ libro que tengo en la mano es de aventuras.', 'Este', ['Esta', 'Estos'], '„El libro“ ist männlich und Einzahl: este libro.'],
+  [1, 'Me gusta mucho ⟪⟫ camiseta que llevo hoy.', 'esta', ['este', 'estas'], '„La camiseta“ ist weiblich und Einzahl: esta camiseta.'],
+  [1, '⟪⟫ zapatos son nuevos. Los llevo puestos.', 'Estos', ['Estas', 'Este'], '„Los zapatos“ ist männlich und Mehrzahl: estos zapatos.'],
+  [1, '¿Puedo comer ⟪⟫ galletas que están aquí?', 'estas', ['estos', 'esta'], '„Las galletas“ ist weiblich und Mehrzahl: estas galletas.'],
+  [1, '⟪⟫ mañana tengo clase de español.', 'Esta', ['Este', 'Estas'], '„La mañana“ ist weiblich: esta mañana heißt heute Morgen.'],
+  [1, '⟪⟫ fin de semana vamos a la playa.', 'Este', ['Esta', 'Estos'], '„El fin de semana“ ist männlich: este fin de semana.'],
+  [1, '⟪⟫ perro que está aquí conmigo se llama Toby.', 'Este', ['Esta', 'Estos'], '„El perro“ ist männlich und Einzahl: este perro.'],
+  [1, '⟪⟫ naranjas que tengo en la bolsa son de Tenerife.', 'Estas', ['Estos', 'Esta'], '„Las naranjas“ ist weiblich und Mehrzahl: estas naranjas.'],
+  [1, 'Mira, ⟪⟫ es mi hermano Pablo.', 'este', ['esta', 'estos'], 'Jemanden vorstellen: Este es mi hermano. Bei einem Mädchen: Esta es mi hermana.'],
+  [1, 'Mira, ⟪⟫ es mi amiga Lucía.', 'esta', ['este', 'estas'], 'Jemanden vorstellen: Esta es mi amiga. Bei einem Jungen: Este es mi amigo.'],
+  [1, '⟪⟫ semana tenemos una excursión.', 'Esta', ['Este', 'Estas'], '„La semana“ ist weiblich: esta semana heißt diese Woche.'],
+  [1, '⟪⟫ lápices de colores son míos.', 'Estos', ['Estas', 'Este'], '„Los lápices“ ist männlich und Mehrzahl: estos lápices.'],
+  [1, '¿Te gusta ⟪⟫ dibujo que he hecho?', 'este', ['esta', 'estos'], '„El dibujo“ ist männlich und Einzahl: este dibujo.'],
+  [1, '⟪⟫ año voy a aprender a nadar mejor.', 'Este', ['Esta', 'Estos'], '„El año“ ist männlich: este año heißt dieses Jahr.'],
+  [1, '⟪⟫ botas son muy cómodas.', 'Estas', ['Estos', 'Esta'], '„Las botas“ ist weiblich und Mehrzahl: estas botas.'],
+  [1, 'Hoy hace calor. ⟪⟫ tarde vamos a la piscina.', 'Esta', ['Este', 'Estas'], '„La tarde“ ist weiblich: esta tarde heißt heute Nachmittag.'],
+  [2, 'Aquí tengo mi lápiz. ⟪⟫ lápiz es rojo.', 'Este', ['Ese', 'Aquel'], 'Was hier bei mir ist (aquí), heißt este.'],
+  [2, '¿Me das ⟪⟫ goma que tienes ahí, a tu lado?', 'esa', ['esta', 'aquella'], 'Was bei dir ist (ahí), heißt ese oder esa. „La goma“ ist weiblich: esa.'],
+  [2, '¿Ves ⟪⟫ montaña de allí, muy lejos? Es el Teide.', 'aquella', ['esta', 'esa'], 'Was weit weg ist (allí), heißt aquel oder aquella. „La montaña“: aquella.'],
+  [2, 'Allí, al final de la calle, está ⟪⟫ edificio alto.', 'aquel', ['este', 'aquella'], 'Weit weg (allí) und männlich: aquel edificio.'],
+  [2, 'Los niños de ahí son mis amigos. ⟪⟫ niños juegan al fútbol.', 'Esos', ['Estos', 'Esas'], 'Ahí (dort bei dir, nicht weit): esos. „Los niños“ ist männlich und Mehrzahl.'],
+  [2, '⟪⟫ barcos de allí, en el horizonte, van a Tenerife.', 'Aquellos', ['Estos', 'Aquellas'], 'Am Horizont ist weit weg (allí): aquellos barcos.'],
+  [2, 'Toma, ⟪⟫ flores son para ti.', 'estas', ['esas', 'aquellas'], 'Ich habe die Blumen in der Hand und gebe sie dir: estas.'],
+  [2, '¿De quién es ⟪⟫ mochila que está ahí, en tu silla?', 'esa', ['esta', 'ese'], 'Auf deinem Stuhl (ahí): esa mochila.']
+];
+const S9_DONDE = [['este gato', 0], ['esta casa', 0], ['estos libros', 0], ['ese perro', 1], ['esa silla', 1], ['esas flores', 1], ['aquel árbol', 2], ['aquella playa', 2], ['aquellos barcos', 2]];
+function genEsDemos(ctx) {
+  const lv = (ctx && ctx.lv) || 1, typ = s9Typ('esdemos', lv === 1 ? ['luecke'] : ['luecke', 'luecke', 'sort']);
+  if (typ === 'sort') {
+    const v = R.shuffle([0, 1, 2].flatMap(c => R.sample(S9_DONDE.filter(x => x[1] === c), 2)));
+    return mkSort({ prompt: '¿Dónde está? Ordena.', cols: ['aquí (hier bei mir)', 'ahí (dort bei dir)', 'allí (weit weg)'], items: v.map(([h, c]) => ({ h, c })), lang: ES, key: 's9ds' + v.map(x => x[0]).join(),
+      explain: 'Este, esta: hier bei mir. Ese, esa: dort bei dir. Aquel, aquella: weit weg von uns beiden.' });
+  }
+  return s9Wahl(ctx.draw(S9_DEMO.filter(r => r[0] === lv)), 's9m');
+}
+
+
+const S9_PREP = [
+  [1, 'Vivo ⟪⟫ Cuxhaven, cerca del mar.', 'en', ['a', 'de', 'con'], 'Wo wohnst du? Vivo en … (in).'],
+  [1, 'Juego al fútbol ⟪⟫ mi amiga Carla.', 'con', ['en', 'de', 'a'], 'Mit wem? Con heißt mit.'],
+  [1, 'El gato duerme ⟪⟫ la cama.', 'en', ['a', 'de', 'con'], 'Wo schläft die Katze? En la cama: im Bett.'],
+  [1, 'Voy al colegio ⟪⟫ mi hermano.', 'con', ['en', 'de', 'a'], 'Mit wem? Con mi hermano: mit meinem Bruder.'],
+  [1, 'Carlos es ⟪⟫ México.', 'de', ['a', 'en', 'con'], 'Woher kommt er? Es de México: Er ist aus Mexiko.'],
+  [1, 'En verano vamos ⟪⟫ Tenerife.', 'a', ['en', 'de', 'con'], 'Wohin? Ir a …: Wir fahren nach Teneriffa.'],
+  [1, 'Es una mesa ⟪⟫ madera.', 'de', ['a', 'en', 'por'], 'Woraus ist der Tisch? De madera: aus Holz.'],
+  [1, 'Escribo ⟪⟫ un lápiz azul.', 'con', ['en', 'de', 'a'], 'Womit schreibst du? Con un lápiz: mit einem Stift.'],
+  [1, 'Los libros están ⟪⟫ la mochila.', 'en', ['a', 'de', 'con'], 'Wo sind die Bücher? En la mochila: im Rucksack.'],
+  [1, 'Le doy un regalo ⟪⟫ mi amigo.', 'a', ['en', 'de', 'con'], 'Wem gebe ich es? Dar algo a alguien: jemandem etwas geben.'],
+  [1, 'Mi cumpleaños es ⟪⟫ mayo.', 'en', ['a', 'de', 'con'], 'Monate stehen mit en: en mayo, en agosto.'],
+  [2, 'El sábado vamos ⟪⟫ zoo.', 'al', ['a el', 'del', 'a la'], '„El zoo“ ist männlich: a + el = al zoo.'],
+  [2, 'Mi casa está cerca ⟪⟫ colegio.', 'del', ['de el', 'al', 'de la'], 'Cerca de …: de + el = del colegio.'],
+  [2, 'El gato está debajo ⟪⟫ cama.', 'de la', ['del', 'a la', 'al'], 'Debajo de …: „la cama“ ist weiblich, also debajo de la cama.'],
+  [2, 'Después ⟪⟫ recreo tenemos música.', 'del', ['de el', 'al', 'de la'], 'Después de …: de + el = del recreo.'],
+  [2, 'Jugamos ⟪⟫ fútbol en el patio.', 'al', ['a el', 'del', 'a la'], 'Jugar a + el: jugamos al fútbol.'],
+  [2, 'Voy ⟪⟫ panadería a comprar pan.', 'a la', ['al', 'a el', 'de la'], '„La panadería“ ist weiblich: a la panadería. Nur a + el wird zu al.'],
+  [2, 'Es el coche ⟪⟫ profesora.', 'de la', ['del', 'de el', 'a la'], 'Wem gehört es? „La profesora“ ist weiblich: de la profesora.'],
+  [2, 'Le doy la pelota ⟪⟫ niño.', 'al', ['a el', 'del', 'a la'], 'A + el wird zu al: al niño.'],
+  [3, 'Tomo el chocolate ⟪⟫ azúcar.', 'sin', ['por', 'desde', 'hasta'], 'Sin heißt ohne: sin azúcar.'],
+  [3, 'Necesito un cuaderno ⟪⟫ la clase de mates.', 'para', ['por', 'desde', 'sin'], 'Wofür? Para la clase: für den Unterricht.'],
+  [3, 'El autobús pasa ⟪⟫ el centro.', 'por', ['para', 'sin', 'hasta'], 'Durch die Stadtmitte: pasar por el centro.'],
+  [3, '¡Adiós, ⟪⟫ mañana!', 'hasta', ['desde', 'para', 'sin'], 'Hasta mañana: bis morgen.'],
+  [3, 'Cuando llueve, no salgo ⟪⟫ mi paraguas.', 'sin', ['por', 'hasta', 'desde'], 'Sin heißt ohne: nicht ohne meinen Regenschirm.'],
+  [3, 'Hablamos ⟪⟫ teléfono con la abuela.', 'por', ['para', 'hasta', 'desde'], 'Por teléfono: am Telefon.'],
+  [3, 'Esta película es ⟪⟫ niños.', 'para', ['por', 'hasta', 'desde'], 'Für wen ist der Film? Para niños: für Kinder.'],
+  [3, 'Tengo clase ⟪⟫ las ocho hasta la una.', 'desde', ['para', 'por', 'sin'], 'Von … bis: desde las ocho hasta la una.'],
+  [1, 'Este libro es ⟪⟫ Marta. Es su libro.', 'de', ['a', 'en', 'con'], 'Wem gehört es? Es de Marta: Es gehört Marta.'],
+  [1, 'Mañana vamos ⟪⟫ la playa.', 'a', ['en', 'de', 'con'], 'Wohin? Ir a … (zu, nach).'],
+  [1, 'Quiero un zumo ⟪⟫ naranja, por favor.', 'de', ['en', 'a', 'por'], 'Woraus ist es? Un zumo de naranja: ein Orangensaft.'],
+  [1, 'Viajamos a Tenerife ⟪⟫ avión.', 'en', ['con', 'a', 'de'], 'Womit fährst du? En avión, en coche, en tren, en barco.'],
+  [1, 'Soy ⟪⟫ Alemania, pero hablo español.', 'de', ['en', 'a', 'con'], 'Woher? Soy de … (aus).'],
+  [1, 'Como cereales ⟪⟫ leche por la mañana.', 'con', ['de', 'en', 'a'], 'Cereales con leche: Müsli mit Milch.'],
+  [2, 'Voy ⟪⟫ colegio en bici.', 'al', ['a el', 'del', 'en el'], 'A + el wird immer zu al: voy al colegio.'],
+  [2, 'Vengo ⟪⟫ parque y tengo mucha sed.', 'del', ['de el', 'al', 'en el'], 'De + el wird immer zu del: vengo del parque.'],
+  [2, 'Vamos ⟪⟫ playa con los abuelos.', 'a la', ['al', 'a el', 'en'], 'Nur a + el wird zu al. A la bleibt: vamos a la playa.'],
+  [2, 'La mochila ⟪⟫ niño es azul.', 'del', ['de el', 'al', 'de la'], 'De + el = del: la mochila del niño.'],
+  [2, 'Salgo ⟪⟫ casa a las ocho.', 'de', ['a', 'en', 'del'], 'Salir de … (aus dem Haus gehen). Bei „casa“ ohne Artikel: de casa.'],
+  [2, 'La clase empieza ⟪⟫ las nueve.', 'a', ['en', 'de', 'al'], 'Uhrzeiten stehen mit a: a las nueve.'],
+  [2, 'Los domingos vamos ⟪⟫ cine.', 'al', ['a la', 'del', 'en'], '„El cine“ ist männlich: a + el = al cine.'],
+  [2, 'Las llaves están encima ⟪⟫ mesa.', 'de la', ['del', 'a la', 'en'], 'Encima de …: „la mesa“ ist weiblich, also encima de la mesa.'],
+  [3, 'Este regalo es ⟪⟫ ti. ¡Feliz cumpleaños!', 'para', ['por', 'de', 'a'], 'Für wen? Para ti: für dich.'],
+  [3, 'Gracias ⟪⟫ tu ayuda.', 'por', ['para', 'de', 'con'], 'Danke für …: gracias por.'],
+  [3, 'Estudio español ⟪⟫ hablar con mis abuelos.', 'para', ['por', 'a', 'de'], 'Wozu? Para + Grundform: um zu sprechen.'],
+  [3, 'Paseamos ⟪⟫ el parque todas las tardes.', 'por', ['para', 'a', 'de'], 'Durch den Park spazieren: pasear por el parque.'],
+  [3, 'Vivo aquí ⟪⟫ el año pasado.', 'desde', ['hasta', 'para', 'en'], 'Seit wann? Desde heißt seit.'],
+  [3, 'La tienda abre de nueve ⟪⟫ dos.', 'a', ['con', 'por', 'en'], 'Von … bis: de nueve a dos. Mit desde sagt man: desde las nueve hasta las dos.'],
+  [3, 'El tren ⟪⟫ Madrid sale a las diez.', 'para', ['por', 'en', 'con'], 'Wohin fährt der Zug? El tren para Madrid.'],
+  [3, 'No puedo salir ⟪⟫ la lluvia.', 'por', ['para', 'de', 'a'], 'Warum nicht? Por la lluvia: wegen des Regens.']
+];
+const S9_PREG = [['¿Dónde vives?', 'En Cuxhaven.'], ['¿Con quién juegas?', 'Con mi amigo.'], ['¿De dónde eres?', 'De Alemania.'], ['¿Adónde vas?', 'A la playa.'], ['¿De quién es el libro?', 'De Marta.'], ['¿Cómo vas al colegio?', 'En bici.'], ['¿A qué hora comes?', 'A las dos.'], ['¿Cuándo es tu cumpleaños?', 'En mayo.']];
+function genEsPrep(ctx) {
+  const lv = (ctx && ctx.lv) || 1;
+  if (lv === 1 && s9Typ('esprep', ['l', 'l', 'l', 'm']) === 'm') {
+    let p = []; for (const r of R.shuffle(S9_PREG)) { if (p.length < 4 && !p.some(x => x[1].split(' ')[0] === r[1].split(' ')[0])) p.push(r); }
+    return mkMatch({ prompt: 'Une la pregunta con la respuesta.', left: p.map(x => x[0]), right: p.map(x => x[1]), lang: ES, key: 's9rm' + p.map(x => x[0]).join(), explain: p.map(x => x[0] + ' ' + x[1]).join(' · ') });
+  }
+  return s9Wahl(ctx.draw(S9_PREP.filter(r => r[0] === lv)), 's9r', '¿Qué palabra pequeña falta?');
+}
+
+
+
+const S9_IMP = [
+  [1, 'hablar', '⟪⟫ más alto, por favor. No te oigo.', 'Habla', ['Hablas', 'Hablar'], 'Die Befehlsform für „du“ sieht aus wie die Form für él oder ella: habla.'],
+  [1, 'escuchar', '⟪⟫ bien: esto es importante.', 'Escucha', ['Escuchas', 'Escucho'], 'Escuchar → ¡Escucha! Ohne das -s am Ende.'],
+  [1, 'abrir', '⟪⟫ la ventana, hace mucho calor.', 'Abre', ['Abres', 'Abrir'], 'Abrir → ¡Abre! Wie él abre.'],
+  [1, 'comer', '⟪⟫ la fruta, está muy rica.', 'Come', ['Comes', 'Comer'], 'Comer → ¡Come! Wie ella come.'],
+  [1, 'mirar', '⟪⟫, ¡un delfín en el mar!', 'Mira', ['Miras', 'Miro'], 'Mirar → ¡Mira! So sagt man: Schau mal!'],
+  [1, 'escribir', '⟪⟫ tu nombre en el cuaderno.', 'Escribe', ['Escribes', 'Escribir'], 'Escribir → ¡Escribe!'],
+  [1, 'cerrar', '⟪⟫ la puerta, por favor.', 'Cierra', ['Cierras', 'Cerrar'], 'Cerrar → ¡Cierra! Das e wird zu ie, wie bei él cierra.'],
+  [1, 'leer', '⟪⟫ el texto en voz alta.', 'Lee', ['Lees', 'Leer'], 'Leer → ¡Lee!'],
+  [2, 'venir', '⟪⟫ aquí, quiero enseñarte algo.', 'Ven', ['Viene', 'Vienes'], 'Venir ist unregelmäßig: ¡Ven!'],
+  [2, 'poner', '⟪⟫ la mesa, vamos a comer.', 'Pon', ['Pone', 'Pones'], 'Poner ist unregelmäßig: ¡Pon! Poner la mesa heißt den Tisch decken.'],
+  [2, 'hacer', '⟪⟫ los deberes antes de jugar.', 'Haz', ['Hace', 'Haces'], 'Hacer ist unregelmäßig: ¡Haz!'],
+  [2, 'decir', '⟪⟫ la verdad, por favor.', 'Di', ['Dice', 'Dices'], 'Decir ist unregelmäßig: ¡Di!'],
+  [2, 'salir', '⟪⟫ al recreo, ya son las diez.', 'Sal', ['Sale', 'Sales'], 'Salir ist unregelmäßig: ¡Sal!'],
+  [2, 'tener', '⟪⟫ cuidado, el suelo está mojado.', 'Ten', ['Tiene', 'Tienes'], 'Tener ist unregelmäßig: ¡Ten cuidado! heißt Pass auf!'],
+  [2, 'ir', '⟪⟫ a la cama, es muy tarde.', 'Ve', ['Va', 'Vas'], 'Ir ist unregelmäßig: ¡Ve!'],
+  [2, 'ser', '⟪⟫ amable con tu hermano.', 'Sé', ['Es', 'Eres'], 'Ser ist unregelmäßig: ¡Sé! Mit Akzent.']
+];
+const S9_ORDEN = [['Abre', 'el libro', 'por la página', 'diez.'], ['Lávate', 'las manos', 'antes de', 'comer.'], ['Pon', 'la mochila', 'debajo de', 'la mesa.'], ['Escribe', 'la fecha', 'en', 'tu cuaderno.'], ['Ven', 'a mi casa', 'esta', 'tarde.'], ['Cierra', 'la puerta', 'sin hacer', 'ruido.']];
+function genEsImperativo(ctx) {
+  const lv = (ctx && ctx.lv) || 1, typ = s9Typ('esimperativo', lv === 1 ? ['luecke', 'luecke', 'par'] : ['luecke', 'par', 'luecke', 'orden']);
+  if (typ === 'par') {
+    const p = R.sample(S9_IMP.filter(r => r[0] <= lv && (lv === 1 || r[0] === 2)), 4);
+    return mkMatch({ prompt: 'Une el verbo con su orden.', left: p.map(x => x[1]), right: p.map(x => '¡' + x[3] + '!'), lang: ES, key: 's9ip' + p.map(x => x[1]).join(), explain: p.map(x => x[1] + ' → ¡' + x[3] + '!').join(' · ') });
+  }
+  if (typ === 'orden') {
+    const o = ctx.draw(S9_ORDEN);
+    return mkOrder({ prompt: 'Ordena la frase.', items: o, inline: true, lang: ES, key: 's9io' + o.join(' '), explain: 'Die Befehlsform steht am Anfang: ' + o.join(' '), say: o.join(' '), sayLang: ES });
+  }
+  const r = ctx.draw(S9_IMP.filter(x => x[0] === lv));
+  return mkChoice({ prompt: `Da una orden con «${r[1]}».`, visual: s8Satz(r[2]), answer: r[3], wrong: r[4], layout: 'row3', key: 's9i' + r[1], explain: r[5], after: r[2].replace('⟪⟫', r[3]), afterLang: ES });
+}
+
+Object.assign(GAMES, {
+  escomoes: { id: 'escomoes', w: s8W('es-vocab'), g: 'es-vocab', t: '¿Cómo es?', d: 'Beschreiben: groß, klein, schnell, mutig. Gegenteile und Endungen', i: '🔎', gen: genEsComoEs, max: 2, start: [1, 1, 2, 2], klv: [2, 3] },
+  esdemos: { id: 'esdemos', w: s8W('es-gram'), g: 'es-gram', t: 'Este, ese, aquel', d: 'Dieser hier, der da, jener dort: aquí, ahí, allí', i: '👉', gen: genEsDemos, max: 2, start: [1, 1, 1, 2], klv: [2, 3] },
+  esprep: { id: 'esprep', w: s8W('es-gram'), g: 'es-gram', t: 'A, de, en, con', d: 'Kleine Wörter: a, de, en, con, al und del, por und para', i: '🧩', gen: genEsPrep, max: 3, start: [1, 1, 2, 2], klv: [2, 3, 4] },
+  esimperativo: { id: 'esimperativo', w: s8W('es-gram'), g: 'es-gram', t: '¡Ven aquí!', d: 'Die Befehlsform: ¡Mira! ¡Escucha! ¡Ven! ¡Haz!', i: '📣', gen: genEsImperativo, max: 2, start: [1, 1, 1, 2], klv: [2, 3] }
+});
+if (typeof EK !== 'undefined') Object.assign(EK, {
+  escomoes: { t: '¿Cómo es?', e: ['Mit *es* und einem Adjektiv beschreibst du: Es alto. Es rápida.', 'Viele Adjektive enden für Jungen auf *-o* und für Mädchen auf *-a*: alto, alta.', 'Adjektive auf *-e* oder Mitlaut bleiben gleich: amable, fácil, azul. Mehrzahl: -s oder -es.'], b: ['El ratón es pequeño. La casa es pequeña. Los ojos son azules.'] },
+  esdemos: { t: 'Este, ese, aquel', e: ['*Este, esta* (aquí): hier bei mir.', '*Ese, esa* (ahí): dort bei dir, nicht weit.', '*Aquel, aquella* (allí): weit weg von uns beiden.', 'Mehrzahl: estos, estas · esos, esas · aquellos, aquellas.'], b: ['Este libro es mío. Ese lápiz es tuyo. Aquella montaña es el Teide.'] },
+  esprep: { t: 'A, de, en, con', e: ['*a*: wohin und um wie viel Uhr. *de*: woher, von wem, woraus.', '*en*: wo und womit man fährt. *con*: mit.', '*a + el = al*, *de + el = del*. Mit la bleibt es: a la, de la.', '*para*: für wen, wozu. *por*: wegen, durch, danke für.'], b: ['Voy al colegio. Vengo del parque. Un regalo para ti. Gracias por todo.'] },
+  esimperativo: { t: '¡Ven aquí!', e: ['Mit der Befehlsform sagst du jemandem, was er tun soll.', 'Für „du“ sieht sie meist aus wie bei él und ella: *habla, come, abre*.', 'Acht Verben sind anders: *ven, pon, haz, di, sal, ten, ve, sé*.', 'Davor und dahinter stehen oft Ausrufezeichen: ¡Mira!'], b: ['¡Escucha! ¡Abre la ventana! ¡Ven aquí! ¡Ten cuidado!'] }
+});
+
+
+const D83_TIPP = {
+  doppelt: 'Sprich das Wort in Silben: Nach einem kurzen Selbstlaut kommt oft ein doppelter Mitlaut.',
+  dehnungsh: 'Das Dehnungs-h hörst du nicht. Solche Wörter sind Merkwörter.',
+  iewort: 'Klingt das i lang, schreibst du meistens ie. Klingt es kurz, nur i.',
+  cktz: 'Nach einem kurzen Selbstlaut stehen ck und tz, sonst nur k und z.',
+  fv: 'Wörter mit V sind Merkwörter. Die Vorsilben ver- und vor- haben immer ein V.',
+  verlaengern: 'Verlängere das Wort, dann hörst du den Buchstaben am Ende.',
+  ableiten: 'Suche ein verwandtes Wort mit a oder au. Gibt es eins, schreibst du ä oder äu.'
+};
+const D83_PAAR = {
+  doppelt: r => [r[0], r[1]], dehnungsh: r => [r[0], r[1]],
+  iewort: r => [r[0], r[2] === 'ie' ? r[0].replace('ie', 'i') : r[0].replace(/i/i, m => m === 'I' ? 'Ie' : 'ie')],
+  cktz: r => [r[0].replace('#', r[1]), r[0].replace('#', { ck: 'k', k: 'ck', tz: 'z', z: 'tz' }[r[1]])],
+  fv: r => [r[0] + r[1], ({ F: 'V', V: 'F', f: 'v', v: 'f' }[r[0]]) + r[1]],
+  verlaengern: r => [r[0] + r[1], r[0] + r[2]], ableiten: r => [r[0] + r[1] + r[3], r[0] + r[2] + r[3]]
+};
+const D83_ECHT = ['Kam', 'Ur', 'Lid', 'Hacken', 'Hertz', 'Bretzel', 'fiel', 'Bang', 'Hunt', 'bund', 'Belle', 'Kelte'];
+function d83Detektiv(ctx, id, rows) {
+  const paar = D83_PAAR[id], gross = w => w[0] !== w[0].toLowerCase(); let r, ok, falsch, n = 0;
+  do { r = ctx.draw(rows); [ok, falsch] = paar(r); } while (D83_ECHT.includes(falsch) && ++n < 12);
+  const andere = R.shuffle(rows.filter(x => x !== r).map(x => paar(x)[0]).filter((w, i, a) => w !== ok && w !== falsch && a.indexOf(w) === i));
+  const gleich = andere.filter(w => gross(w) === gross(ok)), w3 = (gleich.length >= 3 ? gleich : andere).slice(0, 3);
+  return mkChoice({ prompt: 'Rechtschreib-Detektiv: Drei Wörter sind richtig, eins ist falsch geschrieben. Welches ist falsch?', visual: bigEmoji('🕵️', 'sm'), answer: falsch, wrong: w3, layout: 'grid2',
+    explain: `Richtig heißt es „${ok}“, nicht „${falsch}“. ${D83_TIPP[id]}`, after: ok, key: 'd83' + id + ok, say: '' });
+}
+const d83Stufe2 = ctx => ctx && ctx.lv >= 2 && R.chance(.6);
+
+function d83PraedFalsch(s, v, words) {
+  const alle = s.replace(/[.!?,]/g, '').split(' ').filter((x, i) => x !== v && !(i === 0 && /^(Der|Die|Das|Im|Am|Ein|Eine|Es|Ich|Wir|Mein|Nach)$/.test(x))), klein = R.shuffle(alle.filter(x => x[0] === x[0].toLowerCase())), gross = R.shuffle(words.filter(x => x[0] !== x[0].toLowerCase()));
+  const aus = klein.slice(0, 2).concat(gross).slice(0, 3); return [...new Set(aus.length >= 2 ? aus : words)].slice(0, 3);
+}
 
 /*@@src mehr281.js@@*/
 
