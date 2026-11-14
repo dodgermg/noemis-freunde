@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-boW1wbzAZJz/8aEaN3nHzNC8cv69JavlM6IH9ix+pwQ=' 'sha256-5rRdaCiK1/53JLdtDoniXDeGKGDR28Eri1/Jl4MNnyg=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-tLBx63pAP12j4k9Su2CQ50MVtGEfzJG3bqFaJiZ+l0w=' 'sha256-w+XpQ/bx2vc1ZG1WydLmHEFGhzScSiwHlzaF/AvmvDo=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -9201,8 +9201,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '2.83.0';
-  var MAP = {"probe":0,"files":[[9191,"fehler_kern.js"],[9479,null],[9481,"data.js"],[10185,"data_more.js"],[10548,"data_su2.js"],[10775,"data_es.js"],[11117,"data_wissen.js"],[11318,"data_v21.js"],[12003,"data_v24.js"],[12491,"data_v25.js"],[12972,"data_v26.js"],[13071,"data_v29.js"],[13379,"data_v30.js"],[13710,"data_v31.js"],[14016,"data_kunst.js"],[14212,"data_v214.js"],[14315,"data_v216.js"],[14608,"schrift.js"],[14908,"eingabe.js"],[15119,"data_k34m.js"],[15637,"data_k34d.js"],[15991,"data_k34s.js"],[16445,"data_v224.js"],[17318,"data_v225w.js"],[17687,"data_v225k.js"],[18131,"data_herz.js"],[18485,"data_fb226.js"],[18628,"data_tf226.js"],[18835,"data_v227a.js"],[19926,"data_v227b.js"],[20880,"data_h28b.js"],[20920,"data_l28a.js"],[21786,"data_l28b.js"],[22966,"data_schaetz.js"],[23448,"data_party8.js"],[23498,"data_alce.js"],[24158,"data_alce2.js"],[24407,"data_alce3.js"],[24822,"registry.js"],[25336,"app.js"],[26526,"fun.js"],[27106,"fun2.js"],[27422,"atelier.js"],[27796,"kunst225.js"],[27986,"herz.js"],[28350,"reise.js"],[28652,"iglu.js"],[28818,"offline.js"],[28925,"party.js"],[29409,"meine.js"],[29765,"loeffel.js"],[29936,"trend.js"],[30478,"fun228a.js"],[31329,"fun228b.js"],[31990,"kueche.js"],[33029,"stimme.js"],[33084,"klassen.js"],[33233,"freunde_vorab.js"],[33254,"mut.js"],[33676,"schule.js"],[34165,"fussball226.js"],[34487,"schaetzen.js"],[34918,"party8.js"],[35537,"tiere.js"],[35996,"fussball232.js"],[36211,"party8b.js"],[36513,"weg.js"],[36734,"px.js"],[37145,"px_data.js"],[37402,"pxwelt.js"],[37483,"px_abenteuer.js"],[38291,"px_abenteuer2.js"],[39043,"px_abenteuer3.js"],[39427,"px_ski.js"],[40069,"px_wurf.js"],[40598,"px_insel.js"],[41799,"px_kicker.js"],[42734,"px_eis.js"],[43720,"px_run.js"],[44935,"px_brk.js"],[45897,"px_pol.js"],[47248,"px_frog.js"],[48508,"px_angel.js"],[49823,"px_golf.js"],[50857,"px_tauch.js"],[52122,"px_hockey.js"],[53078,"px_lab.js"],[54413,"px_plopp.js"],[55619,"px_stadion.js"],[57123,"px_training.js"],[57492,"cm.js"],[57982,"cmwelt.js"],[58038,"cm_baeck.js"],[58831,"cm_bahn.js"],[59595,"cm_detek.js"],[60312,"cm_markt.js"],[61025,"ff.js"],[61182,"ff_mathe.js"],[63172,"ff_deutsch.js"],[64760,"ff_sach_a.js"],[67009,"ff_sach_b.js"],[69238,"ff_sprachen.js"],[71646,"zm.js"],[72559,"tt.js"],[72772,"data_tagebuch.js"],[72815,"data_hoerspiel.js"],[72974,"leseecke.js"],[73293,"kt.js"],[73596,"comicbuch.js"],[73874,"alce.js"],[74037,"alce_aufg.js"],[74207,"formen.js"],[74658,"data_formen.js"],[74899,"data_formen2.js"],[75121,"spielzeit.js"],[75266,"data_faktmeinung.js"],[75385,"data_es248.js"],[75649,"data_en249.js"],[75888,"data_wissen249.js"],[76319,"data_kunst249.js"],[76602,"data_fussball250.js"],[76726,"data_werte252.js"],[76979,"data_lesen252.js"],[77040,"data_k34_252.js"],[77126,"art254.js"],[77244,"data_werte255.js"],[77382,"data_lesen255.js"],[77518,"forscher255.js"],[77666,"zufall250.js"],[77712,"stufe259.js"],[77722,"advent.js"],[77985,"wdh.js"],[78083,"denk.js"],[78120,"data_viaje265.js"],[78263,"klassenarbeit.js"],[78396,"quizduell.js"],[78519,"neu267.js"],[78784,"prog.js"],[78889,"lernstand.js"],[78956,"blatt.js"],[79058,"data_es271.js"],[79172,"plus269.js"],[79266,"schach.js"],[79498,"schachtaktik.js"],[79750,"fun270.js"],[79913,"data_neu274.js"],[80122,"plus272.js"],[80176,"spiele274.js"],[80299,"kasten.js"],[80403,"erklaer.js"],[80516,"apa.js"],[80597,"neu276.js"],[80738,"spiele276.js"],[80788,"neu277.js"],[80966,"spiele277.js"],[81221,"lernen278.js"],[81481,"spiele278.js"],[81824,"lernen279.js"],[82149,"lernen279b.js"],[82547,"spanisch280.js"],[82839,"spanisch283.js"],[83072,"mehr281.js"],[83218,"grafik280.js"],[83589,"tiefsee280.js"],[83867,"abenteuer280.js"],[84079,"abenteuer281.js"],[84191,"design281.js"],[84323,"party281.js"],[84454,"grafik281.js"],[84671,"lumi_live.js"],[84787,"sicher.js"],[84971,"stil.js"],[85025,"freunde.js"],[85162,"start.js"],[85172,null],[85182,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '2.84.0';
+  var MAP = {"probe":0,"files":[[9191,"fehler_kern.js"],[9479,null],[9481,"data.js"],[10185,"data_more.js"],[10548,"data_su2.js"],[10775,"data_es.js"],[11143,"data_wissen.js"],[11344,"data_v21.js"],[12029,"data_v24.js"],[12517,"data_v25.js"],[12998,"data_v26.js"],[13097,"data_v29.js"],[13405,"data_v30.js"],[13736,"data_v31.js"],[14042,"data_kunst.js"],[14238,"data_v214.js"],[14341,"data_v216.js"],[14634,"schrift.js"],[14934,"eingabe.js"],[15145,"data_k34m.js"],[15663,"data_k34d.js"],[16017,"data_k34s.js"],[16471,"data_v224.js"],[17344,"data_v225w.js"],[17713,"data_v225k.js"],[18157,"data_herz.js"],[18511,"data_fb226.js"],[18654,"data_tf226.js"],[18861,"data_v227a.js"],[19952,"data_v227b.js"],[20906,"data_h28b.js"],[20946,"data_l28a.js"],[21812,"data_l28b.js"],[22992,"data_schaetz.js"],[23474,"data_party8.js"],[23524,"data_alce.js"],[24195,"data_alce2.js"],[24444,"data_alce3.js"],[24859,"registry.js"],[25373,"app.js"],[26564,"fun.js"],[27144,"fun2.js"],[27460,"atelier.js"],[27834,"kunst225.js"],[28024,"herz.js"],[28388,"reise.js"],[28690,"iglu.js"],[28856,"offline.js"],[28963,"party.js"],[29447,"meine.js"],[29803,"loeffel.js"],[29974,"trend.js"],[30516,"fun228a.js"],[31367,"fun228b.js"],[32028,"kueche.js"],[33067,"stimme.js"],[33122,"klassen.js"],[33271,"freunde_vorab.js"],[33292,"mut.js"],[33714,"schule.js"],[34203,"fussball226.js"],[34525,"schaetzen.js"],[34956,"party8.js"],[35575,"tiere.js"],[36034,"fussball232.js"],[36249,"party8b.js"],[36551,"weg.js"],[36772,"px.js"],[37183,"px_data.js"],[37440,"pxwelt.js"],[37521,"px_abenteuer.js"],[38329,"px_abenteuer2.js"],[39081,"px_abenteuer3.js"],[39465,"px_ski.js"],[40107,"px_wurf.js"],[40636,"px_insel.js"],[41837,"px_kicker.js"],[42772,"px_eis.js"],[43758,"px_run.js"],[44973,"px_brk.js"],[45935,"px_pol.js"],[47286,"px_frog.js"],[48546,"px_angel.js"],[49861,"px_golf.js"],[50895,"px_tauch.js"],[52160,"px_hockey.js"],[53116,"px_lab.js"],[54451,"px_plopp.js"],[55657,"px_stadion.js"],[57161,"px_training.js"],[57530,"cm.js"],[58020,"cmwelt.js"],[58076,"cm_baeck.js"],[58869,"cm_bahn.js"],[59633,"cm_detek.js"],[60350,"cm_markt.js"],[61063,"ff.js"],[61220,"ff_mathe.js"],[63210,"ff_deutsch.js"],[64798,"ff_sach_a.js"],[67047,"ff_sach_b.js"],[69276,"ff_sprachen.js"],[71684,"zm.js"],[72597,"tt.js"],[72810,"data_tagebuch.js"],[72853,"data_hoerspiel.js"],[73012,"leseecke.js"],[73331,"kt.js"],[73634,"comicbuch.js"],[73912,"alce.js"],[74075,"alce_aufg.js"],[74245,"formen.js"],[74696,"data_formen.js"],[74937,"data_formen2.js"],[75159,"spielzeit.js"],[75304,"data_faktmeinung.js"],[75423,"data_es248.js"],[75687,"data_en249.js"],[75926,"data_wissen249.js"],[76357,"data_kunst249.js"],[76640,"data_fussball250.js"],[76764,"data_werte252.js"],[77017,"data_lesen252.js"],[77078,"data_k34_252.js"],[77164,"art254.js"],[77282,"data_werte255.js"],[77420,"data_lesen255.js"],[77556,"forscher255.js"],[77704,"zufall250.js"],[77750,"stufe259.js"],[77760,"advent.js"],[78023,"wdh.js"],[78121,"denk.js"],[78158,"data_viaje265.js"],[78301,"klassenarbeit.js"],[78434,"quizduell.js"],[78557,"neu267.js"],[78822,"prog.js"],[78927,"lernstand.js"],[78994,"blatt.js"],[79096,"data_es271.js"],[79210,"plus269.js"],[79304,"schach.js"],[79536,"schachtaktik.js"],[79788,"fun270.js"],[79951,"data_neu274.js"],[80160,"plus272.js"],[80214,"spiele274.js"],[80337,"kasten.js"],[80441,"erklaer.js"],[80554,"apa.js"],[80635,"neu276.js"],[80776,"spiele276.js"],[80826,"neu277.js"],[81004,"spiele277.js"],[81259,"lernen278.js"],[81519,"spiele278.js"],[81862,"lernen279.js"],[82187,"lernen279b.js"],[82585,"spanisch280.js"],[82877,"spanisch283.js"],[83110,"mehr281.js"],[83256,"grafik280.js"],[83627,"tiefsee280.js"],[83905,"abenteuer280.js"],[84117,"abenteuer281.js"],[84229,"design281.js"],[84361,"party281.js"],[84492,"grafik281.js"],[84709,"lumi_live.js"],[84825,"sicher.js"],[85009,"stil.js"],[85063,"freunde.js"],[85200,"start.js"],[85210,null],[85220,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -10813,10 +10813,18 @@ const VOCAB_ES = [
   ['asustado', '😨', 'ängstlich', 'emociones', 3], ['sorprendido', '😮', 'überrascht', 'emociones', 3]
 ];
 function vocabPoolES(lv) { return memo('ves' + lv, () => VOCAB_ES.filter(v => v[4] <= lv)); }
+
+const ES_NAH = [['coche', 'bicicleta', 'barco', 'tren', 'avión', 'autobús', 'camión', 'moto', 'taxi', 'helicóptero', 'cohete', 'tractor', 'ambulancia', 'tranvía', 'furgoneta', 'ferri', 'canoa'],
+  ['casa', 'cama', 'silla', 'sofá', 'puerta', 'ventana', 'espejo', 'bañera', 'bombilla', 'televisión', 'ordenador', 'móvil', 'reloj', 'escoba', 'jabón', 'vela'],
+  ['árbol', 'flor', 'estrella', 'luna', 'sol', 'planeta', 'Tierra', 'mar', 'montaña', 'hoja', 'rosa', 'girasol', 'tulipán', 'palmera', 'nube'],
+  ['pelota', 'cometa', 'peluche', 'caja', 'carta', 'campana', 'martillo', 'bolsa', 'paraguas', 'llave', 'globo', 'regalo', 'dado', 'yoyó']];
 function vocabDistractES(v, n, lv) {
-  let same = VOCAB_ES.filter(x => x !== v && x[3] === v[3] && x[4] <= lv + 1 && x[1] !== v[1]);
-  if (same.length < n) same = same.concat(VOCAB_ES.filter(x => x !== v && x[3] !== v[3] && x[1] !== v[1]));
-  return R.sample(same, n);
+  const ok = x => x !== v && x[1] !== v[1] && x[0] !== v[0] && x[2] !== v[2], grp = (v[3] === 'cosas' || v[3] === 'transporte') && ES_NAH.find(g => g.includes(v[0]));
+  const nah = grp ? VOCAB_ES.filter(x => ok(x) && grp.includes(x[0]) && x[4] <= lv + 1) : [];
+  const same = VOCAB_ES.filter(x => ok(x) && x[3] === v[3] && x[4] <= lv + 1 && !nah.includes(x)), rest = VOCAB_ES.filter(x => ok(x) && x[3] !== v[3] && !nah.includes(x));
+  const out = [];
+  for (const pool of [nah, same, rest]) for (const x of R.shuffle(pool)) { if (out.length < n && !out.some(y => y[0] === x[0] || y[2] === x[2])) out.push(x); }
+  return out;
 }
 function genPalabrasES(ctx) {
   const v = ctx.draw(vocabPoolES(ctx.lv));
@@ -10991,12 +10999,27 @@ function genVerbosES(ctx) {
 const CONTRARIOS = [
   ['grande', 'pequeño'], ['rápido', 'lento'], ['caliente', 'frío'], ['día', 'noche'], ['abrir', 'cerrar'], ['arriba', 'abajo'], ['feliz', 'triste'], ['nuevo', 'viejo'],
   ['lleno', 'vacío'], ['limpio', 'sucio'], ['mucho', 'poco'], ['blanco', 'negro'], ['dentro', 'fuera'], ['encender', 'apagar'], ['fácil', 'difícil'], ['largo', 'corto'],
-  ['duro', 'blando'], ['mojado', 'seco'], ['cerca', 'lejos'], ['entrar', 'salir'], ['reír', 'llorar'], ['ganar', 'perder'], ['primero', 'último'], ['delante', 'detrás'], ['alto', 'bajo']
+  ['duro', 'blando'], ['mojado', 'seco'], ['cerca', 'lejos'], ['entrar', 'salir'], ['reír', 'llorar'], ['ganar', 'perder'], ['primero', 'último'], ['delante', 'detrás'], ['alto', 'bajo'],
+  ['subir', 'bajar'], ['comprar', 'vender'], ['empezar', 'terminar'], ['verano', 'invierno'], ['amigo', 'enemigo'], ['pregunta', 'respuesta'], ['principio', 'fin'], ['siempre', 'nunca'],
+  ['antes', 'después'], ['bien', 'mal'], ['gordo', 'delgado'], ['rico', 'pobre']
 ];
+
+const CONTR_ART = { v: ['abrir', 'cerrar', 'encender', 'apagar', 'entrar', 'salir', 'reír', 'llorar', 'ganar', 'perder', 'subir', 'bajar', 'comprar', 'vender', 'empezar', 'terminar'],
+  n: ['día', 'noche', 'verano', 'invierno', 'amigo', 'enemigo', 'pregunta', 'respuesta', 'principio', 'fin'],
+  p: ['arriba', 'abajo', 'dentro', 'fuera', 'cerca', 'lejos', 'delante', 'detrás', 'mucho', 'poco', 'siempre', 'nunca', 'antes', 'después', 'bien', 'mal'] };
+const CONTR_TAM = ['grande', 'pequeño', 'alto', 'bajo', 'largo', 'corto', 'gordo', 'delgado'];
+
+const esSatzArt = t => /\?$/.test(t) ? 'f' : /!$/.test(t) ? 'a' : 's';
+function esSatzNah(texte, ziel, n) {
+  const alle = R.shuffle([...new Set(texte)].filter(t => t !== ziel)), gleich = alle.filter(t => esSatzArt(t) === esSatzArt(ziel));
+  return gleich.concat(alle.filter(t => !gleich.includes(t))).slice(0, n);
+}
 function genContrariosES(ctx) {
   const pair = ctx.draw(CONTRARIOS); const flip = R.chance(.5);
   const [w, a] = flip ? [pair[1], pair[0]] : pair;
-  const wrong = R.sample(CONTRARIOS.filter(p => p !== pair), 3).map(p => R.pick(p));
+  const art = x => CONTR_ART.v.includes(x) ? 'v' : CONTR_ART.n.includes(x) ? 'n' : CONTR_ART.p.includes(x) ? 'p' : 'a';
+  const alle = R.shuffle(CONTRARIOS.filter(p => p !== pair).flatMap(p => p).filter(x => !(CONTR_TAM.includes(a) && CONTR_TAM.includes(x)))), gleich = alle.filter(x => art(x) === art(a));
+  const wrong = gleich.concat(alle.filter(x => !gleich.includes(x))).slice(0, 3);
   return mkChoice({ prompt: `¿Cuál es lo contrario de «${w}»?`, visual: `<div class="q-word big en">${esc(w)}</div>`, answer: a, wrong, layout: 'grid2',
     explain: `${w} ↔ ${a}`, after: `${w}, ${a}`, afterLang: ES, key: 'esc' + w, say: `Lo contrario de ${w}`, sayLang: ES });
 }
@@ -11009,7 +11032,9 @@ function numES(n) { if (n < 30) return NUM_ES_U[n]; if (n === 100) return 'cien'
 function genNumerosES(ctx) {
   const max = ctx.lv === 1 ? 10 : ctx.lv === 2 ? 30 : 100;
   const n = R.int(1, max);
-  const wrongN = retry(() => R.sample([...Array(max)].map((_, i) => i + 1).filter(x => x !== n), 3), () => true);
+
+  const wrongN = R.shuffle([n - 1, n + 1, n - 2, n + 2, n - 10, n + 10, n * 10, n % 10 === 0 ? n / 10 : 0, Number(String(n).split('').reverse().join(''))].filter((x, i, a) => x >= 1 && x <= max && x !== n && a.indexOf(x) === i)).slice(0, 3);
+  while (wrongN.length < 3) { const x = R.int(1, max); if (x !== n && !wrongN.includes(x)) wrongN.push(x); }
   if (R.chance(.5)) {
     const o = x => ({ html: esc(numES(x)), label: numES(x) });
     return mkChoice({ prompt: '¿Cómo se escribe este número?', visual: `<div class="q-num">${n}</div>`, answer: o(n), wrong: wrongN.map(o), layout: 'grid2',
@@ -11036,7 +11061,8 @@ function genDiasES(ctx) {
   if (R.chance(.7)) {
     const useM = R.chance(.45), list = useM ? MESES_ES : DIAS_ES, i = R.int(0, list.length - 1), after = R.chance(.6);
     const j = (i + (after ? 1 : -1) + list.length) % list.length;
-    const wrong = R.sample(list.filter((_, k) => k !== j && k !== i), SU_LV >= 2 ? 3 : 2);
+    const L = list.length, nah = [...new Set([(i + (after ? -1 : 1) + L) % L, (j + (after ? 1 : -1) + L) % L])].filter(k => k !== j && k !== i);
+    const wrong = nah.concat(R.shuffle(list.map((_, k) => k).filter(k => k !== j && k !== i && !nah.includes(k)))).slice(0, SU_LV >= 2 ? 3 : 2).map(k => list[k]);
     const q = `¿Qué ${useM ? 'mes' : 'día'} viene ${after ? 'después' : 'antes'} ${useM ? 'de' : 'del'} ${list[i]}?`;
     return mkChoice({ prompt: q, visual: bigEmoji(useM ? '🗓️' : '📅', 'sm'), answer: list[j], wrong, layout: 'col',
       explain: `${after ? 'Después' : 'Antes'} ${useM ? 'de' : 'del'} ${list[i]} viene ${useM ? '' : 'el '}${list[j]}.`, after: list[j], afterLang: ES, key: `esdm${useM}${i}${after}`, sayLang: ES });
@@ -14301,11 +14327,11 @@ function urlaubFix(s) {
 function genUrlaubES(ctx) {
   const r = Math.random();
   if (r < .4) {
-    const s0 = ctx.draw(URLAUB_SIT), s = urlaubFix(s0), wrong = R.sample(URLAUB_SIT.filter(x => x !== s0), 3).map(x => urlaubFix(x)[2]);
+    const s0 = ctx.draw(URLAUB_SIT), s = urlaubFix(s0), wrong = esSatzNah(URLAUB_SIT.filter(x => x !== s0).map(x => urlaubFix(x)[2]), s[2], 3);
     return mkChoice({ prompt: `${s[0]} Was sagst du auf Spanisch?`, visual: bigEmoji(s[1]), answer: s[2], wrong, layout: 'col', explain: `„${s[2]}“ heißt „${s[3]}“.`, after: s[2], afterLang: ES, key: 'urs' + s[2] });
   }
   if (r < .7) {
-    const s0 = ctx.draw(URLAUB_SIT), s = urlaubFix(s0), wrong = R.sample(URLAUB_SIT.filter(x => x !== s0), 3).map(x => urlaubFix(x)[3]);
+    const s0 = ctx.draw(URLAUB_SIT), s = urlaubFix(s0), wrong = esSatzNah(URLAUB_SIT.filter(x => x !== s0).map(x => urlaubFix(x)[3]), s[3], 3);
     return mkChoice({ prompt: 'Was bedeutet das?', visual: `<button class="listen-btn sm" data-act="listen" aria-label="Anhören"><span>🔊</span></button><div class="q-word en">${esc(s[2])}</div>`, answer: s[3], wrong, layout: 'col',
       explain: `„${s[2]}“ heißt „${s[3]}“.`, listen: { text: s[2], lang: ES }, key: 'urb' + s[2] });
   }
@@ -24019,6 +24045,17 @@ function alceTypes(s) {
   (s.spec || []).forEach(k => { const [n, w] = String(k).split(':'); if (ALCE_SPEC[n]) add(n, w ? Number(w) : 3); });   // v2.44: Gewicht 'conj:3'
   return T;
 }
+
+const alceForm = w => /^(el|la|los|las|un|una) /.test(w) ? 'art' : / /.test(w) ? 'frase' : /(ar|er|ir)(se)?$/.test(w) ? 'verbo' : 'otro';
+const alceGForm = g => { const c = {}; g[1].forEach(w => { const f = alceForm(w); c[f] = (c[f] || 0) + 1; }); return Object.keys(c).sort((x, y) => c[y] - c[x])[0]; };
+function alceIntrusoPaar(grupos) {
+  const As = R.shuffle(grupos.filter(g => g[1].length >= 3));
+  for (const A of As) {
+    const fa = alceGForm(A); if (A[1].filter(y => alceForm(y) === fa).length < 3) continue;
+    const Bs = grupos.filter(g => g !== A && g[1].some(y => !A[1].includes(y) && alceForm(y) === fa)); if (Bs.length) return [A, R.pick(Bs), true];
+  }
+  return [As[0], R.pick(grupos.filter(g => g !== As[0])), false];
+}
 const alceListen = t => `<button class="listen-btn" data-act="listen" aria-label="Escuchar"><span>🔊</span><b>Escuchar</b></button><div class="q-word en hint" data-hint>${esc(t)}</div>`;
 const ALCE_V = { html: '<span class="sym">✓</span><small>Verdadero</small>', label: 'Verdadero' }, ALCE_F = { html: '<span class="sym">✗</span><small>Falso</small>', label: 'Falso' };
 function alceVF(st, truth, vis, x, key) {
@@ -24127,8 +24164,8 @@ function alceGen(sid) {
       return mkChoice({ prompt: `¿Qué dice ${L[gi][0]}?`, visual: vis, answer: a, wrong: w, layout: 'col', explain: L.map(([who, t]) => `${who}: ${t === '___' ? a : t}`).join(' '), after: a, afterLang: ES, key: K + 'd' + a, sayLang: ES });
     }
     if (k === 'intruso') {
-      const A = R.pick(s.grupos.filter(g => g[1].length >= 3)), B = R.pick(s.grupos.filter(g => g !== A));
-      const three = R.sample(A[1], 3), x = R.pick(B[1].filter(y => !A[1].includes(y)));
+      const [A, B, gleich] = alceIntrusoPaar(s.grupos), fa = alceGForm(A), a3 = A[1].filter(y => alceForm(y) === fa);
+      const three = R.sample(gleich && a3.length >= 3 ? a3 : A[1], 3), x = R.pick(B[1].filter(y => !A[1].includes(y) && (!gleich || alceForm(y) === fa)));
       return mkChoice({ prompt: '¿Qué palabra no va con las otras?', visual: `<div class="q-text">🔎 ${esc(A[2] || 'Drei Wörter gehören zusammen. Eins nicht!')}</div>`, answer: x, wrong: three, layout: 'grid2',
         explain: `«${x}» gehört zu «${B[0]}». Die anderen gehören zu «${A[0]}».`, key: K + 'i' + x, sayLang: ES });
     }
@@ -25337,9 +25374,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '2.83.0';
+const APP_VERSION = '2.84.0';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "2.84.0", d: "14.11.2026", t: ["Spanisch: Falsche Antworten sind in vielen Spielen schwerer zu erraten (gleiche Wortgruppe, gleiche Wortart, Nachbarzahlen, gleiche Satzart)", "Spanisch: 12 neue Gegenteil-Paare"] },
   { v: "2.83.0", d: "14.11.2026", t: ["Schach-Taktik: zwei neue Übungsarten (Figur gewinnen, Spieß und Fesselung) mit 121 Aufgaben, dazu die neue Stärke „Lumi, Profi“", "Spanisch: vier neue Spiele (beschreiben, este/ese/aquel, kleine Wörter, Befehlsform)", "Deutsch: Rechtschreib-Detektiv als zweite Stufe in sieben Spielen, falsche Antworten sind schwerer zu erraten"] },
   { v: "2.82.0", d: "14.11.2026", t: ["Lumis Pixel-Abenteuer: zwei neue Welten mit zwölf Leveln (Weltraum und Zuckerland)", "Neu: Extra-Kräfte aus den Fragekisten, ein Endgegner am Ende jeder Welt, Fließbänder und Medaillen"] },
   { v: "2.81.1", d: "13.11.2026", t: ["Große Kontrolle aller Aufgaben und Antworten", "Sachunterricht: 44 doppelte Fragen durch neue ersetzt", "Fehler und mehrdeutige Aufgaben behoben, Grammatik und Satzzeichen geglättet"] },
@@ -78248,9 +78286,9 @@ function vjGen(B) {
     if (lv >= 2 && r < .55 && w.length >= 3 && w.length <= 7)
       return mkOrder({ prompt: `Baue den Satz: „${s[1]}“`, items: w, explain: `«${s[0]}»`, key: 'vjo' + s[0], inline: true, say: s[0], sayLang: ES, lang: ES });
     if (r < (lv >= 2 ? .8 : .55))
-      return mkChoice({ prompt: `${s[2]} Was sagst du?`, visual: bigEmoji(B.e), answer: s[0], wrong: R.sample(andere, n).map(x => x[0]), layout: 'col',
+      return mkChoice({ prompt: `${s[2]} Was sagst du?`, visual: bigEmoji(B.e), answer: s[0], wrong: esSatzNah(andere.map(x => x[0]), s[0], n), layout: 'col',
         explain: `«${s[0]}» = ${s[1]}`, after: s[0], afterLang: ES, key: 'vjs' + s[0], say: `${s[2]} Was sagst du?`, sayLang: 'de-DE' });
-    return mkChoice({ prompt: '¿Qué significa? Was bedeutet der Satz?', visual: hoer(s[0]), answer: s[1], wrong: R.sample(andere, n).map(x => x[1]), layout: 'col',
+    return mkChoice({ prompt: '¿Qué significa? Was bedeutet der Satz?', visual: hoer(s[0]), answer: s[1], wrong: esSatzNah(andere.map(x => x[1]), s[1], n), layout: 'col',
       listen: { text: s[0], lang: ES }, explain: `«${s[0]}» = ${s[1]}`, key: 'vjb' + s[0], say: s[0], sayLang: ES });
   };
 }
