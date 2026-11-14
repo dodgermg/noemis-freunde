@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-pnwrmYfR2q9PyZSA6rLjq4cU4Yf19mNdEk+vV0QP2LQ=' 'sha256-uQ1h3+qJmcoiiJP5ynOq25gX/6/a5/CBjCJriuDIdtA=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-nRaZcf5vF3+lxpx8QcvM1z9sr8DRMGuBuiisNF/LmWQ=' 'sha256-TiSHt2xbTLbitajq+Ds+2ooIQkEKVuMYbXR3/ZzwAYc=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -9200,8 +9200,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '2.81.1';
-  var MAP = {"probe":0,"files":[[9190,"fehler_kern.js"],[9478,null],[9480,"data.js"],[10183,"data_more.js"],[10540,"data_su2.js"],[10767,"data_es.js"],[11109,"data_wissen.js"],[11310,"data_v21.js"],[11993,"data_v24.js"],[12480,"data_v25.js"],[12961,"data_v26.js"],[13060,"data_v29.js"],[13365,"data_v30.js"],[13695,"data_v31.js"],[14001,"data_kunst.js"],[14197,"data_v214.js"],[14300,"data_v216.js"],[14593,"schrift.js"],[14893,"eingabe.js"],[15104,"data_k34m.js"],[15622,"data_k34d.js"],[15976,"data_k34s.js"],[16430,"data_v224.js"],[17303,"data_v225w.js"],[17672,"data_v225k.js"],[18116,"data_herz.js"],[18470,"data_fb226.js"],[18613,"data_tf226.js"],[18820,"data_v227a.js"],[19911,"data_v227b.js"],[20865,"data_h28b.js"],[20905,"data_l28a.js"],[21771,"data_l28b.js"],[22951,"data_schaetz.js"],[23433,"data_party8.js"],[23483,"data_alce.js"],[24143,"data_alce2.js"],[24392,"data_alce3.js"],[24807,"registry.js"],[25321,"app.js"],[26509,"fun.js"],[27089,"fun2.js"],[27405,"atelier.js"],[27779,"kunst225.js"],[27969,"herz.js"],[28333,"reise.js"],[28635,"iglu.js"],[28801,"offline.js"],[28908,"party.js"],[29392,"meine.js"],[29748,"loeffel.js"],[29919,"trend.js"],[30461,"fun228a.js"],[31312,"fun228b.js"],[31973,"kueche.js"],[33012,"stimme.js"],[33067,"klassen.js"],[33216,"freunde_vorab.js"],[33237,"mut.js"],[33659,"schule.js"],[34148,"fussball226.js"],[34470,"schaetzen.js"],[34901,"party8.js"],[35520,"tiere.js"],[35979,"fussball232.js"],[36194,"party8b.js"],[36496,"weg.js"],[36717,"px.js"],[37128,"px_data.js"],[37385,"pxwelt.js"],[37466,"px_abenteuer.js"],[38267,"px_abenteuer2.js"],[39016,"px_ski.js"],[39658,"px_wurf.js"],[40187,"px_insel.js"],[41388,"px_kicker.js"],[42323,"px_eis.js"],[43309,"px_run.js"],[44524,"px_brk.js"],[45486,"px_pol.js"],[46837,"px_frog.js"],[48097,"px_angel.js"],[49412,"px_golf.js"],[50446,"px_tauch.js"],[51711,"px_hockey.js"],[52667,"px_lab.js"],[54002,"px_plopp.js"],[55208,"px_stadion.js"],[56712,"px_training.js"],[57081,"cm.js"],[57571,"cmwelt.js"],[57627,"cm_baeck.js"],[58420,"cm_bahn.js"],[59184,"cm_detek.js"],[59901,"cm_markt.js"],[60614,"ff.js"],[60771,"ff_mathe.js"],[62761,"ff_deutsch.js"],[64349,"ff_sach_a.js"],[66598,"ff_sach_b.js"],[68827,"ff_sprachen.js"],[71235,"zm.js"],[72148,"tt.js"],[72361,"data_tagebuch.js"],[72404,"data_hoerspiel.js"],[72563,"leseecke.js"],[72882,"kt.js"],[73185,"comicbuch.js"],[73463,"alce.js"],[73626,"alce_aufg.js"],[73796,"formen.js"],[74247,"data_formen.js"],[74488,"data_formen2.js"],[74710,"spielzeit.js"],[74855,"data_faktmeinung.js"],[74974,"data_es248.js"],[75238,"data_en249.js"],[75477,"data_wissen249.js"],[75908,"data_kunst249.js"],[76191,"data_fussball250.js"],[76315,"data_werte252.js"],[76568,"data_lesen252.js"],[76629,"data_k34_252.js"],[76715,"art254.js"],[76833,"data_werte255.js"],[76971,"data_lesen255.js"],[77107,"forscher255.js"],[77255,"zufall250.js"],[77301,"stufe259.js"],[77311,"advent.js"],[77574,"wdh.js"],[77672,"denk.js"],[77709,"data_viaje265.js"],[77852,"klassenarbeit.js"],[77985,"quizduell.js"],[78108,"neu267.js"],[78373,"prog.js"],[78478,"lernstand.js"],[78545,"blatt.js"],[78647,"data_es271.js"],[78761,"plus269.js"],[78855,"schach.js"],[79082,"schachtaktik.js"],[79253,"fun270.js"],[79416,"data_neu274.js"],[79625,"plus272.js"],[79679,"spiele274.js"],[79802,"kasten.js"],[79906,"erklaer.js"],[80019,"apa.js"],[80100,"neu276.js"],[80241,"spiele276.js"],[80291,"neu277.js"],[80469,"spiele277.js"],[80724,"lernen278.js"],[80984,"spiele278.js"],[81327,"lernen279.js"],[81652,"lernen279b.js"],[82050,"spanisch280.js"],[82342,"mehr281.js"],[82488,"grafik280.js"],[82859,"tiefsee280.js"],[83137,"abenteuer280.js"],[83349,"abenteuer281.js"],[83461,"design281.js"],[83593,"party281.js"],[83724,"grafik281.js"],[83941,"lumi_live.js"],[84057,"sicher.js"],[84241,"stil.js"],[84295,"freunde.js"],[84432,"start.js"],[84442,null],[84452,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '2.82.0';
+  var MAP = {"probe":0,"files":[[9190,"fehler_kern.js"],[9478,null],[9480,"data.js"],[10183,"data_more.js"],[10540,"data_su2.js"],[10767,"data_es.js"],[11109,"data_wissen.js"],[11310,"data_v21.js"],[11993,"data_v24.js"],[12480,"data_v25.js"],[12961,"data_v26.js"],[13060,"data_v29.js"],[13365,"data_v30.js"],[13695,"data_v31.js"],[14001,"data_kunst.js"],[14197,"data_v214.js"],[14300,"data_v216.js"],[14593,"schrift.js"],[14893,"eingabe.js"],[15104,"data_k34m.js"],[15622,"data_k34d.js"],[15976,"data_k34s.js"],[16430,"data_v224.js"],[17303,"data_v225w.js"],[17672,"data_v225k.js"],[18116,"data_herz.js"],[18470,"data_fb226.js"],[18613,"data_tf226.js"],[18820,"data_v227a.js"],[19911,"data_v227b.js"],[20865,"data_h28b.js"],[20905,"data_l28a.js"],[21771,"data_l28b.js"],[22951,"data_schaetz.js"],[23433,"data_party8.js"],[23483,"data_alce.js"],[24143,"data_alce2.js"],[24392,"data_alce3.js"],[24807,"registry.js"],[25321,"app.js"],[26510,"fun.js"],[27090,"fun2.js"],[27406,"atelier.js"],[27780,"kunst225.js"],[27970,"herz.js"],[28334,"reise.js"],[28636,"iglu.js"],[28802,"offline.js"],[28909,"party.js"],[29393,"meine.js"],[29749,"loeffel.js"],[29920,"trend.js"],[30462,"fun228a.js"],[31313,"fun228b.js"],[31974,"kueche.js"],[33013,"stimme.js"],[33068,"klassen.js"],[33217,"freunde_vorab.js"],[33238,"mut.js"],[33660,"schule.js"],[34149,"fussball226.js"],[34471,"schaetzen.js"],[34902,"party8.js"],[35521,"tiere.js"],[35980,"fussball232.js"],[36195,"party8b.js"],[36497,"weg.js"],[36718,"px.js"],[37129,"px_data.js"],[37386,"pxwelt.js"],[37467,"px_abenteuer.js"],[38275,"px_abenteuer2.js"],[39027,"px_abenteuer3.js"],[39411,"px_ski.js"],[40053,"px_wurf.js"],[40582,"px_insel.js"],[41783,"px_kicker.js"],[42718,"px_eis.js"],[43704,"px_run.js"],[44919,"px_brk.js"],[45881,"px_pol.js"],[47232,"px_frog.js"],[48492,"px_angel.js"],[49807,"px_golf.js"],[50841,"px_tauch.js"],[52106,"px_hockey.js"],[53062,"px_lab.js"],[54397,"px_plopp.js"],[55603,"px_stadion.js"],[57107,"px_training.js"],[57476,"cm.js"],[57966,"cmwelt.js"],[58022,"cm_baeck.js"],[58815,"cm_bahn.js"],[59579,"cm_detek.js"],[60296,"cm_markt.js"],[61009,"ff.js"],[61166,"ff_mathe.js"],[63156,"ff_deutsch.js"],[64744,"ff_sach_a.js"],[66993,"ff_sach_b.js"],[69222,"ff_sprachen.js"],[71630,"zm.js"],[72543,"tt.js"],[72756,"data_tagebuch.js"],[72799,"data_hoerspiel.js"],[72958,"leseecke.js"],[73277,"kt.js"],[73580,"comicbuch.js"],[73858,"alce.js"],[74021,"alce_aufg.js"],[74191,"formen.js"],[74642,"data_formen.js"],[74883,"data_formen2.js"],[75105,"spielzeit.js"],[75250,"data_faktmeinung.js"],[75369,"data_es248.js"],[75633,"data_en249.js"],[75872,"data_wissen249.js"],[76303,"data_kunst249.js"],[76586,"data_fussball250.js"],[76710,"data_werte252.js"],[76963,"data_lesen252.js"],[77024,"data_k34_252.js"],[77110,"art254.js"],[77228,"data_werte255.js"],[77366,"data_lesen255.js"],[77502,"forscher255.js"],[77650,"zufall250.js"],[77696,"stufe259.js"],[77706,"advent.js"],[77969,"wdh.js"],[78067,"denk.js"],[78104,"data_viaje265.js"],[78247,"klassenarbeit.js"],[78380,"quizduell.js"],[78503,"neu267.js"],[78768,"prog.js"],[78873,"lernstand.js"],[78940,"blatt.js"],[79042,"data_es271.js"],[79156,"plus269.js"],[79250,"schach.js"],[79477,"schachtaktik.js"],[79648,"fun270.js"],[79811,"data_neu274.js"],[80020,"plus272.js"],[80074,"spiele274.js"],[80197,"kasten.js"],[80301,"erklaer.js"],[80414,"apa.js"],[80495,"neu276.js"],[80636,"spiele276.js"],[80686,"neu277.js"],[80864,"spiele277.js"],[81119,"lernen278.js"],[81379,"spiele278.js"],[81722,"lernen279.js"],[82047,"lernen279b.js"],[82445,"spanisch280.js"],[82737,"mehr281.js"],[82883,"grafik280.js"],[83254,"tiefsee280.js"],[83532,"abenteuer280.js"],[83744,"abenteuer281.js"],[83856,"design281.js"],[83988,"party281.js"],[84119,"grafik281.js"],[84336,"lumi_live.js"],[84452,"sicher.js"],[84636,"stil.js"],[84690,"freunde.js"],[84827,"start.js"],[84837,null],[84847,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -25322,9 +25322,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '2.81.1';
+const APP_VERSION = '2.82.0';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "2.82.0", d: "14.11.2026", t: ["Lumis Pixel-Abenteuer: zwei neue Welten mit zwölf Leveln (Weltraum und Zuckerland)", "Neu: Extra-Kräfte aus den Fragekisten, ein Endgegner am Ende jeder Welt, Fließbänder und Medaillen"] },
   { v: "2.81.1", d: "13.11.2026", t: ["Große Kontrolle aller Aufgaben und Antworten", "Sachunterricht: 44 doppelte Fragen durch neue ersetzt", "Fehler und mehrdeutige Aufgaben behoben, Grammatik und Satzzeichen geglättet"] },
   { v: "2.81.0", d: "13.11.2026", t: ["Neues Design: Inselkarte der Lernwelten", "Vier neue Lern-Abenteuer: Schatzinsel, Bücherburg, London, Forscherreise", "Spielhalle: Sternenreise und Polarlicht-Ritt", "Party: Knick-Monster, Zusammen bis 20, Klatsch-Echo", "Viele neue Aufgaben in allen Fächern"] },
   { v: "2.80.0", d: "13.11.2026", t: ["Spanisch: Geschichten hören, Zeiten, Gespräche, Schreiben", "Neues Lern-Abenteuer: Aventura en Tenerife", "Spielhalle: Inselsprung, Insel-Rallye und Tiefsee-Expedition"] },
@@ -37729,10 +37730,11 @@ function pxABuild(i) {
   }
   A.static = st;
   if (D.th === 'nacht') { const r = pxRnd(i * 31 + 5); A.sky = Array.from({ length: 60 }, () => [r() * 600, r() * 90, r() * 6]); }
+  pxA3Build(A);
   return A;
 }
 function pxATile(A, tx, ty) { if (tx < 0 || tx >= A.w) return '#'; if (ty < 0) return ' '; if (ty >= A.h) return ' '; return A.grid[ty][tx]; }
-const pxASolid = c => c === '#' || c === 'I' || c === 'Q' || c === 'q' || c === 'T' || c === 'J' || c === 'W' || c === 'Z';
+const pxASolid = c => c === '#' || c === 'I' || c === 'Q' || c === 'q' || c === 'T' || c === 'J' || c === 'W' || c === 'Z' || c === '>' || c === '<';
 
 
 function pxAMoveX(A, p, onHit) {
@@ -37770,6 +37772,7 @@ function pxAPlay(i) {
   const p = () => A.p;
   const hurt = (from) => {
     const P = A.p; if (P.inv > 0 || A.phase !== 'play') return;
+    if (pxA3Schutz(run, A)) return;
     P.vine = null; P.vineCd = .5;
     A.hearts--; P.inv = 1.6; P.vy = -220; P.vx = (from != null ? Math.sign(P.x - from) || -P.dir : -P.dir) * 150; P.on = false; A.shake = .25; pxSfx.hurt();
     pxBurst(run, P.x, P.y - 8, ['#ef4b4b', '#ffffff'], 10);
@@ -37790,10 +37793,10 @@ function pxAPlay(i) {
     const bx = A.ents.find(e => e.k === 'kiste' && e.tx === tx && e.ty === ty); if (!bx) return;
     bx.bump = .2; pxSfx.step();
     if (bx.used || run.paused) return;
-    ask('❓ Fragekiste', 'Richtig = 3 Fische!', () => {
+    ask('❓ Fragekiste', 'Richtig = 3 Fische und eine Extra-Kraft!', () => {
       bx.used = true; A.grid[ty][tx] = 'q';
       for (let k = 0; k < 3; k++) A.ents.push({ k: 'fisch', x: tx * PXA_T + 8 + (k - 1) * 12, y: ty * PXA_T - 10, ph: k, vy: -160 - k * 30, pop: 1.2 });
-      A.fishMax += 3; pxSfx.coin();
+      A.fishMax += 3; pxSfx.coin(); pxA3Power(run, A);
     }, () => { bx.bump = .4; });
   };
   const done = () => {
@@ -37801,12 +37804,13 @@ function pxAPlay(i) {
     const S0 = pxAS(), old = S0.lv[i] || {}, ns = A.stars.size, first = !S0.lv[i];
     const newStars = Math.max(0, ns - (old.s | 0));
     S0.lv[i] = { s: Math.max(old.s | 0, ns), f: Math.max(old.f | 0, A.fish), d: 1, n: (old.n | 0) + 1 };
+    const med = pxA3Medaillen(A, S0.lv[i], old);
     pxReward(20 + ns * 10 + A.solved * 5, (first ? 1 : 0) + newStars);
     const wl = pxAWorldLv(pxAW(i)), world = first && i === wl[wl.length - 1], wn = pxAW(i), nextW = i + 1 < PXA_LEVELS.length && pxAW(i + 1) !== wn;
     if (world) pxReward(100, 3);
     pxAfter(run, 1100, () => pxEnd(run, {
       title: world ? `Welt ${wn} geschafft!` : 'Level geschafft!', big: world ? '🏆' + ((PXA_WELTEN[wn] && PXA_WELTEN[wn].e) || '⭐') : '🎉', stars: [ns, 3],
-      lines: [`🐟 ${A.fish} von ${A.fishMax} Fischen`, `🔒 ${A.solved} Rätsel gelöst`, world ? (PXA_WELTEN[wn + 1] ? `Du hast Welt ${wn} geschafft! Jetzt wartet Welt ${wn + 1}: ${PXA_WELTEN[wn + 1].d}! ${PXA_WELTEN[wn + 1].e}` : 'Du hast alle sechs Welten geschafft! Lumi ist jetzt Abenteuer-Meisterin! 🏆') : newStars ? `⭐ ${newStars} neue Sterne, +${newStars + (first ? 1 : 0)} Münzen` : (first ? '+1 Münze' : '')].filter(Boolean),
+      lines: [`🐟 ${A.fish} von ${A.fishMax} Fischen`, `🔒 ${A.solved} Rätsel gelöst`, med, world ? (PXA_WELTEN[wn + 1] ? `Du hast Welt ${wn} geschafft! Jetzt wartet Welt ${wn + 1}: ${PXA_WELTEN[wn + 1].d}! ${PXA_WELTEN[wn + 1].e}` : 'Du hast alle Welten geschafft! Lumi ist jetzt Abenteuer-Meisterin! 🏆') : newStars ? `⭐ ${newStars} neue Sterne, +${newStars + (first ? 1 : 0)} Münzen` : (first ? '+1 Münze' : '')].filter(Boolean),
       btns: [nextW ? [`Zu Welt ${wn + 1} ▶`, () => pxAMap(i + 1), true] : i + 1 < PXA_LEVELS.length ? ['Weiter ▶', () => pxAPlay(i + 1), true] : ['Zur Karte', () => pxAMap(i), true], ['Nochmal', () => pxAPlay(i)], ['Karte', () => pxAMap(i)]]
     }));
   };
@@ -37837,9 +37841,10 @@ function pxAPlay(i) {
     if (pxKeyHit(run, 'u') && !locked) P.jb = .14; else P.jb -= dt;
     P.coy = P.on ? .1 : P.coy - dt;
     if (P.jb > 0 && P.coy > 0) { P.vy = -PXA_JUMP; P.jb = 0; P.coy = 0; P.on = false; P.plat = null; pxSfx.jump(); pxBurst(run, P.x, P.y, ['#ffffff', '#dfe9f5'], 5, { v: 30, up: 10, life: .35 }); }
+    else if (P.jb > 0 && pxA3Doppel(run, A)) P.jb = 0;
     if (!run.keys.u && P.vy < -140 && P.boost <= 0) P.vy = -140;
     if (P.boost > 0) P.boost -= dt;
-    const wasOn = P.on; P.vy = Math.min(P.vy + PXA_GRAV * dt, 380);
+    const wasOn = P.on; P.vy = Math.min(P.vy + PXA_GRAV * (A.gs || 1) * dt, 380);
     P.x += P.vx * dt; pxAMoveX(A, P, (c, tx) => { if (c === 'T') gateHit(tx); });
     const prevY = P.y; P.y += P.vy * dt; P.on = false; P.ground = '';
     pxAMoveY(A, P, prevY, (c, tx, ty) => { if (c === 'Q' || c === 'q') boxHit(tx, ty); });
@@ -37852,7 +37857,7 @@ function pxAPlay(i) {
     if (P.on && !wasOn) { P.sq = .12; if (P.vy === 0) pxBurst(run, P.x, P.y, ['#ffffff'], 3, { v: 25, up: 5, life: .25 }); }
     if (P.sq > 0) P.sq -= dt;
 
-    if (P.on && P.ground === 'J') { const f = A.ents.find(e => e.k === 'feder' && e.tx === P.gx); if (f) f.sq = .25; P.vy = -PXA_SPRING; P.on = false; P.boost = .6; pxSfx.spring(); }
+    if (P.on && P.ground === 'J') { const f = A.ents.find(e => e.k === 'feder' && e.tx === P.gx); if (f) f.sq = .25; P.vy = -PXA_SPRING * (A.vs || 1); P.on = false; P.boost = .6; pxSfx.spring(); }
     }
     A.ents.forEach(e => { if (e.k === 'feder' && e.sq > 0) e.sq -= dt; if (e.k === 'kiste' && e.bump > 0) e.bump -= dt; if (e.k === 'tor' && e.cd > 0) e.cd -= dt; });
 
@@ -37860,7 +37865,7 @@ function pxAPlay(i) {
       if (e.k !== 'duese') return;
       const cyc = (A.t + e.ph) % 3.2; e.on = cyc > 2.0; e.warn = cyc > 1.5 && cyc <= 2.0;
       const cx = e.tx * PXA_T + 8, top = e.ty * PXA_T;
-      if (e.on && Math.abs(P.x - cx) < 10 && P.y <= top + 1 && P.y > top - 96 && P.vy > -420) { P.vy = -470; P.on = false; P.plat = null; P.boost = .5; if (!e.puff) { pxSfx.spring(); e.puff = 1; } }
+      if (e.on && Math.abs(P.x - cx) < 10 && P.y <= top + 1 && P.y > top - 96 && P.vy > -420) { P.vy = -470 * (A.vs || 1); P.on = false; P.plat = null; P.boost = .5; if (!e.puff) { pxSfx.spring(); e.puff = 1; } }
       if (!e.on) e.puff = 0;
       const jc = W2 && W2.jet === 'sprenger' ? ['#8fd0ff', '#3f86ee'] : W2 && W2.jet === 'windrad' ? ['#ffffff', '#cfe5ff'] : ['#ffffff', '#dfe9f5'];
       if (e.on && Math.random() < .5) run.parts.push({ x: cx - 5 + Math.random() * 10, y: top - 2, vx: (Math.random() - .5) * 14, vy: -90 - Math.random() * 60, life: .9, col: Math.random() < .5 ? jc[0] : jc[1], s: 2, g: 0 });
@@ -37874,6 +37879,7 @@ function pxAPlay(i) {
     if (below === '~' || P.y > A.h * PXA_T + 30) {
       if (A.phase === 'play') { pxBurst(run, P.x, A.h * PXA_T - 32, hot ? ['#ffd84a', '#ff9d2e', '#ff6a2a'] : W2 && W2.wat === 'treibsand' ? ['#dcb874', '#c9a25a', '#ffffff'] : W2 && W2.wat === 'himmel' ? ['#ffffff', '#dce8ff'] : ['#bfe4ff', '#ffffff', '#3f86e8'], 16, { v: 70, up: 80 }); pxSfx.pop(); A.hearts--; A.msg = A.hearts > 0 ? (hot ? 'Autsch, heiß! Zurück zur Fahne.' : (W2 && W2.fall) || 'Platsch! Zurück zur Fahne.') : 'Puh! Nochmal ab der Fahne.'; A.msgT = 1.8; respawn(A.hearts <= 0); }
     }
+    pxA3Step(run, A, dt, hurt);
 
     A.ents.forEach(e => {
       if (e.gone) return;
@@ -37932,7 +37938,7 @@ function pxAPlay(i) {
       } else if (e.k === 'truhe') {
         if (!e.open && Math.abs(dx) < 14 && Math.abs(P.y - e.y) < 12) { e.open = true; A.fish += 10; A.fishMax += 10; pxSfx.win(); pxBurst(run, e.x, e.y - 12, ['#ffd84a', '#fff3c4', '#ffffff', '#8fd0ff'], 40, { v: 110, up: 60 }); A.msg = W2 && W2.schatz ? W2.schatz : W2 ? 'Der Schatz der Vulkan-Insel! +10 Fische' : 'Der Schatz der Eisberg-Insel! +10 Fische'; A.msgT = 2.5; }
       } else if (e.k === 'iglu') {
-        if (A.phase === 'play' && dx > -10 && dx < 30 && P.y > e.y - 30) done();
+        if (A.phase === 'play' && dx > -10 && dx < 30 && P.y > e.y - 30 && pxA3Frei(A)) done();
         if (A.phase === 'ende' && P.x > e.x + 2) { A.p.hide = true; }
       }
     });
@@ -37943,7 +37949,7 @@ function pxAPlay(i) {
     const target = P.x - run.W * .42 + P.vx * .3, maxC = Math.max(0, A.w * PXA_T - run.W);
     A.cam += (target - A.cam) * Math.min(1, dt * 5); A.cam = Math.max(0, Math.min(maxC, A.cam));
     pxPartsStep(run, dt);
-    pxHud(`<span>🐟 ${A.fish}</span><span>${'★'.repeat(A.stars.size)}<span style="opacity:.35">${'★'.repeat(3 - A.stars.size)}</span></span>`);
+    pxHud(`<span>🐟 ${A.fish}</span><span>${'★'.repeat(A.stars.size)}<span style="opacity:.35">${'★'.repeat(3 - A.stars.size)}</span></span>${pxA3Hud(A)}`);
   }, g => pxADraw(run, A, g));
 }
 
@@ -38007,6 +38013,7 @@ function pxADraw(run, A, g) {
       if (!e.open && Math.abs(P.x - (e.tx * PXA_T + 8)) < 56) { const by = e.top * PXA_T - 16 + Math.round(Math.sin(A.t * 4) * 2); pxRect(g, x + 2, by, 12, 11, PXC.k); pxRect(g, x + 3, by + 1, 10, 9, '#fff8e7'); pxText(g, '?', x + 6, by + 2, PXC.m); }
     }
   });
+  pxA3Draw(run, A, g, cam);
 
   if (!P.hide && !(P.inv > 0 && Math.floor(P.inv * 12) % 2)) {
     let pose = 'i', fr = Math.floor(A.t * 1.4) % 3 === 0 && (A.t % .7) < .12 ? 1 : 0;
@@ -38018,6 +38025,7 @@ function pxADraw(run, A, g) {
     pxDraw(g, `lumi_${pose}_${fr}`, P.x - 10 - cam, P.y - 20, P.dir < 0);
     if (W2) pxAHat2(g, pose, fr, P.x - 10 - cam, P.y - 20, P.dir < 0, W2.hat);
   }
+  pxA3Aura(run, A, g, cam);
   pxPartsDraw(g, run, cam, 0);
   g.restore();
 
@@ -38457,6 +38465,7 @@ Object.assign(PXGEN, {
 
 function pxABg3(g, run, A, cam) {
   const W = run.W, H = run.H, th = A.D.th, wd = PXA_W2[th].wd, t = A.t;
+  if (wd >= 7) return pxABg7(g, run, A, cam);
   const sonne = (x, y, r, a, b) => { pxEll(g, x - r, y - r, r * 2, r * 2, a); pxEll(g, x - r + 3, y - r + 3, r * 2 - 6, r * 2 - 6, b); };
   if (wd === 3) {
     if (th === 'sumpf') { for (let i = 0; i < 40; i++) { const x = ((i * 53 - cam * .1) % W + W) % W, y = (i * 37) % 90; pxRect(g, x, y, 1, 1, i % 3 ? '#8fa4d8' : '#ffffff'); } pxEll(g, W - 50, 10, 18, 18, '#fff3c4'); }
@@ -38529,6 +38538,7 @@ function pxAHat2(g, pose, fr, x, y, flip, style) {
   if (pose === 'w' && (fr === 1 || fr === 3)) by += 1; if (pose === 'i' && fr === 2) by += 1;
   let hx = bx + Math.round(bw / 2) - 6; const hy = by - 3; if (flip) hx = 20 - hx - 13;
   x = Math.round(x) + hx; y = Math.round(y) + hy; const K = PXC.k;
+  if (pxAHat3(g, x, y, flip, style)) return;
   if (style === 'safari') { pxRect(g, x, y + 3, 13, 2, K); pxRect(g, x + 1, y + 3, 11, 1, '#c8b070'); pxEll(g, x + 2, y - 2, 9, 7, K); pxEll(g, x + 3, y - 1, 7, 5, '#d8c080'); pxRect(g, x + 3, y + 2, 7, 1, '#6b8a3a'); }
   else if (style === 'brille') { pxRect(g, x + 1, y + 1, 11, 3, K); pxRect(g, x + 2, y + 2, 9, 1, '#8a5a30'); pxEll(g, x + 2, y - 1, 4, 4, K); pxEll(g, x + 7, y - 1, 4, 4, K); pxRect(g, x + 3, y, 2, 2, '#8fd0ff'); pxRect(g, x + 8, y, 2, 2, '#8fd0ff'); }
   else if (style === 'stirnband') { pxRect(g, x + 1, y + 3, 11, 3, K); pxRect(g, x + 2, y + 4, 9, 1, '#ef4b4b'); pxRect(g, (flip ? x + 11 : x), y + 4, 2, 4, K); pxRect(g, (flip ? x + 11 : x), y + 5, 1, 2, '#ef4b4b'); }
@@ -38543,6 +38553,7 @@ const PXA_WELTEN = [null,
   { n: 'FUSSBALLSTADT', d: 'die Fußballstadt', e: '⚽', see: '#2c63c9', welle: '#3f86e8', nodes: [[38, 152], [76, 134], [112, 154], [146, 130], [180, 150], [210, 104]] }
 ];
 function pxAMapArt(g, W, o, wd, t) {
+  if (wd >= 7) return pxAMapArt3(g, W, o, wd, t);
   if (wd === 3) { pxEll(g, o + 4, 64, 250, 128, PXC.k); pxEll(g, o + 6, 66, 246, 122, '#e9c27a'); pxEll(g, o + 14, 70, 230, 110, '#2f8f46'); pxEll(g, o + 30, 78, 200, 86, '#3fae55');
     for (let x = 30; x < 230; x += 4) pxRect(g, o + x, 112 + Math.round(Math.sin(x / 20) * 8), 4, 3, '#3a9cc0');
     [[24, 128], [56, 168], [94, 112], [136, 168], [168, 112], [236, 136], [200, 168]].forEach(([x, y]) => pxDraw(g, 'urwaldbaum', o + x - 18, y - 48));
@@ -38615,7 +38626,7 @@ function pxAMap(sel) {
       const i = base + k, open = pxAOpen(i), dn = !!S0.lv[i];
       pxEll(g, o + x - 11, y - 8, 22, 16, PXC.k); pxEll(g, o + x - 10, y - 7, 20, 14, dn ? '#5cc85c' : open ? oc : '#5d6878'); pxEll(g, o + x - 8, y - 6, 16, 6, dn ? '#8fe08f' : open ? '#ffffff55' : '#9aa7b8');
       pxText(g, open ? String(k + 1) : '?', o + x, y - 3, '#ffffff', 1, 'c', PXC.k);
-      const st = (S0.lv[i] && S0.lv[i].s) | 0; for (let q = 0; q < 3; q++) pxText(g, '★', o + x - 9 + q * 7, y + 10, q < st ? '#ffd84a' : '#5d6878', 1, 'l');
+      const st = (S0.lv[i] && S0.lv[i].s) | 0; for (let q = 0; q < 3; q++) pxText(g, '★', o + x - 9 + q * 7, y + 10, q < st ? '#ffd84a' : '#5d6878', 1, 'l'); if (dn) pxA3MapMed(g, S0.lv[i], o + x, y + 20);
     });
     const [lx, ly] = NODES[cur - base], pose = go >= 0 ? 'c' : 'i', fr = go >= 0 ? 0 : (Math.floor(t * 2) % 3 === 0 ? 1 : 0), yy = ly - 26 - Math.abs(Math.round(Math.sin(t * 4) * 2));
     pxDraw(g, `lumi_${pose}_${fr}`, o + lx - 10, yy);
@@ -39010,6 +39021,390 @@ PXA_LEVELS.push(
     "#####################J########W#      #########################################J#######################        #############################################J##########################",
     "################################~~~~~~#################################################################~~~~~~~~########################################################################",
     "################################~~~~~~#################################################################~~~~~~~~########################################################################"
+  ] }
+);
+
+/*@@src px_abenteuer3.js@@*/
+
+
+
+
+
+PXA_WX[7] = { walker: 'alien', flyer: 'ufo', small: 'mondkaefer', ball: 'felsball', end: 'rakete', plat: 'k2_metallo_0', jet: 'duese', hat: 'helm', truhe: 'truhe', fall: 'Huiii, ins All geschwebt! Zurück zur Fahne.', schatz: 'Der Schatz der Sterne! +10 Fische', gs: .72 };
+PXA_WX[8] = { walker: 'pudding', flyer: 'zuckerbiene', small: 'bonbon', ball: 'kirsche', end: 'kuchenhaus', plat: 'k2_waffelo_0', jet: 'duese', hat: 'kochmuetze', truhe: 'truhe', fall: 'Platsch, in den Kakao! Zurück zur Fahne.', schatz: 'Der süße Schatz! +10 Fische' };
+const PXA_THEMES7 = {
+  mondland: [7, { gr: 'mond', haz: 'kristall', wat: 'weltall', t: 'satschuessel', s: 'mondstein' }, ['#05061a', '#090b26', '#0e1134', '#141842', '#1b2050']],
+  krater: [7, { gr: 'mond', haz: 'kristall', wat: 'weltall', t: 'satschuessel', s: 'mondstein' }, ['#0a0618', '#120a26', '#1a0f36', '#241446', '#2e1a56']],
+  station: [7, { gr: 'metall', haz: 'kristall', wat: 'weltall', t: 'antenne', s: 'mondstein' }, ['#04081a', '#081028', '#0c1838', '#122248', '#182c58']],
+  kometen: [7, { gr: 'komet', haz: 'kristall', wat: 'weltall', t: 'satschuessel', s: 'mondstein' }, ['#03101e', '#06182c', '#0a223c', '#102e4e', '#183a60']],
+  ringe: [7, { gr: 'mond', haz: 'kristall', wat: 'weltall', t: 'antenne', s: 'mondstein' }, ['#10061e', '#1a0a2e', '#261040', '#341852', '#442264']],
+  sternentor: [7, { gr: 'metall', haz: 'kristall', wat: 'weltall', t: 'antenne', s: 'satschuessel' }, ['#06041a', '#0e0828', '#180e3a', '#24164e', '#322062']],
+  bonbonwiese: [8, { gr: 'keks', haz: 'zuckerspitz', wat: 'kakao', t: 'lolli', s: 'cupcake' }, ['#58b4f0', '#78c4f4', '#9cd6f8', '#c4e8fc', '#fde4f0']],
+  schokofluss: [8, { gr: 'schoko', haz: 'zuckerspitz', wat: 'kakao', t: 'lolli', s: 'cupcake' }, ['#6ab0e8', '#88c2ee', '#a8d4f4', '#cce6f8', '#fff0d8']],
+  eisdiele: [8, { gr: 'waffel', haz: 'zuckerspitz', wat: 'sirup', t: 'lolli', s: 'cupcake' }, ['#4aa8e8', '#6cbcf0', '#94d0f6', '#c0e4fa', '#ecf8ff']],
+  lebkuchen: [8, { gr: 'keks', haz: 'zuckerspitz', wat: 'kakao', t: 'lolli', s: 'cupcake' }, ['#3b2a6e', '#6a3b8f', '#b04f8f', '#ef7a6a', '#ffb36b']],
+  zuckerwatte: [8, { gr: 'watte', haz: 'zuckerspitz', wat: 'himmel', t: 'lolli', s: 'cupcake' }, ['#c86ad8', '#dc88e4', '#eca8ee', '#f8c8f4', '#ffe8fa']],
+  kuchenschloss: [8, { gr: 'schoko', haz: 'zuckerspitz', wat: 'sirup', t: 'lolli', s: 'cupcake' }, ['#4a2a7a', '#6a3a98', '#8e52b4', '#b674cc', '#e0a4e4']]
+};
+Object.keys(PXA_THEMES7).forEach(th => { const [wd, cfg, sky] = PXA_THEMES7[th]; PXA_W2[th] = Object.assign({ wd }, PXA_WX[wd], cfg); PXA_THEME[th] = { sky, name: th }; });
+Object.assign(PXA_WAT, { weltall: [null, null], kakao: ['k2_kakao_', '#6b3e22'], sirup: ['k2_sirup_', '#e0568f'] });
+PXA_WELTEN.push(
+  { n: 'WELTRAUM', d: 'der Weltraum', e: '🚀', see: '#070a22', welle: '#1b2050', nodes: [[38, 150], [76, 128], [112, 150], [148, 126], [182, 146], [212, 100]] },
+  { n: 'ZUCKERLAND', d: 'das Zuckerland', e: '🍭', see: '#d86aa0', welle: '#f4a8cc', nodes: [[38, 152], [74, 132], [110, 154], [146, 130], [180, 150], [210, 106]] }
+);
+const PXA_BOSS = [null, 'DIE RIESEN-KRABBE', 'DIE RIESEN-EIDECHSE', 'DER AFFENKÖNIG', 'DER RIESEN-SKORPION', 'DAS DONNERSCHAF', 'BELLO DER GROSSE', 'DER GROSSE GLUBSCH', 'KÖNIG WACKELPUDDING'];
+
+
+Object.assign(PXA_K3, {
+  mond: (g, v, top, r) => { pxA3fill(g, r, '#8a8fa4', ['#767b90', '#9ca1b6', '#6a6f84']); pxEll(g, 3 + v * 3, 7, 6, 4, '#6a6f84'); pxEll(g, 4 + v * 3, 8, 4, 2, '#787d92'); if (top) { pxRect(g, 0, 0, 16, 3, '#c4c8d8'); pxRect(g, 0, 0, 16, 1, '#eef0f8'); pxRect(g, 4 + v * 3, 3, 3, 1, '#c4c8d8'); pxRect(g, 11 - v * 2, 3, 2, 1, '#aeb2c4'); } },
+  metall: (g, v, top) => { pxRect(g, 0, 0, 16, 16, '#5d6878'); pxRect(g, 0, 0, 16, 1, '#7a8698'); pxRect(g, 0, 15, 16, 1, '#3a4252'); pxRect(g, 0, 0, 1, 16, '#7a8698'); pxRect(g, 15, 0, 1, 16, '#3a4252'); [[2, 2], [13, 2], [2, 13], [13, 13]].forEach(([x, y]) => pxRect(g, x, y, 1, 1, '#c8ccd4')); if (v % 2) pxRect(g, 5, 7, 6, 2, '#3fd1c8'); else pxRect(g, 4, 6, 8, 1, '#4a5464'); if (top) { pxRect(g, 0, 0, 16, 3, '#9aa7b8'); pxRect(g, 0, 0, 16, 1, '#dfe9f5'); for (let x = 1; x < 16; x += 4) pxRect(g, x, 3, 2, 1, '#ffd84a'); } },
+  komet: (g, v, top, r) => { pxA3fill(g, r, '#4a7fa8', ['#3a6a90', '#62a0c8', '#2e5878']); pxLine(g, 2 + v * 4, 4, 6 + v * 4, 10, '#8fd0ff'); pxRect(g, 10 - v * 3, 11, 2, 2, '#bfe4ff'); if (top) { pxRect(g, 0, 0, 16, 3, '#bfe4ff'); pxRect(g, 0, 0, 16, 1, '#ffffff'); pxRect(g, 3 + v * 4, 3, 2, 2, '#8fd0ff'); } },
+  keks: (g, v, top, r) => { pxA3fill(g, r, '#c8914e', ['#b07a3c', '#d8a460', '#5a3a22']); pxRect(g, 3 + v * 3, 8, 2, 2, '#5a3a22'); pxRect(g, 11 - v * 2, 12, 2, 2, '#5a3a22'); if (top) { pxRect(g, 0, 0, 16, 4, '#ff8fc2'); pxRect(g, 0, 0, 16, 1, '#ffd0e6'); for (let x = 1; x < 16; x += 5) pxRect(g, x + (v % 2), 4, 2, 2 + ((x + v) % 2), '#ff8fc2'); pxRect(g, 3 + v * 4, 1, 1, 1, '#ffffff'); pxRect(g, 10 - v * 2, 2, 1, 1, '#ffd84a'); } },
+  schoko: (g, v, top) => { pxRect(g, 0, 0, 16, 16, '#6b3e22'); pxRect(g, 0, 7, 16, 1, '#4a2a16'); pxRect(g, 0, 15, 16, 1, '#4a2a16'); pxRect(g, v % 2 ? 5 : 10, 0, 1, 7, '#4a2a16'); pxRect(g, v % 2 ? 12 : 3, 8, 1, 7, '#4a2a16'); pxRect(g, 1, 1, 3, 1, '#8a5a36'); pxRect(g, 1, 9, 3, 1, '#8a5a36'); if (top) { pxRect(g, 0, 0, 16, 3, '#fff8e7'); pxRect(g, 0, 0, 16, 1, '#ffffff'); for (let x = 2; x < 16; x += 5) pxRect(g, x, 3, 2, 1 + ((x + v) % 2), '#fff8e7'); } },
+  waffel: (g, v, top) => { pxRect(g, 0, 0, 16, 16, '#e0b070'); for (let k = 0; k < 16; k += 4) { pxRect(g, k, 0, 1, 16, '#b8843e'); pxRect(g, 0, k, 16, 1, '#b8843e'); } pxRect(g, 1, 1, 2, 1, '#f4d09a'); pxRect(g, 9, 9, 2, 1, '#f4d09a'); if (top) { pxRect(g, 0, 0, 16, 4, v % 2 ? '#ff8fc2' : '#fff8e7'); pxRect(g, 0, 0, 16, 1, '#ffffff'); pxRect(g, 2 + v * 3, 4, 2, 2, v % 2 ? '#ff8fc2' : '#fff8e7'); } },
+  watte: (g, v, top, r) => { pxRect(g, 0, 0, 16, 16, '#ffd0ec'); for (let i = 0; i < 5; i++) pxEll(g, Math.floor(r() * 12), 4 + Math.floor(r() * 10), 6, 4, '#ffb4e0'); pxRect(g, 0, 15, 16, 1, '#f09ad0'); if (top) { g.clearRect(0, 0, 16, 4); pxEll(g, -2, 0, 10, 8, '#ffe8f6'); pxEll(g, 6, 1, 10, 7, '#ffe8f6'); pxEll(g, 3, -1, 8, 7, '#ffffff'); } },
+  kristall: (g) => { const K = PXC.k; for (let i = 0; i < 3; i++) { const x = i * 5, h = i === 1 ? 4 : 7; pxTri(g, x, 15, x + 3, h, x + 6, 15, K); pxTri(g, x + 1, 15, x + 3, h + 2, x + 5, 15, '#3fd1c8'); pxRect(g, x + 3, h + 3, 1, 4, '#c8fff8'); } },
+  zuckerspitz: (g) => { const K = PXC.k; for (let i = 0; i < 2; i++) { const x = i * 8; pxTri(g, x, 15, x + 4, 3, x + 8, 15, K); pxTri(g, x + 1, 15, x + 4, 5, x + 7, 15, '#ffffff'); pxRect(g, x + 3, 8, 3, 2, '#ef4b4b'); pxRect(g, x + 2, 12, 5, 2, '#ef4b4b'); } },
+  kakao: (g, v) => { pxRect(g, 0, 0, 16, 16, '#6b3e22'); pxRect(g, 0, 0, 16, 4, '#8a5a36'); for (let x = 0; x < 16; x++) pxRect(g, x, Math.round(1.5 + Math.sin((x + v * 4) / 16 * Math.PI * 2) * 1.5), 1, 1, '#d8a878'); pxRect(g, (v * 6) % 13, 9, 3, 1, '#8a5a36'); },
+  sirup: (g, v) => { pxRect(g, 0, 0, 16, 16, '#e0568f'); pxRect(g, 0, 0, 16, 4, '#f48ab4'); for (let x = 0; x < 16; x++) pxRect(g, x, Math.round(1.5 + Math.sin((x + v * 4) / 16 * Math.PI * 2) * 1.5), 1, 1, '#ffd0e6'); pxEll(g, 4 + v * 6, 8, 3, 3, '#f48ab4'); },
+  band: (g, v) => { const K = PXC.k; pxRect(g, 0, 0, 16, 16, '#3a4252'); pxRect(g, 0, 0, 16, 6, K); pxRect(g, 0, 1, 16, 4, '#7a8698'); for (let x = -8; x < 16; x += 8) { const o = x + (v % 4) * 2; pxRect(g, o + 2, 2, 2, 2, '#ffd84a'); pxRect(g, o + 4, 3, 1, 1, '#ffd84a'); pxRect(g, o + 3, 1, 1, 1, '#ffd84a'); pxRect(g, o + 3, 4, 1, 1, '#ffd84a'); } pxEll(g, 1, 8, 6, 6, K); pxEll(g, 9, 8, 6, 6, K); pxRect(g, 3, 10, 2, 2, '#9aa7b8'); pxRect(g, 11, 10, 2, 2, '#9aa7b8'); }
+});
+
+
+Object.assign(PXGEN, {
+  alien: (v, fr) => { const [c, g] = pxCanvas(20, 16), K = PXC.k; pxRect(g, 6, 0, 1, 4, K); pxRect(g, 13, 0, 1, 4, K); pxRect(g, 5, 0, 3, 2, '#ffd84a'); pxRect(g, 12, 0, 3, 2, '#ffd84a'); pxEll(g, 2, 3, 16, 12, K); pxEll(g, 3, 4, 14, 10, '#5cc85c'); pxRect(g, 5, 5, 4, 1, '#9be38f'); pxEll(g, 6, 5, 8, 6, '#ffffff'); pxRect(g, 9 + (fr ? 1 : 0), 7, 2, 3, K); pxRect(g, 7, 12, 6, 1, K); pxRect(g, fr ? 4 : 5, 14, 4, 2, K); pxRect(g, fr ? 12 : 11, 14, 4, 2, K); return c; },
+  ufo: (v, fr) => { const [c, g] = pxCanvas(22, 14), K = PXC.k; pxEll(g, 6, 0, 10, 9, K); pxEll(g, 7, 1, 8, 7, '#8fd0ff'); pxRect(g, 9, 2, 2, 2, '#ffffff'); pxEll(g, 0, 5, 22, 8, K); pxEll(g, 1, 6, 20, 6, '#a98bff'); pxRect(g, 2, 8, 18, 1, '#7a5acd'); for (let i = 0; i < 4; i++) pxRect(g, 4 + i * 4, 9, 2, 2, (i + fr) % 2 ? '#ffd84a' : '#ff8fc2'); return c; },
+  mondkaefer: (v, fr) => { const [c, g] = pxCanvas(14, 10), K = PXC.k; pxEll(g, 1, 1, 12, 8, K); pxEll(g, 2, 2, 10, 6, '#7a5acd'); pxRect(g, 7, 2, 1, 6, K); pxRect(g, 4, 3, 2, 2, '#c8b4ff'); pxRect(g, 10, 4, 2, 2, '#ffffff'); pxRect(g, 11, 5, 1, 1, K); pxRect(g, fr ? 2 : 3, 8, 2, 2, K); pxRect(g, fr ? 10 : 9, 8, 2, 2, K); return c; },
+  pudding: (v, fr) => { const [c, g] = pxCanvas(20, 16), K = PXC.k, s = fr ? 1 : 0; pxEll(g, 8, 0, 5, 5, K); pxEll(g, 9, 1, 3, 3, '#ef4b4b'); pxEll(g, 2 - s, 3 + s, 16 + s * 2, 13 - s, K); pxRect(g, 1 - s, 10, 18 + s * 2, 6, K); pxEll(g, 3 - s, 4 + s, 14 + s * 2, 11 - s, '#ff8fc2'); pxRect(g, 2 - s, 10, 16 + s * 2, 5, '#ff8fc2'); pxRect(g, 2 - s, 13, 16 + s * 2, 2, '#e0568f'); pxRect(g, 5, 5 + s, 5, 1, '#ffd0e6'); pxRect(g, 6, 8, 2, 3, K); pxRect(g, 12, 8, 2, 3, K); pxRect(g, 6, 8, 1, 1, '#ffffff'); pxRect(g, 12, 8, 1, 1, '#ffffff'); pxRect(g, 8, 12, 4, 1, K); return c; },
+  zuckerbiene: (v, fr) => { const [c, g] = pxCanvas(22, 14), K = PXC.k; pxEll(g, 5, fr ? 0 : 2, 7, 6, K); pxEll(g, 6, fr ? 1 : 3, 5, 4, '#dff4ff'); pxEll(g, 10, fr ? 1 : 0, 7, 6, K); pxEll(g, 11, fr ? 2 : 1, 5, 4, '#dff4ff'); pxEll(g, 2, 4, 18, 10, K); pxEll(g, 3, 5, 16, 8, '#ffd84a'); pxRect(g, 7, 5, 2, 8, K); pxRect(g, 11, 5, 2, 8, K); pxRect(g, 15, 7, 2, 2, K); pxRect(g, 15, 7, 1, 1, '#ffffff'); pxRect(g, 0, 8, 2, 2, K); return c; },
+  bonbon: (v, fr) => { const [c, g] = pxCanvas(14, 10), K = PXC.k; pxTri(g, 0, 1, 4, 5, 0, 9, K); pxTri(g, 13, 1, 9, 5, 13, 9, K); pxTri(g, 1, 3, 3, 5, 1, 7, '#ffd84a'); pxTri(g, 12, 3, 10, 5, 12, 7, '#ffd84a'); pxEll(g, 2, 0, 10, 10, K); pxEll(g, 3, 1, 8, 8, fr ? '#3fd1c8' : '#4ad8d0'); pxRect(g, 4 + (fr ? 1 : 0), 2, 2, 6, '#ffffff'); pxRect(g, 8, 4, 2, 2, K); pxRect(g, 8, 4, 1, 1, '#ffffff'); return c; },
+  kirsche: (v, fr) => { const [c, g] = pxCanvas(10, 10), K = PXC.k; pxEll(g, 0, 0, 10, 10, K); pxEll(g, 1, 1, 8, 8, '#ef4b4b'); const q = [[2, 2], [6, 2], [6, 6], [2, 6]][fr % 4]; pxRect(g, q[0], q[1], 2, 2, '#ffb0b0'); return c; },
+  satschuessel: () => { const [c, g] = pxCanvas(24, 30), K = PXC.k; pxRect(g, 10, 14, 4, 16, K); pxRect(g, 11, 14, 2, 15, '#9aa7b8'); pxRect(g, 6, 28, 12, 2, K); pxEll(g, 1, 0, 22, 16, K); pxEll(g, 2, 1, 20, 14, '#dfe9f5'); pxEll(g, 5, 3, 14, 9, '#9aa7b8'); pxLine(g, 12, 7, 19, 1, K); pxRect(g, 18, 0, 3, 3, '#ef4b4b'); return c; },
+  mondstein: () => { const [c, g] = pxCanvas(16, 10), K = PXC.k; pxEll(g, 0, 2, 11, 9, K); pxEll(g, 1, 3, 9, 7, '#9ca1b6'); pxEll(g, 8, 5, 8, 6, K); pxEll(g, 9, 6, 6, 4, '#767b90'); pxRect(g, 3, 4, 3, 1, '#c4c8d8'); pxRect(g, 0, 9, 16, 1, K); return c; },
+  lolli: () => { const [c, g] = pxCanvas(16, 32), K = PXC.k; pxRect(g, 7, 14, 2, 18, K); pxRect(g, 7, 15, 1, 16, '#ffffff'); pxEll(g, 0, 0, 16, 16, K); pxEll(g, 1, 1, 14, 14, '#ff8fc2'); pxEll(g, 3, 3, 10, 10, '#ffffff'); pxEll(g, 5, 5, 6, 6, '#ff8fc2'); pxRect(g, 7, 7, 2, 2, '#ffffff'); pxRect(g, 3, 2, 3, 1, '#ffd0e6'); return c; },
+  cupcake: () => { const [c, g] = pxCanvas(16, 16), K = PXC.k; pxRect(g, 2, 8, 12, 8, K); pxRect(g, 3, 9, 10, 6, '#e0b070'); for (let x = 4; x < 13; x += 3) pxRect(g, x, 9, 1, 6, '#b8843e'); pxEll(g, 0, 2, 16, 9, K); pxEll(g, 1, 3, 14, 7, '#fff8e7'); pxEll(g, 3, 0, 10, 7, K); pxEll(g, 4, 1, 8, 5, '#ffd0e6'); pxRect(g, 7, 0, 2, 2, '#ef4b4b'); pxRect(g, 4, 5, 1, 1, '#3fd1c8'); pxRect(g, 10, 6, 1, 1, '#ffd84a'); return c; },
+  rakete: () => { const [c, g] = pxCanvas(34, 54), K = PXC.k; pxTri(g, 2, 50, 10, 30, 10, 50, K); pxTri(g, 32, 50, 24, 30, 24, 50, K); pxTri(g, 4, 49, 10, 34, 10, 49, '#ef4b4b'); pxTri(g, 30, 49, 24, 34, 24, 49, '#ef4b4b'); pxEll(g, 8, 0, 18, 30, K); pxRect(g, 8, 14, 18, 36, K); pxEll(g, 9, 1, 16, 28, '#ef4b4b'); pxRect(g, 9, 14, 16, 35, '#eef4ff'); pxRect(g, 9, 14, 3, 35, '#ffffff'); pxRect(g, 22, 14, 3, 35, '#c8d8f4'); pxEll(g, 12, 17, 10, 10, K); pxEll(g, 13, 18, 8, 8, '#8fd0ff'); pxRect(g, 14, 19, 2, 2, '#ffffff'); pxRect(g, 12, 34, 10, 16, K); pxRect(g, 13, 35, 8, 15, '#3a4252'); pxRect(g, 9, 30, 16, 2, '#ffd84a'); pxRect(g, 6, 50, 22, 4, K); pxRect(g, 7, 51, 20, 2, '#9aa7b8'); return c; },
+  kuchenhaus: () => { const [c, g] = pxCanvas(48, 44), K = PXC.k; pxRect(g, 6, 18, 36, 26, K); pxRect(g, 7, 19, 34, 24, '#c8914e'); pxTri(g, 0, 20, 24, 0, 48, 20, K); pxTri(g, 3, 19, 24, 2, 45, 19, '#6b3e22'); for (let x = 4; x < 44; x += 6) { pxEll(g, x, 15, 6, 6, K); pxEll(g, x + 1, 16, 4, 4, '#fff8e7'); } pxRect(g, 18, 26, 12, 18, K); pxRect(g, 19, 27, 10, 17, '#3a2416'); pxRect(g, 26, 35, 2, 2, '#ffd84a'); pxRect(g, 9, 24, 7, 7, K); pxRect(g, 10, 25, 5, 5, '#8fd0ff'); pxRect(g, 32, 24, 7, 7, K); pxRect(g, 33, 25, 5, 5, '#8fd0ff'); [[10, 36, '#ef4b4b'], [13, 39, '#3fd1c8'], [34, 36, '#ffd84a'], [37, 39, '#ff8fc2'], [22, 8, '#ef4b4b'], [26, 12, '#ffd84a']].forEach(([x, y, f]) => { pxRect(g, x, y, 3, 3, K); pxRect(g, x + 1, y + 1, 1, 1, f); pxRect(g, x, y, 2, 2, f); }); return c; }
+});
+function pxAHat3(g, x, y, flip, style) {
+  const K = PXC.k;
+  if (style === 'helm') { g.globalAlpha = .3; pxEll(g, x - 2, y + 1, 17, 15, '#bfe4ff'); g.globalAlpha = 1; pxRect(g, x + 1, y + 2, 2, 3, '#ffffff'); pxRect(g, x + 2, y + 1, 3, 1, '#ffffff'); pxRect(g, flip ? x + 1 : x + 11, y - 2, 1, 4, K); pxRect(g, flip ? x : x + 10, y - 3, 3, 2, '#ef4b4b'); return true; }
+  if (style === 'kochmuetze') { pxEll(g, x, y - 4, 13, 9, K); pxEll(g, x + 1, y - 3, 11, 7, '#ffffff'); pxRect(g, x + 2, y + 2, 9, 3, K); pxRect(g, x + 3, y + 2, 7, 2, '#ffffff'); pxRect(g, x + 4, y - 1, 1, 3, '#dfe9f5'); pxRect(g, x + 8, y - 1, 1, 3, '#dfe9f5'); return true; }
+  return false;
+}
+
+
+function pxABg7(g, run, A, cam) {
+  const W = run.W, H = run.H, th = A.D.th, wd = PXA_W2[th].wd, t = A.t;
+  if (wd === 7) {
+    for (let i = 0; i < 90; i++) { const x = ((i * 53 - cam * (.03 + (i % 3) * .02)) % W + W) % W, y = (i * 37) % (H - 30); pxRect(g, x, y, 1, 1, Math.sin(t * 2 + i) > .4 ? '#ffffff' : i % 4 ? '#8fa4d8' : '#ffd84a'); }
+    g.globalAlpha = .16; pxEll(g, W * .2 - cam * .02, 20, 120, 50, th === 'ringe' || th === 'krater' ? '#a98bff' : '#3fd1c8'); pxEll(g, W * .6 - cam * .03, 60, 100, 40, '#ff8fc2'); g.globalAlpha = 1;
+    if (th === 'mondland' || th === 'krater') { const x = W - 70 - cam * .01; pxEll(g, x, 12, 34, 34, '#2f6fe4'); pxEll(g, x + 4, 16, 14, 10, '#3fae55'); pxEll(g, x + 16, 28, 12, 9, '#3fae55'); pxEll(g, x + 8, 22, 18, 4, '#ffffff'); }
+    if (th === 'ringe') { const x = W * .55 - cam * .02; pxEll(g, x - 14, 30, 78, 14, '#c8a25a'); pxEll(g, x, 12, 50, 50, '#e0a84a'); pxRect(g, x + 4, 28, 42, 4, '#c88a3a'); pxRect(g, x + 2, 38, 46, 3, '#f4c878'); pxRect(g, x - 14, 36, 78, 2, '#f4d494'); }
+    if (th === 'kometen') for (let i = 0; i < 3; i++) { const x = W - ((t * (40 + i * 14) + i * 170) % (W + 120)), y = 14 + i * 26 + ((t * 12 + i * 40) % 30); for (let k = 0; k < 14; k++) { g.globalAlpha = 1 - k / 14; pxRect(g, x + k * 3, y - k, 3 - (k > 8 ? 1 : 0), 2, k < 2 ? '#ffffff' : '#8fd0ff'); } g.globalAlpha = 1; }
+    if (th === 'station' || th === 'sternentor') for (let i = 0; i < 6; i++) { const x = ((i * 130 - cam * .2) % (W + 140) + W + 140) % (W + 140) - 70, h = 40 + (i * 23) % 50; pxRect(g, x, H - 40 - h, 46, h + 40, '#141c34'); pxRect(g, x + 20, H - 52 - h, 4, 12, '#141c34'); for (let yy = H - 34 - h; yy < H - 30; yy += 9) for (let xx = 5; xx < 40; xx += 9) pxRect(g, x + xx, yy, 4, 3, (xx + yy + i) % 3 ? '#ffd84a' : '#243058'); }
+    for (let x = 0; x < W; x += 4) { const wx = x + cam * .25, h = 22 + Math.sin(wx * .021) * 12 + Math.sin(wx * .057) * 6; pxRect(g, x, H - 44 - h, 4, h + 44, th === 'kometen' ? '#12283c' : '#1a1e3c'); }
+    return;
+  }
+  const abend = th === 'lebkuchen', lila = th === 'kuchenschloss' || th === 'zuckerwatte';
+  pxEll(g, W - 60 - cam * .01, 14, 26, 26, abend ? '#ffd84a' : '#fff3c4'); pxPara(g, run, 'wolken', cam + t * 6, .08, 8, 60);
+  const far = abend ? ['#8a4a8a', '#a45a90'] : lila ? ['#b86acc', '#cc88dc'] : ['#f4a8cc', '#ffc4dc'];
+  for (let i = 0; i < 7; i++) { const x = ((i * 110 - cam * .15) % (W + 160) + W + 160) % (W + 160) - 80, h = 44 + (i * 17) % 30; pxEll(g, x, H - 40 - h, 130, h * 2, far[i % 2]); }
+  for (let i = 0; i < 8; i++) { const x = ((i * 86 - cam * .3) % (W + 120) + W + 120) % (W + 120) - 60, h = 26 + (i * 13) % 22; pxEll(g, x, H - 34 - h, 96, h * 2, abend ? '#6a3b6f' : lila ? '#9a52b4' : i % 2 ? '#9be38f' : '#7ad06a'); if (i % 3 === 0) { pxRect(g, x + 46, H - 62 - h, 2, 30, '#fff8e7'); pxEll(g, x + 40, H - 76 - h, 14, 14, ['#ff8fc2', '#3fd1c8', '#ffd84a'][i % 3]); pxEll(g, x + 43, H - 73 - h, 8, 8, '#ffffff'); } }
+  if (th === 'kuchenschloss') { const x = W * .6 - cam * .08; pxRect(g, x, H - 120, 70, 90, '#6a3a98'); [0, 26, 52].forEach(o => { pxRect(g, x + o - 2, H - 140, 18, 30, '#6a3a98'); pxTri(g, x + o - 5, H - 140, x + o + 7, H - 160, x + o + 19, H - 140, '#ff8fc2'); }); for (let yy = H - 110; yy < H - 50; yy += 14) for (let xx = 8; xx < 64; xx += 16) pxRect(g, x + xx, yy, 5, 7, '#ffd84a'); }
+}
+function pxAMapArt3(g, W, o, wd, t) {
+  if (wd === 7) {
+    for (let i = 0; i < 50; i++) pxRect(g, (i * 67) % W, (i * 31) % 60, 1, 1, Math.sin(t * 2 + i) > .3 ? '#ffffff' : '#8fa4d8');
+    pxEll(g, o + 4, 66, 250, 124, PXC.k); pxEll(g, o + 6, 68, 246, 120, '#8a8fa4'); pxEll(g, o + 16, 74, 226, 100, '#9ca1b6');
+    [[40, 100, 30], [120, 90, 22], [170, 150, 34], [80, 160, 20], [210, 120, 16]].forEach(([x, y, r]) => { pxEll(g, o + x, y, r, r * .6, '#6a6f84'); pxEll(g, o + x + 2, y + 2, r - 4, r * .6 - 3, '#787d92'); });
+    pxDraw(g, 'rakete', o + 196, 48); pxDraw(g, 'satschuessel', o + 20, 108); pxDraw(g, 'ufo_a_' + (Math.floor(t * 3) % 2), o + 110 + Math.round(Math.sin(t) * 10), 50);
+  } else {
+    pxEll(g, o + 4, 64, 250, 128, PXC.k); pxEll(g, o + 6, 66, 246, 122, '#c8914e'); pxEll(g, o + 14, 70, 230, 108, '#ff8fc2'); pxEll(g, o + 30, 80, 200, 84, '#ffb4d8');
+    for (let x = 30; x < 230; x += 4) pxRect(g, o + x, 118 + Math.round(Math.sin(x / 18) * 7), 4, 3, '#6b3e22');
+    [[24, 110], [60, 172], [100, 104], [140, 172], [236, 140], [176, 110]].forEach(([x, y]) => pxDraw(g, 'lolli', o + x - 8, y - 32));
+    pxDraw(g, 'kuchenhaus', o + 188, 56); pxDraw(g, 'cupcake', o + 78, 136); pxDraw(g, 'cupcake', o + 150, 118);
+  }
+}
+
+
+const PXA_PW = {
+  feder: ['🪶', 'Federschuhe! Spring in der Luft nochmal.', 25],
+  magnet: ['🧲', 'Fisch-Magnet! Die Fische kommen zu dir.', 25],
+  blase: ['🫧', 'Schutzblase! Ein Treffer macht dir nichts.', 0],
+  stern: ['🌟', 'Sternenkraft! Jetzt bist du unbesiegbar.', 9]
+};
+function pxA3Build(A) {
+  const W2 = PXA_W2[A.D.th]; A.pw = {}; A.pwN = 0; A.gs = (W2 && W2.gs) || 1; A.vs = Math.sqrt(A.gs); A.hits = 0; A.hLast = A.hearts;
+  for (let y = 0; y < A.h; y++) for (let x = 0; x < A.w; x++) { const c = A.grid[y][x]; if (c === '>' || c === '<') A.ents.push({ k: 'band', tx: x, ty: y, dir: c === '>' ? 1 : -1 }); }
+  const wd = pxAW(A.i), wl = pxAWorldLv(wd); if (A.i !== wl[wl.length - 1]) return;
+  const tr = A.ents.find(e => e.k === 'truhe'), ig = A.ents.find(e => e.k === 'iglu'); if (!tr || !ig || ig.x - tr.x < 136 || Math.abs(ig.y - tr.y) > 1) return;
+  const ty = Math.round(tr.y / PXA_T); for (let tx = Math.floor(tr.x / PXA_T) + 1; tx < Math.floor(ig.x / PXA_T) - 1; tx++) if (!pxASolid(pxATile(A, tx, ty)) || pxATile(A, tx, ty - 1) !== ' ' || pxATile(A, tx, ty - 2) !== ' ') return;
+  const sp = wd === 1 ? 'krabbe' : (W2 && W2.walker) || 'eidechse', B2 = pxSpr(sp + '_a_0');
+  A.boss = { k: 'boss', x: (tr.x + ig.x) / 2, y: tr.y, y0: tr.y, x0: tr.x + 30, x1: ig.x - 42, dir: -1, hp: 3, inv: 0, vy: 0, hj: 2, sp, name: PXA_BOSS[wd] || 'DER ENDGEGNER', w: B2.width * 2 - 6, h: B2.height * 2 - 4, wake: false };
+  A.ents.push(A.boss);
+}
+function pxA3Power(run, A, k) {
+  const P = A.p; k = k || ['feder', 'magnet', 'blase', 'stern'][(A.i + A.pwN++) % 4]; const D = PXA_PW[k]; if (!D) return;
+  A.pw[k] = D[2] || 1; A.msg = D[1]; A.msgT = 2.6; pxSfx.win(); pxBurst(run, P.x, P.y - 10, ['#ffd84a', '#ffffff', '#a98bff'], 22, { v: 80 });
+}
+function pxA3Schutz(run, A) {
+  const P = A.p, pw = A.pw; if (!pw) return false; if (pw.stern > 0) return true;
+  if (pw.blase) { pw.blase = 0; P.inv = 1.2; P.vy = -170; P.on = false; pxSfx.pop(); pxBurst(run, P.x, P.y - 8, ['#bfe4ff', '#ffffff'], 18, { v: 90 }); A.msg = 'Die Schutzblase ist geplatzt!'; A.msgT = 1.6; return true; }
+  return false;
+}
+function pxA3Doppel(run, A) {
+  const P = A.p; if (!A.pw || !(A.pw.feder > 0) || P.on || P.dj || P.vine || P.lock > 0 || A.phase !== 'play') return false;
+  P.dj = 1; P.vy = -PXA_JUMP * .9; pxSfx.jump(); pxBurst(run, P.x, P.y, ['#ffffff', '#ffd84a'], 8, { v: 40, life: .4 }); return true;
+}
+function pxA3Hud(A) { const pw = A.pw; if (!pw) return ''; return Object.keys(PXA_PW).filter(k => pw[k] > 0).map(k => `<span>${PXA_PW[k][0]}${PXA_PW[k][2] ? ' ' + Math.ceil(pw[k]) : ''}</span>`).join(''); }
+function pxA3Frei(A) { const b = A.boss; if (!b || b.dead) return true; if (!(A.bMsg > 0)) { A.msg = 'Erst den Endgegner besiegen!'; A.msgT = 1.8; A.bMsg = 2.5; } return false; }
+function pxA3Step(run, A, dt, hurt) {
+  const P = A.p, pw = A.pw; if (!pw) return;
+  if (P.on) P.dj = 0;
+  if (A.hearts < A.hLast) A.hits++; A.hLast = A.hearts; if (A.bMsg > 0) A.bMsg -= dt; if (A.gMsg > 0) A.gMsg -= dt;
+  ['feder', 'magnet', 'stern'].forEach(k => { if (pw[k] > 0) { pw[k] -= dt; if (pw[k] <= 0) { pw[k] = 0; pxSfx.step(); } } });
+  if (A.phase !== 'play') { P.px = P.x; return; }
+
+  A.ents.forEach(e => { if (e.k !== 'tor' || e.open) return; const gx = e.tx * PXA_T + 8; if (P.y <= e.top * PXA_T + 2 && Math.abs(P.x - gx) < 13) { P.x = (P.px == null || P.px <= gx) ? gx - 13 : gx + 13; P.vx = 0; if (!(A.gMsg > 0)) { A.msg = 'Erst das Rätsel-Tor öffnen!'; A.msgT = 1.6; A.gMsg = 2.5; } } });
+
+  if (P.on && (P.ground === '>' || P.ground === '<')) { P.x += (P.ground === '>' ? 46 : -46) * dt; pxAMoveX(A, P); if (!A.fbHint) { A.fbHint = 1; A.msg = 'Das Fließband schiebt dich!'; A.msgT = 2; } }
+
+  if (pw.magnet > 0) A.ents.forEach(e => { if (e.k !== 'fisch' || e.gone || e.pop > 0) return; const dx = P.x - e.x, dy = P.y - 8 - e.y, d = Math.hypot(dx, dy); if (d < 64 && d > 1) { e.x += dx / d * 150 * dt; e.y += dy / d * 150 * dt; } });
+
+  if (pw.stern > 0) {
+    if (Math.random() < .5) run.parts.push({ x: P.x - 8 + Math.random() * 16, y: P.y - Math.random() * 18, vx: 0, vy: -20, life: .4, col: Math.random() < .5 ? '#ffd84a' : '#ffffff', s: 1, g: 0 });
+    A.ents.forEach(e => {
+      if (e.gone || e.dead) return; const nah = Math.abs(P.x - e.x) < 13 && Math.abs(P.y - 8 - (e.y - 5)) < 16;
+      if (nah && (e.k === 'krabbe' || e.k === 'eidechse' || e.k === 'moewe')) { e.dead = true; e.vy = -170; e.vx = P.dir * 40; A.fish++; A.fishMax++; pxSfx.pop(); pxBurst(run, e.x, e.y - 5, ['#ffd84a', '#ffffff'], 12); }
+      else if (nah && e.k === 'kugel') { e.gone = true; pxBurst(run, e.x, e.y - 5, ['#ffffff'], 10); }
+    });
+  }
+
+  const b = A.boss;
+  if (b && !b.gone) {
+    if (b.dead) { b.vy += 500 * dt; b.y += b.vy * dt; if (b.y > A.h * PXA_T + 80) b.gone = true; }
+    else {
+      if (!b.wake && Math.abs(P.x - b.x) < 150) { b.wake = true; A.msg = b.name + '!'; A.msgT = 2.2; A.shake = .3; pxSfx.hurt(); }
+      if (b.inv > 0) b.inv -= dt; if (b.ruhe > 0) b.ruhe -= dt;
+      if (b.wake && !(b.ruhe > 0)) {
+        b.x += b.dir * (16 + (3 - b.hp) * 10) * dt; if (b.x < b.x0) { b.x = b.x0; b.dir = 1; } if (b.x > b.x1) { b.x = b.x1; b.dir = -1; }
+        b.hj -= dt; if (b.hj <= 0 && b.y >= b.y0) { b.vy = -190; b.hj = 2.2 + Math.random() * 1.2; }
+        b.vy += 600 * dt; b.y = Math.min(b.y0, b.y + b.vy * dt); if (b.y >= b.y0) b.vy = 0;
+      }
+      const hitX = Math.abs(P.x - b.x) < b.w / 2 + 4, hitY = P.y > b.y - b.h && P.y - P.h < b.y;
+      if (hitX && hitY && b.inv <= 0) {
+        if ((P.vy > 0 && P.y < b.y - b.h * .45) || pw.stern > 0) {
+          b.hp--; b.inv = .9; P.vy = -300; P.boost = .2; P.on = false; A.shake = .25; pxSfx.pop(); pxBurst(run, b.x, b.y - b.h, ['#ffd84a', '#ffffff', '#ef4b4b'], 18, { v: 90 });
+          if (b.hp <= 0) { b.dead = true; b.vy = -220; A.fish += 10; A.fishMax += 10; pxSfx.win(); A.msg = 'Geschafft! Der Weg ist frei. +10 Fische'; A.msgT = 2.6; pxBurst(run, b.x, b.y - 14, ['#ffd84a', '#fff3c4', '#ffffff', '#8fd0ff'], 46, { v: 120, up: 60 }); }
+          else { A.msg = b.hp === 2 ? 'Treffer! Noch zweimal.' : 'Treffer! Noch einmal.'; A.msgT = 1.6; }
+        } else if (!(P.inv > 0)) { hurt(b.x); b.ruhe = 1.1; }
+      }
+    }
+  }
+  P.px = P.x;
+}
+function pxA3Draw(run, A, g, cam) {
+  const W = run.W, fr = Math.floor(A.t * 8) % 4;
+  A.ents.forEach(e => {
+    if (e.k === 'band') { const x = e.tx * PXA_T - cam; if (x > -20 && x < W + 20) pxDraw(g, 'k2_band_' + fr, x, e.ty * PXA_T, e.dir < 0); }
+    else if (e.k === 'boss' && !e.gone) {
+      const x = e.x - cam; if (x < -80 || x > W + 80) return; if (e.inv > 0 && !e.dead && Math.floor(e.inv * 14) % 2) return;
+      const S2 = pxSpr(e.sp + '_a_' + (e.dead ? 0 : Math.floor(A.t * 4) % 2), e.dir > 0), sc = 2, w = S2.width * sc, h = S2.height * sc;
+      g.imageSmoothingEnabled = false;
+      if (e.dead) { g.save(); g.translate(Math.round(x), Math.round(e.y)); g.scale(1, -1); g.drawImage(S2, -w / 2, 0, w, h); g.restore(); return; }
+      g.drawImage(S2, Math.round(x - w / 2), Math.round(e.y - h), w, h);
+      const kx = Math.round(x) - 7, ky = Math.round(e.y - h) - 7; pxRect(g, kx, ky + 3, 14, 4, PXC.k); pxRect(g, kx + 1, ky + 4, 12, 2, '#ffd84a'); [0, 5, 10].forEach(o => { pxTri(g, kx + o, ky + 4, kx + o + 2, ky - 1, kx + o + 4, ky + 4, PXC.k); pxRect(g, kx + o + 1, ky + 2, 2, 2, '#ffd84a'); });
+      if (e.wake) for (let k = 0; k < 3; k++) pxDraw(g, k < e.hp ? 'herz' : 'herzleer', Math.round(x) - 16 + k * 11, ky - 12);
+    }
+  });
+}
+function pxA3Aura(run, A, g, cam) {
+  const P = A.p, pw = A.pw; if (!pw || P.hide) return; const x = Math.round(P.x - cam), y = Math.round(P.y);
+  if (pw.blase) { g.globalAlpha = .28; pxEll(g, x - 13, y - 25, 26, 28, '#bfe4ff'); g.globalAlpha = .9; pxRect(g, x - 7, y - 21, 3, 2, '#ffffff'); pxRect(g, x - 9, y - 18, 2, 3, '#ffffff'); g.globalAlpha = 1; }
+  if (pw.feder > 0 && (pw.feder > 4 || Math.floor(A.t * 6) % 2)) { pxRect(g, x - 8, y - 2, 4, 2, '#ffffff'); pxRect(g, x + 4, y - 2, 4, 2, '#ffffff'); pxRect(g, x - 9, y - 3, 2, 1, '#ffd84a'); pxRect(g, x + 7, y - 3, 2, 1, '#ffd84a'); }
+  if (pw.magnet > 0 && (pw.magnet > 4 || Math.floor(A.t * 6) % 2)) { const a = A.t * 3; for (let k = 0; k < 3; k++) pxRect(g, x + Math.round(Math.cos(a + k * 2.1) * 13), y - 9 + Math.round(Math.sin(a + k * 2.1) * 11), 2, 2, '#ef4b4b'); }
+  if (pw.stern > 0 && (pw.stern > 3 || Math.floor(A.t * 8) % 2)) { const a = A.t * 6; for (let k = 0; k < 4; k++) pxRect(g, x + Math.round(Math.cos(a + k * 1.57) * 12), y - 9 + Math.round(Math.sin(a + k * 1.57) * 12), 2, 2, k % 2 ? '#ffd84a' : '#ffffff'); }
+}
+
+function pxA3Soll(A) { return Math.round(A.w * PXA_T / 92 * 1.7 + 12); }
+function pxA3Medaillen(A, rec, old) {
+  const sek = Math.round(A.t), soll = pxA3Soll(A), neu = (A.fish >= A.fishMax ? 1 : 0) | (A.hits === 0 && A.deaths === 0 ? 2 : 0) | (sek <= soll ? 4 : 0);
+  rec.m = ((old && old.m) | 0) | neu; rec.t = Math.min((old && old.t) || 9999, sek);
+  const txt = [neu & 1 ? '🐟 Alle Fische' : '', neu & 2 ? '❤️ Ohne Treffer' : '', neu & 4 ? '⏱️ Flott' : ''].filter(Boolean);
+  return `🏅 ${txt.length ? txt.join(' · ') : 'Diesmal keine Medaille'} (${sek} Sekunden, flott ist bis ${soll})`;
+}
+function pxA3MapMed(g, rec, x, y) { const m = (rec && rec.m) | 0; ['#8fd0ff', '#ef4b4b', '#ffd84a'].forEach((c, k) => { pxRect(g, x - 8 + k * 6, y, 4, 4, PXC.k); pxRect(g, x - 7 + k * 6, y + 1, 2, 2, m & (1 << k) ? c : '#5d6878'); }); }
+
+
+PXA_LEVELS.push(
+  { n: "Mondlandung", th: "mondland", wd: 7, m: [
+    "                            *                                                                                                                                                                                                 #",
+    "                                                                               *                                                                                                                                              #",
+    "                                                                                                                                                                                                                              #",
+    "                          oo                                                                                                                                                                                                  #",
+    "              B           ####                                 *              o o                                                                                     ooo                                                     #",
+    "                                                                                                  Q                                             Q                    #####                             Q                      #",
+    "                                                              ==                                                                                                     #####                                                    #",
+    "                                                                                                                              o o o o                                #####                                                    #",
+    "  Poozt    ooo                       oo        oo E          o o o      K               H      oo              T oo  K                  oo   oo         H         V  #####   K       oo C           oo                   F    #",
+    "#######################W#      ############################<<<<<<<<<###########J############################################# ZZZ ZZZ ###########################    ##########################################################",
+    "#########################~~~~~~##############################################################################################~~~~~~~~~###########################~~~~##########################################################",
+    "#########################~~~~~~##############################################################################################~~~~~~~~~###########################~~~~##########################################################"
+  ] },
+  { n: "Kraterfeld", th: "krater", wd: 7, m: [
+    "                                                                                                                                                                                                                                        #",
+    "                                                                                                                                                  *                                                                                     #",
+    "                                                                                                           *                                                                                                                            #",
+    "                              oo                                                                                                                                                                                                        #",
+    "                              ####                                                                       ooo                                     o o                                                                                    #",
+    "            oo                                            *                                             #####                            Q                        Q                                                                     #",
+    "            ==   ==                                                                                     #####                                                                                   oo     oo     oo                        #",
+    "                                                       o o o o                                          #####      o o o o                                                                            ####                              #",
+    "  Poozt               R                  oo      T oo            oo   K      o o o        H     t    V  #####                oo   K   oo                   H   oo       K       oo C   E       ####   ####   ####                  F    #",
+    "###########################W#      ################### ZZZ ZZZ ############>>>>>>>>>################    ########## ZZZ ZZZ #######################J#########################################   ####   ####   ####   #####################",
+    "#############################~~~~~~###################~~~~~~~~~#####################################~~~~##########~~~~~~~~~#################################################################~~~####~~~####~~~####~~~#####################",
+    "#############################~~~~~~###################~~~~~~~~~#####################################~~~~##########~~~~~~~~~#################################################################~~~####~~~####~~~####~~~#####################"
+  ] },
+  { n: "Raumstation", th: "station", wd: 7, m: [
+    "                                                                                                                                                                                                                                     #",
+    "                                                                                         *                  *                                                                         *                                              #",
+    "                                                                                                                                                                                                                                     #",
+    "                                    oo                                                  o                  o                                                                                                                         #",
+    "                                    ####                 B                              ##                 ##                                                                        o o                         B                   #",
+    "                                                                                      oo##               oo##        Q                                                                                                               #",
+    "              ooo                                                                     ####               ####                                                                                                                        #",
+    "                                                                                      ####               ####                               o o o o                                                                                  #",
+    "  Poozt                   oo                   oo     ooo          o ^ o      K     ######       H     ######     oo       K      T oo                oo     H      o ^ o      K                 oo E   E     ooo               F    #",
+    "#########>>>>#   #<<<<###########W#      ########################>>>>>>>>>################################################################# ZZZ ZZZ ##############<<<<<<<<<###########J###############################################",
+    "##############~~~##################~~~~~~##################################################################################################~~~~~~~~~##################################################################################",
+    "##############~~~##################~~~~~~##################################################################################################~~~~~~~~~##################################################################################"
+  ] },
+  { n: "Kometenschweif", th: "kometen", wd: 7, m: [
+    "                                                                                                              *                                                                                                                    #",
+    "                                                                                                                                                                                                                                   #",
+    "                                                                                                                                                                                                                                   #",
+    "               o           oo                                                                               oo                                                                                                                     #",
+    "               ##          ####                 B                                                           ####                                                       *                                                           #",
+    "             oo##                                                                          *                                                          Q                                Q                   oo                      #",
+    "             ####                                                                                                                                                     ==                                                           #",
+    "             ####                                                                       o o o o                                                                                                          M                         #",
+    "  Pooz     ######                     oo     ooo          o ^ o      K      T oo    H             oo                   oo   K       oo E   E       oo         H      o ^ o      K   oo        oo E   E             t          F    #",
+    "########################W#      ########################>>>>>>>>>###################### ZZZ ZZZ #########W#      ##################################################>>>>>>>>>############################        ####################",
+    "##########################~~~~~~#######################################################~~~~~~~~~###########~~~~~~#######################################################################################~~~~~~~~####################",
+    "##########################~~~~~~#######################################################~~~~~~~~~###########~~~~~~#######################################################################################~~~~~~~~####################"
+  ] },
+  { n: "Ringplanet", th: "ringe", wd: 7, m: [
+    "                                   *                                                                                                                                                                                                      #",
+    "                                                                                                                                                                                                                                          #",
+    "                                                                                                                                                                                                                                          #",
+    "                                 oo                                                                                                                                                                                                       #",
+    "                                 ####                                                                                                                                         *                                                           #",
+    "                                                                                                                   Q        *                  Q                                                                       oo                 #",
+    "                                                                                                     ooo                                                                     ==                                                           #",
+    "                                                                                                                         o o o o                                                                                     M                    #",
+    "  Poozt     o ^ o        s                  oo    oo E   E      T oo  K      o ^ o        H          ^^^        oo                 oo   K   oo          o ^ o        H      o ^ o      K    oo E   E           T oo                  F    #",
+    "##########<<<<<<<<<###########W#      #####################################<<<<<<<<<#################################### ZZZ ZZZ #####################>>>>>>>>>###########>>>>>>>>>#################################        ###############",
+    "################################~~~~~~##################################################################################~~~~~~~~~###################################################################################~~~~~~~~###############",
+    "################################~~~~~~##################################################################################~~~~~~~~~###################################################################################~~~~~~~~###############"
+  ] },
+  { n: "Das Sternentor", th: "sternentor", wd: 7, m: [
+    "                                                                                                                                                                                                                                   #",
+    "                                                       *                                                                                                                                                                           #",
+    "                                                                                                                                                                                                                                   #",
+    "                                oo                    o                                                                                                                                                                            #",
+    "                                ####                  ##                       *                                                                                                                                                   #",
+    "                                                    oo##        Q                                                      *                  Q        Q             oo                               oo                               #",
+    "                                                    ####                      ==                             ooo                                                                                                                   #",
+    "                                                    ####                                                            o o o o                                    M                                M                                  #",
+    "  Pooz      o ^ o                          oo     ######     oo       K      o ^ o        H      T oo        ^^^              oo   K   oo       oo         H           K    oo C   E      T oo            X                   F    #",
+    "##########>>>>>>>>>##########W#      ######################################<<<<<<<<<############################### ZZZ ZZZ ##################################        #########################        #############################",
+    "###############################~~~~~~##############################################################################~~~~~~~~~##################################~~~~~~~~#########################~~~~~~~~#############################",
+    "###############################~~~~~~##############################################################################~~~~~~~~~##################################~~~~~~~~#########################~~~~~~~~#############################"
+  ] },
+  { n: "Bonbonwiese", th: "bonbonwiese", wd: 8, m: [
+    "                                                                                                                                                                                                                         #",
+    "                                  L                   *                         L                                                                                                                                        #",
+    "                                                                                                                                                                                                                         #",
+    "                                                                                *                                                                                                                    o                   #",
+    "                                 ooo                 o o                       ooo                                                                                      *                            ##                  #",
+    "            oo                                                  Q                                                                   oo                  Q                                          oo##                  #",
+    "            ==   ==                                                                                                                                                    ==                          ####                  #",
+    "                                                                                                                                    ZZ                              ==                             ####                  #",
+    "  Pooz                R                   oo                 oo       K                 oo     H         o o o         T oo  K   ZZ    ZZ   oo       oo         H         K    oo C              ######             F    #",
+    "###############################         ##############J######################         #################<<<<<<<<<################          #########################      #################################################",
+    "###############################~~~~~~~~~#####################################~~~~~~~~~##########################################~~~~~~~~~~#########################~~~~~~#################################################",
+    "###############################~~~~~~~~~#####################################~~~~~~~~~##########################################~~~~~~~~~~#########################~~~~~~#################################################"
+  ] },
+  { n: "Schokofluss", th: "schokofluss", wd: 8, m: [
+    "                                                                                                                                                                                                                       #",
+    "                       L                                *                                                                                                                                          *                   #",
+    "                                                                                                                                                                                                                       #",
+    "                                                       o                                                                                                                                                               #",
+    "                      ooo                              ##                                                                                *                                                        o o                  #",
+    "           oo                                        oo##                                    Q        oo                      Q                                oo                                                      #",
+    "                                                     ####                                                                               ==                     ==   ==                                                 #",
+    "         M                                           ####                                             ZZ                                                                                                               #",
+    "  Pooz                         oo      T oo        ######     K      o o o        H       oo       ZZ    ZZ   oo   K       oo          o o o        H                    R  K        oo E   C                     F    #",
+    "########        ####         ######################################>>>>>>>>>######################          #########################<<<<<<<<<#####################################################J####################",
+    "########~~~~~~~~####~~~~~~~~~#####################################################################~~~~~~~~~~############################################################################################################",
+    "########~~~~~~~~####~~~~~~~~~#####################################################################~~~~~~~~~~############################################################################################################"
+  ] },
+  { n: "Eisdiele", th: "eisdiele", wd: 8, m: [
+    "                                                                                                                                                                                                                                   #",
+    "                                L                                                                                 *                                                                                                                #",
+    "                                                                                                                                                                                                                                   #",
+    "                                                                                                                 o                                                                                                                 #",
+    "                               ooo                             B               *                                 ##                                         *                 oo                               B                   #",
+    "                                                                                                     Q         oo##           oo                                                                                                   #",
+    "             ooo                                                              ==                               ####                                        ==                 ==                                                   #",
+    "             #####                                                                                             ####         M                                              ZZ    ZZ                                                #",
+    "  Poozs      #####                      oo      T oo        ooo       K      o ^ o        H       oo         ######     K              T oo    H          o ^ o      K                   oo    oo E   E     ooo               F    #",
+    "#############################         #####################################>>>>>>>>>#######################################        #####################<<<<<<<<<#########           ###############################################",
+    "#############################~~~~~~~~~#####################################################################################~~~~~~~~#######################################~~~~~~~~~~~###############################################",
+    "#############################~~~~~~~~~#####################################################################################~~~~~~~~#######################################~~~~~~~~~~~###############################################"
+  ] },
+  { n: "Lebkuchendorf", th: "lebkuchen", wd: 8, m: [
+    "                                                                                                                                                                                                                                 #",
+    "                                     L                                                                                                                                                                   *                       #",
+    "                                                                                                                                                                                                                                 #",
+    "                                                                                                                                                                                                        o                        #",
+    "                                    ooo                     *             B                                  *                                                                                          ##                       #",
+    "                                                                                                                  Q                Q        Q                                                         oo##                       #",
+    "              ooo                                          ==                                               ==                                                                                        ####                       #",
+    "                                                                                                         ==                                                                                           ####                       #",
+    "  Poozt                   oo                 oo     t     o ^ o        ooo       K      o ^ o        H         oo       K       oo       oo         H    oo C   E   K    oo E   C      T oo         ######                  F    #",
+    "#########>>>>#   #<<<<############         #############<<<<<<<<<#####################<<<<<<<<<#########      ####################################################################################################################",
+    "##############~~~#################~~~~~~~~~#############################################################~~~~~~####################################################################################################################",
+    "##############~~~#################~~~~~~~~~#############################################################~~~~~~####################################################################################################################"
+  ] },
+  { n: "Zuckerwatte-Wolken", th: "zuckerwatte", wd: 8, m: [
+    "                                                                                                                                                                                                                                          #",
+    "                            L                                                                                                                                                                                *                            #",
+    "                                                                                                                                                                                                                                          #",
+    "                                                                                                                                                                                                                                          #",
+    "                           ooo                                                                                                                      *                *                                      o o                           #",
+    "                                                                                            oo              oo                                                                                      Q                                     #",
+    "             ooo                                                                                                                  ooo              ==               ==                                                  oo                #",
+    "             #####                                                                          ZZ              ZZ                    #####                          ==                                                     ==                #",
+    "  Poozt      #####                  oo    oo C   E         T oo  K      o ^ o        H   ZZ    ZZ   oo   ZZ    ZZ   oo     t      #####    K      o ^ o                  H        oo E   C   K   oo                                  F    #",
+    "#########################         ####################################<<<<<<<<<#########          ######          ##############################<<<<<<<<<#######      #######################################J#########     ###############",
+    "#########################~~~~~~~~~######################################################~~~~~~~~~~######~~~~~~~~~~##############################################~~~~~~#################################################~~~~~###############",
+    "#########################~~~~~~~~~######################################################~~~~~~~~~~######~~~~~~~~~~##############################################~~~~~~#################################################~~~~~###############"
+  ] },
+  { n: "Das Kuchenschloss", th: "kuchenschloss", wd: 8, m: [
+    "                                                                                                                                                                                                                                          #",
+    "                     L                                                                                                                     L                                                                                              #",
+    "                                                                                                                                                                                                                                          #",
+    "                                                                                                                                                                                                                                          #",
+    "                    ooo                *                                                                       *                          ooo                                   *                                                         #",
+    "                                                                                    Q        oo                                Q                                 Q                                                                        #",
+    "          oo                          ==                                                                      ==                                                               ==                     ooo                                 #",
+    "          ==                                                                                 ZZ                                                                                                       #####                               #",
+    "  Poozt                      oo      o ^ o         T oo  K      o ^ o        H   oo       ZZ    ZZ   oo      o ^ o      K   oo                     oo     H   oo       K      o ^ o         T oo      #####      X                   F    #",
+    "########      ####         ########<<<<<<<<<##################<<<<<<<<<##################          ########<<<<<<<<<####################         ###########################<<<<<<<<<######################################################",
+    "########~~~~~~####~~~~~~~~~##############################################################~~~~~~~~~~#####################################~~~~~~~~~##########################################################################################",
+    "########~~~~~~####~~~~~~~~~##############################################################~~~~~~~~~~#####################################~~~~~~~~~##########################################################################################"
   ] }
 );
 
