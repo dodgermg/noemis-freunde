@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-ahMWY5zu16j18UmaQ2lXpjpI1vO84k6yQpXB/0e2keU=' 'sha256-41DeL7SHLmd9XIJNrOnINs/3xpb2iK7SxL4IJOvF3kk=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-bPjcFD0FlOIi/ZTvUxhXw9nUwye1iQt1Edj6g3r23sE=' 'sha256-J4xpdvDCmrioen3q+5+O5MZFdPar539bpI2mI1OhmZw=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -7284,6 +7284,9 @@ button.mau-k:disabled { cursor: default; }
 .pxw-fach { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-bottom: 18px; font-weight: 800; }
 .pxw-fach > span { margin-right: 4px; color: #b9cbe2; }
 .pxw-chip { border: 0; border-radius: 0; padding: 9px 14px; font-weight: 800; font-size: 16px; background: #2b3566; color: #fff; box-shadow: inset -3px -3px 0 #1a2147, inset 3px 3px 0 #4a5a9a; }
+.pxw-sw { border: 0; border-radius: 0; padding: 9px 14px; font-weight: 800; font-size: 16px; background: #2b3566; color: #fff; box-shadow: inset -3px -3px 0 #1a2147, inset 3px 3px 0 #4a5a9a; }
+.pxw-sw.on { background: #ffd84a; color: #1d2440; box-shadow: inset -3px -3px 0 #e0a800, inset 3px 3px 0 #fff3c4; }
+.pxw-grafik { margin-top: -8px; }
 .pxw-chip.on { background: #ffd84a; color: #1d2440; box-shadow: inset -3px -3px 0 #e0a800, inset 3px 3px 0 #fff3c4; }
 .pxw-games { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 18px; }
 .pxw-g { display: flex; gap: 14px; align-items: center; text-align: left; padding: 14px; border: 0; border-radius: 0; background: #fff8e7; color: #1d2440; min-height: 120px;
@@ -9223,8 +9226,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '2.89.0';
-  var MAP = {"probe":0,"files":[[9213,"fehler_kern.js"],[9501,null],[9503,"data.js"],[10218,"data_more.js"],[10590,"data_su2.js"],[10817,"data_es.js"],[11185,"data_wissen.js"],[11386,"data_v21.js"],[12071,"data_v24.js"],[12559,"data_v25.js"],[13040,"data_v26.js"],[13139,"data_v29.js"],[13447,"data_v30.js"],[13781,"data_v31.js"],[14087,"data_kunst.js"],[14283,"data_v214.js"],[14386,"data_v216.js"],[14679,"schrift.js"],[14979,"eingabe.js"],[15190,"data_k34m.js"],[15708,"data_k34d.js"],[16062,"data_k34s.js"],[16516,"data_v224.js"],[17389,"data_v225w.js"],[17758,"data_v225k.js"],[18202,"data_herz.js"],[18556,"data_fb226.js"],[18699,"data_tf226.js"],[18906,"data_v227a.js"],[20006,"data_v227b.js"],[20960,"data_h28b.js"],[21000,"data_l28a.js"],[21866,"data_l28b.js"],[23046,"data_schaetz.js"],[23528,"data_party8.js"],[23578,"data_alce.js"],[24249,"data_alce2.js"],[24498,"data_alce3.js"],[24913,"registry.js"],[25427,"app.js"],[26627,"fun.js"],[27207,"fun2.js"],[27523,"atelier.js"],[27897,"kunst225.js"],[28087,"herz.js"],[28451,"reise.js"],[28753,"iglu.js"],[28919,"offline.js"],[29026,"party.js"],[29510,"meine.js"],[29866,"loeffel.js"],[30037,"trend.js"],[30579,"fun228a.js"],[31430,"fun228b.js"],[32091,"kueche.js"],[33130,"stimme.js"],[33185,"klassen.js"],[33334,"freunde_vorab.js"],[33355,"mut.js"],[33777,"schule.js"],[34266,"fussball226.js"],[34588,"schaetzen.js"],[35019,"party8.js"],[35638,"tiere.js"],[36097,"fussball232.js"],[36312,"party8b.js"],[36614,"weg.js"],[36835,"px.js"],[37246,"px_data.js"],[37503,"pxwelt.js"],[37584,"px_abenteuer.js"],[38393,"px_abenteuer2.js"],[39145,"px_abenteuer3.js"],[39536,"px_abenteuer4.js"],[39746,"px_baukasten.js"],[39854,"px_ski.js"],[40496,"px_wurf.js"],[41025,"px_insel.js"],[42226,"px_kicker.js"],[43161,"px_eis.js"],[44147,"px_run.js"],[45362,"px_brk.js"],[46324,"px_pol.js"],[47675,"px_frog.js"],[48935,"px_angel.js"],[50250,"px_golf.js"],[51284,"px_tauch.js"],[52549,"px_hockey.js"],[53505,"px_lab.js"],[54840,"px_plopp.js"],[56046,"px_stadion.js"],[57557,"px_stadion2.js"],[57609,"px_training.js"],[57978,"cm.js"],[58468,"cmwelt.js"],[58524,"cm_baeck.js"],[59317,"cm_bahn.js"],[60081,"cm_detek.js"],[60798,"cm_markt.js"],[61511,"ff.js"],[61668,"ff_mathe.js"],[63658,"ff_deutsch.js"],[65246,"ff_sach_a.js"],[67495,"ff_sach_b.js"],[69724,"ff_sprachen.js"],[72132,"zm.js"],[73045,"tt.js"],[73258,"data_tagebuch.js"],[73301,"data_hoerspiel.js"],[73460,"leseecke.js"],[73779,"kt.js"],[74082,"comicbuch.js"],[74360,"alce.js"],[74523,"alce_aufg.js"],[74693,"formen.js"],[75144,"data_formen.js"],[75385,"data_formen2.js"],[75607,"spielzeit.js"],[75752,"data_faktmeinung.js"],[75871,"data_es248.js"],[76135,"data_en249.js"],[76374,"data_wissen249.js"],[76805,"data_kunst249.js"],[77088,"data_fussball250.js"],[77212,"data_werte252.js"],[77465,"data_lesen252.js"],[77526,"data_k34_252.js"],[77612,"art254.js"],[77730,"data_werte255.js"],[77868,"data_lesen255.js"],[78004,"forscher255.js"],[78152,"zufall250.js"],[78198,"stufe259.js"],[78208,"advent.js"],[78471,"wdh.js"],[78569,"eswarm288.js"],[78620,"denk.js"],[78657,"data_viaje265.js"],[78800,"klassenarbeit.js"],[78933,"quizduell.js"],[79056,"neu267.js"],[79321,"prog.js"],[79426,"lernstand.js"],[79493,"blatt.js"],[79595,"data_es271.js"],[79709,"plus269.js"],[79803,"schach.js"],[80035,"schachtaktik.js"],[80287,"fun270.js"],[80450,"data_neu274.js"],[80659,"plus272.js"],[80713,"spiele274.js"],[80836,"kasten.js"],[80940,"erklaer.js"],[81053,"apa.js"],[81134,"neu276.js"],[81275,"spiele276.js"],[81325,"neu277.js"],[81503,"spiele277.js"],[81758,"lernen278.js"],[82018,"spiele278.js"],[82361,"lernen279.js"],[82686,"lernen279b.js"],[83084,"spanisch280.js"],[83376,"spanisch283.js"],[83609,"mehr281.js"],[83755,"grafik280.js"],[84126,"tiefsee280.js"],[84404,"abenteuer280.js"],[84616,"abenteuer281.js"],[84728,"design281.js"],[84860,"party281.js"],[84991,"grafik281.js"],[85208,"lumi_live.js"],[85324,"sicher.js"],[85508,"stil.js"],[85562,"zurueck287.js"],[85604,"freunde.js"],[85741,"start.js"],[85751,null],[85761,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '2.90.0';
+  var MAP = {"probe":0,"files":[[9216,"fehler_kern.js"],[9504,null],[9506,"data.js"],[10221,"data_more.js"],[10593,"data_su2.js"],[10820,"data_es.js"],[11188,"data_wissen.js"],[11389,"data_v21.js"],[12074,"data_v24.js"],[12562,"data_v25.js"],[13043,"data_v26.js"],[13142,"data_v29.js"],[13450,"data_v30.js"],[13784,"data_v31.js"],[14090,"data_kunst.js"],[14286,"data_v214.js"],[14389,"data_v216.js"],[14682,"schrift.js"],[14982,"eingabe.js"],[15193,"data_k34m.js"],[15711,"data_k34d.js"],[16065,"data_k34s.js"],[16519,"data_v224.js"],[17392,"data_v225w.js"],[17761,"data_v225k.js"],[18205,"data_herz.js"],[18559,"data_fb226.js"],[18702,"data_tf226.js"],[18909,"data_v227a.js"],[20009,"data_v227b.js"],[20963,"data_h28b.js"],[21003,"data_l28a.js"],[21869,"data_l28b.js"],[23049,"data_schaetz.js"],[23531,"data_party8.js"],[23581,"data_alce.js"],[24252,"data_alce2.js"],[24501,"data_alce3.js"],[24916,"registry.js"],[25430,"app.js"],[26631,"fun.js"],[27211,"fun2.js"],[27527,"atelier.js"],[27901,"kunst225.js"],[28091,"herz.js"],[28455,"reise.js"],[28757,"iglu.js"],[28923,"offline.js"],[29030,"party.js"],[29514,"meine.js"],[29870,"loeffel.js"],[30041,"trend.js"],[30583,"fun228a.js"],[31434,"fun228b.js"],[32095,"kueche.js"],[33134,"stimme.js"],[33189,"klassen.js"],[33338,"freunde_vorab.js"],[33359,"mut.js"],[33781,"schule.js"],[34270,"fussball226.js"],[34592,"schaetzen.js"],[35023,"party8.js"],[35642,"tiere.js"],[36101,"fussball232.js"],[36316,"party8b.js"],[36618,"weg.js"],[36839,"px.js"],[37258,"px_fein.js"],[37312,"px_data.js"],[37569,"pxwelt.js"],[37652,"px_abenteuer.js"],[38468,"px_abenteuer2.js"],[39220,"px_abenteuer3.js"],[39611,"px_abenteuer4.js"],[39821,"px_baukasten.js"],[39929,"px_abenteuer_fein.js"],[40143,"px_ski.js"],[40785,"px_wurf.js"],[41314,"px_insel.js"],[42515,"px_kicker.js"],[43450,"px_eis.js"],[44436,"px_run.js"],[45651,"px_brk.js"],[46613,"px_pol.js"],[47964,"px_frog.js"],[49224,"px_angel.js"],[50539,"px_golf.js"],[51573,"px_tauch.js"],[52838,"px_hockey.js"],[53794,"px_lab.js"],[55129,"px_plopp.js"],[56335,"px_stadion.js"],[57846,"px_stadion2.js"],[57898,"px_training.js"],[58267,"cm.js"],[58757,"cmwelt.js"],[58813,"cm_baeck.js"],[59606,"cm_bahn.js"],[60370,"cm_detek.js"],[61087,"cm_markt.js"],[61800,"ff.js"],[61957,"ff_mathe.js"],[63947,"ff_deutsch.js"],[65535,"ff_sach_a.js"],[67784,"ff_sach_b.js"],[70013,"ff_sprachen.js"],[72421,"zm.js"],[73334,"tt.js"],[73547,"data_tagebuch.js"],[73590,"data_hoerspiel.js"],[73749,"leseecke.js"],[74068,"kt.js"],[74371,"comicbuch.js"],[74649,"alce.js"],[74812,"alce_aufg.js"],[74982,"formen.js"],[75433,"data_formen.js"],[75674,"data_formen2.js"],[75896,"spielzeit.js"],[76041,"data_faktmeinung.js"],[76160,"data_es248.js"],[76424,"data_en249.js"],[76663,"data_wissen249.js"],[77094,"data_kunst249.js"],[77377,"data_fussball250.js"],[77501,"data_werte252.js"],[77754,"data_lesen252.js"],[77815,"data_k34_252.js"],[77901,"art254.js"],[78019,"data_werte255.js"],[78157,"data_lesen255.js"],[78293,"forscher255.js"],[78441,"zufall250.js"],[78487,"stufe259.js"],[78497,"advent.js"],[78760,"wdh.js"],[78858,"eswarm288.js"],[78909,"denk.js"],[78946,"data_viaje265.js"],[79089,"klassenarbeit.js"],[79222,"quizduell.js"],[79345,"neu267.js"],[79610,"prog.js"],[79715,"lernstand.js"],[79782,"blatt.js"],[79884,"data_es271.js"],[79998,"plus269.js"],[80092,"schach.js"],[80324,"schachtaktik.js"],[80576,"fun270.js"],[80739,"data_neu274.js"],[80948,"plus272.js"],[81002,"spiele274.js"],[81125,"kasten.js"],[81229,"erklaer.js"],[81342,"apa.js"],[81423,"neu276.js"],[81564,"spiele276.js"],[81614,"neu277.js"],[81792,"spiele277.js"],[82047,"lernen278.js"],[82307,"spiele278.js"],[82650,"lernen279.js"],[82975,"lernen279b.js"],[83373,"spanisch280.js"],[83665,"spanisch283.js"],[83898,"mehr281.js"],[84044,"grafik280.js"],[84415,"tiefsee280.js"],[84693,"abenteuer280.js"],[84905,"abenteuer281.js"],[85017,"design281.js"],[85149,"party281.js"],[85280,"grafik281.js"],[85497,"lumi_live.js"],[85613,"sicher.js"],[85797,"stil.js"],[85851,"zurueck287.js"],[85893,"freunde.js"],[86030,"start.js"],[86040,null],[86050,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -25428,9 +25431,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '2.89.0';
+const APP_VERSION = '2.90.0';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "2.90.0", d: "15.11.2026", t: ["Feine Grafik im Pixel-Abenteuer (erstes Probestück): dreimal so fein gezeichnet, runde Kanten statt Treppen, sanfteres Rollen", "Welt 1 (Eisland) hat gemalte Hintergründe mit Sonne, Wolken, Bergen im Dunst, Eisbergen und Polarlicht", "Neue Effekte in allen Welten: Schatten, Leuchten um Fische und Sterne, Boden mit Tiefe, Staub beim Landen. In Welt 1 dazu Schneefall", "Zum Vergleichen: In der Pixel-Welt steht oben „Grafik im Pixel-Abenteuer“ mit „Fein“ und „Wie bisher“"] },
   { v: "2.89.0", d: "15.11.2026", t: ["Kleine Pflege, keine neuen Inhalte in dieser Version"] },
   { v: "2.88.0", d: "15.11.2026", t: ["Lumis Pixel-Abenteuer: Welt 9, die Unterwasserwelt, mit sechs neuen Leveln. Lumi schwimmt: in der Luft noch bis zu dreimal tippen", "Level-Baukasten in der Pixel-Welt: eigene Level bauen und sofort spielen. Vier Speicherplätze, eigene Level geben keine Münzen", "Mehr Rücksetz-Fahnen in langen Abschnitten aller Welten", "Lumis Fußballstadion: vier Plätze zur Wahl (Rasen, Regen, Schnee, Halle mit Bande)", "Spanisch-Aufwärmrunde: Im Elternbereich lässt sich ein Spanisch-Tag wählen. Dann zeigt die Startseite an diesem Tag fünf kurze Aufgaben zum Warmwerden", "Mathe: In drei Spielen sind die falschen Antworten jetzt typische Fehler statt beliebiger Zahlen"] },
   { v: "2.87.0", d: "14.11.2026", t: ["Zurück-Geste: Wischen vom Bildschirmrand und die Zurück-Taste führen innerhalb der App eine Ebene zurück, statt die vorherige Website zu zeigen", "Auf der Startseite verlässt erst zweimal Zurück kurz hintereinander die App"] },
@@ -36864,7 +36868,8 @@ Object.assign(ACT, {
 
 
 
-let PXR = null, PXASK = null;
+let PXR = null, PXASK = null, PX_K = 1;
+const pxR = v => PX_K > 1 ? Math.round(v * PX_K) / PX_K : Math.round(v);
 const PX_DPR = () => Math.min(2, window.devicePixelRatio || 1);
 function pxS() {
   if (!isObj(S.px)) S.px = {};
@@ -36872,7 +36877,7 @@ function pxS() {
 }
 function pxStop() {
   const r = PXR; if (!r) return;
-  r.alive = false; PXR = null; PXASK = null;
+  r.alive = false; PXR = null; PXASK = null; PX_K = 1;
   try { cancelAnimationFrame(r.raf); } catch (e) { }
   r.timers.forEach(t => clearTimeout(t));
   r.off.forEach(f => { try { f(); } catch (e) { } });
@@ -36888,7 +36893,7 @@ const PXC = {
 };
 
 
-function pxRect(g, x, y, w, h, c) { if (c) g.fillStyle = c; g.fillRect(Math.round(x), Math.round(y), Math.round(w), Math.round(h)); }
+function pxRect(g, x, y, w, h, c) { if (c) g.fillStyle = c; g.fillRect(pxR(x), pxR(y), pxR(w), pxR(h)); }
 function pxEllRow(x, y, w, h, j) { const dy = (j + .5 - h / 2) / (h / 2), dx = Math.sqrt(Math.max(0, 1 - dy * dy)) * w / 2; return [Math.round(x + w / 2 - dx), Math.round(x + w / 2 + dx)]; }
 function pxEll(g, x, y, w, h, c) { if (c) g.fillStyle = c; for (let j = 0; j < h; j++) { const [l, r] = pxEllRow(x, y, w, h, j); if (r > l) g.fillRect(l, Math.round(y) + j, r - l, 1); } }
 function pxLine(g, x0, y0, x1, y1, c) {
@@ -36925,9 +36930,10 @@ function pxSpr(name, flip) {
   PX_CACHE.set(key, c); return c;
 }
 function pxDraw(g, name, x, y, flip, alpha) {
-  const c = pxSpr(name, flip);
-  if (alpha != null && alpha < 1) { g.globalAlpha = Math.max(0, alpha); g.drawImage(c, Math.round(x), Math.round(y)); g.globalAlpha = 1; }
-  else g.drawImage(c, Math.round(x), Math.round(y));
+  const c = pxSpr(name, flip), fein = PX_K > 1;
+  if (alpha != null && alpha < 1) g.globalAlpha = Math.max(0, alpha);
+  if (fein) g.drawImage(pxFeinSpr(c), pxR(x), pxR(y), c.width, c.height); else g.drawImage(c, Math.round(x), Math.round(y));
+  if (alpha != null && alpha < 1) g.globalAlpha = 1;
   return c;
 }
 
@@ -37127,6 +37133,8 @@ function pxView(o) {
   const run = { id: o.id, o, H: o.H || 192, W: 256, keys: {}, hit: {}, joy: { x: 0, y: 0, on: false }, t: 0, paused: false, alive: true, timers: [], off: [], parts: [], onTap: null, back: o.back || null };
   run.stage = $('#pxStage'); run.cv = $('#pxCv'); run.dg = run.cv.getContext('2d');
   [run.buf, run.g] = pxCanvas(256, run.H);
+  run.k = o.fein && pxFeinAn() ? 3 : 1; run.q = 2; PX_K = run.k;
+  if (run.k > 1) { run.buf.width = 256 * run.k; run.buf.height = run.H * run.k; pxFeinCtx(run); }
   PXR = run;
   pxFit(run);
   const onRes = () => { if (run.alive) pxFit(run); };
@@ -37179,17 +37187,21 @@ function pxFit(run) {
   run.cv.style.top = offY + 'px'; run.offY = offY;
   run.cssW = cw; run.cssH = ch;
   const W = Math.max(run.o.minW || 120, Math.round(run.H * cw / ch));
-  if (run.buf.width !== W) { run.buf.width = W; run.g.imageSmoothingEnabled = false; }
+  if (run.buf.width !== W * run.k) { run.buf.width = W * run.k; run.g.imageSmoothingEnabled = false; if (run.k > 1) pxFeinCtx(run); }
   run.W = W;
-  const dpr = PX_DPR();
+  const dpr = run.dpr || PX_DPR();
   run.cv.style.width = cw + 'px'; run.cv.style.height = ch + 'px';
   run.cv.width = Math.round(cw * dpr); run.cv.height = Math.round(ch * dpr);
   run.dg.imageSmoothingEnabled = false;
   if (run.onResize) run.onResize();
 }
 
-function pxSetH(run, H) { if (!run || run.H === H) return; run.H = H; run.buf.height = H; run.g.imageSmoothingEnabled = false; pxFit(run); }
-function pxBlit(run) { const d = run.dg; d.imageSmoothingEnabled = false; d.drawImage(run.buf, 0, 0, run.W, run.H, 0, 0, run.cv.width, run.cv.height); }
+function pxSetH(run, H) { if (!run || run.H === H) return; run.H = H; run.buf.height = H * run.k; run.g.imageSmoothingEnabled = false; if (run.k > 1) pxFeinCtx(run); pxFit(run); }
+function pxBlit(run) {
+  const d = run.dg, k = run.k;
+  d.imageSmoothingEnabled = k > 1;
+  d.drawImage(run.buf, 0, 0, run.W * k, run.H * k, 0, 0, run.cv.width, run.cv.height);
+}
 function pxLoop(run, update, draw) {
   let last = performance.now(), acc = 0; const STEP = 1 / 60;
   const frame = now => {
@@ -37197,8 +37209,8 @@ function pxLoop(run, update, draw) {
     run.raf = requestAnimationFrame(frame);
     let dt = (now - last) / 1000; last = now; if (!(dt >= 0)) dt = 0; if (dt > .25) dt = .25;
     if (!run.paused && !document.hidden) { acc += dt; let n = 0; while (acc >= STEP && n < 10) { try { update(STEP); } catch (e) { pxCrash(run, e); return; } run.t += STEP; acc -= STEP; n++; } if (n >= 10) acc = 0; }
-    try { draw(run.g); } catch (e) { pxCrash(run, e); return; }
-    pxBlit(run);
+    try { draw(run.g); pxBlit(run); } catch (e) { pxCrash(run, e); return; }
+    if (run.k > 1) pxFeinTakt(run, dt * 1000);
   };
   run.raf = requestAnimationFrame(frame);
 }
@@ -37242,6 +37254,60 @@ Object.assign(ACT, {
   },
   pxbtn: t => { const r = PXR; if (!r) return; const b = (r.endBtns || [])[Number(t.dataset.i)]; if (!b) return; Sound.tap(); pxOvHide(r); b[1](); }
 });
+
+/*@@src px_fein.js@@*/
+
+
+
+
+
+
+
+
+
+
+const PXF_HD = new WeakMap();
+function pxFeinAn() { try { return pxS().fein !== false && !window.LW_PX_GROB; } catch (e) { return false; } }
+
+function pxFein3x(src, sx = 0, sy = 0, w = src.width - sx, h = src.height - sy) {
+  const s = new Uint32Array(src.getContext('2d').getImageData(sx, sy, w, h).data.buffer);
+  const c = document.createElement('canvas'); c.width = w * 3; c.height = h * 3;
+  const g = c.getContext('2d'), od = g.createImageData(w * 3, h * 3), o = new Uint32Array(od.data.buffer), W3 = w * 3;
+  for (let y = 0; y < h; y++) {
+    const ym = y > 0 ? y - 1 : 0, yp = y < h - 1 ? y + 1 : y;
+    for (let x = 0; x < w; x++) {
+      const xm = x > 0 ? x - 1 : 0, xp = x < w - 1 ? x + 1 : x;
+      const A = s[ym * w + xm], B = s[ym * w + x], C = s[ym * w + xp], D = s[y * w + xm], E = s[y * w + x], F = s[y * w + xp], G = s[yp * w + xm], H = s[yp * w + x], I = s[yp * w + xp];
+      let e0 = E, e1 = E, e2 = E, e3 = E, e5 = E, e6 = E, e7 = E, e8 = E;
+      if (B !== H && D !== F) {
+        if (D === B) e0 = D; if ((D === B && E !== C) || (B === F && E !== A)) e1 = B; if (B === F) e2 = F;
+        if ((D === B && E !== G) || (D === H && E !== A)) e3 = D; if ((B === F && E !== I) || (H === F && E !== C)) e5 = F;
+        if (D === H) e6 = D; if ((D === H && E !== I) || (H === F && E !== G)) e7 = H; if (H === F) e8 = F;
+      }
+      const b = y * 3 * W3 + x * 3;
+      o[b] = e0; o[b + 1] = e1; o[b + 2] = e2; o[b + W3] = e3; o[b + W3 + 1] = E; o[b + W3 + 2] = e5; o[b + 2 * W3] = e6; o[b + 2 * W3 + 1] = e7; o[b + 2 * W3 + 2] = e8;
+    }
+  }
+  g.putImageData(od, 0, 0); return c;
+}
+function pxFeinSpr(c) { let h = PXF_HD.get(c); if (!h) { try { h = pxFein3x(c); } catch (e) { h = c; } PXF_HD.set(c, h); } return h; }
+function pxFeinCtx(run) { run.g.setTransform(run.k, 0, 0, run.k, 0, 0); run.g.imageSmoothingEnabled = false; }
+
+function pxFeinTakt(run, ms) {
+  if (run.k <= 1 || run.paused || document.hidden) return;
+  run.fzN = (run.fzN || 0) + 1; run.fzS = (run.fzS || 0) + Math.min(250, ms);
+  if (run.fzS < 1500 || run.fzN < 6) return;
+  const m = run.fzS / run.fzN; run.fzN = 0; run.fzS = 0; run.ms = m;
+  if (m > 24 && run.q > 0) { run.q--; if (run.q === 0) { run.dpr = 1; try { pxFit(run); } catch (e) { } } }
+}
+
+const PXF_DOT = new Map();
+function pxFeinPunkt(rgb, hart) {
+  const key = rgb + (hart ? 'h' : ''); let c = PXF_DOT.get(key); if (c) return c;
+  c = document.createElement('canvas'); c.width = c.height = 64; const g = c.getContext('2d'), gr = g.createRadialGradient(32, 32, 0, 32, 32, 32);
+  gr.addColorStop(0, `rgba(${rgb},1)`); gr.addColorStop(hart ? .55 : .25, `rgba(${rgb},${hart ? .9 : .55})`); gr.addColorStop(1, `rgba(${rgb},0)`);
+  g.fillStyle = gr; g.fillRect(0, 0, 64, 64); PXF_DOT.set(key, c); return c;
+}
 
 /*@@src px_data.js@@*/
 
@@ -37535,6 +37601,7 @@ function showPixelWelt() {
       <canvas class="pxw-ban" id="pxwBan" aria-label="Lumi läuft durch die Pixel-Welt"></canvas></div></header>
     <main class="wrap pxw-main">
       <div class="pxw-fach"><span>Aufgaben in den Spielen:</span>${PX_FACH.map(([k, t, e]) => `<button class="pxw-chip ${k === f ? 'on' : ''}" data-act="pxfach" data-f="${k}">${e} ${t}</button>`).join('')}</div>
+      <div class="pxw-fach pxw-grafik"><span>Grafik im Pixel-Abenteuer:</span>${[[1, '✨ Fein'], [0, 'Wie bisher']].map(([v, t]) => `<button class="pxw-sw ${(pxS().fein !== false) === !!v ? 'on' : ''}" data-act="pxfein" data-v="${v}" aria-pressed="${(pxS().fein !== false) === !!v}">${t}</button>`).join('')}</div>
       ${PX_GAMES.length > 8 ? `<nav class="pxw-jump" aria-label="Spielarten">${PX_KAT.map(([t, tags], k) => PX_GAMES.some(g => tags.includes(g.tag)) ? `<button class="pxw-chip" data-act="pxkat" data-k="${k}">${esc(t)}</button>` : '').join('')}</nav>` : ''}
       ${PX_KAT.map(([t, tags, ic], k) => { const gs = PX_GAMES.filter(g => tags.includes(g.tag)); return gs.length ? `<section class="pxw-kat" id="pxKat${k}"><h2><img src="${pxSprURL(ic, 3)}" alt="" draggable="false">${esc(t)}<small>${gs.length}</small></h2><div class="pxw-games">${gs.map(pxCard).join('')}</div></section>` : ''; }).join('')}
       ${(() => { const rest = PX_GAMES.filter(g => !PX_KAT.some(([, tags]) => tags.includes(g.tag))); return rest.length ? `<section class="pxw-kat"><div class="pxw-games">${rest.map(pxCard).join('')}</div></section>` : ''; })()}
@@ -37576,7 +37643,8 @@ function pxHomeCard() {
 }
 Object.assign(ACT, {
   pxwelt: () => { Sound.unlock(); Sound.tap(); showPixelWelt(); },
-  pxfach: t => { pxS().fach = t.dataset.f; save(); Sound.tap(); document.querySelectorAll('.pxw-chip').forEach(b => b.classList.toggle('on', b === t)); },
+  pxfein: t => { pxS().fein = t.dataset.v === '1'; save(); Sound.tap(); document.querySelectorAll('.pxw-sw').forEach(b => { const on = b === t; b.classList.toggle('on', on); b.setAttribute('aria-pressed', on); }); },
+  pxfach: t => { pxS().fach = t.dataset.f; save(); Sound.tap(); document.querySelectorAll('.pxw-chip[data-act="pxfach"]').forEach(b => b.classList.toggle('on', b === t)); },
   pxgo: t => { const g = PX_GAMES.find(x => x.id === t.dataset.g); if (!g) return; const P = pxS(); if (!isObj(P.seen)) P.seen = {}; if (!P.seen[g.id]) { P.seen[g.id] = 1; save(); } Sound.unlock(); Sound.tap(); g.start(); },
   pxkat: t => { const el = $('#pxKat' + t.dataset.k); Sound.tap(); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
 });
@@ -37883,7 +37951,7 @@ function pxAMoveY(A, p, prevY, onHead) {
 
 function pxAPlay(i, eig) {
   const D = eig || PXA_LEVELS[i];
-  const run = pxView({ id: 'adv', title: eig ? D.n : `${pxANum(i)} ${D.n}`, pad: 'lrj', portrait: 'top', back: () => eig ? pxBauEdit(eig.nr) : pxAMap(i) });
+  const run = pxView({ id: 'adv', title: eig ? D.n : `${pxANum(i)} ${D.n}`, pad: 'lrj', portrait: 'top', fein: true, back: () => eig ? pxBauEdit(eig.nr) : pxAMap(i) });
   const W2 = PXA_W2[D.th], hot = W2 && W2.wat === 'glut';
   let A = pxABuild(i, eig);
   const p = () => A.p;
@@ -38075,14 +38143,16 @@ function pxAPlay(i, eig) {
 function pxADraw(run, A, g) {
   const W = run.W, H = run.H, th = A.D.th, T = PXA_THEME[th] || PXA_THEME.tag, P = A.p;
   const sx = A.shake > 0 ? Math.round((Math.random() - .5) * 4) : 0, sy = A.shake > 0 ? Math.round((Math.random() - .5) * 3) : 0;
-  const cam = Math.round(A.cam) - sx;
+  const fein = run.k > 1, hd = fein && pxAFHat(th), cam = (fein ? Math.round(A.cam * run.k) / run.k : Math.round(A.cam)) - sx; A.camF = cam;
+  const W2 = PXA_W2[th];
+  if (hd) pxAFBg(run, A, g);
+  else {
   pxSky(g, run, T.sky);
   if (th === 'nacht') {
     (A.sky || []).forEach(([x, y, ph]) => { const tw = Math.sin(A.t * 2 + ph) > .3; pxRect(g, ((x - cam * .05) % W + W) % W, y, 1, 1, tw ? '#ffffff' : '#8fa4d8'); });
     for (let b = 0; b < 3; b++) for (let x = 0; x < W; x += 2) { const y = 18 + b * 9 + Math.sin(x * .025 + A.t * .7 + b * 1.7) * 9 + Math.sin(x * .07 + A.t * .3) * 3; g.globalAlpha = .28 - b * .06; pxRect(g, x, y, 2, 14 - b * 2, b === 1 ? '#8a5cf6' : '#3fd1c8'); }
     g.globalAlpha = 1; pxEll(g, W - 46, 14, 16, 16, '#fff3c4'); pxEll(g, W - 41, 13, 13, 14, T.sky[0]);
   }
-  const W2 = PXA_W2[th];
   if (th === 'abend') { pxEll(g, W * .7 - cam * .02, H - 92, 34, 34, '#ffd84a'); pxEll(g, W * .7 - cam * .02 + 4, H - 88, 26, 26, '#fff3c4'); }
   if (W2) pxABg2(g, run, A, cam);
   else if (th === 'hoehle') { const L = pxAHoehlenLayer(H); const off = -Math.floor((cam * .3) % L.width); for (let x = off; x < W; x += L.width) g.drawImage(L, x, 0); }
@@ -38093,17 +38163,19 @@ function pxADraw(run, A, g) {
     else pxPara(g, run, 'huegel', cam, .35, H - 78, 56);
     if (th === 'nacht' || th === 'abend') { g.globalAlpha = th === 'nacht' ? .35 : .18; pxRect(g, 0, 0, W, H, th === 'nacht' ? '#0b1026' : '#6a3b8f'); g.globalAlpha = 1; }
   }
+  }
   g.save(); g.translate(0, sy);
 
   A.ents.forEach(e => { if (!e.deco || e.x < cam - 30 || e.x > cam + W + 30) return; if (W2 && e.k !== 'schild') { const s = pxSpr(e.k); pxDraw(g, e.k, e.x - Math.floor(s.width / 2) - cam, e.y - s.height); return; } if (e.k === 'tanne') pxDraw(g, 'tanne', e.x - 10 - cam, e.y - 32); else if (e.k === 'schneemann') pxDraw(g, 'schneemann_a_' + (Math.floor(A.t * 1.5) % 2), e.x - 9 - cam, e.y - 28); else { pxDraw(g, 'schild', e.x - 7 - cam, e.y - 16); } });
 
-  g.drawImage(A.static, Math.max(0, cam), 0, W, H, Math.max(0, -cam), 0, W, H);
+  if (fein) pxAFStatic(run, A, g, cam); else g.drawImage(A.static, Math.max(0, cam), 0, W, H, Math.max(0, -cam), 0, W, H);
   const wf = Math.floor(A.t * 3) % 2;
   for (let tx = Math.floor(cam / PXA_T); tx <= Math.floor((cam + W) / PXA_T); tx++) for (let ty = 0; ty < A.h; ty++) {
     if (pxATile(A, tx, ty) !== '~') continue;
     const WT = W2 ? (PXA_WAT[W2.wat] || PXA_WAT.meer) : ['kachel_wasser_', '#2c63c9']; if (!WT[0]) continue;
     if (pxATile(A, tx, ty - 1) !== '~') pxDraw(g, WT[0] + ((wf + tx) % 2), tx * PXA_T - cam, ty * PXA_T); else pxRect(g, tx * PXA_T - cam, ty * PXA_T, 16, 16, WT[1]);
   }
+  if (fein) { pxAFWasser(run, A, g, cam); pxAFSchatten(run, A, g, cam); }
 
   A.ents.forEach(e => {
     if (e.gone || e.deco) return;
@@ -38140,12 +38212,15 @@ function pxADraw(run, A, g) {
     else if (P.sq > 0) pose = 'l';
     else if (Math.abs(P.vx) > 8) { pose = 'w'; fr = Math.floor(P.anim) % 4; }
     if (P.inv > 1.3) pose = 'h';
+    if (!(fein && pxAFLumi(run, A, g, `lumi_${pose}_${fr}`, P.x - 10 - cam, P.y - 20, P.dir < 0, W2 ? (hx, hy) => pxAHat2(g, pose, fr, hx, hy, P.dir < 0, W2.hat) : null))) {
     pxDraw(g, `lumi_${pose}_${fr}`, P.x - 10 - cam, P.y - 20, P.dir < 0);
     if (W2) pxAHat2(g, pose, fr, P.x - 10 - cam, P.y - 20, P.dir < 0, W2.hat);
+    }
   }
   pxA3Aura(run, A, g, cam);
   pxPartsDraw(g, run, cam, 0);
   g.restore();
+  if (fein) pxAFFx(run, A, g);
 
   for (let k = 0; k < 3; k++) pxDraw(g, k < A.hearts ? 'herz' : 'herzleer', 5 + k * 11, 5);
   if (A.msgT > 0) {
@@ -38689,7 +38764,7 @@ function pxAMapArt(g, W, o, wd, t) {
 
 
 function pxAMap(sel) {
-  const run = pxView({ id: 'advkarte', title: 'Lumis Pixel-Abenteuer', pad: 'none', portrait: 'top', H: 192 });
+  const run = pxView({ id: 'advkarte', title: 'Lumis Pixel-Abenteuer', pad: 'none', portrait: 'top', H: 192, fein: true });
   const S0 = pxAS(), NW = Math.max(...PXA_LEVELS.map(l => l.wd || 1));
   const firstOpen = w => { const l = pxAWorldLv(w), f = l.find(i => !S0.lv[i]); return f == null ? l[l.length - 1] : f; };
   const wOpen = w => w >= 1 && w <= NW && pxAOpen(pxAFirst(w));
@@ -39850,6 +39925,220 @@ function pxBauZiel(run, A, eig) {
 pxReg({ id: 'bau', t: 'Level-Baukasten', d: 'Baue eigene Level für Lumi und spiele sie!', e: '🧱', i: 'kachel_kiste_0', tag: 'Abenteuer', o: 1.2,
   start: () => pxBauMenue(), prog: () => { const B = pxBauS(), n = Object.keys(B).filter(k => pxBauGut(B[k])).length; return n ? `${n} von ${PXB_N} Leveln gebaut` : 'Vier Plätze für eigene Level'; } });
 if (typeof PX_NEW !== 'undefined') PX_NEW.bau = 'Neu';
+
+/*@@src px_abenteuer_fein.js@@*/
+
+
+
+
+
+
+
+
+const PXAF_TH = {
+  tag: { sky: ['#1b55d2', '#3f86ee', '#86bbf8', '#d6e9ff'], sonne: [.8, .17, 9, '255,250,225', '255,238,190'], fern: ['#b9cbef', '#d9e5fa'], nah: ['#6c84cc', '#a3b6e6'], kante: '#4d63ad', schnee: '#ffffff', huegel: ['#f4f9ff', '#b7cbea'], tanne: ['#58789f', '#ffffff'], dunst: '214,232,255', wolke: '255,255,255', strahl: .07, flocken: 1 },
+  abend: { sky: ['#2a1d5e', '#6a3b8f', '#c9588a', '#ff9a6b', '#ffd596'], sonne: [.68, .6, 17, '255,243,190', '255,160,90'], fern: ['#9a5f9c', '#e29a8e'], nah: ['#4a2f74', '#84508a'], kante: '#2f1d55', schnee: '#ffd9c8', huegel: ['#f1c3c4', '#94669a'], tanne: ['#3a2960', '#ffd9c8'], dunst: '255,176,128', wolke: '255,214,196', strahl: .09, flocken: 1 },
+  nacht: { sky: ['#040716', '#0a1232', '#16265a', '#27407c'], mond: [.82, .16, 8], fern: ['#1c2c60', '#2b4183'], nah: ['#0f1a40', '#1c2e66'], kante: '#070d26', schnee: '#a9bdee', huegel: ['#6c86c6', '#27376e'], tanne: ['#0b1432', '#8fa6dc'], dunst: '70,100,170', wolke: '120,140,200', wa: .28, strahl: 0, flocken: 1, sterne: 1, licht: 1 },
+  meer: { sky: ['#2f74e4', '#5a9cf3', '#a6cdfb', '#e3f1ff'], sonne: [.24, .16, 9, '255,250,225', '255,238,190'], fern: ['#c4d5f2', '#e0ebfb'], nah: null, eis: ['#f2faff', '#a8d4f5', '#6fb0e6'], huegel: null, dunst: '225,240,255', wolke: '255,255,255', strahl: .06, flocken: 1, see: ['#4a93ee', '#1c4dab'] },
+  hoehle: { sky: ['#060a1c', '#0e1838', '#1a2a5c', '#16224b'], fels: ['#0a1026', '#121c42'], dunst: '40,70,140', strahl: 0, staub: 1, kristall: 1 }
+};
+const PXAF_C = new Map();
+function pxAFHat(th) { return !!PXAF_TH[th]; }
+
+function pxAFEbene(key, wl, hl, q, paint) {
+  let c = PXAF_C.get(key); if (c) return c;
+  c = document.createElement('canvas'); c.width = Math.round(wl * q); c.height = Math.round(hl * q); c.wl = wl; c.hl = hl;
+  const g = c.getContext('2d'); g.scale(c.width / wl, c.height / hl); paint(g, pxRnd(key.length * 7919 + key.charCodeAt(0) * 131 + key.charCodeAt(key.length - 1)));
+  if (PXAF_C.size > 40) PXAF_C.clear(); PXAF_C.set(key, c); return c;
+}
+
+function pxAFZieh(d, c, s, W, off, y) {
+  const o = ((off % c.wl) + c.wl) % c.wl;
+  for (let x = -o; x < W; x += c.wl) d.drawImage(c, pxR(x * s), pxR(y * s), c.wl * s + .34, c.hl * s);
+}
+
+function pxAFLinie(rnd, n, rauh) {
+  const a = new Array(n + 1).fill(0); a[0] = a[n] = rnd() * .5 + .25;
+  for (let st = n; st > 1; st >>= 1) { const h = st >> 1, amp = rauh * st / n; for (let i = h; i < n; i += st) a[i] = (a[i - h] + a[i + h]) / 2 + (rnd() - .5) * amp * 2; }
+  let lo = 1e9, hi = -1e9; a.forEach(v => { lo = Math.min(lo, v); hi = Math.max(hi, v); });
+  return a.map(v => (v - lo) / (hi - lo || 1));
+}
+function pxAFBerge(g, rnd, wl, hl, hoch, tief, col, schnee, kante, spitz) {
+  const n = 64, L = pxAFLinie(rnd, n, 1.5), Y = L.map(v => hl - tief - Math.pow(v, spitz) * (hoch - tief)), X = i => i / n * wl;
+  const pfad = () => { g.beginPath(); g.moveTo(0, hl); for (let i = 0; i <= n; i++) g.lineTo(X(i), Y[i]); g.lineTo(wl, hl); g.closePath(); };
+  const gr = g.createLinearGradient(0, hl - hoch, 0, hl); gr.addColorStop(0, col[0]); gr.addColorStop(1, col[1]);
+  pfad(); g.fillStyle = gr; g.fill();
+  g.save(); pfad(); g.clip();
+  if (kante) { g.globalAlpha = .22; g.fillStyle = kante; for (let i = 1; i < n; i++) if (Y[i] < Y[i - 1] && Y[i] <= Y[i + 1]) { g.beginPath(); g.moveTo(X(i), Y[i]); g.lineTo(X(i) - (hl - Y[i]) * .55, hl); g.lineTo(X(i) + (hl - Y[i]) * .12, hl); g.closePath(); g.fill(); } g.globalAlpha = 1; }
+  if (schnee) {
+    const grenze = hl - tief - (hoch - tief) * .42, m = n * 3, yG = j => { const f = j / 3, i = Math.floor(f), t = f - i; return Y[i] * (1 - t) + Y[Math.min(n, i + 1)] * t; };
+    g.fillStyle = schnee; g.beginPath(); g.moveTo(0, 0);
+    for (let j = 0; j <= m; j++) { const y = yG(j), kappe = Math.max(0, grenze - y) * .62; g.lineTo(j / m * wl, kappe > 0 ? y + kappe + (j % 2 ? 2.6 : -2.2) * Math.min(1, kappe / 6) : y - 3); }
+    g.lineTo(wl, 0); g.closePath(); g.fill();
+    if (kante) { g.globalAlpha = .1; g.fillStyle = kante; for (let i = 1; i < n; i++) if (Y[i] < Y[i - 1] && Y[i] <= Y[i + 1]) { g.beginPath(); g.moveTo(X(i), Y[i]); g.lineTo(X(i) - (hl - Y[i]) * .5, hl); g.lineTo(X(i), hl); g.closePath(); g.fill(); } g.globalAlpha = 1; }
+  }
+  g.restore();
+}
+function pxAFTanne(g, x, y, h, col, schnee) {
+  for (let i = 0; i < 3; i++) { const w = h * (.42 - i * .09), yy = y - i * h * .26; g.fillStyle = col; g.beginPath(); g.moveTo(x - w, yy); g.lineTo(x, yy - h * .46); g.lineTo(x + w, yy); g.closePath(); g.fill();
+    if (schnee) { g.fillStyle = schnee; g.globalAlpha = .85; g.beginPath(); g.moveTo(x - w * .5, yy - h * .23); g.lineTo(x, yy - h * .46); g.lineTo(x + w * .45, yy - h * .25); g.lineTo(x + w * .1, yy - h * .3); g.lineTo(x - w * .15, yy - h * .2); g.closePath(); g.fill(); g.globalAlpha = 1; } }
+}
+function pxAFHuegel(g, rnd, wl, hl, col, tanne) {
+  const n = 64, L = pxAFLinie(rnd, n, .9), Y = L.map(v => hl * .62 - v * hl * .42), X = i => i / n * wl, yAt = x => { const f = ((x % wl) + wl) % wl / wl * n, i = Math.floor(f), t = f - i; return Y[i] * (1 - t) + Y[Math.min(n, i + 1)] * t; };
+  const T = []; for (let i = 0; i < 26; i++) T.push([rnd() * wl, 9 + rnd() * 12]);
+  T.filter((_, i) => i % 2 === 0).forEach(([x, h]) => pxAFTanne(g, x, yAt(x) + 3, h * .8, tanne[0], tanne[1]));
+  const gr = g.createLinearGradient(0, hl * .2, 0, hl); gr.addColorStop(0, col[0]); gr.addColorStop(1, col[1]);
+  g.fillStyle = gr; g.beginPath(); g.moveTo(0, hl); for (let i = 0; i <= n; i++) g.lineTo(X(i), Y[i]); g.lineTo(wl, hl); g.closePath(); g.fill();
+  T.filter((_, i) => i % 2 === 1).forEach(([x, h]) => pxAFTanne(g, x, yAt(x) + 6 + rnd() * 8, h, tanne[0], tanne[1]));
+}
+function pxAFWolken(g, rnd, wl, hl, rgb, n) {
+  for (let i = 0; i < n; i++) {
+    const x = rnd() * wl, y = hl * (.25 + rnd() * .5), w = 26 + rnd() * 34, k = 4 + Math.floor(rnd() * 3);
+    for (const sh of [-wl, 0, wl]) for (let j = 0; j < k; j++) { const cx = x + sh + (j / (k - 1) - .5) * w, r = w * (.2 + .16 * Math.sin((j + .5) / k * Math.PI)), cy = y - r * .5;
+      const gr = g.createRadialGradient(cx, cy - r * .3, r * .1, cx, cy, r); gr.addColorStop(0, `rgba(${rgb},.95)`); gr.addColorStop(.7, `rgba(${rgb},.8)`); gr.addColorStop(1, `rgba(${rgb},0)`); g.fillStyle = gr; g.beginPath(); g.arc(cx, cy, r, 0, 7); g.fill(); }
+  }
+}
+function pxAFEisberge(g, rnd, wl, hl, col) {
+  for (let i = 0; i < 7; i++) {
+    const x = (i + .2 + rnd() * .6) / 7 * wl, w = 26 + rnd() * 40, h = hl * (.35 + rnd() * .55), p = x + (rnd() - .5) * w * .3;
+    g.fillStyle = col[0]; g.beginPath(); g.moveTo(x - w / 2, hl); g.lineTo(x - w * .28, hl - h * .55); g.lineTo(p, hl - h); g.lineTo(x + w * .3, hl - h * .5); g.lineTo(x + w / 2, hl); g.closePath(); g.fill();
+    g.fillStyle = col[1]; g.beginPath(); g.moveTo(p, hl - h); g.lineTo(x + w * .3, hl - h * .5); g.lineTo(x + w / 2, hl); g.lineTo(x + w * .08, hl); g.closePath(); g.fill();
+    g.fillStyle = col[2]; g.globalAlpha = .5; g.beginPath(); g.moveTo(x + w * .3, hl - h * .5); g.lineTo(x + w / 2, hl); g.lineTo(x + w * .34, hl); g.closePath(); g.fill(); g.globalAlpha = 1;
+  }
+}
+function pxAFFels(g, rnd, wl, hl, col, oben) {
+  const n = 64, L = pxAFLinie(rnd, n, 1.6); g.fillStyle = col; g.beginPath();
+  if (oben) { g.moveTo(0, 0); for (let i = 0; i <= n; i++) g.lineTo(i / n * wl, 6 + Math.pow(L[i], 2.2) * hl * .9); g.lineTo(wl, 0); }
+  else { g.moveTo(0, hl); for (let i = 0; i <= n; i++) g.lineTo(i / n * wl, hl - 4 - Math.pow(L[i], 1.8) * hl * .9); g.lineTo(wl, hl); }
+  g.closePath(); g.fill();
+}
+
+function pxAFBg(run, A, g) { g.imageSmoothingEnabled = true; pxAFBg0(run, A, g, 1); g.imageSmoothingEnabled = false; g.globalAlpha = 1; g.globalCompositeOperation = 'source-over'; }
+function pxAFFx(run, A, g) { g.imageSmoothingEnabled = true; pxAFFx0(run, A, g, 1); g.imageSmoothingEnabled = false; g.globalAlpha = 1; g.globalCompositeOperation = 'source-over'; }
+function pxAFBg0(run, A, d, s) {
+  const T = PXAF_TH[A.D.th], W = run.W, H = run.H, cam = A.camF || 0, t = A.t, q = run.k * (run.q > 1 ? 1 : .67), th = A.D.th;
+  const sk = d.createLinearGradient(0, 0, 0, H * s); T.sky.forEach((c, i) => sk.addColorStop(i / (T.sky.length - 1), c)); d.fillStyle = sk; d.fillRect(0, 0, W * s, H * s);
+  if (T.sterne) { const c = pxAFEbene('sterne', 320, 120, 3, (g, rnd) => { for (let i = 0; i < 150; i++) { const r = .25 + rnd() * rnd() * .9; g.globalAlpha = .35 + rnd() * .65; g.fillStyle = rnd() < .2 ? '#bcd0ff' : '#ffffff'; g.beginPath(); g.arc(rnd() * 320, rnd() * 120, r, 0, 7); g.fill(); } }); pxAFZieh(d, c, s, W, cam * .02, 0);
+    if (run.q > 0) for (let i = 0; i < 9; i++) { const a = .5 + .5 * Math.sin(t * (1.3 + i * .37) + i * 2.1); if (a < .6) continue; const x = ((i * 67.3 - cam * .02) % W + W) % W, y = 8 + (i * 29.7) % 90, r = (1.2 + a) * s; d.globalAlpha = a * .8; d.drawImage(pxFeinPunkt('255,255,255'), x * s - r, y * s - r, r * 2, r * 2); } d.globalAlpha = 1; }
+  if (T.licht && run.q > 0) {
+    d.globalCompositeOperation = 'lighter';
+    for (let b = 0; b < 3; b++) {
+      const col = b === 1 ? '138,92,246' : '63,209,200', st = pxAFEbene('licht' + b, 1, 64, 1, g => { const gr = g.createLinearGradient(0, 0, 0, 64); gr.addColorStop(0, `rgba(${col},0)`); gr.addColorStop(.3, `rgba(${col},.9)`); gr.addColorStop(1, `rgba(${col},0)`); g.fillStyle = gr; g.fillRect(0, 0, 1, 64); });
+      for (let x = 0; x < W; x += 6) { const y = 10 + b * 11 + Math.sin(x * .021 + t * .5 + b * 1.7) * 10 + Math.sin(x * .06 + t * .23) * 4, hh = 40 - b * 7 + Math.sin(x * .05 + t * .4 + b) * 8; d.globalAlpha = (.3 - b * .06) * (.75 + .25 * Math.sin(x * .09 - t * .8 + b * 2)); d.drawImage(st, x * s, y * s, 6 * s + 1, hh * s); }
+    }
+    d.globalAlpha = 1; d.globalCompositeOperation = 'source-over';
+  }
+  if (T.sonne) { const [fx, fy, r, kern, hof] = T.sonne, x = (W * fx - cam * .015) * s, y = H * fy * s, R = r * s; d.globalAlpha = .55; d.drawImage(pxFeinPunkt(hof), x - R * 6, y - R * 6, R * 12, R * 12); d.globalAlpha = 1; d.drawImage(pxFeinPunkt(kern, 1), x - R * 1.7, y - R * 1.7, R * 3.4, R * 3.4); }
+  if (T.mond) { const [fx, fy, r] = T.mond, x = (W * fx - cam * .015) * s, y = H * fy * s, R = r * s; d.globalAlpha = .4; d.drawImage(pxFeinPunkt('190,210,255'), x - R * 5, y - R * 5, R * 10, R * 10); d.globalAlpha = 1; d.fillStyle = '#fff6d2'; d.beginPath(); d.arc(x, y, R, 0, 7); d.fill(); d.fillStyle = T.sky[1]; d.globalAlpha = .93; d.beginPath(); d.arc(x + R * .45, y - R * .15, R * .86, 0, 7); d.fill(); d.globalAlpha = 1; }
+  if (T.fels) {
+    pxAFZieh(d, pxAFEbene('fels0u', 384, 110, q * .6, (g, r) => pxAFFels(g, r, 384, 110, T.fels[1], false)), s, W, cam * .12, H - 150);
+    pxAFZieh(d, pxAFEbene('fels0o', 384, 70, q * .6, (g, r) => pxAFFels(g, r, 384, 70, T.fels[1], true)), s, W, cam * .12, 0);
+    if (T.kristall && run.q > 0) { d.globalCompositeOperation = 'lighter'; for (let i = 0; i < 9; i++) { const x = ((i * 91.7 - cam * .2) % (W + 60) + W + 60) % (W + 60) - 30, y = H - 58 - (i * 37) % 52, rgb = ['63,209,200', '138,92,246', '143,208,255'][i % 3], a = .3 + .2 * Math.sin(t * 1.4 + i * 2), r = 10 + (i % 3) * 5; d.globalAlpha = a; d.drawImage(pxFeinPunkt(rgb), (x - r) * s, (y - r) * s, r * 2 * s, r * 2 * s); d.globalAlpha = a + .3; d.drawImage(pxFeinPunkt('255,255,255', 1), (x - 1) * s, (y - 1) * s, 2 * s, 2 * s); } d.globalCompositeOperation = 'source-over'; d.globalAlpha = 1; }
+    pxAFZieh(d, pxAFEbene('fels1u', 448, 90, q, (g, r) => pxAFFels(g, r, 448, 90, T.fels[0], false)), s, W, cam * .3, H - 104);
+    pxAFZieh(d, pxAFEbene('fels1o', 448, 56, q, (g, r) => pxAFFels(g, r, 448, 56, T.fels[0], true)), s, W, cam * .3, 0);
+    const ng = d.createLinearGradient(0, H * .35 * s, 0, H * s); ng.addColorStop(0, `rgba(${T.dunst},0)`); ng.addColorStop(1, `rgba(${T.dunst},.28)`); d.fillStyle = ng; d.fillRect(0, 0, W * s, H * s);
+    return;
+  }
+  if (run.q > 0) { d.globalAlpha = T.wa || 1; pxAFZieh(d, pxAFEbene('wolkeA' + th, 448, 70, q * .5, (g, r) => pxAFWolken(g, r, 448, 70, T.wolke, 6)), s, W, cam * .03 + t * 2.2, 4); d.globalAlpha = 1; }
+  pxAFZieh(d, pxAFEbene('fern' + th, 512, 96, q * .55, (g, r) => pxAFBerge(g, r, 512, 96, 74, 16, T.fern, T.schnee, null, 1.5)), s, W, cam * .07, H - 148);
+  const dz = d.createLinearGradient(0, (H - 120) * s, 0, (H - 44) * s); dz.addColorStop(0, `rgba(${T.dunst},0)`); dz.addColorStop(1, `rgba(${T.dunst},.55)`); d.fillStyle = dz; d.fillRect(0, (H - 120) * s, W * s, 80 * s);
+  if (T.nah) pxAFZieh(d, pxAFEbene('nah' + th, 448, 104, q * .8, (g, r) => pxAFBerge(g, r, 448, 104, 88, 20, T.nah, T.schnee, T.kante, 2.1)), s, W, cam * .14, H - 134);
+  if (run.q > 0) { d.globalAlpha = T.wa || 1; pxAFZieh(d, pxAFEbene('wolkeB' + th, 384, 60, q * .7, (g, r) => pxAFWolken(g, r, 384, 60, T.wolke, 4)), s, W, cam * .1 + t * 4.5, 16); d.globalAlpha = 1; }
+  if (T.eis) {
+    const y0 = H - 44; pxAFZieh(d, pxAFEbene('eis' + th, 448, 64, q, (g, r) => pxAFEisberge(g, r, 448, 64, T.eis)), s, W, cam * .22, y0 - 62);
+    const sg = d.createLinearGradient(0, y0 * s, 0, H * s); sg.addColorStop(0, T.see[0]); sg.addColorStop(1, T.see[1]); d.fillStyle = sg; d.fillRect(0, (y0 - 1) * s, W * s, (H - y0 + 1) * s);
+    d.fillStyle = '#ffffff'; for (let i = 0; i < 26; i++) { const yy = y0 + 2 + (i * 7.3) % 40, z = (yy - y0) / 44, x = ((i * 53.1 - cam * (.24 + z * .3) + Math.sin(t * .8 + i) * 5) % (W + 30) + W + 30) % (W + 30) - 15, w = (5 + (i % 4) * 3) * (.6 + z); d.globalAlpha = .18 + .3 * (.5 + .5 * Math.sin(t * 2.1 + i * 1.9)); d.fillRect(x * s, yy * s, w * s, Math.max(1, s * .5)); }
+    d.globalAlpha = 1;
+  }
+  if (T.huegel) pxAFZieh(d, pxAFEbene('huegel' + th, 448, 84, q, (g, r) => pxAFHuegel(g, r, 448, 84, T.huegel, T.tanne)), s, W, cam * .32, H - 92);
+  const bz = d.createLinearGradient(0, (H - 70) * s, 0, H * s); bz.addColorStop(0, `rgba(${T.dunst},0)`); bz.addColorStop(1, `rgba(${T.dunst},.4)`); d.fillStyle = bz; d.fillRect(0, (H - 70) * s, W * s, 70 * s);
+}
+
+function pxAFFx0(run, A, d, s) {
+  const T = PXAF_TH[A.D.th] || {}, W = run.W, H = run.H, cam = A.camF || 0, t = A.t, F = A.fz || (A.fz = { st: [], on: true, lauf: 0 });
+
+  d.globalCompositeOperation = 'lighter';
+  for (const e of A.ents) {
+    if (e.gone || e.deco) continue; const k = e.k; if (k !== 'fisch' && k !== 'stern' && k !== 'herz' && !(k === 'fahne' && e.up)) continue;
+    const x = e.x - cam; if (x < -20 || x > W + 20) continue;
+    const r = k === 'stern' ? 17 + Math.sin(t * 3) * 2.5 : k === 'herz' ? 12 : k === 'fahne' ? 15 : 9, y = k === 'fahne' ? e.y - 26 : e.y - (k === 'stern' ? 1 : 0);
+    d.globalAlpha = k === 'stern' ? .5 : k === 'fisch' ? .26 : .34; d.drawImage(pxFeinPunkt(k === 'stern' ? '255,216,74' : k === 'herz' ? '255,120,150' : k === 'fahne' ? '255,216,74' : '143,208,255'), (x - r) * s, (y - r) * s, r * 2 * s, r * 2 * s);
+  }
+
+  if (T.strahl && run.q > 1) for (let i = 0; i < 4; i++) { const x0 = (W * (.5 + i * .16) - cam * .04 + Math.sin(t * .25 + i * 1.3) * 8) * s, w = (11 + i * 5) * s, gr = d.createLinearGradient(0, 0, 0, H * .9 * s); gr.addColorStop(0, `rgba(255,246,214,${T.strahl * (.7 + .3 * Math.sin(t * .6 + i))})`); gr.addColorStop(1, 'rgba(255,246,214,0)');
+    d.globalAlpha = 1; d.fillStyle = gr; d.beginPath(); d.moveTo(x0, 0); d.lineTo(x0 + w, 0); d.lineTo(x0 + w - H * .5 * s, H * .9 * s); d.lineTo(x0 - w * .6 - H * .5 * s, H * .9 * s); d.closePath(); d.fill(); }
+  d.globalCompositeOperation = 'source-over'; d.globalAlpha = 1;
+
+  if ((T.flocken || T.staub) && run.q > 0) { const dot = pxFeinPunkt(T.staub ? '170,200,255' : '255,255,255', 1), n = run.q > 1 ? 64 : 30;
+    for (let i = 0; i < n; i++) { const z = .35 + ((i * 37) % 100) / 100 * .65, sp = T.staub ? 2 + z * 3 : 12 + z * 26, x = ((i * 71.3 - cam * z * .6 + Math.sin(t * (.6 + z) + i) * (T.staub ? 9 : 5)) % (W + 12) + W + 12) % (W + 12) - 6, y = ((i * 43.7 + t * sp * (T.staub && i % 2 ? -1 : 1)) % (H + 10) + H + 10) % (H + 10) - 5, r = (T.staub ? .7 + z : .7 + z * 1.5) * s;
+      d.globalAlpha = T.staub ? .12 + z * .25 : .3 + z * .6; d.drawImage(dot, x * s - r, y * s - r, r * 2, r * 2); }
+    d.globalAlpha = 1; }
+
+  const P = A.p;
+  if (A.phase === 'play' && !run.paused) {
+    if (P.on && !F.on) for (let i = 0; i < 7; i++) F.st.push({ x: P.x + (i - 3) * 2.2, y: P.y - 1, vx: (i - 3) * 9, vy: -6 - Math.random() * 10, l: .45, m: .45, r: 2.6 });
+    if (P.on && Math.abs(P.vx) > 60 && (F.lauf += 1 / 60) > .13) { F.lauf = 0; F.st.push({ x: P.x - P.dir * 5, y: P.y - 1, vx: -P.dir * 8, vy: -5, l: .32, m: .32, r: 1.8 }); }
+    F.on = P.on;
+  }
+  if (F.st.length) { const dot = pxFeinPunkt(T.fels ? '170,190,230' : '255,255,255'); for (let i = F.st.length - 1; i >= 0; i--) { const p = F.st[i]; p.l -= 1 / 60; if (p.l <= 0) { F.st.splice(i, 1); continue; } p.x += p.vx / 60; p.y += p.vy / 60; p.vy *= .94; const r = p.r * (1.6 - p.l / p.m * .8) * s; d.globalAlpha = .55 * p.l / p.m; d.drawImage(dot, (p.x - cam) * s - r, p.y * s - r, r * 2, r * 2); } d.globalAlpha = 1; if (F.st.length > 80) F.st.splice(0, 40); }
+
+  if (run.q > 0) { const v = pxAFEbene('rand', 128, 96, 1, g => { const gr = g.createRadialGradient(64, 46, 30, 64, 48, 86); gr.addColorStop(0, 'rgba(6,10,36,0)'); gr.addColorStop(1, 'rgba(6,10,36,.42)'); g.fillStyle = gr; g.fillRect(0, 0, 128, 96); }); d.drawImage(v, 0, 0, W * s, H * s); }
+}
+
+
+function pxAFStatic(run, A, g, cam) {
+  const C = 512, W = run.W, st = A.static, F = A.fst || (A.fst = []);
+  for (let c = Math.max(0, Math.floor(cam / C)); c * C < cam + W && c * C < st.width; c++) {
+    if (!F[c]) { F[c] = pxFein3x(st, c * C, 0, Math.min(C, st.width - c * C), st.height); pxAFTiefe(A, F[c], c * C / PXA_T); }
+    g.drawImage(F[c], c * C - cam, 0, F[c].width / 3, F[c].height / 3);
+  }
+}
+
+function pxAFTiefe(A, c, tx0) {
+  const g = c.getContext('2d'), T = PXA_T * 3, fest = (x, y) => { const t = pxATile(A, x, y); return t === '#' || t === 'I'; };
+  g.save(); g.globalCompositeOperation = 'source-atop';
+  for (let x = 0; x * T < c.width; x++) for (let y = 0; y < A.h; y++) {
+    const tx = tx0 + x; if (!fest(tx, y)) continue;
+    let d = 0; while (d < 5 && y - d - 1 >= 0 && fest(tx, y - d - 1)) d++;
+    const a0 = Math.min(.3, d * .075), a1 = Math.min(.3, (d + 1) * .075), X = x * T, Y = y * T;
+    if (a1 > 0) { const gr = g.createLinearGradient(0, Y, 0, Y + T); gr.addColorStop(0, `rgba(14,22,66,${a0})`); gr.addColorStop(1, `rgba(14,22,66,${a1})`); g.fillStyle = gr; g.fillRect(X, Y, T, T); }
+    if (d === 0) { const gr = g.createLinearGradient(0, Y, 0, Y + T * .5); gr.addColorStop(0, 'rgba(255,255,255,.2)'); gr.addColorStop(1, 'rgba(255,255,255,0)'); g.fillStyle = gr; g.fillRect(X, Y, T, T * .5); }
+    if (!fest(tx - 1, y)) { const gr = g.createLinearGradient(X, 0, X + T * .45, 0); gr.addColorStop(0, 'rgba(255,255,255,.14)'); gr.addColorStop(1, 'rgba(255,255,255,0)'); g.fillStyle = gr; g.fillRect(X, Y, T * .45, T); }
+    if (!fest(tx + 1, y)) { const gr = g.createLinearGradient(X + T, 0, X + T * .5, 0); gr.addColorStop(0, 'rgba(14,22,66,.3)'); gr.addColorStop(1, 'rgba(14,22,66,0)'); g.fillStyle = gr; g.fillRect(X + T * .5, Y, T * .5, T); }
+  }
+  g.restore();
+}
+
+function pxAFWasser(run, A, g, cam) {
+  const W = run.W, T = PXA_T, t = A.t;
+  for (let tx = Math.floor(cam / T); tx <= Math.floor((cam + W) / T); tx++) {
+    let ty = 0; while (ty < A.h && pxATile(A, tx, ty) !== '~') ty++; if (ty >= A.h) continue;
+    const X = tx * T - cam, Y = ty * T, hh = (A.h - ty) * T, gr = g.createLinearGradient(0, Y, 0, Y + hh); gr.addColorStop(0, 'rgba(160,220,255,.22)'); gr.addColorStop(.25, 'rgba(20,50,140,0)'); gr.addColorStop(1, 'rgba(8,20,80,.5)');
+    g.fillStyle = gr; g.fillRect(X, Y + 2, T, hh - 2);
+    g.fillStyle = '#ffffff';
+    for (let k = 0; k < 2; k++) { const ph = t * (.7 + k * .4) + tx * 1.9 + k * 2.4, w = 4 + 3 * Math.sin(ph * 1.3), x = X + 8 + Math.sin(ph) * 5 - w / 2, y = Y + 6 + k * 7 + Math.sin(ph * .7) * 1.2; g.globalAlpha = .16 + .16 * Math.sin(ph * 2.1) ** 2; g.fillRect(x, y, w, .67); }
+    g.globalAlpha = 1;
+  }
+}
+
+function pxAFSchatten(run, A, g, cam) {
+  const W = run.W, einer = (x, y, w) => {
+    const tx = Math.floor(x / PXA_T); let ty = Math.floor((y - 1) / PXA_T), n = 0;
+    while (n < 6 && !(pxASolid(pxATile(A, tx, ty)) || pxATile(A, tx, ty) === '=')) { ty++; n++; } if (n >= 6) return;
+    const gy = ty * PXA_T, f = Math.max(0, 1 - Math.max(0, gy - y) / 84); if (f <= 0) return;
+    g.fillStyle = `rgba(12,20,60,${(.26 * f).toFixed(3)})`; g.beginPath(); g.ellipse(x - cam, gy + 1.2, w * (.45 + .55 * f) / 2, 1.9, 0, 0, 7); g.fill();
+  };
+  const P = A.p; if (!P.hide && A.phase !== 'ende') einer(P.x, P.y, 15);
+  for (const e of A.ents) { if (e.gone || e.dead || e.deco) continue; const k = e.k; if (k !== 'krabbe' && k !== 'eidechse' && k !== 'kugel' && k !== 'moewe') continue; if (e.x < cam - 20 || e.x > cam + W + 20) continue; einer(e.x, e.y, k === 'moewe' ? 12 : 14); }
+}
+
+function pxAFLumi(run, A, g, name, x, y, flip, hut) {
+  const P = A.p; let sx = 1, sy = 1;
+  if (!P.on && !P.vine) { const v = Math.min(1, Math.abs(P.vy) / 420); sy = 1 + .16 * v; sx = 1 - .1 * v; }
+  else if (P.sq > 0) { const v = Math.min(1, P.sq * 8); sy = 1 - .2 * v; sx = 1 + .16 * v; }
+  if (sx === 1 && sy === 1) return false;
+  g.save(); g.translate(pxR(x + 10), pxR(y + 20)); g.scale(sx, sy); pxDraw(g, name, -10, -20, flip); if (hut) hut(-10, -20); g.restore(); return true;
+}
 
 /*@@src px_ski.js@@*/
 
