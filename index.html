@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-dZs3Up+YoOjHIRPTYUEbjBfz26OCF2edSVgM5a9riAY=' 'sha256-XadpdouwtlgMNQNZYy8JATfE4NoF+FT2x+Vrj/4sh3A=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-lCDvTkRcbjfJebqvNIhZNRJEPAEL/S8teYa/sPmnzsY=' 'sha256-dSvgVtYW+BW6snQFUH2HppP+EFYyXEswaykjPFz18Ys=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -9233,8 +9233,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '2.92.0';
-  var MAP = {"probe":0,"files":[[9223,"fehler_kern.js"],[9511,null],[9513,"data.js"],[10228,"data_more.js"],[10600,"data_su2.js"],[10827,"data_es.js"],[11195,"data_wissen.js"],[11396,"data_v21.js"],[12081,"data_v24.js"],[12569,"data_v25.js"],[13050,"data_v26.js"],[13149,"data_v29.js"],[13457,"data_v30.js"],[13791,"data_v31.js"],[14097,"data_kunst.js"],[14293,"data_v214.js"],[14396,"data_v216.js"],[14689,"schrift.js"],[14989,"eingabe.js"],[15200,"data_k34m.js"],[15718,"data_k34d.js"],[16072,"data_k34s.js"],[16526,"data_v224.js"],[17399,"data_v225w.js"],[17768,"data_v225k.js"],[18212,"data_herz.js"],[18566,"data_fb226.js"],[18709,"data_tf226.js"],[18916,"data_v227a.js"],[20016,"data_v227b.js"],[20970,"data_h28b.js"],[21010,"data_l28a.js"],[21876,"data_l28b.js"],[23056,"data_schaetz.js"],[23538,"data_party8.js"],[23588,"data_alce.js"],[24259,"data_alce2.js"],[24508,"data_alce3.js"],[24923,"registry.js"],[25437,"app.js"],[26642,"fun.js"],[27222,"fun2.js"],[27538,"atelier.js"],[27912,"kunst225.js"],[28102,"herz.js"],[28466,"reise.js"],[28768,"iglu.js"],[28934,"offline.js"],[29041,"party.js"],[29525,"meine.js"],[29881,"loeffel.js"],[30052,"trend.js"],[30594,"fun228a.js"],[31445,"fun228b.js"],[32106,"kueche.js"],[33145,"stimme.js"],[33200,"klassen.js"],[33349,"freunde_vorab.js"],[33370,"mut.js"],[33792,"schule.js"],[34281,"fussball226.js"],[34603,"schaetzen.js"],[35034,"party8.js"],[35653,"tiere.js"],[36112,"fussball232.js"],[36327,"party8b.js"],[36629,"weg.js"],[36850,"px.js"],[37269,"px_fein.js"],[37323,"px_data.js"],[37580,"pxwelt.js"],[37663,"px_abenteuer.js"],[38479,"px_abenteuer2.js"],[39231,"px_abenteuer3.js"],[39622,"px_abenteuer4.js"],[39832,"px_baukasten.js"],[39940,"px_abenteuer_fein.js"],[40156,"px_abenteuer_fein2.js"],[40508,"px_ski.js"],[41150,"px_wurf.js"],[41679,"px_insel.js"],[42880,"px_kicker.js"],[43815,"px_eis.js"],[44801,"px_run.js"],[46016,"px_brk.js"],[46978,"px_pol.js"],[48329,"px_frog.js"],[49589,"px_angel.js"],[50904,"px_golf.js"],[51938,"px_tauch.js"],[53203,"px_hockey.js"],[54159,"px_lab.js"],[55494,"px_plopp.js"],[56700,"px_stadion.js"],[58211,"px_stadion2.js"],[58263,"px_training.js"],[58632,"cm.js"],[59122,"cmwelt.js"],[59178,"cm_baeck.js"],[59971,"cm_bahn.js"],[60735,"cm_detek.js"],[61452,"cm_markt.js"],[62165,"ff.js"],[62322,"ff_mathe.js"],[64312,"ff_deutsch.js"],[65900,"ff_sach_a.js"],[68149,"ff_sach_b.js"],[70378,"ff_sprachen.js"],[72786,"zm.js"],[73699,"tt.js"],[73912,"data_tagebuch.js"],[73955,"data_hoerspiel.js"],[74114,"leseecke.js"],[74433,"kt.js"],[74736,"comicbuch.js"],[75014,"alce.js"],[75177,"alce_aufg.js"],[75347,"formen.js"],[75798,"data_formen.js"],[76039,"data_formen2.js"],[76261,"spielzeit.js"],[76406,"data_faktmeinung.js"],[76525,"data_es248.js"],[76789,"data_en249.js"],[77028,"data_wissen249.js"],[77459,"data_kunst249.js"],[77742,"data_fussball250.js"],[77866,"data_werte252.js"],[78119,"data_lesen252.js"],[78180,"data_k34_252.js"],[78266,"art254.js"],[78384,"data_werte255.js"],[78522,"data_lesen255.js"],[78658,"forscher255.js"],[78806,"zufall250.js"],[78852,"stufe259.js"],[78862,"advent.js"],[79125,"wdh.js"],[79223,"eswarm288.js"],[79274,"bilder292.js"],[79710,"denk.js"],[79747,"data_viaje265.js"],[79890,"klassenarbeit.js"],[80023,"quizduell.js"],[80146,"neu267.js"],[80411,"prog.js"],[80516,"lernstand.js"],[80583,"blatt.js"],[80685,"data_es271.js"],[80799,"plus269.js"],[80893,"schach.js"],[81125,"schachtaktik.js"],[81377,"fun270.js"],[81540,"data_neu274.js"],[81749,"plus272.js"],[81803,"spiele274.js"],[81926,"kasten.js"],[82030,"erklaer.js"],[82143,"apa.js"],[82224,"neu276.js"],[82365,"spiele276.js"],[82415,"neu277.js"],[82593,"spiele277.js"],[82848,"lernen278.js"],[83108,"spiele278.js"],[83451,"lernen279.js"],[83776,"lernen279b.js"],[84174,"spanisch280.js"],[84466,"spanisch283.js"],[84699,"mehr281.js"],[84845,"grafik280.js"],[85216,"tiefsee280.js"],[85494,"abenteuer280.js"],[85706,"abenteuer281.js"],[85818,"design281.js"],[85950,"party281.js"],[86081,"grafik281.js"],[86298,"traumtor292.js"],[86505,"lumi_live.js"],[86621,"sicher.js"],[86805,"stil.js"],[86859,"zurueck287.js"],[86902,"freunde.js"],[87039,"start.js"],[87049,null],[87059,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '2.93.0';
+  var MAP = {"probe":0,"files":[[9223,"fehler_kern.js"],[9511,null],[9513,"data.js"],[10228,"data_more.js"],[10600,"data_su2.js"],[10827,"data_es.js"],[11195,"data_wissen.js"],[11396,"data_v21.js"],[12081,"data_v24.js"],[12569,"data_v25.js"],[13050,"data_v26.js"],[13149,"data_v29.js"],[13457,"data_v30.js"],[13791,"data_v31.js"],[14097,"data_kunst.js"],[14293,"data_v214.js"],[14396,"data_v216.js"],[14689,"schrift.js"],[14989,"eingabe.js"],[15200,"data_k34m.js"],[15718,"data_k34d.js"],[16072,"data_k34s.js"],[16526,"data_v224.js"],[17399,"data_v225w.js"],[17768,"data_v225k.js"],[18212,"data_herz.js"],[18566,"data_fb226.js"],[18709,"data_tf226.js"],[18916,"data_v227a.js"],[20016,"data_v227b.js"],[20970,"data_h28b.js"],[21010,"data_l28a.js"],[21876,"data_l28b.js"],[23056,"data_schaetz.js"],[23538,"data_party8.js"],[23588,"data_alce.js"],[24259,"data_alce2.js"],[24508,"data_alce3.js"],[24923,"registry.js"],[25437,"app.js"],[26643,"fun.js"],[27223,"fun2.js"],[27539,"atelier.js"],[27913,"kunst225.js"],[28103,"herz.js"],[28467,"reise.js"],[28769,"iglu.js"],[28935,"offline.js"],[29042,"party.js"],[29526,"meine.js"],[29882,"loeffel.js"],[30053,"trend.js"],[30595,"fun228a.js"],[31446,"fun228b.js"],[32107,"kueche.js"],[33146,"stimme.js"],[33201,"klassen.js"],[33350,"freunde_vorab.js"],[33371,"mut.js"],[33793,"schule.js"],[34282,"fussball226.js"],[34604,"schaetzen.js"],[35035,"party8.js"],[35654,"tiere.js"],[36113,"fussball232.js"],[36328,"party8b.js"],[36630,"weg.js"],[36851,"px.js"],[37270,"px_fein.js"],[37324,"px_data.js"],[37581,"pxwelt.js"],[37664,"px_abenteuer.js"],[38480,"px_abenteuer2.js"],[39232,"px_abenteuer3.js"],[39623,"px_abenteuer4.js"],[39833,"px_baukasten.js"],[39941,"px_abenteuer_fein.js"],[40157,"px_abenteuer_fein2.js"],[40509,"px_ski.js"],[41151,"px_wurf.js"],[41680,"px_insel.js"],[42881,"px_kicker.js"],[43816,"px_eis.js"],[44802,"px_run.js"],[46017,"px_brk.js"],[46979,"px_pol.js"],[48330,"px_frog.js"],[49590,"px_angel.js"],[50905,"px_golf.js"],[51939,"px_tauch.js"],[53204,"px_hockey.js"],[54160,"px_lab.js"],[55495,"px_plopp.js"],[56701,"px_stadion.js"],[58212,"px_stadion2.js"],[58264,"px_training.js"],[58633,"cm.js"],[59123,"cmwelt.js"],[59179,"cm_baeck.js"],[59972,"cm_bahn.js"],[60736,"cm_detek.js"],[61453,"cm_markt.js"],[62166,"ff.js"],[62323,"ff_mathe.js"],[64313,"ff_deutsch.js"],[65901,"ff_sach_a.js"],[68150,"ff_sach_b.js"],[70379,"ff_sprachen.js"],[72787,"zm.js"],[73700,"tt.js"],[73913,"data_tagebuch.js"],[73956,"data_hoerspiel.js"],[74115,"leseecke.js"],[74434,"kt.js"],[74737,"comicbuch.js"],[75015,"alce.js"],[75178,"alce_aufg.js"],[75348,"formen.js"],[75799,"data_formen.js"],[76040,"data_formen2.js"],[76262,"spielzeit.js"],[76407,"data_faktmeinung.js"],[76526,"data_es248.js"],[76790,"data_en249.js"],[77029,"data_wissen249.js"],[77460,"data_kunst249.js"],[77743,"data_fussball250.js"],[77867,"data_werte252.js"],[78120,"data_lesen252.js"],[78181,"data_k34_252.js"],[78267,"art254.js"],[78385,"data_werte255.js"],[78523,"data_lesen255.js"],[78659,"forscher255.js"],[78807,"zufall250.js"],[78853,"stufe259.js"],[78863,"advent.js"],[79126,"wdh.js"],[79224,"eswarm288.js"],[79275,"bilder293a.js"],[79365,"bilder293b.js"],[79495,"bilder293c.js"],[79593,"bilder293d.js"],[79715,"bilder293e.js"],[79879,"bilder293f.js"],[79959,"bilder292.js"],[80405,"denk.js"],[80442,"data_viaje265.js"],[80585,"klassenarbeit.js"],[80718,"quizduell.js"],[80841,"neu267.js"],[81106,"prog.js"],[81211,"lernstand.js"],[81278,"blatt.js"],[81380,"data_es271.js"],[81494,"plus269.js"],[81588,"schach.js"],[81820,"schachtaktik.js"],[82072,"fun270.js"],[82235,"data_neu274.js"],[82444,"plus272.js"],[82498,"spiele274.js"],[82621,"kasten.js"],[82725,"erklaer.js"],[82838,"apa.js"],[82919,"neu276.js"],[83060,"spiele276.js"],[83110,"neu277.js"],[83288,"spiele277.js"],[83543,"lernen278.js"],[83803,"spiele278.js"],[84146,"lernen279.js"],[84471,"lernen279b.js"],[84869,"spanisch280.js"],[85161,"spanisch283.js"],[85394,"mehr281.js"],[85540,"grafik280.js"],[85911,"tiefsee280.js"],[86189,"abenteuer280.js"],[86401,"abenteuer281.js"],[86513,"design281.js"],[86645,"party281.js"],[86776,"grafik281.js"],[86993,"traumtor292.js"],[87200,"kart293.js"],[87470,"lumi_live.js"],[87586,"sicher.js"],[87770,"stil.js"],[87824,"zurueck287.js"],[87867,"freunde.js"],[88004,"start.js"],[88014,null],[88024,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -25438,9 +25438,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '2.92.0';
+const APP_VERSION = '2.93.0';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "2.93.0", d: "15.11.2026", t: ["Eigene Bildchen für die ganze Lernwelt: über 1100 gezeichnete Bildchen statt rund 360. Alle Welten und Themen-Listen sind umgestellt", "Neu gezeichnet: Menschen und Berufe, Tiere, Länderfahnen, Gesichter, Fahrzeuge, Gebäude, Essen, Kleidung, Werkzeug, Sport und Musik", "In den Aufgaben sind fast alle Bildchen gezeichnet. Wo eins fehlt, bleibt die Aufgabe ganz bei den Emojis", "Neues großes Abenteuer in der Spielhalle: Kart-Pokal. Rennen gegen fünf Tiere über drei Runden, mit Extras aus Kisten und vier Strecken zum Freischalten"] },
   { v: "2.92.0", d: "15.11.2026", t: ["Eigene Bildchen statt Emojis: Rund 360 Symbole sind selbst gezeichnet, in einem einheitlichen Stil. Start, Inseln, Mathe-Welt und viele Aufgaben sind schon umgestellt. Wo noch nicht alle Bildchen gezeichnet sind, bleiben vorerst die Emojis", "Schalter im Elternbereich: „Eigene Bildchen statt Emojis“", "Neues großes Abenteuer in der Spielhalle: Traumtor. Freistöße in glatter Grafik: wischen vom Ball zum Tor, im Bogen wischen gibt eine Kurve um die Mauer. Zehn Level mit Mauer, Wind und Torwart"] },
   { v: "2.91.1", d: "15.11.2026", t: ["Kleine Korrektur bei der Zurück-Geste, keine neuen Inhalte"] },
   { v: "2.91.0", d: "15.11.2026", t: ["Feine Grafik im Pixel-Abenteuer, zweiter Schritt: Alle neun Welten haben gemalte Hintergründe, 48 neue Szenen", "Vulkan-Insel, Dschungel, Wüste, Wolkenreich, Fußballstadt, Weltraum, Süßigkeitenland und Unterwasserwelt mit eigenen Landschaften", "Dazu passende Teilchen: fallende Blätter, Sandwind, Glut, Regen, Luftblasen, Glühwürmchen und Funkeln"] },
@@ -79271,6 +79272,690 @@ function eswParentsHTML() {
   if (typeof finishRound === 'function') { const f = finishRound; finishRound = function () { if (G && G.esw) { S.eswTag = dayKey(); } return f.apply(this, arguments); }; }
 })();
 
+/*@@src bilder293a.js@@*/
+
+
+
+
+
+const EB2 = {};
+const EB2H = (() => {
+  const H = { K: '#1d2b45', W: '#ffffff', Y: '#ffd84a', Y2: '#f0a500', R: '#ef4b4b', R2: '#c62f3a', G: '#3cb85c', G2: '#1f8a3c', B: '#3b7cf0', B2: '#2456c8', L: '#9ad4ff', O: '#ff9d2e', O2: '#e07a10', P: '#8a5cf6', P2: '#6a3fd6', PK: '#ff8fc2', BR: '#a8703e', BR2: '#7a4a25', GR: '#c3cddd', GR2: '#7f8da3', CR: '#fff3d6', Z: '‍' };
+  H.c = (x, y, r, f) => `<circle cx="${x}" cy="${y}" r="${r}" fill="${f}"/>`;
+  H.e = (x, y, rx, ry, f, rot) => `<ellipse cx="${x}" cy="${y}" rx="${rx}" ry="${ry}" fill="${f}"${rot ? ` transform="rotate(${rot} ${x} ${y})"` : ''}/>`;
+  H.r = (x, y, w, h, rx, f, rot) => `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="${rx}" fill="${f}"${rot ? ` transform="rotate(${rot} ${x + w / 2} ${y + h / 2})"` : ''}/>`;
+  H.p = (d, f) => `<path d="${d}" fill="${f}"/>`;
+  H.s = (d, col, w) => `<path d="${d}" fill="none" stroke="${col}" stroke-width="${w || 2}" stroke-linecap="round" stroke-linejoin="round"/>`;
+  H.t = (txt, x, y, gr, f) => `<text x="${x}" y="${y}" font-size="${gr}" font-weight="900" text-anchor="middle" fill="${f}" font-family="system-ui,-apple-system,'Segoe UI',Roboto,sans-serif">${txt}</text>`;
+  H.g = (inh, tr) => `<g transform="${tr}">${inh}</g>`;
+  H.STERN = 'M16 2.6l4.1 8.3 9.2 1.3-6.6 6.5 1.5 9.1L16 23.5l-8.2 4.3 1.5-9.1-6.6-6.5 9.2-1.3z';
+  H.HERZ = 'M16 28C6 20.5 2.5 15.8 2.5 10.8 2.5 6.6 5.7 3.6 9.6 3.6c2.6 0 4.9 1.3 6.4 3.6 1.5-2.3 3.8-3.6 6.4-3.6 3.9 0 7.1 3 7.1 7.2 0 5-3.5 9.7-13.500 17.200z';
+  H.stern = (x, y, k, f) => H.g(H.p(H.STERN, f), `translate(${x - 16 * k} ${y - 16 * k}) scale(${k})`);
+  H.herz = (x, y, k, f) => H.g(H.p(H.HERZ, f), `translate(${x - 16 * k} ${y - 16 * k}) scale(${k})`);
+  H.gesicht = (inh, f, f2) => H.c(16, 16, 13.5, f2 || H.Y2) + H.c(16, 15.4, 13, f || H.Y) + inh;
+  H.au = (y, k) => H.c(11.5, y || 13, k || 1.6, H.K) + H.c(20.5, y || 13, k || 1.6, H.K);
+  H.aug = (y, k) => H.c(11.5, y || 13, k || 3, H.W) + H.c(20.5, y || 13, k || 3, H.W) + H.c(11.5, y || 13, 1.4, H.K) + H.c(20.5, y || 13, 1.4, H.K);
+  return H;
+})();
+(() => {
+  const { K, W, Y, Y2, R, R2, G, G2, B, B2, L, O, P, PK, BR, GR, GR2, Z, c, e, r, p, s, g, stern, herz, gesicht, au, aug } = EB2H;
+
+  const rahmen = '<rect x="2" y="6" width="28" height="20" rx="1.6" fill="none" stroke="rgba(20,30,70,.3)" stroke-width="1"/>';
+  const fh = (cols, gew) => { gew = gew || cols.map(() => 1); const sum = gew.reduce((a, b) => a + b, 0); let y = 6; return cols.map((col, i) => { const h = 20 * gew[i] / sum, o = r(2, +y.toFixed(2), 28, +(h + .06).toFixed(2), 0, col); y += h; return o; }).join(''); };
+  const fv = (cols, gew) => { gew = gew || cols.map(() => 1); const sum = gew.reduce((a, b) => a + b, 0); let x = 2; return cols.map((col, i) => { const w = 28 * gew[i] / sum, o = r(+x.toFixed(2), 6, +(w + .06).toFixed(2), 20, 0, col); x += w; return o; }).join(''); };
+  const kreuz = (col, w, x) => r(x === undefined ? 16 - w / 2 : x, 6, w, 20, 0, col) + r(2, 16 - w / 2, 28, w, 0, col);
+  const fl = (land, inh) => { EB2[String.fromCodePoint(...[...land].map(ch => 0x1F1E6 + ch.charCodeAt(0) - 65))] = inh + rahmen; };
+  const streif = (n, a, b2) => fh(Array.from({ length: n }, (_, i) => i % 2 ? b2 : a));
+  fl('ES', fh([R, Y, R], [1, 2, 1])); fl('DE', fh([K, R, Y])); fl('FR', fv([B2, W, R])); fl('IT', fv([G, W, R])); fl('BE', fv([K, Y, R])); fl('IE', fv([G, W, O])); fl('PE', fv([R, W, R]));
+  fl('AT', fh([R, W, R])); fl('PL', fh([W, R])); fl('NL', fh([R, W, B2])); fl('LU', fh([R, W, L])); fl('CO', fh([Y, B2, R], [2, 1, 1])); fl('EC', fh([Y, B2, R], [2, 1, 1]) + c(16, 15, 2.2, BR));
+  fl('MX', fv([G2, W, R]) + c(16, 16, 2.2, BR)); fl('AR', fh([L, W, L]) + c(16, 16, 2, Y2)); fl('PY', fh([R, W, B2]) + c(16, 16, 1.8, Y2)); fl('VE', fh([Y, B2, R]) + [-4, -2, 0, 2, 4].map(i => c(16 + i * 1.5, 16.6 - Math.cos(i / 4) * 1.6, .7, W)).join(''));
+  fl('JP', r(2, 6, 28, 20, 0, W) + c(16, 16, 5.6, R)); fl('CH', r(2, 6, 28, 20, 0, R) + r(14, 9.5, 4, 13, 0, W) + r(9.5, 14, 13, 4, 0, W)); fl('CA', fv([R, W, R], [1, 2, 1]) + p('M16 10l1.5 3 2.5-1-1 3.5 2.5 1-3 2 .500 2.500-2.500-1-2.500 1 .500-2.500-3-2 2.500-1-1-3.500 2.500 1z', R));
+  fl('SE', r(2, 6, 28, 20, 0, B) + kreuz(Y, 4, 9.5)); fl('DK', r(2, 6, 28, 20, 0, R) + kreuz(W, 3.4, 9.8)); fl('FI', r(2, 6, 28, 20, 0, W) + kreuz(B2, 4.4, 9.3)); fl('NO', r(2, 6, 28, 20, 0, R) + kreuz(W, 5.6, 8.7) + kreuz(B2, 2.6, 10.2));
+  fl('GB', r(2, 6, 28, 20, 0, B2) + '<path d="M2 6l28 20M30 6L2 26" stroke="#ffffff" stroke-width="4.4"/><path d="M2 6l28 20M30 6L2 26" stroke="' + R + '" stroke-width="1.5"/>' + kreuz(W, 6.4) + kreuz(R, 3.6));
+  fl('US', streif(13, R, W) + r(2, 6, 12.5, 10.8, 0, B2) + [0, 1, 2].map(j => [0, 1, 2, 3].map(i => c(4 + i * 2.9, 8 + j * 3.3, .7, W)).join('')).join(''));
+  fl('TR', r(2, 6, 28, 20, 0, R) + c(12.5, 16, 5.2, W) + c(13.9, 16, 4.2, R) + stern(19.5, 16, .16, W)); fl('EU', r(2, 6, 28, 20, 0, B2) + Array.from({ length: 12 }, (_, i) => c(+(16 + Math.sin(i / 6 * Math.PI) * 6.4).toFixed(1), +(16 - Math.cos(i / 6 * Math.PI) * 6.4).toFixed(1), .95, Y)).join(''));
+  fl('AU', r(2, 6, 28, 20, 0, B2) + r(2, 6, 11, 8, 0, B) + s('M2 6l11 8M13 6L2 14', W, 1.6) + r(6.6, 6, 1.8, 8, 0, R) + r(2, 9.1, 11, 1.8, 0, R) + c(8, 20.5, 1.6, W) + c(22, 10.5, 1, W) + c(26, 14.5, 1, W) + c(22, 21, 1, W) + c(19, 15.5, 1, W));
+  fl('BR', r(2, 6, 28, 20, 0, G) + p('M16 8.2L27.5 16 16 23.800 4.500 16z', Y) + c(16, 16, 4.4, B2)); fl('CU', streif(5, B2, W) + p('M2 6l11 10L2 26z', R) + stern(6, 16, .15, W)); fl('CR', fh([B2, W, R, W, B2], [1, 1, 2, 1, 1]));
+  fl('UY', streif(9, W, B) + r(2, 6, 11, 11.1, 0, W) + c(7.5, 11.5, 2.8, Y2)); fl('GR', streif(9, B, W) + r(2, 6, 11, 11.1, 0, B) + r(6.4, 6, 2.2, 11.1, 0, W) + r(2, 10.4, 11, 2.2, 0, W)); fl('PT', fv([G2, R], [2, 3]) + c(13.2, 16, 3.2, Y) + c(13.2, 16, 1.6, R));
+  fl('CL', fh([W, R]) + r(2, 6, 10, 10, 0, B2) + stern(7, 11, .16, W));
+
+  const la = s('M10 19c3.5 3.5 8.5 3.5 12 0', K, 1.8), tr = s('M11 22c3-2.5 7-2.5 10 0', K, 1.8), of = (rx, ry, y) => e(16, y || 21, rx || 3, ry || 3.6, K), gr = p('M9 17.5h14c0 4-3 7-7 7s-7-3-7-7z', K), zu = s('M9.5 13.5c1-1.6 3-1.6 4 0M18.5 13.5c1-1.6 3-1.6 4 0', K, 1.8), zuU = s('M9.5 12.5c1 1.6 3 1.6 4 0M18.5 12.5c1 1.6 3 1.6 4 0', K, 1.8), kneif = s('M9 11l4 2-4 2M23 11l-4 2 4 2', K, 1.7), flach = s('M12 21h8', K, 1.8), tropfen = (x, y) => p(`M${x} ${y}c1.5 2.5 2.5 4 2.5 5.5a2.5 2.5 0 0 1-5 0c0-1.5 1-3 2.5-5.5z`, B), zunge = e(16, 23.5, 2.6, 2.2, R), boeseBr = s('M8 9.5l5.5 2M24 9.500l-5.500 2', K, 1.8), sorgBr = s('M8.5 10.5l5-1.5M23.500 10.500l-5-1.500', K, 1.6), welle = s('M10 21.5l2-1.5 2 1.5 2-1.5 2 1.5 2-1.5 2 1.5', K, 1.5);
+  Object.assign(EB2, {
+    '🤫': gesicht(au() + s('M13 21h6', K, 1.6) + r(14.7, 15.5, 2.6, 11, 1.3, Y2)),
+    '🥶': gesicht(au() + sorgBr + welle + p('M6 27l1.500 3.500 1.500-3.500zM23 27l1.500 3.500 1.500-3.500z', L), L, B),
+    '🥱': gesicht(zuU + of(3.4, 4.6) + c(22.5, 24, 3.6, Y2)),
+    '🤪': gesicht(c(11, 12.5, 3.2, W) + c(11, 12.5, 1.5, K) + c(21, 13.5, 2, W) + c(21, 13.5, 1, K) + gr + e(18, 24, 2.6, 2.4, R)),
+    '🥵': gesicht(au() + sorgBr + of(3.2, 2.6, 20) + e(16, 22.5, 2.4, 3, R) + tropfen(25, 4), '#ff8a5c', R2),
+    '😮': gesicht(au() + of()),
+    '😂': gesicht(zu + gr + p('M11.500 21.500c2.500-1.500 6.500-1.500 9 0-1 1.800-2.500 3-4.500 3s-3.500-1.200-4.500-3z', R) + tropfen(5.5, 13) + tropfen(26.5, 13)),
+    '🤗': gesicht(zu + la + c(8.5, 18, 2, '#ffb36b') + c(23.5, 18, 2, '#ffb36b')) + c(6, 25, 3.6, Y2) + c(26, 25, 3.6, Y2),
+    '😨': gesicht(p('M3.3 13a13 13 0 0 1 25.4 0z', L) + aug(13.5, 2.8) + sorgBr + of(2.6, 2.2, 22)),
+    '😠': gesicht(au(14) + boeseBr + tr),
+    '😌': gesicht(zuU + s('M12 20.5c2.500 1.600 5.500 1.600 8 0', K, 1.6)),
+    '😤': gesicht(zuU + boeseBr + tr + c(8, 22.5, 2.4, W) + c(24, 22.5, 2.4, W)),
+    '😟': gesicht(au(13.5) + sorgBr + tr),
+    '😄': gesicht(zu + gr + p('M11.500 21.500c2.500-1.500 6.500-1.500 9 0-1 1.800-2.500 3-4.500 3s-3.500-1.200-4.500-3z', R)),
+    '😱': gesicht(p('M3.3 13a13 13 0 0 1 25.4 0z', L) + aug(13, 2.8) + of(3, 4.6, 22.5)) + e(5.5, 21, 2.6, 5, Y2) + e(26.5, 21, 2.6, 5, Y2),
+    '😭': gesicht(zuU + r(9.6, 13.5, 3.2, 13, 1.6, B) + r(19.2, 13.5, 3.2, 13, 1.6, B) + of(3, 3.4, 22)),
+    '🤒': gesicht(au(12.5) + sorgBr + tr) + r(16, 20, 12, 2.8, 1.4, W, -22) + c(27.5, 18.2, 1.8, R),
+    '🙃': g(gesicht(au() + la), 'rotate(180 16 16)'),
+    '😋': gesicht(zu + la + e(21.5, 21.5, 2.6, 2.1, R, -30)),
+    '🧐': gesicht(au(13.5) + s('M8 9c1.500-1 3.500-1 5 0', K, 1.6) + flach) + '<circle cx="20.5" cy="13.5" r="4.2" fill="none" stroke="' + K + '" stroke-width="1.4"/>' + s('M24 16.500l1.500 7', K, 1),
+    '🤥': gesicht(au() + flach) + r(15, 15.5, 15, 3.2, 1.6, Y2),
+    '🤧': gesicht(kneif) + p('M9 17l14-1 3 9-8 4-10-3z', W) + s('M9 17l14-1 3 9-8 4-10-3z', GR, 1),
+    '😁': gesicht(zu + '<path d="M9 17.5h14c0 4-3 7-7 7s-7-3-7-7z" fill="#ffffff" stroke="' + K + '" stroke-width="1.5"/>' + s('M9.500 20.500h13M13 17.500v6.500M16 17.500v7M19 17.500v6.500', K, 1)),
+    '😳': gesicht(aug(13, 3.2) + flach + c(7.5, 19.5, 2.4, PK) + c(24.5, 19.5, 2.4, PK)),
+    '😬': gesicht(au() + '<rect x="9.500" y="18" width="13" height="5.500" rx="2" fill="#ffffff" stroke="' + K + '" stroke-width="1.4"/>' + s('M9.500 20.800h13M12.800 18v5.500M16 18v5.500M19.200 18v5.500', K, 1)),
+    '😲': gesicht(aug(13, 3) + s('M8 8c1.500-1 3.500-1 5 0M19 8c1.500-1 3.500-1 5 0', K, 1.5) + of(3.4, 4.2, 22)),
+    '🫠': e(16, 28.5, 13, 3, Y2) + gesicht(au() + la),
+    '😘': gesicht(c(11.5, 13, 1.6, K) + s('M18.500 13.500c1-1.600 3-1.600 4 0', K, 1.8) + c(15.5, 21, 1.8, K)) + herz(24, 21, .24, R),
+    '😣': gesicht(kneif + s('M11 21.500c1.500-1.500 3-1.500 5 0s3.500 1.500 5 0', K, 1.6)),
+    '🤨': gesicht(au(13.5) + s('M8.500 10.500h5M18.500 8c1.500-1 3.500-1 5 0', K, 1.6) + flach),
+    '🥳': gesicht(zu + la) + p('M3 12L10 .500l7 8z', P) + c(10, 1.2, 1.6, Y) + c(8.5, 6.5, 1, Y) + c(11.5, 8.5, 1, PK) + c(26, 5, 1.3, R) + c(29, 10, 1.1, B) + c(23.5, 2.5, 1, G),
+    '🤢': gesicht(au(13.5) + sorgBr + s('M11 21.500c1.500-1.500 3-1.500 5 0s3.500 1.500 5 0', K, 1.6), '#9bd66b', G2),
+    '😷': gesicht(au(12)) + s('M3.500 15.500l5 2M28.500 15.500l-5 2', GR, 1.4) + r(8, 15.5, 16, 10.5, 3.5, W) + s('M10.500 19h11M10.500 22.500h11', GR, 1),
+    '😅': gesicht(zu + gr) + tropfen(25.5, 3),
+    '😎': gesicht(la) + p('M4.500 10.500h23v2.500c0 2.800-2 4.500-4.800 4.500S18 15.800 17.500 13h-3c-.500 2.800-2.400 4.500-5.200 4.500S4.500 15.800 4.500 13z', K),
+    '😖': gesicht(kneif + welle),
+    '🤡': c(4.5, 12, 4.4, R) + c(27.5, 12, 4.4, R) + c(16, 16.6, 12.6, GR) + c(16, 16, 12.6, W) + c(11.5, 13, 1.6, K) + c(20.5, 13, 1.6, K) + s('M9.500 19.500c3.500 4.500 9.500 4.500 13 0', R, 2.4) + c(16, 17.5, 2.8, R),
+    ['😮' + Z + '💨']: gesicht(zuU + c(15, 21, 1.8, K)) + c(23, 23, 3, W) + c(27, 24.5, 2.4, W) + c(24.5, 26.5, 2.4, W)
+  });
+})();
+
+/*@@src bilder293b.js@@*/
+
+(() => {
+  const { K, W, Y, Y2, R, R2, G, G2, B, B2, L, O, O2, P, P2, PK, BR, BR2, GR, GR2, CR, Z, c, e, r, p, s, g, stern, herz } = EB2H;
+  const F = '♀', M = '♂';
+
+  const oben = f => p('M7.3 13c-.5-6.5 3.5-10.5 8.7-10.5s9.2 4 8.700 10.500c-1.500-3.500-4.500-5.500-8.700-5.500S8.800 9.500 7.300 13z', f);
+  const HAAR = {
+    kurz: f => ['', oben(f)],
+    lang: f => [r(5.4, 8, 5, 17, 2.5, f) + r(21.6, 8, 5, 17, 2.5, f), oben(f)],
+    zopf: f => [c(5.4, 15.5, 3.6, f) + c(26.6, 15.5, 3.6, f), oben(f)],
+    dutt: f => [c(16, 3.2, 3.6, f), oben(f)],
+    kranz: f => [c(7.4, 13.5, 3, f) + c(24.6, 13.5, 3, f), ''],
+    locke: f => [[6.5, 10, 13.5, 18.5, 22, 25.5].map((x, i) => c(x, [11, 6.5, 4.5, 4.5, 6.5, 11][i], 3.8, f)).join(''), ''],
+    ohne: () => ['', '']
+  };
+  const gesi = c(12.8, 13.8, 1.2, K) + c(19.2, 13.8, 1.2, K) + s('M13 17.4c2 1.6 4 1.6 6 0', K, 1.2);
+  const mensch = (haar, frisur, hemd, extra, hinten) => { const [h1, h2] = HAAR[frisur || 'kurz'](haar); return (hinten || '') + p('M4 31c0-6 5-9.5 12-9.5S28 25 28 31z', hemd || B) + h1 + c(16, 13.4, 8.6, Y2) + c(16, 13, 8.3, Y) + h2 + gesi + (extra || ''); };
+  const klein = (inh, x, y, k) => g(inh, `translate(${x} ${y}) scale(${k})`);
+  const helm = (f, f2) => p('M6.5 10.5c0-6 4-9.500 9.500-9.500s9.500 3.500 9.500 9.500z', f) + r(4.6, 9.4, 22.8, 2.8, 1.4, f2 || f);
+  const muetze = (f, f2) => p('M7 8.5c0-4 4-6.500 9-6.500s9 2.500 9 6.500z', f) + r(6.4, 7.8, 19.2, 2.8, 1, f2 || K) + c(16, 5.2, 1.3, Y);
+  const kochmuetze = c(11, 3.6, 3.6, W) + c(16, 2.6, 4, W) + c(21, 3.6, 3.6, W) + r(9.6, 3.6, 12.8, 5.4, 1, W) + s('M9.600 8.400h12.800', GR, 1.2);
+  const spitzhut = (f, f2) => p('M16 -2.5L23.5 8h-15z', f) + e(16, 8, 11.5, 2.5, f2) + stern(16.5, 4, .1, Y);
+  const strohhut = e(16, 7.6, 13, 2.9, '#e8c36a') + p('M9.5 7.5c0-4 3-6 6.500-6s6.500 2 6.500 6z', '#e8c36a') + r(9.6, 5.6, 12.8, 1.8, .6, R);
+  const krone = p('M9 8.5L8 1.500l4 3 4-4 4 4 4-3-1 7z', Y) + c(16, 6, 1.1, R);
+  const astronaut = p('M4 31c0-6 5-9.500 12-9.500S28 25 28 31z', W) + r(12.5, 24.5, 7, 4, 1, L) + c(16, 12.6, 11.9, GR) + c(16, 12.2, 11.4, W) + c(16, 12.8, 8.4, '#bfe3ff') + c(16, 13.6, 6.2, Y) + c(13.8, 13.6, 1, K) + c(18.2, 13.6, 1, K) + s('M14 16.200c1.300 1 2.700 1 4 0', K, 1) + s('M10.500 8.500c1.500-2 3.500-3 5.500-3', W, 1.4);
+  const maler = (haar, fr) => mensch(haar, fr, '#e8eef7', e(15, 4.6, 8.4, 3.6, R) + c(18, 1.4, 1.1, R) + e(26, 25.5, 4.8, 3.8, BR) + c(24.4, 24.6, 1, R) + c(26.6, 23.8, 1, B) + c(28, 25.8, 1, Y));
+  const forscher = (haar, fr) => mensch(haar, fr, W, r(9, 11.6, 14, 4.4, 2, 'rgba(154,212,255,.7)') + s('M9 13.800h14', GR2, 1) + p('M24.500 17h3.400v3l2.600 6.500h-8.600l2.600-6.500z', L) + p('M23.300 23.500h5.800l1.400 3h-8.600z', G));
+  const feuerwehr = (haar, fr) => mensch(haar, fr, '#3a4664', helm(R, R2) + c(16, 5.2, 1.7, Y) + r(13, 24, 6, 1.8, .6, Y));
+  const koch = (haar, fr) => mensch(haar, fr, W, kochmuetze + c(16, 25, .9, GR2) + c(16, 28, .9, GR2));
+  const arzt = (haar, fr) => mensch(haar, fr, W, r(14.8, 24, 2.4, 6, .4, R) + r(13, 25.8, 6, 2.4, .4, R));
+  const bauer = (haar, fr) => mensch(haar, fr, G2, strohhut + s('M12.500 22v8M19.500 22v8', B2, 1.6));
+  const mechaniker = (haar, fr) => mensch(haar, fr, B2, muetze(B2, B2) + c(24.5, 20, 2.6, GR2) + c(25.2, 19.3, 1.2, B2) + s('M25.500 21.500l4.500 6', GR2, 2.2));
+  const held = (haar, fr, f) => mensch(haar, fr, f, r(8.4, 11.6, 15.2, 4.6, 2.3, f === P ? K : B2) + c(12.8, 13.9, 1.3, W) + c(19.2, 13.9, 1.3, W) + stern(16, 26.5, .14, Y), p('M5 23L1 31h8zM27 23l4 8h-8z', f === P ? K : R2));
+  const saenger = (haar, fr) => mensch(haar, fr, K, r(23.6, 20.5, 2.4, 9, 1.2, GR2) + c(24.8, 19.4, 2.8, K) + c(24.8, 19.4, 1.4, GR2));
+  const lehrer = (haar, fr) => mensch(haar, fr, G, r(20.5, 17.5, 11, 8.5, 1, G2) + r(20.5, 25.4, 11, 1.2, .4, BR) + s('M22.500 20.500h6.500M22.500 23h4', W, 1));
+  const pilot = (haar, fr) => mensch(haar, fr, '#3a4664', muetze('#3a4664', K) + s('M12.500 25.500h7', Y, 1.6));
+  const schere = c(24.5, 5, 1.8, 'none') + '<circle cx="24.5" cy="4.5" r="1.8" fill="none" stroke="' + R + '" stroke-width="1.2"/><circle cx="28.5" cy="6.5" r="1.8" fill="none" stroke="' + R + '" stroke-width="1.2"/>' + s('M25.500 6l-5 6M27.500 8l-8 2.500', GR2, 1.3);
+  const silh = f => p('M4 31c0-6 5-9.500 12-9.500S28 25 28 31z', f) + c(16, 13, 8.4, f);
+  const maedchen = mensch(BR, 'zopf', PK), junge = mensch(BR2, 'kurz', G), mann = mensch(BR2, 'kurz', B), frau = mensch(BR, 'lang', R), kind = mensch(O2, 'kurz', P);
+  Object.assign(EB2, {
+    '👧': maedchen, '👦': junge, '👨': mann, '👩': frau, '🧒': kind, '🧑': mensch(K, 'kurz', O),
+    '👶': mensch(BR, 'ohne', L, s('M16 5c-2-2.500 1-4.500 2.500-2.500', BR, 1.6)),
+    '👴': mensch(GR, 'kranz', '#5d6b85', s('M11.500 11.500h3M17.500 11.500h3', GR, 1.4) + p('M11.500 18.500c2.500-1.500 6.500-1.500 9 0-1 1.500-2.500 2-4.500 2s-3.500-.500-4.500-2z', GR)),
+    '👵': mensch(GR, 'dutt', P, '<circle cx="12.8" cy="13.8" r="2.6" fill="none" stroke="' + GR2 + '" stroke-width="1"/><circle cx="19.2" cy="13.8" r="2.6" fill="none" stroke="' + GR2 + '" stroke-width="1"/>' + s('M15.400 13.800h1.200', GR2, 1)),
+    '🧔': mensch(BR2, 'kurz', G2, p('M8 15c0 7.500 3.500 10.500 8 10.500s8-3 8-10.500c-2 2.500-4.500 3.500-8 3.500S10 17.500 8 15z', BR2) + s('M13.500 20.500c1.700 1 3.300 1 5 0', CR, 1.2)),
+    '👤': silh(GR2), '👥': klein(silh(GR), 8, 1, .8) + klein(silh(GR2), -2, 6, .82),
+    '👫': klein(maedchen, -2, 6, .62) + klein(junge, 14, 6, .62), '👭': klein(maedchen, -2, 6, .62) + klein(frau, 14, 6, .62), ['🧑' + Z + '🤝' + Z + '🧑']: klein(kind, -2, 6, .62) + klein(junge, 14, 6, .62),
+    '👪': klein(mann, -1, 1, .58) + klein(frau, 14.5, 1, .58) + klein(kind, 9.3, 15, .42),
+    ['👨' + Z + '👩' + Z + '👧']: klein(mann, -1, 1, .58) + klein(frau, 14.5, 1, .58) + klein(maedchen, 9.3, 15, .42),
+    ['👨' + Z + '👩' + Z + '👧' + Z + '👦']: klein(mann, -1, 1, .58) + klein(frau, 14.5, 1, .58) + klein(maedchen, 2.5, 15, .42) + klein(junge, 16, 15, .42),
+    ['👨' + Z + '👧']: klein(mann, 1, 2, .66) + klein(maedchen, 15, 13, .48),
+    '👮': mensch(BR2, 'kurz', B2, muetze(B2, K) + stern(11.5, 26, .1, Y)), '👷': mensch(BR2, 'kurz', O, helm(Y, Y2) + s('M12 22l4 4 4-4', Y, 1.6)),
+    ['🧑' + Z + '🏫']: lehrer(K, 'kurz'), ['👩' + Z + '🏫']: lehrer(BR, 'lang'), ['👨' + Z + '🏫']: lehrer(BR2, 'kurz'),
+    ['🧑' + Z + '🚀']: astronaut, ['👩' + Z + '🚀']: astronaut, ['👨' + Z + '🚀']: astronaut,
+    ['🧑' + Z + '🎨']: maler(K, 'kurz'), ['👩' + Z + '🎨']: maler(BR, 'lang'), ['👨' + Z + '🎨']: maler(BR2, 'kurz'),
+    ['🧑' + Z + '🔬']: forscher(K, 'kurz'), ['👩' + Z + '🔬']: forscher(BR, 'lang'),
+    ['🧑' + Z + '🚒']: feuerwehr(K, 'kurz'), ['👩' + Z + '🚒']: feuerwehr(BR, 'lang'),
+    ['🧑' + Z + '🍳']: koch(K, 'kurz'), ['👩' + Z + '🍳']: koch(BR, 'lang'), ['👨' + Z + '🍳']: koch(BR2, 'kurz'),
+    ['🧑' + Z + '⚕']: arzt(K, 'kurz'), ['👩' + Z + '⚕']: arzt(BR, 'lang'), ['👨' + Z + '⚕']: arzt(BR2, 'kurz'),
+    ['🧑' + Z + '🌾']: bauer(K, 'kurz'), ['👩' + Z + '🌾']: bauer(BR, 'lang'),
+    ['🧑' + Z + '🔧']: mechaniker(K, 'kurz'), ['👨' + Z + '🔧']: mechaniker(BR2, 'kurz'),
+    ['🧑' + Z + '✈']: pilot(K, 'kurz'), ['👩' + Z + '✈']: pilot(BR, 'lang'),
+    ['🧑' + Z + '🎤']: saenger(P, 'kurz'), ['👩' + Z + '🎤']: saenger(PK, 'lang'),
+    ['🧑' + Z + '💼']: mensch(K, 'kurz', '#5d6b85', p('M13 21.500l3 3 3-3z', W) + p('M15 24.500h2l1 6h-4z', R)),
+    '🕵': mensch(BR, 'kurz', '#8a6a48', e(16, 7.6, 12.5, 2.7, BR2) + p('M9.500 7.500c0-4.500 3-6.500 6.500-6.500s6.500 2 6.500 6.500z', BR2) + '<circle cx="25" cy="22.5" r="3.4" fill="#bfe3ff" stroke="' + K + '" stroke-width="1.4"/>' + s('M27.500 25l3 3.500', K, 1.8)),
+    '🦸': held(BR2, 'kurz', R), ['🦸' + Z + F]: held(BR, 'lang', R), '🦹': held(K, 'kurz', P), ['🦹' + Z + F]: held(K, 'lang', P),
+    '🧙': mensch(GR, 'lang', P, spitzhut(P, P2)), ['🧙' + Z + F]: mensch(GR, 'lang', P, spitzhut(P, P2)), ['🧙' + Z + M]: mensch(GR, 'lang', P, spitzhut(P, P2)),
+    '🎅': mensch(W, 'ohne', R, e(16, 20.5, 7.6, 5.8, W) + s('M13.500 18.500c1.700 1 3.300 1 5 0', R2, 1.2) + p('M7.500 8.500C8 3 12 1 16 1c5 0 9 2 12 8l-3 1c-1-3-3-4-5-4z', R) + r(6.6, 7.4, 18.8, 3.4, 1.7, W) + c(27, 10, 2.4, W)),
+    '👸': mensch('#f2c14e', 'lang', PK, krone), '🤴': mensch(BR2, 'kurz', P, krone),
+    '💇': mensch(BR, 'lang', L, schere), ['💇' + Z + M]: mensch(BR2, 'kurz', L, schere), ['💇' + Z + F]: mensch(BR, 'lang', L, schere),
+    ['👩' + Z + '🦰']: mensch(O2, 'lang', G), ['👩' + Z + '🦱']: mensch(BR2, 'locke', O), ['👱' + Z + F]: mensch('#f2c14e', 'lang', B), '👱': mensch('#f2c14e', 'kurz', B),
+    '🧝': mensch('#f2c14e', 'lang', G2, p('M7.800 11L4 6.500l5.500 2zM24.200 11L28 6.500l-5.500 2z', Y)),
+    ['🧜' + Z + F]: p('M14 21c0 5 3 8 8 7l5 3v-9l-4 2.500c-3 .500-5-1-5-4z', G) + p('M24.500 24.500l4.500-3.500v9z', G2) + klein(mensch(R, 'lang', P), 0, -1, .7), '🧜': p('M14 21c0 5 3 8 8 7l5 3v-9l-4 2.500c-3 .500-5-1-5-4z', G) + klein(mensch(R, 'lang', P), 0, -1, .7)
+  });
+  EB2['🕵' + Z + F] = mensch(BR, 'lang', '#8a6a48', e(16, 7.6, 12.5, 2.7, BR2) + p('M9.500 7.500c0-4.500 3-6.500 6.500-6.500s6.500 2 6.500 6.500z', BR2) + '<circle cx="25" cy="22.5" r="3.4" fill="#bfe3ff" stroke="' + K + '" stroke-width="1.4"/>' + s('M27.500 25l3 3.500', K, 1.8));
+
+  const fig = (hx, hy, d, col, davor, dahinter) => (dahinter || '') + s(d, col || B, 3.2) + c(hx, hy, 3.7, Y2) + c(hx, hy - .3, 3.4, Y) + (davor || '');
+  const wasser = s('M2 25q3.500-2.500 7 0t7 0 7 0 7 0', B, 2.4) + s('M2 29.500q3.500-2.500 7 0t7 0 7 0 7 0', L, 2);
+  const beide = (k, v) => { EB2[k] = v; EB2[k + Z + F] = v; EB2[k + Z + M] = v; };
+  beide('🧍', fig(16, 5.5, 'M16 10v10M16 12l-4.500 6M16 12l4.500 6M16 20l-3 9.500M16 20l3 9.500'));
+  beide('🚶', fig(16, 5.5, 'M16 9.500v10M16 12l-4.500 5M16 12l4.500 4.500M16 19.500l-4 9.500M16 19.500l4 4.500 1 5', G2));
+  beide('🏃', fig(19.5, 5.5, 'M18 9.500l-3 9.500M17.500 11.500l-6.500 1-2 4.500M17.500 11.500l5 3.500 4-2M15 19l5.500 3.500-1.500 7M15 19l-4.500 4-6 .500', R));
+  beide('🕺', fig(16, 5.5, 'M16 9.500V19M16 11.500L9.500 5M16 11.500l6.500 5.500M16 19l-5 10M16 19l6 9', P));
+  beide('🙋', fig(16, 7.5, 'M16 11.500v10M16 13.500l-5 6M16 13.500L22 4M16 21.500l-3 8M16 21.500l3 8', O));
+  beide('🙆', fig(16, 9.5, 'M16 13.500v9M16 14.500c-7-2-7.500-9-1.500-12M16 14.500c7-2 7.500-9 1.500-12M16 22.500l-3 7.500M16 22.500l3 7.500', P));
+  beide('🙅', fig(16, 6, 'M16 10v11M9.500 12.500l13 7M22.500 12.500l-13 7M16 21l-3 9M16 21l3 9', R));
+  beide('🤸', fig(16, 25.5, 'M16 21.500v-10M16 11.500L9 3.500M16 11.500l7-8M16 20l-8 4.500M16 20l8 4.500', O));
+  beide('🏊', fig(9, 16.5, 'M13 19.500h13', B2, wasser, s('M12 18.500c3-8 10-8 13.500 0', Y2, 3)));
+  beide('🧗', fig(14.5, 7, 'M15 11l-1 8.500M14.500 12.500l8-5.500M14.500 14l8 2.500M14 19.500l8 2M14 19.500l-2.500 9.500', R, '', r(22.5, 1.5, 7, 29, 1.5, BR) + c(25, 7, 1.3, BR2) + c(27, 16.5, 1.3, BR2) + c(25, 22, 1.3, BR2)));
+  beide('🏄', fig(15, 5, 'M15 9l1 9M15.500 11l-7 3.500M15.500 11l7 2.500M16 18l-5 6M16 18l5.500 5.500', O, e(16, 25.5, 13.5, 2.3, Y2, -6), s('M1 29.500q5-4 10 0t10 0 10 0', L, 2.6)));
+  beide('🚴', fig(17.5, 5.5, 'M16.500 9.500l-3.500 6 5.500 1M15.500 11l6.500 3.500', B, '', '<circle cx="8" cy="23.5" r="5.2" fill="none" stroke="' + K + '" stroke-width="1.8"/><circle cx="24" cy="23.5" r="5.2" fill="none" stroke="' + K + '" stroke-width="1.8"/>' + s('M8 23.500l5.500-8.500h7.500l3 8.500M13.500 15l5 8.500h-10.500', R, 1.6)));
+  beide('🙇', s('M12.500 20.500c3-7 10-8 13-2v8H13M12 23.500H4', B, 3.2) + c(9, 19.5, 3.7, Y2) + c(9, 19.2, 3.4, Y) + s('M3 29.500h26', GR, 1.6));
+  beide('🧎', fig(15, 6, 'M15 10v10M15 12.500l5 5M15 20l6.500 3-1 6M20.500 29h5.500', G2));
+  beide('🚣', fig(14, 8.5, 'M14 12.500v7.500M14 15l7 3.500', R, p('M3 21h26l-3.500 6h-19z', BR) + wasser.replace(/M2 25[^"]*/, 'M2 29.500q3.500-2.500 7 0t7 0 7 0 7 0'), s('M24 9L12 27', BR2, 1.8)));
+  beide('🤾', fig(13, 7, 'M13.500 11l1 9M14 13l8-6.500M14 13l-6 3.500M14.500 20l-5 8.500M14.500 20l6.500 7', B, c(24.5, 4.5, 2.6, O)));
+  beide('🤼', s('M9.500 12l3 8M11 14l7.500 1.500M12.500 20l-5.500 9.500M12.500 20l1.500 9.500', R, 3) + s('M22.500 12l-3 8M21 14.500l-7.500 3M19.500 20l5.500 9.500M19.500 20l-1.500 9.500', B, 3) + c(9, 8, 3.5, Y) + c(23, 8, 3.5, Y));
+  Object.assign(EB2, {
+    '💃': s('M16 10.500l-6.500-5M16 11l7 3.500', Y2, 2.6) + p('M16 9l-7 17c4 2 11 2 15-1z', R) + p('M9 26c4 2 11 2 15-1l1 3c-5 2.500-12 2.500-17 1z', R2) + c(16, 5.2, 3.6, Y) + p('M12.600 4.500c.500-3 6.500-3 7 0-2-1-5-1-7 0z', BR2),
+    '⛷': s('M3 26.500l25 3', R, 2.2) + s('M21.500 14.500l3 13', GR2, 1.2) + fig(13, 6, 'M13.500 10l2 8M14 12l7.500 3M15.500 18l5 4.500M15.500 18l-3 7', B),
+    '🛌': r(2, 12, 3, 15, 1, BR2) + r(27, 17, 3, 10, 1, BR2) + r(2, 19, 28, 6, 1.5, BR) + r(5.5, 14.5, 8.5, 5, 2.2, W) + c(10, 13.5, 3.3, Y) + r(13, 15, 14.5, 5.5, 2.4, B),
+    '🏇': e(15, 20, 9, 5, BR) + p('M21 18l5-8 3.500 1.500-1 4-3 1-1 4z', BR) + s('M9 23l-2.500 6.500M13 24.500v5.500M19 24.500l1 5.500M22.500 22.500l3 6', BR, 2.2) + s('M6 19c-2 1-3 3-3 5', BR2, 2) + s('M15.500 13.500l-1 4', B, 3) + c(16, 9, 3, Y) + p('M13 8c.500-3 5.500-3 6 0z', R),
+
+    '👏': s('M16 2v3.500M8.500 4l2 3M23.500 4l-2 3', Y2, 1.8) + e(12, 18.5, 5.2, 9, Y, -20) + e(20, 18.5, 5.2, 9, Y2, 20) + e(19.6, 18.5, 4.6, 8.4, Y, 20),
+    '💪': p('M5 26.500c0-6.500 2-12.500 6-17.500l5.500 1-1.500 7c4-2 9.500-1 11.500 3s0 9.500-5.500 10.500c-6 1-11.500 0-16-4z', Y) + s('M15 17c2.500-.500 5 .500 6.500 2.500', Y2, 1.4) + r(9.5, 6, 7, 5, 2.4, Y2),
+    '🤲': e(10.5, 19, 5.4, 9, Y, -28) + e(21.5, 19, 5.4, 9, Y, 28) + s('M12 14.500c1.500 3 2.500 6 2.500 9M20 14.500c-1.500 3-2.500 6-2.500 9', Y2, 1.2),
+    '🙏': r(6.5, 23, 8, 7.5, 1.5, B, 22) + r(17.5, 23, 8, 7.5, 1.5, B, -22) + e(13.4, 14.5, 4.6, 10.5, Y, 8) + e(18.6, 14.5, 4.6, 10.5, Y2, -8) + e(18.9, 14.5, 4, 10, Y, -8),
+    '🖐': r(9, 14.5, 14, 13.5, 5.5, Y) + [[8.6, 6.5, 3.2, 12, -10], [12.2, 3.5, 3.2, 14, -3], [15.8, 4, 3.2, 14, 4], [19.2, 7, 3.1, 11.500, 12]].map(([x, y, w, h, a]) => r(x, y, w, h, 1.6, Y, a)).join('') + r(3.5, 16, 3.6, 9.5, 1.8, Y, -42),
+    '✊': r(7, 10, 18, 16.5, 6, Y) + s('M11.500 10.500v6M16 10v6.500M20.500 10.500v6', Y2, 1.3) + r(5.5, 17.5, 13.5, 4.6, 2.3, Y2),
+    '🤏': r(3, 12, 12, 14, 5, Y) + r(12, 9.5, 15, 3.8, 1.9, Y, 14) + r(12, 20, 15, 3.8, 1.9, Y, -14) + s('M7 17h5M7 20.500h5', Y2, 1.1),
+    '🙌': s('M16 1.500v3M9 3l1.500 2.500M23 3l-1.500 2.500', Y2, 1.6) + r(4.5, 13, 9.5, 12, 4, Y) + r(18, 13, 9.5, 12, 4, Y) + [5, 7.4, 9.800, 12.200].map(x => r(x, 6, 2, 9, 1, Y)).join('') + [18.500, 20.900, 23.300, 25.700].map(x => r(x, 6, 2, 9, 1, Y)).join('') + r(6, 24, 6.5, 6, 1, B) + r(19.5, 24, 6.5, 6, 1, B),
+    '🤞': r(8, 15, 16, 14, 6, Y) + c(11.5, 16, 2.8, Y) + c(20.5, 16, 2.8, Y) + r(12.2, 2.5, 3.8, 16, 1.9, Y2, 13) + r(15.8, 2.5, 3.8, 16, 1.9, Y, -13) + r(6.5, 20.5, 12, 4.6, 2.3, Y2),
+    '🤟': r(8, 14, 16, 14, 6, Y) + r(8.5, 4, 3.4, 13, 1.7, Y) + r(20, 5, 3.4, 12, 1.7, Y) + r(2.5, 15, 3.6, 10, 1.8, Y, -50) + s('M13.500 15v5M17 15v5', Y2, 1.2),
+    '🤙': r(8, 11, 16, 13, 6, Y) + r(1.5, 9, 3.8, 11, 1.9, Y, -45) + r(26.5, 13, 3.8, 11, 1.9, Y, 55) + s('M12.500 11.500v5M16 11.500v5M19.500 11.500v5', Y2, 1.2),
+    '🫶': herz(16, 15, .8, Y) + herz(16, 15, .42, CR) + s('M16 9v4', Y2, 1.2) + r(5, 24, 7, 6, 1, B, 20) + r(20, 24, 7, 6, 1, B, -20),
+    '👃': p('M17.500 3.500c1 8 6.500 12 6.500 17.500 0 3-2 5-5 5-2 0-3-1-4-1s-2 1-4 1c-2 0-3.500-1.800-3.500-4 0-3 4.500-4.500 5.500-9.500.600-3 0-6 0-9z', Y) + s('M13.500 23c.800-.800 2-.800 2.800 0', Y2, 1.4),
+    '👅': e(16, 11.5, 11, 6.5, K) + p('M9.500 11.500h13v8c0 4.500-3 8-6.500 8s-6.500-3.500-6.500-8z', R) + s('M16 13.500v8.500', R2, 1.2),
+    '👄': p('M3 16c4-5.500 8-7.500 10.500-5.500L16 11.500l2.500-1c2.500-2 6.500 0 10.500 5.500-4 6-8 8.500-13 8.500S7 22 3 16z', R) + s('M5.500 16c7 1.500 14 1.500 21 0', R2, 1.3),
+    '🦶': p('M12 3h8v13c3 2 7.500 4 8.500 8 .800 3-1.700 5-4.700 5H9.500c-3 0-4.500-2-3.500-5l6-8z', Y) + s('M22 24.500v3M25.500 25v2.500', Y2, 1),
+    '🦵': p('M10 3h10.500l-1 12 2 8h5c3.500 0 3.500 6 0 6H12.500l-1-8L8.500 13z', Y) + s('M12 14.500c2.500 1 5 1 7.500 0', Y2, 1.2),
+    '👣': e(10.5, 20, 4, 6.5, GR2, -8) + [7, 9.3, 11.700, 14].map((x, i) => c(x, 11.5 - Math.sin(i / 3 * Math.PI) * 1.2, 1.3, GR2)).join('') + e(21.5, 14, 4, 6.5, GR2, 8) + [18, 20.300, 22.700, 25].map((x, i) => c(x, 5.5 - Math.sin(i / 3 * Math.PI) * 1.2, 1.3, GR2)).join(''),
+    '🫀': r(12.5, 2.5, 3.6, 9, 1.8, R2) + r(17.5, 1.5, 3.6, 9, 1.8, B) + herz(16, 18.5, .78, R) + s('M11 15c2 4 4 7 7 9', R2, 1.2),
+    '🫁': r(14.9, 2, 2.2, 13, 1, R2) + s('M16 13l-4 3M16 13l4 3', R2, 2) + e(9.5, 19, 6.2, 10, PK, 8) + e(22.5, 19, 6.2, 10, PK, -8),
+    '🫂': p('M2 31c0-6 3.500-9.500 9-9.500s9 3.500 9 9.500z', B) + c(11, 14, 6.5, B) + p('M12 31c0-6 3.500-9.500 9-9.500s9 3.500 9 9.500z', O) + c(21, 14, 6.5, O) + s('M13 25c3 1.500 6 1.500 9 0', W, 1.6)
+  });
+  const zeig = r(3, 11.5, 13, 11, 4.5, Y) + r(12, 12.2, 17, 4.6, 2.3, Y) + e(9.5, 10.5, 4.4, 2.5, Y2, -18) + s('M8 16.500h5M8 19.500h5', Y2, 1.1);
+  const daumen = r(3.5, 14, 6, 13, 1.6, B) + p('M10.5 14.5l5-10.6c2.4 0 3.6 1.6 3.2 3.8l-.9 4.5h7c2 0 3.2 1.6 2.8 3.4l-1.8 8.8c-.4 1.7-1.6 2.6-3.4 2.6H10.5z', Y);
+  Object.assign(EB2, { '👉': zeig, '👈': g(zeig, 'translate(32 0) scale(-1 1)'), '👆': g(zeig, 'rotate(-90 16 16)'), '☝': g(zeig, 'rotate(-90 16 16)'), '👇': g(zeig, 'rotate(90 16 16)'), '👎': g(daumen, 'translate(0 32) scale(1 -1)') });
+})();
+
+/*@@src bilder293c.js@@*/
+
+(() => {
+  const { K, W, Y, Y2, R, R2, G, G2, B, B2, L, O, O2, P, PK, BR, BR2, GR, GR2, CR, Z, c, e, r, p, s, g } = EB2H;
+  const SCH = 'rgba(60,90,160,.14)', aug = (x, y, k) => c(x, y, k || 1.3, K);
+
+  const vier = (f, o) => {
+    o = o || {}; const h = o.h || 0, kx = 24.5, ky = 12.5 - h, kr = o.kr || 4.6, bl = o.lang || 7, b = o.b || f;
+    return (o.dahinter || '') + (o.schw === undefined ? s('M6.500 17c-2.500 0-4 2-4 5', b, 2) : o.schw) + [8.5, 12, 18.5, 22].map(x => r(x - 1.3, 22, 2.6, bl, 1.2, b)).join('') + e(15, 19.5, 9.5, 5.6, f) + (h || o.hals ? p(`M19 17l${3.200 - h * .1} ${-4 - h}h4.500l-1 ${8 + h}z`, f) : '') + e(kx + 1, ky + .6, kr + 1.2, kr * .86, f) + (o.ohr === undefined ? p(`M${kx - 2.500} ${ky - 2.500}l.500-4.500 3 3z`, b) : o.ohr) + aug(kx + 1.2, ky - .4, 1) + (o.davor || '');
+  };
+
+  const ohrR = (f, f2, y, k) => c(7, y || 8, k || 4.5, f) + c(25, y || 8, k || 4.5, f) + (f2 ? c(7, y || 8, (k || 4.5) * .55, f2) + c(25, y || 8, (k || 4.5) * .55, f2) : '');
+  const ohrS = (f, f2) => p('M5 13L4 3.500l7.500 4zM27 13l1-9.500-7.500 4z', f) + (f2 ? p('M6.500 10l-.500-4 3.500 2zM25.500 10l.500-4-3.500 2z', f2) : '');
+  const vorn = (f, ohren, inh, o) => (ohren || '') + c(16, 17, 11.5, f) + (o && o.sch ? e(16, 21, o.sch === true ? 6 : o.sch, 5, o.sf || CR) : '') + c(11.5, 14.5, 1.5, K) + c(20.5, 14.5, 1.5, K) + (inh || '');
+  const nase = (y, f) => e(16, y || 19, 2, 1.5, f || K) + s(`M16 ${(y || 19) + 1.500}v2M16 ${(y || 19) + 3.500}c-1 1-2 1-3 .300M16 ${(y || 19) + 3.500}c1 1 2 1 3 .300`, K, 1.1);
+  const pferd = (f, m) => vier(f, { h: 4, lang: 7.5, b: f, schw: s('M6 16.500c-3 1-3.500 5-2.500 9', m, 2.6), davor: s('M21.500 7.500l-2.500 8', m, 2.6) + c(28.2, 9.8, .6, K) });
+  const fisch = (f, f2, o) => p('M3 17c3-6 8-9 14-9 4.500 0 8 2 10 5l3.500-3v14L27 21c-2 3-5.500 5-10 5-6 0-11-3-14-9z', f) + p('M6 19.500c3 3 7 4.500 11 4.500 3 0 5.500-1 7.500-2.800C19 22.500 12 22 6 19.500z', f2) + c(9.5, 15.5, 1.3, K) + (o || '');
+  const wal = f => p('M2 18c0-6 5-10 12-10 6 0 10 3 12 8l2.500-4.500c1.500 1 2 3 1.500 5l-2.500 4.500C26 25 21 27 14 27 7 27 2 23.500 2 18z', f) + p('M4 21c3 3.500 7 5 11 5 4.500 0 8-1.500 10.500-4C19 23.500 10 23.500 4 21z', W) + c(8.5, 16.5, 1.2, K);
+  const kaefer = (f, f2) => s('M7 12l-4-3M6 17H2M7 22l-4 3M25 12l4-3M26 17h4M25 22l4 3M13.500 6.500L11 2.500M18.500 6.500L21 2.500', K, 1.5) + e(16, 18, 9, 10, f) + c(16, 8, 4.6, K) + s('M16 9v19', f2, 1.4);
+  Object.assign(EB2, {
+
+    '🐎': pferd(BR, BR2), '🐴': pferd(BR, BR2), '🫏': vier(GR2, { h: 2, b: GR2, ohr: p('M22 9l-.500-8 3 6zM25 9l1.500-7.500 1.500 7z', GR2), davor: e(27.6, 12.2, 2.6, 2.2, CR) }),
+    '🦓': pferd('#e8eef7', K).replace(/<ellipse cx="15" cy="19.5"[^>]*>/, m => m + s('M10 15v9M13.500 14.500v10M17 14.500v10M20.500 15.500v8', K, 1.6)) + s('M3 30h0', K, 0),
+    '🐕': vier('#e0a368', { ohr: e(22.5, 12, 2, 4, BR2, 20), schw: s('M6.500 17c-2.500-1-3.500-4-2.500-6.500', '#e0a368', 2.4), davor: c(30.2, 13.3, 1.1, K) }),
+    '🐈': vier(O, { ohr: p('M21.500 10l.500-5 3 3.500zM26 9l2.500-4 1 5z', O), schw: s('M6 18c-3 0-4-3-3-6 .500-2 2.500-2.500 3.500-1', O, 2.4), davor: s('M27 14.500l4-.500M27 15.500l4 1', K, .8) }),
+    '🐐': vier(W, { b: GR, ohr: s('M23 8.500c-1-3-3-4.500-5.500-4.500M26 8.500c0-3-1-5-3-6', GR2, 1.8), davor: p('M27.500 16l-.500 4.500 2.500-3.500z', GR) + e(15, 19.5, 9.5, 5.6, SCH) }),
+    '🦌': vier(BR, { h: 3, lang: 8, ohr: s('M23.500 6.500l-2-5M22.500 4l-3-1M26 6.500l2.500-5M27 4l3-.500', BR2, 1.5), schw: c(5.5, 17, 1.8, CR), davor: c(30.6, 10.4, .9, K) }),
+    '🐂': vier(BR2, { kr: 5, ohr: s('M22 8.500c-1.500-2-1.500-4.500 0-6M28.500 8.500c1.500-2 1.500-4.500 0-6', CR, 2), davor: e(29, 14.2, 2.4, 2, PK) }),
+    '🦬': vier(BR2, { kr: 5, lang: 6, ohr: s('M22.500 9c-1.500-1.500-1.500-3.500-.500-5M28.500 9c1.500-1.500 1.500-3.500.500-5', K, 1.8), dahinter: e(17.5, 15, 8, 7, '#5c3a1e') }),
+    '🐖': vier(PK, { kr: 5, lang: 5.5, ohr: p('M22 9l1-4.500 3 3.500z', '#f06aa6'), schw: s('M5.500 18c-2-.500-2-3 0-3s2 2.500 0 2', '#f06aa6', 1.6), davor: e(30.3, 13.5, 1.9, 2.4, '#f06aa6') }),
+    '🐗': vier(BR2, { kr: 5.2, lang: 5.5, ohr: p('M21.500 9l1.500-4.500 2.500 3.500z', '#5c3a1e'), davor: s('M29.500 15.500c1 0 1.500-1.500 1-3', W, 1.6) + s('M10 14l2-2.500 2 2 2-2.500 2 2', '#5c3a1e', 1.6) }),
+    '🐪': vier('#d9a066', { h: 5, lang: 8, ohr: c(23.5, 5.5, 1.3, '#d9a066'), dahinter: e(15, 14.5, 5, 5, '#d9a066') }),
+    '🐫': vier('#d9a066', { h: 5, lang: 8, ohr: c(23.5, 5.5, 1.3, '#d9a066'), dahinter: e(11, 14.5, 3.8, 5, '#d9a066') + e(19, 14.5, 3.8, 5, '#d9a066') }),
+    '🦙': vier(CR, { h: 6, lang: 7, b: '#e6d8b8', ohr: p('M23 4.500l.500-4.500 2 4zM26 4.500l2-4 .500 4.500z', '#e6d8b8'), davor: e(15, 19.5, 9.5, 5.6, SCH) + e(15, 19, 9.5, 5.2, CR) }),
+    '🐅': vier(O, { kr: 5, ohr: c(23, 8.5, 1.8, O) + c(27.5, 8.3, 1.8, O), schw: s('M6 18c-3 0-4.500-3-3-6', O, 2.4), davor: s('M10 15v8M13.500 14.500v9M17 14.500v9M20.500 15.500v7M3.500 14l1.500 1', K, 1.4) }),
+    '🐆': vier(Y2, { kr: 5, ohr: c(23, 8.5, 1.8, Y2) + c(27.5, 8.3, 1.8, Y2), schw: s('M6 18c-3 0-4.500-3-3-6', Y2, 2.4), davor: [[9, 17], [12, 21], [14, 16.500], [17, 20.500], [19.500, 17], [21.500, 21.500], [11, 23.500]].map(([x, y]) => c(x, y, 1, BR2)).join('') }),
+    '🦏': vier(GR2, { kr: 5.4, lang: 5, b: '#6b788c', ohr: p('M22 8.500l1-4 2.500 3z', '#6b788c'), davor: p('M29 11l3.500-6-.500 7.500z', CR) }),
+    '🦛': vier('#8f84a8', { kr: 6.4, lang: 4.5, b: '#786c93', ohr: c(22.5, 7.5, 1.7, '#786c93') + c(27, 7, 1.7, '#786c93'), davor: c(31, 12, .8, K) }),
+    '🦣': vier(BR2, { kr: 6, lang: 6, ohr: e(21.5, 12, 3, 4.5, '#5c3a1e'), davor: s('M29.500 13c2 2 2.500 6 1 11', BR2, 3) + s('M27 16c2 2 3.500 2 5 1', W, 1.6), dahinter: e(14, 16, 10, 7.5, BR2) }),
+    '🦒': vier(Y, { h: 11, lang: 8, kr: 3.6, b: Y2, ohr: s('M24 -1.500v-2.500M26.500 -1.500v-2.500', BR2, 1.4), davor: [[10, 17], [13.500, 21], [17, 17.500], [20, 21], [22.500, 10], [23, 5]].map(([x, y]) => c(x, y, 1.3, BR)).join('') }),
+    '🐇': e(13, 21, 9, 6.5, GR) + c(22.5, 15, 5, GR) + e(21, 6.5, 1.8, 6, GR, -12) + e(24.5, 6.5, 1.8, 6, GR, 10) + e(21, 6.8, .8, 4, PK, -12) + c(4.5, 19.5, 2.6, W) + e(17.5, 27, 5, 2.2, GR) + aug(24, 14, 1.1) + c(27.3, 16, .8, PK),
+    '🐿': p('M6 28c-5-6-4-17 3-20 5-2 9 2 8 7-1 4-5 5-5 9z', O2) + e(17, 21.5, 6, 7, O) + c(22, 12.5, 5, O) + p('M19.500 9l.500-4.500 3 3zM23.500 8.500l2-3.500 1 4z', O) + e(17.5, 23, 3.4, 4.6, CR) + aug(23.5, 12, 1.1) + c(26.8, 13.8, .8, K) + c(24, 20, 2, BR),
+    '🦘': p('M3 27c5-1 8-3 10-6', O2) + s('M2.500 27.500c5-1 8-3 10.500-7', O2, 3) + e(15, 18, 6, 8, O, -20) + c(21.5, 8.5, 3.6, O) + p('M19.500 6l-.500-5 2.500 3.500zM22.500 5.500l1.500-4.500 1 5z', O) + s('M17 24l-1 5h6M18.500 14.500l5 3.500', O2, 2.6) + aug(22.5, 8) + c(24.8, 9.8, .7, K) + e(18.5, 20.5, 2.6, 3.4, CR),
+
+    '🐯': vorn(O, ohrR(O, CR, 7.5, 4), nase(18.5, PK) + s('M16 6v4.500M12 7l1 3.500M20 7l-1 3.500M4.800 15l4 1M4.800 19.500l4-1M27.200 15l-4 1M27.200 19.500l-4-1', K, 1.6), { sch: true }),
+    ['🐻' + Z + '❄']: vorn(W, ohrR(W, null, 8, 4.5) + ohrR(SCH, null, 8, 4.5), nase(19) + c(16, 17, 11.5, SCH) + c(11.5, 14.5, 1.5, K) + c(20.5, 14.5, 1.5, K) + e(16, 19, 2, 1.5, K)),
+    '🐹': vorn('#f2b25e', ohrR('#f2b25e', PK, 7.5, 3.6), e(10.5, 20, 5, 4.5, W) + e(21.5, 20, 5, 4.5, W) + e(16, 18.5, 1.6, 1.2, PK) + s('M16 19.500v1.500', K, 1) + r(14.8, 21, 2.4, 2.6, .5, W)),
+    '🐺': vorn(GR2, ohrS(GR2, CR), p('M9 18c2 6 4.500 9.500 7 10.500 2.500-1 5-4.500 7-10.500-2.500 1.500-4.500 2-7 2s-4.500-.500-7-2z', W) + e(16, 21, 2, 1.5, K)),
+    '🐼': vorn(W, ohrR(K, null, 7.5, 4.2), e(11.5, 14.5, 3.4, 4, K, 20) + e(20.5, 14.5, 3.4, 4, K, -20) + c(11.5, 14.5, 1.2, W) + c(20.5, 14.5, 1.2, W) + c(16, 17, 11.5, SCH) + e(11.5, 14.5, 3.4, 4, K, 20) + e(20.5, 14.5, 3.4, 4, K, -20) + c(11.8, 14.3, 1.1, W) + c(20.2, 14.3, 1.1, W) + nase(19.5)),
+    '🐨': vorn(GR, ohrR(GR2, PK, 10, 5.6), e(16, 19, 2.8, 3.6, K) + s('M13.500 24.500c1.700 1 3.300 1 5 0', K, 1.1)),
+    '🐵': vorn(BR, ohrR(BR, '#e2b780', 16, 3.6), '', { sch: 7, sf: '#e2b780' }) + e(16, 13.5, 7.5, 5, '#e2b780') + c(12.5, 13.5, 1.4, K) + c(19.5, 13.5, 1.4, K) + c(14.8, 18.5, .7, BR2) + c(17.2, 18.5, .7, BR2) + s('M12.500 22c2.200 1.800 4.800 1.800 7 0', BR2, 1.3),
+    '🐒': vorn(BR, ohrR(BR, '#e2b780', 16, 3.6), '', { sch: 7, sf: '#e2b780' }) + e(16, 13.5, 7.5, 5, '#e2b780') + c(12.5, 13.5, 1.4, K) + c(19.5, 13.5, 1.4, K) + s('M12.500 22c2.200 1.800 4.800 1.800 7 0', BR2, 1.3) + s('M27 27c3 0 4-3 2.500-5.500', BR, 2),
+    '🙈': vorn(BR, ohrR(BR, '#e2b780', 16, 3.6), '', { sch: 7, sf: '#e2b780' }) + s('M12.500 23c2.200 1.800 4.800 1.800 7 0', BR2, 1.3) + e(10.5, 14, 5, 3.8, BR2, -15) + e(21.5, 14, 5, 3.8, BR2, 15),
+    '🦍': vorn('#3a4250', ohrR('#3a4250', null, 15, 3), e(16, 12.5, 7.5, 4, '#5d6878') + c(12.5, 13, 1.3, K) + c(19.5, 13, 1.3, K) + e(16, 21.5, 6.5, 5, '#5d6878') + c(14.6, 19.5, .8, K) + c(17.4, 19.5, .8, K) + s('M12.500 23.500h7', K, 1.2)),
+    '🦥': vorn('#b89b78', '', e(16, 17.5, 8.5, 8, CR) + e(11, 15.5, 3.6, 2, BR2, 25) + e(21, 15.5, 3.6, 2, BR2, -25) + c(11.8, 15.2, 1, W) + c(20.2, 15.2, 1, W) + e(16, 19.5, 1.8, 1.3, K) + s('M13 22.500c2 1.300 4 1.300 6 0', K, 1.1)),
+    '🦡': vorn(GR2, ohrR(K, W, 8, 3.4), p('M11 6.500c-2 6-2 12 1 20h3c-2-7-2-14-1-20zM21 6.500c2 6 2 12-1 20h-3c2-7 2-14 1-20z', K) + p('M14 6h4c1 7 1 14-2 22-3-8-3-15-2-22z', W) + c(12, 15.5, 1.2, W) + c(20, 15.5, 1.2, W) + e(16, 25.5, 2, 1.5, K)),
+    '🦫': vorn(BR, ohrR(BR2, null, 8.5, 3.2), e(16, 20, 5, 3.6, '#c98a50') + e(16, 18.5, 2, 1.4, K) + r(14.2, 21.5, 1.7, 3.6, .4, W) + r(16.1, 21.5, 1.7, 3.6, .4, W)),
+
+    '🐔': p('M12 6c1-3 4-3 4.500-.500 1.500-2 4-1 3.500 1.500 2-.500 3 1.500 1.500 3z', R) + e(16, 19, 10, 9.5, W) + e(16, 19, 10, 9.5, SCH) + c(17.5, 11.5, 6, W) + p('M22.500 11l5 1.800-5 1.800z', O) + e(21, 16.5, 1.6, 2.4, R) + aug(19.5, 10.5, 1.1) + s('M12 28v2.500M19 28v2.500', O, 1.6) + p('M7 17c2 3 6 4 9 2-2 4-7 5-10 2z', GR),
+    '🐓': p('M4 22c-3-5-2-11 3-14 0 4 2 7 5 9z', G2) + p('M3 17c0-5 2-8 6-9-1 4 0 7 2 9z', B) + p('M17.500 5c1-3 4-3 4.500-.500 1.500-2 4-1 3.500 1.500z', R) + e(15, 20, 9, 8, O2) + c(21, 11, 5.5, O) + p('M26 10.500l5 1.800-5 1.800z', Y2) + e(24, 16, 1.6, 2.6, R) + aug(22.5, 10, 1.1) + s('M12 28v2.500M18 28v2.500', Y2, 1.6),
+    '🦜': p('M11 22l-5 9 8-5z', B) + e(16, 18, 7.5, 10, R) + c(17, 9.5, 6.5, R) + p('M9 15c3 0 6 3 6 9-3 0-6-3-6-9z', G) + p('M22 8.500c4 0 5 3 3 6l-3-2z', K) + c(18.5, 8, 2.4, W) + aug(18.8, 8, 1.1) + s('M14 28v2M18 28v2', GR2, 1.4),
+    '🦅': p('M2 9c5 0 9 2 11 6l-2 7C6 20 3 15 2 9zM30 9c-5 0-9 2-11 6l2 7c5-2 8-7 9-13z', BR2) + e(16, 19, 5.5, 8.5, BR) + c(16, 10, 5, W) + p('M14 11.500h4L16 16z', Y2) + aug(13.8, 9.5, 1) + aug(18.2, 9.5, 1) + s('M13.500 27.500v2.500M18.500 27.500v2.500', Y2, 1.6),
+    '🦩': s('M15 20v10M18 20l-2 5 2 5', PK, 1.4) + e(15, 16, 7, 5, PK) + s('M20.500 13c3-2 3-6 0-8-2-1.500-4.500-.500-4.500 1.500', PK, 2.6) + p('M16 6.500l-3.500 1.500 3.500 1z', K) + c(18, 5.5, .7, K) + p('M9 15c2 3 6 4 10 2-2 3-7 4-10 2z', '#f06aa6'),
+    '🦢': s('M2 28q3.500-2 7 0t7 0 7 0 7 0', B, 2) + e(14, 21.5, 10, 5.5, W) + e(14, 21.5, 10, 5.5, SCH) + s('M21.500 20c4-2 4.500-7 2-10-2-2.500-5.500-1.500-5.500 1', W, 3.4) + s('M21.500 20c4-2 4.500-7 2-10-2-2.500-5.500-1.500-5.500 1', SCH, 3.4) + p('M18 11l-4 1.500 4 1z', O) + c(19.6, 9.6, .7, K) + p('M6 20c3-4 9-4 12 0-3 2-9 2-12 0z', W),
+    '🦃': [-60, -36, -12, 12, 36, 60].map((a, i) => g(e(16, 6, 3.2, 8, i % 2 ? O2 : BR), `rotate(${a} 16 20)`)).join('') + e(16, 21.5, 7.5, 7, BR2) + c(16, 12.5, 3.6, B) + p('M16 13.500l2.500 1-2.500 1z', Y2) + e(16.4, 16.5, 1, 2.2, R) + aug(15, 12, .8) + s('M13 28v2M19 28v2', O, 1.4),
+    '🦚': [-66, -44, -22, 0, 22, 44, 66].map(a => g(e(16, 5.5, 3, 8.5, G) + c(16, 4.5, 1.5, B) + c(16, 4.5, .7, Y), `rotate(${a} 16 21)`)).join('') + e(16, 22, 4.6, 7, B) + c(16, 13, 3, B) + p('M16 13.800l2 .800-2 .800z', Y2) + aug(15.2, 12.6, .7) + s('M16 10v-3', B2, 1),
+    '🦇': p('M16 12C12 7 6 6 1 8c2 2 3 4 3 7 2-2 4-2 5 1 1-2 3-2 4 0 1 2 2 4 3 7 1-3 2-5 3-7 1-2 3-2 4 0 1-3 3-3 5-1 0-3 1-5 3-7-5-2-11-1-15 4z', '#4a4266') + e(16, 15, 3.6, 5, '#3a3252') + p('M13.500 11l.500-3.500 2 2.500zM18.500 11l-.500-3.500-2 2.500z', '#3a3252') + c(14.8, 13.5, .8, Y) + c(17.2, 13.5, .8, Y),
+
+    '🐬': p('M2 20c2-8 9-13 17-12l3-4 1 5c4 2 6 5 7 9l-4-2c-3 5-8 8-14 8-3 0-6-1-8-2l-3 3z', B) + p('M6 21c4 2 9 2 14-1-2 4-6 6-10 6-2 0-3-.500-4-1z', L) + c(22.5, 13.5, 1, K),
+    '🐳': s('M9 8c-2-3-5-3-6-1M10 8c2-3 5-3 6-1M9.500 8.500V6', L, 1.8) + wal(B),
+    '🐋': wal(B2),
+    '🦈': fisch(GR2, W, p('M14 9l3-6.500 3 7z', GR2) + s('M12 15v3M14 14.500v3.500', '#5d6b85', 1) + p('M4.500 18.500l2 1.500 1-1.500 1 1.500 1-1.500', W)),
+    '🦭': p('M3 26c2-1 4-3 5-6 2-6 6-12 13-12 5 0 8 4 8 8 0 3-2 4-4 4l1 5c-5 2-12 2-17 1l-5 2z', GR2) + c(23.5, 13.5, 1.1, K) + c(28.2, 16, 1, K) + s('M26.500 17.500l3.500 1M26.500 18.500l3 2.500', K, .7) + p('M12 23c3 1 6 1 9 0-1 3-3 4.500-6 4.500z', GR),
+    '🦐': s('M9 9C4 12 4 20 9 24c4 3 9 2 12-1', '#ff8a5c', 6) + s('M9 9C4 12 4 20 9 24c4 3 9 2 12-1', '#ffb08f', 2.4) + p('M21 19l8-2-2 5 3 3-8 0z', '#ff8a5c') + c(10.5, 8, 1, K) + s('M10 6C8 3 5 2 2 3M11.500 6c1-3 3-4 6-4M9 25l-2 3M12.500 26.500l-1 3M16 27l0 3', '#ff8a5c', 1.2),
+    '🦞': e(16, 18, 5, 9, R) + c(16, 9, 3.6, R) + p('M4 3c3 0 5 2 5 5l-3 1c-2-1-3-3-2-6zM28 3c-3 0-5 2-5 5l3 1c2-1 3-3 2-6z', R) + s('M8.500 8.500l5 2M23.500 8.500l-5 2M11 15l-5 2M11 19l-5 3M21 15l5 2M21 19l5 3', R2, 1.6) + p('M12.500 26h7l2 4.500h-11z', R2) + c(14.6, 8, .8, K) + c(17.4, 8, .8, K),
+    '🦑': p('M16 1.500L22 10v8H10v-8z', PK) + p('M16 1.500L9 7h14z', '#f06aa6') + s('M11 18c0 5-2 8-4 11M13.500 18c0 5-.500 8-1 12M16 18v12M18.500 18c0 5 .500 8 1 12M21 18c0 5 2 8 4 11', PK, 2) + c(13.5, 13.5, 1.4, W) + c(18.5, 13.5, 1.4, W) + c(13.5, 13.5, .7, K) + c(18.5, 13.5, .7, K),
+
+    '🐊': p('M1 19c3-3 7-4 11-4l3-3 2 3h3l2-3 2 3c3 0 5 1 6 3-1 3-4 4-8 4H9c-3 0-6-1-8-6z', G) + p('M18 21h13c-1 2-3 3-6 3h-6z', '#9bd66b') + s('M20 21l1 1.500 1-1.500 1 1.500 1-1.500 1 1.500 1-1.500', W, 1) + c(24.5, 16.5, 1.2, Y) + c(24.5, 16.5, .6, K) + s('M7 24.500v3M12 25v3M19 25v3', G2, 2),
+    '🦎': s('M3 28c5 0 8-3 9-7', G, 2.4) + e(16, 16, 4.5, 8.5, G, 30) + c(21.5, 7, 3.6, G) + s('M12 13l-5-2M19 11l5 2M10.500 19l-5 1M17 21.500l4 3', G2, 2) + c(20.3, 6, .8, K) + c(23, 7.2, .8, K) + s('M14.500 13l3 6', '#9bd66b', 1.6),
+    '🦕': p('M3 26c0-6 4-10 10-10 3 0 5 1 6 3l2-11c.500-3 2-5 5-5 2 0 3 1 3 2.500S28 8 26.500 8H25l-2 13c2 1 4 3 6 6l-6-2H8l-1 4H4z', G) + p('M9 23.500h4l-.500 6h-3zM17 23.500h4l-.500 6h-3z', G2) + c(26.5, 5, .8, K),
+
+    '🕷': s('M12 15L5 9 2 13M12 18l-9 1-1 5M12 21l-7 5-1 4M20 15l7-6 3 4M20 18l9 1 1 5M20 21l7 5 1 4M12 13L8 5 4 6M20 13l4-8 4 1', K, 1.5) + e(16, 19, 5.5, 6.5, '#3a4250') + c(16, 11.5, 3.8, '#3a4250') + c(14.6, 10.5, .8, R) + c(17.4, 10.5, .8, R),
+    '🕸': [0, 45, 90, 135].map(a => g(s('M16 2v28', GR2, 1), `rotate(${a} 16 16)`)).join('') + [4, 8, 12].map(k => `<path d="${Array.from({ length: 8 }, (_, i) => (i ? 'L' : 'M') + (16 + Math.sin(i / 4 * Math.PI) * k).toFixed(1) + ' ' + (16 - Math.cos(i / 4 * Math.PI) * k).toFixed(1)).join('')}z" fill="none" stroke="${GR2}" stroke-width="1"/>`).join(''),
+    '🐛': [[6, 22], [11, 19.500], [16, 21.500], [21, 19]].map(([x, y], i) => c(x, y, 4.2, i % 2 ? '#9bd66b' : G)).join('') + c(26, 15, 4.6, G) + s('M24.500 11l-1.500-4M27.500 11l2-3.500', G2, 1.2) + c(25, 14, .8, K) + c(27.8, 14.3, .8, K) + s('M25 17c.800.600 1.800.600 2.600 0', K, .9),
+    '🐌': e(14, 26, 12, 2.8, '#e2b780') + p('M22 26c0-5 1-9 4-11l2 1c-1 3-1 6-1 10z', '#e2b780') + s('M26.500 15l-1-4M28 16l2.500-3', '#e2b780', 1.4) + c(12, 17, 8.5, BR) + '<path d="M12 17a2 2 0 1 1 2 2 4 4 0 1 1-4-4 6 6 0 1 1 6 6" fill="none" stroke="' + BR2 + '" stroke-width="1.6" stroke-linecap="round"/>',
+    '🦗': s('M9 20l-5 6M14 21l-2 7M20 14l8-9 2 3M22 12l5-9', G2, 1.6) + e(14, 18, 10, 4.5, G, -12) + c(24, 13.5, 3.4, G) + s('M11 22l10-12 3 12', G2, 2.2) + c(25, 13, .9, K),
+    '🪱': s('M4 24c2-6 6-6 8-1s6 5 8 0 5-8 8-6', PK, 4.6) + s('M9.500 20.500l1.500 2.500M19 24l2-2', '#f06aa6', 1.2) + c(27.5, 16.5, .8, K),
+    '🪰': e(9.5, 13, 6.5, 4, L, -30) + e(22.5, 13, 6.5, 4, L, 30) + e(16, 19, 5, 7.5, '#3a4250') + c(16, 10.5, 4, '#3a4250') + c(14, 9.5, 1.6, R2) + c(18, 9.5, 1.6, R2) + s('M11.500 20l-4 3M11.500 23l-3 5M20.500 20l4 3M20.500 23l3 5', K, 1.2),
+    '🦟': e(10, 12, 7, 2.6, L, -25) + e(22, 12, 7, 2.6, L, 25) + e(16, 18, 2.6, 7.5, GR2) + c(16, 9.5, 2.6, GR2) + s('M16 7V2M13.500 16l-8 4-2 6M13.500 20l-6 6M18.500 16l8 4 2 6M18.500 20l6 6', K, 1),
+    '🪲': kaefer(G2, '#0f6a2a'), '🐜': s('M10 14l-5-4M10 18H3M11 21l-5 5M20 13l5-5M21 17h7M21 21l5 5M24.500 9L27 4M26 10.500l4-2', K, 1.4) + c(8.5, 18, 4.6, '#3a4250') + c(16, 17, 3.4, '#3a4250') + c(23, 14, 4, '#3a4250') + c(24.5, 13, .8, W),
+    '🦠': [0, 40, 80, 120, 160, 200, 240, 280, 320].map(a => g(r(15, 1.5, 2, 5, 1, G2) + c(16, 2, 1.8, G2), `rotate(${a} 16 16)`)).join('') + c(16, 16, 9.5, G) + c(12.5, 13.5, 2.2, '#9bd66b') + c(19, 18.5, 2.8, '#9bd66b') + c(19, 11.5, 1.2, G2),
+
+    '🪺': e(16, 22, 13, 6.5, BR2) + e(16, 20, 11, 4.5, '#5c3a1e') + e(11, 18.5, 3.2, 4.2, L) + e(16.5, 17.5, 3.2, 4.2, W) + e(21.5, 18.5, 3.2, 4.2, L) + p('M3 21c4 5 22 5 26 0 0 5-6 8-13 8S3 26 3 21z', BR) + s('M6 24l5 2M14 27l6-1M22 26l4-3', BR2, 1),
+    '🪶': p('M27 3c-9 0-17 6-19 17l4 1c9-2 15-9 15-18z', GR) + p('M27 3c-9 2-15 8-19 17l4 1c2-8 7-14 15-18z', W) + s('M26 4C16 10 9 19 4 29', GR2, 1.4) + s('M14 12l1 5M18 9l1 5M11 16l1 4', GR2, .8),
+    '🪽': p('M3 8c8-4 18-3 26 3-3 1-5 3-6 5-2 0-4 1-5 3-2 0-4 1-5 3-3 0-5 1-6 3C4 22 2 14 3 8z', W) + p('M3 8c8-4 18-3 26 3-3 1-5 3-6 5-2 0-4 1-5 3-2 0-4 1-5 3-3 0-5 1-6 3C4 22 2 14 3 8z', SCH) + s('M8 12c5-1 10 0 15 4M8 16c3-.500 7 0 10 3M8 20c2-.500 4 0 5 2', GR, 1.2)
+  });
+})();
+
+/*@@src bilder293d.js@@*/
+
+(() => {
+  const { K, W, Y, Y2, R, R2, G, G2, B, B2, L, O, O2, P, P2, PK, BR, BR2, GR, GR2, CR, Z, c, e, r, p, s, t, g, stern, herz, gesicht, HERZ } = EB2H;
+  const N = '#3a4664', N2 = '#2c3650', kachel = (f, f2, inh) => r(3, 3, 26, 26, 7, f2) + r(3, 2, 26, 25.5, 7, f) + inh, schild = (f, inh) => c(16, 16, 13.4, f) + inh;
+  const ring = (x, y, rad, col, w) => `<circle cx="${x}" cy="${y}" r="${rad}" fill="none" stroke="${col}" stroke-width="${w}"/>`;
+  const rad = (x, y, k) => c(x, y, k || 3.4, K) + c(x, y, (k || 3.4) * .45, GR);
+  const wolke = (x, y, k, f) => g(c(11, 13, 6, f) + c(19, 10, 7.4, f) + c(25, 14.5, 4.6, f) + r(6, 13, 23, 6, 3, f), `translate(${x} ${y}) scale(${k})`);
+  const sonne = (x, y, k) => [0, 45, 90, 135, 180, 225, 270, 315].map(a => `<rect x="${x - .9}" y="${y - k - 3.6}" width="1.8" height="2.8" rx=".9" fill="${Y2}" transform="rotate(${a} ${x} ${y})"/>`).join('') + c(x, y, k, Y);
+  const mond = (hell, schatten) => c(16, 16, 13, N) + hell + (schatten || '');
+  const erde = c(16, 16, 13, B) + p('M8 7c3-1 6 0 7 2s-1 4-3 5-2 3-4 3-4-3-4-5 2-4 4-5zM19 16c3-1 6 0 7 3s-1 6-4 7-4-2-4-5 0-4 1-5zM20 5c2 0 4 1 5 3-2 1-4 1-5-1z', G);
+  const nacht = inh => r(2, 3, 28, 26, 4, N) + c(7, 8, .8, W) + c(13, 6, .6, W) + c(24, 7, .8, W) + c(19, 10, .5, W) + inh;
+  const pf = d => s(d, 'currentColor', 4.2);
+  const knopf = inh => kachel(B, B2, inh), dr = (x, li) => p(li ? `M${x + 7} 9.500v13l-9-6.500z` : `M${x} 9.500v13l9-6.500z`, W);
+
+  const wagen = (f, aufbau, extra) => aufbau + r(2, 16, 28, 8, 2.5, f) + rad(8.5, 24.5) + rad(23.5, 24.5) + (extra || '');
+  const zug = (f, f2, extra) => r(4, 5, 24, 20, 5, f) + r(7, 8.5, 18, 7, 2, L) + r(4, 17, 24, 3, 0, f2) + c(9.5, 21.5, 1.6, Y) + c(22.5, 21.5, 1.6, Y) + s('M9 25l-3 5M23 25l3 5M7 28.500h18', GR2, 1.6) + (extra || '');
+  const flieger = p('M2 17l3-1 20-3c3-.500 5 .500 5 2s-2 2.500-5 2.500L5 19z', '#e8eef7') + p('M13 15l-5-9h3l8 8zM14 18l-5 8h3l8-7zM4 16l-2-5h2l3 4z', B) + s('M19 14.500h6', L, 1.4);
+  const haus = (f, w, h, inh) => r(16 - w / 2, 29 - h, w, h, 1.5, f) + (inh || '');
+  const fenster = (x0, y0, nx, ny, dx, dy, f) => Array.from({ length: nx * ny }, (_, i) => r(x0 + (i % nx) * dx, y0 + Math.floor(i / nx) * dy, 2.6, 3, .4, f || L)).join('');
+  Object.assign(EB2, {
+
+    '💛': p(HERZ, Y), '💜': p(HERZ, P), '💙': p(HERZ, B), '💚': p(HERZ, G), '🧡': p(HERZ, O), '🖤': p(HERZ, K), '🤎': p(HERZ, BR), '🤍': p(HERZ, GR) + herz(16, 15.6, .86, W),
+    '💔': p(HERZ, R) + p('M17 6l-4 6 5 3-4 6 3 6-1.500-6 4.500-6-5-3z', W), '💓': herz(16, 16, .7, R) + s('M3 12c-1.500 3-1.500 6 0 9M29 12c1.500 3 1.500 6 0 9', PK, 1.8), '💞': herz(11.5, 12, .55, PK) + herz(21, 21, .5, R),
+    '🥰': gesicht(s('M9.500 13.500c1-1.600 3-1.600 4 0M18.500 13.500c1-1.600 3-1.600 4 0M10 19c3.500 3.500 8.500 3.500 12 0', K, 1.8)) + herz(5.5, 8, .26, R) + herz(27, 9, .26, R) + herz(25, 26, .26, R),
+    '🥺': gesicht(c(11, 14, 3.4, K) + c(21, 14, 3.4, K) + c(12, 13, 1.3, W) + c(22, 13, 1.3, W) + s('M13 22.500c2-1.500 4-1.500 6 0M7.500 9.500l5-1M24.500 9.500l-5-1', K, 1.5)),
+
+    '⬅': pf('M27 16H10') + p('M14 7L3 16l11 9z', 'currentColor'), '⬆': pf('M16 27V10') + p('M7 14l9-11 9 11z', 'currentColor'), '⬇': pf('M16 5v17') + p('M7 18l9 11 9-11z', 'currentColor'),
+    '↔': pf('M9 16h14') + p('M10 8.500L2 16l8 7.500zM22 8.500L30 16l-8 7.500z', 'currentColor'), '↕': pf('M16 9v14') + p('M8.500 10L16 2l7.500 8zM8.500 22L16 30l7.500-8z', 'currentColor'),
+    '↩': s('M26 24v-5c0-4-3-7-7-7H8', 'currentColor', 3.6) + p('M11 5l-9 7 9 7z', 'currentColor'),
+    '⏪': knopf(dr(7, 1) + dr(15, 1)), '⏩': knopf(dr(9) + dr(17)), '⏮': knopf(r(7, 9.5, 2.6, 13, .6, W) + dr(9, 1) + dr(16.5, 1)), '⏹': knopf(r(9.5, 9.5, 13, 13, 2, W)), '⏸': knopf(r(9.5, 9, 4.4, 14, 1.2, W) + r(18, 9, 4.4, 14, 1.2, W)),
+    '🅰': kachel(R, R2, t('A', 16, 23.5, 20, W)), '🟰': kachel(GR2, '#5d6b85', r(8, 10.5, 16, 3.6, 1, W) + r(8, 17.5, 16, 3.6, 1, W)), '🟫': r(3, 3, 26, 26, 5, BR2) + r(3, 2.4, 26, 25.4, 5, BR), '🟤': c(16, 16.6, 13, BR2) + c(16, 15.8, 13, BR),
+    '🔲': r(3, 3, 26, 26, 5, K) + r(6.5, 6.5, 19, 19, 2.5, W), '🔘': c(16, 16, 13, GR) + c(16, 16, 10.5, W) + c(16, 16, 6, B), '🔻': p('M4 7h24L16 28z', R), '🔆': [0, 45, 90, 135, 180, 225, 270, 315].map(a => `<rect x="15" y="1.500" width="2" height="5" rx="1" fill="${Y2}" transform="rotate(${a} 16 16)"/>`).join('') + c(16, 16, 7, Y),
+    '➰': s('M3 21c5 0 9-3 11-7s5-6 7-4-1 7-4 7-4-4-1-7 8-2 13 3', 'currentColor', 2.6), '〰': s('M2 16c3-5 6-5 9 0s6 5 9 0 6-5 10 0', 'currentColor', 2.8), '♾': s('M16 16c-3-5-5-7-8-7a7 7 0 0 0 0 14c3 0 5-2 8-7s5-7 8-7a7 7 0 0 1 0 14c-3 0-5-2-8-7z', B, 3),
+    '✝': r(13.6, 3, 4.8, 26, 1, P) + r(7, 9.5, 18, 4.8, 1, P), '✡': p('M16 3l11.300 19.500H4.700z', 'none') + s('M16 3.500l10.800 18.700H5.200zM16 28.500L5.200 9.800h21.600z', B, 2.2), '☸': ring(16, 16, 10.5, Y2, 2.4) + [0, 45, 90, 135].map(a => g(s('M16 2.500v27', Y2, 2), `rotate(${a} 16 16)`)).join('') + c(16, 16, 3, Y2),
+    '🕎': r(14.8, 9, 2.4, 17, 1, Y2) + r(9, 26, 14, 3, 1.2, Y2) + [5, 9, 13].map((y, i) => s(`M${4 + i * 3.500} ${y + 1}c0 ${12 - i * 4} ${24 - i * 7} ${12 - i * 4} ${24 - i * 7} 0`, Y2, 1.8)).join('') + [4, 7.5, 11, 16, 21, 24.5, 28].map(x => c(x, 4.5 + Math.abs(16 - x) * 0, 1.2, O)).join(''),
+    '📿': Array.from({ length: 14 }, (_, i) => c(+(16 + Math.sin(i / 7 * Math.PI) * 9).toFixed(1), +(12.5 - Math.cos(i / 7 * Math.PI) * 9).toFixed(1), 1.7, BR)).join('') + c(16, 23.5, 2, BR2) + r(15.1, 25, 1.8, 5.5, .6, BR2) + r(13.6, 26.4, 4.8, 1.6, .5, BR2),
+    '☠': c(16, 12, 9.5, '#e8eef7') + r(11.5, 17, 9, 6.5, 2, '#e8eef7') + c(12.5, 12, 2.6, K) + c(19.5, 12, 2.6, K) + p('M16 15l1.500 3h-3z', K) + s('M13.500 20v3M16 20v3M18.500 20v3', K, .9) + s('M5 22l22 7M27 22L5 29', '#e8eef7', 3),
+    '💀': c(16, 13.5, 11.5, '#e8eef7') + r(10.5, 19.5, 11, 8.5, 2.5, '#e8eef7') + c(11.5, 14, 3.2, K) + c(20.5, 14, 3.2, K) + p('M16 18l1.800 3.500h-3.600z', K) + s('M13 24v3.500M16 24v3.500M19 24v3.500', K, 1),
+    '👻': p('M5 28V14C5 7 9.500 3 16 3s11 4 11 11v14l-3.700-3-3.600 3-3.700-3-3.700 3-3.600-3z', '#e8eef7') + p('M5 28V14C5 7 9.500 3 16 3v22l-3.700 3-3.600-3z', W) + c(12, 13, 2, K) + c(20, 13, 2, K) + e(16, 19, 2.4, 3, K),
+    '🧌': gesicht(c(11.5, 13.5, 1.7, K) + c(20.5, 13.5, 1.7, K) + s('M8 9.500l5.500 2M24 9.500l-5.500 2M10.500 21.500h11', K, 1.8) + p('M11.500 21.500l1 -3.500 1.500 3.500zM18 21.500l1.500-3.500 1 3.500z', W) + e(16, 17, 2.6, 2, '#5c9a3a'), '#8fc46a', '#5c9a3a') + p('M3 13L.500 8l5 2zM29 13l2.500-5-5 2z', '#8fc46a'),
+    '🐉': p('M7 9L4 1.500l7.500 4.500zM25 9l3-7.500-7.500 4.500z', Y2) + p('M13 6.500l3-4.500 3 4.500z', G2) + c(16, 17, 11.5, G) + e(16, 22.5, 7.5, 5.5, '#9bd66b') + c(13.5, 21.5, 1, G2) + c(18.5, 21.5, 1, G2) + c(11, 14, 2.8, Y) + c(21, 14, 2.8, Y) + e(11, 14, .9, 2.3, K) + e(21, 14, .9, 2.3, K) + s('M12 25.500c2.500 1.500 5.500 1.500 8 0', G2, 1.2) + p('M23 25c3-.500 6 .500 8 3-3-.500-5 1.500-8 .500z', O) + p('M24 25.800c2-.200 3.500.300 5 1.500-2 0-3 .800-5 .300z', Y),
+
+    '🌕': c(16, 16, 13, '#ffe9a3') + c(11, 12, 2.4, '#f2d680') + c(20, 19, 3, '#f2d680') + c(13, 21.5, 1.6, '#f2d680'), '🌚': c(16, 16, 13, N) + c(11.5, 14, 1.5, '#8f9bb8') + c(20.5, 14, 1.5, '#8f9bb8') + s('M11 20c3 2.500 7 2.500 10 0', '#8f9bb8', 1.6),
+    '🌗': mond(p('M16 3a13 13 0 0 0 0 26z', '#ffe9a3')), '🌓': mond(p('M16 3a13 13 0 0 1 0 26z', '#ffe9a3')),
+    '🌏': erde, '🌐': c(16, 16, 13, L) + ring(16, 16, 12.2, B2, 1.6) + s('M3.800 16h24.400M16 3.800v24.400M6 9.500c6 3 14 3 20 0M6 22.500c6-3 14-3 20 0', B2, 1.3) + '<ellipse cx="16" cy="16" rx="5.5" ry="12.2" fill="none" stroke="' + B2 + '" stroke-width="1.3"/>',
+    '🌤': sonne(18, 12, 6.5) + wolke(2, 12, .62, W) + wolke(2, 12, .62, 'rgba(60,90,160,.1)'), '🌥': sonne(22, 9, 5) + wolke(-1, 5, .95, '#dfe7f3'),
+    '🌦': sonne(22, 8, 4.6) + wolke(0, 3, .9, GR) + s('M10 23l-2 5M16.500 23l-2 5M23 23l-2 5', B, 2.2), '🌩': wolke(0, -1, 1, GR2) + p('M17 17l-6 8h4l-2 6 7-9h-4l3-5z', Y),
+    '☔': s('M16 14v11a3 3 0 0 0 6 0', K, 2.2) + p('M3 15a13 13 0 0 1 26 0z', P) + p('M11.700 15a4.300 13 0 0 1 8.600 0z', P2) + s('M5 2l-1 3M12 1l-1 3M27 3l-1 3', B, 1.6),
+    '🌀': s('M16 16a3 3 0 1 1 3 3 6 6 0 1 1-6-6 9 9 0 1 1 9 9 12 12 0 0 1-12-12', B, 2.8),
+    '🌁': r(2, 4, 28, 24, 4, L) + s('M8 28V10M24 28V10M8 12c5 6 11 6 16 0', R2, 2) + r(2, 15, 28, 5, 0, 'rgba(255,255,255,.8)') + r(2, 23, 28, 5, 2, 'rgba(255,255,255,.9)'),
+    '🌌': nacht(s('M4 24c7-2 10-8 12-12s6-7 11-7', '#8a7fd6', 5) + s('M4 24c7-2 10-8 12-12s6-7 11-7', '#c8c1ff', 1.6) + c(10, 21, .7, W) + c(21, 9, .7, W)),
+    '🌃': nacht(c(24, 9, 3, '#ffe9a3') + r(4, 17, 6, 12, .5, N2) + r(11, 12, 7, 17, .5, '#4a5880') + r(19, 19, 9, 10, .5, N2) + fenster(12.5, 14, 2, 4, 3, 3.6, Y) + fenster(5, 19, 1, 3, 3, 3.4, Y) + fenster(20.5, 21, 2, 2, 3.6, 3.6, Y)),
+    '🌆': r(2, 3, 28, 26, 4, '#ff9d6b') + c(22, 12, 4, Y) + r(4, 16, 6, 13, .5, N) + r(11, 11, 7, 18, .5, N2) + r(19, 18, 9, 11, .5, N) + fenster(12.5, 13, 2, 4, 3, 3.6, Y),
+    '🌇': r(2, 3, 28, 26, 4, '#ffb36b') + c(16, 21, 7, R) + r(3, 15, 6, 14, .5, N) + r(23, 13, 6, 16, .5, N) + r(10, 22, 12, 7, .5, N2),
+    '🌉': nacht(s('M2 26h28M7 26V12M25 26V12M7 13c5 8 13 8 18 0M2 20c2-2 4-5 5-8M30 20c-2-2-4-5-5-8', '#ffb36b', 1.8) + s('M11 26v-7M16 26v-6M21 26v-7', '#ffb36b', 1)),
+    '☄': p('M3 3c9 2 17 7 22 15l-7 7C10 20 5 12 3 3z', O) + p('M3 3c8 3 14 8 19 16l-3 3C12 17 7 10 3 3z', Y) + c(22, 22, 6, '#7f8da3') + c(20.5, 20.5, 1.5, '#5d6b85') + c(24, 24, 1.2, '#5d6b85'),
+    '💦': [[10, 6], [20, 4], [24, 15]].map(([x, y]) => p(`M${x} ${y}c2 3.500 3.500 5.500 3.500 7.500a3.500 3.500 0 0 1-7 0c0-2 1.500-4 3.500-7.500z`, L)).join('') + p('M10 17c2.500 4 4 6.500 4 8.500a4 4 0 0 1-8 0c0-2 1.500-4.500 4-8.500z', B),
+    '💤': t('Z', 9, 28, 15, B) + t('Z', 18, 19, 11, B) + t('z', 25, 11, 9, B), '💥': p('M16 1l3.500 8 7.500-4-3 8 8 3-8 3 3 8-7.500-4L16 31l-3.500-8L5 27l3-8-8-3 8-3-3-8 7.500 4z', O) + p('M16 7l2 5 4.500-2-1.800 4.500L26 16l-5.300 1.500L22.500 22 18 20l-2 5-2-5-4.500 2 1.800-4.500L6 16l5.300-1.500L9.500 10l4.500 2z', Y),
+    '♨': s('M10 4c-3 3 3 5 0 9M16 3c-3 3 3 5 0 9M22 4c-3 3 3 5 0 9', R, 2.2) + p('M4 17c0 6 5 11 12 11s12-5 12-11c-3 2-7 3-12 3s-9-1-12-3z', R),
+    '🫧': ring(11, 19, 8, L, 2) + c(8, 16, 1.6, W) + ring(22.5, 9.5, 5.5, L, 1.8) + c(20.5, 7.8, 1.1, W) + ring(24.5, 24, 3.2, L, 1.5),
+
+    '🚙': wagen(G, p('M7 16l3-7h11l4 7z', G) + p('M9.500 15.500l2-4.500h4v4.500zM17 11h3.500l2.500 4.500h-6z', L)), '🚐': wagen('#e8eef7', r(2, 8, 24, 10, 3, '#e8eef7') + r(5, 10.5, 5, 4.5, 1, L) + r(11.5, 10.5, 5, 4.5, 1, L) + r(18, 10.5, 5.5, 4.5, 1, L), r(2, 19.5, 28, 1.6, 0, B)),
+    '🚚': r(2, 7, 18, 16, 1.5, '#e8eef7') + p('M20 12h6l4 5v6H20z', B) + p('M22 14h3.500l2.500 3.500h-6z', L) + rad(8, 24.5) + rad(24.5, 24.5) + s('M2 12h18', GR, 1), '🚛': r(2, 7, 19, 16, 1.5, G) + p('M21 12h5l4 5v6h-9z', R) + p('M23 14h2.500l2.500 3.500h-5z', L) + rad(7, 24.5, 3) + rad(13.5, 24.5, 3) + rad(25, 24.5, 3),
+    '🚓': wagen('#e8eef7', p('M7 16l3-6.500h11l4 6.500z', '#e8eef7') + p('M9.500 15.500l2-4h4v4zM17 11.500h3.500l2.500 4h-6z', L) + r(13.5, 5.5, 5, 3.4, 1, B), r(2, 18.5, 28, 2.4, 0, B2)),
+    '🚑': r(2, 7, 20, 17, 2, '#e8eef7') + p('M22 12h4.500l3.500 5v7h-8z', '#e8eef7') + p('M23.500 13.500h2.500l2.500 3.500h-5z', L) + r(9.2, 10, 3.6, 10, .5, R) + r(6, 13.2, 10, 3.600, .5, R) + r(11, 4.5, 4, 2.6, 1, B) + rad(8, 24.5) + rad(24.5, 24.5),
+    '🏎': p('M2 21h28v3H2z', R2) + p('M3 21c2-4 6-5 10-5l4-3h5l1 3c4 .500 6 2 7 5z', R) + p('M17.500 14h3.500l.500 2h-6z', L) + r(1, 13, 4, 2, .5, R2) + rad(8, 23.5, 3.8) + rad(24, 23.5, 3.8),
+    '🏍': rad(7, 23, 4.6) + rad(25, 23, 4.6) + s('M7 23l6-7h8l4 7M21 16l2-5h3', R, 2.4) + e(15, 16, 5, 2.4, K) + s('M13 16l-3-2', K, 2), '🛵': rad(7, 24, 3.6) + rad(24, 24, 3.6) + p('M5 22c2-3 5-4 9-4h6l2-9h3l-1 13z', L) + r(8, 14.5, 9, 3, 1.5, K) + s('M21 9h5', K, 2),
+    '🛴': rad(6, 26, 2.8) + rad(26, 26, 2.8) + s('M6 26h17L21 5M17 5h7', G, 2.4), '🛹': rad(8, 22.5, 2.8) + rad(24, 22.5, 2.8) + p('M2 14c2 3 4 4 7 4h14c3 0 5-1 7-4l-1.500-1c-1.500 2-3 3-5.500 3H9c-2.500 0-4-1-5.500-3z', O),
+    '🛼': p('M7 3h9v9l10 4c2 1 2 5 0 5H7z', L) + r(7, 3, 9, 3.6, 1, B) + r(5, 20.5, 23, 2.6, 1, K) + rad(9, 26, 2.8) + rad(23.5, 26, 2.8), '🛞': c(16, 16, 13, K) + c(16, 16, 8, GR) + c(16, 16, 2.6, K) + [0, 72, 144, 216, 288].map(a => g(r(15, 8.5, 2, 5.500, .6, GR2), `rotate(${a} 16 16)`)).join(''),
+    '🚆': zug(B, B2), '🚇': zug(GR2, R, r(12, 2.5, 8, 2.6, 1, K)), '🚋': zug(G, G2, s('M16 5V1.500M10 1.500h12', K, 1.4)), '🚃': zug(O, O2), '🚄': p('M3 23c0-9 6-15 15-15h11v15z', '#e8eef7') + p('M10 16c1-3 3-5 6-5h4v5z', L) + r(22, 11, 5, 5, 1, L) + r(3, 20, 26, 2.4, 0, B) + s('M4 26.500h25', GR2, 1.6),
+    '🚁': s('M4 6h22M15 6v4', K, 1.6) + e(14, 16, 9, 6.5, R) + p('M9 13c1-2 3-3 5-3v6H7.500z', L) + s('M22 15l8-2M29 10v6M10 22.500v3M18 22.500v3M6 26h16', K, 1.6),
+    '🛫': g(flieger, 'rotate(-18 16 16) translate(0 -3)') + s('M3 28h26', GR2, 2.4), '🛬': g(flieger, 'rotate(14 16 16) translate(0 -3)') + s('M3 28h26', GR2, 2.4), '🛩': g(flieger, 'rotate(-30 16 16)'),
+    '⛴': p('M3 20h26l-3 7H6z', B2) + r(7, 13, 18, 7, 1, '#e8eef7') + r(11, 8, 10, 5, 1, '#e8eef7') + r(14, 3.5, 4, 5, .6, R) + fenster(9, 15, 5, 1, 3.2, 0) + s('M2 29.500q3.500-2 7 0t7 0 7 0 7 0', L, 1.8),
+    '🛶': p('M2 15c4 6 9 8 14 8s10-2 14-8c-4 2-9 3-14 3S6 17 2 15z', BR) + s('M9 9l14 16', BR2, 1.8) + e(8, 8, 2, 3.4, BR2, -40) + s('M2 28q3.500-2 7 0t7 0 7 0 7 0', L, 1.8),
+    '🚤': p('M2 19h26l-4 6H6z', '#e8eef7') + p('M2 19h26l-1.500 2.500H3z', R) + p('M12 19l3-5h7l2 5z', L) + s('M2 28.500q3.500-2 7 0t7 0 7 0 7 0', L, 1.8),
+    '🛸': e(16, 12, 7, 6, L) + e(16, 16, 14, 5, GR2) + e(16, 15, 14, 4.4, GR) + c(8, 15.5, 1.3, Y) + c(16, 16.8, 1.3, Y) + c(24, 15.5, 1.3, Y) + p('M11 20l-4 10h18l-4-10z', 'rgba(255,216,74,.35)'),
+    '🛰': r(12, 12, 8, 8, 1.5, GR, 45) + r(1.5, 13.5, 9, 5, .6, B, 45) + r(21.5, 13.5, 9, 5, .6, B, 45) + c(16, 16, 2, Y) + s('M19.500 12.500l4-4', GR2, 1.4) + c(24.5, 7.500, 1.6, R),
+    '⛽': r(5, 5, 14, 24, 2, R) + r(7.5, 8, 9, 7, 1, L) + s('M19 12h3c2 0 3 1 3 3v8c0 3 4 3 4 0V11l-3-3', K, 1.8) + r(3, 27, 18, 2.6, 1, K),
+
+    '🚏': r(15, 8, 2.2, 22, .8, GR2) + r(8, 2.5, 16, 12, 2.5, B) + r(11, 5.5, 10, 5.4, 1, W) + c(12.5, 12.5, 1, K) + c(19.5, 12.5, 1, K),
+    '🚨': p('M7 22c0-8 3-13 9-13s9 5 9 13z', R) + r(4, 21.5, 24, 5, 1.5, K) + p('M11 20c0-5 1.500-8 4-8.500', '#ff9a9a') + s('M16 2v3.500M5 6l2.500 2.500M27 6l-2.500 2.500M2 14h3M27 14h3', Y2, 1.8),
+    '🚥': r(2, 10, 28, 12, 4, K) + c(8, 16, 3.6, R) + c(16, 16, 3.6, Y) + c(24, 16, 3.6, G), '🚧': r(2, 9, 28, 9, 1.5, Y) + [5, 12, 19, 26].map(x => p(`M${x} 9h4l-4 9h-4z`, K)).join('') + r(5.5, 18, 2.6, 11, .6, GR2) + r(24, 18, 2.6, 11, .6, GR2) + c(6.800, 6, 2.2, O) + c(25.300, 6, 2.2, O),
+    '🛣': p('M10 3h12l8 26H2z', '#5d6b85') + s('M16 5v4M16 13v5M16 22v6', W, 1.6), '♿': kachel(B, B2, c(13.5, 8, 2.3, W) + s('M13.500 11.500v7h6l2.500 5.500', W, 2.2) + ring(14, 20.500, 5, W, 1.8)),
+    '🚸': '<path d="M16 3l13 13-13 13L3 16z" fill="' + Y + '" stroke="' + K + '" stroke-width="1.6" stroke-linejoin="round"/>' + c(12.5, 12, 1.8, K) + c(19.5, 13.5, 1.5, K) + s('M12.500 14.500v5l-1.500 4M12.500 19.500l2 4M19.500 15.500v4l-1 3M19.500 19.500l1.500 3M13 16.500l5.500 1', K, 1.5),
+    '🚻': kachel(B, B2, c(10.5, 9, 2.2, W) + r(8.6, 12, 3.8, 7, 1, W) + s('M9.500 19v6M11.500 19v6', W, 1.5) + c(21.5, 9, 2.2, W) + p('M21.500 12l-3.500 8h7z', W) + s('M20.500 20v5M22.500 20v5', W, 1.5) + s('M16 6v20', W, 1)),
+    '🚰': kachel(B, B2, s('M8 12h10c2 0 3 1 3 3v2', W, 3) + r(11.5, 7.5, 3, 5, .6, W) + r(9, 6, 8, 2.4, 1, W) + p('M21 19c1.500 2.500 2.500 4 2.500 5a2.500 2.500 0 0 1-5 0c0-1 1-2.500 2.500-5z', W)),
+    '🚱': schild(R, c(16, 16, 9.6, W) + s('M10 13h7c1.500 0 2.500 1 2.500 2.500V17', K, 2.4) + p('M19.500 18.500c1 1.800 1.800 2.800 1.800 3.600a1.800 1.800 0 0 1-3.600 0c0-.800.800-1.800 1.800-3.600z', B) + r(4.5, 14.2, 23, 3.6, 1, R, 45)),
+    '📵': schild(R, c(16, 16, 9.6, W) + r(12, 8.5, 8, 15, 1.6, K) + r(13.3, 10.5, 5.400, 9.500, .4, L) + r(4.5, 14.2, 23, 3.6, 1, R, 45)),
+    '🛑': p('M10.500 3h11l7.500 7.500v11L21.500 29h-11L3 21.500v-11z', R2) + p('M11 4.500h10l6.500 6.500v10L21 27.500H11L4.500 21V11z', R) + r(8, 13.8, 16, 4.4, 1, W),
+    '🛂': kachel(B, B2, c(12, 10, 2.6, W) + p('M7 21c0-4 2-6 5-6s5 2 5 6z', W) + r(18.5, 9, 7, 10, 1, W) + c(22, 12.5, 1.5, B) + s('M20 16.500h4', B, 1)),
+    '🛗': kachel(GR2, '#5d6b85', r(8, 7, 16, 18, 1.5, W) + s('M16 7v18', GR2, 1.2) + p('M12 3.800l1.800 2.400h-3.600zM20 6.200l1.800-2.400h-3.600z', W)),
+
+    '🏥': haus('#e8eef7', 22, 22, fenster(7.5, 16, 2, 2, 4.2, 5) + fenster(18.5, 16, 2, 2, 4.2, 5) + r(13.5, 22, 5, 7, .6, B) + r(14.6, 8.5, 2.8, 8, .4, R) + r(12, 11.1, 8, 2.8, .4, R)) + r(4, 5.5, 24, 2.4, 1, GR),
+    '🏭': r(3, 15, 26, 14, 1, GR2) + p('M3 15l7-5v5l7-5v5l7-5v5z', GR2) + r(22, 3, 4.6, 14, .6, '#5d6b85') + c(21, 3, 2.4, GR) + c(17.5, 1.800, 1.800, GR) + fenster(6, 19, 5, 1, 4.4, 0, Y) + r(13, 23.5, 5, 5.5, .5, N),
+    '🏨': haus(PK, 20, 24, fenster(8.5, 9, 4, 3, 4.2, 4.6) + r(13.5, 23.5, 5, 5.5, .6, R2) + r(6, 3.5, 20, 3, 1, R2)) + t('H', 16, 6.3, 3.6, W),
+    '🏢': haus(L, 18, 26, fenster(9, 6, 3, 5, 5, 4.4, B) + r(7, 3, 18, 2, .6, B2)), '🏦': p('M3 12L16 3l13 9z', GR) + r(4, 12, 24, 2.4, .4, GR2) + [6.5, 12, 17.5, 23].map(x => r(x, 14.5, 2.6, 10, .5, '#e8eef7')).join('') + r(3, 24.5, 26, 4, .8, GR2) + c(16, 8.5, 1.8, Y2),
+    '🏤': haus(CR, 24, 16, fenster(6.5, 16, 2, 2, 4, 5) + fenster(19, 16, 2, 2, 4, 5) + r(13.5, 21, 5, 8, .6, BR)) + p('M2 13L16 4l14 9z', R2) + r(12.5, 7.5, 7, 4.5, .6, Y) + s('M12.500 7.500l3.500 2.500 3.500-2.500', R2, .9),
+    '🏗': s('M9 29V4M9 5h20M9 9h20M9 5l-6 5M26 9v9', Y2, 2) + s('M9 9l4-4 4 4 4-4 4 4', Y2, 1.2) + r(23.5, 18, 5, 4.4, .6, GR2) + r(15, 21, 14, 8.5, .8, '#d9a066') + s('M15 25h14M19.500 21v8.500M24 21v8.500', BR, 1) + r(5, 27, 9, 2.6, .8, K),
+    '🏚': r(6, 15, 20, 14, 1, '#b89b78') + p('M3 16L15 5l14 11-2 1.500L15 8.500 5 17.500z', BR2) + r(13, 21, 5, 8, .6, '#5c3a1e') + r(8, 18, 3.6, 3.600, .4, N) + r(20.5, 18, 3.6, 3.600, .4, N) + s('M21 6l-2 4 3 1M9 24l3 2', K, 1),
+    '🕌': r(5, 17, 22, 12, 1, CR) + p('M9 17c0-5 3-8 7-9 4 1 7 4 7 9z', L) + s('M16 8V4', Y2, 1.4) + c(16, 3.5, 1.3, Y2) + r(3, 9, 3.4, 20, 1, CR) + r(25.6, 9, 3.4, 20, 1, CR) + p('M3 9l1.700-4 1.700 4zM25.600 9l1.700-4 1.700 4z', L) + p('M13.500 29v-5a2.500 2.500 0 0 1 5 0v5z', BR),
+    '🗼': p('M14.500 2h3l1.500 12 5 15h-4l-1.500-5h-5L12 29H8l5-15z', R) + r(11.5, 13, 9, 2, .5, R2) + r(9.5, 21, 13, 2, .5, R2) + p('M14.300 16h3.400l1 4h-5.400z', W),
+    '🗽': r(11, 23, 10, 6.5, 1, GR) + p('M12 23c0-6 1-10 4-10s4 4 4 10z', '#7fc9b5') + c(16, 10.5, 3.2, '#7fc9b5') + s('M13 8.500l-2-3M16 7V3.500M19 8.500l2-3M19.500 14l4-8', '#7fc9b5', 1.6) + p('M22.500 6c0-2 1-3 1.500-4 .500 1 1.500 2 1.500 4z', Y2),
+    '🗿': p('M10 3h12c2 0 3 2 3 4v12c0 5-2 10-4 10h-10c-2 0-4-5-4-10V7c0-2 1-4 3-4z', GR2) + p('M9 12h14v2.500H9z', '#5d6b85') + p('M14 14.500h4l1 7h-6z', '#93a0b5') + s('M12 25h8', '#5d6b85', 1.8),
+    '⛲': e(16, 25, 13, 4, GR2) + e(16, 24, 11, 2.8, L) + r(14.5, 13, 3, 11, .8, GR) + e(16, 13.5, 6, 2, GR2) + s('M16 12V5M16 6c-3-3-7-1-7 4M16 6c3-3 7-1 7 4M16 8c-2-1-4 0-4 3M16 8c2-1 4 0 4 3', L, 1.6),
+    '🏞': r(2, 4, 28, 24, 4, L) + c(23, 10, 3, Y) + p('M2 24l8-11 6 7 4-5 10 10v3H2z', G2) + p('M2 24c5-2 9-2 13 0s9 2 15 0v2c0 1.500-1.500 2-3 2H5c-1.500 0-3-.500-3-2z', B) + p('M10 13l2 2.800h-4z', W),
+    '🏕': r(2, 4, 28, 24, 4, L) + p('M2 24h28v2c0 1.500-1.500 2-3 2H5c-1.500 0-3-.500-3-2z', G) + p('M16 10l9 14H7z', O) + p('M16 16l3 8h-6z', N) + p('M5 24l2.500-9 2.500 9zM24 24l1.500-6 1.500 6z', G2),
+    '🎪': p('M4 14h24l-1.500 15h-21z', W) + [6.5, 14, 21.500].map(x => p(`M${x} 14h4l-.500 15h-3z`, R)).join('') + p('M16 4L3 14h26z', R) + p('M16 4l-4 10h8z', W) + p('M13.500 29v-7a2.500 2.500 0 0 1 5 0v7z', N) + p('M16 4V1l4 1.500z', B),
+    '🎠': p('M16 2L3 9h26z', R) + r(4, 9, 24, 2.4, .5, Y) + r(4, 26.5, 24, 3, 1, R2) + s('M9 11.500v15M23 11.500v15', GR2, 1.2) + e(16, 19, 6, 3.4, W) + e(16, 19, 6, 3.4, 'rgba(60,90,160,.14)') + p('M19.500 17l2-4.500 2 1-1 4z', '#e8eef7') + s('M12.500 21.500v4M19 21.500v4M16 11.500v5', PK, 1.4),
+    '🛝': s('M6 29V8M11 29V8M6 13h5M6 18h5M6 23h5', B, 1.8) + r(4, 5, 9, 3.4, 1, R) + s('M12 9c6 2 8 14 16 17', Y2, 4) + s('M27 26h3', Y2, 4),
+    '⛱': e(16, 27.5, 12, 2.6, '#e8c36a') + s('M16 27L11 8', BR, 1.8) + g(p('M2 13a12 12 0 0 1 24 0z', R) + p('M10 13a4 12 0 0 1 8 0z', W), 'rotate(-15 14 13)'),
+    '🎆': nacht([0, 45, 90, 135, 180, 225, 270, 315].map(a => g(s('M16 13V6', a % 90 ? Y : PK, 1.6) + c(16, 4.5, 1, a % 90 ? Y : PK), `rotate(${a} 16 15)`)).join('') + c(16, 15, 1.6, W) + s('M8 26l1-3M24 27l-1-3', O, 1.2)),
+    '🎊': p('M3 29l6-17 11 11z', P) + p('M7 18l8 8M5 23l5 4', Y) + s('M6.500 20l6 6', Y, 1.6) + c(18, 6, 1.4, R) + c(26, 12, 1.4, B) + c(23, 4, 1.2, G) + c(28, 20, 1.2, Y2) + s('M15 11c1-3 3-4 5-3M22 16c3-1 5 0 6 2', PK, 1.6),
+    '🎎': g(c(16, 9, 5, CR) + p('M7 29c0-8 4-14 9-14s9 6 9 14z', R) + p('M11 6c0-3 2-5 5-5s5 2 5 5c-2-1.500-3.500-2-5-2s-3 .500-5 2z', K) + c(14.2, 9.5, .7, K) + c(17.8, 9.5, .7, K), 'translate(-5 4) scale(.6)') + g(c(16, 9, 5, CR) + p('M7 29c0-8 4-14 9-14s9 6 9 14z', B) + p('M11 6c0-3 2-5 5-5s5 2 5 5c-2-1.500-3.500-2-5-2s-3 .500-5 2z', K) + c(14.2, 9.5, .7, K) + c(17.8, 9.5, .7, K), 'translate(11 4) scale(.6)') + r(3, 24, 26, 4, 1, R2),
+    '🎏': r(4, 2, 2, 28, .8, BR) + p('M6 5h17l6 4-6 4H6z', R) + c(23.5, 9, 1.2, W) + p('M6 16h15l6 4-6 4H6z', B) + c(21.5, 20, 1.2, W) + s('M10 6.500v5M14 6.500v5M10 17.500v5M14 17.500v5', 'rgba(255,255,255,.6)', 1),
+    '🎋': s('M12 30C12 20 14 10 18 2', G2, 2) + p('M17 5c4-1 7 0 9 3-4 1-7 0-9-3zM14.500 12c-4-2-8-1-10 2 4 1 8 0 10-2zM14 17c4-1 8 0 10 3-4 1-8 0-10-3z', G) + r(22, 9, 3.4, 6, .5, R) + r(6, 16, 3.4, 6, .5, Y) + r(20, 21, 3.4, 6, .5, B),
+    '🪔': p('M3 18h22c0 6-5 9-11 9S3 24 3 18z', O2) + p('M25 18l5-3-1 5z', O2) + p('M14 4c3 4 5 6 5 9a5 5 0 0 1-10 0c0-3 2-5 5-9z', Y2) + p('M14 9c1.500 2 2.500 3 2.500 4.500a2.500 2.500 0 0 1-5 0c0-1.500 1-2.500 2.500-4.500z', Y),
+    '🏮': r(12, 2.5, 8, 3, 1, K) + r(12, 26.5, 8, 3, 1, K) + e(16, 16, 11, 11, R) + s('M16 5v22M11 6.500c-3 6-3 13 0 19M21 6.500c3 6 3 13 0 19', R2, 1.2) + s('M16 29.500V32', Y2, 1.6),
+    '🕳': e(16, 19, 13, 7, K) + e(16, 20.5, 9.5, 4.2, '#3a4250'), '🪩': s('M16 2v4', GR2, 1.4) + c(16, 17, 11, GR) + s('M5.500 14h21M5 19h22M7.500 24h17M11 7.500c-3 6-3 13 0 19M16 6v22M21 7.500c3 6 3 13 0 19', W, 1) + c(12, 12.5, 1.6, W) + stern(26, 7, .12, Y)
+  });
+})();
+
+/*@@src bilder293e.js@@*/
+
+(() => {
+  const { K, W, Y, Y2, R, R2, G, G2, B, B2, L, O, O2, P, P2, PK, BR, BR2, GR, GR2, CR, Z, c, e, r, p, s, t, g, stern, herz } = EB2H;
+  const HG = '#e8eef7', N = '#3a4664', BEIGE = '#e8c36a', ring = (x, y, k, col, w) => `<circle cx="${x}" cy="${y}" r="${k}" fill="none" stroke="${col}" stroke-width="${w}"/>`;
+  const schale = (f, inh) => (inh || '') + p('M3 16h26c0 7-5 12-13 12S3 23 3 16z', f) + s('M3 16h26', GR, 1.4);
+  const dampf = s('M11 4c-2 2 2 4 0 6.500M16 3c-2 2 2 4 0 6.500M21 4c-2 2 2 4 0 6.500', GR, 1.6);
+  const teller = inh => e(16, 20, 14, 8, GR) + e(16, 19, 14, 8, W) + e(16, 19, 10, 5.5, HG) + (inh || '');
+  const tasse = (f, inh) => s('M23 14h3c3 0 3 7 0 7h-3', f, 2.4) + p('M5 11h19v8c0 5-4 8-9.500 8S5 24 5 19z', f) + (inh || '');
+  const medaille = (f, f2, n) => p('M9 2h5l3 9h-5zM23 2h-5l-3 9h5z', B) + c(16, 20, 9, f2) + c(16, 19.4, 9, f) + t(n, 16, 23.5, 11, f2);
+  const blume = (f, mitte, n) => Array.from({ length: n || 5 }, (_, i) => `<ellipse cx="16" cy="7.500" rx="4.600" ry="6.400" fill="${f}" transform="rotate(${i * 360 / (n || 5)} 16 16)"/>`).join('') + c(16, 16, 3.6, mitte);
+  const blatt = (x, y, k, a, f) => g(p('M0 0c3-5 9-5 12 0-3 5-9 5-12 0z', f), `translate(${x} ${y}) rotate(${a}) scale(${k})`);
+  const kopf = (haar, hemd, extra) => p('M4 31c0-6 5-9.500 12-9.500S28 25 28 31z', hemd) + c(16, 13.4, 8.6, Y2) + c(16, 13, 8.3, Y) + p('M7.300 13c-.500-6.500 3.500-10.500 8.700-10.500s9.200 4 8.700 10.500c-1.500-3.500-4.500-5.500-8.700-5.500S8.800 9.500 7.300 13z', haar) + c(12.8, 13.8, 1.2, K) + c(19.2, 13.8, 1.2, K) + s('M13 17.400c2 1.600 4 1.600 6 0', K, 1.2) + (extra || '');
+  const klein = (inh, x, y, k) => g(inh, `translate(${x} ${y}) scale(${k})`);
+  const rahmen = '<rect x="2" y="6" width="28" height="20" rx="1.6" fill="none" stroke="rgba(20,30,70,.3)" stroke-width="1"/>';
+  const land = (a, inh) => { EB2[String.fromCodePoint(...[...a].map(ch => 0x1F1E6 + ch.charCodeAt(0) - 65))] = inh + rahmen; };
+  land('UA', r(2, 6, 28, 10, 0, B) + r(2, 16, 28, 10, 0, Y)); land('CN', r(2, 6, 28, 20, 0, R) + stern(8, 12, .2, Y) + c(13, 8.5, .7, Y) + c(15, 11, .7, Y) + c(15, 14, .7, Y) + c(13, 16.5, .7, Y)); land('IN', r(2, 6, 28, 6.7, 0, O) + r(2, 12.7, 28, 6.7, 0, W) + r(2, 19.3, 28, 6.7, 0, G2) + ring(16, 16, 2.4, B2, .9));
+  land('CZ', r(2, 6, 28, 10, 0, W) + r(2, 16, 28, 10, 0, R) + p('M2 6l13 10L2 26z', B2)); land('PA', r(2, 6, 14, 10, 0, W) + r(16, 6, 14, 10, 0, R) + r(2, 16, 14, 10, 0, B2) + r(16, 16, 14, 10, 0, W) + stern(9, 11, .14, B2) + stern(23, 21, .14, R));
+  Object.assign(EB2, {
+
+    '🍲': dampf + schale(R, e(16, 15.5, 11, 4, '#d9a066') + c(12, 15, 1.6, O) + c(18, 14.500, 1.6, G) + c(21, 16, 1.3, O)), '🍜': schale(R, e(16, 15.5, 11, 4, BEIGE) + s('M8 15q4-3 8 0t8 0', Y2, 1.2) + c(19, 14, 2, W) + c(19, 14, .9, Y2)) + s('M20 3l-6 11M25 4l-9 10', BR, 1.4),
+    '🍚': schale(B, p('M5 16c0-6 5-9 11-9s11 3 11 9z', W) + p('M5 16c0-6 5-9 11-9s11 3 11 9z', 'rgba(60,90,160,.1)') + c(11, 12, .7, GR) + c(17, 10.500, .7, GR) + c(21, 13, .7, GR)),
+    '🥗': schale(HG, p('M4 16c1-5 5-8 12-8s11 3 12 8z', G) + c(11, 12.5, 2, R) + c(20, 11.500, 1.800, R) + e(16, 13.5, 2.4, 1.4, Y) + p('M6 15c2-3 4-4 6-3-1 2-3 3-6 3z', '#9bd66b')), '🥘': r(1, 15, 5, 2.4, 1, K) + r(26, 15, 5, 2.4, 1, K) + p('M4 13h24v6c0 4-4 7-12 7S4 23 4 19z', K) + e(16, 13.5, 12, 4, Y2) + c(11, 13, 1.6, R) + c(17, 12.500, 1.6, G) + c(21.5, 14, 1.4, O) + c(14, 15, 1.2, '#ff8a5c'),
+    '🥣': schale(L, e(16, 15.5, 11, 4, CR)) + s('M21 3l-4 11', GR2, 2), '🍱': r(3, 6, 26, 20, 3, K) + r(5, 8, 11, 8, 1, W) + r(17, 8, 10, 8, 1, G) + r(5, 17, 8, 7, 1, O) + r(14, 17, 13, 7, 1, '#ff8a5c') + c(10.5, 12, 1.2, R) + c(22, 12, 2, Y),
+    '🍣': r(4, 16, 24, 9, 4.5, W) + r(4, 16, 24, 9, 4.5, 'rgba(60,90,160,.1)') + p('M3 15c2-5 7-7 13-7s11 2 13 7c-1 3-6 4-13 4S4 18 3 15z', '#ff8a5c') + s('M9 11l3 6M15 9.500l3 8M21 10.500l2 6', '#ffc3a8', 1.4), '🥢': s('M6 28L20 3M12 29L26 4', BR, 2.2),
+    '🧃': r(8, 8, 16, 21, 2, O) + p('M8 8l3-4h10l3 4z', O2) + s('M18 6l3-5 3 1', GR2, 1.6) + c(16, 19, 4.6, Y) + p('M16 14.500c1.500-2 3-2 4-1-1 1.500-2.500 2-4 1z', G),
+    '🍟': s('M9 5l2 12M13 3l1 14M17 4v13M21 3l-1 14M24.500 6L22 17', Y, 3) + p('M6 13h20l-3 16H9z', R) + p('M6 13c3 2 6 3 10 3s7-1 10-3l-.800 4c-3 1.500-6 2-9.200 2s-6.200-.500-9.200-2z', R2),
+    '🥖': r(-1, 12.5, 34, 7.5, 3.700, '#e2a85a', -35) + s('M9 22.500l1.500-3M13.500 19.500l1.500-3M18 16l1.500-3M22.500 12.500l1.500-3', '#b97a34', 1.6), '🥐': p('M3 20c1-8 6-13 13-13s12 5 13 13c-2 2-5 1-6-1-1-3-3-5-7-5s-6 2-7 5c-1 2-4 3-6 1z', '#e2a85a') + s('M10 9.500l2 5M16 7.500v5.500M22 9.500l-2 5', '#b97a34', 1.4),
+    '🫓': e(16, 17, 13.5, 9, '#e8c890') + c(10, 15, 1.4, '#c9a060') + c(17, 13, 1.6, '#c9a060') + c(21, 19, 1.4, '#c9a060') + c(13, 21, 1.2, '#c9a060'), '🥞': [24, 20, 16].map(y => e(16, y, 12, 4, '#b97a34') + e(16, y - 1, 12, 4, '#e2a85a')).join('') + p('M8 14c3-3 13-3 16 0 0 3-2 2-3 4-1-2-3-1-4 1-1-2-4-2-5 0-1-2-4-2-4-5z', BR) + r(13, 9.5, 6, 3.4, 1, Y),
+    '🥪': p('M3 24L16 5l13 19z', '#e8c890') + p('M5.500 20.500h21l1.500 2.500H4z', G) + p('M6.500 18.500h19l1 2h-21z', R) + p('M7.500 16.500h17l1 2h-19z', Y) + p('M16 5l-9.500 13.500h19z', '#f5e3bd'),
+    '🍔': p('M4 14c0-6 5-10 12-10s12 4 12 10z', '#e2a85a') + r(3, 14, 26, 3, 1.5, G) + r(4, 16.5, 24, 4, 1.5, BR2) + r(3, 20, 26, 2.4, 1, Y) + p('M4 22h24c0 4-3 6-6 6H10c-3 0-6-2-6-6z', '#e2a85a') + c(11, 8.5, .7, CR) + c(16, 7, .7, CR) + c(21, 8.5, .7, CR),
+    '🌮': p('M2 24c0-9 6-16 14-16s14 7 14 16z', Y2) + p('M5 23c1-7 5-12 11-12s10 5 11 12z', G) + c(11, 17, 2, R) + c(19, 16, 2, R) + c(15, 20, 1.6, Y) + p('M2 24c0-9 6-16 14-16-6 3-9 9-9 16z', BEIGE),
+    '🍿': p('M7 12h18l-3 17H10z', W) + p('M7 12h3.600l1.800 17H10zM14.200 12h3.600v17h-3.600zM21.400 12H25l-3 17h-2.400z', R) + [[9, 9], [13, 6.500], [18, 6], [23, 9], [16, 10], [20.500, 10.500], [11.500, 10.500]].map(([x, y]) => c(x, y, 3, '#fff3c4')).join(''),
+    '🍨': p('M9 17h14l-3 12h-8z', L) + c(11.5, 13, 5, PK) + c(20.5, 13, 5, CR) + c(16, 8.5, 5, BR) + c(16, 3.5, 1.6, R), '🥧': p('M2 17h28l-4 10H6z', '#e2a85a') + p('M2 17c2-6 7-9 14-9s12 3 14 9z', '#f0c27e') + s('M10 12l3 4M16 10.500v5M22 12l-3 4', '#b97a34', 1.4),
+    '🍼': r(10, 10, 12, 19, 3.5, HG) + r(10, 15, 12, 14, 3.5, W) + r(9.5, 7.5, 13, 4, 1.2, B) + p('M13 7.500c0-2.500 1-5 3-5s3 2.500 3 5z', '#e2a85a') + s('M18 14h4M18 18h4M18 22h4', GR2, 1),
+    '🍵': tasse(HG, e(14.5, 11.5, 9, 2.6, '#9bd66b')) + s('M11 2c-2 2 2 3.500 0 6M17 2c-2 2 2 3.500 0 6', GR, 1.6), '🫖': s('M5 15c-3-1-3-6 1-7', B, 2.4) + p('M25 14l5-4-1 6z', B) + e(16, 18, 10.5, 9, B) + r(9, 8, 14, 3, 1.5, B2) + c(16, 6.5, 1.8, B2) + s('M9 15c4 2 10 2 14 0', L, 1.2),
+    '🫗': g(r(9, 3, 12, 17, 2, L) + r(9, 3, 12, 3, 1, B), 'rotate(-40 15 11)') + s('M22 15c2 3 2 7 1 11', B, 2.2) + e(23, 28, 5, 1.6, B), '🥂': g(p('M5 3h8l-1 9c0 2-1.500 3-3 3s-3-1-3-3z', '#ffe9a3') + s('M9 15v10M5.500 25.500h7', GR2, 1.6), 'rotate(-12 9 14)') + g(p('M19 3h8l-1 9c0 2-1.500 3-3 3s-3-1-3-3z', '#ffe9a3') + s('M23 15v10M19.500 25.500h7', GR2, 1.6), 'rotate(12 23 14)') + stern(16, 3.5, .1, Y),
+    '🍾': g(r(12, 13, 9, 17, 3, G2) + r(14.5, 4, 4, 10, 1.5, G2) + r(14, 3, 5, 3.4, 1, Y2) + r(12, 18, 9, 6, 0, CR), 'rotate(25 16 16)') + c(24.5, 3.5, 1.3, Y) + c(27.5, 7.500, 1, Y) + c(21, 2, .9, Y),
+    '🍴': s('M10 3v26M6.500 3v7c0 2 1.500 3 3.500 3s3.500-1 3.500-3V3', GR2, 2) + p('M20 3c3 0 5 4 5 9 0 2-1 3-2.500 3.500V29h-2.500z', GR2), '🧈': p('M3 20l8-6h17v8l-8 6H3z', Y) + p('M3 20l8-6h17l-8 6z', '#fff0a3') + p('M20 20v8l8-6v-8z', Y2),
+    '🫙': r(7, 8, 18, 21, 4, 'rgba(154,212,255,.6)') + r(9, 17, 14, 10, 2.5, '#ffb36b') + r(9, 3.5, 14, 5, 1.5, GR2) + s('M10 12v13', W, 1.6),
+    '🥦': r(13.5, 18, 5, 11, 2, '#9bd66b') + c(10, 14, 6, G2) + c(22, 14, 6, G2) + c(16, 9, 7, G) + c(13, 17, 4, G) + c(19.5, 17, 4, G), '🥬': p('M16 30C8 26 4 18 6 8c4 1 7 3 10 7 3-4 6-6 10-7 2 10-2 18-10 22z', G) + p('M16 30c-3-5-4-11-2-18l2 3 2-3c2 7 1 13-2 18z', '#c9e8a3'),
+    '🧅': s('M16 5V1.500M14 4l-2-2.500M18 4l2-2.500', G, 1.6) + p('M16 5c7 3 11 8 11 14 0 6-5 10-11 10S5 25 5 19c0-6 4-11 11-14z', '#d9a0d0') + s('M16 7c-4 5-5 13-2 21M16 7c4 5 5 13 2 21', '#b871ad', 1.2),
+    '🧄': p('M16 3c1 4 3 6 6 9 3 3 4 6 4 9 0 5-4 8-10 8S6 26 6 21c0-3 1-6 4-9 3-3 5-5 6-9z', HG) + s('M16 8c-3 6-4 13-2 20M16 8c3 6 4 13 2 20', GR, 1.2), '🌽': p('M5 28c0-9 3-15 8-21l4 2c-1 9-5 15-12 19z', G) + e(18, 14, 6, 12, Y, 25) + s('M14 8l8 12M17.500 6l6 12M12 12l7 11', Y2, 1) + p('M27 28c0-8-2-13-6-17 0 8-1 13-4 17z', G2),
+    '🌶': p('M24 6c2 8-2 18-12 22-4 1.500-8 1-9-1 6 0 11-4 13-11 1-4 3-8 8-10z', R) + s('M23 7c0-2 1-4 3-5', G2, 2.4), '🫑': p('M6 14c0-5 4-7 6-5 1-2 7-2 8 0 2-2 6 0 6 5 0 8-3 15-10 15S6 22 6 14z', G) + s('M16 9V4', G2, 2.4) + s('M12 11c-1 5-1 11 1 16M20 11c1 5 1 11-1 16', G2, 1.2),
+    '🥒': r(2, 12, 28, 9, 4.5, G, -30) + s('M9 21.500l.500-1M14 18.500l.500-1M19 15.500l.500-1M23.500 12.500l.500-1', '#9bd66b', 1.6), '🍆': p('M22 9c5 5 3 14-5 19-5 3-11 2-13-2s0-7 5-9c4-2 6-4 8-8z', P2) + p('M19 4c3 0 6 2 7 6-2-1-5-1-7 0-1-2-1-4 0-6z', G2),
+    '🫘': e(11, 13, 6, 9, R2, 30) + e(22, 20, 6, 8.5, R2, -25) + e(9, 13, 2, 4, '#e88a8a', 30), '🥜': e(11, 20, 7.5, 8, BEIGE) + e(21, 11, 7, 7.5, BEIGE) + s('M8 18l6 5M11 16l5 5M18 9l6 5M20 7.500l5 4', '#c9a060', 1), '🫒': s('M4 5c8 2 16 8 23 20', G2, 1.6) + e(11, 17, 4.6, 6, G2, 30) + e(21, 14, 4.6, 6, '#3a4250', 30) + blatt(8, 5, .8, 20, G),
+    '🍑': c(12, 18, 9.5, '#ffb08f') + c(20, 18, 9.5, '#ff9d75') + s('M16 10c-2 6-2 12 0 17', '#f07a50', 1.2) + blatt(15, 8, .9, -30, G), '🍏': p('M16 9c-6-3-12 1-12 9 0 6 4 11 8 11 2 0 3-1 4-1s2 1 4 1c4 0 8-5 8-11 0-8-6-12-12-9z', '#8fd14f') + s('M16 9c0-3 1-5 3-6', BR2, 1.8) + blatt(17, 5, .7, -15, G2),
+    '🥝': e(16, 16, 13, 12, BR) + e(16, 16, 11, 10, '#9bd66b') + e(16, 16, 4, 3.6, CR) + [0, 40, 80, 120, 160, 200, 240, 280, 320].map(a => g(c(16, 9.5, .8, K), `rotate(${a} 16 16)`)).join(''), '🥥': c(16, 16, 13, BR2) + c(16, 16, 10.5, W) + c(16, 16, 10.5, 'rgba(60,90,160,.08)') + c(16, 16, 5, HG),
+    '🍈': c(16, 17, 12, '#b8dc7a') + s('M8 10c5 4 5 12 0 16M16 5v24M24 10c-5 4-5 12 0 16', '#8fb856', 1.2) + s('M16 5c0-2 1-3 2.500-3.500', BR2, 1.8), '🥭': p('M8 6c8-4 18 2 18 12 0 7-5 11-11 11S4 25 4 18c0-5 1-10 4-12z', O) + p('M8 6c6-2 12 1 14 7-5-3-11-3-16 1 0-3 1-6 2-8z', R) + blatt(18, 4, .7, -20, G2),
+    '🥑': p('M16 3c4 0 6 4 7 9 3 3 4 6 4 9 0 5-5 9-11 9S5 26 5 21c0-3 1-6 4-9 1-5 3-9 7-9z', G2) + p('M16 6c3 0 4 3 5 7 2 3 3 5 3 8 0 4-4 6.500-8 6.500S8 25 8 21c0-3 1-5 3-8 1-4 2-7 5-7z', '#c9e8a3') + c(16, 20.5, 4.6, BR), '🫐': c(11, 20, 7, B2) + c(21.5, 14, 6.5, '#3a56b0') + p('M9 16l2 2 2-2-2 4zM19.500 10.500l2 2 2-2-2 3.500z', N) + blatt(20, 5, .7, 10, G),
+    '🥩': p('M5 10c5-6 16-6 21 0 4 5 2 13-5 16-5 2-9-1-12-2-5-2-8-8-4-14z', R) + p('M8 12c4-4 12-4 15 0 3 4 1 9-4 11-3 1-6-1-9-2-3-1-5-5-2-9z', '#ff8a8a') + e(12.5, 15, 2.6, 2, W), '🍖': s('M4 27l8-8', '#e6d8b8', 4) + c(4, 24, 2.4, '#e6d8b8') + c(7.5, 28, 2.4, '#e6d8b8') + e(19, 12, 10.5, 8.5, BR, -40) + e(18, 10.5, 6, 3.6, '#c98a50', -40), '🍗': s('M21 21l6 6', '#e6d8b8', 3.6) + c(28.5, 25.5, 2, '#e6d8b8') + c(25.5, 28.5, 2, '#e6d8b8') + p('M4 13c0-6 5-10 11-9s9 6 9 11-4 8-8 8c-7 0-12-4-12-10z', '#d9903c'),
+
+    '👗': p('M11 3l2 6h6l2-6 3 1-2 9 6 16H4l6-16-2-9z', PK) + r(10, 12, 12, 2.6, .6, '#f06aa6'), '👘': p('M9 3h14l6 9-4 3v14H7V15l-4-3z', P) + p('M13 3l3 12 3-12z', CR) + r(7, 16, 18, 3.4, .5, Y2),
+    '🧥': p('M10 3h12l7 8-4 4v14H7V15l-4-4z', O2) + p('M13 3l3 6 3-6z', CR) + s('M16 9v20', BR2, 1.4) + c(18.5, 15, 1, BR2) + c(18.5, 20, 1, BR2), '👔': p('M9 4l7 3 7-3 6 7-4 4v14H7V15l-4-4z', L) + p('M12 4l4 5 4-5-4-1.500z', W) + p('M14.500 9h3l1.500 12-3 4-3-4z', R),
+    '🩳': p('M5 6h22l2 20H18l-2-9-2 9H3z', B) + r(5, 6, 22, 3.6, .8, B2), '🩱': p('M10 3l1 6c1 2 3 3 5 3s4-1 5-3l1-6 3 1-1 12c0 6-3 11-8 13-5-2-8-7-8-13L7 4z', R) + s('M9 18c4 2 10 2 14 0', W, 1.6),
+    '🧣': p('M6 4h20v7H6z', R) + p('M18 9h7v19h-7z', R) + s('M6 7.500h20M18 14h7M18 19h7M18 24h7', W, 1.6) + s('M18.500 28v3M21.500 28v3M24.500 28v3', R, 1.4), '🧤': p('M8 14V7c0-3 4-3 4 0V4c0-3 4-3 4 0v2c0-3 4-3 4 0v6l3-3c2-2 5 0 3 3l-6 8v6H9z', B) + r(9, 24, 12, 5.5, 1.5, B2),
+    '👒': e(16, 20, 14.5, 6, BEIGE) + p('M8 19c0-7 3-11 8-11s8 4 8 11c-4 2-12 2-16 0z', '#f0d48a') + p('M8.500 16c5 1.500 10 1.500 15 0l.500 3c-5 1.500-11 1.500-16 0z', PK), '⛑': p('M4 21c0-9 5-15 12-15s12 6 12 15z', R) + r(2, 20, 28, 4, 2, R2) + r(14.3, 9.5, 3.4, 9, .5, W) + r(11.5, 12.3, 9, 3.400, .5, W),
+    '👞': p('M2 22c0-5 2-9 5-11l6 3c3 3 8 5 13 6 3 .500 4 2 4 4v3H2z', BR) + r(2, 25, 28, 3, 1, BR2) + s('M13 14.500l-2.500 3M16 16.500l-2.500 3', CR, 1.2), '👢': p('M9 3h9v15l8 4c3 1.500 3 7 0 7H9z', BR) + r(9, 26, 20, 3, 1, BR2) + r(9, 3, 9, 3.400, .8, BR2),
+    '👠': p('M3 10c5 2 8 6 11 11l8 2c4 1 7 2 7 5H13l-4-9-1 9H4z', R) + r(4, 20, 2.4, 9, .6, R2), '🩴': e(16, 16, 8, 13.5, '#ffb36b') + s('M16 6c-4 4-6 8-6 12M16 6c4 4 6 8 6 12', B, 2.2) + c(16, 6.5, 1.4, B2), '🩰': p('M4 23c2-7 8-13 15-13 4 0 8 3 9 7 1 5-3 9-9 9H7c-2 0-4-1-3-3z', PK) + s('M12 14l8 9M20 13l-9 9', '#f06aa6', 1.4) + e(15.5, 17, 6, 3, '#ffd0e4', -20),
+    '👜': s('M10 13c0-9 12-9 12 0', BR2, 2.4) + p('M4 13h24l-2 15H6z', BR) + r(13.5, 16, 5, 4, 1, Y2), '👛': p('M4 13c0-3 2-5 5-5h14c3 0 5 2 5 5v9c0 4-3 6-6 6H10c-3 0-6-2-6-6z', PK) + p('M4 13c0-3 2-5 5-5h14c3 0 5 2 5 5-3 2-7 3-12 3S7 15 4 13z', '#f06aa6') + c(14.5, 8, 1.8, Y2) + c(17.5, 8, 1.8, Y2),
+    '🛍': s('M11 11c0-8 10-8 10 0', K, 1.8) + p('M5 10h22l-2 19H7z', R) + s('M20 14c0-6 9-6 9 0', K, 1.4) + p('M17 14h13l-1.500 15h-10z', B) + herz(23.5, 21.5, .2, W), '🧳': r(12, 3, 8, 5, 1.5, GR2) + r(13.6, 4.4, 4.8, 3.600, .6, W) + r(4, 7, 24, 20, 3, B) + s('M10 7v20M22 7v20', B2, 1.6) + r(7, 27, 4, 2.6, 1, K) + r(21, 27, 4, 2.6, 1, K),
+    '🕶': p('M2 11h28v3c0 4-3 7-6.500 7S17.500 18.500 17 15h-2c-.500 3.500-3 6-6.500 6S2 18 2 14z', K) + s('M5 13.500l3-1.500M20 13.500l3-1.500', GR, 1.2), '🦺': p('M9 3l3 5h8l3-5 4 3v22H5V6z', O) + p('M12 8l4 6 4-6z', W) + r(5, 15, 22, 2.6, 0, Y) + r(5, 21, 22, 2.6, 0, Y) + s('M16 14v14', K, 1),
+    '💍': ring(16, 20, 8, Y2, 3) + p('M11 8l2-4h6l2 4-5 5z', L) + p('M13 4h6l-3 4z', W), '🎀': p('M16 14L4 6v16zM16 14l12-8v16z', PK) + p('M16 14l-5 14 5-4 5 4z', '#f06aa6') + c(16, 14, 3.4, '#f06aa6'), '⌚': r(11, 1.5, 10, 7, 1.5, K) + r(11, 23.5, 10, 7, 1.5, K) + r(7.5, 7.5, 17, 17, 4.5, N) + r(9.5, 9.5, 13, 13, 3, L) + s('M16 12.500V16l2.500 1.500', K, 1.4),
+
+    '🪥': r(-1, 17, 22, 4.4, 2.2, B, -35) + r(17, 5.5, 11, 5, 1.5, W, -35) + s('M18.500 6l-2.500-3M21.500 4l-2.500-3M24.500 2l-2.500-3', L, 1.6), '🚿': s('M9 29V9c0-4 3-6 7-6h3', GR2, 2.4) + p('M17 3h6l4 6H13z', GR) + [14, 17.500, 21, 24.500].map((x, i) => s(`M${x} 12l${-1.500 + i} 6M${x + .500} 21l${-1.500 + i} 5`, L, 1.4)).join(''),
+    '🛁': s('M6 15V6c0-3 5-3 5 0', GR2, 2) + p('M2 15h28v3c0 5-3 8-7 8H9c-4 0-7-3-7-8z', HG) + s('M2 15h28', GR, 1.6) + s('M8 26l-1.500 3.500M24 26l1.500 3.500', GR2, 2) + c(17, 12, 2.2, L) + c(21, 10, 1.6, L) + c(23.500, 13, 1.4, L),
+    '🧴': r(9, 12, 14, 18, 3.5, PK) + r(13, 7.5, 6, 5, 1, W) + s('M16 7.500V4h6', GR2, 2) + r(11.5, 17, 9, 6, 1, W), '🧽': r(4, 10, 24, 14, 3, Y) + r(4, 20, 24, 5, 2, G2) + c(9, 14, 1.4, Y2) + c(15, 16.500, 1.6, Y2) + c(22, 13.500, 1.4, Y2) + c(19.500, 17.500, .9, Y2),
+    '🧻': e(16, 9, 11, 5.5, HG) + r(5, 9, 22, 14, 0, W) + e(16, 23, 11, 5.5, W) + r(5, 9, 22, 14, 0, 'rgba(60,90,160,.08)') + e(16, 9, 11, 5.5, HG) + e(16, 9, 4, 2, GR) + s('M27 12v14', GR, 1), '🚽': r(8, 3, 16, 12, 2, HG) + e(16, 19, 11, 5.5, HG) + e(16, 18.5, 8, 3.2, W) + p('M10 22h12l-1.500 7.500h-9z', HG) + s('M8 15h16', GR, 1.4),
+    '🗑': r(5, 7, 22, 3, 1.2, GR2) + r(13, 4, 6, 3.4, 1, GR2) + p('M7 10h18l-2 19H9z', GR) + s('M12 14l.800 11M16 14v11M20 14l-.800 11', GR2, 1.4), '🪣': s('M6 12c0-10 20-10 20 0', GR2, 1.8) + p('M5 11h22l-3 18H8z', B) + e(16, 11, 11, 2.6, B2) + s('M9 17l.800 6', L, 1.6),
+    '🛋': r(3, 13, 26, 11, 3, P) + r(5, 8, 22, 10, 3, P2) + r(1.5, 14, 6, 11, 3, P) + r(24.5, 14, 6, 11, 3, P) + r(6, 24.500, 3, 4, 1, BR2) + r(23, 24.500, 3, 4, 1, BR2) + s('M16 18.500V23', P2, 1), '🪴': p('M9 19h14l-2 10H11z', O2) + r(8, 17.5, 16, 3, 1, O) + s('M16 17V8', G2, 1.8) + blatt(16, 12, .9, -150, G) + blatt(16, 10, .9, -30, G) + blatt(16, 7, .8, -90, G2),
+    '🛎': r(4, 23, 24, 4, 1.5, GR2) + p('M6 23c0-7 4-11 10-11s10 4 10 11z', Y) + r(14.6, 8, 2.8, 4.500, 1, Y2) + c(16, 7, 2.2, Y2) + s('M9 20c.500-3 2-5 4-6', '#fff0a3', 1.4), '🧯': r(10, 10, 12, 20, 4, R) + r(13.5, 5, 5, 6, 1, GR2) + s('M17 6h6l2 4', K, 2) + r(12.5, 15, 7, 6, 1, W),
+    '🧷': s('M6 8l18 14M24 22c3 2 5-2 2-4L8 6C5 4 2 7 5 9', GR2, 2.2) + c(5.5, 7.500, 2.6, GR2), '🪢': s('M3 16c6-10 12 6 16-2s-6-8-6 0 8 10 16 2', BEIGE, 3.4) + s('M3 16c6-10 12 6 16-2', '#c9a060', 1),
+    '🪡': s('M27 4L7 26', GR2, 2) + e(25.500, 5.500, 1.2, 2.200, W, 45) + s('M25 6c-6-4-14 2-9 8s-9 10-13 6', R, 1.4), '🧶': c(16, 16, 12, P) + s('M7 11c6 0 13 4 16 12M5.500 17c5-1 12 3 14 10M11 5.500c6 2 12 8 14 14M17 4.500c5 3 8 7 9.500 12', P2, 1.4) + s('M26 24c2 2 4 2 5 5', P, 2),
+
+    '🔨': r(13.5, 12, 4.4, 18, 1.5, BR, 0) + r(6, 4, 20, 8.5, 2, GR2) + r(6, 4, 5, 8.5, 1.5, '#5d6b85'), '🪓': r(14, 4, 4, 26, 1.5, BR) + p('M18 5c6 0 10 3 11 8-4-1-8 0-11 3z', GR) + p('M26 8.500c1.500 1.200 2.500 2.700 3 4.500-1.500-.400-3-.400-4.500-.100z', W),
+    '🪚': p('M3 20L22 5l5 5L10 27z', GR) + p('M3 20l2.500 1-.500 2.500 2.500.500-.500 2.500 2.500.500', GR2) + s('M3 20l2.500 1-.500 2.500 2.500.500-.500 2.500 3 .500', GR2, 1.2) + r(21, 2, 9, 9, 3, BR, 45) + c(25.500, 6.500, 1.6, CR), '🪛': r(14.6, 2, 2.8, 14, .8, GR2) + p('M14.600 2h2.800l-.600-1.500h-1.600z', GR2) + r(12, 15, 8, 14, 3, R) + s('M14.500 18v8M17.500 18v8', R2, 1.2),
+    '🔩': p('M9 3h14l3 5-3 5H9L6 8z', GR2) + r(12.5, 12, 7, 17, 1.5, GR) + s('M12.500 16l7-1.500M12.500 20l7-1.500M12.500 24l7-1.500M12.500 28l7-1.500', GR2, 1.2), '🛠': g(r(14, 2, 4, 26, 1.5, BR) + r(9, 2, 14, 7, 1.5, GR2), 'rotate(-40 16 16)') + g(r(14.500, 8, 3, 21, 1.5, GR) + ring(16, 6.500, 4, GR, 2.6) + r(14.500, 1, 3, 5, 0, W), 'rotate(40 16 16)'),
+    '⚒': g(r(14.5, 5, 3, 25, 1.5, BR) + r(8, 3, 16, 6, 1.5, GR2), 'rotate(-40 16 16)') + g(r(14.5, 5, 3, 25, 1.5, BR) + p('M6 8c6-5 14-5 20 0-6-1.500-14-1.500-20 0z', GR2), 'rotate(40 16 16)'), '⚔': g(r(14.800, 2, 2.4, 20, .8, GR) + r(11, 21, 10, 2.4, 1, Y2) + r(14.500, 23, 3, 6, 1, BR), 'rotate(-40 16 16)') + g(r(14.800, 2, 2.4, 20, .8, GR) + r(11, 21, 10, 2.4, 1, Y2) + r(14.500, 23, 3, 6, 1, BR), 'rotate(40 16 16)'),
+    '🧰': r(11, 5, 10, 6, 1.5, K) + r(13, 7, 6, 4, .5, W) + r(3, 10, 26, 18, 2.5, R) + r(3, 16.500, 26, 2.4, 0, R2) + r(13.5, 15, 5, 5.5, 1, Y), '🏹': s('M7 4c14 2 20 8 22 22', BR, 2.4) + s('M7 4l22 22', GR, 1) + s('M3 29L24 8', BR2, 1.6) + p('M27 5l-6 1.500 4.500 4.500z', GR2) + s('M3 29l1-4M3 29l4-1', R, 1.6),
+    '🪝': s('M16 3v13c0 0 0 0 0 0 0 9 12 9 12 0M16 16c0 8-9 8-9 2', GR2, 3) + ring(16, 5, 2.4, GR2, 1.8), '⛓': [0, 1, 2, 3].map(i => `<rect x="${4 + i * 6}" y="${3 + i * 6}" width="7" height="11" rx="3.500" fill="none" stroke="${i % 2 ? GR : GR2}" stroke-width="2.2" transform="rotate(-45 ${7.500 + i * 6} ${8.500 + i * 6})"/>`).join(''),
+    '🔗': '<rect x="3" y="12" width="15" height="8" rx="4" fill="none" stroke="' + GR2 + '" stroke-width="2.6" transform="rotate(-35 10.500 16)"/><rect x="14" y="12" width="15" height="8" rx="4" fill="none" stroke="' + B + '" stroke-width="2.6" transform="rotate(-35 21.500 16)"/>',
+    '🔐': s('M10 14V10.500a6 6 0 0 1 12 0V14', GR2, 3.4) + r(5.5, 12.4, 21, 15.6, 4, Y) + c(13, 20, 3.4, Y2) + c(13, 20, 1.3, Y) + r(15.500, 19, 8, 2, .6, Y2) + r(20, 20.500, 1.600, 2.600, .4, Y2) + r(22.500, 20.500, 1.400, 2, .4, Y2),
+    '🔋': r(5, 9, 22, 15, 3, K) + r(27, 13, 2.6, 7, 1, K) + r(7.5, 11.5, 12, 10, 1.5, G), '🛢': r(7, 4, 18, 25, 3, B2) + s('M7 11h18M7 21h18', B, 2.2) + e(16, 5, 9, 2.4, B) + c(13, 5, 1.2, K),
+    '📡': e(13, 15, 10, 10, GR) + e(14.500, 13.500, 7.500, 7.500, HG) + s('M15 14l8-8', GR2, 1.6) + c(23.500, 5.500, 1.800, R) + s('M13 25v4M8 29h10', GR2, 2) + s('M25 11c1.500 1.500 2.500 3.500 2.500 5.500', B, 1.4), '🔭': g(r(4, 12, 16, 7.5, 2, B2) + r(19, 10.5, 9, 10.500, 2, B) + r(2, 13.500, 3, 4.500, 1, K), 'rotate(-25 16 16)') + s('M14 19l-5 11M14 19l6 11M14 19v10', K, 1.8),
+    '📞': p('M5 4c-2 2-2 5-1 8 3 8 8 13 16 16 3 1 6 1 8-1l-5-6-4 2c-3-2-6-5-8-8l2-4z', K), '📻': s('M8 9L22 3', GR2, 1.6) + r(3, 9, 26, 19, 3, BR) + c(11, 18.5, 5.5, CR) + c(11, 18.5, 2, BR2) + r(19, 13, 7, 3, .6, CR) + c(20.500, 22, 1.5, Y2) + c(24.500, 22, 1.5, Y2),
+    '📸': r(3, 9, 26, 18, 3.5, '#3a4250') + r(11, 5.5, 10, 5, 1.5, '#3a4250') + c(16, 18, 6, GR) + c(16, 18, 3.6, B2) + c(24.500, 12.500, 1.2, Y) + p('M27 1l1 3 3 1-3 1-1 3-1-3-3-1 3-1z', Y), '🎥': r(3, 12, 18, 14, 2.5, '#3a4250') + p('M21 17l8-4v12l-8-4z', '#5d6878') + c(8, 8, 4.4, K) + c(17, 8, 4.4, K) + c(8, 8, 1.6, GR) + c(17, 8, 1.6, GR),
+    '🎦': r(3, 3, 26, 26, 7, B2) + r(3, 2, 26, 25.5, 7, B) + r(7.500, 11, 11, 10, 2, W) + p('M18.500 15l6-3v8l-6-3z', W), '🎙': r(11.5, 2, 9, 15, 4.5, GR2) + s('M12 7h8M12 10.500h8', GR, 1) + s('M8 14c0 5 3.500 8 8 8s8-3 8-8M16 22v5M11 28h10', K, 1.8),
+    '🖥': r(3, 4, 26, 18, 2.5, '#3a4250') + r(5, 6, 22, 14, 1, L) + r(13.5, 22, 5, 4, .5, GR2) + r(9, 26, 14, 2.6, 1.2, GR2), '🖨': r(8, 3, 16, 9, 1, W) + r(8, 3, 16, 9, 1, 'rgba(60,90,160,.1)') + r(3, 11, 26, 12, 3, GR2) + r(8, 19, 16, 10, 1, W) + s('M11 23h10M11 26h7', GR, 1.2) + c(24.500, 14.500, 1.2, G),
+    '🗄': r(6, 3, 20, 26, 2, GR2) + r(8, 5.5, 16, 9.500, 1, GR) + r(8, 17, 16, 9.500, 1, GR) + r(13, 9, 6, 2.2, 1, '#5d6b85') + r(13, 20.500, 6, 2.2, 1, '#5d6b85'), '💳': r(2, 7, 28, 18, 3, B) + r(2, 11, 28, 4, 0, K) + r(5, 18.5, 8, 3, .6, Y) + s('M17 21h9', L, 1.6),
+    '🎫': p('M2 9h28v5a2.500 2.500 0 0 0 0 5v5H2v-5a2.500 2.500 0 0 0 0-5z', O) + s('M21 9.500v15', W, 1.2) + stern(11.5, 16.5, .22, W), '🪪': r(2, 6, 28, 20, 3, HG) + r(2, 6, 28, 5, 1, B) + c(10, 17, 3.2, GR2) + p('M5 24c0-3 2-4.500 5-4.500s5 1.500 5 4.500z', GR2) + s('M18 15h9M18 19h9M18 23h6', GR, 1.4),
+    '📛': p('M4 9c8-3 16-3 24 0v12c-8 3-16 3-24 0z', R) + r(7, 12.5, 18, 7, 1, W), '📬': r(14.5, 15, 3, 14, .6, GR2) + p('M3 9c0-3 2-5 5-5h16c3 0 5 2 5 5v9H3z', B) + r(3, 9, 12, 9, 0, B2) + r(22, 3, 2, 9, .5, R) + r(22, 3, 6, 4, .5, R) + r(6, 11.5, 6, 4, .5, W),
+    '📮': r(7, 4, 18, 22, 4, R) + r(10, 9, 12, 2.6, 1, K) + r(11, 14, 10, 6, 1, W) + r(13, 26, 6, 4, 0, R2), '🗞': g(r(4, 5, 24, 22, 1.5, HG) + r(6.5, 7.5, 19, 4, .5, K) + r(6.5, 13.5, 8, 7, .5, GR) + s('M17 14.500h8.500M17 17.500h8.500M17 20.500h8.500M6.500 24h19', GR2, 1.2), 'rotate(-8 16 16)'),
+    '📎': s('M21 9l-9 9c-2 2 1 5 3 3l10-10c4-4-2-10-6-6L8 16c-5 5 3 13 8 8l8-8', GR2, 2), '🖊': g(r(13.5, 2, 5, 20, 1.5, B) + p('M13.500 22h5L16 29z', GR) + r(13.5, 2, 5, 4, 1.5, B2) + r(17.500, 4, 1.400, 9, .5, GR), 'rotate(35 16 16)'),
+    '🖋': g(r(13.5, 2, 5, 16, 1.5, K) + p('M12.500 18h7L16 30z', GR) + s('M16 22v5', K, 1), 'rotate(35 16 16)'), '✒': g(p('M12 3h8l2 11-6 16-6-16z', K) + s('M16 16v10', W, 1.2) + c(16, 14, 1.6, W), 'rotate(35 16 16)'),
+    '📣': p('M4 13l17-8v20L4 18z', R) + r(21, 4, 3.4, 22, 1.5, R2) + p('M7 19l2 9h4l-2-8z', GR2) + s('M27 10l3-2M28 15h3M27 20l3 2', Y2, 1.6), '📢': p('M3 12h6l13-7v20L9 19H3z', O) + r(22, 4, 3.4, 22, 1.5, O2) + s('M28 11c1.500 2.500 1.500 6.500 0 9', O2, 1.8),
+    '🩹': g(r(1, 11, 30, 10, 5, '#f2c9a0') + r(11, 11, 10, 10, 1, '#e8b080') + c(14, 14.500, .8, '#c98a50') + c(18, 14.500, .8, '#c98a50') + c(14, 17.500, .8, '#c98a50') + c(18, 17.500, .8, '#c98a50'), 'rotate(-35 16 16)'), '💊': g(r(3, 11, 26, 10, 5, R) + p('M16 11h8a5 5 0 0 1 0 10h-8z', W) + p('M16 11h8a5 5 0 0 1 0 10h-8z', 'rgba(60,90,160,.1)'), 'rotate(-35 16 16)'),
+    '🩺': s('M8 3v8c0 4 2.500 6 5 6s5-2 5-6V3M13 17v5c0 4 3 6 6.500 6s6-2 6-6v-2', '#3a4250', 2.2) + c(25.500, 17.500, 3, GR2) + c(25.500, 17.500, 1.2, W) + c(8, 3, 1.4, GR2) + c(18, 3, 1.4, GR2), '🩸': p('M16 3c5 8 9 12 9 17a9 9 0 0 1-18 0c0-5 4-9 9-17z', R) + s('M11 20c0 3 2 5 5 5', '#ff9a9a', 1.6),
+    '🩻': r(4, 3, 24, 26, 3, N) + s('M16 7v18M10 10c4-2 8-2 12 0M9 14c4-2 10-2 14 0M9 18c4-2 10-2 14 0M11 22c3-1 7-1 10 0', L, 1.6),
+    '⌛': r(6, 3, 20, 3, 1, BR) + r(6, 26, 20, 3, 1, BR) + p('M8 6h16c0 6-4 8-6 10 2 2 6 4 6 10H8c0-6 4-8 6-10-2-2-6-4-6-10z', L) + p('M10 26c1-4 4-5 6-7 2 2 5 3 6 7z', BEIGE), '🗳': r(4, 14, 24, 14, 2, B) + r(9, 16.5, 14, 2.4, 1, K) + g(r(11, 3, 10, 13, 1, W) + s('M13 7l2 2 3.500-3.500', G2, 1.4), 'rotate(8 16 10)'),
+    '🗨': p('M4 5h24c1.500 0 2 1 2 2v13c0 1-.500 2-2 2H14l-7 6v-6H4c-1.500 0-2-1-2-2V7c0-1 .500-2 2-2z', B) + s('M8 11h16M8 16h11', W, 1.6), '🗯': p('M16 3l3.500 4L25 5l-.500 5.500 5 2-4 4 2.500 5-6-.500L18 27l-3-3-7 5 2-7-6-1 4-4.500L4 12l6-1L9 5l5 2z', HG) + s('M16 3l3.500 4L25 5l-.500 5.500 5 2-4 4 2.500 5-6-.500L18 27l-3-3-7 5 2-7-6-1 4-4.500L4 12l6-1L9 5l5 2z', GR2, 1.2),
+    '🏺': p('M12 3h8v3c0 2 5 5 5 12 0 6-4 11-9 11s-9-5-9-11c0-7 5-10 5-12z', O2) + r(11, 2, 10, 2.6, 1, BR) + s('M8 16h16M9 21h14', BR2, 1.4) + s('M9 9c-4 0-4 6 0 7M23 9c4 0 4 6 0 7', O2, 1.8), '🀄': r(6, 2, 20, 28, 3, GR) + r(6, 2, 20, 26.5, 3, W) + r(14.600, 7, 2.800, 17, .5, R) + '<rect x="10" y="11" width="12" height="7" rx="1" fill="none" stroke="' + R + '" stroke-width="2.200"/>',
+    '♟': c(16, 8, 4.6, K) + p('M12 13h8l-1.500 3 3 9H10.500l3-9z', K) + r(8, 25, 16, 4, 1.5, K), '🪧': r(14.8, 14, 2.4, 16, .6, BR) + r(4, 3, 24, 14, 2, W) + r(4, 3, 24, 14, 2, 'rgba(60,90,160,.08)') + s('M8 8h16M8 12h11', GR2, 1.6),
+    '🪆': p('M16 2c4 0 6 3 6 7 3 2 5 6 5 11 0 6-4 10-11 10S5 26 5 20c0-5 2-9 5-11 0-4 2-7 6-7z', R) + c(16, 9.5, 4.4, CR) + c(14.500, 9.200, .7, K) + c(17.500, 9.200, .7, K) + e(16, 21, 5, 6, Y) + c(16, 21, 2, R2), '🪅': s('M14 13V2', GR2, 1.2) + r(8.5, 20, 3.2, 9, 1, B) + r(17.5, 20, 3.2, 9, 1, B) + r(6, 13, 17, 8.5, 2.5, PK) + r(10.200, 13, 4.200, 8.500, 0, Y) + r(14.400, 13, 4.200, 8.500, 0, B) + g(r(19, 4, 6.5, 12, 2.5, PK) + r(19, 8, 6.500, 3, 0, Y), 'rotate(18 22 12)') + p('M22.500 5l.500-4 2.500 3.500z', P) + c(24.300, 8, .8, K) + s('M6 15c-2 1-3 3-2.500 5', P, 1.8),
+    '🪀': c(16, 19, 10, R) + c(16, 19, 6, R2) + c(16, 19, 2, Y) + s('M16 9V4c0-2 3-3 4-1', GR2, 1.4), '🪂': p('M2 13a14 11 0 0 1 28 0z', R) + p('M9 13a7 11 0 0 1 14 0z', W) + s('M2.500 13l11 12M29.500 13l-11 12M9.500 13l5 12M22.500 13l-5 12', GR2, 1) + r(13, 24, 6, 6, 1.5, B),
+    '🎖': p('M10 2h12l-3 12h-6z', B) + p('M13.500 2h5l-1.500 12h-2z', R) + c(16, 21, 8, Y2) + c(16, 20.4, 8, Y) + stern(16, 20.5, .3, Y2), '🥇': medaille(Y, Y2, '1'), '🥈': medaille(GR, GR2, '2'), '🥉': medaille('#e2a85a', '#b97a34', '3'),
+
+    '⛸': p('M9 3h8v10l9 4c3 1 3 6 0 6H9z', HG) + r(9, 3, 8, 3.400, .8, B) + s('M6 27.500h22c2 0 2-2 0-2.500M12 23v4.500M23 23v4.500', GR2, 1.8) + s('M17 8h-3M17 11h-3', B, 1.2), '🎿': g(r(9, 2, 4, 28, 2, R) + r(19, 2, 4, 28, 2, R) + r(9, 14, 4, 4, .5, K) + r(19, 14, 4, 4, .5, K), 'rotate(20 16 16)') + s('M26 4l-8 24M6 6l6 22', GR2, 1.2),
+    '🏂': s('M3 24l25 5', B, 3.4) + c(15, 6, 3.4, Y) + s('M15 10l1 8M15.500 12l-6 4M15.500 12l7 2M16 18l-5 6M16 18l6 7', R, 3), '🥋': p('M9 3l7 5 7-5 6 7-4 4v15H7V14l-4-4z', HG) + s('M9 3l7 10 7-10M16 13v16', GR, 1.4) + r(7, 18, 18, 3.400, .5, K),
+    '🏐': c(16, 16, 13, HG) + ring(16, 16, 12.300, GR2, 1.4) + s('M16 3.500c4 4 5 9 3 13M4 13c5-3 10-2 15 3.500M10 27c0-6 3-10 9-10.500M28 14c-4 0-7 1-9 2.500M19 16.500c2 3 2 7 0 11', GR2, 1.3),
+    '🏓': c(13, 13, 10, R) + r(18, 19, 4.5, 11, 2, BR, -45) + c(25, 8, 2.8, W) + ring(25, 8, 2.800, GR, .8), '🏸': '<ellipse cx="11" cy="11" rx="7.500" ry="9" fill="' + HG + '" stroke="' + B + '" stroke-width="2" transform="rotate(-45 11 11)"/>' + s('M16 16l10 10', B, 2.4) + p('M22 4l4 5-5 1z', W) + c(26.500, 9.500, 1.4, R),
+    '🏏': r(13, 2, 5, 10, 1.5, BR2, 40) + r(5, 10, 8, 20, 2, '#e2b780', 40) + c(25, 24, 3.4, R), '🥊': p('M8 5c6-3 15-1 16 6 1 5-1 9-4 11v3H9v-6c-4-3-5-11-1-14z', R) + r(9, 23, 11, 6, 1.5, W) + s('M10 15c4 2 8 2 11-1', R2, 1.6),
+    '🏒': s('M22 3L11 24c-1 2-3 3-5 3H3', BR, 3) + r(18, 25, 10, 3.6, 1.800, K), '⛳': e(16, 26.5, 13, 3.6, G) + e(20, 26.500, 3, 1.2, K) + r(19.300, 4, 1.400, 22, .5, GR2) + p('M20.500 4l8 3.500-8 3.500z', R) + c(9, 25, 1.6, W),
+    '🎣': s('M5 29L24 3', BR, 2) + s('M24 3c4 6 4 12 0 19', GR2, 1) + s('M24 22c0 4-4 4-4 1', GR2, 1.6) + c(24, 15, 1.8, R) + s('M2 26q3.500-2 7 0', L, 1.6), '🤿': r(4, 9, 20, 11, 4, K) + r(6.500, 11, 7, 7, 2, L) + r(14.500, 11, 7, 7, 2, L) + s('M26 22V6c0-2 3-2 3 0', O, 2.6) + r(24.300, 20, 3.400, 4, 1, K),
+    '🏋': c(16, 6, 3.4, Y) + s('M16 10v9M16 12l-7-3M16 12l7-3M16 19l-4 9M16 19l4 9', B, 3) + s('M5 9h22', K, 1.8) + r(3, 5, 3, 8, 1, K) + r(26, 5, 3, 8, 1, K), '🧘': c(16, 6, 3.4, Y) + s('M16 10v9M16 13l-7 5M16 13l7 5M16 19c-5 0-9 2-10 6h20c-1-4-5-6-10-6', P, 3),
+    '🎭': g(p('M3 6h15v10c0 5-3 8-7.500 8S3 21 3 16z', Y) + c(7.500, 12, 1.3, K) + c(13.500, 12, 1.3, K) + s('M7 17c2 2.500 5 2.500 7 0', K, 1.4), 'rotate(-8 10 14)') + g(p('M14 10h15v10c0 5-3 8-7.500 8S14 25 14 20z', L) + c(18.500, 16, 1.3, K) + c(24.500, 16, 1.3, K) + s('M18 23c2-2.500 5-2.500 7 0', K, 1.4), 'rotate(8 21 18)'),
+
+    '🎺': p('M22 9l8-4v16l-8-4z', Y2) + r(3, 11.5, 20, 3.4, 1.5, Y) + s('M9 15v6c0 3 9 3 9 0v-6', Y, 2.2) + r(8.500, 7.500, 2, 5, .8, Y2) + r(12.500, 7.500, 2, 5, .8, Y2) + r(16.500, 7.500, 2, 5, .8, Y2) + r(1.500, 10.500, 2.600, 5.400, 1, Y2),
+    '🎻': g(e(16, 22, 7, 7.5, BR) + e(16, 12.5, 5.5, 5.5, BR) + r(15, -2, 2, 22, .6, K) + s('M12 22c1 1 1 3 0 4M20 22c-1 1-1 3 0 4', BR2, 1) + r(13, 24, 6, 1.2, .4, K), 'rotate(35 16 16)') + s('M4 6l22 22', CR, 1.2),
+    '🎷': p('M19 3h4l-1 14c0 7-4 12-9 12s-8-4-7-8l4-1c0 3 2 4 4 4s4-3 4-7z', Y2) + c(10, 19, 3.6, Y) + c(18.500, 10, 1.1, Y) + c(18.300, 14, 1.1, Y) + c(17.800, 18, 1.1, Y) + s('M21 3l4-2', K, 2),
+    '🪕': c(12, 21, 9, HG) + ring(12, 21, 8.300, BR, 1.6) + r(14, 10, 4, 4, 0, BR, 45) + r(17, 1, 3.4, 18, 1, BR, 45) + s('M10 23L26 7M12.500 24.500L27.500 9', GR2, .7), '🪗': r(3, 6, 8, 20, 2, R) + r(21, 6, 8, 20, 2, R) + r(11, 7, 10, 18, 0, HG) + s('M13.500 7v18M16 7v18M18.500 7v18', GR2, 1.2) + c(7, 11, 1.2, W) + c(7, 16, 1.2, W) + c(7, 21, 1.2, W) + r(23.500, 9, 3, 14, .5, W),
+    '🪈': r(2, 13.5, 28, 5, 2.5, BEIGE, -30) + [8, 12, 16, 20, 24].map(x => c(x, 16 - (x - 16) * .58, 1, BR2)).join(''),
+
+    '🍁': p('M16 2l2.500 6 5-2-1.500 6 7 1-5 4.500 3 4.500-7-.500L19 27l-3-4-3 4-1-5.500-7 .500 3-4.500L3 13l7-1L8.500 6l5 2z', O2) + s('M16 12v18', BR2, 1.6), '☘': s('M16 17v12', G2, 2) + c(16, 9, 5.5, G) + c(10.5, 17, 5.5, G) + c(21.5, 17, 5.5, G) + c(16, 15, 2.6, G2),
+    '🌺': blume(R, Y, 5) + s('M16 16l5-6', Y2, 1.4) + c(21.500, 9.500, 1.2, Y2), '🪷': p('M16 4c3 4 4 9 4 13s-1 7-4 9c-3-2-4-5-4-9s1-9 4-13z', PK) + p('M5 11c5 1 8 4 10 9 1 3 0 5-1 6-5 0-9-3-10-8-.500-3 0-5 1-7zM27 11c-5 1-8 4-10 9-1 3 0 5 1 6 5 0 9-3 10-8 .500-3 0-5-1-7z', '#ffb3d6') + e(16, 27, 12, 2.4, G),
+    '💐': s('M16 18l-4 12M16 18l4 12M16 18v12', G2, 1.8) + c(10, 10, 4.6, R) + c(21, 9, 4.6, Y) + c(16, 14, 4.6, PK) + c(15.500, 5.500, 3.600, P) + c(10, 10, 1.6, Y) + c(21, 9, 1.6, O) + c(16, 14, 1.6, W) + r(12.500, 21, 7, 3, 1, B),
+
+    ['👩' + Z + '💻']: kopf(BR, P, r(8, 23, 16, 8, 1, GR2) + r(9.500, 24.500, 13, 5.500, .5, L)), ['🧑' + Z + '💻']: kopf(K, O, r(8, 23, 16, 8, 1, GR2) + r(9.500, 24.500, 13, 5.500, .5, L)), ['🧑' + Z + '⚖']: kopf(GR, K, p('M13 21.500l3 3 3-3z', W)),
+    ['👩' + Z + '👧']: klein(kopf(BR, R), 1, 2, .66) + klein(kopf(BR2, PK), 15, 13, .48), ['👨' + Z + '👦']: klein(kopf(BR2, B), 1, 2, .66) + klein(kopf(BR2, G), 15, 13, .48),
+    ['🐈' + Z + '⬛']: p('M5 13L4 3.500l7.500 4zM27 13l1-9.500-7.500 4z', '#3a4250') + c(16, 17, 11.5, '#3a4250') + c(11.5, 15, 1.8, Y) + c(20.5, 15, 1.8, Y) + c(11.5, 15, .8, K) + c(20.5, 15, .8, K) + p('M14.500 19h3L16 20.800z', PK),
+    '🦧': c(16, 17, 12, O2) + e(8, 17, 4, 7, '#c9601a') + e(24, 17, 4, 7, '#c9601a') + e(16, 14, 7, 5, '#e2b780') + e(16, 22, 6, 4.500, '#e2b780') + c(13, 14, 1.3, K) + c(19, 14, 1.3, K) + s('M13 23h6', BR2, 1.2),
+    '🪿': e(13, 21, 9.5, 6, HG) + s('M19 19c3-3 3-9 1-13', HG, 3.6) + c(20.500, 5.500, 3, HG) + p('M22.500 5l6 1-6 2z', O) + c(21, 4.800, .7, K) + s('M10 27v3M15 27v3', O, 1.6) + p('M5 20c3-3 8-3 11 0-3 2-8 2-11 0z', GR),
+    '🧲': s('M8 5v12a8 8 0 0 0 16 0V5', R, 5.6) + r(5.200, 3, 5.600, 5, .5, GR) + r(21.200, 3, 5.600, 5, .5, GR)
+  });
+
+  const ges = inh => c(16, 16, 13.5, Y2) + c(16, 15.4, 13, Y) + inh;
+  land('EG', r(2, 6, 28, 6.7, 0, R) + r(2, 12.7, 28, 6.7, 0, W) + r(2, 19.3, 28, 6.7, 0, K) + c(16, 16, 1.8, Y2));
+  Object.assign(EB2, {
+    '🔪': p('M13 19L27 3c2.500 4.500 2 9.500-1.500 13L17 23z', GR) + p('M13 19L27 3c1 3 .500 6-1 8.500z', HG) + r(3, 20.500, 12, 5.400, 2.4, K, -45),
+    '🥾': p('M8 3h10v14l9 4c3 1.500 3 8 0 8H8z', BR) + r(6, 26, 24, 3.4, 1, K) + r(8, 3, 10, 3.6, .8, BR2) + s('M18 9h-4M18 13h-4M19 17.500l-4 1.500', Y2, 1.4),
+    '👼': e(6, 20, 5, 7, HG, 20) + e(26, 20, 5, 7, HG, -20) + kopf('#f2c14e', L) + '<ellipse cx="16" cy="2.600" rx="6" ry="1.800" fill="none" stroke="' + Y2 + '" stroke-width="1.600"/>',
+    '🐡': [0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330].map(a => g(p('M15 2.500l1-2.500 1 2.500z', Y2), `rotate(${a} 15 16)`)).join('') + c(15, 16, 11.5, Y2) + e(15, 20, 8, 5.5, CR) + p('M25 16l6-4v8z', O) + c(10.5, 13, 2.4, W) + c(10.5, 13, 1.1, K) + s('M7 19c1 1 2.500 1 3.500 0', K, 1.1),
+    '🪮': r(11, 2, 10, 14, 3, P) + [12, 14.5, 17, 19.5].map(x => r(x, 15, 1.4, 14, .6, P)).join('') + c(16, 8, 2, P2),
+    '🥟': p('M3 20c0-8 6-13 13-13s13 5 13 13c-4 3-9 4-13 4s-9-1-13-4z', CR) + p('M3 20c0-8 6-13 13-13s13 5 13 13c-4 3-9 4-13 4s-9-1-13-4z', 'rgba(184,140,80,.18)') + s('M7 12c1 2 1 4 0 6M12 9c1 2 1 5 0 8M17 8.500c1 2 1 5 0 8M22 10c1 2 1 5 0 7M26 13c.500 1.500.500 3 0 4.500', '#c9a060', 1.2),
+    '🦂': e(13, 21, 6, 4.5, BR) + s('M18 19c5-1 8-5 7-10-1-4-5-5-7-3', BR, 2.6) + p('M17.500 5l-3 1.500 3.500 1.500z', BR2) + s('M8 19c-3-1-5-3-5-6M8 23c-3 0-5 1-6 3', BR, 1.8) + c(3, 12, 2, BR) + c(2.5, 26.500, 2, BR) + s('M11 25l-2 4M15 25.500l0 4M18 24l2 4', BR2, 1.4),
+    '🚉': p('M2 9l14-6 14 6v2.500H2z', GR2) + r(7, 12, 18, 14, 3, B) + r(9.5, 14.5, 13, 5, 1, L) + c(11.5, 23, 1.4, Y) + c(20.5, 23, 1.4, Y) + r(2, 27, 28, 2.600, 1, '#5d6b85') + r(4, 11, 1.600, 16, .5, GR2) + r(26.400, 11, 1.600, 16, .5, GR2),
+    '🅿': r(3, 3, 26, 26, 7, B2) + r(3, 2, 26, 25.5, 7, B) + t('P', 16, 23.5, 20, W),
+    '🥯': ring(16, 16, 8.5, '#b97a34', 9) + ring(16, 15.300, 8.500, '#e2a85a', 8) + c(12, 9.500, .7, CR) + c(19, 8.500, .7, CR) + c(23, 13, .7, CR) + c(9, 15, .7, CR),
+    '🎓': p('M7 14v7c3 3.500 15 3.500 18 0v-7z', '#3a4250') + p('M16 5L1 12.500 16 20l15-7.500z', K) + s('M26 14.500V22', Y2, 1.6) + c(26, 23.500, 1.800, Y2),
+    '🎽': p('M9 3h3c0 3 2 5 4 5s4-2 4-5h3l1 9 3 3v14H5V15l3-3z', B) + p('M5 22l22-7v4L5 26z', Y),
+    '💷': r(2, 8, 28, 16, 2, G) + r(4.5, 10.5, 23, 11, 1, '#9bd66b') + c(16, 16, 4, G2) + c(7.5, 16, 1.4, G2) + c(24.5, 16, 1.4, G2),
+    '🌠': r(2, 3, 28, 26, 4, N) + c(7, 9, .8, W) + c(13, 22, .7, W) + c(25, 24, .8, W) + c(8, 25, .6, W) + s('M6 6l13 11', '#ffe9a3', 2.4) + stern(21.500, 18.500, .26, Y),
+    '🦯': s('M9 3L25 29', HG, 3) + s('M9 3L25 29', GR, 1) + s('M22.500 25l2.500 4', R, 3) + s('M7 3h5', K, 3),
+    '💰': p('M12 9l-2-5h12l-2 5z', BEIGE) + p('M12 9h8c5 4 8 9 8 13 0 5-4 7-12 7S4 27 4 22c0-4 3-9 8-13z', BEIGE) + r(11.5, 8, 9, 2.400, 1, BR) + c(16, 20, 5, Y) + c(16, 20, 3, Y2),
+    '📴': r(3, 3, 26, 26, 7, O2) + r(3, 2, 26, 25.5, 7, O) + r(11, 6, 10, 19, 2, W) + r(12.500, 8.500, 7, 12, .5, O) + s('M7 25L25 6', W, 2.4),
+    '🎳': c(11, 20, 8.5, '#3a4250') + c(9, 17, 1, GR) + c(12, 16, 1, GR) + c(11.500, 19.500, 1, GR) + p('M22 3c2 0 3 1.500 3 3 0 2-1 3-1 5 2 3 4 7 4 11 0 4-2 7-6 7s-6-3-6-7c0-4 2-8 4-11 0-2-1-3-1-5 0-1.500 1-3 3-3z', HG) + r(19.500, 9.500, 5, 1.800, .5, R),
+    '👐': e(10.5, 18, 5.4, 9, Y, -18) + e(21.5, 18, 5.4, 9, Y, 18) + s('M9 12v5M12 11.500v5.500M20 11.500v5.500M23 12v5', Y2, 1.2),
+    '😔': ges(s('M9.500 12.500c1 1.600 3 1.600 4 0M18.500 12.500c1 1.600 3 1.600 4 0M12.500 22c2.200-1.500 4.800-1.500 7 0', K, 1.7)),
+    '😍': ges(s('M10 19c3.500 3.500 8.500 3.500 12 0', K, 1.8)) + herz(11, 13, .24, R) + herz(21, 13, .24, R),
+    '🧧': r(8, 3, 16, 26, 2, R) + p('M8 5c0-1 1-2 2-2h12c1 0 2 1 2 2v4l-8 5-8-5z', R2) + c(16, 14, 3, Y) + c(16, 14, 1.4, Y2),
+    '🪼': s('M9 15c0 5-2 6-1 12M13 15c0 6 1 8 0 14M19 15c0 6-1 8 0 14M23 15c0 5 2 6 1 12', PK, 1.8) + p('M4 15c0-7 5-12 12-12s12 5 12 12c-2 2-4 0-6 1-2 1-4 1-6 0-2 1-4 1-6 0-2-1-4 1-6-1z', '#ffb3d6') + c(12, 10, 1.2, K) + c(20, 10, 1.2, K),
+    '🎞': g(r(8, 1, 16, 30, 1.5, '#3a4250') + [4, 12.500, 21].map(y => r(11.500, y, 9, 6.500, .5, L)).join('') + [3, 7, 11, 15, 19, 23, 27].map(y => r(9, y, 1.400, 2, .3, W) + r(21.600, y, 1.400, 2, .3, W)).join(''), 'rotate(20 16 16)')
+  });
+})();
+
+/*@@src bilder293f.js@@*/
+
+(() => {
+  const { K, W, Y, Y2, R, R2, G, G2, B, B2, L, O, O2, P, P2, PK, BR, BR2, GR, GR2, CR, Z, c, e, r, p, s, t, g, stern, herz, HERZ } = EB2H;
+  const HG = '#e8eef7', N = '#3a4664', F = '♀', M = '♂', ring = (x, y, k, col, w) => `<circle cx="${x}" cy="${y}" r="${k}" fill="none" stroke="${col}" stroke-width="${w}"/>`;
+  const kachel = (f, f2, inh) => r(3, 3, 26, 26, 7, f2) + r(3, 2, 26, 25.5, 7, f) + inh, pf = d => s(d, 'currentColor', 4);
+  const ges = (inh, f, f2) => c(16, 16, 13.5, f2 || Y2) + c(16, 15.4, 13, f || Y) + inh, au = (y) => c(11.5, y || 13, 1.6, K) + c(20.5, y || 13, 1.6, K), la = s('M10 19c3.5 3.5 8.5 3.5 12 0', K, 1.8);
+  const oben = f => p('M7.3 13c-.5-6.5 3.5-10.5 8.7-10.5s9.200 4 8.700 10.500c-1.500-3.500-4.500-5.500-8.700-5.500S8.800 9.500 7.300 13z', f);
+  const kopf = (hemd, haare, extra) => p('M4 31c0-6 5-9.500 12-9.500S28 25 28 31z', hemd) + c(16, 13.4, 8.6, Y2) + c(16, 13, 8.3, Y) + (haare || '') + c(12.8, 13.8, 1.2, K) + c(19.2, 13.8, 1.2, K) + s('M13 17.400c2 1.600 4 1.600 6 0', K, 1.2) + (extra || '');
+  const locken = f => [6.5, 10, 13.5, 18.5, 22, 25.5].map((x, i) => c(x, [11, 6.5, 4.5, 4.5, 6.5, 11][i], 3.8, f)).join('');
+  const fig = (hx, hy, d, col, davor, dahinter) => (dahinter || '') + s(d, col || B, 3.2) + c(hx, hy, 3.7, Y2) + c(hx, hy - .3, 3.4, Y) + (davor || '');
+  const rahmen = '<rect x="2" y="6" width="28" height="20" rx="1.6" fill="none" stroke="rgba(20,30,70,.3)" stroke-width="1"/>';
+  const land = (a, inh) => { EB2[String.fromCodePoint(...[...a].map(ch => 0x1F1E6 + ch.charCodeAt(0) - 65))] = inh + rahmen; };
+  land('KE', r(2, 6, 28, 6.7, 0, K) + r(2, 12.7, 28, 6.7, 0, R) + r(2, 19.3, 28, 6.7, 0, G2) + r(2, 12, 28, 1, 0, W) + r(2, 19, 28, 1, 0, W) + e(16, 16, 2.6, 5, R2)); land('IS', r(2, 6, 28, 20, 0, B2) + r(9, 6, 5.6, 20, 0, W) + r(2, 13.2, 28, 5.6, 0, W) + r(10.5, 6, 2.6, 20, 0, R) + r(2, 14.7, 28, 2.6, 0, R)); land('MA', r(2, 6, 28, 20, 0, R) + s('M16 11l3 9-7.500-5.500h9L13 20z', G2, 1.2));
+  const disk = (f, f2) => c(16, 16, 13, f) + c(16, 16, 4.5, f2) + c(16, 16, 1.6, W) + s('M8 9c2-2.500 5-4 8-4', 'rgba(255,255,255,.6)', 1.6);
+  const ordner = (auf) => p('M3 8c0-1.500 1-2.500 2.500-2.500H12l3 3h11.500C28 8.500 29 9.500 29 11v13c0 1.500-1 2.500-2.500 2.500h-21C4 26.500 3 25.500 3 24z', Y2) + (auf ? p('M3 26l4-12h24l-4.500 12.500z', Y) : r(3, 11.5, 26, 15, 2.5, Y));
+  const brief = r(3, 8, 26, 18, 2.5, HG) + s('M4 10l12 9 12-9', GR2, 1.6), kasten = (fahne) => r(14.5, 16, 3, 13, .6, GR2) + p('M3 10c0-3 2-5 5-5h16c3 0 5 2 5 5v9H3z', B) + r(3, 10, 12, 9, 0, B2) + r(6, 12.5, 6, 4, .5, W) + fahne;
+  Object.assign(EB2, {
+
+    '💾': r(3, 3, 26, 26, 3, B2) + r(8, 3, 14, 9, 1, HG) + r(17, 4.5, 3, 6, .5, B2) + r(7, 16, 18, 13, 1.5, W) + s('M10 20h12M10 24h9', GR, 1.4),
+    '🔓': s('M10 14V9.500a6 6 0 0 1 11.500-2', GR2, 3.4) + r(5.5, 13, 21, 16, 4, Y2) + r(5.5, 12.4, 21, 15.6, 4, Y) + c(16, 19, 2.6, K) + r(14.9, 19.5, 2.2, 5, 1, K),
+    '🔀': kachel(B, B2, s('M6 11h4c6 0 6 10 12 10h3M6 21h4c2 0 3.500-1 4.500-2.500M17.500 13.500C18.500 12 20 11 22 11h3', W, 2.2) + p('M23.500 7.500l4 3.500-4 3.500zM23.500 17.500l4 3.500-4 3.500z', W)),
+    '⏭': kachel(B, B2, p('M8 9.500v13l8-6.500zM15.500 9.500v13l8-6.500z', W) + r(23, 9.5, 2.6, 13, .6, W)), '⏲': c(16, 17.5, 11.5, GR2) + c(16, 17.5, 9, W) + r(13.5, 2.5, 5, 3.6, 1, K) + s('M16 17.500V11M16 17.500l4 3', K, 1.8) + s('M24.500 8l2-2', K, 2),
+    '🆕': kachel(B, B2, t('NEU', 16, 20.5, 10.5, W)), '🆚': kachel(O, O2, t('VS', 16, 21.5, 14, W)), '🅱': kachel(R, R2, t('B', 16, 23.5, 20, W)), '🔙': pf('M28 16H11') + p('M14 7L3 16l11 9z', 'currentColor'),
+    '🎟': g(p('M2 9h28v5a2.500 2.500 0 0 0 0 5v5H2v-5a2.500 2.500 0 0 0 0-5z', R) + s('M21 9.500v15', W, 1.2) + stern(11.5, 16.5, .22, Y), 'rotate(-12 16 16)'),
+    '📤': s('M16 15V3', B, 2.6) + p('M10 8l6-6.500L22 8z', B) + p('M3 16h7l1.500 4h9l1.500-4h7v10c0 1.500-1 2.500-2.500 2.500h-21C4 28.500 3 27.500 3 26z', GR2), '📥': s('M16 2v10', B, 2.6) + p('M10 9l6 6.500L22 9z', B) + p('M3 16h7l1.500 4h9l1.500-4h7v10c0 1.500-1 2.500-2.500 2.500h-21C4 28.500 3 27.500 3 26z', GR2),
+    '📂': ordner(1), '📁': ordner(0), '📆': r(4, 5, 24, 24, 3, W) + r(4, 5, 24, 24, 3, 'rgba(60,90,160,.08)') + r(4, 5, 24, 7, 2, R) + r(9, 2.5, 2.6, 6, 1.2, GR2) + r(20.5, 2.5, 2.6, 6, 1.2, GR2) + t('17', 16, 25, 11, K),
+    '🔇': p('M3 12h6l8-7v22l-8-7H3z', GR2) + s('M21 12l8 8M29 12l-8 8', R, 2.4), '⛔': c(16, 16, 13.4, R) + r(7, 13.4, 18, 5.2, 1, W), '🚭': c(16, 16, 13.4, R) + c(16, 16, 9.6, W) + r(8, 14.5, 12, 3, .5, GR2) + r(20.5, 14.5, 3, 3, .5, O) + r(4.5, 14.2, 23, 3.6, 1, R, 45),
+    '↗': g(pf('M16 26V10') + p('M7.500 13L16 3l8.500 10z', 'currentColor'), 'rotate(45 16 16)'), '↘': g(pf('M16 26V10') + p('M7.500 13L16 3l8.500 10z', 'currentColor'), 'rotate(135 16 16)'), '↙': g(pf('M16 26V10') + p('M7.500 13L16 3l8.500 10z', 'currentColor'), 'rotate(225 16 16)'), '↖': g(pf('M16 26V10') + p('M7.500 13L16 3l8.500 10z', 'currentColor'), 'rotate(315 16 16)'),
+    '♥': p(HERZ, R), '♦': p('M16 2l10 14-10 14L6 16z', R), '♠': p('M16 2c6 6 11 9 11 15 0 5-6 6-9 2l2 9h-8l2-9c-3 4-9 3-9-2 0-6 5-9 11-15z', K), '♣': c(16, 9.5, 6, K) + c(9.5, 18, 6, K) + c(22.5, 18, 6, K) + p('M14 17h4l2 12h-8z', K),
+    '⚕': r(14.8, 3, 2.4, 26, 1, G2) + s('M16 9c-6 0-6 6 0 6s6 6 0 6', G2, 2.2) + c(16, 4.5, 2, G2), '☢': c(16, 16, 13.4, Y) + [0, 120, 240].map(a => g(p('M16 16L11 5.500a12 12 0 0 1 10 0z', K), `rotate(${a} 16 16)`)).join('') + c(16, 16, 3.6, Y) + c(16, 16, 2.2, K),
+    '☪': p('M17 3a13 13 0 1 0 9 22A11 11 0 1 1 17 3z', G2) + stern(22, 14, .22, G2), '🕉': c(16, 16, 13.4, O) + t('ॐ', 16, 22.5, 17, W), '🏳': r(5, 3, 2.2, 27, .8, GR2) + p('M7 5c7-3 12 3 20 0v14c-8 3-13-3-20 0z', HG) + s('M7 5c7-3 12 3 20 0v14c-8 3-13-3-20 0', GR, 1),
+    '⌨': r(2, 8, 28, 17, 3, GR2) + [0, 1, 2].map(j => [0, 1, 2, 3, 4, 5].map(i => r(5 + i * 3.900, 11 + j * 3.600, 2.600, 2.400, .5, W)).join('')).join('') + r(9, 21.5, 14, 2, .6, W), '🗜': r(12, 2, 8, 4, 1, GR2) + r(14.5, 5, 3, 8, 0, GR) + r(6, 12, 20, 4, 1, GR2) + r(11, 16, 10, 8, 1, B) + r(6, 24, 20, 4, 1, GR2) + s('M8 16v8M24 16v8', GR2, 2),
+    '💿': disk(GR, L), '📀': disk(Y, Y2), '📼': r(2, 8, 28, 17, 2.5, '#3a4250') + r(6, 11.5, 20, 8, 1.5, HG) + c(11.500, 15.500, 2.4, K) + c(20.500, 15.500, 2.4, K) + p('M9 25l1.500-3h11l1.500 3z', K),
+    '📫': kasten(r(22, 3, 2, 9, .5, R) + r(22, 3, 6, 4, .5, R)), '📨': brief + s('M1 13h4M2 17h3M1 21h4', B, 1.6), '💼': r(11.5, 5, 9, 5, 1.5, BR2) + r(13.300, 6.600, 5.400, 3.400, .5, W) + r(3, 9, 26, 18, 3, BR) + r(3, 15.5, 26, 2.2, 0, BR2) + r(13.5, 14, 5, 5, 1, Y2),
+    '🛄': kachel(B, B2, r(12.5, 7, 7, 4, 1, W) + r(14, 8.300, 4, 2.700, .4, B) + r(8, 10.5, 16, 12, 2, W) + s('M12 10.500v12M20 10.500v12', B, 1.2)), '💺': p('M9 3c-2 0-3 1.500-3 3l2 13h12l-1.500-13c0-2-1.500-3-3-3z', B) + r(7, 18.5, 18, 6, 2.5, B2) + s('M11 24.500v5M21 24.500v5M8 29.500h16', GR2, 2) + r(23, 13, 3, 8, 1.5, GR2),
+    '🎗': s('M12 4c-3 5 8 14 9 24M20 4c3 5-8 14-9 24', PK, 4) + p('M12 4c2-2 6-2 8 0-1 3-2 5-4 7-2-2-3-4-4-7z', '#f06aa6'), '💣': c(14, 19, 10.5, '#3a4250') + r(18, 6.500, 5, 5, 1, '#5d6878', 40) + s('M22.500 7c2-3 4-2 5-4', BR, 1.6) + p('M27.500 1l.800 2 2 .800-2 .800-.800 2-.800-2-2-.800 2-.800z', Y) + s('M9 15c1-2 3-3 5-3', '#5d6878', 1.6),
+
+    '😉': ges(c(11.5, 13, 1.6, K) + s('M18.500 13.500c1-1.600 3-1.600 4 0', K, 1.8) + la), '🤓': ges(la + c(11, 13.5, 4.4, W) + c(21, 13.5, 4.4, W) + c(11, 13.5, 1.4, K) + c(21, 13.5, 1.4, K)) + ring(11, 13.5, 4.4, K, 1.6) + ring(21, 13.5, 4.4, K, 1.6) + s('M15.400 13.500h1.200', K, 1.6) + r(14, 20.5, 4, 2.6, .5, W),
+    '😕': ges(au() + s('M11 22c3-1.500 7-2.500 10-.500', K, 1.8)), '😐': ges(au() + s('M11 21h10', K, 1.8)), '😞': ges(s('M9.500 12.500c1 1.600 3 1.600 4 0M18.500 12.500c1 1.600 3 1.600 4 0M11 22.500c3-2.500 7-2.500 10 0', K, 1.8)), '😗': ges(au() + c(16, 21, 2, K)),
+    '😜': ges(c(11.5, 13, 2.6, W) + c(11.5, 13, 1.3, K) + s('M18.500 13.500c1-1.600 3-1.600 4 0', K, 1.8) + p('M9 17.500h14c0 4-3 7-7 7s-7-3-7-7z', K) + e(17.500, 24, 2.8, 2.6, R)), '🤠': ges(au(15) + s('M10 20.500c3.500 3 8.500 3 12 0', K, 1.8)) + e(16, 8, 15, 3.4, BR) + p('M8.500 8c0-5 2-7 4.500-7 1.500 0 2 1 3 1s1.500-1 3-1c2.500 0 4.500 2 4.500 7z', BR) + r(8.500, 5.500, 15, 2, 0, BR2),
+    '🤐': ges(au()) + s('M9 21h13', K, 2.4) + s('M10 19.500v3M13 19.500v3M16 19.500v3M19 19.500v3', GR, 1) + r(21.5, 19.5, 3, 4.4, 1, GR2), '🤭': ges(s('M9.500 13.500c1-1.600 3-1.600 4 0M18.500 13.500c1-1.600 3-1.600 4 0', K, 1.8) + c(8.500, 18, 2, '#ffb36b') + c(23.500, 18, 2, '#ffb36b')) + r(9, 19, 12, 8, 4, Y2),
+    '🌝': c(16, 16, 13, '#ffe9a3') + c(11.5, 13.5, 1.5, '#b8963a') + c(20.5, 13.5, 1.5, '#b8963a') + s('M11 19c3 2.500 7 2.500 10 0', '#b8963a', 1.6), '🌜': p('M12 3a13 13 0 1 0 0 26 15 15 0 0 1 0-26z', '#ffe9a3') + c(10.500, 13, 1.1, '#b8963a') + s('M8.500 19c1.500 1 3 1 4 0', '#b8963a', 1.2),
+    '👽': p('M16 2c8 0 12 5 12 12 0 8-6 16-12 16S4 22 4 14C4 7 8 2 16 2z', '#9bd66b') + e(10.5, 15, 4, 5.5, K, 25) + e(21.5, 15, 4, 5.5, K, -25) + s('M13.500 24.500h5', G2, 1.4), '💩': p('M16 3c3 2 4 4 3 6 4 0 6 3 5 6 4 1 5 5 3 8-1 3-4 5-11 5S6 26 5 23c-2-3-1-7 3-8-1-3 1-6 5-6-1-2 0-4 3-6z', BR) + c(12, 19, 2.2, W) + c(20, 19, 2.2, W) + c(12, 19, 1, K) + c(20, 19, 1, K) + s('M12 24c2.500 2 5.500 2 8 0', K, 1.4),
+    '🙊': c(7, 16, 3.6, BR) + c(25, 16, 3.6, BR) + c(16, 17, 11.5, BR) + e(16, 13.5, 7.5, 5, '#e2b780') + c(12.5, 13.5, 1.4, K) + c(19.5, 13.5, 1.4, K) + e(12, 22.500, 5.500, 4, BR2, 15) + e(20, 22.500, 5.500, 4, BR2, -15),
+
+    '🧓': kopf(G, oben(GR)), ['👩' + Z + '🦳']: kopf(P, r(5.4, 8, 5, 17, 2.5, GR) + r(21.6, 8, 5, 17, 2.5, GR) + oben(GR)), ['👨' + Z + '🦲']: kopf(B), ['👨' + Z + '🦰']: kopf(G, oben(O2)), ['👨' + Z + '🦱']: kopf(O, locken(BR2)), ['👱' + Z + M]: kopf(B, oben('#f2c14e')),
+    ['👨' + Z + '🌾']: kopf(G2, oben(BR2), e(16, 7.600, 13, 2.900, '#e8c36a') + p('M9.500 7.500c0-4 3-6 6.500-6s6.500 2 6.500 6z', '#e8c36a')), '🤶': kopf(R, r(5.4, 8, 5, 15, 2.5, W) + oben(W), p('M7.500 8.500C8 3 12 1 16 1c5 0 9 2 12 8l-3 1c-1-3-3-4-5-4z', R) + r(6.600, 7.400, 18.800, 3.400, 1.700, W) + c(27, 10, 2.4, W)),
+    '🤵': kopf(K, oben(BR2), p('M13 21.500l3 3 3-3z', W) + p('M13.500 24l2.500 1.500 2.500-1.500v3l-2.500-1.500-2.500 1.500z', K)), '💂': kopf(R, '', e(16, 5, 8.5, 7.5, K) + s('M9 16c2 4 12 4 14 0', Y2, 1.2)), '🧚': e(6, 17, 5.5, 8, 'rgba(154,212,255,.8)', 25) + e(26, 17, 5.5, 8, 'rgba(154,212,255,.8)', -25) + kopf(G, r(5.4, 8, 5, 15, 2.5, '#f2c14e') + oben('#f2c14e')) + stern(27, 5, .14, Y) + s('M22 12l4-6', BR, 1),
+    '🤷': fig(16, 7, 'M16 11v10M16 13l-6 1-3-4M16 13l6 1 3-4M16 21l-3 8.500M16 21l3 8.500', P), '🤹': fig(16, 11, 'M16 15v8M16 16.500l-6-3M16 16.500l6-3M16 23l-3 7M16 23l3 7', O, c(7, 6, 2, R) + c(16, 3, 2, B) + c(25, 6, 2, G)),
+    '🧖': fig(16, 9, 'M16 13v8M16 15l-5 4M16 15l5 4', HG, r(11, 2, 10, 5, 2.5, HG) + s('M5 25c4-3 18-3 22 0', L, 2) + s('M8 4c-1 2 1 3 0 5M25 5c-1 2 1 3 0 5', GR, 1.4)), '🤳': r(20, 3, 8, 13, 1.5, K) + r(21.300, 5, 5.400, 8.500, .5, L) + p('M5 30l6-12c1-2 3-3 5-2l7-2 1 3-5 2-3 11z', Y),
+    ['🧘' + Z + F]: c(16, 6, 3.4, Y) + s('M16 10v9M16 13l-7 5M16 13l7 5M16 19c-5 0-9 2-10 6h20c-1-4-5-6-10-6', P, 3), ['🧑' + Z + '🦽']: ring(13, 22, 6.5, K, 2) + c(13, 22, 1.4, K) + c(26, 27.500, 2, K) + s('M9 9v10h9l4 7h4', GR2, 2) + c(13, 6, 3.2, Y) + s('M13 10v7h6l3 5', B, 3),
+    '🫱': r(8, 10, 20, 13, 5, Y) + r(1, 12, 9, 9, 1, B) + s('M14 14h8M14 17.500h9', Y2, 1.2), '🫲': g(r(8, 10, 20, 13, 5, Y) + r(1, 12, 9, 9, 1, B) + s('M14 14h8M14 17.500h9', Y2, 1.2), 'translate(32 0) scale(-1 1)'), '💅': p('M8 30V16c0-2 1-3 2-3V6c0-3 4-3 4 0v6h1V4c0-3 4-3 4 0v8h1V6c0-3 4-3 4 0v14c0 5-2 8-4 10z', Y) + r(10.300, 4.500, 3.400, 4, 1.2, PK) + r(15.300, 2.500, 3.400, 4, 1.2, PK) + r(20.300, 4.500, 3.400, 4, 1.2, PK),
+    '🦰': oben(O2) + r(5.4, 8, 5, 15, 2.5, O2) + r(21.6, 8, 5, 15, 2.5, O2), '🦱': locken(BR2),
+
+    '🦦': e(16, 21, 8, 9, BR) + c(16, 10.5, 7, BR) + c(10.500, 5.500, 2, BR) + c(21.500, 5.500, 2, BR) + e(16, 13, 4, 3, CR) + c(13.500, 9.500, 1, K) + c(18.500, 9.500, 1, K) + e(16, 11.800, 1.300, 1, K) + e(16, 22, 4.500, 6, '#c98a50') + e(11.500, 18.500, 2, 3, BR2, 30) + e(20.500, 18.500, 2, 3, BR2, -30),
+    '🦝': p('M5 12L4 3.500l7 4zM27 12l1-8.500-7 4z', GR2) + c(16, 17, 11.5, GR) + p('M5.500 15c3-3 7-3 9 0 0 3-2 5-5 5s-4-2-4-5zM26.500 15c-3-3-7-3-9 0 0 3 2 5 5 5s4-2 4-5z', '#3a4250') + c(11, 16, 1.4, W) + c(21, 16, 1.4, W) + e(16, 22, 3.6, 3, W) + e(16, 21, 1.6, 1.2, K),
+    '🐀': e(15, 20, 10, 6.5, GR2) + c(24, 16, 4.5, GR2) + c(22, 11.500, 2.6, GR2) + c(22, 11.500, 1.3, PK) + p('M27 15l4.500 2-4 2z', GR2) + c(31, 17, .8, PK) + c(25.500, 15, .9, K) + s('M5 21c-3 1-4 4-2 7', PK, 1.4) + s('M11 26v2.500M19 26v2.500', PK, 1.4),
+    '🐤': e(15, 20, 8.5, 7.5, Y) + c(18, 11, 6, Y) + p('M23.500 10.500l4.500 1.500-4.500 1.500z', O) + c(19.500, 10, 1.1, K) + p('M8 19c2 3 5 3 8 1-2 4-6 4-8 2z', Y2) + s('M13 27v3M18 27v3', O, 1.6),
+    '🦮': e(14, 19, 9, 5, '#e8c36a') + c(24, 13, 4.5, '#e8c36a') + e(22, 12.500, 1.800, 3.600, '#c9a060', 20) + c(28.500, 14, 1, K) + c(25, 12, .9, K) + s('M8 23v6M12 23.500v5.500M18 23.500v5.500M21.500 23v6', '#e8c36a', 2.4) + s('M6 18c-2-1-3-3-2.500-5', '#e8c36a', 2) + r(11.500, 14.500, 3, 9.500, .5, R) + s('M13 14.500L20 4', K, 1.4),
+    '🪸': s('M16 30V17M16 22c-5-1-7-5-7-10M9 16c-3-1-4-3-4-6M16 18c5-1 7-5 7-11M23 12c3-1 4-3 4-6M16 17c0-5-1-9-3-13M19.500 14c-1-3 0-6 1-8', '#ff8a5c', 2.6),
+
+    '🌭': r(3, 12, 26, 11, 5.5, '#e2a85a') + r(1.5, 13.5, 29, 6, 3, R2) + s('M5 16.500q2.200-2.500 4.400 0t4.400 0 4.400 0 4.400 0 4.400 0', Y, 1.6), '🥓': s('M5 6c6 2 2 8 8 10s2 8 8 10', R2, 6) + s('M5 6c6 2 2 8 8 10s2 8 8 10', '#ffb0a0', 1.8) + s('M13 3c6 2 2 8 8 10s2 8 6 9', R2, 5) + s('M13 3c6 2 2 8 8 10s2 8 6 9', '#ffb0a0', 1.5),
+    '🍮': e(16, 25, 13, 4, HG) + p('M8 24c0-8 3-13 8-13s8 5 8 13z', Y2) + p('M9.500 15c1-3 3.500-4.500 6.500-4.500s5.500 1.500 6.500 4.500c-2 2-4 0-6.500 1.500C13.500 15 11.500 17 9.500 15z', BR), '🍙': p('M16 3c2 0 4 2 6 6l6 12c1 4-1 7-5 7H9c-4 0-6-3-5-7l6-12c2-4 4-6 6-6z', W) + p('M16 3c2 0 4 2 6 6l6 12c1 4-1 7-5 7H9c-4 0-6-3-5-7l6-12c2-4 4-6 6-6z', 'rgba(60,90,160,.1)') + r(11, 19, 10, 9, 1, '#3a4250'),
+    '🍠': p('M4 22c0-7 5-13 12-15 5-1 10 1 12 5-2 8-8 14-15 15-5 1-9-1-9-5z', '#a855a0') + p('M14 9c4-1 8 0 11 3-1 4-4 8-8 10z', '#f2c14e'), '🧇': r(4, 4, 24, 24, 5, '#e2a85a') + s('M12 5v22M20 5v22M5 12h22M5 20h22', '#b97a34', 1.8) + r(13.5, 13.5, 5, 5, 1, Y),
+    '🥡': p('M6 11h20l-2.500 18h-15z', W) + p('M6 11h20l-2.500 18h-15z', 'rgba(60,90,160,.1)') + p('M4 11l3-5h18l3 5z', HG) + s('M10 6c2-6 10-6 12 0', GR2, 1.4) + c(16, 20, 3.6, R), '🍧': p('M8 15h16l-4 14h-8z', L) + p('M6 15c0-6 4-10 10-10s10 4 10 10z', PK) + p('M10 12c1-4 3-6 6-6', '#ffd0e4') + s('M21 4l3-3', R, 2),
+    '🍷': p('M9 3h14c0 8-2 13-7 13S9 11 9 3z', HG) + p('M10 8h12c-.500 5-2.500 8-6 8s-5.500-3-6-8z', '#a02848') + s('M16 16v10M10.500 27.500h11', GR2, 2), '🧉': p('M8 12h16c0 9-2 16-8 16S8 21 8 12z', BR) + e(16, 12, 8, 2.6, G) + s('M18 12L25 2', GR2, 2) + r(8, 17, 16, 2, 0, BR2),
+
+    '💉': g(r(13.5, 8, 5, 15, 1, HG) + r(13.5, 14, 5, 9, 1, '#ff9a9a') + r(11, 6, 10, 2.4, 1, GR2) + r(15, 2, 2, 5, .5, GR2) + r(12.500, 1, 7, 2, 1, GR2) + s('M16 23v7', GR2, 1.4) + s('M13.500 11h2M13.500 14h2M13.500 17h2', GR2, .8), 'rotate(45 16 16)'),
+    '👝': p('M4 11c0-2 2-4 4-4h16c2 0 4 2 4 4v10c0 3-2 5-5 5H9c-3 0-5-2-5-5z', O) + r(4, 11, 24, 2.4, 0, O2) + r(14, 10, 4, 5, 1, Y2) + s('M26 9c4 2 4 8 0 10', BR2, 1.6), '👚': p('M10 4c2 2 4 3 6 3s4-1 6-3l7 6-4 5-2-2v16H9V13l-2 2-4-5z', PK) + p('M10 4c2 2 4 3 6 3s4-1 6-3c-1 4-3 6-6 6s-5-2-6-6z', '#ffd0e4'),
+    '👙': p('M5 5c2 5 5 7 8 6l3-2 3 2c3 1 6-1 8-6l1 3c-1 5-4 8-8 8l-4-2-4 2c-4 0-7-3-8-8z', B) + p('M6 20h20c-1 6-5 9-10 9s-9-3-10-9z', B), '🛖': p('M3 16L16 4l13 12z', '#c9a060') + s('M7 14l3-3M12 14l3-5M18 14l-1-5M23 14l-3-3', BR, 1) + r(6, 16, 20, 13, 1, '#e8c890') + p('M13 29v-7a3 3 0 0 1 6 0v7z', BR2),
+    '🛳': p('M2 20h28l-3 7H5z', B2) + r(5, 14, 22, 6, 1, HG) + r(8, 9, 15, 5, 1, HG) + r(11, 4, 3.6, 5, .5, R) + r(17, 4, 3.6, 5, .5, R) + [7, 11, 15, 19, 23].map(x => c(x, 17, 1.1, B)).join('') + s('M2 29.500q3.500-2 7 0t7 0 7 0 7 0', L, 1.8),
+    '🚡': s('M2 5l28-3', K, 1.4) + s('M16 4v6', K, 1.4) + r(6, 10, 20, 15, 4, R) + r(8.500, 13, 6.500, 6, 1, L) + r(17, 13, 6.500, 6, 1, L) + r(6, 21, 20, 2, 0, R2), '🕍': r(6, 12, 20, 17, 1, CR) + p('M6 12c0-5 4-8 10-8s10 3 10 8z', L) + s('M16 9l2.200 3.800h-4.400zM16 14l-2.200-3.800h4.400z', B, .9) + p('M13 29v-6a3 3 0 0 1 6 0v6z', BR) + r(8.500, 16, 3, 5, 1.5, L) + r(20.500, 16, 3, 5, 1.5, L),
+    '🛕': r(5, 20, 22, 9, 1, O) + p('M8 20l2-6h12l2 6zM11 14l1.500-5h7l1.500 5zM13.500 9L16 3l2.500 6z', O2) + p('M13.500 29v-5a2.500 2.500 0 0 1 5 0v5z', BR2) + s('M16 3V1', R, 1.4),
+    '⚾': c(16, 16, 13, HG) + ring(16, 16, 12.300, GR, 1.2) + s('M7 7c4 5 4 13 0 18M25 7c-4 5-4 13 0 18', R, 1.4), '🥀': s('M16 30c0-8 2-12 5-16', G2, 2) + p('M14 21c-3-2-6-1-8 1 3 2 6 2 8-1z', G) + p('M22 5c4 1 6 5 4 9s-7 4-9 1-1-9 5-10z', R2) + p('M21 8c2 1 3 3 2 5s-4 2-5 0 0-4 3-5z', R),
+    '🪏': r(15, 2, 2.4, 18, 1, BR) + r(11, 1, 10, 3, 1.5, BR2) + p('M10 18h12v6c0 3-3 6-6 7-3-1-6-4-6-7z', GR2) + s('M16 20v9', GR, 1.2),
+    '💕': herz(11, 12, .5, PK) + herz(21.500, 21, .55, '#f06aa6'), '⛅': [0, 45, 90, 135, 180, 225, 270, 315].map(a => `<rect x="20.100" y="1" width="1.800" height="2.800" rx=".9" fill="${Y2}" transform="rotate(${a} 21 10)"/>`).join('') + c(21, 10, 5.4, Y) + g(c(11, 13, 6, HG) + c(19, 10, 7.4, HG) + c(25, 14.5, 4.6, HG) + r(6, 13, 23, 6, 3, HG), 'translate(-2 7) scale(.95)')
+  });
+})();
+
 /*@@src bilder292.js@@*/
 
 
@@ -79646,18 +80331,25 @@ const EB = (() => {
     '🍀': s('M16 16q3 8 7.500 12', G2, 2.2) + [45, 135, 225, 315].map(a => g(p(HERZ, G), `rotate(${a} 16 16) translate(9.3 2.6) scale(.42)`)).join('') + c(16, 16, 1.6, G2),
     '🪁': p('M16 2l9 11-9 13-9-13z', R) + p('M16 2l9 11-9 13z', R2) + s('M16 2v24M7 13h18', W, 1) + s('M16 26q-4 2-1 4', B, 1.6)
   };
+  if (typeof EB2 !== 'undefined') for (const k in EB2) if (!o[k]) o[k] = EB2[k];
   return o;
 })();
 const ebAn = () => { try { return !(S.settings && S.settings.eb === false) && !window.LW_EB_AUS; } catch (e) { return false; } };
-const EB_RX = (() => { const k = Object.keys(EB).sort((a, b) => b.length - a.length).map(x => x.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\uFE0F?'); return new RegExp('(' + k.join('|') + ')', 'g'); })();
-function ebSvg(ch) { const inh = EB[ch.replace(/️/g, '')]; return inh ? `<svg class="eb-s" viewBox="0 0 32 32" aria-hidden="true" focusable="false">${inh}</svg>` : ''; }
+
+
+const EB_ZW = '(?:\\uFE0F|\\uD83C[\\uDFFB-\\uDFFF])*';
+const EB_RX = (() => { const k = Object.keys(EB).sort((a, b) => b.length - a.length).map(x => [...x].map(ch => ch.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join(EB_ZW) + EB_ZW); return new RegExp('(?:' + k.join('|') + ')(?!\\u200D)', 'g'); })();
+
+const EB_VOR = new RegExp('[' + [...new Set(Object.keys(EB).map(k => k.charCodeAt(0)))].map(n => '\\u' + n.toString(16).padStart(4, '0')).join('') + ']');
+const ebNorm = ch => String(ch).replace(/\uFE0F|\uD83C[\uDFFB-\uDFFF]/g, '');
+function ebSvg(ch) { const inh = EB[ebNorm(ch)]; return inh ? `<svg class="eb-s" viewBox="0 0 32 32" aria-hidden="true" focusable="false">${inh}</svg>` : ''; }
 
 function ebHTML(ch) { const s = ebAn() && ebSvg(ch); return s ? `<span class="eb">${s}<span class="eb-t">${ch}</span></span>` : ch; }
 const EB_AUS = 'textarea, input, select, option, script, style, svg, canvas, [contenteditable], .eb, [data-eb-aus]';
 
 
-const EB_ALLE = /\p{Extended_Pictographic}(?:️|‍\p{Extended_Pictographic}|[\u{1F3FB}-\u{1F3FF}])*/gu, EB_EGAL = /^[▶◀✔♀♂©®™↩↪⤴⤵▪▫◾◽]/;
-function ebVoll(txt) { const m = String(txt || '').match(EB_ALLE); return !m || m.every(x => EB[x.replace(/️/g, '')] || EB_EGAL.test(x)); }
+const EB_ALLE = /[\u{1F1E6}-\u{1F1FF}]{2}|\p{Extended_Pictographic}(?:️|‍\p{Extended_Pictographic}|[\u{1F3FB}-\u{1F3FF}])*/gu, EB_EGAL = /^[▶◀✔♀♂©®™↩↪⤴⤵▪▫◾◽]/;
+function ebVoll(txt) { const m = String(txt || '').match(EB_ALLE); return !m || m.every(x => EB[ebNorm(x)] || EB_EGAL.test(x)); }
 function ebZone(el, merk) {
   let z = el.closest('main.stage, .sheet, .eb-zone'), art = 'text';
   if (!z) { const ic = el.closest('.gi, .tp-i'); if (!ic) return true; z = ic.closest('main') || document.body; art = 'bild'; }
@@ -79668,13 +80360,16 @@ function ebZone(el, merk) {
 }
 function ebWeg(sp) { const t = sp.querySelector('.eb-t'); sp.replaceWith(document.createTextNode(t ? t.textContent : '')); }
 function ebText(n, merk) {
-  const v = n.nodeValue; if (!v || v.length > 4000) return; EB_RX.lastIndex = 0; if (!EB_RX.test(v)) return;
+  const v = n.nodeValue; if (!v || v.length > 4000 || !EB_VOR.test(v)) return; EB_RX.lastIndex = 0; if (!EB_RX.test(v)) return;
   const el = n.parentNode; if (!el || el.nodeType !== 1 || el.closest(EB_AUS) || !ebZone(el, merk)) return;
   const fr = document.createDocumentFragment(); let pos = 0; EB_RX.lastIndex = 0; let m;
   while ((m = EB_RX.exec(v))) {
+    if (v[m.index - 1] === '\u200D') continue;
+    if (/^\uD83C[\uDDE6-\uDDFF]/.test(m[0])) { let k = 0; while (/^\uD83C[\uDDE6-\uDDFF]$/.test(v.slice(m.index - 2 * k - 2, m.index - 2 * k))) k++; if (k % 2) continue; }
     if (m.index > pos) fr.appendChild(document.createTextNode(v.slice(pos, m.index)));
     const sp = document.createElement('span'); sp.className = 'eb'; sp.innerHTML = ebSvg(m[0]) + '<span class="eb-t"></span>'; sp.lastChild.textContent = m[0]; fr.appendChild(sp); pos = m.index + m[0].length;
   }
+  if (!pos) return;
   if (pos < v.length) fr.appendChild(document.createTextNode(v.slice(pos)));
   el.replaceChild(fr, n);
 }
@@ -86501,6 +87196,276 @@ function fkTraumtor(stage) {
 }
 if (typeof FUN_GAMES !== 'undefined') Object.assign(FUN_GAMES, { traumtor: { c: 'abenteuer', t: 'Traumtor', d: 'Freistöße ins Eck: wischen, schlenzen, jubeln. Zehn Level bis zum Pokal', i: '🥅' } });
 if (typeof FUN_IMPL !== 'undefined') Object.assign(FUN_IMPL, { traumtor: fkTraumtor });
+
+/*@@src kart293.js@@*/
+
+
+
+
+
+
+
+
+
+
+
+const LK_STRECKEN = [
+  { id: 'strand', n: 'Palmenstrand', sky: ['#2f8fe0', '#bfe6ff'], boden: ['#f0d9a0', '#e9cd8a'], str: ['#6f6f72', '#69696c'], rand: ['#ffffff', '#e2483a'], fern: '#3fa7c9', deko: ['palme', 'palme', 'schirm', 'fels'], grip: 1,
+    form: '80,0,0 100,2,0 70,0,1 110,-3,0 60,0,-1 120,4,0 80,0,0 100,-2,1 110,3,-1 70,0,0 130,-4,0 90,2,1 90,0,-1 110,-3,0 90,3,0 90,0,0 120,-2,0 100,2,1 90,-3,-1 80,0,0' },
+  { id: 'eis', n: 'Eis-Arena', sky: ['#6fb0ea', '#e8f6ff'], boden: ['#f6fcff', '#e3f1fa'], str: ['#a9cfe8', '#9ec5e0'], rand: ['#ffffff', '#3b7cf0'], fern: '#c9e2f5', deko: ['tanne', 'schneemann', 'tanne', 'eisberg'], grip: .74,
+    form: '90,0,0 120,2,0 80,0,0 120,-2,0 100,3,0 70,0,1 120,-3,0 90,0,-1 110,2,0 100,-2,0 80,0,0 130,3,0 90,-3,0 100,0,0 120,2,1 110,-2,-1 90,0,0 120,-3,0' },
+  { id: 'vulkan', n: 'Vulkan-Piste', sky: ['#3a1d3f', '#f0844a'], boden: ['#4d3c38', '#43342f'], str: ['#2f2b2d', '#2a2628'], rand: ['#ffb347', '#7a2a1a'], fern: '#5a2f3a', deko: ['fels', 'glut', 'fels', 'busch'], grip: 1,
+    form: '70,0,0 90,3,1 80,-2,-1 100,0,2 90,4,-2 70,-3,1 110,0,-1 90,3,2 80,-4,-2 100,2,1 90,0,-1 110,-3,2 80,4,-2 100,0,0 90,-2,1 100,3,-1 80,-4,0 90,0,1 110,2,-1 90,-3,0 80,0,0' },
+  { id: 'deich', n: 'Leuchtturm bei Nacht', sky: ['#0a1230', '#2a3a7a'], boden: ['#1f6a3a', '#1b5f34'], str: ['#3f4552', '#3a404c'], rand: ['#ffffff', '#ffd84a'], fern: '#16224a', deko: ['schaf', 'busch', 'zaun', 'turm'], grip: 1, nacht: 1,
+    form: '100,0,0 140,-2,0 90,0,1 130,3,0 80,0,-1 120,-4,0 100,2,0 90,0,0 140,-3,1 100,4,-1 90,0,0 130,2,0 110,-2,0 100,3,0 90,-4,0 110,0,0 120,2,0' }
+];
+const LK_FAHRER = [
+  { n: 'Lumi', col: '#e2483a', kopf: '#1d2b45', art: 'pinguin' }, { n: 'Rolli', col: '#3b7cf0', kopf: '#9aa7ba', art: 'robbe' }, { n: 'Fenja', col: '#ff9d2e', kopf: '#f08a2e', art: 'fuchs' },
+  { n: 'Bruno', col: '#3cb85c', kopf: '#a8703e', art: 'baer' }, { n: 'Hoppel', col: '#8a5cf6', kopf: '#f4f6fa', art: 'hase' }, { n: 'Quaxi', col: '#ffd84a', kopf: '#4fbf63', art: 'frosch' }
+];
+const LK_EXTRA = { turbo: 'Turbo-Fisch', ball: 'Schneeball', scholle: 'Eisscholle', blase: 'Schutzblase', stern: 'Sternenstaub' };
+const LK_RUNDEN = 3, LK_PUNKTE = [120, 90, 70, 50, 40, 30];
+function lkStand() { if (!isObj(S.kart)) S.kart = {}; const k = S.kart; if (!isObj(k.st)) k.st = {}; if (!isObj(k.sieg)) k.sieg = {}; return k; }
+function lkKart(stage) {
+  const { c, x, W, H } = grCanvas(stage, 1.5), parts = grParts();
+  const SEG = 200, RW = 2000, CAMH = 1000, DRAW = 150, camD = 1 / Math.tan(50 * Math.PI / 180), PZ = CAMH * camD, MAXV = SEG * 55;
+  let T = null, seg = [], N = 0, TRACK = 1, karts = [], P = null, baelle = [], fallen = [], phase = 'wahl', tPh = 0, tAll = 0, frame = 0, fern = null, steer = 0, shake = 0, tempo = 1, auto = false, level = 0, platzEnde = 0, zielN = 0, meld = '', meldT = 0, roul = 0;
+  const keys = { l: false, r: false }, zeiger = new Map(), KN = { x: W - 62, y: H - 62, r: 46 };
+  let zufall = 1; const rnd = () => { zufall = (zufall * 1103515245 + 12345) & 0x7fffffff; return zufall / 0x7fffffff; }, pick = a => a[Math.floor(rnd() * a.length)];
+  const segAt = d => seg[Math.floor((((d % TRACK) + TRACK) % TRACK) / SEG) % N];
+  const rel = (a, b) => (((a - b) % TRACK) + TRACK * 1.5) % TRACK - TRACK / 2;
+
+  function baue(nr) {
+    T = LK_STRECKEN[nr]; zufall = 17 + nr * 101; seg = [];
+    const add = (n, curve, hill) => { const y0 = seg.length ? seg[seg.length - 1].y2 : 0; for (let i = 0; i < n; i++) { const f = t => y0 + hill * (1 - Math.cos(t * Math.PI)) / 2 * SEG * 8; seg.push({ i: seg.length, curve: curve * Math.sin(i / n * Math.PI), y: f(i / n), y2: f((i + 1) / n), sp: [], ob: [], pad: null }); } };
+    T.form.split(' ').forEach(f => { const [n, cu, hi] = f.split(',').map(Number); add(n, cu, hi); });
+    add(70, 0, -seg[seg.length - 1].y2 / (SEG * 8)); N = seg.length; TRACK = N * SEG;
+    seg.forEach((s, i) => {
+      if (i % 5 === 0) s.sp.push({ k: pick(T.deko), off: (rnd() < .5 ? -1 : 1) * (1.3 + rnd() * 1.7), ph: rnd() * 6 });
+      if (i > 100 && i % 260 === 150) [-.6, 0, .6].forEach(bx => s.ob.push({ k: 'box', x: bx, t: 0 }));
+      if (i > 100 && i % 420 === 280) { const bx = pick([-.5, 0, .5]); for (let k = 0; k < 4; k++) seg[(i + k) % N].pad = bx; }
+      if (i > 60 && i % 90 === 60) { const bx = pick([-.6, -.2, .2, .6]); for (let k = 0; k < 4; k++) seg[(i + k * 3) % N].ob.push({ k: 'fisch', x: bx, t: 0 }); }
+      if (i > 200 && i % 330 === 210) s.ob.push({ k: 'pfuetze', x: pick([-.55, 0, .55]) });
+    });
+    fern = baueFern(); level = Math.min(2, lkStand().sieg[T.id] || 0);
+    const stil = [.2, .45, .65, .85, 1], ord = [1, 2, 3, 4, 5].sort(() => rnd() - .5);
+    karts = LK_FAHRER.map((f, i) => ({ f, ich: i === 0, dist: 0, x: 0, v: 0, lap: 0, item: null, itemT: 0, spin: 0, boost: 0, schild: 0, stern: 0, fische: 0, fertig: 0, tx: 0, lt: 0, skill: 0, hup: 0 }));
+    P = karts[0]; const reihen = [0, 1, 2, 4, 5];
+    karts.forEach((k, i) => { const reihe = i ? reihen[ord.indexOf(i)] : 3; k.dist = -(260 + reihe * 170); k.x = reihe % 2 ? .45 : -.45; k.tx = k.x; if (i) k.skill = stil[ord.indexOf(i)]; });
+    baelle = []; fallen = []; steer = 0; platzEnde = 0; zielN = 0; roul = 0; phase = 'count'; tPh = 0; hud();
+  }
+  function baueFern() {
+    const [cv, g] = grOff(W * 2, H * .5), hb = H * .5, rr = (() => { let a = 5 + LK_STRECKEN.indexOf(T) * 7; return () => { a = (a * 1103515245 + 12345) & 0x7fffffff; return a / 0x7fffffff; }; })();
+    g.fillStyle = T.fern; g.beginPath(); g.moveTo(0, hb);
+    if (T.id === 'vulkan') { for (let k = 0; k < 2; k++) { const b = k * W; g.lineTo(b + W * .15, hb - H * .05); g.lineTo(b + W * .4, hb - H * .3); g.lineTo(b + W * .47, hb - H * .28); g.lineTo(b + W * .54, hb - H * .3); g.lineTo(b + W * .8, hb - H * .04); g.lineTo(b + W, hb); } g.fill(); g.fillStyle = '#ff7a3a'; for (let k = 0; k < 2; k++) { g.beginPath(); g.ellipse(k * W + W * .47, hb - H * .285, W * .05, H * .012, 0, 0, 7); g.fill(); } }
+    else if (T.id === 'strand') { g.fillRect(0, hb - H * .035, W * 2, H * .04); g.fillStyle = '#7b6f9a'; for (let k = 0; k < 2; k++) { g.beginPath(); g.moveTo(k * W + W * .5, hb - H * .03); g.lineTo(k * W + W * .68, hb - H * .2); g.lineTo(k * W + W * .72, hb - H * .2); g.lineTo(k * W + W * .92, hb - H * .03); g.fill(); } }
+    else { for (let xx = 0; xx <= W * 2; xx += 20) g.lineTo(xx, hb - H * (T.id === 'eis' ? .12 : .05) - Math.abs(Math.sin(xx / W * (T.id === 'eis' ? 7 : 5))) * H * (T.id === 'eis' ? .14 : .04)); g.lineTo(W * 2, hb); g.fill(); if (T.id === 'eis') { g.fillStyle = 'rgba(255,255,255,.75)'; for (let xx = 0; xx <= W * 2; xx += 20) { const hh = Math.abs(Math.sin(xx / W * 7)); if (hh > .75) g.fillRect(xx - 12, hb - H * .12 - hh * H * .14, 24, H * .03); } } }
+    if (T.nacht) { g.fillStyle = '#ffe9a3'; for (let k = 0; k < 2; k++) for (let i = 0; i < 14; i++) g.fillRect(k * W + rr() * W, hb - H * .05 - rr() * 4, 2, 2); }
+    return cv;
+  }
+  const hud = () => funHud(phase === 'wahl' ? (W > 560 ? '🏁 Strecke wählen' : '') : W > 560 ? `🏁 ${T.n} · Runde ${Math.min(LK_RUNDEN, P.lap + 1)} von ${LK_RUNDEN} · Platz ${platz(P)} · 🐟 ${P.fische}` : `Runde ${Math.min(LK_RUNDEN, P.lap + 1)}/${LK_RUNDEN} · Platz ${platz(P)}`);
+  const sag = (t, s) => { meld = t; meldT = s || 1.4; };
+  const platz = k => 1 + karts.filter(o => o !== k && (o.fertig && (!k.fertig || o.fertig < k.fertig) || !o.fertig && !k.fertig && o.dist > k.dist)).length;
+
+  function ziehe(k) { const pl = platz(k), w = pl === 1 ? ['turbo', 'scholle', 'scholle', 'blase'] : pl >= 5 ? ['turbo', 'ball', 'stern', 'stern', 'blase'] : ['turbo', 'turbo', 'ball', 'ball', 'scholle', 'blase']; k.item = w[Math.floor(Math.random() * w.length)]; k.itemT = 1.5 + Math.random() * 3.5; if (k.ich) { roul = .8; Sound.quick(); } }
+  function nutze(k) {
+    const it = k.item; if (!it || k.spin > 0 || (k.ich && roul > 0)) return; k.item = null;
+    if (it === 'turbo') k.boost = 1.6; else if (it === 'blase') k.schild = 7; else if (it === 'stern') { k.stern = 4.5; k.boost = 4.5; }
+    else if (it === 'ball') baelle.push({ d: k.dist + 260, x: k.x, v: Math.max(k.v, MAXV * .6) + SEG * 34, own: k, t: 2.6 });
+    else if (it === 'scholle') fallen.push({ d: k.dist - 320, x: k.x, own: k, t: 28 });
+    if (k.ich) { Sound.tap(); sag(LK_EXTRA[it] + '!', 1); }
+  }
+  function treffer(k, wer) {
+    if (k.stern > 0 || k.fertig) return false; if (k.schild > 0) { k.schild = 0; if (k.ich) { sag('Abgewehrt!', 1); Sound.quick(); } return true; }
+    k.spin = 1.1; k.v *= .45; k.boost = 0; if (k.ich) { Sound.bad(); shake = .4; sag(wer ? wer + ' hat dich erwischt!' : 'Hoppla!', 1.2); } else if (wer === 'du') { sag('Treffer: ' + k.f.n + '!', 1); Sound.good(); } return true;
+  }
+
+  function schritt(dt) {
+    tPh += dt; if (phase === 'count') { if (tPh >= 3.2) { phase = 'rennen'; tPh = 0; Sound.win(); } return; }
+    if (roul > 0) roul -= dt;
+    const spP = Math.min(1.15, P.v / MAXV);
+    for (const k of karts) {
+      const vor = k.dist, s = segAt(k.dist), off = Math.abs(k.x) > 1.08 && k.stern <= 0;
+      let top = MAXV * (k.ich ? 1 + Math.min(10, k.fische) * .004 : .9 + k.skill * .07 + level * .025);
+      if (!k.ich) { const gap = P.dist - k.dist; top *= 1 - Math.min(.12, Math.abs(s.curve) * .02 * (1.2 - k.skill)); if (gap > 600) top *= 1 + Math.min(.09, gap / 30000); else if (gap < -2500) top *= 1 - Math.min(.1, (-gap - 2500) / 25000); }
+      if (k.fertig) top = MAXV * .5; if (k.boost > 0) top *= 1.32; if (off) top *= .55;
+      if (k.spin > 0) { k.spin -= dt; k.v *= Math.max(0, 1 - dt * 1.2); } else k.v += (top - k.v) * Math.min(1, dt * (k.boost > 0 ? 3 : k.v > top ? 2.2 : .9));
+      ['boost', 'schild', 'stern'].forEach(e => { if (k[e] > 0) k[e] -= dt; });
+      k.dist += k.v * dt; const sp = Math.min(1.15, k.v / MAXV);
+      if (k.ich && !auto && !k.fertig) { steer = grLerp(steer, k.spin > 0 ? 0 : keys.l ? -1 : keys.r ? 1 : 0, Math.min(1, dt * 8 * T.grip)); k.x += (steer * 2 - s.curve * sp * .27 / T.grip) * sp * dt; }
+      else {
+        k.lt -= dt; if (k.lt <= 0) { k.lt = 1.5 + Math.random() * 2.5; k.tx = [-.6, -.2, .2, .6][Math.floor(Math.random() * 4)]; }
+        for (let a = 2; a < 26; a++) { const z = seg[(s.i + a) % N]; for (const o of z.ob) { if (o.k === 'pfuetze' && a < 12 && Math.abs(o.x - k.tx) < .34 && k.hup !== z.i) { k.hup = z.i; if (Math.random() < .55 + k.skill * .35) k.tx = o.x > 0 ? o.x - .6 : o.x + .6; } if (o.k === 'box' && !k.item && o.t <= 0 && Math.abs(o.x - k.x) < .5) k.tx = o.x; } if (z.pad !== null && a < 14 && Math.abs(z.pad - k.x) < .6) k.tx = z.pad; }
+        k.x += Math.max(-1, Math.min(1, (k.tx - k.x) * 3)) * dt * 1.5 * Math.max(.3, sp); if (k.ich) steer = grLerp(steer, Math.max(-1, Math.min(1, (k.tx - k.x) * 3)), Math.min(1, dt * 6));
+        if (k.item && !k.fertig) { k.itemT -= dt; const vorn = karts.some(o => o !== k && rel(o.dist, k.dist) > 150 && rel(o.dist, k.dist) < 2600); if (k.itemT <= 0 && (k.item !== 'ball' || vorn || k.itemT < -4)) nutze(k); }
+      }
+      k.x = Math.max(-1.9, Math.min(1.9, k.x));
+
+      for (let i = Math.floor(vor / SEG) + 1; i <= Math.floor(k.dist / SEG); i++) { const z = seg[((i % N) + N) % N];
+        if (z.pad !== null && Math.abs(z.pad - k.x) < .34 && k.boost < .9) { k.boost = 1.1; if (k.ich) Sound.quick(); }
+        for (const o of z.ob) { if (o.t > 0) continue; const nah = Math.abs(o.x - k.x) < .3;
+          if (!nah) continue; if (o.k === 'box') { if (!k.item) { ziehe(k); o.t = 4; } } else if (o.k === 'fisch') { if (k.ich) { k.fische++; o.t = 9; funSetScore(k.fische); Sound.tap(); hud(); } } else if (o.k === 'pfuetze' && k.spin <= 0) treffer(k, ''); } }
+      if (!k.fertig && k.dist >= (k.lap + 1) * TRACK) { k.lap++; if (k.lap >= LK_RUNDEN) { k.fertig = ++zielN; if (k.ich) ende(); } else if (k.ich) { sag(k.lap === LK_RUNDEN - 1 ? 'Letzte Runde!' : 'Runde ' + (k.lap + 1), 1.4); Sound.good(); } if (k.ich) hud(); }
+    }
+    seg.forEach(z => { for (const o of z.ob) if (o.t > 0) o.t -= dt; });
+
+    for (const a of karts) for (const b of karts) { if (a === b) continue; const dz = rel(b.dist, a.dist); if (dz > 0 && dz < 190 && Math.abs(a.x - b.x) < .24) { if (a.stern > 0) treffer(b, a.ich ? 'du' : a.f.n); else if (b.stern > 0) treffer(a, b.ich ? 'du' : b.f.n); else { a.v = Math.min(a.v, b.v * .96); a.x += (a.x >= b.x ? 1 : -1) * dt * 1.2; if (!a.ich) a.tx = a.x + (a.x >= b.x ? .5 : -.5); } } }
+    for (const q of baelle) { q.t -= dt; q.d += q.v * dt; let ziel = null, best = 3200; for (const k of karts) { if (k === q.own) continue; const dz = rel(k.dist, q.d); if (dz > -100 && dz < best) { best = dz; ziel = k; } if (Math.abs(dz) < 170 && Math.abs(k.x - q.x) < .3 && q.t > 0) { treffer(k, q.own.ich ? 'du' : q.own.f.n); q.t = 0; } } if (ziel) q.x += Math.max(-1, Math.min(1, (ziel.x - q.x) * 4)) * dt * 1.3; }
+    for (const q of fallen) { q.t -= dt; for (const k of karts) if (q.t > 0 && Math.abs(rel(k.dist, q.d)) < 150 && Math.abs(k.x - q.x) < .28 && (k !== q.own || q.t < 26.5) && k.spin <= 0) { if (treffer(k, q.own.ich ? 'du' : q.own.f.n) || k.stern > 0) q.t = 0; } }
+    baelle = baelle.filter(q => q.t > 0); fallen = fallen.filter(q => q.t > 0);
+    if (frame % 20 === 0) hud();
+    if (phase === 'ziel' && tPh > 3.2 && !platzEnde) { platzEnde = 1; FUN.timeouts.push(setTimeout(schluss, 60)); }
+    if (spP > .5 && Math.abs(P.x) > 1.08 && frame % 3 === 0) parts.add(1, () => ({ x: W / 2 + (Math.random() - .5) * W * .16, y: H - 30, vx: (Math.random() - .5) * 90, vy: -60 - Math.random() * 60, g: 240, life: .5, max: .5, r: 3 + Math.random() * 3, c: T.boden[1] }));
+  }
+  function ende() { phase = 'ziel'; tPh = 0; const pl = P.fertig; sag(pl === 1 ? 'SIEG!' : pl <= 3 ? 'Platz ' + pl + '!' : 'Im Ziel: Platz ' + pl, 3); if (pl <= 3) { Sound.win(); if (typeof confetti === 'function') confetti(pl === 1 ? 80 : 40); } else Sound.good(); }
+  function schluss() {
+    const pl = P.fertig, st = lkStand(), nr = LK_STRECKEN.indexOf(T), sterne = pl === 1 ? 3 : pl === 2 ? 2 : pl === 3 ? 1 : 0, neuFrei = sterne > 0 && !(st.st[T.id] > 0) && nr < LK_STRECKEN.length - 1;
+    st.st[T.id] = Math.max(st.st[T.id] || 0, sterne); if (pl === 1) st.sieg[T.id] = Math.min(2, (st.sieg[T.id] || 0) + 1); save();
+    FUN.score = LK_PUNKTE[pl - 1] + Math.min(60, P.fische); FUN.note = `Platz ${pl} auf ${T.n}`; funSetScore(FUN.score);
+    funEnd(`<p>${pl === 1 ? 'Du hast gewonnen!' : pl <= 3 ? 'Du stehst auf dem Treppchen!' : 'Platz 1 bis 3 schaltet die nächste Strecke frei.'} ${neuFrei ? 'Neue Strecke frei: ' + LK_STRECKEN[nr + 1].n + '.' : pl === 1 && st.sieg[T.id] < 3 && level < 2 ? 'Beim nächsten Mal fahren die Tiere hier etwas schneller.' : ''}</p>`);
+  }
+
+  const frei = i => i === 0 || (lkStand().st[LK_STRECKEN[i - 1].id] || 0) > 0;
+  const karte = i => { const cols = W > H ? 4 : 2, rows = 4 / cols, kw = Math.min(250, (W - 24 - (cols - 1) * 12) / cols), kh = Math.min(190, (H * .62 - (rows - 1) * 12) / rows), x0 = W / 2 - (cols * kw + (cols - 1) * 12) / 2, y0 = H * .3; return [x0 + (i % cols) * (kw + 12), y0 + Math.floor(i / cols) * (kh + 12), kw, kh]; };
+  const imKnopf = (px, py) => Math.hypot(px - KN.x, py - KN.y) < KN.r + 8;
+  const lenk = () => { let l = false, r2 = false; zeiger.forEach(v => { if (v < 0) l = true; else r2 = true; }); keys.l = l || keys.kl; keys.r = r2 || keys.kr; };
+  c.addEventListener('pointerdown', e => { e.preventDefault(); const [px, py] = funPos(c, e);
+    if (phase === 'wahl') { for (let i = 0; i < 4; i++) { const [kx, ky, kw, kh] = karte(i); if (px >= kx && px <= kx + kw && py >= ky && py <= ky + kh) { if (frei(i)) { Sound.tap(); baue(i); } else { Sound.bad(); sag('Erst auf ' + LK_STRECKEN[i - 1].n + ' unter die ersten drei kommen.', 2); } } } return; }
+    if (imKnopf(px, py)) { nutze(P); return; } zeiger.set(e.pointerId, px < W / 2 ? -1 : 1); lenk(); try { c.setPointerCapture(e.pointerId); } catch (err) { } });
+  c.addEventListener('pointermove', e => { if (!zeiger.has(e.pointerId)) return; const [px] = funPos(c, e); zeiger.set(e.pointerId, px < W / 2 ? -1 : 1); lenk(); });
+  const hoch = e => { zeiger.delete(e.pointerId); lenk(); }; c.addEventListener('pointerup', hoch); c.addEventListener('pointercancel', hoch);
+  FUN.cleanup = grKeys({ ArrowLeft: d => { keys.kl = d; lenk(); }, ArrowRight: d => { keys.kr = d; lenk(); }, ' ': d => { if (d && phase !== 'wahl') nutze(P); }, 1: d => { if (d && phase === 'wahl') baue(0); }, 2: d => { if (d && phase === 'wahl' && frei(1)) baue(1); }, 3: d => { if (d && phase === 'wahl' && frei(2)) baue(2); }, 4: d => { if (d && phase === 'wahl' && frei(3)) baue(3); } });
+
+  const proj = (wx, wy, dz, camY) => { const sc = camD / dz; return { x: W / 2 + sc * wx * W / 2, y: H / 2 - sc * (wy - camY) * H / 2, w: sc * RW * W / 2 }; };
+  const quad = (x1, y1, w1, x2, y2, w2, col) => { x.fillStyle = col; x.beginPath(); x.moveTo(x1 - w1, y1); x.lineTo(x2 - w2, y2); x.lineTo(x2 + w2, y2); x.lineTo(x1 + w1, y1); x.fill(); };
+  function extraBild(it, cx, cy, r0) {
+    x.save(); x.translate(cx, cy);
+    if (it === 'turbo') { x.fillStyle = '#4fb3e8'; x.beginPath(); x.ellipse(-r0 * .1, 0, r0 * .62, r0 * .36, 0, 0, 7); x.fill(); x.beginPath(); x.moveTo(r0 * .4, 0); x.lineTo(r0 * .85, -r0 * .38); x.lineTo(r0 * .85, r0 * .38); x.fill(); x.fillStyle = '#fff'; x.beginPath(); x.arc(-r0 * .4, -r0 * .08, r0 * .1, 0, 7); x.fill(); x.fillStyle = '#ffd84a'; x.beginPath(); x.moveTo(-r0 * .1, -r0 * .8); x.lineTo(r0 * .12, -r0 * .5); x.lineTo(-r0 * .05, -r0 * .5); x.lineTo(r0 * .1, -r0 * .25); x.lineTo(-r0 * .25, -r0 * .58); x.lineTo(-r0 * .05, -r0 * .58); x.fill(); }
+    else if (it === 'ball') { const g = x.createRadialGradient(-r0 * .2, -r0 * .2, r0 * .1, 0, 0, r0 * .7); g.addColorStop(0, '#ffffff'); g.addColorStop(1, '#bcd9f2'); x.fillStyle = g; x.beginPath(); x.arc(0, 0, r0 * .66, 0, 7); x.fill(); }
+    else if (it === 'scholle') { x.fillStyle = '#bfe6ff'; x.beginPath(); x.moveTo(-r0 * .8, r0 * .1); x.lineTo(-r0 * .3, -r0 * .45); x.lineTo(r0 * .5, -r0 * .4); x.lineTo(r0 * .8, r0 * .15); x.lineTo(r0 * .2, r0 * .5); x.lineTo(-r0 * .5, r0 * .45); x.fill(); x.fillStyle = '#ffffff'; x.beginPath(); x.moveTo(-r0 * .5, 0); x.lineTo(-r0 * .2, -r0 * .3); x.lineTo(r0 * .3, -r0 * .25); x.lineTo(r0 * .1, r0 * .05); x.fill(); }
+    else if (it === 'blase') { x.strokeStyle = '#7fd0ff'; x.lineWidth = r0 * .14; x.beginPath(); x.arc(0, 0, r0 * .62, 0, 7); x.stroke(); x.fillStyle = 'rgba(127,208,255,.3)'; x.fill(); x.fillStyle = '#fff'; x.beginPath(); x.arc(-r0 * .25, -r0 * .25, r0 * .13, 0, 7); x.fill(); }
+    else if (it === 'stern') { x.fillStyle = '#ffd84a'; x.beginPath(); for (let i = 0; i < 10; i++) { const a = i / 10 * Math.PI * 2 - Math.PI / 2, rr = i % 2 ? r0 * .36 : r0 * .82; x.lineTo(Math.cos(a) * rr, Math.sin(a) * rr); } x.fill(); x.fillStyle = '#fff7c9'; x.beginPath(); x.arc(-r0 * .12, -r0 * .12, r0 * .16, 0, 7); x.fill(); }
+    x.restore();
+  }
+
+  function kartBild(K, cx, cy, k, lenkung) {
+    x.save(); x.translate(cx, cy); x.scale(k, k);
+    x.fillStyle = 'rgba(0,0,0,.3)'; x.beginPath(); x.ellipse(0, 4, 118, 16, 0, 0, 7); x.fill();
+    if (K.spin > 0) { x.translate(0, -50); x.rotate((1.1 - K.spin) * 11); x.translate(0, 50); } else x.rotate((lenkung || 0) * .07);
+    if (K.boost > 0) { const fl = 40 + Math.random() * 30; x.fillStyle = '#ff9d2e'; [-52, 52].forEach(ox => { x.beginPath(); x.moveTo(ox - 13, -16); x.lineTo(ox, -16 + fl); x.lineTo(ox + 13, -16); x.fill(); }); x.fillStyle = '#ffe680'; [-52, 52].forEach(ox => { x.beginPath(); x.moveTo(ox - 6, -16); x.lineTo(ox, -16 + fl * .6); x.lineTo(ox + 6, -16); x.fill(); }); }
+    x.fillStyle = '#20242c'; [[-108, -46], [74, -46]].forEach(([wx, wy]) => { x.beginPath(); x.roundRect ? x.roundRect(wx, wy, 34, 50, 9) : x.rect(wx, wy, 34, 50); x.fill(); });
+    const g = x.createLinearGradient(0, -74, 0, 0); g.addColorStop(0, K.f.col); g.addColorStop(1, grMix(K.f.col.length === 7 ? K.f.col : '#888888', '#000000', .35)); x.fillStyle = g;
+    x.beginPath(); x.moveTo(-84, -4); x.lineTo(-76, -56); x.quadraticCurveTo(0, -74, 76, -56); x.lineTo(84, -4); x.closePath(); x.fill();
+    x.fillStyle = 'rgba(255,255,255,.85)'; x.fillRect(-46, -36, 92, 9); x.fillStyle = '#3a4250'; x.fillRect(-58, -70, 116, 9);
+
+    const a = K.f.art, kf = K.f.kopf; x.fillStyle = kf;
+    if (a === 'fuchs') { x.beginPath(); x.moveTo(-34, -128); x.lineTo(-40, -172); x.lineTo(-10, -146); x.fill(); x.beginPath(); x.moveTo(34, -128); x.lineTo(40, -172); x.lineTo(10, -146); x.fill(); }
+    if (a === 'baer' || a === 'robbe') { const rr = a === 'baer' ? 13 : 0; if (rr) { x.beginPath(); x.arc(-30, -150, rr, 0, 7); x.arc(30, -150, rr, 0, 7); x.fill(); } }
+    if (a === 'hase') { x.beginPath(); x.ellipse(-16, -176, 9, 32, -.15, 0, 7); x.ellipse(16, -176, 9, 32, .15, 0, 7); x.fill(); x.fillStyle = '#ffb0d2'; x.beginPath(); x.ellipse(-16, -176, 4, 22, -.15, 0, 7); x.ellipse(16, -176, 4, 22, .15, 0, 7); x.fill(); x.fillStyle = kf; }
+    if (a === 'frosch') { x.beginPath(); x.arc(-22, -152, 14, 0, 7); x.arc(22, -152, 14, 0, 7); x.fill(); }
+    x.beginPath(); x.ellipse(0, -92, 36, 30, 0, 0, 7); x.fill(); x.beginPath(); x.arc(0, -122, 34, 0, 7); x.fill();
+    if (a === 'pinguin') { x.fillStyle = '#e0453a'; x.beginPath(); x.ellipse(0, -96, 36, 9, 0, 0, 7); x.fill(); const fl = Math.sin(tAll * 9) * 5; x.beginPath(); x.moveTo(18, -98); x.quadraticCurveTo(44 + fl, -104, 56 + fl * 2, -120); x.lineTo(63 + fl * 2, -112); x.quadraticCurveTo(46, -94, 22, -90); x.fill(); }
+    else { x.fillStyle = K.f.col; x.beginPath(); x.ellipse(0, -94, 37, 8, 0, 0, 7); x.fill(); }
+    x.fillStyle = 'rgba(255,255,255,.14)'; x.beginPath(); x.arc(-10, -132, 14, 0, 7); x.fill();
+    if (K.schild > 0) { x.strokeStyle = 'rgba(127,208,255,.9)'; x.lineWidth = 6; x.fillStyle = 'rgba(127,208,255,.22)'; x.beginPath(); x.ellipse(0, -80, 120, 104, 0, 0, 7); x.fill(); x.stroke(); }
+    if (K.stern > 0) { x.globalCompositeOperation = 'lighter'; x.fillStyle = `hsla(${(tAll * 500) % 360},95%,62%,.38)`; x.beginPath(); x.ellipse(0, -76, 124, 106, 0, 0, 7); x.fill(); x.globalCompositeOperation = 'source-over'; }
+    x.restore();
+  }
+  function deko(sp, bx, by, h) {
+    x.save(); x.translate(bx, by); const k = sp.k;
+    if (k === 'palme') grPalme(x, 0, 0, h, Math.sin(tAll * 1.4 + sp.ph) * .5, !!T.nacht);
+    else if (k === 'fels') { x.fillStyle = T.id === 'vulkan' ? '#5a4a46' : '#8c7b6b'; x.beginPath(); x.moveTo(-h * .7, 0); x.lineTo(-h * .5, -h * .7); x.lineTo(h * .1, -h); x.lineTo(h * .6, -h * .5); x.lineTo(h * .7, 0); x.fill(); x.fillStyle = 'rgba(0,0,0,.18)'; x.beginPath(); x.moveTo(h * .1, -h); x.lineTo(h * .6, -h * .5); x.lineTo(h * .7, 0); x.lineTo(h * .1, 0); x.fill(); }
+    else if (k === 'schirm') { x.fillStyle = '#8a6a48'; x.fillRect(-h * .02, -h, h * .04, h); x.fillStyle = '#e2483a'; x.beginPath(); x.arc(0, -h * .82, h * .5, Math.PI, 0); x.fill(); x.fillStyle = '#ffffff'; x.beginPath(); x.moveTo(-h * .17, -h * .82); x.arc(0, -h * .82, h * .5, Math.PI * 1.33, Math.PI * 1.67); x.lineTo(h * .17, -h * .82); x.fill(); }
+    else if (k === 'tanne') { x.fillStyle = '#6b4a2e'; x.fillRect(-h * .04, -h * .2, h * .08, h * .2); [0, 1, 2].forEach(i => { x.fillStyle = '#1f7a45'; x.beginPath(); x.moveTo(-h * (.34 - i * .08), -h * (.18 + i * .25)); x.lineTo(0, -h * (.55 + i * .22)); x.lineTo(h * (.34 - i * .08), -h * (.18 + i * .25)); x.fill(); x.fillStyle = '#ffffff'; x.beginPath(); x.moveTo(-h * (.14 - i * .03), -h * (.4 + i * .23)); x.lineTo(0, -h * (.55 + i * .22)); x.lineTo(h * (.14 - i * .03), -h * (.4 + i * .23)); x.fill(); }); }
+    else if (k === 'schneemann') { x.fillStyle = '#ffffff'; x.beginPath(); x.arc(0, -h * .28, h * .28, 0, 7); x.arc(0, -h * .68, h * .2, 0, 7); x.fill(); x.fillStyle = '#1d2b45'; x.fillRect(-h * .14, -h * .9, h * .28, h * .05); x.fillRect(-h * .09, -h * 1.02, h * .18, h * .14); x.fillStyle = '#ff9d2e'; x.beginPath(); x.moveTo(0, -h * .7); x.lineTo(h * .16, -h * .66); x.lineTo(0, -h * .64); x.fill(); }
+    else if (k === 'eisberg') { x.fillStyle = '#d6efff'; x.beginPath(); x.moveTo(-h * .6, 0); x.lineTo(-h * .2, -h); x.lineTo(h * .15, -h * .6); x.lineTo(h * .4, -h * .8); x.lineTo(h * .6, 0); x.fill(); x.fillStyle = '#a9d6f5'; x.beginPath(); x.moveTo(h * .15, -h * .6); x.lineTo(h * .4, -h * .8); x.lineTo(h * .6, 0); x.lineTo(h * .1, 0); x.fill(); }
+    else if (k === 'glut') { const gl = x.createRadialGradient(0, -h * .2, 1, 0, -h * .2, h * .7); gl.addColorStop(0, 'rgba(255,170,60,.95)'); gl.addColorStop(1, 'rgba(255,90,30,0)'); x.fillStyle = gl; x.beginPath(); x.arc(0, -h * .2, h * .7, 0, 7); x.fill(); x.fillStyle = '#3a2a28'; x.beginPath(); x.ellipse(0, 0, h * .5, h * .14, 0, 0, 7); x.fill(); x.fillStyle = '#ffb347'; x.beginPath(); x.ellipse(0, -h * .03, h * .3, h * .07, 0, 0, 7); x.fill(); }
+    else if (k === 'busch') { x.fillStyle = T.nacht ? '#144a28' : T.id === 'vulkan' ? '#5a6a3a' : '#2f9a48'; x.beginPath(); x.arc(-h * .3, -h * .3, h * .32, 0, 7); x.arc(h * .05, -h * .45, h * .4, 0, 7); x.arc(h * .4, -h * .28, h * .3, 0, 7); x.fill(); }
+    else if (k === 'schaf') { x.fillStyle = '#20242c'; x.fillRect(-h * .28, -h * .3, h * .08, h * .3); x.fillRect(h * .18, -h * .3, h * .08, h * .3); x.fillStyle = T.nacht ? '#c9d2e3' : '#ffffff'; x.beginPath(); x.ellipse(0, -h * .5, h * .46, h * .3, 0, 0, 7); x.fill(); x.fillStyle = '#20242c'; x.beginPath(); x.ellipse(h * .42, -h * .62, h * .14, h * .17, 0, 0, 7); x.fill(); }
+    else if (k === 'zaun') { x.fillStyle = '#8a6a48'; [-.5, 0, .5].forEach(o => x.fillRect(h * o - h * .04, -h * .7, h * .08, h * .7)); x.fillRect(-h * .6, -h * .6, h * 1.2, h * .08); x.fillRect(-h * .6, -h * .32, h * 1.2, h * .08); }
+    else if (k === 'turm') { x.fillStyle = '#f4f6fa'; x.beginPath(); x.moveTo(-h * .13, 0); x.lineTo(-h * .09, -h * .8); x.lineTo(h * .09, -h * .8); x.lineTo(h * .13, 0); x.fill(); x.fillStyle = '#e2483a'; x.fillRect(-h * .115, -h * .3, h * .23, h * .12); x.fillRect(-h * .1, -h * .62, h * .2, h * .12); x.fillStyle = '#20242c'; x.fillRect(-h * .12, -h * .86, h * .24, h * .06); x.fillStyle = '#ffe680'; x.fillRect(-h * .07, -h * .96, h * .14, h * .1); x.fillStyle = '#e2483a'; x.beginPath(); x.moveTo(-h * .1, -h * .96); x.lineTo(0, -h * 1.06); x.lineTo(h * .1, -h * .96); x.fill();
+      const a = tAll * 1.3 + sp.ph, br = Math.cos(a); x.globalCompositeOperation = 'lighter'; x.fillStyle = `rgba(255,236,150,${(.1 + Math.abs(br) * .22).toFixed(3)})`; x.beginPath(); x.moveTo(0, -h * .91); x.lineTo(br * h * 1.6, -h * 1.15); x.lineTo(br * h * 1.6, -h * .7); x.fill(); x.globalCompositeOperation = 'source-over'; }
+    x.restore();
+  }
+  const DEKO_H = { palme: 1900, fels: 800, schirm: 900, tanne: 1700, schneemann: 800, eisberg: 1300, glut: 700, busch: 600, schaf: 520, zaun: 500, turm: 3000 };
+  function ding(o, bx, by, sc) {
+    if (o.t > 0) return; const h = (o.k === 'box' ? 420 : o.k === 'fisch' ? 300 : 300) * sc; if (h < 1.5) return;
+    if (o.k === 'box') { const bob = Math.sin(tAll * 4 + o.x * 5) * h * .08, cy = by - h * .75 + bob; x.save(); x.translate(bx, cy); x.rotate(Math.sin(tAll * 2 + o.x) * .15); x.fillStyle = `hsl(${(tAll * 90 + o.x * 120) % 360},85%,62%)`; x.beginPath(); x.roundRect ? x.roundRect(-h * .42, -h * .42, h * .84, h * .84, h * .14) : x.rect(-h * .42, -h * .42, h * .84, h * .84); x.fill(); x.fillStyle = 'rgba(255,255,255,.9)'; x.font = `900 ${h * .6}px system-ui,sans-serif`; x.textAlign = 'center'; x.fillText('?', 0, h * .21); x.restore(); }
+    else if (o.k === 'fisch') { x.fillStyle = '#4fb3e8'; x.beginPath(); x.ellipse(bx, by - h * .6, h * .45, h * .24, 0, 0, 7); x.fill(); x.beginPath(); x.moveTo(bx + h * .3, by - h * .6); x.lineTo(bx + h * .65, by - h * .85); x.lineTo(bx + h * .65, by - h * .35); x.fill(); }
+    else { x.fillStyle = T.id === 'vulkan' ? 'rgba(255,140,50,.85)' : 'rgba(90,170,230,.85)'; x.beginPath(); x.ellipse(bx, by - h * .05, h * 1.1, h * .22, 0, 0, 7); x.fill(); x.fillStyle = 'rgba(255,255,255,.5)'; x.beginPath(); x.ellipse(bx - h * .3, by - h * .08, h * .35, h * .06, 0, 0, 7); x.fill(); }
+  }
+  function zeichne() {
+    const camZ = P.dist - PZ, basis = segAt(camZ), pc = ((camZ % SEG) + SEG) % SEG / SEG, sP = segAt(P.dist), pcP = ((P.dist % SEG) + SEG) % SEG / SEG, camY = CAMH + grLerp(sP.y, sP.y2, pcP), camX = P.x * RW;
+    const sk = x.createLinearGradient(0, 0, 0, H * .62); sk.addColorStop(0, T.sky[0]); sk.addColorStop(1, T.sky[1]); x.fillStyle = sk; x.fillRect(0, 0, W, H);
+    if (T.nacht) { x.fillStyle = '#fff'; for (let i = 0; i < 46; i++) x.fillRect((i * 197.3 + i * i * 31.7) % W, (i * i * 53.7 + i * 11) % (H * .42), 1.6, 1.6); x.fillStyle = '#ffe9a3'; x.beginPath(); x.arc(W * .8, H * .14, 16, 0, 7); x.fill(); } else if (T.id !== 'vulkan') { x.fillStyle = 'rgba(255,255,255,.9)'; x.beginPath(); x.arc(W * .82, H * .13, 20, 0, 7); x.fill(); }
+    const hor = H / 2 - (camD / (DRAW * SEG)) * (sP.y - camY) * H / 2, bg = ((P.fx || 0) % W + W) % W; x.drawImage(fern, -bg, hor - H * .5 + 2); x.fillStyle = T.boden[0]; x.fillRect(0, hor, W, H - hor);
+    let maxy = H, xoff = 0, dx = -basis.curve * pc; const liste = [];
+    for (let n = 0; n < DRAW; n++) {
+      const s = seg[(basis.i + n) % N], z1 = n * SEG - pc * SEG, z2 = z1 + SEG; s.f = frame; s.clip = maxy;
+      const p1 = proj(-camX - xoff, s.y, Math.max(z1, 1), camY), p2 = proj(-camX - xoff - dx, s.y2, z2, camY); xoff += dx; dx += s.curve; s.p1 = p1; s.p2 = p2; liste.push(s);
+      if (z1 <= camD * 40 || p2.y >= maxy || p2.y >= p1.y) continue;
+      const hell = Math.floor(s.i / 3) % 2, nebel = n / DRAW;
+      x.fillStyle = T.boden[hell]; x.fillRect(0, p2.y, W, p1.y - p2.y + 1);
+      quad(p1.x, p1.y + .8, p1.w * 1.14, p2.x, p2.y, p2.w * 1.14, T.rand[hell]); quad(p1.x, p1.y + .8, p1.w, p2.x, p2.y, p2.w, s.i < 3 ? (hell ? '#ffffff' : '#20242c') : T.str[hell]);
+      if (hell && s.i >= 3) { quad(p1.x - p1.w * .33, p1.y, p1.w * .012, p2.x - p2.w * .33, p2.y, p2.w * .012, 'rgba(255,255,255,.55)'); quad(p1.x + p1.w * .33, p1.y, p1.w * .012, p2.x + p2.w * .33, p2.y, p2.w * .012, 'rgba(255,255,255,.55)'); }
+      if (s.pad !== null) { quad(p1.x + s.pad * p1.w, p1.y, p1.w * .26, p2.x + s.pad * p2.w, p2.y, p2.w * .26, '#ffd84a'); quad(p1.x + s.pad * p1.w, p1.y, p1.w * .14, p2.x + s.pad * p2.w, p2.y, p2.w * .02, '#ff9d2e'); }
+      if (nebel > .6) { x.fillStyle = T.sky[1]; x.globalAlpha = (nebel - .6) * 1.6; x.fillRect(0, p2.y, W, p1.y - p2.y + 1); x.globalAlpha = 1; }
+      maxy = p2.y;
+    }
+
+    const korb = new Map(), leg = (d, e) => { const s = segAt(d); if (s.f !== frame) return; if (!korb.has(s.i)) korb.set(s.i, []); korb.get(s.i).push(e); };
+    karts.forEach(k => { if (k !== P && rel(k.dist, P.dist) > -PZ * .55) leg(k.dist, { a: 'kart', k, d: k.dist }); }); baelle.forEach(q => leg(q.d, { a: 'ball', q, d: q.d })); fallen.forEach(q => leg(q.d, { a: 'falle', q, d: q.d }));
+    for (let n = liste.length - 1; n >= 0; n--) {
+      const s = liste[n], p1 = s.p1; if (n < 2) continue; x.save(); x.beginPath(); x.rect(0, 0, W, s.clip); x.clip();
+      const sc = p1.w / RW;
+      for (const sp of s.sp) { const h = DEKO_H[sp.k] * sc; if (h > 2) deko(sp, p1.x + sp.off * p1.w, p1.y, h); }
+      for (const o of s.ob) ding(o, p1.x + o.x * p1.w, p1.y, sc);
+      const L = korb.get(s.i); if (L) for (const e of L) { const f = ((e.d % SEG) + SEG) % SEG / SEG, px = grLerp(s.p1.x, s.p2.x, f), py = grLerp(s.p1.y, s.p2.y, f), pw = grLerp(s.p1.w, s.p2.w, f);
+        if (e.a === 'kart') { kartBild(e.k, px + e.k.x * pw, py, pw / RW * 2.6, 0); if (pw > 26 && pw < 400) { x.fillStyle = 'rgba(10,20,50,.6)'; x.font = `800 ${Math.max(9, Math.min(15, pw * .05))}px system-ui,sans-serif`; x.textAlign = 'center'; x.fillText(e.k.f.n, px + e.k.x * pw, py - pw / RW * 560); } }
+        else if (e.a === 'ball') extraBild('ball', px + e.q.x * pw, py - pw / RW * 220, pw / RW * 260); else extraBild('scholle', px + e.q.x * pw, py - pw / RW * 60, pw / RW * 420); }
+      x.restore();
+    }
+    const kk = Math.min(W * .3, H * .4) / 200, ky = H - 16 - Math.abs(Math.sin(tAll * 24)) * (P.v > 1000 ? 1.5 : 0) + (shake > 0 ? Math.sin(tAll * 60) * 4 : 0); kartBild(P, W / 2, ky, kk, steer); parts.draw(x);
+    if (P.boost > 0) { x.strokeStyle = 'rgba(255,255,255,.5)'; x.lineWidth = 2; for (let i = 0; i < 10; i++) { const a = (i * 2.4 + tAll * 3) % 6.28, r1 = H * (.3 + ((i * 37 + frame * 7) % 40) / 100); x.beginPath(); x.moveTo(W / 2 + Math.cos(a) * r1, H * .55 + Math.sin(a) * r1 * .7); x.lineTo(W / 2 + Math.cos(a) * r1 * 1.25, H * .55 + Math.sin(a) * r1 * .88); x.stroke(); } }
+  }
+  function anzeige() {
+    x.textAlign = 'center';
+    if (phase === 'wahl') {
+      const sk = x.createLinearGradient(0, 0, 0, H); sk.addColorStop(0, '#2f8fe0'); sk.addColorStop(1, '#bfe6ff'); x.fillStyle = sk; x.fillRect(0, 0, W, H);
+      x.fillStyle = '#fff'; x.font = `900 ${Math.min(40, W * .08)}px system-ui,sans-serif`; x.fillText('Kart-Pokal', W / 2, H * .13); x.font = `700 ${Math.min(17, W * .038)}px system-ui,sans-serif`; x.fillText('Wähle eine Strecke. Platz 1 bis 3 schaltet die nächste frei.', W / 2, H * .13 + 30);
+      const st = lkStand();
+      LK_STRECKEN.forEach((S2, i) => { const [kx, ky, kw, kh] = karte(i), ok = frei(i); x.fillStyle = 'rgba(10,20,50,.25)'; x.beginPath(); x.roundRect ? x.roundRect(kx, ky + 5, kw, kh, 16) : x.rect(kx, ky + 5, kw, kh); x.fill();
+        const g = x.createLinearGradient(0, ky, 0, ky + kh); g.addColorStop(0, S2.sky[0]); g.addColorStop(.55, S2.sky[1]); g.addColorStop(.56, S2.boden[0]); g.addColorStop(1, S2.boden[1]); x.fillStyle = g; x.beginPath(); x.roundRect ? x.roundRect(kx, ky, kw, kh, 16) : x.rect(kx, ky, kw, kh); x.fill();
+        x.fillStyle = S2.str[0]; x.beginPath(); x.moveTo(kx + kw * .46, ky + kh * .56); x.lineTo(kx + kw * .54, ky + kh * .56); x.lineTo(kx + kw * .8, ky + kh); x.lineTo(kx + kw * .2, ky + kh); x.fill();
+        x.fillStyle = 'rgba(10,20,50,.62)'; x.beginPath(); x.roundRect ? x.roundRect(kx, ky, kw, 34, [16, 16, 0, 0]) : x.rect(kx, ky, kw, 34); x.fill(); x.fillStyle = '#fff'; x.font = `800 ${Math.min(16, kw * .085)}px system-ui,sans-serif`; x.fillText(S2.n, kx + kw / 2, ky + 22);
+        for (let s3 = 0; s3 < 3; s3++) { x.fillStyle = (st.st[S2.id] || 0) > s3 ? '#ffd84a' : 'rgba(255,255,255,.4)'; x.beginPath(); for (let q = 0; q < 10; q++) { const a = q / 10 * Math.PI * 2 - Math.PI / 2, rr = q % 2 ? 5 : 12; x.lineTo(kx + kw / 2 + (s3 - 1) * 30 + Math.cos(a) * rr, ky + 54 + Math.sin(a) * rr); } x.fill(); }
+        if ((st.sieg[S2.id] || 0) > 0 && ok) { x.fillStyle = '#fff'; x.font = '800 12px system-ui,sans-serif'; x.fillText('Stufe ' + (Math.min(2, st.sieg[S2.id]) + 1), kx + kw / 2, ky + kh - 10); }
+        if (!ok) { x.fillStyle = 'rgba(10,20,50,.6)'; x.beginPath(); x.roundRect ? x.roundRect(kx, ky, kw, kh, 16) : x.rect(kx, ky, kw, kh); x.fill(); x.fillStyle = '#ffd84a'; x.fillRect(kx + kw / 2 - 15, ky + kh / 2 - 4, 30, 24); x.strokeStyle = '#c3cddd'; x.lineWidth = 5; x.beginPath(); x.arc(kx + kw / 2, ky + kh / 2 - 4, 9, Math.PI, 0); x.stroke(); } });
+      if (meldT > 0) { x.fillStyle = '#fff'; x.font = `800 ${Math.min(16, W * .036)}px system-ui,sans-serif`; x.fillText(meld, W / 2, H - 18); }
+      return;
+    }
+
+    const pl = platz(P); x.lineWidth = 6; x.strokeStyle = 'rgba(10,20,50,.7)'; x.fillStyle = pl === 1 ? '#ffd84a' : '#fff'; x.font = `900 ${Math.min(64, W * .13)}px system-ui,sans-serif`; x.textAlign = 'left'; x.strokeText(pl + '.', 14, H - 20); x.fillText(pl + '.', 14, H - 20);
+    x.font = `800 ${Math.min(18, W * .04)}px system-ui,sans-serif`; x.lineWidth = 4; const rt = `Runde ${Math.min(LK_RUNDEN, P.lap + 1)}/${LK_RUNDEN}`; x.strokeText(rt, 16, 26); x.fillStyle = '#fff'; x.fillText(rt, 16, 26);
+    const bw = Math.min(W * .5, 320), bx = W - bw - 16; x.fillStyle = 'rgba(10,20,50,.5)'; x.fillRect(bx, 16, bw, 6); karts.slice().sort((a, b) => (a.ich ? 1 : 0) - (b.ich ? 1 : 0)).forEach(k => { const f = (((k.dist % TRACK) + TRACK) % TRACK) / TRACK; x.fillStyle = k.f.col; x.strokeStyle = '#fff'; x.lineWidth = k.ich ? 3 : 1.5; x.beginPath(); x.arc(bx + f * bw, 19, k.ich ? 8 : 5.5, 0, 7); x.fill(); x.stroke(); });
+
+    x.fillStyle = P.item ? 'rgba(255,255,255,.92)' : 'rgba(255,255,255,.35)'; x.strokeStyle = P.item ? '#ffd84a' : 'rgba(255,255,255,.6)'; x.lineWidth = 5; x.beginPath(); x.arc(KN.x, KN.y, KN.r, 0, 7); x.fill(); x.stroke();
+    if (P.item) extraBild(roul > 0 ? Object.keys(LK_EXTRA)[Math.floor(tAll * 14) % 5] : P.item, KN.x, KN.y, KN.r * .8); else { x.fillStyle = 'rgba(10,20,50,.4)'; x.font = '900 30px system-ui,sans-serif'; x.textAlign = 'center'; x.fillText('?', KN.x, KN.y + 11); }
+    x.textAlign = 'center';
+    if (phase === 'count') { const n = 3 - Math.floor(tPh); x.fillStyle = 'rgba(10,20,50,.5)'; x.beginPath(); x.roundRect ? x.roundRect(W / 2 - 90, H * .2 - 34, 180, 68, 16) : x.rect(W / 2 - 90, H * .2 - 34, 180, 68); x.fill(); [0, 1, 2].forEach(i => { x.fillStyle = tPh > i + .2 ? (tPh >= 3 ? '#5cc85c' : '#ef4b4b') : '#3a4250'; x.beginPath(); x.arc(W / 2 - 50 + i * 50, H * .2, 18, 0, 7); x.fill(); });
+      x.fillStyle = '#fff'; x.font = `800 ${Math.min(17, W * .038)}px system-ui,sans-serif`; x.fillText(n > 0 ? 'Links oder rechts tippen und halten zum Lenken' : 'Los!', W / 2, H * .2 + 62); x.fillText('Der runde Knopf setzt dein Extra ein', W / 2, H * .2 + 86); }
+    if (meldT > 0) { x.font = `900 ${Math.min(44, W * .09)}px system-ui,sans-serif`; x.lineWidth = 6; x.strokeStyle = 'rgba(10,20,50,.75)'; x.strokeText(meld, W / 2, H * .36); x.fillStyle = '#fff'; x.fillText(meld, W / 2, H * .36); }
+  }
+  funLoop(dt => {
+    tAll += dt; frame++; if (meldT > 0) meldT -= dt; if (shake > 0) shake -= dt; parts.step(dt);
+    if (phase !== 'wahl') { const n = Math.max(1, Math.round(tempo)); for (let i = 0; i < n; i++) schritt(dt); P.fx = (P.fx || 0) + segAt(P.dist).curve * Math.min(1.15, P.v / MAXV) * dt * 60 * (tempo || 1); zeichne(); }
+    anzeige();
+  });
+  hud();
+  FUN.dbg = { get phase() { return phase; }, get P() { return P; }, get karts() { return karts; }, get T() { return T; }, get TRACK() { return TRACK; }, get level() { return level; }, get baelle() { return baelle; }, get fallen() { return fallen; }, keys, platz: () => platz(P), waehle: i => { if (frei(i)) baue(i); return phase; }, frei, nutze: () => nutze(P), gib: it => { P.item = it; roul = 0; }, set tempo(v) { tempo = v; }, set auto(v) { auto = v; }, karte };
+}
+if (typeof FUN_GAMES !== 'undefined') Object.assign(FUN_GAMES, { kartpokal: { c: 'abenteuer', t: 'Kart-Pokal', d: 'Rennen gegen fünf Tiere: drei Runden, Extras aus Kisten, vier Strecken', i: '🏁' } });
+if (typeof FUN_IMPL !== 'undefined') Object.assign(FUN_IMPL, { kartpokal: lkKart });
 
 /*@@src lumi_live.js@@*/
 
