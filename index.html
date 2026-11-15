@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-lCDvTkRcbjfJebqvNIhZNRJEPAEL/S8teYa/sPmnzsY=' 'sha256-dSvgVtYW+BW6snQFUH2HppP+EFYyXEswaykjPFz18Ys=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-FiLF6hCNp0vMzaqXWC7vSAZ2637yfdfEeDxnR83Fqlw=' 'sha256-yRfgsjENy+IGydceMhtdfRR5Y9BsQJgHKooN9qEX61M=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -896,7 +896,7 @@ textarea.input { height: 110px; padding: 12px 14px; font-size: 14px; font-family
 @media (max-width: 480px) {
   .specials { gap: 8px; }
   .spec { padding: 10px; gap: 8px; }
-  .tile .art { display: none; }
+  .tile .art { display: block; position: absolute; right: 10px; top: auto; bottom: 36px; width: 46px; opacity: .95; }   
   .tile h3 { padding-right: 0; font-size: 20px; }
   .spec .si { width: 38px; height: 38px; font-size: 21px; }
   .spec b { font-size: 15px; }
@@ -9233,8 +9233,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '2.93.0';
-  var MAP = {"probe":0,"files":[[9223,"fehler_kern.js"],[9511,null],[9513,"data.js"],[10228,"data_more.js"],[10600,"data_su2.js"],[10827,"data_es.js"],[11195,"data_wissen.js"],[11396,"data_v21.js"],[12081,"data_v24.js"],[12569,"data_v25.js"],[13050,"data_v26.js"],[13149,"data_v29.js"],[13457,"data_v30.js"],[13791,"data_v31.js"],[14097,"data_kunst.js"],[14293,"data_v214.js"],[14396,"data_v216.js"],[14689,"schrift.js"],[14989,"eingabe.js"],[15200,"data_k34m.js"],[15718,"data_k34d.js"],[16072,"data_k34s.js"],[16526,"data_v224.js"],[17399,"data_v225w.js"],[17768,"data_v225k.js"],[18212,"data_herz.js"],[18566,"data_fb226.js"],[18709,"data_tf226.js"],[18916,"data_v227a.js"],[20016,"data_v227b.js"],[20970,"data_h28b.js"],[21010,"data_l28a.js"],[21876,"data_l28b.js"],[23056,"data_schaetz.js"],[23538,"data_party8.js"],[23588,"data_alce.js"],[24259,"data_alce2.js"],[24508,"data_alce3.js"],[24923,"registry.js"],[25437,"app.js"],[26643,"fun.js"],[27223,"fun2.js"],[27539,"atelier.js"],[27913,"kunst225.js"],[28103,"herz.js"],[28467,"reise.js"],[28769,"iglu.js"],[28935,"offline.js"],[29042,"party.js"],[29526,"meine.js"],[29882,"loeffel.js"],[30053,"trend.js"],[30595,"fun228a.js"],[31446,"fun228b.js"],[32107,"kueche.js"],[33146,"stimme.js"],[33201,"klassen.js"],[33350,"freunde_vorab.js"],[33371,"mut.js"],[33793,"schule.js"],[34282,"fussball226.js"],[34604,"schaetzen.js"],[35035,"party8.js"],[35654,"tiere.js"],[36113,"fussball232.js"],[36328,"party8b.js"],[36630,"weg.js"],[36851,"px.js"],[37270,"px_fein.js"],[37324,"px_data.js"],[37581,"pxwelt.js"],[37664,"px_abenteuer.js"],[38480,"px_abenteuer2.js"],[39232,"px_abenteuer3.js"],[39623,"px_abenteuer4.js"],[39833,"px_baukasten.js"],[39941,"px_abenteuer_fein.js"],[40157,"px_abenteuer_fein2.js"],[40509,"px_ski.js"],[41151,"px_wurf.js"],[41680,"px_insel.js"],[42881,"px_kicker.js"],[43816,"px_eis.js"],[44802,"px_run.js"],[46017,"px_brk.js"],[46979,"px_pol.js"],[48330,"px_frog.js"],[49590,"px_angel.js"],[50905,"px_golf.js"],[51939,"px_tauch.js"],[53204,"px_hockey.js"],[54160,"px_lab.js"],[55495,"px_plopp.js"],[56701,"px_stadion.js"],[58212,"px_stadion2.js"],[58264,"px_training.js"],[58633,"cm.js"],[59123,"cmwelt.js"],[59179,"cm_baeck.js"],[59972,"cm_bahn.js"],[60736,"cm_detek.js"],[61453,"cm_markt.js"],[62166,"ff.js"],[62323,"ff_mathe.js"],[64313,"ff_deutsch.js"],[65901,"ff_sach_a.js"],[68150,"ff_sach_b.js"],[70379,"ff_sprachen.js"],[72787,"zm.js"],[73700,"tt.js"],[73913,"data_tagebuch.js"],[73956,"data_hoerspiel.js"],[74115,"leseecke.js"],[74434,"kt.js"],[74737,"comicbuch.js"],[75015,"alce.js"],[75178,"alce_aufg.js"],[75348,"formen.js"],[75799,"data_formen.js"],[76040,"data_formen2.js"],[76262,"spielzeit.js"],[76407,"data_faktmeinung.js"],[76526,"data_es248.js"],[76790,"data_en249.js"],[77029,"data_wissen249.js"],[77460,"data_kunst249.js"],[77743,"data_fussball250.js"],[77867,"data_werte252.js"],[78120,"data_lesen252.js"],[78181,"data_k34_252.js"],[78267,"art254.js"],[78385,"data_werte255.js"],[78523,"data_lesen255.js"],[78659,"forscher255.js"],[78807,"zufall250.js"],[78853,"stufe259.js"],[78863,"advent.js"],[79126,"wdh.js"],[79224,"eswarm288.js"],[79275,"bilder293a.js"],[79365,"bilder293b.js"],[79495,"bilder293c.js"],[79593,"bilder293d.js"],[79715,"bilder293e.js"],[79879,"bilder293f.js"],[79959,"bilder292.js"],[80405,"denk.js"],[80442,"data_viaje265.js"],[80585,"klassenarbeit.js"],[80718,"quizduell.js"],[80841,"neu267.js"],[81106,"prog.js"],[81211,"lernstand.js"],[81278,"blatt.js"],[81380,"data_es271.js"],[81494,"plus269.js"],[81588,"schach.js"],[81820,"schachtaktik.js"],[82072,"fun270.js"],[82235,"data_neu274.js"],[82444,"plus272.js"],[82498,"spiele274.js"],[82621,"kasten.js"],[82725,"erklaer.js"],[82838,"apa.js"],[82919,"neu276.js"],[83060,"spiele276.js"],[83110,"neu277.js"],[83288,"spiele277.js"],[83543,"lernen278.js"],[83803,"spiele278.js"],[84146,"lernen279.js"],[84471,"lernen279b.js"],[84869,"spanisch280.js"],[85161,"spanisch283.js"],[85394,"mehr281.js"],[85540,"grafik280.js"],[85911,"tiefsee280.js"],[86189,"abenteuer280.js"],[86401,"abenteuer281.js"],[86513,"design281.js"],[86645,"party281.js"],[86776,"grafik281.js"],[86993,"traumtor292.js"],[87200,"kart293.js"],[87470,"lumi_live.js"],[87586,"sicher.js"],[87770,"stil.js"],[87824,"zurueck287.js"],[87867,"freunde.js"],[88004,"start.js"],[88014,null],[88024,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '2.93.1';
+  var MAP = {"probe":0,"files":[[9223,"fehler_kern.js"],[9511,null],[9513,"data.js"],[10228,"data_more.js"],[10600,"data_su2.js"],[10827,"data_es.js"],[11195,"data_wissen.js"],[11396,"data_v21.js"],[12081,"data_v24.js"],[12569,"data_v25.js"],[13050,"data_v26.js"],[13149,"data_v29.js"],[13457,"data_v30.js"],[13791,"data_v31.js"],[14097,"data_kunst.js"],[14293,"data_v214.js"],[14396,"data_v216.js"],[14689,"schrift.js"],[14989,"eingabe.js"],[15200,"data_k34m.js"],[15718,"data_k34d.js"],[16072,"data_k34s.js"],[16526,"data_v224.js"],[17399,"data_v225w.js"],[17768,"data_v225k.js"],[18212,"data_herz.js"],[18566,"data_fb226.js"],[18709,"data_tf226.js"],[18916,"data_v227a.js"],[20016,"data_v227b.js"],[20970,"data_h28b.js"],[21010,"data_l28a.js"],[21876,"data_l28b.js"],[23056,"data_schaetz.js"],[23538,"data_party8.js"],[23588,"data_alce.js"],[24259,"data_alce2.js"],[24508,"data_alce3.js"],[24923,"registry.js"],[25437,"app.js"],[26644,"fun.js"],[27224,"fun2.js"],[27540,"atelier.js"],[27914,"kunst225.js"],[28104,"herz.js"],[28468,"reise.js"],[28770,"iglu.js"],[28936,"offline.js"],[29043,"party.js"],[29527,"meine.js"],[29883,"loeffel.js"],[30054,"trend.js"],[30596,"fun228a.js"],[31447,"fun228b.js"],[32108,"kueche.js"],[33147,"stimme.js"],[33202,"klassen.js"],[33351,"freunde_vorab.js"],[33372,"mut.js"],[33794,"schule.js"],[34283,"fussball226.js"],[34605,"schaetzen.js"],[35036,"party8.js"],[35655,"tiere.js"],[36114,"fussball232.js"],[36329,"party8b.js"],[36631,"weg.js"],[36852,"px.js"],[37271,"px_fein.js"],[37325,"px_data.js"],[37582,"pxwelt.js"],[37665,"px_abenteuer.js"],[38481,"px_abenteuer2.js"],[39233,"px_abenteuer3.js"],[39624,"px_abenteuer4.js"],[39834,"px_baukasten.js"],[39942,"px_abenteuer_fein.js"],[40158,"px_abenteuer_fein2.js"],[40510,"px_ski.js"],[41152,"px_wurf.js"],[41681,"px_insel.js"],[42882,"px_kicker.js"],[43817,"px_eis.js"],[44803,"px_run.js"],[46018,"px_brk.js"],[46980,"px_pol.js"],[48331,"px_frog.js"],[49591,"px_angel.js"],[50906,"px_golf.js"],[51940,"px_tauch.js"],[53205,"px_hockey.js"],[54161,"px_lab.js"],[55496,"px_plopp.js"],[56702,"px_stadion.js"],[58213,"px_stadion2.js"],[58265,"px_training.js"],[58634,"cm.js"],[59124,"cmwelt.js"],[59180,"cm_baeck.js"],[59973,"cm_bahn.js"],[60737,"cm_detek.js"],[61454,"cm_markt.js"],[62167,"ff.js"],[62324,"ff_mathe.js"],[64314,"ff_deutsch.js"],[65902,"ff_sach_a.js"],[68151,"ff_sach_b.js"],[70380,"ff_sprachen.js"],[72788,"zm.js"],[73701,"tt.js"],[73914,"data_tagebuch.js"],[73957,"data_hoerspiel.js"],[74116,"leseecke.js"],[74435,"kt.js"],[74738,"comicbuch.js"],[75016,"alce.js"],[75179,"alce_aufg.js"],[75349,"formen.js"],[75800,"data_formen.js"],[76041,"data_formen2.js"],[76263,"spielzeit.js"],[76408,"data_faktmeinung.js"],[76527,"data_es248.js"],[76791,"data_en249.js"],[77030,"data_wissen249.js"],[77461,"data_kunst249.js"],[77744,"data_fussball250.js"],[77868,"data_werte252.js"],[78121,"data_lesen252.js"],[78182,"data_k34_252.js"],[78268,"art254.js"],[78386,"data_werte255.js"],[78524,"data_lesen255.js"],[78660,"forscher255.js"],[78808,"zufall250.js"],[78854,"stufe259.js"],[78864,"advent.js"],[79127,"wdh.js"],[79225,"eswarm288.js"],[79276,"bilder293a.js"],[79366,"bilder293b.js"],[79496,"bilder293c.js"],[79594,"bilder293d.js"],[79716,"bilder293e.js"],[79880,"bilder293f.js"],[79960,"bilder292.js"],[80406,"denk.js"],[80443,"data_viaje265.js"],[80586,"klassenarbeit.js"],[80719,"quizduell.js"],[80842,"neu267.js"],[81107,"prog.js"],[81212,"lernstand.js"],[81279,"blatt.js"],[81381,"data_es271.js"],[81495,"plus269.js"],[81589,"schach.js"],[81821,"schachtaktik.js"],[82073,"fun270.js"],[82236,"data_neu274.js"],[82445,"plus272.js"],[82499,"spiele274.js"],[82622,"kasten.js"],[82726,"erklaer.js"],[82839,"apa.js"],[82920,"neu276.js"],[83061,"spiele276.js"],[83111,"neu277.js"],[83289,"spiele277.js"],[83544,"lernen278.js"],[83804,"spiele278.js"],[84147,"lernen279.js"],[84472,"lernen279b.js"],[84870,"spanisch280.js"],[85162,"spanisch283.js"],[85395,"mehr281.js"],[85541,"grafik280.js"],[85912,"tiefsee280.js"],[86190,"abenteuer280.js"],[86402,"abenteuer281.js"],[86514,"design281.js"],[86646,"party281.js"],[86777,"grafik281.js"],[86994,"traumtor292.js"],[87201,"kart293.js"],[87478,"lumi_live.js"],[87594,"sicher.js"],[87778,"stil.js"],[87832,"zurueck287.js"],[87875,"freunde.js"],[88012,"start.js"],[88022,null],[88032,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -25438,9 +25438,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '2.93.0';
+const APP_VERSION = '2.93.1';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "2.93.1", d: "15.11.2026", t: ["Kart-Pokal: Die Tiere fahren deutlich langsamer", "Kart-Pokal: bessere Steuerung. Finger links oder rechts von der Mitte halten, weiter außen lenkt stärker. Extra auch mit beiden Daumen zugleich", "Startseite auf dem Handy: Die Kacheln der Lernwelten zeigen ihr Bild"] },
   { v: "2.93.0", d: "15.11.2026", t: ["Eigene Bildchen für die ganze Lernwelt: über 1100 gezeichnete Bildchen statt rund 360. Alle Welten und Themen-Listen sind umgestellt", "Neu gezeichnet: Menschen und Berufe, Tiere, Länderfahnen, Gesichter, Fahrzeuge, Gebäude, Essen, Kleidung, Werkzeug, Sport und Musik", "In den Aufgaben sind fast alle Bildchen gezeichnet. Wo eins fehlt, bleibt die Aufgabe ganz bei den Emojis", "Neues großes Abenteuer in der Spielhalle: Kart-Pokal. Rennen gegen fünf Tiere über drei Runden, mit Extras aus Kisten und vier Strecken zum Freischalten"] },
   { v: "2.92.0", d: "15.11.2026", t: ["Eigene Bildchen statt Emojis: Rund 360 Symbole sind selbst gezeichnet, in einem einheitlichen Stil. Start, Inseln, Mathe-Welt und viele Aufgaben sind schon umgestellt. Wo noch nicht alle Bildchen gezeichnet sind, bleiben vorerst die Emojis", "Schalter im Elternbereich: „Eigene Bildchen statt Emojis“", "Neues großes Abenteuer in der Spielhalle: Traumtor. Freistöße in glatter Grafik: wischen vom Ball zum Tor, im Bogen wischen gibt eine Kurve um die Mauer. Zehn Level mit Mauer, Wind und Torwart"] },
   { v: "2.91.1", d: "15.11.2026", t: ["Kleine Korrektur bei der Zurück-Geste, keine neuen Inhalte"] },
@@ -87230,7 +87231,8 @@ function lkKart(stage) {
   const { c, x, W, H } = grCanvas(stage, 1.5), parts = grParts();
   const SEG = 200, RW = 2000, CAMH = 1000, DRAW = 150, camD = 1 / Math.tan(50 * Math.PI / 180), PZ = CAMH * camD, MAXV = SEG * 55;
   let T = null, seg = [], N = 0, TRACK = 1, karts = [], P = null, baelle = [], fallen = [], phase = 'wahl', tPh = 0, tAll = 0, frame = 0, fern = null, steer = 0, shake = 0, tempo = 1, auto = false, level = 0, platzEnde = 0, zielN = 0, meld = '', meldT = 0, roul = 0;
-  const keys = { l: false, r: false }, zeiger = new Map(), KN = { x: W - 62, y: H - 62, r: 46 };
+  const keys = { l: false, r: false }, zeiger = new Map(), KN = { x: W - 58, y: Math.round(H * .56), r: 42 };
+  let lenkZiel = 0;
   let zufall = 1; const rnd = () => { zufall = (zufall * 1103515245 + 12345) & 0x7fffffff; return zufall / 0x7fffffff; }, pick = a => a[Math.floor(rnd() * a.length)];
   const segAt = d => seg[Math.floor((((d % TRACK) + TRACK) % TRACK) / SEG) % N];
   const rel = (a, b) => (((a - b) % TRACK) + TRACK * 1.5) % TRACK - TRACK / 2;
@@ -87267,7 +87269,8 @@ function lkKart(stage) {
   const sag = (t, s) => { meld = t; meldT = s || 1.4; };
   const platz = k => 1 + karts.filter(o => o !== k && (o.fertig && (!k.fertig || o.fertig < k.fertig) || !o.fertig && !k.fertig && o.dist > k.dist)).length;
 
-  function ziehe(k) { const pl = platz(k), w = pl === 1 ? ['turbo', 'scholle', 'scholle', 'blase'] : pl >= 5 ? ['turbo', 'ball', 'stern', 'stern', 'blase'] : ['turbo', 'turbo', 'ball', 'ball', 'scholle', 'blase']; k.item = w[Math.floor(Math.random() * w.length)]; k.itemT = 1.5 + Math.random() * 3.5; if (k.ich) { roul = .8; Sound.quick(); } }
+  function ziehe(k) { const pl = platz(k), w = pl === 1 ? ['turbo', 'scholle', 'scholle', 'blase'] : pl >= 5 ? ['turbo', 'ball', 'stern', 'stern', 'blase'] : ['turbo', 'turbo', 'ball', 'ball', 'scholle', 'blase']; k.item = w[Math.floor(Math.random() * w.length)]; if (!k.ich && k.item === 'ball' && Math.random() < .5) k.item = 'turbo';
+    k.itemT = 1.5 + Math.random() * 3.5; if (k.ich) { roul = .8; Sound.quick(); } }
   function nutze(k) {
     const it = k.item; if (!it || k.spin > 0 || (k.ich && roul > 0)) return; k.item = null;
     if (it === 'turbo') k.boost = 1.6; else if (it === 'blase') k.schild = 7; else if (it === 'stern') { k.stern = 4.5; k.boost = 4.5; }
@@ -87277,7 +87280,7 @@ function lkKart(stage) {
   }
   function treffer(k, wer) {
     if (k.stern > 0 || k.fertig) return false; if (k.schild > 0) { k.schild = 0; if (k.ich) { sag('Abgewehrt!', 1); Sound.quick(); } return true; }
-    k.spin = 1.1; k.v *= .45; k.boost = 0; if (k.ich) { Sound.bad(); shake = .4; sag(wer ? wer + ' hat dich erwischt!' : 'Hoppla!', 1.2); } else if (wer === 'du') { sag('Treffer: ' + k.f.n + '!', 1); Sound.good(); } return true;
+    k.spin = k.ich ? .8 : 1.1; k.v *= k.ich ? .6 : .45; k.boost = 0; if (k.ich) { Sound.bad(); shake = .4; sag(wer ? wer + ' hat dich erwischt!' : 'Hoppla!', 1.2); } else if (wer === 'du') { sag('Treffer: ' + k.f.n + '!', 1); Sound.good(); } return true;
   }
 
   function schritt(dt) {
@@ -87285,21 +87288,21 @@ function lkKart(stage) {
     if (roul > 0) roul -= dt;
     const spP = Math.min(1.15, P.v / MAXV);
     for (const k of karts) {
-      const vor = k.dist, s = segAt(k.dist), off = Math.abs(k.x) > 1.08 && k.stern <= 0;
-      let top = MAXV * (k.ich ? 1 + Math.min(10, k.fische) * .004 : .9 + k.skill * .07 + level * .025);
-      if (!k.ich) { const gap = P.dist - k.dist; top *= 1 - Math.min(.12, Math.abs(s.curve) * .02 * (1.2 - k.skill)); if (gap > 600) top *= 1 + Math.min(.09, gap / 30000); else if (gap < -2500) top *= 1 - Math.min(.1, (-gap - 2500) / 25000); }
-      if (k.fertig) top = MAXV * .5; if (k.boost > 0) top *= 1.32; if (off) top *= .55;
+      const vor = k.dist, s = segAt(k.dist), off = Math.abs(k.x) > 1.14 && k.stern <= 0;
+      let top = MAXV * (k.ich ? 1 + Math.min(10, k.fische) * .004 : .8 + k.skill * .08 + level * .035);
+      if (!k.ich) { const gap = P.dist - k.dist; top *= 1 - Math.min(.12, Math.abs(s.curve) * .02 * (1.2 - k.skill)); if (gap > 600) top *= 1 + Math.min(.06, gap / 40000); else if (gap < -1800) top *= 1 - Math.min(.15, (-gap - 1800) / 20000); }
+      if (k.fertig) top = MAXV * .5; if (k.boost > 0) top *= 1.32; if (off) top *= k.ich ? .72 : .6;
       if (k.spin > 0) { k.spin -= dt; k.v *= Math.max(0, 1 - dt * 1.2); } else k.v += (top - k.v) * Math.min(1, dt * (k.boost > 0 ? 3 : k.v > top ? 2.2 : .9));
       ['boost', 'schild', 'stern'].forEach(e => { if (k[e] > 0) k[e] -= dt; });
       k.dist += k.v * dt; const sp = Math.min(1.15, k.v / MAXV);
-      if (k.ich && !auto && !k.fertig) { steer = grLerp(steer, k.spin > 0 ? 0 : keys.l ? -1 : keys.r ? 1 : 0, Math.min(1, dt * 8 * T.grip)); k.x += (steer * 2 - s.curve * sp * .27 / T.grip) * sp * dt; }
+      if (k.ich && !auto && !k.fertig) { steer = grLerp(steer, k.spin > 0 ? 0 : lenkZiel, Math.min(1, dt * 13 * T.grip)); k.x += (steer * 2.2 - s.curve * sp * .13 / T.grip) * Math.max(.35, sp) * dt; }
       else {
         k.lt -= dt; if (k.lt <= 0) { k.lt = 1.5 + Math.random() * 2.5; k.tx = [-.6, -.2, .2, .6][Math.floor(Math.random() * 4)]; }
         for (let a = 2; a < 26; a++) { const z = seg[(s.i + a) % N]; for (const o of z.ob) { if (o.k === 'pfuetze' && a < 12 && Math.abs(o.x - k.tx) < .34 && k.hup !== z.i) { k.hup = z.i; if (Math.random() < .55 + k.skill * .35) k.tx = o.x > 0 ? o.x - .6 : o.x + .6; } if (o.k === 'box' && !k.item && o.t <= 0 && Math.abs(o.x - k.x) < .5) k.tx = o.x; } if (z.pad !== null && a < 14 && Math.abs(z.pad - k.x) < .6) k.tx = z.pad; }
         k.x += Math.max(-1, Math.min(1, (k.tx - k.x) * 3)) * dt * 1.5 * Math.max(.3, sp); if (k.ich) steer = grLerp(steer, Math.max(-1, Math.min(1, (k.tx - k.x) * 3)), Math.min(1, dt * 6));
         if (k.item && !k.fertig) { k.itemT -= dt; const vorn = karts.some(o => o !== k && rel(o.dist, k.dist) > 150 && rel(o.dist, k.dist) < 2600); if (k.itemT <= 0 && (k.item !== 'ball' || vorn || k.itemT < -4)) nutze(k); }
       }
-      k.x = Math.max(-1.9, Math.min(1.9, k.x));
+      k.x = Math.max(-1.5, Math.min(1.5, k.x));
 
       for (let i = Math.floor(vor / SEG) + 1; i <= Math.floor(k.dist / SEG); i++) { const z = seg[((i % N) + N) % N];
         if (z.pad !== null && Math.abs(z.pad - k.x) < .34 && k.boost < .9) { k.boost = 1.1; if (k.ich) Sound.quick(); }
@@ -87315,7 +87318,7 @@ function lkKart(stage) {
     baelle = baelle.filter(q => q.t > 0); fallen = fallen.filter(q => q.t > 0);
     if (frame % 20 === 0) hud();
     if (phase === 'ziel' && tPh > 3.2 && !platzEnde) { platzEnde = 1; FUN.timeouts.push(setTimeout(schluss, 60)); }
-    if (spP > .5 && Math.abs(P.x) > 1.08 && frame % 3 === 0) parts.add(1, () => ({ x: W / 2 + (Math.random() - .5) * W * .16, y: H - 30, vx: (Math.random() - .5) * 90, vy: -60 - Math.random() * 60, g: 240, life: .5, max: .5, r: 3 + Math.random() * 3, c: T.boden[1] }));
+    if (spP > .5 && Math.abs(P.x) > 1.14 && frame % 3 === 0) parts.add(1, () => ({ x: W / 2 + (Math.random() - .5) * W * .16, y: H - 30, vx: (Math.random() - .5) * 90, vy: -60 - Math.random() * 60, g: 240, life: .5, max: .5, r: 3 + Math.random() * 3, c: T.boden[1] }));
   }
   function ende() { phase = 'ziel'; tPh = 0; const pl = P.fertig; sag(pl === 1 ? 'SIEG!' : pl <= 3 ? 'Platz ' + pl + '!' : 'Im Ziel: Platz ' + pl, 3); if (pl <= 3) { Sound.win(); if (typeof confetti === 'function') confetti(pl === 1 ? 80 : 40); } else Sound.good(); }
   function schluss() {
@@ -87328,11 +87331,14 @@ function lkKart(stage) {
   const frei = i => i === 0 || (lkStand().st[LK_STRECKEN[i - 1].id] || 0) > 0;
   const karte = i => { const cols = W > H ? 4 : 2, rows = 4 / cols, kw = Math.min(250, (W - 24 - (cols - 1) * 12) / cols), kh = Math.min(190, (H * .62 - (rows - 1) * 12) / rows), x0 = W / 2 - (cols * kw + (cols - 1) * 12) / 2, y0 = H * .3; return [x0 + (i % cols) * (kw + 12), y0 + Math.floor(i / cols) * (kh + 12), kw, kh]; };
   const imKnopf = (px, py) => Math.hypot(px - KN.x, py - KN.y) < KN.r + 8;
-  const lenk = () => { let l = false, r2 = false; zeiger.forEach(v => { if (v < 0) l = true; else r2 = true; }); keys.l = l || keys.kl; keys.r = r2 || keys.kr; };
+
+  const wert = px => Math.max(-1, Math.min(1, (px - W / 2) / Math.max(60, W * .2)));
+  const lenk = () => { let sum = 0; zeiger.forEach(v => { sum += v; }); lenkZiel = zeiger.size ? Math.max(-1, Math.min(1, sum)) : keys.kl ? -1 : keys.kr ? 1 : 0; keys.l = lenkZiel < -.2; keys.r = lenkZiel > .2; };
   c.addEventListener('pointerdown', e => { e.preventDefault(); const [px, py] = funPos(c, e);
     if (phase === 'wahl') { for (let i = 0; i < 4; i++) { const [kx, ky, kw, kh] = karte(i); if (px >= kx && px <= kx + kw && py >= ky && py <= ky + kh) { if (frei(i)) { Sound.tap(); baue(i); } else { Sound.bad(); sag('Erst auf ' + LK_STRECKEN[i - 1].n + ' unter die ersten drei kommen.', 2); } } } return; }
-    if (imKnopf(px, py)) { nutze(P); return; } zeiger.set(e.pointerId, px < W / 2 ? -1 : 1); lenk(); try { c.setPointerCapture(e.pointerId); } catch (err) { } });
-  c.addEventListener('pointermove', e => { if (!zeiger.has(e.pointerId)) return; const [px] = funPos(c, e); zeiger.set(e.pointerId, px < W / 2 ? -1 : 1); lenk(); });
+    if (imKnopf(px, py)) { nutze(P); return; } const v = wert(px); let gegen = false; zeiger.forEach(o => { if (o * v < 0) gegen = true; }); if (gegen) nutze(P);
+    zeiger.set(e.pointerId, v); lenk(); try { c.setPointerCapture(e.pointerId); } catch (err) { } });
+  c.addEventListener('pointermove', e => { if (!zeiger.has(e.pointerId)) return; const [px] = funPos(c, e); zeiger.set(e.pointerId, wert(px)); lenk(); });
   const hoch = e => { zeiger.delete(e.pointerId); lenk(); }; c.addEventListener('pointerup', hoch); c.addEventListener('pointercancel', hoch);
   FUN.cleanup = grKeys({ ArrowLeft: d => { keys.kl = d; lenk(); }, ArrowRight: d => { keys.kr = d; lenk(); }, ' ': d => { if (d && phase !== 'wahl') nutze(P); }, 1: d => { if (d && phase === 'wahl') baue(0); }, 2: d => { if (d && phase === 'wahl' && frei(1)) baue(1); }, 3: d => { if (d && phase === 'wahl' && frei(2)) baue(2); }, 4: d => { if (d && phase === 'wahl' && frei(3)) baue(3); } });
 
@@ -87449,11 +87455,13 @@ function lkKart(stage) {
     x.font = `800 ${Math.min(18, W * .04)}px system-ui,sans-serif`; x.lineWidth = 4; const rt = `Runde ${Math.min(LK_RUNDEN, P.lap + 1)}/${LK_RUNDEN}`; x.strokeText(rt, 16, 26); x.fillStyle = '#fff'; x.fillText(rt, 16, 26);
     const bw = Math.min(W * .5, 320), bx = W - bw - 16; x.fillStyle = 'rgba(10,20,50,.5)'; x.fillRect(bx, 16, bw, 6); karts.slice().sort((a, b) => (a.ich ? 1 : 0) - (b.ich ? 1 : 0)).forEach(k => { const f = (((k.dist % TRACK) + TRACK) % TRACK) / TRACK; x.fillStyle = k.f.col; x.strokeStyle = '#fff'; x.lineWidth = k.ich ? 3 : 1.5; x.beginPath(); x.arc(bx + f * bw, 19, k.ich ? 8 : 5.5, 0, 7); x.fill(); x.stroke(); });
 
+    [-1, 1].forEach(d => { const ax = d < 0 ? 30 : W - 30, ay = H * .78, st = Math.max(0, steer * d); x.fillStyle = `rgba(255,255,255,${(.22 + st * .65).toFixed(2)})`; x.beginPath(); x.moveTo(ax + d * (12 + st * 6), ay); x.lineTo(ax - d * 10, ay - 16 - st * 4); x.lineTo(ax - d * 10, ay + 16 + st * 4); x.fill(); });
+
     x.fillStyle = P.item ? 'rgba(255,255,255,.92)' : 'rgba(255,255,255,.35)'; x.strokeStyle = P.item ? '#ffd84a' : 'rgba(255,255,255,.6)'; x.lineWidth = 5; x.beginPath(); x.arc(KN.x, KN.y, KN.r, 0, 7); x.fill(); x.stroke();
     if (P.item) extraBild(roul > 0 ? Object.keys(LK_EXTRA)[Math.floor(tAll * 14) % 5] : P.item, KN.x, KN.y, KN.r * .8); else { x.fillStyle = 'rgba(10,20,50,.4)'; x.font = '900 30px system-ui,sans-serif'; x.textAlign = 'center'; x.fillText('?', KN.x, KN.y + 11); }
     x.textAlign = 'center';
     if (phase === 'count') { const n = 3 - Math.floor(tPh); x.fillStyle = 'rgba(10,20,50,.5)'; x.beginPath(); x.roundRect ? x.roundRect(W / 2 - 90, H * .2 - 34, 180, 68, 16) : x.rect(W / 2 - 90, H * .2 - 34, 180, 68); x.fill(); [0, 1, 2].forEach(i => { x.fillStyle = tPh > i + .2 ? (tPh >= 3 ? '#5cc85c' : '#ef4b4b') : '#3a4250'; x.beginPath(); x.arc(W / 2 - 50 + i * 50, H * .2, 18, 0, 7); x.fill(); });
-      x.fillStyle = '#fff'; x.font = `800 ${Math.min(17, W * .038)}px system-ui,sans-serif`; x.fillText(n > 0 ? 'Links oder rechts tippen und halten zum Lenken' : 'Los!', W / 2, H * .2 + 62); x.fillText('Der runde Knopf setzt dein Extra ein', W / 2, H * .2 + 86); }
+      x.fillStyle = '#fff'; x.font = `800 ${Math.min(17, W * .038)}px system-ui,sans-serif`; const zl = n <= 0 ? ['Los!'] : W < 560 ? ['Finger links oder rechts halten.', 'Weiter außen lenkt stärker.', 'Extra: Knopf oder beide Daumen'] : ['Finger links oder rechts halten. Weiter außen lenkt stärker.', 'Extra: runder Knopf oder beide Daumen zugleich']; zl.forEach((z, i) => { x.lineWidth = 4; x.strokeStyle = 'rgba(10,20,50,.55)'; x.strokeText(z, W / 2, H * .2 + 62 + i * 24); x.fillText(z, W / 2, H * .2 + 62 + i * 24); }); }
     if (meldT > 0) { x.font = `900 ${Math.min(44, W * .09)}px system-ui,sans-serif`; x.lineWidth = 6; x.strokeStyle = 'rgba(10,20,50,.75)'; x.strokeText(meld, W / 2, H * .36); x.fillStyle = '#fff'; x.fillText(meld, W / 2, H * .36); }
   }
   funLoop(dt => {
@@ -87462,7 +87470,7 @@ function lkKart(stage) {
     anzeige();
   });
   hud();
-  FUN.dbg = { get phase() { return phase; }, get P() { return P; }, get karts() { return karts; }, get T() { return T; }, get TRACK() { return TRACK; }, get level() { return level; }, get baelle() { return baelle; }, get fallen() { return fallen; }, keys, platz: () => platz(P), waehle: i => { if (frei(i)) baue(i); return phase; }, frei, nutze: () => nutze(P), gib: it => { P.item = it; roul = 0; }, set tempo(v) { tempo = v; }, set auto(v) { auto = v; }, karte };
+  FUN.dbg = { get phase() { return phase; }, get P() { return P; }, get karts() { return karts; }, get T() { return T; }, get TRACK() { return TRACK; }, get level() { return level; }, get baelle() { return baelle; }, get fallen() { return fallen; }, keys, knopf: [KN.x, KN.y], get lenkZiel() { return lenkZiel; }, platz: () => platz(P), waehle: i => { if (frei(i)) baue(i); return phase; }, frei, nutze: () => nutze(P), gib: it => { P.item = it; roul = 0; }, set tempo(v) { tempo = v; }, set auto(v) { auto = v; }, karte };
 }
 if (typeof FUN_GAMES !== 'undefined') Object.assign(FUN_GAMES, { kartpokal: { c: 'abenteuer', t: 'Kart-Pokal', d: 'Rennen gegen fünf Tiere: drei Runden, Extras aus Kisten, vier Strecken', i: '🏁' } });
 if (typeof FUN_IMPL !== 'undefined') Object.assign(FUN_IMPL, { kartpokal: lkKart });
