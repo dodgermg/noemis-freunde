@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-N48aD755saCs2oPHnsrxal8kDDQGLr5KhSy2eKl2rPU=' 'sha256-/SVkfpvsbZrCvIFOAzYy67XHi3crVO7MrrFQnnXCGwo=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-GNxjpjxy17zhjsC5SWKqEnHC3FJApFs9G++xqMIN3vE=' 'sha256-lJxH4289L5UFSHz8JIl0GED6t/WKsgvUcskut1i/Glo=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -8310,6 +8310,9 @@ button.mau-k:disabled { cursor: default; }
   .fz-ctl.duo .fz-pad.p1 .fz-pl { left: auto; right: 0; }
 }
 
+
+.fz-ph { margin: -2px 0 8px; }
+
 /* ---- style_px_tauch.css ---- */
 
 .pxtau-msg { position: absolute; z-index: 3; left: 50%; bottom: 16px; width: max-content; max-width: min(92%, calc(100% - 330px), 640px); box-sizing: border-box; padding: 7px 14px 8px; display: flex; align-items: center; gap: 10px;
@@ -9201,8 +9204,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '2.87.0';
-  var MAP = {"probe":0,"files":[[9191,"fehler_kern.js"],[9479,null],[9481,"data.js"],[10196,"data_more.js"],[10568,"data_su2.js"],[10795,"data_es.js"],[11163,"data_wissen.js"],[11364,"data_v21.js"],[12049,"data_v24.js"],[12537,"data_v25.js"],[13018,"data_v26.js"],[13117,"data_v29.js"],[13425,"data_v30.js"],[13756,"data_v31.js"],[14062,"data_kunst.js"],[14258,"data_v214.js"],[14361,"data_v216.js"],[14654,"schrift.js"],[14954,"eingabe.js"],[15165,"data_k34m.js"],[15683,"data_k34d.js"],[16037,"data_k34s.js"],[16491,"data_v224.js"],[17364,"data_v225w.js"],[17733,"data_v225k.js"],[18177,"data_herz.js"],[18531,"data_fb226.js"],[18674,"data_tf226.js"],[18881,"data_v227a.js"],[19972,"data_v227b.js"],[20926,"data_h28b.js"],[20966,"data_l28a.js"],[21832,"data_l28b.js"],[23012,"data_schaetz.js"],[23494,"data_party8.js"],[23544,"data_alce.js"],[24215,"data_alce2.js"],[24464,"data_alce3.js"],[24879,"registry.js"],[25393,"app.js"],[26587,"fun.js"],[27167,"fun2.js"],[27483,"atelier.js"],[27857,"kunst225.js"],[28047,"herz.js"],[28411,"reise.js"],[28713,"iglu.js"],[28879,"offline.js"],[28986,"party.js"],[29470,"meine.js"],[29826,"loeffel.js"],[29997,"trend.js"],[30539,"fun228a.js"],[31390,"fun228b.js"],[32051,"kueche.js"],[33090,"stimme.js"],[33145,"klassen.js"],[33294,"freunde_vorab.js"],[33315,"mut.js"],[33737,"schule.js"],[34226,"fussball226.js"],[34548,"schaetzen.js"],[34979,"party8.js"],[35598,"tiere.js"],[36057,"fussball232.js"],[36272,"party8b.js"],[36574,"weg.js"],[36795,"px.js"],[37206,"px_data.js"],[37463,"pxwelt.js"],[37544,"px_abenteuer.js"],[38352,"px_abenteuer2.js"],[39104,"px_abenteuer3.js"],[39488,"px_ski.js"],[40130,"px_wurf.js"],[40659,"px_insel.js"],[41860,"px_kicker.js"],[42795,"px_eis.js"],[43781,"px_run.js"],[44996,"px_brk.js"],[45958,"px_pol.js"],[47309,"px_frog.js"],[48569,"px_angel.js"],[49884,"px_golf.js"],[50918,"px_tauch.js"],[52183,"px_hockey.js"],[53139,"px_lab.js"],[54474,"px_plopp.js"],[55680,"px_stadion.js"],[57184,"px_training.js"],[57553,"cm.js"],[58043,"cmwelt.js"],[58099,"cm_baeck.js"],[58892,"cm_bahn.js"],[59656,"cm_detek.js"],[60373,"cm_markt.js"],[61086,"ff.js"],[61243,"ff_mathe.js"],[63233,"ff_deutsch.js"],[64821,"ff_sach_a.js"],[67070,"ff_sach_b.js"],[69299,"ff_sprachen.js"],[71707,"zm.js"],[72620,"tt.js"],[72833,"data_tagebuch.js"],[72876,"data_hoerspiel.js"],[73035,"leseecke.js"],[73354,"kt.js"],[73657,"comicbuch.js"],[73935,"alce.js"],[74098,"alce_aufg.js"],[74268,"formen.js"],[74719,"data_formen.js"],[74960,"data_formen2.js"],[75182,"spielzeit.js"],[75327,"data_faktmeinung.js"],[75446,"data_es248.js"],[75710,"data_en249.js"],[75949,"data_wissen249.js"],[76380,"data_kunst249.js"],[76663,"data_fussball250.js"],[76787,"data_werte252.js"],[77040,"data_lesen252.js"],[77101,"data_k34_252.js"],[77187,"art254.js"],[77305,"data_werte255.js"],[77443,"data_lesen255.js"],[77579,"forscher255.js"],[77727,"zufall250.js"],[77773,"stufe259.js"],[77783,"advent.js"],[78046,"wdh.js"],[78144,"denk.js"],[78181,"data_viaje265.js"],[78324,"klassenarbeit.js"],[78457,"quizduell.js"],[78580,"neu267.js"],[78845,"prog.js"],[78950,"lernstand.js"],[79017,"blatt.js"],[79119,"data_es271.js"],[79233,"plus269.js"],[79327,"schach.js"],[79559,"schachtaktik.js"],[79811,"fun270.js"],[79974,"data_neu274.js"],[80183,"plus272.js"],[80237,"spiele274.js"],[80360,"kasten.js"],[80464,"erklaer.js"],[80577,"apa.js"],[80658,"neu276.js"],[80799,"spiele276.js"],[80849,"neu277.js"],[81027,"spiele277.js"],[81282,"lernen278.js"],[81542,"spiele278.js"],[81885,"lernen279.js"],[82210,"lernen279b.js"],[82608,"spanisch280.js"],[82900,"spanisch283.js"],[83133,"mehr281.js"],[83279,"grafik280.js"],[83650,"tiefsee280.js"],[83928,"abenteuer280.js"],[84140,"abenteuer281.js"],[84252,"design281.js"],[84384,"party281.js"],[84515,"grafik281.js"],[84732,"lumi_live.js"],[84848,"sicher.js"],[85032,"stil.js"],[85086,"zurueck287.js"],[85128,"freunde.js"],[85265,"start.js"],[85275,null],[85285,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '2.88.0';
+  var MAP = {"probe":0,"files":[[9194,"fehler_kern.js"],[9482,null],[9484,"data.js"],[10199,"data_more.js"],[10571,"data_su2.js"],[10798,"data_es.js"],[11166,"data_wissen.js"],[11367,"data_v21.js"],[12052,"data_v24.js"],[12540,"data_v25.js"],[13021,"data_v26.js"],[13120,"data_v29.js"],[13428,"data_v30.js"],[13762,"data_v31.js"],[14068,"data_kunst.js"],[14264,"data_v214.js"],[14367,"data_v216.js"],[14660,"schrift.js"],[14960,"eingabe.js"],[15171,"data_k34m.js"],[15689,"data_k34d.js"],[16043,"data_k34s.js"],[16497,"data_v224.js"],[17370,"data_v225w.js"],[17739,"data_v225k.js"],[18183,"data_herz.js"],[18537,"data_fb226.js"],[18680,"data_tf226.js"],[18887,"data_v227a.js"],[19987,"data_v227b.js"],[20941,"data_h28b.js"],[20981,"data_l28a.js"],[21847,"data_l28b.js"],[23027,"data_schaetz.js"],[23509,"data_party8.js"],[23559,"data_alce.js"],[24230,"data_alce2.js"],[24479,"data_alce3.js"],[24894,"registry.js"],[25408,"app.js"],[26605,"fun.js"],[27185,"fun2.js"],[27501,"atelier.js"],[27875,"kunst225.js"],[28065,"herz.js"],[28429,"reise.js"],[28731,"iglu.js"],[28897,"offline.js"],[29004,"party.js"],[29488,"meine.js"],[29844,"loeffel.js"],[30015,"trend.js"],[30557,"fun228a.js"],[31408,"fun228b.js"],[32069,"kueche.js"],[33108,"stimme.js"],[33163,"klassen.js"],[33312,"freunde_vorab.js"],[33333,"mut.js"],[33755,"schule.js"],[34244,"fussball226.js"],[34566,"schaetzen.js"],[34997,"party8.js"],[35616,"tiere.js"],[36075,"fussball232.js"],[36290,"party8b.js"],[36592,"weg.js"],[36813,"px.js"],[37224,"px_data.js"],[37481,"pxwelt.js"],[37562,"px_abenteuer.js"],[38371,"px_abenteuer2.js"],[39123,"px_abenteuer3.js"],[39514,"px_abenteuer4.js"],[39724,"px_baukasten.js"],[39832,"px_ski.js"],[40474,"px_wurf.js"],[41003,"px_insel.js"],[42204,"px_kicker.js"],[43139,"px_eis.js"],[44125,"px_run.js"],[45340,"px_brk.js"],[46302,"px_pol.js"],[47653,"px_frog.js"],[48913,"px_angel.js"],[50228,"px_golf.js"],[51262,"px_tauch.js"],[52527,"px_hockey.js"],[53483,"px_lab.js"],[54818,"px_plopp.js"],[56024,"px_stadion.js"],[57535,"px_stadion2.js"],[57587,"px_training.js"],[57956,"cm.js"],[58446,"cmwelt.js"],[58502,"cm_baeck.js"],[59295,"cm_bahn.js"],[60059,"cm_detek.js"],[60776,"cm_markt.js"],[61489,"ff.js"],[61646,"ff_mathe.js"],[63636,"ff_deutsch.js"],[65224,"ff_sach_a.js"],[67473,"ff_sach_b.js"],[69702,"ff_sprachen.js"],[72110,"zm.js"],[73023,"tt.js"],[73236,"data_tagebuch.js"],[73279,"data_hoerspiel.js"],[73438,"leseecke.js"],[73757,"kt.js"],[74060,"comicbuch.js"],[74338,"alce.js"],[74501,"alce_aufg.js"],[74671,"formen.js"],[75122,"data_formen.js"],[75363,"data_formen2.js"],[75585,"spielzeit.js"],[75730,"data_faktmeinung.js"],[75849,"data_es248.js"],[76113,"data_en249.js"],[76352,"data_wissen249.js"],[76783,"data_kunst249.js"],[77066,"data_fussball250.js"],[77190,"data_werte252.js"],[77443,"data_lesen252.js"],[77504,"data_k34_252.js"],[77590,"art254.js"],[77708,"data_werte255.js"],[77846,"data_lesen255.js"],[77982,"forscher255.js"],[78130,"zufall250.js"],[78176,"stufe259.js"],[78186,"advent.js"],[78449,"wdh.js"],[78547,"eswarm288.js"],[78598,"denk.js"],[78635,"data_viaje265.js"],[78778,"klassenarbeit.js"],[78911,"quizduell.js"],[79034,"neu267.js"],[79299,"prog.js"],[79404,"lernstand.js"],[79471,"blatt.js"],[79573,"data_es271.js"],[79687,"plus269.js"],[79781,"schach.js"],[80013,"schachtaktik.js"],[80265,"fun270.js"],[80428,"data_neu274.js"],[80637,"plus272.js"],[80691,"spiele274.js"],[80814,"kasten.js"],[80918,"erklaer.js"],[81031,"apa.js"],[81112,"neu276.js"],[81253,"spiele276.js"],[81303,"neu277.js"],[81481,"spiele277.js"],[81736,"lernen278.js"],[81996,"spiele278.js"],[82339,"lernen279.js"],[82664,"lernen279b.js"],[83062,"spanisch280.js"],[83354,"spanisch283.js"],[83587,"mehr281.js"],[83733,"grafik280.js"],[84104,"tiefsee280.js"],[84382,"abenteuer280.js"],[84594,"abenteuer281.js"],[84706,"design281.js"],[84838,"party281.js"],[84969,"grafik281.js"],[85186,"lumi_live.js"],[85302,"sicher.js"],[85486,"stil.js"],[85540,"zurueck287.js"],[85582,"freunde.js"],[85719,"start.js"],[85729,null],[85739,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -13505,7 +13508,10 @@ function genUeberschlag(ctx) {
       explain: `Überschlag: ${ra} ${plus ? '+' : '−'} ${rb} = ${est}. Das genaue Ergebnis ist ${exact}.`, key: 'ub2' + a + (plus ? '+' : '-') + b + '=' + shown });
   }
 
-  const opts = [est].concat(R.shuffle([-300, -200, -100, 100, 200, 300]).map(d => est + d).filter(x => x > 0).slice(0, 3)).sort((x, y) => x - y);
+
+  const and = plus ? ra - rb : ra + rb, fal = [];
+  for (const x of (Math.abs(and - est) <= 400 ? [and] : []).concat(R.shuffle([est - 100, est + 100]), R.shuffle([est - 200, est + 200]), [est + 300])) if (x > 0 && x !== est && !fal.includes(x) && fal.length < 3) fal.push(x);
+  const opts = [est].concat(fal).sort((x, y) => x - y);
   return mkChoice({ prompt: 'Überschlag: Ungefähr wie viel ist das?', visual: mathLine([`${a}`, plus ? '+' : '−', `${b}`, '≈', '?']), answer: String(est), wrong: opts.filter(x => x !== est).map(String), fixed: true, layout: 'grid2',
     explain: `Runde auf Hunderter: ${a} ≈ ${ra}, ${b} ≈ ${rb}. ${ra} ${plus ? '+' : '−'} ${rb} = ${est}. (Genau: ${exact})`, key: 'ub1' + a + (plus ? '+' : '-') + b });
 }
@@ -19219,6 +19225,15 @@ function g27aKalender(ctx) { return ctx.lv === 1 ? g27aKal1(ctx) : ctx.lv === 2 
 const g27aInRow = (n, k) => n % k === 0 && n / k >= 1 && n / k <= 10;
 const g27aRowVis = k => bigEmoji('🕵️‍♀️', 'sm') + `<div class="q-word big">${k}er-Reihe</div>`;
 const g27aNonMult = (k, avoid) => { const c = []; for (let i = 1; i <= 10; i++) for (const d of [-2, -1, 1, 2, 3]) { const x = i * k + d; if (x > 1 && x <= 10 * k + 3 && x % k !== 0 && !avoid.includes(x)) c.push(x); } return [...new Set(c)]; };
+
+function g27aFastReihe(k, n) {
+  const ok = x => x > 1 && x % k !== 0 && x <= 10 * k + 2, out = [], add = L => { const c = R.shuffle(L.filter(x => ok(x) && !out.includes(x))); if (c.length) out.push(c[0]); };
+  add([n - 1, n + 1]);
+  add(g27aRange(2, 10).flatMap(i => [i * (k + 1), i * (k - 1)]).filter(x => x > k && Math.abs(x - n) <= 3 * k));
+  add(g27aRange(2, 10).filter(i => i * k !== n).flatMap(i => [i * k - 1, i * k + 1]));
+  while (out.length < 3) add(g27aRange(2, 10).flatMap(i => [i * k - 1, i * k + 1, i * k + 2]));
+  return out;
+}
 function g27aMalreihen(ctx) {
   const lv = ctx.lv;
   if (lv === 3) {
@@ -19240,7 +19255,7 @@ function g27aMalreihen(ctx) {
   const t = R.int(0, lv === 1 ? 2 : 4), k = R.pick(rowsK);
   if (t === 0) {
     const i = R.int(2, 10), n = i * k;
-    return mkChoice({ prompt: `Welche Zahl gehört zur ${k}er-Reihe?`, visual: g27aRowVis(k), answer: String(n), wrong: R.sample(g27aNonMult(k, [n]), 3).map(String), layout: 'row4',
+    return mkChoice({ prompt: `Welche Zahl gehört zur ${k}er-Reihe?`, visual: g27aRowVis(k), answer: String(n), wrong: g27aFastReihe(k, n).map(String), layout: 'row4',
       explain: `${n} gehört zur ${k}er-Reihe, denn ${i} · ${k} = ${n}.`, key: 'mr0' + k + n });
   }
   if (t === 1) {
@@ -25394,9 +25409,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '2.87.0';
+const APP_VERSION = '2.88.0';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "2.88.0", d: "15.11.2026", t: ["Lumis Pixel-Abenteuer: Welt 9, die Unterwasserwelt, mit sechs neuen Leveln. Lumi schwimmt: in der Luft noch bis zu dreimal tippen", "Level-Baukasten in der Pixel-Welt: eigene Level bauen und sofort spielen. Vier Speicherplätze, eigene Level geben keine Münzen", "Mehr Rücksetz-Fahnen in langen Abschnitten aller Welten", "Lumis Fußballstadion: vier Plätze zur Wahl (Rasen, Regen, Schnee, Halle mit Bande)", "Spanisch-Aufwärmrunde: Im Elternbereich lässt sich ein Spanisch-Tag wählen. Dann zeigt die Startseite an diesem Tag fünf kurze Aufgaben zum Warmwerden", "Mathe: In drei Spielen sind die falschen Antworten jetzt typische Fehler statt beliebiger Zahlen"] },
   { v: "2.87.0", d: "14.11.2026", t: ["Zurück-Geste: Wischen vom Bildschirmrand und die Zurück-Taste führen innerhalb der App eine Ebene zurück, statt die vorherige Website zu zeigen", "Auf der Startseite verlässt erst zweimal Zurück kurz hintereinander die App"] },
   { v: "2.86.0", d: "14.11.2026", t: ["Sachunterricht und Wissen: Weitere 16 Fragen haben glaubhafte statt alberner falscher Antworten", "Spanisch: „Welches Wort passt nicht?“ ist in einer weiteren Einheit nicht mehr am Artikel zu erraten"] },
   { v: "2.85.0", d: "14.11.2026", t: ["Sachunterricht und Wissen: Bei 90 Fragen sind die falschen Antworten jetzt glaubhaft und ähnlich lang wie die richtige", "Englisch: Falsche Antworten aus derselben Wortgruppe, Nachbarzahlen und Verwechsler, 16 neue Gegenteil-Paare"] },
@@ -25792,6 +25808,7 @@ function showHome() {
       ${typeof wzHomeCard === 'function' ? safeCard(wzHomeCard) : ''}
       ${typeof advHomeCard === 'function' ? safeCard(advHomeCard) : ''}
       ${typeof panHomeCard === 'function' ? safeCard(panHomeCard) : ''}
+      ${typeof eswHomeCard === 'function' ? safeCard(eswHomeCard) : ''}
       ${typeof wdhHomeCard === 'function' ? safeCard(wdhHomeCard) : ''}
       ${typeof homeHint === 'function' ? safeCard(homeHint) : ''}
       ${typeof ttHomeCard === 'function' ? safeCard(ttHomeCard) : ''}
@@ -26445,6 +26462,7 @@ function showParents(notice = '') {
     ${typeof wdhParentsHTML === 'function' ? wdhParentsHTML() : ''}
     ${typeof denkParentsHTML === 'function' ? denkParentsHTML() : ''}
     ${typeof advParentsHTML === 'function' ? advParentsHTML() : ''}
+    ${typeof eswParentsHTML === 'function' ? eswParentsHTML() : ''}
     <section class="card"><h2>Spielhalle</h2>
       <p class="muted">Mini-Spiele als Belohnung. Münzen gibt es nur fürs Lernen: 1 Münze pro Stern, +3 für das Tagesziel. Aktuell: 🪙 <b id="coinsP">${S.coins || 0}</b></p>
       ${sw('funOn', set.funOn !== false, 'Spielhalle', 'Mini-Spiele auf der Startseite anzeigen')}
@@ -37756,8 +37774,8 @@ function pxAHoehlenLayer(H) {
 }
 
 
-function pxABuild(i) {
-  const D = PXA_LEVELS[i], h = D.m.length, w = D.m[0].length, grid = D.m.map(r => r.split(''));
+function pxABuild(i, eig) {
+  const D = eig || PXA_LEVELS[i], h = D.m.length, w = D.m[0].length, grid = D.m.map(r => r.split(''));
   const W2b = PXA_W2[D.th];
   const A = { i, D, w, h, grid, ents: [], fish: 0, fishMax: 0, stars: new Set(), hearts: 3, solved: 0, t: 0, phase: 'play', cam: 0, shake: 0, msgT: 2.6, deaths: 0 };
   const E = (o) => { A.ents.push(o); return o; };
@@ -37841,11 +37859,11 @@ function pxAMoveY(A, p, prevY, onHead) {
 }
 
 
-function pxAPlay(i) {
-  const D = PXA_LEVELS[i];
-  const run = pxView({ id: 'adv', title: `${pxANum(i)} ${D.n}`, pad: 'lrj', portrait: 'top', back: () => pxAMap(i) });
+function pxAPlay(i, eig) {
+  const D = eig || PXA_LEVELS[i];
+  const run = pxView({ id: 'adv', title: eig ? D.n : `${pxANum(i)} ${D.n}`, pad: 'lrj', portrait: 'top', back: () => eig ? pxBauEdit(eig.nr) : pxAMap(i) });
   const W2 = PXA_W2[D.th], hot = W2 && W2.wat === 'glut';
-  let A = pxABuild(i);
+  let A = pxABuild(i, eig);
   const p = () => A.p;
   const hurt = (from) => {
     const P = A.p; if (P.inv > 0 || A.phase !== 'play') return;
@@ -37878,6 +37896,7 @@ function pxAPlay(i) {
   };
   const done = () => {
     if (A.phase !== 'play') return; A.phase = 'ende'; A.p.lock = 1; pxSfx.win();
+    if (eig) { pxAfter(run, 900, () => pxBauZiel(run, A, eig)); return; }
     const S0 = pxAS(), old = S0.lv[i] || {}, ns = A.stars.size, first = !S0.lv[i];
     const newStars = Math.max(0, ns - (old.s | 0));
     S0.lv[i] = { s: Math.max(old.s | 0, ns), f: Math.max(old.f | 0, A.fish), d: 1, n: (old.n | 0) + 1 };
@@ -37896,7 +37915,7 @@ function pxAPlay(i) {
   else if (pxAW(i) >= 3 && i === pxAFirst(pxAW(i)) && PXA_WELTEN[pxAW(i)]) { A.msg = 'WILLKOMMEN: ' + PXA_WELTEN[pxAW(i)].n + '!'; A.msgT = 3; }
   pxLoop(run, dt => {
     A.t += dt;
-    if (!A.dHint && A.ents.some(e => e.k === 'duese' && Math.abs(e.tx * PXA_T + 8 - A.p.x) < 60)) { A.dHint = 1; A.msg = W2 && W2.jet === 'windrad' ? 'DER WIND TRÄGT DICH HOCH!' : W2 && W2.jet === 'sprenger' ? 'DAS WASSER TRÄGT DICH HOCH!' : 'DAMPF TRÄGT DICH HOCH!'; A.msgT = 2.6; }
+    if (!A.dHint && A.ents.some(e => e.k === 'duese' && Math.abs(e.tx * PXA_T + 8 - A.p.x) < 60)) { A.dHint = 1; A.msg = W2 && W2.jet === 'windrad' ? 'DER WIND TRÄGT DICH HOCH!' : W2 && W2.jet === 'sprenger' ? 'DAS WASSER TRÄGT DICH HOCH!' : W2 && W2.jet === 'u9blasen' ? 'DIE BLASEN TRAGEN DICH HOCH!' : 'DAMPF TRÄGT DICH HOCH!'; A.msgT = 2.6; }
     if (!A.lHint && A.ents.some(e => e.k === 'liane' && Math.abs(e.ax - A.p.x) < 70)) { A.lHint = 1; A.msg = 'SPRING AN DIE LIANE!'; A.msgT = 2.6; }
     if (!A.zHint && A.ents.some(e => e.k === 'wackel' && Math.abs(e.tx * PXA_T - A.p.x) < 60)) { A.zHint = 1; A.msg = 'VORSICHT, WACKELSTEINE!'; A.msgT = 2.6; } const P = A.p; if (A.msgT > 0) A.msgT -= dt; if (A.shake > 0) A.shake -= dt;
 
@@ -38108,7 +38127,7 @@ function pxADraw(run, A, g) {
 
   for (let k = 0; k < 3; k++) pxDraw(g, k < A.hearts ? 'herz' : 'herzleer', 5 + k * 11, 5);
   if (A.msgT > 0) {
-    const msg = A.msg || `${pxANum(A.i)} ${A.D.n}`, w = pxTextW(msg) + 12, a = Math.min(1, A.msgT * 2);
+    const msg = A.msg || (A.i < 0 ? A.D.n : `${pxANum(A.i)} ${A.D.n}`), w = pxTextW(msg) + 12, a = Math.min(1, A.msgT * 2);
     g.globalAlpha = a; pxRect(g, W / 2 - w / 2, 18, w, 15, '#1d2440'); pxRect(g, W / 2 - w / 2 + 1, 19, w - 2, 13, '#2149b0'); pxText(g, msg, W / 2, 22, '#ffffff', 1, 'c'); g.globalAlpha = 1;
   }
   if (A.i === 0 && P.x < 120 && A.phase === 'play') { const s = '◀ ▶ LAUFEN   ⤒ SPRINGEN', w = pxTextW(s) + 10, x = Math.max(4, 72 - cam - w / 2); pxRect(g, x, 98, w, 13, '#fff8e7'); pxRect(g, x, 110, w, 1, '#1d2440'); pxText(g, s, x + 5, 101, '#1d2440'); }
@@ -39164,6 +39183,7 @@ Object.assign(PXGEN, {
   kuchenhaus: () => { const [c, g] = pxCanvas(48, 44), K = PXC.k; pxRect(g, 6, 18, 36, 26, K); pxRect(g, 7, 19, 34, 24, '#c8914e'); pxTri(g, 0, 20, 24, 0, 48, 20, K); pxTri(g, 3, 19, 24, 2, 45, 19, '#6b3e22'); for (let x = 4; x < 44; x += 6) { pxEll(g, x, 15, 6, 6, K); pxEll(g, x + 1, 16, 4, 4, '#fff8e7'); } pxRect(g, 18, 26, 12, 18, K); pxRect(g, 19, 27, 10, 17, '#3a2416'); pxRect(g, 26, 35, 2, 2, '#ffd84a'); pxRect(g, 9, 24, 7, 7, K); pxRect(g, 10, 25, 5, 5, '#8fd0ff'); pxRect(g, 32, 24, 7, 7, K); pxRect(g, 33, 25, 5, 5, '#8fd0ff'); [[10, 36, '#ef4b4b'], [13, 39, '#3fd1c8'], [34, 36, '#ffd84a'], [37, 39, '#ff8fc2'], [22, 8, '#ef4b4b'], [26, 12, '#ffd84a']].forEach(([x, y, f]) => { pxRect(g, x, y, 3, 3, K); pxRect(g, x + 1, y + 1, 1, 1, f); pxRect(g, x, y, 2, 2, f); }); return c; }
 });
 function pxAHat3(g, x, y, flip, style) {
+  if (pxAHat4(g, x, y, flip, style)) return true;
   const K = PXC.k;
   if (style === 'helm') { g.globalAlpha = .3; pxEll(g, x - 2, y + 1, 17, 15, '#bfe4ff'); g.globalAlpha = 1; pxRect(g, x + 1, y + 2, 2, 3, '#ffffff'); pxRect(g, x + 2, y + 1, 3, 1, '#ffffff'); pxRect(g, flip ? x + 1 : x + 11, y - 2, 1, 4, K); pxRect(g, flip ? x : x + 10, y - 3, 3, 2, '#ef4b4b'); return true; }
   if (style === 'kochmuetze') { pxEll(g, x, y - 4, 13, 9, K); pxEll(g, x + 1, y - 3, 11, 7, '#ffffff'); pxRect(g, x + 2, y + 2, 9, 3, K); pxRect(g, x + 3, y + 2, 7, 2, '#ffffff'); pxRect(g, x + 4, y - 1, 1, 3, '#dfe9f5'); pxRect(g, x + 8, y - 1, 1, 3, '#dfe9f5'); return true; }
@@ -39173,6 +39193,7 @@ function pxAHat3(g, x, y, flip, style) {
 
 function pxABg7(g, run, A, cam) {
   const W = run.W, H = run.H, th = A.D.th, wd = PXA_W2[th].wd, t = A.t;
+  if (wd === 9) return pxABg9(g, run, A, cam);
   if (wd === 7) {
     for (let i = 0; i < 90; i++) { const x = ((i * 53 - cam * (.03 + (i % 3) * .02)) % W + W) % W, y = (i * 37) % (H - 30); pxRect(g, x, y, 1, 1, Math.sin(t * 2 + i) > .4 ? '#ffffff' : i % 4 ? '#8fa4d8' : '#ffd84a'); }
     g.globalAlpha = .16; pxEll(g, W * .2 - cam * .02, 20, 120, 50, th === 'ringe' || th === 'krater' ? '#a98bff' : '#3fd1c8'); pxEll(g, W * .6 - cam * .03, 60, 100, 40, '#ff8fc2'); g.globalAlpha = 1;
@@ -39191,6 +39212,7 @@ function pxABg7(g, run, A, cam) {
   if (th === 'kuchenschloss') { const x = W * .6 - cam * .08; pxRect(g, x, H - 120, 70, 90, '#6a3a98'); [0, 26, 52].forEach(o => { pxRect(g, x + o - 2, H - 140, 18, 30, '#6a3a98'); pxTri(g, x + o - 5, H - 140, x + o + 7, H - 160, x + o + 19, H - 140, '#ff8fc2'); }); for (let yy = H - 110; yy < H - 50; yy += 14) for (let xx = 8; xx < 64; xx += 16) pxRect(g, x + xx, yy, 5, 7, '#ffd84a'); }
 }
 function pxAMapArt3(g, W, o, wd, t) {
+  if (wd === 9) return pxAMapArt9(g, W, o, wd, t);
   if (wd === 7) {
     for (let i = 0; i < 50; i++) pxRect(g, (i * 67) % W, (i * 31) % 60, 1, 1, Math.sin(t * 2 + i) > .3 ? '#ffffff' : '#8fa4d8');
     pxEll(g, o + 4, 66, 250, 124, PXC.k); pxEll(g, o + 6, 68, 246, 120, '#8a8fa4'); pxEll(g, o + 16, 74, 226, 100, '#9ca1b6');
@@ -39212,6 +39234,7 @@ const PXA_PW = {
   stern: ['🌟', 'Sternenkraft! Jetzt bist du unbesiegbar.', 9]
 };
 function pxA3Build(A) {
+  pxA4Build(A);
   const W2 = PXA_W2[A.D.th]; A.pw = {}; A.pwN = 0; A.gs = (W2 && W2.gs) || 1; A.vs = Math.sqrt(A.gs); A.hits = 0; A.hLast = A.hearts;
   for (let y = 0; y < A.h; y++) for (let x = 0; x < A.w; x++) { const c = A.grid[y][x]; if (c === '>' || c === '<') A.ents.push({ k: 'band', tx: x, ty: y, dir: c === '>' ? 1 : -1 }); }
   const wd = pxAW(A.i), wl = pxAWorldLv(wd); if (A.i !== wl[wl.length - 1]) return;
@@ -39222,7 +39245,7 @@ function pxA3Build(A) {
   A.ents.push(A.boss);
 }
 function pxA3Power(run, A, k) {
-  const P = A.p; k = k || ['feder', 'magnet', 'blase', 'stern'][(A.i + A.pwN++) % 4]; const D = PXA_PW[k]; if (!D) return;
+  const P = A.p; k = k || ['feder', 'magnet', 'blase', 'stern'][(Math.max(0, A.i) + A.pwN++) % 4]; const D = PXA_PW[k]; if (!D) return;
   A.pw[k] = D[2] || 1; A.msg = D[1]; A.msgT = 2.6; pxSfx.win(); pxBurst(run, P.x, P.y - 10, ['#ffd84a', '#ffffff', '#a98bff'], 22, { v: 80 });
 }
 function pxA3Schutz(run, A) {
@@ -39231,12 +39254,14 @@ function pxA3Schutz(run, A) {
   return false;
 }
 function pxA3Doppel(run, A) {
+  if (pxA4Schwimm(run, A)) return true;
   const P = A.p; if (!A.pw || !(A.pw.feder > 0) || P.on || P.dj || P.vine || P.lock > 0 || A.phase !== 'play') return false;
   P.dj = 1; P.vy = -PXA_JUMP * .9; pxSfx.jump(); pxBurst(run, P.x, P.y, ['#ffffff', '#ffd84a'], 8, { v: 40, life: .4 }); return true;
 }
 function pxA3Hud(A) { const pw = A.pw; if (!pw) return ''; return Object.keys(PXA_PW).filter(k => pw[k] > 0).map(k => `<span>${PXA_PW[k][0]}${PXA_PW[k][2] ? ' ' + Math.ceil(pw[k]) : ''}</span>`).join(''); }
 function pxA3Frei(A) { const b = A.boss; if (!b || b.dead) return true; if (!(A.bMsg > 0)) { A.msg = 'Erst den Endgegner besiegen!'; A.msgT = 1.8; A.bMsg = 2.5; } return false; }
 function pxA3Step(run, A, dt, hurt) {
+  pxA4Step(run, A, dt);
   const P = A.p, pw = A.pw; if (!pw) return;
   if (P.on) P.dj = 0;
   if (A.hearts < A.hLast) A.hits++; A.hLast = A.hearts; if (A.bMsg > 0) A.bMsg -= dt; if (A.gMsg > 0) A.gMsg -= dt;
@@ -39297,6 +39322,7 @@ function pxA3Draw(run, A, g, cam) {
   });
 }
 function pxA3Aura(run, A, g, cam) {
+  pxA4Wasser(run, A, g, cam);
   const P = A.p, pw = A.pw; if (!pw || P.hide) return; const x = Math.round(P.x - cam), y = Math.round(P.y);
   if (pw.blase) { g.globalAlpha = .28; pxEll(g, x - 13, y - 25, 26, 28, '#bfe4ff'); g.globalAlpha = .9; pxRect(g, x - 7, y - 21, 3, 2, '#ffffff'); pxRect(g, x - 9, y - 18, 2, 3, '#ffffff'); g.globalAlpha = 1; }
   if (pw.feder > 0 && (pw.feder > 4 || Math.floor(A.t * 6) % 2)) { pxRect(g, x - 8, y - 2, 4, 2, '#ffffff'); pxRect(g, x + 4, y - 2, 4, 2, '#ffffff'); pxRect(g, x - 9, y - 3, 2, 1, '#ffd84a'); pxRect(g, x + 7, y - 3, 2, 1, '#ffd84a'); }
@@ -39484,6 +39510,324 @@ PXA_LEVELS.push(
     "########~~~~~~####~~~~~~~~~##############################################################~~~~~~~~~~#####################################~~~~~~~~~##########################################################################################"
   ] }
 );
+
+/*@@src px_abenteuer4.js@@*/
+
+
+
+
+
+
+
+PXA_WX[9] = { walker: 'u9krake', flyer: 'u9qualle', small: 'u9seestern', ball: 'u9perle', end: 'u9tauchboot', plat: 'k2_u9plankeo_0', jet: 'u9blasen', hat: 'taucher', truhe: 'truhe', gs: .72, swim: 3,
+  fall: 'Hui, in den tiefen Graben! Zurück zur Fahne.', schatz: 'Der Schatz der Tiefe! +10 Fische' };
+const PXA_THEMES9 = {
+  korallenriff: [9, { gr: 'u9riff', haz: 'u9seeigel', wat: 'abgrund', t: 'u9koralle', s: 'u9muschel' }, ['#2ea6dc', '#2794d0', '#1e7fbe', '#1769a8', '#10528c']],
+  seegraswald: [9, { gr: 'u9tang', haz: 'u9seeigel', wat: 'abgrund', t: 'u9koralle', s: 'u9muschel' }, ['#22a090', '#1c8e84', '#167a76', '#116666', '#0c5254']],
+  wrack: [9, { gr: 'u9planke', haz: 'u9seeigel', wat: 'abgrund', t: 'u9koralle', s: 'u9muschel' }, ['#267ab4', '#1f6aa2', '#195a8e', '#134a7a', '#0e3b66']],
+  tiefergraben: [9, { gr: 'u9tiefstein', haz: 'u9seeigel', wat: 'abgrund', t: 'u9koralle', s: 'u9muschel' }, ['#143e76', '#103262', '#0c2750', '#091d40', '#06142e']],
+  perlengrotte: [9, { gr: 'u9perlmutt', haz: 'u9seeigel', wat: 'abgrund', t: 'u9koralle', s: 'u9muschel' }, ['#5e6ecc', '#505eba', '#424ea6', '#353f90', '#283078']],
+  krakenhoehle: [9, { gr: 'u9tiefstein', haz: 'u9seeigel', wat: 'abgrund', t: 'u9koralle', s: 'u9muschel' }, ['#3e2e80', '#33256e', '#281c5c', '#1e154a', '#150f38']]
+};
+Object.keys(PXA_THEMES9).forEach(th => { const [wd, cfg, sky] = PXA_THEMES9[th]; PXA_W2[th] = Object.assign({ wd }, PXA_WX[wd], cfg); PXA_THEME[th] = { sky, name: th }; });
+Object.assign(PXA_WAT, { abgrund: [null, null] });
+PXA_WELTEN.push({ n: 'UNTERWASSER', d: 'die Unterwasserwelt', e: '🐠', see: '#0e4f8a', welle: '#2a8fd0', nodes: [[38, 150], [74, 130], [110, 152], [146, 128], [180, 148], [212, 104]] });
+PXA_BOSS[9] = 'DER RIESENKRAKE';
+
+
+Object.assign(PXA_K3, {
+  u9riff: (g, v, top, r) => { pxA3fill(g, r, '#d8b878', ['#c8a464', '#e8cc94', '#b89454']); if (top) { pxRect(g, 0, 0, 16, 4, '#ff8a70'); pxRect(g, 0, 0, 16, 1, '#ffc0a8'); for (let x = 1; x < 16; x += 5) pxRect(g, x + (v % 2), 4, 2, 1 + ((x + v) % 2), '#ff8a70'); pxRect(g, 3 + v * 4, 1, 2, 1, '#ffffff'); } else pxRect(g, 4 + v * 3, 9, 3, 2, '#f4e0b4'); },
+  u9tang: (g, v, top, r) => { pxA3fill(g, r, '#3a6a5a', ['#2e5a4c', '#4a7c6a', '#244a40']); if (top) { pxRect(g, 0, 0, 16, 3, '#3fae55'); pxRect(g, 0, 0, 16, 1, '#8be07a'); for (let x = 0; x < 16; x += 4) pxRect(g, x + (v % 2), 3, 1, 2 + ((x + v) % 3), '#3fae55'); } },
+  u9planke: (g, v, top) => { pxRect(g, 0, 0, 16, 16, '#7a5230'); for (let y = 0; y < 16; y += 4) pxRect(g, 0, y + 3, 16, 1, '#5a3a22'); pxRect(g, 5 + v * 3, 0, 1, 16, '#5a3a22'); pxRect(g, 2 + v * 4, 5, 2, 1, '#9a6e44'); if (top) { pxRect(g, 0, 0, 16, 2, '#a87c50'); pxRect(g, 0, 0, 16, 1, '#c89a68'); pxRect(g, 1, 1, 1, 1, '#c8ccd4'); pxRect(g, 14, 1, 1, 1, '#c8ccd4'); pxRect(g, 6 + v * 3, 2, 3, 2, '#3fae55'); } },
+  u9tiefstein: (g, v, top, r) => { pxA3fill(g, r, '#2a3460', ['#222b52', '#343f70', '#1a2244']); if (top) { pxRect(g, 0, 0, 16, 3, '#46549a'); pxRect(g, 0, 0, 16, 1, '#7a8ad0'); pxRect(g, 3 + v * 4, 1, 2, 2, '#3fd1c8'); pxRect(g, 12 - v * 3, 2, 1, 1, '#9af0e8'); } else if (v === 1) pxRect(g, 6, 8, 2, 2, '#3fd1c8'); },
+  u9perlmutt: (g, v, top, r) => { pxA3fill(g, r, '#c8c0e8', ['#b4a8dc', '#dcd4f4', '#a8d8e8']); if (top) { pxRect(g, 0, 0, 16, 3, '#f4f0ff'); pxRect(g, 0, 0, 16, 1, '#ffffff'); pxEll(g, 3 + v * 4, 1, 4, 4, '#ffffff'); pxRect(g, 4 + v * 4, 2, 1, 1, '#ffb4d8'); } },
+  u9seeigel: (g) => { const K = PXC.k; for (let i = 0; i < 2; i++) { const x = i * 8; for (const [dx, dy] of [[0, 7], [2, 4], [4, 2], [6, 4], [7, 7]]) pxRect(g, x + dx, dy, 1, 7, K); pxEll(g, x + 1, 8, 7, 8, K); pxEll(g, x + 2, 9, 5, 6, '#5a3a8a'); pxRect(g, x + 3, 10, 1, 1, '#c8b4ff'); } },
+  u9blasen: (g) => { const K = PXC.k; pxRect(g, 0, 8, 16, 8, K); pxRect(g, 1, 9, 14, 7, '#7a6a52'); pxRect(g, 1, 9, 14, 1, '#a8987c'); pxRect(g, 4, 5, 8, 4, K); pxRect(g, 5, 6, 6, 3, '#3a4252'); pxEll(g, 3, 0, 4, 4, '#bfe4ff'); pxEll(g, 9, 1, 3, 3, '#bfe4ff'); pxRect(g, 4, 1, 1, 1, '#ffffff'); }
+});
+
+
+Object.assign(PXGEN, {
+  u9krake: (v, fr) => { const [c, g] = pxCanvas(20, 16), K = PXC.k; pxEll(g, 3, 0, 14, 12, K); pxEll(g, 4, 1, 12, 10, '#a05ad8'); pxRect(g, 6, 2, 4, 1, '#c890f0'); pxEll(g, 5, 4, 4, 4, '#ffffff'); pxEll(g, 11, 4, 4, 4, '#ffffff'); pxRect(g, 6 + (fr ? 1 : 0), 5, 2, 2, K); pxRect(g, 12 + (fr ? 1 : 0), 5, 2, 2, K); pxRect(g, 8, 9, 4, 1, K);
+    for (let i = 0; i < 4; i++) { const x = 2 + i * 5, d = (i + fr) % 2; pxRect(g, x, 10, 3, 5 - d, K); pxRect(g, x + 1, 10, 1, 4 - d, '#a05ad8'); pxRect(g, x + (d ? -1 : 2), 14 - d, 2, 2, K); } return c; },
+  u9qualle: (v, fr) => { const [c, g] = pxCanvas(22, 14), K = PXC.k; pxEll(g, 3, 0, 16, 10, K); pxEll(g, 4, 1, 14, 8, '#ff9fd0'); pxRect(g, 6, 2, 5, 1, '#ffd0e8'); pxRect(g, 3, 6, 16, 3, K); pxRect(g, 4, 6, 14, 2, '#ff7fbe'); pxRect(g, 8, 4, 2, 2, K); pxRect(g, 13, 4, 2, 2, K);
+    for (let i = 0; i < 5; i++) { const x = 4 + i * 3, d = (i + fr) % 2; pxRect(g, x + d, 9, 1, 3, '#ff7fbe'); pxRect(g, x + 1 - d, 11, 1, 3, '#ffb4d8'); } return c; },
+  u9seestern: (v, fr) => { const [c, g] = pxCanvas(14, 10), K = PXC.k; pxTri(g, 7, -1, 2, 9, 12, 9, K); pxTri(g, 0, 3, 14, 3, 7, 9, K); pxTri(g, 7, 1, 4, 8, 10, 8, '#ff9d2e'); pxTri(g, 2, 4, 12, 4, 7, 8, '#ff9d2e'); pxRect(g, 5, 5, 1, 1, K); pxRect(g, 8, 5, 1, 1, K); pxRect(g, 6, 3, 2, 1, '#ffd08a'); pxRect(g, fr ? 2 : 3, 9, 2, 1, K); pxRect(g, fr ? 10 : 9, 9, 2, 1, K); return c; },
+  u9perle: (v, fr) => { const [c, g] = pxCanvas(10, 10), K = PXC.k; pxEll(g, 0, 0, 10, 10, K); pxEll(g, 1, 1, 8, 8, '#f4f0ff'); const q = [[2, 2], [6, 2], [6, 6], [2, 6]][fr % 4]; pxRect(g, q[0], q[1], 2, 2, '#ffffff'); pxRect(g, 7 - q[0] + 1, 7 - q[1] + 1, 1, 1, '#c8b4ff'); return c; },
+  u9koralle: (v, fr) => { const [c, g] = pxCanvas(16, 32), K = PXC.k, f = ['#ff6f8a', '#ff9d2e', '#c86ad8'][(fr | 0) % 3], h = ['#ffb0c0', '#ffd08a', '#e8a8f0'][(fr | 0) % 3];
+    [[7, 8, 3, 24], [2, 14, 3, 12], [11, 12, 3, 14]].forEach(([x, y, w, hh]) => { pxRect(g, x - 1, y - 1, w + 2, hh + 1, K); pxRect(g, x, y, w, hh, f); pxRect(g, x, y, 1, hh, h); pxEll(g, x - 1, y - 3, w + 2, 5, K); pxEll(g, x, y - 2, w, 3, h); });
+    pxRect(g, 4, 20, 4, 3, K); pxRect(g, 5, 21, 2, 1, f); pxRect(g, 9, 18, 3, 3, K); pxRect(g, 10, 19, 1, 1, f); return c; },
+  u9muschel: () => { const [c, g] = pxCanvas(16, 16), K = PXC.k; pxEll(g, 1, 5, 14, 11, K); pxEll(g, 2, 6, 12, 9, '#ffe0c8'); for (let i = 0; i < 4; i++) pxRect(g, 4 + i * 3, 7, 1, 7, '#f4b89a'); pxRect(g, 5, 13, 6, 2, K); pxRect(g, 6, 13, 4, 1, '#f4b89a'); pxRect(g, 4, 7, 2, 1, '#ffffff'); return c; },
+  u9tauchboot: () => { const [c, g] = pxCanvas(48, 44), K = PXC.k; pxRect(g, 22, 2, 3, 12, K); pxRect(g, 23, 3, 1, 10, '#c8ccd4'); pxRect(g, 22, 2, 8, 3, K); pxRect(g, 23, 3, 6, 1, '#c8ccd4'); pxEll(g, 14, 8, 20, 14, K); pxEll(g, 15, 9, 18, 12, '#ffb03a');
+    pxEll(g, 2, 14, 42, 26, K); pxEll(g, 3, 15, 40, 24, '#ff9d2e'); pxEll(g, 6, 17, 30, 8, '#ffc46a'); pxRect(g, 4, 30, 38, 3, '#e07a1a');
+    [[10, 22], [22, 22], [34, 22]].forEach(([x, y]) => { pxEll(g, x - 1, y - 1, 10, 10, K); pxEll(g, x, y, 8, 8, '#dfe9f5'); pxEll(g, x + 1, y + 1, 6, 6, '#8fd0ff'); pxRect(g, x + 2, y + 2, 2, 1, '#ffffff'); });
+    pxRect(g, 43, 20, 4, 14, K); pxRect(g, 44, 21, 2, 12, '#c8ccd4'); pxRect(g, 41, 25, 4, 4, K); pxRect(g, 8, 38, 6, 5, K); pxRect(g, 9, 39, 4, 4, '#5d6878'); pxRect(g, 30, 38, 6, 5, K); pxRect(g, 31, 39, 4, 4, '#5d6878'); pxRect(g, 4, 43, 36, 1, K); return c; }
+});
+function pxAHat4(g, x, y, flip, style) {
+  if (style !== 'taucher') return false;
+  const K = PXC.k; pxRect(g, x, y + 3, 13, 6, K); pxRect(g, x + 1, y + 4, 11, 4, '#3fd1c8'); pxRect(g, x + 2, y + 5, 9, 2, '#bfe4ff'); pxRect(g, x + 3, y + 5, 2, 1, '#ffffff');
+  const sx = flip ? x - 2 : x + 13; pxRect(g, sx, y - 4, 3, 11, K); pxRect(g, sx + 1, y - 3, 1, 9, '#ffd84a'); pxRect(g, sx, y - 5, 3, 3, K); pxRect(g, sx + 1, y - 4, 1, 1, '#ef4b4b'); return true;
+}
+
+
+function pxABg9(g, run, A, cam) {
+  const W = run.W, H = run.H, th = A.D.th, t = A.t, tief = th === 'tiefergraben' || th === 'krakenhoehle';
+  g.globalAlpha = tief ? .05 : .09; for (let i = 0; i < 6; i++) { const x = ((i * 97 - cam * .05) % (W + 120) + W + 120) % (W + 120) - 60, w = 26 + (i * 13) % 20, s = Math.sin(t * .6 + i) * 6; pxTri(g, x + s, 0, x + w + s, 0, x - 50, H, '#ffffff'); pxTri(g, x + w + s, 0, x - 50 + w * 1.6, H, x - 50, H, '#ffffff'); } g.globalAlpha = 1;
+  const fern = tief ? '#0a1838' : th === 'seegraswald' ? '#0c4a4a' : th === 'perlengrotte' ? '#232a6a' : '#0e4a7c';
+  for (let x = 0; x < W; x += 4) { const wx = x + cam * .2, h = 26 + Math.sin(wx * .019) * 14 + Math.sin(wx * .051) * 7; pxRect(g, x, H - 40 - h, 4, h + 40, fern); }
+  if (th === 'wrack') { const x = W * .55 - cam * .1; pxTri(g, x - 10, H - 46, x + 150, H - 46, x + 120, H - 16, '#0c2e50'); pxRect(g, x + 10, H - 70, 120, 26, '#0c2e50'); pxRect(g, x + 56, H - 130, 5, 62, '#0c2e50'); pxRect(g, x + 30, H - 112, 58, 4, '#0c2e50'); for (let k = 0; k < 4; k++) pxEll(g, x + 24 + k * 26, H - 62, 8, 8, '#1a4a78'); }
+  if (th === 'krakenhoehle') for (let i = 0; i < 4; i++) { const x = ((i * 190 - cam * .12) % (W + 200) + W + 200) % (W + 200) - 100; for (let k = 0; k < 12; k++) pxEll(g, x + Math.sin(t * .8 + i + k * .5) * (6 + k), H - 30 - k * 9, 14 - k * .8, 12, '#241456'); }
+  if (th === 'perlengrotte') for (let i = 0; i < 14; i++) { const x = ((i * 71 - cam * .15) % (W + 40) + W + 40) % (W + 40) - 20, y = 30 + (i * 43) % (H - 90); g.globalAlpha = .5 + Math.sin(t * 2 + i) * .3; pxEll(g, x, y, 5, 5, '#f4f0ff'); g.globalAlpha = 1; pxRect(g, x + 1, y + 1, 1, 1, '#ffffff'); }
+  const gras = th === 'seegraswald' ? 16 : 8, gc = tief ? ['#143a5c', '#1a4a6a'] : ['#1f8a5a', '#2aa870'];
+  for (let i = 0; i < gras; i++) { const x = ((i * (W + 60) / gras - cam * .35) % (W + 60) + W + 60) % (W + 60) - 30, n = 5 + (i * 7) % 6; for (let k = 0; k < n; k++) pxRect(g, x + Math.round(Math.sin(t * 1.4 + i + k * .6) * (1 + k * .7)), H - 34 - k * 7, 3, 8, gc[(i + k) % 2]); }
+  for (let i = 0; i < 9; i++) { const sp = 14 + (i % 4) * 6, x = W + 20 - ((t * sp + i * 83 + cam * .25) % (W + 40)), y = 26 + (i * 37) % (H - 110) + Math.round(Math.sin(t + i) * 3), col = tief ? '#3fd1c8' : ['#ffd84a', '#ff8fc2', '#ffffff'][i % 3]; pxRect(g, x, y, 4, 2, col); pxRect(g, x + 4, y - 1, 1, 4, col); }
+}
+function pxA4Wasser(run, A, g, cam) {
+  if (!A.swim) return;
+  const W = run.W, H = run.H, t = A.t, P = A.p;
+  g.globalAlpha = .1; pxRect(g, 0, 0, W, H, '#2a8fd0'); g.globalAlpha = .55;
+  for (let i = 0; i < 14; i++) { const sp = 16 + (i % 5) * 7, x = ((i * 61 - cam * .6) % W + W) % W + Math.round(Math.sin(t * 1.5 + i) * 3), y = H - ((t * sp + i * 47) % (H + 10)), r = 1 + (i % 3); pxRect(g, x, y, r, r, '#dff2ff'); if (r > 1) pxRect(g, x, y, 1, 1, '#ffffff'); }
+  g.globalAlpha = 1;
+  if (!P.on && !P.hide && A.phase === 'play') { const n = A.swim - (P.sw | 0), x = Math.round(P.x - cam), y = Math.round(P.y); for (let k = 0; k < n; k++) { pxRect(g, x - 6 + k * 5, y - 27, 3, 3, PXC.k); pxRect(g, x - 5 + k * 5, y - 26, 1, 1, '#bfe4ff'); } }
+}
+function pxAMapArt9(g, W, o, wd, t) {
+  g.globalAlpha = .1; for (let i = 0; i < 5; i++) pxTri(g, o + 20 + i * 52, 0, o + 44 + i * 52, 0, o - 10 + i * 52, 190, '#ffffff'); g.globalAlpha = 1;
+  pxEll(g, o + 4, 70, 250, 120, PXC.k); pxEll(g, o + 6, 72, 246, 116, '#c8a464'); pxEll(g, o + 16, 78, 226, 96, '#d8b878'); pxEll(g, o + 40, 92, 170, 60, '#e8cc94');
+  [[26, 118, 0], [66, 176, 1], [104, 108, 2], [150, 176, 0], [234, 146, 1]].forEach(([x, y, v]) => pxDraw(g, 'u9koralle_a_' + v, o + x - 8, y - 32));
+  pxDraw(g, 'u9tauchboot', o + 186, 58); pxDraw(g, 'u9muschel', o + 82, 138); pxDraw(g, 'u9muschel', o + 136, 120);
+  pxDraw(g, 'u9qualle_a_' + (Math.floor(t * 3) % 2), o + 112 + Math.round(Math.sin(t) * 8), 46 + Math.round(Math.cos(t * 1.3) * 4));
+  for (let i = 0; i < 8; i++) pxRect(g, o + 20 + (i * 31) % 220, 190 - ((t * (10 + i * 3) + i * 40) % 150), 2, 2, '#dff2ff');
+}
+
+
+function pxA4Schwimm(run, A) {
+  const P = A.p, n = A.swim | 0; if (!n || P.on || P.vine || P.lock > 0 || P.coy > 0 || A.phase !== 'play' || (P.sw | 0) >= n) return false;
+  P.sw = (P.sw | 0) + 1; P.vy = -PXA_JUMP * .66; pxSfx.jump(); pxBurst(run, P.x, P.y - 4, ['#ffffff', '#bfe4ff', '#8fd0ff'], 7, { v: 30, up: 20, life: .5 }); return true;
+}
+function pxA4Step(run, A, dt) {
+  if (!A.swim) return; const P = A.p;
+  if (P.on || P.vine) P.sw = 0;
+  if (!A.swHint && !P.on && A.t > 3.2 && A.i >= 0 && !pxAS().lv[A.i]) { A.swHint = 1; A.msg = 'IN DER LUFT NOCHMAL TIPPEN: LUMI SCHWIMMT!'; A.msgT = 3.2; }
+}
+
+function pxA4Boden(A, x) {
+  const fest = c => c === '#' || c === 'I', top = xx => { let y = A.h - 1; if (!fest(pxATile(A, xx, y))) return -1; while (y > 0 && fest(pxATile(A, xx, y - 1))) y--; return y; };
+  const y = top(x); if (y < 4 || top(x - 1) !== y || top(x + 1) !== y) return -1;
+  for (let k = 1; k <= 3; k++) for (let dx = -1; dx <= 1; dx++) if (pxATile(A, x + dx, y - k) !== ' ') return -1;
+  return y;
+}
+function pxA4Fahnen(A) {
+  if (!A.start) return;
+  const tr = A.ents.find(e => e.k === 'truhe'), ende = Math.min(A.w - 8, tr ? Math.floor(tr.x / PXA_T) - 6 : A.w);
+  const fx = A.ents.filter(e => e.k === 'fahne').map(e => Math.floor(e.x / PXA_T)).filter(x => x < ende).sort((a, b) => a - b), pts = [Math.floor(A.start.x / PXA_T), ...fx, ende];
+  const belegt = x => A.ents.some(e => !e.deco && Math.abs((e.tx != null ? e.tx * PXA_T + 8 : e.ax != null ? e.ax : e.x) - (x * PXA_T + 8)) < 28);
+  for (let k = 0; k < pts.length - 1; k++) {
+    const a = pts[k], b = pts[k + 1], n = Math.floor((b - a) / 44);
+    for (let j = 1; j <= n; j++) {
+      const mid = Math.round(a + (b - a) * j / (n + 1));
+      for (let q = 0; q <= 36; q++) { const dx = q % 2 ? (q + 1) / 2 : -q / 2, x = mid + dx, y = pxA4Boden(A, x); if (y < 0 || belegt(x)) continue; A.ents.push({ k: 'fahne', x: x * PXA_T + 8, y: y * PXA_T, up: false, auto: true }); break; }
+    }
+  }
+}
+function pxA4Build(A) {
+  const W2 = PXA_W2[A.D.th]; A.swim = (W2 && W2.swim) | 0;
+  try { pxA4Fahnen(A); } catch (e) { }
+}
+
+
+PXA_LEVELS.push(
+  { n: "Korallenriff", th: "korallenriff", wd: 9, m: [
+    "                                                                                                                                                                                                                       #",
+    "                                                                                                                                                        *                                       *                      #",
+    "                                                                     *                                                                                                                                                 #",
+    "                                    oo                                                                                                                 o                                      oooo                     #",
+    "                                    ####                           ooo                                                                                 ##                                     ####                     #",
+    "                                                                  #####                                                 oo                           oo##              Q                      ####                     #",
+    "              ooo                                                 #####                                                                              ####                                     ####                     #",
+    "                                                                  #####                                o o o o        M                              ####                                     ####                     #",
+    "  Poozt                   oo                   oo      T oo    V  #####   K     t     o o o        H             oo           K       oo E         ######       H   oo       K      T oo      ####                F    #",
+    "#########>>>>#   #<<<<###########W#      #####################    ##################<<<<<<<<<######### ZZZ ZZZ ######        ##############################################################J############################",
+    "##############~~~##################~~~~~~#####################~~~~####################################~~~~~~~~~######~~~~~~~~###########################################################################################",
+    "##############~~~##################~~~~~~#####################~~~~####################################~~~~~~~~~######~~~~~~~~###########################################################################################"
+  ] },
+  { n: "Seegraswald", th: "seegraswald", wd: 9, m: [
+    "                                *                                                                                                                                                                                                         #",
+    "                                                                                                                                                                                                 *                                        #",
+    "                                                      *                                                                                                                                                                                   #",
+    "               o              oo                                                                                                                                                               oooo                                       #",
+    "               ##             ####                  ooo                                                                                                                                        ####                                       #",
+    "             oo##                                  #####      Q                                                                                   Q                                            ####                                       #",
+    "             ####                                  #####                                                                                                              ooo                      ####         ooo                           #",
+    "             ####                                  #####                                                        o o o o                                                                        ####                                       #",
+    "  Poozs    ######                        oo     V  #####   oo       K     t   oo E   E     H         o o o                oo   K         T oo  oo         H                       oo   K       ####                     oo           F    #",
+    "###########################W#      ############    ################################################>>>>>>>>>### ZZZ ZZZ #########################################>>>>#   #<<<<##############J##########>>>>#   #<<<<#######################",
+    "#############################~~~~~~############~~~~############################################################~~~~~~~~~##############################################~~~###################################~~~############################",
+    "#############################~~~~~~############~~~~############################################################~~~~~~~~~##############################################~~~###################################~~~############################"
+  ] },
+  { n: "Das Schiffswrack", th: "wrack", wd: 9, m: [
+    "                                                                                                                                                                                                                                #",
+    "                                                                                                                                                                                   *           *                                #",
+    "                                                                                                                                                                                                                                #",
+    "                          oo                                                                                                      oooo                                            o          oooo                               #",
+    "                          ####                    B           *                                                                   ####                           B                ##         ####                               #",
+    "                                                                                                                 Q                ####          Q                               oo##         ####                               #",
+    "                                                             ==                                                                   ####                                          ####         ####           ooo                 #",
+    "                                                                                          o o o o                                 ####                                          ####         ####                               #",
+    "  Poozt   oo E   C                   oo        ooo          o ^ o      K      T oo    H             oo     t  oo       K          ####       oo         H     ooo       K     ######         ####           ^^^            F    #",
+    "#######################W#      ###########################<<<<<<<<<###################### ZZZ ZZZ #############################J##########################################################J######################################",
+    "#########################~~~~~~##########################################################~~~~~~~~~###############################################################################################################################",
+    "#########################~~~~~~##########################################################~~~~~~~~~###############################################################################################################################"
+  ] },
+  { n: "Tiefer Graben", th: "tiefergraben", wd: 9, m: [
+    "                                                                                                                                 *                                                                                                 #",
+    "                                                                                                                                                                                                                                   #",
+    "                                                                                                                                                                                            *                                      #",
+    "                      oo                                                                                                       oo                                                                                                  #",
+    "                      ####                                                                    *                                ####                                                       ooo                                      #",
+    "           oo                                             Q                                                                                                          Q                   #####                                     #",
+    "                                                                                             ==                                                   ooo                                    #####               oo                    #",
+    "         M                                                                                             o o o o                                                                           #####               ==                    #",
+    "  Pooz                           oo         T oo    t  oo       K       oo E   E     H      o ^ o                oo   K                   oo      ^^^      H      oo       K     s    V  #####    oo E   E                    F    #",
+    "########        ###W#      ###############################################################>>>>>>>>>### ZZZ ZZZ #############W#      #################################################    ###################     ###################",
+    "########~~~~~~~~#####~~~~~~###########################################################################~~~~~~~~~###############~~~~~~#################################################~~~~###################~~~~~###################",
+    "########~~~~~~~~#####~~~~~~###########################################################################~~~~~~~~~###############~~~~~~#################################################~~~~###################~~~~~###################"
+  ] },
+  { n: "Perlengrotte", th: "perlengrotte", wd: 9, m: [
+    "                                                                                                                                                                                                                           #",
+    "                                                                                                                                                                                          *             *                  #",
+    "                                                                                                                                                                                                                           #",
+    "                            oo                                                                                                                                                                         o                   #",
+    "                            ####                                                                                                                                                         o o           ##                  #",
+    "                                                                                                Q        *             oo           Q                               Q            Q                   oo##                  #",
+    "                                                                                                                                                                                                     ####                  #",
+    "                                                                                                      o o o o        M                                                                               ####                  #",
+    "  Poozt     o ^ o                      oo    oo C   C      T oo  K          o ^ o        H   oo                 oo           K   oo         t     T oo    H      oo       K   oo                   ######             F    #",
+    "##########>>>>>>>>>######W#      #########################################>>>>>>>>>################## ZZZ ZZZ ######        ##############################################################J#################################",
+    "###########################~~~~~~####################################################################~~~~~~~~~######~~~~~~~~################################################################################################",
+    "###########################~~~~~~####################################################################~~~~~~~~~######~~~~~~~~################################################################################################"
+  ] },
+  { n: "Die Krakenhöhle", th: "krakenhoehle", wd: 9, m: [
+    "                                                                                                                                                                                                                                       #",
+    "                                                                                                                                                                               *                  *                                    #",
+    "                                                                                                                                                                                                                                       #",
+    "                 oo                                                                                                                                                                                                                    #",
+    "                 ####                     B                                                                                                  *                                o o                o o                                   #",
+    "                                                                                                                     Q            Q                               Q                                                                    #",
+    "                                                                                          ooo                                               ==                                                                                         #",
+    "                                                                                          #####    o o o o                                                                                                                             #",
+    "  Poozs                     oo         ooo          T oo  K      o ^ o        H           #####              oo   oo       K   oo          o ^ o        H      oo       K                T oo                 X                   F    #",
+    "########   ###W#      #########################################<<<<<<<<<########################## ZZZ ZZZ ##############################<<<<<<<<<#############################J##################J#####################################",
+    "########~~~#####~~~~~~############################################################################~~~~~~~~~#############################################################################################################################",
+    "########~~~#####~~~~~~############################################################################~~~~~~~~~#############################################################################################################################"
+  ] }
+);
+
+/*@@src px_baukasten.js@@*/
+
+
+
+
+
+
+
+const PXB_W = 80, PXB_H = 12, PXB_N = 4, PXB_OK = '# =^o*HCEBJQTKMPF';
+const PXB_PAL = [['#', 'BODEN'], ['=', 'BRETT'], ['^', 'STACHELN'], ['o', 'FISCH'], ['*', 'STERN'], ['H', 'HERZ'], ['C', 'KRABBLER'], ['E', 'LÄUFER'], ['B', 'FLIEGER'],
+  ['J', 'SPRUNGFEDER'], ['Q', 'FRAGEKISTE'], ['T', 'RÄTSEL-TOR'], ['K', 'FAHNE'], ['M', 'FAHR-STEG'], ['P', 'START'], ['F', 'ZIEL'], [' ', 'RADIERER']];
+function pxBauS() { const P = pxS(); if (!isObj(P.bau)) P.bau = {}; return P.bau; }
+function pxBauLeer() {
+  const m = []; for (let y = 0; y < PXB_H; y++) m.push((y >= 9 ? '#' : ' ').repeat(PXB_W));
+  const set = (x, y, c) => { m[y] = m[y].slice(0, x) + c + m[y].slice(x + 1); }; set(2, 8, 'P'); set(PXB_W - 5, 8, 'F'); return m;
+}
+function pxBauGut(d) { return isObj(d) && Array.isArray(d.m) && d.m.length === PXB_H && d.m.every(r => typeof r === 'string' && r.length === PXB_W); }
+function pxBauLevel(nr) {
+  const B = pxBauS(); if (!pxBauGut(B[nr])) B[nr] = { th: PXA_LEVELS[0].th, m: pxBauLeer() };
+  const D = B[nr]; if (!PXA_THEME[D.th]) D.th = PXA_LEVELS[0].th;
+  D.m = D.m.map(r => r.split('').map(c => PXB_OK.includes(c) ? c : ' ').join(''));
+  return D;
+}
+function pxBauThemes() {
+  const out = []; for (let w = 1; w <= 12; w++) { const i = pxAFirst(w); if (i >= 0) out.push([PXA_LEVELS[i].th, (PXA_WELTEN[w] && PXA_WELTEN[w].n) || (w === 1 ? 'EISLAND' : 'WELT ' + w)]); }
+  return out;
+}
+function pxBauMenue() {
+  const run = pxView({ id: 'bau', title: 'Level-Baukasten', pad: 'none' }), B = pxBauS();
+  pxLoop(run, () => { }, g => { pxSky(g, run, ['#58b4f0', '#78c4f4', '#9cd6f8', '#c4e8fc', '#e4f4ff']); pxPara(g, run, 'berge', 0, 0, 96); });
+  pxEnd(run, { title: 'Level-Baukasten', big: '🧱', lines: ['Baue eigene Level für Lumi und spiele sie gleich.', 'Eigene Level geben keine Münzen.'],
+    btns: Array.from({ length: PXB_N }, (_, k) => [pxBauGut(B[k + 1]) ? `Level ${k + 1} weiterbauen` : `Level ${k + 1} neu bauen`, () => pxBauEdit(k + 1), k === 0]) });
+}
+function pxBauEdit(nr) {
+  const D = pxBauLevel(nr), TH = pxBauThemes();
+  const run = pxView({ id: 'bau', title: 'Mein Level ' + nr, H: 262, pad: 'none', back: () => pxBauMenue() });
+  const E = { cam: 0, sel: '#', msg: 'UNTEN EIN TEIL WÄHLEN, DANN INS BILD TIPPEN', msgT: 5, leer: -9, t: 0 }; run.bau = E;
+  const T = PXA_T, get = (x, y) => D.m[y][x], set = (x, y, c) => { D.m[y] = D.m[y].slice(0, x) + c + D.m[y].slice(x + 1); };
+  const zaehl = c => D.m.reduce((n, r) => n + r.split(c).length - 1, 0), sag = (t, s) => { E.msg = t; E.msgT = s || 2.2; };
+  const maxCam = () => Math.max(0, PXB_W - Math.floor(run.W / T));
+  const setze = (x, y) => {
+    const c = E.sel, alt = get(x, y); if (alt === c) return;
+    if ((alt === 'P' || alt === 'F') && c !== 'P' && c !== 'F') return sag(alt === 'P' ? 'DER START BLEIBT. WÄHLE START, UM IHN ZU VERSETZEN' : 'DAS ZIEL BLEIBT. WÄHLE ZIEL, UM ES ZU VERSETZEN', 3);
+    if (c === '*' && zaehl('*') >= 3) return sag('HÖCHSTENS 3 STERNE');
+    if (c === 'T' && y < 2) return sag('DAS TOR BRAUCHT PLATZ NACH OBEN');
+    if (c === 'P' || c === 'F') for (let yy = 0; yy < PXB_H; yy++) if (D.m[yy].includes(c)) D.m[yy] = D.m[yy].split(c).join(' ');
+    set(x, y, c); E.neu = true;
+  };
+  const spr = (g, name, X, Y, fit) => {
+    const s = pxSpr(name), sc = fit ? Math.min(1, 16 / Math.max(s.width, s.height)) : 1, w = Math.round(s.width * sc), h = Math.round(s.height * sc);
+    g.drawImage(s, Math.round(X + 8 - w / 2), Y + 16 - h, w, h);
+  };
+  const box = (g, X, Y, col, ch) => { pxRect(g, X, Y, 16, 16, PXC.k); pxRect(g, X + 1, Y + 1, 14, 14, col); pxText(g, ch, X + 8, Y + 5, '#ffffff', 1, 'c'); };
+  const teil = (g, c, X, Y, oben, fit) => {
+    const W2 = PXA_W2[D.th];
+    if (c === '#') pxDraw(g, W2 ? 'k2_' + W2.gr + (oben ? '_' : 'o_') + '0' : oben ? 'kachel_schnee_0' : 'kachel_schneeo_0', X, Y);
+    else if (c === '=') pxDraw(g, 'kachel_holz_0', X, Y);
+    else if (c === '^') pxDraw(g, W2 ? 'k2_' + W2.haz + '_0' : 'kachel_zapfen_0', X, Y);
+    else if (c === 'o') spr(g, 'fisch', X, Y - 3, fit); else if (c === '*') spr(g, 'stern', X, Y - 2, fit); else if (c === 'H') spr(g, 'herz', X, Y - 3, fit);
+    else if (c === 'C') spr(g, ((W2 && W2.small) || 'krabbe') + '_a_0', X, Y, fit); else if (c === 'E') spr(g, ((W2 && W2.walker) || 'eidechse') + '_a_0', X, Y, fit);
+    else if (c === 'B') spr(g, ((W2 && W2.flyer) || 'moewe') + '_a_0', X, Y - 3, fit);
+    else if (c === 'J') pxDraw(g, 'kachel_feder_0', X, Y); else if (c === 'Q') pxDraw(g, 'kachel_kiste_0', X, Y);
+    else if (c === 'K') spr(g, 'fahne_a_0', X, Y, fit);
+    else if (c === 'T') { box(g, X, Y, '#7a5acd', 'T'); if (!fit) { pxRect(g, X, Y - 32, 16, 32, PXC.k); pxRect(g, X + 1, Y - 31, 14, 31, '#9a7ae8'); pxRect(g, X + 6, Y - 20, 4, 6, '#ffd84a'); } }
+    else if (c === 'M') { pxRect(g, X - (fit ? 0 : 16), Y, fit ? 16 : 48, 6, PXC.k); pxRect(g, X + 1 - (fit ? 0 : 16), Y + 1, fit ? 14 : 46, 4, '#c89a68'); pxText(g, '<>', X + 8, Y + 8, '#ffffff', 1, 'c'); }
+    else if (c === 'P') spr(g, 'lumi_j_0', X, Y, fit);
+    else if (c === 'F') { box(g, X, Y, '#2fae4f', 'Z'); for (let k = 0; k < 4; k++) pxRect(g, X + 2 + k * 3, Y + 2 + (k % 2), 2, 2, '#ffffff'); }
+  };
+  run.onTap = (x, y, ph) => {
+    if (ph === 'up') { if (E.neu) { E.neu = false; save(); } return; }
+    if (y < PXB_H * T) { const tx = E.cam + Math.floor(x / T), ty = Math.floor(y / T); if (tx >= 0 && tx < PXB_W && ty >= 0 && ty < PXB_H) setze(tx, ty); return; }
+    if (ph !== 'down') return;
+    const W = run.W;
+    if (y < 216) {
+      if (x < 30) E.cam = Math.max(0, E.cam - 8); else if (x < 62) E.cam = Math.min(maxCam(), E.cam + 8);
+      else if (x < W - 124) { const k = TH.findIndex(t => t[0] === D.th); D.th = TH[(k + 1) % TH.length][0]; save(); sag('WELT: ' + TH[(k + 1) % TH.length][1]); }
+      else if (x < W - 62) { if (E.t - E.leer < 2.5) { D.m = pxBauLeer(); E.cam = 0; E.leer = -9; save(); sag('ALLES LEER. VIEL SPASS BEIM BAUEN!'); } else { E.leer = E.t; sag('NOCHMAL TIPPEN: DANN IST ALLES WEG', 2.5); } }
+      else { if (zaehl('P') !== 1 || zaehl('F') !== 1) return sag('DAS LEVEL BRAUCHT START UND ZIEL', 3); save(); pxSfx.ok(); pxAPlay(-1, { n: 'MEIN LEVEL ' + nr, th: D.th, wd: (PXA_LEVELS.find(l => l.th === D.th) || {}).wd || 1, m: D.m.slice(), eigen: true, nr }); }
+      return;
+    }
+    const cw = Math.floor(W / 9), k = (y < 239 ? 0 : 9) + Math.min(8, Math.floor(x / cw)); if (PXB_PAL[k]) { E.sel = PXB_PAL[k][0]; sag(PXB_PAL[k][1], 1.6); pxSfx.step(); }
+  };
+  pxLoop(run, dt => { E.t += dt; if (E.msgT > 0) E.msgT -= dt; E.cam = Math.min(E.cam, maxCam()); }, g => {
+    const W = run.W, sky = (PXA_THEME[D.th] && PXA_THEME[D.th].sky) || ['#58b4f0', '#78c4f4', '#9cd6f8', '#c4e8fc'], n = Math.ceil(W / T);
+    pxSky(g, run, sky); pxRect(g, 0, PXB_H * T, W, run.H - PXB_H * T, '#1d2440');
+    g.globalAlpha = .12; for (let x = 0; x <= n; x++) pxRect(g, x * T, 0, 1, PXB_H * T, '#ffffff'); for (let y = 0; y <= PXB_H; y++) pxRect(g, 0, y * T, W, 1, '#ffffff'); g.globalAlpha = 1;
+    for (let y = 0; y < PXB_H; y++) for (let i = 0; i < n; i++) { const x = E.cam + i; if (x >= PXB_W) break; const c = get(x, y); if (c !== ' ') teil(g, c, i * T, y * T, y > 0 && get(x, y - 1) === '#'); }
+    if (E.cam + n >= PXB_W) pxRect(g, (PXB_W - E.cam) * T, 0, W, PXB_H * T, '#1d2440');
+
+    const knopf = (x, w, t, col) => { pxRect(g, x, 195, w, 19, PXC.k); pxRect(g, x + 1, 196, w - 2, 17, col); pxText(g, t, x + w / 2, 201, '#ffffff', 1, 'c'); };
+    knopf(1, 28, '<', E.cam > 0 ? '#3b7cf0' : '#4a5464'); knopf(32, 28, '>', E.cam < maxCam() ? '#3b7cf0' : '#4a5464');
+    const tn = (TH.find(t => t[0] === D.th) || ['', 'WELT'])[1]; const tm = Math.max(4, Math.floor((W - 196) / 6)); knopf(64, W - 190, tn.length > tm ? tn.slice(0, tm) : tn, '#7a5acd');
+    knopf(W - 124, 60, 'LEEREN', E.t - E.leer < 2.5 ? '#ef4b4b' : '#4a5464'); knopf(W - 62, 61, 'SPIELEN', '#2fae4f');
+    const cw = Math.floor(W / 9);
+    PXB_PAL.forEach((p, k) => { const X = (k % 9) * cw, Y = k < 9 ? 217 : 240; pxRect(g, X + 1, Y, cw - 2, 21, p[0] === E.sel ? '#ffd84a' : '#2c3560'); pxRect(g, X + 2, Y + 1, cw - 4, 19, p[0] === E.sel ? '#3a4a8a' : '#232a50');
+      if (p[0] === ' ') { pxRect(g, X + cw / 2 - 6, Y + 5, 12, 10, '#ff8fc2'); pxRect(g, X + cw / 2 - 6, Y + 5, 12, 3, '#ffffff'); } else teil(g, p[0], Math.round(X + cw / 2 - 8), Y + 3, false, true); });
+    pxText(g, `${E.cam + 1}-${Math.min(PXB_W, E.cam + n)} VON ${PXB_W}`, W - 3, 3, '#ffffff', 1, 'r', true);
+    if (E.msgT > 0) { const w = pxTextW(E.msg) + 10; pxRect(g, Math.round(W / 2 - w / 2), 172, w, 13, PXC.k); pxText(g, E.msg, W / 2, 175, '#ffd84a', 1, 'c'); }
+  });
+}
+function pxBauZiel(run, A, eig) {
+  pxEnd(run, { title: 'Dein Level ist geschafft!', big: '🎉', lines: [`🐟 ${A.fish} von ${A.fishMax} Fischen`, `⭐ ${A.stars.size} Sterne gefunden`, 'Eigene Level geben keine Münzen.'],
+    btns: [['Weiter bauen', () => pxBauEdit(eig.nr), true], ['Nochmal spielen', () => pxAPlay(-1, eig)], ['Baukasten', () => pxBauMenue()]] });
+}
+pxReg({ id: 'bau', t: 'Level-Baukasten', d: 'Baue eigene Level für Lumi und spiele sie!', e: '🧱', i: 'kachel_kiste_0', tag: 'Abenteuer', o: 1.2,
+  start: () => pxBauMenue(), prog: () => { const B = pxBauS(), n = Object.keys(B).filter(k => pxBauGut(B[k])).length; return n ? `${n} von ${PXB_N} Leveln gebaut` : 'Vier Plätze für eigene Level'; } });
+if (typeof PX_NEW !== 'undefined') PX_NEW.bau = 'Neu';
 
 /*@@src px_ski.js@@*/
 
@@ -55750,6 +56094,7 @@ function fzS() {
   ['sp', 's', 'u', 'n', 'tf', 'tg', 'meister', 'pokal', 'elf', 'duo', 'saison'].forEach(k => { z.st[k] = z.st[k] | 0; });
   if (!FZ_LEN.some(l => l[0] === z.len)) z.len = 'normal';
   if (!PX_FACH.some(f => f[0] === z.fach)) z.fach = 'mix';
+  if (!FZ_PLATZ[z.platz]) z.platz = 'rasen';
   if (z.liga && !(isObj(z.liga) && Array.isArray(z.liga.teams) && Array.isArray(z.liga.fx) && isObj(z.liga.tab))) z.liga = null;
   if (z.pokal && !(isObj(z.pokal) && Array.isArray(z.pokal.opp))) z.pokal = null;
   return z;
@@ -56040,6 +56385,8 @@ function fzMenu(Z) {
     <div class="fz-modes">${mode('freund', '⚽', 'Freundschaftsspiel', 'Gegner aussuchen und los')}${mode('liga', '📋', 'Liga', lgTxt)}${mode('pokal', '🏆', 'Pokal', pkTxt)}
       ${mode('elf', '🎯', 'Elfmeterschießen', '5 Schüsse für jedes Team')}${mode('duo', '👫', 'Zu zweit', 'Zwei Kinder an einem Gerät')}${mode('team', '👕', 'Mein Team', 'Name, Trikot und Spieler')}</div>
     <div class="fz-opt"><span>Spielzeit</span>${FZ_LEN.map(l => `<button class="pxw-chip ${l[0] === z.len ? 'on' : ''}" data-act="fzlen" data-v="${l[0]}">${l[1]}</button>`).join('')}</div>
+    <div class="fz-opt"><span>Platz</span>${Object.keys(FZ_PLATZ).map(k => `<button class="pxw-chip ${k === z.platz ? 'on' : ''}" data-act="fzplatz" data-v="${k}">${FZ_PLATZ[k].e} ${FZ_PLATZ[k].n}</button>`).join('')}</div>
+    <p class="fz-help fz-ph" id="fzPlatzInfo">${esc(FZ_PLATZ[z.platz].d)}</p>
     <div class="fz-opt"><span>Trainerfragen</span>${PX_FACH.map(f => `<button class="pxw-chip ${f[0] === z.fach ? 'on' : ''}" data-act="fzfach" data-v="${f[0]}">${f[2]} ${f[1]}</button>`).join('')}</div>
     ${st.sp ? `<div class="fz-stats"><span><small>Spiele</small><b>${st.sp}</b></span><span><small>Siege</small><b>${st.s}</b></span><span><small>Tore</small><b>${st.tf}</b></span><span><small>Meister</small><b>${st.meister}</b></span><span><small>Pokal</small><b>${st.pokal}</b></span></div>` : ''}
     <p class="fz-help">${touch ? '🕹️ laufen · ⚽ halten = fester Schuss · ➡️ PASS. Ohne Ball: 🦵 Grätsche, 🔄 Spieler wechseln.' : 'Pfeiltasten laufen · Leertaste halten = Schuss · X = Pass. Ohne Ball: Leertaste = Grätsche, X = Spieler wechseln.'}<br>📣 Vor jedem Anstoß kommt eine Trainerfrage. Richtig = ⚡ <b>Superschuss</b>!</p>`, [], { cls: 'fz-menu', label: 'Lumis Fußballstadion' });
@@ -56112,7 +56459,7 @@ function fzSetup(Z, d0, d1, duo) {
 function fzMatch(Z, o) {
   fzPanelHide(Z);
   const z = fzS();
-  Z.mode = o.mode; Z.after = o.after || null; Z.oppId = o.opp; Z.cup = !!o.cup;
+  Z.mode = o.mode; Z.after = o.after || null; Z.oppId = o.opp; Z.cup = !!o.cup; Z.platz = z.platz; Z.bande = 0;
   fzSetup(Z, fzOwnDef(), fzDef(o.opp), o.duo);
   Z.HALF = Z.HALF0 || (FZ_LEN.find(l => l[0] === z.len) || FZ_LEN[1])[2];
   Z.half = 1; Z.time = Z.HALF; Z.score = [0, 0]; Z.goals = []; Z.shots = [0, 0]; Z.saves = [0, 0]; Z.askN = 0; Z.okN = 0; Z.idle = 0;
@@ -56479,7 +56826,7 @@ function fzBall(Z, dt, noGoal) {
   for (let i = 0; i < n; i++) { const ox = b.x; b.x += b.vx * h; b.y += b.vy * h; fzGoalPhys(Z, b, ox); }
   if (b.owner) { if (fzD(b, b.owner) > 16) b.owner = null; }
   else {
-    const f = Math.exp(-dt * (b.z > .5 ? .35 : 1.1)); b.vx *= f; b.vy *= f;
+    const f = Math.exp(-dt * (b.z > .5 ? .35 : 1.1 * fzPlatz(Z).reib)); b.vx *= f; b.vy *= f;
     if (b.z > 0 || b.vz) { b.vz -= 430 * dt; b.z += b.vz * dt; if (b.z <= 0) { b.z = 0; b.vz = b.vz < -45 ? -b.vz * .45 : 0; } }
     if (b.sup && sp < 120) b.sup = false;
   }
@@ -56519,6 +56866,7 @@ function fzGoalPhys(Z, b, ox) {
 function fzLines(Z) {
   const b = Z.ball, L = FZ.L, D = FZ.D;
   if (Z.inNet >= 0) { if ((Z.inNet === 0 && b.x < -2.5) || (Z.inNet === 1 && b.x > L + 2.5)) fzGoal(Z, Z.inNet === 0 ? 1 : 0); return; }
+  if (fzPlatz(Z).bande) return fzBande(Z);
   const lt = b.last ? b.last.team : 0;
   if (b.y < -3 || b.y > D + 3) return fzSetStart(Z, 'einwurf', 1 - lt, fzCl(b.x, 8, L - 8), b.y < 0 ? -2 : D + 2);
   if (b.x < -3) return lt === 0 ? fzSetStart(Z, 'ecke', 1, 0, b.y < D / 2 ? 0 : D) : fzSetStart(Z, 'abstoss', 0);
@@ -56689,10 +57037,10 @@ function fzPaintBg(Z) {
   const cx = X(FZ.L / 2); pxRect(g, cx - 31, 7, 62, 15, '#1d2440'); pxRect(g, cx - 29, 9, 58, 11, '#3f86ee'); pxRect(g, cx - 29, 9, 58, 2, '#8fd0ff'); pxText(g, 'STADION', cx, 12, '#ffffff', 1, 'c');
   for (const fx of [X(-30), X(FZ.L + 30)]) { pxRect(g, fx - 1, 0, 3, bandY, '#5d6878'); pxRect(g, fx - 10, 0, 21, 6, '#3a4250'); for (let i = 0; i < 4; i++) pxRect(g, fx - 9 + i * 5, 1, 3, 4, '#fff3c4'); }
   fzAds(g, bandY, 0);
-  pxRect(g, 0, bandY + 9, BW, FZ.TOP - bandY - 9, '#2a7a3c');
-  for (let x = 0; x < BW; x++) { const wx = x - FZ.MX - FZ_PADX, stripe = Math.floor((wx + 2080) / 32) % 2; pxRect(g, x, FZ.TOP - 3, 1, H - FZ.TOP + 3, stripe ? '#3fae4f' : '#37a046'); }
-  for (let i = 0; i < 1500; i++) pxRect(g, Math.floor(rnd() * BW), FZ.TOP + Math.floor(rnd() * (H - FZ.TOP)), 1, 1, rnd() < .5 ? '#46b857' : '#329a41');
-  const W1 = '#eaf7ec', hl = (x0, x1, y) => pxRect(g, X(x0), Y(y), X(x1) - X(x0) + 1, 1, W1), vl = (x, ya, yb) => pxRect(g, X(x), Y(ya), 1, Y(yb) - Y(ya) + 1, W1);
+  const PL = fzPlatz(Z); pxRect(g, 0, bandY + 9, BW, FZ.TOP - bandY - 9, PL.rand);
+  for (let x = 0; x < BW; x++) { const wx = x - FZ.MX - FZ_PADX, stripe = Math.floor((wx + 2080) / 32) % 2; pxRect(g, x, FZ.TOP - 3, 1, H - FZ.TOP + 3, stripe ? PL.g1 : PL.g2); }
+  for (let i = 0; i < 1500; i++) pxRect(g, Math.floor(rnd() * BW), FZ.TOP + Math.floor(rnd() * (H - FZ.TOP)), 1, 1, rnd() < .5 ? PL.p1 : PL.p2);
+  const W1 = PL.linie, hl = (x0, x1, y) => pxRect(g, X(x0), Y(y), X(x1) - X(x0) + 1, 1, W1), vl = (x, ya, yb) => pxRect(g, X(x), Y(ya), 1, Y(yb) - Y(ya) + 1, W1);
   const arc = (ax, ay, r, from, to) => { let last = null; for (let a = from; a <= to + 1e-6; a += Math.PI / 48) { const pt = [X(ax + Math.cos(a) * r), Math.round(fzSY(ay + Math.sin(a) * r))]; if (last) pxLine(g, last[0], last[1], pt[0], pt[1], W1); last = pt; } };
   hl(0, FZ.L, 0); hl(0, FZ.L, FZ.D); vl(0, 0, FZ.D); vl(FZ.L, 0, FZ.D); vl(FZ.L / 2, 0, FZ.D);
   arc(FZ.L / 2, FZ.D / 2, FZ.CR, 0, Math.PI * 2); pxRect(g, X(FZ.L / 2) - 1, Y(FZ.D / 2), 3, 1, W1);
@@ -56705,6 +57053,7 @@ function fzPaintBg(Z) {
     arc(gx, 0, 6, s ? Math.PI / 2 : 0, s ? Math.PI : Math.PI / 2); arc(gx, FZ.D, 6, s ? Math.PI : -Math.PI / 2, s ? Math.PI * 1.5 : 0);
   }
   for (const [fx, fy] of [[0, 0], [FZ.L, 0], [0, FZ.D], [FZ.L, FZ.D]]) { pxRect(g, X(fx), Y(fy) - 8, 1, 8, '#ffffff'); pxRect(g, X(fx) + 1, Y(fy) - 8, 4, 3, '#ef4b4b'); }
+  fzPlatzBg(Z, g, X, Y, rnd);
   const nb = Y(FZ.D) + 4; fzAds(g, nb, 3); pxRect(g, 0, nb + 9, BW, H - nb - 9, '#0b1026');
 
   const [c0, c1] = fzFanCols(Z), furs = Object.values(FZ_ANI).map(a => a.f), F = [];
@@ -56777,6 +57126,7 @@ function fzDrawBall(Z, g) {
   const b = Z.ball; if (Z.state === 'cele') return;
   const sx = fzSX(Z, b.x, b.y), sy = fzSY(b.y), fr = Math.floor(b.roll / 5) % 2;
   pxDraw(g, b.sup && typeof PXGEN.pxkickball === 'function' ? 'pxkickball_a_' + fr : fr ? 'ball2' : 'ball', sx - 3, sy - 5 - b.z);
+  if (fzPlatz(Z).ball && !b.sup) { g.globalAlpha = .55; pxRect(g, Math.round(sx - 2), Math.round(sy - 4 - b.z), 4, 4, fzPlatz(Z).ball); g.globalAlpha = 1; }
 }
 function fzDrawMarks(Z, g) {
   const W = Z.run.W;
@@ -56822,7 +57172,7 @@ function fzHudDom(Z) {
 }
 function fzDraw(Z, g) {
   if (Z.state === 'pens' && Z.pens) { fzPensDraw(Z, g); return; }
-  const run = Z.run, key = Z.T ? Z.T[0].kit.c + Z.T[1].kit.c : 'menu' + fzS().team.c;
+  const run = Z.run, key = (Z.T ? Z.T[0].kit.c + Z.T[1].kit.c : 'menu' + fzS().team.c) + fzPlatzKey(Z);
   if (!Z.bg || Z.bgKey !== key) { Z.bgKey = key; fzPaintBg(Z); }
   g.save(); if (Z.shake > 0) g.translate(Math.round((Math.random() * 2 - 1) * Z.shake * 6), Math.round((Math.random() * 2 - 1) * Z.shake * 4));
   fzDrawField(Z, g); fzDrawFans(Z, g);
@@ -56837,7 +57187,7 @@ function fzDraw(Z, g) {
     for (const p of E) { if (p) fzDrawP(Z, g, p); else fzDrawBall(Z, g); }
   }
   fzGoalDraw(Z, g, 0, true); fzGoalDraw(Z, g, 1, true);
-  pxPartsDraw(g, run);
+  pxPartsDraw(g, run); fzWetter(Z, g);
   if (Z.T && Z.state !== 'cele') fzDrawMarks(Z, g);
   g.restore();
   if (Z.T && Z.state !== 'cele') { fzDrawBoard(Z, g); fzDrawRadar(Z, g); }
@@ -57162,6 +57512,7 @@ Object.assign(ACT, {
   },
   fzopp: t => { const Z = FZG; if (!Z || !Z.pickCb) return; Sound.tap(); const cb = Z.pickCb; Z.pickCb = null; cb(t.dataset.id); },
   fzduo: t => { const Z = FZG; if (!Z) return; Sound.tap(); const id = t.dataset.id; if (t.dataset.v === 'elf') fzPensStart(Z, { opp: id, duo: true }); else fzMatch(Z, { mode: 'duo', opp: id, duo: true }); },
+  fzplatz: t => { const Z = FZG, z = fzS(); z.platz = FZ_PLATZ[t.dataset.v] ? t.dataset.v : 'rasen'; save(); Sound.tap(); document.querySelectorAll('[data-act="fzplatz"]').forEach(b => b.classList.toggle('on', b === t)); const i = $('#fzPlatzInfo'); if (i) i.textContent = FZ_PLATZ[z.platz].d; if (Z) Z.bgKey = ''; },
   fzlen: t => { const z = fzS(); z.len = t.dataset.v; save(); Sound.tap(); document.querySelectorAll('[data-act="fzlen"]').forEach(b => b.classList.toggle('on', b === t)); },
   fzfach: t => { const z = fzS(); z.fach = t.dataset.v; save(); Sound.tap(); document.querySelectorAll('[data-act="fzfach"]').forEach(b => b.classList.toggle('on', b === t)); },
   fzcol: t => { const Z = FZG; if (!Z || !Z.ed) return; fzEdRead(Z); Z.ed[t.dataset.w] = t.dataset.v; Sound.tap(); fzEdRefresh(Z); },
@@ -57180,6 +57531,58 @@ pxReg({
   prog: () => { const z = isObj(pxS().fz) ? pxS().fz : null, st = z && z.st; return st && st.sp ? `${st.s | 0} ${(st.s | 0) === 1 ? 'Sieg' : 'Siege'}${st.meister ? ' · ' + st.meister + '× Meister' : ''}${st.pokal ? ' · ' + st.pokal + '× Pokal' : ''}` : ''; }
 });
 if (typeof PX_NEW !== 'undefined') { PX_NEW.stadion = 'Neu'; delete PX_NEW.abenteuer; }
+
+/*@@src px_stadion2.js@@*/
+
+
+
+
+
+
+const FZ_PLATZ = {
+  rasen: { e: '☀️', n: 'Rasen', d: 'Sonne und trockener Rasen: so wie immer.', reib: 1, g1: '#3fae4f', g2: '#37a046', p1: '#46b857', p2: '#329a41', linie: '#eaf7ec', rand: '#2a7a3c' },
+  regen: { e: '🌧️', n: 'Regen', d: 'Nasser Rasen: Der Ball flitzt viel weiter. Pässe werden richtig schnell!', reib: .55, g1: '#2f9446', g2: '#29883f', p1: '#38a350', p2: '#237a38', linie: '#dcefe2', rand: '#1f6432', wetter: 'regen' },
+  schnee: { e: '❄️', n: 'Schnee', d: 'Schneeplatz: Der Ball bleibt schnell liegen. Schieß fester und passe kurz!', reib: 2, g1: '#eef4fb', g2: '#e1eaf6', p1: '#ffffff', p2: '#cddbee', linie: '#ef6a4b', rand: '#c3d2e6', ball: '#ff8a2e', wetter: 'schnee' },
+  halle: { e: '🏟️', n: 'Halle', d: 'Hallenfußball: Rundherum ist eine Bande. Der Ball prallt ab, es gibt kein Aus.', reib: .8, g1: '#d9a964', g2: '#d2a05a', p1: '#e2b676', p2: '#c5934d', linie: '#ffffff', rand: '#8a5a34', bande: true }
+};
+function fzPlatzKey(Z) { const k = (Z && Z.T && Z.platz) || (isObj(pxS().fz) && pxS().fz.platz); return FZ_PLATZ[k] ? k : 'rasen'; }
+function fzPlatz(Z) { return FZ_PLATZ[fzPlatzKey(Z)]; }
+
+function fzBande(Z) {
+  const b = Z.ball, L = FZ.L, D = FZ.D; let hit = false;
+  if (b.y < 0) { b.y = 0; b.vy = Math.abs(b.vy) * .78; hit = true; } else if (b.y > D) { b.y = D; b.vy = -Math.abs(b.vy) * .78; hit = true; }
+  if (b.x < 0) { b.x = 0; b.vx = Math.abs(b.vx) * .78; hit = true; } else if (b.x > L) { b.x = L; b.vx = -Math.abs(b.vx) * .78; hit = true; }
+  if (hit && !b.owner && Math.hypot(b.vx, b.vy) > 45 && Z.t - (Z.bandeT || 0) > .18) { Z.bandeT = Z.t; Z.bande = (Z.bande | 0) + 1; pxSfx.tick(); }
+}
+
+function fzPlatzBg(Z, g, X, Y, rnd) {
+  const k = fzPlatzKey(Z);
+  if (k === 'regen') { g.globalAlpha = .45; for (let i = 0; i < 16; i++) { const x = X(20 + rnd() * (FZ.L - 40)), y = Y(8 + rnd() * (FZ.D - 16)), w = 10 + Math.floor(rnd() * 14); g.fillStyle = '#7cc4d8'; pxEll(g, x, y, w, 3); g.fillStyle = '#c4ecf6'; pxEll(g, x + 2, y, Math.max(3, w - 8), 1); } g.globalAlpha = 1; }
+  else if (k === 'schnee') {
+    for (let i = 0; i < 46; i++) { const oben = i % 2 === 0, x = X(-34 + rnd() * (FZ.L + 68)), y = oben ? Y(0) - 3 : Y(FZ.D) + 1, w = 6 + Math.floor(rnd() * 9); g.fillStyle = '#ffffff'; pxEll(g, x, y, w, 3); g.fillStyle = '#d6e2f2'; pxEll(g, x + 1, y + 2, w - 2, 1); }
+    for (let i = 0; i < 90; i++) { const x = X(rnd() * FZ.L), y = Y(rnd() * FZ.D); pxRect(g, x, y, 2, 1, '#c3d2e6'); pxRect(g, x + 3, y + 1, 2, 1, '#c3d2e6'); }
+  } else if (k === 'halle') {
+    const y0 = Y(0), y1 = Y(FZ.D), g0 = Y(FZ.GY0), g1 = Y(FZ.GY1);
+    pxRect(g, X(-3), y0 - 3, X(FZ.L + 3) - X(-3), 3, '#f4f6fb'); pxRect(g, X(-3), y0 - 4, X(FZ.L + 3) - X(-3), 1, '#3b7cf0');
+    pxRect(g, X(-3), y1 + 1, X(FZ.L + 3) - X(-3), 2, '#f4f6fb');
+    for (const gx of [X(-3), X(FZ.L) + 1]) { pxRect(g, gx, y0, 3, g0 - y0, '#f4f6fb'); pxRect(g, gx, g1, 3, y1 - g1 + 1, '#f4f6fb'); }
+    g.globalAlpha = .1; for (let x = X(0); x < X(FZ.L); x += 18) pxRect(g, x, y0, 1, y1 - y0, '#6a4420'); g.globalAlpha = 1;
+  }
+}
+
+function fzWetter(Z, g) {
+  const w = fzPlatz(Z).wetter; if (!w) return;
+  const W = Z.run.W, H = Z.run.H, t = Z.t || 0;
+  if (w === 'regen') {
+    g.globalAlpha = .13; pxRect(g, 0, 0, W, H, '#0b1a3a'); g.globalAlpha = .6;
+    for (let i = 0; i < 44; i++) { const x = ((i * 37 + t * 70) % (W + 24)) - 12, y = (i * 71 + t * (250 + (i % 5) * 22)) % (H + 8) - 6; pxRect(g, Math.round(x), Math.round(y), 1, 4, '#cfe4ff'); }
+    g.globalAlpha = 1;
+  } else {
+    g.globalAlpha = .85;
+    for (let i = 0; i < 40; i++) { const x = (i * 29 + Math.sin(t * 1.3 + i) * 7 + t * 9) % (W + 8) - 4, y = (i * 47 + t * (16 + (i % 5) * 5)) % (H + 6) - 3, s = i % 4 === 0 ? 2 : 1; pxRect(g, Math.round(x), Math.round(y), s, s, '#ffffff'); }
+    g.globalAlpha = 1;
+  }
+}
 
 /*@@src px_training.js@@*/
 
@@ -78141,6 +78544,57 @@ function wdhParentsHTML() {
   if (typeof TROPHIES !== 'undefined') TROPHIES.push({ id: 'gedaechtnis', e: '🧠', t: 'Gedächtnis-Profi', d: '10 Aufgaben nach 1, 3 und 7 Tagen sicher gewusst', c: s => isObj(s.wdh) && (s.wdh.fest | 0) >= 10 });
 })();
 
+/*@@src eswarm288.js@@*/
+
+
+
+
+
+
+
+
+const ESW_STD = 'aus';
+const ESW_N = 5, ESW_WT = ['Sonntag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'];
+function eswWahl() { const v = S.settings ? S.settings.esTag : null; return v === 'aus' || v === 'kurs' || /^[0-6]$/.test(String(v)) ? String(v) : ESW_STD; }
+function eswHeute(d = new Date()) {
+  const w = eswWahl(); if (w === 'aus') return false;
+  if (w === 'kurs') return typeof alceKurstag === 'function' && alceKurstag(d);
+  return d.getDay() === Number(w);
+}
+function eswPool() {
+  const alle = Object.keys(GAMES).filter(id => { const g = GAMES[id]; return g && g.w === 'spanisch' && typeof g.gen === 'function' && !g.type && klVisible(id); });
+  if (!alle.length) return [];
+  const kennt = R.shuffle(alle.filter(id => S.games[id] && (S.games[id].ok | 0) > 0)), rest = R.shuffle(alle.filter(id => !kennt.includes(id)));
+  const kurs = alle.includes('alcerepaso') ? 'alcerepaso' : null, wahl = kennt.concat(rest).filter(id => id !== kurs), out = [];
+  for (let i = 0; i < ESW_N; i++) out.push(kurs && i % 2 === 0 ? kurs : wahl.length ? wahl[(i >> (kurs ? 1 : 0)) % wahl.length] : kurs);
+  return out.filter(Boolean);
+}
+function eswHomeCard() {
+  if (!eswHeute() || S.eswTag === dayKey() || !eswPool().length) return '';
+  return `<button class="card wdh-card esw-card" data-act="eswgo"><span class="wdh-ci" aria-hidden="true">🔥</span>
+    <span class="wdh-ct"><small>Heute ist Spanisch-Tag</small><b>Aufwärmrunde: ${ESW_N} kurze Aufgaben</b><span>Einmal warm werden, dann bist du bereit für Spanisch.</span></span>
+    <span class="wdh-cn" aria-hidden="true">▶</span></button>`;
+}
+function eswStart() {
+  const pool = eswPool(); if (!pool.length) return;
+  Sound.unlock(); if (typeof lsAus === 'function') lsAus();
+  G = newG('mix', 'mix', { g: { t: 'Spanisch-Aufwärmrunde', w: null }, n: pool.length, back: null, pool, esw: 1 });
+  nextQuestion();
+}
+function eswParentsHTML() {
+  const w = eswWahl(), opt = (v, t) => `<option value="${v}" ${w === v ? 'selected' : ''}>${t}</option>`;
+  return `<section class="card"><h2>Spanisch-Tag</h2>
+    <p class="muted">An diesem Tag zeigt die Startseite eine Aufwärmrunde mit ${ESW_N} kurzen Spanisch-Aufgaben. Nach der Runde verschwindet die Karte bis zum nächsten Mal.</p>
+    <div class="field"><label for="eswsel">Aufwärmrunde zeigen</label>
+    <select id="eswsel" class="input select">${ESW_STD === 'kurs' ? opt('kurs', 'Am Kurstag (dienstags, nicht in den Ferien)') : ''}${[1, 2, 3, 4, 5, 6, 0].map(k => opt(String(k), 'Jeden ' + ESW_WT[k])).join('')}${opt('aus', 'Aus')}</select></div>
+  </section>`;
+}
+(() => {
+  if (typeof ACT !== 'undefined') ACT.eswgo = () => { Sound.tap(); eswStart(); };
+  document.addEventListener('change', e => { const t = e.target; if (!t || t.id !== 'eswsel') return; S.settings.esTag = t.value; save(); toast(t.value === 'aus' ? 'Aufwärmrunde: aus' : 'Aufwärmrunde: gespeichert'); });
+  if (typeof finishRound === 'function') { const f = finishRound; finishRound = function () { if (G && G.esw) { S.eswTag = dayKey(); } return f.apply(this, arguments); }; }
+})();
+
 /*@@src denk.js@@*/
 
 
@@ -82344,7 +82798,7 @@ function genDatenProfi(ctx) {
     const f = R.pick([() => { const n = R.pick([30, 60, 120]); return ['Du würfelst ' + n + ' Mal mit einem Spielwürfel. Wie oft kommt ungefähr eine 6?', n / 6, n, `Jede Zahl hat die gleiche Chance, eine von sechs. ${n} : 6 = ${n / 6}.`]; },
       () => { const n = R.pick([20, 40, 100]); return ['Du wirfst eine Münze ' + n + ' Mal. Wie oft kommt ungefähr Kopf?', n / 2, n, `Kopf und Zahl haben die gleiche Chance. ${n} : 2 = ${n / 2}.`]; },
       () => { const k = R.int(1, 3), n = R.pick([40, 80]); return [`Ein Glücksrad hat 4 gleich große Felder, ${k} davon ${k === 1 ? 'ist' : 'sind'} rot. Du drehst ${n} Mal. Wie oft landest du ungefähr auf Rot?`, n * k / 4, n, `${k} von 4 Feldern ${k === 1 ? 'ist' : 'sind'} rot. ${n} : 4 · ${k} = ${n * k / 4}.`]; }])();
-    const w = [...new Set([f[2], f[1] * 2, Math.round(f[1] / 2), f[1] * 3].filter(x => x > 0 && Math.abs(x - f[1]) >= Math.max(3, f[1] * .45)))].slice(0, 3);
+    const w = [...new Set([f[2], f[1] * 2, Math.round(f[1] / 2), f[2] - f[1], Math.round(f[1] / 3), f[1] * 3].filter(x => x > 0 && x <= f[2] && Math.abs(x - f[1]) >= Math.max(3, f[1] * .45)))].slice(0, 3);
     return mkChoice({ prompt: f[0], answer: String(f[1]), wrong: w.map(String), layout: 'grid2', key: 'zf' + f[0], explain: f[3] + ' Beim echten Ausprobieren kommt es nur ungefähr so oft, mal etwas mehr, mal etwas weniger.' });
   }
   const [A, B] = R.pick(LP_KOMB), a = A[1].slice(0, lv === 1 ? R.int(2, 3) : R.int(3, 4)), b2 = B[1].slice(0, R.int(2, B[1].length));
