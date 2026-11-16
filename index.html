@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-FiLF6hCNp0vMzaqXWC7vSAZ2637yfdfEeDxnR83Fqlw=' 'sha256-yRfgsjENy+IGydceMhtdfRR5Y9BsQJgHKooN9qEX61M=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-ESNvuorNrq1mnBorbl9vFugc1d3gdUQjT6pYzGS1VmY=' 'sha256-Sq3xX7NPhQtbKzkjn1hnEwia5W32hRIR1OJAWh6onfg=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -9233,8 +9233,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '2.93.1';
-  var MAP = {"probe":0,"files":[[9223,"fehler_kern.js"],[9511,null],[9513,"data.js"],[10228,"data_more.js"],[10600,"data_su2.js"],[10827,"data_es.js"],[11195,"data_wissen.js"],[11396,"data_v21.js"],[12081,"data_v24.js"],[12569,"data_v25.js"],[13050,"data_v26.js"],[13149,"data_v29.js"],[13457,"data_v30.js"],[13791,"data_v31.js"],[14097,"data_kunst.js"],[14293,"data_v214.js"],[14396,"data_v216.js"],[14689,"schrift.js"],[14989,"eingabe.js"],[15200,"data_k34m.js"],[15718,"data_k34d.js"],[16072,"data_k34s.js"],[16526,"data_v224.js"],[17399,"data_v225w.js"],[17768,"data_v225k.js"],[18212,"data_herz.js"],[18566,"data_fb226.js"],[18709,"data_tf226.js"],[18916,"data_v227a.js"],[20016,"data_v227b.js"],[20970,"data_h28b.js"],[21010,"data_l28a.js"],[21876,"data_l28b.js"],[23056,"data_schaetz.js"],[23538,"data_party8.js"],[23588,"data_alce.js"],[24259,"data_alce2.js"],[24508,"data_alce3.js"],[24923,"registry.js"],[25437,"app.js"],[26644,"fun.js"],[27224,"fun2.js"],[27540,"atelier.js"],[27914,"kunst225.js"],[28104,"herz.js"],[28468,"reise.js"],[28770,"iglu.js"],[28936,"offline.js"],[29043,"party.js"],[29527,"meine.js"],[29883,"loeffel.js"],[30054,"trend.js"],[30596,"fun228a.js"],[31447,"fun228b.js"],[32108,"kueche.js"],[33147,"stimme.js"],[33202,"klassen.js"],[33351,"freunde_vorab.js"],[33372,"mut.js"],[33794,"schule.js"],[34283,"fussball226.js"],[34605,"schaetzen.js"],[35036,"party8.js"],[35655,"tiere.js"],[36114,"fussball232.js"],[36329,"party8b.js"],[36631,"weg.js"],[36852,"px.js"],[37271,"px_fein.js"],[37325,"px_data.js"],[37582,"pxwelt.js"],[37665,"px_abenteuer.js"],[38481,"px_abenteuer2.js"],[39233,"px_abenteuer3.js"],[39624,"px_abenteuer4.js"],[39834,"px_baukasten.js"],[39942,"px_abenteuer_fein.js"],[40158,"px_abenteuer_fein2.js"],[40510,"px_ski.js"],[41152,"px_wurf.js"],[41681,"px_insel.js"],[42882,"px_kicker.js"],[43817,"px_eis.js"],[44803,"px_run.js"],[46018,"px_brk.js"],[46980,"px_pol.js"],[48331,"px_frog.js"],[49591,"px_angel.js"],[50906,"px_golf.js"],[51940,"px_tauch.js"],[53205,"px_hockey.js"],[54161,"px_lab.js"],[55496,"px_plopp.js"],[56702,"px_stadion.js"],[58213,"px_stadion2.js"],[58265,"px_training.js"],[58634,"cm.js"],[59124,"cmwelt.js"],[59180,"cm_baeck.js"],[59973,"cm_bahn.js"],[60737,"cm_detek.js"],[61454,"cm_markt.js"],[62167,"ff.js"],[62324,"ff_mathe.js"],[64314,"ff_deutsch.js"],[65902,"ff_sach_a.js"],[68151,"ff_sach_b.js"],[70380,"ff_sprachen.js"],[72788,"zm.js"],[73701,"tt.js"],[73914,"data_tagebuch.js"],[73957,"data_hoerspiel.js"],[74116,"leseecke.js"],[74435,"kt.js"],[74738,"comicbuch.js"],[75016,"alce.js"],[75179,"alce_aufg.js"],[75349,"formen.js"],[75800,"data_formen.js"],[76041,"data_formen2.js"],[76263,"spielzeit.js"],[76408,"data_faktmeinung.js"],[76527,"data_es248.js"],[76791,"data_en249.js"],[77030,"data_wissen249.js"],[77461,"data_kunst249.js"],[77744,"data_fussball250.js"],[77868,"data_werte252.js"],[78121,"data_lesen252.js"],[78182,"data_k34_252.js"],[78268,"art254.js"],[78386,"data_werte255.js"],[78524,"data_lesen255.js"],[78660,"forscher255.js"],[78808,"zufall250.js"],[78854,"stufe259.js"],[78864,"advent.js"],[79127,"wdh.js"],[79225,"eswarm288.js"],[79276,"bilder293a.js"],[79366,"bilder293b.js"],[79496,"bilder293c.js"],[79594,"bilder293d.js"],[79716,"bilder293e.js"],[79880,"bilder293f.js"],[79960,"bilder292.js"],[80406,"denk.js"],[80443,"data_viaje265.js"],[80586,"klassenarbeit.js"],[80719,"quizduell.js"],[80842,"neu267.js"],[81107,"prog.js"],[81212,"lernstand.js"],[81279,"blatt.js"],[81381,"data_es271.js"],[81495,"plus269.js"],[81589,"schach.js"],[81821,"schachtaktik.js"],[82073,"fun270.js"],[82236,"data_neu274.js"],[82445,"plus272.js"],[82499,"spiele274.js"],[82622,"kasten.js"],[82726,"erklaer.js"],[82839,"apa.js"],[82920,"neu276.js"],[83061,"spiele276.js"],[83111,"neu277.js"],[83289,"spiele277.js"],[83544,"lernen278.js"],[83804,"spiele278.js"],[84147,"lernen279.js"],[84472,"lernen279b.js"],[84870,"spanisch280.js"],[85162,"spanisch283.js"],[85395,"mehr281.js"],[85541,"grafik280.js"],[85912,"tiefsee280.js"],[86190,"abenteuer280.js"],[86402,"abenteuer281.js"],[86514,"design281.js"],[86646,"party281.js"],[86777,"grafik281.js"],[86994,"traumtor292.js"],[87201,"kart293.js"],[87478,"lumi_live.js"],[87594,"sicher.js"],[87778,"stil.js"],[87832,"zurueck287.js"],[87875,"freunde.js"],[88012,"start.js"],[88022,null],[88032,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '2.94.0';
+  var MAP = {"probe":0,"files":[[9223,"fehler_kern.js"],[9511,null],[9513,"data.js"],[10228,"data_more.js"],[10600,"data_su2.js"],[10827,"data_es.js"],[11195,"data_wissen.js"],[11396,"data_v21.js"],[12081,"data_v24.js"],[12569,"data_v25.js"],[13058,"data_v26.js"],[13157,"data_v29.js"],[13465,"data_v30.js"],[13799,"data_v31.js"],[14105,"data_kunst.js"],[14301,"data_v214.js"],[14404,"data_v216.js"],[14697,"schrift.js"],[14997,"eingabe.js"],[15208,"data_k34m.js"],[15726,"data_k34d.js"],[16080,"data_k34s.js"],[16534,"data_v224.js"],[17407,"data_v225w.js"],[17776,"data_v225k.js"],[18220,"data_herz.js"],[18574,"data_fb226.js"],[18717,"data_tf226.js"],[18924,"data_v227a.js"],[20024,"data_v227b.js"],[20978,"data_h28b.js"],[21018,"data_l28a.js"],[21884,"data_l28b.js"],[23064,"data_schaetz.js"],[23546,"data_party8.js"],[23596,"data_alce.js"],[24267,"data_alce2.js"],[24516,"data_alce3.js"],[24931,"registry.js"],[25445,"app.js"],[26655,"fun.js"],[27235,"fun2.js"],[27551,"atelier.js"],[27925,"kunst225.js"],[28115,"herz.js"],[28479,"reise.js"],[28781,"iglu.js"],[28947,"offline.js"],[29054,"party.js"],[29538,"meine.js"],[29894,"loeffel.js"],[30065,"trend.js"],[30607,"fun228a.js"],[31458,"fun228b.js"],[32119,"kueche.js"],[33158,"stimme.js"],[33213,"klassen.js"],[33362,"freunde_vorab.js"],[33383,"mut.js"],[33805,"schule.js"],[34294,"fussball226.js"],[34616,"schaetzen.js"],[35047,"party8.js"],[35666,"tiere.js"],[36125,"fussball232.js"],[36340,"party8b.js"],[36642,"weg.js"],[36863,"px.js"],[37282,"px_fein.js"],[37336,"px_data.js"],[37593,"pxwelt.js"],[37676,"px_abenteuer.js"],[38492,"px_abenteuer2.js"],[39244,"px_abenteuer3.js"],[39635,"px_abenteuer4.js"],[39845,"px_baukasten.js"],[39953,"px_abenteuer_fein.js"],[40169,"px_abenteuer_fein2.js"],[40521,"px_ski.js"],[41163,"px_wurf.js"],[41692,"px_insel.js"],[42893,"px_kicker.js"],[43828,"px_eis.js"],[44814,"px_run.js"],[46029,"px_brk.js"],[46991,"px_pol.js"],[48342,"px_frog.js"],[49602,"px_angel.js"],[50917,"px_golf.js"],[51951,"px_tauch.js"],[53216,"px_hockey.js"],[54172,"px_lab.js"],[55507,"px_plopp.js"],[56713,"px_stadion.js"],[58224,"px_stadion2.js"],[58276,"px_training.js"],[58645,"cm.js"],[59135,"cmwelt.js"],[59191,"cm_baeck.js"],[59984,"cm_bahn.js"],[60748,"cm_detek.js"],[61465,"cm_markt.js"],[62178,"ff.js"],[62335,"ff_mathe.js"],[64325,"ff_deutsch.js"],[65913,"ff_sach_a.js"],[68162,"ff_sach_b.js"],[70391,"ff_sprachen.js"],[72799,"zm.js"],[73712,"tt.js"],[73925,"data_tagebuch.js"],[73968,"data_hoerspiel.js"],[74127,"leseecke.js"],[74446,"kt.js"],[74749,"comicbuch.js"],[75027,"alce.js"],[75190,"alce_aufg.js"],[75360,"formen.js"],[75811,"data_formen.js"],[76052,"data_formen2.js"],[76274,"spielzeit.js"],[76419,"data_faktmeinung.js"],[76538,"data_es248.js"],[76802,"data_en249.js"],[77041,"data_wissen249.js"],[77472,"data_kunst249.js"],[77755,"data_fussball250.js"],[77879,"data_werte252.js"],[78132,"data_lesen252.js"],[78193,"data_k34_252.js"],[78279,"art254.js"],[78397,"data_werte255.js"],[78535,"data_lesen255.js"],[78671,"forscher255.js"],[78819,"zufall250.js"],[78865,"stufe259.js"],[78875,"advent.js"],[79138,"wdh.js"],[79236,"eswarm288.js"],[79287,"abwechslung294.js"],[79362,"bilder293a.js"],[79452,"bilder293b.js"],[79582,"bilder293c.js"],[79680,"bilder293d.js"],[79802,"bilder293e.js"],[79966,"bilder293f.js"],[80046,"bilder292.js"],[80492,"denk.js"],[80529,"data_viaje265.js"],[80672,"klassenarbeit.js"],[80805,"quizduell.js"],[80928,"neu267.js"],[81193,"prog.js"],[81298,"lernstand.js"],[81365,"blatt.js"],[81467,"data_es271.js"],[81581,"plus269.js"],[81675,"schach.js"],[81907,"schachtaktik.js"],[82159,"fun270.js"],[82322,"data_neu274.js"],[82531,"plus272.js"],[82585,"spiele274.js"],[82708,"kasten.js"],[82812,"erklaer.js"],[82925,"apa.js"],[83006,"neu276.js"],[83147,"spiele276.js"],[83197,"neu277.js"],[83375,"spiele277.js"],[83630,"lernen278.js"],[83890,"spiele278.js"],[84233,"lernen279.js"],[84558,"lernen279b.js"],[84956,"spanisch280.js"],[85248,"spanisch283.js"],[85481,"mehr281.js"],[85627,"grafik280.js"],[85998,"tiefsee280.js"],[86276,"abenteuer280.js"],[86488,"abenteuer281.js"],[86600,"design281.js"],[86732,"party281.js"],[86863,"grafik281.js"],[87080,"traumtor292.js"],[87287,"kart293.js"],[87564,"lumi_live.js"],[87680,"sicher.js"],[87864,"stil.js"],[87918,"zurueck287.js"],[87961,"freunde.js"],[88098,"start.js"],[88108,null],[88118,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -12728,21 +12728,29 @@ function genMaterial(ctx) {
 }
 
 
+
 const WETTER_KLEID = [
-  { e: '☀️', t: [24, 33], d: t => `Die Sonne scheint, es sind ${t} °C.`, ok: 'T-Shirt, kurze Hose, Sonnenhut und Sonnencreme' },
-  { e: '🌧️', t: [10, 17], d: t => `Es regnet, es sind ${t} °C.`, ok: 'Regenjacke und Gummistiefel' },
-  { e: '🌨️', t: [-6, 1], d: t => `Es schneit, es sind ${t < 0 ? '−' + (-t) : t} °C.`, ok: 'Winterjacke, Mütze, Schal und Handschuhe' },
-  { e: '🍂', t: [8, 15], d: t => `Es ist trocken und windig, es sind ${t} °C.`, ok: 'Pullover und eine warme Jacke' }];
+  { e: '☀️', k: 'w', t: [24, 33], d: t => `Die Sonne scheint, es sind ${t} °C.`, ok: 'T-Shirt, kurze Hose, Sonnenhut und Sonnencreme' },
+  { e: '🌧️', k: 'n', t: [10, 17], d: t => `Es regnet, es sind ${t} °C.`, ok: 'Regenjacke und Gummistiefel' },
+  { e: '🌨️', k: 'k', t: [-6, 1], d: t => `Es schneit, es sind ${t < 0 ? '−' + (-t) : t} °C.`, ok: 'Winterjacke, Mütze, Schal und Handschuhe' },
+  { e: '🍂', k: 'n', t: [8, 15], d: t => `Es ist trocken und windig, es sind ${t} °C.`, ok: 'Pullover und eine warme Jacke' },
+
+  { e: '🏖️', k: 'w', t: [26, 32], d: t => `Ihr geht an den Strand, es sind ${t} °C.`, ok: 'Badesachen, Sonnenhut, Sonnencreme und Badeschuhe' },
+  { e: '🌫️', k: 'n', t: [3, 8], d: t => `Morgens ist es neblig und feucht, es sind ${t} °C.`, ok: 'warme Jacke, feste Schuhe und etwas, das leuchtet' },
+  { e: '🌬️', k: 'n', t: [9, 14], d: t => `An der Küste stürmt es, es sind ${t} °C.`, ok: 'winddichte Jacke mit Kapuze und feste Schuhe' },
+  { e: '🌤️', k: 'w', t: [17, 21], d: t => `Es ist mild und heiter, es sind ${t} °C.`, ok: 'T-Shirt, lange Hose und eine dünne Jacke zum Überziehen' },
+  { e: '🧊', k: 'k', t: [-9, -3], d: t => `Es ist klirrend kalt und glatt, es sind −${-t} °C.`, ok: 'dicke Winterjacke, Schneehose und Stiefel mit Profil' },
+  { e: '⛈️', k: 'w', t: [20, 26], d: t => `Es ist schwül, ein Gewitterschauer zieht auf, es sind ${t} °C.`, ok: 'T-Shirt und eine leichte Regenjacke im Rucksack' }];
 const WK_BANK = [['Was schützt dich im Sommer vor Sonnenbrand?', '☀️', 'Sonnencreme, Sonnenhut und Schatten', ['viel trinken und barfuß laufen', 'ein nasses T-Shirt und Wind', 'eine Sonnenbrille allein'], 'Mittags ist die Sonne am stärksten, dann lieber in den Schatten.'],
   ['Warum trägt man im Winter mehrere Schichten Kleidung?', '🧥', 'Zwischen den Schichten bleibt warme Luft.', ['Viele Schichten sind schwerer und wärmen dadurch.', 'Dünne Kleidung lässt keine Kälte durch.', 'Die äußere Schicht heizt sich in der Sonne auf.'], 'Das nennt man Zwiebelprinzip.'],
   ['Was ziehst du bei Glatteis am besten an?', '🧊', 'Schuhe mit gutem Profil', ['Schuhe mit glatter Sohle', 'Gummistiefel ohne Profil', 'Hausschuhe mit Filzsohle'], 'Und: langsam gehen!'],
   ['Warum soll man an heißen Tagen viel trinken?', '💧', 'Weil der Körper beim Schwitzen Wasser verliert.', ['Weil Wasser den Körper von innen kühlt wie Eis.', 'Weil man in der Sonne schneller hungrig wird.', 'Weil die Haut sonst schneller braun wird.'], 'Wasser ist das beste Getränk.']];
 function genWetterKleid(ctx) {
   if (R.chance(.2)) return suQuestion(ctx.draw(WK_BANK));
-  const w = R.pick(WETTER_KLEID), t = R.int(w.t[0], w.t[1]);
-  if (R.chance(.6)) return mkChoice({ prompt: `${w.d(t)} Was ziehst du an?`, visual: bigEmoji(w.e), answer: w.ok, wrong: WETTER_KLEID.filter(x => x !== w).map(x => x.ok), layout: 'col', explain: `Bei diesem Wetter passt: ${w.ok}.`, key: 'wk1' + w.e + t });
+  const w = ctx.draw(WETTER_KLEID), t = R.int(w.t[0], w.t[1]);
+  if (R.chance(.6)) return mkChoice({ prompt: `${w.d(t)} Was ziehst du an?`, visual: bigEmoji(w.e), answer: w.ok, wrong: R.sample(WETTER_KLEID.filter(x => x.k !== w.k), 3).map(x => x.ok), layout: 'col', explain: `Bei diesem Wetter passt: ${w.ok}.`, key: 'wk1' + w.e + t });
   const o = x => ({ html: `<span class="em">${x.e}</span>`, label: x.e });
-  return mkChoice({ prompt: `Zu welchem Wetter passt: ${w.ok}?`, visual: bigEmoji('👕', 'sm'), answer: o(w), wrong: WETTER_KLEID.filter(x => x !== w).map(o), layout: 'row4', explain: w.d(t), solution: w.e, key: 'wk2' + w.e });
+  return mkChoice({ prompt: `Zu welchem Wetter passt: ${w.ok}?`, visual: bigEmoji('👕', 'sm'), answer: o(w), wrong: R.sample(WETTER_KLEID.filter(x => x.k !== w.k), 3).map(o), layout: 'row4', explain: w.d(t), solution: w.e, key: 'wk2' + w.e });
 }
 
 
@@ -25438,9 +25446,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '2.93.1';
+const APP_VERSION = '2.94.0';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "2.94.0", d: "16.11.2026", t: ["Mehr Abwechslung in jeder Runde: Derselbe Inhalt kommt nicht mehr direkt hintereinander, auch nicht in anderer Aufgabenform. Das gilt für alle Lernspiele", "Spiele mit sehr wenigen verschiedenen Inhalten haben kürzere Runden (mindestens 5 Aufgaben)", "Sachunterricht „Was ziehe ich an?“: zehn statt vier Wetterlagen"] },
   { v: "2.93.1", d: "15.11.2026", t: ["Kart-Pokal: Die Tiere fahren deutlich langsamer", "Kart-Pokal: bessere Steuerung. Finger links oder rechts von der Mitte halten, weiter außen lenkt stärker. Extra auch mit beiden Daumen zugleich", "Startseite auf dem Handy: Die Kacheln der Lernwelten zeigen ihr Bild"] },
   { v: "2.93.0", d: "15.11.2026", t: ["Eigene Bildchen für die ganze Lernwelt: über 1100 gezeichnete Bildchen statt rund 360. Alle Welten und Themen-Listen sind umgestellt", "Neu gezeichnet: Menschen und Berufe, Tiere, Länderfahnen, Gesichter, Fahrzeuge, Gebäude, Essen, Kleidung, Werkzeug, Sport und Musik", "In den Aufgaben sind fast alle Bildchen gezeichnet. Wo eins fehlt, bleibt die Aufgabe ganz bei den Emojis", "Neues großes Abenteuer in der Spielhalle: Kart-Pokal. Rennen gegen fünf Tiere über drei Runden, mit Extras aus Kisten und vier Strecken zum Freischalten"] },
   { v: "2.92.0", d: "15.11.2026", t: ["Eigene Bildchen statt Emojis: Rund 360 Symbole sind selbst gezeichnet, in einem einheitlichen Stil. Start, Inseln, Mathe-Welt und viele Aufgaben sind schon umgestellt. Wo noch nicht alle Bildchen gezeichnet sind, bleiben vorerst die Emojis", "Schalter im Elternbereich: „Eigene Bildchen statt Emojis“", "Neues großes Abenteuer in der Spielhalle: Traumtor. Freistöße in glatter Grafik: wischen vom Ball zum Tor, im Bogen wischen gibt eine Kurve um die Mauer. Zehn Level mit Mauer, Wind und Torwart"] },
@@ -25981,6 +25990,7 @@ function genFor(gid, lv) {
     let c = null; try { c = GAMES[gid].gen(ctx); } catch (e) { reportProblem(e, gid); }
     if (c && c.prompt) { q = c; if (!G.used.has(gid + q.key)) break; }
   }
+  if (q && typeof awWahl === 'function') q = awWahl(gid, ctx.lv, ctx, q);
   if (q && q.explain) q.explain = explFix(q.explain);
   if (!q) q = genPlus(ctxFor('plus', 1));
   G.used.add(gid + q.key); return q;
@@ -25994,6 +26004,7 @@ function startGame(id) {
   if (g.type === 'custom') return startCustom(id);
   G = newG(g.type === 'memory' ? 'memory' : 'game', id, Object.assign({ lv: effLv(id) }, g.n ? { n: Math.min(g.n, S.settings.roundLen || 10) } : {}));
   if (g.type === 'memory') return startMemory();
+  if (typeof awRunde === 'function') awRunde(G);
   nextQuestion();
 }
 
@@ -79272,6 +79283,81 @@ function eswParentsHTML() {
   document.addEventListener('change', e => { const t = e.target; if (!t || t.id !== 'eswsel') return; S.settings.esTag = t.value; save(); toast(t.value === 'aus' ? 'Aufwärmrunde: aus' : 'Aufwärmrunde: gespeichert'); });
   if (typeof finishRound === 'function') { const f = finishRound; finishRound = function () { if (G && G.esw) { S.eswTag = dayKey(); } return f.apply(this, arguments); }; }
 })();
+
+/*@@src abwechslung294.js@@*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const AW_STOP = new Set('der die das den dem des ein eine einen einem einer und oder ist sind was wie wer wo welche welcher welches welchen zum zur auf aus bei mit von für nicht auch dir dich ich sie wir ihr man hat haben wird kann passt gehört tippe wähle richtige richtig falsch the and you what which are que los las una'.split(' '));
+const AW_FREI = new Set(['decks', 'used', 'lv', 'id', 'mode', 'g', 'qg', 'back', 'n']);
+const AW = { st: {}, PROBE: 20, NEU: 6, GLEICH: .7 };
+const awTxt = h => String(h == null ? '' : h).replace(/<svg[\s\S]*?<\/svg>/g, ' ').replace(/<[^>]+>/g, ' ').replace(/&[a-z]+;/g, ' ');
+
+function awTok(q) {
+  let s = awTxt(q.prompt) + ' ' + awTxt(q.visual) + ' ' + (q.word || '') + ' ' + (q.text || '');
+  const loes = awTxt(q.solution) + ' ' + (Array.isArray(q.options) ? q.options.filter(o => o && o.ok).map(o => awTxt(o.label || o.html)).join(' ') : '');
+  for (const k of ['items', 'rows', 'tokens', 'cards', 'words']) if (Array.isArray(q[k])) s += ' ' + q[k].map(o => o && typeof o === 'object' ? awTxt(o.h || o.w || '') : awTxt(o)).join(' ');
+  for (const k of ['left', 'right', 'gaps', 'nums']) if (Array.isArray(q[k])) s += ' ' + q[k].map(awTxt).join(' ');
+  const out = new Set(), nimm = (t, kurz) => { (t.toLowerCase().match(kurz ? /[a-zäöüßáéíóúñ]+|\d+/g : /[a-zäöüßáéíóúñ]{3,}|\d+/g) || []).forEach(w => { if (!AW_STOP.has(w)) out.add(w); }); (t.match(/\p{Extended_Pictographic}/gu) || []).forEach(e => out.add(e)); };
+  nimm(s, false); nimm(loes, true);
+
+  const bilder = (String(q.prompt || '') + String(q.visual || '') + (Array.isArray(q.options) ? q.options.filter(o => o && o.ok).map(o => o.html || '').join('') : '')).match(/<svg[\s\S]*?<\/svg>/g);
+  if (bilder) bilder.forEach(b => { let h = 0; for (let i = 0; i < b.length; i++) h = (h * 31 + b.charCodeAt(i)) | 0; out.add('§' + h); });
+  return out;
+}
+function awGewicht(st, t) { const d = st.df.get(t) || 0; return d > st.N * .6 ? 0 : Math.log((st.N + 1) / (d + .5)); }
+function awAehnlich(st, A, B) {
+  let ga = 0, gb = 0, gem = 0, n = 0; A.forEach(t => { const w = awGewicht(st, t); ga += w; if (w && B.has(t)) { gem += w; n++; } }); B.forEach(t => { gb += awGewicht(st, t); });
+  return n >= 2 && ga > 0 && gb > 0 ? gem / Math.min(ga, gb) : 0;
+}
+
+function awStat(gid, lv) {
+  const key = gid + '|' + lv; if (AW.st[key]) return AW.st[key];
+  const st = AW.st[key] = { N: 0, df: new Map(), aktiv: false, kette: false, vielfalt: 99 }, g = GAMES[gid];
+  if (!g || !g.gen || g.type || window.LW_AW_AUS) return st;
+  const echt = G, altLv = typeof SU_LV !== 'undefined' ? SU_LV : null, proben = [], t0 = Date.now();
+  try {
+    const basis = newG('game', gid, { lv });
+    G = new Proxy(basis, { get: (t, k) => { if (typeof k === 'string' && !AW_FREI.has(k)) st.kette = true; return t[k]; }, set: (t, k, v) => { st.kette = true; t[k] = v; return true; } });
+    const ctx = ctxFor(gid, lv);
+    for (let i = 0; i < AW.PROBE && !st.kette && Date.now() - t0 < 80; i++) { const q = g.gen(ctx); if (q && q.prompt) proben.push(awTok(q)); }
+  } catch (e) { st.kette = true; } finally { G = echt; if (altLv !== null) SU_LV = altLv; }
+  if (st.kette || proben.length < 8) return st;
+  st.N = proben.length; proben.forEach(p => p.forEach(t => st.df.set(t, (st.df.get(t) || 0) + 1)));
+  const gruppen = []; proben.forEach(p => { if (!gruppen.some(r => awAehnlich(st, r, p) >= AW.GLEICH)) gruppen.push(p); });
+  st.vielfalt = gruppen.length; st.aktiv = true; return st;
+}
+
+function awRunde(R0) {
+  try { const g = GAMES[R0.id]; if (!g || g.n || window.LW_AW_AUS) return; const st = awStat(R0.id, R0.lv || 1); if (st.aktiv && st.vielfalt <= 7) R0.n = Math.min(R0.n, Math.max(5, st.vielfalt)); } catch (e) { }
+}
+
+function awWahl(gid, lv, ctx, q) {
+  try {
+    if (window.LW_AW_AUS || !G || !q) return q; const st = awStat(gid, lv);
+    if (!st.aktiv) { G.awL = null; return q; }
+    const letzte = G.awL || [], mass = t => letzte.reduce((m, o) => Math.max(m, awAehnlich(st, o, t)), 0);
+    let tq = awTok(q), best = q, bt = tq, bm = mass(tq);
+    for (let v = 0; v < AW.NEU && bm >= AW.GLEICH && letzte.length; v++) {
+      let c = null; for (let t = 0; t < 8; t++) { let k = null; try { k = GAMES[gid].gen(ctx); } catch (e) { break; } if (k && k.prompt && (t >= 5 || !G.used.has(gid + k.key))) { c = k; break; } }
+      if (!c) break; const tc = awTok(c), m = mass(tc); if (m < bm) { best = c; bt = tc; bm = m; }
+    }
+    G.awL = letzte.concat([bt]).slice(-2); return best;
+  } catch (e) { return q; }
+}
 
 /*@@src bilder293a.js@@*/
 
