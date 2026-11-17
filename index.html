@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-B6rHovvNs44ZBqDY06yn7QKlZ9ZXHtryRxk+TxcZfIk=' 'sha256-/gxys0+iGyw9ZAN/9R+KXB3OGWD++VJR/W+NeOh99WY=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-/3xHEqqzOhq5l81VHacXHq5CtSkkreuqUyajAHB57Qo=' 'sha256-YaUVhVl7bQebvqjvHHkGmICNgqNXYP9DeBobeLW7BKE=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -8458,6 +8458,46 @@ button.mau-k:disabled { cursor: default; }
 .qd-vs { align-self: center; font-size: 44px; font-weight: 900; opacity: .5; }
 @media (max-width: 560px) { .qd-spieler { grid-template-columns: 1fr; } .qd-say { flex-direction: column; text-align: center; } .qd-bs strong { font-size: 42px; } .q-from.qd-tag { font-size: 15px; } }
 
+/* ---- style_schuh296.css ---- */
+
+.sb-page { display: grid; gap: 16px; padding-bottom: 40px; }
+.sb-wege { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.sb-weg { display: grid; justify-items: start; gap: 2px; text-align: left; padding: 12px 14px; border-radius: 16px; border: 3px solid var(--line); background: var(--card); color: var(--ink); font: inherit; cursor: pointer; }
+.sb-weg span { font-size: 26px; line-height: 1; } .sb-weg b { font-size: 17px; } .sb-weg small { color: var(--ink-soft); font-size: 13px; }
+.sb-weg.sel { border-color: var(--w-c, #2a8f80); background: var(--w-soft, #e3f6f2); }
+.sb-karte { display: grid; justify-items: center; text-align: center; gap: 8px; }
+.sb-nr { font-weight: 800; color: var(--w-c, #2a8f80); font-size: 15px; letter-spacing: .03em; }
+.sb-bildrahmen { width: 100%; max-width: 560px; }
+.sb-bild { width: 100%; height: auto; max-height: min(44vh, 400px); display: block; margin: 0 auto; border-radius: 16px; }
+.sb-karte h2 { margin: 4px 0 0; font-size: 26px; }
+.sb-text { margin: 0; font-size: 20px; line-height: 1.4; max-width: 34em; }
+.sb-punkte { display: flex; gap: 8px; margin: 4px 0; }
+.sb-pk { width: 14px; height: 14px; border-radius: 50%; border: 0; padding: 0; background: var(--line); cursor: pointer; }
+.sb-pk.war { background: var(--w-soft, #a8e0d6); } .sb-pk.on { background: var(--w-c, #2a8f80); transform: scale(1.25); }
+.sb-nav { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; }
+.sb-sterne { display: flex; gap: 6px; font-size: 30px; color: var(--line); margin: 6px 0 10px; } .sb-sterne .on { color: #f2b300; }
+.sb-tipps { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+.sb-tipps li { display: flex; gap: 12px; align-items: flex-start; } .sb-tipps li > span { font-size: 26px; line-height: 1.1; }
+.sb-tipps b { font-size: 17px; } .sb-tipps p { margin: 2px 0 0; color: var(--ink-soft); }
+.sb-pf { animation: sbPuls 1.4s ease-in-out infinite; }
+@keyframes sbPuls { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
+@media (prefers-reduced-motion: reduce) { .sb-pf { animation: none; } }
+
+.sb-qbild { display: grid; justify-items: center; gap: 4px; } .sb-qbild p { margin: 0; font-weight: 700; }
+.sb-qsvg { width: min(300px, 70vw); height: auto; border-radius: 12px; }
+.sb-obild { width: 100%; max-width: 190px; height: auto; display: block; border-radius: 10px; }
+
+.sb-raster { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3mm 4mm; }
+.sb-zelle { border: .35mm solid #c8d1e0; border-radius: 3mm; padding: 2mm; font-size: 10pt; line-height: 1.3; }
+.sb-zelle b { display: block; font-size: 11pt; margin-top: 1mm; } .sb-zelle p { margin: .6mm 0 0; }
+.sb-zbild { position: relative; } .sb-zbild .ub-nr { position: absolute; left: 1.5mm; top: 1.5mm; }
+.sb-dbild { width: 100%; height: auto; display: block; border-radius: 2mm; }
+.sb-ztipp { background: var(--ak2); }
+.sb-bastelzeile { display: flex; gap: 6mm; align-items: flex-start; }
+.sb-bastel { flex: none; }
+.sb-schritte { margin: 0; padding-left: 6mm; font-size: 12pt; line-height: 1.4; display: grid; gap: 3mm; }
+.sb-druck .sb-pf { animation: none; }
+
 /* ---- style_sha.css ---- */
 
 .sha { margin-top: 18px; padding-top: 6px; border-top: 1px solid var(--line); }
@@ -9322,8 +9362,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '2.95.0';
-  var MAP = {"probe":0,"files":[[9312,"fehler_kern.js"],[9600,null],[9602,"data.js"],[10317,"data_more.js"],[10689,"data_su2.js"],[10916,"data_es.js"],[11284,"data_wissen.js"],[11485,"data_v21.js"],[12170,"data_v24.js"],[12658,"data_v25.js"],[13147,"data_v26.js"],[13246,"data_v29.js"],[13554,"data_v30.js"],[13888,"data_v31.js"],[14194,"data_kunst.js"],[14391,"data_v214.js"],[14494,"data_v216.js"],[14787,"schrift.js"],[15087,"eingabe.js"],[15298,"data_k34m.js"],[15816,"data_k34d.js"],[16170,"data_k34s.js"],[16624,"data_v224.js"],[17497,"data_v225w.js"],[17866,"data_v225k.js"],[18310,"data_herz.js"],[18664,"data_fb226.js"],[18807,"data_tf226.js"],[19014,"data_v227a.js"],[20114,"data_v227b.js"],[21068,"data_h28b.js"],[21108,"data_l28a.js"],[21974,"data_l28b.js"],[23154,"data_schaetz.js"],[23636,"data_party8.js"],[23686,"data_alce.js"],[24357,"data_alce2.js"],[24606,"data_alce3.js"],[25021,"registry.js"],[25535,"app.js"],[26749,"fun.js"],[27329,"fun2.js"],[27645,"atelier.js"],[28019,"kunst225.js"],[28209,"herz.js"],[28573,"reise.js"],[28875,"iglu.js"],[29041,"offline.js"],[29148,"party.js"],[29632,"meine.js"],[29988,"loeffel.js"],[30159,"trend.js"],[30701,"fun228a.js"],[31552,"fun228b.js"],[32213,"kueche.js"],[33252,"stimme.js"],[33307,"klassen.js"],[33456,"freunde_vorab.js"],[33477,"mut.js"],[33899,"schule.js"],[34388,"fussball226.js"],[34710,"schaetzen.js"],[35141,"party8.js"],[35760,"tiere.js"],[36219,"fussball232.js"],[36434,"party8b.js"],[36736,"weg.js"],[36957,"px.js"],[37376,"px_fein.js"],[37430,"px_data.js"],[37687,"pxwelt.js"],[37770,"px_abenteuer.js"],[38586,"px_abenteuer2.js"],[39338,"px_abenteuer3.js"],[39729,"px_abenteuer4.js"],[39939,"px_baukasten.js"],[40047,"px_abenteuer_fein.js"],[40263,"px_abenteuer_fein2.js"],[40615,"px_ski.js"],[41257,"px_wurf.js"],[41786,"px_insel.js"],[42987,"px_kicker.js"],[43922,"px_eis.js"],[44908,"px_run.js"],[46123,"px_brk.js"],[47085,"px_pol.js"],[48436,"px_frog.js"],[49696,"px_angel.js"],[51011,"px_golf.js"],[52045,"px_tauch.js"],[53310,"px_hockey.js"],[54266,"px_lab.js"],[55601,"px_plopp.js"],[56807,"px_stadion.js"],[58318,"px_stadion2.js"],[58370,"px_training.js"],[58739,"cm.js"],[59229,"cmwelt.js"],[59285,"cm_baeck.js"],[60078,"cm_bahn.js"],[60842,"cm_detek.js"],[61559,"cm_markt.js"],[62272,"ff.js"],[62429,"ff_mathe.js"],[64419,"ff_deutsch.js"],[66007,"ff_sach_a.js"],[68256,"ff_sach_b.js"],[70485,"ff_sprachen.js"],[72893,"zm.js"],[73806,"tt.js"],[74019,"data_tagebuch.js"],[74062,"data_hoerspiel.js"],[74221,"leseecke.js"],[74540,"kt.js"],[74843,"comicbuch.js"],[75121,"alce.js"],[75284,"alce_aufg.js"],[75454,"formen.js"],[75905,"data_formen.js"],[76146,"data_formen2.js"],[76368,"spielzeit.js"],[76513,"data_faktmeinung.js"],[76632,"data_es248.js"],[76896,"data_en249.js"],[77135,"data_wissen249.js"],[77566,"data_kunst249.js"],[77849,"data_fussball250.js"],[77973,"data_werte252.js"],[78226,"data_lesen252.js"],[78287,"data_k34_252.js"],[78373,"art254.js"],[78491,"data_werte255.js"],[78629,"data_lesen255.js"],[78765,"forscher255.js"],[78913,"zufall250.js"],[78959,"stufe259.js"],[78969,"advent.js"],[79232,"wdh.js"],[79330,"eswarm288.js"],[79381,"abwechslung294.js"],[79456,"bilder293a.js"],[79546,"bilder293b.js"],[79676,"bilder293c.js"],[79774,"bilder293d.js"],[79896,"bilder293e.js"],[80060,"bilder293f.js"],[80140,"bilder292.js"],[80586,"denk.js"],[80623,"data_viaje265.js"],[80766,"klassenarbeit.js"],[80899,"quizduell.js"],[81022,"neu267.js"],[81287,"prog.js"],[81392,"lernstand.js"],[81459,"blatt.js"],[81561,"uebung295.js"],[81850,"data_es271.js"],[81964,"plus269.js"],[82058,"schach.js"],[82290,"schachtaktik.js"],[82542,"fun270.js"],[82705,"data_neu274.js"],[82914,"plus272.js"],[82968,"spiele274.js"],[83091,"kasten.js"],[83195,"erklaer.js"],[83308,"apa.js"],[83389,"neu276.js"],[83530,"spiele276.js"],[83580,"neu277.js"],[83758,"spiele277.js"],[84013,"lernen278.js"],[84273,"spiele278.js"],[84616,"lernen279.js"],[84941,"lernen279b.js"],[85339,"spanisch280.js"],[85631,"spanisch283.js"],[85864,"mehr281.js"],[86010,"grafik280.js"],[86381,"tiefsee280.js"],[86659,"abenteuer280.js"],[86871,"abenteuer281.js"],[86983,"design281.js"],[87115,"party281.js"],[87246,"grafik281.js"],[87463,"traumtor292.js"],[87670,"kart293.js"],[87947,"lumi_live.js"],[88063,"sicher.js"],[88247,"stil.js"],[88301,"zurueck287.js"],[88344,"freunde.js"],[88481,"start.js"],[88491,null],[88501,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '2.96.0';
+  var MAP = {"probe":0,"files":[[9352,"fehler_kern.js"],[9640,null],[9642,"data.js"],[10357,"data_more.js"],[10729,"data_su2.js"],[10956,"data_es.js"],[11324,"data_wissen.js"],[11525,"data_v21.js"],[12210,"data_v24.js"],[12698,"data_v25.js"],[13187,"data_v26.js"],[13286,"data_v29.js"],[13594,"data_v30.js"],[13928,"data_v31.js"],[14234,"data_kunst.js"],[14431,"data_v214.js"],[14534,"data_v216.js"],[14827,"schrift.js"],[15127,"eingabe.js"],[15338,"data_k34m.js"],[15856,"data_k34d.js"],[16210,"data_k34s.js"],[16664,"data_v224.js"],[17537,"data_v225w.js"],[17906,"data_v225k.js"],[18350,"data_herz.js"],[18704,"data_fb226.js"],[18847,"data_tf226.js"],[19054,"data_v227a.js"],[20154,"data_v227b.js"],[21108,"data_h28b.js"],[21148,"data_l28a.js"],[22014,"data_l28b.js"],[23194,"data_schaetz.js"],[23676,"data_party8.js"],[23726,"data_alce.js"],[24397,"data_alce2.js"],[24646,"data_alce3.js"],[25061,"registry.js"],[25575,"app.js"],[26790,"fun.js"],[27370,"fun2.js"],[27686,"atelier.js"],[28060,"kunst225.js"],[28250,"herz.js"],[28614,"reise.js"],[28916,"iglu.js"],[29082,"offline.js"],[29189,"party.js"],[29673,"meine.js"],[30029,"loeffel.js"],[30200,"trend.js"],[30742,"fun228a.js"],[31593,"fun228b.js"],[32254,"kueche.js"],[33293,"stimme.js"],[33348,"klassen.js"],[33497,"freunde_vorab.js"],[33518,"mut.js"],[33940,"schule.js"],[34429,"fussball226.js"],[34751,"schaetzen.js"],[35182,"party8.js"],[35801,"tiere.js"],[36260,"fussball232.js"],[36475,"party8b.js"],[36777,"weg.js"],[36998,"px.js"],[37417,"px_fein.js"],[37471,"px_data.js"],[37728,"pxwelt.js"],[37811,"px_abenteuer.js"],[38627,"px_abenteuer2.js"],[39379,"px_abenteuer3.js"],[39770,"px_abenteuer4.js"],[39980,"px_baukasten.js"],[40088,"px_abenteuer_fein.js"],[40304,"px_abenteuer_fein2.js"],[40656,"px_ski.js"],[41298,"px_wurf.js"],[41827,"px_insel.js"],[43028,"px_kicker.js"],[43963,"px_eis.js"],[44949,"px_run.js"],[46164,"px_brk.js"],[47126,"px_pol.js"],[48477,"px_frog.js"],[49737,"px_angel.js"],[51052,"px_golf.js"],[52086,"px_tauch.js"],[53351,"px_hockey.js"],[54307,"px_lab.js"],[55642,"px_plopp.js"],[56848,"px_stadion.js"],[58359,"px_stadion2.js"],[58411,"px_training.js"],[58780,"cm.js"],[59270,"cmwelt.js"],[59326,"cm_baeck.js"],[60119,"cm_bahn.js"],[60883,"cm_detek.js"],[61600,"cm_markt.js"],[62313,"ff.js"],[62470,"ff_mathe.js"],[64460,"ff_deutsch.js"],[66048,"ff_sach_a.js"],[68297,"ff_sach_b.js"],[70526,"ff_sprachen.js"],[72934,"zm.js"],[73847,"tt.js"],[74060,"data_tagebuch.js"],[74103,"data_hoerspiel.js"],[74262,"leseecke.js"],[74581,"kt.js"],[74884,"comicbuch.js"],[75162,"alce.js"],[75325,"alce_aufg.js"],[75495,"formen.js"],[75946,"data_formen.js"],[76187,"data_formen2.js"],[76409,"spielzeit.js"],[76554,"data_faktmeinung.js"],[76673,"data_es248.js"],[76937,"data_en249.js"],[77176,"data_wissen249.js"],[77607,"data_kunst249.js"],[77890,"data_fussball250.js"],[78014,"data_werte252.js"],[78267,"data_lesen252.js"],[78328,"data_k34_252.js"],[78414,"art254.js"],[78532,"data_werte255.js"],[78670,"data_lesen255.js"],[78806,"forscher255.js"],[78954,"zufall250.js"],[79000,"stufe259.js"],[79010,"advent.js"],[79273,"wdh.js"],[79371,"eswarm288.js"],[79422,"abwechslung294.js"],[79497,"bilder293a.js"],[79587,"bilder293b.js"],[79717,"bilder293c.js"],[79815,"bilder293d.js"],[79937,"bilder293e.js"],[80101,"bilder293f.js"],[80181,"bilder292.js"],[80627,"denk.js"],[80664,"data_viaje265.js"],[80807,"klassenarbeit.js"],[80940,"quizduell.js"],[81063,"neu267.js"],[81328,"prog.js"],[81433,"lernstand.js"],[81500,"blatt.js"],[81602,"uebung295.js"],[81894,"schuh296.js"],[82102,"data_es271.js"],[82216,"plus269.js"],[82310,"schach.js"],[82542,"schachtaktik.js"],[82794,"fun270.js"],[82957,"data_neu274.js"],[83166,"plus272.js"],[83220,"spiele274.js"],[83343,"kasten.js"],[83447,"erklaer.js"],[83560,"apa.js"],[83641,"neu276.js"],[83782,"spiele276.js"],[83832,"neu277.js"],[84010,"spiele277.js"],[84265,"lernen278.js"],[84525,"spiele278.js"],[84868,"lernen279.js"],[85193,"lernen279b.js"],[85591,"spanisch280.js"],[85883,"spanisch283.js"],[86116,"mehr281.js"],[86262,"grafik280.js"],[86633,"tiefsee280.js"],[86911,"abenteuer280.js"],[87123,"abenteuer281.js"],[87235,"design281.js"],[87367,"party281.js"],[87498,"grafik281.js"],[87715,"traumtor292.js"],[87922,"kart293.js"],[88199,"lumi_live.js"],[88315,"sicher.js"],[88499,"stil.js"],[88553,"zurueck287.js"],[88596,"freunde.js"],[88733,"start.js"],[88743,null],[88753,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -25536,9 +25576,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '2.95.0';
+const APP_VERSION = '2.96.0';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "2.96.0", d: "17.11.2026", t: ["Neu im Sachunterricht: Schuhe binden lernen, Schritt für Schritt mit gezeichneten Bildern, zwei Wege (Hasenohren und Schlaufe mit Umwickeln)", "Übungstage geben Münzen, nach 5 Tagen ist man Schleifen-Profi. Anleitung und Übungsschuh zum Ausdrucken", "Neues Quiz „Schuhe binden“ mit Bildern"] },
   { v: "2.95.0", d: "16.11.2026", t: ["Neu im Elternbereich: Übungsblätter wie aus dem Schulheft. Mathe Klasse 2 bis 100: Plus, Minus, Rechenmauern, Sachaufgaben, Mix und Knobeln, mit Lösungsblatt", "Drucken oder als PDF sichern, ohne Internet. Jedes Blatt hat eine Nummer, so passen die Lösungen auch später", "Münzen für kontrollierte Blätter: geschaffte Seiten antippen, das Kind holt die Münzen auf der Startseite ab"] },
   { v: "2.94.1", d: "16.11.2026", t: ["Fehler behoben in Kunst „Bilder genau ansehen“: Bei „Welches ist weiter weg?“ war die Lösung in etwa der Hälfte der Aufgaben falsch", "Neue automatische Prüfung aller Aufgaben auf formale Fehler, sie läuft ab jetzt bei jeder Version mit"] },
   { v: "2.94.0", d: "16.11.2026", t: ["Mehr Abwechslung in jeder Runde: Derselbe Inhalt kommt nicht mehr direkt hintereinander, auch nicht in anderer Aufgabenform. Das gilt für alle Lernspiele", "Spiele mit sehr wenigen verschiedenen Inhalten haben kürzere Runden (mindestens 5 Aufgaben)", "Sachunterricht „Was ziehe ich an?“: zehn statt vier Wetterlagen"] },
@@ -81770,14 +81811,17 @@ function ubDruckWeg() {
   document.documentElement.classList.remove('ub-drucken');
   ['ubDruck', 'ubPage'].forEach(id => { const x = document.getElementById(id); if (x) x.remove(); });
 }
-function ubDruckVor(nr, ids, los) {
+function ubDruckVor(nr, ids, los) { ubDruckVorRoh(ubSeitenHTML(nr, ids, los)); }
+
+function ubDruckVorRoh(html) {
   ubDruckWeg();
-  const d = document.createElement('div'); d.id = 'ubDruck'; d.setAttribute('data-eb-aus', ''); d.innerHTML = ubSeitenHTML(nr, ids, los); document.body.appendChild(d);
+  const d = document.createElement('div'); d.id = 'ubDruck'; d.setAttribute('data-eb-aus', ''); d.innerHTML = html; document.body.appendChild(d);
   const st = document.createElement('style'); st.id = 'ubPage'; st.textContent = '@page { size: A4 portrait; margin: 13mm; }'; document.head.appendChild(st);
   document.documentElement.classList.add('ub-drucken');
 }
-function ubDruck(nr, ids, los) {
-  ubDruckVor(nr, ids, los);
+function ubDruck(nr, ids, los) { ubDruckRoh(ubSeitenHTML(nr, ids, los)); }
+function ubDruckRoh(html) {
+  ubDruckVorRoh(html);
   window.addEventListener('afterprint', ubDruckWeg, { once: true });
   try { window.print(); } catch (e) { ubDruckWeg(); toast('Drucken klappt hier leider nicht. Öffne die Lernwelt in Safari und drucke dort.'); return; }
   setTimeout(() => { if (!window.matchMedia || !window.matchMedia('print').matches) ubDruckWeg(); }, 60000);
@@ -81845,6 +81889,214 @@ Object.assign(ACT, {
     const u = ubS(), m = u.offen.reduce((s, o) => s + (o.m || 0), 0); if (!m) { u.offen = []; save(); showHome(); return; }
     S.coins = (S.coins || 0) + m; u.offen = []; save(); try { Sound.win(); } catch (e) { } if (typeof confetti === 'function') confetti(80); showHome(); toast(`+${plural(m, 'Münze', 'Münzen')} für dein Übungsblatt!`);
   }
+});
+
+/*@@src schuh296.js@@*/
+
+
+
+
+
+
+
+
+
+const SB_ROT = ['#e2483a', '#9e2a20', '#ffb0a6'], SB_BLAU = ['#2f6fdc', '#1c4596', '#a9c8ff'];
+
+function sbBand(d, f, hinten) {
+  if (hinten) return `<path d="${d}" fill="none" stroke="${f[0]}" stroke-width="4.5" stroke-linecap="round" stroke-dasharray="4 4" opacity=".45"/>`;
+  return `<path d="${d}" fill="none" stroke="${f[1]}" stroke-width="7.6" stroke-linecap="round" stroke-linejoin="round"/><path d="${d}" fill="none" stroke="${f[0]}" stroke-width="5.4" stroke-linecap="round" stroke-linejoin="round"/><path d="${d}" fill="none" stroke="${f[2]}" stroke-width="1.3" stroke-linecap="round" opacity=".7"/>`;
+}
+
+const sbHuelse = (x, y, a) => `<rect x="${x - 2}" y="${y - 3.6}" width="9" height="7.2" rx="2.4" fill="#5d6b85" transform="rotate(${a} ${x} ${y})"/>`;
+
+function sbPfeil(x1, y1, cx, cy, x2, y2, gestr) { return sbPfeilWeg([[x1, y1, cx, cy, x2, y2, gestr]]); }
+
+function sbPfeilWeg(teile) {
+  const [, , cx, cy, x2, y2] = teile[teile.length - 1], a = Math.atan2(y2 - cy, x2 - cx), L = 7, s = .55, p = (w) => `${(x2 + Math.cos(a + Math.PI - w) * L).toFixed(1)},${(y2 + Math.sin(a + Math.PI - w) * L).toFixed(1)}`;
+  return `<g class="sb-pf">${teile.map(([x1, y1, qx, qy, ex, ey, gestr]) => `<path d="M${x1} ${y1} Q${qx} ${qy} ${ex} ${ey}" fill="none" stroke="#ff9d2e" stroke-width="2.6" stroke-linecap="round"${gestr ? ' stroke-dasharray="4 3.5" opacity=".8"' : ''}/>`).join('')}<polygon points="${x2},${y2} ${p(s)} ${p(-s)}" fill="#ff9d2e"/></g>`;
+}
+
+function sbSchuh() {
+  const oesen = [96, 114, 132, 150].map(y => `<circle cx="80" cy="${y}" r="3.6" fill="#fff" stroke="#1d6b60" stroke-width="1.6"/><circle cx="120" cy="${y}" r="3.6" fill="#fff" stroke="#1d6b60" stroke-width="1.6"/>`).join('');
+  const kreuz = [[150, 132], [132, 114], [114, 96]].map(([u, o]) => `<path d="M80 ${u} L120 ${o} M120 ${u} L80 ${o}" stroke="#c3cddd" stroke-width="5.5" stroke-linecap="round"/><path d="M80 ${u} L120 ${o} M120 ${u} L80 ${o}" stroke="#ffffff" stroke-width="3.6" stroke-linecap="round"/>`).join('');
+  return `<rect x="0" y="0" width="200" height="160" rx="14" fill="#eef6ff"/>
+    <path d="M34 160 C34 118 52 82 100 76 C148 82 166 118 166 160 Z" fill="#3fb8a6" stroke="#2a8f80" stroke-width="2"/>
+    <path d="M86 160 L86 86 C92 80 108 80 114 86 L114 160 Z" fill="#c9f1e9"/>
+    <path d="M66 160 L68 90 C72 86 78 84 88 84 L88 160 Z M134 160 L132 90 C128 86 122 84 112 84 L112 160 Z" fill="#46c4b1" stroke="#2a8f80" stroke-width="1.2"/>
+    ${kreuz}${oesen}`;
+}
+const SB_K = 'M80 96 C86 90 94 86 100 84', SB_KB = 'M120 96 C114 90 106 86 100 84';
+
+function sbOhr(f, seite, kipp, lang) {
+  lang = lang || 1; const sx = 100 + seite * 3;
+  const pfad = `M${sx} 76 C${sx + seite * -2} 62 ${sx - 22 * lang} ${76 - 42 * lang} ${sx - 6} ${76 - 46 * lang} C${sx + 12} ${76 - 48 * lang} ${sx + 8} 62 ${sx + 1} 76`;
+  return `<g transform="rotate(${kipp} ${sx} 76)">${sbBand(pfad, f)}</g>`;
+}
+const sbSchwanz = (f, seite) => sbBand(`M${100 + seite * 3} 79 C${100 + seite * 10} 86 ${100 + seite * 22} 92 ${100 + seite * 34} 99`, f) + sbHuelse(100 + seite * 34, 99, seite < 0 ? 150 : 30);
+const sbFunkel = (x, y, k) => `<path d="M${x} ${y - 6 * k}L${x + 1.6 * k} ${y - 1.6 * k}L${x + 6 * k} ${y}L${x + 1.6 * k} ${y + 1.6 * k}L${x} ${y + 6 * k}L${x - 1.6 * k} ${y + 1.6 * k}L${x - 6 * k} ${y}L${x - 1.6 * k} ${y - 1.6 * k}Z" fill="#ffd84a"/>`;
+
+function sbSchleife(pfeile) {
+  const links = 'M97 79 C84 66 56 58 50 72 C45 86 78 92 97 82', rechts = 'M103 79 C116 66 144 58 150 72 C155 86 122 92 103 82';
+  return sbBand(SB_K, SB_ROT) + sbBand(SB_KB, SB_BLAU) + sbBand('M97 82 C90 88 78 94 66 100', SB_BLAU) + sbHuelse(66, 100, 150) + sbBand('M103 82 C110 88 122 94 134 100', SB_ROT) + sbHuelse(134, 100, 30)
+    + sbBand(links, SB_ROT) + sbBand(rechts, SB_BLAU) + `<rect x="93" y="73" width="14" height="12" rx="5" fill="#c62f3a" stroke="#1c4596" stroke-width="2"/>`
+    + (pfeile ? sbPfeil(46, 56, 36, 54, 24, 58) + sbPfeil(154, 56, 164, 54, 176, 58) : sbFunkel(28, 34, 1) + sbFunkel(172, 30, 1.2) + sbFunkel(160, 120, .8));
+}
+
+const SB_BILD = {
+  kreuzen: () => sbBand('M120 96 C110 88 100 78 88 64 C80 54 72 46 62 38', SB_BLAU) + sbHuelse(62, 38, -128) + sbBand('M80 96 C90 88 100 78 112 64 C120 54 128 46 138 38', SB_ROT) + sbHuelse(138, 38, -52)
+    + sbPfeil(40, 70, 34, 52, 52, 36) + sbPfeil(160, 70, 166, 52, 148, 36),
+  durch: () => sbBand('M120 96 C110 88 100 78 88 64 C80 54 72 46 62 38', SB_BLAU) + sbHuelse(62, 38, -128) + sbBand('M80 96 C90 88 100 78 112 64 C120 54 128 46 138 38', SB_ROT) + sbHuelse(138, 38, -52)
+    + sbPfeilWeg([[148, 46, 172, 94, 114, 84], [114, 84, 100, 82, 98, 72, true], [98, 72, 98, 56, 88, 46]]),
+  fest: () => sbBand(SB_K + ' C106 80 104 74 98 75 C88 76 62 72 34 70', SB_ROT) + sbHuelse(34, 70, 180) + sbBand(SB_KB + ' C94 80 96 74 102 75 C112 76 138 72 166 70', SB_BLAU) + sbHuelse(166, 70, 0)
+    + sbPfeil(46, 54, 36, 52, 22, 56) + sbPfeil(154, 54, 164, 52, 178, 56),
+  ohr1: () => sbBand(SB_KB + ' C94 80 96 74 102 75 C112 76 138 72 166 70', SB_BLAU) + sbHuelse(166, 70, 0) + sbBand(SB_K, SB_ROT) + sbOhr(SB_ROT, -1, -28) + sbSchwanz(SB_ROT, -1),
+  ohr2: () => sbBand(SB_K, SB_ROT) + sbBand(SB_KB, SB_BLAU) + sbOhr(SB_ROT, -1, -28) + sbSchwanz(SB_ROT, -1) + sbOhr(SB_BLAU, 1, 28) + sbSchwanz(SB_BLAU, 1),
+  ohrkreuz: () => sbBand(SB_K, SB_ROT) + sbBand(SB_KB, SB_BLAU) + sbSchwanz(SB_ROT, -1) + sbSchwanz(SB_BLAU, 1) + sbOhr(SB_BLAU, 1, -30) + sbOhr(SB_ROT, -1, 30)
+    + sbPfeil(40, 52, 50, 30, 70, 30) + sbPfeil(160, 52, 150, 30, 130, 30),
+  ohrdurch: () => sbBand(SB_K, SB_ROT) + sbBand(SB_KB, SB_BLAU) + sbSchwanz(SB_ROT, -1) + sbSchwanz(SB_BLAU, 1) + sbOhr(SB_BLAU, 1, -30) + sbOhr(SB_ROT, -1, 30)
+    + sbPfeilWeg([[134, 24, 176, 66, 114, 76], [114, 76, 100, 74, 98, 64, true], [98, 64, 90, 50, 74, 48]]),
+  schleife: () => sbSchleife(true),
+  fertig: () => sbSchleife(false),
+
+  schlaufe: () => sbBand(SB_KB + ' C94 80 96 74 102 75 C112 76 138 72 166 70', SB_BLAU) + sbHuelse(166, 70, 0) + sbBand(SB_K, SB_ROT) + sbOhr(SB_ROT, -1, 0, 1.05) + sbSchwanz(SB_ROT, -1),
+  wickeln: () => sbBand(SB_K, SB_ROT) + sbSchwanz(SB_ROT, -1) + sbBand(SB_KB + ' C96 80 92 70 98 64', SB_BLAU) + sbBand('M98 64 C104 60 112 60 114 64', SB_BLAU, true) + sbOhr(SB_ROT, -1, 0, 1.05)
+    + sbBand('M84 64 C90 56 108 54 114 64 C118 70 136 70 160 66', SB_BLAU) + sbHuelse(160, 66, -10) + sbPfeil(122, 50, 100, 36, 80, 50) + sbPfeil(80, 50, 76, 66, 92, 70),
+  schieben: () => sbBand(SB_K, SB_ROT) + sbSchwanz(SB_ROT, -1) + sbBand(SB_KB, SB_BLAU) + sbOhr(SB_ROT, -1, -20, 1.05) + sbBand('M84 64 C90 56 108 54 112 62', SB_BLAU)
+    + sbBand('M104 70 C118 58 146 54 150 68 C154 82 120 84 106 76', SB_BLAU) + sbSchwanz(SB_BLAU, 1) + sbPfeil(128, 44, 150, 42, 166, 52)
+};
+const sbBildSVG = (id, cls) => `<svg class="${cls || 'sb-bild'}" viewBox="0 0 200 160" role="img" aria-hidden="true">${sbSchuh()}${SB_BILD[id]()}</svg>`;
+
+const SB_WEGE = {
+  hase: { t: 'Hasenohren', d: 'Der leichtere Weg für den Anfang', i: '🐰', schritte: [
+    ['kreuzen', 'Bänder kreuzen', 'Nimm in jede Hand ein Band. Leg das rote Band über das blaue. So entsteht ein Kreuz.'],
+    ['durch', 'Durchstecken', 'Steck das rote Band unter dem blauen Band durch das Loch.'],
+    ['fest', 'Festziehen', 'Zieh beide Bänder fest auseinander. Jetzt hast du einen Knoten.'],
+    ['ohr1', 'Erstes Hasenohr', 'Mach aus dem roten Band eine Schlaufe. Das ist das erste Hasenohr. Halte es unten fest.'],
+    ['ohr2', 'Zweites Hasenohr', 'Mach aus dem blauen Band auch eine Schlaufe. Jetzt hast du zwei Hasenohren.'],
+    ['ohrkreuz', 'Ohren kreuzen', 'Leg das rote Ohr über das blaue Ohr. Wie beim ersten Kreuz.'],
+    ['ohrdurch', 'Ohr durchstecken', 'Steck das rote Ohr unter dem blauen Ohr durch das Loch.'],
+    ['schleife', 'Festziehen', 'Zieh an beiden Ohren. Fertig ist die Schleife!']] },
+  schlaufe: { t: 'Schlaufe und Umwickeln', d: 'So binden es viele Große', i: '🎀', schritte: [
+    ['kreuzen', 'Bänder kreuzen', 'Nimm in jede Hand ein Band. Leg das rote Band über das blaue. So entsteht ein Kreuz.'],
+    ['durch', 'Durchstecken', 'Steck das rote Band unter dem blauen Band durch das Loch.'],
+    ['fest', 'Festziehen', 'Zieh beide Bänder fest auseinander. Jetzt hast du einen Knoten.'],
+    ['schlaufe', 'Schlaufe machen', 'Mach aus dem roten Band eine Schlaufe. Halte sie unten gut fest.'],
+    ['wickeln', 'Herumwickeln', 'Leg das blaue Band einmal ganz um die rote Schlaufe herum.'],
+    ['schieben', 'Durchschieben', 'Schieb das blaue Band mit dem Finger durch das kleine Loch. So entsteht eine blaue Schlaufe.'],
+    ['schleife', 'Festziehen', 'Zieh an beiden Schlaufen. Fertig ist die Schleife!']] }
+};
+const SB_TIPPS = [
+  ['🪑', 'Setz dich hin', 'Stell den Fuß auf einen Hocker. Oder übe zuerst am Übungsschuh auf dem Tisch.'],
+  ['🖍️', 'Zwei Farben helfen', 'Mal eine Hälfte vom Schnürsenkel mit Filzstift an. Dann siehst du sofort, welches Band welches ist.'],
+  ['🔁', 'Doppelknoten', 'Kreuze die fertigen Schlaufen noch einmal und steck eine durch. Dann geht die Schleife nicht so leicht auf.'],
+  ['👉', 'Aufmachen', 'Zieh an einem Band-Ende, nicht an der Schlaufe. Dann geht die Schleife ganz leicht auf.'],
+  ['💪', 'Nicht aufgeben', 'Am Anfang klappt es nicht immer. Das ist normal. Jeder hat viele Versuche gebraucht.']];
+const SB_MZ = 3, SB_PROFI = 5;
+function sbS() { if (!isObj(S.schuh)) S.schuh = {}; const s = S.schuh; if (!Array.isArray(s.tage)) s.tage = []; if (!SB_WEGE[s.weg]) s.weg = 'hase'; if (!(s.i >= 0)) s.i = 0; return s; }
+
+function showSchuh() {
+  stopTimers(); G = null; const s = sbS(), W = SB_WEGE[s.weg], n = W.schritte.length; s.i = Math.min(s.i, n - 1);
+  const [bild, titel, text] = W.schritte[s.i], heute = s.tage.includes(dayKey()), profi = s.tage.length >= SB_PROFI;
+  setView(`<header class="pagehead"><div class="wrap">${backBtn('world', 'data-w="sach"')}<div><h1>👟 Schuhe binden</h1><p>Schritt für Schritt zur Schleife</p></div></div></header>
+    <main class="wrap sb-page">
+      <div class="sb-wege" role="tablist">${Object.entries(SB_WEGE).map(([id, w]) => `<button class="sb-weg ${s.weg === id ? 'sel' : ''}" role="tab" aria-selected="${s.weg === id}" data-act="sbweg" data-id="${id}"><span aria-hidden="true">${w.i}</span><b>${esc(w.t)}</b><small>${esc(w.d)}</small></button>`).join('')}</div>
+      <section class="card sb-karte">
+        <div class="sb-nr">Schritt ${s.i + 1} von ${n}</div>
+        <div class="sb-bildrahmen">${sbBildSVG(bild)}</div>
+        <h2>${esc(titel)}</h2><p class="sb-text">${esc(text)}</p>
+        <div class="sb-punkte" aria-hidden="true">${W.schritte.map((_, i) => `<button class="sb-pk ${i === s.i ? 'on' : i < s.i ? 'war' : ''}" data-act="sbgeh" data-i="${i}" tabindex="-1"></button>`).join('')}</div>
+        <div class="sb-nav"><button class="btn ghost" data-act="sbgeh" data-i="${s.i - 1}"${s.i ? '' : ' disabled'}>← Zurück</button>${Speech.ok ? `<button class="btn ghost" data-act="sbvor" aria-label="Vorlesen">🔊</button>` : ''}<button class="btn" data-act="sbgeh" data-i="${s.i + 1}"${s.i < n - 1 ? '' : ' disabled'}>Weiter →</button></div>
+      </section>
+      <section class="card sb-ueben"><h2>${profi ? '🎀 Du bist ein Schleifen-Profi!' : 'Hast du heute geübt?'}</h2>
+        <p class="muted">${profi ? `Schon an ${s.tage.length} Tagen geübt. Super!` : `Übe an ${SB_PROFI} Tagen, dann bist du Schleifen-Profi. Für jeden Übungstag gibt es ${SB_MZ} Münzen.`}</p>
+        <div class="sb-sterne" aria-label="${Math.min(s.tage.length, SB_PROFI)} von ${SB_PROFI} Übungstagen">${Array.from({ length: SB_PROFI }, (_, i) => `<span class="${i < s.tage.length ? 'on' : ''}">★</span>`).join('')}</div>
+        <div class="acts"><button class="btn" data-act="sbgeuebt"${heute ? ' disabled' : ''}>${heute ? '✓ Heute schon geübt' : '👟 Ich habe heute geübt'}</button><button class="btn ghost" data-act="sbquiz">🎀 Quiz dazu</button></div></section>
+      <section class="card"><h2>Tipps</h2><ul class="sb-tipps">${SB_TIPPS.map(([e, t, d]) => `<li><span aria-hidden="true">${e}</span><div><b>${esc(t)}</b><p>${esc(d)}</p></div></li>`).join('')}</ul></section>
+      <section class="card"><h2>Zum Ausdrucken</h2><p class="muted">Die Anleitung zum Aufhängen und einen Übungsschuh aus Pappe zum Basteln. Auf dem iPad öffnet sich das Druckmenü, dort geht auch „Als PDF sichern“.</p>
+        <div class="acts"><button class="btn ghost" data-act="sbdruck" data-was="anleitung">🖨️ Anleitung „${esc(W.t)}“</button><button class="btn ghost" data-act="sbdruck" data-was="schuh">✂️ Übungsschuh zum Basteln</button></div></section>
+    </main>`, 'sach');
+}
+
+function sbAnleitungHTML(weg) {
+  const W = SB_WEGE[weg];
+  return `<section class="ub-blatt sb-druck" style="--ak:#2a8f80;--ak2:#e3f6f2">
+    <header class="ub-kopf"><div class="ub-tl">${ubSym('👟')}<div><div class="ub-fach">Sachunterricht · Das kann ich</div><h1>Schuhe binden: ${esc(W.t)}</h1></div></div></header>
+    <div class="ub-tipp"><span>Tipp: Mal eine Hälfte vom Schnürsenkel mit Filzstift an. Dann siehst du gut, welches Band welches ist.</span></div>
+    <div class="sb-raster">${W.schritte.map(([b, t, d], i) => `<div class="sb-zelle"><div class="sb-zbild">${sbBildSVG(b, 'sb-dbild')}<span class="ub-nr">${i + 1}</span></div><b>${esc(t)}</b><p>${esc(d)}</p></div>`).join('')}
+      <div class="sb-zelle sb-ztipp"><b>Doppelknoten</b><p>Kreuze die fertigen Schlaufen noch einmal und steck eine durch. Dann geht die Schleife nicht so leicht auf.</p><b>Aufmachen</b><p>Zieh an einem Band-Ende.</p></div></div>
+    <footer class="ub-fuss"><span>${esc(UB_APP)} · Schuhe binden</span><span class="ub-gefuehl">Geschafft: ☐ ☐ ☐ ☐ ☐</span></footer></section>`;
+}
+function sbBastelHTML() {
+  const oesen = [0, 1, 2, 3, 4].map(i => { const y = 92 + i * 22, dx = 7 + i * 1.5; return `<circle cx="${74 - dx}" cy="${y}" r="3.2" fill="#fff" stroke="#1d2b45" stroke-width="1"/><circle cx="${74 - dx}" cy="${y}" r=".8" fill="#1d2b45"/><circle cx="${74 + dx}" cy="${y}" r="3.2" fill="#fff" stroke="#1d2b45" stroke-width="1"/><circle cx="${74 + dx}" cy="${y}" r=".8" fill="#1d2b45"/>`; }).join('');
+  const schuh = `<svg class="sb-bastel" viewBox="0 0 148 238" style="width:110mm;height:177mm"><path d="M74 6 C108 6 128 34 130 74 C132 110 124 140 126 172 C128 206 106 232 74 232 C42 232 20 206 22 172 C24 140 16 110 18 74 C20 34 40 6 74 6 Z" fill="#e3f6f2" stroke="#1d2b45" stroke-width="1.2" stroke-dasharray="4 2.5"/>
+    <path d="M52 84 C52 70 62 62 74 62 C86 62 96 70 96 84 L94 196 C86 204 62 204 54 196 Z" fill="#fff" stroke="#2a8f80" stroke-width="1"/><text x="74" y="216" font-size="7" text-anchor="middle" fill="#7f8da3">Hier ausschneiden</text>${oesen}</svg>`;
+  return `<section class="ub-blatt sb-druck" style="--ak:#2a8f80;--ak2:#e3f6f2">
+    <header class="ub-kopf"><div class="ub-tl">${ubSym('✂️')}<div><div class="ub-fach">Sachunterricht · Basteln</div><h1>Übungsschuh zum Schleifebinden</h1></div></div></header>
+    <div class="sb-bastelzeile">${schuh}<ol class="sb-schritte">
+      <li>Klebe das Blatt auf feste Pappe, zum Beispiel von einer leeren Müslischachtel.</li>
+      <li>Schneide den Schuh an der gestrichelten Linie aus. <b>Ein Erwachsener hilft.</b></li>
+      <li>Mach an den zehn Punkten kleine Löcher, zum Beispiel mit einem spitzen Bleistift. <b>Ein Erwachsener hilft.</b></li>
+      <li>Fädle einen Schnürsenkel kreuzweise von unten nach oben durch die Löcher.</li>
+      <li>Mal eine Hälfte vom Schnürsenkel mit Filzstift an. Oder knote ein rotes und ein blaues Band zusammen.</li>
+      <li>Jetzt kannst du am Tisch üben, so oft du willst. Die Anleitung steht in der Lernwelt.</li></ol></div>
+    <footer class="ub-fuss"><span>${esc(UB_APP)} · Übungsschuh</span><span class="ub-gefuehl">Gebastelt am: ____________</span></footer></section>`;
+}
+
+const SB_WISSEN = [
+  ['Was machst du ganz am Anfang?', 'Ich kreuze die beiden Bänder.', ['Ich mache zwei Hasenohren.', 'Ich ziehe die Schleife fest.']],
+  ['Wozu ist ein Doppelknoten gut?', 'Die Schleife geht nicht so leicht auf.', ['Der Schuh wird schneller.', 'Die Bänder werden länger.']],
+  ['Wie machst du eine Schleife wieder auf?', 'Ich ziehe an einem Band-Ende.', ['Ich ziehe an beiden Schlaufen.', 'Ich schneide das Band durch.']],
+  ['Was hilft beim Üben?', 'Zwei Farben am Schnürsenkel', ['Die Augen zumachen', 'Ganz schnell machen']],
+  ['Warum bindet man die Schuhe zu?', 'Damit der Schuh fest am Fuß sitzt und ich nicht stolpere.', ['Damit die Schuhe gut riechen.', 'Damit die Socken warm bleiben.']],
+  ['Wie viele Hasenohren brauchst du für eine Schleife?', '2', ['1', '3']],
+  ['Was ist ein Schnürsenkel?', 'Das Band, mit dem man den Schuh zubindet', ['Die Sohle unter dem Schuh', 'Ein Loch im Schuh']],
+  ['Wo steckst du die Bänder beim Knoten durch?', 'Durch das Loch unter dem Kreuz', ['Durch die Schuhsohle', 'Durch die Socke']]];
+
+const SB_AEHNL = [['kreuzen', 'durch'], ['ohrkreuz', 'ohrdurch'], ['schleife', 'fertig'], ['ohr1', 'schlaufe']];
+const sbAehnlich = (a, b) => a === b || SB_AEHNL.some(g => g.includes(a) && g.includes(b));
+
+function sbZwei(L, kand, sperre) {
+  const out = []; for (const j of R.shuffle(kand)) { if (sperre.some(id => sbAehnlich(L[j][0], id)) || out.some(o => sbAehnlich(L[o][0], L[j][0]))) continue; out.push(j); if (out.length === 2) break; }
+  return out;
+}
+function sbQuiz(ctx) {
+  const art = R.pick(['naechst', 'naechst', 'bild', 'ordnen', 'wissen', 'wissen']), wid = R.pick(['hase', 'schlaufe']), W = SB_WEGE[wid], L = W.schritte;
+  const opt = (i) => ({ html: sbBildSVG(L[i][0], 'sb-obild'), label: L[i][1] + ' (' + (i + 1) + ')' });
+  if (art === 'naechst') {
+    const i = R.int(0, L.length - 2), andere = sbZwei(L, L.map((_, j) => j).filter(j => j !== i && j !== i + 1), [L[i][0], L[i + 1][0]]);
+    return mkChoice({ prompt: `${W.t}: Was kommt nach diesem Schritt?`, visual: `<div class="sb-qbild">${sbBildSVG(L[i][0], 'sb-qsvg')}<p>${esc(L[i][1])}</p></div>`, answer: opt(i + 1), wrong: andere.map(opt), layout: 'row3',
+      explain: `Nach „${L[i][1]}“ kommt „${L[i + 1][1]}“: ${L[i + 1][2]}`, key: 'sbn|' + wid + i });
+  }
+  if (art === 'bild') {
+    const i = R.int(0, L.length - 1), andere = sbZwei(L, L.map((_, j) => j).filter(j => j !== i), [L[i][0]]);
+    return mkChoice({ prompt: `Welches Bild passt? „${L[i][2]}“`, answer: opt(i), wrong: andere.map(opt), layout: 'row3', explain: `Das ist Schritt ${i + 1}: ${L[i][1]}.`, key: 'sbb|' + wid + i });
+  }
+  if (art === 'ordnen') {
+    const a = R.int(0, L.length - 4), teil = L.slice(a, a + 4).map(x => x[1]);
+    if (new Set(teil).size < 4) return sbQuiz(ctx);
+    return mkOrder({ prompt: `${W.t}: Bring die Schritte in die richtige Reihenfolge.`, items: teil, explain: teil.join(', dann ') + '.', key: 'sbo|' + wid + a });
+  }
+  const [f, r, w] = R.pick(SB_WISSEN);
+  return mkChoice({ prompt: f, visual: bigEmoji('👟', 'sm'), answer: r, wrong: w, layout: 'col', explain: `Richtig ist: ${r}`, key: 'sbw|' + f });
+}
+
+Object.assign(GAMES, {
+  schuhbinden: { id: 'schuhbinden', w: 'sach', g: 'su-ich', t: 'Schuhe binden lernen', d: 'Schritt für Schritt mit Bildern, zum Ausdrucken', i: '👟', type: 'tool', open: () => showSchuh() },
+  schuhquiz: { id: 'schuhquiz', w: 'sach', g: 'su-ich', t: 'Schuhe binden: Quiz', d: 'Was kommt als Nächstes? Bilder und Schritte ordnen', i: '🎀', gen: sbQuiz }
+});
+Object.assign(ACT, {
+  sbweg: t => { const s = sbS(); if (SB_WEGE[t.dataset.id]) { s.weg = t.dataset.id; s.i = 0; save(); } showSchuh(); },
+  sbgeh: t => { const s = sbS(), i = Number(t.dataset.i), n = SB_WEGE[s.weg].schritte.length; if (i >= 0 && i < n) { s.i = i; save(); try { Sound.tap(); } catch (e) { } showSchuh(); if (i === n - 1) { if (typeof confetti === 'function') confetti(40); } } },
+  sbvor: t => { const s = sbS(), st = SB_WEGE[s.weg].schritte[s.i]; Speech.say(`Schritt ${s.i + 1}. ${st[1]}. ${st[2]}`, 'de-DE', t); },
+  sbgeuebt: () => {
+    const s = sbS(), d = dayKey(); if (s.tage.includes(d)) return;
+    s.tage.push(d); s.tage = s.tage.slice(-60); S.coins = (S.coins || 0) + SB_MZ; save();
+    try { Sound.win(); } catch (e) { } if (typeof confetti === 'function') confetti(s.tage.length === SB_PROFI ? 90 : 40);
+    showSchuh(); toast(s.tage.length === SB_PROFI ? `🎀 Du bist jetzt Schleifen-Profi! +${SB_MZ} Münzen` : `Super geübt! +${SB_MZ} Münzen`);
+  },
+  sbquiz: () => startGame('schuhquiz'),
+  sbdruck: t => { const s = sbS(); ubDruckRoh(t.dataset.was === 'schuh' ? sbBastelHTML() : sbAnleitungHTML(s.weg)); }
 });
 
 /*@@src data_es271.js@@*/
