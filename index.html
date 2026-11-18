@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-Pcq7yRP8WHfwD2ntSoHwyRjNrl7rHIjDYssyHEkJWmg=' 'sha256-75nUKaMUX+iovHo2cji1ynZPel4e89nvvhMzECHcYHw=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-s7yepISt/idiK8RModti+ijRUlgNTPko5dbhsepXb40=' 'sha256-12L1VENFrXr9V2PWHAhndJbpWQqNNiu0TntteGyDHe8=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -4638,7 +4638,7 @@ button.cq-cell:active { transform: scale(.99); }
 .ubg-t { margin: 14px 0 6px; font-size: 17px; }
 .ubg-t small { color: var(--ink-soft); font-weight: 700; font-size: 13px; }
 .ubg-gruppen { display: grid; gap: 6px; margin-bottom: 8px; }
-.ubg-gr { border: 2px solid #e3e8f2; border-radius: 14px; padding: 6px 10px; background: #fafbff; }
+.ubg-gr { border: 2px solid var(--line, #e3e8f2); border-radius: 14px; padding: 6px 10px; background: var(--surface-2, #fafbff); }
 .ubg-gr summary { cursor: pointer; font-weight: 800; padding: 4px 0; }
 .ubg-gr summary small { color: var(--ink-soft); font-weight: 700; margin-left: 4px; }
 .ubg-gr .ka-chips { margin: 6px 0 4px; }
@@ -5484,6 +5484,9 @@ mark.ffl-hl { background: #ffe066; color: #1d2440; border-radius: 5px; padding: 
 .lwf-bar-i { font-size: 20px; flex: none; }
 .lwf-bar-t { flex: 1; line-height: 1.35; }
 .lwf-bar-m { flex: none; font-weight: 800; font-size: 13px; color: var(--sea-2, #1F6FA6); text-decoration: underline; text-underline-offset: 3px; }
+/* v3.2.1: „Mehr“ im dunklen Design lesbar */
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .lwf-bar-m { color: #8fc3ff; } }
+:root[data-theme="dark"] .lwf-bar-m { color: #8fc3ff; }
 
 /* ---- style_fw310.css ---- */
 
@@ -10240,6 +10243,131 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 @media (max-width: 520px) { .section-title { flex-wrap: wrap; } .zuf-btn { order: 3; margin-left: 0; } }
 @media (prefers-reduced-motion: reduce) { .zuf-slot.rolling .zuf-i, .zuf-slot.done, .zuf-btn:hover .zuf-d { animation: none; } }
 
+/* ---- style_zz_dunkel321.css ---- */
+
+
+
+
+
+
+
+
+
+:where(.fw-home,
+  .fw-pbar,
+  .fw-eibtn,
+  .fw-slot.leer,
+  .fw-xp,
+  .fw-xp i,
+  .fw-chip,
+  .fw-mini,
+  .fw-alb,
+  .fw-fakt,
+  .fw-energie i,
+  .fw-energie i.voll,
+  .fw-hp,
+  .fw-hp-bar,
+  .fw-reste i,
+  .fw-reste i.akt,
+  .fw-frage,
+  .fw-hoer,
+  .fw-opt,
+  .fw-opt.richtig,
+  .fw-opt.falsch,
+  .fw-numanz,
+  .fw-numanz.richtig,
+  .fw-numanz.falsch,
+  .fw-pad button,
+  .fw-erkl p,
+  .fw-bankw,
+  .fw-minihp,
+  .ebu,
+  .ebu-ab,
+  .ebu-ab.hat,
+  .ebu-blase,
+  .ebu-hoer,
+  .ebu-vorschau,
+  .ebu-beh,
+  .ebu-beh.on,
+  .ebu-top.on,
+  .ebu-sorte,
+  .ebu-top,
+  .ebu-opt,
+  .ebu-opt.falsch,
+  .ebu-opt.richtig,
+  .ebu-anz,
+  .ebu-pad button,
+  .ebu-lade,
+  .tb-karte,
+  .tb-opt,
+  .tb-opt.richtig,
+  .tb-opt.falsch,
+  .tb-num,
+  .tb-pad button,
+  .ds,
+  .ds-stein,
+  .rt,
+  .rt-reihe,
+  .kp-krone .kp-nr,
+  .mw-cH .mw-kopf,
+  .mw-cZ .mw-kopf,
+  .mw-cE .mw-kopf,
+  .mw-e.mw-viel,
+  .mw-tafel .mw-zuviel,
+  .kp-schrift td,
+  .lc-prog i,
+  .lc-prog i.on,
+  .lc-karte,
+  .lc-wer,
+  .lc-wer.lumi,
+  .lc-q,
+  .lc-done,
+  .lc-opt,
+  .lc-opt.ok,
+  .lc-opt.bad,
+  .nb-pt,
+  .nb-pt.tip,
+  .nb-pt.voll,
+  .nb-pt.lock,
+  .nb-pt.bad,
+  .nf-lineal svg,
+  .nf-sl-z.bad,
+  .nf-sl-z.lock .nf-sl-s,
+  .nf-sae,
+  .nf-kw.ok,
+  .nf-kw.fail,
+  .nf-kw.bad,
+  .nf-satz.bad,
+  .nf-satz-t.frage,
+  .nf-opt.bad,
+  .nf-rdisp.bad,
+  .mh-pad.an,
+  .hs-stf,
+  .hs-stf.on,
+  .mt-formel,
+  .mt-strahl,
+  .em-tab td.em-sitzt,
+  .em-tab td.em-langsam,
+  .zuf-btn,
+  .fw-kampf,
+  .fw-st,
+  .mw-kopf,
+  .fw-slot) {
+  --ink: #12324A; --ink-soft: #52707F; --line: #D2E4EC; --line-deep: #B5CFDB; --surface: #FFFFFF; --surface-2: #F4F9FC; --bg: #EDF6FA;
+  color: var(--ink);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .weg-h small { color: #8fc3ff; }
+  :root:not([data-theme="light"]) .kp-next small { color: #ffb3c0; }
+  :root:not([data-theme="light"]) .fw-tipp { color: #c9b8ff; }
+  :root:not([data-theme="light"]) .mw-ziel { color: var(--w, #ffb070); }
+}
+:root[data-theme="dark"] .weg-h small { color: #8fc3ff; }
+:root[data-theme="dark"] .kp-next small { color: #ffb3c0; }
+:root[data-theme="dark"] .fw-tipp { color: #c9b8ff; }
+:root[data-theme="dark"] .mw-ziel { color: var(--w, #ffb070); }
+
 </style>
 </head>
 <body>
@@ -10258,8 +10386,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '3.2.0';
-  var MAP = {"probe":0,"files":[[10248,"fehler_kern.js"],[10536,null],[10538,"data.js"],[11253,"data_more.js"],[11625,"data_su2.js"],[11852,"data_es.js"],[12220,"data_wissen.js"],[12421,"data_v21.js"],[13106,"data_v24.js"],[13594,"data_v25.js"],[14083,"data_v26.js"],[14182,"data_v29.js"],[14490,"data_v30.js"],[14824,"data_v31.js"],[15130,"data_kunst.js"],[15327,"data_v214.js"],[15430,"data_v216.js"],[15723,"schrift.js"],[16027,"eingabe.js"],[16238,"data_k34m.js"],[16756,"data_k34d.js"],[17110,"data_k34s.js"],[17564,"data_v224.js"],[18437,"data_v225w.js"],[18806,"data_v225k.js"],[19250,"data_herz.js"],[19604,"data_fb226.js"],[19747,"data_tf226.js"],[19954,"data_v227a.js"],[21054,"data_v227b.js"],[22008,"data_h28b.js"],[22048,"data_l28a.js"],[22914,"data_l28b.js"],[24094,"data_schaetz.js"],[24576,"data_party8.js"],[24626,"data_alce.js"],[25297,"data_alce2.js"],[25546,"data_alce3.js"],[25961,"registry.js"],[26475,"app.js"],[27724,"fun.js"],[28304,"fun2.js"],[28620,"atelier.js"],[28994,"kunst225.js"],[29184,"herz.js"],[29548,"reise.js"],[29850,"iglu.js"],[30016,"offline.js"],[30123,"party.js"],[30607,"meine.js"],[30963,"loeffel.js"],[31134,"trend.js"],[31676,"fun228a.js"],[32527,"fun228b.js"],[33188,"kueche.js"],[34227,"stimme.js"],[34282,"klassen.js"],[34431,"freunde_vorab.js"],[34452,"mut.js"],[34874,"schule.js"],[35363,"fussball226.js"],[35685,"schaetzen.js"],[36116,"party8.js"],[36735,"tiere.js"],[37194,"fussball232.js"],[37409,"party8b.js"],[37711,"weg.js"],[37932,"px.js"],[38352,"px_fein.js"],[38406,"px_data.js"],[38663,"pxwelt.js"],[38747,"px_abenteuer.js"],[39576,"px_abenteuer2.js"],[40330,"px_abenteuer3.js"],[40721,"px_abenteuer4.js"],[40931,"px_baukasten.js"],[41040,"px_abenteuer_fein.js"],[41257,"px_abenteuer_fein2.js"],[41609,"px_abenteuer5.js"],[42016,"px_abenteuer6.js"],[42292,"px_abenteuer7.js"],[42648,"px_level300.js"],[43199,"px_schwach300.js"],[43273,"px_zwei300.js"],[43387,"lumicheckt300.js"],[43580,"schreiben300.js"],[43794,"rechenkarte300.js"],[43914,"lerncheck300.js"],[44137,"material300.js"],[44467,"lernweg300.js"],[44991,"px_ski.js"],[45633,"px_wurf.js"],[46162,"px_insel.js"],[47363,"px_kicker.js"],[48298,"px_eis.js"],[49284,"px_run.js"],[50499,"px_brk.js"],[51461,"px_pol.js"],[52812,"px_frog.js"],[54072,"px_angel.js"],[55387,"px_golf.js"],[56421,"px_tauch.js"],[57686,"px_hockey.js"],[58642,"px_lab.js"],[59977,"px_plopp.js"],[61183,"px_stadion.js"],[62694,"px_stadion2.js"],[62746,"px_training.js"],[63115,"cm.js"],[63605,"cmwelt.js"],[63661,"cm_baeck.js"],[64454,"cm_bahn.js"],[65218,"cm_detek.js"],[65935,"cm_markt.js"],[66648,"ff.js"],[66805,"ff_mathe.js"],[68795,"ff_deutsch.js"],[70383,"ff_sach_a.js"],[72632,"ff_sach_b.js"],[74861,"ff_sprachen.js"],[77269,"zm.js"],[78182,"tt.js"],[78395,"data_tagebuch.js"],[78438,"data_hoerspiel.js"],[78597,"leseecke.js"],[78924,"kt.js"],[79227,"comicbuch.js"],[79505,"alce.js"],[79668,"alce_aufg.js"],[79859,"formen.js"],[80310,"data_formen.js"],[80551,"data_formen2.js"],[80773,"spielzeit.js"],[80918,"data_faktmeinung.js"],[81037,"data_es248.js"],[81301,"data_en249.js"],[81540,"data_wissen249.js"],[81971,"data_kunst249.js"],[82254,"data_fussball250.js"],[82378,"data_werte252.js"],[82631,"data_lesen252.js"],[82692,"data_k34_252.js"],[82778,"art254.js"],[82896,"data_werte255.js"],[83034,"data_lesen255.js"],[83170,"forscher255.js"],[83318,"zufall250.js"],[83364,"stufe259.js"],[83374,"advent.js"],[83637,"wdh.js"],[83735,"eswarm288.js"],[83786,"abwechslung294.js"],[83861,"bilder293a.js"],[83951,"bilder293b.js"],[84081,"bilder293c.js"],[84179,"bilder293d.js"],[84301,"bilder293e.js"],[84465,"bilder293f.js"],[84545,"bilder292.js"],[84991,"denk.js"],[85028,"data_viaje265.js"],[85171,"klassenarbeit.js"],[85304,"quizduell.js"],[85427,"neu267.js"],[85692,"prog.js"],[85797,"lernstand.js"],[85864,"blatt.js"],[85966,"uebung295.js"],[86287,"schuh296.js"],[86495,"uebung297.js"],[86882,"minus298.js"],[87123,"schrift299.js"],[87251,"data_es271.js"],[87365,"plus269.js"],[87459,"schach.js"],[87691,"schachtaktik.js"],[87943,"fun270.js"],[88106,"data_neu274.js"],[88315,"plus272.js"],[88369,"spiele274.js"],[88492,"kasten.js"],[88596,"erklaer.js"],[88709,"apa.js"],[88790,"neu276.js"],[88931,"spiele276.js"],[88981,"neu277.js"],[89159,"spiele277.js"],[89414,"lernen278.js"],[89674,"spiele278.js"],[90017,"lernen279.js"],[90342,"lernen279b.js"],[90740,"spanisch280.js"],[91032,"spanisch283.js"],[91265,"mehr281.js"],[91411,"grafik280.js"],[91790,"tiefsee280.js"],[92068,"abenteuer280.js"],[92280,"abenteuer281.js"],[92392,"design281.js"],[92524,"party281.js"],[92655,"grafik281.js"],[92872,"traumtor292.js"],[93079,"kart293.js"],[93356,"lumi_live.js"],[93472,"sicher.js"],[93656,"stil.js"],[93710,"zurueck287.js"],[93753,"nfbilder300.js"],[93916,"formen300.js"],[94523,"musik300.js"],[94694,"lernweg300b.js"],[94817,"lernweg300c.js"],[94977,"espanol300.js"],[95083,"fabel310_bild.js"],[95334,"fabel310.js"],[95725,"eisbude310.js"],[95951,"turbo310.js"],[96156,"sumo310.js"],[96291,"beifahrer310.js"],[96366,"dreier310.js"],[96482,"ring310.js"],[96591,"belohnung311.js"],[96747,"druck311.js"],[96841,"freunde.js"],[96978,"start.js"],[96988,null],[96998,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '3.2.1';
+  var MAP = {"probe":0,"files":[[10376,"fehler_kern.js"],[10664,null],[10666,"data.js"],[11381,"data_more.js"],[11753,"data_su2.js"],[11980,"data_es.js"],[12348,"data_wissen.js"],[12549,"data_v21.js"],[13234,"data_v24.js"],[13722,"data_v25.js"],[14211,"data_v26.js"],[14310,"data_v29.js"],[14618,"data_v30.js"],[14952,"data_v31.js"],[15258,"data_kunst.js"],[15455,"data_v214.js"],[15558,"data_v216.js"],[15851,"schrift.js"],[16155,"eingabe.js"],[16366,"data_k34m.js"],[16884,"data_k34d.js"],[17238,"data_k34s.js"],[17692,"data_v224.js"],[18565,"data_v225w.js"],[18934,"data_v225k.js"],[19378,"data_herz.js"],[19732,"data_fb226.js"],[19875,"data_tf226.js"],[20082,"data_v227a.js"],[21182,"data_v227b.js"],[22136,"data_h28b.js"],[22176,"data_l28a.js"],[23042,"data_l28b.js"],[24222,"data_schaetz.js"],[24704,"data_party8.js"],[24754,"data_alce.js"],[25425,"data_alce2.js"],[25674,"data_alce3.js"],[26089,"registry.js"],[26603,"app.js"],[27853,"fun.js"],[28433,"fun2.js"],[28749,"atelier.js"],[29123,"kunst225.js"],[29313,"herz.js"],[29677,"reise.js"],[29979,"iglu.js"],[30145,"offline.js"],[30252,"party.js"],[30736,"meine.js"],[31092,"loeffel.js"],[31263,"trend.js"],[31805,"fun228a.js"],[32656,"fun228b.js"],[33317,"kueche.js"],[34356,"stimme.js"],[34411,"klassen.js"],[34560,"freunde_vorab.js"],[34581,"mut.js"],[35003,"schule.js"],[35492,"fussball226.js"],[35814,"schaetzen.js"],[36245,"party8.js"],[36864,"tiere.js"],[37323,"fussball232.js"],[37538,"party8b.js"],[37840,"weg.js"],[38061,"px.js"],[38481,"px_fein.js"],[38535,"px_data.js"],[38792,"pxwelt.js"],[38876,"px_abenteuer.js"],[39705,"px_abenteuer2.js"],[40459,"px_abenteuer3.js"],[40850,"px_abenteuer4.js"],[41060,"px_baukasten.js"],[41169,"px_abenteuer_fein.js"],[41386,"px_abenteuer_fein2.js"],[41738,"px_abenteuer5.js"],[42145,"px_abenteuer6.js"],[42421,"px_abenteuer7.js"],[42777,"px_level300.js"],[43328,"px_schwach300.js"],[43402,"px_zwei300.js"],[43516,"lumicheckt300.js"],[43709,"schreiben300.js"],[43923,"rechenkarte300.js"],[44043,"lerncheck300.js"],[44266,"material300.js"],[44596,"lernweg300.js"],[45120,"px_ski.js"],[45762,"px_wurf.js"],[46291,"px_insel.js"],[47492,"px_kicker.js"],[48427,"px_eis.js"],[49413,"px_run.js"],[50628,"px_brk.js"],[51590,"px_pol.js"],[52941,"px_frog.js"],[54201,"px_angel.js"],[55516,"px_golf.js"],[56550,"px_tauch.js"],[57815,"px_hockey.js"],[58771,"px_lab.js"],[60106,"px_plopp.js"],[61312,"px_stadion.js"],[62823,"px_stadion2.js"],[62875,"px_training.js"],[63244,"cm.js"],[63734,"cmwelt.js"],[63790,"cm_baeck.js"],[64583,"cm_bahn.js"],[65347,"cm_detek.js"],[66064,"cm_markt.js"],[66777,"ff.js"],[66934,"ff_mathe.js"],[68924,"ff_deutsch.js"],[70512,"ff_sach_a.js"],[72761,"ff_sach_b.js"],[74990,"ff_sprachen.js"],[77398,"zm.js"],[78311,"tt.js"],[78524,"data_tagebuch.js"],[78567,"data_hoerspiel.js"],[78726,"leseecke.js"],[79053,"kt.js"],[79356,"comicbuch.js"],[79634,"alce.js"],[79797,"alce_aufg.js"],[79988,"formen.js"],[80439,"data_formen.js"],[80680,"data_formen2.js"],[80902,"spielzeit.js"],[81047,"data_faktmeinung.js"],[81166,"data_es248.js"],[81430,"data_en249.js"],[81669,"data_wissen249.js"],[82100,"data_kunst249.js"],[82383,"data_fussball250.js"],[82507,"data_werte252.js"],[82760,"data_lesen252.js"],[82821,"data_k34_252.js"],[82907,"art254.js"],[83025,"data_werte255.js"],[83163,"data_lesen255.js"],[83299,"forscher255.js"],[83447,"zufall250.js"],[83493,"stufe259.js"],[83503,"advent.js"],[83766,"wdh.js"],[83864,"eswarm288.js"],[83915,"abwechslung294.js"],[83990,"bilder293a.js"],[84080,"bilder293b.js"],[84210,"bilder293c.js"],[84308,"bilder293d.js"],[84430,"bilder293e.js"],[84594,"bilder293f.js"],[84674,"bilder292.js"],[85120,"denk.js"],[85157,"data_viaje265.js"],[85300,"klassenarbeit.js"],[85433,"quizduell.js"],[85556,"neu267.js"],[85821,"prog.js"],[85926,"lernstand.js"],[85993,"blatt.js"],[86095,"uebung295.js"],[86416,"schuh296.js"],[86624,"uebung297.js"],[87011,"minus298.js"],[87252,"schrift299.js"],[87380,"data_es271.js"],[87494,"plus269.js"],[87588,"schach.js"],[87820,"schachtaktik.js"],[88072,"fun270.js"],[88235,"data_neu274.js"],[88444,"plus272.js"],[88498,"spiele274.js"],[88621,"kasten.js"],[88725,"erklaer.js"],[88838,"apa.js"],[88919,"neu276.js"],[89060,"spiele276.js"],[89110,"neu277.js"],[89288,"spiele277.js"],[89543,"lernen278.js"],[89803,"spiele278.js"],[90146,"lernen279.js"],[90471,"lernen279b.js"],[90869,"spanisch280.js"],[91161,"spanisch283.js"],[91394,"mehr281.js"],[91540,"grafik280.js"],[91919,"tiefsee280.js"],[92197,"abenteuer280.js"],[92409,"abenteuer281.js"],[92521,"design281.js"],[92653,"party281.js"],[92784,"grafik281.js"],[93001,"traumtor292.js"],[93208,"kart293.js"],[93485,"lumi_live.js"],[93601,"sicher.js"],[93785,"stil.js"],[93839,"zurueck287.js"],[93882,"nfbilder300.js"],[94045,"formen300.js"],[94652,"musik300.js"],[94823,"lernweg300b.js"],[94946,"lernweg300c.js"],[95106,"espanol300.js"],[95212,"fabel310_bild.js"],[95463,"fabel310.js"],[95854,"eisbude310.js"],[96080,"turbo310.js"],[96285,"sumo310.js"],[96420,"beifahrer310.js"],[96495,"dreier310.js"],[96611,"ring310.js"],[96720,"belohnung311.js"],[96876,"druck311.js"],[96970,"freunde.js"],[97107,"start.js"],[97117,null],[97127,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -26476,9 +26604,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '3.2.0';
+const APP_VERSION = '3.2.1';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "3.2.1", d: "18.11.2026", t: ["Dunkles Design repariert: Fabelwesen, Arbeitsblätter, Eisbude, Dreier-Stapel, Ring-Tresor, Material-Werkstatt, Lernweg und Lern-Check gut lesbar", "Schreibschrift: Voreinstellung ist die Lateinische Ausgangsschrift, im Elternbereich umstellbar"] },
   { v: "3.2.0", d: "18.11.2026", t: ["Belohnungswelt: alle Spiele gleichwertig, nach Spielart sortiert statt nach Pixel, Spielhalle und Comic", "Lieblinge mit Herz ganz oben, oft gespielte Spiele kommen von allein dazu, darunter die neuesten Spiele", "Sortieren nach Spielart, neueste zuerst oder A bis Z", "Behoben: Eine Seite konnte hängen bleiben, wenn ein Knopf-Text ein bestimmtes Wort enthielt"] },
   { v: "3.1.2", d: "18.11.2026", t: ["Satz trennen: Hinweis „Hier fehlen die Leerzeichen“ mit Beispiel, Buchstaben zum Antippen gepunktet unterstrichen"] },
   { v: "3.1.1", d: "18.11.2026", t: ["Satz trennen: Auf schmalen Bildschirmen bricht der Satz nicht mehr mitten im Wort um, ein Pfeil → zeigt, dass es in der nächsten Zeile weitergeht"] },
@@ -87235,7 +87364,7 @@ const SKX = {
   la: { n: 'Lateinische Ausgangsschrift', kurz: 'LA', k: .2, low: SKX_LA, up: SK_UP, unten: 1 },
   gs: { n: 'Grundschrift', kurz: 'Grundschrift', k: 0, low: SKX_GS, up: SK_UP }
 };
-function skA() { const k = typeof S !== 'undefined' && S && S.settings && S.settings.schrift; return SKX[k] || SKX.va; }
+function skA() { const k = typeof S !== 'undefined' && S && S.settings && S.settings.schrift; return SKX[k] || SKX.la; }
 
 function skxEinstellHTML() {
   const a = skA(), name = (S.profile && S.profile.name) || 'dein Kind';
@@ -95461,7 +95590,7 @@ function showFabel() {
         <ol class="fw-tal">${FW_TAL.map((T, i) => { const nr = i + 1, frei = i <= naechste || naechste < 0, ok = !!F.orden[nr];
           return `<li class="fw-st ${ok ? 'ok' : ''} ${frei ? '' : 'zu'} ${i === naechste ? 'jetzt' : ''}" style="--e1:${FW_EL[T.el].bg[0]};--e2:${FW_EL[T.el].bg[1]}">
             <div class="fw-st-bild">${T.team.map(([a, lv]) => fwSVG(a, fwStufe(lv), '', { schatten: false, silhouette: !frei })).join('')}</div>
-            <div class="fw-st-txt"><b>${nr}. ${T.n}</b><small>${frei ? `${esc(T.wer)} mit ${T.team.length === 1 ? 'einem Wesen' : T.team.length + ' Wesen'}, Level ${T.team[0][1]} bis ${T.team[T.team.length - 1][1]}` : 'Erst die Station davor schaffen'}</small></div>
+            <div class="fw-st-txt"><b>${nr}. ${T.n}</b><small>${frei ? `${esc(T.wer)} mit ${T.team.length === 1 ? 'einem Wesen' : T.team.length + ' Wesen'}, ${(() => { const l = T.team.map(x => x[1]), lo = Math.min(...l), hi = Math.max(...l); return lo === hi ? `Level ${lo}` : `Level ${lo} bis ${hi}`; })()}` : 'Erst die Station davor schaffen'}</small></div>
             ${ok ? '<span class="fw-orden" title="Orden">🏅</span>' : frei ? `<button class="btn sm" data-act="fwkampf" data-st="${nr}">Kämpfen</button>` : '<span class="fw-lock">🔒</span>'}</li>`; }).join('')}</ol></section>
       <section class="card"><h2>Alle meine Wesen <small>(${F.w.length})</small></h2>
         <div class="fw-alle">${F.w.slice().sort((a, b) => b.lv - a.lv).map(w => `<button class="fw-mini ${F.team.includes(w.u) ? 'imteam' : ''}" data-act="fwinfo" data-u="${w.u}">${fwSVG(w.a, fwStufe(w.lv), '', { schatten: false })}<small>${esc(fwName(w))} · ${w.lv}</small></button>`).join('')}</div></section>
@@ -96815,7 +96944,7 @@ let UBG_AUF = {};
     else box.insertAdjacentHTML('beforebegin', '<h3 class="ubg-t">📘 Seiten wie aus dem Schulheft</h3>');
     const gruppen = []; L.forEach(t => { const g = GAMES[t.gen].g; let x = gruppen.find(y => y[0] === g); if (!x) gruppen.push(x = [g, []]); x[1].push(t); });
     const ord = Object.keys(GROUPS); gruppen.sort((a, b) => ord.indexOf(a[0]) - ord.indexOf(b[0]));
-    const html = `<h3 class="ubg-t">🎲 Seiten aus den Lernspielen <small>${L.length} Bereiche</small></h3><p class="muted">Jeder Bereich ist eine Seite mit ${UBG_N} Aufgaben, passend zur ${klName(klasse())}. Tippe ein Thema an, dann die Bereiche.</p>
+    const html = `<h3 class="ubg-t">🎲 Seiten aus den Lernspielen <small>${L.length}&nbsp;Bereiche</small></h3><p class="muted">Jeder Bereich ist eine Seite mit ${UBG_N} Aufgaben, passend zur ${klName(klasse())}. Tippe ein Thema an, dann die Bereiche.</p>
       <div class="ubg-gruppen">${gruppen.map(([g, ts]) => { const k = ts.filter(t => u.wahl.includes(t.id)).length; return `<details class="ubg-gr" data-g="${g}" ${UBG_AUF[g] || k ? 'open' : ''}><summary>${esc((GROUPS[g] || {}).t || g)} <small>${ts.length}${k ? ` · ${k} ✓` : ''}</small></summary>
         <div class="ka-chips">${ts.map(t => `<button class="ka-chip ${u.wahl.includes(t.id) ? 'sel' : ''}" data-act="ubth" data-id="${t.id}" aria-pressed="${u.wahl.includes(t.id)}"><span aria-hidden="true">${t.i}</span> ${esc(t.t)}</button>`).join('')}</div></details>`; }).join('')}</div>`;
     const alle = document.querySelector('.ub-alle'); (alle || box).insertAdjacentHTML('afterend', html);
