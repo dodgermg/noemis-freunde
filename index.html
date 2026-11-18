@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-ZIaWCZEQOoWbGS7O0FYUQ7lk7z9/kcgauxIKA1UAp/s=' 'sha256-s09uDyC2Kc25DSpwiCtSCv9TsykzK1loih2WePHn3ks=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-Pcq7yRP8WHfwD2ntSoHwyRjNrl7rHIjDYssyHEkJWmg=' 'sha256-75nUKaMUX+iovHo2cji1ynZPel4e89nvvhMzECHcYHw=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -3251,6 +3251,25 @@ body.calm .pan-ci { animation: none; }
 #blwFabel .fw-home { width: 100%; }
 @media (max-width: 1000px) { .blw-haeuser { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 560px) { .blw-tab { font-size: 14px; padding: 8px 10px; } .blw-h { font-size: 20px; } .blw-emo { font-size: 40px; } }
+
+.blw-nav { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.blw-nav::-webkit-scrollbar { display: none; }
+.blw-tab { flex: 0 0 auto; white-space: nowrap; }
+.blw-k { position: relative; display: flex; min-width: 0; }
+.blw-k .blw-g { flex: 1; min-width: 0; padding-right: 58px; }
+.blw-g[aria-disabled="true"] { opacity: .55; }
+.blw-herz { position: absolute; right: 10px; bottom: 10px; z-index: 2; width: 44px; height: 44px; padding: 0; border: 0; border-radius: 50%; background: rgba(29, 36, 64, .08); color: #e03a6c; font-size: 28px; line-height: 44px; text-align: center; cursor: pointer; }
+.blw-herz.on { background: #ffe1ea; }
+.blw-herz:active { transform: scale(.9); }
+.blw-k.fav .blw-g { box-shadow: 0 0 0 4px #1d2440, 8px 8px 0 4px #e03a6c; }
+.blw-sort { display: flex; flex-wrap: wrap; gap: 8px; margin: 2px 0 6px; }
+.blw-art { scroll-margin-top: 96px; }
+.blw-kat small { font-size: 13px; color: #b9cbe2; margin-left: 4px; }
+.blw-einst { margin: 26px 0 12px; color: #dfe9f5; }
+.blw-einst summary { cursor: pointer; font-weight: 800; padding: 10px 0; }
+.blw-einst .pxw-fach { margin-top: 8px; }
+.blw-block { margin-bottom: 12px; }
+@media (min-width: 700px) { .blw-nav { flex-wrap: wrap; overflow: visible; } }
 
 /* ---- style_cm.css ---- */
 
@@ -10239,8 +10258,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '3.1.2';
-  var MAP = {"probe":0,"files":[[10229,"fehler_kern.js"],[10517,null],[10519,"data.js"],[11234,"data_more.js"],[11606,"data_su2.js"],[11833,"data_es.js"],[12201,"data_wissen.js"],[12402,"data_v21.js"],[13087,"data_v24.js"],[13575,"data_v25.js"],[14064,"data_v26.js"],[14163,"data_v29.js"],[14471,"data_v30.js"],[14805,"data_v31.js"],[15111,"data_kunst.js"],[15308,"data_v214.js"],[15411,"data_v216.js"],[15704,"schrift.js"],[16008,"eingabe.js"],[16219,"data_k34m.js"],[16737,"data_k34d.js"],[17091,"data_k34s.js"],[17545,"data_v224.js"],[18418,"data_v225w.js"],[18787,"data_v225k.js"],[19231,"data_herz.js"],[19585,"data_fb226.js"],[19728,"data_tf226.js"],[19935,"data_v227a.js"],[21035,"data_v227b.js"],[21989,"data_h28b.js"],[22029,"data_l28a.js"],[22895,"data_l28b.js"],[24075,"data_schaetz.js"],[24557,"data_party8.js"],[24607,"data_alce.js"],[25278,"data_alce2.js"],[25527,"data_alce3.js"],[25942,"registry.js"],[26456,"app.js"],[27704,"fun.js"],[28284,"fun2.js"],[28600,"atelier.js"],[28974,"kunst225.js"],[29164,"herz.js"],[29528,"reise.js"],[29830,"iglu.js"],[29996,"offline.js"],[30103,"party.js"],[30587,"meine.js"],[30943,"loeffel.js"],[31114,"trend.js"],[31656,"fun228a.js"],[32507,"fun228b.js"],[33168,"kueche.js"],[34207,"stimme.js"],[34262,"klassen.js"],[34411,"freunde_vorab.js"],[34432,"mut.js"],[34854,"schule.js"],[35343,"fussball226.js"],[35665,"schaetzen.js"],[36096,"party8.js"],[36715,"tiere.js"],[37174,"fussball232.js"],[37389,"party8b.js"],[37691,"weg.js"],[37912,"px.js"],[38332,"px_fein.js"],[38386,"px_data.js"],[38643,"pxwelt.js"],[38727,"px_abenteuer.js"],[39556,"px_abenteuer2.js"],[40310,"px_abenteuer3.js"],[40701,"px_abenteuer4.js"],[40911,"px_baukasten.js"],[41020,"px_abenteuer_fein.js"],[41237,"px_abenteuer_fein2.js"],[41589,"px_abenteuer5.js"],[41996,"px_abenteuer6.js"],[42272,"px_abenteuer7.js"],[42628,"px_level300.js"],[43179,"px_schwach300.js"],[43253,"px_zwei300.js"],[43367,"lumicheckt300.js"],[43560,"schreiben300.js"],[43774,"rechenkarte300.js"],[43894,"lerncheck300.js"],[44117,"material300.js"],[44447,"lernweg300.js"],[44971,"px_ski.js"],[45613,"px_wurf.js"],[46142,"px_insel.js"],[47343,"px_kicker.js"],[48278,"px_eis.js"],[49264,"px_run.js"],[50479,"px_brk.js"],[51441,"px_pol.js"],[52792,"px_frog.js"],[54052,"px_angel.js"],[55367,"px_golf.js"],[56401,"px_tauch.js"],[57666,"px_hockey.js"],[58622,"px_lab.js"],[59957,"px_plopp.js"],[61163,"px_stadion.js"],[62674,"px_stadion2.js"],[62726,"px_training.js"],[63095,"cm.js"],[63585,"cmwelt.js"],[63641,"cm_baeck.js"],[64434,"cm_bahn.js"],[65198,"cm_detek.js"],[65915,"cm_markt.js"],[66628,"ff.js"],[66785,"ff_mathe.js"],[68775,"ff_deutsch.js"],[70363,"ff_sach_a.js"],[72612,"ff_sach_b.js"],[74841,"ff_sprachen.js"],[77249,"zm.js"],[78162,"tt.js"],[78375,"data_tagebuch.js"],[78418,"data_hoerspiel.js"],[78577,"leseecke.js"],[78904,"kt.js"],[79207,"comicbuch.js"],[79485,"alce.js"],[79648,"alce_aufg.js"],[79839,"formen.js"],[80290,"data_formen.js"],[80531,"data_formen2.js"],[80753,"spielzeit.js"],[80898,"data_faktmeinung.js"],[81017,"data_es248.js"],[81281,"data_en249.js"],[81520,"data_wissen249.js"],[81951,"data_kunst249.js"],[82234,"data_fussball250.js"],[82358,"data_werte252.js"],[82611,"data_lesen252.js"],[82672,"data_k34_252.js"],[82758,"art254.js"],[82876,"data_werte255.js"],[83014,"data_lesen255.js"],[83150,"forscher255.js"],[83298,"zufall250.js"],[83344,"stufe259.js"],[83354,"advent.js"],[83617,"wdh.js"],[83715,"eswarm288.js"],[83766,"abwechslung294.js"],[83841,"bilder293a.js"],[83931,"bilder293b.js"],[84061,"bilder293c.js"],[84159,"bilder293d.js"],[84281,"bilder293e.js"],[84445,"bilder293f.js"],[84525,"bilder292.js"],[84971,"denk.js"],[85008,"data_viaje265.js"],[85151,"klassenarbeit.js"],[85284,"quizduell.js"],[85407,"neu267.js"],[85672,"prog.js"],[85777,"lernstand.js"],[85844,"blatt.js"],[85946,"uebung295.js"],[86267,"schuh296.js"],[86475,"uebung297.js"],[86862,"minus298.js"],[87103,"schrift299.js"],[87231,"data_es271.js"],[87345,"plus269.js"],[87439,"schach.js"],[87671,"schachtaktik.js"],[87923,"fun270.js"],[88086,"data_neu274.js"],[88295,"plus272.js"],[88349,"spiele274.js"],[88472,"kasten.js"],[88576,"erklaer.js"],[88689,"apa.js"],[88770,"neu276.js"],[88911,"spiele276.js"],[88961,"neu277.js"],[89139,"spiele277.js"],[89394,"lernen278.js"],[89654,"spiele278.js"],[89997,"lernen279.js"],[90322,"lernen279b.js"],[90720,"spanisch280.js"],[91012,"spanisch283.js"],[91245,"mehr281.js"],[91391,"grafik280.js"],[91770,"tiefsee280.js"],[92048,"abenteuer280.js"],[92260,"abenteuer281.js"],[92372,"design281.js"],[92504,"party281.js"],[92635,"grafik281.js"],[92852,"traumtor292.js"],[93059,"kart293.js"],[93336,"lumi_live.js"],[93452,"sicher.js"],[93636,"stil.js"],[93690,"zurueck287.js"],[93733,"nfbilder300.js"],[93896,"formen300.js"],[94503,"musik300.js"],[94674,"lernweg300b.js"],[94797,"lernweg300c.js"],[94957,"espanol300.js"],[95063,"fabel310_bild.js"],[95314,"fabel310.js"],[95705,"eisbude310.js"],[95931,"turbo310.js"],[96136,"sumo310.js"],[96271,"beifahrer310.js"],[96346,"dreier310.js"],[96462,"ring310.js"],[96571,"belohnung311.js"],[96637,"druck311.js"],[96731,"freunde.js"],[96868,"start.js"],[96878,null],[96888,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '3.2.0';
+  var MAP = {"probe":0,"files":[[10248,"fehler_kern.js"],[10536,null],[10538,"data.js"],[11253,"data_more.js"],[11625,"data_su2.js"],[11852,"data_es.js"],[12220,"data_wissen.js"],[12421,"data_v21.js"],[13106,"data_v24.js"],[13594,"data_v25.js"],[14083,"data_v26.js"],[14182,"data_v29.js"],[14490,"data_v30.js"],[14824,"data_v31.js"],[15130,"data_kunst.js"],[15327,"data_v214.js"],[15430,"data_v216.js"],[15723,"schrift.js"],[16027,"eingabe.js"],[16238,"data_k34m.js"],[16756,"data_k34d.js"],[17110,"data_k34s.js"],[17564,"data_v224.js"],[18437,"data_v225w.js"],[18806,"data_v225k.js"],[19250,"data_herz.js"],[19604,"data_fb226.js"],[19747,"data_tf226.js"],[19954,"data_v227a.js"],[21054,"data_v227b.js"],[22008,"data_h28b.js"],[22048,"data_l28a.js"],[22914,"data_l28b.js"],[24094,"data_schaetz.js"],[24576,"data_party8.js"],[24626,"data_alce.js"],[25297,"data_alce2.js"],[25546,"data_alce3.js"],[25961,"registry.js"],[26475,"app.js"],[27724,"fun.js"],[28304,"fun2.js"],[28620,"atelier.js"],[28994,"kunst225.js"],[29184,"herz.js"],[29548,"reise.js"],[29850,"iglu.js"],[30016,"offline.js"],[30123,"party.js"],[30607,"meine.js"],[30963,"loeffel.js"],[31134,"trend.js"],[31676,"fun228a.js"],[32527,"fun228b.js"],[33188,"kueche.js"],[34227,"stimme.js"],[34282,"klassen.js"],[34431,"freunde_vorab.js"],[34452,"mut.js"],[34874,"schule.js"],[35363,"fussball226.js"],[35685,"schaetzen.js"],[36116,"party8.js"],[36735,"tiere.js"],[37194,"fussball232.js"],[37409,"party8b.js"],[37711,"weg.js"],[37932,"px.js"],[38352,"px_fein.js"],[38406,"px_data.js"],[38663,"pxwelt.js"],[38747,"px_abenteuer.js"],[39576,"px_abenteuer2.js"],[40330,"px_abenteuer3.js"],[40721,"px_abenteuer4.js"],[40931,"px_baukasten.js"],[41040,"px_abenteuer_fein.js"],[41257,"px_abenteuer_fein2.js"],[41609,"px_abenteuer5.js"],[42016,"px_abenteuer6.js"],[42292,"px_abenteuer7.js"],[42648,"px_level300.js"],[43199,"px_schwach300.js"],[43273,"px_zwei300.js"],[43387,"lumicheckt300.js"],[43580,"schreiben300.js"],[43794,"rechenkarte300.js"],[43914,"lerncheck300.js"],[44137,"material300.js"],[44467,"lernweg300.js"],[44991,"px_ski.js"],[45633,"px_wurf.js"],[46162,"px_insel.js"],[47363,"px_kicker.js"],[48298,"px_eis.js"],[49284,"px_run.js"],[50499,"px_brk.js"],[51461,"px_pol.js"],[52812,"px_frog.js"],[54072,"px_angel.js"],[55387,"px_golf.js"],[56421,"px_tauch.js"],[57686,"px_hockey.js"],[58642,"px_lab.js"],[59977,"px_plopp.js"],[61183,"px_stadion.js"],[62694,"px_stadion2.js"],[62746,"px_training.js"],[63115,"cm.js"],[63605,"cmwelt.js"],[63661,"cm_baeck.js"],[64454,"cm_bahn.js"],[65218,"cm_detek.js"],[65935,"cm_markt.js"],[66648,"ff.js"],[66805,"ff_mathe.js"],[68795,"ff_deutsch.js"],[70383,"ff_sach_a.js"],[72632,"ff_sach_b.js"],[74861,"ff_sprachen.js"],[77269,"zm.js"],[78182,"tt.js"],[78395,"data_tagebuch.js"],[78438,"data_hoerspiel.js"],[78597,"leseecke.js"],[78924,"kt.js"],[79227,"comicbuch.js"],[79505,"alce.js"],[79668,"alce_aufg.js"],[79859,"formen.js"],[80310,"data_formen.js"],[80551,"data_formen2.js"],[80773,"spielzeit.js"],[80918,"data_faktmeinung.js"],[81037,"data_es248.js"],[81301,"data_en249.js"],[81540,"data_wissen249.js"],[81971,"data_kunst249.js"],[82254,"data_fussball250.js"],[82378,"data_werte252.js"],[82631,"data_lesen252.js"],[82692,"data_k34_252.js"],[82778,"art254.js"],[82896,"data_werte255.js"],[83034,"data_lesen255.js"],[83170,"forscher255.js"],[83318,"zufall250.js"],[83364,"stufe259.js"],[83374,"advent.js"],[83637,"wdh.js"],[83735,"eswarm288.js"],[83786,"abwechslung294.js"],[83861,"bilder293a.js"],[83951,"bilder293b.js"],[84081,"bilder293c.js"],[84179,"bilder293d.js"],[84301,"bilder293e.js"],[84465,"bilder293f.js"],[84545,"bilder292.js"],[84991,"denk.js"],[85028,"data_viaje265.js"],[85171,"klassenarbeit.js"],[85304,"quizduell.js"],[85427,"neu267.js"],[85692,"prog.js"],[85797,"lernstand.js"],[85864,"blatt.js"],[85966,"uebung295.js"],[86287,"schuh296.js"],[86495,"uebung297.js"],[86882,"minus298.js"],[87123,"schrift299.js"],[87251,"data_es271.js"],[87365,"plus269.js"],[87459,"schach.js"],[87691,"schachtaktik.js"],[87943,"fun270.js"],[88106,"data_neu274.js"],[88315,"plus272.js"],[88369,"spiele274.js"],[88492,"kasten.js"],[88596,"erklaer.js"],[88709,"apa.js"],[88790,"neu276.js"],[88931,"spiele276.js"],[88981,"neu277.js"],[89159,"spiele277.js"],[89414,"lernen278.js"],[89674,"spiele278.js"],[90017,"lernen279.js"],[90342,"lernen279b.js"],[90740,"spanisch280.js"],[91032,"spanisch283.js"],[91265,"mehr281.js"],[91411,"grafik280.js"],[91790,"tiefsee280.js"],[92068,"abenteuer280.js"],[92280,"abenteuer281.js"],[92392,"design281.js"],[92524,"party281.js"],[92655,"grafik281.js"],[92872,"traumtor292.js"],[93079,"kart293.js"],[93356,"lumi_live.js"],[93472,"sicher.js"],[93656,"stil.js"],[93710,"zurueck287.js"],[93753,"nfbilder300.js"],[93916,"formen300.js"],[94523,"musik300.js"],[94694,"lernweg300b.js"],[94817,"lernweg300c.js"],[94977,"espanol300.js"],[95083,"fabel310_bild.js"],[95334,"fabel310.js"],[95725,"eisbude310.js"],[95951,"turbo310.js"],[96156,"sumo310.js"],[96291,"beifahrer310.js"],[96366,"dreier310.js"],[96482,"ring310.js"],[96591,"belohnung311.js"],[96747,"druck311.js"],[96841,"freunde.js"],[96978,"start.js"],[96988,null],[96998,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -26457,9 +26476,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '3.1.2';
+const APP_VERSION = '3.2.0';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "3.2.0", d: "18.11.2026", t: ["Belohnungswelt: alle Spiele gleichwertig, nach Spielart sortiert statt nach Pixel, Spielhalle und Comic", "Lieblinge mit Herz ganz oben, oft gespielte Spiele kommen von allein dazu, darunter die neuesten Spiele", "Sortieren nach Spielart, neueste zuerst oder A bis Z", "Behoben: Eine Seite konnte hängen bleiben, wenn ein Knopf-Text ein bestimmtes Wort enthielt"] },
   { v: "3.1.2", d: "18.11.2026", t: ["Satz trennen: Hinweis „Hier fehlen die Leerzeichen“ mit Beispiel, Buchstaben zum Antippen gepunktet unterstrichen"] },
   { v: "3.1.1", d: "18.11.2026", t: ["Satz trennen: Auf schmalen Bildschirmen bricht der Satz nicht mehr mitten im Wort um, ein Pfeil → zeigt, dass es in der nächsten Zeile weitergeht"] },
   { v: "3.1.0", d: "18.11.2026", t: ["Belohnungswelt: Pixel-Welt, Spielhalle und Comic-Stadt auf einer Seite", "Arbeitsblätter: Kinder drucken selbst, Lösungen nur mit der Eltern-Rechenaufgabe", "Arbeitsblätter aus den Lernspielen: fast 400 Bereiche in sechs Fächern, jetzt auch Spanisch und Wissen", "Neu: Fabelwesen sammeln, groß ziehen und mit Wissen kämpfen. Eier gibt es fürs Lernen", "Fabel-Kampf: jede Attacke ist eine Aufgabe passend zur Klasse, 8 Stationen mit Orden", "Mathe: Eisbude mit Preis ausrechnen und Wechselgeld geben, Ausbau mit Eis-Geld", "Dreier-Stapel in Mathe, Deutsch, Englisch und Spanisch", "Ring-Tresor: Ringe drehen, bis alle Rechnungen stimmen, in Deutsch mit Silben", "Spielhalle: Turbo-Fußball, Pinguin-Sumo für bis zu 4 Kinder und Beifahrer-Rallye mit Spanisch oder Englisch", "Behoben: Sachunterricht-Spiel „Stoffe & Materialien“ wieder da, Suche geht wieder, Rechenstrich-Werkstatt und eine Sachaufgabe repariert"] },
@@ -93670,7 +93690,7 @@ function lwStrichWeg(root) {
   const L = []; while (w.nextNode()) L.push(w.currentNode);
   L.forEach(lwStrichText);
   const els = root.querySelectorAll ? [root, ...root.querySelectorAll('[placeholder],[title],[aria-label]')] : [];
-  els.forEach(e => { if (!e.getAttribute) return; ['placeholder', 'title', 'aria-label'].forEach(a => { const v = e.getAttribute(a); if (v && LW_DASH.test(v)) e.setAttribute(a, lwOhneStrich(v)); }); });
+  els.forEach(e => { if (!e.getAttribute) return; ['placeholder', 'title', 'aria-label'].forEach(a => { const v = e.getAttribute(a); if (v && LW_DASH.test(v)) { const n = lwOhneStrich(v); if (n !== v) e.setAttribute(a, n); } }); });
 }
 function lwStrichStart() {
   try {
@@ -93679,7 +93699,7 @@ function lwStrichStart() {
     new MutationObserver(ms => {
       for (const m of ms) {
         if (m.type === 'characterData') { if (LW_DASH.test(m.target.nodeValue || '')) lwStrichText(m.target); }
-        else if (m.type === 'attributes') { const v = m.target.getAttribute(m.attributeName); if (v && LW_DASH.test(v)) m.target.setAttribute(m.attributeName, lwOhneStrich(v)); }
+        else if (m.type === 'attributes') { const v = m.target.getAttribute(m.attributeName); if (v && LW_DASH.test(v)) { const n = lwOhneStrich(v); if (n !== v) m.target.setAttribute(m.attributeName, n); } }
         else m.addedNodes.forEach(lwStrichWeg);
       }
     }).observe(document.body, { childList: true, subtree: true, characterData: true, attributes: true, attributeFilter: ['placeholder', 'title', 'aria-label'] });
@@ -96578,28 +96598,98 @@ Object.assign(GAMES, {
 
 const BLW_TITEL = 'Belohnungswelt';
 function blwAnzahl() { return (typeof PX_GAMES !== 'undefined' ? PX_GAMES.length : 0) + (S.settings.funOn !== false ? Object.keys(FUN_GAMES).length : 0) + (typeof CM_GAMES !== 'undefined' && S.settings.cmOn !== false ? CM_GAMES.length : 0); }
-function blwHalleHTML() {
-  if (S.settings.funOn === false) return '';
-  const f = funToday(), block = funBlock(), max = funMax(), tick = typeof wegTicket === 'function' && wegTicket();
-  const karte = (id, g) => `<button class="pxw-g blw-fun" data-act="funask" data-f="${id}" style="--tc:#ff9d2e" ${block ? 'aria-disabled="true"' : ''}><span class="pxw-ico blw-emo" aria-hidden="true">${g.i}</span>
-    <span class="pxw-tx"><small>${tick ? '🎟️ frei' : '🪙 ' + funPrice()}</small><b>${esc(g.t)}</b><span>${esc(funD(g))}</span>${id !== 'malen' && f.records[id] ? `<em>${g.wins ? 'Siege' : 'Rekord'}: ${f.records[id]}</em>` : ''}</span></button>`;
-  return `<section class="pxw-kat blw-sek" id="blwHalle"><h2 class="blw-h">🎮 Spielhalle<small>${Object.keys(FUN_GAMES).length}</small></h2>
-    <p class="blw-info">🪙 <b>${plural(S.coins || 0, 'Münze', 'Münzen')}</b> · ein Spiel kostet ${plural(funPrice(), 'Münze', 'Münzen')} · heute gespielt: ${f.count}${max === Infinity ? '' : ` von ${max}`}</p>
-    ${tick ? `<p class="notice-box ticket-box">🎟️ Du hast ein Freispiel-Ticket, dein nächstes Spiel kostet nichts!</p>` : ''}${block ? `<p class="notice-box">${esc(block)}</p>` : ''}
-    ${FUN_CATS.map(([cat, ct]) => { const gs = Object.entries(FUN_GAMES).filter(([, g]) => g.c === cat); return gs.length ? `<h3 class="blw-kat">${esc(ct)}</h3><div class="pxw-games">${gs.map(([id, g]) => karte(id, g)).join('')}</div>` : ''; }).join('')}
-    <div class="blw-party">${typeof pqArcadeHTML === 'function' ? pqArcadeHTML() : ''}${typeof paArcadeHTML === 'function' ? paArcadeHTML() : ''}</div></section>`;
-}
-function blwComicHTML() {
-  if (typeof CM_GAMES === 'undefined' || !CM_GAMES.length || S.settings.cmOn === false) return '';
-  try { cmDefs(); } catch (e) { }
-  return `<section class="pxw-kat blw-sek" id="blwComic"><h2 class="blw-h">📚 Comic-Stadt<small>${CM_GAMES.length}</small></h2><p class="blw-info">Ruhige Comic-Spiele zum Lernen.</p>
-    <div class="blw-haeuser">${CM_GAMES.map(g => { const h = g.house || {}; let hs = ''; try { hs = cmHouse(h.kind || g.id, h.col || '#ffe08a', h.sign || g.t.toUpperCase()); } catch (e) { } return `<button class="cmw-h blw-cm" data-act="cmgo" data-g="${g.id}" style="--tc:${(typeof CM_TAGS !== 'undefined' && CM_TAGS[g.tag]) || '#3b7cf0'}">${hs}<b>${esc(g.t)}</b><span>${esc(g.d || '')}</span></button>`; }).join('')}</div></section>`;
-}
-function blwFabelHTML() {
-  if (typeof fwHomeCard !== 'function') return '';
-  return `<section class="pxw-kat blw-sek" id="blwFabel"><h2 class="blw-h">🐾 Fabelwesen</h2>${fwHomeCard()}</section>`;
-}
 function blwSprung(id) { const el = document.getElementById(id); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+
+
+
+
+const BLW_ARTEN = [['abenteuer', '🗺️', 'Abenteuer & Entdecken', '#1e8f88', 'Abenteuer'], ['sport', '⚽', 'Fußball & Sport', '#d9661a', 'Sport'], ['rennen', '🏁', 'Rennen & Hüpfen', '#ef4b4b', 'Rennen'],
+  ['geschick', '🎯', 'Schnell & Geschickt', '#c4481a', 'Geschick'], ['knobeln', '🧩', 'Knobeln & Rätseln', '#8a5cf6', 'Knobeln'], ['brett', '🎲', 'Brett- & Kartenspiele', '#2f6fd6', 'Brett & Karten'],
+  ['kreativ', '🎨', 'Malen, Musik & Bauen', '#2f8f46', 'Kreativ'], ['lernen', '📚', 'Lerngeschichten', '#3b7cf0', 'Lernen'], ['party', '🎉', 'Zusammen spielen', '#e64980', 'Party']];
+const BLW_PX_ART = { 'Abenteuer': 'abenteuer', 'Rätsel': 'knobeln', 'Hüpfen': 'rennen', 'Rennen': 'rennen', 'Sport': 'sport', 'Geschick': 'geschick', 'Bauen': 'kreativ' };
+const BLW_FUN_ART = { abenteuer: 'abenteuer', schnell: 'geschick', knobel: 'knobeln', denk: 'knobeln', kreativ: 'kreativ', fussball: 'sport', hits: 'geschick' };
+const BLW_FUN_ID = { memory: 'brett', vier: 'brett', ttt: 'brett', ludo: 'brett', maumau: 'brett', sammelduell: 'brett', wuerfel: 'brett', quartett: 'brett', mahjong: 'brett',
+  fischtausch: 'knobeln', parkplatz: 'knobeln', pfeilflucht: 'knobeln', doppel: 'knobeln', pinguinsumo: 'sport', pinguinrutsche: 'rennen', huepfer: 'rennen', ski: 'rennen' };
+const BLW_CM_ICO = { baeck: '🥐', bahn: '🚂', detek: '🔍', markt: '🛒' };
+const BLW_NEU_TAGE = 14, BLW_LIEB_MAX = 8, BLW_NEU_MAX = 8;
+function blwS() { if (!isObj(S.blw)) S.blw = {}; const B = S.blw; if (!Array.isArray(B.h)) B.h = []; if (!isObj(B.n)) B.n = {}; if (!['art', 'neu', 'abc'].includes(B.sort)) B.sort = 'art'; return B; }
+
+let BLW_SEIT = null;
+function blwSeit(t) {
+  if (!BLW_SEIT) BLW_SEIT = {};
+  if (t in BLW_SEIT) return BLW_SEIT[t];
+  let k = -1; try { (typeof CHANGELOG !== 'undefined' ? CHANGELOG : []).forEach((c, i) => { if ((c.t || []).some(x => String(x).includes(t))) k = i; }); } catch (e) { }
+  let tage = Infinity; if (k >= 0) { const m = /^(\d+)\.(\d+)\.(\d{4})$/.exec(CHANGELOG[k].d || ''); if (m) tage = (Date.now() - new Date(+m[3], +m[2] - 1, +m[1]).getTime()) / 864e5; }
+  return (BLW_SEIT[t] = { k: k < 0 ? 1e6 : k, tage });
+}
+function blwStartZaehlen(key, f) { return function (...a) { try { const B = blwS(); B.n[key] = (B.n[key] || 0) + 1; save(); } catch (e) { } return f.apply(this, a); }; }
+
+function blwSpiele() {
+  const L = [], spz = typeof spzOn === 'function' && spzOn(), zeit = spz ? '⏱️ Spielzeit' : 'frei';
+  if (S.settings.pxOn !== false && typeof PX_GAMES !== 'undefined') PX_GAMES.forEach(g => {
+    if (!g.__blw && typeof g.start === 'function') { g.start = blwStartZaehlen('px:' + g.id, g.start); g.__blw = 1; }
+    let pr = ''; try { pr = g.prog ? g.prog() : ''; } catch (e) { }
+    L.push({ key: 'px:' + g.id, t: g.t, d: g.d || '', art: BLW_PX_ART[g.tag] || 'geschick', ico: `<img src="${pxSprURL(g.i || 'lumi_i_0', 4)}" alt="" draggable="false">`, act: `data-act="pxgo" data-g="${g.id}"`, preis: zeit, pr });
+  });
+  if (S.settings.funOn !== false && typeof FUN_GAMES !== 'undefined') {
+    const f = funToday(), block = funBlock(), tick = typeof wegTicket === 'function' && wegTicket();
+    Object.entries(FUN_GAMES).forEach(([id, g]) => L.push({ key: 'fun:' + id, t: g.t, d: funD(g), art: BLW_FUN_ID[id] || BLW_FUN_ART[g.c] || 'geschick', ico: `<span class="blw-emo">${g.i}</span>`,
+      act: `data-act="funask" data-f="${id}"${block ? ' aria-disabled="true"' : ''}`, preis: tick ? '🎟️ frei' : '🪙 ' + funPrice(), pr: id !== 'malen' && f.records[id] ? `${g.wins ? 'Siege' : 'Rekord'}: ${f.records[id]}` : '' }));
+  }
+  if (S.settings.cmOn !== false && typeof CM_GAMES !== 'undefined') CM_GAMES.forEach(g => {
+    if (!g.__blw && typeof g.start === 'function') { g.start = blwStartZaehlen('cm:' + g.id, g.start); g.__blw = 1; }
+    let pr = ''; try { pr = g.prog ? g.prog() : ''; } catch (e) { }
+    L.push({ key: 'cm:' + g.id, t: g.t, d: g.d || '', art: 'lernen', ico: `<span class="blw-emo">${BLW_CM_ICO[g.id] || '💬'}</span>`, act: `data-act="cmgo" data-g="${g.id}"`, preis: zeit, pr });
+  });
+  if (typeof showFabel === 'function') L.push({ key: 'fabel', t: 'Lumis Fabelwesen', seit: 'Fabelwesen', d: 'Eier ausbrüten, Wesen sammeln und mit Aufgaben kämpfen', art: 'abenteuer', ico: '<span class="blw-emo">🥚</span>', act: 'data-act="fwhub"', preis: '📚 mit Aufgaben', pr: '' });
+  if (typeof pqArcadeHTML === 'function') L.push({ key: 'party:quiz', t: 'Party-Quiz', d: 'Für 2 bis 10 Kinder: reihum oder alle gleichzeitig', art: 'party', ico: '<span class="blw-emo">🎉</span>', act: 'data-act="party"', preis: 'kostenlos', pr: '' });
+  if (typeof paArcadeHTML === 'function' && typeof PA_G !== 'undefined') L.push({ key: 'party:spiele', t: 'Party-Spiele', d: `${PA_G.length} Spiele für 2 bis 8 Kinder an einem iPad`, art: 'party', ico: '<span class="blw-emo">🎈</span>', act: 'data-act="pahub"', preis: 'kostenlos', pr: '' });
+  const B = blwS();
+  L.forEach(e => { const s = blwSeit(e.seit || e.t); e.k = s.k; e.jung = s.tage <= BLW_NEU_TAGE; e.n = B.n[e.key] || 0; e.herz = B.h.includes(e.key); });
+  L.filter(e => e.jung).sort(blwNeuSort).slice(0, BLW_NEU_MAX).forEach(e => { e.neu = true; });
+  return L;
+}
+const blwFarbe = art => (BLW_ARTEN.find(a => a[0] === art) || BLW_ARTEN[0])[3];
+function blwKarte(e) {
+  return `<div class="blw-k${e.herz ? ' fav' : ''}" style="--tc:${blwFarbe(e.art)}"><button class="pxw-g blw-g" ${e.act}>${e.neu && !e.n ? '<i class="pxw-neu">NEU</i>' : ''}
+    <span class="pxw-ico">${e.ico}</span><span class="pxw-tx"><small>${esc(e.preis)}</small><b>${esc(e.t)}</b><span>${esc(e.d)}</span>${e.pr ? `<em>${esc(e.pr)}</em>` : ''}</span></button>
+    <button class="blw-herz${e.herz ? ' on' : ''}" data-act="blwherz" data-k="${esc(e.key)}" aria-pressed="${e.herz}" aria-label="${esc(e.t)} als Lieblingsspiel">${e.herz ? '♥' : '♡'}</button></div>`;
+}
+const blwNeuSort = (a, b) => a.k - b.k || b.n - a.n || a.t.localeCompare(b.t, 'de');
+function blwLieblinge(L) {
+  const B = blwS(), h = B.h.map(k => L.find(e => e.key === k)).filter(Boolean);
+  const oft = L.filter(e => !e.herz && e.n >= 2).sort((a, b) => b.n - a.n || blwNeuSort(a, b));
+  return h.concat(oft).slice(0, Math.max(BLW_LIEB_MAX, h.length));
+}
+function blwLiebHTML(L) {
+  const lb = blwLieblinge(L);
+  return `<section class="blw-sek" id="blwLieb"><h2 class="blw-h">❤️ Deine Lieblinge${lb.length ? `<small>${lb.length}</small>` : ''}</h2>
+    ${lb.length ? `<div class="pxw-games">${lb.map(blwKarte).join('')}</div>` : '<p class="blw-info">Tippe bei einem Spiel auf das Herz ♡, dann steht es hier ganz oben. Was Du oft spielst, kommt auch von allein hierher.</p>'}</section>`;
+}
+function blwListeHTML(L) {
+  const B = blwS(), neu = L.filter(e => e.neu).sort(blwNeuSort).slice(0, BLW_NEU_MAX);
+  const sortKn = `<div class="blw-sort" role="group" aria-label="Sortieren">${[['art', '📂 Nach Spielart'], ['neu', '🆕 Neueste zuerst'], ['abc', '🔤 A bis Z']].map(([k, t]) => `<button class="pxw-chip${B.sort === k ? ' on' : ''}" data-act="blwsort" data-s="${k}" aria-pressed="${B.sort === k}">${t}</button>`).join('')}</div>`;
+  let h = neu.length ? `<section class="blw-sek" id="blwNeu"><h2 class="blw-h">🆕 Neu<small>${neu.length}</small></h2><div class="pxw-games">${neu.map(blwKarte).join('')}</div></section>` : '';
+  h += `<section class="blw-sek" id="blwAlle"><h2 class="blw-h">🎮 Alle Spiele<small>${L.length}</small></h2>${sortKn}`;
+  if (B.sort === 'art') h += BLW_ARTEN.map(([a, ic, t]) => { const gs = L.filter(e => e.art === a).sort(blwNeuSort); return gs.length ? `<div class="blw-art" id="blwArt-${a}"><h3 class="blw-kat">${ic} ${esc(t)} <small>${gs.length}</small></h3><div class="pxw-games">${gs.map(blwKarte).join('')}</div></div>` : ''; }).join('');
+  else h += `<div class="pxw-games">${L.slice().sort(B.sort === 'neu' ? blwNeuSort : (a, b) => a.t.localeCompare(b.t, 'de')).map(blwKarte).join('')}</div>`;
+  return h + '</section>';
+}
+function blwNavHTML(L) {
+  const B = blwS(), da = a => L.some(e => e.art === a);
+  return `<nav class="blw-nav" aria-label="Bereiche"><button class="blw-tab" data-act="blwzu" data-z="blwLieb">❤️ Lieblinge</button>${L.some(e => e.neu) ? '<button class="blw-tab" data-act="blwzu" data-z="blwNeu">🆕 Neu</button>' : ''}
+    ${B.sort === 'art' ? BLW_ARTEN.filter(([a]) => da(a)).map(([a, ic, , , kurz]) => `<button class="blw-tab" data-act="blwzu" data-z="blwArt-${a}">${ic} ${esc(kurz)}</button>`).join('') : '<button class="blw-tab" data-act="blwzu" data-z="blwAlle">🎮 Alle</button>'}</nav>`;
+}
+function blwInfoHTML() {
+  if (S.settings.funOn === false || typeof funToday !== 'function') return '';
+  const f = funToday(), block = funBlock(), max = funMax(), tick = typeof wegTicket === 'function' && wegTicket();
+  return `<p class="blw-info">🪙 <b>${plural(S.coins || 0, 'Münze', 'Münzen')}</b> · Spiele mit 🪙 kosten je ${plural(funPrice(), 'Münze', 'Münzen')}, heute ${f.count}${max === Infinity ? '' : ` von ${max}`} gespielt${typeof spzOn === 'function' && spzOn() ? ' · Spiele mit ⏱️ brauchen Spielzeit' : ''}</p>
+    ${tick ? '<p class="notice-box ticket-box">🎟️ Du hast ein Freispiel-Ticket, dein nächstes Spiel mit 🪙 kostet nichts!</p>' : ''}${block ? `<p class="notice-box blw-block">${esc(block)}</p>` : ''}`;
+}
+function blwInhalt() {
+  const box = document.getElementById('blwInhalt'); if (!box) return;
+  const L = blwSpiele(); box.innerHTML = blwNavHTML(L) + blwLiebHTML(L) + blwListeHTML(L);
+}
 
 if (typeof showPixelWelt === 'function') {
   const alt = showPixelWelt;
@@ -96607,31 +96697,51 @@ if (typeof showPixelWelt === 'function') {
     const r = alt.apply(this, a);
     try {
       const main = document.querySelector('.pxw-main'); if (!main) return r;
-      const nav = `<nav class="blw-nav" aria-label="Bereiche"><button class="blw-tab" data-act="blwzu" data-z="pxKat0">🕹️ Pixel-Spiele <small>${PX_GAMES.length}</small></button>${S.settings.funOn !== false ? `<button class="blw-tab" data-act="blwzu" data-z="blwHalle">🎮 Spielhalle <small>${Object.keys(FUN_GAMES).length}</small></button>` : ''}${typeof CM_GAMES !== 'undefined' && CM_GAMES.length && S.settings.cmOn !== false ? `<button class="blw-tab" data-act="blwzu" data-z="blwComic">📚 Comic-Stadt <small>${CM_GAMES.length}</small></button>` : ''}${typeof fwHomeCard === 'function' ? '<button class="blw-tab" data-act="blwzu" data-z="blwFabel">🐾 Fabelwesen</button>' : ''}</nav>`;
-      main.insertAdjacentHTML('afterbegin', nav);
-      const note = main.querySelector('.pxw-note'); const extra = blwHalleHTML() + blwComicHTML() + blwFabelHTML();
-      if (note) note.insertAdjacentHTML('beforebegin', extra); else main.insertAdjacentHTML('beforeend', extra);
-      const k0 = document.getElementById('pxKat0'); if (k0) k0.insertAdjacentHTML('afterbegin', '<h2 class="blw-h blw-px">🕹️ Pixel-Welt</h2>');
+      main.querySelectorAll('.pxw-jump, section.pxw-kat, .blw-nav').forEach(x => x.remove());
+      const einst = [...main.querySelectorAll('.pxw-fach')];
+      if (einst.length) { const d = document.createElement('details'); d.className = 'blw-einst'; d.innerHTML = '<summary>⚙️ Einstellungen für die Pixel-Spiele</summary>'; einst.forEach(x => d.appendChild(x)); const note = main.querySelector('.pxw-note'); if (note) note.before(d); else main.appendChild(d); }
+      const spz = main.querySelector('.spz-box'), html = blwInfoHTML() + '<div id="blwInhalt"></div>';
+      if (spz) spz.insertAdjacentHTML('afterend', html); else main.insertAdjacentHTML('afterbegin', html);
+      blwInhalt();
     } catch (e) { }
     return r;
   };
 }
 
 if (typeof showArcade === 'function') {
-  showArcade = function (msg = '') { funStop(); stopTimers(); G = null; showPixelWelt(); if (msg) toast(msg); setTimeout(() => blwSprung('blwHalle'), 60); };
+  showArcade = function (msg = '') { funStop(); stopTimers(); G = null; showPixelWelt(); if (msg) toast(msg);  };
 }
 
 if (typeof pxHomeCard === 'function') {
   const alt = pxHomeCard;
   pxHomeCard = function () {
     const h = alt(); if (!h) return h;
-    return h.replace(/<b>Pixel-Welt<\/b><small>[^<]*<\/small>/, `<b>${BLW_TITEL}</b><small>${typeof wegTicket === 'function' && wegTicket() ? '🎟️ Freispiel wartet! ' : ''}${blwAnzahl()} Spiele: Pixel-Welt, Spielhalle und Comic-Stadt</small>`).replace('class="card pxw-home"', 'class="card pxw-home blw-home"');
+    return h.replace(/<b>Pixel-Welt<\/b><small>[^<]*<\/small>/, `<b>${BLW_TITEL}</b><small>${typeof wegTicket === 'function' && wegTicket() ? '🎟️ Freispiel wartet! ' : ''}${blwHomeText()}</small>`).replace('class="card pxw-home"', 'class="card pxw-home blw-home"');
   };
 }
+function blwHomeText() {
+  let L = [], lb = []; try { L = blwSpiele(); lb = blwLieblinge(L); } catch (e) { }
+  return lb.length ? `❤️ ${esc(lb[0].t)} und ${L.length - 1} weitere Spiele` : `${L.length || blwAnzahl()} Spiele, die neuesten oben`;
+}
 if (typeof cmHomeCard === 'function') cmHomeCard = () => '';
+
+if (typeof showComicStadt === 'function') showComicStadt = function () { showPixelWelt(); setTimeout(() => { const el = document.getElementById('blwArt-lernen'); if (el) el.scrollIntoView({ block: 'start' }); }, 30); };
+
+if (typeof funPlay === 'function') { const fp = funPlay; funPlay = function (id, ...a) { const vorher = S.coins, t = typeof wegTicket === 'function' && wegTicket(); const r = fp.call(this, id, ...a); try { if (S.coins !== vorher || (t && !(typeof wegTicket === 'function' && wegTicket()))) { const B = blwS(); B.n['fun:' + id] = (B.n['fun:' + id] || 0) + 1; save(); } } catch (e) { } return r; }; }
+['fwhub', 'party', 'pahub'].forEach(k => { if (ACT[k]) ACT[k] = blwStartZaehlen(k === 'fwhub' ? 'fabel' : k === 'party' ? 'party:quiz' : 'party:spiele', ACT[k]); });
 Object.assign(ACT, {
   blwzu: t => { Sound.tap(); blwSprung(t.dataset.z); },
-  blwelt: () => { Sound.unlock(); Sound.tap(); showPixelWelt(); }
+  blwelt: () => { Sound.unlock(); Sound.tap(); showPixelWelt(); },
+  blwherz: t => {
+    const B = blwS(), k = t.dataset.k, i = B.h.indexOf(k);
+    if (i >= 0) B.h.splice(i, 1); else B.h.unshift(k);
+    save(); i >= 0 ? Sound.tap() : Sound.good();
+    const L = blwSpiele(), alt = document.getElementById('blwLieb'), anker = t.closest('#blwLieb') ? null : t, vor = anker ? anker.getBoundingClientRect().top : 0;
+    document.querySelectorAll(`.blw-herz[data-k="${CSS.escape(k)}"]`).forEach(b => { b.classList.toggle('on', i < 0); b.textContent = i < 0 ? '♥' : '♡'; b.setAttribute('aria-pressed', String(i < 0)); b.parentElement.classList.toggle('fav', i < 0); });
+    if (alt) { alt.outerHTML = blwLiebHTML(L); if (anker) window.scrollBy(0, anker.getBoundingClientRect().top - vor); }
+    if (i < 0) toast('❤️ Steht jetzt bei deinen Lieblingen ganz oben.');
+  },
+  blwsort: t => { const B = blwS(); B.sort = t.dataset.s; save(); Sound.tap(); blwInhalt(); blwSprung('blwAlle'); }
 });
 
 /*@@src druck311.js@@*/
