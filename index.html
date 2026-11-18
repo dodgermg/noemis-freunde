@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-ht7oFWFV91PEU92dL5QyXBVwql5hs2KuALJKSYkyNGM=' 'sha256-OIK76JsRmVQcTypz5BD1RU3rsRLZa59LqM8ZMZ4L/b4=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-Mx9emIslIUUFqtXVsDNTBLpY34Y813OySDMulRMNT18=' 'sha256-a5ETqFvlkS432d8XA0k9BisRQf7OVyrtYSmwHMQftYc=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -6176,6 +6176,48 @@ body.calm .l28b-guest .l28b-animal, body.calm .l28b-ball.pop, body.calm .l28b-tu
   .ll .ll-bub { opacity: 1; transform: none; }
 }
 
+/* ---- style_minus298.css ---- */
+
+.mt-page { display: grid; gap: 16px; }
+.mt-tricks { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.mt-tab { position: relative; display: flex; align-items: center; gap: 8px; text-align: left; font: inherit; color: inherit; min-height: 60px; padding: 10px 12px; border-radius: 16px; border: 3px solid var(--line); background: var(--surface); cursor: pointer; }
+.mt-tab b { font-size: 15px; line-height: 1.2; }
+.mt-tab > span:nth-child(2) { font-size: 24px; flex: none; }
+.mt-tab.sel { border-color: var(--w, #2a6bd6); background: var(--w-soft, #e7f0ff); }
+.mt-nr { flex: none; width: 24px; height: 24px; border-radius: 12px; background: var(--w, #2a6bd6); color: #fff; font-size: 13px; font-weight: 800; display: inline-flex; align-items: center; justify-content: center; }
+.mt-tab i { position: absolute; right: 8px; top: 6px; font-style: normal; font-weight: 900; color: #2b8a3e; }
+.mt-karte h2 { margin-bottom: 4px; }
+.mt-wann { margin: 0 0 12px; padding: 10px 14px; border-radius: 12px; background: var(--w-soft, #e7f0ff); font-size: 16px; }
+.mt-schritt { min-height: 260px; }
+.mt-nrl { margin: 0; font-size: 14px; font-weight: 700; color: var(--muted, #5d6b85); }
+.mt-txt { margin: 4px 0 10px; font-size: 21px; font-weight: 700; line-height: 1.35; }
+.mt-formel { display: inline-block; font-size: 30px; font-weight: 800; letter-spacing: .02em; padding: 6px 18px; border-radius: 14px; background: #fff7e6; color: #1d2b45; font-variant-numeric: tabular-nums; }
+.mt-strahl { display: block; width: 100%; max-width: 680px; height: auto; margin: 10px auto 0; background: #fff; border-radius: 14px; }
+.mt-dots { display: flex; gap: 8px; justify-content: center; margin: 12px 0 4px; }
+.mt-dots span { width: 12px; height: 12px; border-radius: 6px; background: var(--line); }
+.mt-dots span.war { background: var(--w, #2a6bd6); opacity: .45; }
+.mt-dots span.on { background: var(--w, #2a6bd6); width: 28px; }
+.mt-nav { display: grid; grid-template-columns: 1fr auto 1fr; gap: 10px; margin-top: 8px; }
+.mt-acts { margin-top: 12px; }
+.mt-tipps ul { margin: 0 0 8px; padding-left: 22px; font-size: 17px; line-height: 1.5; }
+@media (max-width: 720px) {
+  .mt-tricks { grid-template-columns: 1fr 1fr; }
+  .mt-txt { font-size: 18px; }
+  .mt-formel { font-size: 24px; }
+  .mt-schritt { min-height: 0; }
+  .mt-nav .btn { padding-left: 8px; padding-right: 8px; white-space: nowrap; font-size: 16px; }
+  .mt-strahl { margin-left: -8px; width: calc(100% + 16px); max-width: none; }
+}
+
+.q-visual .mt-strahl, .stage .mt-strahl { max-width: 560px; margin-top: 8px; }
+
+.ub-t.mt-bz { gap: .8mm; font-size: 12.5pt; }
+.mt-bz .ub-o { width: 3.4mm; }
+.mt-bso { font-size: 10pt; color: #5d6b85; padding: 0 1.6mm; }
+.mt-probe td:nth-child(2) { width: 60mm; }
+.mt-probe th:nth-child(2) { width: 60mm; text-align: left; }
+.mt-probe td:first-child { font-size: 13pt; font-weight: 700; }
+
 /* ---- style_nachricht258.css ---- */
 
 .mu-nm .mu-nta { display: block; width: 100%; min-height: 120px; resize: vertical; font-family: var(--f-body); font-weight: 600; font-size: 19px; line-height: 1.5; padding: 12px 14px; }
@@ -9507,8 +9549,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '2.97.0';
-  var MAP = {"probe":0,"files":[[9497,"fehler_kern.js"],[9785,null],[9787,"data.js"],[10502,"data_more.js"],[10874,"data_su2.js"],[11101,"data_es.js"],[11469,"data_wissen.js"],[11670,"data_v21.js"],[12355,"data_v24.js"],[12843,"data_v25.js"],[13332,"data_v26.js"],[13431,"data_v29.js"],[13739,"data_v30.js"],[14073,"data_v31.js"],[14379,"data_kunst.js"],[14576,"data_v214.js"],[14679,"data_v216.js"],[14972,"schrift.js"],[15272,"eingabe.js"],[15483,"data_k34m.js"],[16001,"data_k34d.js"],[16355,"data_k34s.js"],[16809,"data_v224.js"],[17682,"data_v225w.js"],[18051,"data_v225k.js"],[18495,"data_herz.js"],[18849,"data_fb226.js"],[18992,"data_tf226.js"],[19199,"data_v227a.js"],[20299,"data_v227b.js"],[21253,"data_h28b.js"],[21293,"data_l28a.js"],[22159,"data_l28b.js"],[23339,"data_schaetz.js"],[23821,"data_party8.js"],[23871,"data_alce.js"],[24542,"data_alce2.js"],[24791,"data_alce3.js"],[25206,"registry.js"],[25720,"app.js"],[26936,"fun.js"],[27516,"fun2.js"],[27832,"atelier.js"],[28206,"kunst225.js"],[28396,"herz.js"],[28760,"reise.js"],[29062,"iglu.js"],[29228,"offline.js"],[29335,"party.js"],[29819,"meine.js"],[30175,"loeffel.js"],[30346,"trend.js"],[30888,"fun228a.js"],[31739,"fun228b.js"],[32400,"kueche.js"],[33439,"stimme.js"],[33494,"klassen.js"],[33643,"freunde_vorab.js"],[33664,"mut.js"],[34086,"schule.js"],[34575,"fussball226.js"],[34897,"schaetzen.js"],[35328,"party8.js"],[35947,"tiere.js"],[36406,"fussball232.js"],[36621,"party8b.js"],[36923,"weg.js"],[37144,"px.js"],[37563,"px_fein.js"],[37617,"px_data.js"],[37874,"pxwelt.js"],[37957,"px_abenteuer.js"],[38773,"px_abenteuer2.js"],[39525,"px_abenteuer3.js"],[39916,"px_abenteuer4.js"],[40126,"px_baukasten.js"],[40234,"px_abenteuer_fein.js"],[40450,"px_abenteuer_fein2.js"],[40802,"px_ski.js"],[41444,"px_wurf.js"],[41973,"px_insel.js"],[43174,"px_kicker.js"],[44109,"px_eis.js"],[45095,"px_run.js"],[46310,"px_brk.js"],[47272,"px_pol.js"],[48623,"px_frog.js"],[49883,"px_angel.js"],[51198,"px_golf.js"],[52232,"px_tauch.js"],[53497,"px_hockey.js"],[54453,"px_lab.js"],[55788,"px_plopp.js"],[56994,"px_stadion.js"],[58505,"px_stadion2.js"],[58557,"px_training.js"],[58926,"cm.js"],[59416,"cmwelt.js"],[59472,"cm_baeck.js"],[60265,"cm_bahn.js"],[61029,"cm_detek.js"],[61746,"cm_markt.js"],[62459,"ff.js"],[62616,"ff_mathe.js"],[64606,"ff_deutsch.js"],[66194,"ff_sach_a.js"],[68443,"ff_sach_b.js"],[70672,"ff_sprachen.js"],[73080,"zm.js"],[73993,"tt.js"],[74206,"data_tagebuch.js"],[74249,"data_hoerspiel.js"],[74408,"leseecke.js"],[74727,"kt.js"],[75030,"comicbuch.js"],[75308,"alce.js"],[75471,"alce_aufg.js"],[75641,"formen.js"],[76092,"data_formen.js"],[76333,"data_formen2.js"],[76555,"spielzeit.js"],[76700,"data_faktmeinung.js"],[76819,"data_es248.js"],[77083,"data_en249.js"],[77322,"data_wissen249.js"],[77753,"data_kunst249.js"],[78036,"data_fussball250.js"],[78160,"data_werte252.js"],[78413,"data_lesen252.js"],[78474,"data_k34_252.js"],[78560,"art254.js"],[78678,"data_werte255.js"],[78816,"data_lesen255.js"],[78952,"forscher255.js"],[79100,"zufall250.js"],[79146,"stufe259.js"],[79156,"advent.js"],[79419,"wdh.js"],[79517,"eswarm288.js"],[79568,"abwechslung294.js"],[79643,"bilder293a.js"],[79733,"bilder293b.js"],[79863,"bilder293c.js"],[79961,"bilder293d.js"],[80083,"bilder293e.js"],[80247,"bilder293f.js"],[80327,"bilder292.js"],[80773,"denk.js"],[80810,"data_viaje265.js"],[80953,"klassenarbeit.js"],[81086,"quizduell.js"],[81209,"neu267.js"],[81474,"prog.js"],[81579,"lernstand.js"],[81646,"blatt.js"],[81748,"uebung295.js"],[82064,"schuh296.js"],[82272,"uebung297.js"],[82659,"data_es271.js"],[82773,"plus269.js"],[82867,"schach.js"],[83099,"schachtaktik.js"],[83351,"fun270.js"],[83514,"data_neu274.js"],[83723,"plus272.js"],[83777,"spiele274.js"],[83900,"kasten.js"],[84004,"erklaer.js"],[84117,"apa.js"],[84198,"neu276.js"],[84339,"spiele276.js"],[84389,"neu277.js"],[84567,"spiele277.js"],[84822,"lernen278.js"],[85082,"spiele278.js"],[85425,"lernen279.js"],[85750,"lernen279b.js"],[86148,"spanisch280.js"],[86440,"spanisch283.js"],[86673,"mehr281.js"],[86819,"grafik280.js"],[87190,"tiefsee280.js"],[87468,"abenteuer280.js"],[87680,"abenteuer281.js"],[87792,"design281.js"],[87924,"party281.js"],[88055,"grafik281.js"],[88272,"traumtor292.js"],[88479,"kart293.js"],[88756,"lumi_live.js"],[88872,"sicher.js"],[89056,"stil.js"],[89110,"zurueck287.js"],[89153,"freunde.js"],[89290,"start.js"],[89300,null],[89310,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '2.98.0';
+  var MAP = {"probe":0,"files":[[9539,"fehler_kern.js"],[9827,null],[9829,"data.js"],[10544,"data_more.js"],[10916,"data_su2.js"],[11143,"data_es.js"],[11511,"data_wissen.js"],[11712,"data_v21.js"],[12397,"data_v24.js"],[12885,"data_v25.js"],[13374,"data_v26.js"],[13473,"data_v29.js"],[13781,"data_v30.js"],[14115,"data_v31.js"],[14421,"data_kunst.js"],[14618,"data_v214.js"],[14721,"data_v216.js"],[15014,"schrift.js"],[15314,"eingabe.js"],[15525,"data_k34m.js"],[16043,"data_k34d.js"],[16397,"data_k34s.js"],[16851,"data_v224.js"],[17724,"data_v225w.js"],[18093,"data_v225k.js"],[18537,"data_herz.js"],[18891,"data_fb226.js"],[19034,"data_tf226.js"],[19241,"data_v227a.js"],[20341,"data_v227b.js"],[21295,"data_h28b.js"],[21335,"data_l28a.js"],[22201,"data_l28b.js"],[23381,"data_schaetz.js"],[23863,"data_party8.js"],[23913,"data_alce.js"],[24584,"data_alce2.js"],[24833,"data_alce3.js"],[25248,"registry.js"],[25762,"app.js"],[27006,"fun.js"],[27586,"fun2.js"],[27902,"atelier.js"],[28276,"kunst225.js"],[28466,"herz.js"],[28830,"reise.js"],[29132,"iglu.js"],[29298,"offline.js"],[29405,"party.js"],[29889,"meine.js"],[30245,"loeffel.js"],[30416,"trend.js"],[30958,"fun228a.js"],[31809,"fun228b.js"],[32470,"kueche.js"],[33509,"stimme.js"],[33564,"klassen.js"],[33713,"freunde_vorab.js"],[33734,"mut.js"],[34156,"schule.js"],[34645,"fussball226.js"],[34967,"schaetzen.js"],[35398,"party8.js"],[36017,"tiere.js"],[36476,"fussball232.js"],[36691,"party8b.js"],[36993,"weg.js"],[37214,"px.js"],[37633,"px_fein.js"],[37687,"px_data.js"],[37944,"pxwelt.js"],[38027,"px_abenteuer.js"],[38843,"px_abenteuer2.js"],[39595,"px_abenteuer3.js"],[39986,"px_abenteuer4.js"],[40196,"px_baukasten.js"],[40304,"px_abenteuer_fein.js"],[40520,"px_abenteuer_fein2.js"],[40872,"px_ski.js"],[41514,"px_wurf.js"],[42043,"px_insel.js"],[43244,"px_kicker.js"],[44179,"px_eis.js"],[45165,"px_run.js"],[46380,"px_brk.js"],[47342,"px_pol.js"],[48693,"px_frog.js"],[49953,"px_angel.js"],[51268,"px_golf.js"],[52302,"px_tauch.js"],[53567,"px_hockey.js"],[54523,"px_lab.js"],[55858,"px_plopp.js"],[57064,"px_stadion.js"],[58575,"px_stadion2.js"],[58627,"px_training.js"],[58996,"cm.js"],[59486,"cmwelt.js"],[59542,"cm_baeck.js"],[60335,"cm_bahn.js"],[61099,"cm_detek.js"],[61816,"cm_markt.js"],[62529,"ff.js"],[62686,"ff_mathe.js"],[64676,"ff_deutsch.js"],[66264,"ff_sach_a.js"],[68513,"ff_sach_b.js"],[70742,"ff_sprachen.js"],[73150,"zm.js"],[74063,"tt.js"],[74276,"data_tagebuch.js"],[74319,"data_hoerspiel.js"],[74478,"leseecke.js"],[74797,"kt.js"],[75100,"comicbuch.js"],[75378,"alce.js"],[75541,"alce_aufg.js"],[75711,"formen.js"],[76162,"data_formen.js"],[76403,"data_formen2.js"],[76625,"spielzeit.js"],[76770,"data_faktmeinung.js"],[76889,"data_es248.js"],[77153,"data_en249.js"],[77392,"data_wissen249.js"],[77823,"data_kunst249.js"],[78106,"data_fussball250.js"],[78230,"data_werte252.js"],[78483,"data_lesen252.js"],[78544,"data_k34_252.js"],[78630,"art254.js"],[78748,"data_werte255.js"],[78886,"data_lesen255.js"],[79022,"forscher255.js"],[79170,"zufall250.js"],[79216,"stufe259.js"],[79226,"advent.js"],[79489,"wdh.js"],[79587,"eswarm288.js"],[79638,"abwechslung294.js"],[79713,"bilder293a.js"],[79803,"bilder293b.js"],[79933,"bilder293c.js"],[80031,"bilder293d.js"],[80153,"bilder293e.js"],[80317,"bilder293f.js"],[80397,"bilder292.js"],[80843,"denk.js"],[80880,"data_viaje265.js"],[81023,"klassenarbeit.js"],[81156,"quizduell.js"],[81279,"neu267.js"],[81544,"prog.js"],[81649,"lernstand.js"],[81716,"blatt.js"],[81818,"uebung295.js"],[82139,"schuh296.js"],[82347,"uebung297.js"],[82734,"minus298.js"],[82975,"data_es271.js"],[83089,"plus269.js"],[83183,"schach.js"],[83415,"schachtaktik.js"],[83667,"fun270.js"],[83830,"data_neu274.js"],[84039,"plus272.js"],[84093,"spiele274.js"],[84216,"kasten.js"],[84320,"erklaer.js"],[84433,"apa.js"],[84514,"neu276.js"],[84655,"spiele276.js"],[84705,"neu277.js"],[84883,"spiele277.js"],[85138,"lernen278.js"],[85398,"spiele278.js"],[85741,"lernen279.js"],[86066,"lernen279b.js"],[86464,"spanisch280.js"],[86756,"spanisch283.js"],[86989,"mehr281.js"],[87135,"grafik280.js"],[87506,"tiefsee280.js"],[87784,"abenteuer280.js"],[87996,"abenteuer281.js"],[88108,"design281.js"],[88240,"party281.js"],[88371,"grafik281.js"],[88588,"traumtor292.js"],[88795,"kart293.js"],[89072,"lumi_live.js"],[89188,"sicher.js"],[89372,"stil.js"],[89426,"zurueck287.js"],[89469,"freunde.js"],[89606,"start.js"],[89616,null],[89626,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -25219,7 +25261,7 @@ const WORLDS = [
   { id: 'werte', name: 'Werte & Normen', tag: 'Gefühle, Miteinander, Fairness, Religionen & Nachdenken' }
 ];
 const GROUPS = {
-  'm-rechnen': { w: 'mathe', t: 'Rechnen' }, 'm-zahlen': { w: 'mathe', t: 'Zahlen verstehen' }, 'm-groessen': { w: 'mathe', t: 'Uhr, Geld & Größen' }, 'm-geo': { w: 'mathe', t: 'Formen & Raum' }, 'm-daten': { w: 'mathe', t: 'Daten & Zufall' }, 'm-sach': { w: 'mathe', t: 'Sachaufgaben' },
+  'm-rechnen': { w: 'mathe', t: 'Rechnen' }, 'm-minus': { w: 'mathe', t: 'Minus-Tricks' }, 'm-zahlen': { w: 'mathe', t: 'Zahlen verstehen' }, 'm-groessen': { w: 'mathe', t: 'Uhr, Geld & Größen' }, 'm-geo': { w: 'mathe', t: 'Formen & Raum' }, 'm-daten': { w: 'mathe', t: 'Daten & Zufall' }, 'm-sach': { w: 'mathe', t: 'Sachaufgaben' },
   'd-woerter': { w: 'deutsch', t: 'Wörter' }, 'd-schreiben': { w: 'deutsch', t: 'Richtig schreiben' }, 'd-tricks': { w: 'deutsch', t: 'Rechtschreib-Tricks' }, 'd-lesen': { w: 'deutsch', t: 'Lesen, Sätze & Texte' }, 'd-grammatik': { w: 'deutsch', t: 'Grammatik & Sätze' }, 'd-geheim': { w: 'deutsch', t: 'Geheimsprache: Löffelsprache' }, 'd-schrift': { w: 'deutsch', t: 'Schreibschrift' },
   'e-words': { w: 'englisch', t: 'Words' }, 'e-talk': { w: 'englisch', t: 'Sentences & Talk' },
   'es-alce': { w: 'spanisch', t: 'Mi curso ALCE' }, 'es-vocab': { w: 'spanisch', t: 'Vocabulario' }, 'es-gram': { w: 'spanisch', t: 'Gramática' }, 'es-escribir': { w: 'spanisch', t: 'Escribir bien' }, 'es-leer': { w: 'spanisch', t: 'Leer y cultura' },
@@ -25721,9 +25763,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '2.97.0';
+const APP_VERSION = '2.98.0';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "2.98.0", d: "18.11.2026", t: ["Neues Mathe-Thema Minus-Tricks: sechs Rechenwege am Zahlenstrahl erklärt, mit Übungen, Quiz und Arbeitsblatt", "Drucken auf dem iPad repariert (weiße Seiten nach der Druckerwahl)", "Neuer Schalter im Elternbereich: Kinder dürfen Arbeitsblätter selbst drucken", "Weicher Klickton statt Piepen, Lob und Fehler klingen wie ein Glockenspiel"] },
   { v: "2.97.0", d: "17.11.2026", t: ["Arbeitsblätter zum Ausdrucken für Mathe, Deutsch, Sachunterricht und Englisch: im Fach Häkchen bei den Bereichen setzen, jede Seite mit Lösungsblatt", "Neu: Uhr, Geld, Einmaleins, Verdoppeln, Silben, Wortarten, der die das, ABC, Rechtschreibung, Lesetexte, Körper, Jahreszeiten, Tiere, Verkehr, Englisch-Wörter, Farben und Zahlen", "Der Knopf steht direkt in den Welten und fragt vorher die Eltern-Rechenaufgabe ab"] },
   { v: "2.96.0", d: "17.11.2026", t: ["Neu im Sachunterricht: Schuhe binden lernen, Schritt für Schritt mit gezeichneten Bildern, zwei Wege (Hasenohren und Schlaufe mit Umwickeln)", "Übungstage geben Münzen, nach 5 Tagen ist man Schleifen-Profi. Anleitung und Übungsschuh zum Ausdrucken", "Neues Quiz „Schuhe binden“ mit Bildern"] },
   { v: "2.95.0", d: "16.11.2026", t: ["Neu im Elternbereich: Übungsblätter wie aus dem Schulheft. Mathe Klasse 2 bis 100: Plus, Minus, Rechenmauern, Sachaufgaben, Mix und Knobeln, mit Lösungsblatt", "Drucken oder als PDF sichern, ohne Internet. Jedes Blatt hat eine Nummer, so passen die Lösungen auch später", "Münzen für kontrollierte Blätter: geschaffte Seiten antippen, das Kind holt die Münzen auf der Startseite ab"] },
@@ -25870,12 +25913,39 @@ const Sound = {
     o.type = type; o.frequency.setValueAtTime(f, t); g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(vol, t + .015); g.gain.exponentialRampToValueAtTime(.0008, t + dur);
     o.connect(g); g.connect(c.destination); o.start(t); o.stop(t + dur + .05);
   },
-  tap() { this.tone(660, 0, .07, 'triangle', .08); },
-  good() { [523, 659, 784].forEach((f, i) => this.tone(f, i * .08, .22, 'triangle', .16)); },
-  quick() { this.tone(880, 0, .12, 'triangle', .12); },
-  bad() { this.tone(300, 0, .16, 'sine', .14); this.tone(240, .12, .24, 'sine', .12); },
-  win() { [523, 659, 784, 1047, 784, 1047].forEach((f, i) => this.tone(f, i * .11, .28, 'triangle', .15)); },
-  sparkle() { [1319, 1568, 1760, 2093].forEach((f, i) => this.tone(f, i * .06, .2, 'sine', .08)); }
+
+
+  klickPuffer: null,
+  tap() {
+    if (!this.ctx || !S.settings.sound) return;
+    try {
+      const c = this.ctx, t = c.currentTime + .004;
+      if (!this.klickPuffer) { const n = Math.floor(c.sampleRate * .028), b = c.createBuffer(1, n, c.sampleRate), d = b.getChannelData(0); let x = 0, z = 12345; for (let i = 0; i < n; i++) { z = (z * 16807) % 2147483647; x = x * .5 + ((z / 2147483647) * 2 - 1) * .5; d[i] = x * Math.pow(1 - i / n, 3); } this.klickPuffer = b; }
+      const q = c.createBufferSource(), f = c.createBiquadFilter(), g = c.createGain();
+      q.buffer = this.klickPuffer; f.type = 'bandpass'; f.frequency.value = 1100; f.Q.value = .7; g.gain.value = .3;
+      q.connect(f); f.connect(g); g.connect(c.destination); q.start(t);
+      const o = c.createOscillator(), g2 = c.createGain(); o.type = 'sine'; o.frequency.setValueAtTime(500, t); o.frequency.exponentialRampToValueAtTime(240, t + .045);
+      g2.gain.setValueAtTime(0, t); g2.gain.linearRampToValueAtTime(.07, t + .003); g2.gain.exponentialRampToValueAtTime(.0004, t + .065);
+      o.connect(g2); g2.connect(c.destination); o.start(t); o.stop(t + .09);
+    } catch (e) { }
+  },
+
+  glocke(f, t0, dur, vol) {
+    if (!this.ctx || !S.settings.sound) return;
+    try {
+      const c = this.ctx, t = c.currentTime + t0 + .004;
+      [[1, 1, dur], [4, .2, dur * .35], [2.76, .08, dur * .5]].forEach(([m, v, d]) => {
+        const o = c.createOscillator(), g = c.createGain(); o.type = 'sine'; o.frequency.setValueAtTime(f * m, t);
+        g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(vol * v, t + .006); g.gain.exponentialRampToValueAtTime(.0005, t + d);
+        o.connect(g); g.connect(c.destination); o.start(t); o.stop(t + d + .05);
+      });
+    } catch (e) { }
+  },
+  good() { [523, 659, 784].forEach((f, i) => this.glocke(f, i * .08, .45, .16)); },
+  quick() { this.glocke(880, 0, .3, .12); },
+  bad() { this.glocke(330, 0, .3, .13); this.glocke(262, .13, .42, .12); },
+  win() { [523, 659, 784, 1047, 784, 1047].forEach((f, i) => this.glocke(f, i * .11, .5, .15)); },
+  sparkle() { [1319, 1568, 1760, 2093].forEach((f, i) => this.glocke(f, i * .06, .35, .07)); }
 };
 
 
@@ -26179,7 +26249,7 @@ function albumCardHTML() {
 
 
 var NAV_GR = null, NAV_SACHEN = false;
-const GROUP_ICON = { 'm-rechnen': '➕', 'm-zahlen': '🔢', 'm-groessen': '🕐', 'm-geo': '🔷', 'm-daten': '🎲', 'm-sach': '📖',
+const GROUP_ICON = { 'm-rechnen': '➕', 'm-minus': '🪄', 'm-zahlen': '🔢', 'm-groessen': '🕐', 'm-geo': '🔷', 'm-daten': '🎲', 'm-sach': '📖',
   'd-woerter': '🔤', 'd-schreiben': '✏️', 'd-tricks': '🪄', 'd-lesen': '📚', 'd-grammatik': '🧩', 'd-geheim': '🥄', 'd-schrift': '✍️',
   'e-words': '🍎', 'e-talk': '💬', 'es-vocab': '🗣️', 'es-gram': '🧩', 'es-escribir': '✏️', 'es-leer': '📚',
   'su-wasser': '🌦️', 'su-tiere': '🦔', 'su-natur': '🌳', 'su-technik': '💡', 'su-forschen': '🔬', 'su-ich': '🧍', 'su-zeit': '🪐', 'su-heimat': '🏰', 'su-erde': '🗺️', 'su-gesell': '🤝',
@@ -81928,7 +81998,7 @@ const UB_THEMEN = [
   { id: 'sach', t: 'Sachaufgaben', i: '📖', f: ubSach }, { id: 'mix', t: 'Mix und Knobeln', i: '🧩', f: ubMix }].map(t => Object.assign(t, { fach: 'mathe', k: 'Mathe · Klasse 2 · bis 100' }));
 const UB_FAECHER = [{ id: 'mathe', t: 'Mathe', i: '🔢' }, { id: 'deutsch', t: 'Deutsch', i: '📝' }, { id: 'sach', t: 'Sachunterricht', i: '🌱' }, { id: 'englisch', t: 'Englisch', i: '💬' }];
 const ubFach = id => UB_FAECHER.find(f => f.id === id);
-let UB_VON = 'eltern', UB_FREI = 0;
+let UB_VON = 'eltern', UB_FREI = 0, UB_KIND = false;
 const UB_MZ = 8, UB_BONUS = 3;
 const ubThema = id => UB_THEMEN.find(t => t.id === id);
 
@@ -81973,11 +82043,12 @@ function ubDruckVorRoh(html) {
   document.documentElement.classList.add('ub-drucken');
 }
 function ubDruck(nr, ids, los) { ubDruckRoh(ubSeitenHTML(nr, ids, los)); }
+
+
+
 function ubDruckRoh(html) {
   ubDruckVorRoh(html);
-  window.addEventListener('afterprint', ubDruckWeg, { once: true });
-  try { window.print(); } catch (e) { ubDruckWeg(); toast('Drucken klappt hier leider nicht. Öffne die Lernwelt in Safari und drucke dort.'); return; }
-  setTimeout(() => { if (!window.matchMedia || !window.matchMedia('print').matches) ubDruckWeg(); }, 60000);
+  try { window.print(); } catch (e) { toast('Drucken klappt hier leider nicht. Öffne die Lernwelt in Safari und drucke dort.'); }
 }
 
 function ubEintrag(e) {
@@ -81992,7 +82063,7 @@ function ubEintrag(e) {
 }
 function showUebung(fach, von) {
   stopTimers(); G = null; const u = ubS();
-  if (ubFach(fach)) u.fach = fach; if (von) UB_VON = von; UB_FREI = Date.now() + 15 * 60000;
+  if (ubFach(fach)) u.fach = fach; if (von) UB_VON = von; const kind = UB_KIND; if (!kind) UB_FREI = Date.now() + 15 * 60000;
   const f = u.fach, F = ubFach(f), ids = ubWahlFach(u, f), n = ids.length, th = UB_THEMEN.filter(t => t.fach === f), roh = ids.filter(id => ubThema(id).roh).length;
   setView(`<header class="pagehead"><div class="wrap">${backBtn('ubback')}<div><h1>📄 Arbeitsblätter</h1><p>${esc(F.t)} · Klasse 2 · wie aus dem Schulheft</p></div></div></header>
     <main class="wrap ub-page">
@@ -82001,11 +82072,12 @@ function showUebung(fach, von) {
         <div class="ka-chips ub-hkl">${th.map(t => `<button class="ka-chip ${u.wahl.includes(t.id) ? 'sel' : ''}" data-act="ubth" data-id="${t.id}" aria-pressed="${u.wahl.includes(t.id)}"><span aria-hidden="true">${t.i}</span> ${esc(t.t)}</button>`).join('')}</div>
         <div class="ub-alle"><button class="btn ghost sm" data-act="uballe" data-an="1">Alle anhaken</button><button class="btn ghost sm" data-act="uballe" data-an="0"${n ? '' : ' disabled'}>Alle Häkchen weg</button></div>
         <p class="ub-nrinfo">${n ? `Blatt <b>Nr. ${u.nr}</b> · ${plural(n, 'Seite', 'Seiten')}. Dieselbe Nummer ergibt immer dieselben Aufgaben, so passen die Lösungen auch später noch.` : 'Noch kein Häkchen gesetzt.'}</p>
-        <div class="acts"><button class="btn" data-act="ubdruck" data-l="0"${n ? '' : ' disabled'}>🖨️ Blätter drucken</button><button class="btn ghost" data-act="ubdruck" data-l="1"${n > roh ? '' : ' disabled'}>🔑 Lösungen drucken</button><button class="btn ghost" data-act="ubneu">🔄 Neue Aufgaben</button></div>
+        <div class="acts"><button class="btn" data-act="ubdruck" data-l="0"${n ? '' : ' disabled'}>🖨️ Blätter drucken</button>${kind ? '' : `<button class="btn ghost" data-act="ubdruck" data-l="1"${n > roh ? '' : ' disabled'}>🔑 Lösungen drucken</button>`}<button class="btn ghost" data-act="ubneu">🔄 Neue Aufgaben</button></div>
         <p class="muted">Auf dem iPad öffnet sich das Druckmenü. Dort kannst du drucken oder mit dem Teilen-Knopf als PDF sichern. Öffnet sich nichts, starte die Lernwelt in Safari und drucke dort.</p></section>
       ${n ? `<section class="card"><h2>Vorschau</h2><div class="ub-vor">${ubSeitenHTML(u.nr, ids, false)}</div></section>` : ''}
-      <section class="card"><h2>Gedruckte Blätter</h2>
-        ${u.liste.length ? `<p class="muted">Kontrolliere mit dem Lösungsblatt. Für jede geschaffte Seite gibt es ${plural(UB_MZ, 'Münze', 'Münzen')}. Die Münzen kann ${esc(S.profile.name || 'dein Kind')} auf der Startseite abholen.</p><ul class="ub-liste">${u.liste.slice(0, 20).map(ubEintrag).join('')}</ul>` : '<p class="muted">Noch keine. Sobald du Blätter druckst, stehen sie hier.</p>'}</section>
+      ${kind ? `<section class="card"><h2>Fertig gerechnet?</h2><p class="muted">Zeig deine Blätter einem Erwachsenen. Der schaut sie mit dem Lösungsblatt an und gibt dir dafür Münzen.</p>
+        <div class="acts"><button class="btn ghost" data-act="ubeltern">🔑 Für Erwachsene: Lösungen und Münzen</button></div></section>` : `<section class="card"><h2>Gedruckte Blätter</h2>
+        ${u.liste.length ? `<p class="muted">Kontrolliere mit dem Lösungsblatt. Für jede geschaffte Seite gibt es ${plural(UB_MZ, 'Münze', 'Münzen')}. Die Münzen kann ${esc(S.profile.name || 'dein Kind')} auf der Startseite abholen.</p><ul class="ub-liste">${u.liste.slice(0, 20).map(ubEintrag).join('')}</ul>` : '<p class="muted">Noch keine. Sobald du Blätter druckst, stehen sie hier.</p>'}</section>`}
     </main>`, f);
   const v = document.querySelector('.ub-vor'); if (v) { const w = v.clientWidth; v.style.setProperty('--z', Math.min(.6, Math.max(.28, w > 700 ? (w - 60) / 1520 : (w - 24) / 760)).toFixed(3)); }
 }
@@ -82015,12 +82087,13 @@ function ubWorldBtn(w) {
   if (!ubFach(w)) return '';
   const k = UB_THEMEN.filter(t => t.fach === w).length;
   return `<button class="card ka-entry ub-went" data-act="ubwelt" data-w="${w}" data-world="${w}"><span class="ka-ei" aria-hidden="true">🖨️</span>
-    <span class="ka-et"><b>Arbeitsblätter zum Ausdrucken</b><span>Für Eltern: ${plural(k, 'Bereich', 'Bereiche')} zum Abhaken, mit Lösungsblatt.</span></span><span class="go" aria-hidden="true">›</span></button>`;
+    <span class="ka-et"><b>Arbeitsblätter zum Ausdrucken</b><span>${ubS().kind ? `${plural(k, 'Bereich', 'Bereiche')} zum Abhaken und selbst Ausdrucken.` : `Für Eltern: ${plural(k, 'Bereich', 'Bereiche')} zum Abhaken, mit Lösungsblatt.`}</span></span><span class="go" aria-hidden="true">›</span></button>`;
 }
 function ubParentsHTML() {
   const u = ubS(), offen = u.liste.filter(e => !e.ok).length;
   return `<section class="card"><h2>📄 Arbeitsblätter wie aus dem Schulheft</h2>
     <p class="muted">Arbeitsblätter für Mathe, Deutsch, Sachunterricht und Englisch, Klasse 2. Bereiche abhaken, drucken, mit Lösungsblatt. Für kontrollierte Blätter gibt es Münzen. Den Knopf gibt es auch direkt in jeder dieser Welten.${offen ? ` Noch nicht kontrolliert: ${offen}.` : ''}</p>
+    <div class="row"><span class="lab">Kinder dürfen selbst auswählen und drucken<small>Dann geht der Knopf in den Welten ohne Rechenaufgabe auf. Lösungsblätter und Münzen bleiben bei dir.</small></span><button class="switch ${u.kind ? 'on' : ''}" role="switch" aria-checked="${!!u.kind}" aria-label="Kinder dürfen selbst drucken" data-act="ubkind"></button></div>
     <div class="acts"><button class="btn" data-act="ubopen">Arbeitsblätter öffnen</button></div></section>`;
 }
 
@@ -82033,24 +82106,26 @@ function ubHomeCard() {
 }
 const ubEnr = t => { const u = ubS(), nr = Number(t.dataset.nr); return u.liste.find(e => e.nr === nr); };
 Object.assign(ACT, {
-  ubopen: () => showUebung(null, 'eltern'),
+  ubopen: () => { UB_KIND = false; showUebung(null, 'eltern'); },
+  ubkind: () => { const u = ubS(); u.kind = !u.kind; save(); showParents(); toast(u.kind ? 'Kinder dürfen jetzt selbst Arbeitsblätter drucken.' : 'Arbeitsblätter drucken jetzt nur noch Erwachsene.'); },
+  ubeltern: () => { KL_GATE_NEXT = () => { UB_KIND = false; showUebung(null, UB_VON); }; showGate(); },
   ubback: () => { if (UB_VON !== 'eltern' && ubFach(UB_VON)) return showWorld(UB_VON, true); showParents(); },
-  ubwelt: t => { const w = t.dataset.w; if (Date.now() < UB_FREI) return showUebung(w, w); KL_GATE_NEXT = () => showUebung(w, w); showGate(); },
+  ubwelt: t => { const w = t.dataset.w; if (Date.now() < UB_FREI) { UB_KIND = false; return showUebung(w, w); } if (ubS().kind) { UB_KIND = true; return showUebung(w, w); } KL_GATE_NEXT = () => { UB_KIND = false; showUebung(w, w); }; showGate(); },
   ubfach: t => { const u = ubS(); if (!ubFach(t.dataset.f)) return; u.fach = t.dataset.f; save(); showUebung(); },
   uballe: t => { const u = ubS(), an = t.dataset.an === '1', fa = UB_THEMEN.filter(x => x.fach === u.fach).map(x => x.id); u.wahl = UB_THEMEN.map(x => x.id).filter(x => fa.includes(x) ? an : u.wahl.includes(x)); u.nr = ubNeueNr(); save(); showUebung(); },
   ubth: t => { const u = ubS(), id = t.dataset.id; u.wahl = u.wahl.includes(id) ? u.wahl.filter(x => x !== id) : UB_THEMEN.map(x => x.id).filter(x => x === id || u.wahl.includes(x)); u.nr = ubNeueNr(); save(); showUebung(); },
   ubneu: () => { const u = ubS(); u.nr = ubNeueNr(); save(); showUebung(); toast(`Neue Aufgaben: Blatt Nr. ${u.nr}`); },
   ubdruck: t => {
     const u = ubS(), los = t.dataset.l === '1', e = t.dataset.nr ? ubEnr(t) : null, ids = e ? e.ids : ubWahlFach(u, u.fach);
-    if (!ids.length || (los && !ids.some(id => !(ubThema(id) || {}).roh))) return;
+    if (!ids.length || (los && !ids.some(id => !(ubThema(id) || {}).roh)) || (los && UB_KIND)) return;
     if (!e && !los) { const alt = u.liste.find(x => x.nr === u.nr); if (alt && alt.ids.join() !== ids.join()) { u.nr = ubNeueNr(); save(); } }
     const nr = e ? e.nr : u.nr;
     if (!los && !e && !u.liste.some(x => x.nr === nr)) { u.liste.unshift({ nr, ids, d: dayKey(), fertig: [], ff: false, ok: false }); u.liste = u.liste.slice(0, 40); save(); showUebung(); }
     ubDruck(nr, ids, los);
   },
-  ubseite: t => { const e = ubEnr(t); if (!e || e.ok) return; const i = Number(t.dataset.i); e.fertig = (e.fertig || []).includes(i) ? e.fertig.filter(x => x !== i) : (e.fertig || []).concat(i).sort((a, b) => a - b); save(); showUebung(); },
-  ubff: t => { const e = ubEnr(t); if (!e || e.ok) return; e.ff = !e.ff; save(); showUebung(); },
-  ubok: t => {
+  ubseite: t => { const e = ubEnr(t); if (UB_KIND) return; if (!e || e.ok) return; const i = Number(t.dataset.i); e.fertig = (e.fertig || []).includes(i) ? e.fertig.filter(x => x !== i) : (e.fertig || []).concat(i).sort((a, b) => a - b); save(); showUebung(); },
+  ubff: t => { const e = ubEnr(t); if (UB_KIND) return; if (!e || e.ok) return; e.ff = !e.ff; save(); showUebung(); },
+  ubok: t => { if (UB_KIND) return;
     const e = ubEnr(t), u = ubS(); if (!e || e.ok || !(e.fertig || []).length) return;
     e.m = e.fertig.length * (UB_MZ + (e.ff ? UB_BONUS : 0)); e.ok = true; e.okd = dayKey(); u.offen.push({ nr: e.nr, m: e.m }); save(); showUebung();
     toast(`Erledigt. ${S.profile.name || 'Dein Kind'} kann ${plural(e.m, 'Münze', 'Münzen')} auf der Startseite abholen.`);
@@ -82655,6 +82730,247 @@ UB_THEMEN.push(
   { id: 'schuh', t: 'Schuhe binden: Anleitung', i: '👟', fach: 'sach', roh: () => sbAnleitungHTML(isObj(S.schuh) && SB_WEGE[S.schuh.weg] ? S.schuh.weg : 'hase'), neu: 1 },
   { id: 'schuhb', t: 'Übungsschuh zum Basteln', i: '✂️', fach: 'sach', roh: () => sbBastelHTML(), neu: 1 },
   { id: 'enwort', t: 'Words: Wörter zu Bildern', i: '🐈', fach: 'englisch', f: ubfEnWort, neu: 1 }, { id: 'enfarbe', t: 'Colours and numbers', i: '🎨', fach: 'englisch', f: ubfEnFarbe, neu: 1 });
+
+/*@@src minus298.js@@*/
+
+
+
+
+
+
+const MT_FARBEN = ['#e8590c', '#1971c2', '#9c36b5'], MT_GRUEN = '#2b8a3e';
+
+
+
+function mtStrahl(spr, zeig, o) {
+  o = o || {}; const mark = o.mark || [], pts = spr.flat().concat(mark);
+  let lo = Math.min(...pts) - 1, hi = Math.max(...pts) + 1;
+  if (hi - lo < 10) { const m = 10 - (hi - lo); lo -= Math.floor(m / 2); hi += Math.ceil(m / 2); }
+  lo = Math.max(0, lo);
+  const n = hi - lo, L = 26, Rr = 612, y = 98, x = v => +(L + (v - lo) * (Rr - L) / n).toFixed(1), fein = n <= 30, alle = n <= 14;
+  zeig = Math.max(0, Math.min(zeig == null ? spr.length : zeig, spr.length));
+  const halt = new Set(mark); if (spr.length) halt.add(spr[0][0]); spr.slice(0, zeig).forEach(s => halt.add(s[1]));
+  let s = `<svg class="mt-strahl" viewBox="0 0 640 134" role="img" aria-label="Zahlenstrahl"><line x1="${L - 12}" y1="${y}" x2="${Rr + 12}" y2="${y}" stroke="#4a5873" stroke-width="3" stroke-linecap="round"/><path d="M${Rr + 10} ${y - 7} L${Rr + 24} ${y} L${Rr + 10} ${y + 7} Z" fill="#4a5873"/>`;
+  const nahHalt = v => [...halt].some(h => h !== v && Math.abs(h - v) <= (alle ? 0 : 1));
+  for (let v = lo; v <= hi; v++) {
+    const zehn = v % 10 === 0, fuenf = v % 5 === 0, h = halt.has(v);
+    if (!fein && !fuenf && !h) continue;
+    s += `<line x1="${x(v)}" y1="${y - (zehn ? 13 : fuenf ? 9 : 6)}" x2="${x(v)}" y2="${y + (zehn ? 13 : fuenf ? 9 : 6)}" stroke="#4a5873" stroke-width="${zehn ? 2.6 : 1.4}"/>`;
+    const lab = h || ((alle || (fein ? fuenf : zehn)) && !nahHalt(v));
+    if (lab) s += `<text x="${x(v)}" y="${y + 31}" font-size="${h ? 20 : 15}" text-anchor="middle" font-weight="${h ? 800 : 500}" fill="${h ? '#1d2b45' : '#6b7890'}">${v}</text>`;
+  }
+  spr.slice(0, zeig).forEach(([a, b], i) => {
+    const x1 = x(a), x2 = x(b), mx = (x1 + x2) / 2, hg = Math.min(64, 24 + Math.abs(x2 - x1) * .3), y0 = y - 7, top = y0 - hg, cy = 2 * top - y0, plus = b > a, col = plus ? MT_GRUEN : MT_FARBEN[i % 3];
+    const dx = x2 - mx, dy = y0 - cy, len = Math.hypot(dx, dy) || 1, ux = dx / len, uy = dy / len, px = -uy, py = ux;
+    s += `<path d="M${x1} ${y0} Q${mx} ${cy.toFixed(1)} ${x2} ${y0}" fill="none" stroke="${col}" stroke-width="4" stroke-linecap="round"/>`;
+    s += `<path d="M${x2} ${y0} L${(x2 - ux * 13 + px * 6).toFixed(1)} ${(y0 - uy * 13 + py * 6).toFixed(1)} L${(x2 - ux * 13 - px * 6).toFixed(1)} ${(y0 - uy * 13 - py * 6).toFixed(1)} Z" fill="${col}"/>`;
+    s += `<text x="${mx}" y="${(top - 7).toFixed(1)}" font-size="19" text-anchor="middle" font-weight="800" fill="${col}">${o.leer ? '?' : (plus ? '+ ' : '− ') + Math.abs(b - a)}</text>`;
+  });
+  halt.forEach(v => { if (v >= lo && v <= hi) s += `<circle cx="${x(v)}" cy="${y}" r="5.5" fill="${mark.includes(v) && !spr.some(q => q[1] === v || q[0] === v) ? '#fff' : '#1d2b45'}" stroke="#1d2b45" stroke-width="2"/>`; });
+  return s + '</svg>';
+}
+const mtZeile = (...p) => mathLine(p.map(String));
+
+
+const MT_TRICKS = [
+  { id: 'sprung', t: 'Bis zum Zehner springen', i: '🦘', wann: 'Wenn du über den Zehner musst, zum Beispiel bei 43 − 7.',
+    bsp: () => { const T = R.int(2, 9), e = R.int(1, 7), b = R.int(e + 1, 8), a = T * 10 + e, z = T * 10, r = b - e, d = a - b;
+      return { a, b, spr: [[a, z], [z, d]], s: [
+        [`Die Aufgabe heißt ${a} − ${b}. Die ${b} ist größer als die ${e} Einer. Du musst also über den Zehner.`, `${a} − ${b}`, 0],
+        [`Zerlege die ${b} so, dass du genau beim Zehner landest: ${b} ist ${e} und ${r}.`, `${b} = ${e} + ${r}`, 0],
+        [`Erster Sprung: ${a} − ${e} = ${z}. Jetzt bist du genau beim Zehner.`, `${a} − ${e} = ${z}`, 1],
+        [`Zweiter Sprung: ${z} − ${r} = ${d}.`, `${z} − ${r} = ${d}`, 2],
+        [`Geschafft: ${a} − ${b} = ${d}.`, `${a} − ${b} = ${d}`, 2]] }; } },
+  { id: 'zehner', t: 'Erst die Zehner, dann die Einer', i: '🔟', wann: 'Wenn du eine Zahl mit Zehnern abziehst, zum Beispiel bei 64 − 23.',
+    bsp: () => { const [a, b] = mtPaarZE(false), Z = b - b % 10, E = b % 10, m = a - Z, d = a - b;
+      return { a, b, spr: [[a, m], [m, d]], s: [
+        [`Die Aufgabe heißt ${a} − ${b}. Zerlege die ${b} in Zehner und Einer: ${Z} und ${E}.`, `${b} = ${Z} + ${E}`, 0],
+        [`Erst die Zehner weg: ${a} − ${Z} = ${m}.`, `${a} − ${Z} = ${m}`, 1],
+        [`Dann die Einer weg: ${m} − ${E} = ${d}.`, `${m} − ${E} = ${d}`, 2],
+        [`Geschafft: ${a} − ${b} = ${d}. Merke: erst die Zehner, dann die Einer.`, `${a} − ${b} = ${d}`, 2]] }; } },
+  { id: 'klein', t: 'Die kleine Aufgabe hilft', i: '🔍', wann: 'Wenn du nicht über den Zehner musst oder nur mit Zehnern rechnest, zum Beispiel bei 59 − 4 oder 70 − 30.',
+    bsp: () => {
+      if (R.chance(.5)) { const T = R.int(2, 9), e = R.int(4, 9), f = R.int(1, e - 1), a = T * 10 + e;
+        return { a, b: f, spr: [[a, a - f]], s: [
+          [`Die Aufgabe heißt ${a} − ${f}. Schau nur auf die Einer: ${e} − ${f}. Das kennst du schon!`, `${e} − ${f} = ${e - f}`, 0],
+          [`Du musst nicht über den Zehner. Die ${T * 10} bleibt einfach stehen.`, `${T * 10} bleibt`, 0],
+          [`Also: ${a} − ${f} = ${a - f}.`, `${a} − ${f} = ${a - f}`, 1]] }; }
+      const xz = R.int(4, 9), yz = R.int(1, xz - 1), a = xz * 10, b = yz * 10;
+      return { a, b, spr: [[a, a - b]], s: [
+        [`Die Aufgabe heißt ${a} − ${b}. Das sind ${xz} Zehner minus ${yz} Zehner.`, `${xz} Zehner − ${yz} Zehner`, 0],
+        [`Die kleine Aufgabe hilft: ${xz} − ${yz} = ${xz - yz}.`, `${xz} − ${yz} = ${xz - yz}`, 0],
+        [`Also bleiben ${xz - yz} Zehner: ${a} − ${b} = ${a - b}.`, `${a} − ${b} = ${a - b}`, 1]] }; } },
+  { id: 'erg', t: 'Ergänzen: Wie weit ist es?', i: '🧗', wann: 'Wenn die beiden Zahlen nah beieinander liegen, zum Beispiel bei 52 − 48.',
+    bsp: () => { const [a, b] = mtPaarNah(), z = a - a % 10, d = a - b;
+      return { a, b, mark: [a], spr: [[b, z], [z, a]], s: [
+        [`Die Aufgabe heißt ${a} − ${b}. Die Zahlen liegen ganz nah beieinander. Statt ${b} wegzunehmen, fragst du: Wie weit ist es von ${b} bis ${a}?`, `${b} + ? = ${a}`, 0],
+        [`Von ${b} bis ${z} sind es ${z - b}.`, `${b} + ${z - b} = ${z}`, 1],
+        [`Von ${z} bis ${a} sind es ${a - z}.`, `${z} + ${a - z} = ${a}`, 2],
+        [`Zusammen ${z - b} + ${a - z} = ${d}. Also: ${a} − ${b} = ${d}.`, `${a} − ${b} = ${d}`, 2]] }; } },
+  { id: 'hilfs', t: 'Minus 9: erst minus 10', i: '🎯', wann: 'Wenn du 9, 19 oder 29 abziehst, zum Beispiel bei 63 − 9.',
+    bsp: () => { const [a, b] = mtPaarNeun(), h = b + 1, m = a - h, d = a - b;
+      return { a, b, spr: [[a, m], [m, d]], s: [
+        [`Die Aufgabe heißt ${a} − ${b}. Minus ${h} ist ganz leicht. Und ${b} ist nur 1 weniger als ${h}.`, `${b} = ${h} − 1`, 0],
+        [`Nimm erst ${h} weg: ${a} − ${h} = ${m}.`, `${a} − ${h} = ${m}`, 1],
+        [`Jetzt hast du 1 zu viel weggenommen. Gib es zurück: ${m} + 1 = ${d}.`, `${m} + 1 = ${d}`, 2],
+        [`Geschafft: ${a} − ${b} = ${d}.`, `${a} − ${b} = ${d}`, 2]] }; } },
+  { id: 'probe', t: 'Probe mit Plus', i: '✅', wann: 'Immer! So prüfst du selbst, ob dein Ergebnis stimmt.',
+    bsp: () => { const T = R.int(3, 9), e = R.int(1, 6), b = R.int(e + 1, 9), a = T * 10 + e, d = a - b, f = mtFalle(a, b);
+      return { a, b, spr: [[d, a]], s: [
+        [`Du hast gerechnet: ${a} − ${b} = ${d}. Stimmt das? Das kannst du selbst prüfen!`, `${a} − ${b} = ${d}`, 0],
+        [`Mach die Umkehraufgabe: Nimm dein Ergebnis und rechne die ${b} wieder dazu.`, `${d} + ${b} = ?`, 0],
+        [`${d} + ${b} = ${a}. Du landest wieder bei ${a}. Also stimmt deine Rechnung!`, `${d} + ${b} = ${a} ✓`, 1],
+        [`Achtung, Falle: Bei ${a} − ${b} rechnen viele ${b} − ${e} = ${b - e} und schreiben ${f}. Die Probe zeigt den Fehler: ${f} + ${b} = ${f + b}. Das ist nicht ${a}.`, `${f} + ${b} = ${f + b}, nicht ${a} ✗`, -1]] }; } }];
+const mtTrick = id => MT_TRICKS.find(t => t.id === id) || MT_TRICKS[0];
+
+function mtPaarZE(ueber) { for (let t = 0; t < 400; t++) { const a = R.int(45, 98), b = R.int(12, a - 12), E = b % 10; if (!E || E === 9 || (ueber ? E <= a % 10 : E > a % 10)) continue; return [a, b]; } return [68, 25]; }
+function mtPaarNah() { const T = R.int(3, 9), e = R.int(1, 5), f = R.int(1, 5); return [T * 10 + e, T * 10 - f]; }
+function mtPaarNeun() { for (let t = 0; t < 400; t++) { const b = R.pick([9, 9, 19, 29]), a = R.int(b + 12, 98); if (a % 10 !== 9) return [a, b]; } return [63, 9]; }
+const mtFalle = (a, b) => a - a % 10 + Math.abs(b % 10 - a % 10) - (b >= 10 ? b - b % 10 : 0);
+
+
+let MT_BSP = null;
+function mtS() { if (!isObj(S.mt)) S.mt = {}; const m = S.mt; if (!MT_TRICKS.some(t => t.id === m.t)) m.t = 'sprung'; if (!Number.isInteger(m.i)) m.i = 0; if (!Array.isArray(m.gesehen)) m.gesehen = []; return m; }
+function showMinusTricks() {
+  stopTimers(); G = null; const m = mtS(), T = mtTrick(m.t);
+  if (!MT_BSP || MT_BSP.id !== T.id) { MT_BSP = Object.assign({ id: T.id }, T.bsp()); m.i = 0; }
+  const B = MT_BSP, n = B.s.length; m.i = Math.max(0, Math.min(m.i, n - 1));
+  const [txt, f, zeig] = B.s[m.i], letzte = m.i === n - 1;
+  setView(`<header class="pagehead"><div class="wrap">${backBtn('world', 'data-w="mathe"')}<div><h1>🪄 Minus-Tricks</h1><p>Sechs Wege, wie Minus leichter wird</p></div></div></header>
+    <main class="wrap mt-page">
+      <div class="mt-tricks" role="tablist">${MT_TRICKS.map((x, k) => `<button class="mt-tab ${x.id === T.id ? 'sel' : ''}" role="tab" aria-selected="${x.id === T.id}" data-act="mttrick" data-id="${x.id}"><span class="mt-nr">${k + 1}</span><span aria-hidden="true">${x.i}</span><b>${esc(x.t)}</b>${m.gesehen.includes(x.id) ? '<i aria-label="angeschaut">✓</i>' : ''}</button>`).join('')}</div>
+      <section class="card mt-karte">
+        <h2><span aria-hidden="true">${T.i}</span> ${esc(T.t)}</h2>
+        <p class="mt-wann"><b>Wann hilft der Trick?</b> ${esc(T.wann)}</p>
+        <div class="mt-schritt" aria-live="polite"><p class="mt-nrl">Schritt ${m.i + 1} von ${n}</p><p class="mt-txt">${esc(txt)}</p><div class="mt-formel">${esc(f)}</div>${zeig < 0 ? '' : mtStrahl(B.spr, zeig, { mark: B.mark })}</div>
+        <div class="mt-dots" aria-hidden="true">${B.s.map((_, k) => `<span class="${k === m.i ? 'on' : k < m.i ? 'war' : ''}"></span>`).join('')}</div>
+        <div class="mt-nav"><button class="btn ghost" data-act="mtgeh" data-i="${m.i - 1}"${m.i ? '' : ' disabled'}>‹ Zurück</button><button class="btn ghost" data-act="mtvor" aria-label="Vorlesen">🔊</button><button class="btn" data-act="mtgeh" data-i="${m.i + 1}"${letzte ? ' disabled' : ''}>Weiter ›</button></div>
+        <div class="acts mt-acts"><button class="btn ghost" data-act="mtneu">🔄 Neues Beispiel</button>${T.id === 'probe' ? '' : `<button class="btn" data-act="mtueb" data-id="${T.id}">✏️ Diesen Trick üben</button>`}${T.id === 'probe' ? '<button class="btn" data-act="mtueb" data-id="probe">✏️ Probe üben</button>' : ''}</div>
+      </section>
+      <section class="card mt-tipps"><h2>💡 Gut zu wissen</h2><ul>
+        <li>Bei Minus nimmst du immer die <b>zweite Zahl von der ersten weg</b>. Nie umgekehrt!</li>
+        <li>Bist du unsicher, mach die <b>Probe mit Plus</b>.</li>
+        <li>Es gibt nicht nur einen richtigen Weg. Nimm den Trick, der dir am leichtesten fällt.</li></ul>
+        <div class="acts"><button class="btn ghost" data-act="mtueb" data-id="welcher">🤔 Quiz: Welcher Trick passt?</button></div></section>
+    </main>`, 'mathe');
+}
+
+
+const mtNum = (o) => mkNumber(o);
+function mtGenSprung(ctx) {
+  const T = R.int(2, 9), e = R.int(1, 7), b = R.int(e + 1, 9), a = T * 10 + e, z = T * 10, r = b - e, d = a - b, spr = [[a, z], [z, d]];
+  const erk = `${a} − ${e} = ${z}, dann ${z} − ${r} = ${d}. Also ${a} − ${b} = ${d}.`;
+  if (ctx.lv === 1) return mtNum({ prompt: `${a} − ${b}: Wie viel nimmst du zuerst weg, damit du genau bei ${z} landest?`, visual: mtZeile(a, '−', '?', '=', z) + mtStrahl(spr, 0, { mark: [z] }), answer: e, explain: erk, key: 'mts1|' + a + '-' + b });
+  if (ctx.lv === 2) return mtNum({ prompt: `${a} − ${b}: Der erste Sprung ist geschafft. Rechne den zweiten Sprung.`, visual: mtZeile(a, '−', e, '=', z) + mtZeile(z, '−', r, '=', '?') + mtStrahl(spr, 1), answer: d, explain: erk, key: 'mts2|' + a + '-' + b });
+  return mtNum({ prompt: `Rechne mit dem Zehner-Sprung: ${a} − ${b}`, visual: mtZeile(a, '−', b, '=', '?'), answer: d, explain: erk, key: 'mts3|' + a + '-' + b });
+}
+function mtGenZehner(ctx) {
+  const [a, b] = mtPaarZE(ctx.lv === 3 && R.chance(.4)), Z = b - b % 10, E = b % 10, m = a - Z, d = a - b;
+  const erk = `${a} − ${Z} = ${m}, dann ${m} − ${E} = ${d}.` + (E > m % 10 ? ` Beim zweiten Schritt hilft der Zehner-Sprung: ${m} − ${m % 10} − ${E - m % 10}.` : '');
+  if (ctx.lv === 1) return mtNum({ prompt: `${a} − ${b}: Erst die Zehner weg. Was ist ${a} − ${Z}?`, visual: mtZeile(a, '−', Z, '=', '?'), answer: m, explain: erk, key: 'mtz1|' + a + '-' + b });
+  if (ctx.lv === 2) return mtNum({ prompt: `${a} − ${b}: Die Zehner sind weg. Jetzt noch die Einer.`, visual: mtZeile(a, '−', Z, '=', m) + mtZeile(m, '−', E, '=', '?'), answer: d, explain: erk, key: 'mtz2|' + a + '-' + b });
+  return mtNum({ prompt: `Erst die Zehner, dann die Einer: ${a} − ${b}`, visual: mtZeile(a, '−', b, '=', '?'), answer: d, explain: erk, key: 'mtz3|' + a + '-' + b });
+}
+function mtGenKlein(ctx) {
+  const zehner = ctx.lv === 2 || (ctx.lv === 3 && R.chance(.4));
+  if (zehner) {
+    if (ctx.lv === 3 && R.chance(.5)) { const xz = R.int(4, 9), yz = R.int(1, xz - 1), e = R.int(1, 9), a = xz * 10 + e, b = yz * 10;
+      return mtNum({ prompt: `Welche kleine Aufgabe hilft dir? ${a} − ${b}`, visual: mtZeile(a, '−', b, '=', '?'), answer: a - b, explain: `Die Zehner: ${xz} − ${yz} = ${xz - yz}. Die ${e} Einer bleiben. Also ${a} − ${b} = ${a - b}.`, key: 'mtk4|' + a + '-' + b }); }
+    const xz = R.int(4, 9), yz = R.int(1, xz - 1), a = xz * 10, b = yz * 10;
+    return mtNum({ prompt: ctx.lv === 2 ? `${xz} − ${yz} = ${xz - yz}. Wie viel ist dann ${a} − ${b}?` : `Welche kleine Aufgabe hilft dir? ${a} − ${b}`, visual: (ctx.lv === 2 ? mtZeile(xz, '−', yz, '=', xz - yz) : '') + mtZeile(a, '−', b, '=', '?'), answer: a - b, explain: `${xz} Zehner − ${yz} Zehner = ${xz - yz} Zehner. Also ${a} − ${b} = ${a - b}.`, key: 'mtk2|' + a + '-' + b });
+  }
+  const T = R.int(2, 9), e = R.int(4, 9), f = R.int(1, e - 1), a = T * 10 + e;
+  return mtNum({ prompt: ctx.lv === 1 ? `${e} − ${f} = ${e - f}. Wie viel ist dann ${a} − ${f}?` : `Welche kleine Aufgabe hilft dir? ${a} − ${f}`, visual: (ctx.lv === 1 ? mtZeile(e, '−', f, '=', e - f) : '') + mtZeile(a, '−', f, '=', '?'), answer: a - f, explain: `${e} − ${f} = ${e - f}, die ${T * 10} bleibt. Also ${a} − ${f} = ${a - f}.`, key: 'mtk1|' + a + '-' + f });
+}
+function mtGenErg(ctx) {
+  const [a, b] = mtPaarNah(), z = a - a % 10, d = a - b, erk = `Von ${b} bis ${z} sind es ${z - b}, von ${z} bis ${a} sind es ${a - z}. Zusammen ${d}, also ${a} − ${b} = ${d}.`;
+  if (ctx.lv === 1) return mtNum({ prompt: `Wie weit ist es von ${b} bis ${a}? Ergänze.`, visual: mtZeile(b, '+', '?', '=', a) + mtStrahl([[b, z], [z, a]], 2, { mark: [a], leer: true }), answer: d, explain: erk, key: 'mte1|' + a + '-' + b });
+  if (ctx.lv === 2) return mtNum({ prompt: `${a} − ${b}: Die Zahlen liegen nah beieinander. Wie weit ist es von ${b} bis ${a}?`, visual: mtZeile(a, '−', b, '=', '?') + mtStrahl([[b, z], [z, a]], 0, { mark: [a] }), answer: d, explain: erk, key: 'mte2|' + a + '-' + b });
+  return mtNum({ prompt: `Rechne geschickt mit Ergänzen: ${a} − ${b}`, visual: mtZeile(a, '−', b, '=', '?'), answer: d, explain: erk, key: 'mte3|' + a + '-' + b });
+}
+function mtGenHilfs(ctx) {
+  let [a, b] = mtPaarNeun(); if (ctx.lv === 1) { b = 9; if (a < 21 || a % 10 === 9) a = R.int(2, 9) * 10 + R.int(0, 8); }
+  const h = b + 1, m = a - h, d = a - b, erk = `${a} − ${h} = ${m}. Das war 1 zu viel, also ${m} + 1 = ${d}. ${a} − ${b} = ${d}.`;
+  if (ctx.lv === 1) return mtNum({ prompt: `${a} − 9: Rechne erst die leichte Aufgabe ${a} − 10.`, visual: mtZeile(a, '−', 10, '=', '?'), answer: a - 10, explain: erk, key: 'mth1|' + a });
+  if (ctx.lv === 2) return mtNum({ prompt: `${a} − ${b}: ${a} − ${h} = ${m}. Du hast 1 zu viel weggenommen. Gib es zurück.`, visual: mtZeile(a, '−', h, '=', m) + mtZeile(m, '+', 1, '=', '?') + mtStrahl([[a, m], [m, d]], 1), answer: d, explain: erk, key: 'mth2|' + a + '-' + b });
+  return mtNum({ prompt: `Rechne geschickt: ${a} − ${b}`, visual: mtZeile(a, '−', b, '=', '?'), answer: d, explain: erk, key: 'mth3|' + a + '-' + b });
+}
+
+function mtRechnung(falsch) {
+  for (let t = 0; t < 200; t++) {
+    const zwei = R.chance(.4), T = R.int(3, 9), e = R.int(0, 6), a = T * 10 + e, b = zwei ? R.int(1, T - 2) * 10 + R.int(e + 1, 9) : R.int(e + 1, 9);
+    if (b >= a || b % 10 <= e) continue;
+    const r = a - b, w = R.chance(.6) ? mtFalle(a, b) : r + 10;
+    if (w === r || w <= 0 || w >= a) continue;
+    return { a, b, r, z: falsch ? w : r };
+  }
+  return { a: 43, b: 7, r: 36, z: falsch ? 44 : 36 };
+}
+function mtGenProbe(ctx) {
+  if (ctx.lv === 1) { const q = mtRechnung(false); return mtNum({ prompt: `${q.a} − ${q.b} = ${q.r}. Mach die Probe mit Plus.`, visual: mtZeile(q.r, '+', q.b, '=', '?'), answer: q.a, explain: `${q.r} + ${q.b} = ${q.a}. Du landest wieder bei ${q.a}, also stimmt die Rechnung.`, key: 'mtp1|' + q.a + '-' + q.b }); }
+  if (ctx.lv === 2) {
+    const falsch = R.chance(.5), q = mtRechnung(falsch), p = q.z + q.b;
+    return mkChoice({ prompt: `Stimmt die Rechnung ${q.a} − ${q.b} = ${q.z}? Mach die Probe mit Plus.`, visual: mtZeile(q.a, '−', q.b, '=', q.z), answer: falsch ? '✗ Stimmt nicht' : '✓ Stimmt', wrong: [falsch ? '✓ Stimmt' : '✗ Stimmt nicht'], fixed: true, order: ['✓ Stimmt', '✗ Stimmt nicht'], layout: 'row2',
+      explain: falsch ? `Probe: ${q.z} + ${q.b} = ${p}. Das ist nicht ${q.a}. Richtig ist ${q.a} − ${q.b} = ${q.r}.` : `Probe: ${q.z} + ${q.b} = ${q.a}. Stimmt!`, key: 'mtp2|' + q.a + '-' + q.b + '=' + q.z });
+  }
+  const ok = mtRechnung(false), f1 = mtRechnung(true), f2 = mtRechnung(true), lab = q => `${q.a} − ${q.b} = ${q.z}`;
+  if (new Set([ok, f1, f2].map(q => q.a + '-' + q.b)).size < 3) return mtGenProbe(ctx);
+  return mkChoice({ prompt: 'Nur eine Rechnung stimmt. Welche? Mach bei jeder die Probe.', answer: lab(ok), wrong: [lab(f1), lab(f2)], layout: 'col',
+    explain: `${lab(ok)}, denn ${ok.r} + ${ok.b} = ${ok.a}. Bei den anderen: ${f1.z} + ${f1.b} = ${f1.z + f1.b} und ${f2.z} + ${f2.b} = ${f2.z + f2.b}.`, key: 'mtp3|' + lab(ok) + lab(f1) + lab(f2) });
+}
+
+function mtGenWelcher(ctx) {
+  const art = R.pick(['sprung', 'zehner', 'klein', 'erg', 'hilfs']); let a, b, warum;
+  if (art === 'sprung') { const T = R.int(2, 9), e = R.int(1, 7); b = R.int(e + 1, 8); a = T * 10 + e; warum = `Die ${b} ist einstellig und du musst über den Zehner: ${a} − ${e} − ${b - e} = ${a - b}.`; }
+  if (art === 'zehner') { [a, b] = mtPaarZE(false); warum = `Die ${b} hat Zehner und Einer: ${a} − ${b - b % 10} − ${b % 10} = ${a - b}.`; }
+  if (art === 'klein') { if (R.chance(.5)) { const T = R.int(2, 9), e = R.int(4, 9); b = R.int(1, e - 1); a = T * 10 + e; warum = `${e} − ${b} = ${e - b}, die ${T * 10} bleibt: ${a} − ${b} = ${a - b}.`; } else { const xz = R.int(4, 9), yz = R.int(1, xz - 2); a = xz * 10; b = yz * 10; warum = `${xz} − ${yz} = ${xz - yz}, also ${a} − ${b} = ${a - b}.`; } }
+  if (art === 'erg') { [a, b] = mtPaarNah(); warum = `Die Zahlen liegen nah beieinander. Von ${b} bis ${a} sind es ${a - b}.`; }
+  if (art === 'hilfs') { [a, b] = mtPaarNeun(); warum = `${b} ist fast ${b + 1}: ${a} − ${b + 1} + 1 = ${a - b}.`; }
+  const passtNicht = { sprung: ['zehner', 'erg'], zehner: ['sprung', 'erg', 'hilfs'], klein: ['erg', 'hilfs', 'sprung'], erg: b % 10 === 9 ? ['sprung', 'klein'] : ['sprung', 'klein', 'hilfs'], hilfs: ['erg', 'klein'] }[art];
+  const opt = id => { const T = mtTrick(id); return { html: `<span aria-hidden="true">${T.i}</span> ${esc(T.t)}`, label: T.t }; };
+  return mkChoice({ prompt: `Welcher Trick passt am besten zu ${a} − ${b}?`, visual: mtZeile(a, '−', b, '=', '?'), answer: opt(art), wrong: R.shuffle(passtNicht).slice(0, 2).map(opt), layout: 'col', explain: warum, key: 'mtw|' + a + '-' + b });
+}
+
+
+Object.assign(GAMES, {
+  minustricks: { id: 'minustricks', w: 'mathe', g: 'm-minus', t: 'Minus-Tricks lernen', d: 'Sechs Tricks Schritt für Schritt am Zahlenstrahl', i: '🪄', type: 'tool', kl: 2, open: () => showMinusTricks() },
+  mtsprung: { id: 'mtsprung', w: 'mathe', g: 'm-minus', t: 'Bis zum Zehner springen', d: '43 − 7 = 43 − 3 − 4', i: '🦘', gen: mtGenSprung, max: 3, start: [1, 1, 2, 3], klv: [2, 2, 2] },
+  mtzehner: { id: 'mtzehner', w: 'mathe', g: 'm-minus', t: 'Erst Zehner, dann Einer', d: '64 − 23 = 64 − 20 − 3', i: '🔟', gen: mtGenZehner, max: 3, start: [1, 1, 2, 3], klv: [2, 2, 2] },
+  mtklein: { id: 'mtklein', w: 'mathe', g: 'm-minus', t: 'Die kleine Aufgabe hilft', d: '9 − 4 = 5, also 59 − 4 = 55', i: '🔍', gen: mtGenKlein, max: 3, start: [1, 1, 2, 3], klv: [2, 2, 2] },
+  mterg: { id: 'mterg', w: 'mathe', g: 'm-minus', t: 'Ergänzen', d: '52 − 48: von 48 bis 52', i: '🧗', gen: mtGenErg, max: 3, start: [1, 1, 2, 3], klv: [2, 2, 2] },
+  mthilfs: { id: 'mthilfs', w: 'mathe', g: 'm-minus', t: 'Minus 9: erst minus 10', d: '63 − 9 = 63 − 10 + 1', i: '🎯', gen: mtGenHilfs, max: 3, start: [1, 1, 2, 3], klv: [2, 2, 2] },
+  mtprobe: { id: 'mtprobe', w: 'mathe', g: 'm-minus', t: 'Probe mit Plus', d: 'Stimmt das Ergebnis? Selbst prüfen', i: '✅', gen: mtGenProbe, max: 3, start: [1, 1, 2, 3], klv: [2, 2, 2] },
+  mtwelcher: { id: 'mtwelcher', w: 'mathe', g: 'm-minus', t: 'Welcher Trick passt?', d: 'Den schlauesten Rechenweg wählen', i: '🤔', gen: mtGenWelcher, max: 1, start: [1, 1, 1, 1], klv: [2] }
+});
+const MT_SPIEL = { sprung: 'mtsprung', zehner: 'mtzehner', klein: 'mtklein', erg: 'mterg', hilfs: 'mthilfs', probe: 'mtprobe', welcher: 'mtwelcher' };
+Object.assign(ACT, {
+  mttrick: t => { const m = mtS(); if (!MT_TRICKS.some(x => x.id === t.dataset.id)) return; m.t = t.dataset.id; m.i = 0; MT_BSP = null; save(); showMinusTricks(); },
+  mtgeh: t => { const m = mtS(), i = Number(t.dataset.i); if (!MT_BSP || i < 0 || i >= MT_BSP.s.length) return; m.i = i; try { Sound.tap(); } catch (e) { }
+    if (i === MT_BSP.s.length - 1 && !m.gesehen.includes(m.t)) { m.gesehen.push(m.t); if (typeof confetti === 'function') confetti(30); }
+    save(); showMinusTricks(); },
+  mtvor: t => { const m = mtS(); if (MT_BSP) Speech.say(MT_BSP.s[m.i][0], 'de-DE', t); },
+  mtneu: () => { const m = mtS(); MT_BSP = Object.assign({ id: m.t }, mtTrick(m.t).bsp()); m.i = 0; showMinusTricks(); },
+  mtueb: t => { const g = MT_SPIEL[t.dataset.id]; if (g) startGame(g); }
+});
+
+
+const mtBk = (v, los) => ubK(v, los, 'ub-kk');
+const mtBz = v => `<span class="ub-z">${v}</span>`, mtBo = o => `<span class="ub-o">${o}</span>`;
+function mtBlatt(r) {
+  const A = ubViele(r, 4, () => { const T = r.int(2, 9), e = r.int(1, 7), b = r.int(e + 1, 9); return [T * 10 + e, b]; });
+  const B = ubViele(r, 4, () => { const a = r.int(45, 98), b = r.int(12, a - 12), E = b % 10; return !E || E === 9 || E > a % 10 ? null : [a, b]; });
+  const C = ubViele(r, 4, () => { const T = r.int(3, 9), e = r.int(1, 5), f = r.int(1, 5); return [T * 10 + e, T * 10 - f]; });
+  const D = ubViele(r, 4, () => { const b = r.pick([9, 9, 19, 29]), a = r.int(b + 12, 98); return a % 10 === 9 ? null : [a, b]; });
+  const E = ubViele(r, 4, () => { const T = r.int(3, 9), e = r.int(0, 6), b = r.int(e + 1, 9), a = T * 10 + e, f = a - a % 10 + (b - e); return [a, b, r.f() < .5 && f !== a - b ? f : a - b]; });
+  const zeile = (inhalt) => `<div class="ub-t ub-tx mt-bz">${inhalt}</div>`;
+  return { titel: 'Minus mit Rechentricks', farbe: ['#c92a2a', '#fff5f5'], tipp: 'Achtung, Falle: Bei 43 − 7 rechnest du nicht 7 − 3. Du nimmst die 7 von der 43 weg!', html: los => `
+    <section class="ub-ab">${ubH2('A', 'Bis zum Zehner springen: Zerlege die zweite Zahl.', 1)}<div class="ub-spalten zwei">${A.map(([a, b]) => zeile(`${mtBz(a)}${mtBo('−')}${mtBz(b)}${mtBo('=')}${mtBz(a)}${mtBo('−')}${mtBk(a % 10, los)}${mtBo('−')}${mtBk(b - a % 10, los)}${mtBo('=')}${mtBk(a - b, los)}`)).join('')}</div></section>
+    <section class="ub-ab">${ubH2('B', 'Erst die Zehner, dann die Einer.', 2)}<div class="ub-spalten zwei">${B.map(([a, b]) => zeile(`${mtBz(a)}${mtBo('−')}${mtBz(b)}${mtBo('=')}${mtBz(a)}${mtBo('−')}${mtBk(b - b % 10, los)}${mtBo('−')}${mtBk(b % 10, los)}${mtBo('=')}${mtBk(a - b, los)}`)).join('')}</div></section>
+    <section class="ub-ab">${ubH2('C', 'Ergänzen: Wie weit ist es von der kleinen zur großen Zahl?', 2)}<div class="ub-spalten zwei">${C.map(([a, b]) => zeile(`${mtBz(b)}${mtBo('+')}${mtBk(a - b, los)}${mtBo('=')}${mtBz(a)}<span class="mt-bso">also</span>${mtBz(a)}${mtBo('−')}${mtBz(b)}${mtBo('=')}${mtBk(a - b, los)}`)).join('')}</div></section>
+    <section class="ub-ab">${ubH2('D', 'Minus 9, 19 oder 29: Erst minus 10, 20 oder 30, dann 1 dazu.', 3)}<div class="ub-spalten zwei">${D.map(([a, b]) => zeile(`${mtBz(a)}${mtBo('−')}${mtBz(b)}${mtBo('=')}${mtBz(a)}${mtBo('−')}${mtBk(b + 1, los)}${mtBo('+')}${mtBz(1)}${mtBo('=')}${mtBk(a - b, los)}`)).join('')}</div></section>
+    <section class="ub-ab">${ubH2('E', 'Probe mit Plus: Stimmt die Rechnung? Kreuze an.', 2)}<table class="ub-rf mt-probe"><thead><tr><th></th><th>Probe</th><th>stimmt</th><th>stimmt nicht</th></tr></thead><tbody>${E.map(([a, b, z]) => `<tr><td>${a} − ${b} = ${z}</td><td><div class="ub-t ub-tx">${mtBz(z)}${mtBo('+')}${mtBz(b)}${mtBo('=')}${mtBk(z + b, los)}</div></td><td><span class="ub-x">${los && z === a - b ? '✗' : ''}</span></td><td><span class="ub-x">${los && z !== a - b ? '✗' : ''}</span></td></tr>`).join('')}</tbody></table></section>` };
+}
+UB_THEMEN.push({ id: 'minustricks', t: 'Minus mit Rechentricks', i: '🪄', fach: 'mathe', f: mtBlatt, neu: 1 });
 
 /*@@src data_es271.js@@*/
 
