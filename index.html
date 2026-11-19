@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-Ro5uFcc8pN7t040jHPKfD//LSWXAwiQDLYVT3+/rRnU=' 'sha256-2IRAeaJ8dpOglSrAgd8hzWXYTeS/WdWy8APOYjLT7vw=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-ghcXwxbUGvdrajC5x1pVtJh7shAeePJRFaO21DT6zxo=' 'sha256-r7ZGKnsPg8TGUYHvqj0FJ5osdfpI7ZIzP0k9J2uMGmM=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -3219,6 +3219,13 @@ body.calm .pan-ci { animation: none; }
 .gf-opt svg { display: block; width: min(150px, 100%); height: auto; margin: 0 auto; }
 .rel-big { display: flex; justify-content: center; }
 .rel-big svg { width: min(330px, 86%); height: auto; display: block; border-radius: 16px; }
+
+/* ---- style_bezahl370.css ---- */
+
+.bz-test { position: fixed; top: calc(env(safe-area-inset-top, 0px) + 6px); left: 50%; transform: translateX(-50%); z-index: 9999; pointer-events: none;
+  background: #FFE066; color: #3A2A00; border: 2px solid #E0B400; border-radius: 999px; padding: 4px 14px; font: 700 13px/1.3 system-ui, -apple-system, sans-serif;
+  box-shadow: 0 2px 8px rgba(0,0,0,.25); white-space: nowrap; opacity: .92; font-size: 12px; }
+.bz-karte .bz-stand { margin: 6px 0 2px; }
 
 /* ---- style_bilder292.css ---- */
 
@@ -10490,8 +10497,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '3.6.0';
-  var MAP = {"probe":0,"files":[[10480,"fehler_kern.js"],[10768,null],[10770,"data.js"],[11485,"data_more.js"],[11857,"data_su2.js"],[12084,"data_es.js"],[12452,"data_wissen.js"],[12653,"data_v21.js"],[13338,"data_v24.js"],[13826,"data_v25.js"],[14315,"data_v26.js"],[14414,"data_v29.js"],[14722,"data_v30.js"],[15056,"data_v31.js"],[15362,"data_kunst.js"],[15559,"data_v214.js"],[15662,"data_v216.js"],[15955,"schrift.js"],[16259,"eingabe.js"],[16470,"data_k34m.js"],[16988,"data_k34d.js"],[17342,"data_k34s.js"],[17796,"data_v224.js"],[18669,"data_v225w.js"],[19038,"data_v225k.js"],[19482,"data_herz.js"],[19836,"data_fb226.js"],[19979,"data_tf226.js"],[20186,"data_v227a.js"],[21286,"data_v227b.js"],[22240,"data_h28b.js"],[22280,"data_l28a.js"],[23146,"data_l28b.js"],[24326,"data_schaetz.js"],[24808,"data_party8.js"],[24858,"data_alce.js"],[25529,"data_alce2.js"],[25778,"data_alce3.js"],[26193,"registry.js"],[26707,"app.js"],[27961,"fun.js"],[28541,"fun2.js"],[28857,"atelier.js"],[29231,"kunst225.js"],[29421,"herz.js"],[29785,"reise.js"],[30087,"iglu.js"],[30253,"offline.js"],[30360,"party.js"],[30844,"meine.js"],[31200,"loeffel.js"],[31371,"trend.js"],[31913,"fun228a.js"],[32774,"fun228b.js"],[33451,"kueche.js"],[34490,"stimme.js"],[34545,"klassen.js"],[34694,"freunde_vorab.js"],[34715,"mut.js"],[35137,"schule.js"],[35626,"fussball226.js"],[35948,"schaetzen.js"],[36379,"party8.js"],[36998,"tiere.js"],[37457,"fussball232.js"],[37672,"party8b.js"],[37974,"weg.js"],[38195,"px.js"],[38615,"px_fein.js"],[38669,"px_data.js"],[38926,"pxwelt.js"],[39010,"px_abenteuer.js"],[39839,"px_abenteuer2.js"],[40593,"px_abenteuer3.js"],[40984,"px_abenteuer4.js"],[41194,"px_baukasten.js"],[41303,"px_abenteuer_fein.js"],[41520,"px_abenteuer_fein2.js"],[41872,"px_abenteuer5.js"],[42279,"px_abenteuer6.js"],[42555,"px_abenteuer7.js"],[42911,"px_level300.js"],[43462,"px_schwach300.js"],[43536,"px_zwei300.js"],[43650,"lumicheckt300.js"],[43843,"schreiben300.js"],[44057,"rechenkarte300.js"],[44177,"lerncheck300.js"],[44400,"material300.js"],[44730,"lernweg300.js"],[45254,"px_ski.js"],[45896,"px_wurf.js"],[46425,"px_insel.js"],[47626,"px_kicker.js"],[48561,"px_eis.js"],[49547,"px_run.js"],[50762,"px_brk.js"],[51724,"px_pol.js"],[53075,"px_frog.js"],[54335,"px_angel.js"],[55650,"px_golf.js"],[56684,"px_tauch.js"],[57949,"px_hockey.js"],[58905,"px_lab.js"],[60240,"px_plopp.js"],[61446,"px_stadion.js"],[62957,"px_stadion2.js"],[63009,"px_training.js"],[63378,"cm.js"],[63868,"cmwelt.js"],[63924,"cm_baeck.js"],[64717,"cm_bahn.js"],[65481,"cm_detek.js"],[66198,"cm_markt.js"],[66911,"ff.js"],[67068,"ff_mathe.js"],[69058,"ff_deutsch.js"],[70646,"ff_sach_a.js"],[72895,"ff_sach_b.js"],[75124,"ff_sprachen.js"],[77532,"zm.js"],[78445,"tt.js"],[78658,"data_tagebuch.js"],[78701,"data_hoerspiel.js"],[78860,"leseecke.js"],[79187,"kt.js"],[79490,"comicbuch.js"],[79768,"alce.js"],[79931,"alce_aufg.js"],[80122,"formen.js"],[80573,"data_formen.js"],[80814,"data_formen2.js"],[81036,"spielzeit.js"],[81181,"data_faktmeinung.js"],[81300,"data_es248.js"],[81564,"data_en249.js"],[81803,"data_wissen249.js"],[82234,"data_kunst249.js"],[82517,"data_fussball250.js"],[82641,"data_werte252.js"],[82894,"data_lesen252.js"],[82955,"data_k34_252.js"],[83041,"art254.js"],[83159,"data_werte255.js"],[83297,"data_lesen255.js"],[83433,"forscher255.js"],[83581,"zufall250.js"],[83627,"stufe259.js"],[83637,"advent.js"],[83900,"wdh.js"],[83998,"eswarm288.js"],[84049,"abwechslung294.js"],[84124,"bilder293a.js"],[84214,"bilder293b.js"],[84344,"bilder293c.js"],[84442,"bilder293d.js"],[84564,"bilder293e.js"],[84728,"bilder293f.js"],[84808,"bilder292.js"],[85254,"denk.js"],[85291,"data_viaje265.js"],[85434,"klassenarbeit.js"],[85567,"quizduell.js"],[85690,"neu267.js"],[85955,"prog.js"],[86060,"lernstand.js"],[86127,"blatt.js"],[86229,"uebung295.js"],[86550,"schuh296.js"],[86758,"uebung297.js"],[87145,"minus298.js"],[87386,"schrift299.js"],[87514,"data_es271.js"],[87628,"plus269.js"],[87722,"schach.js"],[87954,"schachtaktik.js"],[88206,"fun270.js"],[88369,"data_neu274.js"],[88578,"plus272.js"],[88632,"spiele274.js"],[88755,"kasten.js"],[88859,"erklaer.js"],[88972,"apa.js"],[89053,"neu276.js"],[89194,"spiele276.js"],[89244,"neu277.js"],[89422,"spiele277.js"],[89677,"lernen278.js"],[89937,"spiele278.js"],[90280,"lernen279.js"],[90605,"lernen279b.js"],[91003,"spanisch280.js"],[91295,"spanisch283.js"],[91528,"mehr281.js"],[91674,"grafik280.js"],[92053,"tiefsee280.js"],[92331,"abenteuer280.js"],[92543,"abenteuer281.js"],[92655,"design281.js"],[92787,"party281.js"],[92918,"grafik281.js"],[93135,"traumtor292.js"],[93342,"kart293.js"],[93619,"lumi_live.js"],[93735,"sicher.js"],[93919,"stil.js"],[93973,"zurueck287.js"],[94016,"nfbilder300.js"],[94179,"formen300.js"],[94786,"musik300.js"],[94957,"lernweg300b.js"],[95080,"lernweg300c.js"],[95240,"espanol300.js"],[95346,"fabel310_bild.js"],[95597,"fabel310.js"],[95988,"eisbude310.js"],[96214,"turbo310.js"],[96419,"sumo310.js"],[96554,"beifahrer310.js"],[96629,"dreier310.js"],[96745,"ring310.js"],[96854,"loch330.js"],[97204,"reise340.js"],[97273,"fisch340.js"],[97829,"rutsche340.js"],[98240,"knobel340.js"],[98478,"frucht350.js"],[98783,"vulkan350.js"],[99026,"delfin350.js"],[99221,"musik350.js"],[99391,"arcade360.js"],[99507,"strasse360.js"],[99803,"blasen360.js"],[100011,"meer360.js"],[100180,"spirale360.js"],[100344,"sterne360.js"],[100551,"alt360a.js"],[100821,"alt360b.js"],[101014,"alt360c.js"],[101268,"alt360d.js"],[101431,"belohnung311.js"],[101587,"druck311.js"],[101681,"freunde.js"],[101818,"start.js"],[101828,null],[101838,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '3.7.0';
+  var MAP = {"probe":0,"files":[[10487,"fehler_kern.js"],[10775,null],[10777,"data.js"],[11492,"data_more.js"],[11864,"data_su2.js"],[12091,"data_es.js"],[12459,"data_wissen.js"],[12660,"data_v21.js"],[13345,"data_v24.js"],[13833,"data_v25.js"],[14322,"data_v26.js"],[14421,"data_v29.js"],[14729,"data_v30.js"],[15063,"data_v31.js"],[15369,"data_kunst.js"],[15566,"data_v214.js"],[15669,"data_v216.js"],[15962,"schrift.js"],[16266,"eingabe.js"],[16477,"data_k34m.js"],[16995,"data_k34d.js"],[17349,"data_k34s.js"],[17803,"data_v224.js"],[18676,"data_v225w.js"],[19045,"data_v225k.js"],[19489,"data_herz.js"],[19843,"data_fb226.js"],[19986,"data_tf226.js"],[20193,"data_v227a.js"],[21293,"data_v227b.js"],[22247,"data_h28b.js"],[22287,"data_l28a.js"],[23153,"data_l28b.js"],[24333,"data_schaetz.js"],[24815,"data_party8.js"],[24865,"data_alce.js"],[25536,"data_alce2.js"],[25785,"data_alce3.js"],[26200,"registry.js"],[26714,"app.js"],[27967,"fun.js"],[28555,"fun2.js"],[28871,"atelier.js"],[29245,"kunst225.js"],[29435,"herz.js"],[29799,"reise.js"],[30101,"iglu.js"],[30267,"offline.js"],[30374,"party.js"],[30858,"meine.js"],[31214,"loeffel.js"],[31385,"trend.js"],[31927,"fun228a.js"],[32788,"fun228b.js"],[33465,"kueche.js"],[34504,"stimme.js"],[34559,"klassen.js"],[34708,"freunde_vorab.js"],[34729,"mut.js"],[35151,"schule.js"],[35640,"fussball226.js"],[35962,"schaetzen.js"],[36393,"party8.js"],[37012,"tiere.js"],[37471,"fussball232.js"],[37686,"party8b.js"],[37988,"weg.js"],[38209,"px.js"],[38629,"px_fein.js"],[38683,"px_data.js"],[38940,"pxwelt.js"],[39024,"px_abenteuer.js"],[39853,"px_abenteuer2.js"],[40607,"px_abenteuer3.js"],[40998,"px_abenteuer4.js"],[41208,"px_baukasten.js"],[41317,"px_abenteuer_fein.js"],[41534,"px_abenteuer_fein2.js"],[41886,"px_abenteuer5.js"],[42293,"px_abenteuer6.js"],[42569,"px_abenteuer7.js"],[42925,"px_level300.js"],[43476,"px_schwach300.js"],[43550,"px_zwei300.js"],[43664,"lumicheckt300.js"],[43857,"schreiben300.js"],[44071,"rechenkarte300.js"],[44191,"lerncheck300.js"],[44414,"material300.js"],[44744,"lernweg300.js"],[45268,"px_ski.js"],[45910,"px_wurf.js"],[46439,"px_insel.js"],[47640,"px_kicker.js"],[48575,"px_eis.js"],[49561,"px_run.js"],[50776,"px_brk.js"],[51738,"px_pol.js"],[53089,"px_frog.js"],[54349,"px_angel.js"],[55664,"px_golf.js"],[56698,"px_tauch.js"],[57963,"px_hockey.js"],[58919,"px_lab.js"],[60254,"px_plopp.js"],[61460,"px_stadion.js"],[62971,"px_stadion2.js"],[63023,"px_training.js"],[63392,"cm.js"],[63882,"cmwelt.js"],[63938,"cm_baeck.js"],[64731,"cm_bahn.js"],[65495,"cm_detek.js"],[66212,"cm_markt.js"],[66925,"ff.js"],[67082,"ff_mathe.js"],[69072,"ff_deutsch.js"],[70660,"ff_sach_a.js"],[72909,"ff_sach_b.js"],[75138,"ff_sprachen.js"],[77546,"zm.js"],[78459,"tt.js"],[78672,"data_tagebuch.js"],[78715,"data_hoerspiel.js"],[78874,"leseecke.js"],[79201,"kt.js"],[79504,"comicbuch.js"],[79782,"alce.js"],[79945,"alce_aufg.js"],[80136,"formen.js"],[80587,"data_formen.js"],[80828,"data_formen2.js"],[81050,"spielzeit.js"],[81272,"data_faktmeinung.js"],[81391,"data_es248.js"],[81655,"data_en249.js"],[81894,"data_wissen249.js"],[82325,"data_kunst249.js"],[82608,"data_fussball250.js"],[82732,"data_werte252.js"],[82985,"data_lesen252.js"],[83046,"data_k34_252.js"],[83132,"art254.js"],[83250,"data_werte255.js"],[83388,"data_lesen255.js"],[83524,"forscher255.js"],[83672,"zufall250.js"],[83718,"stufe259.js"],[83728,"advent.js"],[83991,"wdh.js"],[84089,"eswarm288.js"],[84140,"abwechslung294.js"],[84215,"bilder293a.js"],[84305,"bilder293b.js"],[84435,"bilder293c.js"],[84533,"bilder293d.js"],[84655,"bilder293e.js"],[84819,"bilder293f.js"],[84899,"bilder292.js"],[85345,"denk.js"],[85382,"data_viaje265.js"],[85525,"klassenarbeit.js"],[85658,"quizduell.js"],[85781,"neu267.js"],[86046,"prog.js"],[86151,"lernstand.js"],[86218,"blatt.js"],[86320,"uebung295.js"],[86641,"schuh296.js"],[86849,"uebung297.js"],[87236,"minus298.js"],[87477,"schrift299.js"],[87605,"data_es271.js"],[87719,"plus269.js"],[87813,"schach.js"],[88045,"schachtaktik.js"],[88297,"fun270.js"],[88460,"data_neu274.js"],[88669,"plus272.js"],[88723,"spiele274.js"],[88846,"kasten.js"],[88950,"erklaer.js"],[89063,"apa.js"],[89144,"neu276.js"],[89285,"spiele276.js"],[89335,"neu277.js"],[89513,"spiele277.js"],[89768,"lernen278.js"],[90028,"spiele278.js"],[90371,"lernen279.js"],[90696,"lernen279b.js"],[91094,"spanisch280.js"],[91386,"spanisch283.js"],[91619,"mehr281.js"],[91765,"grafik280.js"],[92144,"tiefsee280.js"],[92422,"abenteuer280.js"],[92634,"abenteuer281.js"],[92746,"design281.js"],[92878,"party281.js"],[93009,"grafik281.js"],[93226,"traumtor292.js"],[93433,"kart293.js"],[93710,"lumi_live.js"],[93826,"sicher.js"],[94010,"stil.js"],[94064,"zurueck287.js"],[94107,"nfbilder300.js"],[94270,"formen300.js"],[94877,"musik300.js"],[95048,"lernweg300b.js"],[95171,"lernweg300c.js"],[95331,"espanol300.js"],[95437,"fabel310_bild.js"],[95688,"fabel310.js"],[96079,"eisbude310.js"],[96305,"turbo310.js"],[96510,"sumo310.js"],[96645,"beifahrer310.js"],[96720,"dreier310.js"],[96836,"ring310.js"],[96945,"loch330.js"],[97295,"reise340.js"],[97365,"fisch340.js"],[97921,"rutsche340.js"],[98332,"knobel340.js"],[98570,"frucht350.js"],[98875,"vulkan350.js"],[99118,"delfin350.js"],[99313,"musik350.js"],[99483,"arcade360.js"],[99599,"strasse360.js"],[99895,"blasen360.js"],[100103,"meer360.js"],[100272,"spirale360.js"],[100436,"sterne360.js"],[100643,"alt360a.js"],[100913,"alt360b.js"],[101106,"alt360c.js"],[101360,"alt360d.js"],[101523,"belohnung311.js"],[101684,"druck311.js"],[101778,"freunde.js"],[101915,"start.js"],[101925,null],[101935,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -26708,9 +26715,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '3.6.0';
+const APP_VERSION = '3.7.0';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "3.7.0", d: "19.11.2026", t: ["Eine Bezahlart für alle Spiele: Im Elternbereich unter „Spiele bezahlen“ gibt es Spielzeit (Standard) oder Münzen pro Spiel", "Testmodus „Alles frei“ im Elternbereich, geht um Mitternacht von allein aus", "Belohnungswelt: Alle Party-Spiele stehen einzeln unter „Zusammen spielen“ und sind kostenlos", "Seifenblasen ist zurück"] },
   { v: "3.6.0", d: "19.11.2026", t: ["Fünf neue Spiele mit je 20 Leveln: Straßen-Hüpfer, Blasen-Schießer, Meeres-Mix, Spiral-Turm und Sternen-Patrouille", "Zehn Spiele neu gemacht, jedes mit vier Welten: Fisch-Schnapper: 20 Level, Fisch-Regen: 20 Level, Turm-Stapler: 20 Level, Schneeball-Wurf: 20 Level, Pinguin-Hüpfer: 20 Level", "Außerdem neu: Pinguin-Memory: 20 Level, Farben sortieren: 20 Level, Block-Puzzle: 20 Level, Elfmeterschießen: 20 Level, Torwart-Heldin: 20 Level", "Jedes Level zeigt vor dem Start, was neu ist"] },
   { v: "3.5.0", d: "18.11.2026", t: ["Neue Spiele: Frucht-Schnitt (Obst durchwischen), Vulkan-Sprung (bis zum Gipfel hüpfen) und Delfin-Show (tauchen, springen, Saltos), je 20 Level", "Melodie-Kacheln: Konzertreise mit 16 Liedern, Klavierklang und Halte-Kacheln", "Pinguin-Ludo: Abenteuer-Brett mit Eisrutschen und Fischfeldern", "Level-Spiele: Nach einem Level geht es direkt weiter, ein Spiel reicht für 10 Minuten"] },
   { v: "3.4.0", d: "18.11.2026", t: ["Spielhalle: Fisch-Tausch: Meeresreise mit 5 Meeren und 30 Leveln, neu gezeichnete Meerestiere, Eis, Schatzkisten und Meeres-Party", "Pinguin-Rutsche: Weltreise mit 4 Welten und 20 Leveln bis ins Ziel, kurvige Bahn, Extras und Endlos-Rutsche durch alle Welten", "Parkplatz-Chaos: Stadt-Tour und Pfeil-Flucht: Polarreise mit je 24 Leveln und neuer Grafik", "Pinguin-Mahjong: Bilderreise mit 20 Leveln in vier Bilderwelten", "Alle überarbeiteten Spiele haben eine Levelkarte mit Sternen"] },
@@ -27820,11 +27828,9 @@ function showParents(notice = '') {
     ${typeof tfrParentsHTML === 'function' ? tfrParentsHTML() : ''}
     ${typeof ebElternHTML === 'function' ? ebElternHTML() : ''}
     <section class="card"><h2>Spielhalle</h2>
-      <p class="muted">Mini-Spiele als Belohnung. Münzen gibt es nur fürs Lernen: 1 Münze pro Stern, +3 für das Tagesziel. Aktuell: 🪙 <b id="coinsP">${S.coins || 0}</b></p>
+      <p class="muted">Mini-Spiele als Belohnung. Münzen gibt es nur fürs Lernen: 1 Münze pro Stern, +3 für das Tagesziel. Aktuell: 🪙 <b id="coinsP">${S.coins || 0}</b>. Was ein Spiel kostet, stellst du oben bei „Spiele bezahlen“ ein.</p>
       ${sw('funOn', set.funOn !== false, 'Spielhalle', 'Mini-Spiele auf der Startseite anzeigen')}
       ${sw('atelierOn', set.atelierOn !== false, 'Atelier (Welt Kunst)', 'Freies Malen, Spiegel-Malen, Kandinsky, Mondrian, Farb-Labor, Mosaik, Pop-Art und Kreativ-Würfel, kostet keine Münzen. Die Kunst-Lernspiele bleiben immer an.')}
-      <div class="row"><span class="lab">Preis pro Spiel<small>in Münzen</small></span><div class="seg">${[3, 5, 8].map(k => `<button class="${k === (set.funPrice || 5) ? 'sel' : ''}" data-act="pfunprice" data-k="${k}">${k}</button>`).join('')}</div></div>
-      <div class="row"><span class="lab">Spiele pro Tag<small>höchstens</small></span><div class="seg">${[1, 2, 3, 5, 0].map(k => `<button class="${k === (set.funMax === undefined ? 3 : set.funMax) ? 'sel' : ''}" data-act="pfunmax" data-k="${k}">${k || '∞'}</button>`).join('')}</div></div>
       <div class="row"><span class="lab">Münzen schenken<small>zum Beispiel fürs Zimmer-Aufräumen</small></span><button class="btn sm" data-act="pgift">+5 🪙</button></div>
     </section>
     ${typeof skxEinstellHTML === 'function' ? skxEinstellHTML() : ''}
@@ -27987,6 +27993,12 @@ function funPrice() { return S.settings.funPrice || 5; }
 function funMax() { return S.settings.funMax === 0 ? Infinity : (S.settings.funMax || 3); }
 function funBlock() {
   if (S.settings.funOn === false) return 'Die Spielhalle ist im Elternbereich ausgeschaltet.';
+  if (typeof bzFrei === 'function' && bzFrei()) return '';
+  if (typeof bzZeit === 'function' && bzZeit()) {
+    if (spzVoll()) return 'Für heute ist genug gespielt. Morgen geht es weiter!';
+    if (spzS().left <= 0 && !spzKannKaufen() && !(typeof wegTicket === 'function' && wegTicket())) return `Dir fehlen noch ${plural(spzPreis() - (S.coins || 0), 'Münze', 'Münzen')} für ${spzMin()} Minuten Spielzeit. Lerne weiter, jeder Stern bringt eine Münze!`;
+    return '';
+  }
   if (typeof wegTicket === 'function' && wegTicket()) return '';
   if (funToday().count >= funMax()) return `Für heute ist Schluss, morgen kannst du wieder spielen.`;
   if ((S.coins || 0) < funPrice()) return `Dir fehlen noch ${plural(funPrice() - (S.coins || 0), 'Münze', 'Münzen')}. Lerne weiter, jeder Stern bringt eine Münze!`;
@@ -27998,23 +28010,24 @@ function showArcade(msg = '') {
   funStop(); stopTimers(); G = null;
   const f = funToday(), block = funBlock(), max = funMax();
   setView(`<header class="pagehead" style="--w:var(--gold);--w-deep:var(--gold-deep)"><div class="wrap">${backBtn()}
-      <div><h1>Spielhalle</h1><p>Hier bezahlst du mit den Münzen, die du beim Lernen sammelst.</p></div><div class="art">${mascot('wow', '', '')}</div></div></header>
+      <div><h1>Spielhalle</h1><p>${bzZeit() ? 'Hier spielst du mit der Spielzeit, die du dir mit Münzen kaufst.' : bzFrei() ? 'Testmodus: Heute ist alles frei.' : 'Hier bezahlst du mit den Münzen, die du beim Lernen sammelst.'}</p></div><div class="art">${mascot('wow', '', '')}</div></div></header>
     <main class="wrap arcade">
       <section class="card coin-card"><div class="coin-big">🪙 <b class="tnum">${S.coins || 0}</b></div>
-        <div><b>${plural(S.coins || 0, 'Münze', 'Münzen')}</b><span>Ein Spiel kostet ${plural(funPrice(), 'Münze', 'Münzen')} · heute gespielt: ${f.count}${max === Infinity ? '' : ` von ${max}`}</span></div></section>
+        <div><b>${plural(S.coins || 0, 'Münze', 'Münzen')}</b><span>${bzZeit() ? `${spzMin()} Minuten Spielzeit kosten ${plural(spzPreis(), 'Münze', 'Münzen')} · ${spzS().left > 0 ? `noch ${spzFmt(spzS().left)} übrig` : 'keine Spielzeit übrig'}` : bzFrei() ? '🧪 Testmodus: alles frei bis Mitternacht' : `Ein Spiel kostet ${plural(funPrice(), 'Münze', 'Münzen')} · heute gespielt: ${f.count}${max === Infinity ? '' : ` von ${max}`}`}</span></div></section>
       ${msg ? `<p class="notice-box">${esc(msg)}</p>` : ''}
-      ${typeof wegTicket === 'function' && wegTicket() ? `<p class="notice-box ticket-box">🎟️ Du hast ein Freispiel-Ticket aus ${esc(gen(M()))} Tagesweg, dein nächstes Spiel kostet nichts!</p>` : ''}
+      ${!bzFrei() && typeof wegTicket === 'function' && wegTicket() ? `<p class="notice-box ticket-box">🎟️ Du hast ein Freispiel-Ticket aus ${esc(gen(M()))} Tagesweg, ${bzZeit() ? `damit bekommst du ${spzMin()} Minuten Spielzeit geschenkt` : 'dein nächstes Spiel kostet nichts'}!</p>` : ''}
       ${block ? `<p class="notice-box">${esc(block)}</p>` : ''}
       ${FUN_CATS.map(([cat, ct]) => `<h2 class="fun-cat">${ct}</h2><div class="fun-grid">${Object.entries(FUN_GAMES).filter(([, g]) => g.c === cat).map(([id, g]) => `<button class="fun-card" data-act="funask" data-f="${id}" ${block ? 'aria-disabled="true"' : ''}>
         <span class="fi">${g.i}</span><span class="ft"><b>${g.t}</b><small>${esc(funD(g))}</small>
-        <span class="meta"><span class="price">🪙 ${funPrice()}</span>${id !== 'malen' && f.records[id] ? `<small>${g.wins ? 'Siege' : 'Rekord'}: ${f.records[id]}</small>` : ''}</span></span></button>`).join('')}</div>`).join('')}
+        <span class="meta"><span class="price">${bzPreisText()}</span>${id !== 'malen' && f.records[id] ? `<small>${g.wins ? 'Siege' : 'Rekord'}: ${f.records[id]}</small>` : ''}</span></span></button>`).join('')}</div>`).join('')}
       ${pqArcadeHTML()}${typeof paArcadeHTML === 'function' ? paArcadeHTML() : ''}
       <section class="card"><h2>So bekommst du Münzen</h2>
-        <ul class="howto"><li>⭐ Für jeden Stern beim Lernen gibt es <b>1 Münze</b>.</li><li>🎯 Tagesziel geschafft: <b>+3 Münzen</b>.</li><li>🎲 Die Bonus-Sterne aus dem Tagesmix zählen auch.</li>${typeof spzOn === 'function' && spzOn() ? `<li>🕹️ Pixel-Welt und Comic-Stadt: <b>${spzMin()} Minuten</b> Spielzeit für ${plural(spzPreis(), 'Münze', 'Münzen')}.</li>` : ''}</ul></section>
+        <ul class="howto"><li>⭐ Für jeden Stern beim Lernen gibt es <b>1 Münze</b>.</li><li>🎯 Tagesziel geschafft: <b>+3 Münzen</b>.</li><li>🎲 Die Bonus-Sterne aus dem Tagesmix zählen auch.</li>${bzZeit() ? `<li>⏱️ Für ${plural(spzPreis(), 'Münze', 'Münzen')} gibt es <b>${spzMin()} Minuten</b> Spielzeit für alle Spiele.</li>` : bzMuenzen() ? `<li>🕹️ Ein Spiel kostet ${plural(funPrice(), 'Münze', 'Münzen')}, eine Runde dauert höchstens ${BZ_RUNDE_MIN} Minuten.</li>` : ''}</ul></section>
     </main>`);
 }
 function funAsk(id) {
   const block = funBlock(); if (block) { showArcade(); return; }
+  if (bzFrei() || bzZeit()) { closeOverlay(); Sound.unlock(); spzGate(() => showFunGame(id)); return; }
   const g = FUN_GAMES[id];
   overlay(`<div style="font-size:64px;line-height:1">${g.i}</div><h2>${g.t}</h2><p class="muted">${esc(funD(g))}</p>
     ${typeof wegTicket === 'function' && wegTicket() ? '<p><b>🎟️ Mit deinem Freispiel-Ticket kostet das nichts!</b></p>' : `<p><b>Das kostet ${plural(funPrice(), 'Münze', 'Münzen')}.</b> Du hast ${S.coins}.</p>`}
@@ -28023,6 +28036,7 @@ function funAsk(id) {
 function funPlay(id) {
   closeOverlay();
   if (funBlock()) { showArcade(); return; }
+  if (bzFrei() || bzZeit()) { save(); Sound.unlock(); spzGate(() => showFunGame(id)); return; }
   if (typeof wegTicket === 'function' && wegTicket()) wegUseTicket(); else { S.coins -= funPrice(); funToday().count++; }
   save(); Sound.unlock();
   showFunGame(id);
@@ -28058,7 +28072,7 @@ function funEnd(text) {
   setView(`<div class="result">${mascot(happy ? 'wow' : result === 'lose' ? 'oops' : 'happy')}
     <h1>${head}</h1>${line}
     <div class="pills"><span class="pill gold">🪙 ${plural(S.coins || 0, 'Münze', 'Münzen')} übrig</span></div>
-    <div class="res-actions">${again ? `<button class="btn" data-act="funask" data-f="${id}">Nochmal für 🪙 ${funPrice()}</button>` : ''}<button class="btn ghost" data-act="arcade">Zur Spielhalle</button><button class="btn ghost" data-act="home">Weiter lernen</button></div>
+    <div class="res-actions">${again ? `<button class="btn" data-act="funask" data-f="${id}">${bzMuenzen() || bzModus() === 'alt' ? `Nochmal für 🪙 ${funPrice()}` : 'Nochmal spielen'}</button>` : ''}<button class="btn ghost" data-act="arcade">Zur Spielhalle</button><button class="btn ghost" data-act="home">Weiter lernen</button></div>
   </div>`);
   if (happy) { confetti(); Sound.win(); } else Sound.good();
 }
@@ -81043,7 +81057,14 @@ function fxMatchPluralES(ctx) { const pick = R.sample(FX_ES_PL, 4); return mkMat
 
 
 
-function spzOn() { return S.settings.spzOn !== false && !window.LW_SZ_AUS; }
+
+
+const BZ_RUNDE_MIN = 10;
+function bzFrei() { return !!S && !!S.settings && S.settings.frei === dayKey(); }
+function bzModus() { if (window.LW_SZ_AUS) return 'alt'; return S.settings.bezahl === 'muenzen' ? 'muenzen' : 'zeit'; }
+function bzZeit() { return !bzFrei() && bzModus() === 'zeit'; }
+function bzMuenzen() { return !bzFrei() && bzModus() === 'muenzen'; }
+function spzOn() { return bzZeit(); }
 function spzPreis() { return S.settings.spzPrice || 5; }
 function spzMin() { return S.settings.spzMin || 10; }
 function spzMax() { return S.settings.spzMax === 0 ? Infinity : (S.settings.spzMax || 30); }
@@ -81056,11 +81077,13 @@ function spzS() {
 const spzFmt = s => s > 60 ? `${Math.ceil(s / 60)} Min.` : `${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`;
 function spzVoll() { return spzS().used >= spzMax() * 60; }
 function spzKannKaufen() { return !spzVoll() && (S.coins || 0) >= spzPreis(); }
+const bzTicket = () => typeof wegTicket === 'function' && wegTicket();
 let SPZ_GO = null, SPZ_PAUSE = null;
 
 
 function spzGate(go) {
-  if (!spzOn()) return go();
+  if (bzFrei() || bzModus() === 'alt') return go();
+  if (bzModus() === 'muenzen') { if (bzRunde()) return go(); SPZ_GO = go; return bzRundeFrage(); }
   const z = spzS();
   if (z.left > 0 && !spzVoll()) return go();
   SPZ_GO = go; spzFrage();
@@ -81074,13 +81097,18 @@ function spzFrage() {
       <div class="acts"><button class="btn" data-act="spzlernen">Zur Lernwelt</button></div>`);
     return;
   }
+  if (bzTicket()) {
+    overlay(`<div class="spz-ic" aria-hidden="true">🎟️</div><h2>Freispiel-Ticket!</h2><p>Mit deinem Ticket aus dem Tagesweg bekommst du <b>${spzMin()} Minuten</b> Spielzeit geschenkt.</p>
+      <div class="acts"><button class="btn" data-act="spzticket">Ticket einlösen 🎟️</button><button class="btn ghost" data-act="closeov">Später</button></div>`);
+    return;
+  }
   if (fehlt > 0) {
     overlay(`${kopf}<h2>Erst lernen, dann spielen</h2><p>${spzMin()} Minuten Spielzeit kosten <b>🪙 ${spzPreis()}</b>. Dir ${fehlt === 1 ? 'fehlt' : 'fehlen'} noch <b>${plural(fehlt, 'Münze', 'Münzen')}</b>.</p>
       <p class="muted">Jeder Stern beim Lernen bringt eine Münze, das Tagesziel 3 extra.</p>
       <div class="acts"><button class="btn" data-act="spzmix">🎲 Jetzt lernen</button><button class="btn ghost" data-act="closeov">Später</button></div>`);
     return;
   }
-  overlay(`${kopf}<h2>Spielzeit kaufen?</h2><p><b>${spzMin()} Minuten</b> in der Pixel-Welt und Comic-Stadt kosten <b>🪙 ${spzPreis()}</b>. Du hast ${plural(coins, 'Münze', 'Münzen')}.</p>
+  overlay(`${kopf}<h2>Spielzeit kaufen?</h2><p><b>${spzMin()} Minuten</b> Spielzeit kosten <b>🪙 ${spzPreis()}</b>. Damit kannst du jedes Spiel spielen. Du hast ${plural(coins, 'Münze', 'Münzen')}.</p>
     <p class="muted">Die Uhr läuft nur, solange ein Spiel offen ist. Aufgaben im Spiel zählen nicht mit, da kannst du in Ruhe nachdenken.</p>
     <div class="acts"><button class="btn" data-act="spzkauf">Ja, los! 🪙</button><button class="btn ghost" data-act="closeov">Lieber erst lernen</button></div>`);
 }
@@ -81090,13 +81118,50 @@ function spzKauf() {
   try { Sound.good(); } catch (e) { }
   return true;
 }
+function spzTicketEinloesen() { if (!bzTicket() || spzVoll()) return false; wegUseTicket(); spzS().left += spzMin() * 60; save(); try { Sound.good(); } catch (e) { } return true; }
+
+
+function bzRunde() { const z = spzS(); return !!z.rundeBis && Date.now() < z.rundeBis; }
+function bzRundeFrage() {
+  const block = funBlock(), kopf = `<div class="spz-ic" aria-hidden="true">🪙</div>`;
+  if (block) { overlay(`${kopf}<h2>Erst lernen, dann spielen</h2><p>${esc(block)}</p><div class="acts"><button class="btn" data-act="spzmix">🎲 Jetzt lernen</button><button class="btn ghost" data-act="closeov">Später</button></div>`); return; }
+  overlay(`${kopf}<h2>Eine Spielrunde?</h2><p>${bzTicket() ? '<b>Mit deinem Freispiel-Ticket kostet das nichts!</b>' : `Eine Spielrunde kostet <b>🪙 ${funPrice()}</b>. Du hast ${plural(S.coins || 0, 'Münze', 'Münzen')}.`}</p>
+    <p class="muted">Eine Runde dauert ${BZ_RUNDE_MIN} Minuten. Aufgaben im Spiel zählen nicht mit.</p>
+    <div class="acts"><button class="btn" data-act="bzrunde">${bzTicket() ? 'Ja, los! 🎟️' : 'Ja, los! 🪙'}</button><button class="btn ghost" data-act="closeov">Lieber nicht</button></div>`);
+}
+function bzRundeKauf() {
+  if (funBlock()) return false;
+  if (bzTicket()) wegUseTicket(); else { S.coins -= funPrice(); funToday().count++; }
+  const z = spzS(); z.rundeBis = Date.now() + BZ_RUNDE_MIN * 60000; z.rundePause = 0; save();
+  try { Sound.good(); } catch (e) { }
+  return true;
+}
+function bzRundeAus() {
+  if (typeof PXR !== 'undefined' && PXR) { SPZ_PAUSE = { run: PXR, was: PXR.paused }; PXR.paused = true; PXR.keys = {}; }
+  spzS().rundeBis = 0; save();
+  const mehr = !funBlock();
+  overlay(`<div class="spz-ic" aria-hidden="true">⏰</div><h2>Die Spielrunde ist vorbei!</h2>
+    <p>${mehr ? 'Jetzt ist wieder Lernzeit. Mit neuen Sternen sammelst du Münzen für die nächste Runde.' : esc(funBlock())}</p>
+    <div class="acts">${mehr ? `<button class="btn ghost" data-act="bzrundemehr">Noch eine Runde (🪙 ${funPrice()})</button>` : ''}<button class="btn" data-act="spzlernen">Zur Lernwelt</button></div>`);
+}
 
 
 function spzAktiv() {
   return !!((typeof PXR !== 'undefined' && PXR && document.querySelector('.px-root')) || (typeof CMR !== 'undefined' && CMR && document.querySelector('.cm-root')));
 }
+function bzFunAktiv() { return !!(typeof FUN !== 'undefined' && FUN && FUN.alive && document.querySelector('.fun-wrap')); }
 function spzTick() {
-  if (!S || !S.settings || !spzOn() || document.hidden || !spzAktiv()) return;
+  if (!S || !S.settings) return;
+  bzSchild();
+  if (document.hidden || bzFrei()) return;
+  const m = bzModus();
+  if (m === 'muenzen') {
+    if (!spzAktiv() || document.getElementById('overlay')) return;
+    if ((typeof PXASK !== 'undefined' && PXASK) || (typeof CMASK !== 'undefined' && CMASK)) { spzS().rundeBis += 1000; return; }
+    spzUhr(); if (!bzRunde()) bzRundeAus();
+    return;
+  }
+  if (m !== 'zeit' || !(spzAktiv() || bzFunAktiv())) return;
   if ((typeof PXASK !== 'undefined' && PXASK) || (typeof CMASK !== 'undefined' && CMASK)) return;
   if (document.getElementById('overlay')) return;
   const z = spzS();
@@ -81107,11 +81172,12 @@ function spzTick() {
   if (z.left <= 0 || spzVoll()) spzAus();
 }
 function spzUhr() {
-  const top = document.querySelector('.px-top, .cm-top'); if (!top) return;
+  const top = document.querySelector('.px-top, .cm-top, .fun-top'); if (!top) return;
   let el = top.querySelector('.spz-uhr');
-  if (!spzOn()) { if (el) el.remove(); return; }
-  if (!el) { el = document.createElement('span'); el.className = 'spz-uhr'; el.setAttribute('aria-label', 'Spielzeit'); const t = top.querySelector('.px-title, .cm-title'); if (t) t.after(el); else top.appendChild(el); }
-  const left = spzS().left, txt = `⏱️ ${spzFmt(left)}`;
+  const m = bzModus(), an = !bzFrei() && (m === 'zeit' || (m === 'muenzen' && !top.classList.contains('fun-top')));
+  if (!an) { if (el) el.remove(); return; }
+  if (!el) { el = document.createElement('span'); el.className = 'spz-uhr'; el.setAttribute('aria-label', 'Spielzeit'); const t = top.querySelector('.px-title, .cm-title, b'); if (t) t.after(el); else top.appendChild(el); }
+  const left = m === 'zeit' ? spzS().left : Math.max(0, Math.round((spzS().rundeBis - Date.now()) / 1000)), txt = `⏱️ ${spzFmt(left)}`;
   if (el.textContent !== txt) el.textContent = txt;
   el.classList.toggle('knapp', left <= 60);
 }
@@ -81127,32 +81193,52 @@ function spzEnde() {
   SPZ_PAUSE = null;
   try { if (typeof pxStop === 'function') pxStop(); } catch (e) { }
   try { if (typeof cmStop === 'function') cmStop(); } catch (e) { }
+  try { if (typeof funStop === 'function') funStop(); } catch (e) { }
+}
+
+function bzSchild() {
+  let el = document.getElementById('bzTest'); const an = bzFrei();
+  if (!an) { if (el) el.remove(); return; }
+  if (!el) { el = document.createElement('div'); el.id = 'bzTest'; el.className = 'bz-test'; el.textContent = '🧪 Testmodus: alles frei bis Mitternacht'; document.body.appendChild(el); }
 }
 
 
 function spzInfoHTML() {
-  if (!spzOn()) return '';
+  if (bzFrei()) return `<p class="spz-box on">🧪 Testmodus: Alle Spiele sind heute frei.</p>`;
+  const m = bzModus();
+  if (m === 'alt') return '';
+  if (m === 'muenzen') return bzRunde() ? `<p class="spz-box on">⏱️ Deine Spielrunde läuft noch <b>${spzFmt(Math.round((spzS().rundeBis - Date.now()) / 1000))}</b>.</p>` : `<p class="spz-box">🪙 Eine Spielrunde (${BZ_RUNDE_MIN} Minuten) kostet <b>${plural(funPrice(), 'Münze', 'Münzen')}</b>. Du hast ${plural(S.coins || 0, 'Münze', 'Münzen')}.</p>`;
   const z = spzS();
   if (spzVoll()) return `<p class="spz-box">⏱️ Für heute ist die Spielzeit aufgebraucht. Morgen geht es weiter!</p>`;
   if (z.left > 0) return `<p class="spz-box on">⏱️ Du hast noch <b>${spzFmt(z.left)}</b> Spielzeit.</p>`;
   return `<p class="spz-box">🪙 Erst lernen, dann spielen: <b>${spzMin()} Minuten</b> kosten <b>${plural(spzPreis(), 'Münze', 'Münzen')}</b>. Du hast ${plural(S.coins || 0, 'Münze', 'Münzen')}.</p>`;
 }
 function spzTagHTML() {
-  if (!spzOn()) return '';
+  if (bzFrei()) return '<em class="spz-tag">🧪 frei</em>';
+  const m = bzModus(); if (m === 'alt') return '';
+  if (m === 'muenzen') return `<em class="spz-tag">🪙 ${funPrice()} pro Runde</em>`;
   const z = spzS();
   return `<em class="spz-tag">${z.left > 0 && !spzVoll() ? `⏱️ noch ${spzFmt(z.left)}` : `🪙 ${spzPreis()} für ${spzMin()} Min.`}</em>`;
 }
+
+function bzPreisText() { if (bzFrei()) return '🧪 frei'; const m = bzModus(); if (m === 'zeit') return '⏱️ Spielzeit'; return bzTicket() ? '🎟️ frei' : '🪙 ' + funPrice(); }
 function spzParentsHTML() {
   const set = S.settings, seg = (act, vals, cur, lab) => `<div class="seg">${vals.map(k => `<button class="${k === cur ? 'sel' : ''}" data-act="${act}" data-k="${k}">${lab ? lab(k) : k}</button>`).join('')}</div>`;
-  const z = spzS();
-  return `<section class="card"><h2>Pixel-Welt und Comic-Stadt</h2>
-    <p class="muted">Erst lernen, dann spielen: Spielzeit kostet Münzen. Die Uhr läuft nur in den Spielen, Aufgaben darin zählen nicht mit. Heute gespielt: <b>${Math.round(z.used / 60)} Min.</b>, gekauft und noch übrig: <b>${Math.ceil(z.left / 60)} Min.</b></p>
-    <div class="row"><span class="lab">Spielzeit kostet Münzen<small>aus: Pixel-Welt und Comic-Stadt sind frei</small></span><button class="switch ${set.spzOn !== false ? 'on' : ''}" role="switch" aria-checked="${set.spzOn !== false}" aria-label="Spielzeit kostet Münzen" data-act="pspzon"></button></div>
+  const z = spzS(), m = set.bezahl === 'muenzen' ? 'muenzen' : 'zeit', frei = bzFrei(), f = typeof funToday === 'function' ? funToday() : { count: 0 };
+  return `<section class="card bz-karte" id="bzKarte"><h2>Spiele bezahlen</h2>
+    <p class="muted">Münzen gibt es nur fürs Lernen: 1 pro Stern, +3 fürs Tagesziel. Aktuell: 🪙 <b>${S.coins || 0}</b>. Hier stellst du ein, was es dafür gibt. Das gilt für alle Spiele: Spielhalle, Belohnungswelt, Pixel-Welt und Comic-Stadt. Party-Spiele sind immer kostenlos.</p>
+    <div class="row"><span class="lab">🧪 Testmodus: alles frei<small>keine Münzen, keine Uhr, kein Tageslimit. Geht um Mitternacht von allein aus.</small></span><button class="switch ${frei ? 'on' : ''}" role="switch" aria-checked="${frei}" aria-label="Testmodus: alles frei" data-act="pbzfrei"></button></div>
+    <div class="row"><span class="lab">Bezahlart<small>für alle Spiele</small></span>${seg('pbzmodus', ['zeit', 'muenzen'], m, k => k === 'zeit' ? '⏱️ Spielzeit' : '🪙 Pro Spiel')}</div>
+    ${m === 'zeit' ? `<p class="muted bz-stand">Spielzeit kaufen: Die Uhr läuft nur, solange ein Spiel offen ist, Aufgaben darin zählen nicht mit. Heute gespielt: <b>${Math.round(z.used / 60)} Min.</b>, gekauft und noch übrig: <b>${Math.ceil(z.left / 60)} Min.</b></p>
     <div class="row"><span class="lab">Preis<small>in Münzen</small></span>${seg('pspzprice', [3, 5, 8, 10], spzPreis())}</div>
     <div class="row"><span class="lab">Minuten pro Kauf</span>${seg('pspzmin', [5, 10, 15, 20], spzMin())}</div>
-    <div class="row"><span class="lab">Höchstens pro Tag<small>Minuten</small></span>${seg('pspzmax', [15, 30, 45, 60, 0], set.spzMax === 0 ? 0 : (set.spzMax || 30), k => k || '∞')}</div>
+    <div class="row"><span class="lab">Höchstens pro Tag<small>Minuten</small></span>${seg('pspzmax', [15, 30, 45, 60, 0], set.spzMax === 0 ? 0 : (set.spzMax || 30), k => k || '∞')}</div>`
+    : `<p class="muted bz-stand">Jedes Spiel kostet Münzen, eine Runde dauert höchstens ${BZ_RUNDE_MIN} Minuten. Heute gespielt: <b>${f.count}</b>.</p>
+    <div class="row"><span class="lab">Preis pro Spiel<small>in Münzen</small></span>${seg('pfunprice', [3, 5, 8], set.funPrice || 5)}</div>
+    <div class="row"><span class="lab">Spiele pro Tag<small>höchstens</small></span>${seg('pfunmax', [1, 2, 3, 5, 0], set.funMax === undefined ? 3 : set.funMax, k => k || '∞')}</div>`}
   </section>`;
 }
+const bzKarteNeu = () => { const k = document.getElementById('bzKarte'); if (k) k.outerHTML = spzParentsHTML(); };
 
 
 (function () {
@@ -81165,15 +81251,20 @@ function spzParentsHTML() {
   const tag = f => function () { const h = f(); return h ? h.replace('</small>', '</small>' + spzTagHTML()) : h; };
   showPixelWelt = nach(showPixelWelt, '.pxw-main'); showComicStadt = nach(showComicStadt, '.cmw-main');
   pxHomeCard = tag(pxHomeCard); cmHomeCard = tag(cmHomeCard);
+  const wahl = (k, v) => t => { S.settings[k] = v(t); save(); t.parentElement.querySelectorAll('button').forEach(b => b.classList.toggle('sel', b === t)); };
   Object.assign(ACT, {
     spzkauf: () => { const go = SPZ_GO; SPZ_GO = null; closeOverlay(); if (spzKauf() && go) go(); },
+    spzticket: () => { const go = SPZ_GO; SPZ_GO = null; closeOverlay(); if (spzTicketEinloesen() && go) go(); },
     spzmehr: () => { closeOverlay(); if (!spzKauf()) return spzAus(); const P = SPZ_PAUSE; SPZ_PAUSE = null; if (P && P.run && P.run.alive) P.run.paused = P.was; spzUhr(); },
+    bzrunde: () => { const go = SPZ_GO; SPZ_GO = null; closeOverlay(); if (bzRundeKauf() && go) go(); },
+    bzrundemehr: () => { closeOverlay(); if (!bzRundeKauf()) return bzRundeAus(); const P = SPZ_PAUSE; SPZ_PAUSE = null; if (P && P.run && P.run.alive) P.run.paused = P.was; spzUhr(); },
     spzlernen: () => { SPZ_GO = null; closeOverlay(); spzEnde(); showHome(); },
     spzmix: () => { SPZ_GO = null; closeOverlay(); spzEnde(); startMix(); },
-    pspzon: t => { S.settings.spzOn = S.settings.spzOn === false; save(); t.classList.toggle('on', S.settings.spzOn); t.setAttribute('aria-checked', S.settings.spzOn); },
-    pspzprice: t => { S.settings.spzPrice = Number(t.dataset.k); save(); t.parentElement.querySelectorAll('button').forEach(b => b.classList.toggle('sel', b === t)); },
-    pspzmin: t => { S.settings.spzMin = Number(t.dataset.k); save(); t.parentElement.querySelectorAll('button').forEach(b => b.classList.toggle('sel', b === t)); },
-    pspzmax: t => { S.settings.spzMax = Number(t.dataset.k); save(); t.parentElement.querySelectorAll('button').forEach(b => b.classList.toggle('sel', b === t)); }
+    pbzfrei: () => { S.settings.frei = bzFrei() ? '' : dayKey(); save(); bzSchild(); bzKarteNeu(); },
+    pbzmodus: t => { S.settings.bezahl = t.dataset.k; save(); bzKarteNeu(); },
+    pspzprice: wahl('spzPrice', t => Number(t.dataset.k)),
+    pspzmin: wahl('spzMin', t => Number(t.dataset.k)),
+    pspzmax: wahl('spzMax', t => Number(t.dataset.k))
   });
   setInterval(() => { try { spzTick(); } catch (e) { } }, 1000);
 })();
@@ -97218,7 +97309,8 @@ function lvAktuell(id, nw, n) { for (let w = nw - 1; w >= 0; w--) for (let l = n
 
 const LV_RUNDE_MIN = 10;
 function lvRundeStart() { if (FUN && !FUN.lvT0) FUN.lvT0 = Date.now(); }
-function lvRundeRest() { return FUN && FUN.lvT0 ? LV_RUNDE_MIN * 60000 - (Date.now() - FUN.lvT0) : LV_RUNDE_MIN * 60000; }
+function lvRundeRest() { if (typeof bzZeit === 'function' && (bzZeit() || bzFrei())) return Infinity;
+  return FUN && FUN.lvT0 ? LV_RUNDE_MIN * 60000 - (Date.now() - FUN.lvT0) : LV_RUNDE_MIN * 60000; }
 function lvKarte(box, cfg) {
   lvRundeStart();
   const akt = lvAktuell(cfg.id, cfg.welten.length, cfg.n), max = cfg.welten.length * cfg.n * 3;
@@ -100005,8 +100097,8 @@ function bsSpiel(stage) {
         return d.st(); } })
   });
 }
-FUN_GAMES.blasen = { c: 'hits', t: 'Blasen-Schießer', d: 'Zielen, loslassen, platzen lassen! Befreie die Babypinguine aus den Blasen. 20 Level von der Seifenwiese bis zum Korallenriff.', i: '🫧' };
-FUN_IMPL.blasen = bsSpiel;
+FUN_GAMES.blasenschuss = { c: 'hits', t: 'Blasen-Schießer', d: 'Zielen, loslassen, platzen lassen! Befreie die Babypinguine aus den Blasen. 20 Level von der Seifenwiese bis zum Korallenriff.', i: '🫧' };
+FUN_IMPL.blasenschuss = bsSpiel;
 
 /*@@src meer360.js@@*/
 
@@ -101465,25 +101557,26 @@ function blwSeit(t) {
 function blwStartZaehlen(key, f) { return function (...a) { try { const B = blwS(); B.n[key] = (B.n[key] || 0) + 1; save(); } catch (e) { } return f.apply(this, a); }; }
 
 function blwSpiele() {
-  const L = [], spz = typeof spzOn === 'function' && spzOn(), zeit = spz ? '⏱️ Spielzeit' : 'frei';
+  const L = [], zeit = typeof bzPreisText === 'function' ? bzPreisText() : 'frei', pxPreis = bzModus() === 'alt' ? 'frei' : zeit;
   if (S.settings.pxOn !== false && typeof PX_GAMES !== 'undefined') PX_GAMES.forEach(g => {
     if (!g.__blw && typeof g.start === 'function') { g.start = blwStartZaehlen('px:' + g.id, g.start); g.__blw = 1; }
     let pr = ''; try { pr = g.prog ? g.prog() : ''; } catch (e) { }
-    L.push({ key: 'px:' + g.id, t: g.t, d: g.d || '', art: BLW_PX_ART[g.tag] || 'geschick', ico: `<img src="${pxSprURL(g.i || 'lumi_i_0', 4)}" alt="" draggable="false">`, act: `data-act="pxgo" data-g="${g.id}"`, preis: zeit, pr });
+    L.push({ key: 'px:' + g.id, t: g.t, d: g.d || '', art: BLW_PX_ART[g.tag] || 'geschick', ico: `<img src="${pxSprURL(g.i || 'lumi_i_0', 4)}" alt="" draggable="false">`, act: `data-act="pxgo" data-g="${g.id}"`, preis: pxPreis, pr });
   });
   if (S.settings.funOn !== false && typeof FUN_GAMES !== 'undefined') {
     const f = funToday(), block = funBlock(), tick = typeof wegTicket === 'function' && wegTicket();
     Object.entries(FUN_GAMES).forEach(([id, g]) => L.push({ key: 'fun:' + id, t: g.t, seit: g.seit, d: funD(g), art: BLW_FUN_ID[id] || BLW_FUN_ART[g.c] || 'geschick', ico: `<span class="blw-emo">${g.i}</span>`,
-      act: `data-act="funask" data-f="${id}"${block ? ' aria-disabled="true"' : ''}`, preis: tick ? '🎟️ frei' : '🪙 ' + funPrice(), pr: id !== 'malen' && f.records[id] ? `${g.wins ? 'Siege' : 'Rekord'}: ${f.records[id]}` : '' }));
+      act: `data-act="funask" data-f="${id}"${block ? ' aria-disabled="true"' : ''}`, preis: bzModus() === 'alt' ? (tick ? '🎟️ frei' : '🪙 ' + funPrice()) : zeit, pr: id !== 'malen' && f.records[id] ? `${g.wins ? 'Siege' : 'Rekord'}: ${f.records[id]}` : '' }));
   }
   if (S.settings.cmOn !== false && typeof CM_GAMES !== 'undefined') CM_GAMES.forEach(g => {
     if (!g.__blw && typeof g.start === 'function') { g.start = blwStartZaehlen('cm:' + g.id, g.start); g.__blw = 1; }
     let pr = ''; try { pr = g.prog ? g.prog() : ''; } catch (e) { }
-    L.push({ key: 'cm:' + g.id, t: g.t, d: g.d || '', art: 'lernen', ico: `<span class="blw-emo">${BLW_CM_ICO[g.id] || '💬'}</span>`, act: `data-act="cmgo" data-g="${g.id}"`, preis: zeit, pr });
+    L.push({ key: 'cm:' + g.id, t: g.t, d: g.d || '', art: 'lernen', ico: `<span class="blw-emo">${BLW_CM_ICO[g.id] || '💬'}</span>`, act: `data-act="cmgo" data-g="${g.id}"`, preis: pxPreis, pr });
   });
   if (typeof showFabel === 'function') L.push({ key: 'fabel', t: 'Lumis Fabelwesen', seit: 'Fabelwesen', d: 'Eier ausbrüten, Wesen sammeln und mit Aufgaben kämpfen', art: 'abenteuer', ico: '<span class="blw-emo">🥚</span>', act: 'data-act="fwhub"', preis: '📚 mit Aufgaben', pr: '' });
   if (typeof pqArcadeHTML === 'function') L.push({ key: 'party:quiz', t: 'Party-Quiz', d: 'Für 2 bis 10 Kinder: reihum oder alle gleichzeitig', art: 'party', ico: '<span class="blw-emo">🎉</span>', act: 'data-act="party"', preis: 'kostenlos', pr: '' });
-  if (typeof paArcadeHTML === 'function' && typeof PA_G !== 'undefined') L.push({ key: 'party:spiele', t: 'Party-Spiele', d: `${PA_G.length} Spiele für 2 bis 8 Kinder an einem iPad`, art: 'party', ico: '<span class="blw-emo">🎈</span>', act: 'data-act="pahub"', preis: 'kostenlos', pr: '' });
+
+  if (typeof paArcadeHTML === 'function' && typeof PA_G !== 'undefined') PA_G.forEach(g => L.push({ key: 'party:' + g.id, t: g.t, d: `${g.d} · ${g.min} bis ${g.max} Kinder`, art: 'party', ico: `<span class="blw-emo">${g.e}</span>`, act: `data-act="paopen" data-g="${g.id}"`, preis: 'kostenlos', pr: '' }));
   const B = blwS();
   L.forEach(e => { const s = blwSeit(e.seit || e.t); e.k = s.k; e.jung = s.tage <= BLW_NEU_TAGE; e.n = B.n[e.key] || 0; e.herz = B.h.includes(e.key); });
   L.filter(e => e.jung).sort(blwNeuSort).slice(0, BLW_NEU_MAX).forEach(e => { e.neu = true; });
@@ -101523,8 +101616,11 @@ function blwNavHTML(L) {
 function blwInfoHTML() {
   if (S.settings.funOn === false || typeof funToday !== 'function') return '';
   const f = funToday(), block = funBlock(), max = funMax(), tick = typeof wegTicket === 'function' && wegTicket();
-  return `<p class="blw-info">🪙 <b>${plural(S.coins || 0, 'Münze', 'Münzen')}</b> · Spiele mit 🪙 kosten je ${plural(funPrice(), 'Münze', 'Münzen')}, heute ${f.count}${max === Infinity ? '' : ` von ${max}`} gespielt${typeof spzOn === 'function' && spzOn() ? ' · Spiele mit ⏱️ brauchen Spielzeit' : ''}</p>
-    ${tick ? '<p class="notice-box ticket-box">🎟️ Du hast ein Freispiel-Ticket, dein nächstes Spiel mit 🪙 kostet nichts!</p>' : ''}${block ? `<p class="notice-box blw-block">${esc(block)}</p>` : ''}`;
+  const m = bzModus(), z = spzS(), frei = bzFrei();
+  const txt = frei ? '🧪 Testmodus: Heute sind alle Spiele frei.' : m === 'zeit' ? `${z.left > 0 && !spzVoll() ? `⏱️ Du hast noch <b>${spzFmt(z.left)}</b> Spielzeit` : `${spzMin()} Minuten Spielzeit kosten ${plural(spzPreis(), 'Münze', 'Münzen')}`} · heute gespielt: ${Math.round(z.used / 60)} Min.`
+    : `Ein Spiel kostet ${plural(funPrice(), 'Münze', 'Münzen')}, heute ${f.count}${max === Infinity ? '' : ` von ${max}`} gespielt`;
+  return `<p class="blw-info">🪙 <b>${plural(S.coins || 0, 'Münze', 'Münzen')}</b> · ${txt} · Party-Spiele sind kostenlos</p>
+    ${tick && !frei ? `<p class="notice-box ticket-box">🎟️ Du hast ein Freispiel-Ticket, ${m === 'zeit' ? `damit bekommst du ${spzMin()} Minuten Spielzeit geschenkt` : 'dein nächstes Spiel kostet nichts'}!</p>` : ''}${block ? `<p class="notice-box blw-block">${esc(block)}</p>` : ''}`;
 }
 function blwInhalt() {
   const box = document.getElementById('blwInhalt'); if (!box) return;
@@ -101567,8 +101663,9 @@ if (typeof cmHomeCard === 'function') cmHomeCard = () => '';
 
 if (typeof showComicStadt === 'function') showComicStadt = function () { showPixelWelt(); setTimeout(() => { const el = document.getElementById('blwArt-lernen'); if (el) el.scrollIntoView({ block: 'start' }); }, 30); };
 
-if (typeof funPlay === 'function') { const fp = funPlay; funPlay = function (id, ...a) { const vorher = S.coins, t = typeof wegTicket === 'function' && wegTicket(); const r = fp.call(this, id, ...a); try { if (S.coins !== vorher || (t && !(typeof wegTicket === 'function' && wegTicket()))) { const B = blwS(); B.n['fun:' + id] = (B.n['fun:' + id] || 0) + 1; save(); } } catch (e) { } return r; }; }
-['fwhub', 'party', 'pahub'].forEach(k => { if (ACT[k]) ACT[k] = blwStartZaehlen(k === 'fwhub' ? 'fabel' : k === 'party' ? 'party:quiz' : 'party:spiele', ACT[k]); });
+if (typeof showFunGame === 'function') { const sf = showFunGame; showFunGame = function (id, ...a) { try { const B = blwS(); B.n['fun:' + id] = (B.n['fun:' + id] || 0) + 1; save(); } catch (e) { } return sf.call(this, id, ...a); }; }
+['fwhub', 'party'].forEach(k => { if (ACT[k]) ACT[k] = blwStartZaehlen(k === 'fwhub' ? 'fabel' : 'party:quiz', ACT[k]); });
+if (ACT.pago) { const pg = ACT.pago; ACT.pago = t => { try { const B = blwS(), k = 'party:' + t.dataset.g; B.n[k] = (B.n[k] || 0) + 1; save(); } catch (e) { } return pg(t); }; }
 Object.assign(ACT, {
   blwzu: t => { Sound.tap(); blwSprung(t.dataset.z); },
   blwelt: () => { Sound.unlock(); Sound.tap(); showPixelWelt(); },
