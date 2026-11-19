@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-c6lO3Id1r0DBmCf9w3ZpnkCavSDLp4KA/sccVJ8Ya8I=' 'sha256-fHqJppkZ6Ta8AigVnZr4VRos+Ja4BoULi2EXCcm6VsU=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-xmrCQg8NLSJSiIf5XrxuI9lgemm8pUqNrBRFBCWuU14=' 'sha256-y0P3T7nUlW9qTXD2v5gqLO11ZkTLjC8/3C0tAcod080=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -2971,6 +2971,22 @@ body.calm .mu-parade, body.calm .mu-jar2, body.calm .mu-fly, body.calm .mu-moon 
 .off-flug summary { font-weight: 800; cursor: pointer; }
 .off-flug ol { margin: 8px 0; padding-left: 22px; display: grid; gap: 6px; }
 .off-flug p { margin: 4px 0 0; }
+
+/* ---- style_ab3400.css ---- */
+
+.fun-stage > .ab3-ov { position: absolute; inset: 0; z-index: 5; display: flex; align-items: center; justify-content: center; padding: 14px; background: rgba(10, 20, 45, .5); }
+.ab3-frage { width: min(520px, 100%); max-height: 100%; overflow-y: auto; background: #ffffff; color: #12324a; border-radius: 22px; padding: 16px 18px 14px; box-shadow: 0 18px 50px rgba(0, 0, 0, .35); text-align: center; }
+.ab3-fh { display: flex; align-items: center; justify-content: center; gap: 10px; font-weight: 800; font-size: 1.05rem; color: #5a3fb0; }
+.ab3-say { border: 0; background: #eef2ff; border-radius: 12px; font-size: 1.1rem; padding: 4px 10px; cursor: pointer; }
+.ab3-fe { font-size: 2.2rem; margin: 6px 0 2px; }
+.ab3-fq { font-size: 1.45rem; font-weight: 800; margin: 8px 0 12px; line-height: 1.3; }
+.ab3-opts { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+.ab3-opts.n3 { grid-template-columns: repeat(3, 1fr); }
+.ab3-opt { min-height: 54px; border: 0; border-radius: 16px; background: #eef4fb; color: #12324a; font: inherit; font-size: 1.25rem; font-weight: 800; cursor: pointer; box-shadow: 0 3px 0 #c9d6e6; }
+.ab3-opt:active { transform: translateY(2px); box-shadow: 0 1px 0 #c9d6e6; }
+.ab3-opt.ok { background: #5cc85c; color: #ffffff; box-shadow: 0 3px 0 #3f9a3f; }
+.ab3-opt.no { background: #ef6b6b; color: #ffffff; box-shadow: 0 3px 0 #c44a4a; }
+.ab3-fb { min-height: 1.5em; margin-top: 10px; font-weight: 700; }
 
 /* ---- style_advent.css ---- */
 
@@ -10502,8 +10518,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '3.9.0';
-  var MAP = {"probe":0,"files":[[10492,"fehler_kern.js"],[10780,null],[10782,"data.js"],[11497,"data_more.js"],[11869,"data_su2.js"],[12096,"data_es.js"],[12464,"data_wissen.js"],[12665,"data_v21.js"],[13350,"data_v24.js"],[13838,"data_v25.js"],[14327,"data_v26.js"],[14426,"data_v29.js"],[14734,"data_v30.js"],[15068,"data_v31.js"],[15374,"data_kunst.js"],[15571,"data_v214.js"],[15674,"data_v216.js"],[15967,"schrift.js"],[16271,"eingabe.js"],[16482,"data_k34m.js"],[17000,"data_k34d.js"],[17354,"data_k34s.js"],[17808,"data_v224.js"],[18681,"data_v225w.js"],[19050,"data_v225k.js"],[19494,"data_herz.js"],[19848,"data_fb226.js"],[19991,"data_tf226.js"],[20198,"data_v227a.js"],[21298,"data_v227b.js"],[22252,"data_h28b.js"],[22292,"data_l28a.js"],[23158,"data_l28b.js"],[24338,"data_schaetz.js"],[24820,"data_party8.js"],[24870,"data_alce.js"],[25541,"data_alce2.js"],[25790,"data_alce3.js"],[26205,"registry.js"],[26719,"app.js"],[27974,"fun.js"],[28562,"fun2.js"],[28878,"atelier.js"],[29252,"kunst225.js"],[29442,"herz.js"],[29806,"reise.js"],[30108,"iglu.js"],[30274,"offline.js"],[30381,"party.js"],[30865,"meine.js"],[31221,"loeffel.js"],[31392,"trend.js"],[31934,"fun228a.js"],[32795,"fun228b.js"],[33472,"kueche.js"],[34511,"stimme.js"],[34566,"klassen.js"],[34715,"freunde_vorab.js"],[34736,"mut.js"],[35158,"schule.js"],[35647,"fussball226.js"],[35969,"schaetzen.js"],[36400,"party8.js"],[37019,"tiere.js"],[37478,"fussball232.js"],[37693,"party8b.js"],[37995,"weg.js"],[38216,"px.js"],[38636,"px_fein.js"],[38690,"px_data.js"],[38947,"pxwelt.js"],[39031,"px_abenteuer.js"],[39860,"px_abenteuer2.js"],[40614,"px_abenteuer3.js"],[41005,"px_abenteuer4.js"],[41215,"px_baukasten.js"],[41324,"px_abenteuer_fein.js"],[41541,"px_abenteuer_fein2.js"],[41893,"px_abenteuer5.js"],[42300,"px_abenteuer6.js"],[42576,"px_abenteuer7.js"],[42932,"px_level300.js"],[43483,"px_schwach300.js"],[43557,"px_zwei300.js"],[43671,"lumicheckt300.js"],[43864,"schreiben300.js"],[44078,"rechenkarte300.js"],[44198,"lerncheck300.js"],[44421,"material300.js"],[44751,"lernweg300.js"],[45275,"px_ski.js"],[45917,"px_wurf.js"],[46446,"px_insel.js"],[47647,"px_kicker.js"],[48582,"px_eis.js"],[49568,"px_run.js"],[50783,"px_brk.js"],[51745,"px_pol.js"],[53096,"px_frog.js"],[54356,"px_angel.js"],[55671,"px_golf.js"],[56705,"px_tauch.js"],[57970,"px_hockey.js"],[58926,"px_lab.js"],[60261,"px_plopp.js"],[61467,"px_stadion.js"],[62978,"px_stadion2.js"],[63030,"px_training.js"],[63399,"cm.js"],[63889,"cmwelt.js"],[63945,"cm_baeck.js"],[64738,"cm_bahn.js"],[65502,"cm_detek.js"],[66219,"cm_markt.js"],[66932,"ff.js"],[67089,"ff_mathe.js"],[69079,"ff_deutsch.js"],[70667,"ff_sach_a.js"],[72916,"ff_sach_b.js"],[75145,"ff_sprachen.js"],[77553,"zm.js"],[78466,"tt.js"],[78679,"data_tagebuch.js"],[78722,"data_hoerspiel.js"],[78881,"leseecke.js"],[79208,"kt.js"],[79511,"comicbuch.js"],[79789,"alce.js"],[79952,"alce_aufg.js"],[80143,"formen.js"],[80594,"data_formen.js"],[80835,"data_formen2.js"],[81057,"spielzeit.js"],[81279,"data_faktmeinung.js"],[81398,"data_es248.js"],[81662,"data_en249.js"],[81901,"data_wissen249.js"],[82332,"data_kunst249.js"],[82615,"data_fussball250.js"],[82739,"data_werte252.js"],[82992,"data_lesen252.js"],[83053,"data_k34_252.js"],[83139,"art254.js"],[83257,"data_werte255.js"],[83395,"data_lesen255.js"],[83531,"forscher255.js"],[83679,"zufall250.js"],[83725,"stufe259.js"],[83735,"advent.js"],[83998,"wdh.js"],[84096,"eswarm288.js"],[84147,"abwechslung294.js"],[84222,"bilder293a.js"],[84312,"bilder293b.js"],[84442,"bilder293c.js"],[84540,"bilder293d.js"],[84662,"bilder293e.js"],[84826,"bilder293f.js"],[84906,"bilder292.js"],[85352,"denk.js"],[85389,"data_viaje265.js"],[85532,"klassenarbeit.js"],[85665,"quizduell.js"],[85788,"neu267.js"],[86053,"prog.js"],[86158,"lernstand.js"],[86225,"blatt.js"],[86327,"uebung295.js"],[86648,"schuh296.js"],[86856,"uebung297.js"],[87243,"minus298.js"],[87484,"schrift299.js"],[87612,"data_es271.js"],[87726,"plus269.js"],[87820,"schach.js"],[88052,"schachtaktik.js"],[88304,"fun270.js"],[88467,"data_neu274.js"],[88676,"plus272.js"],[88730,"spiele274.js"],[88853,"kasten.js"],[88957,"erklaer.js"],[89070,"apa.js"],[89151,"neu276.js"],[89292,"spiele276.js"],[89342,"neu277.js"],[89520,"spiele277.js"],[89775,"lernen278.js"],[90035,"spiele278.js"],[90378,"lernen279.js"],[90703,"lernen279b.js"],[91101,"spanisch280.js"],[91393,"spanisch283.js"],[91626,"mehr281.js"],[91772,"grafik280.js"],[92151,"tiefsee280.js"],[92429,"abenteuer280.js"],[92641,"abenteuer281.js"],[92753,"design281.js"],[92885,"party281.js"],[93016,"grafik281.js"],[93233,"traumtor292.js"],[93440,"kart293.js"],[93717,"lumi_live.js"],[93833,"sicher.js"],[94017,"stil.js"],[94071,"zurueck287.js"],[94114,"nfbilder300.js"],[94277,"formen300.js"],[94884,"musik300.js"],[95055,"lernweg300b.js"],[95178,"lernweg300c.js"],[95338,"espanol300.js"],[95444,"fabel310_bild.js"],[95695,"fabel310.js"],[96086,"eisbude310.js"],[96312,"turbo310.js"],[96517,"sumo310.js"],[96652,"beifahrer310.js"],[96727,"dreier310.js"],[96843,"ring310.js"],[96952,"loch330.js"],[97302,"reise340.js"],[97372,"fisch340.js"],[97928,"rutsche340.js"],[98339,"knobel340.js"],[98577,"frucht350.js"],[98882,"vulkan350.js"],[99125,"delfin350.js"],[99320,"musik350.js"],[99490,"arcade360.js"],[99606,"strasse360.js"],[99902,"blasen360.js"],[100110,"meer360.js"],[100279,"spirale360.js"],[100443,"sterne360.js"],[100650,"alt360a.js"],[100920,"alt360b.js"],[101113,"alt360c.js"],[101367,"alt360d.js"],[101530,"alt370a.js"],[101727,"alt370b.js"],[101931,"alt370c.js"],[102069,"gl390.js"],[102306,"lauf390.js"],[102815,"belohnung311.js"],[102976,"druck311.js"],[103070,"freunde.js"],[103207,"start.js"],[103217,null],[103227,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '4.0.0';
+  var MAP = {"probe":0,"files":[[10508,"fehler_kern.js"],[10796,null],[10798,"data.js"],[11513,"data_more.js"],[11885,"data_su2.js"],[12112,"data_es.js"],[12480,"data_wissen.js"],[12681,"data_v21.js"],[13366,"data_v24.js"],[13854,"data_v25.js"],[14343,"data_v26.js"],[14442,"data_v29.js"],[14750,"data_v30.js"],[15084,"data_v31.js"],[15390,"data_kunst.js"],[15587,"data_v214.js"],[15690,"data_v216.js"],[15983,"schrift.js"],[16287,"eingabe.js"],[16498,"data_k34m.js"],[17016,"data_k34d.js"],[17370,"data_k34s.js"],[17824,"data_v224.js"],[18697,"data_v225w.js"],[19066,"data_v225k.js"],[19510,"data_herz.js"],[19864,"data_fb226.js"],[20007,"data_tf226.js"],[20214,"data_v227a.js"],[21314,"data_v227b.js"],[22268,"data_h28b.js"],[22308,"data_l28a.js"],[23174,"data_l28b.js"],[24354,"data_schaetz.js"],[24836,"data_party8.js"],[24886,"data_alce.js"],[25557,"data_alce2.js"],[25806,"data_alce3.js"],[26221,"registry.js"],[26735,"app.js"],[27991,"fun.js"],[28579,"fun2.js"],[28895,"atelier.js"],[29269,"kunst225.js"],[29459,"herz.js"],[29823,"reise.js"],[30125,"iglu.js"],[30291,"offline.js"],[30398,"party.js"],[30882,"meine.js"],[31238,"loeffel.js"],[31409,"trend.js"],[31951,"fun228a.js"],[32812,"fun228b.js"],[33489,"kueche.js"],[34528,"stimme.js"],[34583,"klassen.js"],[34732,"freunde_vorab.js"],[34753,"mut.js"],[35175,"schule.js"],[35664,"fussball226.js"],[35986,"schaetzen.js"],[36417,"party8.js"],[37036,"tiere.js"],[37495,"fussball232.js"],[37710,"party8b.js"],[38012,"weg.js"],[38233,"px.js"],[38653,"px_fein.js"],[38707,"px_data.js"],[38964,"pxwelt.js"],[39048,"px_abenteuer.js"],[39877,"px_abenteuer2.js"],[40631,"px_abenteuer3.js"],[41022,"px_abenteuer4.js"],[41232,"px_baukasten.js"],[41341,"px_abenteuer_fein.js"],[41558,"px_abenteuer_fein2.js"],[41910,"px_abenteuer5.js"],[42317,"px_abenteuer6.js"],[42593,"px_abenteuer7.js"],[42949,"px_level300.js"],[43500,"px_schwach300.js"],[43574,"px_zwei300.js"],[43688,"lumicheckt300.js"],[43881,"schreiben300.js"],[44095,"rechenkarte300.js"],[44215,"lerncheck300.js"],[44438,"material300.js"],[44768,"lernweg300.js"],[45292,"px_ski.js"],[45934,"px_wurf.js"],[46463,"px_insel.js"],[47664,"px_kicker.js"],[48599,"px_eis.js"],[49585,"px_run.js"],[50800,"px_brk.js"],[51762,"px_pol.js"],[53113,"px_frog.js"],[54373,"px_angel.js"],[55688,"px_golf.js"],[56722,"px_tauch.js"],[57987,"px_hockey.js"],[58943,"px_lab.js"],[60278,"px_plopp.js"],[61484,"px_stadion.js"],[62995,"px_stadion2.js"],[63047,"px_training.js"],[63416,"cm.js"],[63906,"cmwelt.js"],[63962,"cm_baeck.js"],[64755,"cm_bahn.js"],[65519,"cm_detek.js"],[66236,"cm_markt.js"],[66949,"ff.js"],[67106,"ff_mathe.js"],[69096,"ff_deutsch.js"],[70684,"ff_sach_a.js"],[72933,"ff_sach_b.js"],[75162,"ff_sprachen.js"],[77570,"zm.js"],[78483,"tt.js"],[78696,"data_tagebuch.js"],[78739,"data_hoerspiel.js"],[78898,"leseecke.js"],[79225,"kt.js"],[79528,"comicbuch.js"],[79806,"alce.js"],[79969,"alce_aufg.js"],[80160,"formen.js"],[80611,"data_formen.js"],[80852,"data_formen2.js"],[81074,"spielzeit.js"],[81296,"data_faktmeinung.js"],[81415,"data_es248.js"],[81679,"data_en249.js"],[81918,"data_wissen249.js"],[82349,"data_kunst249.js"],[82632,"data_fussball250.js"],[82756,"data_werte252.js"],[83009,"data_lesen252.js"],[83070,"data_k34_252.js"],[83156,"art254.js"],[83274,"data_werte255.js"],[83412,"data_lesen255.js"],[83548,"forscher255.js"],[83696,"zufall250.js"],[83742,"stufe259.js"],[83752,"advent.js"],[84015,"wdh.js"],[84113,"eswarm288.js"],[84164,"abwechslung294.js"],[84239,"bilder293a.js"],[84329,"bilder293b.js"],[84459,"bilder293c.js"],[84557,"bilder293d.js"],[84679,"bilder293e.js"],[84843,"bilder293f.js"],[84923,"bilder292.js"],[85369,"denk.js"],[85406,"data_viaje265.js"],[85549,"klassenarbeit.js"],[85682,"quizduell.js"],[85805,"neu267.js"],[86070,"prog.js"],[86175,"lernstand.js"],[86242,"blatt.js"],[86344,"uebung295.js"],[86665,"schuh296.js"],[86873,"uebung297.js"],[87260,"minus298.js"],[87501,"schrift299.js"],[87629,"data_es271.js"],[87743,"plus269.js"],[87837,"schach.js"],[88069,"schachtaktik.js"],[88321,"fun270.js"],[88484,"data_neu274.js"],[88693,"plus272.js"],[88747,"spiele274.js"],[88870,"kasten.js"],[88974,"erklaer.js"],[89087,"apa.js"],[89168,"neu276.js"],[89309,"spiele276.js"],[89359,"neu277.js"],[89537,"spiele277.js"],[89792,"lernen278.js"],[90052,"spiele278.js"],[90395,"lernen279.js"],[90720,"lernen279b.js"],[91118,"spanisch280.js"],[91410,"spanisch283.js"],[91643,"mehr281.js"],[91789,"grafik280.js"],[92168,"tiefsee280.js"],[92446,"abenteuer280.js"],[92658,"abenteuer281.js"],[92770,"design281.js"],[92902,"party281.js"],[93033,"grafik281.js"],[93250,"traumtor292.js"],[93457,"kart293.js"],[93734,"lumi_live.js"],[93850,"sicher.js"],[94034,"stil.js"],[94088,"zurueck287.js"],[94131,"nfbilder300.js"],[94294,"formen300.js"],[94901,"musik300.js"],[95072,"lernweg300b.js"],[95195,"lernweg300c.js"],[95355,"espanol300.js"],[95461,"fabel310_bild.js"],[95712,"fabel310.js"],[96103,"eisbude310.js"],[96329,"turbo310.js"],[96534,"sumo310.js"],[96669,"beifahrer310.js"],[96744,"dreier310.js"],[96860,"ring310.js"],[96969,"loch330.js"],[97319,"reise340.js"],[97389,"fisch340.js"],[97945,"rutsche340.js"],[98356,"knobel340.js"],[98594,"frucht350.js"],[98899,"vulkan350.js"],[99142,"delfin350.js"],[99337,"musik350.js"],[99507,"arcade360.js"],[99623,"strasse360.js"],[99919,"blasen360.js"],[100127,"meer360.js"],[100296,"spirale360.js"],[100460,"sterne360.js"],[100667,"alt360a.js"],[100937,"alt360b.js"],[101130,"alt360c.js"],[101384,"alt360d.js"],[101547,"alt370a.js"],[101744,"alt370b.js"],[101948,"alt370c.js"],[102086,"gl390.js"],[102323,"lauf390.js"],[102832,"ab3_level.js"],[103177,"abenteuer400.js"],[103671,"belohnung311.js"],[103832,"druck311.js"],[103926,"freunde.js"],[104063,"start.js"],[104073,null],[104083,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -26720,9 +26736,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '3.9.0';
+const APP_VERSION = '4.0.0';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "4.0.0", d: "19.11.2026", t: ["Lumis 3D-Abenteuer: das Hüpfspiel aus der Pixel-Welt in echtem 3D, 20 lange Level auf vier Inseln", "Rätsel-Tore, Fragekisten, Geheimgänge und drei versteckte Sterne in jedem Level"] },
   { v: "3.9.0", d: "19.11.2026", t: ["Lumi-Lauf 3D: das erste Spiel mit echter 3D-Grafik, 20 Level in Hafenstadt, Gletscherpass, Sonnenküste und Polarnacht", "Ausweichen, Springen, Bauchrutschen, Rampen, Schlittenzüge und vier Extras"] },
   { v: "3.8.0", d: "19.11.2026", t: ["Fünf Spiele neu gemacht, jedes mit 20 Leveln in vier Welten: Seifenblasen: 20 Level, Pinguin-Disco: 20 Level, Schiebe-Puzzle: 20 Level, Eis-Labyrinth: 20 Level, Vier gewinnt: 20 Level"] },
   { v: "3.7.0", d: "19.11.2026", t: ["Eine Bezahlart für alle Spiele: Im Elternbereich unter „Spiele bezahlen“ gibt es Spielzeit (Standard) oder Münzen pro Spiel", "Testmodus „Alles frei“ im Elternbereich, geht um Mitternacht von allein aus", "Belohnungswelt: Alle Party-Spiele stehen einzeln unter „Zusammen spielen“ und sind kostenlos", "Seifenblasen ist zurück"] },
@@ -102812,6 +102829,845 @@ function luSpiel(stage) {
 FUN_GAMES.lauf3d = { c: 'hits', t: 'Lumi-Lauf 3D', seit: 'Lumi-Lauf 3D', d: 'Das erste Spiel in echtem 3D! Renn mit Lumi durch Hafen, Gletscher, Küste und Polarnacht, spring über Hürden, rutsch unter Balken durch und sammle Fische. 20 Level.', i: '🏃' };
 FUN_IMPL.lauf3d = luSpiel;
 
+/*@@src ab3_level.js@@*/
+
+const AB3_LEVELS = [
+  { n: "Schneestrand", w: 0, m: [
+    "                                                     ###############                                                         ###############                                                                             ",
+    "                                                     ###############                                                         ###############                                                                             ",
+    "                                                     ###############                                                         ###############                                                                             ",
+    "                      *                              ###############                                                         ###############                                                                             ",
+    "                     ===                             ###############                                                         ###############                                                      *                      ",
+    "                                                     ###############                                                 *       ###############                                                     ===                     ",
+    "                                                     ###############                                                ===      ###############                                                oo                           ",
+    "                                                     ###############                                                         ###############                                               ====                          ",
+    "                                                     ###############                                                         ###############                     Q                                                       ",
+    "                                     ooo                                                   o o o               ===                                                                  ====                                 ",
+    "                                    o   o               o o                                                                     o o                                                                                      ",
+    "  P   oo      o   J      o    o o              o o   o         T  o      K   H    oo   E          E    oo   oo        oo     o         T  o      K         oo          oo       ooo     o  o  o   C         ooo     F    ",
+    "####################################   ##################################################################################################################################################################################",
+    "####################################~~~##################################################################################################################################################################################",
+    "####################################~~~##################################################################################################################################################################################"
+  ] },
+  { n: "Robbenbucht", w: 0, m: [
+    "                                         ###############                                                                                   ###############                                                                                                         ",
+    "                                         ###############                                                                                   ###############                                                                                                         ",
+    "                                         ###############                                                                                   ###############                                                                                                         ",
+    "                         o o o o *       ###############                      *                                                            ###############                                                                                                         ",
+    "                        ==========       ###############                     ===                                                           ###############                                                                                                         ",
+    "                                         ###############                                                                                   ###############                    ##########                                                      *                    ",
+    "                                         ###############                                                                                   ###############                      Y   Y                                                        ===                   ",
+    "                                         ###############                                                                                   ###############                                                                                                         ",
+    "                                         ###############                                                  o                Q               ###############                                                      o     o     o                                      ",
+    "                                                                                                         o o                                                                                                                            ===                        ",
+    "                                            o o                                                         o   o                                 o o                                                                                                                  ",
+    "  P   oo      oo     J      C      oo    o         T  o      K   H    o   J      o    oo   o o o o              oo   oo          oo        o         T  o      K        oo     o  o  o  o      oo     oo                       oo    oo        oo     ooo     F    ",
+    "#########################################################################################IIIIIIIIIIIIII ^^  #############################################################################################M     M     M     ########################################",
+    "#########################################################################################################################################################################################################~~~~~~~~~~~~~~~~~~~#######################################",
+    "#########################################################################################################################################################################################################~~~~~~~~~~~~~~~~~~~#######################################"
+  ] },
+  { n: "Eiszapfental", w: 0, m: [
+    "                                                                                        ###############                                                                ###############                                                                                    ",
+    "                                                                                        ###############                                                                ###############                                                                                    ",
+    "                                                                                        ###############                                                                ###############                                                                                    ",
+    "                                                                               *        ###############                                                                ###############                                                       o o o o *                    ",
+    "                                                                              ===       ###############                                *                               ###############                                                      ==========                    ",
+    "                                                                                        ###############                               ===                              ###############                    ##########                                                      ",
+    "                                                                                        ###############                          oo                                    ###############                      Y   Y                                                         ",
+    "                                                                                        ###############                         ====                                   ###############                                                                                    ",
+    "                        o     o     o                                                   ###############                                                Q               ###############                                                                                    ",
+    "                                                      o o o                                                              ====                                                                                                                                             ",
+    "                                                                                           o o                                                                            o o                                                                                             ",
+    "  P   oo      oo                       oo    oo   E          E    oo   o   J      o     o         T  o      K   H    ooo     o  o  o   C         oo          oo        o         T  o      K        oo     o  o  o  o      oo     oo     J      C      oo    ooo     F    ",
+    "#################M     M     M     #######################################################################################################################################################################################################################################",
+    "#################~~~~~~~~~~~~~~~~~~~######################################################################################################################################################################################################################################",
+    "#################~~~~~~~~~~~~~~~~~~~######################################################################################################################################################################################################################################"
+  ] },
+  { n: "Schollenmeer", w: 0, m: [
+    "                                                                                           ###############                                                                       ###############                                                                                                                                ",
+    "                                                                                           ###############                                                                       ###############                                                                                                                                ",
+    "                                                                                           ###############                                                                       ###############                                                                                                                                ",
+    "                                                                                           ###############                                                                       ###############                                                                                                                                ",
+    "                                                                                           ###############                                                                       ###############                                                                                                                                ",
+    "                       *                                                                   ###############                                                           *           ###############                       *                                          ##########                                                    ",
+    "                      ===                                                                  ###############                                                                       ###############                      ===                                           Y   Y                                                       ",
+    "                                                                         oooo              ###############                                                 ===   ===             ###############                                                                                                                                ",
+    "                                        o     o     o            Q      ======             ###############                                                                       ###############                                                  o                                                ooo                          ",
+    "                 ===                                                                                                             o o o                ===                                                        ===                             o o                                             o     o                        ",
+    "                                                                                              o o                                                                                   o o                                                         o   o                                           o       o                       ",
+    "  P   oo      oo        oo    oo                       oo    oo   C               C  oo    o         T  o      K   H    oo   E          E    oo   oo                      oo     o         T  o      K        oo        oo    oo   o o o o              oo  oo     o  o  o  o      oo     oo        ###     oo     ooo     F    ",
+    "#################################M     M     M     ##################################################################################################^^^^^^^^^^^^^^^^^^##########################################################IIIIIIIIIIIIII ^^  ############################################################################",
+    "#################################~~~~~~~~~~~~~~~~~~~############################################################################################################################################################################################################################################################################",
+    "#################################~~~~~~~~~~~~~~~~~~~############################################################################################################################################################################################################################################################################"
+  ] },
+  { n: "Gipfel der Eisberg-Insel", w: 0, m: [
+    "                                                                          ###############                                                                                                  ###############                                                                                                                    ",
+    "                                                                          ###############                                                                                                  ###############                                                                                                                    ",
+    "                                                                          ###############                                                                                                  ###############                                                                                                                    ",
+    "                                                                          ###############                                                                                                  ###############                                                                                                                    ",
+    "                                                                          ###############                                                                                                  ###############                                                                                                                    ",
+    "                                 *                                        ###############                           *                                                                      ###############                                                                                                                    ",
+    "                                                                          ###############                                                                                                  ###############                                                      *                         o o o o o                           ",
+    "                       ===   ===                        oooo              ###############                                                                                                  ###############                                                                             ===============                        ",
+    "                                                Q      ======             ###############                      ########                                              o     o     o         ###############                                  o                  ooo                                                            ",
+    "                  ===                                                                                        ############                 o o o                                                                                            o o                #####                ===                ===                     ",
+    "                                                                             o o                           ####oo o oo ##                                                                     o o                                         o   o             #########                                                         ",
+    "  P   oo      oo                      oo    oo   C               C  oo    o         T  o      K   H      ######   X    gg   o    oo   E          E    oo   oo                       oo     o         T  o      K        oo   o o o o              oo   o  #############    o    oo         C       C       oo    ooo     F    ",
+    "#################^^^^^^^^^^^^^^^^^^###########################################################################################################################M     M     M     ###########################################IIIIIIIIIIIIII ^^  ######################################   ##########   ##########################",
+    "##############################################################################################################################################################~~~~~~~~~~~~~~~~~~~###################################################################################################~~~##########~~~##########################",
+    "##############################################################################################################################################################~~~~~~~~~~~~~~~~~~~###################################################################################################~~~##########~~~##########################"
+  ] },
+  { n: "Palmenstrand", w: 1, m: [
+    "                                          ###############                                         ###############                                                                                          ",
+    "                                          ###############                                         ###############                                                                                          ",
+    "                                          ###############                                         ###############                                                                                          ",
+    "                                          ###############                                         ###############                                                                                          ",
+    "                                *         ###############                                         ###############                                                                                          ",
+    "                               ===        ###############                                         ###############                       *                                                                  ",
+    "                          oo              ###############                        *                ###############                      ===                                                                 ",
+    "                         ====             ###############                                         ###############                                                                                          ",
+    "                                          ###############                       ooo               ###############                                     Q                       ooo                          ",
+    "                  ====                                                         #####                                              ===                                       o     o                        ",
+    "                                             o o                             #########               o o                                                                   o       o                       ",
+    "  P   oo      ooo     o  o  o   C         o         T  o      K   H     o  #############    o     o         T  o      K        oo        oo     oo          oo       oo        ###     oo     ooo     F    ",
+    "###########################################################################################################################################################################################################",
+    "###########################################################################################################################################################################################################",
+    "###########################################################################################################################################################################################################"
+  ] },
+  { n: "Dampfquellen", w: 1, m: [
+    "                                                     ###############                                                                           ###############                                                                                                       ",
+    "                                                     ###############                                                                           ###############                                                                                                       ",
+    "                                                     ###############                                                                           ###############                                                                                                       ",
+    "                      *                              ###############                                                                           ###############                                                                                 *                     ",
+    "                     ===                             ###############                                                            o o o *        ###############                                                                                ===                    ",
+    "                                                     ###############                           B                               ========        ###############                                                                                                       ",
+    "                                                     ###############                                                                           ###############                                                                                                       ",
+    "                                                     ###############                                                                           ###############                         o  o                           oo                                             ",
+    "                                     Q               ###############                      ooo      ooo                                         ###############                                                       ====                                            ",
+    "                                                                                                                                                                                                                                                                     ",
+    "                                                        o o                                                                                       o o                             o  o      o  o                ###          ###                                     ",
+    "  P   oo      o   J      o     oo          oo        o         T  o      K   H    oo                       oo    oo          o             o   o         T  o      K        oo                      oo   oo   E ###    E     ###  oo   o   J      o     ooo     F    ",
+    "#######################################################################################   ########   #################   ##W######   ##########################################   Z  Z  Z  Z  Z   ###################################################################",
+    "#######################################################################################~~~########~~~#################~~~#########~~~##########################################~~~~~~~~~~~~~~~~~~~###################################################################",
+    "#######################################################################################~~~########~~~#################~~~#########~~~##########################################~~~~~~~~~~~~~~~~~~~###################################################################"
+  ] },
+  { n: "Echsenpfad", w: 1, m: [
+    "                                                                                          ###############                                                                           ###############                                                                                                 ",
+    "                                                                                          ###############                                                                           ###############                                                                                                 ",
+    "                                                                                          ###############                                                                           ###############                                                                                                 ",
+    "                                                                                          ###############                                                                           ###############                                                                                                 ",
+    "                                                                                          ###############                                                            o o o *        ###############                                                                                                 ",
+    "                                                     *                                    ###############                           B                               ========        ###############                                               *                                                 ",
+    "                                                    ===                                   ###############                                                                           ###############                                              ===                                                ",
+    "                           oo                                          o  o               ###############                                                                           ###############                                                                  oooo                           ",
+    "                          ====                                                            ###############                      ooo      ooo                                         ###############                       ooo                                Q      ======                          ",
+    "                                               ===                                                                                                                                                                      o     o             ===                                                     ",
+    "                     ###          ###                             o  o      o  o             o o                                                                                       o o                             o       o                                                                    ",
+    "  P   oo      oo   E ###    E     ###  oo   oo        oo    oo                      oo    o         T  o      K   H    oo                       oo    oo          o             o   o         T  o      K        oo        ###     oo    oo        oo    oo   C               C  oo    ooo     F    ",
+    "###############################################################   Z  Z  Z  Z  Z   ##########################################   ########   #################   ##W######   ##########################################################################################################################",
+    "###############################################################~~~~~~~~~~~~~~~~~~~##########################################~~~########~~~#################~~~#########~~~##########################################################################################################################",
+    "###############################################################~~~~~~~~~~~~~~~~~~~##########################################~~~########~~~#################~~~#########~~~##########################################################################################################################"
+  ] },
+  { n: "Glutfelsen", w: 1, m: [
+    "                                                                                  ###############                                                                    ###############                                                                                                                           ",
+    "                                                                                  ###############                                                                    ###############                                                                                                                           ",
+    "                                                                                  ###############                                                                    ###############                                                                                                                           ",
+    "                      *                                                           ###############                                                                    ###############                                             *                                                                             ",
+    "                     ===                                                          ###############                                *                                   ###############                                            ===                                                                            ",
+    "                                                                                  ###############                                                                    ###############                                                                                                                           ",
+    "                                                                                  ###############                             ####                                   ###############                                                                                                                           ",
+    "                                          o                                       ###############                          W  ####                                   ###############                                                                                            oo                             ",
+    "                                                                                  ###############                        ###  ####   o               Q               ###############                                                         ooo                               ====                            ",
+    "                                    ooo      ooo    H             ooo                                                o   ###  ####                                                                        ooo                                            ooo                                                   ",
+    "                                                                 o   o               o o                            ###  ###  ####                                      o o                                                                 #####                         ###          ###                     ",
+    "  P   oo      o   J      o     oo                     oo   o o              o o   o         T  o      K   H    oo   ###  ### J####      oo     oo          oo        o         T  o      K        oo                oo   o   J      o    o #######   C  #######o   oo   E ###    E     ###  oo    ooo     F    ",
+    "###################################   ######   ##################   ################################################################   #################################################################   ####################################################################################################",
+    "###################################~~~######~~~##################~~~################################################################~~~#################################################################~~~####################################################################################################",
+    "###################################~~~######~~~##################~~~################################################################~~~#################################################################~~~####################################################################################################"
+  ] },
+  { n: "Gipfel des Vulkans", w: 1, m: [
+    "                                                                           ###############                                                                                                         ###############                                                                                                              ",
+    "                                                                           ###############                                                                                                         ###############                                                                                                              ",
+    "                                                                           ###############                                                                                                         ###############                                                                                                              ",
+    "                                                                           ###############                      *                                                                                  ###############                                                                                                              ",
+    "                             o o o o                         *             ###############                     ===                                                                                 ###############                                                                                                              ",
+    "                            ========                                       ###############                                                                                                         ###############                                                                                   *                          ",
+    "                                                          ####             ###############                                                                                                         ###############                                                                                                              ",
+    "                                                       W  ####             ###############                                         o  o                                                            ###############                                                     oo                                                       ",
+    "                                                     ###  ####   o         ###############                                                                                         Q               ###############                                                    ====                      ########                        ",
+    "                                                 o   ###  ####                                                                                               ooo                                                                          ooooo                                               ############                      ",
+    "                                                ###  ###  ####                o o                                             o  o      o  o                                                          o o                                                        ###          ###           ####oo o oo ##                      ",
+    "  P   oo      oo          o             o  oo   ###  ### J####      oo     o         T  o      K   H    o   J      o    oo                      oo   oo                oo    oo          oo        o         T  o      K         ooo         C       ooo  oo   E ###    E     ###  oo     ######   X    gg   o     ooo     F    ",
+    "###################   ##W######   ##############################   ########################################################   Z  Z  Z  Z  Z   #############   ##################################################################################################################################################################",
+    "###################~~~#########~~~##############################~~~########################################################~~~~~~~~~~~~~~~~~~~#############~~~##################################################################################################################################################################",
+    "###################~~~#########~~~##############################~~~########################################################~~~~~~~~~~~~~~~~~~~#############~~~##################################################################################################################################################################"
+  ] },
+  { n: "Wolkenwiese", w: 2, m: [
+    "                                             ###############                                                       ###############                                                                                             ",
+    "                                             ###############                                                       ###############                                                                                             ",
+    "                                             ###############                                                       ###############                                                                                             ",
+    "                                             ###############                                                       ###############                      *                                                                      ",
+    "                               *             ###############                                                       ###############                     ===                                                                     ",
+    "                              ===            ###############                                               *       ###############                                                                                             ",
+    "                                             ###############                                              ===      ###############                                                                                             ",
+    "                         ===                 ###############                                                       ###############                                                                                             ",
+    "                                             ###############                       ooo                             ###############                                     Q                                                       ",
+    "                   ===          ooo                                              o     o             ===                                                                                      ooo                              ",
+    "                                                o o                             o       o                             o o                                                                                                      ",
+    "  P   oo      oo                     oo      o         T  o      K   H    oo        ###     oo    oo        oo     o         T  o      K        o   J      o     oo          oo       oo                 oo       ooo     F    ",
+    "################  ====   ====   ===  ######################################################################################################################################################   #######   #######################",
+    "################                     ######################################################################################################################################################   #######   #######################",
+    "############                              ##########################################################################################################################################                           ################"
+  ] },
+  { n: "Windbrücken", w: 2, m: [
+    "                                                     ###############                                                                                  ###############                                                                                                        ",
+    "                                                     ###############                                                                                  ###############                                                                                                        ",
+    "                                                     ###############                                                                                  ###############                                                                                                        ",
+    "                                                     ###############                      *                                                           ###############                                                                                                        ",
+    "                                                     ###############                     ===                                                          ###############                                                                                                        ",
+    "                       *                             ###############                                                                                  ###############                                                        o o o                      *                    ",
+    "                      ===                            ###############                                                                                  ###############                          B                            =====                      ===                   ",
+    "                                                     ###############                                                                                  ###############                                                                                                        ",
+    "                                     Q               ###############                                                                  ooo             ###############                                                                                                        ",
+    "                 ===                                                                                      ooo                       o     o                                              ooo        ooo                                           ===                        ",
+    "                                                        o o                                                                        o       o             o o                                                         o                o                                      ",
+    "  P   oo      oo        oo     oo          oo        o         T  o      K   H    o   J      o    oo                 oo      oo        ###     oo     o         T  o      K        oo                      oo    oo                       oo   oo        oo     ooo     F    ",
+    "#######################################################################################################   #######   ###################################################################   #######   ########## #####V    V    V    V   ##### ################################",
+    "#######################################################################################################   #######   ###################################################################   #######   ########## #####                   ##### ################################",
+    "################################################################################################                           ######################################################                                                            ################################"
+  ] },
+  { n: "Vogelnester", w: 2, m: [
+    "                                                                     ###############                                                                   ###############                                                                                                         ",
+    "                                                                     ###############                                                                   ###############                                                                                                         ",
+    "                                                                     ###############                                                                   ###############                                                                                                         ",
+    "                                                        *            ###############                                                                   ###############                      *                                                                                  ",
+    "                                                o o o o              ###############                                                     *             ###############                     ===                                                                                 ",
+    "                                                                     ###############                                                    ===            ###############                                           B                             o o o                           ",
+    "                                            =============            ###############                                                                   ###############                                                                        =====                            ",
+    "                                                                     ###############                                               ===                 ###############                                                                                                         ",
+    "                       ooo                                           ###############                     Q                                             ###############                                      ooo      ooo                                                       ",
+    "                     o     o                                                                                                 ===          ooo                                                                                                                                  ",
+    "                    o       o                                           o o                                                                               o o                                                                          o                o                      ",
+    "  P   oo      oo        ###     oo    oo                       oo    o         T  o      K   H     oo          oo       oo                     oo      o         T  o      K        o   J      o    oo                       oo    oo                       oo    ooo     F    ",
+    "##########################################W                 ##############################################################  ====   ====   ===  ##########################################################   ########   ###############V    V    V    V   ##### ################",
+    "##########################################                  ##############################################################                     ##########################################################~~~########~~~###############                   ##### ################",
+    "####################################                              ####################################################                              #####################################################~~~########~~~##########                              ################"
+  ] },
+  { n: "Himmelslifte", w: 2, m: [
+    "                                                                            ###############                                                                   ###############                                                                                                            ",
+    "                                                                            ###############                                                                   ###############                                                                                                            ",
+    "                                                                            ###############                                                                   ###############                                                                                                            ",
+    "                                                                            ###############                                *                                  ###############                                                                                                            ",
+    "                                                          *                 ###############                        o o o o                                    ###############                                                                                 *                          ",
+    "                                                         ===                ###############                                                                   ###############                                                                                ===                         ",
+    "                          B                                                 ###############                    =============                                  ###############                                                                                                            ",
+    "                                                      o o o o               ###############                                                                   ###############                                                                           ===                              ",
+    "                                                     =========              ###############                                                   Q               ###############                     ooo                                                                                    ",
+    "                    ooo        ooo                                                                                                                                                              o     o                   ooo                     ===          ooo                       ",
+    "                                                                               o o                                                                               o o                           o       o                                                                                 ",
+    "  P   oo      oo                      oo    oo    J            C     oo     o         T  o      K   H    oo                       oo    oo          oo        o         T  o      K        oo               oo    oo                 oo      oo                     oo      ooo     F    ",
+    "##################   #######   ########## ##########        #################################################W                 #################################################################   ###   ##############   #######   ###########  ====   ====   ===  #####################",
+    "##################   #######   ########## ##########        #################################################                  #################################################################   ###   ##############   #######   ###########                     #####################",
+    "############                                                             ##############################                              ####################################################                                                                                ################"
+  ] },
+  { n: "Wolkenschloss", w: 2, m: [
+    "                                                                        ###############                                                                                                 ###############                                                                                                                         ",
+    "                                                                        ###############                                                                                                 ###############                                                                                                                         ",
+    "                                                                        ###############                                                                                                 ###############                                                                                                                         ",
+    "                                                           *            ###############                                                                                                 ###############                      *                                                                                                  ",
+    "                                                   o o o o              ###############                                                                                   *             ###############                     ===                                                                                                 ",
+    "                                                                        ###############                                                                                  ===            ###############                                                                  o o o                                                  ",
+    "                                               =============            ###############                                                B                                                ###############                                                                 =====                                                   ",
+    "                                                                        ###############                                                                             ===                 ###############                                                                                                                         ",
+    "                                                                        ###############                     Q                                                                           ###############                                       ooo                                                 ooo                           ",
+    "                      ooo                                                                                                        ooo        ooo               ===          ooo                                                              o     o                                             o     o                         ",
+    "                                                                           o o                                                                                                             o o                                             o       o             o                o            o       o                        ",
+    "  P   oo      oo                 oo      oo                       oo    o         T  o      K   H     oo          oo       oo                      oo    oo                     oo      o         T  o      K        o   J      o    oo        ###     oo    oo                       oo   oo               oo     ooo     F    ",
+    "###################   #######   #############W                 ################################################################   #######   ########## ####  ====   ====   ===  ################################################################################V    V    V    V   ##### #######   ###   #######################",
+    "###################   #######   #############                  ################################################################   #######   ########## ####                     ################################################################################                   ##### #######   ###   #######################",
+    "############                                                         ####################################################                                                            ######################################################################                                                     ################"
+  ] },
+  { n: "Kristallgrotte", w: 3, m: [
+    "#########################################################################################################################################################################################################",
+    " ### # ###### ## # #  # # ####    ###  # ################### #   # # #  # ##  #  ## ##  ### #  #  #   #  # ################## #        ##   #    # # ### #  # # #   ## ###   #    ## #   # ##  #     #  #",
+    "                                          ###############                                                     ###############                                                                            ",
+    "                                          ###############                                            *        ###############                                                                            ",
+    "                                *         ###############                                           ===       ###############                                                                            ",
+    "                               ===        ###############                                                     ###############                                                                            ",
+    "                          oo              ###############                                                     ###############                        *                                                   ",
+    "                         ====             ###############                                                     ###############                                                                            ",
+    "                                          ###############                     Q                               ###############                       ooo                                                  ",
+    "                  ====                                                                                                                             #####                    ooo                          ",
+    "                                             o o                                                                 o o                             #########                 o   o                         ",
+    "  P   oo      ooo     o  o  o   C         o         T  o      K   H     oo          oo       o   J      o     o         T  o      K         o  #############    o    o o              o o   ooo     F    ",
+    "###########################################################################################################################################################################   ###########################",
+    "###########################################################################################################################################################################~~~###########################",
+    "###########################################################################################################################################################################~~~###########################"
+  ] },
+  { n: "Kanonengang", w: 3, m: [
+    "#######################################################################################################################################################################################################################################################",
+    "#### ## ## ##  # #   ##  ## # # ##  ## # # ################ #  #  # ###  ### ## ## # ## ##  # # # ## ######## ## #    #  #####    #  ## ###############  # ##### ###   #  # #   ###  #  #   #     ## ## ## #   ## ##  ##  ####    ###### # # #   #    #",
+    "                                            ###############                                                                             ###############                                                                                                ",
+    "                                            ###############                                                                             ###############                                                                          *                     ",
+    "                     ###########            ###############                                                                             ###############                                                                         ===                    ",
+    "                     #     *   g            ###############                                               *                             ###############                                          ##########                                            ",
+    "                     #oo   oo  g            ###############                                              ===                            ###############                                            Y   Y                                               ",
+    "                     ###########            ###############                                                                             ###############                                                                                                ",
+    "                                            ###############                       ooo                                   Q               ###############                                                                                                ",
+    "                    ===       ===                                               o     o             ===                                                                     ooo                                                                        ",
+    "                                               o o                             o       o                                                   o o                             o   o                                                                       ",
+    "  P   oo      oo        C          oo       o         T  o      K   H    oo        ###     oo    oo        oo     oo          oo        o         T  o      K        o o              o o  oo     o  o  o  o      oo     o   J      o     ooo     F    ",
+    "###########################################################################################################################################################################   #########################################################################",
+    "###########################################################################################################################################################################~~~#########################################################################",
+    "###########################################################################################################################################################################~~~#########################################################################"
+  ] },
+  { n: "Glitzersee", w: 3, m: [
+    "###############################################################################################################################################################################################################################################################################################",
+    " #####  ########  ### ##  #  ###  ## #   # #   ###  # ## ## #  #       ##     ##  ###     ################ ## ###### #  ## # #  #### # #    ###  ###  ###### #### #### # ##  # # ## # ##   #################  ## ##  ######## #  # ##    ##  ## ##   ###  # #   #  ###  ## ## #  ##  # ####  ##",
+    "                                                                                           ###############                                                                                   ###############                                                                                   ",
+    "                                                                                           ###############                                                                          *        ###############                                                                                   ",
+    "                                                                                           ###############                                                                         ===       ###############                                                                                   ",
+    "                                                  ##########                       *       ###############                                                                                   ###############                                                                                   ",
+    "                                                    Y   Y                         ===      ###############                                                                                   ###############                        *                                                          ",
+    "                                                                                           ###############                                                                                   ###############                                                   o  o                            ",
+    "                       o   o   o                                                           ###############                                  o                Q                               ###############                       ooo                                                         ",
+    "                                                                             ===                                                           o o                                                                                    #####                                                        ",
+    "                                                                                              o o                                         o   o                                                 o o                             #########                 o  o      o  o                       ",
+    "  P   oo      oo                    R  oo   oo     o  o  o  o      oo     oo        oo     o         T  o      K   H    oo   o o o o              oo   oo          oo       o   J      o     o         T  o      K         o  #############    o    oo                      oo    ooo     F    ",
+    "###########################################################################################################################IIIIIIIIIIIIII ^^  #########################################################################################################   Z  Z  Z  Z  Z   #####################",
+    "#######################################################################################################################################################################################################################################################~~~~~~~~~~~~~~~~~~~#####################",
+    "#######################################################################################################################################################################################################################################################~~~~~~~~~~~~~~~~~~~#####################"
+  ] },
+  { n: "Zapfenhalle", w: 3, m: [
+    "##################################################################################################################################################################################################################################################################################################################################",
+    "  ##### ##      # # # ### # ## #   ###### #  #  ###  ### #     ## #     ## #     #   #  #  ############### # ####    #        # # # ### ######   ## ### ##   #  # ### ## #  # # ### # ##  #   ################ ##  # ## # ## ###   #   # #   #  ###  ##    #    ##     ##     ##  ## #### #  ## ###  ###  ### ### #   # # #  #    ",
+    "                                                                                           ###############                                                                                    ###############                                                                                                                     ",
+    "                                                                                  *        ###############                                                                                    ###############                                                                                                                     ",
+    "                                                                                 ===       ###############                                                                                    ###############                     ###########                                                                                     ",
+    "                                                                                           ###############                       *                        o o o                               ###############                     #     *   g                              o                ##########                            ",
+    "                                                                                           ###############                      ===                      =====                                ###############                     #oo   oo  g                                                 Y   Y                               ",
+    "                                                                                           ###############                                                                                    ###############                     ###########                    ===   ===                                                        ",
+    "                       ooo       ooo                 o   o   o                             ###############                                                                    Q               ###############                                                                                                                     ",
+    "                      =====     =====                                                                                      ===                                                                                                   ===       ===              ===                                                                   ",
+    "                                                                                              o o                                                                                                o o                                                                                                                              ",
+    "  P   oo      oo   E        C        E oo   oo                    R  oo   o   J      o     o         T  o      K   H    oo        oo    oo          o            oo     oo          oo        o         T  o      K        oo        C          oo      oo                      oo    oo     o  o  o  o      oo      ooo     F    ",
+    "############################################################################################################################################   M        V    ##############################################################################################^^^^^^^^^^^^^^^^^^#####################################################",
+    "############################################################################################################################################~~~~~~~~~~~~~~~~~#####################################################################################################################################################################",
+    "############################################################################################################################################~~~~~~~~~~~~~~~~~#####################################################################################################################################################################"
+  ] },
+  { n: "Herz der Höhle", w: 3, m: [
+    "##########################################################################################################################################################################################################################################################################################################################################################################",
+    "# # ##     ####    ########  #  ##     #       ###   ##   #   #   # #   ## # ##  # ## #    ################ # #### # ##   # ##    ###   #       ####  #      #    #   #   # ## ## #  # #   #    #### ## #  ####   ####  ##### # # ################  ## #### # ## # ###   ##  ###  # #  ##### #     #     ##### #    #### #  ##  ##  ##   ## ##  ##   # ## #   #  ##   # ##",
+    "                                                                                           ###############                                                                                                                         ###############                                                                                                                        ",
+    "                                                                                           ###############                                                   *                                                                     ###############                                                                                                                        ",
+    "                                                                                           ###############                                                  ===                                                                    ###############                                                                                                                        ",
+    "                                                                                   *       ###############                                                                 ##########                                o o o         ###############                                                                                                   *                    ",
+    "                                                                                  ===      ###############                                                                   Y   Y                                  =====          ###############                                                                                                  ===                   ",
+    "                                                                                           ###############                         o  o                                                                                            ###############                                                                                                                        ",
+    "                       ooo       ooo                 o   o   o                             ###############                                                                                                                         ###############                                  o                  ooo                   Q                                            ",
+    "                      =====     =====                                        ===                                                                                                                                                                                                   o o               o     o                                   ===                        ",
+    "                                                                                              o o                             o  o      o  o                                                                                          o o                                         o   o             o       o                                                             ",
+    "  P   oo      oo   E        C        E oo   oo                    R  oo   oo        oo     o         T  o      K   H    oo                      oo   o   J      o    oo     o  o  o  o      oo     oo          o            oo     o         T  o      K        oo   o o o o              oo  oo        ###     oo     oo          oo       oo        oo     ooo     F    ",
+    "###########################################################################################################################   Z  Z  Z  Z  Z   #########################################################   M        V    ###########################################IIIIIIIIIIIIII ^^  ####################################################################################",
+    "###########################################################################################################################~~~~~~~~~~~~~~~~~~~#########################################################~~~~~~~~~~~~~~~~~##################################################################################################################################################",
+    "###########################################################################################################################~~~~~~~~~~~~~~~~~~~#########################################################~~~~~~~~~~~~~~~~~##################################################################################################################################################"
+  ] }
+];
+
+/*@@src abenteuer400.js@@*/
+
+
+
+
+
+
+
+
+
+
+
+const AB3_WELTEN = [
+  { n: 'Eisberg-Insel', i: '🧊', farbe: '#2f7fd8', art: 'eis' },
+  { n: 'Vulkan-Insel', i: '🌋', farbe: '#e0662f', art: 'vulkan' },
+  { n: 'Wolkenhimmel', i: '☁️', farbe: '#2a9bbf', art: 'wolken' },
+  { n: 'Kristallhöhle', i: '💎', farbe: '#7a4fd6', art: 'hoehle' }
+];
+const AB3_ST = {
+  eis: { oben: '#3f95e6', horizont: '#d6ecfb', unten: '#e3f0fa', sonne: luN(.45, .35, -1), sonneSicht: '#fff2c4', sonneR: .06, licht: luN(-.45, .75, .6), lichtFarbe: '#cfc5ae', himmel: '#93aecb', grund: '#625d55', nebel: [45, 190] },
+  vulkan: { oben: '#5a3f8f', horizont: '#ffb26f', unten: '#ff9e6b', sonne: luN(.3, .1, -1), sonneSicht: '#ffd9a0', sonneR: .1, licht: luN(-.35, .6, .7), lichtFarbe: '#e0a878', himmel: '#c08aa0', grund: '#5a3a4c', nebel: [45, 190] },
+  wolken: { oben: '#2f84de', horizont: '#b4dcf8', unten: '#d8ecfb', sonne: luN(.5, .45, -1), sonneSicht: '#fff6d8', sonneR: .07, licht: luN(-.4, .8, .5), lichtFarbe: '#d8d0bc', himmel: '#a6c4e4', grund: '#8a9ab8', nebel: [50, 210] },
+  hoehle: { oben: '#1a1240', horizont: '#3a2d78', unten: '#241a58', sonne: luN(0, -1, 0), sonneR: 0, licht: luN(-.3, .7, .65), lichtFarbe: '#c4bcf0', himmel: '#9a8ad8', grund: '#3a2f70', nebel: [30, 130], sterne: .5 }
+};
+const AB3_PAL = {
+  eis: { front: '#8db3da', front2: '#7ea6d0', tief: '#6f94c0', kappe: '#f7fbff', kappeS: '#e2edf8', eis: '#bfe8ff', steg: '#b7834f', stegO: '#f7fbff', stachel: '#e8f6ff', fl: '#3a8fd8', boden: '#eef4fa' },
+  vulkan: { front: '#6a5560', front2: '#5c4954', tief: '#4a3a44', kappe: '#6aa84f', kappeS: '#58903f', eis: '#ffd1a8', steg: '#3e3539', stegO: '#8a7a6e', stachel: '#3a2f33', fl: '#ff6a1a', boden: '#d9b98a' },
+  wolken: { front: '#dbe8f8', front2: '#d0e0f4', tief: '#c6d8f0', kappe: '#ffffff', kappeS: '#f4f8ff', eis: '#cfe9ff', steg: '#ffffff', stegO: '#ffffff', stachel: '#ffd84a', fl: '#bfe4ff', boden: null },
+  hoehle: { front: '#6a5cae', front2: '#5f52a2', tief: '#4f4488', kappe: '#9a8ae0', kappeS: '#8576cc', eis: '#9ff0ff', steg: '#7a55d6', stegO: '#c4a2ff', stachel: '#9ff0ff', fl: '#6a4fe0', boden: '#4a4084' }
+};
+const AB3_CH = 24, AB3_ZD = 1.3, AB3_GRAV = 59.4, AB3_JUMP = 20.1, AB3_SPRING = 30.3, AB3_MAXV = 6.2, AB3_PW = .62, AB3_PH = .94;
+const AB3_HUEPFER = { eis: '#9aa8b8', vulkan: '#5cc85c', wolken: '#ff9ec4', hoehle: '#a46bff' };
+const AB3_POWER = { fluegel: ['🪽', 'Flügel: Du kannst in der Luft noch einmal springen!', 25], magnet: ['🧲', 'Fisch-Magnet: Fische fliegen zu dir!', 20], blase: ['🫧', 'Schutzblase: Ein Treffer macht nichts!', 999], stern: ['🌟', 'Superstern: Nichts kann dir etwas anhaben!', 9] };
+function ab3Level(w, l) { const i = w * 5 + l, D = AB3_LEVELS[i]; return { i, art: AB3_WELTEN[w].art, D, name: D.n }; }
+
+function ab3Modelle(art) {
+  const p = AB3_PAL[art], o = {};
+  let B = g3Bau(41); const pts = []; for (let i = 0; i < 10; i++) { const a = Math.PI / 2 + i * Math.PI / 5, r = i % 2 ? .2 : .46; pts.push([Math.cos(a) * r, Math.sin(a) * r]); }
+  for (let i = 0; i < 10; i++) { const a = pts[i], b = pts[(i + 1) % 10], k = G3.f(i % 2 ? '#ffd84a' : '#ffe680'); B.dr([0, 0, .2], [a[0], a[1], .07], [b[0], b[1], .07], k, [0, 0, 0]); B.dr([0, 0, -.2], [a[0], a[1], -.07], [b[0], b[1], -.07], k, [0, 0, 0]); B.q([a[0], a[1], .07], [b[0], b[1], .07], [b[0], b[1], -.07], [a[0], a[1], -.07], '#f2b72a', [0, 0, 0]); }
+  o.stern = B.fertig();
+  B = g3Bau(42); B.kugel(-.13, .1, 0, .19, .19, .16, '#ef4b4b', 1); B.kugel(.13, .1, 0, .19, .19, .16, '#ef4b4b', 1); B.mit(0, .12, 0, 0, 0, Math.PI, 1, 1, 1, () => B.zyl(0, 0, 0, .31, 0, .36, 10, '#e23a44', true)); o.herz = B.fertig();
+  B = g3Bau(43); B.kugel(0, .28, 0, .42, .24, .32, '#e8573a', 1); [-1, 1].forEach(s => { B.zyl(s * .12, .4, .12, .03, .03, .22, 5, '#e8573a'); B.kugel(s * .12, .66, .12, .08, .09, .08, '#ffffff', 1); B.kugel(s * .12, .67, .19, .035, .04, .03, '#141a2a', 0);
+    B.kugel(s * .48, .3, .12, .16, .13, .12, '#ff7a52', 1); [-.15, 0, .15].forEach(z => B.mit(s * .32, .16, z, 0, 0, s * .6, 1, 1, 1, () => B.kiste(0, -.14, 0, .05, .2, .05, '#c9442c'))); }); o.krabbe = B.fertig();
+  const hc = AB3_HUEPFER[art]; B = g3Bau(44); B.kugel(0, .32, 0, .38, .3, .32, hc, 1); B.kugel(.3, .5, 0, .22, .2, .2, hc, 1); [-1, 1].forEach(s => { B.kugel(.42, .6, s * .1, .06, .07, .05, '#ffffff', 1); B.kugel(.46, .61, s * .1, .03, .035, .03, '#141a2a', 0); B.kugel(-.1, .06, s * .2, .12, .07, .1, G3.hell(hc, .75), 1); });
+  if (art === 'hoehle') [-1, 1].forEach(s => B.zyl(.38, .66, s * .08, .02, .01, .25, 4, '#c4a2ff')); o.huepfer = B.fertig();
+  B = g3Bau(45); B.kugel(0, 0, 0, .32, .22, .22, '#ffffff', 1); B.kugel(.26, .09, 0, .16, .15, .15, '#ffffff', 1); B.mit(.4, .07, 0, 0, 0, -Math.PI / 2, 1, 1, 1, () => B.zyl(0, 0, 0, .06, 0, .18, 6, '#ff9b26')); [-1, 1].forEach(s => B.kugel(.33, .14, s * .1, .03, .035, .025, '#141a2a', 0)); B.mit(-.3, .02, 0, 0, 0, .3, 1, 1, 1, () => B.kiste(0, -.04, 0, .2, .08, .16, '#e6edf5')); o.vogel = B.fertig();
+  B = g3Bau(46); B.kiste(0, -.02, -.24, .3, .04, .48, '#e6edf5'); B.kiste(.04, -.03, -.42, .22, .04, .14, '#9aa8b8'); o.fluegel = B.fertig();
+  B = g3Bau(47); B.kiste(0, 0, 0, .95, .42, .95, '#4a4f5a', '#5c6270'); B.mit(.05, .62, 0, 0, 0, Math.PI / 2, 1, 1, 1, () => { B.zyl(0, 0, 0, .3, .27, .8, 12, '#2b2f3a', true); B.zyl(0, .72, 0, .34, .34, .1, 12, '#ffd84a', true); }); B.zyl(.2, .42, 0, .22, .2, .14, 10, '#3a3f4a', true); o.kanone = B.fertig();
+  B = g3Bau(48); B.kugel(0, 0, 0, .27, .27, .27, art === 'vulkan' ? '#3a2f33' : '#ffffff', 1, false); o.kugel = B.fertig();
+  B = g3Bau(49); B.mit(0, 0, 0, 0, 0, Math.PI, 1, 1, 1, () => { B.zyl(0, 0, 0, .2, 0, .85, 6, p.eis); B.zyl(.12, 0, .05, .1, 0, .45, 5, '#ffffff'); }); o.zapfen = B.fertig();
+  B = g3Bau(50); B.kiste(0, 0, 0, .92, .14, .92, '#5c6270'); for (let i = 0; i < 3; i++) B.zyl(0, .16 + i * .17, 0, .3, .3, .08, 12, '#c9d2dc', true); B.kiste(0, .62, 0, .92, .16, .92, '#e8463a', '#ffffff'); o.feder = B.fertig();
+  B = g3Bau(51); B.kiste(0, 0, 0, .98, .98, 2 * AB3_ZD - .1, art === 'vulkan' ? '#3a3236' : '#5c6270', '#2b2f3a'); B.zyl(0, .98, 0, .36, .3, .22, 10, art === 'vulkan' ? '#ff9a3a' : art === 'wolken' ? '#ffffff' : '#9fb4c8', true); o.duese = B.fertig();
+  B = g3Bau(52); B.zitter = .02; B.kiste(0, 0, 0, .96, .96, .96, '#7a55d6', '#9a78ec'); [[-.46, .48, 0, .06, .96, .98], [.46, .48, 0, .06, .96, .98], [0, .0, 0, .98, .06, .98], [0, .92, 0, .98, .06, .98]].forEach(([x, y, z, w, h, t]) => B.kiste(x, y - (h === .96 ? .48 : 0), z, w, h, t, '#ffd84a'));
+  B.mit(0, .48, .49, 0, 0, 0, .55, .55, .55, () => { for (let i = 0; i < 10; i++) { const a = pts[i], b = pts[(i + 1) % 10]; B.dr([0, 0, .1], [a[0], a[1], 0], [b[0], b[1], 0], G3.f('#ffffff'), [0, 0, -1]); } }); o.kiste = B.fertig();
+  B = g3Bau(53); [-1, 1].forEach(s => B.kiste(s * .44, 0, 0, .16, 3, .5, '#8a7a6a', '#a8987e')); B.kiste(0, 2.9, 0, 1.06, .2, .56, '#8a7a6a', '#a8987e'); for (let i = 0; i < 4; i++) B.zyl(-.27 + i * .18, 0, 0, .05, .05, 2.9, 6, '#ffd84a', true);
+  B.kiste(0, 1.25, .22, .42, .5, .14, '#ffd84a', '#ffe680'); B.kiste(0, 1.38, .3, .08, .2, .02, '#3a2f20'); o.tor = B.fertig();
+  const stegF = art === 'wolken' ? ['#ffffff', '#ffffff'] : art === 'eis' ? ['#bfe8ff', '#ffffff'] : art === 'vulkan' ? ['#4a3f44', '#7a6a6e'] : ['#7a55d6', '#c4a2ff'];
+  B = g3Bau(54); B.zitter = .04; B.kiste(1.5, -.36, 0, 3, .36, 1.8, stegF[0], stegF[1]); if (art === 'wolken') for (let i = 0; i < 5; i++) B.kugel(.3 + i * .6, -.3, .75, .35, .25, .25, '#ffffff', 1); o.steg = B.fertig();
+  B = g3Bau(55); B.zitter = .05; B.kiste(0, 0, 0, .98, .98, 1.6, art === 'hoehle' ? '#6a5aa8' : '#8a7f78', art === 'hoehle' ? '#8a7ac8' : '#a89a90'); B.kiste(-.15, .3, .81, .04, .5, .02, '#3a3030'); B.kiste(.1, .5, .81, .3, .04, .02, '#3a3030'); o.wackel = B.fertig();
+  B = g3Bau(56); B.zyl(0, 0, 0, .07, .05, 2.4, 6, '#ffffff', true); B.kugel(0, 2.45, 0, .1, .1, .1, '#ffd84a', 1); B.kiste(0, -.02, 0, .5, .1, .5, '#5c6270'); o.mast = B.fertig();
+  B = g3Bau(57); B.kiste(.38, 1.75, 0, .7, .48, .04, '#ffffff'); B.kugel(.38, 1.99, .03, .1, .1, .03, '#ffffff', 0); o.flagge = B.fertig();
+  B = g3Bau(58); B.kugel(0, 0, 0, 1.7, 1.45, 1.6, '#f4f8ff', 2, false); [.35, .75, 1.08].forEach(yy => { const f = Math.sqrt(1 - (yy / 1.45) ** 2); B.zyl(0, yy, 0, 1.72 * f, 1.7 * f, .05, 18, '#c6dcf0', true); }); B.mit(-1.45, 0, .35, 0, 0, Math.PI / 2, 1, 1, 1, () => B.zyl(0, -.5, 0, .7, .7, 1.0, 10, '#e8f0fb', false)); B.kiste(-1.98, 0, .35, .06, .9, .8, '#2a3a5a');
+  B.zyl(0, 1.4, 0, .04, .04, 1.1, 5, '#8a7a6a'); B.kiste(.3, 2.15, 0, .55, .36, .04, '#e8463a'); o.iglu = B.fertig();
+  B = g3Bau(59); B.kiste(0, 0, 0, .9, .5, .6, '#a8743c', '#c48a52'); B.kiste(0, .18, .31, .92, .08, .02, '#ffd84a'); B.kiste(0, .25, .32, .14, .16, .02, '#ffd84a'); o.truhe = B.fertig();
+  B = g3Bau(60); B.kiste(0, 0, -.3, .92, .22, .6, '#a8743c', '#c48a52'); B.kiste(0, .02, 0, .92, .06, .04, '#ffd84a'); o.deckel = B.fertig();
+  const lumi = luLumiModell(); o.rumpf = lumi.rumpf; o.fl = lumi.fl; o.fuss = lumi.fuss; o.fisch = luFischModell();
+  B = g3Bau(61); B.kugel(0, 0, 0, 1, 1, 1, '#c8f2ff', 2); o.blase = B.fertig();
+  return o;
+}
+
+function ab3Deko(B, G, art, x, z, s, r) {
+  if (art === 'eis') {
+    const k = r();
+    if (k < .55) { B.zyl(x, 0, z, .2 * s, .16 * s, .8 * s, 6, '#7a5a3a'); [[.6, 1.35, 1.6, '#2e6b55'], [1.45, 1.05, 1.45, '#337a5e'], [2.25, .75, 1.25, '#3a8767']].forEach(([y, rr, h, c]) => { B.zyl(x, y * s, z, rr * s, 0, h * s, 7, c); B.zyl(x, (y + h * .55) * s, z, rr * s * .47, 0, h * .45 * s + .02, 7, '#f4f9ff'); }); }
+    else if (k < .75) { B.kugel(x, .45 * s, z, .5 * s, .48 * s, .5 * s, '#f4f6ff', 1); B.kugel(x, 1.15 * s, z, .36 * s, .34 * s, .36 * s, '#f4f6ff', 1); B.kugel(x, 1.65 * s, z, .25 * s, .24 * s, .25 * s, '#f4f6ff', 1); B.mit(x, 1.65 * s, z + .2 * s, 0, Math.PI / 2, 0, s, s, s, () => B.zyl(0, 0, 0, .06, 0, .3, 6, '#ff8a2a')); B.zyl(x, 1.86 * s, z, .24 * s, .24 * s, .05 * s, 8, '#2b3060'); B.zyl(x, 1.9 * s, z, .16 * s, .15 * s, .3 * s, 8, '#2b3060'); }
+    else { B.kugel(x, .2, z, 1.1 * s, .7 * s, .9 * s, '#8a96a6', 1, false); B.kugel(x, .55 * s, z, .85 * s, .32 * s, .7 * s, '#f7fbff', 1, false); }
+  } else if (art === 'vulkan') {
+    const k = r();
+    if (k < .5) { let px = x, py = 0; const kn = r() * .5 - .25; for (let i = 0; i < 6; i++) { B.zyl(px, py, z, .22 * s - i * .015, .2 * s - i * .015, .9 * s, 6, i % 2 ? '#9a6a3a' : '#a87842'); px += kn * .25; py += .9 * s; }
+      for (let i = 0; i < 7; i++) B.mit(px, py, z, i * .9, .55 + r() * .3, 0, 1, 1, 1, () => B.kiste(0, 0, -1.2 * s, .5 * s, .06, 2.4 * s, i % 2 ? '#3aa65a' : '#2f8f4c')); B.kugel(px, py - .1, z, .3, .25, .3, '#6a4a2a', 1, false); }
+    else if (k < .8) { B.kugel(x, .3, z, 1.2 * s, .8 * s, 1.0 * s, '#5a4a52', 1, false); G.kugel(x + .4 * s, .5 * s, z + .6 * s, .18, .18, .18, '#ff8a3a', 0); }
+    else { B.zyl(x, 0, z, .9 * s, .2 * s, 2.2 * s, 7, '#4a3a44'); G.zyl(x, 2.15 * s, z, .22 * s, .1 * s, .2 * s, 7, '#ff7a2a'); }
+  } else if (art === 'hoehle') {
+    const k = r(), c = ['#9ff0ff', '#ff9ef0', '#c4a2ff'][Math.floor(r() * 3)];
+    if (k < .6) { G.zyl(x, 0, z, .5 * s, 0, 2.4 * s, 5, c); G.zyl(x + .6 * s, 0, z + .3, .3 * s, 0, 1.4 * s, 5, c); G.zyl(x - .5 * s, 0, z - .2, .25 * s, 0, 1.1 * s, 5, c); }
+    else B.zyl(x, 0, z, .7 * s, .05, 2.6 * s, 6, '#3f346a');
+  } else {
+    for (let i = 0; i < 4; i++) B.kugel(x + (i - 1.5) * 1.3 * s, (r() - .5) * .6, z + (r() - .5), (1.1 + r() * .5) * s, (.7 + r() * .3) * s, (.9 + r()) * s, '#ffffff', 1);
+  }
+}
+
+function ab3Rand(B, G, art, x, z, s, r) {
+  const k = r();
+  if (art === 'eis') { if (k < .4) B.kugel(x, 0, z, .7 * s, .35 * s, .5 * s, '#ffffff', 1); else if (k < .7) { B.zyl(x, 0, z, .07, .06, .9 * s, 5, '#8a6038'); B.kugel(x, .95 * s, z, .1, .06, .1, '#ffffff', 0); } else G.zyl(x, 0, z, .18 * s, 0, .8 * s, 5, '#bfefff'); }
+  else if (art === 'vulkan') { if (k < .5) B.kugel(x, .05, z, .45 * s, .3 * s, .4 * s, '#5a4a52', 1, false); else for (let i = 0; i < 4; i++) B.mit(x, 0, z, i * 1.6, .35, 0, 1, 1, 1, () => B.kiste(0, .25 * s, 0, .06, .5 * s, .02, '#5c9a3f')); }
+  else if (art === 'hoehle') { const c = ['#9ff0ff', '#ff9ef0', '#c4a2ff'][Math.floor(r() * 3)]; if (k < .6) G.zyl(x, 0, z, .16 * s, 0, .7 * s, 5, c); else B.kugel(x, 0, z, .45 * s, .25 * s, .35 * s, '#3f346a', 1, false); }
+}
+function ab3Kulisse(art, breite) {
+  const B = g3Bau(99), G = g3Bau(98), r = B.zuf; B.zitter = .05;
+  const fa = { eis: ['#86a8c8', '#9ab8d4', '#aec6de'], vulkan: ['#6e4f72', '#7d5a80', '#8a6690'], wolken: ['#ffffff', '#f4f8ff', '#e8f2ff'], hoehle: ['#241c48', '#2a2152', '#30265c'] }[art];
+  const kappe = { eis: '#f4f8fc', vulkan: '#9a7aa0', wolken: '#ffffff', hoehle: '#3a2f66' }[art];
+  if (art === 'wolken') { for (let x = -40; x < breite + 40; x += 14) { const z = -40 - r() * 60, y = -14 + r() * 10; for (let k = 0; k < 4; k++) B.kugel(x + (k - 1.5) * 6, y + r() * 3, z + (r() - .5) * 8, 7 + r() * 4, 4 + r() * 2, 6, k % 2 ? '#ffffff' : '#f2f8ff', 1); } return { m: B.fertig(), g: G.fertig() }; }
+  if (art === 'hoehle') { for (let x = -30; x < breite + 30; x += 6) { B.kiste(x, -5, -14 - r() * 3, 6.2, 26, 3, fa[Math.floor(r() * 3)]); if (r() < .5) G.zyl(x + r() * 3, 2 + r() * 8, -12, .4 + r() * .4, 0, 1 + r() * 1.5, 5, ['#9ff0ff', '#ff9ef0', '#c4a2ff'][Math.floor(r() * 3)]); } return { m: B.fertig(), g: G.fertig() }; }
+  for (let x = -60; x < breite + 60; x += 16 + r() * 8) { const z = -70 - r() * 50, h = 22 + r() * 30, rr = 16 + r() * 14, n = 6 + Math.floor(r() * 3);
+    B.zyl(x, -6, z, rr, rr * .34, h * .66, n, fa[Math.floor(r() * 3)], false); B.zyl(x, -6 + h * .66, z, rr * .34, art === 'vulkan' && r() < .2 ? rr * .12 : 0, h * .34, n, kappe, false); }
+  if (art === 'vulkan') { const vx = breite * .55; B.zyl(vx, -6, -110, 46, 8, 40, 9, '#5a4258', false); G.zyl(vx, 33.8, -110, 8, 7, .6, 9, '#ff7a2a'); }
+  for (let x = -30; x < breite + 30; x += 30 + r() * 20) { const y = 22 + r() * 10, z = -90 - r() * 30; for (let k = 0; k < 4; k++) B.kugel(x + (k - 1.5) * 5, y + (k % 2) * 2, z, 5 + r() * 2, 3 + r(), 4, art === 'vulkan' ? '#ffd3b0' : '#ffffff', 1, false); }
+  return { m: B.fertig(), g: G.fertig() };
+}
+
+function ab3Spiel(stage) {
+  const R = g3Neu(stage);
+  if (!R) { const d = document.createElement('div'); d.className = 'tb-box'; d.innerHTML = '<div class="tb-karte lr-karte lv-karte"><h2>🧊 Hier fehlt die 3D-Grafik</h2><p>Dieses Spiel braucht 3D-Grafik. Auf diesem Gerät klappt das leider nicht. Das Pixel-Abenteuer in der Pixel-Welt geht aber!</p></div>'; stage.appendChild(d); return; }
+  const M = G3.neu(), M2 = G3.neu(), M3 = G3.neu();
+  const mods = {}, mod = art => { if (mods[art]) return mods[art]; const o = ab3Modelle(art), m = {}; Object.keys(o).forEach(k => m[k] = R.mesh(o[k])); return (mods[art] = m); };
+  let A = null, art = 'eis', ov = null, druck = new Map(), keys = { l: 0, r: 0, u: 0 }, uAlt = 0;
+  const kam = { auge: [0, 3, 18], ziel: [0, 3, 0], fov: 38, nah: .5, fern: 520 };
+  let camX = 8, camY = 6, Hv = 10, Wv = 16;
+
+  function bauen(L) {
+    if (A) { A.chunks.forEach(c => { R.weg(c.m); R.weg(c.g); R.weg(c.f); R.weg(c.fake); }); R.weg(A.kul && A.kul.m); R.weg(A.kul && A.kul.g); }
+    art = L.art; const D = L.D, h = D.m.length, w = D.m[0].length, grid = D.m.map(r => r.split(''));
+    A = { L, D, w, h, grid, ents: [], stars: new Set(), starsMax: 0, fish: 0, fishMax: 0, solved: 0, geheim: 0, t: 0, phase: 'play', chunks: [], pw: {}, pause: false, deaths: 0, teile: [], msg0: 0 };
+    const E = o => { A.ents.push(o); return o; }; let sid = 0;
+    for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) {
+      const c = grid[y][x], clear = () => { grid[y][x] = ' '; };
+      if (c === 'P') { A.start = { x: x + .5, y: y + 1 }; clear(); }
+      else if (c === 'o') { E({ k: 'fisch', x: x + .5, y: y + .5, ph: x * .7 }); A.fishMax++; clear(); }
+      else if (c === '*') { E({ k: 'stern', x: x + .5, y: y + .5, id: sid++ }); A.starsMax++; clear(); }
+      else if (c === 'H') { E({ k: 'herz', x: x + .5, y: y + .5 }); clear(); }
+      else if (c === 'C') { E({ k: 'krabbe', x: x + .5, y: y + 1, dir: -1, w: .8 }); clear(); }
+      else if (c === 'E') { E({ k: 'huepfer', x: x + .5, y: y + 1, y0: y + 1, vy: 0, dir: -1, hj: 1 + (x % 3) * .4 }); clear(); }
+      else if (c === 'B') { E({ k: 'vogel', x0: x + .5, x: x + .5, y0: y + .5, y: y + .5, ph: x * .9, dir: 1 }); clear(); }
+      else if (c === 'R') { E({ k: 'kanone', tx: x, ty: y, cd: 1.5 }); }
+      else if (c === 'Y') { E({ k: 'zapfen', x: x + .5, y: y, y0: y, st: 0, t: 0, vy: 0 }); clear(); }
+      else if (c === 'J') { E({ k: 'feder', tx: x, ty: y, sq: 0 }); }
+      else if (c === 'W') { E({ k: 'duese', tx: x, ty: y, ph: (x * .37) % 3.2 }); }
+      else if (c === 'Q') { E({ k: 'kiste', tx: x, ty: y, used: false, bump: 0, cd: 0 }); }
+      else if (c === 'T') { const g = E({ k: 'tor', tx: x, ty: y, open: false, lift: 0, cd: 0 }); for (let k = 0; k < 3; k++) if (y - k >= 0) grid[y - k][x] = 'T'; }
+      else if (c === 'M' || c === 'V') { E({ k: 'steg', v: c === 'V', x0: x, y0: y, x, y, w: 3, ph: x * .37, dx: 0, dy: 0 }); clear(); }
+      else if (c === 'Z') { E({ k: 'wackel', tx: x, ty: y, st: 0, t: 0, fy: 0 }); }
+      else if (c === 'K') { E({ k: 'fahne', x: x + .5, y: y + 1, up: false }); clear(); }
+      else if (c === 'F') { E({ k: 'iglu', x: x + .5, y: y + 1 }); A.ziel = { x: x + .5, y: y + 1 }; clear(); }
+      else if (c === 'X') { E({ k: 'truhe', x: x + .5, y: y + 1, open: false, t: 0 }); clear(); }
+    }
+    A.cp = { ...A.start }; A.safe = { ...A.start };
+    A.p = { x: A.start.x, y: A.start.y, vx: 0, vy: 0, on: false, dir: 1, coy: 0, jb: 0, inv: 0, sq: 0, boost: 0, plat: null, anim: 0, ry: -1.92, dj: false, ground: '', gx: 0, lock: 0, hide: false };
+
+    const P = AB3_PAL[art], fest = (x, y) => { const c = x < 0 || x >= w ? '#' : y < 0 || y >= h ? ' ' : grid[y][x]; return c === '#' || c === 'I'; }, Y = y => h - y, zd = AB3_ZD;
+    for (let c0 = 0; c0 < w; c0 += AB3_CH) {
+      const B = g3Bau(c0 + 3), G = g3Bau(c0 + 5), F = g3Bau(c0 + 7), Fk = g3Bau(c0 + 9), r = B.zuf, c1 = Math.min(w, c0 + AB3_CH);
+      for (let y = 0; y < h; y++) for (let x = c0; x < c1; x++) {
+        const c = grid[y][x]; if (c !== '#' && c !== 'I' && c !== 'g') continue;
+        const T = c === 'g' ? Fk : B, x0 = x, x1 = x + 1, y0 = Y(y) - 1, y1 = Y(y), mi = [x + .5, y0 + .5, 0], ice = c === 'I';
+        T.zitter = ice ? .03 : .06;
+        const fc = ice ? P.eis : y > 12 ? P.tief : (y % 2 ? P.front : P.front2), nb = (xx, yy) => c === 'g' ? (grid[yy] && grid[yy][xx] === 'g') || fest(xx, yy) : fest(xx, yy);
+        T.q([x0, y0, zd], [x1, y0, zd], [x1, y1, zd], [x0, y1, zd], fc, mi);
+        if (!ice && c === '#' && y < 12 && fest(x, y - 1) && r() < (art === 'wolken' ? .55 : .16)) { if (art === 'wolken') T.kugel(x + .2 + r() * .6, y0 + .2 + r() * .6, zd, .55 + r() * .3, .45 + r() * .2, .22, r() < .5 ? '#ffffff' : '#eef5ff', 1); else T.kugel(x + .5, y0 + .5, zd, .38 + r() * .2, .3 + r() * .15, .12, G3.hell(fc, .82 + r() * .25), 0, false); }
+        if (!nb(x - 1, y)) T.q([x0, y0, -zd], [x0, y0, zd], [x0, y1, zd], [x0, y1, -zd], G3.hell(fc, .9), mi);
+        if (!nb(x + 1, y)) T.q([x1, y0, -zd], [x1, y0, zd], [x1, y1, zd], [x1, y1, -zd], G3.hell(fc, .9), mi);
+        if (!nb(x, y - 1) || y === 12) T.q([x0, y0, -zd], [x1, y0, -zd], [x1, y1, -zd], [x0, y1, -zd], G3.hell(fc, .6), mi);
+        if (y < h - 1 && !nb(x, y + 1)) T.q([x0, y0, -zd], [x1, y0, -zd], [x1, y0, zd], [x0, y0, zd], G3.hell(fc, .7), mi);
+        if (ice && !nb(x, y - 1)) T.q([x0, y1, -zd], [x1, y1, -zd], [x1, y1, zd], [x0, y1, zd], '#e8f8ff', mi);
+      }
+
+      for (let y = 0; y < h; y++) { let x = c0;
+        while (x < c1) { const ok = xx => xx < c1 && (grid[y][xx] === '#' || grid[y][xx] === 'g') && !(y > 0 && (grid[y - 1][xx] === '#' || grid[y - 1][xx] === 'I' || grid[y - 1][xx] === 'g')) && !(art === 'hoehle' && y <= 1);
+          if (!ok(x)) { x++; continue; } let e = x; while (ok(e + 1)) e++; const T = grid[y][x] === 'g' ? Fk : B, n = e - x + 1;
+          T.zitter = .03; T.kiste(x + n / 2, Y(y) - .17, 0, n + .08, .25, 2 * zd + .12, P.kappeS, P.kappe);
+          if (art === 'wolken') for (let k = .4; k < n; k += .9) T.kugel(x + k, Y(y) - .12, zd + .05, .45, .3, .28, '#ffffff', 1);
+          else if (art === 'eis' && r() < .5) T.kugel(x + r() * n, Y(y) + .02, (r() - .5) * 1.6, .5, .18, .4, '#ffffff', 1);
+          x = e + 1; } }
+
+      for (let y = 0; y < h; y++) { let x = c0;
+        while (x < c1) { const c = grid[y][x];
+          if (c === '=') { let e = x; while (e + 1 < c1 && grid[y][e + 1] === '=') e++; const n = e - x + 1, T = art === 'hoehle' ? G : B; T.zitter = .05;
+            if (art === 'wolken') { T.kiste(x + n / 2, Y(y) - .3, 0, n, .3, 1.8, '#ffffff', '#ffffff'); for (let k = .3; k < n; k += .6) T.kugel(x + k, Y(y) - .22, .7, .32, .24, .3, '#ffffff', 1); }
+            else { T.kiste(x + n / 2, Y(y) - .28, 0, n, .28, 1.8, P.steg, P.stegO); if (art === 'eis') for (let k = 0; k < n; k++) B.kiste(x + k + .5, Y(y) - .3, .88, .06, .3, .06, '#8a6038'); }
+            x = e + 1; continue; }
+          if (c === '^') { for (let i = 0; i < 3; i++) for (const zz of [-.55, .45]) B.zyl(x + .2 + i * .3, Y(y) - 1, zz, .15, 0, .78, 5, P.stachel); if (art === 'vulkan') G.kugel(x + .5, Y(y) - .95, .5, .4, .06, .3, '#ff6a2a', 0); x++; continue; }
+          if (c === '~' && (y === 0 || grid[y - 1][x] !== '~')) { let e = x; while (e + 1 < c1 && grid[y][e + 1] === '~' && grid[y - 1][e + 1] !== '~') e++; const n = e - x + 1;
+            F.zitter = .08; for (let k = 0; k < n; k++) F.kiste(x + k + .5, -2, 0, 1.001, Y(y) - .3 + 2, 2 * zd - .06, P.fl, G3.mix(P.fl, '#ffffff', art === 'vulkan' ? .35 : .25)); x = e + 1; continue; }
+          x++; } }
+
+
+      [[c0 === 0, -16, 0], [c1 >= w, w, w + 16]].forEach(([an, a, e]) => { if (!an) return; B.zitter = .04; for (let x = a; x < e; x += 2) { B.kiste(x + 1, -3, 0, 2, Y(12) + 3, 2 * zd, P.front, art === 'wolken' ? '#ffffff' : P.kappe); if (P.boden) for (let z = -zd; z > -30; z -= 3) B.boden(x, x + 2, z, z - 3, Y(12) - .4, P.boden); } if (art === 'hoehle') B.kiste((a + e) / 2, h - 2, 0, e - a, 2, 2 * zd, P.front); });
+      if (P.boden) { B.zitter = .04; for (let x = c0; x < c1; x += 3) for (let z = -zd; z > -30; z -= 3) B.boden(x, Math.min(c1, x + 3), z, z - 3, Y(12) - .4, z > -4 ? G3.mix(P.boden, P.front, .18) : P.boden); }
+      if (art === 'hoehle') { B.zitter = .06; for (let x = c0; x < c1; x += 2) { for (let yy = Y(12) - .4; yy < h + 2; yy += 2) B.q([x, yy, -8], [x + 2, yy, -8], [x + 2, yy + 2, -8], [x, yy + 2, -8], (x + Math.floor(yy)) % 4 ? '#4e4592' : '#463d86', [x + 1, yy + 1, -9]); if (r() < .3) B.kugel(x + 1, Y(12) + 1 + r() * 9, -7.9, .9, .7, .3, '#3f3678', 0, false); for (let k = 0; k < 2; k++) if (r() < .45) { const cy = Y(12) + 1 + r() * 8, cc = ['#9ff0ff', '#ff9ef0', '#c4a2ff'][Math.floor(r() * 3)], cx = x + r() * 2; G.mit(cx, cy, -7.8, 0, Math.PI / 2, (r() - .5) * 1.5, 1, 1, 1, () => { G.zyl(0, 0, 0, .3, 0, .9 + r() * .8, 5, cc); G.zyl(.3, 0, .1, .18, 0, .6, 5, cc); }); } } }
+      for (let k = 0; k < 8; k++) { const x = c0 + r() * (c1 - c0), z = -6 - r() * 20, s = .8 + r() * .7;
+        if (art === 'wolken') ab3Deko(B, G, art, x, z - 8, s * 1.4, r); else if (art !== 'hoehle') B.mit(0, Y(12) - .4, 0, 0, 0, 0, 1, 1, 1, () => ab3Deko(B, G, art, x, z, s, r)); else if (k < 5) B.mit(0, Y(12) - .4, 0, 0, 0, 0, 1, 1, 1, () => ab3Deko(B, G, art, x, -4.5 - r() * 3, s, r)); }
+      for (let x = c0 + r() * 2; x < c1; x += 1.6 + r() * 2.2) B.mit(0, Y(12) - .4, 0, 0, 0, 0, 1, 1, 1, () => ab3Rand(B, G, art, x, -2.1 - r() * 1.2, .6 + r() * .5, r));
+      A.chunks.push({ c0, m: R.mesh(B.fertig()), g: R.mesh(G.fertig()), f: R.mesh(F.fertig()), fake: Fk.anzahl() ? R.mesh(Fk.fertig()) : null, hatFake: Fk.anzahl() > 0 });
+    }
+    A.kul = (() => { const k = ab3Kulisse(art, w); return { m: R.mesh(k.m), g: R.mesh(k.g) }; })();
+    A.fake = []; for (let y = 0; y < h; y++) for (let x = 0; x < w; x++) if (grid[y][x] === 'g') A.fake.push([x, y]);
+    camX = A.p.x; camY = h - A.p.y + 2;
+  }
+
+  const tile = (x, y) => { if (x < 0 || x >= A.w) return '#'; if (y < 0 || y >= A.h) return ' '; return A.grid[y][x]; };
+  const solid = c => c === '#' || c === 'I' || c === 'Q' || c === 'q' || c === 'T' || c === 'J' || c === 'W' || c === 'Z' || c === 'R';
+  function moveX(p, onHit) {
+    const l = p.x - AB3_PW / 2, r = p.x + AB3_PW / 2, t = p.y - AB3_PH, b = p.y - .01;
+    for (let ty = Math.floor(t); ty <= Math.floor(b); ty++) for (let tx = Math.floor(l); tx <= Math.floor(r); tx++) {
+      const c = tile(tx, ty); if (!solid(c)) continue;
+      if (p.vx > 0 || (p.vx === 0 && p.x < tx + .5)) p.x = tx - AB3_PW / 2 - .001; else p.x = tx + 1 + AB3_PW / 2 + .001;
+      if (onHit) onHit(c, tx, ty); p.vx = 0; return;
+    }
+  }
+  function moveY(p, prevY, onHead) {
+    const l = p.x - AB3_PW / 2 + .03, r = p.x + AB3_PW / 2 - .03;
+    if (p.vy >= 0) { const ty = Math.floor(p.y - .001);
+      for (let tx = Math.floor(l); tx <= Math.floor(r); tx++) { const c = tile(tx, ty); if (solid(c) || (c === '=' && prevY <= ty + .03)) { p.y = ty; p.vy = 0; p.on = true; p.ground = c; p.gx = tx; return; } } }
+    else { const ty = Math.floor(p.y - AB3_PH);
+      for (let tx = Math.floor(l); tx <= Math.floor(r); tx++) { const c = tile(tx, ty); if (solid(c)) { p.y = ty + 1 + AB3_PH; p.vy = 0; if (onHead) onHead(c, tx, ty); return; } } }
+  }
+  const W3 = (x, y, z) => [x, A.h - y, z || 0];
+  const funken = (x, y, n, farben, st = 1, s = .07) => { for (let i = 0; i < n; i++) { const a = Math.random() * 6.28, b = Math.random() * 3.14; A.teile.push({ x, y: A.h - y, z: (Math.random() - .5) * .6, vx: Math.cos(a) * Math.sin(b) * 3 * st, vy: (1.5 + Math.random() * 3) * st, vz: Math.cos(b) * 2 * st, life: .5 + Math.random() * .4, max: .9, s0: s * (.7 + Math.random() * .6), f: farben[i % farben.length] }); } };
+  function hurt(K, vonX) {
+    const P = A.p; if (P.inv > 0 || A.phase !== 'play') return;
+    if (A.pw.stern > 0) return;
+    if (A.pw.blase) { A.pw.blase = 0; P.inv = 1.2; P.vy = -10; P.on = false; akSnd.plopp(.7); funken(P.x, P.y - .5, 16, ['#c8f2ff', '#ffffff'], 1.4, .09); K.msg('Die Schutzblase hat dich beschützt!', 1.4); return; }
+    K.herzen--; P.inv = 1.6; P.vy = -13.5; P.vx = (vonX != null ? Math.sign(P.x - vonX) || -P.dir : -P.dir) * 9; P.on = false; P.plat = null; K.shake = .25; akSnd.au();
+    funken(P.x, P.y - .5, 10, ['#ef4b4b', '#ffffff']);
+    if (K.herzen <= 0) { A.deaths++; K.msg('Puh! Nochmal ab der Fahne.', 1.8); P.lock = .5; h28aLater(() => respawn(K, true), 500); }
+  }
+  function respawn(K, voll, ort) {
+    const P = A.p, o = ort || A.cp; P.x = o.x; P.y = o.y; P.vx = P.vy = 0; P.inv = 1.5; P.plat = null; P.lock = 0; if (voll || K.herzen <= 0) K.herzen = 3;
+    camX = P.x; funken(P.x, P.y - .5, 14, ['#ffffff', '#8fd0ff']);
+  }
+
+  function frage(K, titel, sub, ok, bad) {
+    if (ov || A.phase !== 'play') return; A.pause = true; keys = { l: 0, r: 0, u: 0 }; druck.clear();
+    let t; try { t = pxTask(); } catch (e) { t = { q: '3 + 4 = ?', opts: ['6', '7', '8'], a: '7' }; }
+    ov = document.createElement('div'); ov.className = 'ab3-ov';
+    ov.innerHTML = `<div class="ab3-frage" role="dialog" aria-label="Aufgabe"><div class="ab3-fh"><span>${esc(titel)}</span>${typeof Speech !== 'undefined' && Speech.ok && t.say ? '<button class="ab3-say" data-act="ab3say" aria-label="Vorlesen">🔊</button>' : ''}</div>
+      ${t.e ? `<div class="ab3-fe" aria-hidden="true">${t.e}</div>` : ''}<div class="ab3-fq">${esc(t.q)}</div>
+      <div class="ab3-opts n${t.opts.length}">${t.opts.map((x, i) => `<button class="ab3-opt" data-act="ab3ans" data-i="${i}">${esc(x)}</button>`).join('')}</div><div class="ab3-fb" aria-live="polite">${sub ? esc(sub) : ''}</div></div>`;
+    stage.appendChild(ov); ov.ab3 = { t, ok, bad, K, fertig: false };
+    try { pxS().tasks = (pxS().tasks | 0) + 1; } catch (e) { }
+  }
+  function antwort(i) {
+    if (!ov || !ov.ab3 || ov.ab3.fertig) return; const o = ov.ab3, v = o.t.opts[i], richtig = v === o.t.a; o.fertig = true;
+    ov.querySelectorAll('.ab3-opt').forEach((b, j) => { b.disabled = true; if (o.t.opts[j] === o.t.a) b.classList.add('ok'); else if (j === i) b.classList.add('no'); });
+    const fb = ov.querySelector('.ab3-fb');
+    if (richtig) { try { pxS().ok = (pxS().ok | 0) + 1; } catch (e) { } Sound.good(); fb.textContent = R3pick(['Richtig! ⭐', 'Super! ✨', 'Genau! 🎉', 'Klasse! 💪']); }
+    else { Sound.bad(); fb.innerHTML = `Richtig ist <b>${esc(o.t.a)}</b>.`; }
+    save();
+    const el = ov; setTimeout(() => { if (ov !== el) return; el.remove(); ov = null; if (A) { A.pause = false; keys = { l: 0, r: 0, u: 0 }; druck.clear(); } try { richtig ? o.ok() : o.bad && o.bad(); } catch (e) { setTimeout(() => { throw e; }, 0); } }, richtig ? 750 : 1700);
+  }
+  const R3pick = a => a[Math.floor(Math.random() * a.length)];
+  ACT.ab3ans = t => antwort(Number(t.dataset.i));
+  ACT.ab3say = () => { if (ov && ov.ab3 && ov.ab3.t.say) Speech.say(ov.ab3.t.say, 'de-DE'); };
+  h28aOnEnd(() => { if (ov) ov.remove(); ov = null; });
+  function power(K, k) {
+    const ks = Object.keys(AB3_POWER); k = k || ks[(A.L.i + (A.pwN = (A.pwN || 0) + 1)) % ks.length]; const D = AB3_POWER[k];
+    A.pw[k] = D[2]; K.msg(D[1], 2.4); akSnd.power(); funken(A.p.x, A.p.y - .6, 22, ['#ffd84a', '#ffffff', '#a98bff'], 1.4, .08);
+  }
+  function torHit(K, tx) {
+    const g = A.ents.find(e => e.k === 'tor' && e.tx === tx && !e.open); if (!g || g.cd > 0) return; g.cd = 1.2;
+    frage(K, '🔒 Rätsel-Tor', !A.solved ? 'Löse die Aufgabe, dann geht das Tor auf!' : '', () => { A.solved++; g.open = true; akSnd.power(); funken(tx + .5, g.ty - 1, 26, ['#ffd84a', '#a98bff', '#ffffff'], 1.6, .09); },
+      () => { A.p.x -= .4 * Math.sign(tx + .5 - A.p.x); K.msg('Fast! Probier eine andere Aufgabe.', 1.8); });
+  }
+  function kisteHit(K, tx, ty) {
+    const b = A.ents.find(e => e.k === 'kiste' && e.tx === tx && e.ty === ty); if (!b) return; b.bump = .2; if (b.used || b.cd > 0) return; b.cd = 1;
+    frage(K, '❓ Fragekiste', 'Richtig = 3 Fische und eine Extra-Kraft!', () => { A.solved++; b.used = true; A.grid[ty][tx] = 'q';
+      for (let k = 0; k < 3; k++) A.ents.push({ k: 'fisch', x: tx + .5 + (k - 1) * .7, y: ty - .6, ph: k, vy: -10 - k * 2, pop: 1.1 }); A.fishMax += 3; akSnd.muenze(); power(K); }, () => { b.bump = .4; });
+  }
+  function fertig(K) {
+    if (A.phase !== 'play') return; A.phase = 'ende'; A.p.lock = 9; Sound.win();
+    const ns = A.stars.size;
+    K.ende(true, Math.max(1, ns), `<p>⭐ ${ns} von 3 Sternen gefunden<br>🐟 ${A.fish} Fische · 🔒 ${A.solved} Rätsel gelöst${A.geheim ? '<br>🗝️ Geheimversteck gefunden!' : ''}</p>`, '', 2800);
+  }
+
+  function schritt(K, dt) {
+    const P = A.p; A.t += dt;
+    Object.keys(A.pw).forEach(k => { if (k !== 'blase' && A.pw[k] > 0) { A.pw[k] -= dt; if (A.pw[k] <= 0) delete A.pw[k]; } });
+
+    A.ents.forEach(e => { if (e.k !== 'steg') return; const s = Math.sin(A.t * .9 + e.ph), nx = e.v ? e.x0 : e.x0 + (s + 1) * 2, ny = e.v ? e.y0 - (s + 1) * 2 : e.y0; e.dx = nx - e.x; e.dy = ny - e.y; e.x = nx; e.y = ny; if (P.plat === e) { P.x += e.dx; P.y += e.dy; moveX(P); } });
+
+    const locked = P.lock > 0 || A.phase !== 'play'; if (P.lock > 0 && P.lock < 5) P.lock -= dt;
+    const ax = A.phase === 'ende' ? 1 : locked ? 0 : (keys.r || druckHat('r') ? 1 : 0) - (keys.l || druckHat('l') ? 1 : 0), springt = !locked && (keys.u || druckHat('u'));
+    const ice = P.on && P.ground === 'I', acc = P.on ? (ice ? 19 : 56) : 39, fr = P.on ? (ice ? 4.5 : 69) : 9, maxv = A.phase === 'ende' ? 2.6 : ice ? 7 : AB3_MAXV;
+    if (ax) { P.vx += ax * acc * dt; P.dir = ax; } else { const sg = Math.sign(P.vx); P.vx -= sg * Math.min(Math.abs(P.vx), fr * dt); }
+    P.vx = Math.max(-maxv, Math.min(maxv, P.vx));
+    if (springt && !uAlt) P.jb = .14; else P.jb -= dt; uAlt = springt;
+    P.coy = P.on ? .1 : P.coy - dt;
+    if (P.jb > 0 && P.coy > 0) { P.vy = -AB3_JUMP; P.jb = 0; P.coy = 0; P.on = false; P.plat = null; akSnd.hop(); funken(P.x, P.y, 5, ['#ffffff', '#dfe9f5'], .5, .05); }
+    else if (P.jb > 0 && A.pw.fluegel > 0 && !P.on && !P.dj) { P.dj = true; P.jb = 0; P.vy = -AB3_JUMP * .9; akSnd.hop(); funken(P.x, P.y, 8, ['#ffffff', '#ffd84a'], .7, .06); }
+    if (!springt && P.vy < -8.75 && P.boost <= 0) P.vy = -8.75;
+    if (P.boost > 0) P.boost -= dt;
+    const warOn = P.on; P.vy = Math.min(P.vy + AB3_GRAV * dt, 23);
+    P.x += P.vx * dt; moveX(P, (c, tx) => { if (c === 'T') torHit(K, tx); });
+    const prevY = P.y; P.y += P.vy * dt; P.on = false; P.ground = '';
+    moveY(P, prevY, (c, tx, ty) => { if (c === 'Q' || c === 'q') kisteHit(K, tx, ty); });
+    P.plat = null;
+    if (P.vy >= 0) A.ents.forEach(e => { if (e.k !== 'steg' || P.plat) return; if (P.x + AB3_PW / 2 > e.x + .05 && P.x - AB3_PW / 2 < e.x + e.w - .05 && prevY <= e.y + .12 + Math.max(0, e.dy) && P.y >= e.y - .06) { P.y = e.y; P.vy = 0; P.on = true; P.plat = e; P.ground = '='; } });
+    if (P.on) { P.dj = false; if (!warOn) { P.sq = .12; funken(P.x, P.y, 3, ['#ffffff'], .4, .05); } }
+    if (P.sq > 0) P.sq -= dt;
+    if (P.on && (P.ground === '#' || P.ground === 'I') && solid(tile(P.gx - 1, Math.round(P.y))) && solid(tile(P.gx + 1, Math.round(P.y)))) A.safe = { x: P.gx + .5, y: P.y };
+
+    if (P.on && P.ground === 'J') { const f = A.ents.find(e => e.k === 'feder' && e.tx === P.gx); if (f) f.sq = .25; P.vy = -AB3_SPRING; P.on = false; P.boost = .6; akGleit(300, 900, .25, 'triangle', .12); }
+    A.ents.forEach(e => {
+      if (e.k === 'feder' && e.sq > 0) e.sq -= dt; if (e.k === 'kiste') { if (e.bump > 0) e.bump -= dt; if (e.cd > 0) e.cd -= dt; } if (e.k === 'tor' && e.cd > 0) e.cd -= dt;
+      if (e.k === 'duese') { const cyc = (A.t + e.ph) % 3.2; e.an = cyc > 2.0; e.warn = cyc > 1.5 && !e.an;
+        if (e.an && P.on && P.ground === 'W' && P.gx === e.tx) { P.vy = -AB3_SPRING; P.on = false; P.boost = .6; akGleit(200, 700, .4, 'sawtooth', .04); }
+        if ((e.an && Math.random() < .6) || (e.warn && Math.random() < .15)) A.teile.push({ x: e.tx + .5 + (Math.random() - .5) * .4, y: A.h - e.ty + .3, z: (Math.random() - .5) * .5, vx: 0, vy: e.an ? 8 + Math.random() * 4 : 2, vz: 0, life: e.an ? .9 : .4, max: .9, s0: .13, f: art === 'vulkan' ? '#ffffff' : '#e6f2ff', schwebt: true }); }
+    });
+
+    if (P.inv > 0) P.inv -= dt;
+    for (let tx = Math.floor(P.x - AB3_PW / 2 + .1); tx <= Math.floor(P.x + AB3_PW / 2 - .1); tx++) { const ty = Math.floor(P.y - .2); if (tile(tx, ty) === '^') hurt(K, tx + .5); }
+    const unter = tile(Math.floor(P.x), Math.floor(P.y - .3));
+    if (A.phase === 'play' && (unter === '~' || P.y > A.h + 2)) {
+      funken(P.x, Math.min(P.y, A.h - .5), 12, art === 'vulkan' ? ['#ffd84a', '#ff9d2e'] : ['#bfe4ff', '#ffffff'], 1.2, .08);
+      if (A.pw.stern > 0 || A.pw.blase) { if (A.pw.blase) A.pw.blase = 0; respawn(K, false, A.safe); }
+      else { K.herzen--; akSnd.platsch(); if (K.herzen <= 0) { A.deaths++; K.msg('Puh! Nochmal ab der Fahne.', 1.8); respawn(K, true); } else { K.msg(art === 'vulkan' ? 'Heiß! Zurück auf festen Boden.' : art === 'wolken' ? 'Huch! Zurück auf die Wolke.' : 'Platsch! Zurück auf festen Boden.', 1.5); respawn(K, false, A.safe); } }
+    }
+
+    const stampf = e => { e.tot = true; e.vy = -9; e.vx = P.dir * 2.5; P.vy = springt ? -22.5 : -16; P.boost = .2; akSnd.plopp(); funken(e.x, e.y - .4, 10, ['#ffd84a', '#ffffff']); A.fish++; K.punkte = A.fish; };
+    const beruehrt = (e, hw, oben, unten) => Math.abs(P.x - e.x) < hw && P.y > e.y - oben && P.y - AB3_PH < e.y + unten;
+    A.ents.forEach(e => {
+      if (e.weg) return;
+      const dx = P.x - e.x;
+      if (e.k === 'fisch' || e.k === 'stern' || e.k === 'herz') {
+        if (e.pop > 0) { e.pop -= dt; e.vy += 30 * dt; e.y += e.vy * dt; if (e.pop <= .55 && e.vy > 0) { e.weg = true; A.fish++; K.punkte = A.fish; Sound.glocke(1319, 0, .15, .06); funken(e.x, e.y, 6, ['#ffd84a', '#ffffff'], .6, .05); } return; }
+        if (e.k === 'fisch' && A.pw.magnet > 0 && Math.abs(dx) < 5 && Math.abs(P.y - .5 - e.y) < 4) { e.x += dx * Math.min(1, dt * 7); e.y += (P.y - .5 - e.y) * Math.min(1, dt * 7); }
+        if (Math.abs(P.x - e.x) < .75 && Math.abs(P.y - .47 - e.y) < .85) {
+          e.weg = true;
+          if (e.k === 'fisch') { A.fish++; K.punkte = A.fish; A.streak = (A.streakT > 0 ? (A.streak || 0) + 1 : 1); A.streakT = .5; const ton = [0, 2, 4, 7, 9, 12, 14, 16][Math.min(7, A.streak - 1)]; Sound.glocke(1047 * Math.pow(2, ton / 12), 0, .16, .06); funken(e.x, e.y, 5, ['#ffd84a', '#ffffff'], .6, .05); }
+          else if (e.k === 'stern') { A.stars.add(e.id); Sound.win(); funken(e.x, e.y, 30, ['#ffd84a', '#fff3c4', '#ffffff'], 1.8, .09); K.ruf(`Stern ${A.stars.size} von 3!`); K.ziel = `★ ${A.stars.size} von 3 Sternen`; K.zielOk = A.stars.size >= 3; }
+          else { if (K.herzen < 3) K.herzen++; else { A.fish += 3; K.punkte = A.fish; } Sound.good(); funken(e.x, e.y, 12, ['#ef4b4b', '#ff8fc2']); }
+        }
+      } else if (e.k === 'krabbe' || e.k === 'huepfer') {
+        if (e.tot) { e.vy += 36 * dt; e.y += e.vy * dt; e.x += e.vx * dt; if (e.y > A.h + 3) e.weg = true; return; }
+        if (e.k === 'huepfer') { e.hj -= dt; if (e.hj <= 0 && e.y >= e.y0 - .01) { e.vy = -12; e.hj = 1.2 + Math.random(); } e.vy += 38 * dt; e.y = Math.min(e.y0, e.y + e.vy * dt); if (e.y >= e.y0) e.vy = 0; }
+        e.x += e.dir * (e.k === 'krabbe' ? 1.5 : 2.4) * dt;
+        const vor = Math.floor(e.x + e.dir * .5), ty = Math.floor(e.y0 !== undefined ? e.y0 - .3 : e.y - .3);
+        if (solid(tile(vor, ty)) || !(solid(tile(vor, ty + 1)) || tile(vor, ty + 1) === '=')) e.dir *= -1;
+        if (beruehrt(e, .7, .75, 0)) { if (A.pw.stern > 0) { stampf(e); P.vy = Math.min(P.vy, -4); } else if (P.vy > 2 && P.y < e.y - .3) stampf(e); else hurt(K, e.x); }
+      } else if (e.k === 'vogel') {
+        if (e.tot) { e.vy = (e.vy || -4) + 20 * dt; e.y += e.vy * dt; e.x += 2 * dt; if (e.y > A.h + 3) e.weg = true; return; }
+        const nx = e.x0 + Math.sin(A.t * .8 + e.ph) * 2.75; e.dir = nx > e.x ? 1 : -1; e.x = nx; e.y = e.y0 + Math.sin(A.t * 3 + e.ph) * .25;
+        if (Math.abs(P.x - e.x) < .7 && P.y > e.y - .25 && P.y - AB3_PH < e.y + .3) { if (A.pw.stern > 0 || (P.vy > 2 && P.y < e.y + .15)) stampf(e); else hurt(K, e.x); }
+      } else if (e.k === 'kanone') {
+        e.cd -= dt; e.rueck = Math.max(0, (e.rueck || 0) - dt);
+        if (e.cd <= 0 && P.x < e.tx && e.tx - P.x < 14 && A.phase === 'play') { e.cd = 3.4; e.rueck = .25; A.ents.push({ k: 'ball', x: e.tx - .1, y: e.ty + .45, vx: -4.2, vy: 0, rot: 0 }); akGleit(160, 70, .25, 'triangle', .1); }
+      } else if (e.k === 'ball') {
+        e.vy = Math.min(e.vy + 40 * dt, 18); e.x += e.vx * dt; e.y += e.vy * dt; e.rot += dt * 8;
+        const ty = Math.floor(e.y + .27), tx = Math.floor(e.x), c = tile(tx, ty);
+        if (solid(c) || c === '=') { e.y = ty - .27; e.vy = 0; }
+        if (solid(tile(Math.floor(e.x - .3), Math.floor(e.y)))) { e.weg = true; funken(e.x, e.y, 8, ['#ffffff', '#dfe9f5']); }
+        if (c === '~' || e.y > A.h + 2 || e.x < -2) e.weg = true;
+        if (Math.abs(dx) < .6 && P.y > e.y - .3 && P.y - AB3_PH < e.y + .3) { if (A.pw.stern > 0 || (P.vy > 2 && P.y < e.y)) { e.weg = true; P.vy = -15; akSnd.plopp(); funken(e.x, e.y, 12, ['#ffffff']); } else { e.weg = true; hurt(K, e.x); } }
+      } else if (e.k === 'zapfen') {
+        if (e.st === 0 && Math.abs(dx) < 1.3 && P.y > e.y) { e.st = 1; e.t = .5; }
+        else if (e.st === 1) { e.t -= dt; if (e.t <= 0) e.st = 2; }
+        else if (e.st === 2) { e.vy += 40 * dt; e.y += e.vy * dt; if (solid(tile(Math.floor(e.x), Math.floor(e.y + .85))) || e.y > A.h) { e.weg = true; funken(e.x, e.y + .8, 10, ['#bfefff', '#ffffff']); akSnd.plopp(1.4); }
+          if (Math.abs(dx) < .45 && P.y > e.y + .2 && P.y - AB3_PH < e.y + .85) { e.weg = true; hurt(K, e.x); } }
+      } else if (e.k === 'wackel') {
+        if (e.st === 0 && P.on && P.ground === 'Z' && P.gx === e.tx && Math.round(P.y) === e.ty) { e.st = 1; e.t = .6; }
+        else if (e.st === 1) { e.t -= dt; if (e.t <= 0) { e.st = 2; e.t = 3.2; e.fy = 0; e.fv = 0; A.grid[e.ty][e.tx] = ' '; akSnd.au(); } }
+        else if (e.st === 2) { e.fv += 30 * dt; e.fy += e.fv * dt; e.t -= dt; if (e.t <= 0 && !(Math.abs(P.x - (e.tx + .5)) < 1 && Math.abs(P.y - e.ty) < 1.5)) { e.st = 0; e.fy = 0; A.grid[e.ty][e.tx] = 'Z'; funken(e.tx + .5, e.ty, 6, ['#ffffff']); } }
+      } else if (e.k === 'fahne') {
+        if (!e.up && P.x > e.x - .4 && Math.abs(P.y - e.y) < 3) { e.up = true; A.cp = { x: e.x, y: e.y }; Sound.good(); funken(e.x + .4, e.y - 1.8, 16, ['#5cc85c', '#ffffff', '#ffd84a'], 1.2); K.msg('Zwischenstand gespeichert!', 1.4); }
+      } else if (e.k === 'tor') {
+        if (e.open && e.lift < 3) { e.lift = Math.min(3, e.lift + 3.4 * dt); if (e.lift >= 3) for (let k = 0; k < 3; k++) if (e.ty - k >= 0) A.grid[e.ty - k][e.tx] = ' '; }
+      } else if (e.k === 'truhe') {
+        if (!e.open && Math.abs(dx) < .8 && Math.abs(P.y - e.y) < .8) { e.open = true; A.fish += 10; A.fishMax += 10; K.punkte = A.fish; A.geheim = 1; Sound.win(); funken(e.x, e.y - .5, 40, ['#ffd84a', '#fff3c4', '#ffffff', '#8fd0ff'], 2, .08); K.ruf('Schatz gefunden!'); }
+        if (e.open) e.t = Math.min(1, e.t + dt * 3);
+      } else if (e.k === 'iglu') {
+        if (A.phase === 'play' && dx > -2.2 && dx < 1 && Math.abs(P.y - e.y) < 1.2) fertig(K);
+        if (A.phase === 'ende' && P.x > e.x - 1.6) P.hide = true;
+      }
+    });
+    A.streakT = (A.streakT || 0) - dt;
+    if (A.ents.length > 400) A.ents = A.ents.filter(e => !e.weg);
+    if (P.x < .4) P.x = .4; if (P.x > A.w - .4) P.x = A.w - .4;
+    P.anim += dt * (P.on ? Math.abs(P.vx) * 2.3 : 0);
+    K.fort = Math.min(1, P.x / A.w);
+  }
+  function teileSchritt(dt) { for (let i = A.teile.length - 1; i >= 0; i--) { const q = A.teile[i]; q.life -= dt; if (q.life <= 0) { A.teile.splice(i, 1); continue; } if (!q.schwebt) q.vy -= 12 * dt; q.x += q.vx * dt; q.y += q.vy * dt; q.z += q.vz * dt; q.s = q.s0 * Math.min(1, q.life / q.max * 1.6); } if (A.teile.length > 240) A.teile.splice(0, A.teile.length - 240); }
+
+  function kamera(K, dt) {
+    const asp = K.W / Math.max(1, K.H), fov = 38, tf = Math.tan(fov * Math.PI / 360);
+    Wv = asp >= 1 ? 12.5 + Math.min(2, (asp - 1) * 2) : 8.5 + 4 * asp; let D = Wv / (2 * tf * asp); D = Math.max(D, 8.6 / (2 * tf)); Hv = 2 * D * tf;
+    const P = A.p, ziel = Math.max(Wv / 2 - .6, Math.min(A.w - Wv / 2 + .6, P.x + P.dir * 1.6 + P.vx * .12));
+    camX += (ziel - camX) * Math.min(1, dt * 3.2);
+    const fussY = A.h - P.y, bodenY = P.on ? fussY : (A.lastY !== undefined ? A.lastY : fussY); if (P.on) A.lastY = fussY;
+    let zy = bodenY + 1.6; if (fussY > zy + Hv * .28) zy = fussY - Hv * .28; if (fussY < zy - Hv * .3) zy = fussY + Hv * .3;
+    zy = Math.max(Hv * .5 - 1.4, Math.min(A.h + 1 - Hv * .38, zy));
+    camY += (zy - camY) * Math.min(1, dt * 2.6);
+    let e = [camX, camY + 1.6, D], t = [camX, camY + .3, 0];
+    if (K.phase === 'bereit' || !K.L) { const a = Math.sin(K.t * .4) * .35; e = [P.x + Math.sin(a) * D * .55, camY + 1.2, Math.cos(a) * D * .55]; t = [P.x, A.h - P.y + .8, 0]; }
+    if (A.phase === 'ende') { const q = Math.min(1, (A.endT = (A.endT || 0) + dt) / 1.6); e = [e[0] + (A.ziel.x + .6 - e[0]) * q * .6, e[1] + (A.h - A.ziel.y + 2.2 - e[1]) * q * .5, e[2] + (D * .72 - e[2]) * q]; t = [t[0] + (A.ziel.x + .6 - t[0]) * q, t[1] + (A.h - A.ziel.y + 1.2 - t[1]) * q, 0]; }
+    if (K.shake > 0) { e = [e[0] + Math.sin(K.t * 70) * K.shake * .3, e[1] + Math.cos(K.t * 55) * K.shake * .2, e[2]]; }
+    kam.auge = e; kam.ziel = t; kam.fov = fov;
+  }
+
+  function zeichneLumi(K, m) {
+    const P = A.p; if (P.hide) return; if (P.inv > 0 && Math.floor(P.inv * 10) % 2 === 1 && A.phase === 'play') return;
+    const zielRy = -P.dir * (Math.PI / 2 + .35); let d = zielRy - P.ry; P.ry += d * Math.min(1, 1 / 60 * 12);
+    const lauf = P.on && Math.abs(P.vx) > .3, ph = P.anim, idle = !K.L || K.phase !== 'lauf';
+    let bob = 0, roll = 0, fl = .25, fuss = 0, rx = 0, sq = 1;
+    if (idle) { bob = Math.sin(K.t * 2.2) * .01; fl = .25 + Math.sin(K.t * 2.2) * .08; }
+    else if (!P.on) { fl = P.vy < 0 ? 1.3 : .9; fuss = .5; rx = P.vy < 0 ? -.12 : .08; }
+    else if (lauf) { bob = Math.abs(Math.sin(ph)) * .06; roll = Math.sin(ph) * .1; fl = .3 + Math.abs(Math.sin(ph)) * .3; fuss = Math.sin(ph); }
+    if (A.phase === 'ende') { fl = 1.3 + Math.sin(K.t * 8) * .4; }
+    if (P.sq > 0) sq = 1 - P.sq * 1.2;
+    const s = .56, x = P.x, y = A.h - P.y + bob - .04;
+    G3.pose(M, x, y, 0, P.ry, rx, roll, s, s * sq, s);
+    const glanz = A.pw.stern > 0 ? { glanz: .8, leucht: .3 + .3 * Math.sin(K.t * 20), tint: [1, .95 + .05 * Math.sin(K.t * 10), .7 + .3 * Math.sin(K.t * 7)] } : { glanz: .3 };
+    R.mal(m.rumpf, M, glanz);
+    [-1, 1].forEach(sd => { G3.mal(M, G3.pose(M2, sd * .47, 1.05, -.02, 0, 0, sd * (fl + .1)), M3); R.mal(m.fl, M3, glanz);
+      G3.mal(M, G3.pose(M2, sd * .2, Math.max(0, -sd * fuss) * .12, sd * fuss * .22, 0, 0, 0), M3); R.mal(m.fuss, M3, glanz); });
+    if (A.pw.fluegel > 0) [-1, 1].forEach(sd => { G3.mal(M, G3.pose(M2, sd * .3, 1.0, .35, sd * .4, 0, sd * (.3 + Math.sin(K.t * 12) * .3), 1.2), M3); R.mal(m.fluegel, M3, { leucht: .3 }); });
+  }
+  function zeichne3D(K) {
+    const st = AB3_ST[art], m = mod(art); if (!A || !R.bild(kam, st, K.t)) return;
+    R.mal(A.kul.m, G3.pose(M, 0, 0, 0), { nebel: [40, 520], glanz: 0 }); R.mal(A.kul.g, M, { leucht: 1, nebel: [40, 520] });
+    const x0 = camX - Wv * .9 - 4, x1 = camX + Wv * .9 + 4, P = A.p;
+    A.chunks.forEach(c => { if (c.c0 + AB3_CH < x0 - 30 || c.c0 > x1 + 30) return; G3.pose(M, 0, 0, 0); R.mal(c.m, M, { glanz: .1 }); R.mal(c.g, M, { leucht: art === 'hoehle' ? .85 : .7 }); R.mal(c.f, G3.pose(M, 0, Math.sin(K.t * 1.6 + c.c0) * .05, 0), { leucht: art === 'vulkan' ? .95 : .2, glanz: art === 'vulkan' ? 0 : .9 }); });
+    const sicht = x => x > x0 && x < x1, H = A.h, t = K.t;
+    A.ents.forEach(e => {
+      if (e.weg) return; const ex = e.x !== undefined ? e.x : e.tx + .5; if (!sicht(ex)) return;
+      switch (e.k) {
+        case 'fisch': R.mal(m.fisch, G3.pose(M, e.x, H - e.y + Math.sin(t * 3 + e.ph) * .06, 0, t * 2.5 + e.ph, 0, 0, .62), { leucht: .3, glanz: .9 }); break;
+        case 'stern': R.mal(m.stern, G3.pose(M, e.x, H - e.y + Math.sin(t * 2) * .1, 0, t * 2, 0, 0, 1.35), { leucht: .45 + .2 * Math.sin(t * 5), glanz: 1 }); break;
+        case 'herz': R.mal(m.herz, G3.pose(M, e.x, H - e.y + Math.sin(t * 2.4) * .08, 0, t * 2, 0, 0, 1.1), { leucht: .25, glanz: .8 }); break;
+        case 'krabbe': R.mal(m.krabbe, G3.pose(M, e.x, H - e.y + (e.tot ? 0 : Math.abs(Math.sin(t * 8 + e.x)) * .04), 0, 0, 0, e.tot ? Math.PI : Math.sin(t * 8 + e.x) * .08, 1.05)); break;
+        case 'huepfer': R.mal(m.huepfer, G3.pose(M, e.x, H - e.y, 0, e.dir > 0 ? 0 : Math.PI, 0, e.tot ? Math.PI : 0, 1.05, e.vy < 0 ? 1.1 : 1, 1.05)); break;
+        case 'vogel': { G3.pose(M, e.x, H - e.y, 0, e.dir > 0 ? 0 : Math.PI, 0, e.tot ? Math.PI : 0, 1.15); R.mal(m.vogel, M); const fw = Math.sin(t * 12 + e.ph) * .7; [-1, 1].forEach(s => { G3.mal(M, G3.pose(M2, 0, .08, s * .1, 0, s * fw, 0, 1, 1, s), M3); R.mal(m.fluegel, M3); }); break; }
+        case 'kanone': R.mal(m.kanone, G3.pose(M, e.tx + .5 + (e.rueck || 0) * .6, H - e.ty - 1, 0)); break;
+        case 'ball': R.mal(m.kugel, G3.pose(M, e.x, H - e.y, 0, 0, 0, e.rot)); break;
+        case 'zapfen': R.mal(m.zapfen, G3.pose(M, e.x + (e.st === 1 ? Math.sin(t * 60) * .05 : 0), H - e.y, 0)); break;
+        case 'feder': R.mal(m.feder, G3.pose(M, e.tx + .5, H - e.ty - 1, 0, 0, 0, 0, 1, e.sq > 0 ? .6 + (1 - e.sq * 4) * .4 : 1, 1)); break;
+        case 'duese': R.mal(m.duese, G3.pose(M, e.tx + .5, H - e.ty - 1, 0), { leucht: e.warn ? .3 + .3 * Math.sin(t * 30) : 0 }); break;
+        case 'kiste': R.mal(m.kiste, G3.pose(M, e.tx + .5, H - e.ty - 1 + Math.max(0, e.bump) * .8, 0), e.used ? { tint: [.55, .55, .6] } : { leucht: .15 + .1 * Math.sin(t * 4), glanz: .6 }); break;
+        case 'tor': R.mal(m.tor, G3.pose(M, e.tx + .5, H - e.ty - 1 + e.lift, 0), { glanz: .7 }); break;
+        case 'steg': R.mal(m.steg, G3.pose(M, e.x, H - e.y, 0), art === 'hoehle' ? { leucht: .6 } : undefined); break;
+        case 'wackel': R.mal(m.wackel, G3.pose(M, e.tx + .5 + (e.st === 1 ? Math.sin(t * 50) * .06 : 0), H - e.ty - 1 - (e.fy || 0), 0)); break;
+        case 'fahne': R.mal(m.mast, G3.pose(M, e.x, H - e.y, 0)); R.mal(m.flagge, G3.pose(M, e.x, H - e.y + (e.up ? 0 : -1.1), 0, Math.sin(t * 3) * .15), { tint: e.up ? G3.f('#5cc85c') : [.75, .78, .82], leucht: e.up ? .2 : 0 }); break;
+        case 'iglu': R.mal(m.iglu, G3.pose(M, e.x + 1.2, H - e.y, -.2), { glanz: .5 }); break;
+        case 'truhe': G3.pose(M, e.x, H - e.y, 0); R.mal(m.truhe, M); R.mal(m.deckel, G3.mal(M, G3.pose(M2, 0, .5, .3, 0, -e.t * 1.6, 0), M3)); break;
+      }
+    });
+    zeichneLumi(K, m);
+    if (A.teile.length) R.teile(A.teile, .5);
+
+    A.chunks.forEach(c => { if (!c.fake || c.c0 + AB3_CH < x0 - 30 || c.c0 > x1 + 30) return; const nah = A.fake.some(([fx, fy]) => Math.abs(fx + .5 - P.x) < 2.2 && Math.abs(fy + .5 - (P.y - .5)) < 2.2); c.al = (c.al === undefined ? 1 : c.al) + ((nah ? .3 : 1) - (c.al === undefined ? 1 : c.al)) * .15; if (nah && !A.geheimSeen) { A.geheimSeen = 1; K.msg('Ein Geheimgang!', 1.4); } R.mal(c.fake, G3.pose(M, 0, 0, 0), c.al < .99 ? { alpha: c.al } : undefined); });
+    if (!P.hide) { let gy = P.y; for (let k = 0; k < 8; k++) { const c = tile(Math.floor(P.x), Math.floor(gy)); if (solid(c) || c === '=') break; gy++; } if (gy - P.y < 7) R.schatten(P.x, A.h - Math.floor(gy) + .08, 0, .32 * Math.max(.4, 1 - (gy - P.y) * .12), .55); }
+    if (A.pw.blase && !P.hide) R.mal(m.blase, G3.pose(M, P.x, A.h - P.y + .5, 0, 0, 0, 0, .78), { alpha: .25 + .05 * Math.sin(t * 5), leucht: .4, glanz: 1, tint: [.75, .95, 1] });
+  }
+
+  const knopfR = K => Math.max(30, Math.min(52, Math.min(K.W, K.H) * .085));
+  const knoepfe = K => { const r = knopfR(K), y = K.H - r - 18; return { l: [r + 20, y, r], r: [r * 3 + 34, y, r], u: [K.W - r * 1.25 - 22, y - r * .1, r * 1.25] }; };
+  const zone = (K, a, b) => { const kn = knoepfe(K); if (a > K.W * .5) return 'u'; if (b < K.H * .3) return null; return a < (kn.l[0] + kn.r[0]) / 2 ? 'l' : 'r'; };
+  const druckHat = k => { for (const v of druck.values()) if (v === k) return true; return false; };
+  function zeichneKnoepfe(K, x) {
+    const kn = knoepfe(K); x.save(); x.textAlign = 'center'; x.textBaseline = 'middle';
+    [['l', '◀'], ['r', '▶'], ['u', '⤒']].forEach(([k, s]) => { const [a, b, r] = kn[k], an = keys[k] || druckHat(k); x.globalAlpha = an ? .85 : .5; x.fillStyle = an ? '#ffffff' : 'rgba(255,255,255,.75)'; x.beginPath(); x.arc(a, b, r, 0, 7); x.fill(); x.lineWidth = 3; x.strokeStyle = 'rgba(18,50,74,.35)'; x.stroke(); x.globalAlpha = .9; x.fillStyle = '#12324A'; x.font = h28aFont(r * .8); x.fillText(s, a, b + 2); });
+    x.restore();
+  }
+
+  const dbg = K => ({ get A() { return A; }, get P() { return A && A.p; }, get R() { return R; }, get ov() { return ov; }, kam: () => kam,
+    taste: (k, an) => { keys[k] = an ? 1 : 0; }, antworte: richtig => { if (!ov) return false; antwort(ov.ab3.t.opts.indexOf(richtig ? ov.ab3.t.a : ov.ab3.t.opts.find(o => o !== ov.ab3.t.a))); return true; },
+    st: () => ({ phase: K.phase, x: +A.p.x.toFixed(2), y: +A.p.y.toFixed(2), on: A.p.on, herzen: K.herzen, fisch: A.fish, sterne: A.stars.size, geloest: A.solved, breite: A.w, sternK: K.sterne }),
+    hin: (x, y) => { A.p.x = x; A.p.y = y; A.p.vx = A.p.vy = 0; A.p.plat = null; camX = x; }, au: () => hurt(K, null) });
+  const K = akBaukasten(stage, {
+    id: 'ab3', titel: '🐧 Lumis 3D-Abenteuer', text: 'Das Hüpfspiel aus der Pixel-Welt in 3D! Lauf und spring mit Lumi über vier Inseln, knack Rätsel-Tore und finde in jedem Level drei versteckte Sterne.', welten: AB3_WELTEN, n: 5, punkteWort: 'Fische', ersterTipp: false,
+    hilfe: 'Ein Stern öffnet das nächste Level, im Ziel-Iglu gibt es mindestens einen. Jeder gefundene Stern zählt. Fahnen merken sich, wo du warst.',
+    layout: K => R.groesse(K.W, K.H),
+    level: ab3Level,
+    menu: K => { const [w, l] = lvAktuell('ab3', 4, 5); bauen(ab3Level(Math.max(0, w), Math.max(0, l))); },
+    start: (K, L) => { bauen(L); K.herzen = 3; K.punkte = 0; K.fort = 0; K.ziel = '★ 0 von 3 Sternen'; keys = { l: 0, r: 0, u: 0 }; druck.clear(); },
+    bereit: K => [K.L.name, K.L.i === 0 ? '◀ ▶ laufen, ⤒ springen. Spring Gegnern auf den Kopf!' : 'Drei Sterne sind versteckt. Findest du alle?'],
+    tippText: 'Tippe, um loszulaufen!',
+    update: (K, dt) => { if (!A) return; teileSchritt(dt); if (K.phase === 'lauf' && !A.pause) schritt(K, dt); else if (K.phase === 'ende' || K.phase === 'fertig') { if (!A.pause) schritt(K, dt); } kamera(K, dt); },
+    draw: (K, x) => { x.clearRect(-60, -60, K.W + 120, K.H + 120); R.messe(); zeichne3D(K); if (K.phase === 'lauf' && A && A.phase === 'play') zeichneKnoepfe(K, x); },
+    down: (K, a, b, e) => { const z = zone(K, a, b); if (z) druck.set(e ? e.pointerId : 0, z); },
+    move: (K, a, b, e) => { const id = e ? e.pointerId : 0; if (!druck.has(id)) return; const z = zone(K, a, b); if (z && z !== 'u' && druck.get(id) !== 'u') druck.set(id, z); },
+    up: (K, a, b, e) => { druck.delete(e ? e.pointerId : 0); },
+    taste: (K, e, an) => { const m = { ArrowLeft: 'l', a: 'l', ArrowRight: 'r', d: 'r', ArrowUp: 'u', w: 'u', ' ': 'u' }[e.key]; if (!m) return; e.preventDefault(); if (an && K.phase === 'bereit') { K.los(); return; } keys[m] = an ? 1 : 0; },
+    hudExtra: (K, fs) => {
+      const x = K.x, eng = K.W < 640; let y = 10 + fs * 2.6 + 8 + (eng ? 0 : 0);
+      Object.keys(A ? A.pw : {}).forEach(k => { const D = AB3_POWER[k]; if (!D) return; const w = fs * 5.2; x.fillStyle = 'rgba(255,255,255,.9)'; h28aRR(x, 10, y, w, fs * 1.4, fs * .5); x.fill(); x.font = `${fs * .85}px ${H28A_EMOJI_FONT}`; x.textAlign = 'center'; x.textBaseline = 'middle'; x.fillText(D[0], 10 + fs * .75, y + fs * .72);
+        x.fillStyle = '#DCE5EE'; h28aRR(x, 10 + fs * 1.5, y + fs * .55, w - fs * 2, fs * .3, fs * .15); x.fill(); x.fillStyle = K.welt().farbe; h28aRR(x, 10 + fs * 1.5, y + fs * .55, Math.max(fs * .3, (w - fs * 2) * Math.min(1, D[2] > 100 ? 1 : A.pw[k] / D[2])), fs * .3, fs * .15); x.fill(); y += fs * 1.6; });
+    },
+    notiz: () => A ? `${A.stars.size}/3 Sterne` : '',
+    dbg
+  });
+  h28aOnEnd(() => { if (ACT.ab3ans) delete ACT.ab3ans; });
+}
+FUN_GAMES.abenteuer3d = { c: 'hits', t: 'Lumis 3D-Abenteuer', seit: 'Lumis 3D-Abenteuer', d: 'Das Hüpfspiel aus der Pixel-Welt in echtem 3D! 20 lange Level auf vier Inseln mit Rätsel-Toren, Fragekisten und drei versteckten Sternen pro Level.', i: '🐧' };
+FUN_IMPL.abenteuer3d = ab3Spiel;
+
 /*@@src belohnung311.js@@*/
 
 
@@ -102833,7 +103689,7 @@ const BLW_ARTEN = [['abenteuer', '🗺️', 'Abenteuer & Entdecken', '#1e8f88', 
 const BLW_PX_ART = { 'Abenteuer': 'abenteuer', 'Rätsel': 'knobeln', 'Hüpfen': 'rennen', 'Rennen': 'rennen', 'Sport': 'sport', 'Geschick': 'geschick', 'Bauen': 'kreativ' };
 const BLW_FUN_ART = { abenteuer: 'abenteuer', schnell: 'geschick', knobel: 'knobeln', denk: 'knobeln', kreativ: 'kreativ', fussball: 'sport', hits: 'geschick' };
 const BLW_FUN_ID = { memory: 'brett', vier: 'brett', ttt: 'brett', ludo: 'brett', maumau: 'brett', sammelduell: 'brett', wuerfel: 'brett', quartett: 'brett', mahjong: 'brett',
-  fischtausch: 'knobeln', parkplatz: 'knobeln', pfeilflucht: 'knobeln', doppel: 'knobeln', pinguinsumo: 'sport', pinguinrutsche: 'rennen', huepfer: 'rennen', ski: 'rennen', vulkansprung: 'rennen', fruchtschnitt: 'geschick', delfinshow: 'geschick', meeresmix: 'knobeln', lauf3d: 'rennen' };
+  fischtausch: 'knobeln', parkplatz: 'knobeln', pfeilflucht: 'knobeln', doppel: 'knobeln', pinguinsumo: 'sport', pinguinrutsche: 'rennen', huepfer: 'rennen', ski: 'rennen', vulkansprung: 'rennen', fruchtschnitt: 'geschick', delfinshow: 'geschick', meeresmix: 'knobeln', lauf3d: 'rennen', abenteuer3d: 'abenteuer' };
 const BLW_CM_ICO = { baeck: '🥐', bahn: '🚂', detek: '🔍', markt: '🛒' };
 const BLW_NEU_TAGE = 14, BLW_LIEB_MAX = 8, BLW_NEU_MAX = 8;
 function blwS() { if (!isObj(S.blw)) S.blw = {}; const B = S.blw; if (!Array.isArray(B.h)) B.h = []; if (!isObj(B.n)) B.n = {}; if (!['art', 'neu', 'abc'].includes(B.sort)) B.sort = 'art'; return B; }
