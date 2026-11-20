@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-hjZyfAr15OZsmRx5tsEMegZnK7V1MoUllS8EN2MkXsM=' 'sha256-2e9KQhmlF+QxJfZ/7P+qTp5APl2iCMf/YmRLPM72yWE=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-ORpx5anyWaAfet6z5UcXFlRWWj+uyxOOTsO6pmHR7vc=' 'sha256-9jAU5n1E7HXm+PKq89bwjEgdn7QpBLSP5VR4Gglg09A=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -10518,8 +10518,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '4.3.0';
-  var MAP = {"probe":0,"files":[[10508,"fehler_kern.js"],[10796,null],[10798,"data.js"],[11513,"data_more.js"],[11885,"data_su2.js"],[12112,"data_es.js"],[12480,"data_wissen.js"],[12681,"data_v21.js"],[13366,"data_v24.js"],[13854,"data_v25.js"],[14343,"data_v26.js"],[14442,"data_v29.js"],[14750,"data_v30.js"],[15084,"data_v31.js"],[15390,"data_kunst.js"],[15587,"data_v214.js"],[15690,"data_v216.js"],[15983,"schrift.js"],[16287,"eingabe.js"],[16498,"data_k34m.js"],[17016,"data_k34d.js"],[17370,"data_k34s.js"],[17824,"data_v224.js"],[18697,"data_v225w.js"],[19066,"data_v225k.js"],[19510,"data_herz.js"],[19864,"data_fb226.js"],[20007,"data_tf226.js"],[20214,"data_v227a.js"],[21314,"data_v227b.js"],[22268,"data_h28b.js"],[22308,"data_l28a.js"],[23174,"data_l28b.js"],[24354,"data_schaetz.js"],[24836,"data_party8.js"],[24886,"data_alce.js"],[25557,"data_alce2.js"],[25806,"data_alce3.js"],[26221,"registry.js"],[26735,"app.js"],[27994,"fun.js"],[28582,"fun2.js"],[28898,"atelier.js"],[29272,"kunst225.js"],[29462,"herz.js"],[29826,"reise.js"],[30128,"iglu.js"],[30294,"offline.js"],[30401,"party.js"],[30885,"meine.js"],[31241,"loeffel.js"],[31412,"trend.js"],[31954,"fun228a.js"],[32815,"fun228b.js"],[33492,"kueche.js"],[34531,"stimme.js"],[34586,"klassen.js"],[34735,"freunde_vorab.js"],[34756,"mut.js"],[35178,"schule.js"],[35667,"fussball226.js"],[35989,"schaetzen.js"],[36420,"party8.js"],[37039,"tiere.js"],[37498,"fussball232.js"],[37713,"party8b.js"],[38015,"weg.js"],[38236,"px.js"],[38656,"px_fein.js"],[38710,"px_data.js"],[38967,"pxwelt.js"],[39051,"px_abenteuer.js"],[39880,"px_abenteuer2.js"],[40634,"px_abenteuer3.js"],[41025,"px_abenteuer4.js"],[41235,"px_baukasten.js"],[41344,"px_abenteuer_fein.js"],[41561,"px_abenteuer_fein2.js"],[41913,"px_abenteuer5.js"],[42320,"px_abenteuer6.js"],[42596,"px_abenteuer7.js"],[42952,"px_level300.js"],[43503,"px_schwach300.js"],[43577,"px_zwei300.js"],[43691,"lumicheckt300.js"],[43884,"schreiben300.js"],[44098,"rechenkarte300.js"],[44218,"lerncheck300.js"],[44441,"material300.js"],[44771,"lernweg300.js"],[45295,"px_ski.js"],[45937,"px_wurf.js"],[46466,"px_insel.js"],[47667,"px_kicker.js"],[48602,"px_eis.js"],[49588,"px_run.js"],[50803,"px_brk.js"],[51765,"px_pol.js"],[53116,"px_frog.js"],[54376,"px_angel.js"],[55691,"px_golf.js"],[56725,"px_tauch.js"],[57990,"px_hockey.js"],[58946,"px_lab.js"],[60281,"px_plopp.js"],[61487,"px_stadion.js"],[62998,"px_stadion2.js"],[63050,"px_training.js"],[63419,"cm.js"],[63909,"cmwelt.js"],[63965,"cm_baeck.js"],[64758,"cm_bahn.js"],[65522,"cm_detek.js"],[66239,"cm_markt.js"],[66952,"ff.js"],[67109,"ff_mathe.js"],[69099,"ff_deutsch.js"],[70687,"ff_sach_a.js"],[72936,"ff_sach_b.js"],[75165,"ff_sprachen.js"],[77573,"zm.js"],[78486,"tt.js"],[78699,"data_tagebuch.js"],[78742,"data_hoerspiel.js"],[78901,"leseecke.js"],[79228,"kt.js"],[79531,"comicbuch.js"],[79809,"alce.js"],[79972,"alce_aufg.js"],[80163,"formen.js"],[80614,"data_formen.js"],[80855,"data_formen2.js"],[81077,"spielzeit.js"],[81299,"data_faktmeinung.js"],[81418,"data_es248.js"],[81682,"data_en249.js"],[81921,"data_wissen249.js"],[82352,"data_kunst249.js"],[82635,"data_fussball250.js"],[82759,"data_werte252.js"],[83012,"data_lesen252.js"],[83073,"data_k34_252.js"],[83159,"art254.js"],[83277,"data_werte255.js"],[83415,"data_lesen255.js"],[83551,"forscher255.js"],[83699,"zufall250.js"],[83745,"stufe259.js"],[83755,"advent.js"],[84018,"wdh.js"],[84116,"eswarm288.js"],[84167,"abwechslung294.js"],[84242,"bilder293a.js"],[84332,"bilder293b.js"],[84462,"bilder293c.js"],[84560,"bilder293d.js"],[84682,"bilder293e.js"],[84846,"bilder293f.js"],[84926,"bilder292.js"],[85372,"denk.js"],[85409,"data_viaje265.js"],[85552,"klassenarbeit.js"],[85685,"quizduell.js"],[85808,"neu267.js"],[86073,"prog.js"],[86178,"lernstand.js"],[86245,"blatt.js"],[86347,"uebung295.js"],[86668,"schuh296.js"],[86876,"uebung297.js"],[87263,"minus298.js"],[87504,"schrift299.js"],[87632,"data_es271.js"],[87746,"plus269.js"],[87840,"schach.js"],[88072,"schachtaktik.js"],[88324,"fun270.js"],[88487,"data_neu274.js"],[88696,"plus272.js"],[88750,"spiele274.js"],[88873,"kasten.js"],[88977,"erklaer.js"],[89090,"apa.js"],[89171,"neu276.js"],[89312,"spiele276.js"],[89362,"neu277.js"],[89540,"spiele277.js"],[89795,"lernen278.js"],[90055,"spiele278.js"],[90398,"lernen279.js"],[90723,"lernen279b.js"],[91121,"spanisch280.js"],[91413,"spanisch283.js"],[91646,"mehr281.js"],[91792,"grafik280.js"],[92171,"tiefsee280.js"],[92449,"abenteuer280.js"],[92661,"abenteuer281.js"],[92773,"design281.js"],[92905,"party281.js"],[93036,"grafik281.js"],[93253,"traumtor292.js"],[93460,"kart293.js"],[93737,"lumi_live.js"],[93853,"sicher.js"],[94037,"stil.js"],[94091,"zurueck287.js"],[94134,"nfbilder300.js"],[94297,"formen300.js"],[94904,"musik300.js"],[95075,"lernweg300b.js"],[95198,"lernweg300c.js"],[95358,"espanol300.js"],[95464,"fabel310_bild.js"],[95715,"fabel310.js"],[96106,"eisbude310.js"],[96332,"turbo310.js"],[96537,"sumo310.js"],[96672,"beifahrer310.js"],[96747,"dreier310.js"],[96863,"ring310.js"],[96972,"loch330.js"],[97322,"reise340.js"],[97392,"fisch340.js"],[97948,"rutsche340.js"],[98359,"knobel340.js"],[98597,"frucht350.js"],[98902,"vulkan350.js"],[99145,"delfin350.js"],[99340,"musik350.js"],[99510,"arcade360.js"],[99626,"strasse360.js"],[99922,"blasen360.js"],[100130,"meer360.js"],[100299,"spirale360.js"],[100463,"sterne360.js"],[100670,"alt360a.js"],[100940,"alt360b.js"],[101133,"alt360c.js"],[101387,"alt360d.js"],[101550,"alt370a.js"],[101747,"alt370b.js"],[101951,"alt370c.js"],[102089,"gl390.js"],[102328,"lauf390.js"],[102837,"ab3_level.js"],[103182,"abenteuer400.js"],[103676,"figuren410.js"],[103767,"kart410.js"],[104088,"show410.js"],[104403,"ball410.js"],[104716,"fussball420.js"],[105141,"farbe420.js"],[105422,"flug430.js"],[105612,"sport430.js"],[105940,"belohnung311.js"],[106101,"druck311.js"],[106195,"freunde.js"],[106332,"start.js"],[106342,null],[106352,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '4.4.0';
+  var MAP = {"probe":0,"files":[[10508,"fehler_kern.js"],[10796,null],[10798,"data.js"],[11513,"data_more.js"],[11885,"data_su2.js"],[12112,"data_es.js"],[12480,"data_wissen.js"],[12681,"data_v21.js"],[13366,"data_v24.js"],[13854,"data_v25.js"],[14343,"data_v26.js"],[14442,"data_v29.js"],[14750,"data_v30.js"],[15084,"data_v31.js"],[15390,"data_kunst.js"],[15587,"data_v214.js"],[15690,"data_v216.js"],[15983,"schrift.js"],[16287,"eingabe.js"],[16498,"data_k34m.js"],[17016,"data_k34d.js"],[17370,"data_k34s.js"],[17824,"data_v224.js"],[18697,"data_v225w.js"],[19066,"data_v225k.js"],[19510,"data_herz.js"],[19864,"data_fb226.js"],[20007,"data_tf226.js"],[20214,"data_v227a.js"],[21314,"data_v227b.js"],[22268,"data_h28b.js"],[22308,"data_l28a.js"],[23174,"data_l28b.js"],[24354,"data_schaetz.js"],[24836,"data_party8.js"],[24886,"data_alce.js"],[25557,"data_alce2.js"],[25806,"data_alce3.js"],[26221,"registry.js"],[26735,"app.js"],[27995,"fun.js"],[28583,"fun2.js"],[28899,"atelier.js"],[29273,"kunst225.js"],[29463,"herz.js"],[29827,"reise.js"],[30129,"iglu.js"],[30295,"offline.js"],[30402,"party.js"],[30886,"meine.js"],[31242,"loeffel.js"],[31413,"trend.js"],[31955,"fun228a.js"],[32816,"fun228b.js"],[33493,"kueche.js"],[34532,"stimme.js"],[34587,"klassen.js"],[34736,"freunde_vorab.js"],[34757,"mut.js"],[35179,"schule.js"],[35668,"fussball226.js"],[35990,"schaetzen.js"],[36421,"party8.js"],[37040,"tiere.js"],[37499,"fussball232.js"],[37714,"party8b.js"],[38016,"weg.js"],[38237,"px.js"],[38657,"px_fein.js"],[38711,"px_data.js"],[38968,"pxwelt.js"],[39052,"px_abenteuer.js"],[39881,"px_abenteuer2.js"],[40635,"px_abenteuer3.js"],[41026,"px_abenteuer4.js"],[41236,"px_baukasten.js"],[41345,"px_abenteuer_fein.js"],[41562,"px_abenteuer_fein2.js"],[41914,"px_abenteuer5.js"],[42321,"px_abenteuer6.js"],[42597,"px_abenteuer7.js"],[42953,"px_level300.js"],[43504,"px_schwach300.js"],[43578,"px_zwei300.js"],[43692,"lumicheckt300.js"],[43885,"schreiben300.js"],[44099,"rechenkarte300.js"],[44219,"lerncheck300.js"],[44442,"material300.js"],[44772,"lernweg300.js"],[45296,"px_ski.js"],[45938,"px_wurf.js"],[46467,"px_insel.js"],[47668,"px_kicker.js"],[48603,"px_eis.js"],[49589,"px_run.js"],[50804,"px_brk.js"],[51766,"px_pol.js"],[53117,"px_frog.js"],[54377,"px_angel.js"],[55692,"px_golf.js"],[56726,"px_tauch.js"],[57991,"px_hockey.js"],[58947,"px_lab.js"],[60282,"px_plopp.js"],[61488,"px_stadion.js"],[62999,"px_stadion2.js"],[63051,"px_training.js"],[63420,"cm.js"],[63910,"cmwelt.js"],[63966,"cm_baeck.js"],[64759,"cm_bahn.js"],[65523,"cm_detek.js"],[66240,"cm_markt.js"],[66953,"ff.js"],[67110,"ff_mathe.js"],[69100,"ff_deutsch.js"],[70688,"ff_sach_a.js"],[72937,"ff_sach_b.js"],[75166,"ff_sprachen.js"],[77574,"zm.js"],[78487,"tt.js"],[78700,"data_tagebuch.js"],[78743,"data_hoerspiel.js"],[78902,"leseecke.js"],[79229,"kt.js"],[79532,"comicbuch.js"],[79810,"alce.js"],[79973,"alce_aufg.js"],[80164,"formen.js"],[80615,"data_formen.js"],[80856,"data_formen2.js"],[81078,"spielzeit.js"],[81300,"data_faktmeinung.js"],[81419,"data_es248.js"],[81683,"data_en249.js"],[81922,"data_wissen249.js"],[82353,"data_kunst249.js"],[82636,"data_fussball250.js"],[82760,"data_werte252.js"],[83013,"data_lesen252.js"],[83074,"data_k34_252.js"],[83160,"art254.js"],[83278,"data_werte255.js"],[83416,"data_lesen255.js"],[83552,"forscher255.js"],[83700,"zufall250.js"],[83746,"stufe259.js"],[83756,"advent.js"],[84019,"wdh.js"],[84117,"eswarm288.js"],[84168,"abwechslung294.js"],[84243,"bilder293a.js"],[84333,"bilder293b.js"],[84463,"bilder293c.js"],[84561,"bilder293d.js"],[84683,"bilder293e.js"],[84847,"bilder293f.js"],[84927,"bilder292.js"],[85373,"denk.js"],[85410,"data_viaje265.js"],[85553,"klassenarbeit.js"],[85686,"quizduell.js"],[85809,"neu267.js"],[86074,"prog.js"],[86179,"lernstand.js"],[86246,"blatt.js"],[86348,"uebung295.js"],[86669,"schuh296.js"],[86877,"uebung297.js"],[87264,"minus298.js"],[87505,"schrift299.js"],[87633,"data_es271.js"],[87747,"plus269.js"],[87841,"schach.js"],[88073,"schachtaktik.js"],[88325,"fun270.js"],[88488,"data_neu274.js"],[88697,"plus272.js"],[88751,"spiele274.js"],[88874,"kasten.js"],[88978,"erklaer.js"],[89091,"apa.js"],[89172,"neu276.js"],[89313,"spiele276.js"],[89363,"neu277.js"],[89541,"spiele277.js"],[89796,"lernen278.js"],[90056,"spiele278.js"],[90399,"lernen279.js"],[90724,"lernen279b.js"],[91122,"spanisch280.js"],[91414,"spanisch283.js"],[91647,"mehr281.js"],[91793,"grafik280.js"],[92172,"tiefsee280.js"],[92450,"abenteuer280.js"],[92662,"abenteuer281.js"],[92774,"design281.js"],[92906,"party281.js"],[93037,"grafik281.js"],[93254,"traumtor292.js"],[93461,"kart293.js"],[93738,"lumi_live.js"],[93854,"sicher.js"],[94038,"stil.js"],[94092,"zurueck287.js"],[94135,"nfbilder300.js"],[94298,"formen300.js"],[94905,"musik300.js"],[95076,"lernweg300b.js"],[95199,"lernweg300c.js"],[95359,"espanol300.js"],[95465,"fabel310_bild.js"],[95716,"fabel310.js"],[96107,"eisbude310.js"],[96333,"turbo310.js"],[96538,"sumo310.js"],[96673,"beifahrer310.js"],[96748,"dreier310.js"],[96864,"ring310.js"],[96973,"loch330.js"],[97323,"reise340.js"],[97393,"fisch340.js"],[97949,"rutsche340.js"],[98360,"knobel340.js"],[98598,"frucht350.js"],[98903,"vulkan350.js"],[99146,"delfin350.js"],[99341,"musik350.js"],[99511,"arcade360.js"],[99627,"strasse360.js"],[99923,"blasen360.js"],[100131,"meer360.js"],[100300,"spirale360.js"],[100464,"sterne360.js"],[100671,"alt360a.js"],[100941,"alt360b.js"],[101134,"alt360c.js"],[101388,"alt360d.js"],[101551,"alt370a.js"],[101748,"alt370b.js"],[101952,"alt370c.js"],[102090,"gl390.js"],[102329,"lauf390.js"],[102838,"ab3_level.js"],[103183,"abenteuer400.js"],[103677,"figuren410.js"],[103768,"kart410.js"],[104089,"show410.js"],[104404,"ball410.js"],[104717,"fussball420.js"],[105142,"farbe420.js"],[105423,"flug430.js"],[105613,"sport430.js"],[105941,"insel440.js"],[106221,"buddel440.js"],[106435,"belohnung311.js"],[106596,"druck311.js"],[106690,"freunde.js"],[106827,"start.js"],[106837,null],[106847,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -26736,9 +26736,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '4.3.0';
+const APP_VERSION = '4.4.0';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "4.4.0", d: "20.11.2026", t: ["Insel-Abenteuer 3D: Inseln von oben erkunden, Schlüssel finden, Steinblöcke schieben, Rätsel-Tore mit Aufgaben, 20 Abenteuer", "Buddel-Abenteuer 3D: bis zur Schatzhöhle buddeln, Kristalle und Sternkisten finden, Rätsel-Felsen mit Aufgaben, 20 Grabungen"] },
   { v: "4.3.0", d: "20.11.2026", t: ["Sternen-Flug 3D: im Gleiter durch Ringe fliegen und Hindernissen ausweichen, ohne Kämpfen, 20 Flüge in vier Welten", "Sport-Party 3D: Bowling, Tennis, Torwandschießen und Bogenschießen, je 5 Spiele bis zum Pokal"] },
   { v: "4.2.0", d: "20.11.2026", t: ["Fußball 3D mit Team Lumi: Pinguin-Mannschaften im Fußball-Käfig, Passen, Schießen, Torwart und Elfmeterschießen im Finale, 20 Spiele", "Farbklecks-Arena 3D: zwei Teams rollen Farbe auf den Boden, wer mehr Fläche bemalt, gewinnt, 20 Runden in vier Arenen"] },
   { v: "4.1.0", d: "20.11.2026", t: ["Kart-Grand-Prix 3D: Rennen gegen fünf Pinguine mit Driften, Extras und Turbo-Feldern, 20 Rennen auf vier Strecken", "Hindernis-Show 3D: Parcours-Rennen mit zwölf Läufern, Drehbalken, Türen, Pendeln und Hüpfpilzen, 20 Runden in vier Shows", "Auto-Fußball 3D: kleine Autos, riesiger Ball, Turbo und Salto-Schuss, 20 Spiele in vier Stadien"] },
@@ -105937,6 +105938,500 @@ function spoSpiel(stage) {
 FUN_GAMES.sportparty3d = { c: 'hits', t: 'Sport-Party 3D', seit: 'Sport-Party 3D', d: 'Bowling, Tennis, Torwandschießen und Bogenschießen in 3D gegen Pinguin-Freunde. 4 Sportarten mit 20 Spielen.', i: '🏅' };
 FUN_IMPL.sportparty3d = spoSpiel;
 
+/*@@src insel440.js@@*/
+
+
+
+
+
+
+
+
+
+const ISL_WELTEN = [
+  { n: 'Palmen-Insel', i: '🌴', farbe: '#2fb3a6', art: 'palmen' },
+  { n: 'Eis-Insel', i: '❄️', farbe: '#2f9bd8', art: 'eis' },
+  { n: 'Pilz-Wald', i: '🍄', farbe: '#e8463a', art: 'pilze' },
+  { n: 'Wolken-Schloss', i: '🏰', farbe: '#7a4fd6', art: 'schloss' }
+];
+const ISL_NAMEN = [['Muschelstrand', 'Kokos-Hain', 'Krabbenbucht', 'Lagunen-Rätsel', 'Schatz der Palmen-Insel'], ['Schneefeld', 'Eiszapfen-Höhle', 'Iglu-Dorf', 'Gletscher-Rätsel', 'Schatz der Eis-Insel'], ['Pilzlichtung', 'Moos-Pfad', 'Fliegenpilz-Labyrinth', 'Wurzel-Rätsel', 'Schatz im Pilz-Wald'], ['Wolkentor', 'Turmzimmer', 'Sternensaal', 'Schloss-Rätsel', 'Schatz im Wolken-Schloss']];
+const ISL_PAL = {
+  palmen: { g1: '#7ccf6a', g2: '#86d873', weg: '#f2dca0', wand: '#3f8a46', wand2: '#2f7a3a', baum: 'palme', meer: '#3fb8e0', st: 'strand' },
+  eis: { g1: '#eef6fc', g2: '#e2eef8', weg: '#cfe6f8', wand: '#9ec9e6', wand2: '#7ab4dc', baum: 'tanne', meer: '#5ab8ff', st: 'eis' },
+  pilze: { g1: '#5aa04c', g2: '#64ac55', weg: '#a88a5a', wand: '#3a6a34', wand2: '#2f5a2a', baum: 'pilz', meer: '#2fa7c8', st: 'rasen' },
+  schloss: { g1: '#e8e4f4', g2: '#dcd6ee', weg: '#c4b8e8', wand: '#8a78d0', wand2: '#6a58b0', baum: 'saeule', meer: '#9ec2ff', st: 'sterne' }
+};
+
+let G3FRAGE = null;
+function g3Frage(stage, titel, sub, ok, bad) {
+  if (G3FRAGE) return false;
+  let t; try { t = pxTask(); } catch (e) { t = { q: '3 + 4 = ?', opts: ['6', '7', '8'], a: '7' }; }
+  const ov = document.createElement('div'); ov.className = 'ab3-ov';
+  ov.innerHTML = `<div class="ab3-frage" role="dialog" aria-label="Aufgabe"><div class="ab3-fh"><span>${esc(titel)}</span>${typeof Speech !== 'undefined' && Speech.ok && t.say ? '<button class="ab3-say" data-act="g3say" aria-label="Vorlesen">🔊</button>' : ''}</div>
+    ${t.e ? `<div class="ab3-fe" aria-hidden="true">${t.e}</div>` : ''}<div class="ab3-fq">${esc(t.q)}</div>
+    <div class="ab3-opts n${t.opts.length}">${t.opts.map((x, i) => `<button class="ab3-opt" data-act="g3ans" data-i="${i}">${esc(x)}</button>`).join('')}</div><div class="ab3-fb" aria-live="polite">${sub ? esc(sub) : ''}</div></div>`;
+  stage.appendChild(ov); G3FRAGE = { ov, t, ok, bad, fertig: false };
+  try { pxS().tasks = (pxS().tasks | 0) + 1; } catch (e) { }
+  return true;
+}
+function g3Antwort(i) {
+  const F = G3FRAGE; if (!F || F.fertig) return; const v = F.t.opts[i], richtig = v === F.t.a; F.fertig = true;
+  F.ov.querySelectorAll('.ab3-opt').forEach((b, j) => { b.disabled = true; if (F.t.opts[j] === F.t.a) b.classList.add('ok'); else if (j === i) b.classList.add('no'); });
+  const fb = F.ov.querySelector('.ab3-fb');
+  if (richtig) { try { pxS().ok = (pxS().ok | 0) + 1; } catch (e) { } Sound.good(); fb.textContent = ['Richtig! ⭐', 'Super! ✨', 'Genau! 🎉', 'Klasse! 💪'][Math.floor(Math.random() * 4)]; }
+  else { Sound.bad(); fb.innerHTML = `Richtig ist <b>${esc(F.t.a)}</b>.`; }
+  save();
+  setTimeout(() => { if (G3FRAGE !== F) return; F.ov.remove(); G3FRAGE = null; try { richtig ? F.ok() : F.bad && F.bad(); } catch (e) { setTimeout(() => { throw e; }, 0); } }, richtig ? 750 : 1700);
+}
+ACT.g3ans = t => g3Antwort(Number(t.dataset.i));
+ACT.g3say = () => { if (G3FRAGE && G3FRAGE.t.say) Speech.say(G3FRAGE.t.say, 'de-DE'); };
+
+const ISL_RW = 9, ISL_RH = 7, ISL_T = 2;
+function islLevel(w, l) { const st = w * 5 + l; return { art: ISL_WELTEN[w].art, st, w, l, name: ISL_NAMEN[w][l], rx: l === 0 ? 2 : 3, ry: l < 2 ? 2 : 3, krabben: Math.min(5, 1 + Math.floor(st / 3)), tempo: 1.6 + w * .25 + l * .1, seed: 31 + st * 41 }; }
+function islPlan(L) {
+  let seed = L.seed; const r = () => (seed = (seed * 16807) % 2147483647) / 2147483647; r(); r(); r();
+  const RX = L.rx, RY = L.ry, W = RX * (ISL_RW + 1) + 1, H = RY * (ISL_RH + 1) + 1, g = []; for (let y = 0; y < H; y++) g.push(Array(W).fill('#'));
+  const rc = (i, j) => [i * (ISL_RW + 1) + 1, j * (ISL_RH + 1) + 1];
+  for (let i = 0; i < RX; i++) for (let j = 0; j < RY; j++) { const [x0, y0] = rc(i, j); for (let y = y0; y < y0 + ISL_RH; y++) for (let x = x0; x < x0 + ISL_RW; x++) g[y][x] = '.'; }
+
+  const id = (i, j) => j * RX + i, besucht = new Set([id(0, RY - 1)]), kanten = [], nb = (i, j) => [[i + 1, j], [i - 1, j], [i, j + 1], [i, j - 1]].filter(([a, b]) => a >= 0 && b >= 0 && a < RX && b < RY);
+  while (besucht.size < RX * RY) { const kand = []; besucht.forEach(k => { const i = k % RX, j = Math.floor(k / RX); nb(i, j).forEach(([a, b]) => { if (!besucht.has(id(a, b))) kand.push([i, j, a, b]); }); }); const e = kand[Math.floor(r() * kand.length)]; besucht.add(id(e[2], e[3])); kanten.push(e); }
+
+  const adj = {}; kanten.forEach(([a, b, c, d]) => { (adj[id(a, b)] = adj[id(a, b)] || []).push(id(c, d)); (adj[id(c, d)] = adj[id(c, d)] || []).push(id(a, b)); });
+  const start = id(0, RY - 1), dist = { [start]: 0 }, vor = {}, q = [start]; for (let k = 0; k < q.length; k++) (adj[q[k]] || []).forEach(n => { if (dist[n] === undefined) { dist[n] = dist[q[k]] + 1; vor[n] = q[k]; q.push(n); } });
+  const ziel = +Object.keys(dist).sort((a, b) => dist[b] - dist[a])[0], weg = [ziel]; while (weg[0] !== start) weg.unshift(vor[weg[0]]);
+
+  const tueren = [];
+  kanten.forEach(([a, b, c, d]) => { const [x0, y0] = rc(a, b); let tx, ty; if (c !== a) { tx = Math.max(x0, rc(c, d)[0]) - 1; ty = y0 + Math.floor(ISL_RH / 2); } else { ty = Math.max(y0, rc(c, d)[1]) - 1; tx = x0 + Math.floor(ISL_RW / 2); } g[ty][tx] = 'o'; tueren.push({ von: id(a, b), nach: id(c, d), x: tx, y: ty, art: 'offen' }); });
+  const tuerZw = (p, n) => tueren.find(t => (t.von === p && t.nach === n) || (t.von === n && t.nach === p));
+
+  const ents = [], reserviert = new Set(), mitte = k => { const [x0, y0] = rc(k % RX, Math.floor(k / RX)); return [x0 + Math.floor(ISL_RW / 2), y0 + Math.floor(ISL_RH / 2)]; };
+  for (let k = 1; k < weg.length; k++) { const t = tuerZw(weg[k - 1], weg[k]); if (k === weg.length - 1) t.art = 'schloss'; else t.art = (k % 2) ? 'raetsel' : 'gitter'; }
+
+  tueren.forEach(t => [t.von, t.nach].forEach(k => { const [mx, my] = mitte(k); let x = t.x, y = t.y; while (x !== mx || y !== my) { reserviert.add(x + ',' + y); if (x !== mx) x += Math.sign(mx - x); else y += Math.sign(my - y); } reserviert.add(mx + ',' + my); }));
+
+  const vorSchloss = weg.slice(0, -1), schlRaum = vorSchloss[Math.max(0, vorSchloss.length - 2)] ?? start;
+  const frei = k => { const [x0, y0] = rc(k % RX, Math.floor(k / RX)); const c = []; for (let y = y0 + 1; y < y0 + ISL_RH - 1; y++) for (let x = x0 + 1; x < x0 + ISL_RW - 1; x++) if (!reserviert.has(x + ',' + y) && g[y][x] === '.' && !ents.some(e => e.x === x && e.y === y)) c.push([x, y]); return c; };
+  const setze = (k, e) => { const c = frei(k); if (!c.length) return null; const [x, y] = c[Math.floor(r() * c.length)]; Object.assign(e, { x, y }); ents.push(e); reserviert.add(x + ',' + y); return e; };
+  setze(schlRaum, { k: 'truhe', inhalt: 'schluessel' });
+
+  tueren.filter(t => t.art === 'gitter').forEach(t => { const k = weg[weg.findIndex((v, i) => i > 0 && tuerZw(weg[i - 1], v) === t) - 1]; const [x0, y0] = rc(k % RX, Math.floor(k / RX));
+    for (let v = 0; v < 40; v++) { const x = x0 + 1 + Math.floor(r() * (ISL_RW - 2)), y = y0 + 1; if ([0, 1, 2, 3].every(d => !reserviert.has(x + ',' + (y + d))) && y + 3 <= y0 + ISL_RH - 1) { ents.push({ k: 'schalter', x, y, tuer: t }); ents.push({ k: 'block', x, y: y + 2, ox: x, oy: y + 2 }); [0, 1, 2, 3].forEach(d => reserviert.add(x + ',' + (y + d))); [-1, 1].forEach(d => { reserviert.add((x + d) + ',' + (y + 2)); reserviert.add((x + d) + ',' + (y + 3)); }); return; } }
+    t.art = 'raetsel'; });
+
+  const raeume = []; for (let k = 0; k < RX * RY; k++) raeume.push(k);
+  const sternRaeume = raeume.filter(k => k !== start).sort(() => r() - .5).slice(0, 3); while (sternRaeume.length < 3) sternRaeume.push(raeume[sternRaeume.length % raeume.length]);
+  sternRaeume.forEach((k, i) => setze(k, i === 0 ? { k: 'truhe', inhalt: 'stern' } : { k: 'stern' }));
+  raeume.forEach(k => { for (let f = 0; f < 3; f++) setze(k, { k: 'fisch' }); });
+  const kr = raeume.filter(k => k !== start).sort(() => r() - .5).slice(0, L.krabben); kr.forEach(k => { const [x0, y0] = rc(k % RX, Math.floor(k / RX)), y = y0 + 1 + Math.floor(r() * (ISL_RH - 2)); ents.push({ k: 'krabbe', x0: x0 + .5, x1: x0 + ISL_RW - 1.5, y, x: x0 + 1 + r() * (ISL_RW - 3), dir: r() < .5 ? -1 : 1, eis: 0 }); });
+  { const [mx, my] = mitte(start); ents.push({ k: 'freund', x: mx + 2, y: my - 2 }); reserviert.add((mx + 2) + ',' + (my - 2)); }
+  { const [mx, my] = mitte(ziel); ents.push({ k: 'schatz', x: mx, y: my - 1 }); }
+
+  raeume.forEach(k => { const c = frei(k); for (let n = 0; n < 6 + Math.floor(r() * 5) && c.length; n++) { const [x, y] = c.splice(Math.floor(r() * c.length), 1)[0]; g[y][x] = r() < .7 ? 'T' : 'b'; } });
+
+  const erreichbar = () => { const [sx, sy] = mitte(start), seen = new Set([sx + ',' + sy]), qq = [[sx, sy]]; for (let k = 0; k < qq.length; k++) { const [x, y] = qq[k]; [[1, 0], [-1, 0], [0, 1], [0, -1]].forEach(([a, b]) => { const nx = x + a, ny = y + b; if (nx < 0 || ny < 0 || nx >= W || ny >= H) return; const c = g[ny][nx]; if (c === '#' || c === 'T' || c === 'b' || seen.has(nx + ',' + ny)) return; if (ents.some(e => e.k === 'block' && e.x === nx && e.y === ny)) return; seen.add(nx + ',' + ny); qq.push([nx, ny]); }); } return seen; };
+  for (let v = 0; v < 30; v++) { const s = erreichbar(), fehlt = ents.filter(e => ['truhe', 'stern', 'fisch', 'schatz', 'schalter'].includes(e.k) && !s.has(e.x + ',' + e.y)); if (!fehlt.length) break; for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) if ((g[y][x] === 'T' || g[y][x] === 'b') && r() < .35) g[y][x] = '.'; }
+  const [sx, sy] = mitte(start);
+  return { g, W, H, ents, tueren, start: [sx, sy], RX, RY, weg };
+}
+
+function islSpiel(stage) {
+  const R = g3Neu(stage);
+  if (!R) { const d = document.createElement('div'); d.className = 'tb-box'; d.innerHTML = '<div class="tb-karte lr-karte lv-karte"><h2>🧊 Hier fehlt die 3D-Grafik</h2><p>Dieses Spiel braucht 3D-Grafik. Auf diesem Gerät klappt das leider nicht. Probier ein anderes Spiel!</p></div>'; stage.appendChild(d); return; }
+  const M = G3.neu(), M2 = G3.neu(), M3 = G3.neu(), T = ISL_T;
+  const lu = luLumiModell(), bau = f => { const B = g3Bau(90); f(B); return R.mesh(B.fertig()); };
+  const mod = { lumi: { r: R.mesh(lu.rumpf), f: R.mesh(lu.fl), u: R.mesh(lu.fuss) }, fisch: R.mesh(luFischModell()),
+    truhe: bau(B => { B.kiste(0, 0, 0, 1.3, .7, .9, '#a8743a', '#c98a4a'); B.kiste(0, .15, 0, 1.35, .12, .95, '#ffd23f'); B.kiste(0, .3, .46, .22, .26, .04, '#ffd23f'); }),
+    deckel: bau(B => { B.kiste(0, 0, .45, 1.3, .3, .9, '#c98a4a', '#e0a35a'); B.kiste(0, .1, .45, 1.35, .1, .95, '#ffd23f'); }),
+    schatz: bau(B => { B.kiste(0, 0, 0, 2.2, 1.1, 1.5, '#ffd23f', '#ffe680'); B.kiste(0, .5, 0, 2.3, .2, 1.6, '#e8463a'); B.kugel(0, 1.25, 0, .35, .35, .2, '#8ef3ff', 1); }),
+    block: bau(B => { B.zitter = .05; B.kiste(0, 0, 0, 1.9, 1.6, 1.9, '#9aa6b8', '#b8c2d0'); B.kiste(0, 1.6, 0, 1.4, .06, 1.4, '#c9d2dc'); }),
+    schalter: bau(B => { B.zyl(0, 0, 0, .8, .8, .12, 18, '#e8463a', false, '#ff8a8a'); }),
+    gitter: bau(B => { for (let k = 0; k < 5; k++) B.kiste(-.8 + k * .4, 0, 0, .12, 2.4, .12, '#5a6372'); B.kiste(0, 2.2, 0, 2, .2, .2, '#3a4252'); }),
+    tor: bau(B => { B.kiste(0, 0, 0, 2, 2.6, .5, '#7a4fd6', '#a98bff'); B.kugel(0, 1.4, .27, .45, .45, .08, '#ffd23f', 1); B.kiste(0, 1.4, .3, .12, .5, .04, '#7a4fd6'); }),
+    schloss: bau(B => { B.kiste(0, 0, 0, 2, 2.6, .5, '#a8743a', '#c98a4a'); B.kiste(0, 1.0, .27, .55, .6, .1, '#ffd23f'); B.zyl(0, 1.55, .27, .2, .2, .1, 10, '#ffd23f'); }),
+    krabbe: bau(B => { B.kugel(0, .35, 0, .55, .3, .45, '#e8463a', 1); [-1, 1].forEach(s => { B.kugel(s * .62, .45, -.25, .2, .16, .16, '#ff6a5a', 1); B.kugel(s * .18, .7, -.25, .08, .1, .08, '#ffffff', 1); }); }),
+    eis: bau(B => { B.zitter = .05; B.kiste(0, 0, 0, 1.4, 1.1, 1.2, '#bfe3f6', '#e6f6ff'); }),
+    ball: bau(B => B.kugel(0, 0, 0, .22, .22, .22, '#ffffff', 1)),
+    stern: bau(B => { for (let i = 0; i < 5; i++) { const a = i / 5 * 6.2832 - Math.PI / 2, b = a + Math.PI / 5; B.dr([0, 0, .12], [Math.cos(a) * .55, Math.sin(a) * .55, 0], [Math.cos(b) * .24, Math.sin(b) * .24, 0], G3.f('#ffd23f'), [0, 0, -1]); B.dr([0, 0, .12], [Math.cos(b) * .24, Math.sin(b) * .24, 0], [Math.cos(a + 2 * Math.PI / 5) * .55, Math.sin(a + 2 * Math.PI / 5) * .55, 0], G3.f('#ffe680'), [0, 0, -1]); } }),
+    schluessel: bau(B => { B.zyl(0, 0, 0, .18, .18, .08, 12, '#ffd23f'); B.kiste(.45, 0, 0, .55, .08, .1, '#ffd23f'); B.kiste(.62, -.12, 0, .08, .16, .1, '#ffd23f'); }) };
+  const fr = fgPinguin('#2fb3a6', '#ffd23f', 'kappe', '#ffffff'); mod.freund = { r: R.mesh(fr.rumpf), f: R.mesh(fr.fl), u: R.mesh(fr.fuss) };
+  let A = null, art = 'palmen';
+  const kam = { auge: [0, 14, 10], ziel: [0, 0, 0], fov: 50, nah: .5, fern: 500 };
+  const St = g3Steuer({ stick: true, knoepfe: K => { const rr = Math.max(36, Math.min(56, Math.min(K.W, K.H) * .09)); return [{ id: 'ball', x: K.W - rr - 22, y: K.H - rr - 22, r: rr, t: '❄️', aus: !!(A && A.p.ballCool > 0) }]; }, tasten: { ' ': 'ball', x: 'ball', X: 'ball' } });
+  const wx = x => x * T, wz = y => y * T;
+  function bauen(L) {
+    if (A) { R.weg(A.stat); R.weg(A.statG); }
+    art = L.art; const P = ISL_PAL[art], S = islPlan(L), B = g3Bau(91), G = g3Bau(92); let seed = L.seed; const r = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+    B.boden(-40, S.W * T + 40, -40, S.H * T + 40, -.6, P.meer);
+    for (let y = 0; y < S.H; y++) for (let x = 0; x < S.W; x++) { const c = S.g[y][x], x0 = x * T - T / 2, z0 = y * T - T / 2;
+      if (c === '#') { const rand = x === 0 || y === 0 || x === S.W - 1 || y === S.H - 1; B.zitter = .05; if (art === 'schloss') B.kiste(wx(x), 0, wz(y), T, rand ? 3.2 : 2.6, T, (x + y) % 2 ? P.wand : P.wand2, G3.hell(P.wand, 1.15)); else if (art === 'eis') B.kiste(wx(x), 0, wz(y), T, 1.6 + r() * 1.4, T, P.wand, '#ffffff'); else { B.kiste(wx(x), 0, wz(y), T, 1.1, T, P.wand2, P.wand); B.kugel(wx(x), 1.5, wz(y), 1.15, .9, 1.15, (x + y) % 2 ? P.wand : P.wand2, 1); } B.zitter = 0; continue; }
+      B.boden(x0, x0 + T, z0, z0 + T, 0, (x + y) % 2 ? P.g1 : P.g2);
+      if (c === 'o') B.boden(x0 + .2, x0 + T - .2, z0 + .2, z0 + T - .2, .01, P.weg);
+      if (c === 'T') islBaum(B, G, P.baum, wx(x), wz(y), r);
+      if (c === 'b') { B.zitter = .08; B.kugel(wx(x), .5, wz(y), .9, .7, .9, art === 'eis' ? '#ffffff' : art === 'schloss' ? '#c4b8e8' : '#4c9a50', 1); B.zitter = 0; } }
+
+    B.boden(-T, S.W * T, -T * 1.5, -T / 2, -.3, art === 'palmen' ? '#f2dca0' : P.g2); B.boden(-T, S.W * T, S.H * T - T / 2, S.H * T + T / 2, -.3, art === 'palmen' ? '#f2dca0' : P.g2);
+    for (let q = 0; q < 30; q++) { const a = r() * 6.2832, rad = Math.max(S.W, S.H) * T * .5 + 15 + r() * 30, cx = S.W * T / 2 + Math.cos(a) * rad, cz = S.H * T / 2 + Math.sin(a) * rad; if (art === 'schloss') G.kugel(cx, -2 + r() * 4, cz, 3 + r() * 3, 1.5, 3 + r() * 3, '#ffffff', 1); else { B.kugel(cx, -1, cz, 3 + r() * 4, 1.5 + r() * 1.5, 3 + r() * 4, art === 'eis' ? '#ffffff' : '#f2dca0', 1); islBaum(B, G, P.baum, cx, cz, r); } }
+    A = { L, S, stat: R.mesh(B.fertig()), statG: R.mesh(G.fertig()), t: 0, phase: 'spiel', teile: [], p: { x: wx(S.start[0]), z: wz(S.start[1]), vx: 0, vz: 0, dir: -Math.PI / 2, anim: 0, schluessel: 0, fische: 0, sterne: 0, herz: 3, inv: 0, ballCool: 0, schieb: 0 }, baelle: [], frageCd: 0, msgCd: 0 };
+    A.ents = S.ents.map(e => Object.assign({}, e)); A.tueren = S.tueren.map(t => Object.assign({ auf: t.art === 'offen' ? 1 : 0 }, t));
+    A.ents.forEach(e => { if (e.k === 'schalter') e.tuer = A.tueren.find(t => t.x === e.tuer.x && t.y === e.tuer.y); });
+    A.cp = { x: A.p.x, z: A.p.z }; A.sMax = 3;
+  }
+
+  function fest(x, z) {
+    const S = A.S, gx = Math.round(x / T), gy = Math.round(z / T); if (gx < 0 || gy < 0 || gx >= S.W || gy >= S.H) return true;
+    const c = S.g[gy][gx]; if (c === '#' || c === 'T' || c === 'b') return true;
+    if (c === 'o') { const t = A.tueren.find(t => t.x === gx && t.y === gy); if (t && t.auf < 1) return true; }
+    if (A.ents.some(e => e.k === 'block' && Math.round(e.x) === gx && Math.round(e.y) === gy)) return true;
+    if (A.ents.some(e => (e.k === 'truhe' || e.k === 'schatz' || e.k === 'freund') && e.x === gx && e.y === gy)) return true;
+    return false;
+  }
+  function bewege(K, dt, ix, iz) {
+    const p = A.p, v = 6.2, acc = 40 * dt; p.vx += Math.max(-acc, Math.min(acc, ix * v - p.vx)); p.vz += Math.max(-acc, Math.min(acc, iz * v - p.vz));
+    const rad = .55, frei = (x, z) => !fest(x - rad, z - rad) && !fest(x + rad, z - rad) && !fest(x - rad, z + rad) && !fest(x + rad, z + rad);
+    const nx = p.x + p.vx * dt; if (frei(nx, p.z)) p.x = nx; else { schieben(K, Math.sign(p.vx), 0, dt); p.vx = 0; }
+    const nz = p.z + p.vz * dt; if (frei(p.x, nz)) p.z = nz; else { schieben(K, 0, Math.sign(p.vz), dt); p.vz = 0; }
+    const sp = Math.hypot(p.vx, p.vz); if (sp > .5) p.dir = Math.atan2(p.vz, p.vx); p.anim += sp * dt * 2.4;
+    if (Math.abs(ix) + Math.abs(iz) < .2) p.schieb = 0;
+  }
+  function schieben(K, dx, dy, dt) {
+    const p = A.p, gx = Math.round(p.x / T), gy = Math.round(p.z / T), tx = gx + dx, ty = gy + dy;
+    const b = A.ents.find(e => e.k === 'block' && !e.ziel && Math.round(e.x) === tx && Math.round(e.y) === ty); if (!b) return;
+    if (dx && Math.abs(p.z - wz(gy)) > .7) return; if (dy && Math.abs(p.x - wx(gx)) > .7) return;
+    p.schieb += dt; if (p.schieb < .3) return; p.schieb = 0;
+    const nx = tx + dx, ny = ty + dy, S = A.S; if (nx < 0 || ny < 0 || nx >= S.W || ny >= S.H) return; const c = S.g[ny][nx]; if (c !== '.' || A.ents.some(e => ['block', 'truhe', 'schatz', 'freund', 'stern'].includes(e.k) && Math.round(e.x) === nx && Math.round(e.y) === ny && !e.weg)) { if (!A.msgCd) { K.msg('Da geht es nicht weiter.', 1); A.msgCd = 1.2; } return; }
+    b.ziel = [nx, ny]; akGleit(140, 90, .25, 'square', .04);
+  }
+
+  function schritt(K, dt) {
+    A.t += dt; const p = A.p; A.frageCd = Math.max(0, A.frageCd - dt); A.msgCd = Math.max(0, A.msgCd - dt); p.inv = Math.max(0, p.inv - dt); p.ballCool = Math.max(0, p.ballCool - dt);
+    if (G3FRAGE || A.phase !== 'spiel') { teile(dt); return; }
+    let ix = 0, iz = 0; if (A.auto) [ix, iz] = autoEin(); else { const [sx, sy] = St.richtung(), f = A.kf || [0, -1], rx = -f[1], rz = f[0]; ix = rx * sx - f[0] * sy; iz = rz * sx - f[1] * sy; if (St.nimm('ball')) werfen(K); }
+    bewege(K, dt, ix, iz);
+
+    A.ents.forEach(e => { if (e.k === 'block' && e.ziel) { const [nx, ny] = e.ziel; e.x += Math.sign(nx - e.x) * Math.min(Math.abs(nx - e.x), dt * 4); e.y += Math.sign(ny - e.y) * Math.min(Math.abs(ny - e.y), dt * 4); if (e.x === nx && e.y === ny) { e.ziel = null; const s = A.ents.find(s => s.k === 'schalter' && s.x === nx && s.y === ny); if (s && !s.an) { s.an = true; s.tuer.auf = .01; K.msg('Klick! Irgendwo geht ein Gitter auf.', 1.6); Sound.good(); } } } });
+    A.tueren.forEach(t => { if (t.auf > 0 && t.auf < 1) t.auf = Math.min(1, t.auf + dt * 1.5); });
+
+    const gx = Math.round(p.x / T), gy = Math.round(p.z / T);
+    A.tueren.forEach(t => { if (t.auf > 0 || Math.abs(t.x - gx) + Math.abs(t.y - gy) !== 1 || Math.hypot(wx(t.x) - p.x, wz(t.y) - p.z) > 2.05) return;
+      if (t.art === 'schloss') { if (p.schluessel > 0) { p.schluessel--; t.auf = .01; K.msg('Aufgeschlossen! 🔑', 1.4); Sound.good(); } else if (!A.msgCd) { K.msg('Verschlossen. Such den Schlüssel in einer Truhe! 🔑', 1.8); A.msgCd = 2; } }
+      else if (t.art === 'raetsel' && !A.frageCd) { A.frageCd = 1.5; if (A.auto) { t.auf = .01; A.geloest = (A.geloest || 0) + 1; return; } g3Frage(stage, '🔒 Rätsel-Tor', 'Löse die Aufgabe, dann geht das Tor auf!', () => { t.auf = .01; A.geloest = (A.geloest || 0) + 1; akSnd.power(); }, () => { p.x -= Math.sign(wx(t.x) - p.x) * .6; p.z -= Math.sign(wz(t.y) - p.z) * .6; K.msg('Fast! Probier es gleich noch mal.', 1.6); }); }
+      else if (t.art === 'gitter' && !A.msgCd) { K.msg('Das Gitter ist zu. Schieb einen Steinblock auf den roten Schalter!', 2); A.msgCd = 2.4; } });
+
+    A.ents.forEach(e => { if (e.weg) return; const d = Math.hypot(wx(e.x) - p.x, wz(e.y) - p.z);
+      if (e.k === 'fisch' && d < 1) { e.weg = true; p.fische++; Sound.glocke(1175, 0, .14, .06); funke(wx(e.x), .8, wz(e.y), 6, ['#ffd84a', '#ffffff'], .6); }
+      else if (e.k === 'stern' && d < 1.1) { e.weg = true; p.sterne++; K.msg(`Sternsplitter ${p.sterne} von 3! ✨`, 1.4); Sound.win(); funke(wx(e.x), 1, wz(e.y), 20, ['#ffd23f', '#ffffff'], 1); }
+      else if (e.k === 'truhe' && !e.auf && d < 2.05) { e.auf = 1; akSnd.power(); funke(wx(e.x), 1, wz(e.y), 14, ['#ffd23f', '#ffffff'], .8); if (e.inhalt === 'schluessel') { p.schluessel++; K.msg('Ein Schlüssel! 🔑 Er passt in die verschlossene Tür.', 2); } else { p.sterne++; K.msg(`Sternsplitter ${p.sterne} von 3! ✨`, 1.4); } }
+      else if (e.k === 'freund' && d < 2.1 && !A.msgCd) { K.msg(A.L.st === 0 ? 'Hallo Lumi! Der Schatz liegt hinter einer verschlossenen Tür. Der Schlüssel ist in einer Truhe!' : 'Tipp: Krabben frieren mit dem Schneeball ❄️ kurz ein!', 3); A.msgCd = 5; }
+      else if (e.k === 'schatz' && d < 2.1) ziel(K); });
+
+    A.ents.forEach(e => { if (e.k !== 'krabbe') return; if (e.eis > 0) { e.eis -= dt; return; } e.x += e.dir * A.L.tempo * dt / T; if (e.x < e.x0 || e.x > e.x1 || fest(wx(e.x + e.dir * .5), wz(e.y))) { e.dir *= -1; e.x = Math.max(e.x0, Math.min(e.x1, e.x)); }
+      if (p.inv <= 0 && Math.hypot(wx(e.x) - p.x, wz(e.y) - p.z) < 1.2) { p.herz--; p.inv = 1.6; K.herzen = Math.max(0, p.herz); K.shake = .25; akSnd.au(); const dx = p.x - wx(e.x), dz = p.z - wz(e.y), l = Math.hypot(dx, dz) || 1; p.vx = dx / l * 9; p.vz = dz / l * 9; if (p.herz <= 0) { p.herz = 3; K.herzen = 3; p.x = A.cp.x; p.z = A.cp.z; p.vx = p.vz = 0; K.msg('Autsch! Weiter geht es am Eingang.', 1.6); } } });
+
+    for (let i = A.baelle.length - 1; i >= 0; i--) { const b = A.baelle[i]; b.x += b.vx * dt; b.z += b.vz * dt; b.t += dt; const k = A.ents.find(e => e.k === 'krabbe' && e.eis <= 0 && Math.hypot(wx(e.x) - b.x, wz(e.y) - b.z) < 1);
+      if (k) { k.eis = 4.5; A.baelle.splice(i, 1); funke(b.x, .8, b.z, 12, ['#ffffff', '#bfe3f6'], .8); akGleit(900, 1500, .15, 'triangle', .05); continue; }
+      if (b.t > .9 || fest(b.x, b.z)) { A.baelle.splice(i, 1); funke(b.x, .8, b.z, 5, ['#ffffff'], .4); } }
+
+    { const S = A.S, ri = Math.floor((gx - 1) / (ISL_RW + 1)), rj = Math.floor((gy - 1) / (ISL_RH + 1)); const k = rj * S.RX + ri; if (k !== A.raum && ri >= 0 && rj >= 0 && ri < S.RX && rj < S.RY) { A.raum = k; A.cp = { x: p.x, z: p.z }; } }
+    teile(dt);
+    K.ziel = `✨ ${p.sterne}/3  🔑 ${p.schluessel}  🐟 ${p.fische}`; K.punkte = p.fische; K.fort = Math.min(1, (A.tueren.filter(t => t.art !== 'offen' && t.auf > 0).length) / Math.max(1, A.tueren.filter(t => t.art !== 'offen').length));
+  }
+  function werfen(K) { const p = A.p; if (p.ballCool > 0) return; p.ballCool = .7; const ca = Math.cos(p.dir), sa = Math.sin(p.dir); A.baelle.push({ x: p.x + ca * .6, z: p.z + sa * .6, vx: ca * 14, vz: sa * 14, t: 0 }); akSnd.hop(); }
+  function autoEin() {
+    const p = A.p, S = A.S, gx = Math.round(p.x / T), gy = Math.round(p.z / T);
+    const offen = (x, y) => { if (x < 0 || y < 0 || x >= S.W || y >= S.H) return false; const c = S.g[y][x]; if (c === '#' || c === 'T' || c === 'b') return false; const t = A.tueren.find(t => t.x === x && t.y === y); if (t && t.auf < 1 && !(t.art === 'raetsel' || (t.art === 'schloss' && p.schluessel))) return false; if (A.ents.some(e => (e.k === 'block' || e.k === 'truhe' || e.k === 'schatz' || e.k === 'freund') && Math.round(e.x) === x && Math.round(e.y) === y)) return false; return true; };
+    const ziele = A.ents.filter(e => (e.k === 'truhe' && !e.auf) || (e.k === 'stern' && !e.weg) || e.k === 'schatz').map(e => [e.x, e.y, e]);
+    const sch = A.ents.find(e => e.k === 'schalter' && !e.an); if (sch) { const b = A.ents.find(b => b.k === 'block' && !b.ziel && Math.round(b.x) === sch.x && Math.round(b.y) > sch.y); if (b) ziele.push([sch.x, Math.round(b.y) + 1, 'drueck']); }
+    const dist = {}, q = [[gx, gy]]; dist[gx + ',' + gy] = null;
+    for (let k = 0; k < q.length; k++) { const [x, y] = q[k]; for (const [z0, z1, e] of ziele) { const nahe = e === 'drueck' ? (x === z0 && y === z1) : Math.abs(x - z0) + Math.abs(y - z1) === 1; if (nahe) { let c = [x, y], prev = dist[x + ',' + y]; const pfad = [c]; while (prev) { pfad.unshift(prev); prev = dist[prev[0] + ',' + prev[1]]; } const nx = pfad.length > 1 ? pfad[1] : [x, y]; if (pfad.length <= 1) { if (e === 'drueck') return [0, -1]; return [Math.sign(z0 - gx) * .8 + (wx(gx) - p.x) * .2, Math.sign(z1 - gy) * .8 + (wz(gy) - p.z) * .2]; } const dx = wx(nx[0]) - p.x, dz = wz(nx[1]) - p.z, l = Math.hypot(dx, dz) || 1; return [dx / l, dz / l]; } }
+      [[1, 0], [-1, 0], [0, 1], [0, -1]].forEach(([a, b]) => { const nx = x + a, ny = y + b; if (!(nx + ',' + ny in dist) && offen(nx, ny)) { dist[nx + ',' + ny] = [x, y]; q.push([nx, ny]); } }); }
+    return [0, 0];
+  }
+  function ziel(K) {
+    if (A.phase !== 'spiel') return; A.phase = 'ziel'; const p = A.p, st = Math.max(1, p.sterne);
+    K.ende(true, st, `<p>🏆 Schatz gefunden!<br>✨ ${p.sterne} von 3 Sternsplittern · 🐟 ${p.fische} Fische${A.geloest ? `<br>🧠 ${A.geloest} Rätsel-Tore gelöst` : ''}</p>`, '', 2200);
+    funke(p.x, 1.5, p.z, 40, ['#ffd23f', '#ffffff', '#8ef3ff'], 1.6);
+  }
+  const funke = (x, y, z, n, f, st = 1, s = .08) => { for (let i = 0; i < n; i++) { const a = Math.random() * 6.28; A.teile.push({ x, y, z, vx: Math.cos(a) * 3 * st, vy: (1.5 + Math.random() * 3) * st, vz: Math.sin(a) * 3 * st, life: .5 + Math.random() * .4, max: .9, s0: s, f: f[i % f.length] }); } };
+  function teile(dt) { for (let i = A.teile.length - 1; i >= 0; i--) { const q = A.teile[i]; q.life -= dt; if (q.life <= 0) { A.teile.splice(i, 1); continue; } q.vy -= 9 * dt; q.x += q.vx * dt; q.y += q.vy * dt; q.z += q.vz * dt; q.s = q.s0 * Math.min(1, q.life / q.max * 1.6); } }
+
+  function kamera(K, dt) {
+    const asp = K.W / Math.max(1, K.H), hoch = asp < .95, p = A.p;
+    A.cx = A.cx === undefined ? p.x : g3Weich(A.cx, p.x, dt * 4); A.cz = A.cz === undefined ? p.z : g3Weich(A.cz, p.z, dt * 4);
+    let e = [A.cx, hoch ? 17 : 13, A.cz + (hoch ? 9 : 9.5)], t = [A.cx, 0, A.cz - .6];
+    kam.fov = hoch ? (asp < .6 ? 66 : 58) : 52;
+    if (K.phase === 'bereit' || !K.L) { const S = A.S, a = K.t * .2, mx = S.W * T / 2, mz = S.H * T / 2; e = [mx + Math.sin(a) * 30, 28, mz + Math.cos(a) * 30]; t = [mx, 0, mz]; A.kam0 = { auge: e, ziel: t }; A.camB = 0; }
+    else if (A.kam0 && A.camB < 1) { A.camB = Math.min(1, A.camB + dt / 1.5); const q = A.camB * A.camB * (3 - 2 * A.camB), e0 = e, t0 = t; e = A.kam0.auge.map((v, i) => v + (e0[i] - v) * q); t = A.kam0.ziel.map((v, i) => v + (t0[i] - v) * q); }
+    { const fx = t[0] - e[0], fz = t[2] - e[2], fl = Math.hypot(fx, fz) || 1; A.kf = [fx / fl, fz / fl]; }
+    if (K.shake > 0) e = [e[0] + Math.sin(K.t * 70) * K.shake * .4, e[1], e[2]];
+    kam.auge = e; kam.ziel = t;
+  }
+
+  function zeichne3D(K) {
+    const st = { palmen: KGP_ST.strand, eis: KGP_ST.eis, pilze: FUB_ST.rasen, schloss: KGP_ST.sterne }[art]; if (!A || !R.bild(kam, st, K.t)) return; const p = A.p;
+    R.mal(A.stat, G3.pose(M, 0, 0, 0), { glanz: .2 }); R.mal(A.statG, M, { leucht: 1 });
+    A.tueren.forEach(t => { if (t.art === 'offen' || t.auf >= 1) return; const versatz = -t.auf * 2.7, hor = A.S.g[t.y][t.x - 1] === '#'; G3.pose(M, wx(t.x), versatz, wz(t.y), hor ? 0 : Math.PI / 2); R.mal(t.art === 'gitter' ? mod.gitter : t.art === 'schloss' ? mod.schloss : mod.tor, M, { glanz: .4 }); });
+    A.ents.forEach(e => { if (e.weg) return; const x = wx(e.x), z = wz(e.y);
+      if (e.k === 'fisch') R.mal(mod.fisch, G3.pose(M, x, .7 + Math.sin(K.t * 3 + e.x) * .1, z, K.t * 2 + e.x, 0, 0, 1.3), { leucht: .3, glanz: .9 });
+      else if (e.k === 'stern') R.mal(mod.stern, G3.pose(M, x, 1.1 + Math.sin(K.t * 2.5) * .15, z, K.t * 2, 0, 0, 1.4), { leucht: .8 });
+      else if (e.k === 'truhe') { R.mal(mod.truhe, G3.pose(M, x, 0, z), { glanz: .4 }); G3.pose(M, x, .62, z - .45); G3.pose(M2, 0, 0, 0, 0, e.auf ? -1.2 : 0); G3.mal(M, M2, M3); R.mal(mod.deckel, M3, { glanz: .4 }); if (e.auf && e.inhalt === 'schluessel' && A.t % 3 < 2) {} }
+      else if (e.k === 'schatz') R.mal(mod.schatz, G3.pose(M, x, 0, z, 0, 0, 0, 1 + Math.sin(K.t * 3) * .03), { glanz: .8, leucht: .15 });
+      else if (e.k === 'block') { R.schatten(x, .02, z, 1.2, .4); R.mal(mod.block, G3.pose(M, x, 0, z), { glanz: .3 }); }
+      else if (e.k === 'schalter') R.mal(mod.schalter, G3.pose(M, x, e.an ? -.06 : .01, z), { leucht: e.an ? .2 : .5, tint: e.an ? [.6, 1.4, .6] : undefined });
+      else if (e.k === 'krabbe') { if (e.eis > 0) { R.mal(mod.krabbe, G3.pose(M, x, 0, z), { tint: [.7, .85, 1] }); R.mal(mod.eis, G3.pose(M, x, 0, z), { alpha: .55, glanz: 1 }); } else R.mal(mod.krabbe, G3.pose(M, x, Math.abs(Math.sin(A.t * 10)) * .08, z, e.dir > 0 ? 0 : Math.PI), { glanz: .4 }); }
+      else if (e.k === 'freund') figur(mod.freund, x, z, Math.PI / 2 + Math.sin(K.t) * .3, Math.sin(K.t * 3) * .5 + .8); });
+    A.baelle.forEach(b => R.mal(mod.ball, G3.pose(M, b.x, .9, b.z), { leucht: .3 }));
+    if (!(p.inv > 0 && Math.floor(A.t * 12) % 2)) { R.schatten(p.x, .02, p.z, .55, .45); figur(mod.lumi, p.x, p.z, -p.dir - Math.PI / 2, null); }
+    if (p.schluessel) R.mal(mod.schluessel, G3.pose(M, p.x, 2.1 + Math.sin(K.t * 3) * .1, p.z, K.t * 2), { leucht: .6 });
+    if (A.teile.length) R.teile(A.teile, .6);
+  }
+  function figur(m, x, z, ry, winke) {
+    const p = A.p, lauf = m === mod.lumi && Math.hypot(p.vx, p.vz) > .5, ph = m === mod.lumi ? p.anim : 0, fl = winke !== null && winke !== undefined ? winke : lauf ? .3 + Math.abs(Math.sin(ph)) * .3 : .3, fuss = lauf ? Math.sin(ph) : 0;
+    G3.pose(M, x, lauf ? Math.abs(Math.sin(ph)) * .07 : 0, z, ry, 0, lauf ? Math.sin(ph) * .08 : 0, .85); R.mal(m.r, M, { glanz: .35 });
+    [-1, 1].forEach(sd => { G3.mal(M, G3.pose(M2, sd * .47, 1.05, -.02, 0, 0, sd * (fl + .1)), M3); R.mal(m.f, M3); G3.mal(M, G3.pose(M2, sd * .2, Math.max(0, -sd * fuss) * .12, sd * fuss * .22, 0, 0, 0), M3); R.mal(m.u, M3); });
+  }
+  h28aOnEnd(() => { if (G3FRAGE) { G3FRAGE.ov.remove(); G3FRAGE = null; } });
+  const K = akBaukasten(stage, {
+    id: 'isl', titel: '🏝️ Insel-Abenteuer 3D', text: 'Lumi erkundet Inseln von oben! Finde den Schlüssel in einer Truhe, schieb Steinblöcke auf rote Schalter, löse die Aufgaben an den Rätsel-Toren und finde den großen Schatz. Mit ❄️ frierst du Krabben kurz ein.', welten: ISL_WELTEN, n: 5, punkteWort: 'Fische', ersterTipp: false,
+    hilfe: 'Jeder gefundene Sternsplitter ist ein Stern (höchstens 3). Wer den Schatz findet, bekommt immer mindestens einen Stern. Rätsel-Tore öffnen sich mit Aufgaben aus der Pixel-Welt.',
+    layout: K => R.groesse(K.W, K.H), level: islLevel,
+    menu: K => { const [w, l] = lvAktuell('isl', 4, 5); bauen(islLevel(Math.max(0, w), Math.max(0, l))); },
+    start: (K, L) => { bauen(L); K.punkte = 0; K.fort = 0; K.herzen = 3; K.ziel = '✨ 0/3  🔑 0  🐟 0'; St.reset(); },
+    los: K => { A.phase = 'spiel'; },
+    bereit: K => [K.L.name, K.L.st === 0 ? 'Joystick: laufen. Gegen einen Steinblock laufen schiebt ihn. Finde den Schlüssel und den großen Schatz!' : 'Rätsel-Tore öffnen sich mit einer Aufgabe. Krabben frierst du mit ❄️ ein.'],
+    tippText: 'Tippe zum Starten!',
+    update: (K, dt) => { if (!A) return; if (K.phase === 'lauf' || K.phase === 'ende' || K.phase === 'fertig') schritt(K, dt); kamera(K, dt); },
+    draw: (K, x) => { x.clearRect(-60, -60, K.W + 120, K.H + 120); R.messe(); zeichne3D(K); if (K.phase === 'lauf' && A && A.phase === 'spiel' && !G3FRAGE) St.zeichne(K, x); },
+    down: (K, a, b, e) => { if (!G3FRAGE) St.down(K, a, b, e); }, move: (K, a, b, e) => St.move(K, a, b, e), up: (K, a, b, e) => St.up(K, a, b, e),
+    taste: (K, e, an) => { if (an && K.phase === 'bereit') { K.los(); return; } if (St.taste(e, an)) e.preventDefault(); },
+    dbg: K => ({ get A() { return A; }, get R() { return R; }, St, kam: () => kam, frage: () => G3FRAGE, antworte: richtig => { if (!G3FRAGE) return; const i = G3FRAGE.t.opts.findIndex(o => (o === G3FRAGE.t.a) === richtig); g3Antwort(i); },
+      st: () => ({ phase: K.phase, spiel: A.phase, sterne: A.p.sterne, schluessel: A.p.schluessel, fische: A.p.fische, herz: A.p.herz }),
+      sim: sec => { if (K.phase === 'bereit') K.los(); A.auto = true; for (let i = 0; i < sec * 60 && K.phase === 'lauf'; i++) K.schritt(1 / 60); A.auto = false; return { phase: K.phase, spiel: A.phase, sterne: A.p.sterne, fische: A.p.fische, sterneK: K.sterne, geloest: A.geloest || 0 }; } })
+  });
+}
+function islBaum(B, G, typ, x, z, r) {
+  if (typ === 'palme') { let px = x, py = 0; for (let i = 0; i < 4; i++) { B.zyl(px, py, z, .2 - i * .02, .18 - i * .02, .55, 6, i % 2 ? '#9a6a3a' : '#a87842'); px += .08; py += .55; } for (let i = 0; i < 7; i++) B.mit(px, py, z, i * .9, .5, 0, 1, 1, 1, () => B.kiste(0, 0, -.75, .45, .07, 1.5, i % 2 ? '#3aa65a' : '#2f8f4c')); }
+  else if (typ === 'tanne') { B.zyl(x, 0, z, .2, .18, .6, 6, '#7a5a3a'); [[.5, 1, 1.2], [1.1, .8, 1], [1.7, .55, .9]].forEach(([y, rr, h]) => { B.zyl(x, y, z, rr, 0, h, 7, '#2e6b55'); B.zyl(x, y + h * .55, z, rr * .45, 0, h * .45 + .02, 7, '#f4f9ff'); }); }
+  else if (typ === 'pilz') { const c = r() < .5 ? '#e8463a' : '#a46bff'; B.zyl(x, 0, z, .3, .35, 1.2, 8, '#f4f6fb', true); B.kugel(x, 1.3, z, .95, .6, .95, c, 1); for (let i = 0; i < 4; i++) { const a = i * 1.6; B.kugel(x + Math.cos(a) * .55, 1.65, z + Math.sin(a) * .55, .15, .07, .15, '#ffffff', 1); } }
+  else { B.zyl(x, 0, z, .45, .45, 2.4, 10, '#e8e4f4', true); B.kiste(x, 2.4, z, 1.1, .25, 1.1, '#c4b8e8'); G.kugel(x, 2.9, z, .25, .25, .25, '#ffd56b', 1); }
+}
+FUN_GAMES.inselabenteuer3d = { c: 'hits', t: 'Insel-Abenteuer 3D', seit: 'Insel-Abenteuer 3D', d: 'Lumi erkundet Inseln von oben: Schlüssel finden, Steinblöcke auf Schalter schieben, Rätsel-Tore mit Aufgaben öffnen und den großen Schatz finden. 4 Inseln mit 20 Abenteuern.', i: '🏝️' };
+FUN_IMPL.inselabenteuer3d = islSpiel;
+
+/*@@src buddel440.js@@*/
+
+
+
+
+
+
+
+
+
+
+const BDL_WELTEN = [
+  { n: 'Sand-Höhle', i: '🏖️', farbe: '#e0a12f', art: 'sand' },
+  { n: 'Eis-Höhle', i: '🧊', farbe: '#2f9bd8', art: 'eis' },
+  { n: 'Lava-Höhle', i: '🌋', farbe: '#e8463a', art: 'lava' },
+  { n: 'Kristall-Höhle', i: '💎', farbe: '#7a4fd6', art: 'kristall' }
+];
+const BDL_NAMEN = [['Erstes Loch', 'Muschelgang', 'Sandburg-Keller', 'Krabbentunnel', 'Schatz der Sand-Höhle'], ['Frostgrube', 'Eiszapfen-Schacht', 'Gletscherspalte', 'Schneetunnel', 'Schatz der Eis-Höhle'], ['Glutloch', 'Feuergang', 'Magma-Keller', 'Vulkanschacht', 'Schatz der Lava-Höhle'], ['Glitzergrube', 'Edelstein-Gang', 'Kristallschacht', 'Funkelkeller', 'Schatz der Kristall-Höhle']];
+const BDL_PAL = {
+  sand: { e: '#c8a060', e2: '#b8904e', s: '#9a8a7a', f: '#5a4f48', b: '#ecd08c', gras: '#7ccf6a', hinten: '#4a3a30', st: 'strand' },
+  eis: { e: '#d6e6f2', e2: '#c4d8ea', s: '#8ab0d0', f: '#4a5a72', b: '#f4f8fc', gras: '#ffffff', hinten: '#2a3a54', st: 'eis' },
+  lava: { e: '#7a5a50', e2: '#6a4a42', s: '#5a4a50', f: '#2b2226', b: '#9a7a60', gras: '#5a6a3a', hinten: '#1e1416', st: 'vulkan' },
+  kristall: { e: '#7a6aa0', e2: '#6a5a90', s: '#5a5070', f: '#2a2448', b: '#a898c8', gras: '#8ef3ff', hinten: '#1a1430', st: 'sterne' }
+};
+const BDL_W = 16, BDL_HP = { e: 1, b: 1, k: 1, x: 1, h: 1, s: 3 };
+function bdlLevel(w, l) { const st = w * 5 + l; return { art: BDL_WELTEN[w].art, st, w, l, name: BDL_NAMEN[w][l], H: 38 + l * 5 + w * 4, stein: .1 + w * .05 + l * .03, maulwurf: Math.min(5, Math.floor(st / 3)), lava: w === 2 ? 3 + l : 0, seed: 17 + st * 37 }; }
+function bdlPlan(L) {
+  let seed = L.seed; const r = () => (seed = (seed * 16807) % 2147483647) / 2147483647; r(); r();
+  const W = BDL_W, H = L.H, g = []; for (let y = 0; y < H; y++) g.push(Array(W).fill(' '));
+  for (let y = 4; y < H; y++) for (let x = 0; x < W; x++) { const q = r(); g[y][x] = x === 0 || x === W - 1 ? 'f' : q < L.stein ? 's' : q < L.stein + .06 ? 'k' : q < L.stein + .1 && y > 8 ? 'b' : q < L.stein + .13 ? 'f' : 'e'; }
+  for (let x = 1; x < W - 1; x++) g[3][x] = 'e';
+  g[3][0] = g[3][W - 1] = 'f';
+
+  const runen = []; [Math.floor(H * .36), Math.floor(H * .68)].forEach(y => { const x = 2 + Math.floor(r() * (W - 4)); for (let xx = 0; xx < W; xx++) g[y][xx] = 'f'; g[y][x] = 'r'; runen.push([x, y]); });
+
+  const tx = 3 + Math.floor(r() * (W - 6)), ty = H - 2;
+  for (let y = H - 5; y < H - 1; y++) for (let x = Math.max(1, tx - 3); x <= Math.min(W - 2, tx + 3); x++) g[y][x] = ' ';
+  for (let x = 0; x < W; x++) g[H - 1][x] = 'f'; g[ty][tx] = 'T';
+
+  const maul = [], lava = [], schutz = y => runen.some(([, ry]) => Math.abs(ry - y) < 3) || y > H - 7 || y < 7;
+  for (let n = 0, v = 0; n < L.maulwurf + L.lava && v < 600; v++) { const y = 6 + Math.floor(r() * (H - 12)), x0 = 1 + Math.floor(r() * (W - 7)), len = 4 + Math.floor(r() * 3); if (schutz(y) || schutz(y - 1)) continue;
+    let belegt = false; for (let yy = y - 3; yy <= y + 2; yy++) for (let x = x0 - 1; x <= x0 + len; x++) if (g[yy] && (g[yy][x] === ' ' || g[yy][x] === 'l')) belegt = true; if (belegt) continue;
+    const lavaHier = n >= L.maulwurf;
+    for (let x = x0; x < x0 + len; x++) { g[y][x] = ' '; g[y - 1][x] = ' '; g[y + 1][x] = lavaHier ? 'l' : 'f'; }
+    if (lavaHier) lava.push([x0, y]); else maul.push({ x: x0 + .5, y, x0: x0 + .2, x1: x0 + len - 1.2, dir: 1 }); n++; }
+
+  const sterne = []; for (let i = 0; i < 3; i++) { const y = Math.floor(6 + (H - 12) * (i + .5) / 3), x = 2 + Math.floor(r() * (W - 4)); if (g[y][x] === 'f' || g[y][x] === 'r' || g[y][x] === ' ' || [[0, 0], [1, 0], [-1, 0], [0, 1], [0, -1]].some(([a, b]) => g[y + b] && g[y + b][x + a] === 'l')) { i--; continue; } g[y][x] = 'x'; [[1, 0], [-1, 0], [0, 1], [0, -1]].forEach(([a, b]) => { if (g[y + b] && g[y + b][x + a] === 'e') g[y + b][x + a] = 's'; }); sterne.push([x, y]); }
+  for (let i = 0; i < 2; i++) { const y = 10 + Math.floor(r() * (H - 16)), x = 2 + Math.floor(r() * (W - 4)); if (g[y][x] === 'e') g[y][x] = 'h'; }
+  return { g, W, H, runen, schatz: [tx, ty], maul, lava, sterne, start: [Math.floor(W / 2) + .5, 2.9] };
+}
+
+function bdlSpiel(stage) {
+  const R = g3Neu(stage);
+  if (!R) { const d = document.createElement('div'); d.className = 'tb-box'; d.innerHTML = '<div class="tb-karte lr-karte lv-karte"><h2>🧊 Hier fehlt die 3D-Grafik</h2><p>Dieses Spiel braucht 3D-Grafik. Auf diesem Gerät klappt das leider nicht. Probier ein anderes Spiel!</p></div>'; stage.appendChild(d); return; }
+  const M = G3.neu(), M2 = G3.neu(), M3 = G3.neu();
+  const lu = luLumiModell(), bau = f => { const B = g3Bau(95); f(B); return R.mesh(B.fertig()); };
+  const mod = { lumi: { r: R.mesh(lu.rumpf), f: R.mesh(lu.fl), u: R.mesh(lu.fuss) },
+    maul: bau(B => { B.kugel(0, .35, 0, .45, .35, .35, '#6a5048', 1); B.kugel(.38, .38, 0, .14, .12, .14, '#ff8ad8', 1); [-1, 1].forEach(s => B.kugel(.28, .52, s * .14, .05, .05, .05, '#12182a', 0)); }),
+    kristall: bau(B => { B.zyl(0, -.3, 0, 0, .22, .3, 6, '#8ef3ff'); B.zyl(0, 0, 0, .22, 0, .4, 6, '#c8fbff'); }),
+    schatz: bau(B => { B.kiste(0, 0, 0, 1.4, .8, .9, '#ffd23f', '#ffe680'); B.kiste(0, .38, 0, 1.45, .14, .95, '#e8463a'); B.kugel(0, .95, 0, .25, .25, .15, '#8ef3ff', 1); }),
+    herz: bau(B => { B.kugel(-.15, .1, 0, .2, .2, .12, '#e8463a', 1); B.kugel(.15, .1, 0, .2, .2, .12, '#e8463a', 1); B.zyl(0, -.3, 0, 0, .3, .38, 4, '#e8463a'); }) };
+  let A = null, art = 'sand';
+  const kam = { auge: [8, -2, 14], ziel: [8, -3, 0], fov: 50, nah: .5, fern: 400 };
+  const St = g3Steuer({ stick: true, knoepfe: K => { const rr = Math.max(36, Math.min(58, Math.min(K.W, K.H) * .1)); return [{ id: 'sprung', x: K.W - rr - 22, y: K.H - rr - 22, r: rr, t: '⤒' }]; }, sonst: (K, a, b) => a > K.W * .62 && b > K.H * .3 ? 'sprung' : null, tasten: { ' ': 'sprung' } });
+
+  const CH = 8;
+  function stueck(i) {
+    const S = A.S, P = BDL_PAL[art], B = g3Bau(100 + i), G = g3Bau(200 + i); let seed = 7 + i * 13; const r = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+    const leer = (x, y) => y < 0 || y >= S.H || x < 0 || x >= S.W || S.g[y][x] === ' ' || S.g[y][x] === 'l' || S.g[y][x] === 'T';
+    for (let y = i * CH; y < Math.min(S.H, (i + 1) * CH); y++) for (let x = 0; x < S.W; x++) { const c = S.g[y][x]; if (c === ' ' || c === 'T') continue;
+      const X = x + .5, Y = -y - .5, farbe = c === 'l' ? '#ff6a1a' : c === 'r' ? '#7a4fd6' : c === 'x' ? '#c98a4a' : c === 'h' ? P.e : c === 'k' ? P.e2 : c === 'b' ? P.b : c === 's' ? P.s : c === 'f' ? P.f : ((x + y) % 2 ? P.e : P.e2);
+      if (c === 'l') { G.q([X - .5, Y - .2, .5], [X + .5, Y - .2, .5], [X + .5, Y - .2, -.5], [X - .5, Y - .2, -.5], '#ff6a1a', [X, Y - 1, 0]); G.q([X - .5, Y - .5, .5], [X + .5, Y - .5, .5], [X + .5, Y - .2, .5], [X - .5, Y - .2, .5], '#ff8a2a', [X, Y - .3, -1]); continue; }
+      const k = B.farb(farbe), hp = A.hp[y * S.W + x], dunkel = hp && BDL_HP[c] && hp < BDL_HP[c] ? .75 : 1, kk = [k[0] * dunkel, k[1] * dunkel, k[2] * dunkel], mi = [X, Y, 0];
+      B.dr([X - .5, Y - .5, .5], [X + .5, Y - .5, .5], [X + .5, Y + .5, .5], kk, mi); B.dr([X - .5, Y - .5, .5], [X + .5, Y + .5, .5], [X - .5, Y + .5, .5], kk, mi);
+      const oben = y === 3 && !leer(x, y) ? G3.f(P.gras) : kk;
+      if (leer(x, y - 1)) { B.dr([X - .5, Y + .5, .5], [X + .5, Y + .5, .5], [X + .5, Y + .5, -.5], oben, mi); B.dr([X - .5, Y + .5, .5], [X + .5, Y + .5, -.5], [X - .5, Y + .5, -.5], oben, mi); }
+      if (leer(x, y + 1)) { B.dr([X - .5, Y - .5, .5], [X + .5, Y - .5, -.5], [X + .5, Y - .5, .5], kk, mi); B.dr([X - .5, Y - .5, .5], [X - .5, Y - .5, -.5], [X + .5, Y - .5, -.5], kk, mi); }
+      if (leer(x - 1, y)) { B.dr([X - .5, Y - .5, .5], [X - .5, Y + .5, -.5], [X - .5, Y - .5, -.5], kk, mi); B.dr([X - .5, Y - .5, .5], [X - .5, Y + .5, .5], [X - .5, Y + .5, -.5], kk, mi); }
+      if (leer(x + 1, y)) { B.dr([X + .5, Y - .5, .5], [X + .5, Y - .5, -.5], [X + .5, Y + .5, -.5], kk, mi); B.dr([X + .5, Y - .5, .5], [X + .5, Y + .5, -.5], [X + .5, Y + .5, .5], kk, mi); }
+      if (c === 'k') { G.kugel(X - .15, Y + .1, .52, .14, .2, .06, '#8ef3ff', 0, false); G.kugel(X + .18, Y - .12, .52, .1, .15, .05, '#c8fbff', 0, false); }
+      if (c === 'r') { G.kiste(X, Y - .3, .51, .08, .6, .02, '#ffd23f'); G.kiste(X, Y + .05, .51, .5, .08, .02, '#ffd23f'); G.kugel(X, Y + .25, .52, .1, .1, .03, '#ffd23f', 0); }
+      if (c === 'x') { B.kiste(X, Y - .2, .51, .7, .08, .02, '#ffd23f'); G.kugel(X, Y + .05, .53, .14, .14, .03, '#ffd23f', 0); }
+      if (c === 'h') G.kugel(X, Y, .52, .18, .16, .04, '#e8463a', 0);
+      if (c === 's') { B.kugel(X - .2, Y + .15, .5, .14, .1, .03, G3.hell(P.s, 1.2), 0, false); B.kugel(X + .2, Y - .2, .5, .1, .08, .03, G3.hell(P.s, .8), 0, false); } }
+    return { b: R.mesh(B.fertig()), g: R.mesh(G.fertig()) };
+  }
+  function neuBauen(i) { if (i < 0 || i >= A.stuecke.length) return; const s = A.stuecke[i]; if (s) { R.weg(s.b); R.weg(s.g); } A.stuecke[i] = stueck(i); }
+  function bauen(L) {
+    if (A) { A.stuecke.forEach(s => { R.weg(s.b); R.weg(s.g); }); R.weg(A.hinten); }
+    art = L.art; const S = bdlPlan(L), P = BDL_PAL[art];
+    A = { L, S, t: 0, phase: 'spiel', teile: [], hp: new Uint8Array(S.W * S.H), stuecke: [], p: { x: S.start[0], y: S.start[1], vx: 0, vy: 0, dir: 1, on: false, anim: 0, herz: 3, inv: 0, kristalle: 0, sterne: 0, grab: 0, grabT: 0 }, cp: { x: S.start[0], y: S.start[1] }, maul: S.maul.map(m => Object.assign({}, m)), sand: [], frageCd: 0, msgCd: 0, geloest: 0 };
+    for (let y = 0; y < S.H; y++) for (let x = 0; x < S.W; x++) { const c = S.g[y][x]; A.hp[y * S.W + x] = BDL_HP[c] || 0; }
+    for (let i = 0; i < Math.ceil(S.H / CH); i++) A.stuecke.push(stueck(i));
+    const B = g3Bau(99); B.q([0, -S.H, -.5], [S.W, -S.H, -.5], [S.W, -3, -.5], [0, -3, -.5], P.hinten, [S.W / 2, -S.H / 2, 1]); [-1, 1].forEach(sd => B.kiste(sd < 0 ? -10 : S.W + 10, -S.H - 2, 0, 20, S.H - 1, 1.2, P.f, P.gras));
+    let seed = 3; const r = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+    B.boden(-60, 80, -60, -.6, -3, P.gras); for (let q = 0; q < 26; q++) { const x = -40 + r() * 100, z = -40 + r() * 34; kgpDeko(B, B, P.st === 'strand' ? 'strand' : P.st === 'eis' ? 'eis' : P.st === 'vulkan' ? 'vulkan' : 'sterne', x, -3, z, 1.5 + r() * 2, r); }
+    A.hinten = R.mesh(B.fertig());
+    A.sMax = 3; A.gesamtK = S.g.flat().filter(c => c === 'k').length;
+  }
+
+  const zelle = (x, y) => { const S = A.S; if (x < 0 || x >= S.W) return 'f'; if (y < 0) return ' '; if (y >= S.H) return 'f'; return S.g[y][x]; };
+  const fest = (x, y) => { const c = zelle(x, y); return c !== ' ' && c !== 'l' && c !== 'T'; };
+  function grabe(K, x, y) {
+    const S = A.S, c = zelle(x, y); if (!fest(x, y) || x <= 0 || x >= S.W - 1) return false;
+    if (c === 'f') { if (!A.msgCd) { K.msg('Fels ist zu hart. Such einen anderen Weg!', 1.2); A.msgCd = 1.5; } return false; }
+    if (c === 'r') { if (A.frageCd) return false; A.frageCd = 1.5; if (A.auto) { brich(K, x, y, true); return true; } g3Frage(stage, '🪨 Rätsel-Fels', 'Löse die Aufgabe, dann zerfällt der Fels!', () => brich(K, x, y, true), () => K.msg('Fast! Probier es gleich noch mal.', 1.5)); return false; }
+    const i = y * S.W + x; A.hp[i] = Math.max(0, A.hp[i] - 1); akGleit(c === 's' ? 260 : 180, 90, .07, 'square', .04); funke(x + .5, -y - .5, .55, 4, [BDL_PAL[art][c] || BDL_PAL[art].e, '#ffffff'], .5, .06);
+    if (A.hp[i] <= 0) brich(K, x, y); else neuBauen(Math.floor(y / CH));
+    return true;
+  }
+  function brich(K, x, y, rune) {
+    const S = A.S, c = S.g[y][x], p = A.p; S.g[y][x] = ' ';
+    if (c === 'k') { p.kristalle++; Sound.glocke(1320, 0, .14, .06); funke(x + .5, -y - .5, .6, 10, ['#8ef3ff', '#ffffff'], .8); }
+    if (c === 'x') { p.sterne++; K.msg(`Sternkiste! ✨ ${p.sterne} von 3`, 1.5); Sound.win(); funke(x + .5, -y - .5, .6, 22, ['#ffd23f', '#ffffff'], 1.1); }
+    if (c === 'h') { p.herz = Math.min(3, p.herz + 1); K.herzen = p.herz; K.msg('Ein Herz! ❤️', 1); Sound.good(); }
+    if (rune) { A.geloest++; akSnd.power(); funke(x + .5, -y - .5, .6, 26, ['#a98bff', '#ffd23f', '#ffffff'], 1.4); A.cp = { x: x + .5, y: y + .9 }; K.msg('Der Rätsel-Fels zerfällt! Weiter nach unten.', 1.6); }
+    neuBauen(Math.floor(y / CH)); if (y % CH === 0) neuBauen(Math.floor(y / CH) - 1); if (y % CH === CH - 1) neuBauen(Math.floor(y / CH) + 1);
+
+    if (zelle(x, y - 1) === 'b') A.sand.push({ x, y: y - 1, t: .25 });
+  }
+  function schritt(K, dt) {
+    A.t += dt; const p = A.p, S = A.S; A.frageCd = Math.max(0, A.frageCd - dt); A.msgCd = Math.max(0, A.msgCd - dt); p.inv = Math.max(0, p.inv - dt);
+    if (G3FRAGE || A.phase !== 'spiel') { teile(dt); return; }
+    let sx = 0, sy = 0, sprung = false;
+    if (A.auto) [sx, sy, sprung] = autoEin(); else { [sx, sy] = St.richtung(); sprung = St.nimm('sprung') || (St.ist('sprung') && p.on && A.t - (A.sprT || 0) > .3); if (St.ist('sprung')) A.sprT = A.sprT || A.t; else A.sprT = 0; }
+    const ziel = Math.abs(sx) > .3 ? Math.sign(sx) * 4.6 : 0; p.vx += Math.max(-30 * dt, Math.min(30 * dt, ziel - p.vx)); if (Math.abs(sx) > .3) p.dir = Math.sign(sx);
+    if (sprung && p.on) { p.vy = 9.2; p.on = false; akSnd.hop(); }
+    p.vy -= 28 * dt; if (p.vy < -18) p.vy = -18;
+
+    const hw = .33, hh = .88, kann = (x, y) => { const x0 = Math.floor(x - hw), x1 = Math.floor(x + hw - .001), y0 = Math.floor(y - hh), y1 = Math.floor(y - .001); for (let yy = y0; yy <= y1; yy++) for (let xx = x0; xx <= x1; xx++) if (fest(xx, yy)) return false; return true; };
+    const nx = p.x + p.vx * dt; if (kann(nx, p.y)) p.x = nx; else { const tx = Math.floor(p.x) + Math.sign(sx), ty = Math.floor(p.y - .45); if (Math.abs(sx) > .3) graben(K, dt, tx, ty); p.vx = 0; }
+    const ny = p.y - p.vy * dt; p.on = false;
+    if (kann(p.x, ny)) p.y = ny; else { if (p.vy < 0) { p.on = true; p.y = Math.floor(ny - .001) + 0; if (!kann(p.x, p.y)) p.y = Math.ceil(p.y - 1e-3) - 0; } else { const ty = Math.floor(ny - hh); graben(K, dt, Math.floor(p.x), ty, true); } p.vy = 0; }
+    if (p.on && sy > .5) graben(K, dt, Math.floor(p.x), Math.floor(p.y + .05));
+    if (!(Math.abs(sx) > .3) && !(p.on && sy > .5)) p.grab = 0;
+    p.anim += Math.abs(p.vx) * dt * 2.6;
+
+    const fx = Math.floor(p.x), fy = Math.floor(p.y - .3); if (zelle(fx, fy) === 'l' || zelle(fx, Math.floor(p.y + .05)) === 'l' && p.on) aua(K, true);
+    A.maul.forEach(m => { m.x += m.dir * 1.6 * dt; if (m.x < m.x0 || m.x > m.x1) { m.dir *= -1; m.x = Math.max(m.x0, Math.min(m.x1, m.x)); } if (p.inv <= 0 && Math.abs(m.x - p.x) < .7 && Math.abs(m.y + .5 - (p.y - .45)) < .8) aua(K, false, m); });
+    for (let i = A.sand.length - 1; i >= 0; i--) { const s = A.sand[i]; s.t -= dt; if (s.t > 0) continue; if (zelle(s.x, s.y) !== 'b' || fest(s.x, s.y + 1) || (Math.floor(p.x) === s.x && Math.floor(p.y - .5) === s.y + 1)) { A.sand.splice(i, 1); continue; } S.g[s.y][s.x] = ' '; S.g[s.y + 1][s.x] = 'b'; A.hp[(s.y + 1) * S.W + s.x] = 1; s.y++; s.t = .15; neuBauen(Math.floor(s.y / CH)); neuBauen(Math.floor((s.y - 1) / CH)); if (zelle(s.x, s.y - 2) === 'b') A.sand.push({ x: s.x, y: s.y - 2, t: .2 }); }
+
+    const [tx, ty] = S.schatz; if (A.phase === 'spiel' && Math.abs(p.x - (tx + .5)) < 1.1 && Math.abs(p.y - (ty + 1)) < 1.2) zielErreicht(K);
+    teile(dt);
+    const tiefe = Math.max(0, Math.floor(p.y) - 3); K.ziel = `💎 ${p.kristalle}  ✨ ${p.sterne}/3  ⛏️ ${tiefe} m`; K.punkte = p.kristalle; K.fort = Math.min(1, tiefe / (S.H - 6));
+  }
+  function graben(K, dt, x, y, kopf) { const p = A.p; p.grabT -= dt; if (p.grabT > 0) return; if (grabe(K, x, y)) { p.grabT = kopf ? .25 : .2; p.grab = .2; } else p.grabT = .3; }
+  function aua(K, lava, m) {
+    const p = A.p; if (p.inv > 0) return; p.herz--; p.inv = 1.6; K.herzen = Math.max(0, p.herz); K.shake = .25; akSnd.au();
+    if (m) { p.vx = Math.sign(p.x - m.x || 1) * 7; p.vy = 5; }
+    if (lava || p.herz <= 0) { p.x = A.cp.x; p.y = A.cp.y; p.vx = p.vy = 0; if (p.herz <= 0) { p.herz = 3; K.herzen = 3; } K.msg(lava ? 'Heiß! Zurück zum letzten Halt.' : 'Autsch! Weiter geht es am letzten Halt.', 1.5); }
+  }
+  function autoEin() {
+    const p = A.p, S = A.S, ru = S.runen.find(([x, y]) => S.g[y][x] === 'r'), ziel = ru ? [ru[0], ru[1]] : [S.schatz[0], S.schatz[1]], cx = Math.floor(p.x), cy = Math.floor(p.y - .5);
+    if (!A.weg || A.wegT <= 0 || A.wegZiel !== ziel.join()) { A.wegT = .4; A.wegZiel = ziel.join(); const vor = new Map([[cx + ',' + cy, null]]), q = [[cx, cy]]; let fund = null;
+      for (let k = 0; k < q.length && !fund; k++) { const [x, y] = q[k]; for (const [a, b] of [[0, 1], [1, 0], [-1, 0], [0, -1]]) { const nx = x + a, ny = y + b, key = nx + ',' + ny; if (vor.has(key)) continue; const c = zelle(nx, ny); if (nx === ziel[0] && ny === ziel[1]) { vor.set(key, [x, y]); fund = [nx, ny]; break; } if (c === 'f' || c === 'l' || c === 'r' || nx <= 0 || nx >= S.W - 1 || ny < 0) continue; { let yy = ny + 1; while (zelle(nx, yy) === ' ') yy++; if (zelle(nx, yy) === 'l') continue; } if (b === -1 && fest(nx, ny)) continue; vor.set(key, [x, y]); q.push([nx, ny]); } }
+      A.weg = []; let c = fund; while (c && !(c[0] === cx && c[1] === cy)) { A.weg.unshift(c); c = vor.get(c[0] + ',' + c[1]); } }
+    A.wegT -= 1 / 60; const n = A.weg && A.weg[0]; if (!n) return [0, 1, false];
+    if (n[0] === cx && n[1] === cy) { A.weg.shift(); return [0, 0, false]; }
+    if (n[1] > cy) return [Math.abs(p.x - (cx + .5)) > .2 ? Math.sign(cx + .5 - p.x) * .5 : 0, 1, false];
+    if (n[1] < cy) return [0, 0, p.on];
+    return [Math.sign(n[0] - cx), 0, p.on && !fest(cx, cy - 1) && fest(n[0], cy + 1) === false && false];
+  }
+  function zielErreicht(K) {
+    if (A.phase !== 'spiel') return; A.phase = 'ziel'; const p = A.p, st = Math.max(1, p.sterne);
+    K.ende(true, st, `<p>🏆 Schatz ausgegraben!<br>✨ ${p.sterne} von 3 Sternkisten · 💎 ${p.kristalle} Kristalle${A.geloest ? `<br>🧠 ${A.geloest} Rätsel-Felsen gelöst` : ''}</p>`, '', 2200);
+    funke(p.x, -p.y + 1, .6, 40, ['#ffd23f', '#ffffff', '#8ef3ff'], 1.6);
+  }
+  const funke = (x, y, z, n, f, st = 1, s = .07) => { for (let i = 0; i < n; i++) { const a = Math.random() * 6.28; A.teile.push({ x, y, z, vx: Math.cos(a) * 2.5 * st, vy: (1.5 + Math.random() * 2.5) * st, vz: Math.random() * st, life: .45 + Math.random() * .35, max: .8, s0: s, f: f[i % f.length] }); } };
+  function teile(dt) { for (let i = A.teile.length - 1; i >= 0; i--) { const q = A.teile[i]; q.life -= dt; if (q.life <= 0) { A.teile.splice(i, 1); continue; } q.vy -= 9 * dt; q.x += q.vx * dt; q.y += q.vy * dt; q.z += q.vz * dt; q.s = q.s0 * Math.min(1, q.life / q.max * 1.6); } if (A.teile.length > 200) A.teile.splice(0, A.teile.length - 200); }
+
+  function kamera(K, dt) {
+    const asp = K.W / Math.max(1, K.H), hoch = asp < .95, p = A.p, S = A.S;
+    const cy = -p.y + 1.2; A.cy = A.cy === undefined ? cy : g3Weich(A.cy, cy, dt * 4); const cx = hoch ? Math.max(3.5, Math.min(S.W - 3.5, p.x)) : S.W / 2 + (p.x - S.W / 2) * .25; A.cx = A.cx === undefined ? cx : g3Weich(A.cx, cx, dt * 4);
+    let e = [A.cx, A.cy + 1.3, hoch ? 14 : 12], t = [A.cx, A.cy - .3, 0];
+    kam.fov = hoch ? (asp < .6 ? 62 : 56) : 52;
+    if (K.phase === 'bereit' || !K.L) { e = [S.W / 2 + Math.sin(K.t * .3) * 6, 2, 19]; t = [S.W / 2, -5, 0]; A.kam0 = { auge: e, ziel: t }; A.camB = 0; }
+    else if (A.kam0 && A.camB < 1) { A.camB = Math.min(1, A.camB + dt / 1.3); const q = A.camB * A.camB * (3 - 2 * A.camB), e0 = e, t0 = t; e = A.kam0.auge.map((v, i) => v + (e0[i] - v) * q); t = A.kam0.ziel.map((v, i) => v + (t0[i] - v) * q); }
+    if (K.shake > 0) e = [e[0] + Math.sin(K.t * 70) * K.shake * .3, e[1] + Math.cos(K.t * 55) * K.shake * .3, e[2]];
+    kam.auge = e; kam.ziel = t;
+  }
+
+  function zeichne3D(K) {
+    const P = BDL_PAL[art], st = { strand: KGP_ST.strand, eis: KGP_ST.eis, vulkan: KGP_ST.vulkan, sterne: KGP_ST.sterne }[P.st]; if (!A || !R.bild(kam, st, K.t)) return; const p = A.p, S = A.S;
+    R.mal(A.hinten, G3.pose(M, 0, 0, 0), { glanz: .1 });
+    const sy = Math.floor(p.y / CH); A.stuecke.forEach((s, i) => { if (Math.abs(i - sy) <= 2) { R.mal(s.b, M, { glanz: .2 }); R.mal(s.g, M, { leucht: 1 }); } });
+    const [tx, ty] = S.schatz; if (Math.abs(ty - p.y) < 24) R.mal(mod.schatz, G3.pose(M, tx + .5, -ty - 1, 0, Math.sin(K.t) * .3), { glanz: .8, leucht: .15 });
+    A.maul.forEach(m => { if (Math.abs(m.y - p.y) < 20) R.mal(mod.maul, G3.pose(M, m.x, -m.y - 1, 0, m.dir > 0 ? 0 : Math.PI, 0, 0, 1 + Math.sin(A.t * 8) * .04), { glanz: .3 }); });
+    if (!(p.inv > 0 && Math.floor(A.t * 12) % 2)) { const lauf = Math.abs(p.vx) > .5, ph = p.anim, fl = p.grab > 0 ? 1.2 + Math.sin(A.t * 30) * .5 : !p.on ? 1 : lauf ? .3 + Math.abs(Math.sin(ph)) * .3 : .3, fuss = lauf ? Math.sin(ph) : 0;
+      G3.pose(M, p.x, -p.y + (lauf ? Math.abs(Math.sin(ph)) * .05 : 0), 0, p.dir > 0 ? -Math.PI / 2 : Math.PI / 2, p.grab > 0 ? .25 : 0, 0, .56); R.mal(mod.lumi.r, M, { glanz: .35 });
+      [-1, 1].forEach(sd => { G3.mal(M, G3.pose(M2, sd * .47, 1.05, -.02, 0, p.grab > 0 ? -1 : 0, sd * (fl + .1)), M3); R.mal(mod.lumi.f, M3); G3.mal(M, G3.pose(M2, sd * .2, Math.max(0, -sd * fuss) * .12, sd * fuss * .22, 0, 0, 0), M3); R.mal(mod.lumi.u, M3); }); }
+    if (A.teile.length) R.teile(A.teile, .6);
+  }
+  h28aOnEnd(() => { if (G3FRAGE) { G3FRAGE.ov.remove(); G3FRAGE = null; } });
+  const K = akBaukasten(stage, {
+    id: 'bdl', titel: '⛏️ Buddel-Abenteuer 3D', text: 'Lumi buddelt sich bis zum Schatz! Lauf gegen Erde, dann buddelst du. Joystick nach unten buddelt nach unten. Stein braucht drei Schläge, Fels geht gar nicht. Rätsel-Felsen zerfallen mit einer Aufgabe.', welten: BDL_WELTEN, n: 5, punkteWort: 'Kristalle', ersterTipp: false,
+    hilfe: 'Jede gefundene Sternkiste ist ein Stern (höchstens 3). Wer den Schatz ausgräbt, bekommt immer mindestens einen Stern. Die Rätsel-Felsen nutzen Aufgaben aus der Pixel-Welt.',
+    layout: K => R.groesse(K.W, K.H), level: bdlLevel,
+    menu: K => { const [w, l] = lvAktuell('bdl', 4, 5); bauen(bdlLevel(Math.max(0, w), Math.max(0, l))); },
+    start: (K, L) => { bauen(L); K.punkte = 0; K.fort = 0; K.herzen = 3; K.ziel = '💎 0  ✨ 0/3  ⛏️ 0 m'; St.reset(); },
+    los: K => { A.phase = 'spiel'; },
+    bereit: K => [K.L.name, K.L.st === 0 ? 'Joystick nach unten: buddeln. Zur Seite laufen buddelt auch. Ganz unten wartet der Schatz!' : 'Die lila Rätsel-Felsen öffnen sich mit einer Aufgabe. Pass auf Maulwürfe auf!'],
+    tippText: 'Tippe zum Starten!',
+    update: (K, dt) => { if (!A) return; if (K.phase === 'lauf' || K.phase === 'ende' || K.phase === 'fertig') schritt(K, dt); kamera(K, dt); },
+    draw: (K, x) => { x.clearRect(-60, -60, K.W + 120, K.H + 120); R.messe(); zeichne3D(K); if (K.phase === 'lauf' && A && A.phase === 'spiel' && !G3FRAGE) St.zeichne(K, x); },
+    down: (K, a, b, e) => { if (!G3FRAGE) St.down(K, a, b, e); }, move: (K, a, b, e) => St.move(K, a, b, e), up: (K, a, b, e) => St.up(K, a, b, e),
+    taste: (K, e, an) => { if (an && K.phase === 'bereit') { K.los(); return; } if (St.taste(e, an)) e.preventDefault(); },
+    dbg: K => ({ get A() { return A; }, get R() { return R; }, St, kam: () => kam, frage: () => G3FRAGE, antworte: richtig => { if (!G3FRAGE) return; const i = G3FRAGE.t.opts.findIndex(o => (o === G3FRAGE.t.a) === richtig); g3Antwort(i); }, zelle,
+      st: () => ({ phase: K.phase, spiel: A.phase, x: +A.p.x.toFixed(2), y: +A.p.y.toFixed(2), on: A.p.on, kristalle: A.p.kristalle, sterne: A.p.sterne, herz: A.p.herz }),
+      sim: sec => { if (K.phase === 'bereit') K.los(); A.auto = true; for (let i = 0; i < sec * 60 && K.phase === 'lauf'; i++) K.schritt(1 / 60); A.auto = false; return { phase: K.phase, spiel: A.phase, y: Math.round(A.p.y), H: A.S.H, sterne: A.p.sterne, kristalle: A.p.kristalle, sterneK: K.sterne, geloest: A.geloest }; } })
+  });
+}
+FUN_GAMES.buddelabenteuer3d = { c: 'hits', t: 'Buddel-Abenteuer 3D', seit: 'Buddel-Abenteuer 3D', d: 'Lumi buddelt sich durch Erde, Stein und Eis bis zum Schatz. Kristalle, Sternkisten, Maulwürfe und Rätsel-Felsen mit Aufgaben. 4 Höhlen mit 20 Grabungen.', i: '⛏️' };
+FUN_IMPL.buddelabenteuer3d = bdlSpiel;
+
 /*@@src belohnung311.js@@*/
 
 
@@ -105958,7 +106453,7 @@ const BLW_ARTEN = [['abenteuer', '🗺️', 'Abenteuer & Entdecken', '#1e8f88', 
 const BLW_PX_ART = { 'Abenteuer': 'abenteuer', 'Rätsel': 'knobeln', 'Hüpfen': 'rennen', 'Rennen': 'rennen', 'Sport': 'sport', 'Geschick': 'geschick', 'Bauen': 'kreativ' };
 const BLW_FUN_ART = { abenteuer: 'abenteuer', schnell: 'geschick', knobel: 'knobeln', denk: 'knobeln', kreativ: 'kreativ', fussball: 'sport', hits: 'geschick' };
 const BLW_FUN_ID = { memory: 'brett', vier: 'brett', ttt: 'brett', ludo: 'brett', maumau: 'brett', sammelduell: 'brett', wuerfel: 'brett', quartett: 'brett', mahjong: 'brett',
-  fischtausch: 'knobeln', parkplatz: 'knobeln', pfeilflucht: 'knobeln', doppel: 'knobeln', pinguinsumo: 'sport', pinguinrutsche: 'rennen', huepfer: 'rennen', ski: 'rennen', vulkansprung: 'rennen', fruchtschnitt: 'geschick', delfinshow: 'geschick', meeresmix: 'knobeln', lauf3d: 'rennen', abenteuer3d: 'abenteuer', kart3d: 'rennen', show3d: 'rennen', autoball3d: 'sport', fussball3d: 'sport', farbklecks3d: 'geschick', sternenflug3d: 'geschick', sportparty3d: 'sport' };
+  fischtausch: 'knobeln', parkplatz: 'knobeln', pfeilflucht: 'knobeln', doppel: 'knobeln', pinguinsumo: 'sport', pinguinrutsche: 'rennen', huepfer: 'rennen', ski: 'rennen', vulkansprung: 'rennen', fruchtschnitt: 'geschick', delfinshow: 'geschick', meeresmix: 'knobeln', lauf3d: 'rennen', abenteuer3d: 'abenteuer', kart3d: 'rennen', show3d: 'rennen', autoball3d: 'sport', fussball3d: 'sport', farbklecks3d: 'geschick', sternenflug3d: 'geschick', sportparty3d: 'sport', inselabenteuer3d: 'abenteuer', buddelabenteuer3d: 'abenteuer' };
 const BLW_CM_ICO = { baeck: '🥐', bahn: '🚂', detek: '🔍', markt: '🛒' };
 const BLW_NEU_TAGE = 14, BLW_LIEB_MAX = 8, BLW_NEU_MAX = 8;
 function blwS() { if (!isObj(S.blw)) S.blw = {}; const B = S.blw; if (!Array.isArray(B.h)) B.h = []; if (!isObj(B.n)) B.n = {}; if (!['art', 'neu', 'abc'].includes(B.sort)) B.sort = 'art'; return B; }
