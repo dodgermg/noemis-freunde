@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-nymfRD3h9cLN19nj47kNuQwxK53mwdGAViY2S9dFIsE=' 'sha256-NPQzHoNOkSB23Ed1JuKUuEEF6TaTu0n6M7xLVR+Sqio=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-aiSIzroi/NqUK9zrEfxgnufEtdShQUtWte7L/SeHCPY=' 'sha256-NRlH0Ot33Bsr//6C1DF2zIu7bkpA/N/4WLJ1UU+mhJ0=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -6818,6 +6818,43 @@ body.calm .l28b-guest .l28b-animal, body.calm .l28b-ball.pop, body.calm .l28b-tu
 .kp-malkreuz th,.kp-malkreuz td{border:2px solid var(--line-deep,#c3cee0);padding:6px 12px;text-align:center}.kp-malkreuz th{background:var(--surface-2,#eef2f8)}
 .kp-erkl{min-width:0}.kp-erkl .ek-l li,.kp-erkl .ek-b span{overflow-wrap:anywhere;hyphens:auto;-webkit-hyphens:auto}
 
+/* ---- style_malbuch460.css ---- */
+
+.amb-went { border-style: solid; border-color: var(--w, var(--kunst)); }
+.amb-page { padding-bottom: 120px; }
+.amb-kats { display: flex; gap: 8px; overflow-x: auto; padding: 4px 2px 12px; -webkit-overflow-scrolling: touch; scrollbar-width: thin; }
+.amb-kb { flex: none; display: inline-flex; align-items: center; gap: 6px; min-height: 46px; padding: 0 16px; border-radius: 999px; border: 2px solid var(--line); background: var(--surface); color: var(--ink); font: 800 16px var(--f-body); cursor: pointer; white-space: nowrap; }
+.amb-kb.on { background: var(--w, var(--kunst)); border-color: transparent; color: var(--on-color); }
+.amb-leiste { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin: 2px 0 10px; }
+.amb-stufen { display: inline-flex; background: var(--surface-2); border: 2px solid var(--line); border-radius: 14px; padding: 3px; gap: 3px; }
+.amb-sb { min-height: 40px; padding: 0 14px; border: 0; border-radius: 11px; background: transparent; color: var(--ink); font: 800 15px var(--f-body); cursor: pointer; }
+.amb-sb.on { background: var(--w, var(--kunst)); color: var(--on-color); }
+.amb-nr { color: var(--ink-soft); font-size: 14px; margin-left: auto; }
+.amb-hin { margin: 4px 0 10px; color: var(--ink-soft); font-size: 15px; }
+.amb-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 14px; }
+.amb-karte { display: flex; flex-direction: column; gap: 6px; padding: 8px; border-radius: var(--r-md); background: var(--surface); border: 3px solid var(--line); box-shadow: var(--shadow); }
+.amb-karte.sel { border-color: var(--w, var(--kunst)); box-shadow: 0 0 0 3px var(--w-soft, var(--kunst-soft)); }
+.amb-bild { position: relative; display: block; width: 100%; padding: 0; border: 0; border-radius: 10px; overflow: hidden; background: #fff; cursor: pointer; aspect-ratio: 736 / 1080; }
+.amb-bild svg { display: block; width: 100%; height: 100%; pointer-events: none; }
+.amb-haken { position: absolute; top: 8px; right: 8px; width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; background: var(--w, var(--kunst)); color: #fff; font: 900 20px var(--f-body); opacity: 0; transform: scale(.6); transition: opacity .15s, transform .15s; }
+.amb-karte.sel .amb-haken { opacity: 1; transform: scale(1); }
+.amb-unter { display: flex; flex-direction: column; gap: 6px; }
+.amb-ti { font-size: 14px; font-weight: 700; line-height: 1.25; color: var(--ink); min-height: 2.5em; }
+.amb-unter .btn { width: 100%; }
+.amb-druck { position: sticky; bottom: 10px; z-index: 5; display: flex; align-items: center; gap: 10px; margin-top: 16px; padding: 12px 14px; border-radius: var(--r-md); background: var(--surface); border: 2px solid var(--line-deep); box-shadow: var(--shadow); }
+.amb-druck #ambZahl { font-weight: 800; margin-right: auto; min-width: 0; }
+.amb-druck .btn { flex: none; }
+.amb-fuss { margin-top: 12px; }
+
+.amb-stage { background: var(--surface-2); border-radius: var(--r-md); }
+.amb-stage svg { width: auto; height: 100%; max-width: 100%; max-height: 100%; background: #fff; border-radius: 8px; box-shadow: 0 2px 12px rgba(18, 50, 74, .18); cursor: pointer; touch-action: none; }
+.amb-pal { grid-template-columns: repeat(5, 1fr); }
+@media (max-width: 760px) { .amb-pal { grid-template-columns: repeat(10, 1fr); } .amb-nr { margin-left: 0; width: 100%; } }
+
+.ub-blatt.amb-blatt { display: block; padding: 0; }
+.ub-blatt.amb-blatt svg { display: block; width: 184mm; height: 270mm; }
+@media (max-width: 600px) { .amb-druck { padding: 8px 10px; gap: 8px; } .amb-druck #ambZahl { font-size: 14px; line-height: 1.2; } .amb-kb { min-height: 42px; padding: 0 13px; font-size: 15px; } }
+
 /* ---- style_minus298.css ---- */
 
 .mt-page { display: grid; gap: 16px; }
@@ -10528,8 +10565,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '4.5.0';
-  var MAP = {"probe":0,"files":[[10518,"fehler_kern.js"],[10806,null],[10808,"data.js"],[11523,"data_more.js"],[11895,"data_su2.js"],[12122,"data_es.js"],[12490,"data_wissen.js"],[12691,"data_v21.js"],[13376,"data_v24.js"],[13864,"data_v25.js"],[14353,"data_v26.js"],[14452,"data_v29.js"],[14760,"data_v30.js"],[15094,"data_v31.js"],[15400,"data_kunst.js"],[15597,"data_v214.js"],[15700,"data_v216.js"],[15993,"schrift.js"],[16297,"eingabe.js"],[16508,"data_k34m.js"],[17026,"data_k34d.js"],[17380,"data_k34s.js"],[17834,"data_v224.js"],[18707,"data_v225w.js"],[19076,"data_v225k.js"],[19520,"data_herz.js"],[19874,"data_fb226.js"],[20017,"data_tf226.js"],[20224,"data_v227a.js"],[21324,"data_v227b.js"],[22278,"data_h28b.js"],[22318,"data_l28a.js"],[23184,"data_l28b.js"],[24364,"data_schaetz.js"],[24846,"data_party8.js"],[24896,"data_alce.js"],[25567,"data_alce2.js"],[25816,"data_alce3.js"],[26231,"registry.js"],[26745,"app.js"],[28006,"fun.js"],[28594,"fun2.js"],[28910,"atelier.js"],[29284,"kunst225.js"],[29474,"herz.js"],[29838,"reise.js"],[30140,"iglu.js"],[30306,"offline.js"],[30413,"party.js"],[30897,"meine.js"],[31253,"loeffel.js"],[31424,"trend.js"],[31966,"fun228a.js"],[32827,"fun228b.js"],[33504,"kueche.js"],[34543,"stimme.js"],[34598,"klassen.js"],[34747,"freunde_vorab.js"],[34768,"mut.js"],[35190,"schule.js"],[35679,"fussball226.js"],[36001,"schaetzen.js"],[36432,"party8.js"],[37051,"tiere.js"],[37510,"fussball232.js"],[37725,"party8b.js"],[38027,"weg.js"],[38248,"px.js"],[38668,"px_fein.js"],[38722,"px_data.js"],[38979,"pxwelt.js"],[39063,"px_abenteuer.js"],[39892,"px_abenteuer2.js"],[40646,"px_abenteuer3.js"],[41037,"px_abenteuer4.js"],[41247,"px_baukasten.js"],[41356,"px_abenteuer_fein.js"],[41573,"px_abenteuer_fein2.js"],[41925,"px_abenteuer5.js"],[42332,"px_abenteuer6.js"],[42608,"px_abenteuer7.js"],[42964,"px_level300.js"],[43515,"px_schwach300.js"],[43589,"px_zwei300.js"],[43703,"lumicheckt300.js"],[43896,"schreiben300.js"],[44110,"rechenkarte300.js"],[44230,"lerncheck300.js"],[44453,"material300.js"],[44783,"lernweg300.js"],[45307,"px_ski.js"],[45949,"px_wurf.js"],[46478,"px_insel.js"],[47679,"px_kicker.js"],[48614,"px_eis.js"],[49600,"px_run.js"],[50815,"px_brk.js"],[51777,"px_pol.js"],[53128,"px_frog.js"],[54388,"px_angel.js"],[55703,"px_golf.js"],[56737,"px_tauch.js"],[58002,"px_hockey.js"],[58958,"px_lab.js"],[60293,"px_plopp.js"],[61499,"px_stadion.js"],[63010,"px_stadion2.js"],[63062,"px_training.js"],[63431,"cm.js"],[63921,"cmwelt.js"],[63977,"cm_baeck.js"],[64770,"cm_bahn.js"],[65534,"cm_detek.js"],[66251,"cm_markt.js"],[66964,"ff.js"],[67121,"ff_mathe.js"],[69111,"ff_deutsch.js"],[70699,"ff_sach_a.js"],[72948,"ff_sach_b.js"],[75177,"ff_sprachen.js"],[77585,"zm.js"],[78498,"tt.js"],[78711,"data_tagebuch.js"],[78754,"data_hoerspiel.js"],[78913,"leseecke.js"],[79240,"kt.js"],[79543,"comicbuch.js"],[79821,"alce.js"],[79984,"alce_aufg.js"],[80175,"formen.js"],[80626,"data_formen.js"],[80867,"data_formen2.js"],[81089,"spielzeit.js"],[81311,"data_faktmeinung.js"],[81430,"data_es248.js"],[81694,"data_en249.js"],[81933,"data_wissen249.js"],[82364,"data_kunst249.js"],[82647,"data_fussball250.js"],[82771,"data_werte252.js"],[83024,"data_lesen252.js"],[83085,"data_k34_252.js"],[83171,"art254.js"],[83289,"data_werte255.js"],[83427,"data_lesen255.js"],[83563,"forscher255.js"],[83711,"zufall250.js"],[83757,"stufe259.js"],[83767,"advent.js"],[84030,"wdh.js"],[84128,"eswarm288.js"],[84179,"abwechslung294.js"],[84254,"bilder293a.js"],[84344,"bilder293b.js"],[84474,"bilder293c.js"],[84572,"bilder293d.js"],[84694,"bilder293e.js"],[84858,"bilder293f.js"],[84938,"bilder292.js"],[85384,"denk.js"],[85421,"data_viaje265.js"],[85564,"klassenarbeit.js"],[85697,"quizduell.js"],[85820,"neu267.js"],[86085,"prog.js"],[86190,"lernstand.js"],[86257,"blatt.js"],[86359,"uebung295.js"],[86680,"schuh296.js"],[86888,"uebung297.js"],[87275,"minus298.js"],[87516,"schrift299.js"],[87644,"data_es271.js"],[87758,"plus269.js"],[87852,"schach.js"],[88084,"schachtaktik.js"],[88336,"fun270.js"],[88499,"data_neu274.js"],[88708,"plus272.js"],[88762,"spiele274.js"],[88885,"kasten.js"],[88989,"erklaer.js"],[89102,"apa.js"],[89183,"neu276.js"],[89324,"spiele276.js"],[89374,"neu277.js"],[89552,"spiele277.js"],[89807,"lernen278.js"],[90067,"spiele278.js"],[90410,"lernen279.js"],[90735,"lernen279b.js"],[91133,"spanisch280.js"],[91425,"spanisch283.js"],[91658,"mehr281.js"],[91804,"grafik280.js"],[92183,"tiefsee280.js"],[92461,"abenteuer280.js"],[92673,"abenteuer281.js"],[92785,"design281.js"],[92917,"party281.js"],[93048,"grafik281.js"],[93265,"traumtor292.js"],[93472,"kart293.js"],[93749,"lumi_live.js"],[93865,"sicher.js"],[94049,"stil.js"],[94103,"zurueck287.js"],[94146,"nfbilder300.js"],[94309,"formen300.js"],[94916,"musik300.js"],[95087,"lernweg300b.js"],[95210,"lernweg300c.js"],[95370,"espanol300.js"],[95476,"fabel310_bild.js"],[95727,"fabel310.js"],[96118,"eisbude310.js"],[96344,"turbo310.js"],[96549,"sumo310.js"],[96684,"beifahrer310.js"],[96759,"dreier310.js"],[96875,"ring310.js"],[96984,"loch330.js"],[97334,"reise340.js"],[97404,"fisch340.js"],[97960,"rutsche340.js"],[98371,"knobel340.js"],[98609,"frucht350.js"],[98914,"vulkan350.js"],[99157,"delfin350.js"],[99352,"musik350.js"],[99522,"arcade360.js"],[99638,"strasse360.js"],[99934,"blasen360.js"],[100142,"meer360.js"],[100311,"spirale360.js"],[100475,"sterne360.js"],[100682,"alt360a.js"],[100952,"alt360b.js"],[101145,"alt360c.js"],[101399,"alt360d.js"],[101562,"alt370a.js"],[101759,"alt370b.js"],[101963,"alt370c.js"],[102101,"gl390.js"],[102340,"lauf390.js"],[102849,"ab3_level.js"],[103194,"abenteuer400.js"],[103688,"figuren410.js"],[103779,"kart410.js"],[104100,"show410.js"],[104415,"ball410.js"],[104728,"fussball420.js"],[105153,"farbe420.js"],[105434,"flug430.js"],[105624,"sport430.js"],[105952,"insel440.js"],[106232,"buddel440.js"],[106446,"party450.js"],[106854,"tiere450.js"],[107266,"belohnung311.js"],[107427,"druck311.js"],[107521,"freunde.js"],[107658,"start.js"],[107668,null],[107678,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '4.6.0';
+  var MAP = {"probe":0,"files":[[10555,"fehler_kern.js"],[10843,null],[10845,"data.js"],[11560,"data_more.js"],[11932,"data_su2.js"],[12159,"data_es.js"],[12527,"data_wissen.js"],[12728,"data_v21.js"],[13413,"data_v24.js"],[13901,"data_v25.js"],[14390,"data_v26.js"],[14489,"data_v29.js"],[14797,"data_v30.js"],[15131,"data_v31.js"],[15437,"data_kunst.js"],[15634,"data_v214.js"],[15737,"data_v216.js"],[16030,"schrift.js"],[16334,"eingabe.js"],[16545,"data_k34m.js"],[17063,"data_k34d.js"],[17417,"data_k34s.js"],[17871,"data_v224.js"],[18744,"data_v225w.js"],[19113,"data_v225k.js"],[19557,"data_herz.js"],[19911,"data_fb226.js"],[20054,"data_tf226.js"],[20261,"data_v227a.js"],[21361,"data_v227b.js"],[22315,"data_h28b.js"],[22355,"data_l28a.js"],[23221,"data_l28b.js"],[24401,"data_schaetz.js"],[24883,"data_party8.js"],[24933,"data_alce.js"],[25604,"data_alce2.js"],[25853,"data_alce3.js"],[26268,"registry.js"],[26782,"app.js"],[28044,"fun.js"],[28632,"fun2.js"],[28948,"atelier.js"],[29322,"kunst225.js"],[29512,"herz.js"],[29876,"reise.js"],[30178,"iglu.js"],[30344,"offline.js"],[30451,"party.js"],[30935,"meine.js"],[31291,"loeffel.js"],[31462,"trend.js"],[32004,"fun228a.js"],[32865,"fun228b.js"],[33542,"kueche.js"],[34581,"stimme.js"],[34636,"klassen.js"],[34785,"freunde_vorab.js"],[34806,"mut.js"],[35228,"schule.js"],[35717,"fussball226.js"],[36039,"schaetzen.js"],[36470,"party8.js"],[37089,"tiere.js"],[37548,"fussball232.js"],[37763,"party8b.js"],[38065,"weg.js"],[38286,"px.js"],[38706,"px_fein.js"],[38760,"px_data.js"],[39017,"pxwelt.js"],[39101,"px_abenteuer.js"],[39930,"px_abenteuer2.js"],[40684,"px_abenteuer3.js"],[41075,"px_abenteuer4.js"],[41285,"px_baukasten.js"],[41394,"px_abenteuer_fein.js"],[41611,"px_abenteuer_fein2.js"],[41963,"px_abenteuer5.js"],[42370,"px_abenteuer6.js"],[42646,"px_abenteuer7.js"],[43002,"px_level300.js"],[43553,"px_schwach300.js"],[43627,"px_zwei300.js"],[43741,"lumicheckt300.js"],[43934,"schreiben300.js"],[44148,"rechenkarte300.js"],[44268,"lerncheck300.js"],[44491,"material300.js"],[44821,"lernweg300.js"],[45345,"px_ski.js"],[45987,"px_wurf.js"],[46516,"px_insel.js"],[47717,"px_kicker.js"],[48652,"px_eis.js"],[49638,"px_run.js"],[50853,"px_brk.js"],[51815,"px_pol.js"],[53166,"px_frog.js"],[54426,"px_angel.js"],[55741,"px_golf.js"],[56775,"px_tauch.js"],[58040,"px_hockey.js"],[58996,"px_lab.js"],[60331,"px_plopp.js"],[61537,"px_stadion.js"],[63048,"px_stadion2.js"],[63100,"px_training.js"],[63469,"cm.js"],[63959,"cmwelt.js"],[64015,"cm_baeck.js"],[64808,"cm_bahn.js"],[65572,"cm_detek.js"],[66289,"cm_markt.js"],[67002,"ff.js"],[67159,"ff_mathe.js"],[69149,"ff_deutsch.js"],[70737,"ff_sach_a.js"],[72986,"ff_sach_b.js"],[75215,"ff_sprachen.js"],[77623,"zm.js"],[78536,"tt.js"],[78749,"data_tagebuch.js"],[78792,"data_hoerspiel.js"],[78951,"leseecke.js"],[79278,"kt.js"],[79581,"comicbuch.js"],[79859,"alce.js"],[80022,"alce_aufg.js"],[80213,"formen.js"],[80664,"data_formen.js"],[80905,"data_formen2.js"],[81127,"spielzeit.js"],[81349,"data_faktmeinung.js"],[81468,"data_es248.js"],[81732,"data_en249.js"],[81971,"data_wissen249.js"],[82402,"data_kunst249.js"],[82685,"data_fussball250.js"],[82809,"data_werte252.js"],[83062,"data_lesen252.js"],[83123,"data_k34_252.js"],[83209,"art254.js"],[83327,"data_werte255.js"],[83465,"data_lesen255.js"],[83601,"forscher255.js"],[83749,"zufall250.js"],[83795,"stufe259.js"],[83805,"advent.js"],[84068,"wdh.js"],[84166,"eswarm288.js"],[84217,"abwechslung294.js"],[84292,"bilder293a.js"],[84382,"bilder293b.js"],[84512,"bilder293c.js"],[84610,"bilder293d.js"],[84732,"bilder293e.js"],[84896,"bilder293f.js"],[84976,"bilder292.js"],[85422,"denk.js"],[85459,"data_viaje265.js"],[85602,"klassenarbeit.js"],[85735,"quizduell.js"],[85858,"neu267.js"],[86123,"prog.js"],[86228,"lernstand.js"],[86295,"blatt.js"],[86397,"uebung295.js"],[86718,"schuh296.js"],[86926,"uebung297.js"],[87313,"minus298.js"],[87554,"schrift299.js"],[87682,"data_es271.js"],[87796,"plus269.js"],[87890,"schach.js"],[88122,"schachtaktik.js"],[88374,"fun270.js"],[88537,"data_neu274.js"],[88746,"plus272.js"],[88800,"spiele274.js"],[88923,"kasten.js"],[89027,"erklaer.js"],[89140,"apa.js"],[89221,"neu276.js"],[89362,"spiele276.js"],[89412,"neu277.js"],[89590,"spiele277.js"],[89845,"lernen278.js"],[90105,"spiele278.js"],[90448,"lernen279.js"],[90773,"lernen279b.js"],[91171,"spanisch280.js"],[91463,"spanisch283.js"],[91696,"mehr281.js"],[91842,"grafik280.js"],[92221,"tiefsee280.js"],[92499,"abenteuer280.js"],[92711,"abenteuer281.js"],[92823,"design281.js"],[92955,"party281.js"],[93086,"grafik281.js"],[93303,"traumtor292.js"],[93510,"kart293.js"],[93787,"lumi_live.js"],[93903,"sicher.js"],[94087,"stil.js"],[94141,"zurueck287.js"],[94184,"nfbilder300.js"],[94347,"formen300.js"],[94954,"musik300.js"],[95125,"lernweg300b.js"],[95248,"lernweg300c.js"],[95408,"espanol300.js"],[95514,"fabel310_bild.js"],[95765,"fabel310.js"],[96156,"eisbude310.js"],[96382,"turbo310.js"],[96587,"sumo310.js"],[96722,"beifahrer310.js"],[96797,"dreier310.js"],[96913,"ring310.js"],[97022,"loch330.js"],[97372,"reise340.js"],[97442,"fisch340.js"],[97998,"rutsche340.js"],[98409,"knobel340.js"],[98647,"frucht350.js"],[98952,"vulkan350.js"],[99195,"delfin350.js"],[99390,"musik350.js"],[99560,"arcade360.js"],[99676,"strasse360.js"],[99972,"blasen360.js"],[100180,"meer360.js"],[100349,"spirale360.js"],[100513,"sterne360.js"],[100720,"alt360a.js"],[100990,"alt360b.js"],[101183,"alt360c.js"],[101437,"alt360d.js"],[101600,"alt370a.js"],[101797,"alt370b.js"],[102001,"alt370c.js"],[102139,"gl390.js"],[102378,"lauf390.js"],[102887,"ab3_level.js"],[103232,"abenteuer400.js"],[103726,"figuren410.js"],[103817,"kart410.js"],[104138,"show410.js"],[104453,"ball410.js"],[104766,"fussball420.js"],[105191,"farbe420.js"],[105472,"flug430.js"],[105662,"sport430.js"],[105990,"insel440.js"],[106270,"buddel440.js"],[106484,"party450.js"],[106892,"tiere450.js"],[107304,"malbuch460a.js"],[107627,"malbuch460b.js"],[107879,"malbuch460c.js"],[107984,"belohnung311.js"],[108145,"druck311.js"],[108239,"freunde.js"],[108376,"start.js"],[108386,null],[108396,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -26746,9 +26783,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '4.5.0';
+const APP_VERSION = '4.6.0';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "4.6.0", d: "20.11.2026", t: ["Ausmalbilder zum Ausdrucken in der Kunst-Welt: 19 Bereiche mit Tieren, Meer, Dinos, Fahrzeugen, Fußball, Advent und mehr, drei Stufen, immer neue Bilder", "Mandalas, Muster, ABC, Zahlen zum Zählen und Rechen-Mandalas, jedes Bild auch am iPad ausmalen und in die Galerie hängen"] },
   { v: "4.5.0", d: "20.11.2026", t: ["Party-Brett 3D: Würfel-Brettspiel mit Pinguinen, auch zu zweit an einem Gerät, Frage-Felder mit Aufgaben und 5 Minispiele, 16 Partys", "Tierfreunde-Insel 3D: Fantasie-Tiere füttern, Freundschafts-Aufgaben lösen und Häuschen bauen, 20 Tiere auf vier Inseln"] },
   { v: "4.4.0", d: "20.11.2026", t: ["Insel-Abenteuer 3D: Inseln von oben erkunden, Schlüssel finden, Steinblöcke schieben, Rätsel-Tore mit Aufgaben, 20 Abenteuer", "Buddel-Abenteuer 3D: bis zur Schatzhöhle buddeln, Kristalle und Sternkisten finden, Rätsel-Felsen mit Aufgaben, 20 Grabungen"] },
   { v: "4.3.0", d: "20.11.2026", t: ["Sternen-Flug 3D: im Gleiter durch Ringe fliegen und Hindernissen ausweichen, ohne Kämpfen, 20 Flüge in vier Welten", "Sport-Party 3D: Bowling, Tennis, Torwandschießen und Bogenschießen, je 5 Spiele bis zum Pokal"] },
@@ -27279,7 +27317,7 @@ function showWorld(wid, top) {
   const vor = gamesOfWorld(wid).filter(id => klStatus(id) === 'vor'), okN = groups.reduce((a, gr) => a + okOf(gr).length, 0);
   setView(`<header class="pagehead"><div class="wrap">${backBtn()}
       <div><h1>${w.name}</h1><p>${w.tag}</p></div><div class="art">${ART[wid]}</div></div></header>
-    <main class="wrap">${okN || vor.length ? klWorldBar(okN, 0) : klEmptyWorld(wid)}
+    <main class="wrap">${okN || vor.length ? klWorldBar(okN, 0) : klEmptyWorld(wid)}${typeof ambWorldBtn === 'function' ? ambWorldBtn(wid) : ''}
       ${groups.length || vor.length ? `<h2 class="tp-h">Wähle ein Thema</h2>` : ''}
       <div class="topics">${typeof ffTileHTML === 'function' ? ffTileHTML(wid) : ''}${groups.map(gr => topicTile(gr, okOf(gr), wid)).join('')}${vor.length ? topicTile('vor:' + wid, vor, wid) : ''}</div>${typeof vkWorldBtn === 'function' ? vkWorldBtn(wid) : ''}${typeof kaWorldBtn === 'function' ? kaWorldBtn(wid) : ''}${typeof ubWorldBtn === 'function' ? ubWorldBtn(wid) : ''}</main>`, wid);
 }
@@ -107262,6 +107300,686 @@ function tinSpiel(stage) {
 }
 FUN_GAMES.tierinsel3d = { c: 'kreativ', t: 'Tierfreunde-Insel 3D', seit: 'Tierfreunde-Insel 3D', d: 'Fantasie-Tiere ziehen auf vier Inseln: Futter finden, füttern, Freundschafts-Aufgaben lösen und Häuschen bauen. 20 Tiere, die auf ihren Inseln bleiben.', i: '🐾' };
 FUN_IMPL.tierinsel3d = tinSpiel;
+
+/*@@src malbuch460a.js@@*/
+
+
+
+
+
+
+
+
+let AMB_UID = 0;
+
+function ambStift(s) {
+  const n = v => +(+v).toFixed(1), W = +(5.4 / s).toFixed(3), D = +(3.2 / s).toFixed(3);
+  const H = { s, W, D, n,
+    c: (x, y, r) => `<circle cx="${n(x)}" cy="${n(y)}" r="${n(r)}"/>`,
+    e: (x, y, rx, ry, a) => `<ellipse cx="${n(x)}" cy="${n(y)}" rx="${n(rx)}" ry="${n(ry)}"${a ? ` transform="rotate(${n(a)} ${n(x)} ${n(y)})"` : ''}/>`,
+    r: (x, y, w, h, rr) => `<rect x="${n(x)}" y="${n(y)}" width="${n(w)}" height="${n(h)}"${rr ? ` rx="${n(rr)}"` : ''}/>`,
+    p: d => `<path d="${d}"/>`,
+    pg: pts => `<polygon points="${pts}"/>`,
+    l: d => `<path d="${d}" fill="none" stroke-width="${D}"/>`,
+    L: d => `<path d="${d}" fill="none"/>`,
+    k: (x, y, r) => `<circle cx="${n(x)}" cy="${n(y)}" r="${n(r)}" fill="#000" stroke="none"/>`,
+    ke: (x, y, rx, ry) => `<ellipse cx="${n(x)}" cy="${n(y)}" rx="${n(rx)}" ry="${n(ry)}" fill="#000" stroke="none"/>`,
+    hell: (x, y, r) => `<circle cx="${n(x)}" cy="${n(y)}" r="${n(r)}" fill="#fff" stroke="none"/>`,
+    auge: (x, y, r) => H.c(x, y, r) + H.k(x + r * .12, y + r * .12, r * .56) + H.hell(x - r * .05, y - r * .12, r * .2),
+    g: (x, y, rot, inner) => `<g transform="translate(${n(x)} ${n(y)})${rot ? ` rotate(${n(rot)})` : ''}">${inner}</g>`,
+
+    wolke: (cx, cy, rx, ry, k, ph = 0) => { let d = ''; const P = []; for (let i = 0; i <= k; i++) { const a = ph + i / k * Math.PI * 2; P.push([cx + Math.cos(a) * rx, cy + Math.sin(a) * ry]); }
+      P.forEach(([x, y], i) => { if (!i) { d = `M${n(x)} ${n(y)}`; return; } const [x0, y0] = P[i - 1], r = Math.hypot(x - x0, y - y0) * .62; d += ` A${n(r)} ${n(r)} 0 0 1 ${n(x)} ${n(y)}`; }); return H.p(d + ' Z'); },
+    stern: (cx, cy, r1, r2, k = 5, rot = 0) => { const P = []; for (let i = 0; i < k * 2; i++) { const a = (rot - 90 + i * 180 / k) * Math.PI / 180, r = i % 2 ? r2 : r1; P.push(n(cx + Math.cos(a) * r) + ',' + n(cy + Math.sin(a) * r)); } return H.pg(P.join(' ')); },
+
+    clip: (form, inner) => { const id = 'ambc' + (++AMB_UID); return form + `<clipPath id="${id}">${form}</clipPath><g clip-path="url(#${id})">${inner}</g>` + form.replace('/>', ' fill="none"/>'); },
+    text: (x, y, gr, t, anker = 'middle', dicke) => `<text x="${n(x)}" y="${n(y)}" font-size="${n(gr)}" font-weight="900" text-anchor="${anker}" stroke-width="${n(dicke || W)}" font-family="ui-rounded, 'SF Pro Rounded', 'Arial Rounded MT Bold', system-ui, sans-serif">${esc(t)}</text>`
+  };
+  return H;
+}
+const ambLach = (H, x, y, w) => H.l(`M${x - w} ${y} Q${x} ${y + w * .9} ${x + w} ${y}`);
+const ambBart = (H, x, y, w) => H.l(`M${x - 12} ${y} L${x - 12 - w} ${y - 6} M${x - 12} ${y + 5} L${x - 12 - w} ${y + 8} M${x + 12} ${y} L${x + 12 + w} ${y - 6} M${x + 12} ${y + 5} L${x + 12 + w} ${y + 8}`);
+
+function ambPferd(H, art) {
+  const reg = art === 'einhorn', zeb = art === 'zebra';
+  const koerper = '<ellipse cx="14" cy="14" rx="54" ry="30"/>';
+  let s = H.r(-27, 30, 12, 58, 4) + H.r(51, 30, 12, 58, 4) + H.r(-28, 82, 14, 12, 3) + H.r(50, 82, 14, 12, 3);
+  s += reg ? H.p('M64 4 Q100 4 98 58 Q90 44 80 40 Q86 60 78 74 Q70 46 62 26 Z') + H.l('M70 10 Q90 22 88 52 M66 18 Q80 36 80 60') : H.p('M64 4 Q98 8 92 64 Q82 42 68 28 Z');
+  s += zeb ? H.clip(koerper, [0, 1, 2, 3, 4, 5].map(i => H.p(`M${-28 + i * 18} -20 L${-20 + i * 18} -20 L${-30 + i * 18} 50 L${-38 + i * 18} 50 Z`)).join('')) : H.e(14, 14, 54, 30);
+  s += H.r(-39, 32, 12, 58, 4) + H.r(39, 32, 12, 58, 4) + H.r(-40, 84, 14, 12, 3) + H.r(38, 84, 14, 12, 3);
+  const hals = '<path d="M-38 10 L-10 -4 L-20 -60 L-48 -52 Z"/>';
+  s += zeb ? H.clip(hals, [0, 1, 2, 3, 4].map(i => H.p(`M-60 ${-50 + i * 13} L0 ${-58 + i * 13} L0 ${-52 + i * 13} L-60 ${-44 + i * 13} Z`)).join('')) : H.p('M-38 10 L-10 -4 L-20 -60 L-48 -52 Z');
+  s += reg ? [0, 1, 2, 3, 4].map(i => H.p(`M${-24 + i * 3} ${-70 + i * 14} Q${-2 + i * 3} ${-68 + i * 14} ${0 + i * 2} ${-52 + i * 14} Q${-12 + i * 3} ${-60 + i * 14} ${-20 + i * 3} ${-58 + i * 14} Z`)).join('') : H.p('M-22 -70 Q-2 -48 -8 -4 L4 -8 Q8 -50 -14 -76 Z');
+  s += H.pg('-34,-70 -27,-92 -20,-68') + H.p('M-20 -62 Q-28 -80 -48 -74 L-84 -48 Q-98 -38 -90 -24 Q-82 -14 -66 -20 L-30 -38 Z');
+  if (reg) s += H.p('M-38 -74 L-52 -108 L-30 -78 Z') + H.l('M-48 -96 L-40 -98 M-44 -88 L-36 -90');
+  return s + H.auge(-50, -58, 5) + H.k(-86, -32, 2.4) + H.l('M-88 -22 Q-80 -20 -74 -24');
+}
+const AMB_MOTIVE = {
+
+  katze: (H, v) => H.p('M34 86 C84 92 96 36 74 18 C66 10 56 18 64 28 C78 44 70 72 34 70 Z') + H.e(0, 54, 46, 44) + H.e(0, 62, 24, 28) + H.e(-21, 95, 16, 8) + H.e(21, 95, 16, 8)
+    + H.pg('-38,-30 -34,-76 -4,-50') + H.pg('38,-30 34,-76 4,-50') + H.pg('-32,-40 -31,-64 -14,-50') + H.pg('32,-40 31,-64 14,-50') + H.c(0, -12, 42)
+    + H.auge(-16, -18, 8) + H.auge(16, -18, 8) + H.p('M-6 -4 L6 -4 L0 3 Z') + H.l('M0 3 Q-5 11 -12 8 M0 3 Q5 11 12 8') + ambBart(H, 0, 0, 28)
+    + (v % 2 ? H.pg('-22,22 -22,44 0,33') + H.pg('22,22 22,44 0,33') + H.c(0, 33, 6) : ''),
+  hund: (H, v) => H.p('M34 76 C64 74 76 46 68 30 C64 24 56 28 60 36 C64 52 50 60 32 60 Z') + H.e(0, 56, 44, 42) + H.e(0, 62, 22, 28) + H.e(-21, 95, 17, 8) + H.e(21, 95, 17, 8)
+    + H.r(-28, 22, 56, 10, 5) + H.c(0, 38, 7) + H.e(0, -12, 40, 37) + (v % 2 ? H.e(14, -18, 15, 13) : '') + H.e(-40, -6, 13, 30, 18) + H.e(40, -6, 13, 30, -18) + H.e(0, 10, 21, 15)
+    + H.ke(0, 2, 8, 6) + H.l('M0 7 L0 14 M-11 15 Q0 23 11 15') + (v % 3 === 1 ? H.p('M-6 18 Q0 34 6 18 Z') : '') + H.auge(-14, -18, 7) + H.auge(14, -18, 7),
+  hase: (H, v) => H.e(-17, -64, 12, 36, -12) + H.e(17, -64, 12, 36, 12) + H.e(-17, -60, 6, 26, -12) + H.e(17, -60, 6, 26, 12) + H.e(0, 54, 42, 44) + H.e(0, 60, 24, 30)
+    + H.e(-24, 96, 19, 8) + H.e(24, 96, 19, 8) + H.c(0, -10, 34) + H.auge(-12, -16, 7) + H.auge(12, -16, 7) + H.p('M-5 0 L5 0 L0 6 Z') + H.l('M0 6 Q-5 12 -10 9 M0 6 Q5 12 10 9')
+    + H.r(-5, 11, 10, 8, 1) + H.l('M0 11 L0 19') + H.l('M-14 2 L-38 -3 M-14 6 L-38 8 M14 2 L38 -3 M14 6 L38 8')
+    + (v % 2 ? H.p('M30 30 L60 70 L50 74 Z') + H.l('M46 46 L40 50 M52 58 L46 62') + H.p('M30 30 Q24 16 32 12 Q34 20 36 24 Q40 14 46 18 Q40 26 30 30 Z') : ''),
+  maus: (H) => H.L('M34 84 Q84 96 80 60 Q76 34 92 22') + H.e(0, 56, 40, 42) + H.e(0, 62, 22, 26) + H.e(-20, 96, 15, 7) + H.e(20, 96, 15, 7)
+    + H.c(-32, -38, 24) + H.c(32, -38, 24) + H.c(-32, -38, 14) + H.c(32, -38, 14) + H.c(0, -6, 32) + H.auge(-11, -12, 6) + H.auge(11, -12, 6) + H.c(0, 8, 6)
+    + ambBart(H, 0, 10, 26) + ambLach(H, 0, 16, 6),
+  pinguin: (H, v) => H.e(-44, 28, 12, 34, 22) + H.e(44, 28, 12, 34, -22) + H.e(0, 28, 46, 66) + H.e(0, 40, 31, 50) + H.e(-17, 94, 17, 8) + H.e(17, 94, 17, 8)
+    + H.auge(-14, -16, 8) + H.auge(14, -16, 8) + H.pg('-10,-2 10,-2 0,12')
+    + (v % 3 === 1 ? H.p('M-40 4 Q0 18 40 4 L40 15 Q0 29 -40 15 Z') + H.p('M16 18 L26 48 L14 50 L8 22 Z') : '')
+    + (v % 3 === 2 ? H.p('M-34 -26 Q-30 -66 0 -68 Q30 -66 34 -26 Z') + H.r(-38, -32, 76, 12, 6) + H.c(0, -72, 10) : ''),
+  baer: (H) => H.c(-32, -46, 15) + H.c(32, -46, 15) + H.c(-32, -46, 7) + H.c(32, -46, 7) + H.e(0, 46, 38, 44) + H.e(0, 52, 22, 26)
+    + H.e(-42, 34, 13, 26, 28) + H.e(42, 34, 13, 26, -28) + H.e(-24, 86, 18, 15) + H.e(24, 86, 18, 15) + H.e(-24, 89, 9, 7) + H.e(24, 89, 9, 7)
+    + H.c(0, -14, 36) + H.e(0, 2, 16, 12) + H.ke(0, -4, 6, 4.5) + H.l('M0 0 L0 7 M-7 9 Q0 14 7 9') + H.k(-13, -20, 4) + H.k(13, -20, 4),
+  elefant: (H) => H.r(-24, 58, 20, 40, 6) + H.r(42, 58, 20, 40, 6) + H.L('M72 22 Q88 40 82 58') + H.e(14, 34, 62, 44) + H.r(-38, 60, 22, 40, 6) + H.r(26, 60, 22, 40, 6)
+    + H.p('M-58 18 C-78 46 -82 76 -66 90 L-56 84 C-68 70 -64 44 -46 28 Z') + H.c(-44, 4, 34) + H.p('M-30 -20 C0 -34 16 -6 6 22 C0 38 -22 40 -30 26 Z')
+    + H.auge(-58, -4, 5) + H.p('M-60 26 Q-76 34 -84 28 Q-74 22 -64 20 Z') + H.l('M-74 58 L-64 60 M-76 68 L-66 70') + H.l('M-34 96 L-34 90 M-26 96 L-26 90 M30 96 L30 90 M38 96 L38 90'),
+  giraffe: (H) => H.r(-14, 38, 11, 60, 4) + H.r(50, 38, 11, 60, 4) + H.L('M64 22 Q76 38 72 56') + H.e(72, 60, 4, 7) + H.e(20, 28, 48, 24) + H.r(-26, 40, 12, 60, 4) + H.r(36, 40, 12, 60, 4)
+    + H.p('M-34 24 L-12 20 L-28 -66 L-50 -62 Z') + H.l('M-28 -60 L-22 -54 L-26 -46 L-20 -38 L-24 -30 L-18 -22 L-22 -14 L-16 -6') + H.L('M-46 -82 L-46 -98 M-34 -84 L-32 -99') + H.c(-46, -99, 4) + H.c(-32, -100, 4)
+    + H.e(-48, -76, 21, 14, -18) + H.e(-66, -68, 11, 9) + H.e(-30, -86, 9, 4, -30) + H.auge(-50, -80, 4) + H.k(-70, -70, 1.8)
+    + [[0, 24, 8, 6], [22, 16, 7, 5], [40, 30, 8, 6], [10, 38, 6, 4], [-26, 2, 5, 6], [-34, -26, 5, 6], [-40, -48, 4, 6], [-22, -12, 4, 5], [56, 22, 5, 5], [-6, 16, 5, 4]].map(([x, y, a, b]) => H.e(x, y, a, b)).join(''),
+  loewe: (H) => H.L('M34 84 Q74 92 74 60') + H.p('M74 62 Q64 48 76 42 Q90 46 82 62 Z') + H.e(0, 58, 40, 40) + H.e(-20, 95, 15, 7) + H.e(20, 95, 15, 7)
+    + H.wolke(0, -12, 52, 50, 13) + H.c(-24, -38, 9) + H.c(24, -38, 9) + H.c(0, -10, 34) + H.e(0, 8, 15, 11) + H.pg('-6,0 6,0 0,6') + H.l('M0 6 L0 12 M-8 14 Q0 19 8 14')
+    + H.auge(-12, -16, 6) + H.auge(12, -16, 6) + H.k(-8, 10, 1.4) + H.k(-11, 6, 1.4) + H.k(8, 10, 1.4) + H.k(11, 6, 1.4),
+  affe: (H, v) => H.L('M30 82 Q78 88 74 52 Q70 30 54 36 Q46 42 56 48') + H.e(0, 52, 32, 38) + H.e(0, 58, 18, 24) + H.e(-34, 40, 10, 28, 20) + H.e(34, 40, 10, 28, -20)
+    + H.e(-20, 92, 16, 9) + H.e(20, 92, 16, 9) + H.c(-36, -14, 14) + H.c(36, -14, 14) + H.c(-36, -14, 7) + H.c(36, -14, 7) + H.c(0, -16, 34)
+    + H.p('M0 -24 C-8 -38 -30 -32 -26 -14 C-28 4 -14 14 0 14 C14 14 28 4 26 -14 C30 -32 8 -38 0 -24 Z') + H.auge(-11, -20, 6) + H.auge(11, -20, 6) + H.k(-4, -2, 2) + H.k(4, -2, 2) + ambLach(H, 0, 5, 11)
+    + (v % 2 ? H.p('M40 60 Q60 40 52 10 Q62 30 50 64 Z') : ''),
+  fuchs: (H) => H.p('M28 88 C88 96 104 36 74 16 C66 40 70 70 30 72 Z') + H.p('M74 16 C92 26 98 50 92 66 C88 48 82 32 74 16 Z') + H.e(0, 56, 38, 42) + H.p('M-18 20 Q0 74 18 20 Q0 32 -18 20 Z')
+    + H.e(-20, 96, 14, 7) + H.e(20, 96, 14, 7) + H.pg('-36,-26 -32,-78 -6,-46') + H.pg('36,-26 32,-78 6,-46') + H.pg('-30,-36 -29,-64 -14,-46') + H.pg('30,-36 29,-64 14,-46')
+    + H.p('M-42 -30 Q-42 0 0 24 Q42 0 42 -30 Q22 -50 0 -46 Q-22 -50 -42 -30 Z') + H.p('M-40 -18 Q-24 4 0 24 Q-34 14 -40 -18 Z') + H.p('M40 -18 Q24 4 0 24 Q34 14 40 -18 Z')
+    + H.ke(0, 18, 6, 4.5) + H.auge(-15, -18, 6) + H.auge(15, -18, 6),
+  igel: (H, v) => { let d = 'M-52 88'; for (let i = 0; i <= 22; i++) { const a = Math.PI * (1 + i / 22), r = i % 2 ? 84 : 66; d += ` L${(14 + Math.cos(a) * r).toFixed(1)} ${(86 + Math.sin(a) * r * .9).toFixed(1)}`; } d += ' L80 92 Z';
+    return H.e(-12, 95, 12, 6) + H.e(44, 95, 12, 6) + H.p(d) + H.p('M-36 46 Q-62 38 -92 70 Q-86 84 -60 90 Q-36 92 -26 80 Z') + H.ke(-92, 70, 6, 5) + H.auge(-56, 60, 5) + ambLach(H, -70, 80, 7) + H.e(-38, 60, 7, 9)
+      + (v % 2 ? H.c(16, 12, 18) + H.L('M16 -6 L18 -14') + H.p('M18 -12 Q30 -22 38 -12 Q28 -6 18 -12 Z') : ''); },
+  eule: (H) => H.r(-92, 88, 184, 13, 6) + H.pg('-40,-26 -48,-62 -16,-38') + H.pg('40,-26 48,-62 16,-38') + H.e(0, 28, 50, 64) + H.e(0, 44, 34, 44)
+    + H.l('M-20 30 Q-14 38 -8 30 Q-2 38 4 30 Q10 38 16 30 M-24 48 Q-18 56 -12 48 Q-6 56 0 48 Q6 56 12 48 Q18 56 24 48 M-20 66 Q-14 74 -8 66 Q-2 74 4 66 Q10 74 16 66')
+    + H.e(-48, 34, 13, 36, 12) + H.e(48, 34, 13, 36, -12) + H.c(-20, -8, 19) + H.c(20, -8, 19) + H.c(-20, -8, 11) + H.c(20, -8, 11) + H.k(-18, -6, 6) + H.k(22, -6, 6) + H.hell(-20, -9, 2.4) + H.hell(20, -9, 2.4)
+    + H.pg('-7,6 7,6 0,20') + H.e(-14, 92, 9, 6) + H.e(14, 92, 9, 6),
+  vogel: (H) => H.pg('-38,0 -80,-16 -74,18') + H.e(-4, 10, 46, 34) + H.p('M-24 0 Q8 -12 26 12 Q0 32 -24 0 Z') + H.c(34, -22, 24) + H.pg('54,-28 80,-20 54,-12') + H.auge(40, -27, 6)
+    + H.L('M-10 42 L-12 70 M8 42 L10 70') + H.l('M-22 72 L-2 72 M0 72 L20 72'),
+  ente: (H) => H.pg('-46,24 -82,2 -62,48') + H.e(0, 42, 58, 38) + H.p('M-30 30 Q4 18 30 40 Q0 60 -30 30 Z') + H.c(38, -16, 26) + H.e(68, -8, 18, 7) + H.l('M52 -8 L84 -8') + H.auge(42, -22, 6)
+    + H.e(-14, 86, 14, 6) + H.e(14, 86, 14, 6),
+  huhn: (H) => H.p('M-40 10 Q-76 -20 -66 -40 Q-50 -10 -30 -4 Z') + H.p('M-44 16 Q-90 0 -86 -16 Q-60 4 -36 6 Z') + H.e(0, 30, 50, 44) + H.p('M-28 22 Q6 8 26 34 Q-4 54 -28 22 Z')
+    + H.p('M26 -42 Q30 -58 38 -48 Q44 -62 50 -48 Q58 -56 58 -40 Z') + H.c(36, -22, 24) + H.pg('58,-24 76,-18 58,-12') + H.e(56, -4, 6, 10) + H.auge(40, -28, 6)
+    + H.L('M-10 72 L-12 96 M12 72 L14 96') + H.l('M-24 98 L0 98 M2 98 L26 98'),
+  kuh: (H) => H.r(-36, 52, 16, 46, 5) + H.r(44, 52, 16, 46, 5) + H.L('M74 0 Q90 30 84 56') + H.e(84, 60, 6, 9) + H.r(-56, -16, 132, 76, 30)
+    + H.p('M0 -14 Q20 -18 26 0 Q30 18 10 20 Q-6 22 -4 6 Q-12 -6 0 -14 Z') + H.p('M40 18 Q56 12 62 26 Q60 44 46 42 Q32 38 40 18 Z') + H.p('M-30 30 Q-18 24 -14 36 Q-16 50 -30 46 Q-40 40 -30 30 Z')
+    + H.r(-50, 54, 16, 46, 5) + H.r(30, 54, 16, 46, 5) + H.e(20, 62, 14, 8) + H.l('M14 68 L14 74 M26 68 L26 74')
+    + H.p('M-74 -26 Q-92 -40 -86 -52 Q-78 -40 -66 -34 Z') + H.p('M-46 -26 Q-28 -40 -34 -52 Q-42 -40 -54 -34 Z') + H.e(-32, -16, 15, 7, -20) + H.e(-88, -16, 15, 7, 20)
+    + H.e(-60, -6, 26, 30) + H.e(-60, 20, 22, 15) + H.k(-68, 20, 3) + H.k(-52, 20, 3) + H.auge(-70, -12, 5) + H.auge(-50, -12, 5),
+  schwein: (H) => H.r(-30, 54, 18, 40, 6) + H.r(36, 54, 18, 40, 6) + H.L('M66 20 Q82 10 78 26 Q74 40 88 34') + H.e(10, 30, 60, 42) + H.r(-42, 56, 18, 42, 6) + H.r(24, 56, 18, 42, 6)
+    + H.pg('-64,-22 -60,-54 -40,-32') + H.pg('-30,-26 -20,-54 -12,-24') + H.c(-46, 0, 32) + H.e(-76, 8, 13, 16) + H.ke(-79, 3, 2.6, 4) + H.ke(-79, 13, 2.6, 4)
+    + H.auge(-54, -8, 6) + H.l('M-62 22 Q-54 28 -46 22'),
+  schaf: (H) => H.r(-30, 50, 13, 46, 5) + H.r(32, 50, 13, 46, 5) + H.r(-44, 52, 13, 46, 5) + H.r(18, 52, 13, 46, 5) + H.wolke(4, 26, 62, 42, 14)
+    + H.e(-76, -8, 14, 6, 30) + H.e(-58, 4, 20, 26) + H.wolke(-56, -20, 18, 10, 6) + H.auge(-64, 0, 5) + H.auge(-50, 0, 5) + H.l('M-62 18 Q-58 22 -54 18'),
+  pferd: H => ambPferd(H, 'pferd'),
+  einhorn: H => ambPferd(H, 'einhorn'),
+  zebra: H => ambPferd(H, 'zebra'),
+  fisch: (H, v) => H.pg('38,0 82,-32 72,0 82,32') + H.p('M-12 -28 Q10 -58 28 -14 Z') + H.p('M-6 26 Q10 50 24 16 Z')
+    + H.clip('<path d="M-76 0 Q-34 -50 42 -6 Q50 0 42 6 Q-34 50 -76 0 Z"/>', v % 2 ? [-14, 12].map(x => H.p(`M${x} -40 Q${x + 8} 0 ${x} 40 L${x + 12} 40 Q${x + 20} 0 ${x + 12} -40 Z`)).join('') : H.l('M-8 -14 Q0 -8 -8 -2 M4 -14 Q12 -8 4 -2 M16 -12 Q24 -6 16 0 M-2 2 Q6 8 -2 14 M10 2 Q18 8 10 14'))
+    + H.auge(-50, -6, 8) + H.l('M-74 4 Q-68 8 -62 6 M-34 -18 Q-26 0 -34 18'),
+  wal: (H) => H.p('M-92 16 Q-94 -44 -20 -46 Q48 -46 66 2 Q74 20 92 4 Q100 -4 98 -20 Q114 -2 108 18 Q104 34 86 34 Q72 34 60 40 Q20 64 -40 58 Q-90 54 -92 16 Z')
+    + H.p('M-88 22 Q-40 40 30 36 Q-10 58 -50 54 Q-84 48 -88 22 Z') + H.l('M-72 36 Q-30 48 14 42 M-62 46 Q-30 54 0 50') + H.e(8, 30, 20, 8, 35)
+    + H.auge(-56, -6, 7) + H.l('M-92 12 Q-72 20 -56 16') + H.L('M-30 -48 Q-36 -70 -52 -80 M-30 -48 Q-26 -74 -12 -84 M-30 -48 Q-30 -72 -30 -92') + H.c(-56, -84, 5) + H.c(-8, -88, 5) + H.c(-30, -96, 5),
+  oktopus: (H) => { let t = ''; [[-44, -70], [-26, -46], [-8, -20], [8, 20], [26, 46], [44, 70]].forEach(([x, tip]) => { const s = Math.sign(tip); t += H.p(`M${x - 9} 14 Q${x - 6 + s * 2} 56 ${tip} 84 Q${tip + s * 16} 94 ${tip + s * 12} 76 Q${x + 6 + s * 10} 58 ${x + 9} 14 Z`); });
+    return t + H.e(0, -18, 50, 52) + H.c(-30, -46, 6) + H.c(28, -50, 8) + H.c(36, -28, 5) + H.auge(-18, -12, 10) + H.auge(18, -12, 10) + ambLach(H, 0, 10, 12) + H.e(-30, 4, 7, 4) + H.e(30, 4, 7, 4); },
+  qualle: (H) => [-44, -22, 0, 22, 44].map((x, i) => H.L(`M${x} 6 Q${x + 14} 26 ${x} 46 Q${x - 14} 66 ${x} 86`)).join('') + H.p('M-12 6 Q-20 40 -6 70 Q0 50 6 70 Q20 40 12 6 Z')
+    + H.p('M-64 6 Q-64 -72 0 -72 Q64 -72 64 6 Q48 18 32 6 Q16 18 0 6 Q-16 18 -32 6 Q-48 18 -64 6 Z') + H.c(-34, -40, 6) + H.c(30, -46, 8) + H.auge(-16, -24, 7) + H.auge(16, -24, 7) + ambLach(H, 0, -10, 8),
+  schildkroete: (H) => H.e(-46, 52, 14, 16) + H.e(46, 52, 14, 16) + H.pg('64,34 86,40 64,46') + H.p('M-62 40 Q-62 -40 0 -40 Q62 -40 62 40 Z')
+    + H.pg('-22,-14 22,-14 32,8 22,30 -22,30 -32,8') + H.l('M-22 -14 L-34 -34 M22 -14 L34 -34 M32 8 L60 8 M-32 8 L-60 8 M-22 30 L-30 40 M22 30 L30 40')
+    + H.r(-68, 34, 136, 12, 6) + H.e(-84, 22, 20, 17) + H.auge(-88, 16, 5) + ambLach(H, -90, 28, 6) + H.e(-30, 58, 13, 10) + H.e(30, 58, 13, 10),
+  krabbe: (H) => H.L('M-40 30 L-74 40 L-84 64 M-40 40 L-70 54 L-74 78 M-34 48 L-56 66 L-56 88 M40 30 L74 40 L84 64 M40 40 L70 54 L74 78 M34 48 L56 66 L56 88')
+    + H.L('M-34 6 L-56 -22 M34 6 L56 -22') + H.p('M-56 -22 Q-92 -34 -82 -62 Q-74 -50 -62 -50 Q-72 -62 -60 -76 Q-38 -62 -48 -30 Z') + H.p('M56 -22 Q92 -34 82 -62 Q74 -50 62 -50 Q72 -62 60 -76 Q38 -62 48 -30 Z')
+    + H.e(0, 24, 54, 34) + H.L('M-14 -6 L-18 -30 M14 -6 L18 -30') + H.auge(-18, -38, 9) + H.auge(18, -38, 9) + ambLach(H, 0, 30, 14),
+  seestern: (H) => H.stern(0, 6, 96, 40, 5) + [0, 1, 2, 3, 4].map(i => { const a = (-90 + i * 72) * Math.PI / 180; return H.c(Math.cos(a) * 52, 6 + Math.sin(a) * 52, 5) + H.c(Math.cos(a) * 72, 6 + Math.sin(a) * 72, 4); }).join('')
+    + H.auge(-12, 0, 7) + H.auge(12, 0, 7) + ambLach(H, 0, 16, 9),
+  schnecke: (H) => H.p('M-90 96 Q-98 76 -80 68 L-62 40 Q-58 22 -44 24 Q-32 30 -40 52 L-30 70 L72 82 Q92 94 70 98 Z') + H.c(16, 34, 48)
+    + H.L('M16 34 m-6 0 a6 6 0 1 1 12 0 a14 14 0 1 1 -26 2 a24 24 0 1 1 46 -2 a34 34 0 1 1 -64 4') + H.L('M-52 26 L-60 0 M-42 26 L-40 -2') + H.c(-60, -2, 6) + H.c(-40, -4, 6) + H.k(-48, 40, 3) + ambLach(H, -50, 54, 6),
+  schmetterling: (H) => H.e(-44, -26, 42, 34, -25) + H.e(44, -26, 42, 34, 25) + H.e(-34, 32, 28, 24, 25) + H.e(34, 32, 28, 24, -25)
+    + H.c(-50, -30, 15) + H.c(50, -30, 15) + H.c(-34, 34, 11) + H.c(34, 34, 11) + H.c(-22, -8, 6) + H.c(22, -8, 6) + H.c(-64, -8, 6) + H.c(64, -8, 6)
+    + H.e(0, 6, 9, 46) + H.c(0, -46, 12) + H.L('M-4 -56 Q-14 -80 -28 -84 M4 -56 Q14 -80 28 -84') + H.c(-28, -84, 4) + H.c(28, -84, 4) + H.k(-4, -48, 2) + H.k(4, -48, 2),
+  biene: (H) => H.e(-14, -40, 20, 28, -20) + H.e(16, -40, 20, 28, 20) + H.pg('52,6 74,10 52,16')
+    + H.clip('<ellipse cx="0" cy="10" rx="54" ry="36"/>', H.r(-30, -40, 14, 100) + H.r(-2, -40, 14, 100) + H.r(26, -40, 14, 100))
+    + H.c(-58, 0, 24) + H.auge(-64, -4, 6) + ambLach(H, -62, 8, 7) + H.L('M-62 -22 Q-66 -40 -76 -44 M-52 -22 Q-48 -40 -38 -46') + H.c(-76, -44, 4) + H.c(-38, -46, 4),
+  marienkaefer: (H) => H.L('M-48 0 L-80 -14 M-54 30 L-88 30 M-48 58 L-76 76 M48 0 L80 -14 M54 30 L88 30 M48 58 L76 76') + H.L('M-10 -58 Q-16 -78 -28 -84 M10 -58 Q16 -78 28 -84')
+    + H.e(0, -40, 30, 22) + H.c(0, 16, 56) + H.L('M0 -40 L0 72') + H.c(-28, -4, 10) + H.c(28, -4, 10) + H.c(-36, 30, 9) + H.c(36, 30, 9) + H.c(-16, 50, 8) + H.c(16, 50, 8)
+    + H.k(-10, -50, 3) + H.k(10, -50, 3),
+  frosch: (H) => H.e(-52, 84, 26, 14) + H.e(52, 84, 26, 14) + H.e(0, 46, 58, 46) + H.e(0, 58, 38, 30) + H.c(-30, -6, 21) + H.c(30, -6, 21) + H.auge(-30, -8, 12) + H.auge(30, -8, 12)
+    + H.l('M-38 22 Q0 50 38 22') + H.k(-6, 14, 2) + H.k(6, 14, 2) + H.e(-26, 94, 16, 7) + H.e(26, 94, 16, 7) + H.c(-40, 50, 5) + H.c(42, 44, 6),
+  dino: (H) => H.r(-14, 46, 18, 50, 7) + H.r(50, 46, 18, 50, 7) + H.p('M60 30 Q102 40 104 72 Q90 56 50 54 Z') + H.e(24, 30, 52, 34)
+    + [[-10, 4], [8, -2], [26, -4], [44, -1], [60, 6]].map(([x, y]) => H.pg(`${x - 9},${y + 2} ${x},${y - 16} ${x + 9},${y + 2}`)).join('') + H.e(24, 30, 52, 34)
+    + H.r(-26, 48, 18, 50, 7) + H.r(36, 48, 18, 50, 7) + H.p('M-20 20 Q-36 -10 -46 -60 L-28 -64 Q-18 -20 4 2 Z') + H.e(-46, -70, 24, 15) + H.auge(-50, -76, 6) + ambLach(H, -60, -64, 6)
+    + H.e(12, 26, 8, 6) + H.e(34, 34, 7, 5) + H.e(52, 22, 6, 5),
+  trex: (H) => H.p('M30 40 Q90 40 106 86 Q70 70 30 70 Z') + H.r(18, 60, 22, 38, 8) + H.e(4, 30, 40, 46, -15) + H.l('M-14 20 Q0 24 14 20 M-18 36 Q0 40 18 36 M-16 52 Q0 56 14 52')
+    + H.r(-14, 62, 24, 36, 8) + H.e(-2, 96, 18, 6) + H.e(-34, 20, 10, 5, 30) + H.p('M-22 -26 Q-30 -72 -66 -66 Q-98 -62 -98 -36 Q-98 -14 -70 -12 Q-40 -10 -20 -8 Z')
+    + H.l('M-96 -28 L-50 -26') + H.pg('-90,-28 -86,-20 -82,-28') + H.pg('-76,-28 -72,-20 -68,-28') + H.auge(-60, -48, 7) + H.k(-90, -46, 2),
+  drache: (H, v) => H.p('M10 -4 Q20 -82 72 -88 Q60 -66 82 -62 Q62 -48 78 -36 Q50 -30 40 4 Z') + H.l('M22 -10 L64 -78 M28 -6 L70 -54 M34 -2 L66 -36')
+    + H.p('M56 36 Q96 50 98 80 Q80 66 52 60 Z') + H.pg('90,70 112,72 100,92') + H.r(30, 52, 18, 44, 7) + H.e(16, 34, 46, 32) + H.p('M-14 30 Q10 60 40 56 Q10 44 -14 30 Z')
+    + [[-10, 2], [8, -2], [26, -2], [44, 4]].map(([x, y]) => H.pg(`${x - 8},${y + 2} ${x},${y - 14} ${x + 8},${y + 2}`)).join('') + H.e(16, 34, 46, 32)
+    + H.r(-4, 54, 18, 44, 7) + H.p('M-20 26 Q-34 0 -36 -36 L-16 -40 Q-10 -6 6 10 Z') + H.pg('-44,-62 -50,-84 -36,-66') + H.pg('-30,-64 -28,-86 -20,-64')
+    + H.e(-42, -50, 26, 18, -10) + H.e(-62, -42, 14, 11) + H.auge(-44, -56, 6) + H.k(-70, -46, 2) + ambLach(H, -56, -36, 6) + (v % 2 ? H.wolke(-94, -40, 15, 11, 7) : ''),
+  delfin: (H) => H.p('M-100 14 Q-90 4 -70 2 Q-50 -36 10 -40 Q60 -40 82 0 L100 -18 Q100 0 106 10 Q108 22 104 36 Q96 22 82 18 Q60 44 10 42 Q-40 40 -66 22 Q-84 22 -100 14 Z')
+    + H.pg('-4,-38 14,-72 30,-36') + H.e(10, 40, 20, 8, 30) + H.l('M-100 14 Q-86 12 -70 16 M-64 24 Q-20 36 40 32') + H.auge(-50, -8, 6),
+
+  haus: (H, v) => H.r(36, -76, 20, 42) + (v % 2 ? H.wolke(56, -94, 16, 10, 7) : '') + H.r(-72, -10, 144, 110) + H.pg('-90,-6 0,-84 90,-6') + H.c(0, -36, 14) + H.l('M0 -50 L0 -22 M-14 -36 L14 -36')
+    + H.r(-16, 36, 32, 64, 4) + H.c(9, 70, 3) + H.r(-60, 10, 34, 30, 2) + H.l('M-43 10 L-43 40 M-60 25 L-26 25') + H.r(26, 10, 34, 30, 2) + H.l('M43 10 L43 40 M26 25 L60 25')
+    + (v % 3 === 2 ? H.r(-62, 40, 38, 10, 2) + H.r(24, 40, 38, 10, 2) : ''),
+  burg: (H) => { const z = (x, y, w, h, n) => { const m = w / (n * 2 - 1); let d = `M${x} ${y + h} L${x} ${y}`; for (let i = 0; i < n; i++) { const a = x + i * 2 * m; d += ` L${a} ${y - 12} L${a + m} ${y - 12} L${a + m} ${y}` + (i < n - 1 ? ` L${a + 2 * m} ${y}` : ''); } return H.p(d + ` L${x + w} ${y + h} Z`); };
+    return H.L('M0 -96 L0 -72') + H.pg('0,-96 22,-90 0,-84') + H.pg('-20,-46 0,-80 20,-46') + z(-56, -10, 112, 110, 5) + z(-96, -40, 40, 140, 3) + z(56, -40, 40, 140, 3) + H.r(-18, -46, 36, 40)
+      + H.p('M-18 100 L-18 60 Q0 40 18 60 L18 100 Z') + H.l('M-9 52 L-9 100 M0 48 L0 100 M9 52 L9 100 M-18 70 L18 70 M-18 86 L18 86')
+      + H.p('M-82 0 L-82 -12 Q-76 -20 -70 -12 L-70 0 Z') + H.p('M70 0 L70 -12 Q76 -20 82 -12 L82 0 Z') + H.p('M-6 -18 L-6 -30 Q0 -38 6 -30 L6 -18 Z') + H.l('M-80 40 L-64 40 M66 40 L82 40'); },
+  auto: (H) => H.p('M-92 40 L-92 8 Q-90 -2 -72 -4 L-44 -6 L-22 -36 Q-16 -42 -2 -42 L34 -42 Q46 -42 54 -32 L72 -8 L88 -4 Q96 0 96 14 L96 40 Z')
+    + H.p('M-36 -8 L-16 -34 L12 -34 L12 -8 Z') + H.p('M20 -8 L20 -34 L36 -34 Q42 -34 48 -28 L62 -8 Z') + H.l('M16 -6 L16 36 M28 6 L38 6') + H.e(92, 12, 4, 7) + H.r(-96, 10, 8, 10, 2)
+    + H.c(-50, 42, 22) + H.c(-50, 42, 10) + H.c(56, 42, 22) + H.c(56, 42, 10),
+  bus: (H) => H.r(-96, -50, 192, 96, 14) + [0, 1, 2, 3].map(i => H.r(-84 + i * 36, -38, 28, 30, 4)).join('') + H.r(64, -38, 22, 70, 3) + H.l('M75 -38 L75 32') + H.r(-96, 14, 192, 10)
+    + H.e(92, 36, 4, 6) + H.c(-56, 50, 18) + H.c(-56, 50, 8) + H.c(50, 50, 18) + H.c(50, 50, 8),
+  zug: (H) => H.r(-84, -2, 96, 54, 22) + H.p('M-70 -2 L-74 -40 L-50 -40 L-54 -2 Z') + H.r(-78, -50, 32, 10, 3) + H.c(-30, -6, 10) + H.r(14, -56, 70, 108, 6) + H.r(6, -66, 86, 12, 5) + H.r(26, -44, 46, 30, 4)
+    + H.pg('-84,48 -100,72 -76,72') + H.c(-60, 68, 18) + H.c(-20, 68, 18) + H.c(46, 62, 26) + H.c(-60, 68, 6) + H.c(-20, 68, 6) + H.c(46, 62, 9) + H.L('M-60 68 L46 62') + H.wolke(-62, -72, 20, 12, 7) + H.wolke(-34, -90, 14, 9, 6),
+  traktor: (H) => H.r(-14, -64, 9, 64) + H.r(-80, -4, 100, 44, 8) + H.l('M-72 8 L-72 30 M-62 8 L-62 30 M-52 8 L-52 30') + H.p('M10 -70 L60 -70 L66 30 L10 30 Z') + H.p('M20 -60 L52 -60 L56 -10 L20 -10 Z')
+    + H.r(-90, 6, 10, 14, 3) + H.c(40, 50, 46) + H.c(40, 50, 30) + H.c(40, 50, 10) + H.c(-58, 66, 30) + H.c(-58, 66, 18) + H.c(-58, 66, 6),
+  flugzeug: (H) => H.pg('10,-8 -30,-60 -10,-60 40,-8') + H.p('M-96 0 Q-96 -18 -70 -18 L66 -18 L86 -54 L100 -54 L100 -14 Q100 12 70 14 L-70 14 Q-96 14 -96 0 Z')
+    + H.p('M-92 -4 Q-88 -14 -76 -14 L-74 -4 Z') + [-50, -30, -10, 10, 30, 50].map(x => H.c(x, -4, 6)).join('') + H.pg('-10,6 30,62 50,62 30,6'),
+  boot: (H) => H.r(-4, -96, 8, 128) + H.pg('8,-90 8,20 82,20') + H.pg('-8,-74 -8,20 -72,20') + H.pg('4,-96 26,-90 4,-84') + H.p('M-94 26 L94 26 L72 72 L-72 72 Z')
+    + H.c(-40, 48, 7) + H.c(0, 48, 7) + H.c(40, 48, 7) + H.L('M-100 84 Q-80 74 -60 84 T-20 84 T20 84 T60 84 T100 84'),
+  rakete: (H) => H.p('M-40 36 L-66 76 L-30 66 Z') + H.p('M40 36 L66 76 L30 66 Z') + H.p('M-22 70 Q-30 92 -12 88 Q-14 108 0 98 Q14 108 12 88 Q30 92 22 70 Z')
+    + H.p('M0 -96 Q40 -60 40 10 L40 70 L-40 70 L-40 10 Q-40 -60 0 -96 Z') + H.c(0, -20, 20) + H.c(0, -20, 12) + H.r(-40, 32, 80, 14) + H.pg('-6,56 6,56 6,84 -6,84'),
+  ufo: (H, v) => (v % 2 ? H.p('M-30 26 L-62 98 L62 98 L30 26 Z') : '') + H.p('M-46 0 Q-46 -66 0 -66 Q46 -66 46 0 Z') + H.L('M-8 -44 L-16 -58 M8 -44 L16 -58') + H.c(-16, -60, 4) + H.c(16, -60, 4)
+    + H.c(0, -28, 17) + H.k(-6, -31, 3.5) + H.k(6, -31, 3.5) + ambLach(H, 0, -22, 5) + H.e(0, 8, 94, 24) + [-66, -36, 0, 36, 66].map((x, i) => H.c(x, 10 + (i % 2 ? 4 : 0), 6)).join(''),
+  fahrrad: (H) => H.c(-50, 50, 36) + H.c(-50, 50, 28) + H.c(52, 50, 36) + H.c(52, 50, 28) + H.l([0, 45, 90, 135].map(a => { const c = Math.cos(a * Math.PI / 180) * 28, s = Math.sin(a * Math.PI / 180) * 28; return `M${-50 - c} ${50 - s} L${-50 + c} ${50 + s} M${52 - c} ${50 - s} L${52 + c} ${50 + s}`; }).join(' '))
+    + H.L('M-50 50 L-14 -6 L36 -6 L52 50 M-14 -6 L4 50 L36 -6 M4 50 L-50 50 M-20 -20 L-14 -6 M36 -6 L30 -30 L44 -38') + H.e(-22, -24, 16, 6) + H.c(4, 50, 8) + H.r(-4, 60, 16, 6, 2),
+  ballon: (H) => H.L('M-30 40 L-18 70 M30 40 L18 70') + H.r(-22, 68, 44, 30, 4) + H.l('M-22 80 L22 80 M-11 68 L-11 98 M0 68 L0 98 M11 68 L11 98')
+    + H.p('M0 -96 C60 -96 72 -30 40 20 L30 40 L-30 40 L-40 20 C-72 -30 -60 -96 0 -96 Z') + H.p('M0 -96 C-22 -70 -22 0 -12 40 L12 40 C22 0 22 -70 0 -96 Z')
+    + H.l('M0 -96 C-48 -70 -52 0 -30 40 M0 -96 C48 -70 52 0 30 40') + H.p('M-54 -20 Q0 -6 54 -20 L48 0 Q0 12 -48 0 Z'),
+  leuchtturm: (H) => H.wolke(0, 92, 74, 18, 8, .3) + H.clip('<polygon points="-34,88 34,88 22,-40 -22,-40"/>', H.pg('-60,0 60,0 60,30 -60,30') + H.pg('-60,-40 60,-40 60,-14 -60,-14') + H.pg('-60,48 60,48 60,74 -60,74'))
+    + H.r(-38, -50, 76, 10, 3) + H.r(-22, -84, 44, 34, 2) + H.l('M-8 -84 L-8 -50 M8 -84 L8 -50') + H.p('M-28 -84 Q0 -110 28 -84 Z') + H.l('M-44 -70 L-80 -80 M-44 -62 L-80 -56 M44 -70 L80 -80 M44 -62 L80 -56')
+    + H.p('M-8 88 L-8 66 Q0 58 8 66 L8 88 Z'),
+
+  apfel: (H) => H.p('M0 -54 C30 -76 80 -60 78 -6 C76 50 40 84 14 76 C6 74 -6 74 -14 76 C-40 84 -76 50 -78 -6 C-80 -60 -30 -76 0 -54 Z') + H.L('M0 -54 Q2 -74 10 -86')
+    + H.p('M10 -76 Q36 -96 52 -76 Q32 -60 10 -76 Z') + H.l('M-50 -20 Q-56 0 -48 20'),
+  birne: (H) => H.p('M0 -64 C22 -64 26 -40 26 -24 C26 -6 60 10 60 46 C60 80 30 94 0 94 C-30 94 -60 80 -60 46 C-60 10 -26 -6 -26 -24 C-26 -40 -22 -64 0 -64 Z') + H.L('M0 -64 Q2 -78 8 -86')
+    + H.p('M6 -78 Q30 -94 44 -76 Q24 -64 6 -78 Z') + H.l('M-36 36 Q-40 56 -28 72'),
+  erdbeere: (H) => H.p('M0 92 C-40 72 -76 22 -70 -20 C-66 -50 -30 -56 0 -46 C30 -56 66 -50 70 -20 C76 22 40 72 0 92 Z')
+    + [[-40, -16], [-14, -20], [14, -20], [40, -16], [-46, 12], [-20, 6], [6, 8], [32, 10], [-28, 36], [0, 36], [24, 38], [-10, 62], [12, 62]].map(([x, y]) => H.e(x, y, 2.5, 4.5)).join('')
+    + H.p('M0 -46 L-36 -64 L-20 -42 L-46 -34 L-12 -32 L0 -18 L12 -32 L46 -34 L20 -42 L36 -64 Z') + H.L('M0 -50 L4 -76'),
+  kirschen: (H) => H.L('M-34 30 Q-24 -40 18 -80 M34 24 Q32 -30 18 -80') + H.p('M18 -80 Q48 -100 70 -78 Q44 -62 18 -80 Z') + H.c(-34, 56, 32) + H.c(34, 50, 32) + H.l('M-50 46 Q-52 56 -46 66 M18 40 Q16 50 22 60'),
+  eis: (H, v) => H.clip('<polygon points="-42,-4 42,-4 0,98"/>', H.l('M-50 10 L20 98 M-30 -4 L40 80 M-10 -4 L50 60 M10 -4 L50 40 M50 10 L-20 98 M30 -4 L-40 80 M10 -4 L-50 60 M-10 -4 L-50 40'))
+    + H.p('M-48 -4 Q-58 -50 0 -58 Q58 -50 48 -4 Q32 8 16 -4 Q0 10 -16 -4 Q-32 8 -48 -4 Z') + H.p('M-36 -50 Q-44 -92 0 -96 Q44 -92 36 -50 Q18 -40 0 -50 Q-18 -40 -36 -50 Z')
+    + (v % 2 ? H.c(0, -100, 10) + H.L('M0 -110 Q4 -120 12 -122') : H.k(-16, -28, 3) + H.k(12, -32, 3) + H.k(0, -18, 3) + H.k(-10, -74, 3) + H.k(14, -70, 3)),
+  torte: (H) => H.e(0, 92, 96, 10) + H.r(-80, 20, 160, 70, 10) + H.r(-56, -34, 112, 56, 10)
+    + H.p('M-80 30 L-80 22 Q-80 14 -72 14 L72 14 Q80 14 80 22 L80 30 Q70 44 60 30 Q50 44 40 30 Q30 44 20 30 Q10 44 0 30 Q-10 44 -20 30 Q-30 44 -40 30 Q-50 44 -60 30 Q-70 44 -80 30 Z')
+    + H.p('M-56 -24 L-56 -30 Q-56 -38 -48 -38 L48 -38 Q56 -38 56 -30 L56 -24 Q46 -12 36 -24 Q26 -12 16 -24 Q6 -12 -4 -24 Q-14 -12 -24 -24 Q-34 -12 -44 -24 Q-50 -16 -56 -24 Z')
+    + [-30, 0, 30].map(x => H.r(x - 5, -66, 10, 30, 2) + H.p(`M${x} -88 Q${x + 9} -76 ${x} -68 Q${x - 9} -76 ${x} -88 Z`)).join('') + [-56, -28, 0, 28, 56].map(x => H.c(x, 62, 7)).join(''),
+  cupcake: (H) => H.pg('-50,12 50,12 36,92 -36,92') + H.l('M-30 12 L-22 92 M-10 12 L-6 92 M10 12 L6 92 M30 12 L22 92') + H.wolke(0, -12, 58, 30, 9, .35) + H.wolke(0, -44, 38, 22, 7, .45)
+    + H.c(0, -74, 12) + H.L('M0 -86 Q4 -98 14 -100'),
+  pilz: (H, v) => H.p('M-22 30 Q-26 80 -30 96 L30 96 Q26 80 22 30 Z') + H.p('M-84 30 Q-84 -66 0 -70 Q84 -66 84 30 Q0 46 -84 30 Z')
+    + H.c(-40, -10, 13) + H.c(4, -40, 15) + H.c(44, -6, 11) + H.c(-10, 12, 9) + (v % 2 ? H.k(-8, 54, 3) + H.k(8, 54, 3) + ambLach(H, 0, 64, 7) : ''),
+
+  blume: (H, v) => { const k = [5, 6, 8][v % 3], lang = v % 2 ? 24 : 20; let b = H.p('M-4 -20 Q-10 40 -4 100 L4 100 Q-2 40 4 -20 Z') + H.e(-26, 58, 24, 10, -30) + H.e(26, 46, 24, 10, 30);
+    for (let i = 0; i < k; i++) { const a = i / k * 360; b += H.g(0, -40, a, H.e(0, -32, lang * .62, lang)); } return b + H.c(0, -40, 19) + (v % 4 === 3 ? H.k(-6, -44, 2.5) + H.k(6, -44, 2.5) + ambLach(H, 0, -36, 7) : ''); },
+  tulpe: (H) => H.p('M-4 -10 Q-8 40 -4 100 L4 100 Q0 40 4 -10 Z') + H.p('M-4 96 Q-60 60 -46 10 Q-30 50 -4 70 Z') + H.p('M4 96 Q50 60 40 20 Q28 54 4 74 Z')
+    + H.p('M-38 -64 Q-42 -10 0 -6 Q42 -10 38 -64 L22 -40 L0 -74 L-22 -40 Z') + H.l('M-22 -40 Q-14 -20 0 -14 Q14 -20 22 -40'),
+  sonnenblume: (H) => H.p('M-5 0 Q-10 50 -5 100 L5 100 Q0 50 5 0 Z') + H.p('M-4 70 Q-60 70 -66 30 Q-30 30 -4 54 Z') + H.p('M4 60 Q60 60 66 20 Q30 20 4 44 Z')
+    + Array.from({ length: 16 }, (_, i) => H.g(0, -40, i * 22.5, H.e(0, -46, 10, 22))).join('') + H.c(0, -40, 32)
+    + H.l('M-20 -50 L20 -50 M-26 -40 L26 -40 M-20 -30 L20 -30 M-10 -64 L-10 -16 M0 -70 L0 -10 M10 -64 L10 -16'),
+  baum: (H, v) => H.p('M-16 100 Q-12 40 -14 0 L14 0 Q12 40 16 100 Z') + H.L('M8 30 L28 12') + H.wolke(0, -38, 78, 60, 12, .2)
+    + (v % 2 ? [[-40, -40], [10, -60], [40, -24], [-14, -10], [30, -70]].map(([x, y]) => H.c(x, y, 9)).join('') : '') + (v % 3 === 2 ? H.e(0, 50, 7, 10) : ''),
+  tanne: (H, v) => { let s = H.r(-12, 76, 24, 24) + H.pg('-80,80 80,80 0,0') + H.pg('-64,32 64,32 0,-46') + H.pg('-46,-14 46,-14 0,-86');
+    if (v % 2) s += H.l('M-58 64 Q0 80 52 54 M-44 18 Q0 32 40 10') + [[-40, 60], [20, 66], [50, 70], [-14, 26], [28, 20], [-24, -20], [10, -30], [-50, 74]].map(([x, y]) => H.c(x, y, 7)).join('') + H.stern(0, -92, 18, 8);
+    return s; },
+  palme: (H) => H.p('M-4 100 Q-10 40 6 -30 L18 -30 Q8 40 12 100 Z') + H.l('M-2 80 L12 80 M-2 58 L12 56 M0 34 L14 32 M2 10 L16 8 M4 -12 L16 -14')
+    + [-150, -110, -60, -20, 20].map(a => H.g(12, -36, a, H.p('M0 0 Q30 -26 76 -8 Q36 -4 0 0 Z') + H.l('M10 -4 L20 -14 M24 -6 L36 -16 M38 -6 L50 -14'))).join('') + H.c(4, -28, 9) + H.c(20, -26, 9),
+  sonne: (H, v) => Array.from({ length: 12 }, (_, i) => H.g(0, 0, i * 30, H.pg('-10,-58 10,-58 0,-92'))).join('') + H.c(0, 0, 52)
+    + (v % 2 ? H.l('M-24 -8 Q-16 -16 -8 -8 M8 -8 Q16 -16 24 -8') : H.auge(-17, -10, 7) + H.auge(17, -10, 7)) + ambLach(H, 0, 14, 18) + H.c(-32, 10, 6) + H.c(32, 10, 6),
+  mond: (H) => H.p('M20 -84 A84 84 0 1 0 20 84 A64 64 0 1 1 20 -84 Z') + H.l('M-40 -8 Q-34 -2 -28 -8') + ambLach(H, -40, 20, 8) + H.stern(60, -50, 16, 7) + H.stern(70, 40, 12, 5),
+  stern: (H, v) => H.stern(0, 6, 96, 42, 5) + (v % 2 ? H.auge(-14, 0, 7) + H.auge(14, 0, 7) + ambLach(H, 0, 18, 10) : H.stern(0, 6, 40, 18, 5)),
+  wolke: (H, v) => H.wolke(0, 0, 90, 46, 9, .3) + (v % 2 ? H.auge(-20, -4, 6) + H.auge(20, -4, 6) + ambLach(H, 0, 12, 10) : '')
+    + (v % 3 === 2 ? [-50, -20, 10, 40].map((x, i) => H.p(`M${x} ${60 + i % 2 * 14} Q${x + 8} ${74 + i % 2 * 14} ${x} ${80 + i % 2 * 14} Q${x - 8} ${74 + i % 2 * 14} ${x} ${60 + i % 2 * 14} Z`)).join('') : ''),
+  regenbogen: (H) => [96, 82, 68, 54, 40].map((R, i) => { const r = R - 14; return H.p(`M${-R} 60 A${R} ${R} 0 0 1 ${R} 60 L${r} 60 A${r} ${r} 0 0 0 ${-r} 60 Z`); }).join('') + H.wolke(-74, 66, 34, 18, 7, .3) + H.wolke(74, 66, 34, 18, 7, .3),
+  herz: (H, v) => H.p('M0 90 C-60 40 -96 0 -96 -36 C-96 -72 -60 -90 -34 -84 C-16 -80 -6 -66 0 -54 C6 -66 16 -80 34 -84 C60 -90 96 -72 96 -36 C96 0 60 40 0 90 Z')
+    + (v % 2 ? H.p('M0 46 C-30 22 -48 2 -48 -16 C-48 -34 -30 -44 -16 -40 C-8 -38 -3 -30 0 -24 C3 -30 8 -38 16 -40 C30 -44 48 -34 48 -16 C48 2 30 22 0 46 Z') : H.auge(-26, -24, 7) + H.auge(26, -24, 7) + ambLach(H, 0, -4, 14)),
+  regenschirm: (H) => H.L('M0 -2 L0 82 Q0 98 -16 98 Q-28 96 -28 84') + H.p('M-96 0 Q-90 -80 0 -84 Q90 -80 96 0 Q80 -14 64 0 Q48 -14 32 0 Q16 -14 0 0 Q-16 -14 -32 0 Q-48 -14 -64 0 Q-80 -14 -96 0 Z')
+    + H.l('M0 -84 Q-30 -40 -32 0 M0 -84 Q30 -40 32 0 M0 -84 Q-66 -40 -64 0 M0 -84 Q66 -40 64 0 M0 -84 L0 0') + H.L('M0 -84 L0 -94'),
+  muschel: (H) => H.p('M0 80 L-80 -10 Q-74 -72 0 -78 Q74 -72 80 -10 Z') + H.l('M0 80 L-56 -56 M0 80 L-28 -72 M0 80 L0 -78 M0 80 L28 -72 M0 80 L56 -56') + H.p('M-20 86 L-12 72 L12 72 L20 86 Z'),
+
+  fussball: (H) => { const fuenf = (cx, cy, r, rot) => { const P = []; for (let i = 0; i < 5; i++) { const a = (rot + i * 72) * Math.PI / 180; P.push((cx + Math.cos(a) * r).toFixed(1) + ',' + (cy + Math.sin(a) * r).toFixed(1)); } return P; };
+    const innen = fuenf(0, 0, 26, -90), aussen = [0, 1, 2, 3, 4].map(i => { const a = (-90 + i * 72) * Math.PI / 180; return fuenf(Math.cos(a) * 70, Math.sin(a) * 70, 24, -90 + i * 72 + 180); });
+    let li = innen.map((p, i) => `M${p.replace(',', ' ')} L${aussen[i][0].replace(',', ' ')}`).join(' ');
+    aussen.forEach((A, i) => { const B = aussen[(i + 1) % 5]; li += ` M${A[1].replace(',', ' ')} L${B[4].replace(',', ' ')}`; A.forEach(p => { const [x, y] = p.split(',').map(Number), l = Math.hypot(x, y); if (l > 75) li += ` M${x} ${y} L${(x / l * 90).toFixed(1)} ${(y / l * 90).toFixed(1)}`; }); });
+    return H.clip('<circle cx="0" cy="0" r="84"/>', H.L(li) + H.pg(innen.join(' ')) + aussen.map(A => H.pg(A.join(' '))).join('')); },
+  tor: (H) => H.clip('<path d="M-84 -38 L84 -38 L84 100 L-84 100 Z"/>', H.l('M-84 -14 L84 -14 M-84 10 L84 10 M-84 34 L84 34 M-84 58 L84 58 M-84 82 L84 82 M-60 -38 L-60 100 M-36 -38 L-36 100 M-12 -38 L-12 100 M12 -38 L12 100 M36 -38 L36 100 M60 -38 L60 100'))
+    + H.p('M-96 100 L-96 -50 L96 -50 L96 100 L84 100 L84 -38 L-84 -38 L-84 100 Z'),
+  pokal: (H) => H.L('M-48 -66 Q-88 -66 -78 -36 Q-70 -16 -40 -22 M48 -66 Q88 -66 78 -36 Q70 -16 40 -22') + H.p('M-52 -84 L52 -84 Q52 -10 0 8 Q-52 -10 -52 -84 Z') + H.stern(0, -46, 22, 9)
+    + H.r(-8, 6, 16, 30) + H.r(-40, 34, 80, 16, 4) + H.r(-54, 50, 108, 30, 4) + H.r(-30, 56, 60, 18, 3),
+  krone: (H) => H.p('M-80 40 L-80 -40 L-50 0 L-20 -60 L0 -10 L20 -60 L50 0 L80 -40 L80 40 Z') + H.r(-84, 40, 168, 26, 6) + H.c(-80, -46, 8) + H.c(-20, -66, 8) + H.c(20, -66, 8) + H.c(80, -46, 8)
+    + H.c(-50, 53, 7) + H.e(0, 53, 12, 8) + H.c(50, 53, 7) + H.stern(0, 16, 16, 7),
+  trikot: (H, v) => { const nr = String(1 + v % 99), form = '<path d="M-40 -80 L-92 -50 L-72 -8 L-50 -22 L-50 92 L50 92 L50 -22 L72 -8 L92 -50 L40 -80 Q0 -58 -40 -80 Z"/>';
+    return (v % 3 === 1 ? H.clip(form, H.r(-20, -90, 40, 190)) : v % 3 === 2 ? H.clip(form, H.r(-100, -30, 200, 26)) : H.p(form.slice(9, -3))) + H.p('M-40 -80 Q0 -58 40 -80 L30 -84 Q0 -68 -30 -84 Z')
+      + H.l('M-84 -34 L-62 -46 M84 -34 L62 -46') + H.text(0, 50, nr.length > 1 ? 82 : 96, nr); },
+  kind: (H, v) => H.e(28, -76, 14, 24, 30) + H.r(-20, 40, 16, 44, 6) + H.r(4, 40, 16, 44, 6) + H.r(-20, 58, 16, 26, 4) + H.r(4, 58, 16, 26, 4)
+    + H.e(-14, 90, 16, 8) + H.e(14, 90, 16, 8) + H.p('M-28 8 L28 8 L30 46 L4 46 L0 32 L-4 46 L-30 46 Z')
+    + H.e(-40, -6, 8, 24, 20) + H.e(40, -6, 8, 24, -20) + H.c(-46, 16, 8) + H.c(46, 16, 8)
+    + H.p('M-26 -42 L26 -42 L44 -26 L34 -12 L26 -20 L28 12 L-28 12 L-26 -20 L-34 -12 L-44 -26 Z') + H.text(0, 2, 30, String(1 + v % 11), 'middle', 2.4) + H.r(-6, -52, 12, 12)
+    + H.c(0, -70, 24) + H.p('M-24 -72 Q-24 -98 0 -96 Q24 -98 24 -72 Q12 -86 -2 -80 Q-14 -86 -24 -72 Z') + H.k(-8, -68, 3) + H.k(8, -68, 3) + ambLach(H, 0, -60, 7) + H.c(-14, -60, 4) + H.c(14, -60, 4),
+  schneemann: (H) => H.L('M-34 -4 L-76 -30 L-88 -26 M-64 -22 L-70 -40 M34 -4 L76 -30 L88 -26 M64 -22 L70 -40') + H.c(0, 58, 44) + H.c(0, -6, 32) + H.c(0, -56, 24)
+    + H.r(-20, -110, 40, 32, 3) + H.r(-30, -80, 60, 8, 3) + H.r(-20, -90, 40, 8) + H.k(-8, -60, 3.5) + H.k(8, -60, 3.5) + H.pg('0,-52 28,-46 0,-44') + H.k(-8, -42, 2) + H.k(0, -40, 2) + H.k(8, -42, 2)
+    + H.p('M-26 -32 Q0 -22 26 -32 L26 -24 Q0 -14 -26 -24 Z') + H.p('M12 -24 L20 4 L10 6 L4 -20 Z') + H.c(0, 0, 5) + H.c(0, 16, 5) + H.c(0, 46, 5) + H.c(0, 66, 5),
+  geschenk: (H, v) => H.r(-70, -10, 140, 100, 4) + (v % 2 ? [[-44, 20], [44, 30], [-36, 66], [40, 70]].map(([x, y]) => H.stern(x, y, 12, 5)).join('') : H.l('M-70 30 L-22 -10 M-70 70 L-22 26 M22 80 L70 40 M22 40 L60 -10'))
+    + H.r(-80, -34, 160, 28, 4) + H.r(-12, -34, 24, 124) + H.e(-26, -50, 26, 15, -25) + H.e(26, -50, 26, 15, 25) + H.c(0, -44, 10),
+  kerze: (H) => H.e(0, 94, 60, 10) + H.r(-24, -30, 48, 122, 4) + H.p('M-24 -26 L-24 -14 Q-18 -4 -14 -14 L-14 -24 Z') + H.L('M0 -30 L0 -40') + H.p('M0 -86 Q22 -56 0 -40 Q-22 -56 0 -86 Z') + H.p('M0 -66 Q8 -54 0 -46 Q-8 -54 0 -66 Z')
+    + H.e(-40, 84, 18, 8, -20) + H.e(40, 84, 18, 8, 20),
+  laterne: (H) => H.L('M-96 -98 Q-40 -104 0 -86') + H.L('M0 -86 L-40 -62 M0 -86 L40 -62') + H.r(-44, -66, 88, 12, 4) + H.p('M-44 -54 Q-80 6 -44 66 L44 66 Q80 6 44 -54 Z')
+    + H.l('M-20 -54 Q-30 6 -20 66 M20 -54 Q30 6 20 66') + H.p('M-12 -20 A22 22 0 1 0 -12 24 A16 16 0 1 1 -12 -20 Z') + H.stern(32, -16, 12, 5) + H.stern(-36, 34, 10, 4) + H.stern(30, 34, 10, 4)
+    + H.r(-44, 66, 88, 12, 4) + H.L('M0 78 L0 96'),
+  osterei: (H, v) => H.clip('<path d="M0 -90 C50 -90 74 0 70 30 C66 70 36 94 0 94 C-36 94 -66 70 -70 30 C-74 0 -50 -90 0 -90 Z"/>',
+    H.p('M-80 -30 L-60 -46 L-40 -30 L-20 -46 L0 -30 L20 -46 L40 -30 L60 -46 L80 -30 L80 -14 L60 -30 L40 -14 L20 -30 L0 -14 L-20 -30 L-40 -14 L-60 -30 L-80 -14 Z')
+    + H.p('M-80 20 Q-60 4 -40 20 Q-20 36 0 20 Q20 4 40 20 Q60 36 80 20 L80 40 Q60 56 40 40 Q20 24 0 40 Q-20 56 -40 40 Q-60 24 -80 40 Z')
+    + (v % 2 ? [[-30, -64], [0, -70], [30, -64], [-40, 0], [0, -2], [40, 0], [-24, 68], [24, 68], [0, 80]].map(([x, y]) => H.c(x, y, 6)).join('') : [[-26, -64], [20, -64], [-36, 2], [8, 0], [44, 6], [-14, 70], [26, 70]].map(([x, y]) => H.stern(x, y, 10, 4)).join(''))),
+  kuerbis: (H) => H.p('M-6 -60 Q-4 -82 10 -92 L18 -86 Q8 -76 8 -60 Z') + H.p('M10 -76 Q34 -96 54 -80 Q32 -66 10 -76 Z') + H.e(-46, 14, 36, 62) + H.e(46, 14, 36, 62) + H.e(-22, 14, 36, 68) + H.e(22, 14, 36, 68) + H.e(0, 14, 30, 72)
+    + H.k(-10, 0, 4) + H.k(10, 0, 4) + ambLach(H, 0, 18, 12),
+  drachen: (H) => H.L('M0 60 Q36 66 34 84 Q30 96 56 98') + H.pg('20,64 30,74 36,62') + H.pg('28,86 40,94 42,82') + H.pg('0,-96 62,-20 0,60 -62,-20') + H.l('M0 -96 L0 60 M-62 -20 L62 -20')
+    + H.auge(-18, -32, 7) + H.auge(18, -32, 7) + ambLach(H, 0, -6, 12),
+  roboter: (H) => H.L('M0 -86 L0 -98') + H.c(0, -98, 6) + H.r(-50, -14, 10, 8) + H.r(-50, -86, 100, 64, 12) + H.r(-58, -66, 8, 22, 3) + H.r(50, -66, 8, 22, 3) + H.c(-20, -60, 12) + H.c(20, -60, 12) + H.k(-20, -60, 5) + H.k(20, -60, 5)
+    + H.r(-24, -40, 48, 12, 4) + H.l('M-12 -40 L-12 -28 M0 -40 L0 -28 M12 -40 L12 -28') + H.r(-10, -22, 20, 10) + H.r(-80, -6, 22, 54, 9) + H.r(58, -6, 22, 54, 9) + H.c(-69, 54, 10) + H.c(69, 54, 10)
+    + H.r(-52, -12, 104, 70, 10) + H.r(-34, -2, 40, 30, 4) + H.c(26, 6, 7) + H.c(26, 28, 7) + H.r(-38, 58, 26, 28, 6) + H.r(12, 58, 26, 28, 6) + H.r(-44, 84, 36, 12, 5) + H.r(8, 84, 36, 12, 5),
+  planet: (H) => H.p('M-94 10 A94 26 0 0 1 94 10 L80 12 A80 18 0 0 0 -80 12 Z') + H.c(0, 0, 56) + H.l('M-50 -24 Q0 -10 50 -24 M-54 14 Q0 30 54 14') + H.c(-18, -34, 7) + H.c(24, 2, 9)
+    + H.p('M-94 10 A94 26 0 0 0 94 10 L80 12 A80 18 0 0 1 -80 12 Z'),
+  schultuete: (H) => H.p('M-62 -60 L-50 -92 L-30 -76 L-14 -96 L0 -78 L16 -98 L30 -76 L50 -92 L62 -60 Z') + H.pg('-66,-60 66,-60 0,100') + H.r(-66, -64, 132, 14, 4)
+    + H.e(-20, -74, 20, 10, -20) + H.e(20, -74, 20, 10, 20) + H.c(0, -70, 7) + H.stern(-22, -20, 14, 6) + H.stern(22, 6, 12, 5) + H.stern(-4, 40, 10, 4) + H.c(20, -30, 6) + H.c(-20, 16, 5),
+  stiefel: (H) => H.p('M-50 -60 L10 -60 L14 40 Q60 40 72 66 Q76 90 50 92 L-50 92 Z') + H.wolke(-20, -68, 40, 16, 8, .3) + H.p('M-50 70 Q-50 92 -30 92 L-30 70 Z') + H.p('M40 58 Q68 60 70 80 Q72 92 50 92 Q56 76 40 58 Z')
+    + H.L('M30 -60 L34 -96 Q36 -110 48 -104 Q56 -100 52 -90') + H.stern(-20, 18, 16, 7),
+  lebkuchenhaus: (H) => H.r(-66, -10, 132, 106) + H.pg('-84,-6 0,-86 84,-6') + H.p('M-84 -6 L0 -86 L84 -6 Q74 6 64 -6 Q54 6 44 -6 Q34 6 24 -6 Q14 6 4 -6 Q-6 6 -16 -6 Q-26 6 -36 -6 Q-46 6 -56 -6 Q-66 6 -76 -6 Z')
+    + H.c(-30, -34, 8) + H.c(0, -56, 8) + H.c(30, -34, 8) + H.p('M-16 96 L-16 52 Q0 32 16 52 L16 96 Z') + H.c(-40, 30, 14) + H.c(40, 30, 14) + H.l('M-40 16 L-40 44 M-54 30 L-26 30 M40 16 L40 44 M26 30 L54 30')
+    + H.l('M-66 64 L-56 74 L-46 64 L-36 74 L-26 64 M26 64 L36 74 L46 64 L56 74 L66 64') + H.c(-50, 86, 6) + H.c(50, 86, 6),
+  schneeflocke: (H) => Array.from({ length: 6 }, (_, i) => H.g(0, 0, i * 60, H.r(-7, -94, 14, 94, 7) + H.g(0, -58, -45, H.r(-5, -34, 10, 34, 5)) + H.g(0, -58, 45, H.r(-5, -34, 10, 34, 5)))).join('') + H.stern(0, 0, 26, 18, 6),
+  luftballons: (H) => H.L('M-46 10 Q-20 60 0 98 M0 -6 Q4 50 0 98 M46 16 Q20 60 0 98') + [[-46, -40, 34, 44, -10], [46, -34, 34, 44, 10], [0, -58, 36, 46, 0]].map(([x, y, a, b, r]) => H.pg(`${x - 6},${y + b + 8} ${x + 6},${y + b + 8} ${x},${y + b - 2}`) + H.e(x, y, a, b, r) + H.l(`M${x - a * .5} ${y - b * .4} Q${x - a * .6} ${y - b * .1} ${x - a * .5} ${y + b * .15}`)).join(''),
+  buch: (H) => H.p('M0 -50 Q-40 -70 -92 -56 L-92 70 Q-40 56 0 76 Z') + H.p('M0 -50 Q40 -70 92 -56 L92 70 Q40 56 0 76 Z') + H.l('M-76 -30 Q-44 -40 -14 -28 M-76 -6 Q-44 -16 -14 -4 M-76 18 Q-44 8 -14 20 M14 -28 Q44 -40 76 -30 M14 -4 Q44 -16 76 -6 M14 20 Q44 8 76 18')
+    + H.p('M-92 70 Q-40 56 0 76 Q40 56 92 70 L92 82 Q40 68 0 88 Q-40 68 -92 82 Z'),
+  jojo: (H) => H.L('M0 -100 Q8 -60 0 -30') + H.c(0, 20, 54) + H.c(0, 20, 34) + H.c(0, 20, 9) + H.stern(-20, 4, 8, 3) + H.stern(22, 34, 8, 3),
+  nest: (H) => H.e(-32, 6, 20, 26) + H.e(0, -4, 20, 26) + H.e(32, 6, 20, 26) + H.p('M-90 10 Q-86 76 0 80 Q86 76 90 10 Q0 40 -90 10 Z') + H.l('M-80 26 Q-40 50 0 46 Q40 50 80 26 M-70 46 Q0 70 70 46 M-60 20 L-40 60 M60 20 L40 60 M-10 40 L10 70'),
+  xylophon: (H) => H.r(-96, -6, 192, 12, 5) + H.r(-96, 46, 192, 12, 5) + [0, 1, 2, 3, 4, 5].map(i => { const x = -88 + i * 30, h = 104 - i * 10, y = 26 - h / 2; return H.r(x, y, 24, h, 6) + H.c(x + 12, y + 9, 3.5) + H.c(x + 12, y + h - 9, 3.5); }).join('')
+    + H.L('M-40 98 L-10 74 M40 98 L70 74') + H.c(-10, 74, 9) + H.c(70, 74, 9),
+  eimer: (H) => H.L('M-46 -40 Q0 -100 46 -40') + H.pg('-50,-36 50,-36 40,84 -40,84') + H.r(-56, -44, 112, 14, 6) + H.stern(0, 26, 22, 10) + H.L('M64 90 L82 -30') + H.p('M76 -30 Q70 -60 84 -80 Q98 -60 92 -28 Z'),
+  sandburg: (H) => H.p('M-96 100 Q-96 60 -70 54 L70 54 Q96 60 96 100 Z') + H.r(-70, -14, 140, 70) + H.r(-90, -40, 40, 96) + H.r(50, -40, 40, 96) + H.r(-20, -60, 40, 50)
+    + [[-90, -40, 40], [50, -40, 40], [-20, -60, 40], [-70, -14, 140]].map(([x, y, w]) => H.l(Array.from({ length: Math.floor(w / 10) }, (_, i) => `M${x + i * 10 + 5} ${y} L${x + i * 10 + 5} ${y - 8}`).join(' '))).join('')
+    + H.p('M-14 56 L-14 30 Q0 14 14 30 L14 56 Z') + H.L('M0 -60 L0 -94') + H.pg('0,-94 26,-86 0,-78') + H.p('M60 80 Q70 66 80 80 Z'),
+  hai: (H) => H.p('M-96 10 Q-60 -40 20 -30 Q70 -24 88 0 L104 -26 L102 6 L108 34 L88 14 Q70 36 20 36 Q-60 40 -96 10 Z') + H.pg('-6,-30 14,-72 30,-28') + H.e(-4, 30, 22, 8, 30)
+    + H.p('M-96 10 Q-60 24 -40 16 Q-60 30 -96 10 Z') + H.auge(-58, -6, 6) + H.l('M-20 -10 L-20 10 M-12 -10 L-12 10 M-4 -10 L-4 10')
+};
+const AMB_NAMEN = { katze: 'Die Katze', hund: 'Der Hund', hase: 'Der Hase', maus: 'Die Maus', pinguin: 'Lumi', baer: 'Der Teddy', elefant: 'Der Elefant', giraffe: 'Die Giraffe', loewe: 'Der Löwe', affe: 'Der Affe',
+  fuchs: 'Der Fuchs', igel: 'Der Igel', eule: 'Die Eule', vogel: 'Der Vogel', ente: 'Die Ente', huhn: 'Das Huhn', kuh: 'Die Kuh', schwein: 'Das Schwein', schaf: 'Das Schaf', pferd: 'Das Pferd', einhorn: 'Das Einhorn',
+  zebra: 'Das Zebra', fisch: 'Der Fisch', wal: 'Der Wal', oktopus: 'Der Oktopus', qualle: 'Die Qualle', schildkroete: 'Die Schildkröte', krabbe: 'Die Krabbe', seestern: 'Der Seestern', schnecke: 'Die Schnecke',
+  schmetterling: 'Der Schmetterling', biene: 'Die Biene', marienkaefer: 'Der Marienkäfer', frosch: 'Der Frosch', dino: 'Der Langhals-Dino', trex: 'Der kleine T-Rex', drache: 'Der Drache', delfin: 'Der Delfin',
+  haus: 'Das Haus', burg: 'Die Burg', auto: 'Das Auto', bus: 'Der Bus', zug: 'Die Lok', traktor: 'Der Traktor', flugzeug: 'Das Flugzeug', boot: 'Das Segelboot', rakete: 'Die Rakete', ufo: 'Das Ufo', fahrrad: 'Das Fahrrad',
+  ballon: 'Der Heißluftballon', leuchtturm: 'Der Leuchtturm', apfel: 'Der Apfel', birne: 'Die Birne', erdbeere: 'Die Erdbeere', kirschen: 'Die Kirschen', eis: 'Das Eis', torte: 'Die Torte', cupcake: 'Der Cupcake',
+  pilz: 'Der Pilz', blume: 'Die Blume', tulpe: 'Die Tulpe', sonnenblume: 'Die Sonnenblume', baum: 'Der Baum', tanne: 'Der Tannenbaum', palme: 'Die Palme', sonne: 'Die Sonne', mond: 'Der Mond', stern: 'Der Stern',
+  wolke: 'Die Wolke', regenbogen: 'Der Regenbogen', herz: 'Das Herz', regenschirm: 'Der Regenschirm', muschel: 'Die Muschel', fussball: 'Der Fußball', tor: 'Das Tor', pokal: 'Der Pokal', krone: 'Die Krone',
+  trikot: 'Dein Trikot', kind: 'Die Fußballerin', schneemann: 'Der Schneemann', geschenk: 'Das Geschenk', kerze: 'Die Kerze', laterne: 'Die Laterne', osterei: 'Das Osterei', kuerbis: 'Der Kürbis', drachen: 'Der Drachen',
+  roboter: 'Der Roboter', planet: 'Der Planet', schultuete: 'Die Schultüte', stiefel: 'Der Nikolausstiefel', lebkuchenhaus: 'Das Lebkuchenhaus', schneeflocke: 'Die Schneeflocke', luftballons: 'Die Luftballons',
+  buch: 'Das Buch', jojo: 'Das Jojo', nest: 'Das Nest', xylophon: 'Das Xylophon', eimer: 'Eimer und Schaufel', sandburg: 'Die Sandburg', hai: 'Der Hai' };
+
+/*@@src malbuch460b.js@@*/
+
+
+
+
+
+
+
+
+const AMB_W = 736, AMB_H = 1080, AMB_X0 = 14, AMB_Y0 = 14, AMB_X1 = 722, AMB_Y1 = 964;
+function ambRng(seed) { let s = (seed * 2654435761 >>> 0) % 2147483647 || 7; const f = () => (s = (s * 16807) % 2147483647) / 2147483647; f(); f(); return { f, int: (a, b) => a + Math.floor(f() * (b - a + 1)), pick: L => L[Math.floor(f() * L.length)], misch: L => { const a = L.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(f() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; } }; }
+
+function ambSetze(name, x, y, s, flip, v = 0) {
+  const f = AMB_MOTIVE[name]; if (!f) return '';
+  return `<g transform="translate(${x.toFixed(1)} ${y.toFixed(1)}) scale(${(flip ? -s : s).toFixed(3)} ${s.toFixed(3)})" stroke-width="${(5.4 / s).toFixed(3)}">${f(ambStift(s), v)}</g>`;
+}
+const AMB_ORT = { wiese: 'auf der Wiese', garten: 'im Garten', wald: 'im Wald', bauernhof: 'auf dem Bauernhof', savanne: 'in der Savanne', meer: 'im Meer', strand: 'am Strand', weltraum: 'im Weltraum', winter: 'im Schnee',
+  stadt: 'in der Stadt', himmel: 'am Himmel', zimmer: 'im Kinderzimmer', fussballplatz: 'auf dem Fußballplatz', vulkan: 'beim Vulkan', schloss: 'im Zauberland', nacht: 'in der Nacht', tisch: 'auf dem Tisch', leer: '', weihnacht: 'an Weihnachten' };
+
+const AMB_SZENE = {
+  leer: (H, r) => ({ bg: H.L(`M${AMB_X0} 900 Q260 884 368 900 T${AMB_X1} 896`), boden: 900, deko: [], himmel: [] }),
+  wiese: (H, r) => ({ bg: H.p(`M${AMB_X0} 610 Q200 520 420 600 Q600 650 ${AMB_X1} 560 L${AMB_X1} ${AMB_Y1} L${AMB_X0} ${AMB_Y1} Z`) + H.p(`M${AMB_X0} 720 Q250 670 450 712 Q620 742 ${AMB_X1} 700 L${AMB_X1} ${AMB_Y1} L${AMB_X0} ${AMB_Y1} Z`) + ambGras(H, r, 8, 760, 950),
+    boden: 905, deko: [[110, 935, .55], [628, 930, .5], [250, 690, .32], [520, 700, .3]], himmel: [[600, 150, .9], [170, 160, .75], [400, 110, .55]] }),
+  garten: (H, r) => ({ bg: H.p(`M${AMB_X0} 680 L${AMB_X1} 680 L${AMB_X1} ${AMB_Y1} L${AMB_X0} ${AMB_Y1} Z`) + ambZaun(H, 520, 680) + ambGras(H, r, 7, 740, 950), boden: 905, deko: [[110, 935, .55], [630, 932, .55], [80, 640, .38], [660, 640, .38]], himmel: [[600, 140, .85], [180, 150, .7]] }),
+  wald: (H, r) => ({ bg: [80, 200, 330, 470, 600, 700].map((x, i) => ambSetze(i % 2 ? 'baum' : 'tanne', x, 560 - (i % 3) * 10, .9 + (i % 2) * .1, false, i % 2 ? 2 : 0)).join('') + H.p(`M${AMB_X0} 660 Q300 620 ${AMB_X1} 670 L${AMB_X1} ${AMB_Y1} L${AMB_X0} ${AMB_Y1} Z`) + ambGras(H, r, 6, 720, 950),
+    boden: 905, deko: [[110, 935, .45], [630, 935, .45], [300, 700, .3]], himmel: [[620, 110, .6]] }),
+  bauernhof: (H, r) => ({ bg: H.p(`M${AMB_X0} 600 Q300 540 ${AMB_X1} 590 L${AMB_X1} ${AMB_Y1} L${AMB_X0} ${AMB_Y1} Z`) + ambScheune(H, 150, 610) + H.p(`M${AMB_X0} 700 Q370 660 ${AMB_X1} 700 L${AMB_X1} ${AMB_Y1} L${AMB_X0} ${AMB_Y1} Z`) + ambLatten(H, 430, AMB_X1, 640) + ambGras(H, r, 6, 760, 950),
+    boden: 905, deko: [[110, 935, .45], [630, 930, .45], [560, 610, .3]], himmel: [[610, 130, .85], [380, 130, .6]] }),
+  savanne: (H, r) => ({ bg: H.c(560, 520, 110) + H.p(`M${AMB_X0} 620 L${AMB_X1} 620 L${AMB_X1} ${AMB_Y1} L${AMB_X0} ${AMB_Y1} Z`) + H.p('M600 640 Q596 560 610 500 L626 500 Q616 560 624 640 Z') + H.wolke(616, 480, 110, 34, 11, .2) + ambGras(H, r, 9, 680, 950),
+    boden: 905, deko: [[120, 932, .5], [640, 930, .45]], himmel: [[160, 150, .6], [380, 110, .5]] }),
+  meer: (H, r) => ({ bg: H.p(`M${AMB_X0} 110 Q90 90 170 110 T330 110 T490 110 T650 110 T${AMB_X1} 110 L${AMB_X1} ${AMB_Y1} L${AMB_X0} ${AMB_Y1} Z`) + H.p(`M${AMB_X0} 860 Q200 820 380 858 T${AMB_X1} 846 L${AMB_X1} ${AMB_Y1} L${AMB_X0} ${AMB_Y1} Z`)
+      + [70, 160, 600, 680].map((x, i) => ambTang(H, x, 880, 140 + (i % 2) * 70)).join('') + H.wolke(560, 880, 50, 26, 7, .3) + [[110, 330, 10], [130, 290, 7], [640, 420, 12], [620, 380, 8], [600, 350, 6], [300, 200, 8]].map(([x, y, a]) => H.c(x, y, a)).join(''),
+    boden: 860, mitte: 520, deko: [[150, 640, .45], [610, 240, .45], [300, 900, .3], [470, 900, .32]], himmel: [] }),
+  strand: (H, r) => ({ bg: H.p(`M${AMB_X0} 560 L${AMB_X1} 560 L${AMB_X1} ${AMB_Y1} L${AMB_X0} ${AMB_Y1} Z`) + H.l('M60 600 Q90 590 120 600 M300 590 Q330 580 360 590 M520 610 Q550 600 580 610')
+      + H.p(`M${AMB_X0} 680 Q200 650 380 680 T${AMB_X1} 670 L${AMB_X1} ${AMB_Y1} L${AMB_X0} ${AMB_Y1} Z`) + ambSetze('palme', 640, 560, 1.15) + H.l('M150 800 L160 790 M420 880 L430 872 M560 780 L570 772'),
+    boden: 905, deko: [[110, 935, .5], [600, 935, .45], [300, 920, .3]], himmel: [[160, 150, .85], [420, 120, .55]] }),
+  weltraum: (H, r) => ({ bg: Array.from({ length: 22 }, () => { const x = r.int(40, 700), y = r.int(40, 940); return r.f() < .5 ? H.stern(x, y, r.int(8, 14), 4, 5, r.int(0, 60)) : H.c(x, y, r.int(3, 6)); }).join(''),
+    boden: 900, mitte: 500, deko: [[130, 820, .6], [610, 160, .7], [600, 830, .5]], himmel: [[150, 150, .55]] }),
+  winter: (H, r) => ({ bg: H.p(`M${AMB_X0} 640 Q220 560 420 630 Q600 690 ${AMB_X1} 600 L${AMB_X1} ${AMB_Y1} L${AMB_X0} ${AMB_Y1} Z`) + ambSetze('haus', 590, 560, .55, false, 1) + H.p(`M${AMB_X0} 740 Q300 700 ${AMB_X1} 740 L${AMB_X1} ${AMB_Y1} L${AMB_X0} ${AMB_Y1} Z`)
+      + Array.from({ length: 16 }, () => H.c(r.int(40, 700), r.int(40, 520), r.int(5, 9))).join(''), boden: 905, deko: [[110, 920, .55], [630, 920, .55]], himmel: [[180, 150, .5]] }),
+  stadt: (H, r) => ({ bg: [[30, 300, 120], [150, 380, 110], [262, 260, 120], [380, 340, 110], [490, 290, 120], [610, 360, 110]].map(([x, y, w]) => H.r(x, y, w, 680 - y) + H.l(Array.from({ length: Math.floor((680 - y - 40) / 60) }, (_, k) => `M${x + 22} ${y + 30 + k * 60} h24 v30 h-24 Z M${x + w - 46} ${y + 30 + k * 60} h24 v30 h-24 Z`).join(' '))).join('')
+      + H.r(AMB_X0, 680, 708, 60) + H.r(AMB_X0, 740, 708, 224) + H.l('M40 852 h70 M170 852 h70 M300 852 h70 M430 852 h70 M560 852 h70'), boden: 840, deko: [[90, 730, .45], [640, 730, .4]], himmel: [[620, 140, .7]] }),
+  himmel: (H, r) => ({ bg: ambSetze('regenbogen', 368, 640, 3.2) + H.p(`M${AMB_X0} 860 Q370 820 ${AMB_X1} 860 L${AMB_X1} ${AMB_Y1} L${AMB_X0} ${AMB_Y1} Z`), boden: 905, mitte: 470, deko: [[110, 300, .6], [630, 240, .55], [560, 860, .3]], himmel: [[150, 140, .7], [600, 120, .6]] }),
+  zimmer: (H, r) => ({ bg: H.p(`M${AMB_X0} 700 L${AMB_X1} 700 L${AMB_X1} ${AMB_Y1} L${AMB_X0} ${AMB_Y1} Z`) + H.r(470, 150, 200, 240, 6) + H.l('M570 150 L570 390 M470 270 L670 270') + H.p('M450 130 L690 130 L690 150 L450 150 Z') + H.p('M450 150 Q480 260 450 420 L500 420 Q470 260 500 150 Z') + H.p('M690 150 Q660 260 690 420 L640 420 Q670 260 640 150 Z')
+      + H.r(70, 170, 150, 110, 4) + H.r(84, 184, 122, 82, 2) + H.r(60, 470, 230, 16, 4) + [0, 1, 2, 3, 4].map(i => H.r(70 + i * 32, 400 - (i % 2) * 12, 26, 70 + (i % 2) * 12, 3)).join('') + H.e(368, 900, 300, 50), boden: 905, deko: [[120, 920, .5], [620, 920, .5]], himmel: [] }),
+  fussballplatz: (H, r) => ({ bg: H.r(AMB_X0, 200, 708, 130) + Array.from({ length: 18 }, (_, i) => H.c(48 + i * 38, 238 + (i % 2) * 6, 13) + H.c(48 + i * 38 + 19, 286 - (i % 2) * 6, 13)).join('') + H.r(AMB_X0, 320, 708, 26)
+      + H.p(`M${AMB_X0} 346 L${AMB_X1} 346 L${AMB_X1} ${AMB_Y1} L${AMB_X0} ${AMB_Y1} Z`) + H.l('M200 346 L170 520 L566 520 L536 346 M300 346 L290 410 L446 410 L436 346 M120 964 Q368 760 616 964') + ambSetze('tor', 368, 368, .8),
+    boden: 925, deko: [[110, 925, .5], [630, 925, .5]], himmel: [[620, 110, .55], [140, 110, .5]] }),
+  vulkan: (H, r) => ({ bg: H.p('M100 640 L300 260 L380 260 L600 640 Z') + H.p('M300 260 Q340 236 380 260 L366 330 Q356 300 350 346 Q340 300 326 320 Z') + H.wolke(340, 190, 60, 36, 8) + H.wolke(400, 120, 40, 26, 7)
+      + H.p(`M${AMB_X0} 640 L${AMB_X1} 640 L${AMB_X1} ${AMB_Y1} L${AMB_X0} ${AMB_Y1} Z`) + ambGras(H, r, 6, 700, 950), boden: 905, deko: [[110, 920, .5], [630, 920, .45], [660, 620, .4]], himmel: [[620, 120, .6]] }),
+  schloss: (H, r) => ({ bg: H.p(`M${AMB_X0} 560 Q370 400 ${AMB_X1} 560 L${AMB_X1} ${AMB_Y1} L${AMB_X0} ${AMB_Y1} Z`) + ambSetze('burg', 368, 400, .95) + H.p(`M${AMB_X0} 720 Q370 680 ${AMB_X1} 720 L${AMB_X1} ${AMB_Y1} L${AMB_X0} ${AMB_Y1} Z`) + ambGras(H, r, 6, 770, 950),
+    boden: 905, deko: [[110, 920, .5], [630, 920, .5]], himmel: [[120, 140, .5], [620, 130, .5], [520, 220, .35]] }),
+  nacht: (H, r) => ({ bg: H.p(`M${AMB_X0} 640 Q260 560 460 630 Q620 680 ${AMB_X1} 620 L${AMB_X1} ${AMB_Y1} L${AMB_X0} ${AMB_Y1} Z`) + ambSetze('mond', 600, 160, .9) + Array.from({ length: 9 }, () => H.stern(r.int(40, 480), r.int(50, 480), r.int(10, 18), 5)).join('') + ambGras(H, r, 6, 700, 950),
+    boden: 905, deko: [[110, 920, .5], [630, 920, .45]], himmel: [] }),
+  tisch: (H, r) => ({ bg: H.p(`M${AMB_X0} 640 L${AMB_X1} 640 L${AMB_X1} ${AMB_Y1} L${AMB_X0} ${AMB_Y1} Z`) + H.clip(`<rect x="${AMB_X0}" y="640" width="708" height="324"/>`, Array.from({ length: 8 }, (_, i) => H.r(AMB_X0 + i * 100, 640, 50, 324)).join('') + Array.from({ length: 4 }, (_, i) => H.r(AMB_X0, 660 + i * 84, 708, 40)).join(''))
+      + H.r(60, 150, 140, 180, 6) + H.r(76, 166, 108, 148, 2) + H.e(368, 900, 260, 34), boden: 900, deko: [[110, 900, .4], [630, 900, .4]], himmel: [[560, 200, .4]] }),
+  weihnacht: (H, r) => ({ bg: H.p(`M${AMB_X0} 700 L${AMB_X1} 700 L${AMB_X1} ${AMB_Y1} L${AMB_X0} ${AMB_Y1} Z`) + H.r(80, 140, 210, 260, 8) + H.l('M185 140 L185 400 M80 270 L290 270') + Array.from({ length: 7 }, () => H.c(r.int(100, 270), r.int(160, 380), 5)).join('')
+      + H.L('M330 120 Q400 170 470 120 Q540 170 610 120 Q660 150 700 120') + [360, 430, 500, 570, 640].map((x, i) => H.c(x, 148 - (i % 2) * 6, 12)).join('') + ambSetze('stern', 430, 300, .35) + ambSetze('stern', 620, 340, .3), boden: 905, deko: [[110, 920, .5], [630, 920, .5]], himmel: [] })
+};
+function ambGras(H, r, n, y0, y1) { let d = ''; for (let i = 0; i < n; i++) { const x = r.int(40, 690), y = r.int(y0, y1); d += `M${x - 10} ${y} L${x - 4} ${y - 18} L${x} ${y} L${x + 6} ${y - 22} L${x + 10} ${y} `; } return H.l(d); }
+function ambZaun(H, y0, y1) { let s = H.r(AMB_X0, y0 + 50, 708, 22) + H.r(AMB_X0, y1 - 70, 708, 22); for (let x = 30; x < 712; x += 62) s += H.p(`M${x} ${y1} L${x} ${y0 + 20} L${x + 22} ${y0} L${x + 44} ${y0 + 20} L${x + 44} ${y1} Z`); return s; }
+function ambLatten(H, x0, x1, y) { let s = H.r(x0, y + 16, x1 - x0, 14) + H.r(x0, y + 46, x1 - x0, 14); for (let x = x0 + 10; x < x1 - 10; x += 56) s += H.r(x, y, 16, 80, 3); return s; }
+function ambScheune(H, x, y) { return H.r(x - 110, y - 160, 220, 160) + H.pg(`${x - 130},${y - 150} ${x},${y - 260} ${x + 130},${y - 150}`) + H.r(x - 40, y - 100, 80, 100) + H.l(`M${x - 40} ${y - 100} L${x + 40} ${y} M${x + 40} ${y - 100} L${x - 40} ${y}`) + H.c(x, y - 186, 22) + H.l(`M${x} ${y - 208} L${x} ${y - 164} M${x - 22} ${y - 186} L${x + 22} ${y - 186}`); }
+function ambTang(H, x, y, h) { return H.p(`M${x - 10} ${y} Q${x - 30} ${y - h * .3} ${x - 6} ${y - h * .55} Q${x + 18} ${y - h * .8} ${x} ${y - h} Q${x + 30} ${y - h * .75} ${x + 12} ${y - h * .5} Q${x - 6} ${y - h * .3} ${x + 10} ${y} Z`); }
+
+
+const AMB_HIMMEL = { normal: ['sonne', 'wolke', 'vogel'], nacht: ['stern', 'mond'], meer: [], weltraum: ['planet', 'stern', 'ufo'] };
+const AMB_KAT = [
+  { id: 'tiere', t: 'Tiere', i: '🐱', liste: ['katze', 'hund', 'hase', 'maus', 'igel', 'eule', 'fuchs', 'baer', 'schnecke', 'frosch', 'vogel'].map(m => ({ m, sz: m === 'eule' ? ['nacht', 'wald'] : m === 'baer' ? ['zimmer', 'wald'] : ['wiese', 'garten', 'wald', 'zimmer'] })), d: ['blume', 'pilz', 'schmetterling', 'marienkaefer', 'tulpe', 'schnecke'] },
+  { id: 'bauernhof', t: 'Bauernhof', i: '🐮', liste: ['kuh', 'schwein', 'schaf', 'pferd', 'huhn', 'ente', 'traktor', 'hase', 'katze', 'hund'].map(m => ({ m, sz: ['bauernhof', 'wiese'] })), d: ['huhn', 'ente', 'blume', 'katze', 'hase', 'schwein'] },
+  { id: 'zoo', t: 'Wilde Tiere', i: '🦁', liste: ['elefant', 'giraffe', 'loewe', 'affe', 'zebra', 'pinguin', 'frosch'].map(m => ({ m, sz: m === 'pinguin' ? ['winter', 'strand'] : m === 'frosch' ? ['wald', 'garten'] : ['savanne', 'wald'] })), d: ['palme', 'vogel', 'schmetterling', 'blume'] },
+  { id: 'meer', t: 'Meer & Strand', i: '🐠', liste: ['fisch', 'wal', 'oktopus', 'qualle', 'schildkroete', 'krabbe', 'seestern', 'delfin', 'hai'].map(m => ({ m, sz: m === 'krabbe' || m === 'seestern' ? ['meer', 'strand'] : ['meer'], schwebt: 1 })).concat(['boot', 'leuchtturm', 'sandburg'].map(m => ({ m, sz: ['strand'] }))), d: ['fisch', 'seestern', 'muschel', 'qualle', 'krabbe'] },
+  { id: 'dinos', t: 'Dinos & Drachen', i: '🦖', liste: ['dino', 'trex', 'drache'].map(m => ({ m, sz: ['vulkan', 'wald', 'wiese', 'schloss'] })), d: ['palme', 'pilz', 'baum', 'tanne'] },
+  { id: 'fantasie', t: 'Einhorn & Zauber', i: '🦄', liste: [{ m: 'einhorn', sz: ['schloss', 'himmel', 'wiese'] }, { m: 'drache', sz: ['schloss', 'nacht'] }, { m: 'burg', sz: ['wiese', 'nacht'], s: 2.6 }, { m: 'schmetterling', sz: ['himmel', 'garten'], schwebt: 1 }, { m: 'krone', sz: ['schloss', 'leer'] }, { m: 'regenbogen', sz: ['wiese'], s: 3 }], d: ['stern', 'herz', 'blume', 'pilz'] },
+  { id: 'fahrzeuge', t: 'Fahrzeuge', i: '🚗', liste: [{ m: 'auto', sz: ['stadt', 'wiese'] }, { m: 'bus', sz: ['stadt'] }, { m: 'zug', sz: ['wiese', 'winter'] }, { m: 'traktor', sz: ['bauernhof', 'wiese'] }, { m: 'flugzeug', sz: ['himmel'], schwebt: 1 }, { m: 'ballon', sz: ['himmel', 'wiese'], schwebt: 1 },
+    { m: 'boot', sz: ['strand'] }, { m: 'fahrrad', sz: ['stadt', 'garten'] }, { m: 'rakete', sz: ['weltraum'], schwebt: 1 }], d: ['baum', 'blume', 'tanne', 'haus'] },
+  { id: 'weltraum', t: 'Weltraum', i: '🚀', liste: ['rakete', 'ufo', 'planet', 'roboter', 'mond', 'stern'].map(m => ({ m, sz: ['weltraum'], schwebt: m !== 'roboter' })), d: ['stern', 'planet', 'mond', 'ufo'], hi: 'weltraum' },
+  { id: 'fussball', t: 'Fußball', i: '⚽', liste: [{ m: 'kind', sz: ['fussballplatz', 'wiese'], mit: [['fussball', 74, 0, .26]] }, { m: 'tor', sz: ['wiese', 'leer'], mit: [['fussball', 0, -30, .4]] }, { m: 'fussball', sz: ['fussballplatz', 'leer'], s: 2.4 },
+    { m: 'pokal', sz: ['leer', 'zimmer'], s: 2.6 }, { m: 'trikot', sz: ['leer'], s: 2.8 }, { m: 'pinguin', sz: ['fussballplatz', 'wiese'], mit: [['fussball', 84, 0, .26]] }], d: ['stern', 'blume', 'herz'] },
+  { id: 'natur', t: 'Blumen & Natur', i: '🌻', liste: ['blume', 'tulpe', 'sonnenblume', 'baum', 'pilz', 'schmetterling', 'biene', 'marienkaefer', 'regenschirm', 'sonne', 'regenbogen'].map(m => ({ m, sz: m === 'sonne' || m === 'regenbogen' ? ['wiese'] : ['garten', 'wiese'], schwebt: ['schmetterling', 'biene', 'sonne'].includes(m) })), d: ['blume', 'tulpe', 'pilz', 'schnecke', 'marienkaefer'] },
+  { id: 'essen', t: 'Leckereien', i: '🍰', liste: ['torte', 'cupcake', 'eis', 'apfel', 'birne', 'erdbeere', 'kirschen'].map(m => ({ m, sz: ['tisch', 'leer'] })), d: ['apfel', 'kirschen', 'erdbeere', 'birne'] },
+  { id: 'advent', t: 'Advent & Weihnachten', i: '🎄', liste: [{ m: 'tanne', sz: ['weihnacht', 'winter'], v: 1 }, { m: 'schneemann', sz: ['winter'] }, { m: 'geschenk', sz: ['weihnacht', 'leer'] }, { m: 'kerze', sz: ['weihnacht', 'leer'] }, { m: 'stiefel', sz: ['weihnacht'] },
+    { m: 'lebkuchenhaus', sz: ['winter', 'leer'] }, { m: 'stern', sz: ['nacht', 'leer'] }, { m: 'schneeflocke', sz: ['winter', 'leer'], schwebt: 1 }, { m: 'pinguin', sz: ['winter'], v: 2 }], d: ['geschenk', 'tanne', 'schneemann', 'stern'], weih: 1 },
+  { id: 'feste', t: 'Feste & Jahreszeiten', i: '🎉', liste: [{ m: 'torte', sz: ['zimmer', 'tisch'], t: 'Zum Geburtstag' }, { m: 'luftballons', sz: ['zimmer', 'himmel'], t: 'Party mit Luftballons' }, { m: 'osterei', sz: ['wiese', 'garten'], t: 'Frohe Ostern' }, { m: 'hase', sz: ['wiese'], v: 1, mit: [['osterei', -112, 0, .36]], t: 'Der Osterhase' },
+    { m: 'laterne', sz: ['nacht'], t: 'Laterne, Laterne' }, { m: 'kuerbis', sz: ['garten', 'wiese'], t: 'Herbst im Garten' }, { m: 'drachen', sz: ['himmel', 'wiese'], schwebt: 1, t: 'Drachen steigen lassen' }, { m: 'schultuete', sz: ['zimmer', 'leer'], t: 'Der erste Schultag' }, { m: 'regenschirm', sz: ['stadt', 'garten'], t: 'Regenwetter' }], d: ['blume', 'pilz', 'geschenk'] },
+  { id: 'lumi', t: 'Lumi', i: '🐧', liste: [{ m: 'pinguin', sz: ['strand'], mit: [['eimer', 112, 0, .32], ['sandburg', -150, 0, .45]], t: 'Lumi am Strand' }, { m: 'pinguin', sz: ['winter'], v: 2, mit: [['schneemann', -150, 0, .62]], t: 'Lumi baut einen Schneemann' },
+    { m: 'pinguin', sz: ['fussballplatz'], v: 1, mit: [['fussball', 88, 0, .26]], t: 'Lumi spielt Fußball' }, { m: 'pinguin', sz: ['weltraum'], mit: [['rakete', -200, -170, .48]], schwebt: 1, t: 'Lumi im Weltraum' }, { m: 'pinguin', sz: ['garten'], mit: [['sonnenblume', -150, 0, .62], ['eimer', 112, 0, .3]], t: 'Lumi im Garten' },
+    { m: 'pinguin', sz: ['zimmer'], mit: [['torte', 150, 0, .42], ['luftballons', -150, -60, .55]], t: 'Lumi hat Geburtstag' }, { m: 'pinguin', sz: ['meer'], v: 0, mit: [['fisch', 175, -190, .34], ['fisch', -175, -70, .3]], schwebt: 1, t: 'Lumi taucht mit Fischen' },
+    { m: 'pinguin', sz: ['wiese'], v: 1, mit: [['drachen', 150, -260, .5]], t: 'Lumi lässt einen Drachen steigen' }, { m: 'pinguin', sz: ['weihnacht'], v: 2, mit: [['geschenk', 140, 0, .34], ['tanne', -160, 0, .75]], t: 'Lumi an Weihnachten' }], d: ['blume', 'stern', 'herz'] },
+  { id: 'abc', t: 'ABC', i: '🔤', spezial: 'abc' },
+  { id: 'zahlen', t: 'Zahlen', i: '🔢', spezial: 'zahlen' },
+  { id: 'mandala', t: 'Mandalas', i: '🌀', spezial: 'mandala' },
+  { id: 'rechnen', t: 'Rechen-Mandalas', i: '➕', spezial: 'rechnen' },
+  { id: 'muster', t: 'Muster', i: '🔷', spezial: 'muster' }
+];
+const ambKat = id => AMB_KAT.find(k => k.id === id) || AMB_KAT[0];
+
+function ambBild(K, nr, stufe) {
+  const L = K.liste, e = L[nr % L.length], r = ambRng(nr * 7919 + K.id.length * 104729 + stufe * 13), runde = Math.floor(nr / L.length);
+  const sz = stufe === 0 ? 'leer' : e.sz[(runde + Math.floor(nr / 2) + nr) % e.sz.length], H = ambStift(1), S = AMB_SZENE[sz](H, r), v = e.v !== undefined ? e.v : runde + r.int(0, 3);
+  const s = (e.s ? e.s * 1.12 : 2.9) * (stufe === 0 ? 1.12 : 1), flip = !e.mit && !['trikot', 'kind', 'auto', 'bus', 'zug', 'traktor', 'flugzeug', 'boot', 'fahrrad', 'rakete', 'leuchtturm', 'burg', 'haus'].includes(e.m) && r.f() < .4;
+  const y = (e.schwebt || S.mitte) && stufe > 0 ? (S.mitte || 500) : S.boden - 100 * s, x = 368 + (stufe === 0 ? 0 : r.int(-20, 20));
+  let deko = '', himmel = '';
+  if (stufe > 0) {
+    const anz = stufe === 1 ? 1 : 3, slots = r.misch(S.deko).slice(0, anz), dl = K.d || [];
+    slots.forEach(([dx, dy, ds]) => { const m = K.id === 'meer' && sz === 'meer' ? r.pick(['fisch', 'seestern', 'qualle', 'muschel']) : r.pick(dl); if (m === e.m) return; ds *= 1.45; deko += ambSetze(m, dx, dy - 100 * ds * (['fisch', 'qualle', 'ufo', 'planet', 'stern', 'mond', 'herz', 'schmetterling'].includes(m) ? 0 : 1), ds, r.f() < .5, r.int(0, 3)); });
+    const hl = sz === 'nacht' ? AMB_HIMMEL.nacht : sz === 'weltraum' ? AMB_HIMMEL.weltraum : AMB_HIMMEL.normal;
+    r.misch(S.himmel).slice(0, stufe === 1 ? 1 : 2).forEach(([hx, hy, hs], i) => { const m = i === 0 && hl === AMB_HIMMEL.normal ? r.pick(['sonne', 'wolke']) : r.pick(hl); himmel += ambSetze(m, hx, hy, hs * 1.2 * (m === 'vogel' ? .5 : 1), r.f() < .5, r.int(0, 3)); });
+  }
+  const mit = (e.mit || []).map(([m, dx, dy, ms]) => { const s2 = ms * s; return ambSetze(m, x + dx * s / 2.55, y + 100 * s - 100 * s2 + dy * s / 2.55, s2, false, 1); }).join('');
+  const haupt = ambSetze(e.m, x, y, s, flip, v);
+  const titel = e.t || (AMB_NAMEN[e.m] + (AMB_ORT[sz] ? ' ' + AMB_ORT[sz] : '')) + (e.m === 'trikot' ? ` mit der Nummer ${1 + v % 99}` : '');
+  return { innen: S.bg + himmel + deko + haupt + mit, titel };
+}
+
+const AMB_MX = 368, AMB_MY = 489;
+function ambForm(H, typ, r, t, w) {
+  const o = -r - t / 2, u = -r + t / 2, n = H.n;
+  if (typ === 'blatt') return H.e(0, -r, w * .4, t * .48);
+  if (typ === 'blattg') return H.e(0, -r, w * .5, t * .48);
+  if (typ === 'kreis') return H.c(0, -r, Math.min(w, t) * .42);
+  if (typ === 'tropfen') return H.p(`M0 ${n(o)} C${n(w * .62)} ${n(-r)} ${n(w * .42)} ${n(u)} 0 ${n(u)} C${n(-w * .42)} ${n(u)} ${n(-w * .62)} ${n(-r)} 0 ${n(o)} Z`);
+  if (typ === 'spitz') return H.p(`M0 ${n(o)} Q${n(w * .55)} ${n(-r)} 0 ${n(u)} Q${n(-w * .55)} ${n(-r)} 0 ${n(o)} Z`);
+  if (typ === 'dreieck') return H.pg(`${n(-w * .45)},${n(u)} ${n(w * .45)},${n(u)} 0,${n(o)}`);
+  if (typ === 'herz') { const a = Math.min(w, t) * .5; return H.p(`M0 ${n(u)} C${n(-a * 1.2)} ${n(-r + a * .2)} ${n(-a)} ${n(o)} 0 ${n(-r - a * .3)} C${n(a)} ${n(o)} ${n(a * 1.2)} ${n(-r + a * .2)} 0 ${n(u)} Z`); }
+  if (typ === 'bogen') return H.p(`M${n(-w * .5)} ${n(u)} Q${n(-w * .5)} ${n(o)} 0 ${n(o)} Q${n(w * .5)} ${n(o)} ${n(w * .5)} ${n(u)} Z`);
+  if (typ === 'stern') return H.stern(0, -r, Math.min(w, t) * .48, Math.min(w, t) * .2, 5);
+  return H.r(-w * .35, o, w * .7, t, 6);
+}
+function ambMandala(nr, stufe, aufgaben) {
+  const r = ambRng(nr * 31337 + stufe * 7 + (aufgaben ? 99991 : 0)), H = ambStift(1), sym = aufgaben ? 6 : r.pick([6, 8, 10, 12]);
+  const ringe = aufgaben ? 3 : [3, 5, 7][stufe], Rmax = 336, r0 = aufgaben ? 64 : [62, 50, 40][stufe], dick = (Rmax - r0) / ringe;
+  const TYPEN = ['blatt', 'tropfen', 'spitz', 'kreis', 'herz', 'bogen', 'dreieck', 'stern'];
+  let s = '', marken = [];
+
+  for (let i = ringe - 1; i >= 0; i--) {
+    const rm = r0 + dick * (i + .5), mult = aufgaben ? [[1, 1, 1], [1, 1, 2], [1, 2, 2]][stufe][i] : r.pick([1, 1, 2, 2, 3].filter(m => sym * m * 34 < Math.PI * 2 * rm)), n = sym * mult, typ = aufgaben ? r.pick(['blattg', 'bogen', 'tropfen']) : r.pick(i === ringe - 1 ? ['blatt', 'tropfen', 'spitz', 'bogen', 'herz'] : TYPEN), w = Math.PI * 2 * rm / n * (typ === 'bogen' ? 1.02 : .92);
+    s += H.c(AMB_MX, AMB_MY, r0 + dick * (i + 1) - (i === ringe - 1 ? 0 : 0));
+    const t = dick * (typ === 'kreis' || typ === 'stern' ? .9 : 1.04), ph = r.f() < .5 ? 0 : 180 / n;
+    for (let k = 0; k < n; k++) { const a = ph + k * 360 / n; s += H.g(AMB_MX, AMB_MY, a, ambForm(H, typ, rm, t, w)); if (aufgaben) marken.push([i, a, rm]); }
+    if (!aufgaben && stufe > 0 && r.f() < .55 && typ !== 'kreis') { const n2 = n, t2 = dick * .3; for (let k = 0; k < n2; k++) s += H.g(AMB_MX, AMB_MY, ph + 180 / n + k * 360 / n2, H.c(0, -(r0 + dick * (i + 1) - t2 * .6), t2 * .45)); }
+  }
+  s += H.c(AMB_MX, AMB_MY, r0) + (aufgaben ? '' : H.stern(AMB_MX, AMB_MY, r0 * .8, r0 * .4, sym > 8 ? 8 : sym)) + (aufgaben ? '' : H.c(AMB_MX, AMB_MY, r0 * .25));
+  return { innen: s, marken, sym };
+}
+
+const AMB_FARBEN = [['gelb', '#ffd43b'], ['rot', '#ff6b6b'], ['blau', '#4dabf7'], ['grün', '#69db7c'], ['orange', '#ffa94d'], ['lila', '#b197fc'], ['rosa', '#f783ac'], ['braun', '#c0a080']];
+function ambAufgabe(r, erg, kl) {
+  for (let v = 0; v < 40; v++) {
+    const art = r.f();
+    if (kl <= 1) { if (art < .55 && erg >= 2) { const a = r.int(1, erg - 1); return `${a} + ${erg - a}`; } const b = r.int(1, 9); if (erg + b <= 20) return `${erg + b} − ${b}`; continue; }
+    if (kl === 2) { if (art < .35) { for (const m of r.misch([2, 5, 10, 3, 4])) if (erg % m === 0 && erg / m <= 10 && erg / m >= 1) return `${erg / m} · ${m}`; } if (art < .7 && erg >= 3) { const a = r.int(1, erg - 1); return `${a} + ${erg - a}`; } const b = r.int(2, 19); if (erg + b <= 100) return `${erg + b} − ${b}`; continue; }
+    if (art < .45) { for (const m of r.misch([2, 3, 4, 5, 6, 7, 8, 9, 10])) if (erg % m === 0 && erg / m <= 10 && erg / m >= 2) return `${erg / m} · ${m}`; }
+    if (art < .75 && erg >= 3) { const a = r.int(1, erg - 1); return `${a} + ${erg - a}`; }
+    const b = r.int(5, 40); if (kl >= 4 && art > .9 && erg <= 10) return `${erg * 7} : 7`; return `${erg + b} − ${b}`;
+  }
+  return `${erg} + 0`;
+}
+function ambRechnen(nr, stufe) {
+  const kl = Math.max(1, Math.min(4, typeof klasse === 'function' ? klasse() : 2)), r = ambRng(nr * 7907 + kl * 31 + stufe), M = ambMandala(nr, stufe, true), H = ambStift(1), n = AMB_MX;
+  const bereich = kl <= 1 ? [2, 10] : kl === 2 ? [6, 40] : kl === 3 ? [12, 80] : [20, 100], erg = [];
+  while (erg.length < 4) { const e = r.int(bereich[0], bereich[1]); if (!erg.includes(e)) erg.push(e); }
+  const farben = r.misch(AMB_FARBEN).slice(0, 4);
+  let txt = M.marken.map(([i, a, rm]) => { const x = AMB_MX + Math.sin(a * Math.PI / 180) * rm, y = AMB_MY - Math.cos(a * Math.PI / 180) * rm; return ambTxt(x, y + 8, 21, ambAufgabe(r, erg[i + 1], kl)); }).join('');
+  txt += ambTxt(AMB_MX, AMB_MY + 9, 24, ambAufgabe(r, erg[0], kl));
+  const leg = erg.map((e, i) => { const x = 34 + i * 176; return `<circle cx="${x + 16}" cy="1047" r="15" fill="#fff" stroke="#000" stroke-width="3"/><text x="${x + 38}" y="1055" font-size="22" font-weight="800" fill="#000" stroke="none" font-family="ui-rounded, system-ui, sans-serif">${e} = ${farben[i][0]}</text>`; }).join('');
+  return { innen: M.innen + txt, titel: 'Rechne und male: Jedes Ergebnis hat seine Farbe', fuss: leg, loes: erg.map((e, i) => [e, farben[i][1]]) };
+}
+const ambTxt = (x, y, gr, t) => `<text x="${x.toFixed(1)}" y="${y.toFixed(1)}" font-size="${gr}" font-weight="800" text-anchor="middle" fill="#000" stroke="none" pointer-events="none" font-family="ui-rounded, system-ui, sans-serif">${esc(t)}</text>`;
+
+const AMB_ABC = [['A', ['apfel', 'Apfel'], ['affe', 'Affe'], ['auto', 'Auto']], ['B', ['baer', 'Bär'], ['biene', 'Biene'], ['ballon', 'Ballon'], ['baum', 'Baum'], ['boot', 'Boot'], ['buch', 'Buch'], ['birne', 'Birne'], ['blume', 'Blume'], ['burg', 'Burg'], ['bus', 'Bus']],
+  ['C', ['cupcake', 'Cupcake']], ['D', ['dino', 'Dino'], ['drache', 'Drache'], ['delfin', 'Delfin'], ['drachen', 'Drachen']], ['E', ['elefant', 'Elefant'], ['ente', 'Ente'], ['eule', 'Eule'], ['erdbeere', 'Erdbeere'], ['eis', 'Eis'], ['einhorn', 'Einhorn'], ['eimer', 'Eimer']],
+  ['F', ['fisch', 'Fisch'], ['frosch', 'Frosch'], ['fuchs', 'Fuchs'], ['fahrrad', 'Fahrrad'], ['flugzeug', 'Flugzeug'], ['fussball', 'Fußball']], ['G', ['giraffe', 'Giraffe'], ['geschenk', 'Geschenk']],
+  ['H', ['hase', 'Hase'], ['hund', 'Hund'], ['haus', 'Haus'], ['huhn', 'Huhn'], ['herz', 'Herz'], ['hai', 'Hai']], ['I', ['igel', 'Igel']], ['J', ['jojo', 'Jojo']], ['K', ['katze', 'Katze'], ['kuh', 'Kuh'], ['krone', 'Krone'], ['krabbe', 'Krabbe'], ['kerze', 'Kerze'], ['kirschen', 'Kirschen'], ['kuerbis', 'Kürbis']],
+  ['L', ['loewe', 'Löwe'], ['laterne', 'Laterne'], ['leuchtturm', 'Leuchtturm'], ['luftballons', 'Luftballons']], ['M', ['maus', 'Maus'], ['mond', 'Mond'], ['marienkaefer', 'Marienkäfer'], ['muschel', 'Muschel']],
+  ['N', ['nest', 'Nest']], ['O', ['oktopus', 'Oktopus'], ['osterei', 'Osterei']], ['P', ['pinguin', 'Pinguin'], ['pferd', 'Pferd'], ['pilz', 'Pilz'], ['palme', 'Palme'], ['planet', 'Planet'], ['pokal', 'Pokal']], ['Q', ['qualle', 'Qualle']],
+  ['R', ['rakete', 'Rakete'], ['regenbogen', 'Regenbogen'], ['roboter', 'Roboter'], ['regenschirm', 'Regenschirm']], ['S', ['sonne', 'Sonne'], ['schaf', 'Schaf'], ['schwein', 'Schwein'], ['schnecke', 'Schnecke'], ['stern', 'Stern'], ['schmetterling', 'Schmetterling'], ['schneemann', 'Schneemann'], ['seestern', 'Seestern']],
+  ['T', ['torte', 'Torte'], ['tulpe', 'Tulpe'], ['tanne', 'Tanne'], ['traktor', 'Traktor'], ['tor', 'Tor']], ['U', ['ufo', 'Ufo']], ['V', ['vogel', 'Vogel']], ['W', ['wal', 'Wal'], ['wolke', 'Wolke']], ['X', ['xylophon', 'Xylophon']], ['Y', ['boot', 'Yacht']], ['Z', ['zebra', 'Zebra'], ['zug', 'Zug']]];
+function ambAbc(nr) {
+  const B = AMB_ABC[nr % 26], wahl = B.slice(1), [m, wort] = wahl[Math.floor(nr / 26) % wahl.length], H = ambStift(1);
+  const s = `<g stroke-width="6">${H.text(220, 390, 330, B[0], 'middle', 6)}${H.text(530, 390, 300, B[0].toLowerCase(), 'middle', 6)}</g>` + ambSetze(m, 368, 636, 1.85, false, 1)
+    + `<g stroke-width="5">${H.text(368, 920, wort.length > 9 ? 84 : 104, wort, 'middle', 5)}</g>`;
+  return { innen: s, titel: `${B[0]} wie ${wort}` };
+}
+
+const AMB_ZAHLWORT = ['null', 'eins', 'zwei', 'drei', 'vier', 'fünf', 'sechs', 'sieben', 'acht', 'neun', 'zehn', 'elf', 'zwölf', 'dreizehn', 'vierzehn', 'fünfzehn', 'sechzehn', 'siebzehn', 'achtzehn', 'neunzehn', 'zwanzig'];
+const AMB_ZAEHL = [['stern', 'Sterne', 'Stern'], ['herz', 'Herzen', 'Herz'], ['apfel', 'Äpfel', 'Apfel'], ['fisch', 'Fische', 'Fisch'], ['blume', 'Blumen', 'Blume'], ['schmetterling', 'Schmetterlinge', 'Schmetterling'], ['pilz', 'Pilze', 'Pilz'], ['erdbeere', 'Erdbeeren', 'Erdbeere'],
+  ['marienkaefer', 'Marienkäfer', 'Marienkäfer'], ['ente', 'Enten', 'Ente'], ['seestern', 'Seesterne', 'Seestern'], ['luftballons', 'Ballon-Sträuße', 'Ballon-Strauß'], ['muschel', 'Muscheln', 'Muschel'], ['vogel', 'Vögel', 'Vogel']];
+function ambZahlen(nr) {
+  const z = 1 + nr % 20, [m, pl, ein] = AMB_ZAEHL[Math.floor(nr / 20 + nr) % AMB_ZAEHL.length], H = ambStift(1);
+  let s = `<g stroke-width="6">${H.text(368, 330, 280, String(z), 'middle', 6)}</g><g stroke-width="5">${H.text(368, 462, 88, AMB_ZAHLWORT[z], 'middle', 5)}</g>`;
+  const sp = z <= 5 ? z : 5, zeilen = Math.ceil(z / sp), gs = z === 1 ? 1.25 : z <= 5 ? .74 : z <= 10 ? .64 : .46, dx = 134, dy = z <= 10 ? 190 : 108, y0 = z === 1 ? 700 : z <= 5 ? 700 : z <= 10 ? 620 : 585;
+  for (let i = 0; i < z; i++) { const row = Math.floor(i / sp), col = i % sp, nIn = Math.min(sp, z - row * sp), x = 368 + (col - (nIn - 1) / 2) * dx, y = y0 + row * dy; s += ambSetze(m, x, y, gs, false, i % 4); }
+  return { innen: s, titel: `Zähle und male: ${z} ${z === 1 ? ein : pl}` };
+}
+
+function ambMuster(nr, stufe) {
+  const r = ambRng(nr * 6151 + stufe), H = ambStift(1), art = nr % 2;
+  if (art === 0) {
+    const sp = stufe === 0 ? 3 : stufe === 1 ? 4 : 5, gr = Math.floor(660 / sp), x0 = 368 - gr * sp / 2, zl = Math.floor(900 / gr), y0 = 489 - gr * zl / 2, typen = r.misch(['dreieck', 'viertel', 'quadrat', 'kreuz', 'herz', 'stern', 'blume', 'raute', 'kreis']).slice(0, 4);
+    let s = '';
+    for (let j = 0; j < zl; j++) for (let i = 0; i < sp; i++) {
+      const t = typen[(Math.min(i, sp - 1 - i) + Math.min(j, zl - 1 - j)) % typen.length], x = x0 + i * gr, y = y0 + j * gr, c = gr / 2, mx = x + c, my = y + c;
+      s += H.r(x, y, gr, gr);
+      if (t === 'dreieck') s += H.pg(`${x},${y} ${x + gr},${y} ${x},${y + gr}`) + H.pg(`${x + gr * .55},${y + gr} ${x + gr},${y + gr} ${x + gr},${y + gr * .55}`);
+      else if (t === 'viertel') s += H.p(`M${x} ${y} L${x + gr * .7} ${y} A${gr * .7} ${gr * .7} 0 0 1 ${x} ${y + gr * .7} Z`) + H.p(`M${x + gr} ${y + gr} L${x + gr * .3} ${y + gr} A${gr * .7} ${gr * .7} 0 0 1 ${x + gr} ${y + gr * .3} Z`);
+      else if (t === 'quadrat') s += H.r(x + gr * .18, y + gr * .18, gr * .64, gr * .64) + H.r(x + gr * .34, y + gr * .34, gr * .32, gr * .32);
+      else if (t === 'kreuz') s += H.r(x + gr * .38, y, gr * .24, gr) + H.r(x, y + gr * .38, gr, gr * .24) + H.c(mx, my, gr * .16);
+      else if (t === 'herz') s += ambSetze('herz', mx, my, gr / 230, false, 1);
+      else if (t === 'stern') s += H.stern(mx, my + gr * .03, gr * .42, gr * .18, 5) + H.c(mx, my + gr * .03, gr * .08);
+      else if (t === 'blume') s += [0, 1, 2, 3, 4, 5].map(k => H.g(mx, my, k * 60, H.e(0, -gr * .24, gr * .12, gr * .2))).join('') + H.c(mx, my, gr * .12);
+      else if (t === 'raute') s += H.pg(`${mx},${y + gr * .08} ${x + gr * .92},${my} ${mx},${y + gr * .92} ${x + gr * .08},${my}`) + H.pg(`${mx},${y + gr * .3} ${x + gr * .7},${my} ${mx},${y + gr * .7} ${x + gr * .3},${my}`);
+      else s += H.c(mx, my, gr * .4) + H.c(mx, my, gr * .24);
+    }
+    return { innen: s, titel: 'Muster-Teppich' };
+  }
+
+  const formen = [['herz', 'Muster-Herz'], ['stern', 'Muster-Stern'], ['fisch', 'Muster-Fisch'], ['schmetterling', 'Muster-Schmetterling'], ['osterei', 'Muster-Ei']], [fm, titel] = formen[Math.floor(nr / 2) % formen.length];
+  const umriss = { herz: '<path d="M368 860 C200 720 70 600 70 420 C70 260 220 190 300 220 C340 236 360 270 368 300 C376 270 396 236 436 220 C516 190 666 260 666 420 C666 600 536 720 368 860 Z"/>',
+    stern: '<polygon points="368,120 456,370 712,370 506,520 584,780 368,620 152,780 230,520 24,370 280,370"/>', fisch: '<path d="M40 489 Q200 220 520 420 L700 260 L660 489 L700 718 L520 558 Q200 758 40 489 Z"/>',
+    schmetterling: '<path d="M368 300 C300 120 60 120 80 320 C96 430 250 460 340 470 C240 520 110 600 170 760 C230 880 340 720 368 600 C396 720 506 880 566 760 C626 600 496 520 396 470 C486 460 640 430 656 320 C676 120 436 120 368 300 Z"/>',
+    osterei: '<path d="M368 110 C530 110 640 400 630 560 C620 760 500 880 368 880 C236 880 116 760 106 560 C96 400 206 110 368 110 Z"/>' }[fm];
+  const baende = stufe === 0 ? 5 : stufe === 1 ? 8 : 11, hoehe = 780 / baende; let innen = '';
+  for (let b = 0; b < baende; b++) {
+    const y = 100 + b * hoehe, typ = r.pick(['welle', 'zack', 'punkte', 'dreiecke', 'leer', 'bogen']), a = hoehe * .22;
+    innen += H.p(`M0 ${y} ` + Array.from({ length: 13 }, (_, k) => `Q${k * 62 + 31} ${y + (k % 2 ? a : -a)} ${(k + 1) * 62} ${y}`).join(' ') + ` L${AMB_W} ${y + hoehe} L0 ${y + hoehe} Z`);
+    if (typ === 'punkte') for (let k = 0; k < 12; k++) innen += H.c(30 + k * 62, y + hoehe * .55, hoehe * .16);
+    else if (typ === 'dreiecke') for (let k = 0; k < 12; k++) innen += H.pg(`${k * 62},${y + hoehe} ${k * 62 + 31},${y + hoehe * .45} ${k * 62 + 62},${y + hoehe}`);
+    else if (typ === 'zack') innen += H.l(`M0 ${y + hoehe * .6} ` + Array.from({ length: 24 }, (_, k) => `L${(k + 1) * 31} ${y + hoehe * (k % 2 ? .6 : .85)}`).join(' '));
+    else if (typ === 'bogen') for (let k = 0; k < 12; k++) innen += H.p(`M${k * 62} ${y + hoehe} A31 ${hoehe * .45} 0 0 1 ${k * 62 + 62} ${y + hoehe} Z`);
+  }
+  return { innen: H.clip(umriss, innen), titel };
+}
+
+const AMB_TITEL_KAT = { mandala: ['Mandala', 'Blüten-Mandala', 'Stern-Mandala', 'Zauber-Mandala'] };
+function ambSeite(katId, nr, stufe = 1) {
+  const K = ambKat(katId); let b;
+  if (K.spezial === 'mandala') { const M = ambMandala(nr, stufe, false); b = { innen: M.innen, titel: AMB_TITEL_KAT.mandala[nr % 4] + ` Nr. ${nr + 1}` }; }
+  else if (K.spezial === 'rechnen') b = ambRechnen(nr, stufe);
+  else if (K.spezial === 'abc') b = ambAbc(nr);
+  else if (K.spezial === 'zahlen') b = ambZahlen(nr);
+  else if (K.spezial === 'muster') b = ambMuster(nr, stufe);
+  else b = ambBild(K, nr, stufe);
+  const cid = 'ambr' + (++AMB_UID), rahmen = `<rect x="${AMB_X0}" y="${AMB_Y0}" width="${AMB_X1 - AMB_X0}" height="${AMB_Y1 - AMB_Y0}" rx="26"/>`;
+  const schrift = 'fill="#000" stroke="none" font-family="ui-rounded, system-ui, sans-serif"';
+  const fuss = b.fuss ? `<text x="34" y="1000" font-size="26" font-weight="800" ${schrift}>${esc(b.titel)}</text>` + b.fuss : `<text x="34" y="1014" font-size="${b.titel.length > 38 ? 26 : 32}" font-weight="800" ${schrift}>${esc(b.titel)}</text>`
+    + `<text x="706" y="1060" font-size="21" text-anchor="end" ${schrift}>Name: ________________</text>`;
+  const svg = `<svg class="amb-svg" viewBox="0 0 ${AMB_W} ${AMB_H}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${esc(b.titel)}"><rect x="0" y="0" width="${AMB_W}" height="${AMB_H}" fill="#fff" stroke="none" data-blatt="1"/>`
+    + `<g fill="#fff" stroke="#000" stroke-width="5.4" stroke-linejoin="round" stroke-linecap="round"><clipPath id="${cid}">${rahmen}</clipPath>${rahmen}<g clip-path="url(#${cid})">${b.innen}</g>${rahmen.replace('/>', ' fill="none" stroke-width="7"/>')}</g>${fuss}</svg>`;
+  return { svg, titel: b.titel, loes: b.loes };
+}
+
+/*@@src malbuch460c.js@@*/
+
+
+
+
+
+
+
+const AMB_PRO_SEITE = 12, AMB_MAX_DRUCK = 10;
+const AMB_PALETTE = [['#ff6b6b', 'Rot'], ['#ff922b', 'Orange'], ['#ffd43b', 'Gelb'], ['#fff3a0', 'Hellgelb'], ['#94d82d', 'Hellgrün'], ['#2f9e44', 'Grün'], ['#20c997', 'Türkis'], ['#74c0fc', 'Hellblau'], ['#1c7ed6', 'Blau'],
+  ['#7950f2', 'Lila'], ['#d0bfff', 'Flieder'], ['#f783ac', 'Rosa'], ['#e64980', 'Pink'], ['#a0522d', 'Braun'], ['#e0b080', 'Hellbraun'], ['#ffd8b8', 'Hautfarbe'], ['#adb5bd', 'Grau'], ['#343a40', 'Schwarz'], ['#ffffff', 'Weiß']];
+let AMB_WAHL = [], AMB_MAL = null;
+function ambS() {
+  if (!isObj(S.amb)) S.amb = {}; const a = S.amb;
+  if (!AMB_KAT.some(k => k.id === a.kat)) a.kat = 'tiere';
+  if (![0, 1, 2].includes(a.stufe)) a.stufe = 1;
+  if (!isObj(a.ab)) a.ab = {};
+  return a;
+}
+function ambWorldBtn(w) {
+  if (w !== 'kunst') return '';
+  return `<button class="card ka-entry amb-went" data-act="ambopen" data-world="kunst"><span class="ka-ei" aria-hidden="true">🖍️</span>
+    <span class="ka-et"><b>Ausmalbilder</b><span>Tiere, Fußball, Lumi, Mandalas, ABC und vieles mehr. Zum Ausdrucken oder gleich am iPad ausmalen.</span></span><span class="go" aria-hidden="true">›</span></button>`;
+}
+const ambIstGewaehlt = (k, n, s) => AMB_WAHL.some(w => w.k === k && w.n === n && w.s === s);
+function showMalbuch() {
+  stopTimers(); G = null; AMB_MAL = null; const a = ambS(), K = ambKat(a.kat), ab = a.ab[a.kat] || 0;
+  const karten = Array.from({ length: AMB_PRO_SEITE }, (_, i) => ab + i).map(n => { let P; try { P = ambSeite(a.kat, n, a.stufe); } catch (e) { return ''; } const sel = ambIstGewaehlt(a.kat, n, a.stufe);
+    return `<div class="amb-karte${sel ? ' sel' : ''}" data-n="${n}"><button class="amb-bild" data-act="ambwahl" data-n="${n}" aria-pressed="${sel}" aria-label="${esc(P.titel)}: zum Drucken auswählen">${P.svg}<span class="amb-haken" aria-hidden="true">✓</span></button>
+      <div class="amb-unter"><span class="amb-ti">${esc(P.titel)}</span><button class="btn ghost sm" data-act="ambmalen" data-n="${n}" aria-label="${esc(P.titel)} am iPad ausmalen">🎨 Ausmalen</button></div></div>`; }).join('');
+  const hinweis = K.spezial === 'rechnen' ? `<p class="amb-hin">Rechne jede Aufgabe. Alle Felder mit demselben Ergebnis bekommen dieselbe Farbe. Die Aufgaben passen zu Klasse ${klasse()}.</p>`
+    : K.spezial === 'zahlen' ? '<p class="amb-hin">Zähle die Bilder, male die Zahl und das Zahlwort aus.</p>' : K.spezial === 'abc' ? '<p class="amb-hin">Buchstaben groß und klein, dazu ein Bild, das so anfängt.</p>' : '';
+  setView(`<header class="pagehead"><div class="wrap">${backBtn('ambback')}<div><h1>🖍️ Ausmalbilder</h1><p>Zum Ausdrucken oder gleich am iPad ausmalen</p></div></div></header>
+    <main class="wrap amb-page">
+      <div class="amb-kats" role="tablist" aria-label="Bereiche">${AMB_KAT.map(k => `<button class="amb-kb${k.id === a.kat ? ' on' : ''}" role="tab" aria-selected="${k.id === a.kat}" data-act="ambkat" data-k="${k.id}"><span aria-hidden="true">${k.i}</span> ${esc(k.t)}</button>`).join('')}</div>
+      <div class="amb-leiste"><div class="amb-stufen" role="group" aria-label="Wie viele Einzelheiten?">${['Einfach', 'Normal', 'Viele Details'].map((t, i) => `<button class="amb-sb${a.stufe === i ? ' on' : ''}" data-act="ambstufe" data-s="${i}" aria-pressed="${a.stufe === i}">${t}</button>`).join('')}</div>
+        <span class="amb-nr">Bilder ${ab + 1} bis ${ab + AMB_PRO_SEITE}</span>${ab ? '<button class="btn ghost sm" data-act="ambzurueck">‹ Zurück</button>' : ''}<button class="btn ghost sm" data-act="ambmehr">Weitere Bilder ›</button><button class="btn ghost sm" data-act="ambzufall">🎲 Überraschungsbild drucken</button></div>
+      ${hinweis}<p class="amb-hin">Tippe auf Bilder, die du drucken möchtest (bis zu ${AMB_MAX_DRUCK} auf einmal). Mit 🎨 malst du ein Bild gleich hier aus.</p>
+      <div class="amb-grid">${karten}</div>
+      <div class="amb-druck" role="region" aria-label="Drucken"><span id="ambZahl">${ambZahlText()}</span>
+        <button class="btn" data-act="ambdruck" id="ambDruckBtn"${AMB_WAHL.length ? '' : ' disabled'}>🖨️ Drucken</button><button class="btn ghost sm" data-act="ambleer"${AMB_WAHL.length ? '' : ' disabled'} id="ambLeerBtn" aria-label="Auswahl löschen">✕</button></div>
+      <p class="muted amb-fuss">Auf dem iPad öffnet sich das Druckmenü. Dort kannst du drucken oder mit dem Teilen-Knopf als PDF sichern. Jedes Bild kommt auf eine eigene DIN-A4-Seite.</p>
+    </main>`, 'kunst');
+}
+const ambZahlText = () => AMB_WAHL.length ? `${plural(AMB_WAHL.length, 'Bild', 'Bilder')} ausgewählt` : 'Noch kein Bild ausgewählt';
+function ambLeisteAktuell() {
+  const z = document.getElementById('ambZahl'); if (z) z.textContent = ambZahlText();
+  const d = document.getElementById('ambDruckBtn'), l = document.getElementById('ambLeerBtn'); if (d) d.disabled = !AMB_WAHL.length; if (l) l.disabled = !AMB_WAHL.length;
+}
+function ambDrucken(liste) {
+  const html = liste.map(w => `<section class="ub-blatt amb-blatt">${ambSeite(w.k, w.n, w.s).svg}</section>`).join('');
+  const a = ambS(); a.gedruckt = (a.gedruckt || 0) + liste.length; save();
+  ubDruckRoh(html);
+}
+
+function showAmbMalen(k, n, s) {
+  stopTimers(); G = null; const P = ambSeite(k, n, s);
+  AMB_MAL = { k, n, s, farbe: AMB_MAL && AMB_MAL.farbe || '#ffd43b', rueck: [], dirty: false };
+  setView(`<div class="atl amb-mal" data-tool="ausmalen"><div class="atl-top"><button class="icon-btn" data-act="ambmalback" aria-label="Zurück">‹</button><b>${esc(P.titel)}</b>
+      <span class="atl-acts"><button class="btn ghost sm" data-act="ambundo" aria-label="Rückgängig">↶</button><button class="btn ghost sm" data-act="ambmaldruck" aria-label="So drucken">🖨️</button><button class="btn sm" data-act="ambmalsave">💾 In die Galerie</button></span></div>
+    <div class="atl-main"><div class="atl-stage amb-stage" id="ambStage">${P.svg}</div>
+      <div class="atl-tools"><div class="at-sec"><small>Farbe wählen, dann eine Fläche antippen</small><div class="at-pal amb-pal">${AMB_PALETTE.map(([c, nm]) => `<button class="at-col${c === AMB_MAL.farbe ? ' sel' : ''}" data-act="ambfarbe" data-c="${c}" style="--c:${c}" aria-label="${nm}"></button>`).join('')}</div></div>
+        <div class="at-sec"><button class="btn ghost sm" data-act="ambweiss">🧽 Alles wieder weiß</button></div></div></div></div>`, 'kunst');
+  const st = document.getElementById('ambStage'), svg = st && st.querySelector('svg'); if (!svg) return;
+  svg.addEventListener('pointerdown', e => {
+    const el = e.target; if (!el || !el.closest || el === svg || el.closest('clipPath')) return;
+    const tag = el.tagName.toLowerCase(); if (!['path', 'circle', 'ellipse', 'rect', 'polygon', 'text'].includes(tag) || el.dataset.blatt) return;
+    const f = el.getAttribute('fill'); if (f === 'none' || f === '#000' || el.getAttribute('stroke') === 'none') return;
+    if (!el.closest('g[fill]') && !f) return;
+    e.preventDefault(); const neu = AMB_MAL.farbe, alt = el.getAttribute('fill'); if (alt === neu) return;
+    AMB_MAL.rueck.push([el, alt]); if (AMB_MAL.rueck.length > 300) AMB_MAL.rueck.shift(); el.setAttribute('fill', neu); AMB_MAL.dirty = neu !== '#ffffff' || AMB_MAL.dirty;
+    try { Sound.tap(); } catch (er) { }
+  });
+}
+function ambMalSvg() { const st = document.getElementById('ambStage'); return st && st.querySelector('svg'); }
+Object.assign(ACT, {
+  ambopen: () => showMalbuch(),
+  ambback: () => showWorld('kunst', true),
+  ambkat: t => { const a = ambS(); if (!AMB_KAT.some(k => k.id === t.dataset.k)) return; a.kat = t.dataset.k; save(); showMalbuch(); const g = document.querySelector('.amb-kb.on'); if (g && g.scrollIntoView) try { g.scrollIntoView({ block: 'nearest', inline: 'center' }); } catch (e) { } },
+  ambstufe: t => { const a = ambS(); a.stufe = Number(t.dataset.s) || 0; save(); showMalbuch(); },
+  ambmehr: () => { const a = ambS(); a.ab[a.kat] = (a.ab[a.kat] || 0) + AMB_PRO_SEITE; save(); showMalbuch(); window.scrollTo(0, 0); },
+  ambzurueck: () => { const a = ambS(); a.ab[a.kat] = Math.max(0, (a.ab[a.kat] || 0) - AMB_PRO_SEITE); save(); showMalbuch(); window.scrollTo(0, 0); },
+  ambwahl: t => {
+    const a = ambS(), n = Number(t.dataset.n), i = AMB_WAHL.findIndex(w => w.k === a.kat && w.n === n && w.s === a.stufe), karte = t.closest('.amb-karte');
+    if (i >= 0) AMB_WAHL.splice(i, 1); else { if (AMB_WAHL.length >= AMB_MAX_DRUCK) { toast(`Höchstens ${AMB_MAX_DRUCK} Bilder auf einmal. Drucke zuerst diese.`); return; } AMB_WAHL.push({ k: a.kat, n, s: a.stufe }); }
+    const an = i < 0; if (karte) karte.classList.toggle('sel', an); t.setAttribute('aria-pressed', String(an)); Sound.tap(); ambLeisteAktuell();
+  },
+  ambleer: () => { AMB_WAHL = []; document.querySelectorAll('.amb-karte.sel').forEach(k => { k.classList.remove('sel'); const b = k.querySelector('.amb-bild'); if (b) b.setAttribute('aria-pressed', 'false'); }); ambLeisteAktuell(); },
+  ambdruck: () => { if (!AMB_WAHL.length) return; ambDrucken(AMB_WAHL.slice()); },
+  ambzufall: () => { const a = ambS(); ambDrucken([{ k: a.kat, n: Math.floor(Math.random() * 500), s: a.stufe }]); },
+  ambmalen: t => { const a = ambS(); showAmbMalen(a.kat, Number(t.dataset.n), a.stufe); },
+  ambfarbe: t => { if (!AMB_MAL) return; AMB_MAL.farbe = t.dataset.c; document.querySelectorAll('.amb-pal .at-col').forEach(b => b.classList.toggle('sel', b.dataset.c === AMB_MAL.farbe)); Sound.tap(); },
+  ambundo: () => { if (!AMB_MAL || !AMB_MAL.rueck.length) return; const [el, alt] = AMB_MAL.rueck.pop(); if (alt === null) el.removeAttribute('fill'); else el.setAttribute('fill', alt); },
+  ambweiss: () => { const svg = ambMalSvg(); if (!svg || !AMB_MAL) return; svg.querySelectorAll('[fill]').forEach(el => { const f = el.getAttribute('fill'); if (f !== 'none' && f !== '#000' && f !== '#fff' && !el.dataset.blatt && !el.matches('g')) { AMB_MAL.rueck.push([el, f]); el.setAttribute('fill', '#ffffff'); } }); AMB_MAL.dirty = false; },
+  ambmaldruck: () => { const svg = ambMalSvg(); if (!svg) return; ubDruckRoh(`<section class="ub-blatt amb-blatt">${svg.outerHTML}</section>`); },
+  ambmalsave: () => { const svg = ambMalSvg(); if (!svg) return; svgExport(svg, 552, 810, url => { if (url && galAdd(url, 'ausmalen')) { if (AMB_MAL) AMB_MAL.dirty = false; } else if (!url) toast('Das Speichern hat nicht geklappt.'); }); },
+  ambmalback: () => {
+    if (AMB_MAL && AMB_MAL.dirty) { overlay(`${mascot('wow')}<h2>Bild aufhängen?</h2><p class="muted">Soll dein Bild in die Galerie, bevor du gehst?</p>
+      <div class="acts"><button class="btn" data-act="ambsaveback">💾 Speichern</button><button class="btn ghost" data-act="ambleave">Nicht speichern</button><button class="btn ghost" data-act="closeov">Weitermalen</button></div>`); return; }
+    showMalbuch();
+  },
+  ambsaveback: () => { closeOverlay(); const svg = ambMalSvg(); if (!svg) return showMalbuch(); svgExport(svg, 552, 810, url => { if (url) galAdd(url, 'ausmalen', false, null); showMalbuch(); }); },
+  ambleave: () => { closeOverlay(); if (AMB_MAL) AMB_MAL.dirty = false; showMalbuch(); }
+});
 
 /*@@src belohnung311.js@@*/
 
