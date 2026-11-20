@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-s1gm7IBhxLPIEDE34baO20aBtnz4xtr3eLYgNazjdIE=' 'sha256-WyvhA0h2bbVlKgB3vHBvLbbUtCihSAFtwhnLo+Lpev8=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-9t7RlVpNpu7m+WMaSeL1m8CmXc6Ycxq+CPsurEZZ/GA=' 'sha256-/Js0AGHJhnDHOiLaAW7gHM+NqarndtrC9mYQcKYXLbk=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -10518,8 +10518,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '4.1.0';
-  var MAP = {"probe":0,"files":[[10508,"fehler_kern.js"],[10796,null],[10798,"data.js"],[11513,"data_more.js"],[11885,"data_su2.js"],[12112,"data_es.js"],[12480,"data_wissen.js"],[12681,"data_v21.js"],[13366,"data_v24.js"],[13854,"data_v25.js"],[14343,"data_v26.js"],[14442,"data_v29.js"],[14750,"data_v30.js"],[15084,"data_v31.js"],[15390,"data_kunst.js"],[15587,"data_v214.js"],[15690,"data_v216.js"],[15983,"schrift.js"],[16287,"eingabe.js"],[16498,"data_k34m.js"],[17016,"data_k34d.js"],[17370,"data_k34s.js"],[17824,"data_v224.js"],[18697,"data_v225w.js"],[19066,"data_v225k.js"],[19510,"data_herz.js"],[19864,"data_fb226.js"],[20007,"data_tf226.js"],[20214,"data_v227a.js"],[21314,"data_v227b.js"],[22268,"data_h28b.js"],[22308,"data_l28a.js"],[23174,"data_l28b.js"],[24354,"data_schaetz.js"],[24836,"data_party8.js"],[24886,"data_alce.js"],[25557,"data_alce2.js"],[25806,"data_alce3.js"],[26221,"registry.js"],[26735,"app.js"],[27992,"fun.js"],[28580,"fun2.js"],[28896,"atelier.js"],[29270,"kunst225.js"],[29460,"herz.js"],[29824,"reise.js"],[30126,"iglu.js"],[30292,"offline.js"],[30399,"party.js"],[30883,"meine.js"],[31239,"loeffel.js"],[31410,"trend.js"],[31952,"fun228a.js"],[32813,"fun228b.js"],[33490,"kueche.js"],[34529,"stimme.js"],[34584,"klassen.js"],[34733,"freunde_vorab.js"],[34754,"mut.js"],[35176,"schule.js"],[35665,"fussball226.js"],[35987,"schaetzen.js"],[36418,"party8.js"],[37037,"tiere.js"],[37496,"fussball232.js"],[37711,"party8b.js"],[38013,"weg.js"],[38234,"px.js"],[38654,"px_fein.js"],[38708,"px_data.js"],[38965,"pxwelt.js"],[39049,"px_abenteuer.js"],[39878,"px_abenteuer2.js"],[40632,"px_abenteuer3.js"],[41023,"px_abenteuer4.js"],[41233,"px_baukasten.js"],[41342,"px_abenteuer_fein.js"],[41559,"px_abenteuer_fein2.js"],[41911,"px_abenteuer5.js"],[42318,"px_abenteuer6.js"],[42594,"px_abenteuer7.js"],[42950,"px_level300.js"],[43501,"px_schwach300.js"],[43575,"px_zwei300.js"],[43689,"lumicheckt300.js"],[43882,"schreiben300.js"],[44096,"rechenkarte300.js"],[44216,"lerncheck300.js"],[44439,"material300.js"],[44769,"lernweg300.js"],[45293,"px_ski.js"],[45935,"px_wurf.js"],[46464,"px_insel.js"],[47665,"px_kicker.js"],[48600,"px_eis.js"],[49586,"px_run.js"],[50801,"px_brk.js"],[51763,"px_pol.js"],[53114,"px_frog.js"],[54374,"px_angel.js"],[55689,"px_golf.js"],[56723,"px_tauch.js"],[57988,"px_hockey.js"],[58944,"px_lab.js"],[60279,"px_plopp.js"],[61485,"px_stadion.js"],[62996,"px_stadion2.js"],[63048,"px_training.js"],[63417,"cm.js"],[63907,"cmwelt.js"],[63963,"cm_baeck.js"],[64756,"cm_bahn.js"],[65520,"cm_detek.js"],[66237,"cm_markt.js"],[66950,"ff.js"],[67107,"ff_mathe.js"],[69097,"ff_deutsch.js"],[70685,"ff_sach_a.js"],[72934,"ff_sach_b.js"],[75163,"ff_sprachen.js"],[77571,"zm.js"],[78484,"tt.js"],[78697,"data_tagebuch.js"],[78740,"data_hoerspiel.js"],[78899,"leseecke.js"],[79226,"kt.js"],[79529,"comicbuch.js"],[79807,"alce.js"],[79970,"alce_aufg.js"],[80161,"formen.js"],[80612,"data_formen.js"],[80853,"data_formen2.js"],[81075,"spielzeit.js"],[81297,"data_faktmeinung.js"],[81416,"data_es248.js"],[81680,"data_en249.js"],[81919,"data_wissen249.js"],[82350,"data_kunst249.js"],[82633,"data_fussball250.js"],[82757,"data_werte252.js"],[83010,"data_lesen252.js"],[83071,"data_k34_252.js"],[83157,"art254.js"],[83275,"data_werte255.js"],[83413,"data_lesen255.js"],[83549,"forscher255.js"],[83697,"zufall250.js"],[83743,"stufe259.js"],[83753,"advent.js"],[84016,"wdh.js"],[84114,"eswarm288.js"],[84165,"abwechslung294.js"],[84240,"bilder293a.js"],[84330,"bilder293b.js"],[84460,"bilder293c.js"],[84558,"bilder293d.js"],[84680,"bilder293e.js"],[84844,"bilder293f.js"],[84924,"bilder292.js"],[85370,"denk.js"],[85407,"data_viaje265.js"],[85550,"klassenarbeit.js"],[85683,"quizduell.js"],[85806,"neu267.js"],[86071,"prog.js"],[86176,"lernstand.js"],[86243,"blatt.js"],[86345,"uebung295.js"],[86666,"schuh296.js"],[86874,"uebung297.js"],[87261,"minus298.js"],[87502,"schrift299.js"],[87630,"data_es271.js"],[87744,"plus269.js"],[87838,"schach.js"],[88070,"schachtaktik.js"],[88322,"fun270.js"],[88485,"data_neu274.js"],[88694,"plus272.js"],[88748,"spiele274.js"],[88871,"kasten.js"],[88975,"erklaer.js"],[89088,"apa.js"],[89169,"neu276.js"],[89310,"spiele276.js"],[89360,"neu277.js"],[89538,"spiele277.js"],[89793,"lernen278.js"],[90053,"spiele278.js"],[90396,"lernen279.js"],[90721,"lernen279b.js"],[91119,"spanisch280.js"],[91411,"spanisch283.js"],[91644,"mehr281.js"],[91790,"grafik280.js"],[92169,"tiefsee280.js"],[92447,"abenteuer280.js"],[92659,"abenteuer281.js"],[92771,"design281.js"],[92903,"party281.js"],[93034,"grafik281.js"],[93251,"traumtor292.js"],[93458,"kart293.js"],[93735,"lumi_live.js"],[93851,"sicher.js"],[94035,"stil.js"],[94089,"zurueck287.js"],[94132,"nfbilder300.js"],[94295,"formen300.js"],[94902,"musik300.js"],[95073,"lernweg300b.js"],[95196,"lernweg300c.js"],[95356,"espanol300.js"],[95462,"fabel310_bild.js"],[95713,"fabel310.js"],[96104,"eisbude310.js"],[96330,"turbo310.js"],[96535,"sumo310.js"],[96670,"beifahrer310.js"],[96745,"dreier310.js"],[96861,"ring310.js"],[96970,"loch330.js"],[97320,"reise340.js"],[97390,"fisch340.js"],[97946,"rutsche340.js"],[98357,"knobel340.js"],[98595,"frucht350.js"],[98900,"vulkan350.js"],[99143,"delfin350.js"],[99338,"musik350.js"],[99508,"arcade360.js"],[99624,"strasse360.js"],[99920,"blasen360.js"],[100128,"meer360.js"],[100297,"spirale360.js"],[100461,"sterne360.js"],[100668,"alt360a.js"],[100938,"alt360b.js"],[101131,"alt360c.js"],[101385,"alt360d.js"],[101548,"alt370a.js"],[101745,"alt370b.js"],[101949,"alt370c.js"],[102087,"gl390.js"],[102324,"lauf390.js"],[102833,"ab3_level.js"],[103178,"abenteuer400.js"],[103672,"figuren410.js"],[103763,"kart410.js"],[104084,"show410.js"],[104399,"ball410.js"],[104712,"belohnung311.js"],[104873,"druck311.js"],[104967,"freunde.js"],[105104,"start.js"],[105114,null],[105124,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '4.2.0';
+  var MAP = {"probe":0,"files":[[10508,"fehler_kern.js"],[10796,null],[10798,"data.js"],[11513,"data_more.js"],[11885,"data_su2.js"],[12112,"data_es.js"],[12480,"data_wissen.js"],[12681,"data_v21.js"],[13366,"data_v24.js"],[13854,"data_v25.js"],[14343,"data_v26.js"],[14442,"data_v29.js"],[14750,"data_v30.js"],[15084,"data_v31.js"],[15390,"data_kunst.js"],[15587,"data_v214.js"],[15690,"data_v216.js"],[15983,"schrift.js"],[16287,"eingabe.js"],[16498,"data_k34m.js"],[17016,"data_k34d.js"],[17370,"data_k34s.js"],[17824,"data_v224.js"],[18697,"data_v225w.js"],[19066,"data_v225k.js"],[19510,"data_herz.js"],[19864,"data_fb226.js"],[20007,"data_tf226.js"],[20214,"data_v227a.js"],[21314,"data_v227b.js"],[22268,"data_h28b.js"],[22308,"data_l28a.js"],[23174,"data_l28b.js"],[24354,"data_schaetz.js"],[24836,"data_party8.js"],[24886,"data_alce.js"],[25557,"data_alce2.js"],[25806,"data_alce3.js"],[26221,"registry.js"],[26735,"app.js"],[27993,"fun.js"],[28581,"fun2.js"],[28897,"atelier.js"],[29271,"kunst225.js"],[29461,"herz.js"],[29825,"reise.js"],[30127,"iglu.js"],[30293,"offline.js"],[30400,"party.js"],[30884,"meine.js"],[31240,"loeffel.js"],[31411,"trend.js"],[31953,"fun228a.js"],[32814,"fun228b.js"],[33491,"kueche.js"],[34530,"stimme.js"],[34585,"klassen.js"],[34734,"freunde_vorab.js"],[34755,"mut.js"],[35177,"schule.js"],[35666,"fussball226.js"],[35988,"schaetzen.js"],[36419,"party8.js"],[37038,"tiere.js"],[37497,"fussball232.js"],[37712,"party8b.js"],[38014,"weg.js"],[38235,"px.js"],[38655,"px_fein.js"],[38709,"px_data.js"],[38966,"pxwelt.js"],[39050,"px_abenteuer.js"],[39879,"px_abenteuer2.js"],[40633,"px_abenteuer3.js"],[41024,"px_abenteuer4.js"],[41234,"px_baukasten.js"],[41343,"px_abenteuer_fein.js"],[41560,"px_abenteuer_fein2.js"],[41912,"px_abenteuer5.js"],[42319,"px_abenteuer6.js"],[42595,"px_abenteuer7.js"],[42951,"px_level300.js"],[43502,"px_schwach300.js"],[43576,"px_zwei300.js"],[43690,"lumicheckt300.js"],[43883,"schreiben300.js"],[44097,"rechenkarte300.js"],[44217,"lerncheck300.js"],[44440,"material300.js"],[44770,"lernweg300.js"],[45294,"px_ski.js"],[45936,"px_wurf.js"],[46465,"px_insel.js"],[47666,"px_kicker.js"],[48601,"px_eis.js"],[49587,"px_run.js"],[50802,"px_brk.js"],[51764,"px_pol.js"],[53115,"px_frog.js"],[54375,"px_angel.js"],[55690,"px_golf.js"],[56724,"px_tauch.js"],[57989,"px_hockey.js"],[58945,"px_lab.js"],[60280,"px_plopp.js"],[61486,"px_stadion.js"],[62997,"px_stadion2.js"],[63049,"px_training.js"],[63418,"cm.js"],[63908,"cmwelt.js"],[63964,"cm_baeck.js"],[64757,"cm_bahn.js"],[65521,"cm_detek.js"],[66238,"cm_markt.js"],[66951,"ff.js"],[67108,"ff_mathe.js"],[69098,"ff_deutsch.js"],[70686,"ff_sach_a.js"],[72935,"ff_sach_b.js"],[75164,"ff_sprachen.js"],[77572,"zm.js"],[78485,"tt.js"],[78698,"data_tagebuch.js"],[78741,"data_hoerspiel.js"],[78900,"leseecke.js"],[79227,"kt.js"],[79530,"comicbuch.js"],[79808,"alce.js"],[79971,"alce_aufg.js"],[80162,"formen.js"],[80613,"data_formen.js"],[80854,"data_formen2.js"],[81076,"spielzeit.js"],[81298,"data_faktmeinung.js"],[81417,"data_es248.js"],[81681,"data_en249.js"],[81920,"data_wissen249.js"],[82351,"data_kunst249.js"],[82634,"data_fussball250.js"],[82758,"data_werte252.js"],[83011,"data_lesen252.js"],[83072,"data_k34_252.js"],[83158,"art254.js"],[83276,"data_werte255.js"],[83414,"data_lesen255.js"],[83550,"forscher255.js"],[83698,"zufall250.js"],[83744,"stufe259.js"],[83754,"advent.js"],[84017,"wdh.js"],[84115,"eswarm288.js"],[84166,"abwechslung294.js"],[84241,"bilder293a.js"],[84331,"bilder293b.js"],[84461,"bilder293c.js"],[84559,"bilder293d.js"],[84681,"bilder293e.js"],[84845,"bilder293f.js"],[84925,"bilder292.js"],[85371,"denk.js"],[85408,"data_viaje265.js"],[85551,"klassenarbeit.js"],[85684,"quizduell.js"],[85807,"neu267.js"],[86072,"prog.js"],[86177,"lernstand.js"],[86244,"blatt.js"],[86346,"uebung295.js"],[86667,"schuh296.js"],[86875,"uebung297.js"],[87262,"minus298.js"],[87503,"schrift299.js"],[87631,"data_es271.js"],[87745,"plus269.js"],[87839,"schach.js"],[88071,"schachtaktik.js"],[88323,"fun270.js"],[88486,"data_neu274.js"],[88695,"plus272.js"],[88749,"spiele274.js"],[88872,"kasten.js"],[88976,"erklaer.js"],[89089,"apa.js"],[89170,"neu276.js"],[89311,"spiele276.js"],[89361,"neu277.js"],[89539,"spiele277.js"],[89794,"lernen278.js"],[90054,"spiele278.js"],[90397,"lernen279.js"],[90722,"lernen279b.js"],[91120,"spanisch280.js"],[91412,"spanisch283.js"],[91645,"mehr281.js"],[91791,"grafik280.js"],[92170,"tiefsee280.js"],[92448,"abenteuer280.js"],[92660,"abenteuer281.js"],[92772,"design281.js"],[92904,"party281.js"],[93035,"grafik281.js"],[93252,"traumtor292.js"],[93459,"kart293.js"],[93736,"lumi_live.js"],[93852,"sicher.js"],[94036,"stil.js"],[94090,"zurueck287.js"],[94133,"nfbilder300.js"],[94296,"formen300.js"],[94903,"musik300.js"],[95074,"lernweg300b.js"],[95197,"lernweg300c.js"],[95357,"espanol300.js"],[95463,"fabel310_bild.js"],[95714,"fabel310.js"],[96105,"eisbude310.js"],[96331,"turbo310.js"],[96536,"sumo310.js"],[96671,"beifahrer310.js"],[96746,"dreier310.js"],[96862,"ring310.js"],[96971,"loch330.js"],[97321,"reise340.js"],[97391,"fisch340.js"],[97947,"rutsche340.js"],[98358,"knobel340.js"],[98596,"frucht350.js"],[98901,"vulkan350.js"],[99144,"delfin350.js"],[99339,"musik350.js"],[99509,"arcade360.js"],[99625,"strasse360.js"],[99921,"blasen360.js"],[100129,"meer360.js"],[100298,"spirale360.js"],[100462,"sterne360.js"],[100669,"alt360a.js"],[100939,"alt360b.js"],[101132,"alt360c.js"],[101386,"alt360d.js"],[101549,"alt370a.js"],[101746,"alt370b.js"],[101950,"alt370c.js"],[102088,"gl390.js"],[102327,"lauf390.js"],[102836,"ab3_level.js"],[103181,"abenteuer400.js"],[103675,"figuren410.js"],[103766,"kart410.js"],[104087,"show410.js"],[104402,"ball410.js"],[104715,"fussball420.js"],[105140,"farbe420.js"],[105421,"belohnung311.js"],[105582,"druck311.js"],[105676,"freunde.js"],[105813,"start.js"],[105823,null],[105833,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -26736,9 +26736,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '4.1.0';
+const APP_VERSION = '4.2.0';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "4.2.0", d: "20.11.2026", t: ["Fußball 3D mit Team Lumi: Pinguin-Mannschaften im Fußball-Käfig, Passen, Schießen, Torwart und Elfmeterschießen im Finale, 20 Spiele", "Farbklecks-Arena 3D: zwei Teams rollen Farbe auf den Boden, wer mehr Fläche bemalt, gewinnt, 20 Runden in vier Arenen"] },
   { v: "4.1.0", d: "20.11.2026", t: ["Kart-Grand-Prix 3D: Rennen gegen fünf Pinguine mit Driften, Extras und Turbo-Feldern, 20 Rennen auf vier Strecken", "Hindernis-Show 3D: Parcours-Rennen mit zwölf Läufern, Drehbalken, Türen, Pendeln und Hüpfpilzen, 20 Runden in vier Shows", "Auto-Fußball 3D: kleine Autos, riesiger Ball, Turbo und Salto-Schuss, 20 Spiele in vier Stadien"] },
   { v: "4.0.0", d: "19.11.2026", t: ["Lumis 3D-Abenteuer: das Hüpfspiel aus der Pixel-Welt in echtem 3D, 20 lange Level auf vier Inseln", "Rätsel-Tore, Fragekisten, Geheimgänge und drei versteckte Sterne in jedem Level"] },
   { v: "3.9.0", d: "19.11.2026", t: ["Lumi-Lauf 3D: das erste Spiel mit echter 3D-Grafik, 20 Level in Hafenstadt, Gletscherpass, Sonnenküste und Polarnacht", "Ausweichen, Springen, Bauchrutschen, Rampen, Schlittenzüge und vier Extras"] },
@@ -102249,6 +102250,8 @@ function g3Neu(host) {
   R.scheibe = null;
   R.mesh = daten => { const m = { daten, n: daten.length / 9, buf: null }; R.meshes.add(m); if (R.ok) lade(m); return m; };
   R.weg = m => { if (!m) return; R.meshes.delete(m); if (m.buf && R.ok) gl.deleteBuffer(m.buf); m.buf = null; };
+
+  R.auffrischen = m => { if (!m || !m.buf || !R.ok) return; gl.bindBuffer(gl.ARRAY_BUFFER, m.buf); gl.bufferSubData(gl.ARRAY_BUFFER, 0, m.daten); letzter = null; };
   R.groesse = (W, H) => { R.W = W; R.H = H; c.width = Math.max(2, Math.round(W * R.skala)); c.height = Math.max(2, Math.round(H * R.skala)); c.style.width = W + 'px'; c.style.height = H + 'px'; };
 
   R.messe = () => {
@@ -104709,6 +104712,712 @@ function afbSpiel(stage) {
 FUN_GAMES.autoball3d = { c: 'hits', t: 'Auto-Fußball 3D', seit: 'Auto-Fußball 3D', d: 'Kleine Autos schieben einen riesigen Ball ins Tor. Mit Turbo, Sprung und Salto-Schuss, in 4 Stadien mit 20 Spielen.', i: '⚽' };
 FUN_IMPL.autoball3d = afbSpiel;
 
+/*@@src fussball420.js@@*/
+
+
+
+
+
+
+
+
+
+const FUB_WELTEN = [
+  { n: 'Rasen-Cup', i: '⚽', farbe: '#3a9a4a', art: 'rasen' },
+  { n: 'Strand-Cup', i: '🏖️', farbe: '#e0a12f', art: 'strand' },
+  { n: 'Schnee-Pokal', i: '❄️', farbe: '#2f9bd8', art: 'schnee' },
+  { n: 'Sternen-Liga', i: '✨', farbe: '#7a4fd6', art: 'sterne' }
+];
+const FUB_GEGNER = [
+  [['Möwen-Kicker', '#e8463a'], ['Krabben-Team', '#ff9b26'], ['Frosch-Elf', '#5cc85c'], ['Seestern-Club', '#ff8ad8'], ['Wal-Kicker', '#a46bff']],
+  [['Muschel-Elf', '#ff9b26'], ['Delfin-Team', '#2fb3a6'], ['Pelikan-Kicker', '#ffd23f'], ['Schildkröten-Club', '#5cc85c'], ['Hai-Kicker', '#e8463a']],
+  [['Eisbären-Elf', '#e94f6a'], ['Schneehasen', '#a46bff'], ['Walross-Team', '#ff9b26'], ['Polarfuchs-Club', '#e8463a'], ['Eulen-Kicker', '#5cc85c']],
+  [['Kometen-Elf', '#ff8ad8'], ['Mond-Kicker', '#ffd23f'], ['Raketen-Team', '#e8463a'], ['Planeten-Club', '#2fb3a6'], ['Sternschnuppen-Elf', '#ff9b26']]
+];
+const FUB_ST = {
+  rasen: { oben: '#3f8fe8', horizont: '#d8eefc', unten: '#e6f3fb', sonne: luN(.4, .55, -1), sonneSicht: '#fff4c8', sonneR: .07, licht: luN(.35, .8, .5), lichtFarbe: '#d8d0bc', himmel: '#a4c4dc', grund: '#5a6a4a', nebel: [90, 420] },
+  strand: KGP_ST.strand, schnee: KGP_ST.eis, sterne: KGP_ST.sterne
+};
+const FUB_PAL = {
+  rasen: { f1: '#4caa52', f2: '#57b65c', linie: '#ffffff', bande: '#2f6fb0', rand: '#3f8a46', tri: '#e6edf5', ball: ['#ffffff', '#2b2f3a'] },
+  strand: { f1: '#ecd08c', f2: '#f2d99a', linie: '#ffffff', bande: '#e0a12f', rand: '#f2dca0', tri: '#fff0c4', ball: ['#ffffff', '#2b2f3a'] },
+  schnee: { f1: '#eef5fb', f2: '#e2edf6', linie: '#3f8fe0', bande: '#2f6fb0', rand: '#f4f8fc', tri: '#e6edf5', ball: ['#ff9b26', '#2b2f3a'] },
+  sterne: { f1: '#2a6a44', f2: '#2f754b', linie: '#ffffff', bande: '#7a4fd6', rand: '#1a2050', tri: '#2a3070', ball: ['#ffffff', '#2b2f3a'] }
+};
+const FUB_X = 24, FUB_Z = 15, FUB_C = 36, FUB_TOR = 3.5, FUB_TORH = 2.4, FUB_R = .34;
+const FUB_FORM = { 2: [[-.35, -5], [.3, 4]], 3: [[-.5, 0], [.1, -6.5], [.3, 4]], 4: [[-.55, -5], [-.5, 5], [.12, -6.5], [.3, 3]] };
+function fubLevel(w, l) {
+  const g = FUB_GEGNER[w][l];
+  return { art: FUB_WELTEN[w].art, st: w * 5 + l, w, l, n: [3, 4, 5, 5][w], gegner: g[0], farbe: g[1], name: (l === 4 ? 'Finale gegen ' : 'Gegen ') + (g[0].endsWith('Team') ? 'das ' : g[0].endsWith('Club') ? 'den ' : 'die ') + g[0], zeit: [100, 120, 140, 150][w], botF: .62 + w * .07 + l * .025, tw: .3 + w * .09 + l * .03, hilfe: [.5, .4, .3, .25][w], finale: l === 4 };
+}
+function fubBallModell(hell, dunkel) {
+  const B = g3Bau(6), p = (1 + Math.sqrt(5)) / 2, V = [[0, 1, p], [0, -1, p], [0, 1, -p], [0, -1, -p], [1, p, 0], [-1, p, 0], [1, -p, 0], [-1, -p, 0], [p, 0, 1], [-p, 0, 1], [p, 0, -1], [-p, 0, -1]].map(v => { const l = Math.hypot(...v); return v.map(q => q / l); });
+  const h = G3.f(hell), d = G3.f(dunkel);
+  g3Kugel(2).forEach(([a, b, c]) => { const m = [a[0] + b[0] + c[0], a[1] + b[1] + c[1], a[2] + b[2] + c[2]], l = Math.hypot(...m); B.dr(a, b, c, V.some(v => (v[0] * m[0] + v[1] * m[1] + v[2] * m[2]) / l > .935) ? d : h, null, a, b, c); });
+  return B.fertig();
+}
+
+function fubSpiel(stage) {
+  const R = g3Neu(stage);
+  if (!R) { const d = document.createElement('div'); d.className = 'tb-box'; d.innerHTML = '<div class="tb-karte lr-karte lv-karte"><h2>🧊 Hier fehlt die 3D-Grafik</h2><p>Dieses Spiel braucht 3D-Grafik. Auf diesem Gerät klappt das leider nicht. Probier ein anderes Spiel!</p></div>'; stage.appendChild(d); return; }
+  const M = G3.neu(), M2 = G3.neu(), M3 = G3.neu(), X = FUB_X, Z = FUB_Z, T0 = FUB_TOR, TH = FUB_TORH, r = FUB_R;
+  const lu = luLumiModell(), mod = { lumi: { r: R.mesh(lu.rumpf), f: R.mesh(lu.fl), u: R.mesh(lu.fuss) },
+    ring: R.mesh((() => { const B = g3Bau(2); for (let i = 0; i < 28; i++) { const a0 = i / 28 * 6.2832, a1 = (i + 1) / 28 * 6.2832; B.q([Math.cos(a0) * .55, 0, Math.sin(a0) * .55], [Math.cos(a1) * .55, 0, Math.sin(a1) * .55], [Math.cos(a1) * .75, 0, Math.sin(a1) * .75], [Math.cos(a0) * .75, 0, Math.sin(a0) * .75], '#ffd23f', [0, -1, 0]); } return B.fertig(); })()),
+    pfeil: R.mesh((() => { const B = g3Bau(3); B.zyl(0, 0, 0, 0, .26, .4, 4, '#ffd23f', false, '#fff2a8'); return B.fertig(); })()),
+    ziel: R.mesh((() => { const B = g3Bau(4); for (let i = 0; i < 24; i++) { const a0 = i / 24 * 6.2832, a1 = (i + 1) / 24 * 6.2832; B.q([0, Math.cos(a0) * .4, Math.sin(a0) * .4], [0, Math.cos(a1) * .4, Math.sin(a1) * .4], [0, Math.cos(a1) * .55, Math.sin(a1) * .55], [0, Math.cos(a0) * .55, Math.sin(a0) * .55], '#ffd23f', [1, 0, 0]); } return B.fertig(); })()) };
+  let A = null, arena = null, figM = null, ballM = null, art = 'rasen';
+  const kam = { auge: [0, 14, 18], ziel: [0, 0, 0], fov: 50, nah: 1, fern: 600 };
+  const hatBall = () => A && A.besitz && A.besitz === A.ctrl;
+  const St = g3Steuer({ stick: true, knoepfe: K => { const rr = Math.max(34, Math.min(54, Math.min(K.W, K.H) * .085)), el = A && A.phase === 'elfer', mitB = hatBall();
+    return [{ id: 'schuss', x: K.W - rr - 22, y: K.H - rr - 22, r: rr, t: el ? 'Schuss' : mitB ? 'Schuss' : 'Holen', farbe: mitB || el ? '#ffe7a8' : '#ffffff', aus: el && !(A.elf && A.elf.dran === 0 && A.elf.schritt === 'ziel') },
+      { id: 'pass', x: K.W - rr - 22, y: K.H - rr * 3.3 - 22, r: rr * .9, t: mitB ? 'Pass' : 'Wechsel', aus: el }]; }, tasten: { ' ': 'schuss', x: 'pass', X: 'pass', Shift: 'pass' } });
+
+  function stadion(art) {
+    const P = FUB_PAL[art], B = g3Bau(21), G = g3Bau(22), N = g3Bau(23); let seed = 91; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+    B.zitter = .012; for (let i = 0; i < 12; i++) { const x0 = -X + i * 4; B.boden(x0, x0 + 4, -Z, Z, 0, i % 2 ? P.f1 : P.f2); }
+    B.zitter = 0; B.boden(-X - 40, X + 40, -Z - 40, -Z, -.01, P.rand); B.boden(-X - 40, X + 40, Z, Z + 40, -.01, P.rand); B.boden(-X - 40, -X, -Z, Z, -.01, P.rand); B.boden(X, X + 40, -Z, Z, -.01, P.rand);
+    const L = P.linie, y = .025, s = .1;
+    B.boden(-s, s, -Z, Z, y, L); B.scheibe(0, y + .004, 0, .25, 12, L);
+    for (let i = 0; i < 40; i++) { const a0 = i / 40 * 6.2832, a1 = (i + 1) / 40 * 6.2832, ri = 4.4, ra = 4.6; B.q([Math.cos(a0) * ri, y, Math.sin(a0) * ri], [Math.cos(a1) * ri, y, Math.sin(a1) * ri], [Math.cos(a1) * ra, y, Math.sin(a1) * ra], [Math.cos(a0) * ra, y, Math.sin(a0) * ra], L, [0, -5, 0]); }
+    [-1, 1].forEach(sd => { const x0 = sd * X, x1 = sd * (X - 7), x2 = sd * (X - 2.6), lo = Math.min(x0, x1), hi = Math.max(x0, x1), lo2 = Math.min(x0, x2), hi2 = Math.max(x0, x2);
+      B.boden(lo, hi, -9 - s, -9 + s, y, L); B.boden(lo, hi, 9 - s, 9 + s, y, L); B.boden(x1 - s, x1 + s, -9, 9, y, L);
+      B.boden(lo2, hi2, -5.5 - s, -5.5 + s, y, L); B.boden(lo2, hi2, 5.5 - s, 5.5 + s, y, L); B.boden(x2 - s, x2 + s, -5.5, 5.5, y, L);
+      B.scheibe(sd * (X - 5.5), y + .004, 0, .2, 10, L); B.boden(x0 - s, x0 + s, -Z, Z, y, L);
+      const c = sd < 0 ? '#3f8fe0' : '#ffffff';
+      [-T0, T0].forEach(z => B.zyl(x0, 0, z, .09, .09, TH, 8, '#ffffff', true)); B.kiste(x0, TH - .09, 0, .18, .18, 2 * T0 + .18, '#ffffff');
+      const xb = sd * (X + 1.8); [-T0, T0].forEach(z => { B.kiste(xb, 0, z, .08, TH * .8, .08, '#c9d2dc'); B.mit((x0 + xb) / 2, TH * .9, z, 0, 0, sd * -.2, 1, 1, 1, () => B.kiste(0, 0, 0, 1.9, .06, .06, '#c9d2dc')); });
+      const mi = [sd * (X + .9), 1, 0];
+      N.q([xb, 0, -T0], [xb, 0, T0], [xb, TH * .8, T0], [xb, TH * .8, -T0], '#ffffff', mi); N.q([x0, TH, -T0], [xb, TH * .8, -T0], [xb, TH * .8, T0], [x0, TH, T0], '#ffffff', mi);
+      [-T0, T0].forEach(z => N.q([x0, 0, z], [xb, 0, z], [xb, TH * .8, z], [x0, TH, z], '#ffffff', mi));
+      for (let k = 1; k < 10; k++) { const zz = -T0 + k * 2 * T0 / 10; G.kiste(xb, 0, zz, .03, TH * .8, .03, '#ffffff'); } for (let k = 1; k < 4; k++) G.kiste(xb, k * TH * .2, 0, .03, .03, 2 * T0, '#ffffff');
+      B.boden(Math.min(x0, xb), Math.max(x0, xb), -T0, T0, .005, G3.hell(P.f1, .92));
+      B.kiste(x0 + sd * .2, TH, 0, .1, .02, .1, c);
+    });
+
+    const C = FUB_C - X, D = FUB_C - Z;
+    const wand = (x0, z0, x1, z1, unten = true) => { const mi = [0, 1, 0], l = Math.hypot(x1 - x0, z1 - z0), ry = Math.atan2(-(z1 - z0), x1 - x0);
+      if (unten) { B.q([x0, 0, z0], [x1, 0, z1], [x1, 1, z1], [x0, 1, z0], P.bande, mi); B.mit((x0 + x1) / 2, 1, (z0 + z1) / 2, ry, 0, 0, 1, 1, 1, () => B.kiste(0, 0, 0, l + .12, .12, .3, '#ffffff')); }
+      N.q([x0, unten ? 1 : TH, z0], [x1, unten ? 1 : TH, z1], [x1, 4.5, z1], [x0, 4.5, z0], '#ffffff', mi);
+      B.mit((x0 + x1) / 2, 4.5, (z0 + z1) / 2, ry, 0, 0, 1, 1, 1, () => B.kiste(0, 0, 0, l + .1, .1, .1, '#c9d2dc')); };
+    wand(-D, -Z, D, -Z); wand(-D, Z, D, Z);
+    [-1, 1].forEach(sx => { wand(sx * X, -C, sx * X, -T0); wand(sx * X, T0, sx * X, C); wand(sx * X, -T0, sx * X, T0, false); [-1, 1].forEach(sz => wand(sx * D, sz * Z, sx * X, sz * C)); });
+    for (let x = -D; x <= D + .01; x += 4) [-1, 1].forEach(sz => B.zyl(x, 0, sz * Z, .07, .07, 4.5, 6, '#c9d2dc'));
+
+    [-1, 1].forEach(sz => { for (let k = 0; k < 4; k++) { const zz = sz * (Z + 3 + k * 2.2), yy = k * 1.1; B.kiste(0, -1, zz, 2 * X + 12, yy + 2.1, 2.2, P.tri, G3.hell(P.tri, 1.05)); for (let x = -X - 4; x <= X + 4; x += 1.4) if (rnd() < .8) fgFan(B, x + (rnd() - .5) * .4, yy + 1.1, zz + sz * .2, rnd() < .5 ? '#3f8fe0' : FG_FARBEN[Math.floor(rnd() * FG_FARBEN.length)], 1.1, rnd() < .4 ? (rnd() < .5 ? 1 : -1) : 0); } });
+    [-1, 1].forEach(sx => [-1, 1].forEach(sz => { const x = sx * (X + 9), z = sz * (Z + 11); B.zyl(x, -1, z, .4, .3, 19, 8, '#c9d2dc', true); B.mit(x, 18, z, Math.atan2(sx, sz), -.5, 0, 1, 1, 1, () => B.kiste(0, 0, 0, 4, 2.4, .4, '#5a6372')); G.mit(x, 18, z, Math.atan2(sx, sz), -.5, 0, 1, 1, 1, () => G.kiste(0, .25, -.22, 3.5, 1.9, .04, '#fffbe6')); }));
+    for (let q = 0; q < 40; q++) { const a = q / 40 * 6.2832 + rnd() * .1, rad = 70 + rnd() * 50, x = Math.cos(a) * rad, z = Math.sin(a) * rad;
+      if (art === 'rasen') { const sc = 2 + rnd() * 2; B.zyl(x, -.5, z, .4 * sc, .3 * sc, 2 * sc, 6, '#7a5a3a'); B.kugel(x, 2.6 * sc, z, 1.6 * sc, 1.8 * sc, 1.6 * sc, rnd() < .5 ? '#3f8a46' : '#4c9a50', 1, false); }
+      else kgpDeko(B, G, art === 'schnee' ? 'eis' : art, x, -.5, z, 2.5 + rnd() * 2.5, rnd); }
+    return { art, b: R.mesh(B.fertig()), g: R.mesh(G.fertig()), n: R.mesh(N.fertig()) };
+  }
+  function figuren(L) {
+    if (figM) figM.forEach(f => f && ['r', 'f', 'u'].forEach(k => R.weg(f[k])));
+    figM = [];
+    const mk = p => ({ r: R.mesh(p.rumpf), f: R.mesh(p.fl), u: R.mesh(p.fuss) });
+    const ext = ['kappe', '', 'schleife', 'muetze', ''];
+    for (let i = 0; i < 5; i++) figM.push(i === 0 ? mk(fgPinguin('#ffd23f', '#2b2f3a', 'kappe', '#ffffff')) : mk(fgPinguin('#2f6fd8', '#ffffff', ext[i], '#ffffff')));
+    for (let i = 0; i < 5; i++) figM.push(i === 0 ? mk(fgPinguin('#2b2f3a', L.farbe, 'kappe', '#ffffff')) : mk(fgPinguin(L.farbe, '#ffffff', ext[(i + 2) % 5], '#ffffff')));
+  }
+  function bauen(L) {
+    if (!arena || arena.art !== L.art) { if (arena) { R.weg(arena.b); R.weg(arena.g); R.weg(arena.n); } arena = stadion(L.art); if (ballM) R.weg(ballM); ballM = R.mesh(fubBallModell(...FUB_PAL[L.art].ball)); }
+    if (!A || A.L.farbe !== L.farbe || !figM) figuren(L);
+    art = L.art; const n = L.n, sp = [];
+    for (let t = 0; t < 2; t++) for (let i = 0; i < n; i++) sp.push({ t, i, kp: i === 0, slot: i - 1, lumi: t === 0 && i === n - 1, x: 0, z: 0, vx: 0, vz: 0, dir: t ? Math.PI : 0, anim: 0, kick: 0, dive: 0, diveZ: 0, stun: 0, cool: 0, dash: 0, denk: 0, halten: 0, speed: t === 0 ? 1 : L.botF * (.96 + i * .02), skill: t === 0 ? .8 : Math.min(.95, .4 + L.botF * .5), tw: t === 0 ? .5 + L.w * .05 : L.tw, tx: 0, tz: 0, jubel: 0 });
+    A = { L, t: 0, sp, ball: { x: 0, y: r, z: 0, vx: 0, vy: 0, vz: 0, rot: 0, ry: 0 }, besitz: null, ctrl: null, pass: null, tore: [0, 0], uhr: L.zeit, phase: 'anstoss', count: 3.2, teile: [], wechselT: 0, schuesse: [0, 0], treffer: 0, anstossT: 0 };
+    A.ctrl = sp.find(p => p.lumi);
+    anstoss(0);
+  }
+  function anstoss(team) {
+    const b = A.ball; Object.assign(b, { x: 0, y: r, z: 0, vx: 0, vy: 0, vz: 0 }); A.besitz = null; A.pass = null;
+    A.sp.forEach(p => { const T = p.t ? -1 : 1; if (p.kp) { p.x = -T * (X - .9); p.z = 0; } else { const f = FUB_FORM[A.L.n - 1][p.slot]; p.x = -T * Math.max(3, Math.abs(f[0] * X * .85) + 5); p.z = f[1]; } p.vx = p.vz = 0; p.dir = p.t ? Math.PI : 0; p.stun = p.cool = p.dash = p.kick = p.dive = 0; });
+    const kicker = A.sp.filter(p => p.t === team && !p.kp).sort((a, b) => Math.abs(b.slot) - Math.abs(a.slot)).find(p => team !== 0 || p.lumi) || A.sp.find(p => p.t === team && !p.kp);
+    kicker.x = (team ? 1 : -1) * .8; kicker.z = 0; A.besitz = kicker; A.anstossTeam = team;
+    if (team === 0) A.ctrl = kicker;
+  }
+  const clamp = (v, a, b) => Math.max(a, Math.min(b, v)), wrap = a => { while (a > Math.PI) a -= 6.2832; while (a < -Math.PI) a += 6.2832; return a; };
+  const funke = (x, y, z, n, f, st = 1, s = .07) => { for (let i = 0; i < n; i++) { const a = Math.random() * 6.28; A.teile.push({ x, y, z, vx: Math.cos(a) * 3 * st, vy: (1.5 + Math.random() * 3) * st, vz: Math.sin(a) * 3 * st, life: .5 + Math.random() * .4, max: .9, s0: s, f: f[i % f.length] }); } };
+  const team = t => A.sp.filter(p => p.t === t), gegnerVon = p => A.sp.filter(q => q.t !== p.t);
+
+  function laufe(p, dt, wx, wz, tempo = 1) {
+    const l = Math.hypot(wx, wz); if (l > 1) { wx /= l; wz /= l; }
+    const vmax = 6.4 * p.speed * tempo * (A.besitz === p ? .9 : 1) * (p.stun > 0 ? .25 : 1) * (p.dash > 0 ? 1.45 : 1), acc = (p.dash > 0 ? 60 : 30) * dt;
+    p.vx += clamp(wx * vmax - p.vx, -acc, acc); p.vz += clamp(wz * vmax - p.vz, -acc, acc);
+    p.x += p.vx * dt; p.z += p.vz * dt;
+    const sp = Math.hypot(p.vx, p.vz); if (sp > .4) p.dir += wrap(Math.atan2(p.vz, p.vx) - p.dir) * Math.min(1, dt * 12);
+    const rx = p.kp ? X - .25 : X - .4; p.x = clamp(p.x, -rx, rx); p.z = clamp(p.z, -Z + .4, Z - .4);
+    const ec = Math.abs(p.x) + Math.abs(p.z) - (FUB_C - .7); if (ec > 0) { p.x -= Math.sign(p.x) * ec / 2; p.z -= Math.sign(p.z) * ec / 2; }
+    p.anim += sp * dt * 2.6;
+  }
+
+  function ballFrei(dt) {
+    const b = A.ball; b.vy -= 18 * dt; b.x += b.vx * dt; b.y += b.vy * dt; b.z += b.vz * dt;
+    const zug = 1 - Math.min(1, .1 * dt); b.vx *= zug; b.vz *= zug;
+    if (b.y < r) { b.y = r; if (b.vy < -1.6) b.vy = -b.vy * .5; else b.vy = 0; const f = 1 - Math.min(1, 1.05 * dt); b.vx *= f; b.vz *= f; }
+    if (Math.abs(b.z) > Z - r) { b.z = Math.sign(b.z) * (Z - r); b.vz = -b.vz * .65; if (Math.abs(b.vz) > 3) bande(); }
+    const mund = Math.abs(b.z) < T0 - r * .5 && b.y < TH - r * .3;
+    if (!mund && Math.abs(b.x) > X - r && Math.abs(b.x) < X + .3) { b.x = Math.sign(b.x) * (X - r); b.vx = -b.vx * .65; if (Math.abs(b.vx) > 3) bande(); }
+    [-1, 1].forEach(sx => { [-1, 1].forEach(sz => { const dx = b.x - sx * X, dz = b.z - sz * T0, d = Math.hypot(dx, dz); if (d < r + .09 && d > 1e-3 && b.y < TH + r) { const nx = dx / d, nz = dz / d; b.x = sx * X + nx * (r + .09); b.z = sz * T0 + nz * (r + .09); const vn = b.vx * nx + b.vz * nz; if (vn < 0) { b.vx -= 1.7 * vn * nx; b.vz -= 1.7 * vn * nz; akGleit(900, 600, .12, 'triangle', .06); } } });
+      if (Math.abs(b.z) < T0 + .1) { const dx = b.x - sx * X, dy = b.y - TH, d = Math.hypot(dx, dy); if (d < r + .09 && d > 1e-3) { const nx = dx / d, ny = dy / d; b.x = sx * X + nx * (r + .09); b.y = TH + ny * (r + .09); const vn = b.vx * nx + b.vy * ny; if (vn < 0) { b.vx -= 1.7 * vn * nx; b.vy -= 1.7 * vn * ny; } } } });
+    const ec = Math.abs(b.x) + Math.abs(b.z) - (FUB_C - r * 1.41); if (ec > 0) { const nx = -Math.sign(b.x) / 1.414, nz = -Math.sign(b.z) / 1.414; b.x += nx * ec * .71; b.z += nz * ec * .71; const vn = b.vx * nx + b.vz * nz; if (vn < 0) { b.vx -= 1.65 * vn * nx; b.vz -= 1.65 * vn * nz; } }
+    if (Math.abs(b.x) > X - .1) { if (Math.abs(b.z) > T0 - r) { b.z = Math.sign(b.z) * (T0 - r); b.vz = -b.vz * .2; } if (Math.abs(b.x) > X + 1.8 - r) { b.x = Math.sign(b.x) * (X + 1.8 - r); b.vx = -b.vx * .15; } if (b.y > TH - r) { b.y = TH - r; b.vy = -Math.abs(b.vy) * .2; } }
+  }
+  const bande = () => { if (Math.random() < .5) akGleit(180, 110, .08, 'square', .03); };
+  function ballFolgt(p) {
+    const b = A.ball, ca = Math.cos(p.dir), sa = Math.sin(p.dir), sp = Math.hypot(p.vx, p.vz), off = .55 + Math.abs(Math.sin(p.anim * .5)) * sp * .025;
+    b.x = p.x + ca * off; b.z = p.z + sa * off; b.y = p.kp ? 1.0 : r; b.vx = p.vx; b.vz = p.vz; b.vy = 0;
+    if (p.kp) { b.x = p.x + ca * .35; b.z = p.z + sa * .35; }
+  }
+
+  function schiessen(p, zielZ, extra = 0) {
+    const T = p.t ? -1 : 1, b = A.ball, gx = X * T + T * .6;
+    let genau = p === A.ctrl && !A.auto ? .78 + A.L.hilfe * .4 : .45 + p.skill * .4; genau = Math.min(.97, genau);
+    let tz = clamp(zielZ, -T0 + .45, T0 - .45) + (Math.random() - .5) * (1 - genau) * 4.6;
+    const dx = gx - b.x, dz = tz - b.z, d = Math.hypot(dx, dz), v = 17 + extra * 4 + Math.random() * 2;
+    const ty = .4 + Math.random() * (1.6 - (1 - genau)), tf = d / v;
+    b.vx = dx / d * v; b.vz = dz / d * v; b.vy = clamp((ty - r) / tf + 9 * tf, 1, 9); b.y = r + .05;
+    A.besitz = null; p.cool = .45; p.kick = .3; A.pass = null; A.schuss = { t: p.t, zeit: A.t }; A.schuesse[p.t]++;
+    akSnd.plopp(.8); funke(b.x, b.y, b.z, 5, ['#ffffff', '#ffd23f'], .5, .05);
+  }
+  function passZiel(p, rx, rz) {
+    const T = p.t ? -1 : 1; let best = null, bs = -1e9;
+    team(p.t).forEach(q => { if (q === p || q.kp) return; const dx = q.x - p.x, dz = q.z - p.z, d = Math.hypot(dx, dz); if (d < 2.5 || d > 30) return;
+      const ri = rx || rz ? (dx * rx + dz * rz) / d : (dx * T) / d * .7 + .3, druck = gegnerVon(q).reduce((m, o) => Math.min(m, Math.hypot(o.x - q.x, o.z - q.z)), 99);
+      let block = 0; gegnerVon(p).forEach(o => { const t = ((o.x - p.x) * dx + (o.z - p.z) * dz) / (d * d); if (t > .1 && t < .95) { const px = p.x + dx * t, pz = p.z + dz * t; if (Math.hypot(o.x - px, o.z - pz) < 1.3) block += 1; } });
+      const sc = ri * 10 - d * .12 + Math.min(4, druck) * .8 - block * 3.5; if (sc > bs) { bs = sc; best = q; } });
+    return best;
+  }
+  function passen(p, rx = 0, rz = 0) {
+    const q = passZiel(p, rx, rz); if (!q) { if (rx || rz) { const b = A.ball; b.vx = rx * 13; b.vz = rz * 13; b.vy = .5; A.besitz = null; p.cool = .35; p.kick = .25; akSnd.plopp(.6); return true; } return false; }
+    const b = A.ball, d0 = Math.hypot(q.x - b.x, q.z - b.z), v = clamp(7 + d0 * .55, 9, 17), tf = d0 / v;
+    const zx = clamp(q.x + q.vx * tf * .8, -X + 1, X - 1), zz = clamp(q.z + q.vz * tf * .8, -Z + 1, Z - 1), dx = zx - b.x, dz = zz - b.z, d = Math.hypot(dx, dz) || 1;
+    b.vx = dx / d * v; b.vz = dz / d * v; b.vy = d > 15 ? 5.5 : .6; b.y = r + .05;
+    A.besitz = null; p.cool = .35; p.kick = .25; A.pass = { ziel: q, bis: A.t + tf + 1, zx, zz };
+    if (p.t === 0) { A.ctrl = q; A.wechselT = A.t; }
+    akSnd.plopp(.6); return true;
+  }
+
+  function annahme() {
+    const b = A.ball, sp = Math.hypot(b.vx, b.vz); if (A.besitz) return;
+    let best = null, bd = 99;
+    A.sp.forEach(p => { if (p.cool > 0 || p.stun > 0 || p.dive > .45) return; const d = Math.hypot(b.x - p.x, b.z - p.z), reach = p.kp ? (p.dive > 0 ? 1.9 : 1.0) : .8, hoch = p.kp ? 2.6 : 1.1;
+      if (d < reach && b.y < hoch && d < bd) { best = p; bd = d; } });
+    if (!best) return;
+    const p = best, ziel = A.pass && A.pass.ziel === p;
+    if (p.kp && sp > 9 && A.schuss && A.schuss.t !== p.t && !p.parade) {
+      p.parade = true; const chance = clamp(p.tw * (1.25 - (sp - 15) / 25) + (p.dive > 0 ? .1 : 0), .1, .95);
+      if (Math.random() < chance) { if (sp > 19 || Math.random() < .35) { b.vx = -b.vx * .35 + (Math.random() - .5) * 4; b.vz = (Math.random() - .5) * 9; b.vy = 4 + Math.random() * 3; p.cool = .5; akSnd.plopp(.4); funke(b.x, b.y, b.z, 8, ['#ffffff'], .6); if (p.t === 1) K.msg('Gehalten!', 1); A.schuss = null; return; } }
+      else { p.cool = .5; return; }
+    }
+    if (!p.kp && !ziel && sp > 15) { if (Math.random() < .3) { b.vx *= -.3; b.vz = b.vz * .3 + (Math.random() - .5) * 5; b.vy = 2.5; p.cool = .3; akSnd.plopp(.4); } else p.cool = .2; return; }
+    A.besitz = p; A.pass = null; A.schuss = null; p.halten = p.kp ? 1.1 : 0; p.denk = .15 + Math.random() * .15;
+    if (p.t === 0 && !p.kp) { A.ctrl = p; A.wechselT = A.t; }
+    if (p.t === 0 && !A.auto) akSnd.plopp(.35);
+  }
+  function holen() {
+    const c = A.besitz; if (!c || c.kp) return;
+    gegnerVon(c).forEach(o => { if (A.besitz !== c || o.cool > 0 || o.stun > 0 || o.kp) return; const d = Math.hypot(o.x - c.x, o.z - c.z); if (d > (o.dash > 0 ? 1.35 : .95)) return;
+      let rate; if (o === A.ctrl && !A.auto) rate = o.dash > 0 ? 40 : 2.4; else if (c === A.ctrl && !A.auto) rate = .75 * A.L.botF + (A.L.w * .15); else rate = 1.1 * o.skill;
+      if (Math.random() < rate / 60) { A.besitz = o; c.cool = .6; c.stun = .35; o.denk = .2; A.pass = null; if (o.t === 0) { A.ctrl = o; A.wechselT = A.t; if (!A.auto) { akSnd.plopp(.5); K.msg('Ball erobert! 💪', .9); } } else if (c === A.ctrl && !A.auto) akSnd.au(); } });
+  }
+
+  function heim(p) {
+    const T = p.t ? -1 : 1, f = FUB_FORM[A.L.n - 1][p.slot], b = A.ball, wir = A.besitz && A.besitz.t === p.t;
+    const x = T * f[0] * X * .8 + b.x * .5 + (wir ? T * 5 : -T * 2.5), z = f[1] * .9 + b.z * .3;
+    return [clamp(x, -X + 3, X - 3), clamp(z, -Z + 1.5, Z - 1.5)];
+  }
+  function jaeger(t) { const b = A.ball; let best = null, bd = 1e9; team(t).forEach(p => { if (p.kp) return; const d = Math.hypot(b.x + b.vx * .3 - p.x, b.z + b.vz * .3 - p.z); if (d < bd) { bd = d; best = p; } }); return best; }
+  function torwartKI(p, dt) {
+    const T = p.t ? -1 : 1, own = -T * X, b = A.ball;
+    if (A.besitz === p) { p.halten -= dt; laufe(p, dt, 0, 0); if (p.halten <= 0) { if (!passen(p)) { b.vx = T * 15; b.vz = (Math.random() - .5) * 10; b.vy = 7; A.besitz = null; p.cool = .5; p.kick = .3; akSnd.plopp(.7); } } return; }
+    if (p.dive > 0) { p.dive -= dt; const k = Math.min(1, (.6 - p.dive) / .25); p.z += (p.diveZ - p.z) * Math.min(1, dt * 9) * k; p.anim += dt; if (p.dive <= 0) p.parade = false; return; }
+    let tx = own + T * .9, tz = clamp(b.z * .42, -T0 + .7, T0 - .7);
+    const kommt = b.vx * T < -5 && !A.besitz;
+    if (kommt) { const t = (b.x - (own + T * .9)) / -b.vx; const pz = b.z + b.vz * t; if (t > 0 && t < 1.3 && Math.abs(pz) < T0 + .6) { tz = clamp(pz, -T0, T0); if (Math.abs(pz - p.z) > .8 && t < .5 && !p.parade) { p.dive = .6; p.diveZ = clamp(pz, -T0, T0); } } }
+    else { p.parade = false; const nah = Math.abs(b.x - own) < 6.5 && Math.abs(b.z) < 7, frei = !A.besitz, naechst = team(p.t).every(q => q === p || Math.hypot(b.x - q.x, b.z - q.z) > Math.hypot(b.x - p.x, b.z - p.z));
+      if (nah && frei && naechst) { tx = b.x; tz = b.z; } else if (Math.abs(b.x - own) < 14) tx = own + T * 1.6; }
+    const dx = tx - p.x, dz = tz - p.z, d = Math.hypot(dx, dz); laufe(p, dt, d > .15 ? dx / d * Math.min(1, d) : 0, d > .15 ? dz / d * Math.min(1, d) : 0, 1);
+  }
+  function traegerKI(p, dt) {
+    const T = p.t ? -1 : 1, gx = X * T, b = A.ball;
+    p.denk -= dt;
+    const dg = Math.hypot(gx - p.x, p.z), kp = A.sp.find(q => q.t !== p.t && q.kp);
+    if (p.denk <= 0) { p.denk = .22 + (1 - p.skill) * .3;
+      const druck = gegnerVon(p).filter(o => Math.hypot(o.x - p.x, o.z - p.z) < 2.6 && (o.x - p.x) * T > -.5).length;
+      if (dg < 9 + p.skill * 6 && Math.abs(p.z) < 10 && Math.random() < .55 + p.skill * .3) { schiessen(p, kp && kp.z > 0 ? -T0 * .75 : T0 * .75); return; }
+      if (druck && Math.random() < .35 + p.skill * .35 && passen(p)) return;
+      if (dg > 20 && Math.random() < .08 && passen(p)) return; }
+    let wx = gx - p.x, wz = clamp(p.z * .5, -5, 5) - p.z; const l = Math.hypot(wx, wz) || 1; wx /= l; wz /= l;
+    gegnerVon(p).forEach(o => { const dx = p.x - o.x, dz = p.z - o.z, d = Math.hypot(dx, dz); if (d < 4 && d > .01 && (o.x - p.x) * T > -1) { wz += dz / d * (4 - d) * .35; wx += dx / d * (4 - d) * .1; } });
+    if (Math.abs(p.z) > Z - 2.5) wz -= Math.sign(p.z) * .6;
+    laufe(p, dt, wx, wz);
+  }
+  function feldKI(p, dt) {
+    const b = A.ball, T = p.t ? -1 : 1;
+    if (A.besitz === p) { traegerKI(p, dt); return; }
+    let tx, tz, tempo = 1;
+    if (A.pass && A.pass.ziel === p) { tx = b.x + b.vx * .25; tz = b.z + b.vz * .25; }
+    else if (A.besitz && A.besitz.t === p.t) { [tx, tz] = heim(p); tempo = .85; }
+    else if (jaeger(p.t) === p) { const sp = Math.hypot(b.vx, b.vz), d = Math.hypot(b.x - p.x, b.z - p.z), vor = Math.min(.8, d / 7); tx = b.x + (A.besitz ? A.besitz.vx : b.vx) * vor; tz = b.z + (A.besitz ? A.besitz.vz : b.vz) * vor; if (A.besitz) { tx -= T * .5; } if (sp > 16 && !A.besitz) tempo = .9; }
+    else { [tx, tz] = heim(p); tempo = .8; }
+    const dx = tx - p.x, dz = tz - p.z, d = Math.hypot(dx, dz);
+    laufe(p, dt, d > .3 ? dx / d * Math.min(1, d / 1.5) : 0, d > .3 ? dz / d * Math.min(1, d / 1.5) : 0, tempo);
+  }
+
+  function steuerWahl() {
+    if (A.besitz && A.besitz.t === 0 && !A.besitz.kp) { A.ctrl = A.besitz; return; }
+    if (A.pass && A.pass.ziel.t === 0) { A.ctrl = A.pass.ziel; return; }
+    const b = A.ball, d = p => Math.hypot(b.x + b.vx * .25 - p.x, b.z + b.vz * .25 - p.z);
+    const kand = team(0).filter(p => !p.kp).sort((a, c) => d(a) - d(c))[0];
+    if (kand && kand !== A.ctrl && (!A.ctrl || A.ctrl.kp || d(kand) + 1.8 < d(A.ctrl)) && A.t - A.wechselT > .7) { A.ctrl = kand; A.wechselT = A.t; }
+  }
+  function spielerEin(K, p, dt) {
+    const [sx, sy] = St.richtung(), f = A.kf || [0, -1], rx = -f[1], rz = f[0], wx = rx * sx - f[0] * sy, wz = rz * sx - f[1] * sy, l = Math.hypot(wx, wz);
+    const schuss = St.nimm('schuss'), pass = St.nimm('pass');
+    if (A.besitz === p) {
+      if (schuss) { const T = 1; let zz; if (l > .3 && Math.abs(wz) > .25) zz = clamp(p.z + wz / l * 6, -T0, T0) * .85; else { const kp = A.sp.find(q => q.t === 1 && q.kp); zz = kp && kp.z > 0 ? -T0 * .8 : T0 * .8; } schiessen(p, zz, Math.min(1, Math.hypot(p.vx, p.vz) / 6)); A.treffer++; }
+      else if (pass) { passen(p, l > .3 ? wx / l : 0, l > .3 ? wz / l : 0); A.treffer++; }
+    } else {
+      if (schuss && p.dash <= 0 && p.stun <= 0) { p.dash = .35; if (l < .3) { const b = A.ball, dx = b.x - p.x, dz = b.z - p.z, dl = Math.hypot(dx, dz) || 1; p.vx = dx / dl * 6; p.vz = dz / dl * 6; } }
+      if (pass) { const b = A.ball, liste = team(0).filter(q => !q.kp && q !== p).sort((a, c) => Math.hypot(b.x - a.x, b.z - a.z) - Math.hypot(b.x - c.x, b.z - c.z)); if (liste[0]) { A.ctrl = liste[0]; A.wechselT = A.t + 1; } }
+    }
+    if (A.ctrl !== p) return;
+    if (p.dash > 0 && l < .3) { const b = A.ball, dx = b.x - p.x, dz = b.z - p.z, dl = Math.hypot(dx, dz) || 1; laufe(p, dt, dx / dl, dz / dl); }
+    else laufe(p, dt, wx, wz);
+  }
+
+  function elferStart(K) {
+    A.phase = 'elfer'; A.elf = { wir: [], die: [], dran: 0, schritt: 'ziel', t: 0, runde: 0 };
+    K.ruf('Elfmeterschießen!'); K.msg('Unentschieden! Jetzt entscheidet das Elfmeterschießen.', 2.4); Sound.glocke(988, 0, .3, .1);
+    elferAufstellen();
+  }
+  function elferAufstellen() {
+    const E = A.elf, wir = E.dran === 0, T = wir ? 1 : -1, b = A.ball;
+    Object.assign(b, { x: T * (X - 8), y: r, z: 0, vx: 0, vy: 0, vz: 0 }); A.besitz = null; A.schuss = null;
+    A.sp.forEach(p => { p.vx = p.vz = 0; p.dive = 0; p.parade = false; p.kick = 0; p.cool = 0; p.stun = 0; p.dash = 0;
+      if (p.kp) { const own = p.t ? X : -X; p.x = own - Math.sign(own) * .9; p.z = 0; p.dir = p.t ? Math.PI : 0; }
+      else { p.x = (p.t === 0 ? -1 : 1) * 2 - T * 3 + (p.slot - 1) * .1; p.z = (p.t ? 1 : -1) * (2 + p.slot * 1.4); p.dir = Math.PI / 2 * (p.t ? -1 : 1); } });
+    const sch = wir ? A.sp.find(p => p.lumi) : A.sp.filter(p => p.t === 1 && !p.kp)[E.runde % (A.L.n - 1)];
+    sch.x = b.x - T * 1.5; sch.z = T * 1.1; sch.dir = wir ? 0 : Math.PI; E.schuetze = sch; E.zz = 0; E.zy = .8; E.t = 0; E.schritt = 'ziel';
+    E.aiZ = (Math.random() < .5 ? -1 : 1) * (1 + Math.random() * 1.9); E.aiY = .4 + Math.random() * 1.4; if (Math.random() < .2) E.aiZ = (Math.random() - .5) * 1.2;
+    E.twZ = [-2.2, 0, 2.2][Math.floor(Math.random() * 3)];
+  }
+  function elferSchritt(K, dt) {
+    const E = A.elf, b = A.ball, wir = E.dran === 0, T = wir ? 1 : -1, kp = A.sp.find(p => p.kp && p.t === (wir ? 1 : 0));
+    E.t += dt;
+    const [sx, sy] = St.richtung(), f = A.kf || [1, 0], rz = f[0], wzS = rz * sx;
+    if (E.schritt === 'ziel') {
+      if (wir) { E.zz = g3Weich(E.zz, clamp(wzS * 3.2, -T0 + .5, T0 - .5), dt * 8); E.zy = g3Weich(E.zy, sy < -.4 ? 1.8 : .6, dt * 6); if (St.nimm('schuss') || (A.auto && E.t > 1.2)) { if (A.auto) { E.zz = (Math.random() < .5 ? -1 : 1) * 2.4; } elferSchuss(E.zz, E.zy, kp, E.twZ); } }
+      else { St.nimm('schuss'); if (E.t > 2.2) { const dz = A.auto ? [-2.2, 0, 2.2][Math.floor(Math.random() * 3)] : Math.abs(wzS) > .35 ? Math.sign(wzS) * 2.4 : 0; elferSchuss(E.aiZ, E.aiY, kp, dz); } }
+    } else if (E.schritt === 'flug') {
+      ballFrei(dt); if (kp.dive > 0) { kp.dive -= dt; kp.z += (kp.diveZ - kp.z) * Math.min(1, dt * 7); }
+      const imTor = Math.abs(b.x) > X + r && Math.abs(b.z) < T0 && b.y < TH;
+      if (!E.gehalten && Math.abs(b.x - kp.x) < .6 && Math.abs(b.z - kp.z) < 1.1 && b.y < 2.2 && E.halt) { E.gehalten = true; b.vx = -b.vx * .3; b.vz = (Math.random() - .5) * 6; b.vy = 3.5; akSnd.plopp(.4); funke(b.x, b.y, b.z, 10, ['#ffffff'], .6); }
+      if (imTor || E.t > 1.6) { const tor = imTor && !E.gehalten; (wir ? E.wir : E.die).push(tor ? 1 : 0); E.schritt = 'ergebnis'; E.t = 0;
+        if (tor) { funke(b.x, 1.2, b.z, 50, [wir ? '#3f8fe0' : A.L.farbe, '#ffffff', '#ffd23f'], 1.6, .1); if (wir) { Sound.win(); K.ruf('TOR! 🎉'); } else { Sound.bad(); K.ruf('Tor'); } }
+        else { if (wir) { K.ruf('Gehalten'); akSnd.au(); } else { K.ruf('GEHALTEN! 🧤'); Sound.good(); } } }
+    } else if (E.schritt === 'ergebnis') {
+      if (E.t > 1.8) { const [a, c] = [E.wir.reduce((s, v) => s + v, 0), E.die.reduce((s, v) => s + v, 0)], na = E.wir.length, nc = E.die.length;
+        const fertig = (na >= 3 && nc >= 3 && na === nc && a !== c) || (na <= 3 && nc <= 3 && (a > c + (3 - nc) || c > a + (3 - na))) || (na >= 6 && nc >= 6);
+        if (fertig) { A.elfErg = [a, c]; spielEnde(K); return; }
+        if (E.dran === 1) E.runde++; E.dran = 1 - E.dran; elferAufstellen(); }
+    }
+    A.sp.forEach(p => { if (p === kp && E.schritt === 'flug') return; p.anim += dt * .2; });
+    const a = E.wir.reduce((s, v) => s + v, 0), c = E.die.reduce((s, v) => s + v, 0);
+    K.ziel = `Elfmeter 🔵 ${a} : ${c} ${A.L.gegner.split('-')[0].slice(0, 7)}`;
+  }
+  function elferSchuss(zz, zy, kp, twZ) {
+    const E = A.elf, b = A.ball, T = E.dran === 0 ? 1 : -1, gx = T * (X + .8), dx = gx - b.x, dz = zz - b.z, d = Math.hypot(dx, dz), v = 17, tf = d / v;
+    b.vx = dx / d * v; b.vz = dz / d * v; b.vy = clamp((zy - r) / tf + 9 * tf, 1, 9); b.y = r + .02;
+    E.schuetze.kick = .3; akSnd.plopp(.9); E.schritt = 'flug'; E.t = 0; E.gehalten = false;
+    kp.dive = .7; kp.diveZ = twZ; const gleich = Math.abs(twZ - zz) < 1.35 || (twZ === 0 && Math.abs(zz) < 1.0);
+    E.halt = gleich && Math.random() < (E.dran === 0 ? .75 : .9);
+    if (!gleich) kp.diveZ = twZ;
+  }
+
+  function tor(K, t) {
+    A.tore[t]++; A.phase = 'tor'; A.count = 2.6; A.torTeam = t; const b = A.ball;
+    funke(b.x, 1, b.z, 60, [t ? A.L.farbe : '#3f8fe0', '#ffffff', '#ffd23f'], 1.8, .1); K.flash = .2; K.shake = .25;
+    if (t === 0) { Sound.win(); K.ruf('TOR! 🎉'); const s = A.letzterSchuetze; if (s && s.lumi) K.msg('Lumi trifft! ⚽', 1.6); } else { Sound.bad(); K.ruf('Tor für ' + A.L.gegner); }
+    A.sp.forEach(p => { if (p.t === t) p.jubel = 2.4; });
+    K.punkte = A.tore[0];
+  }
+  function spielEnde(K) {
+    A.phase = 'aus'; const [a, c] = A.tore, e = A.elfErg;
+    Sound.glocke(1568, 0, .25, .1); Sound.glocke(1568, .3, .25, .1); Sound.glocke(1175, .6, .6, .1);
+    const st = a > c ? 3 : a < c ? 1 : e ? (e[0] > e[1] ? 3 : 2) : 2;
+    const txt = a > c ? 'Gewonnen! 🏆' : a < c ? 'Knapp verloren. Nochmal?' : e ? (e[0] > e[1] ? 'Im Elfmeterschießen gewonnen! 🏆' : 'Im Elfmeterschießen verloren. Super gekämpft!') : 'Unentschieden! 🤝';
+    K.ende(true, st, `<p>🔵 Team Lumi ${a} : ${c} ${esc(A.L.gegner)}${e ? `<br>Elfmeter ${e[0]} : ${e[1]}` : ''}<br>${txt}</p>`, '', 2600);
+  }
+  function schritt(K, dt) {
+    A.t += dt;
+    if (A.phase === 'aus') { teileSchritt(dt); A.sp.forEach(p => { if (p.jubel > 0) p.jubel -= dt; }); return; }
+    if (A.phase === 'elfer') { elferSchritt(K, dt); teileSchritt(dt); return; }
+    if (A.phase === 'anstoss') { const c0 = Math.ceil(A.count); A.count -= dt; const c1 = Math.ceil(A.count); if (c1 !== c0) { if (c1 > 0) { if (A.count > 2.3 || !A.anstossT) K.ruf(String(c1)); Sound.glocke(660, 0, .2, .08); } else { K.ruf('Anstoß!'); Sound.glocke(1320, 0, .4, .12); A.phase = 'spiel'; A.anstossT = 1; } } }
+    else if (A.phase === 'tor') { A.count -= dt; ballFrei(dt); if (A.count <= 0) { if (A.uhr <= 0) { zeitAus(K); return; } A.phase = 'anstoss'; A.count = 1.6; anstoss(1 - A.torTeam); } }
+    else if (A.phase === 'spiel') { A.uhr -= dt; if (A.uhr <= 0) { A.uhr = 0; zeitAus(K); return; } }
+    const laeuft = A.phase === 'spiel';
+    A.sp.forEach(p => { p.cool = Math.max(0, p.cool - dt); p.stun = Math.max(0, p.stun - dt); p.dash = Math.max(0, p.dash - dt); p.kick = Math.max(0, p.kick - dt); if (p.jubel > 0) p.jubel -= dt; });
+    if (laeuft) {
+      steuerWahl();
+      A.sp.forEach(p => { if (p.kp) torwartKI(p, dt); else if (p === A.ctrl && !A.auto) spielerEin(K, p, dt); else feldKI(p, dt); });
+      for (let i = 0; i < A.sp.length; i++) for (let j = i + 1; j < A.sp.length; j++) { const p = A.sp[i], q = A.sp[j], dx = q.x - p.x, dz = q.z - p.z, d = Math.hypot(dx, dz); if (d < .85 && d > 1e-3) { const o = (.85 - d) / 2; p.x -= dx / d * o; p.z -= dz / d * o; q.x += dx / d * o; q.z += dz / d * o; } }
+      if (A.besitz) { ballFolgt(A.besitz); holen(); } else { ballFrei(dt); annahme(); }
+      if (A.besitz) A.letzterSchuetze = A.besitz;
+      if (A.pass && A.t > A.pass.bis) A.pass = null;
+      const b = A.ball; if (!A.besitz && Math.abs(b.x) > X + r && Math.abs(b.z) < T0 && b.y < TH) tor(K, b.x > 0 ? 0 : 1);
+    } else if (A.phase === 'anstoss') { A.sp.forEach(p => { p.vx = p.vz = 0; }); if (A.besitz) ballFolgt(A.besitz); }
+    else if (A.phase === 'tor') A.sp.forEach(p => { p.vx *= .9; p.vz *= .9; p.anim += dt * 3; });
+    const b = A.ball, sp = Math.hypot(b.vx, b.vz); b.rot += sp * dt / r; if (sp > .3) b.ry = Math.atan2(b.vz, b.vx);
+    teileSchritt(dt);
+    const m = Math.floor(Math.ceil(A.uhr) / 60), s = Math.ceil(A.uhr) % 60;
+    K.ziel = `🔵 ${A.tore[0]} : ${A.tore[1]} ${A.L.gegner.split('-')[0].slice(0, 7)}  ⏱ ${m}:${String(s).padStart(2, '0')}`; K.fort = 1 - A.uhr / A.L.zeit;
+  }
+  function teileSchritt(dt) {
+    for (let i = A.teile.length - 1; i >= 0; i--) { const q = A.teile[i]; q.life -= dt; if (q.life <= 0) { A.teile.splice(i, 1); continue; } q.vy -= 9 * dt; q.x += q.vx * dt; q.y += q.vy * dt; q.z += q.vz * dt; q.s = q.s0 * Math.min(1, q.life / q.max * 1.6); }
+    if (A.teile.length > 220) A.teile.splice(0, A.teile.length - 220);
+  }
+  function zeitAus(K) {
+    if (A.tore[0] === A.tore[1] && A.L.finale) { elferStart(K); return; }
+    spielEnde(K);
+  }
+
+  function kamera(K, dt) {
+    const asp = K.W / Math.max(1, K.H), hoch = asp < .95, b = A.ball;
+    let e, t;
+    if (A.phase === 'elfer') { const E = A.elf, T = E.dran === 0 ? 1 : -1; e = [b.x - T * 6.8, 3.9, -T * 1.6]; t = [T * X, 1.0, 0]; if (E.schritt === 'flug' || E.schritt === 'ergebnis') { t = [T * X, 1.1, b.z * .3]; } kam.fov = hoch ? 70 : 54; }
+    else if (!hoch) { const cx = clamp(b.x * .8, -13, 13), cz = clamp(b.z * .3, -3, 3); A.cx = A.cx === undefined ? cx : g3Weich(A.cx, cx, dt * 2.6); A.cz = A.cz === undefined ? cz : g3Weich(A.cz, cz, dt * 2); const zu = asp < 1.25 ? 3 : 0; e = [A.cx, 13.5 + zu * .5, 17.5 + A.cz + zu]; t = [A.cx, 0, 1.2 + A.cz]; kam.fov = 50; }
+    else { const cx = clamp(b.x * .8, -14, 14), cz = clamp(b.z * .6, -8, 8); A.cx = A.cx === undefined ? cx : g3Weich(A.cx, cx, dt * 2.6); A.cz = A.cz === undefined ? cz : g3Weich(A.cz, cz, dt * 2.2); e = [A.cx - 13, 17, A.cz * .5]; t = [A.cx + 6, 0, A.cz]; kam.fov = asp < .6 ? 70 : 62; }
+    { const fx = t[0] - e[0], fz = t[2] - e[2], fl = Math.hypot(fx, fz) || 1; A.kf = [fx / fl, fz / fl]; }
+    if (K.phase === 'bereit' || !K.L) { const a = K.t * .16; e = [Math.sin(a) * 30, 19, Math.cos(a) * 21]; t = [0, 0, 0]; A.kam0 = { auge: e, ziel: t }; A.camB = 0; }
+    else if (A.kam0 && A.camB < 1) { A.camB = Math.min(1, A.camB + dt / 1.4); const q = A.camB * A.camB * (3 - 2 * A.camB), e0 = e, t0 = t; e = A.kam0.auge.map((v, i) => v + (e0[i] - v) * q); t = A.kam0.ziel.map((v, i) => v + (t0[i] - v) * q); }
+    if (K.shake > 0) e = [e[0] + Math.sin(K.t * 70) * K.shake * .4, e[1] + Math.cos(K.t * 55) * K.shake * .3, e[2]];
+    kam.auge = e; kam.ziel = t;
+  }
+
+  function figur(K, p, m) {
+    const sp = Math.hypot(p.vx, p.vz), lauf = sp > .5, ph = p.anim; let fl = .3, fuss = 0, bob = 0, roll = 0, rx = 0, y = 0, dz = 0;
+    if (p.jubel > 0) { fl = 1.4 + Math.sin(A.t * 9 + p.i) * .4; bob = Math.abs(Math.sin(A.t * 6 + p.i)) * .35; }
+    else if (p.dive > 0) { const k = Math.min(1, (.7 - p.dive) / .25); roll = Math.sign(p.diveZ - p.z || 1) * 1.3 * k * (p.t ? -1 : 1); y = .2 * k; fl = 1.5; }
+    else if (lauf) { bob = Math.abs(Math.sin(ph)) * .07; roll = Math.sin(ph) * .09; fl = .3 + Math.abs(Math.sin(ph)) * .3; fuss = Math.sin(ph); }
+    if (p.kick > 0) { fuss = -1.6 * Math.sin((.3 - p.kick) / .3 * Math.PI); rx = .15; }
+    if (p.stun > 0) roll = Math.sin(A.t * 30) * .25;
+    const s = p.lumi ? .78 : .74; G3.pose(M, p.x, y + bob, p.z, -p.dir - Math.PI / 2, rx, roll, s);
+    R.mal(m.r, M, { glanz: .35 });
+    [-1, 1].forEach(sd => { G3.mal(M, G3.pose(M2, sd * .47, 1.05, -.02, 0, 0, sd * (fl + .1)), M3); R.mal(m.f, M3); G3.mal(M, G3.pose(M2, sd * .2, Math.max(0, -sd * fuss) * .12, sd * fuss * .22 + dz, 0, 0, 0), M3); R.mal(m.u, M3); });
+  }
+  function zeichne3D(K) {
+    const st = FUB_ST[art]; if (!A || !R.bild(kam, st, K.t)) return;
+    R.mal(arena.b, G3.pose(M, 0, 0, 0), { glanz: .2 }); R.mal(arena.g, M, { leucht: 1 });
+    A.sp.forEach(p => { R.schatten(p.x, 0, p.z, .5, .45); figur(K, p, p.lumi ? mod.lumi : figM[(p.t ? 5 : 0) + Math.min(4, p.i)]); });
+    const c = A.ctrl; if (c && A.phase !== 'elfer') { R.mal(mod.ring, G3.pose(M, c.x, .04, c.z, K.t * 1.5), { leucht: .9 }); R.mal(mod.pfeil, G3.pose(M, c.x, 1.75 + Math.sin(K.t * 4) * .1, c.z, K.t * 2), { leucht: .85 }); }
+    const b = A.ball; R.schatten(b.x, 0, b.z, r * 1.1, .5 * Math.max(.3, 1 - b.y / 6));
+    G3.pose(M, b.x, b.y, b.z, -b.ry, 0, 0, r); G3.pose(M2, 0, 0, 0, 0, 0, -b.rot); G3.mal(M, M2, M3); R.mal(ballM, M3, { glanz: .7 });
+    if (A.phase === 'elfer' && A.elf.dran === 0 && A.elf.schritt === 'ziel') R.mal(mod.ziel, G3.pose(M, X + .05, A.elf.zy, A.elf.zz), { leucht: 1 });
+    if (A.teile.length) R.teile(A.teile, .6);
+    R.mal(arena.n, G3.pose(M, 0, 0, 0), { alpha: .22, leucht: .5 });
+  }
+  const K = akBaukasten(stage, {
+    id: 'fub', titel: '⚽ Fußball 3D', text: 'Team Lumi spielt um den Pokal! Joystick links zum Laufen. Mit Ball: Schuss oder Pass. Ohne Ball: Holen (schnell hin und Ball schnappen) oder Wechsel. Du steuerst immer den Spieler mit dem gelben Ring.', welten: FUB_WELTEN, n: 5, punkteWort: 'Tore', ersterTipp: false,
+    hilfe: 'Sieg gibt drei Sterne, Unentschieden zwei, jedes Spiel einen Stern. Im Finale jeder Welt gibt es bei Gleichstand ein Elfmeterschießen.',
+    layout: K => R.groesse(K.W, K.H), level: fubLevel,
+    menu: K => { const [w, l] = lvAktuell('fub', 4, 5); bauen(fubLevel(Math.max(0, w), Math.max(0, l))); },
+    start: (K, L) => { bauen(L); K.punkte = 0; K.fort = 0; K.ziel = `🔵 0 : 0`; St.reset(); },
+    los: K => { A.count = 3.2; A.phase = 'anstoss'; },
+    bereit: K => [K.L.name, K.L.st === 0 ? 'Joystick links: laufen. Mit dem Ball tippst du auf Schuss oder Pass. Schieß aufs Tor der anderen!' : K.L.finale ? 'Finale! Bei Gleichstand gibt es Elfmeterschießen.' : `${K.L.n} gegen ${K.L.n}. Passen hilft, wenn ein Gegner nah ist!`],
+    tippText: 'Tippe zum Anstoß!',
+    update: (K, dt) => { if (!A) return; if (K.phase === 'lauf' || K.phase === 'ende' || K.phase === 'fertig') schritt(K, dt); kamera(K, dt); },
+    draw: (K, x) => { x.clearRect(-60, -60, K.W + 120, K.H + 120); R.messe(); zeichne3D(K); if (K.phase === 'lauf' && A && A.phase !== 'aus') { St.zeichne(K, x); if (A.phase === 'elfer' && A.elf.schritt === 'ziel') { x.save(); x.textAlign = 'center'; x.font = h28aFont(Math.max(12, Math.min(22, K.W / 30))); x.fillStyle = 'rgba(255,255,255,.92)'; const t = A.elf.dran === 0 ? 'Mit dem Joystick zielen, dann Schuss!' : 'Du hältst! Joystick zur Seite, wenn er schießt.', w = x.measureText(t).width + 30; const yy = K.H * .64; x.fillRect(K.W / 2 - w / 2, yy - 22, w, 38); x.fillStyle = '#12324A'; x.fillText(t, K.W / 2, yy + 4); x.restore(); } } },
+    down: (K, a, b, e) => St.down(K, a, b, e), move: (K, a, b, e) => St.move(K, a, b, e), up: (K, a, b, e) => St.up(K, a, b, e),
+    taste: (K, e, an) => { if (an && K.phase === 'bereit') { K.los(); return; } if (St.taste(e, an)) e.preventDefault(); },
+    dbg: K => ({ get A() { return A; }, get R() { return R; }, St, kam: () => kam, elferStart: () => elferStart(K),
+      st: () => ({ phase: K.phase, spiel: A.phase, tore: A.tore.slice(), uhr: +A.uhr.toFixed(1), sterne: K.sterne, besitz: A.besitz ? [A.besitz.t, A.besitz.i] : null }),
+      sim: sec => { if (K.phase === 'bereit') K.los(); A.auto = true; A.sp.forEach(p => { if (p.t === 0 && !p.kp) p.speed = A.L.botF * 1.05; }); for (let i = 0; i < sec * 60 && K.phase === 'lauf'; i++) K.schritt(1 / 60); A.auto = false; A.sp.forEach(p => { if (p.t === 0 && !p.kp) p.speed = 1; }); return { phase: K.phase, spiel: A.phase, tore: A.tore.slice(), elf: A.elfErg || null, uhr: Math.round(A.uhr), sterne: K.sterne, schuesse: A.schuesse.slice() }; } })
+  });
+}
+FUN_GAMES.fussball3d = { c: 'hits', t: 'Fußball 3D', seit: 'Fußball 3D mit Team Lumi', d: 'Team Lumi spielt Fußball in echtem 3D! Passen, schießen, Ball erobern und im Finale Elfmeterschießen. 4 Turniere mit 20 Spielen.', i: '⚽' };
+FUN_IMPL.fussball3d = fubSpiel;
+
+/*@@src farbe420.js@@*/
+
+
+
+
+
+
+
+
+
+const FKA_WELTEN = [
+  { n: 'Spielplatz-Arena', i: '🎨', farbe: '#ff4fa3', art: 'park' },
+  { n: 'Eis-Arena', i: '🧊', farbe: '#2f9bd8', art: 'eis' },
+  { n: 'Strand-Arena', i: '🏝️', farbe: '#e0a12f', art: 'strand' },
+  { n: 'Sternen-Arena', i: '✨', farbe: '#7a4fd6', art: 'sterne' }
+];
+const FKA_NAMEN = [['Erster Klecks', 'Kistenberg', 'Säulenwald', 'Brückenspiel', 'Großes Farbfest'], ['Glitzerboden', 'Eiskisten', 'Eiszapfen-Säulen', 'Schmelzwasser', 'Großes Eisfest'], ['Sandkleckse', 'Muschelkisten', 'Palmensäulen', 'Lagunenbrücken', 'Großes Strandfest'], ['Sternenstaub', 'Kometenkisten', 'Mondsäulen', 'Milchstraßen-Brücken', 'Großes Sternenfest']];
+const FKA_ST = { park: FUB_ST.rasen, eis: KGP_ST.eis, strand: KGP_ST.strand, sterne: KGP_ST.sterne };
+const FKA_PAL = {
+  park: { boden: '#ece6d8', bande: '#5cc85c', kiste: '#ffd23f', kiste2: '#ff9b26', rand: '#4caa52', gegner: '#ff4fa3', wasser: '#4fb8f0' },
+  eis: { boden: '#e8f1f8', bande: '#3f8fe0', kiste: '#bfe3f6', kiste2: '#8ccff5', rand: '#f4f8fc', gegner: '#ff8a1f', wasser: '#5ab8ff' },
+  strand: { boden: '#f2dfb0', bande: '#2fb3a6', kiste: '#c98a4a', kiste2: '#e0a12f', rand: '#f2dca0', gegner: '#3fcf5a', wasser: '#2fc4d6' },
+  sterne: { boden: '#3a3f6a', bande: '#c25aff', kiste: '#5a4fd6', kiste2: '#8a78d0', rand: '#1a2050', gegner: '#ffd23f', wasser: '#4a8cff' }
+};
+const FKA_X = 18, FKA_Z = 14, FKA_H = .5, FKA_NX = 72, FKA_NZ = 56, FKA_BLAU = '#2f7bff';
+function fkaLevel(w, l) {
+  return { art: FKA_WELTEN[w].art, st: w * 5 + l, w, l, name: FKA_NAMEN[w][l], typ: ['offen', 'kisten', 'saeulen', 'wasser', 'gross'][l], n: [2, 3, 4, 4][w], zeit: [60, 75, 90, 90][w], botF: .66 + w * .06 + l * .02, skill: .45 + w * .1 + l * .03, seed: 13 + w * 17 + l * 5 };
+}
+
+function fkaHindernisse(L) {
+  let seed = L.seed; const r = () => (seed = (seed * 16807) % 2147483647) / 2147483647; r(); r();
+  const H = [], paar = (x, z, w, t, h, art = 'kiste') => { H.push({ x0: x - w / 2, x1: x + w / 2, z0: z - t / 2, z1: z + t / 2, h, art }); if (Math.abs(x) > .01 || Math.abs(z) > .01) H.push({ x0: -x - w / 2, x1: -x + w / 2, z0: -z - t / 2, z1: -z + t / 2, h, art }); };
+  const frei = (x, z, w, t) => Math.abs(x) + w / 2 < 12.5 && H.every(o => x + w / 2 + 1.6 < o.x0 || x - w / 2 - 1.6 > o.x1 || z + t / 2 + 1.6 < o.z0 || z - t / 2 - 1.6 > o.z1) && H.every(o => -x + w / 2 + 1.6 < o.x0 || -x - w / 2 - 1.6 > o.x1 || -z + t / 2 + 1.6 < o.z0 || -z - t / 2 - 1.6 > o.z1);
+  const kisten = n => { for (let k = 0, v = 0; k < n && v < 200; v++) { const w = 1.6 + r() * 2.4, t = 1.6 + r() * 2.4, x = (r() - .5) * 22, z = (r() - .5) * 22; if (frei(x, z, w, t) && Math.hypot(x, z) > 2.5) { paar(x, z, w, t, 1.1 + r() * .8); k++; } } };
+  if (L.typ === 'offen') { paar(-5, -6, 2.4, 2.4, 1.2); paar(5, -6, 2.4, 2.4, 1.2); kisten(1 + L.w); }
+  else if (L.typ === 'kisten') kisten(5 + L.w);
+  else if (L.typ === 'saeulen') { [-9, -3].forEach(x => [-7, 0, 7].forEach(z => paar(x, z, 1.3, 1.3, 2.4, 'saeule'))); paar(0, 0, 2, 2, 1.2); }
+  else if (L.typ === 'wasser') { [[-14, -10.5], [-8, -1.6]].forEach(([a, b]) => paar(0, (a + b) / 2, 3, b - a, 0, 'wasser')); paar(-8, 6, 2.4, 2.4, 1.2); paar(-6, -9, 2, 2, 1.2); }
+  else { [[-14, -10.5], [-8, -1.6]].forEach(([a, b]) => paar(0, (a + b) / 2, 3, b - a, 0, 'wasser')); [-10, -5].forEach(x => [-6, 6].forEach(z => paar(x, z, 1.3, 1.3, 2.4, 'saeule'))); paar(-7, 0, 1, 5, .9, 'mauer'); }
+  return H;
+}
+
+function fkaSpiel(stage) {
+  const R = g3Neu(stage);
+  if (!R) { const d = document.createElement('div'); d.className = 'tb-box'; d.innerHTML = '<div class="tb-karte lr-karte lv-karte"><h2>🧊 Hier fehlt die 3D-Grafik</h2><p>Dieses Spiel braucht 3D-Grafik. Auf diesem Gerät klappt das leider nicht. Probier ein anderes Spiel!</p></div>'; stage.appendChild(d); return; }
+  const M = G3.neu(), M2 = G3.neu(), M3 = G3.neu(), X = FKA_X, Z = FKA_Z, h = FKA_H, NX = FKA_NX, NZ = FKA_NZ, NV = (NX + 1) * (NZ + 1);
+  const lu = luLumiModell();
+  const mod = { lumi: { r: R.mesh(lu.rumpf), f: R.mesh(lu.fl), u: R.mesh(lu.fuss) }, pfeil: R.mesh((() => { const B = g3Bau(3); B.zyl(0, 0, 0, 0, .26, .4, 4, '#ffd23f', false, '#fff2a8'); return B.fertig(); })()),
+    stern: R.mesh((() => { const B = g3Bau(5); B.kugel(0, 0, 0, .45, .45, .45, '#ffd23f', 1, false); B.zyl(0, -.05, 0, .7, .7, .1, 5, '#fff2a8'); return B.fertig(); })()) };
+  let A = null, art = 'park', welt = null, figM = null;
+  const kam = { auge: [0, 16, 14], ziel: [0, 0, 0], fov: 52, nah: .8, fern: 600 };
+  const St = g3Steuer({ stick: true, knoepfe: K => { const rr = Math.max(36, Math.min(58, Math.min(K.W, K.H) * .09)), bereit = A && A.ich && A.ich.bombe <= 0; return [{ id: 'klecks', x: K.W - rr - 22, y: K.H - rr - 22, r: rr, t: 'Klecks', farbe: bereit ? '#bcd6ff' : '#ffffff', aus: !bereit }]; }, sonst: (K, a, b) => a > K.W * .62 && b > K.H * .35 ? 'klecks' : null, tasten: { ' ': 'klecks' } });
+
+  function weltBau(L) {
+    const P = FKA_PAL[L.art], B = g3Bau(31), G = g3Bau(32); let seed = 55; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+    B.boden(-X - 60, X + 60, -Z - 60, Z + 60, -.02, P.rand);
+    const wand = (x0, z0, x1, z1) => { const mi = [0, .5, 0]; B.q([x0, 0, z0], [x1, 0, z1], [x1, 1.1, z1], [x0, 1.1, z0], P.bande, mi); const l = Math.hypot(x1 - x0, z1 - z0); B.mit((x0 + x1) / 2, 1.1, (z0 + z1) / 2, Math.atan2(-(z1 - z0), x1 - x0), 0, 0, 1, 1, 1, () => B.kiste(0, 0, 0, l + .3, .2, .4, '#ffffff')); };
+    wand(-X, -Z, X, -Z); wand(-X, Z, X, Z); wand(-X, -Z, -X, Z); wand(X, -Z, X, Z);
+    [-1, 1].forEach(s => { B.scheibe(s * (X - 2.2), .02, 0, 2.2, 24, s < 0 ? '#bcd6ff' : G3.mix(P.gegner, '#ffffff', .6)); });
+
+    [-1, 1].forEach(sz => { for (let k = 0; k < 3; k++) { const zz = sz * (Z + 2.6 + k * 2.2), yy = k * 1.1; B.kiste(0, -1, zz, 2 * X + 6, yy + 2.1, 2.2, '#e6edf5', '#ffffff'); for (let x = -X - 2; x <= X + 2; x += 1.5) if (rnd() < .75) fgFan(B, x, yy + 1.1, zz, rnd() < .5 ? FKA_BLAU : P.gegner, 1.1, rnd() < .4 ? 1 : 0); } });
+    for (let q = 0; q < 36; q++) { const a = q / 36 * 6.2832 + rnd() * .1, rad = 52 + rnd() * 40, x = Math.cos(a) * rad, z = Math.sin(a) * rad;
+      if (L.art === 'park') { const sc = 2 + rnd() * 2; B.zyl(x, -.5, z, .4 * sc, .3 * sc, 2 * sc, 6, '#7a5a3a'); B.kugel(x, 2.6 * sc, z, 1.6 * sc, 1.8 * sc, 1.6 * sc, ['#3f8a46', '#4c9a50', '#ff8ad8'][Math.floor(rnd() * 3)], 1, false); }
+      else kgpDeko(B, G, L.art, x, -.5, z, 2.5 + rnd() * 2.5, rnd); }
+
+    [[-1, -1], [1, 1], [-1, 1], [1, -1]].forEach(([sx, sz], i) => { const c = i % 2 ? P.gegner : FKA_BLAU; B.zyl(sx * (X + 1.6), 0, sz * (Z + 1.4), 1.2, 1.3, 1.8, 14, '#c9d2dc', true, c); G.scheibe(sx * (X + 1.6), 1.82, sz * (Z + 1.4), 1.15, 14, c); });
+    return { art: L.art, b: R.mesh(B.fertig()), g: R.mesh(G.fertig()) };
+  }
+  function hindernisMesh(L, H) {
+    const P = FKA_PAL[L.art], B = g3Bau(33); B.zitter = .03;
+    H.forEach((o, i) => { const w = o.x1 - o.x0, t = o.z1 - o.z0, cx = (o.x0 + o.x1) / 2, cz = (o.z0 + o.z1) / 2;
+      if (o.art === 'wasser') { B.boden(o.x0, o.x1, o.z0, o.z1, .04, P.wasser); B.zitter = 0; [[o.x0, o.z0, o.x1, o.z0], [o.x0, o.z1, o.x1, o.z1], [o.x0, o.z0, o.x0, o.z1], [o.x1, o.z0, o.x1, o.z1]].forEach(([a, b2, c, d]) => B.kiste((a + c) / 2, 0, (b2 + d) / 2, Math.abs(c - a) + .2, .14, Math.abs(d - b2) + .2, '#ffffff')); B.zitter = .03; }
+      else if (o.art === 'saeule') { B.zyl(cx, 0, cz, w * .55, w * .5, o.h, 10, P.kiste2, false, '#ffffff'); }
+      else B.kiste(cx, 0, cz, w, o.h, t, i % 2 ? P.kiste : P.kiste2, G3.hell(i % 2 ? P.kiste : P.kiste2, 1.12)); });
+    return R.mesh(B.fertig());
+  }
+
+  const besitz = new Uint8Array(NV), gesperrt = new Uint8Array(NV), rausch = new Float32Array(NV);
+  for (let i = 0; i < NV; i++) rausch[i] = .94 + Math.random() * .1;
+  const CX = 12, CZ = 14, chunks = [];
+  function bodenBau(L) {
+    chunks.forEach(c => R.weg(c.m)); chunks.length = 0;
+    for (let ci = 0; ci < NX / CX; ci++) for (let cj = 0; cj < NZ / CZ; cj++) {
+      const d = new Float32Array(CX * CZ * 6 * 9); let k = 0;
+      for (let i = ci * CX; i < (ci + 1) * CX; i++) for (let j = cj * CZ; j < (cj + 1) * CZ; j++) {
+        [[i, j], [i + 1, j], [i + 1, j + 1], [i, j], [i + 1, j + 1], [i, j + 1]].forEach(([a, b]) => { d[k++] = -X + a * h; d[k++] = .012; d[k++] = -Z + b * h; d[k++] = 0; d[k++] = 1; d[k++] = 0; k += 3; }); }
+      const c = { ci, cj, d, m: null, dreck: true }; chunks.push(c); farben(c, L); c.m = R.mesh(d); c.dreck = false;
+    }
+  }
+  const idx = (a, b) => a * (NZ + 1) + b;
+  let farbT = null;
+  function farben(c, L) {
+    const P = FKA_PAL[L.art], f0 = G3.f(P.boden), f1 = G3.f(FKA_BLAU), f2 = G3.f(P.gegner), F = [f0, f1, f2], d = c.d; let k = 0;
+    for (let i = c.ci * CX; i < (c.ci + 1) * CX; i++) for (let j = c.cj * CZ; j < (c.cj + 1) * CZ; j++) {
+      [[i, j], [i + 1, j], [i + 1, j + 1], [i, j], [i + 1, j + 1], [i, j + 1]].forEach(([a, b]) => { const v = idx(a, b), f = F[besitz[v]], n = besitz[v] ? rausch[v] : (1 + (rausch[v] - .99) * .4); k += 6; d[k++] = f[0] * n; d[k++] = f[1] * n; d[k++] = f[2] * n; }); }
+  }
+  function male(x, z, rad, t) {
+    const a0 = Math.max(0, Math.floor((x - rad + X) / h)), a1 = Math.min(NX, Math.ceil((x + rad + X) / h)), b0 = Math.max(0, Math.floor((z - rad + Z) / h)), b1 = Math.min(NZ, Math.ceil((z + rad + Z) / h)); let neu = 0;
+    for (let a = a0; a <= a1; a++) for (let b = b0; b <= b1; b++) { const vx = -X + a * h, vz = -Z + b * h, dd = (vx - x) * (vx - x) + (vz - z) * (vz - z); if (dd > rad * rad) continue; const v = idx(a, b); if (gesperrt[v] || besitz[v] === t) continue;
+      if (rad > 1.2 && dd > rad * rad * .7 && Math.random() < .35) continue;
+      if (besitz[v]) A.zahl[besitz[v]]--; besitz[v] = t; A.zahl[t]++; neu++; }
+    if (neu) chunks.forEach(c => { if (!c.dreck && x + rad >= -X + c.ci * CX * h && x - rad <= -X + (c.ci + 1) * CX * h && z + rad >= -Z + c.cj * CZ * h && z - rad <= -Z + (c.cj + 1) * CZ * h) c.dreck = true; });
+    return neu;
+  }
+
+  function figuren(L) {
+    if (figM) figM.forEach(f => f && Object.values(f).forEach(m => R.weg(m)));
+    figM = [];
+    const rolle = c => { const B = g3Bau(41); B.mit(0, .22, -.95, 0, 0, Math.PI / 2, 1, 1, 1, () => { B.zyl(0, -.55, 0, .22, .22, 1.1, 12, c, true); }); B.mit(0, .55, -.62, 0, .9, 0, 1, 1, 1, () => B.kiste(0, 0, 0, .08, .6, .08, '#c9d2dc')); B.kiste(0, .22, -.95, 1.12, .05, .05, '#ffffff'); return R.mesh(B.fertig()); };
+    const ext = ['kappe', 'schleife', 'muetze', 'helm'];
+    for (let t = 0; t < 2; t++) { const c = t ? FKA_PAL[L.art].gegner : FKA_BLAU, rl = rolle(c);
+      for (let i = 0; i < 4; i++) { const p = fgPinguin(t ? c : '#2f6fd8', '#ffffff', ext[(i + t) % 4], '#ffffff'); figM.push({ r: R.mesh(p.rumpf), f: R.mesh(p.fl), u: R.mesh(p.fuss), rolle: rl }); } }
+    const kugel = c => { const B = g3Bau(42); B.kugel(0, 0, 0, .32, .32, .32, c, 1); return R.mesh(B.fertig()); };
+    figM.kugel = [kugel(FKA_BLAU), kugel(FKA_PAL[L.art].gegner)];
+  }
+  function bauen(L) {
+    if (!welt || welt.art !== L.art) { if (welt) { R.weg(welt.b); R.weg(welt.g); } welt = weltBau(L); }
+    if (!A || A.L.art !== L.art || !figM) figuren(L);
+    if (A && A.hm) R.weg(A.hm);
+    art = L.art; const H = fkaHindernisse(L);
+    besitz.fill(0); gesperrt.fill(0);
+    for (let a = 0; a <= NX; a++) for (let b = 0; b <= NZ; b++) { const vx = -X + a * h, vz = -Z + b * h; if (H.some(o => vx > o.x0 - .1 && vx < o.x1 + .1 && vz > o.z0 - .1 && vz < o.z1 + .1)) gesperrt[idx(a, b)] = 1; }
+    let frei = 0; for (let i = 0; i < NV; i++) if (!gesperrt[i]) frei++;
+
+    const nav = new Uint8Array(36 * 28); for (let i = 0; i < 36; i++) for (let j = 0; j < 28; j++) { const x = -X + i + .5, z = -Z + j + .5; if (H.some(o => x > o.x0 - .5 && x < o.x1 + .5 && z > o.z0 - .5 && z < o.z1 + .5)) nav[i * 28 + j] = 1; }
+    const sp = [];
+    for (let t = 0; t < 2; t++) for (let i = 0; i < L.n; i++) { const s = t ? 1 : -1, zz = (i - (L.n - 1) / 2) * 2.2;
+      sp.push({ t, i, ich: t === 0 && i === 0, x: s * (X - 2.2), z: zz, vx: 0, vz: 0, dir: t ? Math.PI : 0, anim: 0, bombe: 1 + i * .4, turbo: 0, speed: t === 0 ? (i === 0 ? 1 : .86 + L.w * .02) : L.botF * (.95 + i * .03), skill: t === 0 ? .7 : L.skill, ziel: null, weg: null, planT: 0, wurf: 0 }); }
+    A = { L, t: 0, H, hm: hindernisMesh(L, H), nav, sp, ich: sp[0], zahl: [0, 0, 0], frei, uhr: L.zeit, phase: 'start', count: 3.2, bomben: [], items: [], itemT: 6, teile: [], auswertung: 0 };
+    bodenBau(L); A.karteT = 0;
+  }
+  const clamp = (v, a, b) => Math.max(a, Math.min(b, v)), wrap = a => { while (a > Math.PI) a -= 6.2832; while (a < -Math.PI) a += 6.2832; return a; };
+  const funke = (x, y, z, n, f, st = 1, s = .08) => { for (let i = 0; i < n; i++) { const a = Math.random() * 6.28; A.teile.push({ x, y, z, vx: Math.cos(a) * 3 * st, vy: (1.5 + Math.random() * 3) * st, vz: Math.sin(a) * 3 * st, life: .45 + Math.random() * .4, max: .85, s0: s, f: f[i % f.length] }); } };
+  const farbeAn = (x, z) => { const a = clamp(Math.round((x + X) / h), 0, NX), b = clamp(Math.round((z + Z) / h), 0, NZ); return besitz[idx(a, b)]; };
+
+  function laufe(p, dt, wx, wz) {
+    const l = Math.hypot(wx, wz); if (l > 1) { wx /= l; wz /= l; }
+    const sp0 = Math.hypot(p.vx, p.vz), vo = sp0 > .5 ? 1.6 : 0, f = farbeAn(p.x + Math.cos(p.dir) * vo, p.z + Math.sin(p.dir) * vo), boden = f === p.t + 1 ? 1.22 : f ? .72 : 1, vmax = 5.8 * p.speed * boden * (p.turbo > 0 ? 1.35 : 1), acc = 26 * dt;
+    p.vx += clamp(wx * vmax - p.vx, -acc, acc); p.vz += clamp(wz * vmax - p.vz, -acc, acc);
+    p.x += p.vx * dt; p.z += p.vz * dt;
+    const sp = Math.hypot(p.vx, p.vz); if (sp > .4) p.dir += wrap(Math.atan2(p.vz, p.vx) - p.dir) * Math.min(1, dt * 10);
+    p.x = clamp(p.x, -X + .45, X - .45); p.z = clamp(p.z, -Z + .45, Z - .45);
+    A.H.forEach(o => { const qx = clamp(p.x, o.x0, o.x1), qz = clamp(p.z, o.z0, o.z1), dx = p.x - qx, dz = p.z - qz, d = Math.hypot(dx, dz);
+      if (d < .45) { if (d < 1e-4) { const pl = [p.x - o.x0, o.x1 - p.x, p.z - o.z0, o.z1 - p.z], m = Math.min(...pl), k = pl.indexOf(m); if (k === 0) p.x = o.x0 - .45; else if (k === 1) p.x = o.x1 + .45; else if (k === 2) p.z = o.z0 - .45; else p.z = o.z1 + .45; } else { p.x = qx + dx / d * .45; p.z = qz + dz / d * .45; } } });
+    p.anim += sp * dt * 2.6;
+    if (sp > .8) { const ca = Math.cos(p.dir), sa = Math.sin(p.dir); male(p.x + ca * .7, p.z + sa * .7, (p.ich ? .9 : .82) * (p.turbo > 0 ? 1.45 : 1), p.t + 1); }
+  }
+  function werfen(p) {
+    if (p.bombe > 0) return; p.bombe = p.ich ? 2.4 : 3.4; p.wurf = .3;
+    const ca = Math.cos(p.dir), sa = Math.sin(p.dir), w = 7.5, tx = clamp(p.x + ca * w, -X + 1, X - 1), tz = clamp(p.z + sa * w, -Z + 1, Z - 1), T = .75;
+    A.bomben.push({ t: p.t, x: p.x + ca * .4, y: 1.2, z: p.z + sa * .4, vx: (tx - p.x) / T, vz: (tz - p.z) / T, vy: (0 - 1.2) / T + 9 * T, zeit: 0 });
+    if (p.ich) akSnd.hop();
+  }
+
+  function weg(p, tx, tz) {
+    const W = 36, Hh = 28, dist = new Int16Array(W * Hh).fill(-1), q = [], gi = clamp(Math.floor(tx + X), 0, W - 1), gj = clamp(Math.floor(tz + Z), 0, Hh - 1);
+    dist[gi * Hh + gj] = 0; q.push(gi * Hh + gj);
+    for (let k = 0; k < q.length; k++) { const c = q[k], i = Math.floor(c / Hh), j = c % Hh; [[1, 0], [-1, 0], [0, 1], [0, -1]].forEach(([a, b]) => { const ni = i + a, nj = j + b; if (ni < 0 || nj < 0 || ni >= W || nj >= Hh) return; const n = ni * Hh + nj; if (dist[n] >= 0 || A.nav[n]) return; dist[n] = dist[c] + 1; q.push(n); }); }
+    return dist;
+  }
+  function plane(p) {
+    let best = null, bw = -1e9;
+    for (let k = 0; k < 26; k++) { const x = (Math.random() - .5) * (2 * X - 3), z = (Math.random() - .5) * (2 * Z - 3); if (A.H.some(o => x > o.x0 - .6 && x < o.x1 + .6 && z > o.z0 - .6 && z < o.z1 + .6)) continue;
+      let wert = 0; for (let a = -2; a <= 2; a++) for (let b = -2; b <= 2; b++) { const f = farbeAn(x + a * .8, z + b * .8); wert += f === p.t + 1 ? 0 : f ? 1.4 : 1; }
+      wert -= Math.hypot(x - p.x, z - p.z) * .32; A.sp.forEach(q => { if (q !== p && q.t === p.t && q.ziel && Math.hypot(q.ziel[0] - x, q.ziel[1] - z) < 5) wert -= 6; });
+      if (wert > bw) { bw = wert; best = [x, z]; } }
+    if (!best) best = [p.x * -.5, p.z * -.5];
+    p.ziel = best; p.weg = weg(p, best[0], best[1]); p.planT = 1.2 + Math.random() * 1.4;
+  }
+  function botEin(p, dt) {
+    p.planT -= dt; if (!p.ziel || p.planT <= 0 || Math.hypot(p.ziel[0] - p.x, p.ziel[1] - p.z) < 1) plane(p);
+    const W = 36, Hh = 28, i = clamp(Math.floor(p.x + X), 0, W - 1), j = clamp(Math.floor(p.z + Z), 0, Hh - 1); let wx = p.ziel[0] - p.x, wz = p.ziel[1] - p.z;
+    if (p.weg && p.weg[i * Hh + j] > 1) { let bd = p.weg[i * Hh + j], bn = null; [[1, 0], [-1, 0], [0, 1], [0, -1], [1, 1], [-1, -1], [1, -1], [-1, 1]].forEach(([a, b]) => { const ni = i + a, nj = j + b; if (ni < 0 || nj < 0 || ni >= W || nj >= Hh) return; const dd = p.weg[ni * Hh + nj]; if (dd >= 0 && dd < bd && (Math.abs(a) + Math.abs(b) === 1 || (p.weg[(i + a) * Hh + j] >= 0 && p.weg[i * Hh + j + b] >= 0))) { bd = dd; bn = [ni, nj]; } }); if (bn) { wx = -X + bn[0] + .5 - p.x; wz = -Z + bn[1] + .5 - p.z; } }
+    const l = Math.hypot(wx, wz) || 1; wx /= l; wz /= l; wz += Math.sin(A.t * 1.7 + p.i * 2) * .25;
+    if (p.bombe <= 0 && Math.random() < p.skill * .03) { const ca = Math.cos(p.dir), sa = Math.sin(p.dir), tx = p.x + ca * 7.5, tz = p.z + sa * 7.5; if (Math.abs(tx) < X - 1 && Math.abs(tz) < Z - 1) { let w = 0; for (let a = -1; a <= 1; a++) for (let b = -1; b <= 1; b++) w += farbeAn(tx + a * 1.2, tz + b * 1.2) === p.t + 1 ? 0 : 1; if (w >= 5) werfen(p); } }
+    return [wx, wz];
+  }
+
+  function prozent(t) { return A.frei ? A.zahl[t] / A.frei * 100 : 0; }
+  function schritt(K, dt) {
+    A.t += dt;
+    if (A.phase === 'start') { const c0 = Math.ceil(A.count); A.count -= dt; const c1 = Math.ceil(A.count); if (c1 !== c0) { if (c1 > 0) { K.ruf(String(c1)); Sound.glocke(660, 0, .25, .1); } else { K.ruf('Los!'); Sound.glocke(1320, 0, .4, .12); A.phase = 'spiel'; } } }
+    else if (A.phase === 'spiel') { A.uhr -= dt; if (A.uhr <= 0) { A.uhr = 0; A.phase = 'auswertung'; A.auswertung = 0; K.ruf('Stopp!'); Sound.glocke(1568, 0, .25, .1); Sound.glocke(1175, .3, .6, .1); } }
+    else if (A.phase === 'auswertung') { A.auswertung += dt; if (A.auswertung > 2.6 && K.phase === 'lauf') ende(K); }
+    const laeuft = A.phase === 'spiel';
+    A.sp.forEach(p => { p.bombe = Math.max(0, p.bombe - dt); p.turbo = Math.max(0, p.turbo - dt); p.wurf = Math.max(0, p.wurf - dt);
+      if (!laeuft) { p.vx *= .85; p.vz *= .85; p.anim += dt * (A.phase === 'auswertung' ? 4 : 0); return; }
+      let wx = 0, wz = 0;
+      if (p.ich && !A.auto) { const [sx, sy] = St.richtung(), f = A.kf || [0, -1], rx = -f[1], rz = f[0]; wx = rx * sx - f[0] * sy; wz = rz * sx - f[1] * sy; if (St.nimm('klecks')) werfen(p); }
+      else [wx, wz] = botEin(p, dt);
+      laufe(p, dt, wx, wz); });
+    for (let i = 0; i < A.sp.length; i++) for (let j = i + 1; j < A.sp.length; j++) { const p = A.sp[i], q = A.sp[j], dx = q.x - p.x, dz = q.z - p.z, d = Math.hypot(dx, dz); if (d < .85 && d > 1e-3) { const o = (.85 - d) / 2; p.x -= dx / d * o; p.z -= dz / d * o; q.x += dx / d * o; q.z += dz / d * o; } }
+
+    for (let i = A.bomben.length - 1; i >= 0; i--) { const b = A.bomben[i]; b.zeit += dt; b.vy -= 18 * dt; b.x += b.vx * dt; b.y += b.vy * dt; b.z += b.vz * dt;
+      if (b.y <= .2) { A.bomben.splice(i, 1); const c = b.t ? FKA_PAL[art].gegner : FKA_BLAU; if (A.H.some(o => o.art === 'wasser' && b.x > o.x0 && b.x < o.x1 && b.z > o.z0 && b.z < o.z1)) { funke(b.x, .2, b.z, 12, [FKA_PAL[art].wasser, '#ffffff'], .7); continue; }
+        male(b.x, b.z, 2.7, b.t + 1); funke(b.x, .3, b.z, 22, [c, c, '#ffffff'], 1.3, .1); if (b.t === 0 || Math.random() < .4) akGleit(420, 120, .18, 'sine', .08); } }
+
+    if (laeuft) { A.itemT -= dt; if (A.itemT <= 0 && A.items.length < 2) { A.itemT = 11 + Math.random() * 5; const ps = [[0, 0], [0, 9], [0, -9]].filter(q => !A.H.some(o => q[0] > o.x0 - 1 && q[0] < o.x1 + 1 && q[1] > o.z0 - 1 && q[1] < o.z1 + 1) && !A.items.some(it => it.x === q[0] && it.z === q[1])); const q = ps[Math.floor(Math.random() * ps.length)]; if (q) A.items.push({ x: q[0], z: q[1], art: Math.random() < .5 ? 'welle' : 'turbo', t: 0 }); }
+      A.items = A.items.filter(it => { it.t += dt; const p = A.sp.find(p => Math.hypot(p.x - it.x, p.z - it.z) < 1.1); if (!p) return true;
+        if (it.art === 'turbo') p.turbo = 5; else A.wellen = (A.wellen || []).concat([{ x: p.x, z: p.z, t: p.t, r: 0 }]);
+        if (p.ich) { K.msg(it.art === 'turbo' ? 'Turbo-Rolle! 🚀' : 'Farbwelle! 🌊', 1.2); Sound.good(); } funke(it.x, 1, it.z, 14, ['#ffd23f', '#ffffff'], .8); return false; }); }
+    if (A.wellen) A.wellen = A.wellen.filter(w => { w.r += dt * 9; male(w.x, w.z, w.r, w.t + 1); return w.r < 5.5; });
+    for (let i = A.teile.length - 1; i >= 0; i--) { const q = A.teile[i]; q.life -= dt; if (q.life <= 0) { A.teile.splice(i, 1); continue; } q.vy -= 9 * dt; q.x += q.vx * dt; q.y += q.vy * dt; q.z += q.vz * dt; q.s = q.s0 * Math.min(1, q.life / q.max * 1.6); }
+    if (A.teile.length > 220) A.teile.splice(0, A.teile.length - 220);
+    const a = prozent(1), c = prozent(2), m = Math.floor(Math.ceil(A.uhr) / 60), s = Math.ceil(A.uhr) % 60;
+    K.punkte = Math.round(a); K.ziel = `🔵 ${Math.round(a)} % : ${Math.round(c)} %  ⏱ ${m}:${String(s).padStart(2, '0')}`; K.fort = 1 - A.uhr / A.L.zeit;
+  }
+  function ende(K) {
+    const a = prozent(1), c = prozent(2), st = a > c ? 3 : a >= c - 5 ? 2 : 1;
+    K.ende(true, st, `<p>🔵 Blau ${Math.round(a)} % : ${Math.round(c)} % Gegner<br>${a > c ? 'Gewonnen! Mehr Fläche in Blau! 🏆' : a >= c - 5 ? 'Ganz knapp! 🤏' : 'Die anderen waren schneller. Nochmal?'}</p>`, '', 1600);
+  }
+
+  function kamera(K, dt) {
+    const asp = K.W / Math.max(1, K.H), hoch = asp < .95, p = A.ich;
+    const cx = clamp(p.x, hoch ? -12 : -9, hoch ? 12 : 9), cz = clamp(p.z, -8, 8);
+    A.cx = A.cx === undefined ? cx : g3Weich(A.cx, cx, dt * 3); A.cz = A.cz === undefined ? cz : g3Weich(A.cz, cz, dt * 3);
+    let e = hoch ? [A.cx, 19, A.cz + 11] : [A.cx, 13.5, A.cz + 11], t = [A.cx, 0, A.cz - 1.2];
+    kam.fov = hoch ? (asp < .6 ? 70 : 62) : 52;
+    if (A.phase === 'auswertung') { const q = Math.min(1, A.auswertung / 1.2); e = e.map((v, i) => v + ([0, 34, 16][i] - v) * q); t = t.map((v, i) => v + ([0, 0, 0][i] - v) * q); }
+    { const fx = t[0] - e[0], fz = t[2] - e[2], fl = Math.hypot(fx, fz) || 1; A.kf = [fx / fl, fz / fl]; }
+    if (K.phase === 'bereit' || !K.L) { const a = K.t * .16; e = [Math.sin(a) * 26, 22, Math.cos(a) * 22]; t = [0, 0, 0]; A.kam0 = { auge: e, ziel: t }; A.camB = 0; }
+    else if (A.kam0 && A.camB < 1) { A.camB = Math.min(1, A.camB + dt / 1.3); const q = A.camB * A.camB * (3 - 2 * A.camB), e0 = e, t0 = t; e = A.kam0.auge.map((v, i) => v + (e0[i] - v) * q); t = A.kam0.ziel.map((v, i) => v + (t0[i] - v) * q); }
+    kam.auge = e; kam.ziel = t;
+  }
+
+  function figur(K, p, m) {
+    const sp = Math.hypot(p.vx, p.vz), ph = p.anim; let fl = .9, fuss = 0, bob = 0, roll = 0;
+    if (A.phase === 'auswertung' && A.auswertung > 1.4) { const gew = prozent(p.t + 1) >= prozent(2 - p.t); if (gew) { fl = 1.4 + Math.sin(A.t * 9 + p.i) * .4; bob = Math.abs(Math.sin(A.t * 6 + p.i)) * .35; } }
+    else if (sp > .5) { bob = Math.abs(Math.sin(ph)) * .07; roll = Math.sin(ph) * .08; fuss = Math.sin(ph); fl = .75; }
+    if (p.wurf > 0) fl = -1.2;
+    G3.pose(M, p.x, bob, p.z, -p.dir - Math.PI / 2, 0, roll, p.ich ? .8 : .74);
+    R.mal(m.r, M, { glanz: .35 }); R.mal(m.rolle || figM[p.t * 4].rolle, M, { glanz: .5 });
+    [-1, 1].forEach(sd => { G3.mal(M, G3.pose(M2, sd * .47, 1.05, -.02, 0, -.9, sd * (fl + .1)), M3); R.mal(m.f, M3); G3.mal(M, G3.pose(M2, sd * .2, Math.max(0, -sd * fuss) * .12, sd * fuss * .22, 0, 0, 0), M3); R.mal(m.u, M3); });
+  }
+  function zeichne3D(K) {
+    const st = FKA_ST[art]; if (!A || !R.bild(kam, st, K.t)) return;
+    let n = 0; A.cs = ((A.cs || 0) + 5) % chunks.length; for (let k = 0; k < chunks.length && n < 8; k++) { const c = chunks[(A.cs + k) % chunks.length]; if (c.dreck) { farben(c, A.L); R.auffrischen(c.m); c.dreck = false; n++; } }
+    R.mal(welt.b, G3.pose(M, 0, 0, 0), { glanz: .2 }); R.mal(welt.g, M, { leucht: 1 }); R.mal(A.hm, M, { glanz: .3 });
+    chunks.forEach(c => R.mal(c.m, M, { glanz: .55 }));
+    A.items.forEach(it => R.mal(mod.stern, G3.pose(M, it.x, 1 + Math.sin(K.t * 3) * .15, it.z, K.t * 2), { leucht: .7, tint: it.art === 'turbo' ? [1, .8, .6] : [.6, .85, 1] }));
+    A.sp.forEach(p => { R.schatten(p.x, .02, p.z, .55, .45); figur(K, p, p.ich ? Object.assign({ rolle: figM[0].rolle }, mod.lumi) : figM[p.t * 4 + p.i]); });
+    A.bomben.forEach(b => { R.schatten(b.x, .02, b.z, .35, .35); R.mal(figM.kugel[b.t], G3.pose(M, b.x, b.y, b.z, b.zeit * 8), { glanz: .8 }); });
+    if (A.phase !== 'auswertung') R.mal(mod.pfeil, G3.pose(M, A.ich.x, 1.75 + Math.sin(K.t * 4) * .1, A.ich.z, K.t * 2), { leucht: .85 });
+    if (A.teile.length) R.teile(A.teile, .6);
+  }
+  function karte(K, x) {
+    if (!A.karte) { A.karte = document.createElement('canvas'); A.karte.width = NX + 1; A.karte.height = NZ + 1; A.kctx = A.karte.getContext('2d'); }
+    A.karteT -= 1 / 30; if (A.karteT <= 0) { A.karteT = .25; const im = A.kctx.createImageData(NX + 1, NZ + 1), P = FKA_PAL[art], cs = [G3.f(P.boden), G3.f(FKA_BLAU), G3.f(P.gegner)];
+      for (let a = 0; a <= NX; a++) for (let b = 0; b <= NZ; b++) { const v = idx(a, b), k = (b * (NX + 1) + a) * 4, c = gesperrt[v] ? [.55, .58, .62] : cs[besitz[v]]; im.data[k] = c[0] * 255; im.data[k + 1] = c[1] * 255; im.data[k + 2] = c[2] * 255; im.data[k + 3] = 235; }
+      A.kctx.putImageData(im, 0, 0); }
+    const w = Math.round(Math.min(150, K.W * .26)), hh = Math.round(w * (NZ + 1) / (NX + 1)), x0 = K.W - w - 14, y0 = 62;
+    x.save(); x.fillStyle = 'rgba(255,255,255,.8)'; x.fillRect(x0 - 4, y0 - 4, w + 8, hh + 8); x.imageSmoothingEnabled = true; x.drawImage(A.karte, x0, y0, w, hh);
+    const p = A.ich; x.fillStyle = '#ffd23f'; x.strokeStyle = '#12324A'; x.lineWidth = 2; x.beginPath(); x.arc(x0 + (p.x + X) / (2 * X) * w, y0 + (p.z + Z) / (2 * Z) * hh, 4.5, 0, 6.2832); x.fill(); x.stroke(); x.restore();
+  }
+  function balken(K, x) {
+    const q = Math.min(1, A.auswertung / 1.4), a = prozent(1) * q, c = prozent(2) * q, w = Math.min(K.W * .8, 520), x0 = (K.W - w) / 2, y0 = K.H * .3;
+    x.save(); x.fillStyle = 'rgba(255,255,255,.92)'; x.fillRect(x0 - 16, y0 - 16, w + 32, 112);
+    [[a, FKA_BLAU, '🔵 Blau'], [c, FKA_PAL[art].gegner, 'Gegner']].forEach(([v, f, n], i) => { const y = y0 + i * 46; x.fillStyle = '#e6edf5'; x.fillRect(x0, y, w, 34); x.fillStyle = f; x.fillRect(x0, y, Math.min(w, w * v / 70), 34); x.fillStyle = '#12324A'; x.font = h28aFont(18); x.textBaseline = 'middle'; x.fillText(`${n}: ${Math.round(v)} %`, x0 + 10, y + 18); });
+    x.restore();
+  }
+  const K = akBaukasten(stage, {
+    id: 'fka', titel: '🎨 Farbklecks-Arena 3D', text: 'Male die Arena blau! Joystick links zum Laufen, die Farbrolle malt von selbst. Rechts tippen wirft einen Farbklecks. Auf Blau bist du schneller. Wer am Ende mehr Fläche hat, gewinnt!', welten: FKA_WELTEN, n: 5, punkteWort: '% Blau', ersterTipp: false,
+    hilfe: 'Gewinnen gibt drei Sterne, ganz knapp verloren (bis 5 Prozent) zwei, jede Runde einen Stern. Goldene Sterne geben Turbo oder eine Farbwelle.',
+    layout: K => R.groesse(K.W, K.H), level: fkaLevel,
+    menu: K => { const [w, l] = lvAktuell('fka', 4, 5); bauen(fkaLevel(Math.max(0, w), Math.max(0, l))); },
+    start: (K, L) => { bauen(L); K.punkte = 0; K.fort = 0; K.ziel = '🔵 0 % : 0 %'; St.reset(); },
+    los: K => { A.count = 3.2; A.phase = 'start'; },
+    bereit: K => [K.L.name, K.L.st === 0 ? 'Joystick links: laufen, die Rolle malt. Rechts tippen: Farbklecks werfen. Male mehr Boden blau als die anderen!' : `${K.L.n} gegen ${K.L.n}. Hol dir die goldenen Sterne für Turbo und Farbwellen!`],
+    tippText: 'Tippe zum Starten!',
+    update: (K, dt) => { if (!A) return; if (K.phase === 'lauf' || K.phase === 'ende' || K.phase === 'fertig') schritt(K, dt); kamera(K, dt); },
+    draw: (K, x) => { x.clearRect(-60, -60, K.W + 120, K.H + 120); R.messe(); zeichne3D(K); if (A && (K.phase === 'lauf' || K.phase === 'ende')) { if (K.phase === 'lauf') karte(K, x); if (K.phase === 'lauf' && (A.phase === 'spiel' || A.phase === 'start')) St.zeichne(K, x); if (A.phase === 'auswertung') balken(K, x); } },
+    down: (K, a, b, e) => St.down(K, a, b, e), move: (K, a, b, e) => St.move(K, a, b, e), up: (K, a, b, e) => St.up(K, a, b, e),
+    taste: (K, e, an) => { if (an && K.phase === 'bereit') { K.los(); return; } if (St.taste(e, an)) e.preventDefault(); },
+    dbg: K => ({ get A() { return A; }, get R() { return R; }, St, kam: () => kam, male: (x, z, r, t) => male(x, z, r, t), farbeAn, prozent: t => prozent(t),
+      st: () => ({ phase: K.phase, spiel: A.phase, blau: +prozent(1).toFixed(1), gegner: +prozent(2).toFixed(1), uhr: +A.uhr.toFixed(1), sterne: K.sterne }),
+      sim: sec => { if (K.phase === 'bereit') K.los(); A.auto = true; A.ich.speed = A.L.botF * 1.05; for (let i = 0; i < sec * 60 && K.phase === 'lauf'; i++) K.schritt(1 / 60); A.auto = false; A.ich.speed = 1; return { phase: K.phase, spiel: A.phase, blau: Math.round(prozent(1)), gegner: Math.round(prozent(2)), uhr: Math.round(A.uhr), sterne: K.sterne }; } })
+  });
+}
+FUN_GAMES.farbklecks3d = { c: 'hits', t: 'Farbklecks-Arena 3D', seit: 'Farbklecks-Arena 3D', d: 'Zwei Pinguin-Teams rollen Farbe auf den Boden. Wer mehr Fläche bemalt, gewinnt! Mit Farbklecksen, Turbo-Rolle und Farbwellen. 4 Arenen mit 20 Runden.', i: '🎨' };
+FUN_IMPL.farbklecks3d = fkaSpiel;
+
 /*@@src belohnung311.js@@*/
 
 
@@ -104730,7 +105439,7 @@ const BLW_ARTEN = [['abenteuer', '🗺️', 'Abenteuer & Entdecken', '#1e8f88', 
 const BLW_PX_ART = { 'Abenteuer': 'abenteuer', 'Rätsel': 'knobeln', 'Hüpfen': 'rennen', 'Rennen': 'rennen', 'Sport': 'sport', 'Geschick': 'geschick', 'Bauen': 'kreativ' };
 const BLW_FUN_ART = { abenteuer: 'abenteuer', schnell: 'geschick', knobel: 'knobeln', denk: 'knobeln', kreativ: 'kreativ', fussball: 'sport', hits: 'geschick' };
 const BLW_FUN_ID = { memory: 'brett', vier: 'brett', ttt: 'brett', ludo: 'brett', maumau: 'brett', sammelduell: 'brett', wuerfel: 'brett', quartett: 'brett', mahjong: 'brett',
-  fischtausch: 'knobeln', parkplatz: 'knobeln', pfeilflucht: 'knobeln', doppel: 'knobeln', pinguinsumo: 'sport', pinguinrutsche: 'rennen', huepfer: 'rennen', ski: 'rennen', vulkansprung: 'rennen', fruchtschnitt: 'geschick', delfinshow: 'geschick', meeresmix: 'knobeln', lauf3d: 'rennen', abenteuer3d: 'abenteuer', kart3d: 'rennen', show3d: 'rennen', autoball3d: 'sport' };
+  fischtausch: 'knobeln', parkplatz: 'knobeln', pfeilflucht: 'knobeln', doppel: 'knobeln', pinguinsumo: 'sport', pinguinrutsche: 'rennen', huepfer: 'rennen', ski: 'rennen', vulkansprung: 'rennen', fruchtschnitt: 'geschick', delfinshow: 'geschick', meeresmix: 'knobeln', lauf3d: 'rennen', abenteuer3d: 'abenteuer', kart3d: 'rennen', show3d: 'rennen', autoball3d: 'sport', fussball3d: 'sport', farbklecks3d: 'geschick' };
 const BLW_CM_ICO = { baeck: '🥐', bahn: '🚂', detek: '🔍', markt: '🛒' };
 const BLW_NEU_TAGE = 14, BLW_LIEB_MAX = 8, BLW_NEU_MAX = 8;
 function blwS() { if (!isObj(S.blw)) S.blw = {}; const B = S.blw; if (!Array.isArray(B.h)) B.h = []; if (!isObj(B.n)) B.n = {}; if (!['art', 'neu', 'abc'].includes(B.sort)) B.sort = 'art'; return B; }
