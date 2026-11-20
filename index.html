@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-r5ZyG60ebSMqsCz/L8Sx4mqEq6hYLAO9zkrNAjHFGAw=' 'sha256-8AFIHWYR+Jc1LHG3Rtn+rz8lvkcbBPnYBq/S36uaLng=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-Um0r0ju2VtrbK5adqeGneQiEduynuPWZQEbx+AkApv8=' 'sha256-Wi0jWv3oJLaorfjGIPKnH7Gt9hvYA+MXhnj9Or9C0QQ=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -3293,6 +3293,56 @@ body.calm .pan-ci { animation: none; }
 .blw-einst .pxw-fach { margin-top: 8px; }
 .blw-block { margin-bottom: 12px; }
 @media (min-width: 700px) { .blw-nav { flex-wrap: wrap; overflow: visible; } }
+
+/* ---- style_blw480.css ---- */
+
+#blwInhalt .blw-nav { gap: 8px; padding: 10px 0 12px; }
+#blwInhalt .blw-tab { border-radius: 999px; padding: 9px 15px; font-size: 15px; background: #1f2a55; color: #fff; box-shadow: none; border: 2px solid rgba(255, 255, 255, .16); }
+#blwInhalt .blw-tab:nth-child(-n+4) { background: #ffd84a; color: #1d2440; border-color: #ffd84a; }
+#blwInhalt .blw-tab:active { transform: scale(.96); }
+#blwInhalt .blw-sek { margin-top: 18px; }
+#blwInhalt .blw-rk { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+#blwInhalt .blw-h { font-size: 19px; margin: 0; }
+#blwInhalt .blw-kat { margin: 14px 0 4px; font-size: 16px; }
+.blw-mehr { flex: none; border: 0; border-radius: 999px; padding: 8px 14px; font: inherit; font-weight: 800; font-size: 14px; background: rgba(255, 255, 255, .12); color: #fff; cursor: pointer; }
+.blw-mehr:active { transform: scale(.96); }
+.blw-reihe { display: flex; gap: 14px; overflow-x: auto; overflow-y: hidden; scroll-snap-type: x proximity; padding: 8px 4px 14px; margin: 0 -4px; -webkit-overflow-scrolling: touch; scrollbar-width: none; overscroll-behavior-x: contain; }
+.blw-reihe::-webkit-scrollbar { display: none; }
+#blwInhalt .blw-regal.auf > .blw-reihe, #blwInhalt .blw-gitter { display: grid; grid-template-columns: repeat(auto-fill, minmax(132px, 1fr)); overflow: visible; }
+#blwInhalt .blw-k { flex: 0 0 142px; scroll-snap-align: start; }
+#blwInhalt .blw-gross .blw-k { flex-basis: 168px; }
+#blwInhalt .blw-k .blw-g { flex: 1; display: flex; flex-direction: column; align-items: stretch; gap: 0; width: 100%; min-height: 0; padding: 0; border: 0; border-radius: 18px; overflow: hidden; background: #fff; color: #1d2440; text-align: left; box-shadow: 0 5px 0 rgba(0, 0, 0, .28); cursor: pointer; }
+#blwInhalt .blw-k .blw-g:active { transform: translateY(3px); box-shadow: 0 2px 0 rgba(0, 0, 0, .28); }
+#blwInhalt .blw-k.fav .blw-g { box-shadow: 0 0 0 3px #e03a6c, 0 5px 0 rgba(0, 0, 0, .28); }
+#blwInhalt .blw-g[aria-disabled="true"] { opacity: .5; }
+.blw-bild { position: relative; display: grid; place-items: center; height: 104px; background: var(--tc); background: linear-gradient(160deg, color-mix(in srgb, var(--tc) 45%, #fff), var(--tc)); }
+#blwInhalt .blw-gross .blw-bild { height: 124px; }
+.blw-bild img { width: 76px; height: 76px; object-fit: contain; image-rendering: pixelated; filter: drop-shadow(0 3px 0 rgba(0, 0, 0, .18)); }
+#blwInhalt .blw-bild .blw-emo { font-size: 56px; line-height: 1; filter: drop-shadow(0 3px 0 rgba(0, 0, 0, .15)); }
+#blwInhalt .blw-bild .blw-emo .eb-s { width: 62px; height: 62px; }
+#blwInhalt .blw-k .pxw-tx { padding: 8px 10px 10px; gap: 3px; }
+#blwInhalt .blw-k .pxw-tx b { font-family: var(--f-display); font-size: 15px; line-height: 1.15; min-height: 2.3em; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+#blwInhalt .blw-k .pxw-tx small { font-family: inherit; text-transform: none; letter-spacing: 0; font-size: 12px; font-weight: 800; color: #5a6a80; }
+#blwInhalt .blw-k .pxw-tx em { font-size: 12px; line-height: 1.2; }
+#blwInhalt .blw-k .pxw-neu { left: 8px; top: 8px; right: auto; transform: none; border-radius: 8px; box-shadow: none; font-size: 11px; padding: 2px 7px; }
+.blw-zw { position: absolute; right: 8px; top: 8px; font-style: normal; font-size: 14px; font-weight: 900; line-height: 1; padding: 4px 6px; border-radius: 999px; background: rgba(255, 255, 255, .92); color: #1d2440; }
+.blw-zw.blw-3d { font-size: 11px; padding: 4px 6px; letter-spacing: .04em; }
+#blwInhalt .blw-k .blw-herz { right: 6px; top: 64px; bottom: auto; width: 36px; height: 36px; font-size: 21px; line-height: 36px; background: rgba(255, 255, 255, .9); box-shadow: 0 2px 0 rgba(0, 0, 0, .15); }
+#blwInhalt .blw-gross .blw-k .blw-herz { top: 82px; }
+#blwInhalt .blw-info { margin: 6px 0 8px; }
+#blwInhalt .blw-sort { margin: 8px 0 2px; }
+#blwInhalt .blw-sort .pxw-chip { border-radius: 999px; box-shadow: none; padding: 7px 13px; font-size: 14px; }
+@media (max-width: 560px) {
+  #blwInhalt .blw-k { flex-basis: 124px; }
+  #blwInhalt .blw-gross .blw-k { flex-basis: 146px; }
+  .blw-bild { height: 92px; }
+  #blwInhalt .blw-gross .blw-bild { height: 108px; }
+  #blwInhalt .blw-k .blw-herz { top: 54px; }
+  #blwInhalt .blw-gross .blw-k .blw-herz { top: 70px; }
+  #blwInhalt .blw-bild .blw-emo { font-size: 48px; }
+  .blw-bild img { width: 64px; height: 64px; }
+  #blwInhalt .blw-regal.auf > .blw-reihe, #blwInhalt .blw-gitter { grid-template-columns: repeat(auto-fill, minmax(116px, 1fr)); gap: 10px; }
+}
 
 /* ---- style_cm.css ---- */
 
@@ -9447,6 +9497,12 @@ button.mau-k:disabled { cursor: default; }
 .rt-msg { min-height: 24px; font-weight: 700; margin: 8px 0; }
 .rt-msg.ok { color: #2a8a46; } .rt-msg.tipp { color: #b25e00; }
 
+/* ---- style_spiele480.css ---- */
+
+.mgf-karte { margin: 8px auto 4px; border-collapse: collapse; font-size: 15px; }
+.mgf-karte th, .mgf-karte td { padding: 4px 8px; border-bottom: 1px solid rgba(18, 50, 74, .15); text-align: center; }
+.mgf-karte td:first-child { text-align: left; font-weight: 800; }
+
 /* ---- style_spielzeit.css ---- */
 
 .spz-ic { font-size: 60px; line-height: 1; }
@@ -10565,8 +10621,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '4.7.0';
-  var MAP = {"probe":0,"files":[[10555,"fehler_kern.js"],[10843,null],[10845,"data.js"],[11560,"data_more.js"],[11932,"data_su2.js"],[12159,"data_es.js"],[12527,"data_wissen.js"],[12728,"data_v21.js"],[13413,"data_v24.js"],[13901,"data_v25.js"],[14390,"data_v26.js"],[14489,"data_v29.js"],[14797,"data_v30.js"],[15131,"data_v31.js"],[15437,"data_kunst.js"],[15634,"data_v214.js"],[15737,"data_v216.js"],[16030,"schrift.js"],[16334,"eingabe.js"],[16545,"data_k34m.js"],[17063,"data_k34d.js"],[17417,"data_k34s.js"],[17871,"data_v224.js"],[18744,"data_v225w.js"],[19113,"data_v225k.js"],[19557,"data_herz.js"],[19911,"data_fb226.js"],[20054,"data_tf226.js"],[20261,"data_v227a.js"],[21361,"data_v227b.js"],[22315,"data_h28b.js"],[22355,"data_l28a.js"],[23221,"data_l28b.js"],[24401,"data_schaetz.js"],[24883,"data_party8.js"],[24933,"data_alce.js"],[25604,"data_alce2.js"],[25853,"data_alce3.js"],[26268,"registry.js"],[26782,"app.js"],[28045,"fun.js"],[28633,"fun2.js"],[28949,"atelier.js"],[29323,"kunst225.js"],[29513,"herz.js"],[29877,"reise.js"],[30179,"iglu.js"],[30345,"offline.js"],[30452,"party.js"],[30936,"meine.js"],[31292,"loeffel.js"],[31463,"trend.js"],[32005,"fun228a.js"],[32866,"fun228b.js"],[33543,"kueche.js"],[34582,"stimme.js"],[34637,"klassen.js"],[34786,"freunde_vorab.js"],[34807,"mut.js"],[35229,"schule.js"],[35718,"fussball226.js"],[36040,"schaetzen.js"],[36471,"party8.js"],[37090,"tiere.js"],[37549,"fussball232.js"],[37764,"party8b.js"],[38066,"weg.js"],[38287,"px.js"],[38707,"px_fein.js"],[38761,"px_data.js"],[39018,"pxwelt.js"],[39102,"px_abenteuer.js"],[39931,"px_abenteuer2.js"],[40685,"px_abenteuer3.js"],[41076,"px_abenteuer4.js"],[41286,"px_baukasten.js"],[41395,"px_abenteuer_fein.js"],[41612,"px_abenteuer_fein2.js"],[41964,"px_abenteuer5.js"],[42371,"px_abenteuer6.js"],[42647,"px_abenteuer7.js"],[43003,"px_level300.js"],[43554,"px_schwach300.js"],[43628,"px_zwei300.js"],[43742,"lumicheckt300.js"],[43935,"schreiben300.js"],[44149,"rechenkarte300.js"],[44269,"lerncheck300.js"],[44492,"material300.js"],[44822,"lernweg300.js"],[45346,"px_ski.js"],[45988,"px_wurf.js"],[46517,"px_insel.js"],[47718,"px_kicker.js"],[48653,"px_eis.js"],[49639,"px_run.js"],[50854,"px_brk.js"],[51816,"px_pol.js"],[53167,"px_frog.js"],[54427,"px_angel.js"],[55742,"px_golf.js"],[56776,"px_tauch.js"],[58041,"px_hockey.js"],[58997,"px_lab.js"],[60332,"px_plopp.js"],[61538,"px_stadion.js"],[63049,"px_stadion2.js"],[63101,"px_training.js"],[63470,"cm.js"],[63960,"cmwelt.js"],[64016,"cm_baeck.js"],[64809,"cm_bahn.js"],[65573,"cm_detek.js"],[66290,"cm_markt.js"],[67003,"ff.js"],[67160,"ff_mathe.js"],[69150,"ff_deutsch.js"],[70738,"ff_sach_a.js"],[72987,"ff_sach_b.js"],[75216,"ff_sprachen.js"],[77624,"zm.js"],[78537,"tt.js"],[78750,"data_tagebuch.js"],[78793,"data_hoerspiel.js"],[78952,"leseecke.js"],[79279,"kt.js"],[79582,"comicbuch.js"],[79860,"alce.js"],[80023,"alce_aufg.js"],[80214,"formen.js"],[80665,"data_formen.js"],[80906,"data_formen2.js"],[81128,"spielzeit.js"],[81350,"data_faktmeinung.js"],[81469,"data_es248.js"],[81733,"data_en249.js"],[81972,"data_wissen249.js"],[82403,"data_kunst249.js"],[82686,"data_fussball250.js"],[82810,"data_werte252.js"],[83063,"data_lesen252.js"],[83124,"data_k34_252.js"],[83210,"art254.js"],[83328,"data_werte255.js"],[83466,"data_lesen255.js"],[83602,"forscher255.js"],[83750,"zufall250.js"],[83796,"stufe259.js"],[83806,"advent.js"],[84069,"wdh.js"],[84167,"eswarm288.js"],[84218,"abwechslung294.js"],[84293,"bilder293a.js"],[84383,"bilder293b.js"],[84513,"bilder293c.js"],[84611,"bilder293d.js"],[84733,"bilder293e.js"],[84897,"bilder293f.js"],[84977,"bilder292.js"],[85423,"denk.js"],[85460,"data_viaje265.js"],[85603,"klassenarbeit.js"],[85736,"quizduell.js"],[85859,"neu267.js"],[86124,"prog.js"],[86229,"lernstand.js"],[86296,"blatt.js"],[86398,"uebung295.js"],[86719,"schuh296.js"],[86927,"uebung297.js"],[87314,"minus298.js"],[87555,"schrift299.js"],[87683,"data_es271.js"],[87797,"plus269.js"],[87891,"schach.js"],[88123,"schachtaktik.js"],[88375,"fun270.js"],[88538,"data_neu274.js"],[88747,"plus272.js"],[88801,"spiele274.js"],[88924,"kasten.js"],[89028,"erklaer.js"],[89141,"apa.js"],[89222,"neu276.js"],[89363,"spiele276.js"],[89413,"neu277.js"],[89591,"spiele277.js"],[89846,"lernen278.js"],[90106,"spiele278.js"],[90449,"lernen279.js"],[90774,"lernen279b.js"],[91172,"spanisch280.js"],[91464,"spanisch283.js"],[91697,"mehr281.js"],[91843,"grafik280.js"],[92222,"tiefsee280.js"],[92500,"abenteuer280.js"],[92712,"abenteuer281.js"],[92824,"design281.js"],[92956,"party281.js"],[93087,"grafik281.js"],[93304,"traumtor292.js"],[93511,"kart293.js"],[93788,"lumi_live.js"],[93904,"sicher.js"],[94088,"stil.js"],[94142,"zurueck287.js"],[94185,"nfbilder300.js"],[94348,"formen300.js"],[94955,"musik300.js"],[95126,"lernweg300b.js"],[95249,"lernweg300c.js"],[95409,"espanol300.js"],[95515,"fabel310_bild.js"],[95766,"fabel310.js"],[96157,"eisbude310.js"],[96383,"turbo310.js"],[96588,"sumo310.js"],[96723,"beifahrer310.js"],[96798,"dreier310.js"],[96914,"ring310.js"],[97023,"loch330.js"],[97373,"reise340.js"],[97443,"fisch340.js"],[97999,"rutsche340.js"],[98410,"knobel340.js"],[98648,"frucht350.js"],[98953,"vulkan350.js"],[99196,"delfin350.js"],[99391,"musik350.js"],[99561,"arcade360.js"],[99677,"strasse360.js"],[99973,"blasen360.js"],[100181,"meer360.js"],[100350,"spirale360.js"],[100514,"sterne360.js"],[100721,"alt360a.js"],[100991,"alt360b.js"],[101184,"alt360c.js"],[101438,"alt360d.js"],[101601,"alt370a.js"],[101798,"alt370b.js"],[102002,"alt370c.js"],[102140,"gl390.js"],[102383,"lauf390.js"],[102892,"ab3_level.js"],[103237,"abenteuer400.js"],[103731,"figuren410.js"],[103826,"kart410.js"],[104179,"show410.js"],[104494,"ball410.js"],[104807,"fussball420.js"],[105232,"farbe420.js"],[105513,"flug430.js"],[105703,"sport430.js"],[106074,"insel440.js"],[106354,"buddel440.js"],[106568,"party450.js"],[106976,"tiere450.js"],[107388,"malbuch460a.js"],[107711,"malbuch460b.js"],[107963,"malbuch460c.js"],[108068,"airhockey470.js"],[108345,"belohnung311.js"],[108506,"druck311.js"],[108600,"freunde.js"],[108737,"start.js"],[108747,null],[108757,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '4.8.0';
+  var MAP = {"probe":0,"files":[[10611,"fehler_kern.js"],[10899,null],[10901,"data.js"],[11616,"data_more.js"],[11988,"data_su2.js"],[12215,"data_es.js"],[12583,"data_wissen.js"],[12784,"data_v21.js"],[13469,"data_v24.js"],[13957,"data_v25.js"],[14446,"data_v26.js"],[14545,"data_v29.js"],[14853,"data_v30.js"],[15187,"data_v31.js"],[15493,"data_kunst.js"],[15690,"data_v214.js"],[15793,"data_v216.js"],[16086,"schrift.js"],[16390,"eingabe.js"],[16601,"data_k34m.js"],[17119,"data_k34d.js"],[17473,"data_k34s.js"],[17927,"data_v224.js"],[18800,"data_v225w.js"],[19169,"data_v225k.js"],[19613,"data_herz.js"],[19967,"data_fb226.js"],[20110,"data_tf226.js"],[20317,"data_v227a.js"],[21417,"data_v227b.js"],[22371,"data_h28b.js"],[22411,"data_l28a.js"],[23277,"data_l28b.js"],[24457,"data_schaetz.js"],[24939,"data_party8.js"],[24989,"data_alce.js"],[25660,"data_alce2.js"],[25909,"data_alce3.js"],[26324,"registry.js"],[26838,"app.js"],[28102,"fun.js"],[28690,"fun2.js"],[29006,"atelier.js"],[29380,"kunst225.js"],[29570,"herz.js"],[29934,"reise.js"],[30236,"iglu.js"],[30402,"offline.js"],[30509,"party.js"],[30993,"meine.js"],[31349,"loeffel.js"],[31520,"trend.js"],[32062,"fun228a.js"],[32923,"fun228b.js"],[33600,"kueche.js"],[34639,"stimme.js"],[34694,"klassen.js"],[34843,"freunde_vorab.js"],[34864,"mut.js"],[35286,"schule.js"],[35775,"fussball226.js"],[36097,"schaetzen.js"],[36528,"party8.js"],[37147,"tiere.js"],[37606,"fussball232.js"],[37821,"party8b.js"],[38123,"weg.js"],[38344,"px.js"],[38764,"px_fein.js"],[38818,"px_data.js"],[39075,"pxwelt.js"],[39159,"px_abenteuer.js"],[39988,"px_abenteuer2.js"],[40742,"px_abenteuer3.js"],[41133,"px_abenteuer4.js"],[41343,"px_baukasten.js"],[41452,"px_abenteuer_fein.js"],[41669,"px_abenteuer_fein2.js"],[42021,"px_abenteuer5.js"],[42428,"px_abenteuer6.js"],[42704,"px_abenteuer7.js"],[43060,"px_level300.js"],[43611,"px_schwach300.js"],[43685,"px_zwei300.js"],[43799,"lumicheckt300.js"],[43992,"schreiben300.js"],[44206,"rechenkarte300.js"],[44326,"lerncheck300.js"],[44549,"material300.js"],[44879,"lernweg300.js"],[45403,"px_ski.js"],[46045,"px_wurf.js"],[46574,"px_insel.js"],[47775,"px_kicker.js"],[48710,"px_eis.js"],[49696,"px_run.js"],[50911,"px_brk.js"],[51873,"px_pol.js"],[53224,"px_frog.js"],[54484,"px_angel.js"],[55799,"px_golf.js"],[56833,"px_tauch.js"],[58098,"px_hockey.js"],[59054,"px_lab.js"],[60389,"px_plopp.js"],[61595,"px_stadion.js"],[63106,"px_stadion2.js"],[63158,"px_training.js"],[63527,"cm.js"],[64017,"cmwelt.js"],[64073,"cm_baeck.js"],[64866,"cm_bahn.js"],[65630,"cm_detek.js"],[66347,"cm_markt.js"],[67060,"ff.js"],[67217,"ff_mathe.js"],[69207,"ff_deutsch.js"],[70795,"ff_sach_a.js"],[73044,"ff_sach_b.js"],[75273,"ff_sprachen.js"],[77681,"zm.js"],[78594,"tt.js"],[78807,"data_tagebuch.js"],[78850,"data_hoerspiel.js"],[79009,"leseecke.js"],[79336,"kt.js"],[79639,"comicbuch.js"],[79917,"alce.js"],[80080,"alce_aufg.js"],[80271,"formen.js"],[80722,"data_formen.js"],[80963,"data_formen2.js"],[81185,"spielzeit.js"],[81407,"data_faktmeinung.js"],[81526,"data_es248.js"],[81790,"data_en249.js"],[82029,"data_wissen249.js"],[82460,"data_kunst249.js"],[82743,"data_fussball250.js"],[82867,"data_werte252.js"],[83120,"data_lesen252.js"],[83181,"data_k34_252.js"],[83267,"art254.js"],[83385,"data_werte255.js"],[83523,"data_lesen255.js"],[83659,"forscher255.js"],[83807,"zufall250.js"],[83853,"stufe259.js"],[83863,"advent.js"],[84126,"wdh.js"],[84224,"eswarm288.js"],[84275,"abwechslung294.js"],[84350,"bilder293a.js"],[84440,"bilder293b.js"],[84570,"bilder293c.js"],[84668,"bilder293d.js"],[84790,"bilder293e.js"],[84954,"bilder293f.js"],[85034,"bilder292.js"],[85480,"denk.js"],[85517,"data_viaje265.js"],[85660,"klassenarbeit.js"],[85793,"quizduell.js"],[85916,"neu267.js"],[86181,"prog.js"],[86286,"lernstand.js"],[86353,"blatt.js"],[86455,"uebung295.js"],[86776,"schuh296.js"],[86984,"uebung297.js"],[87371,"minus298.js"],[87612,"schrift299.js"],[87740,"data_es271.js"],[87854,"plus269.js"],[87948,"schach.js"],[88180,"schachtaktik.js"],[88432,"fun270.js"],[88595,"data_neu274.js"],[88804,"plus272.js"],[88858,"spiele274.js"],[88981,"kasten.js"],[89085,"erklaer.js"],[89198,"apa.js"],[89279,"neu276.js"],[89420,"spiele276.js"],[89470,"neu277.js"],[89648,"spiele277.js"],[89903,"lernen278.js"],[90163,"spiele278.js"],[90506,"lernen279.js"],[90831,"lernen279b.js"],[91229,"spanisch280.js"],[91521,"spanisch283.js"],[91754,"mehr281.js"],[91900,"grafik280.js"],[92279,"tiefsee280.js"],[92557,"abenteuer280.js"],[92769,"abenteuer281.js"],[92881,"design281.js"],[93013,"party281.js"],[93144,"grafik281.js"],[93361,"traumtor292.js"],[93568,"kart293.js"],[93845,"lumi_live.js"],[93961,"sicher.js"],[94145,"stil.js"],[94199,"zurueck287.js"],[94242,"nfbilder300.js"],[94405,"formen300.js"],[95012,"musik300.js"],[95183,"lernweg300b.js"],[95306,"lernweg300c.js"],[95466,"espanol300.js"],[95572,"fabel310_bild.js"],[95823,"fabel310.js"],[96214,"eisbude310.js"],[96440,"turbo310.js"],[96645,"sumo310.js"],[96780,"beifahrer310.js"],[96855,"dreier310.js"],[96971,"ring310.js"],[97080,"loch330.js"],[97430,"reise340.js"],[97500,"fisch340.js"],[98056,"rutsche340.js"],[98467,"knobel340.js"],[98705,"frucht350.js"],[99010,"vulkan350.js"],[99253,"delfin350.js"],[99448,"musik350.js"],[99618,"arcade360.js"],[99734,"strasse360.js"],[100030,"blasen360.js"],[100238,"meer360.js"],[100407,"spirale360.js"],[100571,"sterne360.js"],[100778,"alt360a.js"],[101048,"alt360b.js"],[101241,"alt360c.js"],[101495,"alt360d.js"],[101658,"alt370a.js"],[101855,"alt370b.js"],[102059,"alt370c.js"],[102197,"gl390.js"],[102440,"lauf390.js"],[102949,"ab3_level.js"],[103294,"abenteuer400.js"],[103788,"figuren410.js"],[103883,"kart410.js"],[104236,"show410.js"],[104551,"ball410.js"],[104864,"fussball420.js"],[105289,"farbe420.js"],[105570,"flug430.js"],[105760,"sport430.js"],[106131,"insel440.js"],[106411,"buddel440.js"],[106625,"party450.js"],[107033,"tiere450.js"],[107445,"malbuch460a.js"],[107768,"malbuch460b.js"],[108020,"malbuch460c.js"],[108125,"airhockey470.js"],[108402,"zwei480.js"],[108436,"minigolf480.js"],[108713,"schneeball480.js"],[109011,"billard480.js"],[109236,"belohnung311.js"],[109397,"belohnung480.js"],[109478,"druck311.js"],[109572,"freunde.js"],[109709,"start.js"],[109719,null],[109729,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -26783,9 +26839,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '4.7.0';
+const APP_VERSION = '4.8.0';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "4.8.0", d: "20.11.2026", t: ["Neue Spiele zu zweit: Minigolf 3D mit 60 Löchern, Schneeball-Arena 3D und Pinguin-Billard 3D, alle auch allein spielbar", "Belohnungswelt neu sortiert: kleine Kacheln in Regalen, oben Lieblinge, Neu, Zu zweit und 3D. Die Party-Spiele sind jetzt auch dort"] },
   { v: "4.7.0", d: "20.11.2026", t: ["Neues Spiel Air-Hockey 3D: allein gegen Pinguine oder zu zweit an einem Gerät, vier Hallen mit Prellern, Quallen und zwei Pucks", "Sport-Party 3D und Kart-Grand-Prix 3D jetzt auch zu zweit: Tennis gegeneinander, abwechselnd werfen und schießen, Kart-Rennen mit geteiltem Bildschirm"] },
   { v: "4.6.0", d: "20.11.2026", t: ["Ausmalbilder zum Ausdrucken in der Kunst-Welt: 19 Bereiche mit Tieren, Meer, Dinos, Fahrzeugen, Fußball, Advent und mehr, drei Stufen, immer neue Bilder", "Mandalas, Muster, ABC, Zahlen zum Zählen und Rechen-Mandalas, jedes Bild auch am iPad ausmalen und in die Galerie hängen"] },
   { v: "4.5.0", d: "20.11.2026", t: ["Party-Brett 3D: Würfel-Brettspiel mit Pinguinen, auch zu zweit an einem Gerät, Frage-Felder mit Aufgaben und 5 Minispiele, 16 Partys", "Tierfreunde-Insel 3D: Fantasie-Tiere füttern, Freundschafts-Aufgaben lösen und Häuschen bauen, 20 Tiere auf vier Inseln"] },
@@ -38241,7 +38298,7 @@ function homeDoors() {
   let pet = ['🐶', 'Füttern & spielen']; try { if (typeof trS === 'function') pet = trDoor(); } catch (e) { }
   const doors = [
 
-    typeof showPaHub === 'function' ? d('pahub', '🎉', 'Party-Spiele', 'Für 2 bis 8 Kinder', 'd-party', '') : '',
+
     typeof showTiere === 'function' ? d('tiere', pet[0], 'Haustiere', pet[1], 'd-pets', '') : '',
     d('sachen', '🎒', 'Meine Sachen', news ? '✨ Neues entdecken' : 'Sticker, Pokale, Missionen …', 'd-sachen', news ? '✨' : '')
   ].filter(Boolean);
@@ -108342,6 +108399,840 @@ function ahkSpiel(stage) {
 FUN_GAMES.airhockey3d = { c: 'hits', t: 'Air-Hockey 3D', seit: 'Air-Hockey 3D', d: 'Schieb den Schläger mit dem Finger und schieß den Puck ins Tor! Allein gegen Pinguin-Freunde oder zu zweit an einem Gerät. 4 Hallen mit 20 Spielen.', i: '🏒' };
 FUN_IMPL.airhockey3d = ahkSpiel;
 
+/*@@src zwei480.js@@*/
+
+
+
+
+
+
+
+function g3Rahmen(kam, punkte, asp, dir, oben, rand) {
+  const P = G3.neu(), V = G3.neu(), VP = G3.neu(), c = kam.ziel, r = Object.assign({ x: .92, o: .82, u: .9 }, rand || {});
+  G3.persp(P, (kam.fov || 50) * Math.PI / 180, Math.max(.2, asp), .1, 2000);
+  const auge = d => [c[0] + dir[0] * d, c[1] + dir[1] * d, c[2] + dir[2] * d];
+  const passt = d => { G3.blick(V, auge(d), c, oben); G3.mal(P, V, VP); return punkte.every(p => { const q = G3.proj(VP, p[0], p[1], p[2]); return q[2] > .05 && Math.abs(q[0]) <= r.x && q[1] <= r.o && q[1] >= -r.u; }); };
+  let lo = .5, hi = 600; for (let i = 0; i < 34; i++) { const m = (lo + hi) / 2; if (passt(m)) hi = m; else lo = m; }
+  kam.auge = auge(hi); kam.oben = oben || null; return hi;
+}
+
+function g3AufEbene(kam, W, H, a, b, y = 0) {
+  const e = kam.auge, t = kam.ziel, u = kam.oben || [0, 1, 0];
+  let zx = e[0] - t[0], zy = e[1] - t[1], zz = e[2] - t[2], l = Math.hypot(zx, zy, zz) || 1; zx /= l; zy /= l; zz /= l;
+  let xx = u[1] * zz - u[2] * zy, xy = u[2] * zx - u[0] * zz, xz = u[0] * zy - u[1] * zx; l = Math.hypot(xx, xy, xz) || 1; xx /= l; xy /= l; xz /= l;
+  const yx = zy * xz - zz * xy, yy = zz * xx - zx * xz, yz = zx * xy - zy * xx;
+  const tv = Math.tan((kam.fov || 50) * Math.PI / 360), nx = (a / Math.max(1, W) * 2 - 1) * tv * W / Math.max(1, H), ny = (1 - b / Math.max(1, H) * 2) * tv;
+  const dx = -zx + nx * xx + ny * yx, dy = -zy + nx * xy + ny * yy, dz = -zz + nx * xz + ny * yz, s = (y - e[1]) / (Math.abs(dy) < 1e-6 ? -1e-6 : dy);
+  return [e[0] + dx * s, e[2] + dz * s];
+}
+
+function g3Schild(x, cx, cy, text, farbe = 'rgba(255,255,255,.9)', fs = 17, tf = '#12324A') {
+  x.save(); x.font = h28aFont(fs); x.textAlign = 'center'; x.textBaseline = 'middle'; const w = x.measureText(text).width + fs * 1.6, h = fs * 1.9;
+  x.fillStyle = farbe; h28aRR(x, cx - w / 2, cy - h / 2, w, h, h / 2); x.fill(); x.fillStyle = tf; x.fillText(text, cx, cy + 1); x.restore(); return w;
+}
+
+function g3Misch(a, b, q) { return a.map((v, i) => v + (b[i] - v) * q); }
+
+/*@@src minigolf480.js@@*/
+
+
+
+
+
+
+
+
+let MGF_ZWEI = false;
+const MGF_WELTEN = [
+  { n: 'Blumenwiese', i: '🌼', farbe: '#3aa65a', art: 'wiese' },
+  { n: 'Strandplatz', i: '🏖️', farbe: '#e0a12f', art: 'strand' },
+  { n: 'Eisberg-Golf', i: '❄️', farbe: '#2f7fd8', art: 'eis' },
+  { n: 'Sternen-Golf', i: '🌟', farbe: '#6a4fd6', art: 'sterne' }
+];
+const MGF_PAL = {
+  wiese: { rasen: '#3fae4f', rasen2: '#48b958', wand: '#c98a4a', wand2: '#e8b878', sockel: '#8a5a32', boden: '#86c96f', boden2: '#7bbf64', wasser: '#3fa7d6', sand: '#ecd39a', tee: '#8fe09a', pfeil: '#ffd23f', ring: '#ff8ad8', flagge: '#e8463a' },
+  strand: { rasen: '#2fa59a', rasen2: '#36b0a4', wand: '#ffffff', wand2: '#ff7a5a', sockel: '#d9b77c', boden: '#f1d7a8', boden2: '#ead0a0', wasser: '#3fb8e0', sand: '#f6e2b0', tee: '#7fe0d6', pfeil: '#ffffff', ring: '#ffd23f', flagge: '#ff7a5a' },
+  eis: { rasen: '#4f8fd0', rasen2: '#5799d8', wand: '#e8f4ff', wand2: '#ffffff', sockel: '#9fc6e8', boden: '#e3f0fa', boden2: '#d8e9f7', wasser: '#1f6fb0', sand: '#ffffff', tee: '#8cc4f2', pfeil: '#ffd23f', ring: '#ff8ad8', flagge: '#e8463a' },
+  sterne: { rasen: '#3b3f9a', rasen2: '#4347a6', wand: '#2a2f60', wand2: '#8ef3ff', sockel: '#20264c', boden: '#161c40', boden2: '#1b2249', wasser: '#a46bff', sand: '#c4a2ff', tee: '#5a60c8', pfeil: '#8ef3ff', ring: '#ffd56b', flagge: '#ff8ad8' }
+};
+const MGF_ST = { wiese: FUB_ST.rasen, strand: KGP_ST.strand, eis: KGP_ST.eis, sterne: KGP_ST.sterne };
+
+
+const MGF_BAHNEN = [
+  { n: 'Gerade', par: 2, k: ['#####', '#.H.#', '#...#', '#...#', '#...#', '#...#', '#.S.#', '#####'] },
+  { n: 'Trichter', par: 2, k: ['#######', '#.....#', '#..h..#', '#.....#', '#.....#', '#.....#', '#..S..#', '#######'] },
+  { n: 'Knick', par: 2, k: ['#######', '#...H.#', '#.....#', '#..####', '#..####', '#..####', '#S.####', '#######'] },
+  { n: 'Hügel', par: 2, k: ['#####', '#.H.#', '#...#', '#...#', '#.O.#', '#...#', '#...#', '#.S.#', '#####'] },
+  { n: 'Pfosten', par: 2, k: ['#######', '#..H..#', '#.*.*.#', '#.....#', '#..*..#', '#.....#', '#.*.*.#', '#..S..#', '#######'] },
+  { n: 'Drehkreuz', par: 3, k: ['#####', '#.H.#', '#...#', '#...#', '#.X.#', '#...#', '#...#', '#.S.#', '#####'] },
+  { n: 'Wasser-Brücke', par: 3, k: ['#######', '#..H..#', '#.....#', '#~~.~~#', '#~~.~~#', '#.....#', '#..S..#', '#######'] },
+  { n: 'Tunnel', par: 2, k: ['#########', '#.H.#...#', '#...#.T.#', '#...#...#', '#.U.#...#', '#...#.S.#', '#########'] },
+  { n: 'Pfeilfelder', par: 3, k: ['#######', '#..H..#', '#.....#', '#>>>>.#', '#.....#', '#.<<<<#', '#.....#', '#..S..#', '#######'] },
+  { n: 'Schleife', par: 3, k: ['#########', '#...H...#', '#.#####.#', '#.#####.#', '#.#####.#', '#...S...#', '#########'] },
+  { n: 'Sandbunker', par: 5, k: ['########', '#H....:#', '#####..#', '#....:.#', '#..#####', '#..:...#', '#.....S#', '########'] },
+  { n: 'Zickzack', par: 5, k: ['#########', '#H......#', '#.......#', '######..#', '#.o..o..#', '#.......#', '#..######', '#.......#', '#......S#', '#########'] },
+  { n: 'Insel', par: 3, k: ['#########', '#.......#', '#.~~~~~.#', '#.~.H.~.#', '#.~...~.#', '#.~~.~~.#', '#.......#', '#...S...#', '#########'] },
+  { n: 'Doppel-Drehkreuz', par: 4, k: ['#####', '#.H.#', '#...#', '#.X.#', '#...#', '#...#', '#.X.#', '#...#', '#.S.#', '#####'] },
+  { n: 'Großes Finale', par: 3, k: ['#########', '#H..~...#', '#.U.~...#', '#~~~~...#', '#....X..#', '#.T.....#', '#....S..#', '#########'] }
+];
+const MGF_R = .11, MGF_CUP = .17, MGF_V = 7.2, MGF_G = 6.5, MGF_MAX = 7;
+const MGF_PUSH = { '>': [1, 0], '<': [-1, 0], '^': [0, -1], 'v': [0, 1] };
+function mgfLevel(w, l) {
+  const st = w * 5 + l, art = MGF_WELTEN[w].art; let seed = 31 + st * 17; const r = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+  const loecher = [];
+  for (let i = 0; i < 3; i++) { let m = -1; for (let v = 0; v < 30 && (m < 0 || loecher.some(x => x.m === m)); v++) m = Math.max(0, Math.min(14, Math.round(st * 14 / 19 + (i - 1) * 1.6 + (r() - .5) * (2.4 + v * .3)))); loecher.push({ m, sp: r() < .5 }); }
+  loecher.sort((a, b) => a.m - b.m);
+  return { w, l, st, art, loecher, par: loecher.reduce((s, x) => s + MGF_BAHNEN[x.m].par, 0), name: `${MGF_WELTEN[w].n} ${l + 1}: ${loecher.map(x => MGF_BAHNEN[x.m].n).join(', ')}` };
+}
+
+function mgfBahn(m, sp) {
+  const B = MGF_BAHNEN[m], k = B.k.map(z => sp ? z.split('').reverse().join('').replace(/[<>]/g, c => c === '<' ? '>' : '<') : z), R = k.length, C = Math.max(...k.map(z => z.length));
+  const g = k.map(z => z.padEnd(C, '#')), pos = (i, j) => [i - (C - 1) / 2, j - (R - 1) / 2];
+  const L = { m, n: B.n, par: B.par, g, R, C, pos, bumps: [], posts: [], kreuze: [], tee: null, cup: null, T: null, U: null };
+  g.forEach((z, j) => z.split('').forEach((c, i) => { const [x, y] = pos(i, j);
+    if (c === 'S') L.tee = [x, y]; else if (c === 'H' || c === 'h') { L.cup = [x, y]; if (c === 'h') L.bumps.push({ x, z: y, R: 1.25, H: -.24 }); }
+    else if (c === 'o') L.bumps.push({ x, z: y, R: .6, H: .26 }); else if (c === 'O') L.bumps.push({ x, z: y, R: 1.35, H: .48 }); else if (c === 'u') L.bumps.push({ x, z: y, R: .8, H: -.3 });
+    else if (c === '*') L.posts.push([x, y]); else if (c === 'X') L.kreuze.push({ x, z: y, a0: (i + j) * .7, w: (L.kreuze.length % 2 ? -1 : 1) * (1.1 + m * .04) }); else if (c === 'T') L.T = [x, y]; else if (c === 'U') L.U = [x, y]; }));
+  return L;
+}
+function mgfZelle(L, x, z) { const i = Math.round(x + (L.C - 1) / 2), j = Math.round(z + (L.R - 1) / 2); return j >= 0 && j < L.R && i >= 0 && i < L.C ? L.g[j][i] : '#'; }
+function mgfHoehe(L, x, z) { let h = 0; for (const b of L.bumps) { const d = Math.hypot(x - b.x, z - b.z); if (d < b.R) { const c = Math.cos(Math.PI * d / (2 * b.R)); h += b.H * c * c; } } return h; }
+function mgfGrad(L, x, z) { let gx = 0, gz = 0; for (const b of L.bumps) { const dx = x - b.x, dz = z - b.z, d = Math.hypot(dx, dz); if (d < b.R && d > 1e-6) { const u = Math.PI * d / (2 * b.R), dh = -b.H * Math.PI / (2 * b.R) * Math.sin(2 * u); gx += dh * dx / d; gz += dh * dz / d; } } return [gx, gz]; }
+function mgfSpiel(stage) {
+  const R = g3Neu(stage);
+  if (!R) { const d = document.createElement('div'); d.className = 'tb-box'; d.innerHTML = '<div class="tb-karte lr-karte lv-karte"><h2>🧊 Hier fehlt die 3D-Grafik</h2><p>Dieses Spiel braucht 3D-Grafik. Auf diesem Gerät klappt das leider nicht. Probier ein anderes Spiel!</p></div>'; stage.appendChild(d); return; }
+  const M = G3.neu(), M2 = G3.neu(), M3 = G3.neu(), clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+  const bau = (seed, f) => { const B = g3Bau(seed); f(B); return R.mesh(B.fertig()); };
+  const lu = luLumiModell(), pia = fgPinguin('#ff8ad8', '#ffffff', 'schleife', '#ffffff');
+  const mod = { fig: [{ r: R.mesh(lu.rumpf), f: R.mesh(lu.fl), u: R.mesh(lu.fuss) }, { r: R.mesh(pia.rumpf), f: R.mesh(pia.fl), u: R.mesh(pia.fuss) }] };
+  mod.ball = ['#3f8fe0', '#ff6fb8'].map(c => bau(40, B => { B.kugel(0, 0, 0, MGF_R, MGF_R, MGF_R, '#ffffff', 2); B.zyl(0, -MGF_R * .25, 0, MGF_R * 1.01, MGF_R * 1.01, MGF_R * .5, 16, c, true, c); }));
+  mod.putter = bau(41, B => { B.mit(.26, .95, -.12, 0, -.42, 0, 1, 1, 1, () => B.kiste(0, -.95, 0, .05, .98, .05, '#c9d2dc')); B.kiste(.26, -.02, -.52, .34, .09, .12, '#2b2f3a'); });
+  mod.kreuz = bau(42, B => { B.zyl(0, -.05, 0, .12, .12, .42, 10, '#e8463a', true, '#ffffff'); B.kiste(0, .08, 0, 1.7, .14, .1, '#ffd23f', '#ffffff'); });
+  let A = null, art = 'wiese', bahnM = null;
+  const kam = { auge: [0, 12, 6], ziel: [0, 0, 0], fov: 46, nah: .3, fern: 300 };
+  const SPN = [{ n: 'Lumi', c: '#3f8fe0', h: '#bfe0ff' }, { n: 'Pia', c: '#ff6fb8', h: '#ffd0ec' }];
+
+  function bahnBau(L) {
+    const P = MGF_PAL[art], B = g3Bau(60 + L.m), G = g3Bau(61 + L.m), N = 4, nacht = art === 'sterne';
+    const frei = c => c !== '#';
+    L.g.forEach((z, j) => z.split('').forEach((c, i) => { if (!frei(c)) return; const [x0, z0] = L.pos(i, j);
+      if (c === '~') { G.boden(x0 - .5, x0 + .5, z0 - .5, z0 + .5, -.07, P.wasser); B.kiste(x0, -.62, z0, 1.02, .5, 1.02, P.sockel); return; }
+      const col = c === ':' ? P.sand : c === 'S' ? P.tee : (i + j) % 2 ? P.rasen : P.rasen2;
+      for (let a = 0; a < N; a++) for (let b = 0; b < N; b++) { const xa = x0 - .5 + a / N, xb = xa + 1 / N, za = z0 - .5 + b / N, zb = za + 1 / N, p = (x, y) => [x, mgfHoehe(L, x, y), y];
+        B.q(p(xa, za), p(xb, za), p(xb, zb), p(xa, zb), col, [(xa + xb) / 2, -2, (za + zb) / 2]); }
+      B.kiste(x0, -.62, z0, 1.02, .5, 1.02, P.sockel);
+      if (MGF_PUSH[c]) { const [dx, dz] = MGF_PUSH[c], px = -dz, pz = dx; for (let q = -1; q <= 1; q += 2) { const cx = x0 + dx * q * .22, cz = z0 + dz * q * .22, tip = [cx + dx * .16, .012, cz + dz * .16], l1 = [cx - dx * .1 + px * .2, .012, cz - dz * .1 + pz * .2], l2 = [cx - dx * .1 - px * .2, .012, cz - dz * .1 - pz * .2]; G.dr(l1, tip, l2, G3.f(P.pfeil), null, [0, 1, 0], [0, 1, 0], [0, 1, 0]); } }
+
+      [[1, 0], [-1, 0], [0, 1], [0, -1]].forEach(([di, dj]) => { const n = (L.g[j + dj] || '')[i + di]; if (n && n !== '#') return;
+        if (di) B.kiste(x0 + di * .57, -.14, z0, .14, .4, 1.28, P.wand, P.wand2); else B.kiste(x0, -.14, z0 + dj * .57, 1.28, .4, .14, P.wand, P.wand2); });
+      if (nacht && (i + j) % 3 === 0) G.kugel(x0, -.36, z0, .05, .05, .05, '#8ef3ff', 0);
+    }));
+    L.posts.forEach(([x, z]) => B.zyl(x, -.05, z, .2, .2, .4, 14, P.wand, true, P.wand2));
+    if (L.cup) { const [x, z] = L.cup, y = mgfHoehe(L, x, z); B.scheibe(x, y + .004, z, MGF_CUP, 18, '#141a2a'); B.zyl(x + .02, y, z, .02, .02, 1.25, 6, '#ffffff'); G.dr([x + .03, y + 1.22, z], [x + .48, y + 1.08, z], [x + .03, y + .92, z], G3.f(P.flagge), null, [0, 0, 1], [0, 0, 1], [0, 0, 1]); G.dr([x + .03, y + 1.22, z], [x + .03, y + .92, z], [x + .48, y + 1.08, z], G3.f(P.flagge), null, [0, 0, -1], [0, 0, -1], [0, 0, -1]); }
+    [L.T, L.U].forEach((p, k) => { if (!p) return; const [x, z] = p; G.scheibe(x, .008, z, .34, 20, P.ring); B.scheibe(x, .012, z, .26, 20, k ? '#ffffff' : '#141a2a'); });
+
+    const ext = 40, r = B.zuf; B.zitter = .04;
+    for (let x = -ext; x < ext; x += 5) for (let z = -ext; z < ext; z += 5) B.boden(x, x + 5, z, z + 5, -.63, ((x + z) / 5) % 2 ? P.boden : P.boden2);
+    B.zitter = 0;
+    const weit = (x, z) => Math.abs(x) > L.C / 2 + 1.3 || Math.abs(z) > L.R / 2 + 1.3;
+    for (let k = 0; k < 46; k++) { const a = r() * 6.283, d = 4 + r() * 14, x = Math.cos(a) * d * (L.C / 6 + .6), z = Math.sin(a) * d * (L.R / 7 + .5); if (!weit(x, z)) continue; const y = -.63, s = .7 + r() * .7;
+      if (art === 'wiese') { if (k % 3) { B.zyl(x, y, z, .12 * s, .1 * s, .9 * s, 6, '#7a5a3a'); B.kugel(x, y + 1.3 * s, z, .7 * s, .8 * s, .7 * s, k % 2 ? '#3f8a46' : '#4c9a50', 1, false); } else for (let q = 0; q < 4; q++) G.kugel(x + q * .25, y + .12, z + (q % 2) * .2, .09, .07, .09, ['#ffd23f', '#ff8ad8', '#ffffff', '#c4a2ff'][q], 0); }
+      else if (art === 'strand') { if (k % 3) { let px = x, py = y; for (let q = 0; q < 5; q++) { B.zyl(px, py, z, .1 * s, .09 * s, .45 * s, 6, '#a87842'); px += .06 * s; py += .45 * s; } for (let q = 0; q < 6; q++) B.mit(px, py, z, q * 1.05, .5, 0, s, s, s, () => B.kiste(0, 0, -.55, .24, .03, 1.1, '#3aa65a')); } else { B.zyl(x, y, z, .03, .03, 1.1, 5, '#ffffff'); B.zyl(x, y + 1, z, .7, 0, .3, 10, ['#e94f6a', '#3fa7d6', '#f2c14e'][k % 3]); } }
+      else if (art === 'eis') { if (k % 3) B.kugel(x, y, z, .6 * s, .45 * s, .6 * s, '#ffffff', 1, false); else { B.kugel(x, y + .3 * s, z, .3 * s, .3 * s, .3 * s, '#ffffff', 1); B.kugel(x, y + .75 * s, z, .22 * s, .22 * s, .22 * s, '#ffffff', 1); B.zyl(x, y + .75 * s, z - .2 * s, .04 * s, 0, .14 * s, 5, '#ff9b26'); } }
+      else { if (k % 2) G.kugel(x, y + .1 + r() * 1.5, z, .08, .08, .08, ['#ffffff', '#8ef3ff', '#ffd56b'][k % 3], 0); else B.kugel(x, y + .8, z, .55 * s, .55 * s, .55 * s, ['#a46bff', '#ff8ad8', '#5cc8ff'][k % 3], 1); } }
+    return { b: R.mesh(B.fertig()), g: R.mesh(G.fertig()) };
+  }
+
+  function kamSetz(K) {
+    if (!A || !A.bahn) return; const L = A.bahn, asp = K.W / Math.max(1, K.H), lang = L.R >= L.C, quer = asp >= 1, langWaag = lang === quer, t = .42;
+    const dir = langWaag ? [Math.sin(t), Math.cos(t), 0] : [0, Math.cos(t), Math.sin(t)], oben = langWaag ? [-1, 0, 0] : [0, 0, -1];
+    const pk = []; L.g.forEach((z, j) => z.split('').forEach((c, i) => { if (c === '#') return; const [x, y] = L.pos(i, j); pk.push([x - .6, -.1, y - .6], [x + .6, .3, y + .6], [x - .6, .3, y + .6], [x + .6, -.1, y - .6]); }));
+    if (L.cup) pk.push([L.cup[0], 1.3, L.cup[1]]);
+    kam.ziel = [0, 0, 0]; kam.fov = 44; g3Rahmen(kam, pk, asp, dir, oben, { x: .94, o: quer ? .8 : .76, u: .82 });
+  }
+
+  function bauen(L) {
+    art = L.art; const zwei = MGF_ZWEI;
+    A = { L, zwei, t: 0, phase: 'warte', loch: -1, bahn: null, sp: SPN.slice(0, zwei ? 2 : 1).map((s, i) => ({ ...s, i, schlaege: [], b: null })), dran: 0, teile: [], ziel: null, auto: false, pt: 0 };
+    neuesLoch(0);
+  }
+  function neuesLoch(n) {
+    A.loch = n; const h = A.L.loecher[n]; A.bahn = mgfBahn(h.m, h.sp); if (bahnM) { R.weg(bahnM.b); R.weg(bahnM.g); } bahnM = bahnBau(A.bahn);
+    const [tx, tz] = A.bahn.tee; A.sp.forEach((s, i) => { s.schlaege[n] = 0; s.b = { x: tx + (A.zwei ? (i ? .26 : -.26) : 0), z: tz, vx: 0, vz: 0, drin: false, sink: 0, ruhe: 1, alt: null, tunnelT: 0, weg: false }; });
+    A.dran = A.zwei ? n % 2 : 0; A.phase = A.phase === 'warte' ? 'warte' : 'zielen'; A.pt = 0; A.ziel = null; A.knopf = null;
+    if (R.W) kamSetz({ W: R.W, H: R.H });
+  }
+  const ich = () => A.sp[A.dran];
+  function schiessen(K, vx, vz) {
+    const s = ich(), b = s.b; b.alt = [b.x, b.z]; b.vx = vx; b.vz = vz; b.ruhe = 0; s.schlaege[A.loch]++; A.phase = 'rollt'; A.pt = 0; A.ziel = null;
+    akGleit(260, 160, .08, 'triangle', .07); Sound.glocke(880, 0, .05, .04);
+  }
+  function rollen(K, b, h) {
+    const L = A.bahn, c = mgfZelle(L, b.x, b.z), [gx, gz] = mgfGrad(L, b.x, b.z); let ax = -MGF_G * gx, az = -MGF_G * gz;
+    const pu = MGF_PUSH[c]; if (pu) { ax += pu[0] * 2.4; az += pu[1] * 2.4; }
+    b.vx += ax * h; b.vz += az * h;
+    let sp = Math.hypot(b.vx, b.vz); const mu = c === ':' ? 4.4 : 1.05, ns = Math.max(0, sp - (mu + .3 * sp) * h); if (sp > 0) { b.vx *= ns / sp; b.vz *= ns / sp; } sp = ns;
+
+    if (L.cup) { const dx = L.cup[0] - b.x, dz = L.cup[1] - b.z, d = Math.hypot(dx, dz);
+      if (d < .3 && sp < 1.4 && d > 1e-4) { b.vx += dx / d * 2.4 * h; b.vz += dz / d * 2.4 * h; }
+      if (d < MGF_CUP - .02) { if (sp < 3.4) { b.drin = true; b.vx = b.vz = 0; return; } if (!b.lippe) { b.lippe = .2; const a = (Math.random() - .5) * 1.2, ca = Math.cos(a), sa = Math.sin(a), vx = b.vx; b.vx = (vx * ca - b.vz * sa) * .75; b.vz = (vx * sa + b.vz * ca) * .75; } } }
+    if (b.lippe > 0) b.lippe -= h;
+    b.x += b.vx * h; b.z += b.vz * h;
+
+    const i0 = Math.round(b.x + (L.C - 1) / 2), j0 = Math.round(b.z + (L.R - 1) / 2);
+    for (let dj = -1; dj <= 1; dj++) for (let di = -1; di <= 1; di++) { const cc = (L.g[j0 + dj] || '')[i0 + di]; if (cc && cc !== '#') continue;
+      const [cx, cz] = L.pos(i0 + di, j0 + dj), px = clamp(b.x, cx - .5, cx + .5), pz = clamp(b.z, cz - .5, cz + .5), dx = b.x - px, dz = b.z - pz, d = Math.hypot(dx, dz);
+      if (d < MGF_R) { if (d < 1e-6) { if (b.alt2) { b.x = b.alt2[0]; b.z = b.alt2[1]; } b.vx *= -.5; b.vz *= -.5; continue; } const nx = dx / d, nz = dz / d; b.x = px + nx * MGF_R; b.z = pz + nz * MGF_R; const vn = b.vx * nx + b.vz * nz; if (vn < 0) { b.vx -= 1.75 * vn * nx; b.vz -= 1.75 * vn * nz; if (-vn > .6) akGleit(420, 300, .04, 'square', Math.min(.05, -vn * .012)); } } }
+
+    L.posts.forEach(([x, z]) => { const dx = b.x - x, dz = b.z - z, d = Math.hypot(dx, dz), md = MGF_R + .2; if (d < md && d > 1e-6) { const nx = dx / d, nz = dz / d; b.x = x + nx * md; b.z = z + nz * md; const vn = b.vx * nx + b.vz * nz; if (vn < 0) { b.vx -= 1.8 * vn * nx; b.vz -= 1.8 * vn * nz; akGleit(700, 500, .04, 'square', .04); } } });
+
+    L.kreuze.forEach(k => { const a = k.a0 + k.w * A.t, ca = Math.cos(a), sa = Math.sin(a), rx = b.x - k.x, rz = b.z - k.z, s = clamp(rx * ca + rz * sa, -.85, .85), px = k.x + ca * s, pz = k.z + sa * s, dx = b.x - px, dz = b.z - pz, d = Math.hypot(dx, dz), md = MGF_R + .07;
+      if (d < md && d > 1e-6) { const nx = dx / d, nz = dz / d; b.x = px + nx * md; b.z = pz + nz * md; const kvx = -k.w * (pz - k.z), kvz = k.w * (px - k.x), vn = (b.vx - kvx) * nx + (b.vz - kvz) * nz; if (vn < 0) { b.vx -= 1.8 * vn * nx; b.vz -= 1.8 * vn * nz; akGleit(500, 350, .05, 'square', .04); } b.ruhe = 0; } });
+
+    if (L.T && L.U && b.tunnelT <= 0 && Math.hypot(b.x - L.T[0], b.z - L.T[1]) < .3) { const s2 = Math.max(2, Math.hypot(b.vx, b.vz)), l = Math.hypot(b.vx, b.vz) || 1, dx = b.vx / l, dz = b.vz / l; b.x = L.U[0] + dx * .35; b.z = L.U[1] + dz * .35; b.vx = dx * s2; b.vz = dz * s2; b.tunnelT = .5; akGleit(300, 900, .25, 'sine', .08); }
+    if (b.tunnelT > 0) b.tunnelT -= h;
+
+    if (mgfZelle(L, b.x, b.z) === '~') b.nass = true;
+    b.alt2 = [b.x, b.z];
+  }
+  function stossBaelle(h) {
+    if (A.sp.length < 2) return; const [p, q] = A.sp.map(s => s.b); if (p.drin || q.drin || p.weg || q.weg) return;
+    const dx = q.x - p.x, dz = q.z - p.z, d = Math.hypot(dx, dz); if (d >= 2 * MGF_R || d < 1e-6) return;
+    const nx = dx / d, nz = dz / d, o = (2 * MGF_R - d) / 2; p.x -= nx * o; p.z -= nz * o; q.x += nx * o; q.z += nz * o;
+    const vn = (p.vx - q.vx) * nx + (p.vz - q.vz) * nz; if (vn > 0) { p.vx -= vn * nx; p.vz -= vn * nz; q.vx += vn * nx; q.vz += vn * nz; p.ruhe = q.ruhe = 0; akGleit(900, 700, .03, 'square', .04); }
+  }
+  function lochWort(n, par) { return n === 1 ? 'Ass! Mit einem Schlag! 🌟' : n <= par - 1 ? 'Birdie! 🐦' : n === par ? 'Par! 👍' : 'Eingelocht!'; }
+  function schritt(K, dt) {
+    A.t += dt; A.pt += dt;
+    for (let i = A.teile.length - 1; i >= 0; i--) { const q = A.teile[i]; q.life -= dt; if (q.life <= 0) { A.teile.splice(i, 1); continue; } q.vy -= 9 * dt; q.x += q.vx * dt; q.y += q.vy * dt; q.z += q.vz * dt; q.s = q.s0 * Math.min(1, q.life / q.max * 1.6); }
+    A.sp.forEach(s => { if (s.b && s.b.drin && s.b.sink < 1) s.b.sink = Math.min(1, s.b.sink + dt * 2.5); });
+    if (A.phase === 'warte' || A.phase === 'aus') return;
+    if (A.phase === 'zielen' && A.auto && A.pt > .35) autoSchuss(K);
+    if (A.phase === 'rollt') {
+      const n = 6, h = dt / n;
+      for (let k = 0; k < n; k++) { A.sp.forEach(s => { const b = s.b; if (b.drin || b.weg || b.nass) return; rollen(K, b, h); }); stossBaelle(h); }
+      A.sp.forEach(s => { const b = s.b; if (b.drin || b.weg) return; const sp = Math.hypot(b.vx, b.vz), [gx, gz] = mgfGrad(A.bahn, b.x, b.z), zieht = MGF_G * Math.hypot(gx, gz) > 1.1 || MGF_PUSH[mgfZelle(A.bahn, b.x, b.z)];
+        if (sp < .07 && !zieht) { b.vx = b.vz = 0; b.ruhe += dt; } else if (sp < .05) b.ruhe += dt; else b.ruhe = 0; });
+      const s = ich(), b = s.b;
+      if (b.nass) { b.nass = false; funke(b.x, .05, b.z, 14, ['#7fd0ff', '#ffffff']); b.x = b.alt[0]; b.z = b.alt[1]; b.vx = b.vz = 0; s.schlaege[A.loch]++; b.ruhe = 1; K.msg('Platsch! Ins Wasser. Zurück an die alte Stelle, ein Strafschlag.', 1.8); akSnd.platsch(); }
+      A.sp.forEach(o => { if (o !== s && o.b.nass) { o.b.nass = false; o.b.x = A.bahn.tee[0]; o.b.z = A.bahn.tee[1]; o.b.vx = o.b.vz = 0; o.b.ruhe = 1; } });
+      if (b.drin && !b.gemeldet) { b.gemeldet = true; const n = s.schlaege[A.loch], par = A.bahn.par; K.ruf(lochWort(n, par)); if (n <= par) Sound.win(); else Sound.good(); funke(A.bahn.cup[0], .3, A.bahn.cup[1], 26, [s.c, '#ffd23f', '#ffffff']); }
+      const ruhig = A.sp.every(o => o.b.drin || o.b.weg || o.b.ruhe > .3);
+      if (ruhig || A.pt > 25) zugEnde(K);
+    }
+    if (A.phase === 'pause' && A.pt > 2.2) { if (A.loch + 1 < A.L.loecher.length) { A.phase = 'zielen'; neuesLoch(A.loch + 1); K.msg(`Loch ${A.loch + 1}: ${A.bahn.n} · Par ${A.bahn.par}${A.zwei ? ` · ${ich().n} fängt an` : ''}`, 1.8); } else spielEnde(K); }
+    const sum = s => s.schlaege.reduce((a, b) => a + (b || 0), 0);
+    K.punkte = sum(A.sp[0]); K.ziel = `Loch ${A.loch + 1}/${A.L.loecher.length} · Par ${A.bahn.par}`;
+  }
+  function zugEnde(K) {
+    A.sp.forEach(o => { if (o.b.drin || o.b.weg) return; o.b.vx = o.b.vz = 0; });
+    const s = ich();
+    if (!s.b.drin && s.schlaege[A.loch] >= MGF_MAX) { s.b.weg = true; K.msg(`${A.zwei ? s.n + ': ' : ''}7 Schläge, das reicht für dieses Loch.`, 1.6); }
+    const offen = A.sp.filter(o => !o.b.drin && !o.b.weg);
+    if (!offen.length) { A.phase = 'pause'; A.pt = 0; const t = A.sp.map(o => `${o.n} ${o.schlaege[A.loch]}`).join(' · '); if (A.zwei) K.msg(`Loch ${A.loch + 1} geschafft: ${t}`, 2); return; }
+    if (A.zwei) { const anders = A.sp[1 - A.dran]; if (!anders.b.drin && !anders.b.weg) A.dran = 1 - A.dran; }
+    A.phase = 'zielen'; A.pt = 0;
+  }
+  function spielEnde(K) {
+    if (A.phase === 'aus') return; A.phase = 'aus'; const L = A.L, sum = s => s.schlaege.reduce((a, b) => a + (b || 0), 0), w = MGF_WELTEN[L.w];
+    const tab = `<table class="mgf-karte"><tr><th></th>${L.loecher.map((x, i) => `<th>${i + 1}</th>`).join('')}<th>Σ</th></tr><tr><td>Par</td>${L.loecher.map(x => `<td>${MGF_BAHNEN[x.m].par}</td>`).join('')}<td>${L.par}</td></tr>${A.sp.map(s => `<tr><td>${s.n}</td>${L.loecher.map((x, i) => `<td>${s.schlaege[i] || 0}</td>`).join('')}<td><b>${sum(s)}</b></td></tr>`).join('')}</table>`;
+    if (A.zwei) { const [a, b] = A.sp.map(sum); K.ende(true, 3, `<p>${w.i} ${a < b ? 'Lumi gewinnt! 🏆' : b < a ? 'Pia gewinnt! 🏆' : 'Unentschieden! 🤝'} Weniger Schläge gewinnen.</p>${tab}`, '', 2400); return; }
+    const a = sum(A.sp[0]), st = a <= L.par ? 3 : a <= L.par + 3 ? 2 : 1;
+    K.ende(true, st, `<p>${w.i} ${a} Schläge, Par ${L.par}${a <= L.par ? ' 🏆' : ''}</p>${tab}`, st < 3 ? 'Tipp: Kurz zurückziehen für leichte Schläge. Die Banden kannst du zum Abprallen benutzen.' : '', 2400);
+  }
+  const funke = (x, y, z, n, f = ['#ffffff'], st = 1) => { for (let i = 0; i < n; i++) { const a = Math.random() * 6.28; A.teile.push({ x, y, z, vx: Math.cos(a) * 1.8 * st, vy: (1.5 + Math.random() * 2) * st, vz: Math.sin(a) * 1.8 * st, life: .6 + Math.random() * .4, max: 1, s0: .05, f: f[i % f.length] }); } };
+
+  function frei(L, x0, z0, x1, z1) { const d = Math.hypot(x1 - x0, z1 - z0), n = Math.ceil(d / .07); for (let i = 1; i <= n; i++) { const x = x0 + (x1 - x0) * i / n, z = z0 + (z1 - z0) * i / n, c = mgfZelle(L, x, z); if (c === '#' || c === '~') return false; for (const dx of [-.12, .12]) { const c2 = mgfZelle(L, x + dx, z + dx); if (c2 === '#' || c2 === '~') return false; } if (L.posts.some(([px, pz]) => Math.hypot(x - px, z - pz) < .34)) return false; } return true; }
+  function autoSchuss(K) {
+    const L = A.bahn, b = ich().b, gut = A.autoGut || .8, idx = (i, j) => j * L.C + i, dist = new Array(L.R * L.C).fill(1e9), q = [];
+    const zi = p => [Math.round(p[0] + (L.C - 1) / 2), Math.round(p[1] + (L.R - 1) / 2)];
+    const [ci, cj] = zi(L.cup); dist[idx(ci, cj)] = 0; q.push([ci, cj]);
+    while (q.length) { const [i, j] = q.shift(), d0 = dist[idx(i, j)];
+      for (let dj = -1; dj <= 1; dj++) for (let di = -1; di <= 1; di++) { if (!di && !dj) continue; const ni = i + di, nj = j + dj, c = (L.g[nj] || '')[ni]; if (!c || c === '#' || c === '~') continue; if (di && dj) { const a = (L.g[j] || '')[ni], bb = (L.g[nj] || '')[i]; if (!a || a === '#' || a === '~' || !bb || bb === '#' || bb === '~') continue; } const nd = d0 + (di && dj ? 1.41 : 1); if (nd < dist[idx(ni, nj)]) { dist[idx(ni, nj)] = nd; q.push([ni, nj]); } }
+      if (L.U && L.T && i === zi(L.U)[0] && j === zi(L.U)[1]) { const [ti, tj] = zi(L.T); if (d0 + .5 < dist[idx(ti, tj)]) { dist[idx(ti, tj)] = d0 + .5; q.push([ti, tj]); } } }
+    let ziel = L.cup, zd = 0;
+    if (!frei(L, b.x, b.z, L.cup[0], L.cup[1])) { let best = null; L.g.forEach((z, j) => z.split('').forEach((c, i) => { const d = dist[idx(i, j)]; if (d >= 1e9) return; const [x, y] = L.pos(i, j); if (!frei(L, b.x, b.z, x, y)) return; if (!best || d < best[0] || (d === best[0] && Math.hypot(x - b.x, y - b.z) > best[3])) best = [d, x, y, Math.hypot(x - b.x, y - b.z), c]; }));
+      if (best) { ziel = [best[1], best[2]]; zd = best[4] === 'T' ? 0 : .6; } }
+    const dx = ziel[0] - b.x, dz = ziel[1] - b.z, d = Math.hypot(dx, dz) || 1;
+
+    let sand = 0, hoch = 0; const h0 = mgfHoehe(L, b.x, b.z); for (let i = 1; i <= 20; i++) { const x = b.x + dx * i / 20, z = b.z + dz * i / 20; if (mgfZelle(L, x, z) === ':') sand++; hoch = Math.max(hoch, mgfHoehe(L, x, z) - h0); }
+    const mu = 1.25 + 3.4 * sand / 20;
+    let a = Math.atan2(dz, dx) + (Math.random() - .5) * (1 - gut) * .3, v = Math.min(MGF_V, Math.sqrt(2 * mu * (d + zd) + 2 * MGF_G * hoch * 1.3) + (ziel === L.cup ? .25 : .5)) * (1 + (Math.random() - .5) * (1 - gut) * .4);
+    schiessen(K, Math.cos(a) * v, Math.sin(a) * v);
+  }
+
+  function zielStart(K, a, b) { if (!A || A.phase !== 'zielen' || A.auto) return; const y = .1; A.ziel = { p0: g3AufEbene(kam, K.W, K.H, a, b, y), p1: null, y }; }
+  function zielZug(K, a, b) { if (!A || !A.ziel) return; A.ziel.p1 = g3AufEbene(kam, K.W, K.H, a, b, A.ziel.y); }
+  function zielWerte() { const z = A && A.ziel; if (!z || !z.p1) return null; const dx = z.p0[0] - z.p1[0], dz = z.p0[1] - z.p1[1], l = Math.hypot(dx, dz); if (l < .08) return null; return { dx: dx / l, dz: dz / l, kraft: Math.min(1, l / 2.4) }; }
+  function zielLos(K) { if (!A || !A.ziel) return; const w = zielWerte(); A.ziel = null; if (!w || w.kraft < .04) return; const v = .5 + w.kraft * (MGF_V - .5); schiessen(K, w.dx * v, w.dz * v); }
+
+  function figur(m, x, y, z, ry, s) { G3.pose(M, x, y, z, ry, 0, 0, s); R.mal(m.r, M, { glanz: .3 }); [-1, 1].forEach(sd => { G3.mal(M, G3.pose(M2, sd * .47, 1.05, -.02, 0, -.2, sd * .35), M3); R.mal(m.f, M3); G3.mal(M, G3.pose(M2, sd * .2, 0, 0, 0, 0, 0), M3); R.mal(m.u, M3); }); R.mal(mod.putter, M); }
+  function zeichne3D(K) {
+    if (!A || !R.bild(kam, MGF_ST[art], K.t)) return; const L = A.bahn;
+    R.mal(bahnM.b, G3.pose(M, 0, 0, 0), { glanz: .25, nebel: [80, 900] }); R.mal(bahnM.g, M, { leucht: 1, nebel: [80, 900] });
+    L.kreuze.forEach(k => R.mal(mod.kreuz, G3.pose(M, k.x, 0, k.z, -(k.a0 + k.w * A.t)), { glanz: .6 }));
+    A.sp.forEach((s, i) => { const b = s.b; if (!b || b.weg || b.sink >= 1) return; const y = mgfHoehe(L, b.x, b.z) + MGF_R - b.sink * .3; if (!b.drin) R.schatten(b.x, y - MGF_R + .01, b.z, .13, .5); R.mal(mod.ball[i], G3.pose(M, b.x, y, b.z), { glanz: .9 }); });
+
+    if (A.phase === 'zielen') { const s = ich(), b = s.b, w = zielWerte(), dir = w ? [w.dx, w.dz] : (() => { const dx = L.cup[0] - b.x, dz = L.cup[1] - b.z, l = Math.hypot(dx, dz) || 1; return [dx / l, dz / l]; })();
+      const fx = b.x - dir[0] * .36 + dir[1] * .1, fz = b.z - dir[1] * .36 - dir[0] * .1; figur(mod.fig[s.i], fx, mgfHoehe(L, fx, fz), fz, Math.atan2(-dir[0], -dir[1]), .42); }
+    if (A.teile.length) R.teile(A.teile, .7);
+  }
+  function anzeige(K, x) {
+    if (!A) return; const L = A.bahn;
+
+    const w = A.phase === 'zielen' && zielWerte();
+    if (w) { const b = ich().b, n = 9, len = .5 + w.kraft * 2.6, col = w.kraft < .45 ? '#5cc85c' : w.kraft < .8 ? '#ffd23f' : '#e8463a';
+      x.save(); for (let i = 1; i <= n; i++) { const t = i / n * len, px = b.x + w.dx * t, pz = b.z + w.dz * t, p = R.schirm(px, mgfHoehe(L, px, pz) + .03, pz); if (p[2] <= .1) continue; x.globalAlpha = 1 - i / (n + 3); x.fillStyle = col; x.beginPath(); x.arc(p[0], p[1], 6 - i * .3, 0, 7); x.fill(); x.lineWidth = 2; x.strokeStyle = '#ffffff'; x.stroke(); }
+      const p = R.schirm(b.x, .2, b.z); x.globalAlpha = 1; const bw = 70; x.fillStyle = 'rgba(18,30,50,.6)'; h28aRR(x, p[0] - bw / 2, p[1] + 22, bw, 10, 5); x.fill(); x.fillStyle = col; h28aRR(x, p[0] - bw / 2, p[1] + 22, Math.max(8, bw * w.kraft), 10, 5); x.fill(); x.restore(); }
+
+    const sum = s => s.schlaege.reduce((a, b) => a + (b || 0), 0), fs = Math.max(14, Math.min(18, K.W / 40));
+    let y = 32; A.sp.forEach((s, i) => { const t = `${i ? '🩷' : '💙'} ${s.n}: ${sum(s)} (Loch ${s.schlaege[A.loch] || 0})`; x.save(); x.font = h28aFont(fs); const tw = x.measureText(t).width; x.restore(); g3Schild(x, K.W - tw / 2 - 28, y, t, A.zwei && A.dran === i && A.phase !== 'pause' ? s.h : 'rgba(255,255,255,.88)', fs); y += fs * 2.2; });
+    if (A.phase === 'zielen' && !A.ziel) { const s = ich(), schmal = K.W < 600; g3Schild(x, K.W / 2, K.H - 34, A.zwei ? `${s.n} ist dran${schmal ? '' : ': zurückziehen und loslassen'}` : 'Zurückziehen und loslassen', A.zwei ? s.h : 'rgba(255,255,255,.9)', 16); }
+  }
+  const K = akBaukasten(stage, {
+    id: 'mgf', titel: '⛳ Minigolf 3D', text: 'Zieh zurück, lass los und triff ins Loch! Hügel, Drehkreuze, Tunnel und Wasser. Allein oder zu zweit, abwechselnd an einem Gerät.', welten: MGF_WELTEN, n: 5, punkteWort: 'Schläge', ersterTipp: false,
+    hilfe: 'Allein: Par oder besser gibt drei Sterne, bis drei Schläge mehr zwei Sterne. Zu zweit gibt jede fertige Runde drei Sterne, weniger Schläge gewinnen.',
+    layout: K => { R.groesse(K.W, K.H); kamSetz(K); }, level: mgfLevel,
+    menu: K => { K.cfg.extra = g3Modus(MGF_ZWEI, 'Lumi spielt allein', 'Lumi und Pia abwechselnd'); K.cfg.extraKlick = v => { MGF_ZWEI = v === 'zwei'; K.menu(); }; const [w, l] = lvAktuell('mgf', 4, 5); bauen(mgfLevel(Math.max(0, w), Math.max(0, l))); kamSetz(K); },
+    start: (K, L) => { bauen(L); kamSetz(K); K.punkte = 0; K.fort = undefined; K.ziel = ''; },
+    los: K => { A.phase = 'zielen'; A.pt = 0; },
+    bereit: K => [K.L.name, `${A && A.zwei ? 'Zu zweit: Ihr spielt abwechselnd, wer dran ist, steht unten. ' : ''}Finger aufs Bild, zurückziehen und loslassen. Je weiter, desto fester. Par ${K.L.par} für alle drei Löcher.`],
+    tippText: 'Tippe zum Starten!',
+    update: (K, dt) => { if (!A) return; if (K.phase === 'lauf' || K.phase === 'ende' || K.phase === 'fertig') schritt(K, dt); },
+    draw: (K, x) => { x.clearRect(-60, -60, K.W + 120, K.H + 120); R.messe(); zeichne3D(K); if (K.phase === 'lauf' && A) anzeige(K, x); },
+    down: (K, a, b) => zielStart(K, a, b), move: (K, a, b) => zielZug(K, a, b), up: K => zielLos(K),
+    taste: (K, e, an) => { if (an && K.phase === 'bereit') { K.los(); return; } },
+    dbg: K => ({ get A() { return A; }, get R() { return R; }, kam: () => kam, zwei: an => { MGF_ZWEI = !!an; }, schuss: (vx, vz) => schiessen(K, vx, vz), loch: (m, sp) => { A.L.loecher = [{ m, sp: !!sp }]; A.L.par = MGF_BAHNEN[m].par; A.sp.forEach(x => { x.schlaege = []; }); A.phase = 'zielen'; neuesLoch(0); },
+      st: () => ({ phase: K.phase, spiel: A.phase, loch: A.loch, dran: A.dran, schlaege: A.sp.map(s => s.schlaege.slice()), sterne: K.sterne }),
+      sim: (sec, gut = .85) => { if (K.phase === 'bereit') K.los(); A.auto = true; A.autoGut = gut; for (let i = 0; i < sec * 60 && K.phase === 'lauf'; i++) K.schritt(1 / 60); A.auto = false; return { phase: K.phase, spiel: A.phase, loch: A.loch, schlaege: A.sp.map(s => s.schlaege.slice()), sterne: K.sterne }; } })
+  });
+}
+FUN_GAMES.minigolf3d = { c: 'hits', t: 'Minigolf 3D', seit: 'Minigolf 3D', d: 'Zurückziehen, loslassen, einlochen! Hügel, Drehkreuze, Tunnel und Wasser. Allein oder zu zweit abwechselnd. 4 Plätze mit 60 Löchern.', i: '⛳' };
+FUN_IMPL.minigolf3d = mgfSpiel;
+
+/*@@src schneeball480.js@@*/
+
+
+
+
+
+
+
+
+
+
+
+let SBA_ZWEI = false;
+const SBA_WELTEN = [
+  { n: 'Eisfeld', i: '❄️', farbe: '#2f7fd8', art: 'eis' },
+  { n: 'Schneewald', i: '🌲', farbe: '#2f8f46', art: 'wald' },
+  { n: 'Gletscherhöhle', i: '💎', farbe: '#2fb3a6', art: 'hoehle' },
+  { n: 'Polarlicht-Arena', i: '🌌', farbe: '#6a4fd6', art: 'polar' }
+];
+const SBA_PAL = {
+  eis: { b1: '#dcecf8', b2: '#cfe3f4', saeule: '#6fa8dc', saeule2: '#bfe0ff', block: '#ffffff', block2: '#e3f1fb', rand: '#2f6fb0', rutsch: '#9fd6ff', boden: '#bcd6ea' },
+  wald: { b1: '#eef4f0', b2: '#e1ece4', saeule: '#2e6b55', saeule2: '#3a8767', block: '#ffffff', block2: '#e8f0ea', rand: '#7a5a3a', rutsch: '#a8e0ff', boden: '#d6e6da' },
+  hoehle: { b1: '#bfe6ec', b2: '#aedbe3', saeule: '#2a6f88', saeule2: '#7cf7ff', block: '#e8fbff', block2: '#d0f2f8', rand: '#1d4a5c', rutsch: '#7fd6ff', boden: '#5a8a96' },
+  polar: { b1: '#3a4a8a', b2: '#334280', saeule: '#2a2f60', saeule2: '#8ef3ff', block: '#dfe6ff', block2: '#c8d2ff', rand: '#1a1f45', rutsch: '#a46bff', boden: '#1a2148' }
+};
+const SBA_ST = { eis: KGP_ST.eis, wald: KGP_ST.eis, hoehle: { ...KGP_ST.eis, oben: '#1d4a5c', horizont: '#5aa0b0', unten: '#3a7a8a', himmel: '#7ab0c0', nebel: [60, 300] }, polar: KGP_ST.sterne };
+const SBA_C = 13, SBA_R = 11;
+const SBA_FIG = [{ n: 'Lumi', c: '#2f7fd8', h: '#bfe0ff' }, { n: 'Pia', c: '#ff8ad8', h: '#ffd0ec' }, { n: 'Paul', c: '#ff9b26', h: '#ffe0bf' }, { n: 'Pino', c: '#5cc85c', h: '#d6f3d6' }, { n: 'Polly', c: '#a46bff', h: '#e6d8ff' }];
+const SBA_EXTRA = { bombe: ['#3f8fe0', 'Eine Bombe mehr!'], weit: ['#ff7a2a', 'Weiter!'], tempo: ['#5cc85c', 'Schneller!'] };
+function sbaLevel(w, l) {
+  const art = SBA_WELTEN[w].art;
+  return { w, l, st: w * 5 + l, art, dichte: Math.min(.8, .5 + l * .06 + w * .03), skill: Math.min(.95, .3 + l * .12 + w * .06), siege: l >= 3 ? 3 : 2, zuender: w === 3 ? 2.1 : 2.5, rutsch: w === 2 || (w === 3 && l >= 2), extraSaeulen: w === 1 || w === 3, extraP: .3 + w * .03,
+    name: `${SBA_WELTEN[w].n} ${l + 1}`, sturm: 90 };
+}
+function sbaSpiel(stage) {
+  const R = g3Neu(stage);
+  if (!R) { const d = document.createElement('div'); d.className = 'tb-box'; d.innerHTML = '<div class="tb-karte lr-karte lv-karte"><h2>🧊 Hier fehlt die 3D-Grafik</h2><p>Dieses Spiel braucht 3D-Grafik. Auf diesem Gerät klappt das leider nicht. Probier ein anderes Spiel!</p></div>'; stage.appendChild(d); return; }
+  const M = G3.neu(), M2 = G3.neu(), M3 = G3.neu(), C = SBA_C, RR = SBA_R, clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+  const bau = (seed, f) => { const B = g3Bau(seed); f(B); return R.mesh(B.fertig()); };
+  const lu = luLumiModell();
+  const figM = SBA_FIG.map((f, i) => { if (!i) return { r: R.mesh(lu.rumpf), f: R.mesh(lu.fl), u: R.mesh(lu.fuss) }; const p = fgPinguin(f.c, '#ffffff', ['', 'schleife', 'kappe', 'muetze', 'helm'][i], '#ffffff'); return { r: R.mesh(p.rumpf), f: R.mesh(p.fl), u: R.mesh(p.fuss) }; });
+  const mod = {};
+  mod.bombe = bau(50, B => { B.kugel(0, .3, 0, .36, .32, .36, '#ffffff', 2); B.kugel(-.08, .58, .02, .2, .17, .2, '#f2f8ff', 1); B.zyl(.05, .7, 0, .03, .03, .14, 5, '#7a5a3a'); });
+  mod.funke = bau(51, B => B.kugel(0, 0, 0, .07, .07, .07, '#ffd23f', 0));
+  mod.blitz = bau(52, B => B.kiste(0, 0, 0, .96, .7, .96, '#e8fbff'));
+  mod.sturm = bau(56, B => B.kiste(0, 0, 0, .98, 1.1, .98, '#bfe8ff', '#ffffff'));
+  mod.eis = bau(53, B => B.kiste(0, 0, 0, .9, 1.25, .9, '#9fe4ff'));
+  mod.extra = Object.keys(SBA_EXTRA).reduce((o, k) => { o[k] = bau(54, B => { B.kugel(0, 0, 0, .26, .3, .26, SBA_EXTRA[k][0], 0, false); B.kugel(0, 0, 0, .14, .16, .14, '#ffffff', 0, false); }); return o; }, {});
+  let A = null, art = 'eis', feldM = null, blockM = {};
+  const kam = { auge: [0, 16, 6], ziel: [0, 0, 0], fov: 44, nah: .5, fern: 300 };
+  const pos = (i, j) => [i - (C - 1) / 2, j - (RR - 1) / 2];
+  const im = (i, j) => i >= 0 && j >= 0 && i < C && j < RR;
+
+  function arenaBau(L, runde) {
+    let seed = 13 + L.st * 31 + runde * 7; const r = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+    const g = [], eis = [];
+    for (let j = 0; j < RR; j++) { g.push([]); eis.push([]); for (let i = 0; i < C; i++) { g[j].push(i % 2 === 1 && j % 2 === 1 ? 1 : 0); eis[j].push(false); } }
+    const frei = new Set(); [[0, RR - 1], [C - 1, 0], [0, 0], [C - 1, RR - 1]].forEach(([i, j]) => { const si = i ? -1 : 1, sj = j ? -1 : 1; [[0, 0], [si, 0], [0, sj], [2 * si, 0], [0, 2 * sj]].forEach(([a, b]) => frei.add((i + a) + ',' + (j + b))); });
+    if (L.extraSaeulen) for (let k = 0; k < 6; k++) { const i = 2 + Math.floor(r() * (C - 4)), j = 2 + Math.floor(r() * (RR - 4)); if (!frei.has(i + ',' + j) && !(i % 2 === 0 && j % 2 === 0)) g[j][i] = 1; }
+    for (let j = 0; j < RR; j++) for (let i = 0; i < C; i++) if (!g[j][i] && !frei.has(i + ',' + j) && r() < L.dichte) g[j][i] = 2;
+    if (L.rutsch) for (let k = 0; k < 14; k++) { const i = Math.floor(r() * C), j = Math.floor(r() * RR); if (g[j][i] !== 1) eis[j][i] = true; }
+    return { g, eis };
+  }
+  function feldBau(L) {
+    const P = SBA_PAL[L.art], B = g3Bau(70 + L.st), G = g3Bau(71 + L.st), nacht = L.art === 'polar';
+    for (let j = 0; j < RR; j++) for (let i = 0; i < C; i++) { const [x, z] = pos(i, j); B.boden(x - .5, x + .5, z - .5, z + .5, 0, A.eis[j][i] ? P.rutsch : (i + j) % 2 ? P.b1 : P.b2); if (A.g[j][i] === 1) { if (L.art === 'wald') { B.zyl(x, 0, z, .45, 0, 1.3, 7, P.saeule); B.zyl(x, .7, z, .3, 0, .9, 7, '#f4f9ff'); B.zyl(x, 0, z, .12, .1, .3, 5, '#7a5a3a'); } else { B.kiste(x, 0, z, .96, .9, .96, P.saeule, P.saeule2); if (nacht || L.art === 'hoehle') G.kiste(x, .9, z, .5, .04, .5, P.saeule2); } } }
+
+    B.kiste(0, 0, -(RR / 2 + .3), C + 1.2, .9, .6, P.rand, P.saeule2); B.kiste(0, 0, RR / 2 + .3, C + 1.2, .9, .6, P.rand, P.saeule2); B.kiste(-(C / 2 + .3), 0, 0, .6, .9, RR, P.rand, P.saeule2); B.kiste(C / 2 + .3, 0, 0, .6, .9, RR, P.rand, P.saeule2);
+    B.kiste(0, -1.2, 0, C + 1.4, 1.2, RR + 1.4, P.rand);
+    const r = B.zuf; B.zitter = .04; for (let x = -40; x < 40; x += 5) for (let z = -40; z < 40; z += 5) B.boden(x, x + 5, z, z + 5, -1.2, P.boden); B.zitter = 0;
+    for (let k = 0; k < 40; k++) { const a = r() * 6.283, d = 9 + r() * 14, x = Math.cos(a) * d * 1.1, z = Math.sin(a) * d; if (Math.abs(x) < C / 2 + 1.5 && Math.abs(z) < RR / 2 + 1.5) continue; const s = .8 + r();
+      if (L.art === 'wald') { B.zyl(x, -1.2, z, .9 * s, 0, 2.6 * s, 7, '#2e6b55'); B.zyl(x, -1.2 + 1.4 * s, z, .55 * s, 0, 1.5 * s, 7, '#f4f9ff'); }
+      else if (L.art === 'hoehle' || nacht) { G.zyl(x, -1.2, z, .3 * s, 0, 1.6 * s, 5, ['#7cf7ff', '#c4a2ff', '#8ef3ff'][k % 3]); }
+      else { if (k % 4) B.kugel(x, -1.2, z, .9 * s, .6 * s, .9 * s, '#ffffff', 1, false); else fgFan(B, x, -1.2, z, FG_FARBEN[k % FG_FARBEN.length], 1.4, k % 2); } }
+    return { b: R.mesh(B.fertig()), g: R.mesh(G.fertig()) };
+  }
+  function bauen(L) {
+    art = L.art; const zwei = SBA_ZWEI;
+    A = { L, zwei, t: 0, rt: 0, runde: 0, phase: 'warte', siege: [], sp: [], bomben: [], blitze: [], extras: new Map(), teile: [], sturm: null, pause: 0, auto: false, count: 0 };
+    const ids = zwei ? [0, 1] : [0, 2, 3, 4];
+    A.sp = ids.map((fi, k) => ({ k, fi, ...SBA_FIG[fi], mensch: k === 0 || zwei, sieg: 0 }));
+    neueRunde();
+  }
+  const START = [[0, RR - 1], [C - 1, 0], [0, 0], [C - 1, RR - 1]];
+  function neueRunde() {
+    A.runde++; const ar = arenaBau(A.L, A.runde); A.g = ar.g; A.eis = ar.eis; A.bomben = []; A.blitze = []; A.extras = new Map(); A.rt = 0; A.sturm = null; A.ende = 0;
+    if (feldM) { R.weg(feldM.b); R.weg(feldM.g); } feldM = feldBau(A.L);
+    A.sp.forEach((s, k) => { const [i, j] = START[k]; Object.assign(s, { i, j, ti: i, tj: j, f: 0, laeuft: false, di: 0, dj: 0, tempo: 3.4, maxB: 1, weit: 2, lebt: true, eisT: 0, blick: k === 0 ? Math.PI : k === 1 ? 0 : k === 2 ? Math.PI / 2 : -Math.PI / 2, anim: 0, eing: { di: 0, dj: 0, bombe: false }, denk: 0, plan: null, jubel: 0 }); });
+  }
+
+  const bombeAuf = (i, j) => A.bomben.find(b => b.i === i && b.j === j);
+  const fest = (i, j) => A.g[j][i] === 1 || A.g[j][i] === 4;
+  const begehbar = (i, j, s) => im(i, j) && A.g[j][i] === 0 && !bombeAuf(i, j);
+  const zelleVon = s => s.f < .5 || !s.laeuft ? [s.i, s.j] : [s.ti, s.tj];
+  function legeBombe(s) {
+    if (!s.lebt) return false; const [i, j] = zelleVon(s); if (bombeAuf(i, j) || A.bomben.filter(b => b.von === s).length >= s.maxB) return false;
+    A.bomben.push({ i, j, t: A.L.zuender, weit: s.weit, von: s }); akSnd.plopp(.7); return true;
+  }
+  function explodiere(b) {
+    A.bomben = A.bomben.filter(x => x !== b); const zellen = [[b.i, b.j]];
+    [[1, 0], [-1, 0], [0, 1], [0, -1]].forEach(([di, dj]) => { for (let k = 1; k <= b.weit; k++) { const i = b.i + di * k, j = b.j + dj * k; if (!im(i, j) || fest(i, j)) break; zellen.push([i, j]); if (A.g[j][i] === 2) { A.g[j][i] = 3; break; } if (A.g[j][i] === 3) break; const nb = bombeAuf(i, j); if (nb) { nb.t = Math.min(nb.t, .06); nb.kette = nb.kette || b.von; } } });
+    A.blitze.push({ zellen, t: .5, von: b.kette || b.von });
+    zellen.forEach(([i, j]) => { const k = i + ',' + j; if (A.extras.has(k) && A.g[j][i] !== 3) A.extras.delete(k); const [x, z] = pos(i, j); funke(x, .4, z, 3, ['#ffffff', '#bfefff']); });
+    akGleit(220, 70, .35, 'sawtooth', .06); akSnd.platsch();
+  }
+  function frieren(s) { if (!s.lebt) return; s.lebt = false; s.eisT = 0; const [x, z] = ziehPos(s); funke(x, .8, z, 20, ['#bfefff', '#ffffff', s.c], 1.3); akGleit(1200, 300, .5, 'triangle', .07); }
+  function ziehPos(s) { const [x0, z0] = pos(s.i, s.j), [x1, z1] = pos(s.ti, s.tj), f = s.laeuft ? s.f : 0; return [x0 + (x1 - x0) * f, z0 + (z1 - z0) * f]; }
+  function bewegen(s, dt) {
+    if (!s.lebt) { s.eisT += dt; return; }
+    if (s.laeuft) {
+
+      if (s.eing.di === -s.di && s.eing.dj === -s.dj && (s.eing.di || s.eing.dj)) { [s.i, s.ti] = [s.ti, s.i]; [s.j, s.tj] = [s.tj, s.j]; s.f = 1 - s.f; s.di = -s.di; s.dj = -s.dj; }
+      s.f += s.tempo * dt; s.anim += dt * 10;
+      if (s.f >= 1) { s.i = s.ti; s.j = s.tj; s.f = 0; s.laeuft = false; ankommen(s);
+        if (A.eis[s.j][s.i] && begehbar(s.i + s.di, s.j + s.dj, s)) { s.ti = s.i + s.di; s.tj = s.j + s.dj; s.laeuft = true; return; } }
+      else return;
+    }
+    const { di, dj } = s.eing; if (!di && !dj) return; s.blick = Math.atan2(-di, -dj);
+    if (begehbar(s.i + di, s.j + dj, s)) { s.ti = s.i + di; s.tj = s.j + dj; s.di = di; s.dj = dj; s.laeuft = true; s.f = 0; }
+  }
+  function ankommen(s) {
+    const k = s.i + ',' + s.j, e = A.extras.get(k); if (!e) return; A.extras.delete(k);
+    if (e === 'bombe') s.maxB = Math.min(6, s.maxB + 1); else if (e === 'weit') s.weit = Math.min(7, s.weit + 1); else s.tempo = Math.min(6, s.tempo + .55);
+    if (s.mensch) { Sound.glocke(1175, 0, .12, .08); Sound.glocke(1568, .07, .16, .08); } 
+    s.text = { t: SBA_EXTRA[e][1], z: 1.1 };
+  }
+
+  function gefahr(extraBombe) {
+    const D = Array.from({ length: RR }, () => new Array(C).fill(99)), bs = A.bomben.slice(); if (extraBombe) bs.push(extraBombe);
+
+    const strahl = b => { const z = [[b.i, b.j]]; [[1, 0], [-1, 0], [0, 1], [0, -1]].forEach(([di, dj]) => { for (let k = 1; k <= b.weit; k++) { const i = b.i + di * k, j = b.j + dj * k; if (!im(i, j) || fest(i, j)) break; z.push([i, j]); if (A.g[j][i] === 2 || A.g[j][i] === 3) break; } }); return z; };
+    const zeit = bs.map(b => b.t); for (let r = 0; r < 3; r++) bs.forEach((b, x) => strahl(b).forEach(([i, j]) => bs.forEach((c, y) => { if (c.i === i && c.j === j && zeit[y] > zeit[x]) zeit[y] = zeit[x]; })));
+    bs.forEach((b, x) => strahl(b).forEach(([i, j]) => { D[j][i] = Math.min(D[j][i], zeit[x]); }));
+    A.blitze.forEach(bl => bl.zellen.forEach(([i, j]) => { D[j][i] = 0; }));
+    return D;
+  }
+  function weg(s, ziel, D, flucht) {
+    const q = [[s.i, s.j, 0, null]], seen = new Set([s.i + ',' + s.j]);
+    while (q.length) { const [i, j, d, erst] = q.shift(); if (d > 0 && ziel(i, j, d) && D[j][i] >= 99) return { erst, d, i, j };
+      for (const [di, dj] of [[1, 0], [-1, 0], [0, 1], [0, -1]]) { const ni = i + di, nj = j + dj, k = ni + ',' + nj; if (seen.has(k) || !begehbar(ni, nj, s)) continue; const ankunft = (d + 1) / s.tempo; if (D[nj][ni] < 99 && (!flucht || D[nj][ni] < ankunft + .45)) continue; seen.add(k); q.push([ni, nj, d + 1, erst || [di, dj]]); } }
+    return null;
+  }
+  function kopf(s, dt) {
+    s.denk -= dt; if (s.denk > 0) return; const sk = s.mensch ? (A.autoGut || .8) : A.L.skill; s.denk = .08 + (1 - sk) * .22;
+    s.eing = { di: 0, dj: 0, bombe: false }; if (s.laeuft) { s.denk = 0; return; }
+    const D = gefahr(), hier = D[s.j][s.i] < 99;
+    if (hier) { const w = weg(s, (i, j) => D[j][i] >= 99, D, true); if (w) s.eing = { di: w.erst[0], dj: w.erst[1] }; return; }
+    const gegner = A.sp.filter(o => o !== s && o.lebt);
+    const fluchtNach = () => { const nb = { i: s.i, j: s.j, t: A.L.zuender, weit: s.weit }, D2 = gefahr(nb), w = weg(s, (i, j) => D2[j][i] >= 99, D2, true); return w && w.d / s.tempo < A.L.zuender - .5; };
+    const trifft = (ti, tj) => { if (ti !== s.i && tj !== s.j) return false; const di = Math.sign(ti - s.i), dj = Math.sign(tj - s.j), n = Math.abs(ti - s.i) + Math.abs(tj - s.j); if (n > s.weit) return false; for (let k = 1; k < n; k++) if (A.g[s.j + dj * k][s.i + di * k]) return false; return true; };
+    const neben = [[1, 0], [-1, 0], [0, 1], [0, -1]].some(([di, dj]) => im(s.i + di, s.j + dj) && A.g[s.j + dj][s.i + di] === 2);
+    const bombenOk = A.bomben.filter(b => b.von === s).length < s.maxB && !bombeAuf(s.i, s.j);
+    if (bombenOk && (gegner.some(o => trifft(...zelleVon(o)) && Math.random() < .35 + sk * .5) || (neben && Math.random() < .5 + sk * .4)) && (fluchtNach() || Math.random() < (1 - sk) * .15)) { legeBombe(s); s.denk = .05; return; }
+
+    let w = null; const ex = [...A.extras.keys()].map(k => k.split(',').map(Number));
+    if (ex.length) w = weg(s, (i, j, d) => d < 9 && ex.some(([a, b]) => a === i && b === j), D, false);
+    if (!w) w = weg(s, (i, j) => [[1, 0], [-1, 0], [0, 1], [0, -1]].some(([di, dj]) => im(i + di, j + dj) && A.g[j + dj][i + di] === 2), D, false);
+    if (!w && gegner.length) w = weg(s, (i, j) => gegner.some(o => { const [a, b] = zelleVon(o); return Math.abs(a - i) + Math.abs(b - j) <= 2; }), D, false);
+    if (w && w.erst) s.eing = { di: w.erst[0], dj: w.erst[1] };
+    else if (Math.random() < .3) { const d = [[1, 0], [-1, 0], [0, 1], [0, -1]][Math.floor(Math.random() * 4)]; if (begehbar(s.i + d[0], s.j + d[1], s) && D[s.j + d[1]][s.i + d[0]] >= 99) s.eing = { di: d[0], dj: d[1] }; }
+  }
+
+  const SPIRALE = (() => { const o = []; let a = 0, b = 0, c = C - 1, d = RR - 1; while (a <= c && b <= d) { for (let i = a; i <= c; i++) o.push([i, b]); for (let j = b + 1; j <= d; j++) o.push([c, j]); if (b < d) for (let i = c - 1; i >= a; i--) o.push([i, d]); if (a < c) for (let j = d - 1; j > b; j--) o.push([a, j]); a++; b++; c--; d--; } return o; })();
+  function schritt(K, dt) {
+    A.t += dt;
+    for (let i = A.teile.length - 1; i >= 0; i--) { const q = A.teile[i]; q.life -= dt; if (q.life <= 0) { A.teile.splice(i, 1); continue; } q.vy -= 9 * dt; q.x += q.vx * dt; q.y += q.vy * dt; q.z += q.vz * dt; q.s = q.s0 * Math.min(1, q.life / q.max * 1.6); }
+    if (A.teile.length > 220) A.teile.splice(0, A.teile.length - 220);
+    A.sp.forEach(s => { if (s.text && (s.text.z -= dt) <= 0) s.text = null; if (s.jubel > 0) s.jubel -= dt; });
+    if (A.phase === 'warte' || A.phase === 'aus') return;
+    if (A.phase === 'start') { const c0 = Math.ceil(A.count); A.count -= dt; const c1 = Math.ceil(A.count); if (c1 !== c0) { if (c1 > 0) { K.ruf(String(c1)); Sound.glocke(660, 0, .25, .1); } else { K.ruf('Los!'); Sound.glocke(1320, 0, .4, .12); A.phase = 'spiel'; } } return; }
+    if (A.phase === 'pause') { A.pause -= dt; if (A.pause <= 0) { if (A.sp.some(s => s.sieg >= A.L.siege) || A.runde >= 7) spielEnde(K); else { neueRunde(); A.phase = 'start'; A.count = 2.2; K.msg(`Runde ${A.runde}`, 1.2); } } return; }
+    A.rt += dt;
+
+    A.sp.forEach(s => { if (!s.lebt) return; if (!s.mensch || A.auto) kopf(s, dt); else { const e = steuer(s.k); s.eing = { di: e.di, dj: e.dj, bombe: e.bombe }; } if (s.eing.bombe) { legeBombe(s); s.eing.bombe = false; } });
+    A.sp.forEach(s => bewegen(s, dt));
+
+    A.bomben.slice().forEach(b => { b.t -= dt; if (b.t <= 0) explodiere(b); });
+    A.blitze = A.blitze.filter(bl => { bl.t -= dt; if (bl.t < .35 && !bl.weg) { bl.weg = true; bl.zellen.forEach(([i, j]) => { if (A.g[j][i] === 3) { A.g[j][i] = 0; const [x, z] = pos(i, j); funke(x, .5, z, 10, ['#ffffff', '#e3f1fb']); if (Math.random() < A.L.extraP) { const ks = Object.keys(SBA_EXTRA); A.extras.set(i + ',' + j, ks[Math.floor(Math.random() * ks.length)]); } } }); }
+      A.sp.forEach(s => { if (!s.lebt) return; const [i, j] = zelleVon(s); if (bl.zellen.some(([a, b]) => a === i && b === j)) { frieren(s); s.vonWem = bl.von; } }); return bl.t > 0; });
+
+    if (A.rt > A.L.sturm) { if (!A.sturm) { A.sturm = { k: 0, t: 0 }; K.ruf('Schneesturm!'); akGleit(200, 600, .8, 'sawtooth', .05); }
+      A.sturm.t += dt; while (A.sturm.t > .32 && A.sturm.k < SPIRALE.length) { A.sturm.t -= .32; const [i, j] = SPIRALE[A.sturm.k++]; if (A.g[j][i] === 1) continue; A.g[j][i] = 4; A.bomben = A.bomben.filter(b => !(b.i === i && b.j === j)); A.extras.delete(i + ',' + j); A.sp.forEach(s => { const [a, b] = zelleVon(s); if (s.lebt && a === i && b === j) { frieren(s); s.vonWem = null; } }); const [x, z] = pos(i, j); funke(x, 1, z, 4, ['#ffffff']); } }
+
+    const leben = A.sp.filter(s => s.lebt);
+    if (leben.length <= 1 || (!A.zwei && !A.sp[0].lebt)) { A.ende += dt; if (A.ende > .7) rundeEnde(K, leben.length === 1 ? leben[0] : null); }
+    K.ziel = `Runde ${A.runde} · bis ${A.L.siege} Siege`; K.punkte = A.sp[0].sieg;
+  }
+  function rundeEnde(K, sieger) {
+    A.phase = 'pause'; A.pause = 2.6;
+
+    if (!A.zwei && !A.sp[0].lebt && A.sp.filter(s => s.lebt).length > 1) { const v = A.sp[0].vonWem; if (v && v !== A.sp[0] && v.lebt) { v.sieg++; v.jubel = 2.4; K.ruf(`Eingefroren! Punkt für ${v.n}`); } else K.ruf('Eingefroren!'); akSnd.au(); return; }
+    if (sieger) { sieger.sieg++; sieger.jubel = 2.4; K.ruf(`${sieger.n} gewinnt die Runde!`); if (sieger.mensch) Sound.win(); else akSnd.au(); }
+    else K.ruf('Unentschieden!');
+  }
+  function spielEnde(K) {
+    if (A.phase === 'aus') return; A.phase = 'aus'; const w = SBA_WELTEN[A.L.w], lumi = A.sp[0];
+    const liste = A.sp.slice().sort((a, b) => b.sieg - a.sieg).map(s => `${s.n}: ${'⭐'.repeat(s.sieg) || '0'}`).join(' · ');
+    if (A.zwei) { const [a, b] = A.sp.map(s => s.sieg); K.ende(true, 3, `<p>${w.i} Lumi ${a} : ${b} Pia<br>${a > b ? 'Lumi gewinnt! 🏆' : b > a ? 'Pia gewinnt! 🏆' : 'Unentschieden! 🤝'}</p><p>Schön zusammen gespielt!</p>`, '', 2200); return; }
+    const top = Math.max(...A.sp.map(s => s.sieg)), st = lumi.sieg >= A.L.siege || (lumi.sieg === top && lumi.sieg > 0) ? 3 : lumi.sieg > 0 ? 2 : 1;
+    K.ende(true, st, `<p>${w.i} ${st === 3 ? 'Lumi gewinnt! 🏆' : 'Diesmal waren die anderen schneller.'}</p><p>${liste}</p>`, st < 3 ? 'Tipp: Leg eine Bombe und lauf sofort um eine Ecke. Im Schnee-Kreuz friert man ein!' : '', 2200);
+  }
+  const funke = (x, y, z, n, f, st = 1) => { for (let i = 0; i < n; i++) { const a = Math.random() * 6.28; A.teile.push({ x, y, z, vx: Math.cos(a) * 2.2 * st, vy: (1.5 + Math.random() * 2.5) * st, vz: Math.sin(a) * 2.2 * st, life: .5 + Math.random() * .4, max: .9, s0: .07, f: f[i % f.length] }); } };
+
+  const ST = { ptr: new Map(), keys: {}, s: [{ an: false, cx: 0, cy: 0, x: 0, y: 0, bombe: false }, { an: false, cx: 0, cy: 0, x: 0, y: 0, bombe: false }] };
+  function zonen(K) {
+    const quer = K.W >= K.H, r = Math.max(36, Math.min(56, Math.min(K.W, K.H) * .08)), sx = r * 1.25 + 14;
+
+    if (quer) { const li = { knopf: [r + 18, K.H * .5, r], stick: [sx, K.H - sx - 14] }, re = { knopf: [K.W - r - 18, K.H * .5, r], stick: [K.W - sx, K.H - sx - 14] };
+      if (!A || !A.zwei) return [{ x: 0, y: 0, w: K.W, h: K.H, knopf: [K.W - r - 18, K.H - r - 26, r], stick: li.stick }];
+      return [{ x: 0, y: 0, w: K.W / 2, h: K.H, ...li }, { x: K.W / 2, y: 0, w: K.W / 2, h: K.H, ...re }]; }
+    if (!A || !A.zwei) return [{ x: 0, y: 0, w: K.W, h: K.H, knopf: [K.W - r - 26, K.H - r - 26, r], stick: [sx + 6, K.H - sx - 14] }];
+    return [{ x: 0, y: K.H / 2, w: K.W, h: K.H / 2, knopf: [K.W - r - 26, K.H - r - 26, r], stick: [sx + 6, K.H - sx - 14] }, { x: 0, y: 0, w: K.W, h: K.H / 2, knopf: [r + 26, K.H * .19, r], stick: [K.W - sx - 6, K.H * .19] }];
+  }
+  function zoneVon(K, a, b) { const z = zonen(K); for (let k = 0; k < z.length; k++) { const q = z[k]; if (a >= q.x && a <= q.x + q.w && b >= q.y && b <= q.y + q.h) return k; } return 0; }
+  function steuer(k) {
+    const s = ST.s[k] || ST.s[0], kb = k === 0 ? (A && A.zwei ? { l: 'a', r: 'd', u: 'w', d: 's' } : { l: 'a', r: 'd', u: 'w', d: 's' }) : { l: 'ArrowLeft', r: 'ArrowRight', u: 'ArrowUp', d: 'ArrowDown' };
+    let x = s.an ? s.x : 0, y = s.an ? s.y : 0;
+    if (!A.zwei && k === 0) { x += (ST.keys.ArrowRight ? 1 : 0) - (ST.keys.ArrowLeft ? 1 : 0); y += (ST.keys.ArrowDown ? 1 : 0) - (ST.keys.ArrowUp ? 1 : 0); }
+    x += (ST.keys[kb.r] ? 1 : 0) - (ST.keys[kb.l] ? 1 : 0); y += (ST.keys[kb.d] ? 1 : 0) - (ST.keys[kb.u] ? 1 : 0);
+
+    let di = 0, dj = 0; if (Math.hypot(x, y) > .35) { const [gx, gz] = schirmZuGitter(x, y); if (Math.abs(gx) >= Math.abs(gz)) di = Math.sign(gx); else dj = Math.sign(gz); }
+    const bombe = s.bombe || (k === 0 ? ST.keys[' '] || (A.zwei ? false : ST.keys.Enter) : ST.keys.Enter); s.bombe = false; if (k === 0) { ST.keys[' '] = false; if (!A.zwei) ST.keys.Enter = false; } else ST.keys.Enter = false;
+    return { di, dj, bombe };
+  }
+  let basis = [[1, 0], [0, 1]];
+  function schirmZuGitter(x, y) { const [[ax, az], [bx, bz]] = basis; return [ax * x + bx * y, az * x + bz * y]; }
+  function basisNeu(K) {
+    const o = R.schirm(0, 0, 0), px = R.schirm(1, 0, 0), pz = R.schirm(0, 0, 1);
+    const a = [px[0] - o[0], px[1] - o[1]], b = [pz[0] - o[0], pz[1] - o[1]], det = a[0] * b[1] - a[1] * b[0]; if (Math.abs(det) < 1e-6) return;
+
+    basis = [[b[1] / det, -a[1] / det], [-b[0] / det, a[0] / det]];
+  }
+  function sDown(K, a, b, e) {
+    const id = e ? e.pointerId : 0, k = zoneVon(K, a, b), z = zonen(K)[k], s = ST.s[k];
+    if (Math.hypot(a - z.knopf[0], b - z.knopf[1]) < z.knopf[2] * 1.35) { s.bombe = true; ST.ptr.set(id, { k, knopf: true }); Sound.tap(); return; }
+    if (!s.an) { Object.assign(s, { an: true, cx: a, cy: b, x: 0, y: 0, id }); ST.ptr.set(id, { k }); }
+  }
+  function sMove(K, a, b, e) { const id = e ? e.pointerId : 0, p = ST.ptr.get(id); if (!p || p.knopf) return; const s = ST.s[p.k]; if (s.id !== id) return; const R0 = 60; let dx = a - s.cx, dy = b - s.cy; const l = Math.hypot(dx, dy); if (l > R0) { s.cx += dx * (1 - R0 / l); s.cy += dy * (1 - R0 / l); dx = a - s.cx; dy = b - s.cy; } s.x = dx / R0; s.y = dy / R0; }
+  function sUp(K, a, b, e) { const id = e ? e.pointerId : 0, p = ST.ptr.get(id); ST.ptr.delete(id); if (!p || p.knopf) return; const s = ST.s[p.k]; if (s.id === id) Object.assign(s, { an: false, x: 0, y: 0 }); }
+
+  function kamSetz(K) {
+    const asp = K.W / Math.max(1, K.H), quer = asp >= 1, t = .38, dir = quer ? [0, Math.cos(t), Math.sin(t)] : [-Math.sin(t), Math.cos(t), 0], oben = quer ? [0, 0, -1] : [1, 0, 0];
+    const hx = C / 2 + .6, hz = RR / 2 + .6, pk = [[-hx, 0, -hz], [hx, 0, -hz], [-hx, 0, hz], [hx, 0, hz], [-hx, 1.2, -hz], [hx, 1.2, -hz], [-hx, 1.2, hz], [hx, 1.2, hz]];
+    kam.ziel = [0, 0, 0]; kam.fov = 44; g3Rahmen(kam, pk, asp, dir, oben, { x: quer ? .72 : .96, o: quer ? .8 : .6, u: quer ? .96 : .68 });
+  }
+
+  function figur(s, m, x, z) {
+    const hop = s.laeuft ? Math.abs(Math.sin(s.anim)) * .08 : 0, jb = s.jubel > 0 ? Math.abs(Math.sin(s.jubel * 9)) * .3 : 0;
+    G3.pose(M, x, hop + jb, z, s.blick, 0, 0, .62); R.mal(m.r, M, { glanz: .35 });
+    [-1, 1].forEach(sd => { G3.mal(M, G3.pose(M2, sd * .47, 1.05, -.02, 0, -.2, sd * (s.jubel > 0 ? 2.2 : .35 + (s.laeuft ? Math.abs(Math.sin(s.anim)) * .3 : 0))), M3); R.mal(m.f, M3); G3.mal(M, G3.pose(M2, sd * .2, 0, sd * (s.laeuft ? Math.sin(s.anim) * .12 : 0), 0, 0, 0), M3); R.mal(m.u, M3); });
+  }
+  function zeichne3D(K) {
+    if (!A || !R.bild(kam, SBA_ST[art], K.t)) return; const P = SBA_PAL[art];
+    R.mal(feldM.b, G3.pose(M, 0, 0, 0), { glanz: .3, nebel: [80, 900] }); R.mal(feldM.g, M, { leucht: 1, nebel: [80, 900] });
+    if (!blockM[art]) blockM[art] = bau(55, B => { B.kiste(0, 0, 0, .92, .82, .92, P.block, P.block2); B.kugel(0, .82, 0, .4, .1, .4, '#ffffff', 1); });
+    for (let j = 0; j < RR; j++) for (let i = 0; i < C; i++) { const g = A.g[j][i]; if (g === 2 || g === 3) { const [x, z] = pos(i, j), w = g === 3 ? .85 : 1; R.mal(blockM[art], G3.pose(M, x, 0, z, 0, 0, 0, w), { glanz: .4 }); } else if (g === 4) { const [x, z] = pos(i, j); R.mal(mod.sturm, G3.pose(M, x, 0, z), { glanz: .8, leucht: .2 }); } }
+    A.extras.forEach((e, k) => { const [i, j] = k.split(',').map(Number), [x, z] = pos(i, j); R.mal(mod.extra[e], G3.pose(M, x, .45 + Math.sin(A.t * 3 + i) * .08, z, A.t * 2, 0, 0, 1), { leucht: .45, glanz: 1 }); });
+    A.bomben.forEach(b => { const [x, z] = pos(b.i, b.j), pu = 1 + Math.sin(A.t * (b.t < .8 ? 22 : 9)) * .06; R.schatten(x, .01, z, .4, .4); R.mal(mod.bombe, G3.pose(M, x, 0, z, 0, 0, 0, pu), { glanz: .6, leucht: b.t < .8 ? .35 : 0, tint: b.t < .8 ? [1, .9, .9] : [1, 1, 1] }); R.mal(mod.funke, G3.pose(M, x + .05, .86 + Math.random() * .03, z), { leucht: 1 }); });
+    A.sp.forEach(s => { const [x, z] = ziehPos(s), m = figM[s.fi]; R.schatten(x, .01, z, .38, .45); figur(s, m, x, z); });
+    A.sp.forEach(s => { if (s.lebt) return; const [x, z] = ziehPos(s); R.mal(mod.eis, G3.pose(M, x, 0, z, .2), { alpha: .5, leucht: .3, glanz: 1, tint: [.8, .95, 1] }); });
+    A.blitze.forEach(bl => { const a = Math.min(1, bl.t / .3); bl.zellen.forEach(([i, j]) => { const [x, z] = pos(i, j); R.mal(mod.blitz, G3.pose(M, x, .02, z, 0, 0, 0, 1, a, 1), { alpha: .55 * a + .2, leucht: .8, tint: [.85, .97, 1] }); }); });
+    if (A.teile.length) R.teile(A.teile, .7);
+  }
+  function anzeige(K, x) {
+    if (!A) return; basisNeu(K);
+
+    const fs = Math.max(13, Math.min(17, K.W / 46)); let xx = K.W - 16;
+    A.sp.slice().reverse().forEach(s => { const t = `${s.n} ${'⭐'.repeat(s.sieg)}${s.lebt ? '' : ' 🧊'}`; x.save(); x.font = h28aFont(fs); const w = x.measureText(t).width + fs * 1.6; x.restore(); g3Schild(x, xx - w / 2, 30, t, s.lebt ? s.h : 'rgba(200,210,225,.85)', fs); xx -= w + 8; });
+
+    A.sp.forEach(s => { if (!s.text) return; const [px, pz] = ziehPos(s), p = R.schirm(px, 1.3, pz); if (p[2] <= .1) return; x.save(); x.font = h28aFont(16); x.textAlign = 'center'; x.lineWidth = 5; x.strokeStyle = 'rgba(18,30,50,.7)'; x.globalAlpha = Math.min(1, s.text.z * 2); x.strokeText(s.text.t, p[0], p[1] - (1.1 - s.text.z) * 30); x.fillStyle = '#ffffff'; x.fillText(s.text.t, p[0], p[1] - (1.1 - s.text.z) * 30); x.restore(); });
+    if (A.phase !== 'spiel' && A.phase !== 'start') return;
+
+    zonen(K).forEach((z, k) => { const s = ST.s[k], f = A.sp[k] || A.sp[0], [bx, by, br] = z.knopf; x.save();
+      x.globalAlpha = .78; x.fillStyle = f.h; x.beginPath(); x.arc(bx, by, br, 0, 7); x.fill(); x.lineWidth = 4; x.strokeStyle = f.c; x.stroke(); x.globalAlpha = 1; x.font = `${Math.round(br * .8)}px ${H28A_EMOJI_FONT}`; x.textAlign = 'center'; x.textBaseline = 'middle'; x.fillText('❄️', bx, by + 2);
+      const cx = s.an ? s.cx : z.stick[0], cy = s.an ? s.cy : z.stick[1]; x.globalAlpha = s.an ? .5 : .28; x.fillStyle = '#ffffff'; x.beginPath(); x.arc(cx, cy, 60, 0, 7); x.fill(); x.globalAlpha = s.an ? .9 : .5; x.fillStyle = f.h; x.beginPath(); x.arc(cx + (s.an ? s.x * 60 : 0), cy + (s.an ? s.y * 60 : 0), 26, 0, 7); x.fill(); x.lineWidth = 3; x.strokeStyle = f.c; x.stroke(); x.restore(); });
+    if (A.zwei) { if (K.W >= K.H) { x.save(); x.globalAlpha = .25; x.fillStyle = '#ffffff'; x.fillRect(K.W / 2 - 1, K.H * .55, 2, K.H * .45); x.restore(); } }
+  }
+  const K = akBaukasten(stage, {
+    id: 'sba', titel: '❄️ Schneeball-Arena 3D', text: 'Leg Schneebomben, sprenge Schneewürfel, sammle Extras und friere die anderen ein! Allein gegen drei Pinguine oder zu zweit an einem Gerät.', welten: SBA_WELTEN, n: 5, punkteWort: 'Siege', ersterTipp: false,
+    hilfe: 'Allein: das Spiel gewinnen gibt drei Sterne, mindestens eine Runde zwei Sterne. Zu zweit gibt jedes fertige Spiel drei Sterne.',
+    layout: K => { R.groesse(K.W, K.H); kamSetz(K); }, level: sbaLevel,
+    menu: K => { K.cfg.extra = g3Modus(SBA_ZWEI, 'gegen drei Pinguine', 'Lumi gegen Pia'); K.cfg.extraKlick = v => { SBA_ZWEI = v === 'zwei'; K.menu(); }; const [w, l] = lvAktuell('sba', 4, 5); bauen(sbaLevel(Math.max(0, w), Math.max(0, l))); kamSetz(K); },
+    start: (K, L) => { bauen(L); kamSetz(K); K.punkte = 0; K.fort = undefined; K.ziel = ''; ST.ptr.clear(); ST.s.forEach(s => Object.assign(s, { an: false, x: 0, y: 0, bombe: false })); ST.keys = {}; },
+    los: K => { A.phase = 'start'; A.count = 3.2; },
+    bereit: K => [K.L.name + `: wer zuerst ${K.L.siege} Runden gewinnt`, A && A.zwei ? (K.W >= K.H ? 'Zu zweit: Lumi spielt links, Pia rechts. Daumen-Stick zum Laufen, ❄️ legt eine Schneebombe.' : 'Zu zweit: Lumi spielt unten, Pia oben. Daumen-Stick zum Laufen, ❄️ legt eine Schneebombe.') : 'Daumen-Stick zum Laufen, ❄️ legt eine Schneebombe. Lauf schnell weg, das Schnee-Kreuz friert ein!'],
+    tippText: 'Tippe zum Starten!',
+    update: (K, dt) => { if (!A) return; if (K.phase === 'lauf' || K.phase === 'ende' || K.phase === 'fertig') schritt(K, dt); },
+    draw: (K, x) => { x.clearRect(-60, -60, K.W + 120, K.H + 120); R.messe(); zeichne3D(K); if (K.phase === 'lauf' && A) anzeige(K, x); },
+    down: (K, a, b, e) => sDown(K, a, b, e), move: (K, a, b, e) => sMove(K, a, b, e), up: (K, a, b, e) => sUp(K, a, b, e),
+    taste: (K, e, an) => { if (an && K.phase === 'bereit') { K.los(); return; } const k = e.key.length === 1 ? e.key.toLowerCase() : e.key; if (['a', 'd', 'w', 's', ' ', 'Enter', 'ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown'].includes(k)) { if (k === ' ' || k === 'Enter') { if (an) ST.keys[k] = true; } else ST.keys[k] = an; e.preventDefault(); } },
+    dbg: K => ({ get A() { return A; }, get R() { return R; }, kam: () => kam, ST, zonen: () => zonen(K), zwei: an => { SBA_ZWEI = !!an; }, bombe: k => legeBombe(A.sp[k || 0]), gefahr: () => gefahr(),
+      st: () => ({ phase: K.phase, spiel: A.phase, runde: A.runde, siege: A.sp.map(s => s.sieg), leben: A.sp.map(s => s.lebt), sterne: K.sterne }),
+      sim: (sec, gut = .8) => { if (K.phase === 'bereit') K.los(); A.auto = true; A.autoGut = gut; for (let i = 0; i < sec * 60 && K.phase === 'lauf'; i++) K.schritt(1 / 60); A.auto = false; return { phase: K.phase, spiel: A.phase, runde: A.runde, siege: A.sp.map(s => s.sieg), sterne: K.sterne }; } })
+  });
+}
+FUN_GAMES.schneeball3d = { c: 'hits', t: 'Schneeball-Arena 3D', seit: 'Schneeball-Arena 3D', d: 'Schneebomben legen, Schneewürfel sprengen, Extras sammeln und die anderen einfrieren! Allein gegen drei Pinguine oder zu zweit an einem Gerät. 4 Arenen mit 20 Spielen.', i: '☃️' };
+FUN_IMPL.schneeball3d = sbaSpiel;
+
+/*@@src billard480.js@@*/
+
+
+
+
+
+
+
+
+
+
+let BIL_ZWEI = false;
+const BIL_WELTEN = [
+  { n: 'Wohnzimmer', i: '🛋️', farbe: '#2f8f46', art: 'wohn' },
+  { n: 'Strand-Café', i: '🏖️', farbe: '#2f9bd8', art: 'strand' },
+  { n: 'Eis-Lounge', i: '❄️', farbe: '#6fa8dc', art: 'eis' },
+  { n: 'Sternen-Tisch', i: '🌟', farbe: '#6a4fd6', art: 'sterne' }
+];
+const BIL_PAL = {
+  wohn: { tuch: '#2f8f46', tuch2: '#2a8040', holz: '#7a4a2a', holz2: '#9a6a3a', boden: '#b98a5a', boden2: '#a97a4c', wand: '#e8d6b8' },
+  strand: { tuch: '#2f8fc8', tuch2: '#2a80b4', holz: '#e8d6a8', holz2: '#ffffff', boden: '#f1d7a8', boden2: '#ead0a0', wand: '#7fd0f0' },
+  eis: { tuch: '#5aa0d8', tuch2: '#5094cc', holz: '#dfeefa', holz2: '#ffffff', boden: '#e3f0fa', boden2: '#d8e9f7', wand: '#bfe0ff' },
+  sterne: { tuch: '#4a3fa0', tuch2: '#433892', holz: '#2a2f60', holz2: '#8ef3ff', boden: '#161c40', boden2: '#1b2249', wand: '#26306a' }
+};
+const BIL_ST = { wohn: FUB_ST.rasen, strand: KGP_ST.strand, eis: KGP_ST.eis, sterne: KGP_ST.sterne };
+const BIL_LX = 4, BIL_LZ = 2, BIL_R = .16, BIL_VMAX = 11;
+const BIL_GEGNER = [['Paul', '#ff9b26', 'kappe'], ['Pino', '#5cc85c', 'muetze'], ['Polly', '#a46bff', 'schleife'], ['Pepe', '#e8463a', 'helm'], ['Flocke', '#3fb8e0', 'krone']];
+const BIL_FARBE = ['#3f8fe0', '#ff6fb8'];
+function bilLevel(w, l) {
+  const g = BIL_GEGNER[(l + w) % 5];
+  return { w, l, st: w * 5 + l, art: BIL_WELTEN[w].art, n: [2, 2, 3, 3, 4][l] + (w >= 2 ? 1 : 0), tasche: .34 - w * .025, skill: Math.min(.92, .3 + l * .11 + w * .07), gegner: g[0], gfarbe: g[1], hut: g[2], name: `${BIL_WELTEN[w].n} ${l + 1}` };
+}
+function bilSpiel(stage) {
+  const R = g3Neu(stage);
+  if (!R) { const d = document.createElement('div'); d.className = 'tb-box'; d.innerHTML = '<div class="tb-karte lr-karte lv-karte"><h2>🧊 Hier fehlt die 3D-Grafik</h2><p>Dieses Spiel braucht 3D-Grafik. Auf diesem Gerät klappt das leider nicht. Probier ein anderes Spiel!</p></div>'; stage.appendChild(d); return; }
+  const M = G3.neu(), M2 = G3.neu(), M3 = G3.neu(), LX = BIL_LX, LZ = BIL_LZ, BR = BIL_R, clamp = (v, a, b) => Math.max(a, Math.min(b, v));
+  const bau = (seed, f) => { const B = g3Bau(seed); f(B); return R.mesh(B.fertig()); };
+  const kugel = (farbe, mitte) => bau(30, B => { B.kugel(0, 0, 0, BR, BR, BR, farbe, 2); if (mitte) { B.kugel(0, BR * .55, 0, BR * .55, BR * .5, BR * .55, '#ffffff', 1); B.kugel(0, BR * .72, 0, BR * .3, BR * .3, BR * .3, mitte, 1); } });
+  const mod = { weiss: kugel('#f7f8fc'), k: [kugel(BIL_FARBE[0], BIL_FARBE[0]), kugel(BIL_FARBE[1], BIL_FARBE[1])], gold: kugel('#ffd23f', '#ff9b26') };
+  mod.queue = bau(31, B => { B.kiste(0, -.03, 1.6, .07, .07, 3.2, '#c98a4a', '#e8b878'); B.kiste(0, -.035, .04, .072, .072, .08, '#3fa7d6'); B.kiste(0, -.04, 2.9, .09, .09, .6, '#2b2f3a'); });
+  const lu = luLumiModell(); mod.lumi = { r: R.mesh(lu.rumpf), f: R.mesh(lu.fl), u: R.mesh(lu.fuss) };
+  let A = null, art = 'wohn', tischM = null, gegM = null;
+  const kam = { auge: [0, 12, 6], ziel: [0, 0, 0], fov: 44, nah: .3, fern: 300 };
+  const TASCHEN = () => { const t = A.L.tasche; return [[-LX - .06, -LZ - .06, t], [LX + .06, -LZ - .06, t], [-LX - .06, LZ + .06, t], [LX + .06, LZ + .06, t], [0, -LZ - .16, t * .85], [0, LZ + .16, t * .85]]; };
+
+  function tischBau(L) {
+    const P = BIL_PAL[L.art], B = g3Bau(80 + L.st), G = g3Bau(81 + L.st), nacht = L.art === 'sterne', rb = .42;
+    B.zitter = .015; for (let x = -LX; x < LX - .01; x += 1) for (let z = -LZ; z < LZ - .01; z += 1) B.boden(x, x + 1, z, z + 1, 0, P.tuch); B.zitter = 0;
+    B.boden(LX * .5 - .01, LX * .5 + .01, -LZ, LZ, .002, P.tuch2);
+    B.scheibe(LX * .5, .003, 0, .05, 10, '#ffffff'); B.scheibe(-LX * .55, .003, 0, .05, 10, '#ffffff');
+
+    const t = L.tasche, mC = t * 1.05, mM = t * .95;
+    [-1, 1].forEach(s => { [[-LX + mC, -mM], [mM, LX - mC]].forEach(([a, b]) => B.kiste((a + b) / 2, 0, s * (LZ + .06), b - a, .11, .12, P.tuch2, P.tuch)); B.kiste(s * (LX + .06), 0, 0, .12, .11, 2 * (LZ - mC), P.tuch2, P.tuch); });
+    [-1, 1].forEach(s => { B.kiste(0, -.05, s * (LZ + .12 + rb / 2), 2 * (LX + .12 + rb), .2, rb, P.holz, P.holz2); B.kiste(s * (LX + .12 + rb / 2), -.05, 0, rb, .2, 2 * (LZ + .12), P.holz, P.holz2); });
+    for (let k = 1; k < 8; k++) if (k !== 4) [-1, 1].forEach(s => G.scheibe(-LX + k, .152, s * (LZ + .12 + rb / 2), .04, 8, nacht ? '#8ef3ff' : '#ffffff'));
+    TASCHEN.call(null).forEach(([x, z, r]) => { B.scheibe(x, .006, z, r * 1.05, 18, '#141a2a'); B.zyl(x, -.25, z, r * 1.05, r * 1.05, .25, 14, '#1d2233'); });
+    B.kiste(0, -.75, 0, 2 * (LX + .6), .7, 2 * (LZ + .6), P.holz);
+    [-1, 1].forEach(a => [-1, 1].forEach(b => B.kiste(a * (LX - .2), -1.6, b * (LZ - .1), .4, .9, .4, P.holz)));
+    const r = B.zuf; B.zitter = .04; for (let x = -30; x < 30; x += 4) for (let z = -30; z < 30; z += 4) B.boden(x, x + 4, z, z + 4, -1.6, ((x + z) / 4) % 2 ? P.boden : P.boden2); B.zitter = 0;
+    for (let k = 0; k < 26; k++) { const a = r() * 6.283, d = 8 + r() * 12, x = Math.cos(a) * d * 1.3, z = Math.sin(a) * d; if (Math.abs(x) < LX + 3 && Math.abs(z) < LZ + 3) continue; const s = .8 + r() * .6;
+      if (L.art === 'wohn') { if (k % 3) { B.kiste(x, -1.6, z, 1.6 * s, .6 * s, .8 * s, ['#c94f4f', '#4f7ac9', '#c9a24f'][k % 3]); B.kiste(x, -1.0, z + .3 * s, 1.6 * s, .6 * s, .2 * s, ['#b04040', '#4068b0', '#b08c40'][k % 3]); } else { B.zyl(x, -1.6, z, .3, .25, .8, 8, '#c98a4a'); B.kugel(x, -.4, z, .7, .6, .7, '#3f8a46', 1, false); } }
+      else if (L.art === 'strand') { if (k % 2) { B.zyl(x, -1.6, z, .04, .04, 2, 5, '#ffffff'); B.zyl(x, .2, z, 1.2 * s, 0, .4, 10, ['#e94f6a', '#3fa7d6', '#f2c14e'][k % 3]); } else { let px = x, py = -1.6; for (let q = 0; q < 5; q++) { B.zyl(px, py, z, .14 * s, .12 * s, .7 * s, 6, '#a87842'); px += .1 * s; py += .7 * s; } for (let q = 0; q < 6; q++) B.mit(px, py, z, q * 1.05, .5, 0, s, s, s, () => B.kiste(0, 0, -.8, .34, .04, 1.6, '#3aa65a')); } }
+      else if (L.art === 'eis') { B.kugel(x, -1.6, z, .9 * s, .6 * s, .9 * s, '#ffffff', 1, false); if (k % 3 === 0) G.zyl(x, -1.6, z, .3 * s, 0, 2 * s, 5, '#bfefff'); }
+      else { if (k % 2) G.kugel(x, -1 + r() * 2, z, .1, .1, .1, ['#ffffff', '#8ef3ff', '#ffd56b'][k % 3], 0); else B.kugel(x, 0, z, .8 * s, .8 * s, .8 * s, ['#a46bff', '#ff8ad8', '#5cc8ff'][k % 3], 1); } }
+    return { b: R.mesh(B.fertig()), g: R.mesh(G.fertig()) };
+  }
+
+  function frei(x, z, ohne) { return A.kugeln.every(k => k === ohne || k.rein || Math.hypot(k.x - x, k.z - z) > 2 * BR + .02); }
+  function platz(x0, z0, ohne) { for (let r = 0; r < 3; r += .1) for (let a = 0; a < 6.283; a += .5) { const x = clamp(x0 + Math.cos(a) * r, -LX + BR, LX - BR), z = clamp(z0 + Math.sin(a) * r, -LZ + BR, LZ - BR); if (frei(x, z, ohne)) return [x, z]; } return [x0, z0]; }
+  function bauen(L) {
+    art = L.art; const zwei = BIL_ZWEI;
+    if (tischM) { R.weg(tischM.b); R.weg(tischM.g); }
+    if (gegM) Object.values(gegM).forEach(m => R.weg(m));
+    const gp = zwei ? fgPinguin('#ff8ad8', '#ffffff', 'schleife', '#ffffff') : fgPinguin(L.gfarbe, '#ffffff', L.hut, '#ffffff'); gegM = { r: R.mesh(gp.rumpf), f: R.mesh(gp.fl), u: R.mesh(gp.fuss) };
+    A = { L, zwei, t: 0, pt: 0, phase: 'warte', dran: 0, sp: [{ n: 'Lumi', c: BIL_FARBE[0], h: '#bfe0ff', mensch: true }, { n: zwei ? 'Pia' : L.gegner, c: BIL_FARBE[1], h: '#ffd0ec', mensch: zwei }], kugeln: [], ziel: null, teile: [], rein: [], gewinner: null, kiDenk: 0, kiPlan: null };
+    tischM = tischBau(L);
+
+    const n = L.n, liste = [];
+    for (let i = 0; i < n; i++) { liste.push(0); liste.push(1); } liste.sort(() => Math.random() - .5);
+    let reihe = 0, platzN = 0, gesetzt = 0; const alle = n * 2 + 1, goldIdx = Math.min(alle - 1, 4);
+    for (let k = 0; k < alle; k++) { if (platzN > reihe) { reihe++; platzN = 0; } const x = LX * .5 + reihe * BR * 1.76, z = (platzN - reihe / 2) * BR * 2.04;
+      A.kugeln.push(k === goldIdx ? { art: 'gold', x, z, vx: 0, vz: 0, rein: false, rot: 0 } : { art: liste[gesetzt++], x, z, vx: 0, vz: 0, rein: false, rot: 0 }); platzN++; }
+    A.weiss = { art: 'weiss', x: -LX * .55, z: 0, vx: 0, vz: 0, rein: false, rot: 0 }; A.kugeln.push(A.weiss);
+    A.gold = A.kugeln.find(k => k.art === 'gold');
+  }
+  const offen = s => A.kugeln.filter(k => k.art === s && !k.rein).length;
+
+  function physik(h) {
+    const ks = A.kugeln.filter(k => !k.rein), t = A.L.tasche, mC = t * 1.05, mM = t * .95, o = .07, ecken = [[-LX + mC, -LZ - o], [LX - mC, -LZ - o], [-LX + mC, LZ + o], [LX - mC, LZ + o], [-LX - o, -LZ + mC], [LX + o, -LZ + mC], [-LX - o, LZ - mC], [LX + o, LZ - mC], [-mM, -LZ - o], [mM, -LZ - o], [-mM, LZ + o], [mM, LZ + o]];
+    ks.forEach(k => { k.x += k.vx * h; k.z += k.vz * h; const sp = Math.hypot(k.vx, k.vz); k.rot += sp * h / BR;
+      const ns = Math.max(0, sp - (.85 + .22 * sp) * h); if (sp > 0) { k.vx *= ns / sp; k.vz *= ns / sp; }
+
+      const inMundX = Math.abs(k.x) > LX - mC || Math.abs(k.x) < mM, inMundZ = Math.abs(k.z) > LZ - mC;
+      if (!inMundX && Math.abs(k.z) > LZ - BR) { k.z = Math.sign(k.z) * (LZ - BR); if (k.vz * Math.sign(k.z) > 0) { k.vz = -k.vz * .8; ton(300, Math.min(.05, Math.abs(k.vz) * .008)); } }
+      if (!inMundZ && Math.abs(k.x) > LX - BR) { k.x = Math.sign(k.x) * (LX - BR); if (k.vx * Math.sign(k.x) > 0) { k.vx = -k.vx * .8; ton(300, Math.min(.05, Math.abs(k.vx) * .008)); } }
+
+      ecken.forEach(([ex, ez]) => { const dx = k.x - ex, dz = k.z - ez, d = Math.hypot(dx, dz), md = BR + .02; if (d < md && d > 1e-6) { const nx = dx / d, nz = dz / d; k.x = ex + nx * md; k.z = ez + nz * md; const vn = k.vx * nx + k.vz * nz; if (vn < 0) { k.vx -= 1.7 * vn * nx; k.vz -= 1.7 * vn * nz; } } });
+
+      for (const [px, pz, r] of TASCHEN()) if (Math.hypot(k.x - px, k.z - pz) < r) { versenkt(k, px, pz); break; }
+      if (!k.rein && (Math.abs(k.x) > LX + .45 || Math.abs(k.z) > LZ + .45)) { const p = TASCHEN().reduce((a, b) => Math.hypot(k.x - a[0], k.z - a[1]) < Math.hypot(k.x - b[0], k.z - b[1]) ? a : b); versenkt(k, p[0], p[1]); } });
+    for (let i = 0; i < ks.length; i++) for (let j = i + 1; j < ks.length; j++) { const a = ks[i], b = ks[j]; if (a.rein || b.rein) continue; const dx = b.x - a.x, dz = b.z - a.z, d = Math.hypot(dx, dz); if (d >= 2 * BR || d < 1e-6) continue;
+      const nx = dx / d, nz = dz / d, o = (2 * BR - d) / 2; a.x -= nx * o; a.z -= nz * o; b.x += nx * o; b.z += nz * o; const vn = (a.vx - b.vx) * nx + (a.vz - b.vz) * nz;
+      if (vn > 0) { const j2 = vn * .97; a.vx -= j2 * nx; a.vz -= j2 * nz; b.vx += j2 * nx; b.vz += j2 * nz; ton(1200, Math.min(.07, vn * .012)); if (!A.erster && (a === A.weiss || b === A.weiss)) A.erster = a === A.weiss ? b : a; } }
+  }
+  let tonT = 0; const ton = (f, v) => { if (A.t - tonT < .03 || v < .004) return; tonT = A.t; akGleit(f, f * .7, .05, 'triangle', v); };
+  function versenkt(k, px, pz) { k.rein = true; k.vx = k.vz = 0; k.px = px; k.pz = pz; k.fall = 0; A.rein.push(k); akGleit(500, 160, .25, 'sine', .08); funke(px, .1, pz, 8, [k.art === 'gold' ? '#ffd23f' : k.art === 'weiss' ? '#ffffff' : BIL_FARBE[k.art], '#ffffff']); }
+  function stoss(vx, vz) { const w = A.weiss; w.vx = vx; w.vz = vz; A.phase = 'rollt'; A.pt = 0; A.rein = []; A.erster = null; A.vorher = offen(A.dran); A.ziel = null; akGleit(180, 120, .1, 'square', .08); }
+
+  function auswerten(K) {
+    const s = A.dran, eigen = A.rein.filter(k => k.art === s).length, weissRein = A.rein.includes(A.weiss), goldRein = A.rein.includes(A.gold), n = A.sp[s].n;
+    if (goldRein) { if (A.vorher === 0 && !weissRein) { A.gewinner = s; spielEnde(K); return; }
+      A.gold.rein = false; [A.gold.x, A.gold.z] = platz(LX * .5, 0, A.gold); K.msg(A.vorher === 0 ? 'Die goldene Kugel war drin, aber die weiße auch. Gold kommt zurück.' : 'Die goldene Kugel kommt erst ganz zum Schluss. Sie kommt zurück.', 2); }
+    if (weissRein) { A.weiss.rein = false; [A.weiss.x, A.weiss.z] = platz(-LX * .55, 0, A.weiss); }
+    let weiter = eigen > 0 && !weissRein && !goldRein;
+    if (weissRein) K.msg('Die weiße Kugel ist reingefallen. Die andere Seite ist dran.', 1.8);
+    else if (eigen) { K.ruf(eigen > 1 ? `${eigen} auf einmal!` : 'Drin!'); Sound.good(); }
+    if (A.rein.some(k => k.art === 1 - s)) K.msg(`Die ${s ? 'blaue' : 'rosa'} Kugel zählt für ${A.sp[1 - s].n}.`, 1.6);
+    if (weiter && offen(s) === 0) K.msg(`${n}: alle Kugeln drin! Jetzt die goldene.`, 2);
+    if (!weiter) A.dran = 1 - s;
+    A.phase = 'zielen'; A.pt = 0; A.kiPlan = null;
+  }
+  function spielEnde(K) {
+    A.phase = 'aus'; const w = BIL_WELTEN[A.L.w], g = A.gewinner, n = A.sp.map(s => s.n);
+    if (A.zwei) { K.ruf(`${n[g]} gewinnt!`); K.ende(true, 3, `<p>${w.i} ${n[g]} versenkt die goldene Kugel! 🏆</p><p>Schön zusammen gespielt!</p>`, '', 2400); return; }
+    const st = g === 0 ? 3 : A.L.n - offen(0) >= Math.ceil(A.L.n / 2) ? 2 : 1;
+    K.ruf(g === 0 ? 'Gewonnen!' : `${n[1]} gewinnt`); K.ende(true, st, `<p>${w.i} ${g === 0 ? 'Lumi versenkt die goldene Kugel! 🏆' : `${esc(n[1])} war diesmal schneller.`}</p><p>Lumi: ${A.L.n - offen(0)} von ${A.L.n} Kugeln drin</p>`, g === 0 ? '' : 'Tipp: Die Hilfslinie zeigt, wohin die bunte Kugel rollt. Lieber sanft stoßen als zu fest.', 2400);
+  }
+
+  function wegFrei(x0, z0, x1, z1, ohne) { const dx = x1 - x0, dz = z1 - z0, l = Math.hypot(dx, dz) || 1; return A.kugeln.every(k => { if (k.rein || ohne.includes(k)) return true; const t = clamp(((k.x - x0) * dx + (k.z - z0) * dz) / (l * l), 0, 1), px = x0 + dx * t, pz = z0 + dz * t; return Math.hypot(k.x - px, k.z - pz) > 2 * BR * .98; }); }
+  function kiPlan(gut) {
+    const s = A.dran, w = A.weiss, ziele = offen(s) ? A.kugeln.filter(k => k.art === s && !k.rein) : [A.gold]; let best = null;
+    ziele.forEach(b => TASCHEN().forEach(([px, pz]) => { const ux = px - b.x, uz = pz - b.z, ul = Math.hypot(ux, uz), gx = b.x - ux / ul * 2 * BR, gz = b.z - uz / ul * 2 * BR, ax = gx - w.x, az = gz - w.z, al = Math.hypot(ax, az);
+      const cos = (ax * ux + az * uz) / (al * ul); if (cos < .3 || !wegFrei(w.x, w.z, gx, gz, [w, b]) || !wegFrei(b.x, b.z, px, pz, [b])) return;
+      const wert = (1 - cos) * 6 + al * .25 + ul * .4; if (!best || wert < best.wert) best = { wert, a: Math.atan2(az, ax), v: clamp(2.6 + (al + ul / Math.max(.35, cos)) * .95, 3, 10) }; }));
+    if (!best) { const b = ziele.slice().sort((p, q) => Math.hypot(p.x - w.x, p.z - w.z) - Math.hypot(q.x - w.x, q.z - w.z))[0] || A.gold; best = { a: Math.atan2(b.z - w.z, b.x - w.x), v: 6 }; }
+    best.a += (Math.random() - .5) * (1 - gut) * .22; best.v *= 1 + (Math.random() - .5) * (1 - gut) * .3; return best;
+  }
+
+  function hilfe(dx, dz) {
+    const w = A.weiss; let tMin = 30, hit = null;
+    A.kugeln.forEach(k => { if (k === w || k.rein) return; const fx = k.x - w.x, fz = k.z - w.z, t = fx * dx + fz * dz; if (t <= 0) return; const q = fx * fx + fz * fz - t * t, r2 = 4 * BR * BR; if (q > r2) return; const th = t - Math.sqrt(r2 - q); if (th < tMin) { tMin = th; hit = k; } });
+
+    const tx = dx > 0 ? (LX - BR - w.x) / dx : dx < 0 ? (-LX + BR - w.x) / dx : 99, tz = dz > 0 ? (LZ - BR - w.z) / dz : dz < 0 ? (-LZ + BR - w.z) / dz : 99, tb = Math.min(tx, tz);
+    if (!hit || tb < tMin) return { t: tb, hit: null };
+    const gx = w.x + dx * tMin, gz = w.z + dz * tMin, nx = hit.x - gx, nz = hit.z - gz, nl = Math.hypot(nx, nz) || 1; return { t: tMin, hit, gx, gz, nx: nx / nl, nz: nz / nl };
+  }
+
+  function schritt(K, dt) {
+    A.t += dt; A.pt += dt;
+    for (let i = A.teile.length - 1; i >= 0; i--) { const q = A.teile[i]; q.life -= dt; if (q.life <= 0) { A.teile.splice(i, 1); continue; } q.vy -= 9 * dt; q.x += q.vx * dt; q.y += q.vy * dt; q.z += q.vz * dt; q.s = q.s0 * Math.min(1, q.life / q.max * 1.6); }
+    A.kugeln.forEach(k => { if (k.rein && k.fall < 1) k.fall = Math.min(1, k.fall + dt * 3); });
+    if (A.phase === 'warte' || A.phase === 'aus') return;
+    if (A.phase === 'zielen') {
+      const ki = !A.sp[A.dran].mensch || A.auto;
+      if (ki) { if (!A.kiPlan) { A.kiPlan = kiPlan(A.sp[A.dran].mensch ? (A.autoGut || .8) : A.L.skill); A.kiDenk = A.auto ? .3 : 1.3; } A.kiDenk -= dt; if (A.kiDenk <= 0) { const p = A.kiPlan; stoss(Math.cos(p.a) * p.v, Math.sin(p.a) * p.v); } }
+    }
+    if (A.phase === 'rollt') {
+      const n = 8, h = dt / n; for (let k = 0; k < n; k++) physik(h);
+      if (A.kugeln.every(k => k.rein || Math.hypot(k.vx, k.vz) < .04) || A.pt > 20) { A.kugeln.forEach(k => { k.vx = k.vz = 0; }); auswerten(K); }
+    }
+    K.punkte = A.L.n - offen(0); K.ziel = `${A.sp[0].n} ${A.L.n - offen(0)}/${A.L.n} · ${A.sp[1].n} ${A.L.n - offen(1)}/${A.L.n}`;
+  }
+  const funke = (x, y, z, n, f) => { for (let i = 0; i < n; i++) { const a = Math.random() * 6.28; A.teile.push({ x, y, z, vx: Math.cos(a) * 1.5, vy: 1.5 + Math.random() * 2, vz: Math.sin(a) * 1.5, life: .5 + Math.random() * .3, max: .8, s0: .045, f: f[i % f.length] }); } };
+
+  const darf = () => A && A.phase === 'zielen' && A.sp[A.dran].mensch && !A.auto;
+  function zielStart(K, a, b) { if (!darf()) return; A.ziel = { p0: g3AufEbene(kam, K.W, K.H, a, b, 0), p1: null }; }
+  function zielZug(K, a, b) { if (A && A.ziel) A.ziel.p1 = g3AufEbene(kam, K.W, K.H, a, b, 0); }
+  function zielWerte() { const z = A && A.ziel; if (!z || !z.p1) return null; const dx = z.p0[0] - z.p1[0], dz = z.p0[1] - z.p1[1], l = Math.hypot(dx, dz); if (l < .06) return null; return { dx: dx / l, dz: dz / l, kraft: Math.min(1, l / 3) }; }
+  function zielLos() { if (!A || !A.ziel) return; const w = zielWerte(); A.ziel = null; if (!w || w.kraft < .03) return; const v = .6 + w.kraft * (BIL_VMAX - .6); stoss(w.dx * v, w.dz * v); }
+
+  function kamSetz(K) {
+    const asp = K.W / Math.max(1, K.H), quer = asp >= 1, t = .36, dir = quer ? [0, Math.cos(t), Math.sin(t)] : [-Math.sin(t), Math.cos(t), 0], oben = quer ? [0, 0, -1] : [1, 0, 0];
+    const ex = LX + .7, ez = LZ + .7, pk = [[-ex, 0, -ez], [ex, 0, -ez], [-ex, 0, ez], [ex, 0, ez], [-ex, .2, -ez], [ex, .2, -ez], [-ex, .2, ez], [ex, .2, ez]];
+    kam.ziel = [0, 0, 0]; kam.fov = 44; g3Rahmen(kam, pk, asp, dir, oben, { x: .96, o: quer ? .74 : .72, u: quer ? .84 : .74 });
+  }
+
+  function figur(m, x, z, ry, hop) { G3.pose(M, x, -1.6 + hop, z, ry, 0, 0, 1.25); R.mal(m.r, M, { glanz: .35 }); [-1, 1].forEach(sd => { G3.mal(M, G3.pose(M2, sd * .47, 1.05, -.02, 0, -.2, sd * (hop > .01 ? 1.6 : .35)), M3); R.mal(m.f, M3); G3.mal(M, G3.pose(M2, sd * .2, 0, 0, 0, 0, 0), M3); R.mal(m.u, M3); }); }
+  function zeichne3D(K) {
+    if (!A || !R.bild(kam, BIL_ST[art], K.t)) return;
+    R.mal(tischM.b, G3.pose(M, 0, 0, 0), { glanz: .25, nebel: [80, 900] }); R.mal(tischM.g, M, { leucht: 1, nebel: [80, 900] });
+    const hopf = i => A.dran === i && A.phase === 'zielen' ? Math.abs(Math.sin(A.t * 4)) * .12 : 0;
+    figur(mod.lumi, -LX - 1.2, 0, -Math.PI / 2, hopf(0)); figur(gegM, LX + 1.2, 0, Math.PI / 2, hopf(1));
+    A.kugeln.forEach(k => { const m = k.art === 'weiss' ? mod.weiss : k.art === 'gold' ? mod.gold : mod.k[k.art];
+      if (k.rein) { if (k.fall >= 1) return; R.mal(m, G3.pose(M, k.px, BR - k.fall * .4, k.pz, 0, 0, 0, 1 - k.fall * .5), { glanz: .9 }); return; }
+      R.schatten(k.x, .004, k.z, BR * 1.05, .45); R.mal(m, G3.pose(M, k.x, BR, k.z, Math.atan2(k.vx, k.vz), k.rot, 0), { glanz: 1 }); });
+
+    const w = zielWerte(), ki = A.phase === 'zielen' && A.kiPlan && A.kiDenk > 0;
+    if (A.phase === 'zielen' && (w || ki)) { const dx = w ? w.dx : Math.cos(A.kiPlan.a), dz = w ? w.dz : Math.sin(A.kiPlan.a), kr = w ? w.kraft : clamp(A.kiPlan.v / BIL_VMAX, 0, 1) * Math.min(1, (1.3 - A.kiDenk) * 1.2), ab = BR + .05 + kr * .7;
+      R.mal(mod.queue, G3.pose(M, A.weiss.x - dx * ab, BR + .06, A.weiss.z - dz * ab, Math.atan2(-dx, -dz), -.08, 0), { glanz: .6 }); }
+    if (A.teile.length) R.teile(A.teile, .7);
+  }
+  function anzeige(K, x) {
+    if (!A) return;
+    const w = zielWerte(), ki = A.phase === 'zielen' && A.kiPlan && A.kiDenk > 0 && !A.auto;
+    if (A.phase === 'zielen' && (w || ki)) { const dx = w ? w.dx : Math.cos(A.kiPlan.a), dz = w ? w.dz : Math.sin(A.kiPlan.a), hf = hilfe(dx, dz), wk = A.weiss, S = (px, pz) => R.schirm(px, BR, pz);
+      x.save(); x.setLineDash([8, 7]); x.lineWidth = 3; x.strokeStyle = 'rgba(255,255,255,.85)'; const p0 = S(wk.x, wk.z), p1 = S(wk.x + dx * hf.t, wk.z + dz * hf.t); x.beginPath(); x.moveTo(p0[0], p0[1]); x.lineTo(p1[0], p1[1]); x.stroke();
+      if (hf.hit) { x.setLineDash([]); const g = S(hf.gx, hf.gz), r = Math.abs(S(hf.gx + BR, hf.gz)[0] - g[0]) + Math.abs(S(hf.gx, hf.gz + BR)[1] - g[1]); x.beginPath(); x.arc(g[0], g[1], Math.max(5, r * .7), 0, 7); x.stroke(); const q0 = S(hf.hit.x, hf.hit.z), q1 = S(hf.hit.x + hf.nx * 1.1, hf.hit.z + hf.nz * 1.1); x.strokeStyle = hf.hit.art === 'gold' ? '#ffd23f' : hf.hit.art === 'weiss' ? '#ffffff' : BIL_FARBE[hf.hit.art]; x.lineWidth = 4; x.beginPath(); x.moveTo(q0[0], q0[1]); x.lineTo(q1[0], q1[1]); x.stroke(); }
+      if (w) { const kc = w.kraft < .45 ? '#5cc85c' : w.kraft < .8 ? '#ffd23f' : '#e8463a', bw = 90; x.fillStyle = 'rgba(18,30,50,.6)'; h28aRR(x, p0[0] - bw / 2, p0[1] + 22, bw, 11, 5); x.fill(); x.fillStyle = kc; h28aRR(x, p0[0] - bw / 2, p0[1] + 22, Math.max(8, bw * w.kraft), 11, 5); x.fill(); }
+      x.restore(); }
+
+    const fs = Math.max(13, Math.min(17, K.W / 44)); let y = 30;
+    A.sp.forEach((s, i) => { const rest = offen(i), t = `${s.n}: ${'●'.repeat(A.L.n - rest)}${'○'.repeat(rest)}${rest === 0 ? ' ⭐ Gold!' : ''}`; x.save(); x.font = h28aFont(fs); const tw = x.measureText(t).width; x.restore(); g3Schild(x, K.W - tw / 2 - 28, y, t, A.dran === i && A.phase !== 'aus' ? s.h : 'rgba(255,255,255,.85)', fs, i ? '#a0306a' : '#1d4f9a'); y += fs * 2.2; });
+    if (A.phase === 'zielen' && !A.ziel) { const s = A.sp[A.dran]; g3Schild(x, K.W / 2, K.H - 32, s.mensch && !A.auto ? (A.zwei ? `${s.n} ist dran${K.W < 600 ? '' : ': zurückziehen und loslassen'}` : 'Zurückziehen und loslassen') : `${s.n} zielt …`, s.h, 16); }
+  }
+  const K = akBaukasten(stage, {
+    id: 'bil', titel: '🎱 Pinguin-Billard 3D', text: 'Versenk deine Kugeln und zum Schluss die goldene! Lumi spielt mit Blau, die anderen mit Rosa. Allein gegen einen Pinguin oder zu zweit abwechselnd.', welten: BIL_WELTEN, n: 5, punkteWort: 'Kugeln', ersterTipp: false,
+    hilfe: 'Allein: gewinnen gibt drei Sterne, mindestens die Hälfte der eigenen Kugeln zwei Sterne. Zu zweit gibt jedes fertige Spiel drei Sterne.',
+    layout: K => { R.groesse(K.W, K.H); kamSetz(K); }, level: bilLevel,
+    menu: K => { K.cfg.extra = g3Modus(BIL_ZWEI, 'gegen einen Pinguin', 'Lumi gegen Pia'); K.cfg.extraKlick = v => { BIL_ZWEI = v === 'zwei'; K.menu(); }; const [w, l] = lvAktuell('bil', 4, 5); bauen(bilLevel(Math.max(0, w), Math.max(0, l))); kamSetz(K); },
+    start: (K, L) => { bauen(L); kamSetz(K); K.punkte = 0; K.fort = undefined; K.ziel = ''; },
+    los: K => { A.phase = 'zielen'; A.pt = 0; },
+    bereit: K => [K.L.name + `: je ${K.L.n} Kugeln`, `${A && A.zwei ? 'Zu zweit: Lumi hat Blau, Pia hat Rosa. ' : `Lumi hat Blau, ${K.L.gegner} hat Rosa. `}Zurückziehen und loslassen. Eigene Kugel drin: noch mal! Zum Schluss die goldene.`],
+    tippText: 'Tippe zum Starten!',
+    update: (K, dt) => { if (!A) return; if (K.phase === 'lauf' || K.phase === 'ende' || K.phase === 'fertig') schritt(K, dt); },
+    draw: (K, x) => { x.clearRect(-60, -60, K.W + 120, K.H + 120); R.messe(); zeichne3D(K); if (K.phase === 'lauf' && A) anzeige(K, x); },
+    down: (K, a, b) => zielStart(K, a, b), move: (K, a, b) => zielZug(K, a, b), up: () => zielLos(),
+    taste: (K, e, an) => { if (an && K.phase === 'bereit') { K.los(); return; } },
+    dbg: K => ({ get A() { return A; }, get R() { return R; }, kam: () => kam, zwei: an => { BIL_ZWEI = !!an; }, stoss: (vx, vz) => stoss(vx, vz), hilfe: (dx, dz) => hilfe(dx, dz), plan: g => kiPlan(g),
+      st: () => ({ phase: K.phase, spiel: A.phase, dran: A.dran, offen: [offen(0), offen(1)], gewinner: A.gewinner, sterne: K.sterne }),
+      sim: (sec, gut = .85) => { if (K.phase === 'bereit') K.los(); A.auto = true; A.autoGut = gut; for (let i = 0; i < sec * 60 && K.phase === 'lauf'; i++) K.schritt(1 / 60); A.auto = false; return { phase: K.phase, spiel: A.phase, offen: [offen(0), offen(1)], gewinner: A.gewinner, sterne: K.sterne }; } })
+  });
+}
+FUN_GAMES.billard3d = { c: 'hits', t: 'Pinguin-Billard 3D', seit: 'Pinguin-Billard 3D', d: 'Kugeln versenken mit Hilfslinie: Blau gegen Rosa, zum Schluss die goldene! Allein gegen einen Pinguin oder zu zweit abwechselnd. 4 Tische mit 20 Spielen.', i: '🎱' };
+FUN_IMPL.billard3d = bilSpiel;
+
 /*@@src belohnung311.js@@*/
 
 
@@ -108363,7 +109254,7 @@ const BLW_ARTEN = [['abenteuer', '🗺️', 'Abenteuer & Entdecken', '#1e8f88', 
 const BLW_PX_ART = { 'Abenteuer': 'abenteuer', 'Rätsel': 'knobeln', 'Hüpfen': 'rennen', 'Rennen': 'rennen', 'Sport': 'sport', 'Geschick': 'geschick', 'Bauen': 'kreativ' };
 const BLW_FUN_ART = { abenteuer: 'abenteuer', schnell: 'geschick', knobel: 'knobeln', denk: 'knobeln', kreativ: 'kreativ', fussball: 'sport', hits: 'geschick' };
 const BLW_FUN_ID = { memory: 'brett', vier: 'brett', ttt: 'brett', ludo: 'brett', maumau: 'brett', sammelduell: 'brett', wuerfel: 'brett', quartett: 'brett', mahjong: 'brett',
-  fischtausch: 'knobeln', parkplatz: 'knobeln', pfeilflucht: 'knobeln', doppel: 'knobeln', pinguinsumo: 'sport', pinguinrutsche: 'rennen', huepfer: 'rennen', ski: 'rennen', vulkansprung: 'rennen', fruchtschnitt: 'geschick', delfinshow: 'geschick', meeresmix: 'knobeln', lauf3d: 'rennen', abenteuer3d: 'abenteuer', kart3d: 'rennen', show3d: 'rennen', autoball3d: 'sport', fussball3d: 'sport', farbklecks3d: 'geschick', sternenflug3d: 'geschick', sportparty3d: 'sport', inselabenteuer3d: 'abenteuer', buddelabenteuer3d: 'abenteuer', partybrett3d: 'brett', tierinsel3d: 'abenteuer', airhockey3d: 'sport' };
+  fischtausch: 'knobeln', parkplatz: 'knobeln', pfeilflucht: 'knobeln', doppel: 'knobeln', pinguinsumo: 'sport', pinguinrutsche: 'rennen', huepfer: 'rennen', ski: 'rennen', vulkansprung: 'rennen', fruchtschnitt: 'geschick', delfinshow: 'geschick', meeresmix: 'knobeln', lauf3d: 'rennen', abenteuer3d: 'abenteuer', kart3d: 'rennen', show3d: 'rennen', autoball3d: 'sport', fussball3d: 'sport', farbklecks3d: 'geschick', sternenflug3d: 'geschick', sportparty3d: 'sport', inselabenteuer3d: 'abenteuer', buddelabenteuer3d: 'abenteuer', partybrett3d: 'brett', tierinsel3d: 'abenteuer', airhockey3d: 'sport', minigolf3d: 'sport', billard3d: 'sport', schneeball3d: 'geschick' };
 const BLW_CM_ICO = { baeck: '🥐', bahn: '🚂', detek: '🔍', markt: '🛒' };
 const BLW_NEU_TAGE = 14, BLW_LIEB_MAX = 8, BLW_NEU_MAX = 8;
 function blwS() { if (!isObj(S.blw)) S.blw = {}; const B = S.blw; if (!Array.isArray(B.h)) B.h = []; if (!isObj(B.n)) B.n = {}; if (!['art', 'neu', 'abc'].includes(B.sort)) B.sort = 'art'; return B; }
@@ -108502,6 +109393,87 @@ Object.assign(ACT, {
   },
   blwsort: t => { const B = blwS(); B.sort = t.dataset.s; save(); Sound.tap(); blwInhalt(); blwSprung('blwAlle'); }
 });
+
+/*@@src belohnung480.js@@*/
+
+
+
+
+
+
+
+
+
+
+
+
+const BLW_ZWEI = new Set(['fun:airhockey3d', 'fun:kart3d', 'fun:sportparty3d', 'fun:partybrett3d', 'fun:minigolf3d', 'fun:schneeball3d', 'fun:billard3d', 'fun:turbofussball', 'px:hockey', 'px:stadion', 'party:duell', 'party:schatz']);
+const BLW_REGAL_KURZ = { abenteuer: 'Abenteuer', sport: 'Sport', rennen: 'Rennen', geschick: 'Geschick', knobeln: 'Knobeln', brett: 'Brett & Karten', kreativ: 'Kreativ', lernen: 'Lernen', party: 'Party' };
+if (typeof blwSpiele === 'function') {
+  const alt = blwSpiele;
+  blwSpiele = function () {
+    const L = alt(), B = blwS(), dazu = [];
+
+    if (typeof showPaHub === 'function') dazu.push({ key: 'party:hub', t: 'Party-Zentrale', seit: 'Party-Spiele', d: 'Mitspieler eintragen und alle Party-Spiele', art: 'party', ico: '<span class="blw-emo">🎉</span>', act: 'data-act="pahub"', preis: 'kostenlos', pr: '', vorn: 1 });
+    if (typeof qdTileHTML === 'function' && ACT.qdopen) dazu.push({ key: 'party:duell', t: 'Quiz-Duell', d: 'Zu zweit um die Wette wissen', art: 'party', ico: '<span class="blw-emo">⚔️</span>', act: 'data-act="qdopen"', preis: 'kostenlos', pr: '' });
+    if (typeof e7PartyTile === 'function') dazu.push({ key: 'party:schatz', t: 'Schatz-Duell', d: 'Abwechselnd Felder ansagen und Schätze finden', art: 'party', ico: '<span class="blw-emo">⛏️</span>', act: 'data-act="play" data-g="schatzduell"', preis: 'kostenlos', pr: '' });
+    dazu.forEach(e => { const s = blwSeit(e.seit || e.t); e.k = s.k; e.jung = false; e.n = B.n[e.key] || 0; e.herz = B.h.includes(e.key); L.push(e); });
+    L.forEach(e => { e.zwei = BLW_ZWEI.has(e.key); e.d3 = /^fun:.*3d$/.test(e.key); });
+    return L;
+  };
+}
+
+blwKarte = function (e) {
+  return `<div class="blw-k${e.herz ? ' fav' : ''}" style="--tc:${blwFarbe(e.art)}"><button class="pxw-g blw-g" ${e.act} title="${esc(e.d || '')}">
+    <span class="blw-bild">${e.ico}${e.neu && !e.n ? '<i class="pxw-neu">NEU</i>' : ''}${e.zwei ? '<i class="blw-zw" title="auch zu zweit">👫</i>' : e.d3 ? '<i class="blw-zw blw-3d">3D</i>' : ''}</span>
+    <span class="pxw-tx"><b>${esc(e.t)}</b><small>${esc(e.preis)}</small>${e.pr ? `<em>${esc(e.pr)}</em>` : ''}</span></button>
+    <button class="blw-herz${e.herz ? ' on' : ''}" data-act="blwherz" data-k="${esc(e.key)}" aria-pressed="${e.herz}" aria-label="${esc(e.t)} als Lieblingsspiel">${e.herz ? '♥' : '♡'}</button></div>`;
+};
+
+function blwRegal(id, titel, liste, cls = '', leer = '') {
+  const auf = (blwS().auf || []).includes(id);
+  return `<section class="blw-sek blw-regal${auf ? ' auf' : ''} ${cls}" id="${id}"><div class="blw-rk"><h2 class="blw-h">${titel}${liste.length ? `<small>${liste.length}</small>` : ''}</h2>
+    ${liste.length > 3 ? `<button class="blw-mehr" data-act="blwauf" data-z="${id}" aria-expanded="${auf}">${auf ? 'Weniger' : 'Alle ›'}</button>` : ''}</div>
+    ${liste.length ? `<div class="blw-reihe">${liste.map(blwKarte).join('')}</div>` : `<p class="blw-info">${leer}</p>`}</section>`;
+}
+blwLiebHTML = function (L) {
+  const lb = blwLieblinge(L);
+  return blwRegal('blwLieb', '❤️ Deine Lieblinge', lb, '', 'Tippe bei einem Spiel auf das Herz ♡, dann steht es hier ganz oben. Was Du oft spielst, kommt auch von allein hierher.');
+};
+blwListeHTML = function (L) {
+  const B = blwS(), neu = L.filter(e => e.neu).sort(blwNeuSort).slice(0, BLW_NEU_MAX);
+  const zwei = L.filter(e => e.zwei).sort(blwNeuSort), d3 = L.filter(e => e.d3).sort(blwNeuSort);
+  let h = neu.length ? blwRegal('blwNeu', '🆕 Neu', neu) : '';
+  h += blwRegal('blwZwei', '👫 Zu zweit an einem Gerät', zwei, 'blw-gross');
+  h += blwRegal('blwD3', '🧊 3D-Spiele', d3);
+  const sortKn = `<div class="blw-sort" role="group" aria-label="Sortieren">${[['art', '📂 Nach Spielart'], ['neu', '🆕 Neueste zuerst'], ['abc', '🔤 A bis Z']].map(([k, t]) => `<button class="pxw-chip${B.sort === k ? ' on' : ''}" data-act="blwsort" data-s="${k}" aria-pressed="${B.sort === k}">${t}</button>`).join('')}</div>`;
+  h += `<section class="blw-sek" id="blwAlle"><div class="blw-rk"><h2 class="blw-h">🎮 Alle Spiele<small>${L.length}</small></h2></div>${sortKn}`;
+  if (B.sort === 'art') h += BLW_ARTEN.map(([a, ic, t]) => { const gs = L.filter(e => e.art === a).sort((x, y) => (y.vorn || 0) - (x.vorn || 0) || blwNeuSort(x, y)); if (!gs.length) return ''; const auf = (B.auf || []).includes('blwArt-' + a);
+    return `<div class="blw-art blw-regal${auf ? ' auf' : ''}" id="blwArt-${a}"><div class="blw-rk"><h3 class="blw-kat">${ic} ${esc(t)} <small>${gs.length}</small></h3>${gs.length > 3 ? `<button class="blw-mehr" data-act="blwauf" data-z="blwArt-${a}" aria-expanded="${auf}">${auf ? 'Weniger' : 'Alle ›'}</button>` : ''}</div><div class="blw-reihe">${gs.map(blwKarte).join('')}</div></div>`; }).join('');
+  else h += `<div class="blw-reihe blw-gitter">${L.slice().sort(B.sort === 'neu' ? blwNeuSort : (a, b) => a.t.localeCompare(b.t, 'de')).map(blwKarte).join('')}</div>`;
+  return h + '</section>';
+};
+blwNavHTML = function (L) {
+  const B = blwS(), da = a => L.some(e => e.art === a), tab = (z, t) => `<button class="blw-tab" data-act="blwzu" data-z="${z}">${t}</button>`;
+  return `<nav class="blw-nav" aria-label="Bereiche">${tab('blwLieb', '❤️ Lieblinge')}${L.some(e => e.neu) ? tab('blwNeu', '🆕 Neu') : ''}${tab('blwZwei', '👫 Zu zweit')}${tab('blwD3', '🧊 3D')}${da('party') ? tab(B.sort === 'art' ? 'blwArt-party' : 'blwAlle', '🎉 Party') : ''}
+    ${B.sort === 'art' ? BLW_ARTEN.filter(([a]) => a !== 'party' && da(a)).map(([a, ic]) => tab('blwArt-' + a, `${ic} ${esc(BLW_REGAL_KURZ[a] || a)}`)).join('') : tab('blwAlle', '🎮 Alle')}</nav>`;
+};
+blwHomeText = function () {
+  let L = [], lb = []; try { L = blwSpiele(); lb = blwLieblinge(L); } catch (e) { }
+  return lb.length ? `❤️ ${esc(lb[0].t)} und ${L.length - 1} weitere Spiele` : `${L.length || blwAnzahl()} Spiele · 🎉 Party · 👫 zu zweit`;
+};
+Object.assign(ACT, {
+  blwauf: t => {
+    const B = blwS(), z = t.dataset.z, sek = document.getElementById(z); if (!Array.isArray(B.auf)) B.auf = [];
+    const auf = !B.auf.includes(z); if (auf) B.auf.push(z); else B.auf = B.auf.filter(x => x !== z); save(); Sound.tap();
+    if (sek) { sek.classList.toggle('auf', auf); t.textContent = auf ? 'Weniger' : 'Alle ›'; t.setAttribute('aria-expanded', String(auf)); if (!auf) blwSprung(z); }
+  }
+});
+
+if (typeof showPaHub === 'function') {
+  const altHub = showPaHub;
+  showPaHub = function (...a) { const r = altHub.apply(this, a); try { const b = document.querySelector('.pagehead .icon-btn[data-act=home]'); if (b && ACT.blwelt) b.dataset.act = 'blwelt'; } catch (e) { } return r; };
+}
 
 /*@@src druck311.js@@*/
 
