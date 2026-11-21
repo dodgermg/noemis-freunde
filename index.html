@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-xHMnAy4xrC/gZtyV5c/t9fOV4BH7Im3FKKo0izVVxCs=' 'sha256-D2xTYzXJaoCrch5DJ0nLUtBKr3brviQR2LUuXOb2wis=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-uW7cLWkb+xwyZJBo3ro8xYS3UCUlvpv6mDOFy+Xley8=' 'sha256-9OGBsmptqGv+xV8Ciq478kdaP1uvVxrT4Hsz7CO9aXg=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -8193,11 +8193,21 @@ body.calm .pzm-ropt .btn.nope { animation: none; }
 .pzm-mal.zwei.dreh .pzm-sp[data-sp="1"] { transform: rotate(180deg); }
 .pzm-mitte { border-top: 1px solid var(--line); font-size: 17px; justify-content: center; }
 .pzm-mitte .pzm-ti { flex: 1; text-align: center; }
+.pzm-mitte .btn { white-space: nowrap; flex: none; }
 .pzm-uhr { flex: none; font: 900 18px var(--f-body); background: var(--ink); color: var(--surface); border-radius: 99px; padding: 3px 12px; }
 .pzm-uhr.knapp { background: #e0457b; color: #fff; }
 .pzm-kopf { display: flex; align-items: center; gap: 8px; padding: 5px 10px; background: var(--surface); border-bottom: 3px solid var(--sf); flex: none; font-weight: 800; }
-.pzm-name { display: inline-flex; align-items: center; gap: 6px; }
-.pzm-name i { width: 14px; height: 14px; border-radius: 50%; background: var(--sf); }
+.pzm-name { display: inline-flex; align-items: center; gap: 6px; min-height: 32px; margin: -4px -6px; padding: 4px 6px; border: 0; border-radius: 10px; background: transparent; color: inherit; font: inherit; cursor: pointer; max-width: 46%; }
+.pzm-name span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pzm-name small { font-size: 12px; opacity: .55; }
+.pzm-name i, .pzm-namen i { flex: none; width: 14px; height: 14px; border-radius: 50%; background: var(--sf); }
+
+.pzm-stand { flex: none; font: 800 15px var(--f-body); background: var(--surface-2); border-radius: 99px; padding: 3px 10px; white-space: nowrap; }
+.pzm-uhr.halt { background: var(--ink-soft); }
+.pzm-siege { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px; font-weight: 700; }
+.pzm-namen { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; font-weight: 700; margin: 6px 0 0; }
+.pzm-namen .btn { display: inline-flex; align-items: center; gap: 6px; border-color: var(--sf); }
+.pzm-nin { margin: 4px 0 10px; text-align: center; }
 .pzm-pkt { color: var(--ink-soft); font-size: 14px; }
 .pzm-mal.zwei .pzm-hb { min-height: 34px; font-size: 14px; }
 .pzm-mal.zwei .pzm-pal { padding: 9px 10px 8px; }
@@ -8226,6 +8236,13 @@ body.calm .pzm-ropt .btn.nope { animation: none; }
   .pzm-hz { margin-left: 0; }
   .pzm-zoom button { width: 38px; height: 38px; font-size: 18px; }
   .pzm-mal.zwei .pzm-zoom { flex-direction: row; }
+  .pzm-mitte { gap: 5px; padding: 5px 6px; }
+  .pzm-mitte .btn { padding: 0 8px; min-width: 0; }
+  .pzm-stand, .pzm-pz { font-size: 13px; padding: 2px 7px; }
+  .pzm-uhr { font-size: 15px; padding: 2px 8px; }
+  
+  .pzm-mal[data-modus="rennen"] .pzm-mitte .pzm-ti, .pzm-mal[data-modus="rennen"] .pzm-mitte .pzm-pz { display: none; }
+  .pzm-mal[data-modus="rennen"] .pzm-mitte { justify-content: space-between; }
 }
 
 /* ---- style_px.css ---- */
@@ -10754,8 +10771,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '5.3.0';
-  var MAP = {"probe":0,"files":[[10744,"fehler_kern.js"],[11032,null],[11034,"data.js"],[11749,"data_more.js"],[12121,"data_su2.js"],[12348,"data_es.js"],[12716,"data_wissen.js"],[12917,"data_v21.js"],[13602,"data_v24.js"],[14090,"data_v25.js"],[14579,"data_v26.js"],[14678,"data_v29.js"],[14986,"data_v30.js"],[15320,"data_v31.js"],[15626,"data_kunst.js"],[15823,"data_v214.js"],[15926,"data_v216.js"],[16219,"schrift.js"],[16523,"eingabe.js"],[16734,"data_k34m.js"],[17252,"data_k34d.js"],[17606,"data_k34s.js"],[18060,"data_v224.js"],[18933,"data_v225w.js"],[19302,"data_v225k.js"],[19746,"data_herz.js"],[20100,"data_fb226.js"],[20243,"data_tf226.js"],[20450,"data_v227a.js"],[21550,"data_v227b.js"],[22504,"data_h28b.js"],[22544,"data_l28a.js"],[23410,"data_l28b.js"],[24590,"data_schaetz.js"],[25072,"data_party8.js"],[25122,"data_alce.js"],[25793,"data_alce2.js"],[26042,"data_alce3.js"],[26457,"registry.js"],[26971,"app.js"],[28242,"fun.js"],[28830,"fun2.js"],[29146,"atelier.js"],[29520,"kunst225.js"],[29710,"herz.js"],[30074,"reise.js"],[30376,"iglu.js"],[30542,"offline.js"],[30649,"party.js"],[31133,"meine.js"],[31489,"loeffel.js"],[31660,"trend.js"],[32202,"fun228a.js"],[33063,"fun228b.js"],[33740,"kueche.js"],[34779,"stimme.js"],[34834,"klassen.js"],[34983,"freunde_vorab.js"],[35004,"mut.js"],[35426,"schule.js"],[35915,"fussball226.js"],[36237,"schaetzen.js"],[36668,"party8.js"],[37287,"tiere.js"],[37746,"fussball232.js"],[37961,"party8b.js"],[38263,"weg.js"],[38484,"px.js"],[38904,"px_fein.js"],[38958,"px_data.js"],[39215,"pxwelt.js"],[39299,"px_abenteuer.js"],[40128,"px_abenteuer2.js"],[40882,"px_abenteuer3.js"],[41273,"px_abenteuer4.js"],[41483,"px_baukasten.js"],[41592,"px_abenteuer_fein.js"],[41809,"px_abenteuer_fein2.js"],[42161,"px_abenteuer5.js"],[42568,"px_abenteuer6.js"],[42844,"px_abenteuer7.js"],[43200,"px_level300.js"],[43751,"px_schwach300.js"],[43825,"px_zwei300.js"],[43939,"lumicheckt300.js"],[44132,"schreiben300.js"],[44346,"rechenkarte300.js"],[44466,"lerncheck300.js"],[44689,"material300.js"],[45019,"lernweg300.js"],[45543,"px_ski.js"],[46185,"px_wurf.js"],[46714,"px_insel.js"],[47915,"px_kicker.js"],[48850,"px_eis.js"],[49836,"px_run.js"],[51051,"px_brk.js"],[52013,"px_pol.js"],[53364,"px_frog.js"],[54624,"px_angel.js"],[55939,"px_golf.js"],[56973,"px_tauch.js"],[58238,"px_hockey.js"],[59194,"px_lab.js"],[60529,"px_plopp.js"],[61735,"px_stadion.js"],[63246,"px_stadion2.js"],[63298,"px_training.js"],[63667,"cm.js"],[64157,"cmwelt.js"],[64213,"cm_baeck.js"],[65006,"cm_bahn.js"],[65770,"cm_detek.js"],[66487,"cm_markt.js"],[67200,"ff.js"],[67357,"ff_mathe.js"],[69347,"ff_deutsch.js"],[70935,"ff_sach_a.js"],[73184,"ff_sach_b.js"],[75413,"ff_sprachen.js"],[77821,"zm.js"],[78734,"tt.js"],[78947,"data_tagebuch.js"],[78990,"data_hoerspiel.js"],[79149,"leseecke.js"],[79476,"kt.js"],[79779,"comicbuch.js"],[80057,"alce.js"],[80220,"alce_aufg.js"],[80411,"formen.js"],[80862,"data_formen.js"],[81103,"data_formen2.js"],[81325,"spielzeit.js"],[81547,"data_faktmeinung.js"],[81666,"data_es248.js"],[81930,"data_en249.js"],[82169,"data_wissen249.js"],[82600,"data_kunst249.js"],[82883,"data_fussball250.js"],[83007,"data_werte252.js"],[83260,"data_lesen252.js"],[83321,"data_k34_252.js"],[83407,"art254.js"],[83525,"data_werte255.js"],[83663,"data_lesen255.js"],[83799,"forscher255.js"],[83947,"zufall250.js"],[83993,"stufe259.js"],[84003,"advent.js"],[84266,"wdh.js"],[84364,"eswarm288.js"],[84415,"abwechslung294.js"],[84490,"bilder293a.js"],[84580,"bilder293b.js"],[84710,"bilder293c.js"],[84808,"bilder293d.js"],[84930,"bilder293e.js"],[85094,"bilder293f.js"],[85174,"bilder292.js"],[85620,"denk.js"],[85657,"data_viaje265.js"],[85800,"klassenarbeit.js"],[85933,"quizduell.js"],[86056,"neu267.js"],[86321,"prog.js"],[86426,"lernstand.js"],[86493,"blatt.js"],[86595,"uebung295.js"],[86916,"schuh296.js"],[87124,"uebung297.js"],[87511,"minus298.js"],[87752,"schrift299.js"],[87880,"data_es271.js"],[87994,"plus269.js"],[88088,"schach.js"],[88320,"schachtaktik.js"],[88572,"fun270.js"],[88735,"data_neu274.js"],[88944,"plus272.js"],[88998,"spiele274.js"],[89121,"kasten.js"],[89225,"erklaer.js"],[89338,"apa.js"],[89419,"neu276.js"],[89560,"spiele276.js"],[89610,"neu277.js"],[89788,"spiele277.js"],[90043,"lernen278.js"],[90303,"spiele278.js"],[90646,"lernen279.js"],[90971,"lernen279b.js"],[91369,"spanisch280.js"],[91661,"spanisch283.js"],[91894,"mehr281.js"],[92040,"grafik280.js"],[92419,"tiefsee280.js"],[92697,"abenteuer280.js"],[92909,"abenteuer281.js"],[93021,"design281.js"],[93153,"party281.js"],[93284,"grafik281.js"],[93501,"traumtor292.js"],[93708,"kart293.js"],[93985,"lumi_live.js"],[94101,"sicher.js"],[94285,"stil.js"],[94339,"zurueck287.js"],[94382,"nfbilder300.js"],[94545,"formen300.js"],[95152,"musik300.js"],[95323,"lernweg300b.js"],[95446,"lernweg300c.js"],[95606,"espanol300.js"],[95712,"fabel310_bild.js"],[95963,"fabel310.js"],[96354,"eisbude310.js"],[96580,"turbo310.js"],[96785,"sumo310.js"],[96920,"beifahrer310.js"],[96995,"dreier310.js"],[97111,"ring310.js"],[97220,"loch330.js"],[97570,"reise340.js"],[97640,"fisch340.js"],[98196,"rutsche340.js"],[98607,"knobel340.js"],[98845,"frucht350.js"],[99150,"vulkan350.js"],[99393,"delfin350.js"],[99588,"musik350.js"],[99758,"arcade360.js"],[99874,"strasse360.js"],[100170,"blasen360.js"],[100378,"meer360.js"],[100547,"spirale360.js"],[100711,"sterne360.js"],[100918,"alt360a.js"],[101188,"alt360b.js"],[101381,"alt360c.js"],[101635,"alt360d.js"],[101798,"alt370a.js"],[101995,"alt370b.js"],[102199,"alt370c.js"],[102337,"gl390.js"],[102580,"lauf390.js"],[103089,"ab3_level.js"],[103434,"abenteuer400.js"],[103928,"figuren410.js"],[104023,"kart410.js"],[104376,"show410.js"],[104691,"ball410.js"],[105004,"fussball420.js"],[105429,"farbe420.js"],[105710,"flug430.js"],[105900,"sport430.js"],[106271,"insel440.js"],[106551,"buddel440.js"],[106910,"party450.js"],[107318,"tiere450.js"],[107730,"malbuch460a.js"],[108053,"malbuch460b.js"],[108305,"malbuch460c.js"],[108410,"airhockey470.js"],[108687,"zwei480.js"],[108721,"minigolf480.js"],[108998,"schneeball480.js"],[109296,"billard480.js"],[109521,"kissen490.js"],[109867,"gleiter490.js"],[110241,"koch490.js"],[110675,"pxzwei501.js"],[110698,"belohnung311.js"],[110859,"belohnung480.js"],[110940,"einst502.js"],[110979,"pixmal510_bilder.js"],[111291,"pixmal530_bilder.js"],[111413,"pixmal510.js"],[111948,"druck311.js"],[112042,"freunde.js"],[112179,"start.js"],[112189,null],[112199,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '5.4.0';
+  var MAP = {"probe":0,"files":[[10761,"fehler_kern.js"],[11049,null],[11051,"data.js"],[11766,"data_more.js"],[12138,"data_su2.js"],[12365,"data_es.js"],[12733,"data_wissen.js"],[12934,"data_v21.js"],[13619,"data_v24.js"],[14107,"data_v25.js"],[14596,"data_v26.js"],[14695,"data_v29.js"],[15003,"data_v30.js"],[15337,"data_v31.js"],[15643,"data_kunst.js"],[15840,"data_v214.js"],[15943,"data_v216.js"],[16236,"schrift.js"],[16540,"eingabe.js"],[16751,"data_k34m.js"],[17269,"data_k34d.js"],[17623,"data_k34s.js"],[18077,"data_v224.js"],[18950,"data_v225w.js"],[19319,"data_v225k.js"],[19763,"data_herz.js"],[20117,"data_fb226.js"],[20260,"data_tf226.js"],[20467,"data_v227a.js"],[21567,"data_v227b.js"],[22521,"data_h28b.js"],[22561,"data_l28a.js"],[23427,"data_l28b.js"],[24607,"data_schaetz.js"],[25089,"data_party8.js"],[25139,"data_alce.js"],[25810,"data_alce2.js"],[26059,"data_alce3.js"],[26474,"registry.js"],[26988,"app.js"],[28260,"fun.js"],[28848,"fun2.js"],[29164,"atelier.js"],[29538,"kunst225.js"],[29728,"herz.js"],[30092,"reise.js"],[30394,"iglu.js"],[30560,"offline.js"],[30670,"party.js"],[31154,"meine.js"],[31510,"loeffel.js"],[31681,"trend.js"],[32223,"fun228a.js"],[33084,"fun228b.js"],[33761,"kueche.js"],[34800,"stimme.js"],[34855,"klassen.js"],[35004,"freunde_vorab.js"],[35025,"mut.js"],[35447,"schule.js"],[35936,"fussball226.js"],[36258,"schaetzen.js"],[36689,"party8.js"],[37308,"tiere.js"],[37767,"fussball232.js"],[37982,"party8b.js"],[38284,"weg.js"],[38505,"px.js"],[38925,"px_fein.js"],[38979,"px_data.js"],[39236,"pxwelt.js"],[39320,"px_abenteuer.js"],[40149,"px_abenteuer2.js"],[40903,"px_abenteuer3.js"],[41294,"px_abenteuer4.js"],[41504,"px_baukasten.js"],[41613,"px_abenteuer_fein.js"],[41830,"px_abenteuer_fein2.js"],[42182,"px_abenteuer5.js"],[42589,"px_abenteuer6.js"],[42865,"px_abenteuer7.js"],[43221,"px_level300.js"],[43772,"px_schwach300.js"],[43846,"px_zwei300.js"],[43960,"lumicheckt300.js"],[44153,"schreiben300.js"],[44367,"rechenkarte300.js"],[44487,"lerncheck300.js"],[44710,"material300.js"],[45040,"lernweg300.js"],[45564,"px_ski.js"],[46206,"px_wurf.js"],[46735,"px_insel.js"],[47936,"px_kicker.js"],[48871,"px_eis.js"],[49857,"px_run.js"],[51072,"px_brk.js"],[52034,"px_pol.js"],[53385,"px_frog.js"],[54645,"px_angel.js"],[55960,"px_golf.js"],[56994,"px_tauch.js"],[58259,"px_hockey.js"],[59215,"px_lab.js"],[60550,"px_plopp.js"],[61756,"px_stadion.js"],[63267,"px_stadion2.js"],[63319,"px_training.js"],[63688,"cm.js"],[64178,"cmwelt.js"],[64234,"cm_baeck.js"],[65027,"cm_bahn.js"],[65791,"cm_detek.js"],[66508,"cm_markt.js"],[67221,"ff.js"],[67378,"ff_mathe.js"],[69368,"ff_deutsch.js"],[70956,"ff_sach_a.js"],[73205,"ff_sach_b.js"],[75434,"ff_sprachen.js"],[77842,"zm.js"],[78755,"tt.js"],[78968,"data_tagebuch.js"],[79011,"data_hoerspiel.js"],[79170,"leseecke.js"],[79497,"kt.js"],[79800,"comicbuch.js"],[80078,"alce.js"],[80241,"alce_aufg.js"],[80432,"formen.js"],[80883,"data_formen.js"],[81124,"data_formen2.js"],[81346,"spielzeit.js"],[81568,"data_faktmeinung.js"],[81687,"data_es248.js"],[81951,"data_en249.js"],[82190,"data_wissen249.js"],[82621,"data_kunst249.js"],[82904,"data_fussball250.js"],[83028,"data_werte252.js"],[83281,"data_lesen252.js"],[83342,"data_k34_252.js"],[83428,"art254.js"],[83546,"data_werte255.js"],[83684,"data_lesen255.js"],[83820,"forscher255.js"],[83968,"zufall250.js"],[84014,"stufe259.js"],[84024,"advent.js"],[84287,"wdh.js"],[84385,"eswarm288.js"],[84436,"abwechslung294.js"],[84511,"bilder293a.js"],[84601,"bilder293b.js"],[84731,"bilder293c.js"],[84829,"bilder293d.js"],[84951,"bilder293e.js"],[85115,"bilder293f.js"],[85195,"bilder292.js"],[85641,"denk.js"],[85678,"data_viaje265.js"],[85821,"klassenarbeit.js"],[85954,"quizduell.js"],[86077,"neu267.js"],[86342,"prog.js"],[86447,"lernstand.js"],[86514,"blatt.js"],[86616,"uebung295.js"],[86937,"schuh296.js"],[87145,"uebung297.js"],[87532,"minus298.js"],[87773,"schrift299.js"],[87901,"data_es271.js"],[88015,"plus269.js"],[88109,"schach.js"],[88341,"schachtaktik.js"],[88593,"fun270.js"],[88756,"data_neu274.js"],[88965,"plus272.js"],[89019,"spiele274.js"],[89142,"kasten.js"],[89246,"erklaer.js"],[89359,"apa.js"],[89440,"neu276.js"],[89581,"spiele276.js"],[89631,"neu277.js"],[89809,"spiele277.js"],[90064,"lernen278.js"],[90324,"spiele278.js"],[90667,"lernen279.js"],[90992,"lernen279b.js"],[91390,"spanisch280.js"],[91682,"spanisch283.js"],[91915,"mehr281.js"],[92061,"grafik280.js"],[92440,"tiefsee280.js"],[92718,"abenteuer280.js"],[92930,"abenteuer281.js"],[93042,"design281.js"],[93174,"party281.js"],[93305,"grafik281.js"],[93522,"traumtor292.js"],[93729,"kart293.js"],[94006,"lumi_live.js"],[94122,"sicher.js"],[94306,"stil.js"],[94360,"zurueck287.js"],[94403,"nfbilder300.js"],[94566,"formen300.js"],[95173,"musik300.js"],[95344,"lernweg300b.js"],[95467,"lernweg300c.js"],[95627,"espanol300.js"],[95733,"fabel310_bild.js"],[95984,"fabel310.js"],[96375,"eisbude310.js"],[96601,"turbo310.js"],[96806,"sumo310.js"],[96941,"beifahrer310.js"],[97016,"dreier310.js"],[97132,"ring310.js"],[97241,"loch330.js"],[97591,"reise340.js"],[97661,"fisch340.js"],[98217,"rutsche340.js"],[98628,"knobel340.js"],[98866,"frucht350.js"],[99171,"vulkan350.js"],[99414,"delfin350.js"],[99609,"musik350.js"],[99779,"arcade360.js"],[99895,"strasse360.js"],[100191,"blasen360.js"],[100399,"meer360.js"],[100568,"spirale360.js"],[100732,"sterne360.js"],[100939,"alt360a.js"],[101209,"alt360b.js"],[101402,"alt360c.js"],[101656,"alt360d.js"],[101819,"alt370a.js"],[102016,"alt370b.js"],[102220,"alt370c.js"],[102358,"gl390.js"],[102601,"lauf390.js"],[103110,"ab3_level.js"],[103455,"abenteuer400.js"],[103949,"figuren410.js"],[104044,"kart410.js"],[104397,"show410.js"],[104712,"ball410.js"],[105025,"fussball420.js"],[105450,"farbe420.js"],[105731,"flug430.js"],[105921,"sport430.js"],[106292,"insel440.js"],[106572,"buddel440.js"],[106931,"party450.js"],[107339,"tiere450.js"],[107751,"malbuch460a.js"],[108074,"malbuch460b.js"],[108326,"malbuch460c.js"],[108431,"airhockey470.js"],[108708,"zwei480.js"],[108742,"minigolf480.js"],[109019,"schneeball480.js"],[109317,"billard480.js"],[109542,"kissen490.js"],[109888,"gleiter490.js"],[110262,"koch490.js"],[110696,"pxzwei501.js"],[110719,"belohnung311.js"],[110880,"belohnung480.js"],[110961,"einst502.js"],[111000,"pixmal510_bilder.js"],[111312,"pixmal530_bilder.js"],[111434,"pixmal510.js"],[112032,"druck311.js"],[112126,"freunde.js"],[112263,"start.js"],[112273,null],[112283,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -26972,9 +26989,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '5.3.0';
+const APP_VERSION = '5.4.0';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "5.4.0", d: "21.11.2026", t: ["Malen nach Zahlen für lange Fahrten: Knopf „🚗 Autofahrt“ mit Wackelschutz, leisen Tönen, Bildschirm bleibt an und Augen-Pause alle 20 Minuten", "Wettrennen mit eigenen Namen, Siege über viele Runden, Pause und „Neues Bild“", "Ein ruhender Daumen am Rand stört das Malen nicht mehr"] },
   { v: "5.3.0", d: "21.11.2026", t: ["Malen nach Zahlen: 110 neue große Bilder in neuen Bereichen: Squishys, Hamburg, Cuxhaven und Nordsee, Freundschaft, Forschen und Entdecken, Teneriffa und Kanaren, dazu Fußball und Mandalas in Blau", "Zu zweit direkt aus der Bibliothek: „👫 Zu zweit“ einschalten und ein Bild antippen"] },
   { v: "5.2.0", d: "21.11.2026", t: ["Malen nach Zahlen mit 300 neuen, viel größeren Bildern: bis 120 Felder breit, bis zu 24 Farben mit Licht und Schatten, Landschaften, Mandalas und Kachelmuster", "Malen nach Zahlen zu zweit an einem Gerät: zusammen am selben Bild oder als Wettrennen, jede Hälfte mit eigenen Farben und eigenem Zoom"] },
   { v: "5.1.0", d: "21.11.2026", t: ["Neu in Kunst: Malen nach Zahlen mit 300 Pixelbildern in zwölf Bereichen, klein, mittel und groß", "Farbe wählen, Felder antippen oder darüberwischen, mit zwei Fingern vergrößern. Helfer: Farbbombe, Farbeimer, Zauberstab und Lupe", "Rechen-Farben zum Einschalten: Jede Farbe wird mit einer kleinen Rechenaufgabe freigeschaltet"] },
@@ -30601,10 +30619,13 @@ async function offRun() {
 
 
 var PAUSE_T = 0, PAUSE_ON = false;
+
 setInterval(() => {
-  if (document.hidden || !S || !S.settings || !S.settings.pause) return;
+  if (document.hidden || !S || !S.settings) return;
+  const min = S.settings.pause || (typeof pzmAutoPause === 'function' ? pzmAutoPause() : 0);
+  if (!min) return;
   PAUSE_T += 15;
-  if (PAUSE_T >= S.settings.pause * 60 && !PAUSE_ON) {
+  if (PAUSE_T >= min * 60 && !PAUSE_ON) {
     const busy = document.getElementById('gameRoot') || (typeof FUN !== 'undefined' && FUN) || document.querySelector('.atl') || document.querySelector('.pqz') || document.getElementById('overlay') || document.querySelector('.sheet');
     if (!busy) pauseShow();
   }
@@ -111424,6 +111445,8 @@ PZM_BILDER.push(
 
 
 
+
+
 const PZM_KEY = 'lw-pzm-v2', PZM_HELFER0 = { bombe: 6, eimer: 6, zauber: 3 };
 
 PZM_KAT.sort((a, b) => (a.o == null ? 50 : a.o) - (b.o == null ? 50 : b.o));
@@ -111432,7 +111455,7 @@ const PZM_IDX = new Map(PZM_BILDER.map((b, i) => [b[0], i]));
 const PZM_CACHE = new Map();
 const PZM_STUFE = ['Alle Größen', 'Groß', 'Sehr groß', 'Riesig'];
 const PZM_SPIELER = [{ n: 'Spieler 1', f: '#2f7ad8' }, { n: 'Spieler 2', f: '#e0457b' }];
-let PZM = null, PZM_SP = null, PZM_SCROLL = 0;
+let PZM = null, PZM_SP = null, PZM_SCROLL = 0, PZM_QUER = false;
 
 
 const pzmRgb = hex => { const n = parseInt(hex.slice(1), 16); return [n >> 16 & 255, n >> 8 & 255, n & 255]; };
@@ -111467,7 +111490,10 @@ function pzmSp() {
   Object.keys(PZM_HELFER0).forEach(k => { const v = Number(o.h[k]); o.h[k] = Number.isFinite(v) && v > 0 ? Math.min(99, Math.floor(v)) : 0; });
   if (typeof o.kat !== 'string') o.kat = 'alle';
   if (![0, 1, 2, 3].includes(o.stufe)) o.stufe = 0;
-  o.rechnen = o.rechnen === true; o.dreh = o.dreh !== false; o.zweiBib = o.zweiBib === true;
+  o.rechnen = o.rechnen === true; o.dreh = o.dreh !== false; o.zweiBib = o.zweiBib === true; o.auto = o.auto === true;
+  const nm = Array.isArray(o.namen) ? o.namen : [], sg = Array.isArray(o.siege) ? o.siege : [];
+  o.namen = [0, 1].map(i => typeof nm[i] === 'string' ? nm[i].replace(/[\u0000-\u001f<>]/g, '').slice(0, 12) : '');
+  o.siege = [0, 1].map(i => { const v = Number(sg[i]); return Number.isFinite(v) && v > 0 ? Math.min(999, Math.floor(v)) : 0; });
   Object.keys(o.b).forEach(k => { if (!PZM_IDX.has(k) || !isObj(o.b[k])) delete o.b[k]; });
   try { localStorage.removeItem('lw-pzm-v1'); } catch (e) { }
   return (PZM_SP = o);
@@ -111478,6 +111504,21 @@ function pzmAusBits(s, n) { const out = new Uint8Array(n); try { const b = atob(
 const pzmEintrag = id => pzmSp().b[id] || null;
 function pzmProzent(id) { const e = pzmEintrag(id); if (!e) return 0; if (e.f) return 100; const B = pzmBild(id); return B && e.n ? Math.min(99, Math.floor(e.n / B.gesamt * 100)) : 0; }
 const pzmFertigZahl = () => Object.values(pzmSp().b).filter(e => e.f).length;
+const pzmName = nr => pzmSp().namen[nr] || PZM_SPIELER[nr].n;
+
+function pzmTon(art) { if (pzmSp().auto && (art === 'tap' || art === 'bad')) return; try { Sound[art](); } catch (e) { } }
+const pzmAutoPause = () => PZM && PZM_SP && PZM_SP.auto && document.querySelector('.pzm-mal') ? 20 : 0;
+
+let PZM_WL = null, PZM_WLP = false, PZM_WLT = 0;
+function pzmWach() {
+  if (!PZM || !pzmSp().auto || document.hidden || !navigator.wakeLock) return;
+  clearTimeout(PZM_WLT); PZM_WLT = setTimeout(pzmWachAus, 600000);
+  if (PZM_WL || PZM_WLP) return; PZM_WLP = true;
+  try {
+    navigator.wakeLock.request('screen').then(w => { PZM_WLP = false; if (!PZM || !pzmSp().auto) { w.release().catch(() => { }); return; } PZM_WL = w; w.addEventListener('release', () => { if (PZM_WL === w) PZM_WL = null; }); }, () => { PZM_WLP = false; });
+  } catch (e) { PZM_WLP = false; }
+}
+function pzmWachAus() { clearTimeout(PZM_WLT); const w = PZM_WL; PZM_WL = null; if (w) try { w.release().catch(() => { }); } catch (e) { } }
 
 
 function pzmWorldBtn(w) {
@@ -111515,8 +111556,9 @@ function showPzm() {
       <div class="amb-leiste pzm-leiste"><div class="amb-stufen" role="group" aria-label="Größe">${PZM_STUFE.map((t, i) => `<button class="amb-sb${sp.stufe === i ? ' on' : ''}" data-act="pzmstufe" data-s="${i}" aria-pressed="${sp.stufe === i}">${i ? '●'.repeat(i) + ' ' : ''}${t}</button>`).join('')}</div>
         <button class="btn ghost sm pzm-rech${sp.zweiBib ? ' an' : ''}" data-act="pzmzweibib" aria-pressed="${sp.zweiBib}">👫 Zu zweit: ${sp.zweiBib ? 'an' : 'aus'}</button>
         <button class="btn ghost sm pzm-rech${sp.rechnen ? ' an' : ''}" data-act="pzmrechnen" aria-pressed="${sp.rechnen}">🧮 Rechen-Farben: ${sp.rechnen ? 'an' : 'aus'}</button>
+        <button class="btn ghost sm pzm-rech${sp.auto ? ' an' : ''}" data-act="pzmauto" aria-pressed="${sp.auto}">🚗 Autofahrt: ${sp.auto ? 'an' : 'aus'}</button>
         <span class="pzm-hz" aria-label="Helfer">💣 ${sp.h.bombe} · 🪣 ${sp.h.eimer} · 🪄 ${sp.h.zauber}</span></div>
-      <p class="amb-hin">${sp.rechnen ? 'Rechen-Farben sind an: Jede Farbe schaltest du mit einer kleinen Rechenaufgabe frei. ' : ''}${sp.zweiBib ? 'Zu zweit ist an: Bild antippen, dann zusammen malen oder ein Wettrennen starten.' : 'Wähle ein Bild. Zu zweit: oben „👫 Zu zweit“ einschalten oder im Bild auf 👫 tippen.'}</p>
+      <p class="amb-hin">${sp.auto ? '🚗 Autofahrt ist an: Ein verwackelter Tipp malt das passende Feld daneben, die Töne sind leise, der Bildschirm bleibt an und alle 20 Minuten gibt es eine Augen-Pause. Zu zweit am besten das Gerät quer halten. ' : ''}${sp.rechnen ? 'Rechen-Farben sind an: Jede Farbe schaltest du mit einer kleinen Rechenaufgabe frei. ' : ''}${sp.zweiBib ? 'Zu zweit ist an: Bild antippen, dann zusammen malen oder ein Wettrennen starten.' : 'Wähle ein Bild. Zu zweit: oben „👫 Zu zweit“ einschalten oder im Bild auf 👫 tippen.'}</p>
       ${ids.length ? `<div class="pzm-grid">${karten}</div>` : `<p class="muted pzm-leer">${sp.kat === 'fertig' ? 'Noch kein Bild fertig. Fang einfach mit einem großen Bild an!' : sp.kat === 'angefangen' ? 'Gerade ist kein Bild angefangen.' : 'Hier gibt es in dieser Größe keine Bilder.'}</p>`}
       <p class="muted amb-fuss">Alle Bilder sind in der Lernwelt selbst gemalt. Dein Fortschritt bleibt auf diesem Gerät.</p>
     </main>`, 'kunst');
@@ -111547,13 +111589,13 @@ function pzmZustand(B, ausSpeicher) {
 const pzmAnsichten = Z => PZM ? PZM.ansichten.filter(V => V.Z === Z) : [];
 function pzmZu() {
   if (!PZM) return; const P = PZM;
-  pzmMerkenJetzt(); clearTimeout(P.merkT); clearInterval(P.uhr);
+  pzmMerkenJetzt(); clearTimeout(P.merkT); clearInterval(P.uhr); pzmWachAus();
   P.ansichten.forEach(V => { cancelAnimationFrame(V.raf); clearTimeout(V.ruheT); clearTimeout(V.tippT); if (V.ro) try { V.ro.disconnect(); } catch (e) { } });
   PZM = null;
 }
 function pzmTeilHTML(nr, P) {
   const zwei = P.modus !== 'allein', sp = PZM_SPIELER[nr];
-  const kopf = zwei ? `<div class="pzm-kopf" style="--sf:${sp.f}"><span class="pzm-name"><i aria-hidden="true"></i>${sp.n}</span><b class="pzm-pkt" data-pkt="${nr}">0 Felder</b>
+  const kopf = zwei ? `<div class="pzm-kopf" style="--sf:${sp.f}"><button class="pzm-name" data-act="pzmname" data-nr="${nr}" title="Namen ändern"><i aria-hidden="true"></i><span data-pname="${nr}">${esc(pzmName(nr))}</span><small aria-hidden="true">✏️</small></button><b class="pzm-pkt" data-pkt="${nr}">0 Felder</b>
       <span class="pzm-acts"><button class="btn ghost sm" data-act="pzmlupe" aria-label="Lupe">🔍</button><button class="btn ghost sm pzm-handk" data-act="pzmhand" aria-pressed="false" aria-label="Verschieben mit einem Finger">✋</button></span></div>` : '';
   return `<section class="pzm-sp" data-sp="${nr}" aria-label="${zwei ? sp.n : 'Malfläche'}">${kopf}
     <div class="pzm-buehne"><canvas aria-label="${esc(P.B.t)}: Bild zum Ausmalen"></canvas>
@@ -111566,10 +111608,10 @@ function showPzmMalen(id, modus = 'allein', minuten = 0) {
   stopTimers(); G = null; pzmZu(); const sp = pzmSp();
   const Z0 = pzmZustand(B, modus !== 'rennen');
   if (modus !== 'allein' && Z0.fertig) modus = 'allein';
-  const P = PZM = { id, B, modus, ansichten: [], minuten, start: Date.now(), vorbei: false };
+  const P = PZM = { id, B, modus, ansichten: [], minuten, start: Date.now(), vorbei: false, pauseMs: 0, pauseAb: 0 };
   const zwei = modus !== 'allein';
   const mitte = zwei ? `<div class="pzm-mitte"><button class="btn ghost sm" data-act="pzmzweiende" aria-label="Zu zweit beenden">‹ Ende</button><b class="pzm-ti">${esc(B.t)}</b>
-      <span class="pzm-pz" id="pzmPz"></span>${modus === 'rennen' && minuten ? '<span class="pzm-uhr" id="pzmUhr"></span>' : ''}<button class="btn ghost sm" data-act="pzmdreh" aria-label="Sitzordnung wechseln">⇅</button></div>` : '';
+      <span class="pzm-pz" id="pzmPz"></span>${modus === 'rennen' ? `<span class="pzm-stand" id="pzmStand" title="Siege">${pzmStandHTML()}</span>` : ''}${modus === 'rennen' && minuten ? '<span class="pzm-uhr" id="pzmUhr"></span><button class="btn ghost sm" data-act="pzmpause" aria-label="Pause">⏸</button>' : ''}<button class="btn ghost sm" data-act="pzmdreh" aria-label="Sitzordnung wechseln">⇅</button></div>` : '';
   const top = zwei ? '' : `<div class="pzm-top"><button class="icon-btn" data-act="pzmzurueck" aria-label="Zurück zur Bibliothek">‹</button>
       <b class="pzm-ti">${esc(B.t)}</b><span class="pzm-pz" id="pzmPz"></span>
       <span class="pzm-acts">${Z0.fertig ? '' : '<button class="btn ghost sm" data-act="pzmzweiwahl" aria-label="Zu zweit malen">👫</button>'}<button class="btn ghost sm" data-act="pzmlupe" aria-label="Lupe: zeigt ein Feld, das noch fehlt">🔍</button><button class="btn ghost sm pzm-handk" data-act="pzmhand" aria-pressed="false" aria-label="Verschieben mit einem Finger">✋</button></span></div>`;
@@ -111592,12 +111634,14 @@ function showPzmMalen(id, modus = 'allein', minuten = 0) {
     if (window.ResizeObserver) { V.ro = new ResizeObserver(() => { if (PZM === P) pzmGroesse(V, false); }); V.ro.observe(V.st); }
     pzmTipp(V);
   });
-  pzmKopfAkt();
+  pzmKopfAkt(); pzmWach();
   if (modus === 'rennen' && minuten) { pzmUhrAkt(); P.uhr = setInterval(() => { if (PZM !== P) return clearInterval(P.uhr); pzmUhrAkt(); }, 500); }
+  if (zwei && sp.auto && !PZM_QUER && innerHeight > innerWidth) { PZM_QUER = true; toast('🚗 Tipp: Gerät quer halten, dann hat jede ihre eigene Seite.'); }
 }
+function pzmStandHTML() { const s = pzmSp().siege; return `🏆 <b style="color:${PZM_SPIELER[0].f}">${s[0]}</b> : <b style="color:${PZM_SPIELER[1].f}">${s[1]}</b>`; }
 function pzmUntenHTML(V) {
   const P = PZM, B = P.B, h = pzmSp().h;
-  if (V.Z.fertig) return P.modus === 'allein' ? `<div class="pzm-fertigleiste"><span>✅ Fertig gemalt!</span><button class="btn sm" data-act="pzmgal">💾 In die Galerie</button><button class="btn ghost sm" data-act="pzmneu">↺ Noch einmal malen</button><button class="btn ghost sm" data-act="pzmnext">Nächstes Bild ›</button></div>` : '<div class="pzm-fertigleiste"><span>✅ Fertig!</span></div>';
+  if (V.Z.fertig) return P.modus === 'allein' ? `<div class="pzm-fertigleiste"><span>✅ Fertig gemalt!</span><button class="btn sm" data-act="pzmgal">💾 In die Galerie</button><button class="btn ghost sm" data-act="pzmneu">↺ Noch einmal malen</button><button class="btn ghost sm" data-act="pzmnext">Nächstes Bild ›</button></div>` : `<div class="pzm-fertigleiste"><span>✅ Fertig!</span>${P.modus === 'zusammen' ? '<button class="btn ghost sm" data-act="pzmnext">Nächstes Bild ›</button>' : ''}</div>`;
   const helfer = P.modus === 'rennen' ? '' : `<div class="pzm-helfer">${[['bombe', '💣', 'Bombe', 'malt 3 × 3 Felder'], ['eimer', '🪣', 'Eimer', 'füllt eine Fläche'], ['zauber', '🪄', 'Zauberstab', 'malt alle Felder der Farbe']]
     .map(([k, i, t, d]) => `<button class="pzm-hb${V.werkzeug === k ? ' an' : ''}" data-act="pzmhelfer" data-h="${k}" aria-pressed="${V.werkzeug === k}"${h[k] ? '' : ' disabled'} title="${t}: ${d}"><span aria-hidden="true">${i}</span> ${t} <b>${h[k]}</b></button>`).join('')}</div>`;
   return `${helfer}<div class="pzm-pal${B.farben.length > 12 ? ' zweireihig' : ''}" style="--sp:${Math.ceil(B.farben.length / 2)}" role="radiogroup" aria-label="Farben">${B.farben.map((c, k) => pzmChip(V, k)).join('')}</div>`;
@@ -111695,6 +111739,8 @@ function pzmDown(V, ev) {
   if (!PZM || PZM.vorbei) return; ev.preventDefault();
   try { V.cv.setPointerCapture(ev.pointerId); } catch (e) { }
   if (!V.zeiger.size) V.dreh = pzmGedreht(V);
+
+  const alt = V.strich; if (V.zeiger.size === 1 && alt && !alt.bewegt && !V.pinch && performance.now() - alt.t > 450) { V.zeiger.delete(alt.id); V.strich = null; }
   const pos = pzmPos(V, ev); V.zeiger.set(ev.pointerId, pos);
   if (V.zeiger.size === 1) {
     V.strich = { id: ev.pointerId, t: performance.now(), start: pos, letzt: pos, bewegt: false, gemalt: [], schieben: V.Z.fertig || V.hand || V.s < 12 || V.werkzeug !== 'pinsel' || (ev.button && ev.button !== 0) };
@@ -111724,20 +111770,31 @@ function pzmUp(V, ev) {
   V.zeiger.delete(ev.pointerId);
   if (V.pinch) { if (V.zeiger.size < 2) { V.pinch = null; V.strich = null; pzmRuhe(V); } return; }
   const st = V.strich; if (!st || st.id !== ev.pointerId) return; V.strich = null;
-  const tipp = !st.bewegt && ev.type === 'pointerup' && performance.now() - st.t < 700;
+  const tipp = !st.bewegt && ev.type === 'pointerup' && performance.now() - st.t < 700; pzmWach();
   if (st.schieben) { pzmRuhe(V); if (!tipp || V.Z.fertig && V.s >= 12) return;
     if (V.werkzeug === 'bombe' || V.werkzeug === 'eimer') { const i = pzmZelle(V, st.start.x, st.start.y); if (i >= 0 && PZM.B.z[i] >= 0) pzmHelferTipp(V, i); return; }
-    if (!V.hand && V.s < 12) pzmZoomUm(V, Math.min(V.sMax, 26) / V.s, st.start.x, st.start.y);
+    if (!V.hand && V.s < 12) pzmZoomUm(V, Math.min(V.sMax, pzmSp().auto ? 32 : 26) / V.s, st.start.x, st.start.y);
     return;
   }
   if (tipp && !st.gemalt.length && V.wahl >= 0) {
-    const i = pzmZelle(V, st.start.x, st.start.y), B = PZM.B, Z = V.Z;
+    const i = pzmZelle(V, st.start.x, st.start.y), B = PZM.B, Z = V.Z, auto = pzmSp().auto;
+    if (V.frei.has(V.wahl)) { const j = pzmNahFeld(V, st.start.x, st.start.y, auto ? 1 : .45); if (j >= 0) { pzmRichtig(V, j); pzmNachMalen(V, 1); pzmRuhe(V); return; } }
     if (i >= 0 && B.z[i] >= 0 && Z.gem[i] !== 1) {
       if (!V.frei.has(V.wahl)) { pzmFrage(V, V.wahl); return; }
-      if (B.z[i] !== V.wahl && Z.gem[i] !== V.wahl + 2) { Z.gem[i] = V.wahl + 2; Z.fehler++; try { Sound.bad(); } catch (e) { } pzmTippKurz(V, `Dieses Feld hat die Zahl ${B.z[i] + 1}.`, 2200); pzmMalAlle(Z); }
+      if (auto) pzmTippKurz(V, `Hier ist die ${B.z[i] + 1}. Du malst gerade die ${V.wahl + 1}.`, 2200);
+      else if (B.z[i] !== V.wahl && Z.gem[i] !== V.wahl + 2) { Z.gem[i] = V.wahl + 2; Z.fehler++; pzmTon('bad'); pzmTippKurz(V, `Dieses Feld hat die Zahl ${B.z[i] + 1}.`, 2200); pzmMalAlle(Z); }
     }
   }
   pzmRuhe(V);
+}
+
+function pzmNahFeld(V, px, py, r) {
+  const B = PZM.B, Z = V.Z, k = V.wahl, cx = (px - V.ox) / V.s, cy = (py - V.oy) / V.s; let best = -1, bd = 1e9;
+  for (let y = Math.floor(cy - r); y <= Math.floor(cy + r); y++) for (let x = Math.floor(cx - r); x <= Math.floor(cx + r); x++) {
+    if (x < 0 || y < 0 || x >= B.w || y >= B.h) continue; const i = y * B.w + x; if (B.z[i] !== k || Z.gem[i] === 1) continue;
+    const d = Math.hypot(Math.max(x - cx, 0, cx - x - 1), Math.max(y - cy, 0, cy - y - 1)); if (d <= r && d < bd) { bd = d; best = i; }
+  }
+  return best;
 }
 function pzmRuhe(V) { clearTimeout(V.ruheT); V.ruheT = setTimeout(() => { if (PZM) { V.gestik = false; pzmMal(V); } }, 90); }
 
@@ -111756,7 +111813,7 @@ function pzmRichtig(V, i) { const Z = V.Z, v = PZM.B.z[i]; Z.gem[i] = 1; Z.ferti
 function pzmZurueck(V, liste) { const Z = V.Z; liste.forEach(i => { if (Z.gem[i] === 1) { Z.gem[i] = 0; Z.fertigF[PZM.B.z[i]]--; Z.n--; V.punkte--; } }); pzmNachMalen(V, 0, true); }
 function pzmNachMalen(V, neu, still) {
   const P = PZM, B = P.B, Z = V.Z; pzmMalAlle(Z);
-  const now = performance.now(); if (neu && !still && now - V.tonT > 70) { V.tonT = now; try { Sound.tap(); } catch (e) { } }
+  const now = performance.now(); if (neu && !still && now - V.tonT > 70) { V.tonT = now; pzmTon('tap'); }
   pzmKopfAkt();
   pzmAnsichten(Z).forEach(W => B.farben.forEach((_, k) => { const ok = Z.fertigF[k] >= B.anzahl[k], el = W.root.querySelector(`.pzm-f[data-k="${k}"]`); if (!el) return; if (el.classList.contains('ok') !== ok) pzmPalAkt(W, k); else el.style.setProperty('--p', Math.round(Z.fertigF[k] / B.anzahl[k] * 100) + '%'); }));
   if (P.modus !== 'rennen') pzmMerken();
@@ -111835,25 +111892,33 @@ function pzmGeschafft(V) {
     if (PZM !== P) return;
     const zwei = P.modus === 'zusammen', [a, b] = P.ansichten;
     overlay(`${mascot('wow')}<h2>${zwei ? 'Zusammen geschafft!' : 'Fertig!'}</h2><p>„${esc(P.B.t)}“ ist fertig gemalt.${!zwei && !Z.fehler ? ' Ohne einen einzigen Fehler!' : ''}</p>
-      ${zwei ? `<p class="pzm-erg"><span style="--sf:${PZM_SPIELER[0].f}">${PZM_SPIELER[0].n}: <b>${a.punkte}</b> Felder</span><span style="--sf:${PZM_SPIELER[1].f}">${PZM_SPIELER[1].n}: <b>${b.punkte}</b> Felder</span></p>` : ''}
+      ${zwei ? `<p class="pzm-erg"><span style="--sf:${PZM_SPIELER[0].f}">${esc(pzmName(0))}: <b>${a.punkte}</b> Felder</span><span style="--sf:${PZM_SPIELER[1].f}">${esc(pzmName(1))}: <b>${b.punkte}</b> Felder</span></p>` : ''}
       ${erstes ? `<p class="muted">Neue Helfer: 💣 +2, 🪣 +2, 🪄 +${P.B.st === 3 ? 2 : 1}</p>` : ''}
-      <div class="acts"><button class="btn" data-act="pzmgal">💾 In die Galerie</button><button class="btn ghost" data-act="pzmnext">Nächstes Bild ›</button><button class="btn ghost" data-act="pzmbib">Zur Bibliothek</button></div>`);
+      <div class="acts"><button class="btn" data-act="pzmgal">💾 In die Galerie</button><button class="btn ghost" data-act="pzmnext">Nächstes Bild${zwei ? ' zu zweit' : ''} ›</button><button class="btn ghost" data-act="pzmbib">Zur Bibliothek</button></div>`);
   });
 }
+
 function pzmUhrAkt() {
-  const P = PZM; if (!P || P.modus !== 'rennen' || !P.minuten) return;
-  const rest = Math.max(0, P.minuten * 60000 - (Date.now() - P.start)), el = document.getElementById('pzmUhr');
-  if (el) { const s = Math.ceil(rest / 1000); el.textContent = `⏱ ${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`; el.classList.toggle('knapp', s <= 20); }
-  if (rest <= 0 && !P.vorbei) pzmRennenEnde(null);
+  const P = PZM; if (!P || P.modus !== 'rennen' || !P.minuten || P.vorbei) return;
+  const now = Date.now(), halt = document.hidden || !!document.getElementById('overlay');
+  if (halt && !P.pauseAb) P.pauseAb = now; else if (!halt && P.pauseAb) { P.pauseMs += now - P.pauseAb; P.pauseAb = 0; }
+  const rest = Math.max(0, P.minuten * 60000 - (now - P.start - P.pauseMs - (P.pauseAb ? now - P.pauseAb : 0))), el = document.getElementById('pzmUhr');
+  if (el) { const s = Math.ceil(rest / 1000); el.textContent = `${P.pauseAb ? '⏸' : '⏱'} ${Math.floor(s / 60)}:${String(s % 60).padStart(2, '0')}`; el.classList.toggle('knapp', s <= 20); el.classList.toggle('halt', !!P.pauseAb); }
+  if (rest <= 0 && !P.pauseAb) pzmRennenEnde(null);
 }
 function pzmRennenEnde(sieger) {
   const P = PZM; if (!P || P.vorbei) return; P.vorbei = true; clearInterval(P.uhr);
-  const [a, b] = P.ansichten, w = sieger ? sieger.nr : a.Z.n === b.Z.n ? -1 : a.Z.n > b.Z.n ? 0 : 1;
+  const [a, b] = P.ansichten, w = sieger ? sieger.nr : a.Z.n === b.Z.n ? -1 : a.Z.n > b.Z.n ? 0 : 1, sp = pzmSp();
+  if (w >= 0) { sp.siege[w] = Math.min(999, sp.siege[w] + 1); pzmSpeichern(); }
+  const stand = document.getElementById('pzmStand'); if (stand) stand.innerHTML = pzmStandHTML();
   try { Sound.win(); } catch (e) { } try { confetti(); } catch (e) { }
-  overlay(`${mascot('wow')}<h2>${w < 0 ? 'Unentschieden!' : `${PZM_SPIELER[w].n} gewinnt!`}</h2><p>${sieger ? 'Ein Bild ist fertig gemalt.' : 'Die Zeit ist um.'}</p>
-    <p class="pzm-erg"><span style="--sf:${PZM_SPIELER[0].f}">${PZM_SPIELER[0].n}: <b>${a.Z.n}</b> Felder richtig</span><span style="--sf:${PZM_SPIELER[1].f}">${PZM_SPIELER[1].n}: <b>${b.Z.n}</b> Felder richtig</span></p>
-    <div class="acts"><button class="btn" data-act="pzmzwei" data-m="rennen" data-min="${P.minuten}">↺ Noch ein Rennen</button><button class="btn ghost" data-act="pzmzweiende">Allein weitermalen</button><button class="btn ghost" data-act="pzmbib">Zur Bibliothek</button></div>`);
+  overlay(`${mascot('wow')}<h2>${w < 0 ? 'Unentschieden!' : `${esc(pzmName(w))} gewinnt!`}</h2><p>${sieger ? 'Ein Bild ist fertig gemalt.' : 'Die Zeit ist um.'}</p>
+    <p class="pzm-erg"><span style="--sf:${PZM_SPIELER[0].f}">${esc(pzmName(0))}: <b>${a.Z.n}</b> Felder richtig</span><span style="--sf:${PZM_SPIELER[1].f}">${esc(pzmName(1))}: <b>${b.Z.n}</b> Felder richtig</span></p>
+    <p class="pzm-siege">Siege bisher: <span id="pzmSiegeErg">${pzmStandHTML()}</span> <button class="btn ghost sm" data-act="pzmstandnull">Auf 0 setzen</button></p>
+    <div class="acts"><button class="btn" data-act="pzmzwei" data-m="rennen" data-min="${P.minuten}">↺ Noch ein Rennen</button><button class="btn" data-act="pzmzwei" data-m="rennen" data-min="${P.minuten}" data-neu="1">🎲 Neues Bild</button><button class="btn ghost" data-act="pzmzweiende">Allein weitermalen</button><button class="btn ghost" data-act="pzmbib">Zur Bibliothek</button></div>`);
 }
+
+function pzmZufall(id) { const B = pzmBild(id), l = PZM_BILDER.filter(r => r[0] !== id && r[3] === B.st); return l.length ? l[Math.floor(Math.random() * l.length)][0] : id; }
 
 function pzmEnthuellen(liste, dann) {
   liste.forEach(V => pzmGanz(V));
@@ -111882,7 +111947,7 @@ function pzmMerkenJetzt() {
   if (!Z.n) { delete sp.b[P.id]; pzmSpeichern(); return; }
   sp.b[P.id] = { m: pzmBits(Z.gem), n: Z.n, z: Date.now() }; pzmSpeichern();
 }
-document.addEventListener('visibilitychange', () => { if (document.hidden) pzmMerkenJetzt(); });
+document.addEventListener('visibilitychange', () => { if (document.hidden) pzmMerkenJetzt(); pzmUhrAkt(); });
 window.addEventListener('pagehide', () => pzmMerkenJetzt());
 
 function pzmNaechstesBild(id) {
@@ -111909,7 +111974,7 @@ Object.assign(ACT, {
     const V = pzmV(t); if (!V || PZM.vorbei) return; const k = Number(t.dataset.k); if (!(k >= 0 && k < PZM.B.farben.length)) return;
     if (!V.frei.has(k)) { pzmFrage(V, k); return; }
     const alt = V.wahl; V.wahl = k; if (V.werkzeug === 'bombe' || V.werkzeug === 'eimer') { V.werkzeug = 'pinsel'; pzmUntenAkt(V); } else { if (alt >= 0 && alt !== k) pzmPalAkt(V, alt); pzmPalAkt(V, k); }
-    try { Sound.tap(); } catch (e) { } pzmTipp(V); V.basisAlt = true; pzmMal(V);
+    pzmTon('tap'); pzmTipp(V); V.basisAlt = true; pzmMal(V);
   },
   pzmantwort: t => {
     const V = pzmV(t); if (!V) return; const k = Number(t.dataset.k), n = Number(t.dataset.n), a = V.aufg[k], el = V.root.querySelector('.pzm-frage'); if (!a) return;
@@ -111927,17 +111992,36 @@ Object.assign(ACT, {
   pzmzoom: t => { const V = pzmV(t); if (V) pzmZoomUm(V, Number(t.dataset.z) || 1, V.cw / 2, V.ch / 2); },
   pzmganz: t => { const V = pzmV(t); if (V) { pzmGanz(V); pzmTipp(V); } },
   pzmgal: () => { const P = PZM; if (!P) return; const url = pzmPngUrl(P.B, 720); if (url && galAdd(url, 'zahlenbild')) { closeOverlay(); } else if (!url) toast('Das Speichern hat nicht geklappt.'); },
-  pzmnext: () => { const P = PZM; closeOverlay(); const n = pzmNaechstesBild(P ? P.id : PZM_BILDER[0][0]); if (n) showPzmMalen(n); else { pzmZu(); showPzm(); } },
+  pzmnext: () => { const P = PZM; closeOverlay(); const n = pzmNaechstesBild(P ? P.id : PZM_BILDER[0][0]); if (n) showPzmMalen(n, P && P.modus === 'zusammen' ? 'zusammen' : 'allein'); else { pzmZu(); showPzm(); } },
   pzmneu: () => overlay(`${mascot()}<h2>Noch einmal malen?</h2><p class="muted">Das Bild wird wieder grau und du malst es neu aus.</p><div class="acts"><button class="btn" data-act="pzmneuja">↺ Ja, neu malen</button><button class="btn ghost" data-act="closeov">Nein</button></div>`),
   pzmneuja: () => { const P = PZM; closeOverlay(); if (!P) return; const id = P.id; clearTimeout(P.merkT); P.dirty = false; pzmZu(); delete pzmSp().b[id]; pzmSpeichern(); showPzmMalen(id); },
 
   pzmzweiwahl: () => { if (!PZM) return; overlay(`<h2>👫 Zu zweit malen</h2><p class="muted">Der Bildschirm wird geteilt. Jede bekommt eine eigene Palette und kann selbst vergrößern.</p>
+      <p class="pzm-namen">Wer malt mit? ${[0, 1].map(nr => `<button class="btn ghost sm" data-act="pzmname" data-nr="${nr}" data-zur="wahl" style="--sf:${PZM_SPIELER[nr].f}"><i aria-hidden="true"></i>${esc(pzmName(nr))} ✏️</button>`).join('')}</p>
       <div class="pzm-zw-wahl"><button class="btn pzm-zw-zus" data-act="pzmzwei" data-m="zusammen">🤝 Zusammen malen<small>Beide malen am selben Bild. Es wird gespeichert.</small></button>
       <div class="pzm-zw-rennen"><b>🏁 Wettrennen</b><small>Jede malt ihr eigenes Bild. Wer hat am Ende mehr Felder richtig?</small>
         <div class="acts">${[3, 5, 10].map(m => `<button class="btn ghost" data-act="pzmzwei" data-m="rennen" data-min="${m}">${m} Minuten</button>`).join('')}<button class="btn ghost" data-act="pzmzwei" data-m="rennen" data-min="0">Bis eine fertig ist</button></div></div></div>
       <div class="acts"><button class="btn ghost" data-act="closeov">Abbrechen</button></div>`); },
-  pzmzwei: t => { const P = PZM; closeOverlay(); if (!P) return; const m = t.dataset.m === 'rennen' ? 'rennen' : 'zusammen', min = [0, 3, 5, 10].includes(Number(t.dataset.min)) ? Number(t.dataset.min) : 0; Sound.unlock(); showPzmMalen(P.id, m, m === 'rennen' ? min : 0); },
-  pzmzweiende: () => { const P = PZM; closeOverlay(); if (!P) return showPzm(); showPzmMalen(P.id); },
+  pzmzwei: t => { const P = PZM; closeOverlay(); if (!P) return; const m = t.dataset.m === 'rennen' ? 'rennen' : 'zusammen', min = [0, 3, 5, 10].includes(Number(t.dataset.min)) ? Number(t.dataset.min) : 0; Sound.unlock(); showPzmMalen(m === 'rennen' && t.dataset.neu ? pzmZufall(P.id) : P.id, m, m === 'rennen' ? min : 0); },
+
+  pzmzweiende: t => { const P = PZM;
+    if (P && P.modus !== 'allein' && !P.vorbei && !P.ansichten.some(V => V.Z.fertig) && !(t && t.dataset && t.dataset.ja)) {
+      overlay(`${mascot()}<h2>${P.modus === 'rennen' ? 'Rennen beenden?' : 'Zu zweit beenden?'}</h2><p class="muted">${P.modus === 'rennen' ? 'Dieses Rennen zählt dann nicht.' : 'Euer Bild bleibt gespeichert.'}</p><div class="acts"><button class="btn" data-act="closeov">Weiter malen</button><button class="btn ghost" data-act="pzmzweiende" data-ja="1">Ja, beenden</button></div>`); return; }
+    closeOverlay(); if (!P) return showPzm(); showPzmMalen(P.id); },
+  pzmpause: () => { if (!PZM || PZM.vorbei) return; overlay(`${mascot()}<h2>⏸ Pause</h2><p>Die Uhr steht still. Es geht weiter, wenn ihr bereit seid.</p><div class="acts"><button class="btn" data-act="closeov">▶ Weiter</button></div>`); pzmUhrAkt(); },
+  pzmstandnull: () => { const sp = pzmSp(); sp.siege = [0, 0]; pzmSpeichern(); ['pzmStand', 'pzmSiegeErg'].forEach(id => { const el = document.getElementById(id); if (el) el.innerHTML = pzmStandHTML(); }); toast('Der Stand ist wieder 0 : 0.'); },
+  pzmname: t => { const nr = Number(t.dataset.nr) === 1 ? 1 : 0, zur = t.dataset.zur === 'wahl' ? 'wahl' : '';
+    overlay(`<h2>✏️ Wie heißt ${PZM_SPIELER[nr].n}?</h2><p class="muted">Der Name bleibt nur auf diesem Gerät.</p>
+      <input class="input pzm-nin" id="pzmNin" maxlength="12" value="${esc(pzmSp().namen[nr])}" placeholder="${PZM_SPIELER[nr].n}" autocomplete="off" autocapitalize="words" spellcheck="false" enterkeyhint="done" aria-label="Name">
+      <div class="acts"><button class="btn" data-act="pzmnameok" data-nr="${nr}" data-zur="${zur}">Fertig</button><button class="btn ghost" data-act="${zur ? 'pzmzweiwahl' : 'closeov'}">Abbrechen</button></div>`);
+    const inp = document.getElementById('pzmNin'); if (!inp) return;
+    inp.addEventListener('keydown', ev => { if (ev.key === 'Enter') { ev.preventDefault(); const b = document.querySelector('[data-act=pzmnameok]'); if (b) b.click(); } });
+    try { inp.focus(); } catch (e) { } },
+  pzmnameok: t => { const nr = Number(t.dataset.nr) === 1 ? 1 : 0, inp = document.getElementById('pzmNin'), sp = pzmSp();
+    sp.namen[nr] = inp ? inp.value.replace(/[\u0000-\u001f<>]/g, '').replace(/\s+/g, ' ').trim().slice(0, 12).trim() : sp.namen[nr]; pzmSpeichern(); closeOverlay();
+    document.querySelectorAll(`[data-pname="${nr}"]`).forEach(el => { el.textContent = pzmName(nr); });
+    if (t.dataset.zur === 'wahl') ACT.pzmzweiwahl(); },
+  pzmauto: () => { const sp = pzmSp(); sp.auto = !sp.auto; if (sp.auto) sp.dreh = false; else pzmWachAus(); pzmSpeichern(); toast(sp.auto ? '🚗 Autofahrt an: Wackelschutz, leise Töne, der Bildschirm bleibt an.' : 'Autofahrt aus.'); const y = window.scrollY; showPzm(); window.scrollTo(0, y); },
   pzmdreh: () => { const sp = pzmSp(); sp.dreh = !sp.dreh; pzmSpeichern(); const m = document.querySelector('.pzm-mal.zwei'); if (m) m.classList.toggle('dreh', sp.dreh); toast(sp.dreh ? 'Ihr sitzt euch gegenüber.' : 'Ihr sitzt nebeneinander.'); }
 });
 
