@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-oWlqoiJyMa2QnDiomElJtvh6EI9uAsKWUCO2xkjZdAA=' 'sha256-1JgUsYU7tN41O11Q2pJCtNhW5WCSckI3zjjdhmfSy4Y=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-396RpMpIC2bXV3OicwbGPLZSKHqNMHyqRbgre4yeHkg=' 'sha256-u3kCIxrGSXg0L/OONbS0G6ebpDDR7EU/IdIB15402Yc=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -4804,6 +4804,22 @@ button.cq-cell:active { transform: scale(.99); }
   .ebu-kunde { width: 92px; height: 92px; }
   .ebu-blase { font-size: 17px; margin-bottom: 20px; }
   .ebu-sorte { min-width: 64px; }
+}
+
+/* ---- style_einst502.css ---- */
+
+.blw-aufg { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; margin: 10px 0 4px; padding: 10px 12px; border-radius: 16px; background: rgba(255, 255, 255, .1); }
+.blw-aufg > span { font-weight: 800; color: #fff; }
+.blw-aufg-reihe { display: flex; gap: 8px; flex: 1 1 auto; min-width: 0; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; padding: 2px 0; }
+.blw-aufg-reihe::-webkit-scrollbar { display: none; }
+.blw-aufg-reihe .pxw-chip { flex: none; }
+.blw-aufg .pxw-s3 { flex-basis: 100%; }
+.px-top .px-zw .px-kn-i { display: inline; }
+@media (max-width: 480px) { .px-top .px-zw .px-kn-t { display: none; } .px-top .px-zw { padding: 0 10px; font-size: 20px; } }
+@media (max-width: 480px) {
+  .px-root[data-px="advkarte"] .px-top .px-title { display: none; }
+  .px-root[data-px="advkarte"] .px-top .px-hud { margin-left: auto; }
+  .px-top .px-zw { min-width: 52px; font-size: 22px; }
 }
 
 /* ---- style_es248.css ---- */
@@ -10629,8 +10645,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '5.0.1';
-  var MAP = {"probe":0,"files":[[10619,"fehler_kern.js"],[10907,null],[10909,"data.js"],[11624,"data_more.js"],[11996,"data_su2.js"],[12223,"data_es.js"],[12591,"data_wissen.js"],[12792,"data_v21.js"],[13477,"data_v24.js"],[13965,"data_v25.js"],[14454,"data_v26.js"],[14553,"data_v29.js"],[14861,"data_v30.js"],[15195,"data_v31.js"],[15501,"data_kunst.js"],[15698,"data_v214.js"],[15801,"data_v216.js"],[16094,"schrift.js"],[16398,"eingabe.js"],[16609,"data_k34m.js"],[17127,"data_k34d.js"],[17481,"data_k34s.js"],[17935,"data_v224.js"],[18808,"data_v225w.js"],[19177,"data_v225k.js"],[19621,"data_herz.js"],[19975,"data_fb226.js"],[20118,"data_tf226.js"],[20325,"data_v227a.js"],[21425,"data_v227b.js"],[22379,"data_h28b.js"],[22419,"data_l28a.js"],[23285,"data_l28b.js"],[24465,"data_schaetz.js"],[24947,"data_party8.js"],[24997,"data_alce.js"],[25668,"data_alce2.js"],[25917,"data_alce3.js"],[26332,"registry.js"],[26846,"app.js"],[28113,"fun.js"],[28701,"fun2.js"],[29017,"atelier.js"],[29391,"kunst225.js"],[29581,"herz.js"],[29945,"reise.js"],[30247,"iglu.js"],[30413,"offline.js"],[30520,"party.js"],[31004,"meine.js"],[31360,"loeffel.js"],[31531,"trend.js"],[32073,"fun228a.js"],[32934,"fun228b.js"],[33611,"kueche.js"],[34650,"stimme.js"],[34705,"klassen.js"],[34854,"freunde_vorab.js"],[34875,"mut.js"],[35297,"schule.js"],[35786,"fussball226.js"],[36108,"schaetzen.js"],[36539,"party8.js"],[37158,"tiere.js"],[37617,"fussball232.js"],[37832,"party8b.js"],[38134,"weg.js"],[38355,"px.js"],[38775,"px_fein.js"],[38829,"px_data.js"],[39086,"pxwelt.js"],[39170,"px_abenteuer.js"],[39999,"px_abenteuer2.js"],[40753,"px_abenteuer3.js"],[41144,"px_abenteuer4.js"],[41354,"px_baukasten.js"],[41463,"px_abenteuer_fein.js"],[41680,"px_abenteuer_fein2.js"],[42032,"px_abenteuer5.js"],[42439,"px_abenteuer6.js"],[42715,"px_abenteuer7.js"],[43071,"px_level300.js"],[43622,"px_schwach300.js"],[43696,"px_zwei300.js"],[43810,"lumicheckt300.js"],[44003,"schreiben300.js"],[44217,"rechenkarte300.js"],[44337,"lerncheck300.js"],[44560,"material300.js"],[44890,"lernweg300.js"],[45414,"px_ski.js"],[46056,"px_wurf.js"],[46585,"px_insel.js"],[47786,"px_kicker.js"],[48721,"px_eis.js"],[49707,"px_run.js"],[50922,"px_brk.js"],[51884,"px_pol.js"],[53235,"px_frog.js"],[54495,"px_angel.js"],[55810,"px_golf.js"],[56844,"px_tauch.js"],[58109,"px_hockey.js"],[59065,"px_lab.js"],[60400,"px_plopp.js"],[61606,"px_stadion.js"],[63117,"px_stadion2.js"],[63169,"px_training.js"],[63538,"cm.js"],[64028,"cmwelt.js"],[64084,"cm_baeck.js"],[64877,"cm_bahn.js"],[65641,"cm_detek.js"],[66358,"cm_markt.js"],[67071,"ff.js"],[67228,"ff_mathe.js"],[69218,"ff_deutsch.js"],[70806,"ff_sach_a.js"],[73055,"ff_sach_b.js"],[75284,"ff_sprachen.js"],[77692,"zm.js"],[78605,"tt.js"],[78818,"data_tagebuch.js"],[78861,"data_hoerspiel.js"],[79020,"leseecke.js"],[79347,"kt.js"],[79650,"comicbuch.js"],[79928,"alce.js"],[80091,"alce_aufg.js"],[80282,"formen.js"],[80733,"data_formen.js"],[80974,"data_formen2.js"],[81196,"spielzeit.js"],[81418,"data_faktmeinung.js"],[81537,"data_es248.js"],[81801,"data_en249.js"],[82040,"data_wissen249.js"],[82471,"data_kunst249.js"],[82754,"data_fussball250.js"],[82878,"data_werte252.js"],[83131,"data_lesen252.js"],[83192,"data_k34_252.js"],[83278,"art254.js"],[83396,"data_werte255.js"],[83534,"data_lesen255.js"],[83670,"forscher255.js"],[83818,"zufall250.js"],[83864,"stufe259.js"],[83874,"advent.js"],[84137,"wdh.js"],[84235,"eswarm288.js"],[84286,"abwechslung294.js"],[84361,"bilder293a.js"],[84451,"bilder293b.js"],[84581,"bilder293c.js"],[84679,"bilder293d.js"],[84801,"bilder293e.js"],[84965,"bilder293f.js"],[85045,"bilder292.js"],[85491,"denk.js"],[85528,"data_viaje265.js"],[85671,"klassenarbeit.js"],[85804,"quizduell.js"],[85927,"neu267.js"],[86192,"prog.js"],[86297,"lernstand.js"],[86364,"blatt.js"],[86466,"uebung295.js"],[86787,"schuh296.js"],[86995,"uebung297.js"],[87382,"minus298.js"],[87623,"schrift299.js"],[87751,"data_es271.js"],[87865,"plus269.js"],[87959,"schach.js"],[88191,"schachtaktik.js"],[88443,"fun270.js"],[88606,"data_neu274.js"],[88815,"plus272.js"],[88869,"spiele274.js"],[88992,"kasten.js"],[89096,"erklaer.js"],[89209,"apa.js"],[89290,"neu276.js"],[89431,"spiele276.js"],[89481,"neu277.js"],[89659,"spiele277.js"],[89914,"lernen278.js"],[90174,"spiele278.js"],[90517,"lernen279.js"],[90842,"lernen279b.js"],[91240,"spanisch280.js"],[91532,"spanisch283.js"],[91765,"mehr281.js"],[91911,"grafik280.js"],[92290,"tiefsee280.js"],[92568,"abenteuer280.js"],[92780,"abenteuer281.js"],[92892,"design281.js"],[93024,"party281.js"],[93155,"grafik281.js"],[93372,"traumtor292.js"],[93579,"kart293.js"],[93856,"lumi_live.js"],[93972,"sicher.js"],[94156,"stil.js"],[94210,"zurueck287.js"],[94253,"nfbilder300.js"],[94416,"formen300.js"],[95023,"musik300.js"],[95194,"lernweg300b.js"],[95317,"lernweg300c.js"],[95477,"espanol300.js"],[95583,"fabel310_bild.js"],[95834,"fabel310.js"],[96225,"eisbude310.js"],[96451,"turbo310.js"],[96656,"sumo310.js"],[96791,"beifahrer310.js"],[96866,"dreier310.js"],[96982,"ring310.js"],[97091,"loch330.js"],[97441,"reise340.js"],[97511,"fisch340.js"],[98067,"rutsche340.js"],[98478,"knobel340.js"],[98716,"frucht350.js"],[99021,"vulkan350.js"],[99264,"delfin350.js"],[99459,"musik350.js"],[99629,"arcade360.js"],[99745,"strasse360.js"],[100041,"blasen360.js"],[100249,"meer360.js"],[100418,"spirale360.js"],[100582,"sterne360.js"],[100789,"alt360a.js"],[101059,"alt360b.js"],[101252,"alt360c.js"],[101506,"alt360d.js"],[101669,"alt370a.js"],[101866,"alt370b.js"],[102070,"alt370c.js"],[102208,"gl390.js"],[102451,"lauf390.js"],[102960,"ab3_level.js"],[103305,"abenteuer400.js"],[103799,"figuren410.js"],[103894,"kart410.js"],[104247,"show410.js"],[104562,"ball410.js"],[104875,"fussball420.js"],[105300,"farbe420.js"],[105581,"flug430.js"],[105771,"sport430.js"],[106142,"insel440.js"],[106422,"buddel440.js"],[106781,"party450.js"],[107189,"tiere450.js"],[107601,"malbuch460a.js"],[107924,"malbuch460b.js"],[108176,"malbuch460c.js"],[108281,"airhockey470.js"],[108558,"zwei480.js"],[108592,"minigolf480.js"],[108869,"schneeball480.js"],[109167,"billard480.js"],[109392,"kissen490.js"],[109738,"gleiter490.js"],[110112,"koch490.js"],[110546,"pxzwei501.js"],[110567,"belohnung311.js"],[110728,"belohnung480.js"],[110809,"druck311.js"],[110903,"freunde.js"],[111040,"start.js"],[111050,null],[111060,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '5.0.2';
+  var MAP = {"probe":0,"files":[[10635,"fehler_kern.js"],[10923,null],[10925,"data.js"],[11640,"data_more.js"],[12012,"data_su2.js"],[12239,"data_es.js"],[12607,"data_wissen.js"],[12808,"data_v21.js"],[13493,"data_v24.js"],[13981,"data_v25.js"],[14470,"data_v26.js"],[14569,"data_v29.js"],[14877,"data_v30.js"],[15211,"data_v31.js"],[15517,"data_kunst.js"],[15714,"data_v214.js"],[15817,"data_v216.js"],[16110,"schrift.js"],[16414,"eingabe.js"],[16625,"data_k34m.js"],[17143,"data_k34d.js"],[17497,"data_k34s.js"],[17951,"data_v224.js"],[18824,"data_v225w.js"],[19193,"data_v225k.js"],[19637,"data_herz.js"],[19991,"data_fb226.js"],[20134,"data_tf226.js"],[20341,"data_v227a.js"],[21441,"data_v227b.js"],[22395,"data_h28b.js"],[22435,"data_l28a.js"],[23301,"data_l28b.js"],[24481,"data_schaetz.js"],[24963,"data_party8.js"],[25013,"data_alce.js"],[25684,"data_alce2.js"],[25933,"data_alce3.js"],[26348,"registry.js"],[26862,"app.js"],[28130,"fun.js"],[28718,"fun2.js"],[29034,"atelier.js"],[29408,"kunst225.js"],[29598,"herz.js"],[29962,"reise.js"],[30264,"iglu.js"],[30430,"offline.js"],[30537,"party.js"],[31021,"meine.js"],[31377,"loeffel.js"],[31548,"trend.js"],[32090,"fun228a.js"],[32951,"fun228b.js"],[33628,"kueche.js"],[34667,"stimme.js"],[34722,"klassen.js"],[34871,"freunde_vorab.js"],[34892,"mut.js"],[35314,"schule.js"],[35803,"fussball226.js"],[36125,"schaetzen.js"],[36556,"party8.js"],[37175,"tiere.js"],[37634,"fussball232.js"],[37849,"party8b.js"],[38151,"weg.js"],[38372,"px.js"],[38792,"px_fein.js"],[38846,"px_data.js"],[39103,"pxwelt.js"],[39187,"px_abenteuer.js"],[40016,"px_abenteuer2.js"],[40770,"px_abenteuer3.js"],[41161,"px_abenteuer4.js"],[41371,"px_baukasten.js"],[41480,"px_abenteuer_fein.js"],[41697,"px_abenteuer_fein2.js"],[42049,"px_abenteuer5.js"],[42456,"px_abenteuer6.js"],[42732,"px_abenteuer7.js"],[43088,"px_level300.js"],[43639,"px_schwach300.js"],[43713,"px_zwei300.js"],[43827,"lumicheckt300.js"],[44020,"schreiben300.js"],[44234,"rechenkarte300.js"],[44354,"lerncheck300.js"],[44577,"material300.js"],[44907,"lernweg300.js"],[45431,"px_ski.js"],[46073,"px_wurf.js"],[46602,"px_insel.js"],[47803,"px_kicker.js"],[48738,"px_eis.js"],[49724,"px_run.js"],[50939,"px_brk.js"],[51901,"px_pol.js"],[53252,"px_frog.js"],[54512,"px_angel.js"],[55827,"px_golf.js"],[56861,"px_tauch.js"],[58126,"px_hockey.js"],[59082,"px_lab.js"],[60417,"px_plopp.js"],[61623,"px_stadion.js"],[63134,"px_stadion2.js"],[63186,"px_training.js"],[63555,"cm.js"],[64045,"cmwelt.js"],[64101,"cm_baeck.js"],[64894,"cm_bahn.js"],[65658,"cm_detek.js"],[66375,"cm_markt.js"],[67088,"ff.js"],[67245,"ff_mathe.js"],[69235,"ff_deutsch.js"],[70823,"ff_sach_a.js"],[73072,"ff_sach_b.js"],[75301,"ff_sprachen.js"],[77709,"zm.js"],[78622,"tt.js"],[78835,"data_tagebuch.js"],[78878,"data_hoerspiel.js"],[79037,"leseecke.js"],[79364,"kt.js"],[79667,"comicbuch.js"],[79945,"alce.js"],[80108,"alce_aufg.js"],[80299,"formen.js"],[80750,"data_formen.js"],[80991,"data_formen2.js"],[81213,"spielzeit.js"],[81435,"data_faktmeinung.js"],[81554,"data_es248.js"],[81818,"data_en249.js"],[82057,"data_wissen249.js"],[82488,"data_kunst249.js"],[82771,"data_fussball250.js"],[82895,"data_werte252.js"],[83148,"data_lesen252.js"],[83209,"data_k34_252.js"],[83295,"art254.js"],[83413,"data_werte255.js"],[83551,"data_lesen255.js"],[83687,"forscher255.js"],[83835,"zufall250.js"],[83881,"stufe259.js"],[83891,"advent.js"],[84154,"wdh.js"],[84252,"eswarm288.js"],[84303,"abwechslung294.js"],[84378,"bilder293a.js"],[84468,"bilder293b.js"],[84598,"bilder293c.js"],[84696,"bilder293d.js"],[84818,"bilder293e.js"],[84982,"bilder293f.js"],[85062,"bilder292.js"],[85508,"denk.js"],[85545,"data_viaje265.js"],[85688,"klassenarbeit.js"],[85821,"quizduell.js"],[85944,"neu267.js"],[86209,"prog.js"],[86314,"lernstand.js"],[86381,"blatt.js"],[86483,"uebung295.js"],[86804,"schuh296.js"],[87012,"uebung297.js"],[87399,"minus298.js"],[87640,"schrift299.js"],[87768,"data_es271.js"],[87882,"plus269.js"],[87976,"schach.js"],[88208,"schachtaktik.js"],[88460,"fun270.js"],[88623,"data_neu274.js"],[88832,"plus272.js"],[88886,"spiele274.js"],[89009,"kasten.js"],[89113,"erklaer.js"],[89226,"apa.js"],[89307,"neu276.js"],[89448,"spiele276.js"],[89498,"neu277.js"],[89676,"spiele277.js"],[89931,"lernen278.js"],[90191,"spiele278.js"],[90534,"lernen279.js"],[90859,"lernen279b.js"],[91257,"spanisch280.js"],[91549,"spanisch283.js"],[91782,"mehr281.js"],[91928,"grafik280.js"],[92307,"tiefsee280.js"],[92585,"abenteuer280.js"],[92797,"abenteuer281.js"],[92909,"design281.js"],[93041,"party281.js"],[93172,"grafik281.js"],[93389,"traumtor292.js"],[93596,"kart293.js"],[93873,"lumi_live.js"],[93989,"sicher.js"],[94173,"stil.js"],[94227,"zurueck287.js"],[94270,"nfbilder300.js"],[94433,"formen300.js"],[95040,"musik300.js"],[95211,"lernweg300b.js"],[95334,"lernweg300c.js"],[95494,"espanol300.js"],[95600,"fabel310_bild.js"],[95851,"fabel310.js"],[96242,"eisbude310.js"],[96468,"turbo310.js"],[96673,"sumo310.js"],[96808,"beifahrer310.js"],[96883,"dreier310.js"],[96999,"ring310.js"],[97108,"loch330.js"],[97458,"reise340.js"],[97528,"fisch340.js"],[98084,"rutsche340.js"],[98495,"knobel340.js"],[98733,"frucht350.js"],[99038,"vulkan350.js"],[99281,"delfin350.js"],[99476,"musik350.js"],[99646,"arcade360.js"],[99762,"strasse360.js"],[100058,"blasen360.js"],[100266,"meer360.js"],[100435,"spirale360.js"],[100599,"sterne360.js"],[100806,"alt360a.js"],[101076,"alt360b.js"],[101269,"alt360c.js"],[101523,"alt360d.js"],[101686,"alt370a.js"],[101883,"alt370b.js"],[102087,"alt370c.js"],[102225,"gl390.js"],[102468,"lauf390.js"],[102977,"ab3_level.js"],[103322,"abenteuer400.js"],[103816,"figuren410.js"],[103911,"kart410.js"],[104264,"show410.js"],[104579,"ball410.js"],[104892,"fussball420.js"],[105317,"farbe420.js"],[105598,"flug430.js"],[105788,"sport430.js"],[106159,"insel440.js"],[106439,"buddel440.js"],[106798,"party450.js"],[107206,"tiere450.js"],[107618,"malbuch460a.js"],[107941,"malbuch460b.js"],[108193,"malbuch460c.js"],[108298,"airhockey470.js"],[108575,"zwei480.js"],[108609,"minigolf480.js"],[108886,"schneeball480.js"],[109184,"billard480.js"],[109409,"kissen490.js"],[109755,"gleiter490.js"],[110129,"koch490.js"],[110563,"pxzwei501.js"],[110586,"belohnung311.js"],[110747,"belohnung480.js"],[110828,"einst502.js"],[110867,"druck311.js"],[110961,"freunde.js"],[111098,"start.js"],[111108,null],[111118,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -26847,9 +26863,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '5.0.1';
+const APP_VERSION = '5.0.2';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "5.0.2", d: "21.11.2026", t: ["Einstellungen nach vorne geholt: Das Fach der Aufgaben in den Pixel-Spielen steht als Leiste oben in der Belohnungswelt, die Grafik des Pixel-Abenteuers schaltet ein Knopf auf der Weltkarte um", "Behoben: Beim Umschalten der Grafik sahen die Knöpfe für Allein und Zu zweit kurz falsch aus"] },
   { v: "5.0.1", d: "21.11.2026", t: ["Lumis Pixel-Abenteuer zu zweit ist wieder leicht zu finden: Auf der Weltkarte oben schaltet ein Knopf zwischen Allein und Zu zweit um. Das Abenteuer steht jetzt auch im Regal „Zu zweit“"] },
   { v: "5.0.0", d: "21.11.2026", t: ["Buddel-Abenteuer 3D wird zum Hau-Abenteuer: Hau-Kraft durch Erde und Stein, Stampfer, an Wänden klettern, Goldadern, Goldkammern und Super-Lumi", "Buddel-Abenteuer 3D jetzt auch zu zweit: Pia schwebt mit und singt Schallwellen, allein sitzt sie auf Lumis Rücken"] },
   { v: "4.9.0", d: "20.11.2026", t: ["Drei neue 3D-Spiele zu zweit: Kissenschlacht 3D auf schwebenden Plattformen, Gleiter-Arena 3D mit Sammelphase und Finale (Weitflug, Ring-Rennen, Ballon-Jagd) und Koch-Chaos 3D, in dem man zusammen unter Zeitdruck kocht", "Alle drei auch allein spielbar, zu zweit mit eigener Steuerung je Hälfte oder geteiltem Bildschirm"] },
@@ -110551,16 +110568,18 @@ FUN_IMPL.kochchaos3d = kocSpiel;
 
 
 
+
+function pxKnopfFuell(b, txt) { const i = txt.indexOf(' '); b.innerHTML = `<span class="px-kn-i">${esc(txt.slice(0, i))}</span><span class="px-kn-t">${esc(txt.slice(i))}</span>`; }
 function pxZ2KnopfText() { return pxZ2An() ? '👫 Zu zweit' : '🐧 Allein'; }
 function pxZ2Kartenknopf() {
   const top = document.querySelector('.px-root[data-px="advkarte"] .px-top'); if (!top || top.querySelector('.px-zw')) return;
-  const b = document.createElement('button'); b.className = 'px-zw' + (pxZ2An() ? ' an' : ''); b.dataset.act = 'pxzweikarte'; b.textContent = pxZ2KnopfText();
+  const b = document.createElement('button'); b.className = 'px-zw' + (pxZ2An() ? ' an' : ''); b.dataset.act = 'pxzweikarte'; pxKnopfFuell(b, pxZ2KnopfText());
   b.setAttribute('aria-label', 'Allein oder zu zweit spielen'); b.setAttribute('aria-pressed', String(pxZ2An()));
   const snd = top.querySelector('.px-snd'); if (snd) snd.before(b); else top.appendChild(b);
 }
 if (typeof pxAMap === 'function') { const altKarte = pxAMap; pxAMap = function (...a) { const r = altKarte.apply(this, a); try { pxZ2Kartenknopf(); } catch (e) { } return r; }; }
 Object.assign(ACT, {
-  pxzweikarte: t => { const P = pxS(); P.zwei = !P.zwei; save(); Sound.tap(); t.textContent = pxZ2KnopfText(); t.classList.toggle('an', !!P.zwei); t.setAttribute('aria-pressed', String(!!P.zwei));
+  pxzweikarte: t => { const P = pxS(); P.zwei = !P.zwei; save(); Sound.tap(); pxKnopfFuell(t, pxZ2KnopfText()); t.classList.toggle('an', !!P.zwei); t.setAttribute('aria-pressed', String(!!P.zwei));
     toast(P.zwei ? '👫 Zu zweit! Spieler 2 spielt mit den Knöpfen rechts unten.' : '🐧 Lumi spielt allein.'); }
 });
 
@@ -110805,6 +110824,45 @@ if (typeof showPaHub === 'function') {
   const altHub = showPaHub;
   showPaHub = function (...a) { const r = altHub.apply(this, a); try { const b = document.querySelector('.pagehead .icon-btn[data-act=home]'); if (b && ACT.blwelt) b.dataset.act = 'blwelt'; } catch (e) { } return r; };
 }
+
+/*@@src einst502.js@@*/
+
+
+
+
+
+
+
+
+
+if (typeof showPixelWelt === 'function') {
+  const altWelt = showPixelWelt;
+  showPixelWelt = function (...a) {
+    const r = altWelt.apply(this, a);
+    try {
+      const main = document.querySelector('.pxw-main'), fach = main && [...main.querySelectorAll('.pxw-fach')].find(x => x.querySelector('[data-act="pxfach"]'));
+      if (fach && !fach.classList.contains('blw-aufg')) {
+        fach.classList.add('blw-aufg'); const sp = fach.querySelector(':scope > span'); if (sp) sp.textContent = '📚 Aufgaben in den Pixel-Spielen:';
+        const reihe = document.createElement('div'); reihe.className = 'blw-aufg-reihe'; fach.querySelectorAll('[data-act="pxfach"]').forEach(b => reihe.appendChild(b)); if (sp) sp.after(reihe); else fach.prepend(reihe);
+        const ziel = main.querySelector('#blwInhalt'); if (ziel) ziel.before(fach); else main.prepend(fach);
+      }
+    } catch (e) { }
+    return r;
+  };
+}
+
+function pxFeinText() { return typeof pxFeinAn === 'function' && pxFeinAn() ? '✨ Fein' : '▦ Einfach'; }
+function pxFeinKartenknopf() {
+  const top = document.querySelector('.px-root[data-px="advkarte"] .px-top'); if (!top || top.querySelector('.px-fn')) return;
+  const b = document.createElement('button'); b.className = 'px-zw px-fn'; b.dataset.act = 'pxfeinkarte'; pxKnopfFuell(b, pxFeinText()); b.setAttribute('aria-label', 'Grafik fein oder einfach');
+  const zw = top.querySelector('.px-zw'), snd = top.querySelector('.px-snd'); if (zw) zw.before(b); else if (snd) snd.before(b); else top.appendChild(b);
+}
+if (typeof pxAMap === 'function') { const altKarte2 = pxAMap; pxAMap = function (...a) { const r = altKarte2.apply(this, a); try { pxFeinKartenknopf(); } catch (e) { } return r; }; }
+Object.assign(ACT, {
+  pxfeinkarte: () => { const P = pxS(); P.fein = !(P.fein !== false); save(); Sound.tap(); toast(P.fein ? '✨ Feine Grafik ist an.' : '▦ Einfache Grafik wie früher ist an.'); pxAMap(); },
+
+  pxfein: t => { pxS().fein = t.dataset.v === '1'; save(); Sound.tap(); document.querySelectorAll('.pxw-sw[data-act="pxfein"]').forEach(b => { const on = b === t; b.classList.toggle('on', on); b.setAttribute('aria-pressed', on); }); }
+});
 
 /*@@src druck311.js@@*/
 
