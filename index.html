@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-l8N9FPFXTyUC0infGf7+f5pHrsCnlJfeAvUY0/2LjC4=' 'sha256-db2nxrQUPOYQfGR7FFDy8t2m/6pOigLycoV621W41A0=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-zPaZze8XZx9X9dPKgxhyuR+8Y0WN1MNeosNxCBm+FNA=' 'sha256-ddzOUZLZ8xa54rrWEXFTftUtM3F/USJPW9ydrjmbQrY=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -5911,6 +5911,16 @@ mark.ffl-hl { background: #ffe066; color: #1d2440; border-radius: 5px; padding: 
 .gym-svg .pt { fill: var(--fc); }
 .gym-svg text { fill: var(--g-soft); font: 600 12px system-ui, sans-serif; }
 
+.gym-post { display: flex; align-items: center; gap: 14px; width: 100%; margin: 16px 0 2px; padding: 14px 16px; border-radius: 12px; border: 1px solid var(--g-line); background: var(--g-sf); text-align: left; cursor: pointer; }
+.gym-post.neu { border-color: #d94f80; box-shadow: 0 0 0 3px rgba(217, 79, 128, .14); }
+.gym-post-i { flex: none; font-size: 28px; line-height: 1; }
+.gym-post-t { display: flex; flex-direction: column; gap: 2px; flex: 1; min-width: 0; }
+.gym-post-t b { font-size: 17px; font-weight: 700; }
+.gym-post-t small { color: var(--g-soft); font-size: 14px; }
+.gym-post-g { flex: none; color: var(--g-soft); font-size: 22px; }
+.gym-ps { margin-top: 14px; padding: 12px 16px; border-radius: 12px; background: var(--g-sf); border: 1px dashed var(--g-line); font-size: 16px; }
+.gym-ps b { color: #d94f80; }
+
 .gym-erg { text-align: center; padding: 22px 16px; border-radius: 14px; background: var(--g-sf); border: 1px solid var(--g-line); margin-top: 6px; }
 .gym-pz { font-size: 64px; font-weight: 800; letter-spacing: -.03em; line-height: 1.1; color: var(--fc); margin-top: 6px; }
 .gym-ergt { font-weight: 600; margin-top: 4px; }
@@ -10925,8 +10935,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '5.5.0';
-  var MAP = {"probe":0,"files":[[10915,"fehler_kern.js"],[11203,null],[11205,"data.js"],[11920,"data_more.js"],[12292,"data_su2.js"],[12519,"data_es.js"],[12887,"data_wissen.js"],[13088,"data_v21.js"],[13773,"data_v24.js"],[14261,"data_v25.js"],[14750,"data_v26.js"],[14849,"data_v29.js"],[15157,"data_v30.js"],[15491,"data_v31.js"],[15797,"data_kunst.js"],[15994,"data_v214.js"],[16097,"data_v216.js"],[16390,"schrift.js"],[16694,"eingabe.js"],[16905,"data_k34m.js"],[17423,"data_k34d.js"],[17777,"data_k34s.js"],[18231,"data_v224.js"],[19104,"data_v225w.js"],[19473,"data_v225k.js"],[19917,"data_herz.js"],[20271,"data_fb226.js"],[20414,"data_tf226.js"],[20621,"data_v227a.js"],[21721,"data_v227b.js"],[22675,"data_h28b.js"],[22715,"data_l28a.js"],[23581,"data_l28b.js"],[24761,"data_schaetz.js"],[25243,"data_party8.js"],[25293,"data_alce.js"],[25964,"data_alce2.js"],[26213,"data_alce3.js"],[26628,"registry.js"],[27142,"app.js"],[28417,"fun.js"],[29005,"fun2.js"],[29321,"atelier.js"],[29695,"kunst225.js"],[29885,"herz.js"],[30249,"reise.js"],[30551,"iglu.js"],[30717,"offline.js"],[30827,"party.js"],[31311,"meine.js"],[31667,"loeffel.js"],[31838,"trend.js"],[32380,"fun228a.js"],[33241,"fun228b.js"],[33918,"kueche.js"],[34957,"stimme.js"],[35012,"klassen.js"],[35161,"freunde_vorab.js"],[35182,"mut.js"],[35604,"schule.js"],[36093,"fussball226.js"],[36415,"schaetzen.js"],[36846,"party8.js"],[37465,"tiere.js"],[37924,"fussball232.js"],[38139,"party8b.js"],[38441,"weg.js"],[38662,"px.js"],[39082,"px_fein.js"],[39136,"px_data.js"],[39393,"pxwelt.js"],[39477,"px_abenteuer.js"],[40306,"px_abenteuer2.js"],[41060,"px_abenteuer3.js"],[41451,"px_abenteuer4.js"],[41661,"px_baukasten.js"],[41770,"px_abenteuer_fein.js"],[41987,"px_abenteuer_fein2.js"],[42339,"px_abenteuer5.js"],[42746,"px_abenteuer6.js"],[43022,"px_abenteuer7.js"],[43378,"px_level300.js"],[43929,"px_schwach300.js"],[44003,"px_zwei300.js"],[44117,"lumicheckt300.js"],[44310,"schreiben300.js"],[44524,"rechenkarte300.js"],[44644,"lerncheck300.js"],[44867,"material300.js"],[45197,"lernweg300.js"],[45721,"px_ski.js"],[46363,"px_wurf.js"],[46892,"px_insel.js"],[48093,"px_kicker.js"],[49028,"px_eis.js"],[50014,"px_run.js"],[51229,"px_brk.js"],[52191,"px_pol.js"],[53542,"px_frog.js"],[54802,"px_angel.js"],[56117,"px_golf.js"],[57151,"px_tauch.js"],[58416,"px_hockey.js"],[59372,"px_lab.js"],[60707,"px_plopp.js"],[61913,"px_stadion.js"],[63424,"px_stadion2.js"],[63476,"px_training.js"],[63845,"cm.js"],[64335,"cmwelt.js"],[64391,"cm_baeck.js"],[65184,"cm_bahn.js"],[65948,"cm_detek.js"],[66665,"cm_markt.js"],[67378,"ff.js"],[67535,"ff_mathe.js"],[69525,"ff_deutsch.js"],[71113,"ff_sach_a.js"],[73362,"ff_sach_b.js"],[75591,"ff_sprachen.js"],[77999,"zm.js"],[78912,"tt.js"],[79125,"data_tagebuch.js"],[79168,"data_hoerspiel.js"],[79327,"leseecke.js"],[79654,"kt.js"],[79957,"comicbuch.js"],[80235,"alce.js"],[80398,"alce_aufg.js"],[80589,"formen.js"],[81040,"data_formen.js"],[81281,"data_formen2.js"],[81503,"spielzeit.js"],[81725,"data_faktmeinung.js"],[81844,"data_es248.js"],[82108,"data_en249.js"],[82347,"data_wissen249.js"],[82778,"data_kunst249.js"],[83061,"data_fussball250.js"],[83185,"data_werte252.js"],[83438,"data_lesen252.js"],[83499,"data_k34_252.js"],[83585,"art254.js"],[83703,"data_werte255.js"],[83841,"data_lesen255.js"],[83977,"forscher255.js"],[84125,"zufall250.js"],[84171,"stufe259.js"],[84181,"advent.js"],[84444,"wdh.js"],[84542,"eswarm288.js"],[84593,"abwechslung294.js"],[84668,"bilder293a.js"],[84758,"bilder293b.js"],[84888,"bilder293c.js"],[84986,"bilder293d.js"],[85108,"bilder293e.js"],[85272,"bilder293f.js"],[85352,"bilder292.js"],[85798,"denk.js"],[85835,"data_viaje265.js"],[85978,"klassenarbeit.js"],[86111,"quizduell.js"],[86234,"neu267.js"],[86499,"prog.js"],[86604,"lernstand.js"],[86671,"blatt.js"],[86773,"uebung295.js"],[87094,"schuh296.js"],[87302,"uebung297.js"],[87689,"minus298.js"],[87930,"schrift299.js"],[88058,"data_es271.js"],[88172,"plus269.js"],[88266,"schach.js"],[88498,"schachtaktik.js"],[88750,"fun270.js"],[88913,"data_neu274.js"],[89122,"plus272.js"],[89176,"spiele274.js"],[89299,"kasten.js"],[89403,"erklaer.js"],[89516,"apa.js"],[89597,"neu276.js"],[89738,"spiele276.js"],[89788,"neu277.js"],[89966,"spiele277.js"],[90221,"lernen278.js"],[90481,"spiele278.js"],[90824,"lernen279.js"],[91149,"lernen279b.js"],[91547,"spanisch280.js"],[91839,"spanisch283.js"],[92072,"mehr281.js"],[92218,"grafik280.js"],[92597,"tiefsee280.js"],[92875,"abenteuer280.js"],[93087,"abenteuer281.js"],[93199,"design281.js"],[93331,"party281.js"],[93462,"grafik281.js"],[93679,"traumtor292.js"],[93886,"kart293.js"],[94163,"lumi_live.js"],[94279,"sicher.js"],[94463,"stil.js"],[94517,"zurueck287.js"],[94560,"nfbilder300.js"],[94723,"formen300.js"],[95330,"musik300.js"],[95501,"lernweg300b.js"],[95624,"lernweg300c.js"],[95784,"espanol300.js"],[95890,"fabel310_bild.js"],[96141,"fabel310.js"],[96532,"eisbude310.js"],[96758,"turbo310.js"],[96963,"sumo310.js"],[97098,"beifahrer310.js"],[97173,"dreier310.js"],[97289,"ring310.js"],[97398,"loch330.js"],[97748,"reise340.js"],[97818,"fisch340.js"],[98374,"rutsche340.js"],[98785,"knobel340.js"],[99023,"frucht350.js"],[99328,"vulkan350.js"],[99571,"delfin350.js"],[99766,"musik350.js"],[99936,"arcade360.js"],[100052,"strasse360.js"],[100348,"blasen360.js"],[100556,"meer360.js"],[100725,"spirale360.js"],[100889,"sterne360.js"],[101096,"alt360a.js"],[101366,"alt360b.js"],[101559,"alt360c.js"],[101813,"alt360d.js"],[101976,"alt370a.js"],[102173,"alt370b.js"],[102377,"alt370c.js"],[102515,"gl390.js"],[102758,"lauf390.js"],[103267,"ab3_level.js"],[103612,"abenteuer400.js"],[104106,"figuren410.js"],[104201,"kart410.js"],[104554,"show410.js"],[104869,"ball410.js"],[105182,"fussball420.js"],[105607,"farbe420.js"],[105888,"flug430.js"],[106078,"sport430.js"],[106449,"insel440.js"],[106729,"buddel440.js"],[107088,"party450.js"],[107496,"tiere450.js"],[107908,"malbuch460a.js"],[108231,"malbuch460b.js"],[108483,"malbuch460c.js"],[108588,"airhockey470.js"],[108865,"zwei480.js"],[108899,"minigolf480.js"],[109176,"schneeball480.js"],[109474,"billard480.js"],[109699,"kissen490.js"],[110045,"gleiter490.js"],[110419,"koch490.js"],[110853,"pxzwei501.js"],[110876,"belohnung311.js"],[111037,"belohnung480.js"],[111118,"einst502.js"],[111157,"pixmal510_bilder.js"],[111469,"pixmal530_bilder.js"],[111591,"pixmal510.js"],[112189,"druck311.js"],[112283,"gym550.js"],[112578,"gym550_mathe5.js"],[112846,"gym550_deutsch5.js"],[113048,"gym550_englisch5.js"],[113158,"gym550_nawi5.js"],[113421,"gym550_gesell5.js"],[113653,"gym550_mehr5.js"],[113807,"freunde.js"],[113944,"start.js"],[113954,null],[113964,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '5.6.0';
+  var MAP = {"probe":0,"files":[[10925,"fehler_kern.js"],[11213,null],[11215,"data.js"],[11930,"data_more.js"],[12302,"data_su2.js"],[12529,"data_es.js"],[12897,"data_wissen.js"],[13098,"data_v21.js"],[13783,"data_v24.js"],[14271,"data_v25.js"],[14760,"data_v26.js"],[14859,"data_v29.js"],[15167,"data_v30.js"],[15501,"data_v31.js"],[15807,"data_kunst.js"],[16004,"data_v214.js"],[16107,"data_v216.js"],[16400,"schrift.js"],[16704,"eingabe.js"],[16915,"data_k34m.js"],[17433,"data_k34d.js"],[17787,"data_k34s.js"],[18241,"data_v224.js"],[19114,"data_v225w.js"],[19483,"data_v225k.js"],[19927,"data_herz.js"],[20281,"data_fb226.js"],[20424,"data_tf226.js"],[20631,"data_v227a.js"],[21731,"data_v227b.js"],[22685,"data_h28b.js"],[22725,"data_l28a.js"],[23591,"data_l28b.js"],[24771,"data_schaetz.js"],[25253,"data_party8.js"],[25303,"data_alce.js"],[25974,"data_alce2.js"],[26223,"data_alce3.js"],[26638,"registry.js"],[27152,"app.js"],[28428,"fun.js"],[29016,"fun2.js"],[29332,"atelier.js"],[29706,"kunst225.js"],[29896,"herz.js"],[30260,"reise.js"],[30562,"iglu.js"],[30728,"offline.js"],[30838,"party.js"],[31322,"meine.js"],[31678,"loeffel.js"],[31849,"trend.js"],[32391,"fun228a.js"],[33252,"fun228b.js"],[33929,"kueche.js"],[34968,"stimme.js"],[35023,"klassen.js"],[35176,"freunde_vorab.js"],[35197,"mut.js"],[35619,"schule.js"],[36108,"fussball226.js"],[36430,"schaetzen.js"],[36861,"party8.js"],[37480,"tiere.js"],[37939,"fussball232.js"],[38154,"party8b.js"],[38456,"weg.js"],[38677,"px.js"],[39097,"px_fein.js"],[39151,"px_data.js"],[39408,"pxwelt.js"],[39492,"px_abenteuer.js"],[40321,"px_abenteuer2.js"],[41075,"px_abenteuer3.js"],[41466,"px_abenteuer4.js"],[41676,"px_baukasten.js"],[41785,"px_abenteuer_fein.js"],[42002,"px_abenteuer_fein2.js"],[42354,"px_abenteuer5.js"],[42761,"px_abenteuer6.js"],[43037,"px_abenteuer7.js"],[43393,"px_level300.js"],[43944,"px_schwach300.js"],[44018,"px_zwei300.js"],[44132,"lumicheckt300.js"],[44325,"schreiben300.js"],[44539,"rechenkarte300.js"],[44659,"lerncheck300.js"],[44882,"material300.js"],[45212,"lernweg300.js"],[45736,"px_ski.js"],[46378,"px_wurf.js"],[46907,"px_insel.js"],[48108,"px_kicker.js"],[49043,"px_eis.js"],[50029,"px_run.js"],[51244,"px_brk.js"],[52206,"px_pol.js"],[53557,"px_frog.js"],[54817,"px_angel.js"],[56132,"px_golf.js"],[57166,"px_tauch.js"],[58431,"px_hockey.js"],[59387,"px_lab.js"],[60722,"px_plopp.js"],[61928,"px_stadion.js"],[63439,"px_stadion2.js"],[63491,"px_training.js"],[63860,"cm.js"],[64350,"cmwelt.js"],[64406,"cm_baeck.js"],[65199,"cm_bahn.js"],[65963,"cm_detek.js"],[66680,"cm_markt.js"],[67393,"ff.js"],[67550,"ff_mathe.js"],[69540,"ff_deutsch.js"],[71128,"ff_sach_a.js"],[73377,"ff_sach_b.js"],[75606,"ff_sprachen.js"],[78014,"zm.js"],[78927,"tt.js"],[79140,"data_tagebuch.js"],[79183,"data_hoerspiel.js"],[79342,"leseecke.js"],[79669,"kt.js"],[79972,"comicbuch.js"],[80250,"alce.js"],[80413,"alce_aufg.js"],[80604,"formen.js"],[81055,"data_formen.js"],[81296,"data_formen2.js"],[81518,"spielzeit.js"],[81740,"data_faktmeinung.js"],[81859,"data_es248.js"],[82123,"data_en249.js"],[82362,"data_wissen249.js"],[82793,"data_kunst249.js"],[83076,"data_fussball250.js"],[83200,"data_werte252.js"],[83453,"data_lesen252.js"],[83514,"data_k34_252.js"],[83600,"art254.js"],[83718,"data_werte255.js"],[83856,"data_lesen255.js"],[83992,"forscher255.js"],[84140,"zufall250.js"],[84186,"stufe259.js"],[84196,"advent.js"],[84459,"wdh.js"],[84557,"eswarm288.js"],[84608,"abwechslung294.js"],[84683,"bilder293a.js"],[84773,"bilder293b.js"],[84903,"bilder293c.js"],[85001,"bilder293d.js"],[85123,"bilder293e.js"],[85287,"bilder293f.js"],[85367,"bilder292.js"],[85813,"denk.js"],[85850,"data_viaje265.js"],[85993,"klassenarbeit.js"],[86126,"quizduell.js"],[86249,"neu267.js"],[86514,"prog.js"],[86619,"lernstand.js"],[86686,"blatt.js"],[86788,"uebung295.js"],[87109,"schuh296.js"],[87317,"uebung297.js"],[87704,"minus298.js"],[87945,"schrift299.js"],[88073,"data_es271.js"],[88187,"plus269.js"],[88281,"schach.js"],[88513,"schachtaktik.js"],[88765,"fun270.js"],[88928,"data_neu274.js"],[89137,"plus272.js"],[89191,"spiele274.js"],[89314,"kasten.js"],[89418,"erklaer.js"],[89531,"apa.js"],[89612,"neu276.js"],[89753,"spiele276.js"],[89803,"neu277.js"],[89981,"spiele277.js"],[90236,"lernen278.js"],[90496,"spiele278.js"],[90839,"lernen279.js"],[91164,"lernen279b.js"],[91562,"spanisch280.js"],[91854,"spanisch283.js"],[92087,"mehr281.js"],[92233,"grafik280.js"],[92612,"tiefsee280.js"],[92890,"abenteuer280.js"],[93102,"abenteuer281.js"],[93214,"design281.js"],[93346,"party281.js"],[93477,"grafik281.js"],[93694,"traumtor292.js"],[93901,"kart293.js"],[94178,"lumi_live.js"],[94294,"sicher.js"],[94478,"stil.js"],[94532,"zurueck287.js"],[94575,"nfbilder300.js"],[94738,"formen300.js"],[95345,"musik300.js"],[95516,"lernweg300b.js"],[95639,"lernweg300c.js"],[95799,"espanol300.js"],[95905,"fabel310_bild.js"],[96156,"fabel310.js"],[96547,"eisbude310.js"],[96773,"turbo310.js"],[96978,"sumo310.js"],[97113,"beifahrer310.js"],[97188,"dreier310.js"],[97304,"ring310.js"],[97413,"loch330.js"],[97763,"reise340.js"],[97833,"fisch340.js"],[98389,"rutsche340.js"],[98800,"knobel340.js"],[99038,"frucht350.js"],[99343,"vulkan350.js"],[99586,"delfin350.js"],[99781,"musik350.js"],[99951,"arcade360.js"],[100067,"strasse360.js"],[100363,"blasen360.js"],[100571,"meer360.js"],[100740,"spirale360.js"],[100904,"sterne360.js"],[101111,"alt360a.js"],[101381,"alt360b.js"],[101574,"alt360c.js"],[101828,"alt360d.js"],[101991,"alt370a.js"],[102188,"alt370b.js"],[102392,"alt370c.js"],[102530,"gl390.js"],[102773,"lauf390.js"],[103282,"ab3_level.js"],[103627,"abenteuer400.js"],[104121,"figuren410.js"],[104216,"kart410.js"],[104569,"show410.js"],[104884,"ball410.js"],[105197,"fussball420.js"],[105622,"farbe420.js"],[105903,"flug430.js"],[106093,"sport430.js"],[106464,"insel440.js"],[106744,"buddel440.js"],[107103,"party450.js"],[107511,"tiere450.js"],[107923,"malbuch460a.js"],[108246,"malbuch460b.js"],[108498,"malbuch460c.js"],[108603,"airhockey470.js"],[108880,"zwei480.js"],[108914,"minigolf480.js"],[109191,"schneeball480.js"],[109489,"billard480.js"],[109714,"kissen490.js"],[110060,"gleiter490.js"],[110434,"koch490.js"],[110868,"pxzwei501.js"],[110891,"belohnung311.js"],[111052,"belohnung480.js"],[111133,"einst502.js"],[111172,"pixmal510_bilder.js"],[111484,"pixmal530_bilder.js"],[111606,"pixmal510.js"],[112204,"druck311.js"],[112298,"gym550.js"],[112620,"gym550_mathe5.js"],[112888,"gym550_deutsch5.js"],[113090,"gym550_englisch5.js"],[113200,"gym550_nawi5.js"],[113463,"gym550_gesell5.js"],[113695,"gym550_mehr5.js"],[113849,"freunde.js"],[113986,"start.js"],[113996,null],[114006,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -27143,9 +27153,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '5.5.0';
+const APP_VERSION = '5.6.0';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "5.6.0", d: "21.11.2026", t: ["Gymnasium: eigene Klasse 5 bis 13. Nach Klasse 4 fragt die Lernwelt im August, ob es jetzt Klasse 5 ist, und öffnet dann den Gymnasium-Bereich. Danach fragt der Bereich zu jedem neuen Schuljahr nach der Klasse", "Im Elternbereich unter „Schule“ lässt sich die Klasse am Gymnasium einstellen"] },
   { v: "5.5.0", d: "21.11.2026", t: ["Neu: Gymnasium Klasse 5 bis 10 als eigener Bereich mit schlichtem Look, nach dem Kerncurriculum Niedersachsen. Einschalten im Elternbereich unter „Schule“", "Klasse 5 ist fertig: Mathematik, Deutsch, Englisch, Biologie, Physik, Chemie, Erdkunde und Geschichte mit Erklärungen und acht Aufgabenarten"] },
   { v: "5.4.0", d: "21.11.2026", t: ["Malen nach Zahlen für lange Fahrten: Knopf „🚗 Autofahrt“ mit Wackelschutz, leisen Tönen, Bildschirm bleibt an und Augen-Pause alle 20 Minuten", "Wettrennen mit eigenen Namen, Siege über viele Runden, Pause und „Neues Bild“", "Ein ruhender Daumen am Rand stört das Malen nicht mehr"] },
   { v: "5.3.0", d: "21.11.2026", t: ["Malen nach Zahlen: 110 neue große Bilder in neuen Bereichen: Squishys, Hamburg, Cuxhaven und Nordsee, Freundschaft, Forschen und Entdecken, Teneriffa und Kanaren, dazu Fußball und Mandalas in Blau", "Zu zweit direkt aus der Bibliothek: „👫 Zu zweit“ einschalten und ein Bild antippen"] },
@@ -35119,8 +35130,12 @@ function klCheckYear() {
   const sj = klSchuljahr();
   if (S.profile.klasseJahr === sj) return false;
   const k = klasse();
+  if (k >= 4 && S.gym && S.gym.ich) { S.profile.klasseJahr = sj; save(); return false; }
   if (k >= 4) {
-    overlay(`<div class="kl-ov"><div class="kl-big">🏫</div><h2>Ein neues Schuljahr!</h2><p>Nach Klasse 4 geht es auf eine neue Schule. In deiner Lernwelt ist jetzt alles bis Klasse 4 offen, zum Wiederholen, Knobeln und Spielen.</p></div>
+
+    if (typeof gymKlasseSetzen === 'function' && !(S.gym && S.gym.ich)) overlay(`<div class="kl-ov"><div class="kl-big">🏫</div><h2>Ein neues Schuljahr!</h2><p>Schuljahr ${sj}: Bist du jetzt in <b>Klasse 5</b> auf deiner neuen Schule?</p><p class="muted">Dann öffnet sich der Gymnasium-Bereich. Alles bis Klasse 4 bleibt zum Wiederholen, Knobeln und Spielen offen.</p></div>
+      <div class="acts"><button class="btn ghost" data-act="kljahr" data-k="4">Nein, noch Klasse 4</button><button class="btn" data-act="klgym5">Ja, Klasse 5! 🎉</button></div>`);
+    else overlay(`<div class="kl-ov"><div class="kl-big">🏫</div><h2>Ein neues Schuljahr!</h2><p>Nach Klasse 4 geht es auf eine neue Schule. In deiner Lernwelt ist jetzt alles bis Klasse 4 offen, zum Wiederholen, Knobeln und Spielen.</p></div>
       <div class="acts"><button class="btn" data-act="kljahr" data-k="4">Super! 🎉</button></div>`);
   } else {
     overlay(`<div class="kl-ov"><div class="kl-big">🎒</div><h2>Ein neues Schuljahr beginnt!</h2><p>Schuljahr ${sj}: Bist du jetzt in <b>Klasse ${k + 1}</b>?</p></div>
@@ -112301,6 +112316,9 @@ ubWorldBtn = function (w) {
 
 
 
+
+
+
 const GYM_FAECHER = [
   { id: 'mathe', t: 'Mathematik', k: 'M', c: '#2f6fdb', ab: 5 },
   { id: 'deutsch', t: 'Deutsch', k: 'D', c: '#cf4436', ab: 5 },
@@ -112329,7 +112347,23 @@ function gymSt() {
   Object.keys(g.th).forEach(k => { const e = g.th[k]; if (!isObj(e) || !GYM_TIDX.has(k)) { delete g.th[k]; return; } e.b = Math.min(100, Math.max(0, Math.round(Number(e.b) || 0))); e.n = Math.max(0, Math.floor(Number(e.n) || 0)); });
   if (!Array.isArray(g.f)) g.f = [];
   g.f = g.f.filter(x => typeof x === 'string' && x.length < 80 && GYM_TIDX.has(x.split(':')[0])).slice(-150);
+  if ('ich' in g && !(Number.isInteger(g.ich) && g.ich >= 5 && g.ich <= 13)) delete g.ich;
+  if ('jahr' in g && !(typeof g.jahr === 'string' && /^\d{4}\/\d{2}$/.test(g.jahr))) delete g.jahr;
   return g;
+}
+const gymSJ = () => typeof klSchuljahr === 'function' ? klSchuljahr() : '';
+
+function gymKlasseSetzen(k) {
+  const st = gymSt(), alt = st.ich || 0; if (!(k >= 5 && k <= 13)) return false;
+  st.ich = k; st.jahr = gymSJ(); if (GYM_KLASSEN.includes(k)) st.kl = k; else st.kl = 10;
+  if (k > alt && typeof gymKlasseNeu === 'function') { try { gymKlasseNeu(k); } catch (e) { } }
+  save(); return true;
+}
+
+function gymJahrCheck() {
+  const st = gymSt(), sj = gymSJ(); if (!sj || !st.ich || st.jahr === sj || st.ich >= 13 || document.getElementById('overlay')) return;
+  overlay(`<h2>Ein neues Schuljahr!</h2><p>Schuljahr ${sj}: Bist du jetzt in Klasse ${st.ich + 1}?</p>
+    <div class="acts"><button class="btn ghost" data-act="gymjahr" data-k="${st.ich}">Nein, noch Klasse ${st.ich}</button><button class="btn" data-act="gymjahr" data-k="${st.ich + 1}">Ja, Klasse ${st.ich + 1}! 🎉</button></div>`);
 }
 function gymFachProzent(fid, kl) {
   const th = gymThemen(fid, kl), st = gymSt(); if (!th.length) return 0;
@@ -112408,8 +112442,9 @@ function gymHomeCard() {
     <span class="wdh-ct"><small>Weiterführende Schule</small><b>Gymnasium</b><span>Klasse ${st.kl}${n ? ` mit ${n} Fächern` : ''}, schlicht und ohne Ablenkung.</span></span><span class="wdh-cn" aria-hidden="true">›</span></button>`;
 }
 function gymParentsHTML() {
-  const an = gymAn();
-  return `<div class="row"><span class="lab">🎓 Gymnasium (Klasse 5 bis 10)<small>Eigener Bereich mit schlichterem Look für später, nach dem Kerncurriculum Gymnasium Niedersachsen. Zurzeit gibt es Klasse 5. Eingeschaltet erscheint die Karte „Gymnasium“ auf der Startseite.</small></span><button class="switch ${an ? 'on' : ''}" role="switch" aria-checked="${an}" aria-label="Gymnasium auf der Startseite zeigen" data-act="pgym"></button></div>`;
+  const an = gymAn(), ich = gymSt().ich || 0;
+  return `<div class="field" style="margin-top:12px"><span class="lab">Klasse am Gymnasium<small class="muted" style="display:block;font-size:13px">Wird nach Klasse 4 im August abgefragt und danach jedes Schuljahr. „noch nicht“ heißt: noch in der Grundschule.</small></span><div class="seg">${[0, 5, 6, 7, 8, 9, 10, 11, 12, 13].map(n => `<button class="${n === ich ? 'sel' : ''}" data-act="pgymkl" data-k="${n}">${n ? n : 'noch nicht'}</button>`).join('')}</div></div>
+    <div class="row"><span class="lab">🎓 Gymnasium (Klasse 5 bis 10)<small>Eigener Bereich mit schlichterem Look für später, nach dem Kerncurriculum Gymnasium Niedersachsen. Zurzeit gibt es Klasse 5. Eingeschaltet erscheint die Karte „Gymnasium“ auf der Startseite.</small></span><button class="switch ${an ? 'on' : ''}" role="switch" aria-checked="${an}" aria-label="Gymnasium auf der Startseite zeigen" data-act="pgym"></button></div>`;
 }
 function showGym() {
   stopTimers(); G = null; GYM = null; const st = gymSt(), kl = st.kl;
@@ -112421,12 +112456,14 @@ function showGym() {
   }).join('');
   setView(`<div class="gym"><div class="gym-wrap">
       <header class="gym-kopf"><button class="gym-zur" data-act="gymback" aria-label="Zurück zur Lernwelt">‹ Lernwelt</button></header>
-      <h1 class="gym-h1">Gymnasium</h1><p class="gym-sub">Kerncurriculum Niedersachsen · Klasse ${kl}</p>
+      <h1 class="gym-h1">Gymnasium</h1><p class="gym-sub">Kerncurriculum Niedersachsen · Klasse ${kl}${st.ich === kl ? ' · deine Klasse' : ''}</p>
+      ${typeof gymExtraKarte === 'function' ? (() => { try { return gymExtraKarte(); } catch (e) { return ''; } })() : ''}
       <div class="gym-kls" role="group" aria-label="Klasse">${GYM_KLASSEN.map(k => `<button class="gym-kl${k === kl ? ' an' : ''}" data-act="gymkl" data-k="${k}" aria-pressed="${k === kl}">${k}</button>`).join('')}</div>
       ${hat ? '' : `<p class="gym-hinweis">Klasse ${kl} ist noch in Arbeit. Fertig ist bisher Klasse 5.</p>`}
       <div class="gym-faecher">${kacheln}</div>
-      <p class="gym-fuss">Jede Runde hat 10 Aufgaben mit Erklärung. Eine gute Runde bringt Münzen für die Lernwelt. Der Fortschritt bleibt auf diesem Gerät und kommt mit in die Sicherung.</p>
+      <p class="gym-fuss">${st.ich > 10 ? `Du bist in Klasse ${st.ich}. Die Oberstufe kommt später dazu, bis dahin kannst du hier alles bis Klasse 10 wiederholen. ` : ''}Jede Runde hat 10 Aufgaben mit Erklärung. Eine gute Runde bringt Münzen für die Lernwelt. Der Fortschritt bleibt auf diesem Gerät und kommt mit in die Sicherung.</p>
     </div></div>`);
+  gymJahrCheck();
 }
 function showGymFach(fid) {
   const f = gymFach(fid); if (!f) return showGym();
@@ -112542,6 +112579,7 @@ function gymEnde() {
         <p class="gym-sterne" aria-label="${sterne} von 3 Sternen">${'★'.repeat(sterne)}<span>${'★'.repeat(3 - sterne)}</span></p>
         <p class="gym-muenz">${muenzen ? `+${muenzen} ${muenzen === 1 ? 'Münze' : 'Münzen'}${ziel ? ' (mit Tagesziel)' : ''}` : 'Ab 50 % gibt es Münzen.'}</p>
         <div class="gym-acts"><button class="gym-btn" data-act="gymnochmal">Neue Runde</button><button class="gym-btn ghost" data-act="gymfach" data-f="${f.id}">Zum Fach</button></div></div>
+      ${typeof gymExtraPS === 'function' ? (() => { try { return gymExtraPS(pct); } catch (e) { return ''; } })() : ''}
       ${falsch.length ? `<section class="gym-fliste"><h2>Das solltest du dir noch einmal ansehen</h2><ul>${falsch.map(L => `<li><span>${esc(L.q)}</span><b>${gymFmt(L.loesung)}</b></li>`).join('')}</ul>${P.log.some(L => !L.ok && L.id) ? '<p class="gym-sub">Diese Aufgaben kommen in „Fehler wiederholen“.</p>' : ''}</section>` : `<p class="gym-hinweis gym-perfekt">Alles richtig. Stark!</p>`}
     </div></div>`);
 }
@@ -112567,6 +112605,10 @@ Object.assign(ACT, {
   gymab: t => gymVerschieben(Number(t.dataset.i), 1),
   gymkat: t => { const P = GYM; if (!P || P.fertig) return; const i = Number(t.dataset.i), k = Number(t.dataset.k); P.cur.kat[i] = k; const r = t.parentElement; if (r) r.querySelectorAll('button').forEach((b, bi) => { b.classList.toggle('an', bi === k); b.setAttribute('aria-pressed', String(bi === k)); }); },
   gymmark: t => { const P = GYM; if (!P || P.fertig) return; const i = Number(t.dataset.i), s = P.cur.sel; s.has(i) ? s.delete(i) : s.add(i); t.classList.toggle('an', s.has(i)); t.setAttribute('aria-pressed', String(s.has(i))); },
+  pgymkl: t => { const k = Number(t.dataset.k), st = gymSt(); if (k === 0) { delete st.ich; delete st.jahr; save(); } else if (!gymKlasseSetzen(k)) return; t.parentElement.querySelectorAll('button').forEach(b => b.classList.toggle('sel', b === t)); toast(k ? `🎓 Klasse ${k} am Gymnasium` : 'Noch in der Grundschule.'); },
+  gymjahr: t => { const k = Number(t.dataset.k), st = gymSt(); closeOverlay(); if (k > (st.ich || 0)) { gymKlasseSetzen(k); try { confetti(60); Sound.win(); } catch (e) { } } else { st.jahr = gymSJ(); save(); } showGym(); },
+
+  klgym5: () => { closeOverlay(); S.settings.gymOn = true; if (S.profile) S.profile.klasseJahr = gymSJ() || S.profile.klasseJahr; gymKlasseSetzen(5); try { confetti(80); Sound.win(); } catch (e) { } toast('🎓 Willkommen am Gymnasium!'); showGym(); },
   pgym: t => { S.settings.gymOn = !gymAn(); save(); t.classList.toggle('on', gymAn()); t.setAttribute('aria-checked', String(gymAn())); toast(gymAn() ? '🎓 Gymnasium ist an: Die Karte steht auf der Startseite.' : 'Gymnasium ist aus.'); }
 });
 function gymVerschieben(pos, d) {
