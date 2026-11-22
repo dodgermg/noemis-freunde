@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-ffHHHYSdtQG+HTMYC+D/Im7aPHQE2maxrhE/STQySYU=' 'sha256-TLYms1WO3iTdHqLxV8E4gZXGDqZncuQToMEuRdDg6R8=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-y+M4hplmDM5RecrbQPBgCgM3fp4eBbsbUXc+mQbbQiw=' 'sha256-2YE/WNtkVf+4C8PKU6ZNTdjc4l33yVV+jmEAT++0j2s=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -4721,7 +4721,6 @@ button.cq-cell:active { transform: scale(.99); }
 .ubg-k p { margin: 0; font-size: 10.5pt; font-weight: 700; line-height: 1.25; }
 .ubg-k .ub-nr { flex: none; }
 .ubg-vis { flex: 1; min-height: 0; display: flex; align-items: center; justify-content: center; overflow: hidden; }
-.ubg-vis > * { zoom: .5; max-width: 200%; }
 .ubg-vis svg { max-height: 60mm; }
 .ubg-opts { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 1.2mm 2mm; }
 .ubg-opts.n2 { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
@@ -4731,6 +4730,26 @@ button.cq-cell:active { transform: scale(.99); }
 .ubg-ot svg, .ubg-ot img { max-height: 9mm; width: auto; vertical-align: middle; }
 .ubg-ot .eb-s { width: 7mm; height: 7mm; }
 .ubg-erg { display: flex; align-items: center; gap: 2mm; font-size: 10.5pt; font-weight: 700; }
+
+
+
+.ubg-vis { position: relative; }
+.ubg-in { position: absolute; left: 50%; top: 50%; width: 200%; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 5mm; transform: translate(-50%, -50%) scale(.5); transform-origin: 50% 50%; }
+.ubg-in > * { max-width: 100%; margin: 0; }
+
+.ubg-grid.ubg-vier { grid-template-rows: repeat(2, minmax(0, 1fr)); }
+.ubg-grid.ubg-breit { grid-template-columns: minmax(0, 1fr); }
+.ubg-grid.ubg-breit .ubg-opts, .ubg-grid.ubg-breit .ubg-opts.n2 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+.ubg-in .q-emoji { position: static; flex: none; font-size: 22mm; line-height: 1.05; filter: none; text-align: center; overflow-wrap: anywhere; }
+.ubg-in .q-emoji.sm { font-size: 18mm; }
+.ubg-in .q-emoji.multi { font-size: 14mm; }
+.ubg-in .q-emoji::before, .ubg-in .q-emoji::after { display: none; }
+.ubg-in .q-statement { flex: 0 1 auto; min-width: 0; font-size: 24pt; line-height: 1.3; text-align: left; overflow-wrap: anywhere; }
+.ubg-in .q-word { font-size: 30pt; overflow-wrap: anywhere; }
+.ubg-in .q-word.big { font-size: 38pt; }
+.ubg-in .q-sentence { font-size: 24pt; line-height: 1.45; }
+.ubg-in .q-text { font-size: 21pt; line-height: 1.4; padding: 3mm 5mm; }
 
 /* ---- style_eb310.css ---- */
 
@@ -10935,8 +10954,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '5.7.0';
-  var MAP = {"probe":0,"files":[[10925,"fehler_kern.js"],[11213,null],[11215,"data.js"],[11930,"data_more.js"],[12302,"data_su2.js"],[12529,"data_es.js"],[12897,"data_wissen.js"],[13098,"data_v21.js"],[13783,"data_v24.js"],[14271,"data_v25.js"],[14760,"data_v26.js"],[14859,"data_v29.js"],[15167,"data_v30.js"],[15501,"data_v31.js"],[15807,"data_kunst.js"],[16004,"data_v214.js"],[16107,"data_v216.js"],[16400,"schrift.js"],[16704,"eingabe.js"],[16915,"data_k34m.js"],[17433,"data_k34d.js"],[17787,"data_k34s.js"],[18241,"data_v224.js"],[19114,"data_v225w.js"],[19483,"data_v225k.js"],[19927,"data_herz.js"],[20281,"data_fb226.js"],[20424,"data_tf226.js"],[20631,"data_v227a.js"],[21731,"data_v227b.js"],[22685,"data_h28b.js"],[22725,"data_l28a.js"],[23591,"data_l28b.js"],[24771,"data_schaetz.js"],[25253,"data_party8.js"],[25303,"data_alce.js"],[25974,"data_alce2.js"],[26223,"data_alce3.js"],[26638,"registry.js"],[27152,"app.js"],[28429,"fun.js"],[29017,"fun2.js"],[29333,"atelier.js"],[29707,"kunst225.js"],[29897,"herz.js"],[30261,"reise.js"],[30563,"iglu.js"],[30729,"offline.js"],[30839,"party.js"],[31323,"meine.js"],[31679,"loeffel.js"],[31850,"trend.js"],[32392,"fun228a.js"],[33253,"fun228b.js"],[33930,"kueche.js"],[34969,"stimme.js"],[35024,"klassen.js"],[35177,"freunde_vorab.js"],[35198,"mut.js"],[35620,"schule.js"],[36109,"fussball226.js"],[36431,"schaetzen.js"],[36862,"party8.js"],[37481,"tiere.js"],[37940,"fussball232.js"],[38155,"party8b.js"],[38457,"weg.js"],[38678,"px.js"],[39098,"px_fein.js"],[39152,"px_data.js"],[39409,"pxwelt.js"],[39493,"px_abenteuer.js"],[40322,"px_abenteuer2.js"],[41076,"px_abenteuer3.js"],[41467,"px_abenteuer4.js"],[41677,"px_baukasten.js"],[41786,"px_abenteuer_fein.js"],[42003,"px_abenteuer_fein2.js"],[42355,"px_abenteuer5.js"],[42762,"px_abenteuer6.js"],[43038,"px_abenteuer7.js"],[43394,"px_level300.js"],[43945,"px_schwach300.js"],[44019,"px_zwei300.js"],[44133,"lumicheckt300.js"],[44326,"schreiben300.js"],[44540,"rechenkarte300.js"],[44660,"lerncheck300.js"],[44883,"material300.js"],[45213,"lernweg300.js"],[45737,"px_ski.js"],[46379,"px_wurf.js"],[46908,"px_insel.js"],[48109,"px_kicker.js"],[49044,"px_eis.js"],[50030,"px_run.js"],[51245,"px_brk.js"],[52207,"px_pol.js"],[53558,"px_frog.js"],[54818,"px_angel.js"],[56133,"px_golf.js"],[57167,"px_tauch.js"],[58432,"px_hockey.js"],[59388,"px_lab.js"],[60723,"px_plopp.js"],[61929,"px_stadion.js"],[63440,"px_stadion2.js"],[63492,"px_training.js"],[63861,"cm.js"],[64351,"cmwelt.js"],[64407,"cm_baeck.js"],[65200,"cm_bahn.js"],[65964,"cm_detek.js"],[66681,"cm_markt.js"],[67394,"ff.js"],[67551,"ff_mathe.js"],[69541,"ff_deutsch.js"],[71129,"ff_sach_a.js"],[73378,"ff_sach_b.js"],[75607,"ff_sprachen.js"],[78015,"zm.js"],[78928,"tt.js"],[79141,"data_tagebuch.js"],[79184,"data_hoerspiel.js"],[79343,"leseecke.js"],[79670,"kt.js"],[79973,"comicbuch.js"],[80251,"alce.js"],[80414,"alce_aufg.js"],[80605,"formen.js"],[81056,"data_formen.js"],[81297,"data_formen2.js"],[81519,"spielzeit.js"],[81741,"data_faktmeinung.js"],[81860,"data_es248.js"],[82124,"data_en249.js"],[82363,"data_wissen249.js"],[82794,"data_kunst249.js"],[83077,"data_fussball250.js"],[83201,"data_werte252.js"],[83454,"data_lesen252.js"],[83515,"data_k34_252.js"],[83601,"art254.js"],[83719,"data_werte255.js"],[83857,"data_lesen255.js"],[83993,"forscher255.js"],[84141,"zufall250.js"],[84187,"stufe259.js"],[84197,"advent.js"],[84460,"wdh.js"],[84558,"eswarm288.js"],[84609,"abwechslung294.js"],[84684,"bilder293a.js"],[84774,"bilder293b.js"],[84904,"bilder293c.js"],[85002,"bilder293d.js"],[85124,"bilder293e.js"],[85288,"bilder293f.js"],[85368,"bilder292.js"],[85814,"denk.js"],[85851,"data_viaje265.js"],[85994,"klassenarbeit.js"],[86127,"quizduell.js"],[86250,"neu267.js"],[86515,"prog.js"],[86620,"lernstand.js"],[86687,"blatt.js"],[86789,"uebung295.js"],[87110,"schuh296.js"],[87318,"uebung297.js"],[87705,"minus298.js"],[87946,"schrift299.js"],[88074,"data_es271.js"],[88188,"plus269.js"],[88282,"schach.js"],[88514,"schachtaktik.js"],[88766,"fun270.js"],[88929,"data_neu274.js"],[89138,"plus272.js"],[89192,"spiele274.js"],[89315,"kasten.js"],[89419,"erklaer.js"],[89532,"apa.js"],[89613,"neu276.js"],[89754,"spiele276.js"],[89804,"neu277.js"],[89982,"spiele277.js"],[90237,"lernen278.js"],[90497,"spiele278.js"],[90840,"lernen279.js"],[91165,"lernen279b.js"],[91563,"spanisch280.js"],[91855,"spanisch283.js"],[92088,"mehr281.js"],[92234,"grafik280.js"],[92613,"tiefsee280.js"],[92891,"abenteuer280.js"],[93103,"abenteuer281.js"],[93215,"design281.js"],[93347,"party281.js"],[93478,"grafik281.js"],[93695,"traumtor292.js"],[93902,"kart293.js"],[94179,"lumi_live.js"],[94295,"sicher.js"],[94479,"stil.js"],[94533,"zurueck287.js"],[94576,"nfbilder300.js"],[94739,"formen300.js"],[95346,"musik300.js"],[95517,"lernweg300b.js"],[95640,"lernweg300c.js"],[95800,"espanol300.js"],[95906,"fabel310_bild.js"],[96157,"fabel310.js"],[96548,"eisbude310.js"],[96774,"turbo310.js"],[96979,"sumo310.js"],[97114,"beifahrer310.js"],[97189,"dreier310.js"],[97305,"ring310.js"],[97414,"loch330.js"],[97764,"reise340.js"],[97834,"fisch340.js"],[98390,"rutsche340.js"],[98801,"knobel340.js"],[99039,"frucht350.js"],[99344,"vulkan350.js"],[99587,"delfin350.js"],[99782,"musik350.js"],[99952,"arcade360.js"],[100068,"strasse360.js"],[100364,"blasen360.js"],[100572,"meer360.js"],[100741,"spirale360.js"],[100905,"sterne360.js"],[101112,"alt360a.js"],[101382,"alt360b.js"],[101575,"alt360c.js"],[101829,"alt360d.js"],[101992,"alt370a.js"],[102189,"alt370b.js"],[102393,"alt370c.js"],[102531,"gl390.js"],[102774,"lauf390.js"],[103283,"ab3_level.js"],[103628,"abenteuer400.js"],[104122,"figuren410.js"],[104217,"kart410.js"],[104570,"show410.js"],[104885,"ball410.js"],[105198,"fussball420.js"],[105623,"farbe420.js"],[105904,"flug430.js"],[106094,"sport430.js"],[106465,"insel440.js"],[106745,"buddel440.js"],[107104,"party450.js"],[107512,"tiere450.js"],[107924,"malbuch460a.js"],[108247,"malbuch460b.js"],[108499,"malbuch460c.js"],[108604,"airhockey470.js"],[108881,"zwei480.js"],[108915,"minigolf480.js"],[109192,"schneeball480.js"],[109490,"billard480.js"],[109715,"kissen490.js"],[110061,"gleiter490.js"],[110435,"koch490.js"],[110869,"pxzwei501.js"],[110892,"belohnung311.js"],[111053,"belohnung480.js"],[111134,"einst502.js"],[111173,"pixmal510_bilder.js"],[111485,"pixmal530_bilder.js"],[111607,"pixmal510.js"],[112209,"druck311.js"],[112303,"gym550.js"],[112625,"gym550_mathe5.js"],[112893,"gym550_deutsch5.js"],[113095,"gym550_englisch5.js"],[113205,"gym550_nawi5.js"],[113468,"gym550_gesell5.js"],[113700,"gym550_mehr5.js"],[113854,"freunde.js"],[113991,"start.js"],[114001,null],[114011,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '5.7.1';
+  var MAP = {"probe":0,"files":[[10944,"fehler_kern.js"],[11232,null],[11234,"data.js"],[11949,"data_more.js"],[12321,"data_su2.js"],[12548,"data_es.js"],[12916,"data_wissen.js"],[13117,"data_v21.js"],[13802,"data_v24.js"],[14290,"data_v25.js"],[14779,"data_v26.js"],[14878,"data_v29.js"],[15186,"data_v30.js"],[15520,"data_v31.js"],[15826,"data_kunst.js"],[16023,"data_v214.js"],[16126,"data_v216.js"],[16419,"schrift.js"],[16723,"eingabe.js"],[16934,"data_k34m.js"],[17452,"data_k34d.js"],[17806,"data_k34s.js"],[18260,"data_v224.js"],[19133,"data_v225w.js"],[19502,"data_v225k.js"],[19946,"data_herz.js"],[20300,"data_fb226.js"],[20443,"data_tf226.js"],[20650,"data_v227a.js"],[21750,"data_v227b.js"],[22704,"data_h28b.js"],[22744,"data_l28a.js"],[23610,"data_l28b.js"],[24790,"data_schaetz.js"],[25272,"data_party8.js"],[25322,"data_alce.js"],[25993,"data_alce2.js"],[26242,"data_alce3.js"],[26657,"registry.js"],[27171,"app.js"],[28449,"fun.js"],[29037,"fun2.js"],[29353,"atelier.js"],[29727,"kunst225.js"],[29917,"herz.js"],[30281,"reise.js"],[30583,"iglu.js"],[30749,"offline.js"],[30859,"party.js"],[31343,"meine.js"],[31699,"loeffel.js"],[31870,"trend.js"],[32412,"fun228a.js"],[33273,"fun228b.js"],[33950,"kueche.js"],[34989,"stimme.js"],[35044,"klassen.js"],[35197,"freunde_vorab.js"],[35218,"mut.js"],[35640,"schule.js"],[36129,"fussball226.js"],[36451,"schaetzen.js"],[36882,"party8.js"],[37501,"tiere.js"],[37960,"fussball232.js"],[38175,"party8b.js"],[38477,"weg.js"],[38698,"px.js"],[39118,"px_fein.js"],[39172,"px_data.js"],[39429,"pxwelt.js"],[39513,"px_abenteuer.js"],[40342,"px_abenteuer2.js"],[41096,"px_abenteuer3.js"],[41487,"px_abenteuer4.js"],[41697,"px_baukasten.js"],[41806,"px_abenteuer_fein.js"],[42023,"px_abenteuer_fein2.js"],[42375,"px_abenteuer5.js"],[42782,"px_abenteuer6.js"],[43058,"px_abenteuer7.js"],[43414,"px_level300.js"],[43965,"px_schwach300.js"],[44039,"px_zwei300.js"],[44153,"lumicheckt300.js"],[44346,"schreiben300.js"],[44560,"rechenkarte300.js"],[44680,"lerncheck300.js"],[44903,"material300.js"],[45233,"lernweg300.js"],[45757,"px_ski.js"],[46399,"px_wurf.js"],[46928,"px_insel.js"],[48129,"px_kicker.js"],[49064,"px_eis.js"],[50050,"px_run.js"],[51265,"px_brk.js"],[52227,"px_pol.js"],[53578,"px_frog.js"],[54838,"px_angel.js"],[56153,"px_golf.js"],[57187,"px_tauch.js"],[58452,"px_hockey.js"],[59408,"px_lab.js"],[60743,"px_plopp.js"],[61949,"px_stadion.js"],[63460,"px_stadion2.js"],[63512,"px_training.js"],[63881,"cm.js"],[64371,"cmwelt.js"],[64427,"cm_baeck.js"],[65220,"cm_bahn.js"],[65984,"cm_detek.js"],[66701,"cm_markt.js"],[67414,"ff.js"],[67571,"ff_mathe.js"],[69561,"ff_deutsch.js"],[71149,"ff_sach_a.js"],[73398,"ff_sach_b.js"],[75627,"ff_sprachen.js"],[78035,"zm.js"],[78948,"tt.js"],[79161,"data_tagebuch.js"],[79204,"data_hoerspiel.js"],[79363,"leseecke.js"],[79690,"kt.js"],[79993,"comicbuch.js"],[80271,"alce.js"],[80434,"alce_aufg.js"],[80625,"formen.js"],[81076,"data_formen.js"],[81317,"data_formen2.js"],[81539,"spielzeit.js"],[81761,"data_faktmeinung.js"],[81880,"data_es248.js"],[82144,"data_en249.js"],[82383,"data_wissen249.js"],[82814,"data_kunst249.js"],[83097,"data_fussball250.js"],[83221,"data_werte252.js"],[83474,"data_lesen252.js"],[83535,"data_k34_252.js"],[83621,"art254.js"],[83739,"data_werte255.js"],[83877,"data_lesen255.js"],[84013,"forscher255.js"],[84161,"zufall250.js"],[84207,"stufe259.js"],[84217,"advent.js"],[84480,"wdh.js"],[84578,"eswarm288.js"],[84629,"abwechslung294.js"],[84704,"bilder293a.js"],[84794,"bilder293b.js"],[84924,"bilder293c.js"],[85022,"bilder293d.js"],[85144,"bilder293e.js"],[85308,"bilder293f.js"],[85388,"bilder292.js"],[85834,"denk.js"],[85871,"data_viaje265.js"],[86014,"klassenarbeit.js"],[86147,"quizduell.js"],[86270,"neu267.js"],[86535,"prog.js"],[86640,"lernstand.js"],[86707,"blatt.js"],[86809,"uebung295.js"],[87131,"schuh296.js"],[87339,"uebung297.js"],[87726,"minus298.js"],[87967,"schrift299.js"],[88095,"data_es271.js"],[88209,"plus269.js"],[88303,"schach.js"],[88535,"schachtaktik.js"],[88787,"fun270.js"],[88950,"data_neu274.js"],[89159,"plus272.js"],[89213,"spiele274.js"],[89336,"kasten.js"],[89440,"erklaer.js"],[89553,"apa.js"],[89634,"neu276.js"],[89775,"spiele276.js"],[89825,"neu277.js"],[90003,"spiele277.js"],[90258,"lernen278.js"],[90518,"spiele278.js"],[90861,"lernen279.js"],[91186,"lernen279b.js"],[91584,"spanisch280.js"],[91876,"spanisch283.js"],[92109,"mehr281.js"],[92255,"grafik280.js"],[92634,"tiefsee280.js"],[92912,"abenteuer280.js"],[93124,"abenteuer281.js"],[93236,"design281.js"],[93368,"party281.js"],[93499,"grafik281.js"],[93716,"traumtor292.js"],[93923,"kart293.js"],[94200,"lumi_live.js"],[94316,"sicher.js"],[94500,"stil.js"],[94554,"zurueck287.js"],[94597,"nfbilder300.js"],[94760,"formen300.js"],[95367,"musik300.js"],[95538,"lernweg300b.js"],[95661,"lernweg300c.js"],[95821,"espanol300.js"],[95927,"fabel310_bild.js"],[96178,"fabel310.js"],[96569,"eisbude310.js"],[96795,"turbo310.js"],[97000,"sumo310.js"],[97135,"beifahrer310.js"],[97210,"dreier310.js"],[97326,"ring310.js"],[97435,"loch330.js"],[97785,"reise340.js"],[97855,"fisch340.js"],[98411,"rutsche340.js"],[98822,"knobel340.js"],[99060,"frucht350.js"],[99365,"vulkan350.js"],[99608,"delfin350.js"],[99803,"musik350.js"],[99973,"arcade360.js"],[100089,"strasse360.js"],[100385,"blasen360.js"],[100593,"meer360.js"],[100762,"spirale360.js"],[100926,"sterne360.js"],[101133,"alt360a.js"],[101403,"alt360b.js"],[101596,"alt360c.js"],[101850,"alt360d.js"],[102013,"alt370a.js"],[102210,"alt370b.js"],[102414,"alt370c.js"],[102552,"gl390.js"],[102795,"lauf390.js"],[103304,"ab3_level.js"],[103649,"abenteuer400.js"],[104143,"figuren410.js"],[104238,"kart410.js"],[104591,"show410.js"],[104906,"ball410.js"],[105219,"fussball420.js"],[105644,"farbe420.js"],[105925,"flug430.js"],[106115,"sport430.js"],[106486,"insel440.js"],[106766,"buddel440.js"],[107125,"party450.js"],[107533,"tiere450.js"],[107945,"malbuch460a.js"],[108268,"malbuch460b.js"],[108520,"malbuch460c.js"],[108625,"airhockey470.js"],[108902,"zwei480.js"],[108936,"minigolf480.js"],[109213,"schneeball480.js"],[109511,"billard480.js"],[109736,"kissen490.js"],[110082,"gleiter490.js"],[110456,"koch490.js"],[110890,"pxzwei501.js"],[110913,"belohnung311.js"],[111074,"belohnung480.js"],[111155,"einst502.js"],[111194,"pixmal510_bilder.js"],[111506,"pixmal530_bilder.js"],[111628,"pixmal510.js"],[112230,"druck311.js"],[112412,"gym550.js"],[112734,"gym550_mathe5.js"],[113002,"gym550_deutsch5.js"],[113204,"gym550_englisch5.js"],[113314,"gym550_nawi5.js"],[113577,"gym550_gesell5.js"],[113809,"gym550_mehr5.js"],[113963,"freunde.js"],[114100,"start.js"],[114110,null],[114120,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -27153,9 +27172,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '5.7.0';
+const APP_VERSION = '5.7.1';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "5.7.1", d: "22.11.2026", t: ["Arbeitsblätter aus den Lernspielen: Bild und Satz jeder Aufgabe passen jetzt auch beim Drucken auf dem iPad in ihr Kästchen. Vorher lag dort manchmal der Kreis hinter dem Bild über dem Satzanfang", "Die Sätze auf diesen Blättern sind größer und besser lesbar. Ist eine Aufgabe zu groß für ihr Kästchen, wird sie etwas kleiner gedruckt statt abgeschnitten", "Blätter mit langen Lesetexten, Diagrammen, Fahrplänen, Karten oder Zahlenstrahlen haben jetzt 4 Aufgaben in großen Kästchen statt 8 in kleinen"] },
   { v: "5.7.0", d: "21.11.2026", t: ["Malen nach Zahlen: neuer Schalter „✨ Fehler ignorieren“. Ein Tipp mit der falschen Farbe tut dann einfach nichts, das Feld bleibt leer und wird nicht rot markiert"] },
   { v: "5.6.0", d: "21.11.2026", t: ["Gymnasium: eigene Klasse 5 bis 13. Nach Klasse 4 fragt die Lernwelt im August, ob es jetzt Klasse 5 ist, und öffnet dann den Gymnasium-Bereich. Danach fragt der Bereich zu jedem neuen Schuljahr nach der Klasse", "Im Elternbereich unter „Schule“ lässt sich die Klasse am Gymnasium einstellen"] },
   { v: "5.5.0", d: "21.11.2026", t: ["Neu: Gymnasium Klasse 5 bis 10 als eigener Bereich mit schlichtem Look, nach dem Kerncurriculum Niedersachsen. Einschalten im Elternbereich unter „Schule“", "Klasse 5 ist fertig: Mathematik, Deutsch, Englisch, Biologie, Physik, Chemie, Erdkunde und Geschichte mit Erklärungen und acht Aufgabenarten"] },
@@ -87010,6 +87030,7 @@ function ubDruckVor(nr, ids, los) { ubDruckVorRoh(ubSeitenHTML(nr, ids, los)); }
 function ubDruckVorRoh(html) {
   ubDruckWeg();
   const d = document.createElement('div'); d.id = 'ubDruck'; d.setAttribute('data-eb-aus', ''); d.innerHTML = html; document.body.appendChild(d);
+  if (typeof ubgEinpassen === 'function') { d.style.cssText = 'display:block;position:absolute;left:-99999px;top:0;visibility:hidden'; try { ubgEinpassen(d); } catch (e) {} d.style.cssText = ''; }
   const st = document.createElement('style'); st.id = 'ubPage'; st.textContent = '@page { size: A4 portrait; margin: 13mm; }'; document.head.appendChild(st);
   document.documentElement.classList.add('ub-drucken');
 }
@@ -87050,7 +87071,7 @@ function showUebung(fach, von) {
         <div class="acts"><button class="btn ghost" data-act="ubeltern">🔑 Für Erwachsene: Lösungen und Münzen</button></div></section>` : `<section class="card"><h2>Gedruckte Blätter</h2>
         ${u.liste.length ? `<p class="muted">Kontrolliere mit dem Lösungsblatt. Für jede geschaffte Seite gibt es ${plural(UB_MZ, 'Münze', 'Münzen')}. Die Münzen kann ${esc(S.profile.name || 'dein Kind')} auf der Startseite abholen.</p><ul class="ub-liste">${u.liste.slice(0, 20).map(ubEintrag).join('')}</ul>` : '<p class="muted">Noch keine. Sobald du Blätter druckst, stehen sie hier.</p>'}</section>`}
     </main>`, f);
-  const v = document.querySelector('.ub-vor'); if (v) { const w = v.clientWidth; v.style.setProperty('--z', Math.min(.6, Math.max(.28, w > 700 ? (w - 60) / 1520 : (w - 24) / 760)).toFixed(3)); }
+  const v = document.querySelector('.ub-vor'); if (v) { const w = v.clientWidth; v.style.setProperty('--z', Math.min(.6, Math.max(.28, w > 700 ? (w - 60) / 1520 : (w - 24) / 760)).toFixed(3)); if (typeof ubgEinpassen === 'function') ubgEinpassen(v); }
 }
 
 
@@ -112216,9 +112237,15 @@ if (typeof GAMES !== 'undefined') GAMES.pixmalen = { id: 'pixmalen', w: 'kunst',
 
 
 
+
 UB_FAECHER.push({ id: 'spanisch', t: 'Spanisch', i: '🇪🇸' }, { id: 'wissen', t: 'Wissen', i: '💡' });
 const UBG_FARBE = { mathe: ['#1971c2', '#e7f5ff'], deutsch: ['#c2255c', '#fff0f6'], sach: ['#2b8a3e', '#ebfbee'], englisch: ['#e8590c', '#fff4e6'], spanisch: ['#c92a2a', '#fff5f5'], wissen: ['#5f3dc4', '#f3f0ff'] };
 const UBG_N = 8, UBG_OK = {};
+
+
+
+const UBG_VIER = new Set(['ablesen', 'alcenav', 'alcerepaso', 'alceu1s3', 'alceu1s5', 'alceu2s1', 'alceu2s3', 'alceu2s5', 'alceu2s7', 'alceu3s3', 'alceu3s5', 'alceu3s7', 'alceyase3', 'aufgabepasst', 'bilddiagramm', 'daten', 'datenprofi', 'diagramm', 'englischkultur', 'fahrplan', 'hundertertafel', 'karte', 'kombinatorik', 'kopfgeometrie', 'leer34es', 'lesedetektiv', 'lesen34', 'lesestrategie', 'lesetext', 'paeckchen', 'planquadrat', 'readen', 'schneeeis', 'schreibwerkstatt', 'stromkreis', 'teekessel', 'textwissen', 'wahrscheinlich', 'wechselgeld', 'wetterstation', 'wuerfelnetz', 'zahlenhaus', 'zahlenraetsel']);
+const UBG_BREIT = new Set(['fexperimente', 'geheimcodes', 'geld', 'mterg', 'mthilfs', 'mtsprung', 'rechenkette', 'sachschritte', 'schriftdiv', 'schriftmal', 'traducir']);
 function ubgLv(gid) { const g = GAMES[gid], kl = Math.max(1, Math.min(4, klasse())); let lv = g.start ? g.start[kl - 1] || 1 : 1; return Math.max(1, Math.min(g.max || 1, lv)); }
 function ubgTaugt(q) {
   if (!q || !q.prompt || q.listen || q.snd || q.audio) return false;
@@ -112249,13 +112276,95 @@ function ubgListe(fach) {
 }
 const ubgText = (s, wahl) => String(s || '').replace(/\b[Tt]ippe (?:auf |an )?/g, m => wahl ? (m[0] === 'T' ? 'Kreuze an: ' : 'kreuze an: ') : (m[0] === 'T' ? 'Schreibe: ' : 'schreibe: ')).replace(/\btippen\b/g, 'ankreuzen');
 function ubgSeite(gid, r) {
-  const g = GAMES[gid], gr = GROUPS[g.g] || {}, fach = g.w, A = ubgAufgaben(gid, r, UBG_N), wahl = A.filter(q => q.kind === 'choice').length;
+  const g = GAMES[gid], gr = GROUPS[g.g] || {}, fach = g.w, lay = UBG_VIER.has(gid) ? ' ubg-vier' : UBG_BREIT.has(gid) ? ' ubg-breit' : '', A = ubgAufgaben(gid, r, lay ? 4 : UBG_N), wahl = A.filter(q => q.kind === 'choice').length;
   const tipp = wahl === A.length ? 'Lies jede Aufgabe genau und kreuze die richtige Antwort an.' : wahl ? 'Kreuze die richtige Antwort an oder schreibe das Ergebnis in das Kästchen.' : 'Rechne und schreibe das Ergebnis in das Kästchen.';
   return { titel: ubE(g.t), kopf: `${(ubFach(fach) || {}).t || ''} · ${klName(klasse())} · ${gr.t || ''}`, farbe: UBG_FARBE[fach] || UBG_FARBE.mathe, tipp,
-    html: los => `<div class="ubg-grid">${A.map((q, i) => `<div class="ubg-a"><div class="ubg-k"><span class="ub-nr">${i + 1}</span><p>${ubE(ubgText(q.prompt, q.kind === 'choice'))}</p></div>
-      ${q.visual ? `<div class="ubg-vis">${q.visual}</div>` : ''}
+    html: los => `<div class="ubg-grid${lay}">${A.map((q, i) => `<div class="ubg-a"><div class="ubg-k"><span class="ub-nr">${i + 1}</span><p>${ubE(ubgText(q.prompt, q.kind === 'choice'))}</p></div>
+      ${q.visual ? `<div class="ubg-vis"><div class="ubg-in">${q.visual}</div></div>` : ''}
       ${q.kind === 'choice' ? `<div class="ubg-opts n${q.options.length}">${q.options.map(o => `<div class="ubg-o"><span class="ubg-box">${los && o.ok ? '✗' : ''}</span><span class="ubg-ot">${o.html}</span></div>`).join('')}</div>`
         : `<div class="ubg-erg"><span>Ergebnis:</span>${ubK(los ? fmtN(q.answer) : '', los)}${q.unit ? `<span>${ubE(q.unit)}</span>` : ''}</div>`}</div>`).join('')}</div>` };
+}
+
+
+
+
+
+
+
+let UBG_VW = null;
+function ubgVwRegeln() {
+  if (UBG_VW) return UBG_VW; const idx = new Map(), add = (k, z) => { if (!idx.has(k)) idx.set(k, []); idx.get(k).push(z); };
+  const lauf = (rules, media) => { for (const r of rules) {
+    if (r.media && r.cssRules) { const m = r.media.mediaText || ''; if (/print/.test(m) && !/screen|all/.test(m)) continue; lauf(r.cssRules, media || /width|height|orientation|aspect/.test(m)); }
+    else if (r.selectorText && r.style) {
+      const pr = []; for (let i = 0; i < r.style.length; i++) { const k = r.style[i]; if (!k.startsWith('--') && (media || /\dv(w|h|min|max)\b/.test(r.style.getPropertyValue(k)))) pr.push(k); }
+      if (!pr.length) continue;
+      (/[()]/.test(r.selectorText) ? [r.selectorText] : r.selectorText.split(',')).forEach(t => {
+        t = t.trim(); if (!t || /::|:(before|after)\b/.test(t)) return;
+        const last = t.split(/[\s>+~]+/).pop() || '', c = /\.([\w-]+)/.exec(last), id = /#([\w-]+)/.exec(last), tag = /^([a-zA-Z][\w-]*)/.exec(last);
+        add(/[()]/.test(t) ? '*' : c ? '.' + c[1] : id ? '#' + id[1] : tag ? tag[1].toLowerCase() : '*', [t, pr]); });
+    }
+    else if (r.cssRules) lauf(r.cssRules, media); } };
+  for (const sh of document.styleSheets) { try { lauf(sh.cssRules, false); } catch (e) {} }
+  return (UBG_VW = idx);
+}
+
+function ubgEinfrieren(el) {
+  const R = ubgVwRegeln(), alle = [...el.querySelectorAll('*')].filter(e => !e.closest('svg') || e.tagName.toLowerCase() === 'svg');
+  const werte = alle.map(e => {
+    const pr = new Set(), kand = [...(R.get('*') || []), ...(R.get(e.tagName.toLowerCase()) || []), ...(e.id && R.get('#' + e.id) || [])];
+    e.classList.forEach(c => { const l = R.get('.' + c); if (l) kand.push(...l); });
+    kand.forEach(([sel, p]) => { try { if (e.matches(sel)) p.forEach(k => pr.add(k)); } catch (x) {} });
+    if (!pr.size) return []; const cs = getComputedStyle(e); return [...pr].map(k => [k, cs.getPropertyValue(k)]);
+  });
+  return () => alle.forEach((e, i) => werte[i].forEach(([k, v]) => { if (v) e.style.setProperty(k, v); }));
+}
+
+
+
+const UBG_MIN_PX = 12;
+function ubgGrundschrift(el) {
+  const L = [];
+  el.querySelectorAll('*').forEach(e => {
+    const n = [...e.childNodes].reduce((a, k) => a + (k.nodeType === 3 ? k.textContent.trim().length : 0), 0); if (n < 2) return;
+    let f = parseFloat(getComputedStyle(e).fontSize) || 16; const sv = e.closest('svg');
+    if (sv) { const vb = sv.viewBox && sv.viewBox.baseVal, w = sv.getBoundingClientRect().width; if (vb && vb.width && w) f *= w / vb.width; }
+    if (f > 0) L.push([f, n]);
+  });
+  if (!L.length) return 1e9;
+  L.sort((a, b) => a[0] - b[0]); const halb = L.reduce((a, x) => a + x[1], 0) / 2; let z = 0;
+  for (const [f, n] of L) { z += n; if (z >= halb) return f; }
+  return L[L.length - 1][0];
+}
+
+function ubgMessen(el) {
+  const rv = el.parentNode.getBoundingClientRect(), re = el.getBoundingClientRect();
+  let l = Infinity, t = Infinity, r = -Infinity, b = -Infinity;
+  [...el.children].forEach(c => { const k = c.getBoundingClientRect(); if (!k.width && !k.height) return; l = Math.min(l, k.left); t = Math.min(t, k.top); r = Math.max(r, k.right); b = Math.max(b, k.bottom); });
+  if (!rv.width || !rv.height || !re.width || !re.height || !(r > l && b > t)) return null;
+  const ziel = Math.max(.5, Math.min(1, UBG_MIN_PX / ubgGrundschrift(el))), sw = rv.width * .97 / (r - l), sh = rv.height * .97 / (b - t), s = Math.min(ziel, sw, sh),
+    ox = re.left + re.width / 2, oy = re.top + re.height / 2,
+    dx = rv.left + rv.width / 2 - ox - s * ((l + r) / 2 - ox), dy = rv.top + rv.height / 2 - oy - s * ((t + b) / 2 - oy);
+  return { s, ziel, sw, sh, w: r - l, h: b - t, W: rv.width, H: rv.height,
+    tf: `translate(${(dx / re.width * 100 - 50).toFixed(2)}%, ${(dy / re.height * 100 - 50).toFixed(2)}%) scale(${s.toFixed(3)})` };
+}
+function ubgEinpassen(root) {
+  if (!root) return;
+  const schreib = [...root.querySelectorAll('.ubg-a')].map(a => { try { return ubgEinfrieren(a); } catch (e) { return () => {}; } });
+  schreib.forEach(f => f());
+  const L = [...root.querySelectorAll('.ubg-in')];
+  L.forEach(el => { el.style.transform = 'translate(-50%, -50%)'; });
+  const M = L.map(ubgMessen);
+
+
+  const breiter = L.map((el, i) => { const m = M[i]; if (!m || m.s >= m.ziel - .01 || m.sh >= m.sw) return 0;
+    const f = Math.min(2, Math.sqrt(m.h * m.W / (m.w * m.H))); return f > 1.08 ? f : 0; });
+  L.forEach((el, i) => { if (breiter[i]) el.style.width = (200 * breiter[i]).toFixed(1) + '%'; });
+  const M2 = L.map((el, i) => breiter[i] ? ubgMessen(el) : null);
+  L.forEach((el, i) => {
+    let m = M[i]; if (M2[i] && M2[i].s > m.s * 1.03) m = M2[i]; else if (breiter[i]) el.style.width = '';
+    el.style.transform = m ? m.tf : '';
+  });
 }
 
 (function () {
@@ -112277,7 +112386,7 @@ let UBG_AUF = {};
     else box.insertAdjacentHTML('beforebegin', '<h3 class="ubg-t">📘 Seiten wie aus dem Schulheft</h3>');
     const gruppen = []; L.forEach(t => { const g = GAMES[t.gen].g; let x = gruppen.find(y => y[0] === g); if (!x) gruppen.push(x = [g, []]); x[1].push(t); });
     const ord = Object.keys(GROUPS); gruppen.sort((a, b) => ord.indexOf(a[0]) - ord.indexOf(b[0]));
-    const html = `<h3 class="ubg-t">🎲 Seiten aus den Lernspielen <small>${L.length}&nbsp;Bereiche</small></h3><p class="muted">Jeder Bereich ist eine Seite mit ${UBG_N} Aufgaben, passend zur ${klName(klasse())}. Tippe ein Thema an, dann die Bereiche.</p>
+    const html = `<h3 class="ubg-t">🎲 Seiten aus den Lernspielen <small>${L.length}&nbsp;Bereiche</small></h3><p class="muted">Jeder Bereich ist eine Seite mit ${UBG_N} Aufgaben (mit großen Bildern oder Lesetexten 4), passend zur ${klName(klasse())}. Tippe ein Thema an, dann die Bereiche.</p>
       <div class="ubg-gruppen">${gruppen.map(([g, ts]) => { const k = ts.filter(t => u.wahl.includes(t.id)).length; return `<details class="ubg-gr" data-g="${g}" ${UBG_AUF[g] || k ? 'open' : ''}><summary>${esc((GROUPS[g] || {}).t || g)} <small>${ts.length}${k ? ` · ${k} ✓` : ''}</small></summary>
         <div class="ka-chips">${ts.map(t => `<button class="ka-chip ${u.wahl.includes(t.id) ? 'sel' : ''}" data-act="ubth" data-id="${t.id}" aria-pressed="${u.wahl.includes(t.id)}"><span aria-hidden="true">${t.i}</span> ${esc(t.t)}</button>`).join('')}</div></details>`; }).join('')}</div>`;
     const alle = document.querySelector('.ub-alle'); (alle || box).insertAdjacentHTML('afterend', html);
