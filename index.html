@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-GrVdqCz9nZtXtGFnFokd2qyYSN3v66yi/DQG6TcPa5Q=' 'sha256-F6hycnHcJLjXbcM3ic7c9mMknKQN/hYCL3981em1Jow=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-w8wSr/UrSIob52THSuULgESBe7yhgIaSR7GZfmHY1hc=' 'sha256-dZPgvJxKdyaWfqly1yBSiyYoHcKI0e1RIhf6uVmHQrc=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -7084,7 +7084,7 @@ body.calm .l28b-guest .l28b-animal, body.calm .l28b-ball.pop, body.calm .l28b-tu
 .amb-karte { display: flex; flex-direction: column; gap: 6px; padding: 8px; border-radius: var(--r-md); background: var(--surface); border: 3px solid var(--line); box-shadow: var(--shadow); }
 .amb-karte.sel { border-color: var(--w, var(--kunst)); box-shadow: 0 0 0 3px var(--w-soft, var(--kunst-soft)); }
 .amb-bild { position: relative; display: block; width: 100%; padding: 0; border: 0; border-radius: 10px; overflow: hidden; background: #fff; cursor: pointer; aspect-ratio: 736 / 1080; }
-.amb-bild svg { display: block; width: 100%; height: 100%; pointer-events: none; }
+.amb-bild svg, .amb-bild img.mk-bild { display: block; width: 100%; height: 100%; pointer-events: none; }
 .amb-haken { position: absolute; top: 8px; right: 8px; width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center; background: var(--w, var(--kunst)); color: #fff; font: 900 20px var(--f-body); opacity: 0; transform: scale(.6); transition: opacity .15s, transform .15s; }
 .amb-karte.sel .amb-haken { opacity: 1; transform: scale(1); }
 .amb-unter { display: flex; flex-direction: column; gap: 6px; }
@@ -11019,8 +11019,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '5.8.0';
-  var MAP = {"probe":0,"files":[[11009,"fehler_kern.js"],[11297,null],[11299,"data.js"],[12014,"data_more.js"],[12386,"data_su2.js"],[12613,"data_es.js"],[12981,"data_wissen.js"],[13182,"data_v21.js"],[13867,"data_v24.js"],[14355,"data_v25.js"],[14844,"data_v26.js"],[14943,"data_v29.js"],[15251,"data_v30.js"],[15585,"data_v31.js"],[15891,"data_kunst.js"],[16088,"data_v214.js"],[16191,"data_v216.js"],[16484,"schrift.js"],[16788,"eingabe.js"],[16999,"data_k34m.js"],[17517,"data_k34d.js"],[17871,"data_k34s.js"],[18325,"data_v224.js"],[19198,"data_v225w.js"],[19567,"data_v225k.js"],[20011,"data_herz.js"],[20365,"data_fb226.js"],[20508,"data_tf226.js"],[20715,"data_v227a.js"],[21815,"data_v227b.js"],[22769,"data_h28b.js"],[22809,"data_l28a.js"],[23675,"data_l28b.js"],[24855,"data_schaetz.js"],[25337,"data_party8.js"],[25387,"data_alce.js"],[26058,"data_alce2.js"],[26307,"data_alce3.js"],[26722,"registry.js"],[27236,"app.js"],[28515,"fun.js"],[29103,"fun2.js"],[29419,"atelier.js"],[29793,"kunst225.js"],[29983,"herz.js"],[30347,"reise.js"],[30649,"iglu.js"],[30815,"offline.js"],[30925,"party.js"],[31409,"meine.js"],[31765,"loeffel.js"],[31936,"trend.js"],[32478,"fun228a.js"],[33339,"fun228b.js"],[34016,"kueche.js"],[35055,"stimme.js"],[35110,"klassen.js"],[35263,"freunde_vorab.js"],[35284,"mut.js"],[35706,"schule.js"],[36195,"fussball226.js"],[36517,"schaetzen.js"],[36948,"party8.js"],[37567,"tiere.js"],[38026,"fussball232.js"],[38241,"party8b.js"],[38543,"weg.js"],[38764,"px.js"],[39184,"px_fein.js"],[39238,"px_data.js"],[39495,"pxwelt.js"],[39579,"px_abenteuer.js"],[40408,"px_abenteuer2.js"],[41162,"px_abenteuer3.js"],[41553,"px_abenteuer4.js"],[41763,"px_baukasten.js"],[41872,"px_abenteuer_fein.js"],[42089,"px_abenteuer_fein2.js"],[42441,"px_abenteuer5.js"],[42848,"px_abenteuer6.js"],[43124,"px_abenteuer7.js"],[43480,"px_level300.js"],[44031,"px_schwach300.js"],[44105,"px_zwei300.js"],[44219,"lumicheckt300.js"],[44412,"schreiben300.js"],[44626,"rechenkarte300.js"],[44746,"lerncheck300.js"],[44969,"material300.js"],[45299,"lernweg300.js"],[45823,"px_ski.js"],[46465,"px_wurf.js"],[46994,"px_insel.js"],[48195,"px_kicker.js"],[49130,"px_eis.js"],[50116,"px_run.js"],[51331,"px_brk.js"],[52293,"px_pol.js"],[53644,"px_frog.js"],[54904,"px_angel.js"],[56219,"px_golf.js"],[57253,"px_tauch.js"],[58518,"px_hockey.js"],[59474,"px_lab.js"],[60809,"px_plopp.js"],[62015,"px_stadion.js"],[63526,"px_stadion2.js"],[63578,"px_training.js"],[63947,"cm.js"],[64437,"cmwelt.js"],[64493,"cm_baeck.js"],[65286,"cm_bahn.js"],[66050,"cm_detek.js"],[66767,"cm_markt.js"],[67480,"ff.js"],[67637,"ff_mathe.js"],[69627,"ff_deutsch.js"],[71215,"ff_sach_a.js"],[73464,"ff_sach_b.js"],[75693,"ff_sprachen.js"],[78101,"zm.js"],[79014,"tt.js"],[79227,"data_tagebuch.js"],[79270,"data_hoerspiel.js"],[79429,"leseecke.js"],[79756,"kt.js"],[80059,"comicbuch.js"],[80337,"alce.js"],[80500,"alce_aufg.js"],[80691,"formen.js"],[81142,"data_formen.js"],[81383,"data_formen2.js"],[81605,"spielzeit.js"],[81827,"data_faktmeinung.js"],[81946,"data_es248.js"],[82210,"data_en249.js"],[82449,"data_wissen249.js"],[82880,"data_kunst249.js"],[83163,"data_fussball250.js"],[83287,"data_werte252.js"],[83540,"data_lesen252.js"],[83601,"data_k34_252.js"],[83687,"art254.js"],[83805,"data_werte255.js"],[83943,"data_lesen255.js"],[84079,"forscher255.js"],[84227,"zufall250.js"],[84273,"stufe259.js"],[84283,"advent.js"],[84546,"wdh.js"],[84644,"eswarm288.js"],[84695,"abwechslung294.js"],[84770,"bilder293a.js"],[84860,"bilder293b.js"],[84990,"bilder293c.js"],[85088,"bilder293d.js"],[85210,"bilder293e.js"],[85374,"bilder293f.js"],[85454,"bilder292.js"],[85900,"denk.js"],[85937,"data_viaje265.js"],[86080,"klassenarbeit.js"],[86213,"quizduell.js"],[86336,"neu267.js"],[86601,"prog.js"],[86706,"lernstand.js"],[86773,"blatt.js"],[86875,"uebung295.js"],[87197,"schuh296.js"],[87405,"uebung297.js"],[87792,"minus298.js"],[88033,"schrift299.js"],[88161,"data_es271.js"],[88275,"plus269.js"],[88369,"schach.js"],[88601,"schachtaktik.js"],[88853,"fun270.js"],[89016,"data_neu274.js"],[89225,"plus272.js"],[89279,"spiele274.js"],[89402,"kasten.js"],[89506,"erklaer.js"],[89619,"apa.js"],[89700,"neu276.js"],[89841,"spiele276.js"],[89891,"neu277.js"],[90069,"spiele277.js"],[90324,"lernen278.js"],[90584,"spiele278.js"],[90927,"lernen279.js"],[91252,"lernen279b.js"],[91650,"spanisch280.js"],[91942,"spanisch283.js"],[92175,"mehr281.js"],[92321,"grafik280.js"],[92700,"tiefsee280.js"],[92978,"abenteuer280.js"],[93190,"abenteuer281.js"],[93302,"design281.js"],[93434,"party281.js"],[93565,"grafik281.js"],[93782,"traumtor292.js"],[93989,"kart293.js"],[94266,"lumi_live.js"],[94382,"sicher.js"],[94566,"stil.js"],[94620,"zurueck287.js"],[94663,"nfbilder300.js"],[94826,"formen300.js"],[95433,"musik300.js"],[95604,"lernweg300b.js"],[95727,"lernweg300c.js"],[95887,"espanol300.js"],[95993,"fabel310_bild.js"],[96244,"fabel310.js"],[96635,"eisbude310.js"],[96861,"turbo310.js"],[97066,"sumo310.js"],[97201,"beifahrer310.js"],[97276,"dreier310.js"],[97392,"ring310.js"],[97501,"loch330.js"],[97851,"reise340.js"],[97921,"fisch340.js"],[98477,"rutsche340.js"],[98888,"knobel340.js"],[99126,"frucht350.js"],[99431,"vulkan350.js"],[99674,"delfin350.js"],[99869,"musik350.js"],[100039,"arcade360.js"],[100155,"strasse360.js"],[100451,"blasen360.js"],[100659,"meer360.js"],[100828,"spirale360.js"],[100992,"sterne360.js"],[101199,"alt360a.js"],[101469,"alt360b.js"],[101662,"alt360c.js"],[101916,"alt360d.js"],[102079,"alt370a.js"],[102276,"alt370b.js"],[102480,"alt370c.js"],[102618,"gl390.js"],[102861,"lauf390.js"],[103370,"ab3_level.js"],[103715,"abenteuer400.js"],[104209,"figuren410.js"],[104304,"kart410.js"],[104657,"show410.js"],[104972,"ball410.js"],[105285,"fussball420.js"],[105710,"farbe420.js"],[105991,"flug430.js"],[106181,"sport430.js"],[106552,"insel440.js"],[106832,"buddel440.js"],[107191,"party450.js"],[107599,"tiere450.js"],[108011,"malbuch460a.js"],[108334,"malbuch460b.js"],[108586,"malbuch460c.js"],[108691,"airhockey470.js"],[108968,"zwei480.js"],[109002,"minigolf480.js"],[109279,"schneeball480.js"],[109577,"billard480.js"],[109802,"kissen490.js"],[110148,"gleiter490.js"],[110522,"koch490.js"],[110956,"pxzwei501.js"],[110979,"belohnung311.js"],[111140,"belohnung480.js"],[111221,"einst502.js"],[111260,"pixmal510_bilder.js"],[111572,"pixmal530_bilder.js"],[111694,"pixmal510.js"],[112296,"druck311.js"],[112478,"zwei580.js"],[112665,"gym550.js"],[112987,"gym550_mathe5.js"],[113255,"gym550_deutsch5.js"],[113457,"gym550_englisch5.js"],[113567,"gym550_nawi5.js"],[113830,"gym550_gesell5.js"],[114062,"gym550_mehr5.js"],[114216,"freunde.js"],[114353,"start.js"],[114363,null],[114373,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '5.9.0';
+  var MAP = {"probe":0,"files":[[11009,"fehler_kern.js"],[11297,null],[11299,"data.js"],[12014,"data_more.js"],[12386,"data_su2.js"],[12613,"data_es.js"],[12981,"data_wissen.js"],[13182,"data_v21.js"],[13867,"data_v24.js"],[14355,"data_v25.js"],[14844,"data_v26.js"],[14943,"data_v29.js"],[15251,"data_v30.js"],[15585,"data_v31.js"],[15891,"data_kunst.js"],[16088,"data_v214.js"],[16191,"data_v216.js"],[16484,"schrift.js"],[16788,"eingabe.js"],[16999,"data_k34m.js"],[17517,"data_k34d.js"],[17871,"data_k34s.js"],[18325,"data_v224.js"],[19198,"data_v225w.js"],[19567,"data_v225k.js"],[20011,"data_herz.js"],[20365,"data_fb226.js"],[20508,"data_tf226.js"],[20715,"data_v227a.js"],[21815,"data_v227b.js"],[22769,"data_h28b.js"],[22809,"data_l28a.js"],[23675,"data_l28b.js"],[24855,"data_schaetz.js"],[25337,"data_party8.js"],[25387,"data_alce.js"],[26058,"data_alce2.js"],[26307,"data_alce3.js"],[26722,"registry.js"],[27236,"app.js"],[28516,"fun.js"],[29104,"fun2.js"],[29420,"atelier.js"],[29794,"kunst225.js"],[29984,"herz.js"],[30348,"reise.js"],[30650,"iglu.js"],[30816,"offline.js"],[30926,"party.js"],[31410,"meine.js"],[31766,"loeffel.js"],[31937,"trend.js"],[32479,"fun228a.js"],[33340,"fun228b.js"],[34017,"kueche.js"],[35056,"stimme.js"],[35111,"klassen.js"],[35264,"freunde_vorab.js"],[35285,"mut.js"],[35707,"schule.js"],[36196,"fussball226.js"],[36518,"schaetzen.js"],[36949,"party8.js"],[37568,"tiere.js"],[38027,"fussball232.js"],[38242,"party8b.js"],[38544,"weg.js"],[38765,"px.js"],[39185,"px_fein.js"],[39239,"px_data.js"],[39496,"pxwelt.js"],[39580,"px_abenteuer.js"],[40409,"px_abenteuer2.js"],[41163,"px_abenteuer3.js"],[41554,"px_abenteuer4.js"],[41764,"px_baukasten.js"],[41873,"px_abenteuer_fein.js"],[42090,"px_abenteuer_fein2.js"],[42442,"px_abenteuer5.js"],[42849,"px_abenteuer6.js"],[43125,"px_abenteuer7.js"],[43481,"px_level300.js"],[44032,"px_schwach300.js"],[44106,"px_zwei300.js"],[44220,"lumicheckt300.js"],[44413,"schreiben300.js"],[44627,"rechenkarte300.js"],[44747,"lerncheck300.js"],[44970,"material300.js"],[45300,"lernweg300.js"],[45824,"px_ski.js"],[46466,"px_wurf.js"],[46995,"px_insel.js"],[48196,"px_kicker.js"],[49131,"px_eis.js"],[50117,"px_run.js"],[51332,"px_brk.js"],[52294,"px_pol.js"],[53645,"px_frog.js"],[54905,"px_angel.js"],[56220,"px_golf.js"],[57254,"px_tauch.js"],[58519,"px_hockey.js"],[59475,"px_lab.js"],[60810,"px_plopp.js"],[62016,"px_stadion.js"],[63527,"px_stadion2.js"],[63579,"px_training.js"],[63948,"cm.js"],[64438,"cmwelt.js"],[64494,"cm_baeck.js"],[65287,"cm_bahn.js"],[66051,"cm_detek.js"],[66768,"cm_markt.js"],[67481,"ff.js"],[67638,"ff_mathe.js"],[69628,"ff_deutsch.js"],[71216,"ff_sach_a.js"],[73465,"ff_sach_b.js"],[75694,"ff_sprachen.js"],[78102,"zm.js"],[79015,"tt.js"],[79228,"data_tagebuch.js"],[79271,"data_hoerspiel.js"],[79430,"leseecke.js"],[79757,"kt.js"],[80060,"comicbuch.js"],[80338,"alce.js"],[80501,"alce_aufg.js"],[80692,"formen.js"],[81143,"data_formen.js"],[81384,"data_formen2.js"],[81606,"spielzeit.js"],[81828,"data_faktmeinung.js"],[81947,"data_es248.js"],[82211,"data_en249.js"],[82450,"data_wissen249.js"],[82881,"data_kunst249.js"],[83164,"data_fussball250.js"],[83288,"data_werte252.js"],[83541,"data_lesen252.js"],[83602,"data_k34_252.js"],[83688,"art254.js"],[83806,"data_werte255.js"],[83944,"data_lesen255.js"],[84080,"forscher255.js"],[84228,"zufall250.js"],[84274,"stufe259.js"],[84284,"advent.js"],[84547,"wdh.js"],[84645,"eswarm288.js"],[84696,"abwechslung294.js"],[84771,"bilder293a.js"],[84861,"bilder293b.js"],[84991,"bilder293c.js"],[85089,"bilder293d.js"],[85211,"bilder293e.js"],[85375,"bilder293f.js"],[85455,"bilder292.js"],[85901,"denk.js"],[85938,"data_viaje265.js"],[86081,"klassenarbeit.js"],[86214,"quizduell.js"],[86337,"neu267.js"],[86602,"prog.js"],[86707,"lernstand.js"],[86774,"blatt.js"],[86876,"uebung295.js"],[87198,"schuh296.js"],[87406,"uebung297.js"],[87793,"minus298.js"],[88034,"schrift299.js"],[88162,"data_es271.js"],[88276,"plus269.js"],[88370,"schach.js"],[88602,"schachtaktik.js"],[88854,"fun270.js"],[89017,"data_neu274.js"],[89226,"plus272.js"],[89280,"spiele274.js"],[89403,"kasten.js"],[89507,"erklaer.js"],[89620,"apa.js"],[89701,"neu276.js"],[89842,"spiele276.js"],[89892,"neu277.js"],[90070,"spiele277.js"],[90325,"lernen278.js"],[90585,"spiele278.js"],[90928,"lernen279.js"],[91253,"lernen279b.js"],[91651,"spanisch280.js"],[91943,"spanisch283.js"],[92176,"mehr281.js"],[92322,"grafik280.js"],[92701,"tiefsee280.js"],[92979,"abenteuer280.js"],[93191,"abenteuer281.js"],[93303,"design281.js"],[93435,"party281.js"],[93566,"grafik281.js"],[93783,"traumtor292.js"],[93990,"kart293.js"],[94267,"lumi_live.js"],[94383,"sicher.js"],[94567,"stil.js"],[94621,"zurueck287.js"],[94664,"nfbilder300.js"],[94827,"formen300.js"],[95434,"musik300.js"],[95605,"lernweg300b.js"],[95728,"lernweg300c.js"],[95888,"espanol300.js"],[95994,"fabel310_bild.js"],[96245,"fabel310.js"],[96636,"eisbude310.js"],[96862,"turbo310.js"],[97067,"sumo310.js"],[97202,"beifahrer310.js"],[97277,"dreier310.js"],[97393,"ring310.js"],[97502,"loch330.js"],[97852,"reise340.js"],[97922,"fisch340.js"],[98478,"rutsche340.js"],[98889,"knobel340.js"],[99127,"frucht350.js"],[99432,"vulkan350.js"],[99675,"delfin350.js"],[99870,"musik350.js"],[100040,"arcade360.js"],[100156,"strasse360.js"],[100452,"blasen360.js"],[100660,"meer360.js"],[100829,"spirale360.js"],[100993,"sterne360.js"],[101200,"alt360a.js"],[101470,"alt360b.js"],[101663,"alt360c.js"],[101917,"alt360d.js"],[102080,"alt370a.js"],[102277,"alt370b.js"],[102481,"alt370c.js"],[102619,"gl390.js"],[102862,"lauf390.js"],[103371,"ab3_level.js"],[103716,"abenteuer400.js"],[104210,"figuren410.js"],[104305,"kart410.js"],[104658,"show410.js"],[104973,"ball410.js"],[105286,"fussball420.js"],[105711,"farbe420.js"],[105992,"flug430.js"],[106182,"sport430.js"],[106553,"insel440.js"],[106833,"buddel440.js"],[107192,"party450.js"],[107600,"tiere450.js"],[108012,"malbuch460a.js"],[108335,"malbuch460b.js"],[108587,"malbuch460c.js"],[108692,"malkunst590.js"],[109233,"airhockey470.js"],[109510,"zwei480.js"],[109544,"minigolf480.js"],[109821,"schneeball480.js"],[110119,"billard480.js"],[110344,"kissen490.js"],[110690,"gleiter490.js"],[111064,"koch490.js"],[111498,"pxzwei501.js"],[111521,"belohnung311.js"],[111682,"belohnung480.js"],[111763,"einst502.js"],[111802,"pixmal510_bilder.js"],[112114,"pixmal530_bilder.js"],[112236,"pixmal510.js"],[112838,"druck311.js"],[113020,"zwei580.js"],[113207,"gym550.js"],[113529,"gym550_mathe5.js"],[113797,"gym550_deutsch5.js"],[113999,"gym550_englisch5.js"],[114109,"gym550_nawi5.js"],[114372,"gym550_gesell5.js"],[114604,"gym550_mehr5.js"],[114758,"freunde.js"],[114895,"start.js"],[114905,null],[114915,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -27237,9 +27237,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '5.8.0';
+const APP_VERSION = '5.9.0';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "5.9.0", d: "22.11.2026", t: ["Neue Ausmalbilder in viel feinerer Zeichnung: Muster-Bilder mit Eule, Katze, Fuchs, Igel, Hase, Schnecke, Schildkröte, Schmetterling, Einhorn, Fisch, Wal, Lumi und einem Fußball vor dem Tor", "Neu: Pracht-Mandalas mit Blütenblättern in zwei Lagen, Spitzenbögen, Perlen und kleinen Mandalas in den Ecken", "Jedes Bild gibt es in drei Stufen (Einfach, Normal, Viele Details) und immer wieder neu gemischt"] },
   { v: "5.8.0", d: "22.11.2026", t: ["Neu bei den Mathe-Arbeitsblättern: Spiele zu zweit zum Ausdrucken. Tic-Tac-Toe sowie drei, vier und fünf in einer Reihe: In jedem Feld steht eine Aufgabe, wer richtig rechnet, malt das Feld an. Ein Lösungsstreifen zum Prüfen ist unten auf dem Blatt", "Neu: Geburtstagsparty. Rund um einen Tisch sitzen Gäste mit Zahlen. Würfeln, rechnen und den passenden Platz anmalen, die längste Reihe nebeneinander gewinnt", "Alle Spiele gibt es in fünf Stufen: bis 20 plus, bis 20 plus und minus, bis 100, Einmaleins und bis 1000"] },
   { v: "5.7.1", d: "22.11.2026", t: ["Arbeitsblätter aus den Lernspielen: Bild und Satz jeder Aufgabe passen jetzt auch beim Drucken auf dem iPad in ihr Kästchen. Vorher lag dort manchmal der Kreis hinter dem Bild über dem Satzanfang", "Die Sätze auf diesen Blättern sind größer und besser lesbar. Ist eine Aufgabe zu groß für ihr Kästchen, wird sie etwas kleiner gedruckt statt abgeschnitten", "Blätter mit langen Lesetexten, Diagrammen, Fahrplänen, Karten oder Zahlenstrahlen haben jetzt 4 Aufgaben in großen Kästchen statt 8 in kleinen"] },
   { v: "5.7.0", d: "21.11.2026", t: ["Malen nach Zahlen: neuer Schalter „✨ Fehler ignorieren“. Ein Tipp mit der falschen Farbe tut dann einfach nichts, das Feld bleibt leer und wird nicht rot markiert"] },
@@ -108687,6 +108688,547 @@ Object.assign(ACT, {
   ambsaveback: () => { closeOverlay(); const svg = ambMalSvg(); if (!svg) return showMalbuch(); svgExport(svg, 552, 810, url => { if (url) galAdd(url, 'ausmalen', false, null); showMalbuch(); }); },
   ambleave: () => { closeOverlay(); if (AMB_MAL) AMB_MAL.dirty = false; showMalbuch(); }
 });
+
+/*@@src malkunst590.js@@*/
+
+
+
+
+
+
+
+
+const MK_MX = 368, MK_MY = 489, MK_X0 = 14, MK_Y0 = 14, MK_X1 = 722, MK_Y1 = 964;
+const MK_W = { dick: 4.6, mittel: 2.7, fein: 1.7 };
+let MK_UID = 0;
+const mkN = v => +(+v).toFixed(1);
+const mkPt = (r, a) => [r * Math.sin(a * Math.PI / 180), -r * Math.cos(a * Math.PI / 180)];
+const mkPfad = (d, w = MK_W.mittel, extra = '') => `<path d="${d}" stroke-width="${w}"${extra}/>`;
+const mkKreis = (x, y, r, w = MK_W.mittel) => `<circle cx="${mkN(x)}" cy="${mkN(y)}" r="${mkN(r)}" stroke-width="${w}"/>`;
+const mkLinie = (d, w = MK_W.fein) => `<path d="${d}" fill="none" stroke-width="${w}"/>`;
+const mkDreh = (cx, cy, a, inner) => `<g transform="rotate(${mkN(a)} ${mkN(cx)} ${mkN(cy)})">${inner}</g>`;
+const mkSchieb = (x, y, inner, s = 1, a = 0) => `<g transform="translate(${mkN(x)} ${mkN(y)})${a ? ` rotate(${mkN(a)})` : ''}${s !== 1 ? ` scale(${+s.toFixed(3)})` : ''}">${inner}</g>`;
+
+function mkClip(form, inner) {
+  const id = 'mkc' + (++MK_UID);
+  return form + `<clipPath id="${id}">${form}</clipPath><g clip-path="url(#${id})">${inner}</g>`;
+}
+const mkPoly = P => 'M' + P.map(([x, y]) => `${mkN(x)} ${mkN(y)}`).join(' L') + ' Z';
+
+
+const MK_RING = {
+  blatt: (r1, r2, w, d) => {
+    const t = r2 - r1, a = mkPfad(`M0 ${mkN(-r1)} C${mkN(w * .62)} ${mkN(-r1 - t * .22)} ${mkN(w * .46)} ${mkN(-r2 + t * .28)} 0 ${mkN(-r2)} C${mkN(-w * .46)} ${mkN(-r2 + t * .28)} ${mkN(-w * .62)} ${mkN(-r1 - t * .22)} 0 ${mkN(-r1)} Z`);
+    if (!d) return a;
+    const i1 = r1 + t * .14, i2 = r2 - t * .3, ti = i2 - i1, wi = w * .5;
+    return a + mkPfad(`M0 ${mkN(-i1)} C${mkN(wi * .62)} ${mkN(-i1 - ti * .22)} ${mkN(wi * .46)} ${mkN(-i2 + ti * .28)} 0 ${mkN(-i2)} C${mkN(-wi * .46)} ${mkN(-i2 + ti * .28)} ${mkN(-wi * .62)} ${mkN(-i1 - ti * .22)} 0 ${mkN(-i1)} Z`, MK_W.fein)
+      + (d > 1 ? mkLinie(`M0 ${mkN(-i2)} L0 ${mkN(-r2 + t * .08)}`) + mkKreis(0, -(i1 + ti * .38), Math.min(wi * .2, ti * .12), MK_W.fein) : '');
+  },
+  lotus: (r1, r2, w, d) => {
+    const t = r2 - r1, h = w / 2;
+    const P = k => `M${mkN(-h * k)} ${mkN(-r1)} C${mkN(-h * k * 1.15)} ${mkN(-r1 - t * .7 * k)} ${mkN(-h * k * .55)} ${mkN(-r1 - t * k)} 0 ${mkN(-r1 - t * k)} C${mkN(h * k * .55)} ${mkN(-r1 - t * k)} ${mkN(h * k * 1.15)} ${mkN(-r1 - t * .7 * k)} ${mkN(h * k)} ${mkN(-r1)} Z`;
+    return mkPfad(P(1)) + (d ? mkPfad(P(.62), MK_W.fein) : '') + (d > 1 ? mkPfad(P(.3), MK_W.fein) : '');
+  },
+  tropfen: (r1, r2, w, d) => {
+    const t = r2 - r1, h = Math.min(w * .48, t * .42), cy = -r1 - h * 1.05;
+    const a = mkPfad(`M0 ${mkN(-r2)} C${mkN(h * .55)} ${mkN(-r2 + t * .3)} ${mkN(h * 1.05)} ${mkN(cy - h * .2)} ${mkN(h)} ${mkN(cy)} A${mkN(h)} ${mkN(h)} 0 1 1 ${mkN(-h)} ${mkN(cy)} C${mkN(-h * 1.05)} ${mkN(cy - h * .2)} ${mkN(-h * .55)} ${mkN(-r2 + t * .3)} 0 ${mkN(-r2)} Z`);
+    return a + (d ? mkKreis(0, cy, h * .55, MK_W.fein) : '') + (d > 1 ? mkKreis(0, cy, h * .22, MK_W.fein) : '');
+  },
+  bogen: (r1, r2, w, d, n) => {
+    const t = r2 - r1, a = Math.PI / n, B = k => { const [x1, y1] = [-r1 * Math.sin(a * k), -r1 * Math.cos(a * k)], [x2] = [r1 * Math.sin(a * k)], h = t * 1.3 * k;
+      return `M${mkN(x1)} ${mkN(y1)} C${mkN(x1)} ${mkN(y1 - h)} ${mkN(x2)} ${mkN(y1 - h)} ${mkN(x2)} ${mkN(y1)} Z`; };
+    return mkPfad(B(1)) + (d ? mkPfad(B(.62), MK_W.fein) : '') + (d > 1 ? mkKreis(0, -r1 - t * .22, Math.min(r1 * a * .14, t * .1), MK_W.fein) : '');
+  },
+  perlen: (r1, r2, w, d) => { const t = r2 - r1, rr = Math.min(w * .4, t * .4); return mkKreis(0, -(r1 + r2) / 2, rr, MK_W.fein + .4) + (d ? mkKreis(0, -(r1 + r2) / 2, rr * .45, MK_W.fein) : ''); },
+  zacken: (r1, r2, w, d, n) => {
+    const a = Math.PI / n, P = (r, b) => [r * Math.sin(b), -r * Math.cos(b)];
+    return mkPfad(mkPoly([P(r1, -a), P(r2, 0), P(r1, a)]), MK_W.fein + .4) + mkPfad(mkPoly([P(r2, 0), P(r1, a), P(r2, 2 * a)]), MK_W.fein + .4)
+      + (d > 1 ? mkKreis(0, -(r1 * .66 + r2 * .34), Math.min(r1 * a * .3, (r2 - r1) * .11), MK_W.fein) : '');
+  },
+  herz: (r1, r2, w, d) => {
+    const t = r2 - r1, a = Math.min(w * .5, t * .5), u = -r1 - t * .1, o = -r1 - t * .95;
+    const H = k => { const b = a * k, m = (u + o) / 2, uu = m + (u - m) * k, oo = m + (o - m) * k; return `M0 ${mkN(oo + b * .35)} C${mkN(b * .35)} ${mkN(oo - b * .25)} ${mkN(b * 1.15)} ${mkN(oo)} ${mkN(b * 1.0)} ${mkN((oo + uu) / 2)} C${mkN(b * .9)} ${mkN(uu - b * .3)} ${mkN(b * .3)} ${mkN(uu - b * .1)} 0 ${mkN(uu)} C${mkN(-b * .3)} ${mkN(uu - b * .1)} ${mkN(-b * .9)} ${mkN(uu - b * .3)} ${mkN(-b)} ${mkN((oo + uu) / 2)} C${mkN(-b * 1.15)} ${mkN(oo)} ${mkN(-b * .35)} ${mkN(oo - b * .25)} 0 ${mkN(oo + b * .35)} Z`; };
+    return mkPfad(H(1)) + (d ? mkPfad(H(.5), MK_W.fein) : '');
+  },
+  stern: (r1, r2, w, d) => {
+    const t = r2 - r1, h = w * .42;
+    return mkPfad(`M0 ${mkN(-r1)} L${mkN(h)} ${mkN(-r1 - t * .45)} L0 ${mkN(-r2)} L${mkN(-h)} ${mkN(-r1 - t * .45)} Z`) + (d ? mkPfad(`M0 ${mkN(-r1 - t * .18)} L${mkN(h * .45)} ${mkN(-r1 - t * .45)} L0 ${mkN(-r2 + t * .18)} L${mkN(-h * .45)} ${mkN(-r1 - t * .45)} Z`, MK_W.fein) : '');
+  },
+  blaetter: (r1, r2, w, d) => {
+    const t = r2 - r1, L = sg => { const bx = 0, by = -r1 - t * .04, ex = sg * w * .42, ey = -r2 + t * .04, mx = (bx + ex) / 2, my = (by + ey) / 2, len = Math.hypot(ex - bx, ey - by), nx = -(ey - by) / len, ny = (ex - bx) / len, o = len * .26;
+      return mkPfad(`M${mkN(bx)} ${mkN(by)} Q${mkN(mx + nx * o)} ${mkN(my + ny * o)} ${mkN(ex)} ${mkN(ey)} Q${mkN(mx - nx * o)} ${mkN(my - ny * o)} ${mkN(bx)} ${mkN(by)} Z`, MK_W.fein + .5) + (d ? mkLinie(`M${mkN(bx)} ${mkN(by)} L${mkN(bx + (ex - bx) * .82)} ${mkN(by + (ey - by) * .82)}`) : ''); };
+    return L(1) + L(-1);
+  },
+  kachel: (r1, r2, w, d, n) => {
+    const a = Math.PI / n, P = (r, b) => [r * Math.sin(b), -r * Math.cos(b)], rm = (r1 + r2) / 2, rr = Math.min(rm * a, (r2 - r1) / 2);
+    return mkPfad(mkPoly([P(r1, -a), P(r1, a), P(r2, a), P(r2, -a)]), MK_W.fein + .4) + (d ? mkKreis(0, -rm, rr * .55, MK_W.fein) : '') + (d > 1 ? mkKreis(0, -rm, rr * .22, MK_W.fein) : '');
+  }
+};
+
+function mkRing(cx, cy, typ, r1, r2, n, ph, d, grund) {
+  const w = 2 * Math.PI * (r1 + r2) / 2 / n * .9, el = MK_RING[typ](r1, r2, w, d, n);
+  let s = grund ? mkKreis(cx, cy, r2, MK_W.mittel) : '';
+  for (let k = 0; k < n; k++) s += `<g transform="translate(${mkN(cx)} ${mkN(cy)}) rotate(${mkN(ph + k * 360 / n)})">${el}</g>`;
+  return s;
+}
+
+
+const MK_MANDALA_TITEL = ['Blüten-Mandala', 'Stern-Mandala', 'Spitzen-Mandala', 'Lotus-Mandala', 'Zauber-Mandala', 'Sonnen-Mandala', 'Herz-Mandala', 'Juwelen-Mandala'];
+function mkMandala(cx, cy, R, nr, stufe, r, klein) {
+  const sym = klein ? r.pick([8, 10, 12]) : [8, r.pick([10, 12]), r.pick([12, 16])][stufe];
+  const BLUETE = ['blatt', 'lotus', 'tropfen', 'blatt', 'lotus', 'stern', 'blaetter', 'herz'], BAND = ['bogen', 'perlen', 'zacken', 'kachel', 'bogen'];
+  const ringe = klein ? 3 : [5, 7, 8][stufe], r0 = klein ? R * .22 : [70, 58, 52][stufe], d = klein ? 1 : stufe === 0 ? 1 : 2;
+
+  const typen = []; let vb = '', vB = '';
+  for (let i = 0; i < ringe; i++) {
+    const bluete = i === ringe - 1 || (i % 2 === (ringe - 1) % 2);
+    let t; do { t = r.pick(bluete ? (i === ringe - 1 ? ['blatt', 'lotus', 'tropfen', 'blatt'] : BLUETE) : BAND); } while (t === (bluete ? vb : vB));
+    if (bluete) vb = t; else vB = t; typen.push(t);
+  }
+  const gew = typen.map((t, i) => (BAND.includes(t) ? (t === 'perlen' ? .5 : .7) : 1.5) * (i === ringe - 1 ? 1.25 : 1) * (.85 + r.f() * .3)), summe = gew.reduce((a, b) => a + b, 0);
+  const R2 = []; let acc = r0; gew.forEach(g => { acc += (R - r0) * g / summe; R2.push(acc); });
+  const plan = typen.map((typ, i) => {
+    const r1 = i ? R2[i - 1] : r0, r2 = R2[i], t = r2 - r1, minB = klein ? 22 : [32, 24, 19][stufe], umf = Math.PI * (r1 + r2);
+    let m = 1; while (umf / (sym * (m + 1)) >= Math.max(minB, t * (typ === 'perlen' ? 1 : BAND.includes(typ) ? .7 : .42)) && m < 4) m++;
+    return { typ, r1, r2, n: sym * m, ph: i % 2 ? 180 / (sym * m) : 0 };
+  });
+  let s = '';
+  for (let i = ringe - 1; i >= 0; i--) {
+    const p = plan[i], blume = !BAND.includes(p.typ), t = p.r2 - p.r1;
+    if (blume && ['blatt', 'lotus', 'tropfen'].includes(p.typ) && (i === ringe - 1 || r.f() < .6)) {
+      const ext = i === ringe - 1 ? Math.min(t * .18, R * .06) : t * .12;
+      s += (i < ringe - 1 ? mkKreis(cx, cy, p.r2 + ext * .2, MK_W.mittel) : '') + mkRing(cx, cy, p.typ === 'tropfen' ? 'blatt' : p.typ, p.r1 + t * .05, p.r2 + ext, p.n, p.ph + 180 / p.n, d > 1 ? 1 : 0, false);
+      s += mkRing(cx, cy, p.typ, p.r1, p.r2 - t * .06, p.n, p.ph, d, false);
+    } else s += mkRing(cx, cy, p.typ, p.r1, p.r2, p.n, p.ph, d, !blume || i < ringe - 1);
+  }
+
+  s += mkKreis(cx, cy, r0, MK_W.mittel) + mkRing(cx, cy, 'blatt', r0 * .3, r0 * .97, sym, 180 / sym, 0, false) + mkRing(cx, cy, 'blatt', r0 * .3, r0 * .82, sym, 0, klein ? 0 : 1, false)
+    + mkKreis(cx, cy, r0 * .32, MK_W.mittel) + mkKreis(cx, cy, r0 * .14, MK_W.fein);
+  return s;
+}
+function mkMandalaSeite(nr, stufe) {
+  const r = ambRng(nr * 7717 + stufe * 101 + 5), R = 338;
+  let s = '';
+
+  const E = [[MK_X0 + 36, MK_Y0 + 36], [MK_X1 - 36, MK_Y0 + 36], [MK_X0 + 36, MK_Y1 - 36], [MK_X1 - 36, MK_Y1 - 36]];
+  E.forEach(([x, y]) => { s += mkMandala(x, y, stufe === 0 ? 112 : 124, nr, stufe, ambRng(nr * 31 + 7), true); });
+  [[MK_MX, MK_Y0 + 4], [MK_MX, MK_Y1 - 4]].forEach(([x, y]) => { s += mkMandala(x, y, stufe === 0 ? 74 : 92, nr + 3, 1, ambRng(nr * 53 + 3), true); });
+  s += mkMandala(MK_MX, MK_MY, R, nr, stufe, r, false);
+  return { innen: s, titel: MK_MANDALA_TITEL[nr % MK_MANDALA_TITEL.length] + ` Nr. ${nr + 1}` };
+}
+
+
+const MK_F = MK_W.fein;
+function mkGitter(B, gx, gy, versatz, f) {
+  let s = ''; if (!(gx > 2 && gy > 2)) return s; const [x0, y0, x1, y1] = B;
+  for (let j = 0, y = y0 - gy; y < y1 + gy; j++, y += gy) for (let x = x0 - gx + (versatz && j % 2 ? gx / 2 : 0); x < x1 + gx; x += gx) s += f(x, y, j);
+  return s;
+}
+const mkHerzD = (x, y, a) => `M${mkN(x)} ${mkN(y + a * .9)} C${mkN(x - a * 1.3)} ${mkN(y)} ${mkN(x - a * .9)} ${mkN(y - a * .95)} ${mkN(x)} ${mkN(y - a * .35)} C${mkN(x + a * .9)} ${mkN(y - a * .95)} ${mkN(x + a * 1.3)} ${mkN(y)} ${mkN(x)} ${mkN(y + a * .9)} Z`;
+const mkSternD = (x, y, r1, r2, k = 5, rot = 0) => { const P = []; for (let i = 0; i < k * 2; i++) { const a = (rot - 90 + i * 180 / k) * Math.PI / 180, r = i % 2 ? r2 : r1; P.push([x + Math.cos(a) * r, y + Math.sin(a) * r]); } return mkPoly(P); };
+const mkWelle = (x0, x1, y, A, L, ph, rueck) => { const P = []; for (let x = x0; x <= x1 + .1; x += L / 8) P.push([x, y + A * Math.sin((x / L) * 2 * Math.PI + ph)]); return rueck ? P.reverse() : P; };
+const MK_MUSTER = {
+  schuppen: (B, g) => { const h = g * .52; let s = ''; const [x0, y0, x1, y1] = B; const rows = [];
+    for (let j = 0, y = y0 - h; y < y1 + h; j++, y += h * .62) rows.push([y, j]);
+    rows.reverse().forEach(([y, j]) => { for (let x = x0 - g + (j % 2 ? g / 2 : 0); x < x1 + g; x += g) s += mkPfad(`M${mkN(x - h)} ${mkN(y)} C${mkN(x - h)} ${mkN(y + h * 1.25)} ${mkN(x + h)} ${mkN(y + h * 1.25)} ${mkN(x + h)} ${mkN(y)} Z`, MK_F); });
+    return s; },
+  kreise: (B, g, d) => mkGitter(B, g, g * .87, true, (x, y) => mkKreis(x, y, g * .36, MK_F) + (d ? mkKreis(x, y, g * .15, MK_F) : '')),
+  punkte: (B, g) => mkGitter(B, g * .62, g * .54, true, (x, y) => mkKreis(x, y, g * .1, MK_F)),
+  streifen: (B, g) => { const [x0, y0, x1, y1] = B, cx = (x0 + x1) / 2, cy = (y0 + y1) / 2, R = Math.hypot(x1 - x0, y1 - y0) / 2 + g; let s = '';
+    for (let y = -R; y < R; y += g) s += mkPfad(mkPoly([[-R, y], [R, y], [R, y + g * .45], [-R, y + g * .45]]), MK_F);
+    return `<g transform="translate(${mkN(cx)} ${mkN(cy)}) rotate(-35)">${s}</g>`; },
+  zickzack: (B, g) => { const [x0, y0, x1, y1] = B; let s = '';
+    for (let y = y0 - g; y < y1 + g; y += g) { const P = [], Q = []; for (let x = x0 - g, k = 0; x <= x1 + g; x += g / 2, k++) { P.push([x, y + (k % 2 ? g * .3 : 0)]); Q.push([x, y + g * .45 + (k % 2 ? g * .3 : 0)]); } s += mkPfad(mkPoly(P.concat(Q.reverse())), MK_F); }
+    return s; },
+  wellen: (B, g) => { const [x0, y0, x1, y1] = B; let s = '';
+    for (let y = y0 - g; y < y1 + g; y += g) s += mkPfad(mkPoly(mkWelle(x0 - g, x1 + g, y, g * .22, g * 1.6, 0).concat(mkWelle(x0 - g, x1 + g, y + g * .42, g * .22, g * 1.6, 0, true))), MK_F);
+    return s; },
+  herzen: (B, g) => mkGitter(B, g, g * .9, true, (x, y) => mkPfad(mkHerzD(x, y, g * .3), MK_F)),
+  blumen: (B, g, d) => mkGitter(B, g, g * .9, true, (x, y) => { let s = ''; for (let k = 0; k < 5; k++) { const a = k * 72 * Math.PI / 180; s += `<ellipse cx="${mkN(x + Math.sin(a) * g * .2)}" cy="${mkN(y - Math.cos(a) * g * .2)}" rx="${mkN(g * .12)}" ry="${mkN(g * .2)}" transform="rotate(${k * 72} ${mkN(x + Math.sin(a) * g * .2)} ${mkN(y - Math.cos(a) * g * .2)})" stroke-width="${MK_F}"/>`; } return s + mkKreis(x, y, g * .09, MK_F); }),
+  blaetter: (B, g) => mkGitter(B, g * .8, g * .62, true, (x, y, j) => { const a = j % 2 ? 40 : -40; return `<g transform="translate(${mkN(x)} ${mkN(y)}) rotate(${a})">${mkPfad(`M0 ${mkN(-g * .3)} Q${mkN(g * .2)} 0 0 ${mkN(g * .3)} Q${mkN(-g * .2)} 0 0 ${mkN(-g * .3)} Z`, MK_F)}${mkLinie(`M0 ${mkN(-g * .22)} L0 ${mkN(g * .22)}`, 1.1)}</g>`; }),
+  karo: (B, g) => mkGitter(B, g * .7, g * .7, false, (x, y, j) => ((Math.round(x / (g * .7)) + j) % 2 ? mkPfad(mkPoly([[x, y - g * .35], [x + g * .35, y], [x, y + g * .35], [x - g * .35, y]]), MK_F) : '')),
+  waben: (B, g) => mkGitter(B, g * .87, g * .75, true, (x, y) => { const P = []; for (let k = 0; k < 6; k++) { const a = (k * 60 + 30) * Math.PI / 180; P.push([x + Math.cos(a) * g * .5, y + Math.sin(a) * g * .5]); } return mkPfad(mkPoly(P), MK_F); }),
+  spiralen: (B, g) => mkGitter(B, g * 1.1, g, true, (x, y) => { let d = ''; for (let k = 0; k <= 26; k++) { const a = k * .5, rr = g * .03 + k * g * .014; d += (k ? ' L' : 'M') + `${mkN(x + Math.cos(a) * rr)} ${mkN(y + Math.sin(a) * rr)}`; } return mkLinie(d) + mkKreis(x + g * .5, y + g * .4, g * .07, MK_F); }),
+  sterne: (B, g) => mkGitter(B, g, g * .9, true, (x, y, j) => mkPfad(mkSternD(x, y, g * .32, g * .14, 5, j * 17), MK_F)),
+  tropfen: (B, g) => mkGitter(B, g * .75, g * .8, true, (x, y) => mkPfad(`M${mkN(x)} ${mkN(y - g * .32)} C${mkN(x + g * .1)} ${mkN(y - g * .1)} ${mkN(x + g * .22)} ${mkN(y + g * .05)} ${mkN(x + g * .2)} ${mkN(y + g * .14)} A${mkN(g * .2)} ${mkN(g * .2)} 0 0 1 ${mkN(x - g * .2)} ${mkN(y + g * .14)} C${mkN(x - g * .22)} ${mkN(y + g * .05)} ${mkN(x - g * .1)} ${mkN(y - g * .1)} ${mkN(x)} ${mkN(y - g * .32)} Z`, MK_F)),
+  boegen: (B, g) => mkGitter(B, g, g * .55, true, (x, y) => mkPfad(`M${mkN(x - g * .45)} ${mkN(y)} A${mkN(g * .45)} ${mkN(g * .45)} 0 0 1 ${mkN(x + g * .45)} ${mkN(y)} Z`, MK_F) + mkPfad(`M${mkN(x - g * .25)} ${mkN(y)} A${mkN(g * .25)} ${mkN(g * .25)} 0 0 1 ${mkN(x + g * .25)} ${mkN(y)} Z`, MK_F)),
+  kringel: (B, g) => { const [x0, y0, x1, y1] = B; let s = '';
+    for (let y = y0; y < y1 + g; y += g * .8) { let d = `M${mkN(x0 - g)} ${mkN(y)}`; for (let x = x0 - g; x < x1 + g; x += g * .5) d += ` C${mkN(x + g * .35)} ${mkN(y)} ${mkN(x + g * .4)} ${mkN(y - g * .32)} ${mkN(x + g * .25)} ${mkN(y - g * .32)} C${mkN(x + g * .1)} ${mkN(y - g * .32)} ${mkN(x + g * .15)} ${mkN(y)} ${mkN(x + g * .5)} ${mkN(y)}`; s += mkLinie(d); }
+    return s; },
+  karos: (B, g) => mkGitter(B, g * .6, g * .6, false, (x, y, j) => ((Math.round(x / (g * .6)) + j) % 2 ? mkPfad(mkPoly([[x, y], [x + g * .6, y], [x + g * .6, y + g * .6], [x, y + g * .6]]), MK_F) : ''))
+};
+const MK_MUSTER_ALLE = Object.keys(MK_MUSTER);
+
+
+function mkBaender(B, n, winkel, g, r, d, muster) {
+  const [x0, y0, x1, y1] = B, cx = (x0 + x1) / 2, cy = (y0 + y1) / 2, R = Math.hypot(x1 - x0, y1 - y0) / 2 + 10;
+  const grenzen = [-R - 20]; for (let k = 1; k < n; k++) grenzen.push(-R + 2 * R * k / n + (r.f() - .5) * R / n * .5); grenzen.push(R + 20);
+  const A = g * .5, L = R * .9; let s = ''; let vor = '';
+  for (let k = 0; k < n; k++) {
+    const oben = mkWelle(-R - 20, R + 20, grenzen[k], k ? A : 0, L, k * 1.7), unten = mkWelle(-R - 20, R + 20, grenzen[k + 1], k < n - 1 ? A : 0, L, (k + 1) * 1.7, true);
+    const form = mkPfad(mkPoly(oben.concat(unten)), MK_W.mittel);
+    let typ; do { typ = r.pick(muster || MK_MUSTER_ALLE); } while (typ === vor && (muster || MK_MUSTER_ALLE).length > 1); vor = typ;
+    const leer = d === 0 && k % 2 === 1;
+    const BB = [-R - 20, grenzen[k] - A - g, R + 20, grenzen[k + 1] + A + g];
+    s += leer ? form : mkClip(form, MK_MUSTER[typ](BB, g, d));
+  }
+  return `<g transform="translate(${mkN(cx)} ${mkN(cy)}) rotate(${mkN(winkel)})">${s}</g>`;
+}
+
+const mkZone = (d, box, typ, g, det, w = MK_W.mittel) => typ ? mkClip(mkPfad(d, w), MK_MUSTER[typ](box, g, det)) : mkPfad(d, w);
+const mkAuge = (x, y, r, blick = 0) => mkKreis(x, y, r, MK_W.mittel) + mkKreis(x + blick * r * .15, y + r * .05, r * .62, MK_F) + `<circle cx="${mkN(x + blick * r * .2)}" cy="${mkN(y + r * .08)}" r="${mkN(r * .38)}" fill="#000" stroke="none"/>` + `<circle cx="${mkN(x + blick * r * .2 - r * .14)}" cy="${mkN(y - r * .1)}" r="${mkN(r * .13)}" fill="#fff" stroke="none"/>`;
+const mkSpiegel = inner => `<g transform="scale(-1 1)">${inner}</g>`;
+
+
+function mkNur(form, inner) { const id = 'mkc' + (++MK_UID); return `<clipPath id="${id}">${form}</clipPath><g clip-path="url(#${id})">${inner}</g>`; }
+
+function mkKoerper(U, box, r, d, g, opt = {}) {
+  const n = opt.n || [3, 5, 7][d], form = mkPfad(U, MK_W.mittel);
+  return mkClip(form, mkBaender(box, n, opt.winkel || 0, g, r, d, opt.muster) + (opt.zonen || '')) + (opt.oben || '') + mkPfad(U, MK_W.dick, ' fill="none"');
+}
+const mkM = (r, L) => r.pick(L || MK_MUSTER_ALLE);
+const MK_TIERE = {
+  eule: (r, d, g) => {
+    const U = 'M-150 -300 C-140 -250 -160 -215 -185 -185 C-235 -120 -245 -20 -235 60 C-225 170 -170 265 -80 300 C-30 318 30 318 80 300 C170 265 225 170 235 60 C245 -20 235 -120 185 -185 C160 -215 140 -250 150 -300 C100 -265 50 -245 0 -245 C-50 -245 -100 -265 -150 -300 Z';
+    const fluegel = 'M-205 -40 C-262 50 -240 190 -140 285 C-158 200 -150 95 -112 20 C-135 -12 -170 -38 -205 -40 Z';
+    const bauch = 'M-125 0 C-160 90 -120 215 0 262 C120 215 160 90 125 0 C70 30 -70 30 -125 0 Z';
+    const gesicht = 'M0 -205 C70 -245 178 -205 182 -112 C186 -40 120 -2 0 -12 C-120 -2 -186 -40 -182 -112 C-178 -205 -70 -245 0 -205 Z';
+    const mf = mkM(r, ['blaetter', 'tropfen', 'boegen', 'schuppen', 'streifen']), mb = mkM(r, ['schuppen', 'boegen', 'herzen', 'tropfen', 'blumen']);
+    const ast = mkPfad('M-340 296 C-220 283 -80 296 60 290 C180 285 290 296 350 292 L350 330 C240 326 90 336 -50 330 C-190 326 -290 338 -340 334 Z', MK_W.dick)
+      + mkLinie('M-250 312 C-200 306 -150 314 -110 309 M120 308 C170 302 220 312 270 306') + [[-300, 292, -30], [-230, 290, 20], [290, 290, 25], [230, 290, -15]].map(([x, y, a]) => mkSchieb(x, y, mkPfad('M0 0 C-14 -26 -12 -58 0 -80 C12 -58 14 -26 0 0 Z') + mkLinie('M0 -6 L0 -66'), 1, a)).join('');
+    const augen = [-1, 1].map(sg => { const x = sg * 82, y = -112; return mkRing(x, y, 'blatt', 50, 76, 18, 0, 0, false) + mkAuge(x, y, 50, -sg * .2); }).join('');
+    const zonen = mkZone(fluegel, [-265, -45, -105, 290], mf, g * .9, d) + mkSpiegel(mkZone(fluegel, [-265, -45, -105, 290], mf, g * .9, d)) + mkZone(bauch, [-165, -10, 165, 265], mb, g, d) + mkPfad(gesicht, MK_W.mittel);
+    const oben = augen + mkPfad('M-22 -58 Q0 -78 22 -58 Q13 -30 0 -8 Q-13 -30 -22 -58 Z')
+      + [-1, 1].map(sg => mkLinie(`M${sg * 150} -292 C${sg * 140} -262 ${sg * 128} -246 ${sg * 106} -236 M${sg * 160} -262 C${sg * 152} -238 ${sg * 140} -226 ${sg * 122} -219`, MK_W.fein)).join('')
+      + [-58, 58].map(x => [-24, 0, 24].map(a => `<ellipse cx="${x + a * .55}" cy="${304}" rx="10" ry="19" transform="rotate(${a} ${x + a * .55} 304)" stroke-width="${MK_W.mittel}"/>`).join('')).join('');
+    return { innen: ast + mkKoerper(U, [-250, -310, 250, 320], r, d, g, { zonen, oben }), huelle: [[0, -120, 215], [0, 100, 240], [-150, -270, 50], [150, -270, 50], [-260, 312, 70], [-100, 312, 60], [100, 312, 60], [260, 312, 70]], thema: 'land', titel: 'Die Muster-Eule', dy: -10 };
+  },
+  fisch: (r, d, g) => {
+    const U = 'M-262 0 C-232 -112 -92 -192 40 -172 C140 -156 208 -92 238 -32 L238 32 C208 92 140 156 40 172 C-92 192 -232 112 -262 0 Z';
+    const schwanz = 'M228 -26 C270 -86 320 -168 356 -214 C344 -118 330 -48 352 0 C330 48 344 118 356 214 C320 168 270 86 228 26 Z';
+    const rueckenflosse = 'M-70 -168 C-30 -262 88 -292 168 -236 C142 -206 130 -176 122 -150 Z', bauchflosse = 'M-30 166 C0 232 70 256 128 232 C104 204 94 180 86 156 Z';
+    const strahlen = (d0, n, x0, y0, x1, y1) => { let s = ''; for (let k = 1; k < n; k++) { const t = k / n; s += mkLinie(`M${mkN(x0)} ${mkN(y0)} L${mkN(x1[0] + (x1[1] - x1[0]) * t)} ${mkN(y1[0] + (y1[1] - y1[0]) * t)}`); } return s; };
+    const flosse = (dd, box) => mkClip(mkPfad(dd, MK_W.mittel), mkMUSTER(r, box, g, d));
+    const kopf = 'M-280 -220 L-120 -220 C-78 -80 -78 80 -120 220 L-280 220 Z';
+    const brust = 'M-92 22 C-54 56 -10 98 40 112 C12 74 -18 44 -60 12 Z';
+    const zonen = mkZone(kopf, [-280, -200, -80, 200], null, g, d) + (d ? mkLinie('M-112 -150 C-84 -60 -84 60 -112 150', MK_W.mittel) : '');
+    const oben = mkAuge(-190, -34, 30, -.3) + mkLinie('M-258 22 C-246 28 -236 28 -228 22', MK_W.mittel) + mkZone(brust, [-95, 10, 45, 115], d ? 'streifen' : null, g * .7, d);
+    return { innen: mkClip(mkPfad(rueckenflosse, MK_W.dick), strahlen(0, 7, 40, -150, [-40, 160], [-250, -250])) + mkClip(mkPfad(bauchflosse, MK_W.dick), strahlen(0, 5, 40, 150, [-20, 120], [230, 240]))
+      + mkClip(mkPfad(schwanz, MK_W.dick), mkBaender([228, -220, 360, 220], [2, 3, 4][d], 90, g * .8, r, d, ['streifen', 'punkte', 'wellen', 'tropfen']))
+      + mkKoerper(U, [-262, -180, 238, 180], r, d, g, { n: [3, 5, 7][d], winkel: 90, zonen, oben, muster: ['schuppen', 'kreise', 'wellen', 'zickzack', 'punkte', 'herzen', 'karo', 'tropfen', 'blumen', 'waben'] }),
+      huelle: [[-150, 0, 160], [60, 0, 180], [280, -120, 80], [280, 120, 80], [60, -220, 80], [50, 210, 60]], thema: 'meer', titel: 'Der Muster-Fisch', s: .98, dx: -44, dy: -40 };
+  }
+};
+function mkMUSTER(r, box, g, d) { return MK_MUSTER[r.pick(['streifen', 'punkte', 'wellen', 'zickzack', 'tropfen'])](box, g * .8, d); }
+
+
+const MK_DEKO = {
+  bluete: (p, r, d) => { const n = r.pick([6, 8, 10]); let s = mkRing(0, 0, r.pick(['blatt', 'lotus']), p * .3, p, n, 0, d, false); if (d > 1) s = mkRing(0, 0, 'blatt', p * .3, p * 1.08, n, 180 / n, 0, false) + s; return s + mkKreis(0, 0, p * .32) + (d ? mkRing(0, 0, 'perlen', p * .12, p * .3, n, 0, 0, false) : '') + mkKreis(0, 0, p * .12, MK_F); },
+  gaensebluemchen: (p, r, d) => { const n = r.pick([12, 14, 16]); let s = ''; for (let k = 0; k < n; k++) s += `<ellipse cx="0" cy="${mkN(-p * .58)}" rx="${mkN(p * .14)}" ry="${mkN(p * .42)}" transform="rotate(${mkN(k * 360 / n)})"/>`; return s + mkKreis(0, 0, p * .28) + (d ? mkGitter([-p * .2, -p * .2, p * .2, p * .2], p * .13, p * .11, true, (x, y) => Math.hypot(x, y) < p * .2 ? mkKreis(x, y, p * .03, MK_F) : '') : ''); },
+  zweig: (p, r, d) => { let s = mkLinie(`M0 ${mkN(p)} C${mkN(-p * .2)} ${mkN(p * .3)} ${mkN(p * .2)} ${mkN(-p * .3)} 0 ${mkN(-p)}`, MK_W.mittel); for (let k = 0; k < 4; k++) { const t = .2 + k * .2, y = p - 2 * p * t, sg = k % 2 ? 1 : -1; s += mkSchieb(0, y, mkPfad(`M0 0 C${mkN(sg * p * .2)} ${mkN(-p * .12)} ${mkN(sg * p * .5)} ${mkN(-p * .1)} ${mkN(sg * p * .62)} ${mkN(-p * .28)} C${mkN(sg * p * .4)} ${mkN(-p * .4)} ${mkN(sg * p * .12)} ${mkN(-p * .3)} 0 0 Z`) + (d ? mkLinie(`M0 0 L${mkN(sg * p * .5)} ${mkN(-p * .22)}`) : '')); } return s + mkPfad(`M0 ${mkN(-p)} C${mkN(-p * .12)} ${mkN(-p * .78)} ${mkN(p * .12)} ${mkN(-p * .78)} 0 ${mkN(-p)} Z`); },
+  herz: (p, r, d) => mkPfad(mkHerzD(0, 0, p * .62)) + (d ? mkPfad(mkHerzD(0, -p * .05, p * .36), MK_F) : '') + (d > 1 ? mkPfad(mkHerzD(0, -p * .08, p * .14), MK_F) : ''),
+  kringel: (p) => { let dd = ''; for (let k = 0; k <= 40; k++) { const a = k * .32, rr = p * (.08 + k * .022); dd += (k ? ' L' : 'M') + `${mkN(Math.cos(a) * rr)} ${mkN(Math.sin(a) * rr)}`; } return mkLinie(dd, MK_W.mittel) + mkKreis(p * .9, p * .1, p * .1, MK_F); },
+  stern: (p, r, d) => mkPfad(mkSternD(0, 0, p * .9, p * .4, 5, r.int(0, 30))) + (d ? mkPfad(mkSternD(0, 0, p * .45, p * .2, 5, 0), MK_F) : ''),
+  pilz: (p, r, d) => mkPfad(`M${mkN(-p * .22)} ${mkN(p * .7)} C${mkN(-p * .2)} ${mkN(p * .2)} ${mkN(-p * .25)} 0 ${mkN(-p * .2)} ${mkN(-p * .05)} L${mkN(p * .2)} ${mkN(-p * .05)} C${mkN(p * .25)} 0 ${mkN(p * .2)} ${mkN(p * .2)} ${mkN(p * .22)} ${mkN(p * .7)} Z`) + mkPfad(`M${mkN(-p * .8)} 0 C${mkN(-p * .8)} ${mkN(-p * .9)} ${mkN(p * .8)} ${mkN(-p * .9)} ${mkN(p * .8)} 0 C${mkN(p * .4)} ${mkN(p * .12)} ${mkN(-p * .4)} ${mkN(p * .12)} ${mkN(-p * .8)} 0 Z`) + [[-.4, -.35, .14], [.1, -.5, .12], [.45, -.25, .1], [-.05, -.2, .08]].map(([x, y, rr]) => mkKreis(x * p, y * p, rr * p, MK_F)).join(''),
+  blase: (p) => mkKreis(0, 0, p * .6, MK_W.mittel) + mkLinie(`M${mkN(-p * .38)} ${mkN(-p * .1)} A${mkN(p * .4)} ${mkN(p * .4)} 0 0 1 ${mkN(-p * .1)} ${mkN(-p * .38)}`),
+  seetang: (p, r, d) => { const sg = r.f() < .5 ? 1 : -1; return mkPfad(`M${mkN(-p * .18)} ${mkN(p)} C${mkN(-p * .5 * sg)} ${mkN(p * .4)} ${mkN(p * .45 * sg)} ${mkN(-p * .1)} ${mkN(p * .05 * sg)} ${mkN(-p)} C${mkN(p * .6 * sg)} ${mkN(-p * .2)} ${mkN(-p * .2 * sg)} ${mkN(p * .4)} ${mkN(p * .18)} ${mkN(p)} Z`) + (d ? mkLinie(`M0 ${mkN(p * .9)} C${mkN(-p * .25 * sg)} ${mkN(p * .3)} ${mkN(p * .3 * sg)} ${mkN(-p * .2)} ${mkN(p * .04 * sg)} ${mkN(-p * .85)}`) : ''); },
+  muschel: (p, r, d) => { let s = mkPfad(`M0 ${mkN(p * .55)} L${mkN(-p * .7)} ${mkN(-p * .1)} C${mkN(-p * .6)} ${mkN(-p * .75)} ${mkN(p * .6)} ${mkN(-p * .75)} ${mkN(p * .7)} ${mkN(-p * .1)} Z`); for (let k = 1; k < 6; k++) { const a = (-50 + k * 100 / 6) * Math.PI / 180; s += mkLinie(`M0 ${mkN(p * .5)} L${mkN(Math.sin(a) * p * .75)} ${mkN(p * .5 - Math.cos(a) * p * 1.05)}`); } return s + mkPfad(`M${mkN(-p * .2)} ${mkN(p * .55)} L${mkN(p * .2)} ${mkN(p * .55)} L0 ${mkN(p * .75)} Z`); },
+  seestern: (p, r, d) => mkPfad(mkSternD(0, 0, p * .9, p * .42, 5, r.int(0, 30))) + (d ? [0, 1, 2, 3, 4].map(k => { const a = (k * 72 - 90) * Math.PI / 180; return mkKreis(Math.cos(a) * p * .5, Math.sin(a) * p * .5, p * .07, MK_F); }).join('') + mkKreis(0, 0, p * .12, MK_F) : ''),
+  flocke: (p, r, d) => { let s = ''; for (let k = 0; k < 6; k++) s += `<g transform="rotate(${k * 60})">${mkLinie(`M0 0 L0 ${mkN(-p)} M0 ${mkN(-p * .55)} L${mkN(p * .22)} ${mkN(-p * .78)} M0 ${mkN(-p * .55)} L${mkN(-p * .22)} ${mkN(-p * .78)}` + (d ? ` M0 ${mkN(-p * .3)} L${mkN(p * .14)} ${mkN(-p * .42)} M0 ${mkN(-p * .3)} L${mkN(-p * .14)} ${mkN(-p * .42)}` : ''), MK_W.mittel)}</g>`; return s + mkKreis(0, 0, p * .14); },
+  wolke: (p) => mkPfad(`M${mkN(-p)} ${mkN(p * .3)} C${mkN(-p * 1.1)} ${mkN(-p * .1)} ${mkN(-p * .7)} ${mkN(-p * .35)} ${mkN(-p * .45)} ${mkN(-p * .2)} C${mkN(-p * .4)} ${mkN(-p * .7)} ${mkN(p * .2)} ${mkN(-p * .75)} ${mkN(p * .3)} ${mkN(-p * .35)} C${mkN(p * .7)} ${mkN(-p * .55)} ${mkN(p * 1.05)} ${mkN(-p * .1)} ${mkN(p * .9)} ${mkN(p * .3)} Z`)
+};
+Object.assign(MK_DEKO, {
+  stein: (p, r, d) => `<ellipse cx="0" cy="0" rx="${mkN(p * .8)}" ry="${mkN(p * .45)}"/>` + (d ? mkLinie(`M${mkN(-p * .4)} ${mkN(-p * .1)} Q0 ${mkN(-p * .25)} ${mkN(p * .35)} ${mkN(-p * .05)}`) : ''),
+  tanne: (p, r, d) => { let s = mkPfad(`M${mkN(-p * .12)} ${mkN(p)} L${mkN(p * .12)} ${mkN(p)} L${mkN(p * .12)} ${mkN(p * .7)} L${mkN(-p * .12)} ${mkN(p * .7)} Z`); [[.7, .9], [.25, .72], [-.2, .55]].forEach(([y, b], i) => { s += mkPfad(`M${mkN(-p * b)} ${mkN(p * y)} C${mkN(-p * b * .4)} ${mkN(p * (y - .3))} ${mkN(-p * .12)} ${mkN(p * (y - .5))} 0 ${mkN(p * (y - .7))} C${mkN(p * .12)} ${mkN(p * (y - .5))} ${mkN(p * b * .4)} ${mkN(p * (y - .3))} ${mkN(p * b)} ${mkN(p * y)} Q0 ${mkN(p * (y - .1))} ${mkN(-p * b)} ${mkN(p * y)} Z`); }); return s + (d ? mkPfad(mkSternD(0, -p * .92, p * .14, p * .06), MK_F) : ''); }
+});
+const MK_THEMA = {
+  land: { luft: [['bluete', 3], ['gaensebluemchen', 2], ['zweig', 2], ['herz', 1], ['kringel', 1]], boden: 'gras', unten: [['gaensebluemchen', 2], ['pilz', 2], ['stein', 1]] },
+  meer: { luft: [['blase', 4], ['kringel', 1]], boden: 'sand', immer: 1, unten: [['seetang', 3], ['muschel', 2], ['seestern', 2], ['stein', 1]] },
+  schnee: { luft: [['flocke', 4], ['stern', 2], ['kringel', 1]], boden: 'schnee', unten: [['tanne', 3], ['stern', 1]] },
+  himmel: { luft: [['wolke', 2], ['stern', 2], ['bluete', 2], ['herz', 1], ['kringel', 1]] }
+};
+
+function mkBoden(art, y, stufe, r) {
+  const P = []; for (let x = MK_X0 - 20; x <= MK_X1 + 20; x += 16) P.push([x, y + 10 * Math.sin(x / 70 + 1) + (art === 'schnee' ? 26 * Math.sin(x / 190) : 0)]);
+  const form = mkPfad(mkPoly(P.concat([[MK_X1 + 20, MK_Y1 + 20], [MK_X0 - 20, MK_Y1 + 20]])), MK_W.dick);
+  const B = [MK_X0, y - 30, MK_X1, MK_Y1];
+  let innen = '';
+  if (art === 'sand' && stufe) innen += MK_MUSTER.punkte(B, [0, 40, 30][stufe]);
+  if (art === 'gras' && stufe) for (let k = 0; k < [0, 8, 16][stufe]; k++) innen += mkSchieb(r.int(MK_X0, MK_X1), r.int(y + 30, MK_Y1 - 10), MK_DEKO.stein(r.int(12, 22), r, 0));
+  if (art === 'schnee' && stufe) for (let k = 0; k < [0, 8, 18][stufe]; k++) innen += mkSchieb(r.int(MK_X0, MK_X1), r.int(y + 40, MK_Y1 - 10), mkPfad(mkSternD(0, 0, 9, 3.5, 4), MK_F));
+  let s = mkClip(form, innen) + mkPfad(mkPoly(P.concat([[MK_X1 + 20, MK_Y1 + 20], [MK_X0 - 20, MK_Y1 + 20]])), MK_W.dick, ' fill="none"');
+  if (art === 'gras') { let h = ''; for (let x = MK_X0 + 6; x < MK_X1; x += [30, 22, 16][stufe]) { const yy = y + 10 * Math.sin(x / 70 + 1), hh = r.int(14, 30), k = r.int(-6, 6); h += mkPfad(`M${mkN(x - 5)} ${mkN(yy + 4)} Q${mkN(x + k * .4)} ${mkN(yy - hh * .6)} ${mkN(x + k)} ${mkN(yy - hh)} Q${mkN(x + 2 + k * .2)} ${mkN(yy - hh * .4)} ${mkN(x + 6)} ${mkN(yy + 4)} Z`, MK_F); } s += h; }
+  return s;
+}
+function mkDeko(thema, belegt, stufe, r, yBoden) {
+  const T = MK_THEMA[thema] || MK_THEMA.land, beutel = T.luft.flatMap(([n, k]) => Array(k).fill(n));
+  const groessen = [[78, [3, 5, 6][stufe]], [52, [2, 6, 9][stufe]], [32, [0, 6, 14][stufe]], [20, [0, 0, 16][stufe]]];
+  let s = ''; const B = belegt.slice(), ymax = yBoden || MK_Y1;
+
+  if (yBoden && T.unten) { const ub = T.unten.flatMap(([n, k]) => Array(k).fill(n)), anz = [3, 6, 9][stufe];
+    for (let k = 0, v = 0; k < anz && v < 300; v++) { const typ = r.pick(ub), p = typ === 'seetang' || typ === 'tanne' ? r.int(70, 120) : r.int(26, 42), x = r.int(MK_X0 + 30, MK_X1 - 30), y = yBoden + 8 - (typ === 'seetang' || typ === 'tanne' ? p : typ === 'stein' ? -6 : p * .55) + (typ === 'seetang' || typ === 'tanne' ? 6 : r.int(0, 40));
+      if (B.some(([bx, by, br]) => Math.hypot(bx - x, by - y) < br + p * .8)) continue; s += mkSchieb(x, y, MK_DEKO[typ](p, r, stufe)); B.push([x, y, p * .9]); k++; } }
+  groessen.forEach(([p0, anz]) => { for (let k = 0, versuch = 0; k < anz && versuch < 400; versuch++) {
+    const p = p0 * (.85 + r.f() * .3), x = r.int(MK_X0 + p * .4, MK_X1 - p * .4), y = r.int(MK_Y0 + p * .4, ymax - p * .9);
+    if (B.some(([bx, by, br]) => Math.hypot(bx - x, by - y) < br + p + 6)) continue;
+    let typ = r.pick(beutel); if (p < 26 && ['zweig'].includes(typ)) typ = r.pick(['herz', 'stern', 'gaensebluemchen']); if (thema === 'meer' && p > 60) typ = r.f() < .5 ? 'blase' : 'kringel';
+    s += mkSchieb(x, y, MK_DEKO[typ](p, r, stufe), 1, ['zweig'].includes(typ) ? r.int(-30, 30) : ['herz', 'wolke', 'blase'].includes(typ) ? 0 : r.int(0, 359));
+    B.push([x, y, p]); k++;
+  } });
+  return s;
+}
+function mkTierSeite(id, nr, stufe) {
+  const r = ambRng(nr * 4241 + stufe * 17 + id.length * 977), g = [46, 34, 25][stufe], T = MK_TIERE[id](r, stufe, g);
+  const s = T.s || 1, x = MK_MX + (T.dx || 0), y = MK_MY + (T.dy || 0), th = MK_THEMA[T.thema] || MK_THEMA.land;
+  const huelle = T.huelle.map(([hx, hy, hr]) => [x + hx * s, y + hy * s, hr * s]);
+  const yB = th.boden && (T.boden != null || th.immer) ? Math.min(MK_Y1 - 50, T.boden != null ? y + T.boden * s - 14 : 860) : null;
+  const rd = ambRng(nr * 9137 + stufe * 3 + id.length);
+  const boden = yB ? mkBoden(th.boden, yB, stufe, rd) : '';
+  const deko = mkDeko(T.thema, huelle, stufe, rd, yB);
+  return { innen: boden + deko + mkSchieb(x, y, T.innen, s), titel: T.titel };
+}
+
+
+
+function mkVoronoi(P, B) {
+  const [x0, y0, x1, y1] = B;
+  return P.map((p, i) => {
+    let poly = [[x0, y0], [x1, y0], [x1, y1], [x0, y1]];
+    P.forEach((q, j) => { if (i === j || !poly.length) return; const mx = (p[0] + q[0]) / 2, my = (p[1] + q[1]) / 2, nx = q[0] - p[0], ny = q[1] - p[1], innen = v => (v[0] - mx) * nx + (v[1] - my) * ny <= 0, neu = [];
+      for (let k = 0; k < poly.length; k++) { const a = poly[k], b = poly[(k + 1) % poly.length], ia = innen(a), ib = innen(b);
+        if (ia) neu.push(a); if (ia !== ib) { const da = (a[0] - mx) * nx + (a[1] - my) * ny, db = (b[0] - mx) * nx + (b[1] - my) * ny, t = da / (da - db); neu.push([a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t]); } }
+      poly = neu; });
+    return poly;
+  });
+}
+const mkMitte = P => [P.reduce((a, p) => a + p[0], 0) / P.length, P.reduce((a, p) => a + p[1], 0) / P.length];
+const mkSchrumpf = (P, k) => { const [cx, cy] = mkMitte(P); return P.map(([x, y]) => [cx + (x - cx) * k, cy + (y - cy) * k]); };
+
+const mkRund = (P, k = .22) => { let d = ''; const n = P.length; for (let i = 0; i < n; i++) { const a = P[(i + n - 1) % n], b = P[i], c = P[(i + 1) % n], p1 = [b[0] + (a[0] - b[0]) * k, b[1] + (a[1] - b[1]) * k], p2 = [b[0] + (c[0] - b[0]) * k, b[1] + (c[1] - b[1]) * k]; d += (i ? ' L' : 'M') + `${mkN(p1[0])} ${mkN(p1[1])} Q${mkN(b[0])} ${mkN(b[1])} ${mkN(p2[0])} ${mkN(p2[1])}`; } return d + ' Z'; };
+
+Object.assign(MK_TIERE, {
+  schmetterling: (r, d, g) => {
+    const O = 'M-14 -40 C-60 -150 -170 -300 -300 -290 C-360 -280 -372 -200 -335 -130 C-300 -60 -170 -20 -14 -10 Z';
+    const Un = 'M-14 10 C-90 20 -230 40 -290 130 C-330 195 -290 285 -200 280 C-110 272 -40 170 -14 40 Z';
+    const seed = r.int(1, 99999), m1 = mkM(r, ['punkte', 'kreise', 'boegen', 'herzen', 'tropfen']), mz = r.misch(['schuppen', 'wellen', 'blumen', 'karo', 'streifen', 'herzen', 'waben', 'blaetter', 'zickzack', 'sterne']);
+    const fluegel = (dd, box, wurzel, k, sekt, rr) => {
+      const innen = `<path d="${dd}" transform="translate(${wurzel[0]} ${wurzel[1]}) scale(${k}) translate(${-wurzel[0]} ${-wurzel[1]})" stroke-width="${mkN(MK_W.mittel / k)}"/>`;
+      let felder = ''; sekt.forEach(([a0, a1], i) => { const P = [wurzel]; for (let a = a0; a <= a1 + .01; a += (a1 - a0) / 6) P.push([wurzel[0] + Math.cos(a * Math.PI / 180) * 520, wurzel[1] + Math.sin(a * Math.PI / 180) * 520]); felder += d === 0 && i % 2 ? mkPfad(mkPoly(P)) : mkClip(mkPfad(mkPoly(P)), MK_MUSTER[mz[i % mz.length]](box, g * .85, d)); });
+      return mkClip(mkPfad(dd, MK_W.mittel), MK_MUSTER[m1](box, g * .8, d) + mkNur(innen, innen + felder) + innen.replace('/>', ' fill="none"/>')) + mkPfad(dd, MK_W.dick, ' fill="none"');
+    };
+    const seite = rr => fluegel(O, [-380, -300, 0, 0], [-14, -24], .74, [[180, 205], [205, 228], [228, 262]], rr)
+      + fluegel(Un, [-340, 0, 0, 290], [-14, 24], .7, [[100, 128], [128, 152], [152, 182]], rr)
+      + [[-250, -210, 34], [-205, 205, 26]].map(([x, y, q]) => mkKreis(x, y, q) + mkKreis(x, y, q * .55, MK_F) + (d ? mkKreis(x, y, q * .2, MK_F) : '')).join('');
+    const koerper = mkPfad('M0 18 C20 40 22 150 0 230 C-22 150 -20 40 0 18 Z', MK_W.dick) + [60, 95, 130, 165, 198].map(y => mkLinie(`M${mkN(-16 + y * .02)} ${y} Q0 ${y + 8} ${mkN(16 - y * .02)} ${y}`)).join('')
+      + `<ellipse cx="0" cy="-16" rx="18" ry="40" stroke-width="${MK_W.dick}"/>` + mkKreis(0, -72, 22, MK_W.dick) + mkKreis(-8, -76, 4.5) + mkKreis(8, -76, 4.5)
+      + mkLinie('M-8 -92 C-30 -150 -60 -190 -92 -214 M8 -92 C30 -150 60 -190 92 -214', MK_W.mittel) + mkKreis(-96, -218, 10, MK_W.mittel) + mkKreis(96, -218, 10, MK_W.mittel);
+    return { innen: seite(ambRng(seed)) + mkSpiegel(seite(ambRng(seed))) + koerper, huelle: [[-200, -160, 150], [200, -160, 150], [-190, 170, 120], [190, 170, 120], [0, 0, 120], [-95, -230, 30], [95, -230, 30], [0, 190, 60]], thema: 'himmel', titel: 'Der Muster-Schmetterling', s: .9, dy: -10 };
+  },
+  katze: (r, d, g) => {
+    const K = 'M-150 -150 C-162 -205 -156 -268 -140 -338 C-104 -308 -74 -282 -48 -262 C-16 -270 16 -270 48 -262 C74 -282 104 -308 140 -338 C156 -268 162 -205 150 -150 C160 -60 92 -8 0 -4 C-92 -8 -160 -60 -150 -150 Z';
+    const Ko = 'M-96 -48 C-190 10 -214 190 -176 286 C-160 318 -110 326 -66 322 L66 322 C110 326 160 318 176 286 C214 190 190 10 96 -48 Z';
+    const Sw = 'M150 274 C262 286 320 190 288 108 C272 68 220 66 218 106 C218 140 250 178 220 222 C204 244 182 254 156 252 Z';
+    const ohr = 'M-130 -306 C-110 -290 -88 -272 -70 -260 C-94 -240 -116 -216 -134 -198 C-138 -238 -136 -274 -130 -306 Z';
+    const stirn = 'M-150 -196 C-120 -236 -60 -246 0 -240 C60 -246 120 -236 150 -196 C110 -206 50 -212 0 -204 C-50 -212 -110 -206 -150 -196 Z';
+    const brust = 'M-78 -6 C-70 74 -36 130 0 162 C36 130 70 74 78 -6 C40 12 -40 12 -78 -6 Z';
+    const mo = mkM(r, ['streifen', 'punkte', 'herzen', 'karo', 'zickzack']), ms = mkM(r, ['streifen', 'wellen', 'zickzack', 'kreise']), mb = mkM(r, ['schuppen', 'boegen', 'blumen', 'herzen', 'tropfen']);
+    const auge = sg => { const x = sg * 60, y = -150; return mkPfad(`M${x - 34} ${y} C${x - 20} ${y - 28} ${x + 20} ${y - 28} ${x + 34} ${y} C${x + 20} ${y + 26} ${x - 20} ${y + 26} ${x - 34} ${y} Z`) + mkKreis(x, y, 17, MK_F) + `<ellipse cx="${x}" cy="${y}" rx="6" ry="14" fill="#000" stroke="none"/><circle cx="${x - 6}" cy="${y - 7}" r="4.5" fill="#fff" stroke="none"/>`; };
+    const gesicht = auge(-1) + auge(1) + mkPfad('M-16 -100 Q0 -106 16 -100 Q8 -86 0 -82 Q-8 -86 -16 -100 Z') + mkLinie('M0 -82 C-2 -68 -16 -62 -30 -68 M0 -82 C2 -68 16 -62 30 -68', MK_W.mittel)
+      + mkLinie('M-50 -92 L-150 -104 M-50 -84 L-148 -80 M-50 -76 L-140 -56 M50 -92 L150 -104 M50 -84 L148 -80 M50 -76 L140 -56') + mkKreis(-92, -110, 9, MK_F) + mkKreis(92, -110, 9, MK_F);
+    const kopf = mkClip(mkPfad(K, MK_W.mittel), mkZone(stirn, [-150, -250, 150, -190], mo, g * .8, d) + mkZone(ohr, [-140, -310, -70, -195], 'punkte', g * .8, d) + mkSpiegel(mkZone(ohr, [-140, -310, -70, -195], 'punkte', g * .8, d))) + gesicht + mkPfad(K, MK_W.dick, ' fill="none"');
+    const halsband = mkPfad('M-104 -34 C-40 -4 40 -4 104 -34 L108 -12 C40 20 -40 20 -108 -12 Z') + mkKreis(0, 26, 17) + mkLinie('M-12 26 L12 26 M0 30 L0 42');
+    const pfoten = [-1, 1].map(sg => `<ellipse cx="${sg * 60}" cy="316" rx="46" ry="24" stroke-width="${MK_W.dick}"/>` + mkLinie(`M${sg * 60 - 14} 302 L${sg * 60 - 14} 318 M${sg * 60 + 14} 302 L${sg * 60 + 14} 318`)).join('');
+    const koerper = mkKoerper(Ko, [-215, -50, 215, 325], r, d, g, { winkel: 20, zonen: mkZone(brust, [-80, -10, 80, 165], mb, g * .8, d) });
+    return { innen: mkClip(mkPfad(Sw, MK_W.dick), mkBaender([150, 60, 320, 290], [2, 4, 5][d], 50, g * .7, r, d, [ms, 'punkte'])) + mkPfad(Sw, MK_W.dick, ' fill="none"') + koerper + pfoten + halsband + kopf,
+      huelle: [[0, -170, 175], [0, 140, 210], [-120, -300, 40], [120, -300, 40], [250, 170, 80]], thema: 'land', boden: 340, titel: 'Die Muster-Katze', dy: -30 };
+  },
+  pinguin: (r, d, g) => {
+    const Ko = 'M0 -300 C110 -300 170 -200 175 -60 C182 80 200 200 150 270 C110 318 -110 318 -150 270 C-200 200 -182 80 -175 -60 C-170 -200 -110 -300 0 -300 Z';
+    const bauch = 'M0 -196 C34 -246 108 -244 114 -186 C120 -126 130 -60 130 16 C134 140 112 240 0 264 C-112 240 -134 140 -130 16 C-130 -60 -120 -126 -114 -186 C-108 -244 -34 -246 0 -196 Z';
+    const bauchM = 'M0 -96 C80 -96 126 -30 128 34 C132 140 110 236 0 258 C-110 236 -132 140 -128 34 C-126 -30 -80 -96 0 -96 Z';
+    const flosse = 'M-168 -70 C-236 -10 -262 84 -250 150 C-214 124 -186 70 -166 26 Z';
+    const fuss = 'M-112 286 C-150 296 -156 322 -128 330 L-40 330 C-26 320 -40 296 -66 288 Z';
+    const mb = mkM(r, ['herzen', 'kreise', 'schuppen', 'blumen', 'sterne', 'tropfen']), mf = mkM(r, ['streifen', 'wellen', 'blaetter', 'zickzack']);
+    const muetze = d === 0 ? '' : mkClip(mkPfad('M-112 -262 C-104 -346 104 -346 112 -262 C56 -274 -56 -274 -112 -262 Z'), mkMUSTER(r, [-120, -350, 120, -255], g * .8, d)) + mkPfad('M-118 -266 C-56 -282 56 -282 118 -266 L120 -240 C56 -256 -56 -256 -120 -240 Z') + mkKreis(0, -346, 24) + (d > 1 ? mkKreis(0, -346, 11, MK_F) : '');
+    const schal = mkClip(mkPfad('M-156 -118 C-60 -86 60 -86 156 -118 L162 -84 C60 -50 -60 -50 -162 -84 Z'), MK_MUSTER.streifen([-170, -130, 170, -40], g * .7, d))
+      + mkClip(mkPfad('M58 -76 C68 -16 80 36 70 76 L112 70 C116 24 106 -28 98 -84 Z'), MK_MUSTER.streifen([50, -90, 120, 80], g * .7, d)) + mkLinie('M74 76 L72 92 M84 75 L84 92 M96 73 L98 90 M108 71 L112 88', MK_W.mittel);
+    const gesicht = mkAuge(-50, -180, 26, .2) + mkAuge(50, -180, 26, -.2) + `<ellipse cx="-84" cy="-136" rx="15" ry="9" stroke-width="${MK_F}"/><ellipse cx="84" cy="-136" rx="15" ry="9" stroke-width="${MK_F}"/>` + mkPfad('M-24 -146 C-10 -162 10 -162 24 -146 C13 -128 -13 -128 -24 -146 Z', MK_W.mittel);
+    const koerper = mkKoerper(Ko, [-200, -310, 200, 320], r, d, g, { winkel: 90, zonen: mkPfad(bauch, MK_W.mittel) + (d ? mkZone(bauchM, [-135, -100, 135, 265], mb, g, d, MK_F) : ''), muster: ['streifen', 'wellen', 'zickzack', 'kreise', 'tropfen', 'karo', 'waben', 'punkte'] });
+    return { innen: mkPfad(fuss, MK_W.dick) + mkSpiegel(mkPfad(fuss, MK_W.dick)) + mkLinie('M-100 300 L-96 326 M-74 296 L-72 326') + mkSpiegel(mkLinie('M-100 300 L-96 326 M-74 296 L-72 326'))
+      + mkClip(mkPfad(flosse, MK_W.dick), MK_MUSTER[mf]([-262, -80, -160, 160], g * .7, d)) + mkPfad(flosse, MK_W.dick, ' fill="none"') + mkSpiegel(mkClip(mkPfad(flosse, MK_W.dick), MK_MUSTER[mf]([-262, -80, -160, 160], g * .7, d)) + mkPfad(flosse, MK_W.dick, ' fill="none"'))
+      + koerper + schal + gesicht + muetze,
+      huelle: [[0, -200, 170], [0, 90, 220], [-220, 40, 70], [220, 40, 70], [0, -330, 40]], thema: 'schnee', boden: 335, titel: 'Lumi im Musterkleid', dy: -20 };
+  },
+  schildkroete: (r, d, g) => {
+    const panzer = 'M-200 40 C-200 -120 -90 -210 20 -210 C140 -210 230 -120 236 40 Z';
+    const rand = 'M-218 36 L254 36 C252 60 242 74 226 78 L-190 78 C-208 74 -216 60 -218 36 Z';
+    const kopf = 'M-190 4 C-246 -18 -300 -18 -322 24 C-338 60 -302 92 -260 86 C-232 82 -210 68 -192 56 Z';
+    const bein = 'M-162 66 C-170 112 -180 146 -166 162 C-150 174 -112 174 -100 160 C-94 132 -98 102 -98 72 Z';
+    const pkt = []; const rr = ambRng(r.int(1, 9999)); const n = [7, 10, 14][d];
+    for (let i = 0; i < 400 && pkt.length < n; i++) { const x = rr.int(-190, 225), y = rr.int(-205, 30); const inn = ((x - 18) / 220) ** 2 + ((y - 40) / 250) ** 2 < 1; if (inn && pkt.every(([a, b]) => Math.hypot(a - x, b - y) > [95, 78, 64][d])) pkt.push([x, y]); }
+    const zellen = mkVoronoi(pkt, [-230, -230, 260, 40]);
+    let platten = ''; const muster = r.misch(['schuppen', 'kreise', 'herzen', 'blumen', 'karo', 'wellen', 'punkte', 'sterne', 'waben', 'tropfen', 'zickzack', 'blaetter']);
+    zellen.forEach((P, i) => { if (P.length < 3) return; const Q = mkSchrumpf(P, .72), bb = [Math.min(...P.map(p => p[0])), Math.min(...P.map(p => p[1])), Math.max(...P.map(p => p[0])), Math.max(...P.map(p => p[1]))];
+      platten += mkPfad(mkRund(P, .12), MK_W.mittel) + (d === 0 ? mkPfad(mkRund(Q, .2), MK_F) : mkClip(mkPfad(mkRund(Q, .2), MK_F), MK_MUSTER[muster[i % muster.length]](bb, g * .7, d))); });
+    const schwanz = mkPfad('M228 40 C262 40 292 50 304 66 C280 70 254 70 230 66 Z', MK_W.dick);
+    return { innen: schwanz + mkPfad(bein, MK_W.dick) + mkSchieb(300, 0, mkPfad(bein, MK_W.dick)) + mkLinie('M-150 168 L-150 154 M-130 170 L-130 156 M-110 166 L-110 152') + mkSchieb(300, 0, mkLinie('M-150 168 L-150 154 M-130 170 L-130 156 M-110 166 L-110 152'))
+      + mkPfad(kopf, MK_W.dick) + mkAuge(-268, 22, 15, -.3) + mkLinie('M-318 46 C-306 56 -292 58 -280 52', MK_W.mittel)
+      + mkClip(mkPfad(panzer, MK_W.dick), platten) + mkPfad(panzer, MK_W.dick, ' fill="none"') + mkClip(mkPfad(rand, MK_W.dick), MK_MUSTER.boegen([-220, 30, 260, 90], g * .7, d)) + mkPfad(rand, MK_W.dick, ' fill="none"'),
+      huelle: [[20, -80, 170], [-170, 40, 90], [-260, 30, 75], [200, 40, 90], [-120, 130, 50], [180, 130, 50]], thema: 'land', boden: 168, titel: 'Die Muster-Schildkröte', s: 1.05, dy: 60 };
+  }
+});
+
+
+
+function mkStraehne(p0, c1, c2, p1, w0, w1) {
+  const B = t => { const u = 1 - t; return [u * u * u * p0[0] + 3 * u * u * t * c1[0] + 3 * u * t * t * c2[0] + t * t * t * p1[0], u * u * u * p0[1] + 3 * u * u * t * c1[1] + 3 * u * t * t * c2[1] + t * t * t * p1[1]]; };
+  const L = [], R = []; for (let i = 0; i <= 24; i++) { const t = i / 24, a = B(Math.max(0, t - .01)), b = B(Math.min(1, t + .01)), [x, y] = B(t), dx = b[0] - a[0], dy = b[1] - a[1], l = Math.hypot(dx, dy) || 1, w = (w0 + (w1 - w0) * t) * Math.min(1, (t / .22) ** .6) * (t > .8 ? Math.sin(Math.PI * (.5 + (t - .8) * 2.3)) ** .5 : 1) / 2 + .4; L.push([x - dy / l * w, y + dx / l * w]); R.push([x + dy / l * w, y - dx / l * w]); }
+  let d = `M${mkN(L[0][0])} ${mkN(L[0][1])}`; for (let i = 1; i < L.length; i++) d += ` L${mkN(L[i][0])} ${mkN(L[i][1])}`; for (let i = R.length - 1; i >= 0; i--) d += ` L${mkN(R[i][0])} ${mkN(R[i][1])}`;
+  return d + ' Z';
+}
+
+const mkBox = (d, rand = 0) => { const z = (d.match(/-?[\d.]+/g) || []).map(Number), X = z.filter((_, i) => i % 2 === 0), Y = z.filter((_, i) => i % 2 === 1); return [Math.min(...X) - rand, Math.min(...Y) - rand, Math.max(...X) + rand, Math.max(...Y) + rand]; };
+Object.assign(MK_TIERE, {
+  fuchs: (r, d, g) => {
+    const K = 'M-150 -200 C-160 -250 -150 -300 -130 -350 C-96 -318 -70 -290 -50 -264 C-18 -272 18 -272 50 -264 C70 -290 96 -318 130 -350 C150 -300 160 -250 150 -200 C170 -170 190 -140 204 -110 C150 -98 100 -78 62 -40 C40 -18 20 -4 0 0 C-20 -4 -40 -18 -62 -40 C-100 -78 -150 -98 -204 -110 C-190 -140 -170 -170 -150 -200 Z';
+    const wange = 'M-204 -110 C-150 -98 -100 -78 -62 -40 C-40 -18 -20 -4 0 0 C20 -4 40 -18 62 -40 C100 -78 150 -98 204 -110 C160 -132 116 -140 76 -128 C44 -118 22 -106 0 -106 C-22 -106 -44 -118 -76 -128 C-116 -140 -160 -132 -204 -110 Z';
+    const Ko = 'M-92 -60 C-172 0 -192 180 -160 290 C-150 320 -110 326 -70 322 L70 322 C110 326 150 320 160 290 C192 180 172 0 92 -60 Z';
+    const Sw = 'M140 300 C250 322 336 250 336 140 C336 56 296 -6 238 -26 C262 36 272 92 252 142 C234 188 198 214 156 226 Z', spitze = 'M238 -26 C296 -6 336 56 336 140 C312 104 282 70 254 46 C250 18 246 -4 238 -26 Z';
+    const brust = 'M-64 -20 C-56 50 -30 120 0 170 C30 120 56 50 64 -20 C40 0 -40 0 -64 -20 Z', ohr = 'M-128 -320 C-108 -300 -88 -282 -70 -268 C-92 -250 -112 -230 -130 -214 C-134 -254 -134 -290 -128 -320 Z';
+    const ms = mkM(r, ['streifen', 'wellen', 'zickzack', 'blaetter']);
+    const auge = sg => { const x = sg * 62, y = -176; return mkPfad(`M${x - 30} ${y + 4 * sg} C${x - 16} ${y - 22} ${x + 18} ${y - 22} ${x + 30} ${y - 4 * sg} C${x + 16} ${y + 18} ${x - 16} ${y + 18} ${x - 30} ${y + 4 * sg} Z`) + mkKreis(x, y - 2, 13, MK_F) + `<circle cx="${x}" cy="${y - 2}" r="8" fill="#000" stroke="none"/><circle cx="${x - 4}" cy="${y - 6}" r="3.5" fill="#fff" stroke="none"/>`; };
+    const kopf = mkClip(mkPfad(K, MK_W.mittel), mkZone('M-160 -240 C-100 -262 100 -262 160 -240 L160 -200 C100 -220 -100 -220 -160 -200 Z', [-160, -270, 160, -195], d ? mkM(r, ['punkte', 'herzen', 'karo', 'sterne']) : null, g * .7, d) + mkZone(ohr, [-140, -330, -60, -210], 'streifen', g * .6, d) + mkSpiegel(mkZone(ohr, [-140, -330, -60, -210], 'streifen', g * .6, d)) + mkPfad(wange, MK_W.mittel))
+      + auge(-1) + auge(1) + mkPfad('M-18 -34 C-8 -42 8 -42 18 -34 C12 -22 -12 -22 -18 -34 Z') + mkLinie('M0 -24 L0 -14 M0 -14 C-6 -6 -16 -6 -22 -12 M0 -14 C6 -6 16 -6 22 -12', MK_W.mittel) + mkPfad(K, MK_W.dick, ' fill="none"');
+    const pfoten = [-1, 1].map(sg => `<ellipse cx="${sg * 56}" cy="316" rx="42" ry="22" stroke-width="${MK_W.dick}"/>` + mkLinie(`M${sg * 56 - 12} 302 L${sg * 56 - 12} 318 M${sg * 56 + 12} 302 L${sg * 56 + 12} 318`)).join('');
+    return { innen: mkClip(mkPfad(Sw, MK_W.dick), mkBaender([140, -30, 340, 300], [2, 4, 5][d], 60, g * .7, r, d, [ms, 'punkte', 'herzen']) + mkPfad(spitze, MK_W.mittel)) + mkPfad(Sw, MK_W.dick, ' fill="none"')
+      + mkKoerper(Ko, [-195, -60, 195, 325], r, d, g, { winkel: -20, zonen: mkZone(brust, [-70, -25, 70, 175], d ? mkM(r, ['schuppen', 'boegen', 'tropfen']) : null, g * .8, d) }) + pfoten + kopf,
+      huelle: [[0, -190, 200], [0, 140, 200], [-130, -330, 40], [130, -330, 40], [270, 120, 100]], thema: 'land', boden: 336, titel: 'Der Muster-Fuchs', dx: -24, dy: -10 };
+  },
+  igel: (r, d, g) => {
+    const cx = -30, cy = 40, rx = 230, ry = 170, N = [18, 24, 30][d];
+    const krone = (k, oy) => { const P = []; for (let i = 0; i <= 2 * N; i++) { const ph = (172 - i * 158 / (2 * N)) * Math.PI / 180, f = (i % 2 ? 1.16 : 1) * k; P.push([cx + rx * f * Math.cos(ph), cy + oy - ry * f * Math.sin(ph)]); } P.push([cx + 150 * k, cy + 70], [cx - 60 * k, cy + 110], [cx - 200 * k, cy + 80]); return mkRund(P, .08); };
+    const leib = 'M-262 60 C-262 0 -200 -20 -100 -20 L140 -40 C200 -60 250 -20 300 30 C318 46 322 70 300 84 C250 112 180 150 60 160 C-60 170 -180 160 -232 130 C-256 116 -262 90 -262 60 Z';
+    const bein = 'M-170 140 C-176 176 -170 196 -150 198 C-128 200 -120 186 -118 150 Z';
+    const mk = r.misch(['punkte', 'streifen', 'herzen', 'kreise', 'tropfen', 'zickzack', 'blaetter']);
+    let st = ''; [1, .8, .6, .4].slice(0, [2, 3, 4][d]).forEach((k, i) => { st += mkClip(mkPfad(krone(k, i * 14), MK_W.mittel), MK_MUSTER[mk[i]]([-290, -200, 260, 200], g * .7, d)); });
+    const apfel = d === 0 ? '' : mkSchieb(-60, -176, mkPfad('M0 -26 C-30 -44 -62 -20 -58 16 C-54 46 -22 60 0 50 C22 60 54 46 58 16 C62 -20 30 -44 0 -26 Z') + mkLinie('M0 -26 C2 -38 6 -46 12 -52', MK_W.mittel) + mkPfad('M8 -44 C24 -64 48 -60 56 -50 C40 -38 22 -38 8 -44 Z', MK_F), 1, -10);
+    return { innen: mkPfad(bein, MK_W.dick) + mkSchieb(210, -4, mkPfad(bein, MK_W.dick)) + mkSchieb(70, 4, mkPfad(bein, MK_W.dick)) + mkPfad(leib, MK_W.dick) + st
+      + mkPfad('M120 -14 C140 -48 170 -50 178 -22 C166 -6 146 -2 120 -14 Z', MK_W.mittel) + mkAuge(204, 18, 15, .3) + mkKreis(306, 66, 15, MK_W.mittel) + mkLinie('M268 96 C254 104 236 104 224 96', MK_W.mittel) + `<ellipse cx="200" cy="64" rx="16" ry="10" stroke-width="${MK_F}"/>` + apfel,
+      huelle: [[-40, -10, 230], [200, 40, 110], [-60, -190, 70]], thema: 'land', boden: 200, titel: 'Der Muster-Igel', dx: -10, dy: 80 };
+  },
+  schnecke: (r, d, g) => {
+    const mx = 50, my = -70, b = 10.8, r0 = 16, tmax = 2.7 * 2 * Math.PI, Rf = t => r0 + b * t, P = t => [mx + Rf(t) * Math.cos(t), my + Rf(t) * Math.sin(t)];
+    const schritte = [9, 12, 16][d], dt = 2 * Math.PI / schritte, mu = r.misch(MK_MUSTER_ALLE);
+    let kammern = '';
+    for (let t = 2 * Math.PI, i = 0; t < tmax - .01; t += dt, i++) { const t1 = Math.min(tmax, t + dt), A = []; for (let k = 0; k <= 6; k++) A.push(P(t + (t1 - t) * k / 6)); for (let k = 6; k >= 0; k--) A.push(P(t - 2 * Math.PI + (t1 - t) * k / 6));
+      const dd = mkPoly(A), bb = [Math.min(...A.map(p => p[0])) - 5, Math.min(...A.map(p => p[1])) - 5, Math.max(...A.map(p => p[0])) + 5, Math.max(...A.map(p => p[1])) + 5];
+      kammern += d === 0 && i % 2 ? mkPfad(dd) : mkClip(mkPfad(dd), MK_MUSTER[mu[i % mu.length]](bb, g * .6, d)); }
+    const innen = []; for (let t = 0; t <= 2 * Math.PI + .01; t += .2) innen.push(P(t)); innen.push([mx, my]);
+    const aussen = []; for (let t = tmax - 2 * Math.PI; t <= tmax + .01; t += .1) aussen.push(P(t));
+    const leib = 'M310 126 C220 136 -100 142 -214 134 C-254 130 -274 106 -266 76 C-254 26 -236 -40 -240 -92 C-244 -134 -214 -156 -182 -146 C-150 -136 -148 -94 -150 -44 C-150 6 -120 34 -60 44 L230 58 C276 62 312 84 310 126 Z';
+    return { innen: mkPfad(leib, MK_W.dick) + mkLinie('M-232 -138 C-244 -170 -256 -194 -270 -214 M-196 -146 C-192 -178 -186 -200 -176 -222', MK_W.mittel) + mkKreis(-272, -218, 12) + mkKreis(-174, -226, 12)
+      + mkAuge(-206, -100, 16, -.2) + mkLinie('M-236 -56 C-224 -44 -206 -44 -194 -54', MK_W.mittel) + (d ? mkLinie('M-200 108 C-100 116 60 118 250 108') : '')
+      + kammern + mkLinie('M' + innen.slice(0, -1).map(p => `${mkN(p[0])} ${mkN(p[1])}`).join(' L'), MK_W.mittel) + mkLinie('M' + aussen.map(p => `${mkN(p[0])} ${mkN(p[1])}`).join(' L'), MK_W.dick),
+      huelle: [[50, -70, 210], [-200, -120, 80], [-230, -210, 40], [180, 100, 80], [-120, 100, 60]], thema: 'land', boden: 140, titel: 'Die Muster-Schnecke', dy: 60 };
+  },
+  einhorn: (r, d, g) => {
+    const K = 'M70 -262 C20 -276 -50 -252 -110 -196 C-160 -150 -220 -86 -258 -32 C-282 4 -276 50 -240 60 C-206 70 -166 58 -136 44 C-108 32 -80 42 -60 70 C-30 120 0 220 10 340 L240 340 C220 220 196 120 176 40 C166 -40 156 -150 128 -220 C112 -252 94 -260 70 -262 Z';
+    const hals = 'M-60 70 C-30 120 0 220 10 340 L240 340 C220 220 196 120 176 40 C120 64 40 76 -60 70 Z';
+    const horn = 'M2 -262 C-14 -322 -30 -382 -48 -440 C-12 -388 24 -330 54 -270 Z';
+    const mu = r.misch(MK_MUSTER_ALLE), str = [];
+    const n = [5, 7, 9][d];
+    for (let i = n - 1; i >= 0; i--) { const t = i / (n - 1), bx = 128 + t * 104, by = -244 + t * 470, w = 74 - t * 18, ex = bx + 64 + r.int(0, 30), ey = by + 200 + r.int(0, 30);
+      str.push(mkStraehne([bx - 18, by], [bx + 96, by + 24], [bx + 10, by + 140], [ex, ey], w, 12)); }
+    const vorne = [mkStraehne([96, -262], [40, -268], [0, -240], [-30, -186], 56, 8)];
+    let maehne = ''; str.forEach((dd, i) => { maehne += d === 0 && i % 2 ? mkPfad(dd, MK_W.dick) : mkClip(mkPfad(dd, MK_W.dick), MK_MUSTER[mu[i % mu.length]](mkBox(dd, g), g * .7, d)) + mkPfad(dd, MK_W.dick, ' fill="none"'); });
+    let vor = ''; vorne.forEach((dd, i) => { vor += mkClip(mkPfad(dd, MK_W.dick), MK_MUSTER[mu[(n + i) % mu.length]]([-60, -290, 120, -170], g * .55, d)) + mkPfad(dd, MK_W.dick, ' fill="none"'); });
+    const blumen = d === 0 ? '' : [[150, -200, 30], [250, 60, 26], [190, 250, 30]].slice(0, d + 1).map(([x, y, p]) => mkSchieb(x, y, MK_DEKO.bluete(p, r, 1))).join('');
+    const kopf = mkClip(mkPfad(K, MK_W.mittel), d ? mkZone(hals, [-60, 30, 250, 345], null, g, d) + mkBaender([-60, 60, 250, 345], [2, 3, 4][d], 70, g * .7, ambRng(r.int(1, 999)), d, ['herzen', 'sterne', 'punkte', 'blumen']) : '') + mkPfad(K, MK_W.dick, ' fill="none"');
+    const hornL = mkClip(mkPfad(horn, MK_W.dick), [0, 1, 2, 3, 4, 5].map(k => mkLinie(`M${-60 + k * 6} ${-300 - k * 26} L${40 + k * 4} ${-262 - k * 30}`, MK_W.mittel)).join('')) + mkPfad(horn, MK_W.dick, ' fill="none"');
+    const gesicht = mkPfad('M-100 -152 C-86 -176 -50 -176 -36 -152 C-50 -132 -86 -132 -100 -152 Z') + mkKreis(-68, -152, 14, MK_F) + `<circle cx="-68" cy="-152" r="8" fill="#000" stroke="none"/><circle cx="-72" cy="-156" r="3" fill="#fff" stroke="none"/>`
+      + mkLinie('M-100 -158 L-114 -170 M-94 -168 L-104 -184 M-84 -174 L-88 -192', MK_W.mittel) + mkLinie('M-240 14 C-232 4 -222 4 -216 12', MK_W.mittel) + mkLinie('M-262 42 C-244 50 -226 50 -212 42', MK_W.mittel) + `<ellipse cx="-120" cy="-80" rx="20" ry="12" stroke-width="${MK_F}"/>`;
+    const ohr = mkPfad('M86 -250 C92 -300 108 -334 122 -356 C140 -314 142 -270 124 -232 Z', MK_W.dick) + mkLinie('M100 -252 C104 -288 112 -312 120 -330');
+    return { innen: ohr + kopf + maehne + hornL + vor + gesicht + blumen,
+      huelle: [[-120, -80, 150], [100, -150, 150], [150, 150, 190], [-30, -380, 60], [260, 0, 130], [-220, 20, 70], [250, 250, 90]], thema: 'himmel', titel: 'Das Muster-Einhorn', dx: -30, dy: 20, boden: null };
+  },
+  wal: (r, d, g) => {
+    const U = 'M-310 30 C-310 -80 -200 -160 -50 -160 C100 -160 200 -100 250 -10 C262 12 276 20 290 12 C300 -40 320 -100 350 -150 C368 -110 372 -60 356 -10 C390 -20 420 0 440 30 C400 40 370 50 340 70 C300 90 260 110 220 120 C120 150 0 170 -100 166 C-230 160 -310 120 -310 30 Z';
+    const bauch = 'M-292 74 C-200 132 -50 150 120 128 C40 160 -100 170 -190 156 C-252 146 -286 114 -292 74 Z', flosse = 'M-80 92 C-60 142 -20 182 30 198 C20 162 0 122 -30 98 Z';
+    const strahl = 'M-158 -164 C-168 -220 -166 -262 -150 -296 C-134 -262 -132 -220 -142 -164 Z', bogen = 'M-156 -170 C-176 -214 -210 -240 -250 -248 C-262 -250 -268 -240 -258 -232 C-226 -218 -198 -196 -170 -160 Z';
+    const fontaene = mkPfad(bogen, MK_W.dick) + `<g transform="translate(-300 0) scale(-1 1)">${mkPfad(bogen, MK_W.dick)}</g>` + mkPfad(strahl, MK_W.dick) + (d ? mkKreis(-262, -262, 9) + mkKreis(-38, -262, 9) + mkKreis(-150, -316, 9) : '');
+    return { innen: fontaene + mkKoerper(U, [-310, -170, 440, 170], r, d, g, { winkel: 90, zonen: mkClip(mkPfad(bauch, MK_W.mittel), MK_MUSTER.streifen([-300, 60, 130, 170], g * .6, d)), oben: mkPfad(flosse, MK_W.dick) + mkAuge(-210, 10, 18, -.3) + mkLinie('M-300 60 C-276 82 -250 88 -226 80', MK_W.mittel), muster: ['wellen', 'schuppen', 'kreise', 'punkte', 'karo', 'waben', 'zickzack', 'tropfen', 'herzen'] }),
+      huelle: [[-160, 0, 170], [80, 0, 170], [360, -40, 90], [-160, -230, 60]], thema: 'meer', titel: 'Der Muster-Wal', s: .84, dx: -40, dy: -80 };
+  },
+  hase: (r, d, g) => {
+    const ohr = 'M-80 -236 C-118 -320 -128 -420 -88 -446 C-48 -462 -34 -360 -40 -246 Z', ohrI = 'M-74 -262 C-98 -330 -104 -400 -86 -418 C-66 -430 -58 -350 -60 -270 Z';
+    const Kopf = 'M0 -280 C80 -280 124 -220 122 -160 C120 -96 70 -54 0 -54 C-70 -54 -120 -96 -122 -160 C-124 -220 -80 -280 0 -280 Z';
+    const Ko = 'M-110 -80 C-196 -10 -210 190 -150 286 C-122 320 122 320 150 286 C210 190 196 -10 110 -80 Z', bauch = 'M-74 -40 C-110 40 -100 180 0 250 C100 180 110 40 74 -40 C40 -60 -40 -60 -74 -40 Z';
+    const mb = mkM(r, ['blumen', 'herzen', 'tropfen', 'boegen']);
+    const gesicht = mkAuge(-44, -172, 20, .2) + mkAuge(44, -172, 20, -.2) + mkPfad('M-14 -124 C-6 -132 6 -132 14 -124 C8 -114 -8 -114 -14 -124 Z') + mkLinie('M0 -116 L0 -102 M0 -102 C-8 -92 -20 -92 -28 -98 M0 -102 C8 -92 20 -92 28 -98', MK_W.mittel)
+      + mkLinie('M-36 -118 L-110 -128 M-36 -110 L-108 -104 M36 -118 L110 -128 M36 -110 L108 -104') + `<ellipse cx="-80" cy="-132" rx="15" ry="9" stroke-width="${MK_F}"/><ellipse cx="80" cy="-132" rx="15" ry="9" stroke-width="${MK_F}"/>`;
+    const ohren = [1, -1].map(sg => { const z = mkClip(mkPfad(ohr, MK_W.dick), mkZone(ohrI, [-110, -430, -50, -250], d ? mkM(r, ['punkte', 'herzen', 'streifen']) : null, g * .6, d, MK_W.mittel)) + mkPfad(ohr, MK_W.dick, ' fill="none"'); return sg > 0 ? z : mkSpiegel(z); }).join('');
+    const fuesse = [-1, 1].map(sg => `<ellipse cx="${sg * 92}" cy="304" rx="64" ry="26" stroke-width="${MK_W.dick}"/>` + [-20, 0, 20].map(o => mkKreis(sg * 92 + o * 1.4 + sg * 20, 300, 7, MK_F)).join('')).join('');
+    const pfoten = [-1, 1].map(sg => `<ellipse cx="${sg * 112}" cy="150" rx="26" ry="34" transform="rotate(${sg * -18} ${sg * 112} 150)" stroke-width="${MK_W.dick}"/>`).join('');
+    const schwanz = mkClip(mkKreis(170, 250, 44, MK_W.dick), MK_MUSTER.kringel([120, 200, 220, 300], g * .6)) + mkKreis(170, 250, 44, MK_W.dick).replace('/>', ' fill="none"/>');
+    return { innen: schwanz + ohren + mkKoerper(Ko, [-210, -80, 210, 320], r, d, g, { winkel: 30, zonen: mkZone(bauch, [-110, -60, 110, 255], d ? mb : null, g * .8, d) }) + fuesse + pfoten + mkClip(mkPfad(Kopf, MK_W.dick), d > 1 ? MK_MUSTER.punkte([-130, -290, 130, -200], g) : '') + mkPfad(Kopf, MK_W.dick, ' fill="none"') + gesicht,
+      huelle: [[0, -170, 135], [0, 120, 210], [-90, -360, 60], [90, -360, 60], [170, 250, 50]], thema: 'land', boden: 324, titel: 'Der Muster-Hase', dy: 30 };
+  }
+});
+
+Object.assign(MK_TIERE, {
+  fussball: (r, d, g) => {
+    const R = 220, pkt = [[0, 0]]; for (let k = 0; k < 5; k++) { const a = (k * 72 - 90) * Math.PI / 180, b = (k * 72 - 54) * Math.PI / 180; pkt.push([Math.cos(a) * 150, Math.sin(a) * 150], [Math.cos(b) * 270, Math.sin(b) * 270], [Math.cos(a) * 300, Math.sin(a) * 300]); }
+    const zellen = mkVoronoi(pkt, [-R - 10, -R - 10, R + 10, R + 10]), mu = r.misch(MK_MUSTER_ALLE), kreis = mkKreis(0, 0, R, MK_W.dick);
+    let flecken = ''; zellen.forEach((P, i) => { if (P.length < 3) return; const fuenf = i === 0 || i % 3 === 2, bb = [Math.min(...P.map(p => p[0])), Math.min(...P.map(p => p[1])), Math.max(...P.map(p => p[0])), Math.max(...P.map(p => p[1]))];
+      flecken += d === 0 && !fuenf ? mkPfad(mkPoly(P)) : mkClip(mkPfad(mkPoly(P)), MK_MUSTER[mu[i % mu.length]](bb, g * (fuenf ? .55 : .7), d)) + (d > 1 && fuenf ? mkPfad(mkRund(mkSchrumpf(P, .55), .3), MK_F) : ''); });
+
+    const tx0 = -300, tx1 = 300, ty0 = -400, ty1 = -60; let netz = mkPfad(`M${tx0} ${ty1} L${tx0} ${ty0} L${tx1} ${ty0} L${tx1} ${ty1} L${tx1 - 26} ${ty1} L${tx1 - 26} ${ty0 + 26} L${tx0 + 26} ${ty0 + 26} L${tx0 + 26} ${ty1} Z`, MK_W.dick);
+    const m = [16, 22, 28][d]; let nz = ''; for (let x = tx0 + 26; x < tx1 - 26; x += m) nz += `M${x} ${ty0 + 26} L${x} ${ty1}`; for (let y = ty0 + 26; y < ty1; y += m) nz += ` M${tx0 + 26} ${y} L${tx1 - 26} ${y}`;
+    netz = mkPfad(`M${tx0 + 26} ${ty0 + 26} L${tx1 - 26} ${ty0 + 26} L${tx1 - 26} ${ty1} L${tx0 + 26} ${ty1} Z`, MK_F) + mkLinie(nz, 1.2) + netz;
+    const sterne = [[-250, 160, 40], [260, 140, 34], [-230, 40, 22], [240, 30, 26]].map(([x, y, p]) => mkSchieb(x, y, MK_DEKO.stern(p, r, d))).join('');
+    return { innen: netz + sterne + mkClip(kreis, flecken) + mkKreis(0, 0, R, MK_W.dick).replace('/>', ' fill="none"/>') + mkLinie(`M${-R * .7} ${-R * .3} A${R * .8} ${R * .8} 0 0 1 ${-R * .3} ${-R * .72}`, MK_W.mittel),
+      huelle: [[0, 0, 230], [0, -230, 300], [-250, 150, 50], [260, 140, 44]], thema: 'land', boden: 240, titel: 'Der Muster-Fußball', dy: 60 };
+  }
+});
+
+function mkSvg(b) {
+  const cid = 'mkr' + (++MK_UID), rahmen = `<rect x="${MK_X0}" y="${MK_Y0}" width="${MK_X1 - MK_X0}" height="${MK_Y1 - MK_Y0}" rx="26"/>`;
+  const schrift = 'fill="#000" stroke="none" font-family="ui-rounded, system-ui, sans-serif"';
+  const fuss = `<text x="34" y="1014" font-size="${b.titel.length > 38 ? 26 : 32}" font-weight="800" ${schrift}>${esc(b.titel)}</text><text x="706" y="1060" font-size="21" text-anchor="end" ${schrift}>Name: ________________</text>`;
+  return `<svg class="amb-svg mk-svg" viewBox="0 0 736 1080" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${esc(b.titel)}"><rect x="0" y="0" width="736" height="1080" fill="#fff" stroke="none" data-blatt="1"/>`
+    + `<g fill="#fff" stroke="#000" stroke-width="${MK_W.mittel}" stroke-linejoin="round" stroke-linecap="round"><clipPath id="${cid}">${rahmen}</clipPath>${rahmen}<g clip-path="url(#${cid})">${b.innen}</g>${rahmen.replace('/>', ' fill="none" stroke-width="6"/>')}</g>${fuss}</svg>`;
+}
+
+
+const MK_LISTE = ['eule', 'katze', 'fussball', 'pinguin', 'schmetterling', 'fuchs', 'schildkroete', 'einhorn', 'fisch', 'igel', 'hase', 'schnecke', 'wal'];
+const MK_TITEL = { eule: 'Die Muster-Eule', katze: 'Die Muster-Katze', fussball: 'Der Muster-Fußball', pinguin: 'Lumi im Musterkleid', schmetterling: 'Der Muster-Schmetterling', fuchs: 'Der Muster-Fuchs', schildkroete: 'Die Muster-Schildkröte', einhorn: 'Das Muster-Einhorn', fisch: 'Der Muster-Fisch', igel: 'Der Muster-Igel', hase: 'Der Muster-Hase', schnecke: 'Die Muster-Schnecke', wal: 'Der Muster-Wal' };
+AMB_KAT.unshift({ id: 'mktiere', t: 'Muster-Bilder', i: '🦉', spezial: 'mktier' }, { id: 'mkmandala', t: 'Pracht-Mandalas', i: '🏵️', spezial: 'mkmandala' });
+const mkTitel = (k, nr) => k === 'mktiere' ? MK_TITEL[MK_LISTE[nr % MK_LISTE.length]] : MK_MANDALA_TITEL[nr % MK_MANDALA_TITEL.length] + ` Nr. ${nr + 1}`;
+let MK_LEICHT = false, MK_BLOBS = [];
+{ const alt = ambSeite; ambSeite = function (katId, nr, stufe = 1) {
+  const K = ambKat(katId); if (K.spezial !== 'mktier' && K.spezial !== 'mkmandala') return alt(katId, nr, stufe);
+  const titel = mkTitel(K.id, nr);
+
+  if (MK_LEICHT) return { svg: `<svg class="amb-svg mk-platz" viewBox="0 0 736 1080" data-mk="${K.id}|${nr}|${stufe}" role="img" aria-label="${esc(titel)}"><rect x="14" y="14" width="708" height="950" rx="26" fill="#fff" stroke="#c8d1e0" stroke-width="6"/><text x="368" y="500" font-size="60" text-anchor="middle" fill="#c8d1e0">✏️</text></svg>`, titel };
+  const b = K.spezial === 'mktier' ? mkTierSeite(MK_LISTE[nr % MK_LISTE.length], nr, stufe) : mkMandalaSeite(nr, stufe);
+  b.titel = titel; return { svg: mkSvg(b), titel };
+}; }
+function mkVorschauFuellen() {
+  const L = [...document.querySelectorAll('svg.mk-platz[data-mk]')]; let i = 0;
+  const schritt = () => { if (i >= L.length) return; const el = L[i++]; if (!el.isConnected) return; const [k, n, st] = el.dataset.mk.split('|');
+    try { const P = ambSeite(k, Number(n), Number(st)), url = URL.createObjectURL(new Blob([P.svg], { type: 'image/svg+xml' })); MK_BLOBS.push(url);
+      const img = new Image(); img.className = 'amb-svg mk-bild'; img.alt = ''; img.decoding = 'async'; img.src = url; el.replaceWith(img); } catch (e) { }
+    setTimeout(schritt, 0); };
+  setTimeout(schritt, 30);
+}
+{ const alt = showMalbuch; showMalbuch = function (...a) {
+  MK_BLOBS.forEach(u => { try { URL.revokeObjectURL(u); } catch (e) { } }); MK_BLOBS = [];
+  MK_LEICHT = true; let r; try { r = alt.apply(this, a); } finally { MK_LEICHT = false; }
+  mkVorschauFuellen(); return r;
+}; }
+
+{ const alt = ambS; ambS = function () { const a = alt(); if (!a.v590) { a.v590 = 1; a.kat = 'mktiere'; } return a; }; }
+{ const alt = ambWorldBtn; ambWorldBtn = function (w) { return alt(w).replace('Tiere, Fußball, Lumi, Mandalas, ABC und vieles mehr.', 'Muster-Tiere, Pracht-Mandalas, Fußball, Lumi, ABC und vieles mehr.'); }; }
 
 /*@@src airhockey470.js@@*/
 
