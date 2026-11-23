@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-w8wSr/UrSIob52THSuULgESBe7yhgIaSR7GZfmHY1hc=' 'sha256-dZPgvJxKdyaWfqly1yBSiyYoHcKI0e1RIhf6uVmHQrc=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-krtrnlFO9R1aEhHO+BRJISJjkkMAojB03eB/CXVeeDM=' 'sha256-e79nhCCbnSQx94Ozmq4eeRcBjqR1C60DBZGMS35N3As=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -5967,6 +5967,15 @@ mark.ffl-hl { background: #ffe066; color: #1d2440; border-radius: 5px; padding: 
   .gym-lt { font-size: 17px; }
 }
 
+/* ---- style_gym600.css ---- */
+
+.gym-svg .bf { fill: var(--fc); fill-opacity: .55; stroke: var(--g-ink); stroke-width: 2; }
+.gym-svg .bw { fill: none; stroke: var(--g-ink); stroke-width: 2; }
+.gym-svg .bl { fill: none; stroke: var(--g-ink); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+
+.gym-zr, .gym-zr .gym-sel, .gym-sel { min-width: 0; }
+.gym-sel { text-overflow: ellipsis; }
+
 /* ---- style_h28a.css ---- */
 
 .fun-stage > .h28a-ft { position: absolute; inset: 0; display: flex; flex-direction: column; gap: 6px; padding: 8px 8px 6px; background: linear-gradient(var(--sky-bot), var(--bg)); }
@@ -11019,8 +11028,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '5.9.0';
-  var MAP = {"probe":0,"files":[[11009,"fehler_kern.js"],[11297,null],[11299,"data.js"],[12014,"data_more.js"],[12386,"data_su2.js"],[12613,"data_es.js"],[12981,"data_wissen.js"],[13182,"data_v21.js"],[13867,"data_v24.js"],[14355,"data_v25.js"],[14844,"data_v26.js"],[14943,"data_v29.js"],[15251,"data_v30.js"],[15585,"data_v31.js"],[15891,"data_kunst.js"],[16088,"data_v214.js"],[16191,"data_v216.js"],[16484,"schrift.js"],[16788,"eingabe.js"],[16999,"data_k34m.js"],[17517,"data_k34d.js"],[17871,"data_k34s.js"],[18325,"data_v224.js"],[19198,"data_v225w.js"],[19567,"data_v225k.js"],[20011,"data_herz.js"],[20365,"data_fb226.js"],[20508,"data_tf226.js"],[20715,"data_v227a.js"],[21815,"data_v227b.js"],[22769,"data_h28b.js"],[22809,"data_l28a.js"],[23675,"data_l28b.js"],[24855,"data_schaetz.js"],[25337,"data_party8.js"],[25387,"data_alce.js"],[26058,"data_alce2.js"],[26307,"data_alce3.js"],[26722,"registry.js"],[27236,"app.js"],[28516,"fun.js"],[29104,"fun2.js"],[29420,"atelier.js"],[29794,"kunst225.js"],[29984,"herz.js"],[30348,"reise.js"],[30650,"iglu.js"],[30816,"offline.js"],[30926,"party.js"],[31410,"meine.js"],[31766,"loeffel.js"],[31937,"trend.js"],[32479,"fun228a.js"],[33340,"fun228b.js"],[34017,"kueche.js"],[35056,"stimme.js"],[35111,"klassen.js"],[35264,"freunde_vorab.js"],[35285,"mut.js"],[35707,"schule.js"],[36196,"fussball226.js"],[36518,"schaetzen.js"],[36949,"party8.js"],[37568,"tiere.js"],[38027,"fussball232.js"],[38242,"party8b.js"],[38544,"weg.js"],[38765,"px.js"],[39185,"px_fein.js"],[39239,"px_data.js"],[39496,"pxwelt.js"],[39580,"px_abenteuer.js"],[40409,"px_abenteuer2.js"],[41163,"px_abenteuer3.js"],[41554,"px_abenteuer4.js"],[41764,"px_baukasten.js"],[41873,"px_abenteuer_fein.js"],[42090,"px_abenteuer_fein2.js"],[42442,"px_abenteuer5.js"],[42849,"px_abenteuer6.js"],[43125,"px_abenteuer7.js"],[43481,"px_level300.js"],[44032,"px_schwach300.js"],[44106,"px_zwei300.js"],[44220,"lumicheckt300.js"],[44413,"schreiben300.js"],[44627,"rechenkarte300.js"],[44747,"lerncheck300.js"],[44970,"material300.js"],[45300,"lernweg300.js"],[45824,"px_ski.js"],[46466,"px_wurf.js"],[46995,"px_insel.js"],[48196,"px_kicker.js"],[49131,"px_eis.js"],[50117,"px_run.js"],[51332,"px_brk.js"],[52294,"px_pol.js"],[53645,"px_frog.js"],[54905,"px_angel.js"],[56220,"px_golf.js"],[57254,"px_tauch.js"],[58519,"px_hockey.js"],[59475,"px_lab.js"],[60810,"px_plopp.js"],[62016,"px_stadion.js"],[63527,"px_stadion2.js"],[63579,"px_training.js"],[63948,"cm.js"],[64438,"cmwelt.js"],[64494,"cm_baeck.js"],[65287,"cm_bahn.js"],[66051,"cm_detek.js"],[66768,"cm_markt.js"],[67481,"ff.js"],[67638,"ff_mathe.js"],[69628,"ff_deutsch.js"],[71216,"ff_sach_a.js"],[73465,"ff_sach_b.js"],[75694,"ff_sprachen.js"],[78102,"zm.js"],[79015,"tt.js"],[79228,"data_tagebuch.js"],[79271,"data_hoerspiel.js"],[79430,"leseecke.js"],[79757,"kt.js"],[80060,"comicbuch.js"],[80338,"alce.js"],[80501,"alce_aufg.js"],[80692,"formen.js"],[81143,"data_formen.js"],[81384,"data_formen2.js"],[81606,"spielzeit.js"],[81828,"data_faktmeinung.js"],[81947,"data_es248.js"],[82211,"data_en249.js"],[82450,"data_wissen249.js"],[82881,"data_kunst249.js"],[83164,"data_fussball250.js"],[83288,"data_werte252.js"],[83541,"data_lesen252.js"],[83602,"data_k34_252.js"],[83688,"art254.js"],[83806,"data_werte255.js"],[83944,"data_lesen255.js"],[84080,"forscher255.js"],[84228,"zufall250.js"],[84274,"stufe259.js"],[84284,"advent.js"],[84547,"wdh.js"],[84645,"eswarm288.js"],[84696,"abwechslung294.js"],[84771,"bilder293a.js"],[84861,"bilder293b.js"],[84991,"bilder293c.js"],[85089,"bilder293d.js"],[85211,"bilder293e.js"],[85375,"bilder293f.js"],[85455,"bilder292.js"],[85901,"denk.js"],[85938,"data_viaje265.js"],[86081,"klassenarbeit.js"],[86214,"quizduell.js"],[86337,"neu267.js"],[86602,"prog.js"],[86707,"lernstand.js"],[86774,"blatt.js"],[86876,"uebung295.js"],[87198,"schuh296.js"],[87406,"uebung297.js"],[87793,"minus298.js"],[88034,"schrift299.js"],[88162,"data_es271.js"],[88276,"plus269.js"],[88370,"schach.js"],[88602,"schachtaktik.js"],[88854,"fun270.js"],[89017,"data_neu274.js"],[89226,"plus272.js"],[89280,"spiele274.js"],[89403,"kasten.js"],[89507,"erklaer.js"],[89620,"apa.js"],[89701,"neu276.js"],[89842,"spiele276.js"],[89892,"neu277.js"],[90070,"spiele277.js"],[90325,"lernen278.js"],[90585,"spiele278.js"],[90928,"lernen279.js"],[91253,"lernen279b.js"],[91651,"spanisch280.js"],[91943,"spanisch283.js"],[92176,"mehr281.js"],[92322,"grafik280.js"],[92701,"tiefsee280.js"],[92979,"abenteuer280.js"],[93191,"abenteuer281.js"],[93303,"design281.js"],[93435,"party281.js"],[93566,"grafik281.js"],[93783,"traumtor292.js"],[93990,"kart293.js"],[94267,"lumi_live.js"],[94383,"sicher.js"],[94567,"stil.js"],[94621,"zurueck287.js"],[94664,"nfbilder300.js"],[94827,"formen300.js"],[95434,"musik300.js"],[95605,"lernweg300b.js"],[95728,"lernweg300c.js"],[95888,"espanol300.js"],[95994,"fabel310_bild.js"],[96245,"fabel310.js"],[96636,"eisbude310.js"],[96862,"turbo310.js"],[97067,"sumo310.js"],[97202,"beifahrer310.js"],[97277,"dreier310.js"],[97393,"ring310.js"],[97502,"loch330.js"],[97852,"reise340.js"],[97922,"fisch340.js"],[98478,"rutsche340.js"],[98889,"knobel340.js"],[99127,"frucht350.js"],[99432,"vulkan350.js"],[99675,"delfin350.js"],[99870,"musik350.js"],[100040,"arcade360.js"],[100156,"strasse360.js"],[100452,"blasen360.js"],[100660,"meer360.js"],[100829,"spirale360.js"],[100993,"sterne360.js"],[101200,"alt360a.js"],[101470,"alt360b.js"],[101663,"alt360c.js"],[101917,"alt360d.js"],[102080,"alt370a.js"],[102277,"alt370b.js"],[102481,"alt370c.js"],[102619,"gl390.js"],[102862,"lauf390.js"],[103371,"ab3_level.js"],[103716,"abenteuer400.js"],[104210,"figuren410.js"],[104305,"kart410.js"],[104658,"show410.js"],[104973,"ball410.js"],[105286,"fussball420.js"],[105711,"farbe420.js"],[105992,"flug430.js"],[106182,"sport430.js"],[106553,"insel440.js"],[106833,"buddel440.js"],[107192,"party450.js"],[107600,"tiere450.js"],[108012,"malbuch460a.js"],[108335,"malbuch460b.js"],[108587,"malbuch460c.js"],[108692,"malkunst590.js"],[109233,"airhockey470.js"],[109510,"zwei480.js"],[109544,"minigolf480.js"],[109821,"schneeball480.js"],[110119,"billard480.js"],[110344,"kissen490.js"],[110690,"gleiter490.js"],[111064,"koch490.js"],[111498,"pxzwei501.js"],[111521,"belohnung311.js"],[111682,"belohnung480.js"],[111763,"einst502.js"],[111802,"pixmal510_bilder.js"],[112114,"pixmal530_bilder.js"],[112236,"pixmal510.js"],[112838,"druck311.js"],[113020,"zwei580.js"],[113207,"gym550.js"],[113529,"gym550_mathe5.js"],[113797,"gym550_deutsch5.js"],[113999,"gym550_englisch5.js"],[114109,"gym550_nawi5.js"],[114372,"gym550_gesell5.js"],[114604,"gym550_mehr5.js"],[114758,"freunde.js"],[114895,"start.js"],[114905,null],[114915,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '6.0.0';
+  var MAP = {"probe":0,"files":[[11018,"fehler_kern.js"],[11306,null],[11308,"data.js"],[12023,"data_more.js"],[12395,"data_su2.js"],[12622,"data_es.js"],[12990,"data_wissen.js"],[13191,"data_v21.js"],[13876,"data_v24.js"],[14364,"data_v25.js"],[14853,"data_v26.js"],[14952,"data_v29.js"],[15260,"data_v30.js"],[15594,"data_v31.js"],[15900,"data_kunst.js"],[16097,"data_v214.js"],[16200,"data_v216.js"],[16493,"schrift.js"],[16797,"eingabe.js"],[17008,"data_k34m.js"],[17526,"data_k34d.js"],[17880,"data_k34s.js"],[18334,"data_v224.js"],[19207,"data_v225w.js"],[19576,"data_v225k.js"],[20020,"data_herz.js"],[20374,"data_fb226.js"],[20517,"data_tf226.js"],[20724,"data_v227a.js"],[21824,"data_v227b.js"],[22778,"data_h28b.js"],[22818,"data_l28a.js"],[23684,"data_l28b.js"],[24864,"data_schaetz.js"],[25346,"data_party8.js"],[25396,"data_alce.js"],[26067,"data_alce2.js"],[26316,"data_alce3.js"],[26731,"registry.js"],[27245,"app.js"],[28526,"fun.js"],[29114,"fun2.js"],[29430,"atelier.js"],[29804,"kunst225.js"],[29994,"herz.js"],[30358,"reise.js"],[30660,"iglu.js"],[30826,"offline.js"],[30936,"party.js"],[31420,"meine.js"],[31776,"loeffel.js"],[31947,"trend.js"],[32489,"fun228a.js"],[33350,"fun228b.js"],[34027,"kueche.js"],[35066,"stimme.js"],[35121,"klassen.js"],[35274,"freunde_vorab.js"],[35295,"mut.js"],[35717,"schule.js"],[36206,"fussball226.js"],[36528,"schaetzen.js"],[36959,"party8.js"],[37578,"tiere.js"],[38037,"fussball232.js"],[38252,"party8b.js"],[38554,"weg.js"],[38775,"px.js"],[39195,"px_fein.js"],[39249,"px_data.js"],[39506,"pxwelt.js"],[39590,"px_abenteuer.js"],[40419,"px_abenteuer2.js"],[41173,"px_abenteuer3.js"],[41564,"px_abenteuer4.js"],[41774,"px_baukasten.js"],[41883,"px_abenteuer_fein.js"],[42100,"px_abenteuer_fein2.js"],[42452,"px_abenteuer5.js"],[42859,"px_abenteuer6.js"],[43135,"px_abenteuer7.js"],[43491,"px_level300.js"],[44042,"px_schwach300.js"],[44116,"px_zwei300.js"],[44230,"lumicheckt300.js"],[44423,"schreiben300.js"],[44637,"rechenkarte300.js"],[44757,"lerncheck300.js"],[44980,"material300.js"],[45310,"lernweg300.js"],[45834,"px_ski.js"],[46476,"px_wurf.js"],[47005,"px_insel.js"],[48206,"px_kicker.js"],[49141,"px_eis.js"],[50127,"px_run.js"],[51342,"px_brk.js"],[52304,"px_pol.js"],[53655,"px_frog.js"],[54915,"px_angel.js"],[56230,"px_golf.js"],[57264,"px_tauch.js"],[58529,"px_hockey.js"],[59485,"px_lab.js"],[60820,"px_plopp.js"],[62026,"px_stadion.js"],[63537,"px_stadion2.js"],[63589,"px_training.js"],[63958,"cm.js"],[64448,"cmwelt.js"],[64504,"cm_baeck.js"],[65297,"cm_bahn.js"],[66061,"cm_detek.js"],[66778,"cm_markt.js"],[67491,"ff.js"],[67648,"ff_mathe.js"],[69638,"ff_deutsch.js"],[71226,"ff_sach_a.js"],[73475,"ff_sach_b.js"],[75704,"ff_sprachen.js"],[78112,"zm.js"],[79025,"tt.js"],[79238,"data_tagebuch.js"],[79281,"data_hoerspiel.js"],[79440,"leseecke.js"],[79767,"kt.js"],[80070,"comicbuch.js"],[80348,"alce.js"],[80511,"alce_aufg.js"],[80702,"formen.js"],[81153,"data_formen.js"],[81394,"data_formen2.js"],[81616,"spielzeit.js"],[81838,"data_faktmeinung.js"],[81957,"data_es248.js"],[82221,"data_en249.js"],[82460,"data_wissen249.js"],[82891,"data_kunst249.js"],[83174,"data_fussball250.js"],[83298,"data_werte252.js"],[83551,"data_lesen252.js"],[83612,"data_k34_252.js"],[83698,"art254.js"],[83816,"data_werte255.js"],[83954,"data_lesen255.js"],[84090,"forscher255.js"],[84238,"zufall250.js"],[84284,"stufe259.js"],[84294,"advent.js"],[84557,"wdh.js"],[84655,"eswarm288.js"],[84706,"abwechslung294.js"],[84781,"bilder293a.js"],[84871,"bilder293b.js"],[85001,"bilder293c.js"],[85099,"bilder293d.js"],[85221,"bilder293e.js"],[85385,"bilder293f.js"],[85465,"bilder292.js"],[85911,"denk.js"],[85948,"data_viaje265.js"],[86091,"klassenarbeit.js"],[86224,"quizduell.js"],[86347,"neu267.js"],[86612,"prog.js"],[86717,"lernstand.js"],[86784,"blatt.js"],[86886,"uebung295.js"],[87208,"schuh296.js"],[87416,"uebung297.js"],[87803,"minus298.js"],[88044,"schrift299.js"],[88172,"data_es271.js"],[88286,"plus269.js"],[88380,"schach.js"],[88612,"schachtaktik.js"],[88864,"fun270.js"],[89027,"data_neu274.js"],[89236,"plus272.js"],[89290,"spiele274.js"],[89413,"kasten.js"],[89517,"erklaer.js"],[89630,"apa.js"],[89711,"neu276.js"],[89852,"spiele276.js"],[89902,"neu277.js"],[90080,"spiele277.js"],[90335,"lernen278.js"],[90595,"spiele278.js"],[90938,"lernen279.js"],[91263,"lernen279b.js"],[91661,"spanisch280.js"],[91953,"spanisch283.js"],[92186,"mehr281.js"],[92332,"grafik280.js"],[92711,"tiefsee280.js"],[92989,"abenteuer280.js"],[93201,"abenteuer281.js"],[93313,"design281.js"],[93445,"party281.js"],[93576,"grafik281.js"],[93793,"traumtor292.js"],[94000,"kart293.js"],[94277,"lumi_live.js"],[94393,"sicher.js"],[94577,"stil.js"],[94631,"zurueck287.js"],[94674,"nfbilder300.js"],[94837,"formen300.js"],[95444,"musik300.js"],[95615,"lernweg300b.js"],[95738,"lernweg300c.js"],[95898,"espanol300.js"],[96004,"fabel310_bild.js"],[96255,"fabel310.js"],[96646,"eisbude310.js"],[96872,"turbo310.js"],[97077,"sumo310.js"],[97212,"beifahrer310.js"],[97287,"dreier310.js"],[97403,"ring310.js"],[97512,"loch330.js"],[97862,"reise340.js"],[97932,"fisch340.js"],[98488,"rutsche340.js"],[98899,"knobel340.js"],[99137,"frucht350.js"],[99442,"vulkan350.js"],[99685,"delfin350.js"],[99880,"musik350.js"],[100050,"arcade360.js"],[100166,"strasse360.js"],[100462,"blasen360.js"],[100670,"meer360.js"],[100839,"spirale360.js"],[101003,"sterne360.js"],[101210,"alt360a.js"],[101480,"alt360b.js"],[101673,"alt360c.js"],[101927,"alt360d.js"],[102090,"alt370a.js"],[102287,"alt370b.js"],[102491,"alt370c.js"],[102629,"gl390.js"],[102872,"lauf390.js"],[103381,"ab3_level.js"],[103726,"abenteuer400.js"],[104220,"figuren410.js"],[104315,"kart410.js"],[104668,"show410.js"],[104983,"ball410.js"],[105296,"fussball420.js"],[105721,"farbe420.js"],[106002,"flug430.js"],[106192,"sport430.js"],[106563,"insel440.js"],[106843,"buddel440.js"],[107202,"party450.js"],[107610,"tiere450.js"],[108022,"malbuch460a.js"],[108345,"malbuch460b.js"],[108597,"malbuch460c.js"],[108702,"malkunst590.js"],[109243,"airhockey470.js"],[109520,"zwei480.js"],[109554,"minigolf480.js"],[109831,"schneeball480.js"],[110129,"billard480.js"],[110354,"kissen490.js"],[110700,"gleiter490.js"],[111074,"koch490.js"],[111508,"pxzwei501.js"],[111531,"belohnung311.js"],[111692,"belohnung480.js"],[111773,"einst502.js"],[111812,"pixmal510_bilder.js"],[112124,"pixmal530_bilder.js"],[112246,"pixmal510.js"],[112848,"druck311.js"],[113030,"zwei580.js"],[113217,"gym550.js"],[113540,"gym550_mathe5.js"],[113808,"gym550_deutsch5.js"],[114010,"gym550_englisch5.js"],[114120,"gym550_nawi5.js"],[114383,"gym550_gesell5.js"],[114617,"gym550_mehr5.js"],[114771,"gym600_mathe6.js"],[115017,"gym600_deutsch6.js"],[115179,"gym600_englisch6.js"],[115332,"gym600_nawi6.js"],[115620,"gym600_gesell6.js"],[115825,"freunde.js"],[115962,"start.js"],[115972,null],[115982,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -27237,9 +27246,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '5.9.0';
+const APP_VERSION = '6.0.0';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "6.0.0", d: "23.11.2026", t: ["Gymnasium Klasse 6 ist da: 50 neue Themen in acht Fächern nach dem Kerncurriculum Niedersachsen", "Mathe Klasse 6 rechnet mit immer neuen Aufgaben, Brüche gibt man als 3/4 oder 1 1/4 ein. Bruchbilder und Winkel werden gezeichnet", "Im Elternbereich unter „Schule“ gibt es jetzt den Knopf „Gymnasium ansehen“", "Englische Antworten mit Apostroph werden jetzt immer erkannt, auch mit der iPad-Tastatur"] },
   { v: "5.9.0", d: "22.11.2026", t: ["Neue Ausmalbilder in viel feinerer Zeichnung: Muster-Bilder mit Eule, Katze, Fuchs, Igel, Hase, Schnecke, Schildkröte, Schmetterling, Einhorn, Fisch, Wal, Lumi und einem Fußball vor dem Tor", "Neu: Pracht-Mandalas mit Blütenblättern in zwei Lagen, Spitzenbögen, Perlen und kleinen Mandalas in den Ecken", "Jedes Bild gibt es in drei Stufen (Einfach, Normal, Viele Details) und immer wieder neu gemischt"] },
   { v: "5.8.0", d: "22.11.2026", t: ["Neu bei den Mathe-Arbeitsblättern: Spiele zu zweit zum Ausdrucken. Tic-Tac-Toe sowie drei, vier und fünf in einer Reihe: In jedem Feld steht eine Aufgabe, wer richtig rechnet, malt das Feld an. Ein Lösungsstreifen zum Prüfen ist unten auf dem Blatt", "Neu: Geburtstagsparty. Rund um einen Tisch sitzen Gäste mit Zahlen. Würfeln, rechnen und den passenden Platz anmalen, die längste Reihe nebeneinander gewinnt", "Alle Spiele gibt es in fünf Stufen: bis 20 plus, bis 20 plus und minus, bis 100, Einmaleins und bis 1000"] },
   { v: "5.7.1", d: "22.11.2026", t: ["Arbeitsblätter aus den Lernspielen: Bild und Satz jeder Aufgabe passen jetzt auch beim Drucken auf dem iPad in ihr Kästchen. Vorher lag dort manchmal der Kreis hinter dem Bild über dem Satzanfang", "Die Sätze auf diesen Blättern sind größer und besser lesbar. Ist eine Aufgabe zu groß für ihr Kästchen, wird sie etwas kleiner gedruckt statt abgeschnitten", "Blätter mit langen Lesetexten, Diagrammen, Fahrplänen, Karten oder Zahlenstrahlen haben jetzt 4 Aufgaben in großen Kästchen statt 8 in kleinen"] },
@@ -113292,7 +113302,7 @@ function gymZahl(s) {
   else if (/^-?\d{1,3}(\.\d{3})+$/.test(t)) t = t.replace(/\./g, '');
   return /^-?\d+(\.\d+)?$/.test(t) ? parseFloat(t) : NaN;
 }
-const gymText = (s, gross) => { const t = String(s).replace(/[„“"‚‘']/g, '').replace(/\s+/g, ' ').trim().replace(/[.!]$/, ''); return gross ? t : t.toLowerCase(); };
+const gymText = (s, gross) => { const t = String(s).replace(/[„“”"‚‘’']/g, '').replace(/\s*\/\s*/g, '/').replace(/\s+/g, ' ').trim().replace(/[.!]$/, ''); return gross ? t : t.toLowerCase(); };
 function gymTokens(satz) {
   return String(satz).split(/\s+/).filter(Boolean).map(w => {
     const m = w.match(/^([„"(‚]*)\*(.+?)\*(.*)$/);
@@ -113353,7 +113363,8 @@ function gymHomeCard() {
 function gymParentsHTML() {
   const an = gymAn(), ich = gymSt().ich || 0;
   return `<div class="field" style="margin-top:12px"><span class="lab">Klasse am Gymnasium<small class="muted" style="display:block;font-size:13px">Wird nach Klasse 4 im August abgefragt und danach jedes Schuljahr. „noch nicht“ heißt: noch in der Grundschule.</small></span><div class="seg">${[0, 5, 6, 7, 8, 9, 10, 11, 12, 13].map(n => `<button class="${n === ich ? 'sel' : ''}" data-act="pgymkl" data-k="${n}">${n ? n : 'noch nicht'}</button>`).join('')}</div></div>
-    <div class="row"><span class="lab">🎓 Gymnasium (Klasse 5 bis 10)<small>Eigener Bereich mit schlichterem Look für später, nach dem Kerncurriculum Gymnasium Niedersachsen. Zurzeit gibt es Klasse 5. Eingeschaltet erscheint die Karte „Gymnasium“ auf der Startseite.</small></span><button class="switch ${an ? 'on' : ''}" role="switch" aria-checked="${an}" aria-label="Gymnasium auf der Startseite zeigen" data-act="pgym"></button></div>`;
+    <div class="row"><span class="lab">🎓 Gymnasium ansehen<small>Klasse 5 und 6 sind fertig: ${GYM_THEMEN.filter(t => t.kl <= 6).length} Themen in acht Fächern, nach dem Kerncurriculum Gymnasium Niedersachsen. Hier könnt ihr hineinschauen, auch wenn die Karte auf der Startseite aus ist.</small></span><button class="btn sm" data-act="gymopen">Öffnen</button></div>
+    <div class="row"><span class="lab">🎓 Gymnasium auf der Startseite<small>Eingeschaltet erscheint die Karte „Gymnasium“ auf der Startseite der Lernwelt.</small></span><button class="switch ${an ? 'on' : ''}" role="switch" aria-checked="${an}" aria-label="Gymnasium auf der Startseite zeigen" data-act="pgym"></button></div>`;
 }
 function showGym() {
   stopTimers(); G = null; GYM = null; const st = gymSt(), kl = st.kl;
@@ -113368,7 +113379,7 @@ function showGym() {
       <h1 class="gym-h1">Gymnasium</h1><p class="gym-sub">Kerncurriculum Niedersachsen · Klasse ${kl}${st.ich === kl ? ' · deine Klasse' : ''}</p>
       ${typeof gymExtraKarte === 'function' ? (() => { try { return gymExtraKarte(); } catch (e) { return ''; } })() : ''}
       <div class="gym-kls" role="group" aria-label="Klasse">${GYM_KLASSEN.map(k => `<button class="gym-kl${k === kl ? ' an' : ''}" data-act="gymkl" data-k="${k}" aria-pressed="${k === kl}">${k}</button>`).join('')}</div>
-      ${hat ? '' : `<p class="gym-hinweis">Klasse ${kl} ist noch in Arbeit. Fertig ist bisher Klasse 5.</p>`}
+      ${hat ? '' : `<p class="gym-hinweis">Klasse ${kl} ist noch in Arbeit. Fertig sind bisher Klasse 5 und 6.</p>`}
       <div class="gym-faecher">${kacheln}</div>
       <p class="gym-fuss">${st.ich > 10 ? `Du bist in Klasse ${st.ich}. Die Oberstufe kommt später dazu, bis dahin kannst du hier alles bis Klasse 10 wiederholen. ` : ''}Jede Runde hat 10 Aufgaben mit Erklärung. Eine gute Runde bringt Münzen für die Lernwelt. Der Fortschritt bleibt auf diesem Gerät und kommt mit in die Sicherung.</p>
     </div></div>`);
@@ -114374,6 +114385,8 @@ gymThema({ id: 'c5-saeuren', f: 'chemie', kl: 5, t: 'Sauer, neutral, alkalisch',
 
 const GK_LAENDER = [['Baden-Württemberg', 'Stuttgart'], ['Bayern', 'München'], ['Brandenburg', 'Potsdam'], ['Hessen', 'Wiesbaden'], ['Mecklenburg-Vorpommern', 'Schwerin'], ['Niedersachsen', 'Hannover'],
   ['Nordrhein-Westfalen', 'Düsseldorf'], ['Rheinland-Pfalz', 'Mainz'], ['Saarland', 'Saarbrücken'], ['Sachsen', 'Dresden'], ['Sachsen-Anhalt', 'Magdeburg'], ['Schleswig-Holstein', 'Kiel'], ['Thüringen', 'Erfurt']];
+
+const gymVonLand = l => ({ Schweiz: 'der Schweiz', Niederlande: 'den Niederlanden', Slowakei: 'der Slowakei', Türkei: 'der Türkei', Ukraine: 'der Ukraine' })[l] || l;
 const GK_EUROPA = [['Frankreich', 'Paris'], ['Spanien', 'Madrid'], ['Italien', 'Rom'], ['Polen', 'Warschau'], ['Österreich', 'Wien'], ['Schweiz', 'Bern'], ['Niederlande', 'Amsterdam'], ['Belgien', 'Brüssel'],
   ['Dänemark', 'Kopenhagen'], ['Schweden', 'Stockholm'], ['Norwegen', 'Oslo'], ['Finnland', 'Helsinki'], ['Portugal', 'Lissabon'], ['Griechenland', 'Athen'], ['Tschechien', 'Prag'], ['Ungarn', 'Budapest'],
   ['Irland', 'Dublin'], ['Vereinigtes Königreich', 'London'], ['Kroatien', 'Zagreb'], ['Rumänien', 'Bukarest'], ['Bulgarien', 'Sofia'], ['Slowakei', 'Bratislava'], ['Litauen', 'Vilnius'], ['Lettland', 'Riga'], ['Estland', 'Tallinn'], ['Island', 'Reykjavík']];
@@ -114503,8 +114516,8 @@ gymThema({ id: 'ek5-europa', f: 'erdkunde', kl: 5, t: 'Europa',
     ['w', 'Welcher ist der längste Fluss Europas?', 'Wolga', ['Rhein', 'Donau', 'Elbe']],
     ['w', 'Welches Gebirge liegt zwischen Frankreich und Spanien?', 'die Pyrenäen', ['die Alpen', 'der Apennin', 'der Ural']],
     ['k', 'Liegt die Hauptstadt am Meer?', [['am Meer', ['Kopenhagen', 'Tallinn', 'Oslo', 'Helsinki']], ['nicht am Meer', ['Madrid', 'Prag', 'Wien', 'Budapest']]]]],
-  gen: [() => { const [l, h] = R.pick(GK_EUROPA); return ['w', `Wie heißt die Hauptstadt von ${l}?`, h, R.sample(GK_EUROPA.filter(x => x[1] !== h), 3).map(x => x[1])]; },
-    () => { const [l, h] = R.pick(GK_EUROPA); return ['w', `${h} ist die Hauptstadt von …`, l, R.sample(GK_EUROPA.filter(x => x[0] !== l), 3).map(x => x[0])]; }],
+  gen: [() => { const [l, h] = R.pick(GK_EUROPA); return ['w', `Wie heißt die Hauptstadt von ${gymVonLand(l)}?`, h, R.sample(GK_EUROPA.filter(x => x[1] !== h), 3).map(x => x[1])]; },
+    () => { const [l, h] = R.pick(GK_EUROPA); return ['w', `${h} ist die Hauptstadt welches Landes?`, l, R.sample(GK_EUROPA.filter(x => x[0] !== l), 3).map(x => x[0])]; }],
   anteil: .4 });
 
 
@@ -114754,6 +114767,1060 @@ gymMehr('g5-griechen', [['w', 'Wer war Homer?', 'ein Dichter, dem die Ilias und 
 
 gymMehr('g5-roemer', [['w', 'Was war das Kolosseum in Rom?', 'ein großes Amphitheater für Spiele und Gladiatorenkämpfe', ['ein Kaiserpalast', 'eine Kirche', 'ein Hafen']],
   ['w', 'Welche Sprache sprachen die Römer?', 'Latein', ['Griechisch', 'Italienisch', 'Germanisch']]]);
+
+/*@@src gym600_mathe6.js@@*/
+
+
+
+const g6ggT = (a, b) => b ? g6ggT(b, a % b) : Math.abs(a);
+const g6kgV = (a, b) => a / g6ggT(a, b) * b;
+const g6K = (z, n) => { const g = g6ggT(z, n) || 1; return [z / g, n / g]; };
+const g6B = (z, n) => { const [a, b] = g6K(z, n); return b === 1 ? String(a) : `${a}/${b}`; };
+const g6Gem = (z, n) => { const [a, b] = g6K(z, n); if (b === 1) return String(a); return a > b ? `${Math.floor(a / b)} ${a % b}/${b}` : `${a}/${b}`; };
+const g6Ans = (z, n) => [...new Set([g6B(z, n), g6Gem(z, n)])];
+const g6Komma = x => String(+x.toFixed(6)).replace('.', ',');
+
+function g6BruchSVG(z, n, art) {
+  let g = '';
+  if (art === 'kreis') {
+    const r = 70, c = 80;
+    for (let i = 0; i < n; i++) { const a0 = (i / n) * 2 * Math.PI - Math.PI / 2, a1 = ((i + 1) / n) * 2 * Math.PI - Math.PI / 2, gr = 1 / n > .5 ? 1 : 0;
+      g += `<path d="M${c} ${c} L${(c + r * Math.cos(a0)).toFixed(1)} ${(c + r * Math.sin(a0)).toFixed(1)} A${r} ${r} 0 ${gr} 1 ${(c + r * Math.cos(a1)).toFixed(1)} ${(c + r * Math.sin(a1)).toFixed(1)} Z" class="${i < z ? 'bf' : 'bw'}"/>`; }
+    return `<svg class="gym-svg" viewBox="0 0 160 160" width="160" height="160" role="img" aria-label="Kreis in ${n} gleiche Teile geteilt">${g}</svg>`;
+  }
+  const w = 240, h = 60, s = w / n;
+  for (let i = 0; i < n; i++) g += `<rect x="${(10 + i * s).toFixed(1)}" y="10" width="${s.toFixed(1)}" height="${h}" class="${i < z ? 'bf' : 'bw'}"/>`;
+  return `<svg class="gym-svg" viewBox="0 0 260 80" width="260" height="80" role="img" aria-label="Streifen in ${n} gleiche Teile geteilt">${g}</svg>`;
+}
+
+function g6WinkelSVG(w) {
+  const c = [40, 120], L = 120, a = w * Math.PI / 180, x2 = c[0] + L * Math.cos(-a), y2 = c[1] + L * Math.sin(-a), r = 30, gr = w > 180 ? 1 : 0;
+  const bx = c[0] + r * Math.cos(-a), by = c[1] + r * Math.sin(-a);
+  return `<svg class="gym-svg" viewBox="0 0 200 ${w > 180 ? 200 : 140}" width="200" height="${w > 180 ? 200 : 140}" role="img" aria-label="Winkel"><path d="M${c[0] + L} ${c[1]} L${c[0]} ${c[1]} L${x2.toFixed(1)} ${y2.toFixed(1)}" class="bl"/><path d="M${c[0] + r} ${c[1]} A${r} ${r} 0 ${gr} 0 ${bx.toFixed(1)} ${by.toFixed(1)}" class="bl" style="stroke-width:1.5"/></svg>`;
+}
+
+gymThema({ id: 'm6-brueche', f: 'mathe', kl: 6, t: 'Brüche und Anteile',
+  merk: ['Ein Bruch hat einen Zähler (oben) und einen Nenner (unten): 3/4 heißt 3 von 4 gleich großen Teilen.',
+    'Der Nenner sagt, in wie viele gleiche Teile das Ganze geteilt ist. Der Zähler sagt, wie viele Teile man nimmt.',
+    'Echte Brüche sind kleiner als 1 (Zähler kleiner als Nenner). Unechte Brüche sind größer oder gleich 1, zum Beispiel 7/4.',
+    'Gemischte Zahl: 7/4 = 1 3/4, denn 7 Viertel sind ein Ganzes (4 Viertel) und 3 Viertel.',
+    'Bruchteil einer Größe: 3/4 von 20 € = 20 € : 4 · 3 = 15 €. Erst durch den Nenner teilen, dann mit dem Zähler malnehmen.'],
+  a: [['w', 'Wie heißt die Zahl oben im Bruch 5/8?', 'Zähler', ['Nenner', 'Bruchstrich', 'Teiler']],
+    ['rf', '7/7 ist dasselbe wie 1.', true],
+    ['rf', '3/2 ist ein echter Bruch.', false, '3/2 ist größer als 1, also ein unechter Bruch.'],
+    ['w', 'Welche gemischte Zahl ist 11/4?', '2 3/4', ['2 1/4', '3 3/4', '1 7/4']],
+    ['e', 'Schreibe 2 1/3 als unechten Bruch.', '7/3', '2 Ganze sind 6 Drittel, dazu 1 Drittel: 7/3.'],
+    ['w', 'Eine Klasse hat 28 Kinder, 3/4 davon fahren mit dem Bus. Wie viele sind das?', '21', ['7', '12', '24'], '28 : 4 = 7, 7 · 3 = 21.'],
+    ['e', 'Wie viele Minuten sind 3/4 Stunde?', '45', '60 : 4 · 3 = 45.', { einheit: 'min' }],
+    ['w', 'Welcher Bruch ist ein Stammbruch (Zähler 1)?', '1/9', ['2/9', '9/1', '9/10']],
+    ['z', 'Ordne zu.', [['1/2', 'die Hälfte'], ['1/4', 'ein Viertel'], ['3/4', 'drei Viertel'], ['1/3', 'ein Drittel'], ['1/10', 'ein Zehntel']]]],
+  gen: [
+    () => { const n = R.pick([3, 4, 5, 6, 8, 10, 12]), z = R.int(1, n - 1), art = R.pick(['kreis', 'streifen']); return ['e', 'Welcher Bruchteil ist gefärbt? Schreibe als Bruch, zum Beispiel 2/5.', [...new Set([`${z}/${n}`, g6B(z, n)])], `${z} von ${n} gleich großen Teilen sind gefärbt.${g6B(z, n) !== `${z}/${n}` ? ` Gekürzt ist das ${g6B(z, n)}.` : ''}`, { bild: g6BruchSVG(z, n, art) }]; },
+    () => { const n = R.pick([2, 3, 4, 5, 6, 8, 10]), z = R.int(1, n - 1), g = n * R.int(2, 12); return ['e', `Berechne ${z}/${n} von ${g} €.`, String(g / n * z), `${g} € : ${n} = ${g / n} €, mal ${z} = ${g / n * z} €.`, { einheit: '€' }]; },
+    () => { const n = R.pick([2, 3, 4, 5, 6, 8]), ganz = R.int(1, 4), z = R.int(1, n - 1); return ['e', `Schreibe ${ganz} ${z}/${n} als unechten Bruch.`, `${ganz * n + z}/${n}`, `${ganz} Ganze sind ${ganz * n}/${n}, dazu ${z}/${n}.`]; },
+    () => { const n = R.pick([3, 4, 5, 6, 8]), z = n * R.int(1, 3) + R.int(1, n - 1); if (g6ggT(z, n) !== 1) return null; return ['e', `Schreibe ${z}/${n} als gemischte Zahl.`, `${Math.floor(z / n)} ${z % n}/${n}`, `${z} : ${n} = ${Math.floor(z / n)} Rest ${z % n}.`]; },
+    () => { const [n, e, f] = R.pick([[4, 'Stunde', 60], [3, 'Stunde', 60], [5, 'Kilometer', 1000], [4, 'Kilogramm', 1000], [10, 'Meter', 100]]), z = R.int(1, n - 1), ein = { Stunde: 'min', Kilometer: 'm', Kilogramm: 'g', Meter: 'cm' }[e]; return ['e', `Wie viel sind ${z}/${n} ${e}? Antworte in ${ein}.`, String(f / n * z), '', { einheit: ein }]; },
+    () => { const n = R.pick([4, 5, 6, 8, 10]), z = R.int(1, n - 1), ganz = n * R.int(2, 6), teil = ganz / n * z; return ['e', `${teil} von ${ganz} Kindern spielen ein Instrument. Welcher Anteil ist das? Gib den Bruch vollständig gekürzt an.`, g6B(teil, ganz), `${teil}/${ganz} = ${g6B(teil, ganz)}.`]; }
+  ] });
+
+gymThema({ id: 'm6-kuerzen', f: 'mathe', kl: 6, t: 'Erweitern, Kürzen und Vergleichen',
+  merk: ['Erweitern: Zähler und Nenner mit derselben Zahl malnehmen. 2/3 = 8/12 (mit 4 erweitert). Der Wert bleibt gleich.',
+    'Kürzen: Zähler und Nenner durch dieselbe Zahl teilen. 12/18 = 2/3 (mit 6 gekürzt).',
+    'Vollständig gekürzt ist ein Bruch, wenn Zähler und Nenner keinen gemeinsamen Teiler außer 1 haben. Am schnellsten kürzt man mit dem größten gemeinsamen Teiler (ggT).',
+    'Vergleichen: Bei gleichem Nenner ist der Bruch mit dem größeren Zähler größer. Sonst erst auf einen gemeinsamen Nenner (Hauptnenner) bringen.',
+    'Bei gleichem Zähler ist der Bruch mit dem kleineren Nenner größer: 3/5 > 3/7.'],
+  a: [['rf', 'Beim Kürzen wird der Bruch kleiner.', false, 'Der Wert bleibt gleich, nur Zähler und Nenner werden kleiner.'],
+    ['w', 'Welcher Bruch ist gleich 3/4?', '9/12', ['6/12', '3/8', '4/3']],
+    ['w', 'Welcher Bruch ist größer?', '3/5', ['3/7', '3/8', '3/10'], 'Gleicher Zähler: Der kleinere Nenner gibt größere Teile.'],
+    ['w', 'Welcher Bruch lässt sich nicht mehr kürzen?', '7/12', ['6/9', '10/15', '4/14']],
+    ['e', 'Was ist der kleinste gemeinsame Nenner von 1/4 und 1/6?', '12', 'Das kleinste gemeinsame Vielfache von 4 und 6 ist 12.'],
+    ['o', 'Ordne von klein nach groß.', ['1/4', '1/3', '1/2', '2/3']],
+    ['e', 'Kürze 45/60 vollständig.', '3/4', 'ggT(45, 60) = 15.'],
+    ['w', 'Mit welcher Zahl wurde erweitert: 5/6 = 35/42?', '7', ['5', '6', '8']]],
+  gen: [
+    () => { const n = R.pick([3, 4, 5, 6, 7, 8, 9, 10]), z = R.int(1, n - 1); if (g6ggT(z, n) !== 1) return null; const k = R.int(2, 9); return ['e', `Kürze ${z * k}/${n * k} vollständig.`, `${z}/${n}`, `ggT(${z * k}, ${n * k}) = ${k}. Zähler und Nenner durch ${k} teilen.`]; },
+    () => { const n = R.pick([3, 4, 5, 6, 8]), z = R.int(1, n - 1), k = R.int(2, 8); return ['e', `Erweitere ${z}/${n} auf den Nenner ${n * k}. Welcher Zähler gehört dazu?`, String(z * k), `${n} · ${k} = ${n * k}, also auch ${z} · ${k} = ${z * k}.`]; },
+    () => { const a = R.pick([2, 3, 4, 5, 6, 8, 10, 12]), b = R.pick([3, 4, 5, 6, 8, 9, 10, 12]); if (a === b) return null; const za = R.int(1, a - 1), zb = R.int(1, b - 1); const x = za / a, y = zb / b; if (Math.abs(x - y) < 1e-9) return null; const hn = g6kgV(a, b);
+      return ['w', `Welches Zeichen passt?  ${za}/${a} … ${zb}/${b}`, x < y ? '<' : '>', [x < y ? '>' : '<', '='], `Auf den Nenner ${hn} bringen: ${za * hn / a}/${hn} und ${zb * hn / b}/${hn}.`]; },
+    () => { const a = R.pick([2, 3, 4, 5, 6, 8, 9, 10, 12, 15]), b = R.pick([3, 4, 6, 8, 9, 10, 12, 15]); if (a === b) return null; return ['e', `Bestimme den Hauptnenner (kleinster gemeinsamer Nenner) von 1/${a} und 1/${b}.`, String(g6kgV(a, b)), `Das kleinste gemeinsame Vielfache von ${a} und ${b} ist ${g6kgV(a, b)}.`]; },
+    () => { const a = R.int(2, 9) * R.pick([2, 3, 4, 5, 6]), b = R.int(2, 9) * R.pick([2, 3, 4, 5, 6]); if (a === b) return null; return ['e', `Bestimme den größten gemeinsamen Teiler: ggT(${a}, ${b}).`, String(g6ggT(a, b))]; },
+    () => { const n = R.pick([5, 6, 7, 8, 9, 10, 12]), L = R.sample([...Array(n - 1).keys()].map(i => i + 1), 4).map(z => [z, n]); return ['o', 'Ordne von klein nach groß.', L.sort((p, q) => p[0] - q[0]).map(([z, m]) => `${z}/${m}`)]; }
+  ] });
+
+gymThema({ id: 'm6-bruchplus', f: 'mathe', kl: 6, t: 'Brüche addieren und subtrahieren',
+  merk: ['Gleichnamige Brüche (gleicher Nenner): Zähler addieren oder subtrahieren, der Nenner bleibt. 2/7 + 3/7 = 5/7.',
+    'Ungleichnamige Brüche: zuerst auf den Hauptnenner erweitern. 1/4 + 1/6 = 3/12 + 2/12 = 5/12.',
+    'Nie Nenner und Nenner addieren! 1/2 + 1/2 ist 2/2 = 1 und nicht 2/4.',
+    'Gemischte Zahlen: Ganze und Brüche getrennt rechnen oder in unechte Brüche umwandeln.',
+    'Am Ende vollständig kürzen.'],
+  a: [['rf', '1/3 + 1/3 = 2/6', false, 'Der Nenner bleibt: 1/3 + 1/3 = 2/3.'],
+    ['w', 'Was ist 1/2 + 1/4?', '3/4', ['2/6', '2/4', '1/6']],
+    ['w', 'Was ist 1 − 3/8?', '5/8', ['3/8', '2/8', '7/8']],
+    ['e', 'Lena isst 1/4 einer Pizza, ihr Bruder 1/3. Welcher Anteil der Pizza ist gegessen? Gib den Bruch an.', '7/12', '1/4 + 1/3 = 3/12 + 4/12 = 7/12.'],
+    ['e', 'Ein Glas ist 3/4 voll. Tom trinkt 1/2 Glas. Wie viel ist noch drin? Gib den Bruch an.', '1/4', '3/4 − 2/4 = 1/4.'],
+    ['w', 'Was ist 2 1/2 + 1 3/4?', '4 1/4', ['3 4/6', '3 1/4', '4 3/4'], '2 + 1 = 3 und 1/2 + 3/4 = 5/4 = 1 1/4, zusammen 4 1/4.']],
+  gen: [
+    () => { const n = R.pick([5, 7, 8, 9, 10, 11, 12]), a = R.int(1, n - 2), b = R.int(1, n - a - 1); return ['e', `Berechne ${a}/${n} + ${b}/${n}. Gib das Ergebnis vollständig gekürzt an.`, g6B(a + b, n), `Gleicher Nenner: ${a} + ${b} = ${a + b}, also ${a + b}/${n}${g6B(a + b, n) !== `${a + b}/${n}` ? ` = ${g6B(a + b, n)}` : ''}.`]; },
+    () => { const n = R.pick([5, 7, 8, 9, 10, 12]), a = R.int(2, n - 1), b = R.int(1, a - 1); return ['e', `Berechne ${a}/${n} − ${b}/${n}. Gib das Ergebnis vollständig gekürzt an.`, g6B(a - b, n)]; },
+    () => { const [p, q] = R.pick([[2, 3], [2, 5], [3, 4], [4, 6], [2, 6], [3, 6], [4, 8], [3, 5], [6, 8], [4, 10], [5, 10], [6, 9]]), a = R.int(1, p - 1), b = R.int(1, q - 1), hn = g6kgV(p, q), z = a * hn / p + b * hn / q;
+      return ['e', `Berechne ${a}/${p} + ${b}/${q}. Gib das Ergebnis vollständig gekürzt an, gern auch als gemischte Zahl.`, g6Ans(z, hn), `Hauptnenner ${hn}: ${a * hn / p}/${hn} + ${b * hn / q}/${hn} = ${z}/${hn}.`]; },
+    () => { const [p, q] = R.pick([[2, 3], [2, 5], [3, 4], [2, 6], [3, 6], [4, 8], [3, 5], [4, 6], [5, 10]]), a = R.int(1, p - 1), b = R.int(1, q - 1), hn = g6kgV(p, q), z = a * hn / p - b * hn / q; if (z <= 0) return null;
+      return ['e', `Berechne ${a}/${p} − ${b}/${q}. Gib das Ergebnis vollständig gekürzt an.`, g6B(z, hn), `Hauptnenner ${hn}: ${a * hn / p}/${hn} − ${b * hn / q}/${hn} = ${z}/${hn}.`]; },
+    () => { const n = R.pick([3, 4, 5, 8]), a = R.int(1, n - 1); return ['e', `Wie viel fehlt von ${a}/${n} bis zu einem Ganzen? Gib den Bruch an.`, [...new Set([g6B(n - a, n), `${n - a}/${n}`])], `Ein Ganzes sind ${n}/${n}. ${n}/${n} − ${a}/${n} = ${n - a}/${n}.`]; }
+  ] });
+
+gymThema({ id: 'm6-bruchmal', f: 'mathe', kl: 6, t: 'Brüche multiplizieren und dividieren',
+  merk: ['Bruch mal natürliche Zahl: nur den Zähler malnehmen. 2/7 · 3 = 6/7.',
+    'Bruch mal Bruch: Zähler mal Zähler und Nenner mal Nenner. 2/3 · 3/5 = 6/15 = 2/5. Vorher kürzen spart Arbeit.',
+    '„von“ heißt mal: 1/2 von 3/4 ist 1/2 · 3/4 = 3/8.',
+    'Durch einen Bruch teilen heißt mit dem Kehrwert malnehmen. Der Kehrwert von 3/4 ist 4/3. 2/5 : 3/4 = 2/5 · 4/3 = 8/15.',
+    'Bruch durch natürliche Zahl: den Nenner malnehmen. 4/5 : 2 = 4/10 = 2/5.'],
+  a: [['w', 'Was ist der Kehrwert von 5/8?', '8/5', ['5/8', '1/8', '3/8']],
+    ['rf', 'Wenn man mit einem echten Bruch malnimmt, wird das Ergebnis kleiner.', true, 'Zum Beispiel 10 · 1/2 = 5.'],
+    ['rf', 'Wenn man durch 1/2 teilt, wird das Ergebnis kleiner.', false, 'Durch 1/2 teilen heißt mal 2. 6 : 1/2 = 12.'],
+    ['w', 'Was ist die Hälfte von 3/4?', '3/8', ['3/2', '6/4', '1/4']],
+    ['e', 'Wie viele Viertel passen in 3 Ganze?', '12', '3 : 1/4 = 3 · 4 = 12.'],
+    ['w', 'Ein Rezept für 4 Personen braucht 3/4 Liter Milch. Wie viel braucht man für 2 Personen?', '3/8 Liter', ['3/2 Liter', '1/4 Liter', '3/4 Liter'], '3/4 : 2 = 3/8.']],
+  gen: [
+    () => { const n = R.pick([3, 4, 5, 7, 8, 9]), z = R.int(1, n - 1), k = R.int(2, 6); return ['e', `Berechne ${z}/${n} · ${k}. Gib das Ergebnis vollständig gekürzt an, gern auch als gemischte Zahl.`, g6Ans(z * k, n)]; },
+    () => { const a = R.int(1, 5), b = R.int(a + 1, 9), c = R.int(1, 6), d = R.int(c + 1, 9); return ['e', `Berechne ${a}/${b} · ${c}/${d}. Gib das Ergebnis vollständig gekürzt an.`, g6B(a * c, b * d), `${a} · ${c} = ${a * c} und ${b} · ${d} = ${b * d}, also ${a * c}/${b * d}${g6B(a * c, b * d) !== `${a * c}/${b * d}` ? ` = ${g6B(a * c, b * d)}` : ''}.`]; },
+    () => { const a = R.int(1, 5), b = R.int(a + 1, 8), c = R.int(1, 5), d = R.int(c + 1, 8); return ['e', `Berechne ${a}/${b} : ${c}/${d}. Gib das Ergebnis vollständig gekürzt an, gern auch als gemischte Zahl.`, g6Ans(a * d, b * c), `Mit dem Kehrwert malnehmen: ${a}/${b} · ${d}/${c} = ${a * d}/${b * c}.`]; },
+    () => { const n = R.pick([3, 5, 7, 9]), z = R.int(1, n - 1), k = R.int(2, 5); return ['e', `Berechne ${z}/${n} : ${k}. Gib das Ergebnis vollständig gekürzt an.`, g6B(z, n * k), `Den Nenner malnehmen: ${z}/${n * k}.`]; },
+    () => { const n = R.pick([2, 3, 4, 5, 8]), k = R.int(2, 6); return ['e', `Wie oft passt 1/${n} in ${k}?`, String(n * k), `${k} : 1/${n} = ${k} · ${n} = ${n * k}.`]; }
+  ] });
+
+gymThema({ id: 'm6-dezimal', f: 'mathe', kl: 6, t: 'Dezimalzahlen',
+  merk: ['Nach dem Komma kommen Zehntel (z), Hundertstel (h) und Tausendstel (t): 3,47 = 3 Einer, 4 Zehntel, 7 Hundertstel.',
+    'Zehnerbrüche lassen sich direkt umschreiben: 7/10 = 0,7 und 23/100 = 0,23 und 5/1000 = 0,005.',
+    'Andere Brüche erweitert man auf 10, 100 oder 1000: 3/4 = 75/100 = 0,75. Oder man teilt den Zähler durch den Nenner.',
+    'Wichtige Werte: 1/2 = 0,5 · 1/4 = 0,25 · 3/4 = 0,75 · 1/5 = 0,2 · 1/8 = 0,125.',
+    'Manche Brüche geben periodische Dezimalzahlen: 1/3 = 0,333… = 0,3 mit Strich über der 3.',
+    'Endnullen ändern den Wert nicht: 0,5 = 0,50 = 0,500. Beim Vergleichen Stelle für Stelle von links vergleichen.'],
+  a: [['w', 'Welche Zahl ist am größten?', '0,7', ['0,65', '0,069', '0,6999']],
+    ['rf', '0,40 ist größer als 0,4.', false, 'Endnullen ändern nichts: 0,40 = 0,4.'],
+    ['w', 'Welche Ziffer steht in 5,382 an der Hundertstelstelle?', '8', ['3', '2', '5']],
+    ['e', 'Schreibe 3/4 als Dezimalzahl.', '0,75'],
+    ['e', 'Schreibe 1/8 als Dezimalzahl.', '0,125'],
+    ['w', 'Wie schreibt man 2/3 als Dezimalzahl?', '0,666… (periodisch)', ['0,23', '0,6', '2,3']],
+    ['z', 'Ordne zu.', [['1/2', '0,5'], ['1/4', '0,25'], ['1/5', '0,2'], ['3/4', '0,75'], ['1/10', '0,1']]],
+    ['w', 'Welche Zahl liegt zwischen 0,3 und 0,4?', '0,35', ['0,29', '0,41', '0,034']]],
+  gen: [
+    () => { const [n, k] = R.pick([[10, 1], [100, 2], [1000, 3]]), z = R.int(1, n - 1); if (z % 10 === 0 && n > 10) return null; return ['e', `Schreibe ${z}/${n} als Dezimalzahl.`, g6Komma(z / n)]; },
+    () => { const x = R.int(1, 999) / 1000; if (x * 100 % 1 === 0 && x * 10 % 1 === 0) return null; const s = g6Komma(x), z = Math.round(x * 1000), [a, b] = g6K(z, 1000); return ['e', `Schreibe ${s} als Bruch und kürze vollständig.`, `${a}/${b}`]; },
+    () => { const [b, d] = R.pick([[2, 5], [4, 25], [5, 20], [20, 5], [25, 4], [50, 2]]), z = R.int(1, b - 1); if (g6ggT(z, b) !== 1) return null; return ['e', `Schreibe ${z}/${b} als Dezimalzahl. Tipp: erweitern mit ${d}.`, g6Komma(z / b)]; },
+    () => { const x = R.int(100, 9999) / 1000, [st, f] = R.pick([['Zehntel', 10], ['Hundertstel', 100]]); return ['e', `Runde ${g6Komma(x)} auf ${st}.`, (Math.round(x * f + 1e-9) / f).toFixed(f === 10 ? 1 : 2).replace('.', ','), 'Beim Runden bleibt die letzte Stelle stehen, auch wenn sie 0 ist.']; },
+    () => { const L = new Set(); while (L.size < 4) L.add(R.int(1, 99) / R.pick([10, 100, 1000])); const z = [...L]; return ['o', 'Ordne von klein nach groß.', z.sort((p, q) => p - q).map(g6Komma)]; },
+    () => { const a = R.int(1, 99) / 100, b = R.int(1, 99) / 100; if (a === b) return null; return ['w', `Welches Zeichen passt?  ${g6Komma(a)} … ${g6Komma(b)}`, a < b ? '<' : '>', [a < b ? '>' : '<', '=']]; }
+  ] });
+
+gymThema({ id: 'm6-dezrechnen', f: 'mathe', kl: 6, t: 'Rechnen mit Dezimalzahlen',
+  merk: ['Addieren und Subtrahieren: Komma unter Komma schreiben, fehlende Stellen mit Nullen auffüllen.',
+    'Multiplizieren: erst ohne Komma rechnen. Das Ergebnis hat so viele Nachkommastellen wie beide Zahlen zusammen. 0,3 · 0,2 = 0,06.',
+    'Mal 10, 100, 1000: Komma um 1, 2, 3 Stellen nach rechts. Geteilt durch 10, 100, 1000: nach links.',
+    'Durch eine Dezimalzahl teilen: Komma bei beiden Zahlen gleich weit nach rechts verschieben, bis der Teiler eine natürliche Zahl ist. 4,8 : 0,6 = 48 : 6 = 8.',
+    'Überschlag hilft, das Komma richtig zu setzen: 3,9 · 2,1 ≈ 4 · 2 = 8, also 8,19.'],
+  a: [['rf', '0,2 · 0,3 = 0,6', false, '2 · 3 = 6, zusammen zwei Nachkommastellen: 0,06.'],
+    ['w', 'Was ist 4,5 · 100?', '450', ['45', '4,500', '0,045']],
+    ['w', 'Was ist 7,2 : 10?', '0,72', ['72', '0,072', '7,02']],
+    ['e', 'Ein Heft kostet 1,35 €. Wie viel kosten 4 Hefte?', '5,40', '', { einheit: '€' }],
+    ['e', 'Berechne 6,3 : 0,7.', '9', 'Komma verschieben: 63 : 7 = 9.'],
+    ['w', 'Welcher Überschlag passt zu 19,8 · 3,1?', '20 · 3 = 60', ['2 · 3 = 6', '200 · 3 = 600', '20 · 30 = 600']]],
+  gen: [
+    () => { const a = R.int(10, 999) / 100, b = R.int(10, 999) / 100; return ['e', `Berechne ${g6Komma(a)} + ${g6Komma(b)}.`, g6Komma(a + b)]; },
+    () => { const a = R.int(100, 999) / 10, b = R.int(10, 999) / 100; if (b >= a) return null; return ['e', `Berechne ${g6Komma(a)} − ${g6Komma(b)}.`, g6Komma(a - b), 'Komma unter Komma, fehlende Stellen mit 0 auffüllen.']; },
+    () => { const a = R.int(11, 99) / 10, b = R.int(2, 9); return ['e', `Berechne ${g6Komma(a)} · ${b}.`, g6Komma(a * b)]; },
+    () => { const a = R.int(2, 9) / 10, b = R.int(2, 9) / R.pick([10, 100]); return ['e', `Berechne ${g6Komma(a)} · ${g6Komma(b)}.`, g6Komma(a * b), 'Erst ohne Komma rechnen, dann die Nachkommastellen zusammenzählen.']; },
+    () => { const x = R.int(11, 999) / 100, f = R.pick([10, 100, 1000]), mal = R.chance(.5); return ['e', `Berechne ${g6Komma(x)} ${mal ? '·' : ':'} ${gymN(f)}.`, g6Komma(mal ? x * f : x / f)]; },
+    () => { const t = R.int(2, 9), q = R.int(2, 12), k = R.pick([10, 100]); return ['e', `Berechne ${g6Komma(t * q / k)} : ${g6Komma(t / k)}.`, String(q), `Bei beiden Zahlen das Komma gleich weit verschieben: ${t * q} : ${t} = ${q}.`]; }
+  ] });
+
+gymThema({ id: 'm6-prozent', f: 'mathe', kl: 6, t: 'Prozent und Anteile',
+  merk: ['Prozent heißt „von Hundert“: 1 % = 1/100 = 0,01.',
+    'Wichtige Werte: 50 % = 1/2 · 25 % = 1/4 · 75 % = 3/4 · 20 % = 1/5 · 10 % = 1/10 · 100 % = das Ganze.',
+    'Anteil in Prozent: Bruch auf den Nenner 100 bringen. 7/20 = 35/100 = 35 %.',
+    'Prozent von einer Größe: 10 % von 80 € = 8 €, also 30 % = 24 €.',
+    'Anteile kann man gut vergleichen, wenn man sie in Prozent umrechnet.'],
+  a: [['w', 'Wie viel Prozent sind die Hälfte?', '50 %', ['20 %', '25 %', '200 %']],
+    ['rf', '25 % ist dasselbe wie 1/4.', true],
+    ['w', 'In Klasse 6a fahren 12 von 25 Kindern Rad, in der 6b 15 von 30. Wo ist der Anteil größer?', '6b (50 %)', ['6a (48 %)', 'beide gleich'], '12/25 = 48/100 = 48 % und 15/30 = 1/2 = 50 %.'],
+    ['e', 'Schreibe 0,07 in Prozent.', '7', '', { einheit: '%' }],
+    ['z', 'Ordne zu.', [['10 %', '1/10'], ['20 %', '1/5'], ['75 %', '3/4'], ['100 %', 'das Ganze'], ['1 %', '1/100']]],
+    ['w', 'Eine Jacke kostet 60 €. Sie ist 25 % günstiger. Wie viel spart man?', '15 €', ['25 €', '45 €', '6 €']]],
+  gen: [
+    () => { const p = R.pick([10, 20, 25, 50, 75, 5, 30, 40]), g = R.pick([20, 40, 60, 80, 100, 120, 200, 300, 400]); if (g * p % 100) return null; return ['e', `Berechne ${p} % von ${g} €.`, String(g * p / 100), '', { einheit: '€' }]; },
+    () => { const [z, n] = R.pick([[1, 2], [1, 4], [3, 4], [1, 5], [2, 5], [3, 5], [1, 10], [7, 10], [3, 20], [9, 20], [7, 25], [11, 50]]); return ['e', `Wie viel Prozent sind ${z}/${n}?`, String(z * 100 / n), `${z}/${n} = ${z * 100 / n}/100 = ${z * 100 / n} %.`, { einheit: '%' }]; },
+    () => { const g = R.pick([20, 25, 50]), t = R.int(1, g - 1), p = t * 100 / g; return ['e', `${t} von ${g} Kindern haben ein Haustier. Wie viel Prozent sind das?`, String(p), `${t}/${g} = ${p}/100.`, { einheit: '%' }]; },
+    () => { const p = R.pick([5, 10, 15, 20, 25, 30, 45, 60, 85]); return ['e', `Schreibe ${p} % als Bruch und kürze vollständig.`, g6B(p, 100)]; }
+  ] });
+
+gymThema({ id: 'm6-winkel', f: 'mathe', kl: 6, t: 'Winkel und Kreis',
+  merk: ['Ein Winkel hat einen Scheitelpunkt und zwei Schenkel. Gemessen wird er mit dem Geodreieck in Grad (°).',
+    'Winkelarten: spitz (kleiner als 90°), recht (90°), stumpf (zwischen 90° und 180°), gestreckt (180°), überstumpf (zwischen 180° und 360°), Vollwinkel (360°).',
+    'Ein Kreis hat einen Mittelpunkt M. Der Radius r geht von M zum Kreisrand, der Durchmesser d geht durch M von Rand zu Rand: d = 2 · r.',
+    'Mit dem Zirkel zeichnet man Kreise: die Zirkelspitze in M, die Öffnung ist der Radius.',
+    'Ein Vollkreis hat 360°. Ein Viertelkreis gehört zu 90°, ein Halbkreis zu 180°.'],
+  a: [['w', 'Wie heißt ein Winkel von genau 90°?', 'rechter Winkel', ['spitzer Winkel', 'stumpfer Winkel', 'gestreckter Winkel']],
+    ['w', 'Wie groß ist der Winkel zwischen den Uhrzeigern um 3 Uhr?', '90°', ['30°', '45°', '180°']],
+    ['e', 'Ein Kreis hat den Durchmesser 14 cm. Wie groß ist der Radius?', '7', '', { einheit: 'cm' }],
+    ['rf', 'Ein stumpfer Winkel ist größer als 90° und kleiner als 180°.', true],
+    ['w', 'Um wie viel Grad dreht sich der Minutenzeiger in 15 Minuten?', '90°', ['15°', '60°', '45°']],
+    ['e', 'Wie groß ist der Winkel zwischen den Uhrzeigern um 6 Uhr?', '180', '', { einheit: '°' }],
+    ['k', 'Sortiere die Winkel.', [['spitz', ['35°', '89°', '12°']], ['stumpf', ['91°', '150°', '179°']], ['überstumpf', ['200°', '300°']]]]],
+  gen: [
+    () => { const w = R.pick([R.int(10, 85), 90, R.int(95, 175), 180, R.int(190, 350)]), art = w < 90 ? 'spitz' : w === 90 ? 'recht' : w < 180 ? 'stumpf' : w === 180 ? 'gestreckt' : 'überstumpf';
+      return ['w', `Welche Winkelart ist ein Winkel von ${w}°?`, art, ['spitz', 'recht', 'stumpf', 'gestreckt', 'überstumpf'].filter(x => x !== art)]; },
+    () => { const w = R.pick([30, 45, 60, 120, 135, 150, 90]), art = w < 90 ? 'spitz' : w === 90 ? 'recht' : 'stumpf'; return ['w', 'Welche Winkelart siehst du?', art, ['spitz', 'recht', 'stumpf', 'überstumpf'].filter(x => x !== art), '', { bild: g6WinkelSVG(w) }]; },
+    () => { const r = R.int(2, 25), d = R.chance(.5); return ['e', d ? `Ein Kreis hat den Radius ${r} cm. Wie groß ist der Durchmesser?` : `Ein Kreis hat den Durchmesser ${2 * r} cm. Wie groß ist der Radius?`, String(d ? 2 * r : r), '', { einheit: 'cm' }]; },
+    () => { const w = R.int(10, 170); return ['e', `Zwei Winkel ergeben zusammen einen gestreckten Winkel (180°). Einer ist ${w}° groß. Wie groß ist der andere?`, String(180 - w), '', { einheit: '°' }]; },
+    () => { const h = R.pick([1, 2, 4, 5]), w = h * 30; return ['e', `Wie groß ist der kleinere Winkel zwischen den Uhrzeigern um ${h} Uhr?`, String(w), 'Zwischen zwei Zahlen auf der Uhr liegen 360° : 12 = 30°.', { einheit: '°' }]; }
+  ] });
+
+gymThema({ id: 'm6-volumen', f: 'mathe', kl: 6, t: 'Quader, Würfel und Volumen',
+  merk: ['Ein Quader hat 6 Flächen, 12 Kanten und 8 Ecken. Ein Würfel ist ein Quader mit lauter gleich langen Kanten.',
+    'Volumen des Quaders: V = Länge · Breite · Höhe = a · b · c. Würfel: V = a · a · a.',
+    'Volumeneinheiten: 1 cm³ = 1 000 mm³, 1 dm³ = 1 000 cm³, 1 m³ = 1 000 dm³. Die Umrechnungszahl ist 1 000.',
+    '1 Liter = 1 dm³ und 1 Milliliter = 1 cm³.',
+    'Oberfläche des Quaders: O = 2 · (a · b + a · c + b · c). Würfel: O = 6 · a · a.'],
+  a: [['w', 'Wie viele Kanten hat ein Würfel?', '12', ['6', '8', '24']],
+    ['w', 'Wie viele cm³ sind 1 dm³?', '1 000', ['10', '100', '10 000']],
+    ['rf', '1 Liter ist genau so viel wie 1 dm³.', true],
+    ['e', 'Wie viele Milliliter sind 1 dm³?', '1000', '1 dm³ = 1 Liter = 1 000 ml.', { einheit: 'ml' }],
+    ['w', 'Ein Würfel hat die Kantenlänge 2 cm. Welches Volumen hat er?', '8 cm³', ['6 cm³', '4 cm³', '24 cm³']],
+    ['w', 'Wie oft passt ein Würfel mit 1 cm Kante in einen Würfel mit 3 cm Kante?', '27-mal', ['9-mal', '3-mal', '18-mal']]],
+  gen: [
+    () => { const a = R.int(2, 12), b = R.int(2, 10), c = R.int(2, 9); return ['e', `Ein Quader ist ${a} cm lang, ${b} cm breit und ${c} cm hoch. Berechne das Volumen.`, String(a * b * c), `V = ${a} · ${b} · ${c} = ${a * b * c}`, { einheit: 'cm³' }]; },
+    () => { const a = R.int(2, 10); return ['e', `Berechne das Volumen eines Würfels mit der Kantenlänge ${a} cm.`, String(a ** 3), '', { einheit: 'cm³' }]; },
+    () => { const a = R.int(2, 9), b = R.int(2, 8), c = R.int(2, 6); return ['e', `Ein Quader hat die Kanten ${a} cm, ${b} cm und ${c} cm. Berechne die Oberfläche.`, String(2 * (a * b + a * c + b * c)), `O = 2 · (${a * b} + ${a * c} + ${b * c})`, { einheit: 'cm²' }]; },
+    () => { const [x, von, nach, f] = R.pick([[R.int(2, 9), 'dm³', 'cm³', 1000], [R.int(2, 9), 'm³', 'dm³', 1000], [R.int(2, 40) * 1000, 'cm³', 'dm³', 1 / 1000], [R.int(2, 9), 'l', 'ml', 1000], [R.int(2, 9) * 1000, 'ml', 'l', 1 / 1000]]); return ['e', `Rechne um: ${gymN(x)} ${von} = ? ${nach}`, String(+(x * f).toFixed(6)), '', { einheit: nach }]; },
+    () => { const a = R.int(2, 6) * 10, b = R.int(2, 5) * 10, c = R.int(2, 5) * 10; return ['e', `Ein Aquarium ist ${a} cm lang, ${b} cm breit und ${c} cm hoch. Wie viele Liter passen hinein?`, String(a * b * c / 1000), `${a * b * c} cm³ = ${a * b * c / 1000} dm³ = ${a * b * c / 1000} Liter.`, { einheit: 'l' }]; }
+  ] });
+
+gymThema({ id: 'm6-daten', f: 'mathe', kl: 6, t: 'Daten: Mittelwert, Median, Häufigkeit',
+  merk: ['Absolute Häufigkeit: wie oft etwas vorkommt. Relative Häufigkeit: Anteil an allen, zum Beispiel 6 von 24 = 1/4 = 25 %.',
+    'Arithmetisches Mittel (Durchschnitt): alle Werte addieren und durch die Anzahl der Werte teilen.',
+    'Median (Zentralwert): Werte der Größe nach ordnen, der Wert in der Mitte ist der Median. Bei gerader Anzahl ist es der Mittelwert der beiden mittleren Werte.',
+    'Spannweite: größter Wert minus kleinster Wert.',
+    'Ein Ausreißer verändert den Durchschnitt stark, den Median aber kaum.'],
+  a: [['w', 'Wie nennt man den Wert in der Mitte einer geordneten Liste?', 'Median', ['Mittelwert', 'Spannweite', 'Modus']],
+    ['rf', 'Ein sehr großer Ausreißer verändert den Median stärker als den Durchschnitt.', false, 'Umgekehrt: Der Durchschnitt ändert sich stark, der Median kaum.'],
+    ['e', 'In einer Klasse mit 30 Kindern haben 6 Kinder eine Katze. Wie groß ist die relative Häufigkeit in Prozent?', '20', '6/30 = 1/5 = 20 %.', { einheit: '%' }],
+    ['w', 'Welche Werte haben die Spannweite 7?', '3, 5, 10', ['3, 7, 9', '7, 8, 9', '1, 4, 7']],
+    ['e', 'Der Durchschnitt von 4 Zahlen ist 5. Wie groß ist die Summe der Zahlen?', '20']],
+  gen: [
+    () => { const n = R.pick([3, 4, 5]), L = Array.from({ length: n }, () => R.int(1, 20)), s = L.reduce((a, b) => a + b, 0); if (s % n) return null; return ['e', `Berechne den Durchschnitt (arithmetisches Mittel) von ${L.join(', ')}.`, String(s / n), `Summe ${s}, geteilt durch ${n}.`]; },
+    () => { const n = R.pick([5, 7]), L = Array.from({ length: n }, () => R.int(1, 30)), o = L.slice().sort((a, b) => a - b); return ['e', `Bestimme den Median von ${L.join(', ')}.`, String(o[(n - 1) / 2]), `Geordnet: ${o.join(', ')}. In der Mitte steht ${o[(n - 1) / 2]}.`]; },
+    () => { const L = Array.from({ length: 6 }, () => R.int(1, 40)), o = L.slice().sort((a, b) => a - b); return ['e', `Bestimme die Spannweite von ${L.join(', ')}.`, String(o[5] - o[0]), `${o[5]} − ${o[0]} = ${o[5] - o[0]}.`]; },
+    () => { const g = R.pick([20, 25, 40, 50]), t = R.int(1, g - 1); if ((t * 100) % g) return null; return ['e', `Bei einer Umfrage antworten ${t} von ${g} Kindern mit „ja“. Wie groß ist die relative Häufigkeit in Prozent?`, String(t * 100 / g), '', { einheit: '%' }]; },
+    () => { const L = Array.from({ length: 4 }, () => R.int(2, 18) * 2), o = L.slice().sort((a, b) => a - b), m = (o[1] + o[2]) / 2; return ['e', `Bestimme den Median von ${L.join(', ')}.`, g6Komma(m), `Geordnet: ${o.join(', ')}. ${o[1] === o[2] ? `In der Mitte steht zweimal ${o[1]}.` : `Die Mitte liegt zwischen ${o[1]} und ${o[2]}.`}`]; }
+  ] });
+
+/*@@src gym600_deutsch6.js@@*/
+
+
+gymThema({ id: 'd6-satzgefuege', f: 'deutsch', kl: 6, t: 'Haupt- und Nebensätze, Komma',
+  merk: ['Ein Hauptsatz kann allein stehen. Das gebeugte Verb steht an zweiter Stelle: Ich bleibe zu Hause.',
+    'Ein Nebensatz kann nicht allein stehen. Das gebeugte Verb steht am Ende: …, weil es regnet.',
+    'Nebensätze beginnen oft mit einer Konjunktion (weil, da, dass, ob, wenn, als, obwohl, damit, nachdem) oder einem Relativpronomen (der, die, das, welcher).',
+    'Satzgefüge = Hauptsatz + Nebensatz. Zwischen Haupt- und Nebensatz steht immer ein Komma.',
+    'Satzreihe = Hauptsatz + Hauptsatz. Vor „und“ und „oder“ braucht man dabei kein Komma, vor „aber“, „denn“ und „sondern“ schon.'],
+  a: [['w', 'Welcher Satz ist ein Satzgefüge?', 'Ich gehe raus, weil die Sonne scheint.', ['Ich gehe raus und die Sonne scheint.', 'Die Sonne scheint.', 'Ich gehe raus, die Sonne scheint.']],
+    ['rf', 'Im Nebensatz steht das gebeugte Verb meistens am Ende.', true],
+    ['m', 'Markiere die Konjunktion, die den Nebensatz einleitet.', 'Wir spielen Fußball, *obwohl* es schon dunkel wird.'],
+    ['m', 'Markiere das gebeugte Verb im Nebensatz.', 'Ich weiß nicht, ob Mia morgen *kommt*.'],
+    ['w', 'Wo fehlt das Komma? „Als ich nach Hause kam war niemand da.“', 'nach „kam“', ['nach „Als“', 'nach „Hause“', 'nach „niemand“']],
+    ['l', 'Setze die richtige Konjunktion ein.', 'Ich ziehe eine Jacke an, {weil|obwohl|ob} es kalt ist.'],
+    ['l', 'Setze die richtige Konjunktion ein.', 'Er lernt viel, {damit|obwohl|weil} er die Arbeit besteht.'],
+    ['l', 'Setze die richtige Konjunktion ein.', 'Sie kam zu spät, {obwohl|weil|damit} sie früh losgegangen war.'],
+    ['w', 'Welcher Satz braucht ein Komma?', 'Ich hoffe dass du kommst.', ['Ich komme und du kommst auch.', 'Morgen gehen wir ins Kino.', 'Lara liest gern Bücher.']],
+    ['k', 'Sortiere die Wörter.', [['Konjunktion für Nebensätze', ['weil', 'obwohl', 'nachdem', 'damit']], ['verbindet Hauptsätze', ['und', 'oder', 'aber', 'denn']]]],
+    ['w', 'Welcher Nebensatz ist ein Relativsatz?', 'Das ist der Hund, der immer bellt.', ['Ich lache, weil der Hund bellt.', 'Ich weiß, dass der Hund bellt.', 'Wenn der Hund bellt, erschrecke ich.']],
+    ['rf', 'Vor „aber“ steht ein Komma.', true, 'Zum Beispiel: Ich wollte kommen, aber ich war krank.'],
+    ['w', 'Welche Satzverbindung ist eine Satzreihe?', 'Es regnet, aber wir gehen trotzdem raus.', ['Weil es regnet, bleiben wir drin.', 'Ich glaube, dass es regnet.', 'Der Regen, der fällt, ist kalt.']],
+    ['o', 'Bringe den Nebensatz in die richtige Reihenfolge.', ['weil', 'ich', 'heute', 'Training', 'habe']]] });
+
+gymThema({ id: 'd6-adverbiale', f: 'deutsch', kl: 6, t: 'Adverbiale Bestimmungen und Attribute',
+  merk: ['Adverbiale Bestimmungen sagen, unter welchen Umständen etwas geschieht.',
+    'Ort (lokal): Wo? Wohin? Woher? · Zeit (temporal): Wann? Wie lange? Seit wann? · Art und Weise (modal): Wie? · Grund (kausal): Warum? Weshalb?',
+    'Mit der Umstellprobe findet man Satzglieder: Was zusammen umgestellt werden kann, ist ein Satzglied.',
+    'Attribute sind Beifügungen. Sie gehören zu einem Nomen und beschreiben es genauer: das *rote* Fahrrad, das Haus *am See*, der Hut *meines Opas*.',
+    'Attribute sind keine eigenen Satzglieder, sie bleiben beim Umstellen bei ihrem Nomen.'],
+  a: [['w', 'Welche Frage passt zu einer adverbialen Bestimmung der Zeit?', 'Wann?', ['Wo?', 'Wie?', 'Warum?']],
+    ['w', 'Welche adverbiale Bestimmung ist unterstrichen? „Wegen des Sturms fiel die Schule aus.“ ([[Wegen des Sturms]])', 'Grund (kausal)', ['Zeit (temporal)', 'Ort (lokal)', 'Art und Weise (modal)']],
+    ['w', 'Welche adverbiale Bestimmung ist unterstrichen? „Die Katze schlief [[auf dem Sofa]].“', 'Ort (lokal)', ['Zeit (temporal)', 'Grund (kausal)', 'Art und Weise (modal)']],
+    ['w', 'Welche adverbiale Bestimmung ist unterstrichen? „Der Junge rannte [[blitzschnell]] davon.“', 'Art und Weise (modal)', ['Ort (lokal)', 'Zeit (temporal)', 'Grund (kausal)']],
+    ['w', 'Welche adverbiale Bestimmung ist unterstrichen? „[[Seit drei Jahren]] spielt Ella Geige.“', 'Zeit (temporal)', ['Grund (kausal)', 'Ort (lokal)', 'Art und Weise (modal)']],
+    ['m', 'Markiere die adverbiale Bestimmung der Zeit.', '*Am* *Samstag* spielen wir im Park.'],
+    ['m', 'Markiere das Attribut zum Nomen „Fahrrad“.', 'Ich putze mein *neues* Fahrrad.'],
+    ['m', 'Markiere das Attribut zum Nomen „Haus“.', 'Das Haus *am* *Hafen* ist sehr alt.'],
+    ['rf', 'In „das Buch meiner Schwester“ ist „meiner Schwester“ ein Attribut.', true, 'Es beschreibt das Nomen „Buch“ genauer (wessen Buch?).'],
+    ['rf', 'Attribute sind eigene Satzglieder.', false, 'Sie gehören zu einem Nomen und bleiben beim Umstellen bei ihm.'],
+    ['k', 'Sortiere die adverbialen Bestimmungen.', [['Zeit', ['gestern', 'im Sommer', 'seit Montag']], ['Ort', ['im Garten', 'nach Hamburg', 'unter dem Tisch']], ['Grund', ['wegen der Hitze', 'aus Angst', 'vor Freude']]]],
+    ['w', 'Mit welcher Probe findest du heraus, welche Wörter ein Satzglied bilden?', 'Umstellprobe', ['Ersatzprobe', 'Weglassprobe', 'Klangprobe']],
+    ['w', 'Welche adverbiale Bestimmung ist unterstrichen? „Aus Neugier öffnete Tim die Kiste.“ ([[Aus Neugier]])', 'Grund (kausal)', ['Art und Weise (modal)', 'Zeit (temporal)', 'Ort (lokal)']]] });
+
+gymThema({ id: 'd6-tempus', f: 'deutsch', kl: 6, t: 'Zeitformen: Plusquamperfekt und Futur',
+  merk: ['Präsens: ich lese · Präteritum: ich las · Perfekt: ich habe gelesen · Plusquamperfekt: ich hatte gelesen · Futur I: ich werde lesen.',
+    'Das Plusquamperfekt bildet man mit „hatte“ oder „war“ und dem Partizip II: Ich war gegangen. Ich hatte gegessen.',
+    'Das Plusquamperfekt zeigt, was vor etwas anderem in der Vergangenheit geschah (Vorvergangenheit): Nachdem ich gegessen hatte, ging ich los.',
+    'Erzählungen stehen meist im Präteritum. Was davor passierte, steht im Plusquamperfekt.',
+    'Futur I: werden + Infinitiv. Es drückt Zukunft oder eine Vermutung aus: Er wird wohl krank sein.'],
+  a: [['w', 'In welcher Zeitform steht „Wir hatten den Bus verpasst“?', 'Plusquamperfekt', ['Perfekt', 'Präteritum', 'Futur I']],
+    ['w', 'In welcher Zeitform steht „Sie wird morgen anrufen“?', 'Futur I', ['Präsens', 'Perfekt', 'Präteritum']],
+    ['w', 'In welcher Zeitform steht „Der Hund bellte laut“?', 'Präteritum', ['Perfekt', 'Präsens', 'Plusquamperfekt']],
+    ['l', 'Setze das passende Hilfsverb ein.', 'Nachdem wir den Film gesehen {hatten|haben|werden}, gingen wir nach Hause.'],
+    ['l', 'Setze das passende Hilfsverb ein.', 'Als ich ankam, {war|hatte|wird} der Zug schon abgefahren.'],
+    ['e', 'Setze ins Plusquamperfekt: „ich schreibe“ → ich … geschrieben', 'hatte'],
+    ['e', 'Setze ins Futur I: „du spielst“ → du … spielen', 'wirst'],
+    ['w', 'Welcher Satz zeigt eine Vermutung im Futur I?', 'Er wird wohl noch schlafen.', ['Er schläft noch.', 'Er hat geschlafen.', 'Er schlief noch.']],
+    ['z', 'Ordne die Zeitformen zu.', [['ich sang', 'Präteritum'], ['ich habe gesungen', 'Perfekt'], ['ich hatte gesungen', 'Plusquamperfekt'], ['ich werde singen', 'Futur I'], ['ich singe', 'Präsens']]],
+    ['rf', 'Das Plusquamperfekt beschreibt, was vor einem anderen vergangenen Ereignis geschah.', true],
+    ['w', 'Wie heißt das Plusquamperfekt von „sie laufen“?', 'sie waren gelaufen', ['sie hatten gelaufen', 'sie sind gelaufen', 'sie liefen']],
+    ['w', 'Wie heißt das Präteritum von „wir bringen“?', 'wir brachten', ['wir bringten', 'wir brungen', 'wir haben gebracht']],
+    ['o', 'Ordne die Ereignisse: Was geschah zuerst? „Nachdem sie die Hausaufgaben erledigt hatte, rief sie Paula an, und dann gingen beide schwimmen.“', ['Hausaufgaben erledigen', 'Paula anrufen', 'schwimmen gehen']]] });
+
+gymThema({ id: 'd6-aktivpassiv', f: 'deutsch', kl: 6, t: 'Aktiv und Passiv',
+  merk: ['Aktiv: Wer handelt, steht im Mittelpunkt. Der Koch bereitet das Essen zu.',
+    'Passiv: Die Handlung oder das, womit etwas geschieht, steht im Mittelpunkt. Das Essen wird zubereitet.',
+    'Vorgangspassiv: werden + Partizip II. Präsens: Das Haus wird gebaut. Präteritum: Das Haus wurde gebaut.',
+    'Wer handelt, kann im Passiv mit „von“ genannt werden oder ganz wegfallen: Das Essen wird (vom Koch) zubereitet.',
+    'Das Akkusativobjekt im Aktiv wird im Passiv zum Subjekt.'],
+  a: [['w', 'Welcher Satz steht im Passiv?', 'Der Brief wird geschrieben.', ['Lisa schreibt den Brief.', 'Lisa hat den Brief geschrieben.', 'Lisa wird den Brief schreiben.']],
+    ['rf', '„Das Auto wurde repariert.“ steht im Passiv.', true],
+    ['rf', '„Die Mechanikerin repariert das Auto.“ steht im Passiv.', false, 'Hier handelt die Mechanikerin, der Satz steht im Aktiv.'],
+    ['w', 'Wie lautet der Satz im Passiv Präsens? „Der Hausmeister öffnet die Tür.“', 'Die Tür wird vom Hausmeister geöffnet.', ['Die Tür öffnet den Hausmeister.', 'Die Tür wurde vom Hausmeister geöffnet.', 'Der Hausmeister wird die Tür öffnen.']],
+    ['w', 'Wie lautet der Satz im Passiv Präteritum? „Die Kinder bemalten die Wand.“', 'Die Wand wurde von den Kindern bemalt.', ['Die Wand wird von den Kindern bemalt.', 'Die Kinder wurden bemalt.', 'Die Wand hat die Kinder bemalt.']],
+    ['l', 'Ergänze das Passiv.', 'Im Herbst {werden|wird|wurde} die Äpfel geerntet.'],
+    ['l', 'Ergänze das Passiv.', 'Gestern {wurde|wird|werden} die Turnhalle eingeweiht.'],
+    ['e', 'Ergänze das Partizip II: Das Fenster wird … (putzen)', 'geputzt'],
+    ['w', 'Wann benutzt man oft das Passiv?', 'wenn nicht wichtig ist, wer etwas tut', ['wenn man von sich selbst erzählt', 'nur in Gedichten', 'nur in der Zukunft']],
+    ['w', 'Welches Hilfsverb braucht das Vorgangspassiv?', 'werden', ['haben', 'sein', 'können']],
+    ['k', 'Sortiere die Sätze.', [['Aktiv', ['Ben füttert den Hund.', 'Wir backen Kekse.']], ['Passiv', ['Der Hund wird gefüttert.', 'Kekse werden gebacken.']]]],
+    ['rf', 'Im Passiv wird das Akkusativobjekt aus dem Aktivsatz zum Subjekt.', true]] });
+
+gymThema({ id: 'd6-rechtschreibung', f: 'deutsch', kl: 6, t: 'das oder dass, s-Laute, Großschreibung',
+  merk: ['„das“ kann man durch „dieses“, „jenes“ oder „welches“ ersetzen (Artikel, Demonstrativ- oder Relativpronomen).',
+    '„dass“ ist eine Konjunktion. Sie leitet einen Nebensatz ein und lässt sich nicht ersetzen: Ich weiß, dass du recht hast.',
+    'Nach einem kurzen Vokal steht ss (Fluss, Kuss), nach einem langen Vokal oder Doppellaut ß (Fuß, Straße, heiß).',
+    'Verben und Adjektive werden großgeschrieben, wenn sie als Nomen gebraucht werden (Nominalisierung). Signalwörter: Artikel (das Lesen), Präposition mit Artikel (beim Laufen), Mengenwörter (etwas Schönes, viel Neues).'],
+  a: [['l', 'Setze ein.', 'Ich hoffe, {dass|das} das Wetter gut wird.'],
+    ['l', 'Setze ein.', 'Das ist das Buch, {das|dass} ich dir empfohlen habe.'],
+    ['l', 'Setze ein.', 'Weißt du, {dass|das} morgen keine Schule ist?'],
+    ['l', 'Setze ein.', '{Das|Dass} Pferd steht auf der Weide.'],
+    ['w', 'Welche Schreibung ist richtig?', 'die Straße', ['die Strasse', 'die Strase', 'die Strahse']],
+    ['w', 'Welche Schreibung ist richtig?', 'der Fluss', ['der Fluß', 'der Flus', 'der Fluhs']],
+    ['w', 'Welche Schreibung ist richtig?', 'beim Schwimmen', ['beim schwimmen', 'Beim schwimmen', 'beim schwimmmen']],
+    ['w', 'Welche Schreibung ist richtig?', 'etwas Spannendes', ['etwas spannendes', 'Etwas spannendes', 'etwas Spannentes']],
+    ['m', 'Markiere die Nominalisierungen, sie müssen großgeschrieben werden.', 'Das *Lesen* macht mir Spaß, aber beim *Rechnen* brauche ich Hilfe.'],
+    ['rf', 'Nach einem langen Vokal schreibt man ß: der Gruß, groß, fließen.', true],
+    ['rf', '„dass“ kann man durch „welches“ ersetzen.', false, 'Das geht nur bei „das“. „dass“ ist eine Konjunktion.'],
+    ['k', 'Sortiere die Wörter.', [['mit ss', ['Schloss', 'Wasser', 'küssen', 'Nuss']], ['mit ß', ['Fuß', 'grüßen', 'Spaß', 'außen']]]],
+    ['w', 'In welchem Satz ist alles richtig geschrieben?', 'Wir freuen uns aufs Wandern.', ['Wir freuen uns aufs wandern.', 'wir freuen uns aufs Wandern.', 'Wir Freuen uns aufs Wandern.']],
+    ['w', 'Welches Wort ist richtig geschrieben?', 'beißen', ['beissen', 'beisen', 'beihsen']]] });
+
+gymThema({ id: 'd6-wortbildung', f: 'deutsch', kl: 6, t: 'Wortbildung, Wortfamilien und Wortfelder',
+  merk: ['Zusammensetzung (Kompositum): Grundwort + Bestimmungswort. Das Grundwort steht hinten und bestimmt die Wortart und den Artikel: die Haustür.',
+    'Ableitung: neue Wörter mit Vorsilben (Präfixe wie ver-, ent-, un-) oder Nachsilben (Suffixe wie -ung, -heit, -keit, -lich, -bar).',
+    'Wörter mit dem gleichen Wortstamm bilden eine Wortfamilie: fahren, Fahrt, Fahrer, gefährlich.',
+    'Wörter mit ähnlicher Bedeutung bilden ein Wortfeld: sagen, flüstern, rufen, brüllen, murmeln.',
+    'Fremdwörter kommen aus anderen Sprachen, zum Beispiel aus dem Englischen (Computer), Französischen (Restaurant) oder Griechischen (Theater).'],
+  a: [['w', 'Welches Wort ist das Grundwort in „Schulranzen“?', 'Ranzen', ['Schule', 'Schul', 'Schulranzen']],
+    ['w', 'Welchen Artikel hat „Holztür“?', 'die', ['der', 'das', 'den'], 'Das Grundwort „Tür“ bestimmt den Artikel.'],
+    ['w', 'Welches Wort gehört nicht zur Wortfamilie „fahren“?', 'Farbe', ['Fahrrad', 'Gefahr', 'Fähre']],
+    ['w', 'Welches Wort gehört nicht zum Wortfeld „gehen“?', 'schreiben', ['schlendern', 'rennen', 'stapfen']],
+    ['e', 'Bilde ein Nomen mit -heit aus „frei“.', 'Freiheit', '', { gross: true }],
+    ['e', 'Bilde ein Nomen mit -ung aus „erzählen“.', 'Erzählung', '', { gross: true }],
+    ['w', 'Welches Wort ist eine Ableitung?', 'freundlich', ['Haustür', 'Apfelbaum', 'Fußball']],
+    ['z', 'Woher kommt das Fremdwort?', [['Computer', 'Englisch'], ['Restaurant', 'Französisch'], ['Pizza', 'Italienisch'], ['Theater', 'Griechisch'], ['Karate', 'Japanisch']]],
+    ['k', 'Sortiere die Wörter.', [['Wortfamilie „spielen“', ['Spieler', 'Spielplatz', 'verspielt']], ['Wortfeld „sprechen“', ['flüstern', 'rufen', 'erzählen']]]],
+    ['rf', 'Das Bestimmungswort steht in einem zusammengesetzten Nomen vorne.', true],
+    ['w', 'Welche Vorsilbe macht aus „glücklich“ das Gegenteil?', 'un-', ['ver-', 'be-', 'ent-']],
+    ['w', 'Was bedeutet „transparent“?', 'durchsichtig', ['farbig', 'schwer', 'zerbrechlich']]] });
+
+gymThema({ id: 'd6-lyrik', f: 'deutsch', kl: 6, t: 'Gedichte und sprachliche Bilder',
+  merk: ['Ein Gedicht besteht aus Versen (Zeilen), mehrere Verse bilden eine Strophe.',
+    'Reimformen: Paarreim (aabb), Kreuzreim (abab), umarmender Reim (abba).',
+    'Vergleich: mit „wie“ oder „als ob“: Sie ist schnell wie der Wind.',
+    'Metapher: ein Bild ohne „wie“: Er hat ein Herz aus Stein.',
+    'Personifikation: Dinge oder Tiere handeln wie Menschen: Der Wind flüstert. Die Sonne lacht.',
+    'Lautmalerei ahmt Geräusche nach: Es knistert, zischt und plätschert.',
+    'Eine Ballade ist ein längeres Gedicht, das eine spannende Geschichte erzählt.'],
+  a: [['w', 'Welches sprachliche Bild ist „Der Wind heult ums Haus“?', 'Personifikation', ['Vergleich', 'Metapher', 'Reim']],
+    ['w', 'Welches sprachliche Bild ist „Er ist stark wie ein Bär“?', 'Vergleich', ['Metapher', 'Personifikation', 'Lautmalerei']],
+    ['w', 'Welches sprachliche Bild ist „Das Leben ist eine Achterbahn“?', 'Metapher', ['Vergleich', 'Personifikation', 'Lautmalerei']],
+    ['w', 'Welches Reimschema hat ein Kreuzreim?', 'abab', ['aabb', 'abba', 'aaaa']],
+    ['w', 'Welches Reimschema hat ein umarmender Reim?', 'abba', ['abab', 'aabb', 'abca']],
+    ['w', 'Wie heißt eine Zeile in einem Gedicht?', 'Vers', ['Strophe', 'Absatz', 'Reim']],
+    ['rf', 'Eine Ballade erzählt eine spannende Geschichte in Gedichtform.', true],
+    ['rf', '„Die Sterne zwinkern uns zu“ ist ein Vergleich.', false, 'Sterne zwinkern wie Menschen: eine Personifikation.'],
+    ['w', 'Welches Wort ist Lautmalerei?', 'brummen', ['laufen', 'leise', 'Brot']],
+    ['z', 'Ordne zu.', [['aabb', 'Paarreim'], ['abab', 'Kreuzreim'], ['abba', 'umarmender Reim'], ['mehrere Verse', 'Strophe'], ['eine Zeile', 'Vers']]],
+    ['w', 'Ein Gedicht im Kreuzreim: Die ersten drei Zeilen enden auf „Maus“, „Baum“ und „Haus“. Auf welches Wort endet die vierte Zeile?', 'Traum', ['Laus', 'Tisch', 'Feld'], 'Kreuzreim abab: Die vierte Zeile reimt sich auf die zweite (Baum, Traum).'],
+    ['m', 'Markiere die Wörter, die das Wasser wie einen Menschen handeln lassen.', 'Der Bach *singt* und *erzählt* von fernen Bergen.']] });
+
+gymThema({ id: 'd6-texte', f: 'deutsch', kl: 6, t: 'Beschreiben, Berichten, Argumentieren',
+  merk: ['Vorgangsbeschreibung: Schritte in der richtigen Reihenfolge, sachlich, im Präsens, mit Fachwörtern. Ziel: andere können es nachmachen.',
+    'Bericht: sachlich und genau, im Präteritum, ohne eigene Meinung. Er beantwortet die W-Fragen: Wer? Was? Wann? Wo? Wie? Warum? Welche Folgen?',
+    'Erzählung: Einleitung, Hauptteil mit Spannungsbogen und Höhepunkt, Schluss. Wörtliche Rede und treffende Verben machen sie lebendig.',
+    'Argumentieren: Behauptung (These), Begründung (Argument) und Beispiel. Das stärkste Argument kommt zum Schluss.',
+    'Sagen erzählen von Helden, Orten oder Ereignissen und haben oft einen wahren Kern.'],
+  a: [['w', 'In welcher Zeitform schreibt man einen Bericht?', 'Präteritum', ['Präsens', 'Futur I', 'Plusquamperfekt']],
+    ['w', 'In welcher Zeitform schreibt man eine Vorgangsbeschreibung?', 'Präsens', ['Präteritum', 'Perfekt', 'Futur I']],
+    ['rf', 'In einen Unfallbericht gehören Gefühle und die eigene Meinung.', false, 'Ein Bericht ist sachlich und ohne eigene Meinung.'],
+    ['w', 'Welche Frage beantwortet ein Bericht nicht?', 'Wie fand ich das Ereignis?', ['Wann geschah es?', 'Wer war beteiligt?', 'Welche Folgen gab es?']],
+    ['o', 'Bringe die Teile einer Erzählung in die Reihenfolge.', ['Einleitung', 'Hauptteil mit Höhepunkt', 'Schluss']],
+    ['o', 'Ordne einen Argumentationsschritt.', ['These: Wir brauchen eine Pause länger.', 'Argument: Dann können wir uns besser erholen.', 'Beispiel: Nach einer langen Pause sind wir in Mathe konzentrierter.']],
+    ['w', 'Was ist eine These?', 'eine Behauptung', ['ein Beispiel', 'eine Überschrift', 'ein Reim']],
+    ['w', 'Was gehört in eine Vorgangsbeschreibung „Tee kochen“?', 'Zuerst füllst du den Wasserkocher.', ['Gestern habe ich Tee getrunken.', 'Tee schmeckt mir am besten.', 'Es war einmal ein Teebeutel.']],
+    ['rf', 'Sagen haben oft einen wahren Kern, zum Beispiel einen echten Ort oder eine echte Person.', true],
+    ['k', 'Sortiere die Sätze nach Textsorte.', [['Bericht', ['Am Montag um 8 Uhr stießen zwei Räder zusammen.', 'Ein Kind wurde leicht verletzt.']], ['Erzählung', ['Plötzlich hörte ich ein seltsames Knacken.', '„Lauf!“, schrie Mia.']]]],
+    ['w', 'Welches Verb macht eine Erzählung lebendiger als „gehen“?', 'schleichen', ['machen', 'sein', 'haben']],
+    ['w', 'Wo steht in einer Argumentation das stärkste Argument?', 'am Schluss', ['am Anfang', 'in der Überschrift', 'gar nicht']]] });
+
+/*@@src gym600_englisch6.js@@*/
+
+
+
+const e6Ed = v => v.endsWith('e') ? v + 'd' : /^[^aeiou]*[aeiou][bdgmnprt]$/.test(v) ? v + v.slice(-1) + 'ed' : v + 'ed';
+const E6_VERBEN = [['go', 'went', 'gone', 'gehen'], ['see', 'saw', 'seen', 'sehen'], ['eat', 'ate', 'eaten', 'essen'], ['write', 'wrote', 'written', 'schreiben'], ['take', 'took', 'taken', 'nehmen'],
+  ['give', 'gave', 'given', 'geben'], ['buy', 'bought', 'bought', 'kaufen'], ['bring', 'brought', 'brought', 'bringen'], ['find', 'found', 'found', 'finden'], ['swim', 'swam', 'swum', 'schwimmen'],
+  ['drink', 'drank', 'drunk', 'trinken'], ['sing', 'sang', 'sung', 'singen'], ['speak', 'spoke', 'spoken', 'sprechen'], ['break', 'broke', 'broken', 'zerbrechen'], ['forget', 'forgot', 'forgotten', 'vergessen'],
+  ['fly', 'flew', 'flown', 'fliegen'], ['know', 'knew', 'known', 'wissen, kennen'], ['meet', 'met', 'met', 'treffen'], ['ride', 'rode', 'ridden', 'reiten, fahren'], ['win', 'won', 'won', 'gewinnen'],
+  ['lose', 'lost', 'lost', 'verlieren'], ['begin', 'began', 'begun', 'beginnen'], ['choose', 'chose', 'chosen', 'wählen'], ['fall', 'fell', 'fallen', 'fallen'], ['run', 'ran', 'run', 'rennen']];
+const E6_PERSON = [['I', 'have'], ['You', 'have'], ['He', 'has'], ['She', 'has'], ['We', 'have'], ['They', 'have'], ['My sister', 'has'], ['Our teachers', 'have']];
+
+gymThema({ id: 'e6-pastprog', f: 'englisch', kl: 6, t: 'Past progressive',
+  merk: ['Past progressive: was / were + Verb mit -ing. I was reading. They were playing.',
+    'Es beschreibt, was gerade im Gange war: At 8 o’clock I was having breakfast.',
+    'Oft unterbricht eine kurze Handlung im simple past eine längere im past progressive: I was watching TV when the phone rang.',
+    'Signalwörter: while, when, at 5 o’clock yesterday, all day.',
+    'Verneinung: wasn’t / weren’t + -ing. Frage: Was she sleeping? Were you listening?'],
+  a: [['l', 'Choose the right form.', 'At 7 o’clock yesterday I {was having|had have|were having} dinner.'],
+    ['l', 'Choose the right form.', 'They {were playing|was playing|played playing} football when it started to rain.'],
+    ['l', 'Choose the right form.', 'While Tom {was cooking|cooked|were cooking}, his sister set the table.'],
+    ['l', 'Choose the right form.', 'I was doing my homework when my friend {called|was calling|calls}.'],
+    ['w', 'Which sentence is in the past progressive?', 'She was riding her bike.', ['She rides her bike.', 'She rode her bike.', 'She has ridden her bike.']],
+    ['w', 'Which question is correct?', 'Were you sleeping at ten?', ['Was you sleeping at ten?', 'Did you sleeping at ten?', 'Were you sleep at ten?']],
+    ['e', 'Complete: We … (not watch) TV at 9 pm. We were reading.', ["weren't watching", 'were not watching']],
+    ['rf', '„I was walking home when I saw a fox.“ Die längere Handlung steht im past progressive.', true],
+    ['w', 'Welches Signalwort passt oft zum past progressive?', 'while', ['already', 'tomorrow', 'never']],
+    ['o', 'Put the words in the right order.', ['What', 'were', 'you', 'doing', 'at', 'six', 'o’clock?']]],
+  gen: [
+    () => { const [s, b] = R.pick([['I', 'was'], ['He', 'was'], ['She', 'was'], ['We', 'were'], ['They', 'were'], ['You', 'were'], ['The dog', 'was'], ['My parents', 'were']]), v = R.pick([['read', 'reading'], ['play', 'playing'], ['swim', 'swimming'], ['run', 'running'], ['write', 'writing'], ['sleep', 'sleeping'], ['ride', 'riding'], ['dance', 'dancing']]);
+      return ['e', `Past progressive: ${s} … (${v[0]}) at 4 o’clock yesterday.`, `${b} ${v[1]}`, `${s} → ${b}, dazu ${v[1]}.`]; }
+  ] });
+
+gymThema({ id: 'e6-presperf', f: 'englisch', kl: 6, t: 'Present perfect',
+  merk: ['Present perfect: have / has + past participle (3. Form). I have seen. She has eaten.',
+    'Es verbindet Vergangenheit und Gegenwart: Etwas ist passiert, das Ergebnis ist jetzt wichtig. I have lost my key. (Ich habe ihn jetzt nicht.)',
+    'Signalwörter: ever, never, already, just, yet, so far, since, for.',
+    'Simple past steht bei einem genauen Zeitpunkt in der Vergangenheit: yesterday, last week, in 2020, two days ago.',
+    'Regelmäßige Verben: 3. Form mit -ed (played). Unregelmäßige muss man lernen: go, went, gone.'],
+  a: [['w', 'Which sentence is correct?', 'I have already finished my homework.', ['I have already finish my homework.', 'I already have finished yesterday my homework.', 'I has already finished my homework.']],
+    ['w', 'Which sentence is correct?', 'We went to London last summer.', ['We have gone to London last summer.', 'We have been to London last summer.', 'We go to London last summer.'], 'Bei „last summer“ (genauer Zeitpunkt) steht das simple past.'],
+    ['l', 'Choose.', 'Have you ever {been|was|be} to Scotland?'],
+    ['l', 'Choose.', 'She {has|have|is} never eaten sushi.'],
+    ['l', 'Choose.', 'I {saw|have seen|see} that film yesterday.'],
+    ['rf', '„yet“ steht im present perfect oft in Fragen und verneinten Sätzen.', true, 'Have you finished yet? I haven’t finished yet.'],
+    ['k', 'Sortiere die Signalwörter.', [['present perfect', ['already', 'ever', 'never', 'yet', 'just']], ['simple past', ['yesterday', 'last week', 'ago', 'in 2019']]]],
+    ['w', 'Was bedeutet „I have just arrived“?', 'Ich bin gerade angekommen.', ['Ich komme gleich an.', 'Ich kam gestern an.', 'Ich komme nie an.']],
+    ['e', 'Complete: Tom … (lose) his phone. He can’t call you.', ['has lost', "'s lost"]]],
+  gen: [
+    () => { const v = R.pick(E6_VERBEN); return ['e', `Wie heißt die 3. Form (past participle) von „${v[0]}“?`, v[2], `${v[0]}, ${v[1]}, ${v[2]} (${v[3]})`]; },
+    () => { const v = R.pick(E6_VERBEN), f = [e6Ed(v[0]), v[2] !== v[1] ? v[2] : v[0]]; return ['w', `Simple past von „${v[0]}“?`, v[1], f, `${v[0]}, ${v[1]}, ${v[2]}`]; },
+    () => { const [p, h] = R.pick(E6_PERSON), v = R.pick(E6_VERBEN.filter(x => ['see', 'eat', 'write', 'buy', 'find', 'lose', 'break', 'forget', 'win', 'choose'].includes(x[0]))); return ['e', `Present perfect: ${p} … (${v[0]}) it.`, `${h} ${v[2]}`, `${p} → ${h}, dazu die 3. Form ${v[2]}.`]; }
+  ] });
+
+gymThema({ id: 'e6-future', f: 'englisch', kl: 6, t: 'Future: will und going to',
+  merk: ['will-future: will + Infinitiv. Für Vermutungen, Vorhersagen und spontane Entscheidungen: I think it will rain. I’ll help you!',
+    'going to-future: am / is / are going to + Infinitiv. Für Pläne und Absichten: I’m going to visit my aunt next week.',
+    'going to auch, wenn man schon sieht, dass etwas passiert: Look at the clouds! It’s going to rain.',
+    'Verneinung: won’t (= will not) und I’m not going to …',
+    'Signalwörter: tomorrow, next week, soon, in 2030, I think, probably.'],
+  a: [['l', 'Choose.', 'Look at those black clouds! It {is going to|will to|goes to} rain.'],
+    ['l', 'Choose.', 'The phone is ringing. I {will|am going|goes} answer it!'],
+    ['l', 'Choose.', 'We {are going to|will going to|is going to} visit Grandma next weekend. It’s planned.'],
+    ['l', 'Choose.', 'I think robots {will|are going|goes} do many jobs in the future.'],
+    ['w', 'What is the short form of „will not“?', 'won’t', ['willn’t', 'wont’', 'not’ll']],
+    ['w', 'Which sentence describes a plan?', 'I’m going to learn the guitar this year.', ['I think it will be sunny.', 'Wait, I’ll open the door!', 'Maybe people will live on Mars.']],
+    ['rf', '„I will help you!“ kann eine spontane Entscheidung sein.', true],
+    ['e', 'Complete with going to: She … (watch) a film tonight.', ['is going to watch', "'s going to watch"]],
+    ['o', 'Put the words in the right order.', ['Are', 'you', 'going', 'to', 'play', 'tennis?']],
+    ['w', 'Welches Signalwort passt zur Zukunft?', 'next week', ['last week', 'yesterday', 'ago']],
+    ['z', 'Match.', [['I’ll', 'I will'], ['won’t', 'will not'], ['she’s going to', 'she is going to'], ['they’re going to', 'they are going to']]]] });
+
+gymThema({ id: 'e6-vergleich', f: 'englisch', kl: 6, t: 'Steigerung und Adverbien',
+  merk: ['Kurze Adjektive: -er und -est: small, smaller, the smallest. Achtung: big, bigger (Konsonant verdoppeln), happy, happier (y wird i).',
+    'Lange Adjektive: more und the most: interesting, more interesting, the most interesting.',
+    'Unregelmäßig: good, better, the best · bad, worse, the worst · much / many, more, the most.',
+    'Vergleich: as big as (genauso groß wie), bigger than (größer als).',
+    'Adverbien der Art und Weise beschreiben ein Verb, meist mit -ly: quick, quickly. Sie sing beautifully. Achtung: good wird zu well.'],
+  a: [['l', 'Choose.', 'My brother is {taller|more tall|tallest} than me.'],
+    ['l', 'Choose.', 'This is the {most exciting|excitingest|more exciting} film I have ever seen.'],
+    ['l', 'Choose.', 'Today the weather is {worse|badder|more bad} than yesterday.'],
+    ['l', 'Choose.', 'She plays the piano very {well|good|goodly}.'],
+    ['l', 'Choose.', 'The children ran {quickly|quick|quicker than} to the bus.'],
+    ['w', 'What is the superlative of „good“?', 'the best', ['the goodest', 'the better', 'the most good']],
+    ['w', 'Which sentence is correct?', 'Tom is as old as Ben.', ['Tom is as old than Ben.', 'Tom is so old as Ben.', 'Tom is older as Ben.']],
+    ['rf', 'Bei „big“ wird der Konsonant verdoppelt: bigger, the biggest.', true],
+    ['e', 'Bilde das Adverb von „careful“.', 'carefully'],
+    ['e', 'Bilde den Komparativ von „happy“.', 'happier'],
+    ['z', 'Match.', [['bad', 'worse'], ['many', 'more'], ['good', 'better'], ['little', 'less']]]],
+  gen: [
+    () => { const [a, k, s] = R.pick([['small', 'smaller', 'smallest'], ['long', 'longer', 'longest'], ['fast', 'faster', 'fastest'], ['big', 'bigger', 'biggest'], ['hot', 'hotter', 'hottest'], ['easy', 'easier', 'easiest'], ['funny', 'funnier', 'funniest'], ['nice', 'nicer', 'nicest'],
+      ['expensive', 'more expensive', 'most expensive'], ['beautiful', 'more beautiful', 'most beautiful'], ['dangerous', 'more dangerous', 'most dangerous'], ['famous', 'more famous', 'most famous']]), sup = R.chance(.5);
+      return ['e', `${sup ? 'Superlativ' : 'Komparativ'} von „${a}“?`, sup ? [s, 'the ' + s] : k, `${a}, ${k}, the ${s}`]; },
+    () => { const [a, ad] = R.pick([['slow', 'slowly'], ['loud', 'loudly'], ['happy', 'happily'], ['easy', 'easily'], ['careful', 'carefully'], ['bad', 'badly'], ['quiet', 'quietly'], ['good', 'well']]); return ['e', `Bilde das Adverb von „${a}“.`, ad]; }
+  ] });
+
+gymThema({ id: 'e6-mengen', f: 'englisch', kl: 6, t: 'some, any, much, many',
+  merk: ['some in bejahten Sätzen, any in Fragen und verneinten Sätzen: I have some apples. Have you got any milk? There isn’t any bread.',
+    'Bei Angeboten und Bitten steht auch in Fragen some: Would you like some tea?',
+    'Zusammensetzungen: somebody, something, somewhere · anybody, anything, anywhere · nobody, nothing, nowhere.',
+    'much bei nicht zählbaren Nomen (water, money, time), many bei zählbaren Nomen im Plural (books, friends).',
+    'a lot of passt zu beiden: a lot of water, a lot of friends.'],
+  a: [['l', 'Choose.', 'There aren’t {any|some|no} biscuits left.'],
+    ['l', 'Choose.', 'Would you like {some|any|many} orange juice?'],
+    ['l', 'Choose.', 'How {much|many|lot} money have you got?'],
+    ['l', 'Choose.', 'How {many|much|lot of} brothers and sisters have you got?'],
+    ['l', 'Choose.', 'I can’t find my keys {anywhere|somewhere|nowhere}.'],
+    ['l', 'Choose.', 'Is there {anybody|nobody|any} at home?'],
+    ['k', 'Sortiere die Nomen.', [['countable (many)', ['apples', 'friends', 'books', 'cars']], ['uncountable (much)', ['water', 'money', 'time', 'homework']]]],
+    ['rf', '„We haven’t got some bread.“ ist richtig.', false, 'In verneinten Sätzen steht any: We haven’t got any bread.'],
+    ['w', 'Was bedeutet „nothing“?', 'nichts', ['niemand', 'nirgendwo', 'etwas']],
+    ['w', 'Which sentence is correct?', 'There are a lot of people in the park.', ['There are much people in the park.', 'There is many people in the park.', 'There are a lot people in the park.']],
+    ['z', 'Match.', [['somebody', 'jemand'], ['something', 'etwas'], ['nowhere', 'nirgendwo'], ['nobody', 'niemand'], ['anything', 'irgendetwas']]],
+    ['w', 'Welches Wort passt? „I didn’t eat … for breakfast.“', 'anything', ['something', 'nothing', 'nobody'], 'Verneinter Satz mit didn’t: anything.']] });
+
+gymThema({ id: 'e6-saetze', f: 'englisch', kl: 6, t: 'Relativsätze und if-Sätze',
+  merk: ['Relativsätze beschreiben eine Person oder Sache genauer. who für Personen, which für Dinge und Tiere, that für beides.',
+    'The girl who lives next door is my friend. The book which I read was exciting.',
+    'if-Satz Typ 1 (wahrscheinliche Bedingung): if + simple present, Hauptsatz mit will. If it rains, we will stay at home.',
+    'Im if-Satz selbst steht kein will!',
+    'Steht der if-Satz vorne, setzt man ein Komma.'],
+  a: [['l', 'Choose.', 'The boy {who|which|whose} won the race is my cousin.'],
+    ['l', 'Choose.', 'This is the bike {which|who|where} I got for my birthday.'],
+    ['l', 'Choose.', 'If you {hurry|will hurry|hurried}, you will catch the bus.'],
+    ['l', 'Choose.', 'If it is sunny tomorrow, we {will go|go|went} to the beach.'],
+    ['l', 'Choose.', 'I know a woman {who|which|what} speaks five languages.'],
+    ['w', 'Which sentence is correct?', 'If I find your pen, I will give it to you.', ['If I will find your pen, I give it to you.', 'If I find your pen, I give it you tomorrow will.', 'If I found your pen, I will give it to you.']],
+    ['rf', 'Für Tiere und Dinge benutzt man im Relativsatz „who“.', false, 'Für Dinge und Tiere: which (oder that).'],
+    ['rf', 'Im if-Satz vom Typ 1 steht das simple present.', true],
+    ['e', 'Complete: If we … (miss) the train, we will be late.', 'miss'],
+    ['e', 'Complete: If you study, you … (pass) the test.', ['will pass', "'ll pass"]],
+    ['o', 'Put the words in the right order.', ['The', 'dog', 'which', 'barks', 'is', 'Max.']],
+    ['w', 'Welches Relativpronomen passt für Personen und Dinge?', 'that', ['what', 'where', 'when']]] });
+
+gymThema({ id: 'e6-wortschatz', f: 'englisch', kl: 6, t: 'Wortschatz: Reisen, Wetter, Großbritannien',
+  merk: ['Reisen: luggage (Gepäck), ticket, platform (Bahnsteig), departure (Abfahrt), arrival (Ankunft), youth hostel (Jugendherberge), sightseeing.',
+    'Wetter: sunny, cloudy, foggy, windy, rainy, snowy, a storm, a shower (Regenschauer), degrees (Grad).',
+    'Großbritannien besteht aus England, Scotland und Wales. Zum Vereinigten Königreich (UK) gehört noch Northern Ireland.',
+    'Hauptstädte: London (England), Edinburgh (Scotland), Cardiff (Wales), Belfast (Northern Ireland).',
+    'In London: Big Ben, the Tower of London, the London Eye, Buckingham Palace, the Underground („the Tube“).'],
+  a: [['w', 'What is the capital of Scotland?', 'Edinburgh', ['Glasgow', 'Cardiff', 'Belfast']],
+    ['w', 'What is the capital of Wales?', 'Cardiff', ['Edinburgh', 'Dublin', 'Swansea']],
+    ['w', 'What do you call the London underground railway?', 'the Tube', ['the Pipe', 'the Metro Line', 'the Bus']],
+    ['z', 'Match.', [['luggage', 'Gepäck'], ['platform', 'Bahnsteig'], ['departure', 'Abfahrt'], ['arrival', 'Ankunft'], ['youth hostel', 'Jugendherberge']]],
+    ['z', 'Match.', [['foggy', 'neblig'], ['windy', 'windig'], ['cloudy', 'bewölkt'], ['shower', 'Regenschauer'], ['thunderstorm', 'Gewitter']]],
+    ['rf', 'Northern Ireland gehört zum United Kingdom.', true],
+    ['rf', 'Großbritannien (Great Britain) besteht aus England, Scotland und Wales.', true],
+    ['w', 'Wie sagt man „Ich hätte gern eine Fahrkarte nach Oxford“?', 'I’d like a ticket to Oxford, please.', ['I want ticket Oxford.', 'Give me Oxford ticket.', 'I like a ticket for Oxford, please.']],
+    ['w', 'What does „return ticket“ mean?', 'Hin- und Rückfahrkarte', ['Rückgabe', 'nur Hinfahrt', 'Wochenkarte']],
+    ['w', 'What is the King’s official residence in London?', 'Buckingham Palace', ['Big Ben', 'the Tower Bridge', 'the London Eye']],
+    ['k', 'Sortiere.', [['weather', ['sunny', 'snowy', 'foggy']], ['travel', ['ticket', 'platform', 'luggage']]]],
+    ['e', 'Translate: Wie ist das Wetter heute? → What’s the … like today?', 'weather']] });
+
+/*@@src gym600_nawi6.js@@*/
+
+
+gymThema({ id: 'b6-zelle', f: 'bio', kl: 6, t: 'Zellen: Bausteine des Lebens',
+  merk: ['Alle Lebewesen bestehen aus Zellen. Viele Zellen gleicher Art bilden ein Gewebe, Gewebe bilden Organe.',
+    'Tierzelle und Pflanzenzelle haben: Zellmembran, Zellplasma (Zytoplasma) und Zellkern. Der Zellkern steuert die Zelle.',
+    'Nur Pflanzenzellen haben zusätzlich: Zellwand (gibt Festigkeit), Vakuole (Zellsaftraum) und Chloroplasten (Blattgrün für die Fotosynthese).',
+    'Zellen sind meist so klein, dass man ein Mikroskop braucht. Gesamtvergrößerung = Okularvergrößerung · Objektivvergrößerung.'],
+  a: [['w', 'Welcher Zellbestandteil steuert die Zelle?', 'Zellkern', ['Vakuole', 'Zellwand', 'Zellplasma']],
+    ['w', 'Was haben nur Pflanzenzellen?', 'Chloroplasten', ['Zellkern', 'Zellmembran', 'Zellplasma']],
+    ['rf', 'Tierzellen haben eine feste Zellwand.', false, 'Nur Pflanzenzellen haben eine Zellwand, Tierzellen nur eine Zellmembran.'],
+    ['e', 'Ein Okular vergrößert 10-fach, das Objektiv 40-fach. Wie stark ist die Gesamtvergrößerung?', '400', '10 · 40 = 400.', { einheit: '-fach' }],
+    ['k', 'Sortiere die Zellbestandteile.', [['Pflanzenzelle und Tierzelle', ['Zellkern', 'Zellmembran', 'Zellplasma']], ['nur Pflanzenzelle', ['Zellwand', 'Vakuole', 'Chloroplast']]]],
+    ['o', 'Ordne von klein nach groß.', ['Zelle', 'Gewebe', 'Organ', 'Lebewesen']],
+    ['w', 'Wofür sind die Chloroplasten wichtig?', 'für die Fotosynthese', ['für die Bewegung', 'zum Speichern von Wasser', 'für die Verdauung']],
+    ['w', 'Was ist die Vakuole?', 'ein Raum mit Zellsaft', ['die äußere Hülle', 'das Steuerzentrum', 'ein Blattgrünkorn']],
+    ['z', 'Ordne zu.', [['Zellwand', 'gibt Festigkeit'], ['Zellkern', 'steuert die Zelle'], ['Chloroplast', 'enthält Blattgrün'], ['Zellmembran', 'grenzt die Zelle ab'], ['Vakuole', 'speichert Zellsaft']]],
+    ['rf', 'Mundschleimhautzellen sind Tierzellen.', true],
+    ['w', 'Wie heißt das Linsensystem, durch das man beim Mikroskop schaut?', 'Okular', ['Objektiv', 'Objekttisch', 'Blende']],
+    ['rf', 'Bakterien sind Lebewesen, die nur aus einer Zelle bestehen.', true]] });
+
+gymThema({ id: 'b6-fotosynthese', f: 'bio', kl: 6, t: 'Wie Pflanzen sich ernähren',
+  merk: ['Fotosynthese: Grüne Pflanzen bauen aus Wasser und Kohlenstoffdioxid mit Hilfe von Lichtenergie Traubenzucker auf. Dabei entsteht Sauerstoff.',
+    'Wasser + Kohlenstoffdioxid → (Licht, Blattgrün) → Traubenzucker + Sauerstoff.',
+    'Die Wurzeln nehmen Wasser und Mineralstoffe auf. Über Leitungsbahnen im Stängel kommt das Wasser in die Blätter.',
+    'Über Spaltöffnungen an der Blattunterseite nimmt die Pflanze Kohlenstoffdioxid auf und gibt Sauerstoff und Wasserdampf ab.',
+    'Aus Traubenzucker macht die Pflanze Stärke als Vorrat, zum Beispiel in der Kartoffelknolle.'],
+  a: [['w', 'Welches Gas gibt eine Pflanze bei der Fotosynthese ab?', 'Sauerstoff', ['Kohlenstoffdioxid', 'Stickstoff', 'Wasserstoff']],
+    ['w', 'Was braucht eine Pflanze für die Fotosynthese nicht?', 'Sauerstoff', ['Licht', 'Wasser', 'Kohlenstoffdioxid']],
+    ['rf', 'Pflanzen können auch im völligen Dunkeln Fotosynthese betreiben.', false, 'Für die Fotosynthese braucht die Pflanze Licht.'],
+    ['w', 'Wo liegen die meisten Spaltöffnungen?', 'an der Blattunterseite', ['an den Wurzeln', 'in der Blüte', 'im Stängelmark']],
+    ['o', 'Ordne den Weg des Wassers in der Pflanze.', ['Wurzelhaare', 'Wurzel', 'Leitungsbahnen im Stängel', 'Blatt', 'Spaltöffnung (Wasserdampf)']],
+    ['w', 'In welcher Form speichert die Kartoffel Vorräte?', 'Stärke', ['Fett', 'Eiweiß', 'Salz']],
+    ['l', 'Ergänze.', 'Bei der Fotosynthese entstehen {Traubenzucker|Salz|Stickstoff} und Sauerstoff.'],
+    ['rf', 'Der grüne Farbstoff der Pflanzen heißt Chlorophyll (Blattgrün).', true],
+    ['w', 'Warum sind Pflanzen für Menschen und Tiere so wichtig?', 'Sie bilden Sauerstoff und Nahrung.', ['Sie machen die Luft wärmer.', 'Sie verbrauchen Kohlenstoffdioxid nur nachts.', 'Sie fressen Schädlinge.']],
+    ['w', 'Mit welchem Nachweis kann man Stärke zeigen?', 'Iod-Lösung färbt sich blauschwarz', ['Wasser wird rot', 'Kalkwasser wird trüb', 'Ein Magnet zieht sie an']],
+    ['z', 'Ordne zu.', [['Wurzel', 'nimmt Wasser auf'], ['Blatt', 'Ort der Fotosynthese'], ['Spaltöffnung', 'Gasaustausch'], ['Stängel', 'leitet Wasser nach oben']]],
+    ['rf', 'Bei der Fotosynthese wird Lichtenergie in chemische Energie (Traubenzucker) umgewandelt.', true]] });
+
+gymThema({ id: 'b6-blueten', f: 'bio', kl: 6, t: 'Blüten, Früchte und Pflanzenfamilien',
+  merk: ['Teile der Blüte von außen nach innen: Kelchblätter, Kronblätter, Staubblätter (männlich, Pollen), Fruchtblatt mit Narbe, Griffel und Fruchtknoten (weiblich).',
+    'Bestäubung: Pollen gelangt auf die Narbe (durch Insekten oder Wind). Befruchtung: Der Pollenschlauch wächst zur Eizelle im Fruchtknoten.',
+    'Aus dem Fruchtknoten wird die Frucht, aus der Samenanlage der Samen.',
+    'Samen werden verbreitet durch Wind (Löwenzahn, Ahorn), Tiere (Kletten, Kirschen) oder die Pflanze selbst (Springkraut).',
+    'Pflanzenfamilien: Kreuzblütler (4 Kronblätter über Kreuz, Raps), Rosengewächse (5 Kronblätter, Apfel, Kirsche), Schmetterlingsblütler (Fahne, Flügel, Schiffchen, Erbse), Lippenblütler (Ober- und Unterlippe, Taubnessel).'],
+  a: [['w', 'Welcher Teil der Blüte bildet den Pollen?', 'Staubblatt', ['Narbe', 'Kelchblatt', 'Fruchtknoten']],
+    ['w', 'Was wird aus dem Fruchtknoten?', 'die Frucht', ['der Pollen', 'das Kronblatt', 'die Wurzel']],
+    ['rf', 'Bestäubung und Befruchtung sind dasselbe.', false, 'Bestäubung: Pollen auf die Narbe. Befruchtung: Verschmelzung im Fruchtknoten.'],
+    ['o', 'Ordne die Blütenteile von außen nach innen.', ['Kelchblätter', 'Kronblätter', 'Staubblätter', 'Fruchtblatt']],
+    ['k', 'Wie werden die Samen verbreitet?', [['Wind', ['Löwenzahn', 'Ahorn', 'Birke']], ['Tiere', ['Klette', 'Kirsche', 'Eichel']]]],
+    ['w', 'Zu welcher Pflanzenfamilie gehört die Erbse?', 'Schmetterlingsblütler', ['Kreuzblütler', 'Rosengewächse', 'Lippenblütler']],
+    ['w', 'Zu welcher Pflanzenfamilie gehört der Apfel?', 'Rosengewächse', ['Kreuzblütler', 'Schmetterlingsblütler', 'Korbblütler']],
+    ['w', 'Woran erkennt man Kreuzblütler wie den Raps?', '4 Kronblätter über Kreuz', ['5 Kronblätter', 'Fahne und Schiffchen', 'Ober- und Unterlippe']],
+    ['rf', 'Der Löwenzahn ist eigentlich ein Blütenstand aus vielen kleinen Blüten.', true, 'Er gehört zu den Korbblütlern.'],
+    ['z', 'Ordne zu.', [['Narbe', 'fängt den Pollen auf'], ['Kronblatt', 'lockt Insekten an'], ['Fruchtknoten', 'enthält die Samenanlage'], ['Kelchblatt', 'schützt die Knospe']]],
+    ['w', 'Welche Pflanzen werden meist vom Wind bestäubt?', 'Gräser', ['Rosen', 'Tulpen', 'Sonnenblumen'], 'Windblüten sind unscheinbar und bilden sehr viel Pollen.'],
+    ['w', 'Welche Tiere bestäuben besonders viele Blüten?', 'Bienen und andere Insekten', ['Regenwürmer', 'Fische', 'Maulwürfe']]] });
+
+gymThema({ id: 'b6-wald', f: 'bio', kl: 6, t: 'Lebensraum Wald',
+  merk: ['Stockwerke des Waldes: Boden, Moosschicht, Krautschicht, Strauchschicht, Baumschicht.',
+    'Nahrungskette: Pflanze (Erzeuger) → Pflanzenfresser → Fleischfresser. Beispiel: Eichel → Eichhörnchen → Habicht.',
+    'Viele Nahrungsketten bilden zusammen ein Nahrungsnetz.',
+    'Zersetzer (Pilze, Bakterien, Regenwürmer, Asseln) machen aus totem Laub und Holz wieder Humus und Mineralstoffe.',
+    'Pilze sind keine Pflanzen. Sie haben kein Blattgrün. Der eigentliche Pilz ist das Pilzgeflecht (Myzel) im Boden.',
+    'Der Wald speichert Wasser, bildet Sauerstoff, filtert Staub und ist Lebensraum für viele Arten.'],
+  a: [['o', 'Ordne die Stockwerke des Waldes von unten nach oben.', ['Moosschicht', 'Krautschicht', 'Strauchschicht', 'Baumschicht']],
+    ['w', 'Wer steht am Anfang jeder Nahrungskette?', 'eine Pflanze (Erzeuger)', ['ein Fleischfresser', 'ein Pilz', 'ein Vogel']],
+    ['o', 'Ordne die Nahrungskette.', ['Blatt', 'Raupe', 'Meise', 'Sperber']],
+    ['rf', 'Pilze betreiben Fotosynthese.', false, 'Pilze haben kein Blattgrün. Sie ernähren sich von abgestorbenen Stoffen oder leben mit Bäumen zusammen.'],
+    ['w', 'Wie heißt das Pilzgeflecht im Boden?', 'Myzel', ['Moos', 'Humus', 'Wurzelhaar']],
+    ['k', 'Sortiere die Lebewesen.', [['Erzeuger', ['Buche', 'Farn', 'Moos']], ['Verbraucher', ['Reh', 'Fuchs', 'Specht']], ['Zersetzer', ['Regenwurm', 'Assel', 'Bakterien']]]],
+    ['w', 'Was machen Zersetzer?', 'Sie verwandeln totes Laub in Humus.', ['Sie fressen nur Rehe.', 'Sie stellen Sauerstoff her.', 'Sie bestäuben Blüten.']],
+    ['rf', 'Viele Nahrungsketten bilden zusammen ein Nahrungsnetz.', true],
+    ['w', 'In welchem Stockwerk wachsen Brombeeren und Holunder?', 'Strauchschicht', ['Moosschicht', 'Baumschicht', 'Krautschicht']],
+    ['w', 'Welche Aufgabe hat der Wald nicht?', 'Er erzeugt Kohlenstoffdioxid für die Luft.', ['Er speichert Wasser.', 'Er filtert Staub aus der Luft.', 'Er ist Lebensraum für Tiere.']],
+    ['w', 'Welches Tier ist ein Fleischfresser im Wald?', 'Fuchs', ['Reh', 'Eichhörnchen', 'Rothirsch']],
+    ['z', 'Ordne zu.', [['Buche', 'Laubbaum'], ['Fichte', 'Nadelbaum'], ['Fliegenpilz', 'Giftpilz'], ['Farn', 'Krautschicht']]]] });
+
+gymThema({ id: 'b6-sinne', f: 'bio', kl: 6, t: 'Sinnesorgane: Auge und Ohr',
+  merk: ['Fünf Sinne: Sehen (Auge), Hören (Ohr), Riechen (Nase), Schmecken (Zunge), Tasten (Haut).',
+    'Licht fällt durch Hornhaut, Pupille und Linse auf die Netzhaut. Dort entsteht ein umgekehrtes, verkleinertes Bild, der Sehnerv leitet es zum Gehirn.',
+    'Die Iris (Regenbogenhaut) regelt, wie weit die Pupille geöffnet ist: bei Dunkelheit weit, bei Helligkeit eng.',
+    'Ohr: Ohrmuschel und Gehörgang leiten den Schall zum Trommelfell. Die Gehörknöchelchen (Hammer, Amboss, Steigbügel) übertragen ihn ins Innenohr zur Schnecke.',
+    'Im Innenohr liegt auch das Gleichgewichtsorgan. Laute Geräusche können das Gehör dauerhaft schädigen.'],
+  a: [['w', 'Wo entsteht im Auge das Bild?', 'auf der Netzhaut', ['auf der Hornhaut', 'in der Pupille', 'in der Iris']],
+    ['w', 'Was passiert mit der Pupille im Dunkeln?', 'Sie wird weiter.', ['Sie wird enger.', 'Sie schließt sich.', 'Sie wird rot.']],
+    ['o', 'Ordne den Weg des Lichts im Auge.', ['Hornhaut', 'Pupille', 'Linse', 'Glaskörper', 'Netzhaut']],
+    ['o', 'Ordne den Weg des Schalls im Ohr.', ['Ohrmuschel', 'Gehörgang', 'Trommelfell', 'Gehörknöchelchen', 'Schnecke']],
+    ['w', 'Wie heißen die drei Gehörknöchelchen?', 'Hammer, Amboss, Steigbügel', ['Hammer, Säge, Zange', 'Amboss, Sattel, Bügel', 'Schnecke, Muschel, Horn']],
+    ['rf', 'Das Gleichgewichtsorgan liegt im Innenohr.', true],
+    ['rf', 'Auf der Netzhaut steht das Bild auf dem Kopf.', true, 'Das Gehirn dreht es für uns wieder richtig herum.'],
+    ['z', 'Ordne Sinn und Organ zu.', [['Sehen', 'Auge'], ['Hören', 'Ohr'], ['Riechen', 'Nase'], ['Schmecken', 'Zunge'], ['Tasten', 'Haut']]],
+    ['w', 'Welcher Teil des Auges ist farbig?', 'Iris (Regenbogenhaut)', ['Netzhaut', 'Sehnerv', 'Linse']],
+    ['w', 'Was schützt das Gehör bei sehr lauter Musik?', 'Abstand halten und Gehörschutz tragen', ['näher an die Boxen gehen', 'den Mund schließen', 'die Augen zukneifen']],
+    ['w', 'Was leitet die Nachricht vom Auge zum Gehirn?', 'der Sehnerv', ['die Linse', 'die Tränendrüse', 'das Augenlid']],
+    ['rf', 'Der blinde Fleck ist die Stelle, an der der Sehnerv das Auge verlässt.', true]] });
+
+gymThema({ id: 'b6-wirbellose', f: 'bio', kl: 6, t: 'Insekten, Spinnen und andere Wirbellose',
+  merk: ['Wirbellose haben keine Wirbelsäule. Dazu gehören Insekten, Spinnen, Krebse, Schnecken und Würmer.',
+    'Insekten: 3 Körperteile (Kopf, Brust, Hinterleib), 6 Beine, oft Flügel und Fühler. Sie haben ein Außenskelett aus Chitin.',
+    'Spinnen: 2 Körperteile, 8 Beine, keine Fühler, keine Flügel.',
+    'Vollständige Verwandlung: Ei → Larve (Raupe) → Puppe → fertiges Insekt (Schmetterling, Käfer, Biene). Unvollständige Verwandlung ohne Puppe (Heuschrecke).',
+    'Der Regenwurm lockert und durchmischt den Boden und macht ihn fruchtbar.'],
+  a: [['w', 'Wie viele Beine hat ein Insekt?', '6', ['4', '8', '10']],
+    ['w', 'Wie viele Beine hat eine Spinne?', '8', ['6', '10', '4']],
+    ['rf', 'Spinnen sind Insekten.', false, 'Spinnen haben 8 Beine und 2 Körperteile, sie sind Spinnentiere.'],
+    ['o', 'Ordne die Entwicklung des Schmetterlings.', ['Ei', 'Raupe', 'Puppe', 'Schmetterling']],
+    ['w', 'Woraus besteht das Außenskelett der Insekten?', 'Chitin', ['Knochen', 'Kalk', 'Holz']],
+    ['k', 'Sortiere die Tiere.', [['Insekten', ['Biene', 'Marienkäfer', 'Ameise', 'Libelle']], ['keine Insekten', ['Kreuzspinne', 'Regenwurm', 'Weinbergschnecke', 'Assel']]]],
+    ['w', 'Welches Insekt macht keine vollständige Verwandlung mit Puppe?', 'Heuschrecke', ['Schmetterling', 'Marienkäfer', 'Biene']],
+    ['w', 'Welche drei Körperteile hat ein Insekt?', 'Kopf, Brust, Hinterleib', ['Kopf, Bauch, Schwanz', 'Kopf und Rumpf', 'Brust, Bauch, Flügel']],
+    ['rf', 'Der Regenwurm macht den Boden fruchtbarer.', true],
+    ['w', 'Warum sind Bienen so wichtig?', 'Sie bestäuben viele Blüten.', ['Sie fressen Schnecken.', 'Sie lockern den Boden.', 'Sie bauen Spinnennetze.']],
+    ['z', 'Ordne zu.', [['Raupe', 'Larve des Schmetterlings'], ['Kokon', 'Hülle der Puppe'], ['Fühler', 'Riechen und Tasten'], ['Facettenauge', 'Auge aus vielen Einzelaugen']]],
+    ['rf', 'Krebse und Asseln gehören zu den Wirbellosen.', true]] });
+
+gymThema({ id: 'b6-kreislauf', f: 'bio', kl: 6, t: 'Herz, Blut und Kreislauf',
+  merk: ['Das Herz ist ein Hohlmuskel. Es pumpt das Blut durch die Adern, in Ruhe etwa 60- bis 80-mal pro Minute.',
+    'Arterien führen das Blut vom Herzen weg, Venen führen es zum Herzen hin. In den feinen Kapillaren findet der Stoffaustausch statt.',
+    'Lungenkreislauf: Das Blut nimmt in der Lunge Sauerstoff auf und gibt Kohlenstoffdioxid ab. Körperkreislauf: Es bringt Sauerstoff und Nährstoffe zu allen Organen.',
+    'Rote Blutzellen transportieren Sauerstoff, weiße Blutzellen wehren Krankheitserreger ab, Blutplättchen helfen bei der Blutgerinnung.',
+    'Bewegung stärkt Herz und Kreislauf.'],
+  a: [['w', 'Welche Adern führen das Blut vom Herzen weg?', 'Arterien', ['Venen', 'Kapillaren', 'Lymphbahnen']],
+    ['w', 'Welche Blutbestandteile transportieren Sauerstoff?', 'rote Blutzellen', ['weiße Blutzellen', 'Blutplättchen', 'Blutplasma allein']],
+    ['w', 'Was machen weiße Blutzellen?', 'Sie wehren Krankheitserreger ab.', ['Sie transportieren Sauerstoff.', 'Sie verschließen Wunden.', 'Sie verdauen Nahrung.']],
+    ['rf', 'Das Herz ist ein Muskel.', true],
+    ['rf', 'Im Lungenkreislauf gibt das Blut Sauerstoff an die Lunge ab.', false, 'Umgekehrt: In der Lunge nimmt das Blut Sauerstoff auf und gibt Kohlenstoffdioxid ab.'],
+    ['w', 'Wo findet der Stoffaustausch zwischen Blut und Körperzellen statt?', 'in den Kapillaren', ['in der Hauptschlagader', 'in den Herzklappen', 'im Magen']],
+    ['w', 'Wofür sind Blutplättchen wichtig?', 'für die Blutgerinnung', ['für das Sehen', 'für den Sauerstofftransport', 'für das Wachstum der Haare']],
+    ['e', 'Ein Herz schlägt 70-mal pro Minute. Wie oft schlägt es in einer Stunde?', '4200', '70 · 60 = 4 200.'],
+    ['z', 'Ordne zu.', [['Arterie', 'vom Herzen weg'], ['Vene', 'zum Herzen hin'], ['Kapillare', 'feinste Ader'], ['Lunge', 'Gasaustausch']]],
+    ['w', 'Was passiert mit dem Puls beim Sport?', 'Er wird schneller.', ['Er bleibt gleich.', 'Er wird langsamer.', 'Er setzt aus.']],
+    ['rf', 'Venen haben Klappen, damit das Blut nicht zurückfließt.', true],
+    ['w', 'Wie heißt die größte Arterie des Körpers?', 'Aorta (Hauptschlagader)', ['Halsvene', 'Lungenvene', 'Kapillare']]] });
+
+gymThema({ id: 'p6-temperatur', f: 'physik', kl: 6, t: 'Temperatur und Ausdehnung',
+  merk: ['Die Temperatur misst man mit dem Thermometer in Grad Celsius (°C).',
+    'Fixpunkte der Celsius-Skala: Eis schmilzt bei 0 °C, Wasser siedet (bei normalem Luftdruck) bei 100 °C.',
+    'Die meisten Stoffe dehnen sich beim Erwärmen aus und ziehen sich beim Abkühlen zusammen. Gase dehnen sich am stärksten aus, feste Körper am wenigsten.',
+    'Deshalb haben Brücken Dehnungsfugen und Stromleitungen hängen im Sommer stärker durch.',
+    'Ein Bimetallstreifen besteht aus zwei Metallen, die sich verschieden stark ausdehnen. Beim Erwärmen biegt er sich, zum Beispiel im Thermostat.',
+    'Besonderheit von Wasser: Es hat bei 4 °C die größte Dichte und dehnt sich beim Gefrieren aus. Darum schwimmt Eis.'],
+  a: [['w', 'Bei welcher Temperatur siedet Wasser bei normalem Luftdruck?', '100 °C', ['0 °C', '50 °C', '37 °C']],
+    ['w', 'Bei welcher Temperatur schmilzt Eis?', '0 °C', ['4 °C', '−10 °C', '100 °C']],
+    ['rf', 'Gase dehnen sich beim Erwärmen stärker aus als feste Körper.', true],
+    ['w', 'Warum haben Brücken Dehnungsfugen?', 'Weil sich das Material bei Wärme ausdehnt.', ['Damit Regenwasser abfließt.', 'Damit sie leichter sind.', 'Damit Autos langsamer fahren.']],
+    ['w', 'Was ist ein Bimetallstreifen?', 'zwei verschiedene Metalle, fest verbunden', ['ein Streifen aus Glas', 'ein Magnet', 'ein Thermometer mit Quecksilber']],
+    ['rf', 'Wasser dehnt sich beim Gefrieren aus.', true, 'Deshalb platzen volle Flaschen im Tiefkühlfach und Eis schwimmt.'],
+    ['e', 'Morgens sind es −3 °C, mittags 8 °C. Um wie viel Grad ist es wärmer geworden?', '11', '', { einheit: '°C' }],
+    ['w', 'Welche Körpertemperatur hat ein gesunder Mensch ungefähr?', '37 °C', ['30 °C', '42 °C', '25 °C']],
+    ['w', 'Warum hängen Stromleitungen im Sommer tiefer durch?', 'Die Drähte dehnen sich bei Wärme aus.', ['Im Sommer fließt mehr Strom.', 'Die Masten sinken in den Boden.', 'Vögel sitzen darauf.']],
+    ['o', 'Ordne nach der Temperatur, von kalt nach warm.', ['Gefrierfach −18 °C', 'schmelzendes Eis 0 °C', 'Zimmer 21 °C', 'Körper 37 °C', 'siedendes Wasser 100 °C']],
+    ['w', 'Wie heißt die Temperatureinheit, die wir im Alltag benutzen?', 'Grad Celsius', ['Kilogramm', 'Watt', 'Dezibel']],
+    ['rf', 'Ein Flüssigkeitsthermometer funktioniert, weil sich die Flüssigkeit beim Erwärmen ausdehnt.', true]] });
+
+gymThema({ id: 'p6-waerme', f: 'physik', kl: 6, t: 'Wärme wandert',
+  merk: ['Wärme fließt immer vom wärmeren zum kälteren Körper.',
+    'Wärmeleitung: Wärme wandert durch einen Stoff, ohne dass der Stoff sich bewegt. Metalle sind gute Wärmeleiter, Luft, Holz und Wolle schlechte.',
+    'Wärmeströmung (Konvektion): Warmes Wasser oder warme Luft steigt nach oben und nimmt die Wärme mit, zum Beispiel bei der Heizung.',
+    'Wärmestrahlung: Wärme kommt ohne Stoff durch den leeren Raum, zum Beispiel von der Sonne.',
+    'Dämmen: Schlechte Wärmeleiter wie Luftpolster, Styropor oder Federn halten die Wärme zurück.'],
+  a: [['w', 'Wie kommt die Wärme der Sonne zur Erde?', 'durch Wärmestrahlung', ['durch Wärmeleitung', 'durch Wärmeströmung', 'durch Strom']],
+    ['w', 'Ein Metalllöffel im heißen Tee wird schnell heiß. Wie heißt das?', 'Wärmeleitung', ['Wärmestrahlung', 'Wärmeströmung', 'Verdunstung']],
+    ['w', 'Warum wird es oben im Zimmer wärmer als unten?', 'Warme Luft steigt nach oben (Wärmeströmung).', ['Kalte Luft steigt nach oben.', 'Die Decke strahlt Wärme ab.', 'Der Boden ist ein Magnet.']],
+    ['k', 'Sortiere die Stoffe.', [['gute Wärmeleiter', ['Kupfer', 'Aluminium', 'Eisen']], ['schlechte Wärmeleiter (gute Dämmung)', ['Luft', 'Wolle', 'Styropor', 'Holz']]]],
+    ['rf', 'Wärme fließt von selbst vom kälteren zum wärmeren Körper.', false, 'Wärme fließt immer vom wärmeren zum kälteren Körper.'],
+    ['w', 'Warum hält eine Daunenjacke warm?', 'Zwischen den Federn ist viel Luft, ein schlechter Wärmeleiter.', ['Federn erzeugen Wärme.', 'Daunen leiten Wärme besonders gut.', 'Die Jacke strahlt Sonnenlicht ab.']],
+    ['rf', 'Ein Heizkörper erwärmt das Zimmer vor allem durch Wärmeströmung der Luft.', true],
+    ['w', 'Wie gelangt die Wärme durch den Weltraum?', 'nur durch Strahlung', ['nur durch Leitung', 'nur durch Strömung', 'gar nicht']],
+    ['z', 'Ordne zu.', [['Pfannenstiel wird heiß', 'Wärmeleitung'], ['Lagerfeuer wärmt das Gesicht', 'Wärmestrahlung'], ['Wasser im Topf zirkuliert', 'Wärmeströmung']]],
+    ['w', 'Warum haben Kochtöpfe oft Griffe aus Kunststoff?', 'Kunststoff leitet Wärme schlecht.', ['Kunststoff ist schwerer.', 'Kunststoff leitet Wärme besonders gut.', 'Damit der Topf schneller kocht.']],
+    ['rf', 'Doppelfenster dämmen gut, weil zwischen den Scheiben eine Luft- oder Gasschicht ist.', true]] });
+
+gymThema({ id: 'p6-schall', f: 'physik', kl: 6, t: 'Schall und Akustik',
+  merk: ['Schall entsteht, wenn ein Körper schwingt (Schallquelle). Er breitet sich in Luft, Wasser und festen Stoffen aus, im luftleeren Raum nicht.',
+    'Die Frequenz gibt an, wie oft etwas pro Sekunde schwingt. Einheit: Hertz (Hz). Hohe Frequenz bedeutet hoher Ton.',
+    'Die Amplitude (Schwingungsweite) bestimmt die Lautstärke. Lautstärke misst man in Dezibel (dB).',
+    'Menschen hören etwa von 20 Hz bis 20 000 Hz. Darüber ist Ultraschall (Fledermäuse, Delfine), darunter Infraschall.',
+    'Schall ist in Luft etwa 340 m pro Sekunde schnell, viel langsamer als Licht. Darum hört man den Donner nach dem Blitz.',
+    'Schall wird an Wänden zurückgeworfen: Echo.'],
+  a: [['w', 'Wie entsteht Schall?', 'durch Schwingungen', ['durch Licht', 'durch Magnetismus', 'durch Kälte']],
+    ['rf', 'Im Weltall kann sich Schall nicht ausbreiten.', true, 'Dort gibt es keine Luft, die schwingen kann.'],
+    ['w', 'Was bestimmt, wie hoch ein Ton klingt?', 'die Frequenz', ['die Amplitude', 'die Farbe', 'das Gewicht']],
+    ['w', 'In welcher Einheit misst man die Lautstärke?', 'Dezibel (dB)', ['Hertz (Hz)', 'Grad (°)', 'Meter (m)']],
+    ['w', 'Welches Tier orientiert sich mit Ultraschall?', 'Fledermaus', ['Pferd', 'Schnecke', 'Kuh']],
+    ['e', 'Zwischen Blitz und Donner vergehen 3 Sekunden. Wie weit ist das Gewitter ungefähr entfernt? (Schall: 340 m pro Sekunde)', '1020', '3 · 340 m = 1 020 m, also etwa 1 km.', { einheit: 'm' }],
+    ['rf', 'Eine schnell schwingende Saite klingt tiefer als eine langsam schwingende.', false, 'Schnelle Schwingung = hohe Frequenz = hoher Ton.'],
+    ['w', 'Was ist ein Echo?', 'zurückgeworfener Schall', ['besonders hoher Schall', 'Schall im Wasser', 'Ultraschall']],
+    ['z', 'Ordne zu.', [['Frequenz', 'Hertz'], ['Lautstärke', 'Dezibel'], ['über 20 000 Hz', 'Ultraschall'], ['unter 20 Hz', 'Infraschall']]],
+    ['w', 'Warum sieht man den Blitz vor dem Donner?', 'Licht ist viel schneller als Schall.', ['Der Donner entsteht später.', 'Schall ist schneller als Licht.', 'Die Augen sind schneller als die Ohren.']],
+    ['k', 'Sortiere die Schallquellen nach der Lautstärke.', [['leise', ['Flüstern', 'Blätterrauschen']], ['sehr laut (schädlich)', ['Presslufthammer', 'Düsenflugzeug', 'Feuerwerkskörper aus der Nähe']]]],
+    ['rf', 'Schall breitet sich in Wasser aus.', true]] });
+
+gymThema({ id: 'p6-schaltung', f: 'physik', kl: 6, t: 'Schaltungen und Elektromagnet',
+  merk: ['Reihenschaltung: Alle Bauteile liegen hintereinander in einem Stromkreis. Geht eine Lampe kaputt, gehen alle aus.',
+    'Parallelschaltung: Jedes Bauteil hat einen eigenen Stromweg. Geht eine Lampe kaputt, leuchten die anderen weiter. So sind die Steckdosen zu Hause geschaltet.',
+    'UND-Schaltung: zwei Schalter in Reihe, die Lampe leuchtet nur, wenn beide geschlossen sind. ODER-Schaltung: zwei Schalter parallel, einer reicht.',
+    'Leiter: Metalle, Graphit, Salzwasser. Nichtleiter (Isolatoren): Kunststoff, Glas, Gummi, trockenes Holz.',
+    'Ein Elektromagnet ist eine Spule mit Eisenkern. Er ist nur magnetisch, solange Strom fließt.',
+    'Niemals an Steckdosen oder Oberleitungen experimentieren: Netzstrom ist lebensgefährlich.'],
+  a: [['w', 'Bei welcher Schaltung gehen alle Lampen aus, wenn eine kaputt ist?', 'Reihenschaltung', ['Parallelschaltung', 'ODER-Schaltung', 'Wechselschaltung']],
+    ['w', 'Wie sind die Steckdosen in einer Wohnung geschaltet?', 'parallel', ['in Reihe', 'gar nicht', 'abwechselnd']],
+    ['w', 'Eine Lampe soll nur leuchten, wenn Schalter A und Schalter B gedrückt sind. Welche Schaltung brauchst du?', 'UND-Schaltung (Schalter in Reihe)', ['ODER-Schaltung (Schalter parallel)', 'gar keinen Schalter', 'nur einen Schalter']],
+    ['k', 'Sortiere die Stoffe.', [['Leiter', ['Kupfer', 'Eisen', 'Graphit', 'Salzwasser']], ['Nichtleiter', ['Glas', 'Gummi', 'Kunststoff', 'trockenes Holz']]]],
+    ['rf', 'Ein Elektromagnet ist auch ohne Strom magnetisch.', false, 'Er ist nur magnetisch, solange Strom durch die Spule fließt.'],
+    ['w', 'Wie kann man einen Elektromagneten stärker machen?', 'mehr Windungen und ein Eisenkern', ['eine Holzspule', 'weniger Strom', 'den Kern aus Kunststoff']],
+    ['w', 'Wo wird ein Elektromagnet benutzt?', 'Schrottkran und Türklingel', ['Glühbirne', 'Thermometer', 'Spiegel']],
+    ['rf', 'Bei der Parallelschaltung hat jede Lampe einen eigenen Stromweg.', true],
+    ['w', 'Warum sind Kabel mit Kunststoff ummantelt?', 'Kunststoff ist ein Isolator und schützt vor Stromschlägen.', ['Kunststoff leitet den Strom besser.', 'Damit das Kabel leichter ist.', 'Damit es schneller lädt.']],
+    ['w', 'Was ist bei Strom aus der Steckdose richtig?', 'Er ist lebensgefährlich, damit experimentiert man nie.', ['Er ist ungefährlich wie eine Batterie.', 'Mit nassen Händen ist er harmlos.', 'Mit einer Gabel kann man ihn prüfen.']],
+    ['z', 'Ordne zu.', [['Spule mit Eisenkern', 'Elektromagnet'], ['Schalter in Reihe', 'UND-Schaltung'], ['Schalter parallel', 'ODER-Schaltung'], ['Gummi', 'Isolator']]],
+    ['w', 'Wie heißt das Zeichen für eine Batterie im Schaltplan?', 'ein langer und ein kurzer Strich', ['ein Kreis mit Kreuz', 'ein Rechteck', 'ein Pfeil im Kreis'], 'Der Kreis mit Kreuz ist das Zeichen für die Lampe.']] });
+
+gymThema({ id: 'c6-verbrennung', f: 'chemie', kl: 6, t: 'Feuer und Verbrennung',
+  merk: ['Für ein Feuer braucht man drei Dinge (Verbrennungsdreieck): brennbaren Stoff, Sauerstoff und die Zündtemperatur.',
+    'Löschen heißt, eine Ecke des Dreiecks wegzunehmen: Brennstoff entfernen, Sauerstoff fernhalten (ersticken) oder abkühlen.',
+    'Fettbrände nie mit Wasser löschen! Das Wasser verdampft schlagartig und schleudert brennendes Fett heraus. Deckel drauf.',
+    'Bei einer Verbrennung reagiert ein Stoff mit Sauerstoff. Es entstehen neue Stoffe, zum Beispiel Kohlenstoffdioxid und Wasser.',
+    'Fein verteilte Stoffe brennen besser, weil sie eine größere Oberfläche haben (Holzwolle brennt besser als ein Holzklotz).'],
+  a: [['w', 'Was gehört nicht zum Verbrennungsdreieck?', 'Wasser', ['brennbarer Stoff', 'Sauerstoff', 'Zündtemperatur']],
+    ['w', 'Wie löscht man brennendes Fett in der Pfanne?', 'Deckel drauflegen', ['mit Wasser übergießen', 'kräftig pusten', 'umrühren']],
+    ['rf', 'Wenn man eine brennende Kerze mit einem Glas abdeckt, geht sie aus, weil der Sauerstoff fehlt.', true],
+    ['w', 'Welcher Löschweg passt zu „Feuerwehr spritzt Wasser“?', 'abkühlen unter die Zündtemperatur', ['Brennstoff entfernen', 'Sauerstoff wegnehmen', 'Zündtemperatur erhöhen']],
+    ['w', 'Welcher Stoff brennt am leichtesten?', 'Holzwolle', ['ein dicker Holzklotz', 'ein Stein', 'nasses Holz']],
+    ['rf', 'Bei einer Verbrennung entstehen neue Stoffe.', true, 'Es ist eine chemische Reaktion mit Sauerstoff.'],
+    ['w', 'Welches Gas entsteht bei der Verbrennung von Holz oder Kerzenwachs?', 'Kohlenstoffdioxid', ['Sauerstoff', 'Helium', 'Chlor']],
+    ['w', 'Mit welchem Nachweis erkennt man Kohlenstoffdioxid?', 'Kalkwasser wird trüb', ['Glimmspan glüht auf', 'Iod wird blau', 'Wasser wird rot']],
+    ['w', 'Mit welchem Nachweis erkennt man Sauerstoff?', 'Ein glimmender Holzspan glüht hell auf.', ['Kalkwasser wird trüb.', 'Ein Magnet zieht ihn an.', 'Er färbt Wasser blau.']],
+    ['z', 'Ordne den Löschweg zu.', [['Löschdecke', 'Sauerstoff fernhalten'], ['Wasser', 'abkühlen'], ['Holz wegräumen', 'Brennstoff entfernen']]],
+    ['w', 'Was macht man zuerst, wenn es in der Schule brennt?', 'Ruhe bewahren, Alarm geben und den Raum verlassen', ['Sachen einpacken', 'das Feuer anpusten', 'sich im Schrank verstecken']],
+    ['rf', 'Die Notrufnummer der Feuerwehr ist 112.', true]] });
+
+gymThema({ id: 'c6-luftwasser', f: 'chemie', kl: 6, t: 'Luft und Wasser',
+  merk: ['Luft ist ein Gemisch aus Gasen: etwa 78 % Stickstoff, 21 % Sauerstoff, 1 % Edelgase (vor allem Argon) und sehr wenig Kohlenstoffdioxid.',
+    'Wasser kommt in drei Aggregatzuständen vor: fest (Eis), flüssig (Wasser), gasförmig (Wasserdampf).',
+    'Wasserkreislauf: Verdunstung, Wolkenbildung (Kondensation), Niederschlag, Versickern und Abfluss ins Meer.',
+    'Wasser ist ein gutes Lösungsmittel: Salz und Zucker lösen sich darin. Eine Lösung ist ein klares Gemisch.',
+    'Trinkwasser wird im Wasserwerk gereinigt, Abwasser in der Kläranlage mechanisch, biologisch und chemisch.'],
+  a: [['w', 'Welches Gas ist am meisten in der Luft?', 'Stickstoff', ['Sauerstoff', 'Kohlenstoffdioxid', 'Argon']],
+    ['e', 'Wie viel Prozent Sauerstoff enthält die Luft ungefähr?', '21', '', { einheit: '%' }],
+    ['o', 'Ordne den Wasserkreislauf.', ['Wasser verdunstet über dem Meer', 'Wolken bilden sich', 'Es regnet', 'Wasser fließt in Flüssen zurück ins Meer']],
+    ['rf', 'Wenn Wasserdampf abkühlt und wieder flüssig wird, nennt man das Kondensieren.', true],
+    ['w', 'Welcher Stoff löst sich gut in Wasser?', 'Zucker', ['Sand', 'Öl', 'Kieselsteine']],
+    ['w', 'Wie heißt der Übergang von flüssig zu gasförmig?', 'Verdampfen', ['Schmelzen', 'Erstarren', 'Kondensieren']],
+    ['k', 'Sortiere die Aggregatzustände.', [['fest', ['Eis', 'Schnee', 'Hagel']], ['flüssig', ['Regen', 'Meerwasser']], ['gasförmig', ['Wasserdampf']]]],
+    ['rf', 'Luft ist ein Reinstoff.', false, 'Luft ist ein Gemisch aus verschiedenen Gasen.'],
+    ['w', 'Was passiert in der Kläranlage?', 'Abwasser wird gereinigt.', ['Trinkwasser wird gesalzen.', 'Regen wird erzeugt.', 'Wasser wird zu Eis.']],
+    ['w', 'Wie bekommt man das Salz aus Salzwasser zurück?', 'Wasser verdampfen lassen', ['filtrieren', 'umrühren', 'einfrieren']],
+    ['z', 'Ordne zu.', [['Schmelzen', 'fest → flüssig'], ['Erstarren', 'flüssig → fest'], ['Verdampfen', 'flüssig → gasförmig'], ['Kondensieren', 'gasförmig → flüssig']]],
+    ['rf', 'Sauerstoff braucht man zum Atmen und für Verbrennungen.', true]] });
+
+gymThema({ id: 'c6-reaktion', f: 'chemie', kl: 6, t: 'Chemische Reaktionen erkennen',
+  merk: ['Bei einer chemischen Reaktion entstehen neue Stoffe mit neuen Eigenschaften. Die Ausgangsstoffe verschwinden.',
+    'Kennzeichen: Stoffumwandlung und Energieumwandlung (Wärme oder Licht wird frei oder wird gebraucht).',
+    'Bei einem physikalischen Vorgang bleibt der Stoff derselbe, nur sein Zustand oder seine Form ändert sich (Eis schmilzt, Papier wird zerrissen).',
+    'Exotherm: Energie wird frei (Kerze brennt). Endotherm: Energie muss ständig zugeführt werden (Zucker wird zu Karamell erhitzt).',
+    'Beispiele für Reaktionen: Eisen rostet, Holz verbrennt, Milch wird sauer, ein Kuchen backt.'],
+  a: [['w', 'Welcher Vorgang ist eine chemische Reaktion?', 'Ein Nagel rostet.', ['Eis schmilzt.', 'Papier wird zerschnitten.', 'Wasser verdunstet.']],
+    ['rf', 'Wenn Schokolade schmilzt, entsteht ein neuer Stoff.', false, 'Das ist ein physikalischer Vorgang, es bleibt Schokolade.'],
+    ['k', 'Sortiere die Vorgänge.', [['chemische Reaktion', ['Holz verbrennt', 'Kuchen backt', 'Milch wird sauer', 'Eisen rostet']], ['physikalischer Vorgang', ['Wachs schmilzt', 'Zucker löst sich in Tee', 'Glas zerbricht', 'Wasser gefriert']]]],
+    ['w', 'Was ist ein Kennzeichen jeder chemischen Reaktion?', 'Es entstehen neue Stoffe.', ['Der Stoff wird immer flüssig.', 'Es wird immer kalt.', 'Es entsteht immer Licht.']],
+    ['w', 'Wie nennt man eine Reaktion, bei der Wärme frei wird?', 'exotherm', ['endotherm', 'thermisch neutral', 'magnetisch']],
+    ['rf', 'Wenn Zucker beim Erhitzen braun wird und anders riecht, ist das eine chemische Reaktion.', true],
+    ['w', 'Was entsteht, wenn Eisen rostet?', 'Rost, ein neuer Stoff', ['wieder Eisen', 'Wasser', 'Gold']],
+    ['w', 'Welche Ausgangsstoffe braucht Eisen, um zu rosten?', 'Sauerstoff und Wasser', ['nur Licht', 'nur Wärme', 'Salz und Zucker']],
+    ['rf', 'Bei chemischen Reaktionen wird immer auch Energie umgewandelt.', true],
+    ['w', 'Welches Beispiel ist endotherm?', 'Beim Backen muss ständig Wärme zugeführt werden.', ['Eine Kerze brennt.', 'Ein Feuerwerk explodiert.', 'Ein Streichholz brennt.']],
+    ['z', 'Ordne zu.', [['Ausgangsstoffe', 'Stoffe vor der Reaktion'], ['Reaktionsprodukte', 'Stoffe nach der Reaktion'], ['exotherm', 'Energie wird frei'], ['endotherm', 'Energie wird gebraucht']]]] });
+
+gymThema({ id: 'c6-brenner', f: 'chemie', kl: 6, t: 'Gasbrenner und sicheres Arbeiten',
+  merk: ['Vor dem Experiment: Schutzbrille aufsetzen, lange Haare zusammenbinden, Tisch freiräumen, Anweisungen der Lehrkraft genau befolgen.',
+    'Gasbrenner anzünden: Luftzufuhr schließen, Streichholz entzünden, Gashahn öffnen, Flamme entzünden. Dann Luftzufuhr regeln.',
+    'Leuchtende Flamme (ohne Luftzufuhr, gelb, rußt), nicht leuchtende Flamme (etwas Luft, blau), rauschende Flamme (viel Luft, am heißesten).',
+    'Reagenzglas beim Erhitzen schräg halten, die Öffnung nie auf Menschen richten, langsam hin und her schwenken.',
+    'Im Labor wird nicht gegessen und nicht getrunken. Chemikalien nie mit den Fingern anfassen oder daran riechen (fächeln!).'],
+  a: [['w', 'Welche Flamme des Gasbrenners ist am heißesten?', 'die rauschende Flamme', ['die leuchtende Flamme', 'die gelbe Flamme', 'alle gleich heiß']],
+    ['w', 'Welche Flamme rußt?', 'die leuchtende (gelbe) Flamme', ['die rauschende Flamme', 'die blaue Flamme', 'keine']],
+    ['o', 'Bringe die Schritte beim Anzünden des Gasbrenners in die richtige Reihenfolge.', ['Luftzufuhr schließen', 'Streichholz anzünden', 'Gashahn öffnen', 'Gas am Brenner entzünden', 'Luftzufuhr regeln']],
+    ['rf', 'Beim Erhitzen richtet man die Öffnung des Reagenzglases auf den Nachbarn.', false, 'Niemals! Die Öffnung zeigt immer von Menschen weg.'],
+    ['w', 'Wie prüft man den Geruch einer Chemikalie?', 'vorsichtig zufächeln', ['direkt daran riechen', 'probieren', 'gar nicht, man fasst sie an']],
+    ['k', 'Was ist im Labor richtig?', [['richtig', ['Schutzbrille tragen', 'lange Haare zusammenbinden', 'Anweisungen genau befolgen']], ['falsch', ['im Labor essen', 'Chemikalien probieren', 'allein ohne Erlaubnis experimentieren']]]],
+    ['w', 'Welcher Teil des Gasbrenners regelt die Luftzufuhr?', 'die Luftregulierungshülse (Luftzufuhr)', ['der Fuß', 'der Schlauch', 'der Gashahn am Tisch']],
+    ['rf', 'Die Schutzbrille schützt die Augen vor Spritzern.', true],
+    ['w', 'Was macht man, wenn eine Chemikalie ins Auge spritzt?', 'sofort mit viel Wasser an der Augendusche spülen und Bescheid sagen', ['reiben', 'nichts', 'abwarten, bis es nicht mehr brennt']],
+    ['z', 'Ordne die Laborgeräte zu.', [['Reagenzglas', 'kleine Mengen erhitzen'], ['Becherglas', 'Flüssigkeiten auffangen'], ['Trichter mit Filterpapier', 'filtrieren'], ['Abdampfschale', 'Flüssigkeit verdampfen']]],
+    ['rf', 'Im Chemieraum darf man nicht essen und nicht trinken.', true]] });
+
+/*@@src gym600_gesell6.js@@*/
+
+
+const ek6Von = l => ({ Schweiz: 'der Schweiz', Niederlande: 'den Niederlanden', Slowakei: 'der Slowakei' })[l] || l;
+const EK6_HAUPTSTADT = [['Polen', 'Warschau'], ['Tschechien', 'Prag'], ['Österreich', 'Wien'], ['Schweiz', 'Bern'], ['Norwegen', 'Oslo'], ['Schweden', 'Stockholm'], ['Finnland', 'Helsinki'], ['Dänemark', 'Kopenhagen'],
+  ['Niederlande', 'Amsterdam'], ['Belgien', 'Brüssel'], ['Frankreich', 'Paris'], ['Spanien', 'Madrid'], ['Portugal', 'Lissabon'], ['Italien', 'Rom'], ['Griechenland', 'Athen'], ['Ungarn', 'Budapest'],
+  ['Irland', 'Dublin'], ['Kroatien', 'Zagreb'], ['Rumänien', 'Bukarest'], ['Bulgarien', 'Sofia'], ['Litauen', 'Vilnius'], ['Lettland', 'Riga'], ['Estland', 'Tallinn'], ['Slowakei', 'Bratislava'], ['Slowenien', 'Ljubljana'], ['Island', 'Reykjavík']];
+
+gymThema({ id: 'ek6-klima', f: 'erdkunde', kl: 6, t: 'Wetter und Klima',
+  merk: ['Wetter ist der Zustand der Luft an einem Ort zu einer bestimmten Zeit. Klima ist das durchschnittliche Wetter über mindestens 30 Jahre.',
+    'Wetterelemente: Temperatur, Niederschlag, Wind, Luftdruck, Luftfeuchtigkeit und Bewölkung.',
+    'Klimadiagramm: Die rote Linie zeigt die Monatsmitteltemperatur (°C), die blauen Säulen den Niederschlag (mm).',
+    'Seeklima (an der Küste): milde Winter, kühle Sommer, viel Niederschlag. Landklima (im Inneren der Kontinente): kalte Winter, heiße Sommer, weniger Niederschlag.',
+    'Klimazonen vom Äquator zu den Polen: tropische Zone, Subtropen, gemäßigte Zone, kalte (polare) Zone. Deutschland liegt in der gemäßigten Zone.',
+    'Luv und Lee: Auf der Seite eines Gebirges, die dem Wind zugewandt ist (Luv), regnet es mehr (Steigungsregen). Im Lee ist es trockener.'],
+  a: [['w', 'Was zeigen die blauen Säulen im Klimadiagramm?', 'den Niederschlag', ['die Temperatur', 'den Wind', 'die Sonnenstunden']],
+    ['w', 'Über wie viele Jahre wird das Klima mindestens gemittelt?', '30 Jahre', ['1 Jahr', '5 Jahre', '100 Jahre']],
+    ['rf', 'Wetter und Klima bedeuten dasselbe.', false, 'Wetter ist kurzfristig, Klima der langjährige Durchschnitt.'],
+    ['w', 'Wo herrscht eher Seeklima?', 'in Cuxhaven an der Nordsee', ['in Moskau', 'in der Mongolei', 'mitten in Kanada']],
+    ['w', 'In welcher Klimazone liegt Deutschland?', 'gemäßigte Zone', ['tropische Zone', 'polare Zone', 'Subtropen']],
+    ['k', 'Sortiere die Merkmale.', [['Seeklima', ['milde Winter', 'kühle Sommer', 'viel Regen']], ['Landklima', ['kalte Winter', 'heiße Sommer', 'wenig Regen']]]],
+    ['w', 'Wie heißt die Gebirgsseite, auf der es mehr regnet?', 'Luv', ['Lee', 'Föhn', 'Tal']],
+    ['w', 'Mit welchem Gerät misst man den Luftdruck?', 'Barometer', ['Thermometer', 'Regenmesser', 'Windfahne']],
+    ['rf', 'Ein Hochdruckgebiet bringt meist schönes, trockenes Wetter.', true],
+    ['o', 'Ordne die Klimazonen vom Äquator zum Nordpol.', ['tropische Zone', 'Subtropen', 'gemäßigte Zone', 'polare Zone']],
+    ['z', 'Ordne das Messgerät zu.', [['Temperatur', 'Thermometer'], ['Niederschlag', 'Regenmesser'], ['Windrichtung', 'Windfahne'], ['Luftdruck', 'Barometer']]],
+    ['w', 'Welche Angabe beschreibt das Klima und nicht das Wetter?', 'Im Juli ist es in Rom im Mittel etwa 25 °C warm.', ['Heute regnet es in Bremen.', 'Morgen gibt es Sturm.', 'Gerade scheint die Sonne.']]] });
+
+gymThema({ id: 'ek6-landwirtschaft', f: 'erdkunde', kl: 6, t: 'Landwirtschaft',
+  merk: ['Ackerbau: Getreide (Weizen, Gerste, Roggen), Mais, Kartoffeln, Zuckerrüben, Raps. Viehhaltung: Rinder, Schweine, Geflügel.',
+    'Sonderkulturen brauchen viel Arbeit oder ein besonderes Klima: Obst, Wein, Spargel, Hopfen, Gemüse.',
+    'Börden (zum Beispiel die Hildesheimer Börde) haben fruchtbaren Lössboden, dort wachsen Weizen und Zuckerrüben.',
+    'Im Alten Land bei Hamburg liegt eines der größten Obstanbaugebiete Nordeuropas, vor allem Äpfel.',
+    'In der Marsch an der Nordseeküste gibt es viel Grünland für Milchkühe.',
+    'Ökologische Landwirtschaft: ohne chemisch-synthetische Pflanzenschutzmittel und Kunstdünger, mehr Platz für die Tiere. Konventionelle Landwirtschaft erzeugt mehr auf gleicher Fläche.'],
+  a: [['w', 'Wo liegt ein großes Obstanbaugebiet an der Elbe?', 'im Alten Land bei Hamburg', ['in der Lüneburger Heide', 'im Harz', 'auf Helgoland']],
+    ['w', 'Warum wachsen in Börden besonders gut Weizen und Zuckerrüben?', 'wegen des fruchtbaren Lössbodens', ['weil es dort nie regnet', 'wegen der Berge', 'wegen des Sandbodens']],
+    ['k', 'Sortiere.', [['Ackerbau', ['Weizen', 'Kartoffeln', 'Zuckerrüben', 'Mais']], ['Sonderkulturen', ['Wein', 'Spargel', 'Hopfen', 'Äpfel']]]],
+    ['rf', 'Ökologische Landwirtschaft verzichtet auf chemisch-synthetische Pflanzenschutzmittel.', true],
+    ['w', 'Was gibt es in der Marsch an der Nordsee besonders viel?', 'Grünland mit Milchkühen', ['Weinberge', 'Reisfelder', 'Olivenhaine']],
+    ['w', 'Woraus wird Zucker in Deutschland hauptsächlich hergestellt?', 'aus Zuckerrüben', ['aus Zuckerrohr', 'aus Kartoffeln', 'aus Mais']],
+    ['w', 'Was bedeutet „Massentierhaltung“?', 'sehr viele Tiere auf engem Raum in großen Ställen', ['Tiere leben frei im Wald', 'jedes Tier hat eine eigene Wiese', 'nur Haustiere']],
+    ['rf', 'Getreide wie Weizen und Roggen wird zu Mehl verarbeitet.', true],
+    ['w', 'Aus welchem Land kommt im Winter viel Gemüse aus Gewächshäusern, zum Beispiel aus Almería?', 'Spanien', ['Norwegen', 'Island', 'Finnland']],
+    ['z', 'Ordne zu.', [['Raps', 'Öl'], ['Hopfen', 'Bier'], ['Weizen', 'Mehl'], ['Zuckerrübe', 'Zucker'], ['Milchkuh', 'Käse']]],
+    ['w', 'Was ist ein Vorteil der konventionellen Landwirtschaft?', 'hohe Erträge auf gleicher Fläche', ['keine Maschinen', 'gar kein Dünger', 'nur Handarbeit']],
+    ['rf', 'Spargel ist eine Sonderkultur, die viel Handarbeit braucht.', true]] });
+
+gymThema({ id: 'ek6-alpen', f: 'erdkunde', kl: 6, t: 'Die Alpen',
+  merk: ['Die Alpen sind das höchste Gebirge Europas. Der höchste Berg ist der Mont Blanc (etwa 4 800 m) an der Grenze von Frankreich und Italien.',
+    'Der höchste Berg Deutschlands ist die Zugspitze mit 2 962 m.',
+    'Höhenstufen von unten nach oben: Laubwald, Nadelwald, Baumgrenze, Matten und Almen, Fels und Eis (Schneegrenze).',
+    'Alpenländer: Frankreich, Italien, Schweiz, Liechtenstein, Österreich, Deutschland, Slowenien und Monaco.',
+    'Tourismus bringt Geld und Arbeitsplätze, aber auch Verkehr, Lärm und Eingriffe in die Natur.',
+    'Gletscher schmelzen durch den Klimawandel. Bannwälder schützen Dörfer vor Lawinen.'],
+  a: [['w', 'Wie heißt der höchste Berg der Alpen?', 'Mont Blanc', ['Zugspitze', 'Matterhorn', 'Großglockner']],
+    ['e', 'Wie hoch ist die Zugspitze?', '2962', '', { einheit: 'm' }],
+    ['o', 'Ordne die Höhenstufen von unten nach oben.', ['Laubwald', 'Nadelwald', 'Matten und Almen', 'Fels und Eis']],
+    ['rf', 'Oberhalb der Baumgrenze wachsen keine Bäume mehr.', true],
+    ['w', 'Welches Land gehört nicht zu den Alpenländern?', 'Tschechien', ['Österreich', 'Schweiz', 'Slowenien']],
+    ['w', 'Wozu dient ein Bannwald?', 'Er schützt vor Lawinen und Steinschlag.', ['Er dient nur der Holzernte.', 'Er ist ein Freizeitpark.', 'Er erzeugt Schnee.']],
+    ['w', 'Was ist eine Alm?', 'eine Bergweide, auf der im Sommer Kühe weiden', ['ein Gletscher', 'ein Skilift', 'ein Bergsee']],
+    ['k', 'Sortiere die Folgen des Tourismus.', [['Vorteile', ['Arbeitsplätze', 'Einnahmen für die Dörfer']], ['Nachteile', ['viel Verkehr', 'Skipisten zerstören Pflanzen', 'Lärm']]]],
+    ['rf', 'Die Gletscher in den Alpen wachsen zurzeit stark.', false, 'Durch den Klimawandel schmelzen die meisten Gletscher.'],
+    ['w', 'Welcher sehr lange Eisenbahntunnel führt durch die Schweizer Alpen?', 'Gotthard-Basistunnel', ['Elbtunnel', 'Kanaltunnel', 'Rennsteigtunnel']],
+    ['w', 'Welcher Fluss entspringt in den Alpen?', 'Rhein', ['Elbe', 'Weser', 'Oder']]] });
+
+gymThema({ id: 'ek6-europa', f: 'erdkunde', kl: 6, t: 'Europas Staaten und die EU',
+  merk: ['Die Europäische Union (EU) hat 27 Mitgliedstaaten. Großbritannien ist 2020 ausgetreten.',
+    'In vielen EU-Ländern bezahlt man mit dem Euro. Im Schengen-Raum gibt es meist keine Grenzkontrollen.',
+    'Wichtige Orte der EU: Brüssel (Kommission), Straßburg (Europäisches Parlament).',
+    'Nicht in der EU sind zum Beispiel die Schweiz, Norwegen, Island und Großbritannien.',
+    'Der längste Fluss Europas ist die Wolga, der längste Fluss der EU die Donau. Sie fließt durch zehn Länder.'],
+  a: [['e', 'Wie viele Mitgliedstaaten hat die EU?', '27'],
+    ['w', 'Welches Land ist nicht in der EU?', 'Norwegen', ['Dänemark', 'Polen', 'Irland']],
+    ['w', 'In welcher Stadt tagt das Europäische Parlament?', 'Straßburg', ['Paris', 'Berlin', 'Wien']],
+    ['w', 'Wie heißt der längste Fluss Europas?', 'Wolga', ['Donau', 'Rhein', 'Elbe']],
+    ['rf', 'Großbritannien ist 2020 aus der EU ausgetreten.', true],
+    ['w', 'Welche Währung haben viele EU-Länder?', 'Euro', ['Pfund', 'Dollar', 'Franken']],
+    ['w', 'Was ist der Schengen-Raum?', 'Länder, zwischen denen es meist keine Grenzkontrollen gibt', ['ein Gebirge', 'eine Währung', 'ein Meer']],
+    ['k', 'Sortiere die Länder.', [['in der EU', ['Österreich', 'Schweden', 'Portugal']], ['nicht in der EU', ['Schweiz', 'Island', 'Norwegen']]]],
+    ['z', 'Ordne die Meere zu.', [['zwischen Deutschland und Schweden', 'Ostsee'], ['zwischen Italien und Afrika', 'Mittelmeer'], ['vor Cuxhaven', 'Nordsee'], ['westlich von Portugal', 'Atlantik']]]],
+  gen: [
+    () => { const [l, h] = R.pick(EK6_HAUPTSTADT), f = R.sample(EK6_HAUPTSTADT.filter(x => x[1] !== h), 3).map(x => x[1]); return ['w', `Wie heißt die Hauptstadt von ${ek6Von(l)}?`, h, f]; },
+    () => { const [l, h] = R.pick(EK6_HAUPTSTADT), f = R.sample(EK6_HAUPTSTADT.filter(x => x[0] !== l), 3).map(x => x[0]); return ['w', `${h} ist die Hauptstadt welches Landes?`, l, f]; },
+    () => { const L = R.sample(EK6_HAUPTSTADT, 4); return ['z', 'Ordne Land und Hauptstadt zu.', L]; }
+  ] });
+
+gymThema({ id: 'ek6-energie', f: 'erdkunde', kl: 6, t: 'Rohstoffe und Energie',
+  merk: ['Fossile Energieträger: Kohle, Erdöl und Erdgas. Sie sind vor Millionen Jahren entstanden und gehen irgendwann zu Ende. Beim Verbrennen entsteht viel Kohlenstoffdioxid.',
+    'Erneuerbare Energien: Wind, Sonne, Wasser, Biomasse und Erdwärme. Sie gehen nicht aus und schonen das Klima.',
+    'Braunkohle wird in Deutschland im Tagebau abgebaut (Rheinland, Lausitz). Dafür mussten Dörfer umgesiedelt werden.',
+    'Vor der Küste in der Nord- und Ostsee stehen Windparks (Offshore). Cuxhaven ist ein wichtiger Hafen für die Windenergie auf See.',
+    'Niedersachsen ist das Bundesland mit dem meisten Erdgas aus deutschem Boden.'],
+  a: [['k', 'Sortiere die Energieträger.', [['fossil', ['Kohle', 'Erdöl', 'Erdgas']], ['erneuerbar', ['Wind', 'Sonne', 'Wasserkraft', 'Biomasse']]]],
+    ['w', 'Was heißt „offshore“?', 'auf dem Meer, vor der Küste', ['in den Bergen', 'unter der Erde', 'in der Stadt']],
+    ['rf', 'Fossile Energieträger gehen irgendwann zu Ende.', true],
+    ['w', 'Wie wird Braunkohle in Deutschland abgebaut?', 'im Tagebau', ['unter Wasser', 'auf Bäumen', 'im Weltall']],
+    ['w', 'Welche Energie nutzt eine Solaranlage?', 'Sonnenenergie', ['Windenergie', 'Erdwärme', 'Kohle']],
+    ['rf', 'Beim Verbrennen von Kohle entsteht viel Kohlenstoffdioxid.', true],
+    ['w', 'Welcher Nachteil gehört zur Windenergie?', 'Bei Windstille gibt es keinen Strom.', ['Sie erzeugt viel Kohlenstoffdioxid.', 'Der Wind geht bald zu Ende.', 'Sie braucht Erdöl.']],
+    ['w', 'Welcher Hafen an der Elbmündung ist wichtig für Windräder auf See?', 'Cuxhaven', ['München', 'Dresden', 'Stuttgart']],
+    ['z', 'Ordne zu.', [['Windpark', 'Wind'], ['Stausee', 'Wasser'], ['Biogasanlage', 'Biomasse'], ['Solarzelle', 'Sonne'], ['Kohlekraftwerk', 'Kohle']]],
+    ['w', 'Woraus werden Benzin und viele Kunststoffe hergestellt?', 'aus Erdöl', ['aus Holz', 'aus Sand', 'aus Wind']],
+    ['rf', 'Energie zu sparen hilft dem Klima.', true],
+    ['w', 'Was passierte mit Dörfern in Braunkohlegebieten?', 'Manche wurden abgerissen, die Menschen umgesiedelt.', ['Sie wurden höher gebaut.', 'Sie wurden unter Wasser gesetzt.', 'Sie wurden größer.']]] });
+
+gymThema({ id: 'g6-athen', f: 'geschichte', kl: 6, t: 'Athen und Sparta',
+  merk: ['Griechenland bestand aus vielen Stadtstaaten (Polis, Mehrzahl Poleis). Die bekanntesten waren Athen und Sparta.',
+    'In Athen entstand die erste Demokratie („Herrschaft des Volkes“), vor allem durch Kleisthenes (um 508 v. Chr.). Perikles baute sie später aus.',
+    'Mitbestimmen durften nur freie Männer mit athenischem Bürgerrecht. Frauen, Sklaven und Zugezogene (Metöken) waren ausgeschlossen.',
+    'Beim Scherbengericht (Ostrakismos) konnte die Volksversammlung einen Bürger für zehn Jahre verbannen.',
+    'Sparta war ein Kriegerstaat mit zwei Königen. Jungen wurden ab sieben Jahren hart zu Soldaten erzogen.',
+    'In den Perserkriegen siegten die Griechen bei Marathon (490 v. Chr.) und bei Salamis (480 v. Chr.).'],
+  a: [['w', 'Was bedeutet „Demokratie“?', 'Herrschaft des Volkes', ['Herrschaft eines Königs', 'Herrschaft der Reichen', 'Herrschaft der Priester']],
+    ['w', 'Wer durfte in der Volksversammlung Athens mitbestimmen?', 'freie Männer mit Bürgerrecht', ['alle Menschen', 'Frauen und Männer', 'Sklaven']],
+    ['rf', 'Frauen durften in Athen in der Volksversammlung abstimmen.', false, 'Frauen, Sklaven und Metöken waren ausgeschlossen.'],
+    ['w', 'Was war das Scherbengericht?', 'eine Abstimmung, mit der man einen Bürger verbannen konnte', ['ein Gericht für zerbrochene Vasen', 'ein Wettkampf', 'ein Tempelfest']],
+    ['w', 'Welcher Stadtstaat war für seine harte Soldatenerziehung bekannt?', 'Sparta', ['Athen', 'Korinth', 'Olympia']],
+    ['w', 'Wie nennt man einen griechischen Stadtstaat?', 'Polis', ['Forum', 'Pyramide', 'Limes']],
+    ['k', 'Sortiere.', [['Athen', ['Volksversammlung', 'Demokratie', 'Scherbengericht']], ['Sparta', ['zwei Könige', 'Kriegerstaat', 'harte Erziehung ab sieben Jahren']]]],
+    ['e', 'In welchem Jahr v. Chr. siegten die Griechen bei Marathon über die Perser?', '490'],
+    ['w', 'Welcher Politiker gilt als Begründer der athenischen Demokratie?', 'Kleisthenes', ['Alexander der Große', 'Caesar', 'Augustus']],
+    ['rf', 'Die Demokratie in Athen war anders als heute: Viele Menschen durften nicht mitbestimmen.', true],
+    ['w', 'Was war die Akropolis in Athen?', 'der Burgberg mit Tempeln, zum Beispiel dem Parthenon', ['ein Marktplatz in Sparta', 'ein Schiff', 'eine Rennbahn']],
+    ['o', 'Ordne die Ereignisse zeitlich.', ['erste Olympische Spiele (776 v. Chr.)', 'Kleisthenes und die Demokratie (508 v. Chr.)', 'Schlacht bei Marathon (490 v. Chr.)']]] });
+
+gymThema({ id: 'g6-republik', f: 'geschichte', kl: 6, t: 'Rom: von der Stadt zur Republik',
+  merk: ['Der Sage nach gründeten Romulus und Remus Rom im Jahr 753 v. Chr. Sie wurden von einer Wölfin gesäugt.',
+    'Um 509 v. Chr. vertrieben die Römer ihren König. Rom wurde eine Republik („öffentliche Sache“).',
+    'In der Republik regierten zwei Konsuln, jeweils für ein Jahr. Der Senat (erfahrene Männer aus reichen Familien) beriet sie.',
+    'Patrizier waren die adligen Familien, Plebejer das übrige Volk. In den Ständekämpfen erstritten die Plebejer Volkstribune, die sie schützten.',
+    'Julius Caesar wurde sehr mächtig und 44 v. Chr. im Senat ermordet. Danach endete die Republik.'],
+  a: [['e', 'In welchem Jahr v. Chr. wurde Rom der Sage nach gegründet?', '753'],
+    ['w', 'Wer waren Romulus und Remus?', 'die Zwillinge aus der Gründungssage Roms', ['zwei Kaiser', 'zwei griechische Götter', 'zwei Germanenfürsten']],
+    ['w', 'Wie viele Konsuln regierten gleichzeitig?', 'zwei', ['einer', 'drei', 'zehn']],
+    ['w', 'Wie lange blieb ein Konsul im Amt?', 'ein Jahr', ['ein Leben lang', 'zehn Jahre', 'einen Monat']],
+    ['rf', 'Patrizier waren die adligen Familien Roms.', true],
+    ['w', 'Wer schützte die Plebejer?', 'die Volkstribune', ['die Legionäre', 'die Vestalinnen', 'die Gladiatoren']],
+    ['w', 'Was bedeutet „res publica“?', 'öffentliche Sache, Angelegenheit des Volkes', ['Königreich', 'Kaiserreich', 'Stadtmauer']],
+    ['e', 'In welchem Jahr v. Chr. wurde Caesar ermordet?', '44'],
+    ['k', 'Sortiere die Begriffe.', [['Patrizier', ['adlige Familien', 'Sitze im Senat']], ['Plebejer', ['Bauern und Handwerker', 'Volkstribune als Schutz']]]],
+    ['o', 'Ordne zeitlich.', ['Gründung Roms (Sage)', 'Vertreibung des Königs, Beginn der Republik', 'Ermordung Caesars']],
+    ['w', 'Welches Tier gehört zur Gründungssage Roms?', 'eine Wölfin', ['ein Bär', 'ein Adler', 'ein Pferd']],
+    ['rf', 'In der Republik beriet der Senat die Konsuln.', true]] });
+
+gymThema({ id: 'g6-kaiserzeit', f: 'geschichte', kl: 6, t: 'Kaiserzeit und Alltag in Rom',
+  merk: ['Augustus wurde 27 v. Chr. der erste römische Kaiser. Unter ihm begann eine lange Friedenszeit (Pax Romana).',
+    'Das Römische Reich reichte von Britannien bis nach Ägypten und rund ums Mittelmeer („mare nostrum“, unser Meer).',
+    'Römische Technik: Straßen, Aquädukte (Wasserleitungen), Thermen (Badehäuser), Beton und Rundbögen.',
+    'Im Kolosseum kämpften Gladiatoren, im Circus Maximus fanden Wagenrennen statt („Brot und Spiele“).',
+    'Die römische Familie wurde vom Vater (pater familias) geleitet. Arme lebten in engen Mietshäusern (insulae), Reiche in Stadthäusern (domus) oder Landhäusern (villa).',
+    'Latein war die Sprache der Römer. Viele Wörter stammen davon ab, zum Beispiel Mauer (murus) und Fenster (fenestra).'],
+  a: [['w', 'Wer war der erste römische Kaiser?', 'Augustus', ['Caesar', 'Nero', 'Konstantin']],
+    ['w', 'Was ist ein Aquädukt?', 'eine Wasserleitung', ['ein Badehaus', 'ein Tempel', 'eine Rennbahn']],
+    ['w', 'Wo kämpften Gladiatoren?', 'im Kolosseum', ['im Senat', 'in den Thermen', 'im Aquädukt']],
+    ['rf', 'Arme Römer wohnten oft in engen Mietshäusern, den insulae.', true],
+    ['w', 'Was bedeutet „Pax Romana“?', 'römischer Frieden', ['römischer Wein', 'römische Straße', 'römisches Heer']],
+    ['w', 'Wie nannten die Römer das Mittelmeer?', 'mare nostrum (unser Meer)', ['mare magnum', 'Atlantik', 'Nordmeer']],
+    ['z', 'Ordne zu.', [['Thermen', 'Badehäuser'], ['Circus Maximus', 'Wagenrennen'], ['Forum', 'Marktplatz und Mittelpunkt der Stadt'], ['villa', 'Landhaus'], ['Legion', 'Truppe des Heeres']]],
+    ['z', 'Welches deutsche Wort stammt vom lateinischen ab?', [['murus', 'Mauer'], ['fenestra', 'Fenster'], ['vinum', 'Wein'], ['caseus', 'Käse']]],
+    ['rf', 'Das Römische Reich reichte bis nach Ägypten.', true],
+    ['w', 'Wer leitete die römische Familie?', 'der Vater (pater familias)', ['die älteste Tochter', 'der Kaiser', 'der Sklave']],
+    ['w', 'Was meint „Brot und Spiele“?', 'Die Herrscher hielten das Volk mit Essen und Unterhaltung zufrieden.', ['ein Kinderspiel', 'ein Bäckerfest', 'eine Gladiatorenschule']],
+    ['e', 'In welchem Jahr v. Chr. wurde Augustus Kaiser?', '27']] });
+
+gymThema({ id: 'g6-germanen', f: 'geschichte', kl: 6, t: 'Römer und Germanen',
+  merk: ['Germanen nannten die Römer die Stämme östlich des Rheins und nördlich der Donau, zum Beispiel Cherusker, Chatten und Sachsen.',
+    'Im Jahr 9 n. Chr. besiegte der Cherusker Arminius drei römische Legionen unter Varus (Varusschlacht). Ein Fundort liegt bei Kalkriese in Niedersachsen.',
+    'Danach sicherten die Römer ihre Grenze mit dem Limes, einem etwa 550 km langen Grenzwall mit Wachtürmen und Kastellen.',
+    'Am Limes trieben Römer und Germanen auch Handel: Germanen lieferten Felle, Bernstein und Vieh, Römer Wein, Schmuck und Geschirr.',
+    'Römische Städte in Deutschland: Köln, Trier, Mainz, Augsburg, Regensburg. Trier hat noch die Porta Nigra.'],
+  a: [['e', 'In welchem Jahr n. Chr. war die Varusschlacht?', '9'],
+    ['w', 'Wer führte die Germanen in der Varusschlacht?', 'Arminius', ['Varus', 'Augustus', 'Karl der Große']],
+    ['w', 'Wo in Niedersachsen fand man Spuren der Varusschlacht?', 'bei Kalkriese', ['in Cuxhaven', 'auf dem Brocken', 'in Hannover']],
+    ['w', 'Was war der Limes?', 'ein römischer Grenzwall', ['ein germanischer Gott', 'ein Fluss', 'eine Burg in Rom']],
+    ['rf', 'Am Limes gab es auch Handel zwischen Römern und Germanen.', true],
+    ['k', 'Was wurde gehandelt?', [['von den Germanen', ['Felle', 'Bernstein', 'Vieh']], ['von den Römern', ['Wein', 'Glas und Geschirr', 'Schmuck']]]],
+    ['w', 'Welche Stadt wurde von den Römern gegründet?', 'Trier', ['Hamburg', 'Berlin', 'Cuxhaven']],
+    ['w', 'Was ist die Porta Nigra?', 'ein römisches Stadttor in Trier', ['ein Schiff', 'ein germanisches Dorf', 'ein Tempel in Athen']],
+    ['e', 'Wie lang war der Limes ungefähr?', '550', '', { einheit: 'km' }],
+    ['rf', 'Die Germanen lebten vor allem in großen Städten mit Steinhäusern.', false, 'Sie lebten meist in Dörfern, in Langhäusern aus Holz und Lehm, mit Menschen und Vieh unter einem Dach.'],
+    ['w', 'Wie hieß ein typisches Germanenhaus?', 'Langhaus (Wohnstallhaus)', ['Insula', 'Villa', 'Pyramide']],
+    ['z', 'Ordne zu.', [['Cherusker', 'germanischer Stamm'], ['Kastell', 'römisches Lager am Limes'], ['Legion', 'römische Truppe'], ['Varus', 'römischer Feldherr']]]] });
+
+gymThema({ id: 'g6-spaetantike', f: 'geschichte', kl: 6, t: 'Christentum und das Ende Westroms',
+  merk: ['Das Christentum entstand im 1. Jahrhundert n. Chr. in Palästina. Christen wurden im Römischen Reich lange verfolgt, weil sie den Kaiser nicht als Gott verehrten.',
+    'Kaiser Konstantin erlaubte das Christentum 313 n. Chr. Unter Kaiser Theodosius wurde es Ende des 4. Jahrhunderts Staatsreligion.',
+    '395 n. Chr. wurde das Reich in Westrom (Hauptstadt Rom) und Ostrom (Konstantinopel) geteilt.',
+    'Mit der Völkerwanderung (ab 375 n. Chr., als die Hunnen nach Westen zogen) drangen germanische Stämme ins Reich ein.',
+    '476 n. Chr. setzte der Germane Odoaker den letzten weströmischen Kaiser ab. Das gilt als Ende Westroms und der Antike.',
+    'Ostrom (Byzanz) bestand noch fast 1 000 Jahre, bis 1453.'],
+  a: [['e', 'In welchem Jahr n. Chr. endete das Weströmische Reich?', '476'],
+    ['w', 'Welcher Kaiser erlaubte 313 n. Chr. das Christentum?', 'Konstantin', ['Augustus', 'Nero', 'Caesar']],
+    ['w', 'Warum wurden Christen verfolgt?', 'Sie verehrten den Kaiser nicht als Gott.', ['Sie zahlten keine Steuern.', 'Sie wohnten in Germanien.', 'Sie waren Gladiatoren.']],
+    ['w', 'Wie hieß die Hauptstadt Ostroms?', 'Konstantinopel', ['Rom', 'Athen', 'Trier']],
+    ['e', 'In welchem Jahr wurde das Römische Reich in West und Ost geteilt?', '395'],
+    ['rf', 'Ostrom ging gleichzeitig mit Westrom unter.', false, 'Ostrom (Byzanz) bestand bis 1453.'],
+    ['w', 'Welches Volk löste ab 375 n. Chr. die Völkerwanderung aus?', 'die Hunnen', ['die Griechen', 'die Ägypter', 'die Wikinger']],
+    ['o', 'Ordne zeitlich.', ['Christentum wird erlaubt (313)', 'Beginn der Völkerwanderung (375)', 'Teilung des Reiches (395)', 'Ende Westroms (476)']],
+    ['w', 'Wer setzte 476 den letzten weströmischen Kaiser ab?', 'Odoaker', ['Arminius', 'Konstantin', 'Hannibal']],
+    ['rf', 'Mit dem Ende Westroms endet die Epoche der Antike.', true],
+    ['w', 'Wie heißt die Stadt Konstantinopel heute?', 'Istanbul', ['Ankara', 'Athen', 'Kairo']],
+    ['z', 'Ordne zu.', [['Konstantin', 'erlaubte das Christentum'], ['Theodosius', 'machte es zur Staatsreligion'], ['Odoaker', 'setzte den letzten Kaiser Westroms ab'], ['Hunnen', 'lösten die Völkerwanderung aus']]]] });
 
 /*@@src freunde.js@@*/
 /* ================================================================
