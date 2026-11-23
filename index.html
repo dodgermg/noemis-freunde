@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-krtrnlFO9R1aEhHO+BRJISJjkkMAojB03eB/CXVeeDM=' 'sha256-e79nhCCbnSQx94Ozmq4eeRcBjqR1C60DBZGMS35N3As=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-mFtanCTewsmcrSjasnBbEp8qEppdOniM3U4py20U52c=' 'sha256-LQ6UlllcgSZtSxsX+JaruItWFwhDi0InQDD4zkFMSik=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -11028,8 +11028,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '6.0.0';
-  var MAP = {"probe":0,"files":[[11018,"fehler_kern.js"],[11306,null],[11308,"data.js"],[12023,"data_more.js"],[12395,"data_su2.js"],[12622,"data_es.js"],[12990,"data_wissen.js"],[13191,"data_v21.js"],[13876,"data_v24.js"],[14364,"data_v25.js"],[14853,"data_v26.js"],[14952,"data_v29.js"],[15260,"data_v30.js"],[15594,"data_v31.js"],[15900,"data_kunst.js"],[16097,"data_v214.js"],[16200,"data_v216.js"],[16493,"schrift.js"],[16797,"eingabe.js"],[17008,"data_k34m.js"],[17526,"data_k34d.js"],[17880,"data_k34s.js"],[18334,"data_v224.js"],[19207,"data_v225w.js"],[19576,"data_v225k.js"],[20020,"data_herz.js"],[20374,"data_fb226.js"],[20517,"data_tf226.js"],[20724,"data_v227a.js"],[21824,"data_v227b.js"],[22778,"data_h28b.js"],[22818,"data_l28a.js"],[23684,"data_l28b.js"],[24864,"data_schaetz.js"],[25346,"data_party8.js"],[25396,"data_alce.js"],[26067,"data_alce2.js"],[26316,"data_alce3.js"],[26731,"registry.js"],[27245,"app.js"],[28526,"fun.js"],[29114,"fun2.js"],[29430,"atelier.js"],[29804,"kunst225.js"],[29994,"herz.js"],[30358,"reise.js"],[30660,"iglu.js"],[30826,"offline.js"],[30936,"party.js"],[31420,"meine.js"],[31776,"loeffel.js"],[31947,"trend.js"],[32489,"fun228a.js"],[33350,"fun228b.js"],[34027,"kueche.js"],[35066,"stimme.js"],[35121,"klassen.js"],[35274,"freunde_vorab.js"],[35295,"mut.js"],[35717,"schule.js"],[36206,"fussball226.js"],[36528,"schaetzen.js"],[36959,"party8.js"],[37578,"tiere.js"],[38037,"fussball232.js"],[38252,"party8b.js"],[38554,"weg.js"],[38775,"px.js"],[39195,"px_fein.js"],[39249,"px_data.js"],[39506,"pxwelt.js"],[39590,"px_abenteuer.js"],[40419,"px_abenteuer2.js"],[41173,"px_abenteuer3.js"],[41564,"px_abenteuer4.js"],[41774,"px_baukasten.js"],[41883,"px_abenteuer_fein.js"],[42100,"px_abenteuer_fein2.js"],[42452,"px_abenteuer5.js"],[42859,"px_abenteuer6.js"],[43135,"px_abenteuer7.js"],[43491,"px_level300.js"],[44042,"px_schwach300.js"],[44116,"px_zwei300.js"],[44230,"lumicheckt300.js"],[44423,"schreiben300.js"],[44637,"rechenkarte300.js"],[44757,"lerncheck300.js"],[44980,"material300.js"],[45310,"lernweg300.js"],[45834,"px_ski.js"],[46476,"px_wurf.js"],[47005,"px_insel.js"],[48206,"px_kicker.js"],[49141,"px_eis.js"],[50127,"px_run.js"],[51342,"px_brk.js"],[52304,"px_pol.js"],[53655,"px_frog.js"],[54915,"px_angel.js"],[56230,"px_golf.js"],[57264,"px_tauch.js"],[58529,"px_hockey.js"],[59485,"px_lab.js"],[60820,"px_plopp.js"],[62026,"px_stadion.js"],[63537,"px_stadion2.js"],[63589,"px_training.js"],[63958,"cm.js"],[64448,"cmwelt.js"],[64504,"cm_baeck.js"],[65297,"cm_bahn.js"],[66061,"cm_detek.js"],[66778,"cm_markt.js"],[67491,"ff.js"],[67648,"ff_mathe.js"],[69638,"ff_deutsch.js"],[71226,"ff_sach_a.js"],[73475,"ff_sach_b.js"],[75704,"ff_sprachen.js"],[78112,"zm.js"],[79025,"tt.js"],[79238,"data_tagebuch.js"],[79281,"data_hoerspiel.js"],[79440,"leseecke.js"],[79767,"kt.js"],[80070,"comicbuch.js"],[80348,"alce.js"],[80511,"alce_aufg.js"],[80702,"formen.js"],[81153,"data_formen.js"],[81394,"data_formen2.js"],[81616,"spielzeit.js"],[81838,"data_faktmeinung.js"],[81957,"data_es248.js"],[82221,"data_en249.js"],[82460,"data_wissen249.js"],[82891,"data_kunst249.js"],[83174,"data_fussball250.js"],[83298,"data_werte252.js"],[83551,"data_lesen252.js"],[83612,"data_k34_252.js"],[83698,"art254.js"],[83816,"data_werte255.js"],[83954,"data_lesen255.js"],[84090,"forscher255.js"],[84238,"zufall250.js"],[84284,"stufe259.js"],[84294,"advent.js"],[84557,"wdh.js"],[84655,"eswarm288.js"],[84706,"abwechslung294.js"],[84781,"bilder293a.js"],[84871,"bilder293b.js"],[85001,"bilder293c.js"],[85099,"bilder293d.js"],[85221,"bilder293e.js"],[85385,"bilder293f.js"],[85465,"bilder292.js"],[85911,"denk.js"],[85948,"data_viaje265.js"],[86091,"klassenarbeit.js"],[86224,"quizduell.js"],[86347,"neu267.js"],[86612,"prog.js"],[86717,"lernstand.js"],[86784,"blatt.js"],[86886,"uebung295.js"],[87208,"schuh296.js"],[87416,"uebung297.js"],[87803,"minus298.js"],[88044,"schrift299.js"],[88172,"data_es271.js"],[88286,"plus269.js"],[88380,"schach.js"],[88612,"schachtaktik.js"],[88864,"fun270.js"],[89027,"data_neu274.js"],[89236,"plus272.js"],[89290,"spiele274.js"],[89413,"kasten.js"],[89517,"erklaer.js"],[89630,"apa.js"],[89711,"neu276.js"],[89852,"spiele276.js"],[89902,"neu277.js"],[90080,"spiele277.js"],[90335,"lernen278.js"],[90595,"spiele278.js"],[90938,"lernen279.js"],[91263,"lernen279b.js"],[91661,"spanisch280.js"],[91953,"spanisch283.js"],[92186,"mehr281.js"],[92332,"grafik280.js"],[92711,"tiefsee280.js"],[92989,"abenteuer280.js"],[93201,"abenteuer281.js"],[93313,"design281.js"],[93445,"party281.js"],[93576,"grafik281.js"],[93793,"traumtor292.js"],[94000,"kart293.js"],[94277,"lumi_live.js"],[94393,"sicher.js"],[94577,"stil.js"],[94631,"zurueck287.js"],[94674,"nfbilder300.js"],[94837,"formen300.js"],[95444,"musik300.js"],[95615,"lernweg300b.js"],[95738,"lernweg300c.js"],[95898,"espanol300.js"],[96004,"fabel310_bild.js"],[96255,"fabel310.js"],[96646,"eisbude310.js"],[96872,"turbo310.js"],[97077,"sumo310.js"],[97212,"beifahrer310.js"],[97287,"dreier310.js"],[97403,"ring310.js"],[97512,"loch330.js"],[97862,"reise340.js"],[97932,"fisch340.js"],[98488,"rutsche340.js"],[98899,"knobel340.js"],[99137,"frucht350.js"],[99442,"vulkan350.js"],[99685,"delfin350.js"],[99880,"musik350.js"],[100050,"arcade360.js"],[100166,"strasse360.js"],[100462,"blasen360.js"],[100670,"meer360.js"],[100839,"spirale360.js"],[101003,"sterne360.js"],[101210,"alt360a.js"],[101480,"alt360b.js"],[101673,"alt360c.js"],[101927,"alt360d.js"],[102090,"alt370a.js"],[102287,"alt370b.js"],[102491,"alt370c.js"],[102629,"gl390.js"],[102872,"lauf390.js"],[103381,"ab3_level.js"],[103726,"abenteuer400.js"],[104220,"figuren410.js"],[104315,"kart410.js"],[104668,"show410.js"],[104983,"ball410.js"],[105296,"fussball420.js"],[105721,"farbe420.js"],[106002,"flug430.js"],[106192,"sport430.js"],[106563,"insel440.js"],[106843,"buddel440.js"],[107202,"party450.js"],[107610,"tiere450.js"],[108022,"malbuch460a.js"],[108345,"malbuch460b.js"],[108597,"malbuch460c.js"],[108702,"malkunst590.js"],[109243,"airhockey470.js"],[109520,"zwei480.js"],[109554,"minigolf480.js"],[109831,"schneeball480.js"],[110129,"billard480.js"],[110354,"kissen490.js"],[110700,"gleiter490.js"],[111074,"koch490.js"],[111508,"pxzwei501.js"],[111531,"belohnung311.js"],[111692,"belohnung480.js"],[111773,"einst502.js"],[111812,"pixmal510_bilder.js"],[112124,"pixmal530_bilder.js"],[112246,"pixmal510.js"],[112848,"druck311.js"],[113030,"zwei580.js"],[113217,"gym550.js"],[113540,"gym550_mathe5.js"],[113808,"gym550_deutsch5.js"],[114010,"gym550_englisch5.js"],[114120,"gym550_nawi5.js"],[114383,"gym550_gesell5.js"],[114617,"gym550_mehr5.js"],[114771,"gym600_mathe6.js"],[115017,"gym600_deutsch6.js"],[115179,"gym600_englisch6.js"],[115332,"gym600_nawi6.js"],[115620,"gym600_gesell6.js"],[115825,"freunde.js"],[115962,"start.js"],[115972,null],[115982,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '6.1.0';
+  var MAP = {"probe":0,"files":[[11018,"fehler_kern.js"],[11306,null],[11308,"data.js"],[12023,"data_more.js"],[12395,"data_su2.js"],[12622,"data_es.js"],[12990,"data_wissen.js"],[13191,"data_v21.js"],[13876,"data_v24.js"],[14364,"data_v25.js"],[14853,"data_v26.js"],[14952,"data_v29.js"],[15260,"data_v30.js"],[15594,"data_v31.js"],[15900,"data_kunst.js"],[16097,"data_v214.js"],[16200,"data_v216.js"],[16493,"schrift.js"],[16797,"eingabe.js"],[17008,"data_k34m.js"],[17526,"data_k34d.js"],[17880,"data_k34s.js"],[18334,"data_v224.js"],[19207,"data_v225w.js"],[19576,"data_v225k.js"],[20020,"data_herz.js"],[20374,"data_fb226.js"],[20517,"data_tf226.js"],[20724,"data_v227a.js"],[21824,"data_v227b.js"],[22778,"data_h28b.js"],[22818,"data_l28a.js"],[23684,"data_l28b.js"],[24864,"data_schaetz.js"],[25346,"data_party8.js"],[25396,"data_alce.js"],[26067,"data_alce2.js"],[26316,"data_alce3.js"],[26731,"registry.js"],[27245,"app.js"],[28527,"fun.js"],[29115,"fun2.js"],[29431,"atelier.js"],[29805,"kunst225.js"],[29995,"herz.js"],[30359,"reise.js"],[30661,"iglu.js"],[30827,"offline.js"],[30937,"party.js"],[31421,"meine.js"],[31777,"loeffel.js"],[31948,"trend.js"],[32490,"fun228a.js"],[33351,"fun228b.js"],[34028,"kueche.js"],[35067,"stimme.js"],[35122,"klassen.js"],[35275,"freunde_vorab.js"],[35296,"mut.js"],[35718,"schule.js"],[36207,"fussball226.js"],[36529,"schaetzen.js"],[36960,"party8.js"],[37579,"tiere.js"],[38038,"fussball232.js"],[38253,"party8b.js"],[38555,"weg.js"],[38776,"px.js"],[39196,"px_fein.js"],[39250,"px_data.js"],[39507,"pxwelt.js"],[39591,"px_abenteuer.js"],[40420,"px_abenteuer2.js"],[41174,"px_abenteuer3.js"],[41565,"px_abenteuer4.js"],[41775,"px_baukasten.js"],[41884,"px_abenteuer_fein.js"],[42101,"px_abenteuer_fein2.js"],[42453,"px_abenteuer5.js"],[42860,"px_abenteuer6.js"],[43136,"px_abenteuer7.js"],[43492,"px_level300.js"],[44043,"px_schwach300.js"],[44117,"px_zwei300.js"],[44231,"lumicheckt300.js"],[44424,"schreiben300.js"],[44638,"rechenkarte300.js"],[44758,"lerncheck300.js"],[44981,"material300.js"],[45311,"lernweg300.js"],[45835,"px_ski.js"],[46477,"px_wurf.js"],[47006,"px_insel.js"],[48207,"px_kicker.js"],[49142,"px_eis.js"],[50128,"px_run.js"],[51343,"px_brk.js"],[52305,"px_pol.js"],[53656,"px_frog.js"],[54916,"px_angel.js"],[56231,"px_golf.js"],[57265,"px_tauch.js"],[58530,"px_hockey.js"],[59486,"px_lab.js"],[60821,"px_plopp.js"],[62027,"px_stadion.js"],[63538,"px_stadion2.js"],[63590,"px_training.js"],[63959,"cm.js"],[64449,"cmwelt.js"],[64505,"cm_baeck.js"],[65298,"cm_bahn.js"],[66062,"cm_detek.js"],[66779,"cm_markt.js"],[67492,"ff.js"],[67649,"ff_mathe.js"],[69639,"ff_deutsch.js"],[71227,"ff_sach_a.js"],[73476,"ff_sach_b.js"],[75705,"ff_sprachen.js"],[78113,"zm.js"],[79026,"tt.js"],[79239,"data_tagebuch.js"],[79282,"data_hoerspiel.js"],[79441,"leseecke.js"],[79768,"kt.js"],[80071,"comicbuch.js"],[80349,"alce.js"],[80512,"alce_aufg.js"],[80703,"formen.js"],[81154,"data_formen.js"],[81395,"data_formen2.js"],[81617,"spielzeit.js"],[81839,"data_faktmeinung.js"],[81958,"data_es248.js"],[82222,"data_en249.js"],[82461,"data_wissen249.js"],[82892,"data_kunst249.js"],[83175,"data_fussball250.js"],[83299,"data_werte252.js"],[83552,"data_lesen252.js"],[83613,"data_k34_252.js"],[83699,"art254.js"],[83817,"data_werte255.js"],[83955,"data_lesen255.js"],[84091,"forscher255.js"],[84239,"zufall250.js"],[84285,"stufe259.js"],[84295,"advent.js"],[84558,"wdh.js"],[84656,"eswarm288.js"],[84707,"abwechslung294.js"],[84782,"bilder293a.js"],[84872,"bilder293b.js"],[85002,"bilder293c.js"],[85100,"bilder293d.js"],[85222,"bilder293e.js"],[85386,"bilder293f.js"],[85466,"bilder292.js"],[85912,"denk.js"],[85949,"data_viaje265.js"],[86092,"klassenarbeit.js"],[86225,"quizduell.js"],[86348,"neu267.js"],[86613,"prog.js"],[86718,"lernstand.js"],[86785,"blatt.js"],[86887,"uebung295.js"],[87209,"schuh296.js"],[87417,"uebung297.js"],[87804,"minus298.js"],[88045,"schrift299.js"],[88173,"data_es271.js"],[88287,"plus269.js"],[88381,"schach.js"],[88613,"schachtaktik.js"],[88865,"fun270.js"],[89028,"data_neu274.js"],[89237,"plus272.js"],[89291,"spiele274.js"],[89414,"kasten.js"],[89518,"erklaer.js"],[89631,"apa.js"],[89712,"neu276.js"],[89853,"spiele276.js"],[89903,"neu277.js"],[90081,"spiele277.js"],[90336,"lernen278.js"],[90596,"spiele278.js"],[90939,"lernen279.js"],[91264,"lernen279b.js"],[91662,"spanisch280.js"],[91954,"spanisch283.js"],[92187,"mehr281.js"],[92333,"grafik280.js"],[92712,"tiefsee280.js"],[92990,"abenteuer280.js"],[93202,"abenteuer281.js"],[93314,"design281.js"],[93446,"party281.js"],[93577,"grafik281.js"],[93794,"traumtor292.js"],[94001,"kart293.js"],[94278,"lumi_live.js"],[94394,"sicher.js"],[94578,"stil.js"],[94632,"zurueck287.js"],[94675,"nfbilder300.js"],[94838,"formen300.js"],[95445,"musik300.js"],[95616,"lernweg300b.js"],[95739,"lernweg300c.js"],[95899,"espanol300.js"],[96005,"fabel310_bild.js"],[96256,"fabel310.js"],[96647,"eisbude310.js"],[96873,"turbo310.js"],[97078,"sumo310.js"],[97213,"beifahrer310.js"],[97288,"dreier310.js"],[97404,"ring310.js"],[97513,"loch330.js"],[97863,"reise340.js"],[97933,"fisch340.js"],[98489,"rutsche340.js"],[98900,"knobel340.js"],[99138,"frucht350.js"],[99443,"vulkan350.js"],[99686,"delfin350.js"],[99881,"musik350.js"],[100051,"arcade360.js"],[100167,"strasse360.js"],[100463,"blasen360.js"],[100671,"meer360.js"],[100840,"spirale360.js"],[101004,"sterne360.js"],[101211,"alt360a.js"],[101481,"alt360b.js"],[101674,"alt360c.js"],[101928,"alt360d.js"],[102091,"alt370a.js"],[102288,"alt370b.js"],[102492,"alt370c.js"],[102630,"gl390.js"],[102873,"lauf390.js"],[103382,"ab3_level.js"],[103727,"abenteuer400.js"],[104221,"figuren410.js"],[104316,"kart410.js"],[104669,"show410.js"],[104984,"ball410.js"],[105297,"fussball420.js"],[105722,"farbe420.js"],[106003,"flug430.js"],[106193,"sport430.js"],[106564,"insel440.js"],[106844,"buddel440.js"],[107203,"party450.js"],[107611,"tiere450.js"],[108023,"malbuch460a.js"],[108346,"malbuch460b.js"],[108598,"malbuch460c.js"],[108703,"malkunst590.js"],[109244,"airhockey470.js"],[109521,"zwei480.js"],[109555,"minigolf480.js"],[109832,"schneeball480.js"],[110130,"billard480.js"],[110355,"kissen490.js"],[110701,"gleiter490.js"],[111075,"koch490.js"],[111509,"pxzwei501.js"],[111532,"belohnung311.js"],[111693,"belohnung480.js"],[111774,"einst502.js"],[111813,"pixmal510_bilder.js"],[112125,"pixmal530_bilder.js"],[112247,"pixmal510.js"],[112849,"druck311.js"],[113031,"zwei580.js"],[113218,"gym550.js"],[113541,"gym550_mathe5.js"],[113809,"gym550_deutsch5.js"],[114011,"gym550_englisch5.js"],[114121,"gym550_nawi5.js"],[114384,"gym550_gesell5.js"],[114618,"gym550_mehr5.js"],[114772,"gym600_mathe6.js"],[115018,"gym600_deutsch6.js"],[115180,"gym600_englisch6.js"],[115333,"gym600_nawi6.js"],[115621,"gym600_gesell6.js"],[115826,"k2_610.js"],[115903,"k2_sach610a.js"],[116152,"k2_sach610b.js"],[116647,"k2_deutsch610.js"],[116983,"k2_englisch610.js"],[117148,"freunde.js"],[117285,"start.js"],[117295,null],[117305,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -27246,9 +27246,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '6.0.0';
+const APP_VERSION = '6.1.0';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "6.1.0", d: "23.11.2026", t: ["Klasse 2 aufgefüllt: Viele Themen in Deutsch, Sachunterricht und Englisch hatten nur 15 bis 30 Aufgaben und wiederholten sich schnell. Jetzt gibt es dort über 1100 neue Aufgaben, die meisten Themen haben 40 bis 70 verschiedene", "Neue Aufgabenarten in diesen Themen: Richtig oder falsch, Zuordnen, Sortieren, Reihenfolge und Lückentexte", "Sachunterricht: Wolken und Wetter, Wasser, Licht und Schatten, Wind, Werkzeug, Experimente, Vögel, Haustiere, Wald, Wiese, Teich, Tiere im Winter, Sinne, Zähne, Körper, Ernährung, Kinderrechte, Früher und heute, Bauernhof, Müll, Verkehr, Erste Hilfe und mehr", "Deutsch: Mehrzahl, Groß und klein, Buchstabensalat, Silbentrennung, s, ss oder ß, ver und vor, Lesetexte, Satzbau, Satzzeichen, wörtliche Rede, Prädikat, Fragewörter, zusammengesetzte Nomen und Adjektive. Englisch: Say it, Question words, Classroom English, My family, a oder an, Mehrzahl, he, she, it, they und Großbritannien", "Behoben: „Rechnen & Ausmalen“ zeigte statt der Rechenaufgaben nur „[object Object]“, „Karopapier: spiegeln und zeichnen“ blieb leer (seit 5.9.0), und die Kapitel von Lumis Abenteuer ließen sich nicht mehr öffnen"] },
   { v: "6.0.0", d: "23.11.2026", t: ["Gymnasium Klasse 6 ist da: 50 neue Themen in acht Fächern nach dem Kerncurriculum Niedersachsen", "Mathe Klasse 6 rechnet mit immer neuen Aufgaben, Brüche gibt man als 3/4 oder 1 1/4 ein. Bruchbilder und Winkel werden gezeichnet", "Im Elternbereich unter „Schule“ gibt es jetzt den Knopf „Gymnasium ansehen“", "Englische Antworten mit Apostroph werden jetzt immer erkannt, auch mit der iPad-Tastatur"] },
   { v: "5.9.0", d: "22.11.2026", t: ["Neue Ausmalbilder in viel feinerer Zeichnung: Muster-Bilder mit Eule, Katze, Fuchs, Igel, Hase, Schnecke, Schildkröte, Schmetterling, Einhorn, Fisch, Wal, Lumi und einem Fußball vor dem Tor", "Neu: Pracht-Mandalas mit Blütenblättern in zwei Lagen, Spitzenbögen, Perlen und kleinen Mandalas in den Ecken", "Jedes Bild gibt es in drei Stufen (Einfach, Normal, Viele Details) und immer wieder neu gemischt"] },
   { v: "5.8.0", d: "22.11.2026", t: ["Neu bei den Mathe-Arbeitsblättern: Spiele zu zweit zum Ausdrucken. Tic-Tac-Toe sowie drei, vier und fünf in einer Reihe: In jedem Feld steht eine Aufgabe, wer richtig rechnet, malt das Feld an. Ein Lösungsstreifen zum Prüfen ist unten auf dem Blatt", "Neu: Geburtstagsparty. Rund um einen Tisch sitzen Gäste mit Zahlen. Würfeln, rechnen und den passenden Platz anmalen, die längste Reihe nebeneinander gewinnt", "Alle Spiele gibt es in fünf Stufen: bis 20 plus, bis 20 plus und minus, bis 100, Einmaleins und bis 1000"] },
@@ -30591,7 +30592,7 @@ function showPass(si) {
           <span class="st-e">${ok || open ? c.e : '🔒'}</span><b>${k + 1}. ${ok || open ? esc(c.ort) : '???'}</b><small>${ok ? 'Gestempelt ✓' : open ? 'Neu, jetzt lesen!' : 'noch geheim'}</small></button>`; }).join('')}</div>
     </main>`);
 }
-function showKapitel(i) {
+function showReiseKapitel(i) {
   const c = STORY[i]; if (!c || !stCanRead(i)) return showPass();
   const si = stSeason(i), s = STAFFELN[si], k = i - s.from; stState().sel = si;
   ST_Q = { i, ok: [false, false] };
@@ -30650,7 +30651,7 @@ function tripBind() {
 
 Object.assign(ACT, {
   stpass: () => { Sound.unlock(); showPass(); },
-  stread: t => { Sound.unlock(); showKapitel(Number(t.dataset.i)); },
+  stread: t => { Sound.unlock(); showReiseKapitel(Number(t.dataset.i)); },
   stseason: t => { Sound.unlock(); showPass(Number(t.dataset.s)); },
   stans: t => stAnswer(t),
   stsay: t => { const a = document.querySelector('.st-text'); if (a) Speech.say([...a.querySelectorAll('p')].map(p => p.textContent).join(' '), 'de-DE', t); },
@@ -32358,7 +32359,7 @@ const PX_BILDER = [
   { t: 'Pilz', e: '🍄', g: ['...RRRR...', '.RRPRRRRR.', 'RRRRRRPRRR', 'RPRRRRRRPR', 'RRRRRRRRRR', '...WWWW...', '...WWWW...', '...WWWW...', '..GGGGGG..', 'GGGGGGGGGG'], c: { R: ['#F0525F', 'Rot'], P: ['#F8F9FA', 'Weiß'], W: ['#FFE3C2', 'Beige'], G: ['#51CF66', 'Grün'] } },
   { t: 'Squishy-Katze', e: '🐱', g: ['.K......K.', '.KK....KK.', '.KKKKKKKK.', 'KKKKKKKKKK', 'KKBKKKKBKK', 'KKKKKKKKKK', 'KPKKMMKKPK', 'KKKKKKKKKK', '.KKKKKKKK.', '..........'], c: { K: ['#CDB4FF', 'Lila'], B: ['#343A40', 'Schwarz'], P: ['#FF8FAB', 'Rosa'], M: ['#C2255C', 'Pink'] } }];
 const PX_STUFEN = [['leicht', 'Plus & Minus bis 10'], ['mittel', 'Plus & Minus bis 20'], ['schwer', 'Plus & Minus bis 100'], ['mal', 'Einmaleins']];
-function pxTask(res, st) {
+function pxRechenTask(res, st) {
   if (st === 'mal') { const f = []; for (let a = 1; a <= 10; a++) if (res % a === 0 && res / a <= 10) f.push([a, res / a]); const [a, b] = R.pick(f); return `${a}·${b}`; }
   const max = st === 'leicht' ? 10 : st === 'mittel' ? 20 : 100;
   const room = max - res;
@@ -32385,7 +32386,7 @@ function pxMini(b) { return `<span class="px-mini">${b.g.map(row => [...row].map
 function pxOpen(i) {
   const b = PX_BILDER[i], P = pxState(), keys = Object.keys(b.c), res = pxResults(keys.length, P.st), map = {};
   keys.forEach((k, j) => { map[k] = res[j]; });
-  const cells = b.g.flatMap((row, r) => [...row].map((ch, c) => ch === '.' ? null : { r, c, ch, task: pxTask(map[ch], P.st), done: false })).filter(Boolean);
+  const cells = b.g.flatMap((row, r) => [...row].map((ch, c) => ch === '.' ? null : { r, c, ch, task: pxRechenTask(map[ch], P.st), done: false })).filter(Boolean);
   PX = { i, b, map, cells, sel: keys[0], left: cells.length };
   pxRender();
 }
@@ -108829,7 +108830,7 @@ function mkMandalaSeite(nr, stufe) {
 
 
 const MK_F = MK_W.fein;
-function mkGitter(B, gx, gy, versatz, f) {
+function mkPunktGitter(B, gx, gy, versatz, f) {
   let s = ''; if (!(gx > 2 && gy > 2)) return s; const [x0, y0, x1, y1] = B;
   for (let j = 0, y = y0 - gy; y < y1 + gy; j++, y += gy) for (let x = x0 - gx + (versatz && j % 2 ? gx / 2 : 0); x < x1 + gx; x += gx) s += f(x, y, j);
   return s;
@@ -108842,8 +108843,8 @@ const MK_MUSTER = {
     for (let j = 0, y = y0 - h; y < y1 + h; j++, y += h * .62) rows.push([y, j]);
     rows.reverse().forEach(([y, j]) => { for (let x = x0 - g + (j % 2 ? g / 2 : 0); x < x1 + g; x += g) s += mkPfad(`M${mkN(x - h)} ${mkN(y)} C${mkN(x - h)} ${mkN(y + h * 1.25)} ${mkN(x + h)} ${mkN(y + h * 1.25)} ${mkN(x + h)} ${mkN(y)} Z`, MK_F); });
     return s; },
-  kreise: (B, g, d) => mkGitter(B, g, g * .87, true, (x, y) => mkKreis(x, y, g * .36, MK_F) + (d ? mkKreis(x, y, g * .15, MK_F) : '')),
-  punkte: (B, g) => mkGitter(B, g * .62, g * .54, true, (x, y) => mkKreis(x, y, g * .1, MK_F)),
+  kreise: (B, g, d) => mkPunktGitter(B, g, g * .87, true, (x, y) => mkKreis(x, y, g * .36, MK_F) + (d ? mkKreis(x, y, g * .15, MK_F) : '')),
+  punkte: (B, g) => mkPunktGitter(B, g * .62, g * .54, true, (x, y) => mkKreis(x, y, g * .1, MK_F)),
   streifen: (B, g) => { const [x0, y0, x1, y1] = B, cx = (x0 + x1) / 2, cy = (y0 + y1) / 2, R = Math.hypot(x1 - x0, y1 - y0) / 2 + g; let s = '';
     for (let y = -R; y < R; y += g) s += mkPfad(mkPoly([[-R, y], [R, y], [R, y + g * .45], [-R, y + g * .45]]), MK_F);
     return `<g transform="translate(${mkN(cx)} ${mkN(cy)}) rotate(-35)">${s}</g>`; },
@@ -108853,19 +108854,19 @@ const MK_MUSTER = {
   wellen: (B, g) => { const [x0, y0, x1, y1] = B; let s = '';
     for (let y = y0 - g; y < y1 + g; y += g) s += mkPfad(mkPoly(mkWelle(x0 - g, x1 + g, y, g * .22, g * 1.6, 0).concat(mkWelle(x0 - g, x1 + g, y + g * .42, g * .22, g * 1.6, 0, true))), MK_F);
     return s; },
-  herzen: (B, g) => mkGitter(B, g, g * .9, true, (x, y) => mkPfad(mkHerzD(x, y, g * .3), MK_F)),
-  blumen: (B, g, d) => mkGitter(B, g, g * .9, true, (x, y) => { let s = ''; for (let k = 0; k < 5; k++) { const a = k * 72 * Math.PI / 180; s += `<ellipse cx="${mkN(x + Math.sin(a) * g * .2)}" cy="${mkN(y - Math.cos(a) * g * .2)}" rx="${mkN(g * .12)}" ry="${mkN(g * .2)}" transform="rotate(${k * 72} ${mkN(x + Math.sin(a) * g * .2)} ${mkN(y - Math.cos(a) * g * .2)})" stroke-width="${MK_F}"/>`; } return s + mkKreis(x, y, g * .09, MK_F); }),
-  blaetter: (B, g) => mkGitter(B, g * .8, g * .62, true, (x, y, j) => { const a = j % 2 ? 40 : -40; return `<g transform="translate(${mkN(x)} ${mkN(y)}) rotate(${a})">${mkPfad(`M0 ${mkN(-g * .3)} Q${mkN(g * .2)} 0 0 ${mkN(g * .3)} Q${mkN(-g * .2)} 0 0 ${mkN(-g * .3)} Z`, MK_F)}${mkLinie(`M0 ${mkN(-g * .22)} L0 ${mkN(g * .22)}`, 1.1)}</g>`; }),
-  karo: (B, g) => mkGitter(B, g * .7, g * .7, false, (x, y, j) => ((Math.round(x / (g * .7)) + j) % 2 ? mkPfad(mkPoly([[x, y - g * .35], [x + g * .35, y], [x, y + g * .35], [x - g * .35, y]]), MK_F) : '')),
-  waben: (B, g) => mkGitter(B, g * .87, g * .75, true, (x, y) => { const P = []; for (let k = 0; k < 6; k++) { const a = (k * 60 + 30) * Math.PI / 180; P.push([x + Math.cos(a) * g * .5, y + Math.sin(a) * g * .5]); } return mkPfad(mkPoly(P), MK_F); }),
-  spiralen: (B, g) => mkGitter(B, g * 1.1, g, true, (x, y) => { let d = ''; for (let k = 0; k <= 26; k++) { const a = k * .5, rr = g * .03 + k * g * .014; d += (k ? ' L' : 'M') + `${mkN(x + Math.cos(a) * rr)} ${mkN(y + Math.sin(a) * rr)}`; } return mkLinie(d) + mkKreis(x + g * .5, y + g * .4, g * .07, MK_F); }),
-  sterne: (B, g) => mkGitter(B, g, g * .9, true, (x, y, j) => mkPfad(mkSternD(x, y, g * .32, g * .14, 5, j * 17), MK_F)),
-  tropfen: (B, g) => mkGitter(B, g * .75, g * .8, true, (x, y) => mkPfad(`M${mkN(x)} ${mkN(y - g * .32)} C${mkN(x + g * .1)} ${mkN(y - g * .1)} ${mkN(x + g * .22)} ${mkN(y + g * .05)} ${mkN(x + g * .2)} ${mkN(y + g * .14)} A${mkN(g * .2)} ${mkN(g * .2)} 0 0 1 ${mkN(x - g * .2)} ${mkN(y + g * .14)} C${mkN(x - g * .22)} ${mkN(y + g * .05)} ${mkN(x - g * .1)} ${mkN(y - g * .1)} ${mkN(x)} ${mkN(y - g * .32)} Z`, MK_F)),
-  boegen: (B, g) => mkGitter(B, g, g * .55, true, (x, y) => mkPfad(`M${mkN(x - g * .45)} ${mkN(y)} A${mkN(g * .45)} ${mkN(g * .45)} 0 0 1 ${mkN(x + g * .45)} ${mkN(y)} Z`, MK_F) + mkPfad(`M${mkN(x - g * .25)} ${mkN(y)} A${mkN(g * .25)} ${mkN(g * .25)} 0 0 1 ${mkN(x + g * .25)} ${mkN(y)} Z`, MK_F)),
+  herzen: (B, g) => mkPunktGitter(B, g, g * .9, true, (x, y) => mkPfad(mkHerzD(x, y, g * .3), MK_F)),
+  blumen: (B, g, d) => mkPunktGitter(B, g, g * .9, true, (x, y) => { let s = ''; for (let k = 0; k < 5; k++) { const a = k * 72 * Math.PI / 180; s += `<ellipse cx="${mkN(x + Math.sin(a) * g * .2)}" cy="${mkN(y - Math.cos(a) * g * .2)}" rx="${mkN(g * .12)}" ry="${mkN(g * .2)}" transform="rotate(${k * 72} ${mkN(x + Math.sin(a) * g * .2)} ${mkN(y - Math.cos(a) * g * .2)})" stroke-width="${MK_F}"/>`; } return s + mkKreis(x, y, g * .09, MK_F); }),
+  blaetter: (B, g) => mkPunktGitter(B, g * .8, g * .62, true, (x, y, j) => { const a = j % 2 ? 40 : -40; return `<g transform="translate(${mkN(x)} ${mkN(y)}) rotate(${a})">${mkPfad(`M0 ${mkN(-g * .3)} Q${mkN(g * .2)} 0 0 ${mkN(g * .3)} Q${mkN(-g * .2)} 0 0 ${mkN(-g * .3)} Z`, MK_F)}${mkLinie(`M0 ${mkN(-g * .22)} L0 ${mkN(g * .22)}`, 1.1)}</g>`; }),
+  karo: (B, g) => mkPunktGitter(B, g * .7, g * .7, false, (x, y, j) => ((Math.round(x / (g * .7)) + j) % 2 ? mkPfad(mkPoly([[x, y - g * .35], [x + g * .35, y], [x, y + g * .35], [x - g * .35, y]]), MK_F) : '')),
+  waben: (B, g) => mkPunktGitter(B, g * .87, g * .75, true, (x, y) => { const P = []; for (let k = 0; k < 6; k++) { const a = (k * 60 + 30) * Math.PI / 180; P.push([x + Math.cos(a) * g * .5, y + Math.sin(a) * g * .5]); } return mkPfad(mkPoly(P), MK_F); }),
+  spiralen: (B, g) => mkPunktGitter(B, g * 1.1, g, true, (x, y) => { let d = ''; for (let k = 0; k <= 26; k++) { const a = k * .5, rr = g * .03 + k * g * .014; d += (k ? ' L' : 'M') + `${mkN(x + Math.cos(a) * rr)} ${mkN(y + Math.sin(a) * rr)}`; } return mkLinie(d) + mkKreis(x + g * .5, y + g * .4, g * .07, MK_F); }),
+  sterne: (B, g) => mkPunktGitter(B, g, g * .9, true, (x, y, j) => mkPfad(mkSternD(x, y, g * .32, g * .14, 5, j * 17), MK_F)),
+  tropfen: (B, g) => mkPunktGitter(B, g * .75, g * .8, true, (x, y) => mkPfad(`M${mkN(x)} ${mkN(y - g * .32)} C${mkN(x + g * .1)} ${mkN(y - g * .1)} ${mkN(x + g * .22)} ${mkN(y + g * .05)} ${mkN(x + g * .2)} ${mkN(y + g * .14)} A${mkN(g * .2)} ${mkN(g * .2)} 0 0 1 ${mkN(x - g * .2)} ${mkN(y + g * .14)} C${mkN(x - g * .22)} ${mkN(y + g * .05)} ${mkN(x - g * .1)} ${mkN(y - g * .1)} ${mkN(x)} ${mkN(y - g * .32)} Z`, MK_F)),
+  boegen: (B, g) => mkPunktGitter(B, g, g * .55, true, (x, y) => mkPfad(`M${mkN(x - g * .45)} ${mkN(y)} A${mkN(g * .45)} ${mkN(g * .45)} 0 0 1 ${mkN(x + g * .45)} ${mkN(y)} Z`, MK_F) + mkPfad(`M${mkN(x - g * .25)} ${mkN(y)} A${mkN(g * .25)} ${mkN(g * .25)} 0 0 1 ${mkN(x + g * .25)} ${mkN(y)} Z`, MK_F)),
   kringel: (B, g) => { const [x0, y0, x1, y1] = B; let s = '';
     for (let y = y0; y < y1 + g; y += g * .8) { let d = `M${mkN(x0 - g)} ${mkN(y)}`; for (let x = x0 - g; x < x1 + g; x += g * .5) d += ` C${mkN(x + g * .35)} ${mkN(y)} ${mkN(x + g * .4)} ${mkN(y - g * .32)} ${mkN(x + g * .25)} ${mkN(y - g * .32)} C${mkN(x + g * .1)} ${mkN(y - g * .32)} ${mkN(x + g * .15)} ${mkN(y)} ${mkN(x + g * .5)} ${mkN(y)}`; s += mkLinie(d); }
     return s; },
-  karos: (B, g) => mkGitter(B, g * .6, g * .6, false, (x, y, j) => ((Math.round(x / (g * .6)) + j) % 2 ? mkPfad(mkPoly([[x, y], [x + g * .6, y], [x + g * .6, y + g * .6], [x, y + g * .6]]), MK_F) : ''))
+  karos: (B, g) => mkPunktGitter(B, g * .6, g * .6, false, (x, y, j) => ((Math.round(x / (g * .6)) + j) % 2 ? mkPfad(mkPoly([[x, y], [x + g * .6, y], [x + g * .6, y + g * .6], [x, y + g * .6]]), MK_F) : ''))
 };
 const MK_MUSTER_ALLE = Object.keys(MK_MUSTER);
 
@@ -108934,7 +108935,7 @@ function mkMUSTER(r, box, g, d) { return MK_MUSTER[r.pick(['streifen', 'punkte',
 
 const MK_DEKO = {
   bluete: (p, r, d) => { const n = r.pick([6, 8, 10]); let s = mkRing(0, 0, r.pick(['blatt', 'lotus']), p * .3, p, n, 0, d, false); if (d > 1) s = mkRing(0, 0, 'blatt', p * .3, p * 1.08, n, 180 / n, 0, false) + s; return s + mkKreis(0, 0, p * .32) + (d ? mkRing(0, 0, 'perlen', p * .12, p * .3, n, 0, 0, false) : '') + mkKreis(0, 0, p * .12, MK_F); },
-  gaensebluemchen: (p, r, d) => { const n = r.pick([12, 14, 16]); let s = ''; for (let k = 0; k < n; k++) s += `<ellipse cx="0" cy="${mkN(-p * .58)}" rx="${mkN(p * .14)}" ry="${mkN(p * .42)}" transform="rotate(${mkN(k * 360 / n)})"/>`; return s + mkKreis(0, 0, p * .28) + (d ? mkGitter([-p * .2, -p * .2, p * .2, p * .2], p * .13, p * .11, true, (x, y) => Math.hypot(x, y) < p * .2 ? mkKreis(x, y, p * .03, MK_F) : '') : ''); },
+  gaensebluemchen: (p, r, d) => { const n = r.pick([12, 14, 16]); let s = ''; for (let k = 0; k < n; k++) s += `<ellipse cx="0" cy="${mkN(-p * .58)}" rx="${mkN(p * .14)}" ry="${mkN(p * .42)}" transform="rotate(${mkN(k * 360 / n)})"/>`; return s + mkKreis(0, 0, p * .28) + (d ? mkPunktGitter([-p * .2, -p * .2, p * .2, p * .2], p * .13, p * .11, true, (x, y) => Math.hypot(x, y) < p * .2 ? mkKreis(x, y, p * .03, MK_F) : '') : ''); },
   zweig: (p, r, d) => { let s = mkLinie(`M0 ${mkN(p)} C${mkN(-p * .2)} ${mkN(p * .3)} ${mkN(p * .2)} ${mkN(-p * .3)} 0 ${mkN(-p)}`, MK_W.mittel); for (let k = 0; k < 4; k++) { const t = .2 + k * .2, y = p - 2 * p * t, sg = k % 2 ? 1 : -1; s += mkSchieb(0, y, mkPfad(`M0 0 C${mkN(sg * p * .2)} ${mkN(-p * .12)} ${mkN(sg * p * .5)} ${mkN(-p * .1)} ${mkN(sg * p * .62)} ${mkN(-p * .28)} C${mkN(sg * p * .4)} ${mkN(-p * .4)} ${mkN(sg * p * .12)} ${mkN(-p * .3)} 0 0 Z`) + (d ? mkLinie(`M0 0 L${mkN(sg * p * .5)} ${mkN(-p * .22)}`) : '')); } return s + mkPfad(`M0 ${mkN(-p)} C${mkN(-p * .12)} ${mkN(-p * .78)} ${mkN(p * .12)} ${mkN(-p * .78)} 0 ${mkN(-p)} Z`); },
   herz: (p, r, d) => mkPfad(mkHerzD(0, 0, p * .62)) + (d ? mkPfad(mkHerzD(0, -p * .05, p * .36), MK_F) : '') + (d > 1 ? mkPfad(mkHerzD(0, -p * .08, p * .14), MK_F) : ''),
   kringel: (p) => { let dd = ''; for (let k = 0; k <= 40; k++) { const a = k * .32, rr = p * (.08 + k * .022); dd += (k ? ' L' : 'M') + `${mkN(Math.cos(a) * rr)} ${mkN(Math.sin(a) * rr)}`; } return mkLinie(dd, MK_W.mittel) + mkKreis(p * .9, p * .1, p * .1, MK_F); },
@@ -115821,6 +115822,1328 @@ gymThema({ id: 'g6-spaetantike', f: 'geschichte', kl: 6, t: 'Christentum und das
     ['rf', 'Mit dem Ende Westroms endet die Epoche der Antike.', true],
     ['w', 'Wie heißt die Stadt Konstantinopel heute?', 'Istanbul', ['Ankara', 'Athen', 'Kairo']],
     ['z', 'Ordne zu.', [['Konstantin', 'erlaubte das Christentum'], ['Theodosius', 'machte es zur Staatsreligion'], ['Odoaker', 'setzte den letzten Kaiser Westroms ab'], ['Hunnen', 'lösten die Völkerwanderung aus']]]] });
+
+/*@@src k2_610.js@@*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const K2X = {};
+let K2_NEU = 0;
+const k2Schluessel = x => JSON.stringify(x);
+function k2Neu(bank, neue) {
+  if (!Array.isArray(bank)) return 0;
+  const da = new Set(bank.map(k2Schluessel)); let n = 0;
+  neue.forEach(x => { const k = k2Schluessel(x); if (!da.has(k)) { da.add(k); bank.push(x); n++; } });
+  K2_NEU += n; return n;
+}
+
+function k2Vierte(bank, p2, vierte) { if (Array.isArray(p2) && bank.length - vierte.length === p2.length) p2.push(...vierte); }
+function k2Extra(id, neue) { (K2X[id] = K2X[id] || []).push(...neue); K2_NEU += neue.length; }
+function k2Sortieren(x) {
+  const alle = x[3]; if (alle.length <= 6) return alle.slice();
+  const je = x[2].map((_, k) => R.pick(alle.filter(w => w[1] === k))).filter(Boolean), rest = R.shuffle(alle.filter(w => !je.includes(w)));
+  return je.concat(rest.slice(0, 6 - je.length));
+}
+function k2Aufgabe(x0) {
+
+  const last = x0[x0.length - 1], o = last && typeof last === 'object' && !Array.isArray(last) ? last : null, x = o ? x0.slice(0, -1) : x0, t = x[0];
+  const q = k2Bau(x, t, o ? o.lang : '');
+  if (q && o && o.lang) { q.sayLang = o.lang; if (q.kind === 'choice' && t === 'rf') q.afterLang = o.lang; }
+  return q;
+}
+function k2Bau(x, t, lang) {
+  if (t === 'w') return suQuestion(x.slice(1));
+  if (t === 'rf') return mkTF({ statement: x[1], truth: !!x[2], explain: x[3] || '', emoji: x[4] || '' });
+  if (t === 'z') {
+    const P = x[2].length > 4 ? R.sample(x[2], 4) : x[2].slice();
+    return mkMatch({ prompt: x[1], lang, left: P.map(p => esc(p[0])), right: P.map(p => esc(p[1])), wide: P.some(p => String(p[1]).length > 14 || String(p[0]).length > 14),
+      explain: x[3] || P.map(p => `${p[0]}: ${p[1]}`).join(' · '), key: 'k2z' + x[1] + P.map(p => p[0]).join('|') });
+  }
+  if (t === 's') {
+    const W = k2Sortieren(x);
+    return mkSort({ prompt: x[1], lang, cols: x[2].map(c => `<b>${esc(c)}</b>`), colLabels: x[2].slice(), items: W.map(w => ({ h: esc(w[0]), c: w[1] })), explain: x[4] || '',
+      key: 'k2s' + x[1] + W.map(w => w[0]).sort().join('|') });
+  }
+  if (t === 'o') return mkOrder({ prompt: x[1], items: x[2], explain: x[3] || x[2].join(' → '), key: 'k2o' + x[1] + x[2][0] });
+  if (t === 'l') {
+    const gaps = [], tpl = `<p class="cz-line">${esc(x[2]).replace(/⟪([^⟫]+)⟫/g, (_, w) => { gaps.push(w); return '⟪' + (gaps.length - 1) + '⟫'; })}</p>`;
+    return mkCloze({ prompt: x[1], lang, tpl, gaps, extra: x[3] || [], explain: x[4] || x[2].replace(/[⟪⟫]/g, ''), key: 'k2l' + x[2].slice(0, 48) });
+  }
+  return null;
+}
+
+const K2_ALT = {};
+const k2Anteil = id => { const e = (K2X[id] || []).length, a = K2_ALT[id] || 20; return Math.max(.05, Math.min(.6, e / (e + a))); };
+function k2Einbau() {
+  Object.keys(K2X).forEach(id => {
+    const g = GAMES[id], L = K2X[id]; if (!g || !g.gen || g.k2x || !L.length) return;
+    const gen0 = g.gen; g.k2x = L.length;
+    g.gen = ctx => {
+      if (R.chance(k2Anteil(id))) {
+        try { const q = k2Aufgabe(ctx && ctx.draw ? ctx.draw(L) : R.pick(L)); if (q) return q; }
+        catch (e) { if (typeof reportProblem === 'function') reportProblem(e, 'k2-' + id); }
+      }
+      return gen0(ctx);
+    };
+  });
+}
+
+/*@@src k2_sach610a.js@@*/
+
+
+
+
+k2Neu(SU_WOLKEN, [
+  ['Woraus bestehen Wolken?', '☁️', 'aus winzigen Wassertröpfchen oder Eiskristallen', ['aus Rauch und Ruß', 'aus feinem Sand', 'aus Watte und Luft'], 'Wasserdampf kann man nicht sehen. Kühlt er ab, entstehen winzige Tröpfchen, und die sehen wir als Wolke.'],
+  ['Wie heißen kleine, weiße Wolken, die wie eine Schafherde aussehen?', '☁️', 'Schäfchenwolken', ['Federwolken', 'Schichtwolken', 'Gewitterwolken'], 'Sie stehen oft in langen Reihen am Himmel.'],
+  ['Was misst ein Regenmesser?', '🌧️', 'wie viel Regen gefallen ist', ['wie kalt der Regen ist', 'wie schnell der Wind weht', 'wie hoch die Wolken sind'], 'Man liest ab, wie hoch das Wasser im Becher steht.'],
+  ['Was misst ein Thermometer?', '🌡️', 'die Temperatur', ['die Regenmenge', 'die Windstärke', 'die Höhe der Wolken'], 'Die Temperatur gibt man in Grad Celsius an, zum Beispiel 20 °C.'],
+  ['Bei wie viel Grad Celsius gefriert Wasser zu Eis?', '🧊', 'bei 0 Grad', ['bei 10 Grad', 'bei 100 Grad', 'bei 50 Grad'], 'Bei 100 Grad kocht Wasser.'],
+  ['Woher weißt du, wie das Wetter morgen wird?', '📺', 'aus dem Wetterbericht', ['aus dem Kalender', 'aus dem Stundenplan', 'aus dem Telefonbuch'], 'Wetterforscher heißen Meteorologen. Sie beobachten Wolken, Wind und Temperatur.'],
+  ['Warum siehst du zuerst den Blitz und hörst erst danach den Donner?', '⚡', 'Licht ist viel schneller als Schall.', ['Der Donner entsteht erst später.', 'Die Augen arbeiten schneller als die Ohren.', 'Der Donner kommt von einer anderen Wolke.'], 'Zähl die Sekunden zwischen Blitz und Donner. Durch 3 geteilt weißt du ungefähr, wie viele Kilometer das Gewitter weg ist.'],
+  ['Wo bist du bei einem Gewitter am sichersten?', '⛈️', 'in einem Haus oder in einem Auto', ['unter einem großen Baum', 'auf einem freien Feld', 'beim Baden im See'], 'Blitze schlagen gern in hohe Dinge ein, zum Beispiel in einzelne Bäume.'],
+  ['Was passiert mit einer Pfütze, wenn lange die Sonne scheint?', '☀️', 'Das Wasser verdunstet.', ['Das Wasser wird zu Eis.', 'Das Wasser wird mehr.', 'Das Wasser färbt sich blau.'], 'Der Wasserdampf steigt auf. Später können daraus wieder Wolken werden.'],
+  ['Was ist Schnee?', '❄️', 'viele kleine Eiskristalle, die zu Flocken zusammenhängen', ['gefrorener Regen, der als harte Körner fällt', 'weißer Staub aus den Wolken', 'Hagel, der ganz langsam fällt'], 'Schnee entsteht, wenn es in der Wolke kälter als 0 Grad ist.'],
+  ['Woran erkennst du, dass bald ein Gewitter kommt?', '🌩️', 'Dunkle, hoch aufgetürmte Wolken ziehen auf und es wird windig.', ['Am Himmel sind nur Federwolken.', 'Es wird plötzlich ganz still und klar.', 'Die Sonne scheint stärker.'], 'Dann gehst du am besten nach drinnen.'],
+  ['Wie heißt der Weg des Wassers von der Erde in die Wolken und wieder zurück?', '🔄', 'Wasserkreislauf', ['Wetterbericht', 'Jahreslauf', 'Mondkreislauf'], 'Wasser verdunstet, bildet Wolken, fällt als Regen und fließt zurück ins Meer.']
+]);
+k2Extra('wolken', [
+  ['rf', 'Wolken bestehen aus Rauch.', false, 'Wolken bestehen aus winzigen Wassertröpfchen oder Eiskristallen.', '☁️'],
+  ['rf', 'Nebel ist eine Wolke, die ganz unten am Boden liegt.', true, 'Bei Nebel sieht man nicht weit. Autos fahren dann mit Licht.', '🌫️'],
+  ['rf', 'Bei Gewitter ist man unter einem einzelnen Baum sicher.', false, 'Blitze schlagen oft in hohe Bäume ein. Geh in ein Haus oder bleib im Auto.', '⛈️'],
+  ['rf', 'Hagel fällt meistens bei Gewittern, oft sogar im Sommer.', true, 'In hohen Gewitterwolken frieren Tropfen zu Eiskörnern.', '🌨️'],
+  ['rf', 'Einen Regenbogen sieht man, wenn die Sonne scheint und gleichzeitig Regen fällt.', true, 'Die Sonne steht dann hinter dir.', '🌈'],
+  ['z', 'Was misst man womit? Ordne zu.', [['Thermometer', 'Temperatur'], ['Regenmesser', 'Regenmenge'], ['Windfahne', 'Windrichtung'], ['Windmesser', 'Windstärke'], ['Barometer', 'Luftdruck']]],
+  ['s', 'Fällt es vom Himmel oder entsteht es am Boden?', ['fällt vom Himmel', 'entsteht am Boden'], [['Regen', 0], ['Schnee', 0], ['Hagel', 0], ['Graupel', 0], ['Nieselregen', 0], ['Tau', 1], ['Raureif', 1]], 'Tau und Raureif entstehen in kühlen Nächten direkt auf Gras und Zweigen.'],
+  ['l', 'Wie entsteht Regen? Setze die richtigen Wörter ein.', 'Die Sonne erwärmt das Wasser im Meer. Es ⟪verdunstet⟫ und steigt als unsichtbarer ⟪Wasserdampf⟫ nach oben. Dort kühlt er ab, und es entstehen ⟪Wolken⟫. Werden die Tropfen zu schwer, fällt ⟪Regen⟫.', ['Sand', 'Nebel']],
+  ['o', 'Wie entsteht Regen? Bring die Schritte in die richtige Reihenfolge.', ['☀️ Die Sonne erwärmt das Wasser.', '💨 Das Wasser verdunstet und steigt auf.', '☁️ Oben bilden sich Wolken.', '🌧️ Schwere Tropfen fallen als Regen.']]
+]);
+
+
+k2Neu(SU_WASSERALLTAG, [
+  ['Wie viel Wasser braucht ungefähr eine Dusche von fünf Minuten?', '🚿', 'etwa 40 bis 60 Liter', ['etwa 2 Liter', 'etwa 500 Liter', 'etwa 1000 Liter'], 'Ein Vollbad braucht ungefähr dreimal so viel.'],
+  ['Wie sparst du beim Waschen Wasser?', '🛁', 'kurz duschen statt baden', ['jeden Tag ein Vollbad nehmen', 'das Wasser beim Einseifen laufen lassen', 'zweimal hintereinander duschen'], 'Kurz duschen spart viele Liter.'],
+  ['Wofür kann man Regenwasser aus der Regentonne gut benutzen?', '🪣', 'zum Blumengießen', ['zum Trinken', 'zum Kochen', 'zum Zähneputzen'], 'Regenwasser ist kein Trinkwasser, aber Pflanzen mögen es.'],
+  ['Warum kann man Leitungswasser in Deutschland trinken?', '🚰', 'Es wird ständig kontrolliert und ist sauber.', ['Es kommt direkt aus dem Meer.', 'Es wird jeden Tag gekocht.', 'Es enthält Zucker.'], 'Leitungswasser gehört zu den am besten kontrollierten Lebensmitteln.'],
+  ['Welches Wasser kannst du NICHT trinken?', '🌊', 'Meerwasser', ['Leitungswasser', 'Mineralwasser', 'Tafelwasser aus der Flasche'], 'Meerwasser ist salzig. Es macht noch durstiger.'],
+  ['Wohin fließt das Wasser, nachdem es in der Kläranlage gereinigt wurde?', '♻️', 'zurück in einen Fluss oder Bach', ['sofort wieder in die Wasserleitung', 'in Flaschen im Supermarkt', 'in einen Tank im Keller'], 'So kommt das Wasser zurück in die Natur.'],
+  ['Wie heißt das schmutzige Wasser aus Spüle, Dusche und Toilette?', '🚽', 'Abwasser', ['Grundwasser', 'Trinkwasser', 'Quellwasser'], 'Abwasser fließt durch den Kanal zur Kläranlage.'],
+  ['Was tust du, wenn zu Hause ein Wasserhahn tropft?', '💧', 'einem Erwachsenen Bescheid sagen', ['nichts, das ist egal', 'den Hahn ganz weit aufdrehen', 'ein Handtuch darüber legen'], 'Oft muss nur eine kleine Dichtung erneuert werden.'],
+  ['Woraus besteht ein großer Teil deines Körpers?', '🧒', 'aus Wasser', ['aus Luft', 'aus Zucker', 'aus Sand'], 'Mehr als die Hälfte deines Körpers ist Wasser. Darum musst du jeden Tag trinken.'],
+  ['Warum soll man Bäche und Seen nicht verschmutzen?', '🐟', 'Pflanzen, Tiere und Menschen brauchen sauberes Wasser.', ['Weil schmutziges Wasser schneller gefriert.', 'Weil es sonst nicht mehr regnet.', 'Weil Fische schmutziges Wasser lieber mögen.'], 'Darum gehört Müll nie ins Wasser.'],
+  ['Wofür brauchen Bauern viel Wasser?', '🚜', 'zum Bewässern der Felder und für die Tiere', ['zum Mähen der Wiese', 'zum Pflügen', 'für den Traktor als Treibstoff'], 'Kühe trinken jeden Tag sehr viel Wasser.'],
+  ['Wofür braucht man in der Küche Wasser?', '🍝', 'zum Kochen, Spülen und Händewaschen', ['zum Aufladen des Handys', 'zum Licht machen', 'zum Lüften'], 'Ohne Wasser könnten wir keine Nudeln kochen.']
+]);
+k2Extra('wasseralltag', [
+  ['rf', 'Meerwasser kann man trinken, wenn man großen Durst hat.', false, 'Meerwasser ist salzig und macht noch durstiger.', '🌊'],
+  ['rf', 'Abwasser fließt durch den Kanal zur Kläranlage.', true, 'Dort wird es gereinigt.', '♻️'],
+  ['rf', 'Beim Duschen braucht man meist weniger Wasser als beim Baden.', true, 'Eine kurze Dusche spart viel Wasser.', '🚿'],
+  ['rf', 'Regenwasser aus der Regentonne ist gutes Trinkwasser.', false, 'Es ist nicht sauber genug. Zum Blumengießen ist es aber super.', '🪣'],
+  ['rf', 'Feuchttücher darf man in die Toilette werfen.', false, 'Sie lösen sich nicht auf und verstopfen die Rohre. Sie gehören in den Restmüll.', '🚽'],
+  ['rf', 'Fast alles Wasser auf der Erde ist salziges Meerwasser.', true, 'Nur ein kleiner Teil ist Süßwasser.', '🌍'],
+  ['s', 'Spart das Wasser oder verschwendet es?', ['spart Wasser', 'verschwendet Wasser'], [['kurz duschen', 0], ['beim Zähneputzen den Hahn zudrehen', 0], ['Blumen mit Regenwasser gießen', 0], ['die Waschmaschine nur voll anstellen', 0], ['Wasser beim Einseifen laufen lassen', 1], ['jeden Tag ein Vollbad', 1], ['ein tropfender Wasserhahn', 1], ['das Fahrrad jeden Tag mit dem Schlauch abspritzen', 1]]],
+  ['o', 'Der Weg des Wassers: Bring es in die richtige Reihenfolge.', ['💧 Grundwasser im Boden', '🏭 Das Wasserwerk reinigt es.', '🚰 Es kommt aus dem Wasserhahn.', '🚽 Als Abwasser fließt es in den Kanal.', '♻️ Die Kläranlage reinigt es.', '🌊 Es fließt zurück in den Fluss.']],
+  ['z', 'Was passiert wo? Ordne zu.', [['Wasserwerk', 'macht Trinkwasser sauber'], ['Kläranlage', 'reinigt das Abwasser'], ['Wasserturm', 'speichert Wasser'], ['Wasserzähler', 'zählt den Verbrauch'], ['Kanal', 'führt Abwasser weg']]],
+  ['l', 'Setze die richtigen Wörter ein.', 'Unser Trinkwasser kommt meist aus dem ⟪Grundwasser⟫. Im ⟪Wasserwerk⟫ wird es gereinigt. Durch ⟪Rohre⟫ fließt es in unsere Häuser.', ['Meer', 'Eimer']]
+]);
+
+
+K2_ALT.licht = 15;
+k2Extra('licht', [
+  ['w', 'Was ist eine Lichtquelle?', '💡', 'etwas, das selbst leuchtet', ['etwas, das Licht nur zurückwirft', 'etwas, das immer dunkel ist', 'etwas, das einen Schatten macht'], 'Sonne, Lampe, Kerze und Feuer sind Lichtquellen.'],
+  ['w', 'Welches ist KEINE Lichtquelle?', '🌙', 'der Mond', ['die Sonne', 'eine Kerze', 'eine Taschenlampe'], 'Der Mond leuchtet nicht selbst. Er wird von der Sonne angestrahlt.'],
+  ['w', 'Wann ist dein Schatten am kürzesten?', '☀️', 'mittags, wenn die Sonne hoch steht', ['früh am Morgen', 'am Abend', 'kurz vor Sonnenuntergang'], 'Steht die Sonne tief, wird der Schatten lang.'],
+  ['w', 'Die Sonne steht vor dir. Wo ist dein Schatten?', '🧍', 'hinter dir', ['vor dir', 'neben dir auf der Sonnenseite', 'über dir'], 'Der Schatten liegt immer auf der Seite, die von der Lichtquelle weg zeigt.'],
+  ['w', 'Du gehst mit der Taschenlampe näher an den Teddy. Was passiert mit seinem Schatten an der Wand?', '🔦', 'Er wird größer.', ['Er wird kleiner.', 'Er verschwindet.', 'Er wird bunt.'], 'Je näher die Lampe am Teddy ist, desto größer wird der Schatten.'],
+  ['w', 'Warum tragen Kinder im Winter Reflektoren am Ranzen?', '🦺', 'damit Autofahrer sie im Dunkeln früh sehen', ['damit sie selbst besser sehen', 'damit ihnen wärmer ist', 'damit der Ranzen sauber bleibt'], 'Reflektoren werfen das Licht der Scheinwerfer zurück und leuchten hell auf.'],
+  ['w', 'Welche Kleidung sieht ein Autofahrer nachts am schlechtesten?', '🌃', 'dunkle Kleidung ohne Reflektoren', ['eine gelbe Warnweste', 'eine helle Jacke mit Reflektoren', 'ein Ranzen mit Leuchtstreifen'], 'Helle Farben und Reflektoren machen dich sichtbar.'],
+  ['w', 'Durch welchen Gegenstand geht das Licht fast ganz hindurch?', '🪟', 'durch eine Fensterscheibe', ['durch ein Holzbrett', 'durch eine Wand', 'durch ein Buch'], 'Glas ist durchsichtig.'],
+  ['w', 'Was macht ein Spiegel mit dem Licht?', '🪞', 'Er wirft es zurück.', ['Er schluckt es ganz.', 'Er macht es bunt.', 'Er macht es dunkel.'], 'Darum siehst du dich im Spiegel.'],
+  ['w', 'Warum sollst du nie direkt in die Sonne schauen?', '😎', 'Das helle Licht kann die Augen verletzen.', ['Die Sonne wird dann kleiner.', 'Die Augen werden dann grün.', 'Man muss dann sofort niesen.'], 'Auch mit Sonnenbrille schaut man nie direkt in die Sonne.'],
+  ['rf', 'Der Mond ist eine Lichtquelle.', false, 'Der Mond wird von der Sonne angestrahlt und wirft das Licht nur zurück.', '🌙'],
+  ['rf', 'Ein Schatten entsteht, wenn ein Gegenstand das Licht aufhält.', true, 'Hinter dem Gegenstand bleibt es dunkel.', '🌳'],
+  ['rf', 'Mittags sind die Schatten am längsten.', false, 'Mittags steht die Sonne hoch, dann sind die Schatten kurz.', '☀️'],
+  ['rf', 'Ohne Licht können wir nichts sehen.', true, 'Unsere Augen brauchen Licht. In völliger Dunkelheit sieht man gar nichts.', '👀'],
+  ['rf', 'Durch einen Holztisch kann Licht hindurchgehen.', false, 'Holz ist undurchsichtig. Darum gibt es unter dem Tisch Schatten.', '🪵'],
+  ['rf', 'Helle Kleidung und Reflektoren machen dich im Dunkeln sichtbar.', true, 'So sehen Autofahrer dich schon von Weitem.', '🦺'],
+  ['s', 'Leuchtet es selbst?', ['Lichtquelle', 'keine Lichtquelle'], [['Sonne', 0], ['Kerze', 0], ['Taschenlampe', 0], ['Lagerfeuer', 0], ['Glühwürmchen', 0], ['Mond', 1], ['Spiegel', 1], ['Fensterscheibe', 1], ['Reflektor', 1]]],
+  ['s', 'Lässt es das Licht durch?', ['durchsichtig', 'undurchsichtig'], [['Glasscheibe', 0], ['Klarsichtfolie', 0], ['Wasser im Glas', 0], ['Holzbrett', 1], ['Pappe', 1], ['Stein', 1], ['Buch', 1]]],
+  ['z', 'Was bedeutet das? Ordne zu.', [['Lichtquelle', 'leuchtet selbst'], ['Schatten', 'dunkle Stelle hinter etwas'], ['Spiegel', 'wirft Licht zurück'], ['Reflektor', 'leuchtet im Scheinwerferlicht'], ['Glas', 'lässt Licht durch']]],
+  ['l', 'Setze die richtigen Wörter ein.', 'Die ⟪Sonne⟫ ist unsere wichtigste Lichtquelle. Hält ein Gegenstand das Licht auf, entsteht hinter ihm ein ⟪Schatten⟫. Morgens und abends ist er ⟪lang⟫, mittags ist er ⟪kurz⟫.', ['Mond', 'bunt']]
+]);
+
+
+K2_ALT.wind = 23;
+k2Neu(SU_WIND, [
+  ['Warum schwebt ein Fallschirm langsam zu Boden?', '🪂', 'Die Luft unter dem Schirm bremst ihn.', ['Er ist leichter als Luft.', 'Er wird vom Wind nach oben gezogen.', 'In ihm steckt warme Luft.'], 'Je größer der Schirm, desto mehr Luft bremst.'],
+  ['Du lässt einen aufgeblasenen Luftballon los, ohne ihn zuzubinden. Was passiert?', '🎈', 'Die Luft strömt heraus und er saust davon.', ['Er bleibt ruhig in der Luft stehen.', 'Er wird immer größer.', 'Er fällt sofort gerade nach unten.'], 'Die ausströmende Luft schiebt den Ballon an.'],
+  ['Womit hat man früher mit Windkraft Getreide gemahlen?', '🌬️', 'mit einer Windmühle', ['mit einer Wetterfahne', 'mit einem Windsack', 'mit einem Drachen'], 'Der Wind drehte die Flügel und damit die Mühlsteine.'],
+  ['Welche Pflanzen verbreiten ihre Samen mit dem Wind?', '🌼', 'Löwenzahn und Ahorn', ['Kirsche und Apfel', 'Kartoffel und Möhre', 'Erdbeere und Himbeere'], 'Der Ahorn hat kleine Propeller, der Löwenzahn kleine Schirmchen.'],
+  ['Was ist bei Sturm richtig?', '⚠️', 'drinnen bleiben und nicht in den Wald gehen', ['einen Drachen steigen lassen', 'unter Bäumen Schutz suchen', 'mit dem Fahrrad an den Deich fahren'], 'Bei Sturm können Äste abbrechen und Dinge durch die Luft fliegen.'],
+  ['Was ist Gegenwind beim Radfahren?', '🚲', 'Wind, der dir von vorne entgegenweht', ['Wind, der dich von hinten schiebt', 'Wind, der von unten kommt', 'gar kein Wind'], 'Bei Gegenwind ist das Treten anstrengend. Rückenwind schiebt dich an.'],
+  ['Was kann der Wind an der Küste aus Sand bauen?', '🏖️', 'Dünen', ['Deiche', 'Felsen', 'Muscheln'], 'Der Wind weht den Sand zu Hügeln zusammen. Strandhafer hält ihn fest.'],
+  ['Warum flattert eine Fahne?', '🏳️', 'Der Wind drückt gegen den Stoff.', ['Der Stoff bewegt sich von allein.', 'Die Fahnenstange wackelt.', 'Die Sonne bewegt den Stoff.'], 'Ohne Wind hängt die Fahne schlaff herunter.']
+]);
+k2Extra('wind', [
+  ['rf', 'Luft ist nichts, sie hat überhaupt kein Gewicht.', false, 'Luft ist unsichtbar, aber sie ist da und hat sogar ein Gewicht.', '💨'],
+  ['rf', 'Bei Sturm ist es im Wald besonders sicher.', false, 'Im Wald können bei Sturm Äste und Bäume umstürzen.', '🌲'],
+  ['rf', 'Windräder machen aus Wind Strom.', true, 'An der Nordseeküste stehen viele Windräder.', '🌬️'],
+  ['rf', 'Bei Gegenwind kommst du mit dem Fahrrad leichter voran.', false, 'Gegenwind bremst dich. Rückenwind schiebt dich an.', '🚲'],
+  ['s', 'Nutzt es den Wind?', ['nutzt den Wind', 'braucht keinen Wind'], [['Segelboot', 0], ['Drachen', 0], ['Windrad', 0], ['Windmühle', 0], ['Ruderboot', 1], ['Fahrrad', 1], ['Auto', 1], ['Dampflok', 1]]],
+  ['z', 'Wie stark ist der Wind? Ordne zu.', [['Flaute', 'gar kein Wind'], ['Brise', 'leichter Wind'], ['Sturm', 'sehr starker Wind'], ['Böe', 'kurzer, kräftiger Windstoß'], ['Orkan', 'gefährlich starker Wind']]],
+  ['l', 'Setze die richtigen Wörter ein.', 'Wind ist ⟪Luft⟫, die sich bewegt. Ein leichter Wind heißt ⟪Brise⟫. Ein sehr starker Wind heißt ⟪Sturm⟫.', ['Wasser', 'Nebel']]
+]);
+
+
+K2_ALT.technik = 19;
+k2Extra('technik', [
+  ['w', 'Womit schlägst du einen Nagel in ein Brett?', '🔨', 'mit dem Hammer', ['mit der Zange', 'mit dem Schraubendreher', 'mit der Säge'], 'Mit der Zange zieht man Nägel wieder heraus.'],
+  ['w', 'Womit drehst du eine Schraube hinein?', '🪛', 'mit dem Schraubendreher', ['mit dem Hammer', 'mit der Feile', 'mit dem Pinsel'], 'Man sagt auch Schraubenzieher.'],
+  ['w', 'Womit sägst du ein Brett durch?', '🪚', 'mit der Säge', ['mit der Schere', 'mit dem Hammer', 'mit dem Lineal'], 'Das Brett wird dabei festgeklemmt, damit es nicht wackelt.'],
+  ['w', 'Was ist ein Hebel?', '⚖️', 'eine Stange, mit der man schwere Dinge leichter anheben kann', ['ein Seil, mit dem man Dinge zieht', 'ein Rad, das sich dreht', 'eine Schraube mit Gewinde'], 'Eine Wippe und ein Flaschenöffner sind Hebel.'],
+  ['w', 'Auf einer Wippe sitzen ein schweres und ein leichtes Kind. Wie kommt die Wippe ins Gleichgewicht?', '⚖️', 'Das schwere Kind rutscht näher zur Mitte.', ['Das leichte Kind rutscht näher zur Mitte.', 'Beide setzen sich ganz an die Enden.', 'Das schwere Kind rutscht weiter nach außen.'], 'Wer schwerer ist, setzt sich näher an den Drehpunkt in der Mitte.'],
+  ['w', 'Wozu hat ein Fahrrad eine Kette?', '🚲', 'Sie überträgt die Kraft von den Pedalen auf das Hinterrad.', ['Damit man es abschließen kann.', 'Damit das Licht leuchtet.', 'Damit die Bremse funktioniert.'], 'Trittst du in die Pedale, dreht die Kette das Hinterrad.'],
+  ['w', 'Was hält zwei Blätter Papier gut zusammen?', '📎', 'eine Büroklammer', ['ein Radiergummi', 'ein Bleistift', 'ein Lineal'], 'Auch ein Tacker oder Kleber halten Papier zusammen.'],
+  ['w', 'Wie heißt ein Rad mit einer Rille, über das ein Seil läuft, um Lasten hochzuziehen?', '🏗️', 'eine Rolle', ['ein Hebel', 'ein Keil', 'eine Feder'], 'Am Kran und am Brunnen hilft eine Rolle beim Hochziehen.'],
+  ['w', 'Woraus ist ein Hammerkopf meistens?', '🔨', 'aus Metall', ['aus Pappe', 'aus Glas', 'aus Wolle'], 'Metall ist hart und schwer. Damit kann man gut schlagen.'],
+  ['w', 'Was braucht ein Spielzeugauto mit Motor, damit es fährt?', '🔋', 'eine volle Batterie', ['Wasser im Tank', 'Wind von hinten', 'eine Kerze'], 'Die Batterie liefert den Strom für den kleinen Motor.'],
+  ['rf', 'Mit einem Hebel kann man schwere Dinge leichter bewegen.', true, 'Je länger der Hebel, desto leichter geht es.', '⚖️'],
+  ['rf', 'Ein Turm steht sicherer, wenn er unten schmal und oben breit ist.', false, 'Ein breiter Fuß unten macht einen Turm stabil.', '🧱'],
+  ['rf', 'Scharfes Werkzeug wie Säge und Messer benutzt man nur mit Erlaubnis.', true, 'Scharfes Werkzeug kann gefährlich sein.', '🪚'],
+  ['rf', 'Eine Wippe ist ein Hebel.', true, 'In der Mitte ist der Drehpunkt.', '⚖️'],
+  ['rf', 'Mit der Zange kann man Nägel herausziehen.', true, 'Die Zange packt den Nagel fest.', '🔧'],
+  ['z', 'Welches Werkzeug brauchst du? Ordne zu.', [['Hammer', 'Nagel einschlagen'], ['Säge', 'Brett zerteilen'], ['Schraubendreher', 'Schraube eindrehen'], ['Zange', 'Nagel herausziehen'], ['Zollstock', 'Länge messen'], ['Feile', 'Kanten glatt machen']]],
+  ['s', 'Schneiden oder messen?', ['zum Schneiden', 'zum Messen'], [['Schere', 0], ['Säge', 0], ['Messer', 0], ['Lineal', 1], ['Zollstock', 1], ['Maßband', 1], ['Waage', 1], ['Thermometer', 1]]],
+  ['o', 'Ein Vogelhaus bauen: Bring die Schritte in die richtige Reihenfolge.', ['📏 Bretter abmessen', '✏️ anzeichnen', '🪚 zusägen', '🔨 zusammennageln', '🖌️ anmalen']],
+  ['l', 'Setze die richtigen Wörter ein.', 'Mit dem ⟪Hammer⟫ schlägst du einen Nagel ein. Mit der ⟪Säge⟫ teilst du ein Brett. Mit dem ⟪Schraubendreher⟫ drehst du eine Schraube fest.', ['Pinsel', 'Schere']]
+]);
+
+
+K2_ALT.experimente = 16;
+k2Neu(SU_EXPERIMENTE, [
+  ['Du legst einen Apfel und eine Weintraube in Wasser. Was passiert?', '🍎', 'Der Apfel schwimmt, die Weintraube sinkt.', ['Beide schwimmen.', 'Beide sinken.', 'Der Apfel sinkt, die Weintraube schwimmt.'], 'Im Apfel steckt viel Luft. Darum schwimmt er.'],
+  ['Du füllst ein Glas randvoll mit Wasser, legst eine Postkarte darauf und drehst es vorsichtig um. Was passiert?', '🥛', 'Die Karte bleibt am Glas und das Wasser bleibt drin.', ['Das Wasser läuft sofort aus.', 'Die Karte saugt das ganze Wasser auf.', 'Das Glas wird warm.'], 'Die Luft drückt von unten gegen die Karte. Probiere es über dem Waschbecken!'],
+  ['Du stellst eine weiße Blume in Wasser mit blauer Lebensmittelfarbe. Was siehst du nach einem Tag?', '🌼', 'Die Blütenblätter werden bläulich.', ['Die Blume wird ganz rot.', 'Das Wasser wird klar.', 'Nichts, Blumen nehmen kein Wasser auf.'], 'Die Blume saugt das gefärbte Wasser durch den Stängel nach oben.'],
+  ['Du hältst einen Magneten an verschiedene Dinge. Was zieht er an?', '🧲', 'eine Büroklammer aus Eisen', ['ein Radiergummi', 'einen Holzstift', 'ein Blatt Papier'], 'Magnete ziehen Dinge aus Eisen an.'],
+  ['Du pustest durch einen Strohhalm in ein Glas Wasser. Was siehst du?', '🫧', 'Luftblasen steigen nach oben.', ['Das Wasser wird warm.', 'Das Wasser wird zu Eis.', 'Das Wasser färbt sich.'], 'Luft ist leichter als Wasser und steigt auf.'],
+  ['Ein Erwachsener stülpt ein Glas über ein brennendes Teelicht. Was passiert nach kurzer Zeit?', '🕯️', 'Die Flamme geht aus.', ['Die Flamme wird immer größer.', 'Das Glas wird eiskalt.', 'Die Flamme brennt ewig weiter.'], 'Die Flamme braucht Luft. Unter dem Glas ist sie bald verbraucht. Feuer nur mit Erwachsenen!'],
+  ['Du gibst etwas Öl in ein Glas Wasser. Was passiert?', '🫗', 'Das Öl schwimmt oben auf dem Wasser.', ['Das Öl sinkt auf den Boden.', 'Öl und Wasser mischen sich sofort.', 'Das Wasser wird zu Öl.'], 'Öl ist leichter als Wasser und mischt sich nicht damit.'],
+  ['Du legst Kressesamen auf trockene Watte und auf nasse Watte. Wo keimen sie?', '🌱', 'auf der nassen Watte', ['auf der trockenen Watte', 'auf beiden gleich gut', 'auf keiner von beiden'], 'Samen brauchen Wasser zum Keimen.'],
+  ['Ein Teller Wasser steht in der Sonne, einer im Schatten. Wo ist das Wasser zuerst verschwunden?', '☀️', 'in der Sonne', ['im Schatten', 'bei beiden gleich schnell', 'es verdunstet gar nicht'], 'Wärme lässt Wasser schneller verdunsten.'],
+  ['Du klopfst an Gläser, in denen unterschiedlich viel Wasser ist. Was hörst du?', '🎵', 'verschiedene Töne', ['überall den gleichen Ton', 'gar keinen Ton', 'nur beim leeren Glas einen Ton'], 'Je mehr Wasser im Glas ist, desto tiefer klingt es.'],
+  ['Ein Spielzeugauto rollt eine flache und eine steile Rampe hinunter. Wo wird es schneller?', '🚗', 'auf der steilen Rampe', ['auf der flachen Rampe', 'auf beiden gleich schnell', 'es rollt gar nicht'], 'Je steiler die Rampe, desto schneller rollt das Auto.'],
+  ['Was machst du bei einem Experiment, bevor du anfängst?', '🔬', 'eine Vermutung aufschreiben: Was wird passieren?', ['gleich das Ergebnis aufschreiben', 'ohne Plan alles durcheinander probieren', 'die Sachen gleich wieder wegräumen'], 'Forscher vermuten zuerst, dann probieren sie aus und beobachten genau.']
+]);
+k2Extra('experimente', [
+  ['rf', 'Öl und Wasser mischen sich gut.', false, 'Das Öl schwimmt immer oben auf dem Wasser.', '🫗'],
+  ['rf', 'Samen keimen auch ganz ohne Wasser.', false, 'Samen brauchen Wasser und Wärme zum Keimen.', '🌱'],
+  ['rf', 'Ein Magnet zieht Holz an.', false, 'Magnete ziehen Eisen an, Holz nicht.', '🧲'],
+  ['rf', 'Bei Experimenten mit Feuer ist immer ein Erwachsener dabei.', true, 'Feuer ist gefährlich. Sicherheit geht vor.', '🔥'],
+  ['s', 'Schwimmt es oder sinkt es?', ['schwimmt', 'sinkt'], [['Korken', 0], ['Apfel', 0], ['Holzstück', 0], ['Tischtennisball', 0], ['Murmel', 1], ['Schlüssel', 1], ['Stein', 1], ['Münze', 1]]],
+  ['l', 'So forschst du. Setze die richtigen Wörter ein.', 'Zuerst stellst du eine ⟪Frage⟫. Dann schreibst du eine ⟪Vermutung⟫ auf. Danach probierst du es aus und ⟪beobachtest⟫ genau.', ['Antwort', 'schläfst']]
+]);
+
+
+k2Neu(SU_VOEGEL, [
+  ['Welcher Vogel ist an der Nordsee sehr häufig und klaut gern Pommes?', '🐦', 'die Möwe', ['der Storch', 'die Amsel', 'der Specht'], 'Möwen leben am Meer. Füttere sie nicht, sonst werden sie frech.'],
+  ['Welcher große, graue Vogel zieht im Herbst in einer V-Form über uns hinweg und trompetet laut?', '🪶', 'der Kranich', ['der Spatz', 'die Amsel', 'die Elster'], 'Kraniche fliegen im Herbst nach Süden und kommen im Frühling zurück.'],
+  ['Woran erkennst du die Kohlmeise?', '🐦', 'an der gelben Brust mit einem schwarzen Streifen', ['an der orangeroten Brust', 'am ganz schwarzen Gefieder', 'am langen roten Schnabel'], 'Der schwarze Streifen sieht aus wie eine Krawatte.'],
+  ['Wozu haben Vögel Federn?', '🪶', 'zum Fliegen und zum Warmhalten', ['nur zum Schmücken', 'zum Graben', 'zum Riechen'], 'Weiche Daunen unter den Deckfedern halten warm.'],
+  ['Wie heißt der Mund eines Vogels?', '🐤', 'Schnabel', ['Maul', 'Rüssel', 'Schnauze'], 'Vögel haben keine Zähne. Mit dem Schnabel picken und knacken sie ihr Futter.'],
+  ['Wie kommen Vogelküken auf die Welt?', '🥚', 'Sie schlüpfen aus Eiern.', ['Sie werden lebend geboren.', 'Sie wachsen aus Knospen.', 'Sie fallen aus den Wolken.'], 'Die Eltern brüten die Eier warm, bis die Küken schlüpfen.'],
+  ['Du findest im Frühling einen jungen Vogel auf dem Boden. Was tust du?', '🐣', 'ihn in Ruhe lassen und Abstand halten, die Eltern sind meist in der Nähe', ['ihn mit nach Hause nehmen', 'ihn sofort mit Brot füttern', 'ihn in einen Karton setzen'], 'Viele junge Vögel verlassen das Nest, bevor sie gut fliegen. Die Eltern füttern sie weiter. Ist er verletzt, frag einen Erwachsenen.'],
+  ['Welcher schwarze Vogel ist größer als eine Amsel und sitzt oft in Gruppen auf Feldern?', '🐦', 'die Krähe', ['der Spatz', 'die Blaumeise', 'das Rotkehlchen'], 'Krähen sind sehr schlau und können sich viel merken.'],
+  ['Wozu bauen Vögel ein Nest?', '🪺', 'um darin ihre Eier auszubrüten und die Jungen großzuziehen', ['um darin den Winter zu verschlafen', 'um darin Futter zu verstecken', 'um sich vor Regen zu duschen'], 'Viele Vögel schlafen nicht im Nest, sondern auf Ästen.'],
+  ['Welcher Vogel mit einem blauen Fleck am Flügel versteckt Eicheln im Boden?', '🐦', 'der Eichelhäher', ['die Elster', 'der Spatz', 'die Möwe'], 'Aus vergessenen Eicheln wachsen neue Eichen.'],
+  ['Welcher Greifvogel steht in der Luft auf einer Stelle und schlägt dabei schnell mit den Flügeln?', '🦅', 'der Turmfalke', ['der Spatz', 'die Möwe', 'die Ente'], 'Man nennt das Rütteln. So sucht er von oben nach Mäusen.'],
+  ['Was fressen Schwalben?', '🐦', 'Insekten, die sie im Flug fangen', ['Körner vom Feld', 'Fische aus dem Teich', 'Beeren vom Strauch'], 'Fliegen Schwalben tief, fliegen auch die Insekten tief. Oft kommt dann Regen.']
+]);
+k2Extra('voegel', [
+  ['rf', 'Alle Vögel können fliegen.', false, 'Pinguine, Strauße und Kiwis können nicht fliegen.', '🐧'],
+  ['rf', 'Vögel haben Zähne im Schnabel.', false, 'Vögel haben keine Zähne.', '🐤'],
+  ['rf', 'Störche verbringen den Winter meist in Afrika.', true, 'Im Frühling kommen sie zurück zu ihren Nestern.', '🪶'],
+  ['rf', 'Junge Vögel, die auf dem Boden hüpfen, werden oft noch von ihren Eltern gefüttert.', true, 'Darum lässt man sie in Ruhe.', '🐣'],
+  ['s', 'Zugvogel oder Standvogel?', ['fliegt im Herbst weg', 'bleibt im Winter hier'], [['Storch', 0], ['Schwalbe', 0], ['Kranich', 0], ['Kuckuck', 0], ['Amsel', 1], ['Spatz', 1], ['Kohlmeise', 1], ['Elster', 1], ['Buntspecht', 1]], 'Zugvögel finden bei uns im Winter keine Insekten. Standvögel kommen auch mit Körnern und Beeren durch.'],
+  ['z', 'Welcher Vogel ist das? Ordne zu.', [['Rotkehlchen', 'orangerote Brust'], ['Blaumeise', 'blau und gelb'], ['Elster', 'schwarz-weiß mit langem Schwanz'], ['Amsel', 'schwarz mit gelbem Schnabel'], ['Specht', 'klopft Höhlen in Bäume'], ['Storch', 'lange rote Beine']]],
+  ['l', 'Setze die richtigen Wörter ein.', 'Im Herbst fliegen ⟪Zugvögel⟫ wie der Storch in den Süden. Vögel, die bei uns bleiben, heißen ⟪Standvögel⟫. Im Winter kannst du ihnen mit ⟪Vogelfutter⟫ helfen.', ['Brot', 'Wandervögel']],
+  ['o', 'Vom Ei zum Vogel: Bring es in die richtige Reihenfolge.', ['🥚 Die Eltern brüten das Ei aus.', '🐣 Das Küken schlüpft.', '🪺 Die Eltern füttern es im Nest.', '🐦 Der junge Vogel fliegt aus.']]
+]);
+
+
+k2Neu(SU_HAUSTIERE, [
+  ['Ein Hund wedelt locker mit dem Schwanz und springt herum. Was zeigt er meistens?', '🐕', 'Er freut sich.', ['Er ist müde.', 'Er will schlafen.', 'Er ist wütend.'], 'Achte aber auf den ganzen Hund. Knurrt er oder ist er steif, will er in Ruhe gelassen werden.'],
+  ['Was macht eine Katze, wenn sie Angst hat oder wütend ist?', '🐈', 'Sie macht einen Buckel und faucht.', ['Sie schnurrt laut.', 'Sie wedelt fröhlich mit dem Schwanz.', 'Sie rollt sich ein und schläft.'], 'Dann lässt du sie lieber in Ruhe.'],
+  ['Was braucht ein Hamster in seinem Käfig?', '🐹', 'viel Einstreu zum Buddeln und ein Häuschen', ['einen Spiegel und eine Glocke', 'ein Becken zum Schwimmen', 'eine Lampe, die nachts leuchtet'], 'Hamster graben gern Gänge und verstecken Futter.'],
+  ['Wie oft muss der Stall von Kaninchen oder Meerschweinchen sauber gemacht werden?', '🧹', 'jeden Tag ein bisschen und einmal in der Woche gründlich', ['einmal im Jahr', 'nie, die Tiere machen das selbst', 'nur, wenn Besuch kommt'], 'Ein sauberer Stall hält die Tiere gesund.'],
+  ['Was braucht ein Hund beim Spaziergang in der Stadt?', '🦮', 'eine Leine', ['einen Käfig', 'ein Aquarium', 'einen Kratzbaum'], 'An der Leine bleibt der Hund sicher bei dir.'],
+  ['Was lernt ein Hund in der Hundeschule?', '🐕', 'auf Kommandos wie „Sitz“ und „Platz“ zu hören', ['lesen und schreiben', 'Fahrrad fahren', 'Katzen zu jagen'], 'Ein gut erzogener Hund ist für alle angenehmer.'],
+  ['Was fressen Katzen hauptsächlich?', '🐈', 'Fleisch, zum Beispiel Katzenfutter', ['nur Gras', 'Körner und Samen', 'nur Obst und Gemüse'], 'Katzen sind Fleischfresser.'],
+  ['Was solltest du einer Katze NICHT zu trinken geben?', '🥛', 'Kuhmilch', ['frisches Wasser aus dem Napf', 'Wasser aus einem Trinkbrunnen', 'Leitungswasser'], 'Viele Katzen bekommen von Kuhmilch Bauchweh. Wasser ist das richtige Getränk.'],
+  ['Wie heißt das Kind einer Katze?', '🐱', 'Kätzchen', ['Welpe', 'Küken', 'Fohlen'], 'Ein Hundekind heißt Welpe.'],
+  ['Wie alt werden Meerschweinchen ungefähr?', '🐹', 'etwa 6 bis 8 Jahre', ['etwa 1 Jahr', 'etwa 30 Jahre', 'etwa 100 Jahre'], 'Ein Haustier begleitet dich lange. Darum überlegt man vorher gut.'],
+  ['Was ist wichtig, bevor man sich ein Haustier anschafft?', '🏠', 'gut überlegen, ob man jeden Tag Zeit dafür hat', ['schnell eins kaufen, bevor es weg ist', 'nur die Lieblingsfarbe aussuchen', 'die Eltern nicht fragen'], 'Ein Tier braucht jeden Tag Futter, Pflege und Zuwendung, auch in den Ferien.'],
+  ['Wer kümmert sich um das Haustier, wenn die Familie verreist?', '🧳', 'Nachbarn, Freunde oder eine Tierpension', ['niemand, Tiere kommen allein zurecht', 'der Briefträger', 'das Tier bleibt einfach allein eingesperrt'], 'Plane das vorher, damit dein Tier gut versorgt ist.']
+]);
+k2Extra('haustiere', [
+  ['rf', 'Hunde dürfen ruhig Schokolade fressen.', false, 'Schokolade ist für Hunde giftig.', '🍫'],
+  ['rf', 'Katzen sind Fleischfresser.', true, 'Sie brauchen Fleisch, zum Beispiel aus gutem Katzenfutter.', '🐈'],
+  ['rf', 'Kaninchen leben am liebsten ganz allein.', false, 'Kaninchen brauchen andere Kaninchen als Gesellschaft.', '🐰'],
+  ['rf', 'Hamster sind vor allem abends und nachts wach.', true, 'Tagsüber schlafen sie. Weck sie nicht.', '🐹'],
+  ['z', 'Wer frisst was? Ordne zu.', [['Kaninchen', 'Heu und Grünfutter'], ['Katze', 'Fleisch'], ['Wellensittich', 'Körner'], ['Goldfisch', 'Fischfutter'], ['Hund', 'Hundefutter']]],
+  ['s', 'Was braucht welches Tier?', ['Hund', 'Fisch'], [['Leine', 0], ['Hundekorb', 0], ['Halsband', 0], ['Aquarium', 1], ['Wasserfilter', 1], ['Fischfutter', 1]]],
+  ['l', 'Setze die richtigen Wörter ein.', 'Ein Haustier braucht jeden Tag frisches ⟪Wasser⟫ und ⟪Futter⟫. Wenn es krank ist, hilft der ⟪Tierarzt⟫.', ['Schokolade', 'Bäcker']],
+  ['o', 'Den Kaninchenstall sauber machen: Bring die Schritte in die richtige Reihenfolge.', ['🐰 Kaninchen in den Auslauf setzen', '🧹 altes Stroh herausholen', '🌾 frisches Stroh und Heu einstreuen', '💧 Wasser auffüllen', '🏠 Kaninchen zurücksetzen']]
+]);
+
+
+K2_ALT.zyklus = 16;
+k2Neu(ZYKLEN, [
+  ['Vom Samen zur Bohne', ['🫘 Bohnensamen in die Erde stecken', '💧 gießen', '🌱 Der Keimling kommt heraus.', '🌿 Die Pflanze wächst und blüht.', 'Bohnen wachsen in Hülsen.'], 'Aus jeder Bohne kann eine neue Pflanze wachsen.'],
+  ['Vom Ei zum Marienkäfer', ['🥚 Ei', 'Larve', 'Puppe', '🐞 Marienkäfer'], 'Die Larve sieht ganz anders aus als der fertige Käfer.'],
+  ['Vom Ei zur Biene', ['🥚 Ei in der Wabe', 'Larve', 'Puppe', '🐝 Biene'], 'Arbeiterinnen füttern die Larven in den Waben.'],
+  ['Ein Tag', ['🌅 Morgen', '☀️ Mittag', '🌇 Abend', '🌙 Nacht'], 'Danach beginnt ein neuer Tag.'],
+  ['Von der Blüte zur Kirsche', ['🌸 Der Baum blüht.', '🐝 Bienen bestäuben die Blüten.', 'Kleine grüne Früchte wachsen.', '🍒 Die Kirschen werden rot und reif.'], 'Im Frühling blüht der Kirschbaum, im Sommer gibt es Kirschen.'],
+  ['Wie ein Eiszapfen wächst', ['❄️ Schnee liegt auf dem Dach.', '☀️ Tagsüber taut er.', '💧 Wasser tropft an der Dachkante.', '🧊 Nachts gefrieren die Tropfen.'], 'Tagsüber taut es, nachts friert es. So wird der Eiszapfen immer länger.'],
+  ['Wäsche waschen', ['👖 Die Hose ist schmutzig.', '🧺 Sie kommt in die Waschmaschine.', 'Sie trocknet auf der Leine.', 'Sie liegt gefaltet im Schrank.'], 'So wird Wäsche wieder sauber.']
+]);
+k2Extra('zyklus', [
+  ['rf', 'Aus einer Raupe wird ein Schmetterling.', true, 'Dazwischen verpuppt sie sich.', '🦋'],
+  ['rf', 'Kaulquappen leben an Land.', false, 'Kaulquappen leben im Wasser und atmen mit Kiemen.', '🐸'],
+  ['rf', 'Ein Küken schlüpft aus einem Ei.', true, 'Beim Huhn dauert das Brüten etwa 21 Tage.', '🐣'],
+  ['s', 'Schlüpft es aus einem Ei oder wird es lebend geboren?', ['schlüpft aus einem Ei', 'wird lebend geboren'], [['Huhn', 0], ['Frosch', 0], ['Schildkröte', 0], ['Pinguin', 0], ['Hund', 1], ['Kuh', 1], ['Mensch', 1], ['Delfin', 1]], 'Säugetiere wie Hund, Kuh, Mensch und Delfin bringen lebende Junge zur Welt.'],
+  ['z', 'Wer wird zu wem? Ordne zu.', [['Kaulquappe', 'Frosch'], ['Raupe', 'Schmetterling'], ['Küken', 'Huhn'], ['Fohlen', 'Pferd'], ['Larve', 'Marienkäfer']]]
+]);
+
+
+K2_ALT.tierewinter = 25;
+k2Neu(TW_TIERE, [
+  ['der Feldhamster', '🐹', 'Winterschlaf'], ['die Haselmaus', '🐭', 'Winterschlaf'], ['die Ringelnatter', '🐍', 'Winterstarre'], ['die Kröte', '🐸', 'Winterstarre'],
+  ['der Kuckuck', '🐦', 'zieht in den Süden'], ['der Spatz', '🐦', 'bleibt aktiv'], ['der Waschbär', '🦝', 'Winterruhe'], ['der Maulwurf', '🐾', 'bleibt aktiv']
+]);
+k2Neu(SU_WINTER, [
+  ['Was ist der Unterschied zwischen Winterschlaf und Winterruhe?', '💤', 'Beim Winterschlaf schläft das Tier fast durch, bei der Winterruhe wacht es öfter auf und frisst.', ['Es gibt keinen Unterschied.', 'Bei der Winterruhe fliegt das Tier in den Süden.', 'Beim Winterschlaf frisst das Tier jeden Tag.'], 'Eichhörnchen halten Winterruhe und holen sich Nüsse aus ihren Verstecken.'],
+  ['Was passiert bei der Winterstarre?', '🥶', 'Der Körper wird so kalt wie die Umgebung, und das Tier kann sich nicht bewegen.', ['Das Tier wird ganz heiß.', 'Das Tier rennt den ganzen Winter herum.', 'Das Tier baut ein Nest im Baum.'], 'Frösche, Eidechsen und Insekten fallen in Winterstarre.'],
+  ['Was passiert mit dem Herzschlag des Igels im Winterschlaf?', '🦔', 'Er wird ganz langsam.', ['Er wird sehr schnell.', 'Er bleibt genau gleich.', 'Er wird laut.'], 'So spart der Igel Kraft und lebt von seinem Fett.'],
+  ['Warum soll man einen Igel im Winterschlaf nicht wecken?', '🦔', 'Das Aufwachen kostet ihn viel Kraft und Fett.', ['Weil er dann beißt.', 'Weil er dann zu groß wird.', 'Weil er dann in den Süden fliegt.'], 'Lass Laubhaufen im Garten liegen. Darin überwintern Igel.'],
+  ['Wo verbringen Marienkäfer den Winter?', '🐞', 'in Gruppen unter Laub oder in Ritzen', ['in warmen Ländern', 'im Wasser', 'in Vogelnestern'], 'Dort fallen sie in Winterstarre.'],
+  ['Wie überleben Fische in einem zugefrorenen Teich?', '🐟', 'Am Grund bleibt das Wasser flüssig.', ['Sie frieren ein und tauen im Frühling wieder auf.', 'Sie fliegen weg.', 'Sie schlafen an Land.'], 'Ein tiefer Teich friert nicht bis zum Boden durch. Unten ist das Wasser etwa 4 Grad warm.'],
+  ['Was fressen Rehe im Winter, wenn Schnee liegt?', '🦌', 'Knospen, Zweige und trockenes Gras', ['Fische aus dem Teich', 'Insekten aus der Luft', 'gar nichts, sie halten Winterschlaf'], 'Sie scharren auch den Schnee weg, um an Pflanzen zu kommen.'],
+  ['Warum plustern sich Vögel im Winter auf?', '🐦', 'Zwischen den Federn bleibt warme Luft, das wärmt wie eine Daunenjacke.', ['Damit sie gefährlicher aussehen.', 'Damit sie schneller fliegen.', 'Damit sie leichter werden.'], 'Darum sehen Meisen im Winter oft ganz rund aus.']
+]);
+k2Extra('tierewinter', [
+  ['s', 'Wie verbringt das Tier den Winter?', ['Winterschlaf', 'Winterstarre', 'bleibt aktiv'], [['Igel', 0], ['Fledermaus', 0], ['Siebenschläfer', 0], ['Frosch', 1], ['Eidechse', 1], ['Marienkäfer', 1], ['Fuchs', 2], ['Reh', 2], ['Meise', 2]]],
+  ['rf', 'Eichhörnchen halten Winterschlaf.', false, 'Eichhörnchen halten Winterruhe. Sie wachen auf und fressen von ihren Vorräten.', '🐿️'],
+  ['rf', 'Ein Igel im Winterschlaf lebt von seinem Fett.', true, 'Darum frisst er sich im Herbst dick.', '🦔'],
+  ['rf', 'Schwalben bleiben den ganzen Winter bei uns.', false, 'Schwalben ziehen im Herbst nach Afrika, weil es hier keine Insekten mehr gibt.', '🐦']
+]);
+
+/*@@src k2_sach610b.js@@*/
+
+
+
+k2Neu(SU_WALD, [
+  ['An welchem Baum wachsen Eicheln?', '🌳', 'an der Eiche', ['an der Buche', 'an der Birke', 'an der Tanne'], 'Wildschweine und Eichelhäher fressen Eicheln gern.'],
+  ['Welcher Baum hat eine weiße Rinde mit schwarzen Flecken?', '🌳', 'die Birke', ['die Eiche', 'die Fichte', 'die Buche'], 'Birken erkennt man schon von Weitem.'],
+  ['Woran erkennst du, wie alt ein gefällter Baum war?', '🪵', 'an den Jahresringen im Stamm', ['an der Farbe der Blätter', 'an der Länge der Wurzeln', 'an der Zahl der Äste'], 'Jedes Jahr wächst ein neuer Ring dazu.'],
+  ['Was unterscheidet Laubbäume und Nadelbäume?', '🌲', 'Laubbäume haben Blätter, Nadelbäume haben Nadeln.', ['Laubbäume sind immer kleiner.', 'Nadelbäume wachsen nur am Meer.', 'Laubbäume haben keine Wurzeln.'], 'Die meisten Nadelbäume behalten ihre Nadeln auch im Winter.'],
+  ['Welcher Nadelbaum verliert im Herbst seine Nadeln?', '🌲', 'die Lärche', ['die Fichte', 'die Tanne', 'die Kiefer'], 'Die Lärche färbt sich im Herbst goldgelb und wirft ihre Nadeln ab.'],
+  ['Warum sind Waldameisen nützlich?', '🐜', 'Sie fressen Schädlinge und räumen den Waldboden auf.', ['Sie fällen Bäume.', 'Sie bauen Wege für Menschen.', 'Sie machen Honig.'], 'Darum stehen Waldameisen unter Schutz.'],
+  ['Was ist Moos?', '🌿', 'eine kleine, weiche Pflanze, die viel Wasser speichert', ['ein giftiger Pilz', 'eine Baumart', 'trockenes Gras'], 'Moos saugt Regenwasser auf wie ein Schwamm.'],
+  ['Warum ist der Wald für uns Menschen wichtig?', '🌳', 'Bäume machen Sauerstoff zum Atmen und filtern die Luft.', ['Im Wald wird das Wetter gemacht.', 'Nur im Wald wächst Getreide.', 'Der Wald macht die Nacht dunkel.'], 'Außerdem liefert der Wald Holz und ist das Zuhause vieler Tiere.'],
+  ['Welches Tier gräbt im Wald große Baue und hat einen schwarz-weiß gestreiften Kopf?', '🦡', 'der Dachs', ['der Fuchs', 'das Reh', 'das Eichhörnchen'], 'Ein Dachsbau hat viele Gänge und Ausgänge.'],
+  ['Wie heißt das Nest vom Eichhörnchen?', '🐿️', 'Kobel', ['Horst', 'Bau', 'Stall'], 'Der Kobel ist eine Kugel aus Zweigen und Moos hoch oben im Baum.'],
+  ['Was machst du mit Beeren im Wald, die du nicht kennst?', '🫐', 'nicht essen und einen Erwachsenen fragen', ['probieren, ob sie gut schmecken', 'nur die roten essen', 'nur die schwarzen essen'], 'Manche Beeren sind giftig, zum Beispiel die Tollkirsche.'],
+  ['Warum lässt der Förster manchmal alte, tote Bäume im Wald liegen?', '🪵', 'Darin wohnen viele Käfer, Pilze und andere Tiere.', ['Weil sie zu schwer zum Wegtragen sind.', 'Damit Kinder darauf klettern.', 'Weil sie bald wieder grün werden.'], 'Totholz ist ein wichtiges Zuhause im Wald.']
+]);
+k2Extra('wald', [
+  ['rf', 'Fichten und Tannen sind Nadelbäume.', true, 'Sie behalten ihre Nadeln auch im Winter.', '🌲'],
+  ['rf', 'Im Wald darf man überall ein Lagerfeuer machen.', false, 'Feuer ist im Wald verboten. Der Wald kann schnell brennen.', '🔥'],
+  ['rf', 'An der Buche wachsen Eicheln.', false, 'Eicheln wachsen an der Eiche, Bucheckern an der Buche.', '🌰'],
+  ['rf', 'Pilze, die man nicht kennt, lässt man stehen.', true, 'Viele Pilze sind giftig.', '🍄'],
+  ['s', 'Laubbaum oder Nadelbaum?', ['Laubbaum', 'Nadelbaum'], [['Eiche', 0], ['Buche', 0], ['Birke', 0], ['Ahorn', 0], ['Kastanie', 0], ['Fichte', 1], ['Tanne', 1], ['Kiefer', 1], ['Lärche', 1]]],
+  ['z', 'Welche Frucht gehört zu welchem Baum?', [['Eiche', 'Eicheln'], ['Buche', 'Bucheckern'], ['Fichte', 'Zapfen'], ['Ahorn', 'kleine Propeller'], ['Haselstrauch', 'Haselnüsse']]],
+  ['z', 'Wie heißen die Tierkinder im Wald?', [['Reh', 'Kitz'], ['Wildschwein', 'Frischling'], ['Fuchs', 'Welpe'], ['Hirsch', 'Kalb'], ['Hase', 'Junghase']]],
+  ['l', 'Die Stockwerke des Waldes. Setze die richtigen Wörter ein.', 'Ganz unten wachsen ⟪Moose⟫ und Pilze. Darüber stehen Kräuter und ⟪Sträucher⟫. Ganz oben sind die Kronen der ⟪Bäume⟫.', ['Wolken', 'Steine']]
+]);
+
+
+k2Neu(SU_WIESE, [
+  ['Wie viele Beine hat ein Insekt?', '🐞', '6', ['4', '8', '10'], 'Spinnen haben 8 Beine. Darum sind Spinnen keine Insekten.'],
+  ['Was sammeln Bienen in den Blüten?', '🐝', 'Nektar und Blütenstaub', ['Wasser und Erde', 'Blätter und Samen', 'fertigen Honig'], 'Aus dem Nektar machen sie im Bienenstock Honig.'],
+  ['Warum sind Bienen für uns so wichtig?', '🐝', 'Sie bestäuben Blüten, damit Obst wachsen kann.', ['Sie fressen Mücken.', 'Sie machen die Wiese grün.', 'Sie lockern die Erde.'], 'Ohne Bestäubung gäbe es viel weniger Äpfel, Kirschen und Erdbeeren.'],
+  ['Welche Blume hat gelbe Blüten und wird später zur Pusteblume?', '🌼', 'der Löwenzahn', ['das Gänseblümchen', 'der Klatschmohn', 'die Kornblume'], 'Pustest du, fliegen die Samen mit kleinen Schirmchen davon.'],
+  ['Welche Wiesenblume leuchtet knallrot?', '🌺', 'der Klatschmohn', ['die Kornblume', 'der Löwenzahn', 'das Gänseblümchen'], 'Die Kornblume ist blau.'],
+  ['Welches Tier frisst Blätter und trägt ein Haus auf dem Rücken?', '🐌', 'die Schnecke', ['der Käfer', 'die Ameise', 'der Regenwurm'], 'Nacktschnecken haben kein Haus.'],
+  ['Was macht der Regenwurm im Boden?', '🪱', 'Er lockert die Erde und macht sie fruchtbar.', ['Er frisst alle Wurzeln auf.', 'Er baut Netze unter der Erde.', 'Er sammelt Honig.'], 'Regenwürmer fressen Laub und Erde. Ihr Kot ist guter Dünger.'],
+  ['Woran erkennst du eine Hummel?', '🐝', 'Sie ist dick, pelzig und brummt laut.', ['Sie ist ganz dünn und grün.', 'Sie hat acht Beine.', 'Sie trägt ein Schneckenhaus.'], 'Hummeln fliegen schon, wenn es noch kühl ist.'],
+  ['Wie heißt das Zuhause der Honigbienen beim Imker?', '🍯', 'Bienenstock', ['Ameisenhaufen', 'Wespennest', 'Vogelhaus'], 'Der Imker kümmert sich um die Bienen und erntet den Honig.'],
+  ['Warum lassen manche Leute im Garten eine wilde Ecke wachsen?', '🌼', 'Damit Blumen blühen und Insekten Futter finden.', ['Weil Gras nicht nachwächst.', 'Damit die Wiese braun wird.', 'Weil Rasenmähen verboten ist.'], 'Wilde Ecken helfen Bienen und Schmetterlingen.'],
+  ['Wie viele Punkte hat der häufigste Marienkäfer bei uns?', '🐞', '7', ['2', '12', '20'], 'Er heißt Siebenpunkt. Die Punkte zeigen aber nicht das Alter.'],
+  ['Welches grüne Tier mit langen Fühlern zirpt auf der Wiese und springt weit?', '🦗', 'die Heuschrecke', ['die Ameise', 'der Marienkäfer', 'die Hummel'], 'Mit den langen Hinterbeinen springt sie viel weiter, als sie lang ist.']
+]);
+k2Extra('wiese', [
+  ['rf', 'Spinnen sind Insekten.', false, 'Spinnen haben acht Beine, Insekten haben sechs.', '🕷️'],
+  ['rf', 'Die Punkte auf dem Marienkäfer zeigen, wie alt er ist.', false, 'Die Zahl der Punkte zeigt die Art, nicht das Alter.', '🐞'],
+  ['rf', 'Bienen machen aus Nektar Honig.', true, 'Ein Bienenvolk sammelt dafür von sehr vielen Blüten.', '🍯'],
+  ['rf', 'Der Regenwurm ist gut für den Boden.', true, 'Er lockert die Erde und macht sie fruchtbar.', '🪱'],
+  ['s', 'Insekt oder kein Insekt?', ['Insekt', 'kein Insekt'], [['Biene', 0], ['Ameise', 0], ['Marienkäfer', 0], ['Schmetterling', 0], ['Heuschrecke', 0], ['Spinne', 1], ['Regenwurm', 1], ['Schnecke', 1], ['Assel', 1]], 'Insekten haben sechs Beine und drei Körperteile.'],
+  ['z', 'Wer macht was? Ordne zu.', [['Biene', 'sammelt Nektar'], ['Marienkäfer', 'frisst Blattläuse'], ['Spinne', 'baut ein Netz'], ['Regenwurm', 'lockert die Erde'], ['Heuschrecke', 'springt weit']]],
+  ['l', 'Setze die richtigen Wörter ein.', 'Ein Insekt hat ⟪sechs⟫ Beine. Sein Körper hat drei Teile: Kopf, ⟪Brust⟫ und Hinterleib. Viele Insekten können auch ⟪fliegen⟫.', ['acht', 'Schwanz']],
+  ['rf', 'Hummeln sind friedlich und stechen nur sehr selten.', true, 'Lass sie einfach in Ruhe weiterfliegen.', '🐝']
+]);
+
+
+k2Neu(SU_TEICH, [
+  ['Wo verbringt der Frosch den Winter?', '🐸', 'im Schlamm am Grund des Teiches oder unter Laub', ['in einem Vogelnest', 'in warmen Ländern', 'auf einem Seerosenblatt'], 'Dort fällt er in Winterstarre.'],
+  ['Wie atmet eine Kaulquappe?', '🐸', 'mit Kiemen, wie ein Fisch', ['mit einer Lunge, wie ein Mensch', 'durch einen Schnorchel', 'gar nicht'], 'Später wachsen dem Frosch Lungen, dann atmet er Luft.'],
+  ['Welcher Fisch lebt oft in Teichen?', '🐟', 'der Karpfen', ['der Hai', 'der Hering', 'der Kabeljau'], 'Karpfen leben im Süßwasser. Hai, Hering und Kabeljau leben im Meer.'],
+  ['Welches Insekt legt seine Eier ins Wasser und sticht uns im Sommer?', '🦟', 'die Mücke', ['die Biene', 'der Marienkäfer', 'die Ameise'], 'Mückenlarven leben im Wasser. Fische und Libellenlarven fressen sie.'],
+  ['Was ist Süßwasser?', '💧', 'Wasser ohne viel Salz, wie in Teichen und Flüssen', ['Wasser mit Zucker', 'Wasser aus dem Meer', 'Limonade'], 'Im Meer ist Salzwasser.'],
+  ['Welches Tier baut am Bach Dämme aus Ästen?', '🦫', 'der Biber', ['der Fischotter', 'die Ente', 'der Frosch'], 'So staut er das Wasser zu einem kleinen See.'],
+  ['Woran erkennst du eine Kröte?', '🐸', 'an der warzigen, trockenen Haut', ['an der glatten, grünen Haut', 'an den Flügeln', 'am langen Schwanz'], 'Frösche haben glatte, feuchte Haut und springen weit. Kröten krabbeln eher.'],
+  ['Warum wandern Kröten im Frühling über Straßen?', '🐸', 'Sie wandern zu ihrem Teich, um dort Laich abzulegen.', ['Sie suchen Futter in der Stadt.', 'Sie fliehen vor dem Regen.', 'Sie wollen in den Süden.'], 'Darum gibt es an manchen Straßen Krötenzäune.'],
+  ['Welcher Vogel schillert blau und orange und taucht blitzschnell nach Fischen?', '🐦', 'der Eisvogel', ['das Rotkehlchen', 'die Amsel', 'der Spatz'], 'Er sitzt still auf einem Ast über dem Wasser und wartet.'],
+  ['Welche Pflanze am Teichufer hat braune Kolben?', '🌾', 'der Rohrkolben', ['die Seerose', 'der Löwenzahn', 'die Tulpe'], 'Die Kolben sehen aus wie kleine Würstchen.'],
+  ['Was sind Wasserflöhe?', '💧', 'winzige Krebstiere, die Fische gern fressen', ['Flöhe, die auf Hunden leben', 'hüpfende Wassertropfen', 'kleine Fische'], 'Man sieht sie im Wasser herumhüpfen.'],
+  ['Wie nennt man Tiere wie Frösche und Molche, die im Wasser und an Land leben?', '🐸', 'Amphibien oder Lurche', ['Reptilien', 'Säugetiere', 'Insekten'], 'Sie legen ihren Laich ins Wasser.']
+]);
+k2Extra('teich', [
+  ['rf', 'Kaulquappen atmen mit Kiemen.', true, 'Später bekommen Frösche Lungen.', '🐸'],
+  ['rf', 'Karpfen leben im Meer.', false, 'Karpfen leben im Süßwasser, zum Beispiel im Teich.', '🐟'],
+  ['rf', 'Auf einen Teich darf man, sobald ein bisschen Eis zu sehen ist.', false, 'Dünnes Eis kann einbrechen. Das ist lebensgefährlich.', '🧊'],
+  ['rf', 'Der Biber baut Dämme aus Ästen.', true, 'Mit seinen Zähnen fällt er sogar Bäume.', '🦫'],
+  ['s', 'Lebt es im Teich oder im Meer?', ['im Teich', 'im Meer'], [['Karpfen', 0], ['Frosch', 0], ['Libellenlarve', 0], ['Molch', 0], ['Hai', 1], ['Qualle', 1], ['Seestern', 1], ['Wal', 1]]],
+  ['z', 'Was ist was am Teich? Ordne zu.', [['Erpel', 'männliche Ente'], ['Kaulquappe', 'junger Frosch'], ['Laich', 'Eier vom Frosch'], ['Seerose', 'schwimmende Pflanze'], ['Schilf', 'hohe Pflanze am Ufer']]],
+  ['l', 'Setze die richtigen Wörter ein.', 'Im Frühling legt der Frosch seinen ⟪Laich⟫ ins Wasser. Daraus schlüpfen ⟪Kaulquappen⟫. Sie bekommen Beine und werden zu kleinen ⟪Fröschen⟫.', ['Nester', 'Schnecken']]
+]);
+
+
+k2Neu(SU_SINNE, [
+  ['Mit welchem Sinnesorgan siehst du?', '👀', 'mit den Augen', ['mit den Ohren', 'mit der Nase', 'mit der Haut'], 'Die Augen sind die Sinnesorgane für das Sehen.'],
+  ['Wo fühlt deine Haut besonders fein?', '☝️', 'an den Fingerspitzen', ['an den Ellenbogen', 'am Rücken', 'an den Fersen'], 'In den Fingerspitzen sitzen besonders viele Tastkörperchen.'],
+  ['Was hilft, wenn du nicht gut sehen kannst?', '👓', 'eine Brille', ['ein Hörgerät', 'eine Mütze', 'ein Pflaster'], 'Ein Augenarzt prüft, ob du eine Brille brauchst.'],
+  ['Was hilft Menschen, die schlecht hören?', '👂', 'ein Hörgerät', ['eine Brille', 'ein Fernglas', 'eine Lupe'], 'Ein Hörgerät macht Töne lauter.'],
+  ['Was schützt deine Augen vor zu viel Sonne?', '😎', 'eine Sonnenbrille', ['ein Schal', 'Ohrenschützer', 'Handschuhe'], 'Gute Sonnenbrillen halten die gefährlichen UV-Strahlen ab.'],
+  ['Welcher Sinn warnt dich vor verbranntem Essen, noch bevor du es siehst?', '👃', 'der Geruchssinn', ['der Tastsinn', 'der Hörsinn', 'der Gleichgewichtssinn'], 'Die Nase warnt auch bei Rauch und verdorbenem Essen.'],
+  ['Was passiert, wenn du dir beim Essen die Nase zuhältst?', '👃', 'Du schmeckst viel weniger.', ['Du schmeckst alles süßer.', 'Du hörst schlechter.', 'Du siehst nichts mehr.'], 'Nase und Zunge arbeiten beim Schmecken zusammen.'],
+  ['Wie schmeckt eine Zitrone?', '🍋', 'sauer', ['süß', 'salzig', 'scharf'], 'Honig ist süß, Brezeln sind salzig.'],
+  ['Welches Tier hört so gut, dass es nachts eine Maus unter dem Laub findet?', '🦉', 'die Eule', ['die Kuh', 'das Huhn', 'der Goldfisch'], 'Eulen fliegen fast lautlos und hören sehr gut.'],
+  ['Womit tasten Katzen im Dunkeln?', '🐈', 'mit ihren Schnurrhaaren', ['mit den Ohren', 'mit der Zunge', 'mit den Krallen'], 'Die Schnurrhaare spüren schon kleinste Luftbewegungen.'],
+  ['Mit welchem Sinn findest du im Dunkeln den Lichtschalter?', '🖐️', 'mit dem Tastsinn', ['mit dem Sehsinn', 'mit dem Geschmackssinn', 'mit dem Geruchssinn'], 'Deine Finger fühlen, wo der Schalter ist.'],
+  ['Was nimmst du mit dem Hörsinn wahr?', '👂', 'Geräusche, Stimmen und Musik', ['Farben und Formen', 'Düfte und Gerüche', 'Wärme und Kälte'], 'Das Ohr nimmt Schall auf.']
+]);
+k2Extra('sinne', [
+  ['s', 'Welcher Sinn hilft dir?', ['sehen', 'hören', 'riechen'], [['Regenbogen', 0], ['Ampelfarbe', 0], ['Vogelgesang', 1], ['Klingel', 1], ['Donner', 1], ['Blumenduft', 2], ['Rauch', 2], ['frisches Brot', 2]]],
+  ['z', 'Welches Sinnesorgan gehört zu welchem Sinn?', [['Augen', 'sehen'], ['Ohren', 'hören'], ['Nase', 'riechen'], ['Zunge', 'schmecken'], ['Haut', 'fühlen']]],
+  ['z', 'Wie schmeckt das? Ordne zu.', [['Zitrone', 'sauer'], ['Honig', 'süß'], ['Brezel', 'salzig'], ['Kaffee', 'bitter']]],
+  ['rf', 'Mit der Haut kannst du Wärme und Kälte fühlen.', true, 'Die Haut ist das größte Sinnesorgan.', '🖐️'],
+  ['rf', 'Eine Brille hilft Menschen, die schlecht hören.', false, 'Eine Brille hilft beim Sehen. Beim Hören hilft ein Hörgerät.', '👓'],
+  ['rf', 'Nase und Zunge arbeiten beim Schmecken zusammen.', true, 'Darum schmeckt Essen bei Schnupfen fade.', '👅'],
+  ['rf', 'Hunde riechen schlechter als Menschen.', false, 'Hunde riechen viel besser als Menschen.', '🐕'],
+  ['l', 'Setze die richtigen Wörter ein.', 'Wir haben fünf Sinne. Mit den Augen ⟪sehen⟫ wir, mit den Ohren ⟪hören⟫ wir, und mit der Nase ⟪riechen⟫ wir.', ['laufen', 'malen']]
+]);
+
+
+k2Neu(SU_ZAEHNE, [
+  ['Wann solltest du Zähne putzen?', '🪥', 'morgens nach dem Frühstück und abends vor dem Schlafen', ['nur am Wochenende', 'nur, wenn sie wehtun', 'einmal in der Woche'], 'Abends ist besonders wichtig, damit über Nacht keine Essensreste bleiben.'],
+  ['Wie viel Zahnpasta brauchst du auf der Bürste?', '🪥', 'etwa so viel wie eine Erbse', ['die ganze Bürste voll', 'eine halbe Tube', 'gar keine'], 'Mehr braucht man nicht.'],
+  ['Was machst du nach dem Putzen mit dem Zahnpastaschaum?', '🪥', 'ausspucken', ['runterschlucken', 'im Mund lassen', 'zurück in die Tube drücken'], 'Zahnpasta ist nicht zum Essen da.'],
+  ['Welche Getränke schaden den Zähnen, wenn man sie oft trinkt?', '🥤', 'Limo und süßer Saft', ['Wasser', 'ungesüßter Tee', 'Mineralwasser'], 'Zucker und Säure greifen den Zahnschmelz an.'],
+  ['Was macht die Zahnärztin bei einem kleinen Loch im Zahn?', '🦷', 'Sie macht es sauber und verschließt es mit einer Füllung.', ['Sie zieht immer den Zahn heraus.', 'Sie malt den Zahn weiß an.', 'Sie klebt ein Pflaster darauf.'], 'Wer regelmäßig zur Kontrolle geht, hat meistens nur kleine Löcher.'],
+  ['Wie heißen die hintersten Backenzähne, die erst bei Erwachsenen kommen?', '🦷', 'Weisheitszähne', ['Milchzähne', 'Eckzähne', 'Schneidezähne'], 'Manchmal wachsen sie gar nicht.'],
+  ['Wozu ist eine Zahnspange da?', '😁', 'Sie bringt schiefe Zähne langsam an die richtige Stelle.', ['Sie macht Zähne weiß.', 'Sie putzt die Zähne von allein.', 'Sie schützt beim Boxen.'], 'Eine Zahnspange bekommt man beim Kieferorthopäden.'],
+  ['Was kannst du nach dem Essen tun, wenn du keine Zahnbürste dabeihast?', '💧', 'den Mund mit Wasser ausspülen', ['Bonbons lutschen', 'Limonade trinken', 'Schokolade essen'], 'Zuckerfreier Kaugummi hilft auch ein wenig.'],
+  ['Welcher bleibende Zahn kommt meist als erster ganz hinten hinter den Milchzähnen?', '🦷', 'der Sechsjahresbackenzahn', ['der Weisheitszahn', 'der Eckzahn', 'der Schneidezahn'], 'Er wird leicht übersehen. Darum gut nach hinten putzen!'],
+  ['Warum heißen Milchzähne so?', '🥛', 'Sie kommen, wenn Babys noch Milch trinken, und sind weiß wie Milch.', ['Weil man sie mit Milch putzt.', 'Weil sie aus Milch bestehen.', 'Weil man sie im Milchladen kauft.'], 'Babys bekommen die ersten Zähne mit etwa einem halben Jahr.'],
+  ['Was tust du, wenn dir ein Zahn wehtut?', '😣', 'den Eltern Bescheid sagen und zum Zahnarzt gehen', ['abwarten, bis es vorbei ist', 'mehr Süßes essen', 'nicht mehr putzen'], 'Zahnschmerzen gehen meist nicht von allein weg.'],
+  ['Wie lange kann ein bleibender Zahn halten?', '🦷', 'ein Leben lang, wenn man ihn gut pflegt', ['nur ein Jahr', 'bis man zehn Jahre alt ist', 'er wächst immer wieder nach'], 'Nach den bleibenden Zähnen kommen keine neuen mehr.']
+]);
+k2Extra('zaehne', [
+  ['rf', 'Zahnpasta schluckt man nach dem Putzen herunter.', false, 'Zahnpasta spuckt man aus.', '🪥'],
+  ['rf', 'Milchzähne fallen aus, und bleibende Zähne wachsen nach.', true, 'Das beginnt meistens mit etwa sechs Jahren.', '🦷'],
+  ['rf', 'Bleibende Zähne wachsen nach, wenn sie kaputtgehen.', false, 'Bleibende Zähne wachsen nicht nach. Darum pflegt man sie gut.', '🦷'],
+  ['rf', 'Abends Zähne putzen ist besonders wichtig.', true, 'Sonst bleiben die ganze Nacht Essensreste an den Zähnen.', '🌙'],
+  ['s', 'Gut oder schlecht für die Zähne?', ['gut für die Zähne', 'schlecht für die Zähne'], [['Wasser', 0], ['Möhre', 0], ['Käse', 0], ['Zahnseide', 0], ['Gummibärchen', 1], ['Limonade', 1], ['Lutscher', 1], ['Cola', 1]]],
+  ['z', 'Wozu ist welcher Zahn da?', [['Schneidezähne', 'abbeißen'], ['Eckzähne', 'festhalten und abreißen'], ['Backenzähne', 'kauen und zermahlen']]],
+  ['o', 'Zähneputzen nach KAI: Was putzt du zuerst?', ['Kauflächen', 'Außenflächen', 'Innenflächen'], 'KAI heißt: erst die Kauflächen, dann die Außenflächen, dann die Innenflächen.']
+]);
+
+
+k2Neu(SU_MITEINANDER, [
+  ['Was ist ein gutes Geheimnis?', '🎁', 'eine Überraschung zum Geburtstag', ['etwas, das dir Angst macht', 'etwas, das dir Bauchweh macht', 'etwas, bei dem dir jemand wehtut'], 'Gute Geheimnisse machen Freude. Schlechte Geheimnisse darfst du immer erzählen.'],
+  ['Wer kann dir helfen, wenn du Sorgen hast?', '🤝', 'Eltern, Lehrkräfte oder andere Erwachsene, denen du vertraust', ['niemand, das musst du allein schaffen', 'nur Fremde im Internet', 'nur andere Kinder, nie Erwachsene'], 'Es gibt auch die Nummer gegen Kummer: 116 111. Der Anruf ist kostenlos.'],
+  ['Was passiert im Klassenrat?', '🗣️', 'Die Kinder besprechen gemeinsam Probleme und Ideen der Klasse.', ['Die Lehrerin schreibt Noten.', 'Es wird ein Diktat geschrieben.', 'Alle spielen Fußball.'], 'Jeder darf etwas sagen, und alle hören zu.'],
+  ['Was bedeutet Mitbestimmen?', '✋', 'Man darf bei Entscheidungen mitreden.', ['Einer bestimmt alles allein.', 'Man muss immer still sein.', 'Nur Erwachsene dürfen etwas sagen.'], 'In der Klasse kann man zum Beispiel über einen Ausflug abstimmen.'],
+  ['Ein Kind ist neu in der Klasse. Was ist nett?', '👋', 'es ansprechen und zum Mitspielen einladen', ['es in der Pause allein lassen', 'über seine Kleidung lachen', 'es nicht beachten'], 'So fühlt es sich schnell wohl.'],
+  ['Wo stehen die Rechte für alle Kinder der Welt?', '📜', 'in der UN-Kinderrechtskonvention', ['im Kochbuch', 'im Stundenplan', 'auf dem Einkaufszettel'], 'Fast alle Länder der Welt haben sie unterschrieben.'],
+  ['Jemand im Internet fragt nach deiner Adresse. Was tust du?', '💻', 'nichts verraten und den Eltern Bescheid sagen', ['die Adresse sofort schicken', 'ein Foto von deinem Haus schicken', 'ein Treffen ausmachen'], 'Persönliche Daten bleiben geheim.'],
+  ['Was ist Mobbing?', '😟', 'wenn ein Kind immer wieder von anderen geärgert oder ausgeschlossen wird', ['ein lustiges Spiel', 'ein Streit, der einmal vorkommt und dann vorbei ist', 'wenn Kinder zusammen lernen'], 'Wenn du Mobbing bemerkst, hol Hilfe bei einem Erwachsenen.'],
+  ['Was ist ein Kompromiss?', '🤝', 'Beide geben ein bisschen nach und finden eine Lösung.', ['Einer gewinnt, der andere verliert.', 'Beide hören auf zu reden.', 'Man streitet noch lauter.'], 'Zum Beispiel: Erst spielt ihr Fangen, dann Verstecken.'],
+  ['Was bedeutet Gleichberechtigung?', '⚖️', 'Mädchen und Jungen haben die gleichen Rechte.', ['Jungen dürfen mehr als Mädchen.', 'Mädchen dürfen mehr als Jungen.', 'Nur Erwachsene haben Rechte.'], 'Alle Menschen sind gleich viel wert.'],
+  ['Ein fremder Erwachsener will, dass du mit ihm mitkommst. Was tust du?', '🚫', 'Nein sagen, weggehen und es sofort einem vertrauten Erwachsenen erzählen', ['mitgehen, wenn er nett ist', 'mitgehen, wenn er Süßigkeiten hat', 'einfach stehen bleiben und warten'], 'Du gehst nie mit Fremden mit, auch wenn sie sagen, deine Eltern hätten sie geschickt.'],
+  ['Was hilft, wenn du richtig wütend bist?', '😤', 'tief durchatmen und erst dann reden', ['sofort zuschlagen', 'Sachen kaputt machen', 'den anderen anschreien'], 'Du darfst wütend sein. Wichtig ist, dass du niemandem wehtust.']
+]);
+k2Extra('miteinander', [
+  ['rf', 'Schlechte Geheimnisse darf man immer einem Erwachsenen erzählen.', true, 'Das ist kein Petzen. Es ist Hilfe holen.', '🤝'],
+  ['rf', 'Kinder haben ein Recht auf Spielen und Freizeit.', true, 'Das steht in den Kinderrechten.', '⚽'],
+  ['rf', 'Mit Fremden geht man mit, wenn sie nett fragen.', false, 'Du gehst nie mit Fremden mit.', '🚫'],
+  ['rf', 'Bei einem Kompromiss bekommt einer alles.', false, 'Bei einem Kompromiss geben beide ein bisschen nach.', '🤝'],
+  ['s', 'Gutes oder schlechtes Geheimnis?', ['gutes Geheimnis', 'schlechtes Geheimnis'], [['ein Geschenk für Mama', 0], ['eine Überraschungsparty', 0], ['ein Versteck beim Spielen', 0], ['jemand tut dir weh', 1], ['jemand droht dir', 1], ['etwas macht dir Angst', 1]], 'Schlechte Geheimnisse darfst du immer weitersagen.'],
+  ['s', 'Bedürfnis oder Wunsch?', ['Bedürfnis', 'Wunsch'], [['Essen', 0], ['Trinkwasser', 0], ['ein Zuhause', 0], ['Schlaf', 0], ['eine Spielkonsole', 1], ['ein eigenes Handy', 1], ['ein Pony', 1], ['ein Eis', 1]], 'Bedürfnisse braucht jeder Mensch zum Leben. Wünsche sind schön, aber nicht nötig.'],
+  ['z', 'Was bedeutet das? Ordne zu.', [['Respekt', 'andere gut behandeln'], ['Kompromiss', 'beide geben nach'], ['Wahl', 'alle stimmen ab'], ['Regel', 'sagt, was erlaubt ist'], ['Recht', 'steht dir zu']]]
+]);
+
+
+K2_ALT.frueher = 16;
+k2Neu(SU_FRUEHER, [
+  ['Womit hat man fotografiert, bevor es Handys gab?', '📷', 'mit einer Kamera und einem Film', ['mit einem Tablet', 'mit einer Smartwatch', 'mit dem Fernseher'], 'Die Bilder musste man im Fotoladen entwickeln lassen.'],
+  ['Wie hörten Menschen früher Musik zu Hause?', '📻', 'mit Schallplatten und dem Radio', ['mit Musik auf dem Handy', 'mit kabellosen Kopfhörern', 'mit dem Tablet'], 'Später kamen Kassetten und CDs dazu.'],
+  ['Wie hat man sich Nachrichten geschickt, bevor es E-Mails gab?', '✉️', 'mit Briefen und Postkarten', ['mit Sprachnachrichten', 'per Videoanruf', 'mit dem Computer'], 'Briefe schreibt man auch heute noch.'],
+  ['Womit wurde früher in vielen Küchen gekocht?', '🔥', 'auf einem Herd mit Holz oder Kohle', ['auf einem Induktionsherd', 'in der Mikrowelle', 'in der Heißluftfritteuse'], 'Man musste erst ein Feuer anzünden.'],
+  ['Womit spielten Kinder früher oft draußen?', '🪀', 'mit Murmeln, Seilen und Kreiseln', ['mit Spielkonsolen', 'mit Tablets', 'mit Videospielen'], 'Viele dieser Spiele kennst du sicher auch.'],
+  ['Wie sah ein Klassenzimmer vor 100 Jahren oft aus?', '🏫', 'Viele Kinder saßen in Reihen an Holzbänken.', ['Jedes Kind hatte ein Tablet.', 'Es gab eine digitale Tafel.', 'Die Kinder saßen auf Sitzsäcken.'], 'In einer Klasse waren manchmal über 50 Kinder.'],
+  ['Wie wurde früher geheizt?', '🔥', 'mit einem Ofen, in dem Holz oder Kohle brannte', ['mit einer Wärmepumpe', 'mit Fußbodenheizung', 'mit Strom vom Dach'], 'Oft war nur ein Zimmer im Haus warm.'],
+  ['Was ist ein Museum?', '🏛️', 'ein Haus, in dem alte und besondere Dinge gezeigt werden', ['ein Laden für neue Spielsachen', 'eine Schule für Erwachsene', 'ein großer Bahnhof'], 'Im Museum sieht man, wie Menschen früher gelebt haben.'],
+  ['Was ist eine Zeitleiste?', '📏', 'eine Linie, auf der Ereignisse der Reihe nach stehen', ['ein Lineal für die Uhr', 'ein Stundenplan', 'eine Einkaufsliste'], 'Links steht, was früher war, rechts, was später kam.'],
+  ['Wer kann dir gut erzählen, wie es früher war?', '👵', 'Oma, Opa oder andere ältere Menschen', ['ein kleines Baby', 'dein jüngstes Geschwisterkind', 'dein Kuscheltier'], 'Frag sie doch mal nach ihrer Schulzeit!'],
+  ['Wie nennen Forscher alte Dinge, aus denen man etwas über früher erfährt?', '🏺', 'Quellen', ['Pfützen', 'Wolken', 'Rezepte'], 'Alte Fotos, Briefe, Werkzeuge und Gebäude sind Quellen.'],
+  ['Wie kaufte man früher meistens ein?', '🛒', 'In kleinen Läden holte der Kaufmann die Waren aus dem Regal.', ['Man bestellte alles im Internet.', 'Man bezahlte an einer Selbstbedienungskasse.', 'Man scannte alles mit dem Handy.'], 'Supermärkte, in denen man sich selbst bedient, gibt es bei uns erst seit etwa 70 Jahren.']
+]);
+k2Neu(FRUEHER_ORDER, [
+  ['Telefonieren, von früher bis heute', ['☎️ Telefon mit Wählscheibe', '📞 Telefon mit Tasten', 'Handy mit Tasten', '📱 Smartphone']],
+  ['Musik hören, von früher bis heute', ['Grammofon', '📻 Kassettenrekorder', '💿 CD-Spieler', '📱 Musik auf dem Handy']],
+  ['Schreiben, von früher bis heute', ['🪶 Feder und Tinte', '⌨️ Schreibmaschine', '💻 Computer', '📱 Tippen auf dem Tablet']]
+]);
+k2Extra('frueher', [
+  ['rf', 'Früher gab es noch keine Handys.', true, 'Handys gibt es erst seit etwa 30 Jahren für alle.', '☎️'],
+  ['rf', 'Vor 100 Jahren hatten viele Kinder ein Tablet.', false, 'Damals schrieben Kinder auf Schiefertafeln.', '🏫'],
+  ['rf', 'Ein Jahrhundert sind 100 Jahre.', true, 'Ein Jahrzehnt sind 10 Jahre.', '📅'],
+  ['s', 'Früher oder heute?', ['früher', 'heute'], [['Waschbrett', 0], ['Schiefertafel', 0], ['Kutsche', 0], ['Öllampe', 0], ['Waschmaschine', 1], ['Smartphone', 1], ['Elektroauto', 1], ['LED-Lampe', 1]]],
+  ['z', 'Was benutzte man früher, was heute? Ordne zu.', [['Kutsche', 'Auto'], ['Waschbrett', 'Waschmaschine'], ['Schiefertafel', 'Heft'], ['Öllampe', 'Glühbirne'], ['Brief', 'E-Mail']]],
+  ['l', 'Setze die richtigen Wörter ein.', 'Was schon passiert ist, nennt man ⟪Vergangenheit⟫. Was jetzt passiert, ist die ⟪Gegenwart⟫. Was noch kommt, ist die ⟪Zukunft⟫.', ['Jahrhundert', 'Kalender']]
+]);
+
+
+K2_ALT.kornbrot = 15;
+k2Neu(SU_KORN, [
+  ['Was steckt in einem Getreidekorn?', '🌾', 'Mehl und ein Keim für eine neue Pflanze', ['Saft und Kerne', 'Luft und Wasser', 'Zucker und Salz'], 'Wird ein Korn ausgesät, wächst daraus eine neue Pflanze.'],
+  ['Welches Getreide hat lange Grannen, die wie Haare aussehen?', '🌾', 'die Gerste', ['der Mais', 'der Reis', 'der Hafer'], 'Grannen sind lange, dünne Borsten an der Ähre.'],
+  ['Wann wird bei uns das Getreide geerntet?', '🚜', 'im Sommer', ['im Winter', 'im Frühling', 'jeden Monat'], 'Wenn die Ähren goldgelb und trocken sind, fährt der Mähdrescher.'],
+  ['Was bleibt nach der Getreideernte auf dem Feld liegen?', '🌾', 'Stroh, die trockenen Halme', ['Heu, getrocknetes Gras', 'Mehl', 'Brot'], 'Stroh wird zu Ballen gepresst und als Einstreu für Tiere genutzt.'],
+  ['Wer backt in der Bäckerei das Brot, oft schon mitten in der Nacht?', '🥖', 'der Bäcker oder die Bäckerin', ['der Müller', 'der Bauer', 'der Metzger'], 'Damit morgens frische Brötchen da sind, beginnen Bäcker sehr früh.'],
+  ['Wer mahlt das Korn zu Mehl?', '⚙️', 'der Müller oder die Müllerin', ['der Bäcker', 'der Förster', 'der Fischer'], 'Heute arbeiten in großen Mühlen Maschinen.'],
+  ['Was passiert mit dem Brotteig im Ofen?', '♨️', 'Er wird fest und bekommt eine knusprige Kruste.', ['Er wird flüssig.', 'Er wird wieder zu Mehl.', 'Er friert ein.'], 'Die Hitze backt den Teig zu Brot.'],
+  ['Woraus macht man Nudeln?', '🍝', 'aus Mehl oder Grieß, Wasser und manchmal Eiern', ['aus Kartoffeln und Zucker', 'aus Reis und Milch', 'aus Äpfeln und Salz'], 'Für viele Nudeln nimmt man Grieß aus Hartweizen.']
+]);
+k2Neu(KB_KETTEN, [
+  ['Vom Apfel zum Apfelsaft', ['🍎 Äpfel pflücken', '🧺 Äpfel waschen', '⚙️ Äpfel zerkleinern und pressen', '🧃 Saft in Flaschen füllen']],
+  ['Von der Kakaobohne zur Schokolade', ['🌳 Kakaofrüchte wachsen am Baum.', '☀️ Die Bohnen trocknen in der Sonne.', '🔥 Die Bohnen werden geröstet und gemahlen.', '🍫 Mit Zucker und Milch wird Schokolade daraus.']],
+  ['Von der Kartoffel zu Pommes', ['🥔 Kartoffeln ernten', '🔪 schälen', '🍟 in Stifte schneiden', '♨️ backen oder frittieren']]
+]);
+k2Extra('kornbrot', [
+  ['rf', 'Mehl wird in der Mühle gemahlen.', true, 'Die Körner werden fein zerrieben.', '⚙️'],
+  ['rf', 'Die Kartoffel ist ein Getreide.', false, 'Die Kartoffel ist eine Knolle. Getreide sind zum Beispiel Weizen und Roggen.', '🥔'],
+  ['s', 'Getreide oder kein Getreide?', ['Getreide', 'kein Getreide'], [['Weizen', 0], ['Roggen', 0], ['Hafer', 0], ['Gerste', 0], ['Mais', 0], ['Kartoffel', 1], ['Möhre', 1], ['Erbse', 1], ['Zuckerrübe', 1]]],
+  ['z', 'Wer macht was? Ordne zu.', [['Bauer', 'sät und erntet'], ['Müller', 'mahlt das Mehl'], ['Bäcker', 'backt das Brot'], ['Mähdrescher', 'erntet das Korn']]]
+]);
+
+
+K2_ALT.bauernhof = 17;
+k2Neu(SU_BAUERNHOF, [
+  ['Wie heißt das Junge vom Schaf?', '🐑', 'Lamm', ['Kalb', 'Ferkel', 'Fohlen'], 'Lämmer kommen meist im Frühling auf die Welt.'],
+  ['Wie heißt das männliche Huhn?', '🐓', 'Hahn', ['Erpel', 'Ganter', 'Bock'], 'Der Hahn kräht oft schon am frühen Morgen.'],
+  ['Wie heißt das weibliche Schwein?', '🐖', 'Sau', ['Kuh', 'Stute', 'Henne'], 'Das männliche Schwein heißt Eber.'],
+  ['Wie heißt das weibliche Pferd?', '🐴', 'Stute', ['Sau', 'Henne', 'Ziege'], 'Das männliche Pferd heißt Hengst.'],
+  ['Warum wälzen sich Schweine im Schlamm?', '🐖', 'Der Schlamm kühlt sie und schützt vor Sonnenbrand.', ['Weil sie gern schmutzig sind.', 'Weil sie dort Futter finden.', 'Weil sie schwimmen lernen.'], 'Schweine können kaum schwitzen.'],
+  ['Wozu braucht der Bauer einen Traktor?', '🚜', 'Er zieht den Pflug und andere Geräte.', ['Er melkt damit die Kühe.', 'Er mahlt damit das Mehl.', 'Er schert damit die Schafe.'], 'Mit dem Pflug wird der Boden gelockert.'],
+  ['Wie oft am Tag werden Kühe meistens gemolken?', '🐄', 'zweimal', ['einmal in der Woche', 'zehnmal', 'nur im Winter'], 'Heute helfen oft Melkmaschinen oder Melkroboter.'],
+  ['Was ist Heu?', '🌾', 'getrocknetes Gras', ['getrocknete Getreidehalme', 'frisches Gemüse', 'gemahlene Körner'], 'Heu ist Winterfutter für Kühe, Pferde und Kaninchen. Getrocknete Getreidehalme heißen Stroh.'],
+  ['Was frisst ein Huhn?', '🐔', 'Körner, Grünzeug und kleine Tiere wie Würmer', ['nur Heu', 'nur Fleisch', 'nur Steine'], 'Kleine Steinchen picken Hühner trotzdem. Die helfen im Magen beim Zerkleinern.'],
+  ['Wo schlafen Hühner nachts?', '🐔', 'auf Stangen im Hühnerstall', ['im Kobel', 'im Horst', 'in einem Erdbau'], 'Auf den Stangen fühlen sie sich sicher.']
+]);
+k2Neu(BAUERNHOF_ORDER, [
+  ['Vom Gras zum Heu', ['🌿 Gras wächst auf der Wiese.', '🚜 Das Gras wird gemäht.', '☀️ Es trocknet in der Sonne.', '🌾 Das Heu wird zu Ballen gepresst.']],
+  ['Vom Huhn zum Frühstücksei', ['🐔 Das Huhn legt ein Ei.', '🧺 Die Eier werden eingesammelt.', '📦 Sie kommen in Eierkartons.', '🍳 Zum Frühstück wird ein Ei gekocht.']]
+]);
+k2Extra('bauernhof', [
+  ['s', 'Was bekommen wir von welchem Tier?', ['Kuh', 'Huhn', 'Schaf'], [['Milch', 0], ['Käse', 0], ['Butter', 0], ['Eier', 1], ['Federn', 1], ['Wolle', 2]]],
+  ['z', 'Wie heißt das Tierkind? Ordne zu.', [['Kuh', 'Kalb'], ['Schwein', 'Ferkel'], ['Schaf', 'Lamm'], ['Pferd', 'Fohlen'], ['Huhn', 'Küken'], ['Ziege', 'Zicklein']]],
+  ['z', 'Weibchen und Männchen: Ordne zu.', [['Kuh', 'Bulle'], ['Henne', 'Hahn'], ['Stute', 'Hengst'], ['Sau', 'Eber'], ['Schaf', 'Widder']]],
+  ['rf', 'Heu ist getrocknetes Gras.', true, 'Stroh sind die trockenen Halme vom Getreide.', '🌾'],
+  ['rf', 'Schweine wälzen sich im Schlamm, weil er sie kühlt.', true, 'Schweine können kaum schwitzen.', '🐖'],
+  ['rf', 'Von der Kuh bekommen wir Wolle.', false, 'Wolle kommt vom Schaf. Von der Kuh bekommen wir Milch.', '🐄']
+]);
+
+
+k2Neu(TIERE_HAB, [
+  ['der Dachs', '🦡', 'wald'], ['der Hirsch', '🦌', 'wald'], ['der Specht', '🐦', 'wald'],
+  ['der Delfin', '🐬', 'meer'], ['die Qualle', '🪼', 'meer'], ['der Seestern', '⭐', 'meer'],
+  ['das Schaf', '🐑', 'hof'], ['die Ziege', '🐐', 'hof'], ['das Pferd', '🐴', 'hof'],
+  ['das Dromedar', '🐪', 'wueste'], ['der Wüstenfuchs', '🦊', 'wueste'],
+  ['das Walross', '🦭', 'pol'], ['der Polarfuchs', '🦊', 'pol'],
+  ['der Molch', '🦎', 'teich'], ['der Karpfen', '🐟', 'teich'],
+  ['der Gorilla', '🦍', 'regenwald'], ['der Orang-Utan', '🦧', 'regenwald'], ['der Tukan', '🐦', 'regenwald']
+]);
+
+
+k2Neu(MUELL, [
+  ['🍊', 'Orangenschalen', 'bio'], ['🌿', 'Rasenschnitt und Laub', 'bio'], ['🍵', 'benutzter Teebeutel', 'bio'], ['🥖', 'altes, hartes Brot', 'bio'],
+  ['🛍️', 'Papiertüte', 'papier'], ['🥚', 'Eierkarton aus Pappe', 'papier'], ['📄', 'bemaltes Malpapier', 'papier'], ['🧻', 'leere Klopapierrolle', 'papier'],
+  ['🥛', 'leerer Joghurtbecher', 'gelb'], ['🧴', 'leere Zahnpastatube', 'gelb'], ['🛍️', 'Plastiktüte', 'gelb'], ['🍾', 'Kronkorken', 'gelb'], ['🥫', 'Alufolie', 'gelb'],
+  ['🍯', 'leeres Honigglas', 'glas'], ['🫙', 'leeres Senfglas', 'glas'],
+  ['🧽', 'alter Spülschwamm', 'rest'], ['🖼️', 'altes Foto', 'rest'], ['🍽️', 'zerbrochener Teller', 'rest'], ['🖊️', 'leerer Kugelschreiber', 'rest'], ['🥃', 'zerbrochenes Trinkglas', 'rest']
+]);
+
+
+K2_ALT.koerper = 22;
+k2Neu(SU_KOERPER, [
+  ['Wo kannst du deinen Herzschlag gut fühlen?', '❤️', 'am Handgelenk oder am Hals', ['an den Haaren', 'an den Fingernägeln', 'an den Ohrläppchen'], 'Dort fühlst du den Puls. Zähl mal, wie oft er in einer Minute schlägt!'],
+  ['Was macht das Gehirn?', '🧠', 'Es denkt, erinnert sich und steuert den ganzen Körper.', ['Es pumpt das Blut.', 'Es verdaut das Essen.', 'Es atmet die Luft ein.'], 'Das Gehirn ist die Schaltzentrale des Körpers.'],
+  ['Wie heißen die Stellen, an denen sich Knochen bewegen lassen, zum Beispiel das Knie?', '🦵', 'Gelenke', ['Muskeln', 'Sehnen', 'Adern'], 'Ellenbogen, Knie und Schulter sind Gelenke.'],
+  ['Was bringt das Blut zu allen Teilen deines Körpers?', '🩸', 'Sauerstoff und Nährstoffe', ['Gedanken und Träume', 'Luft und Sand', 'Licht und Wärme aus der Sonne'], 'Das Herz pumpt das Blut durch die Adern.'],
+  ['Wohin hustest oder niest du am besten?', '🤧', 'in die Armbeuge', ['in die Hand und dann weiterspielen', 'anderen ins Gesicht', 'auf den Tisch'], 'So verteilst du weniger Keime.'],
+  ['Was passiert mit der Luft, die du einatmest?', '🫁', 'Sie kommt in die Lunge, und der Sauerstoff geht ins Blut.', ['Sie kommt in den Magen.', 'Sie bleibt in der Nase.', 'Sie wird zu Wasser.'], 'Beim Ausatmen gibst du verbrauchte Luft wieder ab.'],
+  ['Warum ist Bewegung gut für dich?', '🏃', 'Sie macht Muskeln, Knochen und Herz stark.', ['Sie macht die Haare länger.', 'Sie macht hungrig auf Süßes.', 'Sie macht die Augen größer.'], 'Kinder sollten jeden Tag mindestens eine Stunde toben, laufen oder spielen.'],
+  ['Wozu sind deine Fingernägel da?', '✋', 'Sie schützen die Fingerspitzen.', ['Damit man besser hört.', 'Damit man schneller rennt.', 'Damit man besser riecht.'], 'Fingernägel wachsen immer nach, darum schneidet man sie.'],
+  ['Was schützt deine Haut vor Sonnenbrand?', '🧴', 'Sonnencreme, Mütze und Schatten', ['viel Wasser trinken in der Sonne', 'kurze Hosen', 'eine Sonnenbrille allein'], 'Mittags ist die Sonne am stärksten. Dann ist Schatten am besten.'],
+  ['Wo ist deine Wirbelsäule?', '🦴', 'im Rücken', ['im Bauch', 'im Kopf', 'im Arm'], 'Sie hält dich aufrecht.']
+]);
+k2Extra('koerper', [
+  ['z', 'Was macht welches Organ? Ordne zu.', [['Herz', 'pumpt Blut'], ['Lunge', 'atmet'], ['Magen', 'verdaut'], ['Gehirn', 'denkt'], ['Haut', 'schützt und fühlt']]],
+  ['s', 'Außen oder innen?', ['außen am Körper', 'innen im Körper'], [['Ellenbogen', 0], ['Nase', 0], ['Knie', 0], ['Ohrläppchen', 0], ['Herz', 1], ['Lunge', 1], ['Magen', 1], ['Gehirn', 1]]],
+  ['rf', 'Das Herz pumpt das Blut durch den Körper.', true, 'Es schlägt dein ganzes Leben lang.', '❤️'],
+  ['rf', 'Mit der Lunge verdaust du dein Essen.', false, 'Mit der Lunge atmest du. Verdaut wird im Magen und im Darm.', '🫁'],
+  ['rf', 'Knie und Ellenbogen sind Gelenke.', true, 'Gelenke machen den Körper beweglich.', '🦵'],
+  ['l', 'Setze die richtigen Wörter ein.', 'Das ⟪Herz⟫ pumpt das Blut. Mit der ⟪Lunge⟫ atmest du. Das ⟪Gehirn⟫ steuert alles.', ['Knie', 'Haar']]
+]);
+
+
+K2_ALT.ernaehrung = 23;
+k2Neu(SU_ERNAEHRUNG, [
+  ['Was steht in der Ernährungspyramide ganz unten, wovon man am meisten braucht?', '🔺', 'Getränke wie Wasser', ['Süßigkeiten', 'Wurst und Fleisch', 'Butter und Öl'], 'Darüber kommen Obst und Gemüse, dann Brot und Nudeln. Ganz oben in der Spitze stehen Süßes und Fettes.'],
+  ['Welches orange Gemüse ist gut für die Augen?', '🥕', 'die Möhre', ['die Gurke', 'der Brokkoli', 'die Zucchini'], 'Aus einem Stoff in der Möhre macht der Körper Vitamin A.'],
+  ['Was ist ein gesundes Frühstück?', '🥣', 'Müsli mit Obst und Milch', ['Kekse und Limonade', 'Chips und Cola', 'nur ein Schokoriegel'], 'Ein gutes Frühstück macht lange satt.'],
+  ['Welches davon ist Gemüse?', '🥦', 'Brokkoli', ['Apfel', 'Banane', 'Kirsche'], 'Brokkoli hat viel Vitamin C.'],
+  ['Warum wäscht man Obst vor dem Essen?', '🍎', 'damit Schmutz abgewaschen wird', ['damit es süßer wird', 'damit es größer wird', 'damit es länger hält'], 'Kurz unter fließendem Wasser abspülen reicht.'],
+  ['Wie viel Zucker steckt ungefähr in einer kleinen Dose Limonade?', '🥤', 'so viel wie etwa 10 Stück Würfelzucker', ['gar kein Zucker', 'ein halbes Stück Würfelzucker', 'so viel wie 100 Stück Würfelzucker'], 'Darum ist Wasser der beste Durstlöscher.'],
+  ['Was sind Hülsenfrüchte?', '🫘', 'Linsen, Erbsen und Bohnen', ['Äpfel, Birnen und Pflaumen', 'Nudeln, Reis und Brot', 'Käse, Quark und Joghurt'], 'Sie wachsen in Hülsen und machen lange satt.'],
+  ['Was bedeutet es, nach der Jahreszeit einzukaufen?', '🗓️', 'Obst und Gemüse kaufen, das gerade bei uns wächst', ['nur im Sommer einkaufen', 'alles im Internet bestellen', 'nur Süßigkeiten kaufen'], 'Im Herbst gibt es zum Beispiel Äpfel und Kürbisse aus der Nähe.'],
+  ['Warum musst du jeden Tag trinken?', '💧', 'Der Körper verliert ständig Wasser und braucht Nachschub.', ['Weil Wasser dick macht.', 'Weil Wasser süß ist.', 'Weil man sonst nicht schlafen darf.'], 'Ohne Wasser hält es der Körper nur wenige Tage aus.']
+]);
+k2Extra('ernaehrung', [
+  ['s', 'Obst oder Gemüse?', ['Obst', 'Gemüse'], [['Apfel', 0], ['Erdbeere', 0], ['Pflaume', 0], ['Banane', 0], ['Möhre', 1], ['Gurke', 1], ['Brokkoli', 1], ['Paprika', 1], ['Kohlrabi', 1]]],
+  ['s', 'Oft oder nur selten essen?', ['oft', 'nur selten'], [['Gemüse', 0], ['Obst', 0], ['Vollkornbrot', 0], ['Wasser', 0], ['Chips', 1], ['Gummibärchen', 1], ['Pommes', 1], ['Limonade', 1]]],
+  ['rf', 'Limonade ist der beste Durstlöscher.', false, 'Wasser ist der beste Durstlöscher. Limonade hat viel Zucker.', '🥤'],
+  ['rf', 'Brokkoli ist ein Gemüse.', true, 'Er hat viel Vitamin C.', '🥦'],
+  ['rf', 'Linsen und Bohnen sind Hülsenfrüchte.', true, 'Sie geben dem Körper Eiweiß.', '🫘'],
+  ['l', 'Setze die richtigen Wörter ein.', 'Am besten trinkst du ⟪Wasser⟫. Iss jeden Tag viel ⟪Obst⟫ und Gemüse. ⟪Süßigkeiten⟫ gibt es nur selten.', ['Limonade', 'Chips']]
+]);
+
+
+K2_ALT.jahreslauf = 23;
+k2Neu(SU_JAHRESLAUF, [
+  ['Welche Blumen blühen im Frühling früh, oft gleich nach den Schneeglöckchen?', '🌷', 'Krokusse und Narzissen', ['Sonnenblumen', 'Astern', 'Rosen'], 'Sie wachsen aus Zwiebeln in der Erde und blühen schnell.'],
+  ['In welchem Monat beginnt der Herbst?', '🍂', 'im September', ['im Juni', 'im Dezember', 'im März'], 'Herbstanfang ist am 22. oder 23. September.'],
+  ['In welchem Monat beginnt der Winter?', '❄️', 'im Dezember', ['im Oktober', 'im Februar', 'im September'], 'Am 21. oder 22. Dezember ist Winteranfang.'],
+  ['Was machen viele Laubbäume im Winter?', '🌳', 'Sie ruhen und haben keine Blätter.', ['Sie blühen.', 'Sie tragen reife Früchte.', 'Sie bekommen neue Blätter.'], 'Im Frühling treiben sie wieder aus.'],
+  ['Was ist eine Knospe?', '🌱', 'eine Hülle, in der ein neues Blatt oder eine Blüte steckt', ['eine reife Frucht', 'ein abgefallenes Blatt', 'eine Wurzel'], 'Schon im Herbst bilden Bäume Knospen für das nächste Jahr.'],
+  ['Was passiert im Herbst mit vielen Früchten?', '🍎', 'Sie werden reif und können geerntet werden.', ['Sie fangen gerade erst an zu blühen.', 'Sie frieren ein.', 'Sie werden wieder zu Blüten.'], 'Darum feiern viele Menschen im Herbst Erntedank.'],
+  ['Wann sind bei uns die Nächte am längsten?', '🌙', 'im Winter', ['im Sommer', 'im Frühling', 'das ganze Jahr gleich'], 'Im Dezember wird es schon am Nachmittag dunkel.'],
+  ['Welche Früchte kannst du im Sommer bei uns pflücken?', '🍓', 'Erdbeeren und Kirschen', ['Kastanien und Walnüsse', 'Bananen und Ananas', 'Orangen und Zitronen'], 'Bananen und Orangen wachsen in warmen Ländern.'],
+  ['Wann fallen Kastanien vom Baum?', '🌰', 'im Herbst', ['im Frühling', 'im Sommer', 'im Winter'], 'In der stacheligen Hülle steckt die glänzende Kastanie.']
+]);
+k2Extra('jahreslauf', [
+  ['s', 'Wann passiert das?', ['Frühling', 'Herbst', 'Winter'], [['Schneeglöckchen blühen', 0], ['Störche kommen zurück', 0], ['viele Küken schlüpfen', 0], ['Blätter färben sich bunt', 1], ['Kastanien fallen', 1], ['Zugvögel fliegen weg', 1], ['der Igel schläft', 2], ['Schnee fällt', 2], ['der kürzeste Tag', 2]]],
+  ['z', 'Wann beginnt die Jahreszeit? Ordne zu.', [['Frühlingsanfang', 'März'], ['Sommeranfang', 'Juni'], ['Herbstanfang', 'September'], ['Winteranfang', 'Dezember']]],
+  ['rf', 'Im Winter sind die Tage am längsten.', false, 'Im Sommer sind die Tage am längsten, im Winter am kürzesten.', '🌙'],
+  ['rf', 'Im Herbst wird viel geerntet.', true, 'Äpfel, Kartoffeln und Kürbisse sind dann reif.', '🍎'],
+  ['rf', 'Die Tanne verliert im Winter alle Nadeln.', false, 'Die Tanne bleibt im Winter grün.', '🌲'],
+  ['l', 'Setze die richtigen Wörter ein.', 'Im ⟪Frühling⟫ blühen die ersten Blumen. Im ⟪Sommer⟫ ist es warm. Im ⟪Herbst⟫ fallen die Blätter, und im ⟪Winter⟫ kann es schneien.', ['Januar']]
+]);
+
+
+K2_ALT.herkunft = 26;
+k2Neu(HERKUNFT, [
+  ['Wo wachsen Orangen?', '🍊', 'an Bäumen in warmen Ländern', ['unter der Erde', 'an Sträuchern im Norden', 'auf Wiesen am Meer'], 'Viele Orangen bei uns kommen aus Spanien.'],
+  ['Woraus wird Tofu gemacht?', '🫘', 'aus Sojabohnen', ['aus Milch', 'aus Kartoffeln', 'aus Reis'], 'Tofu ist ein Lebensmittel mit viel Eiweiß aus Pflanzen.'],
+  ['Woraus wird Joghurt gemacht?', '🥛', 'aus Milch', ['aus Mehl', 'aus Äpfeln', 'aus Eiern'], 'Gute Bakterien machen die Milch dick und leicht sauer.'],
+  ['Woraus wird Leder gemacht?', '👞', 'aus der Haut von Tieren, meist von Rindern', ['aus Holz', 'aus Wolle', 'aus Glas'], 'Es gibt auch Leder, das künstlich hergestellt wird.'],
+  ['Woraus wird Glas gemacht?', '🫙', 'aus Sand, der sehr heiß geschmolzen wird', ['aus Eis', 'aus Wasser', 'aus Holz'], 'Altglas kann man immer wieder einschmelzen.'],
+  ['Woher kommt Baumwolle für T-Shirts?', '👕', 'von der Baumwollpflanze', ['vom Schaf', 'aus Holz', 'aus Erdöl'], 'Die weißen Fasern sitzen an den Samen der Pflanze.'],
+  ['Woraus werden Gummibärchen oft gemacht?', '🍬', 'aus Zucker und Gelatine', ['aus Gemüse', 'aus Mehl und Eiern', 'aus Käse'], 'Es gibt auch Gummibärchen ohne Gelatine.'],
+  ['Woraus wird Plastik meistens gemacht?', '🧴', 'aus Erdöl', ['aus Sand', 'aus Holz', 'aus Wolle'], 'Darum spart man Plastik und trennt es für das Recycling.']
+]);
+k2Extra('herkunft', [
+  ['z', 'Woraus wird das gemacht? Ordne zu.', [['Pommes', 'Kartoffeln'], ['Ketchup', 'Tomaten'], ['Käse', 'Milch'], ['Papier', 'Holz'], ['Popcorn', 'Mais'], ['Schokolade', 'Kakaobohnen']]],
+  ['s', 'Vom Tier oder von der Pflanze?', ['vom Tier', 'von der Pflanze'], [['Milch', 0], ['Eier', 0], ['Honig', 0], ['Wolle', 0], ['Mehl', 1], ['Zucker', 1], ['Apfelsaft', 1], ['Baumwolle', 1]]],
+  ['rf', 'Zucker wird bei uns aus Zuckerrüben gemacht.', true, 'In warmen Ländern auch aus Zuckerrohr.', '🍬'],
+  ['rf', 'Rosinen sind getrocknete Pflaumen.', false, 'Rosinen sind getrocknete Weintrauben.', '🍇'],
+  ['rf', 'Glas wird aus Sand gemacht.', true, 'Der Sand wird sehr heiß geschmolzen.', '🫙']
+]);
+
+
+K2_ALT.pinguin = 25;
+k2Neu(SU_PINGUIN, [
+  ['Welcher Pinguin hat gelbe Federbüschel über den Augen?', '🐧', 'der Felsenpinguin', ['der Kaiserpinguin', 'der Zwergpinguin', 'der Brillenpinguin'], 'Felsenpinguine hüpfen geschickt über Felsen.'],
+  ['Was trinken Pinguine im Meer?', '🐧', 'Salzwasser, das Salz geben sie über eine Drüse wieder ab', ['gar nichts', 'nur Regenwasser', 'nur Wasser aus Seen'], 'Die Salzdrüse sitzt über den Augen.'],
+  ['Was ist Krill?', '🦐', 'winzige Krebse im Meer', ['große Fische', 'Pflanzen am Strand', 'kleine Eisberge'], 'Krill ist das Lieblingsfutter vieler Pinguine und Wale.'],
+  ['Wie hält ein Kaiserpinguin-Papa das Ei warm?', '🐧', 'Er trägt es auf den Füßen unter einer warmen Bauchfalte.', ['Er legt es in den Schnee.', 'Er baut ein Nest aus Ästen.', 'Er legt es ins Wasser.'], 'Diese warme Hautfalte heißt Brutbeutel.'],
+  ['Wie heißt der eisige Kontinent am Südpol?', '🧊', 'die Antarktis', ['die Arktis', 'Afrika', 'Europa'], 'In der Arktis am Nordpol gibt es keine Pinguine, dort leben Eisbären.'],
+  ['Wie sehen Küken vom Kaiserpinguin aus?', '🐧', 'grau und flauschig', ['schwarz und glänzend', 'gelb und glatt', 'ganz weiß und nackt'], 'Erst später bekommen sie das schwarz-weiße Federkleid.'],
+  ['Wie bewegen sich Pinguine an Land vorwärts?', '🐧', 'Sie watscheln oder hüpfen.', ['Sie fliegen.', 'Sie kriechen auf dem Rücken.', 'Sie rollen sich wie ein Ball.'], 'Auf dem Eis rutschen sie auch auf dem Bauch.'],
+  ['Wozu dienen die kurzen Flügel des Pinguins?', '🐧', 'als kräftige Flossen zum Schwimmen', ['zum Fliegen', 'zum Graben im Schnee', 'zum Festhalten an Felsen'], 'Unter Wasser fliegen Pinguine fast.']
+]);
+k2Extra('pinguin', [
+  ['rf', 'Pinguine leben am Nordpol.', false, 'Pinguine leben auf der Südhalbkugel. Am Nordpol leben Eisbären.', '🐧'],
+  ['rf', 'Pinguine können Salzwasser trinken.', true, 'Das Salz geben sie über eine Drüse wieder ab.', '🌊'],
+  ['rf', 'Küken vom Kaiserpinguin sind grau und flauschig.', true, 'Die Daunen halten sie warm.', '🐣'],
+  ['s', 'Nordpol oder Südpol?', ['Arktis, am Nordpol', 'Antarktis, am Südpol'], [['Eisbär', 0], ['Walross', 0], ['Polarfuchs', 0], ['Kaiserpinguin', 1], ['Adeliepinguin', 1], ['Seeleopard', 1]]],
+  ['z', 'Pinguin-Wörter: Ordne zu.', [['Kolonie', 'große Gruppe'], ['Küken', 'Pinguin-Baby'], ['Krill', 'winzige Krebse'], ['Antarktis', 'Kontinent am Südpol']]]
+]);
+
+
+K2_ALT.spurensuche = 18;
+k2Neu(B24_SPUREN, [
+  ['Ein Blatt hat viele Löcher und angefressene Ränder. Wer war das wahrscheinlich?', '🍃', 'eine Raupe oder eine Schnecke', ['ein Reh', 'ein Specht', 'ein Fuchs'], 'Schnecken hinterlassen oft auch eine glänzende Schleimspur.'],
+  ['Auf dem Weg glänzt eine silberne Spur. Wer war hier?', '🐌', 'eine Schnecke', ['ein Vogel', 'ein Fuchs', 'ein Igel'], 'Die Schnecke gleitet auf ihrem Schleim.'],
+  ['Im Wald liegen an einer Stelle viele Federn. Was ist vermutlich passiert?', '🪶', 'Ein Greifvogel oder ein Fuchs hat einen Vogel gefangen.', ['Ein Vogel hat gebadet.', 'Ein Vogel hat sein Nest gebaut.', 'Ein Vogel ist gewachsen.'], 'Förster nennen so eine Stelle Rupfung.'],
+  ['An einem jungen Baum ist unten die Rinde abgenagt. Wer war das im Winter?', '🌳', 'ein Reh, ein Hirsch oder ein Hase', ['ein Specht', 'eine Ente', 'eine Schnecke'], 'Im Winter finden sie wenig Futter und nagen an der Rinde.'],
+  ['Was zeigt dir eine Spur mit Hufen?', '🐾', 'dass hier ein Huftier wie ein Reh oder Wildschwein lief', ['dass ein Vogel gelandet ist', 'dass hier eine Katze war', 'dass hier ein Fisch war'], 'Hufe sind harte Zehenspitzen.'],
+  ['Warum sieht man Spuren im Sand am Strand oft nicht lange?', '🏖️', 'Wind und Wellen verwischen sie.', ['Die Sonne macht sie unsichtbar.', 'Der Sand wächst nach.', 'Möwen fressen sie.'], 'Im feuchten Sand bleiben sie länger.'],
+  ['Was ist eine Fährte?', '🐾', 'eine Reihe von Fußabdrücken eines Tieres', ['ein Nest im Baum', 'ein Futterplatz', 'ein Weg aus Steinen'], 'Förster lesen Fährten wie ein Buch.'],
+  ['Auf der Wiese liegen kleine, runde Kügelchen, so groß wie Erbsen. Wer war das?', '🐇', 'ein Hase oder ein Kaninchen', ['ein Fuchs', 'eine Kuh', 'ein Pferd'], 'Diese runden Köttel sind Hasenlosung.'],
+  ['Wie kannst du eine Tierspur festhalten?', '📸', 'ein Foto machen oder die Spur abzeichnen', ['die Spur mitnehmen', 'die Spur wegwischen', 'die Spur zuschütten'], 'Mit Gips kann man Spuren sogar abgießen.'],
+  ['Wie viele Zehen hat ein Vogelfuß meistens?', '🐦', '4', ['2', '6', '10'], 'Meist zeigen drei Zehen nach vorn und eine nach hinten.']
+]);
+k2Extra('spurensuche', [
+  ['z', 'Wer hat diese Spur gemacht? Ordne zu.', [['zwei schmale Hufhälften', 'Reh'], ['Schwimmhäute zwischen den Zehen', 'Ente'], ['Abdrücke wie auf einer Schnur', 'Fuchs'], ['Hinterpfoten vor den Vorderpfoten', 'Hase'], ['Pfoten ohne Krallenabdruck', 'Katze']]],
+  ['z', 'Wer war das? Ordne zu.', [['abgenagte Zapfen', 'Eichhörnchen'], ['Erdhügel auf der Wiese', 'Maulwurf'], ['angenagte Bäume am Bach', 'Biber'], ['Löcher in Blättern', 'Raupe'], ['silberne Schleimspur', 'Schnecke']]],
+  ['rf', 'Im Schnee kann man Tierspuren gut sehen.', true, 'Auch im feuchten Matsch bleiben Spuren gut zu sehen.', '❄️'],
+  ['rf', 'Wildtiere füttert und streichelt man am besten.', false, 'Wildtiere beobachtet man leise aus der Ferne.', '🦌'],
+  ['rf', 'Vögel haben meistens vier Zehen.', true, 'Drei zeigen meist nach vorn, eine nach hinten.', '🐦'],
+  ['rf', 'In der Spur einer Ente sieht man Schwimmhäute.', true, 'Mit den Schwimmhäuten paddelt die Ente.', '🦆']
+]);
+
+
+K2_ALT.schlafgut = 20;
+k2Neu(B24_SCHLAF, [
+  ['Welches Tier kann im Stehen dösen?', '🐴', 'das Pferd', ['die Katze', 'der Hund', 'der Hamster'], 'Für den Tiefschlaf legen sich Pferde aber hin.'],
+  ['Wie schlafen Enten oft auf dem Wasser?', '🦆', 'mit dem Kopf unter dem Flügel', ['auf dem Rücken', 'kopfüber unter Wasser', 'im Fliegen'], 'So bleibt der Kopf warm.'],
+  ['Welches Getränk ist abends schlecht für den Schlaf?', '🥤', 'Cola, weil sie wach macht', ['warme Milch', 'Wasser', 'Kräutertee'], 'In Cola steckt Koffein. Das macht wach.'],
+  ['Wie viele Stunden schläft ein neugeborenes Baby ungefähr am Tag?', '👶', 'etwa 16 Stunden', ['etwa 4 Stunden', 'etwa 8 Stunden', 'gar nicht'], 'Babys schlafen viel, aber immer nur kurze Zeit am Stück.'],
+  ['Was machen deine Augen, wenn du träumst?', '👀', 'Sie bewegen sich unter den Lidern schnell hin und her.', ['Sie öffnen sich weit.', 'Sie werden rot.', 'Sie bleiben die ganze Zeit offen.'], 'Diese Schlafphase heißt REM-Schlaf.'],
+  ['Was hilft vielen Kindern gegen Angst im Dunkeln?', '🌙', 'ein kleines Nachtlicht', ['ganz laute Musik', 'ein Gruselfilm vor dem Schlafen', 'Süßigkeiten im Bett'], 'Auch eine offene Tür kann helfen.'],
+  ['Was sind Träume?', '💭', 'Bilder und Geschichten, die das Gehirn im Schlaf erzeugt', ['Dinge, die wirklich passieren', 'Nachrichten von anderen Menschen', 'Filme aus dem Fernsehen'], 'Manchmal verarbeitet das Gehirn darin, was du erlebt hast.'],
+  ['Was hilft, wenn du nicht einschlafen kannst?', '🛏️', 'ruhig liegen, tief atmen und an etwas Schönes denken', ['aufstehen und fernsehen', 'am Tablet spielen', 'laut singen'], 'Manche Kinder zählen auch Schäfchen.']
+]);
+k2Extra('schlafgut', [
+  ['rf', 'Pferde können im Stehen dösen.', true, 'Ihre Beine haben eine Art Sperre, damit sie nicht einknicken.', '🐴'],
+  ['rf', 'Bildschirme vor dem Schlafen machen müde.', false, 'Das helle Licht macht eher wach.', '📱'],
+  ['rf', 'Jeder Mensch träumt, auch wenn er sich nicht daran erinnert.', true, 'Wir träumen jede Nacht.', '💭'],
+  ['s', 'Hilft das beim Einschlafen?', ['hilft', 'stört'], [['vorlesen', 0], ['ein dunkles Zimmer', 0], ['ein Kuscheltier', 0], ['ruhige Musik', 0], ['das Handy im Bett', 1], ['Cola am Abend', 1], ['laute Geräusche', 1], ['ein Gruselfilm', 1]]],
+  ['z', 'Wie schlafen diese Tiere? Ordne zu.', [['Fledermaus', 'kopfüber hängend'], ['Pferd', 'oft im Stehen'], ['Delfin', 'mit einer Gehirnhälfte'], ['Ente', 'Kopf unter dem Flügel'], ['Koala', 'bis zu 20 Stunden']]],
+  ['l', 'Setze die richtigen Wörter ein.', 'Kinder brauchen etwa ⟪zehn⟫ Stunden Schlaf. Im Schlaf erholt sich der ⟪Körper⟫. Das Gehirn sortiert, was du ⟪gelernt⟫ hast.', ['zwei', 'gegessen']]
+]);
+
+
+K2_ALT.erstehilfe = 21;
+k2Neu(B24_EH, [
+  ['Wie lautet die Notrufnummer der Polizei?', '🚓', '110', ['112', '116 111', '911'], 'Feuerwehr und Rettungsdienst erreichst du unter 112.'],
+  ['Was machst du bei Nasenbluten?', '🩸', 'den Kopf nach vorne beugen und die Nase zudrücken', ['den Kopf weit nach hinten legen', 'die Nase fest putzen und herumrennen', 'sich flach auf den Rücken legen'], 'Nach vorne beugen, damit das Blut nicht in den Hals läuft. Ein kühler Lappen im Nacken hilft auch.'],
+  ['Du hast dich an etwas Heißem verbrannt. Was hilft?', '🔥', 'die Stelle sofort mit kühlem, nicht eiskaltem Wasser kühlen', ['Butter darauf streichen', 'Mehl darauf streuen', 'gar nichts tun'], 'Danach einem Erwachsenen zeigen. Hausmittel wie Butter machen es schlimmer.'],
+  ['Was ist die stabile Seitenlage?', '🛌', 'eine Lage, in der ein Mensch ohne Bewusstsein sicher atmen kann', ['eine Turnübung', 'eine Schlafposition für Babys', 'ein Spiel im Sportunterricht'], 'Das lernt man im Erste-Hilfe-Kurs. Zuerst holst du immer Hilfe.'],
+  ['Welche Wunde musst du einem Erwachsenen zeigen?', '🩹', 'eine Wunde, die stark blutet oder tief ist', ['einen kleinen Kratzer', 'einen Mückenstich', 'trockene Haut'], 'Kleine Kratzer kannst du mit Wasser säubern und ein Pflaster draufkleben.'],
+  ['Ein Freund hat sich den Kopf gestoßen und ihm wird schlecht. Was tust du?', '🤕', 'sofort einem Erwachsenen Bescheid sagen', ['einfach weiterspielen', 'ihm Süßigkeiten geben', 'ihn allein lassen'], 'Übelkeit nach einem Stoß am Kopf kann eine Gehirnerschütterung sein.'],
+  ['Wie legst du ein Kühlpack richtig auf?', '🧊', 'mit einem Tuch dazwischen', ['direkt auf die nackte Haut', 'nur auf die Kleidung, ganz kurz', 'gar nicht, man hält es in der Hand'], 'Direkt auf der Haut kann Kälte wehtun.'],
+  ['Woran erkennst du ein Rettungsfahrzeug im Einsatz?', '🚑', 'an Blaulicht und Martinshorn', ['an einer grünen Lampe', 'an lauter Musik', 'an einer Fahne'], 'Dann machen alle Platz. Du bleibst am Straßenrand stehen.']
+]);
+k2Extra('erstehilfe', [
+  ['z', 'Welche Nummer rufst du an? Ordne zu.', [['Feuerwehr und Rettungsdienst', '112'], ['Polizei', '110'], ['Nummer gegen Kummer', '116 111']]],
+  ['rf', 'Bei Nasenbluten legt man den Kopf weit nach hinten.', false, 'Man beugt den Kopf nach vorne, damit das Blut nicht in den Hals läuft.', '🩸'],
+  ['rf', 'Auf eine Verbrennung streicht man Butter.', false, 'Man kühlt sie mit Wasser. Butter macht es schlimmer.', '🔥'],
+  ['rf', 'Ein Kühlpack legt man nie direkt auf die Haut.', true, 'Ein Tuch gehört dazwischen.', '🧊']
+]);
+
+
+K2_ALT.natur = 28;
+k2Neu(SU_NATUR, [
+  ['Was macht eine Pflanze mit ihren grünen Blättern?', '🍃', 'Sie macht mit Sonnenlicht ihre Nahrung.', ['Sie trinkt damit das ganze Wasser.', 'Sie hört damit Geräusche.', 'Sie läuft damit herum.'], 'Dabei entsteht auch Sauerstoff, den wir atmen.'],
+  ['Wie reisen die Samen der Klette?', '🌰', 'Sie haken sich im Fell von Tieren fest.', ['Sie fliegen mit Schirmchen.', 'Sie schwimmen auf dem Wasser.', 'Sie rollen den Berg hinunter.'], 'So kommen die Samen weit herum.'],
+  ['Welche Blume pflanzt man im Herbst als Zwiebel in die Erde?', '🌷', 'die Tulpe', ['die Sonnenblume', 'das Gänseblümchen', 'der Löwenzahn'], 'Im Frühling blüht die Tulpe dann.'],
+  ['Welche Pflanze brennt auf der Haut, wenn man sie berührt?', '🌿', 'die Brennnessel', ['der Löwenzahn', 'das Gänseblümchen', 'der Klee'], 'Feine Härchen geben bei Berührung einen brennenden Saft ab.'],
+  ['Was ist ein Kaktus?', '🌵', 'eine Pflanze, die in ihrem dicken Stamm Wasser speichert', ['ein Baum aus dem Wald', 'eine Wasserpflanze', 'ein Pilz'], 'Kakteen wachsen in trockenen Gegenden. Die Stacheln sind ihre Blätter.'],
+  ['Welcher Teil der Pflanze lockt Bienen an?', '🌸', 'die Blüte', ['die Wurzel', 'der Stängel', 'die Rinde'], 'Bunte Blüten duften und haben süßen Nektar.']
+]);
+k2Extra('natur', [
+  ['s', 'Wie reisen die Samen?', ['mit dem Wind', 'mit Tieren'], [['Löwenzahn', 0], ['Ahorn', 0], ['Birke', 0], ['Klette', 1], ['Kirsche', 1], ['Eichel', 1], ['Brombeere', 1]], 'Vögel fressen Kirschen und Brombeeren und tragen die Kerne weiter. Eichelhäher verstecken Eicheln.'],
+  ['z', 'Teile der Pflanze: Ordne zu.', [['Wurzel', 'hält fest und trinkt Wasser'], ['Stängel', 'leitet Wasser nach oben'], ['Blatt', 'macht Nahrung aus Licht'], ['Blüte', 'lockt Insekten an'], ['Frucht', 'enthält die Samen']]],
+  ['rf', 'Pflanzen brauchen Licht zum Wachsen.', true, 'Ohne Licht werden Pflanzen blass und schwach.', '🌱'],
+  ['rf', 'Die Wurzel wächst oben aus der Blüte.', false, 'Die Wurzel steckt unten in der Erde.', '🪴']
+]);
+
+
+K2_ALT.tiere = 33;
+k2Neu(SU_TIERE, [
+  ['Welches dieser Tiere ist ein Säugetier?', '🐋', 'der Wal', ['der Hai', 'der Lachs', 'die Forelle'], 'Wale atmen mit Lungen und säugen ihre Jungen mit Milch.'],
+  ['Wie nennt man Tiere, die nur Pflanzen fressen?', '🐄', 'Pflanzenfresser', ['Fleischfresser', 'Allesfresser', 'Aasfresser'], 'Kühe, Rehe und Kaninchen sind Pflanzenfresser.'],
+  ['Womit atmen Fische?', '🐟', 'mit Kiemen', ['mit einer Lunge wie wir', 'mit der Nase', 'mit den Flossen'], 'Mit den Kiemen holen sie Sauerstoff aus dem Wasser.'],
+  ['Wie viele Beine hat eine Spinne?', '🕷️', '8', ['6', '4', '10'], 'Insekten haben 6 Beine.']
+]);
+k2Extra('tiere', [
+  ['s', 'Fell, Federn oder Schuppen?', ['Fell', 'Federn', 'Schuppen'], [['Hund', 0], ['Bär', 0], ['Kaninchen', 0], ['Amsel', 1], ['Pinguin', 1], ['Huhn', 1], ['Fisch', 2], ['Schlange', 2], ['Eidechse', 2]]],
+  ['z', 'Was frisst das Tier? Ordne zu.', [['Kuh', 'Gras'], ['Löwe', 'Fleisch'], ['Eichhörnchen', 'Nüsse'], ['Specht', 'Insekten'], ['Panda', 'Bambus']]],
+  ['rf', 'Wale sind Fische.', false, 'Wale sind Säugetiere. Sie atmen Luft und säugen ihre Jungen.', '🐋'],
+  ['rf', 'Alle Vögel haben Federn.', true, 'Und nur Vögel haben Federn.', '🪶']
+]);
+
+
+K2_ALT.verkehr = 27;
+k2Neu(SU_VERKEHR, [
+  ['Wie gehst du über die Straße, wenn es keine Ampel gibt?', '🚸', 'am Bordstein stehen bleiben, links, rechts, links schauen und gehen, wenn frei ist', ['schnell rennen, ohne zu schauen', 'zwischen parkenden Autos durchlaufen', 'erst auf die Straße gehen und dann schauen'], 'Gehe zügig, aber renne nicht.'],
+  ['Was ist der tote Winkel?', '🚚', 'ein Bereich neben einem Lkw, den der Fahrer nicht sehen kann', ['eine Ecke, an der nie Autos fahren', 'ein Platz auf dem Spielplatz', 'eine Kreuzung ohne Ampel'], 'Halte immer Abstand zu großen Fahrzeugen, besonders wenn sie abbiegen.'],
+  ['Wo sitzt du als Kind im Auto?', '🚗', 'hinten in einem passenden Kindersitz, angeschnallt', ['vorne ohne Gurt', 'im Kofferraum', 'auf dem Schoß der Eltern'], 'Ein Kindersitz schützt dich bei einem Unfall.'],
+  ['Was machst du am Zebrastreifen?', '🦓', 'warten, bis die Autos halten, und schauen, ob der Fahrer dich sieht', ['einfach losrennen', 'auf dem Streifen spielen', 'mitten auf dem Streifen stehen bleiben'], 'Autos müssen halten. Trotzdem schaust du immer, ob sie dich bemerkt haben.'],
+  ['Was trägst du beim Radfahren zum Schutz?', '🚲', 'einen Fahrradhelm', ['eine Mütze', 'eine Sonnenbrille', 'Kopfhörer'], 'Der Helm schützt deinen Kopf bei einem Sturz.'],
+  ['Wo gehst du auf dem Gehweg am sichersten?', '🚶', 'auf der Seite weiter weg von der Fahrbahn', ['direkt an der Bordsteinkante', 'auf der Fahrbahn', 'auf dem Radweg'], 'So hast du mehr Abstand zu den Autos.']
+]);
+k2Extra('verkehr', [
+  ['rf', 'Bei Rot darf man gehen, wenn gerade kein Auto kommt.', false, 'Bei Rot bleibst du immer stehen. Du bist auch ein Vorbild für Jüngere.', '🚦'],
+  ['rf', 'Lkw-Fahrer können beim Abbiegen Kinder neben dem Lkw oft nicht sehen.', true, 'Darum bleibst du an der Ampel hinter dem Lkw und nicht daneben.', '🚚'],
+  ['o', 'Über die Straße gehen: Bring die Schritte in die richtige Reihenfolge.', ['🛑 am Bordstein stehen bleiben', '👈 nach links schauen', '👉 nach rechts schauen', '👀 noch einmal nach links schauen', '🚶 zügig hinübergehen']],
+  ['s', 'Sicher oder gefährlich?', ['sicher', 'gefährlich'], [['einen Helm tragen', 0], ['Reflektoren am Ranzen', 0], ['am Zebrastreifen warten', 0], ['zwischen Autos hervorlaufen', 1], ['bei Rot gehen', 1], ['mit Kopfhörern über die Straße', 1]]]
+]);
+
+
+k2Extra('verkehr', [
+  ['w', 'Was bedeutet das grüne Männchen an der Fußgängerampel?', '🚦', 'Du darfst gehen, schaust aber trotzdem nach Autos.', ['Du musst stehen bleiben.', 'Du musst rennen.', 'Die Ampel ist kaputt.'], 'Auch bei Grün schaust du, ob abbiegende Autos dich sehen.'],
+  ['w', 'Warum läufst du nicht zwischen parkenden Autos auf die Straße?', '🚗', 'Die Autofahrer können dich dort nicht sehen.', ['Weil man dort leicht stolpert.', 'Weil dort keine Ampel ist.', 'Weil die Autos dort schmutzig sind.'], 'Geh ein Stück weiter, bis du freie Sicht hast.'],
+  ['rf', 'Im Auto schnallt man sich nur auf langen Fahrten an.', false, 'Auch auf kurzen Fahrten schnallst du dich immer an.', '🚗'],
+  ['rf', 'Auf dem Gehweg bist du sicherer als auf der Fahrbahn.', true, 'Die Fahrbahn ist für Autos da.', '🚶']
+]);
+k2Extra('erstehilfe', [
+  ['rf', 'Beim Notruf legst du erst auf, wenn die Leitstelle es sagt.', true, 'Vielleicht hat die Leitstelle noch Fragen.', '☎️'],
+  ['rf', 'Eine kleine Schürfwunde spült man mit sauberem Wasser aus.', true, 'Danach kommt ein Pflaster darauf.', '🩹'],
+  ['w', 'Welche Frage stellt die Leitstelle beim Notruf?', '☎️', 'Wo ist es passiert?', ['Welche Farbe hat dein Pullover?', 'Was gibt es zum Mittagessen?', 'Wie heißt dein Lieblingsbuch?'], 'Die wichtigsten Fragen: Wo? Was? Wie viele Verletzte? Welche Verletzungen? Dann auf Rückfragen warten.'],
+  ['o', 'Ein Kind ist hingefallen und blutet am Knie. Was machst du zuerst, was danach?', ['🗣️ das Kind ansprechen und trösten', '🧑 einen Erwachsenen holen', '💧 die Wunde mit Wasser säubern', '🩹 ein Pflaster draufkleben']],
+  ['s', 'Notruf 112 oder kein Notruf?', ['Notruf 112', 'kein Notruf'], [['Ein Haus brennt.', 0], ['Ein Mensch liegt am Boden und antwortet nicht.', 0], ['ein schwerer Unfall auf der Straße', 0], ['Ich habe meinen Schlüssel verloren.', 1], ['Ich habe einen kleinen Kratzer.', 1], ['Mein Ball liegt auf dem Dach.', 1]], 'Den Notruf wählst du nur in echten Notfällen.']
+]);
+k2Extra('pinguin', [
+  ['rf', 'Kaiserpinguine sind die größten Pinguine.', true, 'Sie werden über einen Meter groß.', '🐧'],
+  ['rf', 'Pinguine haben ein Fell.', false, 'Pinguine haben dichte Federn, wie alle Vögel.', '🪶']
+]);
+
+/*@@src k2_deutsch610.js@@*/
+
+
+
+k2Neu(MEHRZAHL, [
+  ['der Vogel', 'Vögel', ['Vogels', 'Vogeln', 'Vögeln'], '🐦'], ['das Buch', 'Bücher', ['Buchs', 'Büche', 'Bücheren'], '📖'], ['die Maus', 'Mäuse', ['Mause', 'Mäusen', 'Mäuser'], '🐭'],
+  ['der Baum', 'Bäume', ['Baums', 'Bäumer', 'Baumen'], '🌳'], ['die Blume', 'Blumen', ['Blumes', 'Blümen', 'Blumer'], '🌸'], ['das Kind', 'Kinder', ['Kinds', 'Kinde', 'Kindern'], '🧒'],
+  ['der Ball', 'Bälle', ['Balls', 'Baller', 'Bällen'], '⚽'], ['die Hand', 'Hände', ['Hands', 'Handen', 'Händer'], '✋'], ['der Fisch', 'Fische', ['Fischs', 'Fischen', 'Fischer'], '🐟'],
+  ['das Ei', 'Eier', ['Eie', 'Eien', 'Eis'], '🥚'], ['die Nuss', 'Nüsse', ['Nusse', 'Nüssen', 'Nusses'], '🌰'], ['der Zahn', 'Zähne', ['Zahns', 'Zähner', 'Zahnen'], '🦷'],
+  ['das Auto', 'Autos', ['Autoe', 'Autoen', 'Äutos'], '🚗'], ['der Stuhl', 'Stühle', ['Stuhls', 'Stühler', 'Stuhlen'], '🪑'], ['das Schiff', 'Schiffe', ['Schiffs', 'Schiffen', 'Schiffer'], '🚢'],
+  ['die Kuh', 'Kühe', ['Kuhs', 'Kuhen', 'Küher'], '🐄'], ['der Bus', 'Busse', ['Buse', 'Büsse', 'Buss'], '🚌'], ['das Bett', 'Betten', ['Bette', 'Better', 'Bettes'], '🛏️'],
+  ['die Uhr', 'Uhren', ['Uhrs', 'Ühre', 'Uhre'], '⏰'], ['der Hut', 'Hüte', ['Huts', 'Huten', 'Hutte'], '🎩'], ['das Glas', 'Gläser', ['Glase', 'Glasen', 'Gläse'], '🥛'],
+  ['der Wurm', 'Würmer', ['Wurms', 'Wurme', 'Würme'], '🪱'], ['die Gans', 'Gänse', ['Ganse', 'Gänsen', 'Ganser'], '🪿'], ['die Zitrone', 'Zitronen', ['Zitrones', 'Zitroner', 'Zitröne'], '🍋']
+]);
+k2Extra('mehrzahl', [
+  ['z', 'Einzahl und Mehrzahl: Ordne zu.', [['der Baum', 'die Bäume'], ['die Maus', 'die Mäuse'], ['das Buch', 'die Bücher'], ['der Ball', 'die Bälle'], ['die Hand', 'die Hände'], ['das Kind', 'die Kinder']]],
+  ['s', 'Einzahl oder Mehrzahl?', ['Einzahl', 'Mehrzahl'], [['der Hund', 0], ['das Ei', 0], ['die Blume', 0], ['der Apfel', 0], ['die Hunde', 1], ['die Eier', 1], ['die Kinder', 1], ['die Bälle', 1]], 'In der Mehrzahl heißt der Begleiter immer „die“.']
+]);
+
+
+k2Neu(WORTFELDER, [
+  ['gehen', 'ganz langsam und gemütlich gehen', 'schlendern', ['rennen', 'hüpfen', 'sprinten']], ['gehen', 'sehr schnell laufen', 'rennen', ['schleichen', 'schlendern', 'bummeln']],
+  ['gehen', 'leise und vorsichtig gehen, damit dich keiner hört', 'schleichen', ['stampfen', 'trampeln', 'rennen']], ['gehen', 'mit schweren Schritten laut auftreten', 'stampfen', ['schleichen', 'tippeln', 'schlendern']],
+  ['gehen', 'auf einem Bein springen', 'hüpfen', ['kriechen', 'schlendern', 'schleichen']],
+  ['essen', 'ganz schnell und gierig essen', 'schlingen', ['knabbern', 'naschen', 'kosten']], ['essen', 'kleine Bissen abbeißen, wie ein Hase', 'knabbern', ['schlingen', 'schlucken', 'trinken']],
+  ['essen', 'heimlich etwas Süßes essen', 'naschen', ['kauen', 'schlucken', 'würzen']], ['essen', 'ein kleines bisschen probieren', 'kosten', ['schlingen', 'verschlingen', 'futtern']],
+  ['schön', 'sehr schön, wie im Märchen', 'wunderschön', ['hässlich', 'grau', 'langweilig']], ['schön', 'süß und klein, zum Knuddeln', 'niedlich', ['gruselig', 'riesig', 'laut']],
+  ['sehen', 'heimlich und vorsichtig nach etwas Ausschau halten', 'spähen', ['starren', 'glotzen', 'blinzeln']], ['sehen', 'lange und ohne zu blinzeln auf etwas schauen', 'starren', ['blinzeln', 'zwinkern', 'spähen']],
+  ['nass', 'ein kleines bisschen nass', 'feucht', ['trocken', 'klitschnass', 'staubig']], ['nass', 'so nass, dass das Wasser tropft', 'klitschnass', ['feucht', 'trocken', 'staubig']],
+  ['kalt', 'so kalt, dass Wasser zu Eis wird', 'eisig', ['lauwarm', 'heiß', 'warm']], ['kalt', 'nur ein bisschen kalt', 'kühl', ['eisig', 'heiß', 'glühend']]
+]);
+K2_ALT.wortfeld = 41;
+k2Extra('wortfeld', [
+  ['z', 'Wortfeld „sagen“: Was passt? Ordne zu.', [['flüstern', 'ganz leise sprechen'], ['schreien', 'sehr laut rufen'], ['murmeln', 'undeutlich sprechen'], ['fragen', 'etwas wissen wollen'], ['antworten', 'auf eine Frage reagieren']]],
+  ['s', 'Laut oder leise?', ['laut', 'leise'], [['brüllen', 0], ['schreien', 0], ['rufen', 0], ['flüstern', 1], ['murmeln', 1], ['tuscheln', 1]]]
+]);
+
+
+k2Neu(GROSSKLEIN, [
+  ['Der ___ fliegt in sein Nest.', 'Vogel', 'vogel', 'N'], ['Wir ___ am Strand Muscheln.', 'sammeln', 'Sammeln', 'V'], ['Die Suppe ist sehr ___.', 'heiß', 'Heiß', 'A'],
+  ['___ regnet es schon wieder.', 'Heute', 'heute', 'S'], ['Mein ___ ist rot.', 'Fahrrad', 'fahrrad', 'N'], ['Opa ___ eine Geschichte.', 'erzählt', 'Erzählt', 'V'],
+  ['Der Hase ist ___.', 'schnell', 'Schnell', 'A'], ['Die ___ bellen laut.', 'Hunde', 'hunde', 'N'], ['Im Sommer ___ wir im See.', 'baden', 'Baden', 'V'],
+  ['Das Eis ist ___.', 'süß', 'Süß', 'A'], ['___ Pinguin rutscht über das Eis.', 'Der', 'der', 'S'], ['Wir trinken ___ zum Frühstück.', 'Kakao', 'kakao', 'N'],
+  ['Lena ___ ihr Zimmer auf.', 'räumt', 'Räumt', 'V'], ['Die Nacht ist ganz ___.', 'dunkel', 'Dunkel', 'A'], ['Auf der Wiese blühen viele ___.', 'Blumen', 'blumen', 'N'],
+  ['Der Zug ___ in den Bahnhof.', 'fährt', 'Fährt', 'V'], ['Mein Zimmer ist ___.', 'ordentlich', 'Ordentlich', 'A'], ['___ Schnee ist weiß.', 'Der', 'der', 'S'],
+  ['Im Wald wohnt ein ___.', 'Fuchs', 'fuchs', 'N'], ['Die Kinder ___ ein Lied.', 'singen', 'Singen', 'V'], ['Der Stein ist ___.', 'schwer', 'Schwer', 'A'],
+  ['___ spielen wir Verstecken.', 'Morgen', 'morgen', 'S'], ['Wir backen ___ für Weihnachten.', 'Plätzchen', 'plätzchen', 'N'], ['Der Clown ist sehr ___.', 'lustig', 'Lustig', 'A']
+]);
+K2_ALT.gross = 46;
+k2Extra('gross', [
+  ['s', 'Groß oder klein? Sortiere die Wörter.', ['großschreiben', 'kleinschreiben'], [['hund', 0], ['tisch', 0], ['sonne', 0], ['freundin', 0], ['laufen', 1], ['schön', 1], ['lachen', 1], ['bunt', 1]], 'Nomen schreibt man groß: Hund, Tisch, Sonne, Freundin. Verben und Adjektive schreibt man klein.'],
+  ['s', 'Groß oder klein? Sortiere die Wörter.', ['großschreiben', 'kleinschreiben'], [['schule', 0], ['apfel', 0], ['mama', 0], ['wolke', 0], ['springen', 1], ['müde', 1], ['essen', 1], ['klein', 1]], 'Nomen schreibt man groß: Schule, Apfel, Mama, Wolke. Verben und Adjektive schreibt man klein.']
+]);
+
+
+k2Neu(SPELL_DE, [
+  ['Bus', '🚌'], ['Ohr', '👂'], ['Hai', '🦈'], ['Zelt', '⛺'], ['Hand', '✋'], ['Bett', '🛏️'], ['Tor', '🥅'], ['Nest', '🪺'], ['Mais', '🌽'], ['Uhr', '⏰'], ['Kiwi', '🥝'], ['Rose', '🌹'], ['Ring', '💍'], ['Löwe', '🦁'], ['Wal', '🐳'],
+  ['Pinguin', '🐧'], ['Schaf', '🐑'], ['Pferd', '🐎'], ['Kirsche', '🍒'], ['Trommel', '🥁'], ['Gitarre', '🎸'], ['Schere', '✂️'], ['Leiter', '🪜'], ['Möhre', '🥕'], ['Brezel', '🥨'], ['Kamel', '🐪'], ['Erdbeere', '🍓'],
+  ['Schildkröte', '🐢', 3], ['Regenschirm', '☂️', 3], ['Schneemann', '⛄', 3]
+]);
+
+
+k2Neu(SILBENTRENNUNG, [
+  ['Ta-sche', 'Tas-che', 'Tasc-he', '👜', 'T-asche'], ['Bir-ne', 'Bi-rne', 'Birn-e', '🍐', 'B-irne'], ['Ho-se', 'Hos-e', 'H-ose', '👖', 'Ho-s-e'],
+  ['Kat-ze', 'Ka-tze', 'Katz-e', '🐈', 'K-atze'], ['Lö-we', 'Löw-e', 'L-öwe', '🦁', 'Lö-w-e'], ['Ra-ke-te', 'Rak-e-te', 'Ra-ket-e', '🚀', 'R-akete'],
+  ['Pin-guin', 'Ping-uin', 'Pi-nguin', '🐧', 'Pingu-in'], ['Gi-raf-fe', 'Gir-af-fe', 'Gi-ra-ffe', '🦒', 'Gira-ffe'], ['Ku-chen', 'Kuc-hen', 'Kuch-en', '🍰', 'K-uchen'],
+  ['Bä-cker', 'Bäck-er', 'Bäc-ker', '🥖', 'B-äcker'], ['Do-se', 'Dos-e', 'D-ose', '🥫', 'Do-s-e'], ['Mu-schel', 'Musch-el', 'Mus-chel', '🐚', 'M-uschel'],
+  ['Brü-cke', 'Brück-e', 'Brüc-ke', '🌉', 'B-rücke'], ['Pup-pe', 'Pu-ppe', 'Pupp-e', '🪆', 'P-uppe'], ['Kis-sen', 'Ki-ssen', 'Kiss-en', '🛏️', 'K-issen'],
+  ['Tel-ler', 'Te-ller', 'Tell-er', '🍽️', 'T-eller'], ['Ham-mer', 'Ha-mmer', 'Hamm-er', '🔨', 'H-ammer'], ['To-ma-te', 'Tom-a-te', 'To-mat-e', '🍅', 'T-omate'],
+  ['Scho-ko-la-de', 'Schok-o-la-de', 'Sch-o-ko-la-de', '🍫', 'Scho-kol-a-de'], ['Ro-bo-ter', 'Rob-o-ter', 'Ro-bot-er', '🤖', 'R-oboter'], ['Kür-bis', 'Kü-rbis', 'Kürb-is', '🎃', 'K-ürbis'],
+  ['Ka-mel', 'Kam-el', 'K-amel', '🐪', 'Ka-m-el'], ['Ze-bra', 'Zeb-ra', 'Zebr-a', '🦓', 'Z-ebra']
+]);
+
+
+k2Neu(SSZ, [
+  ['flie', 'ß', 'en', '🚿'], ['Strau', 'ß', '', '💐'], ['bei', 'ß', 'en', '🦷'], ['sto', 'ß', 'en', '🤾'], ['Sü', 'ß', 'igkeit', '🍬'], ['Fü', 'ß', 'e', '🦶'], ['schlie', 'ß', 'en', '🔒'], ['Gie', 'ß', 'kanne', '🪴'],
+  ['Fa', 'ss', '', '🛢️'], ['Ku', 'ss', '', '💋'], ['Me', 'ss', 'er', '🔪'], ['Ka', 'ss', 'e', '💰'], ['Schü', 'ss', 'el', '🥣'], ['Ri', 'ss', '', '👖'], ['wi', 'ss', 'en', '🧠'], ['Pa', 'ss', '', '🛂'],
+  ['Ho', 's', 'e', '👖'], ['Do', 's', 'e', '🥫'], ['Mu', 's', 'ik', '🎵'], ['Ra', 's', 'en', '🌱'], ['Gla', 's', '', '🥛'], ['Pin', 's', 'el', '🖌️']
+]);
+
+
+k2Neu(VORSILBEN, [
+  ['…laufen', 'sich so verirren, dass man den Weg nicht mehr findet', 'ver'], ['…laufen', 'als Erster vor den anderen her laufen', 'vor'], ['…schlafen', 'zu lange schlafen und zu spät aufwachen', 'ver'],
+  ['…wechseln', 'zwei Dinge aus Versehen durcheinanderbringen', 'ver'], ['…machen', 'etwas zeigen, damit es der andere nachmachen kann', 'vor'], ['…drängeln', 'sich in einer Schlange nach vorne schieben', 'vor'],
+  ['…kleiden', 'sich als Pirat oder Prinzessin anziehen', 'ver'], ['…mischen', 'zwei Dinge zusammenrühren', 'ver'], ['…teilen', 'Dinge gerecht an alle abgeben', 'ver'],
+  ['…stellen', 'sich so tun, als ob man jemand anderes wäre', 'ver'], ['…sicht', 'Achtung! Pass gut auf!', 'Vor'], ['…rat', 'Essen, das man für später aufhebt', 'Vor'],
+  ['…zeihen', 'jemandem einen Fehler nicht mehr übelnehmen', 'ver'], ['…brennen', 'im Feuer kaputtgehen', 'ver'], ['…hersagen', 'sagen, was in Zukunft passiert, zum Beispiel beim Wetter', 'vor'],
+  ['…schlag', 'eine Idee, die man den anderen sagt', 'Vor']
+]);
+
+
+(() => {
+  const T = [
+    ['Paul hat heute Geburtstag. Er wird acht Jahre alt. Zum Frühstück gibt es Kakao und einen Schokoladenkuchen mit acht Kerzen. Von Oma bekommt er einen roten Fußball.', [
+      ['Wie alt wird Paul?', 'acht Jahre', ['sieben Jahre', 'neun Jahre', 'sechs Jahre']], ['Was bekommt Paul von Oma?', 'einen roten Fußball', ['einen blauen Fußball', 'ein Buch', 'einen Kuchen']], ['Was trinkt Paul zum Frühstück?', 'Kakao', ['Saft', 'Tee', 'Milch']]]],
+    ['Im Herbst sammelt das Eichhörnchen Nüsse. Es versteckt sie im Boden und in Baumlöchern. Im Winter sucht es die Verstecke wieder. Manche Nüsse findet es nicht mehr. Daraus wachsen im Frühling neue Bäume.', [
+      ['Wo versteckt das Eichhörnchen die Nüsse?', 'im Boden und in Baumlöchern', ['in Vogelnestern', 'im Teich', 'auf dem Dach']], ['Was wird aus den vergessenen Nüssen?', 'neue Bäume', ['Steine', 'Pilze', 'Blätter']], ['Wann sammelt das Eichhörnchen Nüsse?', 'im Herbst', ['im Winter', 'im Frühling', 'im Sommer']]]],
+    ['Mia und Ben bauen am Strand eine Sandburg. Ben holt mit dem Eimer Wasser. Mia formt die Türme. Plötzlich kommt eine große Welle und spült einen Turm weg. Die beiden lachen und bauen weiter.', [
+      ['Wer holt das Wasser?', 'Ben', ['Mia', 'Mama', 'Lumi']], ['Was macht die große Welle?', 'Sie spült einen Turm weg.', ['Sie bringt Muscheln.', 'Sie macht die Burg größer.', 'Sie spült den Eimer weg.']], ['Was tun Mia und Ben danach?', 'Sie lachen und bauen weiter.', ['Sie weinen und gehen nach Hause.', 'Sie schimpfen laut.', 'Sie gehen schwimmen.']]]],
+    ['Der Igel ist ein Nachttier. Tagsüber schläft er in einem Versteck aus Laub. In der Nacht sucht er Käfer, Würmer und Schnecken. Bei Gefahr rollt er sich zu einer stacheligen Kugel zusammen.', [
+      ['Wann sucht der Igel Futter?', 'in der Nacht', ['am Morgen', 'am Mittag', 'nur im Winter']], ['Was macht der Igel bei Gefahr?', 'Er rollt sich zu einer Kugel zusammen.', ['Er rennt schnell weg.', 'Er klettert auf einen Baum.', 'Er springt ins Wasser.']], ['Was frisst der Igel?', 'Käfer, Würmer und Schnecken', ['Nüsse und Äpfel', 'Gras und Heu', 'Fische und Muscheln']]]],
+    ['Lena wünscht sich ein Haustier. Mama sagt: „Ein Tier braucht jeden Tag Futter und Pflege.“ Lena verspricht, sich zu kümmern. Am Samstag fahren sie ins Tierheim. Dort sitzt ein kleiner grauer Kater. Lena nennt ihn Wolke.', [
+      ['Wohin fahren Lena und Mama?', 'ins Tierheim', ['in den Zoo', 'zum Tierarzt', 'auf den Bauernhof']], ['Welche Farbe hat der Kater?', 'grau', ['schwarz', 'weiß', 'rot']], ['Wie nennt Lena den Kater?', 'Wolke', ['Sonne', 'Mond', 'Stern']]]],
+    ['Am Montag regnet es. Die Kinder bleiben in der Pause im Klassenraum. Sie spielen Memory und malen. Am Dienstag scheint wieder die Sonne. Endlich dürfen alle auf den Schulhof.', [
+      ['Warum bleiben die Kinder am Montag drinnen?', 'Weil es regnet.', ['Weil es schneit.', 'Weil es zu heiß ist.', 'Weil der Hof gesperrt ist.']], ['Was spielen die Kinder im Klassenraum?', 'Memory', ['Fußball', 'Verstecken', 'Fangen']], ['Wann dürfen alle wieder auf den Schulhof?', 'am Dienstag', ['am Montag', 'am Mittwoch', 'am Freitag']]]],
+    ['Opa hat einen Gemüsegarten. Im Frühling sät er Möhren und Bohnen. Ida hilft ihm beim Gießen. Im Sommer ernten sie zusammen. Die Möhren sind süß und knackig.', [
+      ['Was sät Opa im Frühling?', 'Möhren und Bohnen', ['Kartoffeln und Kürbisse', 'Erdbeeren und Äpfel', 'Blumen und Gras']], ['Wobei hilft Ida im Frühling?', 'beim Gießen', ['beim Kochen', 'beim Einkaufen', 'beim Rasenmähen']], ['Wie schmecken die Möhren?', 'süß und knackig', ['sauer und weich', 'bitter und hart', 'salzig und scharf']]]],
+    ['Pinguine leben auf der Südhalbkugel. Sie können nicht fliegen, aber sehr gut schwimmen. Unter Wasser jagen sie Fische. An Land watscheln sie oder rutschen auf dem Bauch über das Eis.', [
+      ['Was können Pinguine sehr gut?', 'schwimmen', ['fliegen', 'klettern', 'graben']], ['Was jagen Pinguine unter Wasser?', 'Fische', ['Vögel', 'Mäuse', 'Käfer']], ['Wie kommen Pinguine über das Eis?', 'Sie watscheln oder rutschen auf dem Bauch.', ['Sie fliegen.', 'Sie fahren Schlitten.', 'Sie springen von Baum zu Baum.']]]]
+  ];
+  k2Neu(LESEN_DE_FLAT, T.flatMap(([t, qs]) => qs.map(q => [t, ...q])));
+})();
+
+
+k2Neu(SAETZE_DE, ['Der Igel rollt sich zusammen.', 'Die Ente schwimmt auf dem Teich.', 'Das Pferd frisst frisches Heu.', 'Die Kinder bauen einen Schneemann.', 'Der Wind weht über das Feld.',
+  'Die Sonne geht im Osten auf.', 'Das Baby schläft in der Wiege.', 'Der Fuchs hat einen buschigen Schwanz.', 'Die Lehrerin liest eine Geschichte vor.', 'Der Hahn kräht am frühen Morgen.',
+  'Die Bienen sammeln süßen Nektar.', 'Der Zug hält am Bahnhof.', 'Die Kuh steht auf der Weide.', 'Wo ist mein blauer Turnbeutel?', 'Kommst du heute zum Spielen?', 'Hast du deine Hausaufgaben gemacht?',
+  'Der Hund buddelt ein tiefes Loch.', 'Die Schnecke kriecht ganz langsam.', 'Das Flugzeug fliegt über die Wolken.', 'Der Mond leuchtet in der Nacht.', 'Die Feuerwehr löscht das Feuer.',
+  'Das Eichhörnchen versteckt eine Nuss.', 'Der Regenbogen hat viele Farben.']);
+
+
+k2Neu(SATZZEICHEN, [
+  ['Ida spielt gern Fußball', '.'], ['Im Winter ist es kalt', '.'], ['Der Zug kommt um acht Uhr', '.'], ['Wir gehen heute schwimmen', '.'], ['Mein Opa wohnt am Meer', '.'], ['Die Blätter werden bunt', '.'], ['Ich habe einen kleinen Bruder', '.'], ['Der Bus ist schon weg', '.'],
+  ['Wie heißt dein Hund', '?'], ['Kommst du mit zum Spielplatz', '?'], ['Wann beginnt der Film', '?'], ['Hast du meinen Stift gesehen', '?'], ['Wo wohnt deine Oma', '?'], ['Warum ist der Himmel blau', '?'], ['Magst du Erdbeeren', '?'], ['Wer hat den Ball', '?'],
+  ['Komm schnell her', '!'], ['Hilfe, ich falle', '!'], ['Vorsicht, heiß', '!'], ['Hör sofort auf', '!'], ['Juhu, wir haben gewonnen', '!'], ['Pass auf die Autos auf', '!'], ['Mach bitte die Tür zu', '!'], ['Lauf, Lumi, lauf', '!']
+]);
+K2_ALT.satzzeichen = 52;
+k2Extra('satzzeichen', [
+  ['s', 'Welches Satzzeichen gehört ans Ende?', ['Punkt', 'Fragezeichen', 'Ausrufezeichen'], [['Ich heiße Ida', 0], ['Der Ball ist im Tor', 0], ['Wie heißt du', 1], ['Wo ist der Ball', 1], ['Hilfe', 2], ['Komm sofort her', 2]], 'Erzählsatz: Punkt. Frage: Fragezeichen. Ausruf oder Aufforderung: Ausrufezeichen.']
+]);
+
+
+k2Neu(REDE, [
+  ['Lena', 'fragt', 'Kommst du mit?'], ['Papa', 'ruft', 'Das Essen ist fertig!'], ['Die Lehrerin', 'sagt', 'Packt bitte eure Hefte aus.'], ['Tom', 'flüstert', 'Ich habe ein Geheimnis.'],
+  ['Oma', 'fragt', 'Möchtest du Kakao?'], ['Der Trainer', 'ruft', 'Lauf schneller!'], ['Ida', 'jubelt', 'Ich habe ein Tor geschossen!'], ['Ben', 'antwortet', 'Ich bin acht Jahre alt.'],
+  ['Mama', 'sagt', 'Schlaf gut.'], ['Der Busfahrer', 'sagt', 'Bitte alle einsteigen.'], ['Opa', 'erzählt', 'Früher hatten wir keinen Fernseher.'], ['Finn', 'schreit', 'Hilfe, eine Spinne!'],
+  ['Die Ärztin', 'fragt', 'Wo tut es weh?'], ['Lumi', 'sagt', 'Ich liebe Fisch.'], ['Ella', 'fragt', 'Wie spät ist es?'], ['Paul', 'murmelt', 'Ich bin so müde.'],
+  ['Der Bäcker', 'fragt', 'Was darf es sein?'], ['Mia', 'ruft', 'Schau mal, ein Regenbogen!'], ['Noah', 'bittet', 'Kannst du mir helfen?'], ['Die Kinder', 'rufen', 'Herzlichen Glückwunsch!']
+]);
+
+
+k2Neu(PRAEDIKAT, [
+  ['Der Bäcker backt Brot.', 'backt'], ['Ida rennt über die Wiese.', 'rennt'], ['Die Ente schwimmt im Teich.', 'schwimmt'], ['Mama kocht eine Suppe.', 'kocht'], ['Der Wind weht stark.', 'weht'],
+  ['Wir singen ein Lied.', 'singen'], ['Das Baby lacht laut.', 'lacht'], ['Ben schreibt einen Brief.', 'schreibt'], ['Die Kuh frisst Gras.', 'frisst'], ['Der Mond leuchtet hell.', 'leuchtet'],
+  ['Lumi rutscht über das Eis.', 'rutscht'], ['Die Kinder klatschen in die Hände.', 'klatschen'], ['Opa repariert das Fahrrad.', 'repariert'], ['Im Teich quakt ein Frosch.', 'quakt'], ['Der Schnee glitzert in der Sonne.', 'glitzert'],
+  ['Ella trinkt einen Kakao.', 'trinkt'], ['Am Morgen kräht der Hahn.', 'kräht'], ['Der Hund buddelt im Garten.', 'buddelt'], ['Die Feuerwehr kommt schnell.', 'kommt'], ['Meine Schwester tanzt gern.', 'tanzt']
+]);
+
+
+k2Neu(TEXTSORTEN, [
+  ['Es war einmal ein kleiner Drache, der konnte kein Feuer speien. Eines Tages traf er eine weise Eule.', 'Märchen'],
+  ['Vor langer, langer Zeit lebte ein König mit drei Töchtern in einem prächtigen Schloss.', 'Märchen'],
+  ['Es war einmal eine Maus, die wollte den Mond besuchen. Also baute sie sich eine Leiter aus Käse.', 'Märchen'],
+  ['Kleine Schnecke, sacht und leis, / zieht im Garten ihren Kreis. / Trägt ihr Häuschen überall, / kommt nie an, auf keinen Fall.', 'Gedicht'],
+  ['Im Herbst, da tanzt das bunte Laub, / es wirbelt hoch und fällt in Staub. / Der Igel kriecht ins Blätterbett / und findet es dort warm und nett.', 'Gedicht'],
+  ['Der Maulwurf lebt unter der Erde. Mit seinen großen Vorderpfoten gräbt er lange Gänge. Er frisst Regenwürmer und Insekten.', 'Sachtext'],
+  ['An der Nordsee gibt es Ebbe und Flut. Zweimal am Tag zieht sich das Wasser zurück. Dann kann man im Watt laufen.', 'Sachtext'],
+  ['Liebe Oma, / vielen Dank für das schöne Buch! Ich lese jeden Abend darin. / Viele Grüße, deine Lena', 'Brief'],
+  ['Hallo Tom, / ich lade dich zu meinem Geburtstag am Samstag ein. Wir feiern im Garten. / Bis bald, dein Ben', 'Brief'],
+  ['So pflanzt du Kresse: Lege Watte in eine Schale. Streue die Samen darauf. Gieße jeden Tag ein wenig Wasser.', 'Anleitung'],
+  ['So machst du einen Obstsalat: Wasche das Obst. Schneide es in kleine Stücke. Mische alles in einer Schüssel.', 'Anleitung']
+]);
+
+
+k2Neu(LESERAETSEL, [
+  ['Ich habe Zeiger und Zahlen. Ich zeige dir, wie spät es ist.', 'die Uhr', ['der Kalender', 'das Telefon', 'das Lineal']],
+  ['Ich habe zwei Räder und eine Klingel. Du trittst in meine Pedale.', 'das Fahrrad', ['das Auto', 'der Roller', 'das Skateboard']],
+  ['Ich bin kalt und süß. Im Sommer schlecken mich alle gern.', 'das Eis', ['der Kuchen', 'die Suppe', 'der Tee']],
+  ['Ich bin ganz weiß, weich und falle im Winter in Flocken vom Himmel.', 'der Schnee', ['der Regen', 'der Wind', 'der Nebel']],
+  ['Ich wohne im Wasser und habe Flossen und Schuppen.', 'der Fisch', ['der Frosch', 'die Ente', 'der Delfin']],
+  ['Ich habe Stacheln und rolle mich zu einer Kugel, wenn Gefahr droht.', 'der Igel', ['der Kaktus', 'das Stachelschwein', 'die Kastanie']],
+  ['Ich habe eine Mine und schreibe grau. Wenn ich stumpf bin, spitzt man mich.', 'der Bleistift', ['der Füller', 'der Pinsel', 'die Kreide']],
+  ['In mir trägst du Hefte und Bücher auf dem Rücken zur Schule.', 'der Ranzen', ['die Federmappe', 'die Brotdose', 'der Turnbeutel']],
+  ['Ich leuchte nachts am Himmel und bin mal rund, mal schmal wie eine Sichel.', 'der Mond', ['die Sonne', 'der Stern', 'die Wolke']],
+  ['Ich bin gelb, sehr sauer und saftig.', 'die Zitrone', ['die Banane', 'die Birne', 'der Apfel']],
+  ['Ich habe vier Pfoten, schnurre und fange gern Mäuse.', 'die Katze', ['der Hund', 'der Hase', 'der Igel']],
+  ['Ich habe lange Ohren und rufe laut „I-A“.', 'der Esel', ['das Pferd', 'die Kuh', 'das Schaf']],
+  ['Man spannt mich auf, wenn es regnet, und hält mich über den Kopf.', 'der Regenschirm', ['die Sonnenbrille', 'der Schal', 'die Handschuhe']],
+  ['Ich habe viele Tasten mit Buchstaben. Mit mir schreibst du am Computer.', 'die Tastatur', ['die Maus', 'das Klavier', 'die Fernbedienung']],
+  ['Ich bin ein Haus aus Schnee und Eis.', 'das Iglu', ['das Zelt', 'die Hütte', 'die Burg']],
+  ['Ich fahre über das Meer und habe einen Anker.', 'das Schiff', ['der Zug', 'das Flugzeug', 'der Bus']],
+  ['Ich bin rot, habe kleine gelbe Kerne außen und schmecke süß.', 'die Erdbeere', ['die Kirsche', 'die Tomate', 'der Apfel']],
+  ['In mir wohnen viele Bienen, und es riecht nach Honig.', 'der Bienenstock', ['der Ameisenhaufen', 'das Vogelnest', 'die Hundehütte']]
+]);
+
+
+k2Neu(SINN, [
+  ['Der Hund wedelt mit dem Schwanz.', true], ['Im Herbst fallen die Blätter von den Bäumen.', true], ['Wir putzen uns die Zähne mit der Zahnbürste.', true], ['Die Kuh frisst Gras auf der Weide.', true],
+  ['Nachts scheint oft der Mond.', true], ['Im Winter tragen wir eine Mütze.', true], ['Der Bäcker backt Brot.', true], ['Fische schwimmen im Wasser.', true],
+  ['Mit der Schere schneide ich Papier.', true], ['Die Feuerwehr löscht das Feuer.', true], ['Im Kühlschrank ist es kalt.', true], ['Der Vogel baut ein Nest.', true],
+  ['Die Katze bellt den Briefträger an.', false], ['Wir essen die Suppe mit der Gabel.', false], ['Der Elefant passt in meine Hosentasche.', false], ['Der Schneemann schmilzt im Gefrierschrank.', false],
+  ['Nachts scheint die Sonne hell ins Zimmer.', false], ['Der Fisch fliegt über die Wolken.', false], ['Ich schneide das Brot mit dem Löffel.', false], ['Die Schnecke rennt schneller als ein Auto.', false],
+  ['Der Baum geht im Park spazieren.', false], ['Das Eis ist heiß wie Feuer.', false]
+]);
+
+
+k2Neu(BILDGESCHICHTEN, [
+  ['Pfannkuchen backen', ['🥚 Eier, Mehl und Milch verrühren', '🍳 Teig in die Pfanne geben', '🔄 Pfannkuchen wenden', '🍽️ Pfannkuchen essen']],
+  ['Der Brief', ['✏️ Brief schreiben', '✉️ in den Umschlag stecken', '📮 in den Briefkasten werfen', '📬 Oma liest den Brief']],
+  ['Der Drachen', ['✂️ Drachen basteln', '🌬️ Der Wind kommt auf.', '🏃 mit dem Drachen loslaufen', '🪁 Der Drachen fliegt hoch.']],
+  ['Die Pflanze', ['🥀 Die Pflanze ist trocken.', '💧 Gießkanne füllen', '🪴 Pflanze gießen', '🌿 Die Pflanze ist wieder frisch.']],
+  ['Der Regentag', ['🌧️ Es regnet.', '🧥 Regenjacke anziehen', '🥾 durch Pfützen springen', '🛁 zu Hause warm baden']],
+  ['Schlafenszeit', ['🪥 Zähne putzen', '👕 Schlafanzug anziehen', '📖 Geschichte vorlesen', '😴 einschlafen']],
+  ['Der Ausflug', ['🎒 Rucksack packen', '🚌 mit dem Bus fahren', '🦁 Tiere im Zoo ansehen', '🏠 müde nach Hause kommen']],
+  ['Das Fußballspiel', ['👟 Fußballschuhe anziehen', '⚽ Anpfiff', '🥅 ein Tor schießen', '🏆 den Pokal bekommen']],
+  ['Die Schneeballschlacht', ['❄️ Es schneit.', '🧤 Handschuhe anziehen', '⚪ Schneebälle formen', '😂 Schneebälle werfen']],
+  ['Der Kakao', ['🥛 Milch warm machen', '🍫 Kakaopulver einrühren', '☕ in die Tasse gießen', '😋 Kakao trinken']]
+]);
+
+
+k2Neu(SG_TEXTE, [
+  ['Der Wind ist stark.', 'Die Blätter fliegen durch die Luft.', 'Ich halte meine Mütze fest.'], ['Ben hat Hunger.', 'Er öffnet den Kühlschrank.', 'Dort findet er einen Joghurt.'],
+  ['Es klingelt an der Tür.', 'Oma ist zu Besuch.', 'Sie bringt einen Kuchen mit.', 'Alle freuen sich.'], ['Ida malt ein Bild.', 'Es zeigt einen großen Wal.', 'Sie hängt es an die Wand.'],
+  ['Im Zoo ist viel los.', 'Die Affen klettern herum.', 'Der Löwe schläft in der Sonne.'], ['Heute ist Waschtag.', 'Papa hängt die Wäsche auf.', 'Der Wind trocknet sie schnell.'],
+  ['Die Glocke läutet.', 'Die Pause ist vorbei.', 'Alle Kinder gehen in die Klasse.'], ['Finn verliert einen Zahn.', 'Er legt ihn unter das Kissen.', 'Am Morgen liegt dort eine Münze.', 'Finn staunt.'],
+  ['Es schneit seit dem Morgen.', 'Wir holen den Schlitten.', 'Dann sausen wir den Hügel hinunter.'], ['Lumi springt ins Meer.', 'Er taucht nach Fischen.', 'Mit vollem Bauch rutscht er zurück aufs Eis.'],
+  ['Die Ampel ist rot.', 'Wir bleiben stehen.', 'Bei Grün gehen wir über die Straße.'], ['Mia hat Geburtstag.', 'Sie wird acht.', 'Ihre Freunde singen für sie.', 'Danach gibt es Kuchen.']
+]);
+
+
+k2Neu(FRAGEWOERTER, [
+  ['… spielt heute im Tor? Ich!', 'Wer'], ['… liegt auf dem Tisch? Ein Buch.', 'Was'], ['… fliegt der Storch im Herbst? Nach Afrika.', 'Wohin'], ['… kommt der Brief? Aus Spanien.', 'Woher'],
+  ['… schenkst du die Blumen? Meiner Mama.', 'Wem'], ['… triffst du nach der Schule? Meinen Freund Tom.', 'Wen'], ['… ist die Banane krumm? Weil sie zur Sonne hin wächst.', 'Warum'], ['… viele Beine hat eine Spinne? Acht.', 'Wie'],
+  ['… fängt der Film an? Um vier Uhr.', 'Wann'], ['… parkt das Auto? Vor dem Haus.', 'Wo'], ['… hat Lumi im Schnabel? Einen Fisch.', 'Was'], ['… hat dir das Fahrrad geschenkt? Mein Opa.', 'Wer'],
+  ['… schmeckt die Suppe? Sehr lecker!', 'Wie'], ['… gehst du nach dem Essen? In den Garten.', 'Wohin'], ['… stammt diese Muschel? Vom Strand.', 'Woher'], ['… gibst du den Ball? Dem Torwart.', 'Wem'],
+  ['… fragst du um Hilfe? Meine Lehrerin.', 'Wen'], ['… bist du so fröhlich? Weil heute die Ferien beginnen.', 'Warum'], ['… fährt der nächste Bus? In zehn Minuten.', 'Wann']
+]);
+K2_ALT.fragewoerter = 43;
+k2Extra('fragewoerter', [
+  ['z', 'Welche Antwort passt zum Fragewort? Ordne zu.', [['Wo?', 'im Garten'], ['Wann?', 'um acht Uhr'], ['Wer?', 'meine Oma'], ['Warum?', 'weil es regnet'], ['Wohin?', 'in den Zoo'], ['Wie viele?', 'drei Äpfel']]]
+]);
+
+
+k2Neu(KOMP1, [
+  ['Schnee', 'Mann', 'der', 'Schneemann'], ['Sonne', 'Blume', 'die', 'Sonnenblume'], ['Hand', 'Schuh', 'der', 'Handschuh'], ['Kinder', 'Zimmer', 'das', 'Kinderzimmer'],
+  ['Brief', 'Kasten', 'der', 'Briefkasten'], ['Regen', 'Bogen', 'der', 'Regenbogen'], ['Zahn', 'Bürste', 'die', 'Zahnbürste'], ['Haus', 'Aufgabe', 'die', 'Hausaufgabe'],
+  ['Schule', 'Hof', 'der', 'Schulhof'], ['Wasser', 'Flasche', 'die', 'Wasserflasche'], ['Butter', 'Brot', 'das', 'Butterbrot'], ['Blume', 'Topf', 'der', 'Blumentopf'],
+  ['Geburtstag', 'Kuchen', 'der', 'Geburtstagskuchen'], ['Apfel', 'Saft', 'der', 'Apfelsaft'], ['Vogel', 'Nest', 'das', 'Vogelnest'], ['Bett', 'Decke', 'die', 'Bettdecke'],
+  ['Spiel', 'Platz', 'der', 'Spielplatz'], ['Hund', 'Hütte', 'die', 'Hundehütte']
+]);
+
+
+k2Neu(B24_ADJ1, [
+  ['Der Clown hat eine rote Nase.', 'rote', ['Clown', 'hat', 'Nase']], ['Das Wasser im Meer ist salzig.', 'salzig', ['Wasser', 'Meer', 'ist']], ['Lumi hat einen dicken Bauch.', 'dicken', ['Lumi', 'hat', 'Bauch']],
+  ['Die Giraffe hat einen langen Hals.', 'langen', ['Giraffe', 'hat', 'Hals']], ['Im Wald ist es dunkel.', 'dunkel', ['Wald', 'ist', 'es']], ['Der Kuchen schmeckt süß.', 'süß', ['Kuchen', 'schmeckt', 'Der']],
+  ['Mein Bruder hat neue Schuhe.', 'neue', ['Bruder', 'hat', 'Schuhe']], ['Die Schnecke kriecht langsam.', 'langsam', ['Schnecke', 'kriecht', 'Die']], ['Ida trägt ein gelbes Kleid.', 'gelbes', ['Ida', 'trägt', 'Kleid']],
+  ['Das Baby ist winzig.', 'winzig', ['Baby', 'ist', 'Das']], ['Der Tee ist noch heiß.', 'heiß', ['Tee', 'ist', 'noch']], ['Wir sehen einen bunten Schmetterling.', 'bunten', ['sehen', 'einen', 'Schmetterling']]
+]);
+k2Neu(B24_ADJ2, [
+  ['Die Feder ist ganz ___.', 'leicht', ['schwer', 'laut']], ['Der Stein ist sehr ___.', 'hart', ['weich', 'flüssig']], ['Die Schnecke ist ___.', 'langsam', ['schnell', 'laut']],
+  ['Im Sommer ist es oft ___.', 'heiß', ['eisig', 'dunkel']], ['Das Kissen ist schön ___.', 'weich', ['spitz', 'hart']], ['Die Musik ist zu ___. Mir tun die Ohren weh.', 'laut', ['leise', 'süß']],
+  ['Nach dem Regen ist die Straße ___.', 'nass', ['trocken', 'staubig']], ['Der Hund hat ein ___ Fell.', 'weiches', ['eckiges', 'saures']], ['Die Giraffe ist sehr ___.', 'groß', ['winzig', 'flach']],
+  ['Nach dem Malen sind meine Hände ganz ___.', 'schmutzig', ['sauber', 'durchsichtig']], ['Die Nacht ist ___.', 'dunkel', ['hell', 'sonnig']], ['Der Witz ist richtig ___.', 'lustig', ['traurig', 'eckig']]
+]);
+
+
+k2Neu(B24_IGLICH, [
+  ['ries', 'ig', 'der riesige Wal', '🐳'], ['eis', 'ig', 'der eisige Wind', '🥶'], ['wolk', 'ig', 'der wolkige Himmel', '☁️'], ['salz', 'ig', 'die salzige Suppe', '🧂'],
+  ['flausch', 'ig', 'die flauschige Decke', '🧸'], ['saft', 'ig', 'die saftige Birne', '🍐'],
+  ['herz', 'lich', 'die herzliche Umarmung', '🤗'], ['nütz', 'lich', 'das nützliche Werkzeug', '🔧'], ['höf', 'lich', 'das höfliche Kind', '🙇'], ['gründ', 'lich', 'das gründliche Putzen', '🧽'],
+  ['täg', 'lich', 'die tägliche Zeitung', '📰'], ['sport', 'lich', 'die sportliche Läuferin', '🏃']
+]);
+
+
+k2Neu(B24_MERK, [
+  ['Bü', 'chs', 'e', '🥫', ['chs', 'x', 'ks'], 'chs'], ['se', 'chs', '', '6️⃣', ['chs', 'x', 'ks'], 'chs'], ['Bo', 'x', '', '📦', ['chs', 'x', 'ks'], 'x'], ['Mi', 'x', 'er', '🥤', ['chs', 'x', 'ks'], 'x'],
+  ['', 'Qu', 'iz', '❓', ['Qu', 'Kw'], 'qu'], ['', 'qu', 'ietschen', '🦆', ['qu', 'kw'], 'qu'], ['', 'Qu', 'irl', '🥄', ['Qu', 'Kw'], 'qu'], ['', 'qu', 'er', '↔️', ['qu', 'kw'], 'qu'],
+  ['L', 'ai', 'b', '🍞', ['ai', 'ei'], 'ai'], ['S', 'ai', 'te', '🎸', ['ai', 'ei'], 'ai'], ['K', 'ai', '', '⚓', ['ai', 'ei'], 'ai']
+]);
+
+
+k2Neu(B24_GESCH, [
+  ['Beim Zahnarzt', ['Heute muss Ben zum Zahnarzt.', 'Zuerst wartet er im Wartezimmer.', 'Dann setzt er sich auf den großen Stuhl.', 'Die Zahnärztin schaut sich jeden Zahn an.', 'Zum Schluss bekommt Ben einen Aufkleber.'], 2],
+  ['Der Laternenumzug', ['Am Abend ist es schon dunkel.', 'Zuerst zündet Papa die Laterne an.', 'Dann gehen alle Kinder durch die Straßen.', 'Dabei singen sie Laternenlieder.', 'Am Ende gibt es warmen Kakao.'], 3],
+  ['Das Fußballtraining', ['Am Nachmittag ist Fußballtraining.', 'Zuerst laufen sich alle warm.', 'Dann üben die Kinder Pässe.', 'Danach spielen sie ein kleines Spiel.', 'Zum Schluss sammeln alle die Bälle ein.'], 2],
+  ['Die Pizza', ['Lea und Opa wollen Pizza machen.', 'Zuerst kneten sie den Teig.', 'Dann streichen sie Tomatensoße darauf.', 'Danach legen sie Käse und Paprika obendrauf.', 'Nach dem Backen schmeckt die Pizza herrlich.'], 3],
+  ['Der verlorene Handschuh', ['Auf dem Schulweg verliert Tim einen Handschuh.', 'In der Schule merkt er, dass er fehlt.', 'Nach der Schule geht er den Weg zurück.', 'Am Zaun entdeckt er seinen Handschuh.', 'Jemand hat ihn dort für ihn aufgehängt.'], 2],
+  ['In der Bücherei', ['Mia möchte ein neues Buch lesen.', 'Zuerst geht sie in die Bücherei.', 'Dort sucht sie im Regal ein Tierbuch aus.', 'Dann leiht sie das Buch an der Theke aus.', 'Zu Hause liest sie gleich die ersten Seiten.'], 3]
+]);
+
+
+k2Neu(SW_SAETZE, [
+  ['Die Kuh ist braun.', 1], ['Wir malen ein Bild.', 1], ['Der Fisch schwimmt.', 1], ['Ich mag Eis.', 1], ['Das Auto ist rot.', 1], ['Oma liest gern.', 1],
+  ['Die Ente schwimmt im Teich.', 2], ['Ich spiele mit meinem Ball.', 2], ['Wir essen heute Nudeln.', 2], ['Der Wind weht sehr stark.', 2], ['Die Kinder lachen laut.', 2], ['Am Strand bauen wir eine Burg.', 2],
+  ['Im Sommer fahren wir an die Nordsee.', 3], ['Der Igel schläft im Winter unter dem Laub.', 3], ['Mein Freund kommt heute zum Spielen.', 3], ['Die Biene sammelt süßen Nektar.', 3], ['Wann gehen wir endlich zum Fußballplatz?', 3], ['Auf der Straße liegt viel Schnee.', 3]
+]);
+
+
+k2Neu(L8_S[1], ['Der {Hase|Nase|Vase|Hose} hoppelt über die Wiese.', 'Im Teich schwimmt ein {Fisch|Tisch|Frisch|Fleisch}.', 'Lea isst einen {Apfel|Ampel|Affen|Angel}.',
+  'Die {Maus|Haus|Laus|Mais} frisst Käse.', 'Papa liest die {Zeitung|Zeichnung|Zeltung|Zeitlupe}.', 'Auf dem Dach sitzt eine {Möwe|Löwe|Möhre|Mühle}.', 'Ben fährt mit dem {Rad|Rat|Rand|Bad}.',
+  'Im Wald steht ein {Baum|Raum|Saum|Traum}.', 'Die {Sonne|Tonne|Nonne|Sohle} scheint hell.', 'Wir backen einen {Kuchen|Kochen|Küchen|Kugeln}.']);
+k2Neu(L8_S[2], ['Die Kinder {laufen|kaufen|taufen|raufen} über den Hof.', 'Mama {kocht|kauft|kostet|klopft} eine Suppe.', 'Der Hund {bellt|hellt|fällt|bleibt} am Zaun.',
+  'Tim {malt|mahlt|meint|macht} ein Bild.', 'Im Herbst {fallen|fehlen|füllen|fallten} die Blätter.', 'Die Katze {springt|singt|spinnt|schlingt} auf den Tisch.',
+  'Oma {strickt|streicht|stickt|streckt} einen Schal.', 'Wir {spielen|spülen|spalten|spiegeln} im Garten.']);
+
+
+k2Neu(PRAEDIKAT, [['Der Frosch springt ins Wasser.', 'springt'], ['Wir bauen eine Höhle.', 'bauen'], ['Die Glocke läutet laut.', 'läutet'], ['Paul putzt seine Zähne.', 'putzt'], ['Die Blätter rascheln im Wind.', 'rascheln']]);
+k2Neu(TEXTSORTEN, [
+  ['Es war einmal ein armes Mädchen, das fand im Wald einen goldenen Schlüssel.', 'Märchen'],
+  ['Vor vielen, vielen Jahren lebte tief im Wald eine freundliche Hexe.', 'Märchen'],
+  ['Der Schneemann steht im Garten, / er muss auf Kinder warten. / Die Sonne lacht ihn an, / da schmilzt der Schneemann dann.', 'Gedicht'],
+  ['Am Meer, da weht ein frischer Wind, / da spielt im Sand ein kleines Kind. / Es baut ein Schloss mit Turm und Tor, / die Möwen kreischen laut im Chor.', 'Gedicht'],
+  ['Bienen leben in einem Bienenstock. Die Königin legt die Eier. Die Arbeiterinnen sammeln Nektar und machen daraus Honig.', 'Sachtext'],
+  ['Der Herbst beginnt im September. Die Blätter färben sich bunt und fallen von den Bäumen. Viele Vögel fliegen in den Süden.', 'Sachtext'],
+  ['Lieber Opa, / ich habe im Schwimmkurs mein Seepferdchen geschafft! Kommst du bald zu Besuch? / Dein Finn', 'Brief'],
+  ['So faltest du einen Papierflieger: Falte das Blatt in der Mitte. Knicke die oberen Ecken nach innen. Falte die Flügel nach unten.', 'Anleitung']
+]);
+k2Neu(LESERAETSEL, [
+  ['Ich habe einen langen Rüssel und große Ohren.', 'der Elefant', ['die Giraffe', 'das Nashorn', 'das Nilpferd']],
+  ['Ich bin aus Glas, und durch mich schaust du nach draußen.', 'das Fenster', ['die Tür', 'der Spiegel', 'das Bild']],
+  ['Ich bin orange, wachse unter der Erde, und Hasen knabbern mich gern.', 'die Möhre', ['die Kartoffel', 'der Kürbis', 'die Orange']],
+  ['Man zieht mich über die Füße, damit sie warm bleiben. Ich bin oft aus Wolle.', 'die Socke', ['der Handschuh', 'die Mütze', 'der Schal']],
+  ['Ich klingle morgens laut, damit du aufwachst.', 'der Wecker', ['die Türklingel', 'das Radio', 'die Sanduhr']]
+]);
+k2Neu(BILDGESCHICHTEN, [
+  ['Einkaufen', ['📝 Einkaufszettel schreiben', '🛒 Sachen in den Wagen legen', '💶 an der Kasse bezahlen', '🏠 Einkäufe nach Hause tragen']],
+  ['Die Sandburg', ['🪣 Eimer mit Sand füllen', '🏰 Burg bauen', '🌊 Eine Welle kommt.', '😮 Die Burg ist weg.']],
+  ['Händewaschen', ['🚰 Hände nass machen', '🧼 einseifen', '💧 abspülen', '🧻 abtrocknen']],
+  ['Der Geburtstag', ['🎈 Die Gäste kommen.', '🎁 Geschenke auspacken', '🎂 Kerzen auspusten', '🍰 Kuchen essen']],
+  ['Das Vogelhaus', ['🪵 Holz besorgen', '🔨 Vogelhaus bauen', '🌻 Futter hineinlegen', '🐦 Ein Vogel kommt.']],
+  ['Die Kürbislaterne', ['🎃 Kürbis kaufen', '🥄 Kürbis aushöhlen', '🔪 Gesicht ausschneiden lassen', '🕯️ Licht hineinstellen']],
+  ['Der Schulmorgen', ['⏰ Der Wecker klingelt.', '🥣 frühstücken', '🎒 Ranzen aufsetzen', '🏫 in die Schule gehen']],
+  ['Die Seifenblasen', ['🧴 Seifenwasser anrühren', '⭕ Ring eintauchen', '💨 vorsichtig pusten', '🫧 Die Seifenblasen fliegen.']],
+  ['Der Apfelbaum', ['🌸 Der Baum blüht.', '🍏 Kleine Äpfel wachsen.', '🍎 Die Äpfel werden rot.', '🧺 Äpfel pflücken']],
+  ['Das Puzzle', ['📦 Schachtel öffnen', '🧩 Randteile suchen', '🖼️ die Mitte zusammensetzen', '😃 Das Bild ist fertig.']]
+]);
+k2Neu(B24_GESCH, [
+  ['Der Ausflug ans Meer', ['Am Sonntag fährt Familie Berg an die Nordsee.', 'Zuerst packen sie Handtücher und Brote ein.', 'Dann fahren sie mit dem Zug zum Strand.', 'Dort bauen die Kinder eine Sandburg.', 'Am Abend fahren alle müde nach Hause.'], 2],
+  ['Das Geschenk', ['Bald hat Mama Geburtstag.', 'Zuerst überlegt Lina, was Mama gefällt.', 'Dann malt sie ein schönes Bild.', 'Danach packt sie es in buntes Papier.', 'Am Geburtstag freut sich Mama sehr.'], 3],
+  ['Der kranke Hund', ['Bello will nicht fressen.', 'Zuerst ruft Papa beim Tierarzt an.', 'Dann fahren sie mit Bello in die Praxis.', 'Die Tierärztin untersucht ihn und gibt ihm eine Spritze.', 'Am nächsten Tag frisst Bello wieder.'], 2],
+  ['Die Schnecke im Garten', ['Nach dem Regen ist der Garten nass.', 'Zuerst entdeckt Emil eine Schnecke.', 'Dann holt er eine Lupe.', 'Er beobachtet ihre Fühler ganz genau.', 'Danach setzt er sie vorsichtig ins Gras.'], 3],
+  ['Das Baumhaus', ['Opa und Jana wollen ein Baumhaus bauen.', 'Zuerst suchen sie einen starken Baum.', 'Dann sägen sie Bretter zurecht.', 'Danach nageln sie die Bretter fest.', 'Am Ende klettert Jana stolz hinauf.'], 2],
+  ['Am Lagerfeuer', ['Am Abend sitzt die Klasse im Schullandheim zusammen.', 'Zuerst sammeln alle trockene Äste.', 'Dann zündet der Lehrer das Feuer an.', 'Alle backen Stockbrot über der Glut.', 'Zum Schluss löscht der Lehrer das Feuer mit Wasser.'], 3]
+]);
+k2Neu(B24_MERK, [['', 'Qu', 'ader', '🧱', ['Qu', 'Kw'], 'qu'], ['A', 'chs', 'e', '🛞', ['chs', 'x', 'ks'], 'chs'], ['Bo', 'x', 'er', '🥊', ['chs', 'x', 'ks'], 'x']]);
+
+/*@@src k2_englisch610.js@@*/
+
+
+const K2_EN = { lang: 'en-GB' };
+
+
+k2Neu(PHRASEN, [
+  ['Du willst wissen, wie spät es ist. Was fragst du?', 'What time is it?', ['How old are you?', 'Where is it?']],
+  ['Du hast etwas nicht verstanden. Was sagst du?', 'Can you say that again, please?', ['I like it.', 'See you later!']],
+  ['Du musst auf die Toilette. Was fragst du?', 'May I go to the toilet, please?', ['May I have an apple, please?', 'Can I play outside?']],
+  ['Du willst wissen, wie es deiner Freundin geht. Was fragst du?', 'How are you?', ['Who are you?', 'Where are you?']],
+  ['Du möchtest ein Eis kaufen. Was sagst du?', 'An ice cream, please.', ['A sandwich, please.', 'A cup of tea, please.']],
+  ['Du willst fragen, ob dein Freund mitspielen möchte. Was fragst du?', 'Do you want to play?', ['Do you want to sleep?', 'Are you hungry?']],
+  ['Es ist Weihnachten. Was wünschst du?', 'Merry Christmas!', ['Happy Easter!', 'Good night!']],
+  ['Du verabschiedest dich bis morgen. Was sagst du?', 'See you tomorrow!', ['Good morning!', 'Nice to meet you!']],
+  ['Du lernst ein neues Kind kennen. Was sagst du?', 'Nice to meet you!', ['See you tomorrow!', 'Good night!']],
+  ['Jemand sagt „Thank you!“ zu dir. Was antwortest du?', 'You’re welcome!', ['Sorry!', 'Goodbye!']],
+  ['Du hast großen Hunger. Was sagst du?', 'I’m hungry.', ['I’m tired.', 'I’m thirsty.']],
+  ['Du bist sehr müde. Was sagst du?', 'I’m tired.', ['I’m hungry.', 'I’m happy.']]
+]);
+k2Vierte(PHRASEN, P2_PHRASEN, ['What colour is it?', 'Good night!', 'May I open the window, please?', 'How old are you?', 'A banana, please.', 'Do you want to go home?',
+  'Happy birthday!', 'Happy birthday!', 'Merry Christmas!', 'Thank you!', 'I’m cold.', 'I’m thirsty.']);
+K2_ALT.phrasen = 35;
+k2Extra('phrasen', [
+  ['z', 'Was heißt das? Ordne zu.', [['Hello!', 'Hallo!'], ['Goodbye!', 'Tschüss!'], ['Thank you!', 'Danke!'], ['Please.', 'Bitte.'], ['Sorry!', 'Entschuldigung!'], ['Good night!', 'Gute Nacht!']]]
+]);
+
+
+k2Neu(EN_QW, [
+  ['___ is your birthday? In May.', '🎂', 'When', ['Where', 'Who'], 'When = wann'], ['___ is that girl? That is my sister.', '👧', 'Who', ['What', 'Where'], 'Who = wer'],
+  ['___ are you sad? Because it is raining.', '😢', 'Why', ['When', 'Who'], 'Why = warum'], ['___ is the cat? Under the table.', '🐱', 'Where', ['What', 'When'], 'Where = wo'],
+  ['___ colour is your bike? It is red.', '🚲', 'What', ['Who', 'Where'], 'What colour = welche Farbe'], ['___ old is your brother? He is ten.', '👦', 'How', ['Who', 'What'], 'How old = wie alt'],
+  ['___ do you like? I like pizza.', '🍕', 'What', ['Who', 'When'], 'What = was'], ['___ do you get up? At seven o’clock.', '⏰', 'When', ['Where', 'Who'], 'When = wann'],
+  ['___ is your teacher? Mrs Brown.', '👩‍🏫', 'Who', ['Where', 'When'], 'Who = wer'], ['___ many apples are there? Five.', '🍎', 'How', ['What', 'Who'], 'How many = wie viele'],
+  ['___ are my shoes? In the hall.', '👟', 'Where', ['Who', 'Why'], 'Where = wo'], ['___ do you laugh? Because the clown is funny.', '🤡', 'Why', ['Where', 'What'], 'Why = warum']
+]);
+k2Vierte(EN_QW, P2_QW, ['Why', 'When', 'Where', 'Who', 'When', 'Where', 'Where', 'Why', 'What', 'When', 'When', 'When']);
+K2_ALT.questionen = 34;
+k2Extra('questionen', [
+  ['z', 'Question words: Was heißt das? Ordne zu.', [['What', 'was'], ['Where', 'wo'], ['Who', 'wer'], ['When', 'wann'], ['Why', 'warum'], ['How', 'wie']]]
+]);
+
+
+k2Neu(CLASSROOM, [
+  ['Sit down, please.', '🪑', 'Setz dich bitte hin.'], ['Stand up, please.', '🧍', 'Steh bitte auf.'], ['Listen!', '👂', 'Hör zu!'], ['Look at the board.', '👀', 'Schau an die Tafel.'],
+  ['Be quiet, please.', '🤫', 'Sei bitte leise.'], ['Put up your hand.', '✋', 'Melde dich.'], ['Work with a partner.', '👫', 'Arbeite mit einem Partner.'], ['Take out your pencil.', '✏️', 'Nimm deinen Bleistift heraus.'],
+  ['Well done!', '👍', 'Gut gemacht!'], ['Clean the board, please.', '🧽', 'Wisch bitte die Tafel ab.'], ['Line up at the door.', '🚪', 'Stellt euch an der Tür auf.'], ['Colour the picture.', '🖍️', 'Male das Bild aus.']
+]);
+K2_ALT.classroom = 40;
+k2Extra('classroom', [
+  ['z', 'Was sagt die Lehrerin? Ordne zu.', [['Sit down.', 'Setz dich.'], ['Stand up.', 'Steh auf.'], ['Listen!', 'Hör zu!'], ['Open your book.', 'Öffne dein Buch.'], ['Be quiet.', 'Sei leise.']]]
+]);
+
+
+[['son', 'Sohn'], ['daughter', 'Tochter'], ['twins', 'Zwillinge'], ['family', 'Familie']].forEach(([en, de]) => { if (!FAMILY_W.includes(en)) { FAMILY_W.push(en); FAMILY_DE[en] = de; } });
+K2_ALT.familyen = 22;
+k2Extra('familyen', [
+  ['z', 'Who is who? Ordne zu.', [['mum', 'Mama'], ['dad', 'Papa'], ['sister', 'Schwester'], ['brother', 'Bruder'], ['grandma', 'Oma'], ['grandpa', 'Opa'], ['aunt', 'Tante'], ['uncle', 'Onkel']]],
+  ['rf', 'My mum’s mum is my grandma.', true, 'Die Mama deiner Mama ist deine Oma, auf Englisch grandma.', '👵', K2_EN],
+  ['rf', 'My dad’s brother is my aunt.', false, 'Der Bruder von Papa ist dein Onkel: uncle. Aunt ist die Tante.', '👨', K2_EN],
+  ['rf', 'My mum and my dad are my parents.', true, 'parents = Eltern', '👪', K2_EN],
+  ['l', 'Fill in the words.', 'My mum and my dad are my ⟪parents⟫. My mum’s mum is my ⟪grandma⟫. My dad’s brother is my ⟪uncle⟫.', ['sister', 'aunt'], 'parents = Eltern, grandma = Oma, uncle = Onkel', K2_EN]
+]);
+
+
+k2Neu(AAN_EN, [
+  ['egg', '🥚'], ['owl', '🦉'], ['octopus', '🐙'], ['ant', '🐜'], ['ice cream', '🍦'], ['eye', '👁️'], ['island', '🏝️'], ['onion', '🧅'], ['ear', '👂'], ['avocado', '🥑'],
+  ['horse', '🐴'], ['kite', '🪁'], ['pear', '🍐'], ['rocket', '🚀'], ['zebra', '🦓'], ['bus', '🚌'], ['tiger', '🐯'], ['hat', '🎩']
+]);
+K2_ALT.aanen = 41;
+k2Extra('aanen', [
+  ['s', 'a oder an? Sortiere.', ['a', 'an'], [['dog', 0], ['banana', 0], ['house', 0], ['cat', 0], ['apple', 1], ['egg', 1], ['orange', 1], ['elephant', 1]], 'Beginnt das Wort mit a, e, i oder o, sagst du an: an apple, an egg.', K2_EN]
+]);
+
+
+k2Neu(PLURAL_EN, [
+  ['bus', 'buses', '🚌'], ['box', 'boxes', '📦'], ['fox', 'foxes', '🦊'], ['baby', 'babies', '👶'], ['tooth', 'teeth', '🦷'], ['foot', 'feet', '🦶'], ['mouse', 'mice', '🐭'],
+  ['man', 'men', '👨'], ['woman', 'women', '👩'], ['child', 'children', '🧒'], ['sheep', 'sheep', '🐑'], ['watch', 'watches', '⌚'], ['cherry', 'cherries', '🍒'], ['leaf', 'leaves', '🍃']
+]);
+K2_ALT.pluralen = 39;
+k2Extra('pluralen', [
+  ['z', 'One and many: Ordne zu.', [['mouse', 'mice'], ['child', 'children'], ['tooth', 'teeth'], ['foot', 'feet'], ['man', 'men'], ['woman', 'women']], 'Diese Wörter sind besonders: one mouse, two mice.', K2_EN],
+  ['s', 'Mit -s oder mit -es?', ['-s', '-es'], [['cat', 0], ['dog', 0], ['book', 0], ['car', 0], ['box', 1], ['bus', 1], ['fox', 1], ['watch', 1]], 'Nach s, x, ch und sh hängst du -es an: boxes, buses, watches.', K2_EN]
+]);
+
+
+k2Neu(EN_PRON, [
+  ['the girl', '👧', 'she'], ['my dad', '👨', 'he'], ['the ball', '⚽', 'it'], ['Tom and Lisa', '👫', 'they'], ['my grandma', '👵', 'she'], ['the cars', '🚗', 'they'],
+  ['Mr Smith', '👨', 'he'], ['the apple', '🍎', 'it'], ['my friends', '👭', 'they'], ['the house', '🏠', 'it'], ['the children', '🧒', 'they'], ['my uncle', '👨', 'he']
+]);
+K2_ALT.pronounen = 36;
+k2Extra('pronounen', [
+  ['s', 'he, she oder they? Sortiere.', ['he', 'she', 'they'], [['my dad', 0], ['the boy', 0], ['Grandpa', 0], ['my mum', 1], ['the girl', 1], ['Grandma', 1], ['the children', 2], ['my friends', 2], ['Tom and Mia', 2]], 'he = er, she = sie (eine Person), they = sie (mehrere).', K2_EN]
+]);
+
+
+k2Neu(SENTENCES_EN, ['I have got a red bike.', 'She likes ice cream.', 'We play football after school.', 'The dog is in the garden.', 'My sister can swim.', 'Can I have an apple?',
+  'It is sunny today.', 'He is my best friend.', 'Where is my pencil?', 'I like to read books.', 'They are at the zoo.', 'My favourite colour is green.', 'The bird can fly.', 'I am eight years old.', 'Do you like pizza?']);
+K2_ALT.satzen = 45;
+k2Extra('satzen', [
+  ['l', 'Fill in the words.', 'I ⟪have⟫ got a dog. It ⟪is⟫ brown.', ['has', 'are'], 'I have got … It is …', K2_EN],
+  ['l', 'Fill in the words.', 'She ⟪can⟫ swim. We ⟪like⟫ ice cream.', ['cans', 'likes'], 'She can swim. We like ice cream.', K2_EN],
+  ['l', 'Fill in the words.', 'My name ⟪is⟫ Tom. I ⟪am⟫ eight.', ['are', 'be'], 'My name is … I am …', K2_EN]
+]);
+
+
+K2_ALT.where = 35;
+k2Extra('where', [
+  ['z', 'Was heißt das? Ordne zu.', [['in', 'in'], ['on', 'auf'], ['under', 'unter'], ['next to', 'neben'], ['behind', 'hinter'], ['in front of', 'vor']]],
+  ['rf', 'The fish is in the water.', true, 'in = in', '🐟', K2_EN],
+  ['rf', 'The fish is in the tree.', false, 'Fische leben im Wasser: The fish is in the water.', '🐟', K2_EN],
+  ['rf', 'The hat is on my head.', true, 'on = auf', '🎩', K2_EN]
+]);
+
+
+K2_ALT.farben = 22;
+k2Extra('farben', [
+  ['z', 'What colour is it? Ordne zu.', [['banana', 'yellow'], ['grass', 'green'], ['sky', 'blue'], ['snow', 'white'], ['strawberry', 'red'], ['chocolate', 'brown'], ['night', 'black']], '', K2_EN],
+  ['rf', 'Grass is green.', true, 'green = grün', '🌿', K2_EN],
+  ['rf', 'Snow is black.', false, 'Snow is white. white = weiß', '❄️', K2_EN],
+  ['rf', 'A banana is yellow.', true, 'yellow = gelb', '🍌', K2_EN],
+  ['rf', 'A strawberry is blue.', false, 'A strawberry is red. red = rot', '🍓', K2_EN],
+  ['l', 'Fill in the colours.', 'The sun is ⟪yellow⟫. The grass is ⟪green⟫. The sky is ⟪blue⟫.', ['black', 'pink'], 'yellow = gelb, green = grün, blue = blau', K2_EN]
+]);
+
+
+K2_ALT.musicen = 39;
+k2Extra('musicen', [
+  ['z', 'Instruments: Ordne zu.', [['drum', 'Trommel'], ['guitar', 'Gitarre'], ['piano', 'Klavier'], ['violin', 'Geige'], ['flute', 'Flöte'], ['trumpet', 'Trompete']]],
+  ['rf', 'You play the piano with your feet.', false, 'Du spielst Klavier mit den Fingern: with your fingers.', '🎹', K2_EN],
+  ['rf', 'A guitar has strings.', true, 'strings = Saiten', '🎸', K2_EN]
+]);
+
+
+K2_ALT.ukwelt = 15;
+k2Neu(EN_UK, [
+  ['Wie heißt der Fluss, der durch London fließt?', '🌊', 'die Themse', ['der Rhein', 'die Elbe', 'die Donau'], 'Auf Englisch heißt er River Thames.'],
+  ['Welche Farbe haben die berühmten Doppeldeckerbusse in London?', '🚌', 'rot', ['grün', 'gelb', 'blau'], 'Oben vorne sitzen ist am schönsten!'],
+  ['Wie heißt das große Riesenrad in London?', '🎡', 'London Eye', ['Big Ben', 'Tower Bridge', 'Buckingham Palace'], 'Von oben sieht man über die ganze Stadt.'],
+  ['Wie heißt die Brücke mit zwei Türmen in London, die sich für große Schiffe öffnen kann?', '🌉', 'Tower Bridge', ['London Eye', 'Big Ben', 'Golden Gate Bridge'], 'Die Straße klappt nach oben, damit Schiffe durchfahren können.'],
+  ['Mit welchem Geld bezahlt man in Großbritannien?', '💷', 'mit dem Pfund', ['mit dem Euro', 'mit dem Dollar', 'mit der Krone'], 'Ein Pfund hat 100 Pence.'],
+  ['Wie nennen die Londoner ihre U-Bahn?', '🚇', 'the Tube', ['the Train', 'the Metro', 'the Bus'], 'Die Londoner U-Bahn ist die älteste der Welt.'],
+  ['Welches Tier ist das Nationaltier von Schottland?', '🦄', 'das Einhorn', ['der Löwe', 'der Adler', 'der Bär'], 'Ein Fabeltier als Nationaltier, das gibt es nur in Schottland!'],
+  ['Wie heißt ein typisches englisches Essen aus gebackenem Fisch und Pommes?', '🐟', 'Fish and Chips', ['Pizza Margherita', 'Paella', 'Currywurst'], 'Chips sind in England die Pommes. Unsere Chips heißen dort crisps.'],
+  ['Aus welchen vier Teilen besteht das Vereinigte Königreich?', '🗺️', 'England, Schottland, Wales und Nordirland', ['England, Irland, Island und Wales', 'London, Paris, Berlin und Rom', 'England, Frankreich, Spanien und Portugal'], 'Die Hauptstadt ist London.']
+]);
+k2Extra('ukwelt', [
+  ['z', 'London: Ordne zu.', [['Big Ben', 'Glockenturm'], ['London Eye', 'Riesenrad'], ['Tower Bridge', 'Klappbrücke'], ['the Tube', 'U-Bahn'], ['Thames', 'Fluss']]],
+  ['rf', 'In Großbritannien bezahlt man mit dem Euro.', false, 'Man bezahlt mit dem Pfund.', '💷'],
+  ['rf', 'In Großbritannien fahren die Autos auf der linken Straßenseite.', true, 'Darum schaut man dort beim Überqueren zuerst nach rechts.', '🚗']
+]);
+
+
+k2Neu(LP_KULTUR, [
+  [1, 'When is Christmas Day?', 'on 25 December', ['on 24 December', 'on 31 October', 'on 1 January'], 'In Großbritannien gibt es die Geschenke am Morgen des 25. Dezember.'],
+  [1, 'What does the sign “CLOSED” mean?', 'geschlossen', ['geöffnet', 'Ausgang'], 'Das Gegenteil ist OPEN, geöffnet.'],
+  [1, 'What does the sign “EXIT” mean?', 'Ausgang', ['Eingang', 'Toilette'], 'Der Eingang heißt entrance.'],
+  [1, 'What does the sign “NO DOGS” mean?', 'Hunde verboten', ['Hunde erlaubt', 'Hundefutter'], 'no = kein, nicht erlaubt'],
+  [1, 'On which day do people in Britain eat pancakes?', 'on Pancake Day', ['on Bonfire Night', 'on Valentine’s Day'], 'Pancake Day ist der Dienstag vor der Fastenzeit, bei uns ist dann Fastnacht.'],
+  [1, 'What do children look for at Easter?', 'Easter eggs', ['pumpkins', 'Christmas trees'], 'Ostereier suchen heißt auf Englisch: egg hunt.']
+]);
+
+
+k2Einbau();
 
 /*@@src freunde.js@@*/
 /* ================================================================
