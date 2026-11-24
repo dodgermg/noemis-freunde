@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-prsLKgDivruKdyivkdnRpN7gmykjW+VR5XzJB4ac3TY=' 'sha256-9eVywocT19rzVeq5VRUJFu3XIGwnu6a8mKVPtGdMxjI=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-LH9VnLBLLPFZu/4B7TcatVHxRixWZWSDJx4+GSWRJJo=' 'sha256-nudLK+WNOmBA561wMU7+2mBtnvdOhjPiF29C0Lgawvo=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -11111,8 +11111,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '6.3.0';
-  var MAP = {"probe":0,"files":[[11101,"fehler_kern.js"],[11389,null],[11391,"data.js"],[12106,"data_more.js"],[12478,"data_su2.js"],[12705,"data_es.js"],[13073,"data_wissen.js"],[13274,"data_v21.js"],[13959,"data_v24.js"],[14447,"data_v25.js"],[14936,"data_v26.js"],[15035,"data_v29.js"],[15343,"data_v30.js"],[15677,"data_v31.js"],[15983,"data_kunst.js"],[16180,"data_v214.js"],[16283,"data_v216.js"],[16576,"schrift.js"],[16880,"eingabe.js"],[17091,"data_k34m.js"],[17609,"data_k34d.js"],[17963,"data_k34s.js"],[18417,"data_v224.js"],[19290,"data_v225w.js"],[19659,"data_v225k.js"],[20103,"data_herz.js"],[20457,"data_fb226.js"],[20600,"data_tf226.js"],[20807,"data_v227a.js"],[21907,"data_v227b.js"],[22861,"data_h28b.js"],[22901,"data_l28a.js"],[23767,"data_l28b.js"],[24947,"data_schaetz.js"],[25429,"data_party8.js"],[25479,"data_alce.js"],[26150,"data_alce2.js"],[26399,"data_alce3.js"],[26814,"registry.js"],[27328,"app.js"],[28613,"fun.js"],[29201,"fun2.js"],[29517,"atelier.js"],[29891,"kunst225.js"],[30081,"herz.js"],[30445,"reise.js"],[30747,"iglu.js"],[30913,"offline.js"],[31023,"party.js"],[31507,"meine.js"],[31863,"loeffel.js"],[32034,"trend.js"],[32576,"fun228a.js"],[33437,"fun228b.js"],[34114,"kueche.js"],[35153,"stimme.js"],[35208,"klassen.js"],[35361,"freunde_vorab.js"],[35382,"mut.js"],[35804,"schule.js"],[36293,"fussball226.js"],[36615,"schaetzen.js"],[37046,"party8.js"],[37665,"tiere.js"],[38124,"fussball232.js"],[38339,"party8b.js"],[38641,"weg.js"],[38862,"px.js"],[39282,"px_fein.js"],[39359,"px_data.js"],[39616,"pxwelt.js"],[39700,"px_abenteuer.js"],[40529,"px_abenteuer2.js"],[41283,"px_abenteuer3.js"],[41674,"px_abenteuer4.js"],[41884,"px_baukasten.js"],[41993,"px_abenteuer_fein.js"],[42222,"px_abenteuer_fein2.js"],[42574,"px_abenteuer5.js"],[42981,"px_abenteuer6.js"],[43257,"px_abenteuer7.js"],[43613,"px_level300.js"],[44164,"px_schwach300.js"],[44238,"px_zwei300.js"],[44352,"lumicheckt300.js"],[44545,"schreiben300.js"],[44759,"rechenkarte300.js"],[44879,"lerncheck300.js"],[45102,"material300.js"],[45432,"lernweg300.js"],[45956,"px_ski.js"],[46598,"px_wurf.js"],[47127,"px_insel.js"],[48328,"px_kicker.js"],[49263,"px_eis.js"],[50249,"px_run.js"],[51464,"px_brk.js"],[52426,"px_pol.js"],[53777,"px_frog.js"],[55037,"px_angel.js"],[56352,"px_golf.js"],[57386,"px_tauch.js"],[58651,"px_hockey.js"],[59607,"px_lab.js"],[60942,"px_plopp.js"],[62148,"px_stadion.js"],[63659,"px_stadion2.js"],[63711,"px_training.js"],[64080,"cm.js"],[64570,"cmwelt.js"],[64626,"cm_baeck.js"],[65419,"cm_bahn.js"],[66183,"cm_detek.js"],[66900,"cm_markt.js"],[67613,"ff.js"],[67770,"ff_mathe.js"],[69760,"ff_deutsch.js"],[71348,"ff_sach_a.js"],[73597,"ff_sach_b.js"],[75826,"ff_sprachen.js"],[78234,"zm.js"],[79147,"tt.js"],[79360,"data_tagebuch.js"],[79403,"data_hoerspiel.js"],[79562,"leseecke.js"],[79889,"kt.js"],[80192,"comicbuch.js"],[80470,"alce.js"],[80633,"alce_aufg.js"],[80824,"formen.js"],[81275,"data_formen.js"],[81516,"data_formen2.js"],[81738,"spielzeit.js"],[81960,"data_faktmeinung.js"],[82079,"data_es248.js"],[82343,"data_en249.js"],[82582,"data_wissen249.js"],[83013,"data_kunst249.js"],[83296,"data_fussball250.js"],[83420,"data_werte252.js"],[83673,"data_lesen252.js"],[83734,"data_k34_252.js"],[83820,"art254.js"],[83938,"data_werte255.js"],[84076,"data_lesen255.js"],[84212,"forscher255.js"],[84360,"zufall250.js"],[84406,"stufe259.js"],[84416,"advent.js"],[84679,"wdh.js"],[84777,"eswarm288.js"],[84828,"abwechslung294.js"],[84903,"bilder293a.js"],[84993,"bilder293b.js"],[85123,"bilder293c.js"],[85221,"bilder293d.js"],[85343,"bilder293e.js"],[85507,"bilder293f.js"],[85587,"bilder292.js"],[86033,"denk.js"],[86070,"data_viaje265.js"],[86213,"klassenarbeit.js"],[86346,"quizduell.js"],[86469,"neu267.js"],[86734,"prog.js"],[86839,"lernstand.js"],[86906,"blatt.js"],[87008,"uebung295.js"],[87330,"schuh296.js"],[87538,"uebung297.js"],[87925,"minus298.js"],[88166,"schrift299.js"],[88294,"data_es271.js"],[88408,"plus269.js"],[88502,"schach.js"],[88734,"schachtaktik.js"],[88986,"fun270.js"],[89149,"data_neu274.js"],[89358,"plus272.js"],[89412,"spiele274.js"],[89535,"kasten.js"],[89639,"erklaer.js"],[89752,"apa.js"],[89833,"neu276.js"],[89974,"spiele276.js"],[90024,"neu277.js"],[90202,"spiele277.js"],[90457,"lernen278.js"],[90717,"spiele278.js"],[91060,"lernen279.js"],[91385,"lernen279b.js"],[91783,"spanisch280.js"],[92075,"spanisch283.js"],[92308,"mehr281.js"],[92454,"grafik280.js"],[92833,"tiefsee280.js"],[93111,"abenteuer280.js"],[93323,"abenteuer281.js"],[93435,"design281.js"],[93567,"party281.js"],[93698,"grafik281.js"],[93915,"traumtor292.js"],[94122,"kart293.js"],[94399,"lumi_live.js"],[94515,"sicher.js"],[94699,"stil.js"],[94753,"zurueck287.js"],[94796,"nfbilder300.js"],[94959,"formen300.js"],[95566,"musik300.js"],[95737,"lernweg300b.js"],[95860,"lernweg300c.js"],[96020,"espanol300.js"],[96126,"fabel310_bild.js"],[96377,"fabel310.js"],[96768,"eisbude310.js"],[96994,"turbo310.js"],[97199,"sumo310.js"],[97334,"beifahrer310.js"],[97409,"dreier310.js"],[97525,"ring310.js"],[97634,"loch330.js"],[97984,"reise340.js"],[98054,"fisch340.js"],[98610,"rutsche340.js"],[99021,"knobel340.js"],[99259,"frucht350.js"],[99564,"vulkan350.js"],[99807,"delfin350.js"],[100002,"musik350.js"],[100172,"arcade360.js"],[100288,"strasse360.js"],[100584,"blasen360.js"],[100792,"meer360.js"],[100961,"spirale360.js"],[101125,"sterne360.js"],[101332,"alt360a.js"],[101602,"alt360b.js"],[101795,"alt360c.js"],[102049,"alt360d.js"],[102212,"alt370a.js"],[102409,"alt370b.js"],[102613,"alt370c.js"],[102751,"gl390.js"],[102994,"lauf390.js"],[103503,"ab3_level.js"],[103848,"abenteuer400.js"],[104342,"figuren410.js"],[104437,"kart410.js"],[104790,"show410.js"],[105105,"ball410.js"],[105418,"fussball420.js"],[105843,"farbe420.js"],[106124,"flug430.js"],[106314,"sport430.js"],[106685,"insel440.js"],[106965,"buddel440.js"],[107324,"party450.js"],[107732,"tiere450.js"],[108144,"malbuch460a.js"],[108467,"malbuch460b.js"],[108726,"malbuch460c.js"],[108831,"malkunst590.js"],[109373,"airhockey470.js"],[109650,"zwei480.js"],[109684,"minigolf480.js"],[109961,"schneeball480.js"],[110259,"billard480.js"],[110484,"kissen490.js"],[110830,"gleiter490.js"],[111204,"koch490.js"],[111638,"pxzwei501.js"],[111661,"belohnung311.js"],[111822,"belohnung480.js"],[111903,"einst502.js"],[111944,"pixmal510_bilder.js"],[112256,"pixmal530_bilder.js"],[112378,"pixmal510.js"],[112980,"druck311.js"],[113162,"zwei580.js"],[113349,"gym550.js"],[113672,"gym550_mathe5.js"],[113940,"gym550_deutsch5.js"],[114142,"gym550_englisch5.js"],[114252,"gym550_nawi5.js"],[114515,"gym550_gesell5.js"],[114749,"gym550_mehr5.js"],[114903,"gym600_mathe6.js"],[115149,"gym600_deutsch6.js"],[115311,"gym600_englisch6.js"],[115464,"gym600_nawi6.js"],[115752,"gym600_gesell6.js"],[115957,"gym630_mathe7.js"],[116233,"gym630_mathe8.js"],[116449,"gym630_deutsch.js"],[116721,"gym630_englisch.js"],[116941,"gym630_nawi7.js"],[117189,"gym630_nawi8.js"],[117429,"gym630_gesell.js"],[117805,"gym630_mehr.js"],[118173,"k2_610.js"],[118250,"k2_sach610a.js"],[118499,"k2_sach610b.js"],[118994,"k2_deutsch610.js"],[119330,"k2_englisch610.js"],[119495,"pixel611.js"],[119531,"px620.js"],[119717,"px_arena.js"],[120110,"px_billard.js"],[120371,"px_koch.js"],[120770,"px_kart.js"],[121130,"freunde.js"],[121267,"start.js"],[121277,null],[121287,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '6.4.0';
+  var MAP = {"probe":0,"files":[[11101,"fehler_kern.js"],[11389,null],[11391,"data.js"],[12106,"data_more.js"],[12478,"data_su2.js"],[12705,"data_es.js"],[13073,"data_wissen.js"],[13274,"data_v21.js"],[13959,"data_v24.js"],[14447,"data_v25.js"],[14936,"data_v26.js"],[15035,"data_v29.js"],[15343,"data_v30.js"],[15677,"data_v31.js"],[15983,"data_kunst.js"],[16180,"data_v214.js"],[16283,"data_v216.js"],[16576,"schrift.js"],[16880,"eingabe.js"],[17091,"data_k34m.js"],[17609,"data_k34d.js"],[17963,"data_k34s.js"],[18417,"data_v224.js"],[19290,"data_v225w.js"],[19659,"data_v225k.js"],[20103,"data_herz.js"],[20457,"data_fb226.js"],[20600,"data_tf226.js"],[20807,"data_v227a.js"],[21907,"data_v227b.js"],[22861,"data_h28b.js"],[22901,"data_l28a.js"],[23767,"data_l28b.js"],[24947,"data_schaetz.js"],[25429,"data_party8.js"],[25479,"data_alce.js"],[26150,"data_alce2.js"],[26399,"data_alce3.js"],[26814,"registry.js"],[27328,"app.js"],[28614,"fun.js"],[29202,"fun2.js"],[29518,"atelier.js"],[29892,"kunst225.js"],[30082,"herz.js"],[30446,"reise.js"],[30748,"iglu.js"],[30914,"offline.js"],[31024,"party.js"],[31508,"meine.js"],[31864,"loeffel.js"],[32035,"trend.js"],[32577,"fun228a.js"],[33438,"fun228b.js"],[34115,"kueche.js"],[35154,"stimme.js"],[35209,"klassen.js"],[35362,"freunde_vorab.js"],[35383,"mut.js"],[35805,"schule.js"],[36294,"fussball226.js"],[36616,"schaetzen.js"],[37047,"party8.js"],[37666,"tiere.js"],[38125,"fussball232.js"],[38340,"party8b.js"],[38642,"weg.js"],[38863,"px.js"],[39283,"px_fein.js"],[39360,"px_data.js"],[39617,"pxwelt.js"],[39701,"px_abenteuer.js"],[40530,"px_abenteuer2.js"],[41284,"px_abenteuer3.js"],[41675,"px_abenteuer4.js"],[41885,"px_baukasten.js"],[41994,"px_abenteuer_fein.js"],[42223,"px_abenteuer_fein2.js"],[42575,"px_abenteuer5.js"],[42982,"px_abenteuer6.js"],[43258,"px_abenteuer7.js"],[43614,"px_level300.js"],[44165,"px_schwach300.js"],[44239,"px_zwei300.js"],[44353,"lumicheckt300.js"],[44546,"schreiben300.js"],[44760,"rechenkarte300.js"],[44880,"lerncheck300.js"],[45103,"material300.js"],[45433,"lernweg300.js"],[45957,"px_ski.js"],[46599,"px_wurf.js"],[47128,"px_insel.js"],[48329,"px_kicker.js"],[49264,"px_eis.js"],[50250,"px_run.js"],[51465,"px_brk.js"],[52427,"px_pol.js"],[53778,"px_frog.js"],[55038,"px_angel.js"],[56353,"px_golf.js"],[57387,"px_tauch.js"],[58652,"px_hockey.js"],[59608,"px_lab.js"],[60943,"px_plopp.js"],[62149,"px_stadion.js"],[63660,"px_stadion2.js"],[63712,"px_training.js"],[64081,"cm.js"],[64571,"cmwelt.js"],[64627,"cm_baeck.js"],[65420,"cm_bahn.js"],[66184,"cm_detek.js"],[66901,"cm_markt.js"],[67614,"ff.js"],[67771,"ff_mathe.js"],[69761,"ff_deutsch.js"],[71349,"ff_sach_a.js"],[73598,"ff_sach_b.js"],[75827,"ff_sprachen.js"],[78235,"zm.js"],[79148,"tt.js"],[79361,"data_tagebuch.js"],[79404,"data_hoerspiel.js"],[79563,"leseecke.js"],[79890,"kt.js"],[80193,"comicbuch.js"],[80471,"alce.js"],[80634,"alce_aufg.js"],[80825,"formen.js"],[81276,"data_formen.js"],[81517,"data_formen2.js"],[81739,"spielzeit.js"],[81961,"data_faktmeinung.js"],[82080,"data_es248.js"],[82344,"data_en249.js"],[82583,"data_wissen249.js"],[83014,"data_kunst249.js"],[83297,"data_fussball250.js"],[83421,"data_werte252.js"],[83674,"data_lesen252.js"],[83735,"data_k34_252.js"],[83821,"art254.js"],[83939,"data_werte255.js"],[84077,"data_lesen255.js"],[84213,"forscher255.js"],[84361,"zufall250.js"],[84407,"stufe259.js"],[84417,"advent.js"],[84680,"wdh.js"],[84778,"eswarm288.js"],[84829,"abwechslung294.js"],[84904,"bilder293a.js"],[84994,"bilder293b.js"],[85124,"bilder293c.js"],[85222,"bilder293d.js"],[85344,"bilder293e.js"],[85508,"bilder293f.js"],[85588,"bilder292.js"],[86034,"denk.js"],[86071,"data_viaje265.js"],[86214,"klassenarbeit.js"],[86347,"quizduell.js"],[86470,"neu267.js"],[86735,"prog.js"],[86840,"lernstand.js"],[86907,"blatt.js"],[87009,"uebung295.js"],[87331,"schuh296.js"],[87539,"uebung297.js"],[87926,"minus298.js"],[88167,"schrift299.js"],[88295,"data_es271.js"],[88409,"plus269.js"],[88503,"schach.js"],[88735,"schachtaktik.js"],[88987,"fun270.js"],[89150,"data_neu274.js"],[89359,"plus272.js"],[89413,"spiele274.js"],[89536,"kasten.js"],[89640,"erklaer.js"],[89753,"apa.js"],[89834,"neu276.js"],[89975,"spiele276.js"],[90025,"neu277.js"],[90203,"spiele277.js"],[90458,"lernen278.js"],[90718,"spiele278.js"],[91061,"lernen279.js"],[91386,"lernen279b.js"],[91784,"spanisch280.js"],[92076,"spanisch283.js"],[92309,"mehr281.js"],[92455,"grafik280.js"],[92834,"tiefsee280.js"],[93112,"abenteuer280.js"],[93324,"abenteuer281.js"],[93436,"design281.js"],[93568,"party281.js"],[93699,"grafik281.js"],[93916,"traumtor292.js"],[94123,"kart293.js"],[94400,"lumi_live.js"],[94516,"sicher.js"],[94700,"stil.js"],[94754,"zurueck287.js"],[94797,"nfbilder300.js"],[94960,"formen300.js"],[95567,"musik300.js"],[95738,"lernweg300b.js"],[95861,"lernweg300c.js"],[96021,"espanol300.js"],[96127,"fabel310_bild.js"],[96378,"fabel310.js"],[96769,"eisbude310.js"],[96995,"turbo310.js"],[97200,"sumo310.js"],[97335,"beifahrer310.js"],[97410,"dreier310.js"],[97526,"ring310.js"],[97635,"loch330.js"],[97985,"reise340.js"],[98055,"fisch340.js"],[98611,"rutsche340.js"],[99022,"knobel340.js"],[99260,"frucht350.js"],[99565,"vulkan350.js"],[99808,"delfin350.js"],[100003,"musik350.js"],[100173,"arcade360.js"],[100289,"strasse360.js"],[100585,"blasen360.js"],[100793,"meer360.js"],[100962,"spirale360.js"],[101126,"sterne360.js"],[101333,"alt360a.js"],[101603,"alt360b.js"],[101796,"alt360c.js"],[102050,"alt360d.js"],[102213,"alt370a.js"],[102410,"alt370b.js"],[102614,"alt370c.js"],[102752,"gl390.js"],[102995,"lauf390.js"],[103504,"ab3_level.js"],[103849,"abenteuer400.js"],[104343,"figuren410.js"],[104438,"kart410.js"],[104791,"show410.js"],[105106,"ball410.js"],[105419,"fussball420.js"],[105844,"farbe420.js"],[106125,"flug430.js"],[106315,"sport430.js"],[106686,"insel440.js"],[106966,"buddel440.js"],[107325,"party450.js"],[107733,"tiere450.js"],[108145,"malbuch460a.js"],[108468,"malbuch460b.js"],[108727,"malbuch460c.js"],[108832,"malkunst590.js"],[109374,"airhockey470.js"],[109651,"zwei480.js"],[109685,"minigolf480.js"],[109962,"schneeball480.js"],[110260,"billard480.js"],[110485,"kissen490.js"],[110831,"gleiter490.js"],[111205,"koch490.js"],[111639,"pxzwei501.js"],[111662,"belohnung311.js"],[111823,"belohnung480.js"],[111904,"einst502.js"],[111945,"pixmal510_bilder.js"],[112257,"pixmal530_bilder.js"],[112379,"pixmal510.js"],[112981,"druck311.js"],[113163,"zwei580.js"],[113350,"gym550.js"],[113673,"gym550_mathe5.js"],[113941,"gym550_deutsch5.js"],[114143,"gym550_englisch5.js"],[114253,"gym550_nawi5.js"],[114516,"gym550_gesell5.js"],[114750,"gym550_mehr5.js"],[114904,"gym600_mathe6.js"],[115150,"gym600_deutsch6.js"],[115312,"gym600_englisch6.js"],[115465,"gym600_nawi6.js"],[115753,"gym600_gesell6.js"],[115958,"gym630_mathe7.js"],[116234,"gym630_mathe8.js"],[116450,"gym630_deutsch.js"],[116722,"gym630_englisch.js"],[116942,"gym630_nawi7.js"],[117190,"gym630_nawi8.js"],[117430,"gym630_gesell.js"],[117806,"gym630_mehr.js"],[118174,"k2_610.js"],[118251,"k2_sach610a.js"],[118500,"k2_sach610b.js"],[118995,"k2_deutsch610.js"],[119331,"k2_englisch610.js"],[119496,"pixel611.js"],[119532,"px620.js"],[119718,"px_arena.js"],[120111,"px_billard.js"],[120372,"px_koch.js"],[120771,"px_kart.js"],[121131,"px640.js"],[121154,"px_kissen.js"],[121535,"px_autoball.js"],[121830,"px_buddel.js"],[122062,"px_inselab.js"],[122294,"freunde.js"],[122431,"start.js"],[122441,null],[122451,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -27329,9 +27329,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '6.3.0';
+const APP_VERSION = '6.4.0';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "6.4.0", d: "24.11.2026", t: ["Vier neue Pixel-Spiele: Pixel-Kissenschlacht, Pixel-Auto-Fußball, Pixel-Buddel-Abenteuer und Pixel-Insel-Abenteuer. Wie die 3D-Spiele, nur in Pixeln, jedes mit 4 Welten und 20 Stufen", "In allen vier stecken Aufgaben: Kissen-Frage und goldene Rätsel-Geschenke bei der Kissenschlacht, Anstoß-Frage und Rätsel-Felder beim Auto-Fußball, Rätsel-Felsen beim Buddeln, Rätsel-Tore und Pias Begrüßungs-Frage auf der Insel", "Zu zweit an einem Gerät: Kissenschlacht und Auto-Fußball, jedes Kind mit eigenem Stick und Knöpfen"] },
   { v: "6.3.0", d: "23.11.2026", t: ["Gymnasium Klasse 7 und 8 nach dem Kerncurriculum Niedersachsen: 107 neue Themen in neun Fächern. Zum Beispiel rationale Zahlen, Prozent und Zinsen, Terme und Gleichungen, Binome, lineare Funktionen und Gleichungssysteme, Ballade, Erörterung und Konjunktiv, englische Zeiten, Passiv und indirekte Rede, Ökosysteme, Verdauung und Immunsystem, Optik und Elektrizität, Atombau und Redoxreaktionen, Klimazonen und Plattentektonik, Mittelalter bis Französische Revolution und ab Klasse 8 Politik-Wirtschaft", "In Mathe, Physik und einigen anderen Themen werden viele Aufgaben jedes Mal neu berechnet, damit sich nichts wiederholt", "Ausmalbilder: Neue Stufe „Mittel“ zwischen Einfach und Normal. Bei den Muster-Bildern ist es dasselbe Bild wie bei Normal, nur mit gröberen Mustern und weniger Deko", "Pixel-Abenteuer: Neue Grafik-Stufe „Super fein“ mit vierfach feinem Bild, noch runderen Kanten, schwebenden Lichtfunken und mehr Schnee und Blättern. Läuft es ruckelig, schaltet sie Effekte von selbst ab"] },
   { v: "6.2.0", d: "23.11.2026", t: ["Vier neue Pixel-Spiele: Pixel-Schneeball-Arena, Pixel-Kart-Grand-Prix, Pixel-Billard und Pixel-Koch-Chaos. Wie die 3D-Spiele, nur in Pixeln, jedes mit 4 Welten und 20 Stufen", "In allen vier stecken Aufgaben: Runden-Frage und Rätsel-Würfel in der Arena, Start-Frage und goldene Rätsel-Kisten beim Kart, Zielhilfe-Frage beim Billard, Küchen-Frage und Sonderbestellungen beim Koch-Chaos", "Zu zweit an einem Gerät: Arena, Billard und Koch-Chaos, jedes Kind mit eigenem Stick und Knopf"] },
   { v: "6.1.1", d: "23.11.2026", t: ["Spiele: Neuer Knopf „👾 Pixel“ in der Leiste oben, gleich neben 3D. Er zeigt nur die Pixel-Spiele, alle auf einen Blick. Nochmal tippen oder „Alle Spiele“ zeigt wieder alles"] },
@@ -119698,7 +119699,7 @@ function pxnMsgDraw(g, G, cx, cy) {
   if (m.sub) pxnTextO(g, m.sub, cx, cy + 5 * sc, '#fff3c4', 1, PXC.k);
 }
 
-function pxnSag(g, t, x, y, col) { const w = pxTextW(t, 1) + 6; pxRect(g, x - w / 2, y - 9, w, 10, PXC.k); pxRect(g, x - w / 2 + 1, y - 8, w - 2, 8, col || '#ffffff'); pxText(g, t, x, y - 7, PXC.k, 1, 'c'); }
+function pxnSag(g, t, x, y, col) { const w = pxTextW(t, 1) + 6, W0 = g.canvas.width / (PX_K || 1); x = Math.max(w / 2 + 1, Math.min(W0 - w / 2 - 1, x)); /* v6.4: bleibt im Bild */ pxRect(g, x - w / 2, y - 9, w, 10, PXC.k); pxRect(g, x - w / 2 + 1, y - 8, w - 2, 8, col || '#ffffff'); pxText(g, t, x, y - 7, PXC.k, 1, 'c'); }
 
 function pxnRing(g, cx, cy, r, col) { g.fillStyle = col; const n = Math.max(12, Math.round(r * 7)); for (let i = 0; i < n; i++) { const a = i / n * 6.2832; g.fillRect(Math.round(cx + Math.cos(a) * r), Math.round(cy + Math.sin(a) * r), 1, 1); } }
 
@@ -121126,6 +121127,1169 @@ function pxKaSim(sec) { const G = PXKA_G; if (!G || !G.A) return null; const A =
 
 Object.assign(PX_NEW, { kart: 'Neu' });
 pxReg({ id: 'kart', t: 'Pixel-Kart-Grand-Prix', d: 'Rennen gegen fünf Pinguin-Freunde: driften, Turbo, Wunderkisten!', e: '🏎️', i: 'pxncard_k_0', tag: 'Rennen', o: 22, start: pxKaStart, prog: () => pxnProg('kart') });
+
+/*@@src px640.js@@*/
+
+
+
+
+
+
+
+
+PXGEN.pxn64 = v => {
+  const [c, g] = pxCanvas(28, 24), K = PXC.k;
+  if (v === 's') { pxRect(g, 0, 18, 28, 6, '#a0663a'); pxRect(g, 0, 17, 28, 2, '#fbf5ea'); g.drawImage(pxSpr('pxnp_li_0'), -2, 0); g.drawImage(pxSpr('pxnp_pi_0', true), 10, 0);
+    pxRect(g, 12, 4, 9, 6, K); pxRect(g, 13, 5, 7, 4, '#ffd0ec'); pxRect(g, 13, 5, 7, 1, '#ffffff'); [[3, 2], [24, 3], [18, 1]].forEach(([x, y]) => pxRect(g, x, y, 2, 2, '#ffffff')); }
+  else if (v === 'f') { pxRect(g, 0, 0, 28, 24, '#58b860'); for (let x = 0; x < 28; x += 8) pxRect(g, x, 0, 4, 24, '#64c46c'); pxRect(g, 0, 11, 28, 1, '#ffffff');
+    pxEll(g, 13, 2, 12, 12, K); pxEll(g, 14, 3, 10, 10, '#ffffff'); pxRect(g, 17, 6, 2, 2, '#2a2f60'); pxRect(g, 20, 9, 2, 2, '#2a2f60');
+    pxRect(g, 1, 14, 14, 8, K); pxRect(g, 2, 15, 12, 6, '#3b7cf0'); pxRect(g, 2, 17, 12, 1, '#ffffff'); pxRect(g, 10, 15, 3, 3, '#bfe8ff'); pxRect(g, 3, 21, 3, 2, K); pxRect(g, 10, 21, 3, 2, K); }
+  else if (v === 'b') { pxRect(g, 0, 0, 28, 7, '#5ac8ff'); pxRect(g, 0, 7, 28, 17, '#c8a060'); pxRect(g, 0, 7, 28, 2, '#7ccf6a'); for (let k = 0; k < 9; k++) pxRect(g, (k * 7) % 26, 11 + (k * 5) % 11, 2, 1, '#b8904e');
+    pxRect(g, 10, 9, 9, 12, '#4a3a30'); g.drawImage(pxSpr('pxnp_li_0'), 5, 2); pxRect(g, 20, 6, 2, 8, '#7a4a2a'); pxRect(g, 17, 5, 7, 2, '#c8d0dc'); pxTri(g, 21, 22, 26, 22, 23, 15, '#8ef3ff'); pxRect(g, 23, 17, 1, 3, '#ffffff'); }
+  else { pxRect(g, 0, 0, 28, 24, '#3fb8e0'); for (let k = 0; k < 6; k++) pxRect(g, (k * 9) % 26, 3 + (k * 7) % 18, 4, 1, '#ffffff'); pxEll(g, 2, 8, 24, 14, '#f2dca0'); pxEll(g, 5, 9, 18, 10, '#7ccf6a');
+    pxRect(g, 8, 4, 2, 10, '#a0663a'); pxEll(g, 3, 1, 12, 6, '#2f8f46'); pxRect(g, 15, 10, 9, 7, K); pxRect(g, 16, 11, 7, 5, '#ffd23f'); pxRect(g, 16, 12, 7, 1, '#e8463a'); pxRect(g, 19, 13, 1, 2, '#8ef3ff'); }
+  return c;
+};
+
+/*@@src px_kissen.js@@*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+const PXKS_NAMEN = [['Kissen-Start', 'Bücher-Regale', 'Großes Bett', 'Zwei Betten', 'Kinderzimmer-Turm'],
+  ['Wolken-Start', 'Schaukel-Wolken', 'Wolken-Lift', 'Wolkenbrücke', 'Großes Wolkenschloss'],
+  ['Eis-Start', 'Zwei Schollen', 'Eis-Turm', 'Eis-Spalt', 'Großer Eisberg'],
+  ['Sternen-Start', 'Schwebe-Platte', 'Mond-Lift', 'Raumschiff-Spalt', 'Große Sternenstation']];
+const PXKS_FIG = [PXN_FIG.lumi, PXN_FIG.pia, PXN_FIG.paul, PXN_FIG.pino, PXN_FIG.polly];
+const PXKS_ITEM = { ball: ['#9fd8ff', 'SCHNEEBALL!'], riesen: ['#ff7a2a', 'RIESENKISSEN!'], stern: ['#ffd23f', 'STERNFEDER!'], herz: ['#e8334a', '30 % WENIGER!'] };
+const PXKS = { RUN: 7.2, SPR: 14.5, FLAT: 12.5, FALL: 17 };
+function pxKsLevel(w, l, zwei) {
+  const art = KSS_WELTEN[w].art;
+  return { w, l, st: w * 5 + l, art, bots: [1, 1, 2, 2, 3][l], leben: 3, zeit: zwei ? 180 : 150, skill: Math.min(.92, .22 + l * .13 + w * .07), items: w > 0 || l > 0,
+    glatt: art === 'eis', g: art === 'sterne' ? 21 : 30, karte: KSS_KARTEN[art][l], name: PXKS_NAMEN[w][l] };
+}
+let PXKS_G = null;
+const PXKS_O = {
+  id: 'kissen', titel: 'Pixel-Kissenschlacht', big: '🐧 🛏️ 🐧',
+  tipp: 'Tippen = Kissen-Hieb, halten und loslassen = Wumms! Je höher die Prozente, desto weiter fliegt man. In der Luft zweimal flattern.',
+  welten: KSS_WELTEN, lvName: (w, l) => PXKS_NAMEN[w][l], duo: ['gegen 1 bis 3 Pinguine', 'Lumi gegen Pia'],
+  note: '❓ Vor jedem Kampf kommt eine Kissen-Frage: richtig = Riesenkissen zum Start. Goldene ?-Geschenke haben ein Rätsel, richtig = 30 % weniger und Sternfeder!',
+  start: (w, l, zwei) => pxKsNeu(PXKS_G, w, l, zwei), menu: () => pxKsMenu(PXKS_G)
+};
+
+
+function pxKsStart() {
+  const run = pxView({ id: 'kissen', title: 'Pixel-Kissenschlacht', H: 192, pad: 'none', portrait: 'top', ratio: .78, minW: 240 });
+  const G = PXKS_G = { run, A: null, msg: null, shake: 0, bg: null, bgKey: '', okN: 0, askN: 0 };
+  G.tasten = { a: [[' ', 'Enter', 'x', 'X'], ['e', 'E', 'q', 'Q'], ['Enter', 'm', 'M', '0']], u: [['ArrowUp', 'w', 'W'], ['w', 'W'], ['ArrowUp']] };
+  pxnTasten(G);
+  pxLoop(run, dt => pxKsUpdate(G, dt), g => pxKsDraw(G, g));
+  pxKsMenu(G);
+}
+function pxKsMenu(G) { const s = pxnSave('kissen'); pxnPads(G, 0, []); pxKsBau(G, pxKsLevel(s.w, 2, false), false, true); pxnMenu(G, PXKS_O); }
+function pxKsNeu(G, w, l, zwei) {
+  G.okN = 0; G.askN = 0; G.run.parts = []; G.msg = null;
+  pxKsBau(G, pxKsLevel(w, l, zwei), zwei, false);
+  pxnPads(G, zwei ? 2 : 1, [['u', '⬆', 'Springen'], ['a', '💥', 'Kissen: tippen = Hieb, halten = Wumms', true]], { namen: ['Lumi', 'Pia'], farben: ['#3b7cf0', '#ff8ad8'] });
+  pxKsLos(G);
+}
+function pxKsBau(G, L, zwei, demo) {
+  const A = G.A = { L, zwei, demo, auto: demo, t: 0, phase: demo ? 'start' : 'warte', zeit: L.zeit, count: demo ? 1 : 0, sp: [], items: [], baelle: [], frieren: 0, itemT: 6, frageT: 22 + Math.random() * 8, fragen: 0, ende: 0,
+    plats: L.karte.map(p => ({ ...p, x0: p.x, y0: p.y, dx: 0, dy: 0, h: p.durch ? .34 : 2.4 })) };
+  A.rand = Math.max(...A.plats.map(p => Math.abs(p.x0) + p.w / 2 + (p.bew ? p.bew.ax : 0))) + 9.5;
+  A.half = Math.max(...A.plats.map(p => Math.abs(p.x0) + p.w / 2 + (p.bew ? p.bew.ax : 0)));
+  const ids = zwei ? [0, 1] : [0, 2, 3, 4].slice(0, 1 + L.bots), n = ids.length;
+  const haupt = A.plats.filter(p => !p.durch), breit = Math.max(...haupt.map(p => Math.abs(p.x) + p.w / 2)) - 1.5;
+  A.sp = ids.map((fi, k) => { const f = PXKS_FIG[fi], x = n === 1 ? 0 : -breit + 2 * breit * k / (n - 1);
+    return { k, fi, n: f.n, fk: f.k, c: f.c, h: f.h, mensch: !demo && (k === 0 || zwei), x, y: 0, vx: 0, vy: 0, dir: x > 0 ? -1 : 1, boden: false, plat: null, luft: 2, proz: 0, leben: L.leben, weg: 0, stun: 0,
+      ang: null, laedt: false, halt: 0, drueck: -1, wunsch: null, schutz: 0, stern: 0, riesen: 0, item: null, drop: 0, wolke: 0, kos: 0, ausT: 0, letzter: null, eing: { x: 0, y: 0, sprung: false }, denk: 0, ki: { laden: 0 }, anim: k, text: null, jubel: 0 }; });
+  A.sp.forEach(s => { const h = pxKsHoehe(A, s.x, 20); s.y = h === null ? 0 : h; });
+  return A;
+}
+
+function pxKsLos(G) {
+  const A = G.A; A.phase = 'frage';
+  pxAfter(G.run, 420, () => {
+    if (G.A !== A) return;
+    pxnFrage(G, 'kissen', A.zwei ? '❓ Kissen-Frage für euch beide' : '❓ Kissen-Frage', A.zwei ? 'Richtig = Lumi und Pia starten mit dem Riesenkissen!' : 'Richtig = du startest mit dem Riesenkissen!', ok => {
+      if (G.A !== A) return;
+      if (ok) A.sp.forEach(s => { if (s.mensch) { s.riesen = 10; s.text = { t: 'RIESENKISSEN!', z: 2 }; } });
+      A.phase = 'start'; A.count = 3; pxnHitsWeg(G);
+      pxnMsg(G, A.L.name.toUpperCase(), '#ffffff', 1.4, 2, ok ? 'MIT RIESENKISSEN!' : A.L.leben + ' LEBEN FÜR JEDEN');
+    });
+  });
+}
+
+
+function pxKsHoehe(A, x, y) { let b = null; A.plats.forEach(p => { if (Math.abs(x - p.x) <= p.w / 2 && p.y <= y + .01 && (b === null || p.y > b)) b = p.y; }); return b; }
+function pxKsPlat(A, dt) {
+  A.plats.forEach(p => { if (!p.bew) return; const b = p.bew, ph = (b.ph || 0) + A.t * b.f * Math.PI * 2, nx = p.x0 + Math.sin(ph) * b.ax, ny = p.y0 + Math.sin(ph * (b.ax && b.ay ? 2 : 1)) * b.ay;
+    p.dx = nx - p.x; p.dy = ny - p.y; p.x = nx; p.y = ny; });
+}
+function pxKsS(G, A) { return Math.max(6.5, Math.min(13, (G.run.W / 2 - 10) / (A.half + 1.2), (G.run.H - 62) / 10)); }
+const pxKsGY = run => run.H - 44;
+function pxKsPix(G, x, y) { const A = G.A, S = pxKsS(G, A); return [G.run.W / 2 + x * S, pxKsGY(G.run) - y * S]; }
+
+
+function pxKsHau(G, A, s, oben) {
+  if (s.ang || s.stun > 0 || s.weg > 0 || s.wolke > 0) return false;
+  if (s.item === 'ball') { s.item = null; A.baelle.push({ x: s.x + s.dir * .6, y: s.y + 1, vx: s.dir * 15, vy: 2.5, von: s, t: 1.4 }); s.ang = { art: 'wurf', t: 0, d: .3, hit: new Set() }; if (!A.demo) pxSfx.pop(); return true; }
+  s.ang = { art: 'hau', t: 0, d: .3, oben: !!oben, hit: new Set() }; if (!A.demo) pxSfx.t(700, 0, .06, 'triangle', .04); return true;
+}
+function pxKsWumms(G, A, s, c) { if (s.ang || s.stun > 0 || s.weg > 0 || s.wolke > 0) return false; s.ang = { art: 'wumms', t: 0, d: .55, c: pxnCl(c, 0, 1), hit: new Set() }; if (!A.demo) pxSfx.t(300, 0, .16, 'sawtooth', .04); return true; }
+function pxKsHitbox(s) {
+  const g = s.ang; if (!g) return null; const gr = s.riesen > 0 ? 1.3 : 1;
+  if (g.art === 'hau') { if (g.t < .06 || g.t > .17) return null; return g.oben ? [s.x + s.dir * .2, s.y + 1.7, .75 * gr, 7, 4.2, .08, 84] : [s.x + s.dir * .85, s.y + .72, .72 * gr, 7, 4.5, .08, s.boden ? 36 : 44]; }
+  if (g.art === 'wumms') { if (g.t < .1 || g.t > .24) return null; return [s.x + s.dir * .95, s.y + .75, .85 * gr, 13 + 9 * g.c, 7, .125 + .07 * g.c, 40]; }
+  return null;
+}
+function pxKsTreffe(G, A, s, o, dmg, base, wachs, winkel, richtung) {
+  if (o.schutz > 0 || o.stern > 0 || o.weg > 0 || o.leben <= 0) return false;
+  o.proz = Math.min(999, o.proz + dmg); const mult = s && s.riesen > 0 ? 1.35 : 1, kb = (base + o.proz * wachs) * mult, a = winkel * Math.PI / 180;
+  o.vx = Math.cos(a) * kb * richtung; o.vy = Math.sin(a) * kb; o.stun = .12 + kb * .028; o.boden = false; o.plat = null; o.luft = 2; o.ang = null; o.laedt = false; o.drueck = -1; o.letzter = s;
+  A.frieren = Math.min(.12, .04 + kb * .003);
+  const [x, y] = pxKsPix(G, o.x, o.y + .7); pxBurst(G.run, x, y, ['#ffffff', '#f4f8ff', o.h, '#fff3c4'], 6 + Math.round(kb * .5), { v: 50 + kb * 2, up: 20, life: .45, g: 60 });
+  if (!A.demo) { pxSfx.t(520 - Math.min(300, kb * 10), 0, .08, 'square', .05); if (kb > 16) { pxSfx.boom(); G.shake = Math.min(.4, kb * .012); } }
+  return true;
+}
+function pxKsNimm(G, A, s, it) {
+  if (it.art === 'stern') s.stern = 5; else if (it.art === 'riesen') s.riesen = 8; else if (it.art === 'herz') s.proz = Math.max(0, s.proz - 30); else s.item = 'ball';
+  s.text = { t: PXKS_ITEM[it.art][1], z: 1.2 }; if (!A.demo) pxSfx.coin();
+}
+function pxKsRaetsel(G, A, s, it) {
+  it.weg = true; A.fragen++;
+  if (!s.mensch || A.auto) { s.proz = Math.max(0, s.proz - 15); return; }
+  pxnFrage(G, 'kissen', A.zwei ? `❓ Rätsel-Geschenk für ${s.n}` : '❓ Rätsel-Geschenk', 'Richtig = 30 % weniger und Sternfeder!', ok => {
+    if (G.A !== A) return; pxnHitsWeg(G); s.drueck = -1; s.laedt = false;
+    if (ok) { s.proz = Math.max(0, s.proz - 30); s.stern = 5; s.text = { t: 'STERNFEDER!', z: 1.6 }; pxSfx.ok(); } else s.text = { t: 'SCHADE!', z: 1.2 };
+  });
+}
+
+
+function pxKsBewegen(G, A, s, dt) {
+  const L = A.L, e = s.eing, py = s.y;
+  if (s.weg > 0) { s.weg -= dt; if (s.weg <= 0) { s.x = 0; s.y = Math.max(7, (pxKsHoehe(A, 0, 30) || 0) + 4.5); s.vx = s.vy = 0; s.wolke = 2.2; s.schutz = 3; s.proz = 0; s.boden = false; s.plat = null; s.luft = 2; s.stun = 0; s.ang = null; } return; }
+  if (s.schutz > 0) s.schutz -= dt; if (s.stern > 0) s.stern -= dt; if (s.riesen > 0) s.riesen -= dt; if (s.drop > 0) s.drop -= dt;
+  if (s.ang) { s.ang.t += dt; const hb = pxKsHitbox(s);
+    if (hb) A.sp.forEach(o => { if (o === s || s.ang.hit.has(o) || o.leben <= 0) return; if (Math.hypot(o.x - hb[0], o.y + .65 - hb[1]) < hb[2] + .55) { s.ang.hit.add(o); pxKsTreffe(G, A, s, o, hb[3], hb[4], hb[5], hb[6], o.x >= s.x ? 1 : -1); } });
+    if (s.ang && s.ang.t >= s.ang.d) s.ang = null; }
+  if (s.wolke > 0) { s.wolke -= dt; if (Math.abs(e.x) > .3 || e.sprung || s.wolke <= 0) s.wolke = 0; else { s.vx = s.vy = 0; s.anim += dt * 2; e.sprung = false; return; } }
+  if (s.stun > 0) { s.stun -= dt; s.vx *= Math.exp(-.7 * dt); e.sprung = false; }
+  else {
+    const ax = Math.abs(e.x) > .2 ? e.x : 0, lad = s.laedt ? .35 : 1;
+    if (s.boden) { const reib = L.glatt ? 3.2 : 15; s.vx += (ax * PXKS.RUN * lad - s.vx) * Math.min(1, dt * reib); }
+    else { s.vx += ax * 22 * dt; const m = PXKS.RUN * 1.05; if (Math.abs(s.vx) > m && Math.sign(s.vx) === Math.sign(ax)) s.vx = Math.sign(s.vx) * Math.max(m, Math.abs(s.vx) - 30 * dt); if (!ax) s.vx *= Math.exp(-1.2 * dt); }
+    if (ax && !s.ang && !s.laedt) s.dir = Math.sign(ax);
+    if (e.sprung) { if (s.boden) { s.vy = PXKS.SPR; s.boden = false; s.plat = null; if (!A.demo && s.mensch) pxSfx.jump(); }
+      else if (s.luft > 0) { s.vy = PXKS.FLAT; s.luft--; const [x, y] = pxKsPix(G, s.x, s.y + .3); pxBurst(G.run, x, y, ['#ffffff', s.h], 5, { v: 30, up: -10, life: .35, g: 20 }); if (!A.demo && s.mensch) pxSfx.spring(); } }
+    if (s.boden && s.plat && s.plat.durch && e.y > .6) { s.drop = .28; s.boden = false; s.plat = null; s.y -= .06; }
+  }
+  e.sprung = false;
+  if (!s.boden) { s.vy -= L.g * dt; if (s.vy < -PXKS.FALL && s.stun <= 0) s.vy = -PXKS.FALL; }
+  s.x += s.vx * dt; s.y += s.vy * dt; s.anim += dt * (Math.abs(s.vx) * 1.6 + 1);
+  if (s.boden && s.plat) { const p = s.plat; s.x += p.dx; s.y = p.y; if (Math.abs(s.x - p.x) > p.w / 2 + .12) { s.boden = false; s.plat = null; s.vy = Math.max(0, p.dy / Math.max(dt, 1e-3)) * .5; } }
+  if (!s.boden && s.vy <= 0) A.plats.forEach(p => {
+    if (s.boden || (p.durch && s.drop > 0)) return; const pAlt = p.y - (p.dy || 0);
+    if (py >= pAlt - .06 && s.y <= p.y && Math.abs(s.x - p.x) <= p.w / 2 + .08) {
+      if (s.stun > 0 && s.vy < -9 && !p.durch) { s.vy = -s.vy * .35; s.y = p.y + .01; s.stun *= .6; return; }
+      s.y = p.y; s.vy = 0; s.boden = true; s.plat = p; s.luft = 2; if (s.stun > 0) s.stun = Math.min(s.stun, .15); }
+  });
+  A.plats.forEach(p => { if (p.durch) return; if (s.y < p.y - .2 && s.y > p.y - p.h - 1.3 && Math.abs(s.x - p.x) < p.w / 2 + .35) { const sd = Math.sign(s.x - p.x) || 1; s.x = p.x + sd * (p.w / 2 + .35); s.vx = s.stun > 0 ? sd * Math.abs(s.vx) * .4 : 0; } });
+  A.items.forEach(it => { if (!it.weg && it.liegt && Math.abs(it.x - s.x) < .8 && Math.abs(it.y - s.y) < 1.2) { if (it.art === 'frage') { if (s.mensch || A.auto) pxKsRaetsel(G, A, s, it); } else { it.weg = true; pxKsNimm(G, A, s, it); } } });
+  if (Math.abs(s.x) > A.rand || s.y < -9.5 || s.y > 18) pxKsKO(G, A, s);
+}
+function pxKsKO(G, A, s) {
+  s.leben--; s.weg = s.leben > 0 ? 1.3 : 99; const run = G.run;
+  const [x0, y0] = pxKsPix(G, s.x, s.y), x = pxnCl(x0, 4, run.W - 4), y = pxnCl(y0, 20, run.H - 6);
+  pxBurst(run, x, y, [s.c, s.h, '#ffffff', '#ffd23f'], 28, { v: 90, up: 30, life: .8, g: 50 });
+  if (s.letzter && s.letzter !== s) s.letzter.kos++;
+  if (!A.demo) { G.shake = .3; pxSfx.boom(); pxnMsg(G, s.leben > 0 ? `${s.n} FLIEGT RAUS!`.toUpperCase() : `${s.n} IST RAUS!`.toUpperCase(), s.leben > 0 ? '#ffffff' : '#ffd84a', 1.1, 2); }
+  if (s.leben <= 0) s.ausT = A.t;
+  s.item = null; s.riesen = 0; s.stern = 0; s.ang = null; s.laedt = false; s.drueck = -1; s.letzter = null;
+}
+
+
+function pxKsKopf(G, A, s, dt) {
+  s.denk -= dt;
+  if (s.ki.laden > 0) { s.ki.laden -= dt; s.laedt = true; s.halt += dt; if (s.ki.laden <= 0) { s.laedt = false; pxKsWumms(G, A, s, Math.min(1, (s.halt - .22) / .8)); s.halt = 0; } }
+  if (s.denk > 0) return; const sk = s.mensch ? .8 : A.L.skill; s.denk = .06 + (1 - sk) * .22;
+  const e = s.eing; e.x = 0; e.y = 0; if (s.stun > 0 || s.weg > 0) return;
+  if (s.wolke > 0) { if (Math.random() < .3) e.x = Math.random() < .5 ? -1 : 1; return; }
+  const fest = A.plats.filter(p => !p.durch), ueber = A.plats.some(p => Math.abs(s.x - p.x) < p.w / 2 - .2 && p.y < s.y + .5);
+  if (!s.boden && !ueber) {
+    const z = fest.reduce((b, p) => { const ex = pxnCl(s.x, p.x - p.w / 2 + 1, p.x + p.w / 2 - 1), d = Math.abs(ex - s.x); return !b || d < b.d ? { d, x: ex, y: p.y } : b; }, null);
+    e.x = Math.sign(z.x - s.x); if (s.vy < 2 && s.y < z.y + 2.5 && s.luft > 0) e.sprung = true; return;
+  }
+  const gs = A.sp.filter(o => o !== s && o.leben > 0 && o.weg <= 0); if (!gs.length) return;
+  const it = A.items.find(i => !i.weg && i.liegt && i.art !== 'frage' && Math.abs(i.x - s.x) < 5 && Math.abs(i.y - s.y) < 1.5) || (s.mensch && A.items.find(i => !i.weg && i.liegt && Math.abs(i.x - s.x) < 7));
+  const t = gs.reduce((b, o) => { const d = Math.abs(o.x - s.x) + Math.abs(o.y - s.y) * .8 - o.proz * .01; return !b || d < b.d ? { d, o } : b; }, null).o;
+  const zx = it && Math.random() < .7 ? it.x : t.x, dx = zx - s.x, dy = t.y - s.y;
+  if (Math.abs(dx) > (it ? .3 : 1.05)) e.x = Math.sign(dx);
+  if (s.boden && s.plat && !s.plat.durch && e.x) { const nx = s.x + e.x * 1.1, p = s.plat; if (Math.abs(nx - p.x) > p.w / 2 - .3) e.x = 0; }
+  if (s.boden && dy > 1.6 && Math.random() < .25 + sk * .5) e.sprung = true;
+  if (s.boden && s.plat && s.plat.durch && dy < -1.6 && Math.random() < .5) e.y = 1;
+  if (!s.ang && !s.laedt && Math.abs(t.x - s.x) < 1.5 && Math.abs(t.y - s.y) < 1.4 && Math.random() < .3 + sk * .6) {
+    s.dir = Math.sign(t.x - s.x) || s.dir;
+    if (t.proz > 70 && s.boden && Math.random() < .35 + sk * .35) { s.ki.laden = .25 + Math.random() * (.2 + sk * .5); s.halt = .22; }
+    else pxKsHau(G, A, s, t.y - s.y > .8);
+  }
+  if (s.boden && Math.random() < .02) e.sprung = true;
+}
+
+function pxKsSteuer(G, A, s, dt) {
+  const h = s.k, d = pxnRicht(G, h), e = s.eing;
+  e.x = Math.abs(d.x) > .25 ? d.x : 0; e.y = d.y;
+  if (pxnHit(G, h, 'u')) e.sprung = true;
+  const halt = pxnHalt(G, h, 'a');
+  if (halt && s.drueck < 0) s.drueck = 0;
+  else if (halt) { s.drueck += dt; if (s.drueck > .22 && !s.ang && s.stun <= 0 && s.weg <= 0) s.laedt = true; }
+  else if (s.drueck >= 0) {
+    const d0 = s.drueck; s.drueck = -1; s.laedt = false;
+    const w = d0 < .22 ? { art: 'hau', oben: d.y < -.5 } : { art: 'wumms', c: Math.min(1, (d0 - .22) / .8) };
+    if (!(w.art === 'hau' ? pxKsHau(G, A, s, w.oben) : pxKsWumms(G, A, s, w.c))) s.wunsch = { ...w, t: .25 };
+  }
+  if (s.wunsch) { s.wunsch.t -= dt; if (!s.ang && s.stun <= 0 && s.weg <= 0) { const w = s.wunsch; s.wunsch = null; if (w.art === 'wumms') pxKsWumms(G, A, s, w.c); else pxKsHau(G, A, s, w.oben); } else if (s.wunsch.t <= 0) s.wunsch = null; }
+}
+
+
+function pxKsUpdate(G, dt) {
+  const A = G.A, run = G.run; if (!A) return;
+  pxPartsStep(run, dt); pxnMsgStep(G, dt); if (G.shake > 0) G.shake = Math.max(0, G.shake - dt);
+  A.sp.forEach(s => { if (s.text && (s.text.z -= dt) <= 0) s.text = null; if (s.jubel > 0) { s.jubel -= dt; s.anim += dt * 6; } });
+  if (A.phase === 'warte' || A.phase === 'frage') { A.t += dt; pxKsPlat(A, dt); return; }
+  if (A.phase === 'aus') { A.t += dt; pxKsPlat(A, dt); if (A.demo && (A.ende += dt) > 2.5) pxKsBau(G, pxKsLevel((A.L.w + 1) % 4, 2, false), false, true); return; }
+  A.t += dt;
+  if (A.phase === 'start') {
+    const c0 = Math.ceil(A.count); A.count -= dt; const c1 = Math.ceil(A.count);
+    if (!A.demo && c1 !== c0) { if (c1 > 0) pxSfx.tick(); else pxSfx.ok(); }
+    if (A.count <= 0) { A.phase = 'spiel'; if (!A.demo) pxnMsg(G, 'LOS!', '#ffd84a', .9, 4); }
+    pxKsPlat(A, dt); return;
+  }
+  if (A.frieren > 0) { A.frieren -= dt; return; }
+  A.zeit -= dt; pxKsPlat(A, dt);
+  A.sp.forEach(s => { if (s.leben <= 0) return; if (!s.mensch || A.auto) pxKsKopf(G, A, s, dt); else pxKsSteuer(G, A, s, dt); });
+  A.sp.forEach(s => { if (s.leben > 0) pxKsBewegen(G, A, s, dt); });
+
+  A.baelle = A.baelle.filter(b => { b.t -= dt; b.vy -= 6 * dt; b.x += b.vx * dt; b.y += b.vy * dt; let weg = b.t <= 0;
+    A.sp.forEach(o => { if (weg || o === b.von || o.weg > 0 || o.leben <= 0) return; if (Math.hypot(o.x - b.x, o.y + .65 - b.y) < .8) { pxKsTreffe(G, A, b.von, o, 9, 6, .08, 35, Math.sign(b.vx)); weg = true; } });
+    if (!weg && A.plats.some(p => !p.durch && Math.abs(b.x - p.x) < p.w / 2 && b.y < p.y && b.y > p.y - p.h)) weg = true;
+    if (weg) { const [x, y] = pxKsPix(G, b.x, b.y); pxBurst(run, x, y, ['#ffffff', '#bfefff'], 8, { v: 40, up: 10, life: .35, g: 60 }); } return !weg; });
+
+  const fallen = art => { const p = A.plats[Math.floor(Math.random() * A.plats.length)]; A.items.push({ art, x: p.x + (Math.random() - .5) * (p.w - 1), y: 13, vy: 0, plat: p, liegt: false, t: 0 }); };
+  if (A.L.items) { A.itemT -= dt; if (A.itemT <= 0 && A.items.filter(i => !i.weg && i.art !== 'frage').length < 2) { A.itemT = 9 + Math.random() * 6; fallen(R.pick(Object.keys(PXKS_ITEM))); } }
+  if (!A.demo) { A.frageT -= dt; if (A.frageT <= 0 && A.fragen < 2 && !A.items.some(i => i.art === 'frage' && !i.weg)) { A.frageT = 30 + Math.random() * 10; fallen('frage'); } }
+  A.items.forEach(it => { if (it.weg) return; it.t += dt; if (!it.liegt) { it.vy -= 9 * dt; it.y += it.vy * dt; if (it.y <= it.plat.y) { it.y = it.plat.y; it.liegt = true; } } else { it.x += it.plat.dx; it.y = it.plat.y; } if (it.t > (it.art === 'frage' ? 24 : 16)) it.weg = true; });
+  A.items = A.items.filter(it => !it.weg);
+  const drin = A.sp.filter(s => s.leben > 0);
+  if (drin.length <= 1 || (!A.zwei && !A.demo && A.sp[0].leben <= 0) || A.zeit <= 0) { A.ende += dt; if (A.ende > (A.zeit <= 0 ? .1 : 1.1)) pxKsEnde(G); }
+}
+function pxKsRang(A) { return A.sp.slice().sort((a, b) => b.leben - a.leben || (b.leben > 0 || a.leben > 0 ? 0 : b.ausT - a.ausT) || a.proz - b.proz); }
+function pxKsEnde(G) {
+  const A = G.A; if (A.phase === 'aus') return; A.phase = 'aus'; A.ende = 0;
+  const rl = pxKsRang(A); rl[0].jubel = 3; if (A.demo) return;
+  const zeitAus = A.zeit <= 0 ? 'Die Zeit ist um!' : '', liste = rl.map((s, i) => `${i + 1}. ${s.n}`).join(' · ');
+  const aufg = G.askN ? `${G.okN} von ${G.askN} Aufgaben richtig` : '';
+  if (A.zwei) {
+    pxnEnde(G, PXKS_O, { w: A.L.w, l: A.L.l, zwei: true, st: 3, titel: `${rl[0].n} gewinnt! 🏆`, big: '🛏️', zeilen: [zeitAus, `Lumi ${A.sp[0].leben > 0 ? A.sp[0].leben : 0} Leben · Pia ${A.sp[1].leben > 0 ? A.sp[1].leben : 0} Leben`, 'Schön zusammen gespielt!', aufg].filter(Boolean) });
+    return;
+  }
+  const lumi = A.sp[0], platz = rl.indexOf(lumi) + 1, st = platz === 1 ? 3 : platz === 2 ? 2 : 1;
+  pxnEnde(G, PXKS_O, { w: A.L.w, l: A.L.l, zwei: false, st, titel: platz === 1 ? 'Lumi gewinnt die Kissenschlacht! 🏆' : `Lumi wird ${platz}.`, big: platz === 1 ? '🏆' : '🛏️',
+    zeilen: [zeitAus, liste, `Rausgeschubst: ${lumi.kos}`, aufg].filter(Boolean), tipp: st < 3 ? 'Halte 💥 gedrückt und lass los, wenn die anderen hohe Prozente haben. Mit ⬆ in der Luft flatterst du zurück!' : '' });
+}
+
+
+const PXKS_PAL = {
+  zimmer: { h1: '#ffe9cc', h2: '#ffe1b0', boden: '#c99a6a', boden2: '#b8895a', fest: '#a0663a', fest2: '#7a4a2a', top: '#fbf5ea', decke: '#ff9a6b', decke2: '#ffb08a', duenn: '#c98a4a', duenn2: '#e8b47a' },
+  wolke: { h1: '#4aa0f0', h2: '#e3f3ff', boden: '#ffffff', boden2: '#e8f2ff', fest: '#e8e2fa', fest2: '#c8c0e8', top: '#ffffff', decke: '#ffd23f', decke2: '#fff3c4', duenn: '#ffffff', duenn2: '#dfeaff' },
+  eis: { h1: '#3d94e6', h2: '#d3ebfb', boden: '#2f7fd8', boden2: '#3a8be0', fest: '#bfe8ff', fest2: '#7fc8ee', top: '#ffffff', decke: '#9fd6f0', decke2: '#e8f7ff', duenn: '#9fdcff', duenn2: '#ffffff' },
+  sterne: { h1: '#070b26', h2: '#26357a', boden: '#1a2456', boden2: '#20264c', fest: '#3a4580', fest2: '#2a3066', top: '#7a88c8', decke: '#8ef3ff', decke2: '#ff8ad8', duenn: '#5a4fb0', duenn2: '#8a7cf0' }
+};
+function pxKsBg(art, W, H, GY) {
+  const [c, g] = pxCanvas(W, H), P = PXKS_PAL[art], r = pxnRnd(art.length * 977 + W);
+  const n = 12; for (let i = 0; i < n; i++) { const t = i / (n - 1), a = [parseInt(P.h1.slice(1, 3), 16), parseInt(P.h1.slice(3, 5), 16), parseInt(P.h1.slice(5, 7), 16)], b = [parseInt(P.h2.slice(1, 3), 16), parseInt(P.h2.slice(3, 5), 16), parseInt(P.h2.slice(5, 7), 16)];
+    pxRect(g, 0, Math.floor(H * i / n), W, Math.ceil(H / n) + 1, `rgb(${a.map((v, k) => Math.round(v + (b[k] - v) * t)).join(',')})`); }
+  if (art === 'zimmer') {
+    for (let y = 8; y < GY + 20; y += 12) for (let x = (y / 12 % 2) * 8; x < W; x += 16) pxRect(g, x, y, 2, 2, '#f5d2a0');
+    const fx = W - 74; pxRect(g, fx - 2, 22, 52, 44, '#ffffff'); pxRect(g, fx, 24, 48, 40, '#9fd8ff'); pxRect(g, fx, 50, 48, 14, '#c8ecff'); pxEll(g, fx + 30, 30, 10, 10, '#fff4b0'); pxRect(g, fx + 23, 24, 2, 40, '#ffffff'); pxRect(g, fx, 43, 48, 2, '#ffffff');
+    [[14, 26, '#ff8ad8'], [40, 40, '#5ac8ff'], [22, 56, '#ffd23f']].forEach(([x, y, f]) => { pxRect(g, x, y, 18, 18, '#ffffff'); pxRect(g, x + 2, y + 2, 14, 14, f); pxEll(g, x + 5, y + 5, 8, 8, '#ffffff'); });
+    pxRect(g, 0, GY + 26, W, H - GY - 26, P.boden); for (let x = 0; x < W; x += 24) pxRect(g, x, GY + 26, 1, H - GY - 26, P.boden2);
+    pxEll(g, W / 2 - 60, GY + 34, 120, 14, '#7cc6a8'); pxEll(g, W / 2 - 50, GY + 37, 100, 8, '#9ad8bc');
+    for (let k = 0; k < 6; k++) { const x = Math.floor(r() * W), cc = ['#e8463a', '#5cc85c', '#3f8fe0', '#ffd23f'][k % 4]; if (Math.abs(x - W / 2) < 70) continue; pxRect(g, x, GY + 40 - 6, 7, 7, PXC.k); pxRect(g, x + 1, GY + 41 - 6, 5, 5, cc); }
+  } else if (art === 'wolke') {
+    for (let k = 0; k < 4; k++) { const x = 20 + k * (W - 40) / 3 + r() * 10, h = 40 + k % 2 * 18, f = ['#6a8ff0', '#ff8ad8', '#ffd23f', '#a46bff'][k]; pxRect(g, x - 6, GY - h + 30, 12, h, '#efe8ff'); pxRect(g, x - 6, GY - h + 30, 2, h, '#ffffff'); pxTri(g, x - 9, GY - h + 30, x + 9, GY - h + 30, x, GY - h + 14, f); pxRect(g, x - 2, GY - h + 40, 4, 6, '#a8b8e8'); }
+    for (let k = 0; k < 9; k++) { const x = r() * W, y = 14 + r() * 50, w = 22 + r() * 30; pxEll(g, x, y, w, w * .36, 'rgba(255,255,255,.75)'); pxEll(g, x + w * .3, y - 4, w * .6, w * .3, 'rgba(255,255,255,.85)'); }
+    for (let x = -10; x < W + 10; x += 22) pxEll(g, x, GY + 30 + (x / 22 % 2) * 4, 34, 18, '#ffffff');
+    pxRect(g, 0, GY + 40, W, H, '#ffffff');
+  } else if (art === 'eis') {
+    pxEll(g, 30, 18, 16, 16, '#fff2c4');
+    for (let k = 0; k < 5; k++) { const x = r() * W, w = 30 + r() * 40, h = 14 + r() * 22; pxTri(g, x - w / 2, GY + 24, x + w / 2, GY + 24, x + r() * 10 - 5, GY + 24 - h, '#e8f7ff'); pxTri(g, x, GY + 24, x + w / 2, GY + 24, x + 4, GY + 24 - h * .8, '#bfe8ff'); }
+    pxRect(g, 0, GY + 24, W, H - GY - 24, P.boden); for (let k = 0; k < 18; k++) pxRect(g, Math.floor(r() * W), GY + 28 + Math.floor(r() * (H - GY - 30)), 6 + Math.floor(r() * 8), 1, P.boden2);
+  } else {
+    for (let k = 0; k < 70; k++) pxRect(g, Math.floor(r() * W), Math.floor(r() * (GY + 10)), 1, 1, r() < .2 ? '#bcd0ff' : '#ffffff');
+    pxEll(g, 22, 20, 26, 26, '#ff9b6b'); pxEll(g, 26, 24, 10, 8, '#ffbe9a'); pxEll(g, W - 54, 30, 40, 40, '#7a8cff'); pxRect(g, W - 64, 49, 60, 2, '#c8b8ff');
+    pxRect(g, 0, GY + 28, W, H - GY - 28, P.boden); for (let x = 4; x < W; x += 18) { pxRect(g, x, GY + 32, 10, 5, P.fest2); pxRect(g, x + 2, GY + 33, 6, 1, x % 36 ? '#8ef3ff' : '#ff8ad8'); }
+  }
+  return c;
+}
+function pxKsPlatMalen(g, art, x0, y, w, durch, S, t) {
+  const P = PXKS_PAL[art], K = PXC.k, x = Math.round(x0), W = Math.round(w), y0 = Math.round(y);
+  if (durch) {
+    if (art === 'wolke') { for (let k = 0; k < W; k += 6) pxEll(g, x + k - 1, y0 - 1, 9, 6, P.duenn); pxRect(g, x, y0 + 2, W, 2, P.duenn2); return; }
+    pxRect(g, x - 1, y0 - 1, W + 2, 6, K); pxRect(g, x, y0, W, 4, P.duenn); pxRect(g, x, y0, W, 1, P.duenn2);
+    if (art === 'sterne') pxRect(g, x + 2, y0 + 2, W - 4, 1, Math.floor(t * 3) % 2 ? '#8ef3ff' : '#ff8ad8');
+    if (art === 'zimmer') for (let k = 3; k < W - 3; k += 12) { pxRect(g, x + k, y0 + 4, 2, 3, P.fest2); }
+    return;
+  }
+  const h = Math.round(2.4 * S);
+  pxRect(g, x - 1, y0 - 1, W + 2, h + 2, K); pxRect(g, x, y0, W, h, P.fest); pxRect(g, x, y0 + h - 3, W, 3, P.fest2);
+  if (art === 'zimmer') {
+    pxRect(g, x, y0, W, 5, P.top); pxRect(g, x + Math.round(W * .3), y0, Math.round(W * .7), 6, P.decke); for (let k = Math.round(W * .3) + 3; k < W; k += 8) pxRect(g, x + k, y0 + 1, 4, 4, P.decke2);
+    pxEll(g, x + 3, y0 - 3, 14, 7, '#ffffff'); pxRect(g, x + 4, y0 + 8, W - 8, 1, P.fest2); pxRect(g, x + 2, y0 + h, 3, 4, P.fest2); pxRect(g, x + W - 5, y0 + h, 3, 4, P.fest2);
+  } else if (art === 'wolke') {
+    pxRect(g, x, y0, W, 3, P.top); pxRect(g, x, y0 + 5, W, 2, P.decke); for (let k = 0; k < W; k += 10) pxEll(g, x + k - 2, y0 + h - 4, 12, 8, '#ffffff');
+  } else if (art === 'eis') {
+    pxRect(g, x, y0, W, 3, P.top); for (let k = 6; k < W - 4; k += 13) pxLine(g, x + k, y0 + 4, x + k + 4, y0 + h - 6, P.decke);
+    pxTri(g, x + 2, y0 + h, x + W - 2, y0 + h, x + W / 2, y0 + h + Math.round(S * 1.4), P.fest2);
+  } else {
+    pxRect(g, x, y0, W, 2, P.top); for (let k = 4; k < W - 3; k += 9) pxRect(g, x + k, y0 + 5, 3, 2, (Math.floor(t * 2) + k) % 3 ? P.decke : P.decke2);
+    pxRect(g, x + 3, y0 + h - 6, W - 6, 1, P.decke);
+  }
+}
+function pxKsItemMalen(g, it, x, y, t) {
+  const K = PXC.k, b = it.art === 'frage', f = b ? '#ffd84a' : PXKS_ITEM[it.art][0], hop = it.liegt ? Math.round(Math.sin(t * 4 + it.x) * 1) : 0, yy = Math.round(y) - 8 - hop, xx = Math.round(x) - 4;
+  if (b) { g.globalAlpha = .35 + .2 * Math.sin(t * 5); pxEll(g, xx - 3, yy - 3, 15, 15, '#fff3c4'); g.globalAlpha = 1; }
+  pxRect(g, xx - 1, yy - 1, 10, 10, K); pxRect(g, xx, yy, 8, 8, f); pxRect(g, xx + 3, yy, 2, 8, b ? '#ffffff' : '#ffffff'); pxRect(g, xx, yy + 3, 8, 2, '#ffffff');
+  if (b) pxText(g, '?', xx + 4, yy - 9, '#ffd84a', 1, 'c', K);
+}
+function pxKsFigur(g, G, A, s, x, y) {
+  const K = PXC.k, pose = s.jubel > 0 && s.boden ? 'c' : s.stun > 0 ? 'f' : !s.boden ? 'j' : Math.abs(s.vx) > .6 ? 'w' : 'i';
+  const fr = pose === 'w' ? Math.floor(s.anim * 1.4) % 4 : pose === 'i' ? Math.floor(A.t * 2 + s.k) % 3 : 0, hop = s.jubel > 0 ? Math.round(Math.abs(Math.sin(s.anim * 2)) * 3) : 0;
+  if (s.wolke > 0) { pxEll(g, x - 11, y - 2, 22, 7, '#ffffff'); pxEll(g, x - 7, y - 4, 14, 6, '#ffffff'); }
+  if (s.stern > 0) { g.globalAlpha = .5 + .3 * Math.sin(A.t * 12); pxnRing(g, x, y - 9, 12, '#ffd84a'); g.globalAlpha = 1; }
+  const blink = s.schutz > 0 && Math.floor(A.t * 12) % 2;
+
+  const gr = s.riesen > 0 ? 1.5 : 1, kw = Math.round(7 * gr), kh = Math.round(5 * gr), g0 = s.ang;
+  let kx = x + s.dir * 7, ky = y - 11;
+  if (s.laedt) { kx = x - s.dir * 6; ky = y - 20 - Math.round(Math.sin(A.t * 20)); }
+  else if (g0 && (g0.art === 'hau' || g0.art === 'wurf')) { const f = Math.sin(Math.PI * Math.min(1, g0.t / g0.d)); if (g0.oben) { kx = x + s.dir * 2; ky = y - 18 - f * 8; } else { kx = x + s.dir * (6 + f * 8); ky = y - 13 + f * 3; } }
+  else if (g0 && g0.art === 'wumms') { const f = Math.sin(Math.PI * Math.min(1, g0.t / g0.d)); kx = x + s.dir * (6 + f * 13); ky = y - 12; }
+  const kissen = () => { pxRect(g, kx - kw / 2 - 1, ky - kh / 2 - 1, kw + 2, kh + 2, K); pxRect(g, kx - kw / 2, ky - kh / 2, kw, kh, s.h); pxRect(g, kx - kw / 2, ky - kh / 2, kw, 1, '#ffffff'); if (s.laedt && Math.floor(A.t * 10) % 2) pxRect(g, kx - kw / 2, ky - kh / 2, kw, kh, '#ffffff'); };
+  if (s.laedt) kissen();
+  if (!blink) pxDraw(g, `pxnp_${s.fk}${pose}_${fr}`, x - 10, y - 19 - hop, s.dir < 0);
+  if (!s.laedt && s.weg <= 0) kissen();
+  if (s.item === 'ball') { pxEll(g, x - s.dir * 7 - 2, y - 9, 5, 5, '#ffffff'); }
+  if (g0 && g0.art === 'wumms' && g0.t > .08 && g0.t < .3) { g.globalAlpha = .6; for (let k = 0; k < 3; k++) pxRect(g, x + s.dir * (14 + k * 4), y - 16 + k * 4, 3, 1, '#ffffff'); g.globalAlpha = 1; }
+}
+function pxKsDraw(G, g) {
+  const run = G.run, A = G.A, W = run.W, H = run.H; if (!A) return;
+  const S = pxKsS(G, A), GY = pxKsGY(run), X = x => W / 2 + x * S, Y = y => GY - y * S;
+  const key = A.L.art + W + 'x' + H; if (G.bgKey !== key) { G.bg = pxKsBg(A.L.art, W, H, GY); G.bgKey = key; }
+  g.drawImage(G.bg, 0, 0);
+  if (A.L.art === 'sterne') for (let k = 0; k < 8; k++) { const a = .5 + .5 * Math.sin(A.t * (1 + k * .3) + k); if (a > .7) pxRect(g, (k * 53 + 17) % W, (k * 29 + 9) % (GY - 10), 1, 1, '#ffffff'); }
+  g.save(); if (G.shake > 0) g.translate(Math.round((Math.random() - .5) * 6 * G.shake), Math.round((Math.random() - .5) * 4 * G.shake));
+  A.plats.forEach(p => pxKsPlatMalen(g, A.L.art, X(p.x - p.w / 2), Y(p.y), p.w * S, p.durch, S, A.t));
+  A.items.forEach(it => pxKsItemMalen(g, it, X(it.x), Y(it.y), A.t));
+  A.baelle.forEach(b => { pxEll(g, X(b.x) - 3, Y(b.y) - 3, 6, 6, PXC.k); pxEll(g, X(b.x) - 2, Y(b.y) - 2, 4, 4, '#ffffff'); });
+  A.sp.forEach(s => { if (s.leben <= 0 || s.weg > 0) return; const x = Math.round(X(s.x)), y = Math.round(Y(s.y));
+    if (y < 18) { pxTri(g, x - 3, 21, x + 3, 21, x, 17, s.c); pxText(g, s.proz + '%', x, 23, '#ffffff', 1, 'c', PXC.k); return; }
+    if (s.boden && s.plat) { g.globalAlpha = .25; pxEll(g, x - 6, Math.round(Y(s.plat.y)) - 1, 12, 3, PXC.k); g.globalAlpha = 1; }
+    pxKsFigur(g, G, A, s, x, y);
+    if (s.text && !A.demo) pxnSag(g, s.text.t, x, y - 22, s.mensch ? '#fff3c4' : '#ffffff');
+    else if (A.zwei && s.mensch && A.phase !== 'aus') pxText(g, s.k ? '2' : '1', x, y - 27, s.c, 1, 'c', PXC.k); });
+  pxPartsDraw(g, run);
+  g.restore();
+
+  pxRect(g, 0, 0, W, 16, 'rgba(16,22,48,.8)');
+  const n = A.sp.length, sw = Math.min(70, Math.floor((W - 34) / n)), x0 = Math.round(W / 2 - sw * n / 2) - 14;
+  A.sp.forEach((s, i) => { const x = x0 + i * sw; g.globalAlpha = s.leben > 0 ? 1 : .4; g.drawImage(pxSpr(`pxnp_${s.fk}i_0`), 2, 1, 16, 12, x, 2, 16, 12); g.globalAlpha = 1;
+    const pc = s.proz < 40 ? '#ffffff' : s.proz < 90 ? '#ffd84a' : s.proz < 140 ? '#ff9b26' : '#ff5a5a';
+    pxText(g, s.leben > 0 ? s.proz + '%' : 'AUS', x + 18, 2, s.leben > 0 ? pc : '#8ef3ff', 1, 'l');
+    for (let k = 0; k < A.L.leben; k++) pxRect(g, x + 18 + k * 5, 10, 3, 3, k < s.leben ? '#ff5a7a' : '#4a5378'); });
+  if (!A.demo && (A.phase === 'spiel' || A.phase === 'aus')) { const z = Math.max(0, A.zeit); pxText(g, `${Math.floor(z / 60)}:${String(Math.floor(z % 60)).padStart(2, '0')}`, W - 3, 5, z < 20 ? '#ff9b26' : '#ffffff', 1, 'r'); }
+  if (A.phase === 'start' && !A.demo && A.count > 0) pxnTextO(g, String(Math.ceil(A.count)), W / 2, GY - 90, '#ffd84a', 5, PXC.k);
+  pxnMsgDraw(g, G, W / 2, 62);
+}
+
+
+function pxKsSim(sec) {
+  const G = PXKS_G; if (!G || !G.A) return null; const A = G.A;
+  if (A.phase === 'start' || A.phase === 'frage' || A.phase === 'warte') { A.count = 0; A.phase = 'spiel'; }
+  A.auto = true; for (let i = 0; i < sec * 60 && G.A === A && A.phase !== 'aus' && !PXASK; i++) pxKsUpdate(G, 1 / 60); if (G.A === A) A.auto = A.demo;
+  return { phase: A.phase, leben: A.sp.map(s => s.leben), proz: A.sp.map(s => s.proz), kos: A.sp.map(s => s.kos), zeit: Math.round(A.zeit), items: A.items.length };
+}
+
+Object.assign(PX_NEW, { kissen: 'Neu' });
+pxReg({ id: 'kissen', t: 'Pixel-Kissenschlacht', d: 'Kissen schwingen, Prozente sammeln, die anderen von der Bühne schubsen! Allein oder zu zweit.', e: '🛏️', i: 'pxn64_s_0', tag: 'Geschick', o: 25, start: pxKsStart, prog: () => pxnProg('kissen') });
+if (typeof BLW_ZWEI !== 'undefined') BLW_ZWEI.add('px:kissen');
+
+/*@@src px_autoball.js@@*/
+
+
+
+
+
+
+
+
+
+
+
+
+const PXAB = { X: AFB_X, Z: AFB_Z, C: AFB_C, T: AFB_TOR, TH: AFB_TORH };
+const PXAB_TEAM = [{ n: 'Blau', c: '#3b7cf0', c2: '#2160b0', h: '#bfe0ff' }, { n: 'Orange', c: '#ff9b26', c2: '#c46a12', h: '#ffe0bf' }, { n: 'Rosa', c: '#ff6fb8', c2: '#c9468a', h: '#ffd0ea' }];
+const PXAB_FAHRER = [['l', 'Lumi'], ['n', 'Pino'], ['f', 'Flocke'], ['a', 'Paul'], ['o', 'Polly'], ['e', 'Pepe'], ['p', 'Pia'], ['y', 'Pünktchen'], ['g', 'Grauer Pinguin']];
+let PXAB_G = null;
+const PXAB_O = {
+  id: 'autoball', titel: 'Pixel-Auto-Fußball', big: '🚗 ⚽ 🚙',
+  tipp: 'Fahr hinter den Ball und schieb ihn ins Tor! 🚀 Turbo halten, ⤒ springen, in der Luft noch einmal ⤒ = Salto-Schuss.',
+  welten: AFB_WELTEN, lvName: (w, l) => AFB_NAMEN[w][l], duo: ['Team Blau gegen Team Orange', 'Lumi gegen Pia'],
+  note: '❓ Vor dem Anstoß kommt eine Anstoß-Frage: richtig = voller Turbo. Goldene ?-Felder haben ein Rätsel, richtig = Super-Schuss für 10 Sekunden!',
+  start: (w, l, zwei) => pxAbNeu(PXAB_G, w, l, zwei), menu: () => pxAbMenu(PXAB_G)
+};
+function pxAbLevel(w, l) { return afbLevel(w, l); }
+
+
+function pxAbStart() {
+  const run = pxView({ id: 'autoball', title: 'Pixel-Auto-Fußball', H: 176, pad: 'none', portrait: 'top', ratio: .62, minW: 250 });
+  const G = PXAB_G = { run, A: null, msg: null, shake: 0, bg: null, bgKey: '', okN: 0, askN: 0, flash: 0 };
+  G.tasten = { u: [[' ', 'x', 'X'], ['e', 'E', 'q', 'Q'], ['Enter', 'm', 'M', '0']], t: [['Shift', 'Enter', 'c', 'C'], ['r', 'R', 'f', 'F'], ['n', 'N', '.', 'l', 'L']] };
+  pxnTasten(G);
+  pxLoop(run, dt => pxAbUpdate(G, dt), g => pxAbDraw(G, g));
+  pxAbMenu(G);
+}
+function pxAbMenu(G) { const s = pxnSave('autoball'); pxnPads(G, 0, []); pxAbBau(G, pxAbLevel(s.w, 2), false, true); pxnMenu(G, PXAB_O); }
+function pxAbNeu(G, w, l, zwei) {
+  G.okN = 0; G.askN = 0; G.run.parts = []; G.msg = null;
+  pxAbBau(G, pxAbLevel(w, l), zwei, false);
+  pxnPads(G, zwei ? 2 : 1, [['t', '🚀', 'Turbo'], ['u', '⤒', 'Springen, in der Luft noch einmal = Salto-Schuss', true]], { namen: ['Lumi', 'Pia'], farben: ['#3b7cf0', '#ff6fb8'] });
+  pxAbLos(G);
+}
+function pxAbBau(G, L, zwei, demo) {
+  const n = L.n, autos = [];
+  for (let t = 0; t < 2; t++) for (let i = 0; i < n; i++) {
+    const mensch = !demo && i === 0 && (t === 0 || zwei), f = t === 0 ? PXAB_FAHRER[i === 0 ? 0 : i] : zwei && i === 0 ? ['p', 'Pia'] : PXAB_FAHRER[3 + (L.st + i) % 5];
+    autos.push({ t, i, mensch, fk: f[0], n: f[1], x: 0, y: 0, z: 0, a: 0, v: 0, vy: 0, ix: 0, iz: 0, boost: 40, luft: false, sp2: 0, flip: 0, dodge: 0, rolle: 'sturm', zx: 0, zz: 0, denk: 0, stark: 0,
+      speed: mensch ? 1 : t === 0 ? .9 : zwei ? .9 : L.botF, skill: t === 0 || zwei ? .62 : Math.min(.9, .35 + L.st * .03), turbo: false, ruhig: false, springe: false, salto: 0, text: null });
+  }
+  const A = G.A = { L, zwei, demo, auto: demo, t: 0, autos, ball: { x: 0, y: 0, z: 0, vx: 0, vy: 0, vz: 0, rot: 0 }, r: L.spez === 'riesen' ? 2.5 : 1.6, g: L.spez === 'mond' ? 7.5 : 17, rest: L.spez === 'huepf' ? .86 : .62,
+    tore: [0, 0], uhr: L.zeit, phase: demo ? 'anstoss' : 'warte', count: demo ? 1 : 0, golden: false, goldT: 0, pads: AFB_PADS.map(() => 0), letzter: null, treffer: 0, raetsel: null, raetselT: 25 + Math.random() * 10, fragen: 0, ende: false, rollT: 0 };
+  pxAbAnstoss(A);
+  return A;
+}
+function pxAbAnstoss(A) {
+  Object.assign(A.ball, { x: 0, y: 0, z: 0, vx: 0, vy: 0, vz: 0 });
+  const pos = [[20, 0], [27, -8], [27, 8]];
+  A.autos.forEach(c => { const [px, pz] = pos[c.i], s = c.t ? 1 : -1; Object.assign(c, { x: s * px, z: c.t ? -pz : pz, y: 0, a: c.t ? Math.PI : 0, v: 0, vy: 0, ix: 0, iz: 0, luft: false, flip: 0, dodge: 0, boost: Math.max(c.boost, 40) }); });
+}
+function pxAbLos(G) {
+  const A = G.A; A.phase = 'frage';
+  pxAfter(G.run, 420, () => {
+    if (G.A !== A) return;
+    pxnFrage(G, 'autoball', A.zwei ? '❓ Anstoß-Frage für euch beide' : '❓ Anstoß-Frage', A.zwei ? 'Richtig = Lumi und Pia starten mit vollem Turbo!' : 'Richtig = du startest mit vollem Turbo!', ok => {
+      if (G.A !== A) return;
+      if (ok) A.autos.forEach(c => { if (c.mensch) { c.boost = 100; c.text = { t: 'VOLLER TURBO!', z: 2 }; } });
+      A.phase = 'anstoss'; A.count = 3; pxnHitsWeg(G);
+      pxnMsg(G, A.L.name.toUpperCase(), '#ffffff', 1.4, 2, ok ? 'MIT VOLLEM TURBO!' : `${A.L.zeit} SEKUNDEN`);
+    });
+  });
+}
+
+
+const pxAbWrap = a => { while (a > Math.PI) a -= 6.2832; while (a < -Math.PI) a += 6.2832; return a; };
+function pxAbFahre(G, A, c, dt, e) {
+  const len = Math.min(1, Math.hypot(e.x, e.z)), turbo = e.turbo && c.boost > 0 && len > .15, vmax = (turbo ? 24 : 16) * c.speed;
+  let d = 0;
+  if (len > .15) { d = pxAbWrap(Math.atan2(e.z, e.x) - c.a); if (!c.luft) { const tr = 3.7 * dt * (.5 + .5 * Math.min(1, Math.abs(c.v) / 7)); c.a = pxAbWrap(c.a + Math.max(-tr, Math.min(tr, d))); } }
+  if (!c.luft) { const want = len > .15 ? vmax * len * (Math.cos(d) > -.3 ? 1 : .35) : 0, up = turbo ? 34 : 19; c.v += Math.max(-26 * dt, Math.min(up * dt, want - c.v)); }
+  if (turbo) { c.boost = Math.max(0, c.boost - 30 * dt); if (Math.random() < .6) { const [x, y] = pxAbPix(G, c.x - Math.cos(c.a) * 1.9, c.z - Math.sin(c.a) * 1.9); pxBurst(G.run, x, y, ['#ffd23f', '#ff9b26', '#ffffff'], 1, { v: 10, up: 0, life: .3, g: 0 }); } }
+  c.boost = Math.min(100, c.boost + (c.mensch ? 7 : 5) * dt);
+  if (c.stark > 0) c.stark -= dt;
+  if (e.sprung) { if (!c.luft) { c.vy = 9.2; c.luft = true; c.sp2 = 1.3; if (c.mensch && !A.demo) pxSfx.jump(); } else if (c.sp2 > 0 && c.flip <= 0) { c.vy = Math.max(c.vy, 3.5); c.v = Math.min(c.v + 8, 27); c.flip = .55; c.dodge = .6; c.sp2 = 0; if (c.mensch && !A.demo) pxSfx.spring(); } }
+  c.sp2 -= dt; c.flip = Math.max(0, c.flip - dt); c.dodge = Math.max(0, c.dodge - dt);
+  c.vy -= 24 * dt; c.y += c.vy * dt; if (c.y <= 0) { c.y = 0; c.vy = 0; c.luft = false; c.flip = 0; }
+  const ca = Math.cos(c.a), sa = Math.sin(c.a); c.x += (ca * c.v + c.ix) * dt; c.z += (sa * c.v + c.iz) * dt; c.ix *= 1 - Math.min(1, 3 * dt); c.iz *= 1 - Math.min(1, 3 * dt);
+  const rc = 1.7, X = PXAB.X, Z = PXAB.Z, T = PXAB.T; let wand = false;
+  if (Math.abs(c.x) > X - rc) { if (Math.abs(c.z) < T - 1.3 && c.y < 3) { if (Math.abs(c.x) > X + 3.3) { c.x = Math.sign(c.x) * (X + 3.3); wand = true; } } else { c.x = Math.sign(c.x) * (X - rc); wand = true; } }
+  if (Math.abs(c.x) > X - .2 && Math.abs(c.z) > T - 1.3) { c.z = Math.sign(c.z) * (T - 1.3); wand = true; }
+  if (Math.abs(c.z) > Z - rc) { c.z = Math.sign(c.z) * (Z - rc); wand = true; }
+  const ec = Math.abs(c.x) + Math.abs(c.z) - (PXAB.C - rc * 1.41); if (ec > 0) { c.x -= Math.sign(c.x) * ec / 2; c.z -= Math.sign(c.z) * ec / 2; wand = true; }
+  if (wand) c.v *= .6;
+  AFB_PADS.forEach(([px, pz], i) => { if (A.pads[i] <= 0 && Math.hypot(c.x - px, c.z - pz) < 1.8 && c.y < 1) { A.pads[i] = 6; c.boost = Math.min(100, c.boost + 45); if (c.mensch && !A.demo) pxSfx.coin(); const [x, y] = pxAbPix(G, px, pz); pxBurst(G.run, x, y, ['#ffd23f', '#ffffff'], 8, { v: 30, up: 10, life: .4, g: 20 }); } });
+  const R0 = A.raetsel; if (R0 && !R0.weg && Math.hypot(c.x - R0.x, c.z - R0.z) < 2.2 && c.y < 1 && (c.mensch || A.auto)) pxAbRaetsel(G, A, c);
+}
+function pxAbRaetsel(G, A, c) {
+  A.raetsel.weg = true; A.raetsel = null; A.fragen++;
+  if (!c.mensch || A.auto) { c.stark = 6; return; }
+  pxnFrage(G, 'autoball', A.zwei ? `❓ Rätsel-Feld für ${c.n}` : '❓ Rätsel-Feld', 'Richtig = Super-Schuss für 10 Sekunden!', ok => {
+    if (G.A !== A) return; pxnHitsWeg(G);
+    if (ok) { c.stark = 10; c.boost = 100; c.text = { t: 'SUPER-SCHUSS!', z: 1.8 }; pxSfx.ok(); } else c.text = { t: 'SCHADE!', z: 1.2 };
+  });
+}
+
+function pxAbBall(G, A, dt) {
+  const b = A.ball, r = A.r, X = PXAB.X, Z = PXAB.Z, T = PXAB.T, TH = PXAB.TH;
+  b.vy -= A.g * dt; b.x += b.vx * dt; b.y += b.vy * dt; b.z += b.vz * dt;
+  const zug = 1 - Math.min(1, .06 * dt); b.vx *= zug; b.vz *= zug;
+  if (b.y < 0) { b.y = 0; if (b.vy < -2.5) b.vy = -b.vy * A.rest; else b.vy = 0; const f = 1 - Math.min(1, .35 * dt); b.vx *= f; b.vz *= f; }
+  if (Math.abs(b.z) > Z - r) { b.z = Math.sign(b.z) * (Z - r); b.vz = -b.vz * .78; if (!A.demo) pxSfx.t(180, 0, .04, 'triangle', .04); }
+  const mund = Math.abs(b.z) < T - r * .35 && b.y < TH - r * .25;
+  if (!mund && Math.abs(b.x) > X - r && Math.abs(b.x) < X + .5) { b.x = Math.sign(b.x) * (X - r); b.vx = -b.vx * .78; if (!A.demo) pxSfx.t(180, 0, .04, 'triangle', .04); }
+  [-1, 1].forEach(sx => [-1, 1].forEach(sz => { const dx = b.x - sx * X, dz = b.z - sz * T, d = Math.hypot(dx, dz); if (d < r + .3 && d > 1e-3 && b.y < TH + r) { const nx = dx / d, nz = dz / d; b.x = sx * X + nx * (r + .3); b.z = sz * T + nz * (r + .3); const vn = b.vx * nx + b.vz * nz; if (vn < 0) { b.vx -= 1.75 * vn * nx; b.vz -= 1.75 * vn * nz; if (!A.demo) pxSfx.t(900, 0, .06, 'square', .04); } } }));
+  const ec = Math.abs(b.x) + Math.abs(b.z) - (PXAB.C - r * 1.41); if (ec > 0) { const nx = -Math.sign(b.x) / 1.414, nz = -Math.sign(b.z) / 1.414; b.x += nx * ec * .71; b.z += nz * ec * .71; const vn = b.vx * nx + b.vz * nz; if (vn < 0) { b.vx -= 1.78 * vn * nx; b.vz -= 1.78 * vn * nz; } }
+  if (Math.abs(b.x) > X - .2) { if (Math.abs(b.z) > T - r) { b.z = Math.sign(b.z) * (T - r); b.vz = -b.vz * .4; } if (Math.abs(b.x) > X + 5 - r) { b.x = Math.sign(b.x) * (X + 5 - r); b.vx = -b.vx * .3; } if (b.y > TH - r) { b.y = TH - r; b.vy = -Math.abs(b.vy) * .3; } }
+  b.rot += Math.hypot(b.vx, b.vz) * dt / r;
+  if (A.phase === 'spiel' && Math.abs(b.x) > X + Math.min(r, 2.2) && Math.abs(b.z) < T && b.y < TH) pxAbTor(G, A, b.x > 0 ? 0 : 1);
+}
+function pxAbStoss(G, A, c) {
+  const b = A.ball, r = A.r, ca = Math.cos(c.a), sa = Math.sin(c.a), rx = b.x - c.x, rz = b.z - c.z, ry = b.y + r - (c.y + .75);
+  if (rx * rx + rz * rz > 36) return;
+  const lf = rx * ca + rz * sa, ll = -rx * sa + rz * ca, qf = pxnCl(lf, -1.65, 1.65), ql = pxnCl(ll, -1.05, 1.05), qy = pxnCl(ry, -.62, .72);
+  const df = lf - qf, dl = ll - ql, dy = ry - qy, d = Math.hypot(df, dl, dy);
+  if (d >= r) return;
+  let nx, ny, nz; if (d < 1e-4) { nx = ca; ny = 0; nz = sa; } else { nx = (df * ca - dl * sa) / d; nz = (df * sa + dl * ca) / d; ny = dy / d; }
+  b.x += nx * (r - d); b.y = Math.max(0, b.y + ny * (r - d)); b.z += nz * (r - d);
+  const cvx = ca * c.v + c.ix, cvz = sa * c.v + c.iz, vn = (b.vx - cvx) * nx + (b.vy - c.vy) * ny + (b.vz - cvz) * nz;
+  if (vn >= 0) return;
+  b.vx -= 1.5 * vn * nx; b.vy -= 1.5 * vn * ny; b.vz -= 1.5 * vn * nz;
+  const csp = Math.hypot(cvx, cvz), kick = (2.5 + csp * .42 + (c.dodge > 0 ? 9 : 0)) * (c.stark > 0 ? 1.45 : 1), vorn = lf > 1.2;
+  b.vx += nx * kick + (c.dodge > 0 ? ca * 6 : 0); b.vz += nz * kick + (c.dodge > 0 ? sa * 6 : 0); b.vy += Math.max(0, ny) * kick * .6 + (vorn ? 1.5 + csp * .14 : .6);
+  if (c.mensch && !A.zwei && A.L.hilfe) { const gx = PXAB.X + 3 - b.x, gz = pxnCl(b.z, -3, 3) - b.z, gl = Math.hypot(gx, gz), hs = Math.hypot(b.vx, b.vz); if (hs > 1 && (b.vx * gx + b.vz * gz) / (gl * hs) > .1) { const k = A.L.hilfe, tx = gx / gl, tz = gz / gl, ux = b.vx / hs * (1 - k) + tx * k, uz = b.vz / hs * (1 - k) + tz * k, ul = Math.hypot(ux, uz); b.vx = ux / ul * hs; b.vz = uz / ul * hs; } }
+  const bs = Math.hypot(b.vx, b.vy, b.vz), mx = c.stark > 0 ? 40 : 34; if (bs > mx) { b.vx *= mx / bs; b.vy *= mx / bs; b.vz *= mx / bs; }
+  c.v *= .9; A.letzter = c; if (c.mensch) A.treffer++;
+  if (!A.demo && (c.mensch || Math.random() < .5)) pxSfx.kick();
+  if (csp > 8 || c.dodge > 0) { const [x, y] = pxAbPix(G, b.x - nx * r, b.z - nz * r); pxBurst(G.run, x, y, ['#ffffff', PXAB_TEAM[pxAbFarbe(A, c.t)].c], c.dodge > 0 ? 12 : 5, { v: 40, up: 10, life: .4, g: 20 }); }
+}
+const pxAbFarbe = (A, t) => t === 1 && A.zwei ? 2 : t;
+function pxAbTor(G, A, team) {
+  A.tore[team]++; A.phase = 'tor'; A.count = 2.4; const b = A.ball, [x, y] = pxAbPix(G, b.x, b.z), wir = team === 0;
+  pxBurst(G.run, x, y, [PXAB_TEAM[pxAbFarbe(A, team)].c, '#ffffff', '#ffd23f'], 40, { v: 90, up: 30, life: .9, g: 40 }); G.flash = .25; G.shake = .3;
+  if (!A.demo) { if (A.zwei) { pxnMsg(G, 'TOR!', team ? '#ff6fb8' : '#3b7cf0', 2, 5, team ? 'FÜR PIA' : 'FÜR LUMI'); pxSfx.win(); } else if (wir) { pxnMsg(G, 'TOR!', '#ffd84a', 2, 5, A.letzter && A.letzter.mensch ? 'SUPER SCHUSS!' : 'TEAM BLAU'); pxSfx.win(); } else { pxnMsg(G, 'TOR FÜR ORANGE', '#ff9b26', 1.8, 2); pxSfx.bad(); } }
+  if (A.golden) A.ende = true;
+}
+
+function pxAbRollen(A) {
+  for (let t = 0; t < 2; t++) {
+    const team = A.autos.filter(c => c.t === t), b = A.ball, T = t ? -1 : 1, kosten = c => Math.hypot(b.x - c.x, b.z - c.z) + ((c.x - b.x) * T > 0 ? 14 : 0);
+    const sort = team.slice().sort((p, q) => kosten(p) - kosten(q)), mensch = team.find(c => c.mensch && !A.auto);
+    sort.forEach((c, k) => { if (c.mensch && !A.auto) return; if (mensch) c.rolle = kosten(c) + 6 < kosten(mensch) ? 'sturm' : 'abwehr'; else c.rolle = k === 0 ? 'sturm' : k === 1 ? 'abwehr' : 'mitte'; });
+  }
+}
+function pxAbPlane(A, c) {
+  const b = A.ball, T = c.t ? -1 : 1, gx = PXAB.X * T, own = -gx, X = PXAB.X - 3, Z = PXAB.Z - 3;
+  const bd = Math.hypot(b.x - c.x, b.z - c.z), tp = Math.min(.9, bd / 20), px = pxnCl(b.x + b.vx * tp, -X, X), pz = pxnCl(b.z + b.vz * tp, -Z, Z);
+  let ux = gx - px, uz = -pz * .8; const ul = Math.hypot(ux, uz); ux /= ul; uz /= ul;
+  let tx, tz; c.turbo = false; c.ruhig = false;
+  const nahe = Math.abs(px - own) < 17;
+  if (c.rolle === 'abwehr' && !nahe) { tx = own * .84; tz = pxnCl(pz * .35, -5, 5); c.ruhig = true; }
+  else if (c.rolle === 'mitte' && !nahe) { tx = px - ux * 13; tz = pz * .5; c.ruhig = true; }
+  else {
+    const rel = (c.x - px) * ux + (c.z - pz) * uz, lat = -(c.x - px) * uz + (c.z - pz) * ux;
+    if (rel > -1.2) { const sd = lat >= 0 ? 1 : -1; tx = px - ux * 4.5 - uz * sd * 4; tz = pz - uz * 4.5 + ux * sd * 4; if (nahe && (c.x - px) * T > 0) { tx = own * .9; tz = Math.sign(c.z - pz || 1) * 7; } }
+    else if (Math.abs(lat) > 2 + (-rel) * .3) { const k = Math.min(6, -rel * .6 + 2); tx = px - ux * k; tz = pz - uz * k; }
+    else { tx = px + ux * 3; tz = pz + uz * 3; c.turbo = bd > 7 && c.boost > 20 && Math.random() < c.skill; if (bd < 5 && b.y < 1 && Math.random() < c.skill * .35) c.salto = .32; }
+  }
+  if (A.raetsel && !A.raetsel.weg && c.mensch && A.auto && Math.hypot(A.raetsel.x - c.x, A.raetsel.z - c.z) < 8) { tx = A.raetsel.x; tz = A.raetsel.z; }
+  c.zx = pxnCl(tx, -X - 1, X + 1); c.zz = pxnCl(tz, -Z - 1, Z + 1);
+  if (b.y > 2 && b.y < 6 && bd < 5 && Math.random() < c.skill) c.springe = true;
+}
+function pxAbBotEin(A, c, dt) {
+  c.denk -= dt; if (c.denk <= 0) { c.denk = .12 + (1 - c.skill) * .4; pxAbPlane(A, c); }
+  const dx = c.zx - c.x, dz = c.zz - c.z, d = Math.hypot(dx, dz); let k = d < 1.2 ? 0 : 1; if (c.ruhig && d < 7) k = d / 7;
+  const e = { x: d ? dx / d * k : 0, z: d ? dz / d * k : 0, turbo: c.turbo, sprung: false };
+  if (c.springe) { c.springe = false; if (!c.luft) e.sprung = true; }
+  if (c.salto > 0) { if (!c.luft && c.salto > .3) e.sprung = true; c.salto -= dt; if (c.salto <= 0 && c.luft) e.sprung = true; }
+  return e;
+}
+
+function pxAbUpdate(G, dt) {
+  const A = G.A, run = G.run; if (!A) return;
+  pxPartsStep(run, dt); pxnMsgStep(G, dt); if (G.shake > 0) G.shake = Math.max(0, G.shake - dt); if (G.flash > 0) G.flash -= dt;
+  A.autos.forEach(c => { if (c.text && (c.text.z -= dt) <= 0) c.text = null; });
+  A.t += dt;
+  if (A.phase === 'warte' || A.phase === 'frage') return;
+  if (A.phase === 'aus') { if (A.demo && (A.count -= dt) <= 0) pxAbBau(G, pxAbLevel((A.L.w + 1) % 4, 2), false, true); return; }
+  if (A.phase === 'anstoss') { const c0 = Math.ceil(A.count); A.count -= dt; const c1 = Math.ceil(A.count); if (!A.demo && c1 !== c0) { if (c1 > 0) pxSfx.tick(); else pxSfx.ok(); } if (A.count <= 0) { A.phase = 'spiel'; if (!A.demo) pxnMsg(G, 'LOS!', '#ffd84a', .8, 4); } }
+  else if (A.phase === 'tor') { A.count -= dt; if (A.count <= 0) { if (A.ende) return pxAbEnde(G); if (A.uhr <= 0 && !A.golden) { pxAbZeitAus(G); if (A.phase === 'aus') return; } A.phase = 'anstoss'; A.count = 2; pxAbAnstoss(A); } }
+  else if (A.phase === 'spiel') { if (A.golden) { A.goldT -= dt; if (A.goldT <= 0) { A.ende = true; return pxAbEnde(G); } } else { A.uhr -= dt; if (A.uhr <= 0) { A.uhr = 0; pxAbZeitAus(G); if (A.phase === 'aus') return; } } }
+  const laeuft = A.phase === 'spiel' || A.phase === 'tor';
+  A.pads = A.pads.map(p => Math.max(0, p - dt));
+  A.rollT -= dt; if (A.rollT <= 0) { A.rollT = .5; pxAbRollen(A); }
+  if (!A.demo && A.phase === 'spiel') { A.raetselT -= dt; if (A.raetselT <= 0 && !A.raetsel && A.fragen < 2) { A.raetselT = 30 + Math.random() * 12; A.raetsel = { x: (Math.random() - .5) * 30, z: (Math.random() - .5) * 22, t: 0, weg: false }; } }
+  if (A.raetsel) { A.raetsel.t += dt; if (A.raetsel.t > 20) A.raetsel = null; }
+  A.autos.forEach(c => {
+    let e = { x: 0, z: 0, turbo: false, sprung: false };
+    if (laeuft) { if (c.mensch && !A.auto) { const h = c.t, d = pxnRicht(G, h); e = { x: d.x, z: d.y, turbo: pxnHalt(G, h, 't'), sprung: pxnHit(G, h, 'u') }; } else e = pxAbBotEin(A, c, dt); }
+    pxAbFahre(G, A, c, dt, e);
+  });
+  for (let i = 0; i < A.autos.length; i++) for (let j = i + 1; j < A.autos.length; j++) { const p = A.autos[i], q = A.autos[j], dx = q.x - p.x, dz = q.z - p.z, d = Math.hypot(dx, dz); if (d < 3 && d > 1e-3 && Math.abs(p.y - q.y) < 2) { const o = (3 - d) / 2, nx = dx / d, nz = dz / d; p.x -= nx * o; p.z -= nz * o; q.x += nx * o; q.z += nz * o; } }
+  if (A.ball.y < 4) A.autos.forEach(c => pxAbStoss(G, A, c));
+  pxAbBall(G, A, dt);
+}
+function pxAbZeitAus(G) {
+  const A = G.A, [a, b] = A.tore;
+  if (a === b && !A.demo) { A.golden = true; A.goldT = 45; A.phase = 'anstoss'; A.count = 2.2; pxAbAnstoss(A); pxnMsg(G, 'GOLDEN GOAL!', '#ffd84a', 2, 3, 'DAS NÄCHSTE TOR GEWINNT'); return; }
+  pxAbEnde(G);
+}
+function pxAbEnde(G) {
+  const A = G.A; if (A.phase === 'aus') return; A.phase = 'aus'; A.count = 3;
+  if (A.demo) return;
+  const [a, b] = A.tore, aufg = G.askN ? `${G.okN} von ${G.askN} Aufgaben richtig` : '';
+  if (A.zwei) { pxnEnde(G, PXAB_O, { w: A.L.w, l: A.L.l, zwei: true, st: 3, titel: a > b ? 'Lumi gewinnt! 🏆' : b > a ? 'Pia gewinnt! 🏆' : 'Unentschieden! 🤝', big: '⚽', zeilen: [`Lumi ${a} : ${b} Pia`, 'Schön zusammen gespielt!', aufg].filter(Boolean) }); return; }
+  const st = a > b ? 3 : a === b ? 2 : 1;
+  pxnEnde(G, PXAB_O, { w: A.L.w, l: A.L.l, zwei: false, st, titel: a > b ? 'Gewonnen! 🏆' : a === b ? 'Unentschieden! 🤝' : 'Knapp verloren.', big: a > b ? '🏆' : '⚽',
+    zeilen: [`Blau ${a} : ${b} Orange`, `Ballkontakte: ${A.treffer}`, aufg].filter(Boolean), tipp: st < 3 ? 'Fahr hinter den Ball, dann mit 🚀 Turbo durch. In der Luft noch einmal ⤒ macht einen Salto-Schuss!' : '' });
+}
+
+
+function pxAbMass(G) { const run = G.run, S = Math.min((run.W - 12) / (2 * (PXAB.X + 5.5)), (run.H - 24) / (2 * PXAB.Z + 2)); return { S, cx: run.W / 2, cy: 18 + (run.H - 18) / 2 }; }
+function pxAbPix(G, x, z) { const m = pxAbMass(G); return [m.cx + x * m.S, m.cy + z * m.S]; }
+function pxAbFeld(art, W, H, m) {
+  const [c, g] = pxCanvas(W, H), P = AFB_PAL[art], X = PXAB.X, Z = PXAB.Z, T = PXAB.T, S = m.S, px = x => Math.round(m.cx + x * S), pz = z => Math.round(m.cy + z * S), K = PXC.k;
+  pxRect(g, 0, 0, W, H, art === 'sterne' ? '#0d1236' : art === 'vulkan' ? '#2a1c1e' : art === 'strand' ? '#f2dca0' : '#e8f1fa');
+  if (art === 'strand') for (let k = 0; k < 40; k++) pxRect(g, (k * 37) % W, (k * 53) % H, 1, 1, '#e0c890');
+  if (art === 'sterne') for (let k = 0; k < 60; k++) pxRect(g, (k * 97 + 13) % W, (k * 41 + 7) % H, 1, 1, k % 5 ? '#ffffff' : '#bcd0ff');
+  if (art === 'vulkan') for (let k = 0; k < 14; k++) pxRect(g, (k * 61) % W, H - 4 - (k * 13) % 10, 6, 2, '#ff7a2a');
+
+  const ecke = (x, z) => Math.abs(x) + Math.abs(z) <= PXAB.C;
+  for (let yy = pz(-Z); yy < pz(Z); yy++) for (let xx = px(-X); xx < px(X); xx++) { const x = (xx - m.cx) / S, z = (yy - m.cy) / S; if (!ecke(x, z)) continue; g.fillStyle = Math.floor((x + X) / 6) % 2 ? P.f1 : P.f2; g.fillRect(xx, yy, 1, 1); }
+  g.fillStyle = P.linie; pxRect(g, px(0), pz(-Z), 1, Math.round(2 * Z * S)); pxnRing(g, px(0), pz(0), 6 * S, P.linie); pxRect(g, px(0) - 1, pz(0) - 1, 3, 3, P.linie);
+  [-1, 1].forEach(s => { const x0 = px(s * X), x1 = px(s * (X - 6)); pxRect(g, Math.min(x0, x1), pz(-10), Math.abs(x1 - x0), 1, P.linie); pxRect(g, Math.min(x0, x1), pz(10), Math.abs(x1 - x0), 1, P.linie); pxRect(g, x1, pz(-10), 1, Math.round(20 * S), P.linie);
+
+    const tx0 = s < 0 ? px(-X - 5) : px(X), tw = Math.round(5 * S); pxRect(g, tx0, pz(-T) - 1, tw, Math.round(2 * T * S) + 2, K); pxRect(g, tx0 + (s < 0 ? 1 : 0), pz(-T), tw - 1, Math.round(2 * T * S), P.tor);
+    for (let k = 0; k < tw; k += 2) pxRect(g, tx0 + k, pz(-T), 1, Math.round(2 * T * S), 'rgba(0,0,0,.12)'); for (let k = 0; k < 2 * T * S; k += 2) pxRect(g, tx0, pz(-T) + k, tw, 1, 'rgba(0,0,0,.12)');
+    pxRect(g, px(s * X) - 1, pz(-T) - 2, 3, 3, '#ffffff'); pxRect(g, px(s * X) - 1, pz(T) - 1, 3, 3, '#ffffff'); });
+
+  g.fillStyle = P.bande; for (let yy = pz(-Z) - 3; yy < pz(Z) + 3; yy++) for (let xx = px(-X) - 3; xx < px(X) + 3; xx++) { const x = (xx - m.cx) / S, z = (yy - m.cy) / S, innen = ecke(x, z) && Math.abs(x) <= X && Math.abs(z) <= Z, rand = Math.abs(x) + Math.abs(z) <= PXAB.C + 3 / S && Math.abs(x) <= X + 3 / S && Math.abs(z) <= Z + 3 / S; if (rand && !innen && !(Math.abs(z) < T && Math.abs(x) > X - .1)) g.fillRect(xx, yy, 1, 1); }
+  pxRect(g, px(-X) - 3, pz(-Z) - 3, Math.round(2 * X * S) + 6, 1, P.rail); pxRect(g, px(-X) - 3, pz(Z) + 2, Math.round(2 * X * S) + 6, 1, P.rail);
+  return c;
+}
+const PXAB_SPR = new Map();
+function pxAbAutoSpr(farbe, fk, k16) {
+  const key = farbe.c + fk + k16; let c = PXAB_SPR.get(key); if (c) return c;
+  const [b, gb] = pxCanvas(16, 12), K = PXC.k;
+  pxRect(gb, 2, 0, 3, 2, K); pxRect(gb, 10, 0, 3, 2, K); pxRect(gb, 2, 10, 3, 2, K); pxRect(gb, 10, 10, 3, 2, K);
+  pxRect(gb, 0, 1, 16, 10, K); pxRect(gb, 1, 2, 14, 8, farbe.c); pxRect(gb, 1, 8, 14, 2, farbe.c2); pxRect(gb, 1, 5, 14, 2, '#ffffff'); pxRect(gb, 10, 3, 3, 6, '#bfe8ff'); pxRect(gb, 14, 3, 1, 2, '#fff3c4'); pxRect(gb, 14, 7, 1, 2, '#fff3c4');
+  const kopf = PXN_FARBEN[fk] || PXN_FARBEN.l; pxRect(gb, 5, 3, 5, 6, K); pxRect(gb, 6, 4, 3, 4, kopf[0][0]); pxRect(gb, 8, 5, 1, 1, '#ffffff');
+  [c] = pxCanvas(20, 20); const g = c.getContext('2d'); g.imageSmoothingEnabled = false; g.translate(10, 10); g.rotate(k16 / 16 * Math.PI * 2); g.drawImage(b, -8, -6);
+  PXAB_SPR.set(key, c); return c;
+}
+function pxAbDraw(G, g) {
+  const run = G.run, A = G.A, W = run.W, H = run.H; if (!A) return;
+  const m = pxAbMass(G), S = m.S, P = (x, z) => [Math.round(m.cx + x * S), Math.round(m.cy + z * S)];
+  const key = A.L.art + W + 'x' + H; if (G.bgKey !== key) { G.bg = pxAbFeld(A.L.art, W, H, m); G.bgKey = key; }
+  g.drawImage(G.bg, 0, 0);
+  g.save(); if (G.shake > 0) g.translate(Math.round((Math.random() - .5) * 6 * G.shake), Math.round((Math.random() - .5) * 4 * G.shake));
+  AFB_PADS.forEach(([x, z], i) => { const [sx, sy] = P(x, z), an = A.pads[i] <= 0; pxEll(g, sx - 4, sy - 3, 8, 6, PXC.k); pxEll(g, sx - 3, sy - 2, 6, 4, an ? (Math.floor(A.t * 4) % 2 ? '#ffd23f' : '#ff9b26') : '#6a6f80'); });
+  if (A.raetsel) { const [sx, sy] = P(A.raetsel.x, A.raetsel.z); g.globalAlpha = .4 + .25 * Math.sin(A.t * 6); pxEll(g, sx - 9, sy - 8, 18, 16, '#fff3c4'); g.globalAlpha = 1; pxRect(g, sx - 5, sy - 5, 10, 10, PXC.k); pxRect(g, sx - 4, sy - 4, 8, 8, '#ffd84a'); pxText(g, '?', sx + 1, sy - 3, PXC.k, 1, 'c'); }
+
+  const b = A.ball, [bx, bz] = P(b.x, b.z), br = Math.max(3, Math.round(A.r * S));
+  g.globalAlpha = .3; pxEll(g, bx - br, bz - Math.round(br * .6) + 2, br * 2, Math.round(br * 1.2), PXC.k); A.autos.forEach(c => { const [x, y] = P(c.x, c.z); pxEll(g, x - 6, y - 3, 12, 6, PXC.k); }); g.globalAlpha = 1;
+  const dinge = A.autos.map(c => ({ z: c.z, f: () => { const [x, y] = P(c.x, c.z), h = Math.round(c.y * S * .8), k16 = ((Math.round(c.a / (Math.PI * 2) * 16) % 16) + 16) % 16, spr = pxAbAutoSpr(PXAB_TEAM[pxAbFarbe(A, c.t)], c.fk, k16);
+    if (c.flip > 0) { g.save(); g.translate(x, y - h); g.rotate(c.flip / .55 * Math.PI * 2); g.drawImage(spr, -10, -10); g.restore(); } else g.drawImage(spr, x - 10, y - 10 - h);
+    if (c.stark > 0 && Math.floor(A.t * 8) % 2) pxnRing(g, x, y - h, 9, '#ffd84a');
+    if (c.mensch && !A.demo) { pxTri(g, x - 2, y - 14 - h, x + 2, y - 14 - h, x, y - 11 - h, c.t && A.zwei ? '#ff6fb8' : '#ffd84a'); if (A.zwei) pxText(g, c.t ? '2' : '1', x, y - 21 - h, '#ffffff', 1, 'c', PXC.k); }
+    if (c.text && !A.demo) pxnSag(g, c.text.t, x, y - 16 - h, '#fff3c4'); } }));
+  dinge.push({ z: b.z, f: () => { const h = Math.round(b.y * S * .8), y = bz - h; pxEll(g, bx - br - 1, y - br - 1, br * 2 + 2, br * 2 + 2, PXC.k); pxEll(g, bx - br, y - br, br * 2, br * 2, '#ffffff');
+    const a = b.rot; for (let k = 0; k < 3; k++) { const q = a + k * 2.1, ox = Math.round(Math.cos(q) * br * .5), oy = Math.round(Math.sin(q) * br * .5); pxRect(g, bx + ox - 1, y + oy - 1, 2, 2, '#2a2f60'); } pxRect(g, bx - Math.round(br * .5), y - Math.round(br * .6), 2, 1, '#ffffff'); } });
+  dinge.sort((p, q) => p.z - q.z).forEach(d => d.f());
+  pxPartsDraw(g, run);
+  g.restore();
+  if (G.flash > 0) { g.globalAlpha = Math.min(.5, G.flash * 2); pxRect(g, 0, 0, W, H, '#ffffff'); g.globalAlpha = 1; }
+
+  pxRect(g, 0, 0, W, 16, 'rgba(16,22,48,.82)');
+  const f0 = PXAB_TEAM[0], f1 = PXAB_TEAM[pxAbFarbe(A, 1)];
+  pxRect(g, W / 2 - 34, 3, 10, 10, f0.c); pxText(g, String(A.tore[0]), W / 2 - 12, 4, '#ffffff', 1, 'c'); pxText(g, ':', W / 2, 4, '#ffffff', 1, 'c'); pxText(g, String(A.tore[1]), W / 2 + 12, 4, '#ffffff', 1, 'c'); pxRect(g, W / 2 + 24, 3, 10, 10, f1.c);
+  if (!A.demo) { const z = Math.max(0, A.golden ? A.goldT : A.uhr); pxText(g, A.golden ? 'GOLDEN GOAL' : `${Math.floor(z / 60)}:${String(Math.floor(z % 60)).padStart(2, '0')}`, W - 3, 4, A.golden ? '#ffd84a' : z < 15 ? '#ff9b26' : '#ffffff', 1, 'r');
+    A.autos.filter(c => c.mensch).forEach(c => { const x = c.t ? W - 78 : 3; pxTri(g, x, 6, x, 10, x + 5, 8, '#ff9b26'); pxRect(g, x + 7, 5, 32, 6, PXC.k); pxRect(g, x + 8, 6, Math.round(30 * c.boost / 100), 4, c.boost > 30 ? '#ffd23f' : '#ff7a2a'); }); }
+  if (A.phase === 'anstoss' && !A.demo && A.count > 0) pxnTextO(g, String(Math.ceil(A.count)), W / 2, m.cy - 20, '#ffd84a', 5, PXC.k);
+  pxnMsgDraw(g, G, W / 2, m.cy - 10);
+}
+
+
+function pxAbSim(sec) {
+  const G = PXAB_G; if (!G || !G.A) return null; const A = G.A;
+  if (A.phase === 'anstoss' || A.phase === 'frage' || A.phase === 'warte') { A.count = 0; A.phase = 'spiel'; }
+  A.auto = true; for (let i = 0; i < sec * 60 && G.A === A && A.phase !== 'aus' && !PXASK; i++) pxAbUpdate(G, 1 / 60); if (G.A === A) A.auto = A.demo;
+  return { phase: A.phase, tore: A.tore.slice(), uhr: Math.round(A.uhr), golden: A.golden, treffer: A.treffer, ball: [Math.round(A.ball.x), Math.round(A.ball.z)] };
+}
+
+Object.assign(PX_NEW, { autoball: 'Neu' });
+pxReg({ id: 'autoball', t: 'Pixel-Auto-Fußball', d: 'Kleine Autos, großer Ball: Turbo, Sprung und Salto-Schuss! Allein oder zu zweit.', e: '🚗', i: 'pxn64_f_0', tag: 'Rennen', o: 26, start: pxAbStart, prog: () => pxnProg('autoball') });
+if (typeof BLW_ZWEI !== 'undefined') BLW_ZWEI.add('px:autoball');
+
+/*@@src px_buddel.js@@*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+const PXBD = { T: 12, RUN: 5.2, SPR: 13.2, G: 40, HW: .34, HH: .86 };
+let PXBD_G = null;
+const PXBD_O = {
+  id: 'buddel', titel: 'Pixel-Buddel-Abenteuer', big: '🐧 ⛏️ 💎',
+  tipp: 'Buddel dich bis zum Schatz tief unten! ⛏ buddelt, mit dem Stick nach unten oder oben auch dorthin. Stein braucht drei Schläge.',
+  welten: BDL_WELTEN, lvName: (w, l) => BDL_NAMEN[w][l], duo: null,
+  note: '❓ In jeder Fels-Schicht steckt ein Rätsel-Fels: Löse die Aufgabe, dann zerfällt er! Sternkisten bringen Sterne, Kristalle und Gold Punkte.',
+  start: (w, l) => pxBdNeu(PXBD_G, w, l), menu: () => pxBdMenu(PXBD_G)
+};
+const PXBD_FEST = 'esfbgkhxr';
+
+
+function pxBdStart() {
+  const run = pxView({ id: 'buddel', title: 'Pixel-Buddel-Abenteuer', H: 192, pad: 'none', portrait: 'top', ratio: .9, minW: 220 });
+  const G = PXBD_G = { run, A: null, msg: null, shake: 0, okN: 0, askN: 0 };
+  G.tasten = { a: [[' ', 'Enter', 'x', 'X'], [' '], ['Enter']], u: [['ArrowUp', 'w', 'W', 'z', 'Z'], ['w'], ['ArrowUp']] };
+  pxnTasten(G);
+  pxLoop(run, dt => pxBdUpdate(G, dt), g => pxBdDraw(G, g));
+  pxBdMenu(G);
+}
+function pxBdMenu(G) { const s = pxnSave('buddel'); pxnPads(G, 0, []); pxBdBau(G, s.w, 0, true); pxnMenu(G, PXBD_O); }
+function pxBdNeu(G, w, l) {
+  G.okN = 0; G.askN = 0; G.run.parts = []; G.msg = null;
+  pxBdBau(G, w, l, false);
+  pxnPads(G, 1, [['u', '⤒', 'Springen'], ['a', '⛏', 'Buddeln (mit Stick nach unten oder oben auch dorthin)', true]], {});
+  pxnMsg(G, G.A.L.name.toUpperCase(), '#ffffff', 1.8, 2, 'BUDDEL DICH ZUM SCHATZ!');
+}
+function pxBdBau(G, w, l, demo) {
+  const L = bdlLevel(w, l), P = bdlPlan(L);
+  const A = G.A = { L, P, g: P.g.map(r => r.slice()), hp: {}, demo, auto: demo, t: 0, phase: 'spiel', cam: 0,
+    p: { x: P.start[0], y: 3, vx: 0, vy: 0, dir: 1, boden: false, herz: 3, inv: 0, cool: 0, schieb: 0, anim: 0, kristalle: 0, gold: 0, kisten: 0, safe: [P.start[0], 3], cp: [P.start[0], 3] },
+    maul: P.maul.map(m => ({ ...m, schlaf: 0 })), frageCd: 0, sandT: 0, geloest: 0, tiefe: 0 };
+  return A;
+}
+
+const pxBdZ = (A, x, y) => { if (x < 0 || x >= A.P.W) return 'f'; if (y < 0) return ' '; if (y >= A.P.H) return 'f'; return A.g[y][x]; };
+const pxBdFest = (A, x, y) => PXBD_FEST.includes(pxBdZ(A, x, y));
+function pxBdKollidiert(A, x, y) {
+  const x0 = Math.floor(x - PXBD.HW), x1 = Math.floor(x + PXBD.HW - 1e-6), y0 = Math.floor(y - PXBD.HH), y1 = Math.floor(y - 1e-6);
+  for (let ty = y0; ty <= y1; ty++) for (let tx = x0; tx <= x1; tx++) if (pxBdFest(A, tx, ty)) return [tx, ty];
+  return null;
+}
+function pxBdBuddel(G, A, x, y, haendisch) {
+  const c = pxBdZ(A, x, y), run = G.run; if (!PXBD_FEST.includes(c)) return false;
+  const [sx, sy] = pxBdPix(G, x + .5, y + .5), P = BDL_PAL[A.L.art];
+  if (c === 'f') { if (haendisch && !A.demo) { pxSfx.t(120, 0, .05, 'square', .04); pxBurst(run, sx, sy, ['#ffffff', P.f], 3, { v: 30, up: 10, life: .25, g: 40 }); } return false; }
+  if (c === 'r') { pxBdRaetsel(G, A, x, y); return false; }
+  if (c === 's') { const k = x + ',' + y; A.hp[k] = (A.hp[k] || 0) + 1; pxBurst(run, sx, sy, [P.s, '#ffffff'], 4, { v: 40, up: 20, life: .3, g: 80 }); if (!A.demo) pxSfx.t(200 + A.hp[k] * 60, 0, .05, 'square', .05); if (A.hp[k] < 3) return true; }
+  A.g[y][x] = ' ';
+  const farbe = { e: P.e, s: P.s, b: P.b, g: '#ffd23f', k: '#8ef3ff', h: '#ff5a7a', x: '#c98a4a' }[c] || P.e;
+  pxBurst(run, sx, sy, [farbe, P.e2, '#ffffff'], c === 'e' || c === 'b' ? 5 : 9, { v: 50, up: 25, life: .4, g: 90 });
+  const p = A.p;
+  if (c === 'k') { p.kristalle++; if (!A.demo) { pxSfx.coin(); pxnMsg(G, 'KRISTALL!', '#8ef3ff', .8, 2); } }
+  else if (c === 'g') { p.gold++; if (!A.demo) pxSfx.coin(); }
+  else if (c === 'h') { p.herz = Math.min(3, p.herz + 1); if (!A.demo) { pxSfx.ok(); pxnMsg(G, 'HERZ!', '#ff5a7a', .8, 2); } }
+  else if (c === 'x') { p.kisten++; if (!A.demo) { pxSfx.win(); pxnMsg(G, `STERNKISTE ${p.kisten} VON 3!`, '#ffd84a', 1.4, 2); } pxBurst(run, sx, sy, ['#ffd23f', '#ffffff'], 20, { v: 70, up: 30, life: .7, g: 60 }); }
+  else if (!A.demo) pxSfx.t(c === 's' ? 160 : 260, 0, .04, 'triangle', .05);
+  return true;
+}
+function pxBdRaetsel(G, A, x, y) {
+  if (A.frageCd > 0 || PXASK) return;
+  A.frageCd = 1.6;
+  const auf = () => { A.g[y][x] = ' '; A.geloest++; const [sx, sy] = pxBdPix(G, x + .5, y + .5); pxBurst(G.run, sx, sy, ['#ffd84a', '#ffffff', BDL_PAL[A.L.art].f], 24, { v: 70, up: 30, life: .7, g: 60 }); A.p.cp = [x + .5, y + 1]; };
+  if (A.auto) { auf(); return; }
+  pxnFrage(G, 'buddel', '❓ Rätsel-Fels', 'Löse die Aufgabe, dann zerfällt der Fels!', ok => {
+    if (G.A !== A) return; pxnHitsWeg(G); A.frageCd = 1.2;
+    if (ok) { auf(); pxSfx.ok(); pxnMsg(G, 'DER FELS ZERFÄLLT!', '#ffd84a', 1.2, 2); } else pxnMsg(G, 'FAST! GLEICH NOCH EINMAL.', '#ffffff', 1.4, 1);
+  });
+}
+
+function pxBdTreffer(G, A, grund) {
+  const p = A.p; if (p.inv > 0 || A.demo) return; p.herz--; p.inv = 1.6; G.shake = .25; pxSfx.hurt();
+  if (p.herz <= 0) { p.herz = 3; [p.x, p.y] = p.cp; p.vx = p.vy = 0; pxnMsg(G, 'AUTSCH!', '#ffffff', 1.4, 3, 'WEITER GEHT ES AM LETZTEN RÄTSEL'); }
+  else if (grund === 'lava') { [p.x, p.y] = p.safe; p.vx = p.vy = 0; pxnMsg(G, 'HEISS!', '#ff7a2a', 1, 3); }
+}
+function pxBdUpdate(G, dt) {
+  const A = G.A, run = G.run; if (!A) return;
+  pxPartsStep(run, dt); pxnMsgStep(G, dt); if (G.shake > 0) G.shake = Math.max(0, G.shake - dt);
+  A.t += dt; A.frageCd = Math.max(0, A.frageCd - dt);
+  if (A.phase !== 'spiel') { if (A.demo && (A.endT = (A.endT || 0) + dt) > 2) pxBdBau(G, (A.L.w + 1) % 4, 0, true); return; }
+  const p = A.p; p.inv = Math.max(0, p.inv - dt); p.cool = Math.max(0, p.cool - dt);
+  let e;
+  if (A.auto) e = pxBdKopf(A); else { const d = pxnRicht(G, 0); e = { x: Math.abs(d.x) > .3 ? Math.sign(d.x) : 0, y: d.y, sprung: pxnHit(G, 0, 'u'), hau: pxnHalt(G, 0, 'a') }; }
+
+  if (e.hau && p.cool <= 0) {
+    p.cool = .22; const cx = Math.floor(p.x), mitte = Math.floor(p.y - .45);
+    let tx = Math.floor(p.x + p.dir * (PXBD.HW + .3)), ty = mitte;
+    if (e.y > .5) { tx = cx; ty = Math.floor(p.y + .05); } else if (e.y < -.5) { tx = cx; ty = Math.floor(p.y - PXBD.HH - .1); }
+    let getroffen = false;
+    A.maul.forEach(m => { if (m.schlaf <= 0 && Math.abs(m.x - (tx + .5)) < 1.2 && Math.abs(m.y + .5 - (ty + .5)) < 1.2) { m.schlaf = 5; getroffen = true; const [sx, sy] = pxBdPix(G, m.x, m.y + .3); pxBurst(run, sx, sy, ['#ffffff', '#ffd84a'], 8, { v: 40, up: 20, life: .5, g: 30 }); if (!A.demo) pxSfx.pop(); } });
+    if (!getroffen) pxBdBuddel(G, A, tx, ty, true);
+    p.anim += .5;
+  }
+
+  p.vx += ((e.x || 0) * PXBD.RUN - p.vx) * Math.min(1, dt * (p.boden ? 18 : 8));
+  if (e.x) p.dir = e.x;
+  if (e.sprung && p.boden) { p.vy = -PXBD.SPR; p.boden = false; if (!A.demo) pxSfx.jump(); }
+  p.vy = Math.min(18, p.vy + PXBD.G * dt);
+  const nx = p.x + p.vx * dt, hx = pxBdKollidiert(A, nx, p.y);
+  if (hx) { const rechts = nx > p.x; p.x = rechts ? hx[0] - PXBD.HW - .001 : hx[0] + 1 + PXBD.HW + .001; if (pxBdKollidiert(A, p.x, p.y)) p.x = nx - p.vx * dt;
+    if (e.x && p.boden) { p.schieb += dt; if (p.schieb > .28) { p.schieb = 0; const c = pxBdZ(A, hx[0], hx[1]); if ('ebgkh'.includes(c)) pxBdBuddel(G, A, hx[0], hx[1], false); else if (c === 'r') pxBdRaetsel(G, A, hx[0], hx[1]); } } p.vx = 0; }
+  else { p.x = nx; p.schieb = 0; }
+  const ny = p.y + p.vy * dt, hy = pxBdKollidiert(A, p.x, ny);
+  if (hy) { if (p.vy > 0) { p.y = hy[1]; p.boden = true; } else { p.y = hy[1] + 1 + PXBD.HH; if (e.sprung || p.vy < -4) { const c = pxBdZ(A, hy[0], hy[1]); if ('eb'.includes(c)) pxBdBuddel(G, A, hy[0], hy[1], false); } } p.vy = 0; }
+  else { p.y = ny; p.boden = false; }
+  if (p.boden && pxBdZ(A, Math.floor(p.x), Math.floor(p.y + .02)) !== 'l') p.safe = [p.x, p.y];
+  p.anim += Math.abs(p.vx) * dt * 2;
+  A.tiefe = Math.max(A.tiefe, Math.floor(p.y));
+
+  const fx = Math.floor(p.x), fy = Math.floor(p.y - .3);
+  if (pxBdZ(A, fx, fy) === 'l' || pxBdZ(A, fx, Math.floor(p.y + .02)) === 'l') pxBdTreffer(G, A, 'lava');
+  const [tx, ty] = A.P.schatz; if (Math.abs(p.x - (tx + .5)) < 1 && Math.abs(p.y - (ty + 1)) < 1.2) return pxBdZiel(G, A);
+
+  A.maul.forEach(m => {
+    if (m.schlaf > 0) { m.schlaf -= dt; return; }
+    m.x += m.dir * (1.4 + A.L.w * .25) * dt; if (m.x < m.x0 || m.x > m.x1) { m.dir *= -1; m.x = pxnCl(m.x, m.x0, m.x1); }
+    if (Math.abs(m.x - p.x) < .75 && Math.abs(m.y + 1 - p.y) < .9) { pxBdTreffer(G, A, 'maul'); p.vx = Math.sign(p.x - m.x || 1) * 7; p.vy = -6; }
+  });
+
+  A.sandT -= dt; if (A.sandT <= 0) { A.sandT = .16; const y0 = Math.max(4, Math.floor(A.cam / PXBD.T) - 2), y1 = Math.min(A.P.H - 2, y0 + 22);
+    for (let y = y1; y >= y0; y--) for (let x = 1; x < A.P.W - 1; x++) if (A.g[y][x] === 'b' && A.g[y + 1][x] === ' ' && !(Math.floor(p.x) === x && Math.floor(p.y - .1) === y + 1)) { A.g[y + 1][x] = 'b'; A.g[y][x] = ' '; } }
+}
+function pxBdZiel(G, A) {
+  if (A.phase !== 'spiel') return; A.phase = 'ziel'; const p = A.p;
+  const [sx, sy] = pxBdPix(G, A.P.schatz[0] + .5, A.P.schatz[1] + .5); pxBurst(G.run, sx, sy, ['#ffd23f', '#ffffff', '#8ef3ff'], 40, { v: 90, up: 40, life: 1, g: 50 });
+  if (A.demo) return;
+  const st = Math.min(3, 1 + p.kisten), aufg = G.askN ? `${G.okN} von ${G.askN} Aufgaben richtig` : '';
+  pxnEnde(G, PXBD_O, { w: A.L.w, l: A.L.l, zwei: false, st, titel: 'Schatz gefunden! 🏆', big: '💰',
+    zeilen: [`⭐ ${p.kisten} von 3 Sternkisten`, `💎 ${p.kristalle} Kristalle · 🪙 ${p.gold} Gold`, A.geloest ? `${A.geloest} ${A.geloest === 1 ? 'Rätsel-Fels' : 'Rätsel-Felsen'} gelöst` : '', aufg].filter(Boolean), tipp: st < 3 ? 'Die Sternkisten stecken in kleinen Taschen in der Erde. Schau dich auf dem Weg nach unten um!' : '' });
+}
+
+function pxBdKopf(A) {
+  const p = A.p, e = { x: 0, y: 0, sprung: false, hau: false }, cx = Math.floor(p.x), mx = cx + .5, fy = Math.floor(p.y + .02), Z = (x, y) => pxBdZ(A, x, y), [tx] = A.P.schatz;
+  const k = A.ki || (A.ki = { t: 0, tiefe: 0, irr: 0, dir: 1 }); k.t += 1 / 60;
+  if (fy > k.tiefe) { k.tiefe = fy; k.t = 0; k.px = p.x; k.py = p.y; }
+  else if (k.t > 3) { const weit = Math.abs(p.x - (k.px ?? p.x)) + Math.abs(p.y - (k.py ?? p.y)) > 1.5; k.t = 0; k.px = p.x; k.py = p.y; if (!weit && k.irr <= 0) { k.irr = 1.2 + Math.random(); k.dir = Math.random() < .5 ? -1 : 1; } }
+  const grabbar = c => 'ebgkhxsr'.includes(c), lava = x => [0, 1, 2, 3].some(d => Z(x, fy + d) === 'l');
+  const m = A.maul.find(m => m.schlaf <= 0 && Math.abs(m.x - p.x) < 1.6 && Math.abs(m.y + 1 - p.y) < 1); if (m && p.boden) { p.dir = Math.sign(m.x - p.x) || 1; e.hau = true; return e; }
+  const quer = r => { p.dir = r; e.x = r; k.r = r; if (p.boden) k.qt = .6; const by = Math.floor(p.y - .45), vor = Z(cx + r, by), drueber = Z(cx + r, by - 1);
+    if (grabbar(vor)) e.hau = true; else if (vor === 'f' || vor === 'l' || vor === 'r') { e.sprung = true; if (grabbar(drueber) && !p.boden) e.hau = true; } return e; };
+  if (!p.boden) { if ((k.qt -= 1 / 60) > 0) return quer(k.r); if (Math.abs(mx - p.x) > .12) e.x = Math.sign(mx - p.x); return e; }
+  if (k.irr > 0) { k.irr -= 1 / 60; return quer(k.dir); }
+  if (fy >= A.P.H - 1) return Math.abs(tx + .5 - p.x) > .3 ? quer(Math.sign(tx + .5 - p.x)) : e;
+  const u = Z(cx, fy);
+  if (grabbar(u) && !lava(cx)) { if (Math.abs(mx - p.x) > .14) { e.x = Math.sign(mx - p.x); return e; } e.y = 1; e.hau = true; return e; }
+  if (u === ' ' || u === 'T') return Math.abs(tx + .5 - p.x) > .3 && fy >= A.P.H - 2 ? quer(Math.sign(tx + .5 - p.x)) : e;
+
+  let ziel = null; for (let d = 1; d < A.P.W && ziel === null; d++) for (const r of [Math.sign(tx + .5 - p.x) || 1, -(Math.sign(tx + .5 - p.x) || 1)]) { const x = cx + r * d; if (ziel === null && x > 0 && x < A.P.W - 1 && (grabbar(Z(x, fy)) || Z(x, fy) === ' ') && !lava(x)) ziel = x; }
+  if (ziel === null) return quer(Math.sign(tx + .5 - p.x) || 1);
+  return quer(Math.sign(ziel - cx));
+}
+
+
+function pxBdPix(G, x, y) { const A = G.A, run = G.run, T = PXBD.T, ox = Math.round(run.W / 2 - A.P.W * T / 2); return [ox + x * T, 16 + y * T - A.cam]; }
+function pxBdKachel(g, A, c, x, y, sx, sy, t) {
+  const P = BDL_PAL[A.L.art], T = PXBD.T, K = PXC.k, h = ((x * 7 + y * 13) % 5);
+  if (c === ' ') return;
+  if (c === 'l') { pxRect(g, sx, sy, T, T, '#e8463a'); pxRect(g, sx, sy + ((t * 4 + x) % 3 | 0), T, 2, '#ff9b26'); pxRect(g, sx + (h * 2) % 9, sy + 5, 3, 2, '#ffd23f'); return; }
+  if (c === 'T') { pxRect(g, sx, sy + 3, T, T - 3, K); pxRect(g, sx + 1, sy + 4, T - 2, T - 5, '#ffd23f'); pxRect(g, sx + 1, sy + 6, T - 2, 2, '#e8463a'); pxRect(g, sx + 5, sy + 7, 2, 2, '#8ef3ff'); return; }
+  const grund = c === 'f' || c === 'r' ? P.f : c === 's' ? P.s : c === 'b' ? P.b : (h % 2 ? P.e : P.e2);
+  pxRect(g, sx, sy, T, T, grund);
+  if (c === 'e' || c === 'g' || c === 'k' || c === 'h' || c === 'x') { pxRect(g, sx + h * 2 % 10, sy + (h * 3) % 10, 2, 1, P.e2); pxRect(g, sx + (h * 5 + 3) % 10, sy + (h * 7 + 5) % 10, 1, 1, P.f); }
+  if (c === 'b') { pxRect(g, sx + (h * 3) % 10, sy + 2, 1, 1, P.e); pxRect(g, sx + (h * 5) % 10, sy + 7, 1, 1, P.e); }
+  if (c === 's') { pxRect(g, sx, sy, T, 1, '#ffffff22'); pxRect(g, sx + 2, sy + 3, 3, 2, '#ffffff33'); const k = A.hp[x + ',' + y] || 0; if (k) { pxLine(g, sx + 2, sy + 2, sx + 7, sy + 8, K); if (k > 1) pxLine(g, sx + 9, sy + 1, sx + 5, sy + 10, K); } }
+  if (c === 'f') { pxRect(g, sx, sy, T, 1, '#ffffff18'); pxRect(g, sx + h, sy + 5, 4, 1, '#00000030'); }
+  if (c === 'g') { pxRect(g, sx + 2, sy + 3, 3, 2, '#ffd23f'); pxRect(g, sx + 7, sy + 7, 3, 2, '#ffd23f'); pxRect(g, sx + 3, sy + 3, 1, 1, '#fff3c4'); }
+  if (c === 'k') { pxTri(g, sx + 3, sy + 10, sx + 9, sy + 10, sx + 6, sy + 2, '#8ef3ff'); pxRect(g, sx + 5, sy + 4, 1, 4, '#ffffff'); }
+  if (c === 'h') { pxRect(g, sx + 3, sy + 4, 2, 2, '#ff5a7a'); pxRect(g, sx + 7, sy + 4, 2, 2, '#ff5a7a'); pxRect(g, sx + 3, sy + 5, 6, 2, '#ff5a7a'); pxRect(g, sx + 4, sy + 7, 4, 1, '#ff5a7a'); pxRect(g, sx + 5, sy + 8, 2, 1, '#ff5a7a'); }
+  if (c === 'x') { pxRect(g, sx + 1, sy + 3, 10, 8, K); pxRect(g, sx + 2, sy + 4, 8, 6, '#c98a4a'); pxRect(g, sx + 2, sy + 6, 8, 1, '#7a4a2a'); pxRect(g, sx + 5, sy + 5, 2, 3, '#ffd23f'); }
+  if (c === 'r') { const an = .6 + .4 * Math.sin(t * 4); g.globalAlpha = an; pxRect(g, sx + 1, sy + 1, T - 2, T - 2, '#ffd84a'); g.globalAlpha = 1; pxRect(g, sx + 2, sy + 2, T - 4, T - 4, P.f); pxText(g, '?', sx + 6, sy + 3, '#ffd84a', 1, 'c'); }
+  if (y === 3) pxRect(g, sx, sy, T, 2, P.gras);
+}
+function pxBdDraw(G, g) {
+  const run = G.run, A = G.A, W = run.W, H = run.H; if (!A) return;
+  const T = PXBD.T, P = BDL_PAL[A.L.art], p = A.p, ox = Math.round(W / 2 - A.P.W * T / 2);
+  const ziel = pxnCl(p.y * T - (H - 16) * .45, 0, A.P.H * T - (H - 16)); A.cam += (ziel - A.cam) * Math.min(1, .12 + Math.abs(ziel - A.cam) / 400); const cam = Math.round(A.cam);
+
+  const himmel = 16 + 3 * T - cam;
+  pxRect(g, 0, 0, W, H, P.hinten);
+  if (himmel > 0) { const st = A.L.art === 'lava' ? ['#ff9b6b', '#ffd2a0'] : A.L.art === 'kristall' ? ['#1a1f50', '#4a3f90'] : A.L.art === 'eis' ? ['#9fd8ff', '#e8f6ff'] : ['#5ac8ff', '#c8ecff'];
+    for (let k = 0; k < 6; k++) pxRect(g, 0, Math.floor(himmel * k / 6) - 0, W, Math.ceil(himmel / 6) + 1, k < 3 ? st[0] : st[1]);
+    pxEll(g, W - 40, himmel - 34, 14, 14, A.L.art === 'kristall' ? '#fff6d2' : '#fff2a0'); }
+  for (let k = 0; k < 30; k++) { const yy = ((k * 53) % (A.P.H * T)) + 16 + 4 * T - cam; if (yy > 16 && yy < H) pxRect(g, (k * 97) % W, yy, 2, 2, '#00000022'); }
+
+  pxRect(g, 0, Math.max(0, himmel), ox, H, P.f); pxRect(g, ox + A.P.W * T, Math.max(0, himmel), W - ox - A.P.W * T, H, P.f);
+  g.save(); if (G.shake > 0) g.translate(Math.round((Math.random() - .5) * 5 * G.shake), Math.round((Math.random() - .5) * 4 * G.shake));
+  const y0 = Math.max(0, Math.floor(cam / T) - 1), y1 = Math.min(A.P.H - 1, y0 + Math.ceil((H - 16) / T) + 2);
+  for (let y = y0; y <= y1; y++) for (let x = 0; x < A.P.W; x++) pxBdKachel(g, A, A.g[y][x], x, y, ox + x * T, 16 + y * T - cam, A.t);
+
+  A.maul.forEach(m => { const [x, y] = pxBdPix(G, m.x, m.y + 1); if (y < 0 || y > H + 10) return; const K = PXC.k, d = m.dir;
+    pxEll(g, x - 6, y - 8, 12, 8, K); pxEll(g, x - 5, y - 7, 10, 6, '#6a5048'); pxRect(g, x + d * 5 - 1, y - 6, 2, 2, '#ff8ad8'); pxRect(g, x + d * 2, y - 7, 1, 1, m.schlaf > 0 ? '#6a5048' : K);
+    if (m.schlaf > 0) pxText(g, 'Z', x - d * 3, y - 16 - Math.round(Math.sin(A.t * 3) * 2), '#ffffff', 1, 'c', K); });
+
+  { const [x, y] = pxBdPix(G, p.x, p.y), pose = !p.boden ? 'j' : Math.abs(p.vx) > .5 ? 'w' : 'i', fr = pose === 'w' ? Math.floor(p.anim * 2) % 4 : pose === 'i' ? Math.floor(A.t * 2) % 3 : 0;
+    if (!(p.inv > 0 && Math.floor(A.t * 12) % 2)) pxDraw(g, `pxnp_l${pose}_${fr}`, Math.round(x) - 10, Math.round(y) - 19, p.dir < 0);
+    if (p.cool > .1) { const hx = Math.round(x + p.dir * 9), hy = Math.round(y - 10); pxRect(g, hx - 1, hy - 3, 2, 7, '#7a4a2a'); pxRect(g, hx - 3, hy - 4, 6, 2, '#c8d0dc'); } }
+  pxPartsDraw(g, run);
+  g.restore();
+
+  pxRect(g, 0, 0, W, 16, 'rgba(16,22,48,.85)');
+  for (let k = 0; k < 3; k++) { const x = 4 + k * 9, an = k < p.herz; pxRect(g, x, 5, 2, 2, an ? '#ff5a7a' : '#4a5378'); pxRect(g, x + 4, 5, 2, 2, an ? '#ff5a7a' : '#4a5378'); pxRect(g, x, 6, 6, 2, an ? '#ff5a7a' : '#4a5378'); pxRect(g, x + 1, 8, 4, 1, an ? '#ff5a7a' : '#4a5378'); pxRect(g, x + 2, 9, 2, 1, an ? '#ff5a7a' : '#4a5378'); }
+  pxText(g, `★${p.kisten}/3`, 36, 4, '#ffd84a', 1, 'l'); pxTri(g, 78, 11, 84, 11, 81, 4, '#8ef3ff'); pxText(g, String(p.kristalle), 87, 4, '#8ef3ff', 1, 'l');
+  const tiefe = Math.max(0, Math.floor(p.y) - 3), ges = A.P.H - 5; pxText(g, `${tiefe} M`, W - 4, 4, '#ffffff', 1, 'r');
+  pxRect(g, W - 60, 6, 20, 4, PXC.k); pxRect(g, W - 59, 7, Math.round(18 * Math.min(1, tiefe / ges)), 2, '#ffd23f');
+  pxnMsgDraw(g, G, W / 2, 70);
+}
+
+
+function pxBdSim(sec) {
+  const G = PXBD_G; if (!G || !G.A) return null; const A = G.A; A.auto = true;
+  for (let i = 0; i < sec * 60 && G.A === A && A.phase === 'spiel' && !PXASK; i++) pxBdUpdate(G, 1 / 60);
+  if (G.A === A) A.auto = A.demo;
+  return { phase: A.phase, tiefe: A.tiefe, H: A.P.H, kisten: A.p.kisten, kristalle: A.p.kristalle, geloest: A.geloest, herz: A.p.herz, x: Math.round(A.p.x * 10) / 10, y: Math.round(A.p.y * 10) / 10 };
+}
+
+Object.assign(PX_NEW, { buddel: 'Neu' });
+pxReg({ id: 'buddel', t: 'Pixel-Buddel-Abenteuer', d: 'Bis zur Schatzhöhle buddeln: Kristalle, Sternkisten, Maulwürfe und Rätsel-Felsen!', e: '⛏️', i: 'pxn64_b_0', tag: 'Abenteuer', o: 27, start: pxBdStart, prog: () => pxnProg('buddel') });
+
+/*@@src px_inselab.js@@*/
+
+
+
+
+
+
+
+
+
+
+
+
+const PXIA = { T: 16, V: 3.1, R: .27 };
+let PXIA_G = null;
+const PXIA_O = {
+  id: 'inselab', titel: 'Pixel-Insel-Abenteuer', big: '🏝️ 🗝️ 💰',
+  tipp: 'Finde den Schlüssel in einer Truhe und dann den großen Schatz! Gegen Steinblöcke laufen schiebt sie. ❄️ friert Krabben ein.',
+  welten: ISL_WELTEN, lvName: (w, l) => ISL_NAMEN[w][l], duo: null,
+  note: '❓ Rätsel-Tore öffnen sich mit einer Aufgabe. Pia im Startraum hat eine Begrüßungs-Frage: richtig = sie zeigt dir den Schlüssel!',
+  start: (w, l) => pxIaNeu(PXIA_G, w, l), menu: () => pxIaMenu(PXIA_G)
+};
+
+
+function pxIaStart() {
+  const run = pxView({ id: 'inselab', title: 'Pixel-Insel-Abenteuer', H: 192, pad: 'none', portrait: 'top', ratio: .85, minW: 220 });
+  const G = PXIA_G = { run, A: null, msg: null, shake: 0, okN: 0, askN: 0 };
+  G.tasten = { a: [[' ', 'Enter', 'x', 'X'], [' '], ['Enter']] };
+  pxnTasten(G);
+  pxLoop(run, dt => pxIaUpdate(G, dt), g => pxIaDraw(G, g));
+  pxIaMenu(G);
+}
+function pxIaMenu(G) { const s = pxnSave('inselab'); pxnPads(G, 0, []); pxIaBau(G, s.w, 1, true); pxnMenu(G, PXIA_O); }
+function pxIaNeu(G, w, l) {
+  G.okN = 0; G.askN = 0; G.run.parts = []; G.msg = null;
+  pxIaBau(G, w, l, false);
+  pxnPads(G, 1, [['a', '❄️', 'Schneeball werfen', true]], {});
+  pxnMsg(G, G.A.L.name.toUpperCase(), '#ffffff', 1.8, 2, 'FINDE DEN SCHATZ!');
+}
+function pxIaBau(G, w, l, demo) {
+  const L = islLevel(w, l), S = islPlan(L);
+  const A = G.A = { L, S, demo, auto: demo, t: 0, phase: 'spiel', ents: S.ents.map(e => ({ ...e, eis: 0 })), tueren: S.tueren.map(t => ({ auf: !t.art || t.art === 'offen' ? 1 : 0, ...t })),
+    p: { x: S.start[0], y: S.start[1], vx: 0, vy: 0, dir: -Math.PI / 2, anim: 0, schluessel: 0, fische: 0, sterne: 0, herz: 3, inv: 0, cool: 0, schieb: 0 },
+    baelle: [], cam: [S.start[0], S.start[1]], frageCd: 0, msgCd: 0, geloest: 0, raum: -1, cp: [S.start[0], S.start[1]], freundGefragt: false, zeig: 0 };
+  A.ents.forEach(e => { if (e.k === 'schalter') e.tuer = A.tueren.find(t => t.x === e.tuer.x && t.y === e.tuer.y); });
+  return A;
+}
+
+function pxIaFest(A, x, y) {
+  const S = A.S, gx = Math.round(x), gy = Math.round(y); if (gx < 0 || gy < 0 || gx >= S.W || gy >= S.H) return true;
+  const c = S.g[gy][gx]; if (c === '#' || c === 'T' || c === 'b') return true;
+  if (c === 'o') { const t = A.tueren.find(t => t.x === gx && t.y === gy); if (t && t.auf < 1) return true; }
+  return A.ents.some(e => !e.weg && ((e.k === 'block' && Math.round(e.x) === gx && Math.round(e.y) === gy) || ((e.k === 'truhe' || e.k === 'schatz' || e.k === 'freund') && e.x === gx && e.y === gy)));
+}
+function pxIaSag(G, A, t, s = 1.8) { if (A.demo || A.msgCd > 0) return; pxnMsg(G, t, '#ffffff', s, 1); A.msgCd = s + .4; }
+function pxIaBewege(G, A, dt, ix, iy) {
+  const p = A.p, acc = 40 * dt, r = PXIA.R;
+  p.vx += pxnCl(ix * PXIA.V - p.vx, -acc, acc); p.vy += pxnCl(iy * PXIA.V - p.vy, -acc, acc);
+  const frei = (x, y) => !pxIaFest(A, x - r, y - r) && !pxIaFest(A, x + r, y - r) && !pxIaFest(A, x - r, y + r) && !pxIaFest(A, x + r, y + r);
+  const nx = p.x + p.vx * dt; if (frei(nx, p.y)) p.x = nx; else { pxIaSchieben(G, A, Math.sign(p.vx), 0, dt); p.vx = 0; }
+  const ny = p.y + p.vy * dt; if (frei(p.x, ny)) p.y = ny; else { pxIaSchieben(G, A, 0, Math.sign(p.vy), dt); p.vy = 0; }
+  const sp = Math.hypot(p.vx, p.vy); if (sp > .3) p.dir = Math.atan2(p.vy, p.vx); p.anim += sp * dt * 2.4;
+  if (Math.abs(ix) + Math.abs(iy) < .2) p.schieb = 0;
+}
+function pxIaSchieben(G, A, dx, dy, dt) {
+  const p = A.p, gx = Math.round(p.x), gy = Math.round(p.y), tx = gx + dx, ty = gy + dy;
+  const b = A.ents.find(e => e.k === 'block' && !e.ziel && Math.round(e.x) === tx && Math.round(e.y) === ty); if (!b) return;
+  if (dx && Math.abs(p.y - gy) > .35) return; if (dy && Math.abs(p.x - gx) > .35) return;
+  p.schieb += dt; if (p.schieb < .3) return; p.schieb = 0;
+  const nx = tx + dx, ny = ty + dy, S = A.S; if (nx < 0 || ny < 0 || nx >= S.W || ny >= S.H) return;
+  if (S.g[ny][nx] !== '.' || A.ents.some(e => !e.weg && ['block', 'truhe', 'schatz', 'freund', 'stern'].includes(e.k) && Math.round(e.x) === nx && Math.round(e.y) === ny)) { pxIaSag(G, A, 'DA GEHT ES NICHT WEITER.', 1); return; }
+  b.ziel = [nx, ny]; if (!A.demo) pxSfx.t(140, 0, .2, 'square', .04);
+}
+function pxIaRaetsel(G, A, t, p) {
+  A.frageCd = 1.5;
+  const auf = () => { t.auf = .01; A.geloest++; const [x, y] = pxIaPix(G, t.x, t.y); pxBurst(G.run, x, y, ['#ffd84a', '#ffffff'], 18, { v: 60, up: 20, life: .6, g: 40 }); };
+  if (A.auto) { auf(); return; }
+  pxnFrage(G, 'inselab', '🔒 Rätsel-Tor', 'Löse die Aufgabe, dann geht das Tor auf!', ok => {
+    if (G.A !== A) return; pxnHitsWeg(G); A.frageCd = 1.2;
+    if (ok) { auf(); pxSfx.ok(); pxnMsg(G, 'DAS TOR GEHT AUF!', '#ffd84a', 1.2, 2); }
+    else { p.x -= Math.sign(t.x - p.x) * .3; p.y -= Math.sign(t.y - p.y) * .3; pxnMsg(G, 'FAST! GLEICH NOCH EINMAL.', '#ffffff', 1.4, 1); }
+  });
+}
+function pxIaFreund(G, A) {
+  A.freundGefragt = true;
+  if (A.auto) return;
+  pxnFrage(G, 'inselab', '🐧 Pias Begrüßungs-Frage', 'Richtig = Pia zeigt dir, wo der Schlüssel liegt!', ok => {
+    if (G.A !== A) return; pxnHitsWeg(G);
+    if (ok) { A.zeig = 12; A.p.fische += 3; pxSfx.ok(); pxnMsg(G, 'FOLGE DEM PFEIL ZUM SCHLÜSSEL!', '#ffd84a', 2.2, 1, '+3 FISCHE'); }
+    else pxnMsg(G, 'DER SCHLÜSSEL IST IN EINER TRUHE.', '#ffffff', 2, 1);
+  });
+}
+
+function pxIaUpdate(G, dt) {
+  const A = G.A, run = G.run; if (!A) return;
+  pxPartsStep(run, dt); pxnMsgStep(G, dt); if (G.shake > 0) G.shake = Math.max(0, G.shake - dt);
+  A.t += dt; const p = A.p; A.frageCd = Math.max(0, A.frageCd - dt); A.msgCd = Math.max(0, A.msgCd - dt); p.inv = Math.max(0, p.inv - dt); p.cool = Math.max(0, p.cool - dt); A.zeig = Math.max(0, A.zeig - dt);
+  if (A.phase !== 'spiel') { if (A.demo && (A.endT = (A.endT || 0) + dt) > 2) pxIaBau(G, (A.L.w + 1) % 4, 1, true); return; }
+  let ix = 0, iy = 0;
+  if (A.auto) [ix, iy] = pxIaKopf(A); else { const d = pxnRicht(G, 0); ix = d.x; iy = d.y; if (pxnHit(G, 0, 'a')) pxIaWurf(G, A); }
+  pxIaBewege(G, A, dt, ix, iy);
+
+  A.ents.forEach(e => { if (e.k !== 'block' || !e.ziel) return; const [nx, ny] = e.ziel; e.x += Math.sign(nx - e.x) * Math.min(Math.abs(nx - e.x), dt * 4); e.y += Math.sign(ny - e.y) * Math.min(Math.abs(ny - e.y), dt * 4);
+    if (e.x === nx && e.y === ny) { e.ziel = null; const s = A.ents.find(s => s.k === 'schalter' && s.x === nx && s.y === ny); if (s && !s.an) { s.an = true; s.tuer.auf = .01; if (!A.demo) { pxSfx.win(); pxnMsg(G, 'KLICK! DAS GITTER GEHT AUF.', '#8ef3ff', 1.6, 1); } } } });
+  A.tueren.forEach(t => { if (t.auf > 0 && t.auf < 1) t.auf = Math.min(1, t.auf + dt * 1.5); });
+
+  const gx = Math.round(p.x), gy = Math.round(p.y);
+  A.tueren.forEach(t => { if (t.auf > 0 || Math.abs(t.x - gx) + Math.abs(t.y - gy) !== 1 || Math.hypot(t.x - p.x, t.y - p.y) > 1.03) return;
+    if (t.art === 'schloss') { if (p.schluessel > 0) { p.schluessel--; t.auf = .01; if (!A.demo) { pxSfx.ok(); pxnMsg(G, 'AUFGESCHLOSSEN!', '#ffd84a', 1.2, 2); } } else pxIaSag(G, A, 'VERSCHLOSSEN. SUCH DEN SCHLÜSSEL!'); }
+    else if (t.art === 'raetsel' && !A.frageCd && !PXASK) pxIaRaetsel(G, A, t, p);
+    else if (t.art === 'gitter') pxIaSag(G, A, 'SCHIEB DEN STEIN AUF DEN SCHALTER!', 2); });
+
+  A.ents.forEach(e => { if (e.weg) return; const d = Math.hypot(e.x - p.x, e.y - p.y), [sx, sy] = pxIaPix(G, e.x, e.y);
+    if (e.k === 'fisch' && d < .5) { e.weg = true; p.fische++; if (!A.demo) pxSfx.coin(); pxBurst(run, sx, sy, ['#ffd84a', '#ffffff'], 6, { v: 30, up: 20, life: .4, g: 40 }); }
+    else if (e.k === 'stern' && d < .55) { e.weg = true; p.sterne++; if (!A.demo) { pxSfx.win(); pxnMsg(G, `STERNSPLITTER ${p.sterne} VON 3!`, '#ffd84a', 1.4, 2); } pxBurst(run, sx, sy, ['#ffd23f', '#ffffff'], 20, { v: 60, up: 30, life: .7, g: 40 }); }
+    else if (e.k === 'truhe' && !e.auf && d < 1.03) { e.auf = 1; pxBurst(run, sx, sy, ['#ffd23f', '#ffffff'], 14, { v: 50, up: 30, life: .6, g: 50 }); if (e.inhalt === 'schluessel') { p.schluessel++; A.zeig = 0; if (!A.demo) { pxSfx.ok(); pxnMsg(G, 'EIN SCHLÜSSEL!', '#ffd84a', 1.6, 2, 'ER PASST IN DIE VERSCHLOSSENE TÜR'); } } else { p.sterne++; if (!A.demo) { pxSfx.win(); pxnMsg(G, `STERNSPLITTER ${p.sterne} VON 3!`, '#ffd84a', 1.4, 2); } } }
+    else if (e.k === 'freund' && d < 1.1 && !A.freundGefragt && !PXASK && !A.frageCd) pxIaFreund(G, A);
+    else if (e.k === 'schatz' && d < 1.08) pxIaZiel(G, A); });
+  if (A.phase !== 'spiel') return;
+
+  A.ents.forEach(e => { if (e.k !== 'krabbe') return; if (e.eis > 0) { e.eis -= dt; return; }
+    e.x += e.dir * A.L.tempo / 2 * dt; if (e.x < e.x0 || e.x > e.x1 || pxIaFest(A, e.x + e.dir * .5, e.y)) { e.dir *= -1; e.x = pxnCl(e.x, e.x0, e.x1); }
+    if (p.inv <= 0 && !A.demo && Math.hypot(e.x - p.x, e.y - p.y) < .6) { p.herz--; p.inv = 1.6; G.shake = .25; pxSfx.hurt(); const dx = p.x - e.x, dy = p.y - e.y, l = Math.hypot(dx, dy) || 1; p.vx = dx / l * 4.5; p.vy = dy / l * 4.5;
+      if (p.herz <= 0) { p.herz = 3; [p.x, p.y] = A.cp; p.vx = p.vy = 0; pxnMsg(G, 'AUTSCH!', '#ffffff', 1.4, 3, 'WEITER GEHT ES AM EINGANG'); } } });
+
+  for (let i = A.baelle.length - 1; i >= 0; i--) { const b = A.baelle[i]; b.x += b.vx * dt; b.y += b.vy * dt; b.t += dt; const k = A.ents.find(e => e.k === 'krabbe' && e.eis <= 0 && Math.hypot(e.x - b.x, e.y - b.y) < .5), [sx, sy] = pxIaPix(G, b.x, b.y);
+    if (k) { k.eis = 4.5; A.baelle.splice(i, 1); pxBurst(run, sx, sy, ['#ffffff', '#bfe3f6'], 12, { v: 50, up: 20, life: .5, g: 40 }); if (!A.demo) pxSfx.t(1200, 0, .12, 'triangle', .05); continue; }
+    if (b.t > .9 || pxIaFest(A, b.x, b.y)) { A.baelle.splice(i, 1); pxBurst(run, sx, sy, ['#ffffff'], 5, { v: 30, up: 10, life: .3, g: 40 }); } }
+
+  { const S = A.S, ri = Math.floor((gx - 1) / (ISL_RW + 1)), rj = Math.floor((gy - 1) / (ISL_RH + 1)), k = rj * S.RX + ri; if (k !== A.raum && ri >= 0 && rj >= 0 && ri < S.RX && rj < S.RY) { A.raum = k; A.cp = [p.x, p.y]; } }
+}
+function pxIaWurf(G, A) { const p = A.p; if (p.cool > 0) return; p.cool = .7; const ca = Math.cos(p.dir), sa = Math.sin(p.dir); A.baelle.push({ x: p.x + ca * .3, y: p.y + sa * .3, vx: ca * 7, vy: sa * 7, t: 0 }); if (!A.demo) pxSfx.pop(); }
+function pxIaZiel(G, A) {
+  if (A.phase !== 'spiel') return; A.phase = 'ziel'; const p = A.p, st = Math.max(1, Math.min(3, p.sterne));
+  const S0 = A.ents.find(e => e.k === 'schatz'), [sx, sy] = pxIaPix(G, S0.x, S0.y); pxBurst(G.run, sx, sy, ['#ffd23f', '#ffffff', '#8ef3ff'], 40, { v: 90, up: 40, life: 1, g: 50 });
+  if (A.demo) return;
+  const aufg = G.askN ? `${G.okN} von ${G.askN} Aufgaben richtig` : '';
+  pxnEnde(G, PXIA_O, { w: A.L.w, l: A.L.l, zwei: false, st, titel: 'Schatz gefunden! 🏆', big: '💰',
+    zeilen: [`★ ${p.sterne} von 3 Sternsplittern · 🐟 ${p.fische} Fische`, A.geloest ? `${A.geloest} ${A.geloest === 1 ? 'Rätsel-Tor' : 'Rätsel-Tore'} gelöst` : '', aufg].filter(Boolean), tipp: st < 3 ? 'Die Sternsplitter liegen in verschiedenen Räumen, einer steckt in einer Truhe.' : '' });
+}
+
+function pxIaKopf(A) {
+  const p = A.p, S = A.S, gx = Math.round(p.x), gy = Math.round(p.y);
+  const offen = (x, y) => { if (x < 0 || y < 0 || x >= S.W || y >= S.H) return false; const c = S.g[y][x]; if (c === '#' || c === 'T' || c === 'b') return false;
+    const t = A.tueren.find(t => t.x === x && t.y === y); if (t && t.auf < 1 && !(t.art === 'raetsel' || (t.art === 'schloss' && p.schluessel))) return false;
+    return !A.ents.some(e => !e.weg && (e.k === 'block' || e.k === 'truhe' || e.k === 'schatz' || e.k === 'freund') && Math.round(e.x) === x && Math.round(e.y) === y); };
+  const ziele = A.ents.filter(e => !e.weg && ((e.k === 'truhe' && !e.auf) || e.k === 'stern' || e.k === 'schatz')).map(e => [e.x, e.y, e.k === 'stern' ? 'auf' : 'neben']);
+  const sch = A.ents.find(e => e.k === 'schalter' && !e.an); if (sch) { const b = A.ents.find(b => b.k === 'block' && !b.ziel && Math.round(b.x) === sch.x && Math.round(b.y) > sch.y); if (b) ziele.push([sch.x, Math.round(b.y) + 1, 'drueck']); }
+  const vor = { [gx + ',' + gy]: null }, q = [[gx, gy]];
+  for (let k = 0; k < q.length; k++) { const [x, y] = q[k];
+    for (const [zx, zy, art] of ziele) { const da = art === 'neben' ? Math.abs(x - zx) + Math.abs(y - zy) === 1 : x === zx && y === zy;
+      if (da) { const pfad = [[x, y]]; let v = vor[x + ',' + y]; while (v) { pfad.unshift(v); v = vor[v[0] + ',' + v[1]]; }
+        if (pfad.length <= 1) { if (art === 'drueck') return [(gx - p.x) * 2, -1]; return [pxnCl((zx - p.x) * 2, -1, 1), pxnCl((zy - p.y) * 2, -1, 1)]; }
+        const [nx, ny] = pfad[1]; return [pxnCl((nx - p.x) * 3, -1, 1), pxnCl((ny - p.y) * 3, -1, 1)]; } }
+    [[1, 0], [-1, 0], [0, 1], [0, -1]].forEach(([a, b]) => { const nx = x + a, ny = y + b; if (!((nx + ',' + ny) in vor) && offen(nx, ny)) { vor[nx + ',' + ny] = [x, y]; q.push([nx, ny]); } }); }
+  return [0, 0];
+}
+
+
+function pxIaPix(G, x, y) { const A = G.A, run = G.run, T = PXIA.T; return [Math.round(run.W / 2 + (x - A.cam[0]) * T), Math.round(16 + (run.H - 16) / 2 + (y - A.cam[1]) * T)]; }
+function pxIaBaum(g, typ, sx, sy, t) {
+  const K = PXC.k;
+  if (typ === 'palme') { pxRect(g, sx + 7, sy + 6, 3, 10, '#a0663a'); pxRect(g, sx + 7, sy + 6, 1, 10, '#c98a4a'); pxEll(g, sx + 1, sy + 1, 15, 8, '#2f8f46'); pxEll(g, sx + 3, sy, 10, 5, '#5cc85c'); pxRect(g, sx + 6, sy + 6, 2, 2, '#7a4a2a'); }
+  else if (typ === 'tanne') { pxTri(g, sx + 1, sy + 14, sx + 15, sy + 14, sx + 8, sy + 1, '#2e6b55'); pxTri(g, sx + 3, sy + 9, sx + 13, sy + 9, sx + 8, sy + 2, '#3a8767'); pxRect(g, sx + 4, sy + 6, 3, 1, '#ffffff'); pxRect(g, sx + 9, sy + 10, 3, 1, '#ffffff'); pxRect(g, sx + 7, sy + 14, 2, 2, '#7a4a2a'); }
+  else if (typ === 'pilz') { pxRect(g, sx + 6, sy + 8, 4, 7, '#f4e8d0'); pxEll(g, sx + 1, sy + 1, 14, 9, K); pxEll(g, sx + 2, sy + 2, 12, 7, '#e8463a'); pxRect(g, sx + 4, sy + 4, 2, 2, '#ffffff'); pxRect(g, sx + 9, sy + 3, 2, 2, '#ffffff'); }
+  else { pxRect(g, sx + 4, sy + 1, 8, 15, K); pxRect(g, sx + 5, sy + 2, 6, 13, '#c4b8e8'); pxRect(g, sx + 5, sy + 2, 2, 13, '#e8e4f4'); pxRect(g, sx + 3, sy + 1, 10, 2, '#8a78d0'); pxRect(g, sx + 3, sy + 14, 10, 2, '#8a78d0'); }
+}
+function pxIaDraw(G, g) {
+  const run = G.run, A = G.A, W = run.W, H = run.H; if (!A) return;
+  const S = A.S, T = PXIA.T, P = ISL_PAL[A.L.art], p = A.p;
+  const vw = W / T / 2, vh = (H - 16) / T / 2, zx = pxnCl(p.x, vw - .5, Math.max(vw - .5, S.W - .5 - vw)), zy = pxnCl(p.y, vh - .5, Math.max(vh - .5, S.H - .5 - vh));
+  A.cam[0] += (zx - A.cam[0]) * .15; A.cam[1] += (zy - A.cam[1]) * .15;
+  pxRect(g, 0, 0, W, H, P.meer);
+  for (let k = 0; k < 26; k++) { const x = ((k * 71 + A.t * 6) % (W + 20)) - 10, y = 16 + (k * 43) % (H - 16); pxRect(g, Math.round(x), y, 5, 1, '#ffffff55'); }
+  g.save(); if (G.shake > 0) g.translate(Math.round((Math.random() - .5) * 5 * G.shake), Math.round((Math.random() - .5) * 4 * G.shake));
+  const x0 = Math.max(0, Math.floor(A.cam[0] - vw - 1)), x1 = Math.min(S.W - 1, Math.ceil(A.cam[0] + vw + 1)), y0 = Math.max(0, Math.floor(A.cam[1] - vh - 1)), y1 = Math.min(S.H - 1, Math.ceil(A.cam[1] + vh + 1));
+
+  { const [ax, ay] = pxIaPix(G, -.5, -.5); pxRect(g, ax - 5, ay - 5, S.W * T + 10, S.H * T + 10, A.L.art === 'eis' ? '#ffffff' : A.L.art === 'schloss' ? '#ffffff' : '#f2dca0'); }
+  for (let y = y0; y <= y1; y++) for (let x = x0; x <= x1; x++) {
+    const c = S.g[y][x], [sx0, sy0] = pxIaPix(G, x, y), sx = sx0 - T / 2, sy = sy0 - T / 2;
+    pxRect(g, sx, sy, T, T, (x + y) % 2 ? P.g1 : P.g2);
+    if (c === '#') { pxRect(g, sx, sy, T, T, P.wand2); pxRect(g, sx, sy, T, T - 4, P.wand); pxRect(g, sx + 2, sy + 2, 3, 2, '#ffffff33'); pxRect(g, sx + 9, sy + 6, 3, 2, '#ffffff22'); }
+    else if (c === 'T') pxIaBaum(g, P.baum, sx, sy, A.t);
+    else if (c === 'b') { pxEll(g, sx + 2, sy + 4, 12, 10, P.wand2); pxEll(g, sx + 3, sy + 4, 10, 8, P.wand); }
+    else if (c === 'o') { const t = A.tueren.find(t => t.x === x && t.y === y); pxRect(g, sx, sy, T, T, P.weg);
+      if (t && t.auf < 1) { const al = 1 - t.auf; g.globalAlpha = al; const K = PXC.k;
+        if (t.art === 'schloss') { pxRect(g, sx, sy, T, T, K); pxRect(g, sx + 1, sy + 1, T - 2, T - 2, '#a0663a'); pxRect(g, sx + 1, sy + 7, T - 2, 1, '#7a4a2a'); pxEll(g, sx + 6, sy + 5, 4, 4, '#ffd23f'); pxRect(g, sx + 7, sy + 8, 2, 3, '#ffd23f'); }
+        else if (t.art === 'raetsel') { pxRect(g, sx, sy, T, T, K); pxRect(g, sx + 1, sy + 1, T - 2, T - 2, Math.floor(A.t * 3) % 2 ? '#ffd84a' : '#ffc61a'); pxText(g, '?', sx + 8, sy + 4, K, 1, 'c'); }
+        else if (t.art === 'gitter') { for (let k = 1; k < T; k += 3) pxRect(g, sx + k, sy, 2, T, '#5a6070'); pxRect(g, sx, sy + 3, T, 2, '#5a6070'); pxRect(g, sx, sy + 11, T, 2, '#5a6070'); }
+        g.globalAlpha = 1; } }
+  }
+
+  if (A.zeig > 0) { const tr = A.ents.find(e => e.k === 'truhe' && e.inhalt === 'schluessel' && !e.auf); if (tr) { const a = Math.atan2(tr.y - p.y, tr.x - p.x), [px0, py0] = pxIaPix(G, p.x, p.y), d = 18 + Math.sin(A.t * 6) * 2, ax = px0 + Math.cos(a) * d, ay = py0 - 6 + Math.sin(a) * d;
+    pxTri(g, ax + Math.cos(a) * 5, ay + Math.sin(a) * 5, ax + Math.cos(a + 2.4) * 5, ay + Math.sin(a + 2.4) * 5, ax + Math.cos(a - 2.4) * 5, ay + Math.sin(a - 2.4) * 5, '#ffd84a'); } }
+
+  const K = PXC.k, dinge = A.ents.filter(e => !e.weg).map(e => ({ y: e.y, f: () => { const [x, y] = pxIaPix(G, e.x, e.y), t = A.t;
+    if (e.k === 'fisch') { const h = Math.round(Math.sin(t * 3 + e.x) * 1.5); pxEll(g, x - 4, y - 3 + h, 8, 5, K); pxEll(g, x - 3, y - 2 + h, 6, 3, '#ffd84a'); pxTri(g, x + 3, y + h, x + 6, y - 2 + h, x + 6, y + 2 + h, '#ffd84a'); }
+    else if (e.k === 'stern') { const h = Math.round(Math.sin(t * 2.5) * 2); g.globalAlpha = .4; pxEll(g, x - 7, y - 7 + h, 14, 14, '#fff3c4'); g.globalAlpha = 1; pxText(g, '★', x, y - 4 + h, '#ffd23f', 1, 'c', K); }
+    else if (e.k === 'truhe') { pxRect(g, x - 7, y - 5, 14, 11, K); pxRect(g, x - 6, y - 4, 12, 9, '#c98a4a'); pxRect(g, x - 6, y - 4, 12, e.auf ? 1 : 3, e.auf ? '#5a341c' : '#a0663a'); pxRect(g, x - 1, y - 2, 2, 3, '#ffd23f'); }
+    else if (e.k === 'schalter') { pxRect(g, x - 6, y - 6, 12, 12, K); pxRect(g, x - 5, y - 5, 10, 10, e.an ? '#5cc85c' : '#e8463a'); pxRect(g, x - 3, y - 3, 6, 6, e.an ? '#9ae89a' : '#ff8a7a'); }
+    else if (e.k === 'block') { pxRect(g, x - 8, y - 8, 16, 16, K); pxRect(g, x - 7, y - 7, 14, 14, '#9aa6b8'); pxRect(g, x - 7, y - 7, 14, 2, '#c9d2dc'); pxRect(g, x - 4, y - 2, 3, 2, '#b8c2d0'); pxRect(g, x + 2, y + 2, 3, 2, '#7a8698'); }
+    else if (e.k === 'krabbe') { const bob = e.eis > 0 ? 0 : Math.round(Math.abs(Math.sin(t * 10)) * 1); pxEll(g, x - 6, y - 4 - bob, 12, 8, K); pxEll(g, x - 5, y - 3 - bob, 10, 6, '#e8463a'); pxRect(g, x - 8, y - 4 - bob, 3, 3, '#ff6a5a'); pxRect(g, x + 5, y - 4 - bob, 3, 3, '#ff6a5a'); pxRect(g, x - 3, y - 6 - bob, 2, 2, '#ffffff'); pxRect(g, x + 1, y - 6 - bob, 2, 2, '#ffffff');
+      if (e.eis > 0) { g.globalAlpha = .55; pxRect(g, x - 8, y - 8, 16, 12, '#9fe4ff'); g.globalAlpha = 1; pxRect(g, x - 8, y - 8, 16, 1, '#ffffff'); } }
+    else if (e.k === 'freund') { pxDraw(g, `pxnp_p${A.freundGefragt ? 'i' : 'c'}_${Math.floor(t * 2) % 3}`, x - 10, y - 14, true); if (!A.freundGefragt && !A.demo) pxText(g, '?', x, y - 22 - Math.round(Math.abs(Math.sin(t * 4)) * 2), '#ffd84a', 1, 'c', K); }
+    else if (e.k === 'schatz') { const s = Math.round(Math.sin(t * 3)); pxRect(g, x - 9, y - 7 - s, 18, 14, K); pxRect(g, x - 8, y - 6 - s, 16, 12, '#ffd23f'); pxRect(g, x - 8, y - 3 - s, 16, 2, '#e8463a'); pxRect(g, x - 2, y - 2 - s, 4, 3, '#8ef3ff'); pxRect(g, x - 7, y - 6 - s, 4, 1, '#fff3c4'); }
+  } }));
+  dinge.push({ y: p.y, f: () => { const [x, y] = pxIaPix(G, p.x, p.y), sp = Math.hypot(p.vx, p.vy), pose = sp > .4 ? 'w' : 'i', fr = pose === 'w' ? Math.floor(p.anim * 2) % 4 : Math.floor(A.t * 2) % 3;
+    if (!(p.inv > 0 && Math.floor(A.t * 12) % 2)) pxDraw(g, `pxnp_l${pose}_${fr}`, x - 10, y - 15, Math.cos(p.dir) < -.1); } });
+  dinge.sort((a, b) => a.y - b.y).forEach(d => d.f());
+  A.baelle.forEach(b => { const [x, y] = pxIaPix(G, b.x, b.y); pxEll(g, x - 3, y - 8, 6, 6, K); pxEll(g, x - 2, y - 7, 4, 4, '#ffffff'); });
+  pxPartsDraw(g, run);
+  g.restore();
+
+  pxRect(g, 0, 0, W, 16, 'rgba(16,22,48,.85)');
+  for (let k = 0; k < 3; k++) pxText(g, '♥', 6 + k * 8, 4, k < p.herz ? '#ff5a7a' : '#4a5378', 1, 'c');
+  pxText(g, `★${p.sterne}/3`, 32, 4, '#ffd84a', 1, 'l');
+  pxEll(g, 72, 6, 5, 5, '#ffd23f'); pxRect(g, 76, 8, 6, 1, '#ffd23f'); pxRect(g, 80, 8, 1, 3, '#ffd23f'); pxText(g, String(p.schluessel), 84, 4, '#ffffff', 1, 'l');
+  pxEll(g, 98, 5, 7, 5, '#ffd84a'); pxTri(g, 104, 7, 107, 5, 107, 10, '#ffd84a'); pxText(g, String(p.fische), 110, 4, '#ffffff', 1, 'l');
+  pxnMsgDraw(g, G, W / 2, 70);
+}
+
+
+function pxIaSim(sec) {
+  const G = PXIA_G; if (!G || !G.A) return null; const A = G.A; A.auto = true;
+  for (let i = 0; i < sec * 60 && G.A === A && A.phase === 'spiel' && !PXASK; i++) pxIaUpdate(G, 1 / 60);
+  if (G.A === A) A.auto = A.demo;
+  return { phase: A.phase, sterne: A.p.sterne, schluessel: A.p.schluessel, fische: A.p.fische, geloest: A.geloest, offen: A.tueren.filter(t => t.auf > 0).length, tueren: A.tueren.length };
+}
+
+Object.assign(PX_NEW, { inselab: 'Neu' });
+pxReg({ id: 'inselab', t: 'Pixel-Insel-Abenteuer', d: 'Schlüssel finden, Steine schieben, Rätsel-Tore öffnen und den großen Schatz entdecken!', e: '🏝️', i: 'pxn64_i_0', tag: 'Abenteuer', o: 28, start: pxIaStart, prog: () => pxnProg('inselab') });
 
 /*@@src freunde.js@@*/
 /* ================================================================
