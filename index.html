@@ -5,7 +5,7 @@
 <meta name="generator" content="lernwelt-freunde-app">
 <meta name="author" content="Martin Gl.">
 <meta name="copyright" content="© 2026 Martin Gl. Alle Rechte vorbehalten.">
-<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-fh/6u/NTK3PDwqY54shh54fm0iV2m6rmkDOxSi8ddFE=' 'sha256-Pip7iTPOghj0REnYfDmedSGVlRjwjP0XR1OKU+7KR6Q=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-2yxZ8TSdcYBaEwyXeqCq4j04UozPDqdEMJLSly0v6kM=' 'sha256-tcaIvdxi16Rndah/efaMhLisy4Pg7hgFIZli4GRyJAU=' 'sha256-3A7+i6yMmTGlAWRUl+8ULTk5E/vAGoR2BvaIcr3GFBk='; style-src 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
 <title>Noemis Freunde</title><meta name="robots" content="noindex, nofollow">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -11111,8 +11111,8 @@ body.calm .zm-b, body.calm .zm-delta, body.calm .zm-flag .zm-cloth, body.calm .z
 var LWF = (function () {
   'use strict';
   var KEY = 'lernwelt-fehler', CKEY = 'lernwelt-fehler-cfg', MAX = 120, DEF_ID = 'lernwelt-freunde-fehler';
-  var VER = '7.0.0';
-  var MAP = {"probe":0,"files":[[11101,"fehler_kern.js"],[11389,null],[11391,"data.js"],[12121,"data_more.js"],[12493,"data_su2.js"],[12720,"data_es.js"],[13088,"data_wissen.js"],[13289,"data_v21.js"],[13974,"data_v24.js"],[14462,"data_v25.js"],[14951,"data_v26.js"],[15050,"data_v29.js"],[15358,"data_v30.js"],[15692,"data_v31.js"],[15998,"data_kunst.js"],[16195,"data_v214.js"],[16298,"data_v216.js"],[16591,"schrift.js"],[16895,"eingabe.js"],[17106,"data_k34m.js"],[17624,"data_k34d.js"],[17978,"data_k34s.js"],[18432,"data_v224.js"],[19305,"data_v225w.js"],[19674,"data_v225k.js"],[20118,"data_herz.js"],[20472,"data_fb226.js"],[20615,"data_tf226.js"],[20822,"data_v227a.js"],[21922,"data_v227b.js"],[22876,"data_h28b.js"],[22916,"data_l28a.js"],[23782,"data_l28b.js"],[24962,"data_schaetz.js"],[25444,"data_party8.js"],[25494,"data_alce.js"],[26165,"data_alce2.js"],[26414,"data_alce3.js"],[26829,"registry.js"],[27343,"app.js"],[28635,"fun.js"],[29223,"fun2.js"],[29539,"atelier.js"],[29913,"kunst225.js"],[30103,"herz.js"],[30467,"reise.js"],[30769,"iglu.js"],[30935,"offline.js"],[31045,"party.js"],[31529,"meine.js"],[31885,"loeffel.js"],[32056,"trend.js"],[32598,"fun228a.js"],[33459,"fun228b.js"],[34136,"kueche.js"],[35175,"stimme.js"],[35230,"klassen.js"],[35383,"freunde_vorab.js"],[35404,"mut.js"],[35826,"schule.js"],[36315,"fussball226.js"],[36637,"schaetzen.js"],[37068,"party8.js"],[37687,"tiere.js"],[38146,"fussball232.js"],[38361,"party8b.js"],[38663,"weg.js"],[38884,"px.js"],[39304,"px_fein.js"],[39381,"px_data.js"],[39638,"pxwelt.js"],[39722,"px_abenteuer.js"],[40555,"px_abenteuer2.js"],[41310,"px_abenteuer3.js"],[41701,"px_abenteuer4.js"],[41911,"px_baukasten.js"],[42038,"px_abenteuer_fein.js"],[42267,"px_abenteuer_fein2.js"],[42619,"px_abenteuer5.js"],[43026,"px_abenteuer6.js"],[43303,"px_abenteuer7.js"],[43659,"px_level300.js"],[44210,"px_schwach300.js"],[44284,"px_zwei300.js"],[44398,"px_abenteuer8.js"],[44755,"px_abenteuer9.js"],[45109,"px_level660.js"],[45450,"lumicheckt300.js"],[45643,"schreiben300.js"],[45857,"rechenkarte300.js"],[45977,"lerncheck300.js"],[46200,"material300.js"],[46530,"lernweg300.js"],[47054,"px_ski.js"],[47696,"px_wurf.js"],[48225,"px_insel.js"],[49426,"px_kicker.js"],[50361,"px_eis.js"],[51347,"px_run.js"],[52562,"px_brk.js"],[53524,"px_pol.js"],[54875,"px_frog.js"],[56135,"px_angel.js"],[57450,"px_golf.js"],[58484,"px_tauch.js"],[59749,"px_hockey.js"],[60705,"px_lab.js"],[62040,"px_plopp.js"],[63246,"px_stadion.js"],[64757,"px_stadion2.js"],[64809,"px_training.js"],[65178,"cm.js"],[65668,"cmwelt.js"],[65724,"cm_baeck.js"],[66517,"cm_bahn.js"],[67281,"cm_detek.js"],[67998,"cm_markt.js"],[68711,"ff.js"],[68868,"ff_mathe.js"],[70858,"ff_deutsch.js"],[72446,"ff_sach_a.js"],[74695,"ff_sach_b.js"],[76924,"ff_sprachen.js"],[79332,"zm.js"],[80245,"tt.js"],[80458,"data_tagebuch.js"],[80501,"data_hoerspiel.js"],[80660,"leseecke.js"],[80987,"kt.js"],[81290,"comicbuch.js"],[81568,"alce.js"],[81731,"alce_aufg.js"],[81922,"formen.js"],[82373,"data_formen.js"],[82614,"data_formen2.js"],[82836,"spielzeit.js"],[83058,"data_faktmeinung.js"],[83177,"data_es248.js"],[83441,"data_en249.js"],[83680,"data_wissen249.js"],[84111,"data_kunst249.js"],[84394,"data_fussball250.js"],[84518,"data_werte252.js"],[84771,"data_lesen252.js"],[84832,"data_k34_252.js"],[84918,"art254.js"],[85036,"data_werte255.js"],[85174,"data_lesen255.js"],[85310,"forscher255.js"],[85458,"zufall250.js"],[85504,"stufe259.js"],[85514,"advent.js"],[85777,"wdh.js"],[85875,"eswarm288.js"],[85926,"abwechslung294.js"],[86001,"bilder293a.js"],[86091,"bilder293b.js"],[86221,"bilder293c.js"],[86319,"bilder293d.js"],[86441,"bilder293e.js"],[86605,"bilder293f.js"],[86686,"bilder292.js"],[87132,"denk.js"],[87169,"data_viaje265.js"],[87312,"klassenarbeit.js"],[87445,"quizduell.js"],[87568,"neu267.js"],[87833,"prog.js"],[87938,"lernstand.js"],[88005,"blatt.js"],[88107,"uebung295.js"],[88429,"schuh296.js"],[88637,"uebung297.js"],[89024,"minus298.js"],[89265,"schrift299.js"],[89393,"data_es271.js"],[89507,"plus269.js"],[89601,"schach.js"],[89833,"schachtaktik.js"],[90085,"fun270.js"],[90248,"data_neu274.js"],[90457,"plus272.js"],[90511,"spiele274.js"],[90634,"kasten.js"],[90738,"erklaer.js"],[90851,"apa.js"],[90932,"neu276.js"],[91073,"spiele276.js"],[91123,"neu277.js"],[91301,"spiele277.js"],[91556,"lernen278.js"],[91816,"spiele278.js"],[92159,"lernen279.js"],[92484,"lernen279b.js"],[92882,"spanisch280.js"],[93174,"spanisch283.js"],[93407,"mehr281.js"],[93553,"grafik280.js"],[93932,"tiefsee280.js"],[94210,"abenteuer280.js"],[94422,"abenteuer281.js"],[94534,"design281.js"],[94666,"party281.js"],[94797,"grafik281.js"],[95014,"traumtor292.js"],[95221,"kart293.js"],[95498,"lumi_live.js"],[95614,"sicher.js"],[95798,"stil.js"],[95852,"zurueck287.js"],[95895,"nfbilder300.js"],[96058,"formen300.js"],[96665,"musik300.js"],[96877,"lernweg300b.js"],[97000,"lernweg300c.js"],[97160,"espanol300.js"],[97266,"fabel310_bild.js"],[97517,"fabel310.js"],[97908,"eisbude310.js"],[98134,"turbo310.js"],[98339,"sumo310.js"],[98474,"beifahrer310.js"],[98549,"dreier310.js"],[98665,"ring310.js"],[98774,"loch330.js"],[99124,"reise340.js"],[99194,"fisch340.js"],[99750,"rutsche340.js"],[100161,"knobel340.js"],[100399,"frucht350.js"],[100704,"vulkan350.js"],[100947,"delfin350.js"],[101142,"musik350.js"],[101312,"arcade360.js"],[101428,"strasse360.js"],[101724,"blasen360.js"],[101932,"meer360.js"],[102101,"spirale360.js"],[102265,"sterne360.js"],[102472,"alt360a.js"],[102742,"alt360b.js"],[102935,"alt360c.js"],[103189,"alt360d.js"],[103352,"alt370a.js"],[103549,"alt370b.js"],[103753,"alt370c.js"],[103891,"gl390.js"],[104134,"lauf390.js"],[104643,"ab3_level.js"],[104988,"abenteuer400.js"],[105482,"figuren410.js"],[105577,"kart410.js"],[105930,"show410.js"],[106245,"ball410.js"],[106558,"fussball420.js"],[106983,"farbe420.js"],[107264,"flug430.js"],[107454,"sport430.js"],[107825,"insel440.js"],[108105,"buddel440.js"],[108464,"party450.js"],[108872,"tiere450.js"],[109284,"malbuch460a.js"],[109607,"malbuch460b.js"],[109866,"malbuch460c.js"],[109971,"malkunst590.js"],[110513,"airhockey470.js"],[110790,"zwei480.js"],[110824,"minigolf480.js"],[111101,"schneeball480.js"],[111399,"billard480.js"],[111624,"kissen490.js"],[111970,"gleiter490.js"],[112344,"koch490.js"],[112778,"pxzwei501.js"],[112801,"belohnung311.js"],[112962,"belohnung480.js"],[113043,"einst502.js"],[113084,"pixmal510_bilder.js"],[113396,"pixmal530_bilder.js"],[113518,"pixmal510.js"],[114120,"druck311.js"],[114302,"zwei580.js"],[114489,"gym550.js"],[114812,"gym550_mathe5.js"],[115080,"gym550_deutsch5.js"],[115282,"gym550_englisch5.js"],[115392,"gym550_nawi5.js"],[115655,"gym550_gesell5.js"],[115889,"gym550_mehr5.js"],[116043,"gym600_mathe6.js"],[116289,"gym600_deutsch6.js"],[116451,"gym600_englisch6.js"],[116604,"gym600_nawi6.js"],[116892,"gym600_gesell6.js"],[117097,"gym630_mathe7.js"],[117373,"gym630_mathe8.js"],[117589,"gym630_deutsch.js"],[117861,"gym630_englisch.js"],[118081,"gym630_nawi7.js"],[118329,"gym630_nawi8.js"],[118569,"gym630_gesell.js"],[118945,"gym630_mehr.js"],[119313,"gym700_5.js"],[119848,"gym700_6a.js"],[120239,"gym700_6b.js"],[120599,"k2_610.js"],[120676,"k2_sach610a.js"],[120925,"k2_sach610b.js"],[121420,"k2_deutsch610.js"],[121754,"k2_englisch610.js"],[121919,"k34_650.js"],[122196,"k34_sach650b.js"],[122505,"k34_sach650c.js"],[122934,"k34_deutsch650.js"],[123313,"k34_mehr650.js"],[123985,"lern670.js"],[124061,"werte680.js"],[124483,"kunst680.js"],[124889,"englisch680.js"],[125109,"kunst690.js"],[125203,"hoeren690.js"],[125345,"werte700.js"],[125615,"kunst700.js"],[125947,"pixel611.js"],[125983,"px620.js"],[126169,"px_arena.js"],[126562,"px_billard.js"],[126823,"px_koch.js"],[127222,"px_kart.js"],[127582,"px640.js"],[127605,"px_kissen.js"],[127986,"px_autoball.js"],[128281,"px_buddel.js"],[128513,"px_inselab.js"],[128745,"freunde.js"],[128882,"start.js"],[128892,null],[128902,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
+  var VER = '7.1.0';
+  var MAP = {"probe":0,"files":[[11101,"fehler_kern.js"],[11389,null],[11391,"data.js"],[12121,"data_more.js"],[12493,"data_su2.js"],[12720,"data_es.js"],[13088,"data_wissen.js"],[13289,"data_v21.js"],[13974,"data_v24.js"],[14462,"data_v25.js"],[14951,"data_v26.js"],[15050,"data_v29.js"],[15358,"data_v30.js"],[15692,"data_v31.js"],[15998,"data_kunst.js"],[16195,"data_v214.js"],[16298,"data_v216.js"],[16591,"schrift.js"],[16895,"eingabe.js"],[17106,"data_k34m.js"],[17624,"data_k34d.js"],[17978,"data_k34s.js"],[18432,"data_v224.js"],[19305,"data_v225w.js"],[19674,"data_v225k.js"],[20118,"data_herz.js"],[20472,"data_fb226.js"],[20615,"data_tf226.js"],[20822,"data_v227a.js"],[21922,"data_v227b.js"],[22876,"data_h28b.js"],[22916,"data_l28a.js"],[23782,"data_l28b.js"],[24962,"data_schaetz.js"],[25444,"data_party8.js"],[25494,"data_alce.js"],[26165,"data_alce2.js"],[26414,"data_alce3.js"],[26829,"registry.js"],[27343,"app.js"],[28636,"fun.js"],[29224,"fun2.js"],[29540,"atelier.js"],[29914,"kunst225.js"],[30104,"herz.js"],[30468,"reise.js"],[30770,"iglu.js"],[30936,"offline.js"],[31046,"party.js"],[31530,"meine.js"],[31886,"loeffel.js"],[32057,"trend.js"],[32599,"fun228a.js"],[33460,"fun228b.js"],[34137,"kueche.js"],[35176,"stimme.js"],[35231,"klassen.js"],[35384,"freunde_vorab.js"],[35405,"mut.js"],[35827,"schule.js"],[36316,"fussball226.js"],[36638,"schaetzen.js"],[37069,"party8.js"],[37688,"tiere.js"],[38147,"fussball232.js"],[38362,"party8b.js"],[38664,"weg.js"],[38885,"px.js"],[39305,"px_fein.js"],[39382,"px_data.js"],[39639,"pxwelt.js"],[39723,"px_abenteuer.js"],[40556,"px_abenteuer2.js"],[41311,"px_abenteuer3.js"],[41702,"px_abenteuer4.js"],[41912,"px_baukasten.js"],[42039,"px_abenteuer_fein.js"],[42268,"px_abenteuer_fein2.js"],[42620,"px_abenteuer5.js"],[43027,"px_abenteuer6.js"],[43304,"px_abenteuer7.js"],[43660,"px_level300.js"],[44211,"px_schwach300.js"],[44285,"px_zwei300.js"],[44399,"px_abenteuer8.js"],[44756,"px_abenteuer9.js"],[45110,"px_level660.js"],[45451,"lumicheckt300.js"],[45644,"schreiben300.js"],[45858,"rechenkarte300.js"],[45978,"lerncheck300.js"],[46201,"material300.js"],[46531,"lernweg300.js"],[47055,"px_ski.js"],[47697,"px_wurf.js"],[48226,"px_insel.js"],[49427,"px_kicker.js"],[50362,"px_eis.js"],[51348,"px_run.js"],[52563,"px_brk.js"],[53525,"px_pol.js"],[54876,"px_frog.js"],[56136,"px_angel.js"],[57451,"px_golf.js"],[58485,"px_tauch.js"],[59750,"px_hockey.js"],[60706,"px_lab.js"],[62041,"px_plopp.js"],[63247,"px_stadion.js"],[64758,"px_stadion2.js"],[64810,"px_training.js"],[65179,"cm.js"],[65669,"cmwelt.js"],[65725,"cm_baeck.js"],[66518,"cm_bahn.js"],[67282,"cm_detek.js"],[67999,"cm_markt.js"],[68712,"ff.js"],[68869,"ff_mathe.js"],[70859,"ff_deutsch.js"],[72447,"ff_sach_a.js"],[74696,"ff_sach_b.js"],[76925,"ff_sprachen.js"],[79333,"zm.js"],[80246,"tt.js"],[80459,"data_tagebuch.js"],[80502,"data_hoerspiel.js"],[80661,"leseecke.js"],[80988,"kt.js"],[81291,"comicbuch.js"],[81569,"alce.js"],[81732,"alce_aufg.js"],[81923,"formen.js"],[82374,"data_formen.js"],[82615,"data_formen2.js"],[82837,"spielzeit.js"],[83059,"data_faktmeinung.js"],[83178,"data_es248.js"],[83442,"data_en249.js"],[83681,"data_wissen249.js"],[84112,"data_kunst249.js"],[84395,"data_fussball250.js"],[84519,"data_werte252.js"],[84772,"data_lesen252.js"],[84833,"data_k34_252.js"],[84919,"art254.js"],[85037,"data_werte255.js"],[85175,"data_lesen255.js"],[85311,"forscher255.js"],[85459,"zufall250.js"],[85505,"stufe259.js"],[85515,"advent.js"],[85778,"wdh.js"],[85876,"eswarm288.js"],[85927,"abwechslung294.js"],[86002,"bilder293a.js"],[86092,"bilder293b.js"],[86222,"bilder293c.js"],[86320,"bilder293d.js"],[86442,"bilder293e.js"],[86606,"bilder293f.js"],[86687,"bilder292.js"],[87133,"denk.js"],[87170,"data_viaje265.js"],[87313,"klassenarbeit.js"],[87446,"quizduell.js"],[87569,"neu267.js"],[87834,"prog.js"],[87939,"lernstand.js"],[88006,"blatt.js"],[88108,"uebung295.js"],[88430,"schuh296.js"],[88638,"uebung297.js"],[89025,"minus298.js"],[89266,"schrift299.js"],[89394,"data_es271.js"],[89508,"plus269.js"],[89602,"schach.js"],[89834,"schachtaktik.js"],[90086,"fun270.js"],[90249,"data_neu274.js"],[90458,"plus272.js"],[90512,"spiele274.js"],[90635,"kasten.js"],[90739,"erklaer.js"],[90852,"apa.js"],[90933,"neu276.js"],[91074,"spiele276.js"],[91124,"neu277.js"],[91302,"spiele277.js"],[91557,"lernen278.js"],[91817,"spiele278.js"],[92160,"lernen279.js"],[92485,"lernen279b.js"],[92883,"spanisch280.js"],[93175,"spanisch283.js"],[93408,"mehr281.js"],[93554,"grafik280.js"],[93933,"tiefsee280.js"],[94211,"abenteuer280.js"],[94423,"abenteuer281.js"],[94535,"design281.js"],[94667,"party281.js"],[94798,"grafik281.js"],[95015,"traumtor292.js"],[95222,"kart293.js"],[95499,"lumi_live.js"],[95615,"sicher.js"],[95799,"stil.js"],[95853,"zurueck287.js"],[95896,"nfbilder300.js"],[96059,"formen300.js"],[96666,"musik300.js"],[96878,"lernweg300b.js"],[97001,"lernweg300c.js"],[97161,"espanol300.js"],[97267,"fabel310_bild.js"],[97518,"fabel310.js"],[97909,"eisbude310.js"],[98135,"turbo310.js"],[98340,"sumo310.js"],[98475,"beifahrer310.js"],[98550,"dreier310.js"],[98666,"ring310.js"],[98775,"loch330.js"],[99125,"reise340.js"],[99195,"fisch340.js"],[99751,"rutsche340.js"],[100162,"knobel340.js"],[100400,"frucht350.js"],[100705,"vulkan350.js"],[100948,"delfin350.js"],[101143,"musik350.js"],[101313,"arcade360.js"],[101429,"strasse360.js"],[101725,"blasen360.js"],[101933,"meer360.js"],[102102,"spirale360.js"],[102266,"sterne360.js"],[102473,"alt360a.js"],[102743,"alt360b.js"],[102936,"alt360c.js"],[103190,"alt360d.js"],[103353,"alt370a.js"],[103550,"alt370b.js"],[103754,"alt370c.js"],[103892,"gl390.js"],[104135,"lauf390.js"],[104644,"ab3_level.js"],[104989,"abenteuer400.js"],[105483,"figuren410.js"],[105578,"kart410.js"],[105931,"show410.js"],[106246,"ball410.js"],[106559,"fussball420.js"],[106984,"farbe420.js"],[107265,"flug430.js"],[107455,"sport430.js"],[107826,"insel440.js"],[108106,"buddel440.js"],[108465,"party450.js"],[108873,"tiere450.js"],[109285,"malbuch460a.js"],[109608,"malbuch460b.js"],[109867,"malbuch460c.js"],[109972,"malkunst590.js"],[110514,"airhockey470.js"],[110791,"zwei480.js"],[110825,"minigolf480.js"],[111102,"schneeball480.js"],[111400,"billard480.js"],[111625,"kissen490.js"],[111971,"gleiter490.js"],[112345,"koch490.js"],[112779,"pxzwei501.js"],[112802,"belohnung311.js"],[112963,"belohnung480.js"],[113044,"einst502.js"],[113085,"pixmal510_bilder.js"],[113397,"pixmal530_bilder.js"],[113519,"pixmal510.js"],[114121,"druck311.js"],[114303,"zwei580.js"],[114490,"gym550.js"],[114813,"gym550_mathe5.js"],[115081,"gym550_deutsch5.js"],[115283,"gym550_englisch5.js"],[115393,"gym550_nawi5.js"],[115656,"gym550_gesell5.js"],[115890,"gym550_mehr5.js"],[116044,"gym600_mathe6.js"],[116290,"gym600_deutsch6.js"],[116452,"gym600_englisch6.js"],[116605,"gym600_nawi6.js"],[116893,"gym600_gesell6.js"],[117098,"gym630_mathe7.js"],[117374,"gym630_mathe8.js"],[117590,"gym630_deutsch.js"],[117862,"gym630_englisch.js"],[118082,"gym630_nawi7.js"],[118330,"gym630_nawi8.js"],[118570,"gym630_gesell.js"],[118946,"gym630_mehr.js"],[119314,"gym700_5.js"],[119849,"gym700_6a.js"],[120240,"gym700_6b.js"],[120600,"k2_610.js"],[120677,"k2_sach610a.js"],[120926,"k2_sach610b.js"],[121421,"k2_deutsch610.js"],[121755,"k2_englisch610.js"],[121920,"k34_650.js"],[122197,"k34_sach650b.js"],[122506,"k34_sach650c.js"],[122935,"k34_deutsch650.js"],[123314,"k34_mehr650.js"],[123986,"lern670.js"],[124062,"werte680.js"],[124484,"kunst680.js"],[124890,"englisch680.js"],[125110,"kunst690.js"],[125204,"hoeren690.js"],[125346,"werte700.js"],[125616,"kunst700.js"],[125948,"es710.js"],[126403,"mehr710.js"],[126760,"pixel611.js"],[126796,"px620.js"],[126982,"px_arena.js"],[127375,"px_billard.js"],[127636,"px_koch.js"],[128035,"px_kart.js"],[128395,"px640.js"],[128418,"px_kissen.js"],[128799,"px_autoball.js"],[129094,"px_buddel.js"],[129326,"px_inselab.js"],[129558,"freunde.js"],[129695,"start.js"],[129705,null],[129715,null]]}; // [[Zeile der Markierung, 'datei.js'], …], trägt build.py ein
   var PROBE = (function () { try { throw new Error('probe'); } catch (e) { return String(e.stack || ''); } })();
   var OFF = 0, list = null, cfg = null, crumbs = [], subs = [], busy = false, timer = 0, lastTry = 0, started = Date.now();
   (function () {
@@ -27344,9 +27344,10 @@ const ACCESSORIES = [
 
 
 
-const APP_VERSION = '7.0.0';
+const APP_VERSION = '7.1.0';
 const APP_COPY = '© 2026 Martin Gl.';
 const CHANGELOG = [
+  { v: "7.1.0", d: "25.11.2026", t: ["Spanisch Klasse 2: 23 Spiele mit wenigen Aufgaben haben jetzt viel mehr, zusammen rund 350 neue. Dabei sind Mi día, Ordena la frase, Signos, Preguntas, Colores, Tildes, Ser o estar, Leer y entender, Diálogos, El plural, Adivinanzas und viele mehr, im Stil des ALCE-Hefts mit Lückensätzen, Zuordnen, Sortieren und Ordnen", "Klasse 2: mehr Aufgaben bei Skulptur & Plastik, Bildarten, Im Museum, Foto & Trickfilm, Noten lesen, Papierkunst, Verkehrszeichen und Zeichen der Religionen", "Klasse 3 und 4: mehr Aufgaben bei Fröhlich oder traurig?, Drucken & Stempeln, Menschen zeichnen, Was ist gerecht?, Heilige Bücher & Gebete, Do you …? Does she …?, Musik durch die Zeiten, Raum & Perspektive, Echt oder falsch?, Wie ist die Welt entstanden?, Fair handeln, Gemeinsam entscheiden und Kinder in aller Welt"] },
   { v: "7.0.0", d: "24.11.2026", t: ["Werte und Normen Klasse 3 und 4: acht neue Themen nach dem Kerncurriculum. Klasse 3: Zeit erleben, Vom Baby bis ins Alter, Religiöse Orte und Vielfalt & Vorurteile. Klasse 4: Echt oder falsch? (Nachrichten, Fotos und Werbung prüfen), Wie ist die Welt entstanden?, Glaubensfreiheit & Respekt und Menschenrechte", "Kunst und Musik Klasse 3 und 4: zehn neue Themen. Klasse 3: Tonleiter & Notennamen, Stimme & Singen, Kunst mit Natur und Menschen zeichnen. Klasse 4: Das Orchester, Musik erzählt Geschichten, Musik in Film & Werbung, Dur, Moll & Intervalle, Design im Alltag sowie Licht & Schatten im Bild", "Gymnasium Klasse 5 und 6: 66 Themen in Deutsch, Englisch, Biologie, Physik, Chemie, Erdkunde und Geschichte hatten nur 11 bis 17 feste Aufgaben. Jetzt sind rund 1100 neue dazugekommen, jedes dieser Themen hat mindestens 30 verschiedene Aufgaben. Dabei sind alle Aufgabenarten: Auswahl, Richtig oder Falsch, Zuordnen, Sortieren, Reihenfolge, Lückentext, Eingabe und Markieren"] },
   { v: "6.9.0", d: "24.11.2026", t: ["Kunst und Musik Klasse 2: Künstlerinnen, Spiegelbild, Bauwerke und Notenwerte haben neue Fragen und Aufgaben zum Zuordnen, Sortieren und Ordnen. Zum Beispiel über Lotte Reiniger, Louise Bourgeois, Burgen, Brücken und Spiegelschrift", "Musik hören: Hoch oder tief, Laut und leise und Welches Instrument klingt haben neue Höraufgaben. Sind zwei Töne gleich hoch? Welcher von drei Tönen ist der höchste? Wie oft schlägt die Trommel? Wird die Musik schneller? Welches Instrument spielt zuerst? Für Klasse 3 und 4: Sind zwei Melodien gleich, und welcher Ton ist anders?", "Sachunterricht Klasse 3 und 4: Bei rund 300 Fragen war die richtige Antwort viel länger als die falschen und damit leicht zu erraten. Die falschen Antworten sind jetzt genauso ausführlich. Dasselbe gilt für rund 130 Fragen in Werte und Normen, Deutsch, Kunst und Musik, Englisch und Spanisch"] },
   { v: "6.8.0", d: "24.11.2026", t: ["Englisch für Klasse 3 und 4: sieben neue Spiele. Klasse 3: Einkaufen im Laden, my, your, his und her, Nachrichten von Kindern aus Großbritannien lesen. Klasse 4: Wegbeschreibungen, Fragen mit Do und Does, Datum und Monate, Texte lesen und verstehen. Alle stehen auch im Lernweg Englisch", "Werte und Normen Klasse 2: Gefühle, Ich bin einzigartig, Regeln, Streit lösen, Ehrlichkeit, Feste der Religionen, Natur schützen, Helfen, Glück und Bräuche haben je rund 14 neue Fragen und neue Aufgaben zum Zuordnen, Sortieren und Ergänzen", "Werte und Normen Klasse 3 und 4: sechs neue Themen. Klasse 3: Was ist gerecht?, Verantwortung übernehmen, Heilige Bücher und Gebete. Klasse 4: Kinder in aller Welt, Fair handeln und Zukunft gestalten, Gemeinsam entscheiden", "Kunst und Musik Klasse 2: Techniken, Komponisten, Musikwörter, Tänze, Kunst aus aller Welt, Museum, Comics, Foto und Trickfilm sowie Papierkunst haben viele neue Fragen. Noten lesen, Linien und Muster und Farbtöne bekommen neue Aufgaben", "Kunst und Musik Klasse 3 und 4: sechs neue Themen. Klasse 3: Zeichen in den Noten, Instrumente der Welt, Drucken und Stempeln. Klasse 4: Musik durch die Zeiten, Raum und Perspektive, Kunstrichtungen"] },
@@ -125941,6 +125942,818 @@ kgExtra('klicht', 0, [
   neu('kdesign', { g: 'k-technik', t: 'Design im Alltag', d: 'Piktogramme, Plakate und Form folgt Funktion', i: '🪑', gen: genSU(K700_DESIGN), kl: 4 });
   neu('klicht', { g: 'k-sehen', t: 'Licht & Schatten im Bild', d: 'Schlagschatten, Schraffur und Glanzlicht', i: '💡', gen: genSU(K700_LICHT), kl: 4 });
 })();
+
+kgEinbau();
+
+/*@@src es710.js@@*/
+
+
+
+
+
+
+
+
+
+kgExtra('rutina', 0, [
+  ['o', '«Los dientes»: ¡Ordena las frases!', ['Cojo el cepillo.', 'Pongo la pasta.', 'Me cepillo los dientes.', 'Me enjuago la boca.'], '', KG_ES],
+  ['o', '«El dibujo»: ¡Ordena las frases!', ['Cojo un papel.', 'Dibujo una casa.', 'Pinto la casa de rojo.', 'Cuelgo el dibujo en la pared.'], '', KG_ES],
+  ['o', '«La merienda»: ¡Ordena las frases!', ['Llego a casa.', 'Me lavo las manos.', 'Como un bocadillo.', 'Bebo un vaso de leche.'], '', KG_ES],
+  ['o', '«La biblioteca»: ¡Ordena las frases!', ['Voy a la biblioteca.', 'Busco un libro.', 'Lo enseño en el mostrador.', 'Me lo llevo a casa.'], '', KG_ES],
+  ['o', '«El muñeco de nieve»: ¡Ordena las frases!', ['Hago una bola grande.', 'Pongo una bola pequeña encima.', 'Le pongo una zanahoria.', '¡El muñeco está listo!'], '', KG_ES],
+  ['o', '«El cine»: ¡Ordena las frases!', ['Compro las entradas.', 'Compro palomitas.', 'Me siento en la butaca.', 'Veo la película.'], '', KG_ES],
+  ['o', '«El perro»: ¡Ordena las frases!', ['Cojo la correa.', 'Salgo con el perro.', 'El perro corre en el parque.', 'Volvemos a casa.'], '', KG_ES],
+  ['o', '«La lluvia»: ¡Ordena las frases!', ['El cielo se pone gris.', 'Empieza a llover.', 'Abro el paraguas.', 'Después sale el arcoíris.'], '', KG_ES],
+  ['o', '«La piscina»: ¡Ordena las frases!', ['Me pongo el bañador.', 'Me ducho.', 'Salto al agua.', 'Nado hasta el otro lado.'], '', KG_ES],
+  ['o', '«La fiesta de disfraces»: ¡Ordena las frases!', ['Elijo un disfraz.', 'Me lo pongo.', 'Voy a la fiesta.', 'Bailo con mis amigos.'], '', KG_ES],
+  ['o', '«La bicicleta»: ¡Ordena las frases!', ['Me pongo el casco.', 'Subo a la bicicleta.', 'Pedaleo por el camino.', 'Freno delante de casa.'], '', KG_ES],
+  ['o', '«Los deberes»: ¡Ordena las frases!', ['Saco el cuaderno.', 'Leo la tarea.', 'Escribo las respuestas.', 'Guardo el cuaderno en la mochila.'], '', KG_ES],
+  ['o', '«El tren»: ¡Ordena las frases!', ['Voy a la estación.', 'Compro el billete.', 'Subo al tren.', 'Me siento junto a la ventana.'], '', KG_ES],
+  ['o', '«La mariposa»: ¡Ordena las frases!', ['La mariposa pone un huevo.', 'Sale una oruga.', 'La oruga hace un capullo.', 'Sale una mariposa nueva.'], '', KG_ES],
+  ['o', '«El regalo»: ¡Ordena las frases!', ['Compro un regalo.', 'Lo envuelvo en papel.', 'Le pongo un lazo.', 'Se lo doy a mi amiga.'], '', KG_ES],
+  ['o', '«La semana»: ¡Ordena los días!', ['lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado', 'domingo'], '', KG_ES]
+]);
+
+
+kgExtra('ordenafrase', 0, [
+  ['o', '¡Ordena la frase!', ['Mi', 'abuelo', 'lee', 'el', 'periódico.'], 'Mi abuelo lee el periódico.', KG_ES],
+  ['o', '¡Ordena la frase!', ['Los', 'pájaros', 'cantan', 'por', 'la', 'mañana.'], 'Los pájaros cantan por la mañana.', KG_ES],
+  ['o', '¡Ordena la frase!', ['Hoy', 'comemos', 'paella', 'con', 'mis', 'primos.'], 'Hoy comemos paella con mis primos.', KG_ES],
+  ['o', '¡Ordena la frase!', ['¿Te', 'gusta', 'nadar', 'en', 'el', 'mar?'], '¿Te gusta nadar en el mar?', KG_ES],
+  ['o', '¡Ordena la frase!', ['Mi', 'color', 'favorito', 'es', 'el', 'verde.'], 'Mi color favorito es el verde.', KG_ES],
+  ['o', '¡Ordena la frase!', ['En', 'verano', 'vamos', 'a', 'la', 'playa.'], 'En verano vamos a la playa.', KG_ES],
+  ['o', '¡Ordena la frase!', ['El', 'tren', 'sale', 'a', 'las', 'nueve.'], 'El tren sale a las nueve.', KG_ES],
+  ['o', '¡Ordena la frase!', ['Mi', 'mejor', 'amiga', 'se', 'llama', 'Sofía.'], 'Mi mejor amiga se llama Sofía.', KG_ES],
+  ['o', '¡Ordena la frase!', ['¿Puedo', 'ir', 'al', 'baño,', 'por', 'favor?'], '¿Puedo ir al baño, por favor?', KG_ES],
+  ['o', '¡Ordena la frase!', ['Tengo', 'un', 'hermano', 'pequeño.'], 'Tengo un hermano pequeño.', KG_ES],
+  ['o', '¡Ordena la frase!', ['Mi', 'hermana', 'bebe', 'zumo', 'de', 'naranja.'], 'Mi hermana bebe zumo de naranja.', KG_ES],
+  ['o', '¡Ordena la frase!', ['Hace', 'frío', 'y', 'nieva', 'mucho.'], 'Hace frío y nieva mucho.', KG_ES],
+  ['o', '¡Ordena la frase!', ['El', 'sábado', 'jugamos', 'al', 'baloncesto.'], 'El sábado jugamos al baloncesto.', KG_ES],
+  ['o', '¡Ordena la frase!', ['Mi', 'madre', 'trabaja', 'en', 'un', 'hospital.'], 'Mi madre trabaja en un hospital.', KG_ES],
+  ['o', '¡Ordena la frase!', ['¿Cuántos', 'años', 'tiene', 'tu', 'hermano?'], '¿Cuántos años tiene tu hermano?', KG_ES],
+  ['o', '¡Ordena la frase!', ['La', 'tortuga', 'camina', 'muy', 'despacio.'], 'La tortuga camina muy despacio.', KG_ES],
+  ['o', '¡Ordena la frase!', ['Me', 'lavo', 'los', 'dientes', 'después', 'de', 'comer.'], 'Me lavo los dientes después de comer.', KG_ES],
+  ['o', '¡Ordena la frase!', ['Esta', 'tarde', 'vamos', 'al', 'cine.'], 'Esta tarde vamos al cine.', KG_ES]
+]);
+
+
+kgExtra('signos', 0, [
+  ['w', '¿Qué frase está bien escrita?', '✍️', '¿Dónde está el baño?', ['Dónde está el baño?', '¿dónde está el baño?', '¿Dónde está el baño¿'], 'Am Anfang ¿, am Ende ?, und der Satz beginnt groß.', KG_ES],
+  ['w', '¿Qué frase está bien escrita?', '✍️', '¡Qué frío hace!', ['Qué frío hace!', '¡qué frío hace!', '¡Qué frío hace¡'], 'Ausrufe beginnen mit ¡ und enden mit !.', KG_ES],
+  ['w', '¿Qué frase está bien escrita?', '✍️', 'Mi cumpleaños es en marzo.', ['Mi cumpleaños es en Marzo.', 'mi cumpleaños es en marzo.', 'Mi Cumpleaños es en marzo.'], 'Monate schreibt man im Spanischen klein.', KG_ES],
+  ['w', '¿Qué frase está bien escrita?', '✍️', 'El viernes vamos a la piscina.', ['El Viernes vamos a la piscina.', 'el viernes vamos a la piscina.', 'El viernes vamos a la Piscina.'], 'Wochentage und Nomen schreibt man klein.', KG_ES],
+  ['w', '¿Qué frase está bien escrita?', '✍️', 'Mi abuela habla francés.', ['Mi abuela habla Francés.', 'mi abuela habla francés.', 'Mi Abuela habla francés.'], 'Sprachen schreibt man im Spanischen klein.', KG_ES],
+  ['w', '¿Qué frase está bien escrita?', '✍️', '¿Cuántos años tienes?', ['¿Cuántos años tienes¿', 'Cuántos años tienes?', '¿cuántos años tienes?'], 'Vorne ¿, hinten ?.', KG_ES],
+  ['w', '¿Qué frase está bien escrita?', '✍️', '¡Feliz Navidad!', ['¡feliz navidad!', 'Feliz Navidad!', '¡Feliz Navidad¡'], 'Navidad ist ein Festname und wird großgeschrieben.', KG_ES],
+  ['w', '¿Qué frase está bien escrita?', '✍️', 'Vivo en Madrid.', ['Vivo en madrid.', 'vivo en Madrid.', 'Vivo En Madrid.'], 'Städte schreibt man groß, den Satzanfang auch.', KG_ES],
+  ['w', '¿Qué frase está bien escrita?', '✍️', '¿Te gusta el chocolate?', ['Te gusta el chocolate?', '¿Te gusta el Chocolate?', '¿te gusta el chocolate?'], 'Nomen schreibt man im Spanischen klein.', KG_ES],
+  ['w', '¿Qué frase está bien escrita?', '✍️', '¡Hola, Pedro!', ['¡Hola, pedro!', 'Hola, Pedro!', '¡hola, Pedro!'], 'Namen schreibt man groß.', KG_ES],
+  ['w', '¿Qué frase está bien escrita?', '✍️', 'En agosto hace mucho calor.', ['En Agosto hace mucho calor.', 'en agosto hace mucho calor.', 'En agosto hace mucho Calor.'], 'Monate schreibt man klein.', KG_ES],
+  ['rf', 'Im Spanischen schreibt man Monate wie „enero“ klein.', true, 'enero, febrero, marzo … schreibt man klein.', '📅'],
+  ['rf', 'Im Spanischen schreibt man Wochentage wie „lunes“ groß.', false, 'Wochentage schreibt man klein: el lunes.', '📆'],
+  ['rf', 'Sprachen wie „alemán“ schreibt man im Spanischen groß.', false, 'Sprachen schreibt man klein: Hablo alemán.', '🗣️'],
+  ['s', 'Groß oder klein?', ['groß', 'klein'], [['Madrid', 0], ['Pedro', 0], ['España', 0], ['lunes', 1], ['enero', 1], ['español', 1]], 'Namen von Personen, Städten und Ländern schreibt man groß. Tage, Monate und Sprachen klein.'],
+  ['s', 'Frage oder Ausruf?', ['¿ … ?', '¡ … !'], [['Qué hora es', 0], ['Dónde vives', 0], ['Cómo te llamas', 0], ['Qué bonito', 1], ['Cuidado', 1], ['Qué alegría', 1]], 'Fragen bekommen ¿ ?, Ausrufe ¡ !.']
+]);
+
+
+kgExtra('kanaren', 0, [
+  ['w', 'Wie viele große Inseln haben die Kanaren?', '🏝️', 'sieben', ['drei', 'zwölf', 'zwanzig'], 'Teneriffa, Gran Canaria, Lanzarote, Fuerteventura, La Palma, La Gomera und El Hierro.'],
+  ['w', 'Welche Kanareninsel ist die größte?', '🗺️', 'Teneriffa', ['Lanzarote', 'La Gomera', 'El Hierro'], 'Teneriffa ist die größte und hat auch den höchsten Berg.'],
+  ['w', 'Woher hat der Kanarienvogel seinen Namen?', '🐤', 'von den Kanarischen Inseln', ['von einem gelben Kuchen', 'von einem König aus Spanien', 'von einer Blume aus Afrika'], 'Die wilden Vorfahren der Kanarienvögel leben auf den Kanaren.'],
+  ['w', 'Was ist auf den Kanaren eine „guagua“?', '🚌', 'ein Bus', ['ein Vogel', 'ein Kuchen', 'ein Boot'], 'Auf den Kanaren sagt man „guagua“, in Madrid „autobús“.'],
+  ['w', 'Wie hoch ist der Teide ungefähr?', '🏔️', 'etwa 3700 Meter', ['etwa 500 Meter', 'etwa 1000 Meter', 'etwa 8800 Meter'], 'Genau sind es 3715 Meter.'],
+  ['w', 'Wovon leben viele Menschen auf den Kanaren?', '🏨', 'vom Tourismus', ['vom Bergbau', 'vom Walfang', 'von Schneeskiern'], 'Jedes Jahr kommen Millionen Gäste wegen Sonne und Strand.'],
+  ['w', 'Wie heißt die Soße, die man zu „papas arrugadas“ isst?', '🌶️', 'Mojo', ['Ketchup', 'Pesto', 'Senf'], 'Es gibt roten, scharfen Mojo und grünen Mojo.'],
+  ['w', 'Wie hießen die ersten Bewohner von Teneriffa?', '🏺', 'die Guanchen', ['die Römer', 'die Wikinger', 'die Inka'], 'Sie lebten dort schon lange vor den Spaniern.'],
+  ['w', 'Auf welcher Insel liegen die Feuerberge von Timanfaya?', '🌋', 'auf Lanzarote', ['auf Mallorca', 'auf Sylt', 'auf Teneriffa'], 'Dort ist der Boden an manchen Stellen noch heute heiß.'],
+  ['w', 'Wie nennt man die Kanaren wegen des milden Wetters oft?', '🌸', 'Inseln des ewigen Frühlings', ['Inseln des ewigen Winters', 'Inseln der großen Eisbären', 'Inseln des dichten Nebels'], 'Es ist dort das ganze Jahr über angenehm warm.'],
+  ['w', 'Was ist „gofio“?', '🌾', 'geröstetes Getreidemehl', ['ein kanarischer Volkstanz', 'ein großer Fisch im Meer', 'ein kleiner Vulkan im Süden'], 'Gofio isst man auf den Kanaren schon seit sehr langer Zeit.'],
+  ['w', 'Was ist der Karneval von Santa Cruz?', '🎭', 'ein großes Straßenfest mit bunten Kostümen', ['ein Wettrennen auf den Teide hinauf', 'ein Fischmarkt am Hafen der Stadt', 'ein Konzert nur für Erwachsene am Abend'], 'Er gehört zu den größten Karnevalsfesten der Welt.'],
+  ['rf', 'Auf dem Teide liegt im Winter manchmal Schnee.', true, 'Er ist so hoch, dass es oben kalt wird.', '❄️'],
+  ['rf', 'Die Kanaren liegen im Mittelmeer.', false, 'Sie liegen im Atlantischen Ozean, vor der Küste Afrikas.', '🌊'],
+  ['z', 'Welche Insel ist das?', [['Teneriffa', 'der Teide'], ['Lanzarote', 'Feuerberge von Timanfaya'], ['Gran Canaria', 'Dünen von Maspalomas'], ['La Palma', 'die grüne, schöne Insel'], ['Fuerteventura', 'lange, weiße Sandstrände']], 'Jede Kanareninsel ist anders.']
+]);
+
+
+kgExtra('preguntas', 0, [
+  ['w', '¿ ___ vive tu abuela? «En Sevilla.»', '❓', 'Dónde', ['Cuándo', 'Quién', 'Cuántos'], 'Nach dem Ort fragt man mit ¿Dónde?', KG_ES],
+  ['w', '¿ ___ es tu mejor amigo? «Es Pablo.»', '❓', 'Quién', ['Dónde', 'Cuánto', 'Qué'], 'Nach einer Person fragt man mit ¿Quién?', KG_ES],
+  ['w', '¿ ___ cuesta el helado? «Dos euros.»', '❓', 'Cuánto', ['Quién', 'Dónde', 'Cómo'], 'Nach dem Preis fragt man mit ¿Cuánto?', KG_ES],
+  ['w', '¿ ___ empiezan las vacaciones? «En julio.»', '❓', 'Cuándo', ['Quién', 'Cuántas', 'Qué'], 'Nach der Zeit fragt man mit ¿Cuándo?', KG_ES],
+  ['w', '¿ ___ hora es? «Son las cinco.»', '❓', 'Qué', ['Quién', 'Cuándo', 'Dónde'], '¿Qué hora es? = Wie spät ist es?', KG_ES],
+  ['w', '¿ ___ no vienes a la fiesta? «Porque estoy enfermo.»', '❓', 'Por qué', ['Cuándo', 'Dónde', 'Quién'], 'Auf ¿Por qué? antwortet man mit porque.', KG_ES],
+  ['w', '¿ ___ patas tiene una araña? «Tiene ocho.»', '❓', 'Cuántas', ['Cuántos', 'Qué', 'Dónde'], 'la pata ist weiblich, darum cuántas.', KG_ES],
+  ['w', '¿ ___ está tu hermano? «Está muy bien.»', '❓', 'Cómo', ['Quién', 'Cuándo', 'Cuánto'], '¿Cómo está? = Wie geht es ihm?', KG_ES],
+  ['w', '¿ ___ comes en el recreo? «Un bocadillo.»', '❓', 'Qué', ['Quién', 'Cuándo', 'Cuántos'], 'Nach einer Sache fragt man mit ¿Qué?', KG_ES],
+  ['w', '¿ ___ juegas al fútbol? «Los sábados.»', '❓', 'Cuándo', ['Quién', 'Qué', 'Cuántos'], 'Los sábados ist eine Zeitangabe.', KG_ES],
+  ['w', '¿ ___ es tu mochila, la roja o la azul? «La azul.»', '❓', 'Cuál', ['Quién', 'Cuándo', 'Dónde'], 'Bei einer Auswahl fragt man mit ¿Cuál?', KG_ES],
+  ['w', '¿ ___ hermanas tienes? «Tengo dos.»', '❓', 'Cuántas', ['Cuántos', 'Cuándo', 'Quién'], 'la hermana ist weiblich, darum cuántas.', KG_ES],
+  ['w', '¿De ___ eres? «Soy de Alemania.»', '❓', 'dónde', ['quién', 'cuándo', 'qué'], '¿De dónde eres? = Woher kommst du?', KG_ES],
+  ['z', 'Was heißt das Fragewort?', [['¿Qué?', 'Was?'], ['¿Quién?', 'Wer?'], ['¿Dónde?', 'Wo?'], ['¿Cuándo?', 'Wann?'], ['¿Por qué?', 'Warum?'], ['¿Cómo?', 'Wie?']], '', KG_ES],
+  ['rf', 'Spanische Fragewörter wie qué, quién und dónde haben einen Akzent.', true, 'So unterscheidet man ¿qué? von que.', '✏️'],
+  ['s', 'Was passt als Antwort: ¿Quién?, ¿Dónde? oder ¿Cuándo?', ['¿Quién?', '¿Dónde?', '¿Cuándo?'], [['mi tía', 0], ['el profesor', 0], ['en la cocina', 1], ['en el parque', 1], ['mañana', 2], ['a las ocho', 2]], 'Person, Ort oder Zeit.'],
+  ['o', 'Ordena la pregunta.', ['¿Cuándo', 'es', 'el', 'partido?'], '¿Cuándo es el partido?', KG_ES]
+]);
+
+
+kgExtra('diminutivos', 0, [
+  ['w', '¿Cómo se dice «vaca» en pequeñito?', '🐄', 'vaquita', ['vacita', 'vacaita', 'vaquito'], 'Aus c wird qu: vaca, vaquita.', KG_ES],
+  ['w', '¿Cómo se dice «boca» en pequeñito?', '👄', 'boquita', ['bocita', 'bocaita', 'boquito'], 'Aus c wird qu: boca, boquita.', KG_ES],
+  ['w', '¿Cómo se dice «amigo» en pequeñito?', '🧒', 'amiguito', ['amigito', 'amigoito', 'amiguita'], 'Aus g wird gu: amigo, amiguito.', KG_ES],
+  ['w', '¿Cómo se dice «ratón» en pequeñito?', '🐭', 'ratoncito', ['ratonito', 'ratóncito', 'ratonita'], 'Bei -n hängt man -cito an. Der Akzent fällt weg.', KG_ES],
+  ['w', '¿Cómo se dice «flor» en pequeñito?', '🌼', 'florecita', ['florita', 'florcita', 'florecito'], 'la flor, la florecita.', KG_ES],
+  ['w', '¿Cómo se dice «sol» en pequeñito?', '☀️', 'solecito', ['solito', 'solcito', 'solecita'], 'el sol, el solecito.', KG_ES],
+  ['w', '¿Cómo se dice «café» en pequeñito?', '☕', 'cafecito', ['cafeíto', 'cafito', 'cafecita'], 'el café, el cafecito.', KG_ES],
+  ['w', '¿Cómo se dice «niña» en pequeñito?', '👧', 'niñita', ['niñaita', 'niñito', 'niñecita'], 'la niña, la niñita.', KG_ES],
+  ['w', '¿Cómo se dice «abuelo» en pequeñito?', '👴', 'abuelito', ['abuelocito', 'abuelita', 'abuelto'], 'el abuelo, el abuelito.', KG_ES],
+  ['w', '¿Cómo se dice «caja» en pequeñito?', '📦', 'cajita', ['cajacita', 'cajito', 'cajeta'], 'la caja, la cajita.', KG_ES],
+  ['w', '¿Cómo se dice «vaso» en pequeñito?', '🥛', 'vasito', ['vasoito', 'vasita', 'vasecito'], 'el vaso, el vasito.', KG_ES],
+  ['w', '¿Cómo se dice «pelota» en pequeñito?', '⚽', 'pelotita', ['pelotacita', 'pelotito', 'pelotaíta'], 'la pelota, la pelotita.', KG_ES],
+  ['w', '¿Cómo se dice «lápiz» en pequeñito?', '✏️', 'lapicito', ['lapizito', 'lápizito', 'lapicita'], 'Aus z wird c: lápiz, lapicito.', KG_ES],
+  ['w', '¿Qué significa «un momentito»?', '⏱️', 'ein Momentchen', ['ein großer Moment', 'ein kleines Monster', 'ein Mittagessen'], 'momento und -ito: ein kleiner Moment.', KG_ES],
+  ['z', 'Ordne zu.', [['el cerdo', 'el cerdito'], ['el tren', 'el trenecito'], ['la luz', 'la lucecita'], ['el pan', 'el panecito'], ['el conejo', 'el conejito']], '', KG_ES],
+  ['s', '-ito oder -ita?', ['el … -ito', 'la … -ita'], [['casita', 1], ['mesita', 1], ['vaquita', 1], ['perrito', 0], ['librito', 0], ['osito', 0]], 'Männliche Wörter bekommen -ito, weibliche -ita.'],
+  ['rf', 'Mit -ito oder -ita macht man im Spanischen Dinge klein und niedlich.', true, 'perro, perrito: ein kleiner, lieber Hund.', '🐶']
+]);
+
+
+kgExtra('tiempo', 0, [
+  ['w', '¿En qué estación hace mucho calor?', '☀️', 'en verano', ['en invierno', 'en otoño', 'en primavera'], 'el verano = der Sommer', KG_ES],
+  ['w', '¿En qué estación caen las hojas?', '🍂', 'en otoño', ['en verano', 'en primavera', 'en invierno'], 'el otoño = der Herbst', KG_ES],
+  ['w', '¿En qué estación nieva mucho?', '❄️', 'en invierno', ['en verano', 'en otoño', 'en primavera'], 'el invierno = der Winter', KG_ES],
+  ['w', '¿En qué estación salen las flores?', '🌸', 'en primavera', ['en invierno', 'en otoño', 'en verano'], 'la primavera = der Frühling', KG_ES],
+  ['w', 'Llueve. ¿Qué necesitas?', '🌧️', 'un paraguas', ['unas gafas de sol', 'un bañador', 'un abanico'], 'el paraguas = der Regenschirm', KG_ES],
+  ['w', 'Hace sol y calor. ¿Qué te pones?', '😎', 'una gorra', ['un abrigo', 'una bufanda', 'unos guantes'], 'la gorra = die Mütze mit Schirm', KG_ES],
+  ['w', 'Hace mucho frío. ¿Qué te pones?', '🧣', 'una bufanda', ['un bañador', 'unas chanclas', 'una gorra'], 'la bufanda = der Schal', KG_ES],
+  ['w', '¿Qué significa «Hace buen tiempo»?', '🌤️', 'Das Wetter ist schön.', ['Es ist sehr kalt.', 'Es ist Zeit zu gehen.', 'Es regnet stark.'], 'buen tiempo = schönes Wetter', KG_ES],
+  ['w', '¿Qué significa «Hace mal tiempo»?', '🌦️', 'Das Wetter ist schlecht.', ['Die Sonne scheint.', 'Es ist schon sehr spät.', 'Es ist heiß.'], 'mal tiempo = schlechtes Wetter', KG_ES],
+  ['w', '¿Qué significa «Hay relámpagos»?', '⚡', 'Es blitzt.', ['Es schneit.', 'Es ist neblig.', 'Es ist windig.'], 'el relámpago = der Blitz', KG_ES],
+  ['z', 'Ordne die Jahreszeiten zu.', [['la primavera', 'der Frühling'], ['el verano', 'der Sommer'], ['el otoño', 'der Herbst'], ['el invierno', 'der Winter']], '', KG_ES],
+  ['s', '¿Frío o calor?', ['hace frío', 'hace calor'], [['nieva', 0], ['hay hielo', 0], ['me pongo el abrigo', 0], ['voy a la playa', 1], ['como un helado', 1], ['me pongo el bañador', 1]], 'Was passt zu kaltem, was zu heißem Wetter?'],
+  ['l', 'Completa.', 'En invierno ⟪hace⟫ frío y ⟪nieva⟫.', ['está', 'sol'], 'En invierno hace frío y nieva.', KG_ES],
+  ['rf', '„Llueve“ heißt „es regnet“.', true, 'la lluvia = der Regen', '🌧️'],
+  ['rf', 'In Spanien ist im Juli Winter.', false, 'Spanien liegt wie Deutschland im Norden der Erde. Im Juli ist dort Sommer.', '🏖️'],
+  ['o', 'Ordena las estaciones. Empieza con la primavera.', ['la primavera', 'el verano', 'el otoño', 'el invierno'], '', KG_ES]
+]);
+
+
+kgExtra('esenclase', 0, [
+  ['w', '¿Qué significa «Recoge tus cosas»?', '🎒', 'Räum deine Sachen auf.', ['Mal ein großes Bild.', 'Setz dich ganz leise hin.', 'Lies den Text bitte vor.'], 'recoger = aufräumen', KG_ES],
+  ['w', '¿Qué significa «Coge el lápiz»?', '✏️', 'Nimm den Bleistift.', ['Spitz den Stift.', 'Gib mir das Buch.', 'Lies das Wort.'], 'coger = nehmen', KG_ES],
+  ['w', '¿Qué significa «Borra la pizarra»?', '🧽', 'Wisch die Tafel ab.', ['Schreib an die Tafel.', 'Schau an die Tafel.', 'Mal an die Tafel.'], 'borrar = wegwischen', KG_ES],
+  ['w', '¿Qué significa «Trabajad en parejas»?', '👫', 'Arbeitet zu zweit.', ['Arbeitet ganz allein.', 'Geht in die Pause.', 'Arbeitet in der Gruppe.'], 'la pareja = das Paar', KG_ES],
+  ['w', '¿Qué significa «Dibuja un círculo»?', '⭕', 'Zeichne einen Kreis.', ['Zeichne ein Viereck.', 'Schneide den Kreis aus.', 'Male das Dreieck an.'], 'el círculo = der Kreis', KG_ES],
+  ['w', '¿Qué significa «Pinta la flor de rojo»?', '🌹', 'Mal die Blume rot an.', ['Mal die Blume gelb an.', 'Schneide die rote Blume aus.', 'Zeichne eine Blume.'], 'pintar = anmalen', KG_ES],
+  ['w', '¿Qué significa «Recorta la estrella»?', '✂️', 'Schneide den Stern aus.', ['Kleb den Stern ein.', 'Mal den Stern an.', 'Zeichne einen Stern.'], 'recortar = ausschneiden', KG_ES],
+  ['w', '¿Qué significa «Pega la foto en el cuaderno»?', '📓', 'Kleb das Foto ins Heft.', ['Schneide das Foto aus.', 'Gib das Heft ab.', 'Mal ein Foto ins Heft.'], 'pegar = kleben', KG_ES],
+  ['w', '¿Qué significa «Une con flechas»?', '➡️', 'Verbinde mit Pfeilen.', ['Mal die Pfeile an.', 'Zähl die Pfeile.', 'Streich die Pfeile durch.'], 'unir = verbinden, la flecha = der Pfeil', KG_ES],
+  ['w', '¿Qué significa «Rodea la respuesta correcta»?', '🔵', 'Kreis die richtige Antwort ein.', ['Streich die falsche Antwort durch.', 'Schreib die Antwort ab.', 'Lies die Antwort vor.'], 'rodear = einkreisen', KG_ES],
+  ['w', '¿Qué forma falta? «___ el ejercicio.» (completar)', '📝', 'Completa', ['Completar', 'Completo', 'Completas'], 'Aufforderung an eine Person: completa.', KG_ES],
+  ['w', '¿Qué forma falta? «___ la palabra.» (subrayar)', '🖍️', 'Subraya', ['Subrayar', 'Subrayo', 'Subrayas'], 'subrayar = unterstreichen', KG_ES],
+  ['w', '¿Qué forma falta? «___ el papel a la papelera.» (tirar)', '🗑️', 'Tira', ['Tirar', 'Tiro', 'Tiras'], 'tirar = werfen', KG_ES],
+  ['z', 'Ordne zu.', [['Escribe.', 'Schreib.'], ['Lee.', 'Lies.'], ['Escucha.', 'Hör zu.'], ['Mira.', 'Schau.'], ['Pinta.', 'Mal an.'], ['Recorta.', 'Schneide aus.']], '', KG_ES],
+  ['o', 'Ordena la frase.', ['Levanta', 'la', 'mano,', 'por', 'favor.'], 'Levanta la mano, por favor.', KG_ES],
+  ['rf', '„Escuchad“ sagt die Lehrerin zu der ganzen Klasse.', true, 'Mit -d am Ende spricht man mehrere an: escuchad, mirad, abrid.', '👩‍🏫']
+]);
+
+
+kgExtra('colores', 0, [
+  ['w', '¿De qué color es el plátano?', '🍌', 'amarillo', ['azul', 'morado', 'negro'], 'el plátano amarillo', KG_ES],
+  ['w', '¿De qué color es la hierba?', '🌱', 'verde', ['rosa', 'blanca', 'naranja'], 'la hierba verde', KG_ES],
+  ['w', '¿De qué color es la nieve?', '❄️', 'blanca', ['negra', 'roja', 'morada'], 'la nieve ist weiblich: blanca.', KG_ES],
+  ['w', '¿De qué color es el cielo cuando hace sol?', '☀️', 'azul', ['marrón', 'naranja', 'gris'], 'el cielo azul', KG_ES],
+  ['w', '¿De qué color es una fresa?', '🍓', 'roja', ['azul', 'blanca', 'morada'], 'la fresa ist weiblich: roja.', KG_ES],
+  ['w', '¿De qué color es el chocolate?', '🍫', 'marrón', ['verde', 'rosa', 'amarillo'], 'el chocolate marrón', KG_ES],
+  ['w', '¿De qué color es una naranja?', '🍊', 'naranja', ['morada', 'azul', 'verde'], 'Die Farbe heißt wie die Frucht.', KG_ES],
+  ['w', 'Rojo y amarillo juntos dan…', '🎨', 'naranja', ['verde', 'morado', 'gris'], 'Rot und Gelb ergeben Orange.', KG_ES],
+  ['w', 'Azul y amarillo juntos dan…', '🎨', 'verde', ['naranja', 'rosa', 'marrón'], 'Blau und Gelb ergeben Grün.', KG_ES],
+  ['w', 'Rojo y blanco juntos dan…', '🎨', 'rosa', ['gris', 'verde', 'azul'], 'Rot und Weiß ergeben Rosa.', KG_ES],
+  ['w', 'Rojo y azul juntos dan…', '🎨', 'morado', ['naranja', 'verde', 'amarillo'], 'Rot und Blau ergeben Lila.', KG_ES],
+  ['w', '¿De qué colores es la bandera de Alemania?', '🇩🇪', 'negro, rojo y amarillo', ['rojo, blanco y azul', 'azul, blanco y verde', 'verde, blanco y rojo'], 'Schwarz, Rot und Gold.', KG_ES],
+  ['z', 'Ordne zu.', [['rojo', 'rot'], ['azul', 'blau'], ['verde', 'grün'], ['amarillo', 'gelb'], ['negro', 'schwarz'], ['blanco', 'weiß']], '', KG_ES],
+  ['l', 'Completa.', 'La manzana es ⟪roja⟫ y el plátano es ⟪amarillo⟫.', ['rojo', 'amarilla'], 'la manzana: roja, el plátano: amarillo', KG_ES],
+  ['s', '¿Rojo o roja?', ['rojo', 'roja'], [['el coche …', 0], ['el globo …', 0], ['el tomate …', 0], ['la casa …', 1], ['la flor …', 1], ['la camiseta …', 1]], 'Bei weiblichen Wörtern endet die Farbe auf -a.'],
+  ['rf', 'Farben wie „verde“ und „azul“ bleiben bei männlichen und weiblichen Wörtern gleich.', true, 'el coche verde, la casa verde', '🎨']
+]);
+
+
+kgExtra('tildes', 0, [
+  ['w', '¿Cuál está bien escrita?', '🎶', 'canción', ['cancion', 'cánción', 'canciòn'], 'La tilde va en la o: can-ción.', KG_ES],
+  ['w', '¿Cuál está bien escrita?', '🍖', 'jamón', ['jamon', 'jámon', 'jamónn'], 'ja-món', KG_ES],
+  ['w', '¿Cuál está bien escrita?', '🔘', 'botón', ['boton', 'bóton', 'botonn'], 'bo-tón', KG_ES],
+  ['w', '¿Cuál está bien escrita?', '🧴', 'champú', ['champu', 'chámpu', 'champúu'], 'cham-pú', KG_ES],
+  ['w', '¿Cuál está bien escrita?', '👶', 'bebé', ['bebe', 'bébe', 'bebè'], 'be-bé', KG_ES],
+  ['w', '¿Cuál está bien escrita?', '📅', 'sábado', ['sabado', 'sabádo', 'sábadó'], 'sá-ba-do', KG_ES],
+  ['w', '¿Cuál está bien escrita?', '📆', 'miércoles', ['miercoles', 'miércóles', 'miércolés'], 'miér-co-les', KG_ES],
+  ['w', '¿Cuál está bien escrita?', '🎬', 'película', ['pelicula', 'pelíkula', 'pelicúla'], 'pe-lí-cu-la', KG_ES],
+  ['w', '¿Cuál está bien escrita?', '🧭', 'brújula', ['brujula', 'brújola', 'brujúla'], 'brú-ju-la', KG_ES],
+  ['w', '¿Cuál está bien escrita?', '🧲', 'imán', ['iman', 'ímán', 'imàn'], 'i-mán', KG_ES],
+  ['w', '¿Cuál está bien escrita?', '🔺', 'pirámide', ['piramide', 'piramíde', 'pirámíde'], 'pi-rá-mi-de', KG_ES],
+  ['w', '¿Cuál está bien escrita?', '🦉', 'búho', ['buho', 'búo', 'buhó'], 'bú-ho, mit stummem h', KG_ES],
+  ['w', '¿Cuál está bien escrita?', '🥪', 'sándwich', ['sandwich', 'sanwich', 'sandwích'], 'sánd-wich', KG_ES],
+  ['w', '¿Dónde está la tilde en «canción»?', '✏️', 'auf dem o', ['auf dem a', 'auf dem i', 'es gibt keine'], 'can-ción', KG_ES],
+  ['s', 'Mit oder ohne Tilde?', ['mit Tilde', 'ohne Tilde'], [['café', 0], ['sofá', 0], ['jamón', 0], ['casa', 1], ['perro', 1], ['mesa', 1]], 'Die Tilde ist der kleine Strich über einem Vokal.'],
+  ['rf', 'Das Wort „árbol“ hat eine Tilde auf dem a.', true, 'ár-bol', '🌳']
+]);
+
+
+kgExtra('cultura', 0, [
+  ['w', '¿Cómo se llama la fiesta de Valencia con grandes figuras de cartón?', '🔥', 'las Fallas', ['la Tomatina', 'los Carnavales', 'la Feria de Abril'], 'Am Ende werden die Figuren verbrannt.', KG_ES],
+  ['w', '¿En qué fiesta se tiran tomates en Buñol?', '🍅', 'la Tomatina', ['las Fallas', 'la Navidad', 'la Semana Santa'], 'Ein großes Fest, bei dem alle mit Tomaten werfen.', KG_ES],
+  ['w', '¿En qué ciudad está la Alhambra?', '🏰', 'en Granada', ['en Bilbao', 'en Madrid', 'en Valencia'], 'Die Alhambra ist ein sehr alter Palast.', KG_ES],
+  ['w', '¿Qué arquitecto diseñó la Sagrada Familia?', '⛪', 'Antoni Gaudí', ['Pablo Picasso', 'Salvador Dalí', 'Joan Miró'], 'Gaudí baute viele bunte Häuser in Barcelona.', KG_ES],
+  ['w', '¿Qué son las tapas?', '🍢', 'pequeños platos para compartir', ['unos zapatos típicos para bailar', 'unas cartas para jugar en familia', 'unas canciones para dormir a los niños'], 'In Spanien isst man oft viele kleine Tapas zusammen.', KG_ES],
+  ['w', '¿Cómo se llama el famoso museo de Bilbao?', '🏛️', 'el Museo Guggenheim', ['el Museo del Prado', 'el Museo Picasso', 'la Alhambra'], 'Es glänzt silbern wie ein großes Schiff.', KG_ES],
+  ['w', '¿Qué son los churros?', '🍩', 'una masa frita y alargada', ['un tipo de sopa fría', 'una fruta de las islas', 'un queso muy duro'], 'Man tunkt sie gern in heiße Schokolade.', KG_ES],
+  ['w', '¿Qué mar está al este de España?', '🌊', 'el mar Mediterráneo', ['el mar del Norte', 'el mar Báltico', 'el mar Rojo'], 'Im Westen und Norden ist der Atlantik.', KG_ES],
+  ['w', '¿Con qué país tiene frontera España al oeste?', '🗺️', 'con Portugal', ['con Italia', 'con Alemania', 'con Grecia'], 'Im Norden grenzt Spanien an Frankreich.', KG_ES],
+  ['w', '¿Qué es el Camino de Santiago?', '🥾', 'un camino largo que muchas personas hacen a pie', ['una carretera rápida solo para coches', 'un tren muy rápido entre dos ciudades', 'una calle de Madrid con muchas tiendas'], 'Er führt nach Santiago de Compostela.', KG_ES],
+  ['w', '¿Qué es la siesta?', '😴', 'una pausa para descansar después de comer', ['una fiesta grande con música en la calle', 'un baile típico que se baila en Andalucía', 'un postre dulce con leche, arroz y canela'], 'Besonders im heißen Sommer ruhen sich viele mittags aus.', KG_ES],
+  ['w', '¿Cómo se llama el dulce de Navidad hecho con almendras y miel?', '🍬', 'el turrón', ['el gazpacho', 'la paella', 'la tortilla'], 'Turrón gibt es weich oder hart.', KG_ES],
+  ['z', '¿Dónde está?', [['Barcelona', 'la Sagrada Familia'], ['Granada', 'la Alhambra'], ['Madrid', 'el Museo del Prado'], ['Segovia', 'el acueducto romano'], ['Bilbao', 'el Museo Guggenheim']], '', KG_ES],
+  ['rf', 'In Spanien isst man oft spät zu Abend, manchmal erst um 21 Uhr.', true, 'Auch das Mittagessen ist oft erst um 14 Uhr.', '🍽️'],
+  ['rf', 'In Spanien bringen die meisten Geschenke zu Weihnachten der Weihnachtsmann am 24. Dezember.', false, 'Die meisten Geschenke bringen die Heiligen Drei Könige am 6. Januar.', '👑']
+]);
+
+
+kgExtra('escomparar', 0, [
+  ['w', '«La jirafa es ___ alta que el perro.» ¿Qué palabra falta?', '🦒', 'más', ['menos', 'tan', 'como'], 'más … que = mehr … als', KG_ES],
+  ['w', '«El ratón es ___ grande que el elefante.» ¿Qué palabra falta?', '🐭', 'menos', ['más', 'tan', 'que'], 'menos … que = weniger … als', KG_ES],
+  ['w', '«Mi gato es tan negro ___ la noche.» ¿Qué palabra falta?', '🐈', 'como', ['que', 'más', 'tan'], 'tan … como = genauso … wie', KG_ES],
+  ['w', '«El sol es ___ grande que la luna.» ¿Qué palabra falta?', '☀️', 'más', ['menos', 'tan', 'como'], 'Die Sonne ist viel größer als der Mond.', KG_ES],
+  ['w', '«El caracol es más lento ___ la liebre.» ¿Qué palabra falta?', '🐌', 'que', ['como', 'tan', 'más'], 'Nach más kommt que.', KG_ES],
+  ['w', '«Esta película es ___ que la otra.» (bueno)', '🎬', 'mejor', ['más bueno', 'buenísimo', 'peor'], 'Statt más bueno sagt man mejor.', KG_ES],
+  ['w', '«Hoy hace ___ frío que ayer.» Hoy: 2 grados. Ayer: 10 grados.', '🥶', 'más', ['menos', 'tan', 'como'], '2 Grad ist kälter als 10 Grad.', KG_ES],
+  ['w', 'Pedro mide 1,30 m. Marta mide 1,20 m. ¿Qué es verdad?', '📏', 'Pedro es más alto que Marta.', ['Marta es más alta que Pedro.', 'Pedro es tan alto como Marta.', 'Pedro es menos alto que Marta.'], '1,30 m ist mehr als 1,20 m.', KG_ES],
+  ['w', 'Un helado cuesta 2 €. Un zumo cuesta 2 €. ¿Qué es verdad?', '💶', 'El helado es tan caro como el zumo.', ['El helado es más caro que el zumo.', 'El zumo es más caro que el helado.', 'El helado es menos caro que el zumo.'], 'Beide kosten gleich viel: tan … como.', KG_ES],
+  ['w', '¿Qué significa «peor»?', '👎', 'schlechter', ['besser', 'größer', 'kleiner'], 'bueno, mejor. malo, peor.', KG_ES],
+  ['z', 'Ordne zu.', [['más … que', 'mehr … als'], ['menos … que', 'weniger … als'], ['tan … como', 'genauso … wie'], ['mejor', 'besser'], ['peor', 'schlechter']], '', KG_ES],
+  ['s', '¿Más o menos? Was passt in die Lücke?', ['más', 'menos'], [['El tren es … rápido que la bici.', 0], ['Una montaña es … alta que una casa.', 0], ['El tigre es … fuerte que el gato.', 0], ['Una pluma es … pesada que una piedra.', 1], ['La noche es … clara que el día.', 1], ['La hormiga es … grande que el perro.', 1]], 'Überlege, was größer, schneller oder schwerer ist.'],
+  ['rf', '„El perro es más grande que el gato“ heißt: Der Hund ist größer als die Katze.', true, 'más grande que = größer als', '🐕'],
+  ['rf', 'Nach „tan“ kommt im Vergleich „que“.', false, 'Nach tan kommt como: tan alto como.', '⚖️'],
+  ['o', 'Ordena la frase.', ['El', 'avión', 'es', 'más', 'rápido', 'que', 'el', 'tren.'], 'El avión es más rápido que el tren.', KG_ES]
+]);
+
+
+kgExtra('adivinanzas', 0, [
+  ['w', 'Adivina: «Tiene ojos de gato y no es gato, orejas de gato y no es gato, patas de gato y no es gato.» ¿Qué es?', '🤔', 'la gata', ['el perro', 'el ratón', 'el conejo'], 'Es ist keine Katze, sondern eine Katzendame: la gata.', KG_ES],
+  ['w', 'Adivina: «Es pequeña como un ratón y guarda la casa como un león.» ¿Qué es?', '🤔', 'la llave', ['la ventana', 'la mesa', 'la silla'], 'Der Schlüssel ist klein, aber er schließt das Haus ab.', KG_ES],
+  ['w', 'Adivina: «Doy leche, como hierba y digo „muu“.» ¿Qué es?', '🤔', 'la vaca', ['la oveja', 'la cabra', 'el cerdo'], 'la vaca = die Kuh', KG_ES],
+  ['w', 'Adivina: «Tengo teclas blancas y negras y hago música.» ¿Qué es?', '🤔', 'el piano', ['la guitarra', 'el tambor', 'la flauta'], 'la tecla = die Taste', KG_ES],
+  ['w', 'Adivina: «Salto y salto y llevo a mi bebé en una bolsa.» ¿Qué es?', '🤔', 'el canguro', ['el conejo', 'la rana', 'el mono'], 'Das Känguru trägt sein Junges im Beutel.', KG_ES],
+  ['w', 'Adivina: «Tengo el cuello muy largo y como hojas de los árboles altos.» ¿Qué es?', '🤔', 'la jirafa', ['el elefante', 'el camello', 'el caballo'], 'el cuello = der Hals', KG_ES],
+  ['w', 'Adivina: «Tengo un caparazón duro, cuatro patas y camino muy despacio.» ¿Qué es?', '🤔', 'la tortuga', ['el conejo', 'la rana', 'el pez'], 'el caparazón = der Panzer', KG_ES],
+  ['w', 'Adivina: «Me pongo en tu cabeza cuando hace sol.» ¿Qué es?', '🤔', 'la gorra', ['la bufanda', 'el zapato', 'el guante'], 'la cabeza = der Kopf', KG_ES],
+  ['w', 'Adivina: «Una cajita blanca como la cal: todos la saben abrir, nadie la sabe cerrar.» ¿Qué es?', '🤔', 'el huevo', ['la caja', 'la nuez', 'la puerta'], 'Ein Ei kann man aufschlagen, aber nicht wieder zumachen.', KG_ES],
+  ['w', 'Adivina: «Verde por fuera, roja por dentro y con semillas negras.» ¿Qué es?', '🤔', 'la sandía', ['la manzana', 'la fresa', 'el kiwi'], 'la sandía = die Wassermelone', KG_ES],
+  ['w', 'Adivina: «Sube llena y baja vacía; si no se da prisa, la sopa se enfría.» ¿Qué es?', '🤔', 'la cuchara', ['el plato', 'el vaso', 'el tenedor'], 'Mit dem Löffel isst man Suppe.', KG_ES],
+  ['w', 'Adivina: «Por la noche me enciendes y doy luz en tu habitación.» ¿Qué es?', '🤔', 'la lámpara', ['la ventana', 'la cama', 'la alfombra'], 'la luz = das Licht', KG_ES],
+  ['w', 'Adivina: «Tengo alas y pico, canto por la mañana y vivo en un nido.» ¿Qué es?', '🤔', 'el pájaro', ['el murciélago', 'la abeja', 'la mariposa'], 'el nido = das Nest', KG_ES],
+  ['w', 'Adivina: «Tengo una trompa muy larga y orejas muy grandes.» ¿Qué es?', '🤔', 'el elefante', ['el ratón', 'la jirafa', 'el león'], 'la trompa = der Rüssel', KG_ES],
+  ['rf', 'Eine „adivinanza“ ist ein Rätsel.', true, 'Adivina, adivinanza: Rate mal!', '🤔']
+]);
+
+
+kgExtra('emociones', 0, [
+  ['w', 'Mañana es tu cumpleaños. ¿Cómo estás?', '🎂', 'Estoy muy contenta.', ['Estoy muy triste.', 'Estoy enfadada.', 'Tengo mucho frío.'], 'contenta = froh', KG_ES],
+  ['w', 'Tu helado se cae al suelo. ¿Cómo estás?', '🍦', 'Estoy triste.', ['Estoy contenta.', 'Estoy tranquila.', 'Tengo calor.'], 'triste = traurig', KG_ES],
+  ['w', 'Mañana tienes un examen. ¿Cómo estás?', '📝', 'Estoy nerviosa.', ['Estoy aburrida.', 'Tengo calor.', 'Estoy enferma.'], 'nerviosa = aufgeregt', KG_ES],
+  ['w', 'Has corrido mucho. ¿Cómo estás?', '🏃', 'Estoy cansada.', ['Estoy sorprendida.', 'Tengo frío.', 'Estoy triste.'], 'cansada = müde', KG_ES],
+  ['w', 'Tu hermano rompe tu juguete. ¿Cómo estás?', '🧸', 'Estoy enfadada.', ['Estoy contenta.', 'Estoy tranquila.', 'Tengo sueño.'], 'enfadada = wütend', KG_ES],
+  ['w', 'Oyes un ruido raro por la noche. ¿Cómo estás?', '🌙', 'Tengo miedo.', ['Tengo hambre.', 'Estoy contenta.', 'Estoy aburrida.'], 'el miedo = die Angst', KG_ES],
+  ['w', '¿Cómo dice un niño „Ich bin froh“?', '👦', 'Estoy contento.', ['Estoy contenta.', 'Soy contento.', 'Tengo contento.'], 'Ein Junge sagt contento, ein Mädchen contenta.', KG_ES],
+  ['w', '¿Qué significa «Tengo sed»?', '🥤', 'Ich habe Durst.', ['Ich habe Hunger.', 'Ich bin müde.', 'Mir ist kalt.'], 'la sed = der Durst', KG_ES],
+  ['w', '¿Qué significa «Tengo sueño»?', '😪', 'Ich bin müde.', ['Ich habe einen Traum.', 'Ich bin wach.', 'Ich habe Angst.'], 'tener sueño = müde sein', KG_ES],
+  ['w', 'Tu amiga está triste. ¿Qué le dices?', '🤗', '¿Qué te pasa?', ['¡Qué bien!', '¡Feliz cumpleaños!', '¡Buenas noches!'], '¿Qué te pasa? = Was ist los mit dir?', KG_ES],
+  ['s', '¿Estoy o tengo?', ['Estoy …', 'Tengo …'], [['triste', 0], ['cansada', 0], ['contenta', 0], ['miedo', 1], ['hambre', 1], ['frío', 1]], 'Angst, Hunger und Kälte „hat“ man im Spanischen: tengo.'],
+  ['z', 'Ordne zu.', [['contento', 'froh'], ['triste', 'traurig'], ['enfadado', 'wütend'], ['cansado', 'müde'], ['nervioso', 'aufgeregt'], ['tranquilo', 'ruhig']], '', KG_ES],
+  ['l', 'Completa.', 'Hoy ⟪estoy⟫ contenta porque ⟪tengo⟫ un perro nuevo.', ['soy', 'es'], 'Hoy estoy contenta porque tengo un perro nuevo.', KG_ES],
+  ['rf', 'Ein Junge sagt „Estoy cansado“, ein Mädchen „Estoy cansada“.', true, 'Die Endung passt sich an: -o oder -a.', '🧒'],
+  ['rf', '„Tengo hambre“ heißt „Ich habe Durst“.', false, 'Tengo hambre = Ich habe Hunger. Durst heißt sed.', '🍽️']
+]);
+
+
+kgExtra('serestar', 0, [
+  ['w', '¿Ser o estar? «Mi hermano ___ muy alto.»', '🧍', 'es', ['está', 'son', 'estoy'], 'Wie jemand ist: ser.', KG_ES],
+  ['w', '¿Ser o estar? «La leche ___ fría.»', '🥛', 'está', ['es', 'son', 'soy'], 'Ein Zustand gerade jetzt: estar.', KG_ES],
+  ['w', '¿Ser o estar? «Mis padres ___ en el trabajo.»', '💼', 'están', ['son', 'es', 'está'], 'Wo jemand ist: estar.', KG_ES],
+  ['w', '¿Ser o estar? «Barcelona ___ una ciudad muy bonita.»', '🏙️', 'es', ['está', 'son', 'están'], 'Was etwas ist: ser.', KG_ES],
+  ['w', '¿Ser o estar? «Hoy ___ muy contenta.»', '😊', 'estoy', ['soy', 'es', 'son'], 'Wie es mir gerade geht: estar.', KG_ES],
+  ['w', '¿Ser o estar? «El pingüino ___ un pájaro.»', '🐧', 'es', ['está', 'estás', 'están'], 'Was etwas ist: ser.', KG_ES],
+  ['w', '¿Ser o estar? «Mi cama ___ en mi habitación.»', '🛏️', 'está', ['es', 'son', 'soy'], 'Wo etwas ist: estar.', KG_ES],
+  ['w', '¿Ser o estar? «Tú ___ mi mejor amiga.»', '🤝', 'eres', ['estás', 'es', 'soy'], 'Wer jemand ist: ser.', KG_ES],
+  ['w', '¿Ser o estar? «Vosotros ___ en clase.»', '🏫', 'estáis', ['sois', 'están', 'estamos'], 'Wo ihr seid: estar.', KG_ES],
+  ['w', '¿Ser o estar? «La sopa ___ de tomate.»', '🍅', 'es', ['está', 'son', 'estoy'], 'Woraus etwas ist: ser.', KG_ES],
+  ['s', '¿Ser o estar?', ['ser', 'estar'], [['wer oder was jemand ist', 0], ['woher jemand kommt', 0], ['der Beruf', 0], ['wo etwas ist', 1], ['wie es jemandem gerade geht', 1], ['offen, kalt, müde', 1]], 'ser für das, was bleibt. estar für Ort und Zustand.'],
+  ['z', 'Ordne die Formen von „ser“ zu.', [['yo', 'soy'], ['tú', 'eres'], ['él', 'es'], ['nosotros', 'somos'], ['ellos', 'son']], '', KG_ES],
+  ['z', 'Ordne die Formen von „estar“ zu.', [['yo', 'estoy'], ['tú', 'estás'], ['ella', 'está'], ['nosotras', 'estamos'], ['ellas', 'están']], '', KG_ES],
+  ['rf', 'Für Orte benutzt man „estar“: El libro está en la mesa.', true, 'Wo etwas ist: estar.', '📍'],
+  ['rf', 'Für Berufe benutzt man „estar“: Mi tía está médica.', false, 'Für Berufe nimmt man ser: Mi tía es médica.', '👩‍⚕️'],
+  ['l', 'Completa.', 'Yo ⟪soy⟫ de Alemania y ⟪estoy⟫ en España de vacaciones.', ['es', 'está'], 'Woher: ser. Wo gerade: estar.', KG_ES]
+]);
+
+
+kgExtra('leer', 0, [
+  ['w', 'Lee: «Tomás tiene un hámster. Se llama Bigotes. Come semillas y corre en su rueda por la noche.» ¿Cómo se llama el hámster?', '🐹', 'Bigotes', ['Tomás', 'Rueda', 'Semilla'], 'Se llama Bigotes.', KG_ES],
+  ['w', 'Lee: «Tomás tiene un hámster. Se llama Bigotes. Come semillas y corre en su rueda por la noche.» ¿Cuándo corre el hámster?', '🐹', 'por la noche', ['por la mañana', 'al mediodía', 'los domingos'], 'Corre en su rueda por la noche.', KG_ES],
+  ['w', 'Lee: «Tomás tiene un hámster. Se llama Bigotes. Come semillas y corre en su rueda por la noche.» ¿Qué come Bigotes?', '🐹', 'semillas', ['carne', 'helado', 'queso'], 'Come semillas.', KG_ES],
+  ['w', 'Lee: «Es sábado. Laura y su padre van al mercado. Compran tomates, queso y pan. Después hacen una pizza.» ¿Qué día es?', '🛒', 'el sábado', ['el lunes', 'el domingo', 'el martes'], 'Es sábado.', KG_ES],
+  ['w', 'Lee: «Es sábado. Laura y su padre van al mercado. Compran tomates, queso y pan. Después hacen una pizza.» ¿Adónde van?', '🛒', 'al mercado', ['al colegio', 'a la playa', 'al médico'], 'Van al mercado.', KG_ES],
+  ['w', 'Lee: «Es sábado. Laura y su padre van al mercado. Compran tomates, queso y pan. Después hacen una pizza.» ¿Qué hacen después?', '🍕', 'una pizza', ['una tarta', 'una sopa', 'una ensalada'], 'Después hacen una pizza.', KG_ES],
+  ['w', 'Lee: «En otoño, Pablo pasea por el bosque con su abuela. Las hojas son rojas y amarillas. Encuentran castañas y setas.» ¿Con quién pasea Pablo?', '🍂', 'con su abuela', ['con su madre', 'con su perro', 'con su profesora'], 'Pasea con su abuela.', KG_ES],
+  ['w', 'Lee: «En otoño, Pablo pasea por el bosque con su abuela. Las hojas son rojas y amarillas. Encuentran castañas y setas.» ¿De qué color son las hojas?', '🍂', 'rojas y amarillas', ['verdes y azules', 'negras y blancas', 'rosas y moradas'], 'Las hojas son rojas y amarillas.', KG_ES],
+  ['w', 'Lee: «En otoño, Pablo pasea por el bosque con su abuela. Las hojas son rojas y amarillas. Encuentran castañas y setas.» ¿Qué encuentran?', '🌰', 'castañas y setas', ['fresas y uvas', 'piedras y conchas', 'flores y huevos'], 'Encuentran castañas y setas.', KG_ES],
+  ['w', 'Lee: «Marina tiene fiebre y le duele la cabeza. Hoy no va al colegio. Se queda en la cama y bebe mucho té.» ¿Qué le duele a Marina?', '🤒', 'la cabeza', ['la pierna', 'la mano', 'la barriga'], 'Le duele la cabeza.', KG_ES],
+  ['w', 'Lee: «Marina tiene fiebre y le duele la cabeza. Hoy no va al colegio. Se queda en la cama y bebe mucho té.» ¿Dónde se queda Marina?', '🛏️', 'en la cama', ['en el colegio', 'en el parque', 'en la cocina'], 'Se queda en la cama.', KG_ES],
+  ['w', 'Lee: «El gato Rayo vive en un barco. Le gusta mirar el mar y dormir sobre las cuerdas. Su amigo es un pájaro blanco.» ¿Dónde vive Rayo?', '⛵', 'en un barco', ['en una casa', 'en un árbol', 'en el colegio'], 'Vive en un barco.', KG_ES],
+  ['w', 'Lee: «El gato Rayo vive en un barco. Le gusta mirar el mar y dormir sobre las cuerdas. Su amigo es un pájaro blanco.» ¿Quién es su amigo?', '⛵', 'un pájaro blanco', ['un perro negro', 'un pez rojo', 'un ratón gris'], 'Su amigo es un pájaro blanco.', KG_ES],
+  ['rf', 'Lies: „Hugo tiene dos hermanas y un hermano.“ Stimmt das: Hugo hat drei Geschwister?', true, 'Zwei Schwestern und ein Bruder sind drei Geschwister.', '👨‍👩‍👧‍👦'],
+  ['o', 'Ordena el cuento.', ['Había una vez un gato pequeño.', 'Un día se perdió en el bosque.', 'Un búho le enseñó el camino.', 'Por fin llegó a casa y se durmió.'], '', KG_ES]
+]);
+
+
+kgExtra('colees', 0, [
+  ['w', '¿Qué es esto?', '✂️', 'las tijeras', ['el pegamento', 'la regla', 'la goma'], 'las tijeras = die Schere', KG_ES],
+  ['w', '¿Qué es esto?', '📏', 'la regla', ['la escuadra', 'el lápiz', 'la mochila'], 'la regla = das Lineal', KG_ES],
+  ['w', '¿Qué es esto?', '🎒', 'la mochila', ['el estuche', 'la carpeta', 'el cuaderno'], 'la mochila = der Schulranzen', KG_ES],
+  ['w', '¿Qué es esto?', '📚', 'los libros', ['los cuadernos', 'las hojas', 'las carpetas'], 'el libro = das Buch', KG_ES],
+  ['w', '¿En qué asignatura pintas y dibujas?', '🎨', 'Plástica', ['Música', 'Matemáticas', 'Inglés'], 'Plástica = Kunst', KG_ES],
+  ['w', '¿En qué asignatura aprendes sobre plantas y animales?', '🌿', 'Ciencias Naturales', ['Educación Física', 'Educación Musical', 'Lengua Castellana'], 'Ciencias Naturales = Sachunterricht, Natur', KG_ES],
+  ['w', '¿En qué asignatura aprendes a leer y escribir en español?', '📖', 'Lengua', ['Música', 'Plástica', 'Matemáticas'], 'Lengua = Sprache', KG_ES],
+  ['w', '¿Cómo se dice «Schulhof» en español?', '🏫', 'el patio', ['el pasillo', 'el comedor', 'el gimnasio'], 'el patio = der Schulhof', KG_ES],
+  ['w', '¿Cómo se dice «Lehrerin» en español?', '👩‍🏫', 'la maestra', ['la alumna', 'la directora', 'la cocinera'], 'In der Grundschule sagt man la maestra.', KG_ES],
+  ['w', '¿Cómo se dice «Mitschüler» en español?', '🧑‍🤝‍🧑', 'el compañero', ['el maestro', 'el conserje', 'el director'], 'el compañero, la compañera', KG_ES],
+  ['w', 'La maestra dice: «Sacad el cuaderno». ¿Qué significa?', '📓', 'Holt das Heft heraus.', ['Gebt das Heft ab.', 'Schließt das Heft.', 'Malt ins Heft.'], 'sacar = herausholen', KG_ES],
+  ['z', 'Ordne zu.', [['la goma', 'Radiergummi'], ['el sacapuntas', 'Anspitzer'], ['las tijeras', 'Schere'], ['la regla', 'Lineal'], ['el pegamento', 'Kleber'], ['el estuche', 'Federmäppchen']], '', KG_ES],
+  ['s', '¿En la mochila o en el estuche?', ['en la mochila', 'en el estuche'], [['el libro', 0], ['el cuaderno', 0], ['la carpeta', 0], ['el lápiz', 1], ['la goma', 1], ['el sacapuntas', 1]], 'Kleine Sachen kommen ins Mäppchen.'],
+  ['l', 'Completa.', 'En el ⟪recreo⟫ juego en el ⟪patio⟫ con mis amigos.', ['comedor', 'deberes'], 'En el recreo juego en el patio con mis amigos.', KG_ES],
+  ['o', 'Ordena el día en el cole.', ['Llego al colegio.', 'Tenemos clase de Matemáticas.', 'Salimos al recreo.', 'Comemos en el comedor.', 'Vuelvo a casa.'], '', KG_ES]
+]);
+
+
+kgExtra('esdialogos', 0, [
+  ['w', 'Alguien dice: «¿Qué quieres comer?» ¿Qué contestas?', '💬', 'Macarrones, por favor.', ['Me llamo Pedro García.', 'Estoy en casa ahora.', 'Tengo ocho años.'], 'Auf die Frage nach dem Essen nennst du ein Essen.', KG_ES],
+  ['w', 'Alguien dice: «¿Dónde está tu casa?» ¿Qué contestas?', '💬', 'Cerca del colegio.', ['A las cinco.', 'Me gusta mucho.', 'Con mi hermano.'], '¿Dónde? fragt nach dem Ort.', KG_ES],
+  ['w', 'Alguien dice: «¿Vienes a mi fiesta?» ¿Qué contestas?', '💬', '¡Sí, me encantaría!', ['No, gracias, estoy lleno.', 'Son las ocho y media.', 'Hoy hace mucho frío.'], 'me encantaría = sehr gern', KG_ES],
+  ['w', 'Alguien dice: «¿Qué te pasa?» ¿Qué contestas?', '💬', 'Me duele la tripa.', ['Me llamo Ana.', 'Tengo un gato.', 'Es lunes.'], 'Me duele la tripa = Ich habe Bauchweh.', KG_ES],
+  ['w', 'Alguien dice: «¿Me ayudas, por favor?» ¿Qué contestas?', '💬', 'Sí, claro. ¿Qué necesitas?', ['No, hoy es martes por la tarde.', 'Me gusta mucho el color rojo.', 'Hasta luego, nos vemos.'], 'Hilfe anbieten: Sí, claro.', KG_ES],
+  ['w', 'Alguien dice: «¿Cuál es tu comida favorita?» ¿Qué contestas?', '💬', 'La pizza.', ['El azul.', 'El perro.', 'El fútbol.'], 'la comida = das Essen', KG_ES],
+  ['w', 'Alguien dice: «¡Buenas noches!» ¿Qué contestas?', '💬', '¡Buenas noches, que descanses!', ['¡Buenos días, qué tal estás!', '¡Feliz cumpleaños, amigo!', '¡Hola, encantada de conocerte!'], 'que descanses = schlaf gut', KG_ES],
+  ['w', 'Alguien dice: «¿Qué haces?» ¿Qué contestas?', '💬', 'Estoy dibujando.', ['Tengo nueve años.', 'Soy de Madrid.', 'Me llamo Lola.'], 'Estoy dibujando = Ich male gerade.', KG_ES],
+  ['w', 'Alguien dice: «¿Te gustan los gatos?» ¿Qué contestas?', '💬', 'Sí, me encantan.', ['Sí, tengo hambre.', 'No, son las dos.', 'Sí, en la cocina.'], 'me encantan = ich liebe sie', KG_ES],
+  ['w', 'Alguien dice: «¿Puedo sentarme aquí?» ¿Qué contestas?', '💬', 'Sí, claro, siéntate.', ['No, me llamo Juan.', 'Sí, tengo frío.', 'Es mi cumpleaños.'], 'siéntate = setz dich', KG_ES],
+  ['w', 'Alguien dice: «¿Qué vas a hacer el fin de semana?» ¿Qué contestas?', '💬', 'Voy a ir al zoo.', ['Fui al zoo.', 'Tengo un zoo.', 'Es un zoo.'], 'voy a ir = ich werde gehen', KG_ES],
+  ['w', 'Alguien dice: «¡Enhorabuena!» ¿Qué contestas?', '💬', '¡Muchas gracias!', ['¡De nada!', '¡Lo siento!', '¡Buen provecho!'], '¡Enhorabuena! = Herzlichen Glückwunsch!', KG_ES],
+  ['z', 'Ordne Frage und Antwort zu.', [['¿Qué tal?', 'Bien, gracias.'], ['¿Adónde vas?', 'Al parque.'], ['¿Con quién juegas?', 'Con mi hermana.'], ['¿Qué día es hoy?', 'Hoy es lunes.'], ['¿Cuánto cuesta?', 'Cinco euros.']], '', KG_ES],
+  ['o', 'Ordena el diálogo.', ['¡Hola! ¿Quieres jugar al fútbol?', '¡Sí! ¿Dónde jugamos?', 'En el patio.', '¡Vale, vamos!'], '', KG_ES],
+  ['o', 'Ordena el diálogo en la panadería.', ['Buenos días, ¿qué quieres?', 'Una barra de pan, por favor.', 'Aquí tienes. Es un euro.', 'Gracias, adiós.'], '', KG_ES],
+  ['rf', '„De nada“ sagt man, wenn sich jemand bedankt.', true, '¡Gracias! ¡De nada!', '🙏']
+]);
+
+
+kgExtra('ununa', 0, [
+  ['w', '¿Un, una, unos o unas? «___ rana»', '🐸', 'una', ['un', 'unos', 'unas'], 'la rana, una rana', KG_ES],
+  ['w', '¿Un, una, unos o unas? «___ sombrero»', '🎩', 'un', ['una', 'unos', 'unas'], 'el sombrero, un sombrero', KG_ES],
+  ['w', '¿Un, una, unos o unas? «___ galletas»', '🍪', 'unas', ['un', 'una', 'unos'], 'las galletas, unas galletas', KG_ES],
+  ['w', '¿Un, una, unos o unas? «___ lápices»', '✏️', 'unos', ['un', 'una', 'unas'], 'los lápices, unos lápices', KG_ES],
+  ['w', '¿Un, una, unos o unas? «___ elefante»', '🐘', 'un', ['una', 'unos', 'unas'], 'el elefante, un elefante', KG_ES],
+  ['w', '¿Un, una, unos o unas? «___ uvas»', '🍇', 'unas', ['un', 'una', 'unos'], 'las uvas, unas uvas', KG_ES],
+  ['w', '¿Un, una, unos o unas? «___ globos»', '🎈', 'unos', ['un', 'una', 'unas'], 'los globos, unos globos', KG_ES],
+  ['w', '¿Un, una, unos o unas? «___ moto»', '🏍️', 'una', ['un', 'unos', 'unas'], 'la moto, una moto', KG_ES],
+  ['w', '¿Un, una, unos o unas? «___ sofá»', '🛋️', 'un', ['una', 'unos', 'unas'], 'el sofá, un sofá', KG_ES],
+  ['w', '¿Un, una, unos o unas? «___ llaves»', '🔑', 'unas', ['un', 'una', 'unos'], 'las llaves, unas llaves', KG_ES],
+  ['w', '¿Un, una, unos o unas? «___ osos»', '🐻', 'unos', ['un', 'una', 'unas'], 'los osos, unos osos', KG_ES],
+  ['w', '¿Un, una, unos o unas? «___ pizza»', '🍕', 'una', ['un', 'unos', 'unas'], 'la pizza, una pizza', KG_ES],
+  ['w', '¿Un, una, unos o unas? «___ problema»', '❗', 'un', ['una', 'unos', 'unas'], 'Achtung: el problema endet auf -a, ist aber männlich.', KG_ES],
+  ['w', '¿Un, una, unos o unas? «___ ruedas»', '🛞', 'unas', ['un', 'una', 'unos'], 'las ruedas, unas ruedas', KG_ES],
+  ['s', '¿Un o una?', ['un', 'una'], [['coche', 0], ['perro', 0], ['libro', 0], ['casa', 1], ['mesa', 1], ['flor', 1]], 'el coche, la flor: Das Wort bestimmt den Artikel.'],
+  ['l', 'Completa con un, una, unos o unas.', 'Tengo ⟪un⟫ perro y ⟪unas⟫ tortugas.', ['una', 'unos'], 'un perro, unas tortugas', KG_ES],
+  ['rf', '„Unos zapatos“ heißt „ein paar Schuhe“.', true, 'unos, unas = einige, ein paar', '👟']
+]);
+
+
+kgExtra('plural', 0, [
+  ['w', '¿Cómo es el plural de «el balón»?', '⚽', 'los balones', ['los balóns', 'las balones', 'los balon'], 'Nach -n kommt -es. Der Akzent fällt weg.', KG_ES],
+  ['w', '¿Cómo es el plural de «el color»?', '🎨', 'los colores', ['los colors', 'las colores', 'los colorres'], 'Nach -r kommt -es.', KG_ES],
+  ['w', '¿Cómo es el plural de «el mes»?', '📅', 'los meses', ['los mess', 'las meses', 'los mes'], 'Nach -s kommt -es.', KG_ES],
+  ['w', '¿Cómo es el plural de «el avión»?', '✈️', 'los aviones', ['los avións', 'las aviones', 'los aviónes'], 'avión, aviones: ohne Akzent.', KG_ES],
+  ['w', '¿Cómo es el plural de «el papel»?', '📄', 'los papeles', ['los papels', 'las papeles', 'los papell'], 'Nach -l kommt -es.', KG_ES],
+  ['w', '¿Cómo es el plural de «la canción»?', '🎶', 'las canciones', ['las cancións', 'los canciones', 'las canciónes'], 'canción, canciones: ohne Akzent.', KG_ES],
+  ['w', '¿Cómo es el plural de «el jardín»?', '🌷', 'los jardines', ['los jardíns', 'las jardines', 'los jardínes'], 'jardín, jardines: ohne Akzent.', KG_ES],
+  ['w', '¿Cómo es el plural de «la voz»?', '🗣️', 'las voces', ['las vozs', 'los voces', 'las vozes'], 'Aus z wird c: voz, voces.', KG_ES],
+  ['w', '¿Cómo es el plural de «el pie»?', '🦶', 'los pies', ['los piees', 'las pies', 'los pieses'], 'Nach einem Vokal kommt nur -s.', KG_ES],
+  ['w', '¿Cómo es el plural de «la nuez»?', '🌰', 'las nueces', ['las nuezs', 'los nueces', 'las nuezes'], 'Aus z wird c: nuez, nueces.', KG_ES],
+  ['w', '¿Cómo es el plural de «el país»?', '🌍', 'los países', ['los paíss', 'las países', 'los paises'], 'país, países: Der Akzent bleibt.', KG_ES],
+  ['w', '¿Cómo es el plural de «el tenedor»?', '🍴', 'los tenedores', ['los tenedors', 'las tenedores', 'los tenedor'], 'Nach -r kommt -es.', KG_ES],
+  ['w', '¿Cómo es el plural de «la hoja»?', '🍃', 'las hojas', ['las hojes', 'los hojas', 'las hoja'], 'Nach einem Vokal kommt nur -s.', KG_ES],
+  ['s', '¿+ s o + es?', ['+ s', '+ es'], [['casa', 0], ['libro', 0], ['gato', 0], ['flor', 1], ['tren', 1], ['mes', 1]], 'Nach Vokal -s, nach Konsonant -es.'],
+  ['z', 'Ordne Einzahl und Mehrzahl zu.', [['el lápiz', 'los lápices'], ['la voz', 'las voces'], ['el rey', 'los reyes'], ['el jardín', 'los jardines'], ['el papel', 'los papeles']], '', KG_ES],
+  ['rf', 'Wörter auf -z bekommen im Plural -ces: el lápiz, los lápices.', true, 'Aus z wird c.', '✏️']
+]);
+
+
+kgExtra('alcehist', 0, [
+  ['w', '¿Qué pintor es famoso por sus relojes blandos?', '🕰️', 'Salvador Dalí', ['Diego Velázquez', 'Francisco de Goya', 'Pablo Picasso'], 'Auf einem berühmten Bild von Dalí schmelzen Uhren.', KG_ES],
+  ['w', '¿Qué es la Alhambra?', '🏰', 'un palacio en Granada', ['un río en Sevilla', 'una playa en Málaga', 'un barco de Colón'], 'Die Alhambra ist über 700 Jahre alt.', KG_ES],
+  ['w', '¿Qué construyó el español Isaac Peral hace más de cien años?', '🌊', 'un submarino', ['un avión', 'un teléfono', 'una bicicleta'], 'Sein U-Boot fuhr mit Strom.', KG_ES],
+  ['w', '¿Qué invento español sirve para fregar el suelo sin agacharse?', '🧹', 'la fregona', ['la escoba', 'la aspiradora', 'el cubo'], 'la fregona = der Wischmopp', KG_ES],
+  ['w', '¿Quién escribió «Platero y yo», un libro sobre un burro?', '📖', 'Juan Ramón Jiménez', ['Miguel de Cervantes', 'Federico García Lorca', 'Antonio Machado'], 'Ein sehr bekanntes spanisches Buch.', KG_ES],
+  ['w', '¿Cómo se llama el burro del libro de Juan Ramón Jiménez?', '🫏', 'Platero', ['Rocinante', 'Babieca', 'Bigotes'], 'Rocinante ist das Pferd von Don Quijote, Babieca das Pferd des Cid.', KG_ES],
+  ['w', '¿Cómo llamaban los romanos a la tierra donde hoy está España?', '🏛️', 'Hispania', ['Germania', 'Galia', 'Britania'], 'Daher kommt der Name España.', KG_ES],
+  ['w', '¿Quién fue Goya?', '🎨', 'un pintor español famoso', ['un rey de Castilla y León', 'un futbolista muy famoso', 'un barco de Cristóbal Colón'], 'Francisco de Goya malte vor über 200 Jahren.', KG_ES],
+  ['w', '¿Qué científico español ganó el Premio Nobel por estudiar el cerebro?', '🧠', 'Santiago Ramón y Cajal', ['Miguel de Cervantes', 'Cristóbal Colón', 'Francisco de Goya'], 'Er zeichnete als Erster genau die Nervenzellen.', KG_ES],
+  ['w', '¿Quién escribió muchos poemas divertidos para niños?', '✏️', 'Gloria Fuertes', ['Clara Campoamor', 'la reina Isabel', 'María Moliner'], 'Ihre Gedichte kennen in Spanien fast alle Kinder.', KG_ES],
+  ['rf', 'Las Meninas se pintaron hace más de 300 años.', true, 'Velázquez malte das Bild im Jahr 1656.', '🖼️', KG_ES],
+  ['rf', 'Gaudí terminó la Sagrada Familia en un solo año.', false, 'Man baut seit 1882 an der Kirche, über 140 Jahre.', '⛪', KG_ES],
+  ['rf', 'Los romanos vivieron muchos años en Hispania.', true, 'Sie bauten Straßen, Brücken und Wasserleitungen.', '🏛️', KG_ES],
+  ['o', 'Ordena en el tiempo. ¿Qué fue primero?', ['las pinturas de Altamira', 'el acueducto de Segovia', 'el viaje de Colón (1492)', 'la Sagrada Familia (desde 1882)'], 'Altamira ist viele tausend Jahre alt.', KG_ES]
+]);
+
+
+kgExtra('estener', 0, [
+  ['w', '¿Qué forma de «tener» falta? «Ellos ___ una casa grande.»', '🏡', 'tienen', ['tiene', 'tenemos', 'tengo'], 'ellos tienen', KG_ES],
+  ['w', '¿Qué forma de «tener» falta? «Tú ___ los ojos azules.»', '👀', 'tienes', ['tiene', 'tengo', 'tienen'], 'tú tienes', KG_ES],
+  ['w', '¿Qué forma de «tener» falta? «Nosotras ___ clase de música.»', '🎵', 'tenemos', ['tienen', 'tenéis', 'tiene'], 'nosotras tenemos', KG_ES],
+  ['w', '¿Qué forma de «tener» falta? «Mi abuela ___ setenta años.»', '👵', 'tiene', ['tienes', 'tengo', 'tienen'], 'ella tiene', KG_ES],
+  ['w', '¿Qué forma de «tener» falta? «Vosotras ___ mucha suerte.»', '🍀', 'tenéis', ['tenemos', 'tienen', 'tienes'], 'vosotras tenéis', KG_ES],
+  ['w', '¿Qué significa «Tengo que irme»?', '🚪', 'Ich muss gehen.', ['Ich habe Hunger.', 'Ich will bleiben.', 'Ich gehe gern.'], 'tener que = müssen', KG_ES],
+  ['z', 'Ordne die Formen von „tener“ zu.', [['yo', 'tengo'], ['tú', 'tienes'], ['ella', 'tiene'], ['nosotros', 'tenemos'], ['vosotros', 'tenéis'], ['ellos', 'tienen']], '', KG_ES],
+  ['rf', 'Auf Spanisch „hat“ man sein Alter: Tengo ocho años.', true, 'Wörtlich: Ich habe acht Jahre.', '🎂']
+]);
+
+
+kgExtra('es3silabas', 0, [
+  ['w', '¿Cuántas sílabas tiene «sol»?', '☀️', '1', ['2', '3', '4'], 'sol: una sílaba', KG_ES],
+  ['w', '¿Cuántas sílabas tiene «luna»?', '🌙', '2', ['1', '3', '4'], 'lu-na', KG_ES],
+  ['w', '¿Cuántas sílabas tiene «pizarra»?', '🧑‍🏫', '3', ['2', '4', '5'], 'pi-za-rra', KG_ES],
+  ['w', '¿Cuántas sílabas tiene «cocodrilo»?', '🐊', '4', ['3', '5', '2'], 'co-co-dri-lo', KG_ES],
+  ['w', '¿Cuántas sílabas tiene «zapatilla»?', '👟', '4', ['3', '5', '2'], 'za-pa-ti-lla', KG_ES],
+  ['w', '¿Cuántas sílabas tiene «hipopótamo»?', '🦛', '5', ['4', '3', '6'], 'hi-po-pó-ta-mo', KG_ES],
+  ['w', '¿Cuántas sílabas tiene «tren»?', '🚂', '1', ['2', '3', '4'], 'tren: una sílaba', KG_ES],
+  ['w', '¿Cuántas sílabas tiene «pelo»?', '💇', '2', ['1', '3', '4'], 'pe-lo', KG_ES],
+  ['w', '¿Qué palabra está bien separada?', '✂️', 'ca-ba-llo', ['cab-al-lo', 'ca-bal-lo', 'caba-llo'], 'll bleibt zusammen.', KG_ES],
+  ['w', '¿Qué palabra está bien separada?', '✂️', 'co-che', ['coc-he', 'c-oche', 'coch-e'], 'ch bleibt zusammen.', KG_ES],
+  ['rf', '„ll“ und „ch“ bleiben beim Trennen zusammen: ca-ba-llo, co-che.', true, 'Sie sind wie ein einziger Laut.', '✂️'],
+  ['s', '¿Dos o tres sílabas?', ['2 sílabas', '3 sílabas'], [['casa', 0], ['perro', 0], ['mesa', 0], ['pelota', 1], ['zapato', 1], ['tomate', 1]], 'Klatsche die Silben mit.']
+]);
+
+kgEinbau();
+
+/*@@src mehr710.js@@*/
+
+
+
+
+
+
+
+
+
+
+kgExtra('skulptur', [1, 2], [
+  ['w', 'Was ist eine Statue?', '🗽', 'eine Figur, die einen Menschen oder ein Tier zeigt', ['ein Bild, das flach an einer Wand im Museum hängt', 'ein Lied, das viele Kinder zusammen im Chor singen', 'ein Haus, das aus vielen großen Steinen gebaut ist'], 'Statuen stehen oft auf Plätzen oder in Museen.'],
+  ['w', 'Woraus ist eine Sandskulptur?', '🏖️', 'aus nassem Sand', ['aus trockenem Mehl', 'aus Holzspänen', 'aus Zucker'], 'Am Strand entstehen manchmal riesige Sandfiguren.'],
+  ['w', 'Warum macht man Sand für eine Sandburg nass?', '💧', 'Nasser Sand hält besser zusammen.', ['Nasser Sand glitzert schöner.', 'Nasser Sand ist leichter zu tragen.', 'Nasser Sand riecht besser.'], 'Trockener Sand rieselt einfach auseinander.'],
+  ['w', 'Womit biegst du am besten eine Figur aus Draht?', '🪢', 'mit einer Zange', ['mit einem Pinsel', 'mit einem Radiergummi', 'mit einer Papierschere'], 'Mit der Zange kann man den Draht biegen und abknipsen.'],
+  ['w', 'Was ist ein Mobile?', '🎐', 'eine hängende Figur, die sich im Wind bewegt', ['ein kleines Telefon, das man aus Ton formt', 'ein Wagen mit vier Rädern für den Garten', 'ein Bild, das mit Wasserfarben gemalt ist'], 'Mobiles hängen oft über einem Kinderbett.'],
+  ['w', 'Was kann man aus Salzteig machen?', '🧂', 'kleine Figuren, die man im Ofen trocknet', ['eine Suppe für das Mittagessen am Sonntag', 'bunte Bilder, die man an die Tafel malt', 'dünnes Papier für ein neues Buch'], 'Nach dem Trocknen kann man sie bemalen.'],
+  ['w', 'Woraus besteht Salzteig?', '🥣', 'aus Mehl, Salz und Wasser', ['aus Zucker, Butter und Milch', 'aus Sand, Steinen und Kleber', 'aus Ton, Gips und Farbe'], 'Salzteig kann man nicht essen, er ist viel zu salzig.'],
+  ['w', 'Was ist ein Abguss?', '🖐️', 'eine Kopie, die man mit einer Form herstellt', ['ein Bild, das man mit Wasser malt', 'ein Garten mit vielen bunten Blumen und Bäumen', 'ein Werkzeug, mit dem man Holz schnitzt'], 'Man gießt zum Beispiel Gips in eine Form.'],
+  ['rf', 'Eine Skulptur ist immer aus Stein.', false, 'Skulpturen gibt es auch aus Holz, Eis oder Metall.', '🗿'],
+  ['rf', 'Ton muss feucht bleiben, solange man daran arbeitet.', true, 'Sonst wird er trocken und bricht.', '🏺'],
+  ['s', 'Formen oder schnitzen?', ['formen', 'schnitzen'], [['Ton', 0], ['Knete', 0], ['Salzteig', 0], ['Holz', 1], ['Seife', 1], ['Kürbis', 1]], 'Weiche Stoffe formt man, harte schnitzt man.'],
+  ['o', 'So entsteht eine Figur aus Ton.', ['Ton weich kneten', 'Grundform formen', 'Einzelheiten mit dem Modellierholz', 'langsam trocknen lassen', 'im Ofen brennen'], 'Erst wenn der Ton ganz trocken ist, kommt er in den Ofen.'],
+  ['z', 'Welches Werkzeug passt?', [['Stein', 'Hammer und Meißel'], ['Holz', 'Schnitzmesser'], ['Ton', 'Modellierholz'], ['Draht', 'Zange']], 'Jedes Material braucht sein Werkzeug.']
+]);
+
+
+kgExtra('bildarten', [1, 2], [
+  ['w', 'Du malst Bäume, Felder und einen Fluss. Welche Bildart entsteht?', '🌳', 'eine Landschaft', ['ein Porträt', 'ein Stillleben', 'ein Seestück'], 'Eine Landschaft zeigt die Natur draußen.'],
+  ['w', 'Du malst eine Schale mit Äpfeln und Birnen. Was entsteht?', '🍐', 'ein Stillleben', ['ein Tierbild', 'ein Porträt', 'eine Landschaft'], 'Ein Stillleben zeigt Dinge, die still liegen.'],
+  ['w', 'Du malst das Meer bei Sturm mit hohen Wellen. Was entsteht?', '🌊', 'ein Seestück', ['ein Stillleben', 'ein Porträt', 'ein Tierbild'], 'Ein Seestück zeigt das Meer.'],
+  ['w', 'Du malst eine Katze, die auf dem Sofa schläft. Was entsteht?', '🐈', 'ein Tierbild', ['ein Seestück', 'eine Landschaft', 'ein Stillleben'], 'Im Mittelpunkt steht ein Tier.'],
+  ['w', 'Was zeigt ein Porträt meistens?', '🙂', 'das Gesicht eines Menschen', ['ein Haus mit Garten', 'eine Schale mit Obst', 'das Meer mit Schiffen'], 'Oft sieht man auch Schultern und Hände.'],
+  ['w', 'Was ist ein Ganzkörperporträt?', '🧍', 'ein Bild, das den ganzen Menschen von Kopf bis Fuß zeigt', ['ein Bild, das nur die Hände eines Menschen zeigt', 'ein Bild, das nur das Haus eines Menschen zeigt', 'ein Bild, das nur den Hund eines Menschen zeigt'], 'Könige ließen sich oft so malen.'],
+  ['w', 'Was ist eine Fantasielandschaft?', '🦄', 'eine Landschaft, die man sich ausgedacht hat', ['eine Landschaft, die man genau abgemalt hat', 'ein Foto von einem schönen Urlaubsort am Meer', 'eine Karte mit allen Straßen und Wegen'], 'Dort kann es fliegende Inseln oder Bonbonbäume geben.'],
+  ['w', 'Wie heißt das Format, wenn ein Bild höher als breit ist?', '📱', 'Hochformat', ['Querformat', 'Rundformat', 'Großformat'], 'Porträts malt man oft im Hochformat.'],
+  ['w', 'Welches Format passt meistens für eine Landschaft?', '🖼️', 'Querformat', ['Hochformat', 'Rundformat', 'Kleinformat'], 'Im Querformat hat die weite Landschaft Platz.'],
+  ['rf', 'Ein Stillleben zeigt Dinge, die sich nicht bewegen.', true, 'Zum Beispiel Blumen, Obst oder Geschirr.', '🍎'],
+  ['rf', 'Ein Seestück zeigt den Wald im Herbst.', false, 'Ein Seestück zeigt das Meer oder Schiffe.', '⛵'],
+  ['s', 'Porträt oder Landschaft?', ['Porträt', 'Landschaft'], [['das Gesicht von Oma', 0], ['meine Freundin lacht', 0], ['ein Junge mit Mütze', 0], ['Berge im Schnee', 1], ['ein Feld mit Mohnblumen', 1], ['ein Wald am See', 1]], 'Ein Porträt zeigt Menschen, eine Landschaft die Natur.'],
+  ['z', 'Welche Bildart ist das?', [['Obstschale auf dem Tisch', 'Stillleben'], ['Segelboote auf dem Meer', 'Seestück'], ['Gesicht eines Mannes', 'Porträt'], ['Wiesen und Hügel', 'Landschaft'], ['Pferd auf der Weide', 'Tierbild']], 'Jede Bildart hat ihr Thema.']
+]);
+
+
+kgExtra('kmuseum', 0, [
+  ['w', 'Was ist ein Kindermuseum?', '🧒', 'ein Museum, in dem Kinder viel ausprobieren dürfen', ['ein Museum, in dem nur Bilder von Kindern hängen', 'ein Museum, in das nur Kinder und keine Erwachsenen dürfen', 'ein Museum ganz ohne Kunstwerke und Bilder'], 'Dort darf man oft anfassen und mitmachen.'],
+  ['w', 'Was ist ein Technikmuseum?', '🚂', 'ein Museum über Maschinen, Züge und Erfindungen', ['ein Museum über Blumen und Pflanzen', 'ein Museum über Tänze aus aller Welt', 'ein Museum über alte Kleider, Hüte und Schuhe von früher'], 'Dort sieht man, wie Dinge funktionieren.'],
+  ['w', 'Was ist ein Schifffahrtsmuseum?', '⚓', 'ein Museum über Schiffe und das Leben auf See', ['ein Museum, das auf einem Fluss schwimmt', 'ein Museum über Fische im Aquarium', 'ein Museum über Flugzeuge, Raketen und den Weltraum'], 'Ein großes gibt es zum Beispiel in Bremerhaven.'],
+  ['w', 'Was bekommst du an der Kasse im Museum?', '🎟️', 'eine Eintrittskarte', ['ein Gemälde', 'ein Mittagessen', 'einen Audioguide aus Holz'], 'Für Kinder ist der Eintritt oft billiger oder frei.'],
+  ['w', 'Wo kannst du im Museum deine Jacke lassen?', '🧥', 'an der Garderobe', ['im Depot', 'auf dem Sockel', 'hinter einem Bild'], 'Große Taschen gibt man oft auch ab.'],
+  ['w', 'Was ist ein Museumsshop?', '🛍️', 'ein Laden mit Büchern, Postkarten und Andenken', ['ein Raum, in dem alte Bilder repariert werden', 'ein großes Lager für Kunstwerke im Keller', 'ein Café mit Kuchen, Saft und Kakao'], 'Dort gibt es Postkarten von berühmten Bildern.'],
+  ['w', 'Warum ist es in manchen Museen kühl und trocken?', '🌡️', 'Alte Kunstwerke bleiben so besser erhalten.', ['Damit die Besucher schneller wieder gehen.', 'Damit die Bilder schöner glänzen.', 'Damit es im Sommer nicht zu voll mit Besuchern wird.'], 'Wärme und Feuchtigkeit schaden alten Bildern.'],
+  ['w', 'Was ist der Rahmen bei einem Gemälde?', '🖼️', 'die Leiste rund um das Bild', ['die Farbe in der Mitte', 'das Schild mit dem Namen', 'der Haken an der Wand'], 'Manche Rahmen sind sogar vergoldet.'],
+  ['rf', 'In einem Museum darf man laut rennen und toben.', false, 'Im Museum geht man langsam und spricht leise.', '🏃'],
+  ['rf', 'In vielen Museen gibt es Führungen extra für Kinder.', true, 'Dort wird alles spannend erklärt.', '🧑‍🏫'],
+  ['s', 'Was gibt es in welchem Museum?', ['Kunstmuseum', 'Naturkundemuseum'], [['Gemälde', 0], ['Skulpturen', 0], ['Zeichnungen', 0], ['Dinosaurierskelett', 1], ['Mineralien', 1], ['Muscheln und Fossilien', 1]], 'Im Naturkundemuseum geht es um die Natur.'],
+  ['o', 'Ein Museumsbesuch: Bring in die richtige Reihenfolge.', ['Eintrittskarte an der Kasse kaufen', 'Jacke an der Garderobe abgeben', 'Ausstellung ansehen', 'im Museumsshop eine Postkarte kaufen'], 'So läuft ein Besuch oft ab.']
+]);
+
+
+kgExtra('kfilm', 0, [
+  ['w', 'Was ist ein Storyboard?', '🗒️', 'eine Bildergeschichte, die zeigt, wie der Film werden soll', ['eine lange Liste mit allen Schauspielern und ihren Namen', 'ein großes Brett, auf dem die Kamera beim Filmen steht', 'ein buntes Plakat, das draußen am Kino für den Film wirbt'], 'So plant man jede Szene vor dem Drehen.'],
+  ['w', 'Was ist ein Porträtfoto?', '📸', 'ein Foto, das vor allem das Gesicht eines Menschen zeigt', ['ein Foto, das vor allem Berge und Täler zeigt', 'ein Foto, das ganz verschwommen und unscharf ist', 'ein Foto, das man ganz im Dunkeln ohne Licht macht'], 'Wie ein gemaltes Porträt, nur mit der Kamera.'],
+  ['w', 'Was passiert, wenn du beim Fotografieren wackelst?', '🫨', 'Das Foto wird unscharf.', ['Das Foto wird bunter.', 'Das Foto wird größer.', 'Das Foto wird ganz schwarz.'], 'Ein Stativ oder eine ruhige Hand hilft.'],
+  ['w', 'Warum fotografiert man nicht direkt gegen die Sonne?', '🌞', 'Das Motiv wird dann zu dunkel.', ['Die Kamera wird dann zu nass.', 'Das Foto wird dann zu laut.', 'Die Farben werden dann zu bunt.'], 'Die Sonne sollte eher hinter dir oder seitlich sein.'],
+  ['w', 'Was ist ein Zeichentrickfilm?', '✏️', 'ein Film aus vielen gezeichneten Bildern', ['ein Film nur mit echten Schauspielern', 'ein Film ganz ohne jeden Ton und ohne Bild', 'ein Film, in dem man nur Musik hört'], 'Früher wurde jedes Bild von Hand gezeichnet.'],
+  ['w', 'Was ist eine Szene im Film?', '🎬', 'ein kurzer Teil des Films an einem Ort', ['der Name, der vorne auf dem Filmplakat steht', 'das letzte Bild ganz am Ende des Films', 'die Musik, die ganz am Anfang läuft'], 'Ein Film besteht aus vielen Szenen.'],
+  ['w', 'Was ist der Abspann?', '📜', 'die Namen aller Mitwirkenden am Ende des Films', ['die Werbung, die im Kino vor dem eigentlichen Film läuft', 'die allererste Szene ganz am Anfang des Films', 'die Pause, die es manchmal mitten im Film gibt'], 'Dort stehen alle, die mitgeholfen haben.'],
+  ['rf', 'Für einen Stop-Motion-Film braucht man viele Fotos.', true, 'Jede kleine Bewegung bekommt ein eigenes Foto.', '🧸'],
+  ['rf', 'Ein Foto zeigt immer genau die Wirklichkeit.', false, 'Fotos kann man ausschneiden, bearbeiten oder verändern.', '🖼️'],
+  ['s', 'Foto oder Film?', ['Foto', 'Film'], [['ein Bild steht still', 0], ['ein Selfie', 0], ['ein Passbild', 0], ['Bilder bewegen sich', 1], ['eine Szene mit Ton', 1], ['ein Trickfilm', 1]], 'Ein Film besteht aus vielen Bildern hintereinander.'],
+  ['z', 'Was gehört zusammen?', [['Kamera', 'nimmt Bilder auf'], ['Stativ', 'hält die Kamera ruhig'], ['Mikrofon', 'nimmt den Ton auf'], ['Scheinwerfer', 'macht helles Licht']], 'Das braucht man beim Filmen.'],
+  ['o', 'So machst du ein gutes Foto.', ['Motiv aussuchen', 'Kamera ruhig halten', 'auf das Licht achten', 'auf den Auslöser drücken'], 'Erst schauen, dann knipsen.']
+]);
+
+
+kgExtra('mlesen', 0, [
+  ['w', 'Welcher Ton kommt nach c?', '🎵', 'd', ['e', 'h', 'f'], 'c, d, e, f, g, a, h'],
+  ['w', 'Welcher Ton kommt nach e?', '🎵', 'f', ['g', 'd', 'a'], 'c, d, e, f, g, a, h'],
+  ['w', 'Welcher Ton kommt vor g?', '🎵', 'f', ['a', 'e', 'h'], 'c, d, e, f, g, a, h'],
+  ['w', 'Welcher Ton liegt zwischen f und a?', '🎹', 'g', ['e', 'h', 'c'], 'f, g, a'],
+  ['w', 'Welche Töne stehen im Violinschlüssel auf den fünf Linien, von unten nach oben?', '🎼', 'e, g, h, d, f', ['f, a, c, e, g', 'c, d, e, f, g', 'a, h, c, d, e'], 'Ein Merksatz: Es geht hurtig durch Fleiß.'],
+  ['w', 'Was ist eine Hilfslinie?', '➖', 'eine kurze Linie für Töne über oder unter dem Notensystem', ['eine Linie, die zeigt, wie laut man spielt', 'eine dicke Linie ganz am Ende eines langen Liedes', 'eine Linie, auf der oben der Name des Liedes steht'], 'Das tiefe c steht auf einer Hilfslinie.'],
+  ['w', 'Wie viele Töne hat die Tonleiter von c bis zum nächsten c?', '🎹', 'acht', ['sieben', 'zehn', 'fünf'], 'c, d, e, f, g, a, h, c'],
+  ['w', 'Welcher Ton steht im Violinschlüssel im obersten Zwischenraum?', '🎵', 'e', ['c', 'g', 'h'], 'In den Zwischenräumen stehen f, a, c, e.'],
+  ['rf', 'Das tiefe c steht im Violinschlüssel auf einer Hilfslinie unter dem Notensystem.', true, 'Es ist der erste Ton der Tonleiter.', '🎼'],
+  ['rf', 'Eine Note, die hoch im Notensystem steht, klingt tief.', false, 'Je höher die Note steht, desto höher klingt sie.', '⬆️'],
+  ['o', 'Ordne die Töne von tief nach hoch.', ['c', 'e', 'g', 'c (hoch)'], 'Die Töne gehen die Tonleiter hinauf.'],
+  ['s', 'Auf einer Linie oder im Zwischenraum? (Violinschlüssel)', ['auf einer Linie', 'im Zwischenraum'], [['g', 0], ['h', 0], ['d (hoch)', 0], ['a', 1], ['c (hoch)', 1], ['e (hoch)', 1]], 'Linien: e, g, h, d, f. Zwischenräume: f, a, c, e.']
+]);
+
+
+kgExtra('kpapier', 0, [
+  ['w', 'Was ist Origami?', '🦢', 'die japanische Kunst, Papier zu falten', ['die chinesische Kunst, Papier zu schöpfen', 'ein Spiel mit Karten aus Papier', 'ein Kleber für Papier und Pappe'], 'Beim Origami braucht man nur ein Blatt Papier.'],
+  ['w', 'Wie faltest du Papier ganz genau?', '📐', 'Kanten genau aufeinanderlegen und fest streichen', ['das Papier zerknüllen und wieder glätten', 'das Papier nass machen und trocknen', 'das Papier mit der Schere an allen Kanten einschneiden'], 'Mit dem Fingernagel wird der Knick schön scharf.'],
+  ['w', 'Was ist Seidenpapier?', '🌸', 'sehr dünnes, weiches Papier', ['sehr dickes, hartes Papier', 'Papier aus Metall', 'Papier zum Schreiben mit Linien'], 'Man nimmt es für Blumen oder Fensterbilder.'],
+  ['w', 'Was ist eine Girlande?', '🎉', 'eine lange Kette zum Aufhängen und Schmücken', ['ein kleines Buch mit leeren Seiten', 'ein Papierflieger mit zwei Flügeln', 'ein Bild aus vielen bunten Punkten und Strichen'], 'Girlanden hängen oft bei Festen im Raum.'],
+  ['w', 'Was ist Faltpapier?', '🟦', 'quadratisches, buntes Papier zum Falten', ['langes Papier zum Einwickeln von Brot', 'dickes Papier für Kisten und Pakete', 'durchsichtiges Papier zum Abpausen'], 'Für Origami nimmt man meist quadratisches Papier.'],
+  ['w', 'Wie nennt man Papier, das aus Altpapier gemacht ist?', '♻️', 'Recyclingpapier', ['Seidenpapier', 'Fotopapier', 'Goldpapier'], 'Altpapier wird eingeweicht und neu gepresst.'],
+  ['w', 'Warum ist Recyclingpapier gut für die Umwelt?', '🌳', 'Es werden weniger Bäume gefällt.', ['Es ist immer schöner als neues Papier.', 'Es riecht wie ein Wald.', 'Es kann nicht nass werden.'], 'Außerdem braucht man weniger Wasser und Energie.'],
+  ['rf', 'Beim Origami schneidet man das Papier immer mit der Schere.', false, 'Beim Origami wird nur gefaltet.', '✂️'],
+  ['rf', 'Pappmaschee wird nach dem Trocknen hart.', true, 'Dann kann man es bemalen.', '🎭'],
+  ['s', 'Aus Papier oder Pappe?', ['aus Papier oder Pappe', 'nicht aus Papier'], [['Eierkarton', 0], ['Zeitung', 0], ['Tapete', 0], ['Glasflasche', 1], ['Plastikbecher', 1], ['Kuscheltier', 1]], 'Papier und Pappe kommen in die Papiertonne.'],
+  ['o', 'So faltest du einen einfachen Papierflieger.', ['Blatt in der Mitte falten und wieder öffnen', 'zwei Ecken zur Mitte falten', 'die Seiten noch einmal zur Mitte falten', 'Flügel nach unten klappen'], 'Beide Flügel müssen gleich groß sein.'],
+  ['z', 'Was macht man damit?', [['Schere', 'schneiden'], ['Klebestift', 'kleben'], ['Lineal', 'gerade Linien ziehen'], ['Locher', 'Löcher stanzen']], 'Das Werkzeug fürs Basteln.']
+]);
+
+
+kgExtra('verkehrszeichen', 0, [
+  ['w', 'Wie sehen Gebotsschilder wie „Radweg“ aus?', '🔵', 'blau mit weißem Bild', ['rot mit gelbem Bild', 'grün mit schwarzem Bild', 'lila mit weißem Bild'], 'Gebote sind runde, blaue Schilder.'],
+  ['w', 'Welche Form haben Warnschilder wie „Achtung, Kinder!“?', '⚠️', 'ein Dreieck mit rotem Rand', ['ein blauer Kreis ohne Rand', 'ein gelbes Viereck mit Pfeil', 'ein grüner Stern mit Punkten'], 'Warnschilder sind dreieckig.'],
+  ['w', 'Welche Form hat das Stoppschild?', '🛑', 'ein Achteck', ['ein Dreieck', 'ein Kreis', 'ein Quadrat'], 'Das Stoppschild hat acht Ecken.'],
+  ['w', 'Was bedeutet ein rundes Schild mit rotem Rand meistens?', '⭕', 'ein Verbot', ['ein Gebot', 'eine Warnung', 'ein Hinweis auf Essen'], 'Zum Beispiel: Einfahrt verboten.'],
+  ['w', 'Wo fährst du als Kind bis 8 Jahre mit dem Fahrrad?', '🚲', 'auf dem Gehweg', ['auf der Autobahn', 'auf der Straßenmitte', 'auf den Gleisen'], 'Kinder bis 8 Jahre müssen auf dem Gehweg fahren und an Fußgänger denken.'],
+  ['w', 'Was machst du, wenn die Fußgängerampel rot zeigt?', '🚦', 'stehen bleiben und warten', ['schnell rüberlaufen', 'langsam weitergehen', 'nur nach links schauen'], 'Bei Rot bleibt man stehen, auch wenn kein Auto kommt.'],
+  ['w', 'Was bedeutet das grüne Männchen an der Fußgängerampel?', '🟢', 'Du darfst gehen, aber schau trotzdem nach Autos.', ['Du musst sofort stehen bleiben und warten.', 'Du darfst jetzt nur ganz schnell rennen.', 'Die Ampel ist kaputt und zeigt nichts an.'], 'Abbiegende Autos könnten trotzdem kommen.'],
+  ['w', 'Wie überquerst du ohne Ampel am sichersten die Straße?', '👀', 'links, rechts, links schauen und dann gehen', ['einfach ganz schnell loslaufen, ohne zu schauen', 'nur einmal kurz nach rechts schauen und gehen', 'mit geschlossenen Augen über die Straße gehen'], 'Am besten an einer Stelle, an der man weit sehen kann.'],
+  ['w', 'Warum trägt man im Dunkeln helle Kleidung oder Reflektoren?', '🦺', 'Damit Autofahrer dich früher sehen.', ['Damit es dir wärmer ist.', 'Damit du schneller laufen kannst.', 'Damit die Kleidung sauber bleibt.'], 'Dunkle Kleidung sieht man nachts kaum.'],
+  ['rf', 'Am Zebrastreifen müssen Autos Fußgänger über die Straße lassen.', true, 'Trotzdem: Erst losgehen, wenn das Auto steht.', '🦓'],
+  ['rf', 'Mit dem Fahrrad darf man im Dunkeln ohne Licht fahren.', false, 'Im Dunkeln braucht das Fahrrad vorne und hinten Licht.', '🔦'],
+  ['s', 'Gebot, Verbot oder Warnung?', ['Gebot (blau, rund)', 'Verbot (rund, roter Rand)', 'Warnung (Dreieck)'], [['Radweg', 0], ['Gehweg', 0], ['Einfahrt verboten', 1], ['Verbot für Fahrzeuge aller Art', 1], ['Achtung, Kinder!', 2], ['Achtung, Gefahrstelle!', 2]], 'Form und Farbe verraten, was ein Schild will.'],
+  ['z', 'Was hilft beim sicheren Radfahren?', [['Klingel', 'warnt andere'], ['Licht', 'damit man dich sieht'], ['Bremsen', 'zum Anhalten'], ['Helm', 'schützt den Kopf'], ['Reflektoren', 'leuchten im Scheinwerferlicht']], 'Ein sicheres Fahrrad schützt dich.']
+]);
+
+
+kgExtra('wnzeichen', 2, [
+  ['w', 'Was ist eine Menora?', '🕎', 'ein Leuchter mit sieben Armen, ein Zeichen des Judentums', ['eine Lampe, die man im Garten an einen Baum hängt', 'ein Spiel mit sieben bunten Kugeln aus Holz', 'ein Schmuck, den man nur im Sommer trägt'], 'Die Menora ist eines der ältesten Zeichen des Judentums.'],
+  ['w', 'Welches Zeichen benutzten die ersten Christen oft als Geheimzeichen?', '🐟', 'einen Fisch', ['einen Löwen', 'eine Sonne', 'einen Baum'], 'Mit dem Fisch erkannten sich die ersten Christen.'],
+  ['w', 'Was ist der Adventskranz?', '🕯️', 'ein Kranz mit vier Kerzen in der Zeit vor Weihnachten', ['ein Kranz mit bunten Blumen für ein Sommerfest', 'ein Kranz aus Papier, den man im Karneval trägt', 'ein Kranz aus Blättern für den Sieger beim großen Sportfest'], 'Jeden Adventssonntag wird eine Kerze mehr angezündet.'],
+  ['w', 'Was feiern Christen an Weihnachten?', '🎄', 'die Geburt von Jesus', ['den Anfang des Sommers', 'das Ende der Schulzeit', 'die erste Ernte im Jahr'], 'Weihnachten ist am 24. und 25. Dezember.'],
+  ['w', 'Was ist das Zuckerfest?', '🍬', 'das Fest am Ende des Fastenmonats Ramadan', ['ein Fest, bei dem man nur Bonbons isst', 'ein Fest zum Schulanfang im Sommer', 'ein Fest der Bäcker im Herbst'], 'Muslime feiern es mit Familie, Freunden und Süßem.'],
+  ['w', 'Was ist Chanukka?', '🕎', 'ein jüdisches Lichterfest', ['ein Sommerfest am See', 'ein Fest der Bauern im Herbst', 'ein Sportfest in der Schule'], 'Acht Tage lang wird jeden Abend ein Licht mehr angezündet.'],
+  ['w', 'Was ist Diwali?', '🪔', 'das Lichterfest der Hindus', ['ein Fest nur für Kinder im Kindergarten', 'ein Sportfest in der Schule', 'ein Fest am Meer im Sommer'], 'Dann leuchten überall kleine Öllampen.'],
+  ['w', 'Was haben viele Religionen gemeinsam?', '🤝', 'Sie haben Feste, Gebete und heilige Orte.', ['Sie haben alle dieselben Feste.', 'Sie feiern alle am Montag.', 'Sie haben alle dasselbe Zeichen.'], 'Die Feste und Zeichen sind aber verschieden.'],
+  ['w', 'Wofür steht eine Kerze in vielen Religionen?', '🕯️', 'für Licht und Hoffnung', ['für Kälte und Dunkelheit', 'für Streit und Ärger', 'für Hunger und Durst'], 'Darum gibt es in vielen Gotteshäusern Kerzen.'],
+  ['rf', 'Das Kreuz ist das Zeichen des Christentums.', true, 'Man sieht es auf Kirchen und an Ketten.', '✝️'],
+  ['rf', 'In Moscheen hängen viele Bilder von Menschen.', false, 'In Moscheen gibt es meist keine Bilder von Menschen, sondern schöne Muster und Schrift.', '🕌'],
+  ['s', 'Zu welcher Religion gehört das?', ['Christentum', 'Islam', 'Judentum'], [['Kirche', 0], ['Bibel', 0], ['Moschee', 1], ['Koran', 1], ['Synagoge', 2], ['Tora', 2]], 'Jede Religion hat ihr Gotteshaus und ihr heiliges Buch.']
+]);
+
+
+
+
+kgExtra('mhdur', 0, [
+  ['w', 'Welche Musik passt zu einer Hochzeit?', '💐', 'fröhlich, festlich und in Dur', ['traurig, leise und in Moll', 'gruselig, tief und langsam', 'wild, laut und durcheinander'], 'Festliche Musik klingt hell und feierlich.'],
+  ['w', 'Was bedeutet „ritardando“?', '🐌', 'langsamer werden', ['schneller werden', 'lauter werden', 'ganz aufhören'], 'ritardando kommt aus dem Italienischen.'],
+  ['w', 'Was bedeutet „accelerando“?', '🏎️', 'schneller werden', ['langsamer werden', 'leiser werden', 'höher werden'], 'accelerare heißt beschleunigen.'],
+  ['w', 'Was bedeutet „fortissimo“?', '📢', 'sehr laut', ['sehr leise', 'sehr schnell', 'sehr langsam'], 'In Noten steht dafür ff.'],
+  ['w', 'Was bedeutet „pianissimo“?', '🤫', 'sehr leise', ['sehr laut', 'sehr hoch', 'sehr kurz'], 'In Noten steht dafür pp.'],
+  ['w', 'Was bedeutet „moderato“?', '🚶', 'in mittlerem Tempo', ['sehr schnell und wild', 'ganz langsam und leise', 'sehr laut und kräftig'], 'Nicht zu schnell und nicht zu langsam.'],
+  ['w', 'Welche Musik passt zu einer ruhigen Abendstimmung?', '🌅', 'langsam und leise', ['schnell und laut', 'wild und schrill', 'hektisch und hoch'], 'Ruhige Musik hilft beim Entspannen.'],
+  ['w', 'Aus welcher Sprache kommen piano und forte?', '🇮🇹', 'aus dem Italienischen', ['aus dem Englischen', 'aus dem Französischen', 'aus dem Spanischen'], 'Viele Wörter in der Musik sind italienisch.'],
+  ['rf', 'Ein Lied in Moll klingt immer traurig.', false, 'Moll klingt oft traurig oder geheimnisvoll, aber nicht immer.', '🎹'],
+  ['rf', 'Mit Tempo, Lautstärke und Tonart kann Musik Stimmungen ausdrücken.', true, 'So weiß man im Film oft vorher, ob es spannend wird.', '🎬'],
+  ['s', 'Passt eher Dur oder eher Moll?', ['eher Dur', 'eher Moll'], [['Siegerehrung', 0], ['Tanz auf dem Sommerfest', 0], ['Zirkusparade', 0], ['Abschied am Bahnhof', 1], ['dunkler Wald bei Nacht', 1], ['ein verlorenes Kuscheltier', 1]], 'Dur klingt meist hell, Moll eher ernst.'],
+  ['o', 'Ordne von ganz leise bis ganz laut.', ['pianissimo', 'piano', 'forte', 'fortissimo'], 'pp, p, f, ff']
+]);
+
+
+kgExtra('kdruck', 0, [
+  ['w', 'Was ist Tiefdruck?', '⬇️', 'Die Farbe sitzt in eingeritzten Rillen und wird herausgedrückt.', ['Nur die erhöhten Stellen bekommen Farbe und drucken.', 'Die Farbe wird durch ein feines Sieb gestrichen.', 'Man druckt mit eingefärbten Blättern und Gräsern aus dem Garten.'], 'Beim Hochdruck ist es genau umgekehrt.'],
+  ['w', 'Was ist eine Radierung?', '🖋️', 'ein Tiefdruck von einer Metallplatte mit eingeritzten Linien', ['ein Stempel aus einer halbierten, geschnitzten Kartoffel', 'ein Bild, das man nur mit dem Radiergummi auf weißes Papier macht', 'ein Druck mit Blättern aus dem Garten'], 'Rembrandt machte viele berühmte Radierungen.'],
+  ['w', 'Warum rollt man die Farbwalze ganz gleichmäßig?', '🧻', 'Damit die Farbe überall gleich dick ist.', ['Damit die Walze schneller trocknet.', 'Damit das Papier dabei nicht nass und wellig wird.', 'Damit die Farbe heller wird.'], 'Sonst wird der Druck fleckig.'],
+  ['w', 'Womit kannst du einen Druck ohne Presse fest andrücken?', '🥄', 'mit dem Rücken eines Löffels', ['mit einem nassen Pinsel', 'mit einem Radiergummi', 'mit den Zehenspitzen beider Füße'], 'Man reibt in kleinen Kreisen über das Papier.'],
+  ['w', 'Was ist eine Frottage?', '🍃', 'Man reibt mit dem Stift über Papier auf einer rauen Fläche.', ['Man drückt einen nassen Schwamm auf ein Blatt.', 'Man schneidet ein Muster in eine Linolplatte.', 'Man malt mit den Fingern direkt auf Glas.'], 'So wird die Struktur von Rinde oder Münzen sichtbar.'],
+  ['w', 'Was kann man als Stempel benutzen?', '🥔', 'Kartoffeln, Korken und Moosgummi', ['Wasser, Luft und ganz feinen Sand', 'Seife, weiche Watte und Schlagsahne', 'Eiswürfel, Schnee und dichten Nebel'], 'Ein Stempel braucht eine feste Fläche.'],
+  ['w', 'Warum signiert eine Künstlerin ihren Druck?', '✍️', 'Damit man sieht, dass er von ihr ist.', ['Damit die Farbe schneller trocknet.', 'Damit das Papier stabiler wird.', 'Damit niemand ihn ansieht.'], 'Unter dem Druck steht der Name mit Bleistift.'],
+  ['rf', 'Von einer Monotypie kann man viele gleiche Drucke machen.', false, 'Eine Monotypie gibt es nur ein einziges Mal.', '1️⃣'],
+  ['rf', 'Ein Kartoffeldruck ist ein Hochdruck.', true, 'Die stehen gebliebenen Flächen drucken.', '🥔'],
+  ['s', 'Hochdruck oder Tiefdruck?', ['Hochdruck', 'Tiefdruck'], [['Kartoffeldruck', 0], ['Linoldruck', 0], ['Holzschnitt', 0], ['Radierung', 1], ['Kupferstich', 1], ['Kaltnadelradierung', 1]], 'Beim Hochdruck drucken die erhöhten Stellen, beim Tiefdruck die Rillen.'],
+  ['o', 'So machst du einen Kartoffeldruck.', ['Kartoffel halbieren', 'Muster einritzen und Rand wegschneiden', 'Farbe auftragen', 'fest auf das Papier drücken'], 'Mit einem Erwachsenen schneiden.'],
+  ['z', 'Was gehört zusammen?', [['Walze', 'Farbe verteilen'], ['Linolmesser', 'Platte schneiden'], ['Schablone', 'Form mit Loch zum Tupfen'], ['Druckpresse', 'Papier fest andrücken']], 'Werkzeuge der Druckwerkstatt.']
+]);
+
+
+kgExtra('kmensch', 0, [
+  ['w', 'Wie zeichnet man eine sitzende Figur?', '🪑', 'Oberschenkel waagerecht, Unterschenkel senkrecht nach unten', ['Arme und Beine ganz gerade und steif nach oben in die Luft gestreckt', 'den ganzen Körper nur als einen einzigen großen Kreis', 'die Beine waagerecht vor sich in die Luft gestreckt'], 'So sitzt man auf einem Stuhl.'],
+  ['w', 'Wo sind die Ellenbogen ungefähr, wenn die Arme herunterhängen?', '💪', 'etwa auf Höhe der Taille', ['etwa auf Höhe der Knie', 'etwa auf Höhe der Schultern', 'etwa auf Höhe der Füße'], 'Probiere es vor dem Spiegel aus.'],
+  ['w', 'Wie breit ist ein Auge ungefähr?', '👁️', 'so breit wie der Abstand zwischen den Augen', ['so breit wie der ganze Mund von Ecke zu Ecke', 'so breit wie das ganze Gesicht von Ohr zu Ohr', 'so breit, wie ein Ohr von oben bis unten lang ist'], 'Zwischen die Augen passt noch ein Auge.'],
+  ['w', 'Was hilft dir, ein Gesicht gleichmäßig zu zeichnen?', '✏️', 'eine senkrechte Mittellinie und Hilfslinien für Augen und Mund', ['viele dicke Farbkleckse in der Mitte des Blattes', 'ein Lineal, mit dem man alles ganz eckig zeichnet', 'ein Radiergummi, mit dem man am Ende einfach alles wieder wegmacht'], 'Die Hilfslinien radiert man am Ende weg.'],
+  ['w', 'Wie zeigt man, dass jemand traurig ist?', '😢', 'hängende Mundwinkel und ein gesenkter Kopf', ['hochgezogene Mundwinkel und große Augen', 'weit offener Mund und Arme hoch', 'eine gerade Haltung und ein breites, fröhliches Lachen'], 'Auch die Haltung des Körpers zeigt Gefühle.'],
+  ['w', 'Was ist ein Schattenriss?', '👤', 'der Umriss eines Menschen, ganz dunkel ausgemalt', ['ein buntes Bild mit vielen kleinen Einzelheiten', 'ein Foto in Farbe von einem Gesicht', 'eine Zeichnung nur mit hellen Farben'], 'Man nennt ihn auch Silhouette.'],
+  ['w', 'Wie zeichnet man Hände am einfachsten an?', '✋', 'erst eine Grundform wie ein Fäustling, dann die Finger', ['sofort alle Fingernägel ganz genau mit Farbe', 'nur fünf gerade Striche ohne jede Handfläche', 'als großen Kreis ohne Finger und Daumen'], 'Von groben Formen zu feinen Einzelheiten.'],
+  ['rf', 'Beim Skizzieren darf man locker und schnell zeichnen.', true, 'Eine Skizze muss noch nicht perfekt sein.', '✏️'],
+  ['rf', 'Alle Menschen haben genau dieselben Proportionen.', false, 'Jeder Mensch ist etwas anders gebaut. Die Regeln helfen nur ungefähr.', '📏'],
+  ['s', 'Bewegung oder Ruhe?', ['Bewegung', 'Ruhe'], [['Arme schwingen', 0], ['Beine angewinkelt im Sprung', 0], ['Körper nach vorn gebeugt', 0], ['gerade stehen', 1], ['auf einem Stuhl sitzen', 1], ['auf der Wiese liegen', 1]], 'Schräge Linien wirken bewegt, gerade ruhig.'],
+  ['z', 'Von wo siehst du die Figur?', [['von vorne', 'Vorderansicht'], ['von der Seite', 'Profil'], ['von unten', 'Froschperspektive'], ['von oben', 'Vogelperspektive']], 'Jede Ansicht zeigt den Menschen anders.'],
+  ['o', 'So zeichnest du eine Figur.', ['Strichfigur für die Haltung', 'Formen für Körper und Glieder', 'Umriss zeichnen', 'Einzelheiten und Kleidung', 'Hilfslinien wegradieren'], 'Erst die Haltung, dann die Einzelheiten.']
+]);
+
+
+kgExtra('wngerecht', 0, [
+  ['w', 'Vier Kinder teilen zwölf Gummibärchen gleich auf. Wie viele bekommt jedes?', '🍬', 'drei', ['vier', 'zwei', 'sechs'], '12 geteilt durch 4 ist 3.'],
+  ['w', 'Ein Kind bekommt mehr Hilfe bei den Hausaufgaben, weil es erst seit Kurzem Deutsch lernt. Welche Gerechtigkeit ist das?', '📚', 'Gerechtigkeit nach Bedarf', ['Gerechtigkeit nach Leistung', 'Gleichheit für alle', 'gar keine Gerechtigkeit'], 'Wer etwas braucht, bekommt mehr.'],
+  ['w', 'Wer beim Sportfest am weitesten springt, bekommt eine Urkunde. Welche Gerechtigkeit ist das?', '🏅', 'Gerechtigkeit nach Leistung', ['Gerechtigkeit nach Bedarf', 'Gleichheit für alle Kinder der Klasse', 'Zufall wie beim Würfeln'], 'Wer mehr leistet, bekommt mehr.'],
+  ['w', 'Was ist ein Klassenrat?', '🪑', 'eine Runde, in der die Klasse Probleme gemeinsam löst', ['eine Liste, auf der steht, wer die Tafel wischt', 'ein Spiel, bei dem man um Punkte würfelt', 'eine Pause, in der alle im Hof spielen dürfen'], 'Dort reden alle mit und stimmen ab.'],
+  ['w', 'Was ist Mobbing?', '😞', 'wenn jemand immer wieder absichtlich gequält oder ausgeschlossen wird', ['wenn sich zwei Freunde einmal kurz streiten und vertragen', 'wenn ein Kind beim Spielen einmal knapp gegen andere verliert', 'wenn die Lehrerin im Unterricht eine schwierige Frage stellt'], 'Mobbing ist nie in Ordnung. Hol dir Hilfe bei Erwachsenen.'],
+  ['w', 'Was kannst du tun, wenn ein anderes Kind ungerecht behandelt wird?', '🤝', 'zu ihm halten und einen Erwachsenen holen', ['einfach wegschauen und gar nichts dazu sagen', 'mitlachen, damit man dazugehört', 'schnell weggehen und so tun, als wäre nichts'], 'Hilfe holen ist mutig und richtig.'],
+  ['w', 'Was bedeutet „fair“?', '⚖️', 'gerecht und ehrlich nach den Regeln', ['schnell, laut und immer als Erster', 'reich, berühmt und bei allen sehr beliebt', 'stark, groß und gut im Sport'], 'Fair Play heißt: ehrlich spielen.'],
+  ['w', 'Was ist ein Kompromiss?', '🤝', 'Beide geben etwas nach und finden eine gemeinsame Lösung.', ['Einer bekommt alles und der andere bekommt gar nichts.', 'Beide streiten weiter, bis einer müde ist und aufgibt.', 'Ein Erwachsener entscheidet allein, ohne die Kinder zu fragen.'], 'So können alle mit der Lösung leben.'],
+  ['rf', 'Gerecht kann auch heißen, dass jemand mehr bekommt, weil er mehr braucht.', true, 'Das ist Gerechtigkeit nach Bedarf.', '🩹'],
+  ['rf', 'Wer zuerst kommt, darf immer alles für sich behalten.', false, 'Teilen und Regeln helfen, dass es fair zugeht.', '🙅'],
+  ['s', 'Gleichheit, Bedarf oder Leistung?', ['Gleichheit', 'Bedarf', 'Leistung'], [['Jedes Kind bekommt einen Apfel.', 0], ['Alle dürfen gleich lange schaukeln.', 0], ['Das Kind mit Brille sitzt vorne.', 1], ['Wer friert, bekommt eine Decke.', 1], ['Wer mehr gearbeitet hat, bekommt mehr Lohn.', 2], ['Die schnellste Läuferin bekommt den Pokal.', 2]], 'Es gibt verschiedene Arten, gerecht zu sein.'],
+  ['o', 'So löst ihr einen Streit fair. Ordne.', ['beide beruhigen sich', 'jeder erzählt, was passiert ist', 'alle hören zu', 'gemeinsam eine Lösung suchen'], 'Zuhören ist der wichtigste Schritt.']
+]);
+
+
+kgExtra('wnheilig', 0, [
+  ['w', 'Wie heißt der Monat, in dem viele Muslime tagsüber fasten?', '🌙', 'Ramadan', ['Advent', 'Chanukka', 'Diwali'], 'Nach Sonnenuntergang wird gemeinsam gegessen.'],
+  ['w', 'Was ist das Neue Testament?', '📖', 'der zweite Teil der Bibel, der von Jesus erzählt', ['das heilige Buch, das Muslime im Islam lesen', 'ein langes Gebet, das Hindus am Morgen sprechen', 'eine Liste mit allen Festen im Judentum'], 'Der erste Teil heißt Altes Testament.'],
+  ['w', 'Was ist ein Psalm?', '🎶', 'ein Lied oder Gebet aus der Bibel', ['ein kurzes Kapitel aus dem Koran', 'ein großes Fest im Frühling', 'der hohe Turm einer Kirche'], 'Viele Psalmen loben Gott oder bitten um Hilfe.'],
+  ['w', 'Was sprechen viele christliche Familien vor dem Essen?', '🍞', 'ein Tischgebet', ['ein Gedicht', 'einen Zauberspruch', 'eine Rechenaufgabe'], 'Damit bedanken sie sich für das Essen.'],
+  ['w', 'Was passiert beim Freitagsgebet in der Moschee?', '🕌', 'Muslime beten gemeinsam und hören eine Predigt.', ['Muslime feiern ein lautes Fest mit Musik und Tanz.', 'Muslime lesen nur still für sich ein Buch.', 'Muslime singen Weihnachtslieder am Altar.'], 'Der Freitag ist im Islam ein besonderer Tag.'],
+  ['w', 'Was ist eine Predigt?', '🗣️', 'eine Rede im Gottesdienst, die etwas erklärt', ['ein Lied, das alle zusammen singen', 'ein großes Bild an der Wand der Kirche', 'ein besonderer Kuchen zu einem großen Fest'], 'Pfarrerinnen, Imame und Rabbiner halten Predigten.'],
+  ['w', 'Womit liest man in der Synagoge die Torarolle, ohne sie zu berühren?', '👆', 'mit einem Zeigestab (Jad)', ['mit einem Handschuh aus Gold', 'mit einer großen Lupe', 'mit einem weichen Pinsel'], 'Die Tora ist so wertvoll, dass man sie nicht mit den Fingern berührt.'],
+  ['w', 'Welche Sprache lernen viele muslimische Kinder, um den Koran zu lesen?', '🔤', 'Arabisch', ['Latein', 'Hebräisch', 'Englisch'], 'Der Koran ist auf Arabisch geschrieben.'],
+  ['rf', 'Die Bibel besteht aus dem Alten und dem Neuen Testament.', true, 'Das Alte Testament ist auch für Juden wichtig.', '📖'],
+  ['rf', 'Der Koran ist das heilige Buch der Juden.', false, 'Das heilige Buch der Juden ist die Tora. Der Koran gehört zum Islam.', '📗'],
+  ['s', 'Christentum, Islam oder Judentum?', ['Christentum', 'Islam', 'Judentum'], [['Vaterunser', 0], ['Neues Testament', 0], ['Ramadan', 1], ['Freitagsgebet', 1], ['Sabbat', 2], ['Torarolle', 2]], 'Jede Religion hat ihre Gebete und Bräuche.'],
+  ['z', 'Was gehört zu welcher Religion?', [['Gebetsteppich', 'Islam'], ['Rosenkranz', 'Christentum'], ['Kippa', 'Judentum'], ['Hausaltar mit Räucherstäbchen', 'Hinduismus']], 'Gegenstände, die beim Beten helfen.']
+]);
+
+
+kgExtra('doesen', [3, 4], [
+  ['w', '___ they like ice cream?', '🍦', 'Do', ['Does', 'Is', 'Are'], 'they: do', KG_EN],
+  ['w', '___ your brother play football?', '⚽', 'Does', ['Do', 'Is', 'Doing'], 'he, she, it: does', KG_EN],
+  ['w', 'Does your mum work in a shop? No, she ___.', '🛒', 'doesn’t', ['don’t', 'isn’t', 'not'], 'Kurzantwort mit she: doesn’t', KG_EN],
+  ['w', 'Do you like spiders? Yes, I ___.', '🕷️', 'do', ['does', 'am', 'like'], 'Kurzantwort mit I: do', KG_EN],
+  ['w', 'Choose the right question.', '🍎', 'Do you eat apples?', ['Does you eat apples?', 'You do eat apples?', 'Do you eats apples?'], 'Do + you + Grundform', KG_EN],
+  ['w', 'Choose the right sentence.', '🐶', 'He doesn’t have a dog.', ['He don’t have a dog.', 'He doesn’t has a dog.', 'He not have a dog.'], 'Nach doesn’t steht die Grundform.', KG_EN],
+  ['w', 'What does “Does she speak Spanish?” mean?', '🇪🇸', 'Spricht sie Spanisch?', ['Sprichst du Spanisch?', 'Sie spricht Spanisch.', 'Sprechen sie Spanisch?'], 'Does she … ? fragt nach einem Mädchen oder einer Frau.', KG_EN],
+  ['w', 'What time ___ you get up?', '⏰', 'do', ['does', 'is', 'are'], 'you: do', KG_EN],
+  ['w', 'Where ___ your grandma live?', '👵', 'does', ['do', 'is', 'doing'], 'grandma = she: does', KG_EN],
+  ['z', 'Match the question and the answer.', [['Do you like cats?', 'Yes, I do.'], ['Does Ben play chess?', 'No, he doesn’t.'], ['Do they swim?', 'Yes, they do.'], ['Does the dog bark?', 'Yes, it does.']], '', KG_EN],
+  ['o', 'Make a question.', ['Does', 'your', 'sister', 'read', 'books?'], 'Does your sister read books?', KG_EN],
+  ['o', 'Make a question.', ['What', 'do', 'you', 'eat', 'for', 'breakfast?'], 'What do you eat for breakfast?', KG_EN],
+  ['rf', 'Nach „does“ hat das Verb kein -s: Does she play?', true, 'Das -s steckt schon in does.', '✏️'],
+  ['l', 'Fill in the gaps.', '⟪Does⟫ Tim like milk? No, he ⟪doesn’t⟫.', ['Do', 'don’t'], 'Tim = he: does, doesn’t', KG_EN]
+]);
+
+
+
+
+kgExtra('mepochen', 0, [
+  ['w', 'Wer komponierte die „Kleine Nachtmusik“?', '🎻', 'Wolfgang Amadeus Mozart', ['Johann Sebastian Bach', 'Ludwig van Beethoven', 'Antonio Vivaldi'], 'Mozart schrieb sie im Jahr 1787.'],
+  ['w', 'Wer komponierte „Die vier Jahreszeiten“?', '🍂', 'Antonio Vivaldi', ['Wolfgang Amadeus Mozart', 'Joseph Haydn', 'Frédéric Chopin'], 'Vivaldi lebte in Venedig zur Zeit des Barock.'],
+  ['w', 'Welcher Komponist wurde später taub und komponierte trotzdem weiter?', '👂', 'Ludwig van Beethoven', ['Antonio Vivaldi', 'Johann Sebastian Bach', 'Georg Friedrich Händel'], 'Er hörte die Musik in seinem Kopf.'],
+  ['w', 'In welcher Stadt wurde Beethoven geboren?', '🏙️', 'in Bonn', ['in Wien', 'in Salzburg', 'in Leipzig'], 'Später lebte er in Wien.'],
+  ['w', 'In welcher Stadt wurde Mozart geboren?', '🏰', 'in Salzburg', ['in Bonn', 'in Hamburg', 'in Paris'], 'Schon als Kind gab er Konzerte.'],
+  ['w', 'Was ist eine Oper?', '🎭', 'ein Theaterstück, in dem fast alles gesungen wird', ['ein kurzes Lied, das nur Kinder im Chor singen', 'ein langer Tanz ganz ohne jede Musik und Bühne', 'ein Konzert, bei dem nur Trommeln gespielt werden'], 'Eine bekannte Kinderoper ist „Hänsel und Gretel“.'],
+  ['w', 'Welches Instrument spielte Bach besonders oft in der Kirche?', '⛪', 'die Orgel', ['die E-Gitarre', 'das Schlagzeug', 'die Mundharmonika'], 'Bach war Organist in Leipzig.'],
+  ['w', 'Was ist ein Komponist?', '✍️', 'jemand, der Musik erfindet und aufschreibt', ['jemand, der Instrumente repariert', 'jemand, der Karten im Konzert verkauft', 'jemand, der nur laut klatscht'], 'Komponieren heißt Musik erfinden.'],
+  ['rf', 'Die Romantik kam vor dem Barock.', false, 'Erst Barock, dann Klassik, dann Romantik.', '📜'],
+  ['rf', 'Hip-Hop entstand in den 1970er Jahren in New York.', true, 'Dort trafen sich junge Leute zu Partys mit DJs und Rap.', '🎤'],
+  ['s', 'Barock oder Klassik?', ['Barock', 'Klassik'], [['Bach', 0], ['Vivaldi', 0], ['Händel', 0], ['Mozart', 1], ['Haydn', 1], ['Kleine Nachtmusik', 1]], 'Der Barock kam vor der Klassik.'],
+  ['o', 'Ordne die Erfindungen zum Musikhören, von alt nach neu.', ['Grammofon', 'Radio', 'Kassette', 'CD', 'Musik aus dem Internet'], 'Heute hören viele Musik über das Internet.']
+]);
+
+
+kgExtra('kraum', 0, [
+  ['w', 'Was ist eine Zentralperspektive?', '🛤️', 'Alle Linien in die Tiefe laufen auf einen einzigen Fluchtpunkt zu.', ['Alle Linien im Bild laufen ganz gerade nach oben zum Himmel.', 'Man malt alle Dinge im Bild genau gleich groß.', 'Man malt nur die Mitte des Bildes und lässt den ganzen Rand einfach leer.'], 'Sie wurde vor etwa 600 Jahren in Italien entwickelt.'],
+  ['w', 'Wo liegt der Fluchtpunkt meistens?', '👁️', 'auf der Horizontlinie', ['ganz unten am Bildrand', 'oben in der Ecke', 'außerhalb des Papiers'], 'Der Horizont liegt auf Augenhöhe.'],
+  ['w', 'Was ist die Augenhöhe in einem Bild?', '👀', 'die Höhe, auf der der Betrachter auf das Bild schaut', ['die Stelle, an der man die Augen der Figuren malt', 'der höchste Punkt eines großen Berges ganz hinten im Hintergrund', 'die Linie ganz unten am Rand des Bildes'], 'Sie entspricht dem Horizont.'],
+  ['w', 'Wie wirkt ein Bild mit kalten Farben wie Blau und Grün?', '🧊', 'ruhig und eher fern', ['laut und ganz nah', 'heiß, feurig und ganz nah', 'wild und aufregend'], 'Warme Farben wirken nah, kalte eher fern.'],
+  ['w', 'Warum wirken weit entfernte Berge blau und blass?', '🏔️', 'Zwischen uns und den Bergen liegt viel Luft und Dunst.', ['Auf den Bergen wächst nur blaues Gras und Moos.', 'Die Berge sind in Wirklichkeit aus blauem Stein.', 'Die Sonne scheint dort nie auf die Berge.'], 'Das nennt man Luftperspektive.'],
+  ['w', 'Wie zeichnet man einen Würfel räumlich?', '🧊', 'mit drei sichtbaren Flächen, die schräg nach hinten führen', ['nur als ein einziges flaches Quadrat auf dem Blatt', 'als großen Kreis mit einem Punkt in der Mitte', 'mit sechs Flächen, die alle nebeneinander liegen'], 'Die Kanten nach hinten zeichnet man schräg.'],
+  ['w', 'Was bedeutet „Raumtiefe“ in einem Bild?', '🕳️', 'Das Bild sieht aus, als ginge es weit nach hinten.', ['Das Bild ist auf ein besonders dickes Papier gemalt.', 'Das Bild hängt in einem sehr großen, hohen Raum.', 'Das Bild wurde in einem tiefen Keller gemalt.'], 'Mit Perspektive entsteht Raumtiefe.'],
+  ['rf', 'Gegenstände im Vordergrund malt man größer als im Hintergrund.', true, 'Was nah ist, wirkt größer.', '🌷'],
+  ['rf', 'In der Vogelperspektive schaut man von unten nach oben.', false, 'Das ist die Froschperspektive. Bei der Vogelperspektive schaut man von oben herab.', '🦅'],
+  ['s', 'Vordergrund oder Hintergrund?', ['Vordergrund', 'Hintergrund'], [['groß und deutlich', 0], ['unten im Bild', 0], ['warme, kräftige Farben', 0], ['klein und blass', 1], ['weiter oben im Bild', 1], ['bläuliche Farben', 1]], 'So entsteht Tiefe im Bild.'],
+  ['z', 'Welche Perspektive ist das?', [['von ganz unten', 'Froschperspektive'], ['von ganz oben', 'Vogelperspektive'], ['auf Augenhöhe', 'Normalperspektive'], ['genau von oben wie eine Karte', 'Draufsicht']], 'Die Perspektive verändert, wie ein Bild wirkt.'],
+  ['o', 'So zeichnest du eine Straße in Zentralperspektive.', ['Horizontlinie ziehen', 'Fluchtpunkt auf den Horizont setzen', 'Straßenränder zum Fluchtpunkt ziehen', 'Häuser und Bäume nach hinten kleiner zeichnen'], 'Alle Linien in die Tiefe treffen sich im Fluchtpunkt.']
+]);
+
+
+kgExtra('wnmedien', 0, [
+  ['w', 'Was ist ein Passwort?', '🔐', 'ein geheimes Wort, das nur du kennst', ['ein Wort, das auf jeder Seite steht', 'der Name deiner Schule und deiner Klasse', 'ein lustiges Spiel, das man im Internet spielt'], 'Ein Passwort verrät man niemandem, außer den Eltern.'],
+  ['w', 'Welches Passwort ist am sichersten?', '🔑', 'Bm7!sonne_Kiwi', ['1234567890', 'meinpasswort', 'MaxMustermann'], 'Gute Passwörter sind lang und mischen Zeichen.'],
+  ['w', 'Was ist Werbung im Internet oft?', '📣', 'bunte Bilder oder Videos, die etwas verkaufen wollen', ['ehrliche Nachrichten, die über die ganze Welt berichten', 'Aufgaben, die die Lehrerin für den Unterricht schickt', 'Nachrichten, die dir deine Freunde schreiben'], 'Werbung erkennt man oft am Wort „Anzeige“.'],
+  ['w', 'Was solltest du nie im Internet verraten?', '🙊', 'deine Adresse', ['deine Lieblingsfarbe', 'dein Lieblingstier', 'deinen Lieblingssport'], 'Adresse, Telefonnummer und Passwörter bleiben geheim.'],
+  ['w', 'Was ist Cybermobbing?', '📱', 'wenn jemand im Internet immer wieder beleidigt oder bloßgestellt wird', ['wenn man im Internet ein spannendes Video zusammen anschaut', 'wenn das Internet zu Hause für eine Weile nicht funktioniert', 'wenn man mit Freunden ein lustiges Spiel am Tablet spielt'], 'Sprich mit einem Erwachsenen, wenn dir so etwas passiert.'],
+  ['w', 'Ein Fremder möchte im Chat ein Foto von dir. Was tust du?', '🚫', 'Nein sagen und einem Erwachsenen Bescheid geben', ['das Foto schnell schicken, damit er nett bleibt', 'ihm stattdessen das Foto von einem Freund schicken', 'ihm deine Adresse schreiben, damit er dich besucht'], 'Fremden schickt man keine Fotos.'],
+  ['w', 'Was ist eine Suchmaschine?', '🔎', 'ein Programm, das Seiten im Internet findet', ['ein Gerät, das verlorene Dinge im Haus sucht', 'ein Roboter, der das Zimmer aufräumt', 'eine Maschine, die Bücher druckt'], 'Für Kinder gibt es eigene Kindersuchmaschinen.'],
+  ['rf', 'Fotos, die man ins Internet stellt, kann man oft nie mehr ganz löschen.', true, 'Andere können sie kopieren und weiterschicken.', '📸'],
+  ['rf', 'Jede Nachricht mit vielen Likes ist wahr.', false, 'Viele Likes zeigen nur, dass etwas beliebt ist, nicht ob es stimmt.', '👍'],
+  ['s', 'Sicher oder unsicher?', ['sicher', 'unsicher'], [['ein langes Passwort', 0], ['die Eltern fragen, bevor man etwas herunterlädt', 0], ['eine Kindersuchmaschine benutzen', 0], ['das Passwort weitersagen', 1], ['Fremden die Adresse schreiben', 1], ['auf jede Werbung klicken', 1]], 'Im Internet schützt du dich mit klugen Regeln.'],
+  ['z', 'Was bedeutet das?', [['Like', 'Daumen hoch, gefällt mir'], ['Link', 'Verweis zu einer anderen Seite'], ['Download', 'etwas herunterladen'], ['Chat', 'Unterhaltung mit Nachrichten'], ['App', 'Programm auf dem Handy']], 'Wörter aus dem Internet.'],
+  ['o', 'Du suchst eine Information für dein Referat. Ordne.', ['Information lesen', 'prüfen, wer sie geschrieben hat', 'in einer zweiten Quelle nachsehen', 'mit eigenen Worten aufschreiben', 'Quelle angeben'], 'So arbeitest du wie eine Forscherin.']
+]);
+
+
+kgExtra('wnwelt', 0, [
+  ['w', 'Wie viele Planeten kreisen um unsere Sonne?', '🪐', 'acht', ['neun', 'sechs', 'zwölf'], 'Merkur, Venus, Erde, Mars, Jupiter, Saturn, Uranus, Neptun.'],
+  ['w', 'Was ist ein Planet?', '🌍', 'ein großer Himmelskörper, der um einen Stern kreist', ['ein Stern, der ganz von selbst hell leuchtet', 'eine kleine Wolke aus Staub', 'ein Mond, der um einen Planeten kreist'], 'Die Erde ist ein Planet.'],
+  ['w', 'Wie heißt der dritte Planet von der Sonne aus?', '🌎', 'die Erde', ['der Mars', 'die Venus', 'der Jupiter'], 'Merkur, Venus, Erde.'],
+  ['w', 'In einem alten chinesischen Mythos trennt ein Riese Himmel und Erde. Wie heißt er?', '🏔️', 'Pangu', ['Zeus', 'Thor', 'Herkules'], 'Aus seinem Körper entstanden der Sage nach Berge und Flüsse.'],
+  ['w', 'Wie heißt die Wissenschaft von den Sternen und dem Weltall?', '🔭', 'Astronomie', ['Biologie', 'Geografie', 'Astrologie'], 'Astrologie ist Sterndeuterei und keine Wissenschaft.'],
+  ['w', 'Woher kommt das Licht des Mondes?', '🌙', 'Der Mond wird von der Sonne angestrahlt.', ['Der Mond leuchtet ganz von selbst.', 'Im Mond brennt ein großes Feuer.', 'Der Mond spiegelt die Lichter der Städte.'], 'Der Mond selbst leuchtet nicht.'],
+  ['w', 'Was bedeutet „Universum“?', '🌌', 'alles, was es gibt: alle Sterne, Planeten und Galaxien', ['nur unsere Erde mit allen Ländern und Meeren', 'nur die Sonne und der Mond am Himmel über uns', 'ein großes Museum über Sterne und Planeten'], 'Das Universum nennt man auch Weltall.'],
+  ['rf', 'In vielen Religionen ist die Welt ein Geschenk, das man schützen soll.', true, 'Darum ist der Schutz der Natur vielen Gläubigen wichtig.', '🌱'],
+  ['rf', 'Die Naturwissenschaft kann genau sagen, warum es die Welt gibt.', false, 'Sie erklärt, wie die Welt entstand. Nach dem Warum fragen Religion und Philosophie.', '🤔'],
+  ['s', 'Weltall oder Erde?', ['Weltall', 'Erde'], [['Galaxie', 0], ['Komet', 0], ['Planet Mars', 0], ['Ozean', 1], ['Gebirge', 1], ['Regenwald', 1]], 'Die Erde ist ein kleiner Teil des Weltalls.'],
+  ['z', 'Ordne zu.', [['Stern', 'leuchtet selbst wie die Sonne'], ['Planet', 'kreist um einen Stern'], ['Mond', 'kreist um einen Planeten'], ['Komet', 'Eisbrocken mit Schweif'], ['Galaxie', 'riesige Gruppe von Sternen']], 'Himmelskörper im Weltall.'],
+  ['o', 'Ordne die Planeten von der Sonne aus.', ['Merkur', 'Venus', 'Erde', 'Mars'], 'Danach kommen Jupiter, Saturn, Uranus und Neptun.']
+]);
+
+
+kgExtra('wnzukunft', 0, [
+  ['w', 'Was bekommen Bauern beim fairen Handel?', '🧑‍🌾', 'einen gerechten Preis für ihre Ernte', ['gar kein Geld für ihre Arbeit', 'nur Süßigkeiten als Lohn', 'eine Strafe, wenn das Wetter schlecht war'], 'So können sie von ihrer Arbeit leben.'],
+  ['w', 'Welche Verpackung ist am besten für die Umwelt?', '🧺', 'ein Korb oder Beutel, den man immer wieder benutzt', ['eine Plastiktüte, die man nach einmal wegwirft', 'eine Dose, die man nach dem Essen wegwirft', 'viele kleine Einzelpackungen aus Plastik und buntem Papier'], 'Weniger Müll schont die Umwelt.'],
+  ['w', 'Wie lange braucht eine Plastikflasche im Meer, bis sie zerfällt?', '🌊', 'mehrere hundert Jahre', ['nur ein paar Tage', 'ungefähr einen Monat', 'ungefähr zwei bis drei Jahre'], 'Darum gehört Plastik nie ins Meer.'],
+  ['w', 'Was bedeutet „Mülltrennung“?', '🗑️', 'Man wirft Papier, Plastik und Reste in verschiedene Tonnen.', ['Man wirft allen Müll zusammen in eine einzige große Tonne.', 'Man bringt den Müll einfach heimlich in den Wald.', 'Man verbrennt den ganzen Müll im eigenen Garten.'], 'So kann vieles wiederverwertet werden.'],
+  ['w', 'Wohin gehört ein leerer Joghurtbecher aus Plastik?', '🥛', 'in den Gelben Sack oder die Gelbe Tonne', ['in die blaue Papiertonne im Hof', 'in die braune Biotonne für Reste', 'in den grünen Altglascontainer'], 'Verpackungen aus Plastik und Metall kommen in die Gelbe Tonne.'],
+  ['w', 'Was gehört in die Biotonne?', '🍌', 'Bananenschalen und Gemüsereste', ['leere Glasflaschen und alte Dosen', 'alte Batterien und kaputte Kabel', 'alte Zeitungen und große Kartons'], 'Daraus wird Kompost oder Biogas.'],
+  ['w', 'Warum kauft man im Winter besser keine Erdbeeren aus fernen Ländern?', '🍓', 'Lange Transporte schaden dem Klima.', ['Erdbeeren sind im Winter giftig.', 'Erdbeeren sind im Winter blau.', 'Im Winter darf man kein Obst essen.'], 'Obst aus der Nähe und der Saison ist besser.'],
+  ['rf', 'Wer das Wasser beim Zähneputzen abdreht, spart Wasser.', true, 'Das sind jeden Tag viele Liter.', '🚰'],
+  ['rf', 'Batterien gehören in den normalen Hausmüll.', false, 'Batterien gibt man im Laden oder auf dem Wertstoffhof ab.', '🔋'],
+  ['s', 'Welche Tonne?', ['Papier', 'Gelbe Tonne', 'Bio'], [['Zeitung', 0], ['Eierkarton', 0], ['Joghurtbecher', 1], ['Konservendose', 1], ['Apfelrest', 2], ['Kartoffelschalen', 2]], 'Richtig trennen hilft beim Recycling.'],
+  ['z', 'So sparst du Energie.', [['Licht', 'beim Verlassen ausschalten'], ['Heizung', 'nicht bei offenem Fenster laufen lassen'], ['Kühlschrank', 'Tür schnell wieder schließen'], ['Fernseher', 'ganz ausschalten statt Stand-by']], 'Kleine Dinge helfen viel.'],
+  ['o', 'Vom Altpapier zum neuen Heft. Ordne.', ['Altpapier sammeln', 'in der Fabrik einweichen und zerkleinern', 'zu neuem Papier pressen und trocknen', 'als Heft im Laden verkaufen'], 'So wird aus altem Papier neues.']
+]);
+
+
+kgExtra('wndemokratie', 0, [
+  ['w', 'Wer wählt in Deutschland den Bundestag?', '🗳️', 'die erwachsenen Bürgerinnen und Bürger', ['nur die Bundeskanzlerin oder der Bundeskanzler', 'nur die Lehrerinnen und Lehrer', 'nur die Bürgermeister'], 'Wählen darf man ab 18 Jahren.'],
+  ['w', 'Wo trifft sich der Bundestag?', '🏛️', 'im Reichstagsgebäude in Berlin', ['im Schloss Neuschwanstein in Bayern', 'im Rathaus der Stadt Hamburg', 'im Kölner Dom am Rhein'], 'Das Gebäude hat eine gläserne Kuppel.'],
+  ['w', 'Was ist das Grundgesetz?', '📕', 'die Verfassung, die wichtigsten Regeln für Deutschland', ['ein Buch mit allen Regeln für den Straßenverkehr', 'eine Liste mit allen Schulen in Deutschland', 'ein Gesetz nur für Kinder und ihre Eltern'], 'Es gilt seit 1949.'],
+  ['w', 'Was macht eine Klassensprecherin?', '🙋', 'Sie vertritt die Meinung der Klasse.', ['Sie gibt allen Kindern Noten.', 'Sie bestimmt allein die Hausaufgaben.', 'Sie schließt morgens die Schule auf.'], 'Sie wird von der Klasse gewählt.'],
+  ['w', 'Wie oft wird der Bundestag normalerweise gewählt?', '📅', 'alle vier Jahre', ['jedes Jahr', 'alle zehn Jahre', 'nur einmal im Leben'], 'Dann können die Menschen neu entscheiden.'],
+  ['w', 'Was ist Pressefreiheit?', '📰', 'Zeitungen dürfen frei berichten, ohne dass der Staat es verbietet.', ['Zeitungen sind für alle Menschen immer kostenlos.', 'Zeitungen dürfen nur über schöne Dinge schreiben.', 'Zeitungen werden nur in einer großen Presse gedruckt.'], 'Freie Zeitungen gehören zur Demokratie.'],
+  ['w', 'Ein Vorschlag wird „einstimmig“ angenommen. Was heißt das?', '✋', 'Alle haben dafür gestimmt.', ['Nur einer hat dafür gestimmt.', 'Die Hälfte war dagegen.', 'Niemand hat abgestimmt.'], 'Einstimmig heißt: mit allen Stimmen.'],
+  ['rf', 'In einer Demokratie dürfen Menschen friedlich demonstrieren.', true, 'Das steht im Grundgesetz.', '🪧'],
+  ['rf', 'In einer Demokratie bestimmt ein König ganz allein.', false, 'In einer Demokratie entscheidet das Volk mit, zum Beispiel durch Wahlen.', '👑'],
+  ['s', 'Demokratisch oder nicht?', ['demokratisch', 'nicht demokratisch'], [['freie und geheime Wahlen', 0], ['jeder darf seine Meinung sagen', 0], ['Gerichte sind unabhängig', 0], ['einer bestimmt allein alles', 1], ['Zeitungen werden verboten', 1], ['nur Reiche dürfen wählen', 1]], 'In einer Demokratie haben alle die gleichen Rechte.'],
+  ['z', 'Was gehört zusammen?', [['Bundestag', 'beschließt die Gesetze'], ['Bundesregierung', 'führt die Gesetze aus'], ['Bundespräsident', 'Staatsoberhaupt'], ['Gericht', 'urteilt nach den Gesetzen']], 'Die Macht ist auf mehrere verteilt.'],
+  ['o', 'So entsteht eine Regel im Kinderparlament. Ordne.', ['Vorschlag machen', 'darüber reden', 'abstimmen', 'Regel aufschreiben und einhalten'], 'Gemeinsam beschlossene Regeln gelten für alle.']
+]);
+
+
+kgExtra('wnweltkinder', 0, [
+  ['w', 'Wann ist in Deutschland Weltkindertag?', '🎈', 'am 20. September', ['am 1. April', 'am ersten Montag im Mai', 'am 31. Oktober'], 'Weltweit wird auch der 20. November gefeiert.'],
+  ['w', 'Wie viele Kinder leben ungefähr auf der Welt?', '🌍', 'etwa zwei Milliarden', ['etwa zehntausend', 'etwa eine Million', 'etwa hundert Milliarden'], 'Fast jeder vierte Mensch ist ein Kind.'],
+  ['w', 'Was bedeutet das Recht auf einen Namen?', '🪪', 'Jedes Kind bekommt bei der Geburt einen Namen und wird angemeldet.', ['Jedes Kind darf sich jeden Tag einen neuen Namen aussuchen.', 'Nur Kinder mit Geschwistern bekommen einen Namen.', 'Kinder bekommen erst als Erwachsene einen Namen.'], 'So gehört jedes Kind offiziell dazu.'],
+  ['w', 'Was ist eine Schuluniform?', '👔', 'Kleidung, die alle Kinder einer Schule gleich tragen', ['Kleidung, die nur die Lehrerinnen und Lehrer in der Schule tragen', 'eine Uniform für Polizisten und Feuerwehrleute', 'ein Kostüm für den Karneval in der Schule'], 'In England oder Japan tragen viele Kinder Schuluniform.'],
+  ['w', 'Warum haben Kinder in Australien im Dezember Sommerferien?', '🏖️', 'Auf der Südhalbkugel ist dann Sommer.', ['Dort gibt es gar keinen Winter.', 'Dort feiert man gar kein Weihnachten im Winter.', 'Dort schneit es im Dezember.'], 'Weihnachten feiern sie oft am Strand.'],
+  ['w', 'Wer hilft Kindern in Not weltweit, zum Beispiel mit sauberem Wasser?', '💧', 'Hilfsorganisationen wie UNICEF', ['nur große Fußballvereine', 'nur Spielzeugläden in der Stadt', 'niemand, das ist nicht erlaubt'], 'UNICEF ist das Kinderhilfswerk der Vereinten Nationen.'],
+  ['w', 'Was ist das Recht auf Gleichbehandlung?', '🤝', 'Kein Kind darf wegen Herkunft oder Aussehen benachteiligt werden.', ['Alle Kinder müssen genau gleich aussehen und gleich heißen.', 'Nur Kinder aus großen Städten haben Rechte.', 'Kinder dürfen immer alles bestimmen, was sie wollen.'], 'Alle Kinder haben die gleichen Rechte.'],
+  ['rf', 'Auch Kinder haben eigene Rechte, nicht nur Erwachsene.', true, 'Sie stehen in der Kinderrechtskonvention.', '📜'],
+  ['rf', 'In manchen Ländern lernen Kinder mit Tablets, in anderen mit Kreide an einer Tafel.', true, 'Schulen sind auf der Welt sehr verschieden.', '🏫'],
+  ['s', 'Kinderrecht oder nicht?', ['Kinderrecht', 'kein Kinderrecht'], [['zur Schule gehen', 0], ['spielen und sich ausruhen', 0], ['gesund aufwachsen', 0], ['jeden Tag Süßigkeiten essen', 1], ['ein eigenes Handy haben', 1], ['nie aufräumen müssen', 1]], 'Kinderrechte schützen, was Kinder wirklich brauchen.'],
+  ['z', 'Wie sagt man „Hallo“?', [['Englisch', 'Hello'], ['Spanisch', 'Hola'], ['Französisch', 'Bonjour'], ['Italienisch', 'Ciao'], ['Türkisch', 'Merhaba']], 'Kinder auf der Welt sprechen viele Sprachen.'],
+  ['o', 'Ordne die Länder nach der Entfernung von Deutschland, nah zuerst.', ['Frankreich', 'Spanien', 'Ägypten', 'Brasilien'], 'Brasilien liegt auf der anderen Seite des Atlantiks.']
+]);
 
 kgEinbau();
 
